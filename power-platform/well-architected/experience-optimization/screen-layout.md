@@ -4,7 +4,7 @@ description: Learn how to optimize app layout for different platforms and device
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ai-usage: ai-assisted
@@ -92,13 +92,13 @@ Tabbed Layout: Content is organized into tabs or tabs, allowing users to switch 
 Modal Layout: Content is displayed in a modal window that overlays the main page, focusing the user's attention on a specific task or interaction while temporarily dimming the background. Modal layouts are commonly used for alerts, dialogs, and form submissions.
 --->
 
-Proceed to customize and build upon the standard layout to suit specific requirements. This process might include adding or removing elements, adjusting the size, and positioning of elements, and applying styling to match the brand identity or visual design guidelines. Experiment with different configurations and variations of the standard layout to find the most effective arrangement for content and overall user experience.
+Proceed to customize and build upon the standard layout to suit specific requirements. This process might include adding or removing elements, adjusting the size and positioning of elements, and applying styling to match the brand identity or visual design guidelines. Experiment with different configurations and variations of the standard layout to find the most effective arrangement for content and overall user experience.
 
 ### Design layouts for all devices
 
 Layouts are a culmination of defined rules and intentional organization of content. Bringing your content into thoughtful structures is key, but making it all flow together with a clear hierarchy across platforms and screen sizes requires scaling logic. Individually, adaptive and responsive design can each address this challenge. In some cases, a mix of adaptive and responsive design is the right choice.
 
-*Responsive design* uses just one layout where the content is fluid and can adapt to changing format size. This design technique uses media queries to inspect a given device's characteristics and renders content accordingly. Responsive design enables you to create a feature once and have it function effectively across all screen sizes.
+*Responsive design* uses just one layout where the content is fluid and can adapt to changing format size. This design technique uses media queries to inspect a given device's characteristics and renders content accordingly. Responsive design enables you to build a feature once and have it function effectively across all screen sizes.
 
 An *adaptive layout* changes entirely based on the format it's presented in. Adaptive design has multiple fixed layout sizes and triggers the browser to load a given layout based on the available space. Websites built with adaptive design use media queries to detect breakpoints, similar to responsive design. They also use additional markup based on the device's capabilities. This process is known as "progressive enhancement."
 
@@ -108,7 +108,7 @@ Alter the position of page elements.
 
 :::image type="content" source="media/layout/reposition.svg" alt-text="Elements stacked vertically in smaller viewports are repositioned as horizontal elements in larger viewports.":::
 
-Keep your content organized, readable, and balanced by optimizing the composition as window size increases. For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports. This change follows a natural left-to-right reading order, creates balance in the design, and maintains visual emphasis on key elements on the page.
+Keep your content organized, readable, and balanced by optimizing the composition as window size increases. For example, vertically stacked elements on a mobile viewport can be repositioned horizontally on larger viewports. This change follows a natural left-to-right reading order, creates balance in the design, and maintains visual focus on key elements on the page.
 
 #### Resize
 
@@ -140,7 +140,7 @@ Fork or collapse page elements and content to retain focus on important informat
 
 :::image type="content" source="media/layout/rearchitect.svg" alt-text="Certain elements can change form or location to optimize the viewport size.":::
 
-This approach is similar to following the practice of "progressive disclosure" in your design but for different window sizes and orientations. For example, expanding the window allows a list of items to be displayed next to the details. This visual link between the content allows users to easily select another item. On a smaller screen, the focus is on displaying key information.
+This approach is similar to following the practice of "progressive disclosure" in your design but for different window sizes and orientations. For example, expanding the window allows a list of items to be displayed next to the details. This visual link between the content allows users to easily select another item. On a smaller screen, the focus remains on displaying key information.
 
 ### Create a breakpoint matrix
 

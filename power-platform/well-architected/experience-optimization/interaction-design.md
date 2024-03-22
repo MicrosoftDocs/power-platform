@@ -4,7 +4,7 @@ description: Learn key principles of interaction design to enhance user experien
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ai-usage: ai-assisted
@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 |[XO:08](checklist.md)| **Prioritize responsiveness and feedback. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
 |---|---|
 
-This guide describes recommendations for interactions in user interface design. Interaction design is crucial for understanding how users process information from the system and how visual elements are initially organized and react to user inputs. It aids in planning task flows and accommodating various scenarios and contingencies, helping users achieve their goals.
+This guide describes recommendations for interactions in user interface design. Interaction design is crucial for understanding how users process information from the system and how visual elements are initially organized and respond to user inputs. It aids in planning task flows and accommodating various scenarios and contingencies, helping users achieve their goals.
 
 ## Key design strategies
 
@@ -27,7 +27,7 @@ For a successful workload, visual design and user interactions must work in harm
 
 An "affordance" is a perceived signal or clue that an object may be used to perform a particular action. Handle affords gripping. For example, a handle suggests that it can be gripped. Using affordances helps users to build correct mental model of the outcomes of their actions.
 
-The modern controls available in Power Apps leverage the latest Fluent UI components, which integrate visual elements like shadows, gradients, and animations to suggest their interactivity. For example, raised buttons suggest they can be clicked, while highlighted text fields indicate readiness for input. These controls follow established design patterns and conventions, providing a familiar and intuitive experience for users accustomed to modern software interfaces.
+The modern controls available in Power Apps leverage the latest Fluent UI components, which integrate visual elements like shadows, gradients, and animations to signal their interactivity. For example, raised buttons suggest they can be clicked, while highlighted text fields indicate readiness for input. These controls follow established design patterns and conventions, providing a familiar and intuitive experience for users accustomed to modern software interfaces.
 
 :::image type="content" source="media/interaction-design/affordance.svg" alt-text="Affordance example showing a flat button next to a raised button.":::
 
@@ -62,11 +62,11 @@ Leveraging standard design patterns and conventions that align with common or un
 
 Fitts's law predicts that the time required to acquire a target is a function of the distance to and size of the target. Large elements that are positioned close to users are easily selectable. For example, if a button is too small or far from the content it relates to, it will take longer for the user to select it.
 
-Large, well-placed buttons allow users to navigate the interface with minimal effort, preventing frustration and ensuring a smooth user experience. Interactive elements such as buttons or links should be large enough and positioned close to users' natural cursor movement; for example, placing primary action buttons in prominent locations within reach of users' thumbs on mobile devices. Making such elements easier to click or tap reduces the time it takes for users to interact with them.
+Large, well-placed buttons allow users to navigate the interface with minimal effort, preventing frustration and ensuring a smooth user experience. Interactive elements such as buttons or links should be large enough and positioned close to users' natural cursor movement; for example, placing primary action buttons on mobile devices in prominent locations within reach of users' thumbs. Making such elements easier to click or tap reduces the time it takes for users to interact with them.
 
 If interactive elements are too small or spaced too far apart, users might accidentally select the wrong element or miss the target altogether, leading to user errors and frustration. Designing with Fitt's law in mind can help avoid these issues by ensuring that interactive elements are clearly identifiable and easy to access.
 
-Consider the needs of users with limited dexterity or mobility impairments. By making interactive elements larger and easier to target, and ensuring correct tab order, you can improve accessibility and ensure all users can interact with the interface comfortably.
+Consider the needs of users with limited dexterity or mobility impairments. By making interactive elements larger and easier to target, and ensuring correct tab order, you improve accessibility and ensure all users can interact with the interface comfortably.
 
 :::image type="content" source="media/interaction-design/fitt.svg" alt-text="Fitts's law depiction.":::
 
@@ -74,11 +74,11 @@ Consider the needs of users with limited dexterity or mobility impairments. By m
 
 Hick's law asserts that the time it takes to make a decision increases with the number and complexity of choices.
 
-Instead of presenting users with a multitude of options all at once, break complex tasks into smaller, more manageable steps using progressive disclosure. This approach helps users focus on making a single choice, reducing decision-making time and preventing overwhelming the user. For example, use a step-by-step wizard for complex processes like account setup or product customization.
+Instead of presenting users with a multitude of options all at once, break complex tasks into smaller, more manageable steps using progressive disclosure. This approach helps users focus on making a single choice, reducing decision-making time and avoiding overwhelming the user. For example, use a step-by-step wizard for complex processes like account setup or product customization.
 
 Guide users towards recommended or commonly chosen options to streamline decision-making. Highlight preferred choices so that users can make decisions more quickly without becoming overwhelmed by alternatives. This approach prevents decision paralysis and helps users move through the interface efficiently.
 
-Presenting too many choices or options on a single screen can overwhelm users and lead to decision fatigue. Keep the interface clean and uncluttered by prioritizing essential information and options, while hiding or minimizing less critical ones. This method avoids confusion and allows users to concentrate on the most pertinent options.
+Presenting too many choices or options on a single screen can overwhelm users and lead to decision fatigue. Keep the interface clean and uncluttered by prioritizing essential information and options, while hiding or minimizing less critical ones. This method avoids confusion and allows users to concentrate on the most relevant options.
 
 Ask questions and design interactions that lead to simple answers. Use "yes/no" questions or provide clear options. This approach reduces cognitive load on users and makes decision-making more intuitive and efficient. Avoid complex or ambiguous questions to prevent users from making errors or becoming confused.
 
@@ -86,7 +86,7 @@ Ask questions and design interactions that lead to simple answers. Use "yes/no" 
 
 ### Serial-position effect
 
-Serial-position effect is the tendency to recall the first and last items in a series best, along with most different element. Use the following tips to enhance memorability, improve user engagement, and facilitate more efficient interactions:
+Serial-position effect is the tendency to recall the first and last items in a series best, along with the most different element. Use the following tips to enhance memorability, improve user engagement, and facilitate more efficient interactions:
 
 - Position key actions, important information, or critical content at the beginning and end of lists, menus, or interfaces. Such placement ensures that users are more likely to remember and engage with these elements. For example, place primary navigation options at the beginning and end of a menu bar for easy access.
 
@@ -98,7 +98,7 @@ Serial-position effect is the tendency to recall the first and last items in a s
 
 ### Pareto principle
 
-The Pareto principle (also known as the 80/20 rule, the law of the vital few and the principle of factor sparsity) states that for many outcomes, roughly 80% of consequences come from 20% of causes.
+The Pareto principle (also known as the 80/20 rule, the law of the vital few, and the principle of factor sparsity) states that for many outcomes, roughly 80% of consequences come from 20% of causes.
 
 Identify the most critical aspects of the UI that significantly impact user satisfaction and usability. For example, common user tasks, frequently accessed features, or critical content areas. By prioritizing these key elements, project teams can allocate resources more effectively and ensure that the most vital areas of the UI receive the most attention.
 
@@ -128,23 +128,23 @@ Within each chunk, place the most important information or actions at the forefr
 
 ### Peak-end rule
 
-The peak-end rule state that people judge an experience largely based on how they felt at its peak and at its end, rather than based on the total sum or average of every moment of the experience. Enhance peak moments by identifying moments within the user journey where the product is most helpful, valuable, or entertaining. Focus on enhancing these peak moments by providing additional value, delight, or functionality to leave a lasting positive impression on the user. Also consider optimizing the end of the journey by paying special attention to how the user completes the workflow. Ensure that the final interactions or messages are clear, satisfying, and align with users' expectations, leaving them with a positive last impression.
+The peak-end rule states that people judge an experience largely based on how they felt at its peak and at its end, rather than based on the total sum or average of every moment of the experience. Enhance peak moments by identifying moments within the user journey where the product is most helpful, valuable, or entertaining. Focus on enhancing these peak moments by providing additional value, delight, or functionality to leave a lasting positive impression on the user. Also consider optimizing the end of the journey by paying special attention to how the user completes the workflow. Ensure that the final interactions or messages are clear, satisfying, and align with users' expectations, leaving them with a positive last impression.
 
 Some ways to enhance positive experiences include:
 
-- _Personalization._ Tailor the user experience to individual preferences and behaviors. Offer personalized recommendations, content suggestions, or customization options based on user data and preferences.
+- *Personalization*. Tailor the user experience to individual preferences and behaviors. Offer personalized recommendations, content suggestions, or customization options based on user data and preferences.
 
-- _Microinteractions._ Incorporate small, delightful animations or interactions throughout the interface to make interactions more engaging and enjoyable. For example, subtle animations when hovering over buttons or playful loading screens can add a touch of personality to the user experience.
+- *Microinteractions*. Incorporate small, delightful animations or interactions throughout the interface to make interactions more engaging and enjoyable. For example, subtle animations when hovering over buttons or playful loading screens can add a touch of personality to the user experience.
 
-- _Surprise and delight._ Introduce unexpected elements or Easter eggs that surprise and delight users. For example, hidden features, humorous messages, or interactive elements that encourage exploration and discovery.
+- *Surprise and delight*. Introduce unexpected elements or Easter eggs that surprise and delight users. For example, hidden features, humorous messages, or interactive elements that encourage exploration and discovery.
 
-- _Efficiency improvements._ Streamline tasks and interactions to make them faster and more efficient for users. Introduce features such as keyboard shortcuts, autocomplete suggestions, or one-click actions to simplify common tasks and save users time.
+- *Efficiency improvements*. Streamline tasks and interactions to make them faster and more efficient for users. Introduce features such as keyboard shortcuts, autocomplete suggestions, or one-click actions to simplify common tasks and save users time.
 
-- _Visual design._ Invest in high-quality visual design to create a visually appealing and cohesive interface. Use aesthetically pleasing typography, color schemes, and imagery to evoke positive emotions and enhance the overall user experience.
+- *Visual design*. Invest in high-quality visual design to create a visually appealing and cohesive interface. Use aesthetically pleasing typography, color schemes, and imagery to evoke positive emotions and enhance the overall user experience.
 
-- _Feedback and acknowledgment._ Provide immediate and meaningful feedback to users' actions to reassure them that their interactions are registered and understood. Use visual cues, animations, or notifications to acknowledge user input and actions in real time.
+- *Feedback and acknowledgment*. Provide immediate and meaningful feedback to users' actions to reassure them that their interactions are registered and understood. Use visual cues, animations, or notifications to acknowledge user input and actions in real time.
 
-- _Gamification._ Introduce game-like elements such as challenges, rewards, or progress tracking to make the user experience more engaging and enjoyable. Encourage users to achieve specific goals or milestones within the interface to create a sense of accomplishment and motivation.
+- *Gamification*. Introduce game-like elements such as challenges, rewards, or progress tracking to make the user experience more engaging and enjoyable. Encourage users to achieve specific goals or milestones within the interface to create a sense of accomplishment and motivation.
 
 Recognize that users recall negative experiences more vividly than positive ones. Take proactive measures to identify and address pain points or usability issues throughout the user journey to prevent negative experiences from overshadowing positive ones. The guidance in this pillar is intended to help improve negative experiences. Following usability heuristics, meeting accessibility compliance, employing clear error handling, using consistency in design, and optimizing for performance, all help address negative experiences.
 

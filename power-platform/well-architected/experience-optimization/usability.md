@@ -19,8 +19,6 @@ ai-usage: ai-assisted
 
 This guide describes recommendations for improving usability in user interface design. Usability refers to the ease of use and effectiveness of a product for its intended users. Usability directly impacts user satisfaction, errors, and overall interactions with the digital interface, ultimately affecting the overall success of an application.
 
-description: "Uncover strategies for prioritizing usability in your design process. Learn how to minimize user effort, maximize task efficiency, simplify complex processes, and align design decisions with user needs to optimize the user experience."
-
 ## Key design strategies
 
 Usability is a quality attribute that assesses how easy user interfaces are to use. The word "usability" also refers to methods for improving ease-of-use during the design process.
@@ -45,7 +43,7 @@ Use progress indicators or loading animations to reassure users that their reque
 
 Provide real-time updates to keep users engaged and informed about the outcome of their actions. This prevents confusion or doubt about whether an action was successful or not, potentially resulting in errors or repetitive actions. Use status messages or notifications to clearly communicate successful actions or errors. Overlooking crucial information could lead to errors or misunderstandings.
 
-Incorporate color-coded indicators on different states for quick recognition and understanding of system status. Color is processed faster than text due to its direct neural pathway and evolutionary significance and also evokes emotional associations, further enhancing the user's ability to comprehend information quickly and intuitively. Reading text involves cognitive processing including language comprehension and interpretation. This process requires a longer neural pathway, taking more time and effort compared to the instant recognition of colors.
+Incorporate color-coded indicators on different states for quick recognition and understanding of system status. Color is processed faster than text due to its direct neural pathway and evolutionary significance and also evokes emotional associations, further enhancing the user's ability to comprehend information quickly and intuitively. Reading text involves cognitive processing including language comprehension and interpretation. This process requires a longer neural pathway, taking more time and effort compared to the recognition of colors.
 
 Allow users to track progress of ongoing tasks to enhance transparency and empower users to manage their time effectively.
 
@@ -77,13 +75,13 @@ Offering granular control over data and privacy settings is crucial for respecti
 
 Maintain consistency in design to ensure users can easily recognize and understand status indicators, reducing cognitive load and improving usability. Users should not have to wonder whether different words, situations, or actions mean the same thing.
 
-If repeatable experience patterns appear different, users will struggle to interpret the meaning of the variation introduced, leading to inefficiencies in understanding and task completion. Using the matching suite of controls (for example, all modern controls or all legacy) helps ensure visual elements are consistent. Usee component libraries or Power Apps component framework to ensure consistency for more complex or composite repeatable experience patterns.
+If repeatable experience patterns appear different, users will struggle to interpret the meaning of the variation introduced, leading to inefficiencies in understanding and task completion. Using the matching suite of controls (for example, all modern controls or all legacy) helps ensure visual elements are consistent. Use component libraries or the Power Apps component framework to ensure consistency for more complex or composite repeatable experience patterns.
 
 :::image type="content" source="media/usability/h4.svg" alt-text="Implement consistent standards.":::
 
 ### Error prevention
 
-Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they proceed with the action.
+Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action.
 
 Proactively address potential issues in the interface to maintain workflow continuity. For complex systems, it's beneficial to create a model that outlines the system's dynamics. This model should illustrate the relationships between the system's variables and demonstrate how they change based on different values. Gather values and constraints for each variable (organized into a list or matrix). For each combination, predict the associated state and the expected system's behavior.
 
@@ -105,11 +103,9 @@ Accommodate users of varying levels of expertise by incorporating features such 
 
 Accelerators—often unnoticed by novice users—can speed up the interaction for expert user, allowing the system to cater effectively to both the inexperienced and experienced.
 
-Customization options allows users to tailor the interface to their preferences helps personalize the overall experience. Providing options for users to rearrange interface elements (e.g. dashboard cards) or create personalized shortcuts for frequently used features enhances their efficiency and comfort in navigating the system.
+Customization options allow users to tailor the interface to their preferences, personalizing the overall experience. By providing options to rearrange interface elements (for example, dashboard cards) or create personalized shortcuts for frequently used features, you enhance user efficiency and comfort in navigating the system. Catering to diverse user needs and preferences fosters a sense of ownership and personal investment or attachment to an experience.
 
-Customization options enable users to tailor the interface to their preferences, personalizing the overall experience. By providing options to rearrange interface elements (for example, dashboard cards) or create personalized shortcuts for frequently used features, you can enhance user efficiency and comfort in navigating the system. Catering to diverse user needs and preferences fosters a sense of ownership and personal investment or attachment to an experience.
-
-:::image type="content" source="media/usability/h7.svg" alt-text="Offer flexibility for different user skill levels.":::
+:::image type="content" source="media/usability/h7.svg" alt-text="Offer flexibility for different skill levels.":::
 
 ### Aesthetic and minimalist design
 
@@ -135,11 +131,19 @@ While the system should be intuitive enough to use without documentation, there 
 
 ## Power Platform facilitation
 
-For canvas apps, you can indicate progress and loading states with the modern [progress bar](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-progress-bar) and [spinner](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-spinner) controls. Use the modern [badge](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) to display status information.
+For canvas apps, you can indicate progress and loading states with the [progress bar](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-progress-bar) and [spinner](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-spinner) modern controls. Use the [badge control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) to display status information.
 
-Implement robust error handling in canvas apps on the client side [using Power Fx expressions related to errors](/power-platform/power-fx/reference/function-iferror). Define custom server-side errors with Power Fx using [low code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors), which include pre-operation validation.
+Implement robust error handling in canvas apps on the client [using Power Fx expressions related to errors](/power-platform/power-fx/reference/function-iferror). Define custom server-side errors with Power Fx using [low-code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors), which include pre-operation validation.
 
 In model-driven apps, where usability is built into the interface, focus on configuring aspects of the experience that enhance usability. An example of a built-in accelerator is the [personal views](/power-apps/maker/model-driven-apps/create-edit-views#personal-views) feature, which lets users save filtering and column preferences for a table in an app. Additionally, configure [custom help pages](/power-apps/maker/data-platform/create-custom-help-pages) to offer a detailed help resource within the app.
+
+<!--
+
+## See also
+
+Related links here.
+
+-->
 
 ## Experience Optimization checklist
 

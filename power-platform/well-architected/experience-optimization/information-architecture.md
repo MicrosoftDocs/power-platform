@@ -4,7 +4,7 @@ description: Learn strategies for implementing an effective information architec
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/20/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ai-usage: ai-assisted
@@ -25,11 +25,11 @@ Information architecture refers to the organization and structure of a system's 
 
 ### Be consistent with navigation structures
 
-Consistent navigation enhances user orientation within the workload experience, facilitating smooth transitions between pages or screens. Navigation should be clear, intuitive, and predictable. Use the same navigation elements—menus, tabs, breadcrumbs, and buttons—across your workload, and place them in consistent locations. Make sure the navigation reflects the hierarchy and relationships of your content and  users can easily perceive their current location and potential destinations.
+Consistent navigation enhances user orientation within the workload experience, facilitating smooth transitions between pages or screens. Navigation should be clear, intuitive, and predictable. Use the same navigation elements—menus, tabs, breadcrumbs, and buttons—across your workload, and place them in consistent locations. Make sure the navigation reflects the hierarchy and relationships of your content and users can easily perceive their current location and potential destinations.
 
 ### Use consistent and user-friendly labels
 
-Labels are the terms used to identify and explain content and features like headings, titles, menus, buttons, and links. Clear and consistent labels help users to understand and easily navigate the workload experience, and to perform their tasks effectively. Labels should be consistent in tone, language, and format, and use terms that users are familiar with and prefer. For example, if you use the term "account" to refer to the user's profile and settings, use it consistently throughout your workload's experience, and avoid using synonyms like "profile" or "settings."
+Labels are the terms used to identify and explain content and features like headings, titles, menus, buttons, and links. Clear and consistent labels help users to understand and easily navigate the workload experience and to perform their tasks effectively. Labels should be consistent in tone, language, and format, and use terms that users are familiar with and prefer. For example, if you use the term "account" to refer to the user's profile and settings, use it consistently throughout your workload's experience, and avoid using synonyms like "profile" or "settings."
 
 Navigation elements should have clear and descriptive labels that communicate the purpose and destination of each element. Users should be able to understand what each element does and where it leads without having to click or tap on it. For example, a menu item labeled "Products" provides more information than one labeled "Menu 1."
 

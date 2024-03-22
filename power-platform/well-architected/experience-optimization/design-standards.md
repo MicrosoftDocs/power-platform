@@ -1,6 +1,6 @@
 ---
 title: Recommendations for following design standards
-description: Learn the importance of adhering to design standards, conventions, and guidelines that enhance user experience and application success.
+description: Learn the importance of adhering to design standards, conventions, and guidelines to enhance user experience and application success.
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
@@ -29,7 +29,7 @@ Extensive research into human cognition informs our understanding of visual desi
 
 ### Follow common patterns and metaphors
 
-Universal patterns and metaphors are widely recognized and expected in digital products. Incorporating these patterns where appropriate can simplify user onboarding and long-term use, reducing training and support costs, and potentially lessening the need for updates or redesigns. These practices span various design aspects, including layout composition, navigation structure, information hierarchy, and interaction design.
+Universal patterns and metaphors are widely recognized and expected in digital products. Incorporating these patterns where appropriate can simplify user onboarding and long-term use, reducing training and support costs, and potentially lessening the need for updates or redesigns. These practices span various aspects of design, including layout composition, navigation structure, information hierarchy, and interaction design.
 
 Adhering to standard icon metaphors and semantic colors is crucial. Icons should use established visual associations to convey functionality quickly and effectively to users. Similarly, semantic colors, such as red for error or green for success, provide immediate visual feedback that aligns with users' expectations and mental models. Following these conventions help reduce cognitive load and enhance usability by fostering a sense of familiarity and comfort.
 
@@ -55,9 +55,9 @@ Composite components should be versatile enough to be used as-is or with slight 
 
 Centralized design system efforts can also host universal media assets such as company logos and other design assets in a repository to enable widespread rapid development.
 
-Microsoft's Fluent UI is an example of a widely adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet users needs. They're also designed in a way that can be ubiquitous and easily used across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/).
+Microsoft's Fluent UI is an example of a widely adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet users' needs. They're also designed in a way that can be ubiquitous and easily used across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/).
 
-Sharing to avoid duplicate implementations not only boosts production efficiency but also ensures experiences remain coherent over time. Contributions to shared elements help keep experiences updated and incorporate expertise from across the organization. Currently, coherence is a challenge as components, systems, processes, and culture are often not shared, don't promote coherence, and make contributions difficult.
+Sharing to avoid duplicate implementations not only boosts production efficiency but also ensures experiences remain coherent over time. Contributions to shared elements help keep experiences fresh and reflect expertise from across the organization. Currently, coherence is a challenge as components, systems, processes, and culture are often not shared, don't promote coherence, and make contributions difficult.
 
 #### Conduct design reviews
 
@@ -86,7 +86,7 @@ Incorporating inclusive design principles ensures that products cater to a diver
 
 #### Methods of accessing content
 
-Users access digital content in various ways. In addition to mouse and pointer input, they case use keyboard and various assistive technologies. These technologies include screen and braille readers, magnifiers, captions, voice recognition, and high-contrast settings, all of which adapt the experience to meet the user's needs.
+Users access digital content in various ways. In addition to mouse and pointer input, they might also use keyboard and various assistive technologies. These technologies include screen and braille readers, magnifiers, captions, voice recognition, and high-contrast settings, all of which adapt the experience to meet the user's needs.
 
 #### Assistive tools
 
@@ -99,7 +99,7 @@ Users access digital content in various ways. In addition to mouse and pointer i
 
 To create inclusive products for users with different vision capabilities, it's essential to consider visual styles like color, contrast, and text size. This involves ensuring adequate contrast between text and its background, including text on images, icons, and buttons, to improve readability for users with low contrast sensitivity or color blindness. Well-contrasting content enhances readability in various lighting conditions, benefiting all users.
 
-Standard text should maintain a contrast ratio of at least 4.5:1 with the background. For larger text, interactive components, and data visualizations, a minimum contrast ratio of 3:1 with the background color is required. Status indicators should use semantic colors, type, and imagery effectively to convey information, ensuring content can be perceived by all users. Consider supporting a high contrast color palette, which normalizes the color palette for displaying content with a contrast ratio of at least 7:1, enhancing visibility and clarity. Offering a dark mode can significantly improve readability and reduce eye strain.
+Standard text should maintain a contrast ratio of at least 4.5:1 with the background. For larger text, interactive components, and data visualizations, a minimum contrast ratio of 3:1 with the background color is required. Status indicators should use semantic colors, type, and imagery effectively to convey information, ensuring content can be perceived by all users. Consider supporting a high contrast color palette, which normalizes the color palette for displaying content with a contrast ratio of at least 7:1, ensuring visibility and clarity. Offering a dark mode can significantly improve readability and reduce eye strain.
 
 #### Typography
 
@@ -111,7 +111,7 @@ On mobile devices, text should be resizable up to 200% without compromising cont
 
 #### Images, graphs, and motion
 
-Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities. While images can serve as cues for people with visual impairments, helping to orient them within the content, their extensive use on websites can create major barriers for users.
+Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities. While images can serve as cues for people with visual impairments, helping to orient them within the content, extensive use on websites can create major barriers for users.
 
 Accessible practices around media content benefit braille and screen reader users, users who browse with images turned off to save bandwidth, and search engine crawlers. They can also aid people with hearing loss or cognitive disabilities.
 
@@ -121,12 +121,12 @@ Use Alternative (Alt) text to make visual content accessible. Alt attributes des
 
 Interaction is where accessibility matters the most. If a user can't navigate a product smoothly and complete tasks, the product isn't truly accessible. Efficient keyboard and touch interactions assist users of screen readers, braille readers, and those who navigate using a keyboard. Typical interactions include:
 
-- *Navigation.* Assistive technology users navigate a web page by tabbing, search, and, in the case of screen readers, using lists of headings and links. Ensure efficient keyboard navigation with landmarks, headings, and shortcuts (like skip to main content).
-- *Hyperlinks.* Usability and accessibility of hyperlinks can be improved by making them clear, concise, and meaningful out of context. Apply sufficient color contrast and visually differentiate from other content.
-- *Tables.* Relying on visual cues alone isn't sufficient to create an accessible table. Structural markup allows assistive technology to recognize headers and data cells.
-- *Forms.* Input fields, used for various web interactions, often raise accessibility concerns for individuals who use screen readers or keyboards.
-- *Focus.* Focus visibility helps users who rely on the keyboard to navigate the page, by visually indicating the element they interact with next. Sometimes focus needs to be moved programatically or limited to a specific area to optimize the experience.
-- *State changes.* Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is critical.
+- *Navigation*. Assistive technology users navigate a web page by tabbing, search, and, in the case of screen readers, using lists of headings and links. Ensure efficient keyboard navigation with landmarks, headings, and shortcuts (like skip to main content).
+- *Hyperlinks*. Usability and accessibility of hyperlinks can be improved by making them clear, concise, and meaningful out of context. Apply sufficient color contrast and visually differentiate from other content.
+- *Tables*. Relying on visual cues alone isn't sufficient to create an accessible table. Structural markup allows assistive technology to recognize headers and data cells.
+- *Forms*. Input fields, used for various web interactions, often raise accessibility concerns for individuals who use screen readers or keyboards.
+- *Focus*. Focus visibility helps users who rely on the keyboard to navigate the page, by visually indicating the element they interact with next. Sometimes focus needs to be moved programatically or limited to a specific area to optimize the experience.
+- *State changes*. Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is critical.
 
 ## Power Platform facilitation
 

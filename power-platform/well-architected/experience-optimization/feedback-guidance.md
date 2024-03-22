@@ -1,6 +1,6 @@
 ---
 title: Recommendations for providing meaningful feedback and guidance. 
-description: Learn how to Provide meaningful feedback and guidance to ensure consistent success with user experience optimization.
+description: Learn effective strategies for providing meaningful feedback and guidance to users, enhancing user experience and optimizing workload performance.
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
@@ -27,19 +27,19 @@ When users perform an action, they should get prompt and understandable feedback
 
 **Minimize noise and distraction**. Use notifications only when necessary to minimize noise and distraction. Overload of system messages reduces efficiency and causes frustration. Notifications break workflow and, therefore, lower efficiency and hinder productivity. Interruptions can take time from which to recover and can lead to errors. Notifications can also frustrate users if they're irrelevant, overly intrusive, or delivered through an unsuitable method.
 
-**Use a central location for notifications**. Notification centers are useful aggregators of message content. They're the best place to provide quick access to important information, and allowing users to stay informed always.
+**Use a central location for notifications**. Notification centers are useful aggregators of message content. They're the best place to provide quick access to important information, allowing users to stay informed at all times.
 
 **Help people act quicker**. Notifications that lack immediate actionable options can be frustrating. Providing actions within notifications saves users time. Users appreciate the ability to access and act on notifications across devices.
 
-**Provide reassurance when there's an error.** If a part of the process fails, inform users about the issue and its cause and reassure them they haven't lost any work. Provide clear instructions on the next steps s users are confident on how to proceed.
+**Provide reassurance when there's an error.** If a part of the process fails, inform users about the issue and its cause and reassure them they haven't lost any work. Provide clear instructions on the next steps so users are confident on how to proceed.
 
 **Avoid presenting the same notification more than once**. Having to dismiss notifications across multiple apps, UI surfaces, and devices more than once isn't user-friendly. Categorized notifications lose their value when they are not synchronized. As a result, notification systems are shifting from being device-centric to user-centric.
 
 **Put critical messages first**. Match urgency with the appropriate design pattern and put critical messages first. Consider the type of notification you're sending and its impact on the experience. Choose the right pattern for communication (for example, avoid blocking the user's action for noncritical messages), and make sure the most urgent or important messages are prioritized.
 
-**Create succinct messages**. Ensure notifications are easy to read and minimally disruptive. Quick updates that keep users informed without impacting productivity are ideal.
+**Create succinct messages**. Ensure notifications are easy to read and minimally disruptive. Quick updates keep users informed without impacting productivity.
 
-**Provide inline validation**. Whenever possible, implement inline validation to provide users with instant feedback on their errors.
+**Provide inline validation**. Whenever possible, use inline validation to provide users with instant feedback on errors.
 
 **Empower people with robust settings**. Detailed notification settings allow users to set their own preferences. Allowing users to select the notifications they receive and the features they use enhances satisfaction and trust.
 
@@ -59,7 +59,7 @@ In-app guidance comprises the various ways of helping users learn and use your w
 
 App message bar notifications that span the top of the screen can be triggered in canvas apps [using the Power Fx formula](/power-platform/power-fx/reference/function-showerror) and in model-driven apps using [customized command bar actions](/power-apps/maker/model-driven-apps/commanding-use-powerfx).
 
-In-app notifications can be pushed to a centralized user notifications hub for [model driven apps](/power-apps/user/notifications) and [the Power Apps mobile app](/power-apps/mobile/mobile-notifications), invoked by the [Dataverse Web API action](/power-apps/developer/data-platform/webapi/reference/sendappnotification), or more conveniently via [pro code plugins](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?tabs=clientapi) or [low code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#send-in-app-notifications-based-on-an-instant-action).
+In-app notifications can be pushed to a centralized user notifications hub for [model-driven apps](/power-apps/user/notifications) and [the Power Apps mobile app](/power-apps/mobile/mobile-notifications), invoked by the [Dataverse Web API action](/power-apps/developer/data-platform/webapi/reference/sendappnotification), or more conveniently via [pro-code plugins](/power-apps/developer/model-driven-apps/clientapi/send-in-app-notifications?tabs=clientapi) or [low-code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#send-in-app-notifications-based-on-an-instant-action).
 
 Consider using the Power Apps notification connector to [send push notifications](/power-apps/maker/canvas-apps/add-notifications) to devices with Power Apps mobile app installed.
 
@@ -67,9 +67,9 @@ Implement universal help panels using a [side pane](/power-platform/guidance/cre
 
 Use the [Info button modern control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-info-button) to provide inline contextual information in canvas apps.
 
-For basic field-level input validation, Dataverse offers [server-side business rules](/power-apps/maker/data-platform/data-platform-create-business-rule). Implement [advanced server-side input validation and customized errors defined in Power Fx](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors) during server operations with low code plugins.
+For basic field-level input validation, Dataverse offers [server-side business rules](/power-apps/maker/data-platform/data-platform-create-business-rule). Implement [advanced server-side input validation and customized errors defined in Power Fx](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors) during server operations with low-code plugins.
 
-Notifications to other services in the Power Platform ecosystem can be invoked from connectors, like [Outlook](/power-apps/teams/add-app-notifications).
+Use connectors to send notifications to other services in the Power Platform ecosystem, such as for services like [Outlook](/power-apps/teams/add-app-notifications).
 
 ## See also
 

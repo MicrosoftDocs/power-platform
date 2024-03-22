@@ -4,7 +4,7 @@ description: Learn how to optimize user perception and aesthetics to guides user
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/13/2024
+ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ai-usage: ai-assisted
@@ -21,11 +21,11 @@ This guide describes recommendations for universal visual design patterns that a
 
 ## Key design strategies
 
-Extensive research on human perception of visual design reveals that users don't view visual elements in isolation. Instead, they perceive them in relation to other elements and the context in which they appear. These relationships influence user perception, drawing attention to specific areas, eliciting emotions, aiding understanding, enhancing aesthetics, and strengthening brand identity. Careful selection and arrangement of visual elements can create engaging, memorable, and effective user experiences that resonate with the intended audience.
+Extensive research on human perception of visual design reveals that users don't view visual elements in isolation. Instead, they perceive them in relation to other elements and the context in which they appear. These relationships influence user perception, drawing attention to specific areas, eliciting emotions, aiding understanding, enhancing aesthetics, and strengthening brand identity. Careful selection and arrangement of visual elements can create engaging, memorable, and effective user experiences that resonate with the target audience.
 
 ### Aesthetic-Usability effect
 
-The *aesthetic-usability effect* refers to users tendency to consider attractive products as more usable. Users form an initial opinion about an application within approximately 50 milliseconds. This first impression is influenced by various factors, including structure, colors, spacing, symmetry, text quantity, and fonts. A positive first impression can enhance overall user satisfaction. Research shows that users are more forgiving of minor usability issues when they find an interface visually appealing. Additionally, the design quality can serve as an indicator of credibility.
+The *aesthetic-usability effect* refers to the tendency to consider attractive products as more usable. Users form an initial opinion about an application within approximately 50 milliseconds. This first impression is influenced by various factors, including structure, colors, spacing, symmetry, text quantity, and fonts. A positive first impression can enhance overall user satisfaction. Research shows that users are more forgiving of minor usability issues when they find an interface visually appealing. Additionally, the design quality can serve as an indicator of credibility.
 
 ### Balance and weight
 
@@ -41,12 +41,12 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/balance-left.svg)
+      ![Example of a balanced composition.](./media/visual-design/balance-left.svg)
       **A balanced composition is a sum of visual forces between the elements.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/balance-right.svg)
+      ![Example of a balanced layout.](./media/visual-design/balance-right.svg)
       **Balancing layout is one of the hardest tasks, as it cannot be easily measured.**
 
    :::column-end:::
@@ -56,7 +56,7 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
 
 Items that are placed closer together seem more related. When arranging elements, ensure there's a noticeable difference in spacing between elements that are closely related and those that are not.
 
-Group related elements together that are functionally similar or belong to the same hierarchical category. For example, buttons that perform similar actions or options within a dropdown menu should be grouped closely together to indicate their association. In a navigation bar, menu items that are closely spaced suggest a related set of choices, while a larger gap between menu categories visually distinguishes them.
+Group related elements together that are functionally similar or belong to the same hierarchical category. For example, buttons that perform similar actions or options within a dropdown menu should be grouped closely together to indicate their association. In a navigation bar, menu items that are closely spaced suggest a related set of options, while a larger gap between menu categories visually distinguishes them.
 
 Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer spacing between paragraphs or sentences indicates a logical connection or continuation of thought, while greater spacing denotes a transition or a break in content. This technique helps users navigate and comprehend textual information more effectively.
 
@@ -64,12 +64,12 @@ Ensure there's a noticeable distinction in spacing between related and unrelated
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/proximity-left.svg)
+      ![Example demonstrating proximity and relationship.](./media/visual-design/proximity-left.svg)
       **The circle on the left is more related to the triangle than to the other circle.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/proximity-right.svg)
+      ![Example demonstrating spacing and relationship](./media/visual-design/proximity-right.svg)
       **Spacing between paragraphs is smaller than space between sections.**
 
    :::column-end:::
@@ -83,19 +83,19 @@ Arrange interface elements, such as navigation menus or steps in a process, alon
 
 Place related elements, such as checkbox or radio options, or items (bullet points) in a list, along a line to visually group them together. This arrangement suggests to users that these elements share a common purpose or belong to the same category, facilitating easier navigation and comprehension. If similar looking items are further indented inwards, the item's position is correlated with a lower placement in the visual hierarchy.
 
-Use lines or curves to guide users' attention and create visual paths through the interface. For example, an arrow can direct the user's eyes from one section of content to another along a certain path, indicating a connection or progression. This technique helps users navigate the interface more intuitively and encourages exploration.
+Use lines or curves to guide users' attention and create visual paths through the interface. For example, an arrow can direct the user's eye from one section of content to another along a certain path, indicating a connection or progression. This technique helps users navigate the interface more intuitively and encourages exploration.
 
 Arrange key interface elements, such as call-to-action buttons or important information, along prominent lines to draw users' attention and create focal points. For example, the Fluent MessageBar pattern is often displayed as a prominent balanced message across the content area, with the message on the left, leading to the call to action buttons on the right. This layout strategy highlights these elements and emphasizes their significance, increasing the likelihood of interaction.
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/continuity-left.svg)
+      ![Example demonstrating curves and lines versus color.](./media/visual-design/continuity-left.svg)
       **The curves/lines are stronger than color to our perception.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/continuity-right.svg)
-      **Wizards use continuity to show users that the steps are connected, without overwhelming them with too much information at once.**
+      ![Visual representation of a wizard or work flow.](./media/visual-design/continuity-right.svg)
+      **Wizards use continuity to show users that the steps are connected, without overwhelming them with too much information.**
 
    :::column-end:::
 :::row-end:::
@@ -116,12 +116,12 @@ Use animation and transitions to guide users' attention and convey changes in in
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/closure-left.svg)
+      ![Example demonstrating perception of closure involving a square and four incomplete circles](./media/visual-design/closure-left.svg)
       **A square is recognized first before four incomplete circles.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/closure-right.svg)
+      ![Example demonstrating attempt to close a gap between two related items.](./media/visual-design/closure-right.svg)
       **Animation from a card to a modal helps to close the gap between the two and relate them to one another.**
 
    :::column-end:::
@@ -129,7 +129,7 @@ Use animation and transitions to guide users' attention and convey changes in in
 
 ### Focal point
 
-A focal point is a design element that immediately draws the viewer's attention. Ideally, a design should have a sequence of focal points, typically between one to three, arranged to guide the user through the content in a deliberate manner
+A focal point is a design element that immediately draws the viewer's attention. Ideally, a design should have a sequence of focal points, typically between one to three, arranged to guide the user through the content in a deliberate manner.
 
 Design the interface with a clear hierarchy of information, where the most important content or actions are emphasized as focal points. Use visual cues such as size, color, contrast, and positioning to make these elements stand out. Present information gradually, starting with the most important focal points. This technique helps users quickly identify the most relevant content or actions and guides them through the interface in a logical sequence.
 
@@ -139,18 +139,18 @@ Use contrast effectively to create focal points. Elements that stand out due to 
 
 Use whitespace and negative space to highlight focal points by creating visual separation from surrounding elements. This technique helps prevent distractions and allows users to focus on the most important content or actions. UI elements with more spacing around them draw more focus and tend to be perceived as higher in importance than elements with less space.
 
-Maintain consistency in the use of focal points throughout the interface to provide a cohesive user experience. By setting a pattern of focal points, you can guide users' expectations about the hierarchy they need to understand to navigate the interface and help them find important information or actions across various screens or pages.
+Maintain consistency in the use of focal points throughout the interface to provide a cohesive user experience. By setting a pattern of focal points, you guide users' expectations about the hierarchy they need to understand to navigate the interface and help them find important information or actions across various screens or pages.
 
 Keep in mind that it's important to maintain balance and not overwhelm users with too many competing focal points.
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/focalpoint-left.svg)
-      **User'’'s eye is drawn to the blue square first.**
+      ![Example using color to demonstrate focus.](./media/visual-design/focalpoint-left.svg)
+      **User's eye is drawn to the blue square first.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/focalpoint-right.svg)
+      ![Example call to action using blocks.](./media/visual-design/focalpoint-right.svg)
       **Elements such as calls to action can be made focal points to ensure that users notice them.**
 
    :::column-end:::
@@ -174,12 +174,12 @@ Ensure that visual similarities are complemented by other cues, such as text lab
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/similarity-left.svg)
+      ![Example of similarity using shapes and color.](./media/visual-design/similarity-left.svg)
       **The elements are grouped by shape and color, not arrangement (columns and rows).**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/similarity-right.svg)
+      ![Example of similarity in layout.](./media/visual-design/similarity-right.svg)
       **If one card on a dashboard opens as a side panel, users will expect all of them to open that way.**
 
    :::column-end:::
@@ -195,12 +195,12 @@ Maintaining consistency in the placement and styling of interface elements reinf
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/figureground-left.svg)
+      ![Example illustrating low contrast and minimal negative space with blocks.](./media/visual-design/figureground-left.svg)
       **Low contrast and minimal negative space contribute to perceiving the white rectangles as part of the background.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/figureground-right.svg)
+      ![Example layout illustrating figure and ground.](./media/visual-design/figureground-right.svg)
       **A side image needs to recede into the background so users can focus on important content.**
 
    :::column-end:::
@@ -210,18 +210,18 @@ Maintaining consistency in the placement and styling of interface elements reinf
 
 Elements tend to be perceived as groups if they share an area with a clearly defined boundary.
 
-Grouping related elements within visual containers, such as boxes, cards, or borders, helps users perceive them as cohesive units. This approach visually organizes content and functionality, simplifying the identification and processing of information. Clear groupings help avoid a cluttered interface and reduce confusion or inefficiency. Grouping is also effective when proximity is not an option; for example, a message bar that spans several controls across a screen perceived as a related unit due to its borders and background color.
+Grouping related elements within visual containers, such as boxes, cards, or borders, helps users perceive them as cohesive units. This approach visually organizes content and functionality, making it easier to identify and process information. Clear groupings help avoid a cluttered interface and reduce confusion or inefficiency. Grouping is also effective when proximity is not an option; for example, a message bar that spans several controls across a screen perceived as a related unit due to its borders and background color.
 
 Maintaining a consistent visual style for grouped elements strengthens their connection and improves usability. Using similar colors, fonts, or icons for these elements emphasizes that they belong to the same category or function. Inconsistencies in visual presentation can weaken the perceived grouping and cause users to overlook relationships between elements or misinterpret their meaning or purpose.
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/grouping-left.svg)
+      ![Example of using borders to create separation.](./media/visual-design/grouping-left.svg)
       **Adding borders around an element or a group of elements creates separation from surrounding elements.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/grouping-right.svg)
+      ![Example illustrating benefit of sectioning content.](./media/visual-design/grouping-right.svg)
       **Sectioning content helps users understand that the subject matter is switching.**
 
    :::column-end:::
@@ -229,25 +229,25 @@ Maintaining a consistent visual style for grouped elements strengthens their con
 
 ### Signals vs. noise
 
-Visual cues such as lines, contrast, and spacing, are used to signify to user that something is important. However, too many signals, or signals highlighting information that's not important, quickly become noise.
+Visual cues such as lines, contrast, and spacing, are used to signify to users that something is important. However, too many signals, or signals highlighting information that's not important, quickly become noise.
 
 Employ focal point principals (like bold text, contrasting colors, or icons) to signal important information or actions to users. For example, use a bright color for important buttons or headings to make them stand out.
 
-Be selective about what you highlight to avoid overwhelming users with too much information. Only signal elements that are truly important for the user's task or goal. Too many signals can create confusion and make it difficult for users to prioritize. Identify the information that is most important to the user and emphasize it appropriately. For example, in a form, make required fields stand out to guide the user's attention towards them. This technique prevents users from getting lost in unnecessary details and helps them focus on what's essential. Typically, it's recommended to have only one call-to-action button per page.
+Be selective about what you highlight to avoid overwhelming users with too much information. Only signal elements that are truly important for the user's task or goal. Too many signals can create confusion and make it difficult for users to prioritize. Identify the information that is most important to the user and emphasize it appropriately. For example, in a form, highlight required fields to guide the user's attention. This technique prevents users from getting lost in unnecessary details and helps them focus on what's essential. Typically, it's recommended to have only one call-to-action button per page.
 
 Ensure signals follow a consistent visual language throughout the interface. This design guideline helps users recognize patterns and understand the meaning of different signals intuitively. Inconsistency in signaling can lead to confusion and make it harder for users to interpret the interface.
 
-Tailor your signals to the specific context and user's needs. For example, if users are scanning an interface that presents certain tasks, signal critical status and actionable items clearly to attract their attention. Contextual signals help users quickly find relevant information without being sidetracked by unrelated details.
+Tailor your signals to the specific context and user's needs. For example, if users are scanning an interface that presents certain tasks, signal critical status and actionable items clearly to attract their attention. Contextual signals help users quickly find relevant information without being distracted by unrelated details.
 
 :::row:::
    :::column span="":::
-      ![Alt text](./media/visual-design/signal-noise-left.svg)
-      **Signals help in guiding users through content and conveying what is important.**
+      ![Example illustrating use of signals to guide users.](./media/visual-design/signal-noise-left.svg)
+      **Signals help guide users through content and convey what is important.**
 
    :::column-end:::
    :::column span="":::
-      ![Alt text](./media/visual-design/signal-noise-right.svg)
-      **Visual noise introduces confusion and has the opposite effects from signals.**
+      ![Example illustrating visual noise with blocks.](./media/visual-design/signal-noise-right.svg)
+      **Visual noise introduces confusion and has the opposite effect of signals.**
 
    :::column-end:::
 :::row-end:::
@@ -256,6 +256,11 @@ Tailor your signals to the specific context and user's needs. For example, if us
 ## Power Platform facilitation
 
 These visual design recommendations are universal for overall design, and implicit in the Power Apps modern controls. Take these into consideration when determining overall design and arrangement of components available.
+
+## See also
+
+Related links here.
+
 -->
 
 ## Experience Optimization checklist

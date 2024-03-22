@@ -4,7 +4,7 @@ description: Learn how to write clear, approachable, and consistent content for 
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/13/2024
+ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ai-usage: ai-assisted
@@ -21,9 +21,9 @@ This guide describes recommendations for crafting effective content tailored for
 
 ## Key design strategies
 
-Writing content that's part of the user interface (UI) design is both an art and science. Combining these copywriting best practices with visual design best practices will improve the user experience.
+Writing content that's part of the user interface (UI) design is both an art and a science. Combining these copywriting best practices with visual design best practices will improve the user experience.
 
-### Make it scannable
+### Make the content scannable
 
 When using a business application, people aren't interested in the features of the UI or being entertained by flowery language. They're focused on task completion. Help them by writing in short, scannable blocks. Divide text into shorter sentences and paragraphs. Avoid overly effusive language. Users often visit a UI with specific objectives in mind, and content should guide them seamlessly toward achieving those objectives.
 
@@ -31,13 +31,13 @@ Be concise. Content should be brief and to the point. Concise doesn't mean limit
 
 Start with the most important piece of info—the value proposition. If space allows, add a brief paragraph or two with details in order of importance. If you need to say more, use a "Read more" link. Sometimes, it's easier to write the body of the message first and then write the headline.
 
-Use specific verbs whenever possible. Specific verbs are more meaningful to people than generic ones. Help your reader quickly understand available options or necessary actions by using specific words like "get," "update," "choose," or "change." You can avoid confusion and reduce ambiguity by eliminating words that have multiple meanings.
+Use specific verbs whenever possible. Specific verbs are more meaningful to people than generic ones. Help your user quickly understand available options or necessary actions by using specific words like "get," "update," "choose," or "change." You can avoid confusion and reduce ambiguity by eliminating words that have multiple meanings.
 
 ### Keep it contextual and task-focused
 
 Tell people what they need to know. The content should provide users with the essential information required to accomplish their tasks or to make informed decisions within the UI. Users rely on content to guide their interactions and expect clear, relevant information that meets their needs. Content should never cause confusion or frustration.
 
-Bite-sized chunks create a natural flow. Focus on the reader, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the immediate task, to avoid frustration and cognitive load.
+Bite-sized chunks create a natural flow. Focus on the user, the action taken, or what they can expect next. Don't include information that's irrelevant or distracts from the immediate task, to avoid frustration and cognitive load.
 
 Put the benefit before the action or feature. This approach increases the user's ability to quickly complete tasks by explaining the benefit first. What positive outcome will result when they complete the action? Explain the benefit before telling them to take an action, and avoid asking for an action before explaining why.
 
@@ -51,7 +51,7 @@ Include sentences of 25 words or less. Sentences should be brief and succinct. S
 
 Avoid jargon and acronyms. Even most software engineers prefer simple, non-technical language. It's especially important to avoid jargon in error messages. It's also important to remember that many common phrases are colloquialisms and might not be meaningful to everyone.
 
-Replace overly technical words with simpler ones. Words like "configure," "activate," or "invalid" are unnecessarily technical. Keep it simple. Only use acronyms your readers are familiar with. Spell out acronyms on the first mention on each page and include the parenthetic reference. For example, "call to action (CTA)." If the spelled-out version of an acronym exceeds a character limit, consider writing around the phrase.
+Replace overly technical words with simpler ones. Words like "configure," "activate," or "invalid" are unnecessarily technical. Keep it simple. Only use acronyms your users are familiar with. Spell out acronyms on the first mention on each page and include the parenthetic reference. For example, "call to action (CTA)." If the spelled-out version of an acronym exceeds a character limit, consider writing around the phrase.
 
 <!--
 Not sure what we mean by "writing around the phrase"
@@ -61,13 +61,13 @@ Avoid double negatives. Double negatives increase cognitive load—they make peo
 
 ### Use a polite and friendly tone
 
-Be polite, but not overly ingratiating. People expect to be given prompts and to act. Using "please" throughout the UI is unnecessary. Use terms like "please" and "sorry' sparingly, reserving them for tasks that are burdensome, result from an error on your part, or have serious consequences. However, it's never good practice to be rude, presumptuous, arrogant, or cynical in UI content,
+Be polite, but not overly ingratiating. People expect to be given prompts and to act. Using "please" throughout the UI is unnecessary. Use terms like "please" and "sorry' sparingly, reserving them for tasks that are burdensome, result from an error on your part, or have serious consequences. However, it's never good practice to be rude, presumptuous, arrogant, or cynical in UI content.
 
-Write as if speaking directly to the reader. Second person often uses the pronoun "you." It supports a friendly tone by focusing on the user and helps avoid passive voice. Omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Again, focus on making a connection with the user by using "you" or "your."
+Write as if speaking directly to the user. Second person often uses the pronoun "you." It supports a friendly tone by focusing on the user and helps avoid passive voice. Omit pronouns and accompanying auxiliary verbs, and start your sentence with a verb. Again, focus on making a connection by using "you" or "your."
 
 Avoid mixing first-person possessive ("My dashboard") and second-person language to reduce cognitive load.
 
-When the product or application is addressing the user, use "we" or your organization's name. Avoid confusion by being clear about who is speaking or acting. For instance, use "We found these results" instead of "I found these results." Using "we" can make the UI feel more human and demonstrate accountability for system errors, emphasizing the user's importance every step of the way. However, avoid overuse "we" as it can distract from the user's needs. To keep the focus centered on the reader, reserve "we" for systems errors, status updates, and other system-related issues.
+When the product or application is addressing the user, use "we" or your organization's name. Avoid confusion by being clear about who is speaking or acting. For instance, use "We found these results" instead of "I found these results." Using "we" can make the UI feel more human and demonstrate accountability for system errors, emphasizing the user's importance every step of the way. However, avoid overusing "we" as it can distract from the user's needs. To keep the focus centered on the user, reserve "we" for systems errors, status updates, and other system-related issues.
 
 Use common contractions, such as "it's," "you're," "that's," and "don't," to create a friendly, informal tone. Never use your company's name in the possessive form, and avoid using it in a contraction. Avoid ambiguous contractions such as "there'd" and "what're." Avoid mixing contractions and spelled-out words in the UI, as it creates inconsistency and reduces trust. Using spelled-out words in place of common contractions introduces unnecessary formality.
 
@@ -75,20 +75,20 @@ Use common contractions, such as "it's," "you're," "that's," and "don't," to cre
 
 Use one word or phrase consistently to refer to a specific action across the experience. For example, if you call the process of securing a reservation "booking" in one area of the interface, don't call it "planning" or "scheduling" elsewhere. To help drive consistency, check word usage across your organization. Create a list of agreed-upon terms for your style guide that your team can refer to.
 
-Use proper capitalization. For example, agree to use sentence casing throughout the UI&mdash;capitalizing only the first word in a sentence with proper nouns—names of people, places, and some products—always capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for position titles (Chief Financial Officer), organization names or department (Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstances. If you need to emphasize text, consider using different typography styles like size, font weight, or color instead of all caps.
+Use proper capitalization. For example, agree to use sentence casing throughout the UI, capitalizing only the first word in a sentence, with proper nouns—names of people, places, and some products—always capitalized. For subheads, buttons, and hyperlinks, use sentence casing without punctuation. When in doubt, don't capitalize. Use title case for position titles (Chief Financial Officer), organization names or departments (Human Resources), branded products or programs, and names of people and places. All caps is not recommended under any circumstances. If you need to emphasize text, consider using different typography styles like size, font weight, or color instead of all caps.
 
 ### Prioritize correct sentence structure
 
 How people react to and feel about your application depends partly on the quality of the writing and the overall voice and tone in which you communicate. In general, when writing, there are four types of statements (or sentence structures). Typically, UI content uses three of the four, depending on the purpose of the content and the nature of the product.
 
-- Use _declarative_ statements regularly. A description of the features of a component is an example of when you'd use a declarative statement.
-- Use _imperatives_ freely. These are prompts and commands. For example, when asking the reader to review changes and then submit.
-- Use caution with _interrogative_ statements. These are questions. They're acceptable in product flows when users must make choices. They can help uncover solutions or clarify a reader's needs.
-- Use _exclamatory_ statements sparingly, as their positive impact diminishes with overuse.
+- Use *declarative* statements regularly. A description of the features of a component is an example of when you might use a declarative statement.
+- Use *imperatives* freely. These are prompts and commands. For example, asking the user to review changes and then submit.
+- Use caution with *interrogative* statements. These are questions. They're acceptable in product flows when users must make choices. They can help uncover solutions or clarify a user's needs.
+- Use *exclamatory* statements sparingly, as their positive impact diminishes with overuse.
 
 ### Know when to use active voice
 
-In the active voice, the subject performs the action. The sentence begins with the person or thing taking action. For example, "Enter a few letters" is a simple, direct request for the reader to take action.
+In the active voice, the subject performs the action of the sentence. For example, "Enter a few letters" is a simple, direct request for the user to take action.
 
 In the passive voice, the subject receives the action (as opposed to performing it). The past participle of the action verb follows some form of the verb "to be" ("has been," "will be"). Passive voice obscures or omits the actor, making the sentence less direct and sometimes ambiguous. For example, "A few letters should be entered"  lacks clarity and authority.
 
@@ -119,9 +119,9 @@ For best practices and standards, rely on the active voice. However, for general
 
 ### Be mindful of content needed for assistive technologies
 
-Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alternative (alt) text for images ensures that the UI content can be accessed and easily understood by users dependent on assistive technologies. While alt text is commonly used with images to provide a text description for screen readers, it's also applicable to other non-text elements on a webpage. For example, videos, audio files, charts, graphs, and interactive components like buttons or icons.
+Accessibility involves ensuring that content is perceivable, operable, and understandable by all users, including those with disabilities. Features such as descriptive alternative (alt) text for images ensures that the UI content can be accessed and easily understood by users dependent on assistive technologies. While alt text is commonly used with images to provide a text description for screen readers, it can also be used for non-text elements on a webpage. For example, videos, audio files, charts, graphs, and interactive components like buttons or icons.
 
-When writing alt text, provide concise and descriptive text that conveys the purpose and content of the content. It should be clear, informative, and relevant to the context of the image. Avoid overly technical language or unnecessary details. Focus on conveying the essential information, such as key objects, actions, or visual elements, while avoiding subjective interpretations about the image. Keep it concise to ensure it is efficiently read by screen readers. Keep it mind that the standard recommendation for the maximum length of alt text is typically around 125 characters. Write in a neutral tone and ensure that the content is grammatically correct,
+When writing alt text, provide concise and descriptive text that conveys the purpose and content of the content. It should be clear, informative, and relevant to the context of the image. Avoid overly technical language or unnecessary details. Focus on conveying the essential information, such as key objects, actions, or visual elements, while avoiding subjective interpretations about the image. Keep it concise to ensure it is efficiently read by screen readers. Keep it mind that the standard recommendation for the maximum length of alt text is typically around 125 characters. Write in a neutral tone and ensure that the content is grammatically correct.
 
 ### Write for international audiences
 
