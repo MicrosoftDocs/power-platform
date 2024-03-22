@@ -1,6 +1,6 @@
 ---
 title: "Analytics considerations for Copilot Studio vs Dynamics 365 Omnichannel"
-description: "Guidance best practices to understand analytics considerations for copilots in Copilot Studio vs Dynamics 365 Omnichannel."
+description: "Guidance for understanding analytics for copilots in Copilot Studio vs Dynamics 365 Omnichannel."
 author: athinesh
 ms.date: 3/22/2024
 ms.topic: conceptual
