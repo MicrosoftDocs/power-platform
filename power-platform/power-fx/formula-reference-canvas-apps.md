@@ -18,7 +18,7 @@ contributors:
 
 # Formula reference - canvas apps
 
-In this article, learn about all the functions available in canvas apps
+In this article, learn about all the functions available in canvas apps.
 
 Formulas in canvas apps combine many elements. Listed below are:
 
