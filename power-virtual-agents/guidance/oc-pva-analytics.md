@@ -45,7 +45,7 @@ A topic is tied to a dialog flow built in Copilot Studio. One topic contains one
 
 ## Using Dynamics 365 Omnichannel chatbot analytics
 
-The standard analytics tools in Dynamics 365 Omnichannel are mainly focused on providing insights about how the overall copilot deflection is performing through the conversations. These analytics are optimized to give insight into the overall interaction/conversation across both copilot and human agent.
+The [standard bot analytics tools in Dynamics 365 Omnichannel](../../dynamics365/customer-service/use/oc-bot-dashboard.md) are mainly focused on providing insights about how the overall copilot deflection is performing through the conversations. These analytics are optimized to give insight into the overall interaction/conversation across both copilot and human agent.
 
 The insights you can get from Dynamics 365 Omnichannel include:
 
@@ -55,7 +55,7 @@ The insights you can get from Dynamics 365 Omnichannel include:
 
 ## Copilot Studio vs Omnichannel analytics comparison
 
-Analytics calculations differ between Copilot Studio and Dynamics 365 Omnichannel for the same named metrics, 
+Analytics calculations differ between Copilot Studio and Dynamics 365 Omnichannel for metrics with similar names, 
 such as resolution rate, escalation rate and abandonment rate.
 
 For example, an ongoing interaction with a user that would be considered one conversation and one bot session in Dynamics 365 Omnichannel analytics may be considered by Copilot Studio analytics to be multiple separate analytic sessions. As a result of this, the resolution rates, escalation rates and abandonment rates can be somewhat different across Copilot Studio analytics and Dynamics 365 Omnichannel analytics. 
