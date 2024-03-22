@@ -26,7 +26,7 @@ The insights you can get from Copilot Studio analytics include metrics for quest
 
 In general, Copilot Studio analytics tools are useful to enhance the bot performance in terms of the topics. This gives insights about what new topics need to be created, and what topics need to be updated to achieve better resolution rates for future user queries.
 
-To learn more, see [Key concepts - Analytics in Microsoft Copilot Studio](analytics-overview.md)
+To learn more, see [Key concepts - Analytics in Microsoft Copilot Studio](..analytics-overview.md)
 
 ## Understanding Copilot Studio analytics definitions
 
