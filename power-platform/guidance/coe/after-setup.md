@@ -104,7 +104,7 @@ Your first check before installing the upgrade is removing unmanaged layers from
 You can check for unmanaged layers on the inventory flows using the [Coe Admin Command Center](core-components.md#coe-admin-command-center) app.
 
 1. Open the **CoE Admin Command Center** app from your CoE environment.
-1. Select **Sync flows** from the navigation.
+1. Select **CoE flows** from the navigation.
 1. Check if any of the flows show the layer icon, indicating they have unmanaged layers
 
    ![Screenshot showing the layer icon in the Admin Command Center app](media/coe-upgrade6.png "Detect unmanaged layers on flows in the Admin Command Center app")
