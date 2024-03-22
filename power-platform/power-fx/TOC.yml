@@ -28,6 +28,8 @@
             href: formula-reference-overview.md
           - name: Power Apps formula reference
             href: formula-reference.md
+          - name: Canvas apps formula reference
+            href: formula-reference-canvas-apps.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
           - name: Cards formula reference

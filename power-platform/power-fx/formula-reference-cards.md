@@ -5,7 +5,7 @@ author: mduelae
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 11/1/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: anuitz
 search.audienceType:

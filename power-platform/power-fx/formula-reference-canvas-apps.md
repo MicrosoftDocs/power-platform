@@ -1,6 +1,6 @@
 ---
-title: Formula reference - Power Apps
-description: Reference information for all functions in Power Apps.
+title: Formula reference - canvas apps
+description: Reference information for all functions in canvas apps.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
@@ -16,11 +16,11 @@ contributors:
   - jorisdg
 ---
 
-# Formula reference - Power Apps
+# Formula reference - canvas apps
 
-In this article, learn about all the functions available in Power Apps.
+In this article, learn about all the functions available in canvas apps
 
-Formulas in Power Apps combine many elements. Listed below are:
+Formulas in canvas apps combine many elements. Listed below are:
 
 - **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
 - **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
