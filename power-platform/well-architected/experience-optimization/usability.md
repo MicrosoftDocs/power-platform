@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/20/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for prioritizing ease of use
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:04](checklist.md)| **Prioritize ease of use during the design process. Minimize user effort and maximize task efficiency. Streamline complex processes. Align design decisions with user needs.** |
 |---|---|
 
-This guide describes recommendations for improving usability in user interface design. Usability refers to the ease of use and effectiveness of a product for its intended users. Usability directly impacts user satisfaction, errors, and overall interactions with the digital interface, ultimately affecting the overall success of an application.
+This guide describes the recommendations for improving usability in user interface design. Usability refers to the ease of use and effectiveness of a product for its intended users. Usability directly impacts user satisfaction, errors, and overall interactions with the digital interface, ultimately affecting the overall success of an application.
 
 ## Key design strategies
 

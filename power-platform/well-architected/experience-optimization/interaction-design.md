@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for following interaction design best practices
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:08](checklist.md)| **Prioritize responsiveness and feedback. Make it easy to understand how to interact with the interface, incorporating interactions that align with users' mental models and expectations.** |
 |---|---|
 
-This guide describes recommendations for interactions in user interface design. Interaction design is crucial for understanding how users process information from the system and how visual elements are initially organized and respond to user inputs. It aids in planning task flows and accommodating various scenarios and contingencies, helping users achieve their goals.
+This guide describes the recommendations for interactions in user interface design. Interaction design is crucial for understanding how users process information from the system and how visual elements are initially organized and respond to user inputs. It aids in planning task flows and accommodating various scenarios and contingencies, helping users achieve their goals.
 
 ## Key design strategies
 

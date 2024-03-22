@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for writing content for user interfaces
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:09](checklist.md)| **Content must be easily understood and provide clear direction. Use an approachable, consistent, and professional tone that facilitates task completion.** |
 |---|---|
 
-This guide describes recommendations for crafting effective content tailored for user experiences. Content serves as the primary mode of communication in a user interface, holding more power in communicating complex ideas than visual elements alone. The words we use in an application influence how users navigate and perceive it, whether we're guiding them through a process or sharing important system information.
+This guide describes the recommendations for crafting effective content tailored for user experiences. Content serves as the primary mode of communication in a user interface, holding more power in communicating complex ideas than visual elements alone. The words we use in an application influence how users navigate and perceive it, whether we're guiding them through a process or sharing important system information.
 
 ## Key design strategies
 

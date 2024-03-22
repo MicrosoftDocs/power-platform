@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/20/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for feedback and guidance
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:05](checklist.md)| **Provide meaningful, useful, and simple guidance in notifications and messages. Notify users with relevant, important, and valuable information. Give users feedback on their actions. Let users know when something happens and what they need to do next.** |
 |---|---|
 
-This guide describes recommendations for providing meaningful feedback and guidance to users of your workload. Feedback and guidance in a well-architected workload provide users with the information they need to perform actions and to effectively make decisions. Feedback and guidance that lack relevance, are hard to understand, or display at the wrong time for the user to properly react, will lead to a poor user experience, potentially resulting in lost productivity, higher support costs, and failed business processes.
+This guide describes the recommendations for providing meaningful feedback and guidance to users of your workload. Feedback and guidance in a well-architected workload provide users with the information they need to perform actions and to effectively make decisions. Feedback and guidance that lack relevance, are hard to understand, or display at the wrong time for the user to properly react, will lead to a poor user experience, potentially resulting in lost productivity, higher support costs, and failed business processes.
 
 ## Key design strategies
 
@@ -73,7 +72,7 @@ Use connectors to send notifications to other services in the Power Platform eco
 
 ## See also
 
-- [Recommendations for writing content for user interfaces](user-interface-content.md)
+[Recommendations for writing content for user interfaces](user-interface-content.md)
 
 ## Experience Optimization checklist
 

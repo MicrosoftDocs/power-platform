@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/20/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for following design standards, conventions, and guidelines
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:02](checklist.md)| **Follow established standards, conventions, and guidelines. Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience.** |
 |---|---|
 
-This guide describes how to apply established design standards, conventions, and best practices to develop user interfaces that enhance the user experience and the application's overall success. Deviation from standards should be carefully considered to avoid negatively affecting the user's experience and application usability.
+This guide describes the recommendations for establishing design standards, conventions, and best practices to develop user interfaces that enhance the user experience and the application's overall success. Deviation from standards should be carefully considered to avoid negatively affecting the user's experience and application usability.
 
 ## Key design strategies
 

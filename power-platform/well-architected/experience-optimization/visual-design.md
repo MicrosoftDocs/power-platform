@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for optimizing user perception and aesthetics
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:07](checklist.md)| **Apply classic design principals to visual elements such as color schemes, typography, and layout. Strive for a focused, balanced, and intuitive visual hierarchy that guides users' attention to important elements and actions.** |
 |---|---|
 
-This guide describes recommendations for universal visual design patterns that affect user perception, which can significantly influence satisfaction and adoption of an application. Visual elements serve as the foundational building blocks used to create experiences. Applying visual principles that align with how humans naturally perceive and process information provides structured methods to help select and arrange visual elements to create an effective and appealing application.
+This guide describes the recommendations for universal visual design patterns that affect user perception, which can significantly influence satisfaction and adoption of an application. Visual elements serve as the foundational building blocks used to create experiences. Applying visual principles that align with how humans naturally perceive and process information provides structured methods to help select and arrange visual elements to create an effective and appealing application.
 
 ## Key design strategies
 

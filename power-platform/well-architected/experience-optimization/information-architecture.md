@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/20/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for implementing an information architecture
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:03](checklist.md)| **Implement a consistent information architecture. Make finding information and functionality easy. Provide contextual clues and visual indicators to guide users. Use consistent and user-friendly labels for categories, navigation, and other informational elements.** |
 |---|---|
 
-This guide describes recommendations for designing an effective information architecture (IA) for your workload.
+This guide describes the recommendations for designing an effective information architecture (IA) for your workload.
 
 ## Key design strategies
 
@@ -63,7 +62,7 @@ To implement a wizard pattern, use the [SubwayNav component](/power-platform/gui
 
 ## See also
 
-- [Navigation in a canvas app learn module](/training/modules/navigation-canvas-app/)
+[Navigation in a canvas app learn module](/training/modules/navigation-canvas-app/)
 
 ## Experience Optimization checklist
 

@@ -7,7 +7,6 @@ ms.reviewer: robstand
 ms.date: 03/22/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai-usage: ai-assisted
 ---
 
 # Recommendations for optimizing layout
@@ -17,7 +16,7 @@ ai-usage: ai-assisted
 |[XO:06](checklist.md)| **Maintain usable and visually appealing layouts across screen sizes and resolutions. Use adaptive techniques to dynamically render content in various ways.** |
 |---|---|
 
-This guide describes recommendations for principles and techniques used to design screen layouts that are easy to navigate and adapt fluidly across various devices. This approach ensures that users have a consistent and optimal viewing experience regardless of the device they're using.
+This guide describes the recommendations for designing screen layouts that are easy to navigate and adapt fluidly across various devices. This approach ensures that users have a consistent and optimal viewing experience regardless of the device they're using.
 
 **Definitions**
 
@@ -162,7 +161,7 @@ Canvas apps require explicit configuration for each component to [implement resp
 
 ## See also
 
-- [Fluent layout](https://fluent2.microsoft.design/layout)
+[Fluent layout](https://fluent2.microsoft.design/layout)
 
 ## Experience Optimization checklist
 
