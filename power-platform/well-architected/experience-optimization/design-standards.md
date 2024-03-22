@@ -90,6 +90,8 @@ Users access digital content in various ways. In addition to mouse and pointer i
 
 #### Assistive tools
 
+Common assistive tools are described below:
+
 - *Keyboard.* People with visual impairments interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who 've blindness can't see the pointer on the screen, they can't use a standard mouse. The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
 - *Screen reader.* Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. This technology enables individuals with blindness or low vision to use information technology with the same level of independence and privacy as any other user. Screen readers are also used by individuals with cognitive or learning disabilities, and by users who simply prefer audio content over text. These tools extend beyond web use, aiding in the navigation of documents, spreadsheets, and operating systems.
 - *Touch.* Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
