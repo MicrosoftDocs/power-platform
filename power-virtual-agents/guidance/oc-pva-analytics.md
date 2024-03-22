@@ -26,6 +26,8 @@ The insights you can get from Copilot Studio analytics include metrics for quest
 
 In general, Copilot Studio analytics tools are useful to enhance the bot performance in terms of the topics. This gives insights about what new topics need to be created, and what topics need to be updated to achieve better resolution rates for future user queries.
 
+:::image type="content" source="media/oc-pva-analytics/copilot-studio-analytics.png" alt-text="Copilot Studio analytics." border="false":::
+
 To learn more, see [Key concepts - Analytics in Microsoft Copilot Studio](../analytics-overview.md)
 
 ## Understanding Copilot Studio analytics definitions
@@ -47,6 +49,8 @@ A topic is tied to a dialog flow built in Copilot Studio. One topic contains one
 
 The [standard bot analytics tools in Dynamics 365 Omnichannel](/dynamics365/customer-service/use/oc-bot-dashboard) are mainly focused on providing insights about how the overall copilot deflection is performing through the conversations. These analytics are optimized to give insight into the overall interaction/conversation across both copilot and human agent.
 
+:::image type="content" source="media/oc-pva-analytics/d365-oc-bot-analytics.png" alt-text="Example comparing analytics between Copilot Studio and Dynamics 365 Omnichannel." border="false":::
+
 The insights you can get from Dynamics 365 Omnichannel include:
 
 - Bot resolution time
@@ -59,6 +63,10 @@ Analytics calculations differ between Copilot Studio and Dynamics 365 Omnichanne
 such as resolution rate, escalation rate and abandonment rate.
 
 For example, an ongoing interaction with a user that would be considered one conversation and one bot session in Dynamics 365 Omnichannel analytics may be considered by Copilot Studio analytics to be multiple separate analytic sessions. As a result of this, the resolution rates, escalation rates and abandonment rates can be somewhat different across Copilot Studio analytics and Dynamics 365 Omnichannel analytics. 
+
+Here is an example showing the differences for analytics between the two for a single conversation:
+
+:::image type="content" source="media/oc-pva-analytics/bot-cs-d365-analytics-compare.png" alt-text="Dynamics 365 Omnichannel analytics." border="false":::
 
 These key differences in the calculation of resolution rates and escalation rates need to be considered when consuming the Copilot Studio and Dynamics 365 Omnichannel analytics to determine key metrics like deflection rate, resolution rate, and so on. The general recommendation is that you rely on Dynamics 365 Omnichannel analytics for tracking the overall copilot deflection rate for the organization and use the Copilot Studio analytics for enhancing the topic performance. 
 
