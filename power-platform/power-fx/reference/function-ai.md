@@ -5,7 +5,7 @@ author: paulliew
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/1/2024
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: paulliew
 search.audienceType:
