@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 03/22/2024
 search.audienceType: admin
 ---
 
@@ -49,7 +49,7 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 - Installing apps for an environment
 
 > [!IMPORTANT]
-> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access.
+> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
 
 ## Self-elevate to the system administrator role
 
@@ -196,8 +196,6 @@ Remove-RoleAssignmentFromUsers
 - The user making the call must have tenant admin. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
-
-- Calls to elevate aren't logged during preview. However, logging support will be added in the future.
 
 - The Microsoft Power Platform CoE Starter Kit no longer works and we're working on updating the kit.
 

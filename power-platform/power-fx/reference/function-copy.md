@@ -6,7 +6,7 @@ ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: 
-ms.date: 2/22/2023
+ms.date: 3/22/2024
 ms.author: jorisde
 search.audienceType: 
   - maker
