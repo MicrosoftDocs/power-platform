@@ -11,8 +11,6 @@ ms.reviewer: iawilt
 
 # Analytics considerations for Copilot Studio vs Dynamics 365 Omnichannel
 
-TEST
-
 Analytics is a top priority for Dynamics 365 Omnichannel and Copilot Studio customers tracking the performance of their copilots and call center agents. 
 There are major efforts currently underway to improve the analytics across both these products. While the analytics will continue to improve, there are several considerations you can adopt as a copilot builder or customer service expert to improve your understanding of analytics across Copilot Studio and Dynamics 365 Omnichannel to enhance copilot performance. 
 
