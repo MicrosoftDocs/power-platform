@@ -13,12 +13,12 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-|[RE:07](checklist.md)|Implement structured, tested, and documented business continuity and disaster recovery (BCDR) plans that align with the recovery targets. Plans must cover all components and the system as a whole.   |
+|[RE:07](checklist.md)| **Implement structured, tested, and documented business continuity and disaster recovery (BCDR) plans that align with the recovery targets. Plans must cover all components and the system as a whole.**  |
 |---|---|
 
 This guide describes recommendations for designing a reliable disaster recovery strategy for a workload. To meet internal service-level objectives (SLOs) or even a service-level agreement (SLA) that you have guaranteed for your customers, you must have a robust and reliable disaster recovery strategy. Failures and other major issues are expected. Your preparations to deal with these incidents determine how much your customers can trust your business to reliably deliver for them. A disaster recovery strategy is the backbone of preparation for major incidents.
 
-**Definitions**<!-- EDITOR'S NOTE: Doesn't comply with "emphasis used as heading" rule, but it's like this in the equivalent Azure WAF article so I'm leaving it. -->
+**Definitions**
 
 | Term | Definition |
 | --- | --- |
@@ -33,7 +33,7 @@ This guide assumes that you have already performed the following tasks as part o
 
 - Perform [failure mode analysis (FMA)](failure-mode-analysis.md) for your flows.
 
-- Identify [reliability targets](metrics.md).<!-- EDITOR'S NOTE: This file doesn't exist. -->
+- Identify [reliability targets](metrics.md).
 
 - Design a robust [testing strategy](testing-strategy.md).
 
@@ -85,7 +85,7 @@ A DR testing practice is essential for a good DR plan. Many industries have comp
 
 Follow these recommendations for successful DR drills:
 
-- Perform at least one production DR drill per year. Tabletop (dry run) drills or nonproduction drills help ensure that the parties involved are familiar with their roles and responsibilities. These drills also help operators build familiarity ("muscle memory") by following recovery processes. But only production drills truly test the validity of the DR plan and the RTO and RPO metrics. Use your production drills to time recovery processes for components and flows to ensure that the RTO and RPO targets that have been defined for your workload are achievable. For functions that are out of your control, like Microsoft Entra ID outages, ensure that the RTO and RPO targets for the flows that involve those functions account for possible delays beyond your control.
+- Perform at least one production DR drill per year. Dry run drills or nonproduction drills help ensure that the parties involved are familiar with their roles and responsibilities. These drills also help operators build familiarity by following recovery processes. But only production drills truly test the validity of the DR plan and the RTO and RPO metrics. Use your production drills to time recovery processes for components and flows to ensure that the RTO and RPO targets that have been defined for your workload are achievable. For functions that are out of your control, like Microsoft Entra ID outages, ensure that the RTO and RPO targets for the flows that involve those functions account for possible delays beyond your control.
 
 - Use dry run drills to educate new operators about DR processes and procedures. Senior operators should take time to let new operators perform their role and should watch for improvement opportunities. If a new operator is hesitant or confused by a step in a procedure, review that procedure to ensure that it's clearly written.
 
@@ -99,4 +99,4 @@ As your DR drill practices mature, you learn which procedures you can run in par
 
 ## Failover capabilities
 
-The Microsoft Business Application Platform (BAP) provides business continuity and disaster recovery (BCDR) capabilities to all [production](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
+Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all [production](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).

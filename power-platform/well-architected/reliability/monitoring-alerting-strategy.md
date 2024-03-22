@@ -13,12 +13,12 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-|[RE:08](checklist.md)| Measure and publish the solution's health indicators. Continuously capture uptime and other reliability data from across the workload and also from individual components and key flows.  |
+|[RE:08](checklist.md)| **Measure and publish the solution's health indicators. Continuously capture uptime and other reliability data from across the workload and also from individual components and key flows.**  |
 |---|---|
 
 This guide describes the recommendations for designing a reliable monitoring and alerting strategy. Implement this strategy to keep your operations teams informed of your environment's health status and ensure that you meet the established reliability targets for your workload.
 
-**Definitions**<!-- EDITOR'S NOTE: Out of compliance with "emphasis used for heading" rule, but it's like this in the equivalent Azure WAF article so I'm leaving it. -->
+**Definitions**
 
 | Term | Definition |
 | --- | --- |
@@ -34,7 +34,7 @@ Before you create a monitoring and alerting strategy, perform the following task
 
 - Perform [failure mode analysis (FMA)](failure-mode-analysis.md) for your flows.
 
-- Identify [reliability targets](metrics.md). <!-- EDITOR'S NOTE: Need a file to link to. -->
+- Identify [reliability targets](metrics.md).
 
 - Design a robust [testing strategy](testing-strategy.md).
 
@@ -72,11 +72,9 @@ Incorporate purpose-built advanced monitoring and analytics that your cloud prov
 
 Implement backup and recovery monitoring to capture:
 
-  The data replication status to ensure that your workload achieves recovery within the target recovery point objective (RPO).
-  
-  Successful and failed backups and recoveries.
-  
-  The recovery duration to inform your [disaster recovery planning](/azure/well-architected/reliability/disaster-recovery).
+- The data replication status to ensure that your workload achieves recovery within the target recovery point objective (RPO).  
+- Successful and failed backups and recoveries.  
+- The recovery duration to inform your [disaster recovery planning](/azure/well-architected/reliability/disaster-recovery).
 
 ### Monitor applications
 
@@ -102,19 +100,17 @@ There are many metrics to monitor for databases. In the context of reliability, 
 - Memory pressure
 - Locks
 
-## Services and tools for monitoring and alerting
+## Power Platform facilitation
 
-Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem.
+Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem. You can use this integration to:
 
-You can subscribe to receive telemetry captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights) on diagnostics, performance, and operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
+- Subscribe to receive telemetry captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights) on diagnostics, performance, and operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
 
-Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights) to use these analytics to diagnose issues, understand what users actually do with your apps, drive better business decisions, and improve the quality of your apps.
+- Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights) to use these analytics to diagnose issues, understand what users actually do with your apps, drive better business decisions, and improve the quality of your apps.
 
-Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
+- Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring.
-
-For more information about logging activities in Power Platform, see:
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
@@ -123,3 +119,11 @@ For more information about logging activities in Power Platform, see:
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
+
+Your Power Platform workload may include Azure resources. To learn more about monitoring recommendations for Azure resources, see [Recommendations for designing and creating a monitoring system](/azure/well-architected/operational-excellence/observability).
+
+The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation containing a collection of components and tools designed to help you get started with developing a strategy for adopting and supporting Power Platform. The kit provides automation and tooling to help teams build monitoring and automation necessary to support a CoE.
+
+## See also
+
+[How do I check my online service health?](/power-platform/admin/check-online-service-health)

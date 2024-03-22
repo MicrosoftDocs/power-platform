@@ -13,9 +13,8 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-|[RE:05](checklist.md)| Strengthen the resiliency of your workload by implementing error handling and transient fault handling. Build capabilities into the solution to handle component failures and transient errors.  |
+|[RE:05](checklist.md)| **Strengthen the resiliency of your workload by implementing error handling and transient fault handling. Build capabilities into the solution to handle component failures and transient errors.** |
 |---|---|
-
 
 This guide describes the recommendations for handling transient faults in your cloud applications. All applications that communicate with remote services and resources must be sensitive to transient faults. This is especially true for applications that run in the cloud, where, because of the nature of the environment and connectivity over the internet, this type of fault is likely to be encountered more often. Transient faults include the momentary loss of network connectivity to components and services, the temporary unavailability of a service, and timeouts that occur when a service is busy. These faults are often self-correcting, so, if the action is repeated after a suitable delay, it's likely to succeed.
 
@@ -26,7 +25,6 @@ Transient faults can occur in any environment, on any platform or operating syst
 ### Challenges
 
 Transient faults can have a significant effect on the perceived availability of an application, even if it's been thoroughly tested under all foreseeable circumstances. To ensure that your Power Platform workload can operate reliably, you need to ensure that it can respond to the following challenges:
-
 
 - The application must be able to detect faults when they occur and determine if the faults are likely to be transient, are long-lasting, or are terminal failures. Different resources are likely to return different responses when a fault occurs, and these responses can also vary depending on the context of the operation. For example, the response for an error when the application is retrieving data from a custom connector might be different from the response when the application is running a cloud flow and waiting for the response.
 
@@ -66,7 +64,7 @@ Keep in mind that determining the appropriate intervals between retries is the m
 
 - **Immediate retry**. Sometimes a transient fault is brief, and retrying the operation immediately is appropriate because it might succeed if the fault is cleared in the time that it takes the application to send the next request. However, there should never be more than one immediate retry attempt. You should switch to alternative strategies, like exponential interval or fallback actions, if the immediate retry fails.
 
-- As a general guideline, use an exponential interval strategy for background operations, and use immediate or fixed interval retry strategies for interactive operations. In both cases, you should choose the delay and the retry count so that the maximum latency for all retry attempts is within the required end-to-end latency requirement.
+As a general guideline, use an exponential interval strategy for background operations, and use immediate or fixed interval retry strategies for interactive operations. In both cases, you should choose the delay and the retry count so that the maximum latency for all retry attempts is within the required end-to-end latency requirement.
 
 Consider the combination of all factors that contribute to the overall maximum timeout for a retried operation. These factors include the time it takes for a failed connection to produce a response, the delay between retry attempts, and the maximum number of retries. The total of all these times can result in long overall operation times, especially when you use an exponential delay strategy where the interval between retries grows rapidly after each failure. If a process must meet a specific service-level agreement (SLA), the overall operation time, including all timeouts and delays, must be within the limits defined in the SLA.
 
@@ -104,7 +102,7 @@ Fully test your retry strategy under as wide a set of circumstances as possible,
 
 A *retry policy* is a combination of all the elements of your retry strategy. It defines the detection mechanism that determines whether a fault is likely to be transient, the type of interval to use (like fixed or exponential), the actual interval values, and the number of times to retry.
 
-Take advantage of built-in or default retry strategies that are available in the client APIs that you use, but only when they're appropriate for your scenario. These strategies are typically generic. In some scenarios, they might be all you need, but in other scenarios they don't offer the full range of options to suit your specific requirements. To determine the most appropriate values, you need to perform testing to understand how the settings affect your application.
+Take advantage of built-in or default retry strategies but only when they're appropriate for your scenario. These strategies are typically generic. In some scenarios, they might be all you need, but in other scenarios they don't offer the full range of options to suit your specific requirements. To determine the most appropriate values, you need to perform testing to understand how the settings affect your application.
 
 #### Log and track transient and nontransient faults
 
@@ -136,7 +134,7 @@ Consider the scope of operations that are retried. For example, it might be easi
 
 If you choose a retry scope that encompasses several operations, consider the total latency of all of them when you determine retry intervals, when you monitor the elapsed times of the operation, and before you raise alerts for failures.
 
-## Services and tools for handling transient errors in Power Platform
+## Power Platform facilitation
 
 The following sections describe the mechanisms you can use to manage transient faults.
 
@@ -157,7 +155,7 @@ You can also [use Error, IfError, IsError, and IsBlankOrError functions](/power-
 Learn more about transient fault handling in Power Apps:
 
 - [Mobile offline overview](/power-apps/mobile/mobile-offline-overview)
-- [Mobile offline for canvas apps (preview)](/power-apps/mobile/canvas-mobile-offline-overview)
+- [Mobile offline for canvas apps](/power-apps/mobile/canvas-mobile-offline-overview)
 
 ### Azure and custom connectors
 
