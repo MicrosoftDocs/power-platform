@@ -24,7 +24,7 @@
           href: segmented-solutions-alm.md
         - name: Create and update solutions
           href: update-solutions-alm.md
-        - name: Removing dependencies
+        - name: Dependencies
           items:
              - name: Removing dependencies overview
                href: removing-dependencies.md
