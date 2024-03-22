@@ -351,7 +351,13 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
 
-## Step 10: Delete the user's personal data in environments of Dataverse
+## Step 10: Delete the user's personal data in Microsoft Copilot Studio
+Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for users Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](../power-virtual-agents/personal-data-summary).
+
+> [!IMPORTANT]
+> It is recommended that admins complete this step for a Power Apps user.
+
+## Step 11: Delete the user's personal data in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
 
 For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
@@ -359,7 +365,7 @@ For guidance on how to respond to DSRs for users who use Dataverse, see [Respond
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
 
-## Step 11: Delete the user from Microsoft Entra
+## Step 12: Delete the user from Microsoft Entra
 Once the above steps have been complete the final step is to delete the user's account for Microsoft Entra.
 
 ### Managed tenant
