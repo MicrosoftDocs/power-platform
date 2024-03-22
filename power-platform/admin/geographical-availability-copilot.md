@@ -50,27 +50,26 @@ The following table describes when and how data can move across regions for copi
 
 \*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
-## Enable data movement across regions
+## Turn on copilots and generative AI features
 
 If your environment is hosted in a region that requires data movement across regions to use copilots and generative AI features, you need to consent to the terms of use on the **Move data across regions** checkbox in the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
 1. Select your environment.
-
 1. On the **Generative AI features** card, select **Edit**.
-
-    :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
-
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
-    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
+   > [!Note]
+   > Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
+   
+1. Review the terms of use and select the **Bing Search** checkbox.
 
-1. Select **Enable**.
+   > [!Note]
+   > To select the **Bing Search** checkbox, the **Move data across regions** checkbox must be already selected.
+   > Data is stored and processed in the United States region for Bing search.
 
-    After you consent to the terms of use, the status of **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
-
-     Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
+1. Select **Save**.
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 
