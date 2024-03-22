@@ -34,7 +34,7 @@ HostInfo – Required. The type of information to display.
 1. Set the [OnSelect](/power-apps/maker/canvas-apps/controls/properties-core) property of the [Sync icon](/power-apps/maker/canvas-apps/controls/control-shapes-icons) to `ShowHostInfo(HostInfo.OfflineSync)`
 1. Save and publish the app.
 
-When the users selects the Sync icon on on their mobile device, a pop-up with the offline sync details such as sync status, last sync date, and downloaded tables are displayed. 
+When the users selects the Sync icon on their mobile device, a pop-up with the offline sync details such as sync status, last sync date, and downloaded tables are displayed. 
 
 ## Known issue
 - The table column in the available table section shows the table name instead of the display name.
