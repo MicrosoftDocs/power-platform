@@ -80,12 +80,10 @@ Confirm that your Power Platform environment and enterprise policy are in suppor
 
 The following table lists the services that support Azure subnet delegation for Virtual Network support for Power Platform.
 
-| Area | Power Platform services | Virtual Network support |
-|------------|-------------------|--------------|
+| Area      | Power Platform services | Virtual Network support |
+|-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Preview |
-| Connectors | [SQL Server](/connectors/sql/) | Preview |
-| Connectors | [Azure SQL Data Warehouse](/connectors/sqldw/) | Preview|
-| Connectors | [Azure Queues](/connectors/azurequeues/) | Preview|
+| Connectors | <ul><li> [SQL Server](/connectors/sql/) </ul></li> <ul><li> [Azure SQL Data Warehouse](/connectors/sqldw/) </ul></li><ul><li> [Azure Queues](/connectors/azurequeues/) </ul></li><ul><li>[Custom connectors](/connectors/custom-connectors/)</li></ul> <ul><li>[Azure Key Vault](/connectors/keyvault/)</li></ul> <ul><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li></ul>| Preview |
 
 
 ## Licensing requirements
