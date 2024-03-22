@@ -30,7 +30,7 @@ To learn more, see [Key concepts - Analytics in Microsoft Copilot Studio](../ana
 
 ## Understanding Copilot Studio analytics definitions
 
-It is important to understand the way Copilot Studio calculates the various metrics for the analytics. The basis of these calculations is the copilot sessions. A session can be an *unbilled* or a *billed* session. A billed session is a continuous interaction between a copilot and a user to address all of user’s question within a 60-minute time window.
+It is important to understand the way Copilot Studio calculates the various metrics made available to [Analyze bot performance and usage in Copilot Studio](../analytics-summary.md). These calculations are based on the copilot sessions. A session can be an *unbilled* or a *billed* session. A billed session is a continuous interaction between a copilot and a user to address all of user’s question within a 60-minute time window.
 
 A billed session can include multiple user authored topics and cannot last longer than 60 minutes or 100 turns.
 
@@ -45,7 +45,7 @@ A topic is tied to a dialog flow built in Copilot Studio. One topic contains one
 
 ## Using Dynamics 365 Omnichannel chatbot analytics
 
-The [standard bot analytics tools in Dynamics 365 Omnichannel](../../dynamics365/customer-service/use/oc-bot-dashboard) are mainly focused on providing insights about how the overall copilot deflection is performing through the conversations. These analytics are optimized to give insight into the overall interaction/conversation across both copilot and human agent.
+The [standard bot analytics tools in Dynamics 365 Omnichannel](/dynamics365/customer-service/use/oc-bot-dashboard) are mainly focused on providing insights about how the overall copilot deflection is performing through the conversations. These analytics are optimized to give insight into the overall interaction/conversation across both copilot and human agent.
 
 The insights you can get from Dynamics 365 Omnichannel include:
 
