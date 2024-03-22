@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 03/22/2024
 search.audienceType: admin
 ---
 
@@ -49,7 +49,7 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 - Installing apps for an environment
 
 > [!IMPORTANT]
-> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions will be logged to Microsoft Purview.
+> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
 
 ## Self-elevate to the system administrator role
 
