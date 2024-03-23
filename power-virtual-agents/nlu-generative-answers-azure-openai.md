@@ -26,7 +26,8 @@ When you connect data through Azure OpenAI Service in Microsoft Copilot Studio, 
 
 - Connect a Copilot Studio copilot to your data by selecting **Deploy to** and then **A new Microsoft Copilot Studio bot**. The copilot is created and automatically connects to your Azure resource in your default environment.
 
-  :::image type="content" source="media/nlu-gpt/aoai-default-instance.png" alt-text="Screenshot showing deployment of the copilot into the default environment.":::
+ ![image](https://github.com/MicrosoftDocs/power-platform/assets/18705275/abc12c6a-a71c-4a28-98ee-ecf358b40795)
+
 
 > [!NOTE]
 > A **Conversational boosting** system topic is automatically generated when the copilot is created from Azure OpenAI Studio.
