@@ -7,7 +7,7 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.component: canvas
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:

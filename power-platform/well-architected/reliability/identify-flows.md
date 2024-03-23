@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 This guide describes the recommendations for identifying and prioritizing workload flows. Identifying and prioritizing workload flows involves mapping user flows and system flows to determine their criticality to the organization. This practice ensures that you identify and prioritize the most critical workload functionality to reduce the risk of damaging failures. Failure to identify and prioritize workload flows can lead to system breakdowns and compromised workload reliability.
 
-**Definitions** <!-- EDITOR'S NOTE: Out of compliance with "emphasis used as a heading" rule, but it's in the equivalent Azure WAF article so I'm leaving it. -->
+**Definitions**
 
 | Term | Definition |
 | --- | --- |
@@ -27,7 +27,11 @@ This guide describes the recommendations for identifying and prioritizing worklo
 
 ## Key design strategies
 
-When you design your workload, it's essential to define the user flows and system flows. User flows chart the movement of a user through your application. They focus on the user interface, interactions, decisions, and the steps required to complete a task. User flows provide a user-centric perspective on user experience and interface design. System flows chart the internal workings of your workload. They focus on data movement, input processing, output processing, and interactions among workload components, back-end services, and external APIs. System flows indicate the intricate details of how the workload operates internally.
+When you design your workload, it's essential to define the user flows and system flows.
+
+- User flows chart the movement of a user through your application. They focus on the user interface, interactions, decisions, and the steps required to complete a task. User flows provide a user-centric perspective on user experience and interface design.
+
+- System flows chart the internal workings of your workload. They focus on data movement, input processing, output processing, and interactions among workload components, back-end services, and external APIs. System flows indicate the intricate details of how the workload operates internally.
 
 You should identify and define flows early in the design phase of your workload. It gives you a clearer understanding of what affects the reliability of your workload. It aligns your architectural decisions closely with the reliability goals of your workload.
 
@@ -123,7 +127,7 @@ The following example provides a complete scenario and illustrates important poi
 
 ### User flow 1: Fill in the expense form
 
-- **Flow description**: Employees use the application to fill in the expense form.
+**Flow description**: Employees use the application to fill in the expense form.
 
 - **Business processes**: This flow supports **filling in and submitting the expense form**, but it's asynchronous, making it less critical.
 
@@ -139,7 +143,7 @@ The following example provides a complete scenario and illustrates important poi
 
 ### User flow 2: Review and approve expenses
 
-- **Flow description**: Line managers of the employee review and approve the expense claim.
+**Flow description**: Line managers of the employee review and approve the expense claim.
 
 - **Business processes**: This flow supports the **reviewing and approving of expense claims**, but it's an asynchronous process.
 
@@ -155,7 +159,7 @@ The following example provides a complete scenario and illustrates important poi
 
 ### User flow 3: Enter and post transactions
 
-- **Flow description**: Business admins need to review expenses and post transactions for credit cards to be paid.
+**Flow description**: Business admins need to review expenses and post transactions for credit cards to be paid.
 
 - **Business processes**: This flow supports the payment of credit card charges.
 
@@ -171,7 +175,7 @@ The following example provides a complete scenario and illustrates important poi
 
 ### System flow 4: Create weekly expense report
 
-- **Flow description**: A weekly report of expenses is created for the CFO to review. The report is generated and published to Power BI, and a notification is sent to the CFO.
+**Flow description**: A weekly report of expenses is created for the CFO to review. The report is generated and published to Power BI, and a notification is sent to the CFO.
 
 - **Business processes**: This flow supports the review of expenses.
 
@@ -187,7 +191,7 @@ The following example provides a complete scenario and illustrates important poi
 
 ### User flow 5: Audit expenses
 
-- **Flow description**: External auditors perform just-in-time audits of expenses to check whether the reports meet compliance requirements.
+**Flow description**: External auditors perform just-in-time audits of expenses to check whether the reports meet compliance requirements.
 
 - **Business processes**: This flow directly supports the **compliance and auditing processes**. Without this functionality, the company might face fines from external auditors.
 
@@ -201,9 +205,8 @@ The following example provides a complete scenario and illustrates important poi
 
 - **Criticality rating**: High
 
-### See also
+### Power Platform facilitation
 
-- [Overview of process mining and task mining in Power Automate](/power-automate/process-advisor-overview)
-- [Visualize processes](/power-automate/process-advisor-visualize)
-- [Introduction to Planning a Power Apps project](/power-apps/guidance/planning/introduction)
+Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview) including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes.
 
+Learn how to convert your ideas into a fully functional solution by [planning a Power Apps project].

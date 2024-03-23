@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
-|[RE:06](checklist.md)| Test for resiliency and availability scenarios by applying the principles of chaos engineering in your test and production environments. Use testing to ensure that your graceful degradation implementation strategies are effective by performing active malfunction and simulated load testing. |
+|[RE:06](checklist.md)| **Test for resiliency and availability scenarios by applying the principles of chaos engineering in your test and production environments. Use testing to ensure that your graceful degradation implementation strategies are effective by performing active malfunction and simulated load testing.** |
 |---|---|
 
 This guide describes the recommendations for designing a reliability testing strategy to validate and optimize the reliability of your workload. Reliability testing focuses on the resiliency and availability of your workload, specifically the critical flows that you identify when you design your solution. This guide provides general testing guidance and guidance that's specific to fault injection and chaos engineering.
@@ -80,7 +80,7 @@ Use every outage incident as an opportunity to learn more about your workload an
 
 ### Fault injection and chaos engineering guidance
 
-Fault injection testing follows the principles of chaos engineering by highlighting the workload's ability to react to component failures. Perform fault injection testing in preproduction and production environments. Apply the information that you learned from [performing failure mode analysis](/azure/well-architected/reliability/failure-mode-analysis) to ensure that you test only faults that you prioritize and that you have mitigation strategies that address faults.
+Fault injection testing follows the principles of chaos engineering by highlighting the workload's ability to react to component failures. Perform fault injection testing in preproduction and production environments. Apply the information that you learned from [performing failure mode analysis](failure-mode-analysis.md) to ensure that you test only faults that you prioritize and that you have mitigation strategies that address faults.
 
 The key guidelines of chaos engineering are:
 
@@ -138,11 +138,11 @@ Integrate the following recommendations and considerations to optimize your chao
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Fault injection testing in production can be disruptive and can potentially cause downtime. Be transparent with stakeholders about this possibility and ensure that you have safeguards in place to terminate experiments and rollback plans to quickly reverse the failures that you introduce.
 
-## Services and tools for testing workloads
+## Power Platform facilitation
 
-You can use static results in Power Automate to return a fixed result to test your workload.<!-- EDITOR'S NOTE: Is there an article to link to for this? -->
+You can use static results in Power Automate to return a fixed result to test your workload.<!-- EDITOR'S NOTE: Is there an article to link to for this? Is it Logic Apps we want to target: /azure/logic-apps/test-logic-apps-mock-data-static-results?tabs=consumption -->
 
-[microsoft/PowerApps-TestEngine (github.com)](https://github.com/microsoft/PowerApps-TestEngine) <!-- EDITOR'S NOTE: This needs more introduction. :) -->
+[Power Apps Test Engine (preview)](/power-apps/developer/test-engine/overview) is a Power Platform CLI component that you can use to test standalone canvas apps in Power Apps.
 
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 

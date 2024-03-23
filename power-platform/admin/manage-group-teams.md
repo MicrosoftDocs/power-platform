@@ -3,11 +3,11 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 03/21/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: matp
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -194,6 +194,11 @@ When manually assigning a record or sharing a record using the built-in form, th
     
 4.	Select **OK** > **Save** > **Publish**.
 
+## Delete team members and group team
+You can [delete the group team](manage-teams.md#delete-a-team) by first removing all the team members from the Dataverse group team. 
+
+## Delete Microsoft Entra group
+When the Microsoft Entra group is deleted from the Azure.portal, all members are removed automatically from the Dataverse group team in the environment within 24 hours. The [Dataverse group team can then be deleted](manage-teams.md#delete-a-team) after all the members are removed.
 
 ## Other team operations  
 See:

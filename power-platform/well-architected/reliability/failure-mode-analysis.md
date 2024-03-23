@@ -7,9 +7,7 @@ ms.reviewer: robstand
 ms.date: 03/01/2024
 ms.subservice: guidance
 ms.topic: conceptual
-ai.usage: ai-assisted
 ---
-
 
 # Recommendations for performing failure mode analysis
 
@@ -24,7 +22,7 @@ A key tenet of FMA is that failures happen no matter how many layers of resilien
 
 If you skip FMA altogether or perform an incomplete analysis, your workload is at risk of unpredicted behavior and potential outages caused by suboptimal design.
 
-**Definitions**<!-- EDITOR'S NOTE: Out of compliance with "emphasis used as heading" rule, but I'm leaving it since it's in the equivalent Azure WAF article. -->
+**Definitions*
 
 | Term | Definition |
 | --- | --- |
@@ -37,7 +35,6 @@ If you skip FMA altogether or perform an incomplete analysis, your workload is a
 In the context of FMA, understanding the prerequisites is crucial. Begin by reviewing and implementing recommendations for identifying flows, prioritizing them based on criticality. Your data artifacts play a pivotal role in describing the data paths within these flows. As you delve into the FMA approach, focus on planning components for critical flows, identifying dependencies (both internal and external), and devising mitigation strategies.
 
 ### Prerequisites
-
 
 Review and implement the [recommendations for identifying flows](identify-flows.md). It's assumed that you have identified and prioritized user and system flows based on criticality.
 
@@ -79,7 +76,6 @@ Consider the likelihood of each type of failure mode. Some are very unlikely, li
 
 Mitigation strategies fall into two broad categories: building more resiliency and designing for degraded performance.
 
-
 Building more resiliency means ensuring that your application design follows best practices for durability; for example, breaking up monolithic applications into isolated apps and microservices and using platform-provided resiliency configurations, like retry policies. For more information, see [Recommendations for redundancy](/azure/well-architected/reliability/redundancy) and [Recommendations for self-preservation](/azure/well-architected/reliability/self-preservation).
 
 To design for degraded performance, identify potential failure points that might disable one or more components of your flow but don't fully disable that flow. To maintain the functionality of the end-to-end flow, you might need to reroute one or more steps to other components or accept that a failed component runs a function, so the function is no longer available in the user experience. To return to the e-commerce application example, a failed component like a microservice might cause your recommendation engine to be unavailable, but the customers can still search for products and complete their transaction.
@@ -104,7 +100,9 @@ During your initial FMA exercise, the documents you produce will be mostly theor
 
 ## Example
 
-The following table shows an FMA example for an expense application that's hosted as a Power Apps canvas app with a Microsoft Dataverse back end and APIs hosted in APIM?/custom connectors to interact with xyz.<!-- EDITOR'S NOTE: Please confirm, are "APIM?" and "xyz" correct? -->
+The following table shows an FMA example for an expense application that's hosted as a Power Apps canvas app with a Microsoft Dataverse backend and APIs hosted in APIM to interact with a third party system.
+
+<!-- Let's spell out APIM. API Management? -->
 
 **User flow**: User sign in, submission of expense claim, and interaction with expense report
 
@@ -123,20 +121,17 @@ The following table shows an FMA example for an expense application that's hoste
 | APIM | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
 | Your Power Platform solution | Misconfiguration | Medium | Misconfigurations should be caught during deployment. If these happen during a configuration update, administrators must roll back changes. Configuration update causes a brief external outage. | Potential for full outage |
 
-## Services and tools for detecting and mitigating failures
+## Power Platform facilitation
 
-Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem.
+Power Platform integrates with [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is part of the [Azure Monitor](/azure/azure-monitor/overview) ecosystem. You can use this integration to:
 
-You can subscribe to receive telemetry captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights) on diagnostics, performance, and operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
+- Subscribe to receive telemetry captured by the [Dataverse platform in Application Insights](/power-platform/admin/overview-integration-application-insights) on diagnostics, performance, and operations that applications perform on your Dataverse database and within model-driven apps. This telemetry provides information that you can use to diagnose and troubleshoot issues related to errors and performance.
 
-Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights) to use these analytics to diagnose issues, understand what users actually do with your apps, drive better business decisions, and improve the quality of your apps.
+- Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights) to use these analytics to diagnose issues, understand what users actually do with your apps, drive better business decisions, and improve the quality of your apps.
 
+- Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
 
-Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
-
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring.
-
-For more information about logging activities in Power Platform, see:
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
@@ -145,19 +140,3 @@ For more information about logging activities in Power Platform, see:
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
-
-| **Component** | **Risk** | **Likelihood** | **Effect/Mitigation/Note** | **Outage** |
-|---|---|---|---|---|
-| **Microsoft** **Entra ID** | Service outage | Low | Full workload outage. Dependent on Microsoft to remediate. | Full |
-| **Microsoft** **Entra ID** | Misconfiguration | Medium | Users unable to sign in. No downstream effect. Help desk reports configuration issue to identity team. | None |
-| **Power Apps** | Service outage | Low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
-| **Power Apps** | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
-| **Power Apps** | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
-| **Dataverse** | Service outage | Low | Full workload outage. Dependent on Microsoft to remediate. | Full |
-| **Dataverse** | Regional outage | Very low | Auto-failover group fails over to secondary region. Potential outage during failover. Recovery time objectives (RTOs) and recovery point objectives (RPOs) to be determined during reliability testing. | Potential full |
-| **Dataverse** | Malicious attack (injection) | Medium | Minimal risk. | Potential low risk |
-| **APIM** | Service outage | Low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
-| **APIM** | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
-| **APIM** | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
-| **Your Power Platform solution** | Misconfiguration | Medium | Misconfigurations should be caught during deployment. If these happen during a configuration update, administrators must roll back changes. Configuration update causes a brief external outage. | Potential for full outage |
-
