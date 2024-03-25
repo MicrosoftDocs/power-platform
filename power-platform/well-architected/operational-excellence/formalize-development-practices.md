@@ -31,7 +31,7 @@ The following standards can help you design a comprehensive development planning
 
 - **Prioritization**: Planning the order and scope of the work involves understanding the true impact and value of workload features on the business. It also includes evaluating those impacts against other work requests and the overall roadmap for your product or program. One way to prioritize workloads is by [evaluating the business value](/power-platform/guidance/adoption/business-value) of the entire workload. You might also find it useful to evaluate individual workload features for the business value.
 
-- **Categorization**: Establish processes that ensure that critical applications have the necessary guardrails to support them. At the same time, ensure that productivity scenarios are not slowed down or stifled by too rigorous processes.
+- **Categorization**: Establish processes that ensure that critical applications have the necessary guardrails to support them. At the same time, ensure that productivity scenarios are not slowed down or stifled by too many rigorous processes.
 
 - **Collaboration**: The process of defining proposed changes to the workload should be a collaborative effort. Most changes to the workload will impact multiple functions and/or components, so involving as many workload team members as possible will help ensure that important considerations are not missed and that everyone is aware of the impact on their particular domain. Collaboration also helps clearly define the scope of a change and how to divide the necessary tasks needed to accomplish the change into well-defined work items, as a larger group with expertise across domains will be able to provide experience-backed estimates for the required effort.
 
