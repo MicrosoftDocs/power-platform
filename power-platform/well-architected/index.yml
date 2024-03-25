@@ -51,7 +51,7 @@ sections:
       - componentType: icon-link
         icon: topic-architecture
         url: /power-platform/guidance
-        text: Power Platform Guidance Center
+        text: Power Platform guidance documentation
       - componentType: icon-link
         icon: topic-learn
         url: /power-platform
@@ -61,7 +61,7 @@ sections:
     supertitle: Power Platform Well-Architected 
     title: Design modern application workloads that consistently realize business value.
     size: small
-    summary: Power Platform Well-Architected intends to help you realize the maximum value from your investments in modern application workloads with Power Platform that align closely with your business goals and user needs. Power Platform Well-Architected provides guidance for you to design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars and aligh your design choices with then principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
+    summary: Power Platform Well-Architected helps you realize the maximum value from your investments in modern application workloads with Power Platform. Power Platform Well-Architected provides guidance to help you design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars, and then align your design choices with Principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
 
     image:
       componentType: image
@@ -127,18 +127,18 @@ sections:
      
   
   #Text section
-  - componentType: text
-    title: Power Platform Guidance
-    links:
-    - componentType: link
-      url: /power-platform/guidance
-      text: Browse the prescriptive guidance for Power Platform
-  - componentType: text
-    title: Power Platform documentation
-    links:
-    - componentType: link
-      url: /power-platform
-      text: Browse the product documentation for Power Platform
+  #- componentType: text
+  #  title: Power Platform guidance
+  #  links:
+  #  - componentType: link
+  #    url: /power-platform/guidance
+  #    text: Browse the prescriptive guidance for Power Platform
+  #- componentType: text
+  #  title: Power Platform documentation
+  #  links:
+  #  - componentType: link
+  #    url: /power-platform
+  #    text: Browse the product documentation for Power Platform
 
   # social section
   #- componentType: social
