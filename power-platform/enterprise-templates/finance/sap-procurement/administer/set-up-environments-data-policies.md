@@ -59,7 +59,12 @@ Installing, configuring, testing, and running [solutions](/power-apps/maker/data
 > [!NOTE]
 > Each environment requires that a [Microsoft Dataverse database](/power-platform/admin/create-database) be created for it.
 
-More information: [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy), [Create an environment in the Power Platform admin center](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center), [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings), [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
+More information:
+
+- [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+- [Create an environment in the Power Platform admin center](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center)
+- [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings)
+- [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
 
 ## Enable managed environments
 
@@ -78,3 +83,7 @@ More information: [Establish an environment strategy](/power-platform/guidance/a
 The DLP policies you set up ensure that your valuable SAP business data is not accidentally shared to other parts of the business or externally.
 
 [Create a data policy](/power-platform/admin/managed-environment-data-policies) that meets your organizational needs and allows the environments targeted for the SAP procurement solutions to have access to the [SAP ERP](/connectors/saperp/), [Microsoft Dataverse](/connectors/commondataserviceforapps/), [Office 365 Users](/connectors/office365users/) connections, and any other connections needed to run your procure-to-pay processes.
+
+## See also
+
+[Get started with the SAP Procurement template](get-started.md)

@@ -70,4 +70,8 @@ Work with your SAP functional analyst, business subject matter experts, and Powe
 
 ## Next steps
 
-[Requirements](requirements.md)
+[Requirements to integrate SAP with Power Platform](requirements.md)
+
+## See also
+
+[Overview](../overview.md)

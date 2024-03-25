@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/26/2023
+ms.date: 03/25/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -64,6 +64,8 @@ More information: [Work with Microsoft Entra ID group teams](/power-apps/develop
 
 ### Steps to managing teams
 
+Take these steps to create teams and configure security settings:
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Go to **Environments** and select the environment that contains the solutions.
 1. Go to **Settings** > **Users** + **permissions** > **Teams**.
@@ -77,14 +79,14 @@ More information: [Work with Microsoft Entra ID group teams](/power-apps/develop
 The following table provides guidance for assigning security roles:
 
 | Dataverse Team Name | SAP Template User | SAP Template Administrator | Basic User
-| ----------- | ----------- | ----------- | ----------- |
-| Vendor management | X | | X |
-| Purchase requisitions  | X | | X |
-| Purchase orders  | X | | X |
-| Vendor goods receipt  | X | | X |
-| Vendor invoice  | X | | X |
-| Vendor payments | X | | X|
-| Admin |  | X | X |
+| ----------- | ----------- | ----------- | -----------
+| Vendor management | X | | X
+| Purchase requisitions  | X | | X
+| Purchase orders  | X | | X
+| Vendor goods receipt  | X | | X
+| Vendor invoice  | X | | X
+| Vendor payments | X | | X
+| Admin |  | X | X
 
 > [!NOTE]
 >
@@ -122,9 +124,9 @@ Share the flows with _Run only privileges_ so users have access to embedded flow
 
 This table provides a mapping summary of what components need to be assigned or shared according to the example Microsoft Entra ID (Azure AD) security group teams.
 
-|             Component             | Type | Vendor management team | Purchase requisitions team | Purchase orders team | Vendor goods receipt team | Vendor invoice team | Vendor payments team | Admin team |
-|:---------------------------------:|:----:|:----------------------:|:--------------------------:|:--------------------:|:-------------------------:|:-------------------:|:--------------------:|:------------------:|
-| SAP Vendor Management             |  app |            X           |                            |                      |                           |                     |                      |                    |
+|             Component             | Type | Vendor management team | Purchase requisitions team | Purchase orders team | Vendor goods receipt team | Vendor invoice team | Vendor payments team | Admin team
+|:---------------------------------:|:----:|:----------------------:|:--------------------------:|:--------------------:|:-------------------------:|:-------------------:|:--------------------:|:------------------
+| SAP Vendor Management             |  app |            X           |                            |                      |                           |                     |                      |
 | SAP Purchase Requisitions         |  app |                        |              X             |                      |                           |                     |                      |                    |
 | SAP Purchase Orders               |  app |                        |                            |           X          |                           |                     |                      |                    |
 | SAP Goods Receipts                |  app |                        |                            |                      |             X             |                     |                      |                    |
@@ -139,7 +141,7 @@ This table provides a mapping summary of what components need to be assigned or 
 | CreateRequisition                 | flow |                        |              X             |                      |                           |                     |                      |                    |
 | CreateVendor                      | flow |            X           |                            |                      |                           |                     |                      |                    |
 | CreateVendorInvoice               | flow |                        |                            |                      |                           |          X          |                      |                    |
-| ReadGLAccount                     | flow |            X           |                            |                      |                           |          X          |           X          |                    |
+| ReadGLAccount                     | flow |            X           |                            |                      |                           |          X          |           X |
 | ReadGLAccountList                 | flow |            X           |                            |                      |                           |          X          |           X          |                    |
 | ReadGoodsReceipt                  | flow |            X           |                            |           X          |             X             |                     |                      |                    |
 | ReadGoodsReceiptList              | flow |            X           |                            |           X          |             X             |                     |                      |                    |
@@ -152,20 +154,19 @@ This table provides a mapping summary of what components need to be assigned or 
 | ReadVendor                        | flow |            X           |              X             |           X          |             X             |          X          |           X          |                    |
 | ReadVendorInvoice                 | flow |            X           |                            |           X          |                           |          X          |           X          |                    |
 | ReadVendorInvoiceList             | flow |            X           |                            |           X          |                           |          X          |           X          |                    |
-| ReadVendorList                    | flow |            X           |              X             |           X          |             X             |          X          |           X          |                    |
+| ReadVendorList                    | flow |            X           |              X             |           X          |             X             |          X          |           X          |
 | ReadVendorPayment                 | flow |            X           |                            |           X          |                           |                     |           X          |                    |
 | ReadVendorPaymentList             | flow |            X           |                            |           X          |                           |                     |           X          |                    |
 | ReverseVendorInvoice              | flow |                        |                            |           X          |                           |                     |                      |                    |
 | UpdatePurchaseOrder               | flow |                        |                            |           X          |                           |                     |                      |                    |
-| UpdateVendor                      | flow |            X           |                            |                      |                           |                     |                      |                    |
-| UpdateVendorInvoice               | flow |                        |                            |                      |                           |          X          |                      |                    |
-|                                   |      |                        |                            |                      |                           |                     |                      |                    |
+| UpdateVendor                      | flow |            X           |
+| UpdateVendorInvoice          |flow |                        |                            |                      |                           |          X          |
 
 More information:
 
-- [Share Canvas App](/power-apps/maker/canvas-apps/share-app)
-- [Share Model App](/power-apps/maker/model-driven-apps/share-model-driven-app)
-- [Share Cloud Flows](/power-automate/create-team-flows)
+- [Share a canvas app](/power-apps/maker/canvas-apps/share-app)
+- [Share a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app)
+- [Share a cloud flow](/power-automate/create-team-flows)
 
 ## Next steps
 

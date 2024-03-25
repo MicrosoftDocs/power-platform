@@ -35,7 +35,10 @@ _SAP Solution Administrator_ is a model-driven app that allows the admin to conf
 
 :::image type="content" source="media/extend-model-apps-dataverse/sap-admin-app.png" alt-text="Monitor errors in the procurement solutions":::
 
-More information: [What are model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview), [Understand model-driven app components](/power-apps/maker/model-driven-apps/model-driven-app-components)
+More information:
+
+- [What are model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/model-driven-app-overview)
+- [Understand model-driven app components](/power-apps/maker/model-driven-apps/model-driven-app-components)
 
 ## Dataverse tables
 

@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/26/2023
+ms.date: 03/25/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

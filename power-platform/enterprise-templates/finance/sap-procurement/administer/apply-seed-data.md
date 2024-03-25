@@ -15,7 +15,7 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 03/25/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -143,10 +143,10 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 
 ## Next steps
 
-- [Monitor errors](monitor-errors.md)
-- [Customize solutions](customize-solutions.md)
+[Monitor for errors](monitor-errors.md)
+
+[Customize the SAP Procurement solutions](customize-solutions.md)
 
 ## See also
 
-- [Overview](../overview.md)
-- [Get started](get-started.md)
+[Get started](get-started.md)

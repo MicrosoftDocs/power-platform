@@ -83,10 +83,16 @@ You can access the SAP Procurement template two ways:
 
 ## See also
 
-- [Frequently asked questions about SAP integration with Power Platform](faqs.md)
-- [SAP Vendor Management app](use/vendor-management.md)
-- [SAP Requisition Management app](use/requisition-management.md)
-- [SAP Purchase Order Management app](use/purchase-order-management.md)
-- [SAP Goods Receipt Management app](use/goods-receipt-management.md)
-- [SAP Vendor Invoice Management app](use/vendor-invoice-management.md)
-- [SAP Vendor Payment Management app](use/payment-management.md)
+[Frequently asked questions about SAP integration with Power Platform](faqs.md)
+
+[SAP Vendor Management app](use/vendor-management.md)
+
+[SAP Requisition Management app](use/requisition-management.md)
+
+[SAP Purchase Order Management app](use/purchase-order-management.md)
+
+[SAP Goods Receipt Management app](use/goods-receipt-management.md)
+
+[SAP Vendor Invoice Management app](use/vendor-invoice-management.md)
+
+[SAP Vendor Payment Management app](use/payment-management.md)

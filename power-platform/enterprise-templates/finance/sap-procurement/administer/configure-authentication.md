@@ -15,13 +15,13 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/19/2024
+ms.date: 03/25/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Configure authentication for SAP Procurement solution
+# Configure authentication for SAP Procurement solutions
 
 The [SAP ERP connector](/connectors/saperp/) is designed so multiple people can access and use an application at once; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
 
@@ -147,7 +147,7 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 
 ## Next steps
 
-[Install solutions](install.md)
+[Install the SAP Procurement template](install.md)
 
 ## See also
 
