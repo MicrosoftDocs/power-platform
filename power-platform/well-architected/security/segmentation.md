@@ -100,8 +100,6 @@ Think like an attacker to achieve a foothold within the workload and establish c
 
 > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Network controls are rule-based and there's a significant chance of misconfiguration, which is a reliability concern.
 
-For information about network controls, see [Networking and connectivity](networking.md).
-
 ### Roles and responsibilities
 
 Segmentation that prevents confusion and security risks is achieved by clearly defining lines of responsibility within a workload team.
