@@ -99,7 +99,6 @@ After modifying and enabling some of the plug-ins, the developer sandbox environ
 | DocumentIndex | ProductPriceLevel | ChannelPropertyGroup |
 | DuplicateRecord | ProductSalesLiterature | DynamicPropertyAssociation |
 | Email | ProductSubstitute | DynamicPropertyInstance |
-| Email Template | QuarterlyFiscalCalendar | DynamicPropertyOptionSetItem |
 | EmailHash  | QueueItem | Position |
 | EmailSearch | Quote | ChannelProperty |
 | Entitlement | QuoteClose | RollupJob |
