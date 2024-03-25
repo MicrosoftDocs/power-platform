@@ -38,12 +38,12 @@ However, copilots and generative AI features aren't available in all regions and
 
 When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We do not use your data to train, retrain, or improve Azure OpenAI Service foundation models.
 
-The following table describes when and how data can move across regions for copilots and generative AI features.
+The following table lists the regions involved with copilots and generative AI features.
 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and proccessed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | Australia</br>India</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | United States| 
-| Europe | Sweden or Switzerland\* | United States |
+| Europe\*  | Sweden or Switzerland| United States |
 | France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | United States|
 | Asia</br>Canada</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
