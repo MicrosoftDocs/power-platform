@@ -154,7 +154,7 @@ You use a different set of URLs to access Microsoft Copilot Studio US Government
 
 | Commercial                        | US Government (GCC)                  | US Government (GCC High)              |
 | --------------------------------- | ------------------------------------ | ------------------------------------- |
-| web.powerva.microsoft.com         | gcc.powerva.microsoft.us             | high.powerva.microsoft.us             |
+| copilotstudio.microsoft.com         | gcc.powerva.microsoft.us             | high.powerva.microsoft.us             |
 | flow.microsoft.com                | gov.flow.microsoft.us                | high.flow.microsoft.us                |
 | make.powerapps.com                | make.gov.powerapps.us                | make.high.powerapps.us                |
 | flow.microsoft.com/connectors     | gov.flow.microsoft.us/connectors     | high.flow.microsoft.us/connectors     |
