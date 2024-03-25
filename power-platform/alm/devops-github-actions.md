@@ -38,9 +38,9 @@ GitHub Actions for Microsoft Power Platform are available at <https://github.com
 
 GitHub Actions enable you to create custom software development lifecycle workflows directly in your GitHub repository. For an overview of GitHub Actions and core concepts, review the following articles:
 
-- [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions)
+- [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
 
-- [Core concepts](https://help.github.com/actions/getting-started-with-github-actions/core-concepts-for-github-actions)
+- [Guides for GitHub Actions](https://docs.github.com/en/actions/guides)
 
 - [About packaging with GitHub Actions](https://help.github.com/en/actions/publishing-packages-with-github-actions/about-packaging-with-github-actions)
 
