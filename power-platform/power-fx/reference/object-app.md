@@ -113,6 +113,14 @@ In a browser, the confirmation dialog box might appear with a generic message fr
     > [!div class="mx-imgBorder"]
     > ![Form-specific confirmation dialog box.](media/object-app/confirm-native-custom.png)
 
+## Instrumentation Key for Application Insights
+
+Configure the **Instrumentation Key** for use with exporting system generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights).
+This setting is only available in the Right Navigation Pane, and not from the Formula Bar Properties.
+
+> [!NOTE]
+> If this functionality is not sending information to App Insights, check with your Power Platform administrator to see if the **App Insights** functionality has been disabled at the tenant level.
+
 ## Formulas property
 
 Use named formulas, in the **Formulas** property, to define a formula that can be reused throughout your app.  
