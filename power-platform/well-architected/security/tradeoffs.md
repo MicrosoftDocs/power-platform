@@ -104,9 +104,8 @@ A misconfiguration or overextension of security controls can impact performance 
 
 - Web application firewalls performing deep packet inspection for languages or platforms that are irrelevant for the components that are being protected.
 -->
-## Related resources
 
-Explore the tradeoffs for the other pillars.
+## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)

@@ -13,10 +13,10 @@ ms.topic: conceptual
 
 **Applies to Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:04](checklist.md)|Create intentional segmentation and perimeters in your architecture design and the workload’s footprint on the platform. The segmentation strategy must include networks, roles and responsibilities, workload identities, and resource organization.|
+|[SE:04](checklist.md)| **Create intentional segmentation and perimeters in your architecture design and the workload’s footprint on the platform. The segmentation strategy must include networks, roles and responsibilities, workload identities, and resource organization.** |
 |---|---|
 
-A segmentation strategy defines how you separate workloads with their own set of security requirements and measures.
+A segmentation strategy defines how you separate workloads from other workloads with their own set of security requirements and measures.
 
 This guide describes the recommendations for **building a unified segmentation strategy**. Using perimeters and isolation boundaries in workloads, you can design a security approach that works for you.
 
@@ -35,9 +35,11 @@ This guide describes the recommendations for **building a unified segmentation s
 
 The concept of segmentation is commonly used for networks. However, the same underlying principle can be used throughout a solution, including segmenting resources for management purposes and access control.
 
-Segmentation helps you **design a security approach that applies defense in depth** based on the principles of the Zero Trust model. Ensure that an attacker who breaches one segment can't gain access to another by segmenting workloads with different identity controls. In a secure system, different attributes – such as network, identity - are used to block unauthorized access and hide the assets from being exposed. Here are some examples of segments:
+Segmentation helps you **design a security approach that applies defense in depth** based on the principles of the Zero Trust model. Ensure that an attacker who breaches one segment can't gain access to another by segmenting workloads with different identity controls. In a secure system, different attributes, such as network and identity,  are used to block unauthorized access and hide the assets from being exposed.
 
-- Platform controls that define network boundaries 
+Here are some examples of segments:
+
+- Platform controls that define network boundaries
 - Environments that isolate workloads of an organization
 - Solutions that isolate workload assets
 - Deployment environments that isolate deployment by stages
@@ -47,18 +49,19 @@ Segmentation helps you **design a security approach that applies defense in dept
 
 Consider these key elements of segmentation to make sure you're building a comprehensive defense in depth strategy:
 
-- The **boundary or perimeter** is the entry edge of a segment where you apply security controls. Perimeter controls should block access to the segment unless explicitly allowed. The goal is to prevent an attacker from breaking through the perimeter and gaining control of the system. For example, a user might have access to an environment but can only launch specific applications in that environment based on their permissions. 
+- The **boundary or perimeter** is the entry edge of a segment where you apply security controls. Perimeter controls should block access to the segment unless explicitly allowed. The goal is to prevent an attacker from breaking through the perimeter and gaining control of the system. For example, a user might have access to an environment but can only launch specific applications in that environment based on their permissions.
+
 - **Containment** is the exit edge of a segment that prevents lateral movement in the system. The goal of containment is to minimize the effect of a breach. For example, a virtual network might be used to configure routing and network security groups to only allow traffic patterns that you expect, avoiding traffic to arbitrary network segments.
+
 - **Isolation** is the practice of grouping entities with similar assurances together to protect them with a boundary. The goal is ease of management and the containment of an attack within an environment. For example, you might group the resources that relate to a specific workload into one Power Platform environment or one solution, and then apply access control so that only specific workload teams can access the environment.
 
 It's important to note the distinction between perimeters and isolation. Perimeter refers to the points of location that should be checked. Isolation is about grouping. Actively contain an attack by using these concepts together.
 
 Isolation doesn't mean creating silos in the organization. A unified segmentation strategy provides alignment between the technical teams and sets clear lines of responsibility. Clarity reduces the risk of human error and automation failures that can lead to security vulnerabilities, operational downtime, or both. Suppose a security breach is detected in a component of a complex enterprise system. It's important that everyone understands who's responsible for that resource so that the appropriate person is included in the triage team. The organization and stakeholders can quickly identify how to respond to different kinds of incidents by creating and documenting a good segmentation strategy.
 
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Segmentation introduces complexity because there's overhead in management. 
 
- > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Segmentation introduces complexity because there's overhead in management. 
-
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Micro-segmentation beyond a reasonable limit loses the benefit of isolation. When you create too many segments, it becomes difficult to identify points of communication or to allow for valid communication paths within the segment.
+:::image type="icon" source="../_images/risk.svg"::: **Risk**: Micro-segmentation beyond a reasonable limit loses the benefit of isolation. When you create too many segments, it becomes difficult to identify points of communication or to allow for valid communication paths within the segment.
 
 ### Identity as the perimeter
 
@@ -74,13 +77,13 @@ Various identities such as people, software components, or devices access worklo
 
     By applying the least privilege, you limit the negative effects if the identity is ever compromised. If access is limited by time, the attack surface is reduced further. Time-limited access is especially applicable to critical accounts, such as administrators or software components that have a compromised identity.
 
- > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Role-based access control (RBAC) results in management overhead. Keeping track of identities and their access scopes can become complex in role assignments. Consider assigning roles to security groups instead of individual identities.
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Role-based access control (RBAC) results in management overhead. Keeping track of identities and their access scopes can become complex in role assignments. Consider assigning roles to security groups instead of individual identities.
 
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Identity settings can be complex. Misconfigurations can affect the reliability of the workload. For example, suppose there's a misconfigured role assignment that's denied access to a database. The requests start failing, eventually causing reliability issues that can't otherwise be detected until runtime.
+:::image type="icon" source="../_images/risk.svg"::: **Risk**: Identity settings can be complex. Misconfigurations can affect the reliability of the workload. For example, suppose there's a misconfigured role assignment that's denied access to a database. The requests start failing, eventually causing reliability issues that can't otherwise be detected until runtime.
 
-For information about identity controls, see [Identity and access management](/azure/well-architected/security/identity-access).
+For information about identity controls, see [Identity and access management](identity-access.md).
 
-In contrast to network access controls, identity validates access control at access time. It's highly recommended to conduct regular access review and require an approval workflow to obtain privileges for critical impact accounts. 
+In contrast to network access controls, identity validates access control at access time. It's highly recommended to conduct regular access review and require an approval workflow to obtain privileges for critical impact accounts.
 
 ### Networking as a perimeter
 
@@ -95,9 +98,9 @@ Think like an attacker to achieve a foothold within the workload and establish c
 - Define your edge perimeter between public networks and the network where your workload is placed. Restrict line of sight from public networks to your network as much as possible.
 - Create boundaries based on intent. For example, segment workload functional networks from operational networks.
 
-> :::image type="icon" source="../_images/risk.svg"::: **Risk**: Network controls are rule-based and there's a significant chance of misconfiguration, which is a reliability concern.
+:::image type="icon" source="../_images/risk.svg"::: **Risk**: Network controls are rule-based and there's a significant chance of misconfiguration, which is a reliability concern.
 
-For information about network controls, see [Networking and connectivity](/azure/well-architected/security/networking).
+For information about network controls, see [Networking and connectivity](networking.md).
 
 ### Roles and responsibilities
 
@@ -107,11 +110,11 @@ Document and share roles and functions to create consistency and facilitate comm
 
 Consider consistency while accommodating several organizational models when assigning permissions for a segment. These models can range from a single centralized IT group to mostly independent IT and DevOps teams.
 
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Membership of groups can change over time as employees join or leave teams or change roles. Management of roles across segments can result in management overhead.
+:::image type="icon" source="../_images/risk.svg"::: **Risk**: Membership of groups can change over time as employees join or leave teams or change roles. Management of roles across segments can result in management overhead.
 
 ### Resource organization
 
-Segmentation allows you to isolate workload resources from other parts of the organization or even within the team. Power Platform constructs, such as environments and solutions, are ways of organizing your resources that promote segmentation. 
+Segmentation allows you to isolate workload resources from other parts of the organization or even within the team. Power Platform constructs, such as environments and solutions, are ways of organizing your resources that promote segmentation.
 
 ## Power Platform facilitation
 
@@ -121,7 +124,7 @@ Certain Power Platform services are available for use in implementing a segmenta
 
 All Power Platform products use Microsoft Entra ID (formerly Azure Active Directory or Azure AD) for identity and access management. You can use built-in security roles, conditional access, privileged identity management, and group access management in Entra ID to define your identity perimeters.
 
-Microsoft Dataverse uses role-based security to group together a collection of privileges.  These security roles can be associated directly with users, or they can be associated with Dataverse teams and business units.  For more information, see [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds).
+Microsoft Dataverse uses role-based security to group together a collection of privileges. These security roles can be associated directly with users, or they can be associated with Dataverse teams and business units. For more information, see [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds).
 
 ### Networking
 
@@ -129,10 +132,4 @@ With Azure Virtual Network support for Power Platform, you can integrate Power P
 
 [IP firewall](/power-platform/admin/ip-firewall) for Power Platform environments  helps to protect your data by limiting user access to Dataverse from only allowed IP locations.
 
-[Microsoft Azure Express Route](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.
-
-## Related links
-
-[Virtual Network support for Power Platform overview](/power-platform/admin/vnet-support-overview)
-[IP firewall](/power-platform/admin/ip-firewall)
-[Microsoft Azure Express Route](/power-platform/guidance/expressroute/overview)
+[Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.

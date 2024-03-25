@@ -1,6 +1,6 @@
 ---
 title: Data classification recommendations
-description: Learn about data classification and how to apply it to your workloads. Categorize data based on its sensitivity levels, information type, and scope of compliance so that you can apply the correct level of protection.
+description: Learn about data classification and how to apply it to your workloads, including how to categorize data based on sensitivity levels, information type, and scope of compliance so you can apply the correct level of protection.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
@@ -13,10 +13,10 @@ ms.topic: conceptual
 
 **Applies to Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:03](checklist.md)|Classify and consistently apply sensitivity labels on all workload data and systems involved in data processing. Use classification to influence workload design, implementation, and security prioritization.|
+|[SE:03](checklist.md)| **Classify and consistently apply sensitivity labels on all workload data and systems involved in data processing. Use classification to influence workload design, implementation, and security prioritization.** |
 |---|---|
 
-This guide provides recommendations for classifying data based on its sensitivity. Different types of data have different levels of sensitivity, and most workloads store various types of data. Data classification helps you categorize data by how sensitive it is, what kind of information it contains, and what compliance rules it needs to follow. This way, you can apply the right level of protection – such as access controls, retention policies for different information types, and so on.
+This guide provides recommendations for classifying data based on its sensitivity. Different types of data have different levels of sensitivity, and most workloads store various types of data. Data classification helps you categorize data by how sensitive it is, what kind of information it contains, and what compliance rules it needs to follow. This way, you can apply the right level of protection, such as access controls, retention policies for different information types, and so on.
 
 **Definitions**
 
@@ -28,27 +28,27 @@ This guide provides recommendations for classifying data based on its sensitivit
 
 ## Key design strategies
 
-Data classification helps you correctly size security assurances and helps the triage team expediate discovery during incident response. A prerequisite to the design process is to clearly understand whether data should be treated as confidential, restricted, public, or any other sensitivity classification. It's also essential to determine the locations where data is stored, because the data might be distributed across multiple environments. With knowledge of where the data is stored, you can design a strategy that serves the security requirements.
+Data classification helps you correctly size security assurances and helps the triage team expedite discovery during incident response. A prerequisite to the design process is to clearly understand whether data should be treated as confidential, restricted, public, or any other sensitivity classification. It's also essential to determine the locations where data is stored, because the data might be distributed across multiple environments. With knowledge of where the data is stored, you can design a strategy that serves the security requirements.
 
-Classifying data can be a tedious task. You can use tools that can find data assets and recommend classifications. But don’t just depend on tools. Make sure your team members do the exercises carefully. Then use tools to automate when it makes sense.
+Classifying data can be a tedious task. You can use tools that can find data assets and recommend classifications. But don't just depend on tools. Make sure your team members do the exercises carefully. Then use tools to automate when it makes sense.
 
 Along with these best practices, see [Create a well-designed data classification framework](/compliance/assurance/assurance-create-data-classification-framework).
 
 ### Understand organization-defined taxonomy
 
-_Taxonomy_ is a hierarchical depiction of data classification. It has named entities that indicate the categorization criteria.
+*Taxonomy* is a hierarchical depiction of data classification. It has named entities that indicate the categorization criteria.
 
-Different organizations may have different data classification frameworks, but they usually consist of 3-5 levels with names, descriptions, and examples. Here are some data classification taxonomy examples:
+Different organizations may have different data classification frameworks; however, they usually consist of three to five levels with names, descriptions, and examples. Here are some data classification taxonomy examples:
 
 | Sensitivity | Information type | Description |
 |---|---|---|
 | Public | Public marketing material, information available on your website | Information that is freely accessible and not sensitive |
 | Internal | Policies, procedures, or budgets that relate to your organization | Information that relates to a specific organization |
 | Confidential | Trade secrets, customer data, or final records | Information that is sensitive and requires protection |
-| Highly confidential | Sensitive Personally Identifiable Information (Sensitive PII)Cardholder DataProtected Health Information (PHI)Bank Account Data | Information that is highly sensitive and requires the highest level of security. May require legal notifications if breached or otherwise disclosed. |
+| Highly confidential | Sensitive Personally Identifiable Information (Sensitive PII), cardholder data, Protected Health Information (PHI), bank account data | Information that is highly sensitive and requires the highest level of security. May require legal notifications if breached or otherwise disclosed. |
 
 > [!IMPORTANT]
-> As a workload owner, you should follow the taxonomy that your organization has established. All workload roles should agree on the structure, names, and meanings of the sensitivity levels. Don’t create your own classification system.
+> As a workload owner, you should follow the taxonomy that your organization has established. All workload roles should agree on the structure, names, and meanings of the sensitivity levels. Don't create your own classification system.
 
 ### Define the classification scope
 
@@ -68,12 +68,13 @@ Start with these simple questions and expand as necessary based on your system c
 
 #### Take inventory of your data stores
 
-Data classification applies to the system as a whole – take inventory of all data stores and components that are in scope, and if you are designing a new system make sure to have an initial categorization per taxonomy definitions. Think about how data will flow through your system between components, and ensure data does not cross data classification boundaries.
+Data classification applies to the system as a whole. Take inventory of all data stores and components that are in scope. If you're designing a new system, make sure to have an initial categorization per taxonomy definitions. Think about how data will flow through your system between components, and ensure data does not cross data classification boundaries.
 
 Consider how you will connect to data:
 
-- **New data**: If your workload is creating data that doesn't already exist anywhere, such as in situations where the existing business process was done using paper, we recommend storing the data in Microsoft Dataverse. You can then [connect and manage Microsoft Dataverse data through Microsoft Purview](/purview/register-scan-dataverse).
-- **Read/write from an existing system**: If your workload needs to connect to data that already exists, you need to design how to read and write to the existing database or system. You can use virtual tables, connect to the data via connectors, dataflows or use an on premise gateway for on premise data.
+- **New data**: If your workload generates new data that wasn't previously stored anywhere, like when transitioning from a paper-based process, we suggest storing this data in Microsoft Dataverse. You can then [connect and manage Microsoft Dataverse data through Microsoft Purview](/purview/register-scan-dataverse).
+
+- **Read/write from an existing system**: If your workload needs to connect to data that already exists, you need to design how to read and write to the existing database or system. You can use virtual tables, connect to the data via connectors, dataflows, or use an on-premises gateway for on-premises data.
 
 #### Define your scope
 
@@ -91,21 +92,21 @@ It also impacts the data lifecycle management operations, such as data retention
 
 ### Apply taxonomy for querying
 
-There are many ways to apply taxonomy labels to the identified data. Using a classification schema with metadata is the most common way to indicate the labels. The architecture design process should include design of the schema. 
+There are many ways to apply taxonomy labels to the identified data. Using a classification schema with metadata is the most common way to indicate the labels. The architecture design process should include design of the schema.
 
 Keep in mind that not all data can be clearly classified. Make an explicit decision about how the data that can't be classified should be represented in reporting.
 
-The actual implementation depends on the type of resources – data consumed by your Power Platform workload may originate from data sources outside of Power Platform. Your schema should include details on how data from different data sources moves through the workload or is potentially transferred from one data store to the other whilst maintaining classification integrity.
+The actual implementation depends on the type of resources. Data consumed by your Power Platform workload might originate from data sources outside of Power Platform. Your schema should include details on how data from different data sources moves through the workload, or is potentially transferred from one data store to the other, whilst maintaining classification integrity.
 
 Certain Azure resources have built-in classification systems. For example, Azure SQL Server has a classification engine, supports dynamic masking, and can generate reports based on metadata. Microsoft Teams, Microsoft 365 groups, and SharePoint sites can have sensitivity labels applied at the container level. Microsoft Dataverse integrates with Microsoft Purview to apply data labels.
 
 When you design your implementation, evaluate the features supported by the platform and take advantage of them. Make sure metadata used for classification is isolated and stored separately from the data stores.
 
-There are also specialized classification tools that can detect and apply labels automatically. These tools are connected to your data sources. Microsoft Purview has autodiscover capabilities. There are also third-party tools that offer similar capabilities. The discovery process should be validated through manual verification.
+There are also specialized classification tools that can detect and apply labels automatically. These tools are connected to your data sources. Microsoft Purview has auto-discover capabilities. There are also third-party tools that offer similar capabilities. The discovery process should be validated through manual verification.
 
 **Review data classification regularly**. Classification maintenance should be built into operations, otherwise stale metadata can lead to erroneous results for the identified objectives and compliance issues.
 
- > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Be mindful of the cost tradeoff on tooling. Classification tools require training and can be complex.
+ :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Be mindful of the cost tradeoff on tooling. Classification tools require training and can be complex.
 
 Ultimately, classification must roll up to the organization through central teams. Get input from them about the expected report structure. Also, take advantage of centralized tools and processes to have organizational alignment and also alleviate operational costs.
 
@@ -113,27 +114,27 @@ Ultimately, classification must roll up to the organization through central team
 
 Classification should influence your architectural decisions.
 
-Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [What is Microsoft Purview?](/purview/purview)
+Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [What is Microsoft Purview?](/purview/purview).
 
-Microsoft Purview Data Map will enable automated data discovery and sensitive data classification. The integration between Microsoft Purview and Microsoft Dataverse will help you better understand and govern your business applications data estate, safeguard that data, and improve their risk and compliance posture.
+Microsoft Purview Data Map enables automated data discovery and sensitive data classification. The integration between Microsoft Purview and Microsoft Dataverse will help you better understand and govern your business applications data estate, safeguard that data, and improve their risk and compliance posture.
 
 With this integration, you can:
 
 - Create a holistic, up-to-date data map across Microsoft Dynamics 365, Microsoft Power Platform, and other sources supported by Microsoft Purview.
-- Automatically classify data assets based on built-in system classifications or user-defined custom classifications and it helps to identify and understand sensitive data.
+- Automatically classify data assets based on built-in system classifications or user-defined custom classifications, to help identify and understand sensitive data.
 - Empower data consumers to discover valuable, trustworthy data.
 - Enable data curators and security administrators to manage and keep data estate secure, reduce data exposure, and better protect sensitive data.
 
-Learn more: [Connect to and manage Microsoft Dataverse in Microsoft Purview](/purview/register-scan-dataverse)
+For more information, see [Connect to and manage Microsoft Dataverse in Microsoft Purview](/purview/register-scan-dataverse).
 
 ## Organizational alignment
 
 Cloud Adoption Framework provides guidance for central teams about how to classify data so that workload teams can follow the organizational taxonomy.
 
-For more information, see [What is data classification? - Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification).
+For more information, see [What is data classification?](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification).
 
-## Related links
+## See also
 
-- [Data classification and sensitivity label taxonomy - Microsoft Service Assurance](/compliance/assurance/assurance-data-classification-and-labels)
-- [Create a well-designed data classification framework - Microsoft Service Assurance](/compliance/assurance/assurance-create-data-classification-framework)
-- [Connect to and manage Microsoft Dataverse in Microsoft Purview | Microsoft Learn](/purview/register-scan-dataverse?tabs=MI)
+- [Data classification and sensitivity label taxonomy](/compliance/assurance/assurance-data-classification-and-labels)
+- [Create a well-designed data classification framework](/compliance/assurance/assurance-create-data-classification-framework)
+- [Connect to and manage Microsoft Dataverse in Microsoft Purview](/purview/register-scan-dataverse?tabs=MI)

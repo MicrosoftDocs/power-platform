@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:08](checklist.md)| Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
+|[SE:08](checklist.md)| **Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.** |
 |---|---|
 
 This guide describes the recommendations for securing sensitive information in workloads. Proper management of secrets is crucial for maintaining the security and integrity of your application, workload, and associated data. Improper handling of secrets can lead to data breaches, service disruption, regulatory violations, and other issues.
@@ -37,13 +37,14 @@ Credentials, such as API keys, Open Authorization (OAuth) tokens, and Secure She
 | X.509 | A standard that defines the format of public key certificates. |
 
 > [!Important]
-> **Don't treat** **nonsecrets like secrets.** Secrets require operational rigor that's unnecessary for nonsecrets and that might result in extra costs.
+> **Don't treat nonsecrets like secrets.** Secrets require operational rigor that's unnecessary for nonsecrets and that might result in extra costs.
 >
-> Application settings that are not secrets, such as the URLs of the APIs that the application needs, should be kept separate from the application code or application secrets. A possible way to store application configuration is to use a custom connector or environment variables. Alternatively, you can use a Dataverse table that holds metadata about the application configuration, but then you’ll need to find a way to fill this data in a new environment (transfer config data from dev/test/prod). You can use Dataflows for this.
+> Application settings that are not secrets, such as the URLs of the APIs that the application needs, should be kept separate from the application code or application secrets. To store application configuration, consider using a custom connector or environment variables. Another option is to use a Dataverse table to store metadata about the application configuration. However, you’ll need to find a way to fill this data in a new environment, such as transferring config data from development to testing or production. You can use Dataflows to accomplish this.
 
 ## Key design strategies
 
-- Consider the following areas of concern before storing and managing secrets:
+Consider the following areas of concern before storing and managing secrets:
+
 - Created secrets should be kept in secure storage with strict access controls.
 - Secret rotation is a proactive operation, whereas revocation is reactive.
 - Only trusted identities should have access to secrets.
@@ -104,28 +105,30 @@ As a workload owner, you need to **understand the secret rotation plan and polic
 
 ## Power Platform facilitation
 
+Certain Power Platform services are available for managing application secrets, as outlined in the following sections.
+
 ### Use Azure Key Vault secrets
 
-Environment variables allow for referencing secrets stored in Azure Key Vault. These secrets are then made available for use within Power Automate flows and custom connectors. Notice that the secrets aren't available for use in other customizations or generally via the API.
+Environment variables allow for referencing secrets stored in Azure Key Vault. These secrets are then made available for use within Power Automate flows and custom connectors. Note that the secrets aren't available for use in other customizations or generally via the API.
 
-The actual secrets are stored in Azure Key Vault and the environment variable references the key vault secret location. Using Azure Key Vault secrets with environment variables require that you configure Azure Key Vault so that Power Platform can read the specific secrets you want to reference. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) and [Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector)
+The actual secrets are stored in Azure Key Vault and the environment variable references the key vault secret location. Using Azure Key Vault secrets with environment variables require that you configure Azure Key Vault so that Power Platform can read the specific secrets you want to reference. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) and [Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector).
 
 ### Use Solution Checker
 
-With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. After the check completes, you receive a detailed report that lists the issues identified, the components and code affected, and links to documentation that describes how to resolve each issue. Review the available solution checker rules in the Security category: [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
+With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. After the check completes, you receive a detailed report that lists the issues identified, the components and code affected, and links to documentation that describes how to resolve each issue. Review the available solution checker rules in the Security category. For more information, see [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker).
 
-## Use CyberArk actions
+### Use CyberArk actions
 
-CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate desktop flows enable you to retrieve credentials from CyberArk. For more information, see [CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark)
+CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate desktop flows enable you to retrieve credentials from CyberArk. For more information, see [CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark).
 
-## Related links
+## See also
 
-[Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
-[Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector)
-[Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
-[CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark)
-[Azure DevOps Credential Scanner task](/azure/security/develop/security-code-analysis-customize#credential-scanner-task)
-[Configure the Microsoft Security DevOps Azure DevOps extension](/azure/defender-for-cloud/azure-devops-extension)
-[Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
-[Recommendations for monitoring and threat detection](monitor-threats.md)
-[Recommendations for identity and access management](identity-access.md)
+- [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
+- [Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector)
+- [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
+- [CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark)
+- [Azure DevOps Credential Scanner task](/azure/security/develop/security-code-analysis-customize#credential-scanner-task)
+- [Configure the Microsoft Security DevOps Azure DevOps extension](/azure/defender-for-cloud/azure-devops-extension)
+- [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
+- [Recommendations for monitoring and threat detection](monitor-threats.md)
+- [Recommendations for identity and access management](identity-access.md)

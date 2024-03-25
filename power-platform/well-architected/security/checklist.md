@@ -31,7 +31,5 @@ This checklist presents a set of security recommendations to help you ensure you
 
 ## Next steps
 
-We recommend that you review the Security tradeoffs to explore other concepts.
-
 > [!div class="nextstepaction"]
 > [Security tradeoffs](tradeoffs.md)
