@@ -96,4 +96,4 @@ To customize the matching process, add filter components and modify the gallery 
 
 ## Next steps
 
-- [Get started managing the Onboarding Buddy app](manage.md).
+[Get started managing the Onboarding Buddy app](manage.md).

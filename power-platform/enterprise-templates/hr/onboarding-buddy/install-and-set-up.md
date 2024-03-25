@@ -262,5 +262,6 @@ Auditing isn't required, but we recommend turning it on so that it's easy to see
 
 ### See also
 
-- [Get started managing the Onboarding Buddy app](manage.md)
-- [Get started using the Onboarding Buddy app](use.md)
+[Get started managing the Onboarding Buddy app](manage.md)
+
+[Get started using the Onboarding Buddy app](use.md)

@@ -253,5 +253,6 @@ While this isn't required, we recommend enabling the audit setting on the system
 
 ## Next steps
 
-[Manage the Awards and Recognition app](manage.md),
+[Manage the Awards and Recognition app](manage.md)
+
 [Use the Awards and Recognition app](use.md)

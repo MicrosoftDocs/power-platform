@@ -67,5 +67,6 @@ You can localize the text strings in the Onboarding Buddy app to support employe
 
 ## See also
 
-- [Install and set up the Onboarding Buddy template](install-and-set-up.md)
-- [Get started using the Onboarding Buddy app](use.md)
+[Install and set up the Onboarding Buddy template](install-and-set-up.md)
+
+[Get started using the Onboarding Buddy app](use.md)
