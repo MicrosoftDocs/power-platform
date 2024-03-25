@@ -1,10 +1,10 @@
 ---
 title: Recommendations for following design standards
-description: Learn how following design standards ensures consistent success with user experience optimization.
+description: Learn the importance of adhering to design standards, conventions, and guidelines to enhance user experience and application success.
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/13/2024
+ms.date: 03/20/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -16,153 +16,146 @@ ms.topic: conceptual
 |[XO:02](checklist.md)| **Follow established standards, conventions, and guidelines. Leverage commonly-used design patterns. Maintain consistency in design elements, terminology, and interactions across the interface. Use consistent patterns and standards to guide users through the interface and create a cohesive user experience.** |
 |---|---|
 
-This guide shows how to apply established design standards, conventions, and best practices to develop user interfaces that are effective and professional, enhancing the user experience and the application’s overall success. Deviating from standards may be needed in certain circumstances but should be carefully thought through to avoid negatively affecting the user's experience and ensure optimal outcomes.
+This guide describes the recommendations for establishing design standards, conventions, and best practices to develop user interfaces that enhance the user experience and the application's overall success. Deviation from standards should be carefully considered to avoid negatively affecting the user's experience and application usability.
 
 ## Key design strategies
 
-Following design standards helps reduce decision-making effort in the design process by identifying the important aspects of design that should be considered. Understanding the standards itemize and streamline a team's ability to achieve well-designed user interfaces. This results in faster development cycles, improved usability, and enhanced user satisfaction, ultimately leading to increased productivity and effectiveness for internal software systems.
+Following design standards helps reduce decision-making effort in the design process by identifying the important aspects of design. Understanding the standards itemize and streamline a team's ability to achieve well-designed user interfaces. This approach results in faster development cycles, improved usability, and enhanced user satisfaction, ultimately leading to increased productivity and effectiveness for internal software systems.
 
 ### Understand design principles
 
-Certain truths about human cognition have been heavily researched and help make informed decisions about visual design and how people interact with digital products. This knowledge supports many of the specific best practices and standards, which may only provide solutions for about 80% of the final product. Design principles can help bridge the remaining 20% creative gap that doesn’t have a clear-cut answer available from standards. Getting familiar with this knowledge helps development teams understand design considerations when planning and can reduce dependency on, or improve collaboration with, design resources.
+Extensive research into human cognition informs our understanding of visual design and interaction with digital products. This knowledge underpins many best practices and standards, accounting for approximately 80% of the final product. Design principles can bridge the remaining 20% creative gap not covered by standards. Familiarity with this knowledge enhances the development team's understanding of design considerations during planning, reducing dependency on, or improving collaboration with, design resources.
 
 ### Follow common patterns and metaphors
 
-Universal patterns and metaphors have been established that the general population of digital products have become accustomed to and expect. Ensuring your design includes these patterns where applicable will make your application easier for users to onboard and use long term, reduce training and support costs, and even potentially mitigate effort required to update or redesign. These practices encompass various aspects of design, including layout composition, navigation structure, information hierarchy, and interaction design. 
+Universal patterns and metaphors are widely recognized and expected in digital products. Incorporating these patterns where appropriate can simplify user onboarding and long-term use, reducing training and support costs, and potentially lessening the need for updates or redesigns. These practices span various aspects of design, including layout composition, navigation structure, information hierarchy, and interaction design.
 
-Adhering to standard icon metaphors and semantic colors is crucial. Icons should leverage established visual associations to convey functionality quickly and effectively to users. Similarly, semantic colors, such as red for error or green for success, provide immediate visual feedback that aligns with users' expectations and mental models. Following these conventions help reduce cognitive load and enhance usability by fostering a sense of familiarity and comfort.
+Adhering to standard icon metaphors and semantic colors is crucial. Icons should use established visual associations to convey functionality quickly and effectively to users. Similarly, semantic colors, such as red for error or green for success, provide immediate visual feedback that aligns with users' expectations and mental models. Following these conventions help reduce cognitive load and enhance usability by fostering a sense of familiarity and comfort.
 
 ### Establish a design system
 
 A design system is a collection of reusable functional building blocks used to build a user interface. They are designed specifically for an organization so that every element aligns with the brand's established standards. The four key components of a design system are design tokens, components, pattern libraries, and guidelines.
 
-_Design tokens_ are fundamental visual elements of a user interface, including aspects like color, typography, and spacing. They are expressed as variables in a standard format, facilitating the creation and maintenance of an app using the design system. Regardless of the specific design, design tokens streamline the translation of design into code. For instance, by defining a token named "primary-color" with a designated value, developers can integrate the design seamlessly. Instead of embedding specific values directly into the code, they utilize these tokens. The design tokens can be aligned with an organization's style guide and centrally managed to produce easy to use tokens.
+*Design tokens* are fundamental visual elements of a user interface, including aspects like color, typography, and spacing. They're expressed as variables in a standard format, facilitating the creation and maintenance of an application using the design system. Regardless of the specific design, design tokens streamline the translation of design into code. For instance, by defining a token named "primary-color" with a designated value, developers can integrate the design seamlessly. Instead of embedding specific values directly into the code, they utilize these tokens. The design tokens can be aligned with an organization's style guide and centrally managed to produce easy to use tokens.
 
-A _component_ represents a discrete, modular unit of a user interface. It serves as a visual element to assemble app interfaces. Well-designed components exhibit two key characteristics—reusability and modularity. They should be engineered to ensure they maintain visual consistency across multiple applications within a brand's ecosystem, thereby reducing the need to recreate the design each time. A single component should seamlessly serve in various contexts. 
+A *component* represents a discrete, modular unit of a user interface. It serves as a visual element to assemble app interfaces. Well-designed components exhibit two key characteristics—reusability and modularity. They should be engineered to ensure they maintain visual consistency across multiple applications within a brand's ecosystem, reducing the need to recreate the design each time. A single component should seamlessly serve in various contexts.
 
 Power Apps provides a comprehensive set of basic universal components, like button, dropdown, and several composite components, like the modern table. Use these controls as much as possible for basic needs, then consider building composite components where gaps exist for repeatable user interface patterns.
 
-Composite components should be able to be used exactly as-is or with minimal variation (using parameters) in different app contexts and should not need to be modified. Some examples of custom components could include the following:
+Composite components should be versatile enough to be used as-is or with slight variations (through parameters) across different app contexts, without the need for modifications. Some examples of custom components include:
 
-- A company-branded header or footer. 
+- A company-branded header or footer
 - A screen-sized resource page component for users to provide feedback and get IT help
 - Universal content like copyright notices or links
 
-_Pattern library_. Offer a set of predefined design patterns for makers to utilize that help as a starting point to construct user interfaces. These patterns serve as standardized solutions to common design challenges. The primary objective of a pattern library is to offer a centralized collection of well-crafted patterns, enabling the creation of consistent and effective user interfaces. It empowers developers to use a specific pattern and follow established guidelines for their usage, thereby ensuring coherence and efficiency across user interface designs.
+*Pattern library* offers a set of predefined design patterns for makers to use as a starting point to construct user interfaces. These patterns serve as standardized solutions to common design challenges. The primary objective of a pattern library is to offer a centralized collection of well-crafted patterns, enabling the creation of consistent and effective user interfaces. Pattern libraries empower developers to use a specific pattern and follow established guidelines for usage, ensuring coherence and efficiency across user interface designs.
 
-_Guidelines_ provide rules and best practices for project teams regarding the utilization of components and visual styles. Unlike style guidelines, which focus on aesthetics, design system guidelines define the functional behavior of components and user interaction expectations. For example, if a design system provides a design token set for referencing colors, the guidelines should provide insight into when the colors should be used, and how the developer can access the corresponding color in Power Apps. For components, there should be documentation on correct usage, input and output parameters, and state variations that can be expected of the component.
+*Guidelines* offer rules and best practices for project teams on how to use components and visual styles effectively. Unlike style guidelines, which focus on aesthetics, design system guidelines define the functional behavior of components and user interaction expectations. For example, if a design system provides a design token set for referencing colors, the guidelines should clarify when to use these colors and how developers can access the corresponding color in Power Apps. For components, there should be documentation on correct usage, input and output parameters, and state variations that can be expected of the component.
 
-Centralized design system efforts can also host universal media assets such as company logos and other design assets in a repository to enable more widespread rapid development.
+Centralized design system efforts can also host universal media assets such as company logos and other design assets in a repository to enable widespread rapid development.
 
-Microsoft's Fluent UI is an example of a widely-adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet the needs of end users. They are also designed in a way that can be ubiquitous and easily utilized across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/).
+Microsoft's Fluent UI is an example of a widely adopted open-source design system. It can be an effective reference for many design decisions made in Power Apps because all modern controls utilize the components in the Fluent (2) design system. Design systems such as Fluent UI invest a significant amount of research and development effort into creating components to ensure they meet users' needs. They're also designed in a way that can be ubiquitous and easily used across various digital products and platforms. Each component has specific guidelines to ensure the application aligns with the intended experience. Take advantage of the research-backed knowledge by reviewing the [Fluent 2 guidance](https://fluent2.microsoft.design/).
 
-Avoiding duplicate implementations by sharing increases production efficiency, but more importantly it means that experiences will start coherent, and not drift apart over time. Contributing to shared elements will help keep experiences fresh and reflect expertise from across the organization.  Today, coherence is challenged because components, systems, process, and culture are often not shared, do not reinforce coherence, and make contribution hard. 
+Sharing to avoid duplicate implementations not only boosts production efficiency but also ensures experiences remain coherent over time. Contributions to shared elements help keep experiences fresh and reflect expertise from across the organization. Currently, coherence is a challenge as components, systems, processes, and culture are often not shared, don't promote coherence, and make contributions difficult.
 
 #### Conduct design reviews
 
-To ensure that an app meets established UI/UX standards, having resources available to guide the design of user experiences is crucial. Centralized teams should aim to familiarize themselves with basic design standards and best practices. While designers are typically knowledgeable about user experience, project managers can also benefit from learning these skills to contribute effectively to the team.
+Access to resources meant to guide user experience design is crucial to ensure that an app meets established UI/UX standards. Centralized teams should aim to familiarize themselves with basic design standards and best practices. While designers are typically knowledgeable about user experience, project managers can also benefit from learning these skills to contribute effectively to the team.
 
-#### Validate usage of design-related app metadata
+#### Validate use of design-related app metadata
 
-While the most effective method to validate an experience is to physically walk through and validate it, there's also the option to programmatically read Power Apps app metadata. While there isn't a set method, some approaches include checking that the correct theme is applied to the app, or verifying whether theme token values are being referenced in legacy controls.
+The most effective way to validate an experience is to physically walk through it. However, you can also programmatically read Power Apps app metadata. Methods to accomplish this might include checking that the correct theme is applied to the app, or verifying if theme token values are referenced in legacy controls.
 
-For example, if certain text elements must use certain design tokens, the text component naming could map to a certain value, and the properties of the component should also match to a certain design token mapping.
+For example, if specific text elements must use certain design tokens, the text component's name could correspond to a particular value, and the component's properties should then match to a specific design token mapping.
 
-Scan for the number of elements that are a specific component type that match criteria vs number of those elements that do not (e.g., text components that are not named correctly, or named correctly but not following property value guidelines). For responsive layout enforcement, certain layout containers could map to certain naming conventions and property values (e.g., LayoutWrap)
+Evaluate the number of elements that are a specific component type and meet certain criteria, versus those that do not. For example, consider text components that are either incorrectly named or correctly named but don't follow property value guidelines. For enforcing responsive layout, certain layout containers could map to specific naming conventions and property values (such as LayoutWrap).
 
 ### Meet accessibility standards to increase user base
 
-Designing with inclusive principles ensures that products are built for a broader audience of users that includes people of all abilities. Inclusive design practice aims to recognize the barriers users with any functional abilities might encounter and create products that facilitate those functions prior to final implementation. Understanding and discussing the aspects of function that can lead to barriers in interaction is necessary to overcome them.
-
-**Types of function**
+Incorporating inclusive design principles ensures that products cater to a diverse audience, including individuals of all abilities. Inclusive design seeks to identify potential barriers for users of all abilities to create products that address challenges before final implementation. It's essential to understand and discuss the functional aspects that could lead to interaction barriers in order to effectively overcome them.
 
 | Function | Purpose |
 | -------- | ------- |
-| Cognition |Our ability to receive, interpret, and process information. This includes attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person’s cognition can affect the way they learn - whether it's learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
-| Mobility |Our anatomy and muscles give us mobility, and they rely on brain signals which control the muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
-| Vision | Our ability to see and understand visual information from our environment to guide thought and movement. Vision is influenced by both physical and neurological factors. Vision limitations include blindness, low vision (partially sighted), decreased acuity, visual field loss, color blindness, photophobia (light sensitivity), bright sunlight impacting readability of text on a screen. |
-| Hearing |Our ability to receive and understand audio from our environment to guide thought and movement. Degrees of hearing loss vary across a wide spectrum, causing different types of barriers to everyday technology use. The temporary and situational examples could be a loud environment or a quiet zone where playing sound is not possible. |
-| Voice, speech, and communication | Our ability to communicate (verbally or non-verbally) is essential in expressing wants and needs, forming relationships, conveying information to others, and interacting with our environment. |
-| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular, chronic pain, skin integrity, sensation (hypersensitive and hyposensitive), proprioception.|
+| Cognition | Our ability to receive, interpret, and process information is influenced by many factors. These factors include attention, awareness, focus, memory, judgment, comprehension, problem solving, and reasoning. A person's cognition can affect the way they learn, whether learning how to use a new device or learning new information in a classroom. Many aspects of cognition affect one another. |
+| Mobility | Our anatomy and muscles give us mobility, and they rely on brain signals, which control muscles. Mobility involves grasps, fine motor skills, coordination, control (voluntary vs. involuntary movement), speed, muscle tone, endurance, posture, and temporary injuries. Mobility can be influenced by situational, temporary, progressive, or permanent conditions. |
+| Vision | Our ability to see and understand visual information from our environment guides thought and movement. Vision is influenced by both physical and neurological factors. Vision limitations include blindness, low vision (partially sighted), decreased acuity, visual field loss, color blindness, photophobia (light sensitivity), and even bright sunlight impacting readability of text on a screen. |
+| Hearing | Our ability to receive and understand audio from our environment also guides thought and movement. Degrees of hearing loss vary across a wide spectrum, leading to various barriers to everyday technology use. Temporary or situational examples include loud environments or quiet zones where sound playback isn't possible. |
+| Voice, speech, and communication | Our ability to communicate (verbally or non-verbally) is essential to expressing our wants and needs, forming relationships, conveying information to others, and interacting with our environment. |
+| Sensation and perception | Sensation is our ability to detect senses like touch or the positioning of our body. Perception is how the brain processes and communicates these senses. Sensation limitations include vestibular disorders, chronic pain, skin integrity, sensation (hypersensitive and hyposensitize), and proprioception.|
 
 #### Methods of accessing content
 
-There are many ways for a user to access digital content. Besides using mouse and pointer input, users can also access content through use of a keyboard and various assistive technologies. Other environmental settings include functionality such as screen and braille readers, magnifiers, captions, voice-recognition, and high-contrast settings which adapt the experience to the user’s needs.
+Users access digital content in various ways. In addition to mouse and pointer input, they might also use keyboard and various assistive technologies. These technologies include screen and braille readers, magnifiers, captions, voice recognition, and high-contrast settings, all of which adapt the experience to meet the user's needs.
 
 #### Assistive tools
 
-- _Keyboard._ People who are blind or have a significant visual impairment interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who are blind can’t see the pointer on the screen, they can’t use a standard mouse.
-The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
-- _Screen reader._ Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. The technology enables people who are blind or who have low vision to use information technology with the same level of independence and privacy as anyone else.
-Screen readers are also used by people with certain cognitive or learning disabilities, or users who simply prefer audio content over text. Beyond the web, screen readers also work with documents, spreadsheets, and the user’s operating system.
-- _Touch._ Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
-- _Dynamic content._ One of the easiest features to implement, and one that provides significant immediate benefits to screen reader users, is landmark roles (ARIA labels). There are eight of these roles, each representing a block of content that occurs commonly on web pages. To use them, simply add a relevant role attribute to an appropriate container within your HTML. Then, screen reader users can quickly jump to that section of the page.
+Common assistive tools are described below:
+
+- *Keyboard.* People with visual impairments interact with websites and apps using screen reader software, which reads content and controls aloud using text-to-speech technology. Since people who 've blindness can't see the pointer on the screen, they can't use a standard mouse. The keyboard works as an alternative input to point-and-click interaction. In addition to supporting the basic set of keyboard commands, screen readers also provide a complex set of keyboard commands. These commands give users a powerful additional set of tools to interact with user interfaces more efficiently.
+- *Screen reader.* Screen readers convert digital text into synthesized speech and braille output. They empower users to hear content and navigate with the keyboard. This technology enables individuals with blindness or low vision to use information technology with the same level of independence and privacy as any other user. Screen readers are also used by individuals with cognitive or learning disabilities, and by users who simply prefer audio content over text. These tools extend beyond web use, aiding in the navigation of documents, spreadsheets, and operating systems.
+- *Touch.* Touch targets are largely targeted at people with motor delays, who may have problems tapping the screen. More specifically, touch is designed to help people limit the amount of spurious input from unintended (or unregistered) touches.
+- *Dynamic content.* Landmark roles, or ARIA labels, offer immediate benefits to screen reader users. There are eight roles, each representing a block of content that occurs commonly on web pages. To use them, add the relevant role attribute to a suitable container in your HTML, enabling screen reader users to quickly navigate to that section of the page.
 
 #### Visual styles
 
-To ensure inclusivity for users with varying vision functions, it's crucial to address visual styles such as color, contrast, and text size in product design. This involves ensuring adequate contrast between text and its background, including text on images, icons, and buttons, to improve readability for users with low contrast sensitivity and color blindness. Well-contrasting content enhances readability in various lighting conditions, benefiting all users. 
+To create inclusive products for users with different vision capabilities, it's essential to consider visual styles like color, contrast, and text size. This involves ensuring adequate contrast between text and its background, including text on images, icons, and buttons, to improve readability for users with low contrast sensitivity or color blindness. Well-contrasting content enhances readability in various lighting conditions, benefiting all users.
 
-Standard text should have a contrast ratio of at least 4.5:1 with the background. Larger text, interactive components, and data visualizations, colors must pass a minimum 3:1 contrast ratio with the background color. Status indicators should effectively utilize semantic colors, type, and imagery to convey information, ensuring content can be perceived by all users. Consider supporting high contrast color palette, which normalizes the color palette for displaying content with a contrast ratio of at least 7:1, ensuring visibility and clarity. Providing dark mode is significantly helpful for readability and reducing eye strain.
+Standard text should maintain a contrast ratio of at least 4.5:1 with the background. For larger text, interactive components, and data visualizations, a minimum contrast ratio of 3:1 with the background color is required. Status indicators should use semantic colors, type, and imagery effectively to convey information, ensuring content can be perceived by all users. Consider supporting a high contrast color palette, which normalizes the color palette for displaying content with a contrast ratio of at least 7:1, ensuring visibility and clarity. Offering a dark mode can significantly improve readability and reduce eye strain.
 
 #### Typography
 
-Typography plays a crucial role in ensuring readability for users with diverse needs. Text must be large enough and adequately spaced to accommodate different users' requirements. Users should have the option to adjust settings such as orientation and zoom levels, with applications seamlessly adapting their content layout accordingly. Well-set typography not only aids in readability but also facilitates page orientation and navigation, benefiting individuals with low vision, cognitive disabilities, colorblindness, or those relying on screen readers.
+Typography plays a crucial role in ensuring readability for users with diverse needs. Text must be large enough and adequately spaced to accommodate differing user requirements. Users should be able to adjust settings such as orientation and zoom levels, with applications seamlessly adapting their content layout accordingly. Well-set typography not only aids in readability but also facilitates page orientation and navigation, benefiting individuals with low vision, cognitive disabilities, color blindness, and those relying on screen readers.
 
-Headings should feature large or bold text to enable quick scanning and comprehension, particularly for visual users. Properly applied heading elements ensure efficient navigation for all users. Line width and spacing significantly impact readability; excessively wide lines strain the eyes and overly short lines disrupt rhythm and comprehension. Aim for 50 to 70 characters per line and an optimal line height of 120% to 145% of the font size to enhance readability.
+Headings should feature large or bold text to enable quick scanning and comprehension, particularly for visual users. Properly applied heading elements ensure efficient navigation for all users. Line width and spacing significantly impact readability; for example, excessively wide lines strain the eyes while overly short lines disrupt rhythm and comprehension. Aim for a line length of 50 to 70 characters and a line height that is 120% to 145% of the font size to enhance readability.
 
-On mobile devices, text should be resizable up to 200% without compromising content or functionality. This flexibility ensures that users can adjust text size according to their preferences or needs, enhancing overall accessibility. Furthermore, users should have the ability to zoom in on the interface, with page layouts designed to reflow content seamlessly without horizontal scrolling for zoom levels up to 400%. This ensures that content remains accessible and readable, regardless of the device screen size, and contributes to a more user-friendly experience for all users.
+On mobile devices, text should be resizable up to 200% without compromising content or functionality. This flexibility ensures that users can adjust text size according to their preferences or needs, enhancing overall accessibility. Furthermore, users should have the ability to zoom in on the interface, with page layouts designed to reflow content seamlessly without horizontal scrolling for zoom levels up to 400%. Ensuring that content remains accessible and readable, regardless of the device screen size, contributes to a more user-friendly experience for all users.
 
 #### Images, graphs, and motion
 
-Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities.
-They serve as cues that are used by people with visual impairments to orient themselves in the content. However, when images are used extensively on websites and are not accessible can create major barriers for users. 
+Images and graphics make content more pleasant and easier to understand for many people, and in particular for those with cognitive and learning disabilities. While images can serve as cues for people with visual impairments, helping to orient them within the content, extensive use on websites can create major barriers for users.
 
-Accessible practices around media content benefit braille and screen reader users, people who browse with images turned off to save bandwidth, and search engine crawlers. They can also aid people with hearing loss or cognitive disabilities. 
+Accessible practices around media content benefit braille and screen reader users, users who browse with images turned off to save bandwidth, and search engine crawlers. They can also aid people with hearing loss or cognitive disabilities.
 
-Use Alt text to make visual content accessible. Alt attributes describe visual content. This is the text that is displayed while images are downloading. Adapt alt text to the context of the image. Be concise and informative (up to 150–250 characters). Images that duplicate text content should be marked as decorative.
+Use Alternative (Alt) text to make visual content accessible. Alt attributes describe visual content, for example, text that is displayed while images are downloading. Adapt alt text to the context of the image. Be concise and informative (use from 150 to 250 characters). Remember to mark images that duplicate text content as decorative.
 
 #### Interaction
 
-Interaction is where accessibility matters the most. If a user is unable to seamlessly move around a product and complete tasks, we are not building an accessible product. Efficient keyboard and touch interaction helps people using screen readers, people using braille readers, and people who navigate using a keyboard. Common interactions include:
+Interaction is where accessibility matters the most. If a user can't navigate a product smoothly and complete tasks, the product isn't truly accessible. Efficient keyboard and touch interactions assist users of screen readers, braille readers, and those who navigate using a keyboard. Typical interactions include:
 
-- _Navigation._ Assistive technology users get around a web page mostly by tabbing, search, and, in the case of screen readers, using lists of headings and links. Ensure efficient keyboard navigation with landmarks, headings and shortcuts (like skip to main).
-- _Hyperlinks._ Usability and accessibility of hyperlinks can be improved by making them clear, concise, and meaningful out of context. Apply sufficient color contrast and differentiate visually from other content.
-- _Tables._ Relying on visual cues alone is not sufficient to create an accessible table. With structural markup, headers and data cells can be recognized by the assistive technology.
-- _Forms._ Input fields are used for many types of interactions on the web. Accessibility of forms usually concern people who use screen readers or keyboards.
-- _Focus._ Focus visibility helps anyone who relies on the keyboard to operate the page, by letting them visually determine what will they interact with. Sometimes focus needs to be moved programatically or trapped inside a surface to provide an optimal experience.
-- _State changes._ Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is particularly important.
+- *Navigation*. Assistive technology users navigate a web page by tabbing, search, and, in the case of screen readers, using lists of headings and links. Ensure efficient keyboard navigation with landmarks, headings, and shortcuts (like skip to main content).
+- *Hyperlinks*. Usability and accessibility of hyperlinks can be improved by making them clear, concise, and meaningful out of context. Apply sufficient color contrast and visually differentiate from other content.
+- *Tables*. Relying on visual cues alone isn't sufficient to create an accessible table. Structural markup allows assistive technology to recognize headers and data cells.
+- *Forms*. Input fields, used for various web interactions, often raise accessibility concerns for individuals who use screen readers or keyboards.
+- *Focus*. Focus visibility helps users who rely on the keyboard to navigate the page, by visually indicating the element they interact with next. Sometimes focus needs to be moved programatically or limited to a specific area to optimize the experience.
+- *State changes*. Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is critical.
 
 ## Power Platform facilitation
 
-Modern controls are available for [canvas apps](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) and [model driven apps](/power-apps/user/modern-fluent-design).
+Modern controls are available both for [canvas apps](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) and [model-driven apps](/power-apps/user/modern-fluent-design).
 
-Canvas apps can utilize [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming) to reference a consistent brand palette across all controls in the app.
+Canvas apps support [modern theming](/power-apps/maker/canvas-apps/controls/modern-controls/modern-theming), allowing you to implement a consistent brand palette across all controls in the app. Model-driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) to modify basic branding elements like app header colors, links, and some form icons.
 
-Model driven apps support [themes](/power-apps/maker/model-driven-apps/create-themes-organization-branding) which can modify basic branding elements like the app header colors, links, and some form icons.
+Reusable, solution-aware components are available in multiple forms for various app types. [Custom canvas components](/power-apps/maker/canvas-apps/create-component) can be used in canvas apps or custom pages and are built using low code. The [Power Apps component framework](/power-apps/developer/component-framework/overview) can be used to implement code components for canvas apps, model-driven apps, and [Power Pages](/power-pages/configure/component-framework-tutorial).
 
-Reusable, solution aware components are available in multiple forms for various app types. [Custom canvas components](/power-apps/maker/canvas-apps/create-component) can be used in canvas apps or custom pages and are built using low code. [Code components](/power-apps/developer/component-framework/overview) can implement components that can be designed for canvas app, model driven apps, and [Power Pages](/power-pages/configure/component-framework-tutorial) using the pro developer Power Apps Component framework.
+Canvas apps support [accessible properties](/power-apps/maker/canvas-apps/controls/properties-accessibility) that map to specific assistive technology functions. Use [in-studio tooling](/power-apps/maker/canvas-apps/accessibility-checker) to validate accessibility compliance.
 
-Canvas apps supports [accessible properties](/power-apps/maker/canvas-apps/controls/properties-accessibility) that map to specific assistive technology functions. Use [in-studio tooling](/power-apps/maker/canvas-apps/accessibility-checker) to validate accessibility compliance.
+While model-driven apps are accessible without configuration, ensure all [web resources added to the app are accessible](/power-apps/developer/model-driven-apps/create-accessible-web-resources). Embedded canvas experiences, including [custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview), must be manually configured to meet accessibility standards.
 
-Although model driven apps are accessible without configuration, you must ensure all [web resources added to the app are accessible](/power-apps/developer/model-driven-apps/create-accessible-web-resources). All embedded canvas experiences (including [custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)) must be manually configured to meet accessibility standards.
+Model-driven apps provide built-in [standard keyboard shortcuts for navigating forms and views](/power-apps/user/screen-reader).
 
-Model driven apps provide [standard keyboard shortcuts for navigating forms and views](/power-apps/user/screen-reader).
+Canvas apps require code components to enable keyboard shortcuts, which can be configured using Creator Kit's [keyboard shortcuts](/power-platform/guidance/creator-kit/keyboardshortcuts).
 
-Canvas apps require code components to enable keyboard shortcuts, which can be configured using the Creator Kit [keyboard shortcuts](/power-platform/guidance/creator-kit/keyboardshortcuts) component.
+## See also
 
-## Related links
-
-- [Building accessible apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
+- [Designing and building accessible canvas apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
 - [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations)
-- [Power Apps accessibility standards whitepaper](https://powerapps.microsoft.com/en-us/blog/powerapps-canvas-app-accessibility-guidelines/)
-- [Use a screen reader in canvas apps](/power-apps/user/screen-reader)
-- [WCAG standards guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [Power Apps Canvas App Accessibility Guidelines whitepaper](https://powerapps.microsoft.com/en-us/blog/powerapps-canvas-app-accessibility-guidelines/)
+- [Use a screen reader in model-driven apps](/power-apps/user/screen-reader)
+- [Web Content Accessibility Guidelines (WCAG) standard)](https://www.w3.org/WAI/standards-guidelines/wcag/)
 - [Microsoft Inclusive Design](https://inclusive.microsoft.design/)
 - [Fluent UI accessibility guidance](https://fluent2.microsoft.design/accessibility)
 
 ## Experience Optimization checklist
-
-Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)
