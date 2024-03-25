@@ -16,13 +16,14 @@ ms.topic: conceptual
 |[OE:03](checklist.md)| **Formalize the software ideation and planning process, drawing from established industry and organizational standards. Use a common, prioritized backlog and sufficiently detailed specifications. Drive continuous improvements in the planning process based on outcomes.** |
 |---|---|
 
-This guide describes the recommendations for managing workload development practices in accordance with established standards. Your team's ability to produce high quality software relies on a structured, collaborative approach to development planning. This means workload teams understand and can clearly communicate the work that is being done to stakeholders. They should have a clear view of the work to be done in a development cycle and ensure that all stakeholders are aligned on the "why" of the work to be done. Established standards define how development practices should be performed and allow the workload team to collaborate effectively, reducing the risk of confusion on goals and expectations.
+This guide describes the recommendations for managing workload development practices in accordance with established standards. Your team's ability to produce high quality software relies on a structured, collaborative approach to development planning. This means workload teams understand and can clearly communicate the work that is being done to stakeholders. More precisely, workload teams should have a clear view of the work to be done in a development cycle and ensure that all stakeholders are aligned on the "why" of the work to be done. Established standards define how development practices should be performed and allow the workload team to collaborate effectively, reducing the risk of confusion on goals and expectations.
 
 ## Key design strategies
 
 Formalize your workload development practices to help ensure a common understanding of the goals and expectations.
 
-Don't treat low code workloads as low complexity. You'll still benefit from formalizing the development and management of low-code workloads. Learn from other software development teams. Have a decision matrix in place that dictates the level of formalization required based on the complexity and criticality of the workload.
+> [!NOTE]
+> Don't treat low code workloads as low complexity. You'll still benefit from formalizing the development and management of low-code workloads. Learn from other software development teams. Have a decision matrix in place that dictates the level of formalization required based on the complexity and criticality of the workload.
 
 ### Standards for development planning
 
@@ -30,7 +31,7 @@ The following standards can help you design a comprehensive development planning
 
 - **Prioritization**: Planning the order and scope of the work involves understanding the true impact and value of workload features on the business. It also includes evaluating those impacts against other work requests and the overall roadmap for your product or program. One way to prioritize workloads is by [evaluating the business value](/power-platform/guidance/adoption/business-value) of the entire workload. You might also find it useful to evaluate individual workload features for the business value.
 
-- **Categorization**: Establish processes that ensure that critical applications have the necessary guardrails to support them while at the same time promoting innovation of productivity scenarios.
+- **Categorization**: Establish processes that ensure that critical applications have the necessary guardrails to support them. At the same time, ensure that productivity scenarios are not slowed down or stifled by too rigorous processes.
 
 - **Collaboration**: The process of defining proposed changes to the workload should be a collaborative effort. Most changes to the workload will impact multiple functions and/or components, so involving as many workload team members as possible will help ensure that important considerations are not missed and that everyone is aware of the impact on their particular domain. Collaboration also helps clearly define the scope of a change and how to divide the necessary tasks needed to accomplish the change into well-defined work items, as a larger group with expertise across domains will be able to provide experience-backed estimates for the required effort.
 

@@ -65,7 +65,7 @@ Other examples of event-driven triggers include a form being submitted in an app
 Use trigger conditions to streamline your workflows and reduce the number of unnecessary runs. Trigger conditions set up multiple conditions that must be met before a workflow is triggered.
 
 >[!NOTE]
->Use trigger conditions also to avoid infinite loops if you modify the data source that triggered the workflow as part of the workflow. For example, the application might update certain fields in a row in Microsoft Dataverse table and the workflow runs additional queries based on the updated fields and updates further information in the same row. Use trigger conditions to only trigger the workflow when the fields that are modified by the application are updated, but not any other fields.
+>Make sure to use trigger conditions to prevent endless loops if, as part of the workflow, you change the data source that starts the workflow. For example, the application might change fields in a Microsoft Dataverse table row, and the workflow perform additional queries based on those changed fields, further modifying the same row. Use trigger conditions to start the workflow only when fields that are changed by the application are updated, but not any other fields.
 
 #### Schedule-driven triggers
 
