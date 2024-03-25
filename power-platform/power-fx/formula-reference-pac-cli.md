@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations in P
 author: snizar007
 ms.topic: reference
 ms.reviewer: jdaly
-ms.date: 11/5/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: snizar
 search.audienceType:
