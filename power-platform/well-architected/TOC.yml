@@ -65,17 +65,15 @@
               href: security/segmentation.md
             - name: SE:05 Identity and access management
               href: security/identity-access.md
-            - name: SE:06 Network controls
-              href: security/networking.md
-            - name: SE:07 Encryption
+            - name: SE:06 Encryption
               href: security/encryption.md             
-            - name: SE:08 Application secrets
+            - name: SE:07 Application secrets
               href: security/application-secrets.md
-            - name: SE:09 Monitoring and threat detection
+            - name: SE:08 Monitoring and threat detection
               href: security/monitor-threats.md
-            - name: SE:10 Testing and validation
+            - name: SE:09 Testing and validation
               href: security/testing.md              
-            - name: SE:11 Incident response 
+            - name: SE:10 Incident response 
               href: security/incident-response.md
       - name: Operational Excellence
         items: 
@@ -135,8 +133,8 @@
               href: ./experience-optimization/usability.md
             - name: XO:05 Feedback and guidance
               href: ./experience-optimization/feedback-guidance.md
-            - name: XO:06 Form layout
-              href: ./experience-optimization/screen-layout.md              
+            - name: XO:06 Layout
+              href: ./experience-optimization/layout.md              
             - name: XO:07 Visual design
               href: ./experience-optimization/visual-design.md
             - name: XO:08 Interaction design

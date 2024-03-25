@@ -1,6 +1,6 @@
 ---
 title: Application threat analysis
-description: Use threat modeling to identify threats, attacks, vulnerabilities, and countermeasures that can affect an application.
+description: Use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect an application.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:02](checklist.md)|Establish a security baseline that's aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.|
+|[SE:02](checklist.md)| **Establish a security baseline that's aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.** |
 |---|---|
 
 A comprehensive analysis to identify threats, attacks, vulnerabilities, and counter measures is crucial during the design phase of a workload. Threat modeling is an engineering exercise that includes defining security requirements, identifying, and mitigating threats, and validating those mitigations. You can use this technique at any stage of application development or production, but it's most effective during the design stages of new functionality.
@@ -61,9 +61,9 @@ One methodology for classifying threats is [STRIDE](/azure/security/develop/thre
 
 ### Mitigate the threats
 
-Document all the identified threats. For each threat, define security controls and the response to an attack if those controls fail. Define a process and timeline that minimizes exposure to any identified vulnerabilities in the workload, so that those vulnerabilities can't be left unaddressed.
+Document all the identified threats. For each threat, define security controls and the response to an attack if those controls fail. Define a process and timeline that minimize exposure to any identified vulnerabilities in the workload, so that those vulnerabilities can't be left unaddressed.
 
-Use the _assume breach_ approach. It can help identify controls needed in the design to mitigate risk if a primary security control fails. Evaluate how likely it is for the primary control to fail. If it does fail, what is the extent of the potential organizational risk? Also, what is the effectiveness of compensating controls? Based on the evaluation, apply defense-in-depth measures to address potential failures of security controls.
+Use the *assume breach* approach. It can help identify controls needed in the design to mitigate risk if a primary security control fails. Evaluate how likely it is for the primary control to fail. If it does fail, what is the extent of the potential organizational risk? Also, what is the effectiveness of compensating controls? Based on the evaluation, apply defense-in-depth measures to address potential failures of security controls.
 
 Here's an example:
 
@@ -80,7 +80,7 @@ Here's an example:
 
 ### Track threat modeling results
 
-We highly recommend that you use a _threat modeling tool_. Tools can automate the process of identifying threats and produce a comprehensive report of all identified threats. Be sure to communicate the results to all interested teams.
+We highly recommend that you use a *threat modeling tool*. Tools can automate the process of identifying threats and produce a comprehensive report of all identified threats. Be sure to communicate the results to all interested teams.
 
 Track the results as part of the workload team's backlog to allow for accountability in a timely way. Assign tasks to individuals who are responsible for mitigating a particular risk that threat modeling identified.
 
@@ -100,30 +100,32 @@ Threat Modeling also accounts for all changes to services that are already live 
 
 Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](https://owaspsamm.org/) (SAMM). Both are built on the premise that secure design is integral to web application security.
 
-Learn more: [OWASP top 10 risks: Mitigations in Power Platform](/power-platform/admin/security/faqs)
+For more information, see [OWASP top 10 risks: Mitigations in Power Platform](/power-platform/admin/security/faqs#owasp-top-10-risks-mitigations-in-power-platform).
 
 ## Example
 
-This example builds on the Information Technology (IT) environment established in the [security baseline (SE:01)](establish-baseline.md). This approach provides a broad understanding of the threat landscape across different IT scenarios.
+This example builds on the Information Technology (IT) environment established in the [Recommendations for establishing a security baseline](establish-baseline.md). This approach provides a broad understanding of the threat landscape across different IT scenarios.
+
+<!-- Are we including an image? -->
 
 **Development Lifecycle personas**. There are many personas involved in a development life cycle, including developers, testers, final users, and administrators. All of them may be compromised and put your environment at risk through vulnerabilities or threats created intentionally.
 
 **Potential attackers**. Attackers consider a wide range of tools available easily to be used at any time to explore your vulnerabilities and start an attack.
 
-**Security controls**. As part of threat analysis, identify Microsoft, Azure and Power Platform security services to be used to protect your solution and how effective those solutions are.
+**Security controls**. As part of threat analysis, identify Microsoft, Azure, and Power Platform security services to be used to protect your solution and how effective those solutions are.
 
-**Log collection**. Logs from Power Platform resources and other components included in your workload, such as Azure resources and on-premise components, may be sent to Application Insights or Microsoft Purview so you may understand the behavior of your solution developed and try to capture initial vulnerabilities.
+**Log collection**. Logs from Power Platform resources and other components included in your workload, such as Azure resources and on-premises components, may be sent to Application Insights or Microsoft Purview so you may understand the behavior of your solution developed and try to capture initial vulnerabilities.
 
 **Security information event management (SIEM) solution**. Microsoft Sentinel may be added even in an early stage of the solution so you can build some analytics queries to mitigate threats and vulnerabilities, anticipating your security environment when you are in production.
 
-## Related links
+## See also
 
-- [STRIDE](/azure/security/develop/threat-modeling-tool-threats)
+- [STRIDE model](/azure/security/develop/threat-modeling-tool-threats)
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)
-- [Power Platform security FAQs - Power Platform | Microsoft Learn](/power-platform/admin/security/faqs)
+- [Power Platform security FAQs](/power-platform/admin/security/faqs)
 - [Microsoft Identity Platform](/azure/active-directory/develop/v2-overview)
 - [Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/practices)
-- [Azure AD Continuous Access Evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [Content Security Policy](/power-platform/admin/content-security-policy)
+- [Azure AD Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
+- [Content security policy](/power-platform/admin/content-security-policy)
 - [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)
-- [Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started)
+- [Microsoft Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started)

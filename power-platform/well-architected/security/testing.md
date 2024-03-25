@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:10](checklist.md)|Establish a comprehensive testing regimen that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
+|[SE:09](checklist.md)| **Establish a comprehensive testing regimen that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.** |
 |---|---|
 
 Rigorous testing is the foundation of good security design. Testing is a tactical form of validation to make sure controls are working as intended. Testing is also a proactive way to detect vulnerabilities in the system.
@@ -37,12 +37,12 @@ This guide provides recommendations for testing the security posture of your wor
 
 ## Key design strategies
 
-Testing is a nonnegotiable strategy, especially for security. It allows you to proactively discover and address security issues before they can be exploited and to verify that the security controls that you implemented are functioning as designed.
+Testing is a non-negotiable strategy, especially for security. It allows you to proactively discover and address security issues before they can be exploited and to verify that the security controls that you implemented are functioning as designed.
 
 The scope of testing must include the application, infrastructure, and automated and human processes.
 
-> ![NOTE]
-> This guidance makes a distinction between testing and incident response. Although testing is a detection mechanism that ideally fixes issues prior to production, it shouldn't be confused with the remediation or investigation that's done as part of incident response. The aspect of recovering from security incidents is described in **Incident Response recommendations**.
+> [!NOTE]
+> This guidance makes a distinction between testing and incident response. Although testing is a detection mechanism that ideally fixes issues prior to production, it shouldn't be confused with the remediation or investigation that's done as part of incident response. The aspect of recovering from security incidents is described in [Recommendations for security incident response](incident-response.md).
 
 **Be involved in test planning.** The workload team might not design the test cases. That task is often centralized in the enterprise or completed by external security experts. The workload team should be involved in that design process to ensure that security assurances integrate with the application's functionality.
 
@@ -91,9 +91,9 @@ The security team might audit all workloads and run these tests as needed. As a 
 
 In other cases, you might be required to run tests and report the security state of the system against the potential threat.
 
- > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Because improvised tests are disruptive events, expect to reprioritize tasks, which may delay other planned work.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Because improvised tests are disruptive events, expect to re-prioritize tasks, which may delay other planned work.
 
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: There's risk of the unknown. Improvised tests might be one-time efforts without established processes or tools. But the predominant risk is the potential interruption of the rhythm of business. You need to evaluate those risks relative to the benefits.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: There's risk of the unknown. Improvised tests might be one-time efforts without established processes or tools. But the predominant risk is the potential interruption of the rhythm of business. You need to evaluate those risks relative to the benefits.
 
 #### Security incident tests
 
@@ -133,7 +133,7 @@ Here are some advantages of testing through real-world attacks:
 - When you make these attacks a part of routine testing, you use an outside-in perspective to check the workload and make sure the defense can withstand an attack.
 - Based on the lessons they learned, the team upgrades their knowledge and skill level. The team improves situational awareness and can self-assess their readiness to respond to incidents.
 
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Testing in general can affect performance. There might be business continuity problems if destructive tests delete or corrupt data. There are also risks associated with information exposure; make sure to maintain the confidentiality of data. Ensure the integrity of data after you complete testing.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: Testing in general can affect performance. There might be business continuity problems if destructive tests delete or corrupt data. There are also risks associated with information exposure; make sure to maintain the confidentiality of data. Ensure the integrity of data after you complete testing.
 
 Some examples of simulated tests include black-box and white-box testing, penetration testing, and war game exercises.
 
@@ -141,24 +141,24 @@ Some examples of simulated tests include black-box and white-box testing, penetr
 
 These test types offer two different perspectives. In black-box tests, the internals of the system aren't visible. In white-box tests, the tester has a good understanding of the application and even has access to code, logs, resource topology, and configurations for conducting the experiment.
 
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: The difference between the two types is upfront cost. White-box testing can be expensive in terms of time taken to understand the system. In some cases, white-box testing requires you to purchase specialized tools. Black-box testing doesn't need ramp-up time, but it might not be as effective. You might need to put in extra effort to uncover issues. It's a time investment tradeoff.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: The difference between the two types is upfront cost. White-box testing can be expensive in terms of time taken to understand the system. In some cases, white-box testing requires you to purchase specialized tools. Black-box testing doesn't need ramp-up time, but it might not be as effective. You might need to put in extra effort to uncover issues. It's a time investment tradeoff.
 
 ##### Tests that simulate attacks through penetration testing
 
-Security experts who aren't part of the organization's IT or application teams conduct penetration testing, or _pentesting_. They look at the system in the way that malicious actors scope an attack surface. Their goal is to find security gaps by gathering information, analyzing vulnerabilities, and reporting the results.
+Security experts who aren't part of the organization's IT or application teams conduct penetration testing, or *pentesting*. They look at the system in the way that malicious actors scope an attack surface. Their goal is to find security gaps by gathering information, analyzing vulnerabilities, and reporting the results.
 
- > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Penetration tests are improvised and can be expensive in terms of disruptions and monetary investment because pentesting is typically a paid offering by third-party practitioners.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Penetration tests are improvised and can be expensive in terms of disruptions and monetary investment because pentesting is typically a paid offering by third-party practitioners.
 
- > :::image type="icon" source="../_images/risk.svg"::: **Risk**: A pentesting exercise might affect the runtime environment and might disrupt the availability for normal traffic.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: A pentesting exercise might affect the runtime environment and might disrupt the availability for normal traffic.
 
-The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [Related links](/azure/well-architected/security/test).
+The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [See also](#see-also).
 
 ##### Tests that simulate attacks through war game exercises
 
 In this methodology of simulated attacks, there are two teams:
 
-- The _red_ team is the adversary attempting to model real-world attacks. If they're successful, you find gaps in your security design and evaluate the blast radius containment of their breaches.
-- The _blue_ team is the workload team that defends against the attacks. They test their ability to detect, respond, and remediate the attacks. They validate the defenses that have been implemented to protect workload resources.
+- The *red* team is the adversary attempting to model real-world attacks. If they're successful, you find gaps in your security design and evaluate the blast radius containment of their breaches.
+- The *blue* team is the workload team that defends against the attacks. They test their ability to detect, respond, and remediate the attacks. They validate the defenses that have been implemented to protect workload resources.
 
 If they're conducted as routine tests, war game exercises can provide ongoing visibility and assurance that your defenses work as designed. War game exercises can potentially test across levels within your workloads.
 
@@ -170,23 +170,35 @@ For information about red-team and blue-team setup, see [Microsoft Cloud Red Tea
 
 ## Power Platform facilitation
 
-Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities such as Microsoft Power Apps execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies. For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
+Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities, such as:
+
+- Power Apps execution from unauthorized geographies
+- Suspicious data destruction by Power Apps
+- Mass deletion of Power Apps
+- Phishing attacks made through Power Apps
+- Power Automate flows activity by departing employees
+- Microsoft Power Platform connectors added to an environment
+- Update or removal of Microsoft Power Platform data loss prevention policies
+
+For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview).
 
 For product documentation, see [Hunting capabilities in Microsoft Sentinel](/azure/sentinel/hunting).
 
-Microsoft Defender for Cloud offers vulnerability scanning for various technology areas. For details, see [Enable vulnerability scanning with Microsoft Defender Vulnerability Management - Microsoft Defender for Cloud](/azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management).
+Microsoft Defender for Cloud offers vulnerability scanning for various technology areas. For more information, see [Enable vulnerability scanning with Microsoft Defender Vulnerability Management](/azure/defender-for-cloud/deploy-vulnerability-assessment-defender-vulnerability-management).
 
 The practice of DevSecOps integrates security testing as part of an ongoing and continuous improvement mindset. War game exercises are a common practice that's integrated into the rhythm of business at Microsoft. For more information, see [Security in DevOps (DevSecOps)](/devops/operate/security-in-devops).
 
-Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment pipelines. For details, see [Enable DevSecOps with Azure and GitHub - Azure DevOps](/devops/devsecops/enable-devsecops-azure-github).
+Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment (CI/CD) pipelines. For more information, see [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github).
 
-## Related links
+## See also
+
+<!-- This is not our typical "See also" section. If we change the heading note cross reference above to this section. -->
 
 The latest penetration tests and security assessments can be found on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/viewpage/PenTest).
 
-Microsoft performs extensive testing of the Microsoft Cloud services. This testing includes penetration testing, with results published on the Service Trust Portal for your  Your organization may perform your own penetration test against Microsoft Power Platform and Microsoft Dynamics 365 services. All penetration testing must follow the [Microsoft Cloud Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement). It is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit all penetration tests to your assets and avoid unintended consequences for other customers around you. 
+Microsoft performs extensive testing of the Microsoft Cloud services. This testing includes penetration testing, with results published on the Service Trust Portal for your organization. Your organization may perform your own penetration test on Microsoft Power Platform and Microsoft Dynamics 365 services. All penetration testing must follow the [Microsoft Cloud Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement). It is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit all penetration tests to your assets and avoid unintended consequences for other customers around you.
 
-Follow the rules of engagement to make sure that access isn't misused. For guidance about planning and executing simulated attacks, see the following articles:
+Follow the rules of engagement to make sure that access isn't misused. For guidance on planning and executing simulated attacks, see:
 
 - [Penetration Testing Rules of Engagement](https://www.microsoft.com/msrc/pentest-rules-of-engagement)
 - [Penetration testing](/azure/security/fundamentals/pen-testing)

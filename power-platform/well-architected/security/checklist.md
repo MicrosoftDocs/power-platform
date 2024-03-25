@@ -22,16 +22,13 @@ This checklist presents a set of security recommendations to help you ensure you
 |&#9744;|[SE:03](./data-classification.md)|**Classify and consistently apply sensitivity and information type labels** on all workload data and systems involved in data processing. Use classification to influence workload design, implementation, and security prioritization.|
 |&#9744;|[SE:04](./segmentation.md)|**Create intentional segmentation and perimeters** in your architecture design and in the workload's footprint on the platform. The segmentation strategy must include networks, roles and responsibilities, workload identities, and resource organization.|
 |&#9744;|[SE:05](./identity-access.md)|**Implement strict, conditional, and auditable identity and access management (IAM)** across all workload users, team members, and system components. Limit access exclusively to *as necessary*. Use modern industry standards for all authentication and authorization implementations. Restrict and rigorously audit access that's not based on identity.|
-|&#9744;|[SE:06](./networking.md)|**Isolate, filter, and control network traffic** across both ingress and egress flows. Apply defense-in-depth principles by using localized network controls at all available network boundaries across both east-west and north-south traffic.|
-|&#9744;|[SE:07](./encryption.md)|**Encrypt data by using modern, industry-standard methods** to guard confidentiality and integrity. Align the encryption scope with data classifications, and prioritize native platform encryption methods.|
-|&#9744;|[SE:08](./application-secrets.md)|**Protect application secrets** by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
-|&#9744;|[SE:09](./monitor-threats.md)|**Implement a holistic monitoring strategy** that relies on modern threat detection mechanisms that can be integrated with the platform. Mechanisms should reliably alert for triage and send signals into existing SecOps processes.|
-|&#9744;|[SE:10](./testing.md)|**Establish a comprehensive testing regimen** that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
-|&#9744;|[SE:11](./incident-response.md)|**Define and test effective incident response procedures** that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
+|&#9744;|[SE:06](./encryption.md)|**Encrypt data by using modern, industry-standard methods** to guard confidentiality and integrity. Align the encryption scope with data classifications, and prioritize native platform encryption methods.|
+|&#9744;|[SE:07](./application-secrets.md)|**Protect application secrets** by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.|
+|&#9744;|[SE:08](./monitor-threats.md)|**Implement a holistic monitoring strategy** that relies on modern threat detection mechanisms that can be integrated with the platform. Mechanisms should reliably alert for triage and send signals into existing SecOps processes.|
+|&#9744;|[SE:09](./testing.md)|**Establish a comprehensive testing regimen** that combines approaches to prevent security issues, validate threat prevention implementations, and test threat detection mechanisms.|
+|&#9744;|[SE:10](./incident-response.md)|**Define and test effective incident response procedures** that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
 
 ## Next steps
-
-We recommend that you review the Security tradeoffs to explore other concepts.
 
 > [!div class="nextstepaction"]
 > [Security tradeoffs](tradeoffs.md)

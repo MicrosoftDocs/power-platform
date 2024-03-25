@@ -1,6 +1,6 @@
 ---
 title: Design review checklist for Reliability
-description: Use this checklist to identify the best approach for reliability of your low-code workload.
+description: Use this checklist for Reliability to identify the best infrastructure and application design for your workload.
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
@@ -13,7 +13,7 @@ ms.date: 11/30/2023
 
 This checklist presents a set of recommendations for you to use to evaluate the reliability, resiliency, and failure recovery strategies in your architecture design. To ensure reliability, identify the best infrastructure and application design for your workload. Make these decisions based on your business requirements that are mapped to availability and recoverability target metrics.
 
-When designing for reliability, pay attention to the choices you make in your design and how they impact your workload. This checklist and the guides that come with it offer resources to help you with those choices. Keep workload reliability in mind at every stage of the workload design, development, and operation lifecycle.
+To implement a reliable design, thoroughly consider decision points in your design and be aware of how those decisions affect your workload. This checklist and the guides that come with it offer resources to help you make those decisions. Make workload reliability a central consideration at every stage of the workload design, development, and operation lifecycle.
 
 ## Checklist
 

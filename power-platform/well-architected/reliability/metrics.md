@@ -34,7 +34,7 @@ Consider using the following metrics to quantify the business requirements.
 | Recovery time objective (RTO)    | The maximum acceptable time that an application can be unavailable after an incident.   |
 | Recovery point objective (RPO)   | The maximum acceptable duration of data loss during an incident.   |
 
-Define the workload's target values for these metrics in the context of user and system flows. Identify and score those flows by how critical they are to your requirements. Use the values to drive the design of your workload in terms of architecture, review, testing, and incident management operations. Failure to meet the targets will affect the business beyond the tolerance level.
+Define the workload's target values for these metrics in the context of user and system flows. [Identify and score those flows](identify-flows.md) by how critical they are to your requirements. Use the values to drive the design of your workload in terms of architecture, review, testing, and incident management operations. Failure to meet the targets will affect the business beyond the tolerance level.
 
 ## Key design strategies
 
