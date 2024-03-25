@@ -2,9 +2,11 @@
 title: "Copy an environment"
 description: "Learn how to copy apps and data from an environment. Review next steps for administrators in the target environment." 
 ms.topic: conceptual
-ms.date: 02/23/2024
+ms.date: 03/25/2024
 author: ChrisGarty
 ms.author: cgarty
+contributors:
+- matapg007
 ms.reviewer: sericks
 ---
 # Copy an environment
