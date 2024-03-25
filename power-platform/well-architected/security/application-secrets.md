@@ -105,7 +105,7 @@ As a workload owner, you need to **understand the secret rotation plan and polic
 
 ## Power Platform facilitation
 
-Certain Power Platform services are available for managing application secrets, as outlined in the following sections.
+The following sections describe Power Platform features and capabilities you can use to manage application secrets.
 
 ### Use Azure Key Vault secrets
 

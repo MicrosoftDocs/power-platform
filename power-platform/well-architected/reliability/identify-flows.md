@@ -209,4 +209,4 @@ The following example provides a complete scenario and illustrates important poi
 
 Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview) including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes.
 
-Learn how to convert your ideas into a fully functional solution by [planning a Power Apps project].
+Learn how to convert your ideas into a fully functional solution by [planning a Power Apps project](power-apps/guidance/planning/introduction).

@@ -217,7 +217,6 @@ This layer brings a recommendation and reminder that threats may be mapped accor
 Ensure the security baseline you establish for Power Platform is well aligned with your organization's security baselines. Work closely with IT security teams in your organization to leverage their expertise.
 
 - [Security Baseline discipline overview](/azure/cloud-adoption-framework/govern/security-baseline/)
-
 - [Security Baseline discipline template](/azure/cloud-adoption-framework/govern/security-baseline/template)
 
 ## See also

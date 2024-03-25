@@ -177,7 +177,7 @@ Microsoft's SDL is equivalent to the [OWASP Software Assurance Maturity Model](h
 
 Microsoft Security Development Lifecycle (SDL) recommends secure practices that you can apply to your development lifecycle. For more information, see [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/).
 
-Defender for DevOps and the SAST tools are included as part of GitHub Advanced Security and Azure DevOps. These tools can help you track a security score for your organization.
+Defender for DevOps and the SAST (Static Application Security Testing) tools are included as part of GitHub Advanced Security and Azure DevOps. These tools can help you track a security score for your organization.
 
 With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. See [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker).
 

@@ -61,9 +61,9 @@ You can opt for **customer-managed keys**. Power Platform still uses your keys, 
 
 ## Power Platform facilitation
 
-The following sections describe Power Platform services and features that you can use to encrypt your data.
+The following sections describe Power Platform features and capabilities you can use to encrypt your data.
 
-### Customer Managed Key
+### Customer managed key
 
 All customer data stored in Power Platform is encrypted using a strong Microsoft-managed encryption key by default. Organizations with data privacy and compliance requirements to secure their data and manage their own keys can use the customer managed key capability. The customer managed key provides added data protection where you self-manage the data encryption key associated with your Dataverse environment. Using this capability enables you to rotate or swap encryption keys on demand. Also, it prevents Microsoft from being able to access your data when you revoke the key from the service. For more information, see [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).
 

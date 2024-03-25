@@ -22,7 +22,7 @@ A key tenet of FMA is that failures happen no matter how many layers of resilien
 
 If you skip FMA altogether or perform an incomplete analysis, your workload is at risk of unpredicted behavior and potential outages caused by suboptimal design.
 
-**Definitions*
+**Definitions**
 
 | Term | Definition |
 | --- | --- |

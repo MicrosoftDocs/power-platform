@@ -118,7 +118,7 @@ Segmentation allows you to isolate workload resources from other parts of the or
 
 ## Power Platform facilitation
 
-Certain Power Platform services are available for use in implementing a segmentation strategy, as outlined in the following sections.
+The following sections describe Power Platform features and capabilities you can use to implement a segmentation strategy.
 
 ### Identity
 
