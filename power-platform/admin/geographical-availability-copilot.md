@@ -32,7 +32,7 @@ Copilots and generative AI features in [Microsoft Power Platform](/power-platfor
 However, copilots and generative AI features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
 
 > [!NOTE]
-> Copilot and genearative AI features that are generally available are enabled by default. However, you might need to allow data movement across regions to use all copilot and generative AI features.
+> Copilot and generative AI features that are generally available are enabled by default. However, you might need to allow data movement across regions to use all copilot and generative AI features.
 
 ## Regions involved with copilots and generative AI features
 
@@ -40,7 +40,7 @@ When you use copilots and generative AI features, **your inputs (prompts) and ou
 
 The following table lists the regions involved with copilots and generative AI features.
 
-| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and proccessed for Bing Search | 
+| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | Australia</br>India</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | United States| 
 | Europe\*  | Sweden or Switzerland| United States |
