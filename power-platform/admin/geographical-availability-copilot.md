@@ -60,10 +60,14 @@ To use copilots and generative AI features, you need to consent to the terms of 
 1. On the **Generative AI features** card, select **Edit**.
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
+   When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-AI-features)
+
    > [!Note]
    > Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
    
 1. Review the terms of use and select the **Bing Search** checkbox.
+
+   When the **Bing Search** feature is turned on, it allows your copilot in Microsoft Copilot Studio to find and present information from multiple external sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
 
    > [!Note]
    > To select the **Bing Search** checkbox, the **Move data across regions** checkbox must be already selected.
