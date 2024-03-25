@@ -11,7 +11,7 @@ ms.date: 11/30/2023
 
 # Experience Optimization design principles 
 
-The **design principles** are intended to provide guidance for aspects of Experience Optimization that you should consider throughout the development lifecycle. Start with the recommended approaches and **justify the benefits for a set of requirements**. After you set your strategy, drive actions by using the [Experience Optimization checklist](./checklist.md).
+The **design principles** are intended to provide guidance for aspects of Experience Optimization that you should consider throughout the development lifecycle. Start with the recommended approaches and **justify the benefits for a set of requirements**. After you set your strategy, drive actions by using the [**Experience Optimization checklist**](./checklist.md).
 
 ## Design for the user
 

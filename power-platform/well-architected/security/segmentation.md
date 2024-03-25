@@ -59,9 +59,9 @@ It's important to note the distinction between perimeters and isolation. Perimet
 
 Isolation doesn't mean creating silos in the organization. A unified segmentation strategy provides alignment between the technical teams and sets clear lines of responsibility. Clarity reduces the risk of human error and automation failures that can lead to security vulnerabilities, operational downtime, or both. Suppose a security breach is detected in a component of a complex enterprise system. It's important that everyone understands who's responsible for that resource so that the appropriate person is included in the triage team. The organization and stakeholders can quickly identify how to respond to different kinds of incidents by creating and documenting a good segmentation strategy.
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Segmentation introduces complexity because there's overhead in management. 
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Segmentation introduces complexity because there's overhead in management. 
 
-:::image type="icon" source="../_images/risk.svg"::: **Risk**: Micro-segmentation beyond a reasonable limit loses the benefit of isolation. When you create too many segments, it becomes difficult to identify points of communication or to allow for valid communication paths within the segment.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: Micro-segmentation beyond a reasonable limit loses the benefit of isolation. When you create too many segments, it becomes difficult to identify points of communication or to allow for valid communication paths within the segment.
 
 ### Identity as the perimeter
 
@@ -77,9 +77,9 @@ Various identities such as people, software components, or devices access worklo
 
     By applying the least privilege, you limit the negative effects if the identity is ever compromised. If access is limited by time, the attack surface is reduced further. Time-limited access is especially applicable to critical accounts, such as administrators or software components that have a compromised identity.
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Role-based access control (RBAC) results in management overhead. Keeping track of identities and their access scopes can become complex in role assignments. Consider assigning roles to security groups instead of individual identities.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Role-based access control (RBAC) results in management overhead. Keeping track of identities and their access scopes can become complex in role assignments. Consider assigning roles to security groups instead of individual identities.
 
-:::image type="icon" source="../_images/risk.svg"::: **Risk**: Identity settings can be complex. Misconfigurations can affect the reliability of the workload. For example, suppose there's a misconfigured role assignment that's denied access to a database. The requests start failing, eventually causing reliability issues that can't otherwise be detected until runtime.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: Identity settings can be complex. Misconfigurations can affect the reliability of the workload. For example, suppose there's a misconfigured role assignment that's denied access to a database. The requests start failing, eventually causing reliability issues that can't otherwise be detected until runtime.
 
 For information about identity controls, see [Identity and access management](identity-access.md).
 
@@ -98,7 +98,7 @@ Think like an attacker to achieve a foothold within the workload and establish c
 - Define your edge perimeter between public networks and the network where your workload is placed. Restrict line of sight from public networks to your network as much as possible.
 - Create boundaries based on intent. For example, segment workload functional networks from operational networks.
 
-:::image type="icon" source="../_images/risk.svg"::: **Risk**: Network controls are rule-based and there's a significant chance of misconfiguration, which is a reliability concern.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: Network controls are rule-based and there's a significant chance of misconfiguration, which is a reliability concern.
 
 For information about network controls, see [Networking and connectivity](networking.md).
 
@@ -110,7 +110,7 @@ Document and share roles and functions to create consistency and facilitate comm
 
 Consider consistency while accommodating several organizational models when assigning permissions for a segment. These models can range from a single centralized IT group to mostly independent IT and DevOps teams.
 
-:::image type="icon" source="../_images/risk.svg"::: **Risk**: Membership of groups can change over time as employees join or leave teams or change roles. Management of roles across segments can result in management overhead.
+> :::image type="icon" source="../_images/risk.svg"::: **Risk**: Membership of groups can change over time as employees join or leave teams or change roles. Management of roles across segments can result in management overhead.
 
 ### Resource organization
 
