@@ -65,17 +65,15 @@
               href: security/segmentation.md
             - name: SE:05 Identity and access management
               href: security/identity-access.md
-            - name: SE:06 Network controls
-              href: security/networking.md
-            - name: SE:07 Encryption
+            - name: SE:06 Encryption
               href: security/encryption.md             
-            - name: SE:08 Application secrets
+            - name: SE:07 Application secrets
               href: security/application-secrets.md
-            - name: SE:09 Monitoring and threat detection
+            - name: SE:08 Monitoring and threat detection
               href: security/monitor-threats.md
-            - name: SE:10 Testing and validation
+            - name: SE:09 Testing and validation
               href: security/testing.md              
-            - name: SE:11 Incident response 
+            - name: SE:10 Incident response 
               href: security/incident-response.md
       - name: Operational Excellence
         items: 

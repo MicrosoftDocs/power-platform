@@ -32,8 +32,6 @@ Establishing a security baseline for Microsoft Power Platform involves several s
 
 - Understanding the architecture and components of Power Platform, such as environments, connectors, Dataverse, Power Apps, and Power Automate.
 
-- Reviewing the licensing and pricing options for Power Platform and choosing the appropriate plan for each user and scenario.
-
 - Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as Data Loss Prevention policies, environment permissions, and security groups.
 
 - Leveraging Microsoft Entra ID to manage user identities, authentication, and authorization for Power Platform, and integrating with other Entra ID features such as conditional access and multifactor authentication.
@@ -185,32 +183,6 @@ The Power Platform service follows the Security Development Lifecycle (SDL). The
 ## Power Platform facilitation
 
 The Microsoft cloud security benchmark (MCSB) is a comprehensive security best-practice framework you can use as a starting point for your security baseline. Use it along with other resources that provide input to your baseline. For more information, see [Introduction to the Microsoft cloud security benchmark](/security/benchmark/azure/introduction).
-
-<!-- TODO need to verify with PG on if we can mention this feature already Use the Power Platform Security Center regulatory compliance dashboard to track those baselines and be alerted if a pattern outside of a baseline is detected.-->
-
-## Example
-
-<!-- TODO -->
-
-This logical diagram shows an example security baseline for architectural components that encompass network, infrastructure, endpoint, application, data, and identity to demonstrate how a common IT environment might be securely protected. Other recommendation guides build on this example.
-
-:::image type="content" source="images/baseline/security-baseline.svg" alt-text="Diagram that shows an example of an organization's security baseline IT environment with architecture components." lightbox="images/baseline/security-baseline.svg":::
-
-**Infrastructure**
-
-A common IT environment, with an on-premises layer with basic resources.
-
-**Azure Security services**
-
-Azure security services and features by the types of resources they protect.
-
-**Azure security monitoring services**
-
-The monitoring services available on Azure that go beyond simple monitoring services, including security information event management (SIEM) and security orchestration automated response (SOAR) solutions and Microsoft Defender for Cloud.
-
-**Threats**
-
-This layer brings a recommendation and reminder that threats may be mapped according to your organization's concerns regarding threats, regardless of the methodology or matrix-like Mitre Attack Matrix or Cyber Kill chain.
 
 ## Organizational alignment
 

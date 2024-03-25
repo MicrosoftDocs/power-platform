@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:07](checklist.md)| **Encrypt data by using modern industry-standard methods to guard confidentiality and integrity. Align encryption scope with data classifications; prioritize native platform encryption methods.** |
+|[SE:06](checklist.md)| **Encrypt data by using modern industry-standard methods to guard confidentiality and integrity. Align encryption scope with data classifications; prioritize native platform encryption methods.** |
 |---|---|
 
 If your data isn't protected, it can be maliciously modified, which leads to loss of integrity and confidentiality.

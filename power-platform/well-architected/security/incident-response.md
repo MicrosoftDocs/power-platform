@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:11](checklist.md)|Define and test effective incident response procedures that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
+|[SE:10](checklist.md)|Define and test effective incident response procedures that cover a spectrum of incidents, from localized issues to disaster recovery. Clearly define which team or individual runs a procedure.|
 |---|---|
 
 This guide describes the recommendations for implementing a security incident response for a workload. If there's a security compromise to a system, a systematic incident response approach helps to reduce the time that it takes to identify, manage, and mitigate security incidents. These incidents can threaten the confidentiality, integrity, and availability of software systems and data.
@@ -100,6 +100,24 @@ Generate incident reports for internal use and, if necessary, for regulatory com
 ### Microsoft Sentinel
 
 Microsoft Sentinel solution for Microsoft Power Platform allows customers to detect various suspicious activities such as Microsoft Power Apps execution from unauthorized geographies, suspicious data destruction by Power Apps, mass deletion of Power Apps, phishing attacks made possible through Power Apps, Power Automate flows activity by departing employees, Microsoft Power Platform connectors added to the an environment, and the update or removal of Microsoft Power Platform data loss prevention policies. For more information, see [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
+
+### Microsoft Purview Activity Logging
+
+Power Apps, Power Automate, Connectors, Data Loss Prevention, and Power Platform administrative activity logging are tracked and viewed from the Microsoft Purview compliance portal.
+
+For more information, see:
+
+- [Power Apps activity logging](/power-platform/admin/logging-powerapps)
+- [Power Automate activity logging](/power-platform/admin/logging-power-automate)
+- [Power Pages activity logging](/power-platform/admin/logging-power-pages)
+- [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
+- [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)
+- [Power Platform administrative actions activity logging](/power-platform/admin/admin-activity-logging)
+- [Microsoft Dataverse and model-driven apps activity logging](/power-platform/admin/enable-use-comprehensive-auditing)
+
+### Customer Lockbox 
+
+Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, Microsoft provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. Learn more: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox).
 
 ### Security updates
 

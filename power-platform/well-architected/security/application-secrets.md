@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:08](checklist.md)| **Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.** |
+|[SE:07](checklist.md)| **Protect application secrets by hardening their storage and restricting access and manipulation and by auditing those actions. Run a reliable and regular rotation process that can improvise rotations for emergencies.** |
 |---|---|
 
 This guide describes the recommendations for securing sensitive information in workloads. Proper management of secrets is crucial for maintaining the security and integrity of your application, workload, and associated data. Improper handling of secrets can lead to data breaches, service disruption, regulatory violations, and other issues.
