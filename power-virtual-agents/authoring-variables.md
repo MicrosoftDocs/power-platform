@@ -188,8 +188,8 @@ To use system variables in a Power Fx formula, you must add `System.` before the
 | LastActivity.Id                | string | visible | The ID of the previously sent [activity][]                  |
 | LastMessage.Id                 | string | visible | The ID of the previous message sent by the user             |
 | LastMessage.Text               | string | visible | The previous message sent by the user                       |
-| Recognizer.TriggerMessage.Id   | string | visible | The ID of the user message that triggered the current topic |
-| Recognizer.TriggerMessage.Text | string | visible | The user message that triggered the current topic           |
+| Recognizer.TriggeringMessage.Id   | string | visible | The ID of the user message that triggered the current topic |
+| Recognizer.TriggeringMessage.Text | string | visible | The user message that triggered the current topic           |
 | User.DisplayName               | string | visible | The display name of the signed-in user                      |
 
 [activity]: /azure/bot-service/bot-activity-handler-concept
