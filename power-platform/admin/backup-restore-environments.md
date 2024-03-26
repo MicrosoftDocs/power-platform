@@ -16,70 +16,66 @@ contributors:
 ---
 # Back up and restore environments
 
-It's important that you protect your data on Microsoft Power Platform and Dataverse, and provide continuous availability of service. If you use Microsoft Power Platform to create production environments that have a database, you can benefit from the system backups that are automatically performed for those environments. 
+It's important that you protect your data on Microsoft Power Platform and Dataverse, and provide continuous availability of service. If you use Power Platform to create production environments that have a database, you can benefit from the system backups that are automatically performed for those environments. 
 
-## System Backups
+## System backups
 
-Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are retained for seven days, but there is an option to extend the retention period beyond seven days for managed production environments without Dynamics 365 applications.
+Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are retained for seven days, but there is an option to extend the retention period beyond seven days for managed, production environments without Dynamics 365 applications.
 
 ### Supported backup duration 
 
-| Environment Types       | Supported Duration |
-|-------------------------|--------------------|
-| D365 Production         | 28                 |
-| Non - D365 Production\* | 7                  |
-| Sandbox                 | 7                  |
-| Developer               | 7                  |
-| Teams                   | 7                  |
-| Default                 | 7                  |
+| Environment Types                          | Supported Duration |
+|--------------------------------------------|--------------------|
+| Production with Dynamics 365 apps          | 28                 |
+| Production without Dynamics 365 apps or non-production\*      | 7                  |
+| Sandbox                                    | 7                  |
+| Developer                                  | 7                  |
+| Teams                                      | 7                  |
+| Default                                    | 7                  |
 
-Note\* We allow extending backup for only Non-D365 production type managed environments only up to 28 days via PowerShell. <u>Please see more Changing backup retention.</u>
+\* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days via PowerShell. For more information, see [Changing backup retention](#change-the-backup-retention-period).
 
-![System backups ](media/image1.png)
+### About system backups
 
-### About system backups:
-
--   System backups are not counted toward capacity. Restoring an environment requires **1 GB capacity** available. You might be over, please [review](https://learn.microsoft.com/power-platform/admin/backup-restore-environments#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
-
--   
+-   System backups aren't counted toward capacity. Restoring an environment requires **1 GB capacity** available. You might be over, please [review](https://learn.microsoft.com/power-platform/admin/backup-restore-environments#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
 
 -   Depending on the size of data, copy and restore operations may take more than 24 hours, especially if you need to copy audit data.
 
 -   All your environments, except Trial environments (standard and subscription-based), are backed up.
 
--   System backups occur continuously. The underlying technology used is Azure SQL Database. See SQL Database documentation [<u>Automated backups</u>](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) for details.
+-   System backups occur continuously. The underlying technology used is Azure SQL Database. Learn more: [Automated backups in Azure SQL Database](/azure/sql-database/sql-database-automated-backups)
 
 -   You must restore an environment to the same region in which it was backed up. Target and source environment should be in the same region.
 
--   When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
+-   When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time (t1), full audit data for the environment are available, including any audit logs that were generated after t1.
 
--   Supported source environment can be production, sandbox or developer and other types not supported.
+-   Supported source environment can be production, sandbox, or developer and other types not supported.
 
--   Target environment can be sandbox or developer. If the target is developer type environment, then source needs to be developer.
+-   Target environment can be sandbox or developer. If the target is a developer type environment, then source needs to be developer.
 
--   A **Managed Environment** can only be restored to another Managed Environment. Learn more [here](https://learn.microsoft.com/power-platform/admin/managed-environment-overview).
+-   A Managed Environment can only be restored to another Managed Environment. Learn more: [Managed Environments overview](managed-environment-overview.md).
 
--   Source env has CMK applied then target environment must have CMK applied. [Learn](https://learn.microsoft.com/power-platform/admin/customer-managed-key) more about CMK.
+-   If a source environment has customer-managed encryption key applied, then target environment must have customer-managed encryption key applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
 
--   Backup and Restore operations only work with source and target environments must have Dataverse. [Learn](https://learn.microsoft.com/power-platform/admin/create-database) how to Add Dataverse.
-
+-   Backup and restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
+  
 -   Only Power Apps and Power Automate flows in a Dataverse solution participate in backup and restore operations.
 
-### Changing the Backup Retention Period
+### Change the backup retention period
 
-In environments without Dynamics 365 applications, the default backup retention is seven days. Admins managing such production type [<u>managed environments</u>](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview) can extend this period to 7, 14, 21, or 28 days using PowerShell. To modify these settings, one must hold an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, within Microsoft Entra ID.
+In environments without Dynamics 365 applications, the default backup retention is 7 days. For [Managed Environments](managed-environment-overview.md), admins can extend this period to 7, 14, 21, or 28 days using PowerShell. To modify these settings, one must have an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, within Microsoft Entra ID.
 
-Notes:
+Keep the folliwng points in mind:
 
--   If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
+- If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
 
--   For all other non-production environments, the default, backup retention period is seven days including default type environment.
+- For all other non-production environments, the default, backup retention period is 7 days including default type environment.
 
-For example, you create an environment on January 1. On that day, the system starts to make backups of your environment and stores them for a default period of seven days. Therefore, on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you can have more flexibility and control over your backup data.
+  For example, suppose you create an environment on January 1. On that day, the system starts to make backups of your environment and stores them for a default period of 7 days. Therefore, on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you can have more flexibility and control over your backup data.
 
 #### Prepare your environment for PowerShell
 
-This section uses the PowerShell for Power Platform Administrators module, which is the recommended PowerShell module for interacting with admin capabilities. For information that will help you get started with the PowerShell for Power Platform Administrators module, go to [<u>Get started with PowerShell for Power Platform Administrators</u>](https://learn.microsoft.com/en-us/power-platform/admin/powershell-getting-started).
+The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that will help you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ** Note**
 
