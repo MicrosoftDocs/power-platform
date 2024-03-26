@@ -131,7 +131,7 @@ Automated system backups are great, but you should make your own backups before 
 
 2.  Go to **Environments** > [select an environment\] > **Backups** > **Create**.
 
-    ![Select Create ](media/image3.png)
+     :::image type="content" source="media/create-backup.png" alt-text="Select Create.":::
 
 3.  Fill in the information, and then select **Create**.
 
