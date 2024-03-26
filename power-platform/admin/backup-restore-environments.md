@@ -256,7 +256,7 @@ Because Azure SQL Database takes backups continuously and there's no specific wa
 
 ### How long are my manual/on-demand backups and system backups retained?
 
-System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to 7 days only. More information: [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
+System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to seven days only. More information: [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
 
 ### How do I determine if backups of a production environment are retained for 28 days?
 
@@ -274,11 +274,11 @@ Obtaining a copy of your database backup isn't available. Moving your online dat
 
 We don't have any restriction on database size (or storage capacity/entitlement) to take a backup through UI or API. However, when an organization's storage capacity usage is greater than the entitled capacity, the following admin operations are blocked:
 
--   Restore an environment (requires minimum 1 GB capacity available)
+-   Restore an environment (requires minimum 1-GB capacity available)
 
--   Create new environment (requires minimum 1 GB capacity available)
+-   Create new environment (requires minimum 1-GB capacity available)
 
--   Copy an environment (requires minimum 1 GB capacity available)
+-   Copy an environment (requires minimum 1-GB capacity available)
 
 To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization's standard procurement process to purchase capacity add-ons.
 
@@ -298,7 +298,7 @@ The newly restored environment is placed in administration mode. To disable admi
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
-- **Flows** - In the target environment, existing solution flows are deleted but existing non-solution flows remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows are disabled, so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
+- **Flows** - In the target environment, existing solution flows are deleted but existing nonsolution flows remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows are disabled, so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
 
 - **Connection References** - Connection References require new connections. Create and set connections on Connection References.
 
