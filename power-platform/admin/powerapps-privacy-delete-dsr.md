@@ -355,7 +355,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for users Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a Power Apps user.
+> It's recommended that admins complete this step for a Power Apps user.
 
 ## Step 11: Delete the user's personal data in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
