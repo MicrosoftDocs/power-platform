@@ -313,7 +313,7 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 >  We recommend that administrators complete this step for Power Apps users.
 
 ### Step 12: Find personal data for the user in Microsoft Copilot Studio
-Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for users Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](../power-virtual-agents/personal-data-summary).
+Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for users Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user

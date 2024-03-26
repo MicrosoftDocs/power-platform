@@ -78,7 +78,7 @@ For guidance on how to discover personal data stored by the Power Automate servi
 ### Step 3: Find personal data for the user in Microsoft Copilot Studio
 Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service.
 
-For guidance on how to discover personal data stored by the Microsoft Copilot Studio service, see [Responding to Data Subject Requests for Microsoft Copilot Studio](../power-virtual-agents/personal-data-summary).
+For guidance on how to discover personal data stored by the Microsoft Copilot Studio service, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user
