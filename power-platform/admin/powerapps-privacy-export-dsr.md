@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/05/2023
+ms.date: 03/26/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -313,10 +313,10 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 >  We recommend that administrators complete this step for Power Apps users.
 
 ### Step 12: Find personal data for the user in Microsoft Copilot Studio
-Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for users Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
+Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a Power Apps user
+> It's recommended that admins complete this step for a Power Apps user.
 
 ## Step 13: Export the user's personal data in environments
 Anyone with a Power Apps license, provided there is 1GB available database capacity, can create environments and create and build apps on Dataverse; this includes the Power Apps Developer Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
