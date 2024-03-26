@@ -20,7 +20,7 @@ It's important that you protect your data on Microsoft Power Platform and Datave
 
 ## System backups
 
-Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other nonproduction environments are retained for 7 days, but there's an option to extend the retention period beyond seven days for managed, production environments without Dynamics 365 applications.
+Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other nonproduction environments are retained for seven days, but there's an option to extend the retention period beyond seven days for managed, production environments without Dynamics 365 applications.
 
 ### Supported backup duration 
 
@@ -63,7 +63,7 @@ Some backups take place without you having to do anything. Backups of production
 
 ### Change the backup retention period
 
-In environments without Dynamics 365 applications, the default backup retention is seven days. For [Managed Environments](managed-environment-overview.md), admins can extend this period to seven, 14, 21, or 28 days using PowerShell. To modify these settings, one must have an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, within Microsoft Entra ID.
+In environments without Dynamics 365 applications, the default backup retention is seven days. For [Managed Environments](managed-environment-overview.md), admins can extend this period to 7, 14, 21, or 28 days using PowerShell. To modify these settings, one must have an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, within Microsoft Entra ID.
 
 Keep the following points in mind:
 
@@ -90,7 +90,7 @@ Supply values for the following parameters:
 
 - Set the **EnvironmentName** parameter to your environment ID.
 
--  The **NewBackupRetentionPeriodInDays** parameter should be set to seven, 14, 21, or 28.
+-  The **NewBackupRetentionPeriodInDays** parameter should be set to 7, 14, 21, or 28.
 
 #### Verify the retention period
 
