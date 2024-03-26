@@ -98,13 +98,13 @@ Supply values for the following parameters:
 ```powershell
 Get-AdminPowerAppEnvironment -EnvironmentName "Environment ID"
 ```
-Set the EnvironmentName parameter to your environment ID.
+Set the **EnvironmentName** parameter to your environment ID.
 
 ## Manual backups
 
 Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update.
 
-### About manual backups:
+### About manual backups
 
 -   A backup is created for you when we update your environment.
 
@@ -112,13 +112,13 @@ Automated system backups are great, but you should make your own backups before 
 
 -   You can't back up the default environment.
 
--   Sandbox backups are retained for up to seven days.
+-   Sandbox backups are retained for up to 7 days.
 
--   Manual backups for production environments that have been created with a database and Dynamics 365 applications enabled are retained up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications enabled are retained for seven days.
+-   Manual backups for production environments that have been created with a database and Dynamics 365 applications enabled are retained up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications enabled are retained for 7 days.
 
 -   Check your expiration date.
 
-![Backup expiration date ](media/image2.png)
+  ![Backup expiration date ](media/image2.png)
 
 -   The label of the created backup reflects the restore point timestamp. The restore point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
 
