@@ -4,7 +4,7 @@ description: Learn how to identify potential points of failure within your workl
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/01/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -36,7 +36,7 @@ In the context of FMA, understanding the prerequisites is crucial. Begin by revi
 
 ### Prerequisites
 
-Review and implement the [recommendations for identifying flows](identify-flows.md). It's assumed that you have identified and prioritized user and system flows based on criticality.
+Review and implement the [recommendations for identifying and rating flows](identify-flows.md). It's assumed that you have identified and prioritized user and system flows based on criticality.
 
 The data that you have gathered and the artifacts that you have created in your work provide you with a concrete description of your data paths involved throughout the flows. To be successful in your FMA work, accuracy and thoroughness in your artifacts is critical.
 
@@ -136,7 +136,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
 - [Power Pages](/power-platform/admin/logging-power-pages)
-- [Power Platform connectors](/power-platform/admin/logging-power-pages)
+- [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)

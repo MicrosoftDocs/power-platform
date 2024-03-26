@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 03/28/2024
 ---
 
 # Security tradeoffs
@@ -21,15 +21,15 @@ During the design phase of a workload, it's important to consider how decisions 
 
 - Some security controls can increase the risk of misconfiguration, which can lead to service disruption. Examples of security controls that can introduce misconfiguration include network traffic rules, IP firewall settings, and role-based or attribute-based access control assignments.
 
-- Workload security tooling is often incorporated into many layers of a workload's architecture, operations, and runtime requirements. These tools might affect resiliency, availability, and capacity planning. Failure to account for limitations in the tooling can lead to a reliability event, like SNAT port exhaustion on an egress firewall.
+- Workload security tooling is often incorporated into many layers of a workload's architecture, operations, and runtime requirements. These tools might affect resiliency, availability, and capacity planning. Failure to account for limitations in the tooling can lead to a reliability event, like Source Network Address Translation (SNAT) port exhaustion on an egress firewall.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff:  Increased critical dependencies.** The Reliability pillar recommends minimizing critical dependencies. A workload that minimizes critical dependencies, especially external ones, has more control over its points of failure.
 
 The Security pillar requires a workload to explicitly verify identities and actions. Verification occurs via critical dependencies on key security components. If those components aren't available or if they malfunction, verification might not complete. This failure puts the workload in a degraded state. Some examples of these critical single-point-of-failure dependencies are:
 
-- Ingress and egress firewalls.
-- Certificate revocation lists.
-- Identity providers, like Microsoft Entra ID.
+- Ingress and egress firewalls
+- Certificate revocation lists
+- Identity providers, like Microsoft Entra ID
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff:  Increased complexity of disaster recovery.** A workload must reliably recover from all forms of disaster.
 
@@ -42,7 +42,7 @@ The Security pillar requires a workload to explicitly verify identities and acti
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased rate of change.** A workload that experiences runtime change is exposed to more risk of reliability impact due to that change.
 
 - Stricter solution update policies lead to more changes in a workload's production environment. This change comes from sources like these:
-  - Application code being released more frequently because of updates to solutions
+  - Releasing application code more frequently because of updates to solutions
   - Applying Power Platform release wave updates
   - Updating configurations of Power Platform environment settings in the environment
   - Applying patches to libraries or components used in the environment

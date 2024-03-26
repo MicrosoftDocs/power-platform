@@ -4,7 +4,7 @@ description: Learn how to automate tasks in your workload that are repetitive an
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/18/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -62,13 +62,13 @@ For any tool that you use to build your automation, make it easily accessible an
 
 ## Considerations
 
-- Sometimes the efficiencies you gain from automation outweigh the management burden of developing your own solution if no off-the-shelf solutions fit your requirements. In these cases, be judicious in your development efforts. Narrowly focus on developing only what you need to cover gaps that you can't solve with off-the-shelf solutions, and minimize complexities like dependencies.
+Sometimes the efficiencies you gain from automation outweigh the management burden of developing your own solution if no off-the-shelf solutions fit your requirements. In these cases, be judicious in your development efforts. Narrowly focus on developing only what you need to cover gaps that you can't solve with off-the-shelf solutions, and minimize complexities like dependencies.
 
-- Complex automation that requires a high degree of maintenance can be difficult for operations teams to manage and troubleshoot. Keep automated tasks tightly focused on only performing discrete jobs. Try to minimize dependencies on other tools or components.
+Complex automation that requires a high degree of maintenance can be difficult for operations teams to manage and troubleshoot. Keep automated tasks tightly focused on only performing discrete jobs. Try to minimize dependencies on other tools or components.
 
-- Be thoughtful about using manual processes. If you decide not to automate an operation, thoroughly document the manual process by creating a step-by-step checklist for operators. This practice reduces the chances of human error, like an operator mistakenly running the wrong process. This documentation also helps you design automation for that process in the future.
+Be thoughtful about using manual processes. If you decide not to automate an operation, thoroughly document the manual process by creating a step-by-step checklist for operators. This practice reduces the chances of human error, like an operator mistakenly running the wrong process. This documentation also helps you design automation for that process in the future.
 
-- When you use a hybrid manual and automated approach, you need to be especially careful. If a script runs most of a process but then defers to a human for a specific part or decision, it's important that you give the person the necessary context and information to make an informed decision.
+When you use a hybrid manual and automated approach, you need to be especially careful. If a script runs most of a process but then defers to a human for a specific part or decision, it's important that you give the person the necessary context and information to make an informed decision.
 
 ## Power Platform facilitation
 
@@ -96,4 +96,3 @@ Power Automate Approvals (out of the box) or the Approvals Kit (custom solution)
 <!--
 Need link for Approvals Kit, best to include it in the Power Platform facilitation section
 -->
-

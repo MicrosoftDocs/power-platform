@@ -4,7 +4,7 @@ description: Learn about the recommendations for building a unified segmentation
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -81,7 +81,7 @@ Various identities such as people, software components, or devices access worklo
 
 > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Identity settings can be complex. Misconfigurations can affect the reliability of the workload. For example, suppose there's a misconfigured role assignment that's denied access to a database. The requests start failing, eventually causing reliability issues that can't otherwise be detected until runtime.
 
-For information about identity controls, see [Identity and access management](identity-access.md).
+For information about identity controls, see [Recommendations for identity and access management](identity-access.md).
 
 In contrast to network access controls, identity validates access control at access time. It's highly recommended to conduct regular access review and require an approval workflow to obtain privileges for critical impact accounts.
 
@@ -128,6 +128,6 @@ Microsoft Dataverse uses role-based security to group together a collection of p
 
 With Azure Virtual Network support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses Azure subnet delegation to manage outbound traffic from Power Platform at runtime. Using a delegate avoids the need for protected resources to travel over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls. For more information, see [Virtual Network support for Power Platform overview](/power-platform/admin/vnet-support-overview).
 
-[IP firewall](/power-platform/admin/ip-firewall) for Power Platform environments  helps to protect your data by limiting user access to Dataverse from only allowed IP locations.
+[IP firewall](/power-platform/admin/ip-firewall) for Power Platform environments helps to protect your data by limiting user access to Dataverse from only allowed IP locations.
 
-[Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services, for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.
+[Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services; for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.

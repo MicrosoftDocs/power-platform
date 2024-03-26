@@ -4,7 +4,7 @@ description: Learn how to design a proactive, standardized strategy for handling
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -73,6 +73,8 @@ Deciding on an appropriate mitigation strategy for a given deployment issue invo
 
 ### Mitigation
 
+The following are some common mitigation strategies:
+
 - **Rollback**: In a rollback scenario, you revert updated systems to the last-known-good configuration state.
 
     It's important for the entire workload team to agree about the meaning of _last known good_. This expression refers to the last state of the workload that was healthy before the deployment began, which isn't necessarily the prior application version.
@@ -123,7 +125,7 @@ Use automated rollback functionality judiciously:
 
 Use platform-provided capabilities during rollbacks. For example, backups and point-in-time restores can help with storage and data rollbacks. Or if you use virtual machines (VMs) to host your application, it can be helpful to restore your environment to a checkpoint that's immediately before an incident.
 
-Test your entire deployment failure mitigation strategy frequently. Like emergency response plans and disaster recovery plans, your deployment failure plan is only successful if your team is trained on it and practices it regularly. Chaos engineering and [fault injection testing](/azure/well-architected/reliability/testing-strategy) can be effective techniques for testing your deployment mitigation strategy.
+Test your entire deployment failure mitigation strategy frequently. Like emergency response plans and disaster recovery plans, your deployment failure plan is only successful if your team is trained on it and practices it regularly. [Chaos engineering and fault injection testing](../reliability/testing-strategy.md#fault-injection-and-chaos-engineering-guidance) can be effective techniques for testing your deployment mitigation strategy.
 
 ## Power Platform facilitation
 

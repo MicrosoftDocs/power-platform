@@ -4,7 +4,7 @@ description: Learn how to design a workload development supply chain based on CI
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -73,7 +73,7 @@ You can use Terraform, Bicep, and Azure Resource Manager for immutable infrastru
 
 Cloud Adoption Framework provides guidance for central teams to provide workload landing zones. The workload landing zones are where the workload's custom supply chain will deploy applications into.
 
-For more information, see [Landing zones](/azure/cloud-adoption-framework/ready/landing-zone) and the [Azure landing zone design principles](/azure/cloud-adoption-framework/ready/landing-zone/design-principles).
+For more information, see [What is an Azure landing zone?](/azure/cloud-adoption-framework/ready/landing-zone) and the [Azure landing zone design principles](/azure/cloud-adoption-framework/ready/landing-zone/design-principles).
 
 ## See also
 
