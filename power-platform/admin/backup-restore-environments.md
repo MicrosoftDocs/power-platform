@@ -226,7 +226,7 @@ Continue with steps 6 and 7 in [Restore a manual backup](#restore-a-manual-back
 
 For information about backup and restore of certain apps, see the respective app's documentation:
 
--   [Dynamics 365 Marketing](s/dynamics365/marketing/manage-marketing-environments#create-and-restore-backups)
+-   [Dynamics 365 Marketing](/dynamics365/marketing/manage-marketing-environments#create-and-restore-backups)
 -   [Dynamics 365 Finance<](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)
 -   [Dynamics 365 Customer service](/dynamics365/customer-service/export-import-omnichannel-data)
 -   [Azure Synapse Link for Dataverse](/power-apps/maker/data-platform/azure-synapse-link-olc#backup-and-restore-an-environment)
