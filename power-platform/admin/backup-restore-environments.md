@@ -117,8 +117,6 @@ Automated system backups are great, but you should make your own backups before 
 
 -   Check your expiration date.
 
-    ![Backup expiration date ](media/image2.png)
-
 -   The label of the created backup reflects the restore point timestamp. The restore point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
 
 -   You aren't limited in the number of manual backups you can make.
