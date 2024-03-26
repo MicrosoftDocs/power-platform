@@ -77,9 +77,8 @@ Keep the folliwng points in mind:
 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that will help you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
-** Note**
-
-You can extend the backup duration only for production environments that don't have Dynamics 365 applications enabled. For production environments that do have Dynamics 365 applications, 28 days is used. For all other non-production environments, the default, backup retention period of seven days is used, regardless of this setting's value.
+> [!Note]
+> You can extend the backup duration only for production environments that don't have Dynamics 365 applications enabled. For production environments that do have Dynamics 365 applications, 28 days is used. For all other non-production environments, the default, backup retention period of 7 days is used, regardless of this setting's value.
 
 #### Set the retention period
 
@@ -174,8 +173,8 @@ You can delete manual backups. You can't delete system backups.
 
     ![Enter backup details ](media/image6.png)
 
-> [!Note]
-> Only sandbox environments can be restored to. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
+    > [!Note]
+    > Only sandbox environments can be restored to. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
 
     Under **Edit details**, you can change the environment name.
 
@@ -293,11 +292,11 @@ If you want to restore a system backup or restore point from the past seven days
 
 If you do switch a production environment to a sandbox environment for a manual restore, you can only choose a backup from the past seven days. Make sure that after the restore is completed, you change the environment back to a production environment **as soon as possible** to prevent the loss of any backups older than seven days.
 
-**Why is my organization in administration mode after a restore and how do I disable it?**
+### Why is my organization in administration mode after a restore and how do I disable it?
 
 The newly restored environment is placed in administration mode. To disable administration mode, see [<u>Set administration mode</u>](https://learn.microsoft.com/en-us/power-platform/admin/admin-mode#set-administration-mode). You can set administration mode in sandbox or production environments.
 
-**What steps are needed after a restore to ensure flows are working as expected?**
+### What steps are needed after a restore to ensure flows are working as expected?
 
 - **Flows** - In the target environment, existing solution flows are deleted but existing non-solution flows remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows are disabled, so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
 
@@ -305,19 +304,19 @@ The newly restored environment is placed in administration mode. To disable admi
 
 - **Custom Connectors** - Custom connectors should be reviewed and, if needed, deleted and reinstalled.
 
-**Are apps shared with Everyone still shared with Everyone in a restored environment?**
+### Are apps shared with Everyone still shared with Everyone in a restored environment?
 
 No. Apps shared with Everyone in an environment that's backed up aren't shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment is shared with that security group.
 
-**Are app identifiers the same after backup and restore operations?**
+### Are app identifiers the same after backup and restore operations?
 
 No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up.
 
-**If I restore my environment, will previous backups remain available?**
+### If I restore my environment, will previous backups remain available?
 
 Yes, all backups within the organization's retention period will remain available.
 
-**How can I restore records after a bulk deletion without restoring over an organization?**
+### How can I restore records after a bulk deletion without restoring over an organization?
 
 In order to restore records after a bulk deletion, without restoring over an organization, there are two steps that have to be followed:
 
@@ -327,11 +326,11 @@ In order to restore records after a bulk deletion, without restoring over an org
 
 This will keep the original organization with all of the records that have been added since the backup, while also creating a new organization with the records that were deleted.
 
-**How can I restore deleted environment?**
+### How can I restore deleted environment?
 
-**Troubleshooting**
+## Troubleshooting
 
-**Don't see your environment to restore to?**
+### Don't see your environment to restore to?
 
 -   Supported source environment can be production, sandbox or developer and other types not supported.
 
@@ -339,15 +338,15 @@ This will keep the original organization with all of the records that have been 
 
 -   Target and source environment should be in the same region.
 
--   A **Managed Environment** can only be restored to another Managed Environment. Learn more [here](https://learn.microsoft.com/power-platform/admin/managed-environment-overview).
+-   A **Managed Environment** can only be restored to another Managed Environment. Learn more: [Managed Environments overview](managed-environment-overview.md)
 
--   Source env has CMK applied then target environment must have CMK applied. [Learn](https://learn.microsoft.com/power-platform/admin/customer-managed-key) more about CMK.
+-   Source env has CMK applied then target environment must have CMK applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
 
--   Restoring an environment requires **1 GB capacity** available. You might be over, please [review](https://learn.microsoft.com/power-platform/admin/backup-restore-environments#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
+-   Restoring an environment requires **1 GB capacity** available. You might be over, please see [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
 
--   Backup and Restore operations only work with source and target environments must have Dataverse. [Learn](https://learn.microsoft.com/power-platform/admin/create-database) how to Add Dataverse.
+-   Backup and Restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
 
--   If you do not have sufficient storage, [Learn](https://learn.microsoft.com/power-platform/admin/add-storage) how to request more storage here.
+-   If you do not have sufficient storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) how to request more storage here.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
