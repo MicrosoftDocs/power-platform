@@ -69,7 +69,7 @@ Keep the following points in mind:
 
 - If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
 
-- For all other non-production environments, the default, backup retention period is seven days including default type environment.
+- For all other nonproduction environments, the default, backup retention period is seven days including default type environment.
 
     For example, suppose you create an environment on January 1. On that day, the system starts to make backups of your environment and stores them for a default period of seven days. Therefore, on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you can have more flexibility and control over your backup data.
 
@@ -78,7 +78,7 @@ Keep the following points in mind:
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 > [!Note]
-> You can extend the backup duration only for production environments that don't have Dynamics 365 applications enabled. For production environments that do have Dynamics 365 applications, 28 days is used. For all other non-production environments, the default, backup retention period of seven days is used, regardless of this setting's value.
+> You can extend the backup duration only for production environments that don't have Dynamics 365 applications enabled. For production environments that do have Dynamics 365 applications, 28 days is used. For all other nonproduction environments, the default, backup retention period of seven days is used, regardless of this setting's value.
 
 #### Set the retention period
 
