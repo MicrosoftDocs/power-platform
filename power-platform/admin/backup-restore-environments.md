@@ -33,11 +33,11 @@ Some backups take place without you having to do anything. Backups of production
 | Teams                                      | 7                  |
 | Default                                    | 7                  |
 
-\* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days via PowerShell. For more information, see [Changing backup retention](#change-the-backup-retention-period).
+\* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days via PowerShell. For more information, see [Change the backup retention period](#change-the-backup-retention-period).
 
 ### About system backups
 
--   System backups aren't counted toward capacity. Restoring an environment requires **1 GB capacity** available. You might be over, please [review](https://learn.microsoft.com/power-platform/admin/backup-restore-environments#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
+-   System backups aren't counted toward capacity. Restoring an environment requires **1 GB capacity** available. You might be over, see [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api)
 
 -   Depending on the size of data, copy and restore operations may take more than 24 hours, especially if you need to copy audit data.
 
@@ -117,7 +117,7 @@ Automated system backups are great, but you should make your own backups before 
 
 -   Check your expiration date.
 
-  ![Backup expiration date ](media/image2.png)
+    ![Backup expiration date ](media/image2.png)
 
 -   The label of the created backup reflects the restore point timestamp. The restore point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
 
@@ -145,7 +145,7 @@ You can delete manual backups. You can't delete system backups.
 
 1.  Browse to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
 
-2.  Go to **Environments** > [select an environment\]> **Backups** > **Restore or manage**.
+2.  Go to **Environments** > [select an environment\] > **Backups** > **Restore or manage**.
 
 3.  Select the **Manual** tab.
 
@@ -195,7 +195,7 @@ You can only restore to sandbox environments. To restore to a production environ
 
 4.  Select a manual backup to restore, and then select **Restore**.
 
-5.  Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and by default isn't done. For more information, see [Restoring audit logs](#restoring-audit-logs).
+5.  Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and by default isn't done. For more information, see [Restore audit logs](#restore-audit-logs).
 
 6.  Select an environment to restore to (overwrite), and then select **Restore**.
 
@@ -236,11 +236,11 @@ For information about backup and restore of certain apps, see the respective app
 
 ### How are system backups taken?
 
-In the current version of the product, system backups occur continuously. The underlying technology used is Azure SQL Database. For more information, see [<u>Automated backups</u>](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) for details.
+In the current version of the product, system backups occur continuously. The underlying technology used is Azure SQL Database. For more information, see [Automated backups]/azure/sql-database/sql-database-automated-backups) for details.
 
 ### How are manual/on-demand backups taken?
 
-In the current version of the product, system backups occur continuously. The underlying technology used is Azure SQL Database. For more information, see [<u>Automated backups</u>](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) for details.
+In the current version of the product, system backups occur continuously. The underlying technology used is Azure SQL Database. For more information, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 Because Azure SQL Database takes backups continuously, there's no need to take other backups. Your on-demand backup is just a timestamp and a label that reflects the timestamp that we store in our system and use during restore requests. This behavior is different from previous versions that took a full backup during an on-demand backup.
 
@@ -250,13 +250,13 @@ There's no status as the backup is processing. When the backup is completed, the
 
 ### Should I open a support ticket for taking a full backup?
 
-No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [<u>Automated backups</u>](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups) for details.
+No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 Because Azure SQL Database takes backups continuously and there's no specific way to take additional on-demand backups, we recommend that you use the Power Platform admin center on-demand backup capabilities for labeled backups.
 
 ### How long are my manual/on-demand backups and system backups retained?
 
-System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to seven days only. More information: [<u>How do I determine if backups of a production environment are retained for 28 days?</u>](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
+System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to seven days only. More information: [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
 
 ### How do I determine if backups of a production environment are retained for 28 days?
 
@@ -264,11 +264,11 @@ Production environments that have been created with a database give you the opti
 
 ### Can I move my data from an online environment to an on-premises version?
 
-Obtaining a copy of your database backup isn't available. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), this requires data migration. For smaller data sets, consider [<u>exporting data to Excel</u>](https://learn.microsoft.com/en-us/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [<u>Microsoft AppSource</u>](https://appsource.microsoft.com/).
+Obtaining a copy of your database backup isn't available. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), this requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).
 
 ### How can I download a copy of my backup?
 
-Obtaining a copy of your database backup isn't available. Moving your online data requires data migration. For smaller data sets, consider [<u>exporting data to Excel</u>](https://learn.microsoft.com/en-us/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [<u>Microsoft AppSource</u>](https://appsource.microsoft.com/).
+Obtaining a copy of your database backup isn't available. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).
 
 ### Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?
 
@@ -280,13 +280,13 @@ We don't have any restriction on database size (or storage capacity/entitlement)
 
 -   Copy an environment (requires minimum 1 GB capacity available)
 
-To be compliant with storage usage requirements, customers can always [<u>free up storage</u>](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space), [<u>archive data</u>](https://learn.microsoft.com/en-us/power-platform/admin/recover-database-space-deleting-audit-logs), [<u>delete unwanted environments</u>](https://learn.microsoft.com/en-us/power-platform/admin/delete-environment), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization's standard procurement process to purchase capacity add-ons.
+To be compliant with storage usage requirements, customers can always [free up storage](free-storage-space.md), [archive data](recover-database-space-deleting-audit-logs.md), [delete unwanted environments](delete-environment.md), or buy more capacity. To learn more about capacity add-ons, see the Add-ons section in the Dynamics 365 Licensing Guide or the Power Apps and Power Automate Licensing Guide. You can work through your organization's standard procurement process to purchase capacity add-ons.
 
 ### Can I restore to a production environment?
 
 In order to prevent accidental overwrites, you can't directly restore to a production environment.
 
-To restore to a production environment, you must first switch it to a sandbox environment. See [<u>Switch an environment</u>](https://learn.microsoft.com/en-us/power-platform/admin/switch-environment) for more information.
+To restore to a production environment, you must first switch it to a sandbox environment. See [Switch an environment](switch-environment.md) for more information.
 
 If you want to restore a system backup or restore point from the past seven days, then you can safely switch the type. If you think you may need to restore to a backup older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
@@ -294,7 +294,7 @@ If you do switch a production environment to a sandbox environment for a manual 
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 
-The newly restored environment is placed in administration mode. To disable administration mode, see [<u>Set administration mode</u>](https://learn.microsoft.com/en-us/power-platform/admin/admin-mode#set-administration-mode). You can set administration mode in sandbox or production environments.
+The newly restored environment is placed in administration mode. To disable administration mode, see [Set administration mode]admin-mode.md#set-administration-mode). You can set administration mode in sandbox or production environments.
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
