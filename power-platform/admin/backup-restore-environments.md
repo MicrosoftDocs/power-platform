@@ -27,7 +27,7 @@ Some backups take place without you having to do anything. Backups of production
 | Environment Types                          | Supported Duration |
 |--------------------------------------------|--------------------|
 | Production with Dynamics 365 apps          | 28                 |
-| Production without Dynamics 365 apps or non-production\*      | 7                  |
+| Production without Dynamics 365 apps or nonproduction\*      | 7                  |
 | Sandbox                                    | 7                  |
 | Developer                                  | 7                  |
 | Teams                                      | 7                  |
@@ -55,7 +55,7 @@ Some backups take place without you having to do anything. Backups of production
 
 -   A Managed Environment can only be restored to another Managed Environment. Learn more: [Managed Environments overview](managed-environment-overview.md).
 
--   If a source environment has customer-managed encryption key applied, then target environment must have customer-managed encryption key applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
+-   If a source environment has a customer-managed encryption key applied, then target environment must have a customer-managed encryption key applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
 
 -   Backup and restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
   
@@ -75,7 +75,7 @@ Keep the folliwng points in mind:
 
 #### Prepare your environment for PowerShell
 
-The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that will help you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
+The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 > [!Note]
 > You can extend the backup duration only for production environments that don't have Dynamics 365 applications enabled. For production environments that do have Dynamics 365 applications, 28 days is used. For all other non-production environments, the default, backup retention period of 7 days is used, regardless of this setting's value.
@@ -252,7 +252,7 @@ There's no status as the backup is processing. When the backup is completed, the
 
 No. In the current version of the product, system backups occur continuously; this is different from previous versions where backups were once a day. Because the underlying technology used is Azure SQL Database, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
-Because Azure SQL Database takes backups continuously and there's no specific way to take additional on-demand backups, we recommend that you use the Power Platform admin center on-demand backup capabilities for labeled backups.
+Because Azure SQL Database takes backups continuously and there's no specific way to take other on-demand backups, we recommend that you use the Power Platform admin center on-demand backup capabilities for labeled backups.
 
 ### How long are my manual/on-demand backups and system backups retained?
 
@@ -342,7 +342,7 @@ This will keep the original organization with all of the records that have been 
 
 -   Source env has CMK applied then target environment must have CMK applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
 
--   Restoring an environment requires **1 GB capacity** available. You might be over, please see [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
+-   Restoring an environment requires **1 GB capacity** available. See [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
 
 -   Backup and Restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
 
