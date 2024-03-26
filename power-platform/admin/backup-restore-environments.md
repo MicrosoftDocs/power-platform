@@ -16,8 +16,6 @@ contributors:
 ---
 # Back up and restore environments
 
-## Introduction
-
 It's important that you protect your data on Microsoft Power Platform and Dataverse, and provide continuous availability of service. If you use Microsoft Power Platform to create production environments that have a database, you can benefit from the system backups that are automatically performed for those environments. 
 
 ## System Backups
