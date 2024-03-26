@@ -71,7 +71,7 @@ Keep the folliwng points in mind:
 
 - For all other non-production environments, the default, backup retention period is 7 days including default type environment.
 
-  For example, suppose you create an environment on January 1. On that day, the system starts to make backups of your environment and stores them for a default period of 7 days. Therefore, on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you can have more flexibility and control over your backup data.
+    For example, suppose you create an environment on January 1. On that day, the system starts to make backups of your environment and stores them for a default period of 7 days. Therefore, on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you can have more flexibility and control over your backup data.
 
 #### Prepare your environment for PowerShell
 
@@ -83,25 +83,24 @@ This setting applies to production environments that don't have Dynamics 365 app
 
 #### Set the retention period
 
-PowerShellCopy
-
+```powershell
 Set-AdminPowerAppEnvironmentBackupRetentionPeriod
+```
 
 Supply values for the following parameters:
 
--   Set the EnvironmentName parameter to your environment ID.
+- Set the **EnvironmentName** parameter to your environment ID.
 
--   The NewBackupRetentionPeriodInDays parameter should be set to *7*, *14*, *21*, or *28*.
+-  The **NewBackupRetentionPeriodInDays** parameter should be set to 7, 14, 21, or 28.
 
 #### Verify the retention period
 
-PowerShellCopy
-
+```powershell
 Get-AdminPowerAppEnvironment -EnvironmentName "Environment ID"
-
+```
 Set the EnvironmentName parameter to your environment ID.
 
-## Manual Backups
+## Manual backups
 
 Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update.
 
