@@ -20,7 +20,7 @@ It's important that you protect your data on Microsoft Power Platform and Datave
 
 ## System backups
 
-Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are retained for 7 days, but there is an option to extend the retention period beyond 7 days for managed, production environments without Dynamics 365 applications.
+Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are retained for 7 days, but there's an option to extend the retention period beyond 7 days for managed, production environments without Dynamics 365 applications.
 
 ### Supported backup duration 
 
@@ -65,7 +65,7 @@ Some backups take place without you having to do anything. Backups of production
 
 In environments without Dynamics 365 applications, the default backup retention is 7 days. For [Managed Environments](managed-environment-overview.md), admins can extend this period to 7, 14, 21, or 28 days using PowerShell. To modify these settings, one must have an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, within Microsoft Entra ID.
 
-Keep the folliwng points in mind:
+Keep the following points in mind:
 
 - If you change the backup retention period, the new setting applies to all existing and future backups. Because the change might take up to 24 hours to go into effect on the existing backups, some backups might be deleted sooner than expected.
 
@@ -224,7 +224,7 @@ Continue with steps 6 and 7 in [Restore a manual backup](#restore-a-manual-back
 
 ## Apps-specific backs ups
 
-For information about backup and restore of certain apps, see the respective app's documentation:
+For information about back up and restore of certain apps, see the respective app's documentation:
 
 -   [Dynamics 365 Marketing](/dynamics365/marketing/manage-marketing-environments#create-and-restore-backups)
 -   [Dynamics 365 Finance<](/dynamics365/fin-ops-core/dev-itpro/database/dbmovement-operations)
@@ -260,7 +260,7 @@ System and manual backups for certain production-type environments are retained 
 
 ### How do I determine if backups of a production environment are retained for 28 days?
 
-Production environments that have been created with a database give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled are retained for 7 days, but there is an option to extend the retention period beyond 7 days for managed environments.
+Production environments that have been created with a database give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled are retained for 7 days, but there's an option to extend the retention period beyond 7 days for managed environments.
 
 ### Can I move my data from an online environment to an on-premises version?
 
@@ -308,7 +308,7 @@ The newly restored environment is placed in administration mode. To disable admi
 
 No. Apps shared with Everyone in an environment that's backed up aren't shared with Everyone in the restored environment. Alternatively, a canvas app can be shared with a security group and the app in the restored environment is shared with that security group.
 
-### Are app identifiers the same after backup and restore operations?
+### Are app identifiers the same after back up and restore operations?
 
 No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up.
 
@@ -344,9 +344,9 @@ This will keep the original organization with all of the records that have been 
 
 -   Restoring an environment requires **1 GB capacity** available. See [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
 
--   Backup and Restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
+-   Back up and restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
 
--   If you do not have sufficient storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) how to request more storage here.
+-   If you don't have sufficient storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) how to request more storage here.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
