@@ -20,7 +20,7 @@ It's important that you protect your data on Microsoft Power Platform and Datave
 
 ## System backups
 
-Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are retained for seven days, but there is an option to extend the retention period beyond seven days for managed, production environments without Dynamics 365 applications.
+Some backups take place without you having to do anything. Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are retained for 7 days, but there is an option to extend the retention period beyond 7 days for managed, production environments without Dynamics 365 applications.
 
 ### Supported backup duration 
 
@@ -33,7 +33,7 @@ Some backups take place without you having to do anything. Backups of production
 | Teams                                      | 7                  |
 | Default                                    | 7                  |
 
-\* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days via PowerShell. For more information, see [Change the backup retention period](#change-the-backup-retention-period).
+\* We allow extending the retention period beyond 7 days for managed, production environments without Dynamics 365 applications up to 28 days via PowerShell. For more information, see [Change the backup retention period](#change-the-backup-retention-period).
 
 ### About system backups
 
@@ -256,11 +256,11 @@ Because Azure SQL Database takes backups continuously and there's no specific wa
 
 ### How long are my manual/on-demand backups and system backups retained?
 
-System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to seven days only. More information: [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
+System and manual backups for certain production-type environments are retained up to 28 days. Other environment type backups are retained up to 7 days only. More information: [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days)
 
 ### How do I determine if backups of a production environment are retained for 28 days?
 
-Production environments that have been created with a database give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled are retained for seven days, but there is an option to extend the retention period beyond seven days for managed environments.
+Production environments that have been created with a database give you the option to enable one or more Dynamics 365 applications if you have purchased licenses that entitle you to deploy such applications (for example, Dynamics 365 Sales, Dynamics 365 Customer Service). Backups of production environments with a database and Dynamics 365 applications enabled are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled are retained for 7 days, but there is an option to extend the retention period beyond 7 days for managed environments.
 
 ### Can I move my data from an online environment to an on-premises version?
 
@@ -288,9 +288,9 @@ In order to prevent accidental overwrites, you can't directly restore to a produ
 
 To restore to a production environment, you must first switch it to a sandbox environment. See [Switch an environment](switch-environment.md) for more information.
 
-If you want to restore a system backup or restore point from the past seven days, then you can safely switch the type. If you think you may need to restore to a backup older than seven days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
+If you want to restore a system backup or restore point from the past 7 days, then you can safely switch the type. If you think you may need to restore to a backup older than 7 days, we strongly recommend that you keep the environment as production and consider restoring to a different environment of type sandbox.
 
-If you do switch a production environment to a sandbox environment for a manual restore, you can only choose a backup from the past seven days. Make sure that after the restore is completed, you change the environment back to a production environment **as soon as possible** to prevent the loss of any backups older than seven days.
+If you do switch a production environment to a sandbox environment for a manual restore, you can only choose a backup from the past 7 days. Make sure that after the restore is completed, you change the environment back to a production environment **as soon as possible** to prevent the loss of any backups older than 7 days.
 
 ### Why is my organization in administration mode after a restore and how do I disable it?
 
