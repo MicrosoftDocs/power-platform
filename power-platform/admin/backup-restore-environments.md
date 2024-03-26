@@ -212,11 +212,11 @@ Restoring audit logs can significantly add to the time it takes to restore an en
 
 2.  Under **Audit logs**, select **Click here**.
 
-    ![Select click here to include audit logs ](media/image7.png)
+    :::image type="content" source="media/restore-backup-audit-logs-click-here.png" alt-text="Select click here to include audit logs.":::
+    
+4.  Enable copying audit logs.
 
-3.  Enable copying audit logs.
-
-    ![Enable copying audit logs ](media/image8.png)
+    :::image type="content" source="media/copy-environment-audit-logs-enable.png" alt-text="Enable copying audit logs.":::
 
 Continue with steps 6 and 7 in [Restore a manual backup](#restore-a-manual-backup)
 
