@@ -59,6 +59,7 @@ If you must use one of the below apps or features in an environment where block 
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
 |Dataflows      | Creation of a new dataflow, republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
 |Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
+| Omnichannel  | Install or upgrade don't work.      |
 
 ## See also
 
