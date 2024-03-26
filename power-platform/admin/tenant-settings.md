@@ -3,13 +3,15 @@ title: "Tenant settings"
 description: "Review and configure tenant-level settings linked from this page." 
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 10/11/2023
+ms.date: 03/26/2024
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
   - marcelbf
 ms.collection: 
     - bap-ai-copilot
+ms.contributors:
+- abhijp
 ---
 
 # Tenant settings
@@ -38,6 +40,7 @@ The following settings apply to all environments within your tenant.
 | Tenant capacity summary view | This setting controls who can view the tenant capacity summary page: either only tenant admins or both tenant and environment admins. |
 | Copilot feedback | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. |
 | Copilot feedback data | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. |
+| Support requests visibility | Allows all users in the tenant to see support requests created by other users in the tenant. |
 
 *This setting applies only to Managed Environments.
 
