@@ -172,7 +172,7 @@ You can delete manual backups. You can't delete system backups.
 5.  Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 
    
-    > [!Note]   > [!div class="mx-imgBorder"] 
+    > [!div class="mx-imgBorder"] 
     > ![Enter backup details.](media/restore-backup.png "Enter backup details")
     
     > [!Note]
