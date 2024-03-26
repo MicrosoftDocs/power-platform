@@ -4,7 +4,7 @@ description: Learn about data classification and how to apply it to your workloa
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -114,13 +114,13 @@ Ultimately, classification must roll up to the organization through central team
 
 Classification should influence your architectural decisions.
 
-Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [What is Microsoft Purview?](/purview/purview).
+Microsoft Purview provides visibility into data assets throughout your organization. For more information, see [Learn about Microsoft Purview](/purview/purview).
 
 Microsoft Purview Data Map enables automated data discovery and sensitive data classification. The integration between Microsoft Purview and Microsoft Dataverse will help you better understand and govern your business applications data estate, safeguard that data, and improve their risk and compliance posture.
 
 With this integration, you can:
 
-- Create a holistic, up-to-date data map across Microsoft Dynamics 365, Microsoft Power Platform, and other sources supported by Microsoft Purview.
+- Create a holistic, up-to-date data map across Microsoft Dynamics 365, Power Platform, and other sources supported by Microsoft Purview.
 - Automatically classify data assets based on built-in system classifications or user-defined custom classifications, to help identify and understand sensitive data.
 - Empower data consumers to discover valuable, trustworthy data.
 - Enable data curators and security administrators to manage and keep data estate secure, reduce data exposure, and better protect sensitive data.
@@ -131,7 +131,7 @@ For more information, see [Connect to and manage Microsoft Dataverse in Microsof
 
 Cloud Adoption Framework provides guidance for central teams about how to classify data so that workload teams can follow the organizational taxonomy.
 
-For more information, see [What is data classification?](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification).
+For more information, see [What is data classification?](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
 
 ## See also
 

@@ -4,7 +4,7 @@ description: Learn how to design a reliable monitoring and alerting strategy to 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/01/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -64,9 +64,9 @@ Consider using alerts when states improve, such as red to yellow or red to green
 
 Visualize the real-time health of your environment by using [custom dashboards](/azure/azure-monitor/visualize/tutorial-logs-dashboards).
 
-Use data that's gathered during incidents to continuously improve your [health models](/azure/well-architected/reliability/metrics).
+Use data that's gathered during incidents to continuously improve your [health models](metrics.md).
 
-Incorporate [cloud platform monitoring and alerting services](/power-platform/admin/check-online-service-health.md), including platform-level health.
+Incorporate [cloud platform monitoring and alerting services](/power-platform/admin/check-online-service-health), including platform-level health.
 
 Incorporate purpose-built advanced monitoring and analytics that your cloud provider offers, like Azure Monitor [insight tools](/azure/azure-monitor/overview).
 
@@ -74,7 +74,7 @@ Implement backup and recovery monitoring to capture:
 
 - The data replication status to ensure that your workload achieves recovery within the target recovery point objective (RPO).  
 - Successful and failed backups and recoveries.  
-- The recovery duration to inform your [disaster recovery planning](/azure/well-architected/reliability/disaster-recovery).
+- The recovery duration to inform your [disaster recovery planning](disaster-recovery.md).
 
 ### Monitor applications
 
@@ -115,8 +115,8 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
 - [Power Pages](/power-platform/admin/logging-power-pages)
-- [Power Platform connectors](/power-platform/admin/logging-power-pages)
-- [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
+- [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
+- [Data loss prevention](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
 

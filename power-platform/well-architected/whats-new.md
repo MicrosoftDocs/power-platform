@@ -6,12 +6,12 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 03/28/2024
 ---
 
 # What's new in Power Platform Well-Architected
 
-Get the latest info about what's new and what's changed in Platform Power Platform Well-Architected.
+Get the latest info about what's new and what's changed in Power Platform Well-Architected.
 
 ## March 2024
 

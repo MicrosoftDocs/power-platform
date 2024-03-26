@@ -4,7 +4,7 @@ description: Learn about industry principles that support operational excellence
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -32,15 +32,15 @@ If you meet these goals, workloads will run reliably and predictably even during
 |![Goal icon](../_images/goal.svg) Empower development and operations teams to continuously improve their system design and processes by working together with a mindset of collaboration, shared responsibility, and ownership.|
 |--|
 
-Fusion development or fusion teams development, is defined by Gartner as "distributed and multidisciplinary digital business teams that blend technology and other types of domain expertise." (Source: 2019 Gartner Digital Business Teams Survey)
+Fusion development, or fusion teams development, is defined by Gartner as "distributed and multidisciplinary digital business teams that blend technology and other types of domain expertise." (Source: 2019 Gartner Digital Business Teams Survey)
 
-Fusion Development is an approach with the main goal of scaling application development through low-code. Fusion development allows your business to build better applications, faster by bringing together professional developers with citizen, or low-code, developers. It can also mean using low-code capabilities and combine them with code-first components to meet business needs and create Fusion applications.
+Fusion development is a strategy aimed at scaling application development by leveraging low-code methodologies. Fusion development allows your business to build better applications faster, by bringing together professional developers with citizen, or low-code, developers. It can also include using low-code capabilities and combining them with code-first components to meet business needs and create Fusion applications.
 
 DevOps is a community of practice where diversity of perspective and skills drives toward one mission. Teams must **foster a collaborative environment of shared knowledge** instead of siloed learning. Use shared functions to strive to overcome resource constraints.
 
-A good Fusion development and DevOps culture thrives on shared responsibility. Development and operations teams should align their goals and priorities with the expectations of their customers and keep business focus in mind. The development team should involve the operations team in the feedback loop so the improvements are driven upstream and other teams benefit equally. Conversely, operations teams are responsible for making the development team successful in their business outcomes by sharing resources and feedback that are relevant to the workload. At the same time, IT professionals and operations team must create a secure and governed environment where citizen developer can be empowered to achieve more with minimum friction.
+A good fusion development and DevOps culture thrives on shared responsibility. Development and operations teams should align their goals and priorities with the expectations of their customers and keep business focus in mind. The development team should involve the operations team in the feedback loop so the improvements are driven upstream and other teams benefit equally. Conversely, operations teams are responsible for making the development team successful in their business outcomes by sharing resources and feedback that are relevant to the workload. At the same time, IT professionals and operations team must create a secure and governed environment where citizen developer can be empowered to achieve more with minimum friction.
 
-At the same time, DevOps practices **apply clear lines of ownership and accountability to each team**. Regardless of where the application runs, the workload team is responsible for that application.
+DevOps practices **apply clear lines of ownership and accountability to each team**. Regardless of where the application runs, the workload team is responsible for that application.
 
 DevOps optimizes operational tasks so that they're effective but not burdensome. To reap the full benefit of DevOps, the culture should optimize processes through technology and have processes for people in the organization to promote transparent communication.
 

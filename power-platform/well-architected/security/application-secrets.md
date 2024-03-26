@@ -4,7 +4,7 @@ description: Learn about recommendations for managing application secrets. Find 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -22,7 +22,7 @@ Credentials, such as API keys, Open Authorization (OAuth) tokens, and Secure She
 
 **Definitions** 
 
-| Term** | Definition |
+| Term | Definition |
 |---|---|
 | Certificates | Digital files that hold the public keys for encryption or decryption. |
 | Credentials | Information that's used to verify the identity of the publisher or consumer in a communication channel. |
@@ -111,7 +111,7 @@ The following sections describe Power Platform features and capabilities you can
 
 Environment variables allow for referencing secrets stored in Azure Key Vault. These secrets are then made available for use within Power Automate flows and custom connectors. Note that the secrets aren't available for use in other customizations or generally via the API.
 
-The actual secrets are stored in Azure Key Vault and the environment variable references the key vault secret location. Using Azure Key Vault secrets with environment variables require that you configure Azure Key Vault so that Power Platform can read the specific secrets you want to reference. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) and [Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector).
+The actual secrets are stored in Azure Key Vault and the environment variable references the key vault secret location. Using Azure Key Vault secrets with environment variables require that you configure Azure Key Vault so that Power Platform can read the specific secrets you want to reference. For more information, see [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) and [Use environment variables in solution custom connectors](/connectors/custom-connectors/environment-variables).
 
 ### Use Solution Checker
 
@@ -124,7 +124,7 @@ CyberArk offers an identity security platform that secures human and machine ide
 ## See also
 
 - [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
-- [Use environment variables in custom connectors](/connectors/custom-connectors/environment-variables#use-an-environment-variable-in-a-custom-connector)
+- [Use environment variables in solution custom connectors](/connectors/custom-connectors/environment-variables)
 - [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
 - [CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark)
 - [Azure DevOps Credential Scanner task](/azure/security/develop/security-code-analysis-customize#credential-scanner-task)

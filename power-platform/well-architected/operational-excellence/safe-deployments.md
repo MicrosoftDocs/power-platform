@@ -4,7 +4,7 @@ description: Learn about recommendations for safe deployment practices (SDP). De
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/18/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -36,11 +36,7 @@ Frequent small deployments are preferable to infrequent large deployments. Small
 
 ### Health models
 
-Develop a robust health model as part of your observability monitoring platform and reliability strategies. Your health model should provide in-depth visibility into the components and overall health of the workload. Monitor the health metrics closely following a roll out. If, during the rollout, you receive an alert about a health change, investigate the issue immediately and determine the next course of action; for example, roll back the change. If the alert is related to an end user, stop the rollout immediately and investigate to determine the next course of action. If there are no issues reported by end users and all health indicators stay green, the rollout should continue. Be sure to include usage metrics in your health model to help ensure that a lack of user-reported issues and negative health signals aren't hiding an issue. For more information, see [Building a health model](../reliability/failure-mode-analysis.md).
-
-<!--
-Is the distinction above worth noting: an alert about a health change vs. an alert about an end-user issue? 
--->
+Develop a robust health model as part of your observability monitoring platform and reliability strategies. Your health model should provide in-depth visibility into the components and overall health of the workload. Monitor the health metrics closely following a roll out. If, during the rollout, you receive an alert about a health change, investigate the issue immediately and determine the next course of action; for example, roll back the change. If the alert is related to an end user, stop the rollout immediately and investigate to determine the next course of action. If there are no issues reported by end users and all health indicators stay green, the rollout should continue. Be sure to include usage metrics in your health model to help ensure that a lack of user-reported issues and negative health signals aren't hiding an issue. For more information, see [Recommendations for performing failure mode analysis](../reliability/failure-mode-analysis.md).
 
 ### Issue detection
 
@@ -60,7 +56,7 @@ Rolling back changes, especially database, schema, or other stateful component c
 
 - Automate as much of your SDP as possible. For detailed guidance on automating IaC and application continuous integration and continuous delivery (CI/CD) processes, see [Recommendations for implementing automation](automate-tasks.md).
 
-- Use continuous integration (CI) practices to regularly integrate code changes into repositories. CI practices can help you identify integration conflicts and reduce the likelihood of large, risky merges. For more information, see the [Continuous integration guide](release-engineering-continuous-integration.md).
+- Use continuous integration (CI) practices to regularly integrate code changes into repositories. CI practices can help you identify integration conflicts and reduce the likelihood of large, risky merges. For more information, see the [Recommendations for continuous integration](release-engineering-continuous-integration.md).
 
 - Use feature flags to selectively enable or disable new features or changes in production. Feature flags can help you control the exposure of new code and quickly roll back deployment if issues arise.
 

@@ -4,7 +4,7 @@ description: Learn how to design an emergency response strategy for your workloa
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/18/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -105,7 +105,7 @@ An impartial individual should lead blameless postmortems. In postmortem session
 
 Your emergency response strategy should be closely aligned to your overall [Power Platform support strategy](/power-platform/guidance/adoption/support-strategy-solutions). Work with your Power Platform administrators and Center of Excellence team to discuss support and emergency response options and processes that may already be defined.
 
-As you define your support process and escalation path, it's important to [categorize solutions](/power-platform/guidance/adoption/support-strategy-solutions) built based on criticality. This practice will allow you to establish processes that ensure that critical applications have the necessary guardrails to support them, while at the same time not stifling innovation of productivity scenarios, or overwhelming your incident response teams. As you define your support models, also think about a graduation path. A solution might start off only requiring productivity-level support but grow in functionality or user base to require important-level support. Define how makers can request more formal support and transition a solution to supported environments.
+As you define your support process and escalation path, it's important to [categorize solutions](/power-platform/guidance/adoption/support-strategy-solutions#define-tiers-of-applications) built based on criticality. This practice will allow you to establish processes that ensure that critical applications have the necessary guardrails to support them, while at the same time not stifling innovation of productivity scenarios, or overwhelming your incident response teams. As you define your support models, also think about a graduation path. A solution might start off only requiring productivity-level support but grow in functionality or user base to require important-level support. Define how makers can request more formal support and transition a solution to supported environments.
 
 ## Power Platform facilitation
 
@@ -123,6 +123,6 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 
 ## See also
 
-- [Recommendations for designing and creating an observability framework](observability.md)
+- [Recommendations for designing and creating a monitoring system](observability.md)
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
-- [User and maker support strategies](/power-platform/guidance/adoption/support-strategy)
+- [User and maker support strategy](/power-platform/guidance/adoption/support-strategy)

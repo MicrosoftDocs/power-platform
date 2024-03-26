@@ -4,7 +4,7 @@ description: Learn recommendations for designing and creating an observability f
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -106,13 +106,15 @@ The usage data for a single business operation might span all components of the 
 
 #### Recommendations for analysis of data
 
-- **Correlate application-level and resource-level logs.** Evaluate data at both levels to optimize the detection of issues and the troubleshooting of those issues.
+**Correlate application-level and resource-level logs.** Evaluate data at both levels to optimize the detection of issues and the troubleshooting of those issues.
 
-- **Define clear retention times on storage for cold analysis.** We recommend this practice to enable historic analysis over a specific period. It can also help you control storage costs. Implement processes that ensure data is archived to cheaper storage and aggregate data for long-term trend analysis.
+**Define clear retention times on storage for cold analysis.** We recommend this practice to enable historic analysis over a specific period. It can also help you control storage costs. Implement processes that ensure data is archived to cheaper storage and aggregate data for long-term trend analysis.
 
-- **Analyze long-term trends to predict operational issues.** Evaluate long-term data to form operational strategies and also to predict what operational issues are likely to occur, and when. For example, you might note that average response times are slowly increasing over time and approaching the maximum target.
+**Analyze long-term trends to predict operational issues.** Evaluate long-term data to form operational strategies and also to predict what operational issues are likely to occur, and when. For example, you might note that average response times are slowly increasing over time and approaching the maximum target.
 
 ### Visualization
+
+Visualization in health monitoring is critical for understanding the state of the workload. Visualization can help you quickly identify issues and trends, and can also help you understand the impact of changes you make to the workload.
 
 #### Dashboards
 
@@ -158,7 +160,7 @@ To help ensure that the system remains healthy, responsive, and secure, set aler
 
 Alerts are generated when thresholds are crossed, as detected by your monitoring system. Ensure that the thresholds you set generally give you enough time to implement the necessary changes to your workload to avoid degradation or outages. You should also implement necessary error handling and catch known errors in your workload to reduce the number of alerts. For example, configure retry policies for your actions in cloud flows so a retry is attempted as part of the flow run, and only if repeated retries fail and flow failure is recorded and an alert is sent.
 
-For detailed guidance on alerting use cases and other considerations, see [Designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md).
+For detailed guidance on alerting use cases and other considerations, see [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md).
 
 ## Power Platform facilitation
 
@@ -175,7 +177,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
 - [Power Pages](/power-platform/admin/logging-power-pages)
-- [Power Platform connectors](/power-platform/admin/logging-power-pages)
+- [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data Loss Prevention](/power-platform/admin/dlp-activity-logging)
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)

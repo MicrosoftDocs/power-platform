@@ -4,7 +4,7 @@ description: Learn how to optimize your development practices by standardizing y
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/18/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -125,11 +125,11 @@ Other tools and services that can help you standardize your development practice
 - [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops), a collection of services that you can use to build a collaborative, efficient, and consistent development practice. Azure DevOps bundles the following solutions:
   - [Azure Pipelines](/azure/devops/pipelines), a cloud service that provides build and release services to support CI/CD of your applications.
   - [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards), a web-based work-management tool that supports Agile practices like Scrum and Kanban.
-  - Azure Repos, a version control tool that supports the [Git distributed version control system](/azure/devops/repos/get-started/what-is-repos) and the [Team Foundation Version Control](/azure/devops/repos/get-started/what-is-repos) system.
+  - [Azure Repos](/azure/devops/repos/get-started/what-is-repos), a version control tool that supports the Git distributed version control system and the Team Foundation Version Control system.
   - [Azure Test Plans](/azure/devops/test/overview), a browser-based test management solution that provides capabilities that are required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
 - [GitHub Projects](https://docs.github.com/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects), a work-management tool that you can use to create Kanban boards, reports, dashboards, and other functions.
 
 ## See also
 
-- [Co-development governance](/power-apps/guidance/co-develop/governance)
+[Co-development governance](/power-apps/guidance/co-develop/governance)

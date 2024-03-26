@@ -4,7 +4,7 @@ description: Learn how to reduce the time that's required to identify, manage, a
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 01/31/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -129,7 +129,7 @@ For more information, see:
 
 ### Customer Lockbox
 
-Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, Microsoft provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. Learn more: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox).
+Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, Microsoft provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, see [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox).
 
 ### Security updates
 
@@ -145,7 +145,7 @@ These teams also identify and track any identified issues and take swift action 
 
 Because the Service teams strive to apply risk mitigations in a way that doesn't require service downtime, administrators usually don't see Message Center notifications for security updates. If a security update does require service impact, it's considered planned maintenance, and will be posted with the estimated impact duration, and the window when the work will occur.
 
-For more information about security, see [Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
+For more information about security, see [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/CloudServices/Dynamics365).
 
 ### Manage your maintenance window
 
@@ -161,6 +161,6 @@ Cloud Adoption Framework for Azure provides guidance about incident response pla
 
 - [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 - [Automatically create incidents from Microsoft security alerts](/azure/sentinel/create-incidents-from-alerts)
-- [Conduct end-to-end threat hunting by using the hunts feature](/azure/sentinel/hunts)
-- [Configure email notifications for security alerts](/azure/security-center/security-center-provide-security-contact-details)
+- [Conduct end-to-end threat hunting by using the Hunts feature](/azure/sentinel/hunts)
+- [Use Hunts to conduct end-to-end proactive threat hunting in Microsoft Sentinel](/azure/security-center/security-center-provide-security-contact-details)
 - [Incident response overview](/security/operations/incident-response-overview)
