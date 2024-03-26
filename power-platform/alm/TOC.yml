@@ -34,8 +34,10 @@
                href: remove-field-view.md
              - name: Table and model-driven app dependencies
                href: remove-table-app.md
-        - name: Organize solutions
-          href: organize-solutions.md
+        - name: Solution best practices
+          items:
+            - name: Organize solutions
+              href: organize-solutions.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
     - name: Implementing healthy project and solution ALM
