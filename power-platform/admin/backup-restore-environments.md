@@ -159,22 +159,25 @@ You can delete manual backups. You can't delete system backups.
 
 2.  Go to **Environments** > [select an environment\] > **Backups** > **Restore or manage**.
 
-    ![Select Restore or manage ](media/image4.png)
+    > [!div class="mx-imgBorder"] 
+    > ![Select Restore or manage.](media/restore-backup-menu.png "Select Restore or manage")
 
 3.  Select the **System** tab.
 
 4.  Under **Select a backup to restore**, choose a date and time to select a system backup to restore, and then select **Continue**.
 
-    ![Select available backup ](media/image5.png)
+   > [!div class="mx-imgBorder"] 
+   > ![Select available backup.](media/select-available-backup.png "Select available backup")
 
 5.  Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
 
-    ![Enter backup details ](media/image6.png)
-
+   
+    > [!Note]   > [!div class="mx-imgBorder"] 
+    > ![Enter backup details.](media/restore-backup.png "Enter backup details")
+    
     > [!Note]
-    > Only sandbox environments can be restored to. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
-
-    Under **Edit details**, you can change the environment name.
+    > - Only sandbox environments can be restored to. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
+    > - Under **Edit details**, you can change the environment name.
 
 6.  Confirm overwrite of the environment.
 
