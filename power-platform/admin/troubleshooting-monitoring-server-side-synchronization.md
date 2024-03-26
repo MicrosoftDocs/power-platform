@@ -17,7 +17,28 @@ search.audienceType:
 
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
  
-## The Server-Side Snychronization Failures dashboard
+## The Server-Side Synchronization Item Monitoring dashboard
+
+You can use the Item Monitoring dashboard to understand why emails, appointments, contacts, and tasks have not been synchronized. 
+
+> [!NOTE]
+> Rows in the Item Monitoring dashboard can only be viewed by the user who owns the associated Dataverse mailbox record or by a user who has the System Administrator security role. When the dashboard is accessed by a System Administrator, items not owned by that user will appear with the Item Subject redacted (***). 
+
+The Sync Error column will contain information about why the item did not synchronize: 
+
+   Screenshot:
+
+Selecting the link will direct you to a help article for the error if one exists. 
+
+The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to 3 days after the failure occurs. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting. 
+
+## Known Issues: 
+
+This dashboard does not currently work when viewed using the Unified Client interface. You will see the following error: 
+
+Components added to dashboard are not supported to be shown in this client 
+
+For more information, please see Troubleshoot item level Server-Side Synchronization issues with Dynamics 365 - Dynamics 365 Sales | Microsoft Learn. 
 
 Follow the steps in this [KB article](https://support.microsoft.com/help/4468755/troubleshoot-item-level-server-side-synchronization-issues-with-dynami) to enable and use a dashboard to get information on synchronization errors.
 
@@ -28,6 +49,9 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 <a name="BKMK_PerformanceDashboard"></a>   
 
 ## The Server-Side Synchronization Monitoring dashboard  
+> [!NOTE]
+> The Server-Side Synchronization Monitoring dashboard has been deprecated as of the 9.2.2403.4 weekly release and will no longer receive updates or further support.
+
  You can use the Server-Side Synchronization Monitoring dashboard to get a quick look at the health of mailboxes using server-side sync.  
   
  Go to any dashboard, click Select ![Drop-down button.](../admin/media/drop-down-button.png "Drop-down button") next to the dashboard title, and then click **Server-Side Synchronization Monitoring**.  
