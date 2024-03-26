@@ -5,7 +5,7 @@ author: jaredha
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 5/8/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jaredha
 search.audienceType:
