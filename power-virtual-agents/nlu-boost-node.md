@@ -80,7 +80,11 @@ Include delegated permissions for **Microsoft Graph**:
 
 Generative answers obtain content stored in these formats:
 
-- SharePoint pages (only [Modern Pages](https://support.microsoft.com/en-us/office/sharepoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f) are supported)
+- SharePoint pages (aspx)
 - Word documents (docx)
 - PowerPoint documents (pptx)
 - PDF documents (pdf)
+
+>[!NOTE]
+> Only [modern pages](https://support.microsoft.com/en-us/office/sharepoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f) are supported.
+> Classic pages will not be used to generate responses.

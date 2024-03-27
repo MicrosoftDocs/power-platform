@@ -47,7 +47,7 @@ Due to memory limits, generative answers can only use SharePoint files that are 
    >
    > A best practice is to omit _https://_ from the URL. Recognized SharePoint URLs will be from the _sharepoint.com_ domain.  
    > Sharepoint site URLs cannot be more than two levels deep.  
-   > Content from **aspx** files on SharePoint won't be used to generate answers.
+   > Content from classic **aspx** pages on SharePoint won't be used to generate answers.
 
 1. Select **Save** at the top to save your topic changes.
 
