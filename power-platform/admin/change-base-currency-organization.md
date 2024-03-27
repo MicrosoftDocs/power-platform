@@ -34,20 +34,18 @@ Intro
    > [!Note]
    > Only one record can be created in this step.
 
-   ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/93cbcb65-4ada-4598-8e69-1888763bc5d6)
+   :::image type="content" source="media/new-base-currency.png" alt-text="Set the New Base Currency field. ":::
    
+1. Navigate to **Settings > Business Management > Currencies** and complete the following actions:
+   1.	Validate that the base currency is changed as expected.
+   2.	Enter the correct exchange rate for all non-base currencies according to the new base currency.
+   3.	After the base currency is changed as expected and exchange rate values are corrected for all non-base currencies, use the following steps (from step 6) to convert old base currency values on all tables with currency fields to the new base currency.
 
-1. After **BaseCurrencyConversion** entity record has been created, Navigate to **Settings > Business Management > Currencies** page and perform below actions.
-   1.	Validate that the Base Currency is changed as expected.
-   2.	Enter the correct exchange rate for all non-base currencies according to new base currency.
-   3.	After the Base Currency is changed as expected and exchange rate values are corrected for all non-base currencies, follow further steps (from Step 6) to convert old base currency values on all tables with currency fields to new base currency.
+1. Open the **CurrencyExchangeRate** entity and import or create historical exchange rate data for all non-base currencies for the entire date range of data present in the database. This is needed to convert old base currency values to the new base currency.
 
-1. Open **CurrencyExchangeRate** entity and Import/Create historical exchange rate data for all non-base currencies for entire date range of data present in the database. This is needed to convert old base currency values to new base currency.
+   To know the date range of data that is present in the database, refer the record on the **CurrencyExchangeRate** entity. These dates are based on the **Modified On** column of each affected table.
 
-To know the date range of data that is present in the database, refer the record on the **CurrencyExchangeRate** entity. These dates are based on the ‘Modified On’ column of each affected table.
-
-The default record contains exchange rate data for new base currency for entire date range of data.
-Ex: If the new Base Currency is EURO, you will see a record with **From Currency**: Euro, To Currency: Euro) where Valid From and Valid To are UTC values indicating the entire date range of data exists in the Organization.
+   The default record contains exchange rate data for new base currency for the entire date range of data. For example, if the new base currency is the Euro, you see a record with **From Currency**: Euro, To Currency: Euro) where Valid From and Valid To are UTC values indicating the entire date range of data exists in the Organization.
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/50829f76-2fd5-44ca-b98a-743424d5764d)
 
