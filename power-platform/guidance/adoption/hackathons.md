@@ -16,7 +16,7 @@ search.audienceType:
 
 A hackathon is a fun way to engage lots of people within your organization around a digital culture of change. The key objective is to develop sample apps and cultivate ideas to drive digital transformation. Teams come together, at the line of business or at the global scale, from different roles and departments to compete and create apps that address an organizational need. 
 
-The more variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Also, it might be worth starting the day with a review and demo of Power Apps, Power Automate, Power BI, Power Virtual Agents, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
+The more variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Also, it might be worth starting the day with a review and demo of Power Apps, Power Automate, Power BI, Microsoft Copilot Studio, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
 
 A successful hackathon usually includes team colors, prizes, food, music, laughter, and competition.
 
