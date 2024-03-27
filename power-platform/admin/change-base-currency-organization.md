@@ -29,9 +29,13 @@ Intro
    > [!Note]
    > If the app doesn't appear in the list, refresh or reload the page.
 
-1. Open the **BaseCurrencyConversion** entity, create a new record, set New Base Currency to required one (ex: Euro) as shown below and save. Only one record can be created here.
+1. Open the **BaseCurrencyConversion** entity, create a new record, and set the **New Base Currency** to a required currency. In the example image, te required currecny is the Euro. Then save your changes.
+
+   > [!Note]
+   > Only one record can be created in this step.
 
    ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/93cbcb65-4ada-4598-8e69-1888763bc5d6)
+   
 
 1. After **BaseCurrencyConversion** entity record has been created, Navigate to **Settings > Business Management > Currencies** page and perform below actions.
    1.	Validate that the Base Currency is changed as expected.
