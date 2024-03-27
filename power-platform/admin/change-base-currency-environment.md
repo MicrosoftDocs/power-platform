@@ -34,7 +34,7 @@ When you create an environment that includes a database in Power Platform, you m
    :::image type="content" source="media/new-base-currency.png" alt-text="Set the New Base Currency column as Euro. ":::
    
 1. Go to **Settings > Business Management > Currencies** and complete the following actions:
-   1.	Validate that the base currency is changed as expected. <!-- How do you do this? -->
+   1.	Validate that the base currency is changed as expected. There should be a record in the **Currencies** view for your base currency indicating the currency code you want. When you open the record, a notice is displayed: "This currency is the base currency." Close the record.
    2.	Enter the correct exchange rate for all nonbase currencies according to the new base currency. More information: [Manage transactions with multiple currencies](manage-transactions-with-multiple-currencies.md)
 
 ## Change the old base currency values to the new base currency
