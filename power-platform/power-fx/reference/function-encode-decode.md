@@ -1,6 +1,6 @@
 ---
-title: EncodeUrl and PlainText functions
-description: Reference information including syntax and examples for the EncodeUrl and PlainText functions.
+title: EncodeUrl, EncodeHTML, and PlainText functions
+description: Reference information including syntax and examples for the EncodeUrl, EncodeHTML, and PlainText functions.
 author: gregli-msft
 
 ms.topic: reference
@@ -15,9 +15,10 @@ contributors:
   - gregli-msft
   - mduelae
   - jorisdg
+  - carlosff
 ---
 
-# EncodeUrl and PlainText functions
+# EncodeUrl, EncodeHTML, and PlainText functions
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
@@ -26,6 +27,8 @@ Encodes and decodes strings.
 ## Description
 
 The **EncodeUrl** function encodes a URL string, replacing certain non-alphanumeric characters with % and a hexadecimal number.
+
+The **EncodeHTML** function encodes a string, replacing certain characters that need to be escaped to be shown properly in a HTML context.
 
 The **PlainText** function removes HTML and XML tags, converting certain tags such as these to an appropriate symbol:
 
@@ -37,6 +40,10 @@ The return value from these functions is the encoded or decoded string. This fun
 ## Syntax
 
 **EncodeUrl**( _String_ )
+
+- _String_ - Required. URL to be encoded.
+
+**EncodeHTML**( _String_ )
 
 - _String_ - Required. URL to be encoded.
 
