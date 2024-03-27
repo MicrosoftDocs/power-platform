@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 03/29/2024
 ---
 
 # Operational Excellence tradeoffs
@@ -58,6 +58,12 @@ Observability platforms ingest data of all types to gain insights into a workloa
 - Collecting all logs from across the system in a unified log sink can make querying and building alerts easier. However, doing so can also make it harder or impossible to provide row-based security in order to treat sensitive data with the required audit controls.
 
 - Simplifying the management of attribute-based or role-based security by reducing the granularity of roles and their assignments can lead to inappropriately broad permissions.
+
+## Operational Excellence tradeoffs with Experience Optimization
+
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Culture stress**. The Operational Excellence pillar is rooted in standardized development practices.
+
+- 
 
 <!--
 ## Operational Excellence tradeoffs with Performance Efficiency
