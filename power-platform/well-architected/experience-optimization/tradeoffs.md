@@ -15,17 +15,24 @@ During the design phase of a workload, it's important to consider how decisions 
 
 ## Experience Optimization tradeoffs with Reliability
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Increased complexity.**  
+:::image type="icon" source="../_images/trade-off.svg"::: **Increased complexity.** A workload that uses straightforward approaches and limits customization is generally easier to manage in terms of reliability.
 
-- Providing new capabilities in the user experience 
+- Continous improvement through adding new features in the user experience can introduce new issues that affect reliability and will require thorough testing.
+- Customizing the user interface with code and components adds new reliabilty targets.
 
 ## Experience Optimization tradeoffs with Security
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
+:::image type="icon" source="../_images/trade-off.svg"::: **Increased workload surface area.** The Security pillar prioritizes a reduced and contained surface area to minimize attack vectors and the management of security controls.
+
+- Improving the experience with features and integrations can introduce potential vectors for attack.
+- Using code components can inadvertently increase the workload's attack surface.
 
 ## Experience Optimization tradeoffs with Operational Excellence
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Increased effort for .** Tradeoff description.
+:::image type="icon" source="../_images/trade-off.svg"::: **Compromised resource capacities.** A workload's operational process provides rigor, consistency, specificity, and prioritization to change management in a workload.
+
+- Customizations in the workload's experience can complicate maintenance efforts and require increased resource utilization for testing.
+- Allocating resources to perform user research and develop prototypes can impact the focus on operational activities.
 
 <!-- ## Experience Optimization tradeoffs with Performance Efficiency
 
