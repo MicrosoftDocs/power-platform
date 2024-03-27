@@ -13,14 +13,14 @@ ms.subservice: solution-templates
 
 # Get started managing the Awards and Recognition app
 
-As an Awards and Recognition program admin, you can create custom experiences for your users in the Awards and Recognition app. A program admin can:
+Create custom experiences for your users in the Awards and Recognition app. A program admin can:
 
 - See and update all the data.
 - Configure awards, award assessment ratings, nomination periods, groups, and group membership.
 - Approve, reject, withdraw, or cancelling nominations.
 - Create, update, or delete language localization data (this capability can be assigned to any user).
 
-You can get started by configuring the Awards and Recognition Administration app and the Employee Experiences Base app.
+Get started by configuring the Awards and Recognition Administration app and the Employee Experiences Base app.
 
 ## Create awards and assessment ratings
 
@@ -63,7 +63,7 @@ Adding assessment ratings to an award is an optional step that allows a nominato
 
 ## Create groups
 
-If any of your awards are being made available for a pre-defined team nomination, then you'll need to create each of these teams as *Groups* in the system. This allows the program administrator to control which teams are available for nomination.
+If any of your awards are being made available for a pre-defined team nomination, then you need to create each of these teams as *Groups* in the system. This allows the program administrator to control which teams are available for nomination.
 
 To create a *Group*, take these steps:
 
