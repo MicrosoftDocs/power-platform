@@ -1,12 +1,15 @@
 ---
-title: "Change Base Currency of an Organization  | MicrosoftDocs"
-description: Change Base Currency of an Organization
+title: Change the base currency of an organization
+description: Learn how to change the base currency of an organization.
 author: sanjeevgoyal
-ms.component: pa-admin
+ms.date: 03/27/2024
+ms.reviewer: sericks
 ms.topic: conceptual
-ms.date: 03/22/2024
 ms.subservice: admin
 ms.author: sanjeevgoyal
+ms.custom: bap-template
+search.audienceType: 
+ - admin
 ---
 
 # Steps to Perform Base Currency Conversion
