@@ -12,25 +12,33 @@ search.audienceType:
  - admin
 ---
 
-# Steps to Perform Base Currency Conversion
+# Change the base currency of an organization
 
-1. Take backup of the Org database before starting base currency conversion.
+Intro
 
-2. Connect to UCI Client, Navigate to **Settings > Solutions** page and Install Base Currency Conversion Solution.
+## Steps to Perform Base Currency Conversion
 
-3. Navigate to Home/Apps page and Open "Base Currency ConversionApp"from available apps.
-   Note: In case App is not appearing even after solution installed, Refresh or reload the page.
+1. Make a backup of the organization's database before starting base currency conversion. learn more: [Back up and restore environments](backup-restore-environments.md)
 
-4. Open **BaseCurrencyConversion** entity, create a new record, set New Base Currency to required one (ex: Euro) as shown below and save. Only one record can be created here.
+1. Connect to a UCI client.
+  
+1. Navigate to **Settings > Solutions** and install **Base Currency Conversion Solution**.
+
+1. Navigate to the **Home** or **Apps** page and ppen the **Base Currency Conversion App** from the list of available apps.
+
+   > [!Note]
+   > If the app doesn't appear in the list, refresh or reload the page.
+
+1. Open the **BaseCurrencyConversion** entity, create a new record, set New Base Currency to required one (ex: Euro) as shown below and save. Only one record can be created here.
 
    ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/93cbcb65-4ada-4598-8e69-1888763bc5d6)
 
-5. After **BaseCurrencyConversion** entity record has been created, Navigate to **Settings > Business Management > Currencies** page and perform below actions.
+1. After **BaseCurrencyConversion** entity record has been created, Navigate to **Settings > Business Management > Currencies** page and perform below actions.
    1.	Validate that the Base Currency is changed as expected.
    2.	Enter the correct exchange rate for all non-base currencies according to new base currency.
    3.	After the Base Currency is changed as expected and exchange rate values are corrected for all non-base currencies, follow further steps (from Step 6) to convert old base currency values on all tables with currency fields to new base currency.
 
-6. Open **CurrencyExchangeRate** entity and Import/Create historical exchange rate data for all non-base currencies for entire date range of data present in the database. This is needed to convert old base currency values to new base currency.
+1. Open **CurrencyExchangeRate** entity and Import/Create historical exchange rate data for all non-base currencies for entire date range of data present in the database. This is needed to convert old base currency values to new base currency.
 
 To know the date range of data that is present in the database, refer the record on the **CurrencyExchangeRate** entity. These dates are based on the ‘Modified On’ column of each affected table.
 
