@@ -282,7 +282,7 @@ Microsoft Copilot Studio for Teams enables customers with select Microsoft 365 o
 #### Are there additional Microsoft Copilot Studio licensing requirements to create and edit with Copilot?
 
 - You need a Microsoft Copilot Studio license and you must create an account.
-    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio or Power Virtual Agents or before, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
+    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 - This capability might be subject to usage limits or capacity throttling.
 
 ## Power Pages
