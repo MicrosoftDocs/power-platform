@@ -16,8 +16,6 @@ search.audienceType:
 
 Intro
 
-## Steps to Perform Base Currency Conversion
-
 1. Make a backup of the organization's database before starting base currency conversion. learn more: [Back up and restore environments](backup-restore-environments.md)
 
 1. Connect to a UCI client.
@@ -81,13 +79,13 @@ The value in the existing transaction currency is translated to the new base cur
 
    ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/2ce1acee-bf9b-4625-a376-70b6838ce830)
 
-8. Refresh the **BaseCurrencyConversion** entity record and monitor the Conversion Status until Conversion Status is completed/failed.
+1. Refresh the **BaseCurrencyConversion** entity record and monitor the Conversion Status until Conversion Status is completed/failed.
    1. In case of any failures, examine the Conversion Status and fix those errors.
    2.	In case of any tables failed processing, examine the **BaseCurrencyConversionTableLog** entity for error details and fix those errors if errors are data related. In case errors are not data related report the issue to Microsoft Support.
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/b515896f-5422-4618-b3e8-d7868f7963f2)
 
-9. (Optional) During conversion, if you notice any performance issues, you can pause the conversion by opening the **BaseCurrencyConversion** form and Stop Conversion Job (using option shown below). FYI... Conversion will be automatically stopped once it completes converting old base currency values in all tables listed in **BaseCurrencyConversionTableLog** entity.
+1. (Optional) During conversion, if you notice any performance issues, you can pause the conversion by opening the **BaseCurrencyConversion** form and Stop Conversion Job (using option shown below). FYI... Conversion will be automatically stopped once it completes converting old base currency values in all tables listed in **BaseCurrencyConversionTableLog** entity.
 Note: To restart the conversion, begin at step 6.
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/123401931/c09a1b56-66b1-4333-b8a7-9b6ff685a1bc)
