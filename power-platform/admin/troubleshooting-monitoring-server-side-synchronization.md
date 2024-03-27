@@ -26,8 +26,8 @@ You can use the Item Monitoring dashboard to understand why emails, appointments
 
 The Sync Error column will contain information about why the item did not synchronize: 
 
-   Screenshot:
-
+:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
+   
 Selecting the link will direct you to a help article for the error if one exists. 
 
 The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to 3 days after the failure occurs. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting. 
