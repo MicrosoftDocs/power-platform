@@ -53,6 +53,13 @@ During the design phase of a workload, you need to consider how decisions based 
 
 - Training becomes more complex as the number of components in the workload increases. This complexity affects the time required for onboarding and increases the knowledge that's needed to track product roadmaps and service-level guidance.
 
+## Reliability tradeoffs with Experience Optimization
+
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Lower velocity**. The Experience Optimization stresses efficiency.
+
+- Optimizing for reliability can oversimplify design choices for more engaging user experiences, such as custom components and integrations.
+- Emphasizing rigorous testing can delay the release of experience features that are essential for adoption.
+
 <!--
 ## Reliability tradeoffs with Performance Efficiency
 
