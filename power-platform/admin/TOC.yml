@@ -180,6 +180,8 @@
                   href: admin-view-apps.md
                 - name: Language collations
                   href: language-collations.md
+                - name: Change the base currency
+                  href: change-base-currency-environment.md
             - name: Managed Environments
               items:
                 - name: Overview
