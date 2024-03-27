@@ -55,10 +55,10 @@ During the design phase of a workload, you need to consider how decisions based 
 
 ## Reliability tradeoffs with Experience Optimization
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Lower velocity**. The Experience Optimization stresses efficiency.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Lower velocity**. The Experience Optimization pillar prioritizes efficiency for the user.
 
-- Optimizing for reliability can oversimplify design choices for more engaging user experiences, such as custom components and integrations.
 - Emphasizing rigorous testing can delay the release of experience features that are essential for adoption.
+- Optimizing for reliability can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
 
 <!--
 ## Reliability tradeoffs with Performance Efficiency
