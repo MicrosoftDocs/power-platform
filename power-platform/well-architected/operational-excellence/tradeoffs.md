@@ -61,9 +61,10 @@ Observability platforms ingest data of all types to gain insights into a workloa
 
 ## Operational Excellence tradeoffs with Experience Optimization
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Culture stress**. The Operational Excellence pillar is rooted in standardized development practices.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Competing priorities**. The Experience Optimization pillar recommends a user-centric mindset.
 
-- 
+- User experience development that requires significant resources may be deprioritized. This can cause the  experience to lack the usability, interactions, and visual design that workload users need.
+- User interface development is often done in faster iterations and ship cycles, which can strain the team's SDLC processes.
 
 <!--
 ## Operational Excellence tradeoffs with Performance Efficiency
