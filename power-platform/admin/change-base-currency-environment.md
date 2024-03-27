@@ -37,9 +37,9 @@ When you create an environment that includes a database in Power Platform, you m
    1.	Validate that the base currency is changed as expected. <!-- How do you do this? -->
    2.	Enter the correct exchange rate for all nonbase currencies according to the new base currency. More information: [Manage transactions with multiple currencies](manage-transactions-with-multiple-currencies.md)
 
-## Create the new base currency exchange rate table records
+## Change the old base currency values to the new base currency
 
-After the base currency is changed as expected and exchange rate values are corrected for all nonbase currencies, use these steps to convert old base currency values on all tables with currency fields to the new base currency.
+After the base currency is changed as expected and exchange rate values are corrected for all nonbase currencies, use these steps to convert old base currency values on all tables with currency columns to the new base currency.
 
 1. Open the **CurrencyExchangeRate** table and import or create historical exchange rate data for all non-base currencies for the entire date range of data present in the database. This is needed to convert old base currency values to the new base currency.
 
@@ -61,7 +61,7 @@ Data can be imported into **CurrencyExchangeRate** table using a CSV file. The C
 
 In CSV file format, the `fromcurrencyid` and `tocurrencyid` values must be currency codes. To find these values, in the Power Platform admin center open the environment you want. Select **Settings** > **Resources** >  **All legacy settings** >  **Settings** > **Business Management** > **Currencies**.
 
-### Samples to create exchange rate data for a nonbase currency through a CSV file
+### Examples of importing exchange rate data for a nonbase currency through a CSV file
 
 When the exchange rate is the same for the entire historical data date range, create a single record for the entire date range as shown here.
 
@@ -80,11 +80,13 @@ The value in the existing transaction currency is translated to the new base cur
 
 ## Run the conversion job
 
-After exchange rate data is created for all nonbase currencies for the entire date range of data, open the **BaseCurrencyConversion** table record and select the **Start Conversion** command to start converting the old base currency values to the new base currency using exchange rate information provided in the **CurrencyExchangeRate** table.
+After exchange rate data is created for all nonbase currencies for the entire date range of data, start converting the old base currency values to the new base currency using exchange rate information provided in the **CurrencyExchangeRate** table.
 
-:::image type="content" source="media/start-conversion-command.png" alt-text="Start conversion command":::
+1. Open the **BaseCurrencyConversion** table record and select the **Start Conversion** command on the command bar.
 
-1. **Refresh** the **BaseCurrencyConversion** table record and monitor the **Conversion Status** until **Conversion Status** is **completed** or **failed**.
+   :::image type="content" source="media/start-conversion-command.png" alt-text="Start conversion command":::
+
+2. Select **Refresh** on the command bar for the **BaseCurrencyConversion** table record and monitor the **Conversion Status** until **Conversion Status** is **completed** or **failed**.
 
 ### If you encounter issues during conversion
 
