@@ -68,7 +68,7 @@ If you set the **[Text](/power-apps/maker/canvas-apps/controls/properties-core)*
     We have done an unusually "deep" globalization and localization.
 ```
 
-With the formula **EncodeHTML(ThisItem.description)**, the HTML tags are encoded so that they will show up as text when interpreted as HTML, which can be useful to see the HTML structure:
+With the formula **EncodeHTML(ThisItem.description)**, the HTML tags are encoded so that they show up as text when interpreted as HTML, which can be useful to see the HTML structure:
 
 ```
 &lt;p&gt;
@@ -77,6 +77,6 @@ With the formula **EncodeHTML(ThisItem.description)**, the HTML tags are encoded
 &lt;/p&gt;
 ```
 
-If instead of a label you have an [HTML text control](/power-apps/maker/canvas-apps/controls/control-html-text) in the gallery, and you set the **[HtmlText](/power-apps/maker/canvas-apps/controls/control-html-text)** property of that control to **ThisItem.description** you will also see the decoded text, because the HTML text control is interpreting the tags as HTML.
+If instead of a label you have an [HTML text control](/power-apps/maker/canvas-apps/controls/control-html-text) in the gallery, and you set the **[HtmlText](/power-apps/maker/canvas-apps/controls/control-html-text)** property of that control to **ThisItem.description** you also see the decoded text, because the HTML text control is interpreting the tags as HTML.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
