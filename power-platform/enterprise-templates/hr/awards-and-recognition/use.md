@@ -85,3 +85,7 @@ Take these steps to change the color theme:
 - Select the **settings icon (gear icon)**.
 - Select a different theme.
 - Select the **back arrow** to continue through the app with the updated theme applied.
+
+### See also
+
+[Awards and Recognition template for Power Platform](overview.md)

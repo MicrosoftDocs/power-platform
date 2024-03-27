@@ -172,6 +172,6 @@ To localize app strings, users must have the **Employee Experience Localizer**
 
 1. Select **Save & Close**.
 
-## Next step
+### Next step
 
 [Use the Awards and Recognition app](use.md)

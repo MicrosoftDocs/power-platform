@@ -427,6 +427,6 @@ To create localized strings:
 
 More information: [Build global support into canvas apps](/power-apps/maker/canvas-apps/global-apps)
 
-## Next steps
+### Next step
 
 [Get started managing hardware assets and requests](manage.md)

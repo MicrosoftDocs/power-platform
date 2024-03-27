@@ -87,10 +87,10 @@ More information:
 - [Manage connections in Power Automate](/power-automate/add-manage-connections)
 - [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
 
-## Next steps
+### Next steps
 
 [Configure security groups](configure-security-groups.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

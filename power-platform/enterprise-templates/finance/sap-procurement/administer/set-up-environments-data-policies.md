@@ -84,6 +84,6 @@ The DLP policies you set up ensure that your valuable SAP business data is not a
 
 [Create a data policy](/power-platform/admin/managed-environment-data-policies) that meets your organizational needs and allows the environments targeted for the SAP procurement solutions to have access to the [SAP ERP](/connectors/saperp/), [Microsoft Dataverse](/connectors/commondataserviceforapps/), [Office 365 Users](/connectors/office365users/) connections, and any other connections needed to run your procure-to-pay processes.
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

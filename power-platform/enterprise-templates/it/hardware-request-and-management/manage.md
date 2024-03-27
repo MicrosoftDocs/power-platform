@@ -156,6 +156,6 @@ System-determined fields include:
 
 You can view or edit existing assets. The asset name is in *hypertext* and links to the detailed view.
 
-## Next steps
+### Next step
 
 [Get started using the Hardware Request and Management app](use.md)

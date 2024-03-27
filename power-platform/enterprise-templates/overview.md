@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/21/2024
+ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -39,30 +39,30 @@ Be sure to check back often for new templates that become available.
 
 :::row:::
    :::column span="":::
-      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement")  Transform SAP procurement data <br> [SAP Procurement Learn documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [SAP Procurement on AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
+      ![SAP Procurement](media/overview/sap-procure-icon-sq.png "SAP Procurement") <br> **SAP Procurement template** <br>  Transform SAP procurement data <br> [Documentation](https://aka.ms/LearnSAPProcurementTemplate) <br> [AppSource](https://aka.ms/AccessSAPProcurementTemplate)  
    :::column-end:::
    :::column span="":::
-      ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> Enable an employee recognition program <br> [Employee Kudos Learn documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [Employee Kudos on AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
+      ![Employee Kudos](media/overview/kudos-icon-sq.png "Employee Kudos") <br> **Employee Kudos template** <br> Enable an employee recognition program <br> [Documentation](https://aka.ms/LearnEmployeeKudosTemplate) <br> [AppSource](https://aka.ms/AccessEmployeeKudosTemplate)
    :::column-end:::
    :::column span="":::
-      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> Facilitate an employee awards program <br> [Awards and Recognition Learn documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [Awards and Recognition on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
+      ![Awards and Recognition](media/overview/awards-req-icon-sq.png "Awards and Recognition") <br> **Awards and Recognition template** <br> Facilitate an employee awards program <br> [Documentation](https://aka.ms/LearnAwardsAndRecognitionTemplate) <br> [AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> Match new employees to _Buddies_ <br> [Onboarding Buddy Learn documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [Onboarding Buddy on AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
+      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> **Onboarding Buddy template** <br> Match new employees to _Buddies_ <br> [Documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
    :::column-end:::
    :::column span="":::
-      ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> Manage hardware requests and assets <br> [Hardware Request and Management Learn documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br>[Hardware Request and Management on AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
+      ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> **Hardware Request and Management template**<br> Manage hardware requests and assets <br> [Documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br> [AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
    :::column span="":::
-      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> Organize the appointment booking process <br> [Appointment Booking Learn documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [Appointment Booking on AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
    :::column-end:::
 :::row-end:::
 
 ## Benefits of using enterprise templates
 
-Implementing enterprise software use cases can be time consuming and expensive.  An enterprise template provides a foundation to help you quickly get started. You can use the full potential of Power Platform to extend the templates by connecting workflows across more systems of record and digitizing manually intensive processes.
+Implementing enterprise software use cases is often time consuming and expensive. An enterprise template provides a foundation to help you quickly get started digitizing manually intensive processes. You can even extend a template by connecting workflows across more systems of record to drive more value with Power Platform.
 
 Templates for Power Platform offer the following benefits:
 

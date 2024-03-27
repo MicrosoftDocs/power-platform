@@ -256,12 +256,11 @@ Auditing isn't required, but we recommend turning it on so that it's easy to see
 
 1. Select **Settings**, and then select **Start Auditing**.
 
-## Next step
+### Next step
 
 [Learn how to customize the Onboarding Buddy app](customize.md).
 
 ### See also
 
-[Get started managing the Onboarding Buddy app](manage.md)
-
-[Get started using the Onboarding Buddy app](use.md)
+- [Get started managing the Onboarding Buddy app](manage.md)
+- [Get started using the Onboarding Buddy app](use.md)

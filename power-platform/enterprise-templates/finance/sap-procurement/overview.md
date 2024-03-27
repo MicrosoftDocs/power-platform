@@ -77,22 +77,16 @@ You can access the SAP Procurement template two ways:
 > [!IMPORTANT]
 > Before accessing and installing the SAP Procurement template solution files, you must [integrate SAP with Power Platform](administer/get-started.md#integrate-sap-with-power-platform).
 
-## Next steps
+### Next step
 
 [Get started with SAP Procurement template](administer/get-started.md)
 
-## See also
+### See also
 
-[Frequently asked questions about SAP integration with Power Platform](faqs.md)
-
-[SAP Vendor Management app](use/vendor-management.md)
-
-[SAP Requisition Management app](use/requisition-management.md)
-
-[SAP Purchase Order Management app](use/purchase-order-management.md)
-
-[SAP Goods Receipt Management app](use/goods-receipt-management.md)
-
-[SAP Vendor Invoice Management app](use/vendor-invoice-management.md)
-
-[SAP Vendor Payment Management app](use/payment-management.md)
+- [Frequently asked questions about SAP integration with Power Platform](faqs.md)
+- [SAP Vendor Management app](use/vendor-management.md)
+- [SAP Requisition Management app](use/requisition-management.md)
+- [SAP Purchase Order Management app](use/purchase-order-management.md)
+- [SAP Goods Receipt Management app](use/goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](use/vendor-invoice-management.md)
+- [SAP Vendor Payment Management app](use/payment-management.md)

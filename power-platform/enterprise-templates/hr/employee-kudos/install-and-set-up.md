@@ -17,7 +17,11 @@ Enterprise templates for Power Platform are enterprise-ready solutions that are 
 
 Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
 
-More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Employee Kudos template.
 
@@ -310,6 +314,6 @@ To do this:
 
 1. Select **Start auditing**.
 
-## Next steps
+### Next step
 
 [Get started managing the Employee Kudos app](manage.md)

@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -17,7 +17,11 @@ Enterprise templates for Power Platform are enterprise-ready solutions that are 
 
 Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
 
-More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Awards and Recognition template.
 
@@ -36,11 +40,11 @@ Confirm your organization has the necessary licensing to use enterprise template
   - Power Apps per app pay-as-you-go-meter
   - Power Apps use rights included with Dynamics 365 licenses
 
+More license details are available in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+
 > [!NOTE]
 >
 > Power Apps use rights included with Microsoft 365 and Office 365 licenses will not suffice to install the template.
-
-More license details are available in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 > [!TIP]
 > A free Developer Plan is a great way to install the template for evaluation purposes. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
@@ -251,8 +255,6 @@ While this isn't required, we recommend enabling the audit setting on the system
 1. Select **Audit settings**.
 1. Select **Start auditing**.
 
-## Next steps
+### Next step
 
 [Manage the Awards and Recognition app](manage.md)
-
-[Use the Awards and Recognition app](use.md)

@@ -41,18 +41,15 @@ As a best practice, create a new _unmanaged_ solution in the same development en
 
 ## Related content
 
-[Solution concepts](/power-platform/alm/solution-concepts-alm)
+- [Solution concepts](/power-platform/alm/solution-concepts-alm)
+- [Solution layers](/power-platform/alm/solution-layers-alm)
+- [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
+- [Overview of tools and apps used for ALM](/power-platform/alm/tools-apps-used-alm)
 
-[Solution layers](/power-platform/alm/solution-layers-alm)
-
-[Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
-
-[Overview of tools and apps used for ALM](/power-platform/alm/tools-apps-used-alm)
-
-## Next steps
+### Next step
 
 [Extend canvas apps](extend-canvas-apps.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

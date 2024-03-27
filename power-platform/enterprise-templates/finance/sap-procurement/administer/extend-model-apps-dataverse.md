@@ -55,10 +55,10 @@ All SAP transactional data is sourced from your SAP system and not stored in Pow
 
 More information: [What is Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro)
 
-## Next steps
+### Next step
 
 [Extend cloud flows](extend-cloud-flows.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

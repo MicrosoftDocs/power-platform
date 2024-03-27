@@ -116,13 +116,13 @@ Share the flows with _Run only privileges_ so users have access to embedded flow
 
 1. Go to the individual cloud flows in Power Apps.
 1. Go to the _Run only users_ section and select **Edit**.
-1. Invite _system users_ and _teams_ by searching for and selecting the Microsoft Entra ID (Azure AD) security groups that need access to the flow according to the Power Apps that that team needs to use.
+1. Invite _system users_ and _teams_ by searching for and selecting the Microsoft Entra ID security groups that need access to the flow according to the canvas apps that that team needs to use.
 1. For all three _connections used_, select the **Provided by run-only end user** option.
 1. Select **Save**.
 
 ### Sharing summary
 
-This table provides a mapping summary of what components need to be assigned or shared according to the example Microsoft Entra ID (Azure AD) security group teams.
+This table provides a mapping summary of what components need to be assigned or shared according to the example Microsoft Entra ID security group teams.
 
 |             Component             | Type | Vendor management team | Purchase requisitions team | Purchase orders team | Vendor goods receipt team | Vendor invoice team | Vendor payments team | Admin team
 |:---------------------------------:|:----:|:----------------------:|:--------------------------:|:--------------------:|:-------------------------:|:-------------------:|:--------------------:|:------------------
@@ -168,10 +168,10 @@ More information:
 - [Share a model-driven app](/power-apps/maker/model-driven-apps/share-model-driven-app)
 - [Share a cloud flow](/power-automate/create-team-flows)
 
-## Next steps
+### Next step
 
 [Apply seed data](apply-seed-data.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

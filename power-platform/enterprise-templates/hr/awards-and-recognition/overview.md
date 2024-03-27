@@ -68,6 +68,6 @@ The *Awards and Recognition* solution contains various components that an admin 
 
 - **One Power Automate flow**: **Awards and Recognition - Recognition gets deactivated** is the flow that sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
 
-## Next steps
+### Next step
 
 [Install and set up the Awards and Recognition template](install-and-set-up.md)

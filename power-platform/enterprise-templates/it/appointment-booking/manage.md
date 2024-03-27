@@ -76,6 +76,6 @@ To localize app strings, users must have the **IT Template Admin** security 
 
 1. Select **Save & Close**.
 
-## Next steps
+### Next step
 
 [Get started using the Appointment Booking app](use.md)

@@ -270,6 +270,6 @@ Take these steps to enable the audit settings:
 1. Select **Start Auditing**.
 :::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of turning on auditing in the Power Platform admin center.":::
 
-## Next steps
+### Next step
 
 [Get started managing the appointment bookings](manage.md)

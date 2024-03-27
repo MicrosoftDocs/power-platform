@@ -130,7 +130,7 @@ All erroneous flows are recorded in the _SAP solution template error_ table. Eac
 
 These errors can be seen in the _SAP Administrator_ app as described in the [Monitor errors](monitor-errors.md) article.
 
-## Next step
+### Next step
 
 [Extend model-driven apps and Dataverse](extend-model-apps-dataverse.md)
 
