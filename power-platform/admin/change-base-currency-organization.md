@@ -39,7 +39,7 @@ Intro
 1. Navigate to **Settings > Business Management > Currencies** and complete the following actions:
    1.	Validate that the base currency is changed as expected.
    2.	Enter the correct exchange rate for all non-base currencies according to the new base currency.
-   3.	After the base currency is changed as expected and exchange rate values are corrected for all non-base currencies, use the following steps (from step 6) to convert old base currency values on all tables with currency fields to the new base currency.
+   3.	After the base currency is changed as expected and exchange rate values are corrected for all non-base currencies, use the following steps (from step 7) to convert old base currency values on all tables with currency fields to the new base currency.
 
 1. Open the **CurrencyExchangeRate** entity and import or create historical exchange rate data for all non-base currencies for the entire date range of data present in the database. This is needed to convert old base currency values to the new base currency.
 
