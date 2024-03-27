@@ -88,14 +88,15 @@ After exchange rate data is created for all nonbase currencies for the entire da
 
 2. Select **Refresh** on the command bar for the **BaseCurrencyConversion** table record and monitor the **Conversion Status** until **Conversion Status** is **completed** or **failed**.
 
+The conversion job stops once it completes converting old base currency values in all tables listed in the **BaseCurrencyConversionTableLog** table.
+
 ### If you encounter issues during conversion
 
 If there were failures during the conversion, examine the **Conversion Status** and fix those errors.
 
 If any tables failed processing, examine the **BaseCurrencyConversionTableLog** table for error details and fix those errors if errors are data related. In case errors aren't data related, report the issue to [Microsoft Support](get-help-support.md).
 
-If during conversion, you notice performance issues, you can pause the conversion by opening the **BaseCurrencyConversion** table form, and then select **Stop Conversion**  (using option shown below). FYI... Conversion is automatically stopped once it completes converting old base currency values in all tables listed in **BaseCurrencyConversionTableLog** entity.
-Note: To restart the conversion, begin at step 6.
+If during conversion, you notice performance issues, you can pause the conversion by opening the **BaseCurrencyConversion** table form, and then select **Stop Conversion.** Select **Start Conversion** to resume.
 
 > [!NOTE]
 > Rollup column jobs (calculate and mass calculate jobs) are automatically stopped and disabled during the base currency conversion to prevent blocking and to speed up the conversion process. After the base currency conversion is completed, rollup jobs are auto enabled and triggered to recalculate rollup values and ensure that rollup values are up to date.
