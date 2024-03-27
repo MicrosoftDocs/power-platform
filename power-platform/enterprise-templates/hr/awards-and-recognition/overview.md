@@ -52,7 +52,7 @@ The *Awards and Recognition* solution contains various components that an admin 
 
 - **Eight tables**:
 
-  - **Award** dDefines awards users can be nominated for.
+  - **Award** defines awards users can be nominated for.
   - **Award Assessment Rating** specifies questions or values upon which nominated users should be assessed for a given award.
   - **Group** defines teams that are available for team-based nominations.
   - **Group Member** specifies the members of each defined team.
