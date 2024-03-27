@@ -13,15 +13,15 @@ search.audienceType:
 ---
 # Change the base currency of a Dataverse environment in Power Platform
 
-When you create an environment that includes a database in Power Platform, you must specify a currency that is used as the base currency in Dataverse. The base currency the default currency and is used in currency conversion and reporting. There might be situations where you need to change the base currency for an environment. This article describes how to do change it.
+When you create an environment that includes a database in Power Platform, you must specify a currency that is used as the base currency in Dataverse. The base currency the default currency and is used in currency conversion and reporting. There might be situations where you need to change the base currency for an environment. This article describes how to change it.
 
-1. Make a backup of the organization's database before starting base currency conversion. Learn more: [Back up and restore environments](backup-restore-environments.md)
+1. Make a backup of the environment's database before starting base currency conversion. Learn more: [Back up and restore environments](backup-restore-environments.md)
 
 1. Connect to a UCI client. <!-- See my next comment so this can be removed -->
   
 1. Navigate to **Settings > Solutions** and install **Base Currency Conversion Solution**. <!-- Isn't this solution installed from PPAC under Resources > Dynamics 365 apps > Base Currency Conversion? -->
 
-1. Go to the **Home** or **Apps** page and open the **Base Currency Conversion App** from the list of available apps.
+1. Go to the **Home** or **Apps** page and open the **Base Currency Conversion** app from the list of available apps.
 
    > [!NOTE]
    > If the app doesn't appear in the list, refresh or reload the page.
