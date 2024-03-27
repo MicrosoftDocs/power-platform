@@ -32,13 +32,11 @@ Usability is defined by five quality components:
 | Errors | How many errors do users make, how severe are these errors, and how easily can they recover from the errors? |
 | Satisfaction | How pleasant is it to use the design? |
 
-Consider the following strategies for ensuring usability for your workload.
-
 ### Visibility of system status
 
 The system should always keep users informed about what is going on, through appropriate feedback within a reasonable time.
 
-Important details about the current status of the system should be easily accessible. For example, if items are selected from a list, the number of selected items should be displayed.
+Display important details about the current status of the system in clear and intuitive locations. For example, if items are selected from a list, the number of selected items should be displayed.
 
 Use progress indicators or loading animations to reassure users that their request is being processed. These visual indicators prevent frustration from uncertainty and help manage expectations. Without them, users might perceive the system as slow or unresponsive and abandon the task.
 
