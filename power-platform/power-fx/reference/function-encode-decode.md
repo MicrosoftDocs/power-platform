@@ -28,7 +28,7 @@ Encodes and decodes strings.
 
 The **EncodeUrl** function encodes a URL string, replacing certain non-alphanumeric characters with % and a hexadecimal number.
 
-The **EncodeHTML** function encodes a string, replacing certain characters that need to be escaped to be shown properly in a HTML context.
+The **EncodeHTML** function encodes a string, replacing certain characters that need to be escaped to appear properly in an HTML context.
 
 The **PlainText** function removes HTML and XML tags, converting certain tags such as these to an appropriate symbol:
 
@@ -49,7 +49,7 @@ The return value from these functions is the encoded or decoded string. This fun
 
 **PlainText**( _String_ )
 
-- _String_ - Required. String from which HTML and XML tags will be stripped.
+- _String_ - Required. String from which HTML and XML tags are stripped.
 
 ## Examples
 
