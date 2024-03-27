@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 11/30/2023
+ms.date: 03/29/2024
 ---
 
 # Experience Optimization tradeoffs
@@ -15,19 +15,21 @@ During the design phase of a workload, it's important to consider how decisions 
 
 ## Experience Optimization tradeoffs with Reliability
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
+:::image type="icon" source="../_images/trade-off.svg"::: **Increased complexity.**  
 
-## Experience Optimization tradeoffs with Operational Excellence
-
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
-
-<!-- ## Experience Optimization tradeoffs with Performance Efficiency
-
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description. -->
+- Providing new capabilities in the user experience 
 
 ## Experience Optimization tradeoffs with Security
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description.
+
+## Experience Optimization tradeoffs with Operational Excellence
+
+:::image type="icon" source="../_images/trade-off.svg"::: **Increased effort for .** Tradeoff description.
+
+<!-- ## Experience Optimization tradeoffs with Performance Efficiency
+
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description. -->
 
 ## Related resources
 
