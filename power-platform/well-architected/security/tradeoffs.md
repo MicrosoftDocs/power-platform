@@ -79,6 +79,14 @@ The Security pillar requires a workload to explicitly verify identities and acti
 
 - Compliance or organizational requirements often require maintained communication plans for responsible disclosure of breaches. These plans must be factored into security coordination efforts.
 
+## Security tradeoffs with Experience Optimization
+
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased friction**. Optimizing the experience focuses on helping users be more productive and make faster decisions.
+
+- Security surface areas should be minimized, which can negatively impact the use of third-party components and integrations that are desired for optimizing the experience.
+- Data classification can make finding and consuming data in the workload more difficult.
+- Security protocols increase the complexity of user interactions and can result in challenges for usability.
+
 <!--
 ## Security tradeoffs with Performance Efficiency
 
