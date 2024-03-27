@@ -26,7 +26,7 @@ You can use the Item Monitoring dashboard to understand why emails, appointments
 
 The Sync Error column will contain information about why the item did not synchronize: 
 
-:::image type="content" source="media/setup-almacceleratorpowerplatform/upload-deployment-profile-yml-files.png" alt-text="Upload the deployment profile.":::
+:::image type="content" source="media/item-monitoring-dashboard.png" alt-text="Examine the sync error.":::
    
 Selecting the link will direct you to a help article for the error if one exists. 
 
