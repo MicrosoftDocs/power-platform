@@ -67,37 +67,59 @@ Use commonly recognized structures and arrangements for organizing content and e
 
 The following list, while not exhaustive, describes established layouts commonly used for business or productivity applications. All can take place within the main content region.
 
-- *Landing/Home screen.* Serves as the entry point to an application, providing users with an overview of the app's offerings or features. It's ideal for welcoming users, offering quick access to key functionalities, navigation options, or calls to action, and setting the tone for the app's experience. Prioritize clarity, simplicity, and intuitive navigation to guide users effectively.
+#### Landing/Home screen
 
-- *Dashboard.* A centralized hub within an application that presents users with a comprehensive overview of relevant data or information. It often consists of customizable widgets or modules, allowing users to monitor specific metrics or perform actions. Dashboards are suited for applications with complex datasets or multifaceted functionalities, enabling users to track progress, analyze trends, and make informed decisions at a glance. They are particularly useful in analytics platforms, project management tools, and financial management apps.
+:::image type="content" source="media/layout/landing.svg" alt-text="App screen layout for desktop and phone displaying a landing.":::
 
-- *Form.* A structured layout that facilitates data input from users, typically comprised of fields for entering various types of information such as text, numbers, dates, and selections. Forms are essential for collecting user input, processing transactions, and facilitating interactions within applications. They are commonly employed in registration flows, checkout processes, data entry tasks, and any scenario requiring user input or feedback.
+Serves as the entry point to an application, providing users with an overview of the app's offerings or features. Typically aims to capture the attention of visitors and encourages taking a specific action, such as completing a first-time task or exploring further content. It often contains hero images and clearn navigation options.
 
-- *Entity/Profile view.* Presents detailed information about a specific entity, such as a user profile, product listing, or content item. It typically includes descriptive text, multimedia elements, and relevant actions or interactions. They're well-suited for showcasing detailed information about items within an application. They provide users with in-depth insights, facilitate decision-making, and support engagement with specific entities such as user profiles in social networking apps or product listings in e-commerce platforms.
+It's ideal for welcoming users, offering quick access to key functionalities, navigation options, or calls to action, and setting the tone for the app's experience. Prioritize clarity, simplicity, and intuitive navigation to guide users effectively.
 
-- *List page.* Displays a collection of items or entities in a structured format, often presented in a linear or grid layout. It typically includes brief summaries or previews of each item, along with navigation controls for browsing or filtering. List pages are effective for presenting large sets of content or data in a digestible format, enabling users to scan, search, and navigate efficiently. For example, if actions on specific rows are enabled, the process should be clear. List pages are commonly used in content management systems, directory listings, search results, and news feeds.
+#### Dashboard
 
-- *Mini review.* (Split-screen) Divides the interface into two distinct sections, with a list displayed on the left side and an item view on the right side. The list typically contains a collection of items, while the item view provides detailed information about the selected item from the list. This layout is particularly effective in scenarios where users need to browse through a list of items quickly and view detailed information about each item simultaneously, such as when performing bulk operations. Product catalogs, document management systems, email or communication clients, and task management tools (for example, Azure Dev Ops query viewer) are scenarios that typically fit this pattern.
+:::image type="content" source="media/layout/dashboard.svg" alt-text="App screen layout for desktop and phone displaying a dashboard.":::
 
-- *Wizard.* Guides users through a series of sequential steps or tasks, typically in a linear fashion, to complete a complex process or achieve a specific goal. It often includes progress indicators, prompts, and validation checks. Wizards are beneficial for simplifying complex processes, reducing cognitive overload, and guiding users through unfamiliar tasks or workflows. They are commonly used in onboarding flows, setup processes, multi-step forms, and task-based interactions such as configuring complex settings or transactions.
+A centralized hub within an application that presents users with a comprehensive overview of relevant data or information. It often consists of customizable widgets or modules, allowing users to monitor specific metrics or perform actions.
 
-<!--- 
-Header and Footer Layout: This layout typically consists of a header section at the top of the page, containing branding, navigation menus, and search bars, and a footer section at the bottom, often containing copyright information, links to additional resources, and contact details.
+Dashboards are suited for applications with complex datasets or multifaceted functionalities, enabling users to track progress, analyze trends, and make informed decisions at a glance. They are particularly useful in analytics platforms, project management tools, and financial management apps.
 
-Sidebar Layout: In this layout, a vertical sidebar is positioned on one side of the main content area, providing navigation menus, filters, or additional information that complements the main content displayed in the central area of the page.
+#### Form
 
-Grid Layout: Content is organized into a grid structure with rows and columns, allowing for efficient display of images, text, and other elements. Grid layouts are commonly used for product listings, image galleries, and portfolio showcases.
+:::image type="content" source="media/layout/form.svg" alt-text="App screen layout for desktop and phone displaying a form.":::
 
-Hero Banner Layout: This layout features a large, prominently displayed banner or image at the top of the page, often accompanied by a headline and call-to-action button. Hero banners are effective for showcasing key messages, promotions, or featured content.
+A structured layout that facilitates data input from users, typically comprised of fields for entering various types of information such as text, numbers, dates, and selections. Forms are essential for collecting user input, processing transactions, and facilitating interactions within applications.
 
-Card-Based Layout: Content is presented within individual cards or containers, each containing related information or functionality. Card-based layouts are versatile and can be used for displaying articles, products, user profiles, or navigation links.
+They are commonly employed in registration flows, checkout processes, data entry tasks, and any scenario requiring user input or feedback.
 
-Full-Screen Layout: Content spans the entire width and height of the screen, creating a visually immersive experience. Full-screen layouts are often used for landing pages, splash screens, or multimedia presentations.
+#### Entity/Profile view
 
-Tabbed Layout: Content is organized into tabs or tabs, allowing users to switch between different sections or categories of information within the same page. Tabbed layouts are useful for conserving screen space and organizing content hierarchically.
+:::image type="content" source="media/layout/entity.svg" alt-text="App screen layout for desktop and phone displaying a profile view.":::
 
-Modal Layout: Content is displayed in a modal window that overlays the main page, focusing the user's attention on a specific task or interaction while temporarily dimming the background. Modal layouts are commonly used for alerts, dialogs, and form submissions.
---->
+Presents detailed information about a specific entity, such as a user profile, product listing, or content item. It typically includes descriptive text, multimedia elements, and relevant actions or interactions.
+
+They're well-suited for showcasing detailed information about items within an application. They provide users with in-depth insights, facilitate decision-making, and support engagement with specific entities such as user profiles in social networking apps or product listings in e-commerce platforms.
+
+#### List page
+
+:::image type="content" source="media/layout/list.svg" alt-text="App screen layout for desktop and phone displaying a table.":::
+
+Displays a collection of items or entities in a structured format, often presented in a linear or grid layout. It typically includes brief summaries or previews of each item, along with navigation controls for browsing or filtering. 
+
+List pages are effective for presenting large sets of content or data in a digestible format, enabling users to scan, search, and navigate efficiently. For example, if actions on specific rows are enabled, the process should be clear. List pages are commonly used in content management systems, directory listings, search results, and news feeds.
+
+#### Mini review (split screen)
+
+:::image type="content" source="media/layout/mini-review.svg" alt-text="App screen layout for desktop and phone displaying a mini review.":::
+
+Divides the interface into two distinct sections, with a list displayed on the left side and an item view on the right side. The list typically contains a collection of items, while the item view provides detailed information about the selected item from the list. 
+
+This layout is particularly effective in scenarios where users need to browse through a list of items quickly and view detailed information about each item simultaneously, such as when performing bulk operations. Product catalogs, document management systems, email or communication clients, and task management tools (for example, Azure Dev Ops query viewer) are scenarios that typically fit this pattern.
+
+#### Wizard
+
+:::image type="content" source="media/layout/wizard.svg" alt-text="App screen layout for desktop and phone displaying a wizard.":::
+
+Guides users through a series of sequential steps or tasks, typically in a linear fashion, to complete a complex process or achieve a specific goal. It often includes progress indicators, prompts, and validation checks. Wizards are beneficial for simplifying complex processes, reducing cognitive overload, and guiding users through unfamiliar tasks or workflows. They are commonly used in onboarding flows, setup processes, multi-step forms, and task-based interactions such as configuring complex settings or transactions.
 
 Proceed to customize and build upon the standard layout to suit specific requirements. This process might include adding or removing elements, adjusting the size and positioning of elements, and applying styling to match the brand identity or visual design guidelines. Experiment with different configurations and variations of the standard layout to find the most effective arrangement for content and overall user experience.
 

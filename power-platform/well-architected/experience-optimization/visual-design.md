@@ -28,6 +28,8 @@ The *aesthetic-usability effect* refers to the tendency to consider attractive p
 
 ### Balance and weight
 
+Visual balance represents a sense of equilibrium and harmony in visual perception. It helps users process and organize visual information more efficiently by reducing cognitive strain. Balanced compositions are generally perceived as more pleasing and easier to comprehend, allowing users to focus attention effectively and navigate visual stimuli with greater ease. This cognitive aspect of visual balance underscores its importance in facilitating clear communication and enhancing the overall user experience.
+
 A composition is balanced when all the elements are in optical equilibrium. Often, the mathematical placement requires adjustment. Some of the elements that affect the visual weight are size, color, density, white space.
 
 - *Size*. Larger elements tend to carry more visual weight than smaller ones. To achieve balance, larger elements can be counterbalanced by grouping them with smaller elements or adjusting their placement within the layout.
@@ -51,24 +53,38 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
    :::column-end:::
 :::row-end:::
 
+### Color
+
+Hues, tints, shades, and tones can convey meaning, evoke emotions, and create aesthetic appeal. Color plays a crucial role in guiding user attention, establishing hierarchy, conveying information, and enhancing usability. There are several reasons why thoughful color design in a UI can affect users the way you want:
+
+1. *Attention and perception.* Certain colors are more eye-catching than others, allowing designers to direct viewers' focus to specific elements. Color contrast can enhance readability and distinguish between different components, facilitating rapid processing of information.
+
+2. *Emotional response.* Colors have psychological associations that evoke emotions and moods. Warm colors like red and orange can create a sense of energy and excitement, while cool colors like blue and green can evoke calmness and tranquility. You can elicit desired responses to influence users towards the intended experience.
+
+3. *Brand identity.* Consistent use of color across branding materials helps establish a strong visual identity and fosters brand recognition. Users often associate specific colors with particular brands and associate their experience with brand loyalty and trust.
+
+4. *Visual hierarchy.* Color can be used to establish visual hierarchy and organize information. Assign different colors to various elements based on their importance or category to create a clear hierarchy and facilitate easier navigation and comprehension.
+
 ### Proximity
 
 Items that are placed closer together seem more related. When arranging elements, ensure there's a noticeable difference in spacing between elements that are closely related and those that are not.
 
-Group related elements together that are functionally similar or belong to the same hierarchical category. For example, buttons that perform similar actions or options within a dropdown menu should be grouped closely together to indicate their association. In a navigation bar, menu items that are closely spaced suggest a related set of options, while a larger gap between menu categories visually distinguishes them.
+This Gestalt principle suggests that the spatial distance between visual elements influences how they are perceived and organized mentally, and underscores its importance in facilitating efficient processing and understanding of visual stimuli.
 
-Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer spacing between paragraphs or sentences indicates a logical connection or continuation of thought, while greater spacing denotes a transition or a break in content. This technique helps users navigate and comprehend textual information more effectively.
+Group related elements together that are functionally similar or belong to the same hierarchical category. For example, buttons that perform similar actions or options within a dropdown menu should be grouped closely together to indicate their association. In a navigation bar, menu items that are closely spaced suggest a related set of options, while a larger gap between menu categories visually distinguishes them. Form items that are related should be grouped together (e.g., address fields in a section called 'address').
 
-Ensure there's a noticeable distinction in spacing between related and unrelated elements to prevent visual clutter and confusion. Clear spacing helps users quickly identify groups of related elements and understand their functional relationships without confusion. Minor differences in spacing might go unnoticed. A spacing ramp of a design system can help determine the appropriate spacing needed based on element size.
+Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer paragraphs spacing indicates a logical connection or continuation of thought, while greater spacing denotes a transition or a break in content. This technique promotes efficient comprehension of textual information.
+
+Ensure there's a noticeable distinction in spacing between related and unrelated elements to prevent confusion. A spacing ramp can help consistently determine the appropriate spacing needed based on the element size.
 
 :::row:::
    :::column span="":::
-      ![Example demonstrating proximity and relationship.](./media/visual-design/proximity-left.svg)
+      ![A light colored circle and dark colored triangle on the left, and one lone light colored circle on the right.](./media/visual-design/proximity-left.svg)
       **The circle on the left is more related to the triangle than to the other circle.**
 
    :::column-end:::
    :::column span="":::
-      ![Example demonstrating spacing and relationship](./media/visual-design/proximity-right.svg)
+      ![Three groups of horizontal lines arranged vertically, where the top two groups are closer together than the last group.](./media/visual-design/proximity-right.svg)
       **Spacing between paragraphs is smaller than space between sections.**
 
    :::column-end:::
@@ -101,15 +117,15 @@ Arrange key interface elements, such as call-to-action buttons or important info
 
 ### Closure
 
-The human brain tends to seek simplicity, recognizing a single pattern over individual objects, even when some information is missing.
+The human brain tends to see complete forms, recognizing a single (familiar) pattern, over individual objects, even when some information is missing.
 
-Ensure visual consistency in design elements such as shapes, colors, and sizes. Consistent visual patterns help users quickly recognize and understand interface elements, even if they're presented in different contexts.
+Ensure visual consistency in design elements (such as shapes, colors, and sizes) to help users learn patterns they should expect, even if they're presented in different contexts.
 
 Use simple and familiar icons or symbols that allow users to fill in missing information based on their previous experiences. For example, a magnifying glass icon is commonly associated with search functionality, even without accompanying text.
 
 Present information gradually to users (also known as progressive disclosure). Allow users to fill in missing details as they interact with the interface, thus avoiding overwhelming them with too much information and encouraging exploration.
 
-Apply Gestalt principles such as similarity, proximity, and continuation to create cohesive visual patterns that encourage users to perceive objects as whole entities. For example, grouping related elements together can help users understand their relationship and purpose. Visually arrange elements consistently using Gestalt principles to indicate segmentation. Use space effectively to create a sense of closure around interface elements.
+Create cohesive visual patterns that encourage users to perceive objects as whole entities. For example, grouping related elements together can help users understand their relationship and purpose. Visually arrange elements consistently using Gestalt principles to indicate segmentation. Use space effectively to create a sense of closure around interface elements.
 
 Use animation and transitions to guide users' attention and convey changes in interface states. Smooth transitions between different states or screens can help users understand the relationship between elements and fill in missing information. Multiple modern controls available in Power Apps inherently display animations.
 
@@ -188,18 +204,18 @@ Ensure that visual similarities are complemented by other cues, such as text lab
 
 People instinctively perceive elements to be either a "figure" (what stands out in the front) or a "ground" (what recedes into the background). Therefore, context influences perception, and it's crucial to ensure sufficient delineation to distinguish important elements from the background. Whitespace (negative space) increases comprehension of content.
 
-Use contrast in color, size, or visual style to establish a clear figure-ground relationship. Important elements should stand out prominently against the background, making them easily distinguishable and guiding users' attention effectively. Surfaces with lighter colors, and more contrasting text or visual elements against the background, have more prominence. This approach reduces visual clutter and helps users identify key information. Provide sufficient contrast between foreground and background elements to improve readability for users with visual impairments, improving their ability to access and comprehend content.
+Use contrast in color, size, or visual style to establish a clear figure-ground relationship. Important elements should stand out prominently against the background, making them easily distinguishable and guiding users' attention effectively. Surfaces with lighter colors, and more contrasting visual elements against the background, have more prominence. This approach reduces visual clutter and helps users identify key information. Provide sufficient contrast between foreground and background elements to improve readability for users with visual impairments, improving their ability to access and comprehend content.
 
 Maintaining consistency in the placement and styling of interface elements reinforces the figure-ground relationship and aids users in understanding the interface structure. Consistent use of design patterns and visual cues ensures that users can quickly discern between foreground and background elements across different screens and contexts. Inconsistencies in design can disrupt users' mental models and hinder their ability to navigate the interface efficiently.
 
 :::row:::
    :::column span="":::
-      ![Example illustrating low contrast and minimal negative space with blocks.](./media/visual-design/figureground-left.svg)
+      ![Two rows of uniformly stacked white containers with dark elements, divided by low contrast borders.](./media/visual-design/figureground-left.svg)
       **Low contrast and minimal negative space contribute to perceiving the white rectangles as part of the background.**
 
    :::column-end:::
    :::column span="":::
-      ![Example layout illustrating figure and ground.](./media/visual-design/figureground-right.svg)
+      ![Example screen layout with illustrations in a colored background, and a prominent white box of content on the left.](./media/visual-design/figureground-right.svg)
       **A side image needs to recede into the background so users can focus on important content.**
 
    :::column-end:::
@@ -232,11 +248,11 @@ Visual cues such as lines, contrast, and spacing, are used to signify to users t
 
 Employ focal point principals (like bold text, contrasting colors, or icons) to signal important information or actions to users. For example, use a bright color for important buttons or headings to make them stand out.
 
-Be selective about what you highlight to avoid overwhelming users with too much information. Only signal elements that are truly important for the user's task or goal. Too many signals can create confusion and make it difficult for users to prioritize. Identify the information that is most important to the user and emphasize it appropriately. For example, in a form, highlight required fields to guide the user's attention. This technique prevents users from getting lost in unnecessary details and helps them focus on what's essential. Typically, it's recommended to have only one call-to-action button per page.
+Be selective about what you highlight to avoid overwhelming users with too much information. Only signal elements that are truly important for the user's task or goal. Too many signals can create confusion and make it difficult for users to prioritize. Identify the information that is most important to the user and emphasize it appropriately. Typically, it's recommended to have only one call-to-action button per page. In forms, highlight required fields to guide the user's attention. This prevents users from getting lost in unnecessary details and helps them focus on what's essential.
 
-Ensure signals follow a consistent visual language throughout the interface. This design guideline helps users recognize patterns and understand the meaning of different signals intuitively. Inconsistency in signaling can lead to confusion and make it harder for users to interpret the interface.
+Ensure signals follow a consistent visual language throughout the interface. This serves as a guideline that helps users recognize patterns and understand the meaning of different signals intuitively.
 
-Tailor your signals to the specific context and user's needs. For example, if users are scanning an interface that presents certain tasks, signal critical status and actionable items clearly to attract their attention. Contextual signals help users quickly find relevant information without being distracted by unrelated details.
+Tailor signals to the specific context and user's needs. For example, if users are scanning an interface that presents certain tasks, signal critical status and actionable items clearly to attract their attention. Contextual signals help users quickly find relevant information without being distracted by unrelated details.
 
 :::row:::
    :::column span="":::
@@ -251,16 +267,22 @@ Tailor your signals to the specific context and user's needs. For example, if us
    :::column-end:::
 :::row-end:::
 
-<!---
 ## Power Platform facilitation
 
-These visual design recommendations are universal for overall design, and implicit in the Power Apps modern controls. Take these into consideration when determining overall design and arrangement of components available.
+In canvas apps, use [layout containers](/power-apps/maker/canvas-apps/controls/control-horizontal-container) to group related elements. Ideally you should organize all page elements in containers, and layout containers can also efficiently separate child containers by adjusting the gap property.
+
+In model driven app forms, [sections](/power-apps/maker/model-driven-apps/add-move-or-delete-sections-on-form) can be used to group related fields or elements.
+
+Implement consistency in common visual elements with reusabled [custom components](/power-apps/maker/canvas-apps/create-component).
+
+In canvas apps, [modern controls](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) feature integrated signaling within their design. Specifically, the [button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-button) and [badge](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) controls offer various options in their style properties, making them effective signals. Adhere to best practices for each component and apply signaling selectively to ensure optimal communication.
 
 ## See also
 
-Related links here.
-
--->
+- [Principles of grouping](https://en.wikipedia.org/wiki/Principles_of_grouping)
+- [Gestalt psychology](https://en.wikipedia.org/wiki/Gestalt_psychology)
+- [Aesthetic usability effect](https://en.wikipedia.org/wiki/Aesthetic%E2%80%93usability_effect)
+- [Fluent UI Design System spacing ramp](https://fluent2.microsoft.design/layout#:~:text=Fluent's%20global%20spacing%20ramp%20is,a%20scale%20of%20supported%20sizes.)
 
 ## Experience Optimization checklist
 
