@@ -83,6 +83,9 @@ When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Un
 
 As part of removing the legacy web client app, a new environment property has been added to allow gradual hiding of the app for those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then see the **Show legacy app for admins**.
 
+> [!div class="mx-imgBorder"] 
+> ![Show legacy app for admins.](media/ppac-show-legacy-app-for-admins.png "Show legacy app for admins")
+
 | Value | Behavior |
 | -- | -- |
 | Auto (default) | Default value which will behaves like **On** initially and will gradually be changed to **Off** |
