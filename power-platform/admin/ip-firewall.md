@@ -38,8 +38,11 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 
 - The IP firewall is a feature of [Managed Environments](managed-environment-overview.md).
 - You must have a Power Platform admin role to enable or disable the IP firewall.
-
+  
 ## Enable the IP firewall
+You can enable IP firewall on a Power Platform environment either using Power Platform admin center or using Microsoft Dataverse OData API.
+
+### Enable the IP firewall using Power Platform admin center
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
 1. Select **Environments**, and then select an environment.
@@ -55,6 +58,42 @@ When a request is made to Dataverse, the request IP address is evaluated in real
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
 
 1. Select **Save**.
+
+### Enable IP firewall using Microsoft Dataverse OData API
+The Microsoft Dataverse OData API enables you to retrieve and modify values within a Power Platform Environment. For detailed guidance [Query data using the Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/query-data-web-api) and [Update and delete table rows using the Web API (Microsoft Dataverse) - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#update-a-single-property-value).
+You have the flexibility to select the tools you prefer; additionally, we are providing couple of links that will enable you to retrieve and modify values via the OData API for Microsoft Dataverse.
+1.	[Use Insomnia with Dataverse Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/insomnia)
+2.	[Quick Start Web API with PowerShell and Visual Studio Code - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/quick-start-ps)
+
+**Configure IP firewall using OData API**
+~~~
+PATCH https://{yourorg}.api.crm*.dynamics.com/api/data/v9.2/organizations({yourorgID})
+HTTP/1.1
+Content-Type: application/json
+OData-MaxVersion: 4.0
+OData-Version: 4.0
+~~~
+**Payload**
+~~~
+[
+    {
+        "enableipbasedfirewallrule": true,
+        "allowediprangeforfirewall": "18.205.0.0/24,21.200.0.0/16",
+        "enableipbasedfirewallruleinauditmode": true,
+        "allowedservicetagsforfirewall": "AppService,ActionGroup,ApiManagement,AppConfiguration,AppServiceManagement,ApplicationInsightsAvailability,AutonomousDevelopmentPlatform,AzureActiveDirectory,AzureAdvancedThreatProtection,AzureArcInfrastructure,AzureAttestation,AzureBackup,AzureBotService",
+        "allowapplicationuseraccess": true,
+        "allowmicrosofttrustedservicetags": true
+    }
+]
+~~~
+- **enableipbasedfirewallrule** - enable or disable the feature using true/false.
+- **allowediprangeforfirewall** - List of Ip Ranges that are to be allowed, Provide them in CIDR notation, seperared by a comma.
+> [!IMPORTANT]
+> Make sure that the service tag names match exactly what you see in the IP firewall’s settings page. If there’s any discrepancy, IP restrictions might not function correctly.
+- **enableipbasedfirewallruleinauditmode** - true indicates Audit only mode, false indicates enforcement Mode.
+- **allowedservicetagsforfirewall** - List of Service Tags to be allowed separated by a Comma. If you don’t want to configure any service tags. Leave this value as null.
+- **allowapplicationuseraccess** - default value is true.
+- **allowmicrosofttrustedservicetags** - default value is true.
 
 > [!IMPORTANT]
 > When **Allow Access for Microsoft trusted services** and **Allow access for all application users** are disabled, some services that use Dataverse, such as Power Automate flows, might no longer work.
