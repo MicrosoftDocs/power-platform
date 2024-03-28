@@ -187,7 +187,7 @@ Although some interaction implementation has been encapsulated into the modern c
 - [Cognitive bias](https://en.wikipedia.org/wiki/Cognitive_bias)
 - [Müller Lyer illustration](https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion)
 - [Hick's law](https://en.wikipedia.org/wiki/Hick%27s_law)
-- [Fitt's law](https://en.wikipedia.org/wiki/Fitts%27s_law)
+- [Fitts's law](https://en.wikipedia.org/wiki/Fitts%27s_law)
 - [Serial position effect](https://en.wikipedia.org/wiki/Serial-position_effect)
 - [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle)
 - [Jakob's law](https://lawsofux.com/jakobs-law/)

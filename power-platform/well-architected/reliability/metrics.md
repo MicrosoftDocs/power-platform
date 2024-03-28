@@ -4,7 +4,7 @@ description: Learn how to define availability and recovery target metrics for cr
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/12/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---

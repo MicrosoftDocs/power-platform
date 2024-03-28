@@ -4,7 +4,7 @@ description: Learn how to develop background jobs to help minimize the load on t
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/01/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
