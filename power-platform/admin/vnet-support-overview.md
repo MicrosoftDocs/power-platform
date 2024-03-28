@@ -51,7 +51,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
-- You can only use Copy and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center). If the source environment has Virtual Network enabled and the target does not, you cannot do Copy and Restore.
+- You can only use Copy and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center). If the source environment has Virtual Network enabled and the target doesn't, you can't do Copy and Restore.
 
 ## Supported regions
 
@@ -112,7 +112,7 @@ Azure Virtual Network support for Power Platform uses an Azure subnet delegation
 ### What are the scenarios where I should use Virtual Network support for Power Platform and the virtual network data gateway?
 Virtual Network support for Power Platform is the only supported option for all the scenarios for outbound connectivity from Power Platform except [Power BI](/power-bi/fundamentals/power-bi-overview) and [Power Platform dataflows](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365).
 
-[Power BI](/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](/data-integration/vnet/data-gateway-power-platform-dataflows) will continue to use [virtual network (vNet) data gateway](/data-integration/vnet/overview).
+[Power BI](/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform dataflows](/data-integration/vnet/data-gateway-power-platform-dataflows) continue to use [virtual network (vNet) data gateway](/data-integration/vnet/overview).
 
 ### How do you ensure that a virtual network subnet or data gateway from one customer isn't used by another customer in Power Platform?
 
@@ -166,13 +166,13 @@ We don't recommend any specific topology. However, our customers widely use the 
 Yes, to enable Virtual Network support for Power Platform environments, it's essential to have an Azure subscription associated with the Power Platform tenant.
 
 ### How does Power Platform utilize Azure subnet delegation?
-When a Power Platform environment has a delegated, Azure subnet assigned, it leverages Azure Virtual Network injection to inject the container at runtime into a delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated an IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs through a local port on the container, and the traffic flows over Azure Fabric.
+When a Power Platform environment has a delegated, Azure subnet assigned, it uses Azure Virtual Network injection to inject the container at runtime into a delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated an IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs through a local port on the container, and the traffic flows over Azure Fabric.
 
 ### Can I utilize an existing Virtual Network for Power Platform?
 Yes, you can utilize an existing Virtual Network for Power Platform, as long as a single, new subnet within the Virtual Network is delegated specifically to Power Platform. It’s important to note that this delegated subnet shouldn't host any other services.
 
 ### Can I use US East 2 as the failover if I have my Power Platform environment in Canada? 
-To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast** respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, establish Virthal Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region for connectivity.
+To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast** respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, establish Virtual Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region for connectivity.
 
 ### What is a Dataverse plug-in?
 A Dataverse plug-in is a piece of custom code that can be deployed into a Power Platform environment. This plug-in can be configured to run during events (like a change in data) or triggered as a Custom API. Learn more: [Dataverse Plug-ins](/power-apps/developer/data-platform/plug-ins)
@@ -184,7 +184,7 @@ A Dataverse plug-in operates within a container. When a Power Platform environme
 Yes. In a given Power Platform or Dataverse environment, multiple plug-ins can indeed operate within the same container. Each container consumes one IP address from the subnet address space, and each container can execute multiple requests.
 
 ### How does the infrastructure handle an increase in concurrent plug-in executions?
-As the number of concurrent plug-in executions increases, the infrastructure automatically auto-scales (out or in) to accommodate the load. The subnet delegated to a Power Platform environment should have sufficient address spaces to handle the peak volume of executions for the workloads in that Power Platform environment.
+As the number of concurrent plug-in executions increases, the infrastructure automatically autoscales (out or in) to accommodate the load. The subnet delegated to a Power Platform environment should have sufficient address spaces to handle the peak volume of executions for the workloads in that Power Platform environment.
 
 ### Who controls the Virtual Network and network policies associated with it? 
 As a customer, you have ownership and control over the Virtual Network and its associated network policies. Power Platform, on the other hand, utilizes the allocated IP addresses from the delegated subnet within that Virtual Network. 
