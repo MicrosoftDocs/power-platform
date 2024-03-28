@@ -9,3 +9,6 @@
     - name: Power Fx
       tocHref: /power-platform/power-fx/
       topicHref: /power-platform/power-fx/overview/
+    - name: Well-Architected
+      tocHref: /power-platform/well-architected/
+      topicHref: /power-platform/well-architected/index
