@@ -67,7 +67,7 @@ If no app is referenced in the URL, the record or page opens without any navigat
 
 ### Dynamics 365 - custom hidden for users
 
-The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It is not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
+The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It is not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
 
 > [!div class="mx-imgBorder"] 
 > ![Dynamics 365 - custom legacy app.](media/dynamics-365-custom.png "Dynamics 365 - custom legacy app")
@@ -91,6 +91,12 @@ As part of removing the legacy web client app, a new environment property has be
 | Auto (default) | Default value which will behaves like **On** initially and will gradually be changed to **Off** |
 | On | Legacy web client app is shown for admins |
 | Off | Legacy web client app is hidden for admins |
+
+The gradual hiding will happen in the following steps. Admins can explicitly set to **On** for environment that still need the lgacy web client app.
+
+1. Starting in May 2024 when new environments are provisioned, this property will be defaulted to **Off**.
+1. Starting with 2406 monthly channel release, admins in monthly channel will have **Auto** treated as **Off**.
+1. Starting with 2024 Release Wave 2, admins in semi-annual channel will have **Auto** treated as **Off**.
 
 ### Advanced settings
 
