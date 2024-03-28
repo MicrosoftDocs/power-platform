@@ -4,11 +4,13 @@ description: Recover database space by deleting audit logs
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/05/2022
+ms.date: 03/28/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- paulliew 
 ---
 # Recover database space by deleting audit logs
 
