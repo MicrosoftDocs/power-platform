@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 03/15/2024
+ms.date: 03/28/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -13,7 +13,7 @@ ms.custom:
 
 # IP firewall in Power Platform environments
 
-The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
+The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyses the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
 
@@ -40,7 +40,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 - You must have a Power Platform admin role to enable or disable the IP firewall.
   
 ## Enable the IP firewall
-You can enable IP firewall on a Power Platform environment either using Power Platform admin center or using Microsoft Dataverse OData API.
+You can enable IP firewall on a Power Platform environment either using Power Platform admin center or using Dataverse OData API.
 
 ### Enable the IP firewall using Power Platform admin center
 
@@ -59,9 +59,9 @@ You can enable IP firewall on a Power Platform environment either using Power Pl
 
 1. Select **Save**.
 
-### Enable IP firewall using Microsoft Dataverse OData API
-The Microsoft Dataverse OData API enables you to retrieve and modify values within a Power Platform Environment. For detailed guidance [Query data using the Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/query-data-web-api) and [Update and delete table rows using the Web API (Microsoft Dataverse) - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#update-a-single-property-value).
-You have the flexibility to select the tools you prefer; additionally, we are providing couple of links that will enable you to retrieve and modify values via the OData API for Microsoft Dataverse.
+### Enable IP firewall using Dataverse OData API
+The Dataverse OData API enables you to retrieve and modify values within a Power Platform Environment. For detailed guidance [Query data using the Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/query-data-web-api) and [Update and delete table rows using the Web API (Microsoft Dataverse) - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#update-a-single-property-value).
+You have the flexibility to select the tools you prefer; additionally, we are providing couple of links that will enable you to retrieve and modify values via the OData API for Dataverse.
 1.	[Use Insomnia with Dataverse Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/insomnia)
 2.	[Quick Start Web API with PowerShell and Visual Studio Code - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/quick-start-ps)
 
@@ -116,7 +116,7 @@ We recommend that you should test the IP firewall in your test environment first
 
 IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
-In addition, access to using IP firewall for Microsoft Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
+In addition, access to using IP firewall for Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
 
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance
