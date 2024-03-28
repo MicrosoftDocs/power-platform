@@ -203,6 +203,23 @@ The Deployment Pipeline Configuration app can be accessed by anyone with the Dep
 
 Now you're able to link the environments to pipelines in the new host.
 
+## Frequently Asked Questions
+
+### Why can I still create a pipeline with a target environment that is not a Managed Environment?
+Pipelines in Power Platform is not currently strictly enforced as a Managed Environments feature. There is prevalent messaging that "Pipelines is a feature of managed environments", but you can still create pipelines with target environments that are not managed today. However, we are planning to enforce this in the near future.
+
+### Why am I seeing an error that states "this environment is already associated with another pipelines host"?
+This error indicates that another host already contains an active environment record that you are trying to associate with the current host. To resolve this, refer to the section above on [Disassociating environments from one host and associating them with another host](#Disassociating). We will also soon have a "Force link" capability for admins to forgo the environment record removal process.
+
+### Do the pipelines and data within the platform host count towards my Dataverse capacity?
+No, the data consumption in the platform host does not count against your current plan. The same does not apply to a custom host, which is not an implementation in the platform but instead in a customizable environment.
+
+### Will personal pipelines conflict with any pipelines that I have already set up?
+No. Thanks to the host separation dynamic that we have in place, there is no way for a Maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. Nor will Makers be able to see the new Pipelines for All experience (that enables the creation of lightweight personal pipielines) in environments already associated with a custom host; the new experience only shows up by default in environments that are not already associated with a host and those associated with the platform host. Makers also do not receive any elevated access to environments as a result of this feature. Selectable target environments are filtered to only include environments that a Maker could import to today.
+
+### What if I want to enable Makers to create personal pipelines in a custom host? Can I do that?
+Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant these lightweight pipeline creation permissions to. This is **not** assigned to anyone by default in the case of custom hosts.
+
 ## Next steps
 
 - [Extend pipelines in Power Platform](extend-pipelines.md)
