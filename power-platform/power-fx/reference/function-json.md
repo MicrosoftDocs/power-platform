@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 3/28/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -51,7 +51,7 @@ Specify the optional _Format_ argument to control how readable the result is and
 | JSONFormat enum            | Description                                                                                                                                                                                         |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JSONFormat.Compact**                | Default. The output is as compact as possible with no added spaces or newlines.                                                                                                                     |
-| **JSONFormat.FlattenValueTables**     | As an [inline Value table](../tables#inline-value-tables), `[1,2,3]` notation results in a table containing records where each record has a single **Value** column. In JSON, that same notation represents an array of three numbers. To make interpoperability between the two easier, this option will flatten a Power Fx Value table to a JSON friendly array instead.
+| **JSONFormat.FlattenValueTables**     | As a [Value table](../tables#inline-value-tables), `[1,2,3]` notation results in a table containing records where each record has a single **Value** column. In JSON, that same notation represents an array of three numbers. To make interpoperability between the two easier, this option will flatten a Power Fx Value table to a JSON friendly array instead.
 | **JSONFormat.IndentFour**             | To improve readability, the output contains a newline for each column and nesting level and uses four spaces for each indentation level.                                                            |
 | **JSONFormat.IncludeBinaryData**      | The result includes image, video, and audio-clip columns. This format can dramatically increase the result's size and degrade your app's performance.                                               |
 | **JSONFormat.IgnoreBinaryData**       | The result doesn't include image, video, or audio-clip columns. If you specify neither **JSONFormat.IncludeBinaryData** nor **JSONFormat.IgnoreBinaryData**, the function produces an error if it encounters binary data. |
