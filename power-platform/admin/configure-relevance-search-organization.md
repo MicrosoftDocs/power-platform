@@ -4,15 +4,17 @@ description: Configure Dataverse search to improve search results and performanc
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/27/2022
+ms.date: 03/28/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- mspilde 
 ---
 # Configure Dataverse search for your environment
 
-Dataverse search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you'll be able to enable and configure Dataverse search as described below. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
+Dataverse search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you can enable and configure Dataverse search as described in this article. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
 
 With Dataverse search enabled, a search box is always available at the top of every page in all the model-driven apps in the environment. Users can start a new search and quickly find the information they're looking for, from the searchable tables included in the app. Dataverse search also becomes the default and only global search experience in all model-driven apps in the environment. Users won't be able to switch to [quick find search](/powerapps/user/quick-find) formerly known as categorized search.  
 
@@ -54,7 +56,7 @@ For more information about Dataverse search, see [Search for tables and rows by
 
 ## Enable Dataverse search
 
-Dataverse search is an opt-out feature, set to **On** by default with [2021 release wave 2](/power-platform-release-plan/2021wave2/power-apps/modern-search-all-end-users-model-driven-power-apps), on all production environments, except those using their own encryption key. We recommend enabling Dataverse search so users have a superior search experience in model-driven apps with the benefits listed above. All model-driven Power Apps will have the global search experience with the search bar in the header in the environment. Individual users won't be able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find).
+Dataverse search is an opt-out feature, set to **On** by default with [2021 release wave 2](/power-platform-release-plan/2021wave2/power-apps/modern-search-all-end-users-model-driven-power-apps), on all production environments, except those using their own encryption key. We recommend enabling Dataverse search so users have a superior search experience in model-driven apps with the benefits listed above. All model-driven Power Apps have the global search experience with the search bar in the header in the environment. Individual users aren't able to switch to [quick find search, formerly known as categorized search](/powerapps/user/quick-find). Tables must be included in the application you're using with Dataverse search. Be sure that any table you want users to search on are included in your application.
 
 > [!IMPORTANT]
 > If you opt in to [early access of 2021 release wave 2](opt-in-early-access-updates.md) on a production environment, Dataverse search is enabled automatically. If you are using your own encryption key, you can disable Dataverse search after enabling early access of 2021 release wave 2 in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
@@ -78,16 +80,16 @@ To enable Dataverse search, do the following:
 
    :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On.":::
 
-If the Dataverse search index needs to be provisioned, you'll see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for very large size organizations.
+If the Dataverse search index needs to be provisioned, you see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
 
 > [!IMPORTANT]
-> Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync that may take up to an hour or more for average size organizations, and a couple of days for very large size organizations. Consider this when you're disabling Dataverse search temporarily.
+> Disabling Dataverse search will deprovision and remove the index within a period of 12 hours. If you enable Dataverse search after about 12 hours of disabling it, a fresh index is provisioned, followed by a full sync that may take up to an hour or more for average size organizations, and a couple of days for large organizations. Consider this when you're disabling Dataverse search temporarily.
 
 ### Help improve Dataverse search
 
-To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. This data will help Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
+To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. This data helps Microsoft build, improve, and validate the Microsoft machine learning model for the Dynamics 365 Natural Language search query technology.
 
-Your queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization's data will be stored within your tenant's compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Share anonymized search analytics with Microsoft** to **Off**. For more information, see **Terms of Service** in the Power Platform admin center.
+Your queries and results are reviewed by people using secured computers in the United States. Aggregate data about queries and results are used by Microsoft engineers and data scientists to improve future search query results for all users worldwide. Your data remains your property. Your organization's data is stored within your tenant's compliance boundary and is automatically deleted after 30 days. You can delete the data at any time by navigating to the Power Platform admin center and toggling **Share anonymized search analytics with Microsoft** to **Off**. For more information, see **Terms of Service** in the Power Platform admin center.
 
 **Share anonymized search analytics with Microsoft** is **Off** by default. To enable:
 
