@@ -26,7 +26,7 @@ The Microsoft Copilot Studio US Government Service Description serves as an over
 
 ## Microsoft Copilot Studio US Government plans and environments
 
-Licensing for Microsoft Copilot Studio US Government plans is the same as for public cloud. They're available through the Volume Licensing and Cloud Solution Provider purchasing channels. For more information, see the [Assign user licenses and manage access](requirements-licensing.md) topic.
+Licensing for Microsoft Copilot Studio US Government plans is the same as for public cloud. They're available through the Volume Licensing and Cloud Solution Provider purchasing channels. For more information, see [Assign user licenses and manage access](requirements-licensing.md).
 
 The Microsoft Copilot Studio GCC environment is compliant with the Federal requirements for cloud services, including FedRAMP High.  
 
@@ -66,7 +66,7 @@ Entities with questions about eligibility for Microsoft Copilot Studio US Govern
 
 ## Differences between customer data and customer content
 
-Customer data, as defined in the [Online Service Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=2#coreui-contentrichblock-4khwhqo), means all data provided to Microsoft by, or on behalf of, customers using an Online Service. This includes all text, sound, video, image files, and software. 
+Customer data, as defined in the [Online Service Terms](https://www.microsoft.com/licensing/product-licensing/products?rtc=2#coreui-contentrichblock-4khwhqo), means all data provided to Microsoft by, or on behalf of, customers using an online service. This includes all text, sound, video, image files, and software. 
 
 Customer content refers to a specific subset of customer data that has been directly created by users. This could include for example content stored in databases through entries in the [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) entities (for example, contact information). Content is generally considered confidential information, and in normal service operations, isn't sent through the Internet without encryption.
 
