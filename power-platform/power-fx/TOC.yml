@@ -28,8 +28,12 @@
             href: formula-reference-overview.md
           - name: Power Apps formula reference
             href: formula-reference.md
+          - name: Canvas apps formula reference
+            href: formula-reference-canvas-apps.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Cards formula reference
+            href: formula-reference-cards.md
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md
           - name: Power Platform CLI formula reference
@@ -42,6 +46,18 @@
             href: reference/function-trig.md
           - name: Acot
             href: reference/function-trig.md
+          - name: AIClassify
+            href: reference/function-ai.md
+          - name: AIExtract
+            href: reference/function-ai.md
+          - name: AIReply
+            href: reference/function-ai.md
+          - name: AISentiment
+            href: reference/function-ai.md
+          - name: AISummarize
+            href: reference/function-ai.md
+          - name: AITranslate
+            href: reference/function-ai.md
           - name: AddColumns
             href: reference/function-table-shaping.md
           - name: And
@@ -422,6 +438,8 @@
             href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
+          - name: UniChar
+            href: reference/function-char.md
           - name: Unrelate
             href: reference/function-relate-unrelate.md
           - name: Update

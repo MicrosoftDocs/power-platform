@@ -55,7 +55,7 @@ To set up [connections](/connectors/connectors):
 >
 > - On-premises data gateway
 > - Microsoft C++ Runtime DLL Version 10.x
-> - SAP .NET Connector 3.0 SDK from SAP
+> - SAP .NET Connector 3.1 SDK from SAP
 
 ## Manage connection references
 

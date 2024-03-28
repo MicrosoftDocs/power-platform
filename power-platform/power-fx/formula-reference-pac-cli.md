@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations in P
 author: snizar007
 ms.topic: reference
 ms.reviewer: jdaly
-ms.date: 11/5/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: snizar
 search.audienceType:
@@ -17,7 +17,7 @@ contributors:
 
 # Formula reference - Power Platform CLI
 
-Use these commands to interact with data in Dataverse using a command line or script. Reduce the time and complexity of your Dataverse operations by using Power Fx. [Learn how to use pac power-fx commands](/power-platform/developer/cli/reference/power-fx).
+Use these commands to interact with data in Dataverse using a command line or script. Reduce the time and complexity of your Dataverse operations by using Power fx [pac power-fx](../developer/cli/reference/power-fx.md)
 
 ## A
 
@@ -323,6 +323,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 **[Trunc](reference/function-round.md)** – Truncates the number to only the integer portion by removing any decimal portion.
 
 ## U
+
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
 
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
