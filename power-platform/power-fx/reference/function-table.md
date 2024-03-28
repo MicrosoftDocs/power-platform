@@ -27,9 +27,9 @@ Creates a temporary [table](/power-apps/maker/canvas-apps/working-with-tables).
 
 The **Table** function creates a table from an argument list of [records](/power-apps/maker/canvas-apps/working-with-tables#records) or tables.
 
-The table's [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) will be the union of all the properties from all the argument records and tables. A _blank_ value is added to any column for which a record doesn't include a value.
+The result table's [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) are the union of all the columns from all the argument records and tables. A _blank_ value is added to any column for which a record doesn't include a value.
 
-A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and functions can return a table as a result. **Table** doesn't create a permanent table. Instead it returns a temporary table made of its arguments. You can specify this temporary table as an argument for another function, visualize it in a gallery, or embed it in another table. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
+A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and functions can return a table as a result. **Table** doesn't create a permanent table. Instead it returns a temporary table made of its arguments. You can specify this temporary table as an argument for another function, visualize it in a gallery, or embed it in another table. Fore more information, see [working with tables](/power-apps/maker/canvas-apps/working-with-tables).
 
 You can also create a single-column table with the **[ value1, value2, ... ]** syntax.
 
@@ -41,7 +41,7 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 
 **Table**( _Untyped_ )
 
-- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a table or array. Acceptable values are dependent on the untyped provider.  For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON array. Note that regardless of the content type of the Untyped array, the resulting table will be a single-column table of Untyped objects.
+- _Untyped_ - Required. [**Untyped object**](../untyped-object.md) that represents a table or array. Acceptable values are dependent on the untyped provider. For [**JSON**](function-parsejson.md), the untyped object is expected to be a JSON array. Regardless of the content type of the Untyped array, the resulting table is a single-column table of Untyped objects.
 
 ## Examples
 
