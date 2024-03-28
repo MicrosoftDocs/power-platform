@@ -39,7 +39,7 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Supported scenarios
 
-Power Platform supports Dataverse plug-ins and connectors. With a virtual network, you can also use secured, private, outbound-connectivity with resources within your virtual network. For example, Dataverse plug-ins and connectors enhance data integration security with external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
+Power Platform supports Dataverse plug-ins and connectors. With a Virtual Network, you can also use secured, private, outbound-connectivity with resources within your virtual network. For example, Dataverse plug-ins and connectors enhance data integration security with external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
 
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private endpoint protected resources in Azure, such as Web API or any resources within your private network such as SQL, and Web API. You protect your data from data breaches and other external threats.  
