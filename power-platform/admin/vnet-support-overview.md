@@ -39,14 +39,14 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Supported scenarios
 
-Power Platform enables Virtual Network support for both Dataverse plug-ins and [connectors](vnet-support-overview.md#supported-services). With this support, you can establish secured, private, outbound connectivity from Power Platform to resources within your Virtual Network. Dataverse plug-ins and connectors enhance data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
+Power Platform enables Virtual Network support for both Dataverse plug-ins and [connectors](vnet-support-overview.md#supported-services). With this support, you can establish secured, private, outbound-connectivity from Power Platform to resources within your Virtual Network. Dataverse plug-ins and connectors enhance data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
 
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources, such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You can protect your data from data exfiltration and other incidents.
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private, endpoint-protected resources in Azure, such as Web API or any resources within your private network, such as SQL and Web API. You can protect your data from data breaches and other external threats.  
-- Use [virtual Network supported connectors](vnet-support-overview.md#supported-services) like [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.  
+- Use [Virtual Network supported connectors](vnet-support-overview.md#supported-services) like [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.  
 - Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) to securely connect to services authentication by Microsoft Entra ID.
-- Use [Custom connectors](/connectors/custom-connectors/) to securely connect to your services protected by private endpoints in Azure or services hosted within your private network.
+- Use [custom connectors](/connectors/custom-connectors/) to securely connect to your services protected by private endpoints in Azure or services hosted within your private network.
   
 ### Limitations
 
@@ -99,7 +99,7 @@ When you use Virtual Network support in a Power Platform environment, all suppor
  > [!IMPORTANT]
  >  Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors. The URLs and connections need to be updated to work with private connectivity.
 
-For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your Virtual Network. The call from the plugin is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your Virtual Network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on Virtual Network support in the Power Platform environment.
+For example, a plug-in might try to connect to a publicly available service, but your network policy doesn't allow public internet access within your Virtual Network. The call from the plug-in is blocked in accordance with your network policy. To avoid the blocked call, you can host the publicly available service in your Virtual Network. Alternatively, if your service is hosted in Azure, you can use a private endpoint on the service before you turn on Virtual Network support in the Power Platform environment.
 
 ## FAQ
 
@@ -163,7 +163,7 @@ No. We must ensure the endpoint presents a TLS certificate with the complete cha
 We don't recommend any specific topology. However, our customers widely use the hub and spoke topology network model.
 
 ### Is linking an Azure subscription to my Power Platform tenant necessary to activate Virtual Network?
-Yes, to enable a Virtual Network support for Power Platform environments, it's essential to have an Azure subscription associated with the Power Platform tenant.
+Yes, to enable Virtual Network support for Power Platform environments, it's essential to have an Azure subscription associated with the Power Platform tenant.
 
 ### How does Power Platform utilize Azure subnet delegation?
 When a Power Platform environment has a delegated, Azure subnet assigned, it leverages Azure Virtual Network injection to inject the container at runtime into a delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated an IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs through a local port on the container, and the traffic flows over Azure Fabric.
@@ -174,17 +174,17 @@ Yes, you can utilize an existing Virtual Network for Power Platform, as long as 
 ### Can I use US East 2 as the failover if I have my Power Platform environment in Canada? 
 To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast** respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, establish Virthal Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region for connectivity.
 
-### What is a Dataverse plugin?
-A Dataverse plugin is a piece of custom code that can be deployed into a Power Platform environment. This plugin can be configured to run during events (like a change in data) or triggered as a Custom API. Learn more: [Dataverse Plug-ins](/power-apps/developer/data-platform/plug-ins)
+### What is a Dataverse plug-in?
+A Dataverse plug-in is a piece of custom code that can be deployed into a Power Platform environment. This plug-in can be configured to run during events (like a change in data) or triggered as a Custom API. Learn more: [Dataverse Plug-ins](/power-apps/developer/data-platform/plug-ins)
 
-### How does a Dataverse plugin execute? 
-A Dataverse plugin operates within a container. When a Power Platform environment is assigned a delegated subnet, an IP address from that subnet’s address space is allocated to the Network Interface Card (NIC) of the container. Communication between the host (Power Platform) and the container takes place through a local port on the container, with traffic flowing over Azure Fabric.
+### How does a Dataverse plug-in execute? 
+A Dataverse plug-in operates within a container. When a Power Platform environment is assigned a delegated subnet, an IP address from that subnet’s address space is allocated to the Network Interface Card (NIC) of the container. Communication between the host (Power Platform) and the container takes place through a local port on the container, with traffic flowing over Azure Fabric.
 
-### Can multiple plugins run within the same container? 
-Yes. In a given Power Platform or Dataverse environment, multiple plugins can indeed operate within the same container. Each container consumes one IP address from the subnet address space, and remarkably, each container can execute multiple requests.
+### Can multiple plug-ins run within the same container? 
+Yes. In a given Power Platform or Dataverse environment, multiple plug-ins can indeed operate within the same container. Each container consumes one IP address from the subnet address space, and each container can execute multiple requests.
 
-### How does the infrastructure handle an increase in concurrent plugin executions?
-As the number of concurrent plugin executions increases, the infrastructure automatically auto-scales (out or in) to accommodate the load. The subnet delegated to a Power Platform environment should have sufficient address spaces to handle the peak volume of executions for the workloads in that Power Platform environment.
+### How does the infrastructure handle an increase in concurrent plug-in executions?
+As the number of concurrent plug-in executions increases, the infrastructure automatically auto-scales (out or in) to accommodate the load. The subnet delegated to a Power Platform environment should have sufficient address spaces to handle the peak volume of executions for the workloads in that Power Platform environment.
 
 ### Who controls the Virtual Network and network policies associated with it? 
 As a customer, you have ownership and control over the Virtual Network and its associated network policies. Power Platform, on the other hand, utilizes the allocated IP addresses from the delegated subnet within that Virtual Network. 
