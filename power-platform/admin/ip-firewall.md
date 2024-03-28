@@ -60,10 +60,11 @@ You can enable IP firewall on a Power Platform environment either using Power Pl
 1. Select **Save**.
 
 ### Enable IP firewall using Dataverse OData API
-The Dataverse OData API enables you to retrieve and modify values within a Power Platform Environment. For detailed guidance [Query data using the Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/query-data-web-api) and [Update and delete table rows using the Web API (Microsoft Dataverse) - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#update-a-single-property-value).
-You have the flexibility to select the tools you prefer; additionally, we are providing couple of links that will enable you to retrieve and modify values via the OData API for Dataverse.
-1.	[Use Insomnia with Dataverse Web API - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/insomnia)
-2.	[Quick Start Web API with PowerShell and Visual Studio Code - Power Apps | Microsoft Learn](/power-apps/developer/data-platform/webapi/quick-start-ps)
+The Dataverse OData API allows you to retrieve and modify values within a Power Platform environment. For detailed guidance, see [Query data using the Web API](/power-apps/developer/data-platform/webapi/query-data-web-api) and [Update and delete table rows using the Web API (Microsoft Dataverse)](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#update-a-single-property-value).
+
+You have the flexibility to select the tools you prefer. Use the following documentation to retrieve and modify values through the OData API for Dataverse:
+-	[Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia)
+-	[Quick Start Web API with PowerShell and Visual Studio Code](/power-apps/developer/data-platform/webapi/quick-start-ps)
 
 **Configure IP firewall using OData API**
 ~~~
