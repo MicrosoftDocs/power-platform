@@ -1,6 +1,6 @@
 ---
 title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
-description: Configure Dataverse search to improve search results and performance 
+description: Configure Dataverse search to improve search results and performance. 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
