@@ -4,7 +4,7 @@ description: Learn how to prioritize ease of use or usability during the design 
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 03/20/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -50,9 +50,9 @@ Incorporate color-coded indicators on different states for quick recognition and
 
 The system should speak the users' language, using words, phrases, and concepts they understand, rather than system-oriented terms. Follow real-world conventions and present information in a natural and logical order.
 
-Use terminology and concepts that are familiar to users and avoid jargon that may alienate them. People tend to quickly grasp the purpose and functionality of a system when it speaks their language.
+Use terminology and concepts that are familiar to users and avoid jargon that might alienate them. People tend to quickly grasp the purpose and functionality of a system when it speaks their language.
 
-Structure system information in a manner that mirrors scenarios and conventions users understand. Present information in a natural and logical sequence that resonates with familiar or real-world processes to facilitate easier adoption of the technology into the users' life.
+Structure system information in a manner that mirrors scenarios and conventions users understand. Present information in a natural and logical sequence that resonates with familiar or real-world processes to facilitate easier adoption of the technology into the user's life.
 
 :::image type="content" source="media/usability/h2.svg" alt-text="A required email address form field, with an incorrectly typed email, displaying an error indicating an incorrect email address format.":::
 
@@ -64,11 +64,11 @@ When reasonable, support various input methods to accommodate users with differe
 
 Granular control over data and privacy settings is crucial for respecting user autonomy and building trust. Adjusting privacy settings, deleting or exporting data, and controlling access permissions for third-party applications ensures users can maintain control over their information. Offering clear explanations and transparent disclosures about data collection practices, security measures, and user rights enables informed decision-making and promotes transparency and accountability.
 
-:::image type="content" source="media/usability/h3.svg" alt-text="A neutral button that says 'Back' next to a primary button that says 'Next'":::
+:::image type="content" source="media/usability/h3.svg" alt-text="A neutral button that says 'Back' next to a primary button that says 'Next'.":::
 
 ### Consistency and standards
 
-Maintain consistency in design to ensure users can easily recognize and understand status indicators, reducing cognitive load and improving usability. Users should not have to wonder whether different words, situations, or actions mean the same thing.
+Maintain consistency in design to ensure users can easily recognize and understand status indicators, reducing cognitive load and improving usability. Users shouldn't have to wonder whether different words, situations, or actions mean the same thing.
 
 If repeatable experience patterns appear different, users will struggle to interpret the meaning of the variation introduced, leading to inefficiencies in understanding and task completion. Using a matching suite of controls helps ensure visual elements are consistent across screens and experiences.
 
@@ -76,15 +76,15 @@ If repeatable experience patterns appear different, users will struggle to inter
 
 ### Error prevention
 
-Even better than good error messages is a careful design which prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action. Proactively address potential issues in the interface to maintain workflow continuity.
+Even better than good error messages is a careful design that prevents a problem from occurring in the first place. Either eliminate error-prone conditions or check for them and present users with a confirmation option before they commit to the action. Proactively address potential issues in the interface to maintain workflow continuity.
 
 :::image type="content" source="media/usability/h5.svg" alt-text="Form validation check before submission.":::
 
 ### Recognition rather than recall
 
-Minimize the user's memory load by making objects, actions, and options visible. The user should not have to remember information from one part of the dialogue to another. Instructions should be visible or easily retrievable whenever appropriate.
+Minimize the user's memory load by making objects, actions, and options visible. The user shouldn't have to remember information from one part of the dialogue to another. Instructions should be visible or easily retrievable whenever appropriate.
 
-When designing forms, consider whether to provide predefined options for users to choose from or allow free text input (this might be determined by the data type, but should be thought through at the uI layer as well). Opt for predefined options when speed and convenience are paramount, and choose free text input for scenarios requiring richer detail or personalized responses.
+When designing forms, consider whether to provide predefined options for users to choose from or allow free text input (this might be determined by the data type, but should be thought through at the UI layer as well). Opt for predefined options when speed and convenience are paramount, and choose free text input for scenarios requiring richer detail or personalized responses.
 
 Provide guidance and resources to avoid the need to recall important information from memory. Common UI patterns include contextual help icons, inline documentation, tooltips, embedded tutorials, on-demand help menus, searchable knowledge bases, and interactive help widgets like AI-enabled resources.
 
@@ -104,7 +104,7 @@ Customization options allow users to tailor the interface to their preferences, 
 
 Prioritize clear, focused status updates for users to more easily comprehend information at a glance. This approach reduces cognitive effort and minimizes risk of misinterpretation, frustration, or disengagement.
 
-Dialogues should not contain irrelevant or rarely needed information. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
+Dialogues shouldn't contain irrelevant or rarely needed information. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility.
 
 :::image type="content" source="media/usability/h8.svg" alt-text="A dialog with a succinct actionable question, with a primary button that says 'yes' and secondary button that says 'no'.":::
 
@@ -114,7 +114,7 @@ Error messages should be expressed in plain language (no code), precisely indica
 
 Provide contextual help or guidance to assist users in resolving issues or understanding delays. This approach helps users determine the appropriate next steps, especially when facing obstacles or complex tasks. Instead of merely presenting a problem, offer a clear solution and incorporate built-in functionality to expedite resolution.
 
-:::image type="content" source="media/usability/h9.svg" alt-text="Error message with clear explaination of the message and suggestions to retry.":::
+:::image type="content" source="media/usability/h9.svg" alt-text="Error message with clear explanation of the message and suggestions to retry.":::
 
 ### Help and documentation
 

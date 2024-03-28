@@ -4,7 +4,7 @@ description: Learn key principles of interaction design to enhance user experien
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 03/22/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -45,7 +45,7 @@ The Fluent UI based modern controls are tested by a professional design team, wh
 
 A common way to illustrate the mental model is by showing the status or states of table data that are important for the user to understand. For instance, if a record is inactive or closed, the entire form should be set to read-only to align with the expected behavior.
 
-:::image type="content" source="media/interaction-design/mental-model.svg" alt-text="Graphic depiction of a user's mental model in conjunction with the an app system.":::
+:::image type="content" source="media/interaction-design/mental-model.svg" alt-text="Graphic depiction of a user's mental model in conjunction with an app system.":::
 
 ### Cognitive biases
 
@@ -72,17 +72,17 @@ Fitts's law predicts that the time required to acquire a target is a function of
 
 Large, well-placed buttons allow users to navigate the interface with minimal effort, preventing frustration and ensuring a smooth user experience. Interactive elements such as buttons or links should be large enough and positioned close to users' natural cursor movement or natural range; for example, placing primary action buttons on mobile devices in prominent locations within reach of users' thumbs. Making such elements easier to click or tap reduces the time it takes for users to interact with them.
 
-If interactive elements are too small or spaced too far apart, users might accidentally select the wrong element or miss the target altogether. Designing with Fitt's law in mind helps avoid these issues by ensuring that interactive elements are clearly identifiable and easy to access.
+If interactive elements are too small or spaced too far apart, users might accidentally select the wrong element or miss the target altogether. Designing with Fitts's law in mind helps avoid these issues by ensuring that interactive elements are clearly identifiable and easy to access.
 
 Consider the needs of users with limited dexterity or mobility impairments. Larger interactive elements that are easier to target and have correct tab order helps ensure all users can interact with the interface comfortably.
 
-:::image type="content" source="media/interaction-design/fitt.svg" alt-text="The target, a circle with central point, shows Fitts' Law: how size and distance influence user interaction speed/accuracy.":::
+:::image type="content" source="media/interaction-design/fitt.svg" alt-text="The target, a circle with central point, shows Fitts's Law: how size and distance influence user interaction speed/accuracy.":::
 
 ### Hick's law
 
 Hick's Law, stemming from psychologist William Edmund Hick's experiments in the 1950s, explores the relationship between the number of stimuli and decision reaction time. It highlights that as the number of stimuli increases, the time needed to make a decision also increases, underlining the importance of simplicity in decision-making processes.
 
-Instead of presenting users with a multitude of options all at once, break complex tasks into smaller, more manageable steps using progressive disclosure. Help users focus on making a single choice, reduce decision-making time and avoide overwhelming the user. For example, use a step-by-step wizard for complex processes like account setup or product customization.
+Instead of presenting users with a multitude of options all at once, break complex tasks into smaller, more manageable steps using progressive disclosure. Help users focus on making a single choice, reduce decision-making time and avoid overwhelming the user. For example, use a step-by-step wizard for complex processes like account setup or product customization.
 
 Guide users towards recommended options to streamline decision-making. Highlight preferred choices for quick decisions and avoid overwhelming with alternatives. This prevents decision paralysis and helps users move through the interface efficiently.
 
@@ -106,7 +106,7 @@ Serial-position effect is the tendency to recall the first and last items in a s
 
 ### Pareto principle
 
-The Pareto principle (also known as the 80/20 rule, the law of the vital few, and the principle of factor sparsity) states that for many outcomes, roughly 80% of consequences come from 20% of causes. Italian economist Vilfredo Pareto first noticed the principle when he observed that 80% of Italy's land was owned by 20% of the population. Later in the 1940's, the term "the Pareto Principle" was coined to describe the broader concept that a minority of inputs often yields a majority of results.
+The Pareto principle (also known as the 80/20 rule, the law of the vital few, and the principle of factor sparsity) states that for many outcomes, roughly 80% of consequences come from 20% of causes. Italian economist Vilfredo Pareto first noticed the principle when he observed that 80% of Italy's land was owned by 20% of the population. Later in the 1940s, the term "the Pareto Principle" was coined to describe the broader concept that a minority of inputs often yields a majority of results.
 
 Identify the most critical aspects of the UI that significantly impact user satisfaction and usability. Think of the most common user tasks or frequently accessed features. Prioritize developing these key elements; project teams can allocate resources more effectively and ensure that the most vital areas of the UI receive the most attention.
 
@@ -122,7 +122,7 @@ Jakob's law states that users spend most of their time on other sites. In other 
 
 Incorporate commonly used design elements and interaction patterns that users encounter on other websites. For example, place the navigation menu at the top of the page, or use a shopping cart icon for e-commerce sites. This familiarity makes it easier for users to navigate and interact with your UI. Users expect clickable elements to look like buttons or links. By meeting these expectations, you streamline the learning process, reduce cognitive load, and ensure users don't become overwhelmed or frustrated by unfamiliar interfaces. This kind of experience increases the likelihood of users staying engaged and achieving their goals.
 
-:::image type="content" source="media/interaction-design/jakob.svg" alt-text="A large blue circle (used to depict interface simplicity and familiarity suggested by Jacob's law)":::
+:::image type="content" source="media/interaction-design/jakob.svg" alt-text="A large blue circle (used to depict interface simplicity and familiarity suggested by Jakob's law)":::
 
 ### Miller's law
 
@@ -190,7 +190,7 @@ Although some interaction implementation has been encapsulated into the modern c
 - [Fitt's law](https://en.wikipedia.org/wiki/Fitts%27s_law)
 - [Serial position effect](https://en.wikipedia.org/wiki/Serial-position_effect)
 - [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle)
-- [Jacob's law](https://lawsofux.com/jakobs-law/)
+- [Jakob's law](https://lawsofux.com/jakobs-law/)
 - ["The Magical Number Seven, Plus or Minus Two" by George A. Miller](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two)
 - [Peak-end rule](https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule)
 - [Robustness principle (Postel's law)](https://en.wikipedia.org/wiki/Robustness_principle)

@@ -11,14 +11,14 @@ ms.date: 03/29/2024
 
 # Experience Optimization tradeoffs
 
-During the design phase of a workload, it's important to consider how decisions based on the [Experience Optimization design principles](./principles.md) and recommendations in the [Design review checklist for Experience Optimization](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimzation.
+During the design phase of a workload, it's important to consider how decisions based on the [Experience Optimization design principles](./principles.md) and recommendations in the [Design review checklist for Experience Optimization](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimization.
 
 ## Experience Optimization tradeoffs with Reliability
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Increased complexity**. A workload that uses straightforward approaches and limits customization is generally easier to manage in terms of reliability.
 
-- Continous improvement through adding new features in the user experience can introduce new issues that affect reliability and will require thorough testing.
-- Customizing the user interface with code and components adds new reliabilty targets.
+- Continuous improvement through adding new features in the user experience can introduce new issues that affect reliability and will require thorough testing.
+- Customizing the user interface with code and components adds new reliability targets.
 
 ## Experience Optimization tradeoffs with Security
 

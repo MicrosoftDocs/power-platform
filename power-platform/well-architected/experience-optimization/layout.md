@@ -4,7 +4,7 @@ description: Learn how to optimize app layout for different platforms and device
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 03/22/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -69,9 +69,9 @@ The following list, while not exhaustive, describes established layouts commonly
 
 #### Landing/Home screen
 
-:::image type="content" source="media/layout/landing.svg" alt-text="App screen layout for desktop and phone displaying a landing.":::
+:::image type="content" source="media/layout/landing.svg" alt-text="App screen layout for desktop and phone displaying a landing page.":::
 
-Serves as the entry point to an application, providing users with an overview of the app's offerings or features. Typically aims to capture the attention of visitors and encourages taking a specific action, such as completing a first-time task or exploring further content. It often contains hero images and clearn navigation options.
+Serves as the entry point to an application, providing users with an overview of the app's offerings or features. Typically aims to capture the attention of visitors and encourages taking a specific action, such as completing a first-time task or exploring further content. It often contains hero images and clean navigation options.
 
 It's ideal for welcoming users, offering quick access to key functionalities, navigation options, or calls to action, and setting the tone for the app's experience. Prioritize clarity, simplicity, and intuitive navigation to guide users effectively.
 
@@ -103,7 +103,7 @@ They're well-suited for showcasing detailed information about items within an ap
 
 :::image type="content" source="media/layout/list.svg" alt-text="App screen layout for desktop and phone displaying a table.":::
 
-Displays a collection of items or entities in a structured format, often presented in a linear or grid layout. It typically includes brief summaries or previews of each item, along with navigation controls for browsing or filtering. 
+Displays a collection of items or entities in a structured format, often presented in a linear or grid layout. It typically includes brief summaries or previews of each item, along with navigation controls for browsing or filtering.
 
 List pages are effective for presenting large sets of content or data in a digestible format, enabling users to scan, search, and navigate efficiently. For example, if actions on specific rows are enabled, the process should be clear. List pages are commonly used in content management systems, directory listings, search results, and news feeds.
 
@@ -111,7 +111,7 @@ List pages are effective for presenting large sets of content or data in a diges
 
 :::image type="content" source="media/layout/mini-review.svg" alt-text="App screen layout for desktop and phone displaying a mini review.":::
 
-Divides the interface into two distinct sections, with a list displayed on the left side and an item view on the right side. The list typically contains a collection of items, while the item view provides detailed information about the selected item from the list. 
+Divides the interface into two distinct sections, with a list displayed on the left side and an item view on the right side. The list typically contains a collection of items, while the item view provides detailed information about the selected item from the list.
 
 This layout is particularly effective in scenarios where users need to browse through a list of items quickly and view detailed information about each item simultaneously, such as when performing bulk operations. Product catalogs, document management systems, email or communication clients, and task management tools (for example, Azure Dev Ops query viewer) are scenarios that typically fit this pattern.
 

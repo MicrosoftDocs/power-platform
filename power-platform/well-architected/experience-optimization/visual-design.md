@@ -4,7 +4,7 @@ description: Learn how to optimize user perception and aesthetics to guides user
 author: Denise-MSFT
 ms.author: demora
 ms.reviewer: robstand
-ms.date: 03/22/2024
+ms.date: 03/28/2024
 ms.subservice: guidance
 ms.topic: conceptual
 ---
@@ -55,7 +55,7 @@ A composition is balanced when all the elements are in optical equilibrium. Ofte
 
 ### Color
 
-Hues, tints, shades, and tones can convey meaning, evoke emotions, and create aesthetic appeal. Color plays a crucial role in guiding user attention, establishing hierarchy, conveying information, and enhancing usability. There are several reasons why thoughful color design in a UI can affect users the way you want:
+Hues, tints, shades, and tones can convey meaning, evoke emotions, and create aesthetic appeal. Color plays a crucial role in guiding user attention, establishing hierarchy, conveying information, and enhancing usability. There are several reasons why thoughtful color design in a UI can affect users the way you want:
 
 1. *Attention and perception.* Certain colors are more eye-catching than others, allowing designers to direct viewers' focus to specific elements. Color contrast can enhance readability and distinguish between different components, facilitating rapid processing of information.
 
@@ -69,11 +69,11 @@ Hues, tints, shades, and tones can convey meaning, evoke emotions, and create ae
 
 Items that are placed closer together seem more related. When arranging elements, ensure there's a noticeable difference in spacing between elements that are closely related and those that are not.
 
-This Gestalt principle suggests that the spatial distance between visual elements influences how they are perceived and organized mentally, and underscores its importance in facilitating efficient processing and understanding of visual stimuli.
+This Gestalt principle suggests that the spatial distance between visual elements influences how they're perceived and organized mentally, and underscores its importance in facilitating efficient processing and understanding of visual stimuli.
 
-Group related elements together that are functionally similar or belong to the same hierarchical category. For example, buttons that perform similar actions or options within a dropdown menu should be grouped closely together to indicate their association. In a navigation bar, menu items that are closely spaced suggest a related set of options, while a larger gap between menu categories visually distinguishes them. Form items that are related should be grouped together (e.g., address fields in a section called 'address').
+Group related elements together that are functionally similar or belong to the same hierarchical category. For example, buttons that perform similar actions or options within a dropdown menu should be grouped closely together to indicate their association. In a navigation bar, menu items that are closely spaced suggest a related set of options, while a larger gap between menu categories visually distinguishes them. Form items that are related should be grouped together (for example, address fields in a section called 'address').
 
-Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer paragraphs spacing indicates a logical connection or continuation of thought, while greater spacing denotes a transition or a break in content. This technique promotes efficient comprehension of textual information.
+Enhance readability in text-heavy interfaces by adjusting spacing between paragraphs, sentences, and words. Closer paragraph spacing indicates a logical connection or continuation of thought, while greater spacing denotes a transition or a break in content. This technique promotes efficient comprehension of textual information.
 
 Ensure there's a noticeable distinction in spacing between related and unrelated elements to prevent confusion. A spacing ramp can help consistently determine the appropriate spacing needed based on the element size.
 
@@ -225,7 +225,7 @@ Maintaining consistency in the placement and styling of interface elements reinf
 
 Elements tend to be perceived as groups if they share an area with a clearly defined boundary.
 
-Grouping related elements within visual containers, such as boxes, cards, or borders, helps users perceive them as cohesive units. This approach visually organizes content and functionality, making it easier to identify and process information. Clear groupings help avoid a cluttered interface and reduce confusion or inefficiency. Grouping is also effective when proximity is not an option; for example, a message bar that spans several controls across a screen perceived as a related unit due to its borders and background color.
+Grouping related elements within visual containers, such as boxes, cards, or borders, helps users perceive them as cohesive units. This approach visually organizes content and functionality, making it easier to identify and process information. Clear groupings help avoid a cluttered interface and reduce confusion or inefficiency. Grouping is also effective when proximity isn't an option; for example, a message bar that spans several controls across a screen perceived as a related unit due to its borders and background color.
 
 Maintaining a consistent visual style for grouped elements strengthens their connection and improves usability. Using similar colors, fonts, or icons for these elements emphasizes that they belong to the same category or function. Inconsistencies in visual presentation can weaken the perceived grouping and cause users to overlook relationships between elements or misinterpret their meaning or purpose.
 
@@ -273,7 +273,7 @@ In canvas apps, use [layout containers](/power-apps/maker/canvas-apps/controls/c
 
 In model driven app forms, [sections](/power-apps/maker/model-driven-apps/add-move-or-delete-sections-on-form) can be used to group related fields or elements.
 
-Implement consistency in common visual elements with reusabled [custom components](/power-apps/maker/canvas-apps/create-component).
+Implement consistency in common visual elements with reusable [custom components](/power-apps/maker/canvas-apps/create-component).
 
 In canvas apps, [modern controls](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) feature integrated signaling within their design. Specifically, the [button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-button) and [badge](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) controls offer various options in their style properties, making them effective signals. Adhere to best practices for each component and apply signaling selectively to ensure optimal communication.
 
