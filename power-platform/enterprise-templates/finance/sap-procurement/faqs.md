@@ -156,7 +156,7 @@ You have a couple options:
 
 ### Where do I turn if I get stuck with SAP integration with Power Platform?
 
-Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [SAP integration](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started.md) documentation. If you're still having issues, you have a couple of options:
+Nearly 100% of the issues encountered are due to a step or prerequisite being overlooked in the [Integrate SAP with Power Platform](administer/get-started#integrate-sap-with-power-platform) documentation. If you're still having issues, you have a couple of options:
 
 - Submit a question on our forum at: [Power Platform Community](https://powerusers.microsoft.com/)
 - Send an email to: <sap_ecc_powerapps@service.microsoft.com>.
