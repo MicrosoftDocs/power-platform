@@ -64,7 +64,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps](https://make.powerapps.com) or [PowerShell cmdlets for app creators](./powerapps-powershell.md).
 
 #### Unmanaged tenant
-If you are a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover), meaning that your Microsoft Entra tenant doesn't have a global administrator, then you can follow the steps outlined in this part to remove your own personal data.  However, since there's no global administrator for your tenant, you must follow the instructions outlined in [Step 12: Delete the user from Microsoft Entra](#step-12-delete-the-user-from-microsoft-entra) to delete your own account from the tenant.
+If you are a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover), meaning that your Microsoft Entra tenant doesn't have a global administrator, then you can follow the steps outlined in this part to remove your own personal data.  However, since there's no global administrator for your tenant, you must follow the instructions outlined in [Step 13: Delete the user from Microsoft Entra](#step-13-delete-the-user-from-microsoft-entra) to delete your own account from the tenant.
 
 In order to determine if you are a member of an unmanaged tenant please follow these steps:
 
@@ -355,9 +355,15 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
-> It's recommended that admins complete this step for a Power Apps user.
+> It is recommended that admins complete this step for a Power Apps user.
 
-## Step 11: Delete the user's personal data in environments of Dataverse
+## Step 11: Find personal data for the user in the Microsoft 365 Admin Center
+Some feedback mechanism in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to delete personal data stored by the Microsoft 365 Admin Center, see ["How can I see my user's feedback?"](/power-virtual-agents/personal-data-summary). Global admins are able to manage this data within the Microsoft 365 Admin Center without the need for an M365 or Office license.
+
+> [!IMPORTANT]
+> It is recommended that admins complete this step for a Power Apps user.
+
+## Step 12: Delete the user's personal data in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the Power Apps pricing page for which capabilities are included in each Power Apps license.
 
 For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
@@ -365,7 +371,7 @@ For guidance on how to respond to DSRs for users who use Dataverse, see [Respond
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
 
-## Step 12: Delete the user from Microsoft Entra
+## Step 13: Delete the user from Microsoft Entra
 Once the above steps have been complete the final step is to delete the user's account for Microsoft Entra.
 
 ### Managed tenant

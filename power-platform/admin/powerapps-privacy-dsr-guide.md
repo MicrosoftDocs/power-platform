@@ -83,7 +83,15 @@ For guidance on how to discover personal data stored by the Microsoft Copilot St
 > [!IMPORTANT]
 > It's recommended that admins complete this step for a Power Apps user.
 
-### Step 4: Find personal data for the user in environments of Dataverse
+### Step 4: Find personal data for the user in the Microsoft 365 Admin Center
+Some feedback mechanism in Power Apps are integrated with the Microsoft 365 Admin Center.
+
+For guidance on how to discover personal data stored by the Microsoft 365 Admin Center, see ["How can I see my user's feedback?"](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). Global admins are able to manage this data within the Microsoft 365 Admin Center without the need for an M365 or Office license.
+
+> [!IMPORTANT]
+> It is recommended that admins complete this step for a Power Apps user.
+
+### Step 5: Find personal data for the user in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
 For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](dataverse-privacy-dsr-guide.md).
