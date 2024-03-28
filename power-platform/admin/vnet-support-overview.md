@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/20/2024
+ms.date: 03/28/2024
 ms.subservice: admin
 ms.author: ritesp
 search.audienceType: 
@@ -39,17 +39,15 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Supported scenarios
 
-Power Platform supports Dataverse plug-ins, connectors, and with a virtual network, you can use secured, private, outbound connectivity with resources within your virtual network. For example, Dataverse plug-ins and connectors enhance data integration security with external data sources from your Power Apps, Power Automate, and Dynamics 365 apps. We plan to extend virtual network support to more Power Platform scenarios. For example, you can:
+Power Platform supports Dataverse plug-ins and connectors. With a virtual network, you can also use secured, private, outbound-connectivity with resources within your virtual network. For example, Dataverse plug-ins and connectors enhance data integration security with external data sources from Power Apps, Power Automate, and Dynamics 365 apps. We plan to extend virtual network support to more Power Platform scenarios. For example, you can:
 
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-- Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to resource in Azure protected with private endpoint such as Web API protected by Private endpoint or your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.  
+- Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to resources in Azure protected with private endpoints, such as Web API protected by Private endpoint or your on-premises data sources such as SQL server, Oracle, or SAP. You protect your data from data breaches and other external threats.  
 - Use [virtual network supported connectors](power-platform/admin/vnet-support-overview#supported-services) like [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.  
-- Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private endpoint protected Azure Key Vault.
+- Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) to securely connect to services authentication by Microsoft Entra ID.
-- Use [Custom connectors](/connectors/custom-connectors/) to securely connect to your services protected by private endpoint in Azure or services hosted within your private network.
+- Use [Custom connectors](/connectors/custom-connectors/) to securely connect to your services protected by private endpoints in Azure or services hosted within your private network.
   
-
-
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
