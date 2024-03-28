@@ -17,14 +17,12 @@ When you create an environment that includes a database in Power Platform, you m
 
 1. Make a backup of the environment's database before starting base currency conversion. Learn more: [Back up and restore environments](backup-restore-environments.md)
 
-1. Connect to a UCI client. <!-- See my next comment so this can be removed -->
-  
-1. Navigate to **Settings > Solutions** and install **Base Currency Conversion Solution**. <!-- Isn't this solution installed from PPAC under Resources > Dynamics 365 apps > Base Currency Conversion? -->
+1. Sign in to the Power Platform admin center, go to **Resources** > **Dynamics 365 apps**. Select **...** next to **Base Currency Conversion**, and then select **Install**.
 
-1. Go to the **Home** or **Apps** page and open the **Base Currency Conversion** app from the list of available apps.
+1. After the Base Currency Conversion solution installation completes, go to Power Apps (make.powerapps.com), select **Apps** on the left navigation pane, and then **Play** the **Base Currency Conversion** app.
 
    > [!NOTE]
-   > If the app doesn't appear in the list, refresh or reload the page.
+   > If the app doesn't appear in the list, refresh the browser tab.
 
 1. Open the **BaseCurrencyConversion** table, create a new record, and set the **New Base Currency** to the currency you want to use as the base currency. In the example image, the currency specified is Euro. **Save** your changes.
 
