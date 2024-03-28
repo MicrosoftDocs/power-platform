@@ -160,7 +160,7 @@ The tables provide vendor screen to function module field mappings.
 
 | Segment | Field | Label                  | Comment               |
 |---------|-------|------------------------|-----------------------|
-| E1LFA1M | LIFNR | Vendor                 | Blank during *Create* |
+| E1LFA1M | LIFNR | Vendor                 | Blank during _Create_ |
 | E1LFA1M | KTOKK | AccountGroup           |                       |
 | E1LFA1M | LAND1 | Country                |                       |
 | E1LFA1M | NAME1 | VendorName             |                       |
@@ -170,13 +170,13 @@ The tables provide vendor screen to function module field mappings.
 | E1LFA1M | STRAS | Street                 |                       |
 | E1LFB1M | MSGFN | CrudType               |                       |
 | E1LFB1M | BUKRS | CompanyCode            |                       |
-| E1LFB1M | LOEVM | CrudType               | *X* for Delete        |
+| E1LFB1M | LOEVM | CrudType               | _X_ for Delete        |
 | E1LFB1M | AKONT | GLAccount              |                       |
 | E1LFB1M | ZWELS | PaymentMethods         |                       |
 | E1LFB1M | ZTERM | PaymentTerms           |                       |
 | E1LFM1M | MSGFN | CrudType               |                       |
 | E1LFM1M | EKORG | PurchasingOrganization |                       |
-| E1LFM1M | LOEVM | CrudType               | *X* for Delete        |
+| E1LFM1M | LOEVM | CrudType               | _X_ for Delete        |
 | E1LFM1M | WAERS | Currency               |                       |
 | E1LFM1M | ZTERM | PaymentTerms           |                       |
 | E1LFM1M | EKGRP | PurchasingGroup        |                       |

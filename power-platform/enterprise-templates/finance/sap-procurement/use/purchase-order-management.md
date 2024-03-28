@@ -165,7 +165,7 @@ Field mappings from purchase order screen to the function module.
 | Header    | Order Number  |     | PURCHASEORDER |               |
 | Header    | Vendor        | POHEADER    | VENDOR |               |
 | Header    | Vendor Name   | POHEADER    |            | Not Sent  |
-| Header    | Purchasing Organization | POHEADER  |  PURCH_ORG  |
+| Header    | Purchasing Organization | POHEADER  |  PURCH_ORG |
 | Header           | Purchasing Group        | POHEADER    | PUR_GROUP  |               |
 | Header           | Currency        | POHEADER    | CURRENCY |               |
 | Line             | Item                    | POITEM    | PO_ITEM  |               |
