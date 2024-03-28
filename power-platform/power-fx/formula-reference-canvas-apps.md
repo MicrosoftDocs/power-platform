@@ -177,6 +177,8 @@ Other elements include:
 
 **[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
+**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in a HTML context.
+
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
 **[EndsWith](reference/function-startswith.md)** – Checks whether a text string ends with another text string.
@@ -192,6 +194,7 @@ Other elements include:
 **[Exit](reference/function-exit.md)** – Exits the currently running app and optionally signs out the current user.
 
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
+
 
 ## F
 
