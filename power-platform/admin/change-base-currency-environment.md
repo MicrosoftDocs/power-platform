@@ -51,7 +51,7 @@ After the base currency is changed as expected and exchange rate values are corr
 
    Here's a sample record to create exchange rate record for a nonbase currency, such as the US Dollar, for the entire date range of data present in Dataverse.
 
-   :::image type="content" source="media/sample-currency-date-range.png" alt-text="Sample currency date range for data":::
+   :::image type="content" source="media/sample-currency-date-range.png" alt-text="Sample currency date range for data" lightbox="media/sample-currency-date-range.png":::
 
 ## Import currency data using a CSV file
 
