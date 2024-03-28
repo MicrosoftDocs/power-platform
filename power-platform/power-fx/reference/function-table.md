@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur tapanm
-ms.date: 12/18/2023
+ms.date: 03/27/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -37,7 +37,7 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 
 **Table**( _RecordOrTable1_ [, *RecordOrTable2*, ... ] )
 
-- _RecordOrTable(s)_ - Required. The records or table to add to the table. If a table is provided, the records of the table are added to the resulting table as if they had been individually added.
+- _RecordOrTable(s)_ - Required. The records or table to add to the result table. If a table is provided, the records of the table are added to the resulting table as if they had been individually added.
 
 **Table**( _Untyped_ )
 
