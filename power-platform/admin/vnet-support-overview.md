@@ -166,31 +166,31 @@ We don't recommend any specific topology. However, our customers widely use the 
 Yes, to enable a Virtual Network support for Power Platform environments, it's essential to have an Azure subscription associated with the Power Platform tenant.
 
 ### How does Power Platform utilize Azure subnet delegation?
-When a Power Platform environment has a delegated, Azure subnet assigned, it leverages Azure Virtual Network injection to inject the container at runtime into a delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs through a local port on the container, and the traffic flows over Azure Fabric.
+When a Power Platform environment has a delegated, Azure subnet assigned, it leverages Azure Virtual Network injection to inject the container at runtime into a delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated an IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs through a local port on the container, and the traffic flows over Azure Fabric.
 
-### Can I utilize an existing VNet (Virtual Network) for Power Platform?
-Yes, You can utilize an existing Virtual Network (VNet) for Power Platform, as long as a single new subnet within the VNet is delegated specifically to the Power Platform. It’s important to note that this delegated subnet should not host any other services.
+### Can I utilize an existing Virtual Network for Power Platform?
+Yes, you can utilize an existing Virtual Network for Power Platform, as long as a single, new subnet within the Virtual Network is delegated specifically to Power Platform. It’s important to note that this delegated subnet shouldn't host any other services.
 
 ### Can I use US East 2 as the failover if I have my Power Platform environment in Canada? 
-To ensure proper failover, the primary and failover subnets must be provisioned in “canadacentral” and “canadaeast” respectively. Additionally, you should set up VNet peering between the primary and failover VNet's with the VNet in “useast2” to enable connectivity
+To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast** respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, establish Virthal Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region for connectivity.
 
 ### What is a Dataverse plugin?
-A Dataverse plugin is a piece of custom code that can be deployed into a Power Platform environment. This plugin can be configured to run during events (like a change in data) or triggered as a Custom API. Refer [Dataverse Plug-ins](/power-apps/developer/data-platform/plug-ins) for more information.
+A Dataverse plugin is a piece of custom code that can be deployed into a Power Platform environment. This plugin can be configured to run during events (like a change in data) or triggered as a Custom API. Learn more: [Dataverse Plug-ins](/power-apps/developer/data-platform/plug-ins)
 
 ### How does a Dataverse plugin execute? 
-A Dataverse plugin operates within a container. When the Power Platform environment(s) is assigned a delegated subnet, an IP address from that subnet’s address space is allocated to the Network Interface Card (NIC) of the container. Communication between the host (Power Platform) and the container takes place via a local port on the container, with traffic flowing over Azure Fabric.
+A Dataverse plugin operates within a container. When a Power Platform environment is assigned a delegated subnet, an IP address from that subnet’s address space is allocated to the Network Interface Card (NIC) of the container. Communication between the host (Power Platform) and the container takes place through a local port on the container, with traffic flowing over Azure Fabric.
 
 ### Can multiple plugins run within the same container? 
-Absolutely! In a given Power Platform/Dataverse environment, multiple plugins can indeed operate within the same container. Each container consumes 1 IP address from the subnet address space, and remarkably, each container can execute multiple requests.
+Yes. In a given Power Platform or Dataverse environment, multiple plugins can indeed operate within the same container. Each container consumes one IP address from the subnet address space, and remarkably, each container can execute multiple requests.
 
 ### How does the infrastructure handle an increase in concurrent plugin executions?
-As the number of concurrent plugin executions increases, the infrastructure automatically auto-scales (out or in) to accommodate the load. The subnet delegated to a Power Platform environment(s) should have sufficient address spaces to handle the peak volume of executions for the workloads in that Power Platform environment(s).
+As the number of concurrent plugin executions increases, the infrastructure automatically auto-scales (out or in) to accommodate the load. The subnet delegated to a Power Platform environment should have sufficient address spaces to handle the peak volume of executions for the workloads in that Power Platform environment.
 
-### Who controls the VNet, and network policies associated with it? 
-As a customer, you have ownership and control over the virtual network and its associated network policies. Power Platform, on the other hand, utilizes the allocated IP addresses from the delegated subnet within that virtual network. 
+### Who controls the Virtual Network and network policies associated with it? 
+As a customer, you have ownership and control over the Virtual Network and its associated network policies. Power Platform, on the other hand, utilizes the allocated IP addresses from the delegated subnet within that Virtual Network. 
 
-### How can I configure virtual network support for Power Platform in Dev/Test without using two separate VNet's in different Azure regions?
-While having one VNet and one dedicated subnet in each in primary and secondary Azure regions is necessary for Production workloads to ensure proper failover, for lower environments like Dev/Test, we suggest utilizing a single VNet with two dedicated subnets for Power Platform.
+### How can I configure Virtual Network support for Power Platform in Dev/Test environments without using two separate Virtual Networks in different Azure regions?
+While having one Virtual Network and one dedicated subnet in each of your primary and secondary Azure regions is necessary for production workloads to ensure proper failover, for Dev/Test environments, we suggest utilizing a single Virtual Network with two dedicated subnets for Power Platform.
 
 ## Next steps
 
