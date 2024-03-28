@@ -39,10 +39,10 @@ With Virtual Network support, your Power Platform and Dataverse components get a
 
 ## Supported scenarios
 
-The Power Platform enables virtual network support for both Dataverse plug-ins and [connectors](vnet-support-overview.md#supported-services). With this support, you can establish secured, private, outbound connectivity from the Power Platform to resources within your virtual network. Dataverse plug-ins and connectors enhance data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
+Power Platform enables virtual network support for both Dataverse plug-ins and [connectors](vnet-support-overview.md#supported-services). With this support, you can establish secured, private, outbound connectivity from Power Platform to resources within your virtual network. Dataverse plug-ins and connectors enhance data integration security by connecting to external data sources from Power Apps, Power Automate, and Dynamics 365 apps. For example, you can:
 
-- Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You protect your data from data exfiltration and other incidents.
-- Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private endpoint protected resources in Azure, such as Web API or any resources within your private network such as SQL, and Web API. You protect your data from data breaches and other external threats.  
+- Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources, such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You can protect your data from data exfiltration and other incidents.
+- Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private, endpoint-protected resources in Azure, such as Web API or any resources within your private network, such as SQL and Web API. You can protect your data from data breaches and other external threats.  
 - Use [virtual network supported connectors](vnet-support-overview.md#supported-services) like [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.  
 - Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) to securely connect to services authentication by Microsoft Entra ID.
@@ -162,11 +162,11 @@ No. We must ensure the endpoint presents a TLS certificate with the complete cha
 
 We don't recommend any specific topology. However, our customers widely use the hub and spoke topology network model.
 
-### Is linking an Azure Subscription to my Power Platform tenant necessary to activate Virtual Network?
-Yes, to enable a virtual network support (VNet) for Power Platform environments, it is essential to have an Azure subscription associated with the Power Platform tenant.
+### Is linking an Azure subscription to my Power Platform tenant necessary to activate Virtual Network?
+Yes, to enable a Virtual Network support for Power Platform environments, it's essential to have an Azure subscription associated with the Power Platform tenant.
 
-### How does the Power Platform utilize Azure subnet delegation?
-When a Power Platform environment has a delegated Azure subnet assigned, it leverages Azure virtual network injection to inject the container at runtime into delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs via a local port on the container, and the traffic flows over Azure Fabric.
+### How does Power Platform utilize Azure subnet delegation?
+When a Power Platform environment has a delegated, Azure subnet assigned, it leverages Azure Virtual Network injection to inject the container at runtime into a delegated subnet. In this process, a Network Interface Card (NIC) of container is allocated IP address from the delegated subnet. The communication between the host (Power Platform) and the container occurs through a local port on the container, and the traffic flows over Azure Fabric.
 
 ### Can I utilize an existing VNet (Virtual Network) for Power Platform?
 Yes, You can utilize an existing Virtual Network (VNet) for Power Platform, as long as a single new subnet within the VNet is delegated specifically to the Power Platform. It’s important to note that this delegated subnet should not host any other services.
