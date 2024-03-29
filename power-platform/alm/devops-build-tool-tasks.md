@@ -837,7 +837,7 @@ steps:
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want to download content from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `WebsiteId`<br/>Portal website ID | Power Pages website ID to download. |
 | `Overwrite`<br/>Content overwrite | Power Pages website content to overwrite (true\|false). |
-| `modelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
+| `ModelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
 
 
 ### Power Platform Upload PAPortal
@@ -863,7 +863,7 @@ steps:
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `UploadPath`<br/>Upload content path | Path from where the Power Pages website content will be uploaded. |
-| `modelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
+| `ModelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
 
 
 ## Catalog for Power Platform tasks (preview)
