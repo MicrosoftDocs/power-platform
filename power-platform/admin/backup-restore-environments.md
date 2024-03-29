@@ -128,6 +128,14 @@ Below restrictions applies to both restoring from system or manual backups.
 - Backup and restore operations only work with source and target environments that have Dataverse. Learn how to Add Dataverse.
 - Sandbox, teams & developer type, support self-restore backup.
 
+|Source | Target production | Target sandbox | Target developer | Target Teams | Target default |
+|---------|----------------|-----------------|-------------------|------------|-----------------|
+|Production| No             |   Yes           | No                | No           | No              |
+|Sandbox    | No             |   Yes           | No                | No           | No              |
+|Developer| No             |   Yes           | Yes                | No           | No              |
+|Teams| No                 |   No           | No                | Yes\*           | No             |
+|Default| No               |   No            | No                | No           | No              |
+
 ## Manual backups
 
 Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update. Manual backups may take up to 10 minutes to be ready for restoration. Please wait for at least 10 -15 minutes before attempting to restore your data from a manual backup.
