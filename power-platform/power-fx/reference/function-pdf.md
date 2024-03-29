@@ -5,7 +5,7 @@ author: TashasEv
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/06/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: tashas
 search.audienceType:
