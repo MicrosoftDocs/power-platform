@@ -8,9 +8,11 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 03/29/2024
 search.audienceType: 
   - admin
+contributors:
+- paulliew
 ---
 # Assign a security role to a user  
 
