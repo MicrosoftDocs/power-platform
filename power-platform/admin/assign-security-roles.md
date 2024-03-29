@@ -88,9 +88,9 @@ When users are added to Dataverse, roles are assigned automatically based on the
    > [!IMPORTANT]
    > The System Administrator role isn't removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
 
-2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management isn't applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
+2. Users, with a valid license, get corresponding mapped roles assigned to them automatically. Removal of the respective license results in automatic role removal. License-based default role management isn't applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-3. For the Default environment type, **Basic User** and **Environment Maker** roles will be assigned automatically to all users added in Dataverse.
+3. For the Default environment type, **Basic User** and **Environment Maker** roles are assigned automatically to all users added in Dataverse.
 
 4. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse. 
 
