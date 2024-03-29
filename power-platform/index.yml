@@ -59,7 +59,6 @@ productDirectory:
     imageSrc: "media/hub-page/copilot-studio.svg"
     summary: Learn how to quickly build AI-driven copilots and integrate with your apps or websites.
     url: /microsoft-copilot-studio
-
 tools:
   title: Power Platform capabilities 
   summary: Securely store and manage data using Microsoft Dataverse, use low-code Power Fx language for functional programming across Power Platform, and bring the power of Microsoft AI to your organization using AI Builder in Power Platform. 
