@@ -358,7 +358,7 @@ Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot 
 > It is recommended that admins complete this step for a Power Apps user.
 
 ## Step 11: Find personal data for the user in the Microsoft 365 Admin Center
-Some feedback mechanism in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to delete feedback data stored by the Microsoft 365 Admin Center, see ["How can I see my user's feedback?"](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 Admin Center without the need for Microsoft 365 or Office licenses.
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to delete feedback data stored by the Microsoft 365 Admin Center, see ["How can I see my user's feedback?"](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 Admin Center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
