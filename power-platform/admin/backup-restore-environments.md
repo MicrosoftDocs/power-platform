@@ -16,15 +16,15 @@ contributors:
 ---
 # Back up and restore environments
 
-It's important to protect your data on Microsoft Power Platform and Dataverse and provide continuous availability of service using system or manual backup. System backups are automatically performed for environments that have a database. 
+It's important to protect your data on Microsoft Power Platform and Dataverse and provide continuous availability of service using system or manual backups. System backups are automatically performed for environments that have a database. 
 
-You should make sure that your data on Microsoft Power Platform and Dataverse is secure and accessible using system or manual backup. System backups are created automatically for environments that have a database. System backups of production environments with a database and Dynamics 365 applications enabled are kept for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications enabled and other non-production environments are kept for seven days, but you have an option to increase the retention period beyond seven days for managed production environments without Dynamics 365 applications. Learn more about how to enable D365 applications.
+You should make sure that your data in Power Platform and Dataverse is secure and accessible using system or manual backups. System backups are created automatically for environments that have a database. System backups of production environments with a database and Dynamics 365 applications are kept for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications and other non-production environments are kept for seven days, but you have an option to increase the retention period beyond seven days for managed production environments without Dynamics 365 applications. 
 
-Manual backups, on the other hand, are backups that are user-initiated backups, and you should do before making major customizations or applying a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups for production environments with Dynamics 365 applications enabled are kept for up to 28 days, while those without Dynamics 365 applications enabled are kept for seven days.
+Manual backups, on the other hand, are backups that are user-initiated backups. You should make manual backups before making major customizations or applying a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups for production environments with Dynamics 365 applications are kept for up to 28 days, while those without Dynamics 365 applications are kept for seven days.
 
 ### Supported retention period 
 
-| Environment Types                          | System backup      |Manual backup       |
+| Environment types                          | System backup      |Manual backup       |
 |--------------------------------------------|--------------------|--------------------|
 | Production with Dynamics 365 apps          | 28                 | 28                 |
 | Production without Dynamics 365 apps\*      | 7                  | 7                  |
@@ -35,11 +35,11 @@ Manual backups, on the other hand, are backups that are user-initiated backups, 
 | Trial                                      | 7                  | Not supported      |
 | Trial subscription                         | 7                  | Not supported      |
 
-\* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days via PowerShell. For more information, see [Change the backup retention period](#change-the-backup-retention-period).
+\* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days through PowerShell. For more information, see [Change the backup retention period for production environments without Dynamics 365 applications](#change-the-backup-retention-period-for-production-environments-without-dynamics-365-applications).
 
 ## System backups
 
-Environments that have a database are automatically backed up and can be restored. All your environments, except Trial environments (standard and subscription-based), use system backup. System backups are continuous. The underlying technology is Azure SQL Database. For more information, see SQL Database documentation [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
+Environments that have a database are automatically backed up and can be restored. All your environments, except Trial environments (standard and subscription-based), have system backups. System backups are continuous. The underlying technology is Azure SQL Database. For more information, see [Automated backups](/azure/sql-database/sql-database-automated-backups) for details.
 
 1.	Browse the Power Platform admin center and sign in using administrator credentials.
 2.	Go to Environments > [select an environment] > Backups > Restore or manage
@@ -53,7 +53,7 @@ Environments that have a database are automatically backed up and can be restore
 - Only Power Apps and Power Automate flows in a Dataverse solution are included in backup and restore operations.
 - Download copy of database backup for offline use is not supported.
 
-### Chang the backup retention period for production environments without Dynamics 365 applications.
+### Change the backup retention period for production environments without Dynamics 365 applications
 
 The default backup retention period is seven days for environments without Dynamics 365 applications. Admins who run such production type [managed environments](https://learn.microsoft.com/power-platform/admin/managed-environment-overview) can change this period to 7, 14, 21, or 28 days using PowerShell. To change these settings, one must have an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, within Microsoft Entra ID.
 
