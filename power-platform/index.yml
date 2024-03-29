@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/15/2024 #Required; mm/dd/yyyy format.
+  ms.date: 03/29/2024 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -34,6 +34,7 @@ highlightedContent:
     - title: Power Platform videos
       itemType: video
       url: https://www.youtube.com/c/mspowerplatform/
+
 productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
   summary: Use Microsoft Power Platform to build apps using Power Apps, websites using Power Pages, automate tasks using Power Automate, analyze data using Power BI, create copilots using Copilot Studio. # < 160 chars (Optional; Remove if not applicable.)
@@ -58,6 +59,7 @@ productDirectory:
     imageSrc: "media/hub-page/copilot-studio.svg"
     summary: Learn how to quickly build AI-driven copilots and integrate with your apps or websites.
     url: /microsoft-copilot-studio
+
 tools:
   title: Power Platform capabilities 
   summary: Securely store and manage data using Microsoft Dataverse, use low-code Power Fx language for functional programming across Power Platform, and bring the power of Microsoft AI to your organization using AI Builder in Power Platform. 
@@ -72,6 +74,101 @@ tools:
   - title: AI Builder
     imageSrc: "media/hub-page/ai-builder.svg"
     url: /ai-builder
+
+  sections:
+    - title: Power Platform applications and features # < 60 chars (Optional; Remove if not applicable.)
+      # summary: subsectionsummary1 # < 160 chars (Optional; Remove if not applicable.)
+      items:
+        - title: Power Apps
+          links:
+            - url: /powerapps
+              itemType: overview
+              text: Power Apps documentation
+            - url: /training/powerplatform/power-apps
+              itemType: learn
+              text: Power Apps training and learning paths
+            - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
+              itemType: video
+              text: Power Apps videos
+        - title: Power Automate
+          links:
+            - url: /power-automate/
+              itemType: overview
+              text: Power Automate documentation
+            - url: /training/powerplatform/power-automate
+              itemType: learn
+              text: Power Automate training and learning paths
+            - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+              itemType: video
+              text: Power Automate videos
+        - title: Power BI
+          links:
+            - url: /power-bi/
+              itemType: overview
+              text: Power BI documentation
+            - url: /training/powerplatform/power-bi
+              itemType: learn
+              text: Power BI training and learning paths
+            - url: https://www.youtube.com/user/mspowerbi
+              itemType: video
+              text: Power BI videos
+        - title: Power Pages
+          links:
+            - url: /power-pages/
+              itemType: overview
+              text: Power Pages documentation
+            - url: /training/paths/power-pages-get-started
+              itemType: learn
+              text: Power Pages training and learning paths
+            - url: /power-pages/training-videos
+              itemType: video
+              text: Power Pages videos
+        - title: Administer and extend Power Platform
+          links:
+            - url: ./admin/index.yml
+              itemType: reference
+              text: Power Platform admin documentation
+            - url: ./admin/pricing-billing-skus.md
+              itemType: overview
+              text: Product licensing
+            - url: ./alm/index.yml
+              itemType: overview
+              text: Application lifecycle management (ALM) guide
+            - url: ./developer/index.yml
+              itemType: reference
+              text: Power Platform developer documentation
+        - title: Best practices guidance
+          links:
+            - url: ./guidance/adoption/methodology.md
+              itemType: overview
+              text: Adoption best practices
+            - url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8
+              itemType: overview
+              text: Adoption assessment
+            - url: ./guidance/coe/starter-kit.md
+              itemType: overview
+              text: Center of Excellence (CoE) Starter kit
+            - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
+              itemType: video
+              text: "Videos: Power Apps and Power Automate Architecture Series"
+            - url: /power-platform/guidance/white-papers
+              itemType: overview
+              text: White papers            
+        - title: Copilot and AI capabilities
+          links:
+            - url: responsible-ai-overview.md
+              itemType: overview
+              text: Responsible AI FAQs
+            - url: /power-apps/maker/common/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Apps
+            - url: /power-automate/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Automate
+            - url: /power-pages/responsible-ai-overview
+              itemType: overview
+              text: AI-driven features in Power Pages    
+
 additionalContent:
   sections:
     - title: Power Platform administration, development and guidance
