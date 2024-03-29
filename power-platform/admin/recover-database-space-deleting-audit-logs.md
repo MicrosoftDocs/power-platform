@@ -70,19 +70,15 @@ OData-Version: 4.0
 > [!CAUTION]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log. **Deleted logs are not recoverable**.
 
-1. Make sure that you have the System Administrator permission.
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
+
+1. In the navigation pane, select **Environments**.
   
-    Check your security role:  
-  
-   - [!INCLUDE[proc_follow_steps_in_link](../includes/proc-follow-steps-in-link.md)]  
-  
-   - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
-  
-1. In the Power Platform admin center, select an environment. 
+1. Select an environment. 
 
 1. In the **Auditing** section, under **Free up capacity**, select **Delete audit logs**.  
   
-1. In the Select logs to delete pane, select one of the following options:
+1. In the **Select logs to delete** pane, select one of the following options:
     - **By table**
     - **Access logs, by people and systems**
     - **All logs up to and including the selected date**.
