@@ -32,7 +32,7 @@ Copilots and generative AI features in [Microsoft Power Platform](/power-platfor
 However, copilots and generative AI features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
 
 > [!NOTE]
-> Copilots and generative AI features that are generally available are enabled by default. However, you might need to allow data movement across regions to use all copilot and generative AI features.
+> Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all copilot and generative AI features.
 
 ## Regions involved with copilots and generative AI features
 
