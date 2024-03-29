@@ -47,7 +47,7 @@ Follow these steps to assign a security role.
 
    :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles.":::
 
-6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles will not be assigned. 
+6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
 
    :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
 
@@ -81,14 +81,14 @@ There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-on
 
 ## Automatic role assignment
 
-When users are added to Dataverse, they will get roles assigned automatically based on the following criteria: 
+When users are added to Dataverse, roles are assigned automatically based on the following criteria: 
 
 1. All Microsoft Entra ID admins (tenant admin, Power Platform admin, Dynamics 365 service admin) get the System Administrator role in Dataverse. 
 
    > [!IMPORTANT]
-   > The System Administrator role is not removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
+   > The System Administrator role isn't removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
 
-2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
+2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management isn't applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
 3. For the Default environment type, **Basic User** and **Environment Maker** roles will be assigned automatically to all users added in Dataverse.
 
