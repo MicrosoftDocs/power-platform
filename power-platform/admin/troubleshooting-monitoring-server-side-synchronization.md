@@ -28,7 +28,7 @@ The **Sync Error** column contains information about why the item didn't synchro
 
 :::image type="content" source="media/item-monitoring-dashboard.png" alt-text="Examine the sync error.":::
    
-Selecting the link directs you to a **Help** article for the error, if one exists. 
+Selecting the link directs you to a **Learn** article for the error, if one exists. 
 
 The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to three days after the failure occured. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting. 
 
