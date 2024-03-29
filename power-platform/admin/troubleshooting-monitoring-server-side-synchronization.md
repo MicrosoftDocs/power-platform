@@ -4,9 +4,9 @@ description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/19/2023
-author: DanaMartens
+author: rahulmital 
 ms.subservice: admin
-ms.author: dmartens
+ms.author: rahulmital 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -17,20 +17,20 @@ search.audienceType:
 
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
  
-## The Server-Side Synchronization Item Monitoring dashboard
+## The server-side synchronization Item Monitoring dashboard
 
-You can use the Item Monitoring dashboard to understand why emails, appointments, contacts, and tasks have not been synchronized. 
+You can use the **Item Monitoring** dashboard to understand why emails, appointments, contacts, and tasks have not been synchronized. 
 
 > [!NOTE]
-> Rows in the Item Monitoring dashboard can only be viewed by the user who owns the associated Dataverse mailbox record or by a user who has the System Administrator security role. When the dashboard is accessed by a System Administrator, items not owned by that user will appear with the Item Subject redacted (***). 
+> Rows in the **Item Monitoring** dashboard can only be viewed by the user who owns the associated Dataverse mailbox record or by a user who has the System Administrator security role. When the dashboard is accessed by a System Administrator, items not owned by that user appear with the **Item Subject** redacted (***). 
 
-The Sync Error column will contain information about why the item did not synchronize: 
+The **Sync Error** column contains information about why the item didn't synchronize, as shown in the following image. 
 
 :::image type="content" source="media/item-monitoring-dashboard.png" alt-text="Examine the sync error.":::
    
-Selecting the link will direct you to a help article for the error if one exists. 
+Selecting the link directs you to a **Help** article for the error, if one exists. 
 
-The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to 3 days after the failure occurs. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting. 
+The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to three days after the failure occured. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting. 
 
 ## Known Issues: 
 
