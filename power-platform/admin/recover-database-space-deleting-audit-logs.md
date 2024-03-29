@@ -21,12 +21,15 @@ To assist you in determining which audit logs to delete, we have created the [Ge
 
 Using a tool like [Insomnia](/power-apps/developer/data-platform/webapi/insomnia?view=dataverse-latest), you can retrieve the audit storage information.
 
+```http
   POST: [orgUrl]/api/data/v9.1/GetAuditStorageDetails 
    Parameters: 
     { 
         RequestName = "GetAuditStorageDetails", 
     }
+```
 
+```http
  Response:
  {
     "@odata.context":  [Organization Uri]/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.GetAuditStorageDetailsResponse,
@@ -56,6 +59,7 @@ Using a tool like [Insomnia](/power-apps/developer/data-platform/webapi/insomnia
         }
     }
 }
+```
   
 > [!CAUTION]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log. **Deleted logs are not recoverable**.
