@@ -23,43 +23,49 @@ Using a tool like [Insomnia](/power-apps/developer/data-platform/webapi/insomnia
 
 **Request**
 ```http
-  POST: [orgUrl]/api/data/v9.1/GetAuditStorageDetails 
-   Parameters: 
-    { 
-        RequestName = "GetAuditStorageDetails", 
-    }
+POST [Organization Uri]/api/data/v9.2/GetAuditStorageDetails
+Accept: application/json
+Content-Type: application/json; charset=utf-8
+OData-MaxVersion: 4.0
+OData-Version: 4.0
 ```
+
 **Response**
 ```http
- {
-    "@odata.context":  [Organization Uri]/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.GetAuditStorageDetailsResponse,
-    "Result": {
-        "Status": "Completed",
-        "AuditStorageDetails": {
-            "Count": 3,
-            "Keys": [
-                "organization",
-                "deletedentity_10928",
-                "new_entity_02272411082222785"
-            ],
-            "Values": [
-                {
-                    "SizeInBytes": 3835,
-                    "ObjectTypeCode": 1019
-                },
-                {
-                    "SizeInBytes": 3113,
-                    "ObjectTypeCode": 10928
-                },
-                {
-                    "SizeInBytes": 2012,
-                    "ObjectTypeCode": 10990
-                }
-            ]
-        }
-    }
-}
-```
+  HTTP/1.1 200 OK
+  Content-Type: application/json; odata.metadata=minimal
+  OData-Version: 4.0
+  
+  {
+      "@odata.context":  [Organization Uri]/api/data/v9.1/$metadata#Microsoft.Dynamics.CRM.GetAuditStorageDetailsResponse,
+      "Result": {
+          "Status": "Completed",
+          "AuditStorageDetails": {
+              "Count": 3,
+              "Keys": [
+                  "organization",
+                  "deletedentity_10928",
+                  "new_entity_02272411082222785"
+              ],
+              "Values": [
+                  {
+                      "SizeInBytes": 3835,
+                      "ObjectTypeCode": 1019
+                  },
+                  {
+                      "SizeInBytes": 3113,
+                      "ObjectTypeCode": 10928
+                  },
+                  {
+                      "SizeInBytes": 2012,
+                      "ObjectTypeCode": 10990
+                  }
+              ]
+          }
+      }
+  }
+  ```
+
   
 > [!CAUTION]
 > When you delete an audit log, you can no longer view the audit history for the period covered by that audit log. **Deleted logs are not recoverable**.
