@@ -4,7 +4,7 @@ description: Recover database space by deleting audit logs
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 03/29/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -68,13 +68,16 @@ Using a tool like [Insomnia](/power-apps/developer/data-platform/webapi/insomnia
   
    - [!INCLUDE[proc_dont_have_correct_permissions](../includes/proc-dont-have-correct-permissions.md)]  
   
-2. In the Power Platform admin center, select an environment. 
+1. In the Power Platform admin center, select an environment. 
 
-3. Under the Auditing section/Free up capacity, click on **Delete audit logs**.  
+1. In the **Auditing** section, under **Free up capacity**, select **Delete audit logs**.  
   
-4. Select a Delete logs option - **By table**, **Access logs, by people and systems**, or **All logs up to and including the selected date**.
+1. In the Select logs to delete pane, select one of the following options:
+    - **By table**
+    - **Access logs, by people and systems**
+    - **All logs up to and including the selected date**.
   
-5. Click the **Delete** button.
+6. Select **Delete**.
   
    > [!NOTE]
    >  You can only delete the oldest audit log in the system. To delete more than one audit log, continue to delete the oldest audit log until you have deleted enough logs.  
