@@ -4,7 +4,7 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 02/02/2024
+ms.date: 03/29/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -837,7 +837,7 @@ steps:
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want to download content from (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `WebsiteId`<br/>Portal website ID | Power Pages website ID to download. |
 | `Overwrite`<br/>Content overwrite | Power Pages website content to overwrite (true\|false). |
-| `ModelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
+| `ModelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
 
 
 ### Power Platform Upload PAPortal
@@ -863,7 +863,7 @@ steps:
 | `authenticationType`<br/>Type of authentication | (Required for SPN) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment that you want upload content to (e.g., `https://powerappsbuildtools.crm.dynamics.com`). Defined under **Service Connections** in **Project Settings** using the **Power Platform** connection type. |
 | `UploadPath`<br/>Upload content path | Path from where the Power Pages website content will be uploaded. |
-| `ModelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
+| `ModelVersion`<br/>Site Data Model |Indicates if the site data to be uploaded will use the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
 
 
 ## Catalog for Power Platform tasks (preview)
