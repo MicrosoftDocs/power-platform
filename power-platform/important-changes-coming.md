@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 03/12/2024
+ms.date: 03/14/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,9 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## DLP resource exemption feature
+Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that have never used it before. By October 2024, the resource exemption feature will be deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 
@@ -116,7 +119,7 @@ The impact of the deprecation of this capability is that you'll no longer be abl
 
 ## Model-driven app controls deprecation
 
-Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, flip, and star rating.
+Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, and star rating.
 
 ### Why is this needed?
 
@@ -748,9 +751,9 @@ Gateways for desktop flows are deprecated. Direct connectivity is the preferred 
 
 See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
 
-## Power Apps portals
+## Power Pages
 
-See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
+See [Important changes coming in Power Pages](/power-pages/important-changes-deprecations).
 
 ## Other deprecation articles
 [Deprecated features in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>

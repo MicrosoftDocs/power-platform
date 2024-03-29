@@ -5,7 +5,7 @@ author: jorisdg
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/10/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jorisde
 contributors:

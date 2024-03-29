@@ -10,6 +10,9 @@ ms.author: sericks
 ms.reviewer: tapanm
 ms.collection: 
     - bap-ai-copilot
+ms.contributors:
+- deepabansal
+- traliil
 ---
 
 # FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform 

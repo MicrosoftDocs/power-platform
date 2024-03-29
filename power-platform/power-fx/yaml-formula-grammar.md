@@ -3,7 +3,7 @@ title: Microsoft Power Fx YAML Formula Grammar | Microsoft Docs
 description: Microsoft Power Fx YAML formula syntax
 author: gregli-msft
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.topic: reference
 ms.custom: canvas
 ms.subservice: power-fx

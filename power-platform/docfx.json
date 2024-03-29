@@ -69,7 +69,8 @@
         "guidance/**/*.md": "guidance",
         "alm/**/*.md": "alm",
         "admin/**/*.md": "admin",
-        "developer/**/*.md": "developer"
+        "developer/**/*.md": "developer",
+        "well-architected/**/*.md": "well-architected"
       },
       "search.app": {
         "power-fx/**/*.md": [ "powerapps-docs" ],

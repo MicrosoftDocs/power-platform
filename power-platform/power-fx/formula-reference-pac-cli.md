@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations in P
 author: snizar007
 ms.topic: reference
 ms.reviewer: jdaly
-ms.date: 11/5/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: snizar
 search.audienceType:
@@ -112,6 +112,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 ## E
 
 **[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
+
+**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in a HTML context.
 
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
