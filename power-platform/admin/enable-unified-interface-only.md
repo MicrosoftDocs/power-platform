@@ -33,7 +33,7 @@ All new environments with a Dataverse database, including those created in exist
 
 ### Existing environments
 
-Environments created before the scheduled release dates will not get this change automatically. Version 9.1.0.3448 onwards, administrators will have the option to change the environment settings to get the Unified Interface Only experience. It is recommended to switch to this mode by following the steps at [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode).
+Environments created before the scheduled release dates will not get this change automatically. Version 9.1.0.3448 onwards, administrators will have the option to change the environment settings to get the Unified Interface Only experience. It's recommended to switch to this mode by following the steps at [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode).
 
 > [!IMPORTANT]
 > For existing environments, it's recommended that you:
@@ -69,7 +69,7 @@ If no app is referenced in the URL, the record or page opens without any navigat
 
 ### Dynamics 365 - custom (hidden for users)
 
-The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It is not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
+The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It's not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
 
 > [!div class="mx-imgBorder"] 
 > ![Dynamics 365 - custom legacy app.](media/dynamics-365-custom.png "Dynamics 365 - custom legacy app")
@@ -93,7 +93,7 @@ As part of removing the legacy web client app, a new environment property has be
 | On | Legacy web client app is shown for admins. |
 | Off | Legacy web client app is hidden for admins. |
 
-The gradual hiding happens in the following steps. Admins can explicitly set to **On** for environment that still need the lgacy web client app.
+The gradual hiding happens in the following steps. Admins can explicitly set to **On** for environments that still need the legacy web client app.
 
 1. Starting in May 2024 when new environments are provisioned, this property will be defaulted to **Off**.
 1. Starting with 2406 monthly channel release, admins in monthly channel will have **Auto** treated as **Off**.
@@ -128,7 +128,7 @@ No, this change applies immediately, upon reloading the page. If it doesn't, cle
 
 ### Business users in my environment are still using the legacy web client for all or some of the scenarios, and our business is not completely ready to move to Unified Interface. How does the Unified Interface Only setting impact my environment after the April 2019 release?
 
-This setting is preset to Off for your environment, and you are unaffected by the April 2019 release. It is recommended that you take advantage of the benefits of Unified Interface early by turning Unified Interface Only mode on.
+This setting is preset to Off for your environment, and you are unaffected by the April 2019 release. It's recommended that you take advantage of the benefits of Unified Interface early by turning Unified Interface Only mode on.
 
 ### I want to use Unified Interface for all the apps, but still want *Dynamics 365 – custom* to open in the legacy web client. Is that possible?
 
