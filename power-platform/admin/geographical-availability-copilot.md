@@ -67,7 +67,7 @@ To use copilots and generative AI features, you need to consent to the terms of 
    
 1. Review the terms of use and select the **Bing Search** checkbox.
 
-   When the **Bing Search** feature is turned on, it allows your copilot in Microsoft Copilot Studio to find and present information from multiple external sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
+   When the **Bing Search** feature is turned on, it allows your copilot in Microsoft Copilot Studio to use the data sources you provided, but use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
 
    > [!Note]
    > To select the **Bing Search** checkbox, the **Move data across regions** checkbox must be already selected.
