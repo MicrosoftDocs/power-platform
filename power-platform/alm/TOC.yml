@@ -20,8 +20,6 @@
           href: use-solutions-for-your-customizations.md
         - name: Managed properties
           href: managed-properties-alm.md
-        - name: Use segmented solutions
-          href: segmented-solutions-alm.md
         - name: Create and update solutions
           href: update-solutions-alm.md
         - name: Dependencies
@@ -34,8 +32,12 @@
                href: remove-field-view.md
              - name: Table and model-driven app dependencies
                href: remove-table-app.md
-        - name: Organize solutions
-          href: organize-solutions.md
+        - name: Solution best practices
+          items:
+            - name: Organize solutions
+              href: organize-solutions.md
+            - name: Use segmented solutions
+              href: segmented-solutions-alm.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
     - name: Implementing healthy project and solution ALM
