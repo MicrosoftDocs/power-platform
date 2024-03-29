@@ -44,6 +44,8 @@
         href: deflection-alternate-escalation-paths.md
       - name: Agent transcripts analysis
         href: deflection-transcripts-analysis.md
+    - name: Analytics considerations for Copilot Studio vs Dynamics 365 Omnichannel
+      href: oc-pva-analytics.md
     - name: Custom analytics strategy
       href: custom-analytics-strategy.md
 - name: Planning a conversational AI project
