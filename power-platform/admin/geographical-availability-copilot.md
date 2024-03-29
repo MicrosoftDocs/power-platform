@@ -63,7 +63,7 @@ To use copilots and generative AI features, you need to consent to the terms of 
    When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the table above. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
 
    > [!Note]
-   > Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
+   > Data movement that occurred while your environment was allowed to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
    
 1. Review the terms of use and select the **Bing Search** checkbox.
 
