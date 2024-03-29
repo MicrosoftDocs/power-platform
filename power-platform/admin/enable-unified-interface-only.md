@@ -67,7 +67,7 @@ With Unified Interface Only mode, all URLs (or deep links) open in Unified Inter
 
 If no app is referenced in the URL, the record or page opens without any navigation elements on the page. Navigation elements like sitemap are defined using an app; URLs without apps don't have them. Users can use the app switcher to navigate to an app and continue their work.
 
-### Dynamics 365 - custom hidden for users
+### Dynamics 365 - custom (hidden for users)
 
 The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It is not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
 
@@ -81,20 +81,19 @@ When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Un
 > [!div class="mx-imgBorder"] 
 > ![Show legacy app to everyone.](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
 
-### Dynamics 365 - custom hidden for admins
+### Dynamics 365 - custom (hidden for admins)
 
-As part of removing the legacy web client app, a new environment property has been added to allow gradual hiding of the app for those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then see the **Show legacy app for admins**.
+As part of removing the legacy web client app, a new environment property has been added to allow gradual hiding of the app for those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then set the **Show legacy app for admins** option.
 
-> [!div class="mx-imgBorder"] 
-> ![Show legacy app for admins.](media/ppac-show-legacy-app-for-admins.png "Show legacy app for admins")
+:::image type="content" source="media/ppac-show-legacy-app-for-admins.png" alt-text="Show legacy app for admins":::
 
 | Value | Behavior |
 | -- | -- |
-| Auto (default) | Default value which will behaves like **On** initially and will gradually be changed to **Off** |
-| On | Legacy web client app is shown for admins |
-| Off | Legacy web client app is hidden for admins |
+| Auto (default) | Default value which behaves like **On** initially, and then gradually changes to **Off**. |
+| On | Legacy web client app is shown for admins. |
+| Off | Legacy web client app is hidden for admins. |
 
-The gradual hiding will happen in the following steps. Admins can explicitly set to **On** for environment that still need the lgacy web client app.
+The gradual hiding happens in the following steps. Admins can explicitly set to **On** for environment that still need the lgacy web client app.
 
 1. Starting in May 2024 when new environments are provisioned, this property will be defaulted to **Off**.
 1. Starting with 2406 monthly channel release, admins in monthly channel will have **Auto** treated as **Off**.
