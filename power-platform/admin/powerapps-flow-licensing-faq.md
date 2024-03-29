@@ -28,7 +28,7 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 
 ### What are the licensing implications of generally available Copilot capabilities for end users of Power Apps and Dynamics 365 apps?
 
-The Copilot features for end-users embedded in model driven apps enhance our current business application capabilities for both Dynamics 365 apps and Power Platform.
+The Copilot features for end-users embedded in model-driven apps enhance our current business application capabilities for both Dynamics 365 apps and Power Platform.
 
 To utilize these features, you need a premium Dynamics 365 Enterprise license.
 
