@@ -5,6 +5,8 @@ ms.date: 04/01/2024
 ms.reviewer: pehecke
 author: angela21k
 ms.author: angelakim
+suite: powerapps
+ms.topic: article
 ms.subservice: developer
 search.audienceType: 
   - developer
