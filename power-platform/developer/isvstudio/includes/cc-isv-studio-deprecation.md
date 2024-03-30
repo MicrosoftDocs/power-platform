@@ -1,0 +1,1 @@
+The ISV Studio preview has ended with the decision to not continue. ISV Studio will be removed on May 31, 2024. [Learn more about the removal of ISV Studio](../../../important-changes-coming.md#isv-studio-is-deprecated).

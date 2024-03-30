@@ -1,7 +1,7 @@
 ---
 title: Connector certification from ISV Studio | Microsoft Docs
 description: Learn how to submit a custom connector for certification by using ISV Studio.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: pehecke
 author: angela21k
 ms.author: angelakim
@@ -14,6 +14,8 @@ contributors:
 ---
 
 # Connector certification
+
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 If you own a service or API, or you've built a custom connector that you want to connect to Power Apps, Power Automate, Azure Logic Apps, or Power Query, you need to submit your connector to Microsoft for certification.
 
