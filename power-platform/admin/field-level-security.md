@@ -4,9 +4,9 @@ description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 03/19/2024
-author: praveenmantha
+author: paulliew
 ms.subservice: admin
-ms.author: pmantha
+ms.author: paulliew
 ms.reviewer: sericks
 contributors:
   - srpoduri
@@ -31,9 +31,9 @@ Record-level permissions are granted at the table level, but you may have certai
 ## Overview of column-level security  
 Column-level security is available for the default columns on most out-of-box tables, custom columns, and custom columns on custom tables. Column-level security is managed by the security profiles. To implement column-level security, a system administrator performs the following tasks.  
   
-1. Enable column security on one or more columns for a given table.  
-  
-2. Associate one more existing security profile, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
+1. Enable column security on one or more columns for a given table.
+1. Select an optional masking rule (**preview**). 
+1. Associate one more existing security profile, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
   
 A security profile determines the following:  
   
@@ -42,11 +42,12 @@ A security profile determines the following:
   
   A security profile can be configured to grant user or team members the following permissions at the column level:  
   
-- **Read**. Read-only access to the column's data.  
+- **Read**. Read-only access to the column's data.
+- **Read unmasked**. Read column's data unmasked values. (**preview**)
 - **Create**. Users or teams in this profile can add data to this column when creating a row.  
 - **Update**. Users or teams in this profile can update the column's data after it has been created.  
   
-A combination of these three permissions can be configured to determine the user privileges for a specific data column.  
+A combination of these four permissions can be configured to determine the user privileges for a specific data column.  
   
 > [!IMPORTANT]
 > Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
@@ -56,7 +57,7 @@ Imagine your company's policy is that sales members should have different levels
   
 |User or Team|Access|  
 |------------------|------------|  
-|Sales Managers|Read-only. Can only view mobile phone numbers for contacts.|  
+|Sales Managers|Read-only. Can only view mobile phone numbers in masked form for contacts.|  (**preview**)
 |Vice presidents|Full. Can create, update, and view mobile phone numbers for contacts.|  
 |Salespersons and all other users|None. Cannot create, update, or view mobile phone numbers for contacts.|  
   
@@ -84,7 +85,8 @@ Imagine your company's policy is that sales members should have different levels
 
    :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Expand Advanced options and enable column security.":::
 
-7. Select **Save**.
+7. Click the drop-down of **Masking rule** and select a masking rule. (**preview**)
+8. Select **Save**.
 
 **Configure the security profiles**
   
@@ -115,7 +117,7 @@ Imagine your company's policy is that sales members should have different levels
 
 3. Select the **Column Security Profiles** tab, and then select **Vice President**. 
 
-4. Select the **Column Permissions** tab, select **mobilephone**, and then select **Edit**. Set all three settings to **Allowed**, and then select **Save**.  
+4. Select the **Column Permissions** tab, select **mobilephone**, and then select **Edit**. Set the **Read** setting to **Allowed**, the **Read unmasked** to **One record** (**preview**), and the rest as **Allowed**, and then select **Save**.  
 
 Any users not defined in the previously created column security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
   
