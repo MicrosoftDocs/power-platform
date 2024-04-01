@@ -3,7 +3,7 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/21/2024
+ms.date: 04/01/2024
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -108,7 +108,7 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 [Learn more about recovering environment](recover-environment.md).
 
 > [!NOTE]
-> Recovering a Teams environment deleted due to inactivity requires tenant level administrative role.
+> Recovering a Teams environment that was deleted due to inactivity requires a tenant-level administrative role.
 
 ### See also
 
