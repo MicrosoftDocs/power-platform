@@ -45,12 +45,12 @@ Environments that have a database are automatically backed up and can be restore
 2.	Go to **Environments** > [**_select an environment_**] > **Backup & Restore** > **Restore or manage**.
 3.	Look for system backups available by selecting a date and time.
 4.	Select **Continue**.
-5.	The **Restore backup to a target environment** pane shows backups that are available.
+5.	The **Restore backup to a target environment** pane shows backup details that are available.
 
 ### About system backups
 
 -	System backups aren't counted toward storage capacity. To restore an environment, you need **1 GB** of free capacity. If you are over capactiy, see [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api)
-- Copying and restoring data may take more than one day, depending on the size of the data, especially if you need to copy [audit data](backup-restore-environments#restoring-audit-logs).
+- Copying and restoring data may take more than one day, depending on the size of the data, especially if you need to copy [audit data](backup-restore-environments.md#restoring-audit-logs).
 - Only Power Apps and Power Automate flows in a Dataverse solution are included in backup and restore operations.
 - Downloading a copy of a database backup for offline use isn't supported.
 
@@ -93,31 +93,24 @@ Get-AdminPowerAppEnvironment -EnvironmentName "Environment ID"
 Set the **EnvironmentName** parameter to your environment ID.
 
 ## Restore system backups
-You can't restore backups to production environments. To restore a system backup to a production environment, you must [change the environment type](switch-environment.md)  to a sandbox environment first, and then you can switch the environment type back to production after restoring. See [Check Restore production environment FAQ] for more details.
+You can't restore backups to production environments. To restore a system backup to a production environment, you must [change the environment type](switch-environment.md)  to a sandbox environment first, and then you can switch the environment type back to production after restoring. See [Check Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details.
 
-You must restore an environment in the same region where it was backed up. Target and source environment should be in the same region.When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time t1, full audit data for the environment will be available, including any audit logs that were generated after t1.
+You must restore an environment in the same region where it was backed up. Target and source environments should be in the same region. When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time (t1), full audit data for the environment is available, including any audit logs that were generated after t1.
 
- Browse to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials. Consider using the less privileged service admin role instead of the global admin role. Learn more: [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Browse to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials. Consider using the less-privileged, service admin role instead of the global admin role. Learn more: [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
 
-2.  Go to **Environments** > [select an environment\] > **Backups** > **Restore or manage**.
-
-    :::image type="content" source="media/restore-backup-menu.png" alt-text="Select Restore or manage":::
-
-3.  Select the **System** tab.
-
-4.  Under **Select a backup to restore**, choose a date and time to select a system backup to restore, and then select **Continue**.
-
-    :::image type="content" source="media/select-available-backup.png" alt-text="Select available backup":::
-
-5.  Select an environment to restore to (overwrite), enter other settings as desired, and then select **Restore**.
-
-    :::image type="content" source="media/restore-backup.png" alt-text="Enter backup details":::
+1. Go to **Environments** > [**_select an environment_**\] > **Backup & Restore** > **Restore or manage**.
+1.  Select the **System** tab.
+1.	Look for system backups available by selecting a date and time.
+1.	Select **Continue**.
+1.	The **Restore backup to a target environment** pane shows backup details that are available.
+1.  Select a target environment to overwrite, and then select **Restore**.
     
     > [!Note]
     > - Only sandbox environments can be restored to. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing environment type.
     > - Under **Edit details**, you can change the environment name.
 
-6.  Confirm overwrite of the environment.
+1.  Confirm overwrite of the environment.
 
 ##  Don't see your environment to restore to?
 Below restrictions applies to both restoring from system or manual backups.
