@@ -107,6 +107,9 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 
 [Learn more about recovering environment](recover-environment.md).
 
+> [!NOTE]
+> Recovering a Teams environment deleted due to inactivity requires tenant level administrative role.
+
 ### See also
 
 [Back up and restore environments](backup-restore-environments.md)  
