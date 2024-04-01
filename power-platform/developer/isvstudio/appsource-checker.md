@@ -1,7 +1,7 @@
 ---
 title: Introduction to the AppSource checker | Microsoft Docs
 description: Learn how to use AppSource checker
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 author: angela21k
 ms.author: angelakim
 ms.reviewer: jdaly
@@ -15,7 +15,7 @@ contributors:
 
 # AppSource checker
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 You can use the AppSource checker to verify whether your app has met certification criteria before you submit it to [AppSource](https://appsource.microsoft.com/). The checker lets you know whether your solution file has errors that need to be corrected and verifies whether AppSource certification criteria have been met.
 
