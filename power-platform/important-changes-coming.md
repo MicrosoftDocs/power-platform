@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## ISV Studio is deprecated
 
-ISV Studio is an analytics portal that shows limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provides an another access point to the connector certification wizard.  
+[ISV Studio](developer/isvstudio/index.md) is an analytics portal that shows limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provides an another access point to the connector certification wizard.  
 
 Thanks to our ISV partners for trying out ISV Studio during the preview. After careful consideration and extensive review of partner feedback, we recognize the limitations of the service over time and acknowledge that it hasn't provided value as expected. At this stage of preview, we decided to remove the feature.
 
