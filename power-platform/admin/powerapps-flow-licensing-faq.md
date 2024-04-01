@@ -24,24 +24,22 @@ This article lists common questions and answers for licensing and plan options.
 
 For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-## Copilot in business apps
+## Licensing for Copilot chat and form fill assistance in model-driven apps 
 
-### What are the licensing implications of generally available Copilot capabilities for end users of Power Apps and Dynamics 365 apps?
+### What are the licensing implications of generally available Copilot capabilities for end users of model-driven apps? 
 
-The Copilot features for end-users embedded in model-driven apps enhance our current business application capabilities for both Dynamics 365 apps and Power Platform.
+As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
 
-To utilize these features, you need a premium Dynamics 365 Enterprise license.
+To utilize these features, you'll need any of the following licenses: Dynamics 365 Sales Enterprise, Dynamics 365 Customer Insights, Dynamics 365 Field Service, or Dynamics 365 Project Operations. 
 
-For Power Platform, these features are opt-in public preview. Final licensing will be shared at a future date when they become generally available.
+For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
 
-#### Learn about the Copilot features
+Learn more about Copilot chat and form fill assistance from the following table.
 
 | Feature | Description |
 |--|--|
-| [Copilot Chat](/power-apps/user/use-copilot-model-driven-apps) | Allows end users to ask natural language questions about the data in their model driven apps and get instant answers.  |
-| [Form Fill Assistance](/power-apps/user/form-filling-assistance) | Helps end users fill in complex forms in model driven apps by providing suggestions and guidance based on the data context. |
-
-To see your current license usage, select **View license consumption (preview)** in the Power Platform admin center. For more information, see [View license consumption for Power Apps and Power Automate (preview)](view-license-consumption-issues.md).
+| [Copilot chat](/power-apps/user/use-copilot-model-driven-apps) | Allows end users to ask natural language questions about the data in their model-driven apps and get instant answers.  |
+| [Form fill assistance](/power-apps/user/form-filling-assistance) | Helps end users fill in complex forms in model-driven apps by providing suggestions and guidance based on the data context. |
 
 ## Power Platform product licensing
 
