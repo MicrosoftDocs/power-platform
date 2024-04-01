@@ -20,7 +20,7 @@ When this capability is enabled, you can configure which apps are allowed or blo
 
 ## How does app access control work?
 
-App access control is performed at the Dataverse Authentication layer—[Authenticating to Power Platform services](/security/authenticate-services.md). The Dataverse authentication validates the client app ID in the user’s token against a list of allowed and blocked apps as configured in the environment.
+App access control is performed at the Dataverse Authentication layer—[Authenticating to Power Platform services](security/authenticate-services.md). The Dataverse authentication validates the client app ID in the user’s token against a list of allowed and blocked apps as configured in the environment.
 
 The authentication either grants or denies the user’s app access to the environment.  
 
@@ -83,11 +83,11 @@ There are three settings:
 
 During preview, you can use the Insomnia tool to update feature settings—[Use Insomnia with Dataverse Web API](/power-apps/developer/data-platform/webapi/insomnia).
 
-1. [Install Insomnia](/power-apps/developer/data-platform/webapi/insomnia.md#install-insomnia)
-1. [Configure the base environment](/power-apps/developer/data-platform/webapi/insomnia.md#configure-the-base-environment).
+1. [Install Insomnia](/power-apps/developer/data-platform/webapi/insomnia#install-insomnia)
+1. [Configure the base environment](/power-apps/developer/data-platform/webapi/insomnia#configure-the-base-environment).
    > [!NOTE]
    > This environment uses the Dataverse provided **ClientID** `51f81489-12ee-4a9e-aaae-a2591f45987d` to authenticate and obtain the user token.
-1. [Configure requests](/power-apps/developer/data-platform/webapi/insomnia.md#configure-requests)
+1. [Configure requests](/power-apps/developer/data-platform/webapi/insomnia#configure-requests)
 
    **Retrieve the feature settings (see query parameters)**:
 
@@ -277,4 +277,4 @@ Access to Dataverse API is restricted for this application Id: `xxxxxxxxx-xxxx-x
 
 Application IDs of commonly used Microsoft applications:
 
-[Verify first-party Microsoft applications in sign-in reports](/entra-id/governance/verify-first-party-apps-sign-in.md#application-ids-of-commonly-used-microsoft-applications)
+[Verify first-party Microsoft applications in sign-in reports](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in.md#application-ids-of-commonly-used-microsoft-applications)
