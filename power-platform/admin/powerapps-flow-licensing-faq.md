@@ -30,9 +30,14 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 
 As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
 
-To utilize these features, you'll need any of the following licenses: Dynamics 365 Sales Enterprise, Dynamics 365 Customer Insights, Dynamics 365 Field Service, or Dynamics 365 Project Operations. 
+To utilize these features, you'll need any of the following licenses: 
+- Dynamics 365 Sales Enterprise
+- Dynamics 365 Customer Insights
+- Dynamics 365 Field Service
+- Dynamics 365 Project Operations. 
 
-For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
+> [!Note]
+> For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
 
 Learn more about Copilot chat and form fill assistance from the following table.
 
