@@ -81,21 +81,30 @@ With your environment group setup, it can now serve as the home for all new pers
 > [!NOTE]
 > For developer environments in the _Personal Productivity_ group, the sharing limit can't be changed in individual environment settings. The same default restriction applies to other rules. To make changes, adjust the rule and the change applies to all environments in the group.
 
-## Manually create environments into the group
+## Add environments to your environment group
 
-You can manually create environments into the _Personal Productivity_ group.
+You can manually add environments to the _Personal Productivity_ group if you have existing **Developer** environments that belong there.
 
-1. Go to the **Environments** page.
-1. Select **New** in the command bar.
-1. Select a **group** for your created environment.
-1. Enter the other details.
-1. Select **Save**.
+1. Select the _Personal Productivity_ group.
+1. Select the **Add environments** button in the command bar.
+1. Select a single environment from the list of Managed Environments.
+1. Select **Add**.
 
 > [!NOTE]
 >
 > - An environment can only belong to one environment group.
 > - Only Managed Environments can be created into an environment group.
 > - Any environment type, for example production, developer, or sandbox, can be created into an environment group.
+
+## Manually create environments into the group
+
+You can also manually create environments into the _Personal Productivity_ group.
+
+1. Go to the **Environments** page.
+1. Select **New** in the command bar.
+1. Select a **group** for your created environment.
+1. Enter the other details.
+1. Select **Save**.
 
 ## Remove an environment from your environment group
 
