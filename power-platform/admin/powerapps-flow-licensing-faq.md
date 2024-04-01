@@ -34,7 +34,7 @@ To utilize these features, you need any of the following licenses:
 - Dynamics 365 Sales Enterprise
 - Dynamics 365 Customer Insights
 - Dynamics 365 Field Service
-- Dynamics 365 Project Operations. 
+- Dynamics 365 Project Operations 
 
 > [!Note]
 > For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
