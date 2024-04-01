@@ -277,4 +277,4 @@ Access to Dataverse API is restricted for this application Id: `xxxxxxxxx-xxxx-x
 
 Application IDs of commonly used Microsoft applications:
 
-[Verify first-party Microsoft applications in sign-in reports](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in.md#application-ids-of-commonly-used-microsoft-applications)
+[Verify first-party Microsoft applications in sign-in reports](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications)
