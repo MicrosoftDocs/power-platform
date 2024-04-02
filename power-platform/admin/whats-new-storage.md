@@ -4,7 +4,7 @@ description: "Learn about enhancements for storage that affect administrators, i
 author: mayadumesh
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/30/2022
+ms.date: 04/02/2024
 ms.subservice: admin
 ms.author: mayadu
 ms.reviewer: sericks
@@ -58,7 +58,7 @@ If you exceed your storage capacity, you'll receive email notifications alerting
 - Add Dataverse database to an environment
 
 Please review:
-- [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](backup-restore-environments.md#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api)
+- [Is there a database size restriction for backing-up or restoring an organization through user interface (UI) or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-user-interface-ui-or-api)
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
 - For the legacy capacity storage model, see [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario). 
 - For the new capacity storage model, see [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-overage-enforcement).
