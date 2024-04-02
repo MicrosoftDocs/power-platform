@@ -119,7 +119,7 @@ The following restrictions apply to both restoring from system or manual backups
 - The source environment can be production, sandbox, or developer. Other types of environments aren't supported.
 - The target environment can be sandbox or developer. If the target is a developer environment, the source must also be a developer environment.
 - A Managed Environment can only be restored to another Managed Environment. A non-Managed Environment can't be restored to a Managed Environment.
-- If the source environment has a customer-managed key applied, the target environment must also have a customer-managed key applied.
+- If the source environment has a customer-managed encryption key applied, the target environment must also have a customer-managed encryption key applied.
 - Backup and restore operations only work with source and target environments that have Dataverse.
 - Sandbox, Teams, and developer environemnts support self-restore backups.
 
@@ -329,14 +329,14 @@ See [Recover environment](recover-environment.md) to learn more about the recove
 
 ### Don't see your environment to restore to?
 
--   Supported source environment can be production, sandbox or developer and other types not supported.
--   Target environment can be sandbox or developer. If the target is developer type environment, then source needs to be developer.
+-   The supported, source environment can be production, sandbox, or developer. Other types aren't supported.
+-   Target environment can be sandbox or developer. If the target is a developer environment, then the source needs to be developer.
 -   Target and source environment should be in the same region.
--   A **Managed Environment** can only be restored to another Managed Environment. Learn more: [Managed Environments overview](managed-environment-overview.md)
--   Source env has CMK applied then target environment must have CMK applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
--   Restoring an environment requires **1 GB capacity** available. See [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
--   Back up and restore operations only work with source and target environments must have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
--   If you don't have sufficient storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) how to request more storage here.
+-   A Managed Environment can only be restored to another Managed Environment. Learn more: [Managed Environments overview](managed-environment-overview.md)
+-   If the source environment has a customer-managed encryption key applied, then the target environment must have a customer-managed encryption key applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
+-   Restoring an environment requires **1 GB capacity** available. Learn more: [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
+-   Backup and restore operations only work with source and target environments that have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
+-   If you don't have sufficient storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) to request more storage.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
