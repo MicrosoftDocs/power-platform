@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 04/01/2024
+ms.date: 04/02/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -113,14 +113,15 @@ You must restore an environment in the same region where it was backed up. Targe
 1.  Confirm overwrite of the environment.
 
 ##  Don't see your environment to restore to?
-Below restrictions applies to both restoring from system or manual backups.
+The following restrictions apply to both restoring from system or manual backups.
+
 - You must restore an environment in the same region where it was backed up. Target and source environment should be in the same region.
-- The source environment can be production, sandbox, or developer, and other types are not supported.
-- The target environment can be sandbox or developer. If the target is a developer type environment, the source must also be a developer type.
-- A Managed Environment can only be restored to another Managed Environment. A non-managed environment cannot be restored to a managed environment.
-- If the source environment has Customer managed key  applied, the target environment must also have CMK applied.
-- Backup and restore operations only work with source and target environments that have Dataverse. Learn how to Add Dataverse.
-- Sandbox, teams & developer type, support self-restore backup.
+- The source environment can be production, sandbox, or developer. Other types of environments aren't supported.
+- The target environment can be sandbox or developer. If the target is a developer environment, the source must also be a developer environment.
+- A Managed Environment can only be restored to another Managed Environment. A non-Managed Environment can't be restored to a Managed Environment.
+- If the source environment has a customer-managed key applied, the target environment must also have a customer-managed key applied.
+- Backup and restore operations only work with source and target environments that have Dataverse.
+- Sandbox, Teams, and developer environemnts support self-restore backups.
 
 |Source | Target production | Target sandbox | Target developer | Target Teams | Target default |
 |---------|----------------|-----------------|-------------------|------------|-----------------|
@@ -132,24 +133,25 @@ Below restrictions applies to both restoring from system or manual backups.
 
 ## Manual backups
 
-Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update. Manual backups may take up to 10 minutes to be ready for restoration. Please wait for at least 10 -15 minutes before attempting to restore your data from a manual backup.
+Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update. Manual backups may take up to 10 minutes to be ready for restoration. Please wait for at least 10 - 15 minutes before attempting to restore your data from a manual backup.
 
 ### About manual backups
+
 - You can create backups of production and sandbox environments.
 - You can't create backups of the default environment.
-- Manual backups for production environments that have both a database and Dynamics 365 applications enabled are kept for up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications enabled are kept for seven days.
+- Manual backups for production environments that have both a database and Dynamics 365 applications are kept for up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications are kept for seven days.
 - Sandbox backups are kept for up to seven days.
 - Check your expiration date.
-- ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/90061039/7c258c41-51d4-4aca-8626-fe1faf342ec1)
-- The label of the created backup reflects the restore point timestamp. The restore point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
-- There is no limit on how many manual backups you can make
+
+  :::image type="content" source="media/expires-on-date.png" alt-text="Check your expiration date.":::
+
+- The label of the created backup file reflects the restore-point timestamp. The restore-point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
+- There is no limit on how many manual backups you can make.
 - Manual backups don't count against your storage limits.
 - You must restore an environment to the same region in which it was backed up.
 - Don’t see your target environment please refer to this section in system back. 
 
-
-
-**Create a manual backup**
+### Create a manual backup
 
 1.  Browse to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
 2.  Go to **Environments** > [select an environment\] > **Backups** > **Create**.
