@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 04/02/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -318,8 +318,8 @@ Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
 
-## Step 13: Find personal data for the user in the Microsoft 365 Admin Center
-Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to export feedback data stored by the Microsoft 365 Admin Center, see ["How can I see my user's feedback?"](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 Admin Center without the need for Microsoft 365 or Office licenses.
+## Step 13: Find personal data for the user in the Microsoft 365 admin center
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
