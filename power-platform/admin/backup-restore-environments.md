@@ -16,9 +16,9 @@ contributors:
 ---
 # Back up and restore environments
 
-It's important to protect your data on Microsoft Power Platform and Dataverse and provide continuous availability of service using system or manual backups. System backups are automatically performed for environments that have a database. 
+It's important to protect your data on Microsoft Power Platform and Dataverse and provide continuous availability of service using system or manual backups.
 
-You should make sure that your data in Power Platform and Dataverse is secure and accessible using system or manual backups. System backups are created automatically for environments that have a database. System backups of production environments with a database and Dynamics 365 applications are kept for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications and other nonproduction environments are kept for seven days, but you have an option to increase the retention period beyond seven days for managed, production environments without Dynamics 365 applications. 
+System backups are created automatically for environments that have a database. System backups of production environments with a database and Dynamics 365 applications are kept for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications and other nonproduction environments are kept for seven days, but you have an option to increase the retention period beyond seven days for managed, production environments without Dynamics 365 applications. 
 
 Manual backups, on the other hand, are backups that are user-initiated backups. You should make manual backups before making major customizations or applying a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups for production environments with Dynamics 365 applications are kept for up to 28 days, while those without Dynamics 365 applications are kept for seven days.
 
@@ -131,6 +131,14 @@ The following restrictions apply to both restoring from system or manual backups
 |Teams| No                 |   No           | No                | Yes\*           | No             |
 |Default| No               |   No            | No                | No           | No              |
 
+|Source type | Target type |
+|---------|----------------|
+|Production| Sandbox          |
+|Sandbox    | Sandbox             |
+|Developer| Sandbox, Developer          |  
+|Teams| Self Restore               |  
+|Default| Not suported               |
+
 ## Manual backups
 
 Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update. Manual backups may take up to 10 minutes to be ready for restoration. Wait for at least 10 - 15 minutes before attempting to restore your data from a manual backup.
@@ -171,7 +179,7 @@ You can't restore to production environments.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with administrator credentials.
 
-1. Go to **Environments** > [**_select an environmen_t**\] > **Backups & Restore** > **Restore or manage**.
+1. Go to **Environments** > [**_select an environment_**\] > **Backups & Restore** > **Restore or manage**.
 
 1. Select the **Manual** tab.
 
