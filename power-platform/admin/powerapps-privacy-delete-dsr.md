@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 04/02/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -355,10 +355,10 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a Power Apps user.
+> It's recommended that admins complete this step for a Power Apps user.
 
 ## Step 11: Find personal data for the user in the Microsoft 365 Admin Center
-Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to delete feedback data stored by the Microsoft 365 Admin Center, see ["How can I see my user's feedback?"](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 Admin Center without the need for Microsoft 365 or Office licenses.
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to delete feedback data stored by the Microsoft 365 Admin Center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 Admin Center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
