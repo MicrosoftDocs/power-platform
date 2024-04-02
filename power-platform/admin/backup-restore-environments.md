@@ -169,7 +169,7 @@ Automated system backups are great, but you should make your own backups before 
 
 There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The \[backup name\] backup was successfully created.*"
 
-### Restore a manual backup
+## Restore a manual backup
 
 You can only restore to sandbox environments. To restore it to a production environment, first switch the environment to a sandbox environment, and then you can switch back to production after restoration.
 You can't restore to production environments.
