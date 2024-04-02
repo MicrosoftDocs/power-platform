@@ -10,7 +10,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: clmori
 ms.custom: authentication, ceX
-ms.service: power-virtual-agents
 
 ---
 
@@ -84,11 +83,15 @@ When you've configured user authentication for your bot, you can use authenticat
 
 | Authentication Variable | No Authentication | Only for Teams and Power Apps  | Manual    |
 |-------------------------|:-----------------:|:--------------:|:---------:|
-| [User.DisplayName][1]   | not available     | not available  | available |
-| [User.Id][2]            | not available     | not available  | available |
-| [User.IsLoggedIn][3]    | not available     | not available  | available |
+| [User.DisplayName][1]   | not available     | available  | available |
+| User.FirstName   | not available     | available  | available |
+| User.LastName   | not available     | available  | available |
+| User.PrincipalName   | not available     | available  | available |
+| User.Email   | not available     | available  | available |
+| [User.Id][2]            | not available     | available  | available |
+| [User.IsLoggedIn][3]    | not available     | available  | available |
 | [User.AccessToken][4]   | not available     | not available  | available |
-| [SignInReason][5]       | not available     | not available  | available |
+| [SignInReason][5]       | not available     | available  | available |
 
 [1]: #userdisplayname
 [2]: #userid

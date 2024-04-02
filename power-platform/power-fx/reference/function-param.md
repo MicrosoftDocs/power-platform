@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/25/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -26,7 +26,7 @@ Launches a webpage or a canvas app and provides access to launch parameters.
 
 Launches a webpage or a canvas app. The function supports:
 
-- **Address** (required), the URL of the webpage or App ID of the canvas app.
+- **Address** (required), the URL of the webpage or App URI (app id prefixed with `/providers/Microsoft.PowerApps/apps/`) of the canvas app.
 - **Parameters** (optional), named values to pass to the webpage or canvas app. In a canvas app, parameters can be read with the [**Param**](#param) function.
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
@@ -40,7 +40,7 @@ Webpages are launched via a URL address. For example:
 Launch( "https://bing.com" )
 ```
 
-You can launch canvas apps with **Web link** or **App ID**. To find these values for an app:
+You can launch canvas apps with **Web link** or **App URI** (app id prefixed with `/providers/Microsoft.PowerApps/apps/`). To find these values for an app:
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select **Apps** from left navigation pane.
@@ -85,6 +85,8 @@ The address and parameters are URL encoded before being passed to replace certai
 
 When launching a webpage, a [query string](https://en.wikipedia.org/wiki/Query_string) of parameters can be included at the end of the URL address. Any additional parameters provided to **Launch** will be added to the end of the query string. Query strings don't work when launching a canvas app.
 
+When launching an app on a mobile device where that app is already running, parameters will not be refreshed in the running app. An app reload is required for parameters to be refreshed.
+
 ### Target
 
 Use the _LaunchTarget_ argument to specify the target browser window in which to open the webpage or app. Use one of the following **LaunchTarget** enum values or provide a custom window _name_.
@@ -109,6 +111,7 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 - When launching a canvas app from a web page, add parameters to the [query string](https://en.wikipedia.org/wiki/Query_string) of the [canvas app web link](#address). This involves adding `&parametername=parametervalue` assuming the query string has already been started for the `tenantId`. For example, adding `&First%20Name=Vicki&category=3` would pass two parameters: `First Name` with a value of `"Vicki"` and `category` with a value of `"3"` (value type is _text_). The parameter name and value must be URL encoded if they contain spaces or special characters, similar to using the [**EncodeURL**](function-encode-decode.md) function.
 - Param names are case-sensitive.
 - Param names and values will be automatically URL decoded for use in your app.
+- Parameter values do not change unless the app is reloaded. Using **Launch** on a mobile device where the app is already running does not refresh the parameters.
 - Even if the parameter contains a number, the type returned by **Param** will always be a text string. Conversion to other types will automatically occur or use explicit conversions such as the [**Value**](function-value.md) function to convert explicitly to a number.
 
 >[!NOTE]
@@ -217,7 +220,7 @@ Update the app ID, tenant ID, screen name, and record number as appropriate.
 <html>
   <body>
     <a
-      href="https://apps.powerapps.com/play/YOUR-APP-ID?tenantId=YOUR-TENANT-ID&Navigate=Second%20Screen&Record=34"
+      href="https://apps.powerapps.com/play/e/YOUR-APP-ENVIRONMENT-ID/a/YOUR-APP-ID?tenantId=YOUR-TENANT-ID&Navigate=Second%20Screen&Record=34"
     >
       Launch canvas app
     </a>

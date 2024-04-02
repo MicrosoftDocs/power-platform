@@ -8,17 +8,15 @@ author: mainguy70
 ms.author: iawilt
 ms.reviewer: iawilt
 
-ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope:
-  - "Power Virtual Agents"
+
 ---
 
 # Connect your data to Azure OpenAI for generative answers
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-When you connect data through Azure OpenAI in Microsoft Copilot Studio, your copilots can use resources from Azure through the generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models. The models of OpenAI and Azure Cognitive Search index your data and provide responses while complying with your organizational policies.
+When you connect data through Azure OpenAI Service in Microsoft Copilot Studio, your copilots can use resources from Azure through the generative answers node. [Azure OpenAI on your data](/azure/ai-services/openai/concepts/use-your-data) works with the powerful language models. The Azure OpenAI models and Azure AI Search index your data and provide responses while complying with your organizational policies.
 
 ## Prerequisites
 

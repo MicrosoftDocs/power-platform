@@ -1,7 +1,6 @@
 ---
 title: "Overview of Bot Framework Composer"
-description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Microsoft Copilot Studio chatbot."
-keywords: "composer, adaptive card"
+description: "Use Bot Framework Composer to add Adaptive Cards, multi-select options, and more to your Microsoft Copilot Studio copilot."
 ms.date: 03/24/2023
 
 ms.topic: article
@@ -10,7 +9,6 @@ ms.author: iawilt
 manager: leeclontz
 ms.reviewer: makolomi
 ms.custom: "cex"
-ms.service: power-virtual-agents
 
 ---
 
@@ -20,7 +18,7 @@ ms.service: power-virtual-agents
 
 [!INCLUDE [Composer integrated with PVA](includes/composer-integrated-with-pva.md)]
 
-Enhance your bot by developing custom topics with [Bot Framework Composer](/composer/) and then adding them to your Microsoft Copilot Studio bot.
+Enhance your bot by developing custom topics with [Bot Framework Composer](/composer/) and then adding them to your Microsoft Copilot Studio copilot.
 
 Composer is integrated into Microsoft Copilot Studio to allow developers and business users to build bots together. Composer lets you extend your bot with Bot Framework functionality, including:
 
@@ -29,26 +27,26 @@ Composer is integrated into Microsoft Copilot Studio to allow developers and bus
 - Regular expressions (RegEx)
 - Adaptive Cards
 
-Using Composer with Microsoft Copilot Studio lets you access conversational memory and context, including the variables defined in Microsoft Copilot Studio. This lets you create topics to handle interruptions, cancellations, and context switching. You can also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
+Using Composer with Microsoft Copilot Studio lets you access conversational memory and context, including the variables defined in Microsoft Copilot Studio. This memory and context lets you create topics to handle interruptions, cancellations, and context switching. You can also add Adaptive Cards to display interactive elements like images and videos, forms, and more in the bot.
 
 There are various prebuilt functions and expressions in Composer for you to use, and the ability to define multiple variations of a phrase for the bot to randomly select at runtime.
 
-Custom topics added with Composer are deployed, hosted, and executed together with the rest of Microsoft Copilot Studio bot content, and don't require any more Azure hosting.
+Custom topics added with Composer are deployed, hosted, and executed together with the rest of Microsoft Copilot Studio copilot content, and don't require any more Azure hosting.
 
 [!INCLUDE [Composer License](includes/composer-license.md)]
 
 ## Prerequisites
 
-- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md).
+- [Learn more about what you can do with Microsoft Copilot Studio](fundamentals-what-is-power-virtual-agents.md)
 - [Introduction to Bot Framework Composer](/composer/introduction)
 
 ## Understand key Composer terms
 
-Composer uses a different set of terms to describe similar concepts used in Microsoft Copilot Studio. Below is a list of key terms to understand:
+Composer uses a different set of terms to describe similar concepts used in Microsoft Copilot Studio. Here are some key terms to understand:
 
-- **dialog:** Dialogs are the basic building block in Composer and serve as containers for triggers. Each dialog represents a portion of the bot's functionality that contains instructions for what the bot will do and how it will react to user input. To learn more about dialogs, see [Dialogs as conversational building blocks in Composer](/composer/concept-dialog).
+- **dialog:** Dialogs are the basic building block in Composer and serve as containers for triggers. Each dialog represents a portion of the bot's functionality that contains instructions for what the bot does and how it reacts to user input. To learn more about dialogs, see [Dialogs as conversational building blocks in Composer](/composer/concept-dialog).
 
-- **main dialog:** A bot's main dialog is the first dialog that appears in the bot explorer and is created when you import your Power Virtual Agent bot into Composer. The main dialog should never be deleted, as it corresponds to your Microsoft Copilot Studio bot.
+- **main dialog:** A bot's main dialog is the first dialog that appears in the bot explorer and is created when you import your Microsoft Copilot Studio copilot into Composer. The main dialog should never be deleted, as it corresponds to your Microsoft Copilot Studio copilot.
 
 - **trigger:** Triggers are the main component of a dialog and let you catch and respond to events. Each trigger has a condition and a collection of actions to execute when the condition is met. You can think of triggers as the equivalent of _topics_ in Microsoft Copilot Studio. To learn more about triggers, see [Triggers](/composer/concept-events-and-triggers).
 
@@ -60,7 +58,7 @@ The following Composer features aren't supported with Microsoft Copilot Studio:
 
 | Unsupported feature                             | Additional information                                                                              |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| LUIS Recognizer                                 | Default Recognizer in Composer is set to Microsoft Copilot Studio Natural Language Understanding (NLU). |
+| LUIS (language understanding) Recognizer                                 | Default Recognizer in Composer is set to Microsoft Copilot Studio Natural Language Understanding (NLU). |
 | Bot Framework Orchestrator                      | Bot Framework Orchestrator isn't supported in Composer for Microsoft Copilot Studio.                   |
 | Custom recognizer                               | Custom recognizer isn't supported in Composer for Microsoft Copilot Studio.                            |
 | Bot skills                                      | Can't invoke Bot skills in Composer content meant for Microsoft Copilot Studio.                        |
@@ -70,17 +68,17 @@ The following Composer features aren't supported with Microsoft Copilot Studio:
 | Entity detection in trigger phrases in Composer | Can't use `# getUserName my name is {username=userName}` in Composer.                              |
 | Testing in Bot Framework Emulator               | All Composer content should be published and then tested in Microsoft Copilot Studio.                   |
 
-## Guidelines for creating bot content for Microsoft Copilot Studio in Composer
+## Guidelines for creating content for Microsoft Copilot Studio in Composer
 
-There are a few key guidelines to follow when using Composer to create your bot content for Microsoft Copilot Studio:
+There are a few key guidelines to follow when using Composer to create content for Microsoft Copilot Studio:
 
-- The topics from your Microsoft Copilot Studio bot will be displayed in Composer as dialogs. You can't edit these dialogs in Composer; selecting them will open the relevant topics in Microsoft Copilot Studio for editing.
+- The topics from your Microsoft Copilot Studio bot are displayed in Composer as dialogs. You can't edit these dialogs in Composer; selecting them opens the relevant topics in Microsoft Copilot Studio for editing.
 
-    :::image type="content" source="media/advanced-bot-framework-composer/pva-topics-in-composer.png" alt-text="Screenshot of the list of topics in Composer that were imported from a Microsoft Copilot Studio bot.":::
+    :::image type="content" source="media/advanced-bot-framework-composer/pva-topics-in-composer.png" alt-text="Screenshot of the list of topics in Composer that were imported from a Microsoft Copilot Studio copilot.":::
 
-- Microsoft Copilot Studio global variables are accessed in Composer by using the `virtualagent` scope. This scope won't appear in Composer's property reference menu, but you can access it by entering an expression directly.
+- Microsoft Copilot Studio global variables are accessed in Composer by using the `virtualagent` scope. This scope doesn't appear in Composer's property reference menu, but you can access it by entering an expression directly.
 
-- Publishing content in Composer makes the changes available for testing, but does not automatically publish your Microsoft Copilot Studio bot. Use the [Publish](publication-fundamentals-publish-channels.md) feature in Microsoft Copilot Studio to publish your bot changes to channels.
+- Publishing content in Composer makes the changes available for testing, but doesn't automatically publish your Microsoft Copilot Studio copilot. To publish your copilot changes to channels, use the [Publish](publication-fundamentals-publish-channels.md) feature in Microsoft Copilot Studio.
 
 - Use a **Begin a Microsoft Copilot Studio Topic** action to call Microsoft Copilot Studio topics in Composer.
 
@@ -90,17 +88,17 @@ There are a few key guidelines to follow when using Composer to create your bot 
 
 - You can send messages and ask questions from these Composer triggers.
 
-- You can't use the Regular expression recognizer in the main dialog. Using the Regular expression recognizer in the main dialog will prevent you from publishing your Composer content to Microsoft Copilot Studio. However, you can use the Regular expression recognizer in any other Composer dialog.
+- You can't use the Regular expression recognizer in the main dialog. Using the Regular expression recognizer in the main dialog prevents you from publishing your Composer content to Microsoft Copilot Studio. However, you can use the Regular expression recognizer in any other Composer dialog.
 
 - You can add any Composer events and triggers to newly created dialogs.
 
-- On the **Bot Responses** page, the **Common** section should be empty. Using any assets there will result in validation errors and prevent you from publishing your Composer content to Microsoft Copilot Studio.
+- On the **Bot Responses** page, the **Common** section should be empty. Using any assets there results in validation errors and prevent you from publishing your Composer content to Microsoft Copilot Studio.
 
     :::image type="content" source="media/advanced-bot-framework-composer/common-empty.png" alt-text="Screenshot of the common bot responses section empty.":::
 
-- Each Composer dialog has its own bot response (.lg) and language understanding (.lu) resources. For example, a bot that speaks English (US) and has a dialog named `dialog1` will have one `dialog1.en-us.lg` file and one `dialog1.en-us.lu` file.
+- Each Composer dialog has its own bot response (.lg) and language understanding (.lu) resources. For example, a bot that speaks English (US) and has a dialog named `dialog1` has one `dialog1.en-us.lg` file and one `dialog1.en-us.lu` file.
 
-- The main dialog in Composer should never be deleted, as it corresponds to your Microsoft Copilot Studio bot. The main dialog can have zero or more triggers.
+- The main dialog in Composer should never be deleted, as it corresponds to your Microsoft Copilot Studio copilot. The main dialog can have zero or more triggers.
 
 - You can capture telemetry in Composer dialogs and triggers and use [Application Insights](/azure/azure-monitor/app/app-insights-overview) to analyze it with [Kusto queries for adaptive dialogs](/azure/bot-service/bot-builder-telemetry-analytics-queries?view=azure-bot-service-4.0&preserve-view=true#adaptive-dialogs-started-and-completed). For more information, see [Capture telemetry with Application Insights](advanced-bot-framework-composer-capture-telemetry.md).
 

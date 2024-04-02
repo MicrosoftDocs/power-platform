@@ -1,20 +1,20 @@
 ---
 title: Power Fx formula reference
 description: Reference information for all functions in Power Fx
-author: kumarvivek
+author:  mduelae
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
-ms.author: kvivek
+ms.author: mkaur
 search.audienceType:
   - maker
 contributors:
   - mduelae
   - gregli-msft
   - jorisdg
-  - kumarvivek
+  -  mduelae
   - tapanm-msft
 ---
 
@@ -27,9 +27,12 @@ The Power Fx formulas are available for the following Power Platform components:
 | Power Platform component   | Sub areas|
 | - | - |
 | Power Apps   | Canvas apps, model-driven apps, cards |
+| Canvas apps   | Canvas apps |
 | Power Automate   | Desktop flows |
 | Dataverse   | Formula columns, low-code plug-ins |
+| Cards for Power Apps   | Cards |
 | Power Platform CLI   | Not applicable |
+
 
 The Power Fx formula reference information is organized in the following way:
 

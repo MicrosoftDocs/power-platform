@@ -7,7 +7,6 @@ ms.topic: how-to
 author: iaanw
 ms.author: iawilt
 
-ms.service: power-virtual-agents
 ---
 
 # Hand off to ServiceNow
@@ -44,7 +43,7 @@ Follow these steps to create and connect a ServiceNow Bot to a Power Virtual Age
 
     1. On the **Overview** page for the function, copy the function URL and keep it for use in a later step. The Azure function URL will be used as the secondary bot endpoint in your ServiceNow instance.
 
-2. [Retrieve Direct Line secret for your bot](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0).
+2. [Retrieve Direct Line secret for your bot](/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0&preserve-view=true).
 
 3. [Add the Direct Line secret key to your Virtual Agent Bot Interconnect instance](https://docs.servicenow.com/bundle/vancouver-servicenow-platform/page/administer/virtual-agent/task/add-dl-secret-key-sn-instance.html).
 

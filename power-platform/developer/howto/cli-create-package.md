@@ -4,7 +4,7 @@ description: Create and register a plug-in package containing a dependent assemb
 author: marcelbf
 ms.author: marcelbf
 ms.reviewer: pehecke
-ms.date: 10/03/2023
+ms.date: 02/26/2024
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -122,7 +122,9 @@ This command opens a dialog so you can select the NuGet Package with changes.
 > [!IMPORTANT]
 > If your update removes any plug-in assemblies, or types which are used in plug-in step registrations, the update will be rejected. You must manually remove any step registrations that use plug-in assemblies or plug-in types that you want to remove with your update.
 >
-> The version of the plug-in package or plug-in assembly is not a factor in any upgrade behaviors. You can update the versions of these items as you need.
+> The version of the plug-in package or plug-in assembly is not a factor in any upgrade behaviors. You can update the version of the plug-in assembly as you need.
+>
+> The name and version of the plug-in package cannot be changed once created. Attempting to do so, for example in an API call, results in an error.
 
 ### Delete plug-in packages
 

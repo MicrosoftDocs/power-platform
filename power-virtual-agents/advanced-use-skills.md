@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "Azure, advanced-authoring, ceX"
-ms.service: power-virtual-agents
 
 ---
 
@@ -27,7 +26,7 @@ Microsoft Copilot Studio enables you to extend your bot using Microsoft Bot Fram
 
 ## Add a skill to bot conversations
 
-First, [create a Microsoft Copilot Studio bot](authoring-first-bot.md) and [create and deploy the skill using pro-code tools](https://go.microsoft.com/fwlink/?linkid=2110533) into your organization.
+First, [create a Microsoft Copilot Studio bot](authoring-first-bot.md) and [create and deploy the skill using pro-code tools](/azure/bot-service/skill-implement-skill) into your organization.
 
 Next, [register a skill in Microsoft Copilot Studio](configuration-add-skills.md).
 

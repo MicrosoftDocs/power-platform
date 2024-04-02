@@ -8,7 +8,6 @@ author: iaanw
 ms.author: iawilt
 manager: leeclontz
 ms.custom: "publication, authoring, ceX, teams"
-ms.service: power-virtual-agents
 
 ---
 
@@ -69,7 +68,7 @@ Providing the right description and appearance for the bot before making it avai
 
 1. Select **Edit details** to change the bot's icon, color, and descriptions. These will be shown in the Microsoft Teams app store and the app's About tab after the user installs the bot. [Review the recommendations on Microsoft Teams icon formats](/microsoftteams/platform/resources/schema/manifest-schema#icons).
 
-    :::image type="content" source="media/publication-add-bot-to-msft-teams/add-bot-to-teams-edit-details.PNG" alt-text="You can make changes to the icon, background color, and descriptions":::
+    :::image type="content" source="media/publication-add-bot-to-msft-teams/add-copilot-to-teams-edit-details.PNG" alt-text="You can make changes to the icon, background color, and descriptions":::
 
     > [!IMPORTANT]
     > Updates to the bot's detail will not apply to users who have already installed the bot from a shared link or the [**Built by your colleagues** section](#show-to-shared-users). They will need to reinstall the bot to receive the updates.  

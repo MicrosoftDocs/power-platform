@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -71,24 +71,24 @@ If you use **AddColumns** in this manner, **Filter** must make separate calls to
 **AddColumns**( _Table_, _ColumnName1_, _Formula1_ [, *ColumnName2*, *Formula2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to add. You must specify a string (for example, **"Name"** with double quotes included) for this argument.
+- _ColumnName(s)_ - Required. Name(s) of the column(s) to add. You must specify a string (for example, **"Name"** with double quotes included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
 - _Formula(s)_ - Required. Formula(s) to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table in this formula.
 
 **DropColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to drop. You must specify a string (for example, **"Name"** with double quotes included) for this argument.
+- _ColumnName(s)_ - Required. Name(s) of the column(s) to drop. You must specify a string (for example, **"Name"** with double quotes included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
 
 **RenameColumns**( _Table_, _OldColumnName1_, _NewColumnName1_ [, *OldColumnName2*, *NewColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _OldColumnName_ - Required. Name of a column to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair). This name must be a string (for example **"Name"** with double quotation marks included).
-- _NewColumnName_ - Required. Replacement name. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). You must specify a string (for example, **"Customer Name"** with double quotation marks included) for this argument.
+- _OldColumnName_ - Required. Name of a column to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair). This name must be a string (for example **"Name"** with double quotation marks included). You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
+- _NewColumnName_ - Required. Replacement name. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). You must specify a string (for example, **"Customer Name"** with double quotation marks included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
 
 **ShowColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to include. You must specify a string (for example, **"Name"** with double quotes included) for this argument.
+- _ColumnName(s)_ - Required. Name(s) of the column(s) to include. You must specify a string (for example, **"Name"** with double quotes included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
 
 ## Examples
 

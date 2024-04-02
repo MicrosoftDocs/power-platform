@@ -8,9 +8,8 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: iawilt
 
-ms.service: power-virtual-agents
 ms.search.region: USA
-searchScope: "Power Virtual Agents"
+
 ---
 
 # Generative answers with Search and summarize content
@@ -30,7 +29,7 @@ These sources include:
 - Internal resources:
   - Azure OpenAI on your data
   - Documents uploaded to Dataverse
-  - SharePoint
+  - SharePoint 
   - OneDrive for Business
   - Custom data (internal or external): Supply your own content from any source. For example, a Power Automate Flow, a Skill, or other source.
 
@@ -81,7 +80,11 @@ Include delegated permissions for **Microsoft Graph**:
 
 Generative answers obtain content stored in these formats:
 
-- SharePoint pages (aspx pages)
+- SharePoint pages (aspx)
 - Word documents (docx)
 - PowerPoint documents (pptx)
 - PDF documents (pdf)
+
+>[!NOTE]
+> Only [modern pages](https://support.microsoft.com/en-us/office/sharepoint-classic-and-modern-experiences-5725c103-505d-4a6e-9350-300d3ec7d73f) are supported.
+> Content from classic **aspx** pages on SharePoint won't be used to generate answers.

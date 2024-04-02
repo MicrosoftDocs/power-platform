@@ -2,12 +2,11 @@
 title: Hex2Dec and Dec2Hex functions
 description: Reference information including syntax and examples for the Hex2Dec and Dec2Hex functions in Power Fx.
 author: gregli-msft
-manager: kvivek
 ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.author: gregli
 search.audienceType: 
   - maker

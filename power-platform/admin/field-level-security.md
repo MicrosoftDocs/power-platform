@@ -3,11 +3,11 @@ title: "Column-level security  | MicrosoftDocs"
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/19/2022
+ms.date: 03/19/2024
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - srpoduri
 ms.custom: "admin-security"
@@ -18,7 +18,7 @@ search.audienceType:
 
 Record-level permissions are granted at the table level, but you may have certain columns associated with a table that contain data that is more sensitive than the other columns. For these situations, you use column-level security to control access to specific columns.  
   
- The scope of column-level security is organization-wide and applies to all data access requests including the following:  
+ The scope of column-level security is organization-wide and applies to all data access requests, including the following requests and calls:  
   
 - Data access requests from within a client application, such as web browser, mobile client, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
   
@@ -33,7 +33,7 @@ Column-level security is available for the default columns on most out-of-box ta
   
 1. Enable column security on one or more columns for a given table.  
   
-2. Associate one more existing security profiles, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
+2. Associate one more existing security profile, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
   
 A security profile determines the following:  
   
@@ -121,20 +121,40 @@ Any users not defined in the previously created column security profiles won't h
   
 
 ## Which columns can be secured?  
+
+### Adding a new column 
+1. Sign in to [Power Apps](https://make.powerapps.com/).
+
+1. Select **Tables** in the navigation pane.
+
+1. Select a table, and then under **Schema**, select **Columns**.
+
+1. Select the **+ New column** option in the command bar.
+
+1. Enter a **Display name** and **Description**.
+
+1. Select a **Data type**.
+   
+   The **Lookup** and **Formula** data types can't be set with column security. For more information, see [Attributes that cannot be enabled for column security](#attributes-that-cant-be-enabled-for-column-security).
+   
+1. Expand **Advance options**, and then under **General**, select the **Enable column security** checkbox.
+
+### Viewing column level security
 Every column in the system contains a setting for whether column security is allowed. Use the following steps to view column security settings.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-2. Select **Dataverse** > **Tables**.
+1. Select **Tables** in the navigation pane.
 
-3. Select a table, and then under **Schema**, select **Columns**.
+1. Select a table, and then under **Schema**, select **Columns**.
 
-4. Select a column, expand **Advanced options**, and then under **General**, view the status of **Enable column security**.
+1. Select a column, expand **Advanced options**, and then under **General**, view the status of **Enable column security**.
 
 If **Enable column security** can be selected, the column can be enabled for column security. 
 
    :::image type="content" source="media/field-security-enable-column-security.png" alt-text="Enable column security is possible.":::
  
+### Attributes that can't be enabled for column security
 Although most attributes can be secured, there are system attributes, such as IDs, timestamps, and record tracking attributes, that can't. Below are a few examples of attributes that can't be enabled for column security. 
 -    ownerid, processid, stageid, accountid, contactid, businessunitid, organizationid, solutionid, supportingsolutionid, transactioncurrencyid, goalownerid, subscriptionid, userpuid, yammeruserid
 -    createdby, modifiedby, OwningTeam, OwningUser, Owningbusinessunit, yammeremailaddress
@@ -142,6 +162,7 @@ Although most attributes can be secured, there are system attributes, such as ID
 -    statecode, statuscode, componentstate, exchangerate, utcconversiontimezonecode
 -    fullname, firstname, middlename, lastname, yominame, yomifirstname, yomifullname, yomilastname, yomimiddlename
 -    deprecated columns, for example: traversedpath, stageid
+
 
 You can view the table metadata for your organization including which columns can be enabled for column security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). You can also view the metadata for an uncustomized organization in the [!INCLUDE[pn_MS_Excel_Full](../includes/pn-ms-excel-full.md)] file called EntityMetadata.xlsx included in the top-level folder of the SDK. [Download the SDK](https://go.microsoft.com/fwlink/p/?LinkId=691153)  
    

@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/18/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -259,5 +259,7 @@ ForAll(
 ```
 
 To learn more about the usage of **As** operator and **ThisRecord** see **[Operators](operators.md)** article.
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

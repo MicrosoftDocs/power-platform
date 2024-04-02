@@ -1,6 +1,6 @@
 ---
 title: Create expressions using Power Fx (preview)
-description: Use Power Fx to create complex bot logic using formulas to manipulate data in Microsoft Copilot Studio preview.
+description: Use Power Fx to create complex copilot logic using formulas to manipulate data in Microsoft Copilot Studio preview.
 keywords: "PVA"
 ms.date: 03/24/2023
 
@@ -9,7 +9,6 @@ author: iaanw
 ms.author: iawilt
 ms.reviewer: kamrani
 manager: leeclontz
-ms.service: power-virtual-agents
 
 ms.custom: ceX, advanced-authoring, bap-template
 ---
@@ -18,7 +17,7 @@ ms.custom: ceX, advanced-authoring, bap-template
 
 [!INCLUDE[pva-rebrand](includes/pva-rebrand.md)]
 
-Power Fx is a low-code language that uses Excel-like formulas. Use Power Fx to create complex logic that allows your bots to manipulate data. For instance, a Power Fx formula can set the value of a variable, parse a string, or use an expression in a condition. For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference).
+Power Fx is a low-code language that uses Excel-like formulas. Use Power Fx to create complex logic that allows your copilots to manipulate data. For instance, a Power Fx formula can set the value of a variable, parse a string, or use an expression in a condition. For more information, see the [Power Fx overview](/power-platform/power-fx/overview) and [formula reference](/power-platform/power-fx/formula-reference).
 
 > [!NOTE]
 > Power Fx formulas in Microsoft Copilot Studio use US-style numbering. That is, the decimal separator is a period or dot, as in `12,567.892`. This means [Power Fx parameters must be separated by commas (,)](/power-platform/power-fx/expression-grammar#separators).
@@ -46,7 +45,7 @@ In addition to using variables in a Power Fx formula, you can enter literal valu
 
 | Type     | Format examples                                                                         |
 | -------- | --------------------------------------------------------------------------------------- |
-| String   | `"hi"`, `"hello world!"`, `"chatbot"`                                                   |
+| String   | `"hi"`, `"hello world!"`, `"copilot"`                                                   |
 | Boolean  | Only `true` or `false`                                                                  |
 | Number   | `1`, `532`, `5.258`, `-9201`                                                            |
 | Table    | `[1]`, `[45, 8, 2]`, `["cats", "dogs"]`                                                 |
@@ -89,7 +88,7 @@ In this example, we'll use a Power Fx expression to store the customer's name an
 
 To evaluate more complex expressions, set up **Condition** nodes to use Power Fx formulas.
 
-In this example, the bot determines if a booking date qualifies for a discount. To do that, it checks whether the booking date provided by the customer is 14 days or more from the current date.
+In this example, the copilot determines if a booking date qualifies for a discount. To do that, it checks whether the booking date provided by the customer is 14 days or more from the current date.
 
 1. Create a topic and add a **Question** node.
 

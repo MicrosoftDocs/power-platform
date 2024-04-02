@@ -21,11 +21,11 @@ contributors:
 
 When you can ask Project "Sophia" a question or upload data and ask questions about the data, it generates a AI-powered blueprint. 
 
-It's also beneficial to select **Domains** when you use Project “Sophia”. Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms "hunters" and "farmers" hold distinct meanings that might not be apparent without that context. Similarly, there are commons acronyms that can mean something different based on context.
+It's also beneficial to select **Domains** when you use Project “Sophia”. Choosing a domain provides a better understanding of the context of your question. For instance, in the context of sales and marketing, the terms "hunters" and "farmers" hold distinct meanings that might not be apparent without that context. Similarly, there are common acronyms that can mean something different based on context.
 
 Follow these steps to ask a question:
 
-1. Go to [https://projectsophia.preview.microsoft.com](https://projectsophia.preview.microsoft.com).
+1. Go to [https://projectsophia.microsoft.com](https://projectsophia.microsoft.com).
 1. From the Home screen, select **New workspace**.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
 1. Enter your question in the text box and then select **Generate**.

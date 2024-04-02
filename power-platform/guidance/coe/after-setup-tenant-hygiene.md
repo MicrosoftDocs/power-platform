@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: kvivek
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

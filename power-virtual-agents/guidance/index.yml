@@ -17,7 +17,7 @@ metadata:
 
 landingContent:
   # Card
-  - title: Building chatbots
+  - title: Building copilots
     linkLists:
       - linkListType: overview
         links:
@@ -34,7 +34,7 @@ landingContent:
             
 
   # Card
-  - title: Measuring and improving chatbots
+  - title: Measuring and improving copilots
     linkLists:
       - linkListType: concept
         links:
