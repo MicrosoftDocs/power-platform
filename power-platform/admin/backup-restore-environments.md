@@ -157,8 +157,6 @@ Automated system backups are great, but you should make your own backups before 
    
 1.  Go to **Environments** > [**_select an environment_**\] > **Backups & Restore** > **Create manual backup**.
 
-     :::image type="content" source="media/create-backup.png" alt-text="Select Create.":::
-
 1.  Fill in the information, and then select **Create**.
 
 There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The \[backup name\] backup was successfully created.*"
