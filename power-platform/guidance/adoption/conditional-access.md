@@ -4,12 +4,14 @@ description: "By using Conditional Access policies, you can apply the right acce
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/07/2023
+ms.date: 04/02/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- alaug
 ---
 # Set up Microsoft Entra Conditional Access
 
