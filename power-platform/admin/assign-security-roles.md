@@ -8,9 +8,11 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/25/2022
+ms.date: 03/29/2024
 search.audienceType: 
   - admin
+contributors:
+- paulliew
 ---
 # Assign a security role to a user  
 
@@ -21,10 +23,12 @@ search.audienceType:
  - You can assign more than one security role to a user. The effect of multiple security roles is cumulative, which means that the user has the permissions associated with all security roles assigned to the user.  
 - Security roles are associated with business units. If you've created business units, only those security roles associated with the business unit are available for the users in the business unit. You can use this feature to limit data access to data owned by the business unit.  
 - When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can assign security roles from different business units to your users irrespective of which business unit the users belong to.
-- In order to assign security roles to a user, you need to have the appropriate privileges (minimum privileges are 'Read' and 'Assign' on the Security Role table). To prevent elevation of security role privileges, the person who is assigning the security role cannot assign someone else with a security role that has more privileges than the assigner. For example, a CSR Manager cannot assign a System Administrator role to another user. This privilege validation includes checking each privilege that the assigner has at the privilege depth level and business unit. For example, you cannot assign a security role from a different business unit to another user if you don't have a security role with the appropriate privilege level assigned from that business unit.  
-- By default, the System Administrator security role has all the required privileges to assign security roles to any user including assigning the System Administrator security role. If you have a need to allow non-System Administrators to assign security roles, you should consider creating a custom security role. See [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). 
+- To assign security roles to a user, you need to have the appropriate privileges (minimum privileges are **Read** and **Assign** on the **Security Role** table). To prevent elevation of security role privileges, the person who is assigning the security role can't assign someone else to a security role that has more privileges than the assigner. For example, a CSR Manager can't assign another user to the System Administrator role. This privilege validation includes checking each privilege that the assigner has at the privilege depth-level and business unit. For example, you can't assign a security role from a different business unit to another user if you don't have a security role with the appropriate privilege-level assigned from that business unit.
 
- For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).  
+> [!NOTE]
+>  By default, the System Administrator security role has all the required privileges to assign security roles to any user, including assigning the System Administrator security role. If you have a need to allow **non-System Administrators** to assign security roles, you should consider creating a custom security role with all the privileges listed in [Create an administrative user and prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md). Assign the custom security role and all the security roles that the non-System Administrator can assign to other users, to the non-System Administrator. This security role requirement is also required if you allow non-System Administrators to [manage team members in owner teams](manage-teams.md#manage-team-members) .
+ 
+For more information about the difference between [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles and security roles, see [Grant users access](grant-users-access.md).
 
 > [!TIP]
 > Check out the following video: [Assigning security roles in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr6).
@@ -43,7 +47,7 @@ Follow these steps to assign a security role.
 
    :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles.":::
 
-6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles will not be assigned. 
+6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
 
    :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
 
@@ -77,16 +81,16 @@ There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-on
 
 ## Automatic role assignment
 
-When users are added to Dataverse, they will get roles assigned automatically based on the following criteria: 
+When users are added to Dataverse, roles are assigned automatically based on the following criteria: 
 
 1. All Microsoft Entra ID admins (tenant admin, Power Platform admin, Dynamics 365 service admin) get the System Administrator role in Dataverse. 
 
    > [!IMPORTANT]
-   > The System Administrator role is not removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
+   > The System Administrator role isn't removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
 
-2. Users with a valid license will get corresponding mapped roles assigned to them automatically. Removal of the respective license will result in automatic role removal. License-based default role management is not applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
+2. Users, with a valid license, get corresponding mapped roles assigned to them automatically. Removal of the respective license results in automatic role removal. License-based default role management isn't applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-3. For the Default environment type, **Basic User** and **Environment Maker** roles will be assigned automatically to all users added in Dataverse.
+3. For the Default environment type, **Basic User** and **Environment Maker** roles are assigned automatically to all users added in Dataverse.
 
 4. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse. 
 
