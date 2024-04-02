@@ -93,7 +93,7 @@ Get-AdminPowerAppEnvironment -EnvironmentName "Environment ID"
 Set the **EnvironmentName** parameter to your environment ID.
 
 ## Restore system backups
-You can't restore backups to production environments. To restore a system backup to a production environment, you must [change the environment type](switch-environment.md)  to a sandbox environment first, and then you can switch the environment type back to production after restoring. See [Check Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details.
+You can't restore backups to production environments. To restore a system backup to a production environment, you must [change the environment type](switch-environment.md)  to a sandbox environment first, and then you can switch the environment type back to production after restoring. See [Can I restore to a production environment?](#can-i-restore-to-a-production-environment) for more details.
 
 You must restore an environment in the same region where it was backed up. Target and source environments should be in the same region. When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time (t1), full audit data for the environment is available, including any audit logs that were generated after t1.
 
