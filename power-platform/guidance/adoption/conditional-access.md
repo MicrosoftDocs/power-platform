@@ -4,12 +4,14 @@ description: "By using Conditional Access policies, you can apply the right acce
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/07/2023
+ms.date: 04/02/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- alaug
 ---
 # Set up Microsoft Entra Conditional Access
 
@@ -33,10 +35,10 @@ To learn how to set up Conditional Access policies, see [Plan a Conditional Acce
 > [!NOTE]
 > If you’re using Conditional Access polices to limit access to Power Platform and it’s features, the following apps must be included in **Cloud apps** policy application:
 > 
-> - Common Data Service (Dataverse)
+> - Dataverse
 > - Power Platform API
-> - Microsoft Power Apps
-> - Microsoft Flow
+> - PowerApps Service
+> - Microsoft Flow Service
 > - Microsoft Azure Management
 > 
 > Currently, **having conditional access to only Microsoft Flow is not enough**. To learn how to set up Conditional Access policies, see [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) and [Control Access to Power Apps and Power Automate with Conditional Access Policies](https://devblogs.microsoft.com/premier-developer/control-access-to-power-apps-and-power-automate-with-azure-ad-conditional-access-policies/#:~:text=Control%20Access%20to%20Power%20Apps%20and%20Power%20Automate,a%20Conditional%20Access%20Policy.%20...%204%20Summary.%20).
