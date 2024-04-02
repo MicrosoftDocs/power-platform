@@ -50,7 +50,7 @@ Environments that have a database are automatically backed up and can be restore
 ### About system backups
 
 -	System backups aren't counted toward storage capacity. To restore an environment, you need **1 GB** of free capacity. If you are over capactiy, see [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api)
-- Copying and restoring data may take more than one day, depending on the size of the data, especially if you need to copy [audit data](backup-restore-environments.md#restoring-audit-logs).
+- Copying and restoring data may take more than one day, depending on the size of the data, especially if you need to copy [audit data](backup-restore-environments.md#restore-audit-logs).
 - Only Power Apps and Power Automate flows in a Dataverse solution are included in backup and restore operations.
 - Downloading a copy of a database backup for offline use isn't supported.
 
