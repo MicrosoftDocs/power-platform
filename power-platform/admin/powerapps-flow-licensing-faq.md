@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 12/01/2023
+ms.date: 04/01/2024
 author: chrisgarty
 contributors:
   - Antoine2F
@@ -18,13 +18,33 @@ ms.collection:
     - bap-ai-copilot
 ---
 
-
-
 # Power Platform licensing FAQs
 
 This article lists common questions and answers for licensing and plan options.
 
 For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+## Licensing for Copilot chat and form fill assistance in model-driven apps 
+
+### What are the licensing implications of generally available Copilot capabilities for end users of model-driven apps? 
+
+As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
+
+To utilize these features, you need any of the following licenses: 
+- Dynamics 365 Sales Enterprise
+- Dynamics 365 Customer Insights
+- Dynamics 365 Field Service
+- Dynamics 365 Project Operations 
+
+> [!Note]
+> For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
+
+Learn more about Copilot chat and form fill assistance from the following table.
+
+| Feature | Description |
+|--|--|
+| [Copilot chat](/power-apps/user/use-copilot-model-driven-apps) | Allows end users to ask natural language questions about the data in their model-driven apps and get instant answers.  |
+| [Form fill assistance](/power-apps/user/form-filling-assistance) | Helps end users fill in complex forms in model-driven apps by providing suggestions and guidance based on the data context. |
 
 ## Power Platform product licensing
 
@@ -80,17 +100,13 @@ There's no difference between these two offers. Power Apps per user has been ren
 
 More information: [About Power Apps per app plans](about-powerapps-perapp.md)
 
-
 ### How do I use Power Apps pay-as-you-go?
-
 
 More information: [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md)
 
 ### Power Apps per app allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-
 Power Apps per app is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
-
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
@@ -127,8 +143,8 @@ To learn more, go to [Types of Power Automate licenses](power-automate-licensing
 
 #### What are the pricing and licensing details for Power Automate Premium?
 
--   **List Price (USD)**: $15 per user/month
--   **Entitlements**: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
+- **List Price (USD)**: $15 per user/month
+- **Entitlements**: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
 
 #### How does this compare to the previous Power Automate per user with attended RPA offer and the Power Automate per user offer?
 
@@ -138,8 +154,8 @@ This new offer includes all the benefits of Power Automate per user with attende
 
 #### What are the pricing and licensing details for Power Automate Process?
 
--  **List Price (USD)**: $150 per bot/month
--   **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
+- **List Price (USD)**: $150 per bot/month
+- **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
 > [!Note]
 > Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. To learn more, go to [Product Terms](https://www.microsoft.com/licensing/terms/).
@@ -152,17 +168,16 @@ No, there are no minimum purchase requirements.
 
 No, there are no licensing prerequisites required for eligibility to purchase Power Automate Process.
 
-### Power Automate Process Mining 
+### Power Automate Process Mining
 
 #### What are the pricing and licensing details for Power Automate Process Mining?
 
-
--   **List Price (USD)**: $5,000 for 100 GB of data stored/month
--   **Required prerequisite**: Power Automate Premium. Multiple add-ons can be applied to a single prerequisite.
--   **More entitlements per capacity pack**:
-    -   Dataverse Database capacity 2 GB/capacity pack
-    -   Dataverse File capacity 1 TB/capacity pack
-    -   250k Power Platform Requests/24 hrs
+- **List Price (USD)**: $5,000 for 100 GB of data stored/month
+- **Required prerequisite**: Power Automate Premium. Multiple add-ons can be applied to a single prerequisite.
+- **More entitlements per capacity pack**:
+  - Dataverse Database capacity 2 GB/capacity pack
+  - Dataverse File capacity 1 TB/capacity pack
+  - 250k Power Platform Requests/24 hrs
 
 #### When will Process Mining be available to purchase?
 
