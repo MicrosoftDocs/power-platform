@@ -89,7 +89,7 @@ To perform the administrative operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps plan trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) permissions if you need to search through another user's resources. (Note that environment admins only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Delete or reassign all environments created by the user
 As an administrator, you have two decisions to make when processing a DSR delete request for each environment that the user created:
@@ -161,7 +161,7 @@ An administrator can delete a user's environment permissions starting from the [
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-   You must be an [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that have been created within your organization.
+   You must be a [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that have been created within your organization.
 
 2. If your environment does not have a Dataverse database, you will see a section **Access**. Under **Access**, select either **Environment admin** or **Environment maker**, and then select **See all**.
 
@@ -209,7 +209,7 @@ An admin can delete apps created by a user by following these steps:
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an environment.
 
-   You must be a [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that have been created within your organization.
+   You must be a [Microsoft 365 global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments that have been created within your organization.
 
 2. Under **Resources**, select **Power Apps**. 
 
@@ -357,8 +357,8 @@ Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot 
 > [!IMPORTANT]
 > It's recommended that admins complete this step for a Power Apps user.
 
-## Step 11: Find personal data for the user in the Microsoft 365 Admin Center
-Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 Admin Center. For guidance on how to delete feedback data stored by the Microsoft 365 Admin Center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 Admin Center without the need for Microsoft 365 or Office licenses.
+## Step 11: Find personal data for the user in the Microsoft 365 admin center
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to delete feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 > It is recommended that admins complete this step for a Power Apps user.
@@ -369,7 +369,7 @@ Certain Power Apps licenses, including the Power Apps Developer Plan, give the a
 For guidance on how to respond to DSRs for users who use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a Power Apps user.
+> It's recommended that admins complete this step for a Power Apps user.
 
 ## Step 13: Delete the user from Microsoft Entra
 Once the above steps have been complete the final step is to delete the user's account for Microsoft Entra.
