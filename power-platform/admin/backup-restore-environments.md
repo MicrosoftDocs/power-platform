@@ -49,7 +49,7 @@ Environments that have a database are automatically backed up and can be restore
 
 ### About system backups
 
--	System backups aren't counted toward storage capacity. To restore an environment, you need **1 GB** of free capacity. If you are over capactiy, see [Is there a database size restriction for backing-up or restoring an organization through user interface (UI) or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-user-interface-(UI)-or-API)
+-	System backups aren't counted toward storage capacity. To restore an environment, you need **1 GB** of free capacity. If you are over capactiy, see [Is there a database size restriction for backing-up or restoring an organization through user interface (UI) or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-user-interface-ui-or-api)
 - Copying and restoring data may take more than one day, depending on the size of the data, especially if you need to copy [audit data](backup-restore-environments.md#restore-audit-logs).
 - Only Power Apps and Power Automate flows in a Dataverse solution are included in backup and restore operations.
 - Downloading a copy of a database backup for offline use isn't supported.
@@ -334,7 +334,7 @@ See [Recover environment](recover-environment.md) to learn more about the recove
 -   Target and source environment should be in the same region.
 -   A Managed Environment can only be restored to another Managed Environment. Learn more: [Managed Environments overview](managed-environment-overview.md)
 -   If the source environment has a customer-managed encryption key applied, then the target environment must have a customer-managed encryption key applied. Learn more: [Manage your customer-managed encryption key](customer-managed-key.md)
--   Restoring an environment requires **1 GB capacity** available. Learn more: [Do we have any database size restriction to take a backup or restore an organization through user interface (UI) or API?](#do-we-have-any-database-size-restriction-to-take-a-backup-or-restore-an-organization-through-user-interface-ui-or-api).
+-   Restoring an environment requires **1 GB capacity** available. Learn more: [Is there a database size restriction for backing-up or restoring an organization through user interface (UI) or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-user-interface-ui-or-api).
 -   Backup and restore operations only work with source and target environments that have Dataverse. Learn more: [Add a Microsoft Dataverse database](create-database.md)
 -   If you don't have sufficient storage, see [Add Microsoft Dataverse storage capacity](add-storage.md) to request more storage.
 
