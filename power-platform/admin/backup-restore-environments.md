@@ -18,7 +18,7 @@ contributors:
 
 It's important to protect your data on Microsoft Power Platform and Dataverse and provide continuous availability of service using system or manual backups. System backups are automatically performed for environments that have a database. 
 
-You should make sure that your data in Power Platform and Dataverse is secure and accessible using system or manual backups. System backups are created automatically for environments that have a database. System backups of production environments with a database and Dynamics 365 applications are kept for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications and other non-production environments are kept for seven days, but you have an option to increase the retention period beyond seven days for managed production environments without Dynamics 365 applications. 
+You should make sure that your data in Power Platform and Dataverse is secure and accessible using system or manual backups. System backups are created automatically for environments that have a database. System backups of production environments with a database and Dynamics 365 applications are kept for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications and other nonproduction environments are kept for seven days, but you have an option to increase the retention period beyond seven days for managed production environments without Dynamics 365 applications. 
 
 Manual backups, on the other hand, are backups that are user-initiated backups. You should make manual backups before making major customizations or applying a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups for production environments with Dynamics 365 applications are kept for up to 28 days, while those without Dynamics 365 applications are kept for seven days.
 
@@ -49,7 +49,7 @@ Environments that have a database are automatically backed up and can be restore
 
 ### About system backups
 
--	System backups aren't counted toward storage capacity. To restore an environment, you need **1 GB** of free capacity. If you are over capactiy, see [Is there a database size restriction for backing-up or restoring an organization through user interface (UI) or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-user-interface-ui-or-api)
+-	System backups aren't counted toward storage capacity. To restore an environment, you need **1 GB** of free capacity. If you are over capacity, see [Is there a database size restriction for backing-up or restoring an organization through user interface (UI) or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-user-interface-ui-or-api)
 - Copying and restoring data may take more than one day, depending on the size of the data, especially if you need to copy [audit data](backup-restore-environments.md#restore-audit-logs).
 - Only Power Apps and Power Automate flows in a Dataverse solution are included in backup and restore operations.
 - Downloading a copy of a database backup for offline use isn't supported.
@@ -62,7 +62,7 @@ Keep the following points in mind:
 
 - If you adjust the backup retention period, the new setting applies to all existing and future backups. Because it might take up to 24 hours for the change to affect the existing backups, some backups might be removed earlier than expected.
 
-- For all other non-production environments, the backup retention period is seven days, by default, including default type environment.
+- For all other nonproduction environments, the backup retention period is seven days, by default, including default type environment.
 
   For example, suppose you create an environment on January 1. On that day, the system starts to make backups of your environment and stores the backups for a default period of seven days. This means that on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you can have more flexibility and control over your backup data.
 
@@ -121,7 +121,7 @@ The following restrictions apply to both restoring from system or manual backups
 - A Managed Environment can only be restored to another Managed Environment. A non-Managed Environment can't be restored to a Managed Environment.
 - If the source environment has a customer-managed encryption key applied, the target environment must also have a customer-managed encryption key applied.
 - Backup and restore operations only work with source and target environments that have Dataverse.
-- Sandbox, Teams, and developer environemnts support self-restore backups.
+- Sandbox, Teams, and developer environments support self-restore backups.
 
 |Source | Target production | Target sandbox | Target developer | Target Teams | Target default |
 |---------|----------------|-----------------|-------------------|------------|-----------------|
@@ -133,7 +133,7 @@ The following restrictions apply to both restoring from system or manual backups
 
 ## Manual backups
 
-Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update. Manual backups may take up to 10 minutes to be ready for restoration. Please wait for at least 10 - 15 minutes before attempting to restore your data from a manual backup.
+Automated system backups are great, but you should make your own backups before making significant customizations or applying a version update. Manual backups may take up to 10 minutes to be ready for restoration. Wait for at least 10 - 15 minutes before attempting to restore your data from a manual backup.
 
 ### About manual backups
 
@@ -146,7 +146,7 @@ Automated system backups are great, but you should make your own backups before 
   :::image type="content" source="media/expires-on-date.png" alt-text="Check your expiration date.":::
 
 - The label of the created backup file reflects the restore-point timestamp. The restore-point timestamp is the closest available time to the time when the manual backup was created. The timestamp label can't be edited.
-- There is no limit on how many manual backups you can make.
+- There's no limit on how many manual backups you can make.
 - Manual backups don't count against your storage limits.
 - You must restore an environment to the same region in which it was backed up.
 - Don’t see your target environment? See [Don't see your environment to restore to?](#dont-see-your-environment-to-restore-to-1).
@@ -163,7 +163,7 @@ There's no status as the backup is processing. When the backup is completed, the
 
 ### Restore a manual backup
 
-You can only restore to sandbox environments. To restore it to a production environment, first switch the environment to a sandbox environment and then you can switch back to production after restoration.
+You can only restore to sandbox environments. To restore it to a production environment, first switch the environment to a sandbox environment, and then you can switch back to production after restoration.
 You can't restore to production environments.
 
 > [!Important]
@@ -289,7 +289,7 @@ The newly restored environment is placed in administration mode. To turn off adm
 
 ### What steps are needed after a restore to ensure flows are working as expected?
 
-- **Flows** - In the target environment, existing solution flows are deleted but existing, non-solution flows remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows are turned off, so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
+- **Flows** - In the target environment, existing solution flows are deleted but existing, nonsolution flows remain. Review the flows in the target environment to ensure that triggers and actions are pointing at the correct locations. Solution flows are turned off, so enable flows as needed. Solution flows need to be enabled or turned on for the PowerShell and API commands to work with these flows.
 
 - **Connection references** - Connection references require new connections. Create and set connections on Connection references.
 
@@ -303,7 +303,7 @@ No. Apps shared with Everyone in an environment that's backed up aren't shared w
 
 No for canvas apps. The app ID for a canvas app is different in a restored environment than the ID value when an environment was backed up.
 
-### If I restore my environment, will previous backups remain available?
+### If I restore my environment, do previous backups remain available?
 
 Yes, all backups within the organization's retention period will remain available.
 
@@ -315,11 +315,11 @@ In order to restore records after a bulk deletion, without restoring over an org
 
 2.  Restore the backup from the current organization to the new organization.
 
-This keeps the original organization with all of the records that've been added since the backup, while also creating a new organization with the records that were deleted.
+This keeps the original organization with all of the records that have been added since the backup, while also creating a new organization with the records that were deleted.
 
 ### How can I restore a deleted environment?
 
-You can recover a recently deleted environment (within seven days of deletion), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Production environments with Dynamics 365 applications will be available for up to 28 days.
+You can recover a recently deleted environment (within seven days of deletion), by using the Power Platform admin center or the Power Apps cmdlet Recover-AdminPowerAppEnvironment. Production environments with Dynamics 365 applications are available for up to 28 days.
 
 See [Recover environment](recover-environment.md) to learn more about the recovery environment.
 
