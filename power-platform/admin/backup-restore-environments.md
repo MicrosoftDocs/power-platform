@@ -153,12 +153,13 @@ Automated system backups are great, but you should make your own backups before 
 
 ### Create a manual backup
 
-1.  Browse to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
-2.  Go to **Environments** > [select an environment\] > **Backups** > **Create**.
+1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with administrator credentials.
+   
+1.  Go to **Environments** > [**_select an environment_**\] > **Backups & Restore** > **Create manual backup**.
 
      :::image type="content" source="media/create-backup.png" alt-text="Select Create.":::
 
-3.  Fill in the information, and then select **Create**.
+1.  Fill in the information, and then select **Create**.
 
 There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The \[backup name\] backup was successfully created.*"
 
@@ -170,19 +171,19 @@ You cannot restore to production environments. To restore to a production enviro
 > [!Important]
 > Note that changing an environment type to sandbox affects database retention. See [Restore production environment FAQ](#can-i-restore-to-a-production-environment) for more details about the effects of changing the environment type.
 
-1.  Browse to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with administrator credentials.
 
-2.  Go to **Environments** > [select an environment\] > **Backups** > **Restore or manage**.
+2. Go to **Environments** > [**_select an environmen_t**\] > **Backups & Restore** > **Restore or manage**.
 
-3.  Select the **Manual** tab.
+3. Select the **Manual** tab.
 
-4.  Select a manual backup to restore, and then select **Restore**.
+4. Select a manual backup to restore, and then select **Restore**.
 
-5.  Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and by default isn't done. For more information, see [Restore audit logs](#restore-audit-logs).
+5. Select whether to include audit logs. Including audit logs can significantly add to the time it takes to restore an environment and, by default, isn't done. For more information, see [Restore audit logs](#restore-audit-logs).
 
-6.  Select an environment to restore to (overwrite), and then select **Restore**.
+6. Select an environment to overwrite, and then select **Restore**.
 
-7.  Confirm overwrite of the environment.
+7. Confirm overwrite of the environment.
 
 ### Restore audit logs
 
