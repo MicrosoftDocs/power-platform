@@ -23,19 +23,22 @@ System backups are created automatically for environments that have a database. 
 Manual backups, on the other hand, are backups that are user-initiated backups. You should make manual backups before making major customizations or applying a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups for production environments with Dynamics 365 applications are kept for up to 28 days, while those without Dynamics 365 applications are kept for seven days.
 
 ### Supported retention period 
-
 | Environment types                          | System backup      |Manual backup       |
 |--------------------------------------------|--------------------|--------------------|
 | Production with Dynamics 365 apps          | 28                 | 28                 |
 | Production without Dynamics 365 apps\*      | 7                  | 7                  |
 | Sandbox                                    | 7                  | 7                  |
-| Developer                                  | 7                  | Not supported      |
-| Teams                                      | 7                  | Not supported      |
-| Default                                    | 7                  | Not supported      |
-| Trial                                      | Not backed up                  | Not supported      |
-| Trial subscription                         | Not backed up                  | Not supported      |
+| Developer                                  | 7                  |7     |
+| Teams                                      | 7                  | 7     |
+| Default**                                  | 7                  | Not supported      |
+| Trial                                    | Not backed up                  | Not supported      |
+| Trial ( subscription-based)                 | Not backed up                  | Not supported      |
 
 \* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days through PowerShell. For more information, see [Change the backup retention period for production environments without Dynamics 365 applications](#change-the-backup-retention-period-for-production-environments-without-dynamics-365-applications).
+
+\** We do not supporting restoring default environment system backup in Power Platform admin center, learn more about [Backup and restoration of the default environment](https://learn.microsoft.com/power-platform/guidance/adoption/manage-default-environment#backup-and-restoration-of-the-default-environment)
+
+System backup and restore operations are not supported for trial types environment and to utilize full features, including system backup and restore, [converting a trial environment to a production environment](https://learn.microsoft.com/power-platform/admin/trial-environments#convert-either-type-of-trial-environment-to-a-production-environment) is necessary.
 
 ## System backups
 
@@ -128,7 +131,7 @@ The following restrictions apply to both restoring from system or manual backups
 |Production| Sandbox          |
 |Sandbox    | Sandbox             |
 |Developer| Sandbox, Developer          |  
-|Teams| Self Restore               |  
+|Teams| Teams (self restore only)              |  
 |Default| Not suported               |
 
 See [Restore production environment](#can-i-restore-to-a-production-environment) for more details about restoring to production environment.
@@ -139,7 +142,7 @@ Automated system backups are great, but you should make your own backups before 
 
 ### About manual backups
 
-- You can create backups of production and sandbox environments.
+- You can create backups of production, sandbox, teams and developer environments.
 - You can't create backups of the default environment.
 - Manual backups for production environments that have both a database and Dynamics 365 applications are kept for up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications are kept for seven days.
 - Sandbox backups are kept for up to seven days.
