@@ -1,5 +1,5 @@
 ---
-title: Manage the Expense Reimbursement template for Power Platform
+title: Manage the Expense Reimbursement app
 description: Learn how to manage expense reimbursements in the Expense Reimbursement Admin model-driven app for Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
