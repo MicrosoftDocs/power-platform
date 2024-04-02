@@ -32,8 +32,8 @@ Manual backups, on the other hand, are backups that are user-initiated backups. 
 | Developer                                  | 7                  | Not supported      |
 | Teams                                      | 7                  | Not supported      |
 | Default                                    | 7                  | Not supported      |
-| Trial                                      | 7                  | Not supported      |
-| Trial subscription                         | 7                  | Not supported      |
+| Trial                                      | Not backed up                  | Not supported      |
+| Trial subscription                         | Not backed up                  | Not supported      |
 
 \* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days through PowerShell. For more information, see [Change the backup retention period for production environments without Dynamics 365 applications](#change-the-backup-retention-period-for-production-environments-without-dynamics-365-applications).
 
@@ -123,14 +123,6 @@ The following restrictions apply to both restoring from system or manual backups
 - Backup and restore operations only work with source and target environments that have Dataverse.
 - Sandbox, Teams, and developer environments support self-restore backups.
 
-|Source | Target production | Target sandbox | Target developer | Target Teams | Target default |
-|---------|----------------|-----------------|-------------------|------------|-----------------|
-|Production| No             |   Yes           | No                | No           | No              |
-|Sandbox    | No             |   Yes           | No                | No           | No              |
-|Developer| No             |   Yes           | Yes                | No           | No              |
-|Teams| No                 |   No           | No                | Yes\*           | No             |
-|Default| No               |   No            | No                | No           | No              |
-
 |Source type | Target type |
 |---------|----------------|
 |Production| Sandbox          |
@@ -138,6 +130,8 @@ The following restrictions apply to both restoring from system or manual backups
 |Developer| Sandbox, Developer          |  
 |Teams| Self Restore               |  
 |Default| Not suported               |
+
+See [Restore production environment](#can-i-restore-to-a-production-environment) for more details about restoring to production environment.
 
 ## Manual backups
 
@@ -162,9 +156,7 @@ Automated system backups are great, but you should make your own backups before 
 ### Create a manual backup
 
 1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with administrator credentials.
-   
 1.  Go to **Environments** > [**_select an environment_**\] > **Backups & Restore** > **Create manual backup**.
-
 1.  Fill in the information, and then select **Create**.
 
 There's no status as the backup is processing. When the backup is completed, the following message is displayed: "*The \[backup name\] backup was successfully created.*"
