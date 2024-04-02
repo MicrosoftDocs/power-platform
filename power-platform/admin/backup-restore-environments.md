@@ -149,7 +149,7 @@ Automated system backups are great, but you should make your own backups before 
 - There is no limit on how many manual backups you can make.
 - Manual backups don't count against your storage limits.
 - You must restore an environment to the same region in which it was backed up.
-- Don’t see your target environment please refer to this section in system back. 
+- Don’t see your target environment? See [Don't see your environment to restore to?](#dont-see-your-environment-to-restore-to-1).
 
 ### Create a manual backup
 
