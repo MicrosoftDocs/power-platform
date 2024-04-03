@@ -5,6 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - microsoft-george
+  - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 04/02/2024
@@ -75,10 +76,36 @@ It's best to create the connections before you import the solution. If you creat
 
     - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
     - [Office 365 Outlook connector](/connectors/office365/)
+    - [Teams](/connectors/teams/)
 
 [Learn how to manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections).
 
-## Step 3: Install solution files
+## Step 3: Install Approvals solution
+
+The Expense Reimbursement template leverages Power Automate Approvals to approve or reject requests. By default, Power Platform environments are not set up with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
+
+1. Go to the [Power Automate maker portal](https://make.preview.powerautomate.com/environments/) and select your targeted deployment environment.
+1. Select **+ Create** on left pane.
+1. Select **Instant cloud flow** underneath the *Start from blank* section.
+1. Choose **Manually trigger a flow** and then select **Create**.
+1. Select **+ New step**.
+1. Search on *Approvals* and choose **Create an approval**.
+1. Enter the following properties on the *Create an approval* step:
+    - **Approval type** – *Approve/Reject – First to respond*
+    - **Title** – *Test*
+    - **Assigned to** – *select your email address*
+1. Select **Save**.
+1. Select **Test Manually** and then **Test** again.
+1. Select **Continue** and then **Run flow**, followed by **Done**.
+1. *Delete* the flow you just created, as it is no longer needed.
+
+> [!NOTE]
+>
+> It can take a few minutes for the database provisioning to complete, and you'll notice this delay the first time you run this flow. Once this first-time flow run is complete, subsequent approval flows will be faster.
+
+More information: [Get started with Power Automate approvals](/power-automate/get-started-approvals)
+
+## Step 4: Install solution files
 
 You have two options for installing the Expense Reimbursement solution:
 
@@ -130,7 +157,7 @@ Two solutions are installed in your environment, **Employee Experience Base** an
 
 [Learn more about solutions](/power-platform/alm/solution-concepts-alm).
 
-## Step 4: Assign Security Roles
+## Step 5: Assign Security Roles
 
 The Expense Reimbursement solution contains two security roles.
 
@@ -162,9 +189,9 @@ Assign security roles in the Power Platform admin center.
 - [Learn how to manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users).
 - [Learn how to control user access to environments with security groups and licenses](/power-platform/admin/control-user-access).
 
-## Step 5: Turn on cloud flows
+## Step 6: Turn on cloud flows
 
-Verify that the cloud flows are turned on in the newly installed Expense Reimbursement solution. Turn on any flows that are not already set to _on_.
+Verify that the cloud flows are turned on in the newly installed Expense Reimbursement solution. Turn on any flows that are not already set to *on*.
 
 1. In [Power Apps](https://make.preview.powerapps.com/), in the left side panel, select **Solutions**.
 
@@ -174,7 +201,7 @@ Verify that the cloud flows are turned on in the newly installed Expense Reimbur
 
 1. Select *each of the four flows* and make sure it's turned on.
 
-## Step 6: Share the apps
+## Step 7: Share the apps
 
 Share the Expense Reimbursement app with the users in your organization.
 

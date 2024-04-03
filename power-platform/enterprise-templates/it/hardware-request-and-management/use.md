@@ -15,7 +15,7 @@ ms.subservice: solution-templates
 
 # Use the Hardware Request and Hardware Management apps
 
-Once configuration and setup steps are completed the apps are ready to use.
+Once configuration and setup steps are complete, the apps are ready to use.
 
 ## Use the Hardware Request app
 

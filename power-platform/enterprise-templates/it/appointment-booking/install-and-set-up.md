@@ -1,11 +1,11 @@
 ---
-title: Install and configure the Appointment Booking template for Power Platform
+title: Install and set up the Appointment Booking template
 description: Learn how to install, set up, and deploy the Appointment Booking template for Microsoft Power Platform.
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 04/02/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

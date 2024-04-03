@@ -37,11 +37,11 @@ As a program administrator, you can use the Onboarding Buddy Admin app to manage
 
 1. In the Onboarding Buddy Admin app, in the left side panel, select **Configurations**.
 
-1. Select the record. (There should only ever be one.)<!-- EDITOR'S NOTE: Can you please pass a note to the UI team that using a plural to designate something there should only ever be one of is really confusing? -->
+1. Select the record. (There should only ever be one.)
 
 1. Select **Edit**.
 
-:::image type="content" source="media/manage/ob-manage-configure.png" alt-text="Screenshot of the Onboarding Buddy Admin app, with Configurations and the Edit button highlighted.":::
+:::image type="content" source="media/manage/ob-manage-configure.png" alt-text="Screenshot of the Onboarding Buddy Admin app, with Configurations and Edit buttons highlighted.":::
 
 1. Change what you need to, and then select **Save & Close**.
 

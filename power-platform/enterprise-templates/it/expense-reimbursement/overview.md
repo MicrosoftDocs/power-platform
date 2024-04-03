@@ -2,6 +2,9 @@
 title: Expense Reimbursement template for Power Platform
 description: The Expense Reimbursement template for Microsoft Power Platform enables employees to submit expenses for reimbursement.
 author: tverhasselt
+contributors:
+  - microsoft-george
+  - nghiemdoan-msft
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
