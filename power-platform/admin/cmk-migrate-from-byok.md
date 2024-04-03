@@ -19,26 +19,16 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 > [!Note]
 > BYOK tenants' environments are locked out of the following services unless they migrate to customer-managed key:
 > 
->   Long term data retention
->
->   Audit in IP firewall
->
-> 	Audit data in Synapse workspace and Power BI 
->
-> 	Copilot search index- uses Dataverse search 
->
->   AI Builder
-> 
->   Dataverse search index
->
->   Elastic tables
->
->   Power BI embedded - query result cache for tiles and visuals, paginated reports, Dataflow data and others 
->
->   Canvas apps 
->
->   Power Automate flows
-
+> - Long term data retention
+> - Audit in IP firewall
+> -	Audit data in Synapse workspace and Power BI 
+> -	Copilot search index which uses Dataverse search 
+> - AI Builder
+> - Dataverse search index
+> - Elastic tables
+> - Power BI embedded, query result cache for tiles and visuals, paginated reports, Dataflow data, and others 
+> - Canvas apps 
+> - Power Automate flows
 
 > [!IMPORTANT]
 > You can migrate to [customer-managed key](customer-managed-key.md) immediately without the need to contact Microsoft. If you need assistance, reach out to your FastTrack or account manager, or submit a support ticket.
