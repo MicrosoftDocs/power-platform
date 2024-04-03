@@ -205,6 +205,9 @@ Now you're able to link the environments to pipelines in the new host.
 
 ## Frequently Asked Questions
 
+### Will personal pipelines conflict with any pipelines that I have already set up?
+No. Thanks to the host separation dynamic that we have in place, there is no way for a Maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. Nor will Makers be able to see the new Pipelines for All experience (that enables the creation of lightweight personal pipelines) in environments already associated with a custom host; the new experience only shows up by default in environments that are not already associated with a host and those associated with the platform host. **Makers also do not receive any elevated access to environments as a result of this feature. Selectable target environments are filtered to only include environments that a Maker could import to today. This feature ensures that all personal pipelines are stored in the platform host that is accessible to admins, and provides an easier way for Makers to self-service their ALM.**
+
 ### Why can I still create a pipeline with a target environment that is not a Managed Environment?
 Pipelines in Power Platform is not currently strictly enforced as a Managed Environments feature. There is prevalent messaging that "Pipelines is a feature of managed environments", but you can still create pipelines with target environments that are not managed today. However, we are planning to enforce this in the near future by blocking deployment capabilities when the target environment is not managed.
 
@@ -213,9 +216,6 @@ This error indicates that another host already contains an active environment re
 
 ### Do the pipelines and data within the platform host count towards my Dataverse capacity?
 No, the data consumption in the platform host does not count against your current plan. The same does not apply to a custom host, which is not an implementation in the platform but instead in a customizable environment.
-
-### Will personal pipelines conflict with any pipelines that I have already set up?
-No. Thanks to the host separation dynamic that we have in place, there is no way for a Maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. Nor will Makers be able to see the new Pipelines for All experience (that enables the creation of lightweight personal pipelines) in environments already associated with a custom host; the new experience only shows up by default in environments that are not already associated with a host and those associated with the platform host. Makers also do not receive any elevated access to environments as a result of this feature. Selectable target environments are filtered to only include environments that a Maker could import to today.
 
 ### What if I want to enable Makers to create personal pipelines in a custom host? Can I do that?
 Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant these lightweight pipeline creation permissions to. This is **not** assigned to anyone by default in the case of custom hosts.
