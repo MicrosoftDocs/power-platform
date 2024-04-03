@@ -3,7 +3,7 @@ title: Environment groups (preview)
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 04/03/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -21,7 +21,14 @@ The task of managing Power Platform on a large scale across numerous environment
 
 Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
 
-Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets.
+Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. In this first release, six key capabilities of Managed Environments are available as rules:
+
+- [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
+- [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
+- [Maker welcome content](welcome-content.md)
+- [Solution checker enforcement](managed-environment-solution-checker.md)
+- [Usage insights](managed-environment-usage-insights.md)
+- [Extended backup retention](backup-restore-environments.md)
 
 > [!Important]
 > - This is a preview feature.
