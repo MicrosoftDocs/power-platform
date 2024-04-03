@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Provides information on how to back up and restore Power Platform environments
 ms.topic: conceptual
-ms.date: 04/02/2024
+ms.date: 04/03/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -30,15 +30,15 @@ Manual backups, on the other hand, are backups that are user-initiated backups. 
 | Sandbox                                    | 7                  | 7                  |
 | Developer                                  | 7                  |7     |
 | Teams                                      | 7                  | 7     |
-| Default**                                  | 7                  | Not supported      |
+| Default\**                                  | 7                  | Not supported      |
 | Trial                                    | Not backed up                  | Not supported      |
-| Trial ( subscription-based)                 | Not backed up                  | Not supported      |
+| Trial (subscription-based)                 | Not backed up                  | Not supported      |
 
 \* We allow extending the retention period beyond seven days for managed, production environments without Dynamics 365 applications up to 28 days through PowerShell. For more information, see [Change the backup retention period for production environments without Dynamics 365 applications](#change-the-backup-retention-period-for-production-environments-without-dynamics-365-applications).
 
-\** We do not supporting restoring default environment system backup in Power Platform admin center, learn more about [Backup and restoration of the default environment](https://learn.microsoft.com/power-platform/guidance/adoption/manage-default-environment#backup-and-restoration-of-the-default-environment)
+\** We don't support restoring a system backup of the default environment in Power Platform admin center. For more information, see [Backup and restoration of the default environment](../guidance/adoption/manage-default-environment.md#backup-and-restoration-of-the-default-environment).
 
-System backup and restore operations are not supported for trial types environment and to utilize full features, including system backup and restore, [converting a trial environment to a production environment](https://learn.microsoft.com/power-platform/admin/trial-environments#convert-either-type-of-trial-environment-to-a-production-environment) is necessary.
+System backup and restore operations aren't supported for trial type environments. To utilize full features, including system backup and restore options, see [converting a trial environment to a production environment](trial-environments.md#convert-either-type-of-trial-environment-to-a-production-environment).
 
 ## System backups
 
@@ -131,7 +131,7 @@ The following restrictions apply to both restoring from system or manual backups
 |Production| Sandbox          |
 |Sandbox    | Sandbox             |
 |Developer| Sandbox, Developer          |  
-|Teams| Teams (self restore only)              |  
+|Teams| Teams (self-restore only)              |  
 |Default| Not suported               |
 
 See [Restore production environment](#can-i-restore-to-a-production-environment) for more details about restoring to production environment.
@@ -142,7 +142,7 @@ Automated system backups are great, but you should make your own backups before 
 
 ### About manual backups
 
-- You can create backups of production, sandbox, teams and developer environments.
+- You can create backups of production, sandbox, Teams, and developer environments.
 - You can't create backups of the default environment.
 - Manual backups for production environments that have both a database and Dynamics 365 applications are kept for up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications are kept for seven days.
 - Sandbox backups are kept for up to seven days.
