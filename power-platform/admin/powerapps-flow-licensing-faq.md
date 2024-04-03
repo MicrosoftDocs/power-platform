@@ -36,7 +36,7 @@ To utilize these features, you need any of the following licenses:
 - Dynamics 365 Field Service
 - Dynamics 365 Project Operations
 
-For more information about Dynamics 365 licensing, see [Dynamics 365 license transition guide](/dynamics365/get-started/license-transition). For more information about Copilot data security and privacy see, [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/dynamics365/faqs-copilot-data-security-privacy).
+For more information about Dynamics 365 licensing, see [Dynamics 365 license transition guide](/dynamics365/get-started/license-transition). For more information about Copilot data security and privacy, see [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/dynamics365/faqs-copilot-data-security-privacy).
 
 > [!Note]
 > For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
