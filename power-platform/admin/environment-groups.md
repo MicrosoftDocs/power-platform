@@ -3,7 +3,7 @@ title: Environment groups (preview)
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/14/2024
+ms.date: 04/03/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -96,9 +96,9 @@ You can manually add environments to the _Personal Productivity_ group if you ha
 > - Only Managed Environments can be created into an environment group.
 > - Any environment type, for example production, developer, or sandbox, can be created into an environment group.
 
-## Manually create environments into the group
+## Manually create environments in the group
 
-You can also manually create environments into the _Personal Productivity_ group.
+You can also manually create environments in the _Personal Productivity_ group.
 
 1. Go to the **Environments** page.
 1. Select **New** in the command bar.
