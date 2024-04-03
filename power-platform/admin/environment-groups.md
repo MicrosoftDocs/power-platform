@@ -44,7 +44,7 @@ Enabling _default environment routing_ might give you more environments to manag
 1. Select **Environment groups** in the navigation pane.
 1. On the **Environment groups** page, select **New group**.
 1. In the **Create group** pane that appears:
-   1. Add a name for your group in the **Name** field such as _Personal Productivity_.
+   1. Add a name for your group in the **Name** field such as **Personal Productivity**.
    1. Add a brief description of the group in the **Description** field.
    1. Select **Create**.
 
@@ -79,13 +79,13 @@ With your environment group setup, it can now serve as the home for all new pers
 1. Select **Save**.
 
 > [!NOTE]
-> For developer environments in the _Personal Productivity_ group, the sharing limit can't be changed in individual environment settings. The same default restriction applies to other rules. To make changes, adjust the rule and the change applies to all environments in the group.
+> For developer environments in the **Personal Productivity** group, the sharing limit can't be changed in individual environment settings. The same default restriction applies to other rules. To make changes, adjust the rule and the change applies to all environments in the group.
 
 ## Add environments to your environment group
 
-You can manually add environments to the _Personal Productivity_ group if you have existing **Developer** environments that belong there.
+You can manually add environments to the **Personal Productivity** group if you have existing **Developer** environments that belong there.
 
-1. Select the _Personal Productivity_ group.
+1. Select the **Personal Productivity** group.
 1. Select the **Add environments** button in the command bar.
 1. Select a single environment from the list of Managed Environments.
 1. Select **Add**.
@@ -98,7 +98,7 @@ You can manually add environments to the _Personal Productivity_ group if you ha
 
 ## Manually create environments in the group
 
-You can also manually create environments in the _Personal Productivity_ group.
+You can also manually create environments in the **Personal Productivity** group.
 
 1. Go to the **Environments** page.
 1. Select **New** in the command bar.
