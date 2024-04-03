@@ -27,7 +27,7 @@ Pipelines are now available to all who navigate to the pipelines page for the fi
 
 ### Prerequisites for personal pipelines
 
-- Two environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and one target environment.
+- Two environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and one target environment. **Note: the default environment cannot be used as the target environment for personal pipelines.**
 - All environments used in pipelines must have a Microsoft Dataverse database.
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
 
@@ -209,7 +209,7 @@ Now you're able to link the environments to pipelines in the new host.
 No. Thanks to the host separation dynamic that we have in place, there is no way for a Maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. By default, Makers do not have permissions to create lightweight personal pipelines in environments already associated with a custom host, meaning that your current pipelines UX, if in place, will not change. **Makers also do not receive any elevated access to environments as a result of this feature. Selectable target environments are filtered to only include environments that a Maker could already import to. This feature ensures that all personal pipelines are stored in the platform host that is accessible to admins, and provides an easier way for Makers to self-service their ALM.**
 
 ### Why am I seeing an error that states "this environment is already associated with another pipelines host"?
-This error indicates that another host already contains an active environment record that you are trying to associate with the current host. To resolve this, refer to the section above on [Disassociating environments from one host and associating them with another host](#disassociating-environments-from-one-host-and-associating-them-with-another-host). We will also soon have a "Force link" capability for admins to forgo the environment record removal process.
+This error indicates that another host already contains an active environment record that you are trying to associate with the current host. To resolve this, refer to the section above on [disassociating environments from one host and associating them with another host](#disassociating-environments-from-one-host-and-associating-them-with-another-host). We will also soon have a "Force link" capability for admins to forgo the environment record removal process.
 
 ### Do the pipelines and data within the platform host count towards my Dataverse capacity?
 No, the data consumption in the platform host does not count against your current plan. The same does not apply to a custom host, which is not an implementation in the platform but instead in a customizable environment.
