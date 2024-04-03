@@ -75,7 +75,7 @@ You can connect to your customer data from Dynamics 365 Sales or Salesforce howe
 
 - You only have access to specific set of core entities, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
 - The data is analyzed only at the time of connection and doesn’t refresh. 
-- The data is limited to the top 2,000 rows and 100 columns per table.
+- The data is limited to the first 2000 rows (based on the default order of the table) and a maximum of 100 columns for each table.
 - You can only connect to one external data source, either Dynamics 365 or Salesforce, at any given time. This means that if you choose to connect to Dynamics 365, you won't be able to connect to Salesforce simultaneously. 
   However, you can still upload files regardless of the external connection.
 
@@ -83,7 +83,7 @@ For Dynamics 365 Sales connection:
 
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
 - If you have access to multiple instances, you are prompted to choose one.
-- If a instance isn't found, then the option to connect to **Dynamics 365** won't be available.
+- If an instance isn't found, then the option to connect to **Dynamics 365** won't be available.
 - The list of columns to import from each data table is obtained using the Default view in Dynamics 365 Sale. To customize the column list, you can modify the view or create a new Default view.
 
 For Salesforce connection:
