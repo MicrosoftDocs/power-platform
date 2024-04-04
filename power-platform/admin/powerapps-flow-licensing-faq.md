@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 04/01/2024
+ms.date: 04/03/2024
 author: chrisgarty
 contributors:
   - Antoine2F
@@ -10,7 +10,7 @@ contributors:
   - v-aangie
 ms.subservice: admin
 ms.author: cgarty
-ms.reviewer: angieandrews
+ms.reviewer: sericks
 ms.contributors:
 - jessechen
 - v-kgallagher
@@ -34,7 +34,9 @@ To utilize these features, you need any of the following licenses:
 - Dynamics 365 Sales Enterprise
 - Dynamics 365 Customer Insights
 - Dynamics 365 Field Service
-- Dynamics 365 Project Operations 
+- Dynamics 365 Project Operations
+
+For more information about Dynamics 365 licensing, see [Dynamics 365 license transition guide](/dynamics365/get-started/license-transition). For more information about Copilot data security and privacy, see [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/dynamics365/faqs-copilot-data-security-privacy).
 
 > [!Note]
 > For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
@@ -297,7 +299,7 @@ Microsoft Copilot Studio for Teams enables customers with select Microsoft 365 o
 #### Are there additional Microsoft Copilot Studio licensing requirements to create and edit with Copilot?
 
 - You need a Microsoft Copilot Studio license and you must create an account.
-    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio or Power Virtual Agents or before, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
+    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 - This capability might be subject to usage limits or capacity throttling.
 
 ## Power Pages
