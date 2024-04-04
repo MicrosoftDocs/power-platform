@@ -71,7 +71,7 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
 > [!IMPORTANT]
 > You need to have account to establish a connection with either Dynamics 365 or Salesforce.
 
-You can connect to your customer data from Dynamics 365 Sales or Salesforce however the following limitations apply:
+You can connect to your customer data from Dynamics 365 Sales or Salesforce. We are working to improve and expand our data integration abilities and sources. Current limitations in data integration:
 
 - You only have access to specific set of core entities, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
 - The data is analyzed only at the time of connection and doesn’t refresh. 
@@ -84,7 +84,6 @@ For Dynamics 365 Sales connection:
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
 - If you have access to multiple instances, you are prompted to choose one.
 - If an instance isn't found, then the option to connect to **Dynamics 365** won't be available.
-- The list of columns to import from each data table is obtained using the Default view in Dynamics 365 Sale. To customize the column list, you can modify the view or create a new Default view.
 
 For Salesforce connection:
 - You can create a connection, or reuse an existing connection using the PowerPlatform environments available to the currently logged in user
