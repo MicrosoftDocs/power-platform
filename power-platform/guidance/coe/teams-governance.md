@@ -62,7 +62,7 @@ A weekly cleanup deletes environments that:
 - Have been created more than 90 days ago and have no apps or flows in the environment.
 
 > [!NOTE]
-> Currently, bots created by using Power Virtual Agents in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
+> Currently, bots created by using Microsoft Copilot Studio in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
 
 An admin can customize the conditions for deletion by creating a copy of the flow and modifying it:
 

@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 02/01/2024
+ms.date: 04/04/2024
 ms.custom: template-how-to
 ---
 
@@ -15,6 +15,20 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 
 - Add non-BYOK enabled environments – these are environments that you haven’t encrypted with your own key.
 - Migrate BYOK enabled environments – these are environments that you have encrypted with your own key.
+
+> [!Note]
+> BYOK tenants' environments are locked out of the following services unless they migrate to customer-managed key:
+> 
+> - Long term data retention
+> - Audit in IP firewall
+> -	Audit data in Synapse workspace and Power BI 
+> -	Copilot search index which uses Dataverse search 
+> - AI Builder
+> - Dataverse search index
+> - Elastic tables
+> - Power BI embedded – applications and customers’ Power BI reports and dashboards
+> - Canvas apps 
+> - Power Automate flows
 
 > [!IMPORTANT]
 > You can migrate to [customer-managed key](customer-managed-key.md) immediately without the need to contact Microsoft. If you need assistance, reach out to your FastTrack or account manager, or submit a support ticket.

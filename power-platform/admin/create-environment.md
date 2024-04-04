@@ -42,8 +42,8 @@ To create an environment, these requirements must be true:
    | Power Apps trial |Yes (one)| Yes | 
    | Power Automate plan |Yes (one)| Yes | 
    | Power Automate trial |Yes (one)| Yes | 
-   | Power Virtual Agents trial plan |Yes | No | 
-   | Power Virtual Agents plan | No | Yes | 
+   | Microsoft Copilot Studio trial plan |Yes | No | 
+   | Microsoft Copilot Studio plan | No | Yes | 
 
   You can also create a developer environment. For more information about developer environment, see [Create a developer environment](/power-platform/developer/create-developer-environment).
   
