@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 02/01/2024
+ms.date: 04/04/2024
 ms.custom: template-how-to
 ---
 
@@ -26,7 +26,7 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 > - AI Builder
 > - Dataverse search index
 > - Elastic tables
-> - Power BI embedded, query result cache for tiles and visuals, paginated reports, Dataflow data, and others 
+> - Power BI embedded – applications and customers’ Power BI reports and dashboards
 > - Canvas apps 
 > - Power Automate flows
 
