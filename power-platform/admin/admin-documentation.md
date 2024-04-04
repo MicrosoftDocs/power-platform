@@ -1,6 +1,6 @@
 ---
 title: Administer Microsoft Power Platform
-description: "The Power Platform admin center is a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, Power Virtual Agents, and customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing)."
+description: "The Power Platform admin center is a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, and customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing)."
 author: sericks007
 ms.topic: overview
 ms.date: 06/20/2023
@@ -8,7 +8,7 @@ ms.author: sericks
 ---
 # Administer Microsoft Power Platform
 
-The Power Platform admin center (<https://admin.powerplatform.microsoft.com>) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Power Virtual Agents.
+The Power Platform admin center (<https://admin.powerplatform.microsoft.com>) provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
 
 Power BI administrators use the Power BI admin portal (<https://app.powerbi.com>) to manage a Power BI tenant including the configuration of governance policies, usage monitoring, and provisioning of licenses, capacities, and organizational resources. Learn more about Power BI admin portal at [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization)
 

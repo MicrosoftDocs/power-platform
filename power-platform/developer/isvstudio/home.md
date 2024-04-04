@@ -1,7 +1,7 @@
 ---
 title: The Home page of ISV Studio | Microsoft Docs
 description: Learn about the home page capabilities provided by the ISV Studio portal.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: pehecke
 author: angela21k
 ms.author: angelakim
@@ -17,7 +17,7 @@ contributors:
 
 # The Home page
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 After a user logs into the ISV Studio, they are presented with the landing page known as the *Home* page. A welcome message is displayed which defines the objective of this page.
 
