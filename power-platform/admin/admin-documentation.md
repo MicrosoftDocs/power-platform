@@ -1,6 +1,6 @@
 ---
 title: Administer Microsoft Power Platform
-description: "The Power Platform admin center is a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, and customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing)."
+description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
 ms.date: 06/20/2023
@@ -14,7 +14,7 @@ Power BI administrators use the Power BI admin portal (<https://app.powerbi.com>
 
 The Power Platform admin center is also used by administrators of some Dynamics 365 apps, such as Dynamics 365 Sales, Dynamics 365 Customer Service, and Dynamics 365 Marketing, to manage environments and settings.
 
-## Power Platform admin center capabilities
+## Power Platform admin center features
 
 Currently, the admin center provides the following capabilities.
 
@@ -30,7 +30,7 @@ Currently, the admin center provides the following capabilities.
 |Data| Manage your cloud and data gateway connections. More information: [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
 |Policies     | View and manage various policies for your tenant and environments. More information:<br/>- [Data policy](create-dlp-policy.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
 
-## Home page dashboard
+## Dashboard overview for home page
 
 You can personalize your home page by selecting a theme, setting your language, and timezone from the **Settings** gear.
 
@@ -40,7 +40,7 @@ To personalize your dashboard, select **+ Add cards** on top of the homepage and
 
 The following are the cards you can add to the dashboard.
 
-### Service health
+### Monitor service health
 
 This card shows whether your Microsoft services are healthy, or if they're experiencing an active advisory or incident. For more info about an advisory or incident, select it to open the **Service health** page of the Microsoft 365 admin center.
 
@@ -48,7 +48,7 @@ This card shows whether your Microsoft services are healthy, or if they're exper
 
 This card helps you manage upcoming changes to our Microsoft services. Select a post to open it in the details panel. To view the full list of messages across all Microsoft services, select **Show all**. [More info about the message center](/office365/admin/manage/message-center).
 
-### Documentation and training
+### Resources for documentation and training
 
 This card provides links to related documentation and information sources.
 
