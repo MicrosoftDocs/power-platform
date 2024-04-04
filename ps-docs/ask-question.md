@@ -73,7 +73,7 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
 
 You can connect to your customer data from Dynamics 365 Sales or Salesforce. We are working to improve and expand our data integration abilities and sources. Current limitations in data integration:
 
-- You only have access to specific set of core entities, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
+- You only have access to specific set of core tables, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
 - The data is analyzed only at the time of connection and doesn’t refresh. 
 - The data is limited to the first 2000 rows (based on the default order of the table) and a maximum of 100 columns for each table.
 - You can only connect to one external data source, either Dynamics 365 or Salesforce, at any given time. This means that if you choose to connect to Dynamics 365, you won't be able to connect to Salesforce simultaneously. 
