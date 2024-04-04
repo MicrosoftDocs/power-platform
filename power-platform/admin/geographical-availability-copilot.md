@@ -36,7 +36,7 @@ However, copilots and generative AI features aren't available in all regions and
 
 ## Regions involved with copilots and generative AI features
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We do not use your data to train, retrain, or improve Azure OpenAI Service foundation models.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models.
 
 The following table lists the regions involved with copilots and generative AI features.
 
