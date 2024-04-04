@@ -69,7 +69,7 @@ Your hackathon can be one day or more, but we recommend planning your agenda upf
 
 Here’s a sample agenda:
 
-| | |
+| &nbsp; |  &nbsp;|
 |----|----|
 | 15 mins	| **Introduction and Welcome** |
 | 30 mins	| **Microsoft Power Platform Introduction**<br>Consider playing videos from Microsoft conferences, such as [Unleashing your organization’s creativity and innovation with a deep dive into Microsoft Power Platform](https://www.youtube.com/watch?v=2QJMP_Scvy8) or [Empower everyone in your organization to drive digital transformation with Microsoft Power Platform](https://www.youtube.com/watch?v=0P7wlxpDFII). You could also highlight some [customer stories](https://powerapps.microsoft.com/customer-stories/) for additional inspiration, especially if there is a public case study of a customer in the same or similar industry as your organization. |
