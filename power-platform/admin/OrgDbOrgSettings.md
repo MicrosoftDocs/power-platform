@@ -4,7 +4,7 @@ description: This topic covers the default options available in OrgDBOrgSettings
 author: DanaMartens
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/06/2024
+ms.date: 04/01/2024
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
@@ -55,3 +55,4 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | UseFilteringMethodOfSyncingMailboxOnlyForCorrelation | false | When disabled, the filtering method of all Dynamics 365 recipients is evaluated to determine whether any user or queue accepts an email when performing correlation during automatic incoming email processing. When enabled, the system will only consider the incoming email filtering method of the user or queue who is currently processing the email. In this case, the incoming email filtering method of other Dynamics 365 recipients is ignored. <br> |
 | UsePlainTextForEmailTemplateBody | false | Changes the email template to use plain text where otherwise text with the following symbols wouldn't appear: &lt;text&gt;. |
 | UseXAnchorMailboxInExchangeRequestHeader | true | Allows server-side sync to specify the XAnchorMailbox Header when connecting to Exchange. We recommend that you not disable this setting. |
+| UnresolveSenderInCaseOfMultipleMatch | false | When enabled, server-side synchronization keeps the email sender unresolved if it matches with multiple records across entities such as lead, team, user, custom entity, account, and contact. For example, if the email sender's email address matches with one account and one lead, the email sender is left unresolved by server-side synchronization.

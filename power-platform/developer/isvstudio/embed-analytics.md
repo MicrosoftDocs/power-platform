@@ -1,7 +1,7 @@
 ---
 title: Embed Pay-as-you-go for ISVs (preview) | Microsoft Docs
 description: Learn how to access the Embed PAYG reports in ISV Studio.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
@@ -16,7 +16,7 @@ contributors:
 
 # Power Automate Embed Pay-as-you-go for ISVs (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 > [!IMPORTANT]
 > - This is a preview feature.
