@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 03/19/2024
+ms.date: 04/04/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -111,24 +111,24 @@ Admins can enable one of these four configurations for this setting:
 ### Logging of SAS calls
 This setting enables all SAS calls within Power Platform to be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
 
-| Field Name                                   | Field Explanation                                                                                              |
+| Field name                                   | Field description                                                                                              |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| response.status_message                      | Informing if the event was successful or not;  SASSuccess or SASAuthorizationError                             |
-| response.status_code                         | Informing if the event was successful or not; 200, 401, or 500                                                 |
+| response.status_message                      | Informing if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
+| response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                 |
 | analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
 | enduser.ip_address                           | The public IP of the caller.                                                                                   |
-| analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this will show all usage & creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
-| request.service_request_id                   | Unique identifier from the request/response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.                               |
+| analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
+| request.service_request_id                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.                               |
 | version                                      | Version of this log schema.                                                                                    |
 | type                                         | Generic response.                                                                                              |
-| analytics.activity.name                      | The type of activity this event was; Creation or Usage.                                                        |
+| analytics.activity.name                      | The type of activity this event was: Creation or Usage.                                                        |
 | analytics.activity.id                        | Unique ID of the record in Purview.                                                                            |
-| analytics.resource.organization.id           | The Org ID.                                                                                                    |
-| analytics.resource.environment.id            | Environment ID.                                                                                                |
-| analytics.resource.tenant.id                 | Tenant ID.                                                                                                     |
-| enduser.id                                   | The GUID from AAD of the creator from the creation event.                                                      |
-| enduser.principal_name                       | The UPN / email address of the creator, for usage events this is a generic response “system@powerplatform”.    |
-| enduser.role                                 | Generic Response; Regular for creation events and System for usage events.                                     |
+| analytics.resource.organization.id           | Org ID                                                                                                   |
+| analytics.resource.environment.id            | Environment ID                                                                                              |
+| analytics.resource.tenant.id                 | Tenant ID                                                                                                   |
+| enduser.id                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                                  |
+| enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.    |
+| enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                                     |
 
 ### Related articles
 
