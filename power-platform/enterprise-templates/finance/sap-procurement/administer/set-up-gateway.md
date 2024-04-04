@@ -92,18 +92,15 @@ Assuming your gateways are already set up, take these steps:
 
 ## Related content
 
-[On-premises data gateways documentation](/data-integration/gateway/)
+- [On-premises data gateways documentation](/data-integration/gateway/)
+- [Power Platform on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management)
+- [Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters)
+- [Data source management](/power-platform/admin/onpremises-data-gateway-source-management)
 
-[Power Platform on-premises data gateway management](/power-platform/admin/onpremises-data-gateway-management)
-
-[Manage on-premises data gateway high-availability clusters and load balancing](/data-integration/gateway/service-gateway-high-availability-clusters)
-
-[Data source management](/power-platform/admin/onpremises-data-gateway-source-management)
-
-## Next steps
+### Next steps
 
 [Configure authentication](configure-authentication.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)
