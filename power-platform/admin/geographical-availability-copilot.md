@@ -1,10 +1,10 @@
 ---
-title: Enable copilots and generative AI features
-description: Learn how to enable data movement across regions for copilots and generative AI features.
+title: Turn on copilots and generative AI features
+description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/21/2024
+ms.date: 03/25/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -25,52 +25,54 @@ ms.collection:
     - bap-ai-copilot
 ---
 
-# Enable copilots and generative AI features
+# Turn on copilots and generative AI features
 
 Copilots and generative AI features in [Microsoft Power Platform](/power-platform/) and [Microsoft Dynamics 365](/dynamics365/) help you build apps, flows, and chatbots, analyze your data, summarize information, reply to messages, and generate ideas.
 
-However, these features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
+However, copilots and generative AI features aren't available in all regions and languages. Depending on where your environment is hosted, you might need to allow data movement across regions to use them. This article explains how to do that.
 
 > [!NOTE]
-> Copilot features that are generally available are enabled by default. However, your settings for data movement across regions will take precedence over the Copilot setting.
+> Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all copilot and generative AI features.
 
-## How data movement across regions works
+## Regions involved with copilots and generative AI features
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service endpoint that supports these features is hosted**. We do not use your data to train, retrain, or improve Azure OpenAI Service foundation models.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models.
 
-The following table describes when and how data can move across regions for copilots and generative AI features.
+The following table lists the regions involved with copilots and generative AI features.
 
-| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Does data move across regions? | How to allow data to move across regions|
-|-------------------------|-------------------------|-------------------------|-------------------------|
-| Australia</br>India</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | No | No action required. Data doesn't move across regions in this scenario.|
-| Europe | Sweden or Switzerland | Yes\* | No action required. Data doesn't move outside the [EU Data Boundary](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) in this scenario.<br><br>Admins can clear the [**Move data across regions**](#enable-data-movement-across-regions) checkbox, if they want to. |
-| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
-| Asia</br>Canada</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | Yes | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
-| Government cloud (GCC, GCC High) | United States (commercial cloud) | Yes - to commercial (United States) | Complete the steps in [Enable data movement across regions](#enable-data-movement-across-regions). |
+| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
+|-------------------------|-------------------------|-------------------------|
+| Australia</br>India</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | United States| 
+| Europe\*  | Sweden or Switzerland| United States |
+| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | United States|
+| Asia</br>Canada</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | United States| 
+| Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
 
 \*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
-## Enable data movement across regions
+## Turn on copilots and generative AI features
 
-If your environment is hosted in a region that requires data movement across regions to use copilots and generative AI features, you need to consent to the terms of use on the **Move data across regions** checkbox in the Power Platform admin center.
+To use copilots and generative AI features, you need to consent to the terms of use in the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
 1. Select your environment.
-
 1. On the **Generative AI features** card, select **Edit**.
-
-    :::image type="content" source="media/ai-not-allowed.svg" alt-text="Select **Edit** on the **Generative AI features** card.":::
-
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
-    :::image type="content" source="media/terms-of-use.png" alt-text="Select the check mark to consent to the terms of use.":::
+   When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the table above. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
 
-1. Select **Enable**.
+   > [!Note]
+   > Data movement that occurred while your environment was allowed to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
+   
+1. Review the terms of use and select the **Bing Search** checkbox.
 
-    After you consent to the terms of use, the status of **Move data across regions** field on the **Generative AI features** card shows **Allowed**. Copilots and generative AI features are enabled in the environment.
+   When the **Bing Search** feature is turned on, it allows your copilot in Microsoft Copilot Studio to use the data sources you provided, but use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
 
-     Data movement that occurred while your environment was enabled to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
+   > [!Note]
+   > To select the **Bing Search** checkbox, the **Move data across regions** checkbox must be already selected.
+
+1. Select **Save**.
 
 ## Copilots and generative AI features that are available when you enable data movement across regions
 
@@ -91,7 +93,7 @@ More copilots and generative AI features will be available in the future.
 | AI Builder | AI Prompts | Yes | [Overview of Prompts](/ai-builder/prompts-overview) |
 
 
-## Copilot data movement across geographies for Dynamics 365
+## Data movement across regions for Dynamics 365
 
 Copilot and generative AI features of Power Platform and Dynamics 365 are supported differently in different regions.
 
