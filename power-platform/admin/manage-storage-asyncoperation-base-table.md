@@ -22,7 +22,7 @@ The **AsyncOperationBase** table is used to store System Jobs. System Jobs repre
 - **Background operations**
   - **bulk deletion jobs**, **bulk import**, and **rollup** operations 
 
- For a list of Async `Operation Types` see [OperationType Choices/Options](power-apps/developer/data-platform/reference/entities/asyncoperation#operationtype-choicesoptions). 
+ For a list of Async `Operation Types` see [OperationType Choices/Options](/power-apps/developer/data-platform/reference/entities/asyncoperation#operationtype-choicesoptions). 
   
 Once an event takes place and all immediate extensions are executed, the system then converts the context data for any async extensions into a structured format and stores this in an **AsyncOperation** record.
 
@@ -44,7 +44,7 @@ From 2021, the data portion of async operations moved from being stored in Datav
 
 If, your organization has heavy use of **workflows** or **plug-ins**, expect the **AsyncOperationBase** table to be one of the largest consumers of data capacity.
 
-If, the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plugins in the [appendix](/power-platform/admin/manage-storage-asyncoperation-base-table#appendix)). This results in all successfully completed jobs to get deleted as soon as they complete keeping size of the table in check. 
+If, the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plugins in the [appendix](/power-platform/admin/manage-storage-asyncoperation-base-table##appendix)). This results in all successfully completed jobs to get deleted as soon as they complete keeping size of the table in check. 
 
 Some common factors that contribute to the growth of the **AsyncOperationBase** table in Dynamics 365 include: 
 - **Heavy use of workflows or business process flows**: If an organization has heavy use of workflows or [business process flows](/power-automate/business-process-flows-overview) (BPF), the **AsyncOperationBase** table will grow over time and eventually become large enough to cause performance issues. 
@@ -72,7 +72,7 @@ Some common factors that contribute to the growth of the **AsyncOperationBase** 
 All environments are configured with out-of-box [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete successfully completed workflow System Jobs older than **30 days**. If acceptable to your business, to reduce additional capacity associated with **AsyncOperationBase** table, you can consider configuring worflow system jobs older than **7 days** to be deleted using [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs).
 
 ## Diagnostic queries (understand the state of the asyncoperation table data)  
-Use [Diagnostic queries]([/power-apps/developer/data-platform/asynchronous-service?tabs=sql#diagnostic-queries) to help diagnose problems jobs related to  **AsyncOperationBase**.
+Use [Diagnostic queries](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#diagnostic-queries) to help diagnose problems jobs related to  **AsyncOperationBase**.
 
 •	[Jobs by state, status, and type](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-by-state-status-and-type)
 
@@ -89,7 +89,7 @@ Use the following queries tp diagnose problems rleated to  **AsyncOperationBase*
 
 •	[AsyncOperations not in blob storage](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperations-not-in-blob-storage)
 
-•	[Find names of jobs using file storage](hpower-apps/developer/data-platform/asynchronous-service?tabs=sql#find-names-of-jobs-using-file-storage)
+•	[Find names of jobs using file storage](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#find-names-of-jobs-using-file-storage)
 
 •	[AsyncOperation file size and record count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperation-file-size-and-record-count)
 
@@ -119,7 +119,7 @@ Customers can configure other [**Bulk Delete Jobs**](/power-platform/admin/clean
 2. Select **Environments** in the left navigation pane, select your environment, select **Settings** on the top menu bar.
 3. Select **Data management** > **Bulk deletion**.
 
-:::image type="content" source="media/storage-bulk-delete-create-new-bulk-delete.png" alt-text="The Recurring Bulk Deletion System Jobs view." lightbox="media/storage-bulk-delete-create-new-bulk-delete.png" :::
+:::image type="content" source="media/storage-bulk-delete-create-new-bulk-delete.png" alt-text="Bulk Deletion System Jobs view." lightbox="media/storage-bulk-delete-create-new-bulk-delete.png" :::
  
 4. To bulk delete **AsyncOperationBase** records specify the following criteria on `System Jobs`.
 
@@ -129,7 +129,7 @@ Customers can configure other [**Bulk Delete Jobs**](/power-platform/admin/clean
    |**AND**    | **Completed On** | Older Than X Days  | **`7`**
    |**AND**     | **System Job Type** | Does Not Equal   | **`Bulk Email` `Import File Parse` `Workflow`** |
 
-:::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="The Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
+:::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
 
 5. To bulk delete **AsyncOperationBase** records specify the following criteria on `System Jobs`.
 
@@ -139,7 +139,7 @@ Customers can configure other [**Bulk Delete Jobs**](/power-platform/admin/clean
    |**AND**    | **Status** | Equals  | **`Completed`**
    |**AND**     | **System Job Type** |Equals   | **`Workflow`** |
 
-   :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-2.png" alt-text="The Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-2.png" :::
+   :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-2.png" alt-text="Bulk Deletion System Jobs Serach Criteria view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-2.png" :::
 
 6. Preview the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. 
 
