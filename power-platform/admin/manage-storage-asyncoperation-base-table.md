@@ -24,34 +24,35 @@ The **AsyncOperationBase** table is used to store system jobs. System jobs repre
 
 For a list of asynchronous *operation types*, see [OperationType Choices/Options](/power-apps/developer/data-platform/reference/entities/asyncoperation#operationtype-choicesoptions). 
   
-Once an event takes place and all immediate extensions are executed, the system then converts the context data for any async extensions into a structured format and stores this in an **AsyncOperation** record.
+Once an event takes place and all immediate extensions are executed, the system then converts the context data for any asynchronous extensions into a structured format and stores this in an **AsyncOperation** record.
 
-An example **asynchronous** registered **workflow** could be a process that automatically sends an email to a customer once their order is placed, and follows up with another email when the order is shipped. In such an **asynchronous** registered **workflow**, the platform saves the context of the asynchronous workflow as a record in the **AsyncOperationBase** table and a Process Log [WorkflowLog](/power-apps/developer/data-platform/reference/entities/workflowlog) is recorded in the `WorkflowLogBase` table to maintain logs for the workflow execution. 
+An example asynchronous, registered workflow could be a process that automatically sends an email to a customer once their order is placed, and follows up with another email when the order is shipped. In such an asynchronous, registered workflow, the platform saves the context of the asynchronous workflow as a record in the **AsyncOperationBase** table and a process log [WorkflowLog](/power-apps/developer/data-platform/reference/entities/workflowlog) is recorded in the **WorkflowLogBase** table to maintain logs for the workflow execution. 
 
-These records would include information such as:
+These records would include information, such as:
 - **ID** of the workflow
 - **ID** of the plugin triggering the workflow
 - **Status** of the workflow execution
 
-This table includes all default activity columns such as name, description, type, operation type, and many more.
+This table includes all default, activity columns such as name, description, type, operation type, and many more.
 
 For a full list of the columns in this table, see [System Job (AsyncOperation) table/entity reference](/power-apps/developer/data-platform/reference/entities/asyncoperation).
 
-From 2021, the data portion of async operations moved from being stored in Dataverse **Database** capacity to being stored in Dataverse **File** capacity, resulting in async operation data size being partially attributed to Dataverse **Database** capacity and partially to Dataverse **File** capacity. By moving to Dataverse **File** capacity, cost was reduced as Dataverse **File** capacity is charged at a lower rate than Dataverse **Database** capacity. Additionally, Dataverse **File** improves overall performance as queries against the Async Operation table are more performant.
+From 2021, the data portion of async operations moved from being stored in Dataverse *database* capacity to being stored in Dataverse *file* capacity. This results in async operations data size being partially attributed to Dataverse *database* capacity and partially to Dataverse *file* capacity. By moving to Dataverse *file* capacity, cost was reduced as Dataverse *file* capacity is charged at a lower rate than Dataverse *database* capacity. Additionally, Dataverse *file* capacity improves overall performance as queries against the **Async Operation** table are more performant.
 
-## Causes of Growth
-**AsyncOperationBase** table growth directly depends on the number of customizations that the customer's environment relies on. The more asynchronous **workflows** and **plugins** results in more records being stored in the **AsyncOperationBase** table to track execution of these operations. 
+## Causes of growth
+The **AsyncOperationBase** table growth directly depends on the number of customizations that the customer's environment relies on. The more asynchronous, workflows and plugins result in more records being stored in the **AsyncOperationBase** table to track execution of these operations. 
 
-If, your organization has heavy use of **workflows** or **plug-ins**, expect the **AsyncOperationBase** table to be one of the largest consumers of data capacity.
+If your organization has heavy use of workflows or plug-ins, expect the **AsyncOperationBase** table to be one of the largest consumers of data capacity.
 
-If, the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plugins in the [appendix](/power-platform/admin/manage-storage-asyncoperation-base-table#appendix)). This results in all successfully completed jobs to get deleted as soon as they complete keeping size of the table in check. 
+If the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plugins in the [Appendix](/power-platform/admin/manage-storage-asyncoperation-base-table#appendix)). This results in all successfully completed jobs being deleted as soon as they are complete, and keeping size of the table in check. 
 
 Some common factors that contribute to the growth of the **AsyncOperationBase** table in Dynamics 365 include: 
-- **Heavy use of workflows or business process flows**: If an organization has heavy use of workflows or [business process flows](/power-automate/business-process-flows-overview) (BPF), the **AsyncOperationBase** table will grow over time and eventually become large enough to cause performance issues. 
+
+- **Heavy use of workflows or business process flows**: If an organization has heavy use of workflows or [business process flows](/power-automate/business-process-flows-overview), the **AsyncOperationBase** table grows over time and eventually becomes large enough to cause performance issues. 
 - **Asynchronous plug-in registrations on large entities**: If there are asynchronous plug-in registrations on large entities, such as attachments, the data portion of async operations can grow quickly, leading to a large **AsyncOperationBase** table. 
 - **Size of the data portion of async operations**: The size of the data portion of async operations can also contribute to the growth of the **AsyncOperationBase** table.
 
-## Table Clean Up
+## Table clean-up
 
 >[!Note]
 > Due to the need to test these deletion actions first in a sandbox, to alleviate operational capacity pressure it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
