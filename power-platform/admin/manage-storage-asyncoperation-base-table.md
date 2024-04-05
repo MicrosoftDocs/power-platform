@@ -44,7 +44,7 @@ The **AsyncOperationBase** table growth directly depends on the number of custom
 
 If your organization has heavy use of workflows or plug-ins, expect the **AsyncOperationBase** table to be one of the largest consumers of data capacity.
 
-If the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plug-ins in the [Appendix](/power-platform/admin/manage-storage-asyncoperation-base-table#appendix)). This results in all successfully completed jobs being deleted as soon as they are complete, and keeping size of the table in check. 
+If the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plug-ins in the [appendix](#appendix)). This results in all successfully completed jobs being deleted as soon as they are complete, and keeping size of the table in check. 
 
 Some common factors that contribute to the growth of the **AsyncOperationBase** table in Dynamics 365 include: 
 
@@ -64,7 +64,7 @@ Some common factors that contribute to the growth of the **AsyncOperationBase** 
 >
 > **Before** proceeding with deleting any data in this table:
 >
-> **Review your customizations** on your workflows and [plug-ins running on delete operations](/power-platform/admin/manage-storage-asyncoperation-base-table#set-option-to-delete-successfully-completed-asynchronous-plugin-jobs)
+> **Review your customizations** on your workflows and [plug-ins running on delete operations](#set-option-to-delete-successfully-completed-asynchronous-plugin-jobs)
 >
 > **Review cascade delete behaviors** to make sure that no data gets unintendedly deleted in the process. 
 >
