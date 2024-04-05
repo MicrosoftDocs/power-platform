@@ -1,16 +1,17 @@
 ---
 title: "About the Power Apps Developer Plan"
 description: "Details about the Power Apps Developer Plan"
-author: leeclontz
+author: MKBajwa-PM
 ms.subservice: developer
-ms.author: leeclontz
-ms.date: 12/04/2023
-ms.reviewer: leeclontz
+ms.author: mbajwa
+ms.date: 04/05/2024
+ms.reviewer: jdaly
 ms.topic: article
 contributors:
  - mattp123
  - JimDaly
- - phecke 
+ - phecke
+ - leeclontz
 ---
 # About the Power Apps Developer Plan
 
