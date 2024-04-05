@@ -7,13 +7,13 @@ contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/15/2023
+ms.date: 03/25/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Get started using the Appointment Booking template for Power Platform
+# Get started using the Appointment Booking app
 
 There are several kinds of users who interact with the Appointment Booking app in some way:
 
