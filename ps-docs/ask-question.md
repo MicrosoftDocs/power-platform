@@ -35,7 +35,7 @@ You'll get an AI-powered blueprint in response to your question including an ove
 
 ## Ask questions about your data
 
-You can upload a data file and ask questions about the data. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf. You can also connect to data sources from Dynamics 365 Sales and Salesforce. In future releases, you'll be able to connect to more data sources.
+One of the many benefits of Project Sophia is that you can connect to your business data; currently Dynamics 365 Sales and Salesforce. Additinoally, you can further enrich the analysis by uploading data files. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf.
 
 1. Use one of the following options to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
@@ -71,22 +71,23 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
 > [!IMPORTANT]
 > You need to have account to establish a connection with either Dynamics 365 or Salesforce.
 
-You can connect to your customer data from Dynamics 365 Sales or Salesforce. We are working to improve and expand our data integration abilities and sources. Current limitations in data integration:
-
-- You only have access to specific set of core tables, such as contacts, opportunities, leads, accounts, sales orders, and incidents or cases.
-- The data is analyzed only at the time of connection and doesn’t refresh. 
-- The data is limited to the first 2000 rows (based on the default order of the table) and a maximum of 100 columns for each table.
-- You can only connect to one external data source, either Dynamics 365 or Salesforce, at any given time. This means that if you choose to connect to Dynamics 365, you won't be able to connect to Salesforce simultaneously. 
-  However, you can still upload files regardless of the external connection.
+You can connect to your business data from Dynamics 365 Sales or Salesforce, which enables you to do rich analysis across your business data estate.
 
 For Dynamics 365 Sales connection:
-
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
 - If you have access to multiple instances, you are prompted to choose one.
 - If an instance isn't found, then the option to connect to **Dynamics 365** won't be available.
 
 For Salesforce connection:
-- You can create a connection, or reuse an existing connection using the PowerPlatform environments available to the currently logged in user
+- You can create a connection, or reuse an existing connection available to the currently logged in user
+- If connecting to Salesforce is disabled, then the option to connect to Salesforce won't be available. Please contact your admin to enable it in Power Platform.
+
+Current limitations in data integration:
+- We currently support contacts, opportunities, leads, accounts, sales orders, and cases.
+- The data is fetched at the time of connection. 
+- By default we include the first 2000 rows (based on the default order of the table) and a maximum of 100 columns for each table.
+- You can connect to either Dynamics 365 or Salesforce in a workspace. This means that if you choose to connect to Dynamics 365, you won't be able to connect to Salesforce simultaneously. 
+- You can upload files for additional context in addition to connecting to a data source.
 
 
 ### Work with content
