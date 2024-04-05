@@ -122,7 +122,7 @@ Yes, you can use the Power Automate Hosted RPA add-on capacity in two ways:
 
 Yes. Microsoft 365 customers can create solution-aware flows if the environment in which they create the solution-aware flow has a Dataverse database attached to it. The default environment gets a Dataverse database by default. The admin must attach a Dataverse instance to non-default environments. Admins need at least a 1 GB tenant level Dataverse database capacity available to create a new environment.
 
-The first subscription of Power Apps, Power Automate, Power Virtual Agents, Dynamics 365 Sales, Customer Service, and Field Service adds a one-time default capacity limit of 10 GB for the tenant. When you add subscriptions to the tenant, additional Dataverse capacity may accrue to the tenant. For example, if a new customer purchases a Power Automate premium plan, the tenant receives 10 GB of default Dataverse database capacity. And if the tenant buys 10 Power Automate Premium licenses, the tenant gets 10.5 GB (10 GB plus 10 times 50 MB).
+The first subscription of Power Apps, Power Automate, Microsoft Copilot Studio, Dynamics 365 Sales, Customer Service, and Field Service adds a one-time default capacity limit of 10 GB for the tenant. When you add subscriptions to the tenant, additional Dataverse capacity may accrue to the tenant. For example, if a new customer purchases a Power Automate premium plan, the tenant receives 10 GB of default Dataverse database capacity. And if the tenant buys 10 Power Automate Premium licenses, the tenant gets 10.5 GB (10 GB plus 10 times 50 MB).
 
 ### I use multiple user connections in my premium flow. Which user needs a Premium license to run the flow?
 
@@ -403,7 +403,7 @@ To learn more, go to [Associate in context flows to an app](/power-platform/admi
 
 ## Multiplexing
 
-Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and the Power Virtual Agents service. 
+Multiplexing refers to the use of hardware or software that a customer uses to pool connections, reroute information, or reduce the number of users that directly access or use the Power Apps, Power Automate, and Microsoft Copilot Studio. 
 
 ### Is it recommended to use multiplexing to reduce the number of licenses?
 

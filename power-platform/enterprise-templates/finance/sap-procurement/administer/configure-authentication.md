@@ -15,13 +15,13 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/19/2024
+ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Configure authentication for SAP Procurement solution
+# Configure authentication for SAP Procurement solutions
 
 The [SAP ERP connector](/connectors/saperp/) is designed so multiple people can access and use an application at once; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
 
@@ -131,24 +131,18 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 
 ## Related content
 
-[SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
+- [SAP Single Sign-On](<https://help.sap.com/docs/SAP_SINGLE_SIGN-ON>
+- [Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
+- [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
+- [SAP ERP connector](/connectors/saperp/)
+- [Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
+- [Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
+- [Hybrid architecture design](/azure/architecture/hybrid/hybrid-start-here)
 
-[Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
+### Next step
 
-[SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
+[Install the SAP Procurement template](install.md)
 
-[SAP ERP connector](/connectors/saperp/)
-
-[Azure Logic Apps SAP connector](/azure/logic-apps/logic-apps-using-sap-connector)
-
-[Data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention)
-
-[Hybrid architecture design](/azure/architecture/hybrid/hybrid-start-here)
-
-## Next steps
-
-[Install solutions](install.md)
-
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)
