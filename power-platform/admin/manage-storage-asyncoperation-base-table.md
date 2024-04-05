@@ -64,7 +64,7 @@ Some common factors that contribute to the growth of the **AsyncOperationBase** 
 >
 > **Before** proceeding with deleting any data in this table:
 >
-> **Review your customizations** on your workflows and [plug-ins running on delete operations](#set-option-to-delete-successfully-completed-asynchronous-plugin-jobs)
+> **Review your customizations** on your workflows and [plug-ins running on delete operations](#set-option-to-delete-successfully-completed-asynchronous-plug-in-jobs)
 >
 > **Review cascade delete behaviors** to make sure that no data gets unintendedly deleted in the process. 
 >
@@ -163,11 +163,11 @@ Always start with a narrow condition that limits deleted records (**older than 3
 For more information on how to configure bulk delete jobs for **AsyncOperationBase** table, see [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table).
 
 ## Appendix
-### **Set option to delete successfully completed asynchronous workflow jobs**
+### Set option to delete successfully completed asynchronous workflow jobs
 
 :::image type="content" source="media/storage-data-WorkflowJobRetentionSetting.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs." lightbox="media/storage-data-WorkflowJobRetentionSetting.png":::
  
-### **Set option to delete successfully completed asynchronous plug-in jobs**
+### Set option to delete successfully completed asynchronous plug-in jobs
 1. [Install Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli)
 2. [Download and launch Plug-in Registration Tool](/power-apps/developer/data-platform/download-tools-nuget#download-and-launch-tools-using-power-platform-cli)
 3. For custom **Plug-ins**, select **Register New Step**, in Event Pipeline Stage of Execution select **Post Operation**, Execution Mode **Asynchronous**, select **Delete AsyncOperation if Status Code = Successful**
