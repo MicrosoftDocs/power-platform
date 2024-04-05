@@ -135,9 +135,12 @@ expires, you can purchase a plan. If you're already using Power Apps with Office
 No, we currently don't support signing up with a personal account. You can only sign up with your [work or school
 account](/power-apps/maker/signup-for-powerapps#faq).
 
-### Which kind of license will I need to get Developer Environment? 
+### Which kind of license do I need to get Developer Environment?
 
-A: You will need a Power Apps Developer plan to get a developer environment. This Developer plan is a viral/internal license which needs to unblocked by your admin so that it can be assigned in the tenant. License will be assigned and verified during signup. The tenant must allow for viral or internal for developer environment to be provisioned, and how they can verify if the respective policy is already allowed and modify refer to: Get-AllowedConsentPlans (Microsoft.PowerApps.Administration.PowerShell) | Microsoft Learn , Add-AllowedConsentPlans (Microsoft.PowerApps.Administration.PowerShell) | Microsoft Learn
+You need a Power Apps Developer plan to get a developer environment. This Developer plan is a viral/internal license that your admin needs to enable so that it can be assigned in the tenant. The license is assigned and verified during signup. The tenant must allow for viral or internal licenses for developer environment to be provisioned.
+
+- To verify if the respective policy is already allowed, use the [Get-AllowedConsentPlans (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/get-allowedconsentplans) PowerShell cmdlet.
+- To modify the policy, use the [Add-AllowedConsentPlans (Microsoft.PowerApps.Administration.PowerShell)](/powershell/module/microsoft.powerapps.administration.powershell/add-allowedconsentplans) PowerShell cmdlet.
 
 
 ### Can I reset or delete my developer environment?
