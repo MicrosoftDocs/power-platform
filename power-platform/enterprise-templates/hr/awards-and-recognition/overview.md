@@ -13,11 +13,11 @@ ms.subservice: solution-templates
 
 # Awards and Recognition template for Power Platform
 
-The Awards and Recognition template enables organizations to easily facilitate an employee awards program.
+The Awards and Recognition template makes it easy to set up and facilitate an employee awards program.
 
-Employees use the app to nominate co-workers and teams and to track their own recognitions.
+Employees use a canvas app to nominate coworkers and teams and to track their own recognitions.
 
-Program admins have the ability to define nomination periods and the available awards (types of recognition) in those periods. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. At the close of a nomination period, a program admin can review all the nominations and approve or decline them.
+Program admins manage the awards program in the admin model-driven app. They have the ability to define nomination periods and the available awards (types of recognition) in those periods. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. At the close of a nomination period, a program admin can review all the nominations and approve or decline them.
 
 :::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition." lightbox="media/overview/ar-four-screens.png":::
 

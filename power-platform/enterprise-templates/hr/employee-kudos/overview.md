@@ -5,14 +5,14 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/26/2023
+ms.date: 04/05/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 # Employee Kudos template for Power Platform
 
-Employees can recognize others for attributes or actions they are grateful for by sending Kudos to their teammates—offering peer-to-peer recognition.
+The Employee Kudos template makes it easy to set up and facilitate a peer-to-peer recognition program within your organization. The Kudos canvas app allows employees to recognize coworkers for attributes or actions they are grateful for by sending Kudos to them.
 
 :::image type="content" source="media/overview/kudos-screens-small.png" alt-text="Screenshots of Employee Kudos." lightbox="media/overview/kudos-screens-large.png":::
 

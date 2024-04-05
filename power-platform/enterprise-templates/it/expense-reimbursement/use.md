@@ -48,4 +48,4 @@ Take these steps to add an image of the expense receipt and update any file info
     1. Amount
     1. Description
 1. Select **Done** to complete the _Add expense_ step.
-1. Select **Submit**. This triggers the _New Request for Refund Notification flow that sends an email to the approver and to you stating that the expense reimbursement request has been submitted and is ready for review.
+1. Select **Submit**. This triggers the _New Request for Refund Notification_ flow that sends an email to the approver and to you stating that the expense reimbursement request has been submitted and is ready for review.

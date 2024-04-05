@@ -7,7 +7,7 @@ contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/06/2023
+ms.date: 04/04/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -81,7 +81,7 @@ The workflow for the request process begins with the important decision to appro
 Follow these steps to get started reviewing and approving a request that requires a purchase directly in the Hardware Management app.
 
 1. In *Requests* > Requests view list of "Open Requests" (Note: the default sort is by "Submitted On" date (descending) with the newest requests on top).
-1. Select a request for review and click on the Request Name hyperlink for the row
+1. Select a request for review and select the Request Name hyperlink for the row
 
     :::image type="content" source="media/use/hrm-use-management-po.png" alt-text="Screenshot of managing a request that requires a PO in the Hardware Management app .":::
 
