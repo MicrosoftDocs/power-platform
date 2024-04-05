@@ -55,10 +55,10 @@ Some common factors that contribute to the growth of the **AsyncOperationBase** 
 ## Table clean-up
 
 >[!Note]
-> Due to the need to test these deletion actions first in a sandbox, to alleviate operational capacity pressure it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
+> Due to the need to test these deletion actions first in a sandbox environment, to alleviate operational capacity pressure, it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
 
 > [!WARNING]
-> To reduce the capacity consumption of **AsyncOperationBase** table involves deleting custom metadata related to async jobs. **Important**: When AsyncOperation entities are deleted the corresponding **files records are also deleted**. 
+> To reduce the capacity consumption of the **AsyncOperationBase** table, delete custom metadata related to async jobs. When AsyncOperation entities are deleted, the corresponding files records are also deleted. 
 >
 > Following deletion, these records **will not be available anymore**. **Proceed with caution when performing bulk delete operations**.
 >
