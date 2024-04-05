@@ -29,7 +29,7 @@ When content is generated, follow these steps to use the AI cursor:
 
 > [!TIP]
 > - **Update an existing block**: If you experience unexpected results, you can ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. When you press **Enter** it generates a new blueprint instead of updating an existing block on the current blueprint.
-> - **Add data**: You can add additional data to an existing workspace using the AI cursor. You can add more data by [uploading files](ask-question.md#supported-data-files) or [use data from Dynamics 365 or Salesforce](ask-question.md#use-data-from-dynamics-365-or-salesforce) such as Dynamics 365 and Salesforce.
+> - **Add data**: You can add additional data to an existing workspace using the AI cursor. You can add more data by [uploading files](ask-question.md#supported-data-files) or [use data from Dynamics 365 or Salesforce](ask-question.md#use-data-from-dynamics-365-or-salesforce).
    
    > [!div class="mx-imgBorder"]
    > ![Use the AI cursor.](media/ai-cursor.png)
