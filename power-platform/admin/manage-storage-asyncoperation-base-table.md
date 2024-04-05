@@ -17,12 +17,12 @@ search.audienceType:
 
 # AsyncOperationBase table
 
-The **AsyncOperationBase** table is used to store System Jobs. System Jobs represent asynchronous extensions such as:
-- **Asynchronous** registered **workflows** and **plugins**
-- **Background operations**
-  - **bulk deletion jobs**, **bulk import**, and **rollup** operations 
+The **AsyncOperationBase** table is used to store system jobs. System jobs represent asynchronous extensions, such as:
 
- For a list of Async `Operation Types` see [OperationType Choices/Options](/power-apps/developer/data-platform/reference/entities/asyncoperation#operationtype-choicesoptions). 
+- Asynchronous, registered workflows and plugins.
+- Background operations, such as bulk, deletion jobs, bulk import, and rollup operations. 
+
+For a list of asynchronous *operation types*, see [OperationType Choices/Options](/power-apps/developer/data-platform/reference/entities/asyncoperation#operationtype-choicesoptions). 
   
 Once an event takes place and all immediate extensions are executed, the system then converts the context data for any async extensions into a structured format and stores this in an **AsyncOperation** record.
 
