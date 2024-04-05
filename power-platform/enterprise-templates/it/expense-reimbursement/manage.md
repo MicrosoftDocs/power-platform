@@ -108,3 +108,6 @@ Take these steps to view errors:
 1. Under _Administration_, select **Errors**.
 1. Select an item in the _Name_ column to view the error details.
 
+### Next step
+
+[Use the Expense Reimbursement app](use.md)

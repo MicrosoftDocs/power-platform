@@ -25,7 +25,7 @@ The Awards and Recognition template is available in [Microsoft AppSource](<https
 
 - **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
 
-- **Awards and Recognition** contains all the components needed to enable the Awards & Recognition experience in your organization.
+- **Awards and Recognition** contains all the components necessary to enable the Awards & Recognition experience in your organization.
 
 ## Employee Experience base solution components
 

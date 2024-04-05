@@ -43,9 +43,9 @@ The *IT Base* solution contains various components that allow an admin to set up
 
 ## Appointment Booking solution components
 
-- **One canvas app**: **Appointment Booking app** is where users manage appointment slots and bookings
+- **Appointment Booking app** is the canvas app where users manage appointment slots and bookings
 
-- **One model-driven app**: **Appointment Booking Administrator** is where an admin can manage all data
+- **Appointment Booking Administrator** is the model-driven app where an admin can manage all data
 
 - **Seven tables**:
 
