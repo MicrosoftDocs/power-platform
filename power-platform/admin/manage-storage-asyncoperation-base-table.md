@@ -19,7 +19,7 @@ search.audienceType:
 
 The **AsyncOperationBase** table is used to store system jobs. System jobs represent asynchronous extensions, such as:
 
-- Asynchronous, registered workflows and plugins.
+- Asynchronous, registered workflows and plug-ins.
 - Background operations, such as bulk, deletion jobs, bulk import, and rollup operations. 
 
 For a list of asynchronous *operation types*, see [OperationType Choices/Options](/power-apps/developer/data-platform/reference/entities/asyncoperation#operationtype-choicesoptions). 
@@ -30,7 +30,7 @@ An example asynchronous, registered workflow could be a process that automatical
 
 These records would include information, such as:
 - **ID** of the workflow
-- **ID** of the plugin triggering the workflow
+- **ID** of the plug-in triggering the workflow
 - **Status** of the workflow execution
 
 This table includes all default, activity columns such as name, description, type, operation type, and many more.
@@ -40,11 +40,11 @@ For a full list of the columns in this table, see [System Job (AsyncOperation) t
 From 2021, the data portion of async operations moved from being stored in Dataverse *database* capacity to being stored in Dataverse *file* capacity. This results in async operations data size being partially attributed to Dataverse *database* capacity and partially to Dataverse *file* capacity. By moving to Dataverse *file* capacity, cost was reduced as Dataverse *file* capacity is charged at a lower rate than Dataverse *database* capacity. Additionally, Dataverse *file* capacity improves overall performance as queries against the **Async Operation** table are more performant.
 
 ## Causes of growth
-The **AsyncOperationBase** table growth directly depends on the number of customizations that the customer's environment relies on. The more asynchronous, workflows and plugins result in more records being stored in the **AsyncOperationBase** table to track execution of these operations. 
+The **AsyncOperationBase** table growth directly depends on the number of customizations that the customer's environment relies on. The more asynchronous, workflows and plug-ins result in more records being stored in the **AsyncOperationBase** table to track execution of these operations. 
 
 If your organization has heavy use of workflows or plug-ins, expect the **AsyncOperationBase** table to be one of the largest consumers of data capacity.
 
-If the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plugins in the [Appendix](/power-platform/admin/manage-storage-asyncoperation-base-table#appendix)). This results in all successfully completed jobs being deleted as soon as they are complete, and keeping size of the table in check. 
+If the size of **AsyncOperationBase** continues to grow over time, verify that the automatic deletion option on asynchronous registrations is set (see how to set this option for workflows and plug-ins in the [Appendix](/power-platform/admin/manage-storage-asyncoperation-base-table#appendix)). This results in all successfully completed jobs being deleted as soon as they are complete, and keeping size of the table in check. 
 
 Some common factors that contribute to the growth of the **AsyncOperationBase** table in Dynamics 365 include: 
 
@@ -64,7 +64,7 @@ Some common factors that contribute to the growth of the **AsyncOperationBase** 
 >
 > **Before** proceeding with deleting any data in this table:
 >
-> **Review your customizations** on your workflows and [plugins running on delete operations](/power-platform/admin/manage-storage-asyncoperation-base-table#set-option-to-delete-successfully-completed-asynchronous-plugin-jobs)
+> **Review your customizations** on your workflows and [plug-ins running on delete operations](/power-platform/admin/manage-storage-asyncoperation-base-table#set-option-to-delete-successfully-completed-asynchronous-plugin-jobs)
 >
 > **Review cascade delete behaviors** to make sure that no data gets unintendedly deleted in the process. 
 >
@@ -167,10 +167,10 @@ For more information on how to configure bulk delete jobs for **AsyncOperationBa
 
 :::image type="content" source="media/storage-data-WorkflowJobRetentionSetting.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs." lightbox="media/storage-data-WorkflowJobRetentionSetting.png":::
  
-### **Set option to delete successfully completed asynchronous plugin jobs**
+### **Set option to delete successfully completed asynchronous plug-in jobs**
 1. [Install Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli)
-2. [Download and launch Plugin Registration Tool](/power-apps/developer/data-platform/download-tools-nuget#download-and-launch-tools-using-power-platform-cli)
-3. For custom **Plugins**, select **Register New Step**, in Event Pipeline Stage of Execution select **Post Operation**, Execution Mode **Asynchronous**, select **Delete AsyncOperation if Status Code = Successful**
+2. [Download and launch Plug-in Registration Tool](/power-apps/developer/data-platform/download-tools-nuget#download-and-launch-tools-using-power-platform-cli)
+3. For custom **Plug-ins**, select **Register New Step**, in Event Pipeline Stage of Execution select **Post Operation**, Execution Mode **Asynchronous**, select **Delete AsyncOperation if Status Code = Successful**
 
 :::image type="content" source="media/plugin-registration-tool-delete-asyncoperation-option.png" alt-text="Set Delete AsyncOperation if Status Code = Successful" lightbox="media/plugin-registration-tool-delete-asyncoperation-option.png":::
  
