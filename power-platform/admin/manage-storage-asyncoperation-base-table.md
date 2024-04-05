@@ -1,13 +1,13 @@
 ---
-title: "AsyncOperationBase table storage  | MicrosoftDocs"
-description: Information about managing AsyncOperationBase table storage.
+title: AsyncOperationBase table storage 
+description: Learn about managing AsyncOperationBase table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/29/2024
+ms.date: 04/05/2024
 ms.subservice: admin
 ms.author: ceian
-ms.reviewer: 
+ms.reviewer: sericks
 contributors:
 - shilpr
 - sarmathi
