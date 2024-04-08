@@ -54,66 +54,63 @@ Some common factors that contribute to the growth of the **AsyncOperationBase** 
 
 ## Table clean-up
 
->[!Note]
-> Due to the need to test these deletion actions first in a sandbox environment, to alleviate operational capacity pressure, it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] instead of reducing the amount of storage space used.  
+Due to the need to test these deletion actions first in a sandbox environment, to alleviate operational capacity pressure, it may make more sense for you to increase the amount of storage space you have with your [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)], instead of reducing the amount of storage space used.  
 
 > [!WARNING]
 > To reduce the capacity consumption of the **AsyncOperationBase** table, delete custom metadata related to async jobs. When AsyncOperation entities are deleted, the corresponding files records are also deleted. 
 >
-> Following deletion, these records **will not be available anymore**. **Proceed with caution when performing bulk delete operations**.
+> Following deletion, these records aren't available. Proceed with caution when performing bulk delete operations.
 >
-> **Before** proceeding with deleting any data in this table:
+> Before you delete any data in this table:
 >
-> **Review your customizations** on your workflows and [plug-ins running on delete operations](#set-option-to-delete-successfully-completed-asynchronous-plug-in-jobs)
+> - **Review your customizations** on your workflows and [plug-ins running on delete operations](#set-option-to-delete-successfully-completed-asynchronous-plug-in-jobs).
 >
-> **Review cascade delete behaviors** to make sure that no data gets unintendedly deleted in the process. 
+> - **Review cascade delete behaviors** to make sure that no data gets unintendedly deleted in the process. 
 >
-> First **test these actions in a sandbox environment** before proceeding with the final delete operation. 
+> - **Test these actions in a sandbox environment** before proceeding with the final delete operation. 
 
-All environments are configured with out-of-box [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete successfully completed workflow System Jobs older than **30 days**. If acceptable to your business, to reduce additional capacity associated with **AsyncOperationBase** table, you can consider configuring worflow system jobs older than **7 days** to be deleted using [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs).
+All environments are configured with out-of-box [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete successfully completed workflow system jobs that're older than **30 days**. If acceptable to your business, to reduce additional capacity associated with the **AsyncOperationBase** table, consider configuring worflow system jobs older than **7 days** to be deleted using [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs).
 
 ## Diagnostic queries (understand the state of the asyncoperation table data)  
-Use [Diagnostic queries](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#diagnostic-queries) to help diagnose problems jobs related to  **AsyncOperationBase**.
+Use [Diagnostic queries](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#diagnostic-queries) to help diagnose problems jobs related to **AsyncOperationBase**.
 
-•	[Jobs by state, status, and type](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-by-state-status-and-type)
+-	[Jobs by state, status, and type](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-by-state-status-and-type)
 
-•	[Top system jobs that are in suspended state by count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#top-system-jobs-that-are-in-suspended-state-by-count)
+-	[Top system jobs that are in suspended state by count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#top-system-jobs-that-are-in-suspended-state-by-count)
 
-•	[Workflows by count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#workflows-by-count)
+-	[Workflows by count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#workflows-by-count)
 
-•	[Jobs waiting for system resources to become available](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-waiting-for-system-resources-to-become-available)
+-	[Jobs waiting for system resources to become available](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-waiting-for-system-resources-to-become-available)
 
+Use the following queries to diagnose problems rleated to  **AsyncOperationBase** file storage.
 
-Use the following queries tp diagnose problems rleated to  **AsyncOperationBase** File storage.
+-	[AsyncOperation file storage datablobid count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperation-file-storage-datablobid-count)
 
-•	[AsyncOperation file storage datablobid count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperation-file-storage-datablobid-count)
+-	[AsyncOperations not in blob storage](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperations-not-in-blob-storage)
 
-•	[AsyncOperations not in blob storage](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperations-not-in-blob-storage)
+-	[Find names of jobs using file storage](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#find-names-of-jobs-using-file-storage)
 
-•	[Find names of jobs using file storage](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#find-names-of-jobs-using-file-storage)
+-	[AsyncOperation file size and record count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperation-file-size-and-record-count)
 
-•	[AsyncOperation file size and record count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperation-file-size-and-record-count)
-
-## System Job Status
+## System job status
 
 :::image type="content" source="media/storage-data-system-jobs.png" alt-text="System Job Status view" lightbox="media/storage-data-system-jobs.png":::
 
-- **Completed** - The job no longer executes any step, and providing 3 possible Status Reasons:   
-  - **Succeeded** - The job did what was expected
-  - **Failed** - There was a failure while processing the job 
-  - **Canceled** - The job won't be executed 
-- **Running** - The job is being processed/executed or an action is taking place and there are 3 possible status reason values: 
-  - **In Progress** - The job is currently executing 
-  - **Pausing** - A Pause operation was triggered 
-  - **Cancelling** - Administrator triggered the cancel option
+- **Completed** - The job no longer executes any step, and providing three possible status eeasons:   
+  - **Succeeded** - The job did what was expected.
+  - **Failed** - There was a failure while processing the job. 
+  - **Canceled** - The job won't be executed.
+- **Running** - The job is being processed or executed or an action is taking place and there are three possible status reason values: 
+  - **In Progress** - The job is currently executing. 
+  - **Pausing** - A pause operation was triggered. 
+  - **Cancelling** - Administrator triggered the cancel option.
 - **Pending:** - When the system job has not met the conditions to be automatically triggered, or there was a failure evaluating the conditions. There are two status reasons on the pending scenario:  
   - **Waiting** 
   - **Waiting for Resources**   
 
 **Jobs that are running or pending should not be automatically cleaned**, instead a manual action to cancel should be triggered. 
  
-Customers can configure other [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete **AsyncOperationBase** records. 
-
+Customers can configure other [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete **AsyncOperationBase** records. 
 
 ## Setup [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
