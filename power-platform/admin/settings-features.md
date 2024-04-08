@@ -51,7 +51,7 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 ## AI form fill assistance
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable the feature for  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
+|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
 
 ## AI suggestions for formula columns
 
