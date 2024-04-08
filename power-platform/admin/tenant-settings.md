@@ -3,7 +3,7 @@ title: "Tenant settings"
 description: "Review and configure tenant-level settings linked from this page." 
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 03/27/2024
+ms.date: 04/03/2024
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:
@@ -40,7 +40,7 @@ The following settings apply to all environments within your tenant.
 |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md)   | Enable Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems.<br/>By default, this setting is disabled.       |
 | Catalog Assignments  | This setting is reserved for future use. No enforcement is driven by this setting at the current time.       |
 | Copilot feedback data | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. |
-| Support requests visibility | Allows all users in the tenant to see support requests created by other users in the tenant. |
+| Support requests visibility | Allows users, who already have access to the **Help + Support** page in the Power Platform admin center, to see support requests created by other users in the tenant.  |
 
 *This setting applies only to Managed Environments.
 
