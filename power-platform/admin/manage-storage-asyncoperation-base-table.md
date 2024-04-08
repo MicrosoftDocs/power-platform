@@ -112,9 +112,9 @@ Use the following queries to diagnose problems rleated to  **AsyncOperationBase*
  
 Customers can configure other [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete **AsyncOperationBase** records. 
 
-## Setup [**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
+## Setup [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-2. Select **Environments** in the left navigation pane, select your environment, select **Settings** on the top menu bar.
+2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
 3. Select **Data management** > **Bulk deletion**.
 
 :::image type="content" source="media/storage-bulk-delete-create-new-bulk-delete.png" alt-text="Bulk Deletion System Jobs view." lightbox="media/storage-bulk-delete-create-new-bulk-delete.png" :::
