@@ -24,6 +24,7 @@ Managed Environments is a suite of premium capabilities that allows admins to ma
 
 A Managed Environment encompasses, but is not limited to, the following features: 
 
+- [Environment groups](environment-groups.md)
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Weekly usage insights](managed-environment-usage-insights.md)
 - [Data policies](managed-environment-data-policies.md)
@@ -40,7 +41,6 @@ A Managed Environment encompasses, but is not limited to, the following features
 - [Catalog in Power Platform](../developer/catalog.md)
 - [Default environment routing](default-environment-routing.md)
 - [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
-- [Environment groups](environment-groups.md)
   
 
 > [!NOTE]
