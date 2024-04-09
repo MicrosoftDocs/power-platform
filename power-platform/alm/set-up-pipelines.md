@@ -191,9 +191,9 @@ From the **Pipelines** page within any solution, the **Manage pipelines** button
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
 
-#### Disassociating environments from one host and associating them with another host
+#### Manually disassociating environments from one host and associating them with another host
 
-1. From the Power Apps (make.powerapps.com), begin in an environment that you want to disassociate, and select **Solutions**.
+1. From Power Apps (make.powerapps.com), begin in an environment that you want to disassociate, and select **Solutions**.
 1. Choose any solution that you have access to, and select into it.
 1. Navigate to the **Pipelines** page from the left navigation pane, and then select **Manage pipelines** on the command bar. If you're beginning with a custom host, you can also go directly to the dedicated host environment and run the **Deployment Pipeline Configuration** app from there.
 1. Now that you are in the **Deployment Pipeline Configuration** app, navigate to **Environments** from the left navigation pane.
@@ -204,6 +204,16 @@ The Deployment Pipeline Configuration app can be accessed by anyone with the Dep
 1. Create the environment record by assigning a name, type, environment ID, and optional description.
 
 Now you're able to link the environments to pipelines in the new host.
+
+#### Using Force Link to associate an environment with a new host
+
+In the Deployment Pipeline Configuration app, you may encounter an error message indicating "this environment is already associated with another pipelines host" after creating an environment record. To take over the association, resulting in delinking the environment in the previous host and a successful link to the new host, select **Force Link** in the command bar.
+
+> [!IMPORTANT]
+> - If performing this action on a development (source) environment, makers will lose access to any pipelines in the previous host that were accessible within that environment.
+> - This action can be undone by performing a Force Link in the previous host.
+> - The environment record in the previous host will have a stale validation status until it is updated, so it will show as "Succeeded" unless it is updated.
+
 
 ## Frequently asked questions
 
@@ -216,7 +226,7 @@ Now you're able to link the environments to pipelines in the new host.
 
 ### Why am I seeing an error that states "this environment is already associated with another pipelines host?"
 
-This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to this section: [Disassociating environments from one host and associating them with another host](#disassociating-environments-from-one-host-and-associating-them-with-another-host).
+This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to this section: [Disassociating environments from one host and associating them with another host](#manually-disassociating-environments-from-one-host-and-associating-them-with-another-host).
 
 ### Do the pipelines and data within the platform host count towards my Dataverse capacity?
 
