@@ -2,12 +2,14 @@
 title: ALM Accelerator for Power Platform
 description: Learn how the ALM Accelerator for Power Platform helps you to follow ALM practices and enables you to establish source control for your solutions and move them from your development environment to test and production environments using Azure DevOps.
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 04/09/2024
 ms.subservice: guidance
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
 ms.custom: bap-template
+contributors:
+- mikefactorial
 ---
 
 # ALM Accelerator for Power Platform
