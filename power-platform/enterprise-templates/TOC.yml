@@ -88,13 +88,13 @@
   - name: Expense Reimbursement
     items:
     - name: Overview
-      href: it/expense-reimbursement/overview.md
+      href: hr/expense-reimbursement/overview.md
     - name: Install and set up
-      href: it/expense-reimbursement/install-and-set-up.md
+      href: hr/expense-reimbursement/install-and-set-up.md
     - name: Manage
-      href: it/expense-reimbursement/manage.md
+      href: hr/expense-reimbursement/manage.md
     - name: Use
-      href: it/expense-reimbursement/use.md
+      href: hr/expense-reimbursement/use.md
 - name: Information Technology
   items:
   - name: Hardware Request and Management
