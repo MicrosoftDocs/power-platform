@@ -236,9 +236,15 @@ However, capacity does apply to a custom host, which isn't an implementation in 
 
 ### What if I want to enable makers to create personal pipelines in a custom host? Can I do that?
 
-Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant lightweight pipeline creation permissions to. 
+Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant lightweight pipeline creation permissions to. Admins can also add users to the **Deployment Pipeline Maker** team in the **Security Teams** page in the Deployment Pipeline Configuration app to achieve this.
 
 This Deployment Pipelines Default role isn't assigned to anyone by default in the case of custom host, so the lightweight personal pipeline creation experience is only visible by default in environments that aren't already associated with a custom host.
+
+### Why am I not seeing the latest features for pipelines?
+
+Our pipelines package is always being updated to give you the latest and greatest for your ALM processes. Ensure that you have the latest Power Platform Pipelines package in your custom host by navigating to the [Power Platform Admin Center](https://admin.powerplatform.com), selecting your pipelines host environment, clicking **Dynamics 365 apps**, and locating **Power Platform Pipelines** to check if there's an update available.
+
+For platform hosts, the pipelines package is updated automatically, and may not be available as soon as the manual package update is made available for custom hosts.
 
 ## Next steps
 
