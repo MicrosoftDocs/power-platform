@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 04/02/2023
+ms.date: 04/05/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -47,7 +47,6 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 >
 > Power Apps use rights included with Microsoft 365 and Office 365 licenses will not suffice to install the template.
 
-
 > [!TIP]
 > A free Developer Plan is a great way to install the template for evaluation purposes. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
 
@@ -85,21 +84,21 @@ The installation requires you to set up four new connections for the Appointment
 
 To create the connections in advance, take these steps:
 
-1. Go to [Power Apps](https://make.preview.powerapps.com/)
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these Microsoft connectors:
 
     - [Dataverse](/connectors/commondataserviceforapps/)
     - [Office 365 Outlook](/connectors/office365/)
     - [Teams](/connectors/teams/)
 
-   More information: [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
+  [Learn how to manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections).
 
 ## Step 3: Install solution files
 
-There are two solution installation options available for you to consider:
+You have two options for installing the Appointment Booking solution:
 
-- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
-- You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
+- [Select **Get it now** on the template's AppSource page](#install-from-appsource) and an installation window opens automatically in the Power Platform admin center.
+- [Download a managed or unmanaged version of the solution files and manually import them into your environment](#download-and-manually-install-solution-files).
 
 > [!TIP]
 >
@@ -107,24 +106,20 @@ There are two solution installation options available for you to consider:
 
 ### Install from AppSource
 
-You can access and install the Appointment Booking template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
+AppSource is a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**. This takes you to the *Install Appointment Booking Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select the developer environment that you prepared for the template.
-1. Agree to the *Terms and Privacy* statements by checking the boxes.
-1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
+1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**. 
+1. In the *Install Appointment Booking Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
+1. Agree to the *Terms and Privacy Statements* when prompted.
+1. Select **Install**.
 
-> [!IMPORTANT]
-> Two solutions are always installed in your environment:
->
-> - **IT Base**. Contains components that enable localization capabilities. By sharing the components across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-> - **Appointment Booking**. Contains all the necessary components to enable the implementation of the Appointment Booking program within an organization.
+[Learn more about AppSource](https://appsource.microsoft.com/en-US/)
+
+Two solutions are installed in your environment, **IT Base** and **Appointment Booking**. [Learn more about the Appointment Booking template solutions](./overview.md).
 
 ### Download and manually install solution files
 
-You also have the option to download *managed* or *unmanaged* solution files to manually install into your prepared environment according to your organization's requirements:
-
-1. Download the following managed or unmanaged solution files:
+1. Download the following Managed *or* Unmanaged solution files:
 
     - Managed
       - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
@@ -133,20 +128,18 @@ You also have the option to download *managed* or *unmanaged* solution files to 
       - [mpa_ITBase_unmanaged.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_AppointmentBooking_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
 
-1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared for the solution.
-1. Select **Solutions** on the left pane.
-1. Select **Import solution**.
-1. Browse for and select either the **managed** or **unmanaged version** of the *mpa_ITBase* file downloaded in previous step.
-1. Select **Next**.
-1. Select **Import** to start the import process of the *IT Base* solution. Once the import is complete, you're notified with a *Success* message.
-1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_Appointment Booking* file downloaded in previous step.
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
+1. In the left pane, select **Solutions**.
+1. Select **Import solution**,and then find and select the **managed** or **unmanaged version** of the `mpa_ITBase` file downloaded.
+1. Select **Next**, and then select **Import**.
+1. After you receive a message that the import was successful, repeat steps 4 and 5 to import the `mpa_AppointmentBooking` file you downloaded.
 1. Select **Next** and **Next** again.
-1. For each of the connections listed, select the *existing connection that was created in the previous step*.
+1. For each of the connections listed, select the connection that was created in the import steps.
 1. Select **Next**.
-1. Skip the environment variable setup for now because the required URL values only become available after the apps are imported into the environment.
-1. Select **Import** to start the import process of the *Appointment Booking* solution. Once the import is complete, you're notified with a *Success* message.
+1. Skip the the environment variable setup for now. The required URL values only become available after the apps are imported into the environment.
+1. Select **Import** to start importing the *Appointment Booking* solution. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
 
-More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
+[Learn more about solutions](/power-platform/alm/solution-concepts-alm)
 
 ## Step 4: Create shared calendar
 
@@ -172,7 +165,7 @@ More information: [Create, view, or delete a calendar group](<https://support.mi
 
 ## Step 5: Update environment variables
 
-Environment variables support your application lifecycle management (ALM) strategy as you migrate the template across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
+Environment variables support your application lifecycle management (ALM) strategy as you migrate the solution across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Appointment Booking solution in Power Apps.
 
 Additionally, connection references allow makers to configure flows that allow connections to be managed centrally vs. coupled to the flow. This also supports your ALM strategy since you don't need to introduce customizations or solution layers as your flows migrate across environments.
 
