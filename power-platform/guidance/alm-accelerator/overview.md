@@ -75,11 +75,11 @@ There's no one right answer for every organization. The following table and the 
 | *IT/Developer involvement* | Not required | Up-front setup | Required for every project |
 | *Source code integration* | No, but planned | Yes | Yes |
 | *Maker requires elevated privileges in target environment* | No, service principal is supported | No, service principal is supported | No, service principal is supported |
-| *Quality control* | Customizable with Extensions | Customizable with Extensions | Unlimited |
+| *Quality control* | Customizable with extensions | Customizable with extensions | Unlimited |
 | *Democratized for citizen development* | Yes | Yes | No |
 | *In-product experience* | Yes |  Canvas app provided, but no in-maker experience | No |
 | *Support* | Microsoft-supported | Power CAT-supported through GitHub issues | Microsoft-supported and GitHub issues |
-| *Customization and Extensibility* | Yes | Yes | Yes |
+| *Customization and extensibility* | Yes | Yes | Yes |
 | *Code-first development* | No, but planned | Yes | Yes |
 
 ### Pipelines for Power Platform (Pipelines)
