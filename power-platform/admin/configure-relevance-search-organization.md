@@ -70,11 +70,11 @@ Dataverse search is an opt-out feature, set to **On** by default with [2021 re
 
 To enable Dataverse search, do the following:
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 
-2.  In the navigation pane, select **Environment**.
+2. In the navigation pane, select **Environment**.
 
-3.  Select an environment.
+3. Select an environment.
 
 4. Select **Settings** > **Product** > **Features**.
 
