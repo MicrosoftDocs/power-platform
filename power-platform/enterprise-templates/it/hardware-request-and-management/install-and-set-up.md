@@ -234,7 +234,7 @@ To update environment variables, take these steps:
 
 [Learn how to use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
 
-## Step 6: Share and set cloud flows to on
+## Step 6: Share and turn on cloud flows
 
 Some of the cloud flows may be off by default because the environment variables set in Step 5 are not populated yet. Additionally, it is important for some flows to run under a user's context when invoking actions like starting a Teams group chat, generating an approval or sending an email notification.
 
@@ -264,7 +264,7 @@ Perform these steps to ensure certain flows run under the user's context:
     - Notify Review Complete
     - Set Assets As Delivered With Refresh Date
 
-More information: [Share a cloud flow](/power-automate/create-team-flows#share-a-cloud-flow-with-run-only-permissions)
+[Learn how to share a cloud flow](/power-automate/create-team-flows#share-a-cloud-flow-with-run-only-permissions)
 
 ### Turn on cloud flows
 
@@ -314,7 +314,7 @@ Access to both the Hardware Request and the Hardware Management apps can be cont
 
 Take the following steps to share the Hardware Request app with users:
 
-1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane and select the **Hardware Request and Management** solution from the list.
 1. Select **Apps**.
 1. Go to the *Hardware Request app* row and then the **three dots**.

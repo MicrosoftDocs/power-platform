@@ -25,12 +25,14 @@ The Expense Reimbursement program allows:
 
 You can further extend the capabilities of the Expense Reimbursement template by customizing the apps to meet your organization's unique processing needs.
   
-The Expense Reimbursement template is available in [Microsoft AppSource](<https://aka.ms/AccessRefundRequestTemplate>). The template package consists of two solutions:
+The Expense Reimbursement template is available in [Microsoft AppSource](<https://aka.ms/AccessRefundRequestTemplate>).
+
+The template package consists of two solutions:
 
 - **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, only components that are needed for localization capabilities are included. Common strings can be localized once in the base solution and shared so that all dependent solutions get the benefit.
-- **Expense Reimbursement app** contains all the components necessary to enable users to submit requests for expense reimbursements and manage the requests.
+- **Expense Reimbursement** contains all the components necessary to enable users to submit requests for expense reimbursements and manage the requests.
 
-## Employee Experience base solution components
+## Employee Experience base
 
 The **Employee Experience Base** solution contains components that manage app language preferences.
 
@@ -41,12 +43,12 @@ The **Employee Experience Base** solution contains components that manage app la
   - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
 - One choice: **ISO Employee Experience Language Code** stores the abbreviations that identify available language codes.
 
-## Expense Reimbursement solution components
+## Expense Reimbursement
 
 The Expense Reimbursement solution contains components that manage the user experience.
 
 - Two apps:
-  - **Expense Reimbursement** (canvas app) allows users view and submit expense reimbursements.
+  - **Expense Reimbursement** (canvas app) allows users to view and submit expense reimbursements.
   - **Expense Reimbursement Administrator** (model-driven app) allows admins to view and manage all expense reimbursement data.
 - Six tables:
   - **Expense Reimbursement**

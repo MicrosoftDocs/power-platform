@@ -108,7 +108,7 @@ You have two options for installing the Appointment Booking solution:
 
 AppSource is a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**. 
+1. Go to the [Appointment Booking template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**.
 1. In the *Install Appointment Booking Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. Agree to the *Terms and Privacy Statements* when prompted.
 1. Select **Install**.
@@ -205,11 +205,11 @@ More information:
 - [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
 - [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
-## Step 7: Set cloud flows to *on*
+## Step 7: Turn on cloud flows
 
 Open the newly installed Appointment Booking solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
 
-1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane.
 1. Select the **Appointment Booking** solution from the list.
 1. Select **Cloud flows** on the left pane.
@@ -239,7 +239,7 @@ Take the following steps to share the apps with your users:
 
 More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
 
-## Step 9: Enable Copilot
+## Step 9: Enable Copilot (optional)
 
 Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assistant for app admins to get insights about the data in their apps through conversation in natural language. As an Appointment Booking admin, you can leverage Copilot to help you get insights on appointment booking data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
 
@@ -256,9 +256,9 @@ Microsoft Copilot for Power Apps model-driven apps is a next-generation AI assis
 :::image type="content" source="media/install/ppadmin-release-channel.png" alt-text="Screenshot of managing behavior settings in the Release channel section in the Power Platform admin center.":::
 More information: [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
 
-## Step 10: Turn on Auditing
+## Step 10: Turn on Auditing (optional)
 
-While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who creates and updates records.
+We recommend enabling the audit setting on the system, so it's easy to see who creates and updates records.
 
 Take these steps to enable the audit settings:
 

@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 04/09/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -239,17 +239,18 @@ Follow these steps for each flow:
     - **Kudo app**: Share Kudos with sender, assign to recipient
     - **Kudos app**: Notification email
 
-1. Edit the *Kudo app - Share Kudo with Sender, Assign to Recipient* by taking these steps:
+1. Edit the Kudo app's *Share Kudo with Sender, Assign to Recipient* by taking these steps:
 
     1. In the Kudos solution, select *Cloud Flows* on the left pane.
     1. Select the *flow* to open the flow's overview screen.
 
-    1. On the flow overview screen, select **Edit** on the command bar to connect the to the Microsoft Dataverse connector.
+    1. On the flow overview screen, select **Edit** on the command bar to connect to the Microsoft Dataverse connector.
     1. Select **Continue**.
     1. Select **Save**.
+  
     :::image type="content" source="media/install/kudo-app-flow.png" alt-text="Image of Kudo App - Share Kudo with Sender, Assign to Recipient flow. Select save.":::
 
-1. Edit the *Kudos app - Notification Email* by taking these steps:
+1. Edit the Kudos app's *Notification Email* by taking these steps:
 
     1. In the Kudos solution, select *Cloud Flows* on the left pane.
     1. Select the *flow* to open the flow's overview screen.
@@ -265,7 +266,7 @@ Follow these steps for each flow:
 
        :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
 
-## Step 8: Set cloud flows to *On*
+## Step 8: Turn on cloud flows
 
 Open the newly installed *Kudos solution* and verify that the four cloud flows are set to the *on* status. If they aren't, turn them on.
 

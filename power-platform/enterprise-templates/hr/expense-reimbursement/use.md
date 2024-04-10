@@ -22,7 +22,7 @@ You can submit and view your expense reimbursement requests to your organization
 
 Take these steps to submit an expense reimbursement request:
 
-1. Go to the Expense Reimbursement canvas app.
+1. Sign in to the Expense Reimbursement canvas app.
 1. On the _My requests_ screen, select **New request**.
 1. On the _New request_ screen, complete these fields:
     1. Request Name
@@ -30,6 +30,8 @@ Take these steps to submit an expense reimbursement request:
     1. Category
     1. Subcategory
     1. Currency
+
+:::image type="content" source="media/use/exre-new-request.png" alt-text="Screenshot of the New request screen in the Reimbursement Request app.":::
 
 ## Add image of expense receipt
 

@@ -176,7 +176,7 @@ Set up security roles in your solutions so admins can manage access to and the e
 > [!IMPORTANT]
 > All users must be assigned the *Basic User* role in addition to any other roles assigned to them.
 
-## Step 5: Set cloud flows to *on*
+## Step 5: Turn on cloud flows
 
 Open the newly installed Awards and Recognition solution and verify that the cloud flow is set to the *on* status. If not, turn it on.
 
