@@ -4,7 +4,7 @@ description: Learn how to create, configure, share, and manage Power Platform pi
 author: caburk
 ms.author: matp
 ms.topic: how-to
-ms.date: 04/04/2024
+ms.date: 04/10/2024
 ms.custom: template-how-to
 contributors:
 - asheehi1
@@ -184,10 +184,10 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ### Accessing the Deployment Pipeline Configuration app from Power Apps
 
-From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar will navigate to the app of the pipelines host that is associated with the current environment:
+From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar navigates to the app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button links to the Deployment Pipeline Configuration app within the dedicated Host environment.
-1. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within Power Apps.
+1. If the current environment is associated with the Platform host, the button links to an embedded Deployment Pipeline Configuration app within Power Apps.
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
 
@@ -207,19 +207,20 @@ Now you're able to link the environments to pipelines in the new host.
 
 #### Using Force Link to associate an environment with a new host
 
-In the Deployment Pipeline Configuration app, you may encounter an error message indicating "this environment is already associated with another pipelines host" after creating an environment record. To take over the association, resulting in delinking the environment in the previous host and a successful link to the new host, select **Force Link** in the command bar.
+After creating an environment record in the Deployment Pipeline Configuration app, you might encounter an error message indicating "this environment is already associated with another pipelines host." To take over the association, resulting in delinking the environment in the previous host and a successful link to the new host, select **Force Link** on the command bar.
 
 > [!IMPORTANT]
-> - If performing this action on a development (source) environment, makers will lose access to any pipelines in the previous host that were accessible within that environment.
-> - This action can be undone by performing a Force Link in the previous host.
-> - The environment record in the previous host will have a stale validation status until it is updated, so it will show as "Succeeded" unless it is updated.
+>
+> - Makers lose access to any pipelines in the previous host that were accessible within that environment when you perform this action on a development (source) environment.
+> - This action can be undone by performing a **Force Link** in the previous host.
+> - The environment record in the previous host will have a stale validation status until it's updated, so it will show as **Succeeded** unless it's updated.
 
 
 ## Frequently asked questions
 
 ### Will personal pipelines conflict with any pipelines that I have already set up?
 
- No. Thanks to the host separation dynamic that we have in place, there's no way for a maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. By default, makers don't have permissions to create lightweight personal pipelines in environments already associated with a custom host. This means that your current pipelines UX, if in place, won't change.
+  No. Thanks to the host separation dynamic that we have in place, there's no way for a maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. By default, makers don't have permissions to create lightweight personal pipelines in environments already associated with a custom host. This means that your current pipelines UX, if in place, won't change.
 
 > [!IMPORTANT]
 > Makers also don't receive elevated access to environments as a result of this feature. Selectable target environments are filtered to include only environments that a maker can already import to. This feature ensures that all personal pipelines are stored in the platform host that is accessible to admins, and provides an easier way for makers to self-service their ALM.
@@ -236,19 +237,19 @@ However, capacity does apply to a custom host, which isn't an implementation in 
 
 ### What if I want to enable makers to create personal pipelines in a custom host? Can I do that?
 
-Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant lightweight pipeline creation permissions to. Admins can also add users to the **Deployment Pipeline Maker** team via the **Security Teams** page in the Deployment Pipeline Configuration app to achieve this.
+Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant lightweight pipeline creation permissions to. Admins can also add users to the **Deployment Pipeline Maker** team via the **Security Teams** page in the Deployment Pipeline Configuration app.
 
 This Deployment Pipelines Default role isn't assigned to anyone by default in the case of custom host, so the lightweight personal pipeline creation experience is only visible by default in environments that aren't already associated with a custom host.
 
 ### Why am I not seeing the latest features for pipelines?
 
-Our pipelines package is always being updated to give you the latest and greatest for your ALM processes. Ensure that you have the latest Power Platform Pipelines package in your **custom host** by:
-1. Navigating to the [Power Platform Admin Center](https://admin.powerplatform.com),
-1. Selecting your pipelines host environment,
-1. Clicking **Dynamics 365 apps**, and
-1. Locating **Power Platform Pipelines** to check if there's an update available.
+The pipelines package is always being updated to give you the latest and greatest for your ALM processes. Ensure that you have the latest Power Platform pipelines package in your **custom host**:
 
-For **platform hosts**, the pipelines package is updated automatically, and may not be available as soon as the manual package update is made available for custom hosts.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.com),
+1. Select your pipelines host environment.
+1. Select **Dynamics 365 apps**, and locate **Power Platform Pipelines.** Notice if there's an update available.
+
+For **platform hosts**, the pipelines package is updated automatically, and might not be available as soon as the manual package update is made available for custom hosts.
 
 ## Next steps
 
