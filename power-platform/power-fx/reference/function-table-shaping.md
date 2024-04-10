@@ -27,16 +27,16 @@ Shapes a [table](/power-apps/maker/canvas-apps/working-with-tables) by adding, d
 
 These functions shape a table by adjusting its columns:
 
-- Reduce a table that contains multiple columns down to a single column for use with single-column functions, such as **[Lower](function-lower-upper-proper.md)** or **[Abs](function-numericals.md)**.
+- Reduce a table that contains multiple columns down to a single column for use with single-column functions, such as **[Lower](function-lower-upper-proper.md)** or **[Sqrt](function-numericals.md)**.
 - Add a calculated column to a table (for example, a **Total Price** column that shows the results of multiplying **Quantity** by **Unit Price**).
 - Rename a column to something more meaningful, for display to users or for use in formulas.
 
 A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument in a formula, and functions can return a table as a result.
 
 > [!NOTE]
-> The functions that this topic describes don't modify the original table. Instead, they take that table as an argument and return a new table with a transform applied. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
+> The functions that this topic describes don't modify the original table. Instead, they take that table as an argument and return a new table with a transform applied. For more information, see [working with tables](/power-apps/maker/canvas-apps/working-with-tables).
 
-You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources) by using these functions. You must modify the data at its source. You can add columns to a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. See [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources) for more details.
+You can't modify the columns of a [data source](/power-apps/maker/canvas-apps/working-with-data-sources) by using these functions. You must modify the data at its source. You can add columns to a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections) with the **[Collect](function-clear-collect-clearcollect.md)** function. For more information, see [working with data sources](/power-apps/maker/canvas-apps/working-with-data-sources).
 
 ## Description
 
@@ -74,24 +74,24 @@ If you use **AddColumns** in this manner, **Filter** must make separate calls to
 **AddColumns**( _Table_, _ColumnName1_, _Formula1_ [, *ColumnName2*, *Formula2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to add. 
-- _Formula(s)_ - Required. Formula(s) to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table in this formula.
+- _ColumnName(s)_ - Required. Names of the columns to add. 
+- _Formula(s)_ - Required. Formulas to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table in this formula.
 
 **DropColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to drop. 
+- _ColumnName(s)_ - Required. Names of the columns to drop. 
 
 **RenameColumns**( _Table_, _OldColumnName1_, _NewColumnName1_ [, *OldColumnName2*, *NewColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _OldColumnName_ - Required. Name of a column to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair).
-- _NewColumnName_ - Required. Replacement name. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). 
+- _OldColumnName(s)_ - Required. Names of the columns to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair).
+- _NewColumnName(s)_ - Required. Replacement names. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). 
 
 **ShowColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to include. 
+- _ColumnName(s)_ - Required. Names of the columns to include. 
 
 ## Examples
 
@@ -108,7 +108,7 @@ None of these examples modify the **IceCreamSales** data source. Each function t
 | **ShowColumns( IceCreamSales, Flavor )**                                                                                                             | Includes only the **Flavor** column in the result. Use this function include columns, and use **DropColumns** to exclude them.                                                                                                                                                                                                                                                              | ![Only Flavor column.](media/function-table-shaping/icecream-select-flavor.png)                                                      |
 | **RenameColumns( IceCreamSales, UnitPrice, Price)**                                                                                                | Renames the **UnitPrice** column in the result.                                                                                                                                                                                                                                                                                                                                             | ![Result with Flavor, Price and Revenue.](media/function-table-shaping/icecream-rename-price.png)                                    |
 | **RenameColumns( IceCreamSales, UnitPrice, Price, QuantitySold, Number)**                                                                      | Renames the **UnitPrice** and **QuantitySold** columns in the result.                                                                                                                                                                                                                                                                                                                       | ![Result with 3 IceCreams and columns as Flavor, Price, Revenue.](media/function-table-shaping/icecream-rename-price-quant.png)      |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, Revenue,<br>UnitPrice \* QuantitySold ),<br>UnitPrice, Price ),<br>Quantity )** | Performs the following table transforms in order, starting from the inside of the formula: <ol><li>Adds a **Revenue** column based on the per-record calculation of **UnitPrice \* Quantity**.<li>Renames **UnitPrice** to **Price**.<li>Excludes the **Quantity** column.</ol> Note that order is important. For example, we can't calculate with **UnitPrice** after it has been renamed. | ![IceCream example for unit price.](media/function-table-shaping/icecream-all-transforms.png)                                        |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, Revenue,<br>UnitPrice \* QuantitySold ),<br>UnitPrice, Price ),<br>Quantity )** | Performs the following table transforms in order, starting from the inside of the formula: <ol><li>Adds a **Revenue** column based on the per-record calculation of **UnitPrice \* Quantity**.<li>Renames **UnitPrice** to **Price**.<li>Excludes the **Quantity** column.</ol> Order is important, for example we can't calculate with **UnitPrice** after it has been renamed. | ![IceCream example for unit price.](media/function-table-shaping/icecream-all-transforms.png)                                        |
 
 ### Step by step
 
