@@ -1,21 +1,21 @@
 ---
-title: "Block unmanaged customizations in environments"
-description: "Learn how admins can block unmanaged customizations in environments, which helps enforce healthy ALM processes."
+title: "Block unmanaged customizations in Dataverse environments"
+description: "Learn how admins can block unmanaged customizations in Dataverse environments, which helps enforce healthy ALM processes."
 author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 02/21/2024
+ms.date: 04/10/2024
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
   - maker
 ---
-# Block unmanaged customizations (preview)
+# Block unmanaged customizations in Dataverse (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-This article describes how you as a Power Platform administrator can enable the **Block unmanaged customizations** environment setting in the Power Platform admin center for your environments. Unmanaged customizations reside at the top layer for a component and subsequently define the runtime behavior of the component. In most situations, you don't want unmanaged customizations determining the behavior of your components.
+This article describes how you as a Power Platform administrator can enable the **Block unmanaged customizations** environment setting in the Power Platform admin center for your Microsoft Dataverse environments. Unmanaged customizations reside at the top layer for a component and subsequently define the runtime behavior of the component. In most situations, you don't want unmanaged customizations determining the behavior of your components.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -35,8 +35,8 @@ The following operations can be completed even with the block unmanaged customiz
 - Change of environment variable, enabling or disabling components. For example, turning Power Automate flows on or off, assigning ownership, or sharing of table records.
 - Solutions operations like remove [Remove an unmanaged layer](/power-apps/maker/data-platform/solution-layers#remove-an-unmanaged-layer).
 - Creation and export of unmanaged solutions.
-- Review flow run history to monitor and understand errors
-- Run the flow to test it
+- Review flow run history to monitor and understand errors.
+- Run the flow to test it.
 
 ## Enable block unmanaged customizations
 
@@ -63,11 +63,11 @@ If you must use one of the below apps or features in an environment where block 
 |Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
 | Omnichannel  | Install or upgrade don't work.      |
 
-## FAQ
+## FAQ for block unmanaged customizations
 
 ### Can this be used to give users read-only access to flow run history in test and production environments?
 
-Yes, this is one of the key scenarios that prompted this feature. With unmanaged customizations are blocked, then responsible users can be made a co-owner on a managed flow in a test or production environment, so they can review flow run history, using the portal or via APIs/PowerShell, to watch for errors and understand those errors. Those users will not be able to make changes to the managed component, so it will effectively be read-only to them. They will be able to turn the flow on and off if needed, as well as to run the flow for use or testing purposes. Those users can then use that increased visibility and knowledge to adjust the flows in a development environment and request to have them redeployed to the test or production environment.   
+Yes, this is one of the key scenarios that prompted this feature. When unmanaged customizations are blocked, responsible users can be made a co-owner on a managed flow in a test or production environment. Co-owners can review flow run history, using make.powerautomate.com or via APIs or PowerShell, to watch for errors and understand those errors. Those users won't be able to make changes to the managed component, so it's effectively read-only to them. They're able to turn the flow on and off if needed, as well as to run the flow for use or testing purposes. Co-owners of a flow can then use that increased visibility and knowledge to adjust the flows in a development environment and request to have them redeployed to the test or production environment.
 
 ## See also
 
