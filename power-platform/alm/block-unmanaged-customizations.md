@@ -35,7 +35,8 @@ The following operations can be completed even with the block unmanaged customiz
 - Change of environment variable, enabling or disabling components. For example, turning Power Automate flows on or off, assigning ownership, or sharing of table records.
 - Solutions operations like remove [Remove an unmanaged layer](/power-apps/maker/data-platform/solution-layers#remove-an-unmanaged-layer).
 - Creation and export of unmanaged solutions.
-- Reviewing flow run history to monitor and understand errors
+- Review flow run history to monitor and understand errors
+- Run the flow to test it
 
 ## Enable block unmanaged customizations
 
@@ -66,7 +67,7 @@ If you must use one of the below apps or features in an environment where block 
 
 ### Can this be used to give users read-only access to flow run history in test and production environments?
 
-Yes, this is one of the key scenarios that prompted this feature. With unmanaged customizations are blocked, then responsible users can be made a co-owner on a managed flow in a test or production environment, so they can review flow run history, using the portal or via APIs/PowerShell, to watch for errors and understand those errors. Those users will not be able to make changes to the managed component, so it will effectively be read-only to them. Those users can then use that increased visibility and knowledge to adjust the flows in a development environment and request to have them redeployed to the test or production environment.   
+Yes, this is one of the key scenarios that prompted this feature. With unmanaged customizations are blocked, then responsible users can be made a co-owner on a managed flow in a test or production environment, so they can review flow run history, using the portal or via APIs/PowerShell, to watch for errors and understand those errors. Those users will not be able to make changes to the managed component, so it will effectively be read-only to them. They will be able to turn the flow on and off if needed, as well as to run the flow for use or testing purposes. Those users can then use that increased visibility and knowledge to adjust the flows in a development environment and request to have them redeployed to the test or production environment.   
 
 ## See also
 
