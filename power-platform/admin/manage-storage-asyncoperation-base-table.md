@@ -105,8 +105,8 @@ Use the following queries to diagnose problems rleated to  **AsyncOperationBase*
   - **Pausing** - A pause operation was triggered. 
   - **Cancelling** - Administrator triggered the cancel option.
 - **Pending:** - When the system job has not met the conditions to be automatically triggered, or there was a failure evaluating the conditions. There are two status reasons on the pending scenario:  
-  - **Waiting** 
-  - **Waiting for Resources**   
+  - **Waiting** - Indicates the system job is in a waiting status.
+  - **Waiting for Resources** - Indicates the system job is waiting for a resource.
 
 **Jobs that are running or pending should not be automatically cleaned**, instead a manual action to cancel should be triggered. 
  
@@ -115,7 +115,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 ## Setup [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
-3. Select **Data management** > **Bulk deletion**.
+3. Select **Data management** > **Bulk deletion** > **New**.
 
 :::image type="content" source="media/storage-bulk-delete-create-new-bulk-delete.png" alt-text="Bulk Deletion System Jobs view." lightbox="media/storage-bulk-delete-create-new-bulk-delete.png" :::
  
