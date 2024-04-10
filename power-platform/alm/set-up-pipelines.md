@@ -242,13 +242,13 @@ This Deployment Pipelines Default role isn't assigned to anyone by default in th
 
 ### Why am I not seeing the latest features for pipelines?
 
-Our pipelines package is always being updated to give you the latest and greatest for your ALM processes. Ensure that you have the latest Power Platform Pipelines package in your custom host by:
+Our pipelines package is always being updated to give you the latest and greatest for your ALM processes. Ensure that you have the latest Power Platform Pipelines package in your **custom host** by:
 1. Navigating to the [Power Platform Admin Center](https://admin.powerplatform.com),
 1. Selecting your pipelines host environment,
 1. Clicking **Dynamics 365 apps**, and
 1. Locating **Power Platform Pipelines** to check if there's an update available.
 
-For platform hosts, the pipelines package is updated automatically, and may not be available as soon as the manual package update is made available for custom hosts.
+For **platform hosts**, the pipelines package is updated automatically, and may not be available as soon as the manual package update is made available for custom hosts.
 
 ## Next steps
 
