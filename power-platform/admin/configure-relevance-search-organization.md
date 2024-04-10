@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 04/10/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -70,13 +70,17 @@ Dataverse search is an opt-out feature, set to **On** by default with [2021 re
 
 To enable Dataverse search, do the following:
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select an **environment**.
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-2. Select **Settings** > **Product** > **Features**.
+2.  In the navigation pane, select **Environment**.
 
-3. Under **Search**, set **Dataverse search** to **On**.
+3.  Select an environment.
 
-4. Select **Save**.
+4. Select **Settings** > **Product** > **Features**.
+
+5. Under **Search**, set **Dataverse search** to **On**.
+
+6. Select **Save**.
 
    :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On.":::
 
