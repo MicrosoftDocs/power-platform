@@ -76,7 +76,7 @@ You can also use **DataSourceInfo** to obtain information about a data source as
 - _ColumnName_ – Optional. The column name for which to retrieve column-level information. For information at the data-source level, the _ColumnName_ argument can't be used.
 
 > [!NOTE]
-> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source, they needed to use logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. All apps were automatically updated to the new syntax after this version. 
+> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. Afer this version, all apps were automatically updated to the new syntax described in this article. 
 
 ## Examples
 
