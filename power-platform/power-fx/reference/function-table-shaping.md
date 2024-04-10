@@ -57,7 +57,7 @@ The arguments to these functions support delegation. For example, a **Filter** f
 
 ```powerapps-dot
 AddColumns( RealEstateAgents,
-   "Listings",
+   Listings,
    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName )
 )
 ```
@@ -66,29 +66,32 @@ However, the output of these functions is subject to the [non-delegation record 
 
 If you use **AddColumns** in this manner, **Filter** must make separate calls to the data source for each of those first records in **RealEstateAgents**, which causes a lot of network chatter. If **[dbo](.[AllListings]** is small enough and doesn't change often, you could call the **Collect** function in [**OnStart**](signals.md#app) to cache the data source in your app when it starts. As an alternative, you could restructure your app so that you pull in the related records only when the user asks for them.
 
+> [!NOTE]
+> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source, they needed to use logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. All apps were automatically updated to the new syntax after this version. 
+
 ## Syntax
 
 **AddColumns**( _Table_, _ColumnName1_, _Formula1_ [, *ColumnName2*, *Formula2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to add. You must specify a string (for example, **"Name"** with double quotes included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
+- _ColumnName(s)_ - Required. Name(s) of the column(s) to add. 
 - _Formula(s)_ - Required. Formula(s) to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table in this formula.
 
 **DropColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to drop. You must specify a string (for example, **"Name"** with double quotes included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
+- _ColumnName(s)_ - Required. Name(s) of the column(s) to drop. 
 
 **RenameColumns**( _Table_, _OldColumnName1_, _NewColumnName1_ [, *OldColumnName2*, *NewColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _OldColumnName_ - Required. Name of a column to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair). This name must be a string (for example **"Name"** with double quotation marks included). You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
-- _NewColumnName_ - Required. Replacement name. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). You must specify a string (for example, **"Customer Name"** with double quotation marks included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
+- _OldColumnName_ - Required. Name of a column to rename from the original table. This element appears first in the argument pair (or first in each argument pair if the formula includes more than one pair).
+- _NewColumnName_ - Required. Replacement name. This element appears last in the argument pair (or last in each argument pair if the formula includes more than one pair). 
 
 **ShowColumns**( _Table_, _ColumnName1_ [, *ColumnName2*, ... ] )
 
 - _Table_ - Required. Table to operate on.
-- _ColumnName(s)_ - Required. Name(s) of the column(s) to include. You must specify a string (for example, **"Name"** with double quotes included) for this argument. You must specify the column name(s) using the its logical name. Intellisense will only suggest logical names. The logical name is case sensitive.
+- _ColumnName(s)_ - Required. Name(s) of the column(s) to include. 
 
 ## Examples
 
@@ -100,12 +103,12 @@ None of these examples modify the **IceCreamSales** data source. Each function t
 
 | Formula                                                                                                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                 | Result                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **AddColumns( IceCreamSales, "Revenue", UnitPrice \* QuantitySold )**                                                                                  | Adds a **Revenue** column to the result. For each record, **UnitPrice \* QuantitySold** is evaluated, and the result is placed in the new column.                                                                                                                                                                                                                                           | ![Result with Srawberry, Chocolate and Vanilla.](media/function-table-shaping/icecream-add-revenue.png)                              |
-| **DropColumns( IceCreamSales, "UnitPrice" )**                                                                                                          | Excludes the **UnitPrice** column from the result. Use this function to exclude columns, and use **ShowColumns** to include them.                                                                                                                                                                                                                                                           | ![Result with Strawberry, Chocolate, Vanilla having only QuantitySold column.](media/function-table-shaping/icecream-drop-price.png) |
-| **ShowColumns( IceCreamSales, "Flavor" )**                                                                                                             | Includes only the **Flavor** column in the result. Use this function include columns, and use **DropColumns** to exclude them.                                                                                                                                                                                                                                                              | ![Only Flavor column.](media/function-table-shaping/icecream-select-flavor.png)                                                      |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price")**                                                                                                | Renames the **UnitPrice** column in the result.                                                                                                                                                                                                                                                                                                                                             | ![Result with Flavor, Price and Revenue.](media/function-table-shaping/icecream-rename-price.png)                                    |
-| **RenameColumns( IceCreamSales, "UnitPrice", "Price", "QuantitySold", "Number")**                                                                      | Renames the **UnitPrice** and **QuantitySold** columns in the result.                                                                                                                                                                                                                                                                                                                       | ![Result with 3 IceCreams and columns as Flavor, Price, Revenue.](media/function-table-shaping/icecream-rename-price-quant.png)      |
-| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, "Revenue",<br>UnitPrice \* QuantitySold ),<br>"UnitPrice", "Price" ),<br>"Quantity" )** | Performs the following table transforms in order, starting from the inside of the formula: <ol><li>Adds a **Revenue** column based on the per-record calculation of **UnitPrice \* Quantity**.<li>Renames **UnitPrice** to **Price**.<li>Excludes the **Quantity** column.</ol> Note that order is important. For example, we can't calculate with **UnitPrice** after it has been renamed. | ![IceCream example for unit price.](media/function-table-shaping/icecream-all-transforms.png)                                        |
+| **AddColumns( IceCreamSales, Revenue, UnitPrice \* QuantitySold )**                                                                                  | Adds a **Revenue** column to the result. For each record, **UnitPrice \* QuantitySold** is evaluated, and the result is placed in the new column.                                                                                                                                                                                                                                           | ![Result with Srawberry, Chocolate and Vanilla.](media/function-table-shaping/icecream-add-revenue.png)                              |
+| **DropColumns( IceCreamSales, UnitPrice )**                                                                                                          | Excludes the **UnitPrice** column from the result. Use this function to exclude columns, and use **ShowColumns** to include them.                                                                                                                                                                                                                                                           | ![Result with Strawberry, Chocolate, Vanilla having only QuantitySold column.](media/function-table-shaping/icecream-drop-price.png) |
+| **ShowColumns( IceCreamSales, Flavor )**                                                                                                             | Includes only the **Flavor** column in the result. Use this function include columns, and use **DropColumns** to exclude them.                                                                                                                                                                                                                                                              | ![Only Flavor column.](media/function-table-shaping/icecream-select-flavor.png)                                                      |
+| **RenameColumns( IceCreamSales, UnitPrice, Price)**                                                                                                | Renames the **UnitPrice** column in the result.                                                                                                                                                                                                                                                                                                                                             | ![Result with Flavor, Price and Revenue.](media/function-table-shaping/icecream-rename-price.png)                                    |
+| **RenameColumns( IceCreamSales, UnitPrice, Price, QuantitySold, Number)**                                                                      | Renames the **UnitPrice** and **QuantitySold** columns in the result.                                                                                                                                                                                                                                                                                                                       | ![Result with 3 IceCreams and columns as Flavor, Price, Revenue.](media/function-table-shaping/icecream-rename-price-quant.png)      |
+| **DropColumns(<br>RenameColumns(<br>AddColumns( IceCreamSales, Revenue,<br>UnitPrice \* QuantitySold ),<br>UnitPrice, Price ),<br>Quantity )** | Performs the following table transforms in order, starting from the inside of the formula: <ol><li>Adds a **Revenue** column based on the per-record calculation of **UnitPrice \* Quantity**.<li>Renames **UnitPrice** to **Price**.<li>Excludes the **Quantity** column.</ol> Note that order is important. For example, we can't calculate with **UnitPrice** after it has been renamed. | ![IceCream example for unit price.](media/function-table-shaping/icecream-all-transforms.png)                                        |
 
 ### Step by step
 
@@ -129,7 +132,7 @@ Let's try some of the examples from earlier in this topic.
 
    ```powerapps-dot
    ClearCollect( FirstExample,
-      AddColumns( IceCreamSales, "Revenue", UnitPrice * QuantitySold )
+      AddColumns( IceCreamSales, Revenue, UnitPrice * QuantitySold )
    )
    ```
 
