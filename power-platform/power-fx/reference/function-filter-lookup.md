@@ -62,7 +62,7 @@ The **Search** function finds records in a table that contain a string in one of
 - _Column(s)_ - Required. The names of columns within _Table_ to search. If _SearchString_ is found within the data of any of these columns as a partial match, the full record will be returned.
 
 > [!NOTE]
-> In Power Apps prior to version 3.24042, column names for the **Search** function were specified with a text string using double quotes, and if connected to a data source, they needed to use logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. All apps were automatically updated to the new syntax after this version. 
+> In Power Apps prior to version 3.24042, column names for the **Search** function were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. Afer this version, all apps were automatically updated to the new syntax described in this article. 
 
 **LookUp**(Table*, *Formula* [, *ReductionFormula\* ] )
 
