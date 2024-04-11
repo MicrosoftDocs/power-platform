@@ -155,7 +155,7 @@ Yes. To prevent users from creating developer environments, go to [Control envir
 
 ### Does the developer environment get auto-created with a developer plan?
 
-No, developer environments no longer get auto-created with a Power Apps Developer Plan. The maker/developer needs to create developer environments either through Power Platform admin center, Power Apps,  or the community page.
+Developer environment gets auto-created when the user signs up for the developer plan using any of the experinces community page, Maker Portal or Admin experinces. However,if developer environment is deleted or the user needs additional developer environments, they need to create them manually.
 
 ### Does the Power Apps Developer plan include Power Automate RPA use rights?
 
