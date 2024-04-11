@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 4/9/2024
+ms.date: 4/11/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -38,7 +38,7 @@ You can group records by using **GroupBy**, modify the table that it returns, an
 You can also aggregate results based on a grouping:
 
 - Use the **GroupBy** function.
-- Use the **[AddColumns](function-table-shaping.md)** function with **[Sum](function-aggregates.md)**, **[Average](function-aggregates.md)**, and other aggregate functions to add a new column which is an aggregate of the group tables.
+- Use the **[AddColumns](function-table-shaping.md)** function with **[Sum](function-aggregates.md)**, **[Average](function-aggregates.md)**, and other aggregate functions to add a new column, which is an aggregate of the group tables.
 - Use the **[DropColumns](function-table-shaping.md)** function to drop the group table.
 
 **Ungroup** tries to preserve the original order of the records that were fed to **GroupBy**. This isn't always possible (for example, if the original table contains _blank_ records).
@@ -137,7 +137,7 @@ ClearCollect( CityPopulations,
 
 ### Aggregate results
 
-Something else we can do with a grouped table is to aggregate the results. In this example, we will sum the population of the major cities in each country/region.
+Another operation we can perform on a grouped table is to compile the results. In this example, we'll sum the population of the major cities in each country/region.
 
 1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Sum"**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"Sum"** button to this formula:

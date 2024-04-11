@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 4/09/2024
+ms.date: 4/11/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -22,7 +22,7 @@ contributors:
 
 Finds one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
-Watch this video to learn how to use **Filter**, **Search** and **LookUp** functions:
+Watch this video to learn how to use **Filter**, **Search, and **LookUp** functions:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWLj3m]
 
@@ -31,7 +31,7 @@ Watch this video to learn how to use **Filter**, **Search** and **LookUp** funct
 
 ## Description
 
-The **Filter** function finds records in a table that satisfy a formula. Use **Filter** to find a set of records that match one or more criteria and to discard those that don't.
+The **Filter** function finds records in a table that satisfy a formula. Use **Filter** to find a set of records that match one or more criteria and discard those records that don't.
 
 The **LookUp** function finds the first record in a table that satisfies a formula. Use **LookUp** to find a single record that matches one or more criteria.
 
@@ -39,7 +39,7 @@ For both, the formula is evaluated for each record of the table. Records that re
 
 [!INCLUDE [record-scope](../../includes/record-scope.md)]
 
-The **Search** function finds records in a table that contain a string in one of their columns. The string may occur anywhere within the column; for example, searching for "rob" or "bert" would find a match in a column that contains "Robert". Searching is case-insensitive. Unlike **Filter** and **LookUp**, the **Search** function uses a single string to match instead of a formula.
+The **Search** function finds records in a table that contain a string in one of their columns. The string might occur anywhere within the column; for example, searching for "rob" or "bert" would find a match in a column that contains "Robert". Searching is case-insensitive. Unlike **Filter** and **LookUp**, the **Search** function uses a single string to match instead of a formula.
 
 **Filter** and **Search** return a table that contains the same columns as the original table and the records that match the criteria. **LookUp** returns only the first record found, after applying a formula to reduce the record to a single value. If no records are found, **Filter** and **Search** return an [empty](function-isblank-isempty.md) table, and **LookUp** returns _blank_.
 
@@ -85,10 +85,10 @@ The following examples use the **IceCream** [data source](/power-apps/maker/canv
 | **Filter(IceCream, Quantity < 10 && OnOrder < 20)**      | Returns records where the **Quantity** is less than 10 and **OnOrder** is less than 20. No records match these criteria, so an empty table is returned.                                                           | ![Filter on quantity.](media/function-filter-lookup/icecream-empty.png "Filter on quantity")                   |
 | **Search(IceCream, "choc", Flavor)**                   | Returns records where the string "choc" appears in the **Flavor** name, independent of uppercase or lowercase letters.                                                                                            | ![Search items.](media/function-filter-lookup/icecream-chocolate.png "Search items")                           |
 | **Search(IceCream, "", Flavor)**                       | Because the search term is empty, all records are returned.                                                                                                                                                       | ![Search all items.](media/function-filter-lookup/icecream.png "Search all items")                             |
-| **LookUp(IceCream, Flavor = "Chocolate", Quantity)**     | Searches for a record with **Flavor** equal to "Chocolate", of which there is one. For the first record that's found, returns the **Quantity** of that record.                                                    | 100                                                                                                            |
+| **LookUp(IceCream, Flavor = "Chocolate", Quantity)**     | Searches for a record with **Flavor** equal to "Chocolate", of which there's one. For the first record that's found, returns the **Quantity** of that record.                                                    | 100                                                                                                            |
 | **LookUp(IceCream, Quantity > 150, Quantity + OnOrder)** | Searches for a record with **Quantity** greater than 150, of which there are multiple. For the first record that's found, which is "Vanilla" **Flavor**, returns the sum of **Quantity** and **OnOrder** columns. | 250                                                                                                            |
 | **LookUp(IceCream, Flavor = "Pistachio", OnOrder)**      | Searches for a record with **Flavor** equal to "Pistachio", of which there are none. Because none is found, **Lookup** returns _blank_.                                                                           | _blank_                                                                                                        |
-| **LookUp(IceCream, Flavor = "Vanilla")**                 | Searches for a record with **Flavor** equal to "Vanilla", of which there is one. Since no reduction formula was supplied, the entire record is returned.                                                          | { Flavor: "Vanilla", Quantity: 200, OnOrder: 75 }                                                              |
+| **LookUp(IceCream, Flavor = "Vanilla")**                 | Searches for a record with **Flavor** equal to "Vanilla", of which there's one. Since no reduction formula was supplied, the entire record is returned.                                                          | { Flavor: "Vanilla", Quantity: 200, OnOrder: 75 }                                                              |
 
 ### Filtering with choice columns
 
@@ -125,7 +125,7 @@ The following examples use the **IceCream** [data source](/power-apps/maker/canv
 
 In many apps, you can type one or more characters into a search box to filter a list of records in a large data set. As you type, the list shows only those records that match the search criteria.
 
-The examples in the rest of this topic show the results of searching a list, named **Customers**, that contain this data:
+The examples in the rest of this article show the results of searching a list, named **Customers**, that contain this data:
 
 ![Search on customers.](media/function-filter-lookup/customers.png "Search on customers")
 
