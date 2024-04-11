@@ -121,7 +121,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 
 ## Setup [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 
-### Delete completed system jobs that are older than 7 days
+### Delete completed, system jobs that are older than 7 days
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
@@ -149,7 +149,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
  
 For more information on how to configure bulk delete jobs for **AsyncOperationBase** table, see [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table).
 
-### Delete completed system jobs that are for workflows
+### Delete completed, system jobs that are for workflows
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
@@ -184,7 +184,7 @@ For asynchronous workflows, we recommend selecting the **Automatically delete co
 ### Set option to delete successfully completed asynchronous plug-in jobs
 1. [Install Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli)
 2. [Download and launch Plug-in Registration Tool](/power-apps/developer/data-platform/download-tools-nuget#download-and-launch-tools-using-power-platform-cli)
-3. For custom **Plug-ins**, select **Register New Step**. The Register New Step screen is displayed.
+3. For custom **Plug-ins**, select **Register New Step**. The **Register New Step** screen is displayed.
 4. Complete the following steps:
     1. In **Event Pipeline Stage** area, select **Post Operation**.
     2. In the **Execution Mode** area, select **Asynchronous**.
