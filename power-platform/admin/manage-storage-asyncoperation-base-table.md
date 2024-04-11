@@ -123,7 +123,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 
 ## Setup [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 
-### Delete completed, system jobs jobs that are older than 7 days
+### Delete completed, system jobs that are older than 7 days
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
