@@ -4,7 +4,7 @@ description: Learn about managing AsyncOperationBase table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/05/2024
+ms.date: 04/11/2024
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
@@ -94,7 +94,15 @@ Use the following queries to diagnose problems rleated to  **AsyncOperationBase*
 
 ## System job status
 
+To access the System Jobs page, use the following steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
+3. Select **Audit and logs** > **System jobs**.
+
 :::image type="content" source="media/storage-data-system-jobs.png" alt-text="System Job Status view" lightbox="media/storage-data-system-jobs.png":::
+
+System jobs have the following status:
 
 - **Completed** - The job no longer executes any step, and providing three possible status eeasons:   
   - **Succeeded** - The job did what was expected.
@@ -108,7 +116,8 @@ Use the following queries to diagnose problems rleated to  **AsyncOperationBase*
   - **Waiting** - Indicates the system job is in a waiting status.
   - **Waiting for Resources** - Indicates the system job is waiting for a resource.
 
-**Jobs that are running or pending should not be automatically cleaned**, instead a manual action to cancel should be triggered. 
+> [!Note]
+> Jobs that are running or pending shouldn't be automatically cleaned. Instead, a manual action to cancel should be triggered. 
  
 Customers can configure other [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete **AsyncOperationBase** records. 
 
@@ -119,13 +128,15 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
 3. Select **Data management** > **Bulk deletion** > **New**.
 4. The **Bulk Deletion Wizard** is displayed. Select **Next**.
-5. The Define Search Criteria page is displayed. To bulk delete **AsyncOperationBase** records specify the following criteria on `System Jobs`.
+5. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
+      1. In the **Look for** field, select System Jobs.
+      2. Enter the following criteria:
 
-| Group  | Setting   | Criteria | Selected Values |
-|---------|---------|---------|
-|**AND**     | **Status** | Equals | **`Completed`**    |
-|**AND**    | **Completed On** | Older Than X Days  | **`7`**
-|**AND**     | **System Job Type** | Does Not Equal   | **`Bulk Email` `Import File Parse` `Workflow`** |
+        | Group  | Setting   | Criteria | Selected Values |
+        |---------|---------|---------|
+        |**AND**     | **Status** | Equals | **`Completed`**    |
+        |**AND**    | **Completed On** | Older Than X Days  | **`7`**
+        |**AND**     | **System Job Type** | Does Not Equal   | **`Bulk Email` `Import File Parse` `Workflow`** |
 
 :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
 
