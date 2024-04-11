@@ -694,6 +694,10 @@
                   href: cleanup-asyncoperationbase-table.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Database Tables
+              items:
+                - name: AsyncOperationBase table
+                  href: manage-storage-asyncoperation-base-table.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage
