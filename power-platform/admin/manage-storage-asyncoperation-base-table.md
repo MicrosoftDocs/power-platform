@@ -187,7 +187,11 @@ For asynchronous workflows, we recommend enabling Automatically delete completed
 ### Set option to delete successfully completed asynchronous plug-in jobs
 1. [Install Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli)
 2. [Download and launch Plug-in Registration Tool](/power-apps/developer/data-platform/download-tools-nuget#download-and-launch-tools-using-power-platform-cli)
-3. For custom **Plug-ins**, select **Register New Step**, in Event Pipeline Stage of Execution select **Post Operation**, Execution Mode **Asynchronous**, select **Delete AsyncOperation if Status Code = Successful**
+3. For custom **Plug-ins**, select **Register New Step**. The Register New Step screen is displayed.
+4. Complete the following steps:
+    1. In **Event Pipeline Stage** area, select **Post Operation**.
+    2. In the **Execution Mode** area, select **Asynchronous**.
+    3. Select the **Delete AsyncOperation if Status Code = Successful** option.
 
 :::image type="content" source="media/plugin-registration-tool-delete-asyncoperation-option.png" alt-text="Set Delete AsyncOperation if Status Code = Successful" lightbox="media/plugin-registration-tool-delete-asyncoperation-option.png":::
  
