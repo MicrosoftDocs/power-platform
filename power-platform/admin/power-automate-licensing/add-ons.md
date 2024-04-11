@@ -37,7 +37,7 @@ The Power Automate unattended RPA add-on extends desktop-based automation by ena
 
 Here are a few important notes of which you should be aware regarding the unattended add-on.
 
-- One unattended RPA add-on license includes the rights to one unattended RPA bot, as well as all necessary functions tied to the authoring of  desktop flows, bot orchestration, and management.
+- One unattended RPA add-on license includes the rights to one unattended RPA bot
 - If you run the unattended RPA bot in a VM, you must purchase any necessary additional compute resources.
 - You can purchase additional AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
 - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate unattended RPA add-on.
