@@ -91,11 +91,11 @@ Follow these steps to assign Process capacity to an environment.
 
    When you select a flow, you'll now see a new section in the details pane that tells you if the flow is assigned to a user, or if it is part of the Process license. The default for a flow is to use the license of the user.
 
-1. To have a flow use the Process license, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you'll need to assign capacity.
+1. To have a flow use the Process license, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
-After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will be dedicated to that flow.
+After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will is dedicated to that flow.
 
 ### Assign per user licenses to user
 
@@ -146,11 +146,11 @@ Follow these steps to allocate add-ons to an environment.
 
    ![An image that displays that a flow uses per user plan by default.](../media/power-automate-licensing/per-user-plan-assigned.png)
 
-1. To have a flow use the per-flow plan, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you'll need to allocate capacity.
+1. To have a flow use the per-flow plan, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you need to allocate capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
-After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will be dedicated to that flow.
+After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity is dedicated to that flow.
 
 ### Assign unattended RPA add-on to an environment
 
