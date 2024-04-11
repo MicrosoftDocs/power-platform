@@ -8,15 +8,9 @@ ms.topic: overview
 ms.date: 02/23/2024
 ms.custom: 
 ---
-# Deploy pipelines as a service principal or pipeline owner (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Deploy pipelines as a service principal or pipeline owner
 
 Delegated deployments can be run as a service principal or pipeline stage owner. When enabled, the pipeline stage deploys as the delegate (service principal or pipeline stage owner) instead of the requesting maker.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback
 
 ## Deploy with a service principal
 
@@ -87,6 +81,8 @@ To deploy as the pipeline stage owner, follow these steps.
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
 
 ## Delegated deployment samples
+> [!IMPORTANT]
+    > The functionality provided in these samples is now supported natively in the product, but may not be available in your region yet.  
 This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
 
 Download and import the managed solution to your pipelines host environment. The solution can then be customized to fit the needs of your organization. 
