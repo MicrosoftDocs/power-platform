@@ -114,20 +114,18 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 
 ## Setup [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 
-### Delete completed jobs that are older than 7 days
+### Delete completed, system jobs jobs that are older than 7 days
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
 3. Select **Data management** > **Bulk deletion** > **New**.
-
-:::image type="content" source="media/storage-bulk-delete-create-new-bulk-delete.png" alt-text="Bulk Deletion System Jobs view." lightbox="media/storage-bulk-delete-create-new-bulk-delete.png" :::
- 
-4. To bulk delete **AsyncOperationBase** records specify the following criteria on `System Jobs`.
+4. The **Bulk Deletion Wizard** is displayed. Select **Next**.
+5. The Define Search Criteria page is displayed. To bulk delete **AsyncOperationBase** records specify the following criteria on `System Jobs`.
 
 | Group  | Setting   | Criteria | Selected Values |
-   |---------|---------|---------|
-   |**AND**     | **Status** | Equals | **`Completed`**    |
-   |**AND**    | **Completed On** | Older Than X Days  | **`7`**
-   |**AND**     | **System Job Type** | Does Not Equal   | **`Bulk Email` `Import File Parse` `Workflow`** |
+|---------|---------|---------|
+|**AND**     | **Status** | Equals | **`Completed`**    |
+|**AND**    | **Completed On** | Older Than X Days  | **`7`**
+|**AND**     | **System Job Type** | Does Not Equal   | **`Bulk Email` `Import File Parse` `Workflow`** |
 
 :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
 
