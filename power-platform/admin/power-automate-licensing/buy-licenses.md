@@ -31,24 +31,27 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 
    ![Image showing the detail for the plan selected](../media/power-automate-licensing/selected-plan.png)
 
-### Buy Hosted RPA add-on
-
-You can purchase the **Power Automate hosted RPA add-on** from the [Microsoft 365 admin center](https://admin.microsoft.com/).
-
-1. Sign in to the Microsoft 365 admin center.
-1. Go to **Marketplace** > **All products**, and then search for "Power Automate" to find all relevant plans.
-1. Search for the **Power Automate Premium**.
-
-   ![An image that displays the Power Automate Premium](../media/power-automate-licensing/select-plan.png)
-
-1. Select **Details** on the **Power Automate Premium** plan, and then select **Add-ons**.
-1. Find the **Power Automate hosted RPA Trial** and buy it.
-
-   ![Power Automate unattended RPA add-on Trial add on](../media/power-automate-licensing/add-ons-details.png)
-
-After the purchase completes, the environment admin must assign the available (paid or trial) hosted RPA add-on capacities to a specific environment in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Manage licenses
+
+> [!TIP]
+> To learn more about how to allocate capacitu based licenses to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+
+### Assign Hosted Process license
+
+Follow these steps to assign Hosted Process capacity to an environment.
+
+1. Select **Resources** > **Capacity** on the left side of the screen.
+1. Select **Add-ons** > in the capacity page.
+1. Select the edit button on an environment.
+1. Enter the amount of each add-on you would like to allocate to each environment.
+
+   > [!NOTE]
+   > The Hosted Process is environment specific. So, if you have multiple environments that needs hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
+
+1. Select **Save**.
+
+   After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment
 
 
 ### Assign Process license
@@ -64,18 +67,13 @@ Here are the two steps you must take if you want to assign a Process license.
 
 It's easy and scalable to allocate the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
 
-> [!TIP]
-> To learn more about how to allocate the Process license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
-
-Follow these steps to allocate add-ons to an environment.
+Follow these steps to assign Process capacity to an environment.
 
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > in the capacity page.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
-   > [!TIP]
-   > Power Automate Process is the same as Process license.
    > [!NOTE]
    > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
 
