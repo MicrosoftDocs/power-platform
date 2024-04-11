@@ -1,7 +1,7 @@
 ---
 title: Power Platform security FAQs
 description: Get answers to common questions about Power Platform security.
-ms.date: 11/07/2022
+ms.date: 04/11/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
