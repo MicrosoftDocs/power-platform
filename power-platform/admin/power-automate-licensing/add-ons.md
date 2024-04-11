@@ -4,7 +4,7 @@ description: "Add-ons for Power Automate licensing."
 author: msftman
 ms.topic: overview
 ms.date: 01/31/2023
-ms.author: deonhe
+ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
