@@ -26,13 +26,13 @@ If Power Automate is throttling your flows, try [Pay-as-you-go](types.md#power-p
 
 Desktop flows can have varying levels of workload throughout a period of time. For example desktop flows for processing invoices or schedule reconciliation across multiple systems may have a monthly peak period. As desktop flows requires a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
 
-The Power Automate Hosted Process on provides Microsoft hosted machine capacity, enabling RPA with zero infrastrcuture. The hosted RPA add-on supports two scenarios:
+The Power Automate Hosted Process on provides Microsoft hosted machine capacity, enabling RPA with zero infrastrcuture. The Hosted Process license supports two scenarios:
 - Individual hosted machines, enable developers to build or test automation and business users to run automation.
 - Hosted machine groups, automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
 
 Some important points that you should be aware of regarding the Hosted Process license:
-- One Hosted Process license includes the capacity to one hosted bot machine & unattended RPA bot.
-- One Hosted Process license can also be used as a Process license to run unattended automation on a customer managed bot machine. 
+- One Hosted Process license includes the capacity to one Microsoft hosted machine & unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
+- One Hosted Process license can also be used as a Process license to run unattended automation on a customer managed bot machine.
 - You can purchase additional AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
 - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate Hosted Process license.
   
