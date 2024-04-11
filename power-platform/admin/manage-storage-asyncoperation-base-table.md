@@ -100,8 +100,6 @@ To access the System Jobs page, use the following steps.
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
 3. Select **Audit and logs** > **System jobs**.
 
-:::image type="content" source="media/storage-data-system-jobs.png" alt-text="System Job Status view" lightbox="media/storage-data-system-jobs.png":::
-
 System jobs have the following status:
 
 - **Completed** - The job no longer executes any step, and providing three possible status eeasons:   
