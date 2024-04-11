@@ -132,11 +132,11 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
       1. In the **Look for** field, select System Jobs.
       2. Enter the following criteria:
 
-        | Group  | Setting   | Criteria | Selected Values |
-        |---------|---------|---------|
-        |**AND**     | **Status** | Equals | **`Completed`**    |
-        |**AND**    | **Completed On** | Older Than X Days  | **`7`**
-        |**AND**     | **System Job Type** | Does Not Equal   | **`Bulk Email` `Import File Parse` `Workflow`** |
+          | Group  | Setting   | Criteria | Selected Values |
+          |---------|---------|---------|
+          |AND    | Status | Equals | Completed   |
+          |AND    | Completed On | Older Than X Days  | 7
+          |AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
 :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
 
