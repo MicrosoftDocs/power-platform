@@ -123,7 +123,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 
 ## Setup [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table#bulk-deletion-jobs)
 
-### Delete completed, system jobs that are older than 7 days
+### Delete completed system jobs that are older than 7 days
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
@@ -151,7 +151,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
  
 For more information on how to configure bulk delete jobs for **AsyncOperationBase** table, see [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table).
 
-### Delete completed, system jobs jobs that are for workflows
+### Delete completed system jobs that are for workflows
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
