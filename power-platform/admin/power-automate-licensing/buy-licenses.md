@@ -35,7 +35,7 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 ## Manage licenses
 
 > [!TIP]
-> To learn more about how to allocate capacitu based licenses to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+> To learn more about how to allocate capacity based licenses to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
 
 ### Assign Hosted Process license
 
