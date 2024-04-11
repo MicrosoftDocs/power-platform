@@ -32,7 +32,7 @@ To learn more about license plans that include Power Automate capabilities, go t
 
 ### Which Power Automate licenses do I need?
 
-Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate process license for every business process or machines that run unattended automation, and the Power Automate Hosted RPA add-on if you want to build, test and run your desktop flow automation with zero infrastructure.
+Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate Process license for every business process or machines that run unattended automation. The Power Automate Hosted Process is a super-set of the Power Automate Process license, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastrcuture.
 
 The Premium user plan is intended for a human user to support the broad adoption of an automation culture in an organization. It's required for RPA developers to build and manage desktop flows on the Power Automate portal.
 
@@ -49,7 +49,7 @@ You need a Process license if your flow meets **one of the following criteria**:
 - Your flow uses premium connectors, and your organization has many guest users using the flow, but you don't know if the guest users' home tenant provides them with Premium licenses.
 
 > [!NOTE]
-> The Process license only licenses the flows and/or machines and not the user. The Premium user plan is required for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
+> The Power Automate Process & Hosted Process license only licenses the flows and/or machines and not the user. The Premium user plan is required for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
 ### How many Power Automate Process licenses do I need?
 
@@ -112,11 +112,11 @@ Each flow exists in a specific environment. This means if a flow is imported int
 
 The Power Automate Premium license is a user level license. All user level licenses (Power Automate Premium, Microsoft 365, Dynamics 365) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
 
-### Can a Power Automate Hosted RPA add-on be used as a Power Automate Unattended RPA add-on?
+### Can a Power Automate Hosted Process license be used as a Power Automate Process license?
 
-Yes, you can use the Power Automate Hosted RPA add-on capacity in two ways:
-- For hosted machines and hosted machine groups
-- To run desktop flows (RPA) in unattended mode that can be applied to a local, remote desktop, or other virtualized environment
+Yes, you can use the Power Automate Hosted Process capacity in two ways:
+- Hosted machines and hosted machine groups. 
+- As a Process license that can be used for unattended robotic process automation (unattended RPA) on your on-premises machine, or flows that are part of a business process.
 
 ### Can Microsoft 365 customers create solution-aware flows and child flows?
 
