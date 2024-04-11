@@ -79,7 +79,7 @@ It's best to create the connections before you import the solution. If you creat
     - [Office 365 Outlook connector](/connectors/office365/)
     - [Teams](/connectors/teams/)
 
-[Learn how to manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections).
+[Learn how to manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
 
 ## Step 3: Install Approvals solution
 
@@ -129,7 +129,9 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 1. Select **Install**.
 
-Two solutions are installed in your environment, **Employee Experience Base** and **Expense Reimbursement**. [Learn more about the Expense Reimbursement template solutions](./overview.md).
+Two solutions are installed in your environment, **Employee Experience Base** and **Expense Reimbursement**.
+
+[Learn more about the Expense Reimbursement template solutions](./overview.md).
 
 ### Download and manually install solution files
 
@@ -140,7 +142,7 @@ Two solutions are installed in your environment, **Employee Experience Base** an
       - [mpa_ExpenseReimbursement_managed.zip](https://aka.ms/OnboardingBuddyManagedSolution)
     - Unmanaged:
       - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
-      - [mpa_ExpenseReimbursement_unmanaged.zip](https://aka.ms/ExpenseReimbursementUnmanagedSolution)
+      - [mpa_ExpenseReimbursement.zip](https://aka.ms/ExpenseReimbursementUnmanagedSolution)
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 
@@ -164,20 +166,7 @@ Two solutions are installed in your environment, **Employee Experience Base** an
 
 [Learn more about solutions](/power-platform/alm/solution-concepts-alm).
 
-## Step 5: Update environment variables
-
-Environment variables support your application lifecycle management (ALM) strategy as you migrate the solution across environments. Environment variables store keys and values for information that is contextual to the environment the solution is in. Take these steps to update an environment variable for the Expense Reimbursement solution in Power Apps.
-
-1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment that contains the Expense Reimbursement solution.
-1. Select the Expense Reimbursement solution.
-1. Go to **Environment Variable**.
-1. Select the three dots and select **Edit**.
-1. Update the environment variables.
-1. Select **Save**.
-
-[Learn how to use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
-
-## Step 6: Assign Security Roles
+## Step 5: Assign Security Roles
 
 The Expense Reimbursement solution contains two security roles.
 
@@ -209,7 +198,7 @@ Assign security roles in the Power Platform admin center.
 - [Learn how to manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users).
 - [Learn how to control user access to environments with security groups and licenses](/power-platform/admin/control-user-access).
 
-## Step 7: Turn on cloud flows
+## Step 6: Turn on cloud flows
 
 Verify that the cloud flows are turned on in the newly installed Expense Reimbursement solution. Turn on any flows that are not already set to *on*.
 
@@ -221,7 +210,7 @@ Verify that the cloud flows are turned on in the newly installed Expense Reimbur
 
 1. Select *each of the four flows* and make sure it's turned on.
 
-## Step 8: Share the apps
+## Step 7: Share the apps
 
 Share the Expense Reimbursement app with the users in your organization.
 
@@ -250,7 +239,7 @@ Share the Expense Reimbursement app with the users in your organization.
 > [!NOTE]
 > If the Expense Reimbursement app isn't shared with you and you can't access it directly in Power Apps, contact your administrator.
 
-## Step 9: Enable copilot (optional)
+## Step 8: Enable copilot (optional)
 
 Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As an expense reimbursement program administrator or reviewer, leverage Copilot to help you get insights on the expense reimbursement data while taking action. Follow these steps to turn Copilot on within your environment:
 
@@ -261,7 +250,7 @@ Copilot for model-driven apps in Power Apps is a next-generation AI assistant fo
 1. Expand the *Product* section and select **Features**.
 1. Underneath the *Copilot* section, change the *Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps* to **On**.
 
-## Step 10: Turn on auditing (optional)
+## Step 9: Turn on auditing (optional)
 
 Auditing isn't required, but we recommend turning it on so that it's easy to see who creates and updates records in the future.
 
