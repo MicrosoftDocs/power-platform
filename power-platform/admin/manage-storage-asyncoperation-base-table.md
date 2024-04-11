@@ -100,8 +100,6 @@ To access the System Jobs page, use the following steps.
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
 3. Select **Audit and logs** > **System jobs**.
 
-:::image type="content" source="media/storage-data-system-jobs.png" alt-text="System Job Status view" lightbox="media/storage-data-system-jobs.png":::
-
 System jobs have the following status:
 
 - **Completed** - The job no longer executes any step, and providing three possible status eeasons:   
@@ -143,7 +141,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
           |AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
 
-6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
+6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
 
 7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
 
@@ -171,7 +169,7 @@ For more information on how to configure bulk delete jobs for **AsyncOperationBa
          |AND    | System Job Type |Equals   | Workflow |
 
 
-6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
+6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
 
 7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
 
@@ -179,15 +177,18 @@ For more information on how to configure bulk delete jobs for **AsyncOperationBa
 
 ## Appendix
 ### Set option to delete successfully completed asynchronous workflow jobs
-For asynchronous workflows, we recommend enabling Automatically delete completed workflow jobs (to save disk space) in the workflow editor. This allows the system to delete workflow logs for successful executions to save space.
-
+For asynchronous workflows, we recommend selecting the **Automatically delete completed workflow jobs (to save disk space)** option in the workflow editor. This allows the system to delete workflow logs for successful executions to save space.
 
 :::image type="content" source="media/storage-data-WorkflowJobRetentionSetting.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs." lightbox="media/storage-data-WorkflowJobRetentionSetting.png":::
  
 ### Set option to delete successfully completed asynchronous plug-in jobs
 1. [Install Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli)
 2. [Download and launch Plug-in Registration Tool](/power-apps/developer/data-platform/download-tools-nuget#download-and-launch-tools-using-power-platform-cli)
-3. For custom **Plug-ins**, select **Register New Step**, in Event Pipeline Stage of Execution select **Post Operation**, Execution Mode **Asynchronous**, select **Delete AsyncOperation if Status Code = Successful**
+3. For custom **Plug-ins**, select **Register New Step**. The Register New Step screen is displayed.
+4. Complete the following steps:
+    1. In **Event Pipeline Stage** area, select **Post Operation**.
+    2. In the **Execution Mode** area, select **Asynchronous**.
+    3. Select the **Delete AsyncOperation if Status Code = Successful** option.
 
 :::image type="content" source="media/plugin-registration-tool-delete-asyncoperation-option.png" alt-text="Set Delete AsyncOperation if Status Code = Successful" lightbox="media/plugin-registration-tool-delete-asyncoperation-option.png":::
  
