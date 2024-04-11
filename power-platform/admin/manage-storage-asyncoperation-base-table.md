@@ -135,17 +135,18 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
           | Group  | Setting   | Criteria | Selected Values |
           |---------|---------|---------|------|
           |AND    | Status      | Equals             | Completed   |
-          |AND    | Completed On | Older Than X Days  | 7
+          |AND    | Completed On | Older Than X Days  | 7<br><br>Always start with a narrow condition that limits deleted records (**older than 3 years**), then move to progressively wider delete criteria (**older than 3 months**) and then to wider delete criteria (**older than 7 days**). |
           |AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
 :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
 
-6. Preview the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. 
+6. Select **Preview Records** to eview the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
+7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days.
+
+  [**Bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) can be configured to run **on schedule** and be **recurring** to Delete records once **every week**.
 
  :::image type="content" source="media/bulk-deletion-job-preview.png" alt-text="Preview Bulk Deletion Identified records." lightbox="media/bulk-deletion-job-preview.png" :::
 
-[**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) can be configured to run **on schedule** and be **recurring** to:
-- Delete records once **every week**.
 
 :::image type="content" source="media/bulk-deletion-schedule-1.png" alt-text="Bulk Deletion Schedule" lightbox="media/bulk-deletion-schedule-1.png":::
 
