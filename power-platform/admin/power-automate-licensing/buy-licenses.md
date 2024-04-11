@@ -51,7 +51,7 @@ Follow these steps to assign Hosted Process capacity to an environment.
 
 1. Select **Save**.
 
-   After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment
+   After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
 
 
 ### Assign Process license
@@ -74,6 +74,9 @@ Follow these steps to assign Process capacity to an environment.
 1. Select the edit button on an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
+   > [!TIP]
+   > Power Automate Process is the same as Process license.
+   
    > [!NOTE]
    > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
 
