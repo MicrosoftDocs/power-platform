@@ -125,81 +125,62 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
 
 ### Delete completed, system jobs jobs that are older than 7 days
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
+
 3. Select **Data management** > **Bulk deletion** > **New**.
+
 4. The **Bulk Deletion Wizard** is displayed. Select **Next**.
+
 5. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
-      1. In the **Look for** field, select System Jobs.
+      1. In the **Look for** field, select **System Jobs**.
       2. Enter the following criteria:
 
-          | Group  | Setting   | Criteria | Selected Values |
+          | Group  | Setting   | Criteria | Selected values |
           |---------|---------|---------|------|
           |AND    | Status      | Equals             | Completed   |
           |AND    | Completed On | Older Than X Days  | 7<br><br>Always start with a narrow condition that limits deleted records (**older than 3 years**), then move to progressively wider delete criteria (**older than 3 months**) and then to wider delete criteria (**older than 7 days**). |
           |AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
-:::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-1.png" alt-text="Recurring Bulk Deletion System Jobs view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-1.png" :::
 
-6. Select **Preview Records** to eview the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
-7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days.
+6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
 
-  [**Bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) can be configured to run **on schedule** and be **recurring** to Delete records once **every week**.
+7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
 
- :::image type="content" source="media/bulk-deletion-job-preview.png" alt-text="Preview Bulk Deletion Identified records." lightbox="media/bulk-deletion-job-preview.png" :::
-
-
-:::image type="content" source="media/bulk-deletion-schedule-1.png" alt-text="Bulk Deletion Schedule" lightbox="media/bulk-deletion-schedule-1.png":::
-
-Always start with a narrow condition that limits deleted records (**older than 3 years**), then move to progressively wider delete criteria (**older than 3 months**) and then to wider delete criteria (**older than 7 days**). 
-
-- Delete records **older** than **1 year**.
-- Delete records **older** than **30 days**.
-- Delete records **older** than **7 days**.
-
-
-:::image type="content" source="media/bulk-deletion-schedule-2.png" alt-text="Bulk Deletion Criteria" lightbox="media/bulk-deletion-schedule-2.png":::
+8. On the **Review and Submit Bulk Deletion Details** page, select **Submit**. 
  
 For more information on how to configure bulk delete jobs for **AsyncOperationBase** table, see [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table).
 
-### Delete workflow jobs
+### Delete completed, system jobs jobs that are for workflows
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
+
 3. Select **Data management** > **Bulk deletion** > **New**.
 
-:::image type="content" source="media/storage-bulk-delete-create-new-bulk-delete.png" alt-text="Bulk Deletion System Jobs view." lightbox="media/storage-bulk-delete-create-new-bulk-delete.png" :::
+4. The **Bulk Deletion Wizard** is displayed. Select **Next**.
 
-5. To bulk delete **AsyncOperationBase** records specify the following criteria on `System Jobs`.
+5. The **Define Search Criteria** page is displayed. To bulk delete **AsyncOperationBase** records, complete the following steps:
+     1. In the **Look for field**, select **System Jobs**.
+     2. Enter the following criteria:
 
-| Group  | Setting   | Criteria | Selected Values |
-   |---------|---------|---------|
-   |**AND**     | **Status Reason** | Equals | **`Succeeded`**    |
-   |**AND**    | **Status** | Equals  | **`Completed`**
-   |**AND**     | **System Job Type** |Equals   | **`Workflow`** |
-
-   :::image type="content" source="media/bulk-deletion-async-operation-base-search-criteria-2.png" alt-text="Bulk Deletion System Jobs Serach Criteria view." lightbox="media/bulk-deletion-async-operation-base-search-criteria-2.png" :::
-
-6. Preview the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. 
-
- :::image type="content" source="media/bulk-deletion-job-preview.png" alt-text="Preview Bulk Deletion Identified records." lightbox="media/bulk-deletion-job-preview.png" :::
-
-[**Bulk Delete Jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) can be configured to run **on schedule** and be **recurring** to:
-- Delete records once **every week**.
-
-:::image type="content" source="media/bulk-deletion-schedule-1.png" alt-text="Bulk Deletion Schedule" lightbox="media/bulk-deletion-schedule-1.png":::
-
-Always start with a narrow condition that limits deleted records (**older than 3 years**), then move to progressively wider delete criteria (**older than 3 months**) and then to wider delete criteria (**older than 7 days**). 
-
-- Delete records **older** than **1 year**.
-- Delete records **older** than **30 days**.
-- Delete records **older** than **7 days**.
+         | Group  | Setting   | Criteria | Selected values |
+         |---------|---------|---------|-----|
+         |AND    | Status Reason | Equals | Succeeded    |
+         |AND   | Status | Equals  | Completed
+         |AND    | System Job Type |Equals   | Workflow |
 
 
-:::image type="content" source="media/bulk-deletion-schedule-2.png" alt-text="Bulk Deletion Criteria" lightbox="media/bulk-deletion-schedule-2.png":::
- 
-For more information on how to configure bulk delete jobs for **AsyncOperationBase** table, see [Cleaning up records from the AsyncOperationBase / WorkflowLogBase table](https://cloudblogs.microsoft.com/dynamics365/it/2018/06/21/cleaning-up-records-from-the-asyncoperationbase-workflowlogbase-table).
+6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
+
+7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
+
+8. On the **Review and Submit Bulk Deletion Details** page, select **Submit**. 
 
 ## Appendix
 ### Set option to delete successfully completed asynchronous workflow jobs
+
+
 
 :::image type="content" source="media/storage-data-WorkflowJobRetentionSetting.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs." lightbox="media/storage-data-WorkflowJobRetentionSetting.png":::
  
