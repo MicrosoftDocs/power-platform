@@ -179,8 +179,7 @@ For more information on how to configure bulk delete jobs for **AsyncOperationBa
 
 ## Appendix
 ### Set option to delete successfully completed asynchronous workflow jobs
-For asynchronous workflows, we recommend enabling Automatically delete completed workflow jobs (to save disk space) in the workflow editor. This allows the system to delete workflow logs for successful executions to save space.
-
+For asynchronous workflows, we recommend selecting the **Automatically delete completed workflow jobs (to save disk space)** option in the workflow editor. This allows the system to delete workflow logs for successful executions to save space.
 
 :::image type="content" source="media/storage-data-WorkflowJobRetentionSetting.png" alt-text="Set Workflow Job Retention to automatically delete completed workflow jobs." lightbox="media/storage-data-WorkflowJobRetentionSetting.png":::
  
