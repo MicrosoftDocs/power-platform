@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 02/23/2024
+ms.date: 04/11/2024
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner
@@ -81,8 +81,10 @@ To deploy as the pipeline stage owner, follow these steps.
       Action Name: UpdateApprovalStatus (20 = completed, 30 = rejected)
 
 ## Delegated deployment samples
+
 > [!IMPORTANT]
-    > The functionality provided in these samples is now supported natively in the product, but may not be available in your region yet.  
+> The functionality provided in these samples is now supported natively in the product, but may not be available in your region yet.
+
 This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
 
 Download and import the managed solution to your pipelines host environment. The solution can then be customized to fit the needs of your organization. 
@@ -108,8 +110,10 @@ All delegated deployments are pending until approved. Ensure your admin has conf
 The deploying identity. For delegated deployments, the owner is the delegated service principal or pipeline stage owner.
 
 ### How can makers access deployed objects within target environments?
+
 > [!IMPORTANT]
-    > Native functionality for sharing during deployment is currently rolling out, allowing makers to request access to deployed resources as part of the deployment request.
+> Native functionality for sharing during deployment is currently becoming available, allowing makers to request access to deployed resources as part of the deployment request.
+
 Requesting makers might not have access to deployed resources in target environments. Admins must assign security roles and share deployed apps, flows, and so on, within the Power Platform admin center. Alternatively, admins can build automations to manage access.
 
 ### Can I add custom approval steps?
