@@ -133,8 +133,8 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
       2. Enter the following criteria:
 
           | Group  | Setting   | Criteria | Selected Values |
-          |---------|---------|---------|
-          |AND    | Status | Equals | Completed   |
+          |---------|---------|---------|------|
+          |AND    | Status      | Equals             | Completed   |
           |AND    | Completed On | Older Than X Days  | 7
           |AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
