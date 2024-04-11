@@ -143,7 +143,7 @@ Customers can configure other [**bulk delete jobs**](/power-platform/admin/clean
           |AND    | System Job Type | Does Not Equal   | Bulk Email <br>Import File Parse<br>Workflow |
 
 
-6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
+6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
 
 7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
 
@@ -171,7 +171,7 @@ For more information on how to configure bulk delete jobs for **AsyncOperationBa
          |AND    | System Job Type |Equals   | Workflow |
 
 
-6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to nake sure that no data gets unintendedly deleted in the process. Then select **Next**.
+6. Select **Preview Records** to view the records that will be deleted from the specified search criteria to make sure that no data gets unintendedly deleted in the process. Then select **Next**.
 
 7. On the **Select Options** page, select the **Run this job after every** option, and then select **7** days. Then select **Next**.
 
