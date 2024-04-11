@@ -94,7 +94,7 @@ Use the following queries to diagnose problems related to  **AsyncOperationBase*
 
 ## System job status
 
-To access the System Jobs page, use the following steps.
+To access the **System Jobs** page, use the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2. Select **Environments** in the navigation pane > select your environment > select **Settings** on the command bar.
