@@ -27,6 +27,7 @@ Plan|Description
 --------|------
 Power Automate premium plan|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic Process Automation (RPA)](#robotic-process-automation) and AI. This plan includes the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#ai-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50MB per user license up to 100GB per tenant). This plan can be purchased for a monthly fixed cost for each user. [Purchase it](https://powerautomate.microsoft.com/pricing)
 Power Automate process plan| Licensed per bot, Power Automate Process licenses a single ‘automation’ bot that can be used for unattended robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization. [Purchase it](https://powerautomate.microsoft.com/pricing) 
+Power Automate hosted process plan | Licensed per bot, Power Hosted Process is a super-set of the Power Automate Process, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group enabling RPA with zero infrastrcuture. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate pay-as-you-go plan (preview)| With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
 Power Automate per user plan | This plan is no longer available for purchase from [pricing page](https://powerautomate.microsoft.com/pricing). However, customers can purchase it via deal desk.Purchase Power Automate premium plan instead of this plan. This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate. This includes [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
 Power Automate per flow plan | This plan is no longer available for purchase from [pricing page](https://powerautomate.microsoft.com/pricing). However, customers can purchase it via deal desk. Purchase process plan instead of this plan. With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for five active flows. There's a monthly fee for each additional active flow (beyond the five flows that are included in the base fee).
@@ -67,6 +68,7 @@ Here's a chart that lays out the limits that are associated with the different l
 |--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
 Power Automate premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included|One bot included|Not Included|5000|250MB|2GB|Included|50MB per user license up to 100GB per tenant|
 Power Automate process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|50MB|200MB|Not Included|Not Included
+Power Automate hosted process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|Not Included|Not Included|Not Included|Not Included
 Office 365|Actual limit-6K/user Transition period limit-10K/flow|Included|Not included|Not included|Not Included|Not included|Not included|Not included|Not included|Not included
 Power Apps premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of a Power App|Not included|Not included|500 credits|250MB|2GB|Not included|Not included
 Dynamics 365 professional 1|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of D365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
@@ -133,6 +135,7 @@ To help ensure service levels, availability and quality, there are limits to the
 |--------|--------|----------|
 Power Automate premium|40K/user | 200K/flow|
 Power Automate process plan|250K/process | 500K/process|
+Power Automate hosted process plan|250K/process | 500K/process|
 Office 365|6K/user| 10K/flow|
 Power Apps premium|40K/user | 200K/flow|
 Dynamics 365 professional|40K/user | 200K/flow|
@@ -297,7 +300,7 @@ If a user has multiple licenses allocated within the same product line, for exam
 | --- | --- |
 | Low | Free<br>Microsoft 365 plans<br>Power Apps Plan 1, Power Apps Per App plans<br>Power Automate Plan 1<br>All license trials<br>Dynamics 365 Team Member |
 | Medium |Power Apps triggered flows, Power Apps Plan 2, Power Apps per user plan<br>Power Automate Plan 2, Power Automate per user, Power Automate Premium plans<br>Dynamics 365 Enterprise plans, Dynamics 365 Professional plans,  Power Apps Plan 2, Power Apps per user plan|
-| High | Power Automate per flow plan, Power Automate Process plan|
+| High | Power Automate per flow plan, Power Automate Process plan, Power Automate Hosted Process plan|
 | Unlimited |Pay-as-you-go plan |
 
 Based on the license of the owner, a flow gets a performance profile which in turn decides the Power Platform request limits of the flow. If there are multiple licenses assigned to the owner, Power Automate picks the highest plan from the list.
@@ -373,7 +376,7 @@ Power Automate trials are available for 90 days. There are two types of trials a
 
 ### Admin managed trial
 
-Global admins use the Microsoft 365 admin center to start these trials and assign them to users.  These trials are for 30 days. Tenant admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). Admins can get Power Automate Premium, Power Automate Process or the Power Automate hosted RPA trial.
+Global admins use the Microsoft 365 admin center to start these trials and assign them to users.  These trials are for 30 days. Tenant admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). Admins can get Power Automate Premium, Power Automate Process or the Power Automate Hosted Process trial.
 
 Follow these steps to get started.
 
