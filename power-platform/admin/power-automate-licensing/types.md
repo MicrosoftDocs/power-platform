@@ -142,6 +142,10 @@ Dynamics 365 professional|40K/user | 200K/flow|
 Dynamics 365 Enterprise applications |40K/user | 200K/flow|
 Dynamics 365 Team member|6K/user | 10K/flow|
 
+> [!NOTE]
+> The Power Automate process plan license can be stacked to increase the Power Platform requests limit only when allocated to a cloud flow.
+
+
 ## Transition period
 
 All customers are in a transition period. That means that enforcement isn't strict and limits are higher. The transition period ends after [Power Platform admin center reports](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) are generally available. Organizations will then have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
@@ -206,7 +210,7 @@ Consider the following flow where every email attachment is saved to OneDrive. T
 
 - If a parent flow has a per flow license, the parent flow and all child flows use the per flow license limits.
 
-- If a flow has a Process license, the flow, all child flows of the flow and any in context flows of the flow share the process license limits.
+- If a flow has a Process license, the flow, all child flows of the flow and any associated flows of the flow share the process license limits.
 
 #### As a maker, what tools do I have to analyze my usage?
 
