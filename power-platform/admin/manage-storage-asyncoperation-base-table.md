@@ -71,7 +71,7 @@ Due to the need to test these deletion actions first in a sandbox environment, t
 
 All environments are configured with out-of-box [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete successfully completed workflow system jobs that're older than **30 days**. If acceptable to your business, to reduce additional capacity associated with the **AsyncOperationBase** table, consider configuring worflow system jobs older than **7 days** to be deleted using [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs).
 
-## Diagnostic queries (understand the state of the asyncoperation table data)  
+## Diagnostic queries 
 Use [Diagnostic queries](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#diagnostic-queries) to help diagnose problems jobs related to **AsyncOperationBase**.
 
 -	[Jobs by state, status, and type](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-by-state-status-and-type)
