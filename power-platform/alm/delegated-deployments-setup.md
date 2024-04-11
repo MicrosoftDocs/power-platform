@@ -108,7 +108,8 @@ All delegated deployments are pending until approved. Ensure your admin has conf
 The deploying identity. For delegated deployments, the owner is the delegated service principal or pipeline stage owner.
 
 ### How can makers access deployed objects within target environments?
-
+> [!IMPORTANT]
+    > Native functionality for sharing during deployment is currently rolling out, allowing makers to request access to deployed resources as part of the deployment request.
 Requesting makers might not have access to deployed resources in target environments. Admins must assign security roles and share deployed apps, flows, and so on, within the Power Platform admin center. Alternatively, admins can build automations to manage access.
 
 ### Can I add custom approval steps?
