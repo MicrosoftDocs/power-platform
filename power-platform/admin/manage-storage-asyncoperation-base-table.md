@@ -69,7 +69,7 @@ Due to the need to test these deletion actions first in a sandbox environment, t
 >
 > - **Test these actions in a sandbox environment** before proceeding with the final delete operation. 
 
-All environments are configured with out-of-box [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete successfully completed workflow system jobs that're older than **30 days**. If acceptable to your business, to reduce additional capacity associated with the **AsyncOperationBase** table, consider configuring worflow system jobs older than **7 days** to be deleted using [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs).
+All environments are configured with out-of-box [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs) to delete successfully completed workflow system jobs that're older than **30 days**. If acceptable to your business, to reduce additional capacity associated with the **AsyncOperationBase** table, consider configuring workflow system jobs older than **7 days** to be deleted using [**bulk delete jobs**](/power-platform/admin/cleanup-asyncoperationbase-table?branch=ceian-manage-storage-database-table-docs#bulk-deletion-jobs).
 
 ## Diagnostic queries 
 Use [Diagnostic queries](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#diagnostic-queries) to help diagnose problems jobs related to **AsyncOperationBase**.
@@ -82,7 +82,7 @@ Use [Diagnostic queries](/power-apps/developer/data-platform/asynchronous-servic
 
 -	[Jobs waiting for system resources to become available](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#jobs-waiting-for-system-resources-to-become-available)
 
-Use the following queries to diagnose problems rleated to  **AsyncOperationBase** file storage.
+Use the following queries to diagnose problems related to  **AsyncOperationBase** file storage.
 
 -	[AsyncOperation file storage datablobid count](/power-apps/developer/data-platform/asynchronous-service?tabs=sql#asyncoperation-file-storage-datablobid-count)
 
@@ -102,7 +102,7 @@ To access the System Jobs page, use the following steps.
 
 System jobs have the following status:
 
-- **Completed** - The job no longer executes any step, and providing three possible status eeasons:   
+- **Completed** - The job no longer executes any step, and providing three possible status reasons:   
   - **Succeeded** - The job did what was expected.
   - **Failed** - There was a failure while processing the job. 
   - **Canceled** - The job won't be executed.
