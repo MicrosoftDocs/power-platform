@@ -65,7 +65,8 @@ You can localize the text strings in the Onboarding Buddy app to support employe
     - **String Type** is an optional value that can help you sort and manage localized strings later.
 1. Select **Save & Close**.
 
-## See also
+### See also
 
-- [Install and set up the Onboarding Buddy template](install-and-set-up.md)
-- [Get started using the Onboarding Buddy app](use.md)
+[Install and set up the Onboarding Buddy template](install-and-set-up.md)
+
+[Get started using the Onboarding Buddy app](use.md)

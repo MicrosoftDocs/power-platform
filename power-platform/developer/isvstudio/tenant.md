@@ -1,7 +1,7 @@
 ---
 title: Tenant page of ISV Studio | Microsoft Docs
 description: Learn about the Tenant page capabilities provided by the ISV Studio portal.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
@@ -15,6 +15,8 @@ contributors:
 ---
 
 # The Tenant page
+
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 To view the install history of a tenant, the ISV can switch to **Top tenants** view on the home page and select a tenant.
 

@@ -1,7 +1,7 @@
 ---
 title: Introductions to the Power Platform ISV Studio app install failure analytics| Microsoft Docs
 description: Measure app's performance and get insights.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
@@ -16,8 +16,7 @@ contributors:
 
 # Install failures
 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 As an ISV, you need data like failure details or failure count to quickly resolve the issues for the customers. You can use the install failures feature to get the install failures data.
 
