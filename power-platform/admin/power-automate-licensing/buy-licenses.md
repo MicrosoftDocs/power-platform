@@ -39,6 +39,8 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 
 ### Assign Hosted Process license
 
+It's easy and scalable to assign the Hosted Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
+
 Follow these steps to assign Hosted Process capacity to an environment.
 
 1. Select **Resources** > **Capacity** on the left side of the screen.
@@ -65,7 +67,7 @@ Here are the two steps you must take if you want to assign a Process license.
    > [!NOTE]
    > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
 
-It's easy and scalable to allocate the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
+It's easy and scalable to assign the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
 
 Follow these steps to assign Process capacity to an environment.
 
