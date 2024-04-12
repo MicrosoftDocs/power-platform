@@ -48,11 +48,7 @@ IP-based cookie binding sets the IP address claim in the session cookie. Each re
 
 3. Use a client tool such as Fiddler to copy the session cookie.
 
-4. On a different computer (not in the same network), open [Postman](https://www.postman.com/).
-
-5. Fill in the required details along with the copied cookie.
-
-6. Submit the request. An HTTP 403 code should be returned.
+4. Submit a request from an alternate computer (outside of the original network) using the previously obtained session cookie. You should expect to receive an HTTP 403 error in response.
 
 ## Exclusions
 
