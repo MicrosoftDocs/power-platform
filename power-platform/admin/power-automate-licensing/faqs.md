@@ -32,7 +32,7 @@ To learn more about license plans that include Power Automate capabilities, go t
 
 ### Which Power Automate licenses do I need?
 
-Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate Process license for every business process or machines that run unattended automation. The Power Automate Hosted Process is a super-set of the Power Automate Process license, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastrcuture.
+Microsoft recommends that most organizations buy the Power Automate premium license for every user in their organization. Purchase the Power Automate Process license for every business process or machines that run unattended automation. The Power Automate Hosted Process is a superset of the Power Automate Process license, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastrcuture.
 
 The Premium user plan is intended for a human user to support the broad adoption of an automation culture in an organization. It's required for RPA developers to build and manage desktop flows on the Power Automate portal.
 
