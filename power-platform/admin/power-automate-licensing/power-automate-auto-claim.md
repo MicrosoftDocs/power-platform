@@ -44,6 +44,11 @@ In the Power Automate portal:
 
 - User triggers / saves / turns on a premium cloud flow with attended RPA (Robotic Process Automation)
 - User requests the Power Automate premium license
+
+In the Power Automate for desktop application (installer version 2.43 onwards):
+
+- User selects **Go Premium**
+- User has a self-assisted premium trial and is actively using RPA capabilities
   
 ## Create an auto-claim policy for Power Automate licenses
 
