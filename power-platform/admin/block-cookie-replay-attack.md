@@ -1,7 +1,7 @@
 ---
 title: Block cookie replay attacks in Dataverse
 description: Learn how to use IP-based cookie binding to block session hijacking attacks in Dataverse.
-ms.date: 04/12/2024
+ms.date: 05/17/2023
 ms.topic: conceptual
 author: ritesp
 ms.reviewer: sericks
