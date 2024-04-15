@@ -5,7 +5,7 @@ author: kenseongtan
 ms.topic: conceptual
 ms.subservice: admin
 ms.author: kenseongtan
-ms.date: 03/15/2024
+ms.date: 04/15/2024
 search.audienceType:
   - admin
 ms.custom:
@@ -45,7 +45,7 @@ In the Power Automate portal:
 - User triggers / saves / turns on a premium cloud flow with attended RPA (Robotic Process Automation)
 - User requests the Power Automate premium license
 
-In the Power Automate for desktop application (installer version 2.43 onwards):
+In the Power Automate for desktop application (installer version 2.43 or later version):
 
 - User selects **Go Premium**
 - User has a self-assisted premium trial and is actively using RPA capabilities
