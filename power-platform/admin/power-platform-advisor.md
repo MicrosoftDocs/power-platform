@@ -1,5 +1,5 @@
 ---
-title: Use Power Platform Advisor (preview)
+title: Use Power Platform Advisor
 description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
@@ -12,9 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Use Power Platform Advisor (preview)
-
-[This article is prerelease document and is subject to change.]
+# Use Power Platform Advisor
 
 Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
@@ -26,7 +24,7 @@ With Advisor, administrators can:
 
 ## Access Power Platform Advisor
 
-All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor (Preview)** in the navigation menu.
+All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor** in the navigation menu.
 
 Tenant admins must have at least _one_ of the following roles:
 
@@ -35,10 +33,8 @@ Tenant admins must have at least _one_ of the following roles:
 - Global admin role within the Power Platform tenant
 
 > [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - Advisor currently scans only the Managed Environments in the tenant for recommendations. Scanning is done once a week.
+> - Power Platform Advisor scans for analytics based recommendation once a week. You can check the last scanned date within the recommendation panel.
+> - If a resource is deleted outside of the Advisor, certain actions will fail.
 > - To submit feedback and suggestions, use the [Power Platform Advisor - Feedback](https://aka.ms/padvisorfeedback) form.
 
 ## Turn on Power Platform Advisor
@@ -49,15 +45,15 @@ Advisor is turned on by default for all [Managed Environments](managed-environme
 
 ### Recommendations
 
-Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
+Power Platform tenant admins can view the top recommendations on the **Advisor** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
 
 - Select **View details** on any recommendation to view its details.
-- Select **View recommendations** to view all recommendations on the **Advisor (Preview)** page.
+- Select **View recommendations** to view all recommendations on the **Advisor** page.
 
 :::image type="content" source="media/power-platform-advisor/advisor-card.svg" alt-text="Advisor card on the home page.":::
 
 > [!TIP]
-> If the home page is customized, you don't see the **Advisor (Preview)** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
+> If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
 > :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page in Power Platform admin center.":::
 
 ### Inline actions
@@ -101,7 +97,7 @@ Once installed, admins can view the summary cards in their Teams chats.
 
 ## Categories of recommendations
 
-During the public preview, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
+At this time, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
 
 ### Apps without valid owners
 
@@ -123,7 +119,7 @@ Once assigned, you see a success message and the **Action State** column for tha
 > [!NOTE]
 >
 > - New owner information isn't updated in the list.
-> - The app is shown in the list until the next planned scan.
+> - The app will be shown in the list until the next planned scan.
 > - New owners don't automatically get permissions to the environment or data sources used in the app. Admins must manually give owners permission.
 
 ##### Promote co-owner to owner
@@ -163,6 +159,10 @@ Once you confirm the quarantine operation, the selected apps are quarantined. Af
 Select one or more apps from the list and select **Delete**.
 
 After you confirm the delete operation, the selected apps are deleted.
+
+> [!NOTE]
+> - Once an action is taken, it takes up to 1 week for the apps to be removed from the list.
+> - Quarantine and Delete actions will fail if the app is already deleted outside the Advisor.
 
 ### Apps shared with everyone
 
