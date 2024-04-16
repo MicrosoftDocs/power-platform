@@ -1,13 +1,13 @@
 ---
-title: "ActivityPointerBase table storage  | MicrosoftDocs"
-description: Information about managing ActivityPointerBase table storage.
+title: ActivityPointerBase table storage
+description: Learn about managing ActivityPointerBase table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/29/2024
+ms.date: 04/16/2024
 ms.subservice: admin
 ms.author: ceian
-ms.reviewer: 
+ms.reviewer: sericks
 contributors:
 - shilpr
 - sarmathi
