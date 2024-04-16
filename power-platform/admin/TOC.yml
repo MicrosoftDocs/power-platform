@@ -606,7 +606,7 @@
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
                   href: prevent-elevation-security-role-privilege.md
-                - name: Troubleshoot common user access issues
+                - name: Troubleshoot user access issues
                   href: troubleshooting-user-needs-read-write-access-organization.md
                 - name: Manage user account synchronization
                   href: manage-user-account-synchronization.md
