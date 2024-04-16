@@ -61,7 +61,7 @@ Several factors influence user access in an environment. To help administrators 
 
 ### Dataverse security roles to users
 
-When an error screen stating the user has no roles is encountered, a system administrator will need to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see:
+When an error screen stating the user has no roles is encountered, a system administrator needs to assign roles to the user. Roles can be assigned directly to the user, or to a group team that the user is a part of. For information on how to assign Dataverse security roles to a user, see:
 [Assign a security role to a user](assign-security-roles.md).
 
 ### Troubleshoot record visibility issues
@@ -71,17 +71,17 @@ See [How access to a record is determined](how-record-access-determined.md).
 ### Troubleshoot license and membership issues
 
 1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](assign-licenses.md).
-2. Once a license is assigned, it may take some time for the license change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
+2. Once a license is assigned, it may take some time for the license change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can readd the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
 
 ### Troubleshoot access issues
 
 1. As a system administrator of the environment, verify that the environment is associated with any Microsoft Entra group. See: [Associate a security group with an environment](control-user-access.md#associate-a-security-group-with-an-environment).
 2. Ensure the user with the access issue is a member of the group associated with the environment. See: [Create a security group and add members to the security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
-3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can re-add the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
+3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can readd the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
 
 ### Troubleshoot permission issues
 
-You don't have sufficient permissions to access customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). A system administrator will need to do the following:  
+You don't have sufficient permissions to access customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). A system administrator needs to complete the following steps.  
   
 1. In the Power Platform admin center, select an environment.
 
@@ -107,23 +107,23 @@ You don't have sufficient permissions to access customer engagement apps (Dynami
 
 ### Troubleshoot unaccounted user issues
 
-In some cases, users are not automatically provisioned into environments.
+In some cases, users aren't automatically provisioned into environments.
 
 If a user meets all access requirements but is still missing from an environment, the user may fall into one of the following cases:
 
-1. Users with only Office licenses (with Dataverse plan enabled) will not be pre-provisioned into environments.
+1. Users with only Office licenses (with Dataverse plan enabled) won't be pre-provisioned into environments.
 
-2. Owners of Microsoft Entra groups that are associated with environments will not be pre-provisioned.
+2. Owners of Microsoft Entra groups that are associated with environments won't be pre-provisioned.
 
-3. Members of Microsoft Entra groups that are part of a Group Team created for the Microsoft Entra group will not be pre-provisioned.
+3. Members of Microsoft Entra groups that are part of a Group Team created for the Microsoft Entra group won't be pre-provisioned.
 
-4. Users will not be pre-provisioned into Microsoft Dataverse for Teams environments.
+4. Users won't be pre-provisioned into Microsoft Dataverse for Teams environments.
 
-Although these users are not pre-provisioned, they can be added to environments through on-demand sync. See the section below for ways to add or refresh users on demand.
+Although these users aren't pre-provisioned, they can be added to environments through on-demand sync. See the section below for ways to add or refresh users on demand.
 
 ### Troubleshoot on demand user management
 
-As mentioned above, there are cases where users are not provisioned automatically. Additionally, there may be delays in reflecting the users' latest status in environments. In such cases, adding or refreshing specific users on demand can be helpful.
+As mentioned above, there are cases where users aren't provisioned automatically. Additionally, there may be delays in reflecting the users' latest status in environments. In such cases, adding or refreshing specific users on demand can be helpful.
 
 There are multiple ways to do this:
 
@@ -133,7 +133,7 @@ There are multiple ways to do this:
 
 3. **Add users** in the Power Platform admin center: Admins can add or refresh users. See [Add users to an environment](add-users-to-environment.md).
 
-4. **Powershell cmdlets**: See [Powershell support for Power Apps](./powerapps-powershell.md#power-apps-cmdlets-for-administrators).
+4. **PowerShell cmdlets**: See [PowerShell support for Power Apps](./powerapps-powershell.md#power-apps-cmdlets-for-administrators).
 
 5. **Connectors**: See [Power Platform for Admins](/connectors/powerplatformforadmins/#force-sync-user).
 
