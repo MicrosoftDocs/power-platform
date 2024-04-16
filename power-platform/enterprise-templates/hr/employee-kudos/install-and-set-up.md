@@ -13,11 +13,15 @@ ms.subservice: solution-templates
 
 # Install and set up the Employee Kudos template
 
-Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+Enterprise templates for Power Platform are enterprise-ready solutions designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
 
 Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
 
-More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Employee Kudos template.
 
@@ -140,7 +144,7 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. For each of the connections listed, select the *existing connection that was created in the previous step*.
 1. Select **Next**.
 1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
-1. 1. Select **Import** to start the import process of the *Employee Kudos* solution. Once the import is complete, you're notified with a *Success* message.
+1. Select **Import** to start the import process of the *Employee Kudos* solution. Once the import is complete, you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
@@ -310,6 +314,6 @@ To do this:
 
 1. Select **Start auditing**.
 
-## Next steps
+### Next step
 
 [Get started managing the Employee Kudos app](manage.md)

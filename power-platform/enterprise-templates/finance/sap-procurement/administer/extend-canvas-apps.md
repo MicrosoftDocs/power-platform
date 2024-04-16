@@ -34,10 +34,10 @@ All apps are developed using published best practices and standards. We recommen
 | Standard | Comments | More information |
 | -------- | -------- | ---------------- |
 | Feature Status | Features that are turned on or off by default. Includes a subset of preview features except experimental features. | [Understand experimental, preview, and retired features in canvas apps](/power-apps/maker/canvas-apps/working-with-experimental-preview) |
-| Responsiveness | Responsive to single device type such as tablet or mobile. Allows the app to snap to various standard screen and container sizes including embedding the apps within Microsoft Teams. Uses auto-layout responsive container controls extensively. | [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps)
-| Naming & Coding Standards | Controls, variables, collections, and Dataverse naming standards are followed to promote ease of discovery and maintenance. | [Power Apps Canvas App Coding Standards and Guidelines](https://powerapps.microsoft.com/blog/powerapps-canvas-app-coding-standards-and-guidelines)
+| Responsiveness | Responsive to single device type such as tablet or mobile. Allows the app to snap to various standard screen and container sizes including embedding the apps within Microsoft Teams. Uses auto-layout responsive container controls extensively. | [Building responsive canvas apps](/power-apps/maker/canvas-apps/build-responsive-apps) |
+| Naming & Coding Standards | Controls, variables, collections, and Dataverse naming standards are followed to promote ease of discovery and maintenance. | [Power Apps Canvas App Coding Standards and Guidelines](https://powerapps.microsoft.com/blog/powerapps-canvas-app-coding-standards-and-guidelines) |
 | Accessibility | Properties that support accessibility. For example, Accessible Labels, Roles, Live, Focus Border Thickness, Color Contrast, and Tab Orders. These properties avoid known design patterns that don't support accessibility requirements. | [Create accessible canvas apps](/power-apps/maker/canvas-apps/accessible-apps) and [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations) |
-| Performance | Best practices are followed to avoid known performance limitations. | [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips)
+| Performance | Best practices are followed to avoid known performance limitations. | [Tips and best practices to improve performance of canvas apps](/power-apps/maker/canvas-apps/performance-tips) |
 
 ## Global app color themes
 
@@ -268,17 +268,12 @@ More information: [OnError property](/power-platform/power-fx/reference/object-a
 
 ## Related content
 
-[What are canvas apps?](/power-apps/maker/canvas-apps/getting-started)
-
-[Understand Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio)
-
-[Create a canvas app from within a solution](/power-apps/maker/canvas-apps/add-app-solution)
-
-[Building reusable UI with Power Apps component framework and canvas apps components](/power-platform/guidance/architecture/real-world-examples/pcf-canvas-components)
-
-[Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
-
-[Canvas apps for enterprise developers, partners, and ISVs](/power-apps/maker/canvas-apps/dev-enterprise-intro)
+- [What are canvas apps?](/power-apps/maker/canvas-apps/getting-started)
+- [Understand Power Apps Studio](/power-apps/maker/canvas-apps/power-apps-studio)
+- [Create a canvas app from within a solution](/power-apps/maker/canvas-apps/add-app-solution)
+- [Building reusable UI with Power Apps component framework and canvas apps components](/power-platform/guidance/architecture/real-world-examples/pcf-canvas-components)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Canvas apps for enterprise developers, partners, and ISVs](/power-apps/maker/canvas-apps/dev-enterprise-intro)
 
 ## Next steps
 
