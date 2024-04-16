@@ -202,11 +202,11 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Block cookie replay attacks
+                - name: Safeguarding Dataverse sessions with IP cookie binding
                   href: block-cookie-replay-attack.md
                 - name: Configure IP firewall
                   href: ip-firewall.md
-                - name: Use Power Platform Advisor (preview)
+                - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
               items:
@@ -694,6 +694,10 @@
                   href: cleanup-asyncoperationbase-table.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Database Tables
+              items:
+                - name: AsyncOperationBase table
+                  href: manage-storage-asyncoperation-base-table.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage
