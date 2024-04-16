@@ -40,13 +40,13 @@ See [Self-service sign up for Power Apps](/powerapps/maker/signup-for-powerapps)
 ### How users in my organization gain access to Power Apps
 Users within your organization can gain access to Power Apps in four ways:
 
-* They can individually sign up for a Power Apps trial as outlined in the [How do users sign up for Power Apps?](#how-do-users-sign-up-for-power-apps) section.
+* They can individually sign up for a Power Apps trial as outlined in the [How individual users can get started with Power Apps](#how-individual-users-can-get-started-with-power-apps) section.
 * You can assign a Power Apps license to them within the Microsoft 365 admin portal.
 * You can purchase Power Apps Per App Plans and allocate them in the Power Platform admin center. See [Power Apps per app plan](signup-for-powerapps-admin.md#power-apps-per-app-plan).
 * The user has been assigned a Microsoft 365 or Dynamics 365 plan that includes access to the Power Apps service. See the [Power Apps pricing page](https://powerapps.microsoft.com/pricing) for the list of Microsoft 365 and Dynamics 365 plans that include Power Apps capabilities.
 
 ### Restricting Power Apps sign ups in your organization
-Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section.
+Any individual can try out the features of Microsoft Power Apps for 30 days, and incur no costs as outlined in the [How individual users can get started with Power Apps](#how-individual-users-can-get-started-with-power-apps) section.
 
 As a global admin, you can control your users' ability to sign up for Power Apps trial with option 1. You do this by enabling or disabling self-service sign-up. If you want to disable all self-service sign-ups, use Microsoft Entra ID PowerShell commands to change the **AllowAdHocSubscriptions** setting. This option turns off self-service sign-up for all Microsoft cloud-based apps and services. 
 
@@ -114,7 +114,7 @@ As a qualifying organization, users in your organization are eligible to try out
 * If any user in your tenant participated in the Power Apps public preview between April 2016 and October 2016, you will see 10,000 licenses labeled as "Microsoft Power Apps and Logic flows".
 
     ![Licenses.](./media/signup-question-and-answer/licenses_2.png)
-* If any user in your tenant has signed-up for a Power Apps trial through **Option 1** or **Option 3** outlined in the [How do users sign up for Power Apps](#how-do-users-sign-up-for-power-apps) section, you will see 10,000 licenses labeled "Microsoft Power Apps".
+* If any user in your tenant has signed-up for a Power Apps trial through **Option 1** or **Option 3** outlined in the [How individual users can get started with Power Apps](#how-individual-users-can-get-started-with-power-apps) section, you will see 10,000 licenses labeled "Microsoft Power Apps".
 
     ![Licenses2.](./media/signup-question-and-answer/licenses_1.png)
 
