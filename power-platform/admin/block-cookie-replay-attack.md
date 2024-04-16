@@ -32,7 +32,7 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
 
 IP-based cookie binding sets the IP address claim in the session cookie. Each request is evaluated to compare the current IP address with the source IP address that was stored in the cookie when it was created. If the addresses don't match, the user is denied access.
 
-## Scenarios in which users will be asked to reauthenticate
+## Scenarios in which users are asked to reauthenticate
 
 - When any VPN client is turned on or off
 - When connecting to a wireless hotspot
@@ -47,15 +47,11 @@ IP-based cookie binding sets the IP address claim in the session cookie. Each re
 
 3. Use a client tool such as Fiddler to copy the session cookie.
 
-4. On a different computer (not in the same network), open [Postman](https://www.postman.com/).
-
-5. Fill in the required details along with the copied cookie.
-
-6. Submit the request. An HTTP 403 code should be returned.
+4. Submit a request from an alternate computer (outside of the original network) using the previously obtained session cookie. You should expect to receive an HTTP 403 error in response.
 
 ## Exclusions
 
-- If the user connects to Dataverse from the same IP address with the old, valid cookie, Dataverse will accept the cookie.
+- If the user connects to Dataverse from the same IP address with the old, valid cookie, Dataverse accepts the cookie.
 - If the traffic between your network and Power Platform is configured to use reverse proxy having dynamic IP address, IP-based cookie binding won't work.
 
 ## FAQ

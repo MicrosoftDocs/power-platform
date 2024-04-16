@@ -155,3 +155,7 @@ System-determined fields include:
 > For the initial migration of existing assets, it may be best to use the *Excel online* capability. From the menu bar, select **Export to Excel** and then **Open in Excel Online**. Data can be pasted in from an existing workbook and saved, as long as the field layout matches. Alternatively, if the source file is in .csv format, it can be imported using the *Import from Excel* menu option.
 
 You can view or edit existing assets. The asset name is in *hypertext* and links to the detailed view.
+
+### Next step
+
+[Get started using the Hardware Request and Management app](use.md)
