@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/07/2021
+ms.date: 04/16/2024
 search.audienceType: 
   - admin
 ---
@@ -50,20 +50,7 @@ Use the following steps to run user access diagnostics on a user in an environme
 
 ## Access issues
 
-The following issues are documented below.
-
-|Issue  |
-|---------|
-| [User access diagnostic tool in the Power Platform admin center](#user-access-diagnostic-tool-in-the-power-platform-admin-center)     |
-| [User has no roles](#user-has-no-roles)     |
-| [User doesn't have a license / user doesn't belong to the organization](#user-doesnt-have-a-license--user-doesnt-belong-to-the-organization)   |
-| [User isn't a member of the environment’s security group](#user-isnt-a-member-of-the-environments-security-group)  |
-| [User doesn’t have sufficient permissions](#user-doesnt-have-sufficient-permissions)     |
-| [User is missing from environment despite meeting all requirements](#user-is-missing-from-environment-despite-meeting-all-requirements)     |
-| [Adding or refreshing users on demand](#adding-or-refreshing-users-on-demand)    |
-| [Known issue](#known-issue)     |
-
-If you don't see your issue:
+The following issues are documented below. If you don't see your issue:
 
 - See if you can get your question answered here: <https://powerusers.microsoft.com/t5/Power-Apps-Community/ct-p/PowerApps1>.
 - Create a [support request](https://powerapps.microsoft.com/support/).
