@@ -206,7 +206,7 @@
                   href: block-cookie-replay-attack.md
                 - name: Configure IP firewall
                   href: ip-firewall.md
-                - name: Use Power Platform Advisor (preview)
+                - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
               items:
