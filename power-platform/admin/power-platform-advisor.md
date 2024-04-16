@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 1/29/2024
+ms.date: 04/16/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -33,8 +33,8 @@ Tenant admins must have at least _one_ of the following roles:
 - Global admin role within the Power Platform tenant
 
 > [!IMPORTANT]
-> - Power Platform Advisor scans for analytics based recommendation once a week. You can check the last scanned date within the recommendation panel.
-> - If a resource is deleted outside of the Advisor, certain actions will fail.
+> - Power Platform Advisor scans for analytics-based recommendations once a week. You can check the last scanned date within the recommendation panel.
+> - If a resource is deleted outside of the Advisor, certain actions fail.
 > - To submit feedback and suggestions, use the [Power Platform Advisor - Feedback](https://aka.ms/padvisorfeedback) form.
 
 ## Turn on Power Platform Advisor
@@ -119,7 +119,7 @@ Once assigned, you see a success message and the **Action State** column for tha
 > [!NOTE]
 >
 > - New owner information isn't updated in the list.
-> - The app will be shown in the list until the next planned scan.
+> - The app is shown in the list until the next planned scan.
 > - New owners don't automatically get permissions to the environment or data sources used in the app. Admins must manually give owners permission.
 
 ##### Promote co-owner to owner
@@ -161,8 +161,8 @@ Select one or more apps from the list and select **Delete**.
 After you confirm the delete operation, the selected apps are deleted.
 
 > [!NOTE]
-> - Once an action is taken, it takes up to 1 week for the apps to be removed from the list.
-> - Quarantine and Delete actions will fail if the app is already deleted outside the Advisor.
+> - Once an action is taken, it takes up to one week for the apps to be removed from the list.
+> - Quarantine and Delete actions fail if the app is already deleted outside the Advisor.
 
 ### Apps shared with everyone
 
