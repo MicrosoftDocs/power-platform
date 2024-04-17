@@ -1,6 +1,6 @@
 ---
-title: "Step 3: Create an AppSource package for your app | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "Learn about how to create an AppSource package (.zip file) to include your solution and demo data files along with other required files." # 115-145 characters including spaces. This abstract displays in the search result.
+title: "Step 3: Create an AppSource package for your app | Microsoft Docs"
+description: "Learn about how to create an AppSource package (.zip file) to include your solution and demo data files along with other required files."
 ms.date: 05/22/2023
 ms.reviewer: pehecke
 ms.topic: article
