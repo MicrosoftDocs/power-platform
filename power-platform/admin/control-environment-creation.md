@@ -56,15 +56,6 @@ disableDeveloperEnvironmentCreationByNonAdminUsers  = $True
 
 Set-TenantSettings -RequestBody $requestBody
 ```
-
-To permanently remove the autocreation of developer environments, a member of the Power Platform related [service admin roles](/power-platform/admin/use-service-admin-role-manage-tenant) must perform the following actions:
-
-- Remove the **Microsoft Power Apps for Developer** license. More information: [Service plan IDs for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
-- Disable [self-service sign-up](/azure/active-directory/enterprise-users/directory-self-service-signup).
-- Explicitly block all "internal" consent plans in the tenant using PowerShell:
-```powershell
-Remove-AllowedConsentPlans -Types @("Internal", "Viral")
-```
 More information: [Block trial licenses commands](/power-platform/admin/powerapps-powershell#block-trial-licenses-commands).
 
 ## Control environment creation through PowerShell
