@@ -94,7 +94,7 @@ Make sure that your users have a security role with the minimum privileges that 
 
 Don't use the [**min prv apps use** role](https://go.microsoft.com/fwlink/?linkid=2221577) that's available in the Microsoft Download Center. It's being retired soon. Instead, use or [copy the predefined security role App Opener](#create-a-security-role-by-copy-role), and then set the appropriate privileges.
 
-- To allow users to open a model-driven app or any Dynamics 365 customer engagement app, assign the App Owner role.
+- To allow users to open a model-driven app or any Dynamics 365 customer engagement app, assign the **App Opener** role.
 
 - To allow users to view tables, assign the following privileges:
 
