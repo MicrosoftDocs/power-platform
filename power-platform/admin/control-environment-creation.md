@@ -20,7 +20,9 @@ With the new provisioning model, those users with the correct licenses can creat
 - Dynamics 365 admins
 - Power Platform admins
 
-To restrict environment creation and management to admins, follow these steps:
+## Control environment creation in the Power Platform admin center
+
+To restrict environment creation and management to admins from the Power Platform admin center, follow these steps:
 
 1. Sign in to the Microsoft Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com), and select **Settings** on the left navigation pane.
 1. From the **Tenant settings** list, select from the following environment type creation settings:
@@ -79,7 +81,8 @@ Set-TenantSettings $settings
 ## FAQ
 
 ### Can I disable trial environment creation for users in the tenant?
-Yes. Use the following PowerShell commands to restrict trial environment creation.
+
+Yes. You can follow the steps in this article to [restrict environment creation in the Power Platform admin center](#control-environment-creation-in-power-platform) or use the following PowerShell commands to restrict trial environment creation.
 
 ```powershell
 $settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true }
