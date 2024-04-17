@@ -76,7 +76,7 @@
               href: view-license-consumption-issues.md
             - name: View license consumption for finance and operations apps
               href: view-license-consumption-finops-apps.md
-            - name: Manage licenses in your org
+            - name: Manage Power Apps licenses
               href: signup-question-and-answer.md
             - name: View Intelligent recommendations about licensing (preview)
               href: get-recommendations-licensing.md
@@ -202,7 +202,7 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Block cookie replay attacks
+                - name: Safeguarding Dataverse sessions with IP cookie binding
                   href: block-cookie-replay-attack.md
                 - name: Configure IP firewall
                   href: ip-firewall.md
@@ -606,7 +606,7 @@
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
                   href: prevent-elevation-security-role-privilege.md
-                - name: Troubleshoot common user access issues
+                - name: Troubleshoot user access issues
                   href: troubleshooting-user-needs-read-write-access-organization.md
                 - name: Manage user account synchronization
                   href: manage-user-account-synchronization.md
