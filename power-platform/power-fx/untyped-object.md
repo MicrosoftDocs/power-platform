@@ -1,7 +1,7 @@
 ---
 title: Untyped object data type
 description: Reference information about the untyped object type in Power Fx.
-author: jorisdg
+author: gregli
 
 ms.topic: reference
 ms.custom: canvas
@@ -12,7 +12,7 @@ ms.author: jorisde
 search.audienceType: 
   - maker
 contributors:
-  - jorisdg
+  - gregli
   - mduelae
 ---
 # Untyped object data type

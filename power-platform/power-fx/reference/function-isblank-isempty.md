@@ -15,7 +15,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions

@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Now, Today, IsToday, UTCNow, UTCToday, IsUTCToday functions
