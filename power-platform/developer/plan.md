@@ -153,7 +153,7 @@ Yes. To prevent users from creating developer environments, go to [Control envir
 
 ### Does the developer environment get auto-created with a developer plan?
 
-Yes. A developer environment is created when the user signs up for the developer plan using any of the experiences [Power Apps Developer Plan website](https://www.microsoft.com/power-platform/products/power-apps/free), [Power Apps](https://make.powerapps.com), or [Power Platform admin center](https://admin.powerplatform.microsoft.com). However, when you delete a developer environment, or you need more developer environments, you need to create them manually.
+Yes. A developer environment is created when the user signs up for the developer plan using any of the experiences in the [Power Apps Developer Plan website](https://www.microsoft.com/power-platform/products/power-apps/free), [Power Apps](https://make.powerapps.com), or [Power Platform admin center](https://admin.powerplatform.microsoft.com). However, when you delete a developer environment, or you need more developer environments, you need to create them manually.
 
 ### Does the Power Apps Developer plan include Power Automate RPA use rights?
 
