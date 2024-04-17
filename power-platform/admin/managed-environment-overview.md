@@ -3,12 +3,13 @@ title: Managed Environments overview
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 04/08/2024
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: sericks
 contributors:
-  - ShawnNandiMSFT 
+  - ShawnNandiMSFT
+  - AngelMarshall
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -18,12 +19,13 @@ search.audienceType:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
 
-Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks additional features across the Power Platform. 
+Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks more features across the Power Platform. 
 
-[Learn how to enable Managed Environments](managed-environment-enable.md).
+[Learn how to use Managed Environments](managed-environment-enable.md).
 
-A Managed Environment encompasses, but is not limited to, the following features: 
+A Managed Environment encompasses, but isn't limited to, the following features: 
 
+- [Environment groups](environment-groups.md)
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Weekly usage insights](managed-environment-usage-insights.md)
 - [Data policies](managed-environment-data-policies.md)
