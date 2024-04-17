@@ -1,7 +1,6 @@
 ---
 title: "Data loss prevention policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
-
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 07/12/2023
@@ -21,7 +20,7 @@ You can create data loss prevention (DLP) policies that can act as guardrails to
 
 DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow. Sometimes you might want to block the usage of certain connectors altogether by classifying them as **Blocked**.
 
-DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have the [Environment Admin role](environments-overview.md#environment-permissions). 
+DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have a [Power Platform environment admin role](environments-overview.md#power-platform-environment-roles).
 
 > [!NOTE]
 > The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new [DLP policy PowerShell support](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) for three-way DLP policy classification, which is also generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, is currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
