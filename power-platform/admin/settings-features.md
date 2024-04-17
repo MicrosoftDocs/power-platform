@@ -63,7 +63,7 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Turn on generative AI in emails | If **On**, the Copilot icon displays in rich text editors for app users to draft and refine content in emails.  More information: [Use Copilot in the email rich text editor](/power-apps/maker/model-driven-apps/use-copilot-email-assist) | Off |
+| Turn on generative AI in emails | If **On**, the Copilot icon is displayed in rich text editors for app users to draft and refine email content. More information: [Use Copilot in the email rich text editor](/power-apps/maker/model-driven-apps/use-copilot-email-assist) | Off |
 
 ## Embedded content
 | Setting | Description | Default value |
