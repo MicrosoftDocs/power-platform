@@ -82,7 +82,7 @@ Set-TenantSettings $settings
 
 ### Can I disable trial environment creation for users in the tenant?
 
-Yes. You can follow the steps in this article to [restrict environment creation in the Power Platform admin center](#control-environment-creation-in-power-platform) or use the following PowerShell commands to restrict trial environment creation.
+Yes. You can follow the steps in this article to [control environment creation in the Power Platform admin center](#control-environment-creation-in-the-power-platform-admin-center) or use the following PowerShell commands to restrict trial environment creation.
 
 ```powershell
 $settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true }
