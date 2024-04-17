@@ -11,8 +11,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-
-# What's new about storage 
+# What's new about storage
 
 Key enhancements have been made to the admin experience for the Microsoft Power Platform admin center. These enhancements include:
 

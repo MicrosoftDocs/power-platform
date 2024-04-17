@@ -1,7 +1,7 @@
 ---
 title: Copy function
 description: Reference information for the Copy function.
-author: jorisdg
+author: gregli
 ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
