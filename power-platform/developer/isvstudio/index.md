@@ -1,7 +1,7 @@
 ---
 title: Microsoft Power Platform ISV Studio | Microsoft Docs
 description: Learn how apps are managed and supported through the ISV Studio portal.
-ms.date: 06/20/2023
+ms.date: 04/01/2024
 ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
@@ -16,7 +16,7 @@ contributors:
 
 # Microsoft Power Platform ISV Studio
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 ISV Studio is designed to become the go-to Power Platform destination for Independent Software Vendors (ISV) to monitor and manage their applications. ISV Studio provides a consolidated cross tenant view of all the applications an ISV is distributing to customers.
 

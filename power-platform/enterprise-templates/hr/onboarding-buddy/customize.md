@@ -94,6 +94,6 @@ To change the user interface or logic, you need to modify the **Buddy Matches** 
 
 To customize the matching process, add filter components and modify the gallery code as needed.
 
-## Next steps
+### Next step
 
-- [Get started managing the Onboarding Buddy app](manage.md).
+[Get started managing the Onboarding Buddy app](manage.md).

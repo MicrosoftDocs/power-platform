@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - JimDaly
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 
 # Formula reference - Power Platform CLI

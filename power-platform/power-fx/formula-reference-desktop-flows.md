@@ -15,7 +15,7 @@ contributors:
   - tapanm-msft
   - MikeStall
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 
 # Formula reference - desktop flows
