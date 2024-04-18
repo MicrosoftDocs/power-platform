@@ -31,6 +31,10 @@ highlightedContent:
       itemType: get-started
       url: https://aka.ms/PowerPlatformIAD
     # Card
+    - title: Microsoft Copilot
+      itemType: reference
+      url: /copilot/
+    # Card
     - title: Power Platform videos
       itemType: video
       url: https://www.youtube.com/c/mspowerplatform/
