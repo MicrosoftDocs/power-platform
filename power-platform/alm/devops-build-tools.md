@@ -2,9 +2,9 @@
 title: "Microsoft Power Platform Build Tools for Azure DevOps | Microsoft Docs"
 description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Azure DevOps."
 keywords: 
-author: snizar007
+author: devkeydet
+ms.author: marcsc
 ms.subservice: alm
-ms.author: snizar
 ms.date: 09/25/2023
 ms.reviewer: pehecke
 ms.topic: article
