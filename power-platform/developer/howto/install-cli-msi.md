@@ -1,8 +1,8 @@
 ---
 title: Install Power Platform CLI using Windows MSI
 description: Instructions to install, update, and uninstall the Power Platform CLI for Windows using an MSI.
-author: snizar007
-ms.author: snizar
+ms.author: marcsc
+author: devkeydet
 ms.reviewer: jdaly
 ms.date: 02/27/2024
 ms.subservice: developer

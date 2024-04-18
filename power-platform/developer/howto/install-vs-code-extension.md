@@ -1,8 +1,8 @@
 ---
 title: Install the Power Platform Tools Visual Studio Code extension
 description: Instructions to install, update, and uninstall the Power Platform Tools Visual Studio Code extension.
-author: snizar007
-ms.author: snizar
+ms.author: marcsc
+author: devkeydet
 ms.reviewer: jdaly
 ms.date: 02/14/2024
 ms.subservice: developer
