@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 02/21/2024
+ms.date: 03/07/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -256,7 +256,7 @@ Auditing isn't required, but we recommend turning it on so that it's easy to see
 
 1. Select **Settings**, and then select **Start Auditing**.
 
-## Next step
+### Next step
 
 [Learn how to customize the Onboarding Buddy app](customize.md).
 

@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 06/29/2023
+ms.date: 04/01/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,22 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## ISV Studio is deprecated
+
+[ISV Studio](developer/isvstudio/index.md) is an analytics portal that shows limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provides an another access point to the connector certification wizard.  
+
+Thanks to our ISV partners for trying out ISV Studio during the preview. After careful consideration and extensive review of partner feedback, we recognize the limitations of the service over time and acknowledge that it hasn't provided value as expected. At this stage of preview, we decided to remove the feature.
+
+As of April 1, 2024, ISV Studio is deprecated. We notified existing users to notify them about this change. Users can still view analytics related to their solutions and access the connector certification wizard until May 31, 2024.  
+
+To continue accessing analytics related to your AppSource solutions, we encourage you to use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
+
+For the connector certification wizard, learn more about [directly accessing the connector certification portal](/connectors/custom-connectors/submit-certification).
+
+## DLP resource exemption feature
+
+Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that have never used it before. By October 2024, the resource exemption feature will be deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 
@@ -116,7 +132,7 @@ The impact of the deprecation of this capability is that you'll no longer be abl
 
 ## Model-driven app controls deprecation
 
-Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, flip, and star rating.
+Effective January 2023, the following controls for model-driven apps are deprecated: auto-complete, input mask, multimedia player, number input, and star rating.
 
 ### Why is this needed?
 
@@ -125,7 +141,7 @@ We'll be introducing new Fluent UI controls that have better usability, accessib
 ### Impact
 
 - Starting April 2023, these controls can no longer be added to forms.
-- Existing control instances will work on existing forms until April 2024.
+- No additional support or fixes will be provided on these controls after April 2024.
 
 ### Action required by you
 
@@ -748,9 +764,9 @@ Gateways for desktop flows are deprecated. Direct connectivity is the preferred 
 
 See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
 
-## Power Apps portals
+## Power Pages
 
-See [Important changes coming in Power Apps portals](/powerapps/maker/portals/important-changes-deprecations).
+See [Important changes coming in Power Pages](/power-pages/important-changes-deprecations).
 
 ## Other deprecation articles
 [Deprecated features in Dynamics 365 Sales](/dynamics365/sales/deprecations-sales)<br/>

@@ -76,8 +76,10 @@
               href: view-license-consumption-issues.md
             - name: View license consumption for finance and operations apps
               href: view-license-consumption-finops-apps.md
-            - name: Manage licenses in your org
+            - name: Manage Power Apps licenses
               href: signup-question-and-answer.md
+            - name: View Intelligent recommendations about licensing (preview)
+              href: get-recommendations-licensing.md
             - name: Administer without a license
               href: global-service-administrators-can-administer-without-license.md
             - name: Power Apps
@@ -90,6 +92,8 @@
                   href: about-powerapps-perapp.md
                 - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
+                - name: Power Apps licensing FAQs
+                  href: powerapps-licensing-faq.md
             - name: Power Automate
               items:
                 - name: Overview
@@ -176,12 +180,16 @@
                   href: admin-view-apps.md
                 - name: Language collations
                   href: language-collations.md
+                - name: Change the base currency
+                  href: change-base-currency-environment.md
             - name: Managed Environments
               items:
                 - name: Overview
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
+                - name: Environment groups (preview)
+                  href: environment-groups.md
                 - name: Enable maker welcome content (preview)
                   href: welcome-content.md
                 - name: Limit sharing
@@ -194,11 +202,11 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Block cookie replay attacks
+                - name: Safeguarding Dataverse sessions with IP cookie binding
                   href: block-cookie-replay-attack.md
-                - name: Configure IP firewall (preview)
+                - name: Configure IP firewall
                   href: ip-firewall.md
-                - name: Use Power Platform Advisor (preview)
+                - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
               items:
@@ -426,7 +434,7 @@
                       href: on-off-switch-for-learning-path-guided-help.md
             - name: Advanced environment operations
               items:
-                - name: Automatic deletion of inactive environments
+                - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
                 - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md
@@ -598,7 +606,7 @@
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
                   href: prevent-elevation-security-role-privilege.md
-                - name: Troubleshoot common user access issues
+                - name: Troubleshoot user access issues
                   href: troubleshooting-user-needs-read-write-access-organization.md
                 - name: Manage user account synchronization
                   href: manage-user-account-synchronization.md
@@ -614,7 +622,7 @@
                   href: invite-users-azure-active-directory-b2b-collaboration.md
             - name: Virtual Network support (preview)
               items:
-                - name: Virtual Network support overview
+                - name: Virtual Network support overview (preview)
                   href: vnet-support-overview.md
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
@@ -686,6 +694,10 @@
                   href: cleanup-asyncoperationbase-table.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Database Tables
+              items:
+                - name: AsyncOperationBase table
+                  href: manage-storage-asyncoperation-base-table.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage

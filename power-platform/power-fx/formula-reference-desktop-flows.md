@@ -4,7 +4,7 @@ description: Reference information for functions, signals, and enumerations in d
 author: jpapadimitriou
 ms.topic: reference
 ms.reviewer: mattp123
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: dipapa
 search.audienceType:
@@ -15,7 +15,7 @@ contributors:
   - tapanm-msft
   - MikeStall
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 
 # Formula reference - desktop flows

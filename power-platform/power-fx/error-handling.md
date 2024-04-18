@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/18/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - mduelae
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 # Error handling
 

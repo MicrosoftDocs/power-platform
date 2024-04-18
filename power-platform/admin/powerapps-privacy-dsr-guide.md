@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 12/05/2023
+ms.date: 04/02/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -73,15 +73,31 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 For guidance on how to discover personal data stored by the Power Automate service, see [Responding to Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a Power Apps user
+> It's recommended that admins complete this step for a Power Apps user.
 
-### Step 3: Find personal data for the user in environments of Dataverse
+### Step 3: Find personal data for the user in Microsoft Copilot Studio
+Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service.
+
+For guidance on how to discover personal data stored by the Microsoft Copilot Studio service, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
+
+> [!IMPORTANT]
+> It's recommended that admins complete this step for a Power Apps user.
+
+### Step 4: Find personal data for the user in the Microsoft 365 admin center
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center.
+
+For guidance on how to discover feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
+
+> [!IMPORTANT]
+> It's recommended that admins complete this step for a Power Apps user.
+
+### Step 5: Find personal data for the user in environments of Dataverse
 Certain Power Apps licenses, including the Power Apps Developer Plan, give the ability for users within your organization to create environments of Dataverse and to create and build apps on Dataverse. The Power Apps Developer Plan is a free license that allows users to try out Dataverse in an individual environment. See the [Power Apps Pricing](https://powerapps.microsoft.com/pricing/) page for which capabilities are included in each Power Apps license.
 
 For guidance on how to discover personal data stored by Dataverse, see [Responding to Data Subject Rights (DSR) requests for customer data in Dataverse](dataverse-privacy-dsr-guide.md).
 
 > [!IMPORTANT]
-> It is recommended that admins complete this step for a Power Apps user.
+> It's recommended that admins complete this step for a Power Apps user.
 
 ## Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.

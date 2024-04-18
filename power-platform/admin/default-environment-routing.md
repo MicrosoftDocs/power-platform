@@ -169,7 +169,7 @@ All developer environments have the following Managed Environment settings preco
 
 - **Maker welcome message**: Not established.
 
-### Is the environment routing also available for Power Automate, Power Virtual Agents, and Power Pages?
+### Is the environment routing also available for Power Automate, Microsoft Copilot Studio, and Power Pages?
 
 During the preview, environment routing is limited to Power Apps only.
 

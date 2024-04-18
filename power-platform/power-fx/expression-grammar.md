@@ -3,7 +3,7 @@ title: Microsoft Power Fx expression grammar | Microsoft Docs
 description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.topic: reference
 ms.subservice: power-fx
 ms.author: gregli
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Expression grammar
 

@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 03/20/2023
+ms.date: 04/04/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -29,7 +29,7 @@ First, it’s important to distinguish between *personal data* and *customer dat
 
 ## Data residency
 
-An Microsoft Entra tenant houses information that's relevant to an organization and its security. When an Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, except where organizations deploy services in multiple regions.
+A Microsoft Entra tenant houses information that's relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, except where organizations deploy services in multiple regions.
 
 Some organizations have a global presence. For example, a business may be headquartered in the United States but do business in Australia. It may need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home geo. All metadata and product data in that environment is stored in the remote geo.
 
@@ -71,11 +71,14 @@ Microsoft manages the address prefixes encompassed by the service tag, and autom
 
 Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../prevent-data-loss.md) to help you manage the security of your data.  
 
-### SAS IP Binding
+## Storage Shared Access Signature (SAS) IP restriction
 
-This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will restrict who, based on IP, can use enterprise SAS tokens. 
+> [!NOTE]
+> Prior to activating either of these SAS features, customers must first allow access to the `https://*.api.powerplatformusercontent.com` domain or most SAS functionalities won't work.
 
-This feature is currently in Private Preview going Public Preview later this spring and GA this summer, 2024. More information can be found in the [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
+This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting restricts who, based on IP, can use enterprise SAS tokens. 
+
+This feature is currently in private preview. Public preview is planned for later this spring, with general availability in summer 2024. For more information, see [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
 
 These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
@@ -83,10 +86,10 @@ Admins can enable one of these four configurations for this setting:
 
 | Setting                 | Description                                                                                                                    |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| IP Binding Only         | This will restrict SAS keys to the requester’s IP.                                                                             |
-| IP Firewall Only        | This will restrict using SAS keys to only work within an admin specified range.                                                |
-| IP Binding and Firewall | This will restrict using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
-| IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding will be applied |
+| IP Binding Only         | This restricts SAS keys to the requester’s IP.                                                                             |
+| IP Firewall Only        | This restricts using SAS keys to only work within an admin specified range.                                                |
+| IP Binding and Firewall | This restricts using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
+| IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding is applied. |
 
 #### Products enforcing IP Binding when enabled:
 - Dataverse
@@ -95,16 +98,37 @@ Admins can enable one of these four configurations for this setting:
 - Power Apps
 
 #### Impact on Power App experiences
-Note the following impact on users:
 
-- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is dispalyed: "This app stopped working. Try refreshing your browser." This experience will be updated to provide more contextual information to the user as to why the app couldn’t be launched.
+- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is displayed: "This app stopped working. Try refreshing your browser." There are plans to update this experience to provide more contextual information to the user as to why the app couldn’t be launched.
 
-- **When a user, who does meet the IP address restrictions, opens an app**: The following will occur:
+- **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
   - A banner with the following message is displayed: “Your organization configured IP address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a few seconds and then disappears. 
-  - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevents the platform from using some performance capabilities that enable faster load times.
+  - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevent the platform from using some performance capabilities that enable faster load times.
 
   If a user opens an app, while meeting the IP address requirements and then moves to a new network which no longer meets the IP address requirements, the user may observe app contents such as images, embedded media, and links may not load or be accessible. 
+
+### Logging of SAS calls
+This setting enables all SAS calls within Power Platform to be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
+
+| Field name                                   | Field description                                                                                              |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| response.status_message                      | Informing if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
+| response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                 |
+| analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
+| enduser.ip_address                           | The public IP of the caller.                                                                                   |
+| analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
+| request.service_request_id                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.                               |
+| version                                      | Version of this log schema.                                                                                    |
+| type                                         | Generic response.                                                                                              |
+| analytics.activity.name                      | The type of activity this event was: Creation or Usage.                                                        |
+| analytics.activity.id                        | Unique ID of the record in Purview.                                                                            |
+| analytics.resource.organization.id           | Org ID                                                                                                   |
+| analytics.resource.environment.id            | Environment ID                                                                                              |
+| analytics.resource.tenant.id                 | Tenant ID                                                                                                   |
+| enduser.id                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                                  |
+| enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.    |
+| enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                                     |
 
 ### Related articles
 

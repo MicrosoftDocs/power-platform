@@ -6,14 +6,14 @@ ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: nabuthuk
-ms.date: 12/04/2021
+ms.date: 3/22/2024
 ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Confirm function

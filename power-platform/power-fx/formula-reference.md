@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 11/1/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - mduelae
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 
 # Formula reference - Power Apps
@@ -176,6 +176,8 @@ Other elements include:
 **[EditForm](reference/function-form.md)** – Resets a form control for editing of an item.
 
 **[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
+
+**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in a HTML context.
 
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 

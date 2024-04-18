@@ -19,7 +19,7 @@ Use the Innovation Backlog app to ask users to submit ideas for apps and flows t
 
 Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
-The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [production](../../admin/environments-overview.md#types-of-environments) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
+The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [production](../../admin/environments-overview.md#power-platform-environment-types) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
 
 > [!IMPORTANT]
 > The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
