@@ -31,10 +31,6 @@ highlightedContent:
       itemType: get-started
       url: https://aka.ms/PowerPlatformIAD
     # Card
-    - title: Microsoft Copilot
-      itemType: reference
-      url: /copilot/
-    # Card
     - title: Power Platform videos
       itemType: video
       url: https://www.youtube.com/c/mspowerplatform/
@@ -150,6 +146,10 @@ additionalContent:
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
           url: /dynamics365
+        # Card
+        - title: Microsoft Copilot
+          summary: "Learn about Microsoft Copilot and the Copilot experiences available in many Microsoft products."
+          url: /copilot/
         # Card
         - title: Microsoft Azure
           summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
