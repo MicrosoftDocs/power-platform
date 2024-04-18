@@ -42,17 +42,17 @@ The following table lists the regions involved with copilots and generative AI f
 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
-| Australia</br>India</br>United Kingdom</br>United States | Within the respective geographical region of your Power Platform or Dynamics 365 environment | United States| 
+| Australia<br>India<br>United Kingdom<br>United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
 | Europe\*  | Sweden or Switzerland| United States |
-| France</br>Germany</br>Norway</br>Switzerland | Sweden or Switzerland | United States|
-| Asia</br>Canada</br>Japan</br>South Africa</br>South America</br>South Korea</br>United Arab Emirates | United States | United States| 
+| France<br>Germany<br>Norway<br>Switzerland | Sweden or Switzerland | United States|
+| Asia<br>Canada<br>Japan<br>South Africa<br>South America<br>South Korea<br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
 
 \*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
 ## Turn on copilots and generative AI features
 
-To use copilots and generative AI features, you need to consent to the terms of use in the Power Platform admin center.
+To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
@@ -60,17 +60,17 @@ To use copilots and generative AI features, you need to consent to the terms of 
 1. On the **Generative AI features** card, select **Edit**.
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
-   When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the table above. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
+    When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
 
-   > [!Note]
-   > Data movement that occurred while your environment was allowed to move data across regions, can't be reversed by clearing the **Move data across regions** checkbox.
-   
+    > [!NOTE]
+    > Data movement that occurred while your environment was allowed to move data across regions can't be reversed by clearing the **Move data across regions** checkbox.
+
 1. Review the terms of use and select the **Bing Search** checkbox.
 
-   When the **Bing Search** feature is turned on, it allows your copilot in Microsoft Copilot Studio to use the data sources you provided, but use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
+    When the **Bing Search** feature is turned on, your copilot in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
 
-   > [!Note]
-   > To select the **Bing Search** checkbox, the **Move data across regions** checkbox must be already selected.
+    > [!NOTE]
+    > You can select the **Bing Search** checkbox only if the **Move data across regions** checkbox is already selected.
 
 1. Select **Save**.
 
@@ -108,4 +108,4 @@ To learn about the languages that are supported, see the [Copilot International 
 
 ## Related content
 
-[Legal terms](https://go.microsoft.com/fwlink/?linkid=2182773).
+[Legal terms](https://go.microsoft.com/fwlink/?linkid=2182773)

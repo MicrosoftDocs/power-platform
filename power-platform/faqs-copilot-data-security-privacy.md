@@ -2,7 +2,7 @@
 title: "FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform "
 description: "This FAQ discusses Copilot data security and privacy in Power Platform and how Copilot responsibly uses AI capabilities."
 author: sericks007 
-ms.date: 03/08/2024
+ms.date: 04/12/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
