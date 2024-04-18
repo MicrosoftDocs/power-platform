@@ -137,7 +137,7 @@ additionalContent:
         # Card
         - title: Well-Architected
           summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"
-          url: ./guidance/adoption/methodology.md        
+          url: ./well-architected/index.yml        
     - title: Related products and capabilities
       items:        
         # Card
