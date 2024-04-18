@@ -73,7 +73,6 @@ tools:
   - title: AI Builder
     imageSrc: "media/hub-page/ai-builder.svg"
     url: /ai-builder
-
   sections:
     - title: Power Platform applications and features # < 60 chars (Optional; Remove if not applicable.)
       # summary: subsectionsummary1 # < 160 chars (Optional; Remove if not applicable.)
