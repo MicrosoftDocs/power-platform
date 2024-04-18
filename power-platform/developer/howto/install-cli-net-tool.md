@@ -1,8 +1,8 @@
 ---
 title: Install Power Platform CLI with .NET Tool
 description: Instructions to install, update, and uninstall Power Platform CLI with .NET Tool
-author: snizar007
-ms.author: snizar
+ms.author: marcsc
+author: devkeydet
 ms.reviewer: jdaly
 ms.date: 02/14/2024
 ms.subservice: developer
