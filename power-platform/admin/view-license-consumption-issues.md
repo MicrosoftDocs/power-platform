@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use the **Billings (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
+Use the **Billing (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
 
 - How many Power Apps licenses are purchased?
 - How many of those Power Apps licenses are assigned to users? 
