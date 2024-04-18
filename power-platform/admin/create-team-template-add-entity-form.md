@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 04/18/2024
 search.audienceType: 
   - admin
 ---
@@ -57,11 +57,11 @@ Check your security role:
   
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
 1. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
-1. On the **Actions** toolbar, choose **+New**,
+1. On the control bar, select **+New**,
 1. Enter a **Name** for your template.
 1. Select the **Entity** that you have enabled for access teams.
 1. Enter a **Description**.
-1. Check the appropriate **Access Rights** for your Access team members to access the record.
+1. Select the appropriate **Access Rights** for your access team members to access the record.
 1. Choose **Save**.  
 
 > [!NOTE]
