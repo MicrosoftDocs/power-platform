@@ -62,7 +62,7 @@ Check your security role:
 1. Select the **Entity** that you have enabled for access teams.
 1. Enter a **Description**.
 1. Select the appropriate **Access Rights** for your access team members to access the record.
-1. Choose **Save**.  
+1. Select **Save**.  
 
 > [!NOTE]
 > You can create two access team templates per entity.
