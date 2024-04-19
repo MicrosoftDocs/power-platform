@@ -122,7 +122,7 @@ additionalContent:
           url: ./developer/index.yml
         # Card
         - title: Guidance
-          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more."
+          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more"
           url: ./guidance/index.yml        
         # Card
         - title: Well-Architected
@@ -132,7 +132,7 @@ additionalContent:
       items:        
         # Card
         - title: Microsoft Copilot
-          summary: "Learn about Microsoft Copilot and the Copilot experiences available in many Microsoft products."
+          summary: "Explore the Copilot experiences available in many Microsoft products"
           url: /copilot/
         # Card
         - title: Dynamics 365
