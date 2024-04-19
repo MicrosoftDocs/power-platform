@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages, and quickly create AI-driven copilots to integrate with your apps and websites.
+summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Use Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. # Required; article description that is displayed in search results. < 160 chars.
+  description: Use Microsoft Power Platform to analyze data, build custom apps, automate workflows, build websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
@@ -37,7 +37,7 @@ highlightedContent:
 
 productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
-  summary: Use Microsoft Power Platform to build apps using Power Apps, websites using Power Pages, automate tasks using Power Automate, analyze data using Power BI, create copilots using Copilot Studio. # < 160 chars (Optional; Remove if not applicable.)
+  summary: Use Microsoft Power Platform to build apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
   items:
   - title: Power Apps
     imageSrc: "media/hub-page/power-apps.svg"
@@ -86,13 +86,13 @@ tools:
   items:
     # Card
   - title: Copilot and generative AI
-    imageSrc: "media/hub-page/dataverse.svg"
+    imageSrc: "media/hub-page/copilot.svg"
     url: admin/geographical-availability-copilot
   - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
     url: /power-apps/maker/data-platform/
   - title: Connectors
-    imageSrc: "media/hub-page/dataverse.svg"
+    imageSrc: "media/hub-page/connectors.png"
     url: /connectors/
   - title: Power Fx
     imageSrc: "media/hub-page/power-fx.svg"
