@@ -86,7 +86,7 @@ tools:
   items:
     # Card
   - title: Copilot and generative AI
-    imageSrc: "media/hub-page/copilot.svg"
+    imageSrc: "media/hub-page/copilot.png"
     url: admin/geographical-availability-copilot
   - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
