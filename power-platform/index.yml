@@ -122,7 +122,7 @@ additionalContent:
           url: ./developer/index.yml
         # Card
         - title: Guidance
-          summary: "Use the Power Platform guidance center for adoption best practices, establish Center of Excellence (CoE), and more."
+          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more."
           url: ./guidance/index.yml        
         # Card
         - title: Well-Architected
