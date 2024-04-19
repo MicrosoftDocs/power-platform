@@ -92,7 +92,7 @@ productDirectory:
       text: Microsoft Copilot Studio videos
 tools:
   title: Power Platform capabilities 
-  summary:" "  
+  summary:""  
   items:
     # Card
   - title: Copilot and generative AI
