@@ -85,21 +85,21 @@ tools:
   summary: ""  
   items:
     # Card
+  - title: AI Builder
+    imageSrc: "media/hub-page/ai-builder.svg"
+    url: /ai-builder
+  - title: Connectors
+    imageSrc: "media/hub-page/connectors.png"
+    url: /connectors/
   - title: Copilot and generative AI
     imageSrc: "media/hub-page/copilot.png"
     url: admin/geographical-availability-copilot.md
   - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
     url: /power-apps/maker/data-platform/
-  - title: Connectors
-    imageSrc: "media/hub-page/connectors.png"
-    url: /connectors/
   - title: Power Fx
     imageSrc: "media/hub-page/power-fx.svg"
     url: /power-platform/power-fx/overview
-  - title: AI Builder
-    imageSrc: "media/hub-page/ai-builder.svg"
-    url: /ai-builder
 additionalContent:
   sections:
     - title: Power Platform administration, development, and guidance
@@ -108,22 +108,22 @@ additionalContent:
         - title: Administration
           summary: "Learn about how to administer using Power Platform admin center"
           url: ./admin/index.yml
-        # Card
-        - title: Licensing
-          summary: "Understand licensing across Power Platform products and services"
-          url: ./admin/pricing-billing-skus.md
         # Card        
         - title: Application lifecycle management (ALM) guide
           summary: "Learn how to implement ALM using Power Platform products and services"
           url: ./alm/index.yml
         # Card
+        - title: Guidance
+          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more"
+          url: ./guidance/index.yml        
+        # Card
         - title: Extend and develop
           summary: "Learn about developing apps and services in Power Platform using code"
           url: ./developer/index.yml
         # Card
-        - title: Guidance
-          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more"
-          url: ./guidance/index.yml        
+        - title: Licensing
+          summary: "Understand licensing across Power Platform products and services"
+          url: ./admin/pricing-billing-skus.md
         # Card
         - title: Well-Architected
           summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"
@@ -142,3 +142,6 @@ additionalContent:
         - title: Microsoft Azure
           summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
           url: /azure
+
+
+
