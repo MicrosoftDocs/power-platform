@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/29/2024 #Required; mm/dd/yyyy format.
+  ms.date: 04/19/2024 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -131,9 +131,9 @@ additionalContent:
     - title: Related products and capabilities
       items:        
         # Card
-        - title: Microsoft Copilot
-          summary: "Explore the Copilot experiences available in many Microsoft products"
-          url: /copilot/
+        - title: Microsoft Copilot Studio
+          summary: "Build AI-driven copilots and integrate into your websites"
+          url: /microsoft-copilot-studio
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
