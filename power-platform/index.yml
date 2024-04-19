@@ -59,17 +59,6 @@ productDirectory:
         text: Power Automate training
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
         text: Power Automate videos
-  - title: Power Pages
-    imageSrc: "media/hub-page/power-pages.svg"
-    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
-    links:
-    - url: /power-pages
-      text: Power Pages documentation
-    - url: /training/paths/power-pages-get-started
-      text: Power Pages training
-    - url: /power-pages/training-videos
-      text: Power Pages videos
-    
   - title: Power BI
     imageSrc: "media/hub-page/power-bi.svg"
     summary: Learn how to get expert information and answers to address your needs.
@@ -80,19 +69,20 @@ productDirectory:
       text: Power BI training
     - url: https://www.youtube.com/user/mspowerbi
       text: Power BI videos
-  - title: Microsoft Copilot Studio
-    imageSrc: "media/hub-page/copilot-studio.svg"
-    summary: Learn how to quickly build AI-driven copilots and integrate with your apps or websites.
+  - title: Power Pages
+    imageSrc: "media/hub-page/power-pages.svg"
+    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
     links:
-    - url: /microsoft-copilot-studio
-      text: Microsoft Copilot Studio documentation
-    - url: /training/browse/?expanded=power-platform&filter-products=copilot&products=ms-copilot&roles=maker
-      text: Microsoft Copilot Studio training
-    - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
-      text: Microsoft Copilot Studio videos
+    - url: /power-pages
+      text: Power Pages documentation
+    - url: /training/paths/power-pages-get-started
+      text: Power Pages training
+    - url: /power-pages/training-videos
+      text: Power Pages videos    
+    
 tools:
   title: Power Platform capabilities 
-  summary:""  
+  summary: ""  
   items:
     # Card
   - title: Copilot and generative AI
