@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages, and quickly create AI-driven copilots to integrate with your apps and websites.
+summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Use Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. # Required; article description that is displayed in search results. < 160 chars.
+  description: Use Microsoft Power Platform to analyze data, build custom apps, automate workflows, build websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
@@ -37,7 +37,7 @@ highlightedContent:
 
 productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
-  summary: Use Microsoft Power Platform to build apps using Power Apps, websites using Power Pages, automate tasks using Power Automate, analyze data using Power BI, create copilots using Copilot Studio. # < 160 chars (Optional; Remove if not applicable.)
+  summary: Use Microsoft Power Platform to build apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
   items:
   - title: Power Apps
     imageSrc: "media/hub-page/power-apps.svg"
@@ -59,17 +59,6 @@ productDirectory:
         text: Power Automate training
       - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
         text: Power Automate videos
-  - title: Power Pages
-    imageSrc: "media/hub-page/power-pages.svg"
-    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
-    links:
-    - url: /power-pages
-      text: Power Pages documentation
-    - url: /training/paths/power-pages-get-started
-      text: Power Pages training
-    - url: /power-pages/training-videos
-      text: Power Pages videos
-    
   - title: Power BI
     imageSrc: "media/hub-page/power-bi.svg"
     summary: Learn how to get expert information and answers to address your needs.
@@ -80,24 +69,31 @@ productDirectory:
       text: Power BI training
     - url: https://www.youtube.com/user/mspowerbi
       text: Power BI videos
-  - title: Microsoft Copilot Studio
-    imageSrc: "media/hub-page/copilot-studio.svg"
-    summary: Learn how to quickly build AI-driven copilots and integrate with your apps or websites.
+  - title: Power Pages
+    imageSrc: "media/hub-page/power-pages.svg"
+    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
     links:
-    - url: /microsoft-copilot-studio
-      text: Microsoft Copilot Studio documentation
-    - url: /training/browse/?expanded=power-platform&filter-products=copilot&products=ms-copilot&roles=maker
-      text: Microsoft Copilot Studio training
-    - url: https://www.youtube.com/channel/UCn8PsBlVsGUt8J3tZCKsMPA
-      text: Microsoft Copilot Studio videos
+    - url: /power-pages
+      text: Power Pages documentation
+    - url: /training/paths/power-pages-get-started
+      text: Power Pages training
+    - url: /power-pages/training-videos
+      text: Power Pages videos    
+    
 tools:
   title: Power Platform capabilities 
-  summary: Securely store and manage data using Microsoft Dataverse, use low-code Power Fx language for functional programming across Power Platform, and bring the power of Microsoft AI to your organization using AI Builder in Power Platform. 
+  summary: ""  
   items:
     # Card
+  - title: Copilot and generative AI
+    imageSrc: "media/hub-page/copilot.png"
+    url: admin/geographical-availability-copilot
   - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
     url: /power-apps/maker/data-platform/
+  - title: Connectors
+    imageSrc: "media/hub-page/connectors.png"
+    url: /connectors/
   - title: Power Fx
     imageSrc: "media/hub-page/power-fx.svg"
     url: /power-platform/power-fx/overview
@@ -106,7 +102,7 @@ tools:
     url: /ai-builder
 additionalContent:
   sections:
-    - title: Power Platform administration, development and guidance
+    - title: Power Platform administration, development, and guidance
       items:
         # Card
         - title: Administration
@@ -116,40 +112,32 @@ additionalContent:
         - title: Licensing
           summary: "Understand licensing across Power Platform products and services"
           url: ./admin/pricing-billing-skus.md
-        # Card
-        - title: Power Platform developer
-          summary: "Learn about developing apps and services in Power Platform using code"
-          url: ./developer/index.yml
-        # Card
-        - title: Real-world architecture examples
-          summary: "Learn from real-world examples of solution architectures created using Power Platform"
-          url: ./guidance/architecture/real-world-examples/overview.md
-        # Card
+        # Card        
         - title: Application lifecycle management (ALM) guide
           summary: "Learn how to implement ALM using Power Platform products and services"
           url: ./alm/index.yml
         # Card
-        - title: Adoption best practices
-          summary: "Learn how to create and implement strategies to succeed with Power Platform"
-          url: ./guidance/adoption/methodology.md
+        - title: Extend and develop
+          summary: "Learn about developing apps and services in Power Platform using code"
+          url: ./developer/index.yml
         # Card
-        - title: Center of Excellence (CoE) Starter kit
-          summary: "Learn about how to develop an adoption and support strategy for Power Platform"
-          url: ./guidance/coe/starter-kit.md
+        - title: Guidance
+          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more"
+          url: ./guidance/index.yml        
+        # Card
+        - title: Well-Architected
+          summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"
+          url: ./well-architected/index.yml        
     - title: Related products and capabilities
-      items:
+      items:        
         # Card
-        - title: Connectors
-          summary: "Connect to hundreds of data sources using a library of connectors"
-          url: /connectors/
+        - title: Microsoft Copilot
+          summary: "Explore the Copilot experiences available in many Microsoft products"
+          url: /copilot/
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
           url: /dynamics365
-        # Card
-        - title: Microsoft Copilot
-          summary: "Learn about Microsoft Copilot and the Copilot experiences available in many Microsoft products."
-          url: /copilot/
         # Card
         - title: Microsoft Azure
           summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
