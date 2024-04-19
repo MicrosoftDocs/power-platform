@@ -92,7 +92,7 @@ tools:
     imageSrc: "media/hub-page/connectors.png"
     url: /connectors/
   - title: Copilot and generative AI
-    imageSrc: "media/hub-page/copilot.png"
+    imageSrc: "media/hub-page/copilot.svg"
     url: admin/geographical-availability-copilot.md
   - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
