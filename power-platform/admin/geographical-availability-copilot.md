@@ -104,7 +104,7 @@ For information about regions supported by Dynamics 365 copilots and generative 
 
 ## Languages availability
 
-To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
+To learn about the languages that are supported, see the [Copilot International Availability report](https://aka.ms/bapcopilot-intl-report-external).
 
 ## Related content
 
