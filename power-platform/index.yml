@@ -82,7 +82,7 @@ productDirectory:
     
 tools:
   title: Power Platform capabilities 
-  summary: ""  
+  summary: "Enhance apps and business processes with AI Builder, connect to a variety of data sources through Connectors, use Copilot and generative AI capabilities to boost productivity, use powerful data service to quickly build enterprise-grade apps with Dataverse, and use low-code strongly-typed declarative and functional language with Power Fx."  
   items:
     # Card
   - title: AI Builder
