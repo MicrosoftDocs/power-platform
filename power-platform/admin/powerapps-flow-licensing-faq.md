@@ -18,6 +18,26 @@ ms.collection:
     - bap-ai-copilot
 ---
 
+---
+title: Power Platform licensing FAQs
+description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
+ms.topic: conceptual
+ms.date: 04/03/2024
+author: chrisgarty
+contributors:
+  - Antoine2F
+  - chrisgarty
+  - v-aangie
+ms.subservice: admin
+ms.author: cgarty
+ms.reviewer: sericks
+ms.contributors:
+- jessechen
+- v-kgallagher
+ms.collection: 
+    - bap-ai-copilot
+---
+
 # Power Platform licensing FAQs
 
 This article lists common questions and answers for licensing and plan options.
@@ -31,7 +51,8 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
 
 To utilize these features, you need any of the following licenses: 
-- Dynamics 365 Sales Enterprise
+- Dynamics 365 Sales Enterprise or Sales Premium
+
 - Dynamics 365 Customer Insights
 - Dynamics 365 Field Service
 - Dynamics 365 Project Operations
