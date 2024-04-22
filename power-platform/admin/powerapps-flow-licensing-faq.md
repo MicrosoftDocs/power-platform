@@ -18,26 +18,6 @@ ms.collection:
     - bap-ai-copilot
 ---
 
----
-title: Power Platform licensing FAQs
-description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
-ms.topic: conceptual
-ms.date: 04/03/2024
-author: chrisgarty
-contributors:
-  - Antoine2F
-  - chrisgarty
-  - v-aangie
-ms.subservice: admin
-ms.author: cgarty
-ms.reviewer: sericks
-ms.contributors:
-- jessechen
-- v-kgallagher
-ms.collection: 
-    - bap-ai-copilot
----
-
 # Power Platform licensing FAQs
 
 This article lists common questions and answers for licensing and plan options.
