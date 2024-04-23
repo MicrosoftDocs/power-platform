@@ -70,8 +70,8 @@ To soft delete stub users in bulk, complete the following steps.
   
 1.	Select **Next**.
 1.	Enter a **job name** and select a **date and time** to schedule the deletion system job.
-1.	Check the email notification box if you want to be notified when a job is completed.
-1.	Verify the query and the number of records to be deleted and choose **Run bulk delete**.
+1.	Select the **Email notification** checkbox if you want to be notified when a job is completed.
+1.	Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
 ## Review the status of bulk delete job
 1.	In the Power Platform admin center, select an environment.
@@ -80,18 +80,18 @@ To soft delete stub users in bulk, complete the following steps.
 Review a Deleted user in the audit log
 If you enabled [Dataverse Auditing](https://learn.microsoft.com/en-us/power-platform/admin/manage-dataverse-auditing) in the environment and in the User table, you can see the list of soft deleted users in the Audit Summary view. 
 
-## Permanently delete stub users in bulk.
-To permanently delete stub users, the stub users must first be soft deleted. See other [requirements](https://learn.microsoft.com/power-platform/admin/delete-users#prerequisites) must be met before stub users can be permanently deleted.
+## Permanently delete stub users in bulk
+To permanently delete stub users, the stub users must first be soft deleted. These [Prerequisites](delete-users.md#prerequisites) must be met before stub users can be permanently deleted.
 
 1.	In the Power Platform admin center, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **Users**.
-1.	Select **Bulk delete** from the action bar. 
-1.	Select the **Soft Deleted Users** view in the **Use saved view** dropdown.
-1.	Choose **Next** and review the list of records to be permanently deleted.
-1.	Choose **Next** again.
+1.	Select **Bulk delete** from the command bar. 
+1.	Select the **Soft Deleted Users** view in the **Use saved view** dropdown list.
+1.	Select **Next** and review the list of records to be permanently deleted.
+1.	Select **Next** again.
 1.	Enter a **job name** and select a **date and time** to schedule the deletion system job.
-1.	Check the email notification box if you want to be notified when job is completed.
-1.	Verify the query and the number of records to be deleted and select **Run bulk delete**.
+1.	Select the **Email notification** checkbox if you want to be notified when a job is completed.
+1.	Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
 [Review the job results](power-platform/admin/delete-stub-users.md#review-the-status-of-bulk-delete-job ) and verify that all soft deleted stub users were permanently deleted.
 
