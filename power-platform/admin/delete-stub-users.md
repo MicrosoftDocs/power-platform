@@ -76,9 +76,9 @@ To soft delete stub users in bulk, complete the following steps.
 ## Review the status of bulk delete job
 1.	In the Power Platform admin center, select an environment.
 1.	Select **Settings** > **Users + Permissions** > **System jobs**.
-1.	Select the Bulk delete job and review the Results. The results show records in the **Successes** row that should match the number of records from your  previous soft deletion system job.
-Review a Deleted user in the audit log
-If you enabled [Dataverse Auditing](manage-dataverse-auditing.md) in the environment and in the User table, you can see the list of soft deleted users in the Audit Summary view. 
+1.	Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous soft deletion system job.
+Review a deleted user in the audit log.
+If you enabled [Dataverse auditing](manage-dataverse-auditing.md) in the environment and in the **User** table, you can see the list of soft deleted users in the **Audit Summary** view. 
 
 ## Permanently delete stub users in bulk
 To permanently delete stub users, the stub users must first be soft deleted. These [Prerequisites](delete-users.md#prerequisites) must be met before stub users can be permanently deleted.
