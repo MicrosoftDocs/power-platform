@@ -5,7 +5,7 @@ author: carlosff
 
 ms.topic: reference
 ms.custom: canvas
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: carlosff
 search.audienceType: 

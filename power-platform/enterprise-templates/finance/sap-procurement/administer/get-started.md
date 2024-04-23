@@ -31,7 +31,11 @@ It's recommended that an [executive sponsor](/power-platform/guidance/adoption/e
 
 Once established, your team can get started with its SAP + Power Platform administration journey by reviewing the Power Platform resource links and following the SAP integration and administration steps.
 
-More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 ## Integrate SAP with Power Platform
 
@@ -68,6 +72,10 @@ Work with your SAP functional analyst, business subject matter experts, and Powe
 | [Extend model-driven app and Dataverse tables](extend-model-apps-dataverse.md) | Create tables, columns, and security roles to help drive and persist newly digitized data that's currently not mastered and extend the administrator experience. |
 | [Extend cloud flows](extend-cloud-flows.md) | Map new SAP fields and connect them to more processes and workflows. |
 
-## Next steps
+### Next steps
 
-[Requirements](requirements.md)
+[Requirements to integrate SAP with Power Platform](requirements.md)
+
+### See also
+
+[Overview](../overview.md)

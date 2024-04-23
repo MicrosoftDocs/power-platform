@@ -1,7 +1,7 @@
 ---
 title: Auto app updates (preview) | Microsoft Docs
 description: Learn about the latest auto update feature for apps.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
@@ -16,7 +16,7 @@ contributors:
 
 # Auto app updates (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 Auto app update feature allows automatic updates of third-party applications installed through AppSource. This feature helps both third-party  publishers and customers keep software up to date in a simple and controlled way with minimal administrative overhead.
 

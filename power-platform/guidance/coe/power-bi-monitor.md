@@ -88,7 +88,7 @@ The table of apps shows:
 >[!NOTE]
 > **Last launched** information is only available if the [Audit Log](setup-auditlog-http.md) has been configured.
 >
-> Information about bots created via Power Virtual Agents in Microsoft Teams environments is currently not available in the CoE Starter Kit.
+> Information about bots created via Microsoft Copilot Studio in Microsoft Teams environments is currently not available in the CoE Starter Kit.
 
 The filters allow you to filter by Owner as well as Created date.
 
@@ -161,7 +161,7 @@ Filters on this page can help you narrow down this view by flow owner, flow disp
 
 ## Bots
 
-The **Bots** page provides an overview of Power Virtual Agent bots in your environment:
+The **Bots** page provides an overview of Microsoft Copilot Studio bots in your environment:
 
 - Total number of bots
 - Total number of bots created this month
@@ -172,7 +172,7 @@ Through visuals, you can see your bot creation trend and top environments with b
 
 Filters on this page can help you narrow down this view by environment and by maker.
 
-![Power Virtual Agents.](media/pb-13.png "Power Virtual Agents")
+![Microsoft Copilot Studio](media/pb-13.png "Microsoft Copilot Studio")
 
 ## AI Builder models
 

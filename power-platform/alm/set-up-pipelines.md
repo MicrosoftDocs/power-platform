@@ -4,7 +4,7 @@ description: Learn how to create, configure, share, and manage Power Platform pi
 author: caburk
 ms.author: matp
 ms.topic: how-to
-ms.date: 03/18/2024
+ms.date: 04/10/2024
 ms.custom: template-how-to
 contributors:
 - asheehi1
@@ -28,6 +28,8 @@ Pipelines are now available to all who navigate to the pipelines page for the fi
 ### Prerequisites for personal pipelines
 
 - Two environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and one target environment.
+  > [!NOTE]
+  > The default environment can't be used as the target environment for personal pipelines.
 - All environments used in pipelines must have a Microsoft Dataverse database.
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
 
@@ -110,8 +112,8 @@ Once installed, the deployment pipelines configuration application appears in th
 
 ### Configure a deployment pipeline
 
-1. Copy the environment IDs of all development and target [Managed Environments](../admin/managed-environment-overview.md) that are linked to pipelines. You’ll need these IDs later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
-1. Once the **Deployment Pipeline** package installation has completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you installed the application).
+1. Copy the environment IDs of all development and target [Managed Environments](../admin/managed-environment-overview.md) that are linked to pipelines. You need these IDs later. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
+1. Once the **Deployment Pipeline** package installation is completed, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), then select the dedicated host environment (where you installed the application).
 1. **Play** the **Deployment Pipeline Configuration** app.
 1. Select **Environments** on the left pane, and then select **New** to create the environment records in Dataverse:
    - **Name**: Enter the name for the environment record. It's a good idea to include the same name as the actual environment, such as **Contoso Dev**.
@@ -119,7 +121,7 @@ Once installed, the deployment pipelines configuration application appears in th
    - **Environment Id**: Be sure to select the correct ID. You can find the environment ID for the current environment within make.powerapps.com. Select the **Settings** icon on the command bar, and then select **Developer resources**. More information: [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)
 1. Select **Save**.
 1. Refresh the form, then verify **Validation Status** equals **Success**.
-1. Repeat steps 4-6 until all environments that will participate in the pipeline have environment records created.
+1. Repeat steps 4-6 until all environments that participate in the pipeline have environment records created.
 1. Select **Pipelines** on the left navigation pane, and then select **New** to create a new deployment pipeline:
    - **Name**: Enter a name for the pipeline, such as *Contoso Standard Deployment Pipeline* or *Contoso Hotfix Pipeline*.
    - **Description**: Optionally, enter a meaningful description for the pipeline.
@@ -135,8 +137,8 @@ Once installed, the deployment pipelines configuration application appears in th
    - **Name**: The name of the stage.
    - **Description** (optional): Optional description for the stage.
    - **Previous Deployment Stage** (optional): Specifies a deployment stage that must be deployed to before deploying to the current stage. For example, when creating a production stage, you can add the test stage as the **Previous Deployment Stage**. For the first stage, or pipelines containing only one stage, this stage should be left blank.
-   - **Target Deployment Environment**: This is the target environment where this stage will deploy to.
-   - **PreDeployment Step Required** (optional): Deployment requests will be pending until approved via custom business logic. Requires additional configuration. More information: [Extend pipelines in Power Platform](extend-pipelines.md)  
+   - **Target Deployment Environment**: This is the target environment where this stage deploys to.
+   - **PreDeployment Step Required** (optional): Deployment requests are pending until approved via custom business logic. Requires additional configuration. More information: [Extend pipelines in Power Platform](extend-pipelines.md)  
 1. Repeat the previous two steps for each stage you'd like to add to the pipeline. You must have at least one stage. You can add up to seven stages.
 
   :::image type="content" source="media/pipelines-pre-step-config.png" alt-text="Pipelines pre-deployment step required":::
@@ -182,16 +184,16 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ### Accessing the Deployment Pipeline Configuration app from Power Apps
 
-From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar will navigate to the app of the pipelines host that is associated with the current environment:
+From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar navigates to the app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button links to the Deployment Pipeline Configuration app within the dedicated Host environment.
-1. If the current environment is associated with the Platform host, the button will link to an embedded Deployment Pipeline Configuration app within Power Apps.
+1. If the current environment is associated with the Platform host, the button links to an embedded Deployment Pipeline Configuration app within Power Apps.
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
 
-#### Disassociating environments from one host and associating them with another host
+#### Manually disassociating environments from one host and associating them with another host
 
-1. From the Power Apps (make.powerapps.com), begin in an environment that you want to disassociate, and select **Solutions**.
+1. From Power Apps (make.powerapps.com), begin in an environment that you want to disassociate, and select **Solutions**.
 1. Choose any solution that you have access to, and select into it.
 1. Navigate to the **Pipelines** page from the left navigation pane, and then select **Manage pipelines** on the command bar. If you're beginning with a custom host, you can also go directly to the dedicated host environment and run the **Deployment Pipeline Configuration** app from there.
 1. Now that you are in the **Deployment Pipeline Configuration** app, navigate to **Environments** from the left navigation pane.
@@ -202,6 +204,52 @@ The Deployment Pipeline Configuration app can be accessed by anyone with the Dep
 1. Create the environment record by assigning a name, type, environment ID, and optional description.
 
 Now you're able to link the environments to pipelines in the new host.
+
+#### Using Force Link to associate an environment with a new host
+
+After creating an environment record in the Deployment Pipeline Configuration app, you might encounter an error message indicating "this environment is already associated with another pipelines host." To take over the association, resulting in delinking the environment in the previous host and a successful link to the new host, select **Force Link** on the command bar.
+
+> [!IMPORTANT]
+>
+> - Makers lose access to any pipelines in the previous host that were accessible within that environment when you perform this action on a development (source) environment.
+> - This action can be undone by performing a **Force Link** in the previous host.
+> - The environment record in the previous host will have a stale validation status until it's updated, so it will show as **Succeeded** unless it's updated.
+
+
+## Frequently asked questions
+
+### Will personal pipelines conflict with any pipelines that I have already set up?
+
+  No. Thanks to the host separation dynamic that we have in place, there's no way for a maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. By default, makers don't have permissions to create lightweight personal pipelines in environments already associated with a custom host. This means that your current pipelines UX, if in place, won't change.
+
+> [!IMPORTANT]
+> Makers also don't receive elevated access to environments as a result of this feature. Selectable target environments are filtered to include only environments that a maker can already import to. This feature ensures that all personal pipelines are stored in the platform host that is accessible to admins, and provides an easier way for makers to self-service their ALM.
+
+### Why am I seeing an error that states "this environment is already associated with another pipelines host?"
+
+This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to [Using Force Link to associate an environment with a new host](#using-force-link-to-associate-an-environment-with-a-new-host) or [Disassociating environments from one host and associating them with another host](#manually-disassociating-environments-from-one-host-and-associating-them-with-another-host).
+
+### Do the pipelines and data within the platform host count towards my Dataverse capacity?
+
+  No. The data consumption in the platform host doesn't count against your current plan. 
+
+However, capacity does apply to a custom host, which isn't an implementation in the platform but is instead in a customizable environment.
+
+### What if I want to enable makers to create personal pipelines in a custom host? Can I do that?
+
+Yes. As an admin, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant lightweight pipeline creation permissions to. Admins can also add users to the **Deployment Pipeline Maker** team via the **Security Teams** page in the Deployment Pipeline Configuration app.
+
+This Deployment Pipelines Default role isn't assigned to anyone by default in the case of custom host, so the lightweight personal pipeline creation experience is only visible by default in environments that aren't already associated with a custom host.
+
+### Why am I not seeing the latest features for pipelines?
+
+The pipelines package is always being updated to give you the latest and greatest for your ALM processes. Ensure that you have the latest Power Platform pipelines package in your **custom host**:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.com),
+1. Select your pipelines host environment.
+1. Select **Dynamics 365 apps**, and locate **Power Platform Pipelines.** Notice if there's an update available.
+
+For **platform hosts**, the pipelines package is updated automatically, and might not be available as soon as the manual package update is made available for custom hosts.
 
 ## Next steps
 

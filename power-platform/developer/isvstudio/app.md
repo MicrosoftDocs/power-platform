@@ -1,7 +1,7 @@
 ---
 title: App page of ISV Studio | Microsoft Docs
 description: Learn about the App page capabilities provided by the ISV Studio portal.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 author: angela21k
 ms.author: angelakim
 ms.reviewer: jdaly
@@ -15,6 +15,8 @@ contributors:
 ---
 
 # The App page
+
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 After the user selects an app, the user is navigated to the app's detail page, which provides a view to analyze the install history across tenants for that particular app. The app description is from [AppSource](https://appsource.microsoft.com/).
 

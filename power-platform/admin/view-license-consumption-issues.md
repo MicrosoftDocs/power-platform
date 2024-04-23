@@ -2,7 +2,7 @@
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 03/20/2024
+ms.date: 04/23/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use the **Billings (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
+Use the **Billing (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
 
 - How many Power Apps licenses are purchased?
 - How many of those Power Apps licenses are assigned to users? 
@@ -134,7 +134,7 @@ The **Environments** tab on the **Licenses (preview)** page displays licensing i
 | Premium feature | Indicates if a premium feature, such as a premium connector, custom connector, or Dataverse connector, was used in the flow. |
 | Flow type | Indicates if the flow is scheduled, instant, or automated. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. |
-| Attention needed | Summary count of flows requiring licensing attention, which includes: </br><ul></br><li>List of flow not having an owner.</li></br><li>Standalone, Premium flow using standard or expired licenses.</li></br><li>Out of Context flow, such as Premium flows using Power Apps, Power Virtual Agents, or Dynamics 365 licenses but not running in in the context of Power Apps, Power Virtual Agents, or Dynamics 365.</li></br></ul> |
+| Attention needed | Summary count of flows requiring licensing attention, which includes: </br><ul></br><li>List of flow not having an owner.</li></br><li>Standalone, Premium flow using standard or expired licenses.</li></br><li>Out of Context flow, such as Premium flows using Power Apps, Microsoft Copilot Studio, or Dynamics 365 licenses but not running in in the context of Power Apps, Microsoft Copilot Studio, or Dynamics 365.</li></br></ul> |
 
 ## Other ways to view licensing pages
 

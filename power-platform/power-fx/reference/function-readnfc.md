@@ -5,7 +5,7 @@ author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 08/01/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: mikepena
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
   - mikepenaMS
   - anuitz
 ---

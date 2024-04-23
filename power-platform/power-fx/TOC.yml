@@ -28,8 +28,12 @@
             href: formula-reference-overview.md
           - name: Power Apps formula reference
             href: formula-reference.md
+          - name: Canvas apps formula reference
+            href: formula-reference-canvas-apps.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Cards formula reference
+            href: formula-reference-cards.md
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md
           - name: Power Platform CLI formula reference
@@ -170,6 +174,8 @@
             href: reference/function-form.md
           - name: Enable
             href: reference/function-enable-disable.md
+          - name: EncodeHTML
+            href: reference/function-encode-decode.md
           - name: EncodeUrl
             href: reference/function-encode-decode.md
           - name: EndsWith
