@@ -32,6 +32,10 @@ Launches a webpage or a canvas app. The function supports:
 
 **Launch** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
+>[!NOTE]
+> For Power Apps opened with the Launch formula, if the app does not appear an end-user must check if it's blocked by a browser pop-up blocker or check if the browser awaiting a user response via dialog asking if the user wants to navigate to a new screen.
+
+
 ### Address
 
 Webpages are launched via a URL address. For example:
