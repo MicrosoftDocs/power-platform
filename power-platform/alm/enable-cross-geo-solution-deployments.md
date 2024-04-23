@@ -12,7 +12,7 @@ contributors:
 ---
 # Enable cross-geo solution deployments for pipelines in Power Platform
 
-Administrators can enable solution deployments via pipelines across geographical [regions](../admin/regions-overview.md).
+Administrators can enable solution deployments via pipelines across geographical [regions](../admin/regions-overview.md). This provides flexibility for organizations that are distributed across geographical regions, making it easy to centrally administer global deployments within a single management plane.
 
 ## Prerequisites to enable cross-geo solution deployments
 
