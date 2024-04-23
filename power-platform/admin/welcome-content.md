@@ -1,9 +1,9 @@
 ---
-title: Enable maker welcome content (preview)
+title: Enable maker welcome content
 description: Enable welcome content for makers for Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/25/2023
+ms.date: 04/23/202f
 author: AngelMarshall
 ms.author: tsmarsha
 ms.reviewer: sericks
@@ -11,11 +11,10 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+ms.contributors:
+- hasharaf
 ---
-# Enable maker welcome content (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
+# Enable maker welcome content
 
 In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
 
@@ -23,9 +22,6 @@ When the welcome content is enabled, upon signing in to Power Apps, makers will 
 
 > [!div class="mx-imgBorder"] 
 > ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
-
-> [!Important]
-> [!include [preview](../includes/cc-preview-features-definition.md)]
 
 ## Add welcome content
 
