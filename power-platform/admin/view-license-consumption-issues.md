@@ -2,7 +2,7 @@
 title: View license consumption for Power Apps and Power Automate (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
-ms.date: 11/07/2023
+ms.date: 04/19/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -18,7 +18,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use the **Billings (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
+Use the **Billing (preview)** > **Licenses (preview)** page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) to monitor the consumption of your organization's Power Apps licenses and easily spot environments that might have licensing issues. Get answers to questions like these:
 
 - How many Power Apps licenses are purchased?
 - How many of those Power Apps licenses are assigned to users? 

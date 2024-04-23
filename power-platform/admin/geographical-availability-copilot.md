@@ -4,7 +4,7 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 04/19/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -45,7 +45,7 @@ The following table lists the regions involved with copilots and generative AI f
 | Australia<br>India<br>United Kingdom<br>United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
 | Europe\*  | Sweden or Switzerland| United States |
 | France<br>Germany<br>Norway<br>Switzerland | Sweden or Switzerland | United States|
-| Asia<br>Canada<br>Japan<br>South Africa<br>South America<br>South Korea<br>United Arab Emirates | United States | United States| 
+| Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
 
 \*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
@@ -104,7 +104,7 @@ For information about regions supported by Dynamics 365 copilots and generative 
 
 ## Languages availability
 
-To learn about the languages that are supported, see the [Copilot International Availability report](https://dynamics.microsoft.com/en-us/availability-reports/copilotreport/).
+To learn about the languages that are supported, see the [Copilot International Availability report](https://aka.ms/bapcopilot-intl-report-external).
 
 ## Related content
 
