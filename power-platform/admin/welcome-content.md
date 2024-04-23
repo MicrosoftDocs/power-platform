@@ -20,8 +20,7 @@ In Managed Environments, admins can provide customized welcome content to help t
 
 When the welcome content is used, upon signing in to Power Apps, makers are greeted with customized getting started information. More information: [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview)
 
-> [!div class="mx-imgBorder"] 
-> ![Welcome content for makers.](media/welcome/maker-welcome-1.png "Welcome content for makers") 
+:::image type="content" source="media/welcome/maker-welcome-1.png" alt-text="Welcome content for makers.":::
 
 ## Add welcome content
 
@@ -29,15 +28,10 @@ When the welcome content is used, upon signing in to Power Apps, makers are gree
 
 2. Select **Environments** in the left navigation pane, select a managed environment, and then select **Edit Managed Environment** on the top menu bar.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Edit Managed Environment.](media/welcome/edit-managed-environment.png "*Edit Managed Environment") 
-
 3. Enter the help content in the text box under **Maker Welcome content**. 
  
-    > [!div class="mx-imgBorder"] 
-    > ![Enter your welcome content.](media/welcome/maker-welcome-2.png "Enter your welcome content") 
-   
-   
+    :::image type="content" source="media/welcome/maker-welcome-2.png" alt-text="Enter your welcome content.":::
+      
     You can enter plain text or use Markdown, as demonstrated in this example.
    
      ```
@@ -57,8 +51,7 @@ When the welcome content is used, upon signing in to Power Apps, makers are gree
 
 5. Select **Preview in a new tab** to see how the text you entered, or Markdown renders.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Preview content.](media/welcome/maker-welcome-3.png "Preview content") 
+   :::image type="content" source="media/welcome/maker-welcome-3.png" alt-text="Preview content.":::
 
 ## Use PowerShell to add and update welcome content
 
