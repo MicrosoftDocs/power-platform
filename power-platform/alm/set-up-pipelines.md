@@ -19,7 +19,7 @@ Pipelines are now available to all who navigate to the pipelines page for the fi
 
 ### Prerequisites for personal pipelines
 
-- Two environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and one target environment.
+- Three environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and two target environments (see [Add a stage to a single-stage pipeline you own](#add-a-stage-to-a-single-stage-pipeline-you-own)).
   > [!NOTE]
   > The default environment can't be used as the target environment for personal pipelines.
 - All environments used in pipelines must have a Microsoft Dataverse database.
