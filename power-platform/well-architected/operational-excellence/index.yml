@@ -8,7 +8,7 @@ metadata:
   description: Learn about resources that can help you apply operational excellence guidance to your architectures.
   ms.topic: landing-page
   ms.service: power-platform
-  ms.subservice: guidance
+  ms.subservice: well-architected
   author: robstand
   ms.author: rstand
   ms.date: 03/28/2024

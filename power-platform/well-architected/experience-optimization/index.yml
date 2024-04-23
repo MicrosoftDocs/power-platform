@@ -7,7 +7,7 @@ metadata:
   title: Experience optimization quick links
   description: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your workload.
   ms.service: waf
-  ms.subservice: waf-pillar-efficiency
+  ms.subservice: well-architected
   ms.topic: landing-page
   author: robstand
   ms.author: rstand
