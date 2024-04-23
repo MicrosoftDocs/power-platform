@@ -45,6 +45,8 @@ Before users can start using a Language Pack to display a language, the Language
    Here you’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
 
 4. For each Language Pack that you want to provision (enable), select the check box next to it. For each Language Pack that you want to unprovision (disable), clear the check box.  
+   > [!NOTE]
+   >  Additional storage is required for each language you enable.  Disabling a language will not uninstall the language or reduce the storage requirement.  Only enable languages that you need.
 
 5. Select **Apply**.  
 
