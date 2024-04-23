@@ -120,7 +120,7 @@ In this example, you'll remove an item by using a _button_ that is outside the g
 1. Select the **Insert** from the left pane.
 
 1. Select **Vertical gallery**. <br>
-   A **Gallery** control is be added to your screen.
+   A **Gallery** control is added to your screen.
 
    ![Using the Insert tool pane to add a vertical gallery control.](media/function-remove-removeif/gallery-add.png)
 
@@ -133,7 +133,7 @@ In this example, you'll remove an item by using a _button_ that is outside the g
 
    ![Gallery added showing the Contacts table.](media/function-remove-removeif/gallery-data.png)
 
-1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control from left pane:
+1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control from the left pane:
 
    ![Using the Insert tool pane to add a button control.](media/function-remove-removeif/gallery-addbutton.png)
 
@@ -210,7 +210,7 @@ Sample collection is created that you can use in the following example.
 1. Select the **Insert** from the left pane.
 
 1. Select **Vertical gallery**. <br>
-   A **Gallery** control is be added to your screen.
+   A **Gallery** control is added to your screen.
 
    ![Using the Insert tool pane to add a vertical gallery control.](media/function-remove-removeif/gallery-add.png)
 
@@ -229,7 +229,7 @@ Sample collection is created that you can use in the following example.
 
    ![Select top record in a gallery.](media/function-remove-removeif/gallery-select-template.png)
 
-1. Select **Add icon** from left pane. <br>
+1. Select **Add icon** from the left pane. <br>
 
    ![Using the Insert tool pane to add an icon control.](media/function-remove-removeif/gallery-addicon.png)
 
