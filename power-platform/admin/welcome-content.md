@@ -3,7 +3,7 @@ title: Enable maker welcome content
 description: Enable welcome content for makers for Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/202f
+ms.date: 04/23/2024
 author: AngelMarshall
 ms.author: tsmarsha
 ms.reviewer: sericks
