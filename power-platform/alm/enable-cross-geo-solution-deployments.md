@@ -16,7 +16,7 @@ Administrators can enable solution deployments via pipelines across geographical
 
 ## Prerequisites to enable cross-geo solution deployments
 
-- You must have administrator privileges to access the Deployment Pipeline Configuration app _and_ **Write** privileges on the **Organization Setting (organizationsetting)** table in the host environment to enable this setting. <!-- Need more detail what administrator privileges are required. -->
+- You must be a **System Administrator** or a **Deployment Pipeline Administrator** to access the Deployment Pipeline Configuration app _and_ have **Write** privileges on the **Organization Setting (organizationsetting)** table in the host environment to enable this setting.
   > [!IMPORTANT]
   > This setting enables data to be shared across geographical regions within in your tenant. <!-- Is there a link for more info about this risk? -->
 - All environments used in pipelines must have a Microsoft Dataverse database.
