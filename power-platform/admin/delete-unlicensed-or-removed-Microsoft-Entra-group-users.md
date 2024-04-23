@@ -1,5 +1,5 @@
 ---
-title: Delete unlicensed or removed Microsoft Entra group users 
+title: Delete unlicensed or removed Microsoft Entra group users (preview)
 description: This article shows how to delete unlicensed or Microsoft Entra group users who are no longer in the group from an environment in Microsoft Power Platform Admin center.
 ms.subservice: admin
 author: paulliew
@@ -7,12 +7,14 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 04/22/2024
+ms.date: 04/23/2024
 search.audienceType: 
   - admin
 ---
 
-# Delete unlicensed or removed Microsoft Entra group members (Preview)
+# Delete unlicensed or removed Microsoft Entra group members (preview)
+[This article is prerelease documentation and is subject to change.]
+
 Stub user records are created as placeholder records in the user table. The records are typically imported from external systems during migration of those applications. The stub user records are created with a disabled status and assigned with a security role. These users can’t log into the Dataverse environment. For more information, see [how stub users are created](https://learn.microsoft.com/power-platform/admin/create-users#how-stub-users-are-created).
 
 The stub users who are still active in the Microsoft Entra ID can be converted and activated as Dataverse users by mapping the stub users to the Microsoft Entra ID user. For stub users who are no longer in Microsoft Entra ID, they remain in disabled status. These disabled status stub [users can be deleted.](https://learn.microsoft.com/power-platform/admin/delete-users#delete-users-in-power-platform)
