@@ -55,11 +55,11 @@ Once you select **Save**, the current (source) environment and the selected targ
 
 #### Add a stage to a single-stage pipeline you own
 
-Select **Add stage** on the command bar to append a stage to the current single-stage pipeline. You will be prompted for a stage name, description, and a final target environment for your pipeline.
+Select **Add stage** on the command bar to append a stage to the current single-stage pipeline. As part of this step, you're prompted for a stage name, description, and a final target environment for your pipeline.
 
 > [!NOTE]
 > - You must be the owner of the current pipeline to add a stage.
-> - We have limited the add stage capability to single-stage pipelines, but administrators can add more stages in the [Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps).
+> - Ahe add stage capability is limited to single-stage pipelines, but administrators can add more stages in the [Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps).
 
 #### Delete a pipeline you own from Power Apps
 
@@ -69,9 +69,9 @@ This action doesn't remove the run history for the pipeline nor does it delete t
 
 #### Use your personal pipeline with other development environments
 
-If you have the same pipeline process for an additional development environment (e.g. your UAT and Production environments are the same for another source environment), you can reuse the pipeline you've already created.
+If you have the same pipeline process for an additional development environment, such as your UAT and production environments are the same for another source environment, you can reuse the pipeline you already created.
 
-Just select the created pipeline from the dropdown menu. When you click **Next** in the first step of the deployment configuration process, the current environment will be linked to the pipeline (and the host) as a development environment.
+Choose the created pipeline from the dropdown menu. When you select **Next** in the first step of the deployment configuration process, the current environment is linked to the pipeline (and the host) as a development environment.
 
 ## Create a pipeline using a custom pipelines host
 
@@ -220,12 +220,11 @@ After creating an environment record in the Deployment Pipeline Configuration ap
 > - This action can be undone by performing a **Force Link** in the previous host.
 > - The environment record in the previous host will have a stale validation status until it's updated, so it will show as **Succeeded** unless it's updated.
 
-
 ## Frequently asked questions
 
 ### Will personal pipelines conflict with any pipelines that I have already set up?
 
-  No. Thanks to the host separation dynamic that we have in place, there's no way for a maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. By default, makers don't have permissions to create lightweight personal pipelines in environments already associated with a custom host. This means that your current pipelines UX, if in place, won't change.
+No. Thanks to the host separation dynamic that we have in place, there's no way for a maker creating a personal pipeline (in the platform host) to associate an environment that is already associated with a custom host. By default, makers don't have permissions to create lightweight personal pipelines in environments already associated with a custom host. This means that your current pipelines UX, if in place, won't change.
 
 > [!IMPORTANT]
 > Makers also don't receive elevated access to environments as a result of this feature. Selectable target environments are filtered to include only environments that a maker can already import to. This feature ensures that all personal pipelines are stored in the platform host that is accessible to administrators, and provides an easier way for makers to self-service their ALM.
@@ -233,10 +232,11 @@ After creating an environment record in the Deployment Pipeline Configuration ap
 ### Why can't I select or view certain environments when I create a pipeline?
 
 The target environment picker filters out any environments that:
-- The current user does not have import-access to, or
-- Are outside of the geographical region that the pipelines host is located in if host-wide setting is disabled (see [Enable cross-geo solution deployments](enable-cross-geo-solution-deployments.md)).
-  
-You also cannot create a pipeline with a target environment that is already associated to the host as a development environment. To change an environment's type distinction in a host, you must [navigate to the Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps), delete the environment record, and recreate it with the desired type.
+
+- The current user doesn't have import-access to, or
+are outside of the geographical region that the pipelines host is located in if host-wide setting is disabled (see [Enable cross-geo solution deployments](enable-cross-geo-solution-deployments.md)).
+
+You also can't create a pipeline with a target environment that is already associated to the host as a development environment. To change an environment's type distinction in a host, you must [play the Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps), delete the environment record, and re-create the environment record with the desired type.
 
 ### Why am I seeing an error that states "this environment is already associated with another pipelines host?"
 
@@ -244,9 +244,9 @@ This error indicates that another host already contains an active environment re
 
 ### Do the pipelines and data within the platform host count towards my Dataverse capacity?
 
-No. The data consumption in the **platform host** doesn't count against your current plan since the Pipelines data for the plaform host is stored in Power Platform infrastructure. This data is stored within your tenant and accessible by administrators, but due to its implementation details, does not consume data capacity within a plan. 
+No. The data consumption in the *platform host* doesn't count against your current plan since the pipelines data for the platform host is stored in Power Platform infrastructure. This data is stored within your tenant and accessible by administrators, but due to its implementation details, doesn't consume data capacity within a plan.
 
-However, capacity does apply to a **custom host**, which isn't an implementation in the platform but is instead in a customizable environment.
+However, capacity does apply to a *custom host*, which isn't an implementation in the platform but is instead in a customizable environment.
 
 ### What if I want to enable makers to create personal pipelines in a custom host? Can I do that?
 
