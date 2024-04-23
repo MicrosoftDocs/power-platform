@@ -39,7 +39,7 @@ If the starting position is negative or beyond the end of the string, **Mid** re
 
 **Left**( _String_, _NumberOfCharacters_ )<br>**Mid**( _String_, _StartingPosition_ [, *NumberOfCharacters* ] )<br>**Right**( _String_, _NumberOfCharacters_ )
 
-- _String_ - Required. The string to from which to extract the result.
+- _String_ - Required. The string from which to extract the result.
 - _StartingPosition_ - Required (**Mid** only). The starting position. The first character of the string is position 1.
 - _NumberOfCharacters_ - Required (**Left** and **Right** only). The number of characters to return. If omitted for the **Mid** function, the function returns the portion from the starting position until the end of the string.
 
