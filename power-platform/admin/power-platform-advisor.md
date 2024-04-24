@@ -182,3 +182,11 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 > Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
 >
 > The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+> 
+
+### Pending license requests
+
+This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and/or result in non compliant use of premium apps and resources.
+
+> [!IMPORTANT]
+> You need to have adequate permissions on the Microsoft 365 Admin Center (MAC) in order to assign licenses. If you do not have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
