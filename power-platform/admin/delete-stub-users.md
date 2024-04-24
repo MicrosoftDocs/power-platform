@@ -19,6 +19,11 @@ Stub user records are created as placeholder records in the user table. The reco
 
 The stub users who are still active in the Microsoft Entra ID can be converted and activated as Dataverse users by mapping the stub users to the Microsoft Entra ID user. For stub users who are no longer in Microsoft Entra ID, they remain in the disabled status. Disabled status stub [users can be deleted.](delete-users.md#delete-users-in-power-platform)
 
+> [!Important]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+
 ## Delete disabled status stub users
 
 Complete the following steps to turn on the **Delete disabled users** feature.
