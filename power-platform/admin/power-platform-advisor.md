@@ -50,7 +50,7 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 - Select **View details** on any recommendation to view its details.
 - Select **View recommendations** to view all recommendations on the **Advisor** page.
 
-:::image type="content" source="media/power-platform-advisor/advisor-card.svg" alt-text="Advisor card on the home page.":::
+:::image type="content" source="media/advisor-recommendations.png" alt-text="Advisor card on the home page.":::
 
 > [!TIP]
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
