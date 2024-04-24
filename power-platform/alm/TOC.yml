@@ -90,6 +90,8 @@
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
+            - name: Enable cross-geo solution deployments
+              href: enable-cross-geo-solution-deployments.md
             - name: Redeploy past solution versions
               href: redeploy-past-solution-versions.md
             - name: Use Copilot to generate deployment notes in pipelines
