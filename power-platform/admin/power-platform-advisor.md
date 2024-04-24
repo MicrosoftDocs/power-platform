@@ -188,4 +188,4 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and may result in noncompliant use of premium apps and resources.
 
 > [!IMPORTANT]
-> You need to have adequate permissions on the Microsoft 365 Admin Center (MAC) in order to assign licenses. If you do not have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
+> You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
