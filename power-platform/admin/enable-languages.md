@@ -14,18 +14,18 @@ contributors:
 ---
 # Regional and language options for your environment 
 
-Enable languages in your organization to display the user interface and Help in a language that’s different from the base language. 
+Add languages in your organization to display the user interface and Help in a language that’s different from the base language. 
 
 The following table shows tasks that are associated with changing regional and language options for your organization.  
 
 |Task |  Description   |
 |--------|---------|
 |  **Set the base language**  |  The base language determines default settings for regional and language options in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). After the base language is set, you can’t change it. |
-| **Enable or disable languages** | You can enable or disable available languages in the **Settings** area. |
+| **Add or remove languages** | You can add or remove available languages in the **Settings** area. |
 |  **Add and remove currencies**  | Similar to setting the base language, you select your organization's base currency during the purchasing process for a subscription. After the base currency is set, you can’t change it.<br /><br /> However, if your organization uses more than one currency to track financial transactions, you can add currencies. |
 | **Deactivate or activate currency records** |   You can’t delete currency records that are being used by other records, such as opportunities or invoices. However, you can deactivate currency records so they won’t be available for future transactions. |
 
-## Enable the language  
+## Add a language  
 
 These settings can be found in the Microsoft Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Languages**.
 
@@ -34,10 +34,10 @@ Make sure you have the System Administrator or System Customizer security role o
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-Before users can start using a Language Pack to display a language, the Language Pack must be enabled in your organization.
+Before users can start using a Language Pack to display a language, the Language Pack must be added in your organization.
 
 > [!NOTE]
-> To display the translated labels for additional languages imported into an environment from a solution, the language must be enabled in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
+> To display the translated labels for the languages imported into an environment from a solution, the language must be added in the environment *before* you import the solution. More information: [Label text doesn’t display in additional languages after import](/powerapps/maker/data-platform/import-update-export-solutions#label-text-doesnt-display-in-additional-languages-after-import)
 
 1. Sign in to the Power Platform admin center. 
 
