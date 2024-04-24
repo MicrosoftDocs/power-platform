@@ -2,10 +2,9 @@
 title: "Regional and language options for your environment | MicrosoftDocs"
 description: Set regional and language options for your environment 
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 04/24/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -40,22 +39,23 @@ Before users can start using a Language Pack to display a language, the Language
 
 1. Sign in to the Power Platform admin center. 
 
-2. Select an environment and go to **Settings** > **Product** > **Languages**.
+1. Select an environment and go to **Settings** > **Product** > **Languages**.
 
    Here you’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
 
-4. For each Language Pack that you want to provision (enable), select the check box next to it. For each Language Pack that you want to unprovision (disable), clear the check box.  
+1. For each Language Pack that you want to provision (enable), select the check box next to it. For each Language Pack that you want to unprovision (disable), clear the check box.
+
    > [!NOTE]
-   >  Additional storage is required for each language you enable.  Disabling a language will not uninstall the language or reduce the storage requirement.  Only enable languages that you need.
+   >  Additional storage is required for each language you use.  Not using a specific language doesn't uninstall the language or reduce the storage requirement.  Only use languages that you need.
 
-5. Select **Apply**.  
+1. Select **Apply**.  
 
-6. Select **OK** on any confirmation dialog boxes that open.  
+1. Select **OK** on any confirmation dialog boxes that open.  
 
    > [!NOTE]
    >  It may take an hour or more to provision or unprovision the languages.  
 
-7. Select **Close** to close the **Language Settings** dialog box.
+1. Select **Close** to close the **Language Settings** dialog box.
 
 ## Select the language to display the user interface and Help  
 
