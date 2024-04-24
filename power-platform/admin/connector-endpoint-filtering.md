@@ -28,7 +28,7 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - HTTP
 - HTTP with Microsoft Entra ID (AD)
 - HTTP Webhook
-- SQL Server
+- SQL Server (includes using SQL Server Connector to access Azure Synapse data warehouse)
 - Azure Blob Storage 
 - SMTP 
 

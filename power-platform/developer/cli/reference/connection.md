@@ -3,8 +3,8 @@ title: Microsoft Power Platform CLI connection command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI connection command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
+ms.author: marcsc
+author: devkeydet
 ms.date: 1/22/2024
 ms.reviewer: jdaly
 ms.topic: reference

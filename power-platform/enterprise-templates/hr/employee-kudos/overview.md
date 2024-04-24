@@ -59,10 +59,10 @@ The Kudos template is available in [Microsoft AppSource](<https://aka.ms/AccessE
   - **Kudos - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Outlook
   - **Kudos - [Office 365 Users](/connectors/office365users/)** - Connection reference to Office 365
 
-## Next steps
+### Next step
 
 [Install and set up the Employee Kudos template](install-and-set-up.md)
 
-## See also
+### See also
 
 [Manage the Employee Kudos app](manage.md)

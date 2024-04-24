@@ -1,17 +1,17 @@
 ---
 title: Boolean function
 description: Reference information including syntax and examples for the Boolean function.
-author: jorisdg
+author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jorisde
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Boolean function
 

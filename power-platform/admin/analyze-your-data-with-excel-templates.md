@@ -67,7 +67,7 @@ search.audienceType:
 >  You can also download a template containing no data except for the columns associated with the record type (entity) using **Settings** > **Data Management** > **Templates for Data Import**. For more information, see: [Download a template for data import](../admin/download-template-data-import.md).  
 
 > [!IMPORTANT]
-> Document template downloaded from one environment can only be used within that environment. environment to environment migration for Word or Excel templates isn't currently supported.
+> Document template downloaded from one environment can only be used within that environment. Environment to environment migration for Word or Excel templates isn't currently supported.
 >
 > During the creation of an Excel template, a maximum of 50 records are exported in the template file.
   

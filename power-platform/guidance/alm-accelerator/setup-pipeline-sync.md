@@ -32,7 +32,7 @@ To simplify the process, we created a pipeline template that automatically syncs
 
 1. Change the pipeline name to *sync-pipeline-repo*, and then select **Save**.
 
-1. Set the `TEMPLATE-REPO` pipeline variable to <*https://github.com/microsoft/coe-alm-accelerator-templates*>.
+1. Set the `TEMPLATE-REPO` pipeline variable to <[*https://github.com/microsoft/coe-alm-accelerator-templates*](https://github.com/microsoft/coe-alm-accelerator-templates)>.
 
    You can use the sync pipeline to sync any GitHub repo to Azure DevOps. Set the `TEMPLATE-REPO` variable to the source GitHub repo to specify the sync source.
 
