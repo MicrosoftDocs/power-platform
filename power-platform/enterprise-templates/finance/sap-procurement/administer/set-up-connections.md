@@ -13,7 +13,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -38,7 +38,7 @@ The SAP Procurement template requires the following connections:
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
 - [SAP ERP connector](/connectors/saperp/)
 
-To set up [connections](/connectors/connectors):
+Take these steps to [create connections](/power-apps/maker/canvas-apps/add-manage-connections):
 
 1. Sign in to [Power Apps](https://make.powerapps.com).
 
@@ -69,6 +69,7 @@ All required connections are referenced by _Connection References_ in the SAP Pr
 
 To update the connection references originally set during the install solution process:
 
+1. Sign in to [Power Apps](https://make.preview.powerapps.com/) or [Power Automate](https://make.powerautomate.com/)
 1. Go to **Solutions**.
 1. Select the **SAP Procurement** solution.
 1. Select **Connection references**.
@@ -80,22 +81,16 @@ The two connection references contained in the SAP Procurement solution are:
 - **SAP Dataverse**: A placeholder for Dataverse connection.
 - **SAP ERP**: A placeholder for SAP ERP connection.
 
-## Related content
+More information:
 
-[Connectors overview](/connectors/connectors)
+- [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference)
+- [Manage connections in Power Automate](/power-automate/add-manage-connections)
+- [Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
 
-[Create new connections](/power-apps/maker/canvas-apps/add-manage-connections#create-a-new-connection)
-
-[Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference)
-
-[Manage connections in Power Automate](/power-automate/add-manage-connections)
-
-[Manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections)
-
-## Next steps
+### Next steps
 
 [Configure security groups](configure-security-groups.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

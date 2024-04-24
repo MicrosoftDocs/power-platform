@@ -61,7 +61,11 @@ Be sure admins with the necessary privileges are available to coordinate and set
 - A Microsoft Entra ID Global or Gateway (default user permission for anyone performing the install) admin
 - An SAP super admin (S-User)
 
-More information: [On-premises and VNet data gateways](/data-integration/gateway/), [On-premises data gateway management for Power Platform](/power-platform/admin/onpremises-data-gateway-management), [Set up on-premises data gateway for SAP integration with Power Platform](set-up-gateway.md)
+More information:
+
+- [On-premises and VNet data gateways](/data-integration/gateway/)
+- [On-premises data gateway management for Power Platform](/power-platform/admin/onpremises-data-gateway-management)
+- [Set up on-premises data gateway for SAP integration with Power Platform](set-up-gateway.md)
 
 ### Downloads
 
@@ -111,15 +115,11 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
 
 ## Related content
 
-[Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
-
-[Microsoft Entra ID documentation](/entra/identity/)
-
-[Administer Power Platform](/power-platform/admin/)
-
-[SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
-
-[Updated SAP connector for .NET support in on-premises data gateway](https://powerautomate.microsoft.com/blog/updated-sap-connector-for-net-support-in-on-premises-data-gateway/)
+- [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
+- [Microsoft Entra ID documentation](/entra/identity/)
+- [Administer Power Platform](/power-platform/admin/)
+- [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
+- [Updated SAP connector for .NET support in on-premises data gateway](https://powerautomate.microsoft.com/blog/updated-sap-connector-for-net-support-in-on-premises-data-gateway/)
   
 ### Next steps
 
