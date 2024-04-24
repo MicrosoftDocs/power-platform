@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/24/2024
+ms.date: 04/23/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -54,7 +54,7 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 
 > [!TIP]
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
-> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page in Power Platform admin center.":::
+> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page.":::
 
 ### Inline actions
 
