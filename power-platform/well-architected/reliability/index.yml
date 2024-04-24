@@ -7,6 +7,8 @@ metadata:
   title: Reliability quick links
   description: Learn about resources that can help you apply reliability guidance to your architecture to make your workload resilient to malfunction.
   ms.topic: landing-page
+  ms.service: power-platform
+  ms.subservice: well-architected
   author: robstand
   ms.author: rstand
   ms.date: 03/28/2024
