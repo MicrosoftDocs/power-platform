@@ -5,7 +5,7 @@ author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
 ms.date: 03/28/2024
-ms.subservice: guidance
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
