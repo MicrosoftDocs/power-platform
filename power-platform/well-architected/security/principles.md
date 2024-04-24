@@ -4,7 +4,7 @@ description: Understand the design principles of the Security pillar.
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
-ms.subservice: guidance
+ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 03/28/2024
 ---

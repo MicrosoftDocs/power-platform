@@ -1,5 +1,5 @@
 {:allowed-branchname-matches ["^main$"]
- :allowed-filename-matches ["power-platform" "power-virtual-agents"]
+ :allowed-filename-matches ["power-platform" "ps-docs"]
  :use-skip-label true
  :targets
  {

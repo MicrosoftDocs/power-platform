@@ -90,6 +90,6 @@ The *IT Base* solution contains various components that allow an admin to set up
   - **Appointment Booking – [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
   - **Appointment Booking – [Teams](/connectors/teams/)** - Connection reference to Microsoft Teams
 
-## Next steps
+### Next step
 
 [Install and set up the Appointment Booking template](install-and-set-up.md)
