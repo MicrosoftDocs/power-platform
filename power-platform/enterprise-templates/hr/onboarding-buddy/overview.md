@@ -74,6 +74,6 @@ The **Onboarding Buddy** solution contains components that manage the user exper
   - **Onboarding Buddy app - [Office 365 Users](/connectors/office365users/)**
   - **Onboarding Buddy app - [Office 365 Groups](/connectors/office365groups/)**
 
-## Next steps
+## Next step
 
 [Install and set up the Onboarding Buddy template](install-and-set-up.md).

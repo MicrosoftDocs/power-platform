@@ -18,7 +18,11 @@ Enterprise templates for Power Platform are enterprise-ready solutions that are 
 
 Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
 
-More information: [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology), [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation), [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Appointment Booking template.
 
@@ -37,11 +41,12 @@ Confirm your organization has the necessary licensing to carry out an enterprise
   - Power Apps per app pay-as-you-go-meter
   - Power Apps use rights included with Dynamics 365 licenses
 
+More license details are available in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
+
 > [!NOTE]
 >
 > Power Apps use rights included with Microsoft 365 and Office 365 licenses will not suffice to install the template.
 
-More license details are available in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 > [!TIP]
 > A free Developer Plan is a great way to install the template for evaluation purposes. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/)
@@ -270,6 +275,6 @@ Take these steps to enable the audit settings:
 1. Select **Start Auditing**.
 :::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of turning on auditing in the Power Platform admin center.":::
 
-## Next steps
+### Next step
 
 [Get started managing the appointment bookings](manage.md)

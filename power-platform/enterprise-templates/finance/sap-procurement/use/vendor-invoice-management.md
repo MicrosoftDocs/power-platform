@@ -92,10 +92,10 @@ The table provides invoice screen to function module field mappings.
 | Line (Default)   | REL_DATE                | GOODSMVT_ITEM    | REL_DATE   | utcNow() Date |
 | Header (Default) | Document Type           | GOODSMVT_CODE    | GM_CODE    | 01            |
 
-## See also
+### See also
 
-[SAP Vendor Management app](vendor-management.md)
-[SAP Requisition Management app](requisition-management.md)
-[SAP Purchase Order Management app](purchase-order-management.md)
-[SAP Goods Receipt Management app](goods-receipt-management.md)
-[SAP Vendor Payment management app](payment-management.md)
+- [SAP Vendor Management app](vendor-management.md)
+- [SAP Requisition Management app](requisition-management.md)
+- [SAP Purchase Order Management app](purchase-order-management.md)
+- [SAP Goods Receipt Management app](goods-receipt-management.md)
+- [SAP Vendor Payment management app](payment-management.md)

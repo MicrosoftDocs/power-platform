@@ -71,13 +71,13 @@ The table provides payment screen to function module field mappings.
 |     Header               |     BKPF                |     WAERS             |     Currency            |          |
 |     Header               |     LFA1                |     NAME1             |     VendorName            |          |
 |     Header               |     BSEG                |     LIFNR             |     Vendor            |          |
-|     Header               |     BSEG                |     AUGBL/ZLSPR             |     Status            |     'Blocked', 'To Be Paid', 'Paid'
+|     Header               |     BSEG                |     AUGBL/ZLSPR             |     Status            |     'Blocked', 'To Be Paid', 'Paid'|
 |     Header               |     BKPF                |     AWKEY             |     VendorInvoice            |     |
 |     Item                    |     BSEG                |     BUZEI             |     Item            |          |
 |     Item                    |     BSEG                |     SHKZG             |     Type            |          |
 |     Item                    |     BSEG                |     HKONT             |     GlAccountRaw            |          |
 |     Item                    |     BSEG                |     DMBTR             |     Amount            |          |
-|     Item                    |     BSEG                |                  |     CrudType            |     R
+|     Item                    |     BSEG                |                  |     CrudType    |     R |
 |     Item                    |     BSEG                |     HKONT             |     GlAccount            |          |
 |     Item                    |     BSEG                |     LIFNR             |     Vendor            |          |
 |     Item                    |     BSEG                |     AUGBL             |     Payment            |          |
@@ -94,10 +94,10 @@ The table provides payment screen to function module field mappings.
 |     GL Account                 |     SKAT              |     SAKNR            |     Description            |          |
 |     GL Account                 |     SKAT              |     TXT50             |     GlAccount            |          |
 
-## See also
+### See also
 
-[SAP Vendor Management app](vendor-management.md)
-[SAP Requisition Management app](requisition-management.md)
-[SAP Purchase Order Management app](purchase-order-management.md)
-[SAP Goods Receipt Management app](goods-receipt-management.md)
-[SAP Vendor Invoice Management app](vendor-invoice-management.md)
+- [SAP Vendor Management app](vendor-management.md)
+- [SAP Requisition Management app](requisition-management.md)
+- [SAP Purchase Order Management app](purchase-order-management.md)
+- [SAP Goods Receipt Management app](goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](vendor-invoice-management.md)

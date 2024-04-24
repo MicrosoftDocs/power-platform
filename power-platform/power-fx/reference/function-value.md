@@ -11,7 +11,7 @@ ms.author: gregli
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Decimal, Float, and Value functions

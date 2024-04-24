@@ -105,6 +105,6 @@ Dataverse storage powering intelligent search and role based security access to 
 
 More information: [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
 
-## Next steps
+### Next step
 
 [Install and set up the Hardware Request and Management template](install-and-set-up.md)
