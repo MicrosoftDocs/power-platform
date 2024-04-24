@@ -23,6 +23,10 @@ There are different scenarios where a user’s status might be set to disabled:
 
   •	When a user is removed from the Microsoft Entra group.
 
+> [!Important]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 
 ## How to delete unlicensed or removed Microsoft Entra group users
 There’s an organization setting which allows you to override the validation of the unlicensed or removed Microsoft group user’s active status so you can delete them.
