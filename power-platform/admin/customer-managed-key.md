@@ -35,6 +35,7 @@ These encryption key operations are available with customer-managed key (CMK):
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
+- Dataverse [Copilot for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-ai-copilot)  
 - [Power Automate](/power-automate/customer-managed-keys) <sup>1</sup>
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
@@ -122,7 +123,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 ##### Prerequisites
 
 - An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
-- Global tenant admin or an  Microsoft Entra ID with contributor permission to the Microsoft Entra subscription and permission to create an Azure Key Vault and key. This is required to set up the key vault.
+- Global tenant admin or an  Microsoft Entra ID with contributor permission to the Microsoft Entra subscription and permission to create an Azure Key Vault and key, and have access or create Resource group. This is required to set up the key vault.
 
 ##### Create the key and grant access using Azure Key Vault
 
@@ -158,6 +159,7 @@ In Azure, perform the following steps:
 
 1. Create a Pay-as-you-go or its equivalent Azure subscription. This step isn't needed if the tenant already has a subscription.
 1. Create a resource group. More information: [Create resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal#create-resource-groups)
+   **Note:** create or use a resource group that has a location, eg Central US that matches to the Power Platform environment's region, eg United States.
 1. Create a key vault using the paid subscription that includes soft-delete and purge protection with the resource group you created in the previous step.
    > [!IMPORTANT]
    >
@@ -303,23 +305,25 @@ A deployment is started. When it's done, the enterprise policy is created.
 - **name**. Name of the enterprise policy. This is the name of the policy that appears in Power Platform admin center.
 - **location**. One of the following. This is the location of the enterprise policy and it must correspond with the Dataverse environment’s region:
 
-  - `"unitedstates"`
-  - `"southafrica"`
-  - `"switzerland”`
-  - `"germany"`
-  - `"unitedarabemirates"`
-  - `"france"`
-  - `"uk”`
-  - `"japan"`
-  - `"india"`
-  - `"canada"`
-  - `"southamerica"`
-  - `"europe"`
-  - `"asia"`
-  - `"australia"`
-  - `"korea"`
-  - `"norway"`
-  - `"singapore"`
+   - '"unitedstates"'
+   - '"southafrica"'
+   - '"uk"'
+   - '"japan"'
+   - '"india"'
+   - '"france"'
+   - '"europe"'
+   - '"germany"'
+   - '"switzerland"'
+   - '"canada"'
+   - '"brazil"'
+   - '"australia"'
+   - '"asia"'
+   - '"uae"'
+   - '"korea"'
+   - '"norway"'
+   - '"singapore"'
+   - '"sweden"'
+      
 - Copy these values from your key vault properties in the Azure portal:
   - **keyVaultId**: Go to **Key vaults** > select your key vault > **Overview**. Next to **Essentials** select **JSON View**. Copy the **Resource ID** to the clipboard and paste the entire contents into your JSON template.
   - **keyName**: Go to **Key vaults** > select your key vault > **Keys**. Notice the key **Name** and type the name into your JSON template.
@@ -422,9 +426,10 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
-To rotate your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy.
- > [!NOTE]
-   > Using **New key version** and setting **Rotation policy** to rotate your encryption key is now supported.
+To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. Note that the system will be down 2 times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
+
+ > [!Recommendation]
+   > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**. ](/power-platform/admin/customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version)
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
@@ -445,7 +450,7 @@ To rotate your encryption key, create a new key and a new enterprise policy. You
 > [!IMPORTANT]
 > The environment will be disabled when it's added to the new enterprise policy. 
 
-### Change the environment's encryption key with a new key version
+### Rotate the environment's encryption key with a new key version
 You can change the environment’s encryption key by creating a new key version. When you create a new key version, the new key version is automatically enabled. All the storage resources detect the new key version and start applying it to encrypt your data. 
 
 When you modify the key or the key version, the protection of the root encryption key changes, but the data in the storage always remains encrypted with your key. There is no additional action required on your part to ensure that your data is protected. Rotating the key version doesn't impact performance. There is no downtime associated with rotating the key version. It can take 24 hours for all the resource providers to apply the new key version in the background. The previous key version **must not be disabled** as it's required for the service to use it for the re-encryption and for the support of database restoration. 
@@ -458,8 +463,9 @@ To rotate the encryption key by creating a new key version, use the following st
 1.	Select **+ New Version**.
 1.	Note that the **Enabled** setting defaults to **Yes**, which means that the new key version is automatically enabled upon creation.
 1.	Select **Create**.
-
-You can also rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy) by either configuring a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
+   
+ > [!Recommendation]
+> To comply with your key rotation policy, you can rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy) by either configuring a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
 
 > [!IMPORTANT]
 > The new key version is automatically rotated in the background and there is no action required by the Power Platform admin. It is important that the previous key version must not be disabled or deleted for, at least, 28 days to support database restoration. Disabling or deleting the previous key version too early can take your environment offline.
