@@ -9,6 +9,8 @@ ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
   - admin
+contributors:
+- shmcarth 
 ---
 # Regional and language options for your environment 
 
@@ -43,7 +45,7 @@ Before users can start using a Language Pack to display a language, the Language
 
    Here you’ll see each Language Pack installed in your environment, with a check box to the left of each listed Language Pack.  
 
-1. For each Language Pack that you want to provision (enable), select the check box next to it. For each Language Pack that you want to unprovision (disable), clear the check box.
+1. For each Language Pack that you want to provision (use), select the check box next to it. For each Language Pack that you want to unprovision (not use), clear the check box.
 
    > [!NOTE]
    >  Additional storage is required for each language you use.  Not using a specific language doesn't uninstall the language or reduce the storage requirement.  Only use languages that you need.
