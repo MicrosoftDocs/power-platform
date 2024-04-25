@@ -124,8 +124,8 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 
 - An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
 - Global tenant admin or a Microsoft Entra ID with:
-  - Contributor permission to the Microsoft Entra subscription
-  - Permission to create an Azure Key Vault and key
+  - Contributor permission to the Microsoft Entra subscription.
+  - Permission to create an Azure Key Vault and key.
   - Access to create a resource group. This is required to set up the key vault.
 
 ##### Create the key and grant access using Azure Key Vault
