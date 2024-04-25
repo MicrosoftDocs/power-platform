@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 03/25/2024
+ms.date: 04/25/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms 
@@ -35,7 +35,7 @@ These encryption key operations are available with customer-managed key (CMK):
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 
 - Dataverse (Custom solutions and Microsoft services)
-- Dataverse [Copilot for model-driven apps](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-ai-copilot)  
+- Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
 - [Power Automate](/power-automate/customer-managed-keys) <sup>1</sup>
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
@@ -123,7 +123,10 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 ##### Prerequisites
 
 - An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules (preview).
-- Global tenant admin or an  Microsoft Entra ID with contributor permission to the Microsoft Entra subscription and permission to create an Azure Key Vault and key, and have access or create Resource group. This is required to set up the key vault.
+- Global tenant admin or a Microsoft Entra ID with:
+  - Contributor permission to the Microsoft Entra subscription
+  - Permission to create an Azure Key Vault and key
+  - Access to create a resource group. This is required to set up the key vault.
 
 ##### Create the key and grant access using Azure Key Vault
 
