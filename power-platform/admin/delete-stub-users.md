@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 04/24/2024
+ms.date: 04/25/2024
 search.audienceType: 
   - admin
 ---
@@ -82,8 +82,8 @@ To soft delete stub users in bulk, complete the following steps.
     > The list of records may contain Microsoft Entra ID users who were permanently deleted from Microsoft Entra ID prior to June 2022. These users can also be deleted as stub users. Select the **Back** button to return to the query page and modify the filter to change the list of selected users. For example, select **+ Add row** to add an additional filter.
   
 1.	Select **Next**.
-1.	Enter a **job name** and select a **date and time** to schedule the deletion system job.
-1.	Select the **Email notification** checkbox if you want to be notified when a job is completed.
+1.	Enter a **job name** and select a **date and time** to schedule the deletion system job. Select **Next**.
+1.	Select the email notification checkbox if you want to be notified when a job is completed. Select **Next**.
 1.	Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
 ## Review the status of bulk delete job
