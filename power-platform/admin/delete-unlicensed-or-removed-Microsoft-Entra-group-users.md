@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 04/24/2024
+ms.date: 04/25/2024
 search.audienceType: 
   - admin
 ---
@@ -60,15 +60,15 @@ _Soft-deleted_ users remain in the system with a disabled status. Learn more: [W
 1.	Select **Azure AD Object ID** with a **Contains data** condition. This filter gives you the list of removed Microsoft Entra group users who are still active.
 1.	Choose **+ Add row** to add another filter condition.
 1.	Select **User licensed** with an **Equals** condition of **No**. This filter gives you the list of active users without a license. 
-1.	Choose **Next** and review the list of records to be soft-deleted.
+1.	Select **Next** and review the list of records to be soft-deleted.
 
     > [!Note]
     > The list of records may contain Microsoft Entra ID users who were permanently deleted from Microsoft Entra ID prior to June 2022. These users can also be deleted as unlicensed users. 
     Return to the query page and modify the filter to change the list of selected users. For example, select **+ Add row** to add more filters.
     
 1.	Select **Next**.
-1.	Enter a job **name** and select a **date and time** to schedule the deletion system job.
-1.	Select the **Email notification** checkbox if you want to be notified when a job is complete.
+1.	Enter a job **name** and select a **date and time** to schedule the deletion system job. Select **Next**.
+1.	Select the email notification checkbox if you want to be notified when a job is complete. Select **Next**.
 1.	Verify the query and the number of records to be deleted and select **Run bulk delete.**
 
 ## Review the status of a bulk delete job
@@ -94,8 +94,8 @@ To permanently delete unlicensed or removed Microsoft Entra group users, the use
 1.	Select the **Soft Deleted Users** view in the **Use saved view** dropdown list.
 1.	Select **Next** and review the list of records to be permanently deleted.
 1.	Select **Next** again.
-1.	Enter a **job name** and select a **date and time** to schedule the deletion system job.
-1.	Select the **Email notification** checkbox if you want to be notified when job is completed.
+1.	Enter a **job name** and select a **date and time** to schedule the deletion system job. Select **Next**.
+1.	Select the email notification checkbox if you want to be notified when job is completed. Select **Next**.
 1.	Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
 [Review the job results](delete-stub-users.md#review-the-status-of-bulk-delete-job ) and verify that all soft-deleted, unlicensed or removed Microsoft Entra group users were permanently deleted.
