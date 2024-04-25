@@ -107,8 +107,8 @@ To permanently delete stub users, the stub users must first be soft deleted. The
 1.	Select the **Soft Deleted Users** view in the **Use saved view** dropdown list.
 1.	Select **Next** and review the list of records to be permanently deleted.
 1.	Select **Next** again.
-1.	Enter a **job name** and select a **date and time** to schedule the deletion system job.
-1.	Select the **Email notification** checkbox if you want to be notified when a job is completed.
+1.	Enter a **job name** and select a **date and time** to schedule the deletion system job. Select **Next**.
+1.	Select the email notification checkbox if you want to be notified when a job is completed. Select **Next**.
 1.	Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
 [Review the job results](delete-stub-users.md#review-the-status-of-bulk-delete-job) and verify that all soft deleted stub users were permanently deleted.
