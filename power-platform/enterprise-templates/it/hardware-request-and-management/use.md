@@ -1,6 +1,6 @@
 ---
-title: Use the Hardware Request and Management template for Power Platform
-description: Learn how to use the Hardware Request and Management template for Microsoft Power Platform.
+title: Use the Hardware Request and Hardware Management apps
+description: Learn how to use the Hardware Request and Hardware Management apps on Microsoft Power Platform.
 author: microsoft-george
 ms.author: georgenewton
 contributors:
@@ -15,7 +15,7 @@ ms.subservice: solution-templates
 
 # Use the Hardware Request and Hardware Management apps
 
-Once configuration and setup steps are complete, the apps are ready to use.
+Once configuration and setup steps are complete, the apps are ready to share and use.
 
 ## Use the Hardware Request app
 

@@ -8,7 +8,7 @@ contributors:
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 04/23/2024
+ms.date: 04/26/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -28,6 +28,8 @@ As a program administrator, you can use the Expense Reimbursement Admin app to m
 ## Create custom refund programs
 
 Create as many refund programs as you need for your organization's Expense Reimbursement program. Users select the applicable refund program from a dropdown on the _New Request_ screen.
+
+:::image type="content" source="media/manage/exre-admin-programs.png" alt-text="Screenshot showing Expense Reimbursement program administration screen.":::
 
 Take these steps to create types of refund programs:
 

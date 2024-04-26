@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 02/21/2024
+ms.date: 04/26/2024
 ms.custom: 
   - bap-template
   - ai-gen-docs-bap
@@ -17,10 +17,10 @@ ms.subservice: solution-templates
 
 # Get started managing the Onboarding Buddy program
 
-As a program administrator, you can use the Onboarding Buddy Admin app to manage your organization's Onboarding Buddy program, including:
+As a program administrator, you can use the Onboarding Buddy Admin app to manage your organization's Onboarding Buddy program. You can:
 
 - Manually add a new employee
-- Update the configuration
+- Update configurations
 - Localize the strings to support more languages
 
 ## Manually add an Onboarder
