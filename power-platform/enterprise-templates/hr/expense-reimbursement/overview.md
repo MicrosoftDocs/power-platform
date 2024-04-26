@@ -8,7 +8,7 @@ contributors:
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 04/05/2024
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -18,38 +18,44 @@ ms.subservice: solution-templates
 
 The Expense Reimbursement template makes it easy to set up and facilitate an automated expense reimbursement program within your organization.
 
-The Expense Reimbursement program allows:
+The Expense Reimbursement program enables:
 
 - Employees in your organization to submit expense reimbursement requests with receipt documentation in the canvas app. The canvas app can be accessed from a desktop or mobile device.
 - Your organization to streamline and automate the request processes in the model-driven admin app.
 
 You can further extend the capabilities of the Expense Reimbursement template by customizing the apps to meet your organization's unique processing needs.
-  
-The Expense Reimbursement template is available in [Microsoft AppSource](<https://aka.ms/AccessRefundRequestTemplate>).
 
-The template package consists of two solutions:
+## Watch the demo
+
+Watch the demo to see how an employee uses the Expense Reimbursement canvas app.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1kAs0]
+
+## Expense Reimbursement package
+
+The Expense Reimbursement template is available in [Microsoft AppSource](<https://aka.ms/AccessRefundRequestTemplate>). The template package consists of two solutions:
 
 - **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, only components that are needed for localization capabilities are included. Common strings can be localized once in the base solution and shared so that all dependent solutions get the benefit.
 - **Expense Reimbursement** contains all the components necessary to enable users to submit requests for expense reimbursements and manage the requests.
 
-## Employee Experience base
+### Employee Experience Base
 
 The **Employee Experience Base** solution contains components that manage app language preferences.
 
-- **Employee Experience Localization Admin** (model-driven app) allows admins to view and edit localized string values.
-- **Employee Experience Localization** (table)stores the string replacements for every localized version of the app.
+- **Employee Experience Localization Admin** is the model-driven app that allows admins to view and edit localized string values.
+- **Employee Experience Localization** is the table that stores the string replacements for every localized version of the app.
+- **ISO Employee Experience Language Code** is the *one choice* that stores the abbreviations for the available language codes.
 - Two security roles:
   - **Employee Experience Localization Reader** provides *read* access to the table.
   - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
-- One choice: **ISO Employee Experience Language Code** stores the abbreviations that identify available language codes.
 
-## Expense Reimbursement
+### Expense Reimbursement
 
 The Expense Reimbursement solution contains components that manage the user experience.
 
 - Two apps:
-  - **Expense Reimbursement** (canvas app) allows users to view and submit expense reimbursements.
-  - **Expense Reimbursement Administrator** (model-driven app) allows admins to view and manage all expense reimbursement data.
+  - **Expense Reimbursement** is the canvas app that allows users to view and submit expense reimbursements.
+  - **Expense Reimbursement Administrator** is the model-driven app that allows admins to view and manage all expense reimbursement data.
 - Six tables:
   - **Expense Reimbursement**
   - **Attachment**

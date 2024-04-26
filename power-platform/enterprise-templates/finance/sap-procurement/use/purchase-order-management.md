@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,7 @@ The SAP Purchase Order Management app is part of the SAP Procurement solution fo
 
 Watch the demo to see how you can manage your SAP PO data using the SAP Purchase Order Management app.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18zOb]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18zOb]
 
 ## View a purchase order
 

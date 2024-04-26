@@ -8,7 +8,7 @@ contributors:
   - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 01/08/2024
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -33,15 +33,15 @@ Take these steps to submit an expense reimbursement request:
 
 :::image type="content" source="media/use/exre-new-request.png" alt-text="Screenshot of the New request screen in the Reimbursement Request app.":::
 
-## Add image of expense receipt
+### Add image of expense receipt
 
-Take these steps to add an image of the expense receipt and update any file information.
+Expense requests require documentation of the expense.Take these steps to add an image of the expense receipt and update any file information.
 
-1. Select **Add expense**.
+1. On the _My requests_ screen, select **Add expense**.
 1. On the first _Add expense_ screen, select how you will share an image of your receipt. These are your options:
-    1. Capture. The app opens up your device's camera to allow you to take a picture of the receipt.
-    1. Scan. The app's built-in receipt scanner obtains the receipt details from an image you select on your device.
-    1. Attach. The app opens your device's file system so you can browse for the image of your expense.
+    1. **Capture** enables you to open up your device's camera to allow you to take a picture of the receipt.
+    1. **Scan** obtains the receipt details from an image you select on your device using the app's built-in scanner.
+    1. **Attach** opens your device's file system so you can browse for the image of your expense.
 1. On the second _Add expense_ screen, attach a file or capture a picture, depending on your selection on the first _Add expense_ screen.
 1. On the third _Add expense_ screen, add any necessary information. These are the fields:
     1. Attachment file name
@@ -51,3 +51,9 @@ Take these steps to add an image of the expense receipt and update any file info
     1. Description
 1. Select **Done** to complete the _Add expense_ step.
 1. Select **Submit**. This triggers the _New Request for Refund Notification_ flow that sends an email to the approver and to you stating that the expense reimbursement request has been submitted and is ready for review.
+
+## View Expense Reimbursement requests
+
+Once you have submitted an expense request, you can view the status of the request in the Expense Reimbursement canvas app.
+
+1. On the _My requests_ screen, select the _number_ of the expense request you want to view. This takes you to the _View request_ screen.
