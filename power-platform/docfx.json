@@ -51,9 +51,8 @@
       ],
       "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
       "titleSuffix": "Power Platform",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/power-platform",
-      "feedback_product_url": "https://powerusers.microsoft.com/",
+      "feedback_system": "Standard",
+            "feedback_product_url": "https://powerusers.microsoft.com/",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-PowerPlatform"
     },
