@@ -69,4 +69,6 @@ On the _My requests_ screen, select the _number_ of the reimbursement request yo
 
 :::image type="content" source="media/use/exre-underreview.png" alt-text="Screenshot of the Reimbursement Request app's View request screen. It shows the request number, request name, program name, category, subcategory, currency, created-on date and expense details.":::
 
+## Use the Expense Reimbursement Admin app
 
+As an expense reimbursement program manager, you can access the Expense Reimbursement Admin model-driven app to review requests.

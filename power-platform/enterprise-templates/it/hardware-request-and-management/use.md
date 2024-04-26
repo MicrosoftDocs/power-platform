@@ -111,7 +111,7 @@ Follow these steps to get started reviewing and approving a request that require
 
 It can be set up so that hardware managers have a workflow item for *Approval* set up for them in Teams. The workflow arrives when a hardware request is submitted along with a notification in *Activity*. Follow these steps to get started with this approval process scenario:
 
-1. Select **Approvals** on the left-side panel
+1. Select **Approvals** on the left pane.
 1. Choose the request to review and a card will open with the relevant details for the request:
     1. Status – "Requested" in this case (eventually "Approved" or "Rejected")
     1. Name
@@ -123,7 +123,9 @@ It can be set up so that hardware managers have a workflow item for *Approval* s
     1. Status flow – shows timing of action from requestor to approver
     1. Comments – allows approver to explain decision
 
-1. Select **Approve** to advance to the *Purchase* step
+1. Select **Approve** to advance to the *Purchase* step.
+
+Learn more about [approvals in Microsoft Teams](/power-automate/teams/native-approvals-in-teams).
 
 #### Use Outlook for requests that require a purchase
 

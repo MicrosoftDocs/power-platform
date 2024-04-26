@@ -88,7 +88,7 @@ Make sure that the environment has access to connectors used by the template:
 - [Microsoft Teams](/connectors/teams/)
 - [Cards for Power Apps](/connectors/cardsforpowerapps/)
   
-  More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
+More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
 ## Step 2: Create connections
 

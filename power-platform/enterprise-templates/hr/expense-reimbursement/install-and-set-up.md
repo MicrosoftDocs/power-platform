@@ -83,7 +83,7 @@ It's best to create the connections before you import the solution. If you creat
 
 ## Step 3: Install Approvals solution
 
-The Expense Reimbursement template leverages Power Automate Approvals to approve or reject requests. By default, Power Platform environments are not set up with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
+The Expense Reimbursement solution leverages Power Automate Approvals to approve or reject requests. By default, Power Platform environments are not set up with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
 
 1. Go to the [Power Automate maker portal](https://make.preview.powerautomate.com/environments/) and select your targeted deployment environment.
 1. Select **+ Create** on left pane.
