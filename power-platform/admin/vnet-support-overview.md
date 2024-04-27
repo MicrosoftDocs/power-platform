@@ -86,7 +86,6 @@ The following table lists the services that support Azure subnet delegation for 
 
 ## Licensing requirements
 
-Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
 Virtual network support for Power Platform is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to using Virtual network support for Power Platform requires users in the environments where the Virtual network is enabled to have one of these subscriptions:
