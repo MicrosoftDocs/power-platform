@@ -47,7 +47,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
-- You can only use Copy, Backup and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center). If the source environment has Virtual Network enabled and the target doesn't, you can't do Copy and Restore.
+- You cannot  use Copy, Backup and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on Virtual network supported Power Platform environments.
 
 ## Supported regions
 
@@ -87,6 +87,17 @@ The following table lists the services that support Azure subnet delegation for 
 ## Licensing requirements
 
 Licensing requirements for Virtual Network support for Power Platform will be announced when the service is closer to general availability.
+Virtual network support for Power Platform is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+
+In addition, access to using Virtual network support for Power Platform requires users in the environments where the Virtual network is enabled to have one of these subscriptions:
+
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
+- Microsoft 365 A5/E5/F5/G5 Insider Risk Management
+
+[Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
 
 ## Considerations to enable Virtual Network support for Power Platform Environment
 
