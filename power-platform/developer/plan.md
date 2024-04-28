@@ -62,7 +62,7 @@ With the developer environment, you get the following functionality:
 | Create and run applications In Power Platform, Dynamics 365, Teams, or Standalone using the .Net SDK or OData API | Yes                                                                  |
 | Model your data in Dataverse                                                                                     | Yes                                                                  |
 | Create a database in Dataverse                                                                                   | Yes                                                                  |
-| Create and use dataflows                                                                                         | No                                                                   |
+| Create and use dataflows                                                                                         | Yes                                                                   |
 | **Management**                                                                                                 |                                                                      |
 | Add coworkers as environment makers and admins                                                                  | Yes                                                                   |
 | Add coworkers to the database roles                                                                             | Yes                                                                   |
