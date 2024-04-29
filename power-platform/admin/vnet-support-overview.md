@@ -130,7 +130,7 @@ Virtual Network support for Power Platform is the only supported option for all 
 
 ### Does Virtual Network support for Power Platform support failover?
 
-Yes. While the feature is in public preview, you need to delegate a primary and failover virtual network and subnets during setup.
+Yes, you need to delegate a primary and failover virtual network and subnets during setup.
 
 ### How can a Power Platform environment in one region connect to resources hosted in another region?
 
