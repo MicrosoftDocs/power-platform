@@ -593,7 +593,13 @@
                 - name: Manage application users
                   href: manage-application-users.md
                 - name: Delete users
-                  href: delete-users.md
+                  items:
+                  - name: Delete users from an environment
+                    href: delete-users.md
+                  - name: Delete stub users from an environment (preview)
+                    href: delete-stub-users.md
+                  - name: Delete unlicensed or removed Microsoft Entra group members (preview)
+                    href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
                 - name: Assign service admin role to users
