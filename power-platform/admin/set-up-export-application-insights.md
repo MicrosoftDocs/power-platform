@@ -25,13 +25,14 @@ Learn how to export data to Application Insights from the Power Platform admin c
   
    - For the Application Insights environment, you must have contributor, writer, or admin rights.
    - The Application Insights environment must be unique for an environment or tenant. Application Insights out-of-the-box reports won't function correctly if a single Application Insights environment contains data from multiple environments.
+   > [!NOTE]
+   > This feature is enabled and supported for Managed Environments only
 
 - To set up data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of one of these roles: Power Platform admin, Dynamics 365 admin, or Microsoft 365 Global admin.
 
     > [!IMPORTANT] 
     > The Application Insights exporting functionality for Power Automate and Dynamics 365 Customer Service is in public preview in all public sovereign geos.  Power Automate and Dynamics 365 Customer Service functionality in public preview is not available in Government Community Cloud (GCC) or Government Community Cloud - High (GCC High) sovereign clouds.
     >
-    > When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only. For this preview only, the Managed Environment restriction doesn't apply.
     >
     > For GCC customers that need to configure integration to Application Insights in Azure Government environments, enter a [support request](support-overview.md).
 
@@ -47,6 +48,10 @@ Learn how to export data to Application Insights from the Power Platform admin c
 1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
    
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, and/or actions.
+
+1. Select one or more filters enabling you to view specific filtered data.
+   > [!div class="mx-imgBorder"] 
+   > ![Data filter experience.](media/dataverse-app-insights-filter.png "Data filter experience")
    
 1. Select the environment that you're exporting data _from_. You can choose to filter based on the environment type. Select **Next**.
 
