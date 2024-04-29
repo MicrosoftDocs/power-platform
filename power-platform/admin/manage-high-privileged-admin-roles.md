@@ -13,21 +13,14 @@ ms.date: 03/22/2024
 search.audienceType: admin
 ---
 
-# Manage admin roles with Microsoft Entra Privileged Identity Management (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage admin roles with Microsoft Entra Privileged Identity Management
 
 Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - To sign up for this preview, fill out the [preview sign-up form](https://go.microsoft.com/fwlink/?linkid=2259929).
 
 ## Prerequisites
 
 - Remove old system administrator role assignments in your environments. You can use PowerShell scripts to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environments.
-- You must sign up for the preview by filling out the [preview sign-up form](https://go.microsoft.com/fwlink/?linkid=2259929).
 
 ## Changes to feature support
 
@@ -53,9 +46,13 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 
 ## Self-elevate to the system administrator role
 
-Currently, we only support elevation using PowerShell. Future updates will include more enhancements in the Power Platform admin center.
+We support elevation using either PowerShell or via an intuitive experience in Power Platform admin center.
 
-### Set up PowerShell
+> [!NOTE]
+> Users who attempt to self-elevate must be a global admin, Power Platform admin, or Dynamic 365 admin. The UI in Power Platform admin center is not available for users with other Entra ID admin roles and attempting to self-elevate via the PowerShell API will throw an error.
+
+### Self-elevate via PowerShell
+#### Set up PowerShell
 
 Install the [MSAL](https://www.powershellgallery.com/packages/MSAL.PS) PowerShell module. You only need to install the module once.
 
@@ -65,10 +62,8 @@ Install-Module -Name MSAL.PS
 
 For more information about setting up PowerShell, see [Quick Start Web API with PowerShell and Visual Studio Code](/power-apps/developer/data-platform/webapi/quick-start-ps).
 
-> [!NOTE]
-> Users who call the self-elevation API must be a global admin, Power Platform admin, or Dynamic 365 admin. Otherwise, you get an access denied message.
 
-### Step 1: Run the script to elevate
+#### Step 1: Run the script to elevate
 
 In this PowerShell script, you:
 
@@ -76,7 +71,7 @@ In this PowerShell script, you:
 - Build an `http` query with your environment ID.
 - Call the API endpoint to request elevation.
 
-#### Add your environment ID
+##### Add your environment ID
 
 1. Get your **Environment ID** from the **Environments** tab of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
 
@@ -84,7 +79,7 @@ In this PowerShell script, you:
 
 1. Add your unique `<environment id>` to the script.
 
-#### Run the script
+##### Run the script
 
 Copy and paste the script into a PowerShell console.
 
@@ -140,7 +135,7 @@ $output = $postRequestResponse | ConvertTo-Json -Depth 2
 Write-Host $output
 ```
 
-### Step 2: Confirm the result
+#### Step 2: Confirm the result
 
 Upon success, you see an output similar to the following output. Look for `"Code": "UserExists"` as evidence that you successfully elevated your role.
 
@@ -157,7 +152,7 @@ Upon success, you see an output similar to the following output. Look for `"Code
 }
 ```
 
-#### Errors
+##### Errors
 
 You might see an error message if you don't have the right permissions.
 
@@ -165,7 +160,7 @@ You might see an error message if you don't have the right permissions.
 "Unable to assign System Administrator security role as the user is not either a Global admin, Power Platform admin, or Dynamics 365 admin. Please review your role assignments in Entra ID and try again later. For help, please reach out to your administrator."
 ```
 
-### Step 3: Clean up activity
+#### Step 3: Clean up activity
 
 Run [Remove-RoleAssignmentFromUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) to remove users from the System Administrator security role after the assignment expires in PIM.
 
@@ -176,7 +171,7 @@ Run [Remove-RoleAssignmentFromUsers](https://github.com/microsoft/PowerApps-Samp
 - `-geo`: A valid GEO
 - `-outputLogsDirectory`: Path where log files are written
 
-#### Example script
+##### Example script
 
 ```powershell
 Remove-RoleAssignmentFromUsers
@@ -188,6 +183,16 @@ Remove-RoleAssignmentFromUsers
 -geo "NA"
 -outputLogsDirectory "C:\Users\<My-Name>\Desktop\<log-files>"
 ```
+
+### Self-elevate via Power Platform admin center
+#### Select the environment 
+![alt text](<Screenshot 2024-04-29 092001.png>)
+
+#### Use the Membership menu option to request self elevation
+![alt text](<Screenshot 2024-04-29 092029.png>) 
+
+#### Add yourself to the System administrator role
+Click Add me to add yourself as a System administator in the environment
 
 ## Known limitations
 
