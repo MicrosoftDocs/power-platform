@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 03/29/2024
 ms.subservice: admin
 ms.author: ritesp
 search.audienceType: 
@@ -13,7 +13,7 @@ search.audienceType:
 
 # Virtual Network support for Power Platform overview
 
-With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure Subnet delegation avoids the need for protected resources to be available over internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors (preview) to make outbound calls.
+With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure Subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. Virtual Network, Dataverse, and Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors (preview) to make outbound calls.
 
 Power Platform typically integrates with enterprise resources over public networks. With public networks, enterprise resources must be accessible from a list of Azure IP ranges or service tags, which describe public IP addresses. However, Azure Virtual Network support for Power Platform allows you to use a private network and _still_ integrate with cloud services or services that are hosted inside your enterprise network.
 
@@ -47,7 +47,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
-- You cannot  use Copy, Backup and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on Virtual network supported Power Platform environments.
+- You can't use Copy, Backup and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on Virtual network supported Power Platform environments.
 
 ## Supported regions
 
