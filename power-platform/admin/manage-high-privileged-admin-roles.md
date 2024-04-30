@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 03/22/2024
+ms.date: 04/30/2024
 search.audienceType: admin
 ---
 
@@ -46,12 +46,12 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 
 ## Self-elevate to the system administrator role
 
-We support elevation using either PowerShell or via an intuitive experience in Power Platform admin center.
+We support elevation using either PowerShell or through an intuitive experience in Power Platform admin center.
 
 > [!NOTE]
-> Users who attempt to self-elevate must be a global admin, Power Platform admin, or Dynamic 365 admin. The UI in Power Platform admin center is not available for users with other Entra ID admin roles and attempting to self-elevate via the PowerShell API will throw an error.
+> Users who attempt to self-elevate must be a global admin, Power Platform admin, or Dynamic 365 admin. The user interface in Power Platform admin center isn't available for users with other Entra ID admin roles and attempting to self-elevate through the PowerShell API throws an error.
 
-### Self-elevate via PowerShell
+### Self-elevate through PowerShell
 #### Set up PowerShell
 
 Install the [MSAL](https://www.powershellgallery.com/packages/MSAL.PS) PowerShell module. You only need to install the module once.
@@ -184,15 +184,15 @@ Remove-RoleAssignmentFromUsers
 -outputLogsDirectory "C:\Users\<My-Name>\Desktop\<log-files>"
 ```
 
-### Self-elevate via Power Platform admin center
+### Self-elevate through Power Platform admin center
 #### Select the environment 
 ![alt text](<Screenshot 2024-04-29 092001.png>)
 
-#### Use the Membership menu option to request self elevation
+#### Use the Membership menu option to request self-elevation
 ![alt text](<Screenshot 2024-04-29 092029.png>) 
 
-#### Add yourself to the System administrator role
-Click Add me to add yourself as a System administator in the environment
+#### Add yourself to the system administrator role
+Select **Add me** to add yourself as a system administator in the environment.
 
 ## Known limitations
 
