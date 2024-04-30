@@ -41,8 +41,7 @@ Repeat the steps for each environment type that you want to restrict.
 
 ## Developer environments
 
-Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center, but if the user has a **Microsoft Power Apps for Developer** license, a developer environment will be autocreated next time the user logs in.
-
+Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center.
 To restrict users from creating developer type environments, admins can use following PowerShell command:
 
 ```powershell
