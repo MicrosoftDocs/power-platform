@@ -380,7 +380,7 @@ Power Automate trials are available for 90 days. There are two types of trials a
 
 ### Admin managed trial
 
-Global admins use the Microsoft 365 admin center to start these trials and assign them to users. These trials are for 30 days. Tenant admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). Admins can get Power Automate premium, Power Automate process, or the Power Automate hosted process trial.
+Global admins use the Microsoft 365 admin center to start these trials and assign them to users. These trials are for 30 days. Global admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). Admins can get Power Automate premium, Power Automate process, or the Power Automate hosted process trial.
 
 Follow these steps to get started.
 
