@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 03/30/2024
 ms.subservice: admin
 ms.author: ritesp
 search.audienceType: 
@@ -47,7 +47,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 ### Limitations
 
 - [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
-- You use Copy, Backup and Restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on Virtual network supported Power Platform environments. Restore operation can be performed within the same virtual network, as well as across different environments, provided they are connected to the same virtual network. Additionally, restore operation is permissible from environments that do not support virtual networks to those that do.
+- You use copy, backup, and restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on virtual network-supported Power Platform environments. The restore operation can be performed within the same virtual network, as well as across different environments, provided they're connected to the same virtual network. Additionally, the restore operation is permissible from environments that don't support virtual networks to those that do.
 
 ## Supported regions
 
@@ -100,7 +100,7 @@ In addition, access to using Virtual network support for Power Platform requires
 
 ## Considerations to enable Virtual Network support for Power Platform Environment
 
-When you use Virtual Network support in a Power Platform environment, all supported services, like Dataverse plug-ins, connectors (preview), execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
+When you use Virtual Network support in a Power Platform environment, all supported services, like Dataverse plug-ins and connectors (preview), execute requests at runtime in your delegated subnet and are subject to your network policies. The calls to publicly available resources would start to break.
 
 > [!IMPORTANT]
 > Before you enable the virtual environment support for Power Platform environment, make sure you check the code of the plug-ins and the connectors (preview). The URLs and connections need to be updated to work with private connectivity.
