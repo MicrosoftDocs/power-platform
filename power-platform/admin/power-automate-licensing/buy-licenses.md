@@ -35,11 +35,11 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 > [!TIP]
 > To learn more about how to allocate capacity based licenses to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md).
 
-### Assign hosted process license
+### Assign Hosted Process license
 
-It's easy and scalable to assign the hosted process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
+It's easy and scalable to assign the Hosted Process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
 
-Follow these steps to assign hosted process capacity to an environment:
+Follow these steps to assign Hosted Process capacity to an environment:
 
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > in the capacity page.
@@ -47,11 +47,11 @@ Follow these steps to assign hosted process capacity to an environment:
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
    > [!NOTE]
-   > The hosted process is environment specific. So, if you have multiple environments that needs hosted RPA capabilities, you need to assign the hosted process license in each environment.
+   > The Hosted Process is environment specific. So, if you have multiple environments that needs hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
 
 1. Select **Save**.
 
-   After you assign the hosted process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
+   After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
 
 ### Assign Process license
 

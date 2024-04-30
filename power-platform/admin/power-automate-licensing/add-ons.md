@@ -26,23 +26,23 @@ If Power Automate is throttling your flows, try [Pay-as-you-go](types.md#power-p
 
 Desktop flows can have varying levels of workload throughout a period of time. For example, desktop flows for processing invoices or schedule reconciliation across multiple systems might have a monthly peak period. As desktop flows require a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
 
-The Power Automate hosted process license provides Microsoft hosted machine capacity, enabling RPA with zero infrastructure. The hosted process license supports two scenarios:
+The Power Automate Hosted Process license provides Microsoft hosted machine capacity, enabling RPA with zero infrastructure. The Hosted Process license supports two scenarios:
 - Individual hosted machines, enable developers to build or test automation and business users to run automation.
 - Hosted machine groups, automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
 
-The following are important points you should be aware of regarding the hosted process license:
-- One hosted process license includes the capacity to one Microsoft hosted machine and unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
-- One hosted process license can also be used as a process license to run unattended automation on a customer managed bot machine.
+The following are important points you should be aware of regarding the Hosted Process license:
+- One Hosted Process license includes the capacity to one Microsoft hosted machine and unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
+- One Hosted Process license can also be used as a process license to run unattended automation on a customer managed bot machine.
 - You can purchase more AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
-- Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate hosted process license.
+- Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate Hosted Process license.
   
 > [!NOTE]
-> The hosted process licenses the machines and not the user. The premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the premium RPA features that come with the premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
+> The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
 ## Unattended RPA add-on
 
 > [!NOTE]
-> The Power Automate unattended RPA add-on is now replaced by the Power Automate process plan.
+> The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan.
 
 Unattended desktop flows run without human interaction. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
@@ -64,7 +64,7 @@ Here are a few important notes of which you should be aware regarding the unatte
 
 1. I want to run unattended flow. What licenses do I need?
 
-   You need either **Power Automate premium plan** (previously Power Automate per user plan with attended RPA) or Power Automate per flow plans as a base license and Unattended add-on to be able to run the unattended flow.
+   You need either **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) or Power Automate per flow plans as a base license and Unattended add-on to be able to run the unattended flow.
 
 1. I need multiple instances running unattended. Do I need multiple add-ons?
 
