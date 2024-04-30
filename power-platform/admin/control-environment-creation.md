@@ -4,7 +4,7 @@ description: Control who can create and manage environments in the Power Platfor
 author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/16/2023
+ms.date: 04/17/2024
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -12,31 +12,36 @@ search.audienceType:
 contributors:
   - marcelbf
 ---
-# Control who can create and manage environments in the Power Platform admin center 
+# Control who can create and manage environments in Power Platform
 
-With the new provisioning model, those with the correct licenses can create an environment as long as 1GB of capacity is available. To restrict environment creation and management to admins, do the following:
-
-1. Sign in to the Microsoft Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).
-2. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site.
-3. Select **Power Platform settings**. 
-4. Select **Only specific admins**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Specify Global admins.](./media/governance-setting.png "Specify Global admins")
-
-The following admins will be able to create new environments in the Power Platform admin center:
+With the new provisioning model, those users with the correct licenses can create an environment as long as 1 GB of capacity is available. When you complete the steps in this article to restrict who can create environments, only users who have the following admin security roles can create new environments in the Power Platform admin center:
 
 - Global admins
 - Dynamics 365 admins
 - Power Platform admins
+
+## Control environment creation in the Power Platform admin center
+
+To restrict environment creation and management to admins from the Power Platform admin center, follow these steps:
+
+1. Sign in to the Microsoft Power Platform admin center at [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com), and select **Settings** on the left navigation pane.
+1. From the **Tenant settings** list, select from the following environment type creation settings:
+
+   - Developer environment assignments
+   - Production environment assignments
+   - Trial environment assignments
+
+1. Select **Only specific admins**.
+1. Select **Save**.
+
+Repeat the steps for each environment type that you want to restrict.
 
 > [!NOTE]
 > Environments created prior to restriction can still be managed after restriction by those who created the environment. Restriction will prevent any new environments being created and managed. 
 
 ## Developer environments
 
-Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center, but if the user has a **Microsoft Power Apps for Developer** license, a developer environment will be auto-created next time the user logs in.
-
+Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center.
 To restrict users from creating developer type environments, admins can use following PowerShell command:
 
 ```powershell
@@ -49,15 +54,6 @@ disableDeveloperEnvironmentCreationByNonAdminUsers  = $True
 }
 
 Set-TenantSettings -RequestBody $requestBody
-```
-
-To permanently remove the auto-creation of developer environments, a member of the Power Platform related [service admin roles](/power-platform/admin/use-service-admin-role-manage-tenant) must perform the following actions:
-
-- Remove the **Microsoft Power Apps for Developer** license. More information: [Service plan IDs for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
-- Disable [self-service sign-up](/azure/active-directory/enterprise-users/directory-self-service-signup).
-- Explicitly block all "internal" consent plans in the tenant using PowerShell:
-```powershell
-Remove-AllowedConsentPlans -Types @("Internal", "Viral")
 ```
 More information: [Block trial licenses commands](/power-platform/admin/powerapps-powershell#block-trial-licenses-commands).
 
@@ -75,7 +71,8 @@ Set-TenantSettings $settings
 ## FAQ
 
 ### Can I disable trial environment creation for users in the tenant?
-Yes. Use the following PowerShell commands to restrict trial environment creation.
+
+Yes. You can follow the steps in this article to [control environment creation in the Power Platform admin center](#control-environment-creation-in-the-power-platform-admin-center) or use the following PowerShell commands to restrict trial environment creation.
 
 ```powershell
 $settings = @{ DisableTrialEnvironmentCreationByNonAdminUsers = $true }
@@ -83,8 +80,6 @@ Set-TenantSettings $settings
 ```
 
 Download and install the admin PowerShell cmdlets as described [here](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.1). For more information about our cmdlets, see [PowerShell support for Power Apps](powerapps-powershell.md).
-
-
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

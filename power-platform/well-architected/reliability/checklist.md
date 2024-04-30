@@ -4,7 +4,7 @@ description: Use this checklist for Reliability to identify the best infrastruct
 author: robstand
 ms.author: rstand
 ms.reviewer: robstand
-ms.subservice: guidance
+ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 03/28/2024
 ---

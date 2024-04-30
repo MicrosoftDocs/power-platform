@@ -226,7 +226,7 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
-                - name: Default environment routing (Preview)
+                - name: Environment routing (preview)
                   href: default-environment-routing.md
                 - name: Product
                   items:
@@ -282,7 +282,7 @@
                       href: hierarchy-security.md#position-hierarchy
                     - name: Security roles
                       href: security-roles-privileges.md
-                    - name: Teams
+                    - name: Create a team template to control access rights
                       href: create-team-template-add-entity-form.md
                     - name: Users
                       href: users-settings.md
@@ -591,7 +591,13 @@
                 - name: Manage application users
                   href: manage-application-users.md
                 - name: Delete users
-                  href: delete-users.md
+                  items:
+                  - name: Delete users from an environment
+                    href: delete-users.md
+                  - name: Delete stub users from an environment (preview)
+                    href: delete-stub-users.md
+                  - name: Delete unlicensed or removed Microsoft Entra group members (preview)
+                    href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
                 - name: Assign service admin role to users
@@ -620,9 +626,9 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
-            - name: Virtual Network support (preview)
+            - name: Virtual Network support
               items:
-                - name: Virtual Network support overview (preview)
+                - name: Virtual Network support overview
                   href: vnet-support-overview.md
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
