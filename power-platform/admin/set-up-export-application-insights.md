@@ -5,9 +5,9 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 04/30/2024
-author: iwinoto-msft
+author: srpoduri 
 ms.subservice: admin
-ms.author: t-iwinoto
+ms.author: sripod
 ms.reviewer: sericks
 search.audienceType: 
   - admin
