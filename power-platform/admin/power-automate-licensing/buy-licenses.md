@@ -55,16 +55,16 @@ Follow these steps to assign Hosted Process capacity to an environment:
 
 ### Assign Process license
 
-Here are the two steps you must take if you want to assign a process license.
+Here are the two steps you must take if you want to assign a Process license.
 
 1. Allocate the Process license to an environment in the Power Platform admin center.
 
-1. Assign a process license to a flow.
+1. Assign a Process license to a flow.
 
    > [!NOTE]
-   > To run unattended desktop flows in an environment, you need to assign one process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
+   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
 
-It's easy and scalable to assign the process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
+It's easy and scalable to assign the Process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
 
 Follow these steps to assign Process capacity to an environment.
 
@@ -74,23 +74,23 @@ Follow these steps to assign Process capacity to an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
    > [!TIP]
-   > Power Automate process is the same as process license.
+   > Power Automate Process is the same as Process license.
    
    > [!NOTE]
-   > The process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the process license in each environment.
+   > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
 
   
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
 
-   After you assign the process licenses to an environment, you can choose which flows can use the process licenses.
+   After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
 
-1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a process license to a flow.
+1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a Process license to a flow.
 
-   When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the process license. The default for a flow is to use the license of the user.
+   When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the Process license. The default for a flow is to use the license of the user.
 
-1. To have a flow use the process license, select  **Edit** in the details panel. You'll then see the **Name**, **Description, and **Plan** that the flow uses. If your environment has the process license assigned, you can move that flow to use the process license. Otherwise, you need to assign capacity.
+1. To have a flow use the Process license, select  **Edit** in the details panel. You'll then see the **Name**, **Description, and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
