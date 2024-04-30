@@ -5,10 +5,11 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 04/25/2024
+ms.date: 04/30/2024
 ms.custom: template-how-to
 contributors:
-- kavehkazms 
+- kavehkazms
+- lauravasiliums
 
 ---
 # Manage your customer-managed encryption key
