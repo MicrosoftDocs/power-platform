@@ -31,7 +31,7 @@ The Power Automate hosted process license provides Microsoft hosted machine capa
 - Hosted machine groups, automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
 
 The following are important points you should be aware of regarding the hosted process license:
-- One hosted process license includes the capacity to one Microsoft hosted machine & unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
+- One hosted process license includes the capacity to one Microsoft hosted machine and unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
 - One hosted process license can also be used as a process license to run unattended automation on a customer managed bot machine.
 - You can purchase more AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
 - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate hosted process license.
