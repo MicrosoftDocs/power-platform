@@ -16,7 +16,6 @@ search.audienceType:
 
 Power Platform admins can purchase licenses for Power Automate and then manage those licenses in their organization.
 
-
 ### Buy Power Automate plans
 
 You can purchase Power Automate plans from [Microsoft 365 admin center](https://admin.microsoft.com/).
@@ -31,17 +30,16 @@ You can purchase Power Automate plans from [Microsoft 365 admin center](https://
 
    ![Image showing the detail for the plan selected](../media/power-automate-licensing/selected-plan.png)
 
-
 ## Manage licenses
 
 > [!TIP]
-> To learn more about how to allocate capacity based licenses to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
+> To learn more about how to allocate capacity based licenses to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md).
 
-### Assign Hosted Process license
+### Assign hosted process license
 
-It's easy and scalable to assign the Hosted Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
+It's easy and scalable to assign the hosted process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
 
-Follow these steps to assign Hosted Process capacity to an environment.
+Follow these steps to assign hosted process capacity to an environment:
 
 1. Select **Resources** > **Capacity** on the left side of the screen.
 1. Select **Add-ons** > in the capacity page.
@@ -49,25 +47,24 @@ Follow these steps to assign Hosted Process capacity to an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
    > [!NOTE]
-   > The Hosted Process is environment specific. So, if you have multiple environments that needs hosted RPA capabilities, you need to assign the Hosted Process license in each environment.
+   > The hosted process is environment specific. So, if you have multiple environments that needs hosted RPA capabilities, you need to assign the hosted process license in each environment.
 
 1. Select **Save**.
 
-   After you assign the Hosted Process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
-
+   After you assign the hosted process licenses to an environment, you can create hosted machines and/or hosted machine group in that environment.
 
 ### Assign Process license
 
-Here are the two steps you must take if you want to assign a Process license.
+Here are the two steps you must take if you want to assign a process license.
 
 1. Allocate the Process license to an environment in the Power Platform admin center.
 
-1. Assign a Process license to a flow.
+1. Assign a process license to a flow.
 
    > [!NOTE]
-   > To run unattended desktop flows in an environment, you need to assign one Process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
+   > To run unattended desktop flows in an environment, you need to assign one process license per machine that is used for unattended desktop flows. If you need to run multiple unattended desktop flows in parallel on a machine, you will also need to assign one Process license for each additional Desktop Flow you want to run concurrently on the machine.
 
-It's easy and scalable to assign the Process licenses you've purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased the licenses.
+It's easy and scalable to assign the process licenses you purchased to the environments that need the licenses. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased the licenses.
 
 Follow these steps to assign Process capacity to an environment.
 
@@ -77,27 +74,27 @@ Follow these steps to assign Process capacity to an environment.
 1. Enter the amount of each add-on you would like to allocate to each environment.
 
    > [!TIP]
-   > Power Automate Process is the same as Process license.
+   > Power Automate process is the same as process license.
    
    > [!NOTE]
-   > The Process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the Process license in each environment.
+   > The process license is environment specific. So, if you have multiple environments that need to run a flow and/or unattended desktop flow, you need to assign the process license in each environment.
 
   
 1. Select **Save**.
 
    ![An image that displays the steps needed to assign a license to an environment.](../media/power-automate-licensing/assign-process-license-environment.png)
 
-   After you assign the Process licenses to an environment, you can choose which flows can use the Process licenses.
+   After you assign the process licenses to an environment, you can choose which flows can use the process licenses.
 
-1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a Process license to a flow.
+1. In [Power Automate](https://flow.microsoft.com/), choose the flow to which you want to add the license. Owners, co-owners of the flow and admins can assign a process license to a flow.
 
-   When you select a flow, you'll now see a new section in the details pane that tells you if the flow is assigned to a user, or if it is part of the Process license. The default for a flow is to use the license of the user.
+   When you select a flow, you see a new section in the details pane that tells you if the flow is assigned to a user, or if it's part of the process license. The default for a flow is to use the license of the user.
 
-1. To have a flow use the Process license, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the Process license assigned, you can move that flow to use the Process license. Otherwise, you need to assign capacity.
+1. To have a flow use the process license, select  **Edit** in the details panel. You'll then see the **Name**, **Description, and **Plan** that the flow uses. If your environment has the process license assigned, you can move that flow to use the process license. Otherwise, you need to assign capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
-After you update your flow, anyone will be able to use that flow, even if it leverages premium connectors. Additionally, capacity will is dedicated to that flow.
+After you update your flow, anyone will be able to use that flow, even if it uses premium connectors. Additionally, capacity is dedicated to that flow.
 
 ### Assign per user licenses to user
 
@@ -120,7 +117,7 @@ Here are the two steps you must take if you want to assign a per flow license.
 
 1. Assign a per flow license to a flow.
 
-It's easy and scalable to allocate the per flow add-ons you've purchased to the environments that need add-ons. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you'll see a new section appears if your organization has purchased add-ons.
+It's easy and scalable to allocate the per flow add-ons you purchased to the environments that need add-ons. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under capacity, you see a new section appears if your organization purchased add-ons.
 
 > [!TIP]
 > To learn more about how to allocate the per flow license to an environment in the Power Platform admin center, see [capacity add-ons for Power Apps and Power Automate](../capacity-add-on.md) section.
@@ -148,7 +145,7 @@ Follow these steps to allocate add-ons to an environment.
 
    ![An image that displays that a flow uses per user plan by default.](../media/power-automate-licensing/per-user-plan-assigned.png)
 
-1. To have a flow use the per-flow plan, select  **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you need to allocate capacity.
+1. To have a flow use the per-flow plan, select **Edit** in the details panel. You will then see the **Name**, **Description** and **Plan** that the flow uses. If your environment has the per flow add-on allocated, you can move that flow to use the per flow plan. Otherwise, you need to allocate capacity.
 
    ![Image that shows that not per flow capacity is available.](../media/power-automate-licensing/per-flow-plan-capacity-needed.png)
 
