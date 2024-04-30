@@ -3,13 +3,14 @@ title: When premium flows are subject to license enforcement
 description: Learn about types of enforcements and recommendations.
 author: PriyaKodukula
 contributors:
+  - samathur
   - rakrish84
   - thomasjeffries11
   - v-aangie
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/25/2023
-ms.author: rakrish
+ms.date: 04/15/2024
+ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
@@ -50,7 +51,6 @@ Dynamics 365 licensed user flows are automatically considered as being in contex
 |Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)|Manual flows and flows whose owners have grandfathered licenses(P1, P2) won't be enforced  | September 1, 2023| October 1, 2023 | 14 days | Assign a Power Automate license to the flow owner or per-flow/process license to the flow | Q2 2024
 |Premium flows created by flow owner with Power Apps license but the flow isn't triggered by the Power App|Power Apps licensed user flows that are triggered from the canvas apps or that use Dataverse "For a select record" trigger in model driven app are automatically considered as being in context of the Power App and are excluded from enforcement|October 13, 2023| November 13, 2023|120 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Power App, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps).| Q2 2024
 |Premium flows created by flow owner with D365 license but the flow isn't in a Dynamics environment or the flow isn't interacting with Dynamics entities|Dynamics 365 licensed user flows that are using Dataverse connector to talk to Dynamics entities in the environment or using First party Dynamics connectors like finance and operations are automatically considered as being in context of the D365 app in the environment and are excluded from enforcement.|October 13, 2023| November 13, 2023|120 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps).| Q2 2024 |
-|Premium Service principal flows without a per flow/ Process licenses| Service principal flows in context of Dynamics 365 app are excluded from enforcement | March 15, 2024| April 15, 2024|90 days| Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, associate the flow to the app.| Aug 2024 |
 
 > [!NOTE]
 > Enforcements are deployed a geo region at a time. The dates in the preceding table are for the earliest region. If you don't see notifications in the Power Platform admin center or Power Automate portal even though the date listed in the table passed, it means the enforcement isn't deployed in your region yet.

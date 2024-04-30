@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # First, FirstN, Index, Last, and LastN functions
