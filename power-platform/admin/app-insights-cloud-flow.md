@@ -4,13 +4,15 @@ description: Learn about how to set up Azure Application Insights with Power Aut
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 04/30/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- srpoduri 
 ms.contributors:
 - rakrish
 - Zeffin
@@ -24,8 +26,9 @@ Power Automate telemetry flows into two tables on Application Insights – **Req
 |------------------|---------------------------------------------------------|
 | **Requests**     | Contains *cloud flow runs*                              |
 | **Dependencies** | Contains *cloud flow triggers* and *cloud flow actions* |
+
 > [!NOTE]
-> This feature is enabled and supported for Managed Environments only.
+> This feature is turned on and supported for Managed Environments only.
 
 While Application Insights capabilities can be used for comprehensive monitoring of your applications, including custom diagnostics, and performance monitoring, this article focuses on how to use the existing features within Application Insights to create monitoring and alerting capabilities for your automation. To learn about how to open and work with Application Insights dashboard, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 
