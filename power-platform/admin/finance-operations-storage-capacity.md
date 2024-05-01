@@ -110,7 +110,7 @@ File capacity reporting is in public preview.
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
-A new report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 202
+A new report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 2024.
 
 ### What happens if my consumption is over the entitled limit?
 
