@@ -233,7 +233,7 @@ You can delete and remove users with disabled status in Power Platform. You may 
 
 - The user must already be soft deleted. See [Soft delete users in Power Platform](#soft-delete-users-in-power-platform) earlier in this article.
 - All records owned by the user must be reassigned to another user. User records can be reassigned from the [User settings page](users-settings.md).
-- You must have turned on the **Delete disabled users** > **Enable delete disabled users** feature setting for your environment using the Power Platform admin center. More information: [Manage feature settings](settings-features.md).
+- You must have turned on the **Delete disabled users** > **Enable delete disabled users** feature setting for your environment using the Power Platform admin center. Learn more: [Manage feature settings](settings-features.md)
 
 #### Permanently delete users
 
