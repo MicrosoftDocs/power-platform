@@ -48,7 +48,7 @@ To view the **Summary** page, sign in to the [Power Platform admin center](https
 
 :::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Screenshot of the Capacity Summary page including finance and operations data.":::
 
-If you're using the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page will look like this:  
+If you're using the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page looks like this:  
 
 :::image type="content" source="media/finance-operations-storage-summary-tab-legacy.png" alt-text="Screenshot of the legacy Summary page including finance and operations data.":::
 
@@ -102,7 +102,7 @@ This is due to a change in December 2023, where the Operations Database Capacity
 
 ### Why don’t I see which tables are causing the overage?  
 
-Details at the table level aren't available in the initial launch of reporting. Table analytics will be available in a future release.
+Details at the table level aren't available in the initial launch of reporting. Table analytics are planned for a future release.
 
 ### Is there any reporting for file capacity?
 
@@ -110,7 +110,7 @@ File capacity reporting is in public preview. Capacity reports for Finance and o
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
-A new report will provide log and file consumption analytics for finance and operations apps and is expected to be available during the calendar year 2024. The new report will provide enhanced precision for file consumption analytics.
+A new report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 202
 
 ### What happens if my consumption is over the entitled limit?
 
@@ -118,10 +118,10 @@ The runtime experience isn't affected. However, we strongly recommend that you r
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
-For now, your account team will work with you to stay within your entitlement limit.  
+For now, your account team works with you to stay within your entitlement limit.  
 
 ### We have multiple Lifecycle Services projects in our tenant with each having its own production and sandbox environment. How does storage reporting work in this case?
 
-Storage reporting covers usage at the tenant and environment level. All environments in all Lifecycle Services projects on the tenant will be included in storage reporting.
+Storage reporting covers usage at the tenant and environment level. All environments in all Lifecycle Services projects on the tenant are included in storage reporting.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
