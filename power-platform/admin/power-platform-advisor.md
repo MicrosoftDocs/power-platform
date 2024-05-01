@@ -208,7 +208,7 @@ You can select the respective website from the list and take one of the followin
 
 #### Shut down the website
 
-If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
+If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them. To shut down a website:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Under **Resources**, select **Power Pages sites**, and select the site.
