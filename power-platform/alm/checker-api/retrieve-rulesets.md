@@ -1,7 +1,7 @@
 ---
 title: "Retrieve the list of rulesets | Microsoft Docs"
 description: "Read how to form a GET request using the Power Apps checker web API to retrieve the list of rulesets available."
-ms.date: 01/25/2024
+ms.date: 05/01/2024
 ms.topic: "article"
 applies_to: 
   - "Dynamics 365 (online)"
