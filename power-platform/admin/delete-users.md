@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 12/12/2023
+ms.date: 05/01/2024
 search.audienceType: 
   - admin
 ---
@@ -277,51 +277,52 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1305f]
 
 > [!Note]
-> In the video, it shows you how to use bulk delete via the bulk deletion process. This is replaced by a **bulk delete** action on the **Settings\Users** page. 
+> In the video, it shows you how to use bulk delete through the bulk deletion process. This is replaced by a **bulk delete** action on the **Settings > Users + permissions > Users** page. 
 
 ### Soft delete users in Power Platform in bulk
 
 1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
 1. Select **Bulk delete** from the action bar.
-1. In the **Use saved view**, select **Users deleted in tenant but exist in the environment** view.
+1. In the **Use saved view** area, select **Users deleted in tenant but exist in the environment** view.
 1. Select **Next**.
 1. Review the list of users and select **Next**.
 1. Enter a job **name** and select a **date and time** to schedule the deletion system job. Select **Next**.
 1. Select the email notification checkbox if you want to be notified when the job completes. Select **Next**.
-1. Verify the query and the number of records to be deleted and select **Run bulk delete**.
+1. Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
 
    > [!Note]
-   > You can create your own equivalent view to meet your record retention policy. For example, you can add other filter condition, such as the **Azure Deleted On** date and specify **Older than X months** with a value of **3** months to soft delete any users who were deleted from the tenant more than three months ago. Note that this **Azure Deleted On** date is a newer column created in 2022 which means that the value is *null* for users deleted in the tenant prior to 2022. 
-  
-    > We recommend that you set a schedule to soft delete your users by setting the job **frequency** of **90** days. You save most of your storage costs by soft deleting disabled status status frequently.
+   > You can create your own, equivalent view to meet your record retention policy. For example, you can add other filter conditions, such as the **Azure Deleted On** date and specify **Older than X months** with a value of **3** months to soft delete any users who were deleted from the tenant more than three months ago. Note that this **Azure Deleted On** date is a newer column created in 2022, which means that the value is *null* for users deleted in the tenant prior to 2022. 
+   >
+   > We recommend that you set a schedule to soft delete your users by setting the job **frequency** of **90** days. You save most of your storage costs by soft deleting disabled status users frequently.
     
 ### Permanently delete users in Power Platform in bulk
 
 1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
 1. Select **Bulk delete** from the action bar.
-1. In the **Use saved view**, select **Soft Deleted Users** view.
- > [!Note]
- > You can create your own equivalent view to meet your record retention policy.
+1. In the **Use saved view** area, select **Soft Deleted Users** view.
+
+   > [!Note]
+   > You can create your own, equivalent view to meet your record retention policy.
+   
 1. Select **Next** and review the list of records to be permanently deleted.
 1. Select **Next** again.
 1. Enter a job **name** and select a **data and time** to schedule the deletion system job. Select **Next**.
 1. Select the email notification checkbox if you want to be notified when the job completes. Select **Next**.
-1. Verify the query and the number of records to be deleted and select **Run bulk delete**.
+1. Verify the query and the number of records to be deleted, and then select **Run bulk delete**.
     
    > [!Note]
    > We recommend that you set a schedule by setting the job **frequency** based on your record retention policy.
    
 ### Review the status of bulk delete job
-1. Go to the Power Platform admin center.
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Environments**.
 1. Select a specific environment.
 1. Select **Settings > Audit and logs > System jobs**.
 1. Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous soft deletion system job. Review a deleted user in the audit log.
 
 If you enabled Dataverse auditing in the environment and in the **User** table, you can see the list of deleted users in the **Audit Summary view**.
-
 
 ### See also
 [Delete stub users from an environment](https://learn.microsoft.com/power-platform/admin/delete-stub-users)
