@@ -81,7 +81,7 @@ The **Delete disabled users** feature must be enabled in the environment where y
 1. Set the **Enable delete disabled users** setting to **On**. 
 1. Select **Save** to save your changes.
 
-> [Note]
+> [!Note]
 > This feature flag is to enable the **Delete disabled users** functionality for the environment on the Power Platform admin center. You don't need to enable this feature flag if you are using the client's **User** form.
 
 ## Delete users in Power Platform
@@ -89,7 +89,7 @@ The **Delete disabled users** feature must be enabled in the environment where y
 Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/) can remain in Power Platform environments with a **Disabled** status. These users can be deleted permanently from Power Platform environments. Deleting users from Power Platform environments goes through the similar deletion stages as in Microsoft Entra ID. When you first delete the user in the Power Platform environment, the disabled user is first *soft deleted*, and then you can *permanently delete* the user.
 
 > [!IMPORTANT]
-> - Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Microsoft Entra ID. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
+> Not all users with a **Disabled** status can be deleted. A user can be in a **Disabled** status in Power Platform environment and still be active in Microsoft Entra ID. The user can be in this disabled state when the license was removed or the user was removed from the security group of the environment. The user can also be disabled by updating the **Status** field. Customizing the User form by allowing the Status field to be updated is required.
 
 ### View the list of disabled users
 
@@ -320,7 +320,7 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 If you enabled Dataverse auditing in the environment and in the **User** table, you can see the list of deleted users in the **Audit Summary view**.
 
 ### See also
-[Delete stub users from an environment]delete-stub-users.md)
+[Delete stub users from an environment](delete-stub-users.md)
 [Delete unlicensed or removed Microsoft Entra group members](delete-unlicensed-or-removed-microsoft-entra-group-users.md)
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
 [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md) <br />
