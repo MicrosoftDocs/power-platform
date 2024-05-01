@@ -320,13 +320,13 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 1. In the navigation pane, select **Environments**.
 1. Select a specific environment.
 1. Select **Settings > Audit and logs > System jobs**.
-1. Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous soft deletion system job. Review a deleted user in the audit log.
+1. Select the bulk delete job and review the results. The results show records in the **Successes** row that should match the number of records from your previous system job that contained soft deletion. Review a deleted user in the audit log.
 
 If you enabled Dataverse auditing in the environment and in the **User** table, you can see the list of deleted users in the **Audit Summary view**.
 
 ### See also
-[Delete stub users from an environment](https://learn.microsoft.com/power-platform/admin/delete-stub-users)
-[Delete unlicensed or removed Microsoft Entra group members](https://learn.microsoft.com/power-platform/admin/delete-unlicensed-or-removed-microsoft-entra-group-users)
+[Delete stub users from an environment]delete-stub-users.md)
+[Delete unlicensed or removed Microsoft Entra group members](delete-unlicensed-or-removed-microsoft-entra-group-users.md)
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
 [Troubleshooting: Common user access issues](troubleshooting-user-needs-read-write-access-organization.md) <br />
 
