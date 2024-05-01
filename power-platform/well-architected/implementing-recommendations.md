@@ -12,7 +12,7 @@ contributors:
 
 # Complete a Power Platform Well-Architected assessment
 
-[Power Platform Well-Architected Review](https://aka.ms/powa/assessment) is a self-assessment that can help a workload team examine a workload from the perspective of  Power Platform Well-Architected. It consists of questions that are based on the key recommendations provided in the pillars of Power Platform Well-Architected. 
+[Power Platform Well-Architected Review](https://aka.ms/powa/assessment) is a self-assessment that can help a workload team examine a workload from the perspective of  Power Platform Well-Architected. It consists of questions that are based on the key recommendations provided in the pillars of Power Platform Well-Architected.
 
 At the end of the assessment, you get recommendations and corresponding links to supporting material that can help you improve your workload's design. You can export these recommendations into a file that you can use to incorporate the recommendations into the operational processes for continuous workload improvement.
 
@@ -22,7 +22,7 @@ For greenfield workloads, we recommend that you perform the assessment during th
 
 Brownfield workloads should be examined as well, as part of the continuous improvement cycle of the workload. Set a cadence, for example, every three months, and use milestones to track how the workload design can continue to improve.
 
-![Diagram that shows an overview of the continuous improvement cycle.](../_images/guidance-overview.png)
+![Diagram that shows an overview of the continuous improvement cycle.](./_images/guidance-overview.png)
 
 ## Receive and integrate recommendations
 

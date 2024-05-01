@@ -184,7 +184,7 @@ With the solution checker feature, you can perform a rich static analysis check 
 ## See also
 
 - [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
-- [Overview of pipelines in Power Platform ](/power-platform/alm/pipelines)
+- [Overview of pipelines in Power Platform](/power-platform/alm/pipelines)
 - [Application lifecycle management for the Power Platform](/training/paths/application-lifecycle-management/)
 - [Solution Architect series: Plan application lifecycle management for Power Platform](/training/modules/application-lifecycle-management-architect/)
 - [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)

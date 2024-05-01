@@ -112,4 +112,3 @@ Workload teams need to inform platform teams about any planned changes to worklo
 ## Achieve a successful outcome
 
 Workloads face many demands from various stakeholders, such as users, shareholders, regulators, employees, the center of excellence, and chief experience officers. Such demands can make it hard to choose a clear direction. Power Platform Well-Architected helps you make sense of the design and implementation by explaining the reasons for architectural choices to achieve a positive result. Build a successful workload, and celebrate that success with your organization.
-
