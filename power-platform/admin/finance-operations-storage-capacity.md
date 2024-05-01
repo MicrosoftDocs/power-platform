@@ -14,13 +14,10 @@ search.audienceType:
 
 # Finance and operations storage capacity
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 
 > [!IMPORTANT]
->
-> - This report allows you to manage your storage more efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
+> This report allows you to manage your storage more efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
 
 ## Licenses for finance and operations storage
 
