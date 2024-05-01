@@ -73,7 +73,9 @@ If you want to permanently delete the user manually without waiting for thirty d
 ### Enable the Delete disabled users feature
 The **Delete disabled users** feature must be enabled in the environment where you want to delete users.
 
-1. In the Power Platform admin center, select an environment.
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Product** > **Features**.
 1. Scroll through the list and to find the **Delete disabled users** area.
 1. Set the **Enable delete disabled users** setting to **On**. 
@@ -91,12 +93,11 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
 
 ### View the list of disabled users
 
-1. In the Power Platform admin center, select an environment.
-
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
-
-1. In the top menu bar, select **Manage users in Dynamics 365**.
-
+1. In the command bar, select **Manage users in Dynamics 365**.
 1. From the drop-down menu, select **Disabled users**.
 
 ### Disabled Microsoft Entra user stages
@@ -178,37 +179,30 @@ There are two ways to soft delete users.
 #### Option A: Soft delete users from the Disabled users view
 
 1. Permanently delete the user in Microsoft Entra ID. Go to [Permanently delete users in Microsoft Entra ID](#permanently-delete-users-in-microsoft-entra-id) earlier in this article.
-
-1. In the Power Platform admin center, select an environment.
-
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
-
-1. In the top menu bar, select **Manage users in Dynamics 365**.
-
+1. In the command bar, select **Manage users in Dynamics 365**.
 1. From the drop-down menu, select **Disabled users**.
-
 1. Select a user from the list.
-
 1. On the User Form, choose the **Delete** button.
 
 The user still exists in the environment as disabled and continues to show in the Disabled Users list. To permanently delete from the environment, go to [Permanently delete users in Power Platform](#permanently-delete-users-in-power-platform) later in this article.
 
 #### Option B: View and soft delete disabled users who were permanently deleted from Microsoft Entra ID
 
-1. In the Power Platform admin center, select an environment.
-
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
-
-1. From the top menu bar, select **Filter**.
+1. From the command bar, select **Filter**.
 
    :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
 
 1. From the drop-down menu, select **Users not in AAD but exist in the environment**.
-
 1. Select the disabled user you want to delete.
-
 1. On the User Form, select **Delete**.
-
 1. Select **Refresh list** to update the list and confirm deletion.
 
 > [!NOTE]
@@ -243,20 +237,17 @@ You can delete and remove users with disabled status in Power Platform. You may 
 
 #### Permanently delete users
 
-1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
-
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
-
-1. From the top menu bar, select **Filter**.
+1. From the command bar, select **Filter**.
 
    :::image type="content" source="media/filteruser.png" alt-text="Select Filter from the top menu.":::
 
 1. From the drop-down menu, select **Users not in AAD and soft deleted in the environment**.
-
 1. Select a soft deleted user to delete the user permanently in the Power Platform environment. Only users who were soft deleted can be deleted permanently.
-
 1. On the user form, select **Delete**.
-
 1. Select **Refresh list** to update the list and confirm deletion.
 
 > [!NOTE]
@@ -281,7 +272,9 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
 
 ### Soft delete users in Power Platform in bulk
 
-1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
 1. Select **Bulk delete** from the action bar.
 1. In the **Use saved view** area, select **Users deleted in tenant but exist in the environment** view.
@@ -298,7 +291,9 @@ Users with a disabled status can be deleted, in bulk, using the [Remove a large 
     
 ### Permanently delete users in Power Platform in bulk
 
-1. In the [Power Platform admin center](https://aka.ms/ppac), select an environment.
+1. Go to the Power [Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
 1. Select **Settings** > **Users + permissions** > **Users**.
 1. Select **Bulk delete** from the action bar.
 1. In the **Use saved view** area, select **Soft Deleted Users** view.
