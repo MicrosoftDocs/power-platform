@@ -192,13 +192,13 @@ It's best to view the request as *Requires purchasing? Yes* with individual item
 
 ### Reject a request
 
-When after review, the decision may be made that a request should not be continued. The request may be a duplicate, entered by mistake, or exceed budget. In this case, the hardware manager must reject the request. This will ensure that no purchasing or further action is taken. The rejection can be done in Teams, Outlook or the Hardware Management app directly.
+After review, the decision may be made that a request should not be continued. The request may be a duplicate, entered by mistake, or exceed budget. In this case, the hardware manager must reject the request. This will ensure that no purchasing or further action is taken. The rejection can be done in Teams, Outlook or the Hardware Management app directly.
 
 #### Use the Hardware Management app to reject a request
 
-1. In Requests > Requests view list of "Open Requests" (Note: the default sort is by "Submitted On" date (descending) with the newest requests on top).
+1. In Requests > Requests view list of *Open Requests* (Note: the default sort is by *Submitted On* date (descending) with the newest requests on top).
 1. Select a request for review and click on the Request Name hyperlink for the row
-1. The Hardware Request "General" tab provides an overview of the request.  The information helps the administrator make a decision to approve or reject the request.  The overview includes sections:
+1. The Hardware Request **General** tab provides an overview of the request.  The information helps the administrator make a decision to approve or reject the request.  The overview includes sections:
     1. Details – Name, Business Group, Submitted by, Requires purchasing indicator, Amount, Submitted on date/time, Completed on date, Requested for, and Request number
     1. Approval – Status, Comments, Approved by, Approved on
     1. Additional details – input as free text from request
@@ -209,8 +209,8 @@ When after review, the decision may be made that a request should not be continu
     1. allows the administrator to quickly identify where in the process the request is
     1. has executable functions for each step in the process
 1. Reject
-    1. Within the status tracker, click on the "Review" step
-    1. Update the Approval Status from "Pending" to "Rejected"
+    1. Within the status tracker, select on the **Review** step
+    1. Update the Approval Status from *Pending* to *Rejected*
     1. Select **Run Flow** to *Notify Review Complete*, which will notify the user making the request of the approval action
 
 #### Use Teams to reject a request
@@ -219,7 +219,7 @@ Hardware managers have a workflow item for *Approval* in Teams that arrives when
 
 1. Select **Approvals** in the left-side panel
 1. Select the request to review; a card will open with the relevant details for the request:
-    1. Status – "Requested" in this case (eventually "Approved" or "Rejected")
+    1. Status – *Requested* in this case (eventually *Approved* or *Rejected*)
     1. Name
     1. Submitted By
     1. Amount
@@ -235,7 +235,7 @@ Hardware managers have a workflow item for *Approval* in Teams that arrives when
 Hardware managers receive an email in their *Outlook Inbox* that arrives when a request is submitted and ready for a review. To get started with the process of rejecting a hardware request through Outlook, take these steps:
 
 1. Open the request to review email. The email has the relevant details for the request:
-    1. Status – "Requested" in this case (eventually "Approved" or "Rejected")
+    1. Status – *Requested* in this case (eventually *Approved* or *Rejected*)
     1. Name
     1. Submitted By
     1. Amount
