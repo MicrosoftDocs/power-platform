@@ -1,5 +1,5 @@
 ---
-title: Finance and operations storage capacity (preview)
+title: Finance and operations storage capacity
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
 author: sericks007
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Finance and operations storage capacity (preview)
+# Finance and operations storage capacity
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -20,9 +20,7 @@ The finance and operations storage capacity report shows how much finance and op
 
 > [!IMPORTANT]
 >
-> - This report is in preview. You may use it to manage your storage efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> - This report allows you to manage your storage more efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
 
 ## Licenses for finance and operations storage
 
@@ -120,8 +118,6 @@ A new report will provide log and file consumption analytics for finance and ope
 ### What happens if my consumption is over the entitled limit?
 
 The runtime experience isn't affected. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
-
-For File and Log capacity analytics for Finance and Operations, you're not expected to take any action currently in the public preview phase. This article will be updated with the steps to stay within the storage limit when File capacity analytics for Finance and Operations will be generally available.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
