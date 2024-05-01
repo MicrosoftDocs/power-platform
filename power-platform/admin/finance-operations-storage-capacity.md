@@ -1,17 +1,15 @@
 ---
 title: Finance and operations storage capacity
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
-author: sericks007
+author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/01/2024
 ms.subservice: admin
-ms.author: sericks 
-ms.reviewer: 
+ms.author: ceian 
+ms.reviewer: sericks 
 search.audienceType: 
   - admin
-contributors;
-- ianceicys-msft
 ---
 
 # Finance and operations storage capacity
