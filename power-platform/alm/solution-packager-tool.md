@@ -17,7 +17,7 @@ search.audienceType:
 SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files and other files. You can then easily manage these files by using a source control system. The following sections show you how to run the tool and how to use the tool with managed and unmanaged solutions.  
 
 > [!IMPORTANT]
-> SolutionPackager tool is no longer the recommended way to unpack and pack solutions.  The capabilities of the SolutionPackager tool have been incorporated into the [Power Platform CLI](../developer/cli/introduction).  The `pac solution` command as a number of verbs including `unpack`, `pack`, `clone`, and `sync` that incorporate the same underlying capabilities of the SolutionPackager tool.
+> SolutionPackager tool is no longer the recommended way to unpack and pack solutions.  The capabilities of the SolutionPackager tool have been incorporated into the [Power Platform CLI](../developer/cli/introduction).  The `pac solution` command has a number of verbs including `unpack`, `pack`, `clone`, and `sync` that incorporate the same underlying capabilities of the SolutionPackager tool.
   
 <a name="bkm_where"></a>   
 
