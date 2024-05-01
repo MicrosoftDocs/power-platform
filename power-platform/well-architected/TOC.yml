@@ -7,6 +7,8 @@
         href: whats-new.md
       - name: What is Power Platform Well-Architected
         href: what-is-power-well-architected.md
+      - name: Implementing recommendations
+        href: implementing-recommendations.md
     - name: Pillars
       items:
       - name: Overview
