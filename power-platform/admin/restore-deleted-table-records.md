@@ -14,7 +14,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Microsoft Dataverse provides a low code mechanism to manage enterprise as well as consumer data, allowing customers to perform CRUD (create, update, delete) operations on this data in a seamless manner. As part of the regular business processes, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single or multiple selection, and bulk deletion. Retrieving deleted data is hard and often not always recoverable, and it requires Microsoft Customer Support engagement. To address this limitation, the recycle bin is available to recover table record data from any type of delete scenario within a specified configurable time frame.
+Microsoft Dataverse provides a low code mechanism to manage enterprise as well as consumer data, allowing customers to perform CRUD (create, update, delete) operations on this data in a seamless manner. As part of the regular business processes, users often delete records or transactions either manually or systematically, either planned or by accident, via system processes, single selection, multiple selections, and bulk deletion. Retrieving deleted data is hard and often not always recoverable, and it requires Microsoft Customer Support engagement. To address this limitation, the recycle bin is available to recover table record data from any type of delete scenario within a specified configurable time frame.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -23,7 +23,7 @@ Microsoft Dataverse provides a low code mechanism to manage enterprise as well a
 
 ## Prerequisites
 
-To use this feature it must be enabled in the environment where you want to restore Dataverse table records.
+To use this feature, it must be enabled in the environment where you want to restore Dataverse table records.
 
 ### Enable restore table records
 
@@ -44,14 +44,17 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 1. Go to **Settings** > **Data management** > **View Deleted Records**.
 1. You can view all the deleted records from all tables in a new tab. 
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
-   :::image type="content" source="media/restore-deleted-table-record.png" alt-text="Restore deleted table records":::
+   :::image type="content" source="media/restore-deleted-table-record.png" alt-text="Restore deleted table records" lightbox="media/restore-deleted-table-record.png":::
 
 1. Select **Ok** to confirm the action to restore.
 
-## Known issue
+## Known issues
 
-### Some Records aren't restored
+### Some records aren't restored
 
 - Records deleted via plug-ins aren't restored. 
-- Records deleted via the cascade behavior process can be restored. 
-- To restore other records deleted via the delete plugins, you need restore plug-ins to be registered on the restore API to restore the deleted records. <!-- What are "delete plugins", do you mean a plugin that performs a delete action on a record? What are "restore plugins" and "restore API"? -->
+- Some organizations add custom business logic that deletes records related to a record that is deleted. To restore related records deleted by custom business logic, you need to apply the opposite logic on the `Restore` operation to recover the records when you restore the original record that was deleted. For examples, go to
+ [CreateMultiple Remarks](/power-apps/developer/data-platform/webapi/reference/createmultiple#remarks) and [GetAuditStorageDetails Remarks](/power-apps/developer/data-platform/webapi/reference/getauditstoragedetails#remarks).
+
+Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
+
