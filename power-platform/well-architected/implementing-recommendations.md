@@ -1,16 +1,18 @@
 ---
-title: Complete an Power Platform Well-Architected Review assessment
-description: Learn about Power Platform Well-Architected Review and Azure Advisor recommendations that can help you continuously improve your workload.
+title: Complete an Power Platform Well-Architected assessment
+description: Learn about Power Platform Well-Architected recommendations that can help you continuously improve your workload.
 author: robstand
 ms.author: rstand
 ms.date: 05/10/2024
 ms.topic: conceptual
 ms.subservice: well-architected
+contributors:
+    - chkittel 
 ---
 
-# Complete an Power Platform Well-Architected Review assessment
+# Complete a Power Platform Well-Architected assessment
 
-[Power Platform Well-Architected Review](/assessments/azure-architecture-review/) is a self-assessment that can help a workload team examine a workload from the perspective of  Power Platform Well-Architected. It consists of approximately 60 questions that are based on the key recommendations provided in the pillars of Power Platform Well-Architected. The assessment tool can also pull in [Azure Advisor](/azure/advisor/) recommendations for an Azure subscription or resource group.
+[Power Platform Well-Architected Review](/assessments/azure-architecture-review/) is a self-assessment that can help a workload team examine a workload from the perspective of  Power Platform Well-Architected. It consists of approximately 60 questions that are based on the key recommendations provided in the pillars of Power Platform Well-Architected. 
 
 At the end of the assessment, you get recommendations and corresponding links to supporting material that can help you improve your workload's design. You can export these recommendations into a file that you can use to incorporate the recommendations into the operational processes for continuous workload improvement.
 
@@ -18,7 +20,7 @@ At the end of the assessment, you get recommendations and corresponding links to
 
 For greenfield workloads, we recommend that you perform the assessment during the initial design process, entering the proposed decisions. The guidance then acts as a baseline and starts a feedback loop that you can use to refine the workload design as you make additional design decisions and periodically capture them in additional assessment milestones.
 
-Brownfield workloads should be examined as well, as part of the continuous improvement cycle of the workload. Set a cadence, for example every four months, and use milestones to track how the workload design can continue to improve.
+Brownfield workloads should be examined as well, as part of the continuous improvement cycle of the workload. Set a cadence, for example, every three months, and use milestones to track how the workload design can continue to improve.
 
 ![Diagram that shows an overview of the continuous improvement cycle.](../_images/guidance-overview.png)
 
