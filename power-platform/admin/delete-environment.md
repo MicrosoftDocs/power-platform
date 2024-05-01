@@ -2,7 +2,6 @@
 title: "Delete an environment in Power Platform admin center"
 description: "Learn how to delete or remove an environment to recover storage space."
 author: sericks007
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/26/2021
@@ -16,7 +15,7 @@ search.audienceType:
 You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII). 
 
 > [!NOTE]
-> You can't delete the [default environment](environments-overview.md#the-default-environment).
+> You can't delete the [default environment](environments-overview.md#default-environment).
 
 1. Sign in to [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com).  
 
@@ -36,7 +35,7 @@ You can delete an environment to recover storage space and to remove Personally 
 [Automatic environment cleanup](automatic-environment-cleanup.md) <br />
 [Manage sandbox environments](sandbox-environments.md) <br />
 [Environments overview](environments-overview.md) <br />
-[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/?view=pa-ps-latest) <br />
+[Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/) <br />
 [Licensing overview for Power Platform](pricing-billing-skus.md)
 
 

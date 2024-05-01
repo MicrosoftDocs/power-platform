@@ -34,16 +34,16 @@ Before we get started, let’s look at some environment and security key facts:
 - Environments are tied to a [geographic location](../../admin/regions-overview.md) that is configured at the time the environment is created.
 - Environments can be used to target different audiences or for different purposes such as dev, test, and production.
 - [Data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md) can be applied to individual environments or the tenant.
-- Every tenant has a [default environment](../../admin/environments-overview.md#the-default-environment).
-- [Non-default environments](../../admin/environments-overview.md#types-of-environments) can be created by licensed Power Apps, Power Automate, and Dynamics 365 users. Creation can be restricted to only global and service admins via a tenant setting.
-- Non-default environments offer more control around [permissions](../../admin/environments-overview.md#environment-permissions).
+- Every tenant has a [default environment](../../admin/environments-overview.md#default-environment).
+- [Non-default environments](../../admin/environments-overview.md#power-platform-environment-types)  can be created by licensed Power Apps, Power Automate, and Dynamics 365 users. Creation can be restricted to only global and service admins via a tenant setting.
+- Non-default environments offer more control around [permissions](../../admin/environments-overview.md#power-platform-environment-roles).
 - An environment can have one or zero [Microsoft Dataverse instances](../../admin/create-database.md).
 - Environments include [predefined security roles](../../admin/database-security.md) that reflect common user tasks with access levels defined to match the security best-practice goal of providing access to the minimum amount of business data required to use the app.
 - [Default environment routing](../../admin/default-environment-routing.md) is a premium, governance feature. This feature allows Power Platform admins to automatically direct new makers into their own, personal developer environments when they visit make.powerapps.com for the first time. 
 
 ### Types of environments
 
-Before you get started developing an environment strategy, ensure you understand the different [types of environments](../../admin/environments-overview.md#types-of-environments).
+Before you get started developing an environment strategy, ensure you understand the different [types of environments](../../admin/environments-overview.md#power-platform-environment-types).
 
 ## Developing a strategy
 
@@ -53,7 +53,7 @@ Here is a **starting point** to consider for your environment strategy.
   
 - **Restrict the creation of net-new production environments to admins.**<br>[Limiting environment creation](../../admin/control-environment-creation.md) is beneficial to maintain control in general: both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it’s easier to see what people are working on if admins are the gatekeeper.
 
-- **Treat the [default environment](../../admin/environments-overview.md#the-default-environment) as a user and team productivity environment for your business groups.**<br>Renaming the environment through the admin center is recommended to make the purpose of that environment self-explanatory. Clearly communicate that Default is used for user and team productivity scenarios, but not business-important or mission-critical apps. This environment can't be disabled or deleted because it hosts integration with products like SharePoint and Project. We recommend a [tiered approach to user and team productivity environments](#tiered-approach-to-team-and-user-productivity-environments).
+- **Treat the [default environment](../../admin/environments-overview.md#default-environment) as a user and team productivity environment for your business groups.**<br>Renaming the environment through the admin center is recommended to make the purpose of that environment self-explanatory. Clearly communicate that Default is used for user and team productivity scenarios, but not business-important or mission-critical apps. This environment can't be disabled or deleted because it hosts integration with products like SharePoint and Project. We recommend a [tiered approach to user and team productivity environments](#tiered-approach-to-team-and-user-productivity-environments).
 
 - **Establish a process for requesting access to or creation of environments.**<br>With environment creation locked down and default reserved for first-party integration apps, make it clear to your organization that a proper development project should be started by requesting a new dedicated environment where there is clear communication of intent and support between developers and admins. The next section has more detail about automated environment creation, which is just one way to implement an easy formal request process.
 
@@ -69,7 +69,7 @@ To support integrations, reduce the number of environments needed, and accelerat
 
 #### Default environment
 
-Everyone in your tenant has permissions to create apps and flows here. There currently is no way to block the Environment Maker role assignment in this environment. This is also the environment that is used for first-party integrations, like creating an app from a SharePoint list. Learn more: [The default environment](../../admin/environments-overview.md#the-default-environment)
+Everyone in your tenant has permissions to create apps and flows here. There currently is no way to block the Environment Maker role assignment in this environment. This is also the environment that is used for first-party integrations, like creating an app from a SharePoint list. Learn more: [The default environment](../../admin/environments-overview.md#default-environment)
 
 To reduce risk to data, the types of connectors used in your apps and flows should be limited to a less permissive data loss prevention (DLP) policy. This policy should cover common individual and small team productivity use cases, like working with SharePoint data, sending emails, and having an approval workflow.
 

@@ -1,7 +1,7 @@
 ---
 title: ParseJSON function
 description: Reference information including syntax and examples for the ParseJSON function.
-author: jorisdg
+author: gregli
 
 ms.topic: reference
 ms.custom: canvas
@@ -12,7 +12,7 @@ ms.author: jorisde
 search.audienceType: 
   - maker
 contributors:
-  - jorisdg
+  - gregli
   - mduelae
 ---
 # ParseJSON function
