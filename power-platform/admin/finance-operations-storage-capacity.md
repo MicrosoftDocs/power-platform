@@ -4,12 +4,14 @@ description: Learn to use the finance and operations storage capacity report to 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2024
+ms.date: 05/01/2024
 ms.subservice: admin
 ms.author: sericks 
 ms.reviewer: 
 search.audienceType: 
   - admin
+contributors;
+- ianceicys-msft
 ---
 
 # Finance and operations storage capacity
