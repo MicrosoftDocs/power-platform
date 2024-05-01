@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for implementing automation
 
-**Applies to this Well-Architected Framework Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:08](checklist.md)| **Automate all tasks that do not benefit from the insight and adaptability of human intervention, are highly procedural, and have a shelf-life that will yield a return on the automation investment. Prefer off-the-shelf software for automation vs custom implementations where available. Treat all automation as workload components, applying Well-Architected pillars to their design and implementation.** |
 |---|---|

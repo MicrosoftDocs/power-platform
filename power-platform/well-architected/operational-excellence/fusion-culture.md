@@ -22,7 +22,7 @@ This guide describes the recommendations for implementing fusion development pri
 
 ## Key design strategies
 
-A workload that operates according to the Power Platform Well-Architected framework recommended practices starts with the adoption of the fusion development culture of cohesiveness, responsibility, continuous learning, and improvement. Team members bring their own expertise and might focus on specific areas of workload operation. However, your team as a whole should be able to independently manage day-to-day, as-needed, and emergency tasks, with support from outside teams when necessary. Your team must work within the overall organizational requirements and collaborate with other teams by using a mindset that values shared knowledge.
+A workload that operates according to the Power Platform Well-Architected recommended practices starts with the adoption of the fusion development culture of cohesiveness, responsibility, continuous learning, and improvement. Team members bring their own expertise and might focus on specific areas of workload operation. However, your team as a whole should be able to independently manage day-to-day, as-needed, and emergency tasks, with support from outside teams when necessary. Your team must work within the overall organizational requirements and collaborate with other teams by using a mindset that values shared knowledge.
 
 The following recommendations can help you adopt and implement fusion development practices in your team.
 

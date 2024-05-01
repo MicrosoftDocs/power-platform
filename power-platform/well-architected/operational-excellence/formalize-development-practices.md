@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Recommendations for formalizing software development management practices
 
-**Applies to this Well-Architected Framework Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:03](checklist.md)| **Formalize the software ideation and planning process, drawing from established industry and organizational standards. Use a common, prioritized backlog and sufficiently detailed specifications. Drive continuous improvements in the planning process based on outcomes.** |
 |---|---|

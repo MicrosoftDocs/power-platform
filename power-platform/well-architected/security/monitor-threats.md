@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 This guide describes the recommendations for monitoring and threat detection. Monitoring is fundamentally a process of **getting information about events that have already occurred**. Security monitoring is a practice of capturing information at different altitudes of the workload (identity, flows, application, operations) to **gain awareness of suspicious activities**. The goal is to predict incidents and learn from past events. Monitoring data provides the basis of post-incident analysis of what occurred to help incident response and forensic investigations.
 
-Monitoring is an Operational Excellence approach that's applied across all Power Platform Well-Architected Framework pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring are covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md).
+Monitoring is an Operational Excellence approach that's applied across all Power Platform Well-Architected pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring are covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md).
 
 **Definitions**
 
