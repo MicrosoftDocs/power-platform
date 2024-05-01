@@ -2,7 +2,7 @@
 title: "Retrieve the list of rules | Microsoft Docs"
 description: "Learn how to form a GET request using the Power Apps checker web API to retrieve the list of rules available."
 ms.custom: ""
-ms.date: 01/25/2024
+ms.date: 05/01/2024
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
