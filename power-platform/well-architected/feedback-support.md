@@ -1,0 +1,16 @@
+---
+title: Power Platform Well-Architected feedback and support
+description: Find out how to provide feedback for Power Platform Well-Architected and get support
+author: robstand
+ms.author: rstand
+ms.reviewer: robstand
+ms.subservice: well-architected
+ms.topic: conceptual
+ms.date: 05/10/2024
+---
+
+# Feedback and support
+
+We welcome and highly value your feedback on Power Platform Well-Architected. You can provide feedback for specific articles in the *Feedback* section of the article for which you want to share your feedback.
+
+If you have broader feedback for Power Platform Well-Architected, suggestions for how we can improve, or you encounter errors in the guidance, please file an issue at [aka.ms/powerpnp](https://aka.ms/powerpnp).
