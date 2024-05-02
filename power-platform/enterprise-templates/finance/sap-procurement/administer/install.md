@@ -76,6 +76,6 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 > - **SAP Base solution** contains the base Power Platform components required for the SAP Procurement solutions. The base solution also supports other SAP-related solutions that will be released later.
 > - **SAP Procurement solution** contains Power Platform components specific to the procure-to-pay process domain.
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

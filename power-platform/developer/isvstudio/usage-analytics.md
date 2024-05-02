@@ -1,7 +1,7 @@
 ---
 title: Introduction to Microsoft Power Platform ISV Studio app usage analytics| Microsoft Docs
 description: Measure an app's performance and get insights.
-ms.date: 04/03/2023
+ms.date: 04/01/2024
 ms.reviewer: jdaly
 author: angela21k
 ms.author: angelakim
@@ -16,8 +16,7 @@ contributors:
 
 # App usage analytics
 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-isv-studio-deprecation](includes/cc-isv-studio-deprecation.md)]
 
 As an ISV, you need data, like active users or the number of times the solution has been installed, to measure the success of your application. You can use app usage analytics to get visibility into monthly, daily, and weekly usage data.
 

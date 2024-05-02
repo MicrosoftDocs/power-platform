@@ -3,7 +3,7 @@ title: Miscellaneous privileges
 description: Learn about the miscellaneous privileges that you can assign to a security role in Power Platform.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/02/2023
+ms.date: 04/19/2024
 ms.subservice: admin
 author: sericks007
 ms.author: sericks
@@ -69,7 +69,7 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | Publish Articles | prvPublishArticle | [Create and manage knowledge articles](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Duplicate Detection Rules | prvPublishDuplicateRule | [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) |
 | Publish Email Templates | prvCreateOrgEmailTemplates | [Create templates for email](create-templates-email.md) |
-| Publish Customizations | prvPublishCustomization | [PublishXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations)</br>[PublishAllXml message privileges](/dynamics365/customerengagement/on-premises/developer/customize-dev/publish-customizations) |
+| Publish Customizations (deprecated) | prvPublishCustomization | This privilege is deprecated. |
 | Publish Knowledge Articles | prvPublishKnowledgeArticle | [Create and manage knowledge articles](/dynamics365/customer-service/customer-service-hub-user-guide-knowledge-article) |
 | Publish Mail Merge Templates to Organization | prvPublishOrgMailMergeTemplate | [Work with mail merge templates](work-mail-merge-templates.md) |
 | Publish Reports | prvPublishOrgReport | [Common Data Service analytics](analytics-common-data-service.md) |

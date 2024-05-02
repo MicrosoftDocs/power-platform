@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - mduelae
   - gregli-msft
-  - jorisdg
+  - gregli
   -  mduelae
   - tapanm-msft
 ---

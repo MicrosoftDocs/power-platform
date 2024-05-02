@@ -1,6 +1,6 @@
 ---
-title: "Dataverse developer tools"
-description: "List of tools that developers can use to extend Dataverse capabilities."
+title: Microsoft Dataverse developer tools
+description: Explore a comprehensive array of developer tools designed to enhance and expand the functionalities of Microsoft Dataverse.
 author: JimDaly
 ms.subservice: developer
 ms.author: jdaly

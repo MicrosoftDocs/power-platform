@@ -3,7 +3,7 @@ title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
 author: Zeffin 
 ms.topic: conceptual
-ms.date: 03/08/2024
+ms.date: 03/26/2024
 ms.subservice: admin
 ms.author: johnev
 ms.reviewer: sericks
@@ -217,7 +217,7 @@ For more information on the different roles for managing your tenant across the 
 > |   Total API Calls   | This chart shows how many API calls have been made in total in the environment with a Dataverse database over the specified time.     | 
 > |    Most Used API    | This chart shows top 10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
 > |      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
-> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report)   |
+> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report-preview)   |
 
 ### Update frequency  
  API Call Statistics chart data is updated as follows.  
@@ -231,7 +231,12 @@ For more information on the different roles for managing your tenant across the 
 |API Calls|24 hours|
 |API peak call rate |24 hours|
 
-### API peak call rate report
+### API peak call rate report (preview)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 The API peak call rate report shows API usage graph with the number of requests per user/application for the selected interval. This report helps you monitor the API usage, and avoid hitting the [service protection limits](/power-apps/developer/data-platform/api-limits).
 
