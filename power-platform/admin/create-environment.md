@@ -229,6 +229,11 @@ Users can access resources in an environment if they have:
   - [Share a canvas app with your organization](/powerapps/maker/canvas-apps/share-app)
   - [Share a cloud flow](/power-automate/create-team-flows)
 
+### Why do I no longer see Preview (United states) region?
+
+This region is no longer available as a choice, it has been replaced with Get new features early selection while United States region is selected.
+Preview, i.e. early release cycle, capabilities are now available for environments in other regions in addition to the United States.
+
 ### What are the new trial limits for Power Apps customers?
 
 The new trial limits are one per user.
