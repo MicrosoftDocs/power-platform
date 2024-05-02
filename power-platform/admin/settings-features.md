@@ -230,6 +230,6 @@ Choose which provider to enable outbound calls from within customer engagement a
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **On**     |
+| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
 |Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
 
