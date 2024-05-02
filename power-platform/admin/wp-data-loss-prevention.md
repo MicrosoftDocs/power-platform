@@ -1,30 +1,59 @@
 ---
 title: "Data loss prevention policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
-
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/12/2023
-author: sericks007
+ms.date: 05/01/2024
+author: laneswenka
 ms.subservice: admin
-ms.author: sericks
+ms.author: laswenka
 ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
-# Data loss prevention policies 
+# Data policies 
+Data Loss Prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. It encompasses various measures and tools aimed at preventing the unauthorized disclosure or leakage of sensitive information, also known as exfiltration.  A core component of Power Apps, Power Automate, and Copilot Studio is the use of Connectors to enumerate, populate, push, and pull data.  **Data policies** in Power Platform admin center allow administrators to control access to these Connectors in various ways to help reduce risk in your organization.
 
-Your organization's data is likely one of the most important assets you're responsible for safeguarding as an administrator. The ability to build apps and automation to use that data is a large part of your company's success. You can use Power Apps and Power Automate for rapid build and rollout of these high-value apps so that users can measure and act on the data in real time. Apps and automation are becoming increasingly connected across multiple data sources and multiple services. Some of these might be external, third-party services and might even include some social networks. Users generally have good intentions, but they can easily overlook the potential for exposure from data leakage to services and audiences that shouldn't have access to the data.
+In this overview, we will touch on some high level concepts related to Connectors, and several important considerations to take in to account when setting up your policies or making policy changes. 
 
-You can create data loss prevention (DLP) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies can be scoped at the environment level or tenant level, offering flexibility to craft sensible policies that strike the right balance between protection and productivity. For tenant-level policies you can define the scope to be all environments, selected environments, or all environments except ones you specifically exclude. Environment-level policies can be defined for one environment at a time. 
+## Connectors
+Connectors at their most basic level are nothing but strongly-typed representations of restful application programming interfaces, also known as APIs.  For example, the Power Platform API provides several operations related to functionality in Power Platform admin center:
+[image1]
 
-DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow. Sometimes you might want to block the usage of certain connectors altogether by classifying them as **Blocked**.
+When wrapping this API in to a connector, it becomes much easier for makers and citizen developers to utilize in their low code apps, workflows, and chatbots. For example, the Power Platform for Admins V2 connector is the representation of Power Platform API:
+[image2]
 
-DLP policies are created in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). They affect Power Platform canvas apps and Power Automate flows. To create a DLP policy, you need to be a [tenant admin](use-service-admin-role-manage-tenant.md) or have the [Environment Admin role](environments-overview.md#environment-permissions). 
+There are several types of connectors that we will enumerate below, as each has capabilities within data policies.
 
-> [!NOTE]
-> The ability to block connectors by using a three-way classification&mdash;**Business**, **Non-Business**, and **Blocked**&mdash;in addition to DLP policy UI support in the Power Platform admin center is now generally available. There is new [DLP policy PowerShell support](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) for three-way DLP policy classification, which is also generally available. Legacy DLP policy support for two-way classification (**Business** and **Non-Business**), along with admin center UI and PowerShell support for two-way classification, is currently generally available and will continue to be available for the foreseeable future. More information: [Connectors documentation](/connectors/)
+## Certified Connectors
+Certified Connectors refer to connectors that have undergone rigorous testing and certification processes to ensure they meet Microsoft's standards for security, reliability, and compliance. These connectors provide users with a reliable means of integrating with other Microsoft services as well as external services - all while maintaining data integrity and security.
+
+For more information on certified connectors, please refer to the [Certification Submission Guidelines](/connectors/custom-connectors/submit-certification.md).
+
+## Custom Connectors
+Custom Connectors allow makers to create their own connectors to integrate with external systems or services not covered by the standard set of certified connectors. While offering flexibility and customization options, custom connectors also require careful consideration to ensure they comply with data policies and do not compromise data security.
+
+Learn more about [creating and managing custom connectors](/connectors/custom-connectors).
+
+## Virtual Connectors
+Virtual Connectors are connectors that are shown in data policies for administrators to control, however they are not based on a restful API.  The proliferation of virtual connectors has stemmed from data policies being one of the most popular governance controls in Power Platform, however over time more of these types of "on/off" capabilities will surface as rules within [Environment Groups](power-platform/admin/environment-groups.md).
+
+Several virtual connectors are provided for governing Microsoft Copilot Studio. These connectors facilitate the ability to disable various features of Copilots and chatbots.
+
+Explore Virtual Connectors and their role in [data loss prevention in Microsoft Copilot Studio](microsoft-copilot-studio/admin-data-loss-prevention.md).
+
+## Design-Time Blocking and Runtime Blocking
+Design-Time Blocking involves preventing makers from inadvertently including sensitive data or violating data policies while building an app or workflow. Runtime Blocking, on the other hand, prevents the execution of apps or flows that have already been built if they violate data policies.
+
+## Latency Considerations
+It's essential to consider the latency associated with DLP enforcement for various workloads within the Power Platform. Changes in data policies may impact design-time blocking and runtime blocking differently across different services such as Power Apps, Power Automate, and Copilot Studio. Below is a table summarizing the latency for each workload:
+
+| Workload | Design-time Block Latency | Runtime Block Latency | 
+|--------------|--------------|-------------------|
+| Power Apps | | |
+| Power Automate | | |
+| Copilot Studio | | |
 
 
 ### See also
