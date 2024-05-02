@@ -1,11 +1,11 @@
 ---
 title: "Block unmanaged customizations in Dataverse environments"
-description: "Learn how admins can block unmanaged customizations in Dataverse environments, which helps enforce healthy ALM processes."
+description: "Learn how admins can block unmanaged customizations in Dataverse environments, which help enforce healthy ALM processes."
 author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 04/10/2024
+ms.date: 05/02/2024
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
@@ -25,7 +25,7 @@ This environment setting allows system administrators to prevent unmanaged custo
 
 When the setting is enabled, these operations are blocked for the environment:
 
-- Import of unmanaged solutions into the environment are blocked.
+- Import of unmanaged solutions into the environment is blocked.
 - Creation of new solution components like apps, tables, and forms are blocked.
 - Adding unmanaged changes to existing managed components are blocked.
 - Any unmanaged changes result in an error returned to the user, such as: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only.”
