@@ -1,5 +1,5 @@
 ---
-title: Environment groups (preview)
+title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -13,9 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Environment groups (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Environment groups
 
 The task of managing Power Platform on a large scale across numerous environments ranging from hundreds to tens of thousands poses a significant challenge for both startup and enterprise IT teams.
 
@@ -29,11 +27,6 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 - [Solution checker enforcement](managed-environment-solution-checker.md)
 - [Usage insights](managed-environment-usage-insights.md)
 - [Extended backup retention](backup-restore-environments.md)
-
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - View the [Supplemental terms of use for Microsoft Power Platform and Dynamics 365 preview for online services](https://dynamics.microsoft.com/legaldocs/supp-dynamics365-preview/).
 
 ## Strategies for using environment groups
 
