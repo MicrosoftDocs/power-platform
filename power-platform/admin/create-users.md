@@ -98,12 +98,14 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
 <tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.  After which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers; after which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
 </tbody>
 </table>
 
 > [!NOTE]
 > Custom fields are **never** syncronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
+> 
+> Only fields explicitly mentioned above as not automatically updated (custom fields, Full Name, Primary Email, and Internal Email Address after a customer update) won't be syncronized. All the other fields are always syncronized.
 
 The following image shows Microsoft 365 user contact fields.
 
