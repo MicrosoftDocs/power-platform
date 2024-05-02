@@ -2,12 +2,14 @@
 title: ALM Accelerator for Power Platform
 description: Learn how the ALM Accelerator for Power Platform helps you to follow ALM practices and enables you to establish source control for your solutions and move them from your development environment to test and production environments using Azure DevOps.
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 04/09/2024
 ms.subservice: guidance
 author: jenschristianschroder
 ms.author: jeschro
 ms.reviewer: sericks
 ms.custom: bap-template
+contributors:
+- mikefactorial
 ---
 
 # ALM Accelerator for Power Platform
@@ -72,27 +74,27 @@ There's no one right answer for every organization. The following table and the 
 | :---: | :---: | :---: | :---: |
 | *IT/Developer involvement* | Not required | Up-front setup | Required for every project |
 | *Source code integration* | No, but planned | Yes | Yes |
-| *Maker requires elevated privileges in target environment* | Yes | No, service principal is supported | No, service principal is supported |
-| *Quality control* | Minimal | Best practices | Unlimited |
+| *Maker requires elevated privileges in target environment* | No, service principal is supported | No, service principal is supported | No, service principal is supported |
+| *Quality control* | Customizable with extensions | Customizable with extensions | Unlimited |
 | *Democratized for citizen development* | Yes | Yes | No |
-| *In-product experience* | Yes |  Canvas app provided, but not in the maker experience | No |
-| *Support* | Microsoft-supported | Power CAT support through GitHub issues and discussions | Microsoft-supported and GitHub issues |
-| *Customization* | Yes | Yes | Yes |
-| *Code-first development* | No | Yes | Yes |
+| *In-product experience* | Yes |  Canvas app provided, but no in-maker experience | No |
+| *Support* | Microsoft-supported | Power CAT-supported through GitHub issues | Microsoft-supported and GitHub issues |
+| *Customization and extensibility* | Yes | Yes | Yes |
+| *Code-first development* | No, but planned | Yes | Yes |
 
 ### Pipelines for Power Platform (Pipelines)
 
 Pipelines are intended to simplify ALM for makers. They're the strategic, in-product experience for maker-initiated ALM in Power Platform. Pipelines provide similar capabilities to the manual export and import functionality available in Power Platform for moving solutions from one environment to another.
 
-Users need to have elevated permissions to perform these actions. However, service principal support is planned soon to remove the need for those permissions. We also plan to add the ability to introduce pre- and post-deployment customization to allow organizations to layer their business processes on top of Pipelines. However, more advanced customization is limited.
+With service principal support, users don't require elevated permissions to deploy to other environments. Also, pre- and post-deployment customizations allow organizations to layer their business processes on top of Pipelines. This gives organizations control over the approval processes as well as providing the ability to insert custom steps into the deployment pipeline.
 
-Generally, you would choose Pipelines if your organization doesn't need to control your solutions' source code files, doesn't require specific business processes in your ALM process, and wants to get started with ALM quickly.
+Generally, you would choose Pipelines if your organization doesn't need to control your solutions' source code files and wants to get started with ALM quickly.
 
 ### Power Platform Build Tools/GitHub Actions and Power Platform CLI (Build Tools)
 
 Build Tools are intended to give IT administrators and developers the tools to expedite the automation of highly customized ALM. You can address the limitations in Pipelines with Build Tools&mdash;control solution code, enable code-first scenarios, remove the need for makers to have elevated permissions in downstream environments, and include specific organizational and business processes in your ALM process.
 
-Generally, you would choose Build Tools if your organization has DevOps and developer resources available and requires granular control over your ALM processes.
+Generally, you would choose Build Tools if your organization has DevOps or GitHub and developer resources available and requires granular control over your ALM processes.
 
 ### ALM Accelerator for Power Platform (ALM Accelerator)
 

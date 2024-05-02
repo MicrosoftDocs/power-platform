@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/12/2024
+ms.date: 04/17/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -48,11 +48,22 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 |---------|-------------|---------------|
 |AI Builder preview models  | If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](/ai-builder/administer)  | On |
 
+## AI form fill assistance
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
+
 ## AI suggestions for formula columns
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
+
+## AI suggestions for email content
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Turn on generative AI in emails | If **On**, the Copilot icon is displayed in rich text editors for app users to draft and refine email content. More information: [Use Copilot in the email rich text editor](/power-apps/maker/model-driven-apps/use-copilot-email-assist) | Off |
 
 ## Embedded content
 | Setting | Description | Default value |

@@ -75,7 +75,7 @@ The following topics have information that could be helpful to understand the mo
 - [About Microsoft Cloud Japan](about-microsoft-cloud-japan.md)  
 - [About Microsoft Cloud India](about-microsoft-cloud-india.md)  
 
-### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps portals, and marketing before and after the migration: 
+### Do the following steps for Power Apps, Power Automate, Microsoft Copilot Studio, Power Apps portals, and marketing before and after the migration: 
 
 #### For Power Apps and Power Automate: 
 
@@ -113,9 +113,9 @@ After the migration:
 6. Complete all of the import option selections, and then select **Import**.
 7. Repeat these steps until all apps have been imported. 
 
-#### For Power Virtual Agents: 
+#### For Microsoft Copilot Studio: 
 
--	Any Power Virtual Agents chatbots must be manually exported. 
+-	Any Microsoft Copilot Studio chatbots must be manually exported. 
 -	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
 
 Before the migration: 

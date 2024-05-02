@@ -75,3 +75,7 @@ To localize app strings, users must have the **IT Template Admin** security 
     - **String Type**. The type of string you're replacing or filter you can apply. This field is optional
 
 1. Select **Save & Close**.
+
+### Next step
+
+[Get started using the Appointment Booking app](use.md)

@@ -1,18 +1,18 @@
 ---
 title: Formula reference - Pac CLI
 description: Reference information for functions, signals, and enumerations in Pac CLI pac power-fx commands.
-author: snizar007
-ms.topic: reference
+ms.author: marcsc
+author: devkeydet
 ms.reviewer: jdaly
+ms.topic: reference
 ms.date: 3/22/2024
 ms.subservice: power-fx
-ms.author: snizar
 search.audienceType:
   - developer
 contributors:
   - JimDaly
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 
 # Formula reference - Power Platform CLI
@@ -112,6 +112,8 @@ Use these commands to interact with data in Dataverse using a command line or sc
 ## E
 
 **[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
+
+**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in a HTML context.
 
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 
