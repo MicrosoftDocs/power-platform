@@ -189,6 +189,10 @@ No. Dynamics 365 apps can't be installed in a developer environment. You'll see 
 
 If you want to explore Dynamics 365 apps, refer to the app-specific documentation for free trials, or to install them on existing environments.
 
+### Are users automatically added to a developer environment?
+
+No. Users are not automatically added to the developer environment, they need to be added manually.
+
 ## Improvements from the previous Power Apps Community Plan
 
 In May 2021, we extended the capabilities of the Power Apps Community Plan to meet the needs of developers and rebranded it as the **Power Apps Developer Plan**.

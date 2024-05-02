@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 04/23/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -50,11 +50,11 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 - Select **View details** on any recommendation to view its details.
 - Select **View recommendations** to view all recommendations on the **Advisor** page.
 
-:::image type="content" source="media/power-platform-advisor/advisor-card.svg" alt-text="Advisor card on the home page.":::
+:::image type="content" source="media/power-platform-advisor/advisor-recommendations.png" alt-text="Advisor card on the home page.":::
 
 > [!TIP]
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
-> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page in Power Platform admin center.":::
+> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page.":::
 
 ### Inline actions
 
@@ -182,3 +182,10 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 > Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
 >
 > The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+
+### Pending license requests
+
+This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and may result in noncompliant use of premium apps and resources.
+
+> [!IMPORTANT]
+> You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
