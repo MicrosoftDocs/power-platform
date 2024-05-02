@@ -51,6 +51,12 @@ Users or groups assigned to these environment roles aren't automatically given a
 
 Users or security groups can be assigned to either of these two roles by an environment admin by following the steps described in [Configure user security to resources in an environment](database-security.md).
 
+## Early release cycle environments
+
+You can create environments in a subset of regions that get features early, i.e. before any standard release environments get them. 
+The ability to validate your scenarios before business-critical environments are updated is a great way to discover new capabilities and catch any updates that may impact your scenarios. See Create environment to learn how to create early release environments.
+
+
 ## Power Platform environment types
 
 There are multiple types of environments. The type indicates the purpose of the environment and determines its characteristics. The following table summarizes the current types of environments that you might encounter.
