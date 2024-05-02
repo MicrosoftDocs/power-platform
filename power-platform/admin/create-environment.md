@@ -131,6 +131,7 @@ For Dynamics 365 finance and operations apps, you need at least:
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
+   |Get new features early     | Select Yes for early release cycle.        |
    |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Add a Dataverse data store | Select **Yes**. |
@@ -171,6 +172,7 @@ You need 1 GB of available database capacity.
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
+   |Get new features early     | Select Yes for early release cycle.        |
    |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Add a Dataverse data store | Select **No**. |
