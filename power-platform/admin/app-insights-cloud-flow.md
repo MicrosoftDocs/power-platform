@@ -47,13 +47,13 @@ Follow these steps to monitor cloud flow executions.
 
 1. For filtering cloud flow executions to a specific environment, select **Add filter**, and then select **environmentId** from the **Property** field and select your environment.
 
-For more filtering cloud flow executions to a specific flow or a set of flows, you add more filters. To do this, select **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
+    For more filtering cloud flow executions to a specific flow or a set of flows, you add more filters. To do this, select **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
 
-The **Operation Name** field maps to the flow identifier you see from [Power Automate](https://make.powerautomate.com). For example, to find the flow ID of any cloud flow, select the cloud flow from the Power Automate portal and the highlighted part- alphanumeric part that follows the word *flows*.
+    The **Operation Name** field maps to the flow identifier you see from [Power Automate](https://make.powerautomate.com). For example, to find the flow ID of any cloud flow, select the cloud flow from the Power Automate portal and the highlighted part- alphanumeric part that follows the word *flows*.
 
-:::image type="content" source="media/app-insights-cloud-flow/mapping.png" alt-text="Metrics - operation name mapping" border="true":::
+    :::image type="content" source="media/app-insights-cloud-flow/mapping.png" alt-text="Metrics - operation name mapping" border="true":::
 
-You can continue adding more filters as depending on the scenario, pin frequently reviewed scenarios, drill into specific error, or alert directly from the screen
+    You can continue adding more filters as depending on the scenario, pin frequently reviewed scenarios, drill into specific error, or alert directly from the screen
 
 ## Monitor cloud flow triggers and actions
 
@@ -73,7 +73,7 @@ Follow these steps to monitor cloud flow executions.
 
 1. Select **Add filter** and select **Operation Name** from the property filter to specify the names of specific actions or triggers if you want to further distill down. These filters are the same as the display names of triggers and actions of the cloud flow you would see in the Power Automate designer
 
-You can also pin these dashboards as favorites for a quick reference.
+    You can also pin these dashboards as favorites for a quick reference.
 
 ## Create alerts for cloud flow run failures
 
