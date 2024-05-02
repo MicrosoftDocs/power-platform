@@ -668,12 +668,8 @@
                   href: analyze-telemetry.md
                 - name: Overview of integration with Application Insights
                   href: overview-integration-application-insights.md
-                - name: Telemetry events for Power apps (preview)
-                  items:
-                    - name: Telemetry events for model-driven apps
-                      href: telemetry-events-model-driven-apps.md
-                    - name: Telemetry events for Mobile app syncronization and actions
-                      href:  
+                - name: Telemetry events for model-driven apps
+                  href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
                 - name: Export data to Application Insights
