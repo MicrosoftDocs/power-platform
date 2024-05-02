@@ -34,7 +34,7 @@ During the design phase of a workload, it's important to consider how decisions 
 - Customizations in the workload's experience can complicate maintenance efforts and require increased resource utilization for testing.
 - Allocating resources to perform user research and develop prototypes can impact the focus on operational activities.
 
-<!-- ## Experience Optimization tradeoffs with Performance Efficiency
+## Experience Optimization tradeoffs with Performance Efficiency
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description. -->
 
@@ -45,3 +45,4 @@ Explore the tradeoffs for the other pillars.
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)

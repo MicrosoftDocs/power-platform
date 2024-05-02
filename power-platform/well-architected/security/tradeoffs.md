@@ -87,7 +87,6 @@ The Security pillar requires a workload to explicitly verify identities and acti
 - Data classification can make finding and consuming data in the workload more difficult.
 - Security protocols increase the complexity of user interactions and can result in challenges for usability.
 
-<!--
 ## Security tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency and overhead.** A performant workload reduces latency and overhead.
@@ -111,10 +110,10 @@ A misconfiguration or overextension of security controls can impact performance 
 - Failing to exclude key files from file integrity monitors or virus scanners. Neglecting this step can lead to lock contention.
 
 - Web application firewalls performing deep packet inspection for languages or platforms that are irrelevant for the components that are being protected.
--->
 
 ## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)

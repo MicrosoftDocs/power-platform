@@ -60,7 +60,6 @@ During the design phase of a workload, you need to consider how decisions based 
 - Emphasizing rigorous testing can delay the release of experience features that are essential for adoption.
 - Optimizing for reliability can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
 
-<!--
 ## Reliability tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency**. Performance Efficiency requires a system to achieve performance targets for user and data flows.
@@ -78,10 +77,10 @@ During the design phase of a workload, you need to consider how decisions based 
 - Automatic scaling operations aren't instantaneous and therefore can't reliably handle a sudden and dramatic spike in demand that can't be shaped or smoothed. Therefore, over-provisioning via either larger instances or more instances is a critical reliability tactic to account for the lag between demand signal and supply creation. Unused capacity counters the goals of performance efficiency.
 
 - Sometimes a component can't be scaled in reaction to demand, and that demand isn't fully predictable. Using large instances to cover the worst case leads to over-provisioning waste in situations that are outside that use case.
--->
 
 ## See also
 
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)

@@ -66,7 +66,6 @@ Observability platforms ingest data of all types to gain insights into a workloa
 - User experience development that requires significant resources may be deprioritized. This can cause the experience to lack the usability, interactions, and visual design that workload users need.
 - User interface development is often done in faster iterations and ship cycles, which can strain the team's SDLC (software development lifecycle) processes.
 
-<!--
 ## Operational Excellence tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased resource utilization**. The Performance Efficiency pillar recommends the allocation of as much of the available compute and network as possible to the requirements of the workload.
@@ -80,9 +79,10 @@ Observability platforms ingest data of all types to gain insights into a workloa
 - Many deployment models require the use of gateway routing access patterns, which can introduce latency. This latency draws against the performance target budget for the related flows.
 
 - Some cloud design patterns that support "independent change over time" approaches to support the ideals of incremental improvement can introduce latency due to the traversal of additional components. This latency can be introduced by gateways, messaging brokers, or anti-corruption layers.
--->
+
 ## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
