@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Data policies 
+# Data policies for managed environments
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2193887 and 2211178-->
 

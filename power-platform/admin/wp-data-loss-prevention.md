@@ -37,11 +37,11 @@ Custom Connectors allow makers to create their own connectors to integrate with 
 Learn more about [creating and managing custom connectors](/connectors/custom-connectors).
 
 ## Virtual Connectors
-Virtual Connectors are connectors that are shown in data policies for administrators to control, however they are not based on a restful API.  The proliferation of virtual connectors has stemmed from data policies being one of the most popular governance controls in Power Platform, however over time more of these types of "on/off" capabilities will surface as rules within [Environment Groups](power-platform/admin/environment-groups.md).
+Virtual Connectors are connectors that are shown in data policies for administrators to control, however they are not based on a restful API.  The proliferation of virtual connectors has stemmed from data policies being one of the most popular governance controls in Power Platform, however over time more of these types of "on/off" capabilities will surface as rules within [Environment Groups](/power-platform/admin/environment-groups.md).
 
 Several virtual connectors are provided for governing Microsoft Copilot Studio. These connectors facilitate the ability to disable various features of Copilots and chatbots.
 
-Explore Virtual Connectors and their role in [data loss prevention in Microsoft Copilot Studio](microsoft-copilot-studio/admin-data-loss-prevention.md).
+Explore Virtual Connectors and their role in [data loss prevention in Microsoft Copilot Studio](/microsoft-copilot-studio/admin-data-loss-prevention.md).
 
 ## Design-Time Blocking and Runtime Blocking
 Design-Time Blocking involves preventing makers from inadvertently including sensitive data or violating data policies while building an app or workflow. Runtime Blocking, on the other hand, prevents the execution of apps or flows that have already been built if they violate data policies.
