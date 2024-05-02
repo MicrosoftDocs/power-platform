@@ -62,6 +62,7 @@ If you must use one of the below apps or features in an environment where block 
 |Dataflows      | Creation of a new dataflow, republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
 |Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
 | Omnichannel  | Install or upgrade don't work.      |
+|ServiceLevelAgreement  | Activation, deactivation, and editing of service level agreement doesn't work.|
 
 ## FAQ for block unmanaged customizations
 
