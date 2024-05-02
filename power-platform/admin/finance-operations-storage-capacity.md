@@ -106,7 +106,7 @@ Details at the table level aren't available in the initial launch of reporting. 
 
 ### Is there any reporting for file capacity?
 
-File capacity reporting enables the review of your file storage consumption.
+File capacity reporting allows the review of your file storage consumption.
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
