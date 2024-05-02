@@ -12,7 +12,7 @@ contributors:
 
 # Complete a Power Platform Well-Architected assessment
 
-[Power Platform Well-Architected Review](https://aka.ms/powa/assessment) is a self-assessment that can help a workload team examine a workload from the perspective of  Power Platform Well-Architected. It consists of questions that are based on the key recommendations provided in the pillars of Power Platform Well-Architected.
+[Power Platform Well-Architected Review](https://aka.ms/powa/assessment) is a tool that can help a workload team examine a workload from the perspective of Power Platform Well-Architected. It comprises questions that are based on the key recommendations provided in the pillars of Power Platform Well-Architected.
 
 At the end of the assessment, you get recommendations and corresponding links to supporting material that can help you improve your workload's design. You can export these recommendations into a file that you can use to incorporate the recommendations into the operational processes for continuous workload improvement.
 
