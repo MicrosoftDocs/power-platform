@@ -29,29 +29,29 @@ sections:
         url: whats-new.md
         text: What's new      
       - componentType: icon-link
-        icon: book-open
+        icon: topic-architecture
         url: pillars.md
         text: Pillars
-     # - componentType: icon-link
-     #   icon: book-open
-     #   url: workloads.md
-     #   text: Workloads
+      - componentType: icon-link
+        icon: book-open
+        url: workloads.md
+        text: Workloads
      # - componentType: icon-link
      #   icon: book-open
      #   url: service-guides/index.yml
      #   text: Azure offerings
-     # - componentType: icon-link
-     #   icon: topic-learn
-     #   url: /training/modules/azure-well-architected-introduction/
-     #   text: Training    
-     # - componentType: icon-link
-     #   icon: developer-tools
-     #   url: /assessments/azure-architecture-review/
-     #   text: Assessment tool      
       - componentType: icon-link
-        icon: topic-architecture
+        icon: topic-learn
+        url: implementing-recommendations.md
+        text: Implementation    
+      - componentType: icon-link
+        icon: developer-tools
+        url: https://aka.ms/powa/assessment
+        text: Assessment tool      
+      - componentType: icon-link
+        icon: topic-learn
         url: /power-platform/guidance
-        text: Power Platform guidance documentation
+        text: Power Platform prescriptive guidance
       - componentType: icon-link
         icon: topic-learn
         url: /power-platform
