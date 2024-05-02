@@ -214,6 +214,8 @@ If a website isn't currently needed, you can shut it down. When a website is shu
 1. Under **Resources**, select **Power Pages sites**, and select the site.
 1. Select **Site Actions** > **Shut down this site** > **Stop**.
 
+    :::image type="content" source="media/power-platform-advisor/shut-down-site.svg" alt-text="Screenshot showing the action to shut down a site.":::
+
 If you want to start the site again later, select **Site Actions** > **Start this site** > **Start**.
 
 ### Websites don't have Content Delivery Network (CDN) enabled
