@@ -4,7 +4,7 @@ description: Learn to use the finance and operations storage capacity report to 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 05/02/2024
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks 
