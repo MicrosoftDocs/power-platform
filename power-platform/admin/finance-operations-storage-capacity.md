@@ -106,11 +106,11 @@ Details at the table level aren't available in the initial launch of reporting. 
 
 ### Is there any reporting for file capacity?
 
-File capacity reporting is in public preview.
+File capacity reporting enables the review of your file storage consumption.
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
-A new report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 2024.
+A more detailed report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 2024.
 
 ### What happens if my consumption is over the entitled limit?
 
