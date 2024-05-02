@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 05/02/2024
 search.audienceType: 
   - admin
 ---
@@ -149,8 +149,8 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
   </tr>
   <tr>
     <td>3</td>
-    <td></td>
-    <td></td>
+    <td>Admin permanently deletes user​ </td>
+    <td>Hard deleted – user no longer exists in Microsoft Entra ID</td>
     <td>Disabled</td>
     <td>Dataverse admin deletes the user </td>
     <td>Allowed – Delete button is visible</td>
@@ -158,8 +158,8 @@ Users deleted from the [Microsoft 365 admin center](https://admin.microsoft.com/
   </tr>
   <tr>
     <td>4</td>
-    <td></td>
-    <td></td>
+    <td>Admin permanently deletes user​ </td>
+    <td>Hard deleted – user no longer exists in Microsoft Entra ID</td>
     <td>Disabled</td>
     <td>Dataverse admin permanently deletes the user </td>
     <td>Allowed – Permanently Delete button is visible​</td>
