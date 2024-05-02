@@ -48,6 +48,9 @@ Enabling _default environment routing_ might give you more environments to manag
    1. Add a brief description of the group in the **Description** field.
    1. Select **Create**.
 
+> [!NOTE]
+> If you prefer to operate outside of the Power Platform admin center, the [Power Platform for Admins V2 (Preview) connector](https://learn.microsoft.com/en-us/connectors/powerplatformadminv2/) offers an alternative solution. It enables the creation and deletion of environment groups and the ability to add or remove environments from these environment groups, facilitating opportunities for automation.
+
 ## Configure the rules for your environment group
 
 After you create the environment group, Power Platform tenant administrators can immediately add environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities offered when upgrading an _individual_ environment to a [Managed Environment](managed-environment-overview.md).
@@ -128,6 +131,8 @@ As you experiment with environment groups, you might have leftover groups that y
 
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
+
+
 
 ## See also
 
