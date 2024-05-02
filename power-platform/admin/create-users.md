@@ -105,7 +105,7 @@ The following table shows the fields that are managed in the **Users** section o
 > [!NOTE]
 > Custom fields are **never** synchronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
 > 
-> All the fields are always synchronized, except fields explicitly mentioned above as not automatically updated (custom fields, Full Name, Primary Email, and Internal Email Address after a customer update).
+> All the fields are **always** synchronized, except fields explicitly mentioned as not automatically updated (custom fields, Full Name, Primary Email, and Internal Email Address after a customer update).
 
 The following image shows Microsoft 365 user contact fields.
 
