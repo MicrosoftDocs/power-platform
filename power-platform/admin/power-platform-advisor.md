@@ -200,15 +200,11 @@ This recommendation lists trial websites that are expiring in the next seven day
 
 This recommendation lists websites that didn't receive any traffic in the last 30 days. This means there are some websites in your tenant no users visited in the past month. These websites might be outdated, irrelevant, or redundant. Shutting down the site makes the site unreachable to end users.
 
-To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types.
+To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center, select **Resources**, > **Power Pages sites**> **Analytics** to get more insights into the traffic.
 
-You can also visit the Power Pages admin center, select Resources, > Power Pages sites > Analytics to get more insights into the traffic. Learn more
+If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
 
-You can select the respective website from the list and take one of the following actions:
-
-#### Shut down the website
-
-If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them. To shut down a website:
+To shut down a website:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Under **Resources**, select **Power Pages sites**, and select the site.
