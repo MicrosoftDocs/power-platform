@@ -1,5 +1,5 @@
 ---
-title: Complete an Power Platform Well-Architected assessment
+title: Complete a Power Platform Well-Architected assessment
 description: Learn about Power Platform Well-Architected recommendations that can help you continuously improve your workload.
 author: robstand
 ms.author: rstand
@@ -18,7 +18,7 @@ At the end of the assessment, you get recommendations and corresponding links to
 
 ## When to take the assessment
 
-For greenfield workloads, we recommend that you perform the assessment during the initial design process, entering the proposed decisions. The guidance then acts as a baseline and starts a feedback loop that you can use to refine the workload design as you make additional design decisions and periodically capture them in additional assessment milestones.
+For greenfield workloads, we recommend that you perform the assessment during the initial design process, entering the proposed decisions. The guidance then acts as a baseline and starts a feedback loop that you can use to refine the workload design as you make more design decisions and periodically capture them in more assessment milestones.
 
 Brownfield workloads should be examined as well, as part of the continuous improvement cycle of the workload. Set a cadence, for example, every three months, and use milestones to track how the workload design can continue to improve.
 
@@ -30,7 +30,7 @@ Assess your workload by completing the assessment. The recommendations for your 
 
 ## Prioritize and implement recommendations
 
-Workload owners and key stakeholders should prioritize the recommendations in accordance with the team's standard work prioritization process, factoring in the applicability of the recommendations and any tradeoffs associated with a specific design decision. For example, recommendations might be assigned to a specific owner, or a recommendation might be postponed or dismissed. Like all planned work, the recommendation should be tracked until it's resolved, as part of the workload's SDLC.
+Workload owners and key stakeholders should prioritize the recommendations in accordance with the team's standard work prioritization process. Factor in the applicability of the recommendations and any tradeoffs associated with a specific design decision. For example, recommendations might be assigned to a specific owner, or a recommendation might be postponed or dismissed. Like all planned work, the recommendation should be tracked until it is resolved, as part of the workload's SDLC.
 
 ## Monitor improvements
 
