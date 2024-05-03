@@ -106,6 +106,8 @@ The following table shows the fields that are managed in the **Users** section o
 > Custom fields are **never** synchronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
 > 
 > All the fields are **always** synchronized, except fields explicitly mentioned as not automatically updated (custom fields, Full Name, Primary Email, and Internal Email Address after a customer update).
+>
+> The system adds a "#" as the First Name if the First Name was originally blank.
 
 The following image shows Microsoft 365 user contact fields.
 
@@ -348,7 +350,7 @@ You can use server-to-server (S2S) authentication to securely and seamlessly com
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
 
 > [!CAUTION]
-> For an application user, the system adds a "#" as the First Name for the Application User you create. This is by design.
+> The system adds a "#" as the First Name for the Application User you create. This is by design.
 
 For step-by-step information about creating an application user, see [Create an application user](manage-application-users.md#create-an-application-user).
 
