@@ -178,7 +178,7 @@ To disable a user account in an environment that has a Dataverse database, you c
 2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
-5. Under **Members**, select **View all and manage members**
+5. Under **Members**, select **View all and manage members**.
 6. Select the users in the list to remove them, and then select **Save**.
 
 #### To remove a license from a user
@@ -240,8 +240,8 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
    1. Admin users do not require a license. Unlicensed Microsoft Entra admins are enabled in the systems as “Setup user” and have administrative only access mode. 
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
-   4. Non-interactive users do not need a license 
-   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+   4. Non-interactive users do not need a license.
+   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center). 
 
 > [!NOTE]
 > Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
