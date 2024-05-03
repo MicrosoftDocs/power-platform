@@ -21,7 +21,7 @@ In this overview, we will touch on some high level concepts related to Connector
 Connectors at their most basic level are nothing but strongly-typed representations of restful application programming interfaces, also known as APIs.  For example, the Power Platform API provides several operations related to functionality in Power Platform admin center:
 <img src="media/dlp-ppapi-restapi.png" alt="Shows a restful API reference page with optional querystring parameters." /><br/>
 
-When wrapping this API in to a connector, it becomes much easier for makers and citizen developers to utilize in their low code apps, workflows, and chatbots. For example, the Power Platform for Admins V2 connector is the representation of Power Platform API:
+When wrapping this API in to a connector, it becomes much easier for makers and citizen developers to utilize in their low code apps, workflows, and chatbots. For example, the Power Platform for Admins V2 connector is the representation of Power Platform API and we see the 'Get Recommendations' action is simply drag and dropped on to the flow:
 <img src="media/dlp-ppapi-connectorv2.png" alt="Shows the connector on a Power Automate workflow." /><br/>
 
 There are several types of connectors that we will enumerate below, as each has capabilities within data policies.
