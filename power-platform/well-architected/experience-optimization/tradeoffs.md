@@ -36,7 +36,9 @@ During the design phase of a workload, it's important to consider how decisions 
 
 ## Experience Optimization tradeoffs with Performance Efficiency
 
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff summary.** Tradeoff description. -->
+:::image type="icon" source="../_images/trade-off.svg"::: **Decreased performance.** Performance Efficiency prioritizes platform features over customization to achieve efficiency and effectiveness.
+
+- Customizations in the workload's experience can have a negative impact on performance.
 
 ## Related resources
 
