@@ -99,7 +99,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr> 
    <td width="20%"> Type</td>
-   <td width="80%"> Whether connector usage requires a Premium license or is it included in the base/Standard license for Microsoft Power Platform.    </td>
+   <td width="80%"> Whether connector usage requires a Premium license or is it included in the base/Standard license for Power Platform.    </td>
    </tr>
    <tr>
    <td width="20%"> Publisher</td>
@@ -141,7 +141,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Microsoft Power Platform <i>after</i> your data policy is created. More information: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your data policy is created. More information: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
@@ -160,7 +160,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    |**1**|Assign one or more connectors across connector classification groups|
    |**2**|Connector classification group pivot tables|
    |**3**|Search bar to find connectors across properties like **Name**, **Blockable**, **Type**, or **Publisher**|
-   |**4**|Connector classification group that maps any new connectors added by Microsoft Power Platform *after* your data policy is created.|
+   |**4**|Connector classification group that maps any new connectors added by Power Platform *after* your data policy is created.|
    |**5**|Select, multi-select, or bulk-select connectors to move across groups|
    |**6**|Alphabetical sort capability across individual columns|
    |**7**|Action buttons to assign individual connectors across connector classification groups|
@@ -180,7 +180,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    For connectors like SharePoint that are not blockable, the **Block** action isn't available and a warning appears.
 
-6. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Microsoft Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
+6. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
@@ -377,7 +377,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 6. Select **Next** as needed to close the **Edit Policy** process.
 
-The data group you chose will be the default group to automatically classify any new connectors added to Microsoft Power Platform after your policy has been created. 
+The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy has been created. 
 
 ## Use DLP PowerShell commands
 See [data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
