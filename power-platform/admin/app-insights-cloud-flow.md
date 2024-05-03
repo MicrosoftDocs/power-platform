@@ -1,24 +1,24 @@
 ---
-title: Set up Application Insights with Power Automate (preview)
+title: Set up Application Insights with Power Automate 
 description: Learn about how to set up Azure Application Insights with Power Automate to create monitor cloud flows.
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 04/30/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- srpoduri 
 ms.contributors:
 - rakrish
 - Zeffin
 ---
 
-# Set up Application Insights with Power Automate (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Set up Application Insights with Power Automate 
 
 Power Automate telemetry flows into two tables on Application Insights – **Requests** and **Dependencies.** All the downstream alerting and monitoring capabilities we could do on Power Automate data would be within these two tables within Application Insights.
 
@@ -27,11 +27,8 @@ Power Automate telemetry flows into two tables on Application Insights – **Req
 | **Requests**     | Contains *cloud flow runs*                              |
 | **Dependencies** | Contains *cloud flow triggers* and *cloud flow actions* |
 
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - When this feature transitions to General Availability (GA), the feature is planned for Managed Environments only. For this preview only, the Managed Environment restriction doesn't apply.
+> [!NOTE]
+> This feature is turned on and supported for Managed Environments only.
 
 While Application Insights capabilities can be used for comprehensive monitoring of your applications, including custom diagnostics, and performance monitoring, this article focuses on how to use the existing features within Application Insights to create monitoring and alerting capabilities for your automation. To learn about how to open and work with Application Insights dashboard, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 
@@ -50,13 +47,13 @@ Follow these steps to monitor cloud flow executions.
 
 1. For filtering cloud flow executions to a specific environment, select **Add filter**, and then select **environmentId** from the **Property** field and select your environment.
 
-For more filtering cloud flow executions to a specific flow or a set of flows, you add more filters. To do this, select **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
+    For more filtering cloud flow executions to a specific flow or a set of flows, you add more filters. To do this, select **Add filter**, and then select **Operation name** from the property field and select the flow(s) you want to monitor.
 
-The **Operation Name** field maps to the flow identifier you see from [Power Automate](https://make.powerautomate.com). For example, to find the flow ID of any cloud flow, select the cloud flow from the Power Automate portal and the highlighted part- alphanumeric part that follows the word *flows*.
+    The **Operation Name** field maps to the flow identifier you see from [Power Automate](https://make.powerautomate.com). For example, to find the flow ID of any cloud flow, select the cloud flow from the Power Automate portal and the highlighted part- alphanumeric part that follows the word *flows*.
 
-:::image type="content" source="media/app-insights-cloud-flow/mapping.png" alt-text="Metrics - operation name mapping" border="true":::
+    :::image type="content" source="media/app-insights-cloud-flow/mapping.png" alt-text="Metrics - operation name mapping" border="true":::
 
-You can continue adding more filters as depending on the scenario, pin frequently reviewed scenarios, drill into specific error, or alert directly from the screen
+    You can continue adding more filters as depending on the scenario, pin frequently reviewed scenarios, drill into specific error, or alert directly from the screen
 
 ## Monitor cloud flow triggers and actions
 
@@ -76,7 +73,7 @@ Follow these steps to monitor cloud flow executions.
 
 1. Select **Add filter** and select **Operation Name** from the property filter to specify the names of specific actions or triggers if you want to further distill down. These filters are the same as the display names of triggers and actions of the cloud flow you would see in the Power Automate designer
 
-You can also pin these dashboards as favorites for a quick reference.
+    You can also pin these dashboards as favorites for a quick reference.
 
 ## Create alerts for cloud flow run failures
 
