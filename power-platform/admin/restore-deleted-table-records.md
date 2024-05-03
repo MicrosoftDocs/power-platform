@@ -52,8 +52,7 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 ### Some records aren't restored
 
-Some organizations add custom business logic that deletes records related to a record that is deleted. To restore related records deleted by custom business logic, you need to apply the opposite logic on the `Restore` operation to recover the records when you restore the original record that was deleted. For examples, go to
- [CreateMultiple Remarks](/power-apps/developer/data-platform/webapi/reference/createmultiple#remarks) and [GetAuditStorageDetails Remarks](/power-apps/developer/data-platform/webapi/reference/getauditstoragedetails#remarks).
+Some organizations add custom business logic that deletes records related to a record that is deleted. To restore related records deleted by custom business logic, you need to apply the opposite logic on the `Restore` operation to recover the records when you restore the original record that was deleted.
 
 Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
