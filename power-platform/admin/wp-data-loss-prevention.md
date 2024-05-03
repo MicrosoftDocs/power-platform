@@ -18,18 +18,18 @@ Data Loss Prevention (DLP) is a critical aspect of maintaining data security and
 This overview describes some high-level concepts related to connectors, and several important considerations to take in to account when setting up your policies or making policy changes. 
 
 ## Connectors
-Connectors, at their most basic level, are strongly-typed representations of restful, application programming interfaces, also known as APIs.  For example, the Power Platform API provides several operations related to functionality in Power Platform admin center.
+Connectors, at their most basic level, are strongly typed representations of restful, application programming interfaces, also known as APIs.  For example, the Power Platform API provides several operations related to functionality in Power Platform admin center.
 
 :::image type="content" source="media/dlp-ppapi-restapi.png" alt-text="Shows a restful API reference page with optional querystring parameters.":::
 
-When wrapping the Power Platform API in to a connector, it becomes much easier for makers and citizen developers to utilize the API in their low-code apps, workflows, and chatbots. For example, the Power Platform for Admins V2 connector is the representation of the Power Platform API and we see the 'Get Recommendations' action is simply drag and dropped on to the flow:
+When wrapping the Power Platform API in to a connector, it becomes easier for makers and citizen developers to utilize the API in their low-code apps, workflows, and chatbots. For example, the Power Platform for Admins V2 connector is the representation of the Power Platform API and we see the 'Get Recommendations' action is simply drag and dropped on to the flow:
 
 :::image type="content" source="media/dlp-ppapi-connectorv2.png" alt-text="Shows the connector on a Power Automate workflow.":::
 
-There are several types of connectors mentioned below, as each has capabilities within data policies.
+There are several types of connectors mentioned in this article, and each has capabilities within data policies.
 
 ### Certified connectors
-Certified connectors refer to connectors that have undergone rigorous testing and certification processes to ensure they meet Microsoft's standards for security, reliability, and compliance. These connectors provide users with a reliable means of integrating with other Microsoft services as well as external services, all while maintaining data integrity and security.
+Certified connectors refer to connectors that have undergone rigorous testing and certification processes to ensure they meet Microsoft's standards for security, reliability, and compliance. These connectors provide users with a reliable means of integrating with other Microsoft services and external services, all while maintaining data integrity and security.
 
 For more information on certified connectors, see [Certification Submission Guidelines](/connectors/custom-connectors/submit-certification).
 
@@ -49,14 +49,14 @@ Explore virtual connectors and their role in [data loss prevention in Microsoft 
 When a maker is building an app or a flow and needs to connect to data, they can use one of the above connector types.  When a connector is first added to an app, a connection is established using the authentication protocols supported by that particular connector.  These connections represent a saved credential and are stored within the environment that is hosting the app or flow.  For more information about authenticating to connectors, see [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources).
 
 ## Design-time versus runtime
-When an administrator chooses to limit access to either a whole connector or specific actions of a connector, there are impacts both to the maker experience as well as to the execution of previously created apps, flows, and chatbots.
+When an administrator chooses to limit access to either a whole connector or specific actions of a connector, there are impacts both to the maker experience and to the execution of previously created apps, flows, and chatbots.
 
 Maker experiences, often referred to as *design-time* experiences, limit what connectors makers can interact with. If a data policy blocked the use of MSN Weather connector, then a maker won't be able to save their flow or app that utilizes this, and instead receives an error message that the connector has been blocked by policy.  
 
 Experiences where an app is being run or a flow is executing on a predefined schedule, such as every day at 3:00 AM, are often referred to as *runtime* experiences. Following on from the example earlier, the result is that the app or flow provides an error message that the MSN Weather connector has been blocked by policy.
 
 ## Process for policy changes
-As new data policies are created, or when existing policies are updated, there's a specific process that's triggered within the Power Platform ecosystem of services that helps to get those policies enforced across the entire set of resources a customer has in their tenant. This process is outlined below:
+As new data policies are created, or when existing policies are updated, there's a specific process that's triggered within the Power Platform ecosystem of services that helps to get those policies enforced across the entire set of resources a customer has in their tenant. This process involves the following steps.
 
 1. Data policy configuration is saved at the customer management level.
 2. Configurations are cascaded down to each environment in the customer tenant.
@@ -70,7 +70,7 @@ As new data policies are created, or when existing policies are updated, there's
 > Runtime blocking is only possible when blocking a whole connector. For policies that limit specific actions, use business and non-business groupings or use endpoint filtering where the endpoint isn't saved in the connection itself, such as Entra Integrated connections. Runtime enforcement doesn't block execution of apps or flows. This will be solved in the future.
 
 ## Latency considerations
-The time it takes to effectively implement data policies various from customer to customer based on their volume of environments and resources within those enviornments. The more apps, flows, and chatbots a customer has the longer it takes for changes to be in full enforcement. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
+The time it takes to effectively implement data policies various from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for changes to be in full enforcement. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
 
 ### See also
 
