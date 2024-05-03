@@ -148,8 +148,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    You can take the following actions:
 
-   > [!div class="mx-imgBorder"] 
-   > ![Assign connectors actions.](media/dlp-assign-connectors-actions.png "Assign connectors actions") 
+   :::image type="content" source="media/dlp-assign-connectors-actions.png" alt-text="Assign connectors actions.":::
 
    |     |Description  |
    |-----|-------------|
@@ -164,13 +163,11 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
 5. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Assign multiple connectors.](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
+    :::image type="content" source="media/dlp-assign-connectors-multiple.png" alt-text="Assign multiple connectors.":::
 
    The connectors appear in the **Business** data group.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Business data group.](media/dlp-business-data-group.png "Business data group")
+   :::image type="content" source="media/dlp-business-data-group.png" alt-text="Business data group":::
 
    Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
@@ -180,22 +177,19 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    In the upper-right corner, select **Set default group**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Set default group.](media/dlp-edit-default-group.png "Set default group")
+   :::image type="content" source="media/dlp-edit-default-group.png" alt-text="Set default group":::
 
    After you've completed all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
 7. Choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Define scope.](media/dlp-define-scope.png "Define scope")
+   :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope":::
 
    For the purpose of this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
 8. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Add environments.](media/dlp-add-environments2.png "Add environments")
+   :::image type="content" source="media/dlp-add-environments2.png" alt-text="Add environments":::
 
    **Attributes** <br /><br />
 
