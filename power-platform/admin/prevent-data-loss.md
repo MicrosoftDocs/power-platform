@@ -43,10 +43,6 @@ To follow the steps for environment-level policies, you need to have Power Apps 
 > [!NOTE] 
 > If using the **SingleEnvironment** EnvironmentType parameter when using PowerShell to create a data policy, the user account used to create the policy **MUST** have **Environment-level** and **MUST NOT** have **Tenant-level** permissions as described above, or a Bad Request error is returned and the policy isn't created.
 
-## Find and view data policies
-
-To find and view data policies, see [Find and view data policies](prevent-data-loss.md#find-and-view-dlp-policies).
-
 ## The data policy process
 
 To create a data policy, complete the following steps.
