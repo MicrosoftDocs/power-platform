@@ -36,7 +36,7 @@ Frequent small deployments are preferable to infrequent large deployments. Small
 
 ### Health models
 
-Develop a robust health model as part of your observability monitoring platform and reliability strategies. Your health model should provide in-depth visibility into the components and overall health of the workload. Monitor the health metrics closely following a roll out. If, during the rollout, you receive an alert about a health change, investigate the issue immediately and determine the next course of action; for example, roll back the change. If the alert is related to an end user, stop the rollout immediately and investigate to determine the next course of action. If there are no issues reported by end users and all health indicators stay green, the rollout should continue. Be sure to include usage metrics in your health model to help ensure that a lack of user-reported issues and negative health signals aren't hiding an issue. For more information, see [Recommendations for performing failure mode analysis](../reliability/failure-mode-analysis.md).
+Develop a robust health model as part of your observability monitoring platform and reliability strategies. Your health model should provide in-depth visibility into the components and overall health of the workload. Monitor the health metrics closely following a rollout. If, during the rollout, you receive an alert about a health change, investigate the issue immediately, and determine the next course of action; for example, roll back the change. If the alert is related to an end user, stop the rollout immediately and investigate to determine the next course of action. If there are no issues reported by end users and all health indicators stay green, the rollout should continue. Be sure to include usage metrics in your health model to help ensure that a lack of user-reported issues and negative health signals aren't hiding an issue. For more information, see [Recommendations for performing failure mode analysis](../reliability/failure-mode-analysis.md).
 
 ### Issue detection
 
@@ -90,7 +90,7 @@ Building and maintaining safe deployment practices is complex. Your success in f
 
 [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open-source tool that consists of a set of applications, scripts, and pipelines designed to automate the continuous integration/continuous delivery process.
 
-[Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
+[Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
 [Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) store the parameter keys and values, which then serve as input to other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
