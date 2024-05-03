@@ -217,7 +217,7 @@ For users to have access to applications and data in an environment, at a minimu
 
 3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest&preserve-view=true) to add or update users in Dataverse on demand. 
 
-4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
+4. Administrators can use the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ## Categories of users not added automatically in Dataverse 
 
@@ -265,7 +265,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
 1. Select **Enabled Users**, and then open a user from the list.  
-1. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+1. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
 1. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Read-Write**.  
 1. Select the **Save** icon.
 
@@ -273,7 +273,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
 
-You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
+You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
 
 > [!NOTE]
 > Any admin user with the Global admin, Power Platform admin, or Dynamics 365 Service admin role will receive the **Administrative** access mode as long as there are no user licenses assigned. This is true regardless of enabling app-passes or pay-as-you-go use at the tenant level.
@@ -299,7 +299,7 @@ You need to have the System Administrator security role or equivalent permission
   
 7. Select **Enabled Users**, and then open a user from the list.  
 
-8. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+8. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
   
 9. In the user form, scroll down under **Administration** to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Administrative**.  
 
@@ -317,7 +317,7 @@ You need to have the System Administrator security role or equivalent permission
 
 The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of a user account. It's used for programmatic access to and from customer engagement apps between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from customer engagement apps to ERP&mdash;authenticate and access customer engagement apps without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
-You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
+You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
   
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
@@ -327,7 +327,7 @@ You need to have the System Administrator security role or equivalent permission
   
 3. Select **Enabled Users**, and then open a user from the list.  
 
-4. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+4. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
 5. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
   
    You then need to remove the license from the account.  
@@ -448,10 +448,10 @@ The following table shows the fields that are populated on the user form (user r
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
 
 ### Are all users in Microsoft Entra being added to Dataverse? 
-Users from Microsoft Entra are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
+Users from Microsoft Entra are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”.
 
 ### How can the admin increase the performance of adding users in Dataverse? 
-Assigning a Microsoft Entra security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
+Assigning a Microsoft Entra security group to the environment is a best practice in general. It can also result in a performance increase when adding users that are part of the security group to Dataverse. 
 
 
 
