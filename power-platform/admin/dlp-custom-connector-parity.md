@@ -2,7 +2,7 @@
 title: "Custom connector parity | MicrosoftDocs"
 description: About allowing makers to create and share custom connectors.
 ms.topic: conceptual
-ms.date: 04/11/2022
+ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -19,7 +19,7 @@ search.audienceType:
 
 Power Platform allows makers to create and share [custom connectors](/connectors/custom-connectors/). You can manage custom connectors for tenant and environment level data loss prevention (DLP) policies. Specifically:
 
-1. Environment admins can use the Power Platform admin center to classify individual custom connectors by name for environment-level data policies.
+1. Environment admins can use the Power Platform admin center to classify individual, custom connectors by name for environment-level data policies.
 2. Tenant admins can use the Power Platform admin center and PowerShell to classify custom connector by their Host URL endpoints using a pattern matching construct for tenant-level data policies.
 
 > [!NOTE]
@@ -29,17 +29,17 @@ Power Platform allows makers to create and share [custom connectors](/connectors
 
 ### Environment-level data policies 
 
-Environment admins can now find all the custom connectors in their environments alongside pre-built connectors on the **Connectors** page in **Data Policies**. Similar to pre-built connectors, you can classify custom connectors into **Blocked**, **Business**, or **Non-Business** categories. Custom connectors that aren't explicitly classified will be put under the default group (or **Non-Business**, if no default group setting is explicitly chosen by admins). 
+Environment admins can find all the custom connectors in their environments, alongside pre-built connectors, on the **Connectors** page in **Data Policies**. Similar to pre-built connectors, you can classify custom connectors into **Blocked**, **Business**, or **Non-Business** categories. Custom connectors that aren't explicitly classified are put under the default group (or **Non-Business**, if no default group setting is explicitly chosen by admins). 
 
-:::image type="content" source="media/dlp-environment-level-connector.png" alt-text="Environment admins can now see all custom connectors in their environments alongside of pre-built connectors on the **Connectors** page in data policies.":::
+:::image type="content" source="media/dlp-environment-level-connector.png" alt-text="Environment admins can see all custom connectors in their environments, alongside pre-built connectors, on the **Connectors** page in data policies.":::
 
-You can also use data policy PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
+You can use data policy, PowerShell commands to set custom connectors into **Business**, **Non-Business**, and **Blocked** groups. More information: [Data loss prevention (DLP) policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands)
 
 ### Tenant-level data policies 
 
-The Power Platform admin center also has support for tenant admins to classify custom connectors by their Host URL endpoints by using a pattern-matching construct for tenant-level data policies. Because the scope of custom connectors is environment-specific, these connectors won't show up on the **Connectors** page for you to classify. Instead, you'll see a new page in **Data Policies** named **Custom connectors**, which you can use to specify an ordered list of Allow and Deny URL patterns for custom connectors.  
+The Power Platform admin center has support for tenant admins to classify custom connectors by their Host URL endpoints by using a pattern-matching construct for tenant-level data policies. Because the scope of custom connectors is environment-specific, these connectors won't show up on the **Connectors** page for you to classify. Instead, you see a new page in **Data Policies** named **Custom connectors**, which you can use to specify an ordered list of **Allow** and **Deny** URL patterns for custom connectors.  
 
-The rule for the wildcard character (`*`) will always be the last entry in the list, which applies to all custom connectors. Admins can tag the `*` pattern to **Blocked**, **Business**, **Non-business**, or **Ignore**. By default, the pattern is set as **Ignore** for new data policies. 
+The rule for the wildcard character (*) is that it's always the last entry in the list, which applies to all custom connectors. Admins can tag the `*` pattern to **Blocked**, **Business**, **Non-business**, or **Ignore**. By default, the pattern is set as **Ignore** for new data policies. 
 
 **Ignore** ignores DLP classification for all connectors in this tenant-level policy, and defers evaluation of a pattern to other environments or tenant-level policies to attribute them into the **Business**, **Non-Business**, or **Blocked** grouping as appropriate. If no specific rule exists for the custom connectors, an **Ignore \*** rule will allow custom connectors to be used with both **Business** and **Non-Business** connector groupings. Except for the last entry in the list, **Ignore** as an action isn't supported for any other URL pattern added to the custom connector pattern rules. 
 
@@ -49,7 +49,7 @@ You can further add new rules by selecting **Add connector pattern** on the **Cu
 
 :::image type="content" source="media/dlp-select-add-connector-pattern.png" alt-text="Select Add connector pattern.":::
 
-This opens a side panel where you can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (as the second-to-the-last rule, because `*` will always be the last entry in the list). However, you can update the order while adding a new pattern. 
+This opens a side panel where you can add custom connector URL patterns and classify them. New rules are added to the end of the pattern list (as the second-to-the-last rule, because `*` is always the last entry in the list). However, you can update the order while adding a new pattern. 
 
 :::image type="content" source="media/dlp-add-custom-connector-url-patterns.png" alt-text="Add custom connector URL patterns and classify them.":::
 
