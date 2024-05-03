@@ -23,7 +23,7 @@ The [Power Platform Well-Architected assessment](https://aka.ms/powa/assessment)
 
 ### New articles
 
-- The [Performance Efficiency](./performance-efficiency/) pillar is now available!
+- The [Performance Efficiency](./performance-efficiency/index.yml) pillar is now available!
 - [Well-Architected workloads](workloads.md) helps set context for workload development and improvement with Power Platform Well-Architected.
 - [Implementing recommendations](implementing-recommendations.md) provides guidance on how to use the Power Platform Well-Architected assessment to implement the recommendations for each pillar.
 - [Feedback and issues](feedback-support.md) provides information on how to provide feedback and submit issues for Power Platform Well-Architected.
