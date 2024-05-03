@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/23/2024
+ms.date: 05/03/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -58,7 +58,7 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 
 ### Inline actions
 
-You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [Categories of recommendations](#categories-of-recommendations).
+You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [recommendations](#recommendations).
 
 ### Automated actions
 
@@ -69,6 +69,10 @@ While building cloud flows using the connector, you can get Power Platform Advis
 - **Get Recommendations**: Returns all the valid recommendations in your tenant.
 - **Get Recommendation Resources**: Returns all the resources for a specific recommendation.
 - **Execute Recommendation Action**: Executes a specific action for a specific resource listed in a recommendation.
+
+### Export recommendations
+
+The recommendation data shown in the Power Platform Advisor can be exported using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. You can create a cloud flow (or a scheduled cloud flow) to get the recommendation resources for each of the below mentioned recommendations and export them to an Excel file or to an email using the Excel Online or Office 365 Outlook connectors.
 
 ### Share recommendations
 
@@ -95,7 +99,7 @@ To get the summary card, admins should install the **Power Apps** app in Teams.
 
 Once installed, admins can view the summary cards in their Teams chats.
 
-## Categories of recommendations
+## Recommendations
 
 At this time, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
 
@@ -131,10 +135,6 @@ With multiple co-owners of an app, admins can promote one of the co-owners to ow
    If you select multiple apps, Power Platform Advisor displays any shared co-owners for the selected apps.
 
 1. Select **Assign app** to promote the co-owner to owner for all selected apps.
-
-### Unused apps in the last 60 days
-
-This recommendation lists unused apps in all Managed Environments within your Power Platform tenant from the last 60 days.
 
 ### Apps that aren't used in last 60 days
 
@@ -179,9 +179,8 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means the app was both developed and used in the same environment.
 
 > [!IMPORTANT]
-> Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
->
-> The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+> - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM best practices could cause a single change to break the app for several users with no easy way to recover.
+> - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
 
 ### Pending license requests
 
@@ -189,3 +188,11 @@ This recommendation lists the number of pending license requests in your tenant.
 
 > [!IMPORTANT]
 > You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
+
+### High-value apps in default environment
+
+This recommendation lists the apps that are potentially high value (used by over 100 users each month) and is currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities (such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md) to protect these apps. Alternatively, you can make the default environment to be a [Managed Environment](managed-environment-overview.md) to leverage the premium security and governance capabilities for all the resources.
+
+> [!IMPORTANT]
+> - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
+> - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
