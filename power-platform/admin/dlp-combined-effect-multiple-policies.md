@@ -4,7 +4,7 @@ description: Examples of the combined effect of multiple data policies.
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 5/03/2024
+ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
