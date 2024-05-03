@@ -39,7 +39,7 @@ To follow the steps for environment-level policies, you need to have Power Apps 
 
 ## Find and view DLP policies
 
-To find and view DLP policies, see [Find and view DLP policies](prevent-data-loss.md#find-and-view-dlp-policies).
+To find and view DLP policies, see [Find and view data policies](prevent-data-loss.md#find-and-view-data-policies).
 
 ## The DLP policy process
 
