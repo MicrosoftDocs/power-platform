@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Feedback and support
+# Feedback & support
 
 We welcome and highly value your feedback on Power Platform Well-Architected. You can provide feedback for specific articles in the *Feedback* section of the article for which you want to share your feedback.
 
