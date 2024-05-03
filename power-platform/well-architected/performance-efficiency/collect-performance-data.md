@@ -115,7 +115,7 @@ Application Insights allows you to choose **Server** and **Browser** data views.
 
 **Collecting Azure resource performance data:** Most Azure services generate platform logs and metrics that provide diagnostic and auditing information. By enabling diagnostic settings, you can specify the platform logs and metrics to collect and store.For correlation purposes, enable diagnostics for all supported services and send the logs to the same destination as your application logs.
 
-**Collecting database performance** **data:** [Microsoft Dataverse integrates with Application Insights](https://learn.microsoft.com/en-us/power-platform/admin/telemetry-events-dataverse). The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. To be notified of issues, set up alerts based on performance thresholds.
+**Collecting database performance** **data:** [Microsoft Dataverse integrates with Application Insights](/power-platform/admin/telemetry-events-dataverse). The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. To be notified of issues, set up alerts based on performance thresholds.
 
 **Validating and analyzing performance data:** Within Azure Monitor, you can use Azure Monitor Logs to collect, analyze, and visualize log data from your applications and systems. By aggregating logs, you can cross-query events and gain insights into the performance of your application. For more information, see [Azure Monitor Logs cost calculations and options](/azure/azure-monitor/logs/cost-logs)** and [Pricing for Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/).
 

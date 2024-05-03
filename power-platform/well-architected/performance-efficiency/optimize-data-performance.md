@@ -156,7 +156,7 @@ Application Insights collects usage and performance data. You can use Log Analyt
 
 **Optimize database queries and index performance**: Use the query performance insight feature of Azure SQL Database to optimize queries, tables, and databases. You can use this feature to identify and troubleshoot query performance issues.
 
-For relational databases, you should follow the [index design guidelines](azure/architecture/best-practices/data-partitioning), [SQL Server index guidance](/sql/relational-databases/indexes/indexes), and [Azure Cosmos DB index guidance](/azure/azure-sql/database/sql-insights-overview). Use SQL Database to perform [automatic tuning](/azure/azure-sql/database/automatic-tuning-overview) for queries to improve their performance.
+For relational databases, you should follow the [index design guidelines](/azure/architecture/best-practices/data-partitioning), [SQL Server index guidance](/sql/relational-databases/indexes/indexes), and [Azure Cosmos DB index guidance](/azure/azure-sql/database/sql-insights-overview). Use SQL Database to perform [automatic tuning](/azure/azure-sql/database/automatic-tuning-overview) for queries to improve their performance.
 
 In SQL databases, you should regularly [reorganize or rebuild indexes](/purview/governance-solutions-overview). Identify slow queries and tune them to improve performance. Many database engines have query-tuning features. For more information, see [Best practices for query performance](/azure/architecture/guide/technology-choices/data-store-decision-tree).
 
