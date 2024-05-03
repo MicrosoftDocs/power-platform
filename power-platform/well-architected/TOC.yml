@@ -125,6 +125,28 @@
           href: ./performance-efficiency/checklist.md
         - name: Tradeoffs
           href: ./performance-efficiency/tradeoffs.md
+        - name: Recommendations
+          items:
+            - name: PE:01 Performance targets
+              href: ./performance-efficiency/performance-targets.md
+            - name: PE:02 Performance planning
+              href: ./performance-efficiency/performance-planning.md
+            - name: PE:03 Selecting services
+              href: ./performance-efficiency/select-services.md
+            - name: PE:04 Metrics and logs
+              href: ./performance-efficiency/collect-performance-data.md
+            - name: PE:05 Performance Testing
+              href: ./performance-efficiency/performance-test.md
+            - name: PE:06 Code and business logic
+              href: ./performance-efficiency/optimize-code.md
+            - name: PE:07 Critical flows
+              href: ./performance-efficiency/prioritize-critical-flows.md
+            - name: PE:08 Data Performance 
+              href: ./performance-efficiency/optimize-data-performance.md
+            - name: PE:09 Live-issues responses
+              href: ./performance-efficiency/respond-live-performance-issues.md
+            - name: PE:10 Continuous performance Optimization
+              href: ./performance-efficiency/continuous-performance-optimize.md
       - name: Experience Optimization
         items:
         - name: Quick links
