@@ -19,7 +19,7 @@ contributors:
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. 
 
 ## Create a user account  
- When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. 
+ When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You can let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. 
 
 For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).  
   
@@ -38,7 +38,7 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 ## User types
 
 ### Regular users
-These are the regular synchronized users from Microsoft Entra ID.
+These users are the regular synchronized users from Microsoft Entra ID.
 
 ### Application users
 Identified by the presence of ApplicationId attribute in the system user record. To check the Microsoft Entra application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
@@ -55,13 +55,13 @@ See [System and application users](system-application-users.md).
 - Not synchronized with Microsoft Entra ID, and created by Dataverse out of the box.
 - Placeholder user record for all of the internal Microsoft support users. 
 - Key identifiers: 
-  - UPN value is crmoln@microsoft.com.
+  - UPN (User Principal Name) value is crmoln@microsoft.com.
   - Access mode value is 3.
-- All Microsoft support users will be mapped to this well-known record at runtime.
+- All Microsoft support users are mapped to this well-known record at runtime.
 
 ### Delegated administrator
 
-See the following: <br />
+See the following topics: <br />
 [For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
 [System and application users](system-application-users.md)
 
@@ -70,7 +70,7 @@ See the following: <br />
 - Key identifiers: 
   - UPN value is crmoln2@microsoft.com. 
   - Access mode value is 5. 
-- All the delegated admin partner users will be mapped to this well-known record at runtime. 
+- All the delegated admin partner users are mapped to this well-known record at runtime. 
 
 ## User profile information
 
