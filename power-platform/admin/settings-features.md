@@ -226,4 +226,10 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Automatically assign permission to Power BI workspaces | If **On**, synchronization will take place between pre-defined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles will be assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
+## Recycle Bin (preview)
+
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
+|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
 
