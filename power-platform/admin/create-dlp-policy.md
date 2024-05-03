@@ -55,13 +55,13 @@ These are covered in the next section.
 
 ## Walkthrough: Create a DLP policy
 
-In this example walkthrough, we'll create a tenant-level DLP policy. We'll add SharePoint and Salesforce to the **Business** data group of a DLP policy. We'll also add Facebook and Twitter to the **Blocked** data group. We'll leave the remaining connectors in the **Non-Business** data group. We'll then exclude test environments from the scope of this policy and apply the policy to the remaining environments, such as default and production environments in the tenant.
+In this example walkthrough, we create a tenant-level DLP policy. We add SharePoint and Salesforce to the **Business** data group of a DLP policy. We add Facebook and Twitter to the **Blocked** data group. We leave the remaining connectors in the **Non-Business** data group. We then exclude test environments from the scope of this policy and apply the policy to the remaining environments, such as default and production environments in the tenant.
 
 After this policy is saved, any Power Apps or Power Automate maker who is part of the DLP policy's environment can create an app or a flow that shares data between SharePoint or Salesforce. Any Power Apps or Power Automate resource that includes an existing connection with a connector in the **Non-business** data group won't be allowed to establish connections with SharePoint or Salesforce connectors, and vice versa. Also, these makers won't be able to add Facebook or Twitter connectors to any Power Apps or Power Automate resource.
 
 1. In Power Platform admin center, select **Policies** > **Data policies** > **New policy**.
 
-   If no policies exist in the tenant, you'll see the following page.
+   If no policies exist in the tenant, you see the following page.
 
    > [!div class="mx-imgBorder"] 
    > ![No policies view.](media/dlp-view-no-policies.png "No policies view")
@@ -162,14 +162,14 @@ After this policy is saved, any Power Apps or Power Automate maker who is part o
    > [!div class="mx-imgBorder"] 
    > ![Assign multiple connectors.](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
 
-   The connectors will appear in the **Business** data group.
+   The connectors appear in the **Business** data group.
 
    > [!div class="mx-imgBorder"] 
    > ![Business data group.](media/dlp-business-data-group.png "Business data group")
 
    Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
-   For connectors like SharePoint that are not blockable, the **Block** action will be grayed out and a warning will appear.
+   For connectors like SharePoint that are not blockable, the **Block** action is grayed out and a warning appears.
 
 5. Review and change the default group setting for new connectors, if you need to. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Microsoft Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the DLP policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable will be mapped to **Blocked**, as expected. However, any new connectors that are unblockable will be mapped to **Non-Business** because by design they can't be blocked. 
 
