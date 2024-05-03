@@ -34,7 +34,7 @@ Tenant-level policies can be defined to include or exclude specific environments
 - Microsoft Power Platform admin permissions
 - Microsoft 365 Global admin permissions
 
-We refer to these roles throughout this article as *tenant admins*. More information: [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)
+We refer to these roles throughout this article as *tenant admins*. Learn more: [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)
 
 ### Environment-level policies
 
@@ -137,7 +137,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    <tr>
    <td width="20%"> Set default group </td>
-   <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your data policy is created. More information: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
+   <td width="80%"> The group that maps any new connectors added by Power Platform <i>after</i> your data policy is created. Learn more: <a href="dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked">Default data group for new connectors</a>      </td>
    </tr>
    <tr>
    <td width="20%"> Search Connectors </td>
@@ -325,7 +325,7 @@ Because no data policy has been applied to test environments, apps and flows can
    > [!div class="mx-imgBorder"] 
    > ![Edit data policy review.](media/dlp-edit-policy-review.png "Edit data policy review")
 
-4. (Optional) If necessary, consider enforcing data policies on connections. More information: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
+4. (Optional) If necessary, consider enforcing data policies on connections. Learn more: [Enforce data policy for violating connections](powerapps-powershell.md#enforce-dlp-policy-for-violating-connections---environment)
 
    > [!NOTE]
    >  Enforcing data policies will disable existing connections that violate any data policies and enable any previously disabled connections that no longer violate any data policies.
@@ -363,7 +363,7 @@ Because no data policy has been applied to test environments, apps and flows can
    > [!div class="mx-imgBorder"] 
    > ![Set default group.](media/dlp-edit-default-group.png "Set default group")
 
-1. Choose a default group, and then select **Apply**. More information: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
+1. Choose a default group, and then select **Apply**. Learn more: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
 
 1. Select **Next** as needed to close the **Edit Policy** process.
 
