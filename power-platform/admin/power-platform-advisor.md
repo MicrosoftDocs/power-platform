@@ -192,13 +192,14 @@ This recommendation lists the number of pending license requests in your tenant.
 > [!IMPORTANT]
 > You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
 
-### Websites are expiring in the next seven days
+### Websites are expiring in the next 7 days
 
 This recommendation lists trial websites that are expiring in the next seven days. Review and [convert the websites to production](/power-pages/admin/convert-site) as needed.
 
 ### Websites didn't receive any traffic in the last 30 days
 
-This recommendation lists websites that didn't receive any traffic in the last 30 days. This means there are some websites in your tenant no users visited in the past month. These websites might be outdated, irrelevant, or redundant.
+This recommendation lists websites that didn't receive any traffic in the last 30 days. This means there are some websites
+in your tenant that didn't have any visitors in the past month. These websites might be outdated, irrelevant, or redundant.
 
 To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center, select **Resources**, > **Power Pages sites**> **Analytics** to get more insights into the traffic.
 
@@ -218,6 +219,6 @@ If you want to start the site again later, select **Site Actions** > **Start thi
 
 This recommendation lists production websites that don't have Content Delivery Network (CDN) enabled. Review the websites and [enable Content Delivery Network](/power-pages/configure/configure-cdn) where needed.
 
-### Websites have Web Application Firewall (WAF) disabled
+### Websites don't have Web Application Firewall (WAF) enabled
 
 This recommendation lists production websites that have Web Application Firewall (WAF) disabled. Review the websites and [enable Web Application Firewall](/power-pages/security/configure-web-application-firewall) where needed.
