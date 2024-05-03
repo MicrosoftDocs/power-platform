@@ -375,7 +375,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy has been created. 
 
-## Use DLP PowerShell commands
+## Use PowerShell commands
 See [data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands).
 
 ### See also
