@@ -139,10 +139,10 @@ Two solutions are installed in your environment, **Employee Experience Base** an
 
     - Managed:
       - [mpa_EmployeeExperienceBase_managed.zip](https://aka.ms/EEBaseManagedSolution)
-      - [mpa_ExpenseReimbursement_managed.zip](https://aka.ms/OnboardingBuddyManagedSolution)
+      - [mpa_ExpenseReimbursement_managed.zip](https://aka.ms/ExpenseReimbursementManagedSolution)
     - Unmanaged:
       - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
-      - [mpa_ExpenseReimbursement.zip](https://aka.ms/ExpenseReimbursementUnmanagedSolution)
+      - [mpa_ExpenseReimbursement.zip](https://aka.ms/ExpenseReimbursementUnManagedSolution)
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 

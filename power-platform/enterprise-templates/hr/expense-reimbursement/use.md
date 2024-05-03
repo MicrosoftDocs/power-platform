@@ -69,6 +69,28 @@ On the _My requests_ screen, select the _number_ of the reimbursement request yo
 
 :::image type="content" source="media/use/exre-underreview.png" alt-text="Screenshot of the Reimbursement Request app's View request screen. It shows the request number, request name, program name, category, subcategory, currency, created-on date and expense details.":::
 
-## Use the Expense Reimbursement Admin app
+## Use the Expense Reimbursement Administrator app
 
-As an expense reimbursement program manager, you can access the Expense Reimbursement Admin model-driven app to review requests.
+As an expense reimbursement program manager, you can access the Expense Reimbursement Administrator model-driven app to review and process requests.
+
+### Process expense requests
+
+In the Expense Reimbursement Administrator app, take these steps to view expense reimbursement request details and process the requests:
+
+1. Select **Requests** on the left pane to view a list of all reimbursement requests.
+1. Select a _request number link_ to view more details about a specific request. On this page many links, such as the request's receipt, are available to select and review.
+
+    :::image type="content" source="media/use/exre-admin-view.png" alt-text="Screenshot of the Reimbursement Request Administrator app's request number detail screen. It shows the request number and expense details to a program manager.":::
+
+1. Select **Review** to mark the approval status and make a comment about the status of the expense reimbursement request.
+1. Select **Payment** to record the payment status of the expense reimbursement request.
+1. Select **Complete** to record the date the expense reimbursement request process is complete.
+1. Select **Save** or **Save & Close** after you make updates.
+
+### View the dashboard
+
+The Expense Reimbursement Administrator model-driven app provides a dashboard viewing experience to help you easily manage the expense reimbursement program.
+
+:::image type="content" source="media/use/exre-admin-dashboard.png" alt-text="Screenshot of the Reimbursement Request Administrator app's dashboard screen. It shows many different details to the program manager.":::
+
+You can view reimbursement requests by date and status. You can also see the dollar amounts by programs and program categories to help you track expenses.
