@@ -32,37 +32,6 @@ During the design phase of a workload, it's important to consider how decisions 
 - Performance testing in active environments carries the risk of causing malfunctions due to the test actions or configurations.
 - Workloads should be instrumented with an application performance monitoring (APM) system that enables teams to learn from active environments. The APM tooling is installed and configured in application code or in the hosting environment. Improper use, exceeding limitations, or misconfiguration of the tool can compromise its functionality and maintenance, potentially undermining reliability.
 
-## Performance Efficiency tradeoffs with Operational Excellence
-
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduced observability.** Monitoring is necessary to provide a workload with meaningful alerting and help ensure successful incident response.
-
-- Reducing log and metric volume to reduce the processing time spent on collecting telemetry instead of other tasks reduces the overall observability of the system. Some examples of the resulting reduced observability include:
-
-    - It limits the data points that are used to build meaningful alerts.
-    - It leads to gaps in coverage for incident response activities.
-    - It limits observability in security-sensitive or compliance-sensitive interactions and boundaries.
-
-- When performance design patterns are implemented, the complexity of the workload often increases. Components are added to critical flows. The workload monitoring strategy and performance monitoring must include those components. When a flow spans multiple components or application boundaries, the complexity of monitoring the performance of that flow increases. Flow performance needs to be correlated across all the interconnected components.
-
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased complexity in operations.** A complex environment has more complex interactions and a higher likelihood of a negative impact from routine, ad hoc, and emergency operations.
-
-- Improving performance efficiency by increasing density elevates the risk in operational tasks. An error in a single process can have a large blast radius.
-
-- As performance design patterns are implemented, they influence operational procedures like backups, key rotations, and recovery strategies. For example, data partitioning and sharding can complicate routine tasks when teams try to ensure that those tasks don't affect data consistency.
-
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Culture stress.** Operational Excellence is rooted in a culture of blamelessness, respect, and continuous improvement.
-
-- Conducting root cause analysis of performance issues identifies deficiencies in processes or implementations that require correction. The team should consider the exercise a learning opportunity. If team members are blamed for issues, morale can be affected.
-- Routine and ad hoc processes can affect workload performance. It's often considered preferable to perform these activities during off-peak hours. However, off-peak hours can be inconvenient or outside of regular hours for the team members who are responsible for or skilled in these tasks.
-
-## Performance Efficiency tradeoffs with Experience Optimization
-
-:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Decreased user engagement.** The Experience Optimization pillar prioritizes more engaging user experiences.
-
-- Optimizing for performance prioritizes using platform features over customizations, which deprioritize custom components that could lead to a more engaging user experience.
-- Optimizing for performance can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
-- User interface development is often done in faster iterations and ship cycles, which can make it harder to enhance performance continuously.
-
 ## Performance Efficiency tradeoffs with Security
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduction of security controls.** Security controls are established across multiple layers, sometimes redundantly, to provide defense in depth.
@@ -88,6 +57,37 @@ Sharing resources is an approach for improving efficiency. It increases density 
 
 - A shared workload identity that violates the principle of least privilege and obscures individual audit trails in access logs.
 - Perimeter security controls, for example network rules, that are reduced to cover all co-located components, giving individual components more access than necessary.
+
+## Performance Efficiency tradeoffs with Operational Excellence
+
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduced observability.** Monitoring is necessary to provide a workload with meaningful alerting and help ensure successful incident response.
+
+- Reducing log and metric volume to reduce the processing time spent on collecting telemetry instead of other tasks reduces the overall observability of the system. Some examples of the resulting reduced observability include:
+- 
+    - It limits the data points that are used to build meaningful alerts.
+    - It leads to gaps in coverage for incident response activities.
+    - It limits observability in security-sensitive or compliance-sensitive interactions and boundaries.
+
+- When performance design patterns are implemented, the complexity of the workload often increases. Components are added to critical flows. The workload monitoring strategy and performance monitoring must include those components. When a flow spans multiple components or application boundaries, the complexity of monitoring the performance of that flow increases. Flow performance needs to be correlated across all the interconnected components.
+
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased complexity in operations.** A complex environment has more complex interactions and a higher likelihood of a negative impact from routine, ad hoc, and emergency operations.
+
+- Improving performance efficiency by increasing density elevates the risk in operational tasks. An error in a single process can have a large blast radius.
+
+- As performance design patterns are implemented, they influence operational procedures like backups, key rotations, and recovery strategies. For example, data partitioning and sharding can complicate routine tasks when teams try to ensure that those tasks don't affect data consistency.
+
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Culture stress.** Operational Excellence is rooted in a culture of blamelessness, respect, and continuous improvement.
+
+- Conducting root cause analysis of performance issues identifies deficiencies in processes or implementations that require correction. The team should consider the exercise a learning opportunity. If team members are blamed for issues, morale can be affected.
+- Routine and ad hoc processes can affect workload performance. It's often considered preferable to perform these activities during off-peak hours. However, off-peak hours can be inconvenient or outside of regular hours for the team members who are responsible for or skilled in these tasks.
+
+## Performance Efficiency tradeoffs with Experience Optimization
+
+:::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Decreased user engagement.** The Experience Optimization pillar prioritizes more engaging user experiences.
+
+- Optimizing for performance prioritizes using platform features over customizations, which deprioritize custom components that could lead to a more engaging user experience.
+- Optimizing for performance can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
+- User interface development is often done in faster iterations and ship cycles, which can make it harder to enhance performance continuously.
 
 ## Related resources
 
