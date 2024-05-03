@@ -53,7 +53,7 @@ To create a data policy, complete the following steps.
 4. Select environments.
 5. Review settings.
 
-These steps are explains in the following section.
+These steps are explained in the following section.
 
 ## Walkthrough: Create a data policy
 
@@ -62,11 +62,11 @@ Use this example walkthrough to create a tenant-level data policy. In this walkt
 - Add SharePoint and Salesforce to the **Business** data group of a data policy.
 - Add Facebook and Twitter to the **Blocked** data group.
 - Leave the remaining connectors in the **Non-Business** data group.
-- Exclude test environments from the scope of this policy and apply the policy to the remaining environments, such as default and production environments in the tenant.
+- Exclude test environments from the scope of this policy and apply the policy to the remaining environments, such as the default environment and production environments in the tenant.
 
 After this policy is saved, any Power Apps or Power Automate maker, who is part of the data policy's environment, can create an app or a flow that shares data between SharePoint or Salesforce. Any Power Apps or Power Automate resource that includes an existing connection with a connector in the **Non-business** data group, isn't allowed to establish connections with SharePoint or Salesforce connectors. These makers can't add Facebook or Twitter connectors to any Power Apps or Power Automate resource.
 
-1. In Power Platform admin center, select **Policies** > **Data policies** > **New policy**.
+1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Policies** > **Data policies** > **New policy**.
 
     If no policies exist in the tenant, you'll see the following page.
    
@@ -292,7 +292,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 ## Find and view data policies
 
-1. Sign in to the Power Platform admin center.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. In the navigation pane, select **Data policies**. If you have a long list of policies, use the **Search** box to find specific data policies.
 
@@ -313,7 +313,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 ## Edit a data policy
 
-1. Sign in to the Power Platform admin center.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
@@ -338,7 +338,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 ## Delete a data policy
 
-1. Sign in to the Power Platform admin center.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 2. From the list of data policies, select an environment, and then select **Delete Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
@@ -352,9 +352,9 @@ Because no data policy has been applied to test environments, apps and flows can
 
 ## Change the default data group
 
-1. Sign in to the Power Platform admin center as a [global admin](/microsoft-365/admin/add-users/about-admin-roles).
+1.Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [global admin](/microsoft-365/admin/add-users/about-admin-roles).
 
-2. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
+1. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
    > [!div class="mx-imgBorder"] 
    > ![Edit a data policy.](media/dlp-edit-policy.png "Edit a data policy")
@@ -362,16 +362,16 @@ Because no data policy has been applied to test environments, apps and flows can
    > [!NOTE]
    > Environment admins can't edit policies created by the tenant admin.
 
-3. Select the **Connectors** step in the **Edit Policy** process.
+1. Select the **Connectors** step in the **Edit Policy** process.
 
-4. In the upper-right corner, select **Set default group**.
+1. In the upper-right corner, select **Set default group**.
 
    > [!div class="mx-imgBorder"] 
    > ![Set default group.](media/dlp-edit-default-group.png "Set default group")
 
-5. Choose a default group, and then select **Apply**. More information: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
+1. Choose a default group, and then select **Apply**. More information: [Connector classification](dlp-connector-classification.md) and [Default data group for new connectors](dlp-connector-classification.md#default-data-group-for-new-connectors)
 
-6. Select **Next** as needed to close the **Edit Policy** process.
+1. Select **Next** as needed to close the **Edit Policy** process.
 
 The data group you chose will be the default group to automatically classify any new connectors added to Power Platform after your policy has been created. 
 
