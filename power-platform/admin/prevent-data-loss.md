@@ -254,7 +254,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
-9. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, we'll search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
+9. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
