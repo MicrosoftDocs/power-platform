@@ -44,14 +44,6 @@ sections:
         icon: developer-tools
         url: https://aka.ms/powa/assessment
         text: Assessment tool      
-      - componentType: icon-link
-        icon: topic-learn
-        url: /power-platform/guidance
-        text: Power Platform prescriptive guidance
-      - componentType: icon-link
-        icon: topic-learn
-        url: /power-platform
-        text: Power Platform product documentation
   # Standard hero
   - componentType: hero
     supertitle: Power Platform Well-Architected 
@@ -112,29 +104,36 @@ sections:
       url: ./operational-excellence/index.yml
       icon: 
         componentType: image
-        src: _images/operational-excellence.svg         
+        src: _images/operational-excellence.svg
+    - componentType: icon-card
+      title: Performance Efficiency
+      summary: Adjust to changes in demands placed on the workload by through horizontal scaling and testing changes before deploying to production. 
+      url: ./performance-efficiency/index.yml    
+      icon: 
+        componentType: image
+        src: _images/performance-efficiency.svg           
     - componentType: icon-card
       title: Experience Optimization
       summary: Create meaningful and useful low-code experiences that ensure successful business outcomes. 
       url: ./experience-optimization/index.yml
       icon: 
         componentType: image
-        src: _images/performance-efficiency.svg       
+        src: _images/experience-optimization.svg       
      
   
-  #Text section
-  #- componentType: text
-  #  title: Power Platform guidance
-  #  links:
-  #  - componentType: link
-  #    url: /power-platform/guidance
-  #    text: Browse the prescriptive guidance for Power Platform
-  #- componentType: text
-  #  title: Power Platform documentation
-  #  links:
-  #  - componentType: link
-  #    url: /power-platform
-  #    text: Browse the product documentation for Power Platform
+# Text section
+  - componentType: text
+    title: Power Platform prescriptive guidance
+    links:
+    - componentType: link
+      url: /power-platform/guidance
+      text: Browse the prescriptive guidance for Power Platform
+  - componentType: text
+    title: Power Platform product documentation
+    links:
+    - componentType: link
+      url: /power-platform
+      text: Browse the product documentation for Power Platform
 
   # social section
   #- componentType: social
