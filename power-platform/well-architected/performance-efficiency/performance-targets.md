@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Recommendations for defining performance targets. 
+# Recommendations for defining performance targets 
 
 **Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
 

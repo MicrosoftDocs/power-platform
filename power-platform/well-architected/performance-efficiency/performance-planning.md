@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Recommendations for performance planning**
+# Recommendations for performance planning
 
 **Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
 
@@ -35,7 +35,7 @@ Capacity planning is a forward-looking process that involves making decisions ba
 
 Design your workload with performance in mind to minimize refactoring after your workload is running. Consider your workload requirements when it comes to performance. Performance considerations affects many aspects of your workload:
 
-- _Data strategy_: Do you have existing data and data stores that you need to connect to? How much data do you need to store? Will the data volume affect how fast users can access it? How will users access the data? 
+- _Data strategy_: Do you have existing data and data stores that you need to connect to? How much data do you need to store? Will the data volume affect how fast users can access it? How will users access the data?
 - _Integration strategy_: Can you do real-time integrations without slowing down the system? Can you do batch integrations within a certain time? Where is your data— do you need to consider an on-premises data gateway strategy?
 - _Data modeling_: Do you need to simplify your data structure for faster queries?
 - _Security modeling_: Will your security rules work well with a lot of users and data? Are there any bottlenecks?

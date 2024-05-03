@@ -74,7 +74,7 @@ Observability platforms ingest data of all types to gain insights into a workloa
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency**. To create performant workloads, teams look for ways to reduce the time and resources that workloads consume to perform their tasks.
 
-- Some cloud design patterns that support "independent change over time" approaches to support the ideals of incremental improvement can introduce latency due to the traversal of additional components. 
+- Some cloud design patterns that support "independent change over time" approaches to support the ideals of incremental improvement can introduce latency due to the traversal of additional components.
 
 ## See also
 

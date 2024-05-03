@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Recommendations for prioritizing the performance of critical flows**
+# Recommendations for prioritizing the performance of critical flows
 
 **Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
 

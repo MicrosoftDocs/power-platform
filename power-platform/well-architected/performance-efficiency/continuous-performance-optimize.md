@@ -45,7 +45,7 @@ Proactively optimizing performance means taking measures to improve and enhance 
 
 ### Prioritize deteriorating components
 
-As the workload evolves and usage patterns change, these changes often affect the performance of individual components in the workload. Increased data in databases can lead to longer query run times and slower data retrieval. Changes in usage patterns might result in suboptimal query design. Queries that were once efficient can become inefficient as the workload evolves. Inefficient queries can consume excessive resources and degrade database performance. 
+As the workload evolves and usage patterns change, these changes often affect the performance of individual components in the workload. Increased data in databases can lead to longer query run times and slower data retrieval. Changes in usage patterns might result in suboptimal query design. Queries that were once efficient can become inefficient as the workload evolves. Inefficient queries can consume excessive resources and degrade database performance.
 
 It's important to make continuous efforts to optimize the performance of components that show decreased performance over time. Proactively identify and address performance issues in your workload. By prioritizing known deteriorating components, you can proactively address potential performance issues and ensure the smooth operation of your workload. Consider implementing performance tuning techniques or optimizing resource allocation.
 

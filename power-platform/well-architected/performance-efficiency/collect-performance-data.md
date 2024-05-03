@@ -76,7 +76,7 @@ Instrumentation refers to the process of embedding code snippets or actions into
 When you instrument code for performance monitoring, consider the following strategies:
 
 - _Use APM tools_: Application performance monitoring (APM) tools collect and analyze performance data, including metrics, traces, and logs. APM tools offer features like code-level instrumentation, transaction tracing, and performance profiling.
-- _Custom instrumentation_: Developers can add custom code to collect performance metrics that are unique to their application and workload. The custom instrumentation can measure runtimes, track resource usage, or capture specific events. 
+- _Custom instrumentation_: Developers can add custom code to collect performance metrics that are unique to their application and workload. The custom instrumentation can measure runtimes, track resource usage, or capture specific events.
 - _Capture transaction times._ Capturing transaction times relates to measuring the end-to-end times for key technical functions as a part of performance monitoring. Application-level metrics should include end-to-end transaction times. These transaction times should cover key technical functions such as database queries, response times for external API calls, and failure rates of processing steps.
 - _Use telemetry standards._ Consider using APM tool instrumentation libraries and tools that are built around a telemetry standard, such as OpenTelemetry.
 
@@ -84,7 +84,7 @@ When you instrument code for performance monitoring, consider the following stra
 
 By collecting resource performance data, you can gain insights into the health and behavior of your workload. Resource performance data provides information about resource use, which is key for capacity planning. This data also provides insights into the health of a workload and can help you detect issues and troubleshoot. Consider the following recommendations:
 
-- _Collect metrics and logs for every resource._ Each service has a set of metrics that's unique to the functionality of the resource. These metrics help you understand the resource's health and performance. 
+- _Collect metrics and logs for every resource._ Each service has a set of metrics that's unique to the functionality of the resource. These metrics help you understand the resource's health and performance.
 - _Use platform tooling._ Gather inspiration from built-in and integrated monitoring solutions, such as Azure Monitor Insights. This tooling streamlines performance operations. Consider platform tooling as you select a platform and invest in custom tooling or reporting.
 - _Monitor network traffic._ Monitoring network traffic means to track and analyze the flow and patterns of data as it moves across network pathways. Collect traffic analytics and monitor the traffic that traverses subnet boundaries. Your goal is to analyze and optimize network performance.
 
@@ -99,7 +99,7 @@ Many database and storage systems provide their own monitoring tools. These tool
 
 ### Collect connector performance data
 
-Time spent waiting for integrated services operations to complete can contribute to the overall poor performance of a workload. If your workload uses connectors to integrate services, consider measuring the time spent in each connector operation to evaluate its impact and decide whether to optimize your workload design. Depending on the service, you can use run history or custom logic to capture the time spent in connector operations. 
+Time spent waiting for integrated services operations to complete can contribute to the overall poor performance of a workload. If your workload uses connectors to integrate services, consider measuring the time spent in each connector operation to evaluate its impact and decide whether to optimize your workload design. Depending on the service, you can use run history or custom logic to capture the time spent in connector operations.
 
 ### Validate and analyze data
 

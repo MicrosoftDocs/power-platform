@@ -35,7 +35,7 @@ To optimize data usage, ensure that data stores are optimized for their intended
 
 - _Profile data._ Understand your data and ensure that your data model is well-suited for your workload. Consider factors such as data normalization and partitioning techniques. For efficient data retrieval, ensure that you select appropriate data types and define relationships between tables.
 - _Optimize query performance._ Analyze and optimize queries that run in the workload. Use techniques such as query optimization, and caching. Use server-side views to prefilter data. To identify bottlenecks, use performance monitoring tools, and then make necessary improvements.
-- _Regularly monitor and tune the system._ Continuously monitor the performance of your workload and iterate on the data storage configuration and query optimizations. Based on performance tuning best practices, analyze system metrics, identify areas of improvement, and implement changes. As data grows, you might have to update your queries to remain performant. 
+- _Regularly monitor and tune the system._ Continuously monitor the performance of your workload and iterate on the data storage configuration and query optimizations. Based on performance tuning best practices, analyze system metrics, identify areas of improvement, and implement changes. As data grows, you might have to update your queries to remain performant.
 
 ### Profile data
 
