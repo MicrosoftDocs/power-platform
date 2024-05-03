@@ -155,8 +155,6 @@
               href: ./experience-optimization/interaction-design.md
             - name: XO:09 User interface content
               href: ./experience-optimization/user-interface-content.md
-      - name: Resources
-        items:
-        - name: Feedback and support
-          href: feedback-support.md
+      - name: Feedback and support
+        href: feedback-support.md
 
