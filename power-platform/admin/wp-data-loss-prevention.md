@@ -1,5 +1,5 @@
 ---
-title: "Data loss prevention policies  | MicrosoftDocs"
+title: "Data policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
 ms.component: pa-admin
 ms.topic: overview
@@ -44,7 +44,7 @@ Several virtual connectors are provided for governing Microsoft Copilot Studio. 
 Explore Virtual Connectors and their role in [data loss prevention in Microsoft Copilot Studio](/microsoft-copilot-studio/admin-data-loss-prevention).
 
 ## Connections 
-When a maker is building an app or a flow and needs to connect to data, they will use one of the above connector types.  When a connector is first added to an app, a connection is established using the authentication protocols supported by that particular connector.  These connections represent a saved credential and are stored within the environment that is hosting the app or flow.  For more information about authenticating to connectors, visit [Connecting and authenticating to data sources](power-platform/admin/security/connect-data-sources).
+When a maker is building an app or a flow and needs to connect to data, they will use one of the above connector types.  When a connector is first added to an app, a connection is established using the authentication protocols supported by that particular connector.  These connections represent a saved credential and are stored within the environment that is hosting the app or flow.  For more information about authenticating to connectors, visit [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources).
 
 ## Design-time versus runtime
 When an administrator chooses to limit access to either a whole connector or specific actions of a connector, there are impacts both to the maker experience as well as to the execution of previously created apps, flows, and chatbots.
