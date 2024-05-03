@@ -58,7 +58,7 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 
 ### Inline actions
 
-You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [recommendations](#categories-of-recommendations).
+You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [recommendations](#recommendations).
 
 ### Automated actions
 
