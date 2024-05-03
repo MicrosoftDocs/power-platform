@@ -44,24 +44,18 @@ landingContent:
             url: performance-targets.md
           - text: Select the right services
             url: select-services.md
-          - text: Conduct capacity planning
-            url: capacity-planning.md
           - text: Collect performance data
             url: collect-performance-data.md
   - title: Improve efficiency
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Scaling and partitioning
-            url: scale-partition.md
           - text: Code and infrastructure
-            url: optimize-code-infrastructure.md
+            url: optimize-code.md
           - text: Data
             url: optimize-data-performance.md
           - text: Critical flows
             url: prioritize-critical-flows.md
-          - text: Operational tasks
-            url: optimize-operational-tasks.md
           - text: Continuous optimization 
             url: continuous-performance-optimize.md
   - title: Implement testing and incident response
