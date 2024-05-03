@@ -528,12 +528,6 @@
                       items:
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
-                    - name: Virtual connectors
-                      items:  
-                      - name: Copilot connectors
-                        href: dlp-copilot-connectors.md
-                      - name: AI Builder connector
-                        href: dlp-aib-connector.md
                     - name: DLP for Power Automate
                       href: /power-automate/prevent-data-loss
                     - name: DLP for desktop flows
