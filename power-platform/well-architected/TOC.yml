@@ -145,7 +145,7 @@
               href: ./performance-efficiency/optimize-data-performance.md
             - name: PE:09 Live-issues responses
               href: ./performance-efficiency/respond-live-performance-issues.md
-            - name: PE:10 Continuous performance Optimization
+            - name: PE:10 Continuous performance optimization
               href: ./performance-efficiency/continuous-performance-optimize.md
       - name: Experience Optimization
         items:

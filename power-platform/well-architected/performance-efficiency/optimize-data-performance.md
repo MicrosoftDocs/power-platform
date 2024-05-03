@@ -11,7 +11,10 @@ ms.topic: conceptual
 
 # Recommendations for optimizing data performance
 
-**Optimize data performance. Optimize data stores for their intended and actual use in the workload.**
+**Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
+
+|[PE:08](checklist.md)|**Optimize data performance. Optimize data stores for their intended and actual use in the workload.**|
+|---|---|
 
 This guide describes the recommendations for optimizing data performance. Optimizing data performance is about refining the efficiency with which the workload processes and stores data. Every workload operation, transaction, or computation typically relies on the quick and accurate retrieval, processing, and storage of data. When data performance is optimized, the workload runs smoothly. Compromised data performance creates a domino effect of poor performance efficiency. Failure to optimize data performance results in response delays, heightened latency, and curtailed scalability. It jeopardizes the efficiency of the entire workload.
 
