@@ -171,16 +171,16 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    > [!div class="mx-imgBorder"] 
    > ![Assign multiple connectors.](media/dlp-assign-connectors-multiple.png "Assign multiple connectors")
 
-   The connectors will appear in the **Business** data group.
+   The connectors appear in the **Business** data group.
 
    > [!div class="mx-imgBorder"] 
    > ![Business data group.](media/dlp-business-data-group.png "Business data group")
 
    Connectors can reside in only one data group at a time. By moving the SharePoint and Salesforce connectors to the **Business** data group, you're preventing users from creating flows and apps that combine these two connectors with any of the connectors in the **Non-Business** or **Blocked** groups.
 
-   For connectors like SharePoint that are not blockable, the **Block** action will be grayed out and a warning will appear.
+   For connectors like SharePoint that are not blockable, the **Block** action isn't available and a warning appears.
 
-6. Review and change the default group setting for new connectors, if you need to. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Microsoft Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable will be mapped to **Blocked**, as expected. However, any new connectors that are unblockable will be mapped to **Non-Business** because by design they can't be blocked. 
+6. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Microsoft Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
@@ -194,9 +194,9 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    > [!div class="mx-imgBorder"] 
    > ![Define scope.](media/dlp-define-scope.png "Define scope")
 
-   For the purpose of this walkthrough, you will exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
+   For the purpose of this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
-8. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list will show the tenant-level admin all the environments in the tenant. For environment-level policies, this list will only show the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
+8. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
    > [!div class="mx-imgBorder"] 
    > ![Add environments.](media/dlp-add-environments2.png "Add environments")
