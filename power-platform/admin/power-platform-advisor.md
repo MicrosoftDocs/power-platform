@@ -72,7 +72,7 @@ While building cloud flows using the connector, you can get Power Platform Advis
 
 ### Export recommendations
 
-The recommendation data shown in the Power Platform Advisor can be exported using the **Get Recommendation Resources** action in the [Power Platform for Admin V2]() connector. You can create a cloud flow (or a scheduled cloud flow) to get the recommendation resources for each of the below mentioned recommendations and export them to an Excel file or to an email using the Excel Online or Office 365 Outlook connectors.
+The recommendation data shown in the Power Platform Advisor can be exported using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. You can create a cloud flow (or a scheduled cloud flow) to get the recommendation resources for each of the below mentioned recommendations and export them to an Excel file or to an email using the Excel Online or Office 365 Outlook connectors.
 
 ### Share recommendations
 
