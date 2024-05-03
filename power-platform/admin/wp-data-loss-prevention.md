@@ -67,7 +67,7 @@ As new data policies are created, or when existing policies are updated, there's
 7. Any resources which are running and are in violation of policy, fail at runtime.  
 
 > [!Important]
-> Runtime blocking is only possible when blocking a whole connector. For policies that limit specific actions, use business and non-business groupings or use endpoint filtering where the endpoint isn't saved in the connection itself, such as Entra Integrated connections. Runtime enforcement doesn't block execution of apps or flows. This will be solved in the future.
+> Runtime blocking is only possible when blocking a whole connector. For policies that limit specific actions, use business and non-business groupings or use endpoint filtering where the endpoint isn't saved in the connection itself, such as Entra Integrated connections. Runtime enforcement doesn't block execution of apps or flows.
 
 ## Latency considerations
 The time it takes to effectively implement data policies various from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for changes to be in full enforcement. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
