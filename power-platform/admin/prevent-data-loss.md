@@ -259,7 +259,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
 
-   Because the policy scope was initially selected as **Exclude certain environments**, these test environments will now be excluded from the policy scope and the data policy settings will be applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments.
+   Because the policy scope was initially selected as **Exclude certain environments**, these test environments are now excluded from the policy scope and the data policy settings are applied to all the remaining (**Available**) environments. For environment-level policy, you can only select a single environment from the list of available environments.
 
    After making selections for environments, select **Next**.
 
