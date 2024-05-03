@@ -115,15 +115,15 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    <th>Description</th>
    </tr>
    <tr>
-   <td width="20%"> Business (<i>n</i>) </td>
+   <td width="20%"> Business  </td>
    <td width="80%"> Connectors for business-sensitive data. Connectors in this group can't share data with connectors in other groups.  </td>
    </tr>
    <tr>
-   <td width="20%"> Non-Business/<br />Default (<i>n</i>)</td>
+   <td width="20%"> Non-Business/<br />Default </td>
    <td width="80%"> Connectors for non-business data, such as personal use data. Connectors in this group can't share data with connectors in other groups. </td>
    </tr>
    <tr>
-   <td width="20%"> Blocked (<i>n</i>)    </td>
+   <td width="20%"> Blocked     </td>
    <td width="80%"> Blocked connectors can't be used where this policy is applied.    </td>
    </tr>
    </table>
@@ -228,11 +228,11 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    <th>Description</th>
    </tr>
    <tr>
-   <td width="20%"> Available (<i>n</i>)    </td>
+   <td width="20%"> Available    </td>
    <td width="80%"> Environments that aren't explicitly included or excluded in the policy scope. For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this list represents the subset of environments that aren't included in the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the set of environments that are included within the policy scope.   </td>
    </tr>
    <tr>
-   <td width="20%"> Added to policy  (<i>n</i>)   </td>
+   <td width="20%"> Added to policy     </td>
    <td width="80%">  For environment-level policy and tenant-level policies with scope defined as <b>Add multiple environments</b>, this pivot represents the subset of environments that are within the policy scope. For tenant-level policies with scope defined as <b>Exclude certain environments</b>, this pivot represents the subset of environments that are excluded from the policy scope.   </td>
    </tr>
    </table>
@@ -346,7 +346,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 ## Change the default data group
 
-1.Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [global admin](/microsoft-365/admin/add-users/about-admin-roles).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [global admin](/microsoft-365/admin/add-users/about-admin-roles).
 
 1. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
