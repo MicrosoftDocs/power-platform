@@ -16,9 +16,10 @@ Power Platform Well-Architected is a framework that can improve the quality of a
 - Be reliable.
 - Be secure.
 - Support responsible development and operations.
+- Meet expectations of performance.
 - Be easy to use.
 
-Power Platform Well-Architected is built on four pillars of architectural excellence, which are mapped to the goals. The pillars are: [**Reliability**](./reliability/index.yml), [**Security**](./security/index.yml), [**Operational Excellence**](./operational-excellence/index.yml), and [**Experience Optimization**](./experience-optimization/index.yml).
+Power Platform Well-Architected is built on four pillars of architectural excellence, which are mapped to the goals. The pillars are: [**Reliability**](./reliability/index.yml), [**Security**](./security/index.yml), [**Operational Excellence**](./operational-excellence/index.yml), [**Performance Efficiency**](./performance-efficiency/index.yml) and [**Experience Optimization**](./experience-optimization/index.yml).
 
 Each pillar offers best practices, risk factors, and tradeoffs. The design choices must consider all pillars, based on the business needs. The technical and practical guidance is general enough for all workloads and relevant to a specific situation. This guidance focuses on Power Platform.  
 
