@@ -72,9 +72,9 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    
     :::image type="content" source="media/dlp-view-no-policies.png" alt-text="No policies view":::
 
-3. Enter a policy name, and then select **Next**.
+1. Enter a policy name, and then select **Next**.
 
-4. Review the various attributes and settings you can make on the **Assign Connectors** page. 
+1. Review the various attributes and settings you can make on the **Assign Connectors** page. 
 
    :::image type="content" source="media/dlp-assign-connectors.png" alt-text="Assign connectors":::
 
@@ -161,7 +161,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    |**7**|Action buttons to assign individual connectors across connector classification groups|
 
 
-5. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. 
+1. Select one or more connectors. For this walkthrough, select the SalesForce and SharePoint connectors, and then select **Move to Business** from the top menu bar. You can also use the ellipsis (![ellipses.](./media/vertical-ellipses.png)) to the right of the connector name. 
 
     :::image type="content" source="media/dlp-assign-connectors-multiple.png" alt-text="Assign multiple connectors.":::
 
@@ -173,7 +173,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    For connectors like SharePoint that are not blockable, the **Block** action isn't available and a warning appears.
 
-6. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
+1. Review and change the default group setting for new connectors, if needed. We recommend keeping the default setting as **Non-Business** to map any new connectors added to Power Platform by default. **Non-Business** connectors can be manually assigned to **Business** or **Blocked** later by editing the data policy, after you've had a chance to review and assign them. If the new connector setting is **Blocked**, any new connectors that are blockable are mapped to **Blocked**, as expected. However, any new connectors that are unblockable are mapped to **Non-Business** because by design they can't be blocked. 
 
    In the upper-right corner, select **Set default group**.
 
@@ -181,13 +181,13 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    After you've completed all the connector assignments across the **Business**/**Non-Business**/**Blocked** groups and set the default group for new connectors, select **Next**.
 
-7. Choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
+1. Choose the scope of the data policy. This step isn't available for environment-level policies, because they're always meant for a single environment.
 
    :::image type="content" source="media/dlp-define-scope.png" alt-text="Define scope":::
 
    For the purpose of this walkthrough, you exclude test environments from this policy. Select **Exclude certain environments**, and on the **Add Environments** page, select **Next**.
   
-8. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
+1. Review the various attributes and settings on the **Add Environments** page. For tenant-level policies, this list shows the tenant-level admin all the environments in the tenant. For environment-level policies, this list only shows the subset of environments in the tenant that are managed by the user who has signed in as an Environment Admin or as a System Administrator for environments with Dataverse database. 
 
    :::image type="content" source="media/dlp-add-environments2.png" alt-text="Add environments":::
 
@@ -254,7 +254,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
    </tr>
    </table>
 
-9. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
+1. Select one or more environments. You can use the search bar to quickly find the environments of interest. For this walkthrough, search for test environments - type sandbox. After we select the sandbox environments, we assign them to the policy scope by using **Add to policy** from the top menu bar. 
 
    > [!div class="mx-imgBorder"] 
    > ![Assign policy.](media/dlp-assign-policy-environments.png "Assign policy")
@@ -263,7 +263,7 @@ After this policy is saved, any Power Apps or Power Automate maker, who is part 
 
    After making selections for environments, select **Next**.
 
-10. Review the policy settings, and then select **Create Policy**.
+1. Review the policy settings, and then select **Create Policy**.
 
    > [!div class="mx-imgBorder"] 
    > ![Review new policy.](media/dlp-new-policy-review.png "Review new policy")
