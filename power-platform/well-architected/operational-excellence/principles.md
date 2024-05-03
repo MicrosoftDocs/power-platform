@@ -4,7 +4,7 @@ description: Learn about industry principles that support operational excellence
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -82,7 +82,7 @@ A crucial aspect of monitoring is application **using health modeling to help yo
 
 |Approach  |Benefits  |
 |---------|---------|
-|**Build a monitoring system with its own stack and flows**. <br><br> Treat the monitoring system as a dimension of the workload that's decoupled from its utility. The stack must cover all layers, including application health, and build and release processes. <br><br> **Capturing or sampling business data** is out of scope for observability implementations. | Decouple monitoring and workload stacks to **separate functional requirements and observability requirements** and make independent evolution possible. Changes in code shouldn't affect monitoring, and vice versa. <br><br> Because observability requirements are separate from functional requirements, **business data** **won't be disrupted** by monitoring configuration changes or outages.  |
+|**Build a monitoring system with its own stack and flows**. <br><br> Treat the monitoring system as a dimension of the workload that's decoupled from its utility. The stack must cover all layers, including application health, and build and release processes. <br><br> **Capturing or sampling business data** is out of scope for observability implementations. | Decouple monitoring and workload stacks to **separate functional requirements and observability requirements** and make independent evolution possible. Changes in code shouldn't affect monitoring, and vice versa. <br><br> Because observability requirements are separate from functional requirements, **business data won't be disrupted** by monitoring configuration changes or outages.  |
 |**Drive consistency** in the collection process for each **type of data source**. <br><br> Standardize instrumentation in code by using industry standards for telemetry. | Consistency prevents variance in sensing and measurement because familiarity across similar resources **reduces time spent correlating and analyzing data**. You have a holistic perspective to anticipate issues. <br><br>  |
 |**Emit telemetry** from application code that correlates the key points of the execution flow and gives an end-to-end view at different levels of granularity.        | Prioritize actions based on the severity level, and understand the context given its verbosity. This information is crucial for troubleshooting purposes.  |
 |**Own the responsibility of emitting and collecting data**, even when data sinks are shared by multiple teams and managed by central teams.      | By localizing monitoring data to the workload environment, the team can access logs and metrics to address workload concerns. |

@@ -11,7 +11,10 @@ ms.topic: conceptual
 
 # Recommendations for prioritizing the performance of critical flows**
 
-**Prioritize the performance of critical flows. The allocation of workload resources and performance optimization efforts should prioritize the flows that support the most important business processes, users, and operations.**
+**Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
+
+|[PE:07](checklist.md)|**Prioritize the performance of critical flows. The allocation of workload resources and performance optimization efforts should prioritize the flows that support the most important business processes, users, and operations.**|
+|---|---|
 
 This guide describes the recommendations for prioritizing the performance of critical flows in a workload. Critical flows represent crucial business processes that generate revenue or drive high-priority operations. When you prioritize the performance of critical flows, you ensure the flows that have the most impact get the resources they need before lower priority flows. Failure to do this prioritization can have disproportionate negative effects on workload priorities and the user experience.
 

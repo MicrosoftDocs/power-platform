@@ -11,7 +11,10 @@ ms.topic: conceptual
 
 # Recommendations for optimizing logic
 
-**Use** **logic** **that's performant, and ensure that it offloads responsibilities to the platform. Use** **logic** **only for** **its intended purpose and only when necessary.**
+**Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
+
+|[PE:06](checklist.md)| **Use logic that's performant, and ensure that it offloads responsibilities to the platform. Use logic only for its intended purpose and only when necessary.**|
+|---|---|
 
 This guide describes the recommendations for optimizing code and infrastructure performance. To optimize your code and infrastructure, you should use your components only for their core purpose and only when required. When you overuse code and infrastructure, it creates unnecessary resource consumption, bottlenecks, and slow responses. To compensate for those inefficiencies, you must add more resources to accomplish the same tasks.
 
@@ -89,7 +92,7 @@ Many applications require background tasks that run independently of the UI. The
 
 **Using concurrency and parallelism**: Power Automate cloud flows support concurrency in loops and triggers. Note: [Concurrency, looping, and debatching limits](/power-automate/limits-and-config) apply and are based on your performance profile. Power Apps support concurrency using the [Concurrent](/power-platform/power-fx/reference/function-concurrent) function.
 
-**Optimizing** **Dataverse** **performance**: Microsoft Dataverse provides an extensible framework that allows developers to build highly customized and tailored experiences. When you're customizing, extending, or integrating with Dataverse, be aware of the established guidance and best practices. For more information, see [Best practices and guidance when coding for Microsoft Dataverse](/power-apps/developer/data-platform/best-practices/)
+**Optimizing Dataverse performance**: Microsoft Dataverse provides an extensible framework that allows developers to build highly customized and tailored experiences. When you're customizing, extending, or integrating with Dataverse, be aware of the established guidance and best practices. For more information, see [Best practices and guidance when coding for Microsoft Dataverse](/power-apps/developer/data-platform/best-practices/)
 
 ## Related links
 

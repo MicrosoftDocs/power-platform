@@ -4,7 +4,7 @@ description: Learn key principles of interaction design to enhance user experien
 author: RobStand
 ms.author: rstand
 ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

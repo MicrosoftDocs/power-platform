@@ -11,7 +11,10 @@ ms.topic: conceptual
 
 # Recommendations for performance testing
 
-**Test performance. Perform regular testing in an environment that matches the production environment. Compare results against the performance targets and the performance benchmark.**
+**Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
+
+|[PE:05](checklist.md)|**Test performance. Perform regular testing in an environment that matches the production environment. Compare results against the performance targets and the performance benchmark.**|
+|---|---|
 
 This guide describes the recommendations for testing. Performance testing helps you evaluate the functionality of a workload in various scenarios. It involves testing the workload's response time, throughput, resource utilization, and stability to help ensure that the workload meets its performance requirements.
 

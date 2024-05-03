@@ -4,7 +4,7 @@ description: Learn how to get information about events, capture information abou
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

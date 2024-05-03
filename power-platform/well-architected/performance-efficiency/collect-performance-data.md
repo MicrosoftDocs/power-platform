@@ -11,7 +11,10 @@ ms.topic: conceptual
 
 # Recommendations for collecting performance data
 
-**Collect performance data. Workload components and flows should provide automatic, continuous, and meaningful metrics and logs. Collect data at different levels of the workload, such as the application, platform, data, and operating system levels.**
+**Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
+
+|[PE:04](checklist.md)|**Collect performance data. Workload components and flows should provide automatic, continuous, and meaningful metrics and logs. Collect data at different levels of the workload, such as the application, platform, data, and operating system levels.** |
+|---|---|
 
 Collecting performance data is the process of gathering metrics and logs that provide information about the performance of a workload. This data includes numerical values, which are known as _metrics_. Metrics describe the state of the system at a particular point in time. It also includes logs that contain different types of data organized into records.
 
@@ -105,7 +108,7 @@ Your performance data should align with the performance targets. The data needs 
 - _Create alerts._ It's beneficial to have alerts that are actionable, enabling prompt identification and rectification of performance problems. These alerts should clearly indicate the breached performance threshold, the potential business effect, and the components involved. Start by setting common and recommended alert. Over time, you can modify these criteria based on your specific needs. The primary objective of these alerts should be to forecast potential performance drops before they escalate into significant issues. If you can't set an alert for an external dependency, consider devising a method to gather indirect measurements, like the duration of a dependency call.
 - _Set data collection limits._ Determine and set logical limits on the volume of data you collect and its retention duration. Telemetry can sometimes produce overwhelming amounts of data. It's essential to focus on capturing only the most vital performance indicators or have an efficient system in place to extract meaningful insights from your performance data.
 
-## **Power** **Platform facilitation**
+## **Power Platform facilitation**
 
 **Collecting application performance data**: [Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) is a feature of Azure Monitor that helps you monitor the performance and availability of your application. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance and Failures](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view)panels. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. You can export [Dataverse and Power Automate data](/power-platform/admin/set-up-export-application-insights) to Application Insights, and [connect your canvas apps](/power-apps/maker/canvas-apps/application-insights) to Application Insights.
 
@@ -115,7 +118,7 @@ Application Insights allows you to choose **Server** and **Browser** data views.
 
 **Collecting Azure resource performance data:** Most Azure services generate platform logs and metrics that provide diagnostic and auditing information. By enabling diagnostic settings, you can specify the platform logs and metrics to collect and store.For correlation purposes, enable diagnostics for all supported services and send the logs to the same destination as your application logs.
 
-**Collecting database performance** **data:** [Microsoft Dataverse integrates with Application Insights](/power-platform/admin/telemetry-events-dataverse). The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. To be notified of issues, set up alerts based on performance thresholds.
+**Collecting database performance data:** [Microsoft Dataverse integrates with Application Insights](/power-platform/admin/telemetry-events-dataverse). The data stream currently provides performance data related to Dataverse API incoming calls, Dataverse plug-in execution calls, and Dataverse SDK calls. To be notified of issues, set up alerts based on performance thresholds.
 
 **Validating and analyzing performance data:** Within Azure Monitor, you can use Azure Monitor Logs to collect, analyze, and visualize log data from your applications and systems. By aggregating logs, you can cross-query events and gain insights into the performance of your application. For more information, see [Azure Monitor Logs cost calculations and options](/azure/azure-monitor/logs/cost-logs)** and [Pricing for Azure Monitor](https://azure.microsoft.com/pricing/details/monitor/).
 

@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: robstand
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 05/10/2024
 ---
 
 # Design review checklist for Security

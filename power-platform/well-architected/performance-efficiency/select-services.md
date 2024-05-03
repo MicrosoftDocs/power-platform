@@ -11,13 +11,16 @@ ms.topic: conceptual
 
 # Recommendations for selecting the right services
 
-**Select the right** **services. The services and features** **must support your ability to reach the workload's performance targets and accommodate expected capacity changes. The selections should also weigh the benefits of using platform features or building a custom implementation.**
+**Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
+
+|[PE:03](checklist.md)|**Select the right services. The services and features must support your ability to reach the workload's performance targets and accommodate expected capacity changes. The selections should also weigh the benefits of using platform features or building a custom implementation.**|
+|---|---|
 
 This guide describes the recommendations for selecting appropriate services for your workload. The following recommendations help you choose services that best meet the requirements and demands of your workload. When you use services that are designed to handle your workload's requirements, you ensure that your workload meets your performance targets. If you choose inappropriate services for your workload, the services might not be capable of handling your workload's demands. Insufficient services can lead to slow response times, bottlenecks, or workload failures.
 
 **Definitions**
 
-| Term** | **Definition** |
+| Term | Definition |
 |---|---|
 | Region | A geographic perimeter that contains a set of datacenters. |
 | Resource | A single entity or component that you can create, configure, and utilize within a cloud service provider. |
@@ -116,7 +119,7 @@ Remember that users judge performance by their expectations, not by objective me
 - Consider data growth over time. As more data flows through your system, you might need to tune it to maintain the same response times.
 - Consider what data to cache in the page or app versus retrieving it in real time every time the page loads. 
 
-## Power Platform** **facilitation
+## Power Platform facilitation
 
 **Understanding requirements**: Use [Azure Monitor](/azure/azure-monitor/overview) to collect and analyze data from your workload. Monitor provides insights into the performance and health of your workloads, allowing you to identify and troubleshoot issues.
 
