@@ -3,7 +3,7 @@ title: "Data policies  | MicrosoftDocs"
 description: About data loss prevention (DLP) policies.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/01/2024
+ms.date: 05/03/2024
 author: laneswenka
 ms.subservice: admin
 ms.author: laswenka
