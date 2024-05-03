@@ -38,7 +38,7 @@ Environment Maker and Environment Admin are the only predefined roles for enviro
 | Security role |  Description |
 |---------|---------|
 | Environment Admin | The Environment Admin role can perform all administrative actions on an environment, including:<br/><ul><li>Add or remove a user from either the Environment Admin or Environment Maker role.</li><li>Provision a Dataverse database for the environment. After a database is provisioned, assign the System Customizer role to an Environment Admin to give them access to the environment's data.</li><li>View and manage all resources created in an environment.</li><li>Create [data loss prevention policies](prevent-data-loss.md).</li></ul> |
-| Environment Maker |Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have privileges to access data in an environment.<br/><br/>Environment makers can also [distribute the apps they build](/powerapps/maker/canvas-apps/share-app) in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. |
+| Environment Maker |Can create new resources associated with an environment, including apps, connections, custom APIs, and flows using Microsoft Power Automate. However, this role doesn't have privileges to access data in an environment.<br/><br/>Environment makers can also [distribute the apps they build](/powerapps/maker/canvas-apps/share-app) in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. |
 
 ### Environments with a Dataverse database
 
