@@ -13,18 +13,19 @@ search.audienceType:
   - admin
 ---
 # Data policies 
-Data Loss Prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. It encompasses various measures and tools aimed at preventing the unauthorized disclosure or leakage of sensitive information, also known as exfiltration.  A core component of Power Apps, Power Automate, and Microsoft Copilot Studio is the use of connectors to enumerate, populate, push, and pull data.  **Data policies** in Power Platform admin center allow administrators to control access to these connectors in various ways to help reduce risk in your organization.
+Data Loss Prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
+You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data.  A core component of Power Apps, Power Automate, and Microsoft Copilot Studio is the use of connectors to enumerate, populate, push, and pull data.  **Data policies** in Power Platform admin center allow administrators to control access to these connectors in various ways to help reduce risk in your organization.
 
 This overview describes some high-level concepts related to connectors, and several important considerations to take in to account when setting up your policies or making policy changes. 
 
 ## Connectors
 Connectors, at their most basic level, are strongly typed representations of restful, application programming interfaces, also known as APIs.  For example, the Power Platform API provides several operations related to functionality in Power Platform admin center.
 
-:::image type="content" source="media/dlp-ppapi-restapi.png" alt-text="Shows a restful API reference page with optional querystring parameters.":::
+:::image type="content" width="200px" source="media/dlp-ppapi-restapi.png" alt-text="Shows a restful API reference page with optional querystring parameters.":::
 
 When wrapping the Power Platform API in to a connector, it becomes easier for makers and citizen developers to utilize the API in their low-code apps, workflows, and chatbots. For example, the Power Platform for Admins V2 connector is the representation of the Power Platform API and we see the 'Get Recommendations' action is simply drag and dropped on to the flow:
 
-:::image type="content" source="media/dlp-ppapi-connectorv2.png" alt-text="Shows the connector on a Power Automate workflow.":::
+:::image type="content" width="200px" source="media/dlp-ppapi-connectorv2.png" alt-text="Shows the connector on a Power Automate workflow.":::
 
 There are several types of connectors mentioned in this article, and each has capabilities within data policies.
 
@@ -53,7 +54,7 @@ When an administrator chooses to limit access to either a whole connector or spe
 
 Maker experiences, often referred to as *design-time* experiences, limit what connectors makers can interact with. If a data policy blocked the use of MSN Weather connector, then a maker won't be able to save their flow or app that utilizes this, and instead receives an error message that the connector has been blocked by policy.  
 
-Experiences where an app is being run or a flow is executing on a predefined schedule, such as every day at 3:00 AM, are often referred to as *runtime* experiences. Following on from the example earlier, the result is that the app or flow provides an error message that the MSN Weather connector has been blocked by policy.
+Experiences where an app is being run or a flow is executing on a predefined schedule, such as every day at 3:00 AM, are often referred to as *runtime* experiences. Following on from the example earlier, if the connection had been disabled by the background process outlined below, then the result is that the app or flow provides an error message that the MSN Weather connection is broken and needs resolution.  When the maker attempts to update their connection to fix it, they will get an error in the design-time experience that the connector has been blocked by policy.
 
 ## Process for policy changes
 As new data policies are created, or when existing policies are updated, there's a specific process that's triggered within the Power Platform ecosystem of services that helps to get those policies enforced across the entire set of resources a customer has in their tenant. This process involves the following steps.
@@ -63,14 +64,14 @@ As new data policies are created, or when existing policies are updated, there's
 3. Resources in each environment (such as apps, flows, and chatbots) periodically check for updated policy configurations.
 4. When a configuration change is detected, each app, flow, and chatbot is evaluated to see if it violates the policy.
 5. If a violation occurs, the app, flow, or chatbot is put in to a _suspended_ or _quarantine_ state so that it can't operate.
-6. Connections are scanned. If found in violation of policy, they're set to a _disabled_ state so that they can't operate.
-7. Any resources which are running and are in violation of policy, fail at runtime.  
+6. Connections are scanned. If the policy blocks the whole connector then the connection is set to a _disabled_ state so that it can't operate.
+7. Any resources which are running and attempting to use a disabled connection, fail at runtime.  
 
 > [!Important]
-> Runtime blocking is only possible when blocking a whole connector. For policies that limit specific actions, use business and non-business groupings or use endpoint filtering where the endpoint isn't saved in the connection itself, such as Entra Integrated connections. Runtime enforcement doesn't block execution of apps or flows.
+> Runtime enforcement relies on the state of the connection.  If it is not yet disabled or has not yet been scanned, then the connection can still be executed at runtime without error.  
 
 ## Latency considerations
-The time it takes to effectively implement data policies various from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for changes to be in full enforcement. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
+The time it takes to effectively implement data policies varies from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for policy changes to take full effect. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
 
 ### See also
 
