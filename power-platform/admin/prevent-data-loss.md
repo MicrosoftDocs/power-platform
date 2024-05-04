@@ -317,7 +317,7 @@ Because no data policy has been applied to test environments, apps and flows can
    > [!NOTE]
    > Environment admins can't edit policies that were created by the tenant admin.
 
-3. Proceed through the steps described in [Create a data policy](create-dlp-policy.md), and then select **Update Policy**.
+3. Proceed through the steps described in [Walkthrough: Create a data policy](#walkthrough-create-a-data-policy), and then select **Update Policy**.
 
    > [!NOTE]
    > Environment-level data policies can't override tenant-wide data policies.
@@ -375,7 +375,6 @@ See [data policies policy commands](powerapps-powershell.md#data-loss-prevention
 ### See also
 
 [Data loss prevention policies](wp-data-loss-prevention.md) <br />
-[Create a data policies policy](create-dlp-policy.md) <br />
 [data policies policy commands](powerapps-powershell.md#data-loss-prevention-dlp-policy-commands) <br />
 [Power Platform data policies SDK](data-loss-prevention-sdk.md)
 
