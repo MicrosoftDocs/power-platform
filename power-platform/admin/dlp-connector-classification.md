@@ -4,7 +4,7 @@ description: About ways to categorize connectors within a DLP policy.
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/01/2023
+ms.date: 05/04/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -24,7 +24,7 @@ Data groups are a simple way to categorize connectors within a data loss prevent
 
 A good way to categorize connectors is to place them in groups based on the business-centered or personal-use-centered services that they connect to in the context of your organization. Connectors that host business-use data should be classified as **Business**, and connectors that host personal-use data should be classified as **Non-Business**. Any connectors that you want to keep from being used at all across one or more environments should be classified as **Blocked**.
 
-When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Create a data loss prevention (DLP) policy](create-dlp-policy.md). You can also change the initial classification of connectors by editing your DLP policy. More information: [Edit a data policy](prevent-data-loss.md#edit-a-data-policy)
+When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Manage data policies](cprevent-data-loss.md). You can also change the initial classification of connectors by editing your DLP policy. More information: [Edit a data policy](prevent-data-loss.md#edit-a-data-policy)
 
 > [!NOTE]
 > Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When a HTTP request is received**. If legacy DLP policies are being updated by using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
