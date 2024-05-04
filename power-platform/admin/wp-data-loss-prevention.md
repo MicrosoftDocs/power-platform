@@ -55,7 +55,7 @@ When an administrator chooses to limit access to either a whole connector or spe
 
 Maker experiences, often referred to as *design-time* experiences, limit what connectors makers can interact with. If a data policy blocked the use of MSN Weather connector, then a maker won't be able to save their flow or app that utilizes this, and instead receives an error message that the connector has been blocked by policy.  
 
-Experiences where an app is being run or a flow is executing on a predefined schedule, such as every day at 3:00 AM, are often referred to as *runtime* experiences. Continuing with the example earlier, if the connection had been disabled by the background process outlined below, then the result is that the app or flow provides an error message that the MSN Weather connection is broken and needs resolution. When the maker attempts to update their connection to fix it, they will get an error in the design-time experience that the connector has been blocked by policy.
+Experiences where an app is being run or a flow is executing on a predefined schedule, such as every day at 3:00 AM, are often referred to as *runtime* experiences. Continuing with the example earlier, if the connection had been inactivated by the background process outlined below, then the result is that the app or flow provides an error message that the MSN Weather connection is broken and needs resolution. When the maker attempts to update their connection to fix it, they will get an error in the design-time experience that the connector has been blocked by policy.
 
 ## Process for policy changes
 As new data policies are created, or when existing policies are updated, there's a specific process that's triggered within the Power Platform ecosystem of services that helps to get those policies enforced across the entire set of resources a customer has in their tenant. This process involves the following steps.
@@ -66,10 +66,10 @@ As new data policies are created, or when existing policies are updated, there's
 4. When a configuration change is detected, each app, flow, and chatbot is evaluated to see if it violates the policy.
 5. If a violation occurs, the app, flow, or chatbot is put in to a _suspended_ or _quarantine_ state so that it can't operate.
 6. Connections are scanned. If the policy blocks the whole connector then the connection is set to a _disabled_ state so that it can't operate.
-7. Any resources which are running and attempting to use a disabled connection, fail at runtime.  
+7. Any resources which are running and attempting to use an inactive connection, fail at runtime.  
 
 > [!Important]
-> Runtime enforcement relies on the state of the connection. If it's not yet disabled or has not yet been scanned, then the connection can still be executed at runtime without error.  
+> Runtime enforcement relies on the state of the connection. If it's not yet inactivated or has not yet been scanned, then the connection can still be executed at runtime without error.  
 
 ## Latency considerations
 The time it takes to effectively implement data policies varies from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for policy changes to take full effect. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
