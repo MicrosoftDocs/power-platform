@@ -2,7 +2,7 @@
 title: "Retrieve the list of rules | Microsoft Docs"
 description: "Learn how to form a GET request using the Power Apps checker web API to retrieve the list of rules available."
 ms.custom: ""
-ms.date: 01/25/2024
+ms.date: 05/01/2024
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -21,6 +21,9 @@ search.audienceType:
 # Retrieve the list of rules
 
 Rules are grouped together using a ruleset. A rule can be in no ruleset, or multiple rulesets. Use a `GET` request to obtain a list of all rules available, rules in a ruleset, or rulesets by calling the API `[Geographical URI]/api/rule`. There are a few variations to calling this API, however, the most common usage is to retrieve the list of rules for a specific ruleset.
+
+> [!NOTE]
+> This API does require an OAuth token.
 
 <a name="bkmk_headers"></a>
 

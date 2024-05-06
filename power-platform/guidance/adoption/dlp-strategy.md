@@ -92,9 +92,9 @@ This setup of tenant-centric DLP policies doesn't prevent environment admins fro
 
 ![How Contoso set up their DLP policy.](media/dlp-strategy_.png "How Contoso set up their DLP policy")
 
-## Set up DLP policies
+## Set up data policies
 
-1. Create your policy in the [Power Platform admin center](https://aka.ms/ppac). More information: [Create a DLP policy](../../admin/create-dlp-policy.md)
+1. Create your policy in the [Power Platform admin center](https://aka.ms/ppac). More information: [Manage data policies](../../admin/prevent-data-loss.md)
 
 1. Use the [DLP SDK](../../admin/data-loss-prevention-sdk.md) to add custom connectors to a DLP policy.
 
