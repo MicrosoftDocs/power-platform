@@ -3,7 +3,7 @@ title: Recommendations for implementing effective information architecture
 description: Learn strategies for implementing an effective information architecture in your workload to ensure user experience optimization.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

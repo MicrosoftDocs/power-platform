@@ -3,7 +3,7 @@ title: Recommendations for optimizing development practices through standardizat
 description: Learn how to optimize your development practices by standardizing your tools and processes.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

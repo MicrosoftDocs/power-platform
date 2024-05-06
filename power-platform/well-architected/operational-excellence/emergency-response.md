@@ -3,7 +3,7 @@ title: Emergency response recommendations
 description: Learn how to design an emergency response strategy for your workload, including processes and procedures to ensure calm, orderly issue resolution.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

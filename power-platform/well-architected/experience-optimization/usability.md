@@ -3,7 +3,7 @@ title: Recommendations for prioritizing ease of use
 description: Learn how to prioritize ease of use or usability during the design process to optimize the user experience.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

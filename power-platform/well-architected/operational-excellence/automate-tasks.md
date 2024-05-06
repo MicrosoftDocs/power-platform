@@ -3,7 +3,7 @@ title: Recommendations for implementing automation
 description: Learn how to automate tasks in your workload that are repetitive and prone to human error to gain efficiency, adhere to standards, and create consistency.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

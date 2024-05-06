@@ -3,7 +3,7 @@ title: Security design principles
 description: Understand the design principles of the Security pillar.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 05/10/2024

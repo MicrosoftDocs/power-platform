@@ -3,7 +3,7 @@ title: Recommendations for optimizing layout.
 description: Learn how to optimize app layout for different platforms and devices to enhance the user experience across various viewing contexts.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

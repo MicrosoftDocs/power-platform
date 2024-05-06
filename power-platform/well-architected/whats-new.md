@@ -3,7 +3,7 @@ title: What's new in Power Platform Well-Architected
 description: Find out what's new in Power Platform Well-Architected.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 05/10/2024

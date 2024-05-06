@@ -3,7 +3,7 @@ title: Design review checklist for Operational Excellence
 description: Learn how to incorporate an operational excellence approach in your Power Platform workload.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 05/10/2024

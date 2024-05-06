@@ -3,7 +3,7 @@ title: Recommendations for a user-centered design strategy
 description: Learn user-centered design strategies to ensure your workloads are useful, usable, and desirable, reducing design failures and enhancing user experience.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

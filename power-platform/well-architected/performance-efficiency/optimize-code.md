@@ -3,7 +3,7 @@ title: Recommendations for optimizing code and infrastructure
 description: Learn how to optimize your code and logic by using components only for their core purpose and only when necessary
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

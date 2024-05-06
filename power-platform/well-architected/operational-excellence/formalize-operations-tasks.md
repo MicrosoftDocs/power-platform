@@ -3,7 +3,7 @@ title: Recommendations for formalizing workload tasks
 description: Explore strategies for standardizing and formalizing routine and nonroutine tasks to enhance operational efficiency.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

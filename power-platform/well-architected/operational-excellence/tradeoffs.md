@@ -3,7 +3,7 @@ title: Operational Excellence tradeoffs
 description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for operational excellence.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 05/10/2024

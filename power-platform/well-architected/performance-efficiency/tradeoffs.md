@@ -3,7 +3,7 @@ title: Performance Efficiency tradeoffs
 description: Learn about the Performance Efficiency tradeoffs with other pillars.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 05/10/2024

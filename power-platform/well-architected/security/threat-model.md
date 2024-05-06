@@ -3,7 +3,7 @@ title: Application threat analysis
 description: Use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect an application.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

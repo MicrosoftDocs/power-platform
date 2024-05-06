@@ -3,7 +3,7 @@ title: How to use the Power Platform Well-Architected documentation
 description: Learn about Power Platform Well-Architected, the pillars of architectural excellence, and how the documentation is organized.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
 ms.date: 05/10/2024

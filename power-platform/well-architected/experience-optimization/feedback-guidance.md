@@ -3,7 +3,7 @@ title: Recommendations for providing meaningful feedback and guidance.
 description: Learn effective strategies for providing meaningful feedback and guidance to users, enhancing user experience and optimizing workload performance.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

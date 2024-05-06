@@ -3,7 +3,7 @@ title: Recommendations for designing for simplicity and efficiency
 description: Learn how to minimize unnecessary complexity and overhead by keeping your workloads simple and efficient.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

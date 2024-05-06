@@ -3,7 +3,7 @@ title: Recommendations for optimizing user perception and aesthetics
 description: Learn how to optimize user perception and aesthetics to guides users' attention to important elements thus optimizing the user experience.
 author: Denise-MSFT
 ms.author: demora
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

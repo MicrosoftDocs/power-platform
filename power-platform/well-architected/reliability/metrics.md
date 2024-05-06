@@ -3,7 +3,7 @@ title: Recommendations for defining reliability targets
 description: Learn how to define availability and recovery target metrics for critical workloads.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

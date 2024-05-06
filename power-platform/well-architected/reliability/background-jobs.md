@@ -3,7 +3,7 @@ title: Recommendations for developing background jobs
 description: Learn how to develop background jobs to help minimize the load on the application UI, which improves availability and reduces interactive response time.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

@@ -3,7 +3,7 @@ title: Recommendations for selecting the right services
 description: Learn how to select the appropriate services that best meet the requirements and demands of your workload.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

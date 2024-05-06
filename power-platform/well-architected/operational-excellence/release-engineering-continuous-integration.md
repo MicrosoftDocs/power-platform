@@ -3,7 +3,7 @@ title: Recommendations for using continuous integration
 description: Learn how to use continuous integration (CI) in release engineering, source control integration, test integration, and more.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

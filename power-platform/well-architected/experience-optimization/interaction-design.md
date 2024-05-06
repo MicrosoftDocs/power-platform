@@ -3,7 +3,7 @@ title: Recommendations for interaction design best practices
 description: Learn key principles of interaction design to enhance user experiences and optimize application usability.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

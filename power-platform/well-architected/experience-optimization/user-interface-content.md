@@ -3,7 +3,7 @@ title: Recommendations for writing user interface content
 description: Learn how to write clear, approachable, and consistent content for user interfaces to optimize the user experience.
 author: Denise-MSFT
 ms.author: demora
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual

@@ -3,7 +3,7 @@ title: Recommendations for designing a reliability testing strategy
 description: Learn how to design a reliability testing strategy that focuses on validating and optimizing the reliability of your workload.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
