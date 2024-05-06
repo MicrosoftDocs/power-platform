@@ -57,7 +57,11 @@ To use copilots and generative AI features, you must consent to the terms of use
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
 1. Select your environment.
-1. On the **Generative AI features** card, select **Edit**.
+1. On the **Generative AI features** card, select **Edit**. 
+
+    > [!NOTE]
+    > The **Generative AI features** card does not show up for regions listed above where the Azure OpenAI Service is hosted in the same region.
+
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
     When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
