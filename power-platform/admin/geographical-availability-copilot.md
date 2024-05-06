@@ -52,7 +52,7 @@ The following table lists the regions involved with copilots and generative AI f
 
 ## Turn on copilots and generative AI features
 
-To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center.
+To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you need to be a Microsoft 365 global administrator, Power Platform administrator, or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
