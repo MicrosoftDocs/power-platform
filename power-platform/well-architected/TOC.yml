@@ -20,7 +20,8 @@
         - name: Quick links
           href: ./reliability/index.yml
         - name: Design principles
-          href: ./reliability/principles.md
+#          href: ./reliability/principles.md
+          href: /azure/well-architected/reliability/principles.md?bc=/power-platform/well-architected/_bread/toc.json&toc=/power-platform/well-architected/toc.json
         - name: Checklist
           href: ./reliability/checklist.md
         - name: Tradeoffs
