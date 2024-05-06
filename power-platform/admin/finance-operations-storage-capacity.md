@@ -1,28 +1,23 @@
 ---
-title: Finance and operations storage capacity (preview)
+title: Finance and operations storage capacity
 description: Learn to use the finance and operations storage capacity report to understand your storage usage vs. your entitlement and get answers to frequently asked questions.
-author: sericks007
+author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/10/2024
+ms.date: 05/02/2024
 ms.subservice: admin
-ms.author: sericks 
-ms.reviewer: 
+ms.author: ceian 
+ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
 
-# Finance and operations storage capacity (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Finance and operations storage capacity
 
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 
 > [!IMPORTANT]
->
-> - This report is in preview. You may use it to manage your storage efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
+> This report allows you to manage your storage more efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
 
 ## Licenses for finance and operations storage
 
@@ -53,7 +48,7 @@ To view the **Summary** page, sign in to the [Power Platform admin center](https
 
 :::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Screenshot of the Capacity Summary page including finance and operations data.":::
 
-If you're using the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page will look like this:  
+If you're using the [legacy Dataverse storage capacity model](legacy-capacity-storage.md), your **Summary** page looks like this:  
 
 :::image type="content" source="media/finance-operations-storage-summary-tab-legacy.png" alt-text="Screenshot of the legacy Summary page including finance and operations data.":::
 
@@ -66,7 +61,7 @@ To view the **Finance and Operations** page, sign in to the [Power Platform admi
 :::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
 
 ### Table-level, drill-down view into storage consumption details for finance and operations environments
-Select the finance and operations database usage entry on the **Finance and operations** tab to to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. You have the ability to obtain a near real-time snapshot of the table-level storage consumption. Additionally, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. You also have the option to download the details in csv format for streamlined, data analysis and reporting.
+Select the finance and operations database usage entry on the **Finance and operations** tab to see a table-level, drill-down view of how each table in your finance and operations environment is using capacity. You have the ability to obtain a near real-time snapshot of the table-level storage consumption. Additionally, you can track the time series trend, gaining insights into the evolution of storage across finance and operation tables. You also have the option to download the details in csv format for streamlined, data analysis and reporting.
 
 :::image type="content" source="media/finance-operations-storage-capacity/fno-database-usage.png " alt-text="Screenshot of the tab showing storage consumption for each finance and operations environment.":::
 
@@ -107,28 +102,26 @@ This is due to a change in December 2023, where the Operations Database Capacity
 
 ### Why don’t I see which tables are causing the overage?  
 
-Details at the table level aren't available in the initial launch of reporting. Table analytics will be available in a future release.
+Details at the table level aren't available in the initial launch of reporting. Table analytics are planned for a future release.
 
 ### Is there any reporting for file capacity?
 
-File capacity reporting is in public preview. Capacity reports for Finance and operations File is not generally available. 
+File capacity reporting allows the review of your file storage consumption.
 
 :::image type="content" source="media/finance-operations-storage-capacity/finance-operations-database.png" alt-text="Screenshot of the Finance and operations File.":::
 
-A new report will provide log and file consumption analytics for finance and operations apps and is expected to be available during the calendar year 2024. The new report will provide enhanced precision for file consumption analytics.
+A more detailed report that provides log and file consumption analytics for finance and operations apps is expected to be available during the calendar year 2024.
 
 ### What happens if my consumption is over the entitled limit?
 
 The runtime experience isn't affected. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
 
-For File and Log capacity analytics for Finance and Operations, you're not expected to take any action currently in the public preview phase. This article will be updated with the steps to stay within the storage limit when File capacity analytics for Finance and Operations will be generally available.
-
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
-For now, your account team will work with you to stay within your entitlement limit.  
+For now, your account team works with you to stay within your entitlement limit.  
 
 ### We have multiple Lifecycle Services projects in our tenant with each having its own production and sandbox environment. How does storage reporting work in this case?
 
-Storage reporting covers usage at the tenant and environment level. All environments in all Lifecycle Services projects on the tenant will be included in storage reporting.
+Storage reporting covers usage at the tenant and environment level. All environments in all Lifecycle Services projects on the tenant are included in storage reporting.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

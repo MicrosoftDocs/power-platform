@@ -957,6 +957,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/admin/create-dlp-policy.md",
+      "redirect_url": "/power-platform/admin/prevent-data-loss",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/admin/storage-sas-token.md",
       "redirect_url": "/power-platform/admin/access-storage",
       "redirect_document_id": false
