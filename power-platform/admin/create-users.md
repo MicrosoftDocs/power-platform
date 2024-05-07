@@ -62,7 +62,7 @@ See [System and application users](system-application-users.md).
 
 ### Delegated administrator
 
-See the following topics: <br />
+See the following articles: <br />
 [For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
 [System and application users](system-application-users.md)
 
