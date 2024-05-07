@@ -1,5 +1,5 @@
 ---
-title: Reliability design principles
+title: Reliability design principles from WAF
 description: Understand the design principles of the Reliability pillar.
 author: manuelap-msft
 ms.author: prwilk
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Reliability design principles
+# Reliability design principles from WAF
 
 Outages and malfunctions are serious concerns for all workloads. A reliable workload must survive those events and continue to consistently provide its intended functionality. It must be resilient so that it can detect, withstand, and recover from failures within an acceptable time period. It must also be available so that users can access the workload during the promised time period at the promised quality level.
 
