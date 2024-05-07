@@ -11,7 +11,7 @@ contributors:
 - srpoduri
 - kavehkazms 
 ms.topic: conceptual
-ms.date: 03/21/2024
+ms.date: 05/07/2024
 search.audienceType: 
   - admin
 ---
@@ -45,7 +45,7 @@ Both service admin roles cannot do functions restricted to the Microsoft 365 glo
 Follow these steps to assign a service admin role.
 
 > [!NOTE]
-> When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is assigend to a user in Microsoft Entra ID, the user will is no longer automatically assigned to the System administrator role in environments. For more information on how to gain access to the System dministrator role and removing such access, see [Use Entra Privileged Identity Management to manage high-privileged admin roles in the Power Platform admin center](manage-high-privileged-admin-roles.md).
+> When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is assigend to a user in Microsoft Entra ID, the user is no longer automatically assigned to the system administrator role in environments. For more information on how to gain access to the system dministrator role and remove such access, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md).
 >
 > To opt-out of automatic license-based user roles, see [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md).
 
@@ -62,7 +62,7 @@ Follow these steps to assign a service admin role.
 6. Select **Save changes**.
 
 > [!NOTE]
-> If you are using the [Microsoft Entra Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, see [Use Entra Privileged Identity Management to manage high-privileged admin roles in the Power Platform admin center](manage-high-privileged-admin-roles.md).  
+> If you are using the [Microsoft Entra Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md).  
 > 
 > Service Admin roles must be assigned directly to users, as inheriting from security groups is not fully supported.
 
