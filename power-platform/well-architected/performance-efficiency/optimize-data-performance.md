@@ -171,6 +171,7 @@ Azure Cosmos DB has a [default indexing policy](/azure/cosmos-db/index-policy) t
 
 - [Overview on how to create performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview)
 - [Best practices for query performance](/azure/architecture/guide/technology-choices/data-store-decision-tree)
+- [Dataverse elastic tables](/power-apps/developer/data-platform/elastic-tables)
 - [OLAP overview](/azure/architecture/data-guide/relational-data/online-analytical-processing)
 - [OLTP overview](/azure/architecture/best-practices/data-partitioning)
 
