@@ -29,7 +29,7 @@ This guide describes the best practices for responding to live performance issue
 
 ## Key design strategies
 
-When you experience a live performance issue, you need to be prepared with the right data and a plan to respond to the issue. This plan should include clear lines of communication and responsibilities. The primary objective is to identify if the performance issues is temporary or isolated, to identify the root cause of the performance issue, and to implement solutions that facilitate a quick return to regular operations and provide insights from the incident. Integrating preventive measures into your workflow is a pivotal strategy. The goal is to either prevent the same issue from happening again or lessen its effects on performance if it isn't preventable.
+When you experience a live performance issue, you need to be prepared with the right data and a plan to respond to the issue. This plan should include clear lines of communication and responsibilities. The primary objective is to identify if the performance issues are temporary or isolated, to identify the root cause of the performance issue, and to implement solutions that facilitate a quick return to regular operations and provide insights from the incident. Integrating preventive measures into your workflow is a pivotal strategy. The goal is to either prevent the same issue from happening again or lessen its effects on performance if it isn't preventable.
 
 ### Prepare for issues
 
@@ -52,7 +52,7 @@ Creating a triage plan involves devising a structured approach to identify, esca
 
 ### Develop methods to identify and resolve issues
 
-Resolving live performance issues involves identifying and addressing any factors that can cause performance degradation or inefficiencies in a live workload. Data that you collect during monitoring is invaluable when you investigate and resolve performance-related incidents. This data provides a historical record of performance metrics. When you have monitoring data available, you can analyze root causes and identify contributing factors. You should use all relevant monitoring data to understand and fix each performance issue.
+Resolving live performance issues involves identifying and addressing any factors that can cause performance degradation or inefficiencies in a live workload. Data that you collect during monitoring is invaluable when you investigate and resolve performance-related incidents. This data provides a historical record of performance metrics. When you have monitoring data available, you can analyze root causes and identify contributing factors. You should use all relevant monitoring data to understand and fix each performance issue. Monitor how many transient spikes you are picking up, and adjust thresholds accordingly.
 
 ### Use root cause analysis
 
@@ -90,7 +90,7 @@ The documentation should indicate how to prevent each problem from happening aga
 
 **Developing methods to identify and resolve issues**: Azure provides several tools to help you respond to live performance issues:
 
-- Azure Monitor is a comprehensive monitoring solution that provides insights into the performance and health of your applications and infrastructure. Azure Monitor offers features such as metrics, logs, alerts, and dashboards to help you monitor and diagnose performance issues. Power Platform apps and automations can integrate with Azure Monitor using the Application Insights capability.  Standard telemetry along with custom trace events can be [logged and analyzed](/power-apps/maker/canvas-apps/application-insights).
+- Azure Monitor is a comprehensive monitoring solution that provides insights into the performance and health of your applications and infrastructure. Azure Monitor offers features such as metrics, logs, alerts, and dashboards to help you monitor and diagnose performance issues. Power Platform apps and automation can integrate with Azure Monitor using the Application Insights capability.  Standard telemetry along with custom trace events can be [logged and analyzed](/power-apps/maker/canvas-apps/application-insights).
 - Application Insights is an application performance management (APM) service that helps developers and DevOps professionals monitor live applications. It automatically detects performance anomalies, collects application-level logs and events, and provides analytics tools to diagnose issues. Power Platform integrates with [Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations). 
 - Log Analytics is a service that collects and analyzes log data from various sources, including applications, virtual machines, and Azure resources. When you use Log Analytics, you can query and analyze log data to gain insights into the performance and behavior of your applications. Consider using Log Analytics if your workload uses Azure resources.
 - [Solution Checker](/power-apps/maker/data-platform/use-powerapps-checker) performs rich static analysis on your solutions against a set of best-practice rules and identifies problematic patterns. Address any performance related issues before deploying the solution to production to avoid live-site performance issues. 

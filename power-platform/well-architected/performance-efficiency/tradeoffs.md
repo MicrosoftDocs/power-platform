@@ -40,7 +40,6 @@ One performance optimization strategy is to remove or bypass components or proce
 
 - Removing encryption in transit or at rest to improve transfer speeds exposes the data to potential integrity or confidentiality breaches.
 - Removing or reducing security scanning or inspecting tools to reduce processing times can compromise the confidentiality, integrity, or availability that those tools protect.
-- Decreasing the frequency of security patching to limit the performance impact can leave a workload more vulnerable to emerging threats.
 - Removing firewall rules from network flows to improve network latency can allow undesirable communication.
 - Minimizing data validation for quicker data processing might compromise data integrity, especially if inputs are malicious.
 
@@ -63,7 +62,7 @@ Sharing resources is an approach for improving efficiency. It increases density 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Reduced observability.** Monitoring is necessary to provide a workload with meaningful alerting and help ensure successful incident response.
 
 - Reducing log and metric volume to reduce the processing time spent on collecting telemetry instead of other tasks reduces the overall observability of the system. Some examples of the resulting reduced observability include:
-- 
+
     - It limits the data points that are used to build meaningful alerts.
     - It leads to gaps in coverage for incident response activities.
     - It limits observability in security-sensitive or compliance-sensitive interactions and boundaries.
@@ -86,7 +85,7 @@ Sharing resources is an approach for improving efficiency. It increases density 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Decreased user engagement.** The Experience Optimization pillar prioritizes more engaging user experiences.
 
 - Optimizing for performance prioritizes using platform features over customizations, which deprioritize custom components that could lead to a more engaging user experience.
-- Optimizing for performance can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
+- Optimizing for performance can focus too much on on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
 - User interface development is often done in faster iterations and ship cycles, which can make it harder to enhance performance continuously.
 
 ## Related resources
