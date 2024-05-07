@@ -8,11 +8,12 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/07/2023
+ms.date: 05/07/2024
 search.audienceType: 
   - admin
 contributors:
-- srpoduri 
+- srpoduri
+- val-bc 
 ---
 # Create users
 
