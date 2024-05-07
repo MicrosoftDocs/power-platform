@@ -3,7 +3,7 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 05/07/2024
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
@@ -11,6 +11,8 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+- paulliew
 ---
 # Manage the encryption key 
 
@@ -32,9 +34,11 @@ Encryption key management is only applicable to Azure SQL environment databases.
  
 > [!NOTE] 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
-> - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
-> - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
+> - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.
+> - After the feature is turned on in your tenant, all new environments are created with Azure SQL storage only. These environments, regardless of whether they're encrypted with bring-your-own-key (BYOK) or a Microsoft-managed key, have restrictions with file upload size, can't use Cosmos and Datalake services, and Dataverse Search indexes are encrypted with a Microsoft-managed key. To use these services, you must [migrate to customer-managed key](cmk-migrate-from-byok.md).
+> - [Files](/powerapps/developer/data-platform/file-attributes) and [Images](/powerapps/developer/data-platform/image-attributes) with sizes less than 128 MB can be used if your environment is version 9.2.21052.00103 or higher.
 > - A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
+
 
 <a name="KM_tasks"></a>   
 ## Introduction to key management  
