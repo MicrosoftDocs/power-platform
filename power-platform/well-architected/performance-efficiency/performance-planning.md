@@ -44,13 +44,13 @@ Design your workload with performance in mind to minimize refactoring after your
 - _Testing design and approach_: How do you measure performance? What's good enough and what's not? Are you testing with realistic scenarios and data? Are you testing for current and future needs?
 - _User acceptance and adoption_: How do you track performance? Are users' expectations realistic?
 
-### Plan your resources
+#### Plan your resources
 
 Performance needs time, money, effort, and people.  Allocate resources wisely from the beginning of your project. For example, developers might need extra time to find efficient ways to implement business logic and optimize code. You'll also need a testing environment and a team to conduct performance testing.
 
 Performance is not a one-time activity. As your workload usage changes and the platform evolves, you need to revisit the code and continue to find ways to optimize performance.
 
-### Plan data migrations and integrations
+#### Plan data migrations and integrations
 
 When migrating data from a prior system, plan the migration carefully. Here are some tips to help you avoid problems:
 
@@ -58,11 +58,11 @@ When migrating data from a prior system, plan the migration carefully. Here are 
 - Consider when and how often your integrations run. Avoid running resource-intensive processes when users are interacting with the system. Schedule heavy processes for off-peak hours or use asynchronous processing.
 - Be aware of platform limitations and best practices when you design your integrations. For example, use the Data Management Framework for high-volume integrations in finance and operations apps, and respect the [throttling limits](/powerapps/developer/data-platform/api-limits) in customer engagement apps.
 
-## Gather performance data
+### Gather performance data
 
 Gathering workload utilization data entails collecting and analyzing information on how a workload uses resources and how it performs. You should collect data on historical patterns for existing workloads and predictive measures for new workloads. This process helps translate business objectives into technical requirements and is essential for forecasting capacity. Consider the following recommendations:
 
-### Understand an existing workload
+#### Understand an existing workload
 
 Understanding an existing workload for capacity planning involves analyzing historical data related to how the workload utilizes resources. It encompasses metrics like resource utilization, performance data, and workload patterns. This understanding ensures efficient resource allocation, translates business goals into technical requirements, and helps identify potential bottlenecks.
 
@@ -76,7 +76,7 @@ _Identify_ _bottlenecks_: Measure throughput and response times to identify the 
 
 _Visualize the_ _data_: Create visualizations, like charts or plots, to gain better insights into historical data. Visualizations can help you identify patterns, trends, and anomalies in data to give you a clearer understanding of workload behavior.  Use process mining tools to visualize the data with a process map, enabling a deep analysis of the process.
 
-### Understand a new workload
+#### Understand a new workload
 
 Understanding a new workload for capacity planning refers to predicting the resource requirements of a future task without historical data. Predicting the future needs of a new workload without historical data can be challenging. This process ensures you allocate resources efficiently and align allocations with workload objectives when the workload is introduced. Consider the following recommendations:
 
@@ -88,11 +88,11 @@ _Pilot projects or prototypes_: Small-scale pilot projects or prototypes can hel
 
 _External data sources_: External data sources like industry reports, market studies, or customer surveys can provide additional information for estimating demand for a new workload. These sources can offer valuable insights into customer preferences, market trends, and potential demand drivers.
 
-## Forecast demand
+### Forecast demand
 
 Forecasting demand involves using workload data to predict future needs for a service or product. It's essential for capacity planning to ensure efficient resource allocation, anticipate growth patterns, and prepare for potential surges in demand. When you forecast future demand, you use data to get a sense of future needs. You apply statistical analysis, trend analysis, or predictive modeling techniques to the data you have to forecast future demand. These methods take into account historical or anticipated patterns and project them into the future to provide estimates of the expected workload demand. To forecast demand, consider these strategies:
 
-### Account for various scenarios
+#### Account for various scenarios
 
 As part of performance planning, you need to plan for different scenarios that might occur. This planning should include both predictable growth patterns and unexpected surges in demand. Usage patterns can grow or shrink. They can be organic (more or less users) or inorganic (an event or security incident). You need to conduct planning before usage changes, at key times:
 
@@ -106,7 +106,7 @@ As part of performance planning, you need to plan for different scenarios that m
 - Feature launch
 - Periodically
 
-### Use prediction techniques
+#### Use prediction techniques
 
 Forecasting future demand for a service or product involves using techniques like statistical analysis, trend analysis, and predictive modeling. Here's an overview of how you can use these techniques:
 
@@ -116,11 +116,11 @@ _Trend analysis_: Trend analysis involves examining historical data to identify 
 
 _Predictive modeling_: Predictive modeling is the process of building mathematical models that use historical data and other relevant variables to make predictions about future demand. You can use techniques like machine learning algorithms, neural networks, or decision trees. These models can take into account multiple factors and variables to provide more accurate forecasts.
 
-## Align forecasts with workload objectives
+### Align forecasts with workload objectives
 
 Aligning forecasts with workload objectives involves adjusting predictive capacity models to ensure they meet the specific goals and demands of a given workload. This alignment ensures resources are adequately provisioned, preventing both underutilization and potential workload overloads. For example, if you aim to support an integration with 1 million updates nightly, but current data shows slow update speeds, you need to adjust your system. It's essential to talk with stakeholders to grasp the workload's requirements. Make sure your plans align with the promises (SLAs) of your service providers. This alignment ensures your capacity meets the expected demand and helps pinpoint areas of the system that might need changes.
 
-### Determine resource requirements
+#### Determine resource requirements
 
 A workload can have many resources, so there's no one metric to observe to determine resource requirements. You need to measure capacity at the resource level to get meaningful results. Estimate the expected demand for your resources based on historical data, market trends, and business projections. Consider the number of transactions, concurrent users, or any other relevant metrics.
 
@@ -134,7 +134,7 @@ _API Requests_: Evaluate your API request consumption against your available cap
 
 _Personnel_: Assess the human resources required to manage and maintain the infrastructure, handle customer support, perform system maintenance, and ensure smooth operations. Consider factors like workload distribution, skill set, and required expertise.
 
-### Understand resource limitations
+#### Understand resource limitations
 
 Resources in your workload have performance limitations. Performance limitations apply to features within each service. You need to understand the limitations of the resources in your workload and factor those limitations into your design decisions. For example, you should know whether resource limitations require you to change the design approach or to change resources altogether.
 
