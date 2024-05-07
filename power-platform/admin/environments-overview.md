@@ -3,7 +3,7 @@ title: Environments overview | Microsoft Docs
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: overview
-ms.date: 03/12/2024
+ms.date: 05/07/2024
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
@@ -53,9 +53,9 @@ Users or security groups can be assigned to either of these two roles by an envi
 
 ## Early release cycle environments
 
-You can create environments in a subset of regions that get features early, i.e. before any standard release environments get them. 
-The ability to validate your scenarios before business-critical environments are updated is a great way to discover new capabilities and catch any updates that may impact your scenarios. See Create environment to learn how to create early release environments.
+You can create environments in a subset of regions that get features early, that is, before any standard release environments get them. 
 
+The ability to validate your scenarios before business-critical environments are updated is a great way to discover new capabilities and catch any updates that may impact your scenarios. See [Create and manage environments in the Power Platform admin center](create-environment.md) to learn how to create early release environments.
 
 ## Power Platform environment types
 
