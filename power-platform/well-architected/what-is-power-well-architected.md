@@ -25,6 +25,8 @@ Each pillar offers best practices, risk factors, and tradeoffs. The design choic
 
 Workload architecture differs from its execution. Power Platform Well-Architected can help you achieve optimal architectural design, but the execution options depend on the business goals and limitations of your organization.
 
+<!-- add blurb about Azure here -->
+
 ## Audience
 
 Power Platform Well-Architected is for teams that want to improve workloads and deal with cross-cutting issues. Power Platform Well-Architected offers useful insights and suggestions for anyone who participates in the lifecycle of a modern application workload built with Microsoft Power Platform. No matter what your role is in a workload team, whether it's architect, developer, maker, or business stakeholder, if you have the authority to make decisions within the scope of a workload, you can use the guidance.  

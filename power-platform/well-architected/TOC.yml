@@ -3,14 +3,14 @@
   items:
     - name: About
       items:
-      - name: What's new
-        href: whats-new.md
       - name: What is Power Platform Well-Architected
         href: what-is-power-well-architected.md
-      - name: Understand workloads
-        href: workloads.md
-      - name: Complete an assessment
-        href: implementing-recommendations.md
+      - name: What's new
+        href: whats-new.md
+    - name: Understand workloads
+      href: workloads.md
+    - name: Complete an assessment
+      href: implementing-recommendations.md
     - name: Pillars
       items:
       - name: Overview

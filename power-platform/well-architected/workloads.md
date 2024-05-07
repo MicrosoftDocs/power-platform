@@ -18,11 +18,9 @@ Workloads are designed by architects and built by a workload team. They meet fun
 Typical criteria for workload classification include:
 
 - Utility, characteristics, and usage patterns of a workload.
-
 - Key influential drivers.
-
-- Intended target audience. Examples of solutions with various audiences are internal line-of-business applications within enterprises, a purchased independent software vendor (ISV) solution, or a multitenant software as a service (SaaS) solution for public use.
-
+- Intended target audience.
+  
 Workloads that are in the same class can share similarities, including their target audience, compliance requirements, and technology stacks. The five pillars of Power Platform Well-Architected, their principles, checklists, and tradeoffs are relevant for all workload classes.
 
 Apply the pillar guidance to technical design principles and design areas that represent the priorities of your workload. Follow the recommendations to help set up a successful workload and to align it with Power Platform Well-Architected.
