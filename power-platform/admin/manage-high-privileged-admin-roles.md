@@ -190,7 +190,7 @@ Remove-RoleAssignmentFromUsers
 1. In the left side panel, select **Environments**.
 1. Select the chekmark next to your environment.
 1. Select **Membership** in the command bar to request self-elevation.
-1. Add yourself to the system administrator role by selecting **Add me**.
+1. The **System Administrators** pane is displayed. Add yourself to the system administrator role by selecting **Add me**.
 
    :::image type="content" source="media/self-elevate-membership-menu.png" alt-text="Use the Membership menu option to request self-elevation.":::
 
