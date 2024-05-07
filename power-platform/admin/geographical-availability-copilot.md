@@ -4,7 +4,7 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2024
+ms.date: 05/07/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -52,7 +52,7 @@ The following table lists the regions involved with copilots and generative AI f
 
 ## Turn on copilots and generative AI features
 
-To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you need to be a Microsoft 365 global administrator, Power Platform administrator, or Dynamics 365 administrator.
+To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Microsoft 365 global administrator, Power Platform administrator, or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
@@ -60,7 +60,7 @@ To use copilots and generative AI features, you must consent to the terms of use
 1. On the **Generative AI features** card, select **Edit**. 
 
     > [!NOTE]
-    > The **Generative AI features** card does not show up for regions listed above where the Azure OpenAI Service is hosted in the same region.
+    > The **Generative AI features** card isn't displayed for regions listed in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
 
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
