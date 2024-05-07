@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 05/07/2024
 search.audienceType: admin
 ---
 
@@ -185,14 +185,15 @@ Remove-RoleAssignmentFromUsers
 ```
 
 ### Self-elevate through Power Platform admin center
-#### Select the environment 
-:::image type="content" source="media/self-elevate-env-select.png" alt-text="Select an environment.":::
 
-#### Use the Membership menu option to request self elevation
-:::image type="content" source="media/self-elevate-membership-menu.png" alt-text="Use the Membership menu option to request self-elevation.":::
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the left side panel, select **Environments**.
+1. Select your environment.
+1. Use the Membership menu option to request self elevation.
 
-#### Add yourself to the system administrator role
-Select **Add me** to add yourself as a system administator in the environment.
+   :::image type="content" source="media/self-elevate-membership-menu.png" alt-text="Use the Membership menu option to request self-elevation.":::
+
+1. Add yourself to the system administrator role by selecting **Add me** to add yourself as a system administator in the environment.
 
 ## Known limitations
 
