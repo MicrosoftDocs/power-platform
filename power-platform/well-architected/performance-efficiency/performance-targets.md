@@ -34,11 +34,11 @@ This guide describes the recommendations for establishing and exposing performan
 
 Establishing performance targets is an essential step for achieving workload performance efficiency. Performance targets define the desired level of performance for your workload and help you gauge its effectiveness in meeting those objectives. Performance targets provide a benchmark to measure and compare a workload's efficiency. This benchmark can help you highlight improvement areas. The targets also align tasks with your organization's objectives and enhance business outcomes. Additionally, performance targets offer guidance in resource allocation, helping you ensure that workloads can adapt to varying demands while maintaining optimal performance.
 
-## Set performance targets early
+### Set performance targets early
 
 Set performance targets before you deploy your workload. Performance targets require research. Conduct market research, competitive analysis, and surveys to generate your performance target ranges. For an existing production workload that has no performance targets, use production data and user feedback to establish performance targets.
 
-## Determine performance requirements
+### Determine performance requirements
 
 Determining performance requirements is about identifying essential performance metrics like response time, throughput, and latency that are critical for your application. Aligning these performance targets with your organization's business goals ensures the workload meets the desired standards, whether for a best-in-class or average product. For example, you might aim to reduce response times, increase throughput rates, or optimize resource use.
 
@@ -53,7 +53,7 @@ When setting performance goals, it's important to align the organization's objec
 - _Business transactions_: Business transactions represent end-to-end user operations like completing a purchase or booking a service, their seamless execution is directly tied to user satisfaction.
 - _Workload all up_: This holistic metric gives an overview of the collective performance encompassing all components and aspects of the workload.
 
-## Identify key metrics
+### Identify key metrics
 
 Identifying key performance metrics involves determining the essential measurements that track the progress towards achieving workload performance goals. This identification provides a quantifiable way to measure and improve performance efficiency. When you identify key metrics to focus on, consider metrics related to availability, capacity, and response time:
 
@@ -61,7 +61,7 @@ Identifying key performance metrics involves determining the essential measureme
 - _Capacity_: Throughput and concurrency are sample capacity metrics. Throughput refers to the ability to handle a specific number of transactions within a given time period. For instance, an application integration with an external system might need to sustain 10 million update transactions per month. Concurrency is a measure of simultaneous users or actions.
 - _Response time:_ Latency and load time are common response time metrics. Latency is the time it takes to respond to a request (200 milliseconds). Load time is the time it takes for an application or web page to be interactive. A common target is 99% of customer lookup requests completing in less than 2 seconds.
 
-## Set specific targets
+### Set specific targets
 
 After you identify the key metrics, you need to specify performance targets or thresholds for each metric. Performance targets should be measurable, realistic, and aligned with your workload objectives. For example, you might set a target response time of less than 500 milliseconds (ms) or a target error rate of less than 1 percent. 
 
@@ -74,7 +74,7 @@ By using numerical targets, you can objectively assess performance over time. As
 - _Use percentiles_: Percentiles, such as P99, P95, and P50, are the industry standard to represent the result of performance assessments. Percentiles are measures that indicate how much data the number includes. For example, P99 covers 99% of the data. Use percentiles, rather than simple averages, to provide a more comprehensive understanding of workload performance. To measure percentiles, collect performance data over a period of time, typically using monitoring tools or logging mechanisms. Then analyze this data to determine the response time values at different percentiles.
 - _Set achievable goals_: Consider the baseline performance of the services you are using and set achievable goals. When using services that abstract the underlying platform, don't set goals that are tied to factors you don't control. For instance, setting a target of 200ms for a screen load would be unrealistic if the baseline performance is already 250ms, before you even have a chance to incorporate your custom logic.
 
-## Document and expose performance target
+### Document and expose performance target
 
 Documenting and exposing performance targets is about recording all performance targets in a centralized location. Meeting performance targets is a shared responsibility between development and operations teams. To ensure that the workload consistently meets or exceeds these targets, provide teams with the information and access to take action. To document and expose performance targets, consider these recommendations:
 
@@ -82,7 +82,7 @@ Documenting and exposing performance targets is about recording all performance 
 - _Expose performance targets_: All responsible teams should be able to review and create actionable tasks from the performance targets. Use information radiators, such as dashboards and reports, to make the performance targets accessible.
 - _Make it actionable_: The documentation and information radiators should suggest clear next steps. For example, a rise in errors might prompt an immediate check, or meeting a target consistently might suggest a reevaluation of that benchmark.
 
-## Evaluate user feedback
+### Evaluate user feedback
 
 Evaluating user feedback involves actively seeking out and analyzing the responses and suggestions of your users. Actively collecting and analyzing user feedback offers valuable insights into their needs and expectations. Regular communication helps in adjusting performance targets in line with changing preferences and tech trends. A focus on user needs means that the workload not only aligns with technical benchmarks but also undergoes continuous refinement. This approach, emphasizing user satisfaction, ensures that the workload remains relevant and successful in the long run.
 
