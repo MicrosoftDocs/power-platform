@@ -1,6 +1,6 @@
 ---
-title: Performance Efficiency design principles
-description: Understand the design principles of the Performance Efficiency pillar.
+title: Performance Efficiency design principles for well-architected Power Platform workloads
+description: Understand the design principles of the Power Platform Well-Architected  Performance Efficiency pillar.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
