@@ -13,8 +13,6 @@ ms.date: 05/10/2024
 
 The Power Platform Well-Architected pillars drive architectural excellence at the fundamental level of a workload.
 
-Use this matrix to familiarize yourself with the key concepts:
-
 | Pillar | Workload concern | Apply the principles | Strike a balance
 |--------|-------------|-------------------|-----------
 | [**Reliability**][resiliency-pillar] | Resiliency, availability, recovery| Design for business requirements, resilience, recovery, operations, while keeping it simple. <br> [Design principles](reliability/principles.md) | [Tradeoffs](./reliability/tradeoffs.md)
@@ -25,7 +23,7 @@ Use this matrix to familiarize yourself with the key concepts:
 
 ## Assessment review
 
-Assess your workload using the core pillars to **identify and prioritize opportunities** to improve the posture of your workloads.
+Assess your workload using the core pillars to identify and prioritize opportunities to improve the posture of your workloads.
 
 Start your assessment with the [Power Platform Well-Architected Review](https://aka.ms/powa/assessment).
 

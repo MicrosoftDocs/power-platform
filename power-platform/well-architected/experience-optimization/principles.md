@@ -1,6 +1,6 @@
 ---
-title: Experience Optimization design principles
-description: Understand the design principles that support Experience Optimization.
+title: Experience Optimization design principles for well-architected Power Platform workloads
+description: Understand the design principles of the Power Platform Well-Architected Experience Optimization pillar.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
