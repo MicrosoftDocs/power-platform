@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 05/08/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -51,7 +51,7 @@ Enabling _default environment routing_ might give you more environments to manag
    1. Select **Create**.
 
 > [!NOTE]
-> If you prefer to operate outside of the Power Platform admin center, the [Power Platform for Admins V2 (Preview) connector](https://learn.microsoft.com/en-us/connectors/powerplatformadminv2/) offers an alternative solution. It enables the creation and deletion of environment groups and the ability to add or remove environments from these environment groups, facilitating opportunities for automation.
+> If you prefer to operate outside of the Power Platform admin center, the [Power Platform for Admins V2 (Preview) connector](/connectors/powerplatformadminv2/) offers an alternative solution. It enables the creation and deletion of environment groups and the ability to add or remove environments from these environment groups, facilitating opportunities for automation.
 
 ## Configure the rules for your environment group
 
