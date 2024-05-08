@@ -8,18 +8,19 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/07/2023
+ms.date: 05/07/2024
 search.audienceType: 
   - admin
 contributors:
-- srpoduri 
+- srpoduri
+- val-bc 
 ---
 # Create users
 
 You use the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)] to create user accounts for every user who needs access to apps, flows, or chatbots. The user account registers the user with [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)]. 
 
 ## Create a user account  
- When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You have the option to let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. 
+ When you create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], the system generates a user ID and temporary password for the user. You can let the service send an email message to the user as clear text. Although the password is temporary, you might consider copying the information to send to the user through a more secure channel, such as from an email service that can digitally encrypt the contents. 
 
 For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] user account, see [Add users individually or in bulk](/microsoft-365/admin/add-users/add-users).  
   
@@ -38,7 +39,7 @@ For step-by-step instructions for creating a [!INCLUDE[pn_MS_Online_Services](..
 ## User types
 
 ### Regular users
-These are the regular synchronized users from Microsoft Entra ID.
+These users are the regular synchronized users from Microsoft Entra ID.
 
 ### Application users
 Identified by the presence of ApplicationId attribute in the system user record. To check the Microsoft Entra application ID, see [View or edit the details of an application user](manage-application-users.md#view-or-edit-the-details-of-an-application-user).
@@ -55,13 +56,13 @@ See [System and application users](system-application-users.md).
 - Not synchronized with Microsoft Entra ID, and created by Dataverse out of the box.
 - Placeholder user record for all of the internal Microsoft support users. 
 - Key identifiers: 
-  - UPN value is crmoln@microsoft.com.
+  - UPN (User Principal Name) value is crmoln@microsoft.com.
   - Access mode value is 3.
-- All Microsoft support users will be mapped to this well-known record at runtime.
+- All Microsoft support users are mapped to this well-known record at runtime.
 
 ### Delegated administrator
 
-See the following: <br />
+See the following articles: <br />
 [For partners: the Delegated Administrator](for-partners-delegated-administrator.md) <br />
 [System and application users](system-application-users.md)
 
@@ -70,7 +71,7 @@ See the following: <br />
 - Key identifiers: 
   - UPN value is crmoln2@microsoft.com. 
   - Access mode value is 5. 
-- All the delegated admin partner users will be mapped to this well-known record at runtime. 
+- All the delegated admin partner users are mapped to this well-known record at runtime. 
 
 ## User profile information
 
@@ -98,12 +99,16 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Address   </td><td>State or province    </td></tr>
 <tr><td>Address    </td><td>Country or region    </td></tr>
 <tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers.  After which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
+<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers; after which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> Custom fields are **never** syncronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
+> Custom fields are **never** synchronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
+> 
+> All the fields are **always** synchronized, except fields explicitly mentioned as not automatically updated (custom fields, Full Name, Primary Email, and Internal Email Address after a customer update).
+>
+> The system adds a "#" as the First Name if the First Name was originally blank.
 
 The following image shows Microsoft 365 user contact fields.
 
@@ -176,7 +181,7 @@ To disable a user account in an environment that has a Dataverse database, you c
 2. Select **Teams & groups** > **Active teams & groups**. 
 3. Select the security group that's associated with your environment. 
 4. Select the **Members** tab. 
-5. Under **Members**, select **View all and manage members**
+5. Under **Members**, select **View all and manage members**.
 6. Select the users in the list to remove them, and then select **Save**.
 
 #### To remove a license from a user
@@ -215,7 +220,7 @@ For users to have access to applications and data in an environment, at a minimu
 
 3. Users that have the necessary permissions, can use the [API](/powershell/module/microsoft.powerapps.administration.powershell/add-adminpowerappssyncuser?view=pa-ps-latest&preserve-view=true) to add or update users in Dataverse on demand. 
 
-4. Administrators can leverage the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
+4. Administrators can use the Power Platform admin center user management experience to [add users in Dataverse on demand](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database). 
 
 ## Categories of users not added automatically in Dataverse 
 
@@ -238,8 +243,8 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
    1. Admin users do not require a license. Unlicensed Microsoft Entra admins are enabled in the systems as “Setup user” and have administrative only access mode. 
    2. Individual users do not need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    3. Individual users do not need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
-   4. Non-interactive users do not need a license 
-   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center)  
+   4. Non-interactive users do not need a license.
+   5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center). 
 
 > [!NOTE]
 > Guest users should also have a license from the environment’s tenant. License from Guest user's tenant is NOT considered as valid license.
@@ -263,7 +268,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 1. In the Power Platform admin center, select an environment, and go to **Settings** > **Users + permissions** > **Users**.
 1. Select **Enabled Users**, and then open a user from the list.  
-1. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+1. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
 1. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Read-Write**.  
 1. Select the **Save** icon.
 
@@ -271,7 +276,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
 
-You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you'll create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
+You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
 
 > [!NOTE]
 > Any admin user with the Global admin, Power Platform admin, or Dynamics 365 Service admin role will receive the **Administrative** access mode as long as there are no user licenses assigned. This is true regardless of enabling app-passes or pay-as-you-go use at the tenant level.
@@ -297,7 +302,7 @@ You need to have the System Administrator security role or equivalent permission
   
 7. Select **Enabled Users**, and then open a user from the list.  
 
-8. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+8. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
   
 9. In the user form, scroll down under **Administration** to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Administrative**.  
 
@@ -315,7 +320,7 @@ You need to have the System Administrator security role or equivalent permission
 
 The non-interactive user isn't a "user" in the typical sense&mdash;it doesn't represent a person, it's an access mode that's created by means of a user account. It's used for programmatic access to and from customer engagement apps between applications. A non-interactive user account lets these applications or tools&mdash;such as a connector from customer engagement apps to ERP&mdash;authenticate and access customer engagement apps without requiring a license. For each environment, you can create up to seven non-interactive user accounts.  
   
-You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you'll create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
+You need to have the System Administrator security role or equivalent permissions to create a non-interactive user. First, you create a user account in Microsoft 365. Then, in customer engagement apps, select the non-interactive access mode for the account.  
   
 1. Create a user account in the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)].  
   
@@ -325,7 +330,7 @@ You need to have the System Administrator security role or equivalent permission
   
 3. Select **Enabled Users**, and then open a user from the list.  
 
-4. On the user pane command bar select **...** > **Manage user in Dynamics 365**.
+4. On the user pane command bar, select **...** > **Manage user in Dynamics 365**.
 5. In the user form, scroll down under **Administration**  to the **Client Access License (CAL) Information** section. In the **Access Mode** list, select **Non-interactive**.  
   
    You then need to remove the license from the account.  
@@ -346,7 +351,7 @@ You can use server-to-server (S2S) authentication to securely and seamlessly com
 All application users are created with a non-interactive user account, however they aren't counted toward the limit of seven non-interactive user accounts. In addition, there's no limit on how many application users you can create in an environment.
 
 > [!CAUTION]
-> For an application user, the system adds a "#" as the First Name for the Application User you create. This is by design.
+> The system adds a "#" as the First Name for the Application User you create. This is by design.
 
 For step-by-step information about creating an application user, see [Create an application user](manage-application-users.md#create-an-application-user).
 
@@ -446,10 +451,10 @@ The following table shows the fields that are populated on the user form (user r
 User record is not deleted, but its state in Dataverse will be updated to “disabled”.  
 
 ### Are all users in Microsoft Entra being added to Dataverse? 
-Users from Microsoft Entra are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”, 
+Users from Microsoft Entra are added to Dataverse only if they meet the criteria. If already existing users do not meet the criteria, their state will be updated to “disabled”.
 
 ### How can the admin increase the performance of adding users in Dataverse? 
-Assigning a Microsoft Entra security group to the environment is a best practice in general, that can also result in a performance increase as regard to adding users that are part of the security group to Dataverse. 
+Assigning a Microsoft Entra security group to the environment is a best practice in general. It can also result in a performance increase when adding users that are part of the security group to Dataverse. 
 
 
 
