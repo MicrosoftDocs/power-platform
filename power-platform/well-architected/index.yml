@@ -2,7 +2,7 @@
 title: Power Platform Well-Architected
 metadata:
   title: Power Platform Well-Architected
-  description: Power Platform Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+  description: Microsoft Power Platform Well-Architected is a set of best practices, architecture guidance, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: well-architected
@@ -13,7 +13,7 @@ sections:
   # Intro
   - componentType: text 
     title: Power Platform Well-Architected 
-    summary: Power Platform Well-Architected is a set of guiding principles, architecture strategies, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+    summary: Microsoft Power Platform Well-Architected is a set of best practices, architecture guidance, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
     links:
     - componentType: link
       url: what-is-power-well-architected
