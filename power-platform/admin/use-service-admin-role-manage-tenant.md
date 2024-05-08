@@ -108,7 +108,7 @@ The following matrix shows what management is possible with the various service 
 |Add security roles|Yes|No|No|No|  
 |Add licenses|Yes|No|No|No|  
 
-<sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
+<sup>1</sup>Equivalent permission level to a System Administrator after [self-elevation](manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role). Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
 
 <sup>2</sup>If no security group is assigned to the environment, or if a security group is assigned and the user with this role is added to it.
 
