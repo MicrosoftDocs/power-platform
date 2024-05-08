@@ -42,7 +42,7 @@ A good fusion development and DevOps culture thrives on shared responsibility. D
 
 DevOps practices apply clear lines of ownership and accountability to each team. Regardless of where the application runs, the workload team is responsible for that application. DevOps optimizes operational tasks so that they're effective but not burdensome. To reap the full benefit of DevOps, the culture should optimize processes through technology and have processes for people in the organization to promote transparent communication.
 
-Learn about the [benefits and approaches](/azure/well-architected/operational-excellence/principles#embrace-devops-culture) of this principle in Azure Well-Architected Framework.
+Learn more about [embracing DevOps culture](/azure/well-architected/operational-excellence/principles#embrace-devops-culture) in Azure Well-Architected Framework.
 
 ## Establish development standards
 
@@ -51,7 +51,7 @@ Learn about the [benefits and approaches](/azure/well-architected/operational-ex
 
 The development team is responsible for addressing workload issues prior to release with minimal friction. Be mindful of developer efficiency and optimize for fast turnaround cycles, from coding to testing results. Implement effective and right-sized processes that plan and standardize technical activities and also drive consensus within the team and the stakeholders.
 
-Learn about the [benefits and approaches](/azure/well-architected/operational-excellence/principles#establish-development-standards)
+Learn more about [establishing development standards](/azure/well-architected/operational-excellence/principles#establish-development-standards) in Azure Well-Architected Framework.
 
 ## Evolve operations with observability
 
@@ -60,7 +60,7 @@ Learn about the [benefits and approaches](/azure/well-architected/operational-ex
 
 Build a culture that continuously improves quality by monitoring the workload and taking all the pillars of the Power Platform Well-Architected into consideration. Enable the team and stakeholders to make both short-term and long-term decisions across many facets by providing the necessary data, statistics, and trends. Learn from your data and drive improvements. Operations built for the purposes of observability are key in proactive maintenance of the application, quality and security assurance, capacity planning, and product management. A crucial aspect of monitoring is application using health modeling to help you anticipate issues before they become incidents and affect customer experience. Efficient monitoring reduces reactive cycles spent on incident management.
 
-Learn about the [benefits and approaches](/azure/well-architected/operational-excellence/principles#evolve-operations-with-observability)
+Learn more about [evolving operations with observability](/azure/well-architected/operational-excellence/principles#evolve-operations-with-observability) in Azure Well-Architected Framework.
 
 ## Deploy with confidence
 
@@ -69,7 +69,7 @@ Learn about the [benefits and approaches](/azure/well-architected/operational-ex
 
 Build a workload supply chain that enables you to consistently reach the goal of predictability in all of your environments, across the workload's hosting platforms, applications, data, and configuration resources. The deployment mechanism must be capable of automation, testing, monitoring, and versioning. It should be modularized and ready to execute on demand. It shouldn't be represented as a monolithic end-to-end process. The supply chain isn't necessarily for faster execution, but to achieve consistency and self-documentation over multiple iterations.
 
-Learn about the [benefits and approaches](/azure/well-architected/operational-excellence/principles#deploy-with-confidence)
+Learn more about [deploying with confidence](/azure/well-architected/operational-excellence/principles#deploy-with-confidence) in Azure Well-Architected Framework.
 
 ## Automate for efficiency
 
@@ -78,7 +78,7 @@ Learn about the [benefits and approaches](/azure/well-architected/operational-ex
 
 The workload might have workflows with processes that involve team members doing mundane, repetitive, and time-consuming tasks that don't actually need human intellect. Depending on the frequency, you might spend considerable time on these efforts, investing more time as the workload grows. Also, these processes are often error-prone due to human input. Through automation, you save time, effort, and money, and you avoid mistakes.
 
-Learn about the [benefits and approaches](/azure/well-architected/operational-excellence/principles#automate-for-efficiency)
+Learn more about [automating for efficiency](/azure/well-architected/operational-excellence/principles#automate-for-efficiency) in Azure Well-Architected Framework.
 
 ## Adopt safe deployment practices
 
@@ -87,7 +87,7 @@ Learn about the [benefits and approaches](/azure/well-architected/operational-ex
 
 During the development cycle, workload artifacts go through many changes as they get implemented and tested and as bugs are fixed. The deployment process must follow a standard operating procedure. Any change must be deployed with the same level of rigor. This principle applies equally to code, configuration, and all related artifacts. The key is to apply safe practices as early as possible so that you have predictability in production. Even if errors reach the customers, you should be able to roll out recovery changes as soon as possible.
 
-Learn about the [benefits and approaches](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices)
+Learn more about [safe deployment practices](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices) in Azure Well-Architected Framework.
 
 ## Next steps
 
