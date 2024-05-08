@@ -24,7 +24,7 @@ If you don't apply these principles to your design, the workload most likely won
 
 Requirements must cover user experience, data, workflows, and characteristics that are unique to the workload. The outcome of _the requirements process must clearly state the expectations_. The goals must be achievable and negotiated with the team, given a specified investment. They must be documented to drive technological choices, implementations, and operations.
 
-[Get more information about this principle](/azure/well-architected/reliability/principles#design-for-business-requirements) in Azure Well-Architected Framework.
+Learn about [designing for business requirements](/azure/well-architected/reliability/principles#design-for-business-requirements) in Azure Well-Architected Framework.
 
 ## Design for resilience
 
