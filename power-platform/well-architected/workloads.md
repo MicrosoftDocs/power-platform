@@ -11,7 +11,7 @@ contributors:
 
 # Power Platform Well-Architected workloads
 
-Power Platform Well-Architected uses the term _workload_ to describe a set of application resources, data, and supporting infrastructure that work together to deliver specific business results. A workload includes components as well as development and operational processes.
+Power Platform Well-Architected uses the term _workload_ to describe a set of application resources, data, and supporting infrastructure that work together to deliver desired business outcomes. A workload comprises application and technology components as well as behavioral, development, and operational processes.
 
 Workloads are designed by architects and built by a workload team. They meet functional and nonfunctional business needs. Workloads have many types.
 
