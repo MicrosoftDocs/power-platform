@@ -33,7 +33,7 @@ To ensure compliance and prevent surprises, admins should keep up-to-date with t
 
     To learn more, go to [View license consumption for Power Apps and Power Automate (preview)](../view-license-consumption-issues.md).
 
-There are four scenarios that the report enables to ID flows that require a license. Ensure compliance with the licensing requirements covered in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). We expect to add more scenarios to this report to help administrators identify flows that require their attention.
+There are a set of scenarios that the report enables to ID flows that require a license. Ensure compliance with the licensing requirements covered in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). We expect to add more scenarios to this report to help administrators identify flows that require their attention.
 
 ## Types of enforcements
 
