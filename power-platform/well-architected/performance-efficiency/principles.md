@@ -24,7 +24,7 @@ Without a clear understanding of the performance expectations of your workload, 
 
 Start your design process with clear performance targets based on the business needs and expectations. Rather than just focusing on technical metrics, work with business stakeholders to set expectations and define targets that are aligned with the expected user experience of the workload.
 
-[Get more information about this principle](/azure/well-architected/performance-efficiency/principles#negotiate-realistic-performance-targets), including approaches and benefits, in Azure Well-Architected Framework.
+Learn more about [establishing achievable goals for performance](/azure/well-architected/performance-efficiency/principles#negotiate-realistic-performance-targets) in Azure Well-Architected Framework.
 
 ## Design to meet performance requirements
 
@@ -33,7 +33,7 @@ Start your design process with clear performance targets based on the business n
 
 It's important to proactively measure performance. Choose services and features across the technology stack that enable you to meet your performance goals, monitor performance and track which components of the workload may pose challenges, define a process for testing performance.
 
-[Get more information about this principle](/azure/well-architected/performance-efficiency/principles#design-to-meet-capacity-requirements), including approaches and benefits, in Azure Well-Architected Framework.
+Learn more about [designing to meet performance requirements](/azure/well-architected/performance-efficiency/principles#design-to-meet-capacity-requirements) in Azure Well-Architected Framework.
 
 ## Achieve and maintain performance
 
@@ -42,7 +42,7 @@ It's important to proactively measure performance. Choose services and features 
 
 Performance isn't a one-time activity. You need to keep working on it throughout the development of the workload. Expect to test and optimize your workload several times, any changes to requirements, configuration, code or product features can have an impact on performance. 
 
-[Get more information about this principle](/azure/well-architected/performance-efficiency/principles#achieve-and-sustain-performance), including approaches and benefits, in Azure Well-Architected Framework.
+Learn more about [achieving and maintaining performance](/azure/well-architected/performance-efficiency/principles#achieve-and-sustain-performance) in Azure Well-Architected Framework.
 
 ## Improve efficiency through optimization
 
@@ -51,7 +51,7 @@ Performance isn't a one-time activity. You need to keep working on it throughout
 
 Establish a performance culture that allows developers to spend time on performance optimization. Adjust performance targets based on user experience, and monitor which components of your workload experience heavy load. Continue to evaluate new product features that could improve performance. The cycle of monitoring, optimizing, testing, and deploying is a continuous process.
 
-[Get more information about this principle](/azure/well-architected/performance-efficiency/principles#improve-efficiency-through-optimization), including approaches and benefits, in Azure Well-Architected Framework.
+Learn more about [improving efficiency through optimization](/azure/well-architected/performance-efficiency/principles#improve-efficiency-through-optimization) in Azure Well-Architected Framework.
 
 ## Next steps
 
