@@ -15,26 +15,32 @@ Performance is a key factor in the success of any Power Platform workload. Poor 
 
 Use the following design principles, modeled on the Microsoft Azure Well-Architected Framework, to help build a strategy that ensures the performance meets your business requirements whilst at the same time staying within the limits and capabilities of Power Platform services. Start with the recommended best practices and justify the benefits of each performance efficiency principle. Once you set your strategy, use the [Performance Efficiency checklist](checklist.md). as your next step.
 
-Without a clear understanding of the performance expectations of your workload, you risk over- or underinvesting in resources and you might not be able to meet user demands.
+Without a clear understanding of the performance expectations of your workload, you may end up spending too much or too little on resources and you may fail to satisfy user needs.
 
-## Negotiate realistic performance targets
+## Establish achievable goals for performance
 
 |![Goal icon](../_images/goal.svg) The intended user experience is defined, and there's a strategy to develop a benchmark and measure targets against the pre-established business requirements.|
 |--|
+
+Start your design process with clear performance targets based on the business needs and expectations. Rather than just focusing on technical metrics, work with business stakeholders to set expectations and define targets that are aligned with the expected user experience of the workload.
 
 [Get more information about this principle](/azure/well-architected/performance-efficiency/principles#negotiate-realistic-performance-targets), including approaches and benefits, in Azure Well-Architected Framework.
 
 ## Design to meet performance requirements
 
-|![Goal icon](../_images/goal.svg) Provide enough supply to address anticipated demand.|
-|--| 
+|![Goal icon](../_images/goal.svg) Select the right services to meet performance targets.|
+|--|
+
+It's important to proactively measure performance. Choose services and features across the technology stack that enable you to meet your performance goals, monitor performance and track which components of the workload may pose challenges, define a process for testing performance.
 
 [Get more information about this principle](/azure/well-architected/performance-efficiency/principles#design-to-meet-capacity-requirements), including approaches and benefits, in Azure Well-Architected Framework.
 
-## Achieve and sustain performance
+## Achieve and maintain performance
 
 |![Goal icon](../_images/goal.svg) Protect against performance degradation while the system is in use and as it evolves.|
 |--|
+
+Performance isn't a one-time activity. You need to keep working on it throughout the development of the workload. Expect to test and optimize your workload several times, any changes to requirements, configuration, code or product features can have an impact on performance. 
 
 [Get more information about this principle](/azure/well-architected/performance-efficiency/principles#achieve-and-sustain-performance), including approaches and benefits, in Azure Well-Architected Framework.
 
@@ -42,6 +48,8 @@ Without a clear understanding of the performance expectations of your workload, 
 
 |![Goal icon](../_images/goal.svg) Improve system efficiency within the defined performance targets to increase workload value.|
 |--|
+
+Establish a performance culture that allows developers to spend time on performance optimization. Adjust performance targets based on user experience, and monitor which components of your workload experience heavy load. Continue to evaluate new product features that could improve performance. The cycle of monitoring, optimizing, testing, and deploying is a continuous process.
 
 [Get more information about this principle](/azure/well-architected/performance-efficiency/principles#improve-efficiency-through-optimization), including approaches and benefits, in Azure Well-Architected Framework.
 
