@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 05/08/2024
 author: Zeffin
 ms.subservice: admin
 ms.author: johnev
@@ -74,12 +74,10 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Currency | CurrencyEnvironmentAllocate | Emitted when currency (add-on) is allocated or deallocated to an environment. |
 | Trials | TrialConvertToProduction | Emitted when a trial plan is converted to a production plan. |
 | Trials | TrialEnforce | Emitted when a customer attempts to provision environments beyond the trial limit. |
-| Trials | TrialExtend | Emitted when a trial is extended past its original expiration date. |
 | Trials | TrialProvision | Emitted when a new trial plan is provisioned. |
 | Trials | TrialSignUpEligibilityCheck | Emitted prior to trial provisioning when a check occurs to determine trial eligibility. |
-| Trials | TrialViralConsent | Emitted during trial provisioning. Includes a list of which trial plan types the customer has consented to. |
+| Trials | TrialViralConsent | Emitted when a tenant changes their consented plan types, and reflects the new state. |
 | Trials | AssignLicenseToUser | Emitted when a trial license is assigned to a user. |
-| Licensing | DeveloperPlanConsent | Emitted when a tenant admin consents to usage of developer plans. |
 | Environment Lifecycle | EnvironmentDisabledByMiser | Emitted when an environment is automatically disabled due to insufficient database capacity. |
 
 ## Activity category: Admin actions
