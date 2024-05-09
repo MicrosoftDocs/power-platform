@@ -72,11 +72,11 @@ Root cause analysis requires hypothesis testing. After you review monitoring dat
 
 ### Engage Microsoft support
 
-Microsoft support can be an essential step when you deal with ongoing performance issues. Microsoft support representatives have the expertise, tools, resources, and experience to help fix issues and may know of ongoing global performance issues or outages that could impact your workload. Your support agreement determines the level of support a vendor provides.
+Microsoft support can be an essential step when you deal with ongoing performance issues. Microsoft support representatives have the expertise, tools, resources, and experience to help fix issues and may know of ongoing global performance issues or outages that could impact your workload. Your support agreement determines the level of support provided.
 
-It's often best to work in parallel with Microsoft support. You should create a plan to have some team members collaborate with Microsoft support while others continue to triage and fix performance issues. 
+It's often best to work in parallel with Microsoft support. You should create a plan to have some team members collaborate with Microsoft support while others continue to triage and fix performance issues.
 
-You need to have contact information available for your personnel. Microsoft support might also need access to data to effectively engage in problem solving. 
+You need to have contact information available for your personnel. Microsoft support might also need access to data to effectively engage in problem solving.
 
 For more information, see [Get Help + Support in Power Platform](/power-platform/admin/get-help-support)
 
