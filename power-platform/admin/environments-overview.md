@@ -1,5 +1,5 @@
 ---
-title: Environments overview | Microsoft Docs
+title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: overview
@@ -12,7 +12,7 @@ contributors:
 ms.contributors:
 - iyanni
 ---
-# Power Platform environment
+# Power Platform environments overview
 
 A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
