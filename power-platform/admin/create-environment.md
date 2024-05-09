@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2024
+ms.date: 05/09/2024
 ms.subservice: admin
 ms.author: mbajwa
 ms.reviewer: sericks
@@ -233,7 +233,7 @@ Users can access resources in an environment if they have:
 
 This region is no longer available as a choice. It has been replaced with the **Get new features early** setting when the United States region is selected.
 
-Preview or early release cycle capabilities are now available for environments in other regions, in addition to the United States.
+Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
 
 ### What are the new trial limits for Power Apps customers?
 
