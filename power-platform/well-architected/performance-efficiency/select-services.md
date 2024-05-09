@@ -109,7 +109,17 @@ A cache stores frequently accessed data. Caching reduces data access latency and
 
 ### Evaluate business logic requirements
 
-<!-- TODO -->
+Choose how to implement your business logic based on your functional, performance, and reusability requirements. Power Platform offers many options to execute business logic; for example, Power Automate cloud flows, low-code or code-first plugins, and Business Rules. Most workloads will use a combination of different options.
+
+To evaluate how to implement business logic, consider:
+
+- _Team skills_. Your team builds and maintains workloads. Different services require different skills. Choose services that your team knows how to use, or commit to training them before you choose a service. Ensure that team members possess the expertise and knowledge to effectively use the services and to optimize their performance. For example, developing [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) will require your workload team to write .NET or [Power Fx code](/power-apps/maker/data-platform/low-code-plug-ins).
+- _Logic approach_. Evaluate whether there are steps in the logic that require human interaction—such as through an approval process or a form response—and, if so, determine whether all steps can be executed without human interaction. For example, you might use [Power Automate Approvals](/power-automate/get-started-approvals) if human interaction is required, but choose to use a Dataverse plugin to have the logic run seamlessly as part of the Dataverse data operation when human interaction is not required.  
+- _Integration_. Review your architecture diagram and consider which systems your workload needs to integrate with. Evaluate the options for integration and consider the impact on performance and reliability. Real-time integration can provide immediate benefits to users, but it might impact performance and reliability. Using asynchronous approaches like Power Automate, or publishing [Dataverse events](/power-apps/developer/data-platform/business-events#custom-events) to a queue for later processing, can improve performance and reliability. However, these methods don’t give users immediate. 
+- _Complexity_. Consider the complexity of your logic and evaluate whether it can be broken down into separate steps. For example, to use [business rules](/power-apps/maker/data-platform/processes#business-rules) to validate mandatory fields, data formats, and ranges, instead of implementing the logic in a canvas app or custom script. For simple calculations based on existing values, you might use [calculated](/power-apps/maker/data-platform/define-calculated-fields) or [rollup](/power-apps/maker/data-platform/define-rollup-fields) fields, and for more complex calculations use a Dataverse plug-in.  
+- _Reusability_. Identify and reuse logic to improve consistency and maintenance. Consider if you need to reuse the business logic from various points of the workload. For example, Dataverse plug-in logic can be called from apps and automations, whereas if you put the business logic in the canvas app, you can’t reuse it.
+
+Remember that the choice depends on your specific requirements, workload complexity, and integration needs. Evaluate each option based on your project goals and organizational context. Consider if using the logic could help more than just a single project. If it can, adjust your approach to provide the most benefits.
 
 ### Evaluate responsiveness
 
@@ -132,6 +142,12 @@ Remember that users judge performance by their expectations, not by objective me
 - [Performance considerations for Power Apps](/power-apps/maker/canvas-apps/app-performance-considerations)
 - [Understand canvas app execution phases and data call flow](/power-apps/maker/canvas-apps/execution-phases-data-flow)
 - [Plan, scale, and maintain a business-critical gateway solution](/data-integration/gateway/plan-scale-maintain)
+- [Use low-code plugins in Dataverse](/power-apps/maker/data-platform/low-code-plug-ins)
+- [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
+- [Dataverse formula, calculated, and rollup columns using code](/power-apps/developer/data-platform/calculated-rollup-attributes)
+- [Work with formula columns in Dataverse](/power-apps/maker/data-platform/formula-columns)
+- [Apply business logic in Microsoft Dataverse](/power-apps/maker/data-platform/processes)
+- [Microsoft Dataverse business events](/power-apps/developer/data-platform/business-events)
 
 ## Performance Efficiency checklist
 
