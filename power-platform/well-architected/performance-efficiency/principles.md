@@ -17,7 +17,7 @@ Use the following design principles from the Microsoft Azure Well-Architected Fr
 
 Without a clear understanding of the performance expectations of your workload, you may end up spending too much or too little on resources and you may fail to satisfy user needs.
 
-## Establish achievable goals for performance
+## Negotiate realistic performance targets
 
 |![Goal icon](../_images/goal.svg) The intended user experience is defined, and there's a strategy to develop a benchmark and measure targets against the pre-established business requirements.|
 |--|
@@ -35,7 +35,7 @@ It's important to proactively measure performance. Choose services and features 
 
 Learn more about [designing to meet performance requirements](/azure/well-architected/performance-efficiency/principles#design-to-meet-capacity-requirements) in Azure Well-Architected Framework.
 
-## Achieve and maintain performance
+## Achieve and sustain performance
 
 |![Goal icon](../_images/goal.svg) Protect against performance degradation while the system is in use and as it evolves.|
 |--|

@@ -18,6 +18,9 @@ ms.topic: conceptual
 
 This guide describes the recommendations for optimizing code and infrastructure performance. To optimize your code and infrastructure, you should use your components only for their core purpose and only when required. When you overuse code and infrastructure, it creates unnecessary resource consumption, bottlenecks, and slow responses. To compensate for those inefficiencies, you must add more resources to accomplish the same tasks.
 
+> [!NOTE]
+> This recommendation aligns with [Recommendations for optimizing code and infrastructure](/azure/well-architected/performance-efficiency/optimize-code-infrastructure) in the Azure Well-Architected Framework Performance Efficiency pillar.
+
 **Definitions**
 
 | Term | Definition |

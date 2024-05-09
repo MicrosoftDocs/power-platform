@@ -18,6 +18,9 @@ ms.topic: conceptual
 
 This guide describes the recommendations for continuous performance optimization. Continuous performance optimization is the process of constantly monitoring, analyzing, and improving performance efficiency. Performance optimization needs to be an ongoing activity throughout the life of the workload. Workload performance can degrade or become excessive over time. Factors to consider include changes in usage patterns, increase in data being stored, demand, features, and technical debt.
 
+> [!NOTE]
+> This recommendation aligns with [Recommendations for continuous performance optimization](/azure/well-architected/performance-efficiency/collect-performance-data) in the Azure Well-Architected Framework Performance Efficiency pillar.
+
 **Definitions**
 
 | Term | Definition |
