@@ -25,7 +25,8 @@ Each pillar offers best practices, risk factors, and tradeoffs. The design choic
 
 Workload architecture differs from its execution. Power Platform Well-Architected can help you achieve optimal architectural design, but the execution options depend on the business goals and limitations of your organization.
 
-Power Platform Well-Architected is based on the methodology and guidance in [Microsoft Azure Well-Architected Framework](/azure/well-architected). It is designed to be used in alignment with Azure Well-Architected for those organizations that use both Power Platform and Azure.
+> [!NOTE]
+> Power Platform Well-Architected is based on the methodology and guidance in [Microsoft Azure Well-Architected Framework](/azure/well-architected). It is designed to be used in alignment with Azure Well-Architected for those organizations that use both Power Platform and Azure.
 
 ## Audience
 
@@ -44,7 +45,7 @@ The main goal of Power Platform Well-Architected is to help you achieve success 
 
 ## Pillars
 
-Pillars are the foundation of Power Platform Well-Architected. They are the high-level areas of focus that are critical to the success of a workload. Four of the five pillars in Power Platform Well-Architected (Reliability, Security, Operational Excellence, Performance Efficiency) are based on [Azure Well-Architected Framework](/azure/well-architected). The fifth pillar, Experience Optimization, is unique to Power Platform Well-Architected.
+Pillars are the foundation of Power Platform Well-Architected. They are the high-level areas of focus that are critical to the success of a workload. Four of the five pillars in Power Platform Well-Architected (Reliability, Security, Operational Excellence, Performance Efficiency) are based on the [Azure Well-Architected Framework](/azure/well-architected/pillars). The fifth pillar, Experience Optimization, is unique to Power Platform Well-Architected.
 
 1. Start your journey with the **Design principles**. Each principle has a specific goal. For each principle, follow the approaches to craft your design strategy. 
 
