@@ -104,10 +104,16 @@ To ensure optimal caching efficiency, consider factors like expiration policies,
 - _Database query caching_: Use this technique to cache the results of database queries to avoid running the same query multiple times. Database query caching is useful for complex and time-consuming database queries. When you cache the results of a query, subsequent requests for the same query are returned quickly. Also consider using server-side views where possible to prefilter data to narrow down data relevant to your query.
 - _Content delivery network caching_: Use this technique to cache web content on distributed network servers to reduce latency and improve content delivery. Content delivery network caching is effective for static content, like images, CSS files, and JavaScript files. Content delivery networks store copies of content in multiple locations worldwide, so users can access the content from a server that's near them geographically.
 
-<!-- 
 #### Optimize data updates
 
-TODO -->
+Optimizing data updates means evaluating the updates of data that are performed to ensure they are performant. Updates can impact performance more than other operations as they can trigger unnecessary work as well as locking contention.
+
+To evaluate how to optimize data updates, consider:
+
+- _Data changes_. Optimize automations to utilize pre-images of the data or filters to minimize work when no actual change has occurred. Avoid triggering automations for data that hasn’t been modified.
+- _Automations_. Evaluate when and how updates are triggered based on data changes, and optimize triggers to include a filter – for example, only trigger the automation when a specific field in the data source is modified. Evaluate updates that incrementally trigger automations multiple times. Instead consider if a custom operation could be defined to handle all processing. For example, if an order ships and ship date and tracking number are updated independently, they could both be done together in a ShipOrder custom operation.
+- _Deadlocks_. Evaluate slow update operations for possible contention across multiple flows updating the same data in different sequences causing transient locking contention or possible deadlocks that cause rework. Update the different resources in the same sequence to minimize contention.
+- _Bulk updates_. If you run operations on multiple rows of a table, consider using [bulk operations](/power-apps/developer/data-platform/optimize-performance-create-update).
 
 ### Optimize data movement and processing
 
@@ -171,6 +177,7 @@ Azure Cosmos DB has a [default indexing policy](/azure/cosmos-db/index-policy) t
 
 - [Overview on how to create performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview)
 - [Best practices for query performance](/azure/architecture/guide/technology-choices/data-store-decision-tree)
+- [Customize a Power Automate flow trigger by adding conditions](/power-automate/triggers-introduction?tabs=classic-designer#customize-a-trigger-by-adding-conditions)
 - [Dataverse elastic tables](/power-apps/developer/data-platform/elastic-tables)
 - [OLAP overview](/azure/architecture/data-guide/relational-data/online-analytical-processing)
 - [OLTP overview](/azure/architecture/best-practices/data-partitioning)
