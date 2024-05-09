@@ -87,7 +87,7 @@ Learn more about [automating for efficiency](/azure/well-architected/operational
 
 During the development cycle, workload artifacts go through many changes as they get implemented and tested and as bugs are fixed. The deployment process must follow a standard operating procedure. Any change must be deployed with the same level of rigor. This principle applies equally to code, configuration, and all related artifacts. The key is to apply safe practices as early as possible so that you have predictability in production. Even if errors reach the customers, you should be able to roll out recovery changes as soon as possible.
 
-Learn more about [safe deployment practices](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices) in Azure Well-Architected Framework.
+Learn more about [adopting safe deployment practices](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices) in Azure Well-Architected Framework.
 
 ## Next steps
 

@@ -1,8 +1,8 @@
 ---
 title: Performance Efficiency design principles for well-architected Power Platform workloads
 description: Understand the design principles of the Power Platform Well-Architected  Performance Efficiency pillar.
-author: robstand
-ms.author: rstand
+author: manuelap-msft
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
