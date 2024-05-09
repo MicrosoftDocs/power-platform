@@ -10,7 +10,7 @@ ms.date: 05/10/2024
 ---
 # Design review checklist for Performance Efficiency
 
-This checklist presents a set of recommendations for you to design your workload so it can grow and meet your workload usage demand. The goal of **performance** is to maintain the efficiency of every interaction with a healthy system as demand increases. When you design and implement for performance, focus on the **efficiency and effectiveness** of cost, complexity, supporting new requirements, technical debt, reporting, and toil.
+This checklist presents a set of recommendations for you to design your workload so it can grow and meet your workload usage demand. The goal of performance is to maintain the efficiency of every interaction with a healthy system as demand increases. When you design and implement for performance, focus on the efficiency and effectiveness of cost, complexity, supporting new requirements, technical debt, reporting, and toil.
 
 For every system, there's a limit to how much you can scale it without redesigning, introducing a workaround, or incorporating human involvement. If you don't include performance efficiency practices and consider the tradeoffs, your design is potentially at risk. Carefully consider all the points covered in the checklist to instill confidence in your system's success.
 
