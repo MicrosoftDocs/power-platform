@@ -59,7 +59,7 @@ Use the following methods to free up storage for each of the capacity types.
 |     | **ImportJobBase** | **[Method 8](#method-8-delete-bulk-import-instances-using-a-bulk-deletion-job)**: Delete bulk import instances using a bulk deletion job        | 
 |     | **BulkDeleteOperationBase**| **[Method 9](#method-9-delete-bulk-deletion-job-instances-using-a-bulk-deletion-job)**: Delete bulk deletion job instances using a bulk deletion job        | 
 |     | various | **[Method 11](#method-11-remove-unrequired-tables-and-columns-from-dataverse-search)**: Remove unrequired tables and columns from Dataverse search        | 
-|     | **ActivityPointerBase**, **EmailBase**, **ActivityPartyBase**, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
+|     | **ActivityPointerBase**, **EmailBase**, **EmailHashBase**, **ActivityPartyBase**, and other activity tables | **[Method 12](#method-12-remove-unrequired-data-from-activity-tables)**: Remove unrequired data from activity tables |
 |     | **Postbase**, **PostCommentBase**, **PostFollowBase**, **PostLikeBase**, **PostRegardingBase**, **PostRoleBase**  | **[Method 13](#method-13-remove-unrequired-activity-feeds-records)**: Remove unrequired Activity Feeds records |
 |     | **ExchangeSyncIdMappingBase**  | **[Method 14](#method-14-modify-item-level-monitoring-settings)**: Modify Item Level Monitoring Settings |
 |     | **TraceLogBase**  | **[Method 15](#method-15-remove-unrequired-alerts-trace-logs)**: Remove unrequired Trace (Alert) records |
