@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/27/2024
+ms.date: 05/09/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -57,6 +57,15 @@ Be sure to check back often for new templates that become available.
    :::column-end:::
    :::column span="":::
       ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+      ![Expense Reimbursement](media/overview/exre-logo.png "Expense Reimbursement") <br> **Expense Reimbursement template** <br>  Improve the expense reimbursement process <br> [Documentation](https://aka.ms/LearnExpenseReimbursementTemplate) <br> [AppSource](https://aka.ms/AccessExpenseReimbursementTemplate)  
+   :::column-end:::
+   :::column span="":::  
+   :::column-end:::
+   :::column span="":::  
    :::column-end:::
 :::row-end:::
 

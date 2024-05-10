@@ -8,7 +8,7 @@ contributors:
   - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 04/26/2024
+ms.date: 05/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -94,3 +94,7 @@ The Expense Reimbursement Administrator model-driven app provides a dashboard vi
 :::image type="content" source="media/use/exre-admin-dashboard.png" alt-text="Screenshot of the Reimbursement Request Administrator app's dashboard screen. It shows many different details to the program manager.":::
 
 You can view reimbursement requests by date and status. You can also see the dollar amounts by programs and program categories to help you track expenses.
+
+### See also
+
+[Manage the Expense Reimbursement app](manage.md)

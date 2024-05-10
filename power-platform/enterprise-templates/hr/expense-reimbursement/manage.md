@@ -8,7 +8,7 @@ contributors:
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 04/26/2024
+ms.date: 05/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -16,7 +16,7 @@ ms.subservice: solution-templates
 
 # Get started managing the Expense Reimbursement program
 
-As a program administrator, you can use the Expense Reimbursement Admin app to manage your organization's Expense Reimbursement program, you can:
+As a program administrator, you can use the Expense Reimbursement Admin app to manage your organization's Expense Reimbursement program. You can:
 
 - Create custom refund programs
 - Create custom categories and subcategories
