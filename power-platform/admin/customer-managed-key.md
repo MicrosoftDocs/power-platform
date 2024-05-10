@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 05/03/2024
+ms.date: 05/10/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms
@@ -437,29 +437,30 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 ### Review the environment's encryption status
 
 #### Review the encryption status from Enterprise policies
-1. Sign into the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and go to **Policies** > **Enterprise policies**.
 1. Select a policy, and then on the command bar select **Edit**.
 1. Review the environment's **Encryption status** in the **Environments with this policy** section.
 
 > [!Note]
-> - The environment's encryption status can be:
-> - 1. Encrypted - the Enterprise policy encryption key is active and the environment is encrypted with your key.
-> - 2. Failed - the Enterprise policy encryption key is not used and the environment continues to be encrypted with the Microsoft managed key.
-> - 3. Warning - the Enterprise policy encryption key is active and one of the services' data continues to be encrypted with the Microsoft managed key - see [warning](https://learn.microsoft.com/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
+> The environment's encryption status can be:
+> - **Encrypted** - the Enterprise policy encryption key is active and the environment is encrypted with your key.
+> - **Failed** - the Enterprise policy encryption key is not used and the environment continues to be encrypted with the Microsoft-managed key.
+> - **Warning** - the Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
+>
+> You can re-run the **Add environment** option for the environment that has a **Failed** encryption status. 
 
->  - You can re-run the **Add environment** for environment that has a **Failed** encryption status. 
+#### Review the encryption status from the Environment History page
+You can see the [environment history](environments-overview.md#environment-history).
 
-
-#### Review the encryption status from Environment History page
-To see the [environment history:](https://learn.microsoft.com/power-platform/admin/environments-overview#environment-history)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments**, and then select an environment from the list.
+1. Select **Environments** in the navigation pane, and then select an environment from the list.
 1. On the command bar, select **History.**
 1. Locate the history for **Update Customer Managed Key**.
 
 > [!Note]
-> - The **Status** will show **Running** when the encryption is in progress. It will show **Succeeded** when the encryption is complete. The status can be **Failed** when there is some problem with one of the services not able to apply the encryption key.  
-> A **Failed** state can be a **warning** and you don't need to re-run the **Add environment**. You can confirm if it is a [warning](power-platform/admin/customer-managed-key.md#review-the-encryption-status-from-enterprise-policies) here.
+> The **Status** shows **Running** when the encryption is in progress. It shows **Succeeded** when the encryption is complete. The status shows **Failed** when there is some problem with one of the services not able to apply the encryption key.
+>  
+> A **Failed** state can be a **warning** and you don't need to re-run the **Add environment** option. You can confirm if it is a [warning](customer-managed-key.md#review-the-encryption-status-from-enterprise-policies).
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
