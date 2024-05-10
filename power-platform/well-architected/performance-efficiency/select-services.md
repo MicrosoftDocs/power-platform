@@ -18,6 +18,9 @@ ms.topic: conceptual
 
 This guide describes the recommendations for selecting appropriate services for your workload. The following recommendations help you choose services that best meet the requirements and demands of your workload. When you use services that are designed to handle your workload's requirements, you ensure that your workload meets your performance targets. If you choose inappropriate services for your workload, the services might not be capable of handling your workload's demands. Insufficient services can lead to slow response times, bottlenecks, or workload failures.
 
+> [!NOTE]
+> This recommendation aligns with [Recommendations for selecting the right services](/azure/well-architected/performance-efficiency/select-services) in the Azure Well-Architected Framework Performance Efficiency pillar.
+
 **Definitions**
 
 | Term | Definition |

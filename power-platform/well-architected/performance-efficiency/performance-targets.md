@@ -18,6 +18,9 @@ ms.topic: conceptual
 
 This guide describes the recommendations for establishing and exposing performance targets. Performance targets are metrics that define performance objectives. These metrics are expressed as a single numerical value or a numerical range. They're clear and specific metrics that drive continuous improvement. Performance targets are a numerical foundation for improvements, and they help teams align their efforts toward specific goals. Without clear performance targets, teams might lack focus and lack of accountability for performance issues. By setting performance targets, teams can work toward specific objectives and drive continuous improvement.
 
+> [!NOTE]
+> This recommendation aligns with [Recommendations for defining performance targets](/azure/well-architected/performance-efficiency/performance-targets) in the Azure Well-Architected Framework Performance Efficiency pillar.
+
 **Definitions**
 
 | Term | Definition |
