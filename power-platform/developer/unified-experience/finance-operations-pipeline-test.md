@@ -45,6 +45,10 @@ The output logs of the task contains information of each test executed and its o
 
 ### Creating the unit test task
 
+> [!IMPORTANT]
+>
+> - A new version (1.*) of the task has been released. Please go over the updated "Update: Version 1" section below for details.  
+
 In this next image is an example unit test being defined. A description of each form field follows.
 
 :::image type="content" source="..\media\unified-experience\devexp-unitTest-task.png" alt-text="Unit test task form with example data.":::
@@ -58,6 +62,32 @@ In this next image is an example unit test being defined. A description of each 
 | X++ Tools Path | The location of the Microsoft.Dynamics.AX.Platform.CompilerPackage NuGet package installed on the agent. |
 | Location of the X++ modules to test | The storage location where the build task produced the assemblies of the models included. This value is often set to $(Build.BinariesDirectory). |
 | Search patterns for the X++ modules to test | Include the pattern for the modules that the tests must be run for. Provide a name matching pattern for X++ package (module) names inside the path that is specified in the location of the X++ modules to test option. You can also specify a list of names instead of search patterns, or exclusion filters. More information: [File matching patterns reference](/azure/devops/pipelines/tasks/file-matching-patterns). |
+
+### Update: Version 1
+
+A new version (1.*) of the “Execute Unit Tests in Unified Environments" task has been published. This version is different from the existing one because it replaces the Service Connection authentication field. This modification allows multiple authentication mechanisms, like Username/Password, AppId/Client Secret etc. to be used for executing the test requests.  
+
+The existing “Power Platform Set Connection Variables” task can be used to generate the Connection String in the same pipeline before using the Unit test execution task. Details for this task are available in this [link](https://learn.microsoft.com/en-us/power-platform/alm/devops-build-tool-tasks#power-platform-set-connection-variables), also refer [link2](https://learn.microsoft.com/en-us/power-platform/alm/devops-build-tools#connection-to-environments) about connection types. The connection string can be retrieved for use in the subsequent tasks by creating a reference name in the “Output Variables” section for classic pipelines.  
+
+Please refer to the image below for a sample showing usage of the task to generate an output variable named op that is referenced in the subsequent unit test execution task: 
+:::image type="content" source="..\media\unified-experience\pp-set-conn-var.png" alt-text="Power Platform Set Connection Variables task.":::
+
+This can also be done in a YAML pipeline:
+
+Sample Power Platform Set Connection Variables task – Use either of the connection types and replace the URL and the service connection name, as shown here: link. Use the “name” field for reference output variable.
+```
+task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-connection-variables.PowerPlatformSetConnectionVariables@2
+  displayName: 'Power Platform Set Connection Variables '
+  inputs:
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: <Service Connection>
+    Environment: '<Power platform environment URL>'
+  name: 'op'  
+```
+
+The same reference name is then used in the unit test task, as shown below:
+:::image type="content" source="..\media\unified-experience\devexp-unitTest-task-1.png" alt-text="Version 1 of Unit test task.":::
+
 
 ### See also
 
