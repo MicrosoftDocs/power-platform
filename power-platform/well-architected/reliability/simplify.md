@@ -1,5 +1,5 @@
 ---
-title: Design for simplicity and efficiency recommendation
+title: Design for simplicity and efficiency recommendation for Power Platform workloads
 description: Learn how to design your workload with business requirements in mind and minimize  complexity by keeping your workloads simple and efficient.
 author: manuelap-msft
 ms.author: mapichle

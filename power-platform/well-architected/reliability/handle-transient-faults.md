@@ -1,5 +1,5 @@
 ---
-title: Handle transient faults recommendation
+title: Handle transient faults recommendation for Power Platform workloads
 description: Learn how to strengthen the resiliency of your workload by implementing transient fault handling. 
 author: manuelap-msft
 ms.author: mapichle

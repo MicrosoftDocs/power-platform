@@ -1,6 +1,6 @@
 ---
-title: Recommendation checklist for Performance Efficiency
-description: Learn about the recommendations that will help you to achieve performance effiency in your Power Platform workloads.
+title: Recommendation checklist for Performance Efficiency for Power Platform workloads
+description: Learn about the recommendations that will help you to achieve performance efficiency in your Power Platform workloads.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft

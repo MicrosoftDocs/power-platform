@@ -1,5 +1,5 @@
 ---
-title: Design a reliability testing strategy recommendation
+title: Design a reliability testing strategy recommendation for Power Platform workloads
 description: Learn how to establish a reliability testing strategy that tests resiliency and availability scenarios. 
 author: manuelap-msft
 ms.author: mapichle

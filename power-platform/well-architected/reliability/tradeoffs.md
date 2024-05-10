@@ -1,5 +1,5 @@
 ---
-title: Reliability tradeoffs
+title: Reliability tradeoffs for Power Platform workloads
 description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for reliability.
 author: robstand
 ms.author: rstand

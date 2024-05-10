@@ -1,5 +1,5 @@
 ---
-title: Design a reliable monitoring and alerting strategy recommendation.
+title: Design a reliable monitoring and alerting strategy recommendation for Power Platform workloads
 description: Learn how to design a monitoring and alerting strategy that supports the reliability requirements of your workload. 
 author: manuelap-msft
 ms.author: mapichle

@@ -1,5 +1,5 @@
 ---
-title: Define reliability targets recommendation
+title: Define reliability targets recommendation for Power Platform workloads
 description: Learn how to define a health model that includes availability and recovery target metrics for critical workloads.
 author: manuelap-msft
 ms.author: mapichle

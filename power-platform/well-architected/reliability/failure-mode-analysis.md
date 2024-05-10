@@ -1,5 +1,5 @@
 ---
-title: Failure mode analysis recommendation
+title: Failure mode analysis recommendation for Power Platform workloads
 description: Learn how to identify potential failure points within your workload and plan mitigation actions accordingly.
 author: manuelap-msft
 ms.author: mapichle

@@ -1,5 +1,5 @@
 ---
-title: Identify and rate flows recommendation
+title: Identify and rate flows recommendation for Power Platform workloads
 description: Learn how to create a catalog of user and system flows for your workload and how to determine their criticality and impact on reliability.
 author: manuelap-msft
 ms.author: mapichle

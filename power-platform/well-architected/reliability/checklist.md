@@ -1,6 +1,6 @@
 ---
-title: Design review checklist for Reliability
-description: Use this checklist for Reliability to identify the best infrastructure and application design for your workload.
+title: Recommendation checklist for Reliability for Power Platform workloads
+description: Learn about the recommendations that will help you to identify the best infrastructure and application design for your Power Platform workload.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
