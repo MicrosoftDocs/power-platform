@@ -1,5 +1,5 @@
 ---
-title: Design a workload development supply chain recommendation
+title: Workload development supply chain recommendation for Power Platform workloads
 description: Learn how to build a workload supply chain that drives changes through automated pipelines and ensures an efficient workload lifecycle. 
 author: manuelap-msft
 ms.author: mapichle

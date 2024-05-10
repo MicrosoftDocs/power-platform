@@ -1,5 +1,5 @@
 ---
-title: Formalize software development management practices recommendation
+title: Formalize software development management practices recommendation for Power Platform workloads
 description: Learn how to establish standards for your software ideation and planning process and your teams software development practices.
 author: manuelap-msft
 ms.author: mapichle

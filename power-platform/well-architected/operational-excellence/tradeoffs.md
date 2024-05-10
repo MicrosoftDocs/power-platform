@@ -1,6 +1,6 @@
 ---
-title: Operational Excellence tradeoffs
-description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for operational excellence.
+title: Operational Excellence tradeoffs for Power Platform workloads
+description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for operational excellence with Power Platform.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Operational Excellence tradeoffs
+# Operational Excellence tradeoffs for Power Platform workloads
 
 Operational Excellence provides workload quality through the implementation of clear team standards, understood responsibility and accountability, attention to customer outcomes, and team cohesion. The implementation of these goals is rooted in DevOps, which recommends minimizing process variance, reducing human error, and ultimately increasing the return of value for the workload. That value isn't just measured against the functional requirements served by the components of the workload. It's also measured by the value that the team delivers in striving for improvement.
 

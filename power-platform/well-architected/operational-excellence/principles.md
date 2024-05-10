@@ -1,5 +1,5 @@
 ---
-title: Operational Excellence cloud design principles for well-architected Power Platform workloads
+title: Operational Excellence design principles for well-architected Power Platform workloads
 description: Understand the design principles of the Power Platform Well-Architected Operational Excellence pillar.
 author: manuelap-msft
 ms.author: mapichle

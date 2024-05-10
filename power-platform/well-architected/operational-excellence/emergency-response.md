@@ -1,5 +1,5 @@
 ---
-title: Emergency response recommendations
+title: Emergency response recommendations for Power Platform workloads
 description: Learn how to design an effective emergency operations practice that clearly defines roles and responsibilities to ensure timely issue resolution.
 author: manuelap-msft
 ms.author: mapichle

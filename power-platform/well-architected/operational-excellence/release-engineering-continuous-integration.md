@@ -1,5 +1,5 @@
 ---
-title: Continuous integration recommendation
+title: Continuous integration recommendation for Power Platform workloads
 description: Learn how to optimize software development and quality by following industry-proven practices for development and testing.
 author: manuelap-msft
 ms.author: mapichle

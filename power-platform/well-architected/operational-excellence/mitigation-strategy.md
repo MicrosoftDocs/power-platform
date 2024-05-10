@@ -1,5 +1,5 @@
 ---
-title: Design a deployment failure mitigation strategy recommendation
+title: Design a deployment failure mitigation strategy recommendation for Power Platform workloads
 description: Learn how to design a standardized strategy for handling deployment failures, enabling issue mitigation and recovery.
 author: manuelap-msft
 ms.author: mapichle

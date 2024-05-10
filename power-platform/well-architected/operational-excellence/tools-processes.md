@@ -1,5 +1,5 @@
 ---
-title: Optimize development practices through standardization recommendation
+title: Optimize development practices through standardization recommendation for Power Platform workloads
 description: Learn how to standardize your tools and processes and optimize your development and quality assurance practices.
 author: manuelap-msft
 ms.author: mapichle

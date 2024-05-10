@@ -1,5 +1,5 @@
 ---
-title: Formalize workload tasks recommendation
+title: Formalize workload tasks recommendation for Power Platform workloads
 description: Learn how to standardize and formalize routine, as needed, and emergency operational tasks to enhance operational efficiency.
 author: manuelap-msft
 ms.author: mapichle

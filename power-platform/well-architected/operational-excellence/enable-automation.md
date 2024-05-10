@@ -1,5 +1,5 @@
 ---
-title: Enable automation in a workload recommendation
+title: Enable automation in a workload recommendation for Power Platform workloads
 description: Learn how to design and implement automation upfront to simplify maintenance tasks, apply governance and address deployment concerns. 
 author: manuelap-msft
 ms.author: mapichle

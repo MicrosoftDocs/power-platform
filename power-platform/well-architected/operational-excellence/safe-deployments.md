@@ -1,5 +1,5 @@
 ---
-title: Safe deployment practices recommendation
+title: Safe deployment practices recommendation for Power Platform workloads
 description: Learn how to establish safe deployment practices (SDP) and define processes for rolling out changes to your workload. 
 author: manuelap-msft
 ms.author: mapichle

@@ -1,5 +1,5 @@
 ---
-title: Implementing automation recommendation
+title: Implementing automation recommendation for Power Platform workloads
 description: Learn how to establish standards, improve efficiency and productivity, and ensure consistency by automating tasks that are repetitive and may be prone to human error.
 author: manuelap-msft
 ms.author: mapichle

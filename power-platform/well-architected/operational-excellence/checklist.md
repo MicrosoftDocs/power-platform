@@ -1,6 +1,6 @@
 ---
-title: Design review checklist for Operational Excellence 
-description: Learn how to incorporate an operational excellence approach in your Power Platform workload.
+title: Recommendation checklist for Operational Excellence 
+description: Learn about the recommendations that will help you to achieve an operational excellence approach in your Power Platform workload team.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Design review checklist for Operational Excellence
+# Recommendation checklist for Operational Excellence
 
 This checklist presents a set of recommendations to help you build a culture of operational excellence. Start with a fusion development and DevOps approach to integrate specializations from multiple disciplines. This approach creates a rigorous design and development practice. This approach leads to repeatable, reliable, and safe deployments of infrastructure and code.
 
