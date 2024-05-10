@@ -1,6 +1,6 @@
 ---
-title: Recommendations for designing a disaster recovery strategy
-description: Learn how to design a disaster recovery strategy for a workload. 
+title: Design a disaster recovery strategy recommendation
+description: Learn how to design a disaster recovery strategy for a workload and prepare to handle incidents and outages. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

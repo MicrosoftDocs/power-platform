@@ -1,6 +1,6 @@
 ---
-title: Recommendations for handling transient faults
-description: Learn about recommendations for handling transient faults in your cloud applications.
+title: Handle transient faults recommendation
+description: Learn how to strengthen the resiliency of your workload by implementing transient fault handling. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

@@ -1,6 +1,6 @@
 ---
-title: Failure mode analysis recommendations
-description: Learn how to identify potential points of failure within your workload and the associated flows, and plan mitigation actions accordingly.
+title: Failure mode analysis recommendation
+description: Learn how to identify potential failure points within your workload and plan mitigation actions accordingly.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

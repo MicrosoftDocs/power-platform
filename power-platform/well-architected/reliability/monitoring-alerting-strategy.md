@@ -1,6 +1,6 @@
 ---
-title: Recommendations for designing a reliable monitoring and alerting strategy
-description: Learn how to design a reliable monitoring and alerting strategy to ensure that your workload operates reliably and operations teams are aware of changes.
+title: Design a reliable monitoring and alerting strategy recommendation.
+description: Learn how to design a monitoring and alerting strategy that supports the reliability requirements of your workload. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

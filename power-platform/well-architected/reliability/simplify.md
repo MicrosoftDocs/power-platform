@@ -1,6 +1,6 @@
 ---
-title: Recommendations for designing for simplicity and efficiency
-description: Learn how to minimize unnecessary complexity and overhead by keeping your workloads simple and efficient.
+title: Design for simplicity and efficiency recommendation
+description: Learn how to design your workload with business requirements in mind and minimize  complexity by keeping your workloads simple and efficient.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

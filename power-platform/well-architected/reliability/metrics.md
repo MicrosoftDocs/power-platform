@@ -1,6 +1,6 @@
 ---
-title: Recommendations for defining reliability targets
-description: Learn how to define availability and recovery target metrics for critical workloads.
+title: Define reliability targets recommendation
+description: Learn how to define a health model that includes availability and recovery target metrics for critical workloads.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
