@@ -1,6 +1,6 @@
 ---
 title: Complete a Power Platform Well-Architected assessment
-description: Learn about using the Power Platform Well-Architected assessments to help you continuously improve your workload.
+description: Learn about using the Power Platform Well-Architected assessments to help you implement the Pillar recommendations in your Power Platform workload. 
 author: robstand
 ms.author: rstand
 ms.date: 05/10/2024
