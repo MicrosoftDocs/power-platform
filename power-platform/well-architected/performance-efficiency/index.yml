@@ -33,7 +33,7 @@ landingContent:
           - text: Design to meet capacity requirements
             url: principles.md#design-to-meet-performance-requirements
           - text: Achieve and sustain performance
-            url: principles.md#achieve-and-maintain-performance
+            url: principles.md#achieve-and-sustain-performance
           - text: Improve efficiency through optimization
             url: principles.md#improve-efficiency-through-optimization
   - title: Achieve performance targets

@@ -41,7 +41,7 @@ landingContent:
           - text: Establish development standards
             url: principles.md#establish-development-standards
           - text: Evolve operations with observability
-            url: principles.md#evolve-operations-with-observability
+            url: principles.md#improve-operations-with-monitoring-and-insights
           - text: Deploy with confidence
             url: principles.md#deploy-with-confidence
           - text: Automate for efficiency
