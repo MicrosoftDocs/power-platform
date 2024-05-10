@@ -20,9 +20,6 @@ This guide describes the recommendations for testing. Performance testing helps 
 
 Testing helps to prevent performance issues. It also helps ensure that your workload meets its service-level agreements. Without performance testing, a workload can experience performance degradations that are often preventable. Workload performance can drift from performance targets and established baselines.
 
-> [!NOTE]
-> This recommendation aligns with [Recommendations for performance testing](/azure/well-architected/performance-efficiency/performance-test) in the Azure Well-Architected Framework Performance Efficiency pillar.
-
 **Definitions**
 
 | Term | Definition |

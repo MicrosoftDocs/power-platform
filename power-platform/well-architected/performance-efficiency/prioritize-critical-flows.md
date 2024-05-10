@@ -18,9 +18,6 @@ ms.topic: conceptual
 
 This guide describes the recommendations for prioritizing the performance of critical flows in a workload. Critical flows represent crucial business processes that generate revenue or drive high-priority operations. When you prioritize the performance of critical flows, you ensure the flows that have the most impact get the resources they need before lower priority flows. Failure to do this prioritization can have disproportionate negative effects on workload priorities and the user experience.
 
-> [!NOTE]
-> This recommendation aligns with [Recommendations for prioritizing the performance of critcal flows](/azure/well-architected/performance-efficiency/prioritize-critical-flows) in the Azure Well-Architected Framework Performance Efficiency pillar.
-
 **Definitions**
 
 | Term | Definition |

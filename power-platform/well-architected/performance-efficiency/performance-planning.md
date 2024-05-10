@@ -18,9 +18,6 @@ ms.topic: conceptual
 
 This guide describes the recommendations for performance and capacity planning. Performance isn’t something that just happens— you need to plan for it just like any other requirement. Capacity planning refers to the process of determining the resources required to meet workload performance targets. It involves estimating the amount of resources such as storage, throughput and network bandwidth needed to support the workload's performance requirements. Capacity planning ensures the workload has sufficient resources to handle the expected workload demands without experiencing performance degradation or bottlenecks. It also helps prevent overprovisioning and unnecessary costs. A lack of performance and capacity planning can lead to performance issues, resource bottlenecks, increased costs, inefficient allocation, scalability challenges, and unpredictable workload performance.
 
-> [!NOTE]
-> This recommendation aligns with [Recommendations for capacity planning](/azure/well-architected/performance-efficiency/capacity-planning) in the Azure Well-Architected Framework Performance Efficiency pillar.
-
 **Definitions**
 
 | Term | Definition |

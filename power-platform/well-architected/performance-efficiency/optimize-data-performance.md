@@ -18,9 +18,6 @@ ms.topic: conceptual
 
 This guide describes the recommendations for optimizing data performance. Optimizing data performance is about refining the efficiency with which the workload processes and stores data. Every workload operation, transaction, or computation typically relies on the quick and accurate retrieval, processing, and storage of data. When data performance is optimized, the workload runs smoothly. Compromised data performance creates a domino effect of poor performance efficiency. Failure to optimize data performance results in response delays, heightened latency, and curtailed scalability. It jeopardizes the efficiency of the entire workload.
 
-> [!NOTE]
-> This recommendation aligns with [Recommendations for optimizing data performance](/azure/well-architected/performance-efficiency/optimize-data-performance) in the Azure Well-Architected Framework Performance Efficiency pillar.
-
 **Definitions**
 
 | Term | Definition |

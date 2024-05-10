@@ -18,9 +18,6 @@ ms.topic: conceptual
 
 This guide describes the best practices for responding to live performance issues. Live performance issues refer to real-time challenges and bottlenecks that can hinder the optimal functioning of a workload. Addressing these issues promptly not only facilitates the immediate detection and rectification of performance hiccups but also ensures that the workload consistently meets its performance benchmarks. Failing to address them can lead to complications, including slowdowns, crashes, and system unresponsiveness, and degrade the user experience. They can also prevent users from completing their tasks efficiently, and, in turn, tarnish the reputation of the organization.
 
-> [!NOTE]
-> This recommendation aligns with [Recommendations for responding to live performance issues](/azure/well-architected/performance-efficiency/respond-live-performance-issues) in the Azure Well-Architected Framework Performance Efficiency pillar.
-
 **Definitions**
 
 | Term | Definition |

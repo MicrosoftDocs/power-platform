@@ -22,9 +22,6 @@ By collecting performance data, you can monitor and analyze the performance of a
 
 Without data-driven insights, you might be unaware of underlying performance issues or opportunities for optimization. Potential results include slower response times, decreased throughput, and ultimately, a suboptimal user experience. Additionally, the lack of performance data makes it difficult to diagnose and troubleshoot issues in a timely manner, leading to prolonged downtime and reduced productivity.
 
-> [!NOTE]
-> This recommendation aligns with [Recommendations for collecting performance data](/azure/well-architected/performance-efficiency/collect-performance-data) in the Azure Well-Architected Framework Performance Efficiency pillar.
-
 **Definitions**
 
 | Term | Definition |
