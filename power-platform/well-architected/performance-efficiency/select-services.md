@@ -1,5 +1,5 @@
 ---
-title: Select the right services and features recommendation
+title: Select the right services and features recommendation for Power Platform workloads
 description: Learn how to select the appropriate services and features that meet the requirements and demands of your workload.
 author: manuelap-msft
 ms.author: mapichle
