@@ -64,7 +64,7 @@ In this next image is an example unit test being defined. A description of each 
 
 ### Update: Version 1
 
-A new version (1.*) of the **Execute Unit Tests in Unified Environments** task is available. This version replaces the **Service Connection** authentication field. Now you can use multiple authentication mechanisms, like username/password and appId/alient Secret to execute the test requests.  
+A new version (1.*) of the **Execute Unit Tests in Unified Environments** task is available. This version replaces the **Service Connection** authentication field. Now you can use multiple authentication mechanisms, like username/password and appId/client Secret to execute the test requests.  
 
 You can use the existing **Power Platform Set Connection Variables** task to generate the connection string in the same pipeline before using the unit test execution task. [Learn more about the details for this task](../../alm/devops-build-tool-tasks.md#power-platform-set-connection-variables) and [about connection types](../../alm/devops-build-tools.md#connection-to-environments).  You can retrieve the connection string and use it in subsequent tasks by creating a reference name in the **Output Variables** section for classic pipelines. 
 
