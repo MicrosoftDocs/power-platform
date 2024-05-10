@@ -18,7 +18,6 @@ To assess your operational health, start with these questions:
 - How do you drive continuous improvement and learn from experience?
 - Do you have development and deployment standards that reduce friction and drive consistency?
 - Is your workload meeting user expectations and requirements?
-- Do you execute operations with discipline?
 
 Without standards and clear leadership, workload teams often resort to methods that aren't following best practices which can lead to poor user and support experiences.
 
