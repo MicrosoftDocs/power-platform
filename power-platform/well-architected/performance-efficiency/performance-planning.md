@@ -1,6 +1,6 @@
 ---
-title: Recommendations for performance planning
-description: Learn about Power Platform Well-Architected recommendations for implementing performance planning in your workloads.
+title: Performance planning recommendation
+description: Learn how to conduct performance planning in your workloads.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

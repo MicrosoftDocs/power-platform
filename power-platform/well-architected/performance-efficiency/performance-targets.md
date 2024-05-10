@@ -1,6 +1,6 @@
 ---
-title: Recommendations for defining performance targets
-description: Learn how to drive continuous improvement by setting and exposing performance targets for your workload. Identify workload objectives, key metrics, and performance targets. Monitor performance and evaluate customer feedback to drive improvement.
+title: Define performance targets recommendation
+description: Learn how to drive continuous improvement by setting performance targets for your workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

@@ -1,6 +1,6 @@
 ---
-title: Recommendations for prioritizing the performance of critical flows
-description: Learn about recommendations for prioritizing the performance of critical flows. Ensure that critical flows get the resources they need before lower-priority flows get those resources.
+title: Prioritize the performance of critical flows recommendation
+description: Learn how to identify critical flows and prioritize the performance of critical flows.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

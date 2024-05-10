@@ -1,6 +1,6 @@
 ---
-title: Recommendations for continuous performance optimization
-description: Get recommendations for continuous performance optimization.
+title: Continuously optimize performance recommendation
+description: Learn how to continuously optimize performance and establish a performance culture. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

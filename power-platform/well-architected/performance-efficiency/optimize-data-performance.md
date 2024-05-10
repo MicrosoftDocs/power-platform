@@ -1,6 +1,6 @@
 ---
-title: Recommendations for optimizing data performance
-description: Learn how to optimize data access, retrieval, storage, and processing operations to enhance the overall performance of your workload.
+title: Optimize data performance recommendation
+description: Learn how to optimize data read and write actions, storage and processing operations to enhance the overall performance of your workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

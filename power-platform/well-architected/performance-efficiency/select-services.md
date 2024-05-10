@@ -1,6 +1,6 @@
 ---
-title: Recommendations for selecting the right services
-description: Learn how to select the appropriate services that best meet the requirements and demands of your workload.
+title: Select the right services and features recommendation
+description: Learn how to select the appropriate services and features that meet the requirements and demands of your workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Recommendations for selecting the right services
+# Recommendations for selecting the right services and features
 
 **Applies to this Power Platform Well-Architected Performance Efficiency checklist recommendation:**
 

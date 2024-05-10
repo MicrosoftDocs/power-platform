@@ -1,6 +1,6 @@
 ---
-title: Recommendations for performance testing
-description: Learn best practices for performance testing. See how to select tools, configure environments, and take other steps to help workloads meet performance targets.
+title: Performance testing recommendation
+description: Learn how to test performance and establish best practices for performance testing. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

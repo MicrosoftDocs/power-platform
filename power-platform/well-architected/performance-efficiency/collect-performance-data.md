@@ -1,6 +1,6 @@
 ---
-title: Collect workload performance data
-description: Learn recommendations for collecting performance data (metrics and logs) to help you assess the performance of a workload.
+title: Collect workload performance data recommendation
+description: Learn how to collect performance data to help you assess the performance of a workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

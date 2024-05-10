@@ -1,5 +1,5 @@
 ---
-title: Designing a workload development supply chain recommendation
+title: Design a workload development supply chain recommendation
 description: Learn how to build a workload supply chain that drives changes through automated pipelines and ensures an efficient workload lifecycle. 
 author: manuelap-msft
 ms.author: mapichle

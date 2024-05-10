@@ -1,6 +1,6 @@
 ---
-title: Recommendations for responding to live performance issues
-description: Review recommendations for responding to live-site performance issues. See how to use root cause analysis, triage plans, and other steps to resolve problems.
+title: Respond to live performance issues recommendation
+description: Learn how to respond to live performance issues and use root cause analysis, triage plans, and other steps to resolve problems.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

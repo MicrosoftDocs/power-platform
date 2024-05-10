@@ -1,6 +1,6 @@
 ---
-title: Recommendations for optimizing code and infrastructure
-description: Learn how to optimize your code and logic by using components only for their core purpose and only when necessary
+title: Optimize code and logic recommendation
+description: Learn how to optimize your code and logic to support the performance requirements of the workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
