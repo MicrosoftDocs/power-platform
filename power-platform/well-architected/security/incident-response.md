@@ -1,5 +1,5 @@
 ---
-title: Security incident response recommendation
+title: Security incident response recommendation for Power Platform workloads
 description: Learn how to establish incident response procedures that reduce the time that's required to identify, manage, and mitigate security incidents.
 author: manuelap-msft
 ms.author: mapichle

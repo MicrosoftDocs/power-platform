@@ -1,5 +1,5 @@
 ---
-title: Encryption strategy recommendation
+title: Encryption strategy recommendation for Power Platform workloads
 description: Learn how to encrypt and protect your data. 
 author: manuelap-msft
 ms.author: mapichle

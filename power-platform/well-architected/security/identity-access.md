@@ -1,5 +1,5 @@
 ---
-title: Identity and access management recommendation
+title: Identity and access management recommendation for Power Platform workloads
 description: Learn how to manage identities that are required to or may be attempting to access workload resources.
 author: manuelap-msft
 ms.author: mapichle

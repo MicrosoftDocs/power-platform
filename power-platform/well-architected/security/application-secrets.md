@@ -1,6 +1,6 @@
 ---
-title: Protect application secrets recommendation
-description: Learn how to manage application secrets.
+title: Protect application secrets recommendation for Power Platform workloads
+description: Learn how to manage application secrets for Power Platform workloads.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

@@ -1,6 +1,6 @@
 ---
 title: Operational Excellence tradeoffs for Power Platform workloads
-description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for operational excellence with Power Platform.
+description: Learn about the Operational Excellence tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft

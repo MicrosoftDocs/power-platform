@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Design review checklist for Reliability
+# Recommendation checklist for Reliability
 
 This checklist presents a set of recommendations for you to use to evaluate the reliability, resiliency, and failure recovery strategies in your architecture design. To ensure reliability, identify the best infrastructure and application design for your workload. Make these decisions based on your business requirements that are mapped to availability and recoverability target metrics.
 

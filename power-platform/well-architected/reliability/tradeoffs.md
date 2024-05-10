@@ -1,6 +1,6 @@
 ---
 title: Reliability tradeoffs for Power Platform workloads
-description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for reliability.
+description: Learn about the Reliability tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Reliability tradeoffs
+# Reliability tradeoffs for Power Platform workloads
 
 A reliable workload consistently meets its defined reliability objectives. It should reach established resiliency targets, ideally by circumventing events that affect reliability. Realistically, however, a workload must tolerate and control the impact of such events and maintain operations at a predetermined level during active malfunction. Even during a disaster, a reliable workload must recover to a specific state within a given period of time, both of which are agreed upon among the stakeholders. An incident response plan that enables you to achieve rapid detection and recovery is vital.
 

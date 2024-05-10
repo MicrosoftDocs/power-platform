@@ -1,6 +1,6 @@
 ---
 title: Performance Efficiency tradeoffs for Power Platform workloads
-description: Learn about the Performance Efficiency tradeoffs with other pillars.
+description: Learn about the Performance Efficiency tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Performance Efficiency tradeoffs
+# Performance Efficiency tradeoffs for Power Platform workloads
 
 A workload that meets its performance targets without overprovisioning is efficient. Key strategies for performance efficiency include proper use of code optimizations, design patterns, and capacity planning. Clear performance targets and testing underpin this pillar.
 

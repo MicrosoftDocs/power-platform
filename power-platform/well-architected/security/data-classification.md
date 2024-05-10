@@ -1,5 +1,5 @@
 ---
-title: Data classification recommendation
+title: Data classification recommendation for Power Platform workloads
 description: Learn how to classify data based on its sensitivity and how to apply classification to your workloads.
 author: manuelap-msft
 ms.author: mapichle

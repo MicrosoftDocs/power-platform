@@ -1,5 +1,5 @@
 ---
-title: Build a segmentation strategy recommendation
+title: Build a segmentation strategy recommendation for Power Platform workloads
 description: Learn how to create intentional segmentation in your architecture and workload design.
 author: manuelap-msft
 ms.author: mapichle

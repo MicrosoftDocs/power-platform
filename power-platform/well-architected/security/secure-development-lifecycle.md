@@ -1,5 +1,5 @@
 ---
-title: Secure a development lifecycle recommendation
+title: Secure a development lifecycle recommendation for Power Platform workloads
 description: Learn how to maintain a secure development lifecycle.
 author: manuelap-msft
 ms.author: mapichle

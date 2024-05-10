@@ -1,5 +1,5 @@
 ---
-title: Workload threat analysis recommendation
+title: Workload threat analysis recommendation for Power Platform workloads
 description: Learn how to use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect a workload.
 author: manuelap-msft
 ms.author: mapichle

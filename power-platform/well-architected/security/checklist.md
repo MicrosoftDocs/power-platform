@@ -1,5 +1,5 @@
 ---
-title: Design review checklist for Security
+title: Recommendation checklist for Security for Power Platform workloads
 description: Use this checklist for Security to identify the best approach for secure, governed, and compliant workloads.
 author: robstand
 ms.author: rstand
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Design review checklist for Security
+# Recommendation checklist for Security
 
 This checklist presents a set of security recommendations to help you ensure your workload is secure. If you don't review the checklist and weigh the associated tradeoffs, you may expose your design to potential risks. Thoroughly assess all the aspects outlined in the checklist to enhance your confidence in the security of your workload.
 

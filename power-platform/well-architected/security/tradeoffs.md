@@ -1,6 +1,6 @@
 ---
-title: Security tradeoffs
-description: Learn about the Security tradeoffs with other pillars.
+title: Security tradeoffs for Power Platform workloads.
+description: Learn about the Security tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.date: 05/10/2024
 ---
 
-# Security tradeoffs
+# Security tradeoffs for Power Platform workloads
 
 Security provides confidentiality, integrity, and availability assurances of a workload's system and its users' data. Security controls are required for the workload and for the software development and operational components of the system. When teams design and operate a workload, they can almost never compromise on security controls.
 

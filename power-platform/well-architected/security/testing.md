@@ -1,5 +1,5 @@
 ---
-title: Security testing recommendation
+title: Security testing recommendation for Power Platform workloads
 description: Learn how to establish a testing strategy that supports and tests the security posture of your workload.
 author: manuelap-msft
 ms.author: mapichle

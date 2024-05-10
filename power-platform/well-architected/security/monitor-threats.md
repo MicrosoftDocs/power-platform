@@ -1,5 +1,5 @@
 ---
-title: Monitor and threat detection recommendation
+title: Monitor and threat detection recommendation for Power Platform workloads
 description: Learn how to implement a monitoring strategy that helps you gain awareness of suspicious activities. 
 author: manuelap-msft
 ms.author: mapichle
