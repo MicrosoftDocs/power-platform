@@ -133,26 +133,6 @@ Data proximity refers to the strategic placement of data closer to the users or 
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: If underlying data changes frequently, implement a cache invalidation mechanism to ensure that the cached data remains up to date.
 
-#### Use polyglot persistence
-
-Polyglot persistence is the practice of using multiple data storage technologies to store and manage different types of data within an application or system. Different types of databases or storage solutions serve different data requirements. For example, Dataverse Elastic tables can provide the ability to have unstructured data alongside traditional relational tables in the same Dataverse environment.
-
-Polyglot persistence takes advantage of the benefits of each data storage technology to ensure optimal performance and scalability for each type of data. For example, you might use a relational database to store structured, transactional data. And you might use a NoSQL database to store unstructured or semi-structured data.
-
-Design a schema for each data storage technology based on the requirements of the data. For relational databases, you might create normalized tables with appropriate relationships. For NoSQL databases, you might define document structures or key-value pairs. Develop the necessary components to interact with each data storage technology, such as APIs, data access layers, or data integration pipelines. Ensure that the application can read and write data to the appropriate data stores.
-
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: A data structure that has low normalization can improve performance but introduce complexities.
-
-#### Separate OLTP and OLAP systems
-
-﷟To separate [Online transaction processing (OLTP)](/azure/architecture/data-guide/relational-data/online-transaction-processing) and [Online analytical processing (OLAP)](/azure/architecture/data-guide/relational-data/online-analytical-processing) systems, design and deploy distinct systems for transactional processing and analytical processing tasks.This separation allows you to optimize each system for its specific workload and characteristics. Optimize each system for its specific workload and characteristics.
-
-OLTP systems are used for real-time transactional processing. They efficiently and reliably handle individual transactions. OLTP systems are typically used to perform day-to-day operational tasks, such as online order processing, inventory management, and customer data management. OLTP systems prioritize responsiveness, consistency, and concurrency.
-
-OLAP systems are used for complex analytical processing and reporting. They handle large volumes of data and perform intensive calculations and aggregations. OLAP systems are used for tasks such as business intelligence, data mining, and decision support. OLAP systems prioritize query performance, data aggregation, and multidimensional analysis.
-
-When you separate OLTP and OLAP systems, you can allocate appropriate resources and optimize each system for its specific workload. Separation allows you to apply different data modeling techniques to each system. OLTP systems typically use normalized schemas for efficient transactional processing. OLAP systems might use denormalized schemas or data warehousing techniques to optimize query performance.
-
 ## Power Platform facilitation
 
 **Monitor data performance**: To monitor data performance, you can use Azure Monitor to collect and analyze infrastructure metrics, logs, and application data. You can integrate Monitor with other services like Application Insights. Application Insights provides application performance monitoring and supports many platforms.
@@ -179,8 +159,6 @@ Azure Cosmos DB has a [default indexing policy](/azure/cosmos-db/index-policy) t
 - [Best practices for query performance](/azure/architecture/guide/technology-choices/data-store-decision-tree)
 - [Customize a Power Automate flow trigger by adding conditions](/power-automate/triggers-introduction?tabs=classic-designer#customize-a-trigger-by-adding-conditions)
 - [Dataverse elastic tables](/power-apps/developer/data-platform/elastic-tables)
-- [OLAP overview](/azure/architecture/data-guide/relational-data/online-analytical-processing)
-- [OLTP overview](/azure/architecture/best-practices/data-partitioning)
 
 ## Performance Efficiency checklist
 
