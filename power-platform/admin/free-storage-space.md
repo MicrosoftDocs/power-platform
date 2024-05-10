@@ -518,6 +518,10 @@ You can also configure which levels of alerts are logged. See [System Settings E
 
 See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
 
+## Free up storage used by the SubscriptionTrackingDeletedObject table
+
+See [Subscription Tracking Deleted Object Table](/power-platform/admin/subscription-tracking-deleted-object-retention)
+
 ### See also
 
 [Dataverse storage capacity](capacity-storage.md)
