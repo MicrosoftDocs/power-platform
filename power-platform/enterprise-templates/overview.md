@@ -103,6 +103,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Onboarding Buddy template](hr/onboarding-buddy/install-and-set-up.md)
 - [Install and set up the Hardware Request and Management template](it/hardware-request-and-management/install-and-set-up.md)
 - [Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
+- [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 
 ## Support
 
