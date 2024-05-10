@@ -74,7 +74,7 @@ The following image shows how to use the task to generate an output variable nam
 
 You can also use this in a YAML pipeline:
 
-Sample **Power Platform Set Connection Variables** task – Use either of the connection types and replace the URL and the service connection name, as shown here: link. Use the `name` field to specify the output variable.
+Sample **Power Platform Set Connection Variables** task – Use either of the connection types and replace the URL and the service connection name, as shown in [Power Platform Set Connection Variables](../../alm/devops-build-tool-tasks.md#power-platform-set-connection-variables). Use the `name` field to specify the output variable.
 
 ```yml
 task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-connection-variables.PowerPlatformSetConnectionVariables@2
