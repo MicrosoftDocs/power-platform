@@ -190,7 +190,7 @@
                   href: managed-environment-enable.md
                 - name: Environment groups (preview)
                   href: environment-groups.md
-                - name: Enable maker welcome content (preview)
+                - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Limit sharing
                   href: managed-environment-sharing-limits.md
