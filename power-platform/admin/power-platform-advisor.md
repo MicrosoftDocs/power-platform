@@ -203,6 +203,9 @@ This recommendation lists the apps that are potentially high value (used by over
 
 This recommendation lists trial websites that are expiring in the next seven days. Review and [convert the websites to production](/power-pages/admin/convert-site) as needed.
 
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
 ### Websites didn't receive any traffic in the last 30 days
 
 This recommendation lists websites that didn't receive any traffic in the last 30 days. This means there are some websites
@@ -220,13 +223,21 @@ To shut down a website:
 
     :::image type="content" source="media/power-platform-advisor/shut-down-site.svg" alt-text="Screenshot showing the action to shut down a site.":::
 
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
 If you want to start the site again later, select **Site Actions** > **Start this site** > **Start**.
 
 ### Websites don't have Content Delivery Network (CDN) enabled
 
 This recommendation lists production websites that don't have Content Delivery Network (CDN) enabled. Review the websites and [enable Content Delivery Network](/power-pages/configure/configure-cdn) where needed.
 
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
 ### Websites don't have Web Application Firewall (WAF) enabled
 
 This recommendation lists production websites that have Web Application Firewall (WAF) disabled. Review the websites and [enable Web Application Firewall](/power-pages/security/configure-web-application-firewall) where needed.
 
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
