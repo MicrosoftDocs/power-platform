@@ -1,6 +1,6 @@
 ---
-title: Recommendations for optimizing development practices through standardization
-description: Learn how to optimize your development practices by standardizing your tools and processes.
+title: Optimizing development practices through standardization recommendation
+description: Learn how to standardize your tools and processes and optimize your development and quality assurance practices.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

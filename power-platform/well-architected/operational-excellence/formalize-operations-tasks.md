@@ -1,6 +1,6 @@
 ---
-title: Recommendations for formalizing workload tasks
-description: Explore strategies for standardizing and formalizing routine and nonroutine tasks to enhance operational efficiency.
+title: Formalize workload tasks recommendation
+description: Learn how to standardize and formalize routine, as needed, and emergency operational tasks to enhance operational efficiency.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

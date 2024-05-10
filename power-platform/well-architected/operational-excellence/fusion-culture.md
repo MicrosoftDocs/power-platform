@@ -1,5 +1,5 @@
 ---
-title: Recommendations for fostering fusion team culture
+title: Fostering fusion team culture recommendation
 description: Learn how to build high-performing workload teams with fusion development principles and practices.
 author: manuelap-msft
 ms.author: mapichle

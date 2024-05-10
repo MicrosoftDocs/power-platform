@@ -1,6 +1,6 @@
 ---
 title: Emergency response recommendations
-description: Learn how to design an emergency response strategy for your workload, including processes and procedures to ensure calm, orderly issue resolution.
+description: Learn how to design an effective emergency operations practice that clearly defines roles and responsibilities to ensure timely issue resolution.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

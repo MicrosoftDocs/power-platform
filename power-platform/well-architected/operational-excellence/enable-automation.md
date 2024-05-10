@@ -1,6 +1,6 @@
 ---
-title: Recommendations for enabling automation in a workload
-description: Learn how to design your workload to enable automation and simplify maintenance tasks, allowing you to update, patch, and upgrade more efficiently and reliably.
+title: Enabling automation in a workload recommendation
+description: Learn how to design and implement automation upfront to simplify maintenance tasks, apply governance and address deployment concerns. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

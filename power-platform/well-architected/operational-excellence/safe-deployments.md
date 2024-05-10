@@ -1,6 +1,6 @@
 ---
-title: Recommendations for safe deployment practices
-description: Learn about recommendations for safe deployment practices (SDP). Define how to safely make any change to your workload through deployments.
+title: Safe deployment practices recommendation
+description: Learn how to establish safe deployment practices (SDP) and define processes for rolling out changes to your workload. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
