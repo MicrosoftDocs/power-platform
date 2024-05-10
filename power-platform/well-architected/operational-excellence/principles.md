@@ -11,36 +11,35 @@ ms.topic: conceptual
 
 # Operational Excellence design principles
 
-At the core of the Operational Excellence pillar are Fusion development and DevOps practices that ensure workload quality through standardized workflows and team cohesion. This pillar defines operating procedures for development practices, observability, and release management. The goal is to minimize process variance, chances of human error, and disruption to customers. To assess your operational health, start with these questions:
+The Operational Excellence pillar defines processes for development practices, monitoring, and release management. The goal is to establish standards that reduce development time, human error and user disruption. By following Fusion development practices, your team will also collaborate better.
 
+To assess your operational health, start with these questions:
+
+- How do you drive continuous improvement and learn from experience?
+- Do you have development and deployment standards that reduce friction and drive consistency?
+- Is your workload meeting user expectations and requirements?
 - Do you execute operations with discipline?
-- Are customers using the workload with maximum predictability?
-- How do you learn from experience and collected data to drive continuous improvement?
 
-Workload operations can devolve into chaotic practices when there's no clear ownership or leadership. In this type of environment, teams often resort to methods that are executed with high effort and produce low outcomes, which leads to poor user experience. These approaches meet only short-term goals. Long-term benefits are realized through continuous evaluation and strategic investments.
+Without standards and clear leadership, workload teams often resort to methods that aren't following best practices which can lead to poor user and support experiences.
 
-These design principles, based on the Reliability principles in the [Microsoft Azure Well-Architected Framework](/azure/well-architected/reliability/principles) provide guidelines for operational strategies that must be considered to address the underlying causes and not just treat symptoms. Start with the recommended approaches, and then observe what works and what doesn't to identify areas of improvement. After you set your strategy, continue to drive action by using the [Operational Excellence checklist](./checklist.md).
+These design principles, based on the Operational Excellence principles in the [Microsoft Azure Well-Architected Framework](/azure/well-architected/reliability/principles) provide guidelines for operational strategies that must be considered to address the underlying causes and not just treat symptoms. Start with the recommended approaches, and then observe what works and what doesn't to identify areas of improvement. After you set your strategy, continue to drive action by using the [Operational Excellence checklist](./checklist.md).
 
-The operational requirements of a workload are as important as its business requirements. Efficient processes ensure the workload achieves business outcomes within the constraints of compliance, whether that compliance is organizational or external. The key is to find repeatability with consistency.
+Your workload needs to meet both operational and business requirements. Efficient processes help the workload reach business goals whilst following compliance and governance standards. The key is to find repeatability with consistency.
 
-The goals of the Operational Excellence pillar are to do the right thing, to do it the right way, and to solve the right problems as a team.
-
-If you meet these goals, workloads will run reliably and predictably even during times of change. Inability to fulfill operational requirements can lead to failed deployments, inconsistent user experience, and added costs that could have been avoided through proper planning and streamlined execution.
+If you meet these goals, workloads will run reliably and predictably even during times of change. Not focusing on operational requirements may lead to failed and inconsistent deployments, added cost and time, and disrupted user experience.
 
 ## Embrace Fusion development and DevOps culture
 
-|![Goal icon](../_images/goal.svg) Empower development and operations teams to continuously improve their system design and processes by working together with a mindset of collaboration, shared responsibility, and ownership.|
+|![Goal icon](../_images/goal.svg) Empower development and operations teams to continuously improve the workload and processes by working together with a mindset of collaboration, shared responsibility, and ownership.|
 |--|
 
 Fusion development, or fusion teams development, is defined by Gartner as "distributed and multidisciplinary digital business teams that blend technology and other types of domain expertise." (Source: 2019 Gartner Digital Business Teams Survey)
 
 Fusion development is a strategy aimed at scaling application development by leveraging low-code methodologies. Fusion development allows your business to build better applications faster, by bringing together professional developers with citizen, or low-code, developers. It can also include using low-code capabilities and combining them with code-first components to meet business needs and create Fusion applications.
 
-DevOps is a community of practice where diversity of perspective and skills drives toward one mission. Teams must foster a collaborative environment of shared knowledge instead of siloed learning. Use shared functions to strive to overcome resource constraints.
+A good fusion development and DevOps culture fosters a collaborative environment of shared knowledge and thrives on shared responsibility. Development and operations teams are aligned on goals and priorities work keeping business focus and goals in mind. Feedback is shared between all teams - for example, operations teams share feedback from supporting the workload with the development team to improve the workload over time. At the same time, IT professionals and operations team create a secure and governed environment where citizen developers can be empowered to achieve more with minimum friction.
 
-A good fusion development and DevOps culture thrives on shared responsibility. Development and operations teams should align their goals and priorities with the expectations of their customers and keep business focus in mind. The development team should involve the operations team in the feedback loop so the improvements are driven upstream and other teams benefit equally. Conversely, operations teams are responsible for making the development team successful in their business outcomes by sharing resources and feedback that are relevant to the workload. At the same time, IT professionals and operations team must create a secure and governed environment where citizen developer can be empowered to achieve more with minimum friction.
-
-DevOps practices apply clear lines of ownership and accountability to each team. Regardless of where the application runs, the workload team is responsible for that application. DevOps optimizes operational tasks so that they're effective but not burdensome. To reap the full benefit of DevOps, the culture should optimize processes through technology and have processes for people in the organization to promote transparent communication.
+DevOps practices assign clear roles and responsibilities to each team and streamline operational tasks so that they're efficient but not overwhelming. To maximize the value of DevOps, the culture should improve processes with technology and have ways for people in the organization to foster open communication.
 
 Learn more about [embracing DevOps culture](/azure/well-architected/operational-excellence/principles#embrace-devops-culture) in Azure Well-Architected Framework.
 
@@ -49,16 +48,16 @@ Learn more about [embracing DevOps culture](/azure/well-architected/operational-
 |![Goal icon](../_images/goal.svg) Optimize productivity by standardizing development practices, enforcing quality gates, and tracking progress and success through systematic change management.|
 |--|
 
-The development team is responsible for addressing workload issues prior to release with minimal friction. Be mindful of developer efficiency and optimize for fast turnaround cycles, from coding to testing results. Implement effective and right-sized processes that plan and standardize technical activities and also drive consensus within the team and the stakeholders.
+Technology and coding standards, style guides and tools are in place to drive consistency and easier maintenance. Quality assurance processes ensure that functional and nonfunctional requirements are met and emphasize testing early in the development lifecycle. Effective processes are in place to standardize technical activities and drive consensus within the team and stakeholders. Developers are supported by standards and process but not burdened by them.
 
 Learn more about [establishing development standards](/azure/well-architected/operational-excellence/principles#establish-development-standards) in Azure Well-Architected Framework.
 
-## Evolve operations with observability
+## Improve operations with monitoring and insights
 
-|![Goal icon](../_images/goal.svg) Gain visibility into the system, derive insight, and make data-driven decisions.|
+|![Goal icon](../_images/goal.svg) Gain visibility into the workload, and use insights to make data-driven decisions.|
 |--|
 
-Build a culture that continuously improves quality by monitoring the workload and taking all the pillars of the Power Platform Well-Architected into consideration. Enable the team and stakeholders to make both short-term and long-term decisions across many facets by providing the necessary data, statistics, and trends. Learn from your data and drive improvements. Operations built for the purposes of observability are key in proactive maintenance of the application, quality and security assurance, capacity planning, and product management. A crucial aspect of monitoring is application using health modeling to help you anticipate issues before they become incidents and affect customer experience. Efficient monitoring reduces reactive cycles spent on incident management.
+Continuously improve the quality of your workload by monitoring the workload and taking all the pillars of the Power Platform Well-Architected into consideration. Build a monitoring system that allows you to monitor all parts of the workload. Collect data that you can learn from and that can drive improvements. Monitoring is key in proactive maintenance of the workload, quality and security assurance, performance and capacity planning, and product management. Efficient monitoring can reduces reactive cycles and incident response times.
 
 Learn more about [evolving operations with observability](/azure/well-architected/operational-excellence/principles#evolve-operations-with-observability) in Azure Well-Architected Framework.
 
@@ -67,7 +66,7 @@ Learn more about [evolving operations with observability](/azure/well-architecte
 |![Goal icon](../_images/goal.svg) Reach the desired state of deployment with predictability.|
 |--|
 
-Build a workload supply chain that enables you to consistently reach the goal of predictability in all of your environments, across the workload's hosting platforms, applications, data, and configuration resources. The deployment mechanism must be capable of automation, testing, monitoring, and versioning. It should be modularized and ready to execute on demand. It shouldn't be represented as a monolithic end-to-end process. The supply chain isn't necessarily for faster execution, but to achieve consistency and self-documentation over multiple iterations.
+Build a workload supply chain that enables you to consistently deploy your workload to all your environments. Choose tooling that is capable of automation, testing, monitoring, and versioning. Upskill your team so they can use the chosen technology and increase productivity. Aim to achieve immutable assets that deploy through automation, and avoid configuration drift and manual changes in downstream environments.
 
 Learn more about [deploying with confidence](/azure/well-architected/operational-excellence/principles#deploy-with-confidence) in Azure Well-Architected Framework.
 
@@ -76,7 +75,7 @@ Learn more about [deploying with confidence](/azure/well-architected/operational
 |![Goal icon](../_images/goal.svg) Replace repetitive manual tasks with automation that completes them quicker, with greater consistency and accuracy, and reduces risks.|
 |--|
 
-The workload might have workflows with processes that involve team members doing mundane, repetitive, and time-consuming tasks that don't actually need human intellect. Depending on the frequency, you might spend considerable time on these efforts, investing more time as the workload grows. Also, these processes are often error-prone due to human input. Through automation, you save time, effort, and money, and you avoid mistakes.
+Evaluate repetitive tasks that may be time-consuming and error-prone. Identify opportunities for automation so that your team's time can be spent on higher value work and you can increase productivity and consistency. Design your automation with the same principles you apply to your overall workload, avoiding anti-patterns and keeping security threats in mind. 
 
 Learn more about [automating for efficiency](/azure/well-architected/operational-excellence/principles#automate-for-efficiency) in Azure Well-Architected Framework.
 
@@ -85,7 +84,7 @@ Learn more about [automating for efficiency](/azure/well-architected/operational
 |![Goal icon](../_images/goal.svg) Implement guardrails in the deployment process to minimize the effect of errors or unexpected conditions.|
 |--|
 
-During the development cycle, workload artifacts go through many changes as they get implemented and tested and as bugs are fixed. The deployment process must follow a standard operating procedure. Any change must be deployed with the same level of rigor. This principle applies equally to code, configuration, and all related artifacts. The key is to apply safe practices as early as possible so that you have predictability in production. Even if errors reach the customers, you should be able to roll out recovery changes as soon as possible.
+Standardize the process to deploy any changes by using automated deployment processes, such as pipelines. Consistent deployment methods ensure the deployment is completed safely, reliably, and with repeatability. Catch issues in early stages of deployment by testing changes rigorously. Ensure you have a mitigation strategy in place to quickly recover from deployment failures.
 
 Learn more about [adopting safe deployment practices](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices) in Azure Well-Architected Framework.
 
