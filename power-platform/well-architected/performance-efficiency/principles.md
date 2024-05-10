@@ -13,7 +13,7 @@ ms.date: 05/10/2024
 
 Performance is a key factor in the success of any Power Platform workload. Poor performance can frustrate users, reduce productivity, and increase costs. To avoid these problems, you need to design your solutions with performance in mind from the start. A performant workload is able to handle changes in load without compromising the user experience or exceeding throughput and request limits of the platform.
 
-Use the following design principles from the Microsoft Azure Well-Architected Framework to help build a strategy that ensures the performance meets your business requirements whilst at the same time staying within the limits and capabilities of Power Platform services. Start with the recommended best practices and justify the benefits of each performance efficiency principle. Once you set your strategy, use the [Performance Efficiency checklist](checklist.md). as your next step.
+Use the following design principles from the [Microsoft Azure Well-Architected Framework](/azure/well-architected) to help build a strategy that ensures the performance meets your business requirements whilst at the same time staying within the limits and capabilities of Power Platform services. Start with the recommended best practices and justify the benefits of each performance efficiency principle. Once you set your strategy, use the [Performance Efficiency checklist](checklist.md). as your next step.
 
 Without a clear understanding of the performance expectations of your workload, you may end up spending too much or too little on resources and you may fail to satisfy user needs.
 
