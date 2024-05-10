@@ -1,6 +1,6 @@
 ---
-title: Recommendations for monitoring and threat detection
-description: Learn how to get information about events, capture information about the workload, and gain awareness of suspicious activities. 
+title: Monitor and threat detection recommendation
+description: Learn how to implement a monitoring strategy that helps you gain awareness of suspicious activities. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

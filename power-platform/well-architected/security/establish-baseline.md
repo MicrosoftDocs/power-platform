@@ -1,6 +1,6 @@
 ---
-title: Recommendations for establishing a security baseline
-description: Learn best practices for establishing a security baseline for Power Platform workloads, including how to reduce cyber risks, data breaches, and unauthorized access.
+title: Establish a security baseline recommendation
+description: Learn how to establish a security baseline for Power Platform workloads, including how to reduce cyber risks, data breaches, and unauthorized access.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

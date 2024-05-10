@@ -1,6 +1,6 @@
 ---
-title: Recommendations for securing a development lifecycle
-description: Learn about Power Platform Well-Architected Security recommendations for securing a development lifecycle. 
+title: Secure a development lifecycle recommendation
+description: Learn how to maintain a secure development lifecycle.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

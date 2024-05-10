@@ -1,6 +1,6 @@
 ---
-title: Recommendations for identity and access management 
-description: Learn about recommendations for authenticating and authorizing identities that may be attempting to access workload resources.
+title: Identity and access management recommendation
+description: Learn how to manage identities that are required to or may be attempting to access workload resources.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

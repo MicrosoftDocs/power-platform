@@ -1,6 +1,6 @@
 ---
-title: Recommendations for building a segmentation strategy
-description: Learn about the recommendations for building a unified segmentation strategy using perimeters and isolation boundaries. 
+title: Build a segmentation strategy recommendation
+description: Learn how to create intentional segmentation in your architecture and workload design.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

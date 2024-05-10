@@ -1,6 +1,6 @@
 ---
-title: Data classification recommendations
-description: Learn about data classification and how to apply it to your workloads, including how to categorize data based on sensitivity levels, information type, and scope of compliance so you can apply the correct level of protection.
+title: Data classification recommendation
+description: Learn how to classify data based on its sensitivity and how to apply classification to your workloads.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

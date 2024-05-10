@@ -1,6 +1,6 @@
 ---
-title: Recommendations for protecting application secrets
-description: Learn about recommendations for managing application secrets. Find out how to create, store, and distribute secrets securely.
+title: Protect application secrets recommendation
+description: Learn how to manage application secrets.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

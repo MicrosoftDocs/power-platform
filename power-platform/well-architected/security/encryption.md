@@ -1,6 +1,6 @@
 ---
-title: Encryption strategy recommendations
-description: Learn about recommendations for encryption, including encryption mechanisms, encryption keys, encryption algorithms, hashes, checksums, and secret management.
+title: Encryption strategy recommendation
+description: Learn how to encrypt and protect your data. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

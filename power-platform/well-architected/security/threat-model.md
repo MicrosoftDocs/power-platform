@@ -1,6 +1,6 @@
 ---
-title: Application threat analysis
-description: Use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect an application.
+title: Workload threat analysis recommendation
+description: Learn how to use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect a workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
