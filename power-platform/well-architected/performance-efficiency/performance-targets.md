@@ -1,5 +1,5 @@
 ---
-title: Define performance targets recommendation
+title: Define performance targets recommendation for Power Platform workloads
 description: Learn how to drive continuous improvement by setting performance targets for your workload.
 author: manuelap-msft
 ms.author: mapichle

@@ -1,5 +1,5 @@
 ---
-title: Respond to live performance issues recommendation
+title: Respond to live performance issues recommendation for Power Platform workloads
 description: Learn how to respond to live performance issues and use root cause analysis, triage plans, and other steps to resolve problems.
 author: manuelap-msft
 ms.author: mapichle

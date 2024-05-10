@@ -1,5 +1,5 @@
 ---
-title: Performance Efficiency tradeoffs
+title: Performance Efficiency tradeoffs for Power Platform workloads
 description: Learn about the Performance Efficiency tradeoffs with other pillars.
 author: manuelap-msft
 ms.author: mapichle

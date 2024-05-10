@@ -1,5 +1,5 @@
 ---
-title: Prioritize the performance of critical flows recommendation
+title: Prioritize the performance of critical flows recommendation for Power Platform workloads
 description: Learn how to identify critical flows and prioritize the performance of critical flows.
 author: manuelap-msft
 ms.author: mapichle

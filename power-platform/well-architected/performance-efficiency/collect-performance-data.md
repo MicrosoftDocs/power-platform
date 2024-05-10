@@ -1,5 +1,5 @@
 ---
-title: Collect workload performance data recommendation
+title: Collect workload performance data recommendation for Power Platform workloads
 description: Learn how to collect performance data to help you assess the performance of a workload.
 author: manuelap-msft
 ms.author: mapichle

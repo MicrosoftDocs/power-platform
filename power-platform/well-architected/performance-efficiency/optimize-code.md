@@ -1,6 +1,6 @@
 ---
-title: Optimize code and logic recommendation
-description: Learn how to optimize your code and logic to support the performance requirements of the workload.
+title: Optimize code and logic recommendation for Power Platform workloads
+description: Learn how to optimize your code and logic to support the performance requirements of the Power Platform workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft

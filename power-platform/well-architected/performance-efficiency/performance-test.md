@@ -1,5 +1,5 @@
 ---
-title: Performance testing recommendation
+title: Performance testing recommendation for Power Platform workloads
 description: Learn how to test performance and establish best practices for performance testing. 
 author: manuelap-msft
 ms.author: mapichle

@@ -1,5 +1,5 @@
 ---
-title: Continuously optimize performance recommendation
+title: Continuously optimize performance recommendation for Power Platform workloads
 description: Learn how to continuously optimize performance and establish a performance culture. 
 author: manuelap-msft
 ms.author: mapichle

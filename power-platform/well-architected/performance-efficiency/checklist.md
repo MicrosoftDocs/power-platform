@@ -1,6 +1,6 @@
 ---
-title: Design review checklist for Performance Efficiency
-description: Use this checklist to assess and verify the completeness of your design for performance efficiency.
+title: Recommendation checklist for Performance Efficiency
+description: Learn about the recommendations that will help you to achieve performance effiency in your Power Platform workloads.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft

@@ -1,5 +1,5 @@
 ---
-title: Performance planning recommendation
+title: Performance planning recommendation for Power Platform workloads
 description: Learn how to conduct performance planning in your workloads.
 author: manuelap-msft
 ms.author: mapichle
