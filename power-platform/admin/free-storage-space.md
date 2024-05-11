@@ -4,7 +4,7 @@ description: Reduce storage space usage by deleting notes, attachments, import h
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/09/2024
+ms.date: 05/10/2024
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks
@@ -517,6 +517,10 @@ You can also configure which levels of alerts are logged. See [System Settings E
 ## Free up storage used by flow approvals
 
 See [Delete approval history from Power Automate](/power-automate/gdpr-dsr-delete#delete-approval-history-from-power-automate).
+
+## Free up storage used by the SubscriptionTrackingDeletedObject table
+
+See [Subscription Tracking Deleted Object Table](subscription-tracking-deleted-object-retention.md).
 
 ### See also
 
