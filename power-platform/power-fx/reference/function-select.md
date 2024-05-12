@@ -109,7 +109,7 @@ The select function can also be used with a gallery. For example, it can be used
 
 4. Set the **OnSelect** property of the image control to this formula:
 
-   **Notify( "Image Selected", Success )**
+   **Notify( "Image Selected", NotificationType.Success )**
 
 5. While holding down the Alt key, click or tap the various elements of the gallery.
 
