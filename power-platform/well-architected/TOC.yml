@@ -173,9 +173,9 @@
               href: ./experience-optimization/interaction-design.md
             - name: XO:09 User interface content
               href: ./experience-optimization/user-interface-content.md
-    - name: Understand workloads
+    - name: Workloads
       href: workloads.md
-    - name: Complete an assessment
+    - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support
       href: feedback-support.md
