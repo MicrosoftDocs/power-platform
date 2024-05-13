@@ -84,4 +84,4 @@ Although there are no Power Platform products that directly facilitate this reco
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

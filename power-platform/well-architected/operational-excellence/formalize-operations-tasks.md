@@ -73,4 +73,4 @@ The Power Platform Well-Architected also provides detailed guidance on the proce
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

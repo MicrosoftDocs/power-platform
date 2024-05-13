@@ -116,4 +116,4 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

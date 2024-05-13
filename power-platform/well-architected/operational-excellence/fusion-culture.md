@@ -79,4 +79,4 @@ Create or expand your Center of Excellence (CoE) with the [Power Platform CoE St
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

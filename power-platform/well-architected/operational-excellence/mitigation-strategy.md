@@ -154,4 +154,4 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

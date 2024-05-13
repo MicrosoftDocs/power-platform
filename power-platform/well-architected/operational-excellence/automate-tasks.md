@@ -100,4 +100,4 @@ Need link for Approvals Kit, best to include it in the Power Platform facilitati
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

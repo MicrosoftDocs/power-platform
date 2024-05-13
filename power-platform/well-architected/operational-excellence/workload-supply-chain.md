@@ -84,4 +84,4 @@ For more information, see [What is an Azure landing zone?](/azure/cloud-adoption
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

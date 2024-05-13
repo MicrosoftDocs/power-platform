@@ -137,4 +137,4 @@ Other tools and services that can help you standardize your development practice
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

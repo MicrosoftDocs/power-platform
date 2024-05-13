@@ -99,4 +99,4 @@ Building and maintaining safe deployment practices is complex. Your success in f
 ## Operational Excellence checklist
 
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)
