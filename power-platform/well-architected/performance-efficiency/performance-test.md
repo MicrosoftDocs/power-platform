@@ -1,10 +1,10 @@
 ---
 title: Performance testing recommendation for Power Platform workloads
-description: Learn how to test performance and establish best practices for performance testing. 
+description: Learn how to test performance and establish best practices for performance testing of a Power Platform workload. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -51,10 +51,15 @@ _Define acceptance criteria._ Translate the performance targets into specific ac
 When you define acceptance criteria, it's important to focus on users and their expectations. Acceptance criteria help ensure that the delivered work meets user needs and requirements. Keep in mind the following considerations for incorporating the user perspective into acceptance criteria:
 
 - User personas: Understand the number and types of users who will use your solution at the same time. Define user personas that represent different roles, locations, security configurations, data sets, and activities.
+
 - User requirements: Understand the user needs and goals for the workload. Consider how the workload should perform to satisfy these requirements. Define day-in-the-life scenarios that reflect the actions users perform on a typical day. Include peak load and normal load scenarios.
+
 - User experience: Define acceptance criteria that capture the desired user experience. Include factors such as response time, usability, accessibility, and overall satisfaction.
+
 - Functional requirements: Address the specific functionality that the user expects to see in the workload. Define acceptance criteria around these functional requirements to help ensure that they're met. Use realistic data volumes for each scenario. Don't use more or less data than users need.
+
 - Infrastructure requirements: Define realistic infrastructure requirements for each scenario. For example, if your users will access your solution from mobile devices with poor connectivity, test your solution under those conditions.
+
 - Use cases: Consider different scenarios or use cases that the user might encounter. Define acceptance criteria based on these use cases to validate the workload's performance in real-world situations.
 
 _Set acceptance thresholds._ Determine the thresholds within the acceptance criteria that indicate whether the workload meets the performance targets. These thresholds define the acceptable range of performance for each metric. For example, suppose the acceptance criterion for response time is less than 2 seconds. You can set the threshold at 2.5 seconds. This level indicates that any response time over 2.5 seconds is considered a performance issue.
@@ -66,7 +71,9 @@ _Define passing criteria._ Establish the criteria for determining whether the wo
 To select the right type of performance test, it's important to align the test with your acceptance criteria. The acceptance criteria define the conditions that need to be met for a requirement or bug fix to be considered done. Performance tests should aim to verify whether a workload meets these acceptance criteria and performs as expected under specified conditions. Aligning the performance test type with the acceptance criteria helps ensure that the test focuses on meeting the performance expectations that the criteria define.
 
 - _Understand acceptance criteria_. Review the acceptance criteria for the requirement or bug fix. The criteria outline the specific conditions and functionalities to be met.
+
 - _Identify relevant performance metrics_. Based on the acceptance criteria, determine the performance metrics that are critical to achieving the desired outcomes. For example, if the acceptance criteria focus on response time, prioritizing load testing might be appropriate.
+
 - _Select an appropriate test type_. Evaluate the available test types and choose the one that best aligns with the identified performance metrics and acceptance criteria.
 
 The following table provides a sample of test types and their use cases.
@@ -96,11 +103,17 @@ The following steps can help you select the appropriate testing tools:
   - Performance metrics to measure, such as response time and throughput
   - The complexity of the workload architecture
   - The testing environment, such as cloud-based, on-premises, or hybrid
+
 - _Research testing tools_. Conduct research to identify performance testing tools that align with your requirements. Consider commercial and open-source tools that are available in the market. Look for tools that support your desired types of performance testing, such as load testing or stress testing, and that provide features for measuring performance metrics.
+
 - _Evaluate tool features_. Assess the features that each testing tool provides. Look for capabilities such as simulation of realistic user behavior and scalability to handle large user loads. Consider support for various protocols and technologies, integration with other testing tools or frameworks, and reporting and analysis capabilities.
+
 - _Consider compatibility and integration_. Determine the compatibility of the testing tools with your existing infrastructure and technologies. Ensure that the tools can be easily integrated into your testing environment and can communicate with the necessary workload for monitoring and analysis.
+
 - _Evaluate cost and licensing_. Assess the cost structure and licensing terms that are associated with the testing tools. Consider factors such as the initial investment, maintenance costs, and support costs. Also consider other licensing requirements that depend on the number of users or virtual users.
+
 - _Conduct a POC_. Select a few tools that appear to be the most suitable based on your evaluation. Conduct a small-scale POC to validate the usability, features, and effectiveness of the tools in your specific testing scenario.
+
 - _Consider support and training_. Evaluate the level of support and training that the tool's vendor or community provides. Determine the availability of documentation, tutorials, and technical support channels to assist with any challenges or issues that might arise during the testing process.
 
 #### Create test scenarios
@@ -110,9 +123,13 @@ Creating test scenarios refers to the process of designing specific situations o
 Test scenarios make it possible to replicate various workload patterns, such as concurrent user access, peak load periods, or specific transaction sequences. By testing the workload under different workload patterns, you can identify performance bottlenecks and optimize resource allocation.
 
 - _Define user behavior_. Emulate realistic user behavior and workload patterns by identifying the steps and actions that users perform when they interact with the workload. Consider activities such as signing in, performing searches, submitting forms, or accessing specific features. Break down each scenario into specific steps and actions that represent the user's interaction with the workload. You can include navigating through pages, performing transactions, or interacting with various elements of the workload.
+
 - _Determine data involvement_. Identify the test data required to run the test scenarios. You might include creating or generating realistic data sets that represent various scenarios, user profiles, or data volumes. Ensure that the test data is diverse and covers different use cases to provide a comprehensive performance evaluation.
+
 - _Design test scripts_. Create test scripts that automate the execution of the defined test scenarios. Test scripts typically consist of a sequence of actions, HTTP requests, or interactions with workload APIs or user interfaces. Use performance testing tools or programming languages to write the scripts, considering factors such as parameterization, correlation, and dynamic data handling. Validate the test scripts for correctness and functionality. Debug any issues, such as script errors, missing or incorrect actions, or data-related problems. Test script validation is crucial to help ensure accurate and reliable performance test execution.
+
 - _Configure test variables and parameters_. Configure variables and parameters within test scripts to introduce variability and simulate real-world scenarios. Include parameters such as user credentials, input data, or randomization to mimic different user behaviors and workload responses.
+
 - _Iteratively_ _refine scripts_. Continuously refine and enhance test scripts based on feedback, test results, or changing requirements. Consider optimizing script logic, parameterization, and error handling, or adding extra validation and checkpoints.
 
 #### Configure the test environment
@@ -122,8 +139,11 @@ Configuring a test environment refers to the process of setting up the infrastru
 To set up your testing environment in a way that boosts performance efficiency, include the following steps in your configuration process:
 
 - _Mirror your production environment_. Set up your test environment to closely resemble your production environment. Consider factors such as environment settings and region, network settings, security settings, data sources, and integrations. The goal is to ensure that the performance test results are representative of real-world conditions.
+
 - _Provision sufficient resources_. Allocate adequate resources such as storage capacity to the test environment. Ensure that the available resources can handle the expected workload and provide accurate performance measurements.
+
 - _Replicate network conditions_. Configure the network settings in the test environment to replicate the expected network conditions during the actual workload deployment. You need to include bandwidth, latency, and network protocols.
+
 - _Install and configure dependencies_. Install any apps from AppSource, and other dependencies that are required for the workload to run correctly. This includes configuring third-party services with the expected production configurations.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: There are costs associated with maintaining separate test environments, storing data, using tooling, and running tests. Know the cost of performance testing, and find a way to optimize spending.
@@ -138,7 +158,7 @@ Monitor and collect performance metrics such as response time, throughput, and o
 
 Use the defined test scenarios to put the workload under expected loads. Conduct tests under these varying load conditions. For example, use levels, such as normal, peak, and stress levels, to analyze the behavior of the workload in various scenarios.
 
-When planning and running performance tests it is important to remember that in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and assets belonging to other customers. You must limit tests to avoid unintended consequences for other customers around you.
+When planning and running performance tests it's important to remember that, in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and the assets belonging to other customers. Limit tests to avoid unintended consequences for other customers.
 
 ### Document the results
 
@@ -152,11 +172,14 @@ Document your performance test results clearly and consistently. Your documentat
 
 ### Analyze the results
 
-Analyzing the test results involves examining the collected data and metrics from the performance tests to gain insights into the performance of the workload. The goal is to identify performance issues and use the feedback to adjust priorities in application development. The following actions are key steps for analyzing test results.
+Analyzing the test results involves examining the collected data and metrics from the performance tests to gain insights into the performance of the workload. The goal is to identify performance issues and use the feedback to adjust priorities in application development. 
+
+The following actions are key steps for analyzing test results.
 
 _Review performance metrics._ Look at the performance metrics that you collect during performance testing, such as response times, throughput, error rates, and network latency. Analyze these metrics to understand the overall performance of the workload.
 
 - _Identify bottlenecks_. Evaluate the performance metrics to identify any bottlenecks or areas of inefficient performance. The evaluation can include high response times, resource constraints, database issues, network latency, and scalability limitations. Pinpointing the root causes of these bottlenecks helps you prioritize performance improvements.
+
 - _Correlate metrics_. Assess the relationships and correlations between various performance metrics. For example, analyze how increased load or resource utilization affects response times. Understanding these correlations can provide valuable insights into workload behavior under different conditions. Look for patterns and trends in the performance data over time. Analyze performance under different load levels or during specific periods. Detecting trends can help identify seasonal variations, peak usage times, or recurring performance issues.
 
 _Evaluate acceptance criteria._ Compare the retest results against the predefined acceptance criteria and performance goals. Assess whether the workload meets the desired performance standards. If the workload doesn't meet the acceptance criteria, further investigate and refine the optimizations.
@@ -177,16 +200,23 @@ To establish baselines for performance testing and use them as a benchmark for f
   - Response time, or how quickly the workload responds to requests.
   - Throughput, or the number of requests that are processed per unit of time.
   - Resource utilization, such as storage capacity usage.
+
 - _Record meaningful measurements_. Record the performance metrics that you obtain during the test as the baseline measurements. These measurements represent the starting point against which you compare future performance tests.
+
 - _Compare future tests_. In subsequent performance tests, compare the performance metrics against the established baselines and thresholds. The comparison allows you to identify any improvements or degradation in performance.
 
 ### Test continuously
 
-Continuous testing involves the ongoing monitoring and refinement of your tests. Continuous testing helps you maintain consistent and acceptable levels of performance. A workload should provide a consistent and acceptable level of performance relative to the baseline. You should tune the workload over time to produce consistent performance that's within the acceptable limits of performance. Here are some key practices:
+Continuous testing involves the ongoing monitoring and refinement of your tests. Continuous testing helps you maintain consistent and acceptable levels of performance. A workload should provide a consistent and acceptable level of performance relative to the baseline. You should tune the workload over time to produce consistent performance that's within the acceptable limits of performance. 
+
+Here are some key practices:
 
 - _Set degradation limits_. Define numeric thresholds that specify the level of performance degradation that's acceptable over time. By setting these limits, you can monitor performance fluctuations and receive alerts when the performance falls below the defined threshold.
+
 - _Include quality assurance_. Incorporate performance requirements, such as maximum requests per second, into the quality assurance process. Treat performance requirements with the same level of importance as functional requirements. This process helps ensure that the workload meets the defined performance requirements before you deploy it to production.
+
 - _Automate alerting_. In live environments, rapid detection and response are crucial. Set up automated alerting systems that use the performance baseline as their reference. If there's a significant deviation in performance, the necessary teams are alerted immediately to act.
+
 - _Test changes_. Some performance issues might only manifest in a live setting. Apply thorough testing practices for proposed changes. Use code instrumentation to gain insights into the application's performance characteristics, such as hot paths. This testing ensures that any change introduced doesn't degrade performance beyond the acceptable limits.
 
 ## Power Platform facilitation
@@ -205,7 +235,7 @@ During development, developers can also use [Power Apps Monitor](/power-apps/mak
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Testing takes time and skill to perform and can affect operational efficiency.
 
-## Related links
+## See also
 
 - [Recommendations for security testing](../security/testing.md)
 - [Recommendations for designing a reliability testing strategy](../reliability/testing-strategy.md)
