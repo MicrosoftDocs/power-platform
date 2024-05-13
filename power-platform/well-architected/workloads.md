@@ -1,6 +1,6 @@
 ---
 title: Power Platform Well-Architected workloads
-description: Learn about workloads, which are application resources, data, and infrastructure that achieve business outcomes.
+description: Learn about workloads in the context of Power Platform Well-Architected.
 author: robstand
 ms.author: rstand
 ms.date: 05/10/2024
