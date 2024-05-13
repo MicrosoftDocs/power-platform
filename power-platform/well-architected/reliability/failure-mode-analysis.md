@@ -140,3 +140,8 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)  
 - [Power Platform administrative logs](/power-platform/admin/admin-activity-logging)
 - [Dataverse auditing](/power-platform/admin/manage-dataverse-auditing)
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

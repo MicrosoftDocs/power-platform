@@ -80,3 +80,8 @@ When deciding between orchestration or policy tools, consider whether the config
 [Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) support design variability in the workload. For example, to store parameter keys and values, which then serve as input to other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
 [Conditional Access](/azure/active-directory/conditional-access/overview) is a feature of Microsoft Entra ID that lets you control how and when users can access applications and services. Follow the recommendations for [conditional access and multifactor authentication](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow) when automating processes with Power Automate.
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

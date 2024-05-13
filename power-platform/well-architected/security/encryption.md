@@ -101,3 +101,8 @@ The following example shows encryption solutions that you can use to manage keys
 - [Data storage and governance in Power Platform](/power-platform/admin/security/data-storage)
 - [Power Platform security FAQs](/power-platform/admin/security/faqs)
 - [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

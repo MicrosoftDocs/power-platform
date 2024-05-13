@@ -204,3 +204,8 @@ Follow the rules of engagement to make sure that access isn't misused. For guida
 - [Penetration testing](/azure/security/fundamentals/pen-testing)
 
 You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](/azure/ddos-protection/test-through-simulations).
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

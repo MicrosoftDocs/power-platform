@@ -131,3 +131,8 @@ With Azure Virtual Network support for Power Platform, you can integrate Power P
 [IP firewall](/power-platform/admin/ip-firewall) for Power Platform environments helps to protect your data by limiting user access to Dataverse from only allowed IP locations.
 
 [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services; for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

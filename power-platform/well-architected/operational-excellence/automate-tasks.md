@@ -96,3 +96,8 @@ Power Automate Approvals (out of the box) or the Approvals Kit (custom solution)
 <!--
 Need link for Approvals Kit, best to include it in the Power Platform facilitation section
 -->
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

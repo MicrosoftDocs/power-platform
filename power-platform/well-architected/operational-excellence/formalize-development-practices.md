@@ -80,3 +80,8 @@ Although there are no Power Platform products that directly facilitate this reco
 - [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards)
 - [User support strategy](/power-platform/guidance/adoption/support-strategy-solutions)
 - [Measuring the business value of Power Platform solutions](/power-platform/guidance/adoption/business-value)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

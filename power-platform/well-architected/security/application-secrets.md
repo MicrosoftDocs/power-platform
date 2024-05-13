@@ -132,3 +132,8 @@ CyberArk offers an identity security platform that secures human and machine ide
 - [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
 - [Recommendations for monitoring and threat detection](monitor-threats.md)
 - [Recommendations for identity and access management](identity-access.md)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

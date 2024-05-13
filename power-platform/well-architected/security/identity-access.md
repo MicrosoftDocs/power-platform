@@ -278,3 +278,8 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 - [What's new in Microsoft Entra ID?](/azure/active-directory/fundamentals/whats-new)
 - [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

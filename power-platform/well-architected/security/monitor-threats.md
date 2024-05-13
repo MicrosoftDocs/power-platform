@@ -214,3 +214,8 @@ DevOps advocates change management of workloads via continuous integration and c
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
 - [Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

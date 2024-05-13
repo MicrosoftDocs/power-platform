@@ -112,3 +112,8 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 - [Co-development governance](/power-apps/guidance/co-develop/governance)
 - [Use scenarios to implement healthy ALM with Microsoft Power Apps](/power-platform/alm/implement-healthy-alm)
 - [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

@@ -126,3 +126,8 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 - [Recommendations for designing and creating a monitoring system](observability.md)
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [User and maker support strategy](/power-platform/guidance/adoption/support-strategy)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)
