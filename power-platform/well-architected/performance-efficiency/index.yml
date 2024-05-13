@@ -70,9 +70,9 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: "Azure Advisor: Performance recommendations"
-            url: /azure/advisor/advisor-reference-performance-recommendations
-          - text: Application Insights
-            url: /azure/azure-monitor/app/app-insights-overview
-          - text: Azure Load Testing
-            url: /azure/load-testing/overview-what-is-azure-load-testing
+          - text: "Power Apps: Creating performant apps"
+            url: /power-apps/maker/canvas-apps/create-performant-apps-overview
+          - text: Integration with Application Insights
+            url: /power-platform/admin/overview-integration-application-insights
+          - text: Power Apps Test Engine
+            url: /power-apps/developer/test-engine/overview
