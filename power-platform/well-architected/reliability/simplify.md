@@ -109,3 +109,8 @@ These Power Apps articles provide practical design advice:
 - [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
 - [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
 - [Planning a Power Apps project ](/power-apps/guidance/planning/planning-phase)
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

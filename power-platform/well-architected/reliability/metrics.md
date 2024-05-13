@@ -131,3 +131,8 @@ Microsoft Business Applications provides Business Continuity and Disaster Recove
 Cloud Adoption Framework provides guidance for recommendations for SLOs and SLIs related to monitoring across the organization.
 
 For more information, see [Cloud monitoring SLOs](/azure/cloud-adoption-framework/manage/monitor/service-level-objectives#how-do-you-define-slis).
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

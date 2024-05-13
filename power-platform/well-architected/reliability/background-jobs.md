@@ -148,3 +148,8 @@ Reduce the risk by [planning for error handling](/power-automate/guidance/planni
 [Plug-ins](/power-apps/developer/data-platform/plug-ins) are custom event handlers that execute in response to a specific event raised during processing of a Microsoft Dataverse data operation.
 
 Microsoft Dataverse also offers a powerful solution for achieving more efficient data architecture and reducing client-side workload through [low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=automated). These plug-ins are reusable, real-time workflows that execute a specific set of commands within Dataverse, running server-side and triggered by personalized event handlers.
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

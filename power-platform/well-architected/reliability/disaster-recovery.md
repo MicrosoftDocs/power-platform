@@ -100,3 +100,8 @@ As your DR drill practices mature, you learn which procedures you can run in par
 ## Failover capabilities
 
 Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all [production](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

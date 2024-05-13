@@ -164,3 +164,8 @@ Cloud Adoption Framework for Azure provides guidance about incident response pla
 - [Conduct end-to-end threat hunting by using the Hunts feature](/azure/sentinel/hunts)
 - [Use Hunts to conduct end-to-end proactive threat hunting in Microsoft Sentinel](/azure/security-center/security-center-provide-security-contact-details)
 - [Incident response overview](/security/operations/incident-response-overview)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

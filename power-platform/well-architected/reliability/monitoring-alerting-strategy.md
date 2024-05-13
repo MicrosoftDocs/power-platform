@@ -127,3 +127,8 @@ The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) i
 ## See also
 
 [How do I check my online service health?](/power-platform/admin/check-online-service-health)
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

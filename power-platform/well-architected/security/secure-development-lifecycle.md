@@ -189,3 +189,8 @@ With the solution checker feature, you can perform a rich static analysis check 
 - [Solution Architect series: Plan application lifecycle management for Power Platform](/training/modules/application-lifecycle-management-architect/)
 - [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
 - [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

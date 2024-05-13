@@ -80,3 +80,8 @@ For more information, see [What is an Azure landing zone?](/azure/cloud-adoption
 - [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops)
 - [Reliability pillar](../reliability/checklist.md)
 - [Security pillar](../security/checklist.md)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

@@ -170,6 +170,11 @@ Use the Application Insights integrations to log errors in Power Automate and Po
 - [Set up Application Insights with Power Automate (preview)](/power-platform/admin/app-insights-cloud-flow)
 - [Analyze system-generated logs using Application Insights in Power Apps](/power-apps/maker/canvas-apps/application-insights)
 
-### See also
+## See also
 
 [Business continuity and disaster recovery for Dynamics 365 SaaS apps](/power-platform/admin/business-continuity-disaster-recovery)
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

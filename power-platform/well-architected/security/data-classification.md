@@ -138,3 +138,8 @@ For more information, see [What is data classification?](/azure/cloud-adoption-f
 - [Data classification and sensitivity label taxonomy](/compliance/assurance/assurance-data-classification-and-labels)
 - [Create a well-designed data classification framework](/compliance/assurance/assurance-create-data-classification-framework)
 - [Connect to and manage Microsoft Dataverse in Microsoft Purview](/purview/register-scan-dataverse?tabs=MI)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

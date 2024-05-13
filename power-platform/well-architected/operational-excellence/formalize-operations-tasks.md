@@ -69,3 +69,8 @@ The Power Platform Well-Architected also provides detailed guidance on the proce
 - [Recommendations for enabling automation in your workload](enable-automation.md)
 - [Recommendations for formalizing software development management practices](formalize-development-practices.md)
 - [Promote an Agile culture within your team](/azure/devops/boards/plans/agile-culture)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

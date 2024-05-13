@@ -129,3 +129,8 @@ This example builds on the Information Technology (IT) environment established i
 - [Content security policy](/power-platform/admin/content-security-policy)
 - [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)
 - [Microsoft Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started)
+
+## Security checklist
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

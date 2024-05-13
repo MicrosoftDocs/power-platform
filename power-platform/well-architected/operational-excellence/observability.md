@@ -192,3 +192,8 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [Recommendations for monitoring and threat detection](../security/monitor-threats.md)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)

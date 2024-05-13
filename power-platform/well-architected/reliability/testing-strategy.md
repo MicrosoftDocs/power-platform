@@ -147,3 +147,8 @@ You can use static results in Power Automate to return a fixed result to test yo
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
 If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio), a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
+
+## Reliability checklist
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

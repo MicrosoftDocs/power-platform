@@ -133,3 +133,8 @@ Other tools and services that can help you standardize your development practice
 ## See also
 
 [Co-development governance](/power-apps/guidance/co-develop/governance)
+
+## Operational Excellence checklist
+
+> [!div class="nextstepaction"]
+> [Operational Excellence  checklist](checklist.md)
