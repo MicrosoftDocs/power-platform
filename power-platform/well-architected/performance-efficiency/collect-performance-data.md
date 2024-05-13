@@ -1,10 +1,10 @@
 ---
 title: Collect workload performance data recommendation for Power Platform workloads
-description: Learn how to collect performance data to help you assess the performance of a workload.
+description: Learn how to collect performance data to help you assess the performance of a Power Platform workload.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -16,9 +16,9 @@ ms.topic: conceptual
 |[PE:04](checklist.md)|**Collect performance data. Workload components and flows should provide automatic, continuous, and meaningful metrics and logs. Collect data at different levels of the workload, such as the application, platform, data, and operating system levels.** |
 |---|---|
 
-Collecting performance data is the process of gathering metrics and logs that provide information about the performance of a workload. This data includes numerical values, which are known as _metrics_. Metrics describe the state of the system at a particular point in time. It also includes logs that contain different types of data organized into records.
+Collecting performance data is the process of gathering metrics and logs that provide information about the performance of a workload. This data includes numerical values, which are known as _metrics_. Metrics describe the state of the system at a particular point in time. Performance data also includes logs that contain different types of data organized into records.
 
-By collecting performance data, you can monitor and analyze the performance of a workload. You can use this information to identify performance bottlenecks, to troubleshoot issues, and to make data-driven decisions to improve the overall performance efficiency of the workload.
+By collecting performance data, you can monitor and analyze the performance of a workload. You can use this information to identify performance bottlenecks, troubleshoot issues, and to make data-driven decisions to improve the overall performance efficiency of the workload.
 
 Without data-driven insights, you might be unaware of underlying performance issues or opportunities for optimization. Potential results include slower response times, decreased throughput, and ultimately, a suboptimal user experience. Additionally, the lack of performance data makes it difficult to diagnose and troubleshoot issues in a timely manner, leading to prolonged downtime and reduced productivity.
 
@@ -52,7 +52,9 @@ Tradeoff: Understand the cost of collecting metrics and logs. In general, the mo
 Segmenting performance data involves organizing and categorizing metrics and logs based on their origin, purpose, or environment. For example, you should separate production data from nonproduction data or distinguish between performance targets and business metrics. Segmenting data helps with optimizing specific environments, facilitates troubleshooting, and limits inaccuracies in performance monitoring. By maintaining a clear distinction between different data types, you can capture, analyze, and respond to relevant metrics more efficiently and better align workload health with workload objectives. To segment performance data, consider the following recommendations:
 
 - _Keep production data and nonproduction data separate_. By separating data by environment, you can ensure focused monitoring and optimization of each environment. In production environments, you can better identify and address performance issues that directly affect users and business operations. In nonproduction environments, data separation facilitates effective troubleshooting and fine-tuning during the testing phase before you deploy to production.
+
 - _Use one set of data within each environment_. Don't use one set of data for performance targets and another set of data for alerts related to the performance targets. Using different sets of data leads to inaccurate alerts that undermine the effectiveness of performance monitoring.
+
 - _Separate performance targets and business metrics_. The operations and development teams use performance targets to monitor workload health and meet business targets. Business metrics relate to business goals or customer reporting. Capture business metrics in a separate data stream, even if the data directly overlaps. This separation gives you flexibility to capture the right data and independently analyze the data.
 
 ### Define retention policies
@@ -65,19 +67,26 @@ Collecting data involves monitoring and analyzing a workload’s performance met
 
 #### Instrument code
 
-Instrumentation refers to the process of embedding code snippets or actions into your workloads code for example, creating [custom trace events](/power-apps/maker/canvas-apps/application-insights#create-custom-trace-events) in your canvas app. The purpose of instrumentation is to capture performance data while the workload runs. It's essential to gather metrics that highlight the workload’s critical operations. Focus on metrics like throughput, latency, and completion time. It's important to differentiate business-related operations from other operations. For data related to business operations, make sure its metadata is structured in a way that allows distinct tracking and storage. Code instrumentation provides the following benefits:
+Instrumentation refers to the process of embedding code snippets or actions into your workloads code; for example, creating [custom trace events](/power-apps/maker/canvas-apps/application-insights#create-custom-trace-events) in your canvas app. The purpose of instrumentation is to capture performance data while the workload runs. It's essential to gather metrics that highlight the workload’s critical operations. Focus on metrics like throughput, latency, and completion time. It's important to differentiate business-related operations from other operations. For data related to business operations, make sure its metadata is structured in a way that allows distinct tracking and storage. Code instrumentation provides the following benefits:
 
 - _Identifying performance bottlenecks:_ By tracking metrics such as elapsed time, you can identify bottlenecks and optimize the code accordingly.
+
 - _Evaluating system behavior under a load:_ You can see how the workload performs under different stress scenarios. This data can help you identify issues related to scalability, concurrency, and resource use.
+
 - _Tracking_ _workload_ _health and availability:_ Because key performance indicators are monitored in real time, you can get alerts about potential issues that affect the application's performance and availability.
+
 - _Improve user experience:_ You can gain insights into how users interact with the workload. Use this information to optimize the user experience and identify areas for improvement.
+
 - _Plan capacity and allocate resources:_ The performance data that instrumentation gathers can provide valuable insights into the resource requirements of a workload. This information can inform your decisions about planning capacity and allocating resources.
 
 When you instrument code for performance monitoring, consider the following strategies:
 
 - _Use APM tools_: Application performance monitoring (APM) tools collect and analyze performance data, including metrics, traces, and logs. APM tools offer features like code-level instrumentation, transaction tracing, and performance profiling.
+
 - _Custom instrumentation_: Developers can add custom code to collect performance metrics that are unique to their application and workload. The custom instrumentation can measure runtimes, track resource usage, or capture specific events.
+
 - _Capture transaction times._ Capturing transaction times relates to measuring the end-to-end times for key technical functions as a part of performance monitoring. Application-level metrics should include end-to-end transaction times. These transaction times should cover key technical functions such as database queries, response times for external API calls, and failure rates of processing steps.
+
 - _Use telemetry standards._ Consider using APM tool instrumentation libraries and tools that are built around a telemetry standard, such as OpenTelemetry.
 
 ### Collect resource performance data
@@ -85,7 +94,9 @@ When you instrument code for performance monitoring, consider the following stra
 By collecting resource performance data, you can gain insights into the health and behavior of your workload. Resource performance data provides information about resource use, which is key for capacity planning. This data also provides insights into the health of a workload and can help you detect issues and troubleshoot. Consider the following recommendations:
 
 - _Collect metrics and logs for every resource._ Each service has a set of metrics that's unique to the functionality of the resource. These metrics help you understand the resource's health and performance.
+
 - _Use platform tooling._ Gather inspiration from built-in and integrated monitoring solutions, such as Azure Monitor Insights. This tooling streamlines performance operations. Consider platform tooling as you select a platform and invest in custom tooling or reporting.
+
 - _Monitor network traffic._ Monitoring network traffic means to track and analyze the flow and patterns of data as it moves across network pathways. Collect traffic analytics and monitor the traffic that traverses subnet boundaries. Your goal is to analyze and optimize network performance.
 
 ### Collect database and storage data
@@ -93,8 +104,11 @@ By collecting resource performance data, you can gain insights into the health a
 Many database and storage systems provide their own monitoring tools. These tools collect performance data specific to those systems. Database and storage systems often generate logs that contain performance-related events and indicators. Collect database data and storage performance data so you can identify bottlenecks, diagnose issues, and make informed decisions to improve the overall performance and reliability of your workload. Consider collecting the following types of performance data:
 
 - _Throughput_: Throughput measures the amount of data read from or written to the storage system over a period of time. Throughput data indicates the data transfer capabilities.
+
 - _Latency_: Latency measures how long storage operations last. Latency data indicates the responsiveness of the storage system.
+
 - _IOPS (I/O operations per second)_: Data about the number of read operations or write operations that the storage system can perform in a second. IOPS data indicates the storage system's throughput and responsiveness.
+
 - _Capacity use_: Capacity use is the amount of storage capacity used and the amount that's available. Capacity-use data helps organizations plan for future storage needs.
 
 ### Collect connector performance data
@@ -106,6 +120,7 @@ Time spent waiting for integrated services operations to complete can contribute
 Your performance data should align with the performance targets. The data needs to represent workload or flow performance completely and accurately as it relates to performance targets. For example, the response time for a web service has a performance target of 500 milliseconds. Make it a routine to analyze the data, as frequent evaluations allow for early detection and mitigation of performance issues.
 
 - _Create alerts._ It's beneficial to have alerts that are actionable, enabling prompt identification and rectification of performance problems. These alerts should clearly indicate the breached performance threshold, the potential business effect, and the components involved. Start by setting common and recommended alert. Over time, you can modify these criteria based on your specific needs. The primary objective of these alerts should be to forecast potential performance drops before they escalate into significant issues. If you can't set an alert for an external dependency, consider devising a method to gather indirect measurements, like the duration of a dependency call.
+
 - _Set data collection limits._ Determine and set logical limits on the volume of data you collect and its retention duration. Telemetry can sometimes produce overwhelming amounts of data. It's essential to focus on capturing only the most vital performance indicators or have an efficient system in place to extract meaningful insights from your performance data.
 
 ## **Power Platform facilitation**

@@ -6,14 +6,14 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Performance Efficiency tradeoffs for Power Platform workloads
 
 A workload that meets its performance targets without overprovisioning is efficient. Key strategies for performance efficiency include proper use of code optimizations, design patterns, and capacity planning. Clear performance targets and testing underpin this pillar.
 
-During the design phase of a workload, it's important to consider how decisions based on the [Performance Efficiency design principles](./principles.md) and recommendations in the [Design review checklist for Performance Efficiency](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for performance efficiency.
+During the design phase of a workload, it's important to consider how decisions based on the [Performance Efficiency design principles](./principles.md) and recommendations in the [Design review checklist for Performance Efficiency](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, yet represent tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for performance efficiency.
 
 ## Performance Efficiency tradeoffs with Reliability
 
@@ -47,8 +47,8 @@ One performance optimization strategy is to remove or bypass components or proce
 
 Performance-centric cloud design patterns sometimes necessitate the introduction of additional components. These components increase the surface area of the workload. The new components must be secured, possibly in ways that aren't already used in the system, and they often increase the compliance scope. Consider these commonly added components:
 
-- Introducing multiple different methods of handling business logic, like cloud flows and low-code plugins, based on the performance requirements of each task
-- Offloading processing to background jobs or even client compute
+- Introducing multiple different methods of handling business logic, like cloud flows and low-code plugins, based on the performance requirements of each task.
+- Offloading processing to background jobs or even client compute.
 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Removing segmentation.** The Security pillar prioritizes strong segmentation to enable fine-grained security controls and reduce blast radius.
 
@@ -85,12 +85,10 @@ Sharing resources is an approach for improving efficiency. It increases density 
 :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Decreased user engagement.** The Experience Optimization pillar prioritizes more engaging user experiences.
 
 - Optimizing for performance prioritizes using platform features over customizations, which deprioritize custom components that could lead to a more engaging user experience.
-- Optimizing for performance can focus too much on on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
+- Optimizing for performance can focus too much on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
 - User interface development is often done in faster iterations and ship cycles, which can make it harder to enhance performance continuously.
 
-## Related resources
-
-Explore the tradeoffs for the other pillars.
+## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)

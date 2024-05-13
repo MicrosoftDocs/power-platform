@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 # Recommendation checklist for Performance Efficiency
 
@@ -19,7 +19,7 @@ For every system, there's a limit to how much you can scale it without redesigni
 |&nbsp;|Code  |Recommendation  |
 |-|-|-|
 | &#9744; | [PE:01](performance-targets.md)  | **Define performance targets.** Performance targets should be numerical values that are tied to workload requirements. You should implement performance targets for all workload flows. |
-| &#9744; | [PE:02](performance-planning.md) | **Conduct performance planning.** Performance planning should be done before there are predicted changes in usage patterns, such as seasonal variations, product updates, marketing campaigns, special events, or regulatory changes.  |
+| &#9744; | [PE:02](performance-planning.md) | **Conduct performance planning.** Performance planning should be done before there are predicted changes in usage patterns. Predicted changes include seasonal variations, product updates, marketing campaigns, special events, or regulatory changes.  |
 | &#9744; | [PE:03](select-services.md) | **Select the right services.** The services and product features must support your ability to reach the workload's performance targets and accommodate expected capacity changes. The selections should also weigh the benefits of using platform features or building a custom implementation.  |
 | &#9744; | [PE:04](collect-performance-data.md) | **Collect performance data.** Workload components and flows should provide automatic, continuous, and meaningful metrics and logs. Collect data at different levels of the workload, such as the application, platform, data, and operating system levels.  |
 | &#9744; | [PE:05](performance-test.md) | **Test performance.** Perform regular testing in an environment that matches the configuration of the production environment. Compare results against the performance targets and the performance benchmark. |
@@ -30,8 +30,6 @@ For every system, there's a limit to how much you can scale it without redesigni
 | &#9744; | [PE:10](continuous-performance-optimize.md) | **Continuously optimize performance.** Focus on components that show deteriorating performance over time, such as databases and networking features. |
 
 ## Next steps
-
-We recommend that you review the Performance Efficiency tradeoffs to explore other concepts.
 
 > [!div class="nextstepaction"]
 > [Performance Efficiency tradeoffs](tradeoffs.md)
