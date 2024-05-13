@@ -66,5 +66,7 @@ To implement a wizard pattern, use the [SubwayNav component](/power-platform/gui
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

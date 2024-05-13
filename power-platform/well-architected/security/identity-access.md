@@ -281,5 +281,7 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

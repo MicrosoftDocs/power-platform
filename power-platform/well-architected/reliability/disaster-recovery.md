@@ -103,5 +103,7 @@ Microsoft Business Applications provide business continuity and disaster recover
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

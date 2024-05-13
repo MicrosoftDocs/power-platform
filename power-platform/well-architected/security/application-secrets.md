@@ -135,5 +135,7 @@ CyberArk offers an identity security platform that secures human and machine ide
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

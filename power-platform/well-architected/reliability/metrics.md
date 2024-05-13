@@ -134,5 +134,7 @@ For more information, see [Cloud monitoring SLOs](/azure/cloud-adoption-framewor
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

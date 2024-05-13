@@ -83,5 +83,7 @@ When deciding between orchestration or policy tools, consider whether the config
 
 ## Operational Excellence checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

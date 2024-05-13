@@ -150,5 +150,7 @@ If your workload includes Azure resources, you can use [Azure Chaos Studio](http
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

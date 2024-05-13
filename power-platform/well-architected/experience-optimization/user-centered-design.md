@@ -71,5 +71,7 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

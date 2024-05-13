@@ -141,5 +141,7 @@ For more information, see [What is data classification?](/azure/cloud-adoption-f
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

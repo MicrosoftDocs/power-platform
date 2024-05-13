@@ -286,5 +286,7 @@ In canvas apps, [modern controls](/power-apps/maker/canvas-apps/controls/modern-
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

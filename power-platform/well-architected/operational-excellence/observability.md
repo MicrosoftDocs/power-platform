@@ -195,5 +195,7 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 
 ## Operational Excellence checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
-> [Operational Excellence  checklist](checklist.md)
+> [Operational Excellence checklist](checklist.md)

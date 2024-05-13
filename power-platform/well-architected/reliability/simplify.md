@@ -112,5 +112,7 @@ These Power Apps articles provide practical design advice:
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

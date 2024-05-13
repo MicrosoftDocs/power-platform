@@ -143,5 +143,7 @@ Power Platform resources log activities in the [Microsoft Purview compliance por
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

@@ -130,5 +130,7 @@ The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) i
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)
