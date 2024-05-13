@@ -192,5 +192,7 @@ With the solution checker feature, you can perform a rich static analysis check 
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

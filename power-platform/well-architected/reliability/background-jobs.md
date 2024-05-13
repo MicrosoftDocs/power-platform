@@ -151,5 +151,7 @@ Microsoft Dataverse also offers a powerful solution for achieving more efficient
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

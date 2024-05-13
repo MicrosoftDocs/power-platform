@@ -99,5 +99,7 @@ Need link for Approvals Kit, best to include it in the Power Platform facilitati
 
 ## Operational Excellence checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Operational Excellence checklist](checklist.md)

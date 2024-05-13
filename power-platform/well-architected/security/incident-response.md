@@ -167,5 +167,7 @@ Cloud Adoption Framework for Azure provides guidance about incident response pla
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

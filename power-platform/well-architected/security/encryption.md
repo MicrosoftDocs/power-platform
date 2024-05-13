@@ -104,5 +104,7 @@ The following example shows encryption solutions that you can use to manage keys
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

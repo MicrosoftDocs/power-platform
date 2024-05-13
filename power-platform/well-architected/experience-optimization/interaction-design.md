@@ -197,5 +197,7 @@ Although some interaction implementation has been encapsulated into the modern c
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

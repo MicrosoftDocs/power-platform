@@ -51,4 +51,4 @@ Over time, the workload will evolve due to functionality changes, eliminating or
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Complete a Power Platform Well-Architected Review](https://aka.ms/powa/assessment)
+> [Complete a Power Platform Well-Architected assessment](https://aka.ms/powa/assessment)

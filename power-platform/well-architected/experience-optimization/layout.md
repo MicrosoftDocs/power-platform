@@ -187,5 +187,7 @@ Canvas apps require explicit configuration for each component to [implement resp
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

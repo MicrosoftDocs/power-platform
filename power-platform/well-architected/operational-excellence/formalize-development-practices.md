@@ -83,5 +83,7 @@ Although there are no Power Platform products that directly facilitate this reco
 
 ## Operational Excellence checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Operational Excellence checklist](checklist.md)

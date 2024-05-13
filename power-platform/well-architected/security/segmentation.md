@@ -134,5 +134,7 @@ With Azure Virtual Network support for Power Platform, you can integrate Power P
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

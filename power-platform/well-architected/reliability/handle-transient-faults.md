@@ -176,5 +176,7 @@ Use the Application Insights integrations to log errors in Power Automate and Po
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)

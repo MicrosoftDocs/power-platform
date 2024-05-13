@@ -157,5 +157,7 @@ Canvas apps require code components to enable keyboard shortcuts, which can be c
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

@@ -132,5 +132,7 @@ This example builds on the Information Technology (IT) environment established i
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

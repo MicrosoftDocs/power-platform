@@ -140,5 +140,7 @@ Related links here.
 
 ## Experience Optimization checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

@@ -200,5 +200,7 @@ Ensure the security baseline you establish for Power Platform is well aligned wi
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

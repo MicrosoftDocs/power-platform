@@ -217,5 +217,7 @@ DevOps advocates change management of workloads via continuous integration and c
 
 ## Security checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

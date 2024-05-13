@@ -213,5 +213,7 @@ Learn how to convert your ideas into a fully functional solution by [planning a 
 
 ## Reliability checklist
 
+Refer to the complete set of recommendations.
+
 > [!div class="nextstepaction"]
 > [Reliability checklist](checklist.md)
