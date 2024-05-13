@@ -1,9 +1,9 @@
 ---
-title: Environment routing (preview)
+title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 3/7/2024
+ms.date: 05/13/2024
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Environment routing (preview)
+# Environment routing
 
 [This article is prerelease documentation and is subject to change.]
 
