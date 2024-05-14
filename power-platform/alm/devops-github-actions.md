@@ -4,7 +4,7 @@ description: "Learn about the ALM-related tools and services that are available 
 keywords: 
 author: kkanakas 
 ms.subservice: alm
-ms.author: kartikka
+ms.author: marcsc
 ms.custom: ""
 ms.date: 08/30/2021
 ms.reviewer: "pehecke"
