@@ -4,7 +4,7 @@ description: "Overview of how developers can extend Power Platform using various
 author: phecke
 ms.subservice: developer
 ms.author: pehecke
-ms.date: 11/09/2022
+ms.date: 05/14/2024
 ms.reviewer: pehecke
 ms.topic: "article"
 ---

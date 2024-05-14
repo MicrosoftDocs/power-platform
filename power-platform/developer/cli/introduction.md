@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: marcsc
 author: devkeydet
 ms.reviewer: jdaly
-ms.date: 03/26/2024
+ms.date: 05/15/2024
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?

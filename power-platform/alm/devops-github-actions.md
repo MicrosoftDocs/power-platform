@@ -2,14 +2,12 @@
 title: "GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the ALM-related tools and services that are available to developers when using GitHub and Microsoft Power Platform."
 keywords: 
-author: kkanakas 
+author: devkeydet
 ms.subservice: alm
 ms.author: marcsc
-ms.custom: ""
-ms.date: 08/30/2021
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
+ms.date: 05/14/2024
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---
