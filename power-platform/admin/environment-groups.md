@@ -38,6 +38,9 @@ This article covers how to augment your _default environment strategy_ by combin
 
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
+## Known limitations
+ 1. When creating an environment in the admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. That bug will be fixed in all geographies by mid-June. The alternative is to create the environment via API or PowerShell.
+
 ## Create an environment group
 
 [Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. You can create a single environment group named **Personal Productivity**, then create new developer environments into the group.
