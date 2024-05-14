@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # What is Power Platform Well-Architected?
@@ -19,14 +19,14 @@ Power Platform Well-Architected is a framework that can improve the quality of a
 - Meet expectations of performance.
 - Be easy to use.
 
-Power Platform Well-Architected is built on five pillars of architectural excellence, which are mapped to the goals. The pillars are: [**Reliability**](./reliability/index.yml), [**Security**](./security/index.yml), [**Operational Excellence**](./operational-excellence/index.yml), [**Performance Efficiency**](./performance-efficiency/index.yml) and [**Experience Optimization**](./experience-optimization/index.yml). 
+Power Platform Well-Architected is built on five pillars of architectural excellence, which are mapped to the goals. The pillars are: [**Reliability**](./reliability/index.yml), [**Security**](./security/index.yml), [**Operational Excellence**](./operational-excellence/index.yml), [**Performance Efficiency**](./performance-efficiency/index.yml), and [**Experience Optimization**](./experience-optimization/index.yml). 
 
 Each pillar offers best practices, risk factors, and tradeoffs. The design choices must consider all pillars, based on the business needs. The technical and practical guidance is general enough for all workloads and relevant to a specific situation. This guidance focuses on Power Platform.  
 
 Workload architecture differs from its execution. Power Platform Well-Architected can help you achieve optimal architectural design, but the execution options depend on the business goals and limitations of your organization.
 
 > [!NOTE]
-> Power Platform Well-Architected is based on the methodology and guidance in [Microsoft Azure Well-Architected Framework](/azure/well-architected). It is designed to be used in alignment with Azure Well-Architected for those organizations that use both Power Platform and Azure.
+> Power Platform Well-Architected is based on the methodology and guidance of the [Microsoft Azure Well-Architected Framework](/azure/well-architected). It is designed to be used in alignment with Azure Well-Architected for those organizations that use both Power Platform and Azure.
 
 ## Audience
 

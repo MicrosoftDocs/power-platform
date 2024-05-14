@@ -1,10 +1,10 @@
 ---
 title: Continuously optimize performance recommendation for Power Platform workloads
-description: Learn how to continuously optimize performance and establish a performance culture. 
+description: Learn how to continuously optimize performance and establish a performance culture to support your Power Platform workload. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -55,25 +55,31 @@ Critical user and system flows are the most important and high-priority processe
 
 ### Automate performance optimization
 
-Automation can eliminate repetitive and time-consuming manual processes, allowing them to be performed efficiently. Automation reduces the chances of human error and ensures consistency in running optimization tasks. By automating these tasks, you can also free up people to focus on more complex activities and activities that add value. You can apply automation to various tasks, such as performance testing, deployment, and monitoring:
+Automation can eliminate repetitive and time-consuming manual processes, allowing them to be performed efficiently. Automation reduces the chances of human error and ensures consistency in running optimization tasks. By automating these tasks, you can also free up people to focus on more complex activities and activities that add value. You can apply automation to various tasks, such as performance testing, deployment, and monitoring.
 
-- _Automated performance testing_: Use automated performance testing tools like Selenium to simulate different workloads and scenarios. Power Apps Test Engine is a component within the Power Platform CLI that you can use to test standalone canvas apps in Power Apps.
+- _Automated performance testing_: Use automated performance testing tools like Selenium to simulate different workloads and scenarios. [Power Apps Test Engine](/power-apps/developer/test-engine/overview) is a component within the Power Platform CLI that you can use to test standalone canvas apps in Power Apps.
+
 - _Automated deployment_: Implement automated deployment processes to ensure consistent and error-free deployments. Use CI/CD (continuous integration/continuous delivery) tools to automate the deployment process. These tools can help you identify performance bottlenecks as you use them to test against endpoints, check HTTP statuses, and even validate data quality and variations.
+
 - _Monitoring and alerting_: Set up automated monitoring and alerting systems to continuously monitor performance metrics and detect any deviations or anomalies. When performance issues are detected, automated alerts can be triggered to notify the appropriate teams or individuals.
+
 - _Incident management_: Implement an automated incident management system that can receive alerts, create tickets, and assign tickets to the appropriate teams for resolution. These steps help ensure that performance issues are promptly addressed and assigned to the right resources.
+
 - _Automated diagnostics_: Develop automated diagnostic tools or scripts that can analyze performance data and identify the root causes of performance issues. These tools can help pinpoint specific areas or components of the system that are causing performance problems.
+
 - _Automated remediation actions_: Define and implement automated remediation actions that can be triggered when specific performance issues are detected. These actions can include restarting services, adjusting resource allocation, clearing caches, or implementing other performance optimization techniques.
+
 - _Self-healing systems_: Build self-healing capabilities into your system by automating the recovery process for known performance issues. This capability can involve automatically fixing or adjusting the system configuration to restore optimal performance.
 
 ### Address technical debt
 
-Technical debt refers to the accumulated inefficiencies, suboptimal design choices, or shortcuts taken during the development process that can affect performance. Technical debt, unclear code, and overly complex implementations can make performance efficiency more difficult to attain. Addressing technical debt involves identifying and resolving these issues to improve the overall performance and maintainability of the workload. This work might include refactoring code, optimizing database queries, improving architectural design, or implementing best practices. Perhaps you introduced technical debt to meet a deadline, but you need to address the technical debt as you optimize performance efficiency over time.
+Technical debt refers to the accumulated inefficiencies, suboptimal design choices, or shortcuts taken during the development process that can affect performance. Technical debt, unclear code, and overly complex implementations can make performance efficiency more difficult to attain. Addressing technical debt involves identifying and resolving these issues to improve the overall performance and maintainability of the workload. This work might include refactoring code, optimizing database queries, improving architectural design, or implementing best practices. Perhaps, for example, you introduced technical debt to meet a deadline&mdash;you'll need to address that technical debt as you optimize performance efficiency over time.
 
 ### Optimize databases
 
 Continuously optimizing databases involves identifying and implementing optimizations to ensure that databases can handle loads, deliver fast response times, and minimize resource utilization. By regularly optimizing databases, you can improve application performance, reduce downtime, and enhance the overall user experience.
 
-- **Optimize database queries**: Poorly written database queries can degrade database performance. Inefficient filters can cause unneeded data processing. Complex subqueries, nested queries, and excessive functions can reduce running speed. Queries that retrieve too much data should be rewritten. You should identify your most common or critical database queries and optimize them. The optimization helps ensure faster queries.
+- **Optimize database queries**: Poorly written database queries can degrade database performance. Inefficient filters can cause unneeded data processing. Complex subqueries, nested queries, and excessive functions can reduce running speed. Rewrite queries that retrieve too much data. Identify your most common or critical database queries and optimize them. The optimization helps ensure faster queries.
 - **Review model design**: Review the data model to ensure you optimize it for the specific requirements of the application.
 
 ## Power Platform facilitation

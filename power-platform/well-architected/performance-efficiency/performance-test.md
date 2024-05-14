@@ -158,7 +158,7 @@ Monitor and collect performance metrics such as response time, throughput, and o
 
 Use the defined test scenarios to put the workload under expected loads. Conduct tests under these varying load conditions. For example, use levels, such as normal, peak, and stress levels, to analyze the behavior of the workload in various scenarios.
 
-When planning and running performance tests it's important to remember that, in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and the assets belonging to other customers. Limit tests to avoid unintended consequences for other customers.
+When planning and running performance tests it's important to remember that, in many cases, the Microsoft Cloud uses shared infrastructure to host your assets and the assets belonging to other customers. Limit tests to avoid unintended consequences.
 
 ### Document the results
 

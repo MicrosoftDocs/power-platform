@@ -4,7 +4,7 @@ description: Understand the design principles of the Power Platform Well-Archite
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -40,7 +40,7 @@ A good fusion development and DevOps culture fosters a collaborative environment
 
 DevOps practices assign clear roles and responsibilities to each team and streamline operational tasks so that they're efficient but not overwhelming. To maximize the value of DevOps, the culture should improve processes with technology and have ways for people in the organization to foster open communication.
 
-Learn more about [embracing DevOps culture](/azure/well-architected/operational-excellence/principles#embrace-devops-culture) in Azure Well-Architected Framework.
+Learn more about [embracing DevOps culture](/azure/well-architected/operational-excellence/principles#embrace-devops-culture) in the Azure Well-Architected Framework.
 
 ## Establish development standards
 
@@ -49,7 +49,7 @@ Learn more about [embracing DevOps culture](/azure/well-architected/operational-
 
 Technology and coding standards, style guides and tools are in place to drive consistency and easier maintenance. Quality assurance processes ensure that functional and nonfunctional requirements are met and emphasize testing early in the development lifecycle. Effective processes are in place to standardize technical activities and drive consensus within the team and stakeholders. Developers are supported by standards and process but not burdened by them.
 
-Learn more about [establishing development standards](/azure/well-architected/operational-excellence/principles#establish-development-standards) in Azure Well-Architected Framework.
+Learn more about [establishing development standards](/azure/well-architected/operational-excellence/principles#establish-development-standards) in the Azure Well-Architected Framework.
 
 ## Improve operations with monitoring and insights
 
@@ -58,7 +58,7 @@ Learn more about [establishing development standards](/azure/well-architected/op
 
 Continuously improve the quality of your workload by monitoring the workload and taking all the pillars of the Power Platform Well-Architected into consideration. Build a monitoring system that allows you to monitor all parts of the workload. Collect data that you can learn from and that can drive improvements. Monitoring is key in proactive maintenance of the workload, quality and security assurance, performance and capacity planning, and product management. Efficient monitoring can reduces reactive cycles and incident response times.
 
-Learn more about [evolving operations with observability](/azure/well-architected/operational-excellence/principles#evolve-operations-with-observability) in Azure Well-Architected Framework.
+Learn more about [evolving operations with observability](/azure/well-architected/operational-excellence/principles#evolve-operations-with-observability) in the Azure Well-Architected Framework.
 
 ## Deploy with confidence
 
@@ -67,7 +67,7 @@ Learn more about [evolving operations with observability](/azure/well-architecte
 
 Build a workload supply chain that enables you to consistently deploy your workload to all your environments. Choose tooling that is capable of automation, testing, monitoring, and versioning. Upskill your team so they can use the chosen technology and increase productivity. Aim to achieve immutable assets that deploy through automation, and avoid configuration drift and manual changes in downstream environments.
 
-Learn more about [deploying with confidence](/azure/well-architected/operational-excellence/principles#deploy-with-confidence) in Azure Well-Architected Framework.
+Learn more about [deploying with confidence](/azure/well-architected/operational-excellence/principles#deploy-with-confidence) in the Azure Well-Architected Framework.
 
 ## Automate for efficiency
 
@@ -76,7 +76,7 @@ Learn more about [deploying with confidence](/azure/well-architected/operational
 
 Evaluate repetitive tasks that may be time-consuming and error-prone. Identify opportunities for automation so that your team's time can be spent on higher value work and you can increase productivity and consistency. Design your automation with the same principles you apply to your overall workload, avoiding anti-patterns and keeping security threats in mind. 
 
-Learn more about [automating for efficiency](/azure/well-architected/operational-excellence/principles#automate-for-efficiency) in Azure Well-Architected Framework.
+Learn more about [automating for efficiency](/azure/well-architected/operational-excellence/principles#automate-for-efficiency) in the Azure Well-Architected Framework.
 
 ## Adopt safe deployment practices
 
@@ -85,7 +85,7 @@ Learn more about [automating for efficiency](/azure/well-architected/operational
 
 Standardize the process to deploy any changes by using automated deployment processes, such as pipelines. Consistent deployment methods ensure the deployment is completed safely, reliably, and with repeatability. Catch issues in early stages of deployment by testing changes rigorously. Ensure you have a mitigation strategy in place to quickly recover from deployment failures.
 
-Learn more about [adopting safe deployment practices](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices) in Azure Well-Architected Framework.
+Learn more about [adopting safe deployment practices](/azure/well-architected/operational-excellence/principles#adopt-safe-deployment-practices) in the Azure Well-Architected Framework.
 
 ## Next steps
 

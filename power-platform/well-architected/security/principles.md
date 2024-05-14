@@ -28,7 +28,7 @@ As you design your system, use the Microsoft Zero Trust model as the compass to 
 
 Security isn't a one-time effort. You must implement this guidance on a recurring basis. Continuously improve your defenses and security knowledge to help keep your workload safe from attackers who are constantly gaining access to innovative attack vectors as they're developed and added to automated attack kits.
 
-The design principles, based on [Microsoft Azure Well-Architected Framework](/azure/well-architected), are intended to establish an ongoing security mindset to help you continuously improve the security posture of your workload as the attempts of attackers continuously evolve. These principles should guide the security of your architecture, design choices, and operational processes. Start with the recommended approaches and justify the benefits for a set of security requirements. After you set your strategy, drive actions by using the [Security checklist](checklist.md) as your next step.
+The design principles, based on the [Microsoft Azure Well-Architected Framework](/azure/well-architected), are intended to establish an ongoing security mindset to help you continuously improve the security posture of your workload as the attempts of attackers continuously evolve. These principles should guide the security of your architecture, design choices, and operational processes. Start with the recommended approaches and justify the benefits for a set of security requirements. After you set your strategy, drive actions by using the [Security checklist](checklist.md) as your next step.
 
 If these principles aren't applied properly, a negative impact on business operations and revenue can be expected. Some consequences might be obvious, like penalties for regulatory workloads. Others might not be so obvious and could lead to ongoing security problems before they're detected.
 
@@ -43,7 +43,7 @@ By following these principles, you can improve security effectiveness, harden wo
 
 As a workload owner, you share the responsibility with the organization to protect assets. Make a security readiness plan that matches your business priorities. It will help you create clear processes, enough investments, and appropriate accountabilities. The plan should give the workload requirements to the organization, which also shares the responsibility for protecting assets. Security plans should be part of your strategy for reliability, health modeling, and self-preservation.
 
-Learn more about [planning your security readiness](/azure/well-architected/security/principles#plan-your-security-readiness) in Azure Well-Architected Framework.
+Learn more about [planning your security readiness](/azure/well-architected/security/principles#plan-your-security-readiness) in the Azure Well-Architected Framework.
 
 ## Design to protect confidentiality
 
@@ -52,7 +52,7 @@ Learn more about [planning your security readiness](/azure/well-architected/secu
 
 Workload data can be classified by user, usage, configuration, compliance, intellectual property, and more. You shouldn't share or access that data beyond the established trust boundaries. To protect confidentiality, you should focus on access controls, opacity, and keeping an audit trail of activities that involve data and the system.
 
-Learn more about [designing to protect confidentiality](/azure/well-architected/security/principles#design-to-protect-confidentiality) in Azure Well-Architected Framework.
+Learn more about [designing to protect confidentiality](/azure/well-architected/security/principles#design-to-protect-confidentiality) in the Azure Well-Architected Framework.
 
 ## Design to protect integrity
 
@@ -61,7 +61,7 @@ Learn more about [designing to protect confidentiality](/azure/well-architected/
 
 The key is to use controls that prevent tampering of business logic, flows, deployment processes, data, and even the lower stack components, like the operating system and boot sequence. Lack of integrity can create vulnerabilities that can lead to breaches in confidentiality and availability.
 
-Learn more about [designing to protect integrity](/azure/well-architected/security/principles#design-to-protect-integrity) in Azure Well-Architected Framework.
+Learn more about [designing to protect integrity](/azure/well-architected/security/principles#design-to-protect-integrity) in the Azure Well-Architected Framework.
 
 ## Design to protect availability
 
@@ -70,7 +70,7 @@ Learn more about [designing to protect integrity](/azure/well-architected/securi
 
 You need to balance availability architecture choices with security architecture choices. The system should have availability guarantees to make sure that users have access to data and that data is reachable. From a security perspective, users should operate within the allowed access scope, and the data must be trusted. Security controls should stop bad actors, but they shouldn't stop legitimate users from accessing the system and data.
 
-Learn more about [designing to protect availability](/azure/well-architected/security/principles#design-to-protect-availability) in Azure Well-Architected Framework.
+Learn more about [designing to protect availability](/azure/well-architected/security/principles#design-to-protect-availability) in the Azure Well-Architected Framework.
 
 ## Sustain and evolve your security posture
 
@@ -79,7 +79,7 @@ Learn more about [designing to protect availability](/azure/well-architected/sec
 
 Your security posture must not get worse over time. You must keep improving security operations so that new disruptions are handled more effectively. Aim to align improvements with the phases defined by industry standards. Doing so leads to better readiness, faster time to incident detection, and effective containment and mitigation. Continuous improvement should be based on lessons learned from past incidents.
 
-Learn more about [sustaining and evolving your security posture](/azure/well-architected/security/principles#sustain-and-evolve-your-security-posture) in Azure Well-Architected Framework.
+Learn more about [sustaining and evolving your security posture](/azure/well-architected/security/principles#sustain-and-evolve-your-security-posture) in the Azure Well-Architected Framework.
 
 ## Next steps
 
