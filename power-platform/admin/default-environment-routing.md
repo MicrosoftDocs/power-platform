@@ -72,7 +72,7 @@ The **Environment routing** setting is disabled by default and must be enabled u
     > [!Note]
     > Currently security group filtering only works for security groups that have one hundred members or less. 
 
-    :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
+    :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located.":::
 
 
 #### [PowerShell](#tab/powershell)
