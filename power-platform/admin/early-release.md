@@ -20,9 +20,9 @@ Early release cycle environments are also the environments that're used for [Pow
 
 Early release cycle environments are created similarly to the way [other environments are created in the Power platform admin center](create-environment.md). 
 
-In fact, the only difference is in which infrastructure the environment is created, and therefore it gets software releases first.
+In fact, the only difference is in which infrastructure the environment is created, and therefore, it gets software releases first.
 
-When you create an environment and select a region, you see the option to create the environment as an early release cycle environment. A subset of the regions currently have this capability, so the environment needs to be created in those specific regions. 
+When you create an environment and select a region, you see the option to create the environment as an early release cycle environment. This option is named **Get new features early**. A subset of the regions currently have this capability, so the environment needs to be created in those specific regions. 
 
 :::image type="content" source="media/Get-new-features-early.png" alt-text="**Get new features early** option":::
  
