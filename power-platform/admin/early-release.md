@@ -23,7 +23,11 @@ Early release cycle environments are created similarly to the way [other environ
 In fact, the only difference is in which infrastructure the environment is created, and therefore it gets software releases first.
 
 When you create an environment and select a region, you see the option to create the environment as an early release cycle environment. A subset of the regions currently have this capability, so the environment needs to be created in those specific regions. 
+
+:::image type="content" source="media/Get-new-features-early.png" alt-text="**Get new features early** option":::
  
 ## Manage early release cycle environments
 
 Early release cycle environments can be managed similarly to other environments in the Power platform admin center.  You can identify early release cycle environments if they have the **Early** value in the **Release cycle** column.
+
+:::image type="content" source="media/blur-release-cycle.png" alt-text="Early release cycle enviroments have **Early** in the **Release Cycle** column.":::
