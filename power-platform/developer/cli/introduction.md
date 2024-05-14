@@ -5,7 +5,7 @@ keywords: Microsoft Power Platform CLI, code components, component framework, CL
 ms.author: marcsc
 author: devkeydet
 ms.reviewer: jdaly
-ms.date: 03/26/2024
+ms.date: 05/15/2024
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -166,6 +166,7 @@ Or view the list of commands in the documentation:
 
 ### See also
 
+[Microsoft Power Platform CLI release notes](https://www.nuget.org/packages/Microsoft.PowerApps.CLI#releasenotes-body-tab)<br />
 [Microsoft Power Platform CLI Command Groups](reference/index.md)<br />
 [Power Apps component framework](/power-apps/developer/component-framework/overview)<br />
 
