@@ -1,6 +1,8 @@
-> [!NOTE]
-> With pac cli version 1.27, the `pac paportal` command was changed to `pac powerpages`. `paportal` will continue to work, but we recommend using `powerpages` going forward.
 
+> [!NOTE]
+> With pac cli version 1.32, the `pac powerpages` command was changed to `pac pages`.
+> With pac cli version 1.27, the `pac paportal` command was changed to `pac powerpages`.
+> Both `powerpages` and `paportal` will continue to work, but we recommend using `pages` going forward.
 
 See the following resources about using Power Platform CLI with Power Pages:
 
