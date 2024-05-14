@@ -43,10 +43,8 @@ Understand that environment routing is a tenant-level, admin setting that:
   > [!Note]
   > If the admin attempts to use environment routing while the **Developer Environment assignments** setting is configured as **only specific admins**, the following error appears:
   >
-  > _Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 20ab38aa-01bd-4999-b426-1fbfecf4bf1b_
+  > _Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: NNNNN-NNNNN-NNNNN._
 
-  > [!Note]
-  > Currently security group filtering only works for security groups that have one hundred members or less. 
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
