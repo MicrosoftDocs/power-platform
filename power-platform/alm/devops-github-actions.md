@@ -105,10 +105,9 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ### See also
 
-[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)
-
-
-[Available GitHub Actions](devops-github-available-actions.md)
+[GitHub Actions for Power Platform release notes](https://github.com/microsoft/powerplatform-actions/releases)<br/>
+[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)<br/>
+[Available GitHub Actions](devops-github-available-actions.md)<br/>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

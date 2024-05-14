@@ -193,7 +193,8 @@ Ensure that the added Application User has the system administrator role assigne
 
 ### See Also
 
-[Build tool tasks](devops-build-tool-tasks.md)   
-[Microsoft Power Platform Build Tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools)
+[Power Platform Build Tools for Azure DevOps release notes](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools#release-notes)<br/>
+[Build tool tasks](devops-build-tool-tasks.md)<br/>
+[Microsoft Power Platform Build Tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools)<br/>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
