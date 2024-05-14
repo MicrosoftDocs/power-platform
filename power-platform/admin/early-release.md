@@ -18,7 +18,7 @@ Early release cycle environments are also the environments that're used for [Pow
 
 ## Create early release cycle enviornments
 
-Early release cycle environments are created similarly to the way [other environments are created in the Power platform admin center](../create-environment.md). 
+Early release cycle environments are created similarly to the way [other environments are created in the Power platform admin center](create-environment.md). 
 
 In fact, the only difference is in which infrastructure the environment is created, and therefore it gets software releases first.
 
