@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI modelbuilder command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI modelbuilder command group."
 keywords: "pac cli"
 ms.subservice: developer
-ms.author: marcsc
 author: devkeydet
-ms.date: 1/22/2024
+ms.author: marcsc
+ms.date: 5/13/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -59,7 +59,7 @@ This parameter requires no value. It's a switch.
 
 #### `--emitvirtualattributes` `-eva`
 
-When set, includes the Virtual Attributes of entities in the generated code.
+When set, includes supporting name attributes for lookups that enable filtering on the primary name attribute values of lookup attributes.
 
 This parameter requires no value. It's a switch.
 
