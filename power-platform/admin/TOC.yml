@@ -217,7 +217,7 @@
                 - name: "Manage maintenance window (preview)"
                   href: manage-maintenance-window.md
             - name: Early release cycle environments
-              href: environments/early-release-environments.md
+              href: early-release.md
             - name: Environment settings
               items:
                 - name: Tenant settings
