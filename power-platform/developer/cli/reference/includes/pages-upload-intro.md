@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac pages upload
+pac pages upload --path "C:\portals\starter-portal"
 ``` 
--->

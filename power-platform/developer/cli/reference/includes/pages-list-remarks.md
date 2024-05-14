@@ -1,8 +1,4 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
 
 ### Remarks
 
-Add remarks here...
-
--->
+More information: [List available portals](/power-apps/maker/portals/power-apps-cli-tutorial#step-3-download-portals-content)

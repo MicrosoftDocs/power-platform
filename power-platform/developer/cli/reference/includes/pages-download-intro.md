@@ -1,9 +1,5 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac pages download
-``` 
--->
+pac pages download --path "C:\portals" --webSiteId f88b70cc-580b-4f1a-87c3-41debefeb902
+```

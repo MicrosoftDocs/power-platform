@@ -1,9 +1,7 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
 ### Example
 
 ```powershell
-pac env list
-``` 
--->
+pac env list --filter myenv
+```
+
+The filter parameter is a regular expression based filter.
