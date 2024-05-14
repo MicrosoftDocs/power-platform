@@ -28,6 +28,6 @@ When you create an environment and select a region, you see the option to create
 
 Early release cycle environments can be managed similarly to other environments in the Power platform admin center.  You can identify early release cycle environments if they have the **Early** value in the **Release cycle** column.
 
-:::image type="content" source="../media/blur-release-cycle.png" alt-text="The "Release Cycle" column is shown.:::
+:::image type="content" source="media/blur-release-cycle.png" alt-text="The "Release Cycle" column is shown.:::
 
 
