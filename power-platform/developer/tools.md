@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Microsoft Power Platform provides various tools for developers to extend platform features and capabilities using code.
 
-|Tool | |Description  |
+|Tool | Release notes |Description  |
 |---------|---------|---------|
 |[Power Platform CLI](cli/introduction.md) | <nobr>([release notes](https://www.nuget.org/packages/Microsoft.PowerApps.CLI#releasenotes-body-tab)) </nobr> | Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to environment lifecycle, authentication, and work with Microsoft Dataverse environments, solution packages, portals, code components, and more. |
 |[Power Platform Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode) | ([release notes](https://github.com/microsoft/powerplatform-vscode/releases)) | The Power Platform extension for Visual Studio Code makes it easy to manage Power Platform environments and allows the developer to create, build and deploy Power Platform solutions, packages and portals.  Installing this extension will also make the latest Power Platform CLI (aka pac) available in your VSCode terminal. |
