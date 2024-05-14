@@ -190,7 +190,7 @@
                   href: managed-environment-enable.md
                 - name: Environment groups (preview)
                   href: environment-groups.md
-                - name: Enable maker welcome content (preview)
+                - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Limit sharing
                   href: managed-environment-sharing-limits.md
@@ -496,40 +496,44 @@
                       href: cross-tenant-restrictions.md
                     - name: Content security policy
                       href: content-security-policy.md
-                - name: Data loss prevention policies
+                - name: Data policies
                   items:
                     - name: Overview
                       href: wp-data-loss-prevention.md
-                    - name: Create a DLP policy
-                      href: create-dlp-policy.md
-                    - name: Manage DLP policies
-                      href: prevent-data-loss.md
-                    - name: Data loss prevention SDK
-                      href: data-loss-prevention-sdk.md
-                    - name: Basic connector classification
-                      href: dlp-connector-classification.md
-                    - name: Connector action control
-                      href: connector-action-control.md
-                    - name: Connector endpoint filtering (preview)
-                      href: connector-endpoint-filtering.md
-                    - name: DLP for custom connectors
-                      href: dlp-custom-connector-parity.md
+                    - name: Known limitations
+                      href: dlp-known-issues.md
+                    - name: Policies
+                      items:
+                      - name: Create and manage policies
+                        href: prevent-data-loss.md
+                      - name: Policy scopes
+                        href: dlp-policy-scope.md
+                      - name: Effect of multiple policies
+                        href: dlp-combined-effect-multiple-policies.md
+                      - name: Disable new connectors
+                        href: connector-off-by-default.md
+                      - name: Design-time versus runtime
+                        href: dlp-impact-policies-apps-flows.md
+                      - name: Exempt apps and flows
+                        href: dlp-resource-exemption.md
+                    - name: Certified connectors
+                      items:
+                      - name: Connector classification
+                        href: dlp-connector-classification.md
+                      - name: Connector action control
+                        href: connector-action-control.md
+                      - name: Connector endpoint filtering (preview)
+                        href: connector-endpoint-filtering.md
+                    - name: Custom connectors
+                      items:
+                      - name: Connector classification
+                        href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
                       href: /power-automate/prevent-data-loss
                     - name: DLP for desktop flows
                       href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
-                    - name: Disable new connectors
-                      href: connector-off-by-default.md
-                    - name: View policies and policy scope
-                      href: dlp-policy-scope.md
-                    - name: Effect of multiple policies
-                      href: dlp-combined-effect-multiple-policies.md
-                    - name: Impact on apps and flows
-                      href: dlp-impact-policies-apps-flows.md
-                    - name: Exempt apps and flows
-                      href: dlp-resource-exemption.md
-                    - name: Known limitations
-                      href: dlp-known-issues.md
+                    - name: DLP for Copilot Studio
+                      href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
                   items:
                     - name: Overview
@@ -850,6 +854,8 @@
               href: delete-bulk-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
+            - name: Restore deleted table records (preview)
+              href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
             - name: Recover database space by deleting audit logs

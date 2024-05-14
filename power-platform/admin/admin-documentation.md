@@ -3,7 +3,7 @@ title: Administer Microsoft Power Platform
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 06/20/2023
+ms.date: 05/04/2024
 ms.author: sericks
 ---
 # Administer Microsoft Power Platform
@@ -28,7 +28,7 @@ Currently, the admin center provides the following capabilities.
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support. More information: [Get Help + Support](./get-help-support.md)<br/><br/>**Note**: Although, you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.       |
 |Data integration| More information: [Integrate data into Dataverse](data-integrator.md) |
 |Data| Manage your cloud and data gateway connections. More information: [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md) |
-|Policies     | View and manage various policies for your tenant and environments. More information:<br/>- [Data policy](create-dlp-policy.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
+|Policies     | View and manage various policies for your tenant and environments. More information:<br/>- [Manage data policies](prevent-data-loss.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
 
 ## Dashboard overview for home page
 

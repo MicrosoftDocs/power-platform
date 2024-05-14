@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/13/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -76,17 +76,6 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Country/region code prefixing for numbers|If **On**, customer engagement apps will prefix the country/region code to numbers that users are trying to call.|  On|
-
-### Set the telephony provider
-Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.
-
-> [!Note]
-> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-|Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled |
-|Use Skype for Business|More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)  |Not enabled|
 
 ## Hosted RPA
 | Setting | Description | Default value |
@@ -226,4 +215,10 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Automatically assign permission to Power BI workspaces | If **On**, synchronization will take place between pre-defined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles will be assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
+## Recycle Bin (preview)
+
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
+|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
 
