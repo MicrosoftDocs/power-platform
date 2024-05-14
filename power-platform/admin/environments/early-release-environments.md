@@ -16,7 +16,7 @@ _Early release cycle_ gives you the ability to create environments that are upda
 
 Early release cycle environments are also the environments that're used for [Power Apps preview program](/power-apps/maker/powerapps-preview-program).
 
-# Create early release cycle enviornments
+## Create early release cycle enviornments
 
 Early release cycle environments are created similarly to the way [other environments are created in the Power platform admin center](create-environment.md). 
 
@@ -24,9 +24,9 @@ In fact, the only difference is in which infrastructure the environment is creat
 
 When you create an environment and select a region, you see the option to create the environment as an early release cycle environment. A subset of the regions currently have this capability, so the environment needs to be created in those specific regions. 
  
-# Manage early release cycle environments
+## Manage early release cycle environments
 
 Early release cycle environments can be managed similarly to other environments in the Power platform admin center.  You can identify early release cycle environments if they have the **Early** value in the **Release cycle** column.
 
-:::image type="content" source="media/blur-release-cycle.png" alt-text="release cycle":::
+:::image type="content" source="media/blur-release-cycle.png" alt-text="The "Release cycle" column is shown.:::
 
