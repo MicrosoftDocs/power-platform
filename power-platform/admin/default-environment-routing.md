@@ -160,7 +160,7 @@ If the creation of the developer environment fails, makers are automatically rou
 
 ### What data loss prevention (DLP) policies are applied for the developer environment?
 
-During the preview, no specific DLP policies are assigned to the developer environment. The developer environment inherits existing, tenant-level DLP policies.
+No specific DLP policies are assigned to the developer environment. The developer environment inherits existing, tenant-level DLP policies.
 
 ### What are the preconfigured Managed Environment settings for the newly created developer environments?
 
@@ -176,7 +176,7 @@ All developer environments have the following Managed Environment settings preco
 
 ### Is the environment routing also available for Power Automate, Microsoft Copilot Studio, and Power Pages?
 
-During the preview, environment routing is limited to Power Apps only.
+Environment routing is currently limited to Power Apps only.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
@@ -184,7 +184,7 @@ Yes, you need to have a Power Platform tenant admin privilege to enable this fea
 
 ### Does creating an app or flow in a managed, developer environment require a premium license?
 
-A premium license isn't required for the creation or preview of an app or flow in a managed, developer environment. However, a user or maker needs a premium license to _run_ an app or flow in a managed, developer environment.
+A premium license isn't required for the creation or preview of an app or flow in a managed developer environment. However, a user or maker needs a premium license to _run_ an app or flow in a managed developer environment.
 
 ### Does the default environment need to be managed to enable environment routing?
 
