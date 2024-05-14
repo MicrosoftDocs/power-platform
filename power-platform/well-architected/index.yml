@@ -8,7 +8,7 @@ metadata:
   ms.subservice: well-architected
   author: robstand
   ms.author: rstand
-  ms.date: 05/10/2024
+  ms.date: 05/16/2024
 sections:
   # Intro
   - componentType: text 
@@ -49,7 +49,7 @@ sections:
     supertitle: Power Platform Well-Architected 
     title: Design modern application workloads that are built to change and built to last.
     size: small
-    summary: Power Platform Well-Architected helps you realize the maximum value from your investments in modern application workloads with Power Platform. Power Platform Well-Architected provides guidance to help you design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the Pillars, and then align your design choices with Principles. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs.
+    summary: Power Platform Well-Architected helps you design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the pillars, and then align your design choices with the principles for each pillar. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs. Use the Assessment to help you identify the areas where you need to devote your attention and resources.
 
     image:
       componentType: image
