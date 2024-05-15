@@ -222,3 +222,12 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
 |Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
 
+## Disable Empty Address Record Creation
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created.This feature is supported only for Account, Contact and Lead tables. |    **Off**    |
+
+## Enable Deletion of Address Records
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for Account, Contact and Lead tables can be deleted via UI or through bulk deletion|    **Off**    |
