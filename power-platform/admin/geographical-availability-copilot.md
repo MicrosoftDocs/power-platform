@@ -4,7 +4,7 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2024
+ms.date: 05/15/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
