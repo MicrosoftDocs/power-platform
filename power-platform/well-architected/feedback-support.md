@@ -1,12 +1,12 @@
 ---
 title: Power Platform Well-Architected feedback and support
-description: Find out how to provide feedback for Power Platform Well-Architected and get support
+description: Find out how to provide feedback for Power Platform Well-Architected and to get support.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Provide feedback and get support

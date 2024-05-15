@@ -1,15 +1,15 @@
 ---
-title: Experience Optimization tradeoffs
-description: Learn about the Experience Optimization tradeoffs with other pillars.
+title: Experience Optimization tradeoffs for Power Platform workloads
+description: Learn about the Experience Optimization tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
-# Experience Optimization tradeoffs
+# Experience Optimization tradeoffs for Power Platform workloads
 
 During the design phase of a workload, it's important to consider how decisions based on the [Experience Optimization design principles](./principles.md) and recommendations in the [Design review checklist for Experience Optimization](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimization.
 
@@ -40,9 +40,7 @@ During the design phase of a workload, it's important to consider how decisions 
 
 - Customizations in the workload's experience can have a negative impact on performance.
 
-## Related resources
-
-Explore the tradeoffs for the other pillars.
+## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)

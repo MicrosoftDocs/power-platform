@@ -1,12 +1,12 @@
 ---
 title: Power Platform Well-Architected pillars
-description: Power Platform Well-Architected pillars
+description: Learn about Power Platform's Well-Architected pillars for achieving architectural excellence.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Power Platform Well-Architected pillars

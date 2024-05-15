@@ -1,10 +1,10 @@
 ---
 title: Develop background jobs recommendation for Power Platform workloads
-description: Learn how to develop background jobs that run automatically without the need for user interaction. Background jobs improve availability and reduce interactive response time.
+description: Learn how to develop background jobs that run automatically without the need for user interaction, to improve availability and reduce interactive response time.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

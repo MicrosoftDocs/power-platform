@@ -1,10 +1,10 @@
 ---
 title: Identify and rate flows recommendation for Power Platform workloads
-description: Learn how to create a catalog of user and system flows for your workload and how to determine their criticality and impact on reliability.
+description: Learn how to create a catalog of user and system flows for your Power Platform workload and how to determine their criticality and impact on reliability.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

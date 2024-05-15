@@ -6,12 +6,12 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Reliability design principles
 
-A reliable workload must be resilient so that it can detect and recover from outages and malfunctions and consistently deliver functionality. It must be capable recovering from failures within a reasonable timeframe. It must also be available so that users can consistently and reliably access the workload during the agreed timeframe and at the agreed quality level.
+A reliable workload must be resilient so that it can detect and recover from outages and malfunctions and consistently deliver functionality. It must be capable of recovering from failures within a reasonable timeframe. It must also be available so that users can consistently and reliably access the workload during the agreed timeframe and at the agreed quality level.
 
 Use the following design principles from the [Microsoft Azure Well-Architected Framework](/azure/well-architected) to help ensure reliability throughout the entire lifecycle. Start with the recommended best practices and justify the benefits of each reliability principle. Once you set your strategy, use the [Reliability checklist](./checklist.md) as your next step.
 
@@ -40,7 +40,7 @@ Learn more about [designing for resilience](/azure/well-architected/reliability/
 | ![Goal icon](../_images/goal.svg) The workload must be able to recover from failures with minimal disruption to the user experience and business objectives. |
 | -- |
 
-Put in place structured, test, and documented recovery plans that lead to quick recovery. Ensure your support and operations teams should have access to these plans and recovery drills are performed frequently to avoid confusion and chaos during an actual outage.
+Put in place structured, tested, and documented recovery plans that lead to quick recovery. Ensure your support and operations teams have access to these plans and recovery drills are performed frequently to avoid confusion and chaos during an actual outage.
 
 Learn more about [design for recovery](/azure/well-architected/reliability/principles#design-for-recovery) in the Azure Well-Architected Framework.
 
@@ -49,7 +49,7 @@ Learn more about [design for recovery](/azure/well-architected/reliability/princ
 | ![Goal icon](../_images/goal.svg) The workload must be observable, and development teams must be able to learn from failures. |
 | -- |
 
-Build monitoring into your workload so that the development and support team has enough data to analyze when, why and what component is failing. Build meaningful alerts to notify support teams in the event of a failure. Use analytics and insights to drive improvements.
+Build monitoring into your workload so that the development and support team has enough data to analyze when, why, and what component is failing. Build meaningful alerts to notify support teams in the event of a failure. Use analytics and insights to drive improvements.
 
 Learn more about [designing for operations](/azure/well-architected/reliability/principles#design-for-operations) in the Azure Well-Architected Framework.
 
@@ -58,7 +58,7 @@ Learn more about [designing for operations](/azure/well-architected/reliability/
 | ![Goal icon](../_images/goal.svg) Avoid overengineering the architecture design, application code, and operations. |
 | -- |
 
-Focus on the business requirements, and remove features and components that aren't necessary. Establish standards for development and deployment that increase consistency. Take advantage of platform-provided features and pre-built assets to minimize development time.
+Focus on the business requirements and remove features and components that aren't necessary. Establish standards for development and deployment that increase consistency. Take advantage of platform-provided features and pre-built assets to minimize development time.
 
 Learn more about [keeping it simple](/azure/well-architected/reliability/principles#keep-it-simple) in the Azure Well-Architected Framework.
 

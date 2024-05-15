@@ -1,10 +1,10 @@
 ---
 title: Design a disaster recovery strategy recommendation for Power Platform workloads
-description: Learn how to design a disaster recovery strategy for a workload and prepare to handle incidents and outages. 
+description: Learn how to design a disaster recovery strategy for a Power Platform workload and prepare to handle incidents and outages. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

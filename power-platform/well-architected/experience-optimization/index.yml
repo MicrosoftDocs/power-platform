@@ -5,13 +5,13 @@ summary: Apply experience optimization guidance to your architecture to provide 
 
 metadata:
   title: Experience optimization quick links
-  description: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your workload.
+  description: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your Power Platform workload.
   ms.service: power-platform
   ms.subservice: well-architected
   ms.topic: landing-page
   author: robstand
   ms.author: rstand
-  ms.date: 05/10/2024
+  ms.date: 05/16/2024
 
 landingContent:
   - title: Learn key points

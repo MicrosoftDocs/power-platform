@@ -1,12 +1,12 @@
 ---
-title: Security tradeoffs for Power Platform workloads.
+title: Security tradeoffs for Power Platform workloads
 description: Learn about the Security tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Security tradeoffs for Power Platform workloads

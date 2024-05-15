@@ -1,12 +1,12 @@
 ---
-title: Design review checklist for Experience Optimization
-description: Learn how to optimize user experience in low-code workloads.
+title: Design review checklist for Experience Optimization for Power Platform workloads
+description: Learn how to optimize user experience in Power Platform low-code workloads.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 # Design review checklist for Experience Optimization
 

@@ -1,12 +1,12 @@
 ---
 title: Recommendation checklist for Security for Power Platform workloads
-description: Use this checklist for Security to identify the best approach for secure, governed, and compliant workloads.
+description: Use this checklist for Security to identify the best approach for secure, governed, and compliant Power Platform workloads.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Recommendation checklist for Security

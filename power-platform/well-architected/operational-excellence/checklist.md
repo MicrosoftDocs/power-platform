@@ -1,12 +1,12 @@
 ---
-title: Recommendation checklist for Operational Excellence 
+title: Recommendation checklist for Operational Excellence for Power Platform workloads
 description: Learn about the recommendations that will help you to achieve an operational excellence approach in your Power Platform workload team.
 author: robstand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Recommendation checklist for Operational Excellence

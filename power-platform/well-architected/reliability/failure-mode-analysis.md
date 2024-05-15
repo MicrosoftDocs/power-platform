@@ -1,10 +1,10 @@
 ---
 title: Failure mode analysis recommendation for Power Platform workloads
-description: Learn how to identify potential failure points within your workload and plan mitigation actions accordingly.
+description: Learn how to identify potential failure points within your Power Platform workload and plan mitigation actions accordingly.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

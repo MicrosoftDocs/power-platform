@@ -1,6 +1,6 @@
 ---
 title: Design and creating a monitoring framework recommendation for Power Platform workloads
-description: Learn how to design and create a monitoring framework that provides a foundation for alerts, validates design choices and informs design decisions. 
+description: Learn how to design and create a monitoring framework that provides a foundation for alerts, validates design choices, and informs design decisions. 
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
