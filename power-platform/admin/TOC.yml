@@ -209,13 +209,15 @@
                 - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
-              items:
+              items: 
                 - name: Opt in to early access updates
                   href: opt-in-early-access-updates.md
                 - name: General availability deployment
                   href: general-availability-deployment.md
                 - name: "Manage maintenance window (preview)"
                   href: manage-maintenance-window.md
+            - name: Early release cycle environments
+              href: early-release.md
             - name: Environment settings
               items:
                 - name: Tenant settings
