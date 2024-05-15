@@ -17,7 +17,7 @@ Create and run pipelines to easily deploy solutions to environments.
 
 Pipelines are now available to all who navigate to the pipelines page for the first time. Create personal pipelines from your development environments to other target environments that you have import access to. Apply the benefits of pipelines such as no downloads or uploads required, deployment scheduling, inline target environment solution validation, upfront connection reference and environment variable value validation, and Copilot-generated deployment notes with an easy setup process.
 
-### Prerequisites for personal pipelines
+### Prerequisites for personal pipelines using the platform host
 
 - Three environments can be associated to a personal pipeline created from the **Pipelines** page: one current development environment and two target environments (see [Add a stage to a single-stage pipeline you own](#add-a-stage-to-a-single-stage-pipeline-you-own)).
   > [!NOTE]
@@ -25,7 +25,7 @@ Pipelines are now available to all who navigate to the pipelines page for the fi
 - All environments used in pipelines must have a Microsoft Dataverse database.
 - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
 
-### Current limitations with personal pipelines
+### Current limitations with personal pipelines using the platform host
 
 - Personal pipelines can't be extended.
 - Only three environments, a source and two subsequent targets, can be configured.
