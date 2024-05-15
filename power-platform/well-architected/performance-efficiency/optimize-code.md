@@ -37,7 +37,7 @@ To optimize logic performance, modify code to reduce resource usage, minimize ru
 
 Instrumenting logic refers to the practice of adding custom event logging to collect data and monitor logic performance during runtime. Logic instrumentation allows developers to gather information about key metrics such execution time. By instrumenting logic, developers can gain insights into logic hot paths, identify performance bottlenecks, and optimize the logic for better performance efficiency.
 
-Ideally, you should perform logic analysis early in the software development lifecycle. The earlier you catch a logic issue, the cheaper it is to fix. You want to automate as much of this logic analysis as possible. Use dynamic and static code analysis tools to reduce the manual effort. For example, flow checker can highlight logic that isn’t expected to be performant, such as a query that doesn’t specify filter criteria. However, keep in mind that this testing is still a simulation of production. Production provides the clearest understanding of logic optimization.
+Ideally, you should perform logic analysis early in the software development lifecycle. The earlier you catch a logic issue, the cheaper it is to fix. You want to automate as much of this logic analysis as possible. Use dynamic and static code analysis tools to reduce the manual effort. For example, [Flow Checker](/power-automate/error-checker) can highlight logic that isn’t expected to be performant, such as a query that doesn’t specify filter criteria. However, keep in mind that this testing is still a simulation of production. Production provides the clearest understanding of logic optimization.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Logic monitoring tools are likely to increase costs.
 
@@ -110,7 +110,7 @@ Many applications require background tasks that run independently of the user in
 
 **Instrumenting code**: When building canvas apps, performant patterns should be used to enhance app efficiency, while anti-patterns should be avoided. For more information, see [Overview of creating performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview). Use [Monitor](/power-apps/maker/monitor-overview) in Power Apps to diagnose and troubleshoot performance issues during development.
 
-**Optimizing code logic**: With the [solution checker](/power-apps/maker/data-platform/use-powerapps-checker) feature, you can perform a rich static analysis check on your solutions against a set of best-practice rules and quickly identify problematic patterns.
+**Optimizing code logic**: With the [solution checker](/power-apps/maker/data-platform/use-powerapps-checker) feature, you can perform a rich static analysis check on your solutions against a set of best-practice rules and quickly identify problematic patterns. With [Flow Checker](/power-automate/error-checker), you can get insights into which areas of your flow's implementation pose a performance risk?
 
 **Using concurrency and parallelism**: Power Automate cloud flows support concurrency in loops and triggers. Note that [concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) apply and are based on your performance profile. Power Apps support concurrency using the [Concurrent](/power-platform/power-fx/reference/function-concurrent) function.
 
