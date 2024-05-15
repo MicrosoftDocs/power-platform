@@ -828,8 +828,6 @@
               href: wp-onpremises-gateway.md
             - name: "On-premises data gateway management (preview)"
               href: onpremises-data-gateway-management.md
-            - name: "Data source management (preview)"
-              href: onpremises-data-gateway-source-management.md
         - name: Manage data
           items:
             - name: Add or remove sample data
