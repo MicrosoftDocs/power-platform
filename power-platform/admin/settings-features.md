@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2024
+ms.date: 05/15/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -58,12 +58,6 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
-
-## AI suggestions for email content
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Turn on generative AI in emails | If **On**, the Copilot icon is displayed in rich text editors for app users to draft and refine email content. More information: [Use Copilot in the email rich text editor](/power-apps/maker/model-driven-apps/use-copilot-email-assist) | Off |
 
 ## Embedded content
 | Setting | Description | Default value |
@@ -203,6 +197,16 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 |---------|-------------|---------------|
 | Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |Off|
 
+## Disable empty address record creation
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account**, **Contact** and **Lead** tables. |    Off    |
+
+## Enable deletion of address records
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account**, **Contact** and **Lead** tables can be deleted through the user interface or through bulk deletion.|    Off    |
+
 ## Power Apps ideas for canvas apps
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -222,12 +226,3 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
 |Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
 
-## Disable Empty Address Record Creation
-|Setting  |Description  |Default value  |
-|---------|---------|---------|
-|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created.This feature is supported only for Account, Contact and Lead tables. |    **Off**    |
-
-## Enable Deletion of Address Records
-|Setting  |Description  |Default value  |
-|---------|---------|---------|
-|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for Account, Contact and Lead tables can be deleted via UI or through bulk deletion|    **Off**    |
