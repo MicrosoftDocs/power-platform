@@ -14,7 +14,7 @@ contributors:
 
 [Power Platform Well-Architected assessment](https://aka.ms/powa/assessment) is a tool comprising a series of questions based on the key recommendations outlined in the pillars of Power Platform Well-Architected.
 
-At the end of the assessment, you'll receive recommendations and corresponding links to supporting material to help you improve your workload's design. You can export these recommendations into a file to begin incorporating the recommendations into operational processes for continuous improvement of your workload.
+At the end of the assessment, you'll receive recommendations and corresponding links to supporting material to help you improve your workload's design. You can export these recommendations to a file to begin incorporating the recommendations into operational processes for continuous improvement of your workload.
 
 ## When to take the assessment
 
