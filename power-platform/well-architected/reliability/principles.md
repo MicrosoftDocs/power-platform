@@ -49,7 +49,7 @@ Learn more about [design for recovery](/azure/well-architected/reliability/princ
 | ![Goal icon](../_images/goal.svg) The workload must be observable, and development teams must be able to learn from failures. |
 | -- |
 
-Build monitoring into your workload so that the development and support team has enough data to analyze when, why, and what component is failing. Build meaningful alerts to notify support teams in the event of a failure. Use analytics and insights to drive improvements.
+Build monitoring into your workload so that development and support teams have enough data to analyze when, why, and what component is failing. Build meaningful alerts to notify support teams in the event of a failure. Use analytics and insights to drive improvements.
 
 Learn more about [designing for operations](/azure/well-architected/reliability/principles#design-for-operations) in the Azure Well-Architected Framework.
 
