@@ -115,7 +115,7 @@ sections:
         src: _images/performance-efficiency.svg           
     - componentType: icon-card
       title: Experience Optimization
-      summary: Create meaningful and useful low-code experiences that ensure successful business outcomes. 
+      summary: Create meaningful and useful experiences that ensure successful business outcomes. 
       url: ./experience-optimization/index.yml
       icon: 
         componentType: image
