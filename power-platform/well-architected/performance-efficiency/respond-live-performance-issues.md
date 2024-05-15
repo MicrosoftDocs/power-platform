@@ -105,7 +105,7 @@ The documentation should indicate how to prevent each problem from happening aga
 
 ## Power Platform facilitation
 
-Azure provides several tools to help you respond to live performance issues:
+Power Platform and Azure provide several tools to help you respond to live performance issues:
 
 - [Azure Monitor](/azure/azure-monitor/overview) is a comprehensive monitoring solution that provides insights into the performance and health of your applications and infrastructure. Azure Monitor offers features such as metrics, logs, alerts, and dashboards to help you monitor and diagnose performance issues. Power Platform apps and automation can integrate with Azure Monitor using the Application Insights capability. Standard telemetry along with custom trace events can be [logged and analyzed](/power-apps/maker/canvas-apps/application-insights).
 
