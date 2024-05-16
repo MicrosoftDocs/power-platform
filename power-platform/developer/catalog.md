@@ -124,21 +124,9 @@ Filters on top of the page allow you to look at different date ranges, types of 
    5. Status: current status of the submitted item (approved, rejected, pending approval, etc)
    6. Reject reason: why a submitted item was rejected by an admin
   
-
-
-
-
-
-
-
-
 ## Frequently asked questions (FAQ)
 
 The following are frequently asked questions related to catalog in Power Platform. If you don't find answers for questions in the documentation, use the **Feedback** section at the bottom of this page. Select on the **This page** button. You need to have a GitHub account to provide feedback.
-
-### Q: When would I need to create more than one catalog?
-
-While most organizations are likely to use just one catalog, it's possible to create more than one catalog for distinct audiences. These include segregation of data concerns from a geography, departmental, business group (subsidiary) or other reasons.
 
 ### Q: Where do I provide feedback on catalog?
 
@@ -150,7 +138,7 @@ The catalog items are actually packages. A package contains one or more solution
 
 ### Q: What are solution templates? What does it mean to install an unmanaged solution?
 
-The use of a [solution](../alm/solution-concepts-alm.md) as a *solution template* is a new scenario we're making available with the catalog. When a maker acquires a solution template, they'll get a new unmanaged  copy of that solution. Multiple copies of that [unmanaged solution](../alm/solution-concepts-alm.md#managed-and-unmanaged-solutions) can exist in the same environment and each has a unique identifier.
+The use of a [solution](../alm/solution-concepts-alm.md) as a *solution template* is a new scenario we're making available with the catalog. When a maker acquires a solution template, they'll get a new unmanaged copy of that solution. Multiple copies of that [unmanaged solution](../alm/solution-concepts-alm.md#managed-and-unmanaged-solutions) can exist in the same environment and each has a unique identifier.
 
 ### Q: Catalog item install looks a lot like solution import. Are they the same thing?
 
