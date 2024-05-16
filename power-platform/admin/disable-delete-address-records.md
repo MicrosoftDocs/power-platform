@@ -20,10 +20,15 @@ For example if there is an incoming payload for Account table and the address da
 
 ### Configuration required to disable empty record creation
 
-Navigate to Power Platform Admin Center (PPAC) and Click **Environments** option on the left side panel.
-Select an environment from the list for which this feature needs to be enabled.  
-Click on **Settings** on the top of the page and on the next page, navigate to **Product** and **Features** settings page.
-Scroll down the **Features** setting page to enable **Disable Empty Address Record Creation** 
+Navigate to Power Platform Admin Center (PPAC).
+Click **Environments** option on the left side panel.
+
+Select an environment from the list for which this feature needs to be enabled.  Click on **Settings** on the menu bar on the top.
+
+Expand **Product** and click on **Features** to navigate to features settings page.
+
+Turn On or Off the settings for  **Disable Empty Address Record Creation** 
+
 click Save on the bottom of the page to save the changes.
 
 ### How does this feature work
@@ -45,10 +50,15 @@ Enabling "Deletion of Address Records" feature in Dataverse allows address recor
 
 ### Configuration required to Enable Deletion of address records
 
-Navigate to Power Platform Admin Center (PPAC) and click on **Environments** option on the left side panel.
-Choose the radio button corresponding to the environment that needs "Disable empty record creation" feature enabled. 
-Click on **Settings** on the top of the page and on the next page, navigate to **Product** and **Features** settings page.
-Scroll down the **Features** setting page to enable **Enable Deletion of Address Records** 
+Navigate to Power Platform Admin Center (PPAC).
+Click **Environments** option on the left side panel.
+
+Select an environment from the list for which this feature needs to be enabled. Click on **Settings** on the menu bar on the top.
+
+Expand **Product** and click on **Features** to navigate to features settings page.
+
+Turn On or Off the settings for **Enable Deletion of Address Records** 
+
 click Save on the bottom of the page to save the changes.
 
 ### How does this feature work
