@@ -3,9 +3,9 @@ title: Recommendations for writing user interface content
 description: Learn how to write clear, approachable, and consistent content for user interfaces to optimize the user experience.
 author: Denise-MSFT
 ms.author: demora
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -128,19 +128,9 @@ When writing content for an application used worldwide, consider cultural divers
 
 Understand cultural norms, values, and preferences when designing content for an international audience. Different cultures have distinct communication styles, etiquette, and social norms that influence user behavior and expectations. Creating interfaces that resonate with users involves considering factors like color symbolism, iconography, and content presentation formats specific to each culture. Choose visual elements like icons and images that are meaningful to users across diverse cultural contexts. While certain symbols might carry universal meanings, others might vary significantly in interpretation depending on cultural norms and beliefs. Collaborating with local experts or conducting user testing during the design and localization process can provide valuable insights and ensure that the interface reflects the cultural nuances and preferences of the target audience.
 
-<!--
-
-## Power Platform facilitation
-
-Power Platform details here ...
-
-## See also
-
-Related links here.
-
--->
-
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

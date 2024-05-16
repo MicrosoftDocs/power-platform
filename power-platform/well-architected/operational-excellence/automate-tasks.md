@@ -1,17 +1,17 @@
 ---
-title: Recommendations for implementing automation
-description: Learn how to automate tasks in your workload that are repetitive and prone to human error to gain efficiency, adhere to standards, and create consistency.
+title: Implementing automation recommendation for Power Platform workloads
+description: Learn how to establish standards, improve efficiency and productivity, and ensure consistency by automating tasks that are repetitive and may be prone to human error.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
 # Recommendations for implementing automation
 
-**Applies to this Well-Architected Framework Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:08](checklist.md)| **Automate all tasks that do not benefit from the insight and adaptability of human intervention, are highly procedural, and have a shelf-life that will yield a return on the automation investment. Prefer off-the-shelf software for automation vs custom implementations where available. Treat all automation as workload components, applying Well-Architected pillars to their design and implementation.** |
 |---|---|
@@ -96,3 +96,10 @@ Power Automate Approvals (out of the box) or the Approvals Kit (custom solution)
 <!--
 Need link for Approvals Kit, best to include it in the Power Platform facilitation section
 -->
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

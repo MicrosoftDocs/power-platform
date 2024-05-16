@@ -1,11 +1,11 @@
 ---
-title: Recommendations for identifying and rating flows
-description: Learn how to create a catalog of user and system flows for your workload to better understand the basis for your design decisions as they relate to reliability.
+title: Identify and rate flows recommendation for Power Platform workloads
+description: Learn how to create a catalog of user and system flows for your Power Platform workload and how to determine their criticality and impact on reliability.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -205,8 +205,15 @@ The following example provides a complete scenario and illustrates important poi
 
 - **Criticality rating**: High
 
-### Power Platform facilitation
+## Power Platform facilitation
 
 Consider using [process mining and task mining in Power Automate](/power-automate/process-advisor-overview) including a [process map](/power-automate/process-advisor-visualize), a powerful tool that can help you visualize and analyze your business processes.
 
 Learn how to convert your ideas into a fully functional solution by [planning a Power Apps project](/power-apps/guidance/planning/introduction).
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

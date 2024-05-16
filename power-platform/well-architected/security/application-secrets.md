@@ -1,11 +1,11 @@
 ---
-title: Recommendations for protecting application secrets
-description: Learn about recommendations for managing application secrets. Find out how to create, store, and distribute secrets securely.
+title: Protect application secrets recommendation for Power Platform workloads
+description: Learn how to manage application secrets for Power Platform workloads.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -132,3 +132,10 @@ CyberArk offers an identity security platform that secures human and machine ide
 - [Configure GitHub Advanced Security for Azure DevOps](/azure/devops/repos/security/configure-github-advanced-security-features)
 - [Recommendations for monitoring and threat detection](monitor-threats.md)
 - [Recommendations for identity and access management](identity-access.md)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

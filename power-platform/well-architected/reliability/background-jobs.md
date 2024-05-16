@@ -1,17 +1,17 @@
 ---
-title: Recommendations for developing background jobs
-description: Learn how to develop background jobs to help minimize the load on the application UI, which improves availability and reduces interactive response time.
+title: Develop background jobs recommendation for Power Platform workloads
+description: Learn how to develop background jobs that run automatically without the need for user interaction, to improve availability and reduce interactive response time.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
 # Recommendations for developing background jobs
 
-**Applies to this Power Platform Well-Architected Framework Reliability checklist recommendation:**
+**Applies to this Power Platform Well-Architected Reliability checklist recommendation:**
 
 | [RE:05](checklist.md) | **Strengthen the resiliency of your workload by implementing error handling and transient fault handling. Build capabilities into the solution to handle component failures and transient errors.** |
 | --- | --- |
@@ -148,3 +148,10 @@ Reduce the risk by [planning for error handling](/power-automate/guidance/planni
 [Plug-ins](/power-apps/developer/data-platform/plug-ins) are custom event handlers that execute in response to a specific event raised during processing of a Microsoft Dataverse data operation.
 
 Microsoft Dataverse also offers a powerful solution for achieving more efficient data architecture and reducing client-side workload through [low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=automated). These plug-ins are reusable, real-time workflows that execute a specific set of commands within Dataverse, running server-side and triggered by personalized event handlers.
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

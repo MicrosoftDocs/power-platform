@@ -1,15 +1,15 @@
 ---
-title: Operational Excellence tradeoffs
-description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for operational excellence.
+title: Operational Excellence tradeoffs for Power Platform workloads
+description: Learn about the Operational Excellence tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 05/16/2024
 ---
 
-# Operational Excellence tradeoffs
+# Operational Excellence tradeoffs for Power Platform workloads
 
 Operational Excellence provides workload quality through the implementation of clear team standards, understood responsibility and accountability, attention to customer outcomes, and team cohesion. The implementation of these goals is rooted in DevOps, which recommends minimizing process variance, reducing human error, and ultimately increasing the return of value for the workload. That value isn't just measured against the functional requirements served by the components of the workload. It's also measured by the value that the team delivers in striving for improvement.
 
@@ -64,25 +64,22 @@ Observability platforms ingest data of all types to gain insights into a workloa
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Competing priorities**. The Experience Optimization pillar recommends a user-centric mindset.
 
 - User experience development that requires significant resources may be deprioritized. This can cause the experience to lack the usability, interactions, and visual design that workload users need.
+
 - User interface development is often done in faster iterations and ship cycles, which can strain the team's SDLC (software development lifecycle) processes.
 
-<!--
 ## Operational Excellence tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased resource utilization**. The Performance Efficiency pillar recommends the allocation of as much of the available compute and network as possible to the requirements of the workload.
 
-- A workload's observability framework requires that the components in the architecture allocate time and resources to create, collect, and stream logs and metrics. These data points help ensure that effective alerting and monitoring is possible for reliability, security, and performance. As the level of instrumentation increases, the strain on system resources might also increase.
-
-- Some deployment models, like blue/green deployment, which a workload might use for safe deployment, might introduce side-by-side deployments on the production application platform. These deployments require preemptive scaling to provide enough supply to meet future demand, or leave a mostly dormant deployment in place for a period of time to support rollback.
+- A workload's monitoring framework requires that the components in the architecture allocate time and resources to create, collect, and stream logs and metrics. These data points help ensure that effective alerting and monitoring is possible for reliability, security, and performance. As the level of instrumentation increases, the strain on system resources might also increase.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency**. To create performant workloads, teams look for ways to reduce the time and resources that workloads consume to perform their tasks.
 
-- Many deployment models require the use of gateway routing access patterns, which can introduce latency. This latency draws against the performance target budget for the related flows.
+- Some cloud design patterns that support "independent change over time" approaches to support the ideals of incremental improvement can introduce latency due to the traversal of additional components.
 
-- Some cloud design patterns that support "independent change over time" approaches to support the ideals of incremental improvement can introduce latency due to the traversal of additional components. This latency can be introduced by gateways, messaging brokers, or anti-corruption layers.
--->
 ## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)

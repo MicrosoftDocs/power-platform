@@ -1,11 +1,11 @@
 ---
-title: Recommendations for monitoring and threat detection
-description: Learn how to get information about events, capture information about the workload, and gain awareness of suspicious activities. 
+title: Monitor and threat detection recommendation for Power Platform workloads
+description: Learn how to implement a monitoring strategy that helps you gain awareness of suspicious activities. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 This guide describes the recommendations for monitoring and threat detection. Monitoring is fundamentally a process of **getting information about events that have already occurred**. Security monitoring is a practice of capturing information at different altitudes of the workload (identity, flows, application, operations) to **gain awareness of suspicious activities**. The goal is to predict incidents and learn from past events. Monitoring data provides the basis of post-incident analysis of what occurred to help incident response and forensic investigations.
 
-Monitoring is an Operational Excellence approach that's applied across all Power Platform Well-Architected Framework pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring are covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md).
+Monitoring is an Operational Excellence approach that's applied across all Power Platform Well-Architected pillars. This guide provides recommendations only from a security perspective. General concepts of monitoring are covered in [Recommendations for designing and creating a monitoring system](../operational-excellence/observability.md).
 
 **Definitions**
 
@@ -214,3 +214,10 @@ DevOps advocates change management of workloads via continuous integration and c
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
 - [Identify advanced threats with User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel](/azure/sentinel/identify-threats-with-entity-behavior-analytics)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

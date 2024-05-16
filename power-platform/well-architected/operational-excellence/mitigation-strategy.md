@@ -1,11 +1,11 @@
 ---
-title: Recommendations for designing a deployment failure mitigation strategy
-description: Learn how to design a proactive, standardized strategy for handling deployment failures, enabling efficient mitigation of issues including end-user impact.
+title: Design a deployment failure mitigation strategy recommendation for Power Platform workloads
+description: Learn how to design a standardized strategy for handling deployment failures, enabling issue mitigation and recovery.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -150,3 +150,10 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 - Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps.
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. For example, to monitor cloud flow executions and create alerts for cloud-flow run failures.
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

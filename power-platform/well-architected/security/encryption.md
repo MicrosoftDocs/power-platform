@@ -1,11 +1,11 @@
 ---
-title: Encryption strategy recommendations
-description: Learn about recommendations for encryption, including encryption mechanisms, encryption keys, encryption algorithms, hashes, checksums, and secret management.
+title: Encryption strategy recommendation for Power Platform workloads
+description: Learn how to encrypt and protect your data. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -101,3 +101,10 @@ The following example shows encryption solutions that you can use to manage keys
 - [Data storage and governance in Power Platform](/power-platform/admin/security/data-storage)
 - [Power Platform security FAQs](/power-platform/admin/security/faqs)
 - [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

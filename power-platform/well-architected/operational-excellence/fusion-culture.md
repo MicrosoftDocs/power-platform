@@ -1,11 +1,11 @@
 ---
-title: Recommendations for fostering fusion team culture
+title: Foster fusion team culture recommendation for Power Platform workloads
 description: Learn how to build high-performing workload teams with fusion development principles and practices.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -22,7 +22,7 @@ This guide describes the recommendations for implementing fusion development pri
 
 ## Key design strategies
 
-A workload that operates according to the Power Platform Well-Architected framework recommended practices starts with the adoption of the fusion development culture of cohesiveness, responsibility, continuous learning, and improvement. Team members bring their own expertise and might focus on specific areas of workload operation. However, your team as a whole should be able to independently manage day-to-day, as-needed, and emergency tasks, with support from outside teams when necessary. Your team must work within the overall organizational requirements and collaborate with other teams by using a mindset that values shared knowledge.
+A workload that operates according to the Power Platform Well-Architected recommended practices starts with the adoption of the fusion development culture of cohesiveness, responsibility, continuous learning, and improvement. Team members bring their own expertise and might focus on specific areas of workload operation. However, your team as a whole should be able to independently manage day-to-day, as-needed, and emergency tasks, with support from outside teams when necessary. Your team must work within the overall organizational requirements and collaborate with other teams by using a mindset that values shared knowledge.
 
 The following recommendations can help you adopt and implement fusion development practices in your team.
 
@@ -75,3 +75,10 @@ Create or expand your Center of Excellence (CoE) with the [Power Platform CoE St
 - Webinar: [Fusion Teams 101: Low-Code Apps with Power Platform](https://info.microsoft.com/ww-Landing-fusion-teams-101LowCode-power-platform.html)
 - Training path: [Transform your business applications with fusion development](/training/paths/transform-business-applications-with-fusion-development/)
 - [Ebook: Fusion development approach to building apps using Power Apps](/power-apps/guidance/fusion-dev-ebook/)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

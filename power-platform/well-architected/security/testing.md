@@ -1,11 +1,11 @@
 ---
-title: Recommendations for security testing
-description: Learn about the key design strategies for security testing, including the tools and methodologies you can use to test the security posture of your workload.
+title: Security testing recommendation for Power Platform workloads
+description: Learn how to establish a testing strategy that supports and tests the security posture of your Power Platform workload.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -204,3 +204,10 @@ Follow the rules of engagement to make sure that access isn't misused. For guida
 - [Penetration testing](/azure/security/fundamentals/pen-testing)
 
 You can simulate denial of service (DoS) attacks in Azure. Be sure to follow the policies laid out in [Azure DDoS Protection simulation testing](/azure/ddos-protection/test-through-simulations).
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

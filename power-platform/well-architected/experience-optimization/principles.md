@@ -1,17 +1,17 @@
 ---
-title: Experience Optimization design principles
-description: Understand the design principles that support Experience Optimization.
+title: Experience Optimization design principles for well-architected Power Platform workloads
+description: Understand the design principles of the Power Platform Well-Architected Experience Optimization pillar.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 05/16/2024
 ---
 
 # Experience Optimization design principles 
 
-The **design principles** are intended to provide guidance for aspects of Experience Optimization that you should consider throughout the development lifecycle. Start with the recommended approaches and **justify the benefits for a set of requirements**. After you set your strategy, drive actions by using the [**Experience Optimization checklist**](./checklist.md).
+The design principles are intended to provide guidance for aspects of Experience Optimization that you should consider throughout the development lifecycle. Start with the recommended approaches and justify the benefits for a set of requirements. After you set your strategy, drive actions by using the [Experience Optimization checklist](./checklist.md).
 
 ## Design for the user
 
@@ -37,7 +37,7 @@ Simplicity helps users learn the system, perform their tasks, and achieve their 
 |Approach|Benefit|
 |-|-|
 |Create a coherent and logical structure of information, content, and functionality in the interface.| Users quickly understand the interface and are able to locate the functionality relevant to their tasks.<br><br>Users can process information more efficiently and make informed decisions without being overwhelmed.<br><br>Streamlined interactions are more accessible and ensure users can navigate the interface more effectively. |
-|Provide an intuitive and consistent interface that follows relevant design conventions and standards. Leverage the existing mental models and expectations of the users. | Users can easily figure out how to use the workload without spending excessive time or effort in learning new interactions or workflows. This faster learning speeds up user onboarding and adoption.<br/><br/>Users have a feeling of consistency as they experience design elements and interactions they recognize and have used used before. This consistency lowers mental effort and makes it simpler for users to comprehend and navigate the interface.<br/><br/>There is uniformity across interfaces, both within a workload and across different workloads. Uniform design elements and interactions facilitate the learning and usage of the interface for users, regardless of their prior experience.|
+|Provide an intuitive and consistent interface that follows relevant design conventions and standards. Leverage the existing mental models and expectations of the users. | Users can easily figure out how to use the workload without spending excessive time or effort in learning new interactions or workflows. This faster learning speeds up user onboarding and adoption.<br/><br/>Users have a feeling of consistency as they experience design elements and interactions they recognize and have used before. This consistency lowers mental effort and makes it simpler for users to comprehend and navigate the interface.<br/><br/>There is uniformity across interfaces, both within a workload and across different workloads. Uniform design elements and interactions facilitate the learning and usage of the interface for users, regardless of their prior experience.|
 |Focus on the most important information and actions. Eliminate any elements, features, or fields that aren't needed. |Users access and consume information effectively, resulting in better-informed interactions and improved satisfaction.<br/><br/>Users find the system easy to use and are more likely to engage with the workload, leading to higher adoption rates and better utilization. |
 
 ## Design for efficiency

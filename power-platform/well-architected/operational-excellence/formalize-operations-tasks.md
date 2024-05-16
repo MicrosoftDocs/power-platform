@@ -1,11 +1,11 @@
 ---
-title: Recommendations for formalizing workload tasks
-description: Explore strategies for standardizing and formalizing routine and nonroutine tasks to enhance operational efficiency.
+title: Formalize workload tasks recommendation for Power Platform workloads
+description: Learn how to standardize and formalize routine, as needed, and emergency operational tasks to enhance operational efficiency.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -63,9 +63,16 @@ An example of a routine task is the process of applying an upgrade to a solution
 
 Although there are no Power Platform products that directly facilitate the formalization of processes and procedures, Microsoft publishes comprehensive guidance on this subject. Use this guidance to understand industry-proven and recommended practices and to consider how to apply them to your workload.
 
-The Power Platform Well-Architected Framework also provides detailed guidance on the processes and procedures that should be codified to ensure that your workload and workload team run according to industry standards:
+Power Platform Well-Architected also provides detailed guidance on the processes and procedures that should be codified to ensure that your workload and workload team run according to industry standards:
 
 - [Recommendations for implementing automation](automate-tasks.md)
 - [Recommendations for enabling automation in your workload](enable-automation.md)
 - [Recommendations for formalizing software development management practices](formalize-development-practices.md)
 - [Promote an Agile culture within your team](/azure/devops/boards/plans/agile-culture)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

@@ -1,11 +1,11 @@
 ---
-title: Recommendations for establishing a security baseline
-description: Learn best practices for establishing a security baseline for Power Platform workloads, including how to reduce cyber risks, data breaches, and unauthorized access.
+title: Establish a security baseline recommendation for Power Platform workloads
+description: Learn how to establish a security baseline for Power Platform workloads, including how to reduce cyber risks, data breaches, and unauthorized access.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -199,6 +199,8 @@ Ensure the security baseline you establish for Power Platform is well aligned wi
 - [What is incident response? Plan and steps](https://www.microsoft.com/security/business/security-101/what-is-incident-response)
 
 ## Security checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Security checklist](checklist.md)

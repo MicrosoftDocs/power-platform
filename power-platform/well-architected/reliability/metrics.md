@@ -1,11 +1,11 @@
 ---
-title: Recommendations for defining reliability targets
-description: Learn how to define availability and recovery target metrics for critical workloads.
+title: Define reliability targets recommendation for Power Platform workloads
+description: Learn how to define a health model that includes availability and recovery target metrics for critical Power Platform workloads.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -131,3 +131,10 @@ Microsoft Business Applications provides Business Continuity and Disaster Recove
 Cloud Adoption Framework provides guidance for recommendations for SLOs and SLIs related to monitoring across the organization.
 
 For more information, see [Cloud monitoring SLOs](/azure/cloud-adoption-framework/manage/monitor/service-level-objectives#how-do-you-define-slis).
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

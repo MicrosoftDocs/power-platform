@@ -1,11 +1,11 @@
 ---
-title: Data classification recommendations
-description: Learn about data classification and how to apply it to your workloads, including how to categorize data based on sensitivity levels, information type, and scope of compliance so you can apply the correct level of protection.
+title: Data classification recommendation for Power Platform workloads
+description: Learn how to classify data based on its sensitivity and how to apply classification to your Power Platform workloads.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -138,3 +138,10 @@ For more information, see [What is data classification?](/azure/cloud-adoption-f
 - [Data classification and sensitivity label taxonomy](/compliance/assurance/assurance-data-classification-and-labels)
 - [Create a well-designed data classification framework](/compliance/assurance/assurance-create-data-classification-framework)
 - [Connect to and manage Microsoft Dataverse in Microsoft Purview](/purview/register-scan-dataverse?tabs=MI)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

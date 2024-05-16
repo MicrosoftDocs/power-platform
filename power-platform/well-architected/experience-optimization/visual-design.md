@@ -3,9 +3,9 @@ title: Recommendations for optimizing user perception and aesthetics
 description: Learn how to optimize user perception and aesthetics to guides users' attention to important elements thus optimizing the user experience.
 author: Denise-MSFT
 ms.author: demora
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -285,6 +285,8 @@ In canvas apps, [modern controls](/power-apps/maker/canvas-apps/controls/modern-
 - [Fluent UI Design System spacing ramp](https://fluent2.microsoft.design/layout#:~:text=Fluent's%20global%20spacing%20ramp%20is,a%20scale%20of%20supported%20sizes.)
 
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

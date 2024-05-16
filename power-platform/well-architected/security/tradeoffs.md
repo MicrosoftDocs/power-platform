@@ -1,15 +1,15 @@
 ---
-title: Security tradeoffs
-description: Learn about the Security tradeoffs with other pillars.
+title: Security tradeoffs for Power Platform workloads
+description: Learn about the Security tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 05/16/2024
 ---
 
-# Security tradeoffs
+# Security tradeoffs for Power Platform workloads
 
 Security provides confidentiality, integrity, and availability assurances of a workload's system and its users' data. Security controls are required for the workload and for the software development and operational components of the system. When teams design and operate a workload, they can almost never compromise on security controls.
 
@@ -84,10 +84,11 @@ The Security pillar requires a workload to explicitly verify identities and acti
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased friction**. Optimizing the experience focuses on helping users be more productive and make faster decisions.
 
 - Security surface areas should be minimized, which can negatively impact the use of third-party components and integrations that are desired for optimizing the experience.
+
 - Data classification can make finding and consuming data in the workload more difficult.
+
 - Security protocols increase the complexity of user interactions and can result in challenges for usability.
 
-<!--
 ## Security tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency and overhead.** A performant workload reduces latency and overhead.
@@ -111,10 +112,10 @@ A misconfiguration or overextension of security controls can impact performance 
 - Failing to exclude key files from file integrity monitors or virus scanners. Neglecting this step can lead to lock contention.
 
 - Web application firewalls performing deep packet inspection for languages or platforms that are irrelevant for the components that are being protected.
--->
 
 ## See also
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)

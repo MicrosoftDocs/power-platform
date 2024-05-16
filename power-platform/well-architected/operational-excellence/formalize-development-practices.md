@@ -1,17 +1,17 @@
 ---
-title: Recommendations for formalizing software development management practices
-description: Learn how to establish standards for managing your workload team's software development practices.
+title: Formalize software development management practices recommendation for Power Platform workloads
+description: Learn how to establish standards for your software ideation and planning process, as well as your team's software development practices.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
 # Recommendations for formalizing software development management practices
 
-**Applies to this Well-Architected Framework Operational Excellence checklist recommendation:**
+**Applies to this Power Platform Well-Architected Operational Excellence checklist recommendation:**
 
 |[OE:03](checklist.md)| **Formalize the software ideation and planning process, drawing from established industry and organizational standards. Use a common, prioritized backlog and sufficiently detailed specifications. Drive continuous improvements in the planning process based on outcomes.** |
 |---|---|
@@ -80,3 +80,10 @@ Although there are no Power Platform products that directly facilitate this reco
 - [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards)
 - [User support strategy](/power-platform/guidance/adoption/support-strategy-solutions)
 - [Measuring the business value of Power Platform solutions](/power-platform/guidance/adoption/business-value)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

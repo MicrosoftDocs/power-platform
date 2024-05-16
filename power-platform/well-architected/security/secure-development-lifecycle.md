@@ -1,11 +1,11 @@
 ---
-title: Recommendations for securing a development lifecycle
-description: Learn about Well-Architected Framework Security recommendations for securing a development lifecycle. 
+title: Secure a development lifecycle recommendation for Power Platform workloads
+description: Learn how to maintain a secure development lifecycle.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
-ms.subservice: guidance
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
+ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
@@ -184,8 +184,15 @@ With the solution checker feature, you can perform a rich static analysis check 
 ## See also
 
 - [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
-- [Overview of pipelines in Power Platform ](/power-platform/alm/pipelines)
+- [Overview of pipelines in Power Platform](/power-platform/alm/pipelines)
 - [Application lifecycle management for the Power Platform](/training/paths/application-lifecycle-management/)
 - [Solution Architect series: Plan application lifecycle management for Power Platform](/training/modules/application-lifecycle-management-architect/)
 - [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
 - [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)
