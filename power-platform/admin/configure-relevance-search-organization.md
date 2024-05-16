@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2024
+ms.date: 05/16/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -84,7 +84,7 @@ To enable Dataverse search, do the following:
 
    :::image type="content" source="media/ppac-dataverse-search1.png" alt-text="Set Dataverse search to On.":::
 
-When you enable dataverse search it will be included in all of your model driven applications, it can not be disabled in the applications.
+When you turn on Dataverse search, it's included in all of your model-driven applications. You can't turn it off in the applications.
 
 If the Dataverse search index needs to be provisioned, you see an indication that provisioning is in progress. Once the index is provisioned, it may take anywhere between an hour or more to complete a full sync for average size organizations, to a couple of days for large organizations.
 
