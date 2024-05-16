@@ -11,7 +11,7 @@ contributors:
 ---
 # Set up pipelines in Power Platform
 
-Create and run pipelines to easily deploy solutions to environments.
+Create and run pipelines to easily deploy solutions to environments. There are two different ways to set up pipelines: using the default tenant-wide **platform host** or using a **custom host** that an admin configures. Any information within each section pertains to their respective methods of setting up pipelines.
 
 ## Create a personal pipeline using the platform host
 
@@ -253,6 +253,18 @@ However, capacity does apply to a *custom host*, which isn't an implementation i
 Yes. As an administrator, you can assign the **Deployment Pipeline Default** role to anyone you would like to grant lightweight pipeline creation permissions to. Administrators can also add users to the **Deployment Pipeline Maker** team via the **Security Teams** page in the Deployment Pipeline Configuration app.
 
 This Deployment Pipelines Default role isn't assigned to anyone by default in the case of custom host, so the lightweight personal pipeline creation experience is only visible by default in environments that aren't already associated with a custom host.
+
+### As an admin, how do I prevent makers from being able to create personal pipelines by default?
+
+Because custom hosts do not grant pipeline create-access by default like the platform host does, you can [set up a custom host](#install-the-pipelines-application-in-your-host-environment) and then [use force link](#using-force-link-to-associate-an-environment-with-a-new-host) (if necessary) to associate development environments with a custom host.
+
+1. If there is already a custom host available skip this step. If not, they will have to create one, following the steps in Set up pipelines in Power Platform - Power Platform | Microsoft Learn.
+1. Once there is a custom host available, as an admin, navigate to the Deployment Pipeline Configuration app for the custom host (located in the environment that you installed the Power Platform Pipelines package in).
+1. Then, go to **Environments** from the side navigation pane, and **create new environment record(s)** for the development environment(s) that you would like to prevent makers from creating new personal pipelines from. If the environment was already linked to another host (e.g. the platform host), the validation will fail. In this case, click **Force Link** in the command bar after validation failure to override the current link to the other pipelines host.
+
+Following these steps will effectively disable the **create pipeline** capability for any makers who land in the UX for pipelines in these development environments since they do not have any pipelines permissions. Existing pipelines in the custom host, if any, are also not shared to any users by default, so admins are able to apply with workaround with any existing custom host as well.
+
+We are currently working on a more scalable method of performing this action, as we know that different organizations have different strategies for designating developer environments.
 
 ### Why am I not seeing the latest features for pipelines?
 
