@@ -93,11 +93,11 @@ The following table shows the fields that are managed in the **Users** section o
 <tr><td>Primary Email**</td><td>InternalEmailAddress***</td><td>Mail </td></tr>
 <tr><td>Main Phone </td><td>Address1_Telephone1 </td><td>Office phone</td></tr>
 <tr><td>Mobile Phone  </td><td>MobilePhone  </td><td>Mobile phone</td></tr>
-<tr><td>Address  </td><td>Address1_Line1   </td><td>Street address   </td></tr>
-<tr><td>Address   </td><td>Address1_City   </td><td>City   </td></tr>
-<tr><td>Address   </td><td>Address1_StateOrProvince    </td><td>State or province    </td></tr>
-<tr><td>Address   </td><td>Address1_PostalCode    </td><td>Postal Code    </td></tr>
-<tr><td>Address   </td><td>Address1_Country    </td><td>Country or region    </td></tr>
+<tr><td>Street  </td><td>Address1_Line1   </td><td>Street address   </td></tr>
+<tr><td>City  </td><td>Address1_City   </td><td>City   </td></tr>
+<tr><td>State/Province   </td><td>Address1_StateOrProvince    </td><td>State or province    </td></tr>
+<tr><td>Postal Code   </td><td>Address1_PostalCode    </td><td>Postal Code    </td></tr>
+<tr><td>Country   </td><td>Address1_Country    </td><td>Country or region    </td></tr>
 <tr><td>AzureActiveDirectoryObjectId****     </td><td>AzureActiveDirectoryObjectId   </td><td>ObjectId   </td></tr>
 <tr><td colspan="3">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the PrimaryEmail field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers; after which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
 </tbody>
