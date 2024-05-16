@@ -22,7 +22,7 @@ This article describes when a premium license is required for Power Automate flo
 
 ## Enforcement
 
-As part of enforcement, admins are notified of flows that need licenses and they're pointed to the admin center report. In this report, they can self-serve granular details of the flows that require a license. Admins have 90 days to take remedial actions. Post 90 days, certain environment lifecycle operations are disabled. After another 90 days (total 180 days from admin notification), other enforcement actions, including suspension of flow might be implemented to ensure licensing compliance.
+As part of enforcement, admins are notified of flows that need licenses by email and they're pointed to the admin center report [HYPERLINK https://learn.microsoft.com/en-us/power-platform/admin/view-license-consumption-issues] to review details. Using this report, Admins can self-serve granular details of the flows that require a license. Admins have 90 days to take remedial actions. Post 90 days, certain environment lifecycle operations such as create, copy and restore environments are disabled. After another 90 days (total 180 days from admin notification), other enforcement actions can be enacted, including flow suspension.
 
 ## Recommendations for proactive license management
 
