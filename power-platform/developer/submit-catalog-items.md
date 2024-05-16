@@ -1,5 +1,5 @@
 ---
-title: "View, submit, and install catalog items (preview)"
+title: "Using the Catalog with CLI (preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: samathur
 ms.subservice: developer
