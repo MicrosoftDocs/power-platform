@@ -4,7 +4,7 @@ description: "Use the catalog in Power Platform to managed shared components and
 author: derekkwanpm
 ms.subservice: developer
 ms.author: derekkwan
-ms.date: 01/23/2024
+ms.date: 05/15/2024
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -17,6 +17,7 @@ contributors:
 >
 > - [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - The catalog will be auto-provisioned the first time you interact with it. An admin may still need to set up role access depending on your permissions. If the catalog does automatically provision, please contact your admin to [set it up manually](administer-catalog.md).
 > - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 ## Introduction
@@ -71,21 +72,21 @@ You can submit unmanaged solutions to the catalog for other makers to install an
    2. Build custom functionality on top of the assets in the managed item without changing the original components
    3. Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.) 
 
-Admins can create catalogs, manage access and security, approve catalog items, and more in the catalog Manager, which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful artifacts for themselves.  
+Admins can administer catalogs, manage access and security, approve catalog items, and more in the [Catalog Manager]((administer-catalog.md)), which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful catalog items for themselves.  
 
 ## Discovery 
 
-The catalog page will be available in Power Apps and Power Automate (Copilot Studio and Power Pages will get the catalog in 2024). On the page will be tiles representing all artifacts available to your organization. This includes artifacts published by your organization, and approved partners who have access to your environments, as well as many published by Microsoft, such as AI prompts, Copilot App templates, Dataflow templates, Enterprise templates, PCF controls, Low-code plugins, and more.  
+The catalog page will be available in Power Apps and Power Automate (Copilot Studio and Power Pages will get the catalog in 2024). On the page will be tiles representing all catalog items available to your organization. This includes items published by your organization, approved partners who have access to your environments, as well as many published by Microsoft, such as AI prompts, Copilot App templates, Dataflow templates, Enterprise templates, PCF controls, Low-code plugins, and more.  
 
 ![The Catalog gallery] (power-platform/developer/media/catalog_gallery.png)
 
 On the page itself are the following controls: 
 
-1. Search box (searches the titles of available artifacts)
+1. Search box (searches the titles of available catalog items)
 2. Filters (filters for publisher, type, category, and more)
 3. Catalog selector (some orgs may choose to create multiple catalogs for regions, departments, etc). Users can have access to one or more catalogs. 
 
-The list of Microsoft published artifacts that will be available in your catalog out of the box are (some may be unavailable during Public Preview): 
+The list of Microsoft published catalog items that will be available in your catalog out of the box are (some may be unavailable during Public Preview): 
 
 1. AI Prompts
 2. Copilot App templates
@@ -170,7 +171,7 @@ Learn how to administer the catalog.
 Learn how to view, submit, and install catalog items.
 
 > [!div class="nextstepaction"]
-> [View, submit, and install catalog items](submit-catalog-items.md)<br/>
+> [Submit and install catalog items](submit_acquire_from_catalog.md)<br/>
 
 Ask questions or contact the project team on GitHub.
 
@@ -180,4 +181,4 @@ Ask questions or contact the project team on GitHub.
 ### See also
 
 [Administer the catalog (Preview)](administer-catalog.md)<br />
-[View, submit, and install catalog items  (Preview)](submit-catalog-items.md)
+[Submit and install catalog items  (Preview)](submit_acquire_from_catalog.md)
