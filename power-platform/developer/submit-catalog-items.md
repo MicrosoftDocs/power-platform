@@ -12,9 +12,14 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# View, submit, and install catalog items (preview)
+# View, submit, and install catalog items with CLI (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+> [!IMPORTANT]
+>
+> - [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+> - **NOTE: The Catalog now has a UI, so the CLI implementation is no longer needed in most cases. Using the UI:** 
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 Before you can work with catalog items, you must install and configure it. More information: [Get started](catalog.md#get-started)
 
