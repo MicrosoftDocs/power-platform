@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# View, submit, and install catalog items with CLI (preview)
+# Using the Catalog with CLI (preview)
 
 > [!IMPORTANT]
 >
