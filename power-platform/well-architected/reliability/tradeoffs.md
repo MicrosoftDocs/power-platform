@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 05/16/2024
 ---
 
 # Reliability tradeoffs for Power Platform workloads
@@ -58,6 +58,7 @@ During the design phase of a workload, you need to consider how decisions based 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Decreased agility**. The Experience Optimization pillar prioritizes user efficiency.
 
 - Emphasizing rigorous testing can delay the release of experience features that are essential for adoption.
+
 - Optimizing for reliability can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
 
 ## Reliability tradeoffs with Performance Efficiency
