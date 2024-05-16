@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/17/2024
+ms.date: 05/15/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -59,12 +59,6 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers will be able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
 
-## AI suggestions for email content
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Turn on generative AI in emails | If **On**, the Copilot icon is displayed in rich text editors for app users to draft and refine email content. More information: [Use Copilot in the email rich text editor](/power-apps/maker/model-driven-apps/use-copilot-email-assist) | Off |
-
 ## Embedded content
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -76,17 +70,6 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Country/region code prefixing for numbers|If **On**, customer engagement apps will prefix the country/region code to numbers that users are trying to call.|  On|
-
-### Set the telephony provider
-Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.
-
-> [!Note]
-> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-|Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled |
-|Use Skype for Business|More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)  |Not enabled|
 
 ## Hosted RPA
 | Setting | Description | Default value |
@@ -213,6 +196,16 @@ Choose which provider to enable outbound calls from within customer engagement a
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |Off|
+
+## Disable empty address record creation
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables. |    Off    |
+
+## Enable deletion of address records
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion.|    Off    |
 
 ## Power Apps ideas for canvas apps
 | Setting | Description | Default value |

@@ -1,16 +1,18 @@
 ---
-title: Enhance your business production with Power Platform
-description: Discover the potential of Power Platform for your business. These environments are designed to store, manage, and share your organization's critical business data.
-author: Mattp123
+title: Power Platform environments overview
+description: Learn about Power Platform environments and how to use them.
+author: sericks007
 ms.topic: overview
-ms.date: 01/30/2023
-ms.reviewer: angieandrews
+ms.date: 05/07/2024
+ms.reviewer: sericks
 ms.subservice: admin
-ms.author: matp
+ms.author: sericks
 contributors:
   - marcelbf
+ms.contributors:
+- iyanni
 ---
-# Power Platform environment
+# Power Platform environments overview
 
 A *Power Platform environment* is a space to store, manage, and share your organization's business data, apps, chatbots, and flows. It also serves as a container to separate apps that might have different roles, security requirements, or target audiences. How you choose to use environments depends on your organization and the apps you're trying to build. For example:
 
@@ -48,6 +50,12 @@ Environment makers can also distribute the apps they build in an environment to 
 Users or groups assigned to these environment roles aren't automatically given access to the environment's database (if it exists) and must be given access separately.
 
 Users or security groups can be assigned to either of these two roles by an environment admin by following the steps described in [Configure user security to resources in an environment](database-security.md).
+
+## Early release cycle environments
+
+You can create environments in a subset of regions that get features early, that is, before any standard release environments get them. 
+
+The ability to validate your scenarios before business-critical environments are updated is a great way to discover new capabilities and catch any updates that may impact your scenarios. See [Create and manage environments in the Power Platform admin center](create-environment.md) to learn how to create early release environments.
 
 ## Power Platform environment types
 
