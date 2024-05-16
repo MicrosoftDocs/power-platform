@@ -1,6 +1,6 @@
 ---
 title: "Catalog in Power Platform (preview)"
-description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can use each other's work."
+description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can re-use each other's work."
 author: derekkwanpm
 ms.subservice: developer
 ms.author: derekkwan
@@ -13,68 +13,37 @@ contributors:
 ---
 # Catalog in Power Platform (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+> [!IMPORTANT]
+>
+> - [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
-Organizations where developers and makers build and share components and templates get more value from Power Platform. Just building isn't enough. Sharing Power Platform artifacts at scale fosters communities and support groups to emerge, incubate, and unlock value from diverse set of personnel in an organization.
+## Introduction
 
-Successful organizations adopt a *fusion teams* model where pro-developers, makers, and admins all work together to help their fellow employees derive the highest value possible from Power Platform. Fusion teams can reuse components and templates.
+Building from scratch every time by recreating branding, layouts, links, complex connectors and flows, and more is painful and error-prone.
+
+Organizations where developers and makers build and share customized and re-usable components and templates get more value from Power Platform. Successful organizations adopt a *fusion teams* model where pro-developers, makers, and admins all work together to deliver the best solutions for their users, and derive the highest value possible from Power Platform.
+
+In any organization, there might be many components and templates distributed among many environments. The catalog in Power Platform enables developers and makers to:
+
+- Crowd-source and find templates and components within their organization easily
+- Find and install the latest and authoritative version of a component
+- Get started with templates and components that provide immediate value
 
 *Components* include things like:
 
+- AI prompts
+- Copilot app templates
+- AI plugins
+- Power Platform Data Flows
 - Custom connectors
 - Power Apps component framework controls
 - Power Automate flows
 - Canvas apps
 - Model-driven apps
 
-*Templates* are items that represent an advanced starting point for components. Templates connect to their enterprise systems & resources, and utilize organization's themes.
-
-In a large organization, there might be many components and templates distributed among many environments.
-
-The catalog in Power Platform enables developers and makers to:
-
-- Crowd-source and find Power Platform templates and code components within their organization easily
-- Find and install the latest and authoritative version of a component
-- Get started with templates that provide immediate value
-
-For administrators and line of business approvers, the catalog:
-
-- Provides a central location, a *single source of truth*, to store and maintain power platform artifacts they can curate and control to accelerate value for Makers and Developers
-- Enables approval workflows to enable usage of sanctioned components and templates where a high degree of care is required due to sensitive regulatory and statutory scenarios
-- Provides management capabilities with settings and metadata
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
-> - Currently, the catalog cannot be utilized in an environment that utilizes customer managed keys. More information: [Manage your customer-managed encryption key (preview)](../admin/customer-managed-key.md)
-
-## Catalog process
-
-This diagram describes the process of using catalog in Power Platform.
-
-:::image type="content" source="media/catalog in power platform process.png" alt-text="Catalog process":::
-
-### Create
-
-Makers and developers can create solutions and templates with useful configuration points. With these configuration points, users can easily configure all the solution components in a solution or create from a template.
-
-### Submit
-
-Makers and developers can submit solutions and templates to the catalog so that they can help their colleagues solve business problems.
-
-### Approve and Store
-
-Admins and LOB approvers can review and approve solutions and templates to be shared with the organization, so that catalog content is governed.
-
-### Discover
-
-Makers and developers can discover solutions and templates from their colleagues in the catalog, so that they can more quickly solve business problems.
-
-### Acquire
-
-Makers and developers can easily acquire solutions and templates from the catalog by providing connections and configuration.
+*Templates* are items that represent an advanced starting point for components. Templates connect to their enterprise systems & resources, and utilize an organization's themes.
 
 ## Terminology
 
@@ -89,125 +58,77 @@ These terms are important to understand when using the catalog:
 |**Discovery**|Act of finding items within a catalog by authorized users.|
 |**Acquisition**|Act of installing the item to a target environment by a developer.|
 
-## Get started
+## Catalog Basics 
 
-To get started, you need to complete the following tasks:
+Every tenant will get a catalog auto-provisioned for them as part of Platform Environments, but you may choose to have multiple catalogs across environments for different regions, departments, etc. Most orgs will only need one catalog. New catalogs can be set up by a catalog Admin in Power Platform Admin Center. 
 
-1. [Install the **Catalog Manager** application](#install-the-catalog-manager-application)
-1. [Configure the catalog](#configure-the-catalog): Configure catalog settings including metadata management and enabling auto approvals
-1. [Administer the catalog](administer-catalog.md): Perform ongoing catalog administration including: approving new submissions, reviewing submission and install failures
+You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types: 
 
-## Install the **Catalog Manager** application
+1. A template: a copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer “connected” to the solution it came from. If you want other makers to do whatever they please, use a template.
+   1. NOTE: Certain components are not supported for templating yet. View the updated list here.
+2. A managed item: managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution “as is” and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
+   1. Use the assets of the managed item as is and make no changes
+   2. Build custom functionality on top of the assets in the managed item without changing the original components
+   3. Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.) 
 
-To start using the catalog, you need to install the **Catalog Manager** application from AppSource.
+Admins can create catalogs, manage access and security, approve catalog items, and more in the catalog Manager, which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful artifacts for themselves.  
 
-> [!NOTE]
-> Most organizations will only need to install one catalog. While multiple catalogs within a tenant are supported they are for advanced departmental, data residency type scenarios and need to be evaluated in light of your business needs.
+## Discovery 
 
-### Prerequisites
+The catalog page will be available in Power Apps and Power Automate (Copilot Studio and Power Pages will get the catalog in 2024). On the page will be tiles representing all artifacts available to your organization. This includes artifacts published by your organization, and approved partners who have access to your environments, as well as many published by Microsoft, such as AI prompts, Copilot App templates, Dataflow templates, Enterprise templates, PCF controls, Low-code plugins, and more.  
 
-You must have the following security role assignment and your Dataverse environment must be above the minimum version.
+![The Catalog gallery] (power-platform/developer/media/catalog_gallery.png)
 
-- Security role: You must have the System administrator security role on the environment.
-- A Dataverse environment with minimum Database (DB) version of `9.2.22122.00148`. You can check the Database version:
+On the page itself are the following controls: 
 
-  - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) > **Environment page** > **Version card**.
-  - By using the [RetrieveVersion function](xref:Microsoft.Dynamics.CRM.RetrieveVersion) with your browser. Type <br />`https://<your org>.<your region code>.dynamics.com/api/data/v9.2/RetrieveVersion`<br /> in your browser address bar  and view the JSON returned.
+1. Search box (searches the titles of available artifacts)
+2. Filters (filters for publisher, type, category, and more)
+3. Catalog selector (some orgs may choose to create multiple catalogs for regions, departments, etc). Users can have access to one or more catalogs. 
 
-### Installation instructions
+The list of Microsoft published artifacts that will be available in your catalog out of the box are (some may be unavailable during Public Preview): 
 
-Here are instructions to install the catalog:
+1. AI Prompts
+2. Copilot App templates
+3. Enterprise templates
+4. Power Platform data flows
+5. PCF controls
+6. Low code plugins
+7. Retail cloud templates
+8. Copilot agents
 
-1. Sign-in into [appsource.microsoft.com](https://appsource.microsoft.com/) with your tenant credentials.
-1. Select this link:  [https://appsource.microsoft.com/product/dynamics-365/powerappssvc.catalogmanager-preview?flightCodes=dde212e5c66047c59bf2b346c419cef6](https://appsource.microsoft.com/product/dynamics-365/powerappssvc.catalogmanager-preview?flightCodes=dde212e5c66047c59bf2b346c419cef6)
+## My Activity 
 
-   > [!NOTE]
-   > The **Catalog Manager** application is not enabled for search in appsource at this time. You must use the link above to open it.
+Linked in the banner of the catalog page is the My Activity page. This shows useful info on items you have submitted and acquired, including approval status. 
 
-1. Select on **Get It Now** to acquire the ****Catalog Manager**** app. This button will redirect you to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+![The catalog My Activity Page] (power-platform/developer/media/myactivity_catalog.png)
 
-   You might be prompted to confirm your details before you're directed to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Filters on top of the page allow you to look at different date ranges, types of catalog items, and across different catalogs (if you have multiple catalogs set up in your tenant). 
 
-1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you're asked to **Select an Environment** to install the ****Catalog Manager**** application.
-1. After you agree to the legal terms and privacy statements, select **Install**.
+1. Metrics on this page: 
+   1. Total items submitted: sum of all items you submitted
+   2. Items approved: sum of all items you submitted that were approved by your admin
+   3. Items awaiting approval: sum of all items you submitted that your admin has not responded to yet
+   4. Items acquired: sum of all items you acquired from the catalog
+1. Catalog items acquired table
+   1. Item ID: unique identifier for the acquired item
+   2. Item name: display name for the acquired item
+   3. Deployment type: if item is a template or managed
+   4. Date acquired: date item was last acquired
+   5. Status: current status of the acquired item (completed, failed, etc)
+   6. Message: status message, can explain why an item failed 
+1. Catalog items submitted table
+   1. Item ID: unique identifier for the submitted item
+   2. Item name: display name for the submitted item
+   3. Deployment type: if item is a template or managed
+   4. Date submitted: date item was last submitted
+   5. Status: current status of the submitted item (approved, rejected, pending approval, etc)
+   6. Reject reason: why a submitted item was rejected by an admin
+  
 
-   It takes a few minutes to install the application.
 
-1. After the installation is complete, the ****Catalog Manager**** app is available in [Power Apps](https://make.powerapps.com/) > **Apps**. Select **Play** to launch the ****Catalog Manager**** App.
 
-#### Validating successful install of the **Catalog Manager** application
 
-To verify that the **Catalog Manager** application installed successfully:
 
-1. In the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/) > Select **Environments**.
-1. Select the environment you chose to install the ****Catalog Manager**** application.
-1. In the **Resources** card, select the **Dynamics 365 apps** link.
-1. You should find the ****Catalog Manager**** app listed with a **Status** of **Installed**.
-
-In [Power Apps](https://make.powerapps.com/), with the environment you selected, you should also be able to find the following solutions:
-
-- Power Platform catalog service identities
-- Power Platform catalog manager
-
-#### How the applications appears in your environment
-
-These apps appear in two places:
-
-> [!NOTE]
-> You will also see an app named **Package Management View** in the environment. This app is reserved for future use.
-
-- In [Power Apps](https://make.powerapps.com/), select **Apps**
-
-   :::image type="content" source="../media/PowerCatalogApps_Maker.png" alt-text="Power Apps Maker App List":::
-
-- In the **Unified Interface apps** view:
-
-   :::image type="content" source="../media/PowerCatalogApps_UCI.png" alt-text="Power Apps Unified Client Applications View":::
-
-   More information: [About Unified Interface for model-driven apps in Power Apps](../admin/about-unified-interface.md)
-
-## Configure the catalog
-
-After you install the ****Catalog Manager**** application, in [Power Apps](https://make.powerapps.com/), locate the application and select **Play** to open the application.
-
-### Configure catalog metadata
-
-1. In the navigation pane, in the **Configuration** group at the bottom, select **Catalog Configuration**.
-1. Select **Default Catalog Name** to open the **Catalog Configuration** form.
-
-Here you can set the following configuration values that are important when you have more than one catalog.
-
-|Field  |Description  |
-|---------|---------|
-|**Catalog Name**|Type a descriptive name for the catalog.|
-|**Description**|Type a brief description of the catalog.|
-|**Help Link**|Type a URL to a resource for your organization that contains your documentation about using the catalog.|
-|**Image**|Upload an image to easily identify the catalog.|
-
-In the **Catalog Configuration** card on the right side, there are two choices you can apply:
-
-- **Enable Auto Approval**
-- **Enable Unmanaged Solutions**.
-
-#### Enable Auto Approval
-
-This setting is for the entire catalog. Organizations can take a stance of *approved by default* or impose an approval process for submissions.
-
-Auto approval can be enabled at two levels:
-
-|Level|Description  |
-|---------|---------|
-|**Catalog**|Set auto approval once on the catalog so that every submission is auto approved regardless of publisher.  |
-|**Publisher** |Navigate to **Catalog Publishers** in the ****Catalog Manager**** application and turn on auto approval for individual catalog publishers. Use this publisher level auto approval when there's a trusted group for which no approval is required, but others require approval.|
-
-> [!NOTE]
-> If you choose to enable auto approval for the entire catalog, settings at the publisher level will not apply.
-
-Even with auto approval, submission requests that get auto approved are available to be viewed within the ****Catalog Manager**** app. They can be viewed under **Requests** using the **All Approval Request** view. More information: [Approve & Reject submission requests](administer-catalog.md#approve-and-reject-submission-requests)
-
-#### Enable Unmanaged Solutions
-
-This capability is reserved for future use. More details of what components are supported in deployment type of Template will be shared in the future.
 
 
 
