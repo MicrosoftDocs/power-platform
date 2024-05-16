@@ -36,6 +36,13 @@ Any environment that has a Catalog will see these roles inside of Power Platform
 
 Power Platform admins and system customizers will already have full access to the Catalog. However, **do not** use assign these roles for generally managing Catalog access, and instead use one of the roles from above. 
 
+## Submission 
+
+As mentioned, unmanaged solutions in your environment can be published to the Catalog. This means in your normal course of creating solutions, you may decide that what you’re building would be useful as a re-usable artifact for yourself or others in your org. 
+
+Navigate to your solutions page, and any unmanaged solution will have a new option for “Publish to Catalog” in the three vertical dots next to the solution display name. This option will be disabled for anyone without the Catalog Submitter role. 
+
+
 Before you can work with catalog items, you must install and configure it. More information: [Get started](catalog.md#get-started)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
