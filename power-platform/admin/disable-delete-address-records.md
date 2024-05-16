@@ -39,7 +39,7 @@ The user can add or remove the **Disable Empty Address Record Creation** setting
 
 ### Overview 
 
-**Delete Address Data in Dataverse** is a feature that allows an user to delete address data in Dataverse if this setting is turned on. The default setting for this features is Off, which by default will not allow users to delete address records in Dataverse. Address record deletion capability is applicable only for Account and Contact tables in Dataverse.
+**Delete Address Data in Dataverse** is a feature that allows an user to delete address data in Dataverse when this feature is turned on in settings. The default setting for this features is Off, which by default will not allow users to delete address records in Dataverse. Address record deletion capability is applicable only for Account and Contact tables in Dataverse.
 
 Enabling "Deletion of Address Records" feature in Dataverse allows address records to be deleted through the user experience in Power Platform or through bulk delete operation or through SDK. 
 
