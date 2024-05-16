@@ -1,9 +1,9 @@
 ---
-title: Environment routing (preview)
+title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 3/7/2024
+ms.date: 05/13/2024
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -12,14 +12,11 @@ search.audienceType:
   - admin
 ---
 
-# Environment routing (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Environment routing
 
 Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [make.powerapps.com](https://make.powerapps.com/). Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.
 
 When the **Environment routing** setting is enabled in [Power Platform Admin Center](https://admin.powerplatform.microsoft.com), the maker lands in their own personal developer environment instead of the default environment. Personal developer environments are the makers' own spaces, like OneDrive, for personal productivity where they can start building apps and solutions in their own workspace. Makers don't need to know which environment to work in, since the personal developer environment appears automatically.
-
 
 :::image type="content" source="media/default-environment-routing/diagram-environment-routing.png" alt-text="Diagram showing how new and existing makers fit into the environment routing and environment group.":::
   
@@ -29,8 +26,6 @@ Dataverse is available in developer environments, and these environments are [Ma
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality.
 > - By default, all developer environments created through environment routing are managed.
 > - Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [About the Power Apps Developer Plan](../developer/plan.md).
@@ -44,6 +39,12 @@ Understand that environment routing is a tenant-level, admin setting that:
 - Requires the **Developer environment assignment** setting to be enabled for **Everyone**.
 
   :::image type="content" source="media/default-environment-routing/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone." lightbox="media/default-environment-routing/developer-environments-assignment-everyone.png":::
+
+  > [!Note]
+  > If the admin attempts to use environment routing while the **Developer Environment assignments** setting is configured as **only specific admins**, the following error appears:
+  >
+  > _Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: NNNNN-NNNNN-NNNNN._
+
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
@@ -62,13 +63,17 @@ The **Environment routing** setting is disabled by default and must be enabled u
 #### [Power Platform admin center](#tab/ppac)
 
 1. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select **Settings**.
-1. On the **Tenant settings** page, select **Environment routing (preview)**.
+1. On the **Tenant settings** page, select **Environment routing**.
 1. In the **Environment routing** pane, turn on the **Create personal developer environments for makers** option.
 1. Select the desired user type to include in routing. The **All Makers** option routes all Power Apps makers into existing or new personal developer environments. The **New Makers** option routes new makers only.
-1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups (preview)](environment-groups.md).
+1. (Optional) Select an environment group, to which the newly created developer environments are automatically assigned. This environment group inherits all the defined environment group rules. For more information, see [Environments groups](environment-groups.md).
 1. (Optional) Admins can select a security group to limit routing only to the member makers of the configured security group. For more information, see [Configure security groups](../enterprise-templates/finance/sap-procurement/administer/configure-security-groups.md).
 
-:::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
+    > [!Note]
+    > Currently security group filtering only works for security groups that have one hundred members or less. 
+
+    :::image type="content" source="media/default-environment-routing/environment-routing.png" alt-text="Screenshot that shows where various Environment routing options in Tenant settings are located." lightbox="media/default-environment-routing/environment-routing.png":::
+
 
 #### [PowerShell](#tab/powershell)
 
@@ -155,7 +160,7 @@ If the creation of the developer environment fails, makers are automatically rou
 
 ### What data loss prevention (DLP) policies are applied for the developer environment?
 
-During the preview, no specific DLP policies are assigned to the developer environment. The developer environment inherits existing, tenant-level DLP policies.
+No specific DLP policies are assigned to the developer environment. The developer environment inherits existing, tenant-level DLP policies.
 
 ### What are the preconfigured Managed Environment settings for the newly created developer environments?
 
@@ -171,7 +176,7 @@ All developer environments have the following Managed Environment settings preco
 
 ### Is the environment routing also available for Power Automate, Microsoft Copilot Studio, and Power Pages?
 
-During the preview, environment routing is limited to Power Apps only.
+Environment routing is currently limited to Power Apps only.
 
 ### Do I need to be a Power Platform tenant admin to enable this feature?
 
@@ -179,7 +184,7 @@ Yes, you need to have a Power Platform tenant admin privilege to enable this fea
 
 ### Does creating an app or flow in a managed, developer environment require a premium license?
 
-A premium license isn't required for the creation or preview of an app or flow in a managed, developer environment. However, a user or maker needs a premium license to _run_ an app or flow in a managed, developer environment.
+A premium license isn't required for the creation or preview of an app or flow in a managed developer environment. However, a user or maker needs a premium license to _run_ an app or flow in a managed developer environment.
 
 ### Does the default environment need to be managed to enable environment routing?
 

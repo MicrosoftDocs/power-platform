@@ -228,7 +228,7 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
-                - name: Environment routing (preview)
+                - name: Environment routing
                   href: default-environment-routing.md
                 - name: Product
                   items:
