@@ -1,10 +1,10 @@
 ---
-title: Emergency response recommendations
-description: Learn how to design an emergency response strategy for your workload, including processes and procedures to ensure calm, orderly issue resolution.
+title: Emergency response recommendations for Power Platform workloads
+description: Learn how to design an effective emergency operations practice that clearly defines roles and responsibilities to ensure timely issue resolution.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -126,3 +126,10 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 - [Recommendations for designing and creating a monitoring system](observability.md)
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [User and maker support strategy](/power-platform/guidance/adoption/support-strategy)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)
