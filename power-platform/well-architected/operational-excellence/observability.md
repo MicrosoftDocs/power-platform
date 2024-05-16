@@ -1,10 +1,10 @@
 ---
-title: Recommendations for designing and creating an observability framework
-description: Learn recommendations for designing and creating an observability framework. The framework provides a foundation for monitoring, detection, and alerting.
+title: Design and creating a monitoring framework recommendation for Power Platform workloads
+description: Learn how to design and create a monitoring framework that provides a foundation for alerts, validates design choices, and informs design decisions. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -192,3 +192,10 @@ The [Power Platform Automation Kit](/power-automate/guidance/automation-kit/over
 
 - [Recommendations for designing a reliable monitoring and alerting strategy](../reliability/monitoring-alerting-strategy.md)
 - [Recommendations for monitoring and threat detection](../security/monitor-threats.md)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)
