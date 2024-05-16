@@ -188,7 +188,7 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
-                - name: Environment groups (preview)
+                - name: Environment groups
                   href: environment-groups.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
