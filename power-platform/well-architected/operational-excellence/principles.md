@@ -56,7 +56,7 @@ Learn more about [establishing development standards](/azure/well-architected/op
 |![Goal icon](../_images/goal.svg) Gain visibility into the workload, and use insights to make data-driven decisions.|
 |--|
 
-Continuously improve the quality of your workload by monitoring it in accordance with Power Platform Well-Architected pillars. Build a monitoring system that tracks every aspect of the workload. Collect data that you can learn from and that can drive improvements. Monitoring is key in proactive maintenance of the workload, quality and security assurance, performance and capacity planning, and product management. Efficient monitoring can reduces reactive cycles and incident response times.
+Continuously improve the quality of your workload by monitoring it in accordance with Power Platform Well-Architected pillars. Build a monitoring system that tracks every aspect of the workload. Collect data that you can learn from and that can drive improvements. Monitoring is key in proactive maintenance of the workload, quality and security assurance, performance and capacity planning, and product management. Efficient monitoring can reduce reactive cycles and incident response times.
 
 Learn more about [evolving operations with observability](/azure/well-architected/operational-excellence/principles#evolve-operations-with-observability) in the Azure Well-Architected Framework.
 
