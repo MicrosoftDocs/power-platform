@@ -1,10 +1,10 @@
 ---
-title: Recommendations for security incident response
-description: Learn how to reduce the time that's required to identify, manage, and mitigate security incidents that threaten the confidentiality and integrity of software systems.
+title: Security incident response recommendation for Power Platform workloads
+description: Learn how to establish incident response procedures that reduce the time that's required to identify, manage, and mitigate security incidents.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -164,3 +164,10 @@ Cloud Adoption Framework for Azure provides guidance about incident response pla
 - [Conduct end-to-end threat hunting by using the Hunts feature](/azure/sentinel/hunts)
 - [Use Hunts to conduct end-to-end proactive threat hunting in Microsoft Sentinel](/azure/security-center/security-center-provide-security-contact-details)
 - [Incident response overview](/security/operations/incident-response-overview)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

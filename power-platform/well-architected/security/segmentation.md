@@ -1,10 +1,10 @@
 ---
-title: Recommendations for building a segmentation strategy
-description: Learn about the recommendations for building a unified segmentation strategy using perimeters and isolation boundaries. 
+title: Build a segmentation strategy recommendation for Power Platform workloads
+description: Learn how to create intentional segmentation in your architecture and workload design.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -20,7 +20,7 @@ A segmentation strategy defines how you separate workloads from other workloads 
 
 This guide describes the recommendations for **building a unified segmentation strategy**. Using perimeters and isolation boundaries in workloads, you can design a security approach that works for you.
 
-**Definitions** 
+**Definitions**
 
 | Term | Definition |
 |---|---|
@@ -59,7 +59,7 @@ It's important to note the distinction between perimeters and isolation. Perimet
 
 Isolation doesn't mean creating silos in the organization. A unified segmentation strategy provides alignment between the technical teams and sets clear lines of responsibility. Clarity reduces the risk of human error and automation failures that can lead to security vulnerabilities, operational downtime, or both. Suppose a security breach is detected in a component of a complex enterprise system. It's important that everyone understands who's responsible for that resource so that the appropriate person is included in the triage team. The organization and stakeholders can quickly identify how to respond to different kinds of incidents by creating and documenting a good segmentation strategy.
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Segmentation introduces complexity because there's overhead in management. 
+> :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Segmentation introduces complexity because there's overhead in management.
 
 > :::image type="icon" source="../_images/risk.svg"::: **Risk**: Micro-segmentation beyond a reasonable limit loses the benefit of isolation. When you create too many segments, it becomes difficult to identify points of communication or to allow for valid communication paths within the segment.
 
@@ -131,3 +131,10 @@ With Azure Virtual Network support for Power Platform, you can integrate Power P
 [IP firewall](/power-platform/admin/ip-firewall) for Power Platform environments helps to protect your data by limiting user access to Dataverse from only allowed IP locations.
 
 [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview) provides an advanced way to connect your on-premises network to Microsoft cloud services by using private connectivity. A single ExpressRoute connection can be used to access multiple online services; for example, Microsoft Power Platform, Dynamics 365, Microsoft 365, and Azure.
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

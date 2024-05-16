@@ -3,8 +3,8 @@ title: Recommendations for following design standards
 description: Learn the importance of adhering to design standards, conventions, and guidelines to enhance user experience and application success.
 author: Denise-MSFT
 ms.author: demora
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -156,6 +156,8 @@ Canvas apps require code components to enable keyboard shortcuts, which can be c
 - [Fluent UI accessibility guidance](https://fluent2.microsoft.design/accessibility)
 
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)
