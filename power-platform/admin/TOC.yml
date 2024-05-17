@@ -852,6 +852,8 @@
               href: run-bulk-system-jobs-detect-duplicate-records.md
             - name: Bulk deletion
               href: delete-bulk-records.md
+            - name: Set address record settings
+              href: disable-delete-address-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
             - name: Restore deleted table records (preview)
