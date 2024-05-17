@@ -1,10 +1,10 @@
 ---
-title: Recommendations for designing a workload development supply chain
-description: Learn how to design a workload development supply chain based on CI/CD pipelines that ensure a predictable, efficient workload lifecycle. 
+title: Workload development supply chain recommendation for Power Platform workloads
+description: Learn how to build a workload supply chain that drives changes through automated pipelines and ensures an efficient workload lifecycle. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -47,7 +47,7 @@ When possible, use automated testing to ensure consistency. Include the followin
 
 - *Acceptance testing*: Depending on the context, you can manually perform acceptance testing. It can be partially or fully automated. Acceptance testing determines whether the software system meets the requirement specifications. The main purpose of this test is to evaluate the system's compliance with the business requirements and determine whether the system meets the required criteria for delivery to end users.
 
-**Implement quality gates throughout your code promotion process via testing**. Deploy your code into lower environments, like quality assurance and testing, and up through higher environments, like staging and production. As your deployment passes through quality gates, ensure that it meets your quality targets before changes go to production. Your business requirements determine what the focus of your quality gates are. Also consider the fundamental Well-Architected Framework principles: Security, Reliability, and Performance Efficiency.
+**Implement quality gates throughout your code promotion process via testing**. Deploy your code into lower environments, like quality assurance and testing, and up through higher environments, like staging and production. As your deployment passes through quality gates, ensure that it meets your quality targets before changes go to production. Your business requirements determine what the focus of your quality gates are. Also consider the fundamental Power Platform Well-Architected principles: Security, Reliability, and Performance Efficiency.
 
 Also integrate approval workflows into your quality gates. Clearly define and automate approval workflows when appropriate. Define quality acceptance criteria into your automation, so you can move through your gates efficiently and safely.
 
@@ -80,3 +80,10 @@ For more information, see [What is an Azure landing zone?](/azure/cloud-adoption
 - [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops)
 - [Reliability pillar](../reliability/checklist.md)
 - [Security pillar](../security/checklist.md)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

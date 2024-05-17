@@ -3,7 +3,7 @@ title: "View and manage on-premises data gateways (preview) | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 05/14/2024
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -24,7 +24,7 @@ The on-premises data gateway acts as a bridge, providing quick and secure data t
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
 
 > [!NOTE]
-> The gateway and data source management feature in the Power Platform admin center isn’t supported on mobile or smaller screens with a resolution lower or equal to 320x256. 
+> The gateway management feature in the Power Platform admin center isn’t supported on mobile or smaller screens with a resolution lower or equal to 320 x 256. 
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
