@@ -119,7 +119,7 @@ Setting up Dataverse search after enabling it in the **Power Platform admin cent
 
 3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the app designer to verify that the table is included in an app's components. For more information, see [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
 
-4. Make sure your table is customizable and in the **Advanced options** to the settings to **Track changes** and **Appear in search results** are both set to **On**. For more information, see [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
+4. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** are both set to **On**. For more information, see [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
 
 ### Select tables for Dataverse search
 
