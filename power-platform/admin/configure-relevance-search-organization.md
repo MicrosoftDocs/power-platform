@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/16/2024
+ms.date: 05/17/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -14,7 +14,7 @@ contributors:
 ---
 # Configure Dataverse search for your environment
 
-Dataverse search delivers fast and comprehensive search results in a single list, sorted by relevance. As an administrator or customizer, you can enable and configure Dataverse search as described in this article. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
+Dataverse search delivers fast and comprehensive search results in a single list, sorted by [relevance](/azure/search/index-similarity-and-scoring). As an administrator or customizer, you can turn on and configure Dataverse search as described in this article. Quick Find views are used for configuring Dataverse search, so you can manage global search, quick find, and lookup search behavior in one single place.
 
 With Dataverse search enabled, a search box is always available at the top of every page in all the model-driven apps in the **environment**. Once Dataverse search is enabled, it applies to all apps and can't be disabled per app. Users can start a new search and quickly find the information they're looking for, from the searchable tables included in the app. Dataverse search also becomes the default and only global search experience in all model-driven apps in the environment. Users won't be able to switch to [quick find search](/powerapps/user/quick-find) formerly known as categorized search.  
 
@@ -118,6 +118,8 @@ Setting up Dataverse search after enabling it in the **Power Platform admin cent
 2. Review the columns that will be searched, the columns that will be displayed, and the filter conditions that will be applied in model-driven Power Apps (see below).
 
 3. Ensure the tables enabled for Dataverse search are included in the model-driven app. Use the app designer to verify that the table is included in an app's components. For more information, see [Add or edit model-driven app components](/powerapps/maker/model-driven-apps/add-edit-app-components#add-a-component).
+
+4. Make sure your table is customizable and that the settings to **Track changes** and **Appear in search results** in the **Advanced options** are both set to **On**. For more information, see [Create and edit tables using Power Apps](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel).
 
 ### Select tables for Dataverse search
 
