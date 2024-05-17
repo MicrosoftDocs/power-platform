@@ -814,7 +814,7 @@
                               href: create-dataverseapplicationuser.md
                         - name: Tenant Settings
                           items:
-                            - name: "List tenant settings"
+                            - name: List tenant settings (preview)
                               href: list-tenantsettings.md
         - name: Data integration
           items:
