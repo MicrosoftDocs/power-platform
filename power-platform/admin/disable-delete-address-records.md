@@ -1,45 +1,36 @@
 ---
-title: Delete or Disable Address records 
+title: Set address record settings
 description: Disable empty address records and Delete address records in Dataverse
-author: sericks007
+author: mkannapiran 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/05/2024
+ms.date: 05/17/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: kamanick
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# Disable Empty Record Creation
+# Set address record settings
 
-### Overview
+This article explains how to prevent empty addresss records from being created and how to allow deletion of address records.
 
-The disable empty record creation feature helps you to prevent address record creation in Dataverse when there is no data in the address segment of payload. This feature only supports Account and Contact tables in Dataverse.
+## Prevent empty addresss records from being created
 
-For example if there is an incoming payload for Account table and the address data is empty, this feature if turned on will prevent an empty record creation in Dataverse. However if the same payload contains address data then it will allow address record creation in Dataverse.
+The **Disable empty address record creation** setting helps you prevent address record creation in Dataverse when there is no data in the address segment of a payload. This feature only supports **Account** and **Contact** tables in Dataverse. Any other table that is associated with an address isn't impacted by this setting.
 
-### Configuration required to disable empty record creation
+For example, suppose there is an incoming payload for the **Account** table and the address data is empty. If the **Disable empty address record creation** setting is set to **On**, it prevents an empty record from being created in Dataverse. However, if the same payload contains address data, then an address record is created in Dataverse.
 
-Navigate to Power Platform Admin Center (PPAC).
-Click **Environments** option on the left side panel.
+> [!Note]
+> Turning on the **Disable empty address record creation** setting doesn't remove existing empty address records. 
 
-Select an environment from the list for which this feature needs to be enabled.  Click on **Settings** on the menu bar on the top.
-
-Expand **Product** and click on **Features** to navigate to features settings page.
-
-Turn On or Off the settings for  **Disable Empty Address Record Creation** 
-
-click Save on the bottom of the page to save the changes.
-
-### How does this feature work
-
-The Power Platform Environment where the **Disable Empty Address Record Creation** is enabled, an address record will not be created if incoming payload does not contain data in address info. This feature ensures that an address record will be created only if the incoming payload contains address data.
-**Note**: Enabling this feature does not remove existing empty address records. 
-
-The **Disable Empty Address Record Creation** setting is applicable only for Account and Contact tables in Dataverse. Any other table that is associated with an address will not be impacted by this setting. For example if a table named Warehouse or Location has address associated with it and the incoming payload has empty address data, an empty address data record will be created for Warehouse or Location tables.
-
-The user can add or remove the **Disable Empty Address Record Creation** setting anytime. However the changes to setting will not have any impact on its previous setting. For example If **Disable Empty Address Record Creation** was enabled earlier and the user turned it off later, the system will NOT backfill any missing empty address table records. And Microsoft does not support to manually backfill those empty address records.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Environments** in the navigation pane.
+1. Select the checkmark next to an environment, and then select **Settings** in the command bar.
+1. Select **Product** > **Features**.
+1. Find the **Disable Empty Address Record Creation** setting and turn it **On**.
+1. Select **Save** on the bottom of the page to save the changes.
 
 ## Delete Address Data in Dataverse 
 
