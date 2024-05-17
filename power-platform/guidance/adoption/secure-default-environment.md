@@ -40,16 +40,26 @@ Add links to any other internal resources your makers might find helpful.
 
 ## Limit sharing with everyone
 
-Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with other individual users, security groups, and, by default, everyone in the organization. You should consider using a gated process around widely used apps to enforce policies and requirements like these:
+Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with other individual users and security groups. By default, sharing with your entire organization, or "Everyone", is disabled. You should consider using a gated process around widely used apps to enforce policies and requirements like these:
 
 - Security review policy
 - Business review policy
 - Application Lifecycle Management (ALM) requirements
 - User experience and branding requirements
 
-Consider also disabling the **Share with Everyone** feature in Power Platform. With that restriction in place, only a small group of administrators may share an application with everyone in the environment. Here's how.
+The **Share with Everyone** feature is disabled by default in Power Platform. It is recommended by Microsoft to keep this setting disabled to limit the overexposure of canvas apps with unintended users. The "Everyone" group for your organization contains all users who have ever logged into your tenant, which includes guests and internal members. It is not just all internal employees within your tenant. Additionally, the membership of the "Everyone" group cannot be edited nor viewed. To learn more about what "Everyone" is, go here: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-special-identities-groups#everyone. 
 
-1. Run the [Get-TenantSettings cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest&preserve-view=true) to get the list of your organization's tenant settings as an object.
+If you would like to share with all internal employees or a large group of people, consider sharing with an existing security group of those members or creating a security group and sharing your app with it. 
+
+When **Share with Everyone** is disabled, only a small group of administrators may share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to enable sharing with "Everyone".
+
+1. First, open PowerShell as an administrator and log into your Power Apps account by running the following command. 
+
+   ```powershell
+   Add-PowerAppsAccount
+   ```
+   
+3. Run the [Get-TenantSettings cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest&preserve-view=true) to get the list of your organization's tenant settings as an object.
 
    The `powerPlatform.PowerApps` object includes three flags:
 
@@ -59,14 +69,16 @@ Consider also disabling the **Share with Everyone** feature in Power Platform. W
 
    ```powershell
    $settings=Get-TenantSettings 
-   $settings.powerPlatform.powerApps.disableShareWithEveryone=$true 
+   $settings.powerPlatform.powerApps.disableShareWithEveryone=$false 
    ```
 
-1. Run the `Set-TenantSettings` cmdlet with the settings object to prevent makers from sharing their apps with everyone in the tenant.
+1. Run the `Set-TenantSettings` cmdlet with the settings object to allow makers to share their apps with everyone in the tenant.
 
    ```powershell
      Set-TenantSettings $settings
    ```
+
+   To disable sharing with 'Everyone', follow the same steps but set $settings.powerPlatform.powerApps.disableShareWithEveryone = $true. 
 
 ## Establish a data loss prevention policy
 
