@@ -200,7 +200,7 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 ## Disable empty address record creation
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables.<br /> More information for developers:[Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables.<br /> More information for developers: [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
 
 ## Enable deletion of address records
 |Setting  |Description  |Default value  |
