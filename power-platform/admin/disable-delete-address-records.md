@@ -1,5 +1,5 @@
 ---
-title: "Delete or Disable Address records  | MicrosoftDocs"
+title: Delete or Disable Address records 
 description: Disable empty address records and Delete address records in Dataverse
 author: sericks007
 ms.component: pa-admin
@@ -10,7 +10,8 @@ ms.author: sericks
 search.audienceType: 
   - admin
 ---
-## Disable Empty Record Creation
+
+# Disable Empty Record Creation
 
 ### Overview
 
