@@ -11,6 +11,7 @@ ms.author: laswenka
 search.audienceType: 
   - admin
 contributors:
+- arjunmayur 
 - bibekTimalsina948
 - dannylevymsft
 ms.collection: bap-ai-copilot
