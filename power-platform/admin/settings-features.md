@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/15/2024
+ms.date: 05/17/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ Make sure you have the System Administrator or System Customizer security role o
 **Check your security role**
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+- Don't have the correct permissions? Contact your system administrator.
 
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
@@ -63,8 +63,8 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Power BI visualization embedding| More information: [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)| Off |
-|Bing Maps| If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don’t need to enter a key. | Off | 
-|Prevent social data in Dynamics | If you don’t want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization will not be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
+|Bing Maps| If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don't need to enter a key. | Off | 
+|Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization will not be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
 
 ## Communications
 | Setting | Description | Default value |
@@ -200,12 +200,12 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 ## Disable empty address record creation
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables. |    Off    |
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables. More information: [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
 
 ## Enable deletion of address records
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion.|    Off    |
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion. More information: [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records)|    Off    |
 
 ## Power Apps ideas for canvas apps
 | Setting | Description | Default value |
