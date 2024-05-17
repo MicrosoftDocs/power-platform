@@ -77,7 +77,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
             "shareWithColleaguesUserLimit": 10000
         },
         "powerApps": {
-            "disableShareWithEveryone": false,
+            "disableShareWithEveryone": true,
             "enableGuestsToMake": false
         },
         "modelExperimentation": {
@@ -106,9 +106,8 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator. Default value is false.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is false.|
+|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is true.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability in all Power Apps. Default value is false.|
 |powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default value is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps. Default value is false.|
 |powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting isn't currently used by the platform but might be used in the future.|
