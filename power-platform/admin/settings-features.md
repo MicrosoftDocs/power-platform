@@ -200,12 +200,12 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 ## Disable empty address record creation
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables.<br /> More information for developers: [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables. More information: [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
 
 ## Enable deletion of address records
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion.<br /> More information for developers: [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records)|    Off    |
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion. More information: [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records)|    Off    |
 
 ## Power Apps ideas for canvas apps
 | Setting | Description | Default value |
