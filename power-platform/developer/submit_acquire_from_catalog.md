@@ -50,6 +50,35 @@ Similarly, you will not be able to submit an app, flow, or other component direc
 
 ![Add to solution](power-platform/developer/media/add_to_solution.png)
 
+NOTE: Any maker with the Catalog Submitter role in a given environment will be able to publish. However, after a solution has been published, a maker will need to be a part of the publishing group to re-publish that same solution again. You will see this error if you do not have access, which you can request from your admin. Admins can grant access from  
+
+![Catalog submission access error](power-platform/developer/media/access_error_submission.png)
+
+After clicking “Publish to Catalog”, you will access a wizard: 
+
+1. **Step 1 (Add your solution)**
+   1. Select a catalog: if you have multiple catalogs set up, you can select which catalog you would like to publish this item to
+   2. Select **managed item** vs **template** for your submission: **managed items** cannot be edited by other makers, your environment shares a single copy, and that copy can be versioned with updates over time. Makers can then update their solutions with your updates. A **template** is a standalone copy that can be edited, makers can have as many copies as they want, and will not automatically update solutions in environments when new updates are published.
+   3. Select a primary component: a solution may have many components in it (ex: apps, flows, tables, connectors, prompts, and more). You may want makers to open a specific component for editing after they install it (such as opening Canvas Studio for your Canvas app). Set the primary component to whichever you think is the "focus" of the solution, other, set "Unspecified", and installers will just go the solution itself.
+   4. NOTE: if you are resubmitting an item, you will get an alert message notifying you about the resubmission. You will be prompted with a version field. The last digit of the version number will be automatically incremented for you. You can modify the version number if you like, but do not set the version number to a lower number from this interface. Updating the version number in the catalog submission will update the version number in the original solution as well. 
+2. **Step 2 (Catalog)**
+   1. Title: rename the item if needed before it gets submitted to catalog. The default will be the solution name. NOTE: you cannot edit title when submitted a managed item.
+   2. Description: provide details on this catalog item. Makers will read your description in the catalog gallery to find out more about it.
+   3. Business justification: by default, all catalog submissions must be approved by your admin before they are added to the catalog. This field provides a justification for your submission to your admin.
+   4. Works with: a flow that you're building may be intended to **work with** canvas apps and model apps, for example. Indicate here what your catalog item is intended to work with.
+   5. Select business categories: select up to five business categories that describe your catalog item. Makers will use these categories to search for catalog items that are of interest to them.
+   6. Publisher: select an existing publisher in this environment, or create a new publisher, to connect to this catalog submission. NOTE: a maker cannot resubmit a catalog item unless they are part of the publishing group that submitted the item the first time.
+   7. Author: this is defaulted to the current user, but can be changed if needed
+3. **Step 3 (Solution info)**
+   1. Add your solution icon: you can attach an icon to your solution (216x216px) to help identify it in the catalog gallery
+   2. Add your template images: you can attach some screenshots or other visuals that can help makers understand more details about this catalog item
+   3. Help link: add the URL for any help documentation as needed
+   4. Privacy policy link: add the URL for any privacy policy documentation as needed
+   5. Legal terms link: add the URL for any legal terms documentation as needed
+4. **Step 4 (Review + finish)**
+   1. This last step provides a summary of all the info you provided. If everything looks good, click "Submit" to publish to the catalog. As previously mentioned, if your catalog requires an approver before submission can complete, you will need to wait for approval first. Please contact your admin / approver if you need the process accelerated.
+  
+## Acquisition
 
 
 
