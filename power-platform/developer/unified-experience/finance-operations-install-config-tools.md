@@ -58,15 +58,17 @@ After installing the Power Platform Tools extension and connecting to the online
 > [!IMPORTANT]
 > You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
 >
+> The option **Auto setup for Dynamics 365...** is enabled by default. This ensures you do not have to manually extract system metadata or create the metadata configuration. The tool will do this for you. Do look into the Visual studio output pane for any user action needed.
+>
 > Consider the option **Do not display Power Platform Explorer...** to speed up connecting to your environment and **Download logs...** to get logs for deployment and DBSync operations.
 >
 > :::image type="content" source="../media/unified-experience/D365FinOpsToolsOptions.png" alt-text="Tools options":::
 >
 > You need at least 12 GB of free space on the local system drive to download the extension and metadata.
 
-Choose **OK** in the dialog to start the download. Visual studio notifies you once the download is completed. Visual Studio may not be responsive while downloading the assets, so please be patient.
+Choose **OK** in the dialog to start the download. Visual studio keeps you updated on the progress in the VS output pane.
 
-### Extract system metadata
+### Extract system metadata (Not required if auto setup is enabled)
 
 Downloaded assets can be found in the following location:  
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
@@ -85,12 +87,12 @@ Unblock any of the three files that needs unblocking.
 
 Unpack the PackagesLocalDirectory.zip file as PackagesLocalDirectory. We recommend using the [7zip](https://www.7-zip.org/download.html) utility to speed up extraction.
 
-### Install the finance and operations extension
+### Install the finance and operations extension (Required only if VS output pane indicates so)
 
 Using Windows File Explorer, from the folder specified below, open the Microsoft.Dynamics.Framework.Tools.Installer.vsix file to install the extension.
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
-### Configure the finance and operations extension
+### Configure the finance and operations extension (Not required if auto setup is enabled)
 
 To configure the extension, follow these instructions.
 
