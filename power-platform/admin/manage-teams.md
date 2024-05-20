@@ -148,6 +148,42 @@ You can add and delete members from a team.
 
 4. Select **Delete** twice to confirm. Note that this action can't be undone.
 
+### Convert Owner to Access team (Preview)
+
+You can convert Owner teams to become Access teams. 
+
+> [!NOTE]
+> Each business unit has its own Owner team. These owner teams are managed by the system and if you convert these teams to access team, they will no longer be able to own records. Once you converted these business unit owner teams, they cannot be changed back to owner team. You cannot convert the Microsoft Entra group teams or Access teams to another access team.
+> When you convert an Owner team
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+1. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+1. Select **Convert Owner team to Access Team** from the action bar. 
+1. Select OK to complete the action.
+
+### Reassign team's records (Preview)
+
+You can reassign the Owner team's records to another user or team.  
+
+> [!NOTE]
+> Only Owner and Microsoft Entra group teams can own records as they can be assigned with a security role.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. Select an environment, and then select **Settings** > **Users + permissions** > **Teams**.
+1. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+1. Select **Reassign records** from the action bar. 
+1. Select either **Assign to me** to reassign all the Team's records to yourself, or
+1. Select **Assign to another user or team**.
+1. Select **Ok** to save.
+
+
 ## Change the business unit for a team  
 See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).
 
