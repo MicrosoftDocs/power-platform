@@ -49,7 +49,7 @@ After installing the Power Platform Tools extension for Visual Studio, follow th
    > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
    > :::image type="content" source="../media/unified-experience/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
    > 
-   > :::image type="content" source="../media/unified-experience/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
+   > :::image type="content" source="../media/unified-experience/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio with Show Advanced selected.":::
    >
    > If your account requires multi factor authentication, uncheck all checkboxes on login screen.
    >
