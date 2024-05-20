@@ -24,18 +24,18 @@ This article describes how to install and configure required Visual Studio finan
 
 ## Install the Power Platform extension for Visual Studio
 
-Follow the instructions in this article to install the marketplace extension: [What is Power Platform Tools for Visual Studio](../devtools-vs.md). You don't need to install the plug-in profiler as directed in that article.
+Follow the instructions in this article to install the extension from the marketplace : [What is Power Platform Tools for Visual Studio](../devtools-vs.md). You don't need to install the plug-in profiler as directed in that article.
 
 ### Connect to your online environment
 
 After you have installed the Power Platform Tools extension for Visual Studio, follow these instructions to connect Visual Studio to your unified developer-focused environment.
 
 1. Launch Visual Studio if not already running.
-1. In the **Tools** menu, select **Connect to Dataverse** or **Download FinOps assets**. The former only downloads assets if not already downloaded once while the latter will download even if you had downloaded earlier.
+1. In the **Tools** menu, select **Connect to Dataverse** or **Download Dynamics 365 FinOps assets**. The former only downloads assets if not already downloaded earlier, while the latter will download even if you had downloaded earlier.
 1. Select the desired options in the dialog and select **Login**.  
-    Choose not to use the signed-in user if you need to use another account with a Visual Studio license. Enter the credentials as necessary to match your development user account.
+    Choose not to use the signed-in user if you need to use another account or a different online environment. Enter the credentials as necessary for your developer user account with access to the online environment.
 1. When presented with a dialog to select a solution, select an available solution and then choose **Done**.
-1. You will be presented with a list of Dataverse organizations (databases deployed). Find the sandbox environment created for online development and connect to it.
+1. You will be presented with a list of Dataverse environments. Find the sandbox environment created for online development and connect to it.
     > [!NOTE]
     > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
     > :::image type="content" source="../media/unified-experience/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
