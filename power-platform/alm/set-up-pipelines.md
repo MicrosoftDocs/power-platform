@@ -258,7 +258,7 @@ This Deployment Pipelines Default role isn't assigned to anyone by default in th
 
 Because custom hosts do not grant pipeline create-access by default like the platform host does, you can [set up a custom host](#install-the-pipelines-application-in-your-host-environment) and then [use force link](#using-force-link-to-associate-an-environment-with-a-new-host) (if necessary) to associate development environments with a custom host.
 
-1. If there is already a custom host available skip this step. If not, they will have to create one, following the steps in Set up pipelines in Power Platform - Power Platform | Microsoft Learn.
+1. If there is already a custom host available skip this step. If not, you will have to create one, following the steps to [create a pipeline using a custom pipelines host](#create-a-pipeline-using-a-custom-pipelines-host).
 1. Once there is a custom host available, as an admin, navigate to the Deployment Pipeline Configuration app for the custom host (located in the environment that you installed the Power Platform Pipelines package in).
 1. Then, go to **Environments** from the side navigation pane, and **create new environment record(s)** for the development environment(s) that you would like to prevent makers from creating new personal pipelines from. If the environment was already linked to another host (e.g. the platform host), the validation will fail. In this case, click **Force Link** in the command bar after validation failure to override the current link to the other pipelines host.
 
