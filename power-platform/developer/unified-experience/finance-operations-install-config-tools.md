@@ -41,6 +41,14 @@ After you have installed the Power Platform Tools extension for Visual Studio, f
     > :::image type="content" source="../media/unified-experience/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
     > :::image type="content" source="../media/unified-experience/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
 
+
+    > [!NOTE]
+    > If your account requires multi factor authentication just uncheck all checkboxes on login screen.
+    > If you are logging in to an online development environment in a tenant different that your your own, where your UPN is added as a guest, update Visual Studio> Tools> Options> Power Platform Tools to skip Discovery and unckeck all boxes on the login pane. You will be promted to provide the dataverse uri.
+    > :::image type="content" source="../media/unified-experience/UnoOption2.png" alt-text="Visual Studio> Tools> Options> Power Platform Tools to skip Discovery":::
+    > :::image type="content" source="../media/unified-experience/UnoLogin2.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
+    > :::image type="content" source="../media/unified-experience/UnoEnvironmentUri.png" alt-text="Dialog to obtain the Dataverse uri to the unified development environment.":::
+    
 ## Download and install the finance and operations extension and metadata
 
 After installing the Power Platform Tools extension and connecting to the online Dataverse sandbox environment, you'll be presented with a dialog to download the finance and operations Visual Studio extension and metadata.
