@@ -80,7 +80,10 @@ After installing the Power Platform Tools extension and connecting to the online
 
 Choose **OK** in the dialog to start the download. Visual Studio keeps you updated on the progress in the Visual Studio output pane.
 
-### Extract system metadata (Not required if auto setup is enabled)
+### Extract system metadata
+
+> [!NOTE]
+> This is not required when auto setup is enabled
 
 Downloaded assets can be found in the following location:  
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
@@ -102,7 +105,7 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 ### Install the finance and operations extension
 
 > [!NOTE]
-> This is required only if the Visual Studio output pane indicates it is.
+> This is only required when the Visual Studio output pane indicates it is.
 
 Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.Framework.Tools.Installer.vsix` file to install the extension.
 
@@ -111,7 +114,7 @@ Using Windows File Explorer, from the folder specified below, open the `Microsof
 ### Configure the finance and operations extension 
 
 > [!NOTE]
-> This is not required if auto setup is enabled.
+> This is not required when auto setup is enabled.
 
 To configure the extension, follow these instructions.
 
