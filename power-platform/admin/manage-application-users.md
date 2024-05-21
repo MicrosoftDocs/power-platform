@@ -16,7 +16,7 @@ search.audienceType:
 We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
 > [!NOTE]
-> Deleting an application user is now supported (Preview).
+> Deleting an application user is now supported in preview.
 
 > [!TIP]
 > Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
@@ -33,7 +33,7 @@ On the **Application users** page, you can view and manage application users. Th
 
 4. Select **Users + permissions**, and then select **Application users**.
 
-:::image type="content" source="media/manage-application-user.png" alt-text="Manage application users.":::
+    :::image type="content" source="media/manage-application-user.png" alt-text="Manage application users.":::
 
 ## Create an application user 
 
@@ -86,19 +86,19 @@ In an environment, you can only have one application user for each Microsoft Ent
 
    :::image type="content" source="media/application-user-details.png" alt-text="Select application user details.":::
 
-The **Details** page shows the following properties for the application user: 
-
-- Name 
-- Microsoft Entra application ID
-- State
-- Assigned security roles 
-- App type 
-- Business unit
-- Email address 
- 
-The business unit, email address, and security roles can be edited.
-
-:::image type="content" source="media/application-user-details-page.png" alt-text="The application user details page.":::
+    The **Details** page shows the following properties for the application user: 
+    
+    - Name 
+    - Microsoft Entra application ID
+    - State
+    - Assigned security roles 
+    - App type 
+    - Business unit
+    - Email address 
+     
+    The business unit, email address, and security roles can be edited.
+    
+    :::image type="content" source="media/application-user-details-page.png" alt-text="The application user details page.":::
 
 ## Sync the application user name with the Microsoft Entra application name  
 
@@ -119,11 +119,11 @@ You can select or deselect roles, and then select **Save**.  All selected roles 
 
 ## Activate or deactivate an application user 
 
-- On the **Application user** page, do one of the following:
+On the **Application user** page, do one of the following:
 
   - To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
 
-   :::image type="content" source="media/activate-application-user.png" alt-text="Activate an application user."::: 
+     :::image type="content" source="media/activate-application-user.png" alt-text="Activate an application user."::: 
 
   - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
  
@@ -138,7 +138,7 @@ To delete an inactive application user, go to the **Application user** page. Sel
 > [!NOTE]
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
 
-## View the details of platform application users (preview)
+## View the details of platform, application users (preview)
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -153,8 +153,5 @@ In each of your environments, there is a set of [system-provided application use
 1. Select the **Filter** option from the comman bar.
 1. Select the **Platform** option. A list of the platform, application users in the environment is displayed.
 1. Select an application user.
-1. Select **Details** from the command bar.
-
-   :::image type="content" source="media/application-user-details.png" alt-text="Select application user details.":::
-   
+1. Select **Details** from the command bar to view details of the platform, application user.
 1. Select **Close** to return to the application user list.
