@@ -36,7 +36,7 @@ A key element of the transition to enterprise scale is to enhance the shared cen
 
 ![Illustration of a central shared environment strategy with four makers using the default environment on the left  and an environment routing strategy with four makers routing to separate developer environments on the right ](media/environment-strategy/image2.png)
 
-Figure Illustration of a shared central environment (left) and an environment routing strategy (right).
+*Figure: Illustration of a shared central environment (left) and an environment routing strategy (right).*
 
 Newly created maker environments can be automatically added to a group that applies rules to ensure that the environments have consistent governance and security policies. Admins can handle exceptions by moving a maker's environment to a group with relaxed rules.
 
@@ -154,7 +154,7 @@ Using environment groups allows you to organize your environments in logical way
 
 ![Conceptualization of an environment strategy for a Contoso Tenant](media/environment-strategy/image3.png)
 
-Figure Conceptualization of an environment strategy for a Contoso tenant.
+*Figure: Conceptualization of an environment strategy for a Contoso tenant.*
 
 When you're planning the rules to configure, think through what you could apply at each level of the conceptual hierarchy. Although you can't configure the group hierarchy yet, you can use a combination of naming conventions and rule configuration to implement your conceptual design. For example, given the Contoso tenant conceptualization shown earlier, the following illustration represents the environment groups the organization could use to implement its design.
 
@@ -168,7 +168,7 @@ A key part of the environment strategy that we outline in this paper is to move 
 
 ![Diagram of a maker automatically redirected to a personal developer environment instead of the default environment when building apps ](media/environment-strategy/image5.png)
 
-Figure A maker is automatically redirected to a personal developer environment instead of the default environment when building apps.
+*Figure: A maker is automatically redirected to a personal developer environment instead of the default environment when building apps.*
 
 The developer environments that are created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](/power-platform/admin/managed-environment-licensing).
 
@@ -204,7 +204,7 @@ Dataverse solutions can be manually transported between environments. However, y
 
 ![Diagram illustrating a pipeline to automate promoting an asset that  39](media/environment-strategy/s stored in source control from development, through test, to production..png)
 
-Figure A pipeline automates promoting an asset that's stored in source control from development, through test, to production.
+*Figure: A pipeline automates promoting an asset that's stored in source control from development, through test, to production.*
 
 You can configure the number of environments and processes, like approvals, that need to be included in a pipeline.
 
@@ -238,7 +238,7 @@ To support these requirements, the Contoso admin and governance team came up wit
 
 ![Diagram of an environment topology with four environment groups  Development  Shared Development  UAT  and Production  with logos for the Power Platform apps each should support ](media/environment-strategy/image7.png)
 
-Figure Proposed environment topology for Contoso's Power Platform at scale project.
+*Figure: Proposed environment topology for Contoso's Power Platform at scale project.*
 
 Let's explore this environment topology diagram in detail.
 
@@ -260,7 +260,7 @@ Something that's missing in this proposed topology is pipelines to automate prom
 
 ![Diagram of the same environment topology with the addition of a pipeline host environment and pipelines between the host and development  UAT  and production environments ](media/environment-strategy/image8.png)
 
-Figure The same environment topology with pipelines connecting a pipeline host environment to development, test, and production environments.
+*Figure: The same environment topology with pipelines connecting a pipeline host environment to development, test, and production environments.*
 
 - In the revised environment topology diagram, we've added a pipeline host environment and two pipelines. One pipeline moves resources from development to test and then to production environments. The pipeline rule on the Development group will be modified to use this pipeline. The other pipeline moves resources from the shared dev environment to test and then to production. The pipeline rule on the Shared Development group will be modified to use this pipeline.
 
@@ -286,7 +286,7 @@ As makers become more advanced, you can allow them to request access to more cap
 
 ![Diagram illustrating the addition of makers with more skills to an environment for advanced makers  which has relaxed governance ](media/environment-strategy/image9.png)
 
-Figure Add more capable makers to an environment that has relaxed governance rules.
+*Figure: Add more capable makers to an environment that has relaxed governance rules.*
 
 ### Organize developer environments by region or business unit
 
@@ -296,7 +296,7 @@ Use routing to direct makers into a new developer environment that's created in 
 
 ![Diagram illustrating environment routing creating developer environments in the designated group  which are then moved to more structurally specific groups ](media/environment-strategy/image10.png)
 
-Figure After environment routing creates developer environments in the designated group, move them to more structurally specific groups.
+*Figure: After environment routing creates developer environments in the designated group, move them to more structurally specific groups.*
 
 Moving environments is a manual action today, but you'll be able to automate it when the Power Platform admin connector supports the group feature in a future update.
 
@@ -310,13 +310,13 @@ Dedicated testing and production environments aren't required. The app could be 
 
 ![Diagram illustrating two enterprise apps under development in dedicated environments  then tested and deployed in environments that are shared with other apps ](media/environment-strategy/image11.png)
 
-Figure Two enterprise apps under development in dedicated environments, then tested and deployed in environments that are shared with other apps.
+*Figure: Two enterprise apps under development in dedicated environments, then tested and deployed in environments that are shared with other apps.*
 
 In a more advanced variation, each maker has an individual developer environment. This has the benefit of providing greater isolation to the maker but can make combining individual work in an integration environment more complicated. And although working in isolation can be helpful for larger, sophisticated teams, it can add unnecessary overhead to smaller teams that can be more successful collaborating in a shared development environment.
 
 ![Diagram illustrating an enterprise app under development in individual environments  combined in a shared integration environment  and then tested and deployed in environments that are shared with other apps ](media/environment-strategy/image12.png)
 
-Figure Two makers working on the same app in individual developer environments must combine their work in a shared integration environment before it moves to testing and production.
+*Figure: Two makers working on the same app in individual developer environments must combine their work in a shared integration environment before it moves to testing and production.*
 
 This variation commonly incorporates a source control strategy, with each development environment represented as a branch in source control that gets merged when changes are ready to be promoted. It's important to account for how the application will be maintained after the initial release.
 
@@ -324,7 +324,7 @@ For example, version 1 of the app might be in production while the team moves on
 
 ![Diagram of two versions of an app in development  test  and production simultaneously ](media/environment-strategy/image13.png)
 
-Figure Version 1 must be patched, tested, and deployed while version 2 is being developed, tested, and deployed.
+*Figure: Version 1 must be patched, tested, and deployed while version 2 is being developed, tested, and deployed.*
 
 Environment groups offer multiple approaches to handling this enterprise app scenario. For example, this could be a single app group or could involve having separate groups for each development stage. In the best practices section, we explore how to evaluate the options.
 
@@ -374,7 +374,7 @@ As part of establishing your environment strategy, identify common levels of sec
 
 ![Three levels of environment security  normal  medium  high  and the security features that protect each one  such as DLP policies and Customer Lockbox ](media/environment-strategy/image14.png)
 
-Figure An example of three tiers of environment security and the security features that apply to environments in each tier.
+*Figure: An example of three tiers of environment security and the security features that apply to environments in each tier.*
 
 Incorporate the security levels you identify into your group strategy, and where possible, use rules to enable the security features in your environments. In this example, a rule limits sharing in all the environments that are designated as normal or medium security.
 
@@ -384,7 +384,7 @@ Data policies are another important part of an overall governance effort to cont
 
 ![Diagram illustrating the relationship between environment groups and similarly named data loss prevention policies that apply to them ](media/environment-strategy/image15.png)
 
-Figure In this example, environments in the Personal Dev group follow a DLP policy that blocks all non-Microsoft connectors.
+*Figure: In this example, environments in the Personal Dev group follow a DLP policy that blocks all non-Microsoft connectors.*
 
 ## Tailor an environment strategy for your organization
 
@@ -438,13 +438,13 @@ For example, the Environments Power BI dashboard offers an overview that helps y
 
 ![Screenshot of the environments overview dashboard in Power BI  showing numeric tiles  charts  and report filters ](media/environment-strategy/image16.png)
 
-Figure The Environments dashboard in Power BI.
+*Figure: The Environments dashboard in Power BI.*
 
 The kit includes starting points or inspiration, such as a process that makers can use to [request new environments](/power-platform/guidance/coe/env-mgmt) and changes to DLP policies for their environments.
 
 ![Flow diagram illustrating admin and maker roles and actions in a process for requesting a new environment or modifying a DLP policy applied to an environment ](media/environment-strategy/image17.png)
 
-Figure Flow diagram illustrating an environment management process in the CoE Starter Kit.
+*Figure: Flow diagram illustrating an environment management process in the CoE Starter Kit.*
 
 #### Platform programmability and extensibility
 
@@ -652,7 +652,7 @@ A good start is to [turn on the maker welcome content](/power-platform/admin/wel
 
 ![Screenshot of the welcome content for makers in Power Platform ](media/environment-strategy/image20.png)
 
-Figure Use the welcome content to help new makers be successful.
+*Figure: Use the welcome content to help new makers be successful.*
 
 Another effective approach to communicating with your users is establishing an internal Power Platform hub. The hub can be a place for people to collaborate on projects, share ideas, and discover new ways to apply technology to achieve more. The hub could be where you share more detailed information on your environment strategy that's relevant to your users. [Learn how to create an internal Power Platform hub](/power-platform/guidance/adoption/wiki-community).
 
