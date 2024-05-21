@@ -134,8 +134,6 @@ You can select or deselect roles, and then select **Save**.  All selected roles 
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 To delete an inactive application user, go to the **Application user** page. Select **Delete** on the command bar, and then select **Delete** in the confirmation dialog.
- 
-:: delete app user image :::
 
 > [!NOTE]
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
