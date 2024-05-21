@@ -138,7 +138,7 @@ To delete an inactive application user, go to the **Application user** page. Sel
 > [!NOTE]
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
 
-## View the details of platform, application users (preview)
+## View the details of system-provided application users (preview)
 
 > [!IMPORTANT]
 > - This is a preview feature.
