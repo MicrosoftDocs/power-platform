@@ -88,13 +88,12 @@ Choose **OK** in the dialog to start the download. Visual Studio keeps you updat
 Downloaded assets can be found in the following location:  
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
-The following three files are downloaded:
-
-:::image type="content" source="../media/unified-experience/D365FinOpsAsetsDownloaded.png" alt-text="download asset files":::
+The following files are downloaded:
 
 - `DYNAMICSXREFDB.bak` is a backup of the cross reference database.
 - `Microsoft.Dynamics.Framework.Tools.Installer.vsix` is the Finance and operations extension.
 - `PackagesLocalDirectory.zip` is the System metadata.
+- `TraceParser.msi`
 
 Unblock any of the three files that need unblocking.
 
