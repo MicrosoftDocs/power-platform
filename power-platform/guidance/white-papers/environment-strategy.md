@@ -15,10 +15,10 @@ Every organization's journey to adopt Microsoft Power Platform is unique. A tena
 
 This white paper shows you how to align your Power Platform tenant environment strategy with the product capabilities and vision. You learn how to best use the latest features of the platform to implement a strategy that can allow your adoption of Power Platform to reach enterprise scale.
 
->[!NOTE]
->A PDF version of this white paper is available for [download](https://aka.ms/powerpnp/environmentstrategy/download).
+> [!NOTE]
+> You can save or print this white paper by selecting **Print** from your browser, and then selecting **Save as PDF**.
 
-## Executive summary
+## Introduction
 
 Microsoft Power Platform empowers organizations to build low-code solutions for rapid innovation. These solutions can focus on productivity for individuals and small teams, or across the organization. They can also extend to business processes, including external customers and partners. Supporting these solutions are Power Platform environments where the low-code resources are built, tested, and used. As an organization increases its adoption of Power Platform, implementing a good tenant environment strategy is essential to make it manageable and secure as the number of environments grows.
 
