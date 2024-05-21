@@ -80,6 +80,17 @@ After clicking “Publish to Catalog”, you will access a wizard:
   
 ## Acquisition
 
+As makers browse the Discover page and find catalog items that are useful for them, they can acquire those artifacts and install a copy into their environment to start using and/or building with. Clicking on “get” on any template or managed item will open up a details popup which contains information like description, links, included components, business categories, expandable screenshots, and more.
+
+![Catalog item tile](power-platform/developer/media/catalog_item.png)
+
+If the details meet what the maker is looking for, they can click “get” on the details popup to start the acquisition wizard. 
+
+1. Step 1 (Connections): The first step checks the connections for the solution to make sure they are working for you in your environment. If there are any connection issues, you will see a red status notification, and can resolve by clicking the “...” next to the problematic connection to update it.
+2. Step 2 (Environment variables): The publishing maker may decide some environment variables are requiredneed to be specified before you can acquire the solution. Typically, these variables will be set to some default value. If unsure of what to fill out, check with the author orfof the artifact or in the details of the catalog listing (available on the first details step).
+3. Step 3 (Configuration): The next and final step is also determined by the publishing maker:, if they want you to provide any additional info for using the solution. This may include things like, “what days of the week do you run a report?”. If no additional info needed, this step will be blank, and you can proceed:
+4. Step 4 (Summary): 
+
 
 
 ### See also
