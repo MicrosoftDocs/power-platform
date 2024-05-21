@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/18/2022
+ms.date: 05/21/2024
 search.audienceType: 
   - admin
 ---
@@ -127,29 +127,27 @@ You can select or deselect roles, and then select **Save**.  All selected roles 
 
   - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
  
- ## Delete inactivate application user (Preview)
+## Delete inactivate application user (preview)
 
-- On the **Application user** page, do one of the following:
-
-  - To delete an inactive application user, select **Delete** on the menu bar, and then select **Delete** in the confirmation dialog.
+To delete an inactive application user, go to the **Application user** page. Select **Delete** on the command bar, and then select **Delete** in the confirmation dialog.
  
 :: delete app user image :::
 
 > [!NOTE]
-> Only application users with **inactive** state can be deleted. You will need to reassign all records owned by the inactive application users before it can be deleted. You can add the application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
+> Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
 
-## View the details of platform application users (Preview)
-In each of your environment, there is a set of [system provided application users](https://learn.microsoft.com/power-platform/admin/system-application-users#application-users). You can now view these application users from the Power Platform admin center.
+## View the details of platform application users (preview)
+In each of your environments, there is a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
 1. Select **Environments**, and then select an environment from the list.
 1. Select **Settings**.
-1. Select **Users + permissions**, and then select **Application users**.
-1. Select the **Filter** option from the action bar.
-1. Select the **Platform** option.
-   A list of all the platform application users in the environment will be displayed.
+1. Select **Users + permissions** > **Application users**.
+1. Select the **Filter** option from the comman bar.
+1. Select the **Platform** option. A list of the platform, application users in the environment is displayed.
 1. Select an application user.
-1. Select an application user, and then select **Details**.
+1. Select **Details** from the command bar.
 
    :::image type="content" source="media/application-user-details.png" alt-text="Select application user details.":::
+   
 1. Select **Close** to return to the application user list.
