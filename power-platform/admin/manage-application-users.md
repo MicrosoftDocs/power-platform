@@ -129,6 +129,10 @@ You can select or deselect roles, and then select **Save**.  All selected roles 
  
 ## Delete inactivate application user (preview)
 
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 To delete an inactive application user, go to the **Application user** page. Select **Delete** on the command bar, and then select **Delete** in the confirmation dialog.
  
 :: delete app user image :::
@@ -137,6 +141,11 @@ To delete an inactive application user, go to the **Application user** page. Sel
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
 
 ## View the details of platform application users (preview)
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 In each of your environments, there is a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
