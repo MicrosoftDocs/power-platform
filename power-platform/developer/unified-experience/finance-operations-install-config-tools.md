@@ -93,7 +93,7 @@ The following files are downloaded:
 - `DYNAMICSXREFDB.bak` is a backup of the cross reference database.
 - `Microsoft.Dynamics.Framework.Tools.Installer.vsix` is the Finance and operations extension.
 - `PackagesLocalDirectory.zip` is the System metadata.
-- `TraceParser.msi` [Learn more about Trace Parser](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/trace-parser).
+- `TraceParser.msi` [Learn more about Trace Parser](/dynamics365/fin-ops-core/dev-itpro/perf-test/trace-parser).
 
 Unblock any of the three files that need unblocking.
 
