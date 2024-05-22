@@ -65,7 +65,7 @@ When **Share with Everyone** is disabled, only a small group of administrators c
 
    :::image type="content" source="media/securedefaultenvimage2.png" alt-text="Screenshot of three flags in the $settings.powerPlatform.PowerApps object.":::
 
-1. Run the following PowerShell commands to get the settings object and set the variable to share with everyone to false.
+1. Run the following PowerShell commands to get the settings object and set the variable disableShareWithEveryone to $false.
 
    ```powershell
    $settings=Get-TenantSettings 
@@ -78,7 +78,7 @@ When **Share with Everyone** is disabled, only a small group of administrators c
      Set-TenantSettings $settings
    ```
 
-   To disable sharing with **Everyone**, follow the same steps but `set $settings.powerPlatform.powerApps.disableShareWithEveryone = $true`.
+   To disable sharing with **Everyone**, follow the same steps but set `$settings.powerPlatform.powerApps.disableShareWithEveryone = $true`.
 
 ## Establish a data loss prevention policy
 
