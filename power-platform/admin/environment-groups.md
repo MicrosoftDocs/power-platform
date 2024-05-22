@@ -43,7 +43,7 @@ Enabling _default environment routing_ might give you more environments to manag
 
 ## Create an environment group
 
-[Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. You can create a single environment group named **Personal Productivity**, then create new developer environments into the group.
+[Power Platform tenant administrators](use-service-admin-role-manage-tenant.md) can create as many environment groups as necessary to meet their organization's needs. You can create a single environment group named **Personal Productivity**, then create new managed developer environments into the group.
 
 1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environment groups** in the navigation pane.
@@ -58,11 +58,11 @@ Enabling _default environment routing_ might give you more environments to manag
 
 ## Configure the rules for your environment group
 
-After you create the environment group, Power Platform tenant administrators can immediately add environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities offered when upgrading an _individual_ environment to a [Managed Environment](managed-environment-overview.md).
+After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
 
 ### The sharing limits rule
 
-You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limits_ rule. Since the environment group is intended for managed personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
 1. In the **Personal Productivity** group, select the **Rules** tab.
 1. Select the **Sharing Limits** rule to open its configuration panel.
@@ -77,7 +77,7 @@ You can also configure the _sharing limits_ rule. Since the environment group is
 
 ## Route environments to your environment group
 
-With your environment group setup, it can now serve as the home for all new personal developer environments that are created by _default environment routing_. This default ensures that all newly created developer environments are automatically preconfigured to meet baseline requirements from the start.
+With your environment group setup, it can now serve as the home for all new personal developer environments that are created by _default environment routing_. This default ensures that all newly created developer environments are automatically preconfigured to be managed environments that meet baseline requirements from the start.
 
 ### Select an environment group
 
@@ -102,7 +102,7 @@ You can manually add environments to the **Personal Productivity** group if you 
 >
 > - An environment can only belong to one environment group.
 > - Only Managed Environments can be created into an environment group.
-> - Any environment type, for example production, developer, or sandbox, can be created into an environment group.
+> - Any environment type, for example production, developer, or sandbox, can be created into an environment group as long as they are a managed environment. 
 
 ## Manually create environments in the group
 
