@@ -1,10 +1,10 @@
 ---
-title: Recommendations for designing for simplicity and efficiency
-description: Learn how to minimize unnecessary complexity and overhead by keeping your workloads simple and efficient.
+title: Design for simplicity and efficiency recommendation for Power Platform workloads
+description: Learn how to design your Power Platform workload with business requirements in mind and minimize complexity by keeping your workloads simple and efficient.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -109,3 +109,10 @@ These Power Apps articles provide practical design advice:
 - [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
 - [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
 - [Planning a Power Apps project ](/power-apps/guidance/planning/planning-phase)
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)
