@@ -3,7 +3,7 @@ title: "View and manage on-premises data gateways | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/14/2024
+ms.date: 05/22/2024
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -13,8 +13,6 @@ search.audienceType:
 ---
 
 # On-premises data gateway management
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 
