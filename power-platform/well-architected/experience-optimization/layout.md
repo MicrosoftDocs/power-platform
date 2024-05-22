@@ -3,8 +3,8 @@ title: Recommendations for optimizing layout.
 description: Learn how to optimize app layout for different platforms and devices to enhance the user experience across various viewing contexts.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -186,6 +186,8 @@ Canvas apps require explicit configuration for each component to [implement resp
 [Fluent layout](https://fluent2.microsoft.design/layout)
 
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

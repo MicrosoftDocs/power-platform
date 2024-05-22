@@ -1,10 +1,10 @@
 ---
-title: Recommendations for enabling automation in a workload
-description: Learn how to design your workload to enable automation and simplify maintenance tasks, allowing you to update, patch, and upgrade more efficiently and reliably.
+title: Enable automation in a workload recommendation for Power Platform workloads
+description: Learn how to design and implement automation upfront to simplify maintenance tasks, apply governance, and address deployment concerns. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -55,7 +55,7 @@ Expose maintenance operations through the control plane that allow you to coordi
 
 ### Monitor and log
 
-Develop a monitoring strategy to capture metrics that drive the type of automation you require. Use structured logging and custom metrics to provide the information required by automation in a format that's easy to recognize with automation tools. The metrics that you capture should be paired with thresholds defined in the monitoring system that trigger alerts and automated actions. 
+Develop a monitoring strategy to capture metrics that drive the type of automation you require. Use structured logging and custom metrics to provide the information required by automation in a format that's easy to recognize with automation tools. The metrics that you capture should be paired with thresholds defined in the monitoring system that trigger alerts and automated actions.
 
 ### User lifecycle
 
@@ -80,3 +80,10 @@ When deciding between orchestration or policy tools, consider whether the config
 [Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) support design variability in the workload. For example, to store parameter keys and values, which then serve as input to other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
 [Conditional Access](/azure/active-directory/conditional-access/overview) is a feature of Microsoft Entra ID that lets you control how and when users can access applications and services. Follow the recommendations for [conditional access and multifactor authentication](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow) when automating processes with Power Automate.
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)
