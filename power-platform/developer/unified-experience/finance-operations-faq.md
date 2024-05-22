@@ -131,9 +131,19 @@ Use **Detach All** to end debugging in place of **Stop Debugging**.
 
 A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
 
+You can also download the logs from your Dataverse organization
+- Login to the Dataverse organization
+- Find Finance and Operation Package Manager App on the main page
+- Click on the App and then from left pane, click on Operation History
+- Open respective record by clicking on the Operation Name and download the operation logs (operationlogs.zip file)
+
 ### How can I find out what packages are applied to my environment?
 
-Go to the Dataverse environment and check the **OperationsHistory** and **Packages** tables.
+You can check the package applied to your FnO environment by following the steps below
+- Login to the Dataverse organization
+- Find Finance and Operation Package Manager App on the main page
+- Click on the App and then from left pane, click on Package to see packages applied to your FnO environment
+- Click on Operation History to see the history of operations performed on your FnO environment
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
