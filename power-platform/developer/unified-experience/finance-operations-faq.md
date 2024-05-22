@@ -137,7 +137,7 @@ You can also download the logs from your Dataverse organization:
 
 - Login to the Dataverse organization
 - Find **Finance and Operation Package Manager App** on the main page
-- Select the App and then from left pane, select on **Operation History**
+- Select the app and then from left pane, select **Operation History**
 - Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
 
 ### How can I find out what packages are applied to my environment?
