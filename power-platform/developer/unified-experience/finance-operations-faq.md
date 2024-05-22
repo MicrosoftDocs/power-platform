@@ -2,7 +2,7 @@
 title: "Frequently asked questions (preview)"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
-ms.date: 10/23/2023
+ms.date: 05/22/2024
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -32,7 +32,9 @@ When you get the following error, ensure that you have licenses for the template
 Error message:
 
 "You don't have the required Dynamics 365 licenses to create a database with `<app name>` Dynamics app."
+
 ### How can I provision or update my unified environment to a specific finance and operations version
+
 We currently don't have the capability to provision or update the environment to a specific runtime update or version. Support for this is planned, but until this support is enabled, we suggest using the environment copy feature to get your unified development environment on the same version as that of sandbox or production environments. [Copy a Lifecycle Services environment to a unified environments](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md)
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
@@ -131,9 +133,21 @@ Use **Detach All** to end debugging in place of **Stop Debugging**.
 
 A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
 
+You can also download the logs from your Dataverse organization:
+
+- Login to the Dataverse organization
+- Find **Finance and Operation Package Manager App** on the main page
+- Select the app and then from left pane, select **Operation History**
+- Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
+
 ### How can I find out what packages are applied to my environment?
 
-Go to the Dataverse environment and check the **OperationsHistory** and **Packages** tables.
+You can check the package applied to your Finance and Operations environment with the following steps:
+
+- Login to the Dataverse organization
+- Find **Finance and Operation Package Manager App** on the main page
+- Select the app and then select **Package** in the left pane to see packages applied to your Finance and Operations environment
+- Select **Operation History** to see the history of operations performed on your Finance and Operations environment
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
