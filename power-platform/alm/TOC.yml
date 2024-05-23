@@ -38,6 +38,20 @@
               href: organize-solutions.md
             - name: Use segmented solutions
               href: segmented-solutions-alm.md
+    - name: Source Control Integration
+      items:
+        - name: Overview
+          href: git-integration/overview.md
+        - name: Common Scenarios
+          href: git-integration/common-scenarios.md
+        - name: Dataverse Git integration setup
+          href: git-integration/connecting-to-git.md
+        - name: Committing and pushing your changes
+          href: git-integration/commit-and-push.md
+        - name: Code-first development overview
+          href: git-integration/code-first-development.md
+        - name: Frequently asked questions
+          href: git-integration/faqs.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
     - name: Implementing healthy project and solution ALM
