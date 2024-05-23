@@ -154,7 +154,7 @@ You can convert _owner_ teams to become _access_ teams.
 
 > [!NOTE]
 > Each business unit has its own owner team. These owner teams are managed by the system and if you convert these teams to access teams, they will no longer be able to own records. Once you convert these business unit owner teams to access teams, they can't be changed back to owner teams. You can't convert the Microsoft Entra group teams or access teams to another access team.
-> When you convert an Owner team
+> All records owned by the owner team must first be reassigned to another user or team before you can convert it into an access team. The security role assignments of the owner team are removed when it is converted into an access team.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 1. In the navigation pane, select **Environments**.
@@ -183,7 +183,7 @@ You can reassign the owner team's records to another user or team.
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
 1. Select **Reassign records** from the command bar. 
-1. Select either **Assign to me** to reassign all the Team's records to yourself, or
+1. Select either **Assign to me** to reassign all the Team's records to yourself, or to another owner team.
 1. Select **Assign to another user or team**.
 1. Select **OK** to save.
 
