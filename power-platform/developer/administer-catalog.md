@@ -1,10 +1,10 @@
 ---
 title: "Administer the catalog (preview)"
 description: "Learn how to administer the catalog for Power Platform after you have finished installing it. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
-author: samathur
+author: derekk
 ms.subservice: developer
-ms.author: samathur
-ms.date: 05/22/2023
+ms.author: derekk
+ms.date: 05/23/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -16,8 +16,6 @@ contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Before you can administer the catalog, you must install and configure it. More information: [Get started](catalog.md#get-started)
-
 Administering the catalog includes the following tasks:
 
 - [Setup users](#setup-users)
@@ -26,6 +24,25 @@ Administering the catalog includes the following tasks:
 - [Review catalog items](#review-catalog-items)
 - [Review errors in submission requests](#review-errors-in-submission-requests)
 - [Review errors in install requests](#review-errors-in-install-requests)
+
+## Setup the catalog
+
+Before you can administer the catalog, you must install and configure it. Most organizations will be fine with just one catalog in their tenant (all environments in a tenant can install catalog items from a single catalog). But some orgs may want to have different catalogs for geos, departments, etc. The choice is yours. 
+
+To set up a catalog, go to the [Power Platform Admin Center (PPAC)](https://learn.microsoft.com/en-us/power-platform/admin/admin-documentation) for your tenant, and look for the "Catalogs" page under "Resources":
+
+[Catalog PPAC admin](power-platform/developer/media/admin_catalog.png)
+
+Clicking "New catalog" in the top menu or in the page itself will bring up a setup wizard:
+
+1. Step 1 (Setup)
+   2. Name - enter a name for the catalog
+   3. Language - set the language for your users of the catalog
+   4. Description - add some details that will help others understand what this catalog is for
+   5. Region - what region this catalog is for, which will filter the available environments
+   6. Environment - which environment in your tenant you want the catalog to be installed for
+   7. Status - uncheck this box if you want the catalog inactive after setting up
+2. 
 
 ## Setup users
 
