@@ -1,10 +1,10 @@
 ---
-title: Recommendations for designing a reliable monitoring and alerting strategy
-description: Learn how to design a reliable monitoring and alerting strategy to ensure that your workload operates reliably and operations teams are aware of changes.
+title: Design a reliable monitoring and alerting strategy recommendation for Power Platform workloads
+description: Learn how to design a monitoring and alerting strategy that supports the reliability requirements of your Power Platform workload. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -127,3 +127,10 @@ The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) i
 ## See also
 
 [How do I check my online service health?](/power-platform/admin/check-online-service-health)
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)
