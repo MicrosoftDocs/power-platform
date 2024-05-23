@@ -46,6 +46,36 @@ This article will provide you with answers to frequently asked questions and tip
 
 1. After you've updated all run-only users, you can turn on the child flow.
 
+## Find a users Security Roles in an Environment
+
+To find the Security Roles of a user in an environment you can use the product UX as shown here
+
+1. Go to [https://admin.powerplatform.microsoft.com/environments](https://admin.powerplatform.microsoft.com/environments)
+2. Select the desired environment
+3. Settings
+    ![Find environment SRs 1](media/find-SR-1.png "Find environment SRs 1")
+4. From Users + Permissions, select Users
+    ![Find environment SRs 2](media/find-SR-2.png "Find environment SRs 2")
+5. Find your user and select their name to bring up their properties. There you will see their Security Roles
+    ![Find environment SRs 3](media/find-SR-3.png "Find environment SRs 3")
+
+## Import a Flow
+
+Sometimes we will ship a one off flow to use in order to patch an issue. The first thing you will need to do when we offer these is to import the flow. Here is how to import flows.
+
+1. Go to [https://make.powerautomate.com/](https://make.powerautomate.com/)
+1. Select your target environment. For us that will typically be our CoE Environment.
+1. Select My flows > Import > Import Package (Legacy)
+    ![Import flow 1](media/import-flow-1.png "Import flow 1")
+1. Select and upload your flow.
+    ![Import flow 2](media/import-flow-2.png "Import flow 2")
+1. Create any needed connections and Import
+    ![Import flow 3](media/import-flow-3.png "Import flow 3")
+1. When done click Open Flow to view and then back to see details and turn on.
+    ![Import flow 4](media/import-flow-4.png "Import flow 4")
+    ![Import flow 5](media/import-flow-5.png "Import flow 5")
+    ![Import flow 6](media/import-flow-6.png "Import flow 6")
+
 ## Setting up CoE for a subset of environments
 
 You may want to monitor and govern only certain environments with the CoE Starter Kit. For example, if you're setting the CoE Starter Kit up for individual business organizations running their own smaller CoE or if you want to include your Dynamics 365 environments from the processes in the CoE Starter Kit. The option below describes how to only enable the CoE Starter Kit processes for certain environments.
@@ -80,35 +110,45 @@ If your sync flows were turned off for longer than 7 days, you can only get the 
 If you want to fully update your entire inventory again, you can do that by changing the **Full inventory** environment variable:
 
 1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more: [Update environment variables](#update-environment-variables)).
-1. Run the **Admin | Sync Template v3 (Driver)** flow.
+1. Run the **Admin | Sync Template v4 (Driver)** flow.
+1. Wait till the flow finishes running.
 1. Set the **Full inventory** environment variable to **No**.
 
 ## Update inventory for a selected app or flow
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
+### Force inventory on Objects
 
-If you want to force the inventory for an app or flow, for example to make sure all the information is up-to-date, you can use the **Inventory Me** flag.
+To reduce API calls, the inventory flows do not update all objects with every sync flow run. The flows only update objects which have been modified since the object was last inventoried.
+
+If you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag. 
+
+Here is an example of how to set this using Cloud Flow objects.
 
 1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **Power Platform Admin View** app.
-1. Select **Apps** or **Flows**.
-1. Select the app or flow you want to inventory from the view.
+1. Select **Flows**.
+1. Select the flow for which you want to force inventory from the view.
 1. Select **Settings**.
 1. Change the **Inventory Me** flag to **Yes**.
 
 Once this flag has been set to **Yes**, the next inventory run updates the object, even if it hasn't recently been modified. The flag is then set back to **No**.
 
-## Customize emails
+### Force inventory on cloud flow action details
 
-All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table. To customize the emails, you don't need to modify the flows or apps that send the emails. Instead, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app.
+We gather details about the flows actions in a long running flow called **Admin | Sync Template v3 (Flow Action Details)**.
+
+To force this to run for your flow you can use the **Inventory My FlowActionDetails** flag.
 
 1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
-1. Open the **CoE Admin Command Center** app.
-1. Select **Customized Emails**.
-1. Select the email you want to customize, and then select **Edit**.
-1. By default, all emails are provided in English. You can also add localized versions of the email by selecting **Add language**.
+1. Open the **Power Platform Admin View** app.
+1. Select **Flows**.
+1. Select the flow for which you want to force flow action detail inventory from the view.
+1. Select **Settings**.
+1. Change the **Inventory My FlowActionDetails** flag to **Yes**.
 
 ## Update environment variables
+
+### Limitations for environment variables
 
 The following limitations apply when updating environment variables:
 
@@ -116,15 +156,36 @@ The following limitations apply when updating environment variables:
 - You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
 - You can't update Azure Key Vault secret environment variables using the CoE Admin Command Center. Instead, update them via the **Default Solution**.
 
-To update environment variables, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
+### Update CoE Starter kit specific environment variables
+
+To update environment variables used in the kit, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
 
 1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **CoE Admin Command Center** app.
-1. Select **Environment Variables**, and update the current value.
+1. Select **Environment Variables** screen
+1. Select an environment variable to update, click edit and update.
 
     ![Update environment variable values in the CoE Admin Command Center app.](media/tips-command1.png "Update environment variable values in the CoE Admin Command Center app")
 
-If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, update environment variables directly in the environment. This is also the only way to update Azure Key Vault secret environment variables.
+### Ensure flows that use it are not cached
+
+Sometime power automate will cache old values for environment variables. If you do not see expected behavior after changing an environment variable, it is recommended that you restart the impacted flows after you set an environment variable as a result.
+
+1. Go to [Power Automate](https://make.powerautomate.com).
+1. On the left pane, select **Solutions**.
+1. Select the **Default Solution**, and change the filter to show **Environment variables**.
+1. Select a variable that you want to update, and show its dependencies
+
+    ![Reset flows that use an environment variable - find dependencies.](media/env-var-reset-1.png "Reset flows that use an environment variable - find dependencies")
+
+1. Look at the Used by find the Object type Process.
+    ![Reset flows that use an environment variable - see processes to restart.](media/env-var-reset-2.png "Reset flows that use an environment variable - see processes to restart")
+
+1. Go turn all these flows off and back on.
+
+### Environment variables outside the kit
+
+If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, or you need to update environment variables outside the kit. You can do so directly in the environment. This is also the only way to update Azure Key Vault secret environment variables.
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
@@ -148,33 +209,17 @@ If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-
 1. Set the value by selecting an existing connection from the drop down or creating a new one.
 1. Select **Save** and confirm you want to save the changes.
 
-## Which flows in the CoE Starter Kit send emails or notifications to makers or end users?
+## Monitor and Customize emails
 
-There are a number of processes in the CoE Starter Kit that send emails or notifications to makers and end users. Each processes is off by default and has to be opted in by configuring it. Each process is described in the [What's in the kit](starter-kit-explained.md) section, the list below provides a summary of the different processes that communicate with your makers and end users.
+All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table. To customize the emails, you don't need to modify the flows or apps that send the emails. Instead, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app.
 
-Use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) to update the email subject and body.
+1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Open the **CoE Admin Command Center** app.
+1. Select **Customized Emails**.
+1. Select the email you want to customize, and then select **Edit**.
+1. By default, all emails are provided in English. You can also add localized versions of the email by selecting **Add language**.
 
-- [Welcome email](core-components.md#flows-2) sends a welcome email to a maker if they create an app, flow, bot etc for the first time.
-
-- [Capacity alerts](core-components.md#flows-2) send capacity alerts to the configured admin group if environments are over the approved capacity.
-
-- [Add-on alerts](core-components.md#flows-2) send add-on capacity alerts to the configured admin group if environments are over the approved capacity.
-
-- [Environment Request management](core-components.md#flows-1) sends emails to the admin about requested environments, and to the requestor about the outcome of the requested environment (approved/rejected).
-
-- [Compliance process](governance-components.md#compliance-processes) sends emails to app and bot makers if their resources are over specific thresholds (e.g. shared with more than x people, launched more than x times).
-
-- [Inactivity process](governance-components.md#inactivity-processes) sends approval tasks to makers if their flows or apps are inactive.
-
-- [Microsoft Teams governance](governance-components.md#microsoft-teams-governance) sends asks for business justifications as Teams adaptive cards to anyone who creates a new Dataverse for Teams environment
-
-- [Clean up of orphaned resources process](governance-components.md#cleanup-for-orphaned-resources) sends emails to managers if someone that previously reported to them left the org and left behind apps and flows that need new owners.
-
-- [Quarantine process](governance-components.md#app-quarantine-process) as part of the Compliance process you can quarantine apps and this also triggers notifications if you do that.
-
-- [Training in a day](nurture-components.md#training-in-a-day-components) sends emails to users that register for upcoming training events
-
-- [Pulse survey](nurture-components.md#pulse-survey-components) sends Teams adaptive cards to makers to get feedback from them.
+      ![Customize emails.](media/commandcenter-customize-email.png "Customize emails")
 
 ## Share an app from a production environment
 
@@ -202,28 +247,67 @@ Use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) 
 
       ![Get the web link for a canvas app.](media/tips-link1.png "Get the web link for a canvas app")
 
-## Timeouts in the Admin | Sync Template v3
+## Deal with backend throttling during inventory runs
 
-The Dataverse connector might experience some throttling limits if the tenant has many resources. If you see 429 errors in the flow run history occurring in later runs, you can try the following resolution steps:
+Some users will get throttled by the product backends (ex updating records in Dataverse) when doing their inventory, and experience 429 errors as a result.
+We have added an environment variable if you see this which you can use. This will add a delay at the top of each individual inventory action and prevent them from running at the same time. It will then make your inventory run take longer as it will avoid concurrency.
 
-### Configure the retry policy
+To use this update value of the DelayObjectInventory environment variable to Yes
 
-  1. Open **Admin \| Sync Template v3**, and then select **Edit**.
-  1. Expand the step **Get Environments and store them in the CoE Table**.
-  1. Expand the step **Apply to each Environment**
-  1. Go to the **Settings** pane for each call to Dataverse, and configure the timeout/retry settings. The default count is set to **10** and the default interval is set to **PT10S**. Increase these values incrementally.
+See [How to update environment variables](#update-environment-variables) for how to update environment variables.
 
-     ![Configure the retry policy.](media/coe72.PNG "Configure the retry policy")
+See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory.
 
-### Configure (reduce) concurrency in Foreach loops to reduce simultaneous calls
+## Cross Tenant Connection Identities
 
-  1. Open **Admin \| Sync Template v3**, and then select **Edit**.
-  1. Expand the step **Get Environments and store them in the CoE Table**.
-  1. Go to **Settings** for the **Apply to each Environment** step.
+In the Power Platform Admin View app you can see where we highlight cross tenant connection identities. How do we configure what is considered cross tenant?
+    ![Find cross tenant connections.](media/coe-cross-tenant-connectoin-reference.png "Find cross tenant connections")
 
-     ![Configure concurrency in Foreach.](media/coe73.PNG "Configure concurrency in Foreach")
+### How to configure what is a local connection identity
 
-  1. Use the slider to reduce the value of **Degree of Parallelism**. The default value is 50; reducing the parallelism here will increase the runtime of the flow, so we suggest gradually lowering the number.
+By default only the host domain of the identity running the inventory flows will be considered a local identity. To configure this you can use  the **Host Domains** environment variable.
+Enter any hosts you which to add to this environment variable as a comma separated string.
+    ![Configure cross tenant connections.](media/coe-cross-tenant-connectoin-reference2.png "Configure cross tenant connections")
+
+See [How to update environment variables](#update-environment-variables) for how to update environment variables.
+
+See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory.
+
+### How to update data to respect configured local tenants
+
+Note that changing the Host Domains environment variable will not go back and update the old data in the tables. Since we expect this to be a rare setting change we do not want to compare this regularly, to avoid additional API hits.
+So you will need to do this manually.
+
+There are many ways you can do this, including a custom flow, the Excel add in or via plug ins.
+The logic is always the same, and so you can chose which way you will do this.
+We have demonstrated how to do this via the Excel Add In as it is ideal given it is fast and does not require a big API hit.
+
+1. Browse to the **Connection Reference Identity** table and **Edit data in Excel**
+    ![Update host data step 1.](media/coe-cross-tenant-connectoin-reference3.png "Update host data step 1")
+
+1. Click Enable Editing, Accept and Continue if prompted and sign in as your CoE Admin identity
+    ![Update host data step 2.](media/coe-cross-tenant-connectoin-reference4.png "Update host data step 2")
+    ![Update host data step 3.](media/coe-cross-tenant-connectoin-reference5.png "Update host data step 3")
+
+1. Filter the **accountName** field by the domain you have added to the **Host Domains** environment variable
+    ![Update host data step 4.](media/coe-cross-tenant-connectoin-reference6.png "Update host data step 4")
+
+1. Set the **NoneOrCrossTenantIdentity** to false (No)
+    ![Update host data step 5.](media/coe-cross-tenant-connectoin-reference7.png "Update host data step 5")
+
+1. Remove the filters and publish.
+    ![Update host data step 6.](media/coe-cross-tenant-connectoin-reference8.png "Update host data step 6")
+
+## How to activate Business Process Flows?
+
+Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, for example the [Compliance processes](./governance-components#compliance-processes), you will need to activate them manually.
+
+1. Browse to the solution with the BPFs and click to view Processes
+1. Find BPFs that are turned off and click their name to open
+    ![Turn on BPF step 1.](media/coe-bpf-turnon1.png "Turn on BPF step 1")
+
+1. Click Activate to turn on the BPF
+    ![Turn on BPF step 2.](media/coe-bpf-turnon2.png "Turn on BPF step 2")
 
 ## Which license should I assign to the user that's running the CoE Starter Kit flows?
 

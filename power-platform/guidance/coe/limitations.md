@@ -30,7 +30,7 @@ Larger tenants might require a [Power Automate Per Flow](https://powerautomate.m
 
 ## Flows that have never been turned on
 
-The Admin | Sync Template v3 (Flows) flow will fail to collect flows that have never been turned on. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
+The Admin | Sync Template v4 (Flows) flow will fail to collect flows that have never been turned on. These are called unpublished flows. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
 
 ## Co-authoring and Connections
 
@@ -44,13 +44,15 @@ If you see this error, you should either log in with the identity that installed
 
 To do the later, browse to the default solution, filter to connection references, and edit each connection to use your connection instead.
 
-## Developer and Microsoft Teams environments from the Power Apps Community Plan
-
-Microsoft Power Platform protects developer and Microsoft Teams type SKUs from inquiry by non-authenticated users. This configuration means that the model-driven apps, bots, desktop flows, solutions, business process flows and AI builder models in developer SKUs will be skipped from our inventory work in the sync flow.
-
 ## Supported languages
 
 The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
+
+## Coe Owned by Service Principle
+
+Not all connectors yet support Service Principles. For example the Dataverse connector does not yet support them.
+
+As a result you cannot install and run the CoE Starter Kit using a Service Principle as an identity.
 
 ## Security groups and approvals
 
@@ -79,10 +81,6 @@ Monitoring Desktop flow runs is included, although limited. For more details on 
 ## Unpublished model-driven apps
 
 Due to a product limitation, model-driven apps that are not published are not surfaced in the inventory because the are not returned to us from the storage table.
-
-## Large desktop flows
-
-Due to a product limitation, large Desktop Flows may not show up in the inventory as the content field is too large for cloud flows to process.
 
 ## Desktop flow runs
 
@@ -143,8 +141,11 @@ SharePoint custom forms apps can be either in the Default environment or a [desi
 
 ### Deleted apps and flows
 
-There are two options in the CoE Starter Kit to handle deleted resources – either they are deleted from the inventory table or they are kept in the inventory table and a 'Deleted' field is set to yes (true). This setting is controlled via an Environment Variable called [Also Delete from CoE](setup-core-components.md#all-environment-variables).
+Finding if objects are deleted is a long running operation and so you can expect up to a week between when an object is deleted from the tenant and when the object is marked deleted in the inventory.
 
-If this environment variable is set to **No**, it will keep a record of deleted apps and flows and highlight them as deleted via a field. Depending on the filter you have on the data, you may then still see deleted apps and flows.
+Once an object is marked deleted it will stay marked that way for two weeks before being removed from inventory. That way if the object is restored the metadata will still be present.
+You can chose to have objects stay in the inventory marked deleted indefinately with the following environment variable:  [Also Delete from CoE](setup-core-components.md#all-environment-variables).
+
+If this environment variable is set to **No**, it will keep a record of deleted objects indefinately. Depending on the filter you have on the data, you may then still see deleted apps and flows.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

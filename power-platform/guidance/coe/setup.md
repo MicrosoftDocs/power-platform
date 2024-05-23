@@ -25,19 +25,19 @@ This article prepares you to install the CoE Starter Kit and provides guidance o
 
 The CoE Starter Kit requires access to your tenant's Power Platform environments. Therefore, the identity you set up for the CoE Starter Kit needs the following licenses and roles:
 
-- [Microsoft Power Platform service admin](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator), global tenant admin, or Dynamics 365 service admin.
+- [Microsoft Power Platform service admin](../../admin/use-service-admin-role-manage-tenant.md#power-platform-administrator) or global tenant admin.
+Note Dynamics 365 service admin is not sufficient as it will not gather all environment types (ex teams type) and will not allow privaledge escalation.
 - Power Apps Per User license (non-trial) and Microsoft 365 license.
 - Power Automate Per User license, or Per Flow licenses (non-trial).
 - Power BI Premium per user or per capacity (if using [Data Export](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory)
-- The identity must have access to an Office 365 mailbox that has the REST API enabled. It must also meet all requirements to use the [Office 365 Outlook](/connectors/office365/) connector.
+- The identity must have access to an Office 365 mailbox that meets all requirements to use the [Office 365 Outlook](/connectors/office365/) connector.
 - If you'd like to collect usage information, such as app launches and unique users per app, you must have access to an Azure app registration. The app registrations needs to have permissions to read data from the [Microsoft 365 audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log) to complete the setup. You only need this app registration if you are using [Cloud flows](#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory.
 - If you'd like to share the [Power BI report](power-bi.md) that's part of the CoE Starter Kit, this identity needs to have the Power BI Pro license.  
 
-These roles and licenses must be available to this user continuously; it's not sufficient for the admin access to be granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management). The CoE Starter Kit works by using admin connectors in cloud flows (such as [Power Apps for Admins](/connectors/powerappsforadmins/)) to check for new and updated Power Platform resources and provide admin and governance tooling based on Power Platform resources in your tenant (for example, identify highly shared or unused resources). These connectors require an account that has Power Platform Admin access to retrieve the inventory of all environments - a role with lesser privileges wouldn't see all resources in the inventory. The flows using these connectors run on a schedule and on event-based triggers. If you use an identity that has time-based access via PIM to run these flows, not all the inventory would be retrieved.
+These roles and licenses must be available to this user directly and permanently.
+  ![Power Platform admin center - environments overview.](media/ppadminrole.png "Power Platform admin center - environments overview")
 
 Configure multi-factor authentication for the account by following the recommended settings for [conditional access and multi-factor authentication in Power Automate](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
-
-<a name="how-will-you-communicate-with-your-admins-makers-and-end-users"></a>
 
 ## How will you communicate with your admins, makers, and users?
 
@@ -57,7 +57,7 @@ In particular, consider the following personas:
 We recommend using three [Microsoft 365 groups](/microsoft-365/admin/create-groups/compare-groups#microsoft-365-groups), one for each persona. This group type is an email-enabled security group and can be associated with a Microsoft team for collaboration between the people in the group.
 
 >[!IMPORTANT]
->As part of the [inventory of a tenants Power Platform resources](setup-core-components.md), makers are added to the group you define for the **Power Platform Maker persona**. You can share apps and other resources relevant to makers with this group. In order for makers to be added to the group, the admin or service account setting up the [inventory components](setup-core-components.md) needs to be an owner of these groups.
+>Group Ownership: As part of the [inventory of a tenants Power Platform resources](setup-core-components.md), makers are added to the group you define for the **Power Platform Maker persona**. You can share apps and other resources relevant to makers with this group. In order for makers to be added to the group, the admin or service account setting up the [inventory components](setup-core-components.md) needs to be an owner of these groups.
 
 Some processes in the CoE Starter Kit send [Power Automate Approvals](/power-automate/get-started-approvals) and [Adaptive Cards for Microsoft Teams](/power-automate/overview-adaptive-cards). These cards can't be assigned to a group. You therefore also need an individual named admin that these communications can go to. In addition to the above groups, you'll therefore also need:
 
@@ -73,13 +73,13 @@ The CoE Starter Kit offers two mechanisms to gather this data:
 
 - **Data Export (preview)**: You can export Power Platform inventory and usage data directly into Azure Data Lake Storage using the [Data Export](/power-platform/admin/self-service-analytics) feature in the Power Platform Admin Center. Because the data is provided by the admin center, this mechanism is high in performance. [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) has to be configured in advance from the Power Platform Admin Center to use this option.
     >[!IMPORTANT]
-    >The CoE Starter Kit using data provided by Data Export for inventory is currently in experimental preview. We recommend you don't depend on it just yet and first test it in a dedicated test environment. Trying out this feature will help us validate that the feature meets your needs and that we're not introducing unintended side effects.
-    
+    >Preview only: The CoE Starter Kit using data provided by Data Export for inventory is currently in experimental preview. We recommend you don't depend on it just yet and first test it in a dedicated test environment. Trying out this feature will help us validate that the feature meets your needs and that we're not introducing unintended side effects.
+
     Try out the feature by enabling the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant first. Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days. Next, [download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 
 - **Cloud flows**: Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. This method is suitable for small to medium sized tenants but can cause performance issues in tenants where Power Platform inventory exceeds 10,000 objects (combined number of environments, apps, flows).
 
-### How can I try out this feature?
+### How can I try out Data Export feature?
 
 First, enable the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant. Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
 
@@ -119,9 +119,8 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Approvals](/connectors/approvals/)
 - [Azure Resource Manager](/connectors/arm/)
 - HTTP
-- [HTTP with Microsoft Entra ID](/connectors/webcontents/)
+- [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
-- [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
 - [Microsoft Teams](/connectors/teams/)
 - [Office 365 Groups](/connectors/office365groups/)
 - [Office 365 Outlook](/connectors/office365/)
@@ -129,23 +128,19 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Apps for Admins](/connectors/powerappsforadmins/)
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
+- [Power Platform for Admins V2](connectors/powerplatformadminv2/)
 - [Power Automate Management](/connectors/flowmanagement/)
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
 - [Power Query Dataflows](/connectors/dataflows/)
 - [RSS](/connectors/rss/)
-- [SharePoint](/connectors/sharepointonline/)
 
 > [!NOTE]
-> The CoE Starter Kit collects information about who owns a resource, such as an app or a flow. If the resource is owned by an interactive user, the [Office 365 Users](/connectors/office365users/) connector is used to get those details. If the resource is owned by a service principal (application user), the [HTTP with Microsoft Entra ID](/connectors/webcontents/) connector is used to make a call to [Microsoft Graph](https://developer.microsoft.com/graph) to get the name of the application user to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
+> The CoE Starter Kit collects information about who owns a resource, such as an app or a flow. If the resource is owned by an interactive user, the [Office 365 Users](/connectors/office365users/) connector is used to get those details. If the resource is owned by a service principal (application user), the [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) connector is used to make a call to [Microsoft Graph](https://developer.microsoft.com/graph) to get the name of the application user to correctly mark ownership of resources and avoid resources being marked as orphaned (without an owner).
 
-- The HTTP and HTTP with Microsoft Entra connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph) for commercial tenants; if your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints). <br>
+- The HTTP and HTTP with Microsoft Entra (preauthorized)connectors connect to [https://graph.microsoft.com](https://developer.microsoft.com/graph) for commercial tenants; if your tenant is in GCC, GCC High or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 You can't set up [DLP endpoint filtering](../../admin/connector-endpoint-filtering.md) for these connectors, as dynamic endpoint evaluation isn't supported by DLP Policies.
 
-- If you're using the [audit log](setup-auditlog.md) solution, the custom connector used to connect to the Microsoft 365 audit log also must be allowed in your business group. Configure the [https://manage.office.com/](/office/office-365-management-api/office-365-management-apis-overview) endpoint in the business group of your tenant-level policy. Learn more: [Configure custom connector endpoints in tenant-level policies](../../admin/dlp-connector-classification.md#tenant-level-dlp-policies).
-
 - Check that no other DLP policies apply to this environment. Learn more: [Combined effect of multiple DLP policies](../../admin/dlp-combined-effect-multiple-policies.md)
-
-- If you're using the [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) components, the environment must have a DLP policy that allows [Dataverse (legacy)](/connectors/commondataservice/), [Power Apps for Makers](/connectors/powerappsforappmakers/), [HTTP with Microsoft Entra ID](/connectors/webcontents/), and the ALM Accelerator Custom DevOps connector to be used together. Those connectors must be in the business data&ndash;only bucket of the DLP policy for this environment.
 
 ## Download the solution
 
@@ -155,15 +150,16 @@ The content package contains various files that support different features of th
 
 | File Name | Description |
 | --- | --- |
-| admintaskanalysis_core_1_2_managed.zip | [Power Platform admin task planner components](setup-admin-tasks-component.md) |
-| CenterofExcellenceALMAccelerator_x.x.yyyymmdd.x_managed.zip  | [ALM Accelerator for Power Platform](almacceleratorpowerplatform-components.md) solution file. Required during [setup of the ALM Accelerator for Power Platform](setup-almacceleratorpowerplatform-cli.md) components. |
+| admintaskanalysis_core_x_xx_managed.zip | [Power Platform admin task planner components](setup-admin-tasks-component.md) |
+| BYODL_CoEDashboard_MMMYYYY.pbit  | [CoE Dashboard Power BI template file](power-bi.md). Required during [configuration of the Power BI dashboard](setup-powerbi.md) if using experimental Data Export feature.|
 | CenterofExcellenceAuditComponents_x.xx_managed.zip  | [Governance components](governance-components.md) solution file. Required during [setup of the Governance](before-setup-gov.md) components. Has a dependency on [Core components](core-components.md) being installed first. |
-| CenterofExcellenceAuditLogs_x.xx_managed.zip  |  Audit Log components solution file. Required during [setup of the Audit Log](setup-auditlog.md) components. Has a dependency on [Core components](core-components.md) being installed first.|
 | CenterofExcellenceCoreComponents_x.xx_managed.zip  | [Core components](core-components.md) solution file. Required during [setup of the Core](setup-core-components.md) components in a Production environment. |
 | CenterofExcellenceInnovationBacklog_x.xx_managed.zip  | [Innovation Backlog components](innovationbacklog-components.md) solution file. Required during [setup of the Innovation Backlog](setup-innovationbacklog.md) components. |
 | CenterofExcellenceNurtureComponents_x.xx_managed.zip  |  [Nurture components](nurture-components.md) solution file. Required during [setup of the Nurture](setup-nurture-components.md) components. Has a dependency on [Core components](core-components.md) being installed first. |
 | MakerAssessmentStarterData.xlsx | Provides a set of starter questions and answers for the [Maker assessment](nurture-components.md#maker-assessment-components) app. Required during [configuration of the Maker Assessment](setup-nurture-components.md#set-up-maker-assessment-components) app. |
+| microsoft-video-hub-starter-data.xlsx | Provides a set of starter videos for the [Video Hub](nurture-components.md#video-hub-components) app. Required during [import starter data](setup-nurture-components#import-starter-data) step. |
 | Power Platform Administration Planning.pbit  | [Power Platform admin task planner Power BI template file](power-bi.md). Required during [configuration of the Power Platform admin task planner components](setup-admin-tasks-component.md). |
+| PowerPlatformAdminAnalytics-DF-MMYYYY  | Dataflow file required during [configuration of the Power BI dashboard](setup-powerbi.md) if using experimental Data Export feature.|
 | PowerPlatformGovernance_CoEDashboard_MMMYYYY.pbit  | [CoE Governance and Compliance Dashboard Power BI template file](power-bi-compliance.md). Required during [configuration of the Power BI dashboard](setup-powerbi.md) |
 | Production_CoEDashboard_MMMYYYY.pbit  | [CoE Dashboard Power BI template file](power-bi.md). Required during [configuration of the Power BI dashboard](setup-powerbi.md) |
 | Pulse_CoEDashboard.pbit | [Pulse survey Power BI template file](nurture-components.md#pulse-survey-components). Required during [configuration of Pulse survey](setup-nurture-components.md#set-up-pulse-feedback-survey) components. |
