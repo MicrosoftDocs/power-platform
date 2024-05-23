@@ -11,7 +11,7 @@ contributors:
 - srpoduri
 - kavehkazms 
 ms.topic: conceptual
-ms.date: 03/21/2024
+ms.date: 05/23/2024
 search.audienceType: 
   - admin
 ---
@@ -45,7 +45,7 @@ Both service admin roles cannot do functions restricted to the Microsoft 365 glo
 Follow these steps to assign a service admin role.
 
 > [!NOTE]
-> When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is assigend to a user in Microsoft Entra ID, the user will be assigned to the System administrator role in environments, as well. When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is removed in Microsoft Entra ID, user synchronization doesn't remove the System administrator role. So, even though this user is no longer a Dynamics 365 administrator, Power Platform administrator, or Global administrator in Microsoft Entra ID, the user still remains a System administrator in the tenant and will be able to see all environments. We recommend manually removing the System administrator role in all environments as soon as the role is removed from Microsoft Entra ID.
+> When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is assigend to a user in Microsoft Entra ID, the user is no longer automatically assigned to the system administrator role in environments. For more information on how to gain access to the system dministrator role and remove such access, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md).
 >
 > To opt-out of automatic license-based user roles, see [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md).
 
@@ -62,7 +62,7 @@ Follow these steps to assign a service admin role.
 6. Select **Save changes**.
 
 > [!NOTE]
-> If you are using the [Microsoft Entra Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, the service administrator permission is NOT removed from the environment when the time-based role activation expires.  
+> If you are using the [Microsoft Entra Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure#what-does-it-do) time-based role activation to manage your service admin roles, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md).  
 > 
 > Service Admin roles must be assigned directly to users, as inheriting from security groups is not fully supported.
 
@@ -108,7 +108,7 @@ The following matrix shows what management is possible with the various service 
 |Add security roles|Yes|No|No|No|  
 |Add licenses|Yes|No|No|No|  
 
-<sup>1</sup>Equivalent permission level to a System Administrator. Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
+<sup>1</sup>Equivalent permission level to a System Administrator after [self-elevation](manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role). Has full permission to customize or administer the environment, including creating, modifying, and assigning security roles. Can view all data in the environment - if the user has a suitable license.
 
 <sup>2</sup>If no security group is assigned to the environment, or if a security group is assigned and the user with this role is added to it.
 

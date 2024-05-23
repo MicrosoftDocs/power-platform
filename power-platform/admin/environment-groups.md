@@ -1,9 +1,9 @@
 ---
-title: Environment groups (preview)
+title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 05/14/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -13,9 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Environment groups (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Environment groups
 
 The task of managing Power Platform on a large scale across numerous environments ranging from hundreds to tens of thousands poses a significant challenge for both startup and enterprise IT teams.
 
@@ -30,18 +28,18 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 - [Usage insights](managed-environment-usage-insights.md)
 - [Extended backup retention](backup-restore-environments.md)
 
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - View the [Supplemental terms of use for Microsoft Power Platform and Dynamics 365 preview for online services](https://dynamics.microsoft.com/legaldocs/supp-dynamics365-preview/).
-
 ## Strategies for using environment groups
 
 There are many ways to manage pockets of environments within your tenant using environment groups. For example, global organizations can create an environment group for all environments in each geographic region to ensure compliance with legal and regulatory requirements. You can also organize environment groups by department or other criteria.
 
+:::image type="content" source="media/environment-groups-strategy.png" alt-text="Diagram depicting one strategy for using environment groups and aligning it to your existing orgnizational structure.":::
+
 This article covers how to augment your _default environment strategy_ by combining _environment groups_ with [_default environment routing_](default-environment-routing.md). Default environment routing gives makers their own personal developer environment. This environment is a secure space to build with Microsoft Dataverse and is similar to [OneDrive](https://www.microsoft.com/microsoft-365/onedrive/online-cloud-storage) for personal productivity.
 
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
+
+## Known limitations
+- When creating an environment in the Power Platform admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. This is a known issue that we plan to fix soon. In the meantime, the alternative is to create the environment via API or PowerShell.
 
 ## Create an environment group
 
@@ -54,6 +52,9 @@ Enabling _default environment routing_ might give you more environments to manag
    1. Add a name for your group in the **Name** field such as **Personal Productivity**.
    1. Add a brief description of the group in the **Description** field.
    1. Select **Create**.
+
+> [!NOTE]
+> If you prefer to operate outside of the Power Platform admin center, the [Power Platform for Admins V2 (Preview) connector](/connectors/powerplatformadminv2/) offers an alternative solution. It allows the creation and deletion of environment groups and the ability to add or remove environments from these environment groups, facilitating opportunities for automation.
 
 ## Configure the rules for your environment group
 
@@ -122,8 +123,7 @@ You can remove an environment from a group if it needs unique governance or if y
 3. Select **Remove from group** in the command bar.
 
 > [!NOTE]
->
-> When you remove an environment from the group, it retains its configuration. For example, sharing canvas apps is still limited to one user. However, a removed environment is now unlocked and can be managed individually. The environment's **Edit Managed Environments** panel gets re-enabled.
+> When you remove an environment from the group, it retains its configuration. For example, sharing canvas apps is still limited to one user. However, a removed environment is now unlocked and can be managed individually. The environment's **Edit Managed Environments** panel can be used.
 
 ## Delete an environment group
 
@@ -135,6 +135,8 @@ As you experiment with environment groups, you might have leftover groups that y
 
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
+
+
 
 ## See also
 
