@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/14/2024
+ms.date: 05/23/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -62,7 +62,7 @@ After you create the environment group, Power Platform tenant administrators can
 
 ### The sharing limits rule
 
-You can also configure the _sharing limits_ rule. Since the environment group is intended for managed personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
 1. In the **Personal Productivity** group, select the **Rules** tab.
 1. Select the **Sharing Limits** rule to open its configuration panel.
