@@ -13,7 +13,7 @@ search.audienceType:
 ---
 # Limitations
 
-There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies want a restrictive set of rules on their organization in hopes of mitigating the unknown, while others want to let users personally explore without limitations. That's why the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. If your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
+There is no "one size fits all" solution for implementing a Center of Excellence (CoE). Each company has its own preferences and objectives, with some opting for stringent rules to mitigate risks, while others prioritize user exploration with minimal constraints. Therefore, the CoE Starter Kit does not provide a predefined set of design patterns applicable to all scenarios. If your organization requires a more restrictive approach, it must implement additional restrictions alongside utilizing the tools offered by the starter kit.
 
 The following sections describe limitations for some components.
 
@@ -28,9 +28,9 @@ Larger tenants might require a [Power Automate Per Flow](https://powerautomate.m
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
 
-## Flows that have never been activated
+## Flows that were never activated
 
-The Admin | Sync Template v4 (Flows) flow fails to collect flows that have never been activated. These are referred to as unpublished flows. For instance, if you import a solution with flows that are turned off, they will not be collected for inventory as they are not returned by the connector.
+The Admin | Sync Template v4 (Flows) flow fails to collect flows that were never activated. These are referred to as unpublished flows. For example, if you import a solution with flows that are turned off, they will not be collected for inventory because they are not returned by the connector.
 
 ## Co-authoring and Connections
 

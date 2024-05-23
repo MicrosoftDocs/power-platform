@@ -25,10 +25,10 @@ This article provides you with answers to frequently asked questions and tips on
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then select **Browse**.
 1. Select the solution from the CoE Starter Kit download.
-1. To activate your solution, establish connections. If you create a new connection, ensure to select **Refresh**. Your import progress will remain intact.
+1. To activate your solution, establish connections. If you create a new connection, ensure to select **Refresh**. Your import progress remains intact.
 
      ![To activate your solution, establish connections.](media/msi-import.png "To activate your solution, establish connections.")
-1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
+1. Update environment variable values. These environment variables store application and flow configuration data specific to your organization or environment. By setting the value once per environment, it will be utilized across all necessary flows and applications within that environment.
     ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
 1. Select **Import**.
 
@@ -44,7 +44,7 @@ This article provides you with answers to frequently asked questions and tips on
 
     ![Configure run-only users.](media/tips-flow1.png "Configure run only users")
 
-1. After you've updated all run-only users, you can turn on the child flow.
+1. Once you have updated all run-only users, you can enable the child flow.
 
 ## Find a users Security Roles in an Environment
 
@@ -56,7 +56,7 @@ To find the Security Roles of a user in an environment, you can use the product 
     ![Find environment SRs 1](media/find-SR-1.png "Find environment SRs 1")
 4. From Users + Permissions, select Users
     ![Find environment SRs 2](media/find-SR-2.png "Find environment SRs 2")
-5. Find your user and select their name to bring up their properties. There you see their Security Roles
+5. Locate the user and select their name to view their properties. There, you will see their Security Roles.
     ![Find environment SRs 3](media/find-SR-3.png "Find environment SRs 3")
 
 ## Import a Flow
@@ -92,11 +92,11 @@ All environments in the tenant are added as excluded from inventory
 1. Add environments you want to monitor and manage to the inventory by selecting **No** for the **Excuse from inventory** configuration.
       ![Opt-in desired environments](media/tips-Opt-In-Envt2.png "Opt-in desired environments")
 
-1. Wait for next run of inventory to complete. It will now automatically pick up and monitor inventory for the selected environments.
+1. Wait for the next inventory run to complete. It will automatically pick up and monitor inventory for the selected environments.
 
 ## Running a full inventory
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects which have been modified since the object was last inventoried.
+To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects, which have been modified since the object was last inventoried.
 
 The inventory flows also don't check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
 
@@ -118,7 +118,7 @@ If you want to fully update your entire inventory again, you can do that by chan
 
 ### Force inventory on Objects
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow run. The flows only update objects which have been modified since the object was last inventoried.
+To reduce API calls, the inventory flows do not update all objects with each sync run. Instead, they only update objects that have been modified since they were last inventoried.
 
 If you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag.
 
@@ -153,7 +153,7 @@ To force this to run for your flow you can use the **Inventory My FlowActionDeta
 The following limitations apply when updating environment variables:
 
 - You can't update the values for environment variables from within the imported solution.
-- You need to always add or update a current value, not the default value, because the default value will be overwritten when you install an upgrade.
+- Always add or update the current value, not the default value, because the default value will be overwritten when you install an upgrade.
 - You can't update Azure Key Vault secret environment variables using the CoE Admin Command Center. Instead, update them via the **Default Solution**.
 
 ### Update CoE Starter kit specific environment variables
@@ -169,7 +169,7 @@ To update environment variables used in the kit, you can use the [CoE Admin Comm
 
 ### Ensure flows that use it are not cached
 
-Sometime power automate will cache old values for environment variables. If you do not see expected behavior after changing an environment variable, it is recommended that you restart the impacted flows after you set an environment variable as a result.
+Sometimes Power Automate will cache old values for environment variables. If you do not see the expected behavior after changing an environment variable, it is recommended to restart the impacted flows after setting the environment variable.
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
@@ -249,8 +249,7 @@ All emails that are sent as part of the CoE Starter Kit are stored in the **Cust
 
 ## Deal with backend throttling during inventory runs
 
-Some users will get throttled by the product backends (ex updating records in Dataverse) when doing their inventory, and experience 429 errors as a result.
-We have added an environment variable if you see this which you can use. This will add a delay at the top of each individual inventory action and prevent them from running at the same time. It will then make your inventory run take longer as it will avoid concurrency.
+Some users may encounter throttling by the product backends (such as updating records in Dataverse) during their inventory process, resulting in 429 errors. To address this issue, we have introduced an environment variable that users can utilize. This variable adds a delay at the beginning of each individual inventory action, preventing them from running concurrently. While this approach mitigates concurrency issues, it may prolong the inventory process.
 
 To use this update value of the DelayObjectInventory environment variable to Yes
 
@@ -260,12 +259,12 @@ See [How to update environment variables](#update-environment-variables) for how
 
 ## Cross Tenant Connection Identities
 
-In the Power Platform Admin View app you can see where we highlight cross tenant connection identities. How do we configure what is considered cross tenant?
+In the Power Platform Admin View app, you can see where we highlight cross tenant connection identities. How do we configure what is considered cross tenant?
     ![Find cross tenant connections.](media/coe-cross-tenant-connectoin-reference.png "Find cross tenant connections")
 
 ### How to configure what is a local connection identity
 
-By default only the host domain of the identity running the inventory flows will be considered a local identity. To configure this you can use  the **Host Domains** environment variable.
+By default, only the host domain of the identity running the inventory flows will be considered a local identity. To configure this you can use  the **Host Domains** environment variable.
 Enter any hosts you which to add to this environment variable as a comma separated string.
     ![Configure cross tenant connections.](media/coe-cross-tenant-connectoin-reference2.png "Configure cross tenant connections")
 
@@ -275,12 +274,11 @@ See [How to update environment variables](#update-environment-variables) for how
 
 ### How to update data to respect configured local tenants
 
-Note that changing the Host Domains environment variable will not go back and update the old data in the tables. Since we expect this to be a rare setting change we do not want to compare this regularly, to avoid additional API hits.
-So you will need to do this manually.
+Note that changing the Host Domains environment variable will not retroactively update the old data in the tables. As we anticipate this setting change to be infrequent, we do not regularly compare it to avoid additional API hits. Therefore, you will need to update this manually.
 
-There are many ways you can do this, including a custom flow, the Excel add in or via plug ins.
-The logic is always the same, and so you can chose which way you will do this.
-We have demonstrated how to do this via the Excel Add In as it is ideal given it is fast and does not require a big API hit.
+There are multiple methods to accomplish this, including custom flows, the Excel add-in, or through plugins.
+The underlying logic remains consistent, allowing you to choose the method that best suits your needs.
+We have demonstrated how to achieve this using the Excel Add-In, which is ideal due to its speed and minimal API impact.
 
 1. Browse to the **Connection Reference Identity** table and **Edit data in Excel**
     ![Update host data step 1.](media/coe-cross-tenant-connectoin-reference3.png "Update host data step 1")
@@ -301,7 +299,7 @@ We have demonstrated how to do this via the Excel Add In as it is ideal given it
 ## How to activate Business Process Flows?
 
 <!-- Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, for example the [Compliance processes](./governance-components#compliance-processes), you will need to activate them manually. -->
-Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, you will need to activate them manually.
+Occasionally, users may encounter disabled Business Process Flows (BPFs) within the kit due to installation issues. In such cases, if you wish to utilize features that rely on these BPFs, you will need to activate them manually.
 
 1. Browse to the solution with the BPFs and click to view Processes
 1. Find BPFs that are turned off and click their name to open
@@ -312,11 +310,11 @@ Occasionally people will see the BPFs used in the kit as disabled due to some is
 
 ## Which license should I assign to the user that's running the CoE Starter Kit flows?
 
-The pre-requisite for installing the CoE Starter Kit is that the user installing it has a Power Automate Per User license, or for flows to be covered with a Per Flow license - often a combination of these licenses is required to successfully run the CoE Starter Kit. The combination depends on factors like how many resources (apps, flows, environments) you have in your tenant, how many makers you have, and how often new resources are created and modified. Different Power Automate license types will have different API Limits and enforcements - if your license type is not sufficient, the flow may get throttled or run for a long time. Use the following guide to identify which license to pick.
+The prerequisite for installing the CoE Starter Kit is that the user installing it must have a Power Automate Per User license, or the flows must be covered with a Per Flow license. Often, a combination of these licenses is required to run the CoE Starter Kit successfully. The specific combination depends on factors such as the number of resources (apps, flows, environments) in your tenant, the number of makers you have, and how frequently new resources are created and modified. Different Power Automate license types have different API limits and enforcements. If your license type is not sufficient, the flow may be throttled or run for an extended period. Please refer to the following guide to determine which license to select.
 
   1. Understand the [Power Automate request limits](/power-platform/admin/api-request-limits-allocations).
   1. Start by assigning a Power Automate Per user license and turn on all the required flows. Monitor the flows with **CLEANUP**, **Sync Template (Flows)** and **Sync Template (Apps)** in the name - these often consume a high number of API requests. You can use [**action analytics**](https://powerautomate.microsoft.com/blog/introduction-action-usage-analytics-in-power-automate/) to monitor the API requests of these flows.
   1. If the flow runs too many actions, [change the flow owner](/power-automate/change-cloud-flow-owner) to a different account with a Power Automate Per User license. This will load balance the API requests.
-  1. If the flow continues to run too many actions, assign a [Per Flow](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to this flow. This will reserve capacity and API requests for the flow.
+  1. If the flow continues to execute too many actions, consider assigning a [Per Flow](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to it. This action will allocate capacity and API requests specifically for the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
