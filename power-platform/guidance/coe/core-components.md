@@ -250,7 +250,7 @@ Use this app to:
 ![CoE Admin Command Center canvas app](media\commandcenter1.png "CoE Admin Command Center canvas app")
 
 When you first launch the app, you may have to establish a connection for [HTTP with Microsoft Entra ID (Preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
- ![Http wwith Entra ID Preauthorized connection.](media/httpazuread.png "Http wwith Entra ID Preauthorized connection.")
+ ![Http with Entra ID Preauthorized connection.](media/httpazuread.png "Http with Entra ID Preauthorized connection.")
 
 #### DLP Impact Analysis
 
@@ -269,7 +269,7 @@ More information: [Data Loss Prevention policies](../../admin/wp-data-loss-preve
 ![DLP Editor.](media/dlp_new1.png "DLP Editor")
 
 > [!NOTE]
-> This app cannot detect or work with endpoint filtering in DLP. Plesae see [Connector Enpoint Filtering](../../admin/connector-endpoint-filtering.md).
+> This app cannot detect or work with endpoint filtering in DLP. Please see [Connector Endpoint Filtering](../../admin/connector-endpoint-filtering.md).
 
 > [!NOTE]
 > This app cannot check for DLP impact in other object types. However you can explore this other offering for assistance with determining DLP impact of Desktop Flows [RPA CLI](https://github.com/rpapostolis/rpa-cli).
@@ -332,7 +332,7 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and DLP request process works.
 
-### Tables
+### Environment Request Tables
 
 - **Environment Creation Request** represents a request submitted by non-admins to create a new Environment. This has a many-to-many relationship with the Maker and PowerApps Connector tables.
 
@@ -342,7 +342,7 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 
 - **DLP Policy Change Request** represents a request to change the definition of an existing DLP policy in the tenant.
 
-### Flows
+### Environment Request Flows
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
@@ -356,7 +356,7 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 | Env Request \| Notify admin when a new request is submitted | Automated | when a new Environment Creation Request record’s status is updated by a user to Pending state | Sends an email to the admin alias with instructions on how to review the request. |
 | Env Request \| Notify requestor when rejected | Automated | when an Environment Creation Request’s status is updated to Rejected state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
 
-### Apps
+### Environment Request Apps
 
 #### CoE Admin Environment Request
 
@@ -392,11 +392,11 @@ Use this app to:
 
 ## Other core components
 
-### Tables
+### Other Tables
 
 - **App Catalog Feedback** represents feedback gathered for an app.
 
-### Flows
+### Other Flows
 
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
@@ -405,7 +405,7 @@ Use this app to:
 | Admin \| Welcome Email v3 | Automated | when any sync flow adds a new maker to the Maker table | This flow sends an email to a user who created an app, flow, custom connector, or environment. This flow gets triggered when a new record is created in the maker table. You can customize the email sent out by the flow. |
 | App Catalog > Request Access | Instant | from App Catalog | this flow sends an access request approval to the maker. |
 
-### Apps
+### Other Apps
 
 #### App Catalog
 

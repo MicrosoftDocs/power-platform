@@ -155,7 +155,7 @@ Once you meet these requirements, embed the apps.
 
 1. Close out the sharing notification.
 
-    ![Select Reset to default to format the visual](media/coebireset2.png "Select Reset to default to format the visual")
+    ![Close out the sharing notification](media/coebireset2.png "Close out the sharing notification")
 
 1. Select **Choose app**.
 

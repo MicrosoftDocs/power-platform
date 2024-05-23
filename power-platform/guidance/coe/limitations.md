@@ -13,7 +13,7 @@ search.audienceType:
 ---
 # Limitations
 
-There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a restrictive set of rules on their organization in hopes of mitigating the unknown, while others will want to let users personally explore without limitations. That's why the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. If your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
+There is no "one size fits all" solution for a Center of Excellence (CoE). Some companies want a restrictive set of rules on their organization in hopes of mitigating the unknown, while others want to let users personally explore without limitations. That's why the CoE Starter Kit doesn't come equipped with a set of design patterns for everyone. If your organization wants a more restrictive implementation, it must implement those restrictions in addition to using the tools from the starter kit.
 
 The following sections describe limitations for some components.
 
@@ -28,9 +28,9 @@ Larger tenants might require a [Power Automate Per Flow](https://powerautomate.m
 >[!NOTE]
 >The first run of the sync flows will perform a full inventory and will run long as it will do an update for every flow/app/etc in the tenant. Subsequent runs  will only update apps/flows/etc that have changed since the last run and so these will not go over Power Platform request entitlements for most tenants.
 
-## Flows that have never been turned on
+## Flows that have never been activated
 
-The Admin | Sync Template v4 (Flows) flow will fail to collect flows that have never been turned on. These are called unpublished flows. For example, if you import a solution with flows that are off, these will not be collected to inventory as they are not returned by the connector.
+The Admin | Sync Template v4 (Flows) flow fails to collect flows that have never been activated. These are referred to as unpublished flows. For instance, if you import a solution with flows that are turned off, they will not be collected for inventory as they are not returned by the connector.
 
 ## Co-authoring and Connections
 
@@ -46,7 +46,8 @@ To do the later, browse to the default solution, filter to connection references
 
 ## Supported languages
 
-The CoE Starter Kit solutions are not localized, and only support English. Add the English language pack to your environment to make sure all apps and flows work. More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
+The CoE Starter Kit solutions are not localized and only support English. Ensure to add the English language pack to your environment to ensure compatibility with all apps and flows.
+More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Coe Owned by Service Principle
 
@@ -97,7 +98,7 @@ Learn more:
 
 ## Missing custom connectors
 
-We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. As a result, custom connectors in a solution, to which the identity running the sync flows do not have access, will not show up in the inventory.
+We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. Hence, custom connectors within a solution, inaccessible to the identity executing the sync flows, will not appear in the inventory.
 
 ## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
@@ -107,7 +108,7 @@ There are expected differences, and the below information should help you unders
 
 ### App usage
 
-The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/power-platform/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 30 days only.
+The CoE Starter Kit will display usage (session and unique users) information as far back as to when the [audit log](setup-auditlog-http.md) was first set up, and gather data to show usage trends over time. The longer you have the CoE starter kit installed for, the more usage data will be gathered. The usage reports in the [Power Platform Admin Center](/power-platform/admin/powerapps-analytics-reports#power-apps---usage-reports) show usage data for the past 30 days only.
 
 ### PowerShell
 
@@ -144,8 +145,8 @@ SharePoint custom forms apps can be either in the Default environment or a [desi
 Finding if objects are deleted is a long running operation and so you can expect up to a week between when an object is deleted from the tenant and when the object is marked deleted in the inventory.
 
 Once an object is marked deleted it will stay marked that way for two weeks before being removed from inventory. That way if the object is restored the metadata will still be present.
-You can chose to have objects stay in the inventory marked deleted indefinately with the following environment variable:  [Also Delete from CoE](setup-core-components.md#all-environment-variables).
+You can choose to keep objects marked as deleted in the inventory indefinitely by using the following environment variable: [Also Delete from CoE](setup-core-components.md#all-environment-variables).
 
-If this environment variable is set to **No**, it will keep a record of deleted objects indefinately. Depending on the filter you have on the data, you may then still see deleted apps and flows.
+If this environment variable is set to **No**, it will retain a record of deleted objects indefinitely. Depending on the data filter applied, you may continue to see deleted apps and flows.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

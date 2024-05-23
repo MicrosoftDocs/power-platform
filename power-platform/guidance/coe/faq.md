@@ -13,7 +13,7 @@ search.audienceType:
 ---
 # Frequently asked questions, tips, and how-to's
 
-This article will provide you with answers to frequently asked questions and tips on setting up and using the CoE Starter Kit.
+This article provides you with answers to frequently asked questions and tips on setting up and using the CoE Starter Kit.
 
 ## Installing a solution in a production environment
 
@@ -25,9 +25,9 @@ This article will provide you with answers to frequently asked questions and tip
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then select **Browse**.
 1. Select the solution from the CoE Starter Kit download.
-1. Establish connections to activate your solution. If you create a new connection, you must select **Refresh**. You won't lose your import progress.
+1. To activate your solution, establish connections. If you create a new connection, ensure to select **Refresh**. Your import progress will remain intact.
 
-     ![Establish connections to activate your solution.](media/msi-import.png "Establish connections to activate your solution.")
+     ![To activate your solution, establish connections.](media/msi-import.png "To activate your solution, establish connections.")
 1. Update environment variable values. The environment variables are used to store application and flow configuration data with data specific to your organization or environment. This means that you only have to set the value once per environment, and it will be used in all necessary flows and apps in that environment.
     ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
 1. Select **Import**.
@@ -39,7 +39,7 @@ This article will provide you with answers to frequently asked questions and tip
 
     ![Find the setting for run-only users.](media/tips-flow2.png "Find the setting for run-only users")
 
-1. You'll see all the connections in the child flow. For each one except Microsoft Dataverse, change the value to **Use this connection (userPrincipalName\@company.com)**. For Microsoft Dataverse, leave the value blank.
+1. You see all the connections in the child flow. For each one except Microsoft Dataverse, change the value to **Use this connection (userPrincipalName\@company.com)**. For Microsoft Dataverse, leave the value blank.
 1. If there's no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
 
     ![Configure run-only users.](media/tips-flow1.png "Configure run only users")
@@ -48,7 +48,7 @@ This article will provide you with answers to frequently asked questions and tip
 
 ## Find a users Security Roles in an Environment
 
-To find the Security Roles of a user in an environment you can use the product UX as shown here
+To find the Security Roles of a user in an environment, you can use the product UX as shown here
 
 1. Go to [https://admin.powerplatform.microsoft.com/environments](https://admin.powerplatform.microsoft.com/environments)
 2. Select the desired environment
@@ -56,12 +56,12 @@ To find the Security Roles of a user in an environment you can use the product U
     ![Find environment SRs 1](media/find-SR-1.png "Find environment SRs 1")
 4. From Users + Permissions, select Users
     ![Find environment SRs 2](media/find-SR-2.png "Find environment SRs 2")
-5. Find your user and select their name to bring up their properties. There you will see their Security Roles
+5. Find your user and select their name to bring up their properties. There you see their Security Roles
     ![Find environment SRs 3](media/find-SR-3.png "Find environment SRs 3")
 
 ## Import a Flow
 
-Sometimes we will ship a one off flow to use in order to patch an issue. The first thing you will need to do when we offer these is to import the flow. Here is how to import flows.
+Sometimes we ship a one off flow to use in order to patch an issue. The first thing you need to do when we offer these is to import the flow. Here is how to import flows.
 
 1. Go to [https://make.powerautomate.com/](https://make.powerautomate.com/)
 1. Select your target environment. For us that will typically be our CoE Environment.
@@ -78,15 +78,15 @@ Sometimes we will ship a one off flow to use in order to patch an issue. The fir
 
 ## Setting up CoE for a subset of environments
 
-You may want to monitor and govern only certain environments with the CoE Starter Kit. For example, if you're setting the CoE Starter Kit up for individual business organizations running their own smaller CoE or if you want to include your Dynamics 365 environments from the processes in the CoE Starter Kit. The option below describes how to only enable the CoE Starter Kit processes for certain environments.
+You may want to monitor and govern only certain environments with the CoE Starter Kit. For example, if you're setting up the CoE Starter Kit up for individual business organizations running their own smaller CoE or if you want to include your Dynamics 365 environments from the processes in the CoE Starter Kit. The following option outlines how to enable the CoE Starter Kit processes selectively for specific environments.
 
 > [!IMPORTANT]
 > This is not a security feature and doesn't implement data privacy or row-level security. The feature is only intended to make monitoring and managing environments easier for organizational units.
 
 1. After import of the Core components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. Learn more: [Update environment variables](#update-environment-variables)).
-1. Continue with the [inventory setup](setup-core-components.md#turn-on-child-flows) and turn on all inventory flows.
+1. Continue with the [inventory setup](setup-core-components.md) and turn on all inventory flows.
 1. Wait for first inventory run of **Admin | Sync Template v3** to complete.
-1. Note that all environments in the tenant are added as excluded from inventory
+All environments in the tenant are added as excluded from inventory
       ![All environments start as opted out](media/tips-Opt-In-Envt1.png "All environments start as opted out")
 
 1. Add environments you want to monitor and manage to the inventory by selecting **No** for the **Excuse from inventory** configuration.
@@ -120,7 +120,7 @@ If you want to fully update your entire inventory again, you can do that by chan
 
 To reduce API calls, the inventory flows do not update all objects with every sync flow run. The flows only update objects which have been modified since the object was last inventoried.
 
-If you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag. 
+If you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag.
 
 Here is an example of how to set this using Cloud Flow objects.
 

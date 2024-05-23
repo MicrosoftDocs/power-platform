@@ -47,8 +47,8 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
     ![CoE Power BI dashboard.](media/coe1.PNG "CoE Power BI dashboard")
 
 1. Identify orphaned apps, and assign them to new owners by using the embedded app in the Power BI dashboard.
- 
-    ![Set App Permissions canvas app.](media/SetAppPerms.PNG "Set App Permission canvas app")
+
+    <!-- ![Set App Permissions canvas app.](media/SetAppPerms.PNG "Set App Permission canvas app") -->
 
 1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, and what actions you'll drive based on this information.
 
@@ -74,7 +74,8 @@ Admin and governance tools fall into three broad categories:
 
 :::row:::
    :::column span="":::
-      **Admin center** <br>The core, most important capabilities for admins and makers are the functions in the core product [admin center](https://admin.powerplatform.microsoft.com/). These features are designed to be the easiest and most robust way to complete tasks, and are fully supported by the engineering team:
+      **Admin center**
+The core, most important capabilities for admins and makers are the functions in the core product [admin center](https://admin.powerplatform.microsoft.com/). These features are designed to be the easiest and most robust way to complete tasks, and are fully supported by the engineering team:
       - Environment and environment security management
       - Data loss prevention (DLP) policy management
       - Data integration and gateway management
@@ -83,14 +84,16 @@ Admin and governance tools fall into three broad categories:
 
    :::column-end:::
    :::column span="":::
-       **Platform extensions** <br>Four connectors provide access to the same APIs that the products and admin centers use. These have been exposed through the connectors library to give users the ability to create custom solutions to execute administrative or governance-related tasks.
-       - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+       **Platform extensions**
+    Four connectors provide access to the same APIs that the products and admin centers use. These have been exposed through the connectors library to give users the ability to create custom solutions to execute administrative or governance-related tasks.
+           - [Power Platform for Admins](/connectors/powerplatformforadmins/)
        - [Power Apps for Admins](/connectors/powerappsforadmins/)
        - [Power Automate Management](/connectors/flowmanagement/)
        - [Power Apps for Makers](/connectors/powerappsforappmakers/)
    :::column-end:::
     :::column span="":::
-      **Templates and customizations** <br>The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.
+      **Templates and customizations**
+    The [CoE Starter Kit](setup.md) falls into this category. The CoE templates use the admin connectors in combination with other connectors and formulas to achieve specific goals. The nature of a template is to provide a good solution for a specific task, but it might not have the exact functionality that you need. You might have to adjust it to achieve what you're looking for.
    :::column-end:::
 :::row-end:::
 
@@ -106,13 +109,13 @@ Our recommendation is to start with the out of the box capabilities in Power Pla
 
 Let's now look at individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit:
 
-**[Maker welcome content](/power-platform/admin/welcome-content)**: In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers will be greeted with customized getting started information. A similar concept in the CoE Starter Kit is the [welcome email](core-components.md#flows-2), which sends an email to new makers only after they've created an app, flow, or bot for the first time. This means that makers may get necessary information only after they've created their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
+**[Maker welcome content](/power-platform/admin/welcome-content)**: In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When the welcome content is enabled, upon signing in to Power Apps, makers will be greeted with customized getting started information. A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which sends an email to new makers only after they've created an app, flow, or bot for the first time. This means that makers may get necessary information only after they've created their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
 
 **[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**: The CoE Starter Kit doesn't have a weekly digest for admins; instead admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them. One of the main goals of Managed Environments and the CoE Starter Kit is to provide more insights thus allowing admins to take action. The CoE kit provides more capabilities, which can reduce the burden on the admin dealing with inactive resources, as the CoE can direct resource management to the maker thus making the owner responsible for their own resources.
 
 **[Sharing limits](/power-platform/admin/managed-environment-sharing-limits)**: The CoE Starter Kit can't limit sharing on resources, proactive governance like this can only be done via Managed Environments. The [Compliance process](example-processes.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources. This process identifies highly shared resources and asks makers to provide additional information, so that admins can better support those solutions (for example, move them to a dedicated environment). With the Power BI dashboard admins can also identify highly shared resources.
 
-**[Data policies](/power-platform/admin/managed-environment-data-policies)**: Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md#dlp-editor-v2), part of the CoE Starter Kit, can also show you data policies that are applied to an environment. Additionally, the main purpose of the DLP Editor is to show you the impact of data policies on existing apps/flows in the environment.
+**[Data policies](/power-platform/admin/managed-environment-data-policies)**: Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md), part of the CoE Starter Kit, can also show you data policies that are applied to an environment. Additionally, the main purpose of the DLP Editor is to show you the impact of data policies on existing apps/flows in the environment.
 
 In addition to those three features that have an overlap with Managed Environments, the CoE Starter Kit offers capabilities that aren't yet met with Managed Environments - such as bulk updating permissions, cleaning up abandoned resources, surveying makers and calculating the ROI of ideas.
 
