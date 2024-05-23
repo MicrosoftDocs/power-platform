@@ -45,13 +45,18 @@ This article will help you to setup the remaining components in the Core solutio
 
 There are several flows which will need to be turned on for these components:  
 
-- [Admin | Capacity Alerts](core-components.md#flows-2)
+<!-- - [Admin | Capacity Alerts](core-components.md#flows-2)
 - [Admin | Add-Ons Alerts](core-components.md#flows-2)
 - [Admin | Welcome Email v3](core-components.md#flows-2)
-- [App Catalog > Request Access](core-components.md#flows-2)
+- [App Catalog > Request Access](core-components.md#flows-2) -->
+- [Admin | Capacity Alerts](core-components.md)
+- [Admin | Add-Ons Alerts](core-components.md)
+- [Admin | Welcome Email v3](core-components.md)
+- [App Catalog > Request Access](core-components.md)
 
 >[!IMPORTANT]
-> The [Admin | Welcome Email v3](core-components.md#flows-2) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)
+<!-- > The [Admin | Welcome Email v3](core-components.md#flows-2) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users) -->
+> The [Admin | Welcome Email v3](core-components.md) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)
 
 ### Share apps with admins and makers
 

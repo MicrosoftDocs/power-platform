@@ -107,7 +107,8 @@ Once your DLP strategy is in place, use the **DLP request management process** i
 Learn more:
 
 - [Establishing a DLP strategy](/power-platform/guidance/adoption/dlp-strategy)
-- [CoE Starter Kit - DLP editor impact analysis](core-components.md#dlp-editor-v2)
+<!-- - [CoE Starter Kit - DLP editor impact analysis](core-components.md#dlp-editor-v2) -->
+- [CoE Starter Kit - DLP editor impact analysis](core-components.md)
 - [Configure user security to resources in an environment](/power-platform/admin/database-security)
 - [Security in Microsoft Power Platform](/power-platform/admin/security/overview)
 - [Security and governance considerations](/power-platform/admin/governance-considerations)

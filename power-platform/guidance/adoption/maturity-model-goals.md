@@ -53,7 +53,8 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
    :::column-end:::
    :::column span="":::
       ![Establish DLP policies](media/adoption-5.png "Establish DLP policies")
-      [Establish DLP policies](dlp-strategy.md) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-editor-v2) first.
+      <!-- [Establish DLP policies](dlp-strategy.md) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-editor-v2) first. -->
+      [Establish DLP policies](dlp-strategy.md) in the default environment and mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md) first.
    :::column-end:::
 :::column span="":::
    ![Send a welcome email to new makers](media/adoption-6.png "Send a welcome email to new makers")

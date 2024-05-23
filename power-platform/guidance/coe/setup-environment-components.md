@@ -61,8 +61,10 @@ There are several flows which will need to be turned on for these components:
 
 The environment request components consist of two apps:
 
-- [**Admin - Environment Requests**](core-components.md#admin---environment-requests) app for admins to view and approve environment and connectors requests. Share this app with other admins, and assign them the Power Platform Admin SR security role.
-- [**Maker - Environment Request**](core-components.md#maker---environment-requests) app for makers to request environments and connectors. Share this app with your makers, and assign them the Power Platform Maker SR security role.
+<!-- - [**Admin - Environment Requests**](core-components.md#admin---environment-requests) app for admins to view and approve environment and connectors requests. Share this app with other admins, and assign them the Power Platform Admin SR security role.
+- [**Maker - Environment Request**](core-components.md#maker---environment-requests) app for makers to request environments and connectors. Share this app with your makers, and assign them the Power Platform Maker SR security role. -->
+- [**Admin - Environment Requests**](core-components.md) app for admins to view and approve environment and connectors requests. Share this app with other admins, and assign them the Power Platform Admin SR security role.
+- [**Maker - Environment Request**](core-components.md) app for makers to request environments and connectors. Share this app with your makers, and assign them the Power Platform Maker SR security role.
 
 More information:
 

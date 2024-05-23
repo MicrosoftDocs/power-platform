@@ -128,7 +128,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Apps for Admins](/connectors/powerappsforadmins/)
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
-- [Power Platform for Admins V2](connectors/powerplatformadminv2/)
+<!-- - [Power Platform for Admins V2](connectors/powerplatformadminv2/) -->
 - [Power Automate Management](/connectors/flowmanagement/)
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
 - [Power Query Dataflows](/connectors/dataflows/)
@@ -157,7 +157,7 @@ The content package contains various files that support different features of th
 | CenterofExcellenceInnovationBacklog_x.xx_managed.zip  | [Innovation Backlog components](innovationbacklog-components.md) solution file. Required during [setup of the Innovation Backlog](setup-innovationbacklog.md) components. |
 | CenterofExcellenceNurtureComponents_x.xx_managed.zip  |  [Nurture components](nurture-components.md) solution file. Required during [setup of the Nurture](setup-nurture-components.md) components. Has a dependency on [Core components](core-components.md) being installed first. |
 | MakerAssessmentStarterData.xlsx | Provides a set of starter questions and answers for the [Maker assessment](nurture-components.md#maker-assessment-components) app. Required during [configuration of the Maker Assessment](setup-nurture-components.md#set-up-maker-assessment-components) app. |
-| microsoft-video-hub-starter-data.xlsx | Provides a set of starter videos for the [Video Hub](nurture-components.md#video-hub-components) app. Required during [import starter data](setup-nurture-components#import-starter-data) step. |
+| microsoft-video-hub-starter-data.xlsx | Provides a set of starter videos for the [Video Hub](nurture-components.md#video-hub-components) app. |
 | Power Platform Administration Planning.pbit  | [Power Platform admin task planner Power BI template file](power-bi.md). Required during [configuration of the Power Platform admin task planner components](setup-admin-tasks-component.md). |
 | PowerPlatformAdminAnalytics-DF-MMYYYY  | Dataflow file required during [configuration of the Power BI dashboard](setup-powerbi.md) if using experimental Data Export feature.|
 | PowerPlatformGovernance_CoEDashboard_MMMYYYY.pbit  | [CoE Governance and Compliance Dashboard Power BI template file](power-bi-compliance.md). Required during [configuration of the Power BI dashboard](setup-powerbi.md) |

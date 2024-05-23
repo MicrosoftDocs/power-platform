@@ -46,7 +46,7 @@ To do the later, browse to the default solution, filter to connection references
 
 ## Supported languages
 
-The CoE Starter Kit solutions are not localized and only support English. Ensure to add the English language pack to your environment to ensure compatibility with all apps and flows.
+The CoE Starter Kit solutions do not offer localization and only support English. Be sure to include the English language pack in your environment to ensure compatibility with all apps and flows.
 More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Coe Owned by Service Principle
@@ -57,7 +57,7 @@ As a result you cannot install and run the CoE Starter Kit using a Service Princ
 
 ## Security groups and approvals
 
-We recommend against using security groups to control access to the CoE environment, because it's likely that users who don't have access to this environment will be participating in approvals.
+We advise against using security groups to manage access to the CoE environment, as it's possible that users without access to this environment may be involved in approvals.
 If you choose to use a security group to control access to the environment, manually add users to the Approvals Users security role.
 
 ## Trial licenses
@@ -81,7 +81,7 @@ Monitoring Desktop flow runs is included, although limited. For more details on 
 
 ## Unpublished model-driven apps
 
-Due to a product limitation, model-driven apps that are not published are not surfaced in the inventory because the are not returned to us from the storage table.
+Because of a product limitation, model-driven apps that are not published are not included in the inventory, as they are not retrieved from the storage table.
 
 ## Desktop flow runs
 
@@ -98,7 +98,7 @@ Learn more:
 
 ## Missing custom connectors
 
-We are able to collect only the intersect of all custom connectors outside of solutions, and all custom connectors to which you have access. Hence, custom connectors within a solution, inaccessible to the identity executing the sync flows, will not appear in the inventory.
+We can only gather custom connectors that exist outside of solutions and those that are accessible to the identity executing the sync flows. Therefore, custom connectors within a solution, which are not accessible to the executing identity, will not be included in the inventory.
 
 ## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
@@ -142,11 +142,11 @@ SharePoint custom forms apps can be either in the Default environment or a [desi
 
 ### Deleted apps and flows
 
-Finding if objects are deleted is a long running operation and so you can expect up to a week between when an object is deleted from the tenant and when the object is marked deleted in the inventory.
+Determining whether objects are deleted is a time-consuming process, so there may be a delay of up to a week between when an object is deleted from the tenant and when it is marked as deleted in the inventory.
 
-Once an object is marked deleted it will stay marked that way for two weeks before being removed from inventory. That way if the object is restored the metadata will still be present.
-You can choose to keep objects marked as deleted in the inventory indefinitely by using the following environment variable: [Also Delete from CoE](setup-core-components.md#all-environment-variables).
+Once an object is marked as deleted, it will remain in that state for two weeks before being removed from inventory. This ensures that if the object is restored, its metadata will still be preserved.
+You have the option to retain objects marked as deleted in the inventory indefinitely by utilizing the following environment variable: [Also Delete from CoE](setup-core-components.md#all-environment-variables).
 
-If this environment variable is set to **No**, it will retain a record of deleted objects indefinitely. Depending on the data filter applied, you may continue to see deleted apps and flows.
+If this environment variable is set to **No**, it will maintain a record of deleted objects indefinitely. Depending on the applied data filter, you may still observe deleted apps and flows.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
