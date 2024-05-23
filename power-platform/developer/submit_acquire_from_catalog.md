@@ -61,8 +61,8 @@ After clicking “Publish to Catalog”, you will access a wizard:
    2. Select **managed item** vs **template** for your submission: **managed items** cannot be edited by other makers, your environment shares a single copy, and that copy can be versioned with updates over time. Makers can then update their solutions with your updates. A **template** is a standalone copy that can be edited, makers can have as many copies as they want, and will not automatically update solutions in environments when new updates are published.
    3. Select a primary component: a solution may have many components in it (ex: apps, flows, tables, connectors, prompts, and more). You may want makers to open a specific component for editing after they install it (such as opening Canvas Studio for your Canvas app). Set the primary component to whichever you think is the "focus" of the solution, other, set "Unspecified", and installers will just go the solution itself.
    4. NOTE: if you are resubmitting an item, you will get an alert message notifying you about the resubmission. You will be prompted with a version field. The last digit of the version number will be automatically incremented for you. You can modify the version number if you like, but do not set the version number to a lower number from this interface. Updating the version number in the catalog submission will update the version number in the original solution as well.
-     1. Resubmissions of templates will replace the previous item in the catalog, and will not affect any solutions already using the previous catalog item. Makers who now install your resubmission will simply get your newest version.
-     2. Resubmissions of managed items will update the catalog item with your most recent version, and the next time makers see your catalog item in an environment where that catalog item was already installed, they will see an "update" button, which will install the most recent changes to the managed item into that environment, and then all solutions using that managed item will be updated as well.
+     1. Resubmissions of **templates** will replace the previous item in the catalog, and will not affect any solutions already using the previous catalog item. Makers who now install your resubmission will simply get your newest version.
+     2. Resubmissions of **managed items** will update the catalog item with your most recent version, and the next time makers see your catalog item in an environment where that catalog item was already installed, they will see an "update" button, which will install the most recent changes to the managed item into that environment, and then all solutions using that managed item will be updated as well.
      3. You cannot resubmit a managed item as a template, and vice versa.
 2. **Step 2 (Catalog)**
    1. Title: rename the item if needed before it gets submitted to catalog. The default will be the solution name. NOTE: you cannot edit title when submitted a managed item.
@@ -100,14 +100,16 @@ In this example, you can:
 
 1. Edit the app, which opens the app in Canvas studio
 2. Got to apps, which takes you to the app screen, if you aren't ready to edit yet
-3. Go to solution, which opens the solution file 
+3. Go to solution, which opens the solution file
+
+Depending on what is contained in the catalog item package, different options will appear.
 
 After the catalog item is installed, you can find the catalog item:
 
 1. In the unmanaged solutions list in the Solutions page if the catalog item was a **template**
 2. In the managed solutions list in the Solutions page if the catalog item was a **managed item**
 
-As previously mentioned, templates can be acquired as many times as you like, each as its own copy. The catalog will append a suffix to the unmanaged solution display name to differentiate the different copies. Managed items can be acquired only once into the managed solutions list, and all makers in the environment will share the same managed solution.
+As previously mentioned, templates can be acquired as many times as you like, each as its own copy. The catalog will append a suffix to the unmanaged solution display name to differentiate the different copies. Managed items can be acquired only once into the managed solutions list, and all makers in the environment will share the same managed solution. This means you cannot acquire a managed item back into the same environment it was published from (the "update" button will be disabled) 
 
 
 ### See also
