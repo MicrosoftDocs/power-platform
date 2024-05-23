@@ -1,6 +1,6 @@
 ---
 title: "Set up inventory with Data Export | MicrosoftDocs"
-description: "Instructions for how to set up the inventory components solution of the CoE Starter Kit"
+description: "Instructions for how to set up the inventory components solution of the CoE Starter Kit using Data Export"
 author: jenefer-monroe
 ms.topic: conceptual
 ms.date: 09/05/2023

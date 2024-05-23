@@ -171,10 +171,10 @@ The core components solution contains apps designed to give admins better visibi
 Share these apps with other Power Platform admins and assign them the **Power Platform Admin SR** security role:
 
 - [CoE Admin Command Center](core-components.md#coe-admin-command-center)
-- [DLP Editor v2](core-components.md#dlp-editor-v2)
+<!-- - [DLP Editor v2](core-components.md#dlp-editor-v2) -->
 - [Power Platform Admin View](core-components.md#power-platform-admin-view)
-- [Set App Permissions](core-components.md#set-app-permissions)
-- [Set Flow Permissions](core-components.md#set-flow-permissions)
+<!-- - [Set App Permissions](core-components.md#set-app-permissions) -->
+<!-- - [Set Flow Permissions](core-components.md#set-flow-permissions) -->
 
 Take a look at the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, which is your central place to open all CoE Starter Kit apps from.
 

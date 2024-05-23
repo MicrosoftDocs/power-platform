@@ -72,9 +72,11 @@ More information:
 
 This section includes the full list of environment variables that affect the environment request components. You might have to [update environment variables](faq.md#update-environment-variables) after import.
 
-| Name | Description | Default value
-|------|---------------|------|
-|Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app. More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment) | None |
+| Name                               | Description                                                                                     | Default value |
+|------------------------------------|-------------------------------------------------------------------------------------------------|---------------|
+| Environment Request Admin App Url | Update this environment variable with the URL for the Admin - Environment Request canvas app.  | None          |
+
+More information: [Get an app URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment)
 
 ## It looks like I found a bug with the CoE Starter Kit; where should I go?
 

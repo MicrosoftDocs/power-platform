@@ -256,7 +256,7 @@ To use this update value of the DelayObjectInventory environment variable to Yes
 
 See [How to update environment variables](#update-environment-variables) for how to update environment variables.
 
-See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory.
+<!-- See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory. -->
 
 ## Cross Tenant Connection Identities
 
@@ -271,7 +271,7 @@ Enter any hosts you which to add to this environment variable as a comma separat
 
 See [How to update environment variables](#update-environment-variables) for how to update environment variables.
 
-See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory.
+<!-- See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory. -->
 
 ### How to update data to respect configured local tenants
 
@@ -300,7 +300,8 @@ We have demonstrated how to do this via the Excel Add In as it is ideal given it
 
 ## How to activate Business Process Flows?
 
-Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, for example the [Compliance processes](./governance-components#compliance-processes), you will need to activate them manually.
+<!-- Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, for example the [Compliance processes](./governance-components#compliance-processes), you will need to activate them manually. -->
+Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, you will need to activate them manually.
 
 1. Browse to the solution with the BPFs and click to view Processes
 1. Find BPFs that are turned off and click their name to open

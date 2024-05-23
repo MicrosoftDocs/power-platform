@@ -370,7 +370,7 @@ Use this app to:
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
 
-**Prerequisite**: This app uses Microsoft Dataverse. End-users must have a Per User license, the app must be assigned a Per App license, or the environment must be covered by pay-as-you-go. 
+**Prerequisite**: This app uses Microsoft Dataverse. End-users must have a Per User license, the app must be assigned a Per App license, or the environment must be covered by pay-as-you-go.
 
 ![Admin - Environment Request canvas app.](media\dev-resources-admin-details.png "Admin - Environment Request canvas app")
 
