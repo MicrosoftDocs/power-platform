@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 05/22/2024
 search.audienceType: 
   - admin
 ---
@@ -133,10 +133,11 @@ On the **Application user** page, do one of the following:
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-To delete an inactive application user
+To delete an inactive application user, complete the following steps.
+
 1. Go to the **Application user** page.
 1. Select an inactive application user.
-1. Select the **Delete** action on the command bar.
+1. Select **Delete** on the command bar.
 1. Select **Delete** in the confirmation dialog.
 
 > [!NOTE]
