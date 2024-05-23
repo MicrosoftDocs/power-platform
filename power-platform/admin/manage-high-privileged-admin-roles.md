@@ -203,7 +203,7 @@ Remove-RoleAssignmentFromUsers
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
-- A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See https://github.com/microsoft/coe-starter-kit/issues/8119 for more information and details.
+- A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
 
 - Once you elevate a user through Entra Privileged Identity Management, wait for two hours for the changes to sync from Entra to Power Platform before you sign in to Power Platform admin center.
 
