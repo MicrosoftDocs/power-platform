@@ -75,7 +75,7 @@
         - name: Write, deploy, and debug X++ code
           href: unified-experience\finance-operations-debug.md
         - name: Access product database        
-          href: unified-experience\finance-operations-ProductDBAccess.md
+          href: unified-experience\finance-operations-product-db-access.md
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
           finance-operations-ProductDBAccess.md
