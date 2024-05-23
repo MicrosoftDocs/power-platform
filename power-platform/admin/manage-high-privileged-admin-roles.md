@@ -9,8 +9,9 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 05/07/2024
+ms.date: 05/23/2024
 search.audienceType: admin
+
 ---
 
 # Manage admin roles with Microsoft Entra Privileged Identity Management
