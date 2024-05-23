@@ -80,7 +80,7 @@ This feature set is tenant-specific functionality that restricts Storage Shared 
 
 This feature is currently in private preview. Public preview is planned for later this spring, with general availability in summer 2024. For more information, see [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
 
-These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
+These settings can be found in an environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
 Admins can enable one of these four configurations for this setting:
 
@@ -97,16 +97,15 @@ Admins can enable one of these four configurations for this setting:
 - Custom Connectors
 - Power Apps
 
-#### Impact on Power App experiences
+#### Impact on User Experience
 
-- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is displayed: "This app stopped working. Try refreshing your browser." There are plans to update this experience to provide more contextual information to the user as to why the app couldn’t be launched.
+- **When a user, who does not meet an environment’s IP address restrictions, opens an app**: Users will get an error message citing a generic IP issue.
 
 - **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
-  - A banner with the following message is displayed: “Your organization configured IP address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a few seconds and then disappears. 
-  - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevent the platform from using some performance capabilities that enable faster load times.
+  - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages lose connection
+  - More significantly, due to the IP validation that this security setting uses, some functionality may perform slower than if it was turned off.
 
-  If a user opens an app, while meeting the IP address requirements and then moves to a new network which no longer meets the IP address requirements, the user may observe app contents such as images, embedded media, and links may not load or be accessible. 
 
 ### Logging of SAS calls
 This setting enables all SAS calls within Power Platform to be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
@@ -114,21 +113,24 @@ This setting enables all SAS calls within Power Platform to be logged into Purvi
 | Field name                                   | Field description                                                                                              |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | response.status_message                      | Informing if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
-| response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                 |
+| response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                |
+| ip_binding_mode                              | IP binding mode set by a tenant admin, if enabled. Applies to SAS Creation events only.                        |
+| admin_provided_ip_ranges                     | IP ranges set by a tenant admin, if any. Applies to SAS Creation events only.                                  |
+| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS Creation and Usage events.                     |
 | analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
 | enduser.ip_address                           | The public IP of the caller.                                                                                   |
 | analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
-| request.service_request_id                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.                               |
+| request.service_request_id                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.     |
 | version                                      | Version of this log schema.                                                                                    |
 | type                                         | Generic response.                                                                                              |
 | analytics.activity.name                      | The type of activity this event was: Creation or Usage.                                                        |
 | analytics.activity.id                        | Unique ID of the record in Purview.                                                                            |
-| analytics.resource.organization.id           | Org ID                                                                                                   |
-| analytics.resource.environment.id            | Environment ID                                                                                              |
-| analytics.resource.tenant.id                 | Tenant ID                                                                                                   |
-| enduser.id                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                                  |
-| enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.    |
-| enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                                     |
+| analytics.resource.organization.id           | Org ID                                                                                                         |
+| analytics.resource.environment.id            | Environment ID                                                                                                 |
+| analytics.resource.tenant.id                 | Tenant ID                                                                                                      |
+| enduser.id                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                       |
+| enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.     |
+| enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
 
 ### Related articles
 
