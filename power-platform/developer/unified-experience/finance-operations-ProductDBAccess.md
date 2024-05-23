@@ -13,16 +13,19 @@ ms.subservice: developer
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-As explained in [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) the cloud hosts the business data and executes X++ code.
+As a developer you may at times benefit from read/write access to the product database. We enable you to request credentials just in time right from Visual Studio. 
+Note that, as explained in [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) the business data is hosted in the cloud.
 
-As a developer you may at times benefit from read/write access to the product database. We enable you to request credentials just in time right from Visual Studio.
 
-
-## Summary
-
-As a recap, here's a summary and the points to take away from this exercise.
-
-We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used, and we did'nt have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser and the breakpoints are hit.
+1. Launch Visual Studio if not already running.
+1. In the **Tools** menu, select **SQL Credentials for Dynamics 365 FinOps...** .
+2. :::image type="content" source="../media/unified-experience/UDE_SQLJitMenu.png" alt-text="Visual Studio> Tools> SQL Credentials for Dynamics 365 FinOps...":::
+3. Enter the reason for requesting access credentials to the database.
+4. :::image type="content" source="../media/unified-experience/UDE_SQLJitWindowRequest.png" alt-text="Visual Studio> Tools> SQL Credentials for Dynamics 365 FinOps Request window":::
+5. The dialog will indicate that the access request is being processed.
+6. :::image type="content" source="../media/unified-experience/UDE_SQLJitProgress.png" alt-text="Visual Studio> Tools> SQL Credentials for Dynamics 365 FinOps Progress":::
+5. Once the request completes successfully the dialog will be populated with the credentials and you can use the buttons to copy the same to clipboard.
+6. :::image type="content" source="../media/unified-experience/UDE_SQLJitWindowResponse.png" alt-text="Visual Studio> Tools> SQL Credentials for Dynamics 365 FinOps Response":::
 
 ### See also
 
