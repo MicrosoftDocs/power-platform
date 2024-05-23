@@ -61,7 +61,9 @@ These terms are important to understand when using the catalog:
 
 ## Catalog Basics 
 
-Every tenant will get a catalog auto-provisioned for them as part of Platform Environments, but you may choose to have multiple catalogs across environments for different regions, departments, etc. Most orgs will only need one catalog. New catalogs can be set up by a catalog Admin in Power Platform Admin Center. 
+Every tenant will get a catalog auto-provisioned for them the first time you try to interact with the catalog. A catalog admin will still need to [set up permissions](administer-catalog.md) before an organization can start using the catalog.
+
+You may choose to have multiple catalogs across environments for different regions, departments, etc. Most orgs will only need one catalog. New catalogs can be set up by a catalog Admin in Power Platform Admin Center. 
 
 You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types: 
 
