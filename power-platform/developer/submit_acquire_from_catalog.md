@@ -89,7 +89,7 @@ If the details meet what the maker is looking for, they can click “get” on t
 1. Step 1 (Connections): The first step checks the connections for the solution to make sure they are working for you in your environment. If there are any connection issues, you will see a red status notification, and can resolve by clicking the “...” next to the problematic connection to update it.
 2. Step 2 (Environment variables): The publishing maker may decide some environment variables need to be specified before you can acquire the solution. Typically, these variables will be set to some default value. If unsure of what to fill out, check with the author of the catalog item or in the details of the catalog listing (available on the first details step).
 3. Step 3 (Configuration): The next step is also determined by the publishing maker, if they want you to provide any additional info for using the solution. This may include things like, “what days of the week do you run a report?”. If no additional info needed, this step will be blank. Proceeding from here kicks off the installation process.
-4. Step 4 (Summary): When you reach final step, the summary screen, you are waiting for the catalog item to install into your environment. Depending on the complexity, this may take less than a minute to several minutes.
+4. Step 4 (Summary): When you reach the final step, the summary screen, you are now waiting for the catalog item to install into your environment. Depending on the complexity, this may take from less than a minute to several minutes. When complete, you will be given several options in the dropdown, depending on what's included in the catalog item, as well as if a primary component was set by the author.
 
 
 
