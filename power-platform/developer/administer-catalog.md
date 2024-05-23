@@ -33,16 +33,23 @@ To set up a catalog, go to the [Power Platform Admin Center (PPAC)](https://lear
 
 [Catalog PPAC admin](power-platform/developer/media/admin_catalog.png)
 
-Clicking "New catalog" in the top menu or in the page itself will bring up a setup wizard:
+Clicking "New catalog" in the top menu or in the page itself will bring up a setup wizard
 
 1. Step 1 (Setup)
    2. Name - enter a name for the catalog
    3. Language - set the language for your users of the catalog
    4. Description - add some details that will help others understand what this catalog is for
    5. Region - what region this catalog is for, which will filter the available environments
-   6. Environment - which environment in your tenant you want the catalog to be installed for
+   6. Environment - which environment in your tenant you want the catalog to be installed for (ensure some environments have been set up for you to select)
    7. Status - uncheck this box if you want the catalog inactive after setting up
-2. 
+2. Step 2 (Catalog administrators)
+   1. Select up to 10 AAD groups who can administer the catalog (ensure you have created some AAD groups for your users). 
+3. Step 3 (Approvers)
+   1. By default, catalog item submissions must be approved by an aprover or admin. Check the box if you want your tenant to allow submissions to be auto-approved.
+   2. Select up to 10 AAD groups who can approve catalog items before they are submitted into the catalog (see below for how to approve catalog items)
+4. Step 4 (Submitters)
+   1. Select up to 10 AAD groups who can submit catalog items to the catalog
+   2. 
 
 ## Setup users
 
