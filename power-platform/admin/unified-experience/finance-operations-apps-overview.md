@@ -11,46 +11,43 @@ ms.reviewer: sericks
 
 # Unified admin experience for finance and operations apps (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now an application within Power Platform. Therefore, multiple Dynamics 365 applications, such as Sales, Marketing, finance and operations, and apps, flows, and websites in Power Platform can be installed and hosted in the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database). This unification provides a consistent and single set of lifecycle operations that an admin can perform across all artifacts.
+As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now an application within Power Platform. In this new experience, multiple Dynamics 365 applications, such as Sales, Marketing, finance and operations, as well as low-code apps, flows, and websites can be installed and hosted in the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database). This unification provides a consistent and single set of lifecycle operations that an admin can perform across all artifacts in a particular environment.
 
 :::image type="content" source="media/one-admin-journey.png" alt-text="Screenshot that shows the unified admin experience for finance and operations apps.":::
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, watch this video on the Microsoft Dynamics 365 Community channel on YouTube: [Video: Unified admin experience for finance and operations apps](https://www.youtube.com/embed/VPQSmtgzfjM).
+To learn more about the admin unification journey, watch this video on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community)
+
+> [!VIDEO https://www.youtube.com/embed/HmJIuHhx3Hg].
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 
-There are no new environment types in the Power Platform admin center. We integrated the finance and operations apps into the Power Platform fabric.
+Finance and operations apps will now have the same behavior as other Dynamics 365 apps have had within Power Platform admin center.  The apps will be available to licensed customers both during new environment creation as well as installed in to an existing environment.  
 
-You can deploy the finance and operations apps within the Power Platform admin center in one of two ways.
+You can deploy the finance and operations apps within the Power Platform admin center in one of the following ways:
 
 ### Option A: Create a new environment through templates
 
-When you create a new environment in the Power Platform admin center, you can add a Dataverse database and enable Dynamics 365 apps. You see a list of environment app templates that becomes available under **Automatically deploy these apps**. This list is a group of applications preinstalled on a Dataverse database.  
+A template is simply a bundle of Microsoft published applications that are pre-installed on a Dataverse-based Power Platform environment.  This is a means of increasing productivity as you can deploy an environment with a known configuration of apps quickly without having to install each one in the proper sequence manually.  When using a template, you will always get the very latest version of each of those applications available as of that moment.
+
+When creating a new environment in the Power Platform admin center, you can add a Dataverse data store and choose to **Enable Dynamics 365 apps**. Then you will be presented with a list of environment templates that becomes available under **Automatically deploy these apps**.   
 
 :::image type="content" source="media/new-environment-template.png" alt-text="Environment templates":::
 
-This list is dynamic, so you only see references to **Finance**, **Supply Chain Management**, **Commerce**, **Project Operations**, and other finance and operations apps based on the license of the admin creating the environment. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
+This list is dynamic, so you only see references to **Finance**, **Supply Chain Management**, **Commerce**, **Project Operations**, and other finance and operations apps based on the licenses assigned to the admin creating the environment. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
 
 ### Option B: Install the provisioning app on an existing environment
 
-You can install finance and operations apps on an existing Power Platform environment with a Dataverse database. Select an environment, navigate to the **Resources** > **Dynamics 365 apps** page, and select the **Dynamics 365 Finance and Operations Provisioning App**.
+If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that will require complex integration. The environment you use must support Dynamics 365 apps.   As part of the install process, you will be able to pick any of the supported versions of the finance and operations apps, which is helpful if you want to get a version that is not the latest generally available version.
 
 :::image type="content" source="media/install-provisioning-app.png" alt-text="Install provisioning app":::
 
 For step-by-step instructions, see [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
-With either option, your environment has two runtime URLs:
+With either option, your environment will have two runtime URLs:
 
 - One for customer engagement apps (**Environment URL**)
 - One for finance and operations apps (**Finance and Operations URL**)
@@ -100,14 +97,13 @@ These continually updated scenario tutorials give a walkthrough for administrato
 - [Unified admin trials (preview)](admin-trials.md)
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
 
-### Known limitations during preview
+### Known limitations
 
 As part of the preview, there are a few limitations soon to be removed, so check back often to determine their resolution.
 
-- The environment templates don't include Project Operations.
 - The environment name can't exceed 20 characters—a limitation on the finance and operations runtime.
 
-### Frequently asked questions for the public preview
+### Frequently asked questions
 
 We continue to publish common questions and resolve open items before making the experience generally available (GA).
 

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Provision a new environment with an ERP-based template (preview) | Microsoft Docs"
+title: "Tutorial: Provision a new environment with an ERP-based template  | Microsoft Docs"
 description: This tutorial demonstrates how to use the Power Platform to Provision an environment with finance and operations apps installed.
 author: laneswenka
 ms.reviewer: sericks
@@ -12,24 +12,18 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Provision a new environment with an ERP-based template (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Tutorial: Provision a new environment with an ERP-based template
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse.  No longer do customers need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications.  Additionally, most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
 In this tutorial, learn how to:
 
-- Go to the Power Platform admin center and create a new environment using a template based on your assigned license.
-- Provision a developer-focused sandbox using PowerShell to use with X++ code.
-- Delete an environment when no longer in use.
+> [!div class="checklist"]
+> * Go to the Power Platform admin center and create a new environment using a template based on your assigned license.
+> * Provision a developer-focused sandbox using PowerShell to use with X++ code.
+> * Delete an environment when no longer in use.
 
 As an example of this scenario, a customer who operates their finance and operations apps environments in Microsoft Dynamics 365 Lifecycle Services can provision one of the newer, developer-focused sandboxes in the Power Platform admin center.  
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Environment provisioning
 
@@ -49,13 +43,13 @@ All Dynamics 365 environment templates are associated with their related full us
 | ----------- | ----------- |----------- |----------- |
 | Dynamics 365 Finance| Finance (preview) | D365_FinOps_Finance |  |
 | Dynamics 365 Supply Chain Management (preview) | Supply Chain Management (preview) | D365_FinOps_SCM |  |
-| Dynamics 365 Project Operations | Project Operations Integrated (preview) | D365_FinOps_ProjOps | This is not yet available in the public preview but will be soon.  |
-| Dynamics 365 Operations Application Partner Sandbox | Project Operations Integrated (preview) | D365_FinOps_ProjOps | This is not yet available in the public preview but will be soon.  Partners may temporarily use the D365_FinOps_Finance template until this is resolved.  |
-| Dynamics 365 Commerce| Commerce (preview) | D365_FinOps_Commerce | This is not yet available in the public preview but will be soon.  |
+| Dynamics 365 Project Operations | Project Operations Integrated (preview) | D365_FinOps_ProjOps |  |
+| Dynamics 365 Operations Application Partner Sandbox | Project Operations Integrated (preview) | D365_FinOps_ProjOps | |
+| Dynamics 365 Commerce| Commerce (preview) | D365_FinOps_Commerce | This is only available for Trials.  |
 
 ### Known limitations
 
-Be sure to check out the latest known limitations available in the overview article [Unified admin experience for finance and operations apps (preview)](finance-operations-apps-overview.md#known-limitations-during-preview).
+Be sure to check out the latest known limitations available in the overview article [Unified admin experience for finance and operations apps](finance-operations-apps-overview.md#known-limitations-during-preview).
 
 ## Step-by-step provisioning guide
 
@@ -63,8 +57,8 @@ Be sure to check out the latest known limitations available in the overview arti
 
 ### Create an environment
 
-> [!Note]
-> During public preview, this will initially not be visible in the Power Platform admin center.  Instead you may provision these new environments using PowerShell on the related tab on this page.  However, this will eventually be visible when non-developer sandboxes are supported for finance and operations apps.
+> [!Important]
+> This is only available for **Subscription-based trial** environment types.  The list of environment types supported will expand over time.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select **Environments** in the navigation pane.  The **Environments** page is displayed.
@@ -74,7 +68,7 @@ Be sure to check out the latest known limitations available in the overview arti
 
 1. Enter a name for the environment. Environment names don't need to be unique in Power Platform, unlike in Lifecycle Services.
 1. Choose your Provisionment region.
-1. From the **Type** list, select **Sandbox**.
+1. From the **Type** list, select **Subscription-based Trial**.
 1. Enable the Dataverse data store option, and select **Next**.
 1. On the next screen, enter the Dataverse-required fields.
 1. Select **Enable Dynamics 365 apps** and choose the appropriate template for your license.

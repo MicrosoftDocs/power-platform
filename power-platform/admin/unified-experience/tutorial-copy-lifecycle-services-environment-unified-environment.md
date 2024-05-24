@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Copy a Lifecycle Services environment to a unified environment (preview) | Microsoft Docs"
+title: "Tutorial: Copy a Lifecycle Services environment to a unified environment  | Microsoft Docs"
 description: This tutorial will demonstrate how to perform environment copy with respect to unified environments.
 author: laneswenka
 ms.reviewer: sericks
@@ -12,27 +12,21 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Copy a Lifecycle Services environment to a unified environment (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Tutorial: Copy a Lifecycle Services environment to a unified environment 
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics 365 Lifecycle Services, but now everything can be managed in the Power Platform admin center.
 
 In this tutorial, you'll learn how to:
 
-- Prepare the source environment
-- Copy the environment to the target
+> [!div class="checklist"]
+> * Prepare the source environment
+> * Copy the environment to the target
 
 As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
 ## Before you begin
 
-The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse.  To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md).
+The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse.  To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template ](./tutorial-deploy-new-environment-with-ERP-template.md).
 
 The source environment in this tutorial is always a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 

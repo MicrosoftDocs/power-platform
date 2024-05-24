@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Install the Finance and Operations Provisioning App (preview) | Microsoft Docs"
+title: "Tutorial: Install the Finance and Operations Provisioning App  | Microsoft Docs"
 description: Learn how to install the Finance and Operations Provisioning App onto an existing Power Platform environment.
 author: laneswenka
 ms.reviewer: sericks
@@ -12,23 +12,17 @@ search.audienceType:
   - admin
 ---
 
-# Tutorial: Install the Finance and Operations Provisioning App (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Tutorial: Install the Finance and Operations Provisioning App 
 
 Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. Customers don't need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
-In this article, learn how to:
+In this tutorial, you will learn how to:
 
-- Locate an existing environment in the Power Platform admin center with other Dynamics 365 apps installed.
-- Install the Finance and Operations Provisioning app to see finance and operations apps capabilities.
+> [!div class="checklist"]
+> * Locate an existing environment in the Power Platform admin center with other Dynamics 365 apps installed.
+> * Install the Finance and Operations Provisioning app to see finance and operations apps capabilities.
 
 For example, a customer who already purchased other Dynamics 365 apps wants to add finance and operations apps capabilities to one of their existing environments.  
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisites
 
@@ -65,23 +59,34 @@ Limitations for an installation of the provisioning app:
 ### Install on an environment
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane. The **Environments** list page is displayed.
-1. Select a given environment that meets the prerequisite criteria.
-1. Select **Dynamics 365 apps** under the **Resources** card on the environment details page.
-1. Select **Install app**.
-1. Locate and install the **Dynamics 365 Finance and Operations Platform Tools** app. This application provides platform support for installing ERP-based applications.
-1. Locate and install the **Dynamics 365 Finance and Operations Provisioning app**. This application provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads.
+2. Select **Environments** in the navigation pane. The **Environments** list page is displayed.
+3. Select a given environment that meets the prerequisite criteria.
+4. Select **Dynamics 365 apps** under the **Resources** card on the environment details page.
+5. Select **Install app**.
+6. Locate and install the **Dynamics 365 Finance and Operations Platform Tools** app. This application provides platform support for installing ERP-based applications.  It must be installed before the next step.
+7. Locate and install the **Dynamics 365 Finance and Operations Provisioning app**. This application provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads.
    :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
-1. Select **OK** to go to the installation configuration page for the provisioning app.
+8. Select **OK** to go to the installation configuration page for the provisioning app.
    :::image type="content" source="media/tutorial-install-app2.png" alt-text="A configuration page is shown with several check boxes for options to enable.":::
 
    You see options to configure the app.
 
    - **Enable Developer Tools**:  This option allows you to have a developer-enabled sandbox where you can connect Visual Studio and make X++ changes. If you leave this option unchecked, you get a standard environment—sandbox or production.
    - **Enable Demo Data**: This option deploys the standard Contoso Demo Data with your app.
-     > [!NOTE]
-     > This option is going to be available soon.
+   - **Application version**: This allows you to select any of the available supported versions for install.
 
-1. Agree to the terms and conditions and select the **Install** button to start the installation.
+9. Agree to the terms and conditions and select the **Install** button to start the installation.
 
-   Once installed successfully, you see the Finance and Operations URL available from the environment details page.
+When the install is triggered, it will take roughly an hour for the operation to complete.  
+
+## Application versions
+
+As mentioned in the above instructions, you will have the ability to install various supported versions of finance and operations apps.  Below is a table that represents some example versions you may encounter.
+
+| Application version | Details | Available within |
+|---------------------|-------------|------------------|
+| 10.0.40.2 (Preview) | This is version 10.0.40, with 3 proactive quality updates installed. It is also a preview build. | Early Access / Preview Geos Only. |
+| 10.0.39.4           | This is version 10.0.39, with 5 proactive quality updates installed. | All geos. |
+| 10.0.38.9           | This is version 10.0.38, with 10 proactive quality updates installed. | All geos. |
+
+You will notice that each application version will include its latest proactive quality update, there is no way to get an earlier build of an application version.  Also, preview builds are only available in the preview geos.
