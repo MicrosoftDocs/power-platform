@@ -182,7 +182,7 @@ Learn how to administer the catalog.
 Learn how to view, submit, and install catalog items.
 
 > [!div class="nextstepaction"]
-> [Submit and install catalog items](submit_acquire_from_catalog.md)   
+> [Submit and install catalog items](submit-acquire-from-catalog.md)   
 
 Ask questions or contact the project team on GitHub.
 
@@ -192,4 +192,4 @@ Ask questions or contact the project team on GitHub.
 ### See also
 
 [Administer the catalog (Preview)](administer-catalog.md)   
-[Submit and install catalog items (Preview)](submit_acquire_from_catalog.md)
+[Submit and install catalog items (Preview)](submit-acquire-from-catalog.md)
