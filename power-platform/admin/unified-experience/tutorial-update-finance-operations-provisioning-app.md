@@ -39,7 +39,7 @@ For example, a customer has read that a new service update has been made availab
 7. You will see options to select a new application version.  The drop down list will include only versions that are higher than your currently installed version.
 9. Agree to the terms and conditions and select the **Install** button to start the update.
 
-When the update is triggered, it will take roughly an hour for the operation to complete.  
+When the update is triggered, it will take roughly an hour for the operation to complete.  During the update, you will see the Finance and Operations Provisioning App is in an **Installing** status until it completes.
 
 ## Application versions
 
@@ -47,8 +47,8 @@ As mentioned in the above instructions, you will have the ability to install var
 
 | Application version | Details | Available within |
 |---------------------|-------------|------------------|
-| 10.0.40.2 (Preview) | This is version 10.0.40, with 3 proactive quality updates installed. It is also a preview build. | Early Access / Preview Geos Only. |
+| 10.0.40.2 (Preview) | This is version 10.0.40, with 3 proactive quality updates installed. It is also a preview build. | [Early release cycle environments](/power-platform/admin/early-release) only. |
 | 10.0.39.4           | This is version 10.0.39, with 5 proactive quality updates installed. | All geos. |
 | 10.0.38.9           | This is version 10.0.38, with 10 proactive quality updates installed. | All geos. |
 
-You will notice that each application version will include its latest proactive quality update, there is no way to get an earlier build of an application version.  Also, preview builds are only available in the preview geos.
+You will notice that each application version will include its latest proactive quality update, there is no way to get an earlier build of an application version.  Preview builds are only available to [Early release cycle environments](/power-platform/admin/early-release).

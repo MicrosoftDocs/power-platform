@@ -63,7 +63,8 @@ Limitations for an installation of the provisioning app:
 3. Select a given environment that meets the prerequisite criteria.
 4. Select **Dynamics 365 apps** under the **Resources** card on the environment details page.
 5. Select **Install app**.
-6. Locate and install the **Dynamics 365 Finance and Operations Platform Tools** app. This application provides platform support for installing ERP-based applications.  It must be installed before the next step.
+6. Locate and install the **Dynamics 365 Finance and Operations Platform Tools** app. This application provides platform support for installing ERP-based applications.  It must be installed before the next step.  Note that you may see multiple entries of the same application if you have more than one license that provides access to it.  Select any option with a status of *Enabled* to proceed.
+   :::image type="content" source="media/tutorial-install-app-platformTools.png" alt-text="A pop-up dialog is shown with the option to proceed to install the platform tools application or to cancel the action.":::
 7. Locate and install the **Dynamics 365 Finance and Operations Provisioning app**. This application provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads.
    :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
 8. Select **OK** to go to the installation configuration page for the provisioning app.
@@ -77,7 +78,7 @@ Limitations for an installation of the provisioning app:
 
 9. Agree to the terms and conditions and select the **Install** button to start the installation.
 
-When the install is triggered, it will take roughly an hour for the operation to complete.  
+When the install is triggered, it will take roughly an hour for the operation to complete.  During the installation, you will see the Finance and Operations Provisioning App is in an **Installing** status until it completes.
 
 ## Application versions
 
@@ -85,8 +86,8 @@ As mentioned in the above instructions, you will have the ability to install var
 
 | Application version | Details | Available within |
 |---------------------|-------------|------------------|
-| 10.0.40.2 (Preview) | This is version 10.0.40, with 3 proactive quality updates installed. It is also a preview build. | Early Access / Preview Geos Only. |
+| 10.0.40.2 (Preview) | This is version 10.0.40, with 3 proactive quality updates installed. It is also a preview build. | [Early release cycle environments](/power-platform/admin/early-release) only. |
 | 10.0.39.4           | This is version 10.0.39, with 5 proactive quality updates installed. | All geos. |
 | 10.0.38.9           | This is version 10.0.38, with 10 proactive quality updates installed. | All geos. |
 
-You will notice that each application version will include its latest proactive quality update, there is no way to get an earlier build of an application version.  Also, preview builds are only available in the preview geos.
+You will notice that each application version will include its latest proactive quality update, there is no way to get an earlier build of an application version.  Preview builds are only available to [Early release cycle environments](/power-platform/admin/early-release).
