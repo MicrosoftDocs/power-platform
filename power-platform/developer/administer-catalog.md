@@ -19,7 +19,7 @@ contributors:
 Administering the catalog includes the following tasks:
 
 - [Setup the catalog](#setup-the-catalog)
-- [Setup users](#setup-users)
+- [Edit user access](#edit-user-access)
 - [Approve and reject submission requests](#approve-and-reject-submission-requests)
 - [Review install history](#review-install-history)
 - [Review catalog items](#review-catalog-items)
@@ -72,16 +72,11 @@ Clicking "New catalog" in the top menu or in the page itself will bring up a set
   
 You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog. 
 
-## Setup users
+## Edit user access
 
-The **Catalog Manager** application includes the following security roles you can associate to users, Microsoft Entra ID groups, and modern teams:
+After the catalog is set up, you may want to add, edit, or remove user access. This can be done in PPAC for any environment where you have setup the catalog. You will see a new set of roles in the security roles list"
 
-|Role |Description  |
-|---------|---------|
-|**Catalog Submitter**|Users with this role can submit items to the catalog.|
-|**Catalog Read-Only Member**|Users with this role can discover and install items from the catalog  |
-|**Catalog Approver**  |Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.|
-|**Catalog Administrator**|Users with this role can administer the catalog.|
+
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
