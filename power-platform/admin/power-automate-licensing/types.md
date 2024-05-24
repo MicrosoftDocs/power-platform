@@ -206,11 +206,11 @@ Consider the following flow where every email attachment is saved to OneDrive. T
 
 - If the parent flow is a manual flow, the child flow uses the limits of the parent flow's invoking user.
 
-- If the child flow has a per flow license, it uses the per flow limits and not the parent flow's limits.
+- If the child flow has a per flow license or a per process license, it uses the per flow or per process limits and not the parent flow's limits.
 
 - If a parent flow has a per flow license, the parent flow and all child flows use the per flow license limits.
 
-- If a flow has a Process license, the flow, all child flows of the flow and any associated flows of the flow share the process license limits.
+- If a flow has a Process license, the flow, all child flows (excluding those that have their own per flow or per process license) of the flow and any associated flows of the flow share the process license limits.
 
 #### As a maker, what tools do I have to analyze my usage?
 
