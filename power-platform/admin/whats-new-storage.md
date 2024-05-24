@@ -46,7 +46,9 @@ There are two versions for storage capacity reporting:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. However, the following admin operations aren't available when a tenant exceeds storage capacity entitlements:
+If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. 
+
+The following admin operations are not available when a tenant exceeds storage capacity entitlements:
 
 - Create new environment (requires minimum 1-GB capacity available)
 - Copy an environment (requires minimum 1-GB capacity available)
