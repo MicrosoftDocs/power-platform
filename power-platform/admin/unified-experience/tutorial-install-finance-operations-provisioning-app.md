@@ -52,7 +52,7 @@ Limitations for an installation of the provisioning app:
 2. You must first install the Platform tools app before installing the Provisioning app. The detailed steps are outlined in [Install on an environment](#install-on-an-environment).
 
    > [!NOTE]
-   > If you don't install the Provisioning app first, you get an error such as **Please install the Dynamics 365 Finance and Operations Platform Tools application before installing the Dynamics 365 Finance and Operations Provisioning app**. You can install the missing app, and then retry the installation of the Provisioning app.
+   > If you don't install the Platform Tools app first, you get an error such as **Please install the Dynamics 365 Finance and Operations Platform Tools application before installing the Dynamics 365 Finance and Operations Provisioning app**. You can install the missing app, and then retry the installation of the Provisioning app.
 
 ## Step-by-step installation guide
 
