@@ -1,6 +1,6 @@
 ---
 title: "Catalog in Power Platform (preview)"
-description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can re-use each other's work."
+description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can reuse each other's work."
 author: derekkwanpm
 ms.author: derekkwan
 ms.subservice: developer
@@ -24,7 +24,7 @@ contributors:
 
 Building from scratch every time by recreating branding, layouts, links, complex connectors and flows, and more is painful and error-prone.
 
-Organizations where developers and makers build and share customized and re-usable components and templates get more value from Power Platform. Successful organizations adopt a *fusion teams* model where pro-developers, makers, and admins all work together to deliver the best solutions for their users, and derive the highest value possible from Power Platform.
+Organizations where developers and makers build and share customized and reusable components and templates get more value from Power Platform. Successful organizations adopt a *fusion teams* model where pro-developers, makers, and admins all work together to deliver the best solutions for their users, and derive the highest value possible from Power Platform.
 
 In any organization, there might be many components and templates distributed among many environments. The catalog in Power Platform enables developers and makers to:
 
@@ -52,7 +52,7 @@ These terms are important to understand when using the catalog:
 
 |Term|Description|
 |---------|---------|
-|**Catalog Item**|The unit of interaction with the catalog is called an item. <br />- An item is what is being submitted to or installed from the catalog. <br /> - Typically, an item is a Dataverse solution or package deployer package. An item can contain a fully built application or a template for a Power App or flow or power platform code-first component such as a custom connector, Power Apps component framework (PCF) control. |
+|**Catalog Item**|The unit of interaction with the catalog is called an item. <br />- An item is what is being submitted to or installed from the catalog. <br /> - Typically, an item is a Dataverse solution or package deployer package. An item can contain a fully built application, a template for a Power App or flow, or a power platform code-first component such as a custom connector or Power Apps component framework (PCF) control. |
 |**Catalog Publisher**|The owning entity of the Application. For example, the publisher can be the human resources IT team or another Line of Business team.<br /> - A group of people in an organization that are responsible for managing its lifecycle. <br /> - Support and engineering contacts can be provided.<br /> - Not to be confused with the Solution Publisher|
 |**Submission** |The act of sharing an item involves submitting it to the catalog. This act creates a *submission request* in the system.|
 |**Submission Request**|The result of a submission. This request can be approved or declined. When auto approval is configured for the catalog, no approval is required.|
@@ -61,13 +61,13 @@ These terms are important to understand when using the catalog:
 
 ## Catalog Basics
 
-Every tenant will get a catalog auto-provisioned for them the first time you try to interact with the catalog. A catalog admin will still need to [set up permissions](administer-catalog.md) before an organization can start using the catalog.
+Every tenant gets a catalog autoprovisioned for them the first time you try to interact with the catalog. A catalog admin still needs to [set up permissions](administer-catalog.md) before an organization can start using the catalog.
 
-You may choose to have multiple catalogs across environments for different regions, departments, etc. Most orgs will only need one catalog. New catalogs can be set up by a catalog Admin in Power Platform Admin Center.
+You might choose to have multiple catalogs across environments for different regions, departments, or any group. Most orgs only need one catalog. A catalog admin can set up new catalogs in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
 You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types:
 
-1. A **template**: A copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
+1. A **template**: A copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution won't update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
 
    > [!NOTE]
    > Certain components are not supported for templating yet. View the updated list here.

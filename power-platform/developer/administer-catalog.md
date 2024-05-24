@@ -96,7 +96,7 @@ After the process is complete, you can access the Power Platform Catalog Manager
 
 ## Approve and reject submission requests
 
-Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval. More information: [Enable Auto Approval](catalog.md#enable-auto-approval) 
+Environment admins and users with the Catalog Approver role can review new submissions and approve or decline requests. If global auto approval or publisher level auto approval is turned on, then there's no requirement for manual review and approval.
 
 In the **Approvals** section of the navigation pane, select **Requests**.
 This list has 16 views. The most important ones are:
@@ -165,7 +165,7 @@ Catalog publishers have the following default columns:
 |**Publisher ID**|ID provided by item submitter|
 |**Description**|A description of the publisher|
 |**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br />|
-|**Allow Auto-Approval**|By enabling auto approval at the Publisher level, future submissions from this publisher are auto approved. Admins can use this strategy in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto approval can be turned on globally across all publishers here. More information: [Enable Auto Approval](catalog.md#enable-auto-approval)
+|**Allow Auto-Approval**|By enabling auto approval at the Publisher level, future submissions from this publisher are auto approved. Admins can use this strategy in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto approval can be turned on globally across all publishers here.|
 
 ### Review packages and solutions of items in catalog
 
@@ -224,7 +224,7 @@ After fixing the submission, trigger the submit again from PAC CLI. You see a ne
 
 In the **Deployment History** section of the navigation pane, select **Install History** to view a list of errors associated to an install.
 
-Select on the failed request name to get more information.
+Select the failed request name to get more information.
 
 ## Edit user access
 

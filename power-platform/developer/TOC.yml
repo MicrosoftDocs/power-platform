@@ -64,7 +64,7 @@
         - name: Administer the catalog
           href: administer-catalog.md
         - name: View, submit, and install catalog items
-          href: view-submit-install-catalog-items.md
+          href: submit-acquire-from-catalog.md
         - name: Use pac cli with catalog
           href: submit-catalog-items.md
     - name: Unified developer experience for finance and operations apps (preview)
