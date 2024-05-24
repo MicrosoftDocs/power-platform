@@ -1,16 +1,16 @@
 ---
 title: "Administer the catalog (preview)"
 description: "Learn how to administer the catalog for Power Platform after you have finished installing it. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
-author: derekk
-ms.subservice: developer
-ms.author: derekk
+author: derekkwanpm
+ms.author: derekkwan
 ms.date: 05/23/2024
 ms.reviewer: jdaly
 ms.topic: article
-search.audienceType: 
-  - developer
+ms.subservice: developer
+search.audienceType:
+- developer
 contributors:
- - JimDaly
+- JimDaly
 ---
 # Administer the catalog (preview)
 

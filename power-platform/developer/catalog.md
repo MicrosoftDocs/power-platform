@@ -2,8 +2,8 @@
 title: "Catalog in Power Platform (preview)"
 description: "Use the catalog in Power Platform to managed shared components and templates so that administrators, application makers, and developers within an organization can re-use each other's work."
 author: derekkwanpm
-ms.subservice: developer
 ms.author: derekkwan
+ms.subservice: developer
 ms.date: 05/15/2024
 ms.reviewer: jdaly
 ms.topic: article
@@ -67,9 +67,9 @@ You may choose to have multiple catalogs across environments for different regio
 
 You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types: 
 
-1. A template: a copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer “connected” to the solution it came from. If you want other makers to do whatever they please, use a template.
+1. A template: a copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
    1. NOTE: Certain components are not supported for templating yet. View the updated list here.
-2. A managed item: managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution “as is” and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
+2. A managed item: managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution "as is" and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
    1. Use the assets of the managed item as is and make no changes
    2. Build custom functionality on top of the assets in the managed item without changing the original components
    3. Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.) 

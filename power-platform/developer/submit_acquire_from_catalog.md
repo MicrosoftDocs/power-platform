@@ -1,9 +1,9 @@
 ---
 title: "Submit and acquire catalog items (preview)"
 description: "Learn how to submit and acquire items from your organization's catalog."
-author: derekk
+author: derekkwanpm
+ms.author: derekkwan
 ms.subservice: developer
-ms.author: derekk
 ms.date: 05/15/2024
 ms.reviewer: jdaly
 ms.topic: article
@@ -38,15 +38,15 @@ Power Platform admins and system customizers will already have full access to th
 
 ## Submission 
 
-[Unmanaged solutions](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm?source=recommendations#managed-and-unmanaged-solutions) in your environment can be published to the Catalog. This means in your normal course of creating solutions, you may decide that what you’re building would be useful as a re-usable artifact for yourself or others in your org. 
+[Unmanaged solutions](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm?source=recommendations#managed-and-unmanaged-solutions) in your environment can be published to the Catalog. This means in your normal course of creating solutions, you may decide that what you're building would be useful as a re-usable artifact for yourself or others in your org. 
 
-Navigate to your solutions page, and any unmanaged solution will have a new option for “Publish to Catalog” in the three vertical dots next to the solution display name. This option will be disabled for anyone without the Catalog Submitter role. 
+Navigate to your solutions page, and any unmanaged solution will have a new option for "Publish to Catalog" in the three vertical dots next to the solution display name. This option will be disabled for anyone without the Catalog Submitter role. 
 
 ![Catalog submission](power-platform/developer/media/catalog_submission.png)
 
 Note: this option will be disabled for managed solutions, as you cannot submit managed solutions into the catalog. Coming soon will be the capability to publish catalog items via pipelines. This will be the recommended method to follow proper ALM. 
 
-Similarly, you will not be able to submit an app, flow, or other component directly into the catalog. You must first ensure it exists in an unmanaged solution. You can do this by clicking “New solution” on top of the solutions screen (or choosing an existing one from the list), and then clicking “Add existing” in the top menu in the solution itself, and adding your desired component (such as an app or a flow): 
+Similarly, you will not be able to submit an app, flow, or other component directly into the catalog. You must first ensure it exists in an unmanaged solution. You can do this by clicking "New solution" on top of the solutions screen (or choosing an existing one from the list), and then clicking "Add existing" in the top menu in the solution itself, and adding your desired component (such as an app or a flow): 
 
 ![Add to solution](power-platform/developer/media/add_to_solution.png)
 
@@ -54,7 +54,7 @@ NOTE: Any maker with the Catalog Submitter role in a given environment will be a
 
 ![Catalog submission access error](power-platform/developer/media/access_error_submission.png)
 
-After clicking “Publish to Catalog”, you will access a wizard: 
+After clicking "Publish to Catalog", you will access a wizard: 
 
 1. **Step 1 (Add your solution)**
    1. Select a catalog: if you have multiple catalogs set up, you can select which catalog you would like to publish this item to
@@ -83,15 +83,15 @@ After clicking “Publish to Catalog”, you will access a wizard:
   
 ## Acquisition
 
-As makers browse the Discover page and find catalog items that are useful for them, they can acquire those artifacts and install a copy into their environment to start using and/or building with. Clicking on “get” on any template or managed item will open up a details popup which contains information like description, links, included components, business categories, expandable screenshots, and more.
+As makers browse the Discover page and find catalog items that are useful for them, they can acquire those artifacts and install a copy into their environment to start using and/or building with. Clicking on "get" on any template or managed item will open up a details popup which contains information like description, links, included components, business categories, expandable screenshots, and more.
 
 ![Catalog item tile](power-platform/developer/media/catalog_item.png)
 
-If the details meet what the maker is looking for, they can click “get” on the details popup to start the acquisition wizard. NOTE: if the catalog item is a managed item, and has already been installed in the environment, you cannot install the managed item again, as the environment shares that managed item. If the managed item has already been installed in an environment, and an update has been published to the managed item, you will see an "update" button instead of "get", which will update the shared managed solution in the environment. If the managed item was already updated, and no new updates have been published, you will see the "update" button, but it will be disabled until a new update is published again. 
+If the details meet what the maker is looking for, they can click "get" on the details popup to start the acquisition wizard. NOTE: if the catalog item is a managed item, and has already been installed in the environment, you cannot install the managed item again, as the environment shares that managed item. If the managed item has already been installed in an environment, and an update has been published to the managed item, you will see an "update" button instead of "get", which will update the shared managed solution in the environment. If the managed item was already updated, and no new updates have been published, you will see the "update" button, but it will be disabled until a new update is published again. 
 
-1. Step 1 (Connections): The first step checks the connections for the solution to make sure they are working for you in your environment. If there are any connection issues, you will see a red status notification, and can resolve by clicking the “...” next to the problematic connection to update it.
+1. Step 1 (Connections): The first step checks the connections for the solution to make sure they are working for you in your environment. If there are any connection issues, you will see a red status notification, and can resolve by clicking the "..." next to the problematic connection to update it.
 2. Step 2 (Environment variables): The publishing maker may decide some environment variables need to be specified before you can acquire the solution. Typically, these variables will be set to some default value. If unsure of what to fill out, check with the author of the catalog item or in the details of the catalog listing (available on the first details step).
-3. Step 3 (Configuration): The next step is also determined by the publishing maker, if they want you to provide any additional info for using the solution. This may include things like, “what days of the week do you run a report?”. If no additional info needed, this step will be blank. Proceeding from here kicks off the installation process.
+3. Step 3 (Configuration): The next step is also determined by the publishing maker, if they want you to provide any additional info for using the solution. This may include things like, "what days of the week do you run a report?". If no additional info needed, this step will be blank. Proceeding from here kicks off the installation process.
 4. Step 4 (Summary): When you reach the final step, the summary screen, you are now waiting for the catalog item to install into your environment. Depending on the complexity, this may take from less than a minute to several minutes. When complete, you will be given several options in the dropdown, depending on what's included in the catalog item, as well as if a primary component was set by the author. Below is an example where a canvas app is the primary component of the catalog item:
 
 ![Catalog item install options](power-platform/developer/media/acquisition_options.png)
