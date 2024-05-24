@@ -14,11 +14,9 @@ contributors:
 ---
 # View, submit, and install catalog items (preview)
 
-> [!IMPORTANT]
->
-> - [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+- [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+- [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+- While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 Before reading this article, you should:
 
@@ -162,8 +160,8 @@ Depending on what is contained in the catalog item package, different options wi
 
 After the catalog item is installed, you can find the catalog item:
 
-1. In the unmanaged solutions list in the Solutions page if the catalog item was a **template**
-1. In the managed solutions list in the Solutions page if the catalog item was a **managed item**
+- In the **Unmanaged solutions** list in the solutions page if the catalog item was a **template**
+- In the **Managed solutions** list in the solutions page if the catalog item was a **managed item**
 
 As previously mentioned, templates can be acquired as many times as you like, each as its own copy. The catalog will append a suffix to the unmanaged solution display name to differentiate the different copies. Managed items can be acquired only once into the managed solutions list, and all makers in the environment will share the same managed solution. This means you cannot acquire a managed item back into the same environment it was published from (the **Update** button will be disabled).
 

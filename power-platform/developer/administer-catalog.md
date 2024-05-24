@@ -14,7 +14,8 @@ contributors:
 ---
 # Administer the catalog (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+- [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+- [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 Administering the catalog includes the following tasks:
 

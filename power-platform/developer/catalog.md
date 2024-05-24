@@ -13,11 +13,12 @@ contributors:
 ---
 # Catalog in Power Platform (preview)
 
-> [!IMPORTANT]
->
-> - [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+- [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+- [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
+> [!NOTE]
 > - The catalog will be auto-provisioned the first time you interact with it. An admin may still need to set up role access depending on your permissions. If the catalog does automatically provision, please contact your admin to [set it up manually](administer-catalog.md).
+>
 > - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 ## Introduction
@@ -67,16 +68,16 @@ You might choose to have multiple catalogs across environments for different reg
 
 You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types:
 
-1. A **template**: A copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution won't update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
+- A **template**: A copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution won't update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
 
    > [!NOTE]
-   > Certain components are not supported for templating yet. View the updated list here.
+   > Certain components are not supported for templating yet.
 
-1. A **managed item**: Managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution *as is* and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
+- A **managed item**: Managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution *as is* and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
 
-   - Use the assets of the managed item as is and make no changes
-   - Build custom functionality on top of the assets in the managed item without changing the original components
-   - Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.)
+  - Use the assets of the managed item as is and make no changes
+  - Build custom functionality on top of the assets in the managed item without changing the original components
+  - Use the assets to assist with building your own solutions (for example, PCF components, Custom Connectors, and so on)
 
 Admins can administer catalogs, manage access and security, approve catalog items, and more in the [Catalog Manager](administer-catalog.md), which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful catalog items for themselves.  
 
