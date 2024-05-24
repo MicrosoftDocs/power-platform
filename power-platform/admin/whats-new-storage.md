@@ -46,7 +46,7 @@ There are two versions for storage capacity reporting:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. There are currently no performance degradations when storage usage exceeds licensed entitlements. However, the following admin operations aren't available when a tenant exceeds storage capacity entitlements:
+If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. However, the following admin operations aren't available when a tenant exceeds storage capacity entitlements:
 
 - Create new environment (requires minimum 1-GB capacity available)
 - Copy an environment (requires minimum 1-GB capacity available)
@@ -54,6 +54,13 @@ If you exceed your storage capacity, you receive email notifications that alert 
 - Convert a trial environment to paid (requires minimum 1-GB capacity available)
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
+
+Universal License Terms for Online Services ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply when a customer's storage consumption exceeds Online Service’s documented entitlement(s). 
+- Customer must acquire and assign the appropriate subscription licenses required for its use of each Online Service. Usage exceeding the Online Service’s documented entitlement(s) and/or usage limits require additional purchase of licenses to cover overage. 
+- Storage consumption exceeding the Online Service’s documented entitlement(s) may result in suspension of the Online Service.
+- Microsoft will provide reasonable notice before suspending an Online Service for storage consumption that exceeds the Online Service’s documented entitlement(s).
+
+If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity.
 
 More information:
 
