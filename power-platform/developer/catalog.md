@@ -67,16 +67,16 @@ You may choose to have multiple catalogs across environments for different regio
 
 You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types:
 
-1. A template: a copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
+1. A **template**: A copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
 
    > [!NOTE]
    > Certain components are not supported for templating yet. View the updated list here.
 
-1. A managed item: managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution "as is" and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
+1. A **managed item**: Managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution *as is* and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
 
-   1. Use the assets of the managed item as is and make no changes
-   1. Build custom functionality on top of the assets in the managed item without changing the original components
-   1. Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.) 
+   - Use the assets of the managed item as is and make no changes
+   - Build custom functionality on top of the assets in the managed item without changing the original components
+   - Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.)
 
 Admins can administer catalogs, manage access and security, approve catalog items, and more in the [Catalog Manager](administer-catalog.md), which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful catalog items for themselves.  
 
@@ -88,61 +88,61 @@ The catalog page will be available in Power Apps and Power Automate (Copilot Stu
 
 On the page itself are the following controls:
 
-1. Search box (searches the titles of available catalog items)
-2. Filters (filters for publisher, type, category, and more)
-3. Catalog selector (some orgs may choose to create multiple catalogs for regions, departments, etc). Users can have access to one or more catalogs.
+- Search box (searches the titles of available catalog items)
+- Filters (filters for publisher, type, category, and more)
+- Catalog selector (some orgs may choose to create multiple catalogs for regions, departments, etc). Users can have access to one or more catalogs.
 
 The list of Microsoft published catalog items that will be available in your catalog out of the box are (some may be unavailable during Public Preview):
 
-1. AI Prompts
-2. Copilot App templates
-3. Enterprise templates
-4. Power Platform data flows
-5. PCF controls
-6. Low code plugins
-7. Retail cloud templates
-8. Copilot agents
+- AI Prompts
+- Copilot App templates
+- Enterprise templates
+- Power Platform data flows
+- PCF controls
+- Low code plugins
+- Retail cloud templates
+- Copilot agents
 
 ## My Activity
 
-Linked in the banner of the catalog page is the My Activity page. This shows useful info on items you have submitted and acquired, including approval status. 
+Linked in the banner of the catalog page is the **My Activity** page. This shows useful info on items you have submitted and acquired, including approval status.
 
 :::image type="content" source="media/myactivity_catalog.png" alt-text="The catalog My Activity page":::
 
 Filters on top of the page allow you to look at different date ranges, types of catalog items, and across different catalogs (if you have multiple catalogs set up in your tenant).
 
-1. Metrics on this page:
+- Metrics on this page:
 
-   1. Total items submitted: sum of all items you submitted
-   1. Items approved: sum of all items you submitted that were approved by your admin
-   1. Items awaiting approval: sum of all items you submitted that your admin has not responded to yet
-   1. Items acquired: sum of all items you acquired from the catalog
+  - **Total items submitted**: Sum of all items you submitted
+  - **Items approved**: Sum of all items you submitted that were approved by your admin
+  - **Items awaiting approval**: Sum of all items you submitted that your admin has not responded to yet
+  - **Items acquired**: Sum of all items you acquired from the catalog
 
-1. Catalog items acquired table
+- Catalog items acquired table
 
-   1. Item ID: unique identifier for the acquired item
-   1. Item name: display name for the acquired item
-   1. Deployment type: if item is a template or managed
-   1. Date acquired: date item was last acquired
-   1. Status: current status of the acquired item (completed, failed, etc)
-   1. Message: status message, can explain why an item failed
+  - **Item ID**: Unique identifier for the acquired item
+  - **Item name**: Display name for the acquired item
+  - **Deployment type**: Whether item is a template or managed
+  - **Date acquired**: Date item was last acquired
+  - **Status**: Current status of the acquired item (completed, failed, etc)
+  - **Message**: Status message, can explain why an item failed
 
-1. Catalog items submitted table
+- Catalog items submitted table
 
-   1. Item ID: unique identifier for the submitted item
-   1. Item name: display name for the submitted item
-   1. Deployment type: if item is a template or managed
-   1. Date submitted: date item was last submitted
-   1. Status: current status of the submitted item (approved, rejected, pending approval, etc)
-   1. Reject reason: why a submitted item was rejected by an admin
+  - **Item ID**: Unique identifier for the submitted item
+  - **Item name**: Display name for the submitted item
+  - **Deployment type**: Whether item is a template or managed
+  - **Date submitted**: Date item was last submitted
+  - **Status**: Current status of the submitted item (approved, rejected, pending approval, etc)
+  - **Reject reason**: Why a submitted item was rejected by an admin
   
 ## Frequently asked questions (FAQ)
 
-The following are frequently asked questions related to catalog in Power Platform. If you don't find answers for questions in the documentation, use the **Feedback** section at the bottom of this page. Select on the **This page** button. You need to have a GitHub account to provide feedback.
+The following are frequently asked questions related to catalog in Power Platform.
 
 ### Q: Where do I provide feedback on catalog?
 
-Ask questions and submit feedback at:[github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
+Ask questions and submit feedback at: [github.com/microsoft/PowerPlatform-Catalog/discussions](https://github.com/microsoft/PowerPlatform-Catalog/discussions)
 
 ### Q: What are the items in the catalog?
 
@@ -177,19 +177,19 @@ Yes, catalog permissions can be targeted at [specific security groups](administe
 Learn how to administer the catalog.
 
 > [!div class="nextstepaction"]
-> [Administer the catalog](administer-catalog.md)<br/>
+> [Administer the catalog](administer-catalog.md)   
 
 Learn how to view, submit, and install catalog items.
 
 > [!div class="nextstepaction"]
-> [Submit and install catalog items](submit_acquire_from_catalog.md)<br/>
+> [Submit and install catalog items](submit_acquire_from_catalog.md)   
 
 Ask questions or contact the project team on GitHub.
 
 > [!div class="nextstepaction"]
-> [github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)<br/>
+> [github.com/microsoft/PowerPlatform-Catalog/discussions](https://github.com/microsoft/PowerPlatform-Catalog/discussions)   
 
 ### See also
 
-[Administer the catalog (Preview)](administer-catalog.md)<br />
-[Submit and install catalog items  (Preview)](submit_acquire_from_catalog.md)
+[Administer the catalog (Preview)](administer-catalog.md)   
+[Submit and install catalog items (Preview)](submit_acquire_from_catalog.md)
