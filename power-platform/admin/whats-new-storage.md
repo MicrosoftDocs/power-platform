@@ -55,19 +55,19 @@ If you exceed your storage capacity, you receive email notifications that alert 
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
 
-Universal License Terms for Online Services ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply when a customer's storage consumption exceeds Online Service’s documented entitlement(s). 
-- Customer must acquire and assign the appropriate subscription licenses required for its use of each Online Service. Usage exceeding the Online Service’s documented entitlement(s) and/or usage limits require additional purchase of licenses to cover overage. 
-- Storage consumption exceeding the Online Service’s documented entitlement(s) may result in suspension of the Online Service.
-- Microsoft will provide reasonable notice before suspending an Online Service for storage consumption that exceeds the Online Service’s documented entitlement(s).
-
-If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity.
-
 More information:
 
 - [Is there a database size restriction for backing-up or restoring an organization through the user interface or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api)
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
 - For the legacy capacity storage model, see [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario). 
 - For the new capacity storage model, see [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-overage-enforcement).
+
+Universal License Terms for Online Services ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply when a customer's storage consumption exceeds Online Service’s documented entitlement(s). 
+- Customer must acquire and assign the appropriate subscription licenses required for its use of each Online Service. Usage exceeding the Online Service’s documented entitlement(s) and/or usage limits require additional purchase of licenses to cover overage. 
+- Storage consumption exceeding the Online Service’s documented entitlement(s) may result in suspension of the Online Service.
+- Microsoft will provide reasonable notice before suspending an Online Service for storage consumption that exceeds the Online Service’s documented entitlement(s).
+
+If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity.
 
 ### Request a temporary extension
 
