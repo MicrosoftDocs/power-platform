@@ -26,51 +26,51 @@ Administering the catalog includes the following tasks:
 - [Review errors in install requests](#review-errors-in-install-requests)
 - [Edit user access](#edit-user-access)
 
-## Access controls 
+## Access controls
 
-The Catalog has a separate set of access controls from Power Platform. This means makers in a given environment do not automatically get permissions to publish and acquire items from the Catalog. There are four access roles: 
+The Catalog has a separate set of access controls from Power Platform. This means makers in a given environment do not automatically get permissions to publish and acquire items from the Catalog. There are four access roles:
 
-1. Catalog Submitter: Users with this role can submit items to the catalog. 
-2. Catalog Read-Only Member: Users with this role can discover and install items from the catalog 
-3. Catalog Approver: Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process. 
-4. Catalog Administrator: Users with this role can administer the catalog. 
+1. Catalog Submitter: Users with this role can submit items to the catalog.
+1. Catalog Read-Only Member: Users with this role can discover and install items from the catalog
+1. Catalog Approver: Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.
+1. Catalog Administrator: Users with this role can administer the catalog.
 
-Any environment that has a Catalog will see these roles inside of Power Platform Admin Center, and can be [assigned to groups or individuals](https://learn.microsoft.com/en-us/power-platform/admin/security-roles-privileges) just like any other roles. 
+Any environment that has a Catalog will see these roles inside of Power Platform Admin Center, and can be [assigned to groups or individuals](../admin/security-roles-privileges.md) just like any other roles.
 
-Power Platform admins and system customizers will already have full access to the Catalog. However, **do not** use assign these roles for generally managing catalog access, and instead use one of the roles from above. 
+Power Platform admins and system customizers will already have full access to the Catalog. However, **do not** use assign these roles for generally managing catalog access, and instead use one of the roles from above.
 
 ## Setup the catalog
 
 Before you can administer the catalog, you must install and configure it. Most organizations will be fine with just one catalog in their tenant (all environments in a tenant can install catalog items from a single catalog). But some orgs may want to have different catalogs for geos, departments, etc. The choice is yours. 
 
-To set up a catalog, go to the [Power Platform Admin Center (PPAC)](https://learn.microsoft.com/en-us/power-platform/admin/admin-documentation) for your tenant, and look for the "Catalogs" page under "Resources":
+To set up a catalog, go to the [Power Platform Admin Center (PPAC)](../admin/admin-documentation.md) for your tenant, and look for the "Catalogs" page under "Resources":
 
-[Catalog PPAC admin](power-platform/developer/media/admin_catalog.png)
+:::image type="content" source="media/admin_catalog.png" alt-text="Catalog in the Power Platform admin center":::
 
 Clicking "New catalog" in the top menu or in the page itself will bring up a setup wizard
 
 1. Step 1 (Setup)
-   2. Name - enter a name for the catalog
-   3. Language - set the language for your users of the catalog
-   4. Description - add some details that will help others understand what this catalog is for
-   5. Region - what region this catalog is for, which will filter the available environments
-   6. Environment - which environment in your tenant you want the catalog to be installed for (ensure some environments have been set up for you to select)
-   7. Status - uncheck this box if you want the catalog inactive after setting up
-2. Step 2 (Catalog administrators)
+   1. Name - enter a name for the catalog
+   1. Language - set the language for your users of the catalog
+   1. Description - add some details that will help others understand what this catalog is for
+   1. Region - what region this catalog is for, which will filter the available environments
+   1. Environment - which environment in your tenant you want the catalog to be installed for (ensure some environments have been set up for you to select)
+   1. Status - uncheck this box if you want the catalog inactive after setting up
+1. Step 2 (Catalog administrators)
    1. Select up to 10 AAD groups who can administer the catalog (ensure you have created some AAD groups for your users). 
-3. Step 3 (Approvers)
-   1. By default, catalog item submissions must be approved by an aprover or admin. Check the box if you want your tenant to allow submissions to be auto-approved.
-   2. Select up to 10 AAD groups who can approve catalog items before they are submitted into the catalog (see below for how to approve catalog items)
-4. Step 4 (Submitters)
+1. Step 3 (Approvers)
+   1. By default, catalog item submissions must be approved by an approver or admin. Check the box if you want your tenant to allow submissions to be auto-approved.
+   1. Select up to 10 AAD groups who can approve catalog items before they are submitted into the catalog (see below for how to approve catalog items)
+1. Step 4 (Submitters)
    1. Select up to 10 AAD groups who can submit catalog items to the catalog
-5. Step 5 (Consumers)
+1. Step 5 (Consumers)
    1. Select up to 10 AAD groups who can view and install catalog items from the catalog
-6. Step 6 (Categories)
+1. Step 6 (Categories)
    1. Select which business categories you would like to allow makers to use when submitting catalog items. These categories will also show up in the filters for the discover page to help makers find the catalog items they want. You can also add your own business categories as well.
 7. Step 7 (Review)
    1. This last step summarizes everything you just set up. If everything looks good, you can click the "terms and conditions" link to review the T&Cs, and if agreeable, just check the box and click "Create catalog" to finish setup
   
-You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog. 
+You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog.
 
 After the process is complete, you can access the Power Platform Catalog Manager from the same Catalogs screen under Resources in PPAC, or in the Apps screen inside of Power Apps. The Power Platform Catalog Manager is where you can perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
 
@@ -210,11 +210,11 @@ Select on the failed request name to get more information.
 
 After the catalog is set up, you may want to add, edit, or remove user access. This can be done in PPAC for any environment where you have setup the catalog. You will see a new set of roles in the security roles list"
 
-![Catalog security roles](power-platform/developer/media/catalog-roles.png)
+:::image type="content" source="media/catalog-roles.png" alt-text="Catalog security roles":::
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
 ### See also
 
-[Catalog in Power Platform (Preview)](catalog.md)<br />
+[Catalog in Power Platform (Preview)](catalog.md)   
 [View, submit, and install catalog items  (Preview)](submit-catalog-items.md)

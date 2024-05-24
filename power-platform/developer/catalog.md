@@ -59,36 +59,40 @@ These terms are important to understand when using the catalog:
 |**Discovery**|Act of finding items within a catalog by authorized users.|
 |**Acquisition**|Act of installing the item to a target environment by a developer.|
 
-## Catalog Basics 
+## Catalog Basics
 
 Every tenant will get a catalog auto-provisioned for them the first time you try to interact with the catalog. A catalog admin will still need to [set up permissions](administer-catalog.md) before an organization can start using the catalog.
 
-You may choose to have multiple catalogs across environments for different regions, departments, etc. Most orgs will only need one catalog. New catalogs can be set up by a catalog Admin in Power Platform Admin Center. 
+You may choose to have multiple catalogs across environments for different regions, departments, etc. Most orgs will only need one catalog. New catalogs can be set up by a catalog Admin in Power Platform Admin Center.
 
-You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types: 
+You can submit unmanaged solutions to the catalog for other makers to install and use for themselves, as one of these two catalog item types:
 
 1. A template: a copy of your unmanaged solution that other makers can edit however they choose. Updates to the original unmanaged solution will not update templates, as templates are no longer "connected" to the solution it came from. If you want other makers to do whatever they please, use a template.
-   1. NOTE: Certain components are not supported for templating yet. View the updated list here.
-2. A managed item: managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution "as is" and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
+
+   > [!NOTE]
+   > Certain components are not supported for templating yet. View the updated list here.
+
+1. A managed item: managed items can be updated with more versions as the original solution is updated, but are generally restricted from editing. If you want makers to use your solution "as is" and you also want to keep copies updated with your changes in the future, use a managed item. Managed items are useful for a variety of scenarios for makers:
+
    1. Use the assets of the managed item as is and make no changes
-   2. Build custom functionality on top of the assets in the managed item without changing the original components
-   3. Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.) 
+   1. Build custom functionality on top of the assets in the managed item without changing the original components
+   1. Use the assets to assist with building your own solutions (e.g. PCF components, Custom Connectors etc.) 
 
-Admins can administer catalogs, manage access and security, approve catalog items, and more in the [Catalog Manager]((administer-catalog.md)), which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful catalog items for themselves.  
+Admins can administer catalogs, manage access and security, approve catalog items, and more in the [Catalog Manager](administer-catalog.md), which is the dedicated workspace for admins of the catalog. The catalog itself is designed for makers of any level of experience to publish, discover, and acquire useful catalog items for themselves.  
 
-## Discovery 
+## Discovery
 
 The catalog page will be available in Power Apps and Power Automate (Copilot Studio and Power Pages will get the catalog in 2024). On the page will be tiles representing all catalog items available to your organization. This includes items published by your organization, approved partners who have access to your environments, as well as many published by Microsoft, such as AI prompts, Copilot App templates, Dataflow templates, Enterprise templates, PCF controls, Low-code plugins, and more.  
 
-![The Catalog gallery] (power-platform/developer/media/catalog_gallery.png)
+:::image type="content" source="media/catalog_gallery.png" alt-text="The catalog gallery":::
 
-On the page itself are the following controls: 
+On the page itself are the following controls:
 
 1. Search box (searches the titles of available catalog items)
 2. Filters (filters for publisher, type, category, and more)
-3. Catalog selector (some orgs may choose to create multiple catalogs for regions, departments, etc). Users can have access to one or more catalogs. 
+3. Catalog selector (some orgs may choose to create multiple catalogs for regions, departments, etc). Users can have access to one or more catalogs.
 
-The list of Microsoft published catalog items that will be available in your catalog out of the box are (some may be unavailable during Public Preview): 
+The list of Microsoft published catalog items that will be available in your catalog out of the box are (some may be unavailable during Public Preview):
 
 1. AI Prompts
 2. Copilot App templates
@@ -99,33 +103,38 @@ The list of Microsoft published catalog items that will be available in your cat
 7. Retail cloud templates
 8. Copilot agents
 
-## My Activity 
+## My Activity
 
 Linked in the banner of the catalog page is the My Activity page. This shows useful info on items you have submitted and acquired, including approval status. 
 
-![The catalog My Activity Page] (power-platform/developer/media/myactivity_catalog.png)
+:::image type="content" source="media/myactivity_catalog.png" alt-text="The catalog My Activity page":::
 
-Filters on top of the page allow you to look at different date ranges, types of catalog items, and across different catalogs (if you have multiple catalogs set up in your tenant). 
+Filters on top of the page allow you to look at different date ranges, types of catalog items, and across different catalogs (if you have multiple catalogs set up in your tenant).
 
-1. Metrics on this page: 
+1. Metrics on this page:
+
    1. Total items submitted: sum of all items you submitted
-   2. Items approved: sum of all items you submitted that were approved by your admin
-   3. Items awaiting approval: sum of all items you submitted that your admin has not responded to yet
-   4. Items acquired: sum of all items you acquired from the catalog
+   1. Items approved: sum of all items you submitted that were approved by your admin
+   1. Items awaiting approval: sum of all items you submitted that your admin has not responded to yet
+   1. Items acquired: sum of all items you acquired from the catalog
+
 1. Catalog items acquired table
+
    1. Item ID: unique identifier for the acquired item
-   2. Item name: display name for the acquired item
-   3. Deployment type: if item is a template or managed
-   4. Date acquired: date item was last acquired
-   5. Status: current status of the acquired item (completed, failed, etc)
-   6. Message: status message, can explain why an item failed 
+   1. Item name: display name for the acquired item
+   1. Deployment type: if item is a template or managed
+   1. Date acquired: date item was last acquired
+   1. Status: current status of the acquired item (completed, failed, etc)
+   1. Message: status message, can explain why an item failed
+
 1. Catalog items submitted table
+
    1. Item ID: unique identifier for the submitted item
-   2. Item name: display name for the submitted item
-   3. Deployment type: if item is a template or managed
-   4. Date submitted: date item was last submitted
-   5. Status: current status of the submitted item (approved, rejected, pending approval, etc)
-   6. Reject reason: why a submitted item was rejected by an admin
+   1. Item name: display name for the submitted item
+   1. Deployment type: if item is a template or managed
+   1. Date submitted: date item was last submitted
+   1. Status: current status of the submitted item (approved, rejected, pending approval, etc)
+   1. Reject reason: why a submitted item was rejected by an admin
   
 ## Frequently asked questions (FAQ)
 
@@ -135,7 +144,7 @@ The following are frequently asked questions related to catalog in Power Platfor
 
 Ask questions and submit feedback at:[github.com/microsoft/PowerPlatform-Catalog](https://github.com/microsoft/PowerPlatform-Catalog)
 
-### Q: What are the items in the catalog? 
+### Q: What are the items in the catalog?
 
 The catalog items are actually packages. A package contains one or more solutions and some metadata. The [Power Apps](https://make.powerapps.com) experiences can submit individual solutions. The PAC CLI experience can be used to create a package containing multiple solutions.
 

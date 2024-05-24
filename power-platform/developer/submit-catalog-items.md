@@ -1,10 +1,10 @@
 ---
 title: "Using the Catalog with CLI (preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
-author: samathur
+author: derekkwanpm
+ms.author: derekkwan
 ms.subservice: developer
-ms.author: samathur
-ms.date: 05/22/2023
+ms.date: 05/24/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
