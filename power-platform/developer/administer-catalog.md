@@ -19,12 +19,12 @@ contributors:
 Administering the catalog includes the following tasks:
 
 - [Setup the catalog](#setup-the-catalog)
-- [Edit user access](#edit-user-access)
 - [Approve and reject submission requests](#approve-and-reject-submission-requests)
 - [Review install history](#review-install-history)
 - [Review catalog items](#review-catalog-items)
 - [Review errors in submission requests](#review-errors-in-submission-requests)
 - [Review errors in install requests](#review-errors-in-install-requests)
+- [Edit user access](#edit-user-access)
 
 ## Access controls 
 
@@ -72,13 +72,7 @@ Clicking "New catalog" in the top menu or in the page itself will bring up a set
   
 You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog. 
 
-## Edit user access
-
-After the catalog is set up, you may want to add, edit, or remove user access. This can be done in PPAC for any environment where you have setup the catalog. You will see a new set of roles in the security roles list"
-
-
-
-More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
+After the process is complete, you can access the Power Platform Catalog Manager from the same Catalogs screen under Resources in PPAC, or in the Apps screen inside of Power Apps. The Power Platform Catalog Manager is where you can perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
 
 ## Approve and reject submission requests
 
@@ -211,6 +205,14 @@ After fixing the submission, trigger the submit again from PAC CLI. You see a ne
 In the **Deployment History** section of the navigation pane, select **Install History** to view a list of errors associated to an install.
 
 Select on the failed request name to get more information.
+
+## Edit user access
+
+After the catalog is set up, you may want to add, edit, or remove user access. This can be done in PPAC for any environment where you have setup the catalog. You will see a new set of roles in the security roles list"
+
+![Catalog security roles](power-platform/developer/media/catalog-roles.png)
+
+More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
 ### See also
 
