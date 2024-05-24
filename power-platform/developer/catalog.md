@@ -84,7 +84,7 @@ Admins can administer catalogs, manage access and security, approve catalog item
 
 The catalog page will be available in Power Apps and Power Automate (Copilot Studio and Power Pages will get the catalog in 2024). On the page will be tiles representing all catalog items available to your organization. This includes items published by your organization, approved partners who have access to your environments, as well as many published by Microsoft, such as AI prompts, Copilot App templates, Dataflow templates, Enterprise templates, PCF controls, Low-code plugins, and more.  
 
-:::image type="content" source="media/catalog_gallery.png" alt-text="The catalog gallery":::
+:::image type="content" source="media/catalog_gallery.png" lightbox="media/catalog_gallery.png" alt-text="The catalog gallery":::
 
 On the page itself are the following controls:
 
@@ -107,7 +107,7 @@ The list of Microsoft published catalog items that will be available in your cat
 
 Linked in the banner of the catalog page is the **My Activity** page. This shows useful info on items you have submitted and acquired, including approval status.
 
-:::image type="content" source="media/myactivity_catalog.png" alt-text="The catalog My Activity page":::
+:::image type="content" source="media/myactivity_catalog.png" lightbox="media/myactivity_catalog.png" alt-text="The catalog My Activity page":::
 
 Filters on top of the page allow you to look at different date ranges, types of catalog items, and across different catalogs (if you have multiple catalogs set up in your tenant).
 
@@ -118,7 +118,7 @@ Filters on top of the page allow you to look at different date ranges, types of 
   - **Items awaiting approval**: Sum of all items you submitted that your admin has not responded to yet
   - **Items acquired**: Sum of all items you acquired from the catalog
 
-- Catalog items acquired table
+- Catalog items acquired table:
 
   - **Item ID**: Unique identifier for the acquired item
   - **Item name**: Display name for the acquired item
@@ -127,7 +127,7 @@ Filters on top of the page allow you to look at different date ranges, types of 
   - **Status**: Current status of the acquired item (completed, failed, etc)
   - **Message**: Status message, can explain why an item failed
 
-- Catalog items submitted table
+- Catalog items submitted table:
 
   - **Item ID**: Unique identifier for the submitted item
   - **Item name**: Display name for the submitted item
@@ -170,7 +170,7 @@ Yes, documentation links are part of the metadata for a catalog item.
 
 ### Q: Can Catalogs be shared to security groups?
 
-Yes, catalog permissions can be targeted at [specific security groups](administer-catalog.md#setup-users).
+Yes, catalog permissions can be targeted at [specific security groups](administer-catalog.md#access-controls).
 
 ## Next steps
 

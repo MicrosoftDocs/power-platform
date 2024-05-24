@@ -30,10 +30,12 @@ Administering the catalog includes the following tasks:
 
 The catalog has a separate set of access controls from Power Platform. This means makers in a given environment do not automatically get permissions to publish and acquire items from the catalog. There are four access roles:
 
-- **Catalog Submitter**: Users with this role can submit items to the catalog.
-- **Catalog Read-Only Member**: Users with this role can discover and install items from the catalog.
-- **Catalog Approver**: Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process.
-- **Catalog Administrator**: Users with this role can administer the catalog.
+|Role|Enables user to:|
+|---------|---------|
+|**Catalog Submitter**|Submit items to the catalog|
+|**Catalog Read-Only Member**|Discover and install items from the catalog|
+|**Catalog Approver**|Approve submissions to the catalog.<br />Catalog approvers can be users from your central IT department or line of business that your organization wants to empower to participate in the approvals process.|
+|**Catalog Administrator**|Administer the catalog.|
 
 Any environment that has a catalog will see these roles inside of Power Platform Admin Center, and can be [assigned to groups or individuals](../admin/security-roles-privileges.md) just like any other roles.
 
@@ -230,7 +232,7 @@ Select the failed request name to get more information.
 
 After the catalog is set up, you may want to add, edit, or remove user access. This can be done in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for any environment where you have setup the catalog. You will see a new set of roles in the security roles list"
 
-:::image type="content" source="media/catalog-roles.png" alt-text="Catalog security roles":::
+:::image type="content" source="media/catalog-roles.png" lightbox="media/catalog-roles.png" alt-text="Catalog security roles":::
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
 
