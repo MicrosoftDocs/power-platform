@@ -19,9 +19,7 @@ contributors:
 - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
-Before you can work with catalog items, you must install and configure it. More information: [Get started](catalog.md#get-started)
-
-
+Before you can work with catalog items, you must install and configure it. 
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
@@ -38,7 +36,7 @@ Use the [pac catalog](cli/reference/catalog.md) commands to interact with the ca
 
 ### Get access to catalog as Submitter or Reader
 
-Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. [Learn to  user access](administer-catalog.md#edit-user-access)
+Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. [Learn to configure user access](administer-catalog.md#edit-user-access)
 
 ## Use the catalog
 
