@@ -18,12 +18,26 @@ contributors:
 
 Administering the catalog includes the following tasks:
 
+- [Setup the catalog](#setup-the-catalog)
 - [Setup users](#setup-users)
 - [Approve and reject submission requests](#approve-and-reject-submission-requests)
 - [Review install history](#review-install-history)
 - [Review catalog items](#review-catalog-items)
 - [Review errors in submission requests](#review-errors-in-submission-requests)
 - [Review errors in install requests](#review-errors-in-install-requests)
+
+## Access controls 
+
+The Catalog has a separate set of access controls from Power Platform. This means makers in a given environment do not automatically get permissions to publish and acquire items from the Catalog. There are four access roles: 
+
+1. Catalog Submitter: Users with this role can submit items to the catalog. 
+2. Catalog Read-Only Member: Users with this role can discover and install items from the catalog 
+3. Catalog Approver: Users with this role can approve submissions to the catalog. Catalog approvers can be users from your central IT department or Line of Business that your organization wants to empower to participate in the approvals process. 
+4. Catalog Administrator: Users with this role can administer the catalog. 
+
+Any environment that has a Catalog will see these roles inside of Power Platform Admin Center, and can be [assigned to groups or individuals](https://learn.microsoft.com/en-us/power-platform/admin/security-roles-privileges) just like any other roles. 
+
+Power Platform admins and system customizers will already have full access to the Catalog. However, **do not** use assign these roles for generally managing catalog access, and instead use one of the roles from above. 
 
 ## Setup the catalog
 
@@ -49,7 +63,14 @@ Clicking "New catalog" in the top menu or in the page itself will bring up a set
    2. Select up to 10 AAD groups who can approve catalog items before they are submitted into the catalog (see below for how to approve catalog items)
 4. Step 4 (Submitters)
    1. Select up to 10 AAD groups who can submit catalog items to the catalog
-   2. 
+5. Step 5 (Consumers)
+   1. Select up to 10 AAD groups who can view and install catalog items from the catalog
+6. Step 6 (Categories)
+   1. Select which business categories you would like to allow makers to use when submitting catalog items. These categories will also show up in the filters for the discover page to help makers find the catalog items they want. You can also add your own business categories as well.
+7. Step 7 (Review)
+   1. This last step summarizes everything you just set up. If everything looks good, you can click the "terms and conditions" link to review the T&Cs, and if agreeable, just check the box and click "Create catalog" to finish setup
+  
+You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog. 
 
 ## Setup users
 
