@@ -17,8 +17,8 @@ contributors:
 - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 > [!NOTE]
-> - The catalog will be auto-provisioned the first time you interact with it. An admin may still need to set up role access depending on your permissions. If the catalog does automatically provision, please contact your admin to [set it up manually](administer-catalog.md).
->
+> - The catalog needs to be set up by an admin before you can use it, including permissions. Admin instructions for [catalog setup is here](administer-catalog.md).
+> - The catalog only works with Dataverse enviornments. Non-Dataverse environments are not supported at this time.
 > - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
 ## Introduction
@@ -62,7 +62,7 @@ These terms are important to understand when using the catalog:
 
 ## Catalog Basics
 
-Every tenant gets a catalog autoprovisioned for them the first time you try to interact with the catalog. A catalog admin still needs to [set up permissions](administer-catalog.md) before an organization can start using the catalog.
+The catalog needs to be set up by an admin before you can use it, including permissions. Admin instructions for [catalog setup is here](administer-catalog.md).
 
 You might choose to have multiple catalogs across environments for different regions, departments, or any group. Most orgs only need one catalog. A catalog admin can set up new catalogs in the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
 
