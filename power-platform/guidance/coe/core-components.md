@@ -40,7 +40,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
 
 - **Flow** represents the cloud flows in the tenant.
 
-- **PowerApps App** represents an app, be it a canvas, model driven or other type.
+- **PowerApps App** represents an app. Be it a canvas, model driven or other type.
 
 - **PowerApps Connector** represents a standard or custom connector.
 
@@ -60,9 +60,9 @@ There are several concepts of Users in the inventory as well gathered.
 
 - **Connection Reference Identity** stores a list of a single instance of all user connections for each environment.
 
-- **Environment Security Role Permission** represents a permision to an environment. Including the user, the security role, the environment and other properties.
+- **Environment Security Role Permission** represents a permission to an environment. Including the user, the security role, the environment and other properties.
 
-- **Maker** represents a user who has created an object: app, flow, custom connector, or other object.
+- **Maker** represents a user who creates an object, such as an app, flow, custom connector, or other item.
 
 - **Power Platform User** represents who an app is shared with.
 
@@ -112,7 +112,7 @@ These tables are used to manage the CoE solution itself.
 
 ### Security roles
 
-These security roles only give permissions to the custom tables, not to the environment generally. If you would like users to see apps and flows in the environment you will need to grant them access individually to each object, or add them to another security role like System Admin or Environment Maker.
+These security roles only grant permissions to the custom tables, not to the environment as a whole. If you want users to view apps and flows in the environment, you need to individually grant them access to each object or add them to another security role like System Admin or Environment Maker.
 Learn more: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
 - **Power Platform Admin SR** Gives full access to create, read, write, and delete operations on the custom tables.
@@ -126,12 +126,12 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | Flow Name | Type | Interval | Description |
 | ---- | ---- | --- | ---- |
 | Admin \| Add Maker to Group | Automated | New Makers Added | This flow adds a user who created an app, flow, custom connector, or environment for the first time to your Maker group. This flow gets triggered when a new record is created in the maker table. |
-| Admin \| Excuse Non Inventoried Envts from Governance Flows | Automated | When the Excuse from Inventory column of an environment is changed | If you are only doing inventory for a subset of environments (not the default behavior) then this flow will ensure the ignored environments have their "excuse from" flags set correctly. |
+| Admin \| Excuse Non Inventoried Envts from Governance Flows | Automated | When the Excuse from Inventory column of an environment is changed | If you are only doing inventory for a subset of environments (not the default behavior), then this flow ensures the ignored environments have their "excuse from" flags set correctly. |
 | Admin \| Excuse Support Envts from Governance Flows | Automated | When an environment record is created in the Environments table | This flow checks if [support environments](/power-platform/admin/support-environment#what-are-support-environments) exist, and excludes those environments from the [inactivity](governance-components.md#inactivity-processes) and [compliance](governance-components.md#compliance-processes) governance processes. |
 | Admin \| Gather Tenant SRs | Schedule | Monthly | This flow retrieves the Security Roles in your tenant and ensures they are in the Tenant Security Roles table for management. |
 | Admin \| Sync Template v3 (Call Updates) | Scheduled | Weekly | Used to trigger other flows to run on a weekly schedule. Needed so that those flows can be of type button and be used to be run on demand or on a schedule.|
 | Admin \| Sync Template v3 (Connectors) | Button | Triggered from Admin \| Sync Template v3 (Call Updates) and manually from apps  | This flow gets connector information by using [Get Connectors](/connectors/powerappsforappmakers/#get-connectors), and stores information such as the connector name, publisher, and tier. |
-| Admin \| Sync Template v3 (Flow Action Details) | Automated | triggered by Admin \| Sync Template v4 (Driver) | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a very time-consuming and resource-consuming flow to run. Turning on this flow is optional, only do so to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
+| Admin \| Sync Template v3 (Flow Action Details) | Automated | triggered by Admin \| Sync Template v4 (Driver) | This flow gets the actions and triggers for all flows. This flow uses [Get Flow as Admin](/connectors/flowmanagement/#get-flow-as-admin) to get action and trigger details for every individual flow in your tenant. Thus, it can be a time-consuming and resource-consuming flow to run. Turning on this flow is optional, only do so to perform action-level reporting or analysis, such as reporting on who's using the Send Email action of the Microsoft 365 Outlook connector. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | Admin \| Sync Template v3 CoE Solution Metadata | Button | Triggered from Admin \| Sync Template v3 (Call Updates) and manually from apps | Updates the CoE Solution Metadata table with values from CoE team after upgrades in order to track the solution contents of the CoE solutions. |
 | Admin \| Sync Template v3 Configure Emails | Button | Triggered from Admin \| Sync Template v3 (Call Updates) and manually from apps | Updates the Customized Email table with values from MSFT CoE team after upgrades, for values not customized by local CoE admin. |
