@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Dataverse Git integration"
 description: "This page discusses the integration of Dataverse with Git, focusing on connecting to Azure DevOps and binding your environment for Dynamics 365 and Power Platform."
-author: caburk
+author: shmcarth
 ms.subservice: alm
 ms.author: matp
 ms.date: 04/16/2024
@@ -29,10 +29,10 @@ Git integration in Dataverse is initiated from the Power Platform on the Solutio
 
 ## Azure DevOps setup
 
-To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to.
+To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to. If you don't have an Azure DevOps project and repository set up, follow these steps to create a new project and repository in Azure DevOps.
 
 1. Sign in to [Azure DevOps](https://dev.azure.com/) and select your organization.
-1. Select **New project**, enter a name for your project, and select **Create**.
+1. Select **New project**, enter a name and ensure that your Version control is set to Git for your project, and select **Create**.
 1. In the new project, select **Repos** and then select **Initialize** at the bottom of the page to initialize the default repository.
 
 ## Connect Dataverse to Git
@@ -79,6 +79,10 @@ To validate your connection to Git, you can create a new solution or make change
 1. Here you see the changes made to the solution and can commit and push the changes to the repository as well as view the current branch your solution is bound to.
 
 Now that your environment and solutions are connected to Git, you can start making changes to your solutions and committing and pushing those changes to the repository. For more information on how to commit and push changes to the repository, see [Commit and push changes to Git](/power-platform/alm/git-integration/commit-and-push).
+
+## Disconnecting Dataverse from Git (coming soon)
+
+Although you can't change your binding type after the initial setup, you can disconnect your environment or solution from Git by selecting **Disconnect from Git** on the Solutions page. When you disconnect your environment or solution from Git, the source control information is removed from the environment or solution and the environment or solution is no longer connected to the repository. To disconnect your environment or solution from Git, follow these steps.
 
 ### Related content
 

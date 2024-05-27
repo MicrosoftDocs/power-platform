@@ -1,7 +1,7 @@
 ---
 title: "Common Dataverse Git integration Scenarios"
 description: "This page discusses common use cases of Dataverse with Git, focusing on high level concepts and requirements."
-author: caburk
+author: shmcarth
 ms.subservice: alm
 ms.author: matp
 ms.date: 04/16/2024

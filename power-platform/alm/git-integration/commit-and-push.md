@@ -1,7 +1,7 @@
 ---
 title: "View changes, commit, and push solution changes"
 description: "This page discusses the integration of Dataverse with Git, focusing on viewing changes, committing and pushing changes to the repository."
-author: caburk
+author: shmcarth
 ms.subservice: alm
 ms.author: matp
 ms.date: 04/16/2024
@@ -34,18 +34,16 @@ Unique folders and files are created for each component when committing to sourc
 - Each component instance is a child folder, using the export key as the name, then the component logical name to represent that record.
 - Other fields that export as files are at the same level using the unique name of the attribute they're stored in.
 
-## Merge conflict resolution (Coming soon)
+## Merge conflict resolution
 
-Merge conflict resolution in Dataverse allows you to resolve conflicts that occur when changes are made to the same solution component by multiple users. When a merge conflict occurs, you can resolve the conflict during the commit process by selecting to keep the component in source control or overwrite the changes with the component in your environment. You can then commit the changes to the repository to resolve the conflict.
-
-In cases where merge conflicts can't be resolved on a component level during the commit process, you can resolve conflicts using tools available in your source control system to resolve line by line conflicts when create a Pull Request for your working branch.
+In cases where merge conflicts occur during the commit process, you can resolve conflicts using tools available in your source control system. This can be done by creating a pull request in your source control system and using the conflict resolution tools available in the pull request experience.
 
 >[!NOTE]
 >In the situation where you are unable to resolve a conflict at the component level you will need to create a separate branch for resolving the conflicts. This can be done by pulling the changes into your branch and resolving the conflicts locally or via a pull request in your source control system using conflict resolution tools.
 
-## Pulling changes from source control (Coming soon)
+## Pulling changes from source control
 
-The ability to pull changes from source control allows you to refresh one or more unmanaged solutions in your environment with changes made by others or changes made in other branches. Pull changes into your environment is useful when you want to keep your environment in sync with the changes made in the source control repository outside of your environment. It can also be used to catch up with changes made in the main branch or other branches in the repository.
+The ability to pull changes from source control allows you to refresh one or more unmanaged solutions in your environment with changes made by others or changes made in other branches. Currently this feature is enabled by building unmanaged solutions from source control to import changes into your environment.
 
 ### Related content
 
