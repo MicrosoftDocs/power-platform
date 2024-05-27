@@ -74,7 +74,7 @@ Show only environments containing filter criteria.
 
 ## pac env list-settings
 
-List environment settings. These settings are limited to only the columns listed on [Organization table writable columns](../data-platform/reference/entities/organization?view=dataverse-latest#writable-columnsattributes). 
+List environment settings. These settings are limited to only the columns listed on [Organization table writable columns](./data-platform/reference/entities/organization?view=dataverse-latest#writable-columnsattributes). 
 
 [!INCLUDE [env-list-settings-intro](includes/env-list-settings-intro.md)]
 
@@ -108,7 +108,7 @@ Default environment (ID, url, unique name, or partial name).
 
 ## pac env update-settings
 
-Update environment settings. These settings are limited to only the columns listed on [Organization table, writable columns](../data-platform/reference/entities/organization?view=dataverse-latest#writable-columnsattributes). 
+Update environment settings. These settings are limited to only the columns listed on [Organization table, writable columns](./data-platform/reference/entities/organization?view=dataverse-latest#writable-columnsattributes). 
 
 [!INCLUDE [env-update-settings-intro](includes/env-update-settings-intro.md)]
 
