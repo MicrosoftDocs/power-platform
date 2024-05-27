@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Copilots and generative AI in Power Platform
-summary: Get an overview of where to find copilots and generative AI in Power Platform. Some links are to training modules. Other links point at product-specific content.
+summary: Get an overview of where to find copilots and generative AI in Power Platform. Some links are to training modules. Other links point to product-specific content.
 
 metadata:
   title: Copilots and generative AI in Power Platform
@@ -65,9 +65,13 @@ landingContent:
       - text: Microsoft Copilot learning hub
         url: /copilot/
       - text: Microsoft Copilot Studio
-        url: /microsoft-copilot-studio/
+        url: /microsoft-copilot-studio/      
+      - text: Microsoft Copilot for Microsoft 365 extensibility
+        url: /microsoft-365-copilot/extensibility/
       - text: Learn more as an app maker
-        url: https://aka.ms/clh-app-maker      
+        url: https://aka.ms/clh-app-maker
+      - text: Learn more ...
+        url: /copilot/          
 
 # Card
 #  - title: Copilot for industries
