@@ -13,13 +13,15 @@ search.audienceType:
 ---
 # Power Platform adoption maturity model: Goals and opportunities
 
-The goal of the Power Platform adoption maturity model is to help organizations and their partners to think through how they can improve their capabilities and decide which ones matter most. These decisions should be based not just on the technology capabilities but also on the digital transformation strategy of the organization.
+The goal of the Power Platform adoption maturity model is to help organizations and their partners to think through how they can improve their capabilities and decide which ones matter most.
+
+These decisions should be based not just on the technology capabilities but also on the digital transformation strategy of the organization.
 
 Let’s now look in detail at the five stages of the model and the opportunities within each stage:
 
 ## Level 100 – Initial
 
-*This phase describes the starting point for use of a new or undocumented process.* In the Initial phase the organization has pockets of success or experimentation with Microsoft Power Platform, but without any visibility into organization-wide adoption and use.  There's no overall strategy or governance approach, apps are largely in the default environment, and no data loss prevention (DLP) policies have been put in place.  Apps are mostly used by a single team and supported by the makers. Apps primarily use Excel and SharePoint as their data sources. The organization sees the potential of a strategic investment in Power Platform, but has no clear path forward for organization-wide execution.
+*This phase describes the starting point for use of a new or undocumented process.* In the Initial phase the organization has pockets of success or experimentation with Microsoft Power Platform, but without any visibility into organization-wide adoption and use.  No overall strategy or governance approach is in place. Apps are largely in the default environment, and no data loss prevention (DLP) policies have been implemented. Apps are mostly used by a single team and supported by the makers. Apps primarily use Excel and SharePoint as their data sources. The organization sees the potential of a strategic investment in Power Platform, but has no clear path forward for organization-wide execution.
 
 ### Opportunities
 
@@ -30,7 +32,7 @@ Let’s now look in detail at the five stages of the model and the opportunities
    :::column-end:::
    :::column span="":::
    ![Find and nurture champions](media/adoption-2.png "Find and nurture champions")
-      Find and [nurture champions](champions.md), recognize early success.
+      Find and [nurture champions](champions.md). Recognize early success.
    :::column-end:::
 :::column span="":::
 ![Get key sponsors on board](media/adoption-3.png "Get key sponsors on board")
@@ -40,11 +42,11 @@ Let’s now look in detail at the five stages of the model and the opportunities
 
 ## Level 200 – Repeatable
 
-*This phase describes a process that is at least documented sufficiently such that repeating the same steps may be attempted.* In the context of Microsoft Power Platform, organizations in the Repeatable stage are taking what they’ve learned in the Initial stage to put structure around the deployment of Power Platform, often through controls implemented by a central IT team or other team focused on Power Platform.  
+*This phase describes a process that is at least documented sufficiently such that repeating the same steps may be attempted.* In the context of Microsoft Power Platform, organizations in the Repeatable stage apply the lessons learned in the Initial stage to establish structure around the deployment of Power Platform. This structure frequently achieved through controls implemented by a central IT team or another team focused on Power Platform.  
 
-The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed to provide tenant-wide visibility into the use of Power Platform and begin to identify, if not control, applications that are beginning to become broadly used in the organization. Environments are used as needed, but in an ad hoc manner—for example, various production environments and different DLP policies might be created without a consistent strategy. These organizations sometimes believe that the use of Power Platform is running “out of control” until they shape their use of the administrative and governance controls available for Power Platform, transitioning to the Defined stage.
+The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed to provide tenant-wide visibility into the use of Power Platform and begin to identify, if not control, applications that are beginning to become broadly used in the organization. Environments are used as needed, but in an ad hoc manner—for example, various production environments and different DLP policies might be created without a consistent strategy. These organizations sometimes believe that the use of Power Platform is running "out of control" until they shape their use of the administrative and governance controls available for Power Platform, transitioning to the Defined stage.
 
-### Opportunities
+### Level 200 Opportunities
 
 :::row:::
    :::column span="":::
@@ -64,9 +66,9 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
 
 ## Level 300 – Defined
 
-*This phase describes a process that is defined/confirmed as a standard business process.* The Defined organization is standardizing the repeatable practices that evolved in the Repeatable phase. For example, environment and DLP requests are automated, solutions are used to move apps and flows between environments, and makers are starting to share common components. The organization is achieving measurable success with Microsoft Power Platform to digitally transform and has a defined Power Platform Center of Excellence team.  Much of this transformation may still reflect the organic growth that got the organization to this point, but the Center of Excellence team is working to automate those processes and define standard approaches that will move the organization to the Capable stage.
+*This phase describes a process that is defined/confirmed as a standard business process.* The Defined organization is standardizing the repeatable practices that evolved in the Repeatable phase. For example, environment and DLP requests are automated, solutions are used to move apps and flows between environments, and makers are starting to share common components. The organization is achieving measurable success with Microsoft Power Platform to digitally transform and has a defined Power Platform Center of Excellence team. Much of this transformation may still reflect the organic growth that got the organization to this point, but the Center of Excellence team is working to automate those processes and define standard approaches that will move the organization to the Capable stage.
 
-### Opportunities
+### Level 300 Opportunities
 
 :::row:::
    :::column span="":::
@@ -85,9 +87,9 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
 
 ## Level 400 – Capable
 
-*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.* The Capable organization has standard processes for managing and monitoring Microsoft Power Platform.  These processes, described during the Defined stage, are now largely automated and are well understood by makers.  Power Platform capabilities are being used to transform the business broadly and for enterprise-critical apps and integrations. Platform Champions have established channels for sharing best practices, training new makers, and conducting regular hackathons.  Standard, branded app templates and components are available to all makers. Business value assessments are carried out to measure and understand the impact of Power Platform.
+*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.* The Capable organization has standard processes for managing and monitoring Microsoft Power Platform. These processes, described during the Defined stage, are now largely automated and are well understood by makers. Power Platform capabilities are being used to transform the business broadly and for enterprise-critical apps and integrations. Platform Champions have established channels for sharing best practices, training new makers, and conducting regular hackathons. Standard, branded app templates and components are available to all makers. Business value assessments are carried out to measure and understand the impact of Power Platform.
 
-### Opportunities
+### Level 400 Opportunities
 
 :::row:::
    :::column span="":::
@@ -107,14 +109,14 @@ Create [shared component libraries](reusable.md) with common design patterns, su
 
 ## Level 500 – Efficient
 
-*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.*  In the context of Microsoft Power Platform, in the Efficient stage the organization has proven the capabilities of Power Platform to rapidly transform mission-critical capabilities.  Standardized, automated processes and an established community of experts allow new digitization opportunities to be implemented rapidly, allowing the organization to recognize value quickly and begin to integrate more advanced capabilities, such as AI. Fusion teams enable legacy capabilities and modern cloud architecture to be used easily within Power Platform, unlocking broad use of existing data and automation. In organizations at the Efficient stage, Power Platform is a key part of the digital transformation strategy and enterprise architecture in the organization. Organizations at this stage have exec sponsorship for Power Platform. Organizations at the Efficient stage influence best practices in the community and drive new uses of Power Platform.
+*This phase describes a process that is quantitatively managed in accordance with agreed-upon metrics.*  In the context of Microsoft Power Platform, in the Efficient stage, the organization has proven the capabilities of Power Platform to rapidly transform mission-critical capabilities. Standardized, automated processes and an established community of experts contribute to the rapid implementation of new digitization opportunities, enabling the organization to quickly realize value and start integrating more advanced capabilities, such as AI. Fusion teams enable legacy capabilities and modern cloud architecture to be used easily within Power Platform, unlocking broad use of existing data and automation. In organizations at the Efficient stage, Power Platform is a key part of the digital transformation strategy and enterprise architecture in the organization. Organizations at this stage have exec sponsorship for Power Platform. Organizations at the Efficient stage influence best practices in the community and drive new uses of Power Platform.
 
-### Opportunities
+### Level 500 Opportunities
 
 :::row:::
    :::column span="":::
       ![Use the Innovation Backlog app to submit ideas](media/adoption-13.png "Use the Innovation Backlog app to submit ideas")
-      Enable everyone to [submit ideas](../coe/use-innovationbacklog.md), describe pain points, and pick the most valuable ideas for development. Build a portfolio for your career development opportunities. Provide “big picture” dashboards emphasizing the impact of the platform.
+      Enable everyone to [submit ideas](../coe/use-innovationbacklog.md), describe pain points, and pick the most valuable ideas for development. Build a portfolio for your career development opportunities. Provide "big picture" dashboards emphasizing the impact of the platform.
    :::column-end:::
    :::column span="":::
       ![Simplify application lifecycle management](media/adoption-14.png "Simplify application lifecycle management")
