@@ -128,7 +128,6 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Apps for Admins](/connectors/powerappsforadmins/)
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
-<!-- - [Power Platform for Admins V2](connectors/powerplatformadminv2/) -->
 - [Power Automate Management](/connectors/flowmanagement/)
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
 - [Power Query Dataflows](/connectors/dataflows/)

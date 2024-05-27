@@ -255,8 +255,6 @@ To use this update value of the DelayObjectInventory environment variable to Yes
 
 See [How to update environment variables](#update-environment-variables) for how to update environment variables.
 
-<!-- See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory. -->
-
 ## Cross Tenant Connection Identities
 
 In the Power Platform Admin View app, you can see where we highlight cross tenant connection identities. How do we configure what is considered cross tenant?
@@ -269,8 +267,6 @@ Enter any hosts you which to add to this environment variable as a comma separat
     ![Configure cross tenant connections.](media/coe-cross-tenant-connectoin-reference2.png "Configure cross tenant connections")
 
 See [How to update environment variables](#update-environment-variables) for how to update environment variables.
-
-<!-- See [All inventory environment variables](./setup-core-components#all-environment-variables)) for full list of environment variables associated with Inventory. -->
 
 ### How to update data to respect configured local tenants
 
@@ -298,7 +294,6 @@ We have demonstrated how to achieve this using the Excel Add-In, which is ideal 
 
 ## How to activate Business Process Flows?
 
-<!-- Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, for example the [Compliance processes](./governance-components#compliance-processes), you will need to activate them manually. -->
 Occasionally, users encounter disabled Business Process Flows (BPFs) within the kit due to installation issues. In such cases, to utilize features relying on these BPFs, you need to activate them manually.
 
 1. Browse to the solution with the BPFs and click to view Processes

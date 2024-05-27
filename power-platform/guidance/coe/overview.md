@@ -48,8 +48,6 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
 
 1. Identify orphaned apps, and assign them to new owners by using the embedded app in the Power BI dashboard.
 
-    <!-- ![Set App Permissions canvas app.](media/SetAppPerms.PNG "Set App Permission canvas app") -->
-
 1. Start planning your governance strategy by identifying your requirements for what makes a compliant app or maker, what information you'll need per app or per maker, what happens to noncompliant apps and makers, how you'll support your maker community in building compliant apps that follow best practices, and what actions you'll drive based on this information.
 
     ![Developer Compliance Center canvas app.](media/coe4.PNG "Developer Compliance Center canvas app")
