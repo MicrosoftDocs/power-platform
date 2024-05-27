@@ -30,7 +30,9 @@ Larger tenants might require a [Power Automate Per Flow](https://powerautomate.m
 
 ## Flows that were never activated
 
-The Admin | Sync Template v4 (Flows) flow fails to collect flows that were never activated. These are referred to as unpublished flows. For example, If you import a solution with flows that are turned off, they are not collected for inventory because they are not returned by the connector.
+The Admin | Sync Template v4 (Flows) flow fails to collect flows that were never activated. These inactive flows referred to as unpublished flows.
+
+For example, if you import a solution with flows that are turned off, these inactive flows are not collected for inventory because they are not returned by the connector.
 
 ## Co-authoring and Connections
 
@@ -46,7 +48,7 @@ To do the later, browse to the default solution, filter to connection references
 
 ## Supported languages
 
-The CoE Starter Kit solutions do not offer localization and only support English. Be sure to include the English language pack in your environment to ensure compatibility with all apps and flows.
+To ensure compatibility with all apps and flows, include the English language pack in your environment as the CoE Starter Kit solutions do not offer localization and only support English.
 More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Coe Owned by Service Principle
@@ -71,7 +73,7 @@ Multi-factor authentication can be used for the account setting up the CoE Start
 
 ## PIM (Privileged Identity Management)
 
-These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management), this won't be sufficient to run the CoE Starter Kit.
+These roles and licenses must be available to this user continuously; if admin access is granted only temporarily via [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management), temporary access won't be sufficient to run the CoE Starter Kit.
 
 ## Monitoring cloud flow runs
 
