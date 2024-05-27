@@ -28,7 +28,7 @@ This article provides you with answers to frequently asked questions and tips on
 1. To activate your solution, establish connections. If you create a new connection, ensure to select **Refresh**. Your import progress remains intact.
 
      ![To activate your solution, establish connections.](media/msi-import.png "To activate your solution, establish connections.")
-1. Update environment variable values. These environment variables store application and flow configuration data specific to your organization or environment. By setting the value once per environment, it will be utilized across all necessary flows and applications within that environment.
+1. Update environment variable values. These environment variables store application and flow configuration data specific to your organization or environment. By setting the value once per environment, it is utilized across all necessary flows and applications within that environment.
     ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
 1. Select **Import**.
 
@@ -56,12 +56,12 @@ To find the Security Roles of a user in an environment, you can use the product 
     ![Find environment SRs 1](media/find-SR-1.png "Find environment SRs 1")
 4. From Users + Permissions, select Users
     ![Find environment SRs 2](media/find-SR-2.png "Find environment SRs 2")
-5. Locate the user and select their name to view their properties. There, you will see their Security Roles.
+5. Locate the user and select their name to view their properties. There, you see their Security Roles.
     ![Find environment SRs 3](media/find-SR-3.png "Find environment SRs 3")
 
 ## Import a Flow
 
-Sometimes we ship a one off flow to use in order to patch an issue. The first thing you need to do when we offer these is to import the flow. Here is how to import flows.
+Occasionally, we deploy a one-time flow to address specific issues. When these flows are made available, the first step is to import them. Below are the instructions for importing flows.
 
 1. Go to [https://make.powerautomate.com/](https://make.powerautomate.com/)
 1. Select your target environment. For us that will typically be our CoE Environment.
@@ -78,10 +78,10 @@ Sometimes we ship a one off flow to use in order to patch an issue. The first th
 
 ## Setting up CoE for a subset of environments
 
-You may want to monitor and govern only certain environments with the CoE Starter Kit. For example, if you're setting up the CoE Starter Kit up for individual business organizations running their own smaller CoE or if you want to include your Dynamics 365 environments from the processes in the CoE Starter Kit. The following option outlines how to enable the CoE Starter Kit processes selectively for specific environments.
+You may want to monitor and govern only certain environments using the CoE Starter Kit. For example, this could be applicable if you are setting up the CoE Starter Kit for individual business units managing their own smaller Centers of Excellence or if you wish to include your Dynamics 365 environments in the CoE Starter Kit processes. The following option outlines how to selectively enable CoE Starter Kit processes for specific environments
 
 > [!IMPORTANT]
-> This is not a security feature and doesn't implement data privacy or row-level security. The feature is only intended to make monitoring and managing environments easier for organizational units.
+> This is not a security feature and does not implement data privacy or row-level security. It is solely intended to facilitate the monitoring and management of environments for organizational units.
 
 1. After import of the Core components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. Learn more: [Update environment variables](#update-environment-variables)).
 1. Continue with the [inventory setup](setup-core-components.md) and turn on all inventory flows.
@@ -96,7 +96,7 @@ All environments in the tenant are added as excluded from inventory
 
 ## Running a full inventory
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects, which have been modified since the object was last inventoried.
+To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects modified since the last inventory.
 
 The inventory flows also don't check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
 
@@ -118,7 +118,7 @@ If you want to fully update your entire inventory again, you can do that by chan
 
 ### Force inventory on Objects
 
-To reduce API calls, the inventory flows do not update all objects with each sync run. Instead, they only update objects that have been modified since they were last inventoried.
+To reduce API calls, the inventory flows do not update all objects with each synchronization run. Instead, they only update objects modified since the last inventory.
 
 If you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag.
 
@@ -137,7 +137,7 @@ Once this flag has been set to **Yes**, the next inventory run updates the objec
 
 We gather details about the flows actions in a long running flow called **Admin | Sync Template v3 (Flow Action Details)**.
 
-To force this to run for your flow you can use the **Inventory My FlowActionDetails** flag.
+To force this to run for your flow, you can use the **Inventory My FlowActionDetails** flag.
 
 1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **Power Platform Admin View** app.
@@ -153,7 +153,7 @@ To force this to run for your flow you can use the **Inventory My FlowActionDeta
 The following limitations apply when updating environment variables:
 
 - You can't update the values for environment variables from within the imported solution.
-- Always add or update the current value, not the default value, because the default value will be overwritten when you install an upgrade.
+- Always add or update the current value, not the default value, as the default value is overwritten when you install an upgrade.
 - You can't update Azure Key Vault secret environment variables using the CoE Admin Command Center. Instead, update them via the **Default Solution**.
 
 ### Update CoE Starter kit specific environment variables
@@ -169,7 +169,7 @@ To update environment variables used in the kit, you can use the [CoE Admin Comm
 
 ### Ensure flows that use it are not cached
 
-Sometimes Power Automate will cache old values for environment variables. If you do not see the expected behavior after changing an environment variable, it is recommended to restart the impacted flows after setting the environment variable.
+At times, Power Automate caches old values for environment variables. If you do not see the expected behavior after changing an environment variable, it is recommended to restart the impacted flows after setting the environment variable.
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
@@ -274,7 +274,7 @@ See [How to update environment variables](#update-environment-variables) for how
 
 ### How to update data to respect configured local tenants
 
-Note that changing the Host Domains environment variable will not retroactively update the old data in the tables. As we anticipate this setting change to be infrequent, we do not regularly compare it to avoid additional API hits. Therefore, you will need to update this manually.
+Note that changing the Host Domains environment variable does not retroactively update the old data in the tables. As we anticipate this setting change to be infrequent, we do not regularly compare it to avoid additional API hits. Therefore, you need to update this manually.
 
 There are multiple methods to accomplish this, including custom flows, the Excel add-in, or through plugins.
 The underlying logic remains consistent, allowing you to choose the method that best suits your needs.
@@ -299,7 +299,7 @@ We have demonstrated how to achieve this using the Excel Add-In, which is ideal 
 ## How to activate Business Process Flows?
 
 <!-- Occasionally people will see the BPFs used in the kit as disabled due to some issue with their install. If this happens and you want to use the features that employ them, for example the [Compliance processes](./governance-components#compliance-processes), you will need to activate them manually. -->
-Occasionally, users may encounter disabled Business Process Flows (BPFs) within the kit due to installation issues. In such cases, if you wish to utilize features that rely on these BPFs, you will need to activate them manually.
+Occasionally, users encounter disabled Business Process Flows (BPFs) within the kit due to installation issues. In such cases, to utilize features relying on these BPFs, you need to activate them manually.
 
 1. Browse to the solution with the BPFs and click to view Processes
 1. Find BPFs that are turned off and click their name to open
