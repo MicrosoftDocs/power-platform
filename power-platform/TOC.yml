@@ -17,10 +17,14 @@
           href: solution-templates/overview.md
         - name: International availability
           href: availability.md
-        - name: Turn on copilots and generative AI features
-          href: admin/geographical-availability-copilot.md
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
+        - name: Copilots and generative AI features
+          items:
+            - name: Overview
+              href: copilot/index.yml
+            - name: Turn on copilots and generative AI features
+              href: admin/geographical-availability-copilot.md
         - name: Responsible AI
           items:
             - name: Overview

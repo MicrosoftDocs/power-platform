@@ -1,0 +1,96 @@
+### YamlMime:Landing
+
+title: Copilots and generative AI in Power Platform
+summary: Get an overview of where to find copilots and generative AI in Power Platform. Some links are to training modules. Other links point at product-specific content.
+
+metadata:
+  title: Copilots and generative AI in Power Platform
+  description: Get an overview of where to find copilots and generative AI in Power Platform. 
+  author: jhaskett-msft
+  ms.author: jhaskett
+  ms.date: 05/27/2024
+  ms.topic: landing-page # DON'T CHANGE
+  ms.custom: bap-template #Required; don't change.
+
+# linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
+
+landingContent:
+
+# Card
+  - title: Enable copilots in Power Platform
+    linkLists:
+    - linkListType: get-started
+      links:
+      - text: Turn on copilots and generative AI features
+        url: ../admin/geographical-availability-copilot.md
+    - linkListType: learn
+      links:
+      - text: Find training
+        url: https://aka.ms/clh-functional-consultant
+
+# Card
+  - title: Copilots in Power Platform
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Copilot in Power Apps
+        url: /power-apps/maker/canvas-apps/ai-overview
+      - text: Copilot in Power Automate
+        url: /power-automate/get-started-with-copilot
+      - text: Copilot in Power Pages
+        url: /power-pages/configure/ai-copilot-overview
+      - text: More...
+        url: /copilot/
+
+# Card
+  - title: Find training
+    linkLists:
+    - linkListType: get-started
+      links:
+      - text: Introduction to Copilot in Microsoft Power Platform
+        url: /training/modules/introduction-copilot-power-platform/
+      - text: Get started with Copilot for Microsoft Power Platform
+        url: /training/paths/copilot-power-platform/
+      - text: Create Power Platform solutions with AI and Copilot
+        url: /training/paths/copilot-solutions/
+      - text: Create apps, copilots, flows, and more with Microsoft Dataverse and Teams
+        url: /training/paths/work-power-platform-teams/
+      
+
+## Card
+  - title: Copilot for everyone
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Microsoft Copilot learning hub
+        url: /copilot/
+      - text: Microsoft Copilot Studio
+        url: /microsoft-copilot-studio/
+      - text: Learn more as an app maker
+        url: https://aka.ms/clh-app-maker      
+
+# Card
+#  - title: Copilot for industries
+#    linkLists:
+#      - linkListType: overview
+#        links:
+#          - text: Copilot for Finance
+#            url: /copilot/finance/index
+#          - text: Copilot for Sales
+#            url: /microsoft-copilot-sales/
+#          - text: Copilot for Service
+#            url:  /microsoft-copilot-service/
+
+# Card
+  - title: Responsible AI
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Overview
+        url: ../responsible-ai-overview.md
+      - text: FAQ for Copilot data security and privacy
+        url: ../faqs-copilot-data-security-privacy.md
+      - text: FAQ for optional data sharing for Copilot
+        url: ../faqs-copilot-data-sharing.md
+      - text: FAQ for using Copilot to generate deployment notes in pipelines
+        url: ../alm/faqs-ai-deployment-notes-pipelines.md
