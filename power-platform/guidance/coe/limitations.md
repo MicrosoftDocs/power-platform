@@ -13,7 +13,7 @@ search.audienceType:
 ---
 # Limitations
 
-There is no "one size fits all" solution for implementing a Center of Excellence (CoE). Each company has its own preferences and objectives, with some opting for stringent rules to mitigate risks, while others prioritize user exploration with minimal constraints. Therefore, the CoE Starter Kit does not provide a predefined set of design patterns applicable to all scenarios. If your organization requires a more restrictive approach, it must implement more restrictions alongside utilizing the tools offered by the starter kit.
+There's no "one size fits all" solution for implementing a Center of Excellence (CoE). Each company has its own preferences and objectives, with some opting for stringent rules to mitigate risks, while others prioritize user exploration with minimal constraints. Therefore, the CoE Starter Kit doesn't provide a predefined set of design patterns applicable to all scenarios. If your organization requires a more restrictive approach, it must implement more restrictions alongside utilizing the tools offered by the starter kit.
 
 The following sections describe limitations for some components.
 
@@ -32,30 +32,30 @@ Larger tenants might require a [Power Automate Per Flow](https://powerautomate.m
 
 The Admin | Sync Template v4 (Flows) flow fails to collect flows that were never activated. These inactive flows referred to as unpublished flows.
 
-For example, if you import a solution with flows that are turned off, these inactive flows are not collected for inventory because they are not returned by the connector.
+For example, if you import a solution with flows that are turned off, these inactive flows aren't collected for inventory because they aren't returned by the connector.
 
-## Co-authoring and Connections
+## Coauthoring and Connections
 
 If you have multiple identities managing the CoE Starter Kit, you may see this error when trying to use the flows:
 
-`The caller with object id '...GUID...' does not have permission for connection...`
+`The caller with object id '...GUID...' doesn't have permission for connection...`
 
-The product does not yet support multiple people using connection references.
+The product doesn't yet support multiple people using connection references.
 
 If you see this error, you should either log in with the identity that installed the solution to run the flows, or update the flows to use your identity.
 
-To do the later, browse to the default solution, filter to connection references, and edit each connection to use your connection instead.
+To do the latter, browse to the default solution, filter to connection references, and edit each connection to use your connection instead.
 
 ## Supported languages
 
-To ensure compatibility with all apps and flows, include the English language pack in your environment as the CoE Starter Kit solutions do not offer localization and only support English.
+To ensure compatibility with all apps and flows, include the English language pack in your environment as the CoE Starter Kit solutions don't offer localization and only support English.
 More information: [Regional and language options for your environment](/power-platform/admin/enable-languages)
 
 ## Coe Owned by Service Principle
 
-Not all connectors yet support Service Principles. For example, the Dataverse connector does not yet support them.
+Not all connectors yet support Service Principles. For example, the Dataverse connector doesn't yet support them.
 
-As a result, you cannot install and run the CoE Starter Kit using a Service Principle as an identity.
+As a result, you can't install and run the CoE Starter Kit using a Service Principle as an identity.
 
 ## Security groups and approvals
 
@@ -64,7 +64,7 @@ If you choose to use a security group to control access to the environment, manu
 
 ## Trial licenses
 
-Trial licenses do not have sufficient [API call allowances](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) to run the CoE Starter Kit flows.
+Trial licenses don't have sufficient [API call allowances](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) to run the CoE Starter Kit flows.
 For full list of license requirements, see [Setup Prerequisite](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
 
 ## MFA (Multi-Factor Authentication)
@@ -83,7 +83,7 @@ Monitoring Desktop flow runs is included, although limited. For more details on 
 
 ## Unpublished model-driven apps
 
-Because of a product limitation, model-driven apps that are not published are not included in the inventory, as they are not retrieved from the storage table.
+Because of a product limitation, model-driven apps that aren't published aren't included in the inventory, as they aren't retrieved from the storage table.
 
 ## Desktop flow runs
 
@@ -100,11 +100,11 @@ Learn more:
 
 ## Missing custom connectors
 
-We can only gather custom connectors that exist outside of solutions and those that are accessible to the identity executing the sync flows. Therefore, custom connectors within a solution, which are not accessible to the executing identity, are not included in the inventory.
+We can only gather custom connectors that exist outside of solutions and those that are accessible to the identity executing the sync flows. Therefore, custom connectors within a solution, which aren't accessible to the executing identity, aren't included in the inventory.
 
 ## Inventory and telemetry differences between PowerShell, Power Platform Admin Center, and CoE Starter Kit
 
-If you are using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
+If you're using [PowerShell for Power Platform Administrators](/power-platform/admin/powershell-getting-started) and the [Power Platform Admin Center](/power-platform/admin/wp-work-with-admin-portals) together with the CoE Starter Kit, you may be noticing a discrepancy in inventory - for example, the number of apps returned by PowerShell looks different than the number of apps returned by the CoE Starter Kit.
 
 There are expected differences, and the below information should help you understand what to expect.
 
@@ -136,17 +136,17 @@ The [inventory](setup-core-components.md) in the CoE Starter Kit runs daily to l
 
 The CoE starter kit expects all [inventory flows](core-components.md#flows) to always run with elevated Power Platform admin privileges. If admin access expires during a flow run or if the flow is run with a user that doesn’t have admin privileges, any resources that can’t be retrieved are marked as deleted in the CoE tables. Once an app is marked as deleted, it remains deactivated. A single flow run with insufficient privileges can thus significantly impact the inventory.
 
-The CoE Starter Kit shows canvas apps, published model-driven apps, and SharePoint custom forms but not unpublished model-driven apps (if the "play" button on a model-driven apps is disabled).
+The CoE Starter Kit shows canvas apps, published model-driven apps, and SharePoint custom forms but not unpublished model-driven apps (if the "play" button on a model-driven app is disabled).
 
 The CoE Starter Kit shows all cloud flows.
 
 ### SharePoint custom forms
 
-SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment before you designate a SharePoint form environment, existing forms will remain in the Default environment and will not be migrated.
+SharePoint custom forms apps can be either in the Default environment or a [designated SharePoint form environment](/power-platform/admin/powerapps-powershell#designate-sharepoint-custom-form-environment) – or both. For example, if you have existing SharePoint custom forms in the Default environment before you designate a SharePoint form environment, existing forms will remain in the Default environment and won't be migrated.
 
 ### Deleted apps and flows
 
-Determining whether objects are deleted is a time-consuming process, so there may be a delay of up to a week between when an object is deleted from the tenant and when it is marked as deleted in the inventory.
+Determining whether objects are deleted is a time-consuming process, so there may be a delay of up to a week between when an object is deleted from the tenant and when it's marked as deleted in the inventory.
 
 Once an object is marked as deleted, it remains in that state for two weeks before being removed from inventory. This ensures that if the object is restored, its metadata will still be preserved.
 You have the option to retain objects marked as deleted in the inventory indefinitely by utilizing the following environment variable: [Also Delete from CoE](setup-core-components.md#all-environment-variables).
