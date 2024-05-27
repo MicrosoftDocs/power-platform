@@ -12,7 +12,7 @@ We don't support updating all settings returned by [pac env list-settings](#pac-
 
 For example, the  [orgdborgsettings](/power-apps/developer/data-platform/reference/entities/organization#BKMK_OrgDbOrgSettings) column. Don't update the string value for this column directly. [Learn how to edit the settings stored in the orgdborgsettings column safely](../../../../admin/environment-database-settings.md)
 
-Look to the documentation for the feature that the setting changes to understand whether we support updating the setting directly using this command.
+Look to the documentation for the feature that the setting changes to understand whether the feature supports updating the setting directly using this command.
 
 #### Some settings are deprecated
 
