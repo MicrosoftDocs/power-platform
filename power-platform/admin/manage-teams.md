@@ -3,7 +3,7 @@ title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/22/2023
+ms.date: 05/23/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -147,6 +147,45 @@ You can add and delete members from a team.
    :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
 
 4. Select **Delete** twice to confirm. Note that this action can't be undone.
+
+### Convert owner teams to access teams (preview)
+
+You can convert _owner_ teams to become _access_ teams. 
+
+> [!NOTE]
+> Each business unit has its own owner team. These owner teams are managed by the system and if you convert these teams to access teams, they will no longer be able to own records. Once you convert these business unit owner teams to access teams, they can't be changed back to owner teams. You can't convert the Microsoft Entra group teams or access teams to another access team.
+> All records owned by the owner team must first be reassigned to another user or team before you can convert it into an access team. The security role assignments of the owner team are removed when it's converted into an access team.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
+1. Select **Settings** > **Users + permissions** > **Teams**.
+1. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+1. Select **Convert Owner team to Access Team** from the command bar. 
+1. Select **OK** to complete the action.
+
+### Reassign team's records (preview)
+
+You can reassign the owner team's records to another user or team.  
+
+> [!NOTE]
+> Only owner and Microsoft Entra group teams can own records as they can be assigned with a security role.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Environments**.
+1. Select a specific environment.
+1. Select **Settings** > **Users + permissions** > **Teams**.
+1. Select the checkbox for a team name.  
+
+   :::image type="content" source="media/select-team.png" alt-text="Screenshot selecting a team.":::
+
+1. Select **Reassign records** from the command bar. 
+1. Select **Assign to me** to reassign all the Team's records to yourself or to another owner team.
+1. Select **Assign to another user or team**.
+1. Select **OK** to save.
 
 ## Change the business unit for a team  
 See [Change the business unit for a team](create-edit-business-units.md#change-the-business-unit-for-a-team).

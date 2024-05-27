@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 05/22/2024
 search.audienceType: 
   - admin
 ---
@@ -133,7 +133,12 @@ On the **Application user** page, do one of the following:
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-To delete an inactive application user, go to the **Application user** page. Select **Delete** on the command bar, and then select **Delete** in the confirmation dialog.
+To delete an inactive application user, complete the following steps.
+
+1. Go to the **Application user** page.
+1. Select an inactive application user.
+1. Select **Delete** on the command bar.
+1. Select **Delete** in the confirmation dialog.
 
 > [!NOTE]
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
