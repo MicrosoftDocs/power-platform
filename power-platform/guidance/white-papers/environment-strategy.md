@@ -94,11 +94,11 @@ The following table lists the features of Managed Environments that are availabl
 
 | **More visibility** | **More control** | **Less effort** |
 |-------------------------|-------------------------|-------------------------|
-| <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended backups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em>**<br /></br>**Power Platform Advisor |
+| <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended back-ups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em>**<br /></br>**Power Platform Advisor |
 
-### License autoclaim
+### License auto-claim
 
-[Autoclaim policies](/power-platform/admin/auto-claim-licensing) automate the assignment of Power Apps and Power Automate licenses to users when they need one to use certain apps or features. Automation can help reduce the number of licenses consumed and avoid the overhead of manually assigning licenses.
+[Auto-claim policies](/power-platform/admin/auto-claim-licensing) automate the assignment of Power Apps and Power Automate licenses to users when they need one to use certain apps or features. Automation can help reduce the number of licenses consumed and avoid the overhead of manually assigning licenses.
 
 After a policy is configured, any user in the organization who needs an individual Power Apps license is automatically granted one under the following conditions:
 
@@ -112,11 +112,11 @@ Similarly, after a policy is configured, any user in the organization who needs 
 
 - The user requests a Power Automate premium license.
 
-We recommend configuring license autoclaim if your environment strategy includes managed environments. Users of apps and flows encounter the least amount of licensing friction, and you only consume licenses for users who are actively running apps or using Power Automate.
+We recommend configuring license auto-claim if your environment strategy includes Managed Environments. Users of apps and flows encounter the least amount of licensing friction, and you only consume licenses for users who are actively running apps or using Power Automate.
 
 ### Environment groups and rules
 
-As Power Platform adoption in your tenant increases, so can the number of environments that require administration and governance. As the number of environments increases, the more challenging it becomes to ensure that you've applied consistent settings and governance policies on the environments. The [environment groups feature](/power-platform/admin/environment-groups) makes this easier, by allowing you to create named groups and associate environments with them, like placing related documents in a file folder.
+As Power Platform adoption in your tenant increases, so can the number of environments that require administration and governance. As the number of environments increases, the more challenging it becomes to ensure that you've applied consistent settings and governance policies on the environments. The [environment groups feature](../../admin/environment-groups.md) makes this easier, by allowing you to create named groups and associate environments with them, like placing related documents in a file folder.
 
 Keep the following considerations in mind as you think about using environment groups:
 
@@ -140,9 +140,9 @@ To help you apply consistent settings and governance, environment groups can hav
 
 - Maker welcome content
 
-- Solution checker enforcement
+- Solution-checker enforcement
 
-- Backup retention
+- Back-up retention
 
 - AI-generated descriptions
 
