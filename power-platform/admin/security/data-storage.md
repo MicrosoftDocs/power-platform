@@ -114,9 +114,9 @@ This setting enables all SAS calls within Power Platform to be logged into Purvi
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | response.status_message                      | Informing if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
 | response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                |
-| ip_binding_mode                              | IP binding mode set by a tenant admin, if enabled. Applies to SAS Creation events only.                        |
-| admin_provided_ip_ranges                     | IP ranges set by a tenant admin, if any. Applies to SAS Creation events only.                                  |
-| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS Creation and Usage events.                     |
+| ip_binding_mode                              | IP binding mode set by a tenant admin, if turned on. Applies to SAS creation events only.                        |
+| admin_provided_ip_ranges                     | IP ranges set by a tenant admin, if any. Applies to SAS creation events only.                                  |
+| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS creation and usage events.                     |
 | analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
 | enduser.ip_address                           | The public IP of the caller.                                                                                   |
 | analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
