@@ -1,9 +1,9 @@
 ﻿---
 title: Set up Virtual Network support for Power Platform
 description: Learn how to set up Azure Virtual Network support for Power Platform.
-ms.date: 05/28/2024
-ms.topic: conceptual
 ms.component: pa-admin
+ms.topic: conceptual
+ms.date: 05/28/2024
 ms.subservice: admin
 author: ritesp
 ms.author: ritesp
@@ -13,7 +13,6 @@ ms.custom: "admin-security"
 ms.reviewer: sericks
 
 ---
-
 # Set up Virtual Network support for Power Platform
 
 Azure Virtual Network support for Power Platform allows you to integrate Power Platform and Dataverse components with cloud services, or services hosted inside your private enterprise network, without exposing them to the public internet. This article helps you set up virtual network support in your Power Platform environments.
