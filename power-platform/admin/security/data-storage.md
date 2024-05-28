@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 04/04/2024
+ms.date: 05/28/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -97,9 +97,9 @@ Admins can enable one of these four configurations for this setting:
 - Custom Connectors
 - Power Apps
 
-#### Impact on User Experience
+#### Impact on the user experience
 
-- **When a user, who does not meet an environment’s IP address restrictions, opens an app**: Users will get an error message citing a generic IP issue.
+- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: Users get an error message citing a generic IP issue.
 
 - **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
