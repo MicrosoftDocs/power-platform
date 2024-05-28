@@ -42,6 +42,7 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Catalog in Power Platform](../developer/catalog.md)
 - [Default environment routing](default-environment-routing.md)
 - [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
+- [Virtual network support for Power Platform](vnet-support-overview)
   
 
 > [!NOTE]
