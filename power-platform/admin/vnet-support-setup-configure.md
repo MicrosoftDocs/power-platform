@@ -9,6 +9,7 @@ author: ritesp
 ms.author: ritesp
 search.audienceType: admin
 ms.custom: "admin-security"
+ms.reviewer: sericks
 
 ---
 
