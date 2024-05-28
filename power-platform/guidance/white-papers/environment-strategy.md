@@ -36,7 +36,7 @@ Power Platform administrative, governance, and security features allow organizat
 
 A key element of the transition to enterprise scale is to enhance the shared, central environment strategy for makers by making it easier for them to use personal development environments. In a shared, central environment strategy, makers build, use, and share apps in the default environment. This strategy can result in lack of isolation and makers encroaching on each other. Imagine if everyone in the company shared a single, OneDrive folder for all their documents. Instead, you can use environment features to guide makers to their own, personal environment, where they can safely build their apps protected from makers working on unrelated assets, with simplified governance for admins. Coworkers can be added as more makers to these environments to collaborate on building solutions.
 
-![Illustration of a central shared environment strategy with four makers using the default environment on the left  and an environment routing strategy with four makers routing to separate developer environments on the right ](media/environment-strategy/image2.png)
+:::image type="content" source="media/environment-strategy/image2.png" alt-text="Illustration of a central, shared environment strategy with four makers using the default environment on the left and an environment routing strategy with four makers routing to separate developer environments on the right.":::
 
 *Figure: Illustration of a shared, central environment (left) and an environment routing strategy (right).*
 
