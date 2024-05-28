@@ -8,7 +8,7 @@ ms.subservice: admin
 author: ritesp
 ms.author: ritesp
 search.audienceType: 
-- admin
+  - admin
 ms.custom: "admin-security"
 ms.reviewer: sericks
 
