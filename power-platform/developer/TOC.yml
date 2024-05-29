@@ -74,8 +74,6 @@
           href: unified-experience\finance-operations-install-config-tools.md
         - name: Write, deploy, and debug X++ code
           href: unified-experience\finance-operations-debug.md
-        - name: Access product database        
-          href: unified-experience\finance-operations-product-db-access.md
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
         - name: Request credentials to access D365 product database
