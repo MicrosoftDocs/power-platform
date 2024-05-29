@@ -88,6 +88,80 @@ Each activity event contains a payload of metadata that is specific to the indiv
 |-------------------------|-------------------------|
 | Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
 
+## Activity category: Lockbox Operations
+
+ All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request id</li><li>Lockbox request state</li><li>Lockbox support ticket id</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment id</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
+The following events are delivered to the Microsoft Purview.
+
+| **Category** | **Event** | **Description** |
+|-------------------------------------------------------------|--------------|-----------------------------------------|
+| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created by the user.
+| Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.
+| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request has expired or access has ended.
+
+Here is an example of the payload of metadata that can be expected from one of the events above:
+
+```
+[
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.data_access.duration",
+        "Value": "8"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.support_ticket.id",
+        "Value": "MSFT initiated"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.request.state",
+        "Value": "Created"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.request.expiration_time",
+        "Value": "6/1/2024 11:59:15 PM +00:00"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.request.id",
+        "Value": "dfdead68-3263-4c05-9e8a-5b61ddb5878c"
+    },
+    {
+        "Name": "version",
+        "Value": "1.0"
+    },
+    {
+        "Name": "type",
+        "Value": "PowerPlatformAdministratorActivityRecord"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.name",
+        "Value": "LockboxRequestOperation"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.id",
+        "Value": "cb18351c-fa1c-4f34-a6d9-f8cb91636009"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.environment.id",
+        "Value": "ed92c80e-89ef-e0c8-a9eb-98559ca07809"
+    },
+    {
+        "Name": "enduser.id",
+        "Value": ""
+    },
+    {
+        "Name": "enduser.principal_name",
+        "Value": "Test user"
+    },
+    {
+        "Name": "enduser.role",
+        "Value": "Admin"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.id",
+        "Value": "3a568f62-11ff-4e89-bee8-4d47041b0003"
+    }
+]
+```
+
 ## View activities in Microsoft Purview
 
 When audit log search is turned on in the Microsoft Purview compliance portal, admin activity from your organization is recorded in the Microsoft Purview audit log.
