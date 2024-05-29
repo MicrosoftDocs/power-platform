@@ -1,4 +1,4 @@
----
+﻿---
 title: Develop a tenant environment strategy to adopt Power Platform at scale
 description: Learn how to best use the latest features of the platform to implement an environment strategy that can allow your adoption of Power Platform to reach enterprise scale.
 author: robstand
@@ -56,7 +56,7 @@ You should establish your environment strategy using the recommended environment
 
 - [**Managed Environments**](#managed-environments) provides a set of premium capabilities that make environments easier to manage at scale.
 
-- **[License auto-claim](#license-autoclaim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
+- **[License auto-claim](#license-auto-claim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
 
 - [**Environment groups and rules**](#environment-groups-and-rules) explains how to manage environments as groups and apply rules to groups to automate consistent governance policies.
 
