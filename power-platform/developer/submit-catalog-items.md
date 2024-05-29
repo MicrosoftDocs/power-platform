@@ -1,5 +1,5 @@
 ---
-title: "Using the Catalog with CLI (preview)"
+title: "Using the catalog with Power Platform CLI"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: derekkwanpm
 ms.author: derekkwan
@@ -12,35 +12,44 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Using the Catalog with CLI (preview)
+# Using the catalog with Power Platform CLI (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-- [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-- [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-- While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+The catalog in Power Platform enables developers and makers to:
 
-Before you can work with catalog items, you must install and configure it. 
+- Crowd-source and find templates and components within their environment easily.
+- Find and install the latest and authoritative version of a component.
+- Get started with templates and components that provide immediate value.
+
+Before you can work with catalog items, you must install and configure it.
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
+> [!IMPORTANT]
+>
+> - This is a preview feature
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+
 ## Get started
 
-1. [Install PAC CLI](#install-pac-cli)
-1. [Get access to catalog as Submitter or Reader](#get-access-to-catalog-as-submitter-or-reader)
+1. [Install Power Platform CLI](#install-pac-cli)
+1. [Get access to catalog as submitter or reader](#get-access-to-catalog-as-submitter-or-reader)
 
-### Install PAC CLI
+### Install Power Platform CLI
 
-Follow the steps to install Power Platform CLI found here: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
+Follow the steps to install Power Platform CLI: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
 
 Use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.
 
-### Get access to catalog as Submitter or Reader
+### Get access to catalog as submitter or reader
 
-Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. [Learn to configure user access](administer-catalog.md#edit-user-access)
+Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../admin/administer-catalog.md#edit-user-access)
 
 ## Use the catalog
 
-After you have installed the PAC CLI, you must create an authentication profile using the [pac auth create](cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed, you can perform the following tasks using PAC CLI:
+After you have installed the Power Platform CLI, you must create an authentication profile using the [pac auth create](cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed, you can perform the following tasks using PAC CLI:
 
 1. [View available catalogs in your tenant](#view-available-catalogs-in-your-tenant)
 1. [View items in the catalog](#view-items-in-the-catalog)
@@ -61,7 +70,7 @@ When using this command, you must use the following `--application` parameter wi
 pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
 ```
 
-`83a35943-cb41-4266-b7d2-81d60f383695` is the application ID associated with the catalog. The requirement to include this value will be removed in a future update.
+`83a35943-cb41-4266-b7d2-81d60f383695` is the application ID associated with the catalog.
 
 ## View items in the catalog
 
@@ -96,7 +105,7 @@ To submit an item to the catalog, you need:
 - A solution or package deployer package containing the item you want to submit
 - A submission metadata JSON document
 
-Use the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission Attributes](#submission-attributes)
+Use the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission attributes](#submission-attributes)
 
 After your submission metadata JSON document is ready, use the [pac catalog submit](cli/reference/catalog.md#pac-catalog-submit) command to submit it.
 
@@ -119,7 +128,7 @@ Connected as user@domain
 Status of the Submit request: Submitted
 ```
 
-## Submission Attributes
+## Submission attributes
 
 Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
 
@@ -164,26 +173,26 @@ You need to edit this file to submit an item. Here's an example submission creat
 }
 ```
 
-### Required Data
+### Required data
 
 The following items are required for all submissions:
 
 - [Publisher](#publisher)
-- [Catalog Item](#catalog-item)
+- [Catalog item](#catalog-item)
 - [Engineering contact](#engineering-contact)
 - [Support contact](#support-contact)
 
 #### Publisher
 
-Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the Catalog item going forward.
+Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the catalog item going forward.
 
-Don't confuse this term with *Solution Publisher*. Catalog item publisher is entirely a different concept.
+Don't confuse this term with *Solution Publisher*. Catalog item publisher isn't used with solutions.
 
-You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. System checks if that publisher exists, else creates it and assigns an ID.
+You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. The system checks if that publisher exists, else creates it and assigns an ID.
 
-Example: HR IT team of developers can create a publisher and ID the developers using an Microsoft Entra ID group.
+For example, HR IT team of developers can create a publisher and ID the developers using an Microsoft Entra ID group.
 
-Here's an example of a publisher record:
+Here's a sample of a publisher record:
 
 ```json
 "publisherDetails": {
@@ -206,13 +215,13 @@ Here's an example of a publisher record:
 }
   ```
 
-#### Catalog Item
+#### Catalog item
 
-The actual power platform solution (package is what is stored in the Catalog)
+The actual Power Platform solution. A package is what is stored in the catalog.
 
 `id` and `displayName` are mandatory. `description` and `businessCategories` are optional.
 
-Seeded Business Categories list of value is in the appendix. `ComponentUsedInApplication` is for future use only.
+Seeded business categories list of value is in the appendix. `ComponentUsedInApplication` is for future use only.
 
 Here's an example of a catalog item including its `engineeringName` and `supportName` contacts that are mandatory.
 
@@ -264,7 +273,7 @@ Here's an example of a catalog item including its `engineeringName` and `support
 
 #### Engineering contact
 
-Developer Product contact
+Developer product contact.
 
 Contact that the consumer of catalog item can reach out to if they have technical questions to extend or reuse the app for another purpose.
 
@@ -290,9 +299,9 @@ Example
 
 #### Support contact
 
-IT Biz Support Specialist
+IT biz support specialist.
 
-Can be same as Engineering Contact that the consumer of catalog item can reach out to if they run into issues with the said application
+Can be same as the engineering contact that the consumer of a catalog item can reach out to if they run into issues with the application.
 
 ```json
 "supportName": {
@@ -303,7 +312,7 @@ Can be same as Engineering Contact that the consumer of catalog item can reach o
 }
 ```
 
-### Recommended Data
+### Recommended data
 
 The following items are highly recommended, but not required.
 
@@ -313,8 +322,7 @@ The following items are highly recommended, but not required.
 
 #### small48x48image
 
-Provide information of the icon to be displayed in Maker/ Other discovery UX
-If you don't provide this image a system default icon is used.
+Provide information of the icon to be displayed in maker or other discovery UI. If you don't provide this image a system default icon is used.
 
 ```json
 "small48x48image":{
@@ -325,9 +333,9 @@ If you don't provide this image a system default icon is used.
 
 #### Documents
 
-You can pass screenshots here of your Application to help Makers ID if this App provides functionality or capability they're looking for.
+You can pass screenshots here of your application to help makers identify whether this app provides the functionality or capability they're looking for.
 
-The most common thing people do before downloading an App or template is to look at its images and screenshots to gauge capabilities compared to reading the description
+The most common thing people do before downloading an app or template is look at its images and screenshots to understand the capabilities instead of reading the description.
 
 ```json
 {
@@ -336,9 +344,9 @@ The most common thing people do before downloading an App or template is to look
 }
 ```
 
-#### Help Link
+#### Help link
 
-URL link to help documentation
+URL link to help documentation.
 
 Fully qualified URLs your users are able to access. These URLs can be links to internal docs or sharepoint resources.
 
@@ -355,13 +363,13 @@ Fully qualified URLs your users are able to access. These URLs can be links to i
 - [Privacy policy](#privacy-policy)
 - [Legal terms](#legal-terms)
 
-#### Source Portal
+#### Source portal
 
-Source of submission
+Source of submission.
 
-When submitting from the PAC CLI, use `526430005` as the Source Portal value. For other sources, use `526430000`.
+When submitting from the Power Platform CLI, use `526430005` as the **Source Portal** value. For other sources, use `526430000`.
 
-#### Business Categories
+#### Business categories
 
 One or more of the business categories can be included in the submission from the list below.
 
@@ -387,7 +395,7 @@ One or more of the business categories can be included in the submission from th
 |**526430017**|Geolocation|
 |**526430018**|Human Resources|
 
-Currently, new business categories can't be configured. Support for configuring more categories is planned in the future.
+Currently, new business categories can't be configured.
 
 #### Operation
 
@@ -404,13 +412,13 @@ Use `CreateOrUpdate` for new submissions.
   "operation": "CreateOrUpdate"
 ```
 
-#### Business Justification
+#### Business justification
 
-Explains the business value created by this Catalog item. This information is visible to Approvers and appears in the planned consumption experience in Maker Discovery user experience.
+Explains the business value created by this catalog item. This information is visible to approvers and appears in the planned consumption experience in the maker discovery user experience.
 
 Users can say their submission helps with cost reduction or productivity, for example. Some organizations require certain classes of value and those values can be entered here.
 
-String can contain HTML, or Rich Text (RTF)
+String can contain HTML, or Rich Text (RTF).
 
 ```json
 "businessJustification": "Submit your travel expenses!"
@@ -418,9 +426,9 @@ String can contain HTML, or Rich Text (RTF)
 
 #### large216x216Image
 
-Provide information of the icon to be displayed in Maker/ Other discovery UX
+Provide information of the icon to be displayed in the maker or other discovery UI.
 
-Some user experiences uses larger icons to render cards for discovery
+Some user experiences uses larger icons to render cards for discovery.
 
 ```json
 name: String
@@ -430,7 +438,7 @@ recId: guid, for future use, ignored
 attributeName: string, for future use, ignored
 ```
 
-An example of the image metadata is as follows
+An example of the image metadata.
 
 ```json
       "large216x216Image": {
@@ -441,9 +449,9 @@ An example of the image metadata is as follows
 
 #### Privacy policy
 
-URL link to pertinent policies
+URL link to pertinent policies.
 
-Policies regarding careful usage of the component or application being submitted
+Policies regarding careful usage of the component or application being submitted.
 
 ```json
 "privacyPolicyLink": "https://www.mycompany.com/privacy.html"
@@ -451,9 +459,9 @@ Policies regarding careful usage of the component or application being submitted
 
 #### Legal terms
 
-URL link to pertinent terms and conditions
+URL link to pertinent terms and conditions.
 
-Any legal terms/ internal guidance for evaluation of the consumer of the catalog item
+Any legal terms or internal guidance for evaluation of the consumer of the catalog item.
 
 ```json
 "legalTerms": "https://www.mycompany.com/legalterms.html"
@@ -461,5 +469,6 @@ Any legal terms/ internal guidance for evaluation of the consumer of the catalog
 
 ### See also
 
-[Catalog in Power Platform (Preview)](catalog.md)<br />
-[Administer the catalog (Preview)](administer-catalog.md)
+<!-- [Catalog in Power Platform (Preview)](catalog.md) -->
+
+[Administer the catalog (preview)](../admin/administer-catalog.md)
