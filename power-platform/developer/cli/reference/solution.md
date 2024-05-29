@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI solution command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI solution command group."
 keywords: "pac cli"
 ms.subservice: developer
-ms.author: marcsc
 author: devkeydet
-ms.date: 1/22/2024
+ms.author: marcsc
+ms.date: 5/13/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -161,6 +161,7 @@ Use one of these values:
 - `Norway`
 - `Singapore`
 - `Korea`
+- `Sweden`
 - `USGovernment`
 - `USGovernmentL4`
 - `USGovernmentL5DoD`
@@ -243,6 +244,10 @@ Use one or more of these values separated by commas:
 Extract or merge all string resources into .resx files.
 
 This parameter requires no value. It's a switch.
+
+#### `--map` `-m`
+
+The full path to a mapping xml file from which to read component folders to pack.
 
 #### `--max-async-wait-time` `-wt`
 
@@ -505,6 +510,12 @@ List all Solutions from the current Dataverse organization
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
+#### `--includeSystemSolutions`
+
+Include system solutions like those published by Microsoft
+
+This parameter requires no value. It's a switch.
+
 [!INCLUDE [solution-list-remarks](includes/solution-list-remarks.md)]
 
 ## pac solution online-version
@@ -694,6 +705,10 @@ Use one or more of these values separated by commas:
 Extract or merge all string resources into .resx files.
 
 This parameter requires no value. It's a switch.
+
+#### `--map` `-m`
+
+The full path to a mapping xml file from which to read component folders to pack.
 
 #### `--max-async-wait-time` `-wt`
 

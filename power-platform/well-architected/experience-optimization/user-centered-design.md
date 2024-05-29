@@ -3,8 +3,8 @@ title: Recommendations for a user-centered design strategy
 description: Learn user-centered design strategies to ensure your workloads are useful, usable, and desirable, reducing design failures and enhancing user experience.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -70,6 +70,8 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 **Implement and communicate the design improvements** by applying the changes and modifications that were suggested by the test results and analysis, and by documenting and sharing the design process and outcomes with the relevant stakeholders. Update and improve the workload based on the user feedback and data, to ensure the workload meets user expectations and goals. Create and deliver design artifacts and deliverables that demonstrate the design solutions and rationale, such as wireframes, mockups, prototypes, and specifications. Implementation and communication should be used to finalize and launch the workload and to showcase the design value and impact.
 
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

@@ -1,10 +1,10 @@
 ---
-title: Recommendations for optimizing development practices through standardization
-description: Learn how to optimize your development practices by standardizing your tools and processes.
+title: Optimize development practices through standardization recommendation for Power Platform workloads
+description: Learn how to standardize your tools and processes and optimize your development and quality assurance practices.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -133,3 +133,10 @@ Other tools and services that can help you standardize your development practice
 ## See also
 
 [Co-development governance](/power-apps/guidance/co-develop/governance)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)
