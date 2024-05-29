@@ -59,12 +59,6 @@
               href: isvstudio/embed-analytics.md
     - name: Catalog in Power Platform (preview)
       items:
-        - name: Overview of catalog
-          href: catalog.md
-        - name: Administer the catalog
-          href: administer-catalog.md
-        - name: View, submit, and install catalog items
-          href: submit-acquire-from-catalog.md
         - name: Use pac cli with catalog
           href: submit-catalog-items.md
     - name: Unified developer experience for finance and operations apps (preview)

@@ -1,6 +1,6 @@
 ---
-title: "Administer the catalog (preview)"
-description: "Learn how to administer the catalog for Power Platform after you have finished installing it. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
+title: "Administer the catalog"
+description: "Learn how to administer the catalog for Power Platform. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: derekkwanpm
 ms.author: derekkwan
 ms.date: 05/23/2024
@@ -15,7 +15,12 @@ contributors:
 # Administer the catalog (preview)
 
 - [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-- [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
+The catalog in Power Platform enables developers and makers to:
+
+- Crowd-source and find templates and components within their environment easily.
+- Find and install the latest and authoritative version of a component.
+- Get started with templates and components that provide immediate value.
 
 Administering the catalog includes the following tasks:
 
@@ -27,32 +32,37 @@ Administering the catalog includes the following tasks:
 - [Review errors in install requests](#review-errors-in-install-requests)
 - [Edit user access](#edit-user-access)
 
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
 ## Access controls
 
-The catalog has a separate set of access controls from Power Platform. This means makers in a given environment do not automatically get permissions to publish and acquire items from the catalog. There are four access roles:
+The catalog has a separate set of access controls from Power Platform. This means makers in a given environment don't automatically get permissions to publish and acquire items from the catalog. There are four security roles:
 
 |Role|Enables user to:|
 |---------|---------|
 |**Catalog Submitter**|Submit items to the catalog|
 |**Catalog Read-Only Member**|Discover and install items from the catalog|
 |**Catalog Approver**|Approve submissions to the catalog.<br />Catalog approvers can be users from your central IT department or line of business that your organization wants to empower to participate in the approvals process.|
-|**Catalog Administrator**|Administer the catalog.|
+|**Catalog Administrator**|Can administer the catalog.|
 
-Any environment that has a catalog will see these roles inside of Power Platform Admin Center, and can be [assigned to groups or individuals](../admin/security-roles-privileges.md) just like any other roles.
+Any environment that has a catalog has these roles that can be viewed from the Power Platform admin center, and can be [assigned to groups or individuals](../admin/security-roles-privileges.md) just like any other security role.
 
-Power Platform admins and system customizers will already have full access to the Catalog. However, **do not** use assign these roles for generally managing catalog access, and instead use one of the roles from above.
+Power Platform admins and system customizers already have full access to the catalog. However, don't assign these roles for generally managing catalog access, and instead use one of the roles mentioned in the previous table.
 
-## Setup the catalog
+## Set up the catalog
 
-Before you can administer the catalog, you must install and configure it. Most organizations will be fine with just one catalog in their tenant (all environments in a tenant can install catalog items from a single catalog). But some orgs may want to have different catalogs for regions, departments, or other grouping. The choice is yours.
+Before you can administer the catalog, you must install and configure it. Most organizations should be fine with just one catalog in their tenant. All environments in a tenant can install catalog items from a single catalog. But some organizations might want to have different catalogs for regions, departments, or other grouping.
 
-To set up a catalog, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for your tenant, and look for the **Catalogs** page under **Resources**:
+To set up a catalog, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for your tenant, and expand **Resources** and then select **Catalogs**.
 
-:::image type="content" source="media/admin_catalog.png" lightbox="media/admin_catalog.png" alt-text="Catalog in the Power Platform admin center":::
+:::image type="content" source="media/admin-catalog.png" lightbox="media/admin-catalog.png" alt-text="Catalog in the Power Platform admin center":::
 
-Select **New catalog** in the top menu or in the page itself will bring up a setup wizard that has 7 steps.
+Select **New catalog** in the top menu or in the page itself brings up a setup wizard that has seven steps.
 
-### Step 1 (Setup)
+### Step 1: Setup
 
 Enter the following information:
 
@@ -60,42 +70,42 @@ Enter the following information:
 |---------|---------|
 |**Name**|Enter a name for the catalog|
 |**Language**|Set the language for your users of the catalog|
-|**Description**|Add some details that will help others understand what this catalog is for|
+|**Description**|Add some details that help others understand what this catalog is for|
 |**Region**|What region this catalog is for, which will filter the available environments|
 |**Environment**|Which environment in your tenant you want the catalog to be installed for (ensure some environments have been set up for you to select)|
 |**Status**|Uncheck this box if you want the catalog inactive after setting up|
 
-### Step 2 (Catalog administrators)
+### Step 2: Select catalog administrators
 
-Select up to 10 Microsoft Entra ID groups who can administer the catalog (ensure you have created some Microsoft Entra ID groups for your users).
+Select up to 10 Microsoft Entra ID groups who can administer the catalog.  Ensure you have created some Microsoft Entra ID groups for your users.
 
-### Step 3 (Approvers)
+### Step 3: Select approvers
 
-By default, catalog item submissions must be approved by an approver or admin. Check the box if you want your tenant to allow submissions to be auto-approved.
+By default, catalog item submissions must be approved by an approver or admin. Check the box if you want your tenant to allow submissions to be autoapproved.
 
-Select up to 10 Microsoft Entra ID groups who can approve catalog items before they are submitted into the catalog (see below for how to approve catalog items)
+Select up to 10 Microsoft Entra ID groups who can approve catalog items before they're submitted into the catalog. More information: [Approve and reject submission requests](#approve-and-reject-submission-requests)
 
-### Step 4 (Submitters)
+### Step 4: Select submitters
 
 Select up to 10 Microsoft Entra ID groups who can submit catalog items to the catalog.
 
-### Step 5 (Consumers)
+### Step 5: Select consumers
 
 Select up to 10 Microsoft Entra ID groups who can view and install catalog items from the catalog.
 
-### Step 6 (Categories)
+### Step 6: Select categories
 
-Select which business categories you would like to allow makers to use when submitting catalog items. These categories will also show up in the filters for the discover page to help makers find the catalog items they want. You can also add your own business categories as well.
+Select which business categories you would like to allow makers to use when submitting catalog items. These categories also show up in the filters for the discover page to help makers find the catalog items they want. You can also add your own business categories as well.
 
-### Step 7 (Review)
+### Step 7: Review and create the catalog
 
-This last step summarizes everything you just set up. If everything looks good, you can click the **terms and conditions** link to review, and if agreeable, just check the box and select **Create catalog** to finish setup.
+This last step summarizes everything you just set up. If everything looks good, select the **terms and conditions** link to review, and if agreeable, just check the box and select **Create catalog** to finish setup.
 
 ### Next steps
   
 You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog.
 
-After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), or in the **Apps** screen inside of Power Apps. The Power Platform Catalog Manager is where you can perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
+After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), or in the **Apps** area in of Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
 
 ## Approve and reject submission requests
 
@@ -113,8 +123,8 @@ This list has 16 views. The most important ones are:
 
 Using the **Active Approval Requests** view, open a request and select **Resolve Request** in the menu.
 
-- Select **Reject Request** to decline the request. The request is archived and publisher, item and asset aren't created.
-- Select **Complete Request** to approve. Upon approval, Publisher, Item and Assets be created. The request is archived to **Inactive** status.
+- Select **Reject Request** to decline the request. The request is archived and publisher, item, and asset aren't created.
+- Select **Complete Request** to approve. Upon approval, publisher, item, and assets are created. The request is archived to **Inactive** status.
 
 ## Review install history
 
@@ -149,7 +159,7 @@ These views show the following columns:
 |**Modified On**|When the item was last modified|
 |**Modified By**|Who last modified the item|
 
-You can also view this data using the [pac catalog list](cli/reference/catalog.md#pac-catalog-list) command. More information: [View items in the catalog](submit-catalog-items.md#view-items-in-the-catalog)
+You can also view this data using the [pac catalog list](../developer/cli/reference/catalog.md#pac-catalog-list) command. <!-- More information: [View items in the catalog](submit-catalog-items.md#view-items-in-the-catalog) -->
 
 ### Review catalog publishers
 
@@ -165,16 +175,16 @@ Catalog publishers have the following default columns:
 |Display Name|Description|
 |-----|-----|
 |**Name**|The name of the publisher.|
-|**Publisher ID**|ID provided by item submitter|
-|**Description**|A description of the publisher|
-|**Status Reason**|Reason for the status of the Publisher<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br />|
-|**Allow Auto-Approval**|By enabling auto approval at the Publisher level, future submissions from this publisher are auto approved. Admins can use this strategy in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto approval can be turned on globally across all publishers here.|
+|**Publisher ID**|ID provided by item submitter.|
+|**Description**|A description of the publisher.|
+|**Status Reason**|Reason for the status of the publisher.<br />Choices:<br /> - **Active**<br /> - **Published**<br /> - **Pending Approval**<br /> - **Inactive**<br />|
+|**Allow Auto-Approval**|By enabling auto approval at the publisher level, future submissions from this publisher are auto approved. Admins can use this strategy in scenarios where there's a trusted party within their organization that they trust implicitly and don't require approvals from. Also, auto approval can be turned on globally across all publishers here.|
 
 ### Review packages and solutions of items in catalog
 
 In the **Catalog** section of the navigation pane, select **Packages Assets** to view a list of underlying artifacts associated to a catalog item that includes the package and solution details.
 
-This list 8 views:
+This list has eight views:
 
 - **Active Packages Assets**
 - **Inactive Packages**
@@ -193,15 +203,15 @@ The following information is available about the **Package**:
 |---------|---------|
 |**UniqueName**|Package Unique Name|
 |**Version**|Package Version|
-|**Status Reason**|Current Status Choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br />|
-|**Package ID**|Package Identifier|
+|**Status Reason**|Current status choices:<br /> - **Pending Approval**<br /> - **Published**<br /> - **Rejected**<br />|
+|**Package ID**|Package identifier|
 |**Locale Identifier (LCID)**|Identifier for localized package|
 |**Localized Name**|Name in localized language|
 |**Description**|Description in localized language|
 |**Notes**|Timeline section has notes with details for actions on asset|
 |**Revision Of**|This field is populated when a new approval request contains a reference to an existing package version that has previously been made available|
 |**Modified On**|Date last modified|
-|**Modified By**|Modified By User|
+|**Modified By**|Modified by user|
 |**Created On**|Date created|
 
 #### Package and content information
@@ -210,7 +220,7 @@ The following information is available about the **Package**:
 |---------|---------|
 |**Package File**|Package Deployer package file comprised of catalog item contents|
 |**Package Manifest File**|Package Manifest file (.json)|
-|**Contained Solutions and Components**|This information is for reference only and being revised. A planned update will enable a streamlined view of this data|
+|**Contained Solutions and Components**|This information is for reference only and being revised. A planned update enables a streamlined view of this data|
 
 ## Review errors in submission requests
 
@@ -231,13 +241,13 @@ Select the failed request name to get more information.
 
 ## Edit user access
 
-After the catalog is set up, you may want to add, edit, or remove user access. This can be done in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for any environment where you have setup the catalog. You will see a new set of roles in the security roles list"
+After the catalog is set up, you might want to add, edit, or remove user access. This can be done in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for any environment where you have setup the catalog. You see a new set of roles in the security roles list.
 
 :::image type="content" source="media/catalog-roles.png" lightbox="media/catalog-roles.png" alt-text="Catalog security roles":::
 
-More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team).
+More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team)
 
-### See also
+<!-- ### See also
 
 [Catalog in Power Platform (Preview)](catalog.md)   
-[View, submit, and install catalog items  (Preview)](submit-catalog-items.md)
+[View, submit, and install catalog items  (Preview)](submit-catalog-items.md) -->
