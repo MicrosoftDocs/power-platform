@@ -208,3 +208,7 @@ Remove-RoleAssignmentFromUsers
 - Once you elevate a user through Entra Privileged Identity Management, wait for two hours for the changes to sync from Entra to Power Platform before you sign in to Power Platform admin center.
 
 - Role assignments through groups aren't supported. Make sure that you assign roles directly to the user.
+
+### See also
+[Privileged Identity Management overview](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure)
+[Assign Microsoft Entra roles in PIM](https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-how-to-add-role-to-user)
