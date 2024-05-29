@@ -726,7 +726,7 @@
               href: manage-power-automate.md
             - name: Add-on capacity management
               href: capacity-add-on.md
-            - name: Administer the catalog
+            - name: Administer the catalog (preview)
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
