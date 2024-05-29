@@ -8,7 +8,7 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2024
+ms.date: 05/29/2024
 search.audienceType: 
   - admin
 contributors:
@@ -82,29 +82,29 @@ The following table shows the fields that are managed in the **Users** section o
 <table>
 <thead>
 <tr class="header">
-<th><p>Customer engagement apps user form </th><th>Microsoft 365/Microsoft Entra user</th></tr>
+<th><p>Customer engagement apps user form </th><th>Dataverse SystemUser object</th><th>Microsoft 365/Microsoft Entra user</th></tr>
 </thead>
 <tbody>
-<tr><td>User Name</td><td>Username</td></tr>
-<tr><td>Full Name*  </td><td>Display Name </td></tr>
-<tr><td>Title </td><td>Job title </td></tr>
- <tr><td>First Name </td><td>First Name </td></tr>
- <tr><td>Last Name </td><td>Last Name </td></tr>
-<tr><td>Primary Email** </td><td>Email </td></tr>
-<tr><td>InternalEmailAddress*** </td><td>Mail </td></tr>
-<tr><td>Main Phone </td><td>Office phone</td></tr>
-<tr><td>Mobile Phone  </td><td>Mobile phone</td></tr>
-<tr><td>Address  </td><td>Street address   </td></tr>
-<tr><td>Address   </td><td>City   </td></tr>
-<tr><td>Address   </td><td>State or province    </td></tr>
-<tr><td>Address    </td><td>Country or region    </td></tr>
-<tr><td>AzureActiveDirectoryObjectId****     </td><td>ObjectId   </td></tr>
-<tr><td colspan="2">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the Primary Email field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers; after which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
+<tr><td>User Name</td><td>DomainName</td><td>Username</td></tr>
+<tr><td>Full Name*  </td><td>Full Name </td><td>Full Name </td></tr>
+<tr><td>Title </td><td>JobTitle </td><td>Job title </td></tr>
+<tr><td>First Name </td><td>FirstName </td><td>First Name </td></tr>
+<tr><td>Last Name </td><td>LastName </td><td>Last Name </td></tr>
+<tr><td>Primary Email**</td><td>InternalEmailAddress***</td><td>Mail </td></tr>
+<tr><td>Main Phone </td><td>Address1_Telephone1 </td><td>Office phone</td></tr>
+<tr><td>Mobile Phone  </td><td>MobilePhone  </td><td>Mobile phone</td></tr>
+<tr><td>Street  </td><td>Address1_Line1   </td><td>Street address   </td></tr>
+<tr><td>City  </td><td>Address1_City   </td><td>City   </td></tr>
+<tr><td>State/Province   </td><td>Address1_StateOrProvince    </td><td>State or province    </td></tr>
+<tr><td>Postal Code   </td><td>Address1_PostalCode    </td><td>Postal Code    </td></tr>
+<tr><td>Country   </td><td>Address1_Country    </td><td>Country or region    </td></tr>
+<tr><td>AzureActiveDirectoryObjectId****     </td><td>AzureActiveDirectoryObjectId   </td><td>ObjectId   </td></tr>
+<tr><td colspan="3">* Full Name isn't automatically updated and synchronized with customer engagement apps.<br>** To prevent data loss, the PrimaryEmail field isn't automatically updated and synchronized with customer engagement apps.<br>***InternalEmailAddress can be updated by customers; after which, sync will no longer update this field.<br>**** ObjectID of a user or a service principal in Microsoft Entra ID.<br /></td></tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> Custom fields are **never** synchronized between Microsoft 365, Microsoft Entra ID, and Power Platform.
+> Custom fields are **never** synchronized between Microsoft 365, Microsoft Entra, and Power Platform.
 > 
 > All the fields are **always** synchronized, except fields explicitly mentioned as not automatically updated (custom fields, Full Name, Primary Email, and Internal Email Address after a customer update).
 >
@@ -372,7 +372,7 @@ We are in the process of moving application user management from the legacy web 
 A stub user is a user record that has been created as a placeholder. For example, records have been imported that refer to this user but the user doesn't exist in customer engagement apps. This user can't sign in, can't be enabled, and can't be synchronized to Microsoft 365. This type of user can only be created through data import. 
 
 > [!CAUTION]
-> To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, synchronize the users from Entra ID to Dataverse before running data import.
+> To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, ensure that users exist in Entra ID and are sufficiently licensed for pre-provisioning. Office licenses aren't supported for pre-provisioning, but any Power Apps Premium or Dynamics 365 licenses are supported for pre-provisioning. Once users meet these requirements, they are syncronized with Dataverse environments.  
 > If you must reassign records from a stub user to another user, use the [Add-BulkRecordsToUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#command-add-bulkrecordstousers).
 
 A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.

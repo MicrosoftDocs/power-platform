@@ -26,7 +26,7 @@ With Advisor, administrators can:
 
 ## Access Power Platform Advisor
 
-All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor** in the navigation menu.
+All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor** from the menu options.
 
 Tenant admins must have at least _one_ of the following roles:
 
@@ -35,6 +35,7 @@ Tenant admins must have at least _one_ of the following roles:
 - Global admin role within the Power Platform tenant
 
 > [!IMPORTANT]
+>
 > - Power Platform Advisor scans for analytics-based recommendations once a week. You can check the last scanned date within the recommendation panel.
 > - If a resource is deleted outside of the Advisor, certain actions fail.
 > - To submit feedback and suggestions, use the [Power Platform Advisor - Feedback](https://aka.ms/padvisorfeedback) form.
@@ -52,7 +53,7 @@ Power Platform tenant admins can view the top recommendations on the **Advisor**
 - Select **View details** on any recommendation to view its details.
 - Select **View recommendations** to view all recommendations on the **Advisor** page.
 
-:::image type="content" source="media/power-platform-advisor/advisor-recommendations.png" alt-text="Advisor card on the home page.":::
+:::image type="content" source="media/power-platform-advisor/advisor-recommendations.png" alt-text="Screenshot of Advisor card on the home page.":::
 
 > [!TIP]
 > If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
@@ -89,6 +90,7 @@ When an entire recommendation or multiple rows in the recommendation is shared, 
 :::image type="content" source="media/power-platform-advisor/share-to.png" alt-text="Screenshot that shows where to enter a name in the Share to textbox.":::
 
 > [!NOTE]
+>
 > - Shared recommendations are sent as an adaptive card in a personal Teams chat.
 > - When recommendations are shared, the sharing card provides a link to that recommendation for the admin.
 > - When an app or resource is shared, the sharing card provides a link to both the recommendation and the app in the maker portal.
@@ -163,12 +165,13 @@ Select one or more apps from the list and select **Delete**.
 After you confirm the delete operation, the selected apps are deleted.
 
 > [!NOTE]
+>
 > - Once an action is taken, it takes up to one week for the apps to be removed from the list.
 > - Quarantine and Delete actions fail if the app is already deleted outside the Advisor.
 
 ### Apps shared with everyone
 
-This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone**, such as guest users in your Microsoft Entra tenant.
+This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone** in your Microsoft Entra tenant.
 
 > [!IMPORTANT]
 >
@@ -181,21 +184,23 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means the app was both developed and used in the same environment.
 
 > [!IMPORTANT]
+>
 > - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM best practices could cause a single change to break the app for several users with no easy way to recover.
 > - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
 
 ### Pending license requests
 
-This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and may result in noncompliant use of premium apps and resources.
+This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and might result in noncompliant use of premium apps and resources.
 
 > [!IMPORTANT]
 > You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
 
 ### High-value apps in default environment
 
-This recommendation lists the apps that are potentially high value (used by over 100 users each month) and is currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities (such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md) to protect these apps. Alternatively, you can make the default environment to be a [Managed Environment](managed-environment-overview.md) to leverage the premium security and governance capabilities for all the resources.
+This recommendation lists the apps that are potentially high value (used by over 100 users each month) and is currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to leverage premium security and governance capabilities for all resources.
 
 > [!IMPORTANT]
+>
 > - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
 > - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
 

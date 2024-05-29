@@ -1,10 +1,10 @@
 ---
-title: Recommendations for designing a disaster recovery strategy
-description: Learn how to design a disaster recovery strategy for a workload. 
+title: Design a disaster recovery strategy recommendation for Power Platform workloads
+description: Learn how to design a disaster recovery strategy for a Power Platform workload and prepare to handle incidents and outages. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -100,3 +100,10 @@ As your DR drill practices mature, you learn which procedures you can run in par
 ## Failover capabilities
 
 Microsoft Business Applications provide business continuity and disaster recovery (BCDR) capabilities to all [production](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform software as a service (SAAS) applications. [Learn how Microsoft ensures your production data is resilient during regional outages](/power-platform/admin/business-continuity-disaster-recovery).
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

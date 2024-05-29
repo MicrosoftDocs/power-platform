@@ -188,7 +188,7 @@
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
-                - name: Environment groups (preview)
+                - name: Environment groups
                   href: environment-groups.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
@@ -209,13 +209,15 @@
                 - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
-              items:
+              items: 
                 - name: Opt in to early access updates
                   href: opt-in-early-access-updates.md
                 - name: General availability deployment
                   href: general-availability-deployment.md
                 - name: "Manage maintenance window (preview)"
                   href: manage-maintenance-window.md
+            - name: Early release cycle environments
+              href: early-release.md
             - name: Environment settings
               items:
                 - name: Tenant settings
@@ -226,7 +228,7 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
-                - name: Environment routing (preview)
+                - name: Environment routing
                   href: default-environment-routing.md
                 - name: Product
                   items:
@@ -814,7 +816,7 @@
                               href: create-dataverseapplicationuser.md
                         - name: Tenant Settings
                           items:
-                            - name: "List tenant settings"
+                            - name: List tenant settings (preview)
                               href: list-tenantsettings.md
         - name: Data integration
           items:
@@ -826,10 +828,8 @@
           items:
             - name: "About on-premises gateway"
               href: wp-onpremises-gateway.md
-            - name: "On-premises data gateway management (preview)"
+            - name: "On-premises data gateway management"
               href: onpremises-data-gateway-management.md
-            - name: "Data source management (preview)"
-              href: onpremises-data-gateway-source-management.md
         - name: Manage data
           items:
             - name: Add or remove sample data
@@ -854,6 +854,8 @@
               href: run-bulk-system-jobs-detect-duplicate-records.md
             - name: Bulk deletion
               href: delete-bulk-records.md
+            - name: Set address record settings
+              href: disable-delete-address-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
             - name: Restore deleted table records (preview)
