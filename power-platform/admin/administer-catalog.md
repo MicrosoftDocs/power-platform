@@ -24,7 +24,7 @@ The catalog in Power Platform enables developers and makers to:
 
 Administering the catalog includes the following tasks:
 
-- [Setup the catalog](#setup-the-catalog)
+- [Setup the catalog](#set-up-the-catalog)
 - [Approve and reject submission requests](#approve-and-reject-submission-requests)
 - [Review install history](#review-install-history)
 - [Review catalog items](#review-catalog-items)
