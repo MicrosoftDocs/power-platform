@@ -18,7 +18,7 @@ The IP firewall helps to protect your organizational data by limiting user acces
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
 
 > [!IMPORTANT]
-> The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](settings-features.md#tds-endpoint) will be included in a future release.
+> The IP firewall support for [TDS endpoint](settings-features.md#tds-endpoint) is in preview.
 
 ## Key benefits
 
@@ -121,6 +121,10 @@ You should test the IP firewall to verify that it's working.
 
 We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
+> [!NOTE]
+> By default, [TDS endpoint](settings-features.md#tds-endpoint) is turned on within the Power Platform environment.
+
+
 ## Licensing requirements for IP firewall
 
 IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
@@ -187,9 +191,6 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 ### I have configured the reverse proxy address correctly, but the IP firewall isn't working. What should I do?
 
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
-
-### Some of the calls from Power BI are failing after I enabled the IP firewall on the Power Platform environment. What should I do?
-Currently, you can only use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you must disable IP firewall in the environment.
 
 ### IP firewall audit functionality isn't working in my environment. What should I do?
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
