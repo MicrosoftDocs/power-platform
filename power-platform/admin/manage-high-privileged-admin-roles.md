@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 05/23/2024
+ms.date: 05/29/2024
 search.audienceType: admin
 
 ---
@@ -197,9 +197,9 @@ Remove-RoleAssignmentFromUsers
 
 ## Known limitations
 
-- Using the API, when the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- Using the API, if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
-- The user making the call must have tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
+- The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
