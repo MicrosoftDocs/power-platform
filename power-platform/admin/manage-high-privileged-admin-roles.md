@@ -189,7 +189,7 @@ Remove-RoleAssignmentFromUsers
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
-1. Select the chekmark next to your environment.
+1. Select the checkmark next to your environment.
 1. Select **Membership** in the command bar to request self-elevation.
 1. The **System Administrators** pane is displayed. Add yourself to the system administrator role by selecting **Add me**.
 
