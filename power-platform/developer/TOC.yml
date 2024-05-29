@@ -79,7 +79,7 @@
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
         - name: Request credentials to access D365 product database
-          href: unified-experience\finance-operations-ProductDBAccess.md
+          href: unified-experience\finance-operations-product-db-access.md
         - name: Continuous integration and deployment
           href: unified-experience\finance-operations-pipelines.md
         - name: Execute unit tests in Azure Pipelines
