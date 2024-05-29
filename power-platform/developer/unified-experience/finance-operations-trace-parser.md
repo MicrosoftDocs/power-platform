@@ -32,11 +32,11 @@ The Trace Parser needs to query the data captured in the ETL file in advanced wa
 
 ## Caveats
 
-The data injected into the SQL database, that is subject to querying with the Trace Parser, contain queries, data access statements, and call stacks. The user can optionally include extended data into the logs to make diagnosing problems easier. Setting the **Include SQL parameter values** option when collecting the trace may leak information in the application to the trace. The recorded information should be kept as safe as the production environment itself. You're advised to delete any of these databases as soon as you're done using them, to not store ETL files in unsafe places, and to delete them after use. The traces can be deleted in the Trace Parser tool. When the tool starts, it shows an overview of the traces, and individual traces can be deleted from here.
+The data injected into the SQL database, that is subject to querying with the Trace Parser, contains queries, data access statements, and call stacks. The user can optionally include extended data into the logs to make diagnosing problems easier. Setting the **Include SQL parameter values** option when collecting the trace may leak information in the application to the trace. The recorded information should be kept as safe as the production environment itself. You're advised to delete any of these databases as soon as you're done using them, to not store ETL files in unsafe places, and to delete them after use. The traces can be deleted in the Trace Parser tool. When the tool starts, it shows an overview of the traces, and individual traces can be deleted from here.
 
 ## Capturing a trace
 
-When you wish to diagnose a problem in the running application, you start the tracing, perform the application steps that demonstrate the problem, and then stop the trace. The trace is then analyzed in the Trace Parser. You can provide a meaningful name to the trace when you opt to start the trace.
+When you wish to diagnose a problem in the running application, you start the tracing, perform the application steps that demonstrate the problem, and then stop the trace. The trace is then analyzed in the Trace Parser. You can provide a meaningful name to the trace when you choose to start the trace.
 
 In this section, we explain how to capture a trace from the application's web page.
 
