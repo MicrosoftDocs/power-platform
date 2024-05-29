@@ -45,7 +45,7 @@ landingContent:
         url: ../alm/copilot-deployment-notes-pipelines.md
     - linkListType: reference
       links:
-      - text: Power Platform CLI pac copilot
+      - text: Power Platform CLI pac copilot command
         url: ../developer/cli/reference/copilot.md
 
 # Card
@@ -62,18 +62,6 @@ landingContent:
       - text: Create apps, copilots, flows, and more with Microsoft Dataverse and Teams
         url: /training/paths/work-power-platform-teams/
       
-
-## Card
-  - title: Copilot for everyone
-    linkLists:
-    - linkListType: overview
-      links:
-      - text: Microsoft Copilot learning hub
-        url: /copilot/
-      - text: Microsoft Copilot Studio
-        url: /microsoft-copilot-studio/      
-      - text: Microsoft Copilot for Microsoft 365 extensibility
-        url: /microsoft-365-copilot/extensibility/
 
 # Card
 #  - title: Copilot for industries
@@ -100,3 +88,15 @@ landingContent:
         url: /power-automate/responsible-ai-overview
       - text: FAQs for Power Pages
         url: /power-pages/responsible-ai-overview
+
+## Card
+  - title: Copilot for everyone
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: Microsoft Copilot learning hub
+        url: /copilot/
+      - text: Microsoft Copilot Studio
+        url: /microsoft-copilot-studio/      
+      - text: Microsoft Copilot for Microsoft 365 extensibility
+        url: /microsoft-365-copilot/extensibility/
