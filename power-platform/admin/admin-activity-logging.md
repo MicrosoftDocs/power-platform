@@ -90,16 +90,16 @@ Each activity event contains a payload of metadata that is specific to the indiv
 
 ## Activity category: Lockbox Operations
 
- All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request id</li><li>Lockbox request state</li><li>Lockbox support ticket id</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment id</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
+ All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request ID</li><li>Lockbox request state</li><li>Lockbox support ticket ID</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment ID</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
 The following events are delivered to the Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
 |-------------------------------------------------------------|--------------|-----------------------------------------|
-| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created by the user.
+| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created.
 | Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.
-| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request has expired or access has ended.
+| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request expired or access ended.
 
-Here is an example of the payload of metadata that can be expected from one of the events above:
+An example of the payload of metadata that can be expected from one of the events listed in the table:
 
 ```
 [
