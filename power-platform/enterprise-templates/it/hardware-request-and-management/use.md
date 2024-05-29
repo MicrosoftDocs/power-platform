@@ -1,6 +1,6 @@
 ---
 title: Use the Hardware Request and Hardware Management apps
-description: Learn how to use the Hardware Request and Hardware Management apps on Microsoft Power Platform.
+description: Learn how to use the Hardware Request and Hardware Management apps to streamline the asset request and approval process.
 author: microsoft-george
 ms.author: georgenewton
 contributors:
@@ -19,13 +19,13 @@ Once configuration and setup steps are complete, the apps are ready to share and
 
 ## Use the Hardware Request app
 
-The Hardware Request app is streamlined, to eliminate any specialized user training for the request process.  The app has minimal flexibility to minimize confusion.  The goal is to let the app guide the user through creating and submitting their request to initiate the workflow for the approval in the management app.  This article provides a brief overview of the supported functions.
+The Hardware Request app is streamlined, to eliminate any specialized user training for the request process. The app has minimal flexibility to minimize confusion. The goal is to let the app guide the user through creating and submitting their request to initiate the workflow for the approval in the management app. This article provides a brief overview of the supported functions.
 
 :::image type="content" source="media/use/hrm-use-home.png" alt-text="Screenshot of the Hardware Request app home page.":::
 
 ### Create a new request for hardware
 
-The Hardware Request app simplifies how you shop and submit requests for new hardware when the need arises.  Take these steps to get started:
+The Hardware Request app simplifies how you shop and submit requests for new hardware when the need arises. Take these steps to get started:
 
 1. On the home page, select **Create new request** to go to the *Select From Available Devices* page. Here, you see a separate tile for each *product type*.
 
@@ -82,14 +82,14 @@ Take these steps to review and approve a request that requires a purchase direct
 1. In *Requests* > Requests view list of *Open Requests* (Note: the default sort is by *Submitted On* date (descending) with the newest requests on top).
 1. Select a request for review and select the Request Name hyperlink for the row.
 
-    :::image type="content" source="media/use/hrm-use-management-po.png" alt-text="Screenshot of managing a request that requires a PO in the Hardware Management app .":::
+    :::image type="content" source="media/use/hrm-use-management-po.png" alt-text="Screenshot of managing a request that requires a PO in the Hardware Management app.":::
 
 1. The Hardware Request *General* tab provides an overview of the request. The information helps the hardware manager make a decision to approve or reject the request. The overview includes these sections:
 
     1. Details – Name, Business Group, Submitted by, Requires purchasing indicator, Amount, Submitted on date/time, Completed on date, Requested for, and Request number
     1. Approval – Status, Comments, Approved by, Approved on
     1. Additional details – input as free text from request
-    1. Items – list includes product description, quantity and price
+    1. Items – list includes product description, quantity, and price
     1. Purchase Orders
     1. Assets
 
@@ -112,12 +112,12 @@ It can be set up so that hardware managers have a workflow item for *Approval* s
 
 1. Select **Approvals** on the left pane.
 1. Choose the request to review and a card will open with the relevant details for the request:
-    1. Status – "Requested" in this case (eventually "Approved" or "Rejected")
+    1. Status – *Requested* in this case (eventually *Approved* or *Rejected*)
     1. Name
     1. Submitted By
     1. Amount
     1. Additional details – input as free text from request
-    1. Items – list includes product description, quantity and price
+    1. Items – list includes product description, quantity, and price
     1. Attachments – documents relevant to review
     1. Status flow – shows timing of action from requestor to approver
     1. Comments – allows approver to explain decision
@@ -132,12 +132,12 @@ It can be set up so that emails go to a hardware manager's *Outlook Inbox* when 
 
 1. When an hardware request email arrives, simply open the email to review the relevant details for the request:
 
-    1. Status – "Requested" in this case (eventually "Approved" or "Rejected")
+    1. Status – *Requested* in this case (eventually *Approved* or *Rejected*)
     1. Name
     1. Submitted By
     1. Amount
     1. Additional details – input as free text from request
-    1. Items – list includes product description, quantity and price
+    1. Items – list includes product description, quantity, and price
     1. Attachments – documents relevant to review
     1. Status flow – shows timing of action from requestor to approver
     1. Comments – allows approver to explain decision
@@ -158,20 +158,20 @@ Requests that do not require the purchasing step (assets already in inventory) m
 1. Select a request for review and then select the **Request Name** hyperlink for the row.
 1. The Hardware Request *General* tab provides an overview of the request.  The information helps the administrator make a decision to approve or reject the request.  The overview includes sections:
     1. Details – Name, Business Group, Submitted by, Requires purchasing indicator (update from *Yes* to *No*; you'll notice the *Status Tracker* will change, with the steps for *Purchase* and *Receive* disappearing), Amount, Submitted on date/time, Completed on date, Requested for, and Request number
-    1. Approval – Status, Comments, Approved by, Approved on
+    1. Approval – Status, Comments, Approved by, and Approved on
     1. Additional details – free text inputted from request
-    1. Items – list includes product description, quantity and price
+    1. Items – list includes product description, quantity, and price
     1. Purchase Orders
     1. Assets
-1. The Header section contains the status tracker which:
+1. The Header section contains the status tracker that:
     1. allows the administrator to quickly identify where in the process the request is
-    1. has executable functions for each step in the process
+    1. has functions for each step in the process
 1. Approve in the Hardware Management app
     1. Within the status tracker, select **Review**
     1. Update the Approval Status from *Pending* to *Approved*
     1. In this case, purchasing is not required.  For *Require Purchasing?* change the default from *Yes* to *No*
-    1. Select **Run Flow** to *Notify Review Complete*, which will notify the user making the request of the approval action.
-    1. Select **Next Stage** to advance to the *Deliver* step.
+    1. Select **Run Flow** to *Notify Review Complete*, which will notify the user making the request of the approval action
+    1. Select **Next Stage** to advance to the *Deliver* step
 
 > [!NOTE]
 >
@@ -181,16 +181,16 @@ Requests that do not require the purchasing step (assets already in inventory) m
 
 When the request includes both items for purchasing and items on hand, a hybrid approach is required.
 
-It's best to view the request as *Requires purchasing? Yes* with individual items being assigned as *existing assets*.  The process resumes from step 5 in the *Use Hardware Management app for a request that doesn't require a purchase*. Take these steps to approve in the Hardware Management app:
+It's best to view the request as *Requires purchasing? Yes* with individual items being assigned as *existing assets*.  The process resumes from step five in the *Use Hardware Management app for a request that doesn't require a purchase*. Take these steps to approve in the Hardware Management app:
 
-1. Add an approval comment to indicate to Purchaser which items will be assigned from existing asset inventory (for example, *USB-C Charger should not be purchased; assign from inventory*)
-1. Assuming there is availability, go to the *Assets* block, select the **ellipsis (…)** and then select **Add Existing Asset**
+1. Add an approval comment to indicate to Purchaser which items will be assigned from existing asset inventory (for example, *USB-C Charger should not be purchased; assign from inventory*).
+1. Assuming there is availability, go to the *Assets* block, select the **ellipsis (…)**, and then select **Add Existing Asset**.
 1. Input the name of the asset in *Look for records* and search.
 1. Select the asset and then select the **Add** button. This  assigns the asset to the request.
 
 ### Reject a request
 
-After review, the decision may be made that a request should not be continued. The request may be a duplicate, entered by mistake, or exceed budget. In this case, the hardware manager must reject the request. This will ensure that no purchasing or further action is taken. The rejection can be done in Teams, Outlook, or the Hardware Management app directly.
+After review, the decision may be made that a request should not be continued. The request may be a duplicate, be a mistake, or exceed budget. In this case, the hardware manager must reject the request. This ensures that no purchasing or further action is taken. The rejection is done in Teams, Outlook, or the Hardware Management app directly.
 
 #### Use the Hardware Management app to reject a request
 
@@ -198,18 +198,18 @@ After review, the decision may be made that a request should not be continued. T
 1. Select a request for review and select on the *Request Name* hyperlink for the row.
 1. The Hardware Request *General* tab provides an overview of the request.  The information helps the administrator make a decision to approve or reject the request.  The overview includes these sections:
     1. Details – Name, Business Group, Submitted by, Requires purchasing indicator, Amount, Submitted on date/time, Completed on date, Requested for, and Request number
-    1. Approval – Status, Comments, Approved by, Approved on
+    1. Approval – Status, Comments, Approved by, and Approved on
     1. Additional details – input as free text from request
     1. Items – list includes product description, quantity and price
     1. Purchase Orders
     1. Assets
 1. The header section contains the status tracker that:
-    1. allows the administrator to quickly identify where in the process the request is.
-    1. has executable functions for each step in the process.
+    1. allows the administrator to quickly identify where in the process the request is
+    1. has functions for each step in the process
 1. Reject
     1. Within the status tracker, select the **Review** step.
-    1. Update the Approval Status from *Pending* to *Rejected*.
-    1. Select **Run Flow** to *Notify Review Complete*. This notifies the requestor of the approval action.
+    1. Update the Approval Status from *Pending* to *Rejected*
+    1. Select **Run Flow** to *Notify Review Complete*. This notifies the requestor of the approval action
 
 #### Use Teams to reject a request
 
@@ -222,7 +222,7 @@ Hardware managers have a workflow item for *Approval* in Teams that arrives when
     1. Submitted By
     1. Amount
     1. Additional details – input as free text from request
-    1. Items – list includes product description, quantity and price
+    1. Items – list includes product description, quantity, and price
     1. Attachments – documents relevant to review
     1. Status flow – shows timing of action from requestor to approver
     1. Comments – allows approver to explain decision
@@ -238,7 +238,7 @@ Hardware managers receive an email in their *Outlook Inbox* that arrives when a 
     1. Submitted By
     1. Amount
     1. Additional details – input as free text from request
-    1. Items – list includes product description, quantity and price
+    1. Items – list includes product description, quantity, and price
     1. Attachments – documents relevant to review
     1. Status flow – shows timing of action from requestor to approver
     1. Comments – allows approver to explain decision
@@ -290,16 +290,16 @@ Once the shipment of the ordered products are received, you are ready for your n
 
 Now that the assets are on hand, they need to be delivered to the person who they were ordered for. Once the requestor is in possession of the assets, update the request as follows:
 
-1. Create assets for each delivered item
+1. Create assets for each delivered item.
     1. Select **Delivery** within the workflow
     1. Select **Run Flow** for *Set assets as delivered*
     1. In the window that pops up, select **Run Flow** again
-1. Communicate the delivery event to the requestor
+1. Communicate the delivery event to the requestor.
     1. Select **Delivery** within the workflow
     1. Select **Run Flow** for *Notify delivery complete*
     1. In the window that pops up, enter *Delivered On* date
     1. Select **Run Flow** again
-1. Advance the workflow
+1. Advance the workflow.
     1. Select **Deliver** in the workflow and select **Next Stage**
 
 ### Complete
@@ -310,7 +310,7 @@ Update the request to reflect that the process is complete. Take these steps:
     1. Select **Complete** within the workflow
     1. Select **Run Flow** for *Notify request complete*
     1. In the window that pops up, select **Run Flow** again
-1. Complete the workflow
+1. Complete the workflow.
     1. Select **Complete** in the workflow
     1. Enter a *Completed on* date and then select **Finish**
 
