@@ -42,5 +42,6 @@ This feature applies only to Unified development environments. The developer nee
 [Unit testing in the unified developer experience](finance-operations-testing.md)   
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
+[Use SQL to query data in Dataverse](/power-apps/developer/data-platform/dataverse-sql-query)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
