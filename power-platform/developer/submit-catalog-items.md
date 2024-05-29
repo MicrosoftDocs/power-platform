@@ -22,13 +22,13 @@ The catalog in Power Platform enables developers and makers to:
 - Find and install the latest and authoritative version of a component.
 - Get started with templates and components that provide immediate value.
 
-Before you can work with catalog items, you must install and configure it.
+Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../admin/administer-catalog.md)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
 > [!IMPORTANT]
 >
-> - This is a preview feature
+> - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
 
