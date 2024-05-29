@@ -197,7 +197,7 @@ Remove-RoleAssignmentFromUsers
 
 ## Known limitations
 
-- Using the API, if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
