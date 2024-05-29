@@ -34,14 +34,14 @@ Application makers and developers can submit items to the catalog so that they c
 
 ## Get started
 
-1. [Install Power Platform CLI](#install-pac-cli)
+1. [Install Power Platform CLI](#install-power-platform-cli)
 1. [Get access to catalog as submitter or reader](#get-access-to-catalog-as-submitter-or-reader)
 
 ### Install Power Platform CLI
 
 Follow the steps to install Power Platform CLI: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
 
-Use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.
+<!-- Use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.-->
 
 ### Get access to catalog as submitter or reader
 
@@ -190,7 +190,7 @@ Don't confuse this term with *Solution Publisher*. Catalog item publisher isn't 
 
 You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. The system checks if that publisher exists, else creates it and assigns an ID.
 
-For example, HR IT team of developers can create a publisher and ID the developers using an Microsoft Entra ID group.
+For example, HR IT team of developers can create a publisher and ID the developers using a Microsoft Entra ID group.
 
 Here's a sample of a publisher record:
 
@@ -299,7 +299,7 @@ Example
 
 #### Support contact
 
-IT biz support specialist.
+IT support specialist.
 
 Can be same as the engineering contact that the consumer of a catalog item can reach out to if they run into issues with the application.
 
