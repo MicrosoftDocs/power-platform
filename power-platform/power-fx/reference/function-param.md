@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/25/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Launch and Param functions
@@ -31,6 +31,10 @@ Launches a webpage or a canvas app. The function supports:
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
 **Launch** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
+
+>[!NOTE]
+> If the Launch formula is used to open Power Apps and the app isn't visible to the end user, it's recommended to check if the app is blocked by a browser pop-up blocker or if the browser is wait for the user's response to a dialog box that asks whether they want to navigate to a new screen.
+
 
 ### Address
 

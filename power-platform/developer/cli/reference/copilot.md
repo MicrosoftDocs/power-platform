@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI copilot command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI copilot command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 1/22/2024
+author: devkeydet
+ms.author: marcsc
+ms.date: 5/13/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -34,6 +34,7 @@ Tools and utilities for copilot management
 |[pac copilot model list](#pac-copilot-model-list)|AI Builder models in the current environment.|
 |[pac copilot model predict](#pac-copilot-model-predict)|Sends text or prompt to AI Model|
 |[pac copilot model prepare-fetch](#pac-copilot-model-prepare-fetch)|Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.|
+|[pac copilot publish](#pac-copilot-publish)|Publish a Custom Copilot|
 |[pac copilot status](#pac-copilot-status)|Poll the deployment status of a specified Virtual Agent in the current or target Dataverse environment.|
 
 
@@ -271,6 +272,28 @@ Output FetchXML file that is ready to execute against the current environment.
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [copilot-model-prepare-fetch-remarks](includes/copilot-model-prepare-fetch-remarks.md)]
+
+## pac copilot publish
+
+Publish a Custom Copilot
+
+[!INCLUDE [copilot-publish-intro](includes/copilot-publish-intro.md)]
+
+
+### Required Parameters for copilot publish
+
+#### `--bot` `-id`
+
+The Chatbot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+
+
+### Optional Parameters for copilot publish
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+[!INCLUDE [copilot-publish-remarks](includes/copilot-publish-remarks.md)]
 
 ## pac copilot status
 

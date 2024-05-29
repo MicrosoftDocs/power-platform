@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/21/2015
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Revert function

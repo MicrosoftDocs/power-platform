@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI connector command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI connector command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 1/22/2024
+author: devkeydet
+ms.author: marcsc
+ms.date: 5/13/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 

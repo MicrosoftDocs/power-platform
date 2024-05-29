@@ -8,7 +8,7 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/22/2024
+ms.date: 03/20/2024
 search.audienceType: 
   - admin
 ms.contributors:
@@ -150,7 +150,9 @@ The manager hierarchy is easily created by using the manager relationship on the
 
 ## Include or exclude records owned by direct report with the disabled user status
 
- Managers can see their disabled status direct report's records for environments where hierarchy security is enabled after January 31, 2024. For other environments, disabled status direct report's records aren't included in the manager's view. 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/embed/RW1jVin]
+
+Managers can see their disabled status direct report's records for environments where hierarchy security is enabled after January 31, 2024. For other environments, disabled status direct report's records aren't included in the manager's view. 
 
  To include disabled status direct report's records:
 

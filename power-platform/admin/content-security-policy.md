@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 10/16/2023
+ms.date: 04/25/2024
 ms.topic: conceptual
 author: JesseParsons
 ms.subservice: admin
@@ -25,9 +25,9 @@ Each component of the CSP header value controls the assets that can be downloade
 | [worker-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/worker-src) | `'self' blob:` | No |
 | [style-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/style-src) | `* 'unsafe-inline'` | No |
 | [font-src](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/font-src) | `* data:` | No |
-| [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self'` | Yes |
+| [frame-ancestors](https://developer.mozilla.org/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors) | `'self' https://*.powerapps.com` | Yes |
 
-This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self';`. In our roadmap, we have the ability to modify currently noncustomizable headers.
+This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`. In our roadmap, we have the ability to modify currently noncustomizable headers.
 
 ### Prerequisites
 - For Dynamics 365 Customer Engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 Customer Engagement (on-premises), version 9.1 or later version.
@@ -61,7 +61,7 @@ The final section is "Configure directives". This section allows you to control 
 
 ![Configure CSP directives](media/csp-directives.png "Configure CSP directives")
 
-Leaving the default directive toggled on uses the default value specified in the table shown earlier in this article. Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the Add button to add entries to the list and the delete icon to remove them.
+Leaving the default directive toggled on uses the default value specified in the table shown earlier in this article. Turning off the toggle allows admins to specify custom values for the directive and append them to the default value. The example below sets custom values for `frame-ancestors`. The directive would be set to `frame-ancestors: 'self' https://*.powerapps.com https://www.foo.com https://www.bar.com` in this example, meaning the app could be hosted in the same origin, `https://*.powerapps.com`, `https://www.foo.com` and `https://www.bar.com`, but not in other origins. Use the Add button to add entries to the list and the delete icon to remove them.
 
 ![Setting custom CSP directives](media/csp-default-directive.png "Setting custom CSP directives")
 
@@ -71,6 +71,10 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 - `https://msteamstabintegration.dynamics.com/`
 
 For Dynamics 365 App for Outlook, you must add your Outlook Web App homepage origin to `frame-ancestors`.
+
+For embedding Power Apps in Power BI reports, add the following to `frame-ancestors`:
+- `https://app.powerbi.com`
+- `https://msi-pbi.pbi.microsoft.com`
 
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
@@ -106,7 +110,7 @@ In the above example:
   - `frame-ancestors` is customized to `https://www.baz.com`
 
 The effective CSP values would be:
-- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self'; report-uri https://www.mysite.com/myreportingendpoint;`
+- Model-driven apps: `Content-Security-Policy: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com; report-uri https://www.mysite.com/myreportingendpoint;`
 - Canvas apps: `Content-Security-Policy-Report-Only: script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors https://www.baz.com; report-uri https://www.mysite.com/myreportingendpoint;`
 
 ## Organization settings

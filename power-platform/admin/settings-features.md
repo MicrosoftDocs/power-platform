@@ -4,7 +4,7 @@ description: Manage feature settings to adjust how features appear and function 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/12/2024
+ms.date: 05/17/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ Make sure you have the System Administrator or System Customizer security role o
 **Check your security role**
 
 - Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+- Don't have the correct permissions? Contact your system administrator.
 
 > [!NOTE]
 > These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
@@ -48,6 +48,11 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 |---------|-------------|---------------|
 |AI Builder preview models  | If **Off**, the environment will not have access to AI Builder. Not all environments will have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](/ai-builder/administer)  | On |
 
+## AI form fill assistance
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
+
 ## AI suggestions for formula columns
 
 | Setting | Description | Default value |
@@ -58,24 +63,13 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Power BI visualization embedding| More information: [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)| Off |
-|Bing Maps| If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don’t need to enter a key. | Off | 
-|Prevent social data in Dynamics | If you don’t want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization will not be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
+|Bing Maps| If **On**, Customer Engagement (on-premises) users will need to enter a Bing Maps key. Users don't need to enter a key. | Off | 
+|Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization will not be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
 
 ## Communications
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Country/region code prefixing for numbers|If **On**, customer engagement apps will prefix the country/region code to numbers that users are trying to call.|  On|
-
-### Set the telephony provider
-Choose which provider to enable outbound calls from within customer engagement apps. This setting doesn’t apply to Dynamics 365 for tablets or Dynamics 365 for phones.
-
-> [!Note]
-> This feature was retired on July 31, 2021. More information: [Skype integration with customer engagement apps is deprecated](../important-changes-coming.md#skype-integration-with-customer-engagement-apps-is-deprecated)
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-|Use Skype|  More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)| Enabled |
-|Use Skype for Business|More information:  [Set up customer engagement apps to use Skype or Skype for Business](set-up-skype-or-skype-for-business.md)  |Not enabled|
 
 ## Hosted RPA
 | Setting | Description | Default value |
@@ -203,6 +197,16 @@ Choose which provider to enable outbound calls from within customer engagement a
 |---------|-------------|---------------|
 | Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |Off|
 
+## Disable empty address record creation
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload does not have any address relevant data, an empty address data record will not be created. This feature is supported only for **Account** and **Contact** tables. More information: [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
+
+## Enable deletion of address records
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion. More information: [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records)|    Off    |
+
 ## Power Apps ideas for canvas apps
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -215,4 +219,10 @@ Choose which provider to enable outbound calls from within customer engagement a
 |Automatically assign permission to Power BI workspaces | If **On**, synchronization will take place between pre-defined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles will be assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
+## Recycle Bin (preview)
+
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+| Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
+|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
 

@@ -5,13 +5,15 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 11/08/2023
+ms.date: 05/17/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 contributors:
-- bibekTimalsina948 
+- arjunmayur 
+- bibekTimalsina948
+- dannylevymsft
 ms.collection: bap-ai-copilot
 ---
 
@@ -76,7 +78,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
             "shareWithColleaguesUserLimit": 10000
         },
         "powerApps": {
-            "disableShareWithEveryone": false,
+            "disableShareWithEveryone": true,
             "enableGuestsToMake": false
         },
         "modelExperimentation": {
@@ -105,9 +107,8 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator. Default value is false.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is false.|
+|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to turn off the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is true.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability in all Power Apps. Default value is false.|
 |powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default value is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps. Default value is false.|
 |powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting isn't currently used by the platform but might be used in the future.|
@@ -141,6 +142,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models. Default value is false.|
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs). Default value is false.|
 |powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
+|powerPlatform.gccCommercialSettings.disableGccCommercialAccess | Boolean |Turning on this setting allows connections to resources in Azure commercial that operate and send data outside the Power Platform US Government compliance boundary. This is specifically used to allow access to commercial resources from GCC cloud versions of Power Platform Connectors.|
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI pipeline command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI pipeline command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 1/22/2024
+author: devkeydet
+ms.author: marcsc
+ms.date: 5/13/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -32,7 +32,7 @@ Work with Pipelines
 
 ## pac pipeline deploy
 
-Start pipeline deployment. 
+Start pipeline deployment.
 
 [!INCLUDE [pipeline-deploy-intro](includes/pipeline-deploy-intro.md)]
 
@@ -72,7 +72,7 @@ This parameter requires no value. It's a switch.
 
 ## pac pipeline list
 
-List Pipelines. 
+List Pipelines
 
 [!INCLUDE [pipeline-list-intro](includes/pipeline-list-intro.md)]
 

@@ -1,16 +1,16 @@
 ---
 title: Host object in Power Apps
 description: Reference information including syntax and examples for the Host object in Power Apps.
-author: jorisdg
+author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: 
-ms.date: 02/08/2023
+ms.date: 3/22/2024
 ms.author: jorisde
 search.audienceType: 
   - maker
 contributors:
-  - jorisdg
+  - gregli
 ---
 # Host object in Power Apps
 

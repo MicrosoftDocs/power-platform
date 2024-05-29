@@ -1,10 +1,10 @@
 ---
-title: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
-description: "To maintain security of your files, all app developers must store their AppSource package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for AppSource trials." # 115-145 characters including spaces. This abstract displays in the search result.
+title: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key | Microsoft Docs" 
+description: "To maintain security of your files, all app developers must store their AppSource package file in a Microsoft Azure Blob storage account, and use a Shared Access Signature (SAS) key to share the package file. Your package file is retrieved from your Azure Storage location for certification, and then for AppSource trials."
 ms.date: 04/03/2023
 ms.reviewer: pehecke
 ms.topic: article
-author: shmcarth # GitHub ID
+author: shmcarth
 ms.author: shmcarth
 ms.subservice: developer
 search.audienceType: 
@@ -46,7 +46,7 @@ To upload your package to Azure Blob storage:
 
 1. Start Azure Storage Explorer on your computer, and connect to your Azure Storage account by signing in using the same account with which you created your Azure Storage account.
 
-1. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 4: Create an AppSource package for your app](create-package-app.md). 
+1. In Azure Storage Explorer, select the newly created container, and then select **Upload** > **Upload Files** to upload the app source package that you created in [Step 3: Create an AppSource package for your app](create-package-app.md). 
 
    :::image type="content" source="media/appsource-storageaccount-pic5.png" alt-text="Upload the app source package.":::
 

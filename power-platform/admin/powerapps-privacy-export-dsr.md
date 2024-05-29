@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/05/2023
+ms.date: 04/02/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -312,8 +312,19 @@ Power Apps licenses always include Power Automate capabilities. In addition to b
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
 
+## Step 12: Find personal data for the user in Microsoft Copilot Studio
+Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot Studio is also available as a standalone service. For guidance on how to respond to DSR requests for Microsoft Copilot Studio service data, see [Responding to Data Subject Requests for Microsoft Copilot Studio](/power-virtual-agents/personal-data-summary).
 
-## Step 12: Export the user's personal data in environments
+> [!IMPORTANT]
+>  We recommend that administrators complete this step for Power Apps users.
+
+## Step 13: Find personal data for the user in the Microsoft 365 admin center
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
+
+> [!IMPORTANT]
+>  We recommend that administrators complete this step for Power Apps users.
+
+## Step 14: Export the user's personal data in environments
 Anyone with a Power Apps license, provided there is 1GB available database capacity, can create environments and create and build apps on Dataverse; this includes the Power Apps Developer Plan, which is a free license that allows users to try out Dataverse in an individual environment. To see which Dataverse capabilities are included in each Power Apps license, see the [Power Apps Pricing page](https://powerapps.microsoft.com/pricing).
 
 For guidance on how to respond to DSR requests for users that use Dataverse, see [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md).

@@ -3,7 +3,7 @@ title: "Special system users and application users"
 description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/09/2023
+ms.date: 04/19/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -11,6 +11,8 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+ms.contributors:
+- saponcer
 ---
 
 # System and application users
@@ -71,6 +73,8 @@ Most of these users are hidden from user views but they can be found by using th
 | # DataSyncService-\<REGION\> | DataSyncService-\<REGION\><br />@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Service  |
 | # DataSyncFramework-\<REGION\> | DataSyncFramework-\<REGION\>@onmicrosoft.com | To read data for Azure Data Lake sync | Data Sync Framework  |
 | # Sharepoint Syntex | SharepointSyntex@onmicrosoft.com | To allow Sharepoint to use AI Builder document processing models | Basic User  |
+| # InsightsAppsPlatform | InsightsAppsPlatform@onmicrosoft.com | For insights generation and ingestion of data into Dataverse | Insights Apps Platform Role  |
+| Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
 
 ## The purpose of the system account?
 

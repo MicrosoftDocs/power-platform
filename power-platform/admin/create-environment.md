@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/27/2024
+ms.date: 05/09/2024
 ms.subservice: admin
 ms.author: mbajwa
 ms.reviewer: sericks
@@ -15,6 +15,7 @@ search.audienceType:
   - admin 
 contributors:
   - marcelbf
+  - iyanni
 ---
 
 # Create and manage environments in the Power Platform admin center
@@ -42,8 +43,8 @@ To create an environment, these requirements must be true:
    | Power Apps trial |Yes (one)| Yes | 
    | Power Automate plan |Yes (one)| Yes | 
    | Power Automate trial |Yes (one)| Yes | 
-   | Power Virtual Agents trial plan |Yes | No | 
-   | Power Virtual Agents plan | No | Yes | 
+   | Microsoft Copilot Studio trial plan |Yes | No | 
+   | Microsoft Copilot Studio plan | No | Yes | 
 
   You can also create a developer environment. For more information about developer environment, see [Create a developer environment](/power-platform/developer/create-developer-environment).
   
@@ -98,7 +99,7 @@ Once you create an environment, if you don't select **Enable Dynamics 365 apps**
 #### Dynamics 365 apps and trial type environments
 
 > [!IMPORTANT]
-> Currently, Dynamics 365 apps can't be enabled for environments that are trial type environments. For more information about Power Platform environment types, go to [Type of environments](environments-overview.md#types-of-environments).
+> Currently, Dynamics 365 apps can't be enabled for environments that are trial type environments. For more information about Power Platform environment types, go to [Power Platform environment types](environments-overview.md#power-platform-environment-types).
 
 When you create or use an environment URL, it can't be the same URL as a [deleted](delete-environment.md) or [changed](edit-properties-environment.md) environment. Wait for at least 24 hours to pass, after the environment deletion or change, to use the URL.
 
@@ -130,6 +131,7 @@ For Dynamics 365 finance and operations apps, you need at least:
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
+   |Get new features early     | Select **Yes** for early release cycle.        |
    |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Add a Dataverse data store | Select **Yes**. |
@@ -170,6 +172,7 @@ You need 1 GB of available database capacity.
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
+   |Get new features early     | Select **Yes** for early release cycle.        |
    |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Add a Dataverse data store | Select **No**. |
@@ -225,6 +228,12 @@ Users can access resources in an environment if they have:
   Learn how to share Power Platform resources:
   - [Share a canvas app with your organization](/powerapps/maker/canvas-apps/share-app)
   - [Share a cloud flow](/power-automate/create-team-flows)
+
+### Why do I no longer see Preview (United states) region?
+
+This region is no longer available as a choice. It has been replaced with the **Get new features early** setting when the United States region is selected.
+
+Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
 
 ### What are the new trial limits for Power Apps customers?
 

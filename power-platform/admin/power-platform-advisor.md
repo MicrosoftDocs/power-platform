@@ -1,20 +1,20 @@
 ---
-title: Use Power Platform Advisor (preview)
+title: Use Power Platform Advisor
 description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 1/29/2024
+ms.date: 05/03/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
+ms.contributors:
+- DanaMartens
 search.audienceType:
   - admin
 ---
 
-# Use Power Platform Advisor (preview)
-
-[This article is prerelease document and is subject to change.]
+# Use Power Platform Advisor
 
 Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health.
 
@@ -26,7 +26,7 @@ With Advisor, administrators can:
 
 ## Access Power Platform Advisor
 
-All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor (Preview)** in the navigation menu.
+All tenant admins can access Advisor in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by selecting **Advisor** from the menu options.
 
 Tenant admins must have at least _one_ of the following roles:
 
@@ -36,9 +36,8 @@ Tenant admins must have at least _one_ of the following roles:
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - Advisor currently scans only the Managed Environments in the tenant for recommendations. Scanning is done once a week.
+> - Power Platform Advisor scans for analytics-based recommendations once a week. You can check the last scanned date within the recommendation panel.
+> - If a resource is deleted outside of the Advisor, certain actions fail.
 > - To submit feedback and suggestions, use the [Power Platform Advisor - Feedback](https://aka.ms/padvisorfeedback) form.
 
 ## Turn on Power Platform Advisor
@@ -49,20 +48,20 @@ Advisor is turned on by default for all [Managed Environments](managed-environme
 
 ### Recommendations
 
-Power Platform tenant admins can view the top recommendations on the **Advisor (Preview)** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
+Power Platform tenant admins can view the top recommendations on the **Advisor** card. If the Power Platform admin center home page isn't customized, this card is automatically pinned on the **Home** page. Your tenant is scanned for recommendations weekly.
 
 - Select **View details** on any recommendation to view its details.
-- Select **View recommendations** to view all recommendations on the **Advisor (Preview)** page.
+- Select **View recommendations** to view all recommendations on the **Advisor** page.
 
-:::image type="content" source="media/power-platform-advisor/advisor-card.svg" alt-text="Advisor card on the home page.":::
+:::image type="content" source="media/power-platform-advisor/advisor-recommendations.png" alt-text="Screenshot of Advisor card on the home page.":::
 
 > [!TIP]
-> If the home page is customized, you don't see the **Advisor (Preview)** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
-> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page in Power Platform admin center.":::
+> If the home page is customized, you don't see the **Advisor** card, or you removed the card from the home page, you can select **+ Add cards** to add the card to the **Home** page.
+> :::image type="content" source="media/power-platform-advisor/add-card.png" alt-text="Screenshot that shows how to add an advisor card to your home page.":::
 
 ### Inline actions
 
-You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [Categories of recommendations](#categories-of-recommendations).
+You can take action for each recommendation in the recommendation pane. An admin can take relevant actions for a specific resource or take a bulk action by selecting up to 10 resources from the recommendation list. For certain recommendations that require action by a nonadmin user, detailed instructions are displayed. To learn more, see [recommendations](#recommendations).
 
 ### Automated actions
 
@@ -73,6 +72,10 @@ While building cloud flows using the connector, you can get Power Platform Advis
 - **Get Recommendations**: Returns all the valid recommendations in your tenant.
 - **Get Recommendation Resources**: Returns all the resources for a specific recommendation.
 - **Execute Recommendation Action**: Executes a specific action for a specific resource listed in a recommendation.
+
+### Export recommendations
+
+The recommendation data shown in the Power Platform Advisor can be exported using the **Get Recommendation Resources** action in the [Power Platform for Admin V2](/connectors/powerplatformadminv2/) connector. You can create a cloud flow (or a scheduled cloud flow) to get the recommendation resources for each of the below mentioned recommendations and export them to an Excel file or to an email using the Excel Online or Office 365 Outlook connectors.
 
 ### Share recommendations
 
@@ -87,6 +90,7 @@ When an entire recommendation or multiple rows in the recommendation is shared, 
 :::image type="content" source="media/power-platform-advisor/share-to.png" alt-text="Screenshot that shows where to enter a name in the Share to textbox.":::
 
 > [!NOTE]
+>
 > - Shared recommendations are sent as an adaptive card in a personal Teams chat.
 > - When recommendations are shared, the sharing card provides a link to that recommendation for the admin.
 > - When an app or resource is shared, the sharing card provides a link to both the recommendation and the app in the maker portal.
@@ -99,9 +103,9 @@ To get the summary card, admins should install the **Power Apps** app in Teams.
 
 Once installed, admins can view the summary cards in their Teams chats.
 
-## Categories of recommendations
+## Recommendations
 
-During the public preview, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
+At this time, the recommendations focus on security and operational efficiency. You can view these recommendations by category and learn about actions to resolve issues or seize opportunities.
 
 ### Apps without valid owners
 
@@ -136,10 +140,6 @@ With multiple co-owners of an app, admins can promote one of the co-owners to ow
 
 1. Select **Assign app** to promote the co-owner to owner for all selected apps.
 
-### Unused apps in the last 60 days
-
-This recommendation lists unused apps in all Managed Environments within your Power Platform tenant from the last 60 days.
-
 ### Apps that aren't used in last 60 days
 
 This recommendation lists apps in all Managed Environments within your Power Platform tenant that aren't used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
@@ -164,9 +164,14 @@ Select one or more apps from the list and select **Delete**.
 
 After you confirm the delete operation, the selected apps are deleted.
 
+> [!NOTE]
+>
+> - Once an action is taken, it takes up to one week for the apps to be removed from the list.
+> - Quarantine and Delete actions fail if the app is already deleted outside the Advisor.
+
 ### Apps shared with everyone
 
-This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone**, such as guest users in your Microsoft Entra tenant.
+This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone** in your Microsoft Entra tenant.
 
 > [!IMPORTANT]
 >
@@ -179,6 +184,65 @@ This recommendation lists apps in all Managed Environments within your Power Pla
 This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used, but not part of a solution. An app that's not part of a solution means the app was both developed and used in the same environment.
 
 > [!IMPORTANT]
-> Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
 >
-> The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+> - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM best practices could cause a single change to break the app for several users with no easy way to recover.
+> - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+
+### Pending license requests
+
+This recommendation lists the number of pending license requests in your tenant. Delay in license assignment can lead to loss of productivity and might result in noncompliant use of premium apps and resources.
+
+> [!IMPORTANT]
+> You must have adequate permissions on the Microsoft 365 admin center to assign licenses. If you don't have the right privileges, you may share the recommendation with someone in your organization who can assign the licenses to the requested users.
+
+### High-value apps in default environment
+
+This recommendation lists the apps that are potentially high value (used by over 100 users each month) and is currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to leverage premium security and governance capabilities for all resources.
+
+> [!IMPORTANT]
+>
+> - Apps should follow application lifecycle management (ALM) best practices. Not following proper ALM could cause a single change to break the app for several users with no easy way to recover.
+> - The new _pipelines_ feature helps citizen developers, without prior ALM experience, to safely deploy their apps and dependent assets to a production environment.
+
+### Websites are expiring in the next 7 days
+
+This recommendation lists trial websites that are expiring in the next seven days. Review and [convert the websites to production](/power-pages/admin/convert-site) as needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Websites didn't receive any traffic in the last 30 days
+
+This recommendation lists websites that didn't receive any traffic in the last 30 days. This means there are some websites
+in your tenant that didn't have any visitors in the past month. These websites might be outdated, irrelevant, or redundant.
+
+To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center, select **Resources**, > **Power Pages sites**> **Analytics** to get more insights into the traffic.
+
+If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
+
+To shut down a website:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Under **Resources**, select **Power Pages sites**, and select the site.
+1. Select **Site Actions** > **Shut down this site** > **Stop**.
+
+    :::image type="content" source="media/power-platform-advisor/shut-down-site.svg" alt-text="Screenshot showing the action to shut down a site.":::
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+If you want to start the site again later, select **Site Actions** > **Start this site** > **Start**.
+
+### Websites don't have Content Delivery Network (CDN) enabled
+
+This recommendation lists production websites that don't have Content Delivery Network (CDN) enabled. Review the websites and [enable Content Delivery Network](/power-pages/configure/configure-cdn) where needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Websites don't have Web Application Firewall (WAF) enabled
+
+This recommendation lists production websites that have Web Application Firewall (WAF) disabled. Review the websites and [enable Web Application Firewall](/power-pages/security/configure-web-application-firewall) where needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.

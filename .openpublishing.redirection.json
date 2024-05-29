@@ -1,6 +1,16 @@
 
 {
   "redirections": [
+   {
+      "source_path": "power-platform/developer/cli/reference/powerpages.md",
+      "redirect_url": "pages",
+      "redirect_document_id": "false"
+    },
+   {
+      "source_path": "power-platform/developer/cli/reference/org.md",
+      "redirect_url": "env",
+      "redirect_document_id": "false"
+    },
     {
       "source_path": "power-platform/developer/cli/reference/virtual-agent.md",
       "redirect_url": "copilot",
@@ -957,8 +967,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/admin/create-dlp-policy.md",
+      "redirect_url": "/power-platform/admin/prevent-data-loss",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/admin/storage-sas-token.md",
       "redirect_url": "/power-platform/admin/access-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/onpremises-data-gateway-source-management.md",
+      "redirect_url": "/power-platform/admin/wp-onpremises-gateway",
       "redirect_document_id": false
     }
   ]

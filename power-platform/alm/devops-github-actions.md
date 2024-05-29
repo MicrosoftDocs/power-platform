@@ -2,14 +2,12 @@
 title: "GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the ALM-related tools and services that are available to developers when using GitHub and Microsoft Power Platform."
 keywords: 
-author: kkanakas 
+author: devkeydet
 ms.subservice: alm
-ms.author: kartikka
-ms.custom: ""
-ms.date: 08/30/2021
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
+ms.author: marcsc
+ms.date: 05/14/2024
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---
@@ -105,10 +103,9 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ### See also
 
-[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)
-
-
-[Available GitHub Actions](devops-github-available-actions.md)
+[GitHub Actions for Power Platform release notes](https://github.com/microsoft/powerplatform-actions/releases)<br/>
+[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)<br/>
+[Available GitHub Actions](devops-github-available-actions.md)<br/>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

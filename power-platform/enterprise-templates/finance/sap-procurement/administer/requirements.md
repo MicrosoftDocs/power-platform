@@ -61,7 +61,11 @@ Be sure admins with the necessary privileges are available to coordinate and set
 - A Microsoft Entra ID Global or Gateway (default user permission for anyone performing the install) admin
 - An SAP super admin (S-User)
 
-More information: [On-premises and VNet data gateways](/data-integration/gateway/), [On-premises data gateway management for Power Platform](/power-platform/admin/onpremises-data-gateway-management), [Set up on-premises data gateway for SAP integration with Power Platform](set-up-gateway.md)
+More information:
+
+- [On-premises and VNet data gateways](/data-integration/gateway/)
+- [On-premises data gateway management for Power Platform](/power-platform/admin/onpremises-data-gateway-management)
+- [Set up on-premises data gateway for SAP integration with Power Platform](set-up-gateway.md)
 
 ### Downloads
 
@@ -100,9 +104,9 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
 
   - Access [Microsoft Entra ID](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView) from the Microsoft Entra admin center.
   - Set up a new [tenant](/entra/identity-platform/quickstart-create-new-tenant) or reconfigure an existing tenant. The tenant will need to have at least 1 GB of database storage capacity available for the environments within it.
-  - Set up additional [Entra ID admin roles](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
-  - Set up [Entra ID single sign-on (SSO) for gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
-  - Create [security groups](configure-security-groups.md) within the Entra ID tenant created to support conditional access to solution components.
+  - Set up additional [Microsoft Entra ID admin roles](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
+  - Set up [Microsoft Entra ID single sign-on (SSO) for gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
+  - Create [security groups](configure-security-groups.md) within the Microsoft Entra ID tenant created to support conditional access to solution components.
 
 - [Power Platform admin center](https://admin.powerplatform.microsoft.com/). As a Global admin or Power Platform System admin, you need to:
   - Set up the admin center's [management and admin connectors](/power-platform/admin/wp-management-monitoring).
@@ -111,15 +115,11 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
 
 ## Related content
 
-[Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
-
-[Microsoft Entra ID documentation](/entra/identity/)
-
-[Administer Power Platform](/power-platform/admin/)
-
-[SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
-
-[Updated SAP connector for .NET support in on-premises data gateway](https://powerautomate.microsoft.com/blog/updated-sap-connector-for-net-support-in-on-premises-data-gateway/)
+- [Overview of the Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview)
+- [Microsoft Entra ID documentation](/entra/identity/)
+- [Administer Power Platform](/power-platform/admin/)
+- [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
+- [Updated SAP connector for .NET support in on-premises data gateway](https://powerautomate.microsoft.com/blog/updated-sap-connector-for-net-support-in-on-premises-data-gateway/)
   
 ### Next steps
 
