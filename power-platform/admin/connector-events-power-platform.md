@@ -73,6 +73,7 @@ The following table lists the connector events available for searching in the au
 |Gateway cluster edited    | When a gateway cluster is updated        |
 |Gateway permission added or edited    | When a gateway is shared or the sharing permissions are updated      |
 |Gateway permission removed   | When sharing permissions of a gateway are removed        |
+|Added ConnectionDlpEvaluationResult |	When connection is disabled due to DLP violation |
 
 ## Get details on activities for logging
 
