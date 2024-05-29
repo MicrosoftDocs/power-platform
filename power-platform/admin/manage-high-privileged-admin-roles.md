@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 05/23/2024
+ms.date: 05/29/2024
 search.audienceType: admin
 
 ---
@@ -21,7 +21,7 @@ Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileg
 
 ## Prerequisites
 
-- Remove old system administrator role assignments in your environments. You can use PowerShell scripts to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environments.
+- Remove old system administrator role assignments in your environments. You can use [PowerShell scripts](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement) to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environments.
 
 ## Changes to feature support
 
@@ -50,7 +50,7 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 We support elevation using either PowerShell or through an intuitive experience in Power Platform admin center.
 
 > [!NOTE]
-> Users who attempt to self-elevate must be a global admin, Power Platform admin, or Dynamic 365 admin. The user interface in Power Platform admin center isn't available for users with other Entra ID admin roles and attempting to self-elevate through the PowerShell API throws an error.
+> Users who attempt to self-elevate must be a Global admin, Power Platform admin, or Dynamics 365 admin. The user interface in Power Platform admin center isn't available for users with other Entra ID admin roles and attempting to self-elevate through the PowerShell API returns an error.
 
 ### Self-elevate through PowerShell
 #### Set up PowerShell
@@ -189,7 +189,7 @@ Remove-RoleAssignmentFromUsers
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
-1. Select the chekmark next to your environment.
+1. Select the checkmark next to your environment.
 1. Select **Membership** in the command bar to request self-elevation.
 1. The **System Administrators** pane is displayed. Add yourself to the system administrator role by selecting **Add me**.
 
@@ -197,14 +197,12 @@ Remove-RoleAssignmentFromUsers
 
 ## Known limitations
 
-- When the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
-- The user making the call must have tenant admin. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
+- The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
-
-- Once you elevate a user through Entra Privileged Identity Management, wait for two hours for the changes to sync from Entra to Power Platform before you sign in to Power Platform admin center.
 
 - Role assignments through groups aren't supported. Make sure that you assign roles directly to the user.
