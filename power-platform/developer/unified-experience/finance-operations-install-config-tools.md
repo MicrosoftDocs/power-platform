@@ -91,7 +91,7 @@ Downloaded assets can be found in the following location:
 The following files are downloaded:
 
 - `DYNAMICSXREFDB.bak` is a backup of the cross reference database.
-- `Microsoft.Dynamics.Framework.Tools.Installer.vsix` is the Finance and operations extension.
+- `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` is the Finance and operations extension.
 - `PackagesLocalDirectory.zip` is the System metadata.
 - `TraceParser.msi` [Learn more about Trace Parser](/dynamics365/fin-ops-core/dev-itpro/perf-test/trace-parser).
 
@@ -106,7 +106,8 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > [!NOTE]
 > This is only required when the Visual Studio output pane indicates it is.
 
-Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.Framework.Tools.Installer.vsix` file to install the extension.
+Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
+On first start of Visual studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
 
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
@@ -114,14 +115,13 @@ Using Windows File Explorer, from the folder specified below, open the `Microsof
 
 > [!NOTE]
 > This is not required when auto setup is enabled.
+> If you don't see the **Configure Metadata** option, open **Extensions** > **Dynamics 365** > **Infolog** and retry.
 
 To configure the extension, follow these instructions.
 
 1. Start Visual Studio, and then select **Continue without code** from the dialog.
 1. Navigate to **Extensions** > **Dynamics 365** > **Configure Metadata** for the first time.  
-   
-   If you don't see the **Configure Metadata** option, open **Extensions** > **Dynamics 365** > **Infolog** and retry.
-   
+      
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataMenu.png" alt-text="Configure Metadata menu":::
 
 1. On the configuration form, select **New** and then create a new configuration. Refer to the field descriptions provided in the [Configuration form field descriptions](#configuration-form-field-descriptions) table that follows this procedure.
@@ -129,6 +129,9 @@ To configure the extension, follow these instructions.
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadata.png" alt-text="Configure Metadata dialog":::
 
 1. Select **Save**.
+2. You can similary edit a configuration. A common field to update is the folder for your own custom metadata.
+3. You can delete stale configurations.
+4. Note that only one configuration can be current or active at any given time.
 
 #### Configuration form field descriptions
 
