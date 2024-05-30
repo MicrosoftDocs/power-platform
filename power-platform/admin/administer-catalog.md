@@ -56,13 +56,21 @@ Power Platform admins and system customizers already have full access to the cat
 
 Before you can administer the catalog, you must install and configure it. Most organizations should be fine with just one catalog in their tenant. All environments in a tenant can install catalog items from a single catalog. But some organizations might want to have different catalogs for regions, departments, or other grouping.
 
-To set up a catalog, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for your tenant, and expand **Resources** and then select **Catalogs**.
+<!-- To set up a catalog, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for your tenant, and expand **Resources** and then select **Catalogs**.
 
 :::image type="content" source="media/admin-catalog.png" lightbox="media/admin-catalog.png" alt-text="Catalog in the Power Platform admin center":::
 
-Select **New catalog** in the top menu or in the page itself brings up a setup wizard that has seven steps.
+Select **New catalog** in the top menu or in the page itself brings up a setup wizard that has seven steps. -->
 
-### Step 1: Setup
+To set up the catalog, in the same browser where you are logged into your tenant, go to this link to get the Power Platform Catalog Manager: https://appsource.microsoft.com/product/dynamics-365/powerappssvc.catalogmanager-preview?flightCodes=dde212e5c66047c59bf2b346c419cef6
+
+And click "Get it now". This will then redirect you to the Power Platform Admin Center where you can install the Power Platform Catalog Manager.
+
+:::image type="content" source="media/catalogmanager-appsource.png" lightbox="media/catalogmanager-appsource.png" alt-text="Install the catalog manager":::
+
+Choose which environment you'd like to set up with the Catalog, click "Install", and wait a few minutes for the installation to complete.
+
+<!-- ### Step 1: Setup
 
 Enter the following information:
 
@@ -101,11 +109,16 @@ Select which business categories you would like to allow makers to use when subm
 
 This last step summarizes everything you just set up. If everything looks good, select the **terms and conditions** link to review, and if agreeable, just check the box and select **Create catalog** to finish setup.
 
+
 ### Next steps
   
 You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog.
 
-After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), or in the **Apps** area in of Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
+After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), or -->
+
+When successfully complete, you will see the Power Platform Catalog Manager in your **Apps** page in Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
+
+You can simply repeat this process if you would like to set up a catalog in more environments.
 
 ## Approve and reject submission requests
 
