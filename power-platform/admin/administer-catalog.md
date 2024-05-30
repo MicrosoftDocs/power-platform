@@ -4,13 +4,11 @@ description: "Learn how to administer the catalog for Power Platform. Administer
 author: derekkwanpm
 ms.author: derekkwan
 ms.date: 05/23/2024
-ms.reviewer: jdaly
+ms.reviewer: matp
 ms.topic: article
-ms.subservice: developer
+ms.subservice: admin
 search.audienceType:
-- developer
-contributors:
-- JimDaly
+- admin
 ---
 # Administer the catalog (preview)
 
@@ -172,7 +170,7 @@ These views show the following columns:
 |**Modified On**|When the item was last modified|
 |**Modified By**|Who last modified the item|
 
-You can also view this data using the [pac catalog list](../developer/cli/reference/catalog.md#pac-catalog-list) command. <!-- More information: [View items in the catalog](submit-catalog-items.md#view-items-in-the-catalog) -->
+You can also view this data using the [pac catalog list](../developer/cli/reference/catalog.md#pac-catalog-list) command. [View items in the catalog](../developer/submit-catalog-items.md#view-items-in-the-catalog)
 
 ### Review catalog publishers
 
@@ -259,6 +257,11 @@ After the catalog is set up, you might want to add, edit, or remove user access.
 :::image type="content" source="media/catalog-roles.png" lightbox="media/catalog-roles.png" alt-text="Catalog security roles":::
 
 More information: [Assign a security role to a user](../admin/assign-security-roles.md) and [Manage the security roles of a team](../admin/manage-teams.md#manage-the-security-roles-of-a-team)
+
+### See also
+
+ [Use the catalog with Power Platform CLI (preview)](/power-platform/developer/submit-catalog-items)
+
 
 <!-- ### See also
 
