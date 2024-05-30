@@ -168,7 +168,7 @@ Navigate to an unmanaged solution in development to an environment associated wi
 
 ### Can I deploy across regions?
 
-Not currently. The host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, a pipeline can't deploy from Germany to Canada. And a host in Germany shouldn't manage environments in Canada. Instead, separate hosts should be used for Germany and Canada.
+Yes, but only if the [Cross-Geo Solution Deployments](enable-cross-geo-solution-deployments.md) setting is enabled in the host. If the setting is disabled, the host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, if the setting is disabled, a pipeline can't deploy from Germany to Canada and a host in Germany cannot manage environments in Canada. In a case where the tenant administrator would like to prevent cross-geo solution deployments, separate hosts should be used for Germany and Canada.
 
 ### Can I deploy the same solution using different pipelines?
 
