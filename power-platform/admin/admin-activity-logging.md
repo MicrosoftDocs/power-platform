@@ -4,14 +4,16 @@ description: In this article, you learn how to view Power Platform administrativ
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/08/2024
-author: Zeffin
+author: sericks007
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ms.contributors:
+ - modhawan1 
  - drkestel
+
 ---
 
 # View Power Platform administrative logs using auditing solutions in Microsoft Purview
