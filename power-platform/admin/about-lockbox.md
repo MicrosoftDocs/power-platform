@@ -100,6 +100,9 @@ Global administrators or Power Platform administrators can create or update the 
 
 ## Audit lockbox requests
 
+> [!Warning]
+> A new pipeline is available that can generate audit events for Customer Lockbox with a new schema. Learn more: [Activity category: Lockbox operations](admin-activity-logging.md#activity-category-lockbox-operations)
+
 Actions related to accepting, denying, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
 
 :::image type="content" source="media/lockbox-defender.png" alt-text="Microsoft 365 Defender page.":::
