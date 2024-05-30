@@ -14,7 +14,7 @@ contributors:
 ---
 # Administer the catalog (preview)
 
-- [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 The catalog in Power Platform enables developers and makers to:
 
