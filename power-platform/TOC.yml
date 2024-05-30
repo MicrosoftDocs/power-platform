@@ -19,9 +19,9 @@
           href: availability.md
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
-        - name: Copilots and generative AI in Power Platform
+        - name: Copilots and generative AI features
           items:
-            - name: Copilots and generative AI
+            - name: Copilots and generative AI in Power Platform
               href: copilot.yml
             - name: Turn on copilots and generative AI features
               href: admin/geographical-availability-copilot.md
