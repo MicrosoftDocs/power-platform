@@ -7,7 +7,7 @@ contributors:
   - tverhasselt
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 05/29/2024
+ms.date: 05/30/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -19,13 +19,13 @@ Once configuration and setup steps are complete, the apps are ready to share and
 
 ## Use the Hardware Request app
 
-The Hardware Request app is streamlined, to eliminate any specialized user training for the request process. The app has minimal flexibility to minimize confusion. The goal is to let the app guide the user through creating and submitting their request to initiate the workflow for the approval in the management app. This article provides a brief overview of the supported functions.
+The Hardware Request app is straight forward and easy to use so no specialized user training is necessary for the request process. The app guides you through creating and submitting a request to initiate the workflow for the approval in the management app. This article provides a brief overview of the supported functions in the Hardware Request app.
 
 :::image type="content" source="media/use/hrm-use-home.png" alt-text="Screenshot of the Hardware Request app home page.":::
 
 ### Create a new request for hardware
 
-The Hardware Request app simplifies how you shop and submit requests for new hardware when the need arises. Take these steps to get started:
+The Hardware Request app simplifies how you shop and submit requests for new hardware. Take these steps to get started:
 
 1. On the home page, select **Create new request** to go to the *Select From Available Devices* page. Here, you see a separate tile for each *product type*.
 
