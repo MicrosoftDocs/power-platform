@@ -101,7 +101,7 @@ The following events are delivered to Microsoft Purview.
 | Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.
 | Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request expired or access ended.
 
-An example of the payload of metadata that can be expected from one of the events listed in the table:
+Here's an example of the payload of metadata that can be expected from one of the events listed in the table.
 
 ```
 [
