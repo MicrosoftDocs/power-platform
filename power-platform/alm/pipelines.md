@@ -144,7 +144,7 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 ### Can I roll back to a previous version?
 
-Currently, only higher solution versions can be deployed or imported. As a work-around, admins download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
+Yes. If the pipeline setting is enabled, you can [redeploy previous solution versions](redeploy-past-solution-versions.md) from the run history view on the Pipelines page. If the setting is disabled, only higher solution versions can be deployed or imported. As a work-around, admins can download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
 
 ### Can I set retention policies for pipelines data?
 
