@@ -90,9 +90,9 @@ Each activity event contains a payload of metadata that is specific to the indiv
 |-------------------------|-------------------------|
 | Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
 
-## Activity category: Lockbox Operations
+## Activity category: Lockbox operations
 
- All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request ID</li><li>Lockbox request state</li><li>Lockbox support ticket ID</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment ID</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
+All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request ID</li><li>Lockbox request state</li><li>Lockbox support ticket ID</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment ID</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
 The following events are delivered to the Microsoft Purview.
 
 | **Category** | **Event** | **Description** |
