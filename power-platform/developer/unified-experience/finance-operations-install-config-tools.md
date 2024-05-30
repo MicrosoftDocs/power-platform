@@ -2,7 +2,7 @@
 title: "Install and configure development tools (preview)"
 description: Set up required finance and operations app development tools on your local computer.
 author: pvillads
-ms.date: 05/20/2024
+ms.date: 05/30/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pathaku
@@ -109,7 +109,7 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > This is only required when the Visual Studio output pane indicates it is.
 
 Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
-On first start of Visual studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
 
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
