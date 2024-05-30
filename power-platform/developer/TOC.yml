@@ -72,6 +72,8 @@
           href: unified-experience\finance-operations-testing.md
         - name: Continuous integration and deployment
           href: unified-experience\finance-operations-pipelines.md
+        - name: Diagnose and analyze using trace parser
+          href: unified-experience\finance-operations-trace-parser.md
         - name: Execute unit tests in Azure Pipelines
           href: unified-experience\finance-operations-pipeline-test.md
         - name: Frequently asked questions (FAQ's)
