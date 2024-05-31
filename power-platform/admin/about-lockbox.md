@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/30/2024
+ms.date: 05/31/2024
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -101,7 +101,7 @@ Global administrators or Power Platform administrators can create or update the 
 ## Audit lockbox requests
 
 > [!Warning]
-> A new pipeline is available that can generate audit events for Customer Lockbox with a new schema. Learn more: [Activity category: Lockbox operations](admin-activity-logging.md#activity-category-lockbox-operations)
+> The schema documented in this section for the lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin-activity-logging.md#activity-category-lockbox-operations).
 
 Actions related to accepting, denying, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
 
