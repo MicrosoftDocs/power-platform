@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## ISV Studio removed
 
-ISV Studio was an preview analytics portal that showed limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provided another access point to the connector certification wizard.  
+ISV Studio was a preview analytics portal that showed limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provided another access point to the connector certification wizard.  
 
 Thanks to our ISV partners for trying out ISV Studio during the preview. After careful consideration and extensive review of partner feedback, we recognized the limitations of the service over time and acknowledged that it didn't provide the expected value. ISV Studio was deprecated on April 1, 2024 and removed on May 31, 2024.
 
@@ -34,21 +34,21 @@ For the connector certification wizard, learn more about [directly accessing the
 
 ## DLP resource exemption feature
 
-Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that have never used it before. By October 2024, the resource exemption feature will be deprecated for all customers.
+Effective March 2024, the data loss prevention (DLP) [resource exemption feature](/admin/dlp-resource-exemption.md) is deprecated for tenants that never used it. By October 2024, the resource exemption feature will be deprecated for all customers.
 
 ## Activity Editor was removed in model-driven apps
 
-As part of a service update designed to improve security within Power Apps, we removed the deprecated Activity Editor control, and recommend the use of the [rich text editor control](/power-apps/maker/model-driven-apps/rich-text-editor-control). This change will be rolling out through January and February 2024.
+As part of a service update designed to improve security within Power Apps, we removed the deprecated Activity Editor control, and recommend the use of the [rich text editor control](/power-apps/maker/model-driven-apps/rich-text-editor-control). This change rolled out in January and February 2024.
 
-Learn more about [adding the rich text editor control to a model-driven app](/power-apps/maker/model-driven-apps/rich-text-editor-control). If you are using the Activity Editor control in a customized email or appointment experience in a model-driven app, learn more about [switching to the rich text editor control](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin#enable-the-rte-control-in-the-email-form).
+Learn more about [adding the rich text editor control to a model-driven app](/power-apps/maker/model-driven-apps/rich-text-editor-control). If you're using the Activity Editor control in a customized email or appointment experience in a model-driven app, learn more about [switching to the rich text editor control](/dynamics365/customer-service/administer/customer-service-hub-user-guide-email-font-admin#enable-the-rte-control-in-the-email-form).
 
 ## Classic app, form, and view designers are deprecated
 
-Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views will only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers will no longer be available.
+Starting in October 2023, the classic app, form, and view designers are deprecated, by default. This means that, by default, all model-driven apps, forms, and views only open via the modern designers. By default, the **Switch to classic** option to revert back to the classic designers from the modern designers is no longer available.
 
 ### Impact
 
-Depending on your geographic location and rollout cadence, this change impacts you in mid-October 2023. Makers will have to reach out to their admin to access the classic designers.
+Depending on your geographic location and rollout cadence, this change impacts you in mid-October 2023. Makers have to reach out to their admin to access the classic designers.
 
 ### Re-enabling the classic designers
 
@@ -56,7 +56,7 @@ Admins can turn the **Switch to classic** option back on in the Power Platform a
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
-Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) will be deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
+Effective April 2024, Dynamics 365 for phones and tablets (iOS and Android) are deprecated for online users. Online users must [migrate to the Power Apps mobile app](/dynamics365/mobile-app/migration). The Power Apps mobile app provides updated capabilities, a modern user experience, and fast load times.
 
 ## Deprecating support of unregistered MSA and External Microsoft Entra users in Dataverse
 
@@ -64,7 +64,7 @@ As part of our ongoing efforts to enhance the security and performance of Datave
 
 ### What is changing?
 
-If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that aren't registered in your Microsoft Entra tenant, you won't be able to access Dataverse on the common endpoint. You'll see an error message like "Microsoft EntraSTS50020: user account 'contoso@contoso.com; from identity provider 'https://sts.windows.net/{tenant Id}/' doesn't exist in tenant '{tenant name}' and can't access the application '{application Id}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they'll be blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that aren't registered in your Microsoft Entra tenant, you won't be able to access Dataverse on the common endpoint. You'll see an error message like "Microsoft EntraSTS50020: user account 'contoso@contoso.com; from identity provider 'https://sts.windows.net/{tenant ID}/' doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they are blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
 
 ### What do you need to do?
 
@@ -88,7 +88,7 @@ Set-TenantSettings $tenantSettings
   
 ### When is this change coming into effect?
 
-By **October 2023**, we'll be removing support of unregistered MSA and external Microsoft Entra users in the Dataverse.
+We removed support of unregistered MSA and external Microsoft Entra users in the Dataverse in **October 2023**.
 
 <a name="#jquery-211-to-be-removed-in-model-driven-apps" ></a>
 
@@ -100,7 +100,7 @@ If custom code in web resources had a dependency on this library, it stopped wor
 
 ### Are you impacted?
 
-Now that the library has been removed, you'll see errors in any web resources that depended on this library.
+Now that the library is removed, you'll see errors in any web resources that depended on this library.
 You can search your web resource code for this line: `/_static/_common/scripts/jquery-2.1.1.min.js`.
 
 If your code isn't already in a source code repository, you should export your solutions and extract the contents. There are many tools you might use to search the contents. For example, you can use the search capabilities of Visual Studio Code. More information: [Visual Studio Code: Basic Editing > Search across files](https://code.visualstudio.com/docs/editor/codebasics#_search-across-files)
