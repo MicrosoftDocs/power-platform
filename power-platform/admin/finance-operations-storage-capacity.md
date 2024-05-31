@@ -121,7 +121,7 @@ A more detailed report that provides log and file consumption analytics for fina
 
 ### What happens if my consumption is over the entitled limit?
 
-The runtime experience isn't affected. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
+At this time, exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
