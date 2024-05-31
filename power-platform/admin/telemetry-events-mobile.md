@@ -40,41 +40,21 @@ the data downloaded to the device	|
 | customDimensions "'activeDuration' |	Scenario duration in milliseconds including only time while the app is active.|
 |customDimensions "'offlineSyncFcbs' |	Features (de)activated for the offline sync |
 | customDimensions "'deviceInfo_Id' |	Unique identifier of the device |
-| customDimensions "'device_Type' |	Single value: “ReactNative” |
 | customDimensions "'deviceInfo_model' |	Device Model (i.e. Iphone 13) |
 | customDimensions "'deviceInfo_make' |	Device Make (i.e. Apple) |
 | customDimensions "'deviceInfo_OsName' |	Device OS  i.e. (Android) |
 | customDimensions "'deviceInfo_OsVersion' |	OS version i.e. (Android 13) |
-|customDimensions "eventName" |	Step of the scenario tracked by the event |
-ScenarioEnd
-ScenarioStart
-ScenarioStory
-Trace
-AggregateTrace
-AggregatedTrace
-trace
-ScenarioDuplicateEnd
-customDimensions "'PipelineInfo_RoutingGeo'	
-
-customDimensions "'logLevel'	The severity or reporting level of the event (valid values are info, error, warning, error, verbose)
-customDimensions "'scenarioGuid'	Unique identifier for the scenario tracked by the event
-customDimensions "'dataSyncMode'	What type of Offline sync the user has experienced
-DELTA_SYNC
-GRID_SYNC
-FIRST_SYNC
-FORCED_SYNC
-SINGLE_RECORD_SYNC
-customDimensions "'appFlavor'	Native app installed on the devices (valid values are FieldService, PowerApps)
-customDimensions "'appName'	powerappsclient
-
-customDimensions "'loc_country'	Telemetry Device origin
-
-operation_Id	Unique identifier for the session
-operation_ParentId	Unique identifier for the scenario tracked by the event
-user_Id	AAD user ID 
-user_AuthenticatedId	AAD user ID
-application_Version	Version of the app 
-
+|customDimensions "eventName" |	Step of the scenario tracked by the event <br>ScenarioEnd <br>ScenarioStart <br>ScenarioStory <br>Trace <br>AggregateTrace <br>AggregatedTrace <br>trace <br>ScenarioDuplicateEnd | 
+|customDimensions "'logLevel' |	The severity or reporting level of the event (valid values are info, error, warning, error, verbose) |
+|customDimensions "'scenarioGuid' |	Unique identifier for the scenario tracked by the event |
+| customDimensions "'dataSyncMode' |	What type of Offline sync the user has experienced <br>DELTA_SYNC <br>GRID_SYNC <br>FIRST_SYNC <br>FORCED_SYNC <br>SINGLE_RECORD_SYNC |
+| customDimensions "'appFlavor' |	Native app installed on the devices (valid values are FieldService, PowerApps) |
+| customDimensions "'loc_country' |	Telemetry Device origin |
+| operation_Id |	Unique identifier for the session |
+|operation_ParentId |	Unique identifier for the scenario tracked by the event |
+|user_Id |	AAD user ID |
+|user_AuthenticatedId |	AAD user ID |
+| application_Version |	Version of the app |
 
 
 ## Error mapping
