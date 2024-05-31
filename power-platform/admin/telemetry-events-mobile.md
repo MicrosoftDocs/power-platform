@@ -1,5 +1,5 @@
 ---
-title: Telemetry events for mobile app synchronization and actions
+title: Telemetry events for mobile app synchronization and actions (Preview)
 description: Learn more about telemetry events for mobile app synchronization and actions.
 services: powerapps
 ms.component: pa-admin
@@ -15,6 +15,13 @@ search.audienceType:
 
 # Telemetry events for mobile app synchronization and actions
 
+Power Apps Mobile application data related to Offline Sync events is available for Power Apps. This data can be used to evaluate health and performance of Offline sync for your organization. 
+
+This data goes into the Power Apps (Peview) > Mobile app synchronization and actions table in Application Insights. An entry is logged when a user accessing a mobile application Power Apps Mobile application which is enabled for Offline mode. 
+
+
+## Mobile app synchronization and action event definitions
+
 | Event |	Definition |
 | ------ | ------ |
 | timestamp [UTC] |	When the event happened |
@@ -25,39 +32,50 @@ search.audienceType:
 | success |	Result of the scenario tracked by the event (values SUCCESS or FAILURE) |
 | duration |	Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive |
 | customDimensions 'eventContext'	| Custom event properties |
-| EventContext: CurrentSyncId |	Identifier for the current sync session which may span multiple app sessions| 
-| EventContext: DataSyncStatus |	| 
-| EventContext: entityName | Name of the table in data download events	|
-| EventContext: hasNetworkTimeouts | Flag indicating whether any HTTP calls failed with network timeouts in the current sync	|
-| EventContext: DataSyncStatus | JSON object containing detailed status of a sync, including details about the data downloaded to the device	|
-| EventContext: ProfileId | ID of the offline profile configured for the app and user	|
+| eventContext: CurrentSyncId |	Identifier for the current sync session which may span multiple app sessions| 
+| eventContext: DataSyncStatus |	| 
+| eventContext: entityName | Name of the table in data download events	|
+| eventContext: hasNetworkTimeouts | Flag indicating whether any HTTP calls failed with network timeouts in the current sync	|
+| eventContext: DataSyncStatus | JSON object containing detailed status of a sync, including details about the data downloaded to the device	|
+| eventContext: ProfileId | ID of the offline profile configured for the app and user	|
 the data downloaded to the device	|
-| EventContext: recordCount | Number of records downloaded	|
-| EventContext: responseSize | Response size of an HTTP request	|
+| eventContext: recordCount | Number of records downloaded	|
+| eventContext: responseSize | Response size of an HTTP request	|
+| customDimensions: 'appInfo_Version' |	Version of the native app as seen in the app store. |
+| customDimensions 'activeDuration' |	Scenario duration in milliseconds including only time while the app is active.|
+|customDimensions 'offlineSyncFcbs' |	Features (de)activated for the offline sync |
+| customDimensions 'deviceInfo_Id' |	Unique identifier of the device |
+| customDimensions 'deviceInfo_model' |	Device Model (i.e. Iphone 13) |
+| customDimensions 'deviceInfo_make' |	Device Make (i.e. Apple) |
+| customDimensions 'deviceInfo_OsName' |	Device OS  i.e. (Android) |
+| customDimensions 'deviceInfo_OsVersion' |	OS version i.e. (Android 13) |
+| customDimensions "eventName" |	Step of the scenario tracked by the event <br>ScenarioEnd <br>ScenarioStart <br>ScenarioStory <br>Trace <br>AggregateTrace <br>AggregatedTrace <br>trace <br>ScenarioDuplicateEnd | 
+| customDimensions 'logLevel' |	The severity or reporting level of the event (valid values are info, error, warning, error, verbose) |
+| customDimensions 'scenarioGuid' |	Unique identifier for the scenario tracked by the event |
+| customDimensions 'dataSyncMode' |	What type of Offline sync the user has experienced <br>DELTA_SYNC <br>GRID_SYNC <br>FIRST_SYNC <br>FORCED_SYNC <br>SINGLE_RECORD_SYNC |
+| customDimensions 'appFlavor' |	Native app installed on the devices (valid values are FieldService, PowerApps) |
+| customDimensions 'loc_country' |	Telemetry Device origin |
 | FailureType | Defines type of sync failure	|
 | ErrorCode | Error Code generated upon sync failure. See error code mapping table. |
-| customDimensions: 'appInfo_Version' |	Version of the native app as seen in the app store. |
-| customDimensions "'activeDuration' |	Scenario duration in milliseconds including only time while the app is active.|
-|customDimensions "'offlineSyncFcbs' |	Features (de)activated for the offline sync |
-| customDimensions "'deviceInfo_Id' |	Unique identifier of the device |
-| customDimensions "'deviceInfo_model' |	Device Model (i.e. Iphone 13) |
-| customDimensions "'deviceInfo_make' |	Device Make (i.e. Apple) |
-| customDimensions "'deviceInfo_OsName' |	Device OS  i.e. (Android) |
-| customDimensions "'deviceInfo_OsVersion' |	OS version i.e. (Android 13) |
-|customDimensions "eventName" |	Step of the scenario tracked by the event <br>ScenarioEnd <br>ScenarioStart <br>ScenarioStory <br>Trace <br>AggregateTrace <br>AggregatedTrace <br>trace <br>ScenarioDuplicateEnd | 
-|customDimensions "'logLevel' |	The severity or reporting level of the event (valid values are info, error, warning, error, verbose) |
-|customDimensions "'scenarioGuid' |	Unique identifier for the scenario tracked by the event |
-| customDimensions "'dataSyncMode' |	What type of Offline sync the user has experienced <br>DELTA_SYNC <br>GRID_SYNC <br>FIRST_SYNC <br>FORCED_SYNC <br>SINGLE_RECORD_SYNC |
-| customDimensions "'appFlavor' |	Native app installed on the devices (valid values are FieldService, PowerApps) |
-| customDimensions "'loc_country' |	Telemetry Device origin |
 | operation_Id |	Unique identifier for the session |
 |operation_ParentId |	Unique identifier for the scenario tracked by the event |
 |user_Id |	AAD user ID |
 |user_AuthenticatedId |	AAD user ID |
 | application_Version |	Version of the app |
 
+# Example Scenarios
 
-## Error mapping
+## Offline Sync Failure Rate by Sync Type
+abc
+
+## Tables Synced by Record Count
+abc
+
+## Users by Device Type and App Version
+abc
+
+
+# Error Code mapping
 
 | ErrorCode	| FailureType |	Definition|
 | ------ | ------ | ------ |
