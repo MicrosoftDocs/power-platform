@@ -15,7 +15,66 @@ search.audienceType:
 
 # Telemetry events for mobile app synchronization and actions
 
-Content goes here.
+| Event |	Definition |
+| ------ | ------ |
+| timestamp [UTC] |	When the event happened |
+| id |	 | Event ID |
+| target |	Name of the scenario tracked by the event |
+| type |	Source table of the event |
+| name |	Name of the scenario tracked by the event |
+| success |	Result of the scenario tracked by the event (values SUCCESS or FAILURE) |
+| duration |	Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive |
+| customDimensions 'eventContext'	| Custom event properties |
+| EventContext: CurrentSyncId |	Identifier for the current sync session which may span multiple app sessions| 
+| EventContext: DataSyncStatus |	| 
+| EventContext: entityName | Name of the table in data download events	|
+| EventContext: hasNetworkTimeouts | Flag indicating whether any HTTP calls failed with network timeouts in the current sync	|
+| EventContext: DataSyncStatus | JSON object containing detailed status of a sync, including details about the data downloaded to the device	|
+| EventContext: ProfileId | ID of the offline profile configured for the app and user	|
+the data downloaded to the device	|
+| EventContext: recordCount | Number of records downloaded	|
+| EventContext: responseSize | Response size of an HTTP request	|
+| FailureType | Defines type of sync failure	|
+| ErrorCode | Error Code generated upon sync failure. See error code mapping table. |
+| customDimensions: 'appInfo_Version' |	Version of the native app as seen in the app store. |
+| customDimensions "'activeDuration' |	Scenario duration in milliseconds including only time while the app is active.|
+|customDimensions "'offlineSyncFcbs' |	Features (de)activated for the offline sync |
+| customDimensions "'deviceInfo_Id' |	Unique identifier of the device |
+| customDimensions "'device_Type' |	Single value: “ReactNative” |
+| customDimensions "'deviceInfo_model' |	Device Model (i.e. Iphone 13) |
+| customDimensions "'deviceInfo_make' |	Device Make (i.e. Apple) |
+| customDimensions "'deviceInfo_OsName' |	Device OS  i.e. (Android) |
+| customDimensions "'deviceInfo_OsVersion' |	OS version i.e. (Android 13) |
+|customDimensions "eventName" |	Step of the scenario tracked by the event |
+ScenarioEnd
+ScenarioStart
+ScenarioStory
+Trace
+AggregateTrace
+AggregatedTrace
+trace
+ScenarioDuplicateEnd
+customDimensions "'PipelineInfo_RoutingGeo'	
+
+customDimensions "'logLevel'	The severity or reporting level of the event (valid values are info, error, warning, error, verbose)
+customDimensions "'scenarioGuid'	Unique identifier for the scenario tracked by the event
+customDimensions "'dataSyncMode'	What type of Offline sync the user has experienced
+DELTA_SYNC
+GRID_SYNC
+FIRST_SYNC
+FORCED_SYNC
+SINGLE_RECORD_SYNC
+customDimensions "'appFlavor'	Native app installed on the devices (valid values are FieldService, PowerApps)
+customDimensions "'appName'	powerappsclient
+
+customDimensions "'loc_country'	Telemetry Device origin
+
+operation_Id	Unique identifier for the session
+operation_ParentId	Unique identifier for the scenario tracked by the event
+user_Id	AAD user ID 
+user_AuthenticatedId	AAD user ID
+application_Version	Version of the app 
+
 
 
 ## Error mapping
