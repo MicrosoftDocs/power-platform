@@ -116,8 +116,6 @@ You can filter your view to display reports from a specific **environment** or f
 
 ## Learn more
 
-- [Create desktop flows](/power-automate/desktop-flows/create-desktop).
-- [Create Selenium IDE flows](/power-automate/ui-flows/create-web).
 - Run [desktop flows](/power-automate/desktop-flows/run-desktop-flow).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
