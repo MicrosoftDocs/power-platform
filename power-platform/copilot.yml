@@ -42,6 +42,8 @@ landingContent:
         url: /training/paths/copilot-solutions/
       - text: Create apps, copilots, flows, and more with Microsoft Dataverse and Teams
         url: /training/paths/work-power-platform-teams/
+      - text: Explore more training available
+        url: /training/browse/?products=power-platform&terms=copilot
 
   - title: Copilot guidance and development
     linkLists:
