@@ -36,8 +36,6 @@ landingContent:
     linkLists:
     - linkListType: learn
       links:
-      - text: Introduction to Copilot in Microsoft Power Platform
-        url: /training/modules/introduction-copilot-power-platform/
       - text: Get started with Copilot for Microsoft Power Platform
         url: /training/paths/copilot-power-platform/
       - text: Create Power Platform solutions with AI and Copilot
