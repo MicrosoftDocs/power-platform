@@ -19,7 +19,7 @@ The finance and operations storage capacity report shows how much finance and op
 > [!IMPORTANT]
 > This report allows you to manage your storage more efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity.
 > 
-> Exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. 
+> At this time, exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. 
 >
 > Universal License Terms for Online Services ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply when a customer's storage consumption exceeds Online Service’s documented entitlement(s). 
 > - Customer must acquire and assign the appropriate subscription licenses required for its use of each Online Service. Usage exceeding the Online Service’s documented entitlement(s) and/or usage limits require additional purchase of licenses to cover overage. 
