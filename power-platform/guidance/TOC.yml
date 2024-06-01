@@ -390,15 +390,15 @@
             - name: Charts
               items:
                 - name: DonutChart (preview)
-                  href: creator-kit/donut.md
+                  href: creator-kit/donutchart.md
                 - name: GaugeChart (preview)
-                  href: creator-kit/gauge.md
+                  href: creator-kit/gaugechart.md
                 - name: HorizontalBar
                   items:
                   - name: HorizontalBarChart (preview)
-                    href: creator-kit/horizontalbar.md
+                    href: creator-kit/horizontalbarchart.md
                   - name: HorizontalBarChart - Stacked (preview)
-                    href: creator-kit/stackedbar.md
+                    href: creator-kit/stackedbarchart.md
             - name: Utilities
               items:
                 - name: Elevation
