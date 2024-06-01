@@ -16,7 +16,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="HorizontalBarChart"::: control
+# :::no-loc text="HorizontalBarChart"::: control (preview)
 
 [This article is pre-release documentation and is subject to change.]
 

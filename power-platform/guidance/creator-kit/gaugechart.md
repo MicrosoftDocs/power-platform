@@ -16,7 +16,7 @@ contributors:
   - Ramakrishnan24689
 ---
 
-# :::no-loc text="GaugeChart"::: control
+# :::no-loc text="GaugeChart"::: control (preview)
 
 [This article is pre-release documentation and is subject to change.]
 
