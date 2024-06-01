@@ -387,6 +387,18 @@
                   href: creator-kit/dialog.md
                 - name: Panel (experimental)
                   href: creator-kit/panel.md
+            - name: Charts
+              items:
+                - name: DonutChart (preview)
+                  href: creator-kit/donut.md
+                - name: GaugeChart (preview)
+                  href: creator-kit/gauge.md
+                - name: HorizontalBar
+                  items:
+                  - name: HorizontalBarChart (preview)
+                    href: creator-kit/horizontalbar.md
+                  - name: HorizontalBarChart - Stacked (preview)
+                    href: creator-kit/stackedbar.md
             - name: Utilities
               items:
                 - name: Elevation
