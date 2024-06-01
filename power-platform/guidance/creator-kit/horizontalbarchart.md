@@ -4,7 +4,7 @@ description: Learn about the details and properties of the HorizontalBarChart co
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/01/2022
+ms.date: 06/01/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -22,13 +22,14 @@ contributors:
 
 :::image type="content" source="media/horizontalbarchart.svg" alt-text="HorizontalBarChart control.":::
 
+A horizontal bar chart is a chart that presents categorical data with rectangular bars with lengths proportional to the values they represent. This type of chart is particularly useful when the intention is to show comparisons among various categories and the labels for those categories are long.
+
 This code component provides a wrapper around the [Fluent UI HorizontalBarChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart) control for use in canvas & custom pages.
 
-| Canvas apps | Custom pages | Model-driven apps | Portals |
-| ----------- | ------------ | ----------------- | ------- |
-| ✅           | ✅            | ⬜                 | ⬜       |
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/HorizontalBarChart).
 
-## Configuration
+## Properties
 
 The control accepts the following properties:
 
@@ -50,68 +51,60 @@ The control accepts the following properties:
 
   Note: Item color will only apply if the `CustomColors` property is turned on.
 
-### Style Properties
+### Style properties
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps.
+- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label.
 
-### Example Theme
+## Usage
 
-The following is an example of setting the theme based on the output from the [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/).
+Map data values to the corresponding chart properties in the `Items` property of the control, as demonstrated in the formula below.
+
+Enable the `CustomColors` property to define consistent colors.
 
 ```powerapps-dot
-Set(varThemeBlue, {
-palette: {
-themePrimary: ColorValue("#0078d4"),
-themeLighterAlt: ColorValue("#eff6fc"),
-themeLighter: ColorValue("#deecf9"),
-themeLight: ColorValue("#c7e0f4"),
-themeTertiary: ColorValue("#71afe5"),
-themeSecondary: ColorValue("#2b88d8"),
-themeDarkAlt: ColorValue("#106ebe"),
-themeDark: ColorValue("#005a9e"),
-themeDarker: ColorValue("#004578"),
-neutralLighterAlt: ColorValue("#faf9f8"),
-neutralLighter: ColorValue("#f3f2f1"),
-neutralLight: ColorValue("#edebe9"),
-neutralQuaternaryAlt: ColorValue("#e1dfdd"),
-neutralQuaternary: ColorValue("#d0d0d0"),
-neutralTertiaryAlt: ColorValue("#c8c6c4"),
-neutralTertiary: ColorValue("#a19f9d"),
-neutralSecondary: ColorValue("#605e5c"),
-neutralPrimaryAlt: ColorValue("#3b3a39"),
-neutralPrimary: ColorValue("#323130"),
-neutralDark: ColorValue("#201f1e"),
-black: ColorValue("#000000"),
-white: ColorValue("#ffffff")
-}
-});
-
-Set(varThemeBlueJSON,"{""palette"":{
-""themePrimary"": ""#0078d4"",
-""themeLighterAlt"": ""#eff6fc"",
-""themeLighter"": ""#deecf9"",
-""themeLight"": ""#c7e0f4"",
-""themeTertiary"": ""#71afe5"",
-""themeSecondary"": ""#2b88d8"",
-""themeDarkAlt"": ""#106ebe"",
-""themeDark"": ""#005a9e"",
-""themeDarker"": ""#004578"",
-""neutralLighterAlt"": ""#faf9f8"",
-""neutralLighter"": ""#f3f2f1"",
-""neutralLight"": ""#edebe9"",
-""neutralQuaternaryAlt"": ""#e1dfdd"",
-""neutralQuaternary"": ""#d0d0d0"",
-""neutralTertiaryAlt"": ""#c8c6c4"",
-""neutralTertiary"": ""#a19f9d"",
-""neutralSecondary"": ""#605e5c"",
-""neutralPrimaryAlt"": ""#3b3a39"",
-""neutralPrimary"": ""#323130"",
-""neutralDark"": ""#201f1e"",
-""black"": ""#000000"",
-""white"": ""#ffffff""
-}
-}");
+Table(
+    {
+        ItemTitle: "First",
+        ItemLegend: "First",
+        ItemValue: 40,
+        ItemTotalValue: 100,
+        ItemXPopOver: "10/2/2024",
+        ItemYPopOver: "10%",
+        ItemColor: "#00A892"
+    },
+    {
+        ItemTitle: "Second",
+        ItemLegend: "Second",
+        ItemValue: 20,
+        ItemTotalValue: 100,
+        ItemXPopOver: "20/4/2024",
+        ItemYPopOver: "20%",
+        ItemColor: "#9A44FC"
+    },
+    {
+        ItemTitle: "Third",
+        ItemLegend: "Third",
+        ItemValue: 120,
+        ItemTotalValue: 100,
+        ItemXPopOver: "10/6/2024",
+        ItemYPopOver: "30%",
+        ItemColor: "#3483FA"
+    },
+    {
+        ItemTitle: "Fourth",
+        ItemLegend: "Fourth",
+        ItemValue: 90,
+        ItemTotalValue: 100,
+        ItemXPopOver: "20/4/2024",
+        ItemYPopOver: "40%",
+        ItemColor: "#EBA800"
+    }
+)
 ```
 
-The Theme JSON string is passed to the component property, whilst the varTheme can be used to style other standard components such as buttons using the individual colors.
+## Limitations
+
+This canvas component can only be used in canvas apps and custom pages.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

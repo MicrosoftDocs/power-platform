@@ -4,7 +4,7 @@ description: Learn about the details and properties of the Donut chart control i
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/01/2022
+ms.date: 06/01/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -22,13 +22,14 @@ contributors:
 
 :::image type="content" source="media/donutchart.svg" alt-text="DonutChart control.":::
 
+Donut charts are used to show proportion, which expresses a partial value in comparison to a total value. These types of charts are best to show percentage of individual parts in comparison to a whole, where the change over time is not important to visualize. They are circular statistical graphics divided into slices to illustrate numerical proportion.
+
 This code component provides a wrapper around the [Fluent UI DonutChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/donutchart) control for use in canvas & custom pages.
 
-| Canvas apps | Custom pages | Model-driven apps | Portals |
-| ----------- | ------------ | ----------------- | ------- |
-| ✅           | ✅            | ⬜                 | ⬜       |
+> [!NOTE]
+> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/DonutChart).
 
-## Configuration
+## Properties
 
 The control accepts the following properties:
 
@@ -48,67 +49,39 @@ The control accepts the following properties:
 
   Note: Item color will only apply if `CustomColors` property is turned on.
 
-### Style Properties
+### Style properties
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps.
+- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label
 
-### Example Theme
+## Usage
 
-The following is an example of setting the theme based on the output from the [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). 
+Map data values to the corresponding chart properties in the `Items` property of the control, as demonstrated in the below formula. The chart will automatically adjust the visual to match the relative values.
 
-```
-Set(varThemeBlue, {
-  palette: {
-    themePrimary: ColorValue("#0078d4"),
-    themeLighterAlt: ColorValue("#eff6fc"),
-    themeLighter: ColorValue("#deecf9"),
-    themeLight: ColorValue("#c7e0f4"),
-    themeTertiary: ColorValue("#71afe5"),
-    themeSecondary: ColorValue("#2b88d8"),
-    themeDarkAlt: ColorValue("#106ebe"),
-    themeDark: ColorValue("#005a9e"),
-    themeDarker: ColorValue("#004578"),
-    neutralLighterAlt: ColorValue("#faf9f8"),
-    neutralLighter: ColorValue("#f3f2f1"),
-    neutralLight: ColorValue("#edebe9"),
-    neutralQuaternaryAlt: ColorValue("#e1dfdd"),
-    neutralQuaternary: ColorValue("#d0d0d0"),
-    neutralTertiaryAlt: ColorValue("#c8c6c4"),
-    neutralTertiary: ColorValue("#a19f9d"),
-    neutralSecondary: ColorValue("#605e5c"),
-    neutralPrimaryAlt: ColorValue("#3b3a39"),
-    neutralPrimary:ColorValue( "#323130"),
-    neutralDark: ColorValue("#201f1e"),
-    black: ColorValue("#000000"),
-    white: ColorValue("#ffffff")
-  }});
+Enable the `CustomColors` property to define consistent colors.
 
-Set(varThemeBlueJSON,"{""palette"":{
-  ""themePrimary"": ""#0078d4"",
-  ""themeLighterAlt"": ""#eff6fc"",
-  ""themeLighter"": ""#deecf9"",
-  ""themeLight"": ""#c7e0f4"",
-  ""themeTertiary"": ""#71afe5"",
-  ""themeSecondary"": ""#2b88d8"",
-  ""themeDarkAlt"": ""#106ebe"",
-  ""themeDark"": ""#005a9e"",
-  ""themeDarker"": ""#004578"",
-  ""neutralLighterAlt"": ""#faf9f8"",
-  ""neutralLighter"": ""#f3f2f1"",
-  ""neutralLight"": ""#edebe9"",
-  ""neutralQuaternaryAlt"": ""#e1dfdd"",
-  ""neutralQuaternary"": ""#d0d0d0"",
-  ""neutralTertiaryAlt"": ""#c8c6c4"",
-  ""neutralTertiary"": ""#a19f9d"",
-  ""neutralSecondary"": ""#605e5c"",
-  ""neutralPrimaryAlt"": ""#3b3a39"",
-  ""neutralPrimary"": ""#323130"",
-  ""neutralDark"": ""#201f1e"",
-  ""black"": ""#000000"",
-  ""white"": ""#ffffff""
-}
-}");
+```powerapps-dot
+Table(
+    {
+        ItemLegend: "First",
+        ItemValue: 60,
+        ItemColor:"#00A892"
+    },
+    {
+        ItemLegend: "Second",
+        ItemValue: 10,
+        ItemColor:"#9A44FC"
+    },
+    {
+        ItemLegend: "Third",
+        ItemValue: 30,
+        ItemColor:"#3483FA"
+    }
+)
 ```
 
-The Theme JSON string is passed to the component property, whilst the varTheme can be used to style other standard components such as buttons using the individual colors.
+## Limitations
+
+This canvas component can only be used in canvas apps and custom pages.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
