@@ -13,6 +13,7 @@ ms.collection:
 ms.contributors:
 - deepabansal
 - traliil
+- mikebc
 ---
 
 # FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform 
