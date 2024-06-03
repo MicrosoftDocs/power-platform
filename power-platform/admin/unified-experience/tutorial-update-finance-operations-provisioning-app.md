@@ -26,17 +26,17 @@ For example, a customer has read that a new service update has been made availab
 
 ## Step-by-step update guide
 
-### Update a sandbox environment
+### Update the application to a newer version
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Select **Environments** in the navigation pane. The **Environments** list page is displayed.
 3. Select a given environment that has the Finance and Operations Provisioning App already installed.
 4. Select **Dynamics 365 apps** under the **Resources** card on the environment details page.
 5. Find the **Dynamics 365 Finance and Operations Provisioning App** and then click on it to select it.
-6. Click on the **Manage** button that will open the update experience in a new browser tab or window.
+6. Click on the **Manage** button that will open the update experience in a new browser tab or window.  If the manage button is not available, then you are running the latest version and cannot proceed.
 
    :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
-7. You will see options to select a new application version.  The drop down list will include only versions that are higher than your currently installed version.
+7. You will see options to select a new application version.  The drop down list will include only versions that are higher than your currently installed version.  You may see no version option to select, in that case there are no newer versions beyond what you already have installed.
 9. Agree to the terms and conditions and select the **Install** button to start the update.
 
 When the update is triggered, it will take roughly an hour for the operation to complete.  During the update, you will see the Finance and Operations Provisioning App is in an **Installing** status until it completes.

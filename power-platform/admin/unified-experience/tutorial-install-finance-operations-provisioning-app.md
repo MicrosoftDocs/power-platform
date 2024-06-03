@@ -38,21 +38,25 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 
 - Have at least 1 GB of available Operations and Dataverse database capacities. For more information, see [Manage storage and capacity](../finance-operations-storage-capacity.md).
 
-- You can only install finance and operations apps into a Power Platform environment created with Microsoft Dataverse. The Dataverse instance must have the **Enable Dynamics 365 apps** option enabled during creation. For more information on how to create a Dataverse instance, see [Create and manage environments in the Power Platform admin center](../create-environment.md).
+- You must use an environment with the **Enable Dynamics 365 apps** enabled when the environment is created. This enabling is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
+
+   > [!IMPORTANT]
+   > If you try to install without enabling Dynamics 365 apps, you receive an error such as **Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard**. The schema isn't a visible property in Power Platform admin center and can't be changed after the environment is created. You can try installing finance and operations apps in another environment, or [Create an environment with an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).
+
+- You must first install the Platform tools app before installing the Provisioning app. The detailed steps are outlined in [Install on an environment](#install-on-an-environment).
+
+   > [!IMPORTANT]
+   > If you don't install the Platform Tools app first, you get an error such as **Please install the Dynamics 365 Finance and Operations Platform Tools application before installing the Dynamics 365 Finance and Operations Provisioning app**. You can install the missing app, and then retry the installation of the Provisioning app.
 
 ## Known limitations
 
 Limitations for an installation of the provisioning app:  
 
-1. You must use an environment with the **Enable Dynamics 365 apps** enabled when the environment is created. This enabling is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
+1. Environment URL length.  The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length, otherwise the Finance and Operations Provisioning App will fail to install.  To bypass this limitation you can edit the URL of your environment to be the required length.
 
-   > [!NOTE]
-   > If you try to install without enabling Dynamics 365 apps, you receive an error such as **Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard**. The schema isn't a visible property in Power Platform admin center and can't be changed after the environment is created. You can try installing finance and operations apps in another environment, or [Create an environment with an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).
+2. Finance and Operations URL missing.  After the install is successful, the Finance and Operations URL may not be shown on the environment details page in Power Platform admin center.  To bypass this limitation you can edit the environment and change a field such as the description to a new value.  This will synchronize in the new URL value and display it on screen.
 
-2. You must first install the Platform tools app before installing the Provisioning app. The detailed steps are outlined in [Install on an environment](#install-on-an-environment).
-
-   > [!NOTE]
-   > If you don't install the Platform Tools app first, you get an error such as **Please install the Dynamics 365 Finance and Operations Platform Tools application before installing the Dynamics 365 Finance and Operations Provisioning app**. You can install the missing app, and then retry the installation of the Provisioning app.
+3. 
 
 ## Step-by-step installation guide
 
