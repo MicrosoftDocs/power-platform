@@ -216,7 +216,7 @@ Pipelines in Power Platform store the definitions of each pipeline in a host env
 
 ### Catalog in Power Platform
 
-Organizations in which developers and makers build and share components, such as apps and flows, and templates, which are more advanced starting points, tend to get more value from Power Platform. [The Power Platform catalog](/power-platform/developer/catalog) makes it easy for makers to share their components and templates across environments more effectively.
+Organizations in which developers and makers build and share components, such as apps and flows, and templates, which are more advanced starting points, tend to get more value from Power Platform. [The Power Platform catalog](../developer/catalog.md) makes it easy for makers to share their components and templates across environments more effectively.
 
 The catalog is installed in an environment, and can be installed with the pipeline host in the same environment. It's also possible to handle unique resource segmentation requirements by having multiple environments that have a catalog installed.
 
