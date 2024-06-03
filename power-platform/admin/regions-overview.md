@@ -49,7 +49,7 @@ You can create a database for an environment in one region (for example, United 
 |---------|---------|
 |India     | Any region except Australia        |
 |Australia     | Any region except India           |
-|Any other location     | Any region except India, Australia           |
+|Any other location     | Any region except India and Australia           |
 
 
 ## What features are specific to a given region?
