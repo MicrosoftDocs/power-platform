@@ -2,7 +2,7 @@
 title: "Install and configure development tools (preview)"
 description: Set up required finance and operations app development tools on your local computer.
 author: pvillads
-ms.date: 05/20/2024
+ms.date: 05/30/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pathaku
@@ -21,8 +21,10 @@ This article describes how to install and configure required Visual Studio finan
 > As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
 >
 > The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
-> 
-> The development machine running Microsoft Windows must have Visual Studio 2022 installed with at least the .NET desktop development workload and the Modeling SDK. This SDK can be selected under individual components in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components). The development machine also must have Microsoft SQL Server or SQL Server Express LocalDB installed.
+> The development machine should have at least 16 GB of free space on the local system drive to download the extension and metadata.
+> The development machine running Microsoft Windows 10 or 11 must have Visual Studio 2022 installed with at least the .NET desktop development workload and the Modeling SDK.
+> This SDK can be selected under individual components in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components).
+> Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, but you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16#start-localdb-and-connect-to-localdb).
 
 ## Install the Power Platform extension for Visual Studio
 
@@ -74,9 +76,9 @@ After installing the Power Platform Tools extension and connecting to the online
 >
 > Consider selecting the option **Do not display Power Platform Explorer...** to speed up connecting to your environment and **Download logs...** to get logs for deployment and DBSync operations.
 >
-> :::image type="content" source="../media/unified-experience/D365FinOpsToolsOptions.png" alt-text="Tools options":::
+> Consider deselecting the option **Auto setup for Dynamics 365 if using Unified environment** to only download the assets and do the setup manually.
 >
-> You need at least 12 GB of free space on the local system drive to download the extension and metadata.
+> You need at least 16 GB of free space on the local system drive to download the extension and metadata.
 
 Choose **OK** in the dialog to start the download. Visual Studio keeps you updated on the progress in the Visual Studio output pane.
 
@@ -91,7 +93,7 @@ Downloaded assets can be found in the following location:
 The following files are downloaded:
 
 - `DYNAMICSXREFDB.bak` is a backup of the cross reference database.
-- `Microsoft.Dynamics.Framework.Tools.Installer.vsix` is the Finance and operations extension.
+- `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` is the Finance and operations extension.
 - `PackagesLocalDirectory.zip` is the System metadata.
 - `TraceParser.msi` [Learn more about Trace Parser](/dynamics365/fin-ops-core/dev-itpro/perf-test/trace-parser).
 
@@ -106,7 +108,8 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > [!NOTE]
 > This is only required when the Visual Studio output pane indicates it is.
 
-Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.Framework.Tools.Installer.vsix` file to install the extension.
+Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
 
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
@@ -114,14 +117,13 @@ Using Windows File Explorer, from the folder specified below, open the `Microsof
 
 > [!NOTE]
 > This is not required when auto setup is enabled.
+> If you don't see the **Configure Metadata** option, open **Extensions** > **Dynamics 365** > **Infolog** and retry.
 
 To configure the extension, follow these instructions.
 
 1. Start Visual Studio, and then select **Continue without code** from the dialog.
 1. Navigate to **Extensions** > **Dynamics 365** > **Configure Metadata** for the first time.  
-   
-   If you don't see the **Configure Metadata** option, open **Extensions** > **Dynamics 365** > **Infolog** and retry.
-   
+      
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataMenu.png" alt-text="Configure Metadata menu":::
 
 1. On the configuration form, select **New** and then create a new configuration. Refer to the field descriptions provided in the [Configuration form field descriptions](#configuration-form-field-descriptions) table that follows this procedure.
@@ -129,6 +131,10 @@ To configure the extension, follow these instructions.
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadata.png" alt-text="Configure Metadata dialog":::
 
 1. Select **Save**.
+2. You can similary edit a configuration. A common field to update is the folder for your own custom metadata.
+3. You might also want to move your cross reference database from SQL server local db to SQL server and update the configuration 
+4. You can delete stale configurations.
+5. Note that only one configuration can be current or active at any given time.
 
 #### Configuration form field descriptions
 
@@ -156,7 +162,7 @@ Also, if you're using LocalDB, you might need to first configure and test it. Co
 More information: [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb).
 
 > [!NOTE]
-> If the cross reference database does not already exist, the tool will restore the database from the backup downloaded to C:\Users\\`<User>`\AppData\Local\Microsoft\Dynamics365\\`<ApplicationVersion>`. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so. For instructions to do a restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?tabs=ssms#restore-to-sql-server).
+> If the cross reference database does not already exist, the tool will restore the database from the backup downloaded to C:\Users\\`<User>`\AppData\Local\Microsoft\Dynamics365\\`<ApplicationVersion>`. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so after downloading with auto setup disabled. For instructions to do a database restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?tabs=ssms#restore-to-sql-server).
 
 #### Completeing configuration
 
