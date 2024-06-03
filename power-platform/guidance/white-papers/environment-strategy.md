@@ -435,7 +435,7 @@ You'll almost always find requirements that the platform's built-in capabilities
 
 #### CoE Starter Kit
 
-The [Power Platform Center of Excellence Starter Kit](../guidance/coe/overview.md) is a collection of components and tools that are designed to help your organization adopt and support the use of Power Platform. A key aspect of the starter kit is its ability to collect data about platform usage across your environments that can be helpful as you develop and evolve your environment strategy.
+The [Power Platform Center of Excellence Starter Kit](../coe/overview.md) is a collection of components and tools that are designed to help your organization adopt and support the use of Power Platform. A key aspect of the starter kit is its ability to collect data about platform usage across your environments that can be helpful as you develop and evolve your environment strategy.
 
 For example, the Environments Power BI dashboard offers an overview that helps you understand which environments exist in your tenant, who created them, and what assets they contain.
 
@@ -465,7 +465,7 @@ You can use the [Power Platform command-line interface (CLI)](/powerapps/develop
 
 With [PowerShell cmdlets for Power Platform creators and administrators](../../admin/powerapps-powershell.md), you can automate many monitoring and management tasks.
 
-The [Power Platform DLP SDK](../admin/data-loss-prevention-sdk.md) can help you manage your tenant and environment data loss prevention policies.
+The [Power Platform DLP SDK](../../admin/data-loss-prevention-sdk.md) can help you manage your tenant and environment data loss prevention policies.
 
 ## Best practice recommendations
 
