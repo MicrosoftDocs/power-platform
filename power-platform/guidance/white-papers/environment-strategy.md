@@ -200,9 +200,9 @@ To support your environment strategy and make it easier to work with, makers sho
 
 ### Pipelines in Power Platform
 
-As we've seen, a key tenet of a good environment strategy is to isolate where an asset is built from where it's deployed and used. This separation ensures that users who are trying to use an asset don't encounter downtime because a maker is updating it, but it requires assets to be promoted to a production environment—ideally, as part of a Dataverse solution—before they can be used.
+As we've seen, a key tenet of a good environment strategy is to isolate where an asset is built from where it's deployed and used. This separation ensures that users who are trying to use an asset don't encounter downtime because a maker is updating it. However, it requires assets to be promoted to a production environment&mdash;ideally, as part of a Dataverse solution&mdash;before they can be used.
 
-Dataverse solutions can be manually transported between environments. However, you can automate the process—and put policies in place to ensure that proper change management occurs—using [pipelines](/power-platform/alm/pipelines). Depending on the environment rules that you set in the [solution checker](/power-platform/admin/managed-environment-solution-checker), pipelines automatically enforce all the rules before the solution is deployed, preventing further deployment errors. The following diagram illustrates how pipelines can automate the promotion of an asset from development to production.
+Dataverse solutions can be manually transported between environments. However, you can automate the process&mdash;and put policies in place to ensure that proper change management occurs&mdash;using [pipelines](/power-platform/alm/pipelines). Depending on the environment rules that you set in the [solution checker](/power-platform/admin/managed-environment-solution-checker), pipelines automatically enforce all the rules before the solution is deployed, preventing further deployment errors. The following diagram illustrates how pipelines can automate the promotion of an asset from development to production.
 
 ![Diagram illustrating a pipeline to automate promoting an asset that  39](media/environment-strategy/s stored in source control from development, through test, to production..png)
 
