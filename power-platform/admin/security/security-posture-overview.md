@@ -1,5 +1,5 @@
 ---
-title: Title goes here
+title: Security Hub in Power Platform Admin Center
 description: Description goes here.
 ms.subservice: admin
 ms.component: pa-admin
