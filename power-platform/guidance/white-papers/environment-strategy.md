@@ -231,7 +231,7 @@ We discussed our vision for a tenant environment strategy at enterprise scale an
 
 In this example, Contoso leadership wants to empower employees to take advantage of the Power Platform and have identified the following high-level requirements:
 
-- Employees need to be able to build automated document approval processes and other Power Platform customizations with Microsoft 365.
+- Employees need to be able to build automated, document approval processes and other Power Platform customizations with Microsoft 365.
 
 - Employees should be able to build Power Apps and Power Automate automations to improve their personal productivity.
 
@@ -247,15 +247,15 @@ Let's explore this environment topology diagram in detail.
 
 The default environment is used to build Microsoft 365 productivity customizations. Data loss prevention policies and restrictions on sharing limit other types of maker activity and place guardrails around what makers can build in this environment.
 
-Only admins are able to create trial, sandbox, and production environments. Makers use a custom Microsoft Form or another process to request a new environment. The [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit) includes [an environment request](/power-platform/guidance/coe/setup-environment-components) that could be used.
+Only admins are able to create trial, sandbox, and production environments. Makers use a custom Microsoft Form or another process to request a new environment. The [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) includes [an environment request](../coe/setup-environment-components.md) that could be used.
 
 Four environment groups are created: Development, Shared Development, UAT (user acceptance testing), and Production.
 
-- An environment routing policy set for the Development group routes makers away from the default environment into their own developer environments. As new development environments are created, they're automatically associated with the Development group and its rules are applied.
+- An environment routing policy set for the Development group routes makers away from the default environment into their own, developer environments. As new development environments are created, they're automatically associated with the Development group and its rules are applied.
 
 - The Shared Development group supports environments that contain projects with multiple makers.
 
-- The UAT group contains environments that are used to test resources before they're promoted to production.
+- The UAT group contains environments that're used to test resources before they're promoted to production.
 
 - The Production group contains environments that host apps, flows, and other artifacts for production use.
 
@@ -315,7 +315,7 @@ Dedicated testing and production environments aren't required. The app could be 
 
 *Figure: Two enterprise apps under development in dedicated environments, then tested and deployed in environments that are shared with other apps.*
 
-In a more advanced variation, each maker has an individual developer environment. This has the benefit of providing greater isolation to the maker but can make combining individual work in an integration environment more complicated. And although working in isolation can be helpful for larger, sophisticated teams, it can add unnecessary overhead to smaller teams that can be more successful collaborating in a shared development environment.
+In a more advanced variation, each maker has an individual developer environment. This has the benefit of providing greater isolation to the maker, but can make combining individual work in an integration environment more complicated. Although working in isolation can be helpful for larger, sophisticated teams, it can add unnecessary overhead to smaller teams that can be more successful collaborating in a shared, development environment.
 
 ![Diagram illustrating an enterprise app under development in individual environments  combined in a shared integration environment  and then tested and deployed in environments that are shared with other apps ](media/environment-strategy/image12.png)
 
@@ -323,11 +323,11 @@ In a more advanced variation, each maker has an individual developer environment
 
 This variation commonly incorporates a source control strategy, with each development environment represented as a branch in source control that gets merged when changes are ready to be promoted. It's important to account for how the application will be maintained after the initial release.
 
-For example, version 1 of the app might be in production while the team moves on to building version 2. Your environment strategy must support fixing a problem in version 1 while development of version 2 is underway.
+For example, version 1.0 of the app might be in production while the team moves on to building version 2.0. Your environment strategy must support fixing a problem in version 1.0, while development of version 2.0 is underway.
 
 ![Diagram of two versions of an app in development  test  and production simultaneously ](media/environment-strategy/image13.png)
 
-*Figure: Version 1 must be patched, tested, and deployed while version 2 is being developed, tested, and deployed.*
+*Figure: Version 1.0 must be patched, tested, and deployed while version 2.0 is being developed, tested, and deployed.*
 
 Environment groups offer multiple approaches to handling this enterprise app scenario. For example, this could be a single app group or could involve having separate groups for each development stage. In the best practices section, we explore how to evaluate the options.
 
@@ -341,17 +341,17 @@ In this scenario, you would restrict the creation of developer environments and 
 
 Environments are a key component of using Power Platform securely. They represent security boundaries within your tenant that help protect apps and data. As part of your environment strategy, you must consider how your security requirements influence the number and purpose of the environments in your tenant.
 
-Environments enable you to create multiple security boundaries within your tenant to protect apps and data. The protection provided by the environment can be adjusted to meet the necessary security protection by applying a configurable set of security features on the environment. A detailed discussion of individual environment security features is beyond the scope of this paper. However, in this section we offer recommendations for how to think of security as part of your tenant environment strategy.
+Environments enable you to create multiple security boundaries within your tenant to protect apps and data. The protection provided by the environment can be adjusted to meet the necessary security protection by applying a configurable set of security features on the environment. A detailed discussion of individual environment security features is beyond the scope of this article. However, in this section we offer recommendations for how to think of security as part of your tenant environment strategy.
 
 ### Security at the tenant level
 
 Most security settings that affect environments are configured for each environment individually. However, you can make some changes at the tenant level to help support your environment strategy.
 
-First, consider [turning off the Share with Everyone feature](/power-platform/guidance/adoption/secure-default-environment#limit-sharing-with-everyone) in Power Platform. Only admins would be able to share an asset with everyone.
+First, consider [turning off the Share with Everyone feature](../adoption/secure-default-environment.md#limit-sharing-with-everyone) in Power Platform. Only admins would be able to share an asset with everyone.
 
-Next, consider [securing integration with Exchange](/power-platform/guidance/adoption/secure-default-environment#secure-integration-with-exchange).
+Next, consider [securing integration with Exchange](../adoption/secure-default-environment.md#secure-integration-with-exchange).
 
-Finally, [apply cross-tenant isolation](/power-platform/admin/cross-tenant-restrictions) to help minimize the risk of data exfiltration between tenants.
+Finally, [apply cross-tenant isolation](../../admin/cross-tenant-restrictions.md) to help minimize the risk of data exfiltration between tenants.
 
 ### Secure the default environment
 
@@ -365,7 +365,7 @@ First, use environment routing to direct makers to their own workspace to build 
 
     - Establish a data loss prevention (DLP) policy for the default environment that blocks new connectors and restricts makers to using only basic, unblockable connectors. Move all the connectors that can't be blocked to the business data group. Move all the blockable connectors to the blocked data group.
 
-    - [Create a rule](/power-platform/admin/dlp-custom-connector-parity) to block all URL patterns used by custom connectors.
+    - [Create a rule](../../admin/dlp-custom-connector-parity.md) to block all URL patterns used by custom connectors.
 
 Securing the default environment should be a priority. Do it along with tenant-level security as part of the first step in implementing your environment strategy. Without these being implemented, makers have more opportunities to add assets to default. With them in place along with environment routing, makers are encouraged to use their own environment.
 
@@ -435,7 +435,7 @@ You'll almost always find requirements that the platform's built-in capabilities
 
 #### CoE Starter Kit
 
-The [Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/overview) is a collection of components and tools that are designed to help your organization adopt and support the use of Power Platform. A key aspect of the starter kit is its ability to collect data about platform usage across your environments that can be helpful as you develop and evolve your environment strategy.
+The [Power Platform Center of Excellence Starter Kit](../guidance/coe/overview.md) is a collection of components and tools that are designed to help your organization adopt and support the use of Power Platform. A key aspect of the starter kit is its ability to collect data about platform usage across your environments that can be helpful as you develop and evolve your environment strategy.
 
 For example, the Environments Power BI dashboard offers an overview that helps you understand which environments exist in your tenant, who created them, and what assets they contain.
 
@@ -443,7 +443,7 @@ For example, the Environments Power BI dashboard offers an overview that helps y
 
 *Figure: The Environments dashboard in Power BI.*
 
-The kit includes starting points or inspiration, such as a process that makers can use to [request new environments](/power-platform/guidance/coe/env-mgmt) and changes to DLP policies for their environments.
+The kit includes starting points or inspiration, such as a process that makers can use to [request new environments](../coe/env-mgmt.md) and changes to DLP policies for their environments.
 
 ![Flow diagram illustrating admin and maker roles and actions in a process for requesting a new environment or modifying a DLP policy applied to an environment ](media/environment-strategy/image17.png)
 
@@ -461,15 +461,15 @@ You can use the following connectors to build apps and flows:
 
 - [Power Automate Management](/connectors/flowmanagement/)
 
-You can use the [Power Platform command-line interface (CLI)](/powerapps/developer/data-platform/powerapps-cli) to develop automations to help you manage the environment life cycle and other tasks related to DevOps practices.
+You can use the [Power Platform command-line interface (CLI)](/powerapps/developer/data-platform/powerapps-cli) to develop automations to help you manage the environment lifecycle and other tasks related to DevOps practices.
 
-With [PowerShell cmdlets for Power Platform creators and administrators](/power-platform/admin/powerapps-powershell), you can automate many monitoring and management tasks.
+With [PowerShell cmdlets for Power Platform creators and administrators](../../admin/powerapps-powershell.md), you can automate many monitoring and management tasks.
 
-The [Power Platform DLP SDK](/power-platform/admin/data-loss-prevention-sdk) can help you manage your tenant and environment data loss prevention policies.
+The [Power Platform DLP SDK](../admin/data-loss-prevention-sdk.md) can help you manage your tenant and environment data loss prevention policies.
 
 ## Best practice recommendations
 
-In this section of the paper, we build on the recommendations in the foundation and scenario-specific sections.
+In this section of the article, we build on the recommendations in the foundation and scenario-specific sections.
 
 ### New environments
 
