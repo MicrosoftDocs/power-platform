@@ -172,7 +172,7 @@ A key part of the environment strategy that we outline in this article is to mov
 
 *Figure: A maker is automatically redirected to a personal, developer environment instead of the default environment when building apps.*
 
-The developer environments that're created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](..//admin/managed-environment-licensing.md).
+The developer environments that're created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](../admin/managed-environment-licensing.md).
 
 You can use environment routing by itself, but the recommended way is to use it with environment groups. When used this way, any environment that's created is associated with the group that you designate to contain all new developer environments, ensuring that it's immediately covered by your governance policies.
 
@@ -216,7 +216,7 @@ Pipelines in Power Platform store the definitions of each pipeline in a host env
 
 ### Catalog in Power Platform
 
-Organizations in which developers and makers build and share components, such as apps and flows, and templates, which are more advanced starting points, tend to get more value from Power Platform. [The Power Platform catalog](../developer/catalog.md) makes it easy for makers to share their components and templates across environments more effectively.
+Organizations in which developers and makers build and share components, such as apps and flows, and templates, which are more advanced starting points, tend to get more value from Power Platform. [The Power Platform catalog](../../developer/catalog.md) makes it easy for makers to share their components and templates across environments more effectively.
 
 The catalog is installed in an environment, and can be installed with the pipeline host in the same environment. It's also possible to handle unique resource segmentation requirements by having multiple environments that have a catalog installed.
 
