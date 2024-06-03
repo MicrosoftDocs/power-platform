@@ -104,7 +104,7 @@ After a policy is configured, any user in the organization who needs an individu
 
 - If a user without a standalone Power Apps license launches an app that demands a premium license, the system automatically assigns the user a Power Apps per user license.
 
-- If a user without a standalone Power Apps license launches an app in a managed environment, the system automatically assigns the user a Power Apps per user license.
+- If a user without a standalone Power Apps license launches an app in a Managed Environment, the system automatically assigns the user a Power Apps per user license.
 
 Similarly, after a policy is configured, any user in the organization who needs an individual Power Automate license is automatically granted one under the following conditions:
 
@@ -162,23 +162,23 @@ When you're planning the rules to configure, think through what you could apply 
 
 ![Example of implementing the conceptual environment groups into the actual tenant](media/environment-strategy/image4.png)
 
-Later in this paper we explore more ways to use environment groups as part of a tenant environment strategy.
+Later in this article, we explore more ways to use environment groups as part of a tenant environment strategy.
 
 ### Default environment routing
 
-A key part of the environment strategy that we outline in this paper is to move makers away from creating resources in the default environment. The [environment routing feature](/power-platform/admin/default-environment-routing) redirects makers into their own personal development environment and creates new developer environments as needed.
+A key part of the environment strategy that we outline in this article is to move makers away from creating resources in the default environment. The [environment routing feature](../../admin/default-environment-routing.md) redirects makers into their own, personal development environment and creates new developer environments, as needed.
 
 ![Diagram of a maker automatically redirected to a personal developer environment instead of the default environment when building apps ](media/environment-strategy/image5.png)
 
-*Figure: A maker is automatically redirected to a personal developer environment instead of the default environment when building apps.*
+*Figure: A maker is automatically redirected to a personal, developer environment instead of the default environment when building apps.*
 
-The developer environments that are created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](/power-platform/admin/managed-environment-licensing).
+The developer environments that're created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](..//admin/managed-environment-licensing.md).
 
 You can use environment routing by itself, but the recommended way is to use it with environment groups. When used this way, any environment that's created is associated with the group that you designate to contain all new developer environments, ensuring that it's immediately covered by your governance policies.
 
-Makers are automatically assigned a security role that makes them an environment admin of their developer environment. When the environment is a part of an environment group, the maker—as the environment admin—can't change the environment settings, because they're managed by the environment group rules. Only admins who can modify the group rules can make any changes.
+Makers are automatically assigned a security role that makes them an environment admin of their developer environment. When the environment is a part of an environment group, the maker&mdash;as the environment admin&mdash;can't change the environment settings because they're managed by the environment group rules. Only admins, who can modify the group rules, can make any changes.
 
-You can impose even more control in two ways. First, you can disallow manual creation of developer environments in your tenant settings. When this option is set, makers can't create environments themselves in the admin portal. They also won't get one automatically created by the routing policy. Second, you can specify a security group in the routing policy to limit who can automatically get an environment created.
+You can impose even more control in two ways. First, you can disallow manual creation of developer environments in your tenant settings. When this option is set, makers can't create environments themselves in the admin portal. They also won't get one automatically created by the routing policy. Second, you can specify a security group, in the routing policy, to limit who can automatically get an environment created.
 
 Initially, environment routing supports routing new and existing makers away from the default environment when they use make.powerapps.com. Over time, other Power Platform services will support the environment routing feature.
 
@@ -188,15 +188,15 @@ Dataverse securely stores and manages data that's used by applications. In the c
 
 Dataverse solutions are the mechanism for implementing ALM in Power Platform products like Power Apps and Power Automate. Pipelines in Power Platform use solutions to automate CI/CD of assets that makers build. Solutions can be exported from Dataverse and stored in a source control tool like Azure DevOps or GitHub. The solution in source control becomes the source of truth if you need to recreate the development environment. For example, if a maker built a popular app and then deleted the developer environment, an exported solution stored in source control could be used to recreate a viable development environment.
 
-Another important consideration when you create an environment with Dataverse provisioned is whether any Dynamics 365 applications will be deployed to the environment. If the potential exists, you must enable Dynamics 365 when you create the environment or you won't be able to install the Dynamics 365 apps later.
+Another important consideration when you create an environment with Dataverse, is whether any Dynamics 365 applications will be deployed to the environment. If the potential exists, you must enable Dynamics 365 when you create the environment or you won't be able to install Dynamics 365 apps later.
 
 We recommended that you provision Dataverse in any environment where makers create assets that will be shared with other users. This makes it easier for the assets to be ALM ready.
 
 ### Preferred solutions
 
-When a maker creates a Dataverse asset in a Dataverse environment and doesn't start from a custom solution, the asset is associated with the default solution and maybe also the Common Data Service Default Solution. The default solution is shared by all makers who create assets in the environment. There's no easy way to identify which maker created which components or which assets belong to which apps. This can make it difficult to promote a popular app to another environment for sharing with a larger audience. You would have to promote all the assets in the default solution—not an ideal scenario.
+When a maker creates a Dataverse asset in a Dataverse environment&mdash;and doesn't start from a custom solution&mdash;the asset is associated with the default solution and maybe also the Common Data Service default solution. The default solution is shared by all makers who create assets in the environment. There's no easy way to identify which maker created which components or which assets belong to which apps. This can make it difficult to promote a popular app to another environment for sharing with a larger audience. You would have to promote all the assets in the default solution&mdash;not an ideal scenario.
 
-To support your environment strategy and make it easier to work with, makers should create a custom solution in their development environment, and then set it as the [preferred solution](/power-apps/maker/data-platform/preferred-solution) in the environment. Makers set the preferred solution in an environment to indicate which solution an asset that they create should be associated with. Preferred solutions can help ensure that when makers use pipelines to promote their resources to other environments, the promoted solution contains all the required assets. Think of this as preparing the assets to be ALM-ready.
+To support your environment strategy and make it easier to work with, makers should create a custom solution in their development environment, and then set it as the [preferred solution](/power-apps/maker/data-platform/preferred-solution) in the environment. Makers set the preferred solution in an environment to indicate which solution an asset, that they created, should be associated with. Preferred solutions can help ensure that when makers use pipelines to promote their resources to other environments, the promoted solution contains all the required assets. Think of this as preparing the assets to be ALM-ready.
 
 ### Pipelines in Power Platform
 
