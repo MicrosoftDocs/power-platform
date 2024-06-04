@@ -9,12 +9,10 @@ ms.author: pathaku
 ms.subservice: developer
 ---
 
-# Request credentials to access D365 finance and operations product database (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Request credentials to access D365 finance and operations product database
 
 A developer at times benefits from read/write access to the product database. We enable you to request credentials just in time, right from within Visual Studio. 
-As explained in [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md), the business data is hosted in the cloud. 
+As explained in [Write, deploy, and debug X++ code](finance-operations-debug.md), the business data is hosted in the cloud. 
 This feature applies only to unified development environments. The developer needs to have the system administrator (sysAdmin) in the environment.
 
 To request credentials for database access, follow these steps:
@@ -39,7 +37,7 @@ To request credentials for database access, follow these steps:
 
 ### See also
 
-[Write, deploy, and debug X++ code (preview)](finance-operations-debug.md)  
+[Write, deploy, and debug X++ code](finance-operations-debug.md)  
 [Unit testing in the unified developer experience](finance-operations-testing.md)   
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)  
