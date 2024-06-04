@@ -125,30 +125,48 @@ On the landing page you will see
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/6fd73b28-9cd0-477a-8c08-e622a07084bb)
 
 
-**Feature cards** are the various tiles showcasing all the available security features we have to offer as below 
+**Feature cards** 
+are the various tiles showcasing all the available security features we have to offer as below 
 •	Tenant Isolation (Managed and un-managed environments)
+
 •	Customer Lockbox ( Managed environments only)
+
 •	IP Firewall (Managed environments only with Dataverse)
+
 •	IP address-based cookie binding  ( Managed environments only with Dataverse)
+
 •	Data Policy (Managed and un-managed environments)
+
 •	Environment security Groups (Managed and un-managed environments )
+
 •	Auditing (Managed and un-managed environments with Dataverse)
+
 •	Client application access Control (Managed environments only)
+
 •	Environments Azure VNet (Managed environments only)
+
 •	Administrator privileges (Managed environments only with Dataverse)
+
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/f000104d-a5fb-47d5-92bd-9d0ca598bcc5)
 
  
 
 **What components make up a security feature card?**
+
 Each security feature tile consists of the following specifications 
 •	Description – Provides the full details of that specific security feature
+
 •	Impact – The overall impact it brings to the security posture 
+
 •	Recommended action – Steps needed to take to increase the security score 
+
 •	Completion status – Percentage left towards completing a recommended action
+
 •	Refreshed time – Timestamp as to when the recommended action was calculated
+
 **
 **What are the various security features that Security Hub has to offer?**
+
 **
 **Tenant Isolation:** This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to tenant isolation
 
