@@ -64,38 +64,21 @@ This exists since recommendations will show all environments (manages as well as
 **How is your security posture calculated?**
 
 Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
+
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
-Formula: Total Achieved Impact / Total Possible Impact 
+
+Formula: **Total Achieved Impact / Total Possible Impact** 
 •	How are feature impacts determined? 
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
-Feature 	Impact 
-IP Firewall 	1 x Each Environment 
-IP Cookie Bindings 	1 x Each Environment 
-Environment Security Group 	1 x Each Environment 
-Tenant DLP 	Total number of Environments 
-Tenant Isolation 	Total number of Environments 
-Tenant Lockbox 	If Enabled, Total number of Managed 
-Environments 
- 
-Zero, If disabled. 
-Zero, If Disabled and No Managed Environments. 
+
+<img width="463" alt="image" src="https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/9e9da776-7d30-481d-88c0-636436778107">
+
  
 Example: 
 Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
-Feature 	Impact 	Max Impact 
-IP Firewall 	1 x Each Environment 	10 Environments x 1 or 
-10 
-IP Cookie Bindings 	1 x Each Environment 	10 Environments x 1 or 
-10 
-Environment Security Group 	1 x Each Environment 	10 Environments x 1 or 
-10 
-Tenant DLP 	Total number of Environments 	10 Environments 
-Tenant Isolation 	Total number of Environments 	10 Environments 
-Tenant Lockbox 	If Enabled, Total number of Managed 
-Environments 
- 
-Zero, If disabled. 
-Zero, If Disabled and No Managed Environments. 	5 Environments 
+
+<img width="521" alt="image" src="https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/cc80ff3e-5e0f-4dd7-8caf-2faaf4e98f79">
+
  
 Maximum Impact: 55 
 Assume the following: 
@@ -107,16 +90,21 @@ Assume the following:
 •	Customer Lockbox is Off. 
  
 Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
+
 Given the formula Total Achieved Impact / Total Possible Impact 
 Secure Score = 30 / 55 
  
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/c7d7c27d-6941-4385-9a2d-60f64c0bf9b9)
  
   
   
 **What do I see on the Security Hub landing page?**
+
 On the landing page you will see 
 1.	Summary Scorecard 
-2.	Feature cards 
+2.	Feature cards
+
+
 **Summary Scorecard** is the tile that showcases the speedometer that tells you where the tenant lands on their security score and shows the security recommendations to improve your overall score 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/6fd73b28-9cd0-477a-8c08-e622a07084bb)
 
