@@ -18,6 +18,7 @@ search.audienceType:
 **Security Hub in Power Platform Admin Center** is revolutionary solution for managing the security posture of your Power Platform and D365 deployments all in one place. The Security Hub is a unique and innovative experience that enables security admins to trust the platform with their most sensitive data and business processes vulnerabilities and risks, it provides strategic guidance with system provided recommendations to achieve their security and compliance goals with minimal effort and resources. 
 
 **What is security posture?**
+
 In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level. 
 
 **How do I get started?**
@@ -29,10 +30,12 @@ Not enabling Tenant Level Analytics will cause no data to populate as shown belo
 
 
 To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
+
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/be718d7a-dc6b-43f3-aadb-486232aa2b7a)
  
 
 The Security Hub landing page will take **48 hours** to populate all the insights as shown below, and till then most sections on the home page will display “Not available”
+
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/7d1f29cd-72d6-4ae7-85f5-bc565d52e2a6)
 
  
