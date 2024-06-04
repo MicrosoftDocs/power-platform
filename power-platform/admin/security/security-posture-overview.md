@@ -138,22 +138,18 @@ are the various tiles showcasing all the available security features we have to 
 
  
 
-**What components make up a security feature card?**
+## What components make up a security feature card?
 
 Each security feature tile consists of the following specifications 
 
-•	Description – Provides the full details of that specific security feature
+- Description – Provides the full details of that specific security feature
+- Impact – The overall impact it brings to the security posture 
+- Recommended action – Steps needed to take to increase the security score 
+- Completion status – Percentage left towards completing a recommended action
+- Refreshed time – Timestamp as to when the recommended action was calculated
 
-•	Impact – The overall impact it brings to the security posture 
 
-•	Recommended action – Steps needed to take to increase the security score 
-
-•	Completion status – Percentage left towards completing a recommended action
-
-•	Refreshed time – Timestamp as to when the recommended action was calculated
-
-**
-**What are the various security features that Security Hub has to offer?**
+## What are the various security features that Security Hub has to offer?
 
 **Tenant Isolation:** This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to [tenant isolation](../cross-tenant-restrictions.md).
 
@@ -167,7 +163,7 @@ Each security feature tile consists of the following specifications
 
 **Environment security group:** This feature is applicable to both managed and un-managed environments. Setting up security groups will help control which licensed users can access environment. To learn how to add a use to the Security group and more, refer to Environment security group
 
-**How do you turn on a security feature?**
+## How do you turn on a security feature?
 
 The system will not prompt you any recommendations unless you turn on a security feature. Here is an example where the customer lockbox feature is not enabled
 
@@ -188,7 +184,7 @@ Toggle the switch to enable it and hit save
 
 **Note**: Tenant Isolation and Customer Lockbox are the only two features that can be enabled using the above procedure. 
 
-**How do you enable a recommendation?**
+## How do you enable a recommendation?
 
 
 Recommendations can be enabled via two entry points 
