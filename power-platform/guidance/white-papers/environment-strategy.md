@@ -90,11 +90,11 @@ As you put together an overall tenant environment strategy the different types a
 
 Environments have a base set of features and characteristics depending on the environment type. Managed Environments expand on the base features to provide a suite of premium capabilities that allow admins to more easily manage Power Platform at scale with more control, less effort, and more insights. These capabilities are unlocked when you set an environment as managed.
 
-The following table lists the features of Managed Environments that are available, as of this writing. New features are added often, so check the [documentation](/power-platform/admin/managed-environment-overview) for the latest list. Although all the features can help you build an environment strategy, the features in italics are more relevant for the strategy that's outlined in this paper.
+The following table lists the features of Managed Environments that are available, as of this writing. New features are added often, so check the [documentation](/power-platform/admin/managed-environment-overview) for the latest list. Although all the features can help you build an environment strategy, the features in italics are more relevant for the strategy that's outlined in this white paper.
 
 | **More visibility** | **More control** | **Less effort** |
 |-------------------------|-------------------------|-------------------------|
-| <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended back-ups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em>**<br /></br>**Power Platform Advisor |
+| <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended back-ups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em><br /></br>Power Platform Advisor |
 
 ### License auto-claim
 
@@ -146,21 +146,19 @@ To help you apply consistent settings and governance, environment groups can hav
 
 - AI-generated descriptions
 
-- Default deployment pipeline (coming soon)
-
 A rule becomes active when it's published. Active rules are applied to all environments that are associated with the group.
 
 When a group rule is managing a setting, individual environment settings are locked. The only way to change them is to modify the rule. If the environment is removed from the group, it keeps the group settings, but now an environment admin can change them. This is important for an environment strategy because it ensures that an environment admin can't override the policies you set for the group.
 
 Using environment groups allows you to organize your environments in logical ways, similar to your organization structure, product service hierarchy, or other frameworks that we explore later. The following diagram is a conceptual example of how the Contoso organization might think about organizing its environment groups.
 
-![Conceptualization of an environment strategy for a Contoso Tenant](media/environment-strategy/image3.png)
+:::image type="content" source="media/environment-strategy/image3.png" alt-text="Conceptualization of an environment strategy for a Contoso Tenant":::
 
 *Figure: Conceptualization of an environment strategy for a Contoso tenant.*
 
 When you're planning the rules to configure, think through what you could apply at each level of the conceptual hierarchy. Although you can't configure the group hierarchy yet, you can use a combination of naming conventions and rule configuration to implement your conceptual design. For example, given the Contoso tenant conceptualization shown earlier, the following illustration represents the environment groups the organization could use to implement its design.
 
-![Example of implementing the conceptual environment groups into the actual tenant](media/environment-strategy/image4.png)
+:::image type="content" source="media/environment-strategy/image4.png" alt-text="Example of implementing the conceptual environment groups into the actual tenant":::
 
 Later in this paper we explore more ways to use environment groups as part of a tenant environment strategy.
 
@@ -168,7 +166,7 @@ Later in this paper we explore more ways to use environment groups as part of a 
 
 A key part of the environment strategy that we outline in this paper is to move makers away from creating resources in the default environment. The [environment routing feature](/power-platform/admin/default-environment-routing) redirects makers into their own personal development environment and creates new developer environments as needed.
 
-![Diagram of a maker automatically redirected to a personal developer environment instead of the default environment when building apps ](media/environment-strategy/image5.png)
+:::image type="content" source="media/environment-strategy/image5.png" alt-text="Diagram of a maker automatically redirected to a personal developer environment instead of the default environment when building apps":::
 
 *Figure: A maker is automatically redirected to a personal developer environment instead of the default environment when building apps.*
 
@@ -204,7 +202,7 @@ As we've seen, a key tenet of a good environment strategy is to isolate where an
 
 Dataverse solutions can be manually transported between environments. However, you can automate the process—and put policies in place to ensure that proper change management occurs—using [pipelines](/power-platform/alm/pipelines). Depending on the environment rules that you set in the [solution checker](/power-platform/admin/managed-environment-solution-checker), pipelines automatically enforce all the rules before the solution is deployed, preventing further deployment errors. The following diagram illustrates how pipelines can automate the promotion of an asset from development to production.
 
-![Diagram illustrating a pipeline to automate promoting an asset that  39](media/environment-strategy/s stored in source control from development, through test, to production..png)
+:::image type="content" source="media/environment-strategy/image6.png" alt-text="Diagram illustrating a pipeline to automate promoting an asset that's stored in source control from development, through test, to production":::
 
 *Figure: A pipeline automates promoting an asset that's stored in source control from development, through test, to production.*
 
@@ -238,7 +236,7 @@ In this example, Contoso leadership wants to empower employees to take advantage
 
 To support these requirements, the Contoso admin and governance team came up with the following environment topology:
 
-![Diagram of an environment topology with four environment groups  Development  Shared Development  UAT  and Production  with logos for the Power Platform apps each should support ](media/environment-strategy/image7.png)
+:::image type="content" source="media/environment-strategy/image7.png" alt-text="Diagram of an environment topology with four environment groups  Development  Shared Development  UAT  and Production  with logos for the Power Platform apps each should support":::
 
 *Figure: Proposed environment topology for Contoso's Power Platform at scale project.*
 
@@ -260,7 +258,7 @@ Four environment groups are created: Development, Shared Development, UAT (user 
 
 Something that's missing in this proposed topology is pipelines to automate promotion between development, test, and production environments. Let's add them now.
 
-![Diagram of the same environment topology with the addition of a pipeline host environment and pipelines between the host and development  UAT  and production environments ](media/environment-strategy/image8.png)
+:::image type="content" source="media/environment-strategy/image8.png" alt-text="Diagram of the same environment topology with the addition of a pipeline host environment and pipelines between the host and development  UAT  and production environments":::
 
 *Figure: The same environment topology with pipelines connecting a pipeline host environment to development, test, and production environments.*
 
@@ -286,7 +284,7 @@ In the foundation environment strategy, all new maker environments are routed to
 
 As makers become more advanced, you can allow them to request access to more capabilities. Instead of removing them from the original environment group and manually managing the exception, you can use another environment group to track these advanced makers.
 
-![Diagram illustrating the addition of makers with more skills to an environment for advanced makers  which has relaxed governance ](media/environment-strategy/image9.png)
+:::image type="content" source="media/environment-strategy/image9.png" alt-text="Diagram illustrating the addition of makers with more skills to an environment for advanced makers  which has relaxed governance":::
 
 *Figure: Add more capable makers to an environment that has relaxed governance rules.*
 
@@ -296,7 +294,7 @@ In the current implementation of environment routing, all new developer environm
 
 Use routing to direct makers into a new developer environment that's created in the designated group. Then you can move it to another group that's based on region, organizational unit, or other criteria, where you can apply more granular governance rules.
 
-![Diagram illustrating environment routing creating developer environments in the designated group  which are then moved to more structurally specific groups ](media/environment-strategy/image10.png)
+:::image type="content" source="media/environment-strategy/image10.png" alt-text="Diagram illustrating environment routing creating developer environments in the designated group  which are then moved to more structurally specific groups":::
 
 *Figure: After environment routing creates developer environments in the designated group, move them to more structurally specific groups.*
 
@@ -310,13 +308,13 @@ In the simplest environment strategy, the project team builds in a shared enviro
 
 Dedicated testing and production environments aren't required. The app could be tested in and deployed to organization-wide testing and production environments that host multiple applications.
 
-![Diagram illustrating two enterprise apps under development in dedicated environments  then tested and deployed in environments that are shared with other apps ](media/environment-strategy/image11.png)
+:::image type="content" source="media/environment-strategy/image11.png" alt-text="Diagram illustrating two enterprise apps under development in dedicated environments  then tested and deployed in environments that are shared with other apps":::
 
 *Figure: Two enterprise apps under development in dedicated environments, then tested and deployed in environments that are shared with other apps.*
 
 In a more advanced variation, each maker has an individual developer environment. This has the benefit of providing greater isolation to the maker but can make combining individual work in an integration environment more complicated. And although working in isolation can be helpful for larger, sophisticated teams, it can add unnecessary overhead to smaller teams that can be more successful collaborating in a shared development environment.
 
-![Diagram illustrating an enterprise app under development in individual environments  combined in a shared integration environment  and then tested and deployed in environments that are shared with other apps ](media/environment-strategy/image12.png)
+:::image type="content" source="media/environment-strategy/image12.png" alt-text="Diagram illustrating an enterprise app under development in individual environments  combined in a shared integration environment  and then tested and deployed in environments that are shared with other apps":::
 
 *Figure: Two makers working on the same app in individual developer environments must combine their work in a shared integration environment before it moves to testing and production.*
 
@@ -324,7 +322,7 @@ This variation commonly incorporates a source control strategy, with each develo
 
 For example, version 1 of the app might be in production while the team moves on to building version 2. Your environment strategy must support fixing a problem in version 1 while development of version 2 is underway.
 
-![Diagram of two versions of an app in development  test  and production simultaneously ](media/environment-strategy/image13.png)
+:::image type="content" source="media/environment-strategy/image13.png" alt-text="Diagram of two versions of an app in development  test  and production simultaneously":::
 
 *Figure: Version 1 must be patched, tested, and deployed while version 2 is being developed, tested, and deployed.*
 
@@ -374,7 +372,7 @@ If your organization is like most, you have several environments in addition to 
 
 As part of establishing your environment strategy, identify common levels of security for your environments and the features that protect each level, as in the following example.
 
-![Three levels of environment security  normal  medium  high  and the security features that protect each one  such as DLP policies and Customer Lockbox ](media/environment-strategy/image14.png)
+:::image type="content" source="media/environment-strategy/image14.png" alt-text="Three levels of environment security  normal  medium  high  and the security features that protect each one  such as DLP policies and Customer Lockbox":::
 
 *Figure: An example of three tiers of environment security and the security features that apply to environments in each tier.*
 
@@ -384,7 +382,7 @@ Incorporate the security levels you identify into your group strategy, and where
 
 Data policies are another important part of an overall governance effort to control the services used by low-code resources in an environment. Environment groups don't have a rule to apply a DLP policy to an environment. However, you can align your DLP strategy with your environment groups. For example, you could create a DLP policy with the same or a similar name as an environment group and apply it to environments in that group.
 
-![Diagram illustrating the relationship between environment groups and similarly named data loss prevention policies that apply to them ](media/environment-strategy/image15.png)
+:::image type="content" source="media/environment-strategy/image15.png" alt-text="Diagram illustrating the relationship between environment groups and similarly named data loss prevention policies that apply to them":::
 
 *Figure: In this example, environments in the Personal Dev group follow a DLP policy that blocks all non-Microsoft connectors.*
 
@@ -392,7 +390,7 @@ Data policies are another important part of an overall governance effort to cont
 
 In earlier sections, we described our vision for how organizations can manage environments at scale. We explored essential features, how they contribute to an environment strategy, and what a foundation environment topology that uses them might look like. We gave examples of how to build on that foundation to accommodate common scenarios. Because every organization is unique, the next step is for you to tailor an environment strategy that meets your organization's needs.
 
-### Start where you're
+### Start where you are
 
 Whether your organization is new to Power Platform or has been using it for years, the first step is to evaluate your situation. Assess, at a high level, what's in your default environment, what other environments you have, and what they're being used for. Often an environment strategy is done as part of an overall effort to establish governance of Power Platform in an organization. If that is the case, you might already have established some of the governance vision that is required to tailor a strategy for your organization.
 
@@ -438,13 +436,13 @@ The [Power Platform Center of Excellence Starter Kit](/power-platform/guidance/c
 
 For example, the Environments Power BI dashboard offers an overview that helps you understand which environments exist in your tenant, who created them, and what assets they contain.
 
-![Screenshot of the environments overview dashboard in Power BI  showing numeric tiles  charts  and report filters ](media/environment-strategy/image16.png)
+:::image type="content" source="media/environment-strategy/image16.png" alt-text="Screenshot of the environments overview dashboard in Power BI  showing numeric tiles  charts  and report filters":::
 
 *Figure: The Environments dashboard in Power BI.*
 
 The kit includes starting points or inspiration, such as a process that makers can use to [request new environments](/power-platform/guidance/coe/env-mgmt) and changes to DLP policies for their environments.
 
-![Flow diagram illustrating admin and maker roles and actions in a process for requesting a new environment or modifying a DLP policy applied to an environment ](media/environment-strategy/image17.png)
+:::image type="content" source="media/environment-strategy/image17.png" alt-text="Flow diagram illustrating admin and maker roles and actions in a process for requesting a new environment or modifying a DLP policy applied to an environment":::
 
 *Figure: Flow diagram illustrating an environment management process in the CoE Starter Kit.*
 
@@ -514,7 +512,7 @@ Environment groups are flexible and allow you to accommodate various use cases u
 
 - By location, if most environments in a location have similar governance needs; this can also help meet similar regional regulatory and legal compliance
 
-![A screenshot of a computer screen Description automatically generated](media/environment-strategy/image18.png)
+:::image type="content" source="media/environment-strategy/image18.png" alt-text="A diagram showing a Finance environment group and an HR environment group with different rules":::
 
 **Naming environments and groups**
 
@@ -522,7 +520,7 @@ As part of your strategy, consider how environments and groups are named.
 
 - Environment names are visible to admins, makers, and users. Only admins typically use environment groups, but makers may encounter them if they have privileges to create environments.
 
-- Developer environments that are automatically created follow the pattern *&lt;user name&gt;'s Environment*; for example, "Jim Glynn's Environment." Environment groups aren't named automatically.
+- Developer environments that are automatically created follow the pattern *&lt;user name&gt;'s Environment*; for example, "Avery Howard's Environment." Environment groups aren't named automatically.
 
 - Environment and environment group names aren't required to be unique. However, to avoid confusion, it's a best practice to avoid duplicate names.
 
@@ -592,7 +590,7 @@ Developing a tenant environment strategy isn't a one-time activity. It's a journ
 
 Like all journeys, different organizations join at different points along the way, but all have the same destination in mind. What follows are possible on-ramps that represent where your organization is today.
 
-![Decorative representation of Azure landing zone journey on ramps](media/environment-strategy/Start.png)
+:::image type="content" source="media/environment-strategy/image22.png" alt-text="Decorative representation of Azure landing zone journey on ramps":::
 
 ### Start
 
@@ -652,13 +650,13 @@ As part of developing or evolving your strategy, decide how you inform users of 
 
 A good start is to [turn on the maker welcome content](/power-platform/admin/welcome-content) in the environment group where new makers land.
 
-![Screenshot of the welcome content for makers in Power Platform ](media/environment-strategy/image20.png)
+:::image type="content" source="media/environment-strategy/image20.png" alt-text="Screenshot of the welcome content for makers in Power Platform ":::
 
 *Figure: Use the welcome content to help new makers be successful.*
 
 Another effective approach to communicating with your users is establishing an internal Power Platform hub. The hub can be a place for people to collaborate on projects, share ideas, and discover new ways to apply technology to achieve more. The hub could be where you share more detailed information on your environment strategy that's relevant to your users. [Learn how to create an internal Power Platform hub](/power-platform/guidance/adoption/wiki-community).
 
-## Conclusion 
+## Conclusion
 
 In this white paper, we explored features that are designed to help your organization manage Power Platform environments at enterprise scale and incorporate them into your tenant environment strategy.
 
@@ -678,4 +676,4 @@ Every organization's journey to adopting Power Platform is unique. We presented 
 
 [Low-code security and governance](https://powerplatform.microsoft.com/en-us/trusted-cloud/)
 
-[<u>Solution concepts in ALM</u>](/power-platform/alm/solution-concepts-alm)
+[Solution concepts in ALM](/power-platform/alm/solution-concepts-alm)
