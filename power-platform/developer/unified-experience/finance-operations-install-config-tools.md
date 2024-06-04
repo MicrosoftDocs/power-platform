@@ -11,9 +11,7 @@ contributors:
  - Pankaj-Thakur
 ---
 
-# Install and configure development tools (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Install and configure development tools
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
 
@@ -187,6 +185,6 @@ Start writing code, deploy, and debug.
 
 ### See also
 
-[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
