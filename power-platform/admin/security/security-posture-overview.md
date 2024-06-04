@@ -183,16 +183,26 @@ Each security feature tile consists of the following specifications
 **How do you turn on a security feature?**
 
 The system will not prompt you any recommendations unless you turn on a security feature. Here is an example where the customer lockbox feature is not enabled
+
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/8d350586-c038-4ea4-bcc1-1afa06eda8e7)
+
  
 
-Click on “Manage Customer Lockbox” button to see the pop up as shown below 
+
+Click on “**Manage Customer Lockbox**” button to see the pop up as shown below 
  
+
 Toggle the switch to enable it and hit save 
+
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/b151c9ea-9b24-4231-b2a9-ce7d45991809)
+
  
 
-Note: Tenant Isolation and Customer Lockbox are the only two features that can be enabled using the above procedure. 
 
-How do you enable a recommendation?
+**Note**: Tenant Isolation and Customer Lockbox are the only two features that can be enabled using the above procedure. 
+
+**How do you enable a recommendation?**
+
 
 Recommendations can be enabled via two entry points 
 1.	By clicking on the direct link under the recommended action of that feature
@@ -200,9 +210,16 @@ Recommendations can be enabled via two entry points
 
 Example as below:
 
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/e3642d0f-ab6e-4ab8-a259-28165f46c1d4)
+
+
  
-Note: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet
+
+**Note**: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet
 
 Once steps 1 or 2 is performed, it opens another dialog box to allow you to choose all the applicable environment to which the feature can be enabled. Example below 
+
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/68b745f9-cb2a-415a-b47e-665d1441f6e0)
+
  
 
