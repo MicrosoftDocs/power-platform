@@ -9,9 +9,7 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Write, deploy, and debug X++ code (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Write, deploy, and debug X++ code
 
 The unified developer experience for finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
