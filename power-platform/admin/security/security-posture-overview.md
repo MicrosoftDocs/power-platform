@@ -49,6 +49,7 @@ Security hub recommendations refer to actions or measures that the administrator
 • Adopt a proven recommendation engine which provides a generalized pattern for minting and managing recommendations. 
 
 **Why are there more recommendation notifications than the number of environments?**
+
  The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, **1: many relationships**. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
 In the image below, we see that there are 28 recommendations for 17 environments showing the 1: many relationships type scenario 
 
@@ -57,9 +58,11 @@ In the image below, we see that there are 28 recommendations for 17 environments
 
 
 **Why do I see a different set of environments if I follow the recommended action vs the “Manage” workflow?**
+
 This exists since recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, this tab contains only managed environments.  Note: This is true only for features that require Managed Environments 
 
 **How is your security posture calculated?**
+
 Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 Formula: Total Achieved Impact / Total Possible Impact 
