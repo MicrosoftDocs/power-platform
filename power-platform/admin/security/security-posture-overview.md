@@ -51,6 +51,7 @@ Security hub recommendations refer to actions or measures that the administrator
 **Why are there more recommendation notifications than the number of environments?**
  The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, **1: many relationships**. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
 In the image below, we see that there are 28 recommendations for 17 environments showing the 1: many relationships type scenario 
+
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/9f7f9734-3127-4949-93cf-e9a3a900fe52)
 
 
