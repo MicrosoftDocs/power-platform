@@ -43,7 +43,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 1. In this form, enter a rule **Name** in this format: `prefix_name` where `prefix` can be `CLS_` or `New_`.
 
-   :::image type="content" source="media/create-and-manage-masking-rules/new-masking-rule-form.png" alt-text="Screenshot that shows the New masking rule form and some example field values." lightbox="media/new-masking-rule-form.png":::
+   :::image type="content" source="media/create-and-manage-masking-rules/new-masking-rule-form.png" alt-text="Screenshot that shows the New masking rule form and some example field values." lightbox="media/create-and-manage-masking-rules/new-masking-rule-form.png":::
 
 1. Enter a **Display Name** and **Description**.
 
@@ -106,7 +106,7 @@ You can get a list of all masking rules from the Maker portal.
 
 1. Select **Columns** under the **Schema** section.
 
-   :::image type="content" source="media/create-and-manage-masking-rules/select-columns-schema.png" alt-text="Screenshot that shows the location of the Columns option under the Schema section." lightbox="media/select-columns-schema.png":::
+   :::image type="content" source="media/create-and-manage-masking-rules/select-columns-schema.png" alt-text="Screenshot that shows the location of the Columns option under the Schema section." lightbox="media/create-and-manage-masking-rules/select-columns-schema.png":::
 
 1. Select a column to open and edit it. You see the **Edit column** pane.
 
@@ -118,7 +118,7 @@ You can get a list of all masking rules from the Maker portal.
 
    1. Select a masking rule.
 
-   :::image type="content" source="media/create-and-manage-masking-rules/select-masking-rule.png" alt-text="Screenshot showing the components that need to be selected in the Edit column pane." lightbox="media/select-masking-rule.png":::
+   :::image type="content" source="media/create-and-manage-masking-rules/select-masking-rule.png" alt-text="Screenshot showing the components that need to be selected in the Edit column pane." lightbox="media/create-and-manage-masking-rules/select-masking-rule.png":::
 
 1. Select **Save**.
 
