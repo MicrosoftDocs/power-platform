@@ -31,10 +31,12 @@ Not enabling Tenant Level Analytics will cause no data to populate as shown belo
 
 
 
+
 To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/be718d7a-dc6b-43f3-aadb-486232aa2b7a)
  
+
 
 
 
@@ -43,6 +45,7 @@ The Security Hub landing page will take **48 hours** to populate all the insight
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/7d1f29cd-72d6-4ae7-85f5-bc565d52e2a6)
 
  
+
 **What is a recommendation?**
 
 Security hub recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. The benefits are as follows
@@ -68,25 +71,35 @@ Security score is a numerical summary of your organization's security posture ba
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 
 Formula: **Total Achieved Impact / Total Possible Impact** 
+
 •	How are feature impacts determined? 
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
 
 <img width="463" alt="image" src="https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/9e9da776-7d30-481d-88c0-636436778107">
 
  
+
 Example: 
+
 Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
 
 <img width="521" alt="image" src="https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/cc80ff3e-5e0f-4dd7-8caf-2faaf4e98f79">
 
  
+
 Maximum Impact: 55 
 Assume the following: 
+
 •	Tenant Isolation is enabled (10)
+
 •	At least one DLP policy is configured on the tenant (10)
+
 •	5 of 10 Environments have a Security Group. 
+
 •	2 of 10 Environments have IP Firewall. 
-•	3 of 10 Environments have IP Cookie Bindings. 
+
+•	3 of 10 Environments have IP Cookie Bindings.
+
 •	Customer Lockbox is Off. 
  
 Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
