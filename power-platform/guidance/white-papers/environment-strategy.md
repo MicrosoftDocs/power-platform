@@ -77,12 +77,12 @@ The following table describes the types of environments you can create, their ch
 
 | **Type**                      | **Characteristics and uses**                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Default                       | The environment that comes with every tenant. Many Microsoft 365 experiences use this environment for customizations and automations. This environment is not intended for long-term or permanent work beyond the Microsoft 365 personal, productivity scenarios.             |
+| Default                       | The environment that comes with every tenant. Many Microsoft 365 experiences use this environment for customizations and automations. This environment isn't intended for long-term or permanent work beyond the Microsoft 365 personal, productivity scenarios.             |
 | Production                    | This environment is intended to be used for permanent work in an organization. Production environments support extended, back-up retention, from seven days to up to 28 days.       |
 | Sandbox                       | These nonproduction environments support environment actions like copy and reset. Sandboxes are best used for testing and ALM build environments.                          |
 | Developer                     | These special environments are intended as makers' personal, development workspaces, which isolate low-code assets from users and other makers. Makers can have up to three developer environments. They don't count against your tenant capacity. Developer environments that haven't been used for 90 days are automatically turned off and then removed from your tenant if the owner doesn't respond to notifications. Dynamics 365 apps aren't available in developer environments. |
 | Trial                         | These environments are intended to support short-term testing and proofs of concept. They're limited to one per user. Trial environments are automatically removed from your tenant after a short period of time.   |
-| Microsoft Dataverse for Teams | These enviornments are automatically created when you create an app in Teams or install an app from the app catalog. The security model for these environments aligns with the team they're associated with.        |
+| Microsoft Dataverse for Teams | These environments are automatically created when you create an app in Teams or install an app from the app catalog. The security model for these environments aligns with the team they're associated with.        |
 | Support                       | These are special environments created by Microsoft Support to allow engineers to troubleshoot problems. These environments don't count against your tenant capacity.      |
 
 As you put together an overall tenant environment strategy, the different types are relevant to support the strategy recommendations.
@@ -173,7 +173,7 @@ A key part of the environment strategy that we outline in this article is to mov
 
 *Figure: A maker is automatically redirected to a personal, developer environment instead of the default environment when building apps.*
 
-The developer environments that're created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](../../admin/managed-environment-licensing.md).
+The developer environments that are created by routing are managed by default. Users with Developer Plan licenses are limited to creating and previewing resources in the environment. To run the resources as a user, they need an appropriate [license](../../admin/managed-environment-licensing.md).
 
 You can use environment routing by itself, but the recommended way is to use it with environment groups. When used this way, any environment that's created is associated with the group that you designate to contain all new developer environments, ensuring that it's immediately covered by your governance policies.
 
@@ -255,7 +255,7 @@ Four environment groups are created: Development, Shared Development, UAT (user 
 
 - The Shared Development group supports environments that contain projects with multiple makers.
 
-- The UAT group contains environments that're used to test resources before they're promoted to production.
+- The UAT group contains environments that are used to test resources before they're promoted to production.
 
 - The Production group contains environments that host apps, flows, and other artifacts for production use.
 
@@ -355,7 +355,7 @@ Finally, [apply cross-tenant isolation](../../admin/cross-tenant-restrictions.md
 
 ### Secure the default environment
 
-The default environment has a role in supporting Microsoft 365 productivity customizations. As part of the recommended environment strategy, though, it's best to minimize its use as much as possible. Instead, makers should build in their own isolated environments. Although you can't simply block access to the default environment, you can minimize what can be done in it.
+The default environment has a role in supporting Microsoft 365 productivity customizations. As part of the recommended environment strategy, though, it's best to minimize its use as much as possible. Instead, makers should build in their own isolated environments. Although you can't block access to the default environment, you can minimize what can be done in it.
 
 First, use environment routing to direct makers to their own workspace to build low-code assets.
 
@@ -509,7 +509,7 @@ Environment groups are flexible and allow you to accommodate various use cases u
 
 - Development, test, and production
 
-- Departments, business groups or cost centers
+- Departments, business groups, or cost centers
 
 - By Projects
 
