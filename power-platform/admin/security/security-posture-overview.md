@@ -36,6 +36,7 @@ To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in
  
 
 
+
 The Security Hub landing page will take **48 hours** to populate all the insights as shown below, and till then most sections on the home page will display “Not available”
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/7d1f29cd-72d6-4ae7-85f5-bc565d52e2a6)
