@@ -671,6 +671,6 @@ Every organization's journey to adopting Power Platform is unique. We presented 
 
 - [Environment groups](../../admin/environment-groups.md)
 - [Environment routing](../../admin/default-environment-routing.md)
-- [Power Platform security white paper](https://aka.ms/powerpnp/enterprisesecurity)
+- [Power Platform enterprise security white paper](enterprise-security.md)
 - [Low-code security and governance](https://powerplatform.microsoft.com/trusted-cloud/)
 - [Solution concepts in ALM](../../alm/solution-concepts-alm.md)
