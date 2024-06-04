@@ -1,5 +1,5 @@
 ---
-title: "Unified developer experience for finance and operations apps (preview)"
+title: "Unified developer experience for finance and operations apps"
 description: Learn about developing code for finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
 ms.date: 08/22/2023
@@ -9,9 +9,7 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Unified developer experience for finance and operations apps (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Unified developer experience for finance and operations apps
 
 The unified developer experience consolidates the disparate developer tools and environments across finance and operations apps and Power Platform to reduce friction and simplify working across these apps. Finance and operations apps provide a rich ecosystem for professional developers by using a metadata and code-based development environment for mission critical scenarios. Power Platform brings the ability to author solutions quickly and seamlessly using low-code development paradigms and leverages Microsoft Dataverse as the relational data store. Power Platform also adds the ability to build and deploy your solutions using a continuous integration and deployment (CI/CD) pipeline.
 
