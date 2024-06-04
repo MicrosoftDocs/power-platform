@@ -1,5 +1,5 @@
 ---
-title: "Unit testing (preview)" 
+title: "Unit testing" 
 description: Shows you how to create and run test cases.
 author: pvillads
 ms.date: 08/28/2023
@@ -9,9 +9,7 @@ ms.reviewer: pehecke
 ms.author: pvillads
 ---
 
-# Unit testing (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Unit testing
 
 This how-to article shows you how to create and run reliable test cases.
 
@@ -19,7 +17,7 @@ This how-to article shows you how to create and run reliable test cases.
 
 You need to have a Power Platform unified developer experience installed and configured on your local machine and a Power Platform developer-focused sandbox environment linked to it. It's important to keep the cloud and local representation of the code the same (synchronized).
 
-More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+More information: [Install and configure development tools](finance-operations-install-config-tools.md)
 
 ## Key concepts
 
@@ -143,6 +141,6 @@ Creating a test specific module helps to keep test code together and manageable.
 
 ### See also
 
-[Write, deploy, and debug X++ code (preview)](finance-operations-debug.md)
+[Write, deploy, and debug X++ code](finance-operations-debug.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
