@@ -127,8 +127,8 @@ On the landing page you will see
 
 **Feature cards** 
 are the various tiles showcasing all the available security features we have to offer as below 
-- Tenant Isolation (Managed and un-managed environments)
 
+- Tenant Isolation (Managed and un-managed environments)
 - Customer Lockbox ( Managed environments only)
 - IP Firewall (Managed environments only with Dataverse)
 - IP address-based cookie binding  ( Managed environments only with Dataverse)
@@ -138,6 +138,7 @@ are the various tiles showcasing all the available security features we have to 
 - Client application access Control (Managed environments only)
 - Environments Azure VNet (Managed environments only)
 - Administrator privileges (Managed environments only with Dataverse)
+  
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/f000104d-a5fb-47d5-92bd-9d0ca598bcc5)
 
  
