@@ -21,7 +21,7 @@ search.audienceType:
 
 In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level. 
 
-**How do I get started?**
+##How do I get started?
 
 To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
 Not enabling Tenant Level Analytics will cause no data to populate as shown below 
@@ -46,12 +46,12 @@ The Security Hub landing page will take **48 hours** to populate all the insight
 
  
 
-**What is a recommendation?**
+##What is a recommendation?
 
 Security hub recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. The benefits are as follows
 • Adopt a proven recommendation engine which provides a generalized pattern for minting and managing recommendations. 
 
-**Why are there more recommendation notifications than the number of environments?**
+###Why are there more recommendation notifications than the number of environments?
 
  The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, **1: many relationships**. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
 In the image below, we see that there are 28 recommendations for 17 environments showing the 1: many relationships type scenario 
