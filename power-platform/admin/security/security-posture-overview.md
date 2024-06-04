@@ -30,6 +30,7 @@ Not enabling Tenant Level Analytics will cause no data to populate as shown belo
 
 
 
+
 To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/be718d7a-dc6b-43f3-aadb-486232aa2b7a)
