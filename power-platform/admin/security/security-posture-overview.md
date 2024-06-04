@@ -130,23 +130,14 @@ are the various tiles showcasing all the available security features we have to 
 - Tenant Isolation (Managed and un-managed environments)
 
 - Customer Lockbox ( Managed environments only)
-
 - IP Firewall (Managed environments only with Dataverse)
-
--IP address-based cookie binding  ( Managed environments only with Dataverse)
-
--Data Policy (Managed and un-managed environments)
-
+- IP address-based cookie binding  ( Managed environments only with Dataverse)
+- Data Policy (Managed and un-managed environments)
 - Environment security Groups (Managed and un-managed environments )
-
 - Auditing (Managed and un-managed environments with Dataverse)
-
 - Client application access Control (Managed environments only)
-
 - Environments Azure VNet (Managed environments only)
-
 - Administrator privileges (Managed environments only with Dataverse)
-
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/f000104d-a5fb-47d5-92bd-9d0ca598bcc5)
 
  
