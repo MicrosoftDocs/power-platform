@@ -22,46 +22,51 @@ This data goes into the Power Apps (Peview) > Mobile app synchronization and act
 
 ## Mobile app synchronization and action event definitions
 
-| Event |	Definition |
-| ------ | ------ |
-| timestamp [UTC] |	When the event happened |
-| id |	 | Event ID |
-| target |	Name of the scenario tracked by the event |
-| type |	Source table of the event |
-| name |	Name of the scenario tracked by the event |
-| success |	Result of the scenario tracked by the event (values SUCCESS or FAILURE) |
-| duration |	Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive |
-| customDimensions 'eventContext'	| Custom event properties |
-| eventContext: CurrentSyncId |	Identifier for the current sync session which may span multiple app sessions| 
-| eventContext: DataSyncStatus |	| 
-| eventContext: entityName | Name of the table in data download events	|
-| eventContext: hasNetworkTimeouts | Flag indicating whether any HTTP calls failed with network timeouts in the current sync	|
-| eventContext: DataSyncStatus | JSON object containing detailed status of a sync, including details about the data downloaded to the device	|
-| eventContext: ProfileId | ID of the offline profile configured for the app and user	|
-the data downloaded to the device	|
-| eventContext: recordCount | Number of records downloaded	|
-| eventContext: responseSize | Response size of an HTTP request	|
-| customDimensions: 'appInfo_Version' |	Version of the native app as seen in the app store. |
-| customDimensions 'activeDuration' |	Scenario duration in milliseconds including only time while the app is active.|
-|customDimensions 'offlineSyncFcbs' |	Features (de)activated for the offline sync |
-| customDimensions 'deviceInfo_Id' |	Unique identifier of the device |
-| customDimensions 'deviceInfo_model' |	Device Model (i.e. Iphone 13) |
-| customDimensions 'deviceInfo_make' |	Device Make (i.e. Apple) |
-| customDimensions 'deviceInfo_OsName' |	Device OS  i.e. (Android) |
-| customDimensions 'deviceInfo_OsVersion' |	OS version i.e. (Android 13) |
-| customDimensions "eventName" |	Step of the scenario tracked by the event <br>ScenarioEnd <br>ScenarioStart <br>ScenarioStory <br>Trace <br>AggregateTrace <br>AggregatedTrace <br>trace <br>ScenarioDuplicateEnd | 
-| customDimensions 'logLevel' |	The severity or reporting level of the event (valid values are info, error, warning, error, verbose) |
-| customDimensions 'scenarioGuid' |	Unique identifier for the scenario tracked by the event |
-| customDimensions 'dataSyncMode' |	What type of Offline sync the user has experienced <br>DELTA_SYNC <br>GRID_SYNC <br>FIRST_SYNC <br>FORCED_SYNC <br>SINGLE_RECORD_SYNC |
-| customDimensions 'appFlavor' |	Native app installed on the devices (valid values are FieldService, PowerApps) |
-| customDimensions 'loc_country' |	Telemetry Device origin |
-| FailureType | Defines type of sync failure	|
-| ErrorCode | Error Code generated upon sync failure. See error code mapping table. |
-| operation_Id |	Unique identifier for the session |
-|operation_ParentId |	Unique identifier for the scenario tracked by the event |
-|user_Id |	AAD user ID |
-|user_AuthenticatedId |	AAD user ID |
-| application_Version |	Version of the app |
+- **id**: Event ID
+- **target**: Name of the scenario tracked by the event
+- **type**: Source table of the event
+- **name**: Name of the scenario tracked by the event
+- **success**: Result of the scenario tracked by the event (values SUCCESS or FAILURE)
+- **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive
+- **FailureType**: Defines type of sync failure
+- **ErrorCode**: Error Code generated upon sync failure. See error code mapping table.
+- **operation_Id**: Unique identifier for the session
+- **operation_ParentId**: Unique identifier for the scenario tracked by the event
+- **user_Id**: AAD user ID
+- **user_AuthenticatedId**: AAD user ID
+- **application_Version**: Version of the app
+- **customDimensions**: Contains the following attributes
+     - **eventContext**: Contains the following properties
+        - **CurrentSyncId**: Identifier for the current sync session which may span multiple app sessions
+        - **DataSyncStatus**: (No value provided)
+        - **entityName**: Name of the table in data download events
+        - **hasNetworkTimeouts**: Flag indicating whether any HTTP calls failed with network timeouts in the current sync
+        - **DataSyncStatus**: JSON object containing detailed status of a sync, including details about the data downloaded to the device
+        - **ProfileId**: ID of the offline profile configured for the app and user
+        - **recordCount**: Number of records downloaded
+        - **responseSize**: Response size of an HTTP request
+    - **appInfo_Version**: Version of the native app as seen in the app store.
+    - **activeDuration**: Scenario duration in milliseconds including only time while the app is active.
+    - **offlineSyncFcbs**: Features (de)activated for the offline sync
+    - **deviceInfo_Id**: Unique identifier of the device
+    - **deviceInfo_model**: Device Model (i.e. Iphone 13)
+    - **deviceInfo_make**: Device Make (i.e. Apple)
+    - **deviceInfo_OsName**: Device OS i.e. (Android)
+    - **deviceInfo_OsVersion**: OS version i.e. (Android 13)
+    - **"eventName"**: Step of the scenario tracked by the event (ScenarioEnd, ScenarioStart, ScenarioStory, Trace, AggregateTrace, AggregatedTrace, trace, ScenarioDuplicateEnd)
+    - **logLevel**: The severity or reporting level of the event (valid values are info, error, warning, error, verbose)
+    - **scenarioGuid**: Unique identifier for the scenario tracked by the event
+    - **dataSyncMode**: What type of Offline sync the user has experienced
+        - DELTA_SYNC
+        - GRID_SYNC
+        - FIRST_SYNC
+        - FORCED_SYNC
+        - SINGLE_RECORD_SYNC
+    - **appFlavor**: Native app installed on the devices (valid values are FieldService, PowerApps)
+    - **loc_country**: Telemetry Device origin
+
+
+
 
 # Example Scenarios
 
