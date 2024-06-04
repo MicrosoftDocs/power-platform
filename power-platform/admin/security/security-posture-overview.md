@@ -17,7 +17,7 @@ search.audienceType:
                                                            
 **Security Hub in Power Platform Admin Center** is revolutionary solution for managing the security posture of your Power Platform and D365 deployments all in one place. The Security Hub is a unique and innovative experience that enables security admins to trust the platform with their most sensitive data and business processes vulnerabilities and risks, it provides strategic guidance with system provided recommendations to achieve their security and compliance goals with minimal effort and resources. 
 
-**What is security posture?**
+## What is security posture?
 
 In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level. 
 
@@ -127,25 +127,25 @@ On the landing page you will see
 
 **Feature cards** 
 are the various tiles showcasing all the available security features we have to offer as below 
-•	Tenant Isolation (Managed and un-managed environments)
+- Tenant Isolation (Managed and un-managed environments)
 
-•	Customer Lockbox ( Managed environments only)
+- Customer Lockbox ( Managed environments only)
 
-•	IP Firewall (Managed environments only with Dataverse)
+- IP Firewall (Managed environments only with Dataverse)
 
-•	IP address-based cookie binding  ( Managed environments only with Dataverse)
+-IP address-based cookie binding  ( Managed environments only with Dataverse)
 
-•	Data Policy (Managed and un-managed environments)
+-Data Policy (Managed and un-managed environments)
 
-•	Environment security Groups (Managed and un-managed environments )
+- Environment security Groups (Managed and un-managed environments )
 
-•	Auditing (Managed and un-managed environments with Dataverse)
+- Auditing (Managed and un-managed environments with Dataverse)
 
-•	Client application access Control (Managed environments only)
+- Client application access Control (Managed environments only)
 
-•	Environments Azure VNet (Managed environments only)
+- Environments Azure VNet (Managed environments only)
 
-•	Administrator privileges (Managed environments only with Dataverse)
+- Administrator privileges (Managed environments only with Dataverse)
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/f000104d-a5fb-47d5-92bd-9d0ca598bcc5)
 
