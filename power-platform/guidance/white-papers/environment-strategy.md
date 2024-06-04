@@ -1,4 +1,4 @@
-﻿---
+---
 title: Develop a tenant environment strategy to adopt Power Platform at scale
 description: Learn how to best use the latest features of the platform to implement an environment strategy that can allow your adoption of Power Platform to reach enterprise scale.
 author: robstand
