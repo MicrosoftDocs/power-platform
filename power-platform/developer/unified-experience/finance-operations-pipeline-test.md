@@ -1,5 +1,5 @@
 ---
-title: "Execute unit tests in Azure Pipelines (Preview) "
+title: "Execute unit tests in Azure Pipelines"
 description: Learn how to set up a unit test for execution using Azure Pipelines.
 author: pvillads
 ms.date: 05/10/2024
@@ -9,18 +9,13 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Execute unit tests in Azure Pipelines (preview)
+# Execute unit tests in Azure Pipelines
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 An Azure Pipeline build task is available that lets users execute unit tests on connected cloud runtime environments using a continuous integration/continuous delivery (CI/CD) pipeline. The "Execute Unit Tests in Unified Environment" task is included in the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension.
 
-More information: [Continuous integration and deployment (preview)](finance-operations-pipelines.md), [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+More information: [Continuous integration and deployment](finance-operations-pipelines.md), [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)
 
 ## Prerequisites
 
@@ -93,8 +88,8 @@ The following screenshot shows the same reference name used in a unit test task:
 
 ### See also
 
-[Unit testing (preview)](finance-operations-testing.md)  
-[Continuous integration and deployment (preview)](finance-operations-pipelines.md)  
+[Unit testing](finance-operations-testing.md)  
+[Continuous integration and deployment](finance-operations-pipelines.md)  
 [Build automation that uses Microsoft-hosted agents and Azure Pipelines](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation)  
 [Unit Test Framework](/dynamicsax-2012/developer/unit-test-framework)
 
