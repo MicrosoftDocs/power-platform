@@ -23,7 +23,9 @@ In general security posture is a measure of the level of visibility you have int
 **How do I get started?**
 To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
 Not enabling Tenant Level Analytics will cause no data to populate as shown below 
-![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/ca83d09d-a319-429b-812f-d44ccad1c86b)
+
+<img width="446" alt="image" src="https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/4bbc636d-fda5-4ec7-85d9-56ef3802fc86">
+
 
 
 To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
