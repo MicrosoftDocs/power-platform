@@ -155,13 +155,13 @@ Each security feature tile consists of the following specifications
 
 **Customer Lockbox:** This feature is applicable to only managed environments. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, refer to [Customer Lockbox](../about-lockbox.md)
 
-**IP Firewall:**  This feature is applicable to only managed environments with dataverse. The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For more information, refer to IP Firewall 
+**IP Firewall:**  This feature is applicable to only managed environments with dataverse. The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For more information, refer to [IP Firewall](../ip-firewall.md).
 
-**IP address-based cookie binding:** This feature is applicable to only managed environments with dataverse. It prevent session hijacking exploits in Dataverse with IP address-based cookie binding. For more information, refer to IP address-based cookie binding
+**IP address-based cookie binding:** This feature is applicable to only managed environments with dataverse. It prevent session hijacking exploits in Dataverse with IP address-based cookie binding. For more information, refer to IP address-based [cookie binding](../block-cookie-replay-attack.md).
 
-**Data Policy: **This feature is applicable at both tenant level and at environment level to both managed and un-managed environments. Setting up DLP at the environment or tenant level will act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. For more information, refer to Data Policy
+**Data Policy: **This feature is applicable at both tenant level and at environment level to both managed and un-managed environments. Setting up DLP at the environment or tenant level will act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. For more information, refer to [Data Policy](../wp-data-loss-prevention.md).
 
-**Environment security group:** This feature is applicable to both managed and un-managed environments. Setting up security groups will help control which licensed users can access environment. To learn how to add a use to the Security group and more, refer to Environment security group
+**Environment security group:** This feature is applicable to both managed and un-managed environments. Setting up security groups will help control which licensed users can access environment. To learn how to add a use to the Security group and more, refer to Environment [security group](../control-user-access.md).
 
 ## How do you turn on a security feature?
 
