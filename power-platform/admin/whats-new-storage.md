@@ -46,7 +46,7 @@ There are two versions for storage capacity reporting:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. At this time, exceeding storage entitlements does not directly impact the availability of the service. Data stored within the service remains durable, regardless of whether storage consumption exceeds entitlements. 
+If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. For new model email notification details, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For legacy model email notification details, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Currently, exceeding storage entitlements does not affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 
 The following admin operations are not available when a tenant exceeds storage capacity entitlements:
 
@@ -64,10 +64,11 @@ More information:
 - For the legacy capacity storage model, see [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario). 
 - For the new capacity storage model, see [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-overage-enforcement).
 
-Universal License Terms for Online Services ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply when a customer's storage consumption exceeds Online Service’s documented entitlement(s). 
-- Customer must acquire and assign the appropriate subscription licenses required for its use of each Online Service. Usage exceeding the Online Service’s documented entitlement(s) and/or usage limits require additional purchase of licenses to cover overage. 
-- Storage consumption exceeding the Online Service’s documented entitlement(s) may result in suspension of the Online Service.
-- Microsoft will provide reasonable notice before suspending an Online Service for storage consumption that exceeds the Online Service’s documented entitlement(s).
+The Universal License Terms for Online Services  ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply to your organization’s use of the Online Service, including consumption that exceeds the Online Service’s documented entitlements or usage limits.
+
+Your organization must have the right licenses for the storage you use. 
+- If you use more than your documented entitlements or usage limits, you must buy additional licenses
+- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the Online Service. Microsoft will provide reasonable notice before suspending your Online Service.
 
 If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity.
 
