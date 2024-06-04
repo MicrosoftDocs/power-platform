@@ -120,6 +120,8 @@ On the landing page you will see
 
 
 **Summary Scorecard** is the tile that showcases the speedometer that tells you where the tenant lands on their security score and shows the security recommendations to improve your overall score 
+
+
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/6fd73b28-9cd0-477a-8c08-e622a07084bb)
 
 
