@@ -135,8 +135,6 @@ To help you apply consistent settings and governance, environment groups can hav
 
 - Sharing controls for canvas apps
 
-- Sharing controls for solution-aware cloud flows (coming soon)
-
 - Usage insights
 
 - Maker welcome content
