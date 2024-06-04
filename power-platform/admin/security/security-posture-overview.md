@@ -14,34 +14,41 @@ search.audienceType:
 
 # Security Hub in Power Platform Admin Center
 
-                                                           Security Hub 
-Security Hub in Power Platform Admin Center is revolutionary solution for managing the security posture of your Power Platform and D365 deployments all in one place. The Security Hub is a unique and innovative experience that enables security admins to trust the platform with their most sensitive data and business processes vulnerabilities and risks, it provides strategic guidance with system provided recommendations to achieve their security and compliance goals with minimal effort and resources. 
+                                                           
+**Security Hub in Power Platform Admin Center** is revolutionary solution for managing the security posture of your Power Platform and D365 deployments all in one place. The Security Hub is a unique and innovative experience that enables security admins to trust the platform with their most sensitive data and business processes vulnerabilities and risks, it provides strategic guidance with system provided recommendations to achieve their security and compliance goals with minimal effort and resources. 
+
 **What is security posture?**
 In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level. 
 
 **How do I get started?**
 To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
 Not enabling Tenant Level Analytics will cause no data to populate as shown below 
- 
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/ca83d09d-a319-429b-812f-d44ccad1c86b)
+
 
 To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/be718d7a-dc6b-43f3-aadb-486232aa2b7a)
  
 
-The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”
+The Security Hub landing page will take **48 hours** to populate all the insights as shown below, and till then most sections on the home page will display “Not available”
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/7d1f29cd-72d6-4ae7-85f5-bc565d52e2a6)
+
  
-What is a recommendation?
+**What is a recommendation?**
 Security hub recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. The benefits are as follows
 • Adopt a proven recommendation engine which provides a generalized pattern for minting and managing recommendations. 
-Why are there more recommendation notifications than the number of environments?
- The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, 1: many relationships. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
+
+**Why are there more recommendation notifications than the number of environments?**
+ The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, **1: many relationships**. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
 In the image below, we see that there are 28 recommendations for 17 environments showing the 1: many relationships type scenario 
- 
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/9f7f9734-3127-4949-93cf-e9a3a900fe52)
 
 
-Why do I see a different set of environments if I follow the recommended action vs the “Manage” workflow?
+
+**Why do I see a different set of environments if I follow the recommended action vs the “Manage” workflow?**
 This exists since recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, this tab contains only managed environments.  Note: This is true only for features that require Managed Environments 
 
-How is your security posture calculated?
+**How is your security posture calculated?**
 Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 Formula: Total Achieved Impact / Total Possible Impact 
@@ -92,14 +99,15 @@ Secure Score = 30 / 55
  
   
   
-What do I see on the Security Hub landing page?
+**What do I see on the Security Hub landing page?**
 On the landing page you will see 
 1.	Summary Scorecard 
 2.	Feature cards 
-Summary Scorecard is the tile that showcases the speedometer that tells you where the tenant lands on their security score and shows the security recommendations to improve your overall score 
- 
+**Summary Scorecard** is the tile that showcases the speedometer that tells you where the tenant lands on their security score and shows the security recommendations to improve your overall score 
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/6fd73b28-9cd0-477a-8c08-e622a07084bb)
 
-Feature cards are the various tiles showcasing all the available security features we have to offer as below 
+
+**Feature cards** are the various tiles showcasing all the available security features we have to offer as below 
 •	Tenant Isolation (Managed and un-managed environments)
 •	Customer Lockbox ( Managed environments only)
 •	IP Firewall (Managed environments only with Dataverse)
@@ -110,20 +118,21 @@ Feature cards are the various tiles showcasing all the available security featur
 •	Client application access Control (Managed environments only)
 •	Environments Azure VNet (Managed environments only)
 •	Administrator privileges (Managed environments only with Dataverse)
+![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/f000104d-a5fb-47d5-92bd-9d0ca598bcc5)
 
  
 
-What components make up a security feature card?
+**What components make up a security feature card?**
 Each security feature tile consists of the following specifications 
 •	Description – Provides the full details of that specific security feature
 •	Impact – The overall impact it brings to the security posture 
 •	Recommended action – Steps needed to take to increase the security score 
 •	Completion status – Percentage left towards completing a recommended action
 •	Refreshed time – Timestamp as to when the recommended action was calculated
-
-What are the various security features that Security Hub has to offer?
-
-Tenant Isolation: This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to tenant isolation
+**
+**What are the various security features that Security Hub has to offer?**
+**
+**Tenant Isolation:** This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to tenant isolation
 
 Customer Lockbox: This feature is applicable to only managed environments. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, refer to Customer Lockbox
 
