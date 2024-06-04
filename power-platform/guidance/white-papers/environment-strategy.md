@@ -4,7 +4,7 @@ description: Learn how to best use the latest features of the platform to implem
 author: robstand
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/03/2024
+ms.date: 06/04/2024
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
@@ -473,7 +473,7 @@ In this section of the article, we build on the recommendations in the foundatio
 
 ### New environments
 
-As part of developing your strategy, consider when you create environments to support a workload. Your evaluation must balance the benefits of isolation that an environment provides—for example, being able to lock down particular environments more than others is helpful from a security perspective—with the disadvantages, such as that isolation creates friction for users who try to share data across apps.
+As part of developing your strategy, consider when you create environments to support a workload. Your evaluation must balance the benefits of isolation that an environment provides&mdash;for example, being able to lock down particular environments more than others is helpful from a security perspective&mdash;with the disadvantages, such as that isolation creates friction for users who try to share data across apps.
 
 When you're evaluating whether an app or an automation belongs in its own environment, assess the different stages of the app's life cycle separately. During development, isolation from other apps is important. When multiple apps are developed in a single environment, you risk creating cross-app dependencies.
 
@@ -483,13 +483,13 @@ Testing multiple apps in the same environment makes sense if they run together i
 
 When you evaluate the production environment for an app, keep the following considerations in mind:
 
-- **Is the app compatible with existing apps in the environment?** For example, two apps that both used the Dataverse Contact table for different purposes might not be compatible. Are the apps compatible from a DLP policy perspective?
+- **Is the app compatible with existing apps in the environment?** For example, two apps that both use the Dataverse Contact table for different purposes might not be compatible. Are the apps compatible from a DLP policy perspective?
 
-- **Are there special compliance or regulatory requirements for separation of data?** For example, does the sensitivity of the data require it to be isolated? Is there a requirement that data can't be comingled with other data?
+- **Are there special compliance or regulatory requirements for separation of data?** For example, does the sensitivity of the data require it to be isolated? Is there a requirement that data can't be included with other data?
 
 - **Is the data highly confidential or sensitive? Would exfiltration cause monetary or reputational damage to the organization?** Isolating in a separate environment can allow for more control over security.
 
-- **Does the app need data from other apps and need to be collocated with them?** For example, two apps that both use your Customer table should be hosted together. Separating them would create redundant data copies and create problems with maintaining the data.
+- **Does the app need data from other apps and need to be collocated with them?** For example, two apps that both use your Customer table should be hosted together. Separating them would create redundant, data copies and create problems with maintaining the data.
 
 - **Does the data require regional data residency?** In some scenarios, the same app or automation can be deployed to regional environments to ensure appropriate data isolation and residency.
 
@@ -533,11 +533,11 @@ Establish a consistent naming convention.
 
 - Consistent names help admins know what the group's purpose is and what environments it manages and can make automation and reporting easier.
 
-- A common practice is to include the life cycle stage in the name of an environment; for example, Contoso Dev, Contoso Test, Contoso Prod. The goal is to clearly separate environments that have the same content but different purposes.
+- A common practice is to include the lifecycle stage in the name of an environment; for example, Contoso Dev, Contoso Test, Contoso Prod. The goal is to clearly separate environments that have the same content, but different purposes.
 
 - Another common practice is to include the department or business unit in the name when the environment is dedicated to that group of users.
 
-- For example, you might decide that all environment or environment group names must follow the pattern *&lt;life cycle stage&gt;-&lt;region&gt;-&lt;business unit&gt;-&lt;purpose&gt;* (Prod-US-Finance-Payroll).
+- For example, you might decide that all environment or environment group names must follow the pattern *&lt;lifecycle stage&gt;-&lt;region&gt;-&lt;business unit&gt;-&lt;purpose&gt;* (Prod-US-Finance-Payroll).
 
 Keep names short, meaningful, and descriptive.
 
@@ -547,23 +547,23 @@ Avoid including confidential information in names. They can be visible to anyone
 
 ### Assets in the default environment
 
-Your environment strategy should encourage (or enforce) the use of personal development environments to reduce what gets created in the default environment. However, you should look at what makers have already created in the default environment and evaluate how to handle each use case. Is it appropriate to leave in the default environment, or should it be migrated to another environment?
+Your environment strategy should encourage (or enforce) the use of personal, development environments to reduce what gets created in the default environment. However, you should look at what makers have already created in the default environment and evaluate how to handle each use case. Is it appropriate to leave in the default environment, or should it be migrated to another environment?
 
 A key part of performing this hygiene effort is identifying applications that are broadly used in your organization and should have their own protected development environment that's separate from the production environment.
 
 The following table lists example use cases and migration actions. Ultimately, your organization needs to identify its own use cases and risk factors associated with leaving assets in the default environment. [Learn more about when to move assets from the default environment](/power-platform/guidance/adoption/manage-default-environment#move-applications-from-the-default-environment).
 
-| **Default environment**                                                   | **Migration action**                                                                              |
-|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Microsoft 365 personal productivity                                       | Stay in the default environment                                                                   |
-| Assets with a single maker that have been used recently but aren't shared | Move to the owner's individual developer environment                                              |
-| Assets with a single maker that have been used recently and are shared    | Move to the owner's individual developer environment and run from a shared production environment |
-| Assets with multiple makers that have been used recently and are shared   | Move to a shared developer environment and run from a shared production environment               |
-| Assets that haven't been used recently                                    | Notify the owner and move to quarantine if no response                                            |
+| **Default environment**                                                   | **Migration action**                                                                      |
+|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Microsoft 365 personal productivity                                       | Stay in the default environment.                                                             |
+| Assets with a single maker that have been used recently but aren't shared | Move to the owner's individual, developer environment.                                        |
+| Assets with a single maker that have been used recently and are shared    | Move to the owner's individual, developer environment and run from a shared production environment. |
+| Assets with multiple makers that have been used recently and are shared   | Move to a shared developer environment and run from a shared production environment.           |
+| Assets that haven't been used recently                                    | Notify the owner and move to quarantine if no response.                                    |
 
 ### Environment strategy internally at Microsoft
 
-Microsoft considers itself "customer Zero" as it internally adopts Power Platform to drive automation and efficiency among its employees. The following numbers will give you an idea of the scale of use across Microsoft internal tenant.
+Microsoft considers itself "Customer Zero" as it internally adopts Power Platform to drive automation and efficiency among its employees. The following numbers give you an idea of the scale of use across Microsoft internal tenant.
 
 - 50,000-60,000 active makers each month
 
@@ -571,23 +571,23 @@ Microsoft considers itself "customer Zero" as it internally adopts Power Platfor
 
 - Over 20,000 environments
 
-Microsoft is shifting from its prior environment strategy to one using the latest Power Platform governance features, including managed environments, environment groups and rules.
+Microsoft is shifting from its prior environment strategy to one using the latest Power Platform governance features, including Managed Environments, environment groups, and rules.
 
-As part of the enhanced strategy Microsoft plans to group together scenarios based on development type, organizational ownership and risk level. Because so much is being built across the company, it's too hard to focus on every possible scenario and to customize for each use case. There's too much happening, and it needs to be automated and utilize as many of the out of the box controls as possible.
+As part of the enhanced strategy Microsoft plans to group together scenarios based on development type, organizational ownership, and risk level. Because so much is being built across the company, it's too hard to focus on every possible scenario and to customize for each use case. There's too much happening, and it needs to be automated and utilize as many of the out-of-the-box controls, as possible.
 
-Microsoft is structuring its Power Platform environments into three broader categories that cover seven use cases, reflecting varying degrees of risk and control: Personal Productivity, Team Collaboration, and Enterprise Development.
+Microsoft is structuring its Power Platform environments into three broader categories that cover seven use cases, reflecting varying degrees of risk and control: personal -productivity, team collaboration, and enterprise development.
 
-- **Personal productivity/ individual productivity** – This is someone who just wants to build an app or flow for themselves, for example, my manager emailed me an urgent message. They aren't collaborating with others. These users are routed to personal development environments, which are locked down. These environments use the Managed Environment features, including restricting sharing and also control other things you can do in the environments. The connectors and the actions available are heavily restricted in this group of environments. These environments are the least risky. The use of locked down personal environments allows users to avoid the more rigorous compliance process just to build personal productivity apps and flows.
+- **Personal productivity** – This is for someone who just wants to build an app or flow for themselves. For example, they aren't collaborating with others. These users are routed to personal development environments, which are locked down. These environments use the Managed Environment features, including restricting sharing and also control other things you can do in the environments. The connectors and the actions available are heavily restricted in this group of environments. These environments are the least risky. The use of locked down, personal environments allows users to avoid the more rigorous compliance process just to build personal productivity apps and flows.
 
-- **Team collaboration** – This is for users who are building tooling and automation and processes for their team. For this Microsoft encourages the use of Dataverse for Teams environments. Lifecycle, access management and data labeling are controlled at the Microsoft 365 Group level so we don't have to spend the time managing these users from a Power Platform governance perspective. This level of use is the next step up in the risk spectrum.
+- **Team collaboration** – This is for users who are building tooling, automation, and processes for their team. For this scenario, Microsoft encourages the use of Dataverse for Teams environments. Lifecycle, access management, and data labeling are controlled at the Microsoft 365 group-level so we don't have to spend the time managing these users from a Power Platform governance perspective. This level of use is the next step up in the risk spectrum.
 
-- **Enterprise development/production level used by all employees** – These are people building tooling or solutions used more broadly across the company. These may store the most sensitive data, use more powerful connectors and require more governance. This is considered the highest risk and most effort is spent on governance. ALM is required, with preproduction work happening in Sandbox environments and only Managed Solutions being allowed within Production environments. These environments must be linked to ServiceTree, which enforces reoccurring security and privacy reviews. The environment group rulesets are customized based on ServiceTree metadata and signals. Many environment groups and rules are used to manage and control these environments.
+- **Enterprise development/production-level used by all employees** – These are people building tooling or solutions used more broadly across the company. These environments may store the most sensitive data, use more powerful connectors, and require more governance. This is considered the highest risk and most effort is spent on governance. ALM is required, with preproduction work happening in sandbox environments and only managed solutions are allowed within production environments. These environments must be linked to ServiceTree, which enforces reoccurring security and privacy reviews. The environment group rules are customized based on ServiceTree metadata and signals. Many environment groups and rules are used to manage and control these environments.
 
-Microsoft's governance strategy isn't static; it's fluid and changes to adapt to new challenges and incorporate new Power Platform features.
+Microsoft's governance strategy isn't static. It's fluid and changes to adapt to new challenges and incorporate new Power Platform features.
 
 ## Evolve your tenant environment strategy
 
-In this paper, we described how to establish an enterprise-scale tenant environment strategy. The strategy can grow with your business, regardless of where you're starting on the journey. Organizations of any size can benefit from the strategy we present; however, for organizations that are already at higher scale, the benefits are greater.
+In this article, we described how to establish an enterprise-scale tenant environment strategy. The strategy can grow with your business, regardless of where you're starting on the journey. Organizations of any size can benefit from the strategy we present; however, for organizations that are already at higher scale, the benefits are greater.
 
 Developing a tenant environment strategy isn't a one-time activity. It's a journey. You should evolve your strategy over time as your needs change. Your strategy must also adjust to adopt new capabilities of the platform and to address new challenges.
 
@@ -599,7 +599,7 @@ Like all journeys, different organizations join at different points along the wa
 
 Your organization is at the beginning of its journey to adopt Power Platform. This is often referred to as *greenfield*. You're starting your journey at the best place because you don't have to worry about existing environments or the impact that new policies might have on how people in your organization are using Power Platform. This is the best time to implement an enterprise-scale environment strategy that's aligned with product features and best practices.
 
-Explore the key environment features and strategies that are outlined in this paper. Take the time to understand the key themes and the considerations and decisions that you need to design and implement a tenant environment strategy that best fits your requirements.
+Explore the key environment features and strategies that are outlined in this article. Take the time to understand the key themes and the considerations and decisions that you need to design and implement a tenant environment strategy that best fits your requirements.
 
 Establishing a solid foundation now is essential to avoid having to wrangle an out-of-control situation that can occur later if you start without a defined strategy. Plan for rapid acceleration of your use of Power Platform, but avoid the temptation to over-engineer your environment strategy by adding complexity that isn't required. Remember, this is a journey, and you can continue to evolve your strategy as your needs change.
 
@@ -611,11 +611,11 @@ Explore the key environment features and strategies that are outlined in this pa
 
 The following suggestions are common incremental changes you could implement:
 
-- To start your alignment without affecting existing environments, create an environment group that contains new developer environments and establish rules for how you want to govern them. Turn on environment routing to ensure that all new developer environments are created in the designated group.
+- To start your alignment without affecting existing environments, create an environment group that contains new, developer environments and establish rules for how you want to govern them. Turn on environment routing to ensure that all new, developer environments are created in the designated group.
 
-- Evaluate your grouping strategy and if needed, create groups to support your existing environments. Establish rules on those groups that align with existing restrictions and exceptions. Move existing environments into those groups.
+- Evaluate your grouping strategy and, if needed, create groups to support your existing environments. Establish rules on those groups that align with existing restrictions and exceptions. Move existing environments into those groups.
 
-- Identify broadly popular applications that are built and used in the default environment. Use pipelines to publish them to a production environment where users in your organization can run them. Then work on migrating development of those apps to either an individual developer environment or a dedicated development environment.
+- Identify broadly popular applications that are built and used in the default environment. Use pipelines to publish them to a production environment where users in your organization can run them. Then work on migrating development of those apps to either an individual, developer environment or a dedicated,, development environment.
 
 - Create a plan to identify, quarantine, and remove assets in the default environment that aren't being used.
 
@@ -637,31 +637,31 @@ As part of developing or evolving your strategy, decide how you inform users of 
 
 - How to request custom environments for specific business units or projects
 
-- General connector usage policies and how to request more connector privileges for their environments
+- General connector usage policies, and how to request more connector privileges for their environments
 
 - How to share what they build with others
 
 - The responsibilities of a maker; for example:
 
-    - Keep the tenant clean. Delete your environments, apps, and flows if they're no longer needed. Use test environments if experimenting
+    - Keep the tenant clean. Delete your environments, apps, and flows if they're no longer needed. Use test environments if experimenting.
 
-    - Share wisely. Watch out for oversharing of your environments, apps, flows, and shared connections
+    - Share wisely. Watch out for oversharing of your environments, apps, flows, and shared connections.
 
-    - Protect organization data. Avoid moving data from highly confidential or confidential data sources to unprotected or external storage
+    - Protect organization data. Avoid moving data from highly confidential or confidential data sources to unprotected or external storage.
 
 - When your strategy changes, share how the changes affect your users so that they know what to do differently
 
-A good start is to [turn on the maker welcome content](/power-platform/admin/welcome-content) in the environment group where new makers land.
+A good start is to [turn on the maker welcome content](../../admin/welcome-content.md) in the environment group where new makers are added.
 
 ![Screenshot of the welcome content for makers in Power Platform ](media/environment-strategy/image20.png)
 
 *Figure: Use the welcome content to help new makers be successful.*
 
-Another effective approach to communicating with your users is establishing an internal Power Platform hub. The hub can be a place for people to collaborate on projects, share ideas, and discover new ways to apply technology to achieve more. The hub could be where you share more detailed information on your environment strategy that's relevant to your users. [Learn how to create an internal Power Platform hub](/power-platform/guidance/adoption/wiki-community).
+Another effective approach to communicating with your users is establishing an internal Power Platform hub. The hub can be a place for people to collaborate on projects, share ideas, and discover new ways to apply technology to achieve more. The hub could be where you share more detailed information on your environment strategy that's relevant to your users. [Learn how to create an internal Power Platform hub](../adoption/wiki-community.md).
 
 ## Conclusion 
 
-In this white paper, we explored features that are designed to help your organization manage Power Platform environments at enterprise scale and incorporate them into your tenant environment strategy.
+In this article, we explored features that are designed to help your organization manage Power Platform environments at enterprise scale and incorporate them into your tenant environment strategy.
 
 As your organization adopts Power Platform and usage accelerates, the need for environments can change rapidly. You need an agile approach that helps your environment strategy keep up with changes and continue to meet your organization's evolving governance requirements.
 
@@ -671,12 +671,12 @@ Every organization's journey to adopting Power Platform is unique. We presented 
 
 ## Resources
 
-[Environment groups - Power Platform \| Microsoft Learn](/power-platform/admin/environment-groups)
+[Environment groups](../../admin/environment-groups.md)
 
-[Environment routing - Power Platform \| Microsoft Learn](/power-platform/admin/default-environment-routing?tabs=ppac)
+[Environment routing](../../admin/default-environment-routing.md)
 
 [Power Platform security white paper](https://aka.ms/powerpnp/enterprisesecurity)
 
-[Low-code security and governance](https://powerplatform.microsoft.com/en-us/trusted-cloud/)
+[Low-code security and governance](https://powerplatform.microsoft.com/trusted-cloud/)
 
-[<u>Solution concepts in ALM</u>](/power-platform/alm/solution-concepts-alm)
+[Solution concepts in ALM](../../alm/solution-concepts-alm.md)
