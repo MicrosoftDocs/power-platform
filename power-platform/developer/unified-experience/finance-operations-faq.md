@@ -1,5 +1,5 @@
 ---
-title: "Frequently asked questions (preview)"
+title: "Frequently asked questions"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
 ms.date: 05/22/2024
@@ -9,9 +9,7 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Frequently asked questions (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Frequently asked questions
 
 This FAQ answers common questions regarding the unified developer experience for finance and operations apps.
 
@@ -161,4 +159,4 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 ### See also
 
-[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
