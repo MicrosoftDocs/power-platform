@@ -15,9 +15,9 @@ search.audienceType:
 
 # Telemetry events for mobile app synchronization and actions
 
-Power Apps Mobile application data related to Offline Sync events is available for Power Apps. This data can be used to evaluate health and performance of Offline sync for your organization. 
+Power Apps Mobile application data related to Offline Sync events is now available for Model Driven Applications and Canvas applications. This data can be used to evaluate health and performance of Offline sync for your organization. 
 
-This data goes into the Power Apps (Peview) > Mobile app synchronization and actions table in Application Insights. An entry is logged when a user accessing a mobile application Power Apps Mobile application which is enabled for Offline mode. 
+This data goes into the **Power Apps (Peview)** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accessing a mobile application Power Apps Mobile application which is enabled for Offline mode.  Additional data related to application failure events in Model Driven Applications is available via the **Power Apps (Peview)** > **UCI**
 
 
 ## Mobile app synchronization and action event definitions
@@ -29,7 +29,7 @@ This data goes into the Power Apps (Peview) > Mobile app synchronization and act
 - **success**: Result of the scenario tracked by the event (values SUCCESS or FAILURE)
 - **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive
 - **FailureType**: Defines type of sync failure
-- **ErrorCode**: Error Code generated upon sync failure. See error code mapping table.
+- **ErrorCode**: Error Code generated upon sync failure. See [error code mapping table](#Error_Code_mapping).
 - **operation_Id**: Unique identifier for the session
 - **operation_ParentId**: Unique identifier for the scenario tracked by the event
 - **user_Id**: AAD user ID
@@ -66,6 +66,28 @@ This data goes into the Power Apps (Peview) > Mobile app synchronization and act
     - **loc_country**: Telemetry Device origin
 
 
+## UCI Failure Events
+- **timestamp [UTC]**: When the event happened
+- **problemId**: "uci_trace" or "uciMonitorFailure" (where the data came from)
+- **type**: "uci_trace" or "uciMonitorFailure" (where the data came from)
+- **outType**: "uci_trace" or "uciMonitorFailure" (where the data came from)
+- **outerMessage**: Error message
+- **itemType**: "exception"
+- **CustomDimensions**: 
+  - **eventContext**: Additional details related to the error
+  - **ServerConnectivityState**: Is user in offlineMode? (Offline/Online)
+  - **NetworkConnectivityState**: Does user have internet connection (note user can be in offline but have an internet connection)
+  - **IsOfflineByDefaultApp**: When this is false it means "Work in Offline Mode" feature is on. When true it means OfflineFirst is enabled
+  - **callStack**: Where the programming code where the error occurred
+  - **hostSubType**: "PowerApps-Player-iOS-fieldservice"
+  - **hostType**: "MobileApplication"
+- **Operation_ID**: A string concatenation of sessionID followed by a '_' and External correlation ID e.g., e11e8465-bc8f-4319-b64a-9c1e42453148_0da90a33-ad68-4a4e-bd45-5728d5da719a
+- **Operation_ParentID**: ActivityID related to error
+- **SessionId**: SessionID of error
+- **UserId**: Dynamics UserID
+- **User_authenticatedID**: Dynamics UserID
+- **Application_version**: App version e.g., 9.2.24045.00212
+- **Client_Type**: OS version (i.e iOS/Android)
 
 
 # Example Scenarios
