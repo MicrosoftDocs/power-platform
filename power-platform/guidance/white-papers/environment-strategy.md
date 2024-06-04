@@ -25,9 +25,9 @@ This white paper shows you how to align your Power Platform tenant environment s
 
 Power Platform empowers organizations to build low-code solutions for rapid innovation. These solutions can focus on productivity for individuals and small teams, or apply across the organization. They can also extend to business processes, including external customers and partners. Supporting these solutions are Power Platform environments where the low-code resources are built, tested, and used. As an organization increases its adoption of Power Platform, implementing a good tenant environment strategy is essential to make it manageable and secure as the number of environments grows.
 
-To help you be more successful, this paper guides you on how best to use the features available to establish your first environment strategy or evolve your current plans. We also outline our vision for how these features are intended to work together and how they'll evolve for managing Power Platform at scale. In this guidance, we establish how to properly route new users to environments and group environments to consistently apply governance, security rules, and other important aspects of a tenant environment strategy. We also provide detailed steps to secure your default environment, which is a critical first step in implementing an environment strategy.
+To help you be more successful, this article guides you on how best to use the features available to establish your first environment strategy or evolve your current plans. We also outline our vision for how these features are intended to work together and how they'll evolve for managing Power Platform at scale. In this guidance, we establish how to properly route new users to environments and group environments to consistently apply governance, security rules, and other important aspects of a tenant environment strategy. We also provide detailed steps to secure your default environment, which is a critical first step in implementing an environment strategy.
 
-While many perspectives are available for managing Power Platform environments, the approach in this paper aligns with Microsoft's latest product direction and uses current features and near-term planned enhancements. This updated guidance can help you ensure that you use only the environment features and options that are strategic to how Microsoft intends for you to manage environments at scale.
+While many perspectives are available for managing Power Platform environments, the approach in this article aligns with Microsoft's latest product direction and uses current features and near-term planned enhancements. This updated guidance can help you ensure that you use only the environment features and options that are strategic to how Microsoft intends for you to manage environments at scale.
 
 ## Microsoft's tenant environment strategy vision
 
@@ -57,7 +57,7 @@ You should establish your environment strategy using the recommended environment
 
 - [**Managed Environments**](#managed-environments) provides a set of premium capabilities that make environments easier to manage at scale.
 
-- **[License auto-claim](#license-auto-claim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
+- **[License autoclaim](#license-autoclaim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
 
 - [**Environment groups and rules**](#environment-groups-and-rules) explains how to manage environments as groups and apply rules to groups to automate consistent governance policies.
 
@@ -79,7 +79,7 @@ The following table describes the types of environments you can create, their ch
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Default                       | The environment that comes with every tenant. Many Microsoft 365 experiences use this environment for customizations and automations. This environment is not intended for long-term or permanent work beyond the Microsoft 365 personal, productivity scenarios.             |
 | Production                    | This environment is intended to be used for permanent work in an organization. Production environments support extended, back-up retention, from seven days to up to 28 days.       |
-| Sandbox                       | These non-production environments support environment actions like copy and reset. Sandboxes are best used for testing and ALM build environments.                          |
+| Sandbox                       | These nonproduction environments support environment actions like copy and reset. Sandboxes are best used for testing and ALM build environments.                          |
 | Developer                     | These special environments are intended as makers' personal, development workspaces, which isolate low-code assets from users and other makers. Makers can have up to three developer environments. They don't count against your tenant capacity. Developer environments that haven't been used for 90 days are automatically turned off and then removed from your tenant if the owner doesn't respond to notifications. Dynamics 365 apps aren't available in developer environments. |
 | Trial                         | These environments are intended to support short-term testing and proofs of concept. They're limited to one per user. Trial environments are automatically removed from your tenant after a short period of time.   |
 | Microsoft Dataverse for Teams | These enviornments are automatically created when you create an app in Teams or install an app from the app catalog. The security model for these environments aligns with the team they're associated with.        |
@@ -91,15 +91,15 @@ As you put together an overall tenant environment strategy, the different types 
 
 Environments have a base set of features and characteristics depending on the environment type. Managed Environments expand on the base features to provide a suite of premium capabilities that allow admins to more easily manage Power Platform at scale with more control, less effort, and more insights. These capabilities are unlocked when you set an environment as managed.
 
-The following table lists the features of Managed Environments that are available, as of this writing. New features are added often, so check the [documentation](/power-platform/admin/managed-environment-overview) for the latest list. Although all the features can help you build an environment strategy, the features in italics are more relevant for the strategy that's outlined in this paper.
+The following table lists the features of Managed Environments that are available, as of this writing. New features are added often, so check the [documentation](/power-platform/admin/managed-environment-overview) for the latest list. Although all the features can help you build an environment strategy, the features in italics are more relevant for the strategy that's outlined in this article.
 
 | **More visibility** | **More control** | **Less effort** |
 |-------------------------|-------------------------|-------------------------|
 | <em>Usage insights<br /></br>Admin digest<br /></br>License reports<br /></br>Data policy view</em></br>Export data to Azure Application Insights<br /></br><em>AI-generated descriptions for all apps</em> | <em>Sharing limits</em><br /></br>Data policies for desktop flows<br /></br><em>Solution checker<br /></br>Maker welcome content<br /></br>IP firewall<br /></br>IP cookie binding</em><br /></br>Customer-managed keys<br /></br>Customer Lockbox<br /></br>Extended back-ups | <em>Easy activation<br /></br>Power Platform pipelines<br /></br>Environment routing<br /></br>Environment groups and rules</em>**<br /></br>**Power Platform Advisor |
 
-### License auto-claim
+### License autoclaim
 
-[Auto-claim policies](/power-platform/admin/auto-claim-licensing) automate the assignment of Power Apps and Power Automate licenses to users when they need one to use certain apps or features. Automation can help reduce the number of licenses consumed and avoid the overhead of manually assigning licenses.
+[Autoclaim policies](/power-platform/admin/auto-claim-licensing) automate the assignment of Power Apps and Power Automate licenses to users when they need one to use certain apps or features. Automation can help reduce the number of licenses consumed and avoid the overhead of manually assigning licenses.
 
 After a policy is configured, any user in the organization who needs an individual Power Apps license is automatically granted one under the following conditions:
 
@@ -113,7 +113,7 @@ Similarly, after a policy is configured, any user in the organization who needs 
 
 - The user requests a Power Automate premium license.
 
-We recommend configuring license auto-claim if your environment strategy includes Managed Environments. Users of apps and flows encounter the least amount of licensing friction, and you only consume licenses for users who are actively running apps or using Power Automate.
+We recommend configuring license autoclaim if your environment strategy includes Managed Environments. Users of apps and flows encounter the least amount of licensing friction, and you only consume licenses for users who are actively running apps or using Power Automate.
 
 ### Environment groups and rules
 
@@ -607,7 +607,7 @@ Establishing a solid foundation now is essential to avoid having to wrangle an o
 
 Your organization has and is executing an environment strategy that needs to be modified to align with new Power Platform features and best practices. This is often referred to as *brownfield*. Unlike organizations just starting out, you need to consider the impact on your organization of changing your environment strategy.
 
-Explore the key environment features and strategies that are outlined in this paper and evaluate what's required to evolve your strategy to be more in line. Usually all that's needed are incremental adjustments. When possible, plan the roll out of changes to minimize the impact on your users.
+Explore the key environment features and strategies that are outlined in this article and evaluate what's required to evolve your strategy to be more in line. Usually all that's needed are incremental adjustments. When possible, plan the roll out of changes to minimize the impact on your users.
 
 The following suggestions are common incremental changes you could implement:
 
@@ -671,12 +671,8 @@ Every organization's journey to adopting Power Platform is unique. We presented 
 
 ## Resources
 
-[Environment groups](../../admin/environment-groups.md)
-
-[Environment routing](../../admin/default-environment-routing.md)
-
-[Power Platform security white paper](https://aka.ms/powerpnp/enterprisesecurity)
-
-[Low-code security and governance](https://powerplatform.microsoft.com/trusted-cloud/)
-
-[Solution concepts in ALM](../../alm/solution-concepts-alm.md)
+- [Environment groups](../../admin/environment-groups.md)
+- [Environment routing](../../admin/default-environment-routing.md)
+- [Power Platform security white paper](https://aka.ms/powerpnp/enterprisesecurity)
+- [Low-code security and governance](https://powerplatform.microsoft.com/trusted-cloud/)
+- [Solution concepts in ALM](../../alm/solution-concepts-alm.md)
