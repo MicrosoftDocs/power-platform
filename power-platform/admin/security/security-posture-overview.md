@@ -21,7 +21,7 @@ search.audienceType:
 
 In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level. 
 
-##How do I get started?
+## How do I get started?
 
 To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
 Not enabling Tenant Level Analytics will cause no data to populate as shown below 
