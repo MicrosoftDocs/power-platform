@@ -14,4 +14,150 @@ search.audienceType:
 
 # Security Hub in Power Platform Admin Center
 
-Content goes here.
+                                                           Security Hub 
+Security Hub in Power Platform Admin Center is revolutionary solution for managing the security posture of your Power Platform and D365 deployments all in one place. The Security Hub is a unique and innovative experience that enables security admins to trust the platform with their most sensitive data and business processes vulnerabilities and risks, it provides strategic guidance with system provided recommendations to achieve their security and compliance goals with minimal effort and resources. 
+**What is security posture?**
+In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level. 
+
+**How do I get started?**
+To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
+Not enabling Tenant Level Analytics will cause no data to populate as shown below 
+ 
+
+To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
+ 
+
+The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”
+ 
+What is a recommendation?
+Security hub recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. The benefits are as follows
+• Adopt a proven recommendation engine which provides a generalized pattern for minting and managing recommendations. 
+Why are there more recommendation notifications than the number of environments?
+ The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, 1: many relationships. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
+In the image below, we see that there are 28 recommendations for 17 environments showing the 1: many relationships type scenario 
+ 
+
+
+Why do I see a different set of environments if I follow the recommended action vs the “Manage” workflow?
+This exists since recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, this tab contains only managed environments.  Note: This is true only for features that require Managed Environments 
+
+How is your security posture calculated?
+Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
+Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
+Formula: Total Achieved Impact / Total Possible Impact 
+•	How are feature impacts determined? 
+Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
+Feature 	Impact 
+IP Firewall 	1 x Each Environment 
+IP Cookie Bindings 	1 x Each Environment 
+Environment Security Group 	1 x Each Environment 
+Tenant DLP 	Total number of Environments 
+Tenant Isolation 	Total number of Environments 
+Tenant Lockbox 	If Enabled, Total number of Managed 
+Environments 
+ 
+Zero, If disabled. 
+Zero, If Disabled and No Managed Environments. 
+ 
+Example: 
+Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
+Feature 	Impact 	Max Impact 
+IP Firewall 	1 x Each Environment 	10 Environments x 1 or 
+10 
+IP Cookie Bindings 	1 x Each Environment 	10 Environments x 1 or 
+10 
+Environment Security Group 	1 x Each Environment 	10 Environments x 1 or 
+10 
+Tenant DLP 	Total number of Environments 	10 Environments 
+Tenant Isolation 	Total number of Environments 	10 Environments 
+Tenant Lockbox 	If Enabled, Total number of Managed 
+Environments 
+ 
+Zero, If disabled. 
+Zero, If Disabled and No Managed Environments. 	5 Environments 
+ 
+Maximum Impact: 55 
+Assume the following: 
+•	Tenant Isolation is enabled (10)
+•	At least one DLP policy is configured on the tenant (10)
+•	5 of 10 Environments have a Security Group. 
+•	2 of 10 Environments have IP Firewall. 
+•	3 of 10 Environments have IP Cookie Bindings. 
+•	Customer Lockbox is Off. 
+ 
+Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
+Given the formula Total Achieved Impact / Total Possible Impact 
+Secure Score = 30 / 55 
+ 
+ 
+  
+  
+What do I see on the Security Hub landing page?
+On the landing page you will see 
+1.	Summary Scorecard 
+2.	Feature cards 
+Summary Scorecard is the tile that showcases the speedometer that tells you where the tenant lands on their security score and shows the security recommendations to improve your overall score 
+ 
+
+Feature cards are the various tiles showcasing all the available security features we have to offer as below 
+•	Tenant Isolation (Managed and un-managed environments)
+•	Customer Lockbox ( Managed environments only)
+•	IP Firewall (Managed environments only with Dataverse)
+•	IP address-based cookie binding  ( Managed environments only with Dataverse)
+•	Data Policy (Managed and un-managed environments)
+•	Environment security Groups (Managed and un-managed environments )
+•	Auditing (Managed and un-managed environments with Dataverse)
+•	Client application access Control (Managed environments only)
+•	Environments Azure VNet (Managed environments only)
+•	Administrator privileges (Managed environments only with Dataverse)
+
+ 
+
+What components make up a security feature card?
+Each security feature tile consists of the following specifications 
+•	Description – Provides the full details of that specific security feature
+•	Impact – The overall impact it brings to the security posture 
+•	Recommended action – Steps needed to take to increase the security score 
+•	Completion status – Percentage left towards completing a recommended action
+•	Refreshed time – Timestamp as to when the recommended action was calculated
+
+What are the various security features that Security Hub has to offer?
+
+Tenant Isolation: This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to tenant isolation
+
+Customer Lockbox: This feature is applicable to only managed environments. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, refer to Customer Lockbox
+
+IP Firewall:  This feature is applicable to only managed environments with dataverse. The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For more information, refer to IP Firewall 
+
+IP address-based cookie binding: This feature is applicable to only managed environments with dataverse. It prevent session hijacking exploits in Dataverse with IP address-based cookie binding. For more information, refer to IP address-based cookie binding
+
+Data Policy: This feature is applicable at both tenant level and at environment level to both managed and un-managed environments. Setting up DLP at the environment or tenant level will act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. For more information, refer to Data Policy
+
+Environment security group: This feature is applicable to both managed and un-managed environments. Setting up security groups will help control which licensed users can access environment. To learn how to add a use to the Security group and more, refer to Environment security group
+
+How do you turn on a security feature?
+
+The system will not prompt you any recommendations unless you turn on a security feature. Here is an example where the customer lockbox feature is not enabled
+ 
+
+Click on “Manage Customer Lockbox” button to see the pop up as shown below 
+ 
+Toggle the switch to enable it and hit save 
+ 
+
+Note: Tenant Isolation and Customer Lockbox are the only two features that can be enabled using the above procedure. 
+
+How do you enable a recommendation?
+
+Recommendations can be enabled via two entry points 
+1.	By clicking on the direct link under the recommended action of that feature
+2.	By clicking on the Manage button at the bottom of the tile 
+
+Example as below:
+
+ 
+Note: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet
+
+Once steps 1 or 2 is performed, it opens another dialog box to allow you to choose all the applicable environment to which the feature can be enabled. Example below 
+ 
+
