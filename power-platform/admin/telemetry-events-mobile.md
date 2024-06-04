@@ -147,4 +147,4 @@ abc
 | 2016 |	CONFIG_ERROR |	Offline configuration error |
 | 2017 |	CONFIG_ERROR |	Offline profile configuration error |
 | 3000 |	EXPECTED_ERROR |	Sync internal event |
-3003	CONFIG_ERROR	Offline profile configuration error |
+| 3003 | CONFIG_ERROR |	Offline profile configuration error |
