@@ -263,7 +263,7 @@ Something that's missing in this proposed topology is pipelines to automate prom
 
 *Figure: The same environment topology with pipelines connecting a pipeline host environment to development, test, and production environments.*
 
-- In the revised environment topology diagram, we've added a pipeline host environment and two pipelines. One pipeline moves resources from development to test and then to production environments. The pipeline rule on the Development group will be modified to use this pipeline. The other pipeline moves resources from the shared dev environment to test and then to production. The pipeline rule on the Shared Development group will be modified to use this pipeline.
+In the revised environment topology diagram, we've added a pipeline host environment and two pipelines. One pipeline moves resources from development to test and then to production environments. The pipeline rule on the Development group will be modified to use this pipeline. The other pipeline moves resources from the shared dev environment to test and then to production. The pipeline rule on the Shared Development group will be modified to use this pipeline.
 
 This basic environment strategy provides a foundation that you can build on for other use cases, which we explore next.
 
