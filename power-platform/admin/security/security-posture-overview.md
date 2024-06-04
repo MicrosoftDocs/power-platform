@@ -64,7 +64,7 @@ In the image below, we see that there are 28 recommendations for 17 environments
 
 This exists since recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, this tab contains only managed environments.  Note: This is true only for features that require Managed Environments 
 
-**How is your security posture calculated?**
+## How is your security posture calculated?
 
 Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 
@@ -91,17 +91,12 @@ Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments)
 Maximum Impact: 55 
 Assume the following: 
 
-•	Tenant Isolation is enabled (10)
-
-•	At least one DLP policy is configured on the tenant (10)
-
-•	5 of 10 Environments have a Security Group. 
-
-•	2 of 10 Environments have IP Firewall. 
-
-•	3 of 10 Environments have IP Cookie Bindings.
-
-•	Customer Lockbox is Off. 
+- Tenant Isolation is enabled (10)
+- At least one DLP policy is configured on the tenant (10)
+- 5 of 10 Environments have a Security Group
+- 2 of 10 Environments have IP Firewall
+- 3 of 10 Environments have IP Cookie Bindings
+- Customer Lockbox is Off 
  
 Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
 
@@ -112,7 +107,7 @@ Secure Score = 30 / 55
  
   
   
-**What do I see on the Security Hub landing page?**
+## What do I see on the Security Hub landing page?**
 
 On the landing page you will see 
 1.	Summary Scorecard 
