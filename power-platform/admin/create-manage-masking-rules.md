@@ -3,7 +3,7 @@ title: "Create and manage masking rules (preview)"
 description: "Learn how to create and manage masking rules in Microsoft Power Apps."
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 5/31/2024
+ms.date: 6/4/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -16,6 +16,8 @@ search.audienceType:
 ---
 
 # Create and manage masking rules (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Data masking helps protect sensitive information during customer interactions and prevents data leaks. Data masking, also known as de-identification or obfuscation, replaces sensitive data with masked strings. The masked strings ensure that the original unmasked values remain hidden. Only authorized users can read the unmasked values—one record at a time. In the context of customer interactions, frontline support users are prevented from exposing sensitive information like credit card numbers, social security numbers, or any personal data (PII).
 
@@ -223,19 +225,3 @@ In these examples, replace `<url>`, `<tablename>`, and `<recordid>` with your ow
 - **Using the Timeline view**
 
   If you enabled a masking rule in the email description, the description of the email in the *Timeline* view is shown with unmasked values.
-
-## Preview disclaimer
-
-Preview features are features that aren't complete but are made available on a "preview" basis so customers can get early access and provide feedback. Preview features aren't supported by Microsoft Support, might have limited or restricted functionality, aren't meant for production use, and might be available only in selected geographic areas.
-
-## Copyright
-
-This document is provided "as-is". Information and views expressed in this document, including URL and other Internet web site references, might change without notice.
-
-Some examples are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
-
-This document doesn't provide you with any legal rights to any intellectual property in any Microsoft product. You might copy and use this document for your internal, reference purposes. This document is confidential and proprietary to Microsoft. Information disclosed can be used only according to a non-disclosure agreement.
-
-© 2023 Microsoft. All rights reserved.
-
-Microsoft is trademark of the Microsoft group of companies. All other trademarks are property of their respective owners.
