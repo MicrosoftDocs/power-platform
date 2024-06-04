@@ -35,12 +35,14 @@ To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/be718d7a-dc6b-43f3-aadb-486232aa2b7a)
  
 
+
 The Security Hub landing page will take **48 hours** to populate all the insights as shown below, and till then most sections on the home page will display “Not available”
 
 ![image](https://github.com/MicrosoftDocs/power-platform-pr/assets/171295423/7d1f29cd-72d6-4ae7-85f5-bc565d52e2a6)
 
  
 **What is a recommendation?**
+
 Security hub recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. The benefits are as follows
 • Adopt a proven recommendation engine which provides a generalized pattern for minting and managing recommendations. 
 
