@@ -1,4 +1,4 @@
----
+﻿---
 title: Develop a tenant environment strategy to adopt Power Platform at scale
 description: Learn how to best use the latest features of the platform to implement an environment strategy that can allow your adoption of Power Platform to reach enterprise scale.
 author: robstand
@@ -158,6 +158,8 @@ Using environment groups allows you to organize your environments in logical way
 When you're planning the rules to configure, think through what you could apply at each level of the conceptual hierarchy. Although you can't configure the group hierarchy yet, you can use a combination of naming conventions and rule configuration to implement your conceptual design. For example, given the Contoso tenant conceptualization shown earlier, the following illustration represents the environment groups the organization could use to implement its design.
 
 :::image type="content" source="media/environment-strategy/image4.png" alt-text="Example of implementing the conceptual environment groups into the actual tenant":::
+
+*Figure: Example of implementing the conceptual environment groups into the actual tenant*
 
 Later in this article, we explore more ways to use environment groups as part of a tenant environment strategy.
 
@@ -513,6 +515,8 @@ Environment groups are flexible and allow you to accommodate various use cases u
 
 :::image type="content" source="media/environment-strategy/image18.png" alt-text="A diagram showing a Finance environment group and an HR environment group with different rules":::
 
+*Figure: Environment groups for two different departments have different rules.*
+
 **Naming environments and groups**
 
 As part of your strategy, consider how environments and groups are named.
@@ -588,8 +592,6 @@ In this article, we described how to establish an enterprise-scale tenant enviro
 Developing a tenant environment strategy isn't a one-time activity. It's a journey. You should evolve your strategy over time as your needs change. Your strategy must also adjust to adopt new capabilities of the platform and to address new challenges.
 
 Like all journeys, different organizations join at different points along the way, but all have the same destination in mind. What follows are possible on-ramps that represent where your organization is today.
-
-:::image type="content" source="media/environment-strategy/image22.png" alt-text="Decorative representation of Azure landing zone journey on ramps":::
 
 ### Start
 
