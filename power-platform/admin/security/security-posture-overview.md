@@ -12,6 +12,6 @@ search.audienceType:
   - admin
 ---
 
-# Title goes here
+# Security Hub in Power Platform Admin Center
 
 Content goes here.
