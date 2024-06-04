@@ -4,7 +4,7 @@ description: Learn to use the finance and operations storage capacity report to 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/02/2024
+ms.date: 06/04/2024
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks 
@@ -19,13 +19,13 @@ The finance and operations storage capacity report shows how much finance and op
 > [!IMPORTANT]
 > This report helps you manage your storage more effectively. If you use more storage than your plan includes, please remove data you don’t need or buy more storage.
 >
-> Currently, exceeding storage entitlements does not affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+> Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 >
-> The Universal License Terms for Online Services ([link](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS)) apply to your organization’s use of the Online Service, including consumption that exceeds the Online Service’s documented entitlements or usage limits.
+> [The Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 >
->Your organization must have the right licenses for the storage you use. 
->- If you use more than your documented entitlements or usage limits, you must buy additional licenses. 
->- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the Online Service. Microsoft will provide reasonable notice before suspending your Online Service.
+> Your organization must have the right licenses for the storage you use: 
+> - If you use more than your documented entitlements or usage limits, you must buy additional licenses. 
+> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
 
 
 ## Licenses for finance and operations storage
