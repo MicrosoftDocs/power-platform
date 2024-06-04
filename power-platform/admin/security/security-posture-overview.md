@@ -160,7 +160,7 @@ Each security feature tile consists of the following specifications
 **
 **What are the various security features that Security Hub has to offer?**
 
-**Tenant Isolation:** This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to [tenant isolation](cross-tenant-restrictions.md).
+**Tenant Isolation:** This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to [tenant isolation](../cross-tenant-restrictions.md).
 
 **Customer Lockbox:** This feature is applicable to only managed environments. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, refer to Customer Lockbox
 
