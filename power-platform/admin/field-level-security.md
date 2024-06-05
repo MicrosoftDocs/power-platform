@@ -59,7 +59,7 @@ Imagine your company's policy is that sales members should have different levels
 |------------------|------------|  
 |Sales Managers|Read-only. Can only view mobile phone numbers in masked form for contacts. (**preview**)|  
 |Vice presidents|Full. Can create, update, and view mobile phone numbers for contacts.|  
-|Salespersons and all other users|None. Cannot create, update, or view mobile phone numbers for contacts.|  
+|Salespersons and all other users|None. Can't create, update, or view mobile phone numbers for contacts.|  
   
  To restrict this column, you would do the following tasks.  
   
@@ -138,7 +138,7 @@ Any users not defined in the previously created column security profiles won't h
 
 1. Select a **Data type**.
    
-   The **Lookup** and **Formula** data types can't be set with column security. For more information, see [Attributes that cannot be enabled for column security](#attributes-that-cant-be-enabled-for-column-security).
+   The **Lookup** and **Formula** data types can't be set with column security. For more information, see [Attributes that can't be enabled for column security](#attributes-that-cant-be-enabled-for-column-security).
    
 1. Expand **Advance options**, and then under **General**, select the **Enable column security** checkbox.
 
