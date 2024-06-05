@@ -1,10 +1,10 @@
 ---
-title: Recommendations for identity and access management 
-description: Learn about recommendations for authenticating and authorizing identities that may be attempting to access workload resources.
+title: Identity and access management recommendation for Power Platform workloads
+description: Learn how to manage identities that are required to or may be attempting to access workload resources.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -278,3 +278,10 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 - [What's new in Microsoft Entra ID?](/azure/active-directory/fundamentals/whats-new)
 - [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)

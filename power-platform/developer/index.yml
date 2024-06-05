@@ -74,10 +74,6 @@ landingContent:
         links:
           - text: Publish your app on AppSource
             url: appsource/publish-app.md
-      - linkListType: how-to-guide
-        links:
-          - text: Monitor your app in ISV Studio
-            url: isvstudio/index.md
 
   # Card
   - title: Tools for Developers

@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI auth command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI auth command group."
 keywords: "pac cli"
 ms.subservice: developer
-ms.author: marcsc
 author: devkeydet
-ms.date: 1/22/2024
+ms.author: marcsc
+ms.date: 5/13/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -33,6 +33,7 @@ Manage how you authenticate to various services
 |[pac auth name](#pac-auth-name)|Name or rename an existing authentication profile|
 |[pac auth select](#pac-auth-select)|Select which authentication profile should be active|
 |[pac auth update](#pac-auth-update)|Update name or target environment of an existing authentication profile|
+|[pac auth who](#pac-auth-who)|Display information about currently selected authentication profile|
 
 
 ## pac auth clear
@@ -53,6 +54,12 @@ Create and store authentication profiles on this computer
 #### `--applicationId` `-id`
 
 Optional: The application ID to authenticate with.
+
+#### `--azureDevOpsFederated` `-adof`
+
+(Preview) Use Azure DevOps Federation for Service Principal Auth; requires --tenant and --applicationId arguments
+
+This parameter requires no value. It's a switch.
 
 #### `--certificateDiskPath` `-cdp`
 
@@ -87,6 +94,12 @@ This parameter requires no value. It's a switch.
 #### `--environment` `-env`
 
 Default environment (ID, url, unique name, or partial name).
+
+#### `--githubFederated` `-ghf`
+
+(Preview) Use GitHub Federation for Service Principal Auth; requires --tenant and --applicationId arguments
+
+This parameter requires no value. It's a switch.
 
 #### `--kind` `-k`
 
@@ -222,6 +235,12 @@ Default environment (ID, url, unique name, or partial name).
 The name you want to give to this authentication profile (maximum 30 characters).
 
 [!INCLUDE [auth-update-remarks](includes/auth-update-remarks.md)]
+
+## pac auth who
+
+Display information about currently selected authentication profile
+
+[!INCLUDE [auth-who-remarks](includes/auth-who-remarks.md)]
 
 [!INCLUDE [auth-remarks](includes/auth-remarks.md)]
 

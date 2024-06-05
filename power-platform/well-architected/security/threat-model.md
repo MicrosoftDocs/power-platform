@@ -1,10 +1,10 @@
 ---
-title: Application threat analysis
-description: Use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect an application.
+title: Workload threat analysis recommendation for Power Platform workloads
+description: Learn how to use threat modeling to identify threats, attacks, vulnerabilities, and counter measures that can affect a Power Platform workload.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -129,3 +129,10 @@ This example builds on the Information Technology (IT) environment established i
 - [Content security policy](/power-platform/admin/content-security-policy)
 - [Azure DDoS Protection](/azure/ddos-protection/ddos-protection-standard-features)
 - [Microsoft Intune's compliance policy settings](/mem/intune/protect/device-compliance-get-started)
+
+## Security checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Security checklist](checklist.md)
