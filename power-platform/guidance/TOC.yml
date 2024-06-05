@@ -441,7 +441,9 @@
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
-        - name: Enterprise Security
+        - name: Develop an environment strategy
+          href: white-papers/environment-strategy.md
+        - name: Enterprise security
           href: white-papers/enterprise-security.md
         - name: Activating Managed Environments
           href: white-papers/managed-environment-activation.md
