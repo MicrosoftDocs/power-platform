@@ -37,25 +37,24 @@ We currently don't have the capability to provision or update the environment to
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
-### I can't access SQL Server using my SQL Server Management Studio client running in a OneBox environment
-
-We don't currently have a solution for secure connection to SQL Server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) is planned to provide read-only queries to a database from SQL Server Management Studio. There's also a JIT access that will allow you to access the data after providing authentication.
-
 ### I connected to the environment from Visual Studio but didn't get any pop-up to download metadata
 
-Ensure that the unified development environment you created is of type **Sandbox**. A **Trial** environment won't work.
+Ensure that the unified development environment you created is a unified development environment of type **Sandbox**. A **Trial** environment won't work.
 
 ### The Configure Metadata option doesn't appear on the menu
 
-When this option is missing from the menu, open the Infolog from the menu and retry.
+When this option is missing from the menu, open the Infolog from the menu and retry. This is addressed in application version 10.0.39 and above.
 
-### How do I download again the client assets
+### How do I re download the client assets 
 
-When you connect to the unified development environment, the tool does a few checks and doesn't initiate download if the required assets were previously downloaded. In case you need to download again, simply rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
+In Visual Studio from the **Tools** menu, select **Download Dynamics 365 FinOps assets**. 
 
 ### PackagesLocalDirectory extraction doesn't complete
 
-Use [7-Zip](https://www.7-zip.org/download.html) to extract the metadata.
+You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
+The option **Auto setup for Dynamics 365...** is enabled by default. This ensures you do not have to manually extract system metadata or create the metadata configuration. The tool will do this for you. The Visual Studio output pane will inform you of any user action needed.
+
+If you still need to, try and use [7-Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
