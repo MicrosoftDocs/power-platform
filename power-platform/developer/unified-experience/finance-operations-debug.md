@@ -26,6 +26,12 @@ Let's begin by developing a runnable X++ class to use as an example. The class's
 
 As a prerequisite, you need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
 
+> [!IMPORTANT]
+> You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
+> 
+>[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
+
 ## Create a model
 
 We start by creating a model in Visual Studio.
@@ -90,7 +96,7 @@ At this point you're accessing the endpoint in the cloud, so unless you are alre
 >
 >   5. Synchronize the database for all models without deploying anything new via **Dynamics 365** > **Synchronize database...**.
 
-You can follow the progress of the deployment by navigating  to the "FinOps Cloud Run-time" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
+You can follow the progress of the deployment by navigating  to the "FinOps Cloud Runtime" drop down in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
 
 ## Debug the deployed code
 
@@ -114,7 +120,7 @@ Let's now try that. Instead of tediously writing our own form all over again, us
 
 `https://<environment>?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup`
 
-You'll now see the form that allows you to set the colors in Dynamic's open. <!--What are you meaning here-->
+You'll now see the form that allows you to choose the colors.
 
 Now let's set a breakpoint in the form.
 
@@ -123,7 +129,8 @@ Now let's set a breakpoint in the form.
 1. Select the form, and select **View code** to open the editor with the source code for this form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.
 1. In the browser window, select one of the colored squares, let's say the red one. You'll hit the breakpoint.
-1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint is triggered again.
+1. Continue the execution by pressing F10 or F5. Another colored square is hit and the breakpoint is triggered again.
+1. You can watch the locals, set new breakpoints and do various debugging tasks. 
 
 > [!IMPORTANT]
 > If you want to attach the debugger to the running AOS process in the unified environment use **Dynamics 365** > **Launch debugger**.
@@ -136,10 +143,11 @@ Now let's set a breakpoint in the form.
 
 As a recap, here's a summary and the points to take away from this exercise.
 
-We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used, and we did'nt have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser and the breakpoints are hit.
+We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used, and we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser, execute the scenario to debug and the breakpoints will be hit.
 
 ### See also
 
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY) 
 [Unit testing in the unified developer experience](finance-operations-testing.md)   
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
