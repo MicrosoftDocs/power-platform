@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 02/06/2024
+ms.date: 06/05/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -144,7 +144,7 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 ### Can I roll back to a previous version?
 
-Currently, only higher solution versions can be deployed or imported. As a work-around, admins download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
+Yes. If the pipeline setting is enabled, you can [redeploy previous solution versions](redeploy-past-solution-versions.md) from the run history view on the Pipelines page. If the setting is disabled, only higher solution versions can be deployed or imported. As a work-around, admins can download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
 
 ### Can I set retention policies for pipelines data?
 
@@ -168,7 +168,7 @@ Navigate to an unmanaged solution in development to an environment associated wi
 
 ### Can I deploy across regions?
 
-Not currently. The host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, a pipeline can't deploy from Germany to Canada. And a host in Germany shouldn't manage environments in Canada. Instead, separate hosts should be used for Germany and Canada.
+Yes, but only if the [Cross-Geo Solution Deployments](enable-cross-geo-solution-deployments.md) setting is enabled in the host. If the setting is disabled, the host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, if the setting is disabled, a pipeline can't deploy from Germany to Canada and a host in Germany can't manage environments in Canada. In a case where the tenant administrator would like to prevent cross-geo solution deployments, separate hosts should be used for Germany and Canada.
 
 ### Can I deploy the same solution using different pipelines?
 
