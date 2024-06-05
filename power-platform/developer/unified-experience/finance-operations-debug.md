@@ -24,7 +24,11 @@ This article shows you how to:
 
 Let's begin by developing a runnable X++ class to use as an example. The class's only task is to log a message into the Infolog. The important thing here isn't what the runnable class does, rather it's how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
 
-As a prerequisite, you need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+## Prerequisites
+
+You should have access to a unified developer environment, the Visual Studio tools extensions installed and configured on your developer machine and connected to the same environment. It's important to keep the metadata changes on your developer machine deployed to the connected environment .
+More information: [Install and configure development tools](finance-operations-install-config-tools.md)
+
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
