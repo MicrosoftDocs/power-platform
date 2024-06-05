@@ -107,8 +107,8 @@ A common setup example:
 
 Yes. See [delegated deployments](delegated-deployments-setup.md).
 
-### Can I use different service principals for diffent pipelines and stages?
-Yes. 
+### Can I use different service principals for different pipelines and stages?
+Yes. More information: [Deploy with a service principal](delegated-deployments-setup.md#deploy-with-a-service-principal)
 
 ### What connections can be used?
 
