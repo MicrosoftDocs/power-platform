@@ -22,7 +22,7 @@ This article describes how to install and configure required Visual Studio finan
 - The development machine should have at least 16 GB of free space on the local system drive to download the extension and metadata.
 - The development machine running Microsoft Windows 10 or 11 must have Visual Studio 2022 installed with at least the .NET desktop development workload, the Modeling SDK and few other components.
 - This SDK and other components can be selected and installed from the individual components pane in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components).
-- Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, and you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16#start-localdb-and-connect-to-localdb).
+- Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, and you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb#start-localdb-and-connect-to-localdb).
 
 ## Install the Power Platform extension for Visual Studio
 
