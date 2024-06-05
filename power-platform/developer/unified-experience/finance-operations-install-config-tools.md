@@ -15,14 +15,14 @@ contributors:
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
 
-> [!IMPORTANT]
-> As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
->
-> The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
-> The development machine should have at least 16 GB of free space on the local system drive to download the extension and metadata.
-> The development machine running Microsoft Windows 10 or 11 must have Visual Studio 2022 installed with at least the .NET desktop development workload and the Modeling SDK.
-> This SDK can be selected under individual components in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components).
-> Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, but you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16#start-localdb-and-connect-to-localdb).
+## Prerequisites
+
+- As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
+- The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
+- The development machine should have at least 16 GB of free space on the local system drive to download the extension and metadata.
+- The development machine running Microsoft Windows 10 or 11 must have Visual Studio 2022 installed with at least the .NET desktop development workload, the Modeling SDK and few other components.
+- This SDK and other components can be selected and installed from the individual components pane in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components).
+- Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, and you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16#start-localdb-and-connect-to-localdb).
 
 ## Install the Power Platform extension for Visual Studio
 
