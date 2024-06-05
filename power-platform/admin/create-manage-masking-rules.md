@@ -58,7 +58,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
    >
    > Example**: `\d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4})| \S+@\S+\.\S+|[STFGM]\d{4}|(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})`
 
-1. Enter a **Masked Character**, for example `*`.
+1. Enter a **Masked Character**, for example `#`.
 
 1. Enter an original value in the **Enter Test Data** field, for example a social security number.
 
@@ -68,15 +68,15 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
    Your masked values might be masked like this:
 
-   | Original values                   | Masked values         |
-   |-----------------------------------|-----------------------|
-   | **SSN** `123-45-6789`             | **SSN** `###-##-6789` |
-   | **AccountNbr** `S2213801d`        | **AccountNbr** `#801d` |
-   | **MasterCard** `5512345678903456` | **MasterCard** `#`    |
-   | **Visa** `4276026445436354`       | **Visa** `#`          |
-   | **Email** `name@sample.com`       | **Email** `#`         |
+  |Regular expression | Original values                   | Masked values         |
+  | |-----------------------------------|-----------------------|
+  | \d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4}) | **SSN** `123-45-6789`             | **SSN** `###-##-6789` |
+  |[STFGM]\d{4} | **AccountNbr** `S2213801d`        | **AccountNbr** `#801d` |
+  | (?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}) | **MasterCard** `5512345678903456` | **MasterCard** `#`    |
+  | (?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}) | **Visa** `4276026445436354`       | **Visa** `#`          |
+  | \S+@\S+\.\S+ | **Email** `name@sample.com`       | **Email** `#`         |
 
-   When a customer sends you an email with sensitive data, you see the masked values only in the body of an email:
+   When a customer sends you an email with sensitive data and the email has this masking rule, you see the masked values only in the body of an email:
 
    :::image type="content" source="media/create-and-manage-masking-rules/masking-rule-applied.png" alt-text="Screensot showing the result of applying the masking rule in the body of the email.":::
 
@@ -174,12 +174,11 @@ If you have permission to **Read** unmasked fields, you see unmasked values.
 |----------------|-------------------------------------------------|
 | Grid           | Always                                          |
 | Form           | Always                                          |
-| Search results | You can search in a secured column, but results are returned with masked values. |
 | Copilot        | You can ask copilot to search in a secured column, but results are returned with masked values. |
 | Excel report   | Always                                          |
 
 > [!NOTE]
-> Audit log shows unmasked values in the before-and-after update events.
+> Audit log shows unmasked values in the before-and-after update events. Grant reading audit logs to only authorized users.
 
 ### Options for viewing masked fields
 
