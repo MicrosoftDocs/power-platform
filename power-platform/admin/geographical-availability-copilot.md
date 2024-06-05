@@ -4,7 +4,7 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2024
+ms.date: 05/15/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -52,12 +52,16 @@ The following table lists the regions involved with copilots and generative AI f
 
 ## Turn on copilots and generative AI features
 
-To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center.
+To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Microsoft 365 global administrator, Power Platform administrator, or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.
 1. Select your environment.
-1. On the **Generative AI features** card, select **Edit**.
+1. On the **Generative AI features** card, select **Edit**. 
+
+    > [!NOTE]
+    > The **Generative AI features** card isn't displayed for regions listed in [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features) where the Azure OpenAI Service is hosted in the same region.
+
 1. Review the terms of use and select the **Move data across regions** checkbox.
 
     When you use copilots and generative AI features, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table. Learn more: [Regions involved with copilots and generative AI features](#regions-involved-with-copilots-and-generative-ai-features)
@@ -83,7 +87,7 @@ More copilots and generative AI features will be available in the future.
 | Product | Feature  | Available in GCC? | Documentation
 |-------------------------|-------------------------|-------------------------|-------------------------|
 | Dynamics 365 Customer Service | Copilot | No | [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)|
-| Microsoft Copilot Studio | Generative AI in copilots | No | [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview) and [Configure data movement for Copilot Studio generative AI features outside the United States](/microsoft-copilot-studio/manage-data-movement-outside-us) |
+| Microsoft Copilot Studio | Generative AI in copilots | Yes | [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview) and [Configure data movement for Copilot Studio generative AI features outside the United States](/microsoft-copilot-studio/manage-data-movement-outside-us) |
 | Microsoft Dataverse | Excel to table for new makers | No | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Apps | Build apps through conversation | No | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
 | Power Apps | Describe a new table | No | [Describe the new table](/power-apps/maker/data-platform/create-edit-entities-portal#describe-the-new-table) |

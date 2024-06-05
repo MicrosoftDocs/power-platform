@@ -1,15 +1,15 @@
 ---
-title: Reliability tradeoffs
-description: Learn about tradeoffs that you might encounter when you design workload architectures and operations for reliability.
+title: Reliability tradeoffs for Power Platform workloads
+description: Learn about the Reliability tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
 author: robstand
 ms.author: rstand
-ms.reviewer: robstand
+ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 03/28/2024
+ms.date: 05/16/2024
 ---
 
-# Reliability tradeoffs
+# Reliability tradeoffs for Power Platform workloads
 
 A reliable workload consistently meets its defined reliability objectives. It should reach established resiliency targets, ideally by circumventing events that affect reliability. Realistically, however, a workload must tolerate and control the impact of such events and maintain operations at a predetermined level during active malfunction. Even during a disaster, a reliable workload must recover to a specific state within a given period of time, both of which are agreed upon among the stakeholders. An incident response plan that enables you to achieve rapid detection and recovery is vital.
 
@@ -58,9 +58,9 @@ During the design phase of a workload, you need to consider how decisions based 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Decreased agility**. The Experience Optimization pillar prioritizes user efficiency.
 
 - Emphasizing rigorous testing can delay the release of experience features that are essential for adoption.
+
 - Optimizing for reliability can overindex on minimizing complexity, which deprioritizes features for more engaging user experiences, such as custom components and integrations.
 
-<!--
 ## Reliability tradeoffs with Performance Efficiency
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Increased latency**. Performance Efficiency requires a system to achieve performance targets for user and data flows.
@@ -78,10 +78,10 @@ During the design phase of a workload, you need to consider how decisions based 
 - Automatic scaling operations aren't instantaneous and therefore can't reliably handle a sudden and dramatic spike in demand that can't be shaped or smoothed. Therefore, over-provisioning via either larger instances or more instances is a critical reliability tactic to account for the lag between demand signal and supply creation. Unused capacity counters the goals of performance efficiency.
 
 - Sometimes a component can't be scaled in reaction to demand, and that demand isn't fully predictable. Using large instances to cover the worst case leads to over-provisioning waste in situations that are outside that use case.
--->
 
 ## See also
 
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
 - [Experience Optimization tradeoffs](../experience-optimization/tradeoffs.md)
 - [Security tradeoffs](../security/tradeoffs.md)
+- [Performance Efficiency tradeoffs](../performance-efficiency/tradeoffs.md)
