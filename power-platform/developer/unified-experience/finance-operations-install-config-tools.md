@@ -63,7 +63,7 @@ After installing the Power Platform Tools extension for Visual Studio, follow th
 
 ## Download and install the finance and operations extension and metadata
 
-After installing the Power Platform Tools extension and connecting to the online Dataverse sandbox environment, you'll be presented with a dialog to download the finance and operations Visual Studio extension and metadata.
+After installing the Power Platform Tools extension and connecting to the unified developer environment, you'll be presented with a dialog to download the finance and operations Visual Studio extension and metadata.
 
 :::image type="content" source="../media/devexp-fno-download.png" alt-text="Extension and metadata download dialog.":::
 
@@ -106,10 +106,8 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > [!NOTE]
 > This is only required when the Visual Studio output pane indicates it is.
 
-Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
-On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
-
-`C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
+Using Windows File Explorer, from the folder `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to register the URLProtocoloHandler, setup build targets, to extract compiler files, etc. 
 
 ### Configure the finance and operations extension 
 
@@ -162,9 +160,9 @@ More information: [SQL Server Express LocalDB](/sql/database-engine/configure-wi
 > [!NOTE]
 > If the cross reference database does not already exist, the tool will restore the database from the backup downloaded to C:\Users\\`<User>`\AppData\Local\Microsoft\Dynamics365\\`<ApplicationVersion>`. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so after downloading with auto setup disabled. For instructions to do a database restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?tabs=ssms#restore-to-sql-server).
 
-#### Completeing configuration
+#### Completing configuration
 
-After the configuration is saved, you might get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
+After the configuration is created after a fresh installation of the extension, you might get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
 Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You might have to restart Visual Studio first.
 
