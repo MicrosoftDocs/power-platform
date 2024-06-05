@@ -3,7 +3,7 @@ title: "Column-level security  | MicrosoftDocs"
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/19/2024
+ms.date: 06/05/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -57,7 +57,7 @@ Imagine your company's policy is that sales members should have different levels
   
 |User or Team|Access|  
 |------------------|------------|  
-|Sales Managers|Read-only. Can only view mobile phone numbers in masked form for contacts.|  (**preview**)
+|Sales Managers|Read-only. Can only view mobile phone numbers in masked form for contacts. (**preview**)|  
 |Vice presidents|Full. Can create, update, and view mobile phone numbers for contacts.|  
 |Salespersons and all other users|None. Cannot create, update, or view mobile phone numbers for contacts.|  
   
@@ -67,7 +67,7 @@ Imagine your company's policy is that sales members should have different levels
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
-2. Select **Dataverse** > **Tables**.
+2. Select **Tables**.
 
 3. Select the **Contact** table.
 
@@ -81,11 +81,12 @@ Imagine your company's policy is that sales members should have different levels
 
    :::image type="content" source="media/field-security-mobile-phone.png" alt-text="Select the Mobile Phone column.":::
 
-6. Expand **Advanced options**, and then under **General**, enable **Enable column security**.
+6. Expand **Advanced options**, and then under **General**, select **Enable column security**.
 
    :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Expand Advanced options and enable column security.":::
 
-7. Click the drop-down of **Masking rule** and select a masking rule. (**preview**)
+7. Select the **Masking rule** drop down, and select a masking rule (**preview**).
+  
 8. Select **Save**.
 
 **Configure the security profiles**
