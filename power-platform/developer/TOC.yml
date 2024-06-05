@@ -46,6 +46,8 @@
           href: unified-experience\finance-operations-debug.md
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
+        - name: Request credentials for product database access
+          href: unified-experience\finance-operations-product-db-access.md
         - name: Continuous integration and deployment
           href: unified-experience\finance-operations-pipelines.md
         - name: Diagnose and analyze using trace parser
