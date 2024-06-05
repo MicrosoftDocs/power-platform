@@ -2,6 +2,11 @@
 {
   "redirections": [
    {
+      "source_path": "power-platform/developer/submit-catalog-items.md",
+      "redirect_url": "catalog/submit-items",
+      "redirect_document_id": "false"
+   },
+   {
       "source_path": "power-platform/important-changes-coming.md#isv-studio-is-deprecated",
       "redirect_url": "important-changes-coming#isv-studio-removed",
       "redirect_document_id": "false"
