@@ -14,7 +14,7 @@ contributors:
 ---
 # Using the catalog with Power Platform CLI (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -22,15 +22,15 @@ The catalog in Power Platform enables developers and makers to:
 - Find and install the latest and authoritative version of a component.
 - Get started with templates and components that provide immediate value.
 
-Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../admin/administer-catalog.md)
+Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../../admin/administer-catalog.md)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
 > [!IMPORTANT]
 >
 > - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../../admin/managed-environment-overview.md)
 
 ## Get started
 
@@ -39,17 +39,17 @@ Application makers and developers can submit items to the catalog so that they c
 
 ### Install Power Platform CLI
 
-Follow the steps to install Power Platform CLI: [Install Microsoft Power Platform CLI](cli/introduction.md#install-microsoft-power-platform-cli)
+Follow the steps to install Power Platform CLI: [Install Microsoft Power Platform CLI](../cli/introduction.md#install-microsoft-power-platform-cli)
 
 <!-- Use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.-->
 
 ### Get access to catalog as submitter or reader
 
-Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../admin/administer-catalog.md#edit-user-access)
+Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../../admin/administer-catalog.md#edit-user-access)
 
 ## Use the catalog
 
-After you have installed the Power Platform CLI, you must create an authentication profile using the [pac auth create](cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed, you can perform the following tasks using PAC CLI:
+After you have installed the Power Platform CLI, you must create an authentication profile using the [pac auth create](../cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed, you can perform the following tasks using PAC CLI:
 
 1. [View available catalogs in your tenant](#view-available-catalogs-in-your-tenant)
 1. [View items in the catalog](#view-items-in-the-catalog)
@@ -59,7 +59,7 @@ After you have installed the Power Platform CLI, you must create an authenticati
 
 ## View available catalogs in your tenant
 
-Use the [pac admin list](cli/reference/admin.md#pac-admin-list) command to view the catalogs available in your tenant.
+Use the [pac admin list](../cli/reference/admin.md#pac-admin-list) command to view the catalogs available in your tenant.
 
 > [!NOTE]
 > This command requires an administrator authentication profile.
@@ -74,7 +74,7 @@ pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
 
 ## View items in the catalog
 
-Use the [pac catalog list](cli/reference/catalog.md#pac-catalog-list) command to view items in the catalog.
+Use the [pac catalog list](../cli/reference/catalog.md#pac-catalog-list) command to view items in the catalog.
 
 ```powershell
 pac catalog list 
@@ -88,7 +88,7 @@ Contoso Themed Components           ContosoPublisher          ContosoThemedCompo
 
 ## Install items from the catalog
 
-Use the [pac catalog install](cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
+Use the [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
 
 ```powershell
 pac catalog install -tu https://<your org>.crm.dynamics.com/ -cid ContosoConferencesCustomConnector
@@ -105,9 +105,9 @@ To submit an item to the catalog, you need:
 - A solution or package deployer package containing the item you want to submit
 - A submission metadata JSON document
 
-Use the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission attributes](#submission-attributes)
+Use the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission attributes](#submission-attributes)
 
-After your submission metadata JSON document is ready, use the [pac catalog submit](cli/reference/catalog.md#pac-catalog-submit) command to submit it.
+After your submission metadata JSON document is ready, use the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command to submit it.
 
 ```powershell
 pac catalog submit -p "BuildDemoSubmission.json" -sz "ContosoConference_1_0_0_1_managed.zip"
@@ -119,7 +119,7 @@ Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
 
 ## Check status of catalog submissions
 
-Use the [pac catalog status](cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog submissions.
+Use the [pac catalog status](../cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog submissions.
 
 ```powershell
 pac catalog status --tracking-id 0e6b119d-80f3-ed11-8849-000d3a0a2d9d --type submit
@@ -132,7 +132,7 @@ Status of the Submit request: Submitted
 
 Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
 
-To help you, the [pac catalog create-submission](cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
+To help you, the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
 
 > [!NOTE]
 > More attributes are supported in the submission file and those are covered in the subsequent section.
