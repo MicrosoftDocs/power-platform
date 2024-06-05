@@ -141,8 +141,8 @@ To configure the extension, follow these instructions.
 |Cross reference database server| Set to `(localdb)\.` if you're using LocalDB, or `localhost` if you're using Microsoft SQL Server.|
 |Cross reference database name| The name for the cross reference database. The Visual Studio extension creates one if it doesn't exist.|
 |Application version to restore cross reference database from| Select this. It's populated from the assets downloaded when you connected to the unified developer environment.|
-|Folder for your own custom metadata| Folder where your own code is (or will be).|	|Folder for your own custom metadata| Folder where your own X++ modules are (or will be).|
-|Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|	|Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata). Also where you would add folders containing other reference modules; for example those received from ISVs.|
+|Folder for your own custom metadata| Folder where your own X++ modules are (or will be).|
+|Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata). Also where you would add folders containing other reference modules; for example those received from ISVs.|
 
 #### Troubleshooting configuration
 
