@@ -54,8 +54,7 @@ If any of the activity views in Dynamics 365 contain a description field, this c
 
 ### See also
 
-[Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage)
-
-[Dataverse storage capacity](capacity-storage.md)
+- [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage)
+- [Dataverse storage capacity](capacity-storage.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
