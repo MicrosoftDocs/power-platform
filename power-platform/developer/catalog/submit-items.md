@@ -221,7 +221,7 @@ The actual Power Platform solution. A package is what is stored in the catalog.
 
 `id` and `displayName` are mandatory. `description` and `businessCategories` are optional.
 
-Seeded business categories list of value is in the appendix. `ComponentUsedInApplication` is for future use only.
+Seeded business categories list of value is in the appendix.
 
 Here's an example of a catalog item including its `engineeringName` and `supportName` contacts that are mandatory.
 

@@ -22,7 +22,7 @@ You must include data in JSON format when you submit an item to the catalog. Thi
 |`modelVersion`|string|**Optional** Version number of the submission document. Default is 1.0.0.0.|
 |`sourcePortal`|int|**Optional** Identifies the source of this request. Defaults to `526430005` which is the PAC CLI. Full list of portals can be retried by asking the catalog for the current allowed list.|
 |`submissionId`|guid|**Optional** Guid to identify the submission. This is a foreign key to allow for linking the request to other systems.|
-|`operation`|string|**Required** Type of operation that is expected to be used, this is for future expansion and is not currently respected. Valid values are: - `CreateOrUpdate` (Default)<br /> - `Create`<br /> - `Update`<br /> - `Disabled`<br />|
+|`operation`|string|**Required** Type of operation that is expected to be used, this is for future expansion and is not currently respected. Valid values:<br /> - `CreateOrUpdate` (Default)<br /> - `Create`<br /> - `Update`<br /> - `Disabled`<br />|
 |`businessJustification`|string|**Optional** Describes the purpose of the submission to the approver.|
 |`catalogItemDefinition`|[CatalogItemDefinition](#catalogitemdefinition)|**Required** Defines the catalog item being submitted.|
 
@@ -30,11 +30,11 @@ You must include data in JSON format when you submit an item to the catalog. Thi
 
 |Property|Type|Description|
 |---------|---------|---------|
-|`id`|string|**Required** |
-|`displayName`|string|**Required for create only** |
-|`description`|string|**Optional** |
-|`offer`|[OfferDetails](#offerdetails)|**Required** |
-|`packageFile`|[CatalogFileAsset](#catalogfileasset)|**Required** |
+|`id`|guid|**Required** The unique ID of the catalog item. Use this ID when updating or installing the catalog item.|
+|`displayName`|string|**Required for create only** Name shown to consumers in the catalog galleries.|
+|`description`|string|**Optional** Decription shown to consumers in the catalog galleries.|
+|`offer`|[OfferDetails](#offerdetails)|**Required** The details fo the catalog submission.|
+|`packageFile`|[CatalogFileAsset](#catalogfileasset)|**Required** Describes where to get the catalog package file for the submission.|
 
 ## OfferDetails
 
@@ -43,7 +43,7 @@ You must include data in JSON format when you submit an item to the catalog. Thi
 |`businessCategories`|int[]|**Optional** List of choice option values respected by the target catalog. Identifies the business catagories to associate with this catalog item|
 |`type`|string|**Required** Type of catalog item. Valid values:<br />- `Application`<br />- `Component_Collection`|
 |`supportsApplicationTypes`|string[]|**Optional** List of the supported application types. Valid values:<br />- `CanvasApps`<br />- `ModelApps`<br />- `PowerPortals`<br />- `PowerAutomate`|
-|`deploymentType`|string|**Required** Indicates the type of deployment to deploy this catalog item.Valid values:<br />- `Normal` represents a **managed item**.<br />- `Template` A copy of your unmanaged solution that other makers can edit however they choose. <br /> [Learn more about catalog item types](/power-apps/maker/data-platform/catalog-overview#catalog-basics)|
+|`deploymentType`|string|**Required** Indicates the type of deployment to deploy this catalog item. Valid values:<br />- `Normal` represents a **managed item**.<br />- `Template` A copy of your unmanaged solution that other makers can edit however they choose. <br /> [Learn more about catalog item types](/power-apps/maker/data-platform/catalog-overview#catalog-basics)|
 |`searchKeywords`|string[]|**Optional** Words that people might use to find this catalog item.|
 |`small48x48Image`|[CatalogFileAsset](#catalogfileasset)|**Optional** Image for gallery view.|
 |`large216x216Image`|[CatalogFileAsset](#catalogfileasset)|**Optional** Image for detail view|
@@ -64,13 +64,35 @@ You must include data in JSON format when you submit an item to the catalog. Thi
 |Property|Type|Description|
 |---------|---------|---------|
 |`name`|string|**Required** Name of the file.|
-|`filesaslink`|uri|**Required** |
+|`filesaslink`|uri|**Required** Link to download the file. If the link requires authentication, provide a [shared access signature (SAS) URL](/azure/storage/common/storage-sas-overview). |
 
 ## Publisher
 
 |Property|Type|Description|
 |---------|---------|---------|
-|`TBD`|string|**Required** |
+|`publisherId`|string|**Required** |
+|`publisherDisplayName`|string|**Required** |
+|`publisherUpnList`|[CatalogUPNOperation](#catalogupnoperation)|**Required** |
+|`publisherAADGroupOIDS`|string|**Required** |
+
+
+## CatalogUPNOperation
+
+|Property|Type|Description|
+|---------|---------|---------|
+|`action`|string|**Required** The action to take with this UPN. Valid values: `Add` or `Remove`. |
+|`upn`|string|**Required** UPN of the user|
+|`userOid`|guid|**Required** Object Identifier for User|
+
+## CatalogGroupOperation
+
+|Property|Type|Description|
+|---------|---------|---------|
+|`action`|string|**Required** The action to take with this UPN. Valid values: `Add` or `Remove`.|
+|`groupName`|string|**Required** Name of group.|
+|`groupOid`|guid|**Required** Object identifier for group.|
+|`groupType`|string|**Required** Type of Group being addressed. Valid Values are `Security` and `Modern`.|
+
 
 ## PersonContactInformation
 
