@@ -4,7 +4,7 @@ description: Learn to use the finance and operations storage capacity report to 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/02/2024
+ms.date: 06/04/2024
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks 
@@ -17,7 +17,16 @@ search.audienceType:
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
 
 > [!IMPORTANT]
-> This report allows you to manage your storage more efficiently. If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity. There is no functional or performance impact to your service if storage consumption exceeds your entitlement.
+> This report helps you manage your storage more effectively. If you use more storage than your plan includes, please remove data you don’t need or buy more storage.
+>
+> Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+>
+> The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+>
+> Your organization must have the right licenses for the storage you use: 
+> - If you use more than your documented entitlements or usage limits, you must buy additional licenses. 
+> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
+
 
 ## Licenses for finance and operations storage
 
@@ -114,7 +123,7 @@ A more detailed report that provides log and file consumption analytics for fina
 
 ### What happens if my consumption is over the entitled limit?
 
-The runtime experience isn't affected. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity if needed.
+Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit. However, we strongly recommend that you review your database storage consumption and delete old data that you don't need to maintain. Reach out to your account team to purchase more capacity, if needed.
 
 ### How is Microsoft helping customers stay within their storage entitlement limits?
 
