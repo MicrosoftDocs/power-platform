@@ -15,6 +15,13 @@ contributors:
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
 
+
+> [!IMPORTANT]
+> You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
+> 
+>[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
+
 ## Prerequisites
 
 - As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
