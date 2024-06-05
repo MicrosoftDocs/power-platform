@@ -52,7 +52,7 @@ Find the SolutionPackager.exe executable in the \<extracted-folder-name\>/conten
 |/log: \<file path>|Optional. A path and name to a log file. If the file already exists, new logging information is appended to the file.|  
 |@ \<file path>|Optional. A path and name to a file that contains command-line arguments for the tool.|  
 |/sourceLoc: \<string>|Optional. This argument generates a template resource file, and is valid only on extract.<br /><br /> Possible values are `auto` or an LCID/ISO code for the language you want to export. When this argument is used, the string resources from the given locale are extracted as a neutral .resx file. If `auto` or just the long or short form of the switch is specified, the base locale or the solution is used. You can use the short form of the command: /src.|  
-|/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. More information: [Using RESX web resources](/dynamics365/customerengagement/on-premises/developer/resx-web-resources#using-resx-web-resources)|  
+|/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. More information: [Using RESX web resources](/power-apps/developer/model-driven-apps/resx-web-resources)|  
   
 <a name="use_command"></a>
 
