@@ -38,7 +38,7 @@ Data masking helps protect sensitive information during customer interactions an
 
 You get a predefined set of masking rules, to start, or you can create your own.
 
-1. Create a Solution: [Create a solution in Power Apps](/power-apps/maker/data-platform/create-solution).
+1. Create a solution: [Create a solution in Power Apps](/power-apps/maker/data-platform/create-solution).
 
 1. Create a new component: [Create components in a solution](/power-apps/maker/data-platform/create-solution#create-components-in-a-solution).
 
@@ -61,7 +61,7 @@ You get a predefined set of masking rules, to start, or you can create your own.
    > [!NOTE]
    > Your regular expression can have multiple masking rules separated by a pipe `|`.
    >
-   > Example**: `\d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4})| \S+@\S+\.\S+|[STFGM]\d{4}|(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})`
+   > **Example**: `\d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4})| \S+@\S+\.\S+|[STFGM]\d{4}|(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})`
 
 1. Enter a **Masked Character**, for example `#`.
 
@@ -76,10 +76,10 @@ You get a predefined set of masking rules, to start, or you can create your own.
   |Regular expression | Original values         | Masked values         |
   |---------|-----------------------------------|-----------------------|
   | `\d(?=\d{2}-\d{2}-\d{4}\|\d-\d{2}-\d{4}\|-\d{2}-\d{4}\|\d-\d{4}\|-\d{4})` | **SSN** `123-45-6789` | **SSN** `###-##-6789` |
-  |`[STFGM]\d{4}` | **AccountNbr** `S2213801d`        | **AccountNbr** `#801d` |
-  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **MasterCard** `5512345678903456` | **MasterCard** `#`    |
-  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **Visa** `4276026445436354`       | **Visa** `#`          |
-  | `\S+@\S+\.\S+` | **Email** `name@sample.com`       | **Email** `#`         |
+  |`[STFGM]\d{4}` | **AccountNbr** `S2213801d` | **AccountNbr** `#801d` |
+  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **MasterCard** `5512345678903456` | **MasterCard** `#` |
+  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **Visa** `4276026445436354` | **Visa** `#` |
+  | `\S+@\S+\.\S+` | **Email** `name@sample.com` | **Email** `#` |
 
    When a customer sends you an email with sensitive data and the email has this masking rule, you see the masked values only in the body of an email:
 
@@ -149,10 +149,12 @@ Users or Teams groups can be granted access through column security:
 
   **All records** – Users are allowed to retrieve and read multiple records with unmasked values. This setting is highly privileged. **Read unmasked** should only be allowed for backend services that require unmasked values for backend processing.
 
-- **Update**  
+- **Update**
+  
   **Allowed** - Users are allowed to update records.
 
-- **Create**  
+- **Create**
+
   **Allowed** - Users are allowed to create records.
 
 ### View all columns that have a masking rule
@@ -175,7 +177,7 @@ You can get a list of all secured columns from all tables with masking rules.
 
 If you have permission to **Read** unmasked fields, you see unmasked values.
 
-| **Field Type** | **Masked columns returned with masked values?** |
+| **Field type** | **Masked columns returned with masked values?** |
 |----------------|-------------------------------------------------|
 | Grid           | Always                                          |
 | Form           | Always                                          |
