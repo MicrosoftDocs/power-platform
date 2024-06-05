@@ -85,7 +85,7 @@ Imagine your company's policy is that sales members should have different levels
 
    :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Expand Advanced options and enable column security.":::
 
-7. Select the **Masking rule** drop down, and select a masking rule (**preview**).
+7. Select the **Masking rule** dropdown menu, and select a masking rule (**preview**).
   
 8. Select **Save**.
 
