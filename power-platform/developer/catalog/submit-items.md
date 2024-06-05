@@ -471,4 +471,4 @@ Any legal terms or internal guidance for evaluation of the consumer of the catal
 
 <!-- [Catalog in Power Platform (Preview)](catalog.md) -->
 
-[Administer the catalog (preview)](../admin/administer-catalog.md)
+[Administer the catalog (preview)](../../admin/administer-catalog.md)

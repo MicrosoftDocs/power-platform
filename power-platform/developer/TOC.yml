@@ -33,8 +33,12 @@
           href: appsource\appendix-app-certification-checklist.md
         - name: "Appendix: Add licensing information to your solution"
           href: appsource\appendix-add-license-information-to-your-solution.md
-    - name: Use Power Platform CLI with the catalog (preview)
-      href: submit-catalog-items.md
+    - name: Use the catalog for Power Platform (preview)
+      items: 
+        - name: Submit catalog items
+          href: catalog/submit-items.md
+        - name: Item submission reference
+          href: catalog/submission-reference.md
     - name: Unified developer experience for finance and operations apps (preview)
       items:
         - name: Overview
