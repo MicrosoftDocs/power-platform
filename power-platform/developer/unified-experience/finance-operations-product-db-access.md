@@ -35,6 +35,13 @@ To request credentials for database access, follow these steps:
 1. Multiple users can have an active credential each, in a given environment.
 1. A user can have a credential each in multiple environments.
 
+
+> [!IMPORTANT]
+> You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
+> 
+>[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
+
 ### See also
 
 [Write, deploy, and debug X++ code](finance-operations-debug.md)  
