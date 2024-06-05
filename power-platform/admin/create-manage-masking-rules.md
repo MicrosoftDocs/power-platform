@@ -22,6 +22,7 @@ contributors:
 Data masking helps protect sensitive information during customer interactions and prevents data leaks. Data masking, also known as de-identification or obfuscation, replaces sensitive data with masked strings. The masked strings ensure that the original unmasked values remain hidden. Only authorized users can read the unmasked values—one record at a time. In the context of customer interactions, frontline support users are prevented from exposing sensitive information like credit card numbers, social security numbers, or any personal data (PII).
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
@@ -74,11 +75,11 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
   |Regular expression | Original values         | Masked values         |
   |---------|-----------------------------------|-----------------------|
-  | \d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4}) | **SSN** `123-45-6789`             | **SSN** `###-##-6789` |
-  |[STFGM]\d{4} | **AccountNbr** `S2213801d`        | **AccountNbr** `#801d` |
-  | (?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}) | **MasterCard** `5512345678903456` | **MasterCard** `#`    |
-  | (?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}) | **Visa** `4276026445436354`       | **Visa** `#`          |
-  | \S+@\S+\.\S+ | **Email** `name@sample.com`       | **Email** `#`         |
+  | `\d(?=\d{2}-\d{2}-\d{4}\|\d-\d{2}-\d{4}\|-\d{2}-\d{4}\|\d-\d{4}\|-\d{4})` | **SSN** `123-45-6789` | **SSN** `###-##-6789` |
+  |`[STFGM]\d{4}` | **AccountNbr** `S2213801d`        | **AccountNbr** `#801d` |
+  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **MasterCard** `5512345678903456` | **MasterCard** `#`    |
+  | `(?:4[0-9]{12}(?:[0-9]{3})?\|[25][1-7][0-9]{14}\|6(?:011\|5[0-9][0-9])[0-9]{12}\|3[47][0-9]{13}\|3(?:0[0-5]\|[68][0-9])[0-9]{11}\|(?:2131\|1800\|35\d{3})\d{11})` | **Visa** `4276026445436354`       | **Visa** `#`          |
+  | `\S+@\S+\.\S+` | **Email** `name@sample.com`       | **Email** `#`         |
 
    When a customer sends you an email with sensitive data and the email has this masking rule, you see the masked values only in the body of an email:
 
