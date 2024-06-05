@@ -72,8 +72,8 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
    Your masked values might be masked like this:
 
-  |Regular expression | Original values                   | Masked values         |
-  | |-----------------------------------|-----------------------|
+  |Regular expression | Original values         | Masked values         |
+  |---------|-----------------------------------|-----------------------|
   | \d(?=\d{2}-\d{2}-\d{4}|\d-\d{2}-\d{4}|-\d{2}-\d{4}|\d-\d{4}|-\d{4}) | **SSN** `123-45-6789`             | **SSN** `###-##-6789` |
   |[STFGM]\d{4} | **AccountNbr** `S2213801d`        | **AccountNbr** `#801d` |
   | (?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11}) | **MasterCard** `5512345678903456` | **MasterCard** `#`    |
