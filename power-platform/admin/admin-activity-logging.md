@@ -3,15 +3,17 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2024
-author: Zeffin
+ms.date: 05/30/2024
+author: sericks007
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ms.contributors:
+ - modhawan1 
  - drkestel
+
 ---
 
 # View Power Platform administrative logs using auditing solutions in Microsoft Purview
@@ -74,12 +76,10 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Currency | CurrencyEnvironmentAllocate | Emitted when currency (add-on) is allocated or deallocated to an environment. |
 | Trials | TrialConvertToProduction | Emitted when a trial plan is converted to a production plan. |
 | Trials | TrialEnforce | Emitted when a customer attempts to provision environments beyond the trial limit. |
-| Trials | TrialExtend | Emitted when a trial is extended past its original expiration date. |
 | Trials | TrialProvision | Emitted when a new trial plan is provisioned. |
 | Trials | TrialSignUpEligibilityCheck | Emitted prior to trial provisioning when a check occurs to determine trial eligibility. |
-| Trials | TrialViralConsent | Emitted during trial provisioning. Includes a list of which trial plan types the customer has consented to. |
+| Trials | TrialViralConsent | Emitted when a tenant changes their consented plan types, and reflects the new state. |
 | Trials | AssignLicenseToUser | Emitted when a trial license is assigned to a user. |
-| Licensing | DeveloperPlanConsent | Emitted when a tenant admin consents to usage of developer plans. |
 | Environment Lifecycle | EnvironmentDisabledByMiser | Emitted when an environment is automatically disabled due to insufficient database capacity. |
 
 ## Activity category: Admin actions
@@ -89,6 +89,80 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | **Event** | **Description** |
 |-------------------------|-------------------------|
 | Apply Admin Role | Emitted when a tenant admin requested the System administrator role in Dataverse in the environment. |
+
+## Activity category: Lockbox operations
+
+All the lockbox activities are under the activity **LockboxRequestOperation**. Each activity event contains a payload of metadata with the following properties when the lockbox request is created or updated: <ul><li>Lockbox request ID</li><li>Lockbox request state</li><li>Lockbox support ticket ID</li><li>Lockbox request expiration time.</li><li>Lockbox data access duration</li><li>Environment ID</li><li>User who performed the operation(when the lockbox request is created)</li></ul>
+The following events are delivered to Microsoft Purview.
+
+| **Category** | **Event** | **Description** |
+|-------------------------------------------------------------|--------------|-----------------------------------------|
+| Create lockbox request | LockboxRequestOperation | Emitted when a new lockbox request is created.
+| Update Lockbox request | LockboxRequestOperation | Emitted when a lockbox request is approved or denied.
+| Lockbox request access ended | LockboxRequestOperation | Emitted when a lockbox request expired or access ended.
+
+Here's an example of the payload of metadata that can be expected from one of the events listed in the table.
+
+```
+[
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.data_access.duration",
+        "Value": "8"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.support_ticket.id",
+        "Value": "MSFT initiated"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.request.state",
+        "Value": "Created"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.request.expiration_time",
+        "Value": "6/1/2024 11:59:15 PM +00:00"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.lockbox.request.id",
+        "Value": "dfdead68-3263-4c05-9e8a-5b61ddb5878c"
+    },
+    {
+        "Name": "version",
+        "Value": "1.0"
+    },
+    {
+        "Name": "type",
+        "Value": "PowerPlatformAdministratorActivityRecord"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.name",
+        "Value": "LockboxRequestOperation"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.id",
+        "Value": "cb18351c-fa1c-4f34-a6d9-f8cb91636009"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.environment.id",
+        "Value": "ed92c80e-89ef-e0c8-a9eb-98559ca07809"
+    },
+    {
+        "Name": "enduser.id",
+        "Value": ""
+    },
+    {
+        "Name": "enduser.principal_name",
+        "Value": "Test user"
+    },
+    {
+        "Name": "enduser.role",
+        "Value": "Admin"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.id",
+        "Value": "3a568f62-11ff-4e89-bee8-4d47041b0003"
+    }
+]
+```
 
 ## View activities in Microsoft Purview
 

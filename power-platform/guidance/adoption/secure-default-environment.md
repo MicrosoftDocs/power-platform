@@ -5,7 +5,7 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 04/11/2023
+ms.date: 05/17/2024
 ms.custom: bap-template
 ms.subservice: guidance
 ---
@@ -40,33 +40,45 @@ Add links to any other internal resources your makers might find helpful.
 
 ## Limit sharing with everyone
 
-Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with other individual users, security groups, and, by default, everyone in the organization. You should consider using a gated process around widely used apps to enforce policies and requirements like these:
+Makers can [share their apps](/power-apps/maker/canvas-apps/share-app) with other individual users and security groups. By default, sharing with your entire organization, or **Everyone**, is disabled. Consider using a gated process around widely used apps to enforce policies and requirements like these:
 
 - Security review policy
 - Business review policy
 - Application Lifecycle Management (ALM) requirements
 - User experience and branding requirements
 
-Consider also disabling the **Share with Everyone** feature in Power Platform. With that restriction in place, only a small group of administrators may share an application with everyone in the environment. Here's how.
+The **Share with Everyone** feature is disabled by default in Power Platform. We recommend you keep this setting disabled to limit the overexposure of canvas apps with unintended users. The **Everyone** group for your organization contains all users who have ever logged into your tenant, which includes guests and internal members. It's not just all internal employees within your tenant. Additionally, the membership of the **Everyone** group can't be edited nor viewed. To learn more about the **Everyone** group, go to /windows-server/identity/ad-ds/manage/understand-special-identities-groups#everyone.
 
+If you would like to share with all internal employees or a large group of people, consider sharing with an existing security group of those members or creating a security group and sharing your app with that security group.
+
+When **Share with Everyone** is disabled, only a small group of administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to enable sharing with **Everyone**.
+
+1. First, open PowerShell as an administrator and log into your Power Apps account by running this command.
+
+   ```powershell
+   Add-PowerAppsAccount
+   ```
+   
 1. Run the [Get-TenantSettings cmdlet](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings?view=pa-ps-latest&preserve-view=true) to get the list of your organization's tenant settings as an object.
 
    The `powerPlatform.PowerApps` object includes three flags:
 
    :::image type="content" source="media/securedefaultenvimage2.png" alt-text="Screenshot of three flags in the $settings.powerPlatform.PowerApps object.":::
 
-1. Run the following PowerShell commands to get the settings object and set the variable to share with everyone to false.
+1. Run the following PowerShell commands to get the settings object and set the variable disableShareWithEveryone to $false.
 
    ```powershell
    $settings=Get-TenantSettings 
-   $settings.powerPlatform.powerApps.disableShareWithEveryone=$true 
+   $settings.powerPlatform.powerApps.disableShareWithEveryone=$false 
    ```
 
-1. Run the `Set-TenantSettings` cmdlet with the settings object to prevent makers from sharing their apps with everyone in the tenant.
+1. Run the `Set-TenantSettings` cmdlet with the settings object to allow makers to share their apps with everyone in the tenant.
 
    ```powershell
      Set-TenantSettings $settings
    ```
+
+   To disable sharing with **Everyone**, follow the same steps but set `$settings.powerPlatform.powerApps.disableShareWithEveryone = $true`.
 
 ## Establish a data loss prevention policy
 
@@ -87,7 +99,7 @@ Use the following PowerShell cmdlets to customize the [governance policy message
 
 ### Block new connectors in the default environment
 
-By default, all new connectors are placed in the Non-business group of your DLP policy. You can always [change the default group to either Business or Blocked](/power-platform/admin/prevent-data-loss#change-the-default-data-group). For a DLP policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
+By default, all new connectors are placed in the Nonbusiness group of your DLP policy. You can always [change the default group to either Business or Blocked](/power-platform/admin/prevent-data-loss#change-the-default-data-group). For a DLP policy that is applied to the default environment, we recommend that you configure the Blocked group as the default to make sure that new connectors remain unusable until they have been reviewed by one of your administrators.
 
 ### Limit makers to prebuilt connectors
 
@@ -95,7 +107,7 @@ Restrict makers to only basic, nonblockable connectors to prevent access to the 
 
 1. Move all the connectors that can't be blocked to the business data group.
 
-1. Move all the blockable connectors to the blocked data group.
+1. Move all the connectors that can be blocked to the blocked data group.
 
 ### Limit custom connectors
 

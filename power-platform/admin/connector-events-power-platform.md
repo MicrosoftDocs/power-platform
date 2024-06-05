@@ -10,7 +10,7 @@ tags: ''
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/28/2023
+ms.date: 05/30/2024
 ms.subservice: admin
 ms.author: sameerch
 ms.reviewer: angieandrews
@@ -73,6 +73,7 @@ The following table lists the connector events available for searching in the au
 |Gateway cluster edited    | When a gateway cluster is updated        |
 |Gateway permission added or edited    | When a gateway is shared or the sharing permissions are updated      |
 |Gateway permission removed   | When sharing permissions of a gateway are removed        |
+|Added ConnectionDlpEvaluationResult |	When connection is turned off due to data policies |
 
 ## Get details on activities for logging
 
