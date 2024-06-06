@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/30/2024
+ms.date: 06/06/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -165,17 +165,17 @@ Here's an example of the payload of metadata that can be expected from one of th
 ```
 
 ## Activity category: DLP events
-All the DLP events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
-The following DLP events are delivered to the Microsoft Purview.
+All the data loss prevention (DLP) events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
+The following DLP events are delivered to Microsoft Purview.
 
 | **Category** | **Description** |
 |-------------------------------------------------------------|-----------------------------------------|
 | Create DLP Policy | Emitted when a new DLP policy is created.
-| Update DLP Policy | Emitted when a DLP policy is updated
+| Update DLP Policy | Emitted when a DLP policy is updated.
 | Delete DLP Policy | Emitted when a DLP policy is deleted.
-| Create Custom Connector Patterns | Emitted when a new custom connector url pattern is created.
-| Update Custom Connector Patterns | Emitted when a custom connector url pattern is updated.
-| Delete Custom Connector Patterns | Emitted when a custom connector url pattern is deleted.
+| Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.
+| Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.
+| Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.
 | Create Connector Configurations | Emitted when a connector configuration is created for the DLP Policy.
 | Update Connector Configurations | Emitted when a connector configuration is updated for the DLP Policy.
 | Delete Connector Configurations | Emitted when a connector configuration is deleted for the DLP Policy.
@@ -189,7 +189,7 @@ The following DLP events are delivered to the Microsoft Purview.
 | Update connector blocking policy | Emitted when connector blocking policy is updated.
 | Delete connector blocking policy | Emitted when connector blocking policy is deleted.
 
-Here's an example payload of metadata that can be expected from one of the events in the table
+Here's an example payload of metadata that can be expected from one of the events in the table.
 
 ```
 [
@@ -252,6 +252,7 @@ Here's an example payload of metadata that can be expected from one of the event
 ]
 
 ```
+
 ## View activities in Microsoft Purview
 
 When audit log search is turned on in the Microsoft Purview compliance portal, admin activity from your organization is recorded in the Microsoft Purview audit log.
