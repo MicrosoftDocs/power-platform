@@ -58,28 +58,17 @@ Be sure to check out the latest known limitations available in the overview arti
 ### Create an environment
 
 > [!Important]
-> This is only available for **Subscription-based trial** environment types. The list of environment types supported will expand over time.
+> New environment creation for sandbox and production environments with finance and operations apps are not available through the UI at this time but will be added in a future release.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane. The **Environments** page is displayed.
-1. Select **New**. The **New environment** pane is displayed.
-
-    :::image type="content" source="media/tutorial-new-environment1.png" alt-text="Click the New button to create a new environment.":::
-
-1. Enter a name for the environment. Environment names don't need to be unique in Power Platform, unlike in Lifecycle Services.
-1. Choose your Provisionment region.
-1. From the **Type** list, select **Subscription-based Trial**.
-1. Enable the Dataverse data store option, and select **Next**.
-1. On the next screen, enter the Dataverse-required fields.
-1. Select **Enable Dynamics 365 apps** and choose the appropriate template for your license.
-
-    :::image type="content" source="media/new-environment-template.png" alt-text="Enable the Dynamics 365 apps and select the appropriate template for your license.":::
+If you wish to create a new environment with finance and operations apps pre-installed you can use the PowerShell tab to complete this task in a single action.  Otherwise, if you require to use the UI you can follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
 # [PowerShell](#tab/PowerShell)
 
 ### Create an environment
 
 Load up your PowerShell console and execute the following commands to generate the environment. Note the variables so that you can change the input values as required. If you wish to use a service principal, follow the instructions at [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+
+In the script below, the parameter **DevToolsEnabled** determines if your sandbox get provisioned with support for X++ development or it becomes traditional sandbox for user acceptance testing and training purposes.  By setting this value to true you can do development, and by setting it to false or ommitting it you receive a traditional sandbox environment with finance and operations apps installed.
 
 ```powershell
 #Install the module
