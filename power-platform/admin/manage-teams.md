@@ -56,6 +56,8 @@ A list of all of the teams in the environment is displayed.
    - **Description:** Enter a description of the team.
    - **Business unit:** Select the business unit from the dropdown list.
    - **Administrator:** Search for users in the organization. Start entering characters.
+   > [!NOTE]
+   > The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [AddMembersTeam](/power-apps/developer/data-platform/webapi/reference/addmembersteam)   API for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
 
      
    - **Team type:** Select the team type from the dropdown list.
