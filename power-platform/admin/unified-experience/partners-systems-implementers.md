@@ -57,24 +57,24 @@ As part of the transition, partners and customers can get similar end results th
 #### Process changes
 
 1. Environment creation
-- **LCS**: Environments are deployed through LCS and are equal to exactly one app: Finance and operations.
-- **Power Platform admin center**: Environments are created using templates that contain Dataverse as a baseline with many Dynamics 365 apps and low-code apps included. Every environment can contain more than one kind of app.
+    - **LCS**: Environments are deployed through LCS and are equal to exactly one app: Finance and operations.
+    - **Power Platform admin center**: Environments are created using templates that contain Dataverse as a baseline with many Dynamics 365 apps and low-code apps included. Every environment can contain more than one kind of app.
 
 2. Customization deployment
-- **LCS**: Software deployable packages are built and then uploaded to the asset library. From there, they can be installed in to a sandbox, and then later a snapshot of sandbox, is promoted to become the compute for production environments. There's no automation for the production deployment, it must be done in the LCS user interface.
-- **Power Platform admin center**: Unified packages are created using Power Platform CLI or Azure DevOps tasks that contain both Dataverse solutions and X++ modules. These remain hosted offline in source control as a build artifact or on your local storage. They're installed using CLI or Azure DevOps tasks in to any target, be it a sandbox or production environment. Full automation is possible using service principal authentication.
+    - **LCS**: Software deployable packages are built and then uploaded to the asset library. From there, they can be installed in to a sandbox, and then later a snapshot of sandbox, is promoted to become the compute for production environments. There's no automation for the production deployment, it must be done in the LCS user interface.
+    - **Power Platform admin center**: Unified packages are created using Power Platform CLI or Azure DevOps tasks that contain both Dataverse solutions and X++ modules. These remain hosted offline in source control as a build artifact or on your local storage. They're installed using CLI or Azure DevOps tasks in to any target, be it a sandbox or production environment. Full automation is possible using service principal authentication.
 
 3. User management
-- **LCS**: Project users can manage data in LCS and manage environment lifecycle. To add users to a finance and operations apps environment, it must be done inside of the environment itself.
-- **Power Platform admin center**: Service-level admins and environment admins can manage resources in PPAC. They can also add or remove users from Power Platform admin center directly without needing to access the environment's Dataverse instance or apps.
+    - **LCS**: Project users can manage data in LCS and manage environment lifecycle. To add users to a finance and operations apps environment, it must be done inside of the environment itself.
+    - **Power Platform admin center**: Service-level admins and environment admins can manage resources in PPAC. They can also add or remove users from Power Platform admin center directly without needing to access the environment's Dataverse instance or apps.
 
 4. Monitoring environment health
-- **LCS**: You can use monitoring tools, were available, for each sandbox and production environment. Features such as compute load, slow loading forms, and database deadlocks were available with a 15-minute delay or longer.
-- **Power Platform admin center**: Application Insights is the preferred tool for application health and proactive monitoring. This is available in near-real time.
+    - **LCS**: You can use monitoring tools, were available, for each sandbox and production environment. Features such as compute load, slow loading forms, and database deadlocks were available with a 15-minute delay or longer.
+    - **Power Platform admin center**: Application Insights is the preferred tool for application health and proactive monitoring. This is available in near-real time.
 
 5. Support
-- **LCS**: Support requests were created from LCS from within a specific project. You could only create tickets for environments in that particular project.
-- **Power Platform admin center**: Support tickets are created from the admin center for any environment in the tenant that you have access to manage. 
+    - **LCS**: Support requests were created from LCS from within a specific project. You could only create tickets for environments in that particular project.
+    - **Power Platform admin center**: Support tickets are created from the admin center for any environment in the tenant that you have access to manage. 
 
 ### Granular delegated admin privileges
 Granular Delegated Admin Privileges (GDAP) provide partners with more precise control over the administrative privileges they have when managing their customers' environments. Unlike traditional Delegated Admin Privileges (DAP), which offer broad access, GDAP allows for more specific permissions, enhancing security and compliance.
