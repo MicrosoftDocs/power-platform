@@ -28,7 +28,7 @@ The Power Platform admin center is designed to provide a unified, streamlined ex
 
 **User and role management**
 - Assign and manage user roles and permissions across different environments.
-- All users with the System Administrator role in Dataverse get the same role in finance and operations apps experiences. (This experince is is planned for a future release.))
+- All users with the System Administrator role in Dataverse get the same role in finance and operations apps experiences. (This experience is is planned for a future release.)
 
 **License and capacity reporting**
 - Review capacity consumption across various categories such as Dataverse database and Operations database.
