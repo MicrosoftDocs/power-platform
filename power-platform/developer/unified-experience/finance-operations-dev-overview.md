@@ -53,7 +53,7 @@ Set up Visual Studio on your local development computer.
 [Install and configure development tools](finance-operations-install-config-tools.md)  
 [Write, deploy, and debug X++ code](finance-operations-debug.md)  
 [Frequently asked questions](finance-operations-faq.md)  
-[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template-preview)  
+[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md)  
 [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)  
 [Unified admin experience for finance and operations apps](../../admin/unified-experience/finance-operations-apps-overview.md)
 
