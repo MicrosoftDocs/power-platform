@@ -164,6 +164,94 @@ Here's an example of the payload of metadata that can be expected from one of th
 ]
 ```
 
+## Activity category: Dlp events
+All the Dlp events will show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
+The following Dlp events are delivered to the Microsoft Purview.
+
+| **Category** | **Description** |
+|-------------------------------------------------------------|-----------------------------------------|
+| Create Dlp Policy | Emitted when a new Dlp policy is created.
+| Update Dlp Policy | Emitted when a Dlp policy is updated
+| Delete Dlp Policy | Emitted when a Dlp policy is deleted.
+| Create Custom Connector Patterns | Emitted when a new custom connector url pattern is created.
+| Update Custom Connector Patterns | Emitted when a custom connector url pattern is updated.
+| Delete Custom Connector Patterns | Emitted when a custom connector url pattern is deleted.
+| Create Connector Configurations | Emitted when a connector configuration is created for the Dlp Policy.
+| Update Connector Configurations | Emitted when a connector configuration is updated for the Dlp Policy.
+| Delete Connector Configurations | Emitted when a connector configuration is deleted for the Dlp Policy.
+| Create Policy Scope | Emitted when a new policy scope is created.
+| Update Policy Scope | Emitted when a policy scope is updated.
+| Delete Policy Scope | Emitted when a policy scope is deleted.
+| Create Exempt Resources | Emitted when an exempt resources list is created for the Dlp Policy.
+| Update Exempt Resources | Emitted when an exempt resources list is updated for the Dlp Policy.
+| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the Dlp Policy.
+| Create connector blocking policy | Emitted when a new connector blocking policy is created.
+| Update connector blocking policy | Emitted when connector blocking policy is updated.
+| Delete connector blocking policy | Emitted when connector blocking policy is deleted.
+
+Here is an example payload of metadata that can be expected from one of the events in the table
+
+```
+[
+    {
+        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.additional_resources",
+        "Value": "<<json>>"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.display_name",
+        "Value": "ConnectorBlockingPolicy"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.operation_result",
+        "Value": "True"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.id",
+        "Value": "ConnectorBlockingPolicy"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.type",
+        "Value": "ApiPolicy"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.operation_name",
+        "Value": "DeleteDlpPolicy"
+    },
+    {
+        "Name": "version",
+        "Value": "1.0"
+    },
+    {
+        "Name": "type",
+        "Value": "PowerPlatformAdministratorActivityRecord"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.name",
+        "Value": "GovernanceApiPolicyOperation"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.id",
+        "Value": "99ac5d50-a0f4-4878-8ff4-e02b7da3a510"
+    },
+    {
+        "Name": "enduser.id",
+        "Value": "888c1bf5-3127-4c8c-84ee-b6a9c684e315"
+    },
+    {
+        "Name": "enduser.principal_name",
+        "Value": admin@contosotest.onmicrosoft.com
+    },
+    {
+        "Name": "enduser.role",
+        "Value": "Admin"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.id",
+        "Value": "ce65293a-e07d-4638-9dfa-79483fcd5136"
+    }
+]
+
+```
 ## View activities in Microsoft Purview
 
 When audit log search is turned on in the Microsoft Purview compliance portal, admin activity from your organization is recorded in the Microsoft Purview audit log.
