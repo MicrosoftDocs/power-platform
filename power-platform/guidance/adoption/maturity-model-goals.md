@@ -62,7 +62,7 @@ Environments are used as needed. For example, various production environments an
    :::column-end:::
    :::column span="":::
        :::image type="content" source="media/adoption-5.png" alt-text="Screenshot that shows where you can establish DLP policies.":::
-       [Establish DLP policies](dlp-strategy.md) in the default environment. Mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-editor-v2) first.
+       [Establish DLP policies](dlp-strategy.md) in the default environment. Mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-impact-analysis) first.
   :::column-end:::
   :::column span="":::
       :::image type="content" source="media/adoption-6.png" alt-text="Screenshot that shows where to send a welcome email to new makers.":::
