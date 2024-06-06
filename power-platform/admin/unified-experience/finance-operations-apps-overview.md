@@ -20,19 +20,19 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, [watch this video](https://www.youtube.com/embed/HmJIuHhx3Hg) on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community)
+To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecyle Servcies (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 
-Finance and operations apps will now have the same behavior as other Dynamics 365 apps have had within Power Platform admin center.  The apps will be available to licensed customers both during new environment creation as well as installed in to an existing environment.  
+Finance and operations now has the same behavior as other Dynamics 365 apps have had within Power Platform admin center. The apps are available to licensed customers both during new environment creation, as well as installed in to an existing environment.  
 
 You can deploy the finance and operations apps within the Power Platform admin center in one of the following ways:
 
 ### Option A: Create a new environment through templates
 
-A template is simply a bundle of Microsoft published applications that are pre-installed on a Dataverse-based Power Platform environment.  This is a means of increasing productivity as you can deploy an environment with a known configuration of apps quickly without having to install each one in the proper sequence manually.  When using a template, you will always get the very latest version of each of those applications available as of that moment.
+A template is simply a bundle of Microsoft published applications that are pre-installed on a Dataverse-based Power Platform environment. This is a means of increasing productivity as you can deploy an environment with a known configuration of apps quickly without having to install each one in the proper sequence manually. When using a template, you always get the very latest version of each of those applications available as of that moment.
 
-When creating a new environment in the Power Platform admin center, you can add a Dataverse data store and choose to **Enable Dynamics 365 apps**. Then you will be presented with a list of environment templates that becomes available under **Automatically deploy these apps**.   
+When creating a new environment in Power Platform admin center, you can add a Dataverse data store and choose to **Enable Dynamics 365 apps**. Then you see a list of environment templates that becomes available under **Automatically deploy these apps**.   
 
 :::image type="content" source="media/new-environment-template.png" alt-text="Environment templates":::
 
@@ -40,13 +40,13 @@ This list is dynamic, so you only see references to **Finance**, **Supply Chain 
 
 ### Option B: Install the provisioning app on an existing environment
 
-If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that will require complex integration. The environment you use must support Dynamics 365 apps.   As part of the install process, you will be able to pick any of the supported versions of the finance and operations apps, which is helpful if you want to get a version that is not the latest generally available version.
+If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that requires a complex integration. The environment you use must support Dynamics 365 apps. As part of the install process, you can pick any of the supported versions of the finance and operations apps, which is helpful if you want to get a version that is not the latest generally available version.
 
 :::image type="content" source="media/install-provisioning-app.png" alt-text="Install provisioning app":::
 
 For step-by-step instructions, see [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
-With either option, your environment will have two runtime URLs:
+With either option, your environment has two runtime URLs:
 
 - One for customer engagement apps (**Environment URL**)
 - One for finance and operations apps (**Finance and Operations URL**)
