@@ -2,7 +2,7 @@
 title: "Execute unit tests in Azure Pipelines"
 description: Learn how to set up a unit test for execution using Azure Pipelines.
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 05/10/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -10,6 +10,8 @@ ms.subservice: developer
 ---
 
 # Execute unit tests in Azure Pipelines
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 An Azure Pipeline build task is available that lets users execute unit tests on connected cloud runtime environments using a continuous integration/continuous delivery (CI/CD) pipeline. The "Execute Unit Tests in Unified Environment" task is included in the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension.
 
@@ -39,7 +41,6 @@ The output logs of the task contains information of each test executed and its o
 ### Creating the unit test task
 
 > [!IMPORTANT]
->
 > - A new version (1.*) of the task has been released. See [Update: Version 1](#update-version-1) for more information.
 
 In this next image is an example unit test being defined. A description of each form field follows.
@@ -60,7 +61,7 @@ In this next image is an example unit test being defined. A description of each 
 
 A new version (1.*) of the **Execute Unit Tests in Unified Environments** task is available. This version replaces the **Service Connection** authentication field. Now you can use multiple authentication mechanisms, like username/password and appId/client Secret to execute the test requests.  
 
-You can use the existing **Power Platform Set Connection Variables** task to generate the connection string in the same pipeline before using the unit test execution task. [Learn more about the details for this task](../../alm/devops-build-tool-tasks.md#power-platform-set-connection-variables) and [about connection types](../../alm/devops-build-tools.md#connection-to-environments).  You can retrieve the connection string and use it in subsequent tasks by creating a reference name in the **Output Variables** section for classic pipelines.
+You can use the existing **Power Platform Set Connection Variables** task to generate the connection string in the same pipeline before using the unit test execution task. [Learn more about the details for this task](../../alm/devops-build-tool-tasks.md#power-platform-set-connection-variables) and [about connection types](../../alm/devops-build-tools.md#connection-to-environments).  You can retrieve the connection string and use it in subsequent tasks by creating a reference name in the **Output Variables** section for classic pipelines. 
 
 The following image shows how to use the task to generate an output variable named `op` that is referenced in the subsequent unit test execution task:
 
@@ -83,6 +84,7 @@ task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-connection-variables.Po
 The following screenshot shows the same reference name used in a unit test task:
 
 :::image type="content" source="..\media\unified-experience\devexp-unitTest-task-1.png" alt-text="Version 1 of Unit test task.":::
+
 
 ### See also
 
