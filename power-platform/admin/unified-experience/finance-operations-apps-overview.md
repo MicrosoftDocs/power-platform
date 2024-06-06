@@ -98,13 +98,9 @@ These continually updated scenario tutorials give a walkthrough for administrato
 
 ### Known limitations
 
-As part of the preview, there are a few limitations soon to be removed, so check back often to determine their resolution.
-
 - The environment name can't exceed 20 characters—a limitation on the finance and operations runtime.
 
 ### Frequently asked questions
-
-We continue to publish common questions and resolve open items before making the experience generally available (GA).
 
 #### I don't know what licenses I have assigned
 
