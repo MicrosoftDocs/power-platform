@@ -69,7 +69,6 @@ Limitations for an installation of the provisioning app:
 7. Agree to the terms and conditions and select the **Install** button to start the installation. Wait for the installation to finish&mdash;the **Status** column switchs from **Installing** to **Installed**&mdash;before proceeding to the next step.
 8. Select **Install app**.
 9. Select the **Dynamics 365 Finance and Operations Provisioning app**. This application provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads. You may see multiple entries of the same application if you have more than one license that provides access to it. Select any option with a status of **Configured** and select **Next**.
-   :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
 10. Select **OK** to go to the installation configuration page for the provisioning app.
     :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
 
