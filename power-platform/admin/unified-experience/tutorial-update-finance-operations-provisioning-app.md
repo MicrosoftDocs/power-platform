@@ -31,7 +31,7 @@ For example, a customer reads that a new service update is available and wants t
 4. Select **Dynamics 365 apps** in the **Resources** card on the environment's details page.
 5. Select the checkmark next to **Dynamics 365 Finance and Operations Provisioning App**. Then select the **More applications actions** icon (**...**) and select **Manage**.
 
-   > [Note]
+   > [!Note]
    > If the **Manage** button isn't available, then you're running the latest version and no update is available.
    
 6. A window appears stating that a new **Manage Dynamics 365 Finance and Operations Provisioning app** page will open. Select **OK**.
