@@ -2,7 +2,7 @@
 title: "Continuous integration and deployment"
 description: Learn how to set up continuous integration and deployment using Azure Pipelines.
 author: pvillads
-ms.date: 08/31/2023
+ms.date: 06/06/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -41,7 +41,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
     :::image type="content" source="../media/unified-experience/pipelines-add-licenses.png" alt-text="Image of Add Licenses to Deployable Package in Azure DevOps.":::
 
-1.  Once the pipeline is built, locate the published artifacts under **Related** in the **Summary** tab.
+1. Once the pipeline is built, locate the published artifacts under **Related** in the **Summary** tab.
 
     :::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of solution artifacts in Azure DevOps.":::
 
