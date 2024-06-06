@@ -34,7 +34,7 @@ For example, a customer reads that a new service update is available and wants t
    > [Note]
    > If the **Manage** button isn't available, then you're running the latest version and no update is available.
    
-6. A window appears stating that a new admin page will appear. Select **OK**.
+6. A window appears stating that a new **Manage Dynamics 365 Finance and Operations Provisioning app** page will open. Select **OK**.
 
     :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
    
@@ -44,7 +44,7 @@ For example, a customer reads that a new service update is available and wants t
 
 8. Agree to the terms and conditions, and then select **Install** to start the update.
 
-  When the update is triggered, it takes roughly an hour for the operation to complete. During the update, Finance and Operations Provisioning app appears in **Installing** status until the update is completes.
+  When the update is triggered, it takes roughly an hour for the operation to complete. During the update, Finance and Operations Provisioning app appears in **Installing** status until the update is complete.
 
 ## Application versions
 
