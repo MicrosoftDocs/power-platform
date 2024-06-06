@@ -11,20 +11,25 @@ contributors:
  - Pankaj-Thakur
 ---
 
-# Install and configure development tools (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Install and configure development tools
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
 
+
 > [!IMPORTANT]
-> As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
->
-> The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
-> The development machine should have at least 16 GB of free space on the local system drive to download the extension and metadata.
-> The development machine running Microsoft Windows 10 or 11 must have Visual Studio 2022 installed with at least the .NET desktop development workload and the Modeling SDK.
-> This SDK can be selected under individual components in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components).
-> Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, but you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16#start-localdb-and-connect-to-localdb).
+> You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
+> 
+>[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
+
+## Prerequisites
+
+- As a prerequisite, you need access to a [provisioned developer-focused sandbox environment](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
+- The user account you'll be using for development in the sandbox environment must be assigned the System Administrator role.
+- The development machine should have at least 16 GB of free space on the local system drive to download the extension and metadata.
+- The development machine running Microsoft Windows 10 or 11 must have Visual Studio 2022 installed with at least the .NET desktop development workload, the Modeling SDK and few other components.
+- This SDK and other components can be selected and installed from the individual components pane in the Visual Studio installer. Refer to [required Visual Studio components](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-tools-vs2017#required-visual-studio-components).
+- Microsoft SQL Server Express LocalDB is installed by default with Visual Studio 2022, and you should [validate that you can connect to it with windows authentication](/sql/database-engine/configure-windows/sql-server-express-localdb#start-localdb-and-connect-to-localdb).
 
 ## Install the Power Platform extension for Visual Studio
 
@@ -65,7 +70,7 @@ After installing the Power Platform Tools extension for Visual Studio, follow th
 
 ## Download and install the finance and operations extension and metadata
 
-After installing the Power Platform Tools extension and connecting to the online Dataverse sandbox environment, you'll be presented with a dialog to download the finance and operations Visual Studio extension and metadata.
+After installing the Power Platform Tools extension and connecting to the unified developer environment, you'll be presented with a dialog to download the finance and operations Visual Studio extension and metadata.
 
 :::image type="content" source="../media/devexp-fno-download.png" alt-text="Extension and metadata download dialog.":::
 
@@ -108,10 +113,8 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > [!NOTE]
 > This is only required when the Visual Studio output pane indicates it is.
 
-Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
-On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
-
-`C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
+Using Windows File Explorer, from the folder `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to register the URLProtocoloHandler, setup build targets, to extract compiler files, etc. 
 
 ### Configure the finance and operations extension 
 
@@ -145,8 +148,8 @@ To configure the extension, follow these instructions.
 |Cross reference database server| Set to `(localdb)\.` if you're using LocalDB, or `localhost` if you're using Microsoft SQL Server.|
 |Cross reference database name| The name for the cross reference database. The Visual Studio extension creates one if it doesn't exist.|
 |Application version to restore cross reference database from| Select this. It's populated from the assets downloaded when you connected to the unified developer environment.|
-|Folder for your own custom metadata| Folder where your own code is (or will be).|
-|Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata).|
+|Folder for your own custom metadata| Folder where your own X++ modules are (or will be).|
+|Folders for reference metadata| Should contain at least the path where you have the extracted the PackagesLocalDirectory folder mentioned in [Extract system metadata](#extract-system-metadata). Also where you would add folders containing other reference modules; for example those received from ISVs.|
 
 #### Troubleshooting configuration
 
@@ -164,9 +167,9 @@ More information: [SQL Server Express LocalDB](/sql/database-engine/configure-wi
 > [!NOTE]
 > If the cross reference database does not already exist, the tool will restore the database from the backup downloaded to C:\Users\\`<User>`\AppData\Local\Microsoft\Dynamics365\\`<ApplicationVersion>`. You'll see notifications in the Visual Studio **Output** pane. If you need to restore it again by yourself you can do so after downloading with auto setup disabled. For instructions to do a database restore refer to [Restore to SQL Server](/sql/samples/adventureworks-install-configure?tabs=ssms#restore-to-sql-server).
 
-#### Completeing configuration
+#### Completing configuration
 
-After the configuration is saved, you might get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
+After the configuration is created after a fresh installation of the extension, you might get a prompt for elevation as administrator to register the protocol handler and to extract compiler files. Go ahead and accept these prompts.
 
 Once the configuration completes, navigate to **View** > **Application Explorer** . You should see the **Application Explorer** window open. You might have to restart Visual Studio first.
 
@@ -187,6 +190,6 @@ Start writing code, deploy, and debug.
 
 ### See also
 
-[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]

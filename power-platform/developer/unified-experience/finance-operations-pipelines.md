@@ -1,5 +1,5 @@
 ---
-title: "Continuous integration and deployment (preview)"
+title: "Continuous integration and deployment"
 description: Learn how to set up continuous integration and deployment using Azure Pipelines.
 author: pvillads
 ms.date: 08/31/2023
@@ -9,7 +9,7 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Continuous integration and deployment (preview)
+# Continuous integration and deployment
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -22,7 +22,7 @@ This article explains how to implement continuous integration and deployment (CI
 ## Install or update the latest build tools
 
 1. Sign into the Power Platform admin center and select the environment you want to work in. In the **Organization Settings > Extensions** menu, locate and install the “Dynamics 365 Finance and Operations Tools” shared extension.
-1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 1. Ensure **Add Licenses to Deployable Package** has task version 1. If you have tasks with same name, then select "View Yaml" for the task to ensure it’s a preview task.
+1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 1. Ensure **Add Licenses to Deployable Package** has task version 1.
 1. Locate and install the Power Platform Build Tools extension from **Organization Settings > Extensions > Browse Marketplace**.
 1. Download the X++ NuGet packages with the required version and add them to your artifact feed. For details on this step refer to [Build automation that uses Microsoft-hosted agents and Azure Pipelines - Finance & Operations](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation).
 

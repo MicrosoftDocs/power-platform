@@ -35,7 +35,7 @@
           href: appsource\appendix-add-license-information-to-your-solution.md
     - name: Use Power Platform CLI with the catalog (preview)
       href: submit-catalog-items.md
-    - name: Unified developer experience for finance and operations apps (preview)
+    - name: Unified developer experience for finance and operations apps
       items:
         - name: Overview
           href: unified-experience\finance-operations-dev-overview.md
