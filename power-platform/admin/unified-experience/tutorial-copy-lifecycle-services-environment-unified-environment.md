@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Copy a Lifecycle Services environment to a unified environment  | Microsoft Docs"
-description: This tutorial will demonstrate how to perform environment copy with respect to unified environments.
+description: This tutorial demonstrates how to perform environment copy with respect to unified environments.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.audienceType:
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics 365 Lifecycle Services, but now everything can be managed in the Power Platform admin center.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 > * Prepare the source environment
@@ -26,7 +26,7 @@ As an example of this scenario, a customer who operates their finance and operat
 
 ## Before you begin
 
-The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse.  To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template ](./tutorial-deploy-new-environment-with-ERP-template.md).
+The target environment in this tutorial is always a unified environment that contains finance and operations apps hosted by Microsoft Dataverse. To learn how to deploy one of these environments, see [Tutorial: Provision a new environment with an ERP-based template ](./tutorial-deploy-new-environment-with-ERP-template.md).
 
 The source environment in this tutorial is always a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
@@ -34,12 +34,12 @@ Ensure that both the source and target environments are provisioned in the same 
 
 ## Prepare the source environment
 
-Before the source environment can be copied, you must perform several steps to ensure that data and code copy correctly to the target environment.  Without performing these steps, code or data loss can occur. 
+Before the source environment can be copied, you must perform several steps to ensure that data and code get copied correctly to the target environment. Without performing these steps, code or data loss can occur. 
 
 ### Install or update the latest Dynamics 365 Finance and Operations Platform Tools app
 
 > [!NOTE]
-> This application is necessary in the source environment because it helps to store the X++ code in Microsoft Dataverse. This allows the code to copy to the target environment alongside the data.  Without this, data loss can occur.
+> This application is necessary in the source environment because it helps to store the X++ code in Microsoft Dataverse. This allows the code to copy to the target environment alongside the data. Without this, data loss can occur.
 
 1. In the Power Platform admin center, select **Environments**.
 2. Select the source environment from which you want to start the copy. From the **Resources** menu, select **Dynamics 365 apps**.
@@ -52,7 +52,7 @@ If you see **Update Available** in the **Status** for Dynamics 365 Finance and O
 
 :::image type="content" source="media/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
 
-If Dynamics 365 Finance and Operations Platform Tools is not listed, select **Install App** to add this app to your organization.
+If Dynamics 365 Finance and Operations Platform Tools isn't listed, select **Install App** to add this app to your organization.
 
 From the list on the right side, find and select the **Dynamics 365 Finance and Operations Platform Tools** app, select **Install**, and follow the instructions to install.
 
@@ -74,7 +74,7 @@ This deploy command makes no changes to the finance and operations environment h
 
 1. Install [PAC CLI](https://aka.ms/PowerAppsCLI).
 2. [Authenticate and connect to source Dataverse](../../developer/cli/reference/auth.md#pac-auth-create).
-3. Run the following:
+3. Run the following command:
 
 ```
 pac auth list
@@ -86,13 +86,13 @@ pac package deploy --logConsole --package <OutputPath>\<Package>.dll
 
 ## Begin the copy operation
 
-In the Power Platform admin center, go to the source environment you want to copy.  From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, as well as the data from the source.  Select the **Target** environment to be the unified, developer environment.
+In the Power Platform admin center, go to the source environment you want to copy. From there, select the **Copy** button in the top action pane.  In the slider window that appears, choose to copy **Everything**, which incorporates both the Dataverse and X++ source code, and the data from the source. Select the **Target** environment to be the unified, developer environment.
 
 # [PowerShell](#tab/PowerShell)
 
 ## Copy via PowerShell
 
-Load the PowerShell console and execute the following commands to generate the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
+Load the PowerShell console and execute the following commands to copy the environment. For more information on how to install and use the PowerShell module, see [Get started with PowerShell for Power Platform Administrators](../powershell-getting-started.md).
 
 ```PowerShell
 #Install the module

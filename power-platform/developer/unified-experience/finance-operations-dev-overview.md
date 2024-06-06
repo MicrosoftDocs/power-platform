@@ -22,17 +22,17 @@ The unified developer experience consolidates the disparate developer tools and 
 
 ## Typical scenario
 
-Consider a typical scenario where a developer would create a simple app for capturing orders in Microsoft Power Apps and persisting the gathered data in Dataverse. By means of the data synchronization engines mentioned below, the data would be available for finance and operations apps to do the heavy lifting of determining whether the requested items are available and pricing, etc. The results would be available near real-time in Power Apps.
+Consider a typical scenario where a developer would create a app for capturing orders in Microsoft Power Apps and persisting the gathered data in Dataverse. By means of the data synchronization engines mentioned below, the data would be available for finance and operations apps to do the heavy lifting of determining whether the requested items are available and pricing, etc. The results would be available near real-time in Power Apps.
 
 ## Finance and operations app development
 
-Development for finance and operations apps is accomplished in Visual Studio using the Visual Studio add-in. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with finance and operations apps. However, existing finance and operations app developers will find that the large majority of their workflows will not be different from what they are used to. The article [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you are likely to find about finance and operations app development, like how to extend existing code, is likely to still hold true.
+Development for finance and operations apps is accomplished in Visual Studio using the Visual Studio add-in. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with finance and operations apps. However, existing finance and operations app developers finds that the large majority of their workflows won't be different from what they're used to. The article [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you're likely to find about finance and operations app development, like how to extend existing code, is likely to still hold true.
 
 More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
 
 ## Power Platform
 
-Power Platform is supported by a rich development ecosystem. There is a rich set of tools in Power Platform that you can leverage for development. In particular, the Dataverse relational database management system is utilized by the unified developer experience. Many unified solutions work by synchronizing data between tables in the finance and operations app database and tables (entities) in Dataverse. There are two technologies for that: dual-write, and virtual entities.
+Power Platform is supported by a rich development ecosystem. There's a rich set of tools in Power Platform that you can use for development. In particular, the Dataverse relational database management system is utilized by the unified developer experience. Many unified solutions work by synchronizing data between tables in the finance and operations app database and tables (entities) in Dataverse. There are two technologies for that: dual-write, and virtual entities.
 
 More information: [Microsoft Power Platform developer documentation](../index.yml)
 

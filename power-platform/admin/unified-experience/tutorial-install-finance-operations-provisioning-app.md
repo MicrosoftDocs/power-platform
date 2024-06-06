@@ -16,13 +16,13 @@ search.audienceType:
 
 Finance and operations apps are reimagined as an application hosted by Microsoft Dataverse. Customers don't need to provision their enterprise resource planning (ERP) system separately from their low-code and other Dynamics 365 platform applications. Most administrative actions in Power Platform are available through the admin center and an API-based experience.
 
-In this tutorial, you will learn how to:
+In this tutorial, learn how to:
 
 > [!div class="checklist"]
 > * Locate an existing environment in the Power Platform admin center with other Dynamics 365 apps installed.
 > * Install the Finance and Operations Provisioning app to see finance and operations apps capabilities.
 
-For example, a customer who already purchased other Dynamics 365 apps wants to add finance and operations apps capabilities to one of their existing environments.  
+For example, a customer who already purchased other Dynamics 365 apps wants to add finance and operations apps capabilities to one of their existing environments.
 
 ## Prerequisites
 
@@ -52,9 +52,9 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 
 Limitations for an installation of the provisioning app:  
 
-1. Environment URL length.  The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length, otherwise the Finance and Operations Provisioning App will fail to install.  To bypass this limitation you can edit the URL of your environment to be the required length.
+1. Environment URL length. The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length, otherwise the Finance and Operations Provisioning App fails to install. To bypass this limitation, you can edit the URL of your environment to be the required length.
 
-2. Finance and Operations URL missing.  After the install is successful, the Finance and Operations URL may not be shown on the environment details page in Power Platform admin center.  To bypass this limitation you can edit the environment and change a field such as the description to a new value.  This will synchronize in the new URL value and display it on screen.
+2. Finance and Operations URL missing. After the install is successful, the Finance and Operations URL may not be shown on the environment details page in Power Platform admin center. To bypass this limitation, you can edit the environment and change a field such as the description to a new value. This edit operation synchronizes the new URL value and display it on screen.
 
 3. 
 
@@ -67,9 +67,9 @@ Limitations for an installation of the provisioning app:
 3. Select a given environment that meets the prerequisite criteria.
 4. Select **Dynamics 365 apps** under the **Resources** card on the environment details page.
 5. Select **Install app**.
-6. Locate and install the **Dynamics 365 Finance and Operations Platform Tools** app. This application provides platform support for installing ERP-based applications.  It must be installed before the next step.  Note that you may see multiple entries of the same application if you have more than one license that provides access to it.  Select any option with a status of *Enabled* to proceed.
+6. Locate and install the **Dynamics 365 Finance and Operations Platform Tools** app. This application provides platform support for installing ERP-based applications. It must be installed before the next step. You may see multiple entries of the same application if you have more than one license that provides access to it. Select any option with a status of *Enabled* to proceed.
    :::image type="content" source="media/tutorial-install-app-platformTools.png" alt-text="A pop-up dialog is shown with the option to proceed to install the platform tools application or to cancel the action.":::
-7. Locate and install the **Dynamics 365 Finance and Operations Provisioning app**. This application provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads.  Note that you may see multiple entries of the same application if you have more than one license that provides access to it.  Select any option with a status of *Configured* to proceed.
+7. Locate and install the **Dynamics 365 Finance and Operations Provisioning app**. This application provides the finance and operations apps capabilities for Dynamics 365 Finance, Supply Chain Management, Project Operations, Human Resources, and Commerce workloads. You may see multiple entries of the same application if you have more than one license that provides access to it. Select any option with a status of *Configured* to proceed.
    :::image type="content" source="media/tutorial-install-app1.png" alt-text="A pop-up dialog is shown with the option to proceed to install the application or to cancel the action.":::
 8. Select **OK** to go to the installation configuration page for the provisioning app.
    :::image type="content" source="media/tutorial-install-app2.png" alt-text="A configuration page is shown with several check boxes for options to enable.":::
@@ -78,20 +78,20 @@ Limitations for an installation of the provisioning app:
 
    - **Enable Developer Tools**:  This option allows you to have a developer-enabled sandbox where you can connect Visual Studio and make X++ changes. If you leave this option unchecked, you get a standard environment—sandbox or production.
    - **Enable Demo Data**: This option deploys the standard Contoso Demo Data with your app.
-   - **Application version**: This allows you to select any of the available supported versions for install.  For more information, see the following section in this tutorial.
+   - **Application version**: You may select any of the available supported versions for install. For more information, see the following section in this tutorial.
 
 9. Agree to the terms and conditions and select the **Install** button to start the installation.
 
-When the install is triggered, it will take roughly an hour for the operation to complete.  During the installation, you will see the Finance and Operations Provisioning App is in an **Installing** status until it completes.
+When the install is triggered, it takes roughly an hour for the operation to complete. During the installation, Finance and Operations Provisioning App appears in **Installing** status until the install is completes.
 
 ## Application versions
 
-As mentioned in the above instructions, you will have the ability to install various supported versions of finance and operations apps.  Below is a table that represents some example versions you may encounter.
+As mentioned in the above instructions, now you have the ability to install any of the available versions of finance and operations apps. Following table represents some example versions you may encounter.
 
 | Application version | Details | Available within |
 |---------------------|-------------|------------------|
-| 10.0.40.2 (Preview) | This is version 10.0.40, with 3 proactive quality updates installed. It is also a preview build. | [Early release cycle environments](/power-platform/admin/early-release) only. |
-| 10.0.39.4           | This is version 10.0.39, with 5 proactive quality updates installed. | All geos. |
-| 10.0.38.9           | This is version 10.0.38, with 10 proactive quality updates installed. | All geos. |
+| 10.0.40.2 (Preview) | Version 10.0.40, with 3 proactive quality updates installed. It's also a preview build. | [Early release cycle environments](/power-platform/admin/early-release) only. |
+| 10.0.39.4           | Version 10.0.39, with 5 proactive quality updates installed. | All geos. |
+| 10.0.38.9           | Version 10.0.38, with 10 proactive quality updates installed. | All geos. |
 
-You will notice that each application version will include its latest proactive quality update, there is no way to get an earlier build of an application version.  Preview builds are only available to [Early release cycle environments](/power-platform/admin/early-release).
+Each application version includes its latest proactive quality update, there's no way to get an earlier build of an application version. Preview builds are only available to [Early release cycle environments](/power-platform/admin/early-release).
