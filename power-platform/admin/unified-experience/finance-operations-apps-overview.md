@@ -1,15 +1,16 @@
 ---
-title: "Unified admin experience for finance and operations apps (preview)"
+title: Unified admin experience for finance and operations apps
 description: "Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center."
 author: laneswenka
 ms.topic: overview
-ms.date: 05/23/2024
+ms.date: 06/06/2024
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
+
 ---
 
-# Unified admin experience for finance and operations apps (preview)
+# Unified admin experience for finance and operations apps
 
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
