@@ -19,9 +19,7 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, watch this video on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community)
-
-> [!VIDEO https://www.youtube.com/embed/HmJIuHhx3Hg].
+To learn more about the admin unification journey, [watch this video](https://www.youtube.com/embed/HmJIuHhx3Hg) on the [Microsoft Dynamics 365 Community](https://www.youtube.com/@MSD365Community)
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 
@@ -92,9 +90,9 @@ The following table is a reference for each operation type and explains any nuan
 
 These continually updated scenario tutorials give a walkthrough for administrators in new experiences.
 
-- [Tutorial: Provision a new environment with an ERP-based template (preview)](./tutorial-deploy-new-environment-with-ERP-template.md)
-- [Tutorial: Copy a Lifecycle Services environment to a unified environment (preview)](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
-- [Unified admin trials (preview)](admin-trials.md)
+- [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md)
+- [Tutorial: Copy a Lifecycle Services environment to a unified environment](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
+- [Unified admin trials](admin-trials.md)
 - [Manage storage and capacity](../finance-operations-storage-capacity.md)
 
 ### Known limitations
@@ -111,7 +109,7 @@ We continue to publish common questions and resolve open items before making the
 
 You can view the licenses assigned to you at [My Account - Subscriptions](https://portal.office.com/account/?ref=MeControl#subscriptions).
 
-View the templates that allow you to deploy: [Tutorial: Provision a new environment with an ERP-based template (preview)](tutorial-deploy-new-environment-with-ERP-template.md#knowing-which-template-to-provision).
+View the templates that allow you to deploy: [Tutorial: Provision a new environment with an ERP-based template](tutorial-deploy-new-environment-with-ERP-template.md#knowing-which-template-to-provision).
 
 #### I don't have any available capacity
 
@@ -130,7 +128,7 @@ Direct SQL access isn't available at this time. However, we're working on a just
 
 ### Related articles
 
-- [Unified developer experience for finance and operations apps (preview)](../../developer/unified-experience/finance-operations-dev-overview.md)
+- [Unified developer experience for finance and operations apps](../../developer/unified-experience/finance-operations-dev-overview.md)
 - [Finance and operations apps documentation](/dynamics365/fin-ops-core/fin-ops/)  
 - [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 - [Manage Dynamics 365 apps](/power-platform/admin/manage-apps)  

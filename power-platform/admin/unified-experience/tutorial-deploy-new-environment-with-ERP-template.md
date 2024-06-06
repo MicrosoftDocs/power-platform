@@ -49,7 +49,7 @@ All Dynamics 365 environment templates are associated with their related full us
 
 ### Known limitations
 
-Be sure to check out the latest known limitations available in the overview article [Unified admin experience for finance and operations apps](finance-operations-apps-overview.md#known-limitations-during-preview).
+Be sure to check out the latest known limitations available in the overview article [Unified admin experience for finance and operations apps](finance-operations-apps-overview.md#known-limitations).
 
 ## Step-by-step provisioning guide
 
