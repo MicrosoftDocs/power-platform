@@ -164,31 +164,31 @@ Here's an example of the payload of metadata that can be expected from one of th
 ]
 ```
 
-## Activity category: DLP events
+## Activity category: Data policy events
 
 > [!NOTE]
-> Activity logging for data loss protection policies is not currently available in sovereign clouds.
+> Activity logging for data policies is not currently available in sovereign clouds.
 
-All the data loss prevention (DLP) events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
-The following DLP events are delivered to Microsoft Purview.
+All the data policy events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
+The following data policy events are delivered to Microsoft Purview.
 
 | **Category** | **Description** |
 |-------------------------------------------------------------|-----------------------------------------|
-| Create DLP Policy | Emitted when a new DLP policy is created.
-| Update DLP Policy | Emitted when a DLP policy is updated.
-| Delete DLP Policy | Emitted when a DLP policy is deleted.
+| Create DLP Policy | Emitted when a new data policy is created.
+| Update DLP Policy | Emitted when a data policy is updated.
+| Delete DLP Policy | Emitted when a data policy is deleted.
 | Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.
 | Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.
 | Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.
-| Create Connector Configurations | Emitted when a connector configuration is created for the DLP Policy.
-| Update Connector Configurations | Emitted when a connector configuration is updated for the DLP Policy.
-| Delete Connector Configurations | Emitted when a connector configuration is deleted for the DLP Policy.
+| Create Connector Configurations | Emitted when a connector configuration is created for the data policy.
+| Update Connector Configurations | Emitted when a connector configuration is updated for the data policy.
+| Delete Connector Configurations | Emitted when a connector configuration is deleted for the data policy.
 | Create Policy Scope | Emitted when a new policy scope is created.
 | Update Policy Scope | Emitted when a policy scope is updated.
 | Delete Policy Scope | Emitted when a policy scope is deleted.
-| Create Exempt Resources | Emitted when an exempt resources list is created for the DLP Policy.
-| Update Exempt Resources | Emitted when an exempt resources list is updated for the DLP Policy.
-| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the DLP Policy.
+| Create Exempt Resources | Emitted when an exempt resources list is created for the data policy.
+| Update Exempt Resources | Emitted when an exempt resources list is updated for the data policy.
+| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the data policy.
 | Create connector blocking policy | Emitted when a new connector blocking policy is created.
 | Update connector blocking policy | Emitted when connector blocking policy is updated.
 | Delete connector blocking policy | Emitted when connector blocking policy is deleted.
