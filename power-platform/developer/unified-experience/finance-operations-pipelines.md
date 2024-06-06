@@ -1,17 +1,15 @@
 ---
-title: "Continuous integration and deployment (preview)"
+title: "Continuous integration and deployment"
 description: Learn how to set up continuous integration and deployment using Azure Pipelines.
 author: pvillads
-ms.date: 08/31/2023
+ms.date: 06/06/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Continuous integration and deployment (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Continuous integration and deployment
 
 This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. Specifically, how to:
 
@@ -41,7 +39,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
     :::image type="content" source="../media/unified-experience/pipelines-add-licenses.png" alt-text="Image of Add Licenses to Deployable Package in Azure DevOps.":::
 
-1.  Once the pipeline is built, locate the published artifacts under **Related** in the **Summary** tab.
+1. Once the pipeline is built, locate the published artifacts under **Related** in the **Summary** tab.
 
     :::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of solution artifacts in Azure DevOps.":::
 

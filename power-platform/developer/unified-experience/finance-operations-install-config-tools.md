@@ -1,8 +1,8 @@
 ---
-title: "Install and configure development tools (preview)"
+title: "Install and configure development tools"
 description: Set up required finance and operations app development tools on your local computer.
 author: pvillads
-ms.date: 05/30/2024
+ms.date: 06/06/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pathaku
@@ -11,9 +11,7 @@ contributors:
  - Pankaj-Thakur
 ---
 
-# Install and configure development tools (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Install and configure development tools
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
 
@@ -41,7 +39,7 @@ After installing the Power Platform Tools extension for Visual Studio, follow th
    - **Download Dynamics 365 FinOps assets** always downloads.
 
 1. Select the desired options in the dialog and select **Login**.  
-    
+
    If you need to use another account or a different online environment, don't choose to use the signed-in user. Enter the credentials for your developer user account with access to the online environment.
 
 1. Select an available solution in the dialog, and then choose **Done**.
@@ -50,7 +48,7 @@ After installing the Power Platform Tools extension for Visual Studio, follow th
    > [!NOTE]
    > If you have only one online development environment, the organization list dialog may not be shown as you would automatically connect to the environment.
    > :::image type="content" source="../media/unified-experience/UnoVSConnect.png" alt-text="Menu for connecting to unified environment from Visual Studio.":::
-   > 
+   >
    > :::image type="content" source="../media/unified-experience/UnoLogin.png" alt-text="Login dialog when connecting to unified environment from Visual Studio with Show Advanced selected.":::
    >
    > If your account requires multi factor authentication, uncheck all checkboxes on login screen.
@@ -60,7 +58,7 @@ After installing the Power Platform Tools extension for Visual Studio, follow th
    > :::image type="content" source="../media/unified-experience/UnoOption2.png" alt-text="Visual Studio> Tools> Options> Power Platform Tools to skip Discovery":::
    >
    > :::image type="content" source="../media/unified-experience/UnoLogin2.png" alt-text="Login dialog when connecting to unified environment from Visual Studio.":::
-   > 
+   >
    > :::image type="content" source="../media/unified-experience/UnoEnvironmentUri.png" alt-text="Dialog to obtain the Dataverse uri to the unified development environment.":::
 
 ## Download and install the finance and operations extension and metadata
@@ -109,11 +107,11 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > This is only required when the Visual Studio output pane indicates it is.
 
 Using Windows File Explorer, from the folder specified below, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
-On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc. 
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to setup build targets, URLProtocoloHandler, etc.
 
 `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`
 
-### Configure the finance and operations extension 
+### Configure the finance and operations extension
 
 > [!NOTE]
 > This is not required when auto setup is enabled.
@@ -123,7 +121,7 @@ To configure the extension, follow these instructions.
 
 1. Start Visual Studio, and then select **Continue without code** from the dialog.
 1. Navigate to **Extensions** > **Dynamics 365** > **Configure Metadata** for the first time.  
-      
+
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadataMenu.png" alt-text="Configure Metadata menu":::
 
 1. On the configuration form, select **New** and then create a new configuration. Refer to the field descriptions provided in the [Configuration form field descriptions](#configuration-form-field-descriptions) table that follows this procedure.
@@ -132,7 +130,7 @@ To configure the extension, follow these instructions.
 
 1. Select **Save**.
 2. You can similary edit a configuration. A common field to update is the folder for your own custom metadata.
-3. You might also want to move your cross reference database from SQL server local db to SQL server and update the configuration 
+3. You might also want to move your cross reference database from SQL server local db to SQL server and update the configuration
 4. You can delete stale configurations.
 5. Note that only one configuration can be current or active at any given time.
 
@@ -187,6 +185,6 @@ Start writing code, deploy, and debug.
 
 ### See also
 
-[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]

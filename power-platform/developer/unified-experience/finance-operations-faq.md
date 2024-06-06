@@ -1,17 +1,15 @@
 ---
-title: "Frequently asked questions (preview)"
+title: "Frequently asked questions"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
-ms.date: 05/22/2024
+ms.date: 06/06/2024
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Frequently asked questions (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Frequently asked questions
 
 This FAQ answers common questions regarding the unified developer experience for finance and operations apps.
 
@@ -53,7 +51,7 @@ When this option is missing from the menu, open the Infolog from the menu and re
 
 ### How do I download again the client assets
 
-When you connect to the unified development environment, the tool does a few checks and doesn't initiate download if the required assets were previously downloaded. In case you need to download again, simply rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
+When you connect to the unified development environment, the tool does a few checks and doesn't initiate download if the required assets were previously downloaded. In case you need to download again, simply rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365.
 
 ### PackagesLocalDirectory extraction doesn't complete
 
@@ -161,4 +159,4 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 ### See also
 
-[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
