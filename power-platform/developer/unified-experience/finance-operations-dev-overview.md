@@ -1,5 +1,5 @@
 ---
-title: "Unified developer experience for finance and operations apps (preview)"
+title: "Unified developer experience for finance and operations apps"
 description: Learn about developing code for finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
 ms.date: 06/06/2024
@@ -9,16 +9,9 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Unified developer experience for finance and operations apps (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Unified developer experience for finance and operations apps
 
 The unified developer experience consolidates the disparate developer tools and environments across finance and operations apps and Power Platform to reduce friction and simplify working across these apps. Finance and operations apps provide a rich ecosystem for professional developers by using a metadata and code-based development environment for mission critical scenarios. Power Platform brings the ability to author solutions quickly and seamlessly using low-code development paradigms and leverages Microsoft Dataverse as the relational data store. Power Platform also adds the ability to build and deploy your solutions using a continuous integration and deployment (CI/CD) pipeline.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-
 
 ## Typical scenario
 
@@ -28,7 +21,7 @@ Consider a typical scenario where a developer would create an app for capturing 
 
 Development for finance and operations apps is accomplished in Visual Studio using the Visual Studio add-in. This development environment provides everything a professional developer would expect. The unified environment runs in the cloud, and because of that we have made several changes and improvements to the way a developer works with finance and operations apps. However, existing finance and operations app developers finds that the large majority of their workflows won't be different from what they're used to. The article [Write, deploy, and debug X++ code (preview)](finance-operations-debug.md) walks you through how to build X++ code, deploy it to the cloud, execute and debug it there. All other content that you're likely to find about finance and operations app development, like how to extend existing code, is likely to still hold true.
 
-More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+More information: [Install and configure development tools](finance-operations-install-config-tools.md)
 
 ## Power Platform
 
@@ -57,11 +50,11 @@ Set up Visual Studio on your local development computer.
 
 ### See also
 
-[Install and configure development tools (preview)](finance-operations-install-config-tools.md)  
-[Write, deploy, and debug X++ code (preview)](finance-operations-debug.md)  
-[Frequently asked questions (preview)](finance-operations-faq.md)  
-[Tutorial: Provision a new environment with an ERP-based template (preview)](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template)  
-[Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)  
-[Unified admin experience for finance and operations apps (preview)](../../admin/unified-experience/finance-operations-apps-overview.md)
+[Install and configure development tools](finance-operations-install-config-tools.md)
+[Write, deploy, and debug X++ code](finance-operations-debug.md)
+[Frequently asked questions](finance-operations-faq.md)
+[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template)
+[Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)
+[Unified admin experience for finance and operations apps](../../admin/unified-experience/finance-operations-apps-overview.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]
