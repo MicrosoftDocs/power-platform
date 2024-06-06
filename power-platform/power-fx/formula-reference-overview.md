@@ -27,11 +27,10 @@ The Power Fx formulas are available for the following Power Platform components:
 | Power Platform component   | Sub areas|
 | - | - |
 | Power Apps   | Canvas apps, model-driven apps, cards |
-| Canvas apps   | Not applicable |
+| Canvas apps   | Canvas apps |
 | Power Automate   | Desktop flows |
 | Dataverse   | Formula columns, low-code plug-ins |
-| Power Pages   | Not applicable |
-| Cards for Power Apps   | Not applicable  |
+| Cards for Power Apps   | Cards |
 | Power Platform CLI   | Not applicable |
 
 
