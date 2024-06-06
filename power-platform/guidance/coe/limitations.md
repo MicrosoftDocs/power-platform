@@ -65,7 +65,7 @@ If you choose to use a security group to control access to the environment, manu
 ## Trial licenses
 
 Trial licenses don't have sufficient [API call allowances](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) to run the CoE Starter Kit flows.
-For full list of license requirements, see [Setup Prerequisite](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+For full list of license requirements, see [Setup Prerequisite](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 ## MFA (Multi-Factor Authentication)
 

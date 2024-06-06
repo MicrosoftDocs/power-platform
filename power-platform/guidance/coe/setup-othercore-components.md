@@ -18,7 +18,7 @@ search.audienceType:
 This article helps you to setup the remaining components in the Core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting**, making apps discoverable in an **app catalog** and **welcoming new makers**.
 
 >[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 ## Set up other core components using the Setup Wizard (preview)
 
@@ -39,7 +39,7 @@ This article helps you to setup the remaining components in the Core solution, n
 
 | Name | Description |
 |------|---------------|
-|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [How do you plan to communicate with your admins, makers, and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
+|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users)  |
 
 ### Turn on flows
 
@@ -51,7 +51,7 @@ There are several flows which need to be turned on for these components:
 - [App Catalog > Request Access](core-components.md)
 
 >[!IMPORTANT]
-> The [Admin | Welcome Email v3](core-components.md) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How do you plan to communicate with your admins, makers, and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)
+> The [Admin | Welcome Email v3](core-components.md) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users)
 
 ### Share apps with admins and makers
 

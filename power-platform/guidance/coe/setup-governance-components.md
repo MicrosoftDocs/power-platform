@@ -20,7 +20,7 @@ This article will help you to set up the [Developer Compliance Center](example-p
 This set of functionality allows you to detect frequently used apps and chatbots in your tenant and request their makers provide additional information about them, such as a business justification, data classification and support plan. The goal is for admins to have better visibility into the solutions built by their makers, and support them in making decisions. For examples, admins may decide to move highly used applications to a dedicated environment.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environments), and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>This article assumes you have [installed the governance components solution](before-setup-gov.md) and you have your [environment setup](setup.md#create-your-environments), and are logged in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=WXXFjHLt5ss&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the compliance process works.
 

@@ -24,7 +24,7 @@ The Audit Log Sync flow connects to the Microsoft 365 audit log to gather teleme
 The Center of Excellence (CoE) Starter Kit works without this flow, but the usage information (app launches, unique users) in the Power BI dashboard will be blank.
 
 > [!IMPORTANT]
-> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+> Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup in this article. This article assumes you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 >
 > Only set up the Audit Log solution if you've chosen [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) as the mechanism for inventory and telemetry.
 
