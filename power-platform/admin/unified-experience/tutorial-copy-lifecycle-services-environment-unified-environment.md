@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 05/23/2024
+ms.date: 06/06/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -18,9 +18,9 @@ Finance and operations apps have been reimagined as an application hosted by Mic
 
 In this tutorial, you learn how to:
 
-> [!div class="checklist"]
-> * Prepare the source environment
-> * Copy the environment to the target
+
+- Prepare the source environment
+- Copy the environment to the target
 
 As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
 
