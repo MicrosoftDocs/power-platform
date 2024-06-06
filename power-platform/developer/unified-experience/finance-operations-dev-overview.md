@@ -15,7 +15,7 @@ The unified developer experience consolidates the disparate developer tools and 
 
 ## Typical scenario
 
-Consider a typical scenario where a developer would create a simple app for capturing orders in Microsoft Power Apps and persisting the gathered data in Dataverse. By means of the data synchronization engines mentioned below, the data would be available for finance and operations apps to do the heavy lifting of determining whether the requested items are available and pricing, etc. The results would be available near real-time in Power Apps.
+Consider a typical scenario where a developer would create an app for capturing orders in Microsoft Power Apps and persisting the gathered data in Dataverse. By means of the data synchronization engines mentioned below, the data would be available for finance and operations apps to do the heavy lifting of determining whether the requested items are available and pricing and more. The results would be available near real-time in Power Apps.
 
 ## Finance and operations app development
 
