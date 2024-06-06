@@ -1,6 +1,6 @@
 ---
-title: Tutorial: Update the Finance and Operations Provisioning app 
-description: Learn how to update the Finance and Operations Provisioning app within an existing Power Platform environment.
+title: Tutorial: Update the Finance and Operations Provisioning app   
+description: This tutorial demonstrates how to use the Power Platform to provision an environment with finance and operations apps installed.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
@@ -10,7 +10,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-
 ---
 
 # Tutorial: Update the Finance and Operations Provisioning app 
