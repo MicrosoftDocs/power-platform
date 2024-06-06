@@ -165,6 +165,10 @@ Here's an example of the payload of metadata that can be expected from one of th
 ```
 
 ## Activity category: DLP events
+
+> [!NOTE]
+> Activity logging for data loss protection policies is not currently available in sovereign clouds.
+
 All the data loss prevention (DLP) events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
 The following DLP events are delivered to Microsoft Purview.
 
