@@ -17,8 +17,8 @@ This article describes how to install and configure required Visual Studio finan
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
->
->[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+> 
+> [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
 
 ## Prerequisites
 
@@ -112,7 +112,8 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > This is only required when the Visual Studio output pane indicates it is.
 
 Using Windows File Explorer, from the folder `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
-On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to register the URLProtocoloHandler, setup build targets, to extract compiler files, etc.
+
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to register the URLProtocoloHandler, setup build targets, to extract compiler files, etc. 
 
 ### Configure the finance and operations extension
 

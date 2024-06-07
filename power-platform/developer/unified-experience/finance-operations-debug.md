@@ -26,9 +26,9 @@ Let's begin by developing a runnable X++ class to use as an example. The class's
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
->
->[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
-
+> 
+> [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+ 
 ## Prerequisites
 
 You should have access to a unified developer environment, the Visual Studio tools extensions installed and configured on your developer machine and connected to the same environment. It's important to keep the metadata changes on your developer machine deployed to the connected environment .
@@ -132,7 +132,7 @@ Now let's set a breakpoint in the form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.
 1. In the browser window, select one of the colored squares, let's say the red one. You'll hit the breakpoint.
 1. Continue the execution by pressing F10 or F5. Another colored square is hit and the breakpoint is triggered again.
-1. You can watch the locals, set new breakpoints and do various debugging tasks.
+1. You can watch the locals, set new breakpoints and do various debugging tasks. 
 
 > [!IMPORTANT]
 > If you want to attach the debugger to the running AOS process in the unified environment use **Dynamics 365** > **Launch debugger**.
@@ -149,9 +149,8 @@ We started with using Visual Studio to create a simple runnable class. After the
 
 ### See also
 
-[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
-
-[Unit testing in the unified developer experience](finance-operations-testing.md)
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
 

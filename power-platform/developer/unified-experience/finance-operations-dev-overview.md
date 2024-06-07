@@ -11,7 +11,7 @@ ms.subservice: developer
 
 # Unified developer experience for finance and operations apps
 
-The unified developer experience consolidates the disparate developer tools and environments across finance and operations apps and Power Platform. This reduces friction and simplifies working across these apps. Finance and operations apps provide a rich ecosystem for professional developers by using a metadata and code-based development environment for mission critical scenarios. Power Platform brings the ability to author solutions quickly and seamlessly using low-code development paradigms and uses Microsoft Dataverse as the relational data store. Power Platform also adds the ability to build and deploy your solutions using a continuous integration and deployment (CI/CD) pipeline.
+The unified developer experience consolidates the disparate developer tools and environments across finance and operations apps and Power Platform to reduce friction and simplify working across these apps. Finance and operations apps provide a rich ecosystem for professional developers by using a metadata and code-based development environment for mission critical scenarios. Power Platform brings the ability to author solutions quickly and seamlessly using low-code development paradigms and leverages Microsoft Dataverse as the relational data store. Power Platform also adds the ability to build and deploy your solutions using a continuous integration and deployment (CI/CD) pipeline.
 
 ## Typical scenario
 
@@ -53,7 +53,7 @@ Set up Visual Studio on your local development computer.
 [Install and configure development tools](finance-operations-install-config-tools.md)  
 [Write, deploy, and debug X++ code](finance-operations-debug.md)  
 [Frequently asked questions](finance-operations-faq.md)  
-[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md)  
+[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md#tutorial-provision-a-new-environment-with-an-erp-based-template-preview)  
 [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)  
 [Unified admin experience for finance and operations apps](../../admin/unified-experience/finance-operations-apps-overview.md)
 
