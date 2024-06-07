@@ -18,11 +18,11 @@ contributors:
 
 # :::no-loc text="DonutChart"::: control (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Donut charts are used to show proportion, which expresses a partial value in comparison to a total value. These types of charts are best to show percentage of individual parts in comparison to a whole, where the change over time isn't important to visualize. They're circular statistical graphics divided into slices to illustrate numerical proportion.
 
 :::image type="content" source="media/donutchart.svg" alt-text="DonutChart control.":::
-
-Donut charts are used to show proportion, which expresses a partial value in comparison to a total value. These types of charts are best to show percentage of individual parts in comparison to a whole, where the change over time is not important to visualize. They are circular statistical graphics divided into slices to illustrate numerical proportion.
 
 This code component provides a wrapper around the [Fluent UI DonutChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/donutchart) control for use in canvas & custom pages.
 
@@ -38,13 +38,13 @@ This code component provides a wrapper around the [Fluent UI DonutChart](https:/
 
 The control accepts the following properties:
 
- - **Title** - This denotes title of the chart.
- - **HideLabel** - This denotes whether to show or hide labels on the chart.
- - **HideTooltip** - This denotes whether to show or hide tooltips on the chart.
- - **ShowLabelsInPercentage** - This denotes whether to show labels in percentage.
+ - **Title** - This value denotes title of the chart.
+ - **HideLabel** - This option controls whether to show or hide labels on the chart.
+ - **HideTooltip** - This option controls whether to show or hide tooltips on the chart.
+ - **ShowLabelsInPercentage** - This option controls whether to show labels in percentage.
  - **InnerRadius** - Set the value for inner radius of the donut chart.
- - **ValueInsideDonut** - This denotes to value to be shown inside the donut chart.
- - **CustomColors** - This denotes to show custom colors on chart if provided
+ - **ValueInsideDonut** - This property denotes the value to be shown inside the donut chart.
+ - **CustomColors** - This property is used to show custom colors on the chart if provided
 
 - **Items** - The action items to render
   - **ItemTitle** - The Display Name of the particular chart data(Item).
@@ -52,16 +52,16 @@ The control accepts the following properties:
   - **ItemValue** - Set the value of the particular chart data(Item).
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data(Item).
 
-  Note: Item color will only apply if `CustomColors` property is turned on.
+  Note: Item color only applies if `CustomColors` property is turned on.
 
 ### Style properties
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure.
+- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). If you leave this blank, the default theme defined by Power Apps is used. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label
 
 ## Usage
 
-Map data values to the corresponding chart properties in the `Items` property of the control, as demonstrated in the below formula. The chart will automatically adjust the visual to match the relative values.
+Map data values to the corresponding chart properties in the `Items` property of the control, as demonstrated in the below formula. The chart automatically adjusts the visual to match the relative values.
 
 Enable the `CustomColors` property to define consistent colors.
 

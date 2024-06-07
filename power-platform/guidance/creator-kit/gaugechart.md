@@ -18,11 +18,11 @@ contributors:
 
 # :::no-loc text="GaugeChart"::: control (preview)
 
-[This article is pre-release documentation and is subject to change.]
-
-:::image type="content" source="media/gaugechart.svg" alt-text="GaugeChart control.":::
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 There are two types of gauge charts: Speedometer and rating meter.
+
+:::image type="content" source="media/gaugechart.svg" alt-text="GaugeChart control.":::
 
 The speedometer measures a numerical value against a whole, like storage capacity. The needle is an optional component. The color of the segment representing the value being measured can be customized to suit certain scenarios or to align with branding colors.
 
@@ -36,40 +36,40 @@ This code component provides a wrapper around the [Fluent UI GaugeChart](https:/
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 > [!NOTE]
-> Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/GaugeChart).    |
+> For the full documentation and source code, see [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/GaugeChart).    |
 
 ## Properties
 
 The control accepts the following properties:
 
- - **Title** - This denotes title of the chart.
- - **Sublabel** - This denotes sub label of the chart.
- - **ChartValue** - This denotes the value to be displayed on the gauge.
- - **MinValue** - This denotes the minimum value of the gauge.
- - **MaxValue** - This denotes the maximum value of the gauge.
- - **HideMinMax** - This denotes whether to hide the min and max values on the gauge.
- - **HideLegend** - This denotes whether to hide the legend on the gauge.
- - **ChartValueFormat** - This denotes to show chart value in `Percentage` or `Fraction`.
- - **CustomColors** - Set this to true to allow custom colors on the chart if provided.
- - **Theme** - Accepts a JSON string that is generated using Fluent UI Theme Designer. Leaving this blank will use the default theme defined by Power Apps.
+ - **Title** - This value denotes title of the chart.
+ - **Sublabel** - This value denotes sub label of the chart.
+ - **ChartValue** - This value denotes the value to be displayed on the gauge.
+ - **MinValue** - This value denotes the minimum value of the gauge.
+ - **MaxValue** - This value denotes the maximum value of the gauge.
+ - **HideMinMax** - This value denotes whether to hide the min and max values on the gauge.
+ - **HideLegend** - This value denotes whether to hide the legend on the gauge.
+ - **ChartValueFormat** - This value denotes to show chart value in `Percentage` or `Fraction`.
+ - **CustomColors** - Set this value to true to allow custom colors on the chart if provided.
+ - **Theme** - Accepts a JSON string that is generated using Fluent UI Theme Designer. If you leave this blank, the default theme defined by Power Apps is used.
 
 - **Items** - The action items to render:
   - **ItemLegend** - The display name of the particular chart data (Item).
   - **ItemSize** - The size of the particular chart data (Item).
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data (Item).
 
-  Note: Item color will only apply if the `CustomColors` property is turned on.
+  Note: Item color only applies if the `CustomColors` property is turned on.
 
 ### Style properties
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure.
+- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). If you leave this blank, the default theme defined by Power Apps is used. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label.
 
 ## Usage
 
 ### Speedometer
 
-Only one row is needed for `Items`.  Use the `ChartValue` to indicate the target position.
+Only one row is needed for `Items`. Use the `ChartValue` to indicate the target position.
 
 ```powerapps-dot
 Table(

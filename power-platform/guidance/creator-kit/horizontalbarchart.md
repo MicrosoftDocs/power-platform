@@ -18,11 +18,11 @@ contributors:
 
 # :::no-loc text="HorizontalBarChart"::: control (preview)
 
-[This article is pre-release documentation and is subject to change.]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+A horizontal bar chart is a chart that presents categorical data with rectangular bars with lengths proportional to the values they represent. This type of chart is useful when the intention is to show comparisons among various categories and the labels for those categories are long.
 
 :::image type="content" source="media/horizontalbarchart.svg" alt-text="HorizontalBarChart control.":::
-
-A horizontal bar chart is a chart that presents categorical data with rectangular bars with lengths proportional to the values they represent. This type of chart is particularly useful when the intention is to show comparisons among various categories and the labels for those categories are long.
 
 This code component provides a wrapper around the [Fluent UI HorizontalBarChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart) control for use in canvas & custom pages.
 
@@ -38,11 +38,11 @@ This code component provides a wrapper around the [Fluent UI HorizontalBarChart]
 
 The control accepts the following properties:
 
- - **Title** - This denotes title of the chart.
- - **HideLabels** - Set this to true to hide labels on the chart.
- - **BarHeight** - This denotes height of the bar presented in the chart.
- - **HideTooltip** - Set this to true to hide tooltips on the chart.
- - **CustomColors** - Set this to true to allow custom colors on chart if provided.
+ - **Title** - This value denotes title of the chart.
+ - **HideLabels** - Set this option to true to hide labels on the chart.
+ - **BarHeight** - This value denotes height of the bar presented in the chart.
+ - **HideTooltip** - Set this option to true to hide tooltips on the chart.
+ - **CustomColors** - Set this option to true to allow custom colors on chart if provided.
  - **Variant** - This option allows the chart to be shown in `Absolute scale` or `Part to whole`.
  - **ChartDataMode** - This option provides to show the value of each bar in `Fraction` or `Percentage`.
 - **Items** - The action items to render:
@@ -54,16 +54,16 @@ The control accepts the following properties:
   - **ItemYPopover** - The Y-axis popover text for the particular chart data (Item).
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data (Item).
 
-  Note: Item color will only apply if the `CustomColors` property is turned on.
+  Note: Item color only applies if the `CustomColors` property is turned on.
 
 ### Style properties
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure.
+- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). If you leave this blank, the default theme defined by Power Apps is used. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label.
 
 ## Usage
 
-Map data values to the corresponding chart properties in the `Items` property of the control, as demonstrated in the formula below.
+Map data values to the corresponding chart properties in the `Items` property of the control, as demonstrated in the following formula.
 
 Enable the `CustomColors` property to define consistent colors.
 
