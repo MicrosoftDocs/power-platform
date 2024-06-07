@@ -45,7 +45,7 @@ The control with focus may be visually different based on the [**FocusedBorderCo
 - [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control
 - [**TextInput**](/power-apps/maker/canvas-apps/controls/control-text-input) control
 
-You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollbale screen.
+You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollable screen.
 
 You cannot set the focus to controls that are within a [**Container**](/power-apps/maker/canvas-apps/controls/control-container) control.
 
@@ -140,7 +140,7 @@ To create this example:
 ### Focus when displaying a screen
 
 > [!NOTE]
-> Although this example appears to be an **Edit form** control, unforutnatley **SetFocus** is not yet supported by that control. Instead, this example uses a scrollable screen to host the input controls.
+> Although this example appears to be an **Edit form** control, unfortunately **SetFocus** is not yet supported by that control. Instead, this example uses a scrollable screen to host the input controls.
 
 Similar to exposing an input control, when displaying a data entry screen it is helpful to focus the first input control for faster data entry.
 

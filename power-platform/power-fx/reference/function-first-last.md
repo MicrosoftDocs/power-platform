@@ -80,8 +80,8 @@ Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
 | **Last(&nbsp;IceCream&nbsp;)**                   | Returns the last record of **IceCream**.                                       | { Flavor: "Pistachio", Quantity: 200 }                                                                         |
 | **Index(&nbsp;IceCream,&nbsp;3&nbsp;)**          | Returns the third record of **IceCream**.                                      | { Flavor: "Strawberry", Quantity: 300 }                                                                        |
 | **FirstN(&nbsp;IceCream,&nbsp;2&nbsp;)**         | Returns a table containing the first two records of **IceCream**.              | ![Table containing the records for Chocolate and Vanilla](media/function-first-last/icecream-first2.png)       |
-| **LastN(&nbsp;IceCream,&nbsp;2&nbsp;)**          | Returns a table containt the last two records of **IceCream**.                 | ![Table containing the records for Mint Chocolate and Pistachio](media/function-first-last/icecream-last2.png) |
-| **Index(&nbsp;IceCream,&nbsp;4&nbsp;).Quantity** | Returns the fourth record of the table, and extracts the Quanity column.       | 60                                                                                                             |
+| **LastN(&nbsp;IceCream,&nbsp;2&nbsp;)**          | Returns a table containing the last two records of **IceCream**.                 | ![Table containing the records for Mint Chocolate and Pistachio](media/function-first-last/icecream-last2.png) |
+| **Index(&nbsp;IceCream,&nbsp;4&nbsp;).Quantity** | Returns the fourth record of the table, and extracts the Quantity column.       | 60                                                                                                             |
 | **Index(&nbsp;IceCream,&nbsp;10&nbsp;)**         | Returns an error since the record requested is beyond the bounds of the table. | _Error_                                                                                                        |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
