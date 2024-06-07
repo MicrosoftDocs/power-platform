@@ -2,7 +2,7 @@
 title: "Frequently asked questions"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
-ms.date: 05/22/2024
+ms.date: 06/06/2024
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -150,6 +150,7 @@ You can check the packages applied and other updates to your Finance and Operati
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
 The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. 
+
 The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs.
 Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\<version>\VisualStudioD365Extension-*.log.
 

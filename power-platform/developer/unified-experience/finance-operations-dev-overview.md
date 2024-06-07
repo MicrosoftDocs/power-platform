@@ -2,7 +2,7 @@
 title: "Unified developer experience for finance and operations apps"
 description: Learn about developing code for finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
-ms.date: 08/22/2023
+ms.date: 06/06/2024
 ms.topic: overview
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -15,7 +15,7 @@ The unified developer experience consolidates the disparate developer tools and 
 
 ## Typical scenario
 
-Consider a typical scenario where a developer would create a simple app for capturing orders in Microsoft Power Apps and persisting the gathered data in Dataverse. By means of the data synchronization engines mentioned below, the data would be available for finance and operations apps to do the heavy lifting of determining whether the requested items are available and pricing, etc. The results would be available near real-time in Power Apps.
+Consider a typical scenario where a developer would create an app for capturing orders in Microsoft Power Apps and persisting the gathered data in Dataverse. With the data synchronization engines mentioned below, the data would be available for finance and operations apps to do the heavy lifting of determining whether the requested items are available and pricing and more. The results would be available near real-time in Power Apps.
 
 ## Finance and operations app development
 
@@ -25,7 +25,7 @@ More information: [Install and configure development tools](finance-operations-i
 
 ## Power Platform
 
-Power Platform is supported by a rich development ecosystem. There is a rich set of tools in Power Platform that you can leverage for development. In particular, the Dataverse relational database management system is utilized by the unified developer experience. Many unified solutions work by synchronizing data between tables in the finance and operations app database and tables (entities) in Dataverse. There are two technologies for that: dual-write, and virtual entities.
+Power Platform is supported by a rich development ecosystem. There is a rich set of tools in Power Platform that you can use for development. In particular, the Dataverse relational database management system is utilized by the unified developer experience. Many unified solutions work by synchronizing data between tables in the finance and operations app database and tables (entities) in Dataverse. There are two technologies for that: dual-write, and virtual entities.
 
 More information: [Microsoft Power Platform developer documentation](../index.yml)
 
