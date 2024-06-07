@@ -39,7 +39,7 @@
           href: catalog/submit-items.md
         - name: Item submission reference
           href: catalog/submission-reference.md
-    - name: Unified developer experience for finance and operations apps (preview)
+    - name: Unified developer experience for finance and operations apps
       items:
         - name: Overview
           href: unified-experience\finance-operations-dev-overview.md
