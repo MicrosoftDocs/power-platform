@@ -45,6 +45,18 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 > [!IMPORTANT]
 > Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
 
+## Known limitations
+
+- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+
+- The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
+
+- The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
+
+- A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
+
+- Role assignments through groups aren't supported. Make sure that you assign roles directly to the user.
+
 ## Self-elevate to the system administrator role
 
 We support elevation using either PowerShell or through an intuitive experience in Power Platform admin center.
@@ -194,15 +206,3 @@ Remove-RoleAssignmentFromUsers
 1. The **System Administrators** pane is displayed. Add yourself to the system administrator role by selecting **Add me**.
 
    :::image type="content" source="media/self-elevate-membership-menu.png" alt-text="Use the Membership menu option to request self-elevation.":::
-
-## Known limitations
-
-- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
-
-- The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
-
-- The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
-
-- A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
-
-- Role assignments through groups aren't supported. Make sure that you assign roles directly to the user.
