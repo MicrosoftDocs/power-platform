@@ -948,6 +948,8 @@
                       items:
                         - name: Configure incoming and outgoing email synchronization
                           href: set-incoming-outgoing-email-synchronization.md
+                        - name: Select the incoming email processing start date
+                          href: select-incoming-email-processing-start-date.md
                         - name: Specify which emails are automatically tracked
                           href: email-message-filtering-correlation.md
                         - name: Associate an email address with a row
