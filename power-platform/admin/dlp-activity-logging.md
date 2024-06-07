@@ -63,7 +63,7 @@ Schemas define which fields are sent to the [Microsoft 365 Security and Complian
 |Operation     |Edm.Date         |No         |Name of operation         |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID       |
 |UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
-|Additional Info     |Edm.String        |No         |Additional information if any (e.g. the environment name)       |
+|Additional Info     |Edm.String        |No         |More information if any (e.g. the environment name)       |
 
 ### Additional Info 
 
