@@ -15,7 +15,7 @@ search.audienceType:
 
 # Data loss prevention activity logging
 
-> [!Important]
+> [!Warning]
 > The schema documented in this artice is deprecated and won't be available starting in XXXX. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
