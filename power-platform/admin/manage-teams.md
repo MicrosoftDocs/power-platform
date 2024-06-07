@@ -3,7 +3,7 @@ title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2024
+ms.date: 06/06/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -56,10 +56,9 @@ A list of all of the teams in the environment is displayed.
    - **Description:** Enter a description of the team.
    - **Business unit:** Select the business unit from the dropdown list.
    - **Administrator:** Search for users in the organization. Start entering characters.
-     
-       > [!Note]
-       > The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [associate and disassociate](/power-apps/developer/data-platform/webapi/associate-disassociate-entities-using-web-api) APIs for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
-     
+   > [!NOTE]
+   > The **Administrator** field is only for reference and it doesn't have any special processing. You can use this field to restrict who can add and remove team members by registering a [plug-in](/power-apps/developer/data-platform/plug-ins) on the [AddMembersTeam](/power-apps/developer/data-platform/webapi/reference/addmembersteam) API for the **teammembership_association** relationship. These actions can be enforced when the user is the administrator of the team. For more information, see the community [sample code](https://community.dynamics.com/crm/b/mylifemicrosoftdynamiccrm/posts/ms-dynamics-crm-associate-disassociate-message-plugin).
+
    - **Team type:** Select the team type from the dropdown list.
 
      :::image type="content" source="media/dataverse-team-manage-new-team.png" alt-text="Screenshot of settings for a new Dataverse team.":::
