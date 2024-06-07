@@ -45,9 +45,9 @@ Ensure that the unified development environment you created is a unified develop
 
 When this option is missing from the menu, open the Infolog from the menu and retry. This is addressed in application version 10.0.39 and above.
 
-### How do I re download the client assets
+### How do I re download the client assets 
 
-In Visual Studio from the **Tools** menu, select **Download Dynamics 365 FinOps assets**.
+In Visual Studio from the **Tools** menu, select **Download Dynamics 365 FinOps assets**. 
 
 ### PackagesLocalDirectory extraction doesn't complete
 
@@ -109,7 +109,7 @@ Use the latest version of the Azure DevOps extension from the marketplace. It's 
 
 ### How can I deploy packages received from ISVs to my Unified Developer Environment?
 
-Place the ISV modules in a common folder and add this common parent folder of all ISV modules to the existing list of reference metadata folders in the active configuration you intend to use. Refer [Install and configure development tools](finance-operations-install-config-tools.md)
+Place the ISV modules in a common folder and add this common parent folder of all ISV modules to the existing list of reference metadata folders in the active configuration you intend to use. Refer [Install and configure development tools](finance-operations-install-config-tools.md) 
 
 ### How do I include a license and directly deploy from Visual Studio?
 
@@ -149,7 +149,8 @@ You can check the packages applied and other updates to your Finance and Operati
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
-The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane.
+The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. 
+
 The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs.
 Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\<version>\VisualStudioD365Extension-*.log.
 

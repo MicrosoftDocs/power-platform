@@ -56,7 +56,7 @@ Label1.Text: untyped.Quantity
 InputText1.Default: untyped.ItemName
 ```
 
-And finally, when [using operators](./operators.md) such as **&** or **+**, an **Untyped object** will be coerced if there is no ambigiuty on the expected type.
+And finally, when [using operators](./operators.md) such as **&** or **+**, an **Untyped object** will be coerced if there is no ambiguity on the expected type.
 
 ```powerapps-dot
 untyped.Quantity + 1 // result is a number
