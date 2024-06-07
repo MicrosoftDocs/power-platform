@@ -16,6 +16,12 @@ contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../../admin/managed-environment-overview.md)
+
 The catalog in Power Platform enables developers and makers to:
 
 - Crowd-source and find templates and components within their environment easily.
@@ -24,13 +30,10 @@ The catalog in Power Platform enables developers and makers to:
 
 Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../../admin/administer-catalog.md)
 
-Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
+Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems. This can be done using the manager app. More information: [View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../../admin/managed-environment-overview.md)
+This article explains how to view, submit and install catalog items programmatically.
+
 
 ## Get started
 
@@ -173,302 +176,15 @@ You need to edit this file to submit an item. Here's an example submission creat
 }
 ```
 
-### Required data
+## Next steps
 
-The following items are required for all submissions:
+Review the [Catalog item submission document reference](submission-reference.md)
 
-- [Publisher](#publisher)
-- [Catalog item](#catalog-item)
-- [Engineering contact](#engineering-contact)
-- [Support contact](#support-contact)
-
-#### Publisher
-
-Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the catalog item going forward.
-
-Don't confuse this term with *Solution Publisher*. Catalog item publisher isn't used with solutions.
-
-You need to provide the ID publisher `DisplayName` at a minimum. ID can be any string value. The system checks if that publisher exists, else creates it and assigns an ID.
-
-For example, HR IT team of developers can create a publisher and ID the developers using a Microsoft Entra ID group.
-
-Here's a sample of a publisher record:
-
-```json
-"publisherDetails": {
-   "publisherId": "MyPublisherId",
-   "publisherDisplayName": "Contoso Publishing",
-   "publisherUpnList": [
-      {
-         "action": "Add",
-         "upn": "john.doe@contoso.com"
-      }
-   ],
-   "publisherAADGroupOIDS": [
-      {
-         "action": "Add",
-         "groupName": "PowerCatalogSubmitters",
-         "groupOID": "2ded6de9-ab44-4478-9bd4-e609947daa2e",
-         "groupType": "Security"
-      }
-   ]
-}
-  ```
-
-#### Catalog item
-
-The actual Power Platform solution. A package is what is stored in the catalog.
-
-`id` and `displayName` are mandatory. `description` and `businessCategories` are optional.
-
-Seeded business categories list of value is in the appendix.
-
-Here's an example of a catalog item including its `engineeringName` and `supportName` contacts that are mandatory.
-
-```json
-"catalogItemDefinition": {
-   "id": "ContosoTravelsApp",
-   "displayName": "Contoso Travel Expense App",
-   "description": "Submit expenses on the go!",
-   "offer": {
-   "businessCategories": [526430000, 526430001, 526430002],
-   "type": "Component_Collection",
-   "deploymentType": "Normal",
-   "small48x48Image": {
-      "name": "Small48Image",
-      "fileSasLink": "https://www.contoso.com/icon48.jpg"      
-   },
-   "large216x216Image": {
-      "name": "Large216image2",
-      "fileSasLink": "https://www.contoso.com/icon216.jpg"
-   },
-   "documents": [
-      {
-         "name": "ImaNewfile",
-         "fileSasLink": "https://www.contoso.com/screenshot1.jpg"
-      },
-      {
-         "name": "ImaNewfile2",
-         "fileSasLink": "https://www.contoso.com/screenshot2.jpg"
-      }
-   ],
-   "helpLink": "https://www.contoso.com/help.html",
-   "privacyPolicyLink": "https://www.contoso.com/privacy.html",
-   "legalTerms": "https://www.contoso.com/legal.html",
-   "engineeringName": {
-      "firstName": "John",
-      "lastName": "Roon",
-      "email": "john@contoso.com",
-      "phoneNumber": "999-111-1234"
-   },
-   "supportName": {
-      "firstName": "Jane",
-      "lastName": "Drill",
-      "email": "jane@contoso.com",
-      "phoneNumber": "999-111-1234"
-   }
-   }
-}
-```
-
-#### Engineering contact
-
-Developer product contact.
-
-Contact that the consumer of catalog item can reach out to if they have technical questions to extend or reuse the app for another purpose.
-
-```json
-"engineeringName": {
-   "firstName": "String"
-   "lastName": "String (required)"
-   "email": "String (required)"
-   "phoneNumber": "String"
-}
-```
-
-Example
-
-```json
-   "engineeringName": {
-      "firstName": "John",
-      "lastName": "Roon",
-      "email": "john@contoso.com",
-      "phoneNumber": "999-111-1234"
-   },
-```
-
-#### Support contact
-
-IT support specialist.
-
-Can be same as the engineering contact that the consumer of a catalog item can reach out to if they run into issues with the application.
-
-```json
-"supportName": {
-   "firstName": "String"
-   "lastName": "String (required)"
-   "email": "String (required)"
-   "phoneNumber": "String"
-}
-```
-
-### Recommended data
-
-The following items are highly recommended, but not required.
-
-- [small48x48image](#small48x48image)
-- [Documents](#documents)
-- [Help Link](#help-link)
-
-#### small48x48image
-
-Provide information of the icon to be displayed in maker or other discovery UI. If you don't provide this image a system default icon is used.
-
-```json
-"small48x48image":{
-   "name": "String",
-   "fileSasLink": "Fully qualified publicly accessible url"
-}
-```
-
-#### Documents
-
-You can pass screenshots here of your application to help makers identify whether this app provides the functionality or capability they're looking for.
-
-The most common thing people do before downloading an app or template is look at its images and screenshots to understand the capabilities instead of reading the description.
-
-```json
-{
-   "name": "String",
-   "fileSasLink": "Fully qualified publicly accessible url"
-}
-```
-
-#### Help link
-
-URL link to help documentation.
-
-Fully qualified URLs your users are able to access. These URLs can be links to internal docs or sharepoint resources.
-
-```json
- "helpLink": "https://www.yourcompany.com"
-```
-
-### The following items are optional
-
-- [Source Portal](#source-portal)
-- [Operation](#operation)
-- [Business Justification](#business-justification)
-- [large216x216Image](#large216x216image)
-- [Privacy policy](#privacy-policy)
-- [Legal terms](#legal-terms)
-
-#### Source portal
-
-Source of submission.
-
-When submitting from the Power Platform CLI, use `526430005` as the **Source Portal** value. For other sources, use `526430000`.
-
-#### Business categories
-
-One or more of the business categories can be included in the submission from the list below.
-
-|Code|Description|
-|-----|-----|
-|**526430000**|Customer Service|
-|**526430001**|Project Management|
-|**526430002**|Calendar Management & Scheduling|
-|**526430003**|Email Management|
-|**526430004**|Files & Documentation|
-|**526430005**|Notification & Reminders|
-|**526430006**|Analytics|
-|**526430007**|Collaboration|
-|**526430008**|Commerce|
-|**526430009**|Finance|
-|**526430010**|Compliance & Legal|
-|**526430011**|Sales|
-|**526430012**|IT Tools|
-|**526430013**|Marketing|
-|**526430014**|Operations & Supply Chain|
-|**526430015**|Internet of Things|
-|**526430016**|AI Machine Learning|
-|**526430017**|Geolocation|
-|**526430018**|Human Resources|
-
-Currently, new business categories can't be configured.
-
-#### Operation
-
-Possible values:
-
-- `CreateOrUpdate`
-- `Create`
-- `Update`
-- `Disabled`
-
-Use `CreateOrUpdate` for new submissions.
-
-```json
-  "operation": "CreateOrUpdate"
-```
-
-#### Business justification
-
-Explains the business value created by this catalog item. This information is visible to approvers and appears in the planned consumption experience in the maker discovery user experience.
-
-Users can say their submission helps with cost reduction or productivity, for example. Some organizations require certain classes of value and those values can be entered here.
-
-String can contain HTML, or Rich Text (RTF).
-
-```json
-"businessJustification": "Submit your travel expenses!"
-```
-
-#### large216x216Image
-
-Provide information of the icon to be displayed in the maker or other discovery UI.
-
-Some user experiences uses larger icons to render cards for discovery.
-
-```json
-name: String
-fileSasLink: fully qualified publicly accessible url
-LogicalName: string, for future use, ignored
-recId: guid, for future use, ignored
-attributeName: string, for future use, ignored
-```
-
-An example of the image metadata.
-
-```json
-      "large216x216Image": {
-        "name": "Large216image2",
-        "fileSasLink": "https://mywebsite/largeicon.jpeg"
-      },
-```
-
-#### Privacy policy
-
-URL link to pertinent policies.
-
-Policies regarding careful usage of the component or application being submitted.
-
-```json
-"privacyPolicyLink": "https://www.mycompany.com/privacy.html"
-```
-
-#### Legal terms
-
-URL link to pertinent terms and conditions.
-
-Any legal terms or internal guidance for evaluation of the consumer of the catalog item.
-
-```json
-"legalTerms": "https://www.mycompany.com/legalterms.html"
-```
+> [!div class="nextstepaction"]
+> [Compose submission document](submission-reference.md)
 
 ### See also
 
-<!-- [Catalog in Power Platform (Preview)](catalog.md) -->
-
+[Catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)   
+[View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)   
 [Administer the catalog (preview)](../../admin/administer-catalog.md)
