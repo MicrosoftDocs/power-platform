@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/07/2024
 ms.subservice: admin
-author: Zeffin
-ms.author: johnev
+author: sericks007
+ms.author: sericks
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
