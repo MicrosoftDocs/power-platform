@@ -4,7 +4,7 @@ description: Data loss prevention activity logging
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/09/2023
+ms.date: 06/07/2024
 ms.subservice: admin
 author: Zeffin
 ms.author: johnev
@@ -14,6 +14,9 @@ search.audienceType:
 ---
 
 # Data loss prevention activity logging
+
+> [!Important]
+> The schema documented in this artice is deprecated and won't be available starting in XXXX. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
 > Activity logging for data loss protection policies is not currently available in sovereign clouds.
