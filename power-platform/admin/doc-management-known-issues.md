@@ -169,6 +169,10 @@ The next and previours page arrow buttons in the SharePoint grid do not work. Th
 
 **Resolution**: Users can selet the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
+### Cannot enable OneDrive for business 
+
+OneDrive for businees for new users cannot be enabled currently. This is a known issue and will be fixed in future release. 
+
 ### See also
 
 [Troubleshooting server-based authentication](troubleshooting-server-based-authentication.md) <br />
