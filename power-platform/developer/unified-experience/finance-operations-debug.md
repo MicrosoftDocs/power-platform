@@ -149,9 +149,8 @@ We started with using Visual Studio to create a simple runnable class. After the
 
 ### See also
 
-[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
-
-[Unit testing in the unified developer experience](finance-operations-testing.md)
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
 
