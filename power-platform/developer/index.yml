@@ -152,7 +152,7 @@ landingContent:
             url: /analysis-services/analysis-services-developer-documentation/
 
   # Card
-  - title: Power Virtual Agents
+  - title: Copilot Studio
     linkLists:
       - linkListType: reference
         links:
