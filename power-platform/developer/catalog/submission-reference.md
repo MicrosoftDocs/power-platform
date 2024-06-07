@@ -26,8 +26,71 @@ This table describes the properties for the submission document:
 |`submissionId`|guid|No|Guid to identify the submission. This is a foreign key to allow for linking the request to other systems.|
 |`operation`|string|Yes|Type of operation that is expected to be used, this is for future expansion and is not currently respected. Valid values:<br /> - `CreateOrUpdate` (Default)<br /> - `Create`<br /> - `Update`<br /> - `Disabled`<br />|
 |`businessJustification`|string|No|Describes the business value of the submission to the approver. This value can contain HTML or Rich Text Format (RTF). This informationappears in the planned consumption experience in the maker discovery user experience. Users might say their submission helps with cost reduction or productivity, for example. Some organizations require certain classes of value and those values can be entered here.|
-|`publisherDetails`|[Publisher](#publisher)|The publisher associated with this item submission.|
+|`publisherDetails`|[Publisher](#publisher)|Yes|The publisher associated with this item submission.|
 |`catalogItemDefinition`|[CatalogItemDefinition](#catalogitemdefinition)|Yes|Defines the catalog item being submitted.|
+
+## Publisher
+
+Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the catalog item going forward.
+
+> [!NOTE]
+> Don't confuse this term with *Solution Publisher*. Catalog item publisher isn't used with solutions.
+
+You need to provide the `publisherDisplayName` at a minimum. `publisherId` can be any string value. The system checks if that publisher exists, else creates it and assigns an `publisherId`.
+
+For example, HR IT team of developers can create a publisher and ID the developers using a Microsoft Entra ID group.
+
+Here's a sample of a publisher record that includes operations to add a person and an Entra ID group
+
+```json
+{
+   "publisherId": "MyPublisherId",
+   "publisherDisplayName": "Contoso Publishing",
+   "publisherUpnList": [
+      {
+         "action": "Add",
+         "upn": "john.doe@contoso.com"
+      }
+   ],
+   "publisherAADGroupOIDS": [
+      {
+         "action": "Add",
+         "groupName": "PowerCatalogSubmitters",
+         "groupOID": "2ded6de9-ab44-4478-9bd4-e609947daa2e",
+         "groupType": "Security"
+      }
+   ]
+}
+```
+
+|Property|Type|Required|Description|
+|--------|----|--------|-----------|
+|`publisherId`|string|Yes|The unique ID for this publisher. Use this ID to identify this publisher any time you are creating or updating a catalog item for this publisher. Catalog Items can only be associated to one publisher at a time. The value can be a GUID or string. Once set, it must be maintained.|
+|`publisherDisplayName`|string|Yes|Consumers see this in the catalog gallery.|
+|`publisherUpnList`|[CatalogUPNOperation](#catalogupnoperation)[]|No|People that can submit new or update catalog items as this publisher. Always includes the submitting user the first time the Publisher is created.|
+|`publisherAADGroupOIDS`|[CatalogGroupOperation](#cataloggroupoperation)[]|No|Entra ID Groups whose members are allowed to access this publisher.|
+
+
+### CatalogUPNOperation
+
+Defines an operation to add or remove people that can submit new or update catalog items as this publisher.
+
+|Property|Type|Required|Description|
+|--------|----|--------|-----------|
+|`action`|string|Yes|The action to take with this UPN. Valid values: `Add` or `Remove`. |
+|`upn`|string|Yes|User Principal Name (UPN) of the user.|
+|`userOid`|guid|Yes|Object Identifier for the user.|
+
+### CatalogGroupOperation
+
+Defines an operation to add or remove an Entra ID Group that can access this publisher.
+
+|Property|Type|Required|Description|
+|--------|----|--------|-----------|
+|`action`|string|Yes|The action to take with this UPN. Valid values: `Add` or `Remove`.|
+|`groupName`|string|Yes|Name of group.|
+|`groupOid`|guid|Yes|Object identifier for group.|
+|`groupType`|string|Yes|Type of Group being addressed. Valid Values are `Security` and `Modern`.|
 
 ## CatalogItemDefinition
 
@@ -89,7 +152,7 @@ Here's an example of a catalog item including its `engineeringName` and `support
 |`offer`|[OfferDetails](#offerdetails)|Yes|The details of the catalog item submission.|
 |`packageFile`|[CatalogFileAsset](#catalogfileasset)|Yes|Describes where to get the catalog package file for the submission.|
 
-## OfferDetails
+### OfferDetails
 
 These properties define the details of the catalog item submission.
 
@@ -142,7 +205,7 @@ Set the `businessCategories` property to one or more of these business categorie
 
 Currently, new business categories can't be configured.
 
-## CatalogFileAsset
+### CatalogFileAsset
 
 These properties define a file referenced in the catalog item [OfferDetails](#offerdetails).
 
@@ -151,71 +214,7 @@ These properties define a file referenced in the catalog item [OfferDetails](#of
 |`name`|string|Yes|Name of the file.|
 |`filesaslink`|uri|Yes|Link to download the file. If the link requires authentication, provide a [shared access signature (SAS) URL](/azure/storage/common/storage-sas-overview). |
 
-## Publisher
-
-Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the catalog item going forward.
-
-> [!NOTE]
-> Don't confuse this term with *Solution Publisher*. Catalog item publisher isn't used with solutions.
-
-You need to provide the `publisherDisplayName` at a minimum. `publisherId` can be any string value. The system checks if that publisher exists, else creates it and assigns an `publisherId`.
-
-For example, HR IT team of developers can create a publisher and ID the developers using a Microsoft Entra ID group.
-
-Here's a sample of a publisher record that includes operations to add a person and an Entra ID group
-
-```json
-{
-   "publisherId": "MyPublisherId",
-   "publisherDisplayName": "Contoso Publishing",
-   "publisherUpnList": [
-      {
-         "action": "Add",
-         "upn": "john.doe@contoso.com"
-      }
-   ],
-   "publisherAADGroupOIDS": [
-      {
-         "action": "Add",
-         "groupName": "PowerCatalogSubmitters",
-         "groupOID": "2ded6de9-ab44-4478-9bd4-e609947daa2e",
-         "groupType": "Security"
-      }
-   ]
-}
-```
-
-|Property|Type|Required|Description|
-|--------|----|--------|-----------|
-|`publisherId`|string|Yes|The unique ID for this publisher. Use this ID to identify this publisher any time you are creating or updating a catalog item for this publisher. Catalog Items can only be associated to one publisher at a time. The value can be a GUID or string. Once set, it must be maintained.|
-|`publisherDisplayName`|string|Yes|Consumers see this in the catalog gallery.|
-|`publisherUpnList`|[CatalogUPNOperation](#catalogupnoperation)[]|No|People that can submit new or update catalog items as this publisher. Always includes the submitting user the first time the Publisher is created.|
-|`publisherAADGroupOIDS`|[CatalogGroupOperation](#cataloggroupoperation)[]|No|Entra ID Groups whose members are allowed to access this publisher.|
-
-
-## CatalogUPNOperation
-
-Defines an operation to add or remove people that can submit new or update catalog items as this publisher.
-
-|Property|Type|Required|Description|
-|--------|----|--------|-----------|
-|`action`|string|Yes|The action to take with this UPN. Valid values: `Add` or `Remove`. |
-|`upn`|string|Yes|User Principal Name (UPN) of the user.|
-|`userOid`|guid|Yes|Object Identifier for the user.|
-
-## CatalogGroupOperation
-
-Defines an operation to add or remove an Entra ID Group that can access this publisher.
-
-|Property|Type|Required|Description|
-|--------|----|--------|-----------|
-|`action`|string|Yes|The action to take with this UPN. Valid values: `Add` or `Remove`.|
-|`groupName`|string|Yes|Name of group.|
-|`groupOid`|guid|Yes|Object identifier for group.|
-|`groupType`|string|Yes|Type of Group being addressed. Valid Values are `Security` and `Modern`.|
-
-
-## PersonContactInformation
+### PersonContactInformation
 
 These properties define `engineeringName` and `supportName` people in the catalog item [OfferDetails](#offerdetails).
 
