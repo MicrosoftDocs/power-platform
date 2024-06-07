@@ -2,7 +2,7 @@
 title: "Execute unit tests in Azure Pipelines"
 description: Learn how to set up a unit test for execution using Azure Pipelines.
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 06/07/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -10,8 +10,6 @@ ms.subservice: developer
 ---
 
 # Execute unit tests in Azure Pipelines
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 An Azure Pipeline build task is available that lets users execute unit tests on connected cloud runtime environments using a continuous integration/continuous delivery (CI/CD) pipeline. The "Execute Unit Tests in Unified Environment" task is included in the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension.
 

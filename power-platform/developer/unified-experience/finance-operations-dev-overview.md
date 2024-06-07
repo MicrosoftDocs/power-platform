@@ -2,7 +2,7 @@
 title: "Unified developer experience for finance and operations apps"
 description: Learn about developing code for finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 06/07/2024
 ms.topic: overview
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -53,7 +53,7 @@ Set up Visual Studio on your local development computer.
 [Install and configure development tools](finance-operations-install-config-tools.md)  
 [Write, deploy, and debug X++ code](finance-operations-debug.md)  
 [Frequently asked questions](finance-operations-faq.md)  
-[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md)  
+[Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-erp-template.md)  
 [Develop and customize home page](/dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page) (Dynamics 365 legacy information)  
 [Unified admin experience for finance and operations apps](../../admin/unified-experience/finance-operations-apps-overview.md)
 
