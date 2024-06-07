@@ -218,7 +218,7 @@ If( StartDate > EndDate,
     Error( { Kind: ErrorKind.Validation, Message: "Start Date must be before End Date" } ) )
 ```
 
-In this example, some errors are allowed to pass through while others are supressed and replaced with a value. In the first case, **b** will be in an error state because the **Value** function has an invalid argument. Because this is unexpcted by the formula writer, it is passed through so the user will see it. In the second case, with the same formula, **b** will have the value 0, resulting in a division by zero. In this case, the formula writer may know that this is acceptable for this logic, suppress the error (no banner is shown), and return -1 instead.
+In this example, some errors are allowed to pass through while others are supressed and replaced with a value. In the first case, **b** will be in an error state because the **Value** function has an invalid argument. Because this is unexpected by the formula writer, it is passed through so the user will see it. In the second case, with the same formula, **b** will have the value 0, resulting in a division by zero. In this case, the formula writer may know that this is acceptable for this logic, suppress the error (no banner is shown), and return -1 instead.
 
 ```powerapps-dot
 With( {a: 1, b: Value("a")},

@@ -149,7 +149,7 @@ For more information on the different roles for managing your tenant across the 
 > |      Workflow Executions      | This chart shows how many workflows have been executed in the environment with a Dataverse database over the specified time. | 
 > |     System Jobs Pass Rate     | This chart shows the system job's pass rate as percentage of system jobs that were executed in the environment with a Dataverse database over the specified time.  | 
 > | System Jobs Throughput/Minute | This chart shows the average system jobs that have been executed per hour in the environment with a Dataverse database over the specified time. | 
-> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the environment with a Dataverse databaset over the specified time.   | 
+> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the environment with a Dataverse database over the specified time.   | 
 > |     Most Active Workflows     |  This chart shows top 10 most executed workflows in the environment with a Dataverse database over the specified time.  | 
 > |   Top Workflows by Failures   | This chart shows top 10 most failing workflows in the environment with a Dataverse database over the specified time. Click on a workflow to see the failures and their number of occurrences. | 
 

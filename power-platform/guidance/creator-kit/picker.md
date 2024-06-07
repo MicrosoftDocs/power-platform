@@ -63,7 +63,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 | `Items` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
 | `Suggestions_Items` | A collection (table) of suggestions. |
 | `TagMaxWidth` | The maximum width of the tags when rendering. Overflow text will be truncated with ellipsis's and a hover tooltip shows the full text. |
-| `AllowFreeText` | When typing a value, do not not automatically select the first suggestion so that a free text entry can be provided rather than selecting from a pre-defined list. |
+| `AllowFreeText` | When typing a value, do not automatically select the first suggestion so that a free text entry can be provided rather than selecting from a pre-defined list. |
 | `SearchTermToShortMessage` | The message to display when the Search Term is less than the `MinimumSearchTermLength`.
 | `HintText` | The message to display inside the Picker when no search term is provided. |
 | `NoSuggestionsFoundMessage` | The message to display when the Suggestions collection contains no results. |
