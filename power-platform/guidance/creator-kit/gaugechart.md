@@ -4,7 +4,7 @@ description: Learn about the details and properties of the Gauge chart control i
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/01/2024
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -29,6 +29,11 @@ The speedometer measures a numerical value against a whole, like storage capacit
 The rating meter shows status of the current value within a few predefined ranges or segments. The needle is a required component here.
 
 This code component provides a wrapper around the [Fluent UI GaugeChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/gaugechart) control for use in canvas & custom pages.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/GaugeChart).    |

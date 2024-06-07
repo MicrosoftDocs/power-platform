@@ -4,7 +4,7 @@ description: Learn about the details and properties of the HorizontalBarChart co
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/01/2024
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -25,6 +25,11 @@ contributors:
 A horizontal bar chart is a chart that presents categorical data with rectangular bars with lengths proportional to the values they represent. This type of chart is particularly useful when the intention is to show comparisons among various categories and the labels for those categories are long.
 
 This code component provides a wrapper around the [Fluent UI HorizontalBarChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart) control for use in canvas & custom pages.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/HorizontalBarChart).

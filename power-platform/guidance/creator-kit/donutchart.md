@@ -4,7 +4,7 @@ description: Learn about the details and properties of the Donut chart control i
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/01/2024
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -25,6 +25,11 @@ contributors:
 Donut charts are used to show proportion, which expresses a partial value in comparison to a total value. These types of charts are best to show percentage of individual parts in comparison to a whole, where the change over time is not important to visualize. They are circular statistical graphics divided into slices to illustrate numerical proportion.
 
 This code component provides a wrapper around the [Fluent UI DonutChart](https://developer.microsoft.com/en-us/fluentui#/controls/web/donutchart) control for use in canvas & custom pages.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 > [!NOTE]
 > Full documentation and source code found in the [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/DonutChart).
