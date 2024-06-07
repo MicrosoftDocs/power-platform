@@ -15,7 +15,7 @@ search.audienceType:
 
 When you test and enable a mailbox that is configured for processing incoming email from the mailbox form, you're prompted to select a start date to process email from.
 
-![Select the incoming email processing start date](media/process-email-from.png)
+:::image type="content" source="media/start-date-incoming-email.png" alt-text="Set the start date for processing incoming email.":::
 
 The selected date and time set the **ProcessEmailReceivedAfter** column on the mailbox. This column determines the starting position for synchronizing emails which were received after the supplied date within the remote mailbox once the test and enable process completes.
 
