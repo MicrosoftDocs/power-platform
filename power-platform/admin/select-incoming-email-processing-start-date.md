@@ -1,5 +1,5 @@
 ---
-title: Select the incoming email processing start date
+title: Select the start date for processing incoming email
 description: Provides tips for selecting the incoming email processing start date.
 author: rahulmital
 ms.component: pa-admin
@@ -11,7 +11,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Select the incoming email processing start date
+# Select the start date for processing incoming email
 
 When you test and enable a mailbox that is configured for processing incoming email from the mailbox form, you're prompted to select a start date to process email from.
 
