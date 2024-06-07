@@ -43,7 +43,7 @@ The **Power Apps Adoption** page shows you further insights into how Power Apps 
 
 ### Desktop flows usage
 
-The **Desktop flows usage** page provides an overview of UI-based robotic process automateion (RPA) flow runs in your environment:
+The **Desktop flows usage** page provides an overview of UI-based robotic process automation (RPA) flow runs in your environment:
 
 - Number of runs per date and desktop flow type
 - Total number of runs

@@ -31,7 +31,7 @@ To ensure compliance and prevent surprises, admins should keep up-to-date with t
 - Admins are encouraged to enable Auto-claim so license assignment is automated.
 - Admins should periodically review the Power Automate license reporting, which now includes both tenant and environment level reporting views. To learn more, go to [View license consumption for Power Apps and Power Automate (preview)](../view-license-consumption-issues.md).
 
-    The report identifies flows that require a license for a subset of scenarios that are in scope of the power platform licensing guide. This subset of scenarios constitues the current scope of enforcement. We expect customers to ensure compliance with all licensing requirements covered in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). We expect to add more scenarios to this report to help administrators identify flows that require their attention. We might broaden the scope of enforcements at such time.
+    The report identifies flows that require a license for a subset of scenarios that are in scope of the power platform licensing guide. This subset of scenarios constitutes the current scope of enforcement. We expect customers to ensure compliance with all licensing requirements covered in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). We expect to add more scenarios to this report to help administrators identify flows that require their attention. We might broaden the scope of enforcements at such time.
 
 ## Types of enforcements
 
