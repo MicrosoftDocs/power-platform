@@ -34,8 +34,8 @@ This code component provides a wrapper around the [Fluent UI GaugeChart](https:/
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-
 > [!NOTE]
+>
 > For the full documentation and source code, see [GitHub code components repository](https://github.com/microsoft/powercat-code-components/tree/main/GaugeChart).    |
 
 ## Properties
@@ -51,18 +51,17 @@ The control accepts the following properties:
  - **HideLegend** - This value denotes whether to hide the legend on the gauge.
  - **ChartValueFormat** - This value denotes to show chart value in `Percentage` or `Fraction`.
  - **CustomColors** - Set this value to true to allow custom colors on the chart if provided.
- - **Theme** - Accepts a JSON string that is generated using Fluent UI Theme Designer. If you leave this blank, the default theme defined by Power Apps is used.
 
 - **Items** - The action items to render:
   - **ItemLegend** - The display name of the particular chart data (Item).
   - **ItemSize** - The size of the particular chart data (Item).
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data (Item).
 
-  Note: Item color only applies if the `CustomColors` property is turned on.
+> [!NOTE]
+> Item color only applies if `CustomColors` property is turned on.
 
-### Style properties
+### Accessibility
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). If you leave this blank, the default theme defined by Power Apps is used. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label.
 
 ## Usage

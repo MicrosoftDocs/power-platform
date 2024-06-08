@@ -21,23 +21,27 @@ The Creator Kit helps create Power Apps experiences on the web and mobile platfo
 
 All controls and components included in the kit use the [Fluent UI](https://developer.microsoft.com/fluentui#/) framework to help you easily create consistent, beautiful, and effective user experiences for custom business applications.
 
+Elevate your development workflow and create modern, seamless user experiences effortlessly with the Creator Kit.
+
 > [!NOTE]
 > Before you download and install the Creator Kit, ensure that you [enable code components](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in your environment first.
-
 > [!div class="nextstepaction"]
-> [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
+> [!CAUTION]
+> Do not install the latest version of the Creator Kit (May 2024) in apps using dialog, panel, or expandMenu. See [announcement](#important-warning-regression-issue-in-latest-creator-kit-version) for more details.
+
+> [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::
 
-### Quick links
+## Quick links
 
 | Resource | Short Url | Description |
 | -------- | --------- | ----------- |
 | **AppSource Offering** | [aka.ms/creatorkit/appsource](https://aka.ms/creatorkit/appsource) | Offering page for the Creator Kit on AppSource (see [instructions](./setup.md) to learn more). |
 | **Canvas reference solution** | [aka.ms/creatorkit/referencecanvas](https://aka.ms/creatorkitreferencecanvas) | Direct download link for the Canvas reference solution. |
 | **Model Driven App (Custom page) reference solution** | [aka.ms/creatorkit/referenceMDA](https://aka.ms/creatorkitreferencemda) | Direct download link for the Model Driven App/Custom Pages reference solution |
-| **Latest release notes** | [aka.ms/creatorkitlatestrelease](https://aka.ms/creatorkitlatestrelease) | Release notes for the latest version of the Creator Kit | 
+| **Latest release notes** | [aka.ms/creatorkitlatestrelease](https://aka.ms/creatorkitlatestrelease) | Release notes for the latest version of the Creator Kit |
 | **GitHub Repository** | [aka.ms/creatorkitrepo](https://github.com/microsoft/powercat-creator-kit) | GitHub repository that hosts source code for packaged components (CreatorKitCore) and reference solution assets. |
 | **Code Component Repository** | [aka.ms/creatorkit/coderepo](https://aka.ms/creatorkit/coderepo) | The code component source code and more detailed component-level documentation. |
 | **Creator Kit Documentation** (this page) | [aka.ms/ck](https://aka.ms/ck) or [aka.ms/creatorkit](https://aka.ms/creatorkit) | aka.ms link to this page. Use this to quickly access the documentation and reference during development. |
@@ -64,6 +68,23 @@ If you face issues with:
 - **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support. See guidance on contacting support for [admins]() and [makers](https://powerapps.microsoft.com/en-us/support/).
 
 If you are not sure if you're experiencing an issue with the Creator Kit or the platform, [report the issue on the GitHub](https://aka.ms/Creator-Kit-Issues) first and our team will triage the issue.
+
+## Updates
+
+### Important Warning: Platform Regression affecting upgrade to latest Creator Kit Version
+
+We have identified an issue related to a platform regression that was introduced and affecting previous versions of the Creator Kit that affects canvas library components containing Power Fx formulas, specifically the Dialog, Panel, and ExpandMenu components. A fix for this issue was pushed in the latest version of the Creator Kit that was released May 2024, however due to current platform limitations the upgrade results in data loss of the Power Fx formulas for Event type properties of the components (e.g., OnButtonSelect). A platform update will finish rolling out by 24 June 2024.
+
+**Impact:**
+Power Fx formulas within these components may be lost when upgrading to the latest Creator Kit version (May 2024).
+
+**Action required:**
+**DO NOT INSTALL** the latest version of the Creator Kit (May 2024) if you are using the aforementioned canvas library components with Power Fx formulas. Installing this version may cause functionality issues within your applications.
+
+**Next steps:**
+Wait for fix. We are actively working on resolving this issue. A fix will be included in the upcoming Power Apps client version 2406.2, available in all public regions by Monday, 24 June 2024.
+
+We apologize for any inconvenience this may cause and appreciate your understanding and patience as we address this issue. If you have any questions or need further assistance, please raise an issue in our [Github repository](https://github.com/microsoft/powercat-creator-kit/issues).
 
 ## More resources
 

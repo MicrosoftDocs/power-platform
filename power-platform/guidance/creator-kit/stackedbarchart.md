@@ -38,11 +38,11 @@ This code component provides a wrapper around the [Fluent UI HorizontalBarChart 
 
 The control accepts the following properties:
 
- - **Title** - This value denotes title of the chart.
  - **HideLegend** - This value denotes whether to show or hide legends on the chart.
  - **BarHeight** - This value denotes height of the bar presented in the chart.
  - **HideTooltip** - This option controls whether to show or hide tooltips on the chart.
  - **CustomColors** - This option is used to show custom colors on the chart if provided
+
 - **Items** - The action items to render
   - **ItemTitle** - The Display Name of the particular chart data(Item).
   - **ItemKey** - The key to use to identify the Item. The keys must be unique.
@@ -50,11 +50,11 @@ The control accepts the following properties:
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data(Item).
   - **ItemCallout** - Set the value to be displayed on a popover/tooltip.
 
-  Note: Item color only applies if `CustomColors` property is turned on.
+> [!NOTE]
+> Item color only applies if `CustomColors` property is turned on.
 
-### Style properties
+### Accessibility
 
-- **Theme** - Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). If you leave this blank, the default theme defined by Power Apps is used. See [theming](theme.md) for guidance on how to configure.
 - **AccessibilityLabel** - Screen reader aria-label
 
 ## Usage
