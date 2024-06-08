@@ -28,7 +28,7 @@ Elevate your development workflow and create modern, seamless user experiences e
 > [!div class="nextstepaction"]
 
 > [!CAUTION]
-> Do not install the latest version of the Creator Kit (May 2024) in apps using dialog, panel, or expandMenu. See [announcement](#important-warning-regression-issue-in-latest-creator-kit-version) for more details.
+> Do not install the latest version of the Creator Kit (May 2024) in apps using dialog, panel, or expandMenu. See [announcement](#important-warning-platform-regression-affecting-upgrade-to-latest-creator-kit-version) for more details.
 
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
