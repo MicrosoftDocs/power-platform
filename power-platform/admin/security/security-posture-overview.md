@@ -33,37 +33,14 @@ search.audienceType:
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 **Formula: Total Achieved Impact / Total Possible Impact**
 
-•	How are feature impacts determined? 
+How are feature impacts determined? 
+
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
-Feature 	Impact 
-IP Firewall 	1 x Each Environment 
-IP Cookie Bindings 	1 x Each Environment 
-Environment Security Group 	1 x Each Environment 
-Tenant DLP 	Total number of Environments 
-Tenant Isolation 	Total number of Environments 
-Tenant Lockbox 	If Enabled, Total number of Managed 
-Environments 
- 
-Zero, If disabled. 
-Zero, If Disabled and No Managed Environments. 
+
  
 Example: 
 Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
-Feature 	Impact 	Max Impact 
-IP Firewall 	1 x Each Environment 	10 Environments x 1 or 
-10 
-IP Cookie Bindings 	1 x Each Environment 	10 Environments x 1 or 
-10 
-Environment Security Group 	1 x Each Environment 	10 Environments x 1 or 
-10 
-Tenant DLP 	Total number of Environments 	10 Environments 
-Tenant Isolation 	Total number of Environments 	10 Environments 
-Tenant Lockbox 	If Enabled, Total number of Managed 
-Environments 
- 
-Zero, If disabled. 
-Zero, If Disabled and No Managed Environments. 	5 Environments 
- 
+
 Maximum Impact: 55 
 Assume the following: 
 •	Tenant Isolation is enabled (10)
