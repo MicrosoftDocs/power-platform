@@ -16,9 +16,9 @@ search.audienceType:
 
                                                            
 **Security Hub in Power Platform Admin Center** offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Security hub offers
-- Security posture management where admins can understand and improve their organization’s security policies specific to their needs. 
-- Reactive governance, in the form of recommendations. identify and act on the topmost impactful recommendations to improve the posture 
-- Proactive governance utilizes the rich set of high values tools and security capabilities available to gain deep visibility, detect threats effectively, and proactively set policies in place to safeguard from vulnerabilities and risks.  
+- **Security posture management**: where admins can understand and improve their organization’s security policies specific to their needs. 
+- **Reactive governance**: in the form of recommendations. identify and act on the topmost impactful recommendations to improve the posture 
+- **Proactive governance**: utilizes the rich set of high values tools and security capabilities available to gain deep visibility, detect threats effectively, and proactively set policies in place to safeguard from vulnerabilities and risks.  
 
 
 ## What is security posture?
