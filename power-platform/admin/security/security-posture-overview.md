@@ -20,7 +20,10 @@ search.audienceType:
 - **Reactive governance**: in the form of recommendations. identify and act on the topmost impactful recommendations to improve the posture 
 - **Proactive governance**: utilizes the rich set of high values tools and security capabilities available to gain deep visibility, detect threats effectively, and proactively set policies in place to safeguard from vulnerabilities and risks.
 
-  **Getting started**
+ **Getting started** 
+ To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. Not enabling Tenant Level Analytics will cause no data to populate as shown below.
+ To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
+ The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”.
 
 
 ## What is security posture?
