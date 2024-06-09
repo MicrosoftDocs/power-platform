@@ -31,6 +31,53 @@ search.audienceType:
  **Calculating your security posture**
  Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
+**Formula: Total Achieved Impact / Total Possible Impact **
+
+•	How are feature impacts determined? 
+Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
+Feature 	Impact 
+IP Firewall 	1 x Each Environment 
+IP Cookie Bindings 	1 x Each Environment 
+Environment Security Group 	1 x Each Environment 
+Tenant DLP 	Total number of Environments 
+Tenant Isolation 	Total number of Environments 
+Tenant Lockbox 	If Enabled, Total number of Managed 
+Environments 
+ 
+Zero, If disabled. 
+Zero, If Disabled and No Managed Environments. 
+ 
+Example: 
+Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
+Feature 	Impact 	Max Impact 
+IP Firewall 	1 x Each Environment 	10 Environments x 1 or 
+10 
+IP Cookie Bindings 	1 x Each Environment 	10 Environments x 1 or 
+10 
+Environment Security Group 	1 x Each Environment 	10 Environments x 1 or 
+10 
+Tenant DLP 	Total number of Environments 	10 Environments 
+Tenant Isolation 	Total number of Environments 	10 Environments 
+Tenant Lockbox 	If Enabled, Total number of Managed 
+Environments 
+ 
+Zero, If disabled. 
+Zero, If Disabled and No Managed Environments. 	5 Environments 
+ 
+Maximum Impact: 55 
+Assume the following: 
+•	Tenant Isolation is enabled (10)
+•	At least one DLP policy is configured on the tenant (10)
+•	5 of 10 Environments have a Security Group. 
+•	2 of 10 Environments have IP Firewall. 
+•	3 of 10 Environments have IP Cookie Bindings. 
+•	Customer Lockbox is Off. 
+ 
+Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
+Given the formula Total Achieved Impact / Total Possible Impact 
+Secure Score = 30 / 55 
+ 
+
 
 
 
