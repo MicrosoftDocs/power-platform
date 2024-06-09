@@ -31,7 +31,7 @@ search.audienceType:
  **Calculating your security posture**
  Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
-**Formula: Total Achieved Impact / Total Possible Impact **
+**Formula: Total Achieved Impact / Total Possible Impact**
 
 •	How are feature impacts determined? 
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
