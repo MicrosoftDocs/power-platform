@@ -15,7 +15,7 @@ search.audienceType:
 
 ## About group teams
 
-An Microsoft Entra *group* team. Similar to *owner* team, a Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
+A Microsoft Entra *group* team. Similar to *owner* team, a Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
 
 ### Using Microsoft Entra groups to manage a user's app and data access 
 

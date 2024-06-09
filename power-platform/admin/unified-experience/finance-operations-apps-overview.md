@@ -20,7 +20,7 @@ As part of the unification of admin experiences of finance and operations apps w
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
-To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecyle Servcies (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
+To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecyle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 

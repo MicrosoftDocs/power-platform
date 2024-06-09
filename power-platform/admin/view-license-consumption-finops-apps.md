@@ -27,7 +27,7 @@ You can use the **Licenses** page in the [Power Platform admin center](https://a
 
 ## Summary tab
 
-To see an summary of license usage:
+To see a summary of license usage:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. From **Billing**, select **Licenses**.
