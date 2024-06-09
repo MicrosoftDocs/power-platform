@@ -15,7 +15,11 @@ search.audienceType:
 # Security Hub in Power Platform Admin Center
 
                                                            
-**Security Hub in Power Platform Admin Center** is a new solution for managing the security posture of your Power Platform and D365 deployments all in one place. The Security Hub is a unique and innovative experience that enables security admins to trust the platform with their most sensitive data and business processes vulnerabilities and risks, it provides strategic guidance with system provided recommendations to achieve their security and compliance goals with minimal effort and resources. 
+**Security Hub in Power Platform Admin Center** offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Security hub offers
+•	Security posture management where admins can understand and improve their organization’s security policies specific to their needs. 
+•	Reactive governance, in the form of recommendations. identify and act on the topmost impactful recommendations to improve the posture 
+•	Proactive governance utilizes the rich set of high values tools and security capabilities available to gain deep visibility, detect threats effectively, and proactively set policies in place to safeguard from vulnerabilities and risks.  
+
 
 ## What is security posture?
 
