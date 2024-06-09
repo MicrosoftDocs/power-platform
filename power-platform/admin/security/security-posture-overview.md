@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Security Hub in Power Platform Admin Center
+                                                      # Security Hub in Power Platform Admin Center
 
  ## Overview                                                           
 **Security Hub in Power Platform Admin Center** offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Security hub offers
