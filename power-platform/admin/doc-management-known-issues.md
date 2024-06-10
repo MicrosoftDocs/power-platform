@@ -8,9 +8,9 @@ ms.topic: article
 applies_to: 
   - PowerApps
 ms.assetid: 
-author: Mattp123
+author: sericks007
 ms.subservice: admin
-ms.author: matp
+ms.author: sericks
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -18,7 +18,6 @@ topic-status: Drafting
 search.audienceType: 
   - admin
 ms.contributors:
-- sericks
 - srihas
 ---
 # Known issues with document management
@@ -26,7 +25,7 @@ ms.contributors:
 The customizations and configurations described here can cause issues with the document management feature. 
 
 ## Components from an Iframe
-Opening a component from an Iframe in an entity form from a Unified Interface app will not succeed. For example, loading the Document Associated Grid for an entity form in an Iframe loads the grid in the Iframe but users will not be able to interact with the document records from the grid. 
+Opening a component from an Iframe in an entity form from a Unified Interface app won't succeed. For example, loading the Document Associated Grid for an entity form in an Iframe loads the grid in the Iframe but users can't interact with the document records from the grid. 
 
 ## Third-party solutions that modify Document Management folders 
 Deploying third-party solutions that modify the folders used with the Document Management feature can cause unexpected behavior. 
@@ -58,9 +57,9 @@ The following describes the scenario that causes the error.
 
 3. Open any entity where document management is enabled, and create the document location for the new site that you added in step 2 as the parent site. 
 
-4. You will encounter the "File Not Found" error. The cause of the error is that there are no document libraries for this new SharePoint site in SharePoint.
+4. The "File Not Found" error is displayed. The cause of the error is that there are no document libraries for this new SharePoint site in SharePoint.
 
-To mitigate this issue, run the Document Management Settings wizard for this newly added site as well.
+To mitigate this issue, run the Document Management Settings wizard for this newly added site, as well.
 
 Points to consider:
 
@@ -71,11 +70,10 @@ Points to consider:
 For more information, see [Create or edit document location records](./create-edit-document-location-records.md).
 
 ## SharePoint enforces resource throttling with 5000 or more documents
-A document library with 5000 or more documents might experience resource throttling.
-Users may experience the following behavior with document management and OneNote integration:
+A document library with 5000 or more documents might experience resource throttling. Users may experience the following behavior with document management and OneNote integration:
 
 - A sort on columns other than the default sorted column, may return the error message "The throttling limit has been exceeded by this operation."
-- Microsoft OneNote integration will not work when the document library has 5000 or more documents.
+- Microsoft OneNote integration doesn't work when the document library has 5000 or more documents.
 
 If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more information, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
 
@@ -85,10 +83,10 @@ Users cannot see documents when many entities are pointing to a SharePoint docum
 In Microsoft Dataverse, you can create an entity and enable the Document management property for the entity. This allows for the entity to participate in integration with SharePoint. Power Apps and Dataverse support only a one-to-many relationship (1:N) between any entity and a SharePoint document-related entity. A many-to-one or a many-to-many relationship between an entity and a SharePoint document entity results in the app not listing the documents that exist in the SharePoint document library.
 
 ## Document location for child entities
-Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents will not appear in the parent entity folder. Once the location is created, child documents will begin to appear in the parent entity folder.
+Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents don't appear in the parent entity folder. Once the location is created, child documents begin to appear in the parent entity folder.
 
 ## Document folder location for multiple lookups
-If the entity selected for the Based on entity folder structure has two lookups, documents will not be stored inside the entity folder, but will be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders will not be stored inside any account document location, but will be stored in the root folder.
+If the entity selected for the Based on entity folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders can't be stored inside any account document location, but can be stored in the root folder.
 
 ## Entering a date for OneNote documents
 
@@ -130,7 +128,7 @@ SharePoint integration does not work with the Dynamics 365 editable grid, due to
 
 ### Maximum number of rows not honored in the document associated grid
 
-Configuring the following in the **DocumentGrid** pane will be ignored.
+Configuring the following in the **DocumentGrid** pane is ignored:
 
 - **Maximum number of rows**: a value
 - **Use available space**: unchecked
