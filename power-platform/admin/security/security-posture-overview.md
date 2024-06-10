@@ -48,7 +48,7 @@ Your security score is calculated as a sum of your achieved impact score over to
 
 **Formula: Total Achieved Impact / Total Possible Impact**
 
-### **How are feature impacts determined**
+ ### **Calculating your security posture**
 
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
 
