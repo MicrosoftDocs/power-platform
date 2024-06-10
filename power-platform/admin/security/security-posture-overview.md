@@ -21,6 +21,7 @@ search.audienceType:
 - **Proactive governance**: utilizes the rich set of high values tools and security capabilities available to gain deep visibility, detect threats effectively, and proactively set policies in place to safeguard from vulnerabilities and risks.
 
  **Getting started** 
+ 
  To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
  Not enabling Tenant Level Analytics will cause no data to populate as shown below.
  
