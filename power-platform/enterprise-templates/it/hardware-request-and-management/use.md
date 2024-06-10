@@ -129,7 +129,7 @@ It can be set up so that hardware managers have a workflow item for *Approval* s
 
 It can be set up so that emails go to a hardware manager's *Outlook Inbox* when a request is submitted. Follow these steps to get started with this approval process scenario:
 
-1. When an hardware request email arrives, simply open the email to review the relevant details for the request:
+1. When a hardware request email arrives, simply open the email to review the relevant details for the request:
 
     1. Status – "Requested" in this case (eventually "Approved" or "Rejected")
     1. Name

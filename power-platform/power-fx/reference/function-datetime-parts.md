@@ -37,7 +37,7 @@ The **Minute** function returns the minute component of a Date/Time value, rangi
 
 The **Second** function returns the second component of a Date/Time value, ranging from 0 to 59.
 
-The **Weekday** function returns the weekday of a Date/Time value. By default, the result ranges from 1 (Sunday) to 7 (Saturday). You can specify a different range with an Microsoft Excel Weekday function code or a StartOfWeek enumeration value:
+The **Weekday** function returns the weekday of a Date/Time value. By default, the result ranges from 1 (Sunday) to 7 (Saturday). You can specify a different range with a Microsoft Excel Weekday function code or a StartOfWeek enumeration value:
 
 | Excel code    | StartOfWeek enumeration    | Description                                       |
 | ------------- | -------------------------- | ------------------------------------------------- |

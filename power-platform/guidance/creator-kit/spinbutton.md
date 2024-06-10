@@ -64,7 +64,7 @@ This code component provides a wrapper around the [Fluent UI SpinButton](https:/
 
 ## Example
 
-### Connecting SpinButton to a Edit Form data card
+### Connecting SpinButton to an Edit Form data card
 
 1. Unlock the data card
 1. Hide the default control for the field

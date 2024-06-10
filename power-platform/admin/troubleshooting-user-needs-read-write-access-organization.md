@@ -71,7 +71,7 @@ See [How access to a record is determined](how-record-access-determined.md).
 ### Troubleshoot license and membership issues
 
 1. Verify if a license has been assigned to the user and assign one if not already. See: [Add a license to a user account](assign-licenses.md).
-2. Once a license is assigned, it may take some time for the license change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can readd the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
+2. Once a license is assigned, it may take some time for the license change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can read the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
 
 ### Troubleshoot access issues
 
