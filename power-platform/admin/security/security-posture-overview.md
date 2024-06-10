@@ -129,6 +129,11 @@ Security hubs offer a variety of security features that will help secure your te
 
 This exists since recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, this tab contains only managed environments.  Note: This is true only for features that require Managed Environments 
 
+**Why are there more recommendation notifications than the number of environments?**
+
+ The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, 1: many relationships. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
+
+
 
 
  
