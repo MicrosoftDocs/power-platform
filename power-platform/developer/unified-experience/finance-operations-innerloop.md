@@ -21,27 +21,33 @@ This article shows you how to:
 > 
 > [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
  
-# A developer Machine and Multiple Unified Developer Environments 
+# A developer machine and multiple unified developer environments 
 
 A developer machine can be used to connect to multiple unified developer environments. 
+
 An instance of Visual Studio can at any time be connected to only one environment.
+
 An instance of Visual Studio can at any time have only one metadata configuration active. You can switch the active configuration using the menu **Extensions** > **Dynamics 365** > **Configure Metadata**.
+
 Switching the active metadata configuration does not change the environment you are connected to. You can change it from the menu **Tools** > **Connect to Dataverse**.
-The description, custom metadata folder, etc. should be used to ensure the appropriateness of the configuration for an environment. The same configuration may be valid for 2 environments with same F&O application and platform versions.It is still better to have a metadata configuration per environment though these configurations can have common values for custom and reference metdata folder, etc.
-Different environments with the same F&O application and platform version could be used for different purposes with the active custom and reference metadata determining what gets developed, built and deployed. It is best to have a metadata configuration per environment.
-Different environments with different F&O application and platform versions could be used for different purposes. It is recommended in this case that the F&O Visual studio extension versions match with the environment. Commonly, though if there are no breaking changes among the various targeted application and platform versions using the oldest version for the F&O Visual Studio extension version would ensure that the built artficats are compatible with higher runtime versions in the environments.
+
+The same configuration may be valid for multiple environments with same F&O application and platform versions. It is still better to have a metadata configuration per environment. These configurations can have common values for custom and reference metdata folder, etc. The current configuration and the current connection together determine what gets deployed and to which environment.
+
+Different environments with different F&O application and platform versions could be used for different purposes. It is recommended in this case that the F&O Visual studio extension version match with the environment. 
+
+The X++ compiler, label compiler and other tools invoked by any version of the VS extension, corresponds to the application version of the active configuration you ahave set as current. 
+
+Commonly, though if there are no breaking changes among the various targeted application and platform versions using the oldest version for the F&O Visual Studio extension version would ensure that the built artifacts are compatible with higher runtime versions in the environments.
 
 
-> [!IMPORTANT]
-> **A Unified Developer Environment and multiple developer machines**
-
-> Any developer machine can be used to connect to a unified developer environments.
-> 
-> Whether it is the same or a different developer if multiple developer machines are used it becomes more likely, but not inevitable, to unintentionally corrupt the common Unified Developer Environment, by deploying changes that did not account for what was already deployed to the same environment.
+> [!NOTE]
+> Whether it is the same or a different developer if multiple developer machines are used it becomes more likely, but not inevitable, to unintentionally corrupt the common Unified Developer Environment.
+>
+> This happens when deploying a change that did not account for what was already deployed to the same environment.
 > 
 > The situation described above can also happen from the same developer machine, in case the custom metadata code loses consistency, for example by switching git branches.
 > 
-> **We cannot emphasize enough the important role of version control to ensure good code hygiene and to act as a historical record, checkpoints and synchronization points.**
+> **We cannot emphasize enough the important role of version control to ensure good code hygiene and to provide historical records, checkpoints and synchronization points.**
 
 
 # How to deploy code and synchronize database on the Unified Developer Environment 
@@ -77,7 +83,7 @@ As an example if you want to add a license file __licenseFile01__ for for Module
 
 Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
 
-Learn more at [Independent software vendor (ISV) licensing](../../../dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-licensing)
+Learn more at [Independent software vendor (ISV) licensing](/dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-licensing)
 
 
 ## How can I convert a fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
@@ -99,19 +105,24 @@ You can also download the logs from your Dataverse organization:
 
 ## Deployment and DBSync succeeded but I want to troubleshoot my changes?
 
-If deployment and DB Sync are successful, you should execute your scenario and contrast expectyed and actual behavior for clues. Infolog is often very helpful in this case.
-If above is not enought yiou should 
+If deployment and DB Sync are successful, you should execute your scenario and contrast expected and actual behavior for clues. Infolog is often very helpful in this case.
 
+If above is not enought you should attach the debugger to the running AOS process in the unified environment using the menu **Dynamics 365** > **Launch debugger**.
 
+Executing the scenario this time with a few breakpponts set will give you better insight.
 
+We recommend writing X++ unit tests for your code to ensure regressions are easily and quickly detected.
 
+You could also use Application Insights to monitor and diagnose the application executing in the unified developer environment.
+
+Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)
 
 
 
 ### See also
 
 [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
-[Unit testing in the unified developer experience](finance-operations-debug.md)
+[Write, deploy, and debug X++ code](finance-operations-debug.md)
 [Unit testing in the unified developer experience](finance-operations-testing.md) 
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
