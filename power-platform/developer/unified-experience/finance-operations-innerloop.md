@@ -47,7 +47,7 @@ The way to keep things consistent and prevent unintended changes to the UDEs is 
 
 # How to deploy code and synchronize database on the Unified Developer Environment 
    
-| # | I want to | Deployment method | Notes |
+| # | Want to | Deployment method | Notes |
 |---|---|---|---|
 |1|Deploy one or many modules that are already built | Use the **Dynamics 365** > **Deploy** > **Deploy models ...** dialog.|You can optionally synchronize the database for the modules.|
 |2|Deploy one or many modules as part of a full build | Initiate via the **Dynamics 365** > **Build models** dialog after setting the option to **Deploy to connected online environment** .|You can optionally synchronize the database for the modules using the **synchronize database** setting on the same **Options** tab.|
@@ -70,7 +70,7 @@ Proceed by adding a new reference in **Folders for reference metadata** by click
 As an example if you want to add Module01 and Module02, place them in a common folder example E:\ISVModules and then refer the latter parent folder.
 
 
-## How do I include a license for my modules?
+## How to include a license for my modules?
 
 Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin folder. This license is verified and applied when you deploy the package.
 
@@ -81,7 +81,7 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 Learn more at [Independent software vendor (ISV) licensing](/dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-licensing)
 
 
-## How can I convert a fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
+## How to convert a fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. 
 
@@ -100,7 +100,7 @@ You can also download the logs from your Dataverse organization:
 - Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
 
 
-## Deployment and DBSync succeeded but I want to troubleshoot my changes?
+## Deployment and DBSync succeeded but need to investigate my changes?
 
 If deployment and DB Sync are successful, you should execute your scenario and contrast expected and actual behavior for clues. Infolog is often very helpful in this case.
 
@@ -115,7 +115,7 @@ You could also use Application Insights to monitor and diagnose the application 
 Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)
 
 
-## What information do I provide to Microsoft Support?
+## What information to provide Microsoft Support?
 
 The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. 
 
