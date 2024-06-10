@@ -73,7 +73,9 @@ Assume the following:
 - Customer Lockbox is Off. 
  
 Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
-Given the formula Total Achieved Impact / Total Possible Impact 
+
+Given the formula: Total Achieved Impact / Total Possible Impact 
+
 Secure Score = 30 / 55 
  
 
