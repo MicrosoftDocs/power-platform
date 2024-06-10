@@ -244,7 +244,7 @@ For information about the programmatic interface for managing configuration and 
 ## Resolving synchronization issues  
  Even after several retry attempts, record synchronization failures  may occur from database storage constraints or table locking due to long running queries. To resolve these failures you can force a resynchronization of only failed records or a  resynchronization of all records.  
   
-1. View your export profiles to look for any that have record synchronization failures. You do this by viewing the data profiles in the Synchronization area or by opening a Export Profile , such as this profile that has a contact entity record synchronization failure.  
+1. View your export profiles to look for any that have record synchronization failures. You do this by viewing the data profiles in the Synchronization area or by opening an Export Profile , such as this profile that has a contact entity record synchronization failure.  
   
    ![DataExport&#95;failed&#95;records&#95;exist.](../admin/media/data-export-failed-records-exist.PNG "DataExport_failed_records_exist")  
   
