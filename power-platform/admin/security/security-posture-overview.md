@@ -23,6 +23,7 @@ search.audienceType:
  **Getting started** 
  To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
  Not enabling Tenant Level Analytics will cause no data to populate as shown below.
+ 
  :::image type="content" source="media/No-data.png" alt-text="No-data.":::
  To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
  The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”.
