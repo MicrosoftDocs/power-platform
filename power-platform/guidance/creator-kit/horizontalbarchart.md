@@ -38,13 +38,13 @@ This code component provides a wrapper around the [Fluent UI HorizontalBarChart]
 
 The control accepts the following properties:
 
- - **Title** - This value denotes title of the chart.
- - **HideLabels** - Set this option to true to hide labels on the chart.
- - **BarHeight** - This value denotes height of the bar presented in the chart.
- - **HideTooltip** - Set this option to true to hide tooltips on the chart.
- - **CustomColors** - Set this option to true to allow custom colors on chart if provided.
- - **Variant** - This option allows the chart to be shown in `Absolute scale` or `Part to whole`.
- - **ChartDataMode** - This option provides to show the value of each bar in `Fraction` or `Percentage`.
+- **Title** - This value denotes title of the chart.
+- **HideLabels** - Set this option to true to hide labels on the chart.
+- **BarHeight** - This value denotes height of the bar presented in the chart.
+- **HideTooltip** - Set this option to true to hide tooltips on the chart.
+- **CustomColors** - Set this option to true to allow custom colors on chart if provided.
+- **Variant** - This option allows the chart to be shown in `Absolute scale` or `Part to whole`.
+- **ChartDataMode** - This option provides to show the value of each bar in `Fraction` or `Percentage`.
 - **Items** - The action items to render:
   - **ItemTitle** - The Display Name of the particular chart data (Item).
   - **ItemLegend** - The legend associated with the particular chart data (Item).

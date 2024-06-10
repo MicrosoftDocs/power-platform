@@ -4,7 +4,7 @@ description: Overview of the Creator Kit
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 11/02/2022
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -13,6 +13,7 @@ search.audienceType:
 contributors:
   - tapanm-msft
   - slaouist
+  - DanaMartens
 ---
 
 # Creator kit
@@ -25,11 +26,11 @@ Elevate your development workflow and create modern, seamless user experiences e
 
 > [!NOTE]
 > Before you download and install the Creator Kit, ensure that you [enable code components](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in your environment first.
-> [!div class="nextstepaction"]
 
 > [!CAUTION]
-> Do not install the latest version of the Creator Kit (May 2024) in apps using dialog, panel, or expandMenu. See [announcement](#important-warning-platform-regression-affecting-upgrade-to-latest-creator-kit-version) for more details.
+> Do not install the latest version of the Creator Kit (May 2024) in apps using a dialog, panel, or expandMenu. For more information, go to [Important Warning: Platform Regression affecting upgrade to latest Creator Kit Version](#important-warning-platform-regression-affecting-upgrade-to-latest-creator-kit-version).
 
+> [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
 
 :::image type="content" source="media/creatorkitview.png" alt-text="Examples of the Fluent UI components in the Creator Kit." border="false":::

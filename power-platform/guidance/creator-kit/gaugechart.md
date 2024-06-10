@@ -42,15 +42,15 @@ This code component provides a wrapper around the [Fluent UI GaugeChart](https:/
 
 The control accepts the following properties:
 
- - **Title** - This value denotes title of the chart.
- - **Sublabel** - This value denotes sub label of the chart.
- - **ChartValue** - This value denotes the value to be displayed on the gauge.
- - **MinValue** - This value denotes the minimum value of the gauge.
- - **MaxValue** - This value denotes the maximum value of the gauge.
- - **HideMinMax** - This value denotes whether to hide the min and max values on the gauge.
- - **HideLegend** - This value denotes whether to hide the legend on the gauge.
- - **ChartValueFormat** - This value denotes to show chart value in `Percentage` or `Fraction`.
- - **CustomColors** - Set this value to true to allow custom colors on the chart if provided.
+- **Title** - This value denotes title of the chart.
+- **Sublabel** - This value denotes sub label of the chart.
+- **ChartValue** - This value denotes the value to be displayed on the gauge.
+- **MinValue** - This value denotes the minimum value of the gauge.
+- **MaxValue** - This value denotes the maximum value of the gauge.
+- **HideMinMax** - This value denotes whether to hide the min and max values on the gauge.
+- **HideLegend** - This value denotes whether to hide the legend on the gauge.
+- **ChartValueFormat** - This value denotes to show chart value in `Percentage` or `Fraction`.
+- **CustomColors** - Set this value to true to allow custom colors on the chart if provided.
 
 - **Items** - The action items to render:
   - **ItemLegend** - The display name of the particular chart data (Item).
@@ -58,7 +58,7 @@ The control accepts the following properties:
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data (Item).
 
 > [!NOTE]
-> Item color only applies if `CustomColors` property is turned on.
+> Item color only applies if the `CustomColors` property is turned on.
 
 ### Accessibility
 

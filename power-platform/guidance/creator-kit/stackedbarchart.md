@@ -38,10 +38,10 @@ This code component provides a wrapper around the [Fluent UI HorizontalBarChart 
 
 The control accepts the following properties:
 
- - **HideLegend** - This value denotes whether to show or hide legends on the chart.
- - **BarHeight** - This value denotes height of the bar presented in the chart.
- - **HideTooltip** - This option controls whether to show or hide tooltips on the chart.
- - **CustomColors** - This option is used to show custom colors on the chart if provided
+- **HideLegend** - This value denotes whether to show or hide legends on the chart.
+- **BarHeight** - This value denotes height of the bar presented in the chart.
+- **HideTooltip** - This option controls whether to show or hide tooltips on the chart.
+- **CustomColors** - This option is used to show custom colors on the chart if provided
 
 - **Items** - The action items to render
   - **ItemTitle** - The Display Name of the particular chart data(Item).
@@ -51,7 +51,7 @@ The control accepts the following properties:
   - **ItemCallout** - Set the value to be displayed on a popover/tooltip.
 
 > [!NOTE]
-> Item color only applies if `CustomColors` property is turned on.
+> Item color only applies if the `CustomColors` property is turned on.
 
 ### Accessibility
 

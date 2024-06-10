@@ -53,7 +53,7 @@ The control accepts the following properties:
   - **ItemColor** - Set the color name or HEX value to be displayed for the particular chart data(Item).
 
 > [!NOTE]
-> Item color only applies if `CustomColors` property is turned on.
+> Item color only applies if the `CustomColors` property is turned on.
 
 ### Accessibility
 
