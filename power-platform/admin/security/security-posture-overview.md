@@ -62,9 +62,10 @@ Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments)
  :::image type="content" source="media/feature-1.png" alt-text="feature-1.":::
 
 Maximum Impact: 55 
+
 Assume the following: 
 
-Tenant Isolation is enabled (10)
+- Tenant Isolation is enabled (10)
 - At least one DLP policy is configured on the tenant (10)
 - 5 of 10 Environments have a Security Group. 
 - 2 of 10 Environments have IP Firewall. 
