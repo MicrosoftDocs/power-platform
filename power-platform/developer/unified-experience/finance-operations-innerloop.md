@@ -32,15 +32,17 @@ The X++ compiler, label compiler and other tools invoked by any version of the V
 
 Commonly, though if there are no breaking changes among the various targeted application and platform versions using the oldest version for the F&O Visual Studio extension version would ensure that the built artifacts are compatible with higher runtime versions in the environments.
 
+# A unified developer environment and multiple developer machines 
 
-> [!NOTE]
-> Whether it is the same or a different developer if multiple developer machines are used it becomes more likely, but not inevitable, to unintentionally corrupt the common Unified Developer Environment.
->
-> This happens when deploying a change that did not account for what was already deployed to the same environment.
-> 
-> The situation described above can also happen from the same developer machine, in case the custom metadata code loses consistency, for example by switching git branches.
-> 
-> **We cannot emphasize enough the important role of version control to ensure good code hygiene and to provide historical records, checkpoints and synchronization points.**
+Whether it is the same or a different developer if multiple developer machines are used it becomes more likely, but not inevitable, to unintentionally corrupt the common Unified Developer Environment.
+
+This could happen when deploying a change that does not account for what is already deployed to the same environment.
+ 
+The situation described above could also arise from the same developer machine, in case the custom metadata code loses consistency, for example by switching git branches.
+
+The way to keep things consistent and prevent unintended changes to the UDEs is to use version control, example Azure DevOps with git, to ensure a referenced record of what is deployed to any environment.
+ 
+**We cannot emphasize enough the important role of version control to ensure good code hygiene and to provide historical records, checkpoints and synchronization points.**
 
 
 # How to deploy code and synchronize database on the Unified Developer Environment 
@@ -85,6 +87,7 @@ Locate ModelUtil.exe inside the bin folder and run it from the command line to s
 
 Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
 
+
 ## How to troubleshoot deployment or DBSync failures?
 
 The package deployment could fail in various stages including DB sync, for various reasons including developer bugs. A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
@@ -95,6 +98,7 @@ You can also download the logs from your Dataverse organization:
 - Find **Finance and Operation Package Manager App** on the main page
 - Select the app and then from left pane, select **Operation History**
 - Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
+
 
 ## Deployment and DBSync succeeded but I want to troubleshoot my changes?
 
@@ -110,6 +114,14 @@ You could also use Application Insights to monitor and diagnose the application 
 
 Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)
 
+
+## What information do I provide to Microsoft Support?
+
+The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. 
+
+The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs.
+
+Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\<version>\VisualStudioD365Extension-*.log.
 
 ### See also
 
