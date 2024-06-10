@@ -89,7 +89,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    - Don't have the correct permissions? Contact your system administrator.
 
    Prerequisites:
-   1. An Microsoft Entra Group is required for each group team.
+   1. A Microsoft Entra Group is required for each group team.
    2. Obtain the Microsoft Entra Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
