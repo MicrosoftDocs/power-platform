@@ -64,7 +64,7 @@ A component represents something that you can potentially customize. Anything th
 > ![Components in solution.](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
-> - A solution can be up to 32 MB in size.
+> - A solution can be up to 95 MB in size.
 > - You can't edit components directly within a managed solution.
 
 To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent#componenttype-options). 
@@ -131,7 +131,7 @@ Because of the way that managed solutions are layered, some managed solutions ca
 The system tracks these dependencies between solutions. If you try to install a solution that requires a base solution that isn’t installed, you won’t be able to install the solution. You will get a message saying that the solution requires another solution to be installed first. Similarly, because of the dependencies, you can’t uninstall the base solution while a solution that depends on it is still installed. You have to uninstall the dependent solution before you can uninstall the base solution. More information: [Removing dependencies](removing-dependencies.md)
 
 ## Solution component dependencies
-A solution component represents something that you can potentially customize. Anything that can be included in a solution is a solution component and some components are dependant on other components. For example, the website field and account summary report are both dependant on the account entity. More information: [Dependency tracking for solution components](dependency-tracking-solution-components.md)
+A solution component represents something that you can potentially customize. Anything that can be included in a solution is a solution component and some components are dependent on other components. For example, the website field and account summary report are both dependent on the account entity. More information: [Dependency tracking for solution components](dependency-tracking-solution-components.md)
 
 
 ### See also

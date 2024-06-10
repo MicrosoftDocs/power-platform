@@ -17,7 +17,7 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
 
 <!-- legacy procedure -->
   
-## Open the Formats System Settings dialog box (it it isn't already open)  
+## Open the Formats System Settings dialog box (it isn't already open)  
   
 1. [!INCLUDE[proc_permissions_system_admin_and_customizer](../includes/proc-permissions-system-admin-and-customizer.md)]  
   
