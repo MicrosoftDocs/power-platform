@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 10/27/2023
+ms.date: 06/10/2024
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -169,9 +169,9 @@ The next and previours page arrow buttons in the SharePoint grid do not work. Th
 
 **Resolution**: Users can selet the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
-### Cannot enable OneDrive for business 
+### OneDrive for Business configuration
 
-OneDrive for businees for new users cannot be enabled currently. This is a known issue and will be fixed in future release. 
+OneDrive for Businees for new users can't be configured currently. This is a known issue and is planned to be fixed in a future release. 
 
 ### See also
 
