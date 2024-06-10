@@ -1,11 +1,10 @@
 ---
-title: "Package Deployer tool | Microsoft Docs"
+title: "Create packages for the Package Deployer tool"
 description: "Learn about migrating configuration data, solutions, and more from one environment to another."
 keywords: 
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.custom: ""
 ms.date: 10/20/2022
 ms.reviewer: "pehecke"
 ms.topic: "article"
