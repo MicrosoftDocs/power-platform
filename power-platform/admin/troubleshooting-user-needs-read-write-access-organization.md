@@ -77,7 +77,7 @@ See [How access to a record is determined](how-record-access-determined.md).
 
 1. As a system administrator of the environment, verify that the environment is associated with any Microsoft Entra group. See: [Associate a security group with an environment](control-user-access.md#associate-a-security-group-with-an-environment).
 2. Ensure the user with the access issue is a member of the group associated with the environment. See: [Create a security group and add members to the security group](control-user-access.md#create-a-security-group-and-add-members-to-the-security-group).
-3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can readd the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
+3. Once user membership in the environment’s group is updated, it may take some time for the change to sync to the environment. To trigger a sync for this user, the system administrator for the environment can read the user to the environment. See: [Add users to an environment that has a Dataverse database](add-users-to-environment.md#add-users-to-an-environment-that-has-a-dataverse-database).
 
 ### Troubleshoot permission issues
 
