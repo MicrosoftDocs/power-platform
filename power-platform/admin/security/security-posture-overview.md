@@ -25,8 +25,16 @@ search.audienceType:
  Not enabling Tenant Level Analytics will cause no data to populate as shown below.
  
  :::image type="content" source="media/No-data.png" alt-text="No-data.":::
+ 
  To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
+ 
+  :::image type="content" source="media/Analytics-toggle.png" alt-text="Analytics-toggle.":::
+
+  
  The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”.
+
+ 
+  :::image type="content" source="media/full-image.png" alt-text="full-image.":::
 
  ## Security posture management for your Tenant
  In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level.  
