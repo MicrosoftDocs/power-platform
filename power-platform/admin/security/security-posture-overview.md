@@ -77,7 +77,7 @@ Given the formula: Total Achieved Impact / Total Possible Impact
 
 Secure Score = 30 / 55 
  
-
+Just note : The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, 1: many relationships. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding both.
  ## Reactive governance through recommendations
 
  The system generates various recommendations which will improve the security posture of your tenant. Recommendations refer to actions or measures that the administrator can 
