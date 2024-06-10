@@ -2,7 +2,7 @@
 title: "Continuous integration and deployment"
 description: Learn how to set up continuous integration and deployment using Azure Pipelines.
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 06/07/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -10,8 +10,6 @@ ms.subservice: developer
 ---
 
 # Continuous integration and deployment
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 This article explains how to implement continuous integration and deployment (CI/CD) of Power Platform unified developer experience assets using Azure Pipelines. Specifically, how to:
 

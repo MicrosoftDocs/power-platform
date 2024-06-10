@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 06/03/2024
+ms.date: 06/07/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,9 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Schema for DLP activity logging
+The schema DLP activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
 
 ## Schema for Lockbox audit events
 The schema for Lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin/admin-activity-logging.md#activity-category-lockbox-operations).
@@ -452,7 +455,7 @@ The Windows Player for canvas apps will no longer be able to be used.
 
 You must replace usage of the Dynamics 365 connector with the Microsoft Dataverse connector.
 
-- **Microsoft Dataverse**: This is the newest connector and the main connector avilable for Dataverse usage. All new features, performance work, and enhancements will be available on this connector. A
+- **Microsoft Dataverse**: This is the newest connector and the main connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector. A
 
 **Mapping of common actions**
 

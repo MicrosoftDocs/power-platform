@@ -18,8 +18,8 @@ This article describes how to install and configure required Visual Studio finan
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
->
->[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+> 
+> [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
 
 ## Prerequisites
 
@@ -113,7 +113,8 @@ Unpack the `PackagesLocalDirectory.zip` file as `PackagesLocalDirectory`. We rec
 > This is only required when the Visual Studio output pane indicates it is.
 
 Using Windows File Explorer, from the folder `C:\Users\<User>\AppData\Local\Microsoft\Dynamics365\<ApplicationVersion>`, open the `Microsoft.Dynamics.FinOps.ToolsVS2022.vsix` file to install the extension.
-On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to register the URLProtocoloHandler, setup build targets, to extract compiler files, etc.
+
+On first start of Visual Studio after updating/installing the Microsoft.Dynamics.FinOps.ToolsVS2022 VS extension, you will be prompted for elevated permissions for the extension to register the URLProtocoloHandler, setup build targets, to extract compiler files, etc. 
 
 ### Configure the finance and operations extension
 
@@ -133,7 +134,7 @@ To configure the extension, follow these instructions.
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadata.png" alt-text="Configure Metadata dialog":::
 
 1. Select **Save**.
-2. You can similary edit a configuration. A common field to update is the folder for your own custom metadata.
+2. You can similarly edit a configuration. A common field to update is the folder for your own custom metadata.
 3. You might also want to move your cross reference database from SQL server local db to SQL server and update the configuration
 4. You can delete stale configurations.
 5. Note that only one configuration can be current or active at any given time.

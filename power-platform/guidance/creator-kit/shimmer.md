@@ -35,7 +35,7 @@ This code component provides a wrapper around the [Fluent UI Shimmer](https://de
 | -------- | ----------- |
 | `Items` | The action items to render |
 | `Rows` | The action items to render |
-| `SpacebetweenShimmer` | Space or Gap between each Shimmer incase of muliple rows. | 
+| `SpacebetweenShimmer` | Space or Gap between each Shimmer incase of multiple rows. | 
 
 ### Items properties
 

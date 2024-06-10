@@ -81,7 +81,7 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ***How do I get GitHub Actions for Microsoft Power Platform working in my repository?***
 
-*Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform. When you arrive on the page, select the green button to instatiate the actions into your repository.*
+*Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform. When you arrive on the page, select the green button to instantiate the actions into your repository.*
 
 ![GitHub Actions Install](media/github-actions-tutorial/GHActionsinstall.png "GitHub Actions Install")
 
