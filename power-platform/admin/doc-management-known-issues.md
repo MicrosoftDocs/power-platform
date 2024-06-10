@@ -53,7 +53,7 @@ The following describes the scenario that causes the error.
 
 1. Run the Document Management Settings wizard for the default SharePoint site.
 
-2. In the model-driven app in Dynamics 365, add a new SharePoint site (go to **Advanced Settings** > **Document Management** > **SharePoint Sites** > **Add SharePoint Site**). This creates a SharePoint site entry only in the application and does not create the document libraries in SharePoint that are required for document management.
+2. In the model-driven app in Dynamics 365, add a new SharePoint site (go to **Advanced Settings** > **Document Management** > **SharePoint Sites** > **Add SharePoint Site**). This creates a SharePoint site entry only in the application and doesn't create the document libraries in SharePoint that are required for document management.
 
 3. Open any entity where document management is enabled, and create the document location for the new site that you added in step 2 as the parent site. 
 
@@ -78,7 +78,7 @@ A document library with 5000 or more documents might experience resource throttl
 If you have more than 5000 documents in your document library, you can view the documents in the default grid view. For more information, see [Manage large lists and libraries in SharePoint](https://support.office.microsoft.com/article/manage-large-lists-and-libraries-in-sharepoint-b8588dae-9387-48c2-9248-c24122f07c59?ui=en-US&rs=en-US&ad=US).
 
 ## Relationship must be one-to-many (1:N) between an entity and a SharePoint document entity 
-Users cannot see documents when many entities are pointing to a SharePoint document location, a many-to-many relationship (N:N). The relationship must be one-to-many (1:N) between any entity and a SharePoint document entity.
+Users can't see documents when many entities are pointing to a SharePoint document location, a many-to-many relationship (N:N). The relationship must be one-to-many (1:N) between any entity and a SharePoint document entity.
 
 In Microsoft Dataverse, you can create an entity and enable the Document management property for the entity. This allows for the entity to participate in integration with SharePoint. Power Apps and Dataverse support only a one-to-many relationship (1:N) between any entity and a SharePoint document-related entity. A many-to-one or a many-to-many relationship between an entity and a SharePoint document entity results in the app not listing the documents that exist in the SharePoint document library.
 
@@ -96,9 +96,9 @@ In order to add a date to a OneNote document, you can open the OneNote document 
 
 ## SharePoint Document table doesn’t display inputs when you create a flow
 
-When you create a flow trigger in Power Automate that acts on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor and the flow inputs appear as an empty array.
+When you create a flow trigger in Power Automate that acts on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor, and the flow inputs appear as an empty array.
 
-This behavior occurs because the SharePoint Documents table is a virtual table and the SharePoint and OneDrive document table data is not stored in Dataverse. Below is an example of a flow trigger using the SharePoint Documents table.
+This behavior occurs because the SharePoint Documents table is a virtual table and the SharePoint and OneDrive document table data isn't stored in Dataverse. Below is an example of a flow trigger using the SharePoint Documents table.
 
 :::image type="content" source="media/flow-trigger-documents-table.png" alt-text="Low trigger using the SharePoint documents table from Dataverse":::
 
@@ -122,9 +122,9 @@ To resolve this issue, follow these steps.
 
 The Document Associated Grid is designed to show documents related to the entity context it's being rendered in. Embedding the Document Associated Grid in a related (child) entity quick view form and configuring the grid to show documents from its parent entity is unsupported.
 
-### SharePoint integration does not support the Dynamics 365 editable grid
+### SharePoint integration doesn't support the Dynamics 365 editable grid
 
-SharePoint integration does not work with the Dynamics 365 editable grid, due to known side effects that prevent SharePoint integration from working properly. Side effects include: the document failing to load in the grid, an inability to create or upload documents, and an inability to search in the grid.
+SharePoint integration doesn't work with the Dynamics 365 editable grid, due to known side effects that prevent SharePoint integration from working properly. Side effects include: the document failing to load in the grid, an inability to create or upload documents, and an inability to search in the grid.
 
 ### Maximum number of rows not honored in the document associated grid
 
@@ -135,20 +135,20 @@ Configuring the following in the **DocumentGrid** pane is ignored:
 
 For Unified Interface and backward compatibility, the row limit in the document associated grid is set to 5000 and **Use available space** is disabled. This is a known limitation.
 
-### Error message when opening a record: "The record does not have a SharePoint location associated with it. Add a SharePoint location."
+### Error message when opening a record: "The record doesn't have a SharePoint location associated with it. Add a SharePoint location."
 
-This issue can occur when you are using the legacy list component for document management. The list component isn't supported with the current versions of Power Apps or Dynamics 365 apps.
+This issue can occur when you're using the legacy list component for document management. The list component isn't supported with the current versions of Power Apps or Dynamics 365 apps.
 
 In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, a list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions.
 
-If you are using the list component, you must move your document management to use server-based authentication.
+If you're using the list component, you must move your document management to use server-based authentication.
 
 -	For Power Apps and Dynamics 365 apps, see [Switch from the list component or change the SharePoint deployment](switching-list-component-changing-deployment.md).
 -	For Dynamics 365 Customer Engagement (on-premises), see [Switching from the list component or changing the deployment](/dynamics365/customerengagement/on-premises/admin/switching-list-component-changing-deployment?view=op-9-0&preserve-view=true).
 
 ### Error message "An error has occurred while loading documents" when filtering by Name column
 
-The  error "An error has occurred while loading documents. Please reload the document. If the problem persists, contact your Dynamics 365 administrator for help" occurs when you filter by the Name column in the document associated grid.
+The  error "An error has occurred while loading documents" is displayed. Reload the document. If the problem persists, contact your Dynamics 365 administrator for help" occurs when you filter by the Name column in the document associated grid.
 
 This error occurs with the following filter by options in the document associated grid:
 
@@ -161,9 +161,9 @@ This error occurs with the following filter by options in the document associate
 
 This error occurs because these filter by options aren't currently supported with the document associated grid.
 
-### Next and previous page arrow buttons in the SharePoint grid do not work
+### Next and previous page arrow buttons in the SharePoint grid don't work
 
-The next and previous page arrow buttons in the SharePoint grid do not work. This is a known issue.
+The next and previous page arrow buttons in the SharePoint grid don't work. This is a known issue.
 
 **Resolution**: Users can select the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
