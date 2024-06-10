@@ -80,8 +80,21 @@ Given the formula: Total Achieved Impact / Total Possible Impact
 Secure Score = 30 / 55 
  
 
+ ## Reactive governance for your tenant
 
+ The system generates various recommendations which will improve the security posture of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. Recommendations are provided at 
+ 
+- Tenant level
+- Environment level 
 
+ **Enable a recommendation**
+Recommendations can be enabled via two entry points 
+- By clicking on the direct link under the recommended action of that feature
+- By clicking on the Manage button at the bottom of the tile 
+
+Note: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet. Once steps 1 or 2 is performed, it opens another dialog box to allow you to choose all the applicable environment to which the feature can be enabled. 
+
+ 
 
 ## What is security posture?
 
