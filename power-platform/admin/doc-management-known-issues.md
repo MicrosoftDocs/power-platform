@@ -165,9 +165,9 @@ This error occurs because these filter by options aren't currently supported wit
 
 ### Next and previous page arrow buttons in the SharePoint grid do not work
 
-The next and previours page arrow buttons in the SharePoint grid do not work. This is a known issue.
+The next and previous page arrow buttons in the SharePoint grid do not work. This is a known issue.
 
-**Resolution**: Users can selet the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
+**Resolution**: Users can select the **Load More** button at the bottom of the page or select **Open Location** to go to the SharePoint site to access files.
 
 ### OneDrive for Business configuration
 
