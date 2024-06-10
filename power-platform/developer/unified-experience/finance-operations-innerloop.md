@@ -1,6 +1,6 @@
 ---
-title: "Write, deploy, and debug X++ code across multiple environments"
-description: "Learn how to work with multiple unified developer environments."
+title: "Dev workflow to Write, deploy, debug and troubleshoot X++ code across multiple environments"
+description: "Learn how to work over time with multiple unified developer environments, ISV modules, troubleshooting as you go along."
 author: pathaku
 ms.date: 06/06/2024
 ms.topic: how-to
@@ -8,13 +8,6 @@ ms.reviewer: phecke
 ms.author: pathaku
 ms.subservice: developer
 ---
-
-
-This article shows you how to:
-
-1. Write and compile a runnable X++ class
-2. Deploy the class to the cloud runtime
-3. Debug the deployed X++ code
    
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
@@ -116,7 +109,6 @@ We recommend writing X++ unit tests for your code to ensure regressions are easi
 You could also use Application Insights to monitor and diagnose the application executing in the unified developer environment.
 
 Learn more about observability: [Monitoring and telemetry using Application Insights](/dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights)
-
 
 
 ### See also
