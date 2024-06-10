@@ -92,7 +92,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 #### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
 
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
@@ -127,7 +127,7 @@ A user can export an app from the [Power Apps portal](https://make.powerapps.com
 ### Power Platform admin center
 An administrator can export apps created by a user starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
 
 2. Select **Resources**, and then select **Power Apps**.
 
@@ -160,7 +160,7 @@ Get-PowerAppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.js
 ### Power Platform admin center 
 Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be an [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or an [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
 
 2. For each environment, select **Resources**, and then select **Power Apps**.
 

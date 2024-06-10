@@ -164,7 +164,7 @@ Selecting the failed run will show details of the failed flow run.
 
 ## Known issues
 
-[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Microsoft Entra ID, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
+[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Microsoft Entra ID, the tenant isolation policy is not enforced. As a mitigation, we recommend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

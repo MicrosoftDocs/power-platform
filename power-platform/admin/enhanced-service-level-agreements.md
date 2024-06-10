@@ -34,7 +34,7 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
  [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Define service level agreements (SLAs)](/dynamics365/customer-service/define-service-level-agreements)  
   
-## Considerations when you choose a SLA type  
+## Considerations when you choose an SLA type  
  Because there are two types of SLAs that have different functionality, consider the following features before you choose an SLA type. We recommend that you use only one type of SLA for an organization.  
   
 -   After you select an SLA type, either standard or enhanced, you cannot change the SLA type for any record associated with the SLA.  
