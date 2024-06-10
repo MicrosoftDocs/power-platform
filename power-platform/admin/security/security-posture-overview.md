@@ -88,7 +88,7 @@ Secure Score = 30 / 55
 - Tenant level
 - Environment level
 
-  Note: You may see a different set of environments when you follow the recommended action vs the Manage” workflow. The reason being, recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, the tab contains only managed environments and, this is true only for features that require managed environments 
+**Note**: You may see a different set of environments when you follow the recommended action vs the Manage” workflow. The reason being, recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, the tab contains only managed environments and, this is true only for features that require managed environments 
 
  ## Manage proactive policies for goveranance and security
  
