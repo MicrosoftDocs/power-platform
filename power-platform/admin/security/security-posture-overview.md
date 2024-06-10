@@ -88,6 +88,7 @@ Secure Score = 30 / 55
 - Environment level 
 
  **Enable a recommendation**
+
 Recommendations can be enabled via two entry points 
 - By clicking on the direct link under the recommended action of that feature
 - By clicking on the Manage button at the bottom of the tile 
