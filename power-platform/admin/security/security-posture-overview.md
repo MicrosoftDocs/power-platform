@@ -27,9 +27,7 @@ search.audienceType:
  
  :::image type="content" source="media/No-data.png" alt-text="No-data.":::
  
- To enable tenant analytics, click on the ‘Enable Tenant Analytics’ button in the below screenshot, click on the toggle and save. 
- 
-  :::image type="content" source="media/Analytics-toggle.png" alt-text="Analytics-toggle.":::
+ To enable tenant analytics, follow [tenant isolation](../how-do-i-enable-tenant-level-analytics.md).   
 
   
  The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”.
@@ -79,34 +77,20 @@ Given the formula: Total Achieved Impact / Total Possible Impact
 
 Secure Score = 30 / 55 
  
-**Turning on a security feature**
 
-The system will not prompt you any recommendations unless you turn on a security feature. Here is an example where the customer lockbox feature is not enabled. 
-
-:::image type="content" source="media/customer-lockbox.png" alt-text="customer-lockbox.":::
-
-Click on “**Manage Customer Lockbox**” button to see the pop up as shown below 
-
-:::image type="content" source="media/enable-customerlockbox.png" alt-text="enable-customerlockbox."::: 
-
-Toggle the switch to enable it and hit save 
-
-:::image type="content" source="media/toggle.png" alt-text="toggle."::: 
-
- ## Reactive governance for your tenant
+ ## Reactive governance through recommendations
 
  The system generates various recommendations which will improve the security posture of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. Recommendations are provided at 
  
 - Tenant level
 - Environment level 
 
- **Enable a recommendation**
+ **Acting on a recommendation**
 
 Recommendations can be enabled via two entry points 
 - By clicking on the direct link under the recommended action of that feature
 - By clicking on the Manage button at the bottom of the tile 
 
-Note: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet. Once above steps are performed, it opens another dialog box to allow you to choose all the applicable environment to which the feature can be enabled. 
 
  ## Manage proactive policies for goveranance and security
  
