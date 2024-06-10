@@ -40,11 +40,14 @@ search.audienceType:
  In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level.  
 
  **Calculating your security posture**
+ 
  Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
+
+ 
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 **Formula: Total Achieved Impact / Total Possible Impact**
 
-How are feature impacts determined? 
+###**How are feature impacts determined**
 
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
 
