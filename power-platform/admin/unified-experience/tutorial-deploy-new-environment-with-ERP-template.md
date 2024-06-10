@@ -67,7 +67,7 @@ If you wish to create a new environment with finance and operations apps pre-ins
 
 Load up your PowerShell console and execute the following commands to generate the environment. Note the variables so that you can change the input values, as required. If you wish to use a service principal, follow the instructions at [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
 
-In the script below, the parameter **DevToolsEnabled** determines if your sandbox environment get provisioned with support for X++ development or wether it becomes a traditional sandbox environemnt for user acceptance testing and training purposes. By setting this value to **true** you can do development, and by setting it to **false** or ommitting it, you receive a traditional sandbox environment with finance and operations apps installed.
+In the script below, the parameter **DevToolsEnabled** determines if your sandbox environment get provisioned with support for X++ development or wether it becomes a traditional sandbox environment for user acceptance testing and training purposes. By setting this value to **true** you can do development, and by setting it to **false** or ommitting it, you receive a traditional sandbox environment with finance and operations apps installed.
 
 ```powershell
 #Install the module
