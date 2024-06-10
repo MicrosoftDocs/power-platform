@@ -31,6 +31,8 @@ This table describes the properties for the submission document:
 
 ## Publisher
 
+Use this to specify the catalog submission item `publisherDetails` property.
+
 Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the catalog item going forward.
 
 > [!NOTE]
@@ -73,6 +75,8 @@ Here's a sample of a publisher record that includes operations to add a person a
 
 ### CatalogUPNOperation
 
+Use this to specify the [Publisher](#publisher) `publisherUpnList` property.
+
 Defines an operation to add or remove people that can submit new or update catalog items as this publisher.
 
 |Property|Type|Required|Description|
@@ -82,6 +86,8 @@ Defines an operation to add or remove people that can submit new or update catal
 |`userOid`|guid|Yes|Object Identifier for the user.|
 
 ### CatalogGroupOperation
+
+Use this to specify the [Publisher](#publisher) `publisherAADGroupOIDS` property.
 
 Defines an operation to add or remove an Entra ID Group that can access this publisher.
 
@@ -93,6 +99,8 @@ Defines an operation to add or remove an Entra ID Group that can access this pub
 |`groupType`|string|Yes|Type of Group being addressed. Valid Values are `Security` and `Modern`.|
 
 ## CatalogItemDefinition
+
+Use this to specify the catalog submission item `catalogItemDefinition` property.
 
 These properties define the catalog item being submitted. This is the actual Power Platform solution. A package is what is stored in the catalog.
 
@@ -154,6 +162,8 @@ Here's an example of a catalog item including its `engineeringName` and `support
 
 ### OfferDetails
 
+Use this to specify the [CatalogItemDefinition](#catalogitemdefinition) `offer` property.
+
 These properties define the details of the catalog item submission.
 
 |Property|Type|Required|Description|
@@ -179,7 +189,7 @@ These properties define the details of the catalog item submission.
 
 ### Business categories
 
-Set the `businessCategories` property to one or more of these business categories:
+Set the [OfferDetails](#offerdetails) `businessCategories` property to one or more of these business categories:
 
 |Code|Description|
 |-----|-----|
@@ -207,7 +217,7 @@ Currently, new business categories can't be configured.
 
 ### CatalogFileAsset
 
-These properties define a file referenced in the catalog item [OfferDetails](#offerdetails).
+These properties define a file referenced in the catalog item [OfferDetails](#offerdetails) `small48x48Image`, `large216x216Image`, `useCaseDocument`, `videos`, `documents`, and `screenshots` properties.
 
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
@@ -216,7 +226,7 @@ These properties define a file referenced in the catalog item [OfferDetails](#of
 
 ### PersonContactInformation
 
-These properties define `engineeringName` and `supportName` people in the catalog item [OfferDetails](#offerdetails).
+These properties define people in the catalog item [OfferDetails](#offerdetails) `engineeringName` and `supportName` properties.
 
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
