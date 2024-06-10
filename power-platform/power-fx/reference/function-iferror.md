@@ -117,7 +117,7 @@ Error records include:
 | **Message**  | Text string             | Message about the error, suitable to be displayed to the end user.                                                                                                                                                                                         |
 | **Source**   | Text string             | Location in where the error originated, used for reporting. For example, for a formula bound to a control property, this will be in the form _ControlName.PropertyName_.                                                                                   |
 | **Observed** | Text string             | Location in where the error is surfaced to the user, used for reporting. For example, for a formula bound to a control property, this will be in the form _ControlName.PropertyName_.                                                                      |
-| **Details**  | Record                  | Details about the error. At present, details are provided only for network errors. This record includes **HttpStatusCode** whcih contains the HTTP status code and **HttpResponse** which contains the body of the response from the connector or service. |
+| **Details**  | Record                  | Details about the error. At present, details are provided only for network errors. This record includes **HttpStatusCode** which contains the HTTP status code and **HttpResponse** which contains the body of the response from the connector or service. |
 
 For example, consider the following formula as a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control's **OnSelect** property:
 
@@ -218,7 +218,7 @@ If( StartDate > EndDate,
     Error( { Kind: ErrorKind.Validation, Message: "Start Date must be before End Date" } ) )
 ```
 
-In this example, some errors are allowed to pass through while others are supressed and replaced with a value. In the first case, **b** will be in an error state because the **Value** function has an invalid argument. Because this is unexpected by the formula writer, it is passed through so the user will see it. In the second case, with the same formula, **b** will have the value 0, resulting in a division by zero. In this case, the formula writer may know that this is acceptable for this logic, suppress the error (no banner is shown), and return -1 instead.
+In this example, some errors are allowed to pass through while others are suppressed and replaced with a value. In the first case, **b** will be in an error state because the **Value** function has an invalid argument. Because this is unexpected by the formula writer, it is passed through so the user will see it. In the second case, with the same formula, **b** will have the value 0, resulting in a division by zero. In this case, the formula writer may know that this is acceptable for this logic, suppress the error (no banner is shown), and return -1 instead.
 
 ```powerapps-dot
 With( {a: 1, b: Value("a")},
