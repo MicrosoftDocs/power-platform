@@ -81,14 +81,17 @@ Secure Score = 30 / 55
  
 **Turning on a security feature**
 
-The system will not prompt you any recommendations unless you turn on a security feature. 
+The system will not prompt you any recommendations unless you turn on a security feature. Here is an example where the customer lockbox feature is not enabled. 
 
-Here is an example where the customer lockbox feature is not enabled. Click on “**Manage Customer Lockbox**” button to see the pop up as shown below 
+:::image type="content" source="media/customer-lockbox.png" alt-text="customer-lockbox.":::
 
- 
+Click on “**Manage Customer Lockbox**” button to see the pop up as shown below 
+
+:::image type="content" source="media/enable-customerlockbox.png" alt-text="enable-customerlockbox."::: 
 
 Toggle the switch to enable it and hit save 
 
+:::image type="content" source="media/toggle.png" alt-text="toggle."::: 
 
  ## Reactive governance for your tenant
 
