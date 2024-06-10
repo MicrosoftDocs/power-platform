@@ -80,11 +80,33 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 Learn more at [Independent software vendor (ISV) licensing](../../../dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-licensing)
 
 
-## Summary
+## How can I convert a fully deployable package (Lifecycle Services legacy package) into the new format to be compatible for deployment to environments?
 
-As a recap, here's a summary and the points to take away from this exercise.
+Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. 
 
-We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used, and we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser, execute the scenario to debug and the breakpoints will be hit.
+Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
+
+## How to troubleshoot deployment or DBSync failures?
+
+The package deployment could fail in various stages including DB sync, for various reasons including developer bugs. A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
+
+You can also download the logs from your Dataverse organization:
+
+- Login to the Dataverse organization
+- Find **Finance and Operation Package Manager App** on the main page
+- Select the app and then from left pane, select **Operation History**
+- Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
+
+## Deployment and DBSync succeeded but I want to troubleshoot my changes?
+
+If deployment and DB Sync are successful, you should execute your scenario and contrast expectyed and actual behavior for clues. Infolog is often very helpful in this case.
+If above is not enought yiou should 
+
+
+
+
+
+
 
 ### See also
 
