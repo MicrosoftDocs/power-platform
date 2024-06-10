@@ -35,7 +35,7 @@ search.audienceType:
  The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”.
 
  
-:::image type="content" source="media/full-image.png" alt-text="this is the description of the full-image.":::
+:::image type="content" source="media/full-image.jpg" alt-text="this is the description of the full-image.":::
 
  ## Security posture management for your Tenant
  In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level.  
