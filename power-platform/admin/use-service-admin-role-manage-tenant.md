@@ -45,7 +45,7 @@ Both service admin roles cannot do functions restricted to the Microsoft 365 glo
 Follow these steps to assign a service admin role.
 
 > [!NOTE]
-> When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is assigend to a user in Microsoft Entra ID, the user is no longer automatically assigned to the system administrator role in environments. For more information on how to gain access to the system dministrator role and remove such access, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md).
+> When the Dynamics 365 administrator, Power Platform administrator, or Global administrator role is assigned to a user in Microsoft Entra ID, the user is no longer automatically assigned to the system administrator role in environments. For more information on how to gain access to the system administrator role and remove such access, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md).
 >
 > To opt-out of automatic license-based user roles, see [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md).
 

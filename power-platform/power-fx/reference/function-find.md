@@ -42,7 +42,7 @@ The **Find** function looks for a string within another string and is case sensi
 | Formula                                          | Description                                                                    | Result                                                                                                         |
 | ------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
 | **Find("World", "Hello World")**                  | Returns the starting position of **"World"**.                                      | 7                                                                         |
-| **Find("World", "Hello World, Hello World", 10)** | Returns the starting position of the first occurence of **"World"** after the 10th character. | 20                                                                         |
+| **Find("World", "Hello World, Hello World", 10)** | Returns the starting position of the first occurrence of **"World"** after the 10th character. | 20                                                                         |
 | **Find("Mars", "Hello World")**                   | Returns blank since the FindString is not in the WithinString                   | Blank()                                                                        |
 
 

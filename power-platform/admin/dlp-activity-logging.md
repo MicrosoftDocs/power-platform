@@ -16,7 +16,7 @@ search.audienceType:
 # Data loss prevention activity logging
 
 > [!Warning]
-> The schema documented in this artice is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
+> The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
 > Activity logging for data loss protection policies is not currently available in sovereign clouds.

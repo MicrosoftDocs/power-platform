@@ -97,7 +97,7 @@ If you choose to [install a previous version](#install-a-previous-version), you'
 
 By default, the Visual Studio Code extension only enables commands using the Visual Studio Code PowerShell terminal.
 
-To enable using PAC CLI in in Command Prompt (CMD) and PowerShell terminals for Windows, you can do any of the following:
+To enable using PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows, you can do any of the following:
 
 - [Install Power Platform CLI with .NET Tool](install-cli-net-tool.md)
 - [Install Power Platform CLI using Windows MSI](install-cli-msi.md)

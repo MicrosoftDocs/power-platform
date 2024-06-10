@@ -56,7 +56,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 
 ## Power Apps - Maker Activity report
 
-The Power Apps Maker Activity report provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
+The Power Apps Maker Activity report provides insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
 - What is the total number of apps created/published/modified/deleted by app makers across the tenant or environments? 
 - What is the count of first-time makers across canvas and model-driven apps? 

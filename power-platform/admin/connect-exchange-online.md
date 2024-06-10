@@ -306,7 +306,7 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 #### Approve mailboxes
 
-You can use a manual or programmatic processses to approve a mailbox.
+You can use a manual or programmatic processes to approve a mailbox.
 
 ##### Approve a mailbox manually
 

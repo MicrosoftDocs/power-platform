@@ -149,7 +149,7 @@ After the B2B guest users are given the required permissions to create and edit 
 4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Microsoft Entra tenant to build apps.   
 
 ### Known limitations
-1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to an Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
+1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
 3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
 
