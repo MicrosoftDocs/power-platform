@@ -120,24 +120,13 @@ This exists since recommendations will show all environments (manages as well as
 
  The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, 1: many relationships. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding. 
 
- **What is the purpose of the security hub?**
- 
-The purpose of the security hub is to improve customer experience and manageability of security in the power platform.
-
-**What is the main benefit of the security hub?**
-
-The main benefit of the security hub is that it provides recommendations and assessments based on best practices to improve the security posture of the power platform.
-
-**How does the security hub provide recommendations?**
-The security hub evaluates the security configuration and policies of the tenant and the environments, and provides a summarized status and recommendations to improve the security posture. The recommendations are based on Microsoft's best practices and guidance.
-
 **When will the security hub be available for GCC?**
 
-GCC will be made available 90 days post  GA, Q1CY2025
+Security hub will be available in GCC post GA
 
 **Would be the customer able to customize the recommendations or parameters based on their needs?**
 
-It is not possible today, but it is a common feedback that will be considered for GA.
+The recommendations are system generated, that are based on Microsoft's best practices and guidance.
 
 
 
