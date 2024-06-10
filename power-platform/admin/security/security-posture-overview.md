@@ -52,9 +52,14 @@ Your security score is calculated as a sum of your achieved impact score over to
 
 Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
 
+ :::image type="content" source="media/feature.png" alt-text="feature.":::
+
  
 Example: 
 Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
+
+
+ :::image type="content" source="media/feature-1.png" alt-text="feature-1.":::
 
 Maximum Impact: 55 
 Assume the following: 
