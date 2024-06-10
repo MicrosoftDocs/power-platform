@@ -46,7 +46,7 @@ search.audienceType:
  
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 
-**Formula: Total Achieved Impact / Total Possible Impact**
+****Formula**: Total Achieved Impact / Total Possible Impact**
 
  **Calculating your feature impacts**
 
