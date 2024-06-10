@@ -4,7 +4,7 @@ description: "The Creator Kit is shipped as a single, self-contained solution. L
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/13/2022
+ms.date: 06/10/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
