@@ -103,7 +103,7 @@ Recommendations can be enabled via two entry points
 - By clicking on the direct link under the recommended action of that feature
 - By clicking on the Manage button at the bottom of the tile 
 
-Note: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet. Once steps 1 or 2 is performed, it opens another dialog box to allow you to choose all the applicable environment to which the feature can be enabled. 
+Note: The following method is applicable to IP firewall, IP address- based cookie binding, Environment Security groups, Auditing, Client application access control, Administrator privileges and Environment Azure Vnet. Once above steps are performed, it opens another dialog box to allow you to choose all the applicable environment to which the feature can be enabled. 
 
  ## Manage proactive policies for goveranance and security
  
