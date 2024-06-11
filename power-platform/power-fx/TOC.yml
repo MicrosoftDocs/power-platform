@@ -32,6 +32,8 @@
             href: formula-reference-canvas-apps.md
           - name: Dataverse formula reference
             href: formula-reference-dataverse.md
+          - name: Power Pages formula reference
+            href: formula-reference-power-pages.md
           - name: Cards formula reference
             href: formula-reference-cards.md
           - name: Desktop flows formula reference
