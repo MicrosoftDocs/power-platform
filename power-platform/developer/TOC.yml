@@ -42,7 +42,7 @@
           displayName: Overview of unified developer experience for finance and operations apps
         - name: Install development tools
           href: unified-experience\finance-operations-install-config-tools.md
-        - name: Tutorial Write, deploy, and debug X++ code
+        - name: Tutorial: Write, deploy, and debug X++ code
           href: unified-experience\finance-operations-debug.md
         - name: Dev workflow to write, deploy, debug and troubleshoot X++ code across multiple environments
           href: unified-experience\finance-operations-innerloop.md
