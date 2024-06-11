@@ -43,9 +43,9 @@
         - name: Install development tools
           href: unified-experience\finance-operations-install-config-tools.md
         - name: Tutorial: Write, deploy, and debug X++ code
-          href: unified-experience\finance-operations-innerloop.md
-        - name: Dev workflow to write, deploy, debug and troubleshoot X++ code across multiple environments
           href: unified-experience\finance-operations-debug.md
+        - name: Dev workflow to write, deploy, debug and troubleshoot X++ code across multiple environments
+          href: unified-experience\finance-operations-innerloop.md
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
         - name: Request credentials for product database access
