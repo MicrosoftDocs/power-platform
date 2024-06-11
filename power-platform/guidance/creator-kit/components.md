@@ -4,7 +4,7 @@ description: "Learn about the manifest of the Creator Kit components and assets.
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 02/01/2023
+ms.date: 06/10/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -34,10 +34,14 @@ Release status key:
 | **`ContextMenu`**<br>[aka.ms/ck/contextmenu](contextmenu.md) | User Interface | Provides a wrapper around the [Fluent UI `ContextMenu`](https://developer.microsoft.com/fluentui#/controls/web/contextualmenu) control bound to a button for use in canvas apps and custom pages. | Yes | Yes | Yes| No | Shipped |
 | **`CommandBar`**<br>[aka.ms/ck/commandbar](commandbar.md) | User Interface | Provides a wrapper around the [Fluent UI `CommandBar`](https://developer.microsoft.com/fluentui#/controls/web/commandbar) control. | Yes | Yes | Yes| No | Shipped |
 | **`DetailsList`**<br>[aka.ms/ck/detailslist](detailslist.md) | User Interface | Allows the use of the [Fluent UI `DetailsList` component](https://developer.microsoft.com/fluentui#/controls/web/detailslist). | Yes | Yes | Yes| No | Shipped |
+| **`DonutChart`**<br>[aka.ms/ck/donutchart](donutchart.md) | User Interface | Allows the use of the [Fluent UI `DonutChart` component](https://developer.microsoft.com/fluentui#/controls/web/donutchart). | Yes | Yes | Yes| No | Preview |
 | **`Dialog`**<br>[aka.ms/ck/dialog](dialog.md) | User Interface | Mimics the style and behavior of the [Fluent UI `Dialog` component](https://developer.microsoft.com/fluentui#/controls/web/dialog). | Yes | Yes | Yes| No | Experimental |
 | **`Elevation`**<br>[aka.ms/ck/elevation](elevation.md) | User Interface | Provides Fluent UI elevation support with mouse hover events. | Yes | Yes | Yes | No | Shipped |
 | **`ExpandMenu`**<br>[aka.ms/ck/expandmenu](expandmenu.md) | User Interface | Provides an expandable menu interface (also known as hamburger menu). | No | Yes | Yes | No | Experimental |
 | **`Facepile`**<br>[aka.ms/ck/facepile](facepile.md) | User Interface | Provides a wrapper around the [Fluent UI `Facepile`](https://developer.microsoft.com/fluentui#/controls/web/facepile) control. | Yes | Yes | Yes| No | Shipped |
+| **`GaugeChart`**<br>[aka.ms/ck/gaugechart](gaugechart.md) | User Interface | Provides a wrapper around the [Fluent UI `GaugeChart`](https://developer.microsoft.com/fluentui#/controls/web/gaugechart) control. | Yes | Yes | Yes| No | Preview |
+| **`HorizontalBarChart`**<br>[aka.ms/ck/horizontalbarchart](horizontalbarchart.md) | User Interface | Provides a wrapper around the [Fluent UI `HorizontalBarChart`](https://developer.microsoft.com/fluentui#/controls/web/horizontalbarchart) control. | Yes | Yes | Yes| No | Preview |
+| **`HorizontalBarChart-Stacked`**<br>[aka.ms/ck/stackedbarchart](stackedbarchart.md) | User Interface | Provides a wrapper around the [Fluent UI `HorizontalBarChart-Stacked`](https://developer.microsoft.com/en-us/fluentui#/controls/web/horizontalbarchart/stackedbarchart) control. | Yes | Yes | Yes| No | Preview |
 | **`Icon`**<br>[aka.ms/ck/icon](icon.md) | User Interface | Fluent UI [font icon](https://developer.microsoft.com/fluentui#/controls/web/icon), icon button, and action button with custom styling. | Yes | Yes | Yes| No | Shipped |
 | **`KeyboardShortcuts`**<br>[aka.ms/ck/keyboardshortcuts](keyboardshortcuts.md) | Utility | Registers keypress event handlers to allow keyboard shortcuts to be used inside canvas apps. | No | Yes | No | No | Shipped |
 | **`Nav`**<br>[aka.ms/ck/nav](nav.md) | User Interface | Provides a wrapper around the [Fluent UI `Nav` component](https://developer.microsoft.com/fluentui#/controls/web/nav) control bound to a button for use in canvas apps and custom pages. | Yes | Yes | Yes| No | Shipped |
