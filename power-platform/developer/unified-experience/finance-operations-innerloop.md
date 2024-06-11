@@ -57,7 +57,9 @@ The way to keep things consistent and prevent unintended changes to the UDEs is 
 
 > [!NOTE]
 > Continuous incremental build and deployment could be much faster than full deployment for large modules.
+>
 > For binary only modules received from ISVs or other third parties do a full deployment and DB sync.
+>
 > Do not change and try to deploy system modules.
 
 ## How to add modules received from ISVs or others
@@ -86,6 +88,13 @@ Learn more at [Independent software vendor (ISV) licensing](/dynamics365/fin-ops
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. 
 
 Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
+
+> [!NOTE]
+> Conversion to unified package fails with message ending with - The file '<temp path>\<model>\bin\<file>' already exists.
+>
+> This occurs if multiple versions of the model are identified in the original package.
+>
+> Solution: Ensure/recreate the original package making sure that only 1 version of each model is present in the package at location  <OriginalPackage.zip>/AOSService/Packages/files/<model.version>.
 
 
 ## How to troubleshoot deployment or DBSync failures?
