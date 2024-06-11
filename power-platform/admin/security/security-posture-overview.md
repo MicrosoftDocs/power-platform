@@ -22,13 +22,13 @@ Security hub in Power Platform admin center offers a consolidated experience tha
 
 ## Turn on tenant-level analytics
  
-To use Security Hub in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
+To use Security Hub in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
 
 The Security Hub landing page takes 48 hours to populate all the insights, as shown below. Until the page is populated, most sections on the page display “Not available”.
 
 :::image type="content" source="media/full-image.jpg" alt-text="this is the description of the full-image.":::
  
-If you don't turn on tenant-level analytics, no data is displayed in the **Security** wep part of the page.
+If you don't turn on tenant-level analytics, no data is displayed on the page.
  
 :::image type="content" source="media/No-data.png" alt-text="No-data.":::
 
@@ -47,31 +47,43 @@ Your security score is calculated as a sum of your achieved impact score over to
 
 Each feature is assigned an impact score based on the feature scope (tenant or environment), and the number of resources impacted by turning the feature on or off.
 
-:::image type="content" source="media/feature.png" alt-text="feature.":::
+| Feature | Impact |
+|---------|--------|
+| IP firewall   |  1 x each environment    |       
+| IP cookie bindings   |   1 x each environment    |       
+| Environment security group   |   1 x each environment    |       
+| Tenant data policies   |  Total number of environments    |       
+| Tenant isolation   |  Total number of environments    |       
+| Tenant Lockbox   |  If turned on, the total number of Managed Environments.<br>Zero if not turned on.<br>Zero if not turned on and there are no Managed Enviornments.    |       
 
-Example: 
-Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
+Example: Tenant with ten environments (five Managed Environments and five non-Managed Environments) 
 
-:::image type="content" source="media/feature-1.png" alt-text="feature-1.":::
+| Feature | Impact |
+|---------|--------|
+| IP firewall   |  1 x each environment    |  10 environments x 1 or 10   |  
+| IP cookie bindings   |   1 x each environment    |   10 environments x 1 or 10   |      
+| Environment security group   |   1 x each environment    |  10 environments x 1 or 10   |       
+| Tenant data policies   |  Total number of environments    | 10 environments |      
+| Tenant isolation   |  Total number of environments    | 10 environments |         
+| Tenant Lockbox   |  If turned on, the total number of Managed Environments.<br>0 if not turned on.<br>0 if not turned on and there are no Managed Enviornments.    | 5 environments |   
 
 Maximum Impact: 55 
 
 Assume the following: 
 
-- Tenant Isolation is enabled (10)
-- At least one DLP policy is configured on the tenant (10)
-- 5 of 10 Environments have a Security Group. 
-- 2 of 10 Environments have IP Firewall. 
-- 3 of 10 Environments have IP Cookie Bindings. 
-- Customer Lockbox is Off. 
+- Tenant isolation is used (10)
+- At least one data policy is configured on the tenant (10)
+- 5 of 10 environments have a security group
+- 2 of 10 environments have IP firewall
+- 3 of 10 Environments have IP cookie bindings
+- Customer Lockbox is off 
  
-Based on the hypothetical state above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
+Based on the hypothetical state outlined above, the achieved score is: 10 + 10 + 5 + 2 + 3 or 30 
 
-Given the formula: Total Achieved Impact / Total Possible Impact 
-
-Secure Score = 30 / 55 
+Given the formula: Total achieved impact/Total possible impact the Secure Score = 30/55 
  
-**Note** : The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations, 1: many relationships. For example, an environment can have a recommendation to enable IP Firewall and IP Cookie binding both.
+> [!Note]
+> The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations. There can be 1:many relationships. For example, an environment can have a recommendation to enable IP firewall and IP cookie binding.
 
  ## Reactive governance through recommendations
 
