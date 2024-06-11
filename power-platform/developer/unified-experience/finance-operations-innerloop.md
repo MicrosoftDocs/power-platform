@@ -91,8 +91,7 @@ Choose the -convertToUnifiedPackage option and provide the package zip and outpu
 
 
 > [!NOTE]
-> 
-> Conversion to unified package fails with message ending with - The file '<temp path>\<model>\bin\<file>' already exists.
+> Conversion to unified package fails with message ending with - The file 'temp path\modelName\bin\fileName' already exists.
 >
 > This occurs if multiple versions of the model are identified in the original package.
 >
