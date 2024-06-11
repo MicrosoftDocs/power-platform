@@ -123,7 +123,7 @@ Security Hub offers a variety of security features that help secure your tenant:
 
 ## Frequently asked questions (FAQ)
 
-### When will the Security Hub be available for GCC?
+### When will the Security Hub be available for Government Community Cloud (GCC)?
 
 The Security Hub is planned for availability in GCC after the general availability release.
 
