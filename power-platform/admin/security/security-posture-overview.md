@@ -85,33 +85,34 @@ Given the formula: Total achieved impact/Total possible impact the Secure Score 
 > [!Note]
 > The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations. There can be 1:many relationships. For example, an environment can have a recommendation to enable IP firewall and IP cookie binding.
 
- ## Reactive governance through recommendations
+## Reactive governance through recommendations
 
- The system generates various recommendations which will improve the security posture of your tenant. Recommendations refer to actions or measures that the administrator can 
- take to enhance their overall security stance. 
- - System generated recommendations can be acted upon by **directly clicking on the link** under the recommended action of that feature.
- - If you are configure features outside of the recomendation then this can be done by click on the '**manage**' button.
-   
- Recommendations are provided at 
+The system generates various recommendations which improve the security posture of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security stance. 
+
+- System-generated recommendations can be acted upon by selecting the link under the recommended action of that feature.
+- To configure features outside of the recomendations, slect the **Manage** button.
+
+Recommendations are provided at these levels:
  
-- Tenant level
-- Environment level
+- Tenant-level
+- Environment-level
 
-**Note**: You may see a different set of environments when you follow the recommended action vs the Manage” workflow. The reason being, recommendations will show all environments (manages as well as not managed) vs when user tries to manage their environments, the tab contains only managed environments and, this is true only for features that require managed environments 
+> [!Note]
+> You may see a different set of environments when you follow the recommended actions than if you used the **Manage** workflow. This is because recommendations show _all_ environments (Managed Envrionments and non-Managed Environments). When a user tries to manage their environments, the tab contains only Managed environments and, this is true only for features that require Managed Environments.
 
- ## Manage proactive policies for goveranance and security
+## Manage proactive policies for goveranance and security
  
 Security hubs offer a variety of security features that will help secure your tenant. Some of the features it has to offer is as below 
 
-**Tenant Isolation**: This is a feature that is enabled at the tenant level for both managed and unmanaged environments. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. For more information, refer to  [tenant isolation](../cross-tenant-restrictions.md). 
+**Tenant isolation**: This is a feature that is turned on at the tenant-level for both Managed and non-Managed Environments. Tenant isolation allows global administrators and Power Platform administrators to govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more: [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md)
 
-**Customer Lockbox:** This feature is applicable to only managed environments. Customer Lockbox provides an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, refer to [Customer Lockbox](../about-lockbox.md)
+**Customer Lockbox:** This feature is applicable to only Managed Environments. Customer Lockbox provides an interface for customers to review and approve (or reject) data access requests on the rare occasions when access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, in response to a customer-initiated support ticket, or a problem identified by Microsoft. Learn more: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](../about-lockbox.md)
 
-**IP Firewall:**  This feature is applicable to only managed environments with dataverse. The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For more information, refer to [IP Firewall](../ip-firewall.md).
+**IP firewall:**  This feature is applicable to only Managed Environments with Dataverse. The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. Learn more: [IP firewall in Power Platform environments](../ip-firewall.md)
 
-**IP address-based cookie binding:** This feature is applicable to only managed environments with dataverse. It prevent session hijacking exploits in Dataverse with IP address-based cookie binding. For more information, refer to IP address-based [cookie binding](../block-cookie-replay-attack.md).
+**IP address-based cookie binding:** This feature is applicable to only Managed Environments with Dataverse. It prevent session, hijacking exploits in Dataverse with IP address-based cookie binding. Learn more: [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md)
 
-**Data Policy:** This feature is applicable at both tenant level and at environment level to both managed and un-managed environments. Setting up DLP at the environment or tenant level will act as guardrails to help reduce the risk of users from unintentionally exposing organizational data. For more information, refer to [Data Policy](../wp-data-loss-prevention.md).
+**Data policy:** This feature is applicable at both tenant-level and environment-level to both Managed Environments and non-Managed Environments. Setting up data policies at the environment or tenant-level  acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more: [Data policies](../wp-data-loss-prevention.md)
 
 **Environment security group:** This feature is applicable to both managed and un-managed environments. Setting up security groups will help control which licensed users can access environment. To learn how to add a use to the Security group and more, refer to Environment [security group](../control-user-access.md).
 
