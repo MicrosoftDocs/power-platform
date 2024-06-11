@@ -4,7 +4,7 @@ description: "Learn how to use the Power Platform admin center to view restore d
 author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2024
+ms.date: 06/11/2024
 ms.subservice: admin
 ms.author: adkuppa
 search.audienceType: 
@@ -22,6 +22,7 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
+> - Any storage used by the Recycle bin preview will not count against your organization's storage capacity. 
 
 ## Prerequisites
 
@@ -58,6 +59,9 @@ Some organizations add custom business logic that deletes records related to a r
 
 Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
+### Restore option not shown after opted in to preview the feature.
+
+Restore button is not shown sometimes even after the Reccyle bin featured is turned on. Verify if the "Process Recyclebin Operation" is turned on by going to the Power Platform Admin center > select the environment where this issue is happening > Settings > Audit and logs > System jobs > search for "Enable RecycleBin" and confirm the status reason is "Succeeded". If the status reason is not "Succeeded" or despiste success state you are not seeing the Restore option, please create a Customer Support ticket.
 
 ### See also
 
