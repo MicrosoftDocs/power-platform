@@ -387,6 +387,18 @@
                   href: creator-kit/dialog.md
                 - name: Panel (experimental)
                   href: creator-kit/panel.md
+            - name: Charts
+              items:
+                - name: DonutChart (preview)
+                  href: creator-kit/donutchart.md
+                - name: GaugeChart (preview)
+                  href: creator-kit/gaugechart.md
+                - name: HorizontalBar
+                  items:
+                  - name: HorizontalBarChart (preview)
+                    href: creator-kit/horizontalbarchart.md
+                  - name: HorizontalBarChart - Stacked (preview)
+                    href: creator-kit/stackedbarchart.md
             - name: Utilities
               items:
                 - name: Elevation
@@ -441,7 +453,9 @@
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
-        - name: Enterprise Security
+        - name: Develop an environment strategy
+          href: white-papers/environment-strategy.md
+        - name: Enterprise security
           href: white-papers/enterprise-security.md
         - name: Activating Managed Environments
           href: white-papers/managed-environment-activation.md

@@ -156,7 +156,7 @@ Learn more about [approvals in Microsoft Teams](/power-automate/teams/native-app
 
 It can be set up so that emails go to your or another hardware manager's *Outlook Inbox* when a request is submitted. Take these steps to start this approval process scenario:
 
-1. Open hardware request emails to review the relevant details for the request:
+1. When a hardware request email arrives, simply open the email to review the relevant details for the request:
 
     - Status – *Requested* in this case (eventually *Approved* or *Rejected*)
     - Name
