@@ -14,7 +14,7 @@ ms.subservice: developer
 > 
 > [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
  
-# A developer machine and multiple unified developer environments 
+## A developer machine and multiple unified developer environments 
 
 A developer machine can be used to connect to multiple unified developer environments. 
 
@@ -32,7 +32,7 @@ The X++ compiler, label compiler and other tools invoked by any version of the V
 
 Commonly, though if there are no breaking changes among the various targeted application and platform versions using the oldest version for the F&O Visual Studio extension version would ensure that the built artifacts are compatible with higher runtime versions in the environments.
 
-# A unified developer environment and multiple developer machines 
+## A unified developer environment and multiple developer machines 
 
 Whether it is the same or a different developer if multiple developer machines are used it becomes more likely, but not inevitable, to unintentionally corrupt the common Unified Developer Environment.
 
@@ -45,7 +45,7 @@ The way to keep things consistent and prevent unintended changes to the UDEs is 
 **We cannot emphasize enough the important role of version control to ensure good code hygiene and to provide historical records, checkpoints and synchronization points.**
 
 
-# How to deploy code and synchronize database on the Unified Developer Environment 
+## How to deploy code and synchronize database on the Unified Developer Environment 
    
 | # | Want to | Deployment method | Notes |
 |---|---|---|---|
@@ -88,6 +88,7 @@ Learn more at [Independent software vendor (ISV) licensing](/dynamics365/fin-ops
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. 
 
 Choose the -convertToUnifiedPackage option and provide the package zip and output location as parameters.
+
 
 > [!NOTE]
 > Conversion to unified package fails with message ending with - The file '<temp path>\<model>\bin\<file>' already exists.
