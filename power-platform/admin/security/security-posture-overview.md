@@ -20,20 +20,17 @@ Security hub in Power Platform admin center offers a consolidated experience tha
 - **Reactive governance through recommendations**: Admins can identify and act on the top-most, impactful recommendations to improve the posture. 
 - **Proactive governance with security features**: Admins can use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively set policies in place to help safeguard the orgainization from vulnerabilities and risks.
 
- ## Getting started** 
+ ## Turn on tenant-level analytics
  
- To use Security Hub on your tenant, you will have to first enable ‘Tenant Level Analytics’. 
- Not enabling Tenant Level Analytics will cause no data to populate as shown below.
- 
- :::image type="content" source="media/No-data.png" alt-text="No-data.":::
- 
- To enable tenant analytics, follow [tenant isolation](../how-do-i-enable-tenant-level-analytics.md).   
+ To use Security Hub in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
 
-  
- The Security Hub landing page will take 48 hours to populate all the insights as shown below, and till then most sections on the home page will display “Not available”.
+The Security Hub landing page takes 48 hours to populate all the insights, as shown below, and until then, most sections on the page display “Not available”.
 
- 
 :::image type="content" source="media/full-image.jpg" alt-text="this is the description of the full-image.":::
+ 
+If you don't turn on tenant-level analytics, no data is displayed in the **Security** wep part of the page.
+ 
+:::image type="content" source="media/No-data.png" alt-text="No-data.":::
 
  ## Security posture management for your Tenant
  Security posture is a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. 
