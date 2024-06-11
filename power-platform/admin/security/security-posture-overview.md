@@ -58,8 +58,8 @@ Each feature is assigned an impact score based on the feature scope (tenant or e
 
 Example: Tenant with ten environments (five Managed Environments and five non-Managed Environments) 
 
-| Feature | Impact |
-|---------|--------|
+| Feature | Impact |  Maximum impact |
+|---------|--------|----------------|
 | IP firewall   |  1 x each environment    |  10 environments x 1 or 10   |  
 | IP cookie bindings   |   1 x each environment    |   10 environments x 1 or 10   |      
 | Environment security group   |   1 x each environment    |  10 environments x 1 or 10   |       
