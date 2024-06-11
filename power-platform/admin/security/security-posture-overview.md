@@ -106,20 +106,20 @@ Security hubs offer a variety of security features that will help secure your te
 
 **Tenant isolation**: This is a feature that is turned on at the tenant-level for both Managed and non-Managed Environments. Tenant isolation allows global administrators and Power Platform administrators to govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more: [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md)
 
-**Customer Lockbox:** This feature is applicable to only Managed Environments. Customer Lockbox provides an interface for customers to review and approve (or reject) data access requests on the rare occasions when access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, in response to a customer-initiated support ticket, or a problem identified by Microsoft. Learn more: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](../about-lockbox.md)
+**Customer Lockbox**: This feature is applicable to only Managed Environments. Customer Lockbox provides an interface for customers to review and approve (or reject) data access requests on the rare occasions when access to customer data is needed. It's used in cases where a Microsoft engineer needs to access customer data, in response to a customer-initiated support ticket, or a problem identified by Microsoft. Learn more: [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](../about-lockbox.md)
 
-**IP firewall:**  This feature is applicable to only Managed Environments with Dataverse. The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. Learn more: [IP firewall in Power Platform environments](../ip-firewall.md)
+**IP firewall**:  This feature is applicable to only Managed Environments with Dataverse. The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. Learn more: [IP firewall in Power Platform environments](../ip-firewall.md)
 
-**IP address-based cookie binding:** This feature is applicable to only Managed Environments with Dataverse. It prevent session, hijacking exploits in Dataverse with IP address-based cookie binding. Learn more: [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md)
+**IP address-based cookie binding**: This feature is applicable to only Managed Environments with Dataverse. It prevent session, hijacking exploits in Dataverse with IP address-based cookie binding. Learn more: [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md)
 
-**Data policy:** This feature is applicable at both tenant-level and environment-level to both Managed Environments and non-Managed Environments. Setting up data policies at the environment or tenant-level  acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more: [Data policies](../wp-data-loss-prevention.md)
+**Data policies**: This feature is applicable at both tenant-level and environment-level to both Managed Environments and non-Managed Environments. Setting up data policies at the environment or tenant-level  acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more: [Data policies](../wp-data-loss-prevention.md)
 
-**Environment security group:** This feature is applicable to both managed and un-managed environments. Setting up security groups will help control which licensed users can access environment. To learn how to add a use to the Security group and more, refer to Environment [security group](../control-user-access.md).
+**Environment security group**: This feature is applicable to both Managed Environments and non-Managed Environments. Setting up security groups helps control which licensed users can access environments. Learn more: [Control user access to environments: security groups and licenses](../control-user-access.md)
 
-**Environement Azure Vnet:** This feature is applicable to only managed environments. Setting up Azure Vnet will help you integrate Power Platform with resources inside your 
- virtual network without exposing them over the public interne. For more information, refer to  [environment Azure Vent](../vnet-support-overview.md).
+**Azure Virtual Network:** This feature is applicable to only Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your 
+ virtual network without exposing them over the public internet. Learn more: [Virtual Network support for Power Platform overview](../vnet-support-overview.md)
 
-**Auditing:** This feature is applicable to only managed and un-managed environments with Dataverse. Auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. For more information, refer to [Auditing](../manage-dataverse-auditing.md).
+**Auditing:** This feature is applicable to only Managed Environments and non-Managed Environments with Dataverse. Auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. For more information, refer to [Auditing](../manage-dataverse-auditing.md).
 
 
 ## FAQ
