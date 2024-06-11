@@ -35,7 +35,7 @@ If you don't turn on tenant-level analytics, no data is displayed in the **Secur
 ## Security posture management for your tenant
 Security posture is a set of custom or predefined profiles you can create for you software as a service (SAAS) applications or public cloud services from cyber-attacks. 
 
-### Calculating your security posture**
+### Calculating your security posture
  
 Security score is a numerical summary of your organization's security posture based on system recommendations, user behavior, and other security-related measurements. It's a measurement of organizational security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 
@@ -52,8 +52,7 @@ Each feature is assigned an impact score based on the feature scope (tenant or e
 Example: 
 Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
 
-
- :::image type="content" source="media/feature-1.png" alt-text="feature-1.":::
+:::image type="content" source="media/feature-1.png" alt-text="feature-1.":::
 
 Maximum Impact: 55 
 
@@ -107,12 +106,10 @@ Security hubs offer a variety of security features that will help secure your te
 **Environement Azure Vnet:** This feature is applicable to only managed environments. Setting up Azure Vnet will help you integrate Power Platform with resources inside your 
  virtual network without exposing them over the public interne. For more information, refer to  [environment Azure Vent](../vnet-support-overview.md).
 
- **Auditing:** This feature is applicable to only managed and un-managed environments with Dataverse. Auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing 
- also logs user access through an app or through the SDK in an environment. For more information, refer to [Auditing](../manage-dataverse-auditing.md).
+**Auditing:** This feature is applicable to only managed and un-managed environments with Dataverse. Auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. For more information, refer to [Auditing](../manage-dataverse-auditing.md).
 
 
-
-  ## FAQ
+## FAQ
 
 **When will the security hub be available for GCC?**
 
