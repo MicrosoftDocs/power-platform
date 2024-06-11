@@ -14,7 +14,7 @@ ms.subservice: developer
 > 
 > [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
  
-## A developer machine and multiple unified developer environments 
+# A developer machine and multiple unified developer environments 
 
 A developer machine can be used to connect to multiple unified developer environments. 
 
@@ -91,6 +91,7 @@ Choose the -convertToUnifiedPackage option and provide the package zip and outpu
 
 
 > [!NOTE]
+> 
 > Conversion to unified package fails with message ending with - The file '<temp path>\<model>\bin\<file>' already exists.
 >
 > This occurs if multiple versions of the model are identified in the original package.
