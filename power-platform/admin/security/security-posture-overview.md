@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
- # Use the Security Hub in Power Platform admin center
+# Use the Security Hub in Power Platform admin center
                                                   
 Security hub in Power Platform admin center offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Security hub offers the the following advantages:
 
@@ -20,11 +20,11 @@ Security hub in Power Platform admin center offers a consolidated experience tha
 - **Reactive governance through recommendations**: Admins can identify and act on the top-most, impactful recommendations to improve the posture. 
 - **Proactive governance with security features**: Admins can use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively set policies in place to help safeguard the orgainization from vulnerabilities and risks.
 
- ## Turn on tenant-level analytics
+## Turn on tenant-level analytics
  
- To use Security Hub in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
+To use Security Hub in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
 
-The Security Hub landing page takes 48 hours to populate all the insights, as shown below, and until then, most sections on the page display “Not available”.
+The Security Hub landing page takes 48 hours to populate all the insights, as shown below. Until the page is populated, most sections on the page display “Not available”.
 
 :::image type="content" source="media/full-image.jpg" alt-text="this is the description of the full-image.":::
  
@@ -32,25 +32,23 @@ If you don't turn on tenant-level analytics, no data is displayed in the **Secur
  
 :::image type="content" source="media/No-data.png" alt-text="No-data.":::
 
- ## Security posture management for your Tenant
- Security posture is a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. 
- 
- **Calculating your security posture**
- 
-Security score is a numerical summary of your organization's security posture based on systems recommendations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
+## Security posture management for your tenant
+Security posture is a set of custom or predefined profiles you can create for you software as a service (SAAS) applications or public cloud services from cyber-attacks. 
 
+### Calculating your security posture**
  
+Security score is a numerical summary of your organization's security posture based on system recommendations, user behavior, and other security-related measurements. It's a measurement of organizational security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
+
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
 
-****Formula**: Total Achieved Impact / Total Possible Impact**
+**Formula: Total achieved impact/Total possible impact**
 
- **Calculating your feature impacts**
+### Calculating your feature impacts
 
-Each feature is assigned an impact score based on the feature scope (Tenant or Environment), and the number of resources that will be impacted by enabling/disabling the feature. 
+Each feature is assigned an impact score based on the feature scope (tenant or environment), and the number of resources impacted by turning the feature on or off.
 
- :::image type="content" source="media/feature.png" alt-text="feature.":::
+:::image type="content" source="media/feature.png" alt-text="feature.":::
 
- 
 Example: 
 Tenant w/ 10 Environments (5 Managed, and 5 Non-Managed Environments) 
 
