@@ -12,7 +12,75 @@ search.audienceType:
 ---
 # ImportConfig Reference
 
-The ImportConfig.xml file used with package deployer supports the following elements and attributes.
+The ImportConfig.xml file used with package deployer contains information about the solutions and data to import. The following is an example:
+
+```xml
+<?xml version="1.0" encoding="utf-16"?>
+<configdatastorage 
+   installsampledata="true"
+   waitforsampledatatoinstall="true"
+   agentdesktopzipfile=""
+   agentdesktopexename=""
+   crmmigdataimportfile="data_1033.zip">
+   <solutions>
+      <configsolutionfile 
+         solutionpackagefilename="SampleSolutionOne_1_0_managed.zip"
+         overwriteunmanagedcustomizations="false"
+         publishworkflowsandactivateplugins="true" />
+      <configsolutionfile 
+         solutionpackagefilename="SampleSolutionTwo_1_0_managed.zip"
+         overwriteunmanagedcustomizations="false"
+         publishworkflowsandactivateplugins="true" />
+      <configsolutionfile 
+         solutionpackagefilename="SampleSolutionThree_1_0_managed.zip" />
+   </solutions>
+   <filestoimport>
+      <configimportfile filename="SampleOption.csv"
+         filetype="CSV"
+         associatedmap="SampleOption"
+         importtoentity="sample_option"
+         datadelimiter=""
+         fielddelimiter="comma"
+         enableduplicatedetection="true"
+         isfirstrowheader="true"
+         isrecordownerateam="false"
+         owneruser=""
+         waitforimporttocomplete="false" />
+      <configimportfile filename="File.zip"
+         filetype="ZIP"
+         associatedmap="FileMapName"
+         importtoentity="FileEntity"
+         datadelimiter=""
+         fielddelimiter="comma"
+         enableduplicatedetection="true"
+         isfirstrowheader="true"
+         isrecordownerateam="false"
+         owneruser=""
+         waitforimporttocomplete="true" />
+      <zipimportdetails>
+         <zipimportdetail filename="subfile1.csv"
+            filetype="csv"
+            importtoentity="account" />
+         <zipimportdetail filename="subfile2.csv"
+            filetype="csv"
+            importtoentity="contact" />
+      </zipimportdetails>
+   </filestoimport>
+   <filesmapstoimport>
+      <configimportmapfile filename="SampleOption.xml" />
+   </filesmapstoimport>
+   <cmtdatafiles>
+      <cmtdatafile filename="data_1033.zip"
+         lcid="1033"
+         usermapfilename="UserMap.xml" />
+      <cmtdatafile filename="data_1041.zip"
+         lcid="1041"
+         usermapfilename="" />
+   </cmtdatafiles>
+</configdatastorage>
+```
+
+The following sections provide details about the valid XML elements and attributes for this document.
 
 ## `configdatastorage` element
 
@@ -24,7 +92,7 @@ All of these attributes are optional.
 
 |Name|Description|
 |---------|---------|
-|`installsampledata`Whether to install sample data. This is the same sample data installed using these other methods:<br />- [Add or remove sample data](../admin/add-remove-sample-data.md)<br />- [Add and remove sample data with code](/power-apps/developer/data-platform/sample-data) |
+|`installsampledata`|Whether to install sample data. This is the same sample data installed using these other methods:<br />- [Add or remove sample data](../admin/add-remove-sample-data.md)<br />- [Add and remove sample data with code](/power-apps/developer/data-platform/sample-data) |
 |`waitforsampledatatoinstall`|If `true`, and if `installsampledata` is also set to `true`, waits for sample data to install before deploying the package. Don't set this to `true` when `installsampledata` is `false`.|
 |`agentdesktopzipfile`|File name of the zip file to unpack. If you specify a .zip file name here, it adds a screen during the package deployment process that prompts you to select a location where you want to unpack the contents of the file.<br /><br />This attribute is commonly used for creating packages for [Unified Service Desk for Dynamics 365](/dynamics365/unified-service-desk/unified-service-desk). |
 |`agentdesktopexename`|Name of the .exe or .msi file in the zip file or a URL to be invoked at the end of the deployment process.<br /><br />This attribute is commonly used for creating packages for [Unified Service Desk for Dynamics 365](/dynamics365/unified-service-desk/unified-service-desk).|
@@ -32,12 +100,14 @@ All of these attributes are optional.
 
 ### configdatastorage elements
 
+These are the valid child elements:
+
 |Element|Descriptions|
 |---------|---------|
 |`solutions`|Contains 0 or many [`configsolutionfile` elements](#configsolutionfile-element) that describe solutions to import.|
 |`filestoimport`|Contains<br /> - 1 or many [`configimportfile` elements](#configimportfile-element)<br /> - 0 or many [`zipimportdetails` element](#zipimportdetails-element) that describe individual files and zip files to be imported.|
 |`filesmapstoimport`|Contains 1 or many [`configimportmapfile` element](#configimportmapfile-element). The order of the map files in this element indicates the order in which they're imported. [Learn more about creating data maps for import](/power-apps/developer/data-platform/create-data-maps-for-import) |
-|`cmtdatafiles`|Contains 0 or many |
+|`cmtdatafiles`|Contains 1 or many [`cmtdatafile` elements](#cmtdatafile-element) that contain localized version of the configuration data file to be imported.|
 
 ## `configsolutionfile` element
 
@@ -102,6 +172,21 @@ Contains information about an individual map file to import in Dataverse.
 |`filename`|The name of the file containing the mapping data.|
 
 ## `cmtdatafile` element
+
+Specifies the localized configuration data files along with locale ID (required) and user information map file (optional).
+
+### cmtdatafile example
+
+```xml
+<cmtdatafiles>
+   <cmtdatafile filename="data_1033.zip"
+      lcid="1033"
+      usermapfilename="UserMap.xml" />
+   <cmtdatafile filename="data_1041.zip"
+      lcid="1041"
+      usermapfilename="" />
+</cmtdatafiles>
+```
 
 ### cmtdatafile attributes
 
