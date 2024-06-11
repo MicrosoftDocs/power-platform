@@ -93,7 +93,7 @@ Error message:
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This result happens when the the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
+This result happens when the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
 
 ### What is the earliest version of source environment I can copy from?
 

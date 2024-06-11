@@ -51,7 +51,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Reset environment          | A sandbox environment has been reset.                                                                                                  |
 | Upgraded environment       | A component of an environment has been upgraded to a new version.                                                                      |
 | CMK-Renewed environment    | The customer-managed key (CMK) has been renewed on the environment.                                                                         |
-| CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was retured to Microsoft-managed key.                                              |
+| CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was returned to Microsoft-managed key.                                              |
 
 ## Activity category: Environment property and setting change activities
 

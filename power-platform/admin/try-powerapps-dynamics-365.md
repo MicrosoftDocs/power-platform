@@ -20,7 +20,7 @@ You can explore all Power Platform apps for free by signing up for trial license
 |Microsoft Copilot Studio | [Sign up for a Microsoft Copilot Studio trial](/microsoft-copilot-studio/sign-up-individual) |
 
 > [!NOTE]
-> You can sign up for for a 30-day free trial of customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service) by visiting <https://trials.dynamics.com>, and selecting the appropriate app.
+> You can sign up for a 30-day free trial of customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service) by visiting <https://trials.dynamics.com>, and selecting the appropriate app.
 >
 > For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](/dynamics365/).
 
