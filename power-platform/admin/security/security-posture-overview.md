@@ -36,11 +36,11 @@ search.audienceType:
 :::image type="content" source="media/full-image.jpg" alt-text="this is the description of the full-image.":::
 
  ## Security posture management for your Tenant
- Security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level.  
-
+ Security posture is a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. 
+ 
  **Calculating your security posture**
  
- Security score is a numerical summary of your organization's security posture based on systems configurations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
+Security score is a numerical summary of your organization's security posture based on systems recommendations, user behavior, and other security-related measurements. It is a measurement of organization security posture, with a higher number indicating more recommended actions taken, thereby improving the overall security posture of the organization. 
 
  
 Your security score is calculated as a sum of your achieved impact score over total possible impact score. 
