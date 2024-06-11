@@ -36,7 +36,7 @@ search.audienceType:
 :::image type="content" source="media/full-image.jpg" alt-text="this is the description of the full-image.":::
 
  ## Security posture management for your Tenant
- In general security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level.  
+ Security posture is a measure of the level of visibility you have into your asset inventory and attack surface. It’s a set of custom or predefined profiles you can create for you SAAS applications or public cloud services from cyber-attacks. Your security posture determines the cybersecurity strength level.  
 
  **Calculating your security posture**
  
