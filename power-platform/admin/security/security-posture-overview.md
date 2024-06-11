@@ -82,7 +82,10 @@ Secure Score = 30 / 55
  ## Reactive governance through recommendations
 
  The system generates various recommendations which will improve the security posture of your tenant. Recommendations refer to actions or measures that the administrator can 
- take to enhance their overall security stance. System generated recommendations can be acted upon by directly clicking on the link under the recommended action of that feature. where as, if you are configure features outside of the recomendation then this can be done by click on the 'manage' button. 
+ take to enhance their overall security stance. 
+ - System generated recommendations can be acted upon by directly clicking on the link under the recommended action of that feature.
+ - If you are configure features outside of the recomendation then this can be done by click on the 'manage' button.
+   
  Recommendations are provided at 
  
 - Tenant level
