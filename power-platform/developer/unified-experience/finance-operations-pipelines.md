@@ -43,8 +43,9 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
     :::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of solution artifacts in Azure DevOps.":::
 
-   > [!NOTE]
-   > If you see the error - 'An item with the specified name <initial drive path>\3c5d3d3b-4428-4901-9357-4559d510e2a8\<model> already exists.' please ensure that you do not have duplicate modules as only 1 version per module is accepted.
+> [!NOTE]
+> If you see the error - 'An item with the specified name <initial drive path>\3c5d3d3b-4428-4901-9357-4559d510e2a8\<model> already exists.' please ensure that you do not have duplicate modules as only 1 version per module is accepted.
+
    
 ## Link to your deploy pipeline
 
