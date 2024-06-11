@@ -1,19 +1,24 @@
 ---
-title: "Dev workflow to Write, deploy, debug and troubleshoot X++ code across multiple environments"
-description: "Learn how to work over time with multiple unified developer environments, ISV modules, troubleshooting as you go along."
+title: "Workflow to write, deploy, debug and troubleshoot X++ code across multiple environments"
+description: "Learn how to work over time with multiple unified development environments, ISV modules, and troubleshooting as you go."
 author: pathaku
-ms.date: 06/06/2024
+ms.date: 06/11/2024
 ms.topic: how-to
 ms.reviewer: phecke
 ms.author: pathaku
 ms.subservice: developer
 ---
-   
-> [!IMPORTANT]
-> You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
-> 
+
+#  Workflow to write, deploy, debug and troubleshoot X++ code across multiple environments
+
+This article shows you a workflow to write, deploy, debug and troubleshoot X++ code across multiple environments. 
+
+> [!NOTE]
+> You can learn more by watching the presentation and demos for the Dynamics 365 FastTrack Tech Talk series.
 > [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
- 
+
+Let's start by setting up a development machine with multiple unified developer environments/
+
 # A developer machine and multiple unified developer environments 
 
 A developer machine can be used to connect to multiple unified developer environments. 
