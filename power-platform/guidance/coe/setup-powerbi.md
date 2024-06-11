@@ -129,7 +129,7 @@ Power BI dataflows can transform data from the Azure Storage account into tables
 
 ### Configure the Power BI dashboard
 
-1. In Power BI Desktop, open the **BYODL_CoEDashboard_MMMYY.pbit** file, which can be found in the [CoE Starter Kit you downloaded](https://aka.ms/CoEStarterKitDownload).
+1. In Power BI Desktop, open the **BYODL_CoEDashboard_MMMYY.pbit** file found in the [CoE Starter Kit you downloaded](https://aka.ms/CoEStarterKitDownload).
 
 1. Enter your URL and ID.
 
@@ -140,7 +140,7 @@ Power BI dataflows can transform data from the Azure Storage account into tables
 
 1. If prompted, sign in to Power BI Desktop with your organization account that has access to your CoE Starter Kit environment.
 
-1. Save the dashboard locally, or select **Publish** and choose the workspace where you want to publish your report.
+1. Save the dashboard locally or select **Publish** and choose the workspace where you want to publish your report.
 
 1. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
 
