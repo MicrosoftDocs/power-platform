@@ -462,7 +462,7 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: New article
+            - name: Use the Security Hub
               href: security/security-posture-overview.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
