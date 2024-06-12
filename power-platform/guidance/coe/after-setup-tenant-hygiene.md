@@ -29,7 +29,7 @@ The CoE Starter Kit's governance component includes **Developer Compliance Cente
 
 Learn more:
 
-- [Defining an environment strategy](/power-platform/guidance/white-papers/environment-strategy.md)
+- [Defining an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 - [Communicating Power Platform governance](/power-platform/guidance/white-papers/environment-strategy#communicate-your-environment-strategy-to-your-organization)
 - [CoE Starter Kit - Developer Compliance Center](/power-platform/guidance/coe/governance-components#developer-compliance-center)
 - [CoE Starter Kit - Power BI dashboard](/power-platform/guidance/coe/power-bi-monitor#environments)
