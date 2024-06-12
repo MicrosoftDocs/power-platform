@@ -42,7 +42,7 @@ If you're the first user in your tenant to navigate to the **Pipelines** page in
 
 ### Create a pipeline in Power Apps
 
-First, ensure that you are in the development environment where you want your pipeline to start from.
+First, ensure that you are in the development environment where you want your pipeline to start from and inside the solution that you want to deploy.
 
 Select **Create pipeline** on the command bar or from the **Pipeline** dropdown list.
 
