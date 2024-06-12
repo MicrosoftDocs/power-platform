@@ -4,11 +4,13 @@ description: "Learn how to use the Power Platform admin center to view restore d
 author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2024
+ms.date: 06/11/2024
 ms.subservice: admin
 ms.author: adkuppa
 search.audienceType: 
   - admin
+contributors:
+- adkuppa
 ---
 # Restore deleted Microsoft Dataverse table records (preview)
 
@@ -19,9 +21,11 @@ As part of the regular business processes with Microsoft Dataverse, users often 
 Developers should read [Restore deleted records with code (preview)](/power-apps/developer/data-platform/restore-deleted-records) to learn how to interact with this feature using code.
 
 > [!IMPORTANT]
+>
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
+> - During preview, any storage used by the recycle bin will not count against your organization's storage capacity.
 
 ## Prerequisites
 
@@ -58,6 +62,9 @@ Some organizations add custom business logic that deletes records related to a r
 
 Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
+### Restore option not shown after enabling the recycle bin
+
+The **Restore** button might not appear even when the recycle bin feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, **Settings** > **Audit and logs** > **System jobs**, and search for **Enable RecycleBin** and confirm the **Status Reason** is **Succeeded**. If the status reason isn't **Succeeded** or despite the success state appearing correct you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
 ### See also
 

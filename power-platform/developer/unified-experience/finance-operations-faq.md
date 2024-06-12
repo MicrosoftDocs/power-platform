@@ -37,6 +37,10 @@ We currently don't have the capability to provision or update the environment to
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
+### Can I watch a presentation and demos covering core developer scenarios
+
+Yes, one such place among others is [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
 ### I connected to the environment from Visual Studio but didn't get any pop-up to download metadata
 
 Ensure that the unified development environment you created is a unified development environment of type **Sandbox**. A **Trial** environment won't work.
@@ -45,9 +49,9 @@ Ensure that the unified development environment you created is a unified develop
 
 When this option is missing from the menu, open the Infolog from the menu and retry. This is addressed in application version 10.0.39 and above.
 
-### How do I re download the client assets
+### How do I re download the client assets 
 
-In Visual Studio from the **Tools** menu, select **Download Dynamics 365 FinOps assets**.
+In Visual Studio from the **Tools** menu, select **Download Dynamics 365 FinOps assets**. 
 
 ### PackagesLocalDirectory extraction doesn't complete
 
@@ -89,7 +93,7 @@ Error message:
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This result happens when the the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
+This result happens when the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
 
 ### What is the earliest version of source environment I can copy from?
 
@@ -109,7 +113,7 @@ Use the latest version of the Azure DevOps extension from the marketplace. It's 
 
 ### How can I deploy packages received from ISVs to my Unified Developer Environment?
 
-Place the ISV modules in a common folder and add this common parent folder of all ISV modules to the existing list of reference metadata folders in the active configuration you intend to use. Refer [Install and configure development tools](finance-operations-install-config-tools.md)
+Place the ISV modules in a common folder and add this common parent folder of all ISV modules to the existing list of reference metadata folders in the active configuration you intend to use. Refer [Install and configure development tools](finance-operations-install-config-tools.md) 
 
 ### How do I include a license and directly deploy from Visual Studio?
 
@@ -121,9 +125,17 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
+### How can I create a fully deployable package (Lifecycle Services legacy package) from Visual Studio?
+
+For UDE we have moved on to Power Platform Unified Package format but you can still create the fully deployable package from Azure DevOps pipelines in addition to the unified format.
+
 ### Stopping debugging restarts the runtime
 
 Use **Detach All** to end debugging in place of **Stop Debugging**.
+
+### Are you still improving developer experiences in UDE?
+
+Yes, we are focused on improving developer experiences across all scenarios encompassing F&O, Dataverse and all of Power Platform. These include login, deployment, troubleshooting, SSRS and richer, uniform and modern UX across the board.
 
 ## Checking logs and history
 
@@ -149,7 +161,8 @@ You can check the packages applied and other updates to your Finance and Operati
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
-The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane.
+The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. 
+
 The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs.
 Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\<version>\VisualStudioD365Extension-*.log.
 
@@ -161,4 +174,9 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 ### See also
 
-[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
+
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)  
+[Install and configure development tools](finance-operations-install-config-tools.md)  
+[Write, deploy, and debug X++ code](finance-operations-debug.md)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)

@@ -2,7 +2,7 @@
 title: "Execute unit tests in Azure Pipelines"
 description: Learn how to set up a unit test for execution using Azure Pipelines.
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 06/07/2024
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -10,8 +10,6 @@ ms.subservice: developer
 ---
 
 # Execute unit tests in Azure Pipelines
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 An Azure Pipeline build task is available that lets users execute unit tests on connected cloud runtime environments using a continuous integration/continuous delivery (CI/CD) pipeline. The "Execute Unit Tests in Unified Environment" task is included in the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension.
 
@@ -85,6 +83,13 @@ task: microsoft-IsvExpTools.PowerPlatform-BuildTools.set-connection-variables.Po
 The following screenshot shows the same reference name used in a unit test task:
 
 :::image type="content" source="..\media\unified-experience\devexp-unitTest-task-1.png" alt-text="Version 1 of Unit test task.":::
+
+### Known Issues
+The Execute Unit Tests in Unified Environment task is stuck/times out after message: “Starting submit of test request:”
+
+Solution: This could occur if the **Connection string** provided by the user is of type **Username/Password and has MFA enabled**. Only **Service Principal/Client Secret authentication or Username/Password without MFA authentication** are supported.
+
+
 
 ### See also
 

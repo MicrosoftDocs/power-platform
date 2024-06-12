@@ -4,16 +4,19 @@ description: Data loss prevention activity logging
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/09/2023
+ms.date: 06/07/2024
 ms.subservice: admin
-author: Zeffin
-ms.author: johnev
+author: sericks007
+ms.author: sericks
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
 
 # Data loss prevention activity logging
+
+> [!Warning]
+> The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
 > Activity logging for data loss protection policies is not currently available in sovereign clouds.
@@ -60,7 +63,7 @@ Schemas define which fields are sent to the [Microsoft 365 Security and Complian
 |Operation     |Edm.Date         |No         |Name of operation         |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID       |
 |UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
-|Additional Info     |Edm.String        |No         |Additional information if any (e.g. the environment name)       |
+|Additional Info     |Edm.String        |No         |More information if any (e.g. the environment name)       |
 
 ### Additional Info 
 
