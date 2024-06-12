@@ -1,5 +1,5 @@
 ---
-title: "Workflow to write, deploy, debug and troubleshoot X++ code across multiple environments"
+title: "Workflow to write, deploy, debug, and troubleshoot X++ code across multiple environments"
 description: "Learn how to work over time with multiple unified development environments, ISV modules, and troubleshooting as you go."
 author: pathaku
 ms.date: 06/11/2024
@@ -9,7 +9,7 @@ ms.author: pathaku
 ms.subservice: developer
 ---
 
-# Workflow to write, deploy, debug and troubleshoot X++ code across multiple environments
+# Workflow to write, deploy, debug, and troubleshoot X++ code across multiple environments
 
 This article describes a workflow to write, deploy, debug, and troubleshoot X++ code across multiple environments.
 
@@ -21,11 +21,12 @@ Let's start by talking about a development machine with multiple unified develop
 
 ## Multiple unified development environments
 
+s
 A developer machine can be used to connect to multiple unified development environments. However, an instance of Visual Studio can at any time be connected to only one environment and have only one metadata configuration active. You can switch the active configuration using the menu item **Extensions** > **Dynamics 365** > **Configure Metadata**.
 
-Switching the active metadata configuration does not change the environment you are connected to. You can change it from the Visual Studio menu item **Tools** > **Connect to Dataverse**.
+Switching the active metadata configuration does not change the environment you're connected to. You can change it from the Visual Studio menu item **Tools** > **Connect to Dataverse**.
 
-The same configuration may be valid for multiple environments with same finance and operation application and platform versions. It is still better to have a metadata configuration per environment. These configurations can have common values for custom and reference metadata folder, and more. The current configuration and the current connection together determine what gets deployed and to which environment.
+The same configuration may be valid for multiple environments with same finance and operation application and platform versions. It's still better to have a metadata configuration per environment. These configurations can have common values for custom and reference metadata folder, and more. The current configuration and the current connection together determine what gets deployed and to which environment.
 
 Different environments with different finance and operation application and platform versions could be used for different purposes. It is recommended that the finance and operation Visual studio extension version matches with the environment.
 
