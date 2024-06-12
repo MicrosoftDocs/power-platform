@@ -93,7 +93,7 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 # Example Scenarios
 
 ## Offline Sync Failure Rate by Sync Type
-\`\`\`kusto
+```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
 | where cd.appFlavor == "FieldService"
@@ -102,10 +102,10 @@ dependencies
 | extend dataSyncMode = tostring(parse_json(customDimensions).dataSyncMode)
 | summarize failure_count = count() by dataSyncMode
 | order by failure_count desc
-\`\`\`
+``
 
 ## Tables Synced by Record Count
-\`\`\`kusto
+```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
 | extend eventContext = parse_json(tostring(cd.eventContext))
@@ -116,10 +116,10 @@ dependencies
 | summarize TotalSyncedRecords = sum(toint(SyncedRecordCount)) by tostring(TableName)
 | order by TotalSyncedRecords desc
 | render piechart // Visualize the results as a pie chart
-\`\`\`
+```
 
 ## Users by Device Type and App Version
-\`\`\`kusto
+```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
 | where isnotempty(user_Id) // Filter out rows where user_Id is empty
@@ -131,7 +131,7 @@ dependencies
              Android = dcountif(user_Id, cd.deviceInfo_OsName == "Android"), 
              Windows = dcountif(user_Id, cd.deviceInfo_OsName has "Windows") 
          by ShortAppVersion
-\`\`\`
+```
 
 
 # Error Code mapping
