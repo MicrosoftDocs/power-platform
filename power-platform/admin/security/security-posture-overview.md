@@ -123,11 +123,11 @@ There're several security features that help secure your tenant:
 
 ## Frequently asked questions (FAQ)
 
-#### When will the Security page be available for Government Community Cloud (GCC)?
+### When will the Security page be available for Government Community Cloud (GCC)?
 
 The **Security** page is planned for availability in GCC after the general availability release.
 
-#### Can customers modify the recommendations or parameters based on their needs?
+### Can customers modify the recommendations or parameters based on their needs?
 
 No. The recommendations are system-generated and are based on Microsoft's best practices and guidance.
 
