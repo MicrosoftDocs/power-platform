@@ -68,18 +68,16 @@ Use the [pac admin list](../cli/reference/admin.md#pac-admin-list) command to vi
 > [!NOTE]
 > This command requires an administrator authentication profile.
 
-When using this command, you must use the following `--application` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`.
+When using this command, you must use the following `--application` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`. This value is the application ID associated with the catalog.
 
 ```powershell
-PS E:\OneDrive - Microsoft\scripts> pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
+PS C:\Users\you> pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
 Connected as you@yourorg.onmicrosoft.com
 
 Listing all environments from your tenant...
 Active Environment Environment ID                       Environment Url                   Type       Organization ID
 *      Your Org    b16bdb7a-e023-4158-a839-4f8831ed2432 https://yourorg.crm.dynamics.com/ Production e20be4c1-02ce-4e81-93c6-6e95ff053943
 ```
-
-`83a35943-cb41-4266-b7d2-81d60f383695` is the application ID associated with the catalog.
 
 ## View catalog information
 
