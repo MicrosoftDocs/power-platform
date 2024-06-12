@@ -24,7 +24,7 @@ The Power Platform admin center offers a consolidated experience that brings tog
  
 To manage security in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
 
-The **Security** features in the Power Platform admin center takes 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
+The **Security** feature in the Power Platform admin center takes 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
 
 :::image type="content" source="media/full-image.jpg" alt-text="The Security Hub page with data.":::
  
