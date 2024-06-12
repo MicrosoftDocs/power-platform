@@ -59,7 +59,7 @@ Each feature is assigned an impact status based on the feature scope (tenant or 
 | Tenant isolation   |  Total number of environments    |       
 | Tenant Lockbox   |  If turned on, the total number of Managed Environments.<br>Zero if not turned on.<br>Zero if not turned on and there are no Managed Environments.    |       
 
-Example: Tenant with ten environments (five Managed Environments and five non-Managed Environments) 
+Example: Tenant with 10 environments (five Managed Environments and five non-Managed Environments) 
 
 | Feature | Impact |  Maximum impact |
 |---------|--------|----------------|
