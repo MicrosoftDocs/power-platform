@@ -35,7 +35,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
     :::image type="content" source="../media/unified-experience/pipelines-create-deployable-package.png" alt-text="Image of Create Deployable Package in Azure DevOps.":::
 
-1. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose **Power Platform Unified Package** from the drop down menu. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step.
+1. If licensing is required, select the **Add Licenses to Deployable Packages** for your version 1 task and choose **Power Platform Unified Package** from the drop down menu. Provide the **Model Name** to include a license. Add a task for each model that the license is needed. Modify the path to the deployable package created in previous step. If the package folder created in the previous step is not provided as input to this step correctly you may see the error 'fnomoduledefinition.json file not found'.
 
     :::image type="content" source="../media/unified-experience/pipelines-add-licenses.png" alt-text="Image of Add Licenses to Deployable Package in Azure DevOps.":::
 
@@ -43,6 +43,10 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
     :::image type="content" source="../media/unified-experience/pipelines-locate-artifacts.png" alt-text="Image of solution artifacts in Azure DevOps.":::
 
+> [!NOTE]
+> If you see the error - 'An item with the specified name c:\3c5d3d3b-4428-4901-9357-4559d510e2a8\modelName already exists.' please ensure that you do not have duplicate modules as only 1 version per module is accepted.
+
+   
 ## Link to your deploy pipeline
 
 Follow these next instructions to link to your deployment pipeline.
