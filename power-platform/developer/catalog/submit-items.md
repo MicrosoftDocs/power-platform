@@ -183,7 +183,8 @@ TODO
 
 ### [Web API](#tab/webapi)
 
-TODO
+// Get Submission details from the catalog.
+GET /mspcat_GetPowerCatalogDetails
 
 
 ---
@@ -242,11 +243,31 @@ TODO
 
 ### [Web API](#tab/webapi)
 
-TODO
+// Send base64 encoded submission document as `EncodedApprovalRequest`
+POST //mspcat_SubmitCatalogApprovalRequest
+Returns AsyncOperationId and CertificationRequestId
 
 ---
 
 ## Check status of catalog submissions
+
+The `statuscode` options of the `mspcat_certificationrequest` table. Completed (2) represents a successful submission.
+
+|Value|Label|
+|---|---|
+|1|Submitted|
+|526430001|InProgress|
+|526430002|Waiting On Submitter|
+|526430003|Pending Deployment|
+|526430008|Draft|
+|526430009|Processing|
+|2|Completed|
+|526430000|Abandoned|
+|526430004|Rejected|
+|526430005|Marketing Content|
+|526430006|Duplicate Request|
+|526430010|Failed Prevalidation|
+
 
 ### [PAC CLI](#tab/cli)
 
@@ -265,7 +286,10 @@ TODO
 
 ### [Web API](#tab/webapi)
 
-TODO
+// Poll for status of certification request
+GET /mspcat_certificationrequests(id)?$select=statuscode
+
+
 ---
 
 ## Submission attributes
