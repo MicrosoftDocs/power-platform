@@ -14,7 +14,7 @@ search.audienceType:
 
 # Manage security
                                                   
-The Power Platform admin center offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
+The Power Platform admin center offers a consolidated experience that brings together all the best practices and a wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
 
 - **Security assessment**: Admins can understand and improve their organization’s security policies specific to their needs. 
 - **Reactive governance through recommendations**: Admins can identify and act on the top-most, impactful recommendations to improve the assessment. 
@@ -26,11 +26,14 @@ To manage security in your tenant, turn on tenant-level analytics. To turn on te
 
 The **Security** feature in the Power Platform admin center takes 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
 
-:::image type="content" source="media/full-image.jpg" alt-text="The Security Hub page with data.":::
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. From the left-side menu, select **Security**.
+
+    :::image type="content" source="media/full-image.jpg" alt-text="The Security Hub page with data.":::
  
-If you don't turn on tenant-level analytics, no data is displayed on the page.
+    If you don't turn on tenant-level analytics, no data is displayed on the page.
  
-:::image type="content" source="media/No-data.png" alt-text="The Security Hub page when it doesn't show data.":::
+    :::image type="content" source="media/No-data.png" alt-text="The Security Hub page when it doesn't show data.":::
 
 ## Security assessment for your tenant
 The security assessment is a set of custom or predefined profiles you can create for your software as a service (SAAS) applications or public cloud services from cyber-attacks. 
