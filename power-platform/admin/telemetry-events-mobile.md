@@ -93,13 +93,45 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 # Example Scenarios
 
 ## Offline Sync Failure Rate by Sync Type
-abc
+\`\`\`kusto
+dependencies
+| extend cd = parse_json(customDimensions)
+| where cd.appFlavor == "FieldService"
+| where type  == "modelAppEvent"
+| where success == false
+| extend dataSyncMode = tostring(parse_json(customDimensions).dataSyncMode)
+| summarize failure_count = count() by dataSyncMode
+| order by failure_count desc
+\`\`\`
 
 ## Tables Synced by Record Count
-abc
+\`\`\`kusto
+dependencies
+| extend cd = parse_json(customDimensions)
+| extend eventContext = parse_json(tostring(cd.eventContext))
+//| where eventContext.IsFirstSync == "true" // 
+| extend dataSyncStatus = parse_json(tostring(eventContext.DataSyncStatus))
+| mv-expand entities = dataSyncStatus.entities to typeof(dynamic) // Expand the entities list into rows
+| project TableName = entities.entityName, SyncedRecordCount = entities.totalSyncedRecordCount
+| summarize TotalSyncedRecords = sum(toint(SyncedRecordCount)) by tostring(TableName)
+| order by TotalSyncedRecords desc
+| render piechart // Visualize the results as a pie chart
+\`\`\`
 
 ## Users by Device Type and App Version
-abc
+\`\`\`kusto
+dependencies
+| extend cd = parse_json(customDimensions)
+| where isnotempty(user_Id) // Filter out rows where user_Id is empty
+| where cd.appFlavor == "FieldService"
+| where type  == "modelAppEvent"
+| extend ShortAppVersion = extract(@"\b\d+\.(\d+\.\d+)", 1, application_Version)
+| summarize Users = dcount(user_Id), 
+             iOS = dcountif(user_Id, cd.deviceInfo_OsName == "iOS"  or cd.deviceInfo_OsName == "iPadOS"), 
+             Android = dcountif(user_Id, cd.deviceInfo_OsName == "Android"), 
+             Windows = dcountif(user_Id, cd.deviceInfo_OsName has "Windows") 
+         by ShortAppVersion
+\`\`\`
 
 
 # Error Code mapping
