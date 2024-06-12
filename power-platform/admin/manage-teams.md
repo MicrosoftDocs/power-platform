@@ -25,7 +25,7 @@ Using Microsoft Dataverse teams is optional. However, teams provide an easy way 
 
 **Access team:** An *access team* doesn't own records and doesn't have security roles assigned to the team. The team members have privileges defined by their individual security roles and by roles from the teams they're members of. These members share records with an access team, and the team is granted access rights to the records. Access rights include Read, Write, and Append.
 
-**Microsoft Entra group team:** Similar to owner teams, an *Microsoft Entra group team* can own records and can have security roles assigned to the team. Security and Office are two group team types, and they correspond directly to Microsoft Entra group types. Group security roles can be assigned only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Microsoft Entra group membership. More information: [Manage group teams](manage-group-teams.md)
+**Microsoft Entra group team:** Similar to owner teams, a *Microsoft Entra group team* can own records and can have security roles assigned to the team. Security and Office are two group team types, and they correspond directly to Microsoft Entra group types. Group security roles can be assigned only for a specific team or for a team member with user privileges that include [members' privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access an environment based on their Microsoft Entra group membership. More information: [Manage group teams](manage-group-teams.md)
 
 > [!NOTE]
 > You can assign security roles directly to owner teams and Microsoft Entra group teams and users. The environment picker only recognizes users who are members of Microsoft Entra group teams and users who have security roles assigned to them directly. 
@@ -96,7 +96,7 @@ After you create the team, you can add team members and select corresponding sec
 You can add and delete members from a team.
 
 > [!NOTE]
-> Managing team members is allowed only for the Owner and Access team types. For Microsoft Entra group teams, managing team members must be performed by an Microsoft Entra admin.
+> Managing team members is allowed only for the Owner and Access team types. For Microsoft Entra group teams, managing team members must be performed by a Microsoft Entra admin.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com). 
 

@@ -134,7 +134,7 @@ To configure the extension, follow these instructions.
    :::image type="content" source="../media/unified-experience/D365FinOpsConfigureMetadata.png" alt-text="Configure Metadata dialog":::
 
 1. Select **Save**.
-2. You can similary edit a configuration. A common field to update is the folder for your own custom metadata.
+2. You can similarly edit a configuration. A common field to update is the folder for your own custom metadata.
 3. You might also want to move your cross reference database from SQL server local db to SQL server and update the configuration
 4. You can delete stale configurations.
 5. Note that only one configuration can be current or active at any given time.

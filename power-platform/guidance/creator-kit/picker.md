@@ -88,7 +88,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `FontSize` | the font size of the tags shown inside the Picker. |
 | `BorderRadius` | the border radius of the tags shown inside the Picker. |
-| `ItemHeight` | the height of the tags (pixesl) shown inside the Picker. |
+| `ItemHeight` | the height of the tags (pixels) shown inside the Picker. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ### Event properties

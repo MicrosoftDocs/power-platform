@@ -47,7 +47,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 When used with a data source, these functions cannot be delegated. Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story. A warning may appear at authoring time to remind you of this limitation.
 
 #### Delegation support (Experimental)
-Delegation support for RemoveIf is now in Experimental Preview (default OFF) for data sources that support it. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maxium of either 500, 2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server. 
+Delegation support for RemoveIf is now in Experimental Preview (default OFF) for data sources that support it. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maximum of either 500, 2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server. 
 
 ## Syntax
 
@@ -258,7 +258,7 @@ Sample collection is created that you can use in the following example.
    ```
 
    > [!NOTE]
-   > You must use [global disambiguation operator](operators.md#disambiguation-operator) **[@**...**]** in this example with sample data that uses the _Contacts_ table to avoid conflict with a _One-to-Many_ relationship. If you use data sources such as a list or a SQL Server table, using _global disambgulation operator_ is not required.
+   > You must use [global disambiguation operator](operators.md#disambiguation-operator) **[@**...**]** in this example with sample data that uses the _Contacts_ table to avoid conflict with a _One-to-Many_ relationship. If you use data sources such as a list or a SQL Server table, using _global disambiguation operator_ is not required.
 
    ![OnSelect for trash icon.](media/function-remove-removeif/gallery-onselect.png)
 

@@ -37,6 +37,10 @@ We currently don't have the capability to provision or update the environment to
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
+### Can I watch a presentation and demos covering core developer scenarios
+
+Yes, one such place among others is [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
 ### I connected to the environment from Visual Studio but didn't get any pop-up to download metadata
 
 Ensure that the unified development environment you created is a unified development environment of type **Sandbox**. A **Trial** environment won't work.
@@ -89,7 +93,7 @@ Error message:
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This result happens when the the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
+This result happens when the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
 
 ### What is the earliest version of source environment I can copy from?
 
@@ -121,9 +125,17 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
+### How can I create a fully deployable package (Lifecycle Services legacy package) from Visual Studio?
+
+For UDE we have moved on to Power Platform Unified Package format but you can still create the fully deployable package from Azure DevOps pipelines in addition to the unified format.
+
 ### Stopping debugging restarts the runtime
 
 Use **Detach All** to end debugging in place of **Stop Debugging**.
+
+### Are you still improving developer experiences in UDE?
+
+Yes, we are focused on improving developer experiences across all scenarios encompassing F&O, Dataverse and all of Power Platform. These include login, deployment, troubleshooting, SSRS and richer, uniform and modern UX across the board.
 
 ## Checking logs and history
 
@@ -162,4 +174,9 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 ### See also
 
-[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)
+
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)  
+[Install and configure development tools](finance-operations-install-config-tools.md)  
+[Write, deploy, and debug X++ code](finance-operations-debug.md)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)

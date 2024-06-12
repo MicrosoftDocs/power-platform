@@ -19,7 +19,7 @@ There are different ways to obtain access to a particular record in Dataverse. T
  
 ## Privilege check
  
-The privilege check is the first barrier that needs to be passed in order to do a certain action with a record of an table. The privilege checks validate that the user has the required privilege for that table. For each table, whether out of the box or custom, there exist different privileges to provide interaction capabilities with the records of that type. 
+The privilege check is the first barrier that needs to be passed in order to do a certain action with a record of a table. The privilege checks validate that the user has the required privilege for that table. For each table, whether out of the box or custom, there exist different privileges to provide interaction capabilities with the records of that type. 
 
 For example, for Account, the privileges are:
 

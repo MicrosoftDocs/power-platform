@@ -455,7 +455,7 @@ The Windows Player for canvas apps will no longer be able to be used.
 
 You must replace usage of the Dynamics 365 connector with the Microsoft Dataverse connector.
 
-- **Microsoft Dataverse**: This is the newest connector and the main connector avilable for Dataverse usage. All new features, performance work, and enhancements will be available on this connector. A
+- **Microsoft Dataverse**: This is the newest connector and the main connector available for Dataverse usage. All new features, performance work, and enhancements will be available on this connector. A
 
 **Mapping of common actions**
 
