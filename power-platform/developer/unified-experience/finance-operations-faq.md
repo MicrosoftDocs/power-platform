@@ -125,9 +125,17 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
+### How can I create a fully deployable package (Lifecycle Services legacy package) from Visual Studio?
+
+For UDE we have moved on to Power Platform Unified Package format but you can still create the fully deployable package from Azure DevOps pipelines in addition to the unified format.
+
 ### Stopping debugging restarts the runtime
 
 Use **Detach All** to end debugging in place of **Stop Debugging**.
+
+### Are you still improving developer experiences in UDE?
+
+Yes, we are focused on improving developer experiences across all scenarios encompassing F&O, Dataverse and all of Power Platform. These include login, deployment, troubleshooting, SSRS and richer, uniform and modern UX across the board.
 
 ## Checking logs and history
 
