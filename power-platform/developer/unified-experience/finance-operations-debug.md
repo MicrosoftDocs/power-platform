@@ -1,6 +1,6 @@
 ---
-title: "Write, deploy, and debug X++ code"
-description: "Learn how to write an X++ class, deploy it, and then debug it in the unified developer experience."
+title: "Tutorial: Write, deploy, and debug X++ code"
+description: "Try a tutorial on how to create a module, write an X++ class, deploy it, and then debug it using the unified developer experience."
 author: pvillads
 ms.date: 06/06/2024
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.author: pathaku
 ms.subservice: developer
 ---
 
-# Write, deploy, and debug X++ code
+# Tutorial: Write, deploy, and debug X++ code
 
 The unified developer experience for finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
