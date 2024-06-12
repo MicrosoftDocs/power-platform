@@ -40,7 +40,7 @@ Review the following information about how your security assessment is calculate
 
 ### Calculating your security assessment
  
-The security assessment is a numerical summary of your organization's security status based on system recommendations, user behavior, and other security-related measurements. It's a measurement of organizational security position, with a higher number indicating that more recommended actions have been taken. 
+The security assessment is calculated as a numerical summary of your organization's security status based on system recommendations, user behavior, and other security-related measurements. It's a measurement of your organizational, security position, with a higher number indicating that more recommended actions have been taken. 
 
 Your security assessment is calculated as a sum of your achieved impact over total possible impact. 
 
