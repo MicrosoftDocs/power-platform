@@ -24,7 +24,7 @@ Let's start by talking about a development machine with multiple unified develop
 s
 A developer machine can be used to connect to multiple unified development environments. However, an instance of Visual Studio can at any time be connected to only one environment and have only one metadata configuration active. You can switch the active configuration using the menu item **Extensions** > **Dynamics 365** > **Configure Metadata**.
 
-Switching the active metadata configuration does not change the environment you're connected to. You can change it from the Visual Studio menu item **Tools** > **Connect to Dataverse**.
+Switching the active metadata configuration doesn't change the environment you're connected to. You can change it from the Visual Studio menu item **Tools** > **Connect to Dataverse**.
 
 The same configuration may be valid for multiple environments with same finance and operation application and platform versions. It's still better to have a metadata configuration per environment. These configurations can have common values for custom and reference metadata folder, and more. The current configuration and the current connection together determine what gets deployed and to which environment.
 
@@ -54,7 +54,7 @@ Let's look at your options when deploying code and synchronizing the database on
 |Deploy one or many modules that are already built | Use the **Dynamics 365** > **Deploy** > **Deploy models ...** dialog.|You can optionally synchronize the database for the modules.|
 |Deploy one or many modules as part of a full build | Initiate via the **Dynamics 365** > **Build models** dialog after setting the option to **Deploy to connected online environment** .|You can optionally synchronize the database for the modules using the **synchronize database** setting on the same **Options** tab.|
 |Deploy one or many modules as part of a build/rebuild of X++ projects from Solution Explorer | Initiate via build/rebuild of the project(s) or solution after setting the option to **Deploy changes to online environment** . This only deploys changes since the last successful deployment and is faster |You can optionally synchronize the database for the included changes|
-|Deploy one module for a given X++ project from the Solution Explorer | Initiate via right-clicking the project and choosing **Deploy model for project ...**.| This will only deploy changes since last successful deployment but will not synchronize the database for the module.|
+|Deploy one module for a given X++ project from the Solution Explorer | Initiate via right-clicking the project and choosing **Deploy model for project ...**.| This will only deploy changes since last successful deployment but won't synchronize the database for the module.|
 |No deploying any module but synchronize the database for all modules in the environment | Initiate via **Dynamics 365** > **Synchronize database...** dialog.|This is a long running operation since DBSync is run for all modules.|
 
 > [!NOTE]
@@ -75,7 +75,7 @@ Proceed by adding a new reference in **Folders for reference metadata** by click
 
 Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin folder. This license is verified and applied when you deploy the package.
 
-As an example, if you want to add a license file **licenseFile01** for for Module01 present at E:\ISVModules\Module01, create a child folder E:\ISVModules\Module01\__License and place the file in it as E:\ISVModules\Module01\__License\licenseFile01. Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
+As an example, if you want to add a license file **licenseFile01** for Module01 present at E:\ISVModules\Module01, create a child folder E:\ISVModules\Module01\__License and place the file in it as E:\ISVModules\Module01\__License\licenseFile01. Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
 
 Learn more at [Independent software vendor (ISV) licensing](/dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-licensing)
 
@@ -96,7 +96,7 @@ The package deployment could fail in various stages including DB sync, for vario
 
 You can also download the logs from your Dataverse organization by following these steps.
 
-1. Login to the Dataverse organization
+1. Sign in to the Dataverse organization
 1. Find **Finance and Operation Package Manager App** on the main page
 1. Select the app, and then from left pane, select **Operation History**
 1. Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
@@ -105,7 +105,7 @@ You can also download the logs from your Dataverse organization by following the
 
 If deployment and DB Sync are successful, you should execute your scenario and contrast expected and actual behavior for clues. Infolog is often very helpful in this case.
 
-If above is not enough, you should attach the debugger to the running AOS process in the unified environment using the menu **Dynamics 365** > **Launch debugger**. Executing the scenario this time with a few breakpoints set will give you better insight.
+If above issn't enough, you should attach the debugger to the running AOS process in the unified environment using the menu **Dynamics 365** > **Launch debugger**. Executing the scenario this time with a few breakpoints set will give you better insight.
 
 We recommend writing X++ unit tests for your code to ensure regressions are easily and quickly detected. You could also use Application Insights to monitor and diagnose the application executing in the unified developer environment.
 
