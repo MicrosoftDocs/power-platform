@@ -53,7 +53,7 @@ You should establish your environment strategy using the recommended environment
 
 [Environments](/power-platform/admin/environments-overview) are a building block for Power Platform administration, governance, and security. A complete feature overview is out of the scope of this paper; however, this section highlights the features that support implementation of an environment strategy at enterprise scale.
 
--  [**Types of environments**](#types-of-environments) describes the different uses of environments as part of your strategy.
+- [**Types of environments**](#types-of-environments) describes the different uses of environments as part of your strategy.
 
 - [**Managed Environments**](#managed-environments) provides a set of premium capabilities that make environments easier to manage at scale.
 
@@ -345,11 +345,10 @@ Environments enable you to create multiple security boundaries within your tenan
 
 Most security settings that affect environments are configured for each environment individually. However, you can make some changes at the tenant level to help support your environment strategy.
 
-First, consider [turning off the Share with Everyone feature](../adoption/secure-default-environment.md#limit-sharing-with-everyone) in Power Platform. Only admins would be able to share an asset with everyone.
-
-Next, consider [securing integration with Exchange](../adoption/secure-default-environment.md#secure-integration-with-exchange).
-
-Finally, [apply cross-tenant isolation](../../admin/cross-tenant-restrictions.md) to help minimize the risk of data exfiltration between tenants.
+- Consider [turning off the Share with Everyone feature](../adoption/secure-default-environment.md#limit-sharing-with-everyone) in Power Platform. Only admins would be able to share an asset with everyone.
+- Consider [securing integration with Exchange](../adoption/secure-default-environment.md#secure-integration-with-exchange).
+- [Apply cross-tenant isolation](../../admin/cross-tenant-restrictions.md) to help minimize the risk of data exfiltration between tenants.
+- Restrict the creation of net-new production environments to admins. [Limiting environment creation](../../admin/control-environment-creation.md) is beneficial to maintain control in general: both to prevent unaccounted capacity consumption and to reduce the number of environments to manage. If users have to request environments from central IT, it’s easier to see what people are working on if admins are the gatekeeper.
 
 ### Secure the default environment
 
@@ -382,6 +381,8 @@ Incorporate the security levels you identify into your group strategy, and where
 ### Align environments to your data loss prevention strategy
 
 Data policies are another important part of an overall governance effort to control the services used by low-code resources in an environment. Environment groups don't have a rule to apply a DLP policy to an environment. However, you can align your DLP strategy with your environment groups. For example, you could create a DLP policy with the same or a similar name as an environment group and apply it to environments in that group.
+
+[Learn more about how to establish a DLP strategy](/power-platform/guidance/adoption/dlp-strategy).
 
 :::image type="content" source="media/environment-strategy/image15.png" alt-text="Diagram illustrating the relationship between environment groups and similarly named data loss prevention policies that apply to them":::
 
@@ -499,6 +500,15 @@ When you evaluate the production environment for an app, keep the following cons
 
 - **Will users have difficulty having to use multiple environments for different apps?** This can affect everything from finding an app on their mobile device to self-service reporting that has to pull data from multiple environments.
 
+### Capacity
+
+Each environment (besides trial and developer environments) will consume 1 GB to initially provision. Capacity is shared across the tenant so it needs to be allocated to those who need it.
+
+Conserve capacity by:
+
+- Managing shared test and production environments. Unlike shared development environments, permissions in test and production environments should be limited to end-user access for testing.
+- Automate cleanup of temporary development environments and encourage use of trial environments for testing or proof-of-concept work.
+
 ### Environment groups
 
 Environment groups are flexible and allow you to accommodate various use cases unique to your organizations. Here are a few ways you could consider grouping environments as part of your environment strategy:
@@ -560,6 +570,10 @@ The following table lists example use cases and migration actions. Ultimately, y
 | Assets with a single maker that have been used recently and are shared    | Move to the owner's individual, developer environment and run from a shared production environment. |
 | Assets with multiple makers that have been used recently and are shared   | Move to a shared developer environment and run from a shared production environment.           |
 | Assets that haven't been used recently                                    | Notify the owner and move to quarantine if no response.                                    |
+
+### Assets in Dataverse for Teams environments
+
+[Microsoft Dataverse for Teams](/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to their team. [Learn how to establish governance policies to manage Microsoft Dataverse for Teams environments.](/power-platform/guidance/adoption/teams-environment-strategy).
 
 ### Environment strategy internally at Microsoft
 

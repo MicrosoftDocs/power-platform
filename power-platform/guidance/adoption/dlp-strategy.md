@@ -16,7 +16,7 @@ search.audienceType:
 
 Data loss prevention (DLP) policies act as guardrails to help prevent users from unintentionally exposing organizational data and to protect information security in the tenant. DLP policies enforce rules for which connectors are enabled for each environment, and which connectors can be used together. Connectors are classified as either **business data only**, **no business data allowed**, or **blocked**. A connector in the business data only group can only be used with other connectors from that group in the same app or flow. More information: [Administer Microsoft Power Platform: Data Loss Prevention Policies](../../admin/wp-data-loss-prevention.md)
 
-Establishing your DLP policies will go hand in hand with your [environment strategy](environment-strategy.md).
+Establishing your DLP policies will go hand in hand with your [environment strategy](../white-papers/environment-strategy.md).
 
 ## Quick facts
 
@@ -49,7 +49,7 @@ As an administrator taking over an environment or starting to support use of Pow
 We recommend the following starting point for DLP policies for **shared user and team productivity environments**:
 
 - Create a policy spanning all environments except selected ones (for example, your production environments), keep the available connectors in this policy limited to Office 365 and other standard microservices, and block access to everything else. This policy will apply to the default environment, and to training environments you have for running internal training events. Additionally, this policy will also apply to any new environments that will be created.
-- Create appropriate and more permissive DLP policies for your [shared user and team productivity environments](environment-strategy.md#tiered-approach-to-team-and-user-productivity-environments). These policies could allow makers to use connectors like Azure services in addition to the Office 365 services. The connectors available in these environments will depend on your organization, and where your organization stores business data.
+- Create appropriate and more permissive DLP policies for your [shared user and team productivity environments](../white-papers/environment-strategy.md). These policies could allow makers to use connectors like Azure services in addition to the Office 365 services. The connectors available in these environments will depend on your organization, and where your organization stores business data.
 
 We recommend the following starting point for DLP policies for **production (business unit and project) environments**:
 
@@ -70,7 +70,7 @@ With this in place, plan how to handle exceptions. You can:
 
 ## Example: Contoso's DLP strategy
 
-Let’s look at how Contoso Corporation, our sample organization for this guidance, set up their DLP policies. The setup of their DLP policies ties in closely with their [environment strategy](environment-strategy.md).
+Let’s look at how Contoso Corporation, our sample organization for this guidance, set up their DLP policies. The setup of their DLP policies ties in closely with their [environment strategy](../white-papers/environment-strategy.md).
 
 Contoso admins want to support user and team productivity scenarios and business applications, in addition to Center of Excellence (CoE) activity management.
 
@@ -105,7 +105,7 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 - Tenant-level and key environment-level (for example, default environment, trial environment) DLP policies enforced in the organization, inclusive of lists of connectors classified as business, non-business, and blocked.
 - Your admin group’s email ID so that makers can make contact for exception scenarios. For example, admins can help makers get back into compliance editing an existing DLP policy, moving the solution to a different environment, creating a new environment and a new DLP policy, and moving the maker and resource to this new environment.
 
-Also clearly communicate your organization's [environment strategy to makers](environment-strategy.md#clearly-communicate-your-organizations-environment-strategy-to-makers).
+Also clearly communicate your organization's [environment strategy to makers](/power-platform/guidance/white-papers/environment-strategy#communicate-your-environment-strategy-to-your-organization).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

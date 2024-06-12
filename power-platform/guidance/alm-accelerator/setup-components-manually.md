@@ -32,7 +32,7 @@ Before you install the ALM Accelerator for Power Platform, make sure you've met 
 
   We recommend you install the ALM Accelerator in the same environment as other CoE Starter Kit solutions. Learn more about how to determine the best strategy for your organization:
 
-  - [Establishing an environment strategy for Microsoft Power Platform](../adoption/environment-strategy.md)
+  - [Establishing an environment strategy for Microsoft Power Platform](../white-papers/environment-strategy.md)
   - [Environment strategy for ALM](../../alm/environment-strategy-alm.md)
 
 - The ALM Accelerator uses Azure DevOps for source control and deployments. If you don't have an Azure DevOps organization, sign up for free for up to five users on the [Azure DevOps site](https://azure.microsoft.com/services/DevOps/).

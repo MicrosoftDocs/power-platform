@@ -28,7 +28,7 @@ Here are a few tips on what the wiki should include:
 
 - **Community**: Share how to engage with the internal community, how to become a champion, how to find a mentor, and what the benefits of the community are.
 
-- **[Environment strategy](environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
+- **[Environment strategy](../white-papers/environment-strategy.md)**: Share what environments are available and how to request access to existing environments or request new environments; additionally, ensure makers know the boundaries of an environments licensing, security, and connectors.
 
 - **[Data loss prevention (DLP) policy strategy](dlp-strategy.md)**: Share which connectors are available in which environments and how to request more connectors or a new environment for a specific project.
 

@@ -58,7 +58,7 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 
 ### Exempt environments from the inactivity notifications process
 
-You might want to exempt some environments from the inactivity notification process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](../adoption/environment-strategy.md)
+You might want to exempt some environments from the inactivity notification process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](../white-papers/environment-strategy.md)
 
 You can exempt environments from the inactivity notification process by using the Power Platform Admin View app.  
 

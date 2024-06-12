@@ -44,7 +44,7 @@
                 - name: Plan and manage licenses and capacity
                   href: adoption/capacity-and-licenses.md
                 - name: Establish an environment strategy
-                  href: adoption/environment-strategy.md
+                  href: white-papers/environment-strategy.md
                 - name: Manage Dataverse for Teams environments
                   href: adoption/teams-environment-strategy.md
                 - name: Manage the default environment
