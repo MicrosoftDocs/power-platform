@@ -67,7 +67,7 @@ Example: Tenant with ten environments (five Managed Environments and five non-Ma
 | Tenant isolation   |  Total number of environments    | 10 environments |         
 | Tenant Lockbox   |  If turned on, the total number of Managed Environments.<br>0 if not turned on.<br>0 if not turned on and there are no Managed Environments.    | 5 environments |   
 
-Maximum impact: 55 
+The maximum impact possible is 55. 
 
 Assume the following: 
 
@@ -78,9 +78,7 @@ Assume the following:
 - 3 of 10 Environments have IP cookie bindings 
 - Customer Lockbox is off 
  
-Based on the hypothetical state outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30 
-
-Given the formula: **Total achieved impact/Total possible impact** the assment is 30/55. 
+Based on the hypothetical example outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30. Given the formula: **Total achieved impact/Total possible impact** the assment is 30/55. 
  
 > [!Note]
 > The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations. There can be 1:many relationships. For example, an environment can have a recommendation to enable IP firewall and IP cookie binding.
