@@ -84,6 +84,13 @@ The following screenshot shows the same reference name used in a unit test task:
 
 :::image type="content" source="..\media\unified-experience\devexp-unitTest-task-1.png" alt-text="Version 1 of Unit test task.":::
 
+### Known Issues
+The Execute Unit Tests in Unified Environment task is stuck/times out after message: “Starting submit of test request:”
+
+Solution: This could occur if the **Connection string** provided by the user is of type **Username/Password and has MFA enabled**. Only **Service Principal/Client Secret authentication or Username/Password without MFA authentication** are supported.
+
+
+
 ### See also
 
 [Unit testing](finance-operations-testing.md)  
