@@ -3,7 +3,7 @@ title: Administer Microsoft Power Platform
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 05/04/2024
+ms.date: 06/12/2024
 ms.author: sericks
 ---
 # Administer Microsoft Power Platform
@@ -21,6 +21,7 @@ Currently, the admin center provides the following capabilities.
 |Feature  |Description  |
 |---------|---------|
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. More information: [Manage environment settings](./admin-settings.md)|
+|Security | Run your organizational workloads in the safest way possible with a wide set of security features available.
 |Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. More information: [Microsoft Dataverse analytics](./analytics-common-data-service.md)      |
 |Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. More information: [Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md)  |
 |Settings  |  Manage settings for all environments in your tenant. More information: [Tenant settings](tenant-settings.md)  |
