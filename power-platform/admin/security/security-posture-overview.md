@@ -72,7 +72,7 @@ Example: Tenant with 10 environments (five Managed Environments and five non-Man
 
 The maximum impact possible is 55. 
 
-Assume the following: 
+Assume the following information about an environment: 
 
 - Tenant isolation is used (10)
 - At least one data policy is configured on the tenant (10)
@@ -88,7 +88,7 @@ Based on the example outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3
 
 ## Reactive governance through recommendations
 
-The system generates various recommendations which improve the security assessment of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security status. 
+The system generates various recommendations that improve the security assessment of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security status. 
 
 - System-generated recommendations can be acted upon by selecting the link under the recommended action of that feature.
 - To configure features outside of the recommendations, select the **Manage** button.
@@ -103,7 +103,7 @@ Recommendations are provided at these levels:
 
 ## Manage proactive policies for governance and security
  
-There're several security features that help secure your tenant:
+There are several security features that help secure your tenant:
 
 - **Tenant isolation**: This is a feature that is turned on at the tenant-level for both Managed and non-Managed Environments. Tenant isolation allows global administrators and Power Platform administrators to govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more: [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md)
 
