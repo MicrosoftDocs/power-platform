@@ -14,7 +14,7 @@ search.audienceType:
 
 # Manage security
                                                   
-The Power Platform admin center offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following features:
+The Power Platform admin center offers a consolidated experience that brings together all the best practices and the wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
 
 - **Security assessment**: Admins can understand and improve their organization’s security policies specific to their needs. 
 - **Reactive governance through recommendations**: Admins can identify and act on the top-most, impactful recommendations to improve the assessment. 
@@ -24,7 +24,7 @@ The Power Platform admin center offers a consolidated experience that brings tog
  
 To manage security in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
 
-The **Security** page takes 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
+The **Security** feature takes 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
 
 :::image type="content" source="media/full-image.jpg" alt-text="The Security Hub page with data.":::
  
@@ -37,9 +37,9 @@ The security assessment is a set of custom or predefined profiles you can create
 
 ### Calculating your security assessment
  
-The security assessment is a numerical summary of your organization's security status based on system recommendations, user behavior, and other security-related measurements. It's a measurement of organizational security status, with a higher number indicating that more recommended actions have been taken. 
+The security assessment is a numerical summary of your organization's security status based on system recommendations, user behavior, and other security-related measurements. It's a measurement of organizational security position, with a higher number indicating that more recommended actions have been taken. 
 
-Your security assessment is calculated as a sum of your achieved impact status over total possible impact status. 
+Your security assessment is calculated as a sum of your achieved impact over total possible impact. 
 
 **Formula: Total achieved impact/Total possible impact**
 
@@ -80,7 +80,7 @@ Assume the following:
  
 Based on the hypothetical state outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30 
 
-Given the formula: T**otal achieved impact/Total possible impact** the status is 30/55. 
+Given the formula: **Total achieved impact/Total possible impact** the assment is 30/55. 
  
 > [!Note]
 > The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations. There can be 1:many relationships. For example, an environment can have a recommendation to enable IP firewall and IP cookie binding.
