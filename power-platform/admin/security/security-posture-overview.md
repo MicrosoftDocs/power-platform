@@ -36,8 +36,7 @@ The **Security** features in the Power Platform admin center take 48 hours to po
     :::image type="content" source="media/No-data.png" alt-text="The Security Hub page when it doesn't show data.":::
 
 ## Security assessment for your tenant
-Review the following information about how your security assessment is calculated.
- 
+
 The security assessment is calculated as a numerical summary of your organization's security status based on system recommendations, user behavior, and other security-related measurements. It's a measurement of your organizational, security position, with a higher number indicating that more recommended actions have been taken. 
 
 Your security assessment is calculated as a sum of your achieved impact over total possible impact. 
