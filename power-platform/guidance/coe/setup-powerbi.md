@@ -23,26 +23,27 @@ The Microsoft Power BI dashboard provides a holistic overview with visualization
 
 ## Which dashboard should I use?
 
-You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)) directly to your machine.
+You can get the CoE Power BI dashboard by downloading the CoE Starter Kit compressed file ([aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload)).
 
-An extracted zip file contains two Power BI template files:
+This file contains some Power BI template files:
 
-- **Production_CoEDashboard_MMMYY.pbit** - Use this file if your Power Platform inventory data source is retrieved via [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory).
-- **BYODL_CoEDashboard_MMMYY.pbit** - Use this file if your Power Platform inventory data source is retrieved via [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory).
+- **Production_CoEDashboard_MMMYY.pbit** - Use this file if your Power Platform inventory data source is from [cloud flows](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory).
+- **BYODL_CoEDashboard_MMMYY.pbit** - Use this file if your Power Platform inventory data source is from [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory).
 - **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit** - Use this file in addition to the above dashboards to gain further actionable governance and compliance insights into your adoption.
 
-> [!TIP]
->
-> - Before setting up the Power BI dashboard, install the [CoE core components solution](setup-core-components.md) and setup via the CoE Setup and Upgrade Wizard.
-> - Before you can see data in the dashboard, the [core components solution sync flows](core-components.md#flows) need to complete their runs.
-> - Before you can see data about app usage, for example *last launched*, configure the [Audit Log solution area](setup-auditlog-http.md).
+## Prerequisites
+
+- Install the [CoE core components solution](setup-core-components.md).
+- Set up the solution with the **CoE Setup and Upgrade Wizard**.
+- Allow the [core components solution sync flows](core-components.md#flows) to complete their runs.
+- Configure the [Audit Log solution area](setup-auditlog-http.md) to see data about app usage, for example *last launched*.
 
 ## Get the environment URL
 
 You need the URL of the Power Platform environment where the CoE Starter Kit is installed. Power BI connects to Dataverse tables in that environment.
 
 1. Go to the [Power Platform admin center](https://aka.ms/ppac).
-1. Select **Environments**, then choose your environment where the CoE solution is installed.
+1. Select **Environments**, then choose your environment where your CoE solution is installed.
 1. Copy the organization URL in the details window, including the `https://` prefix and the ending slash `/`.
 
    :::image type="content" source="media/coe19.png" alt-text="Screenshot of the Power Platform admin center with the environment URL highlighted.":::
@@ -59,7 +60,7 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. In Power BI Desktop, open the pbit file found in the CoE Starter Kit you downloaded from [aka.ms/CoeStarterKitDownload](https://aka.ms/CoEStarterKitDownload).
 
-1. Enter the URL of your environment instance. Include the `https://` prefix for **OrgUrl**. The **Production_CoEDashboard_MMMYY.pbit** has a **Tenant Type** parameter. If you're a regular Commercial tenant, leave the dropdown as the default *Commercial*, otherwise pick your sovereign cloud.
+1. Enter the URL of your environment instance. Include the `https://` prefix for **OrgUrl**. The **Production_CoEDashboard_MMMYY.pbit** has a **Tenant Type** parameter. If you're a regular commercial tenant, leave the dropdown as the default *Commercial*, otherwise pick your sovereign cloud.
 
 1. If prompted, sign in to Power BI Desktop with your organization account, containing the CoE Starter Kit environment.
 
@@ -68,17 +69,17 @@ You can configure and modify the Power BI dashboard by working directly with the
 1. Save the dashboard locally or select **Publish**, and choose the workspace where you want to publish your report.
 
    > [!TIP]
-   > If you are publishing and wish to retain the URL after each upgrade, select a name to copy over each month. For example, use Contoso CoE Governance.
+   > If you're publishing and wish to retain the URL after each upgrade, select a name to copy over each month. For example, use Contoso CoE Governance.
 
 1. [Configure scheduled refresh](/power-bi/connect-data/refresh-data#configure-scheduled-refresh) for your Power BI Dataset to update the report daily.
 
-You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
+   You can find the report later by going to [app.powerbi.com](https://app.powerbi.com/).
 
 ## Configure the BYODL Power BI dashboard
 
 ### Copy Azure Storage account URL
 
-1. Navigate to [portal.azure.com](https://portal.azure.com).
+1. Navigate to the [Azure portal](https://portal.azure.com).
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL.
@@ -89,12 +90,13 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ### Import Power BI dataflows
 
-Power BI dataflows can transform data from the Azure Storage account into tables that are then used by the dashboard. But first, you must configure the Power BI dataflows.
+Power BI dataflows can transform data from the Azure Storage account into tables that get used by the dashboard. But first, you must configure the Power BI dataflows.
 
 1. Navigate to [app.powerbi.com](https://app.powerbi.com).
 1. Select **Workspaces** > **Create a workspace**.
 1. Provide a name and description, select **Advanced**, and choose **Premium per user** or **Premium per capacity** depending on what’s available in your tenant.
 1. Select **Large dataset storage format**. You can also use an existing premium workspace, if available.
+
    :::image type="content" source="media/byodlbi-1.png" alt-text="Screenshot that shows the Create a workspace pane you see when creating a new premium workspace.":::
 
    > [!NOTE]
@@ -112,13 +114,13 @@ Power BI dataflows can transform data from the Azure Storage account into tables
 1. Select the Datalake URL parameter.
    :::image type="content" source="media/byodlbi-6.png" alt-text="Screenshot that shows where you can update the Datalake URL parameter to point to your Azure Storage account URL.":::
 1. Paste the Azure Storage account URL and make sure it ends with `/powerplatform` (no trailing slash `/`).
-1. From the **Queries** view, select one table after the other to configure connections and sign in with your account. If creating the connection fails, try selecting **Source** under Applied steps to retry configuring the connection.
+1. From the **Queries** view, select one table after the other to configure connections and sign in with your account. If creating the connection fails, try selecting **Source** under **Applied steps** to retry configuring the connection.
    :::image type="content" source="media/byodlbi-7.png" alt-text="Screenshot that shows how to configure a connection.":::
 1. Select **Continue** when you see a notification about connecting data from multiple sources.
 1. Select **Save and Close** and wait for the validation to finish.
 1. Select **Close** to close the **Edit tables** view.
-1. Select **… > Settings** on the dataflow.
-1. Configure a daily schedule refresh. A good time to refresh your dataflow is just after files are written to your storage account by the Data Export feature. Therefore, your dataflow runs after data is exported to your storage account.
+1. Select the overflow menu **…** > **Settings** on the dataflow.
+1. Configure a daily schedule refresh. A good time to refresh your dataflow is just after files write to your storage account by the Data Export feature. Therefore, your dataflow runs after data is exported to your storage account.
    :::image type="content" source="media/byodlbi-8.png" alt-text="Screenshot that shows where to schedule a refresh for your dataflow.":::
 1. Refresh the dataflow manually. The initial refresh might take one to two hours to run, depending on the size of your inventory. Check the **Refresh history** to see when the refresh completes.
 1. Copy the Power BI workspace and dataflow ID contained in the URL. Parts of the ID are removed for security purposes in the example images, but you should see a full ID number in your URL.
@@ -136,7 +138,7 @@ Power BI dataflows can transform data from the Azure Storage account into tables
    1. Enter the URL of your environment instance, including the `https://` prefix for **OrgUrl**.
    1. Enter the ID to your Power BI Workspace for **Power BI Workspace ID**.
    1. Enter the ID to your Power BI Dataflow for **Power BI Dataflow ID**.
-   1. If you're a regular *Commercial* tenant, leave the **Tenant Type** dropdown to default, otherwise pick your sovereign cloud.
+   1. If you're a regular commercial tenant, leave the **Tenant Type** dropdown to default, otherwise pick your sovereign cloud.
 
 1. If prompted, sign in to Power BI Desktop with your organization account that has access to your CoE Starter Kit environment.
 
@@ -150,11 +152,11 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit** dashboards can be configured to use embedded apps to enable you to drive action based on insights you find. With the embedded apps, you can grant yourself access to resources, delete apps and flows, and reach out to the maker through email. You must configure the Power Apps visuals in the Power BI dashboard before you can use them.
 
-### Prerequisites
+### Prerequisites to configure embedded apps
 
 - You must be an owner or co-owner of the **Admin – Access this app** and **Admin – Access this flow** apps to be able to embed them.
 - Because this app uses Microsoft Dataverse, end-users must have a **Power Apps Per User** license, the app must be assigned a **Power Apps Per App** license, or the environment must be covered by pay-as-you-go.
-- **Power Platform Service Admin** or **Global Admin** permission is required, since app is intended to be used only by admins.
+- **Power Platform Service Admin** or **Global Admin** permission is required, since the app is for admins only.
 
 ### Embed the apps
 
@@ -177,7 +179,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit**
    :::image type="content" source="media/coe89.png" alt-text="Screenshot that shows where to add the app access.":::
 
    > [!TIP]
-   > If you see one of these errors, ignore it. The app doesn't work when browsing directly to this page, only when an app is sent in via a drill through.
+   > If you see one of these errors, ignore it. The app doesn't work when browsing directly to this page, but only works when an app is sent in via a drill through.
    >
    > :::image type="content" source="media/PBI-setuperror.PNG" alt-text="Screenshot that shows the first possible setup error.":::
    > :::image type="content" source="media/PBI-setuperror2.PNG" alt-text="Screenshot that shows the second possible setup error.":::
@@ -222,16 +224,17 @@ The solution in this case is to clear the permissions:
 
 ### Not prompted for parameters
 
-If you're not prompted for the input parameters like **OrgURL** when you open the pbit files, clear the cache preventing you from seeing them:
+If you're not prompted for the input parameters like **OrgURL** when you open the pbit files, clear the cache:
 
 1. Open the pbit file and select discard changes.
    :::image type="content" source="media/pbi_error4.png" alt-text="Screenshot that shows where to select Discard changes.":::
 1. Reopen the pbit file.
-1. You're prompted for the input parameters.
+
+   You're prompted for the input parameters.
 
 ### Data source error: Information is needed in order to combine data
 
-This error message might appear when you're using the BYODL Dashboard. The [privacy settings](/power-bi/enterprise/desktop-privacy-levels) aren't configured correctly. As a result, Power BI can't combine data from the Azure Storage account and Dataverse.
+This error message might appear when you're using the BYODL Dashboard. The [privacy settings](/power-bi/enterprise/desktop-privacy-levels) likely aren't configured correctly. As a result, Power BI can't combine data from the Azure Storage account and Dataverse.
 
 Change the privacy level and update the credentials to resolve the issue:
 
@@ -249,13 +252,12 @@ Change the privacy level and update the credentials to resolve the issue:
 1. Select **Edit Permissions** and set the privacy level to **Organizational** for both data sources.
    :::image type="content" source="media/coepbi-byodl3.png" alt-text="Screenshot that shows where to set the privacy level in Edit permissions section of your Data source settings.":::
 
-1. Save the report and refresh it in Power BI Desktop.
+1. Save and refresh the report in Power BI Desktop.
 1. Select **Publish**.
 1. Navigate to [app.powerbi.com](https://app.powerbi.com/) and select your workspace.
 1. Select **Datasets + dataflows**.
 1. Select **Settings** on the dataset.
    :::image type="content" source="media/coepbi-byodl5.png" alt-text="Screenshot that shows where to find Settings in the overflow menu.":::
-
 1. Select **Data Source Credentials**.
 1. Select **Edit credentials**, set the privacy level to **Organizational** for both data sources, and select **Sign in** for each data source.
    :::image type="content" source="media/coepbi-byodl4.png" alt-text="Screenshot that shows where to configure privacy settings.":::
