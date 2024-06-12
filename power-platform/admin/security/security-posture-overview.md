@@ -36,7 +36,7 @@ The **Security** features in the Power Platform admin center take 48 hours to po
     :::image type="content" source="media/No-data.png" alt-text="The Security Hub page when it doesn't show data.":::
 
 ## Security assessment for your tenant
-The security assessment is a set of custom or predefined profiles you can create for your software as a service (SaaS) applications or public cloud services from cyber-attacks. 
+Review the following information about how your security assessment is calculated.
 
 ### Calculating your security assessment
  
