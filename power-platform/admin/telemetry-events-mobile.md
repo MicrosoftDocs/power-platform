@@ -92,7 +92,10 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 
 # Example Scenarios
 
-## Offline Sync Failure Rate by Sync Type
+
+## Offline Sync Failure Rate by Sync Type \\ THIS QUERY NEEDS TO BE REVISED
+This query allows you see what types of failures frontline workers are encountering when a sync failes. Some failures are excepted, such as if the application users closes the app while syncing, or if network disconnects while syncing preventing the sync from completion. Defintion of failure codes is shown in the [error code mapping table](#Error_Code_mapping) below.
+
 ```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
@@ -102,9 +105,11 @@ dependencies
 | extend dataSyncMode = tostring(parse_json(customDimensions).dataSyncMode)
 | summarize failure_count = count() by dataSyncMode
 | order by failure_count desc
-``
+```
 
 ## Tables Synced by Record Count
+This query allows you to evaluate which tables are contributing most records to a sync. 
+
 ```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
@@ -119,6 +124,8 @@ dependencies
 ```
 
 ## Users by Device Type and App Version
+This query will give more information on users in your organization accessing the mobile application by their device model. 
+
 ```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
