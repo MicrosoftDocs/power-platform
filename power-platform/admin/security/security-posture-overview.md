@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center wit
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/12/2024
+ms.date: 06/13/2024
 author: jahnavisunil
 ms.author: jasunil
 ms.reviewer: sericks
@@ -14,7 +14,7 @@ search.audienceType:
 
 # Manage security
                                                   
-The Power Platform admin center offers a consolidated experience that brings together all the best practices and a wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
+The **Securiry** page in the Power Platform admin center offers a consolidated experience that brings together all the best practices and a wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
 
 - **Security assessment**: Admins can understand and improve their organization’s security policies specific to their needs. 
 - **Reactive governance through recommendations**: Admins can identify and act on the top-most, impactful recommendations to improve the assessment. 
@@ -22,9 +22,10 @@ The Power Platform admin center offers a consolidated experience that brings tog
 
 ## Prerequisite
  
-To manage security in your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
+To get insights into the security assessment and recommendations for your tenant, turn on tenant-level analytics. To turn on tenant-level analytics, see [How do I enable tenant-level analytics](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).   
 
-The **Security** features in the Power Platform admin center take 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
+> [!Note]
+> After the tenant-level analytics feature is turned on, it might take up to 48 hours to populate all the insights, as shown in the following image. Until the page is populated, most sections on the page display “Not available”.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. From the left-side menu, select **Security**.
@@ -37,7 +38,7 @@ The **Security** features in the Power Platform admin center take 48 hours to po
 
 ## Security assessment for your tenant
 
-The security assessment is calculated as a numerical summary of your organization's security status based on system recommendations, user behavior, and other security-related measurements. It's a measurement of your organizational, security position, with a higher number indicating that more recommended actions have been taken. 
+The security assessment is illustrated on a Standard-Enhanced-Advanced qualitative scale calculated based on system recommendations, user and maker activity, and security configurations already applied by the administrators. It's a measurement of your organizational security position for Power Platform workloads. Enhanced and Advanced assessment labels indicate that more recommended actions have been taken and the security position of the tenant is improved.
 
 Your security assessment is calculated as a sum of your achieved impact over total possible impact. 
 
@@ -83,7 +84,7 @@ Based on the example outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3
 
 ## Reactive governance through recommendations
 
-The system generates various recommendations that improve the security assessment of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security status. 
+The system generates various recommendations based on common, best practices that improve the security assessment of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security status. 
 
 - System-generated recommendations can be acted upon by selecting the link under the recommended action of that feature.
 - To configure features outside of the recommendations, select the **Manage** button.
@@ -98,7 +99,7 @@ Recommendations are provided at these levels:
 
 ## Manage proactive policies for governance and security
  
-There are several security features that help secure your tenant:
+There are several security features that help secure your tenant, including:
 
 - **Tenant isolation**: This is a feature that is turned on at the tenant-level for both Managed and non-Managed Environments. Tenant isolation allows global administrators and Power Platform administrators to govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more: [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md)
 
