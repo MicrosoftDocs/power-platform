@@ -85,6 +85,16 @@
       href: hr/onboarding-buddy/manage.md
     - name: Use
       href: hr/onboarding-buddy/use.md
+  - name: Expense Reimbursement
+    items:
+    - name: Overview
+      href: hr/expense-reimbursement/overview.md
+    - name: Install and set up
+      href: hr/expense-reimbursement/install-and-set-up.md
+    - name: Manage
+      href: hr/expense-reimbursement/manage.md
+    - name: Use
+      href: hr/expense-reimbursement/use.md
 - name: Information Technology
   items:
   - name: Hardware Request and Management
