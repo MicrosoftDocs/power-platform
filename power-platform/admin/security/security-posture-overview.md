@@ -38,7 +38,7 @@ To get insights into the security assessment and recommendations for your tenant
 
 ## Security assessment for your tenant
 
-The security assessment is illustrated on a Standard-Enhanced-Advanced qualitative scale calculated based on system recommendations, user and maker activity, and security configurations already applied by the administrators. It's a measurement of your organizational security position for Power Platform workloads. Enhanced and Advanced assessment labels indicate that more recommended actions have been taken and the security position of the tenant is improved.
+The security assessment is illustrated on a qualitative scale with labels of _Standard_, _Enhanced_, or _Advanced_. The assessment is calculated based on system recommendations, user and maker activity, and security configurations already applied by the administrators. It's a measurement of your organizational security position for Power Platform workloads. _Enhanced_ and _Advanced_ assessment labels indicate that more recommended actions have been taken and the security position of the tenant is improved.
 
 Your security assessment is calculated as a sum of your achieved impact over total possible impact. 
 
