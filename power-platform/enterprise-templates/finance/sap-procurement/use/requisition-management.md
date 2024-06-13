@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,7 @@ The SAP Requisition Management app is part of the SAP Procurement solution for M
 
 Watch the demo to see how you can manage your SAP requisition data using the SAP Requisition Management app.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18CAe]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18CAe]
 
 ## View requisition data
 
