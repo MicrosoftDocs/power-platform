@@ -111,7 +111,7 @@ To make calls to the input event, you can set a context variable that is bound t
 
 Example Power Fx formula:
 ```powerapps-dot
-UpdateContext({ ctxResizableTextareaEvent:"SetFocus" & Text(Rand()) }));
+UpdateContext({ ctxResizableTextareaEvent:"SetFocus" & Text(Rand()) });
 ```
 
 The context variable `ctxResizableTextareaEvent` would then be bound to the property Input Event property.
