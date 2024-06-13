@@ -51,7 +51,8 @@ It's important to have a cohesive environment and data policy and to ensure requ
 
 - **Environments**
 
-  - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment).
+  Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment).
+
   - Make sure that a Power Platform environment is set up with a Dataverse database.
   - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
 
