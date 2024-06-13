@@ -53,7 +53,7 @@ Each feature is assigned an impact status based on the feature scope (tenant or 
 | Environment security group   |   1 x each environment    |       
 | Tenant data policies   |  Total number of environments    |       
 | Tenant isolation   |  Total number of environments    |       
-| Tenant Lockbox   |  If turned on, the total number of Managed Environments.<br>Zero if not turned on.<br>Zero if not turned on and there are no Managed Environments.    |       
+| Customer Lockbox   |  If turned on, the total number of Managed Environments.<br>Zero if not turned on.<br>Zero if not turned on and there are no Managed Environments.    |       
 
 Example: Tenant with 10 environments (five Managed Environments and five non-Managed Environments) 
 
@@ -64,7 +64,7 @@ Example: Tenant with 10 environments (five Managed Environments and five non-Man
 | Environment security group   |   1 x each environment    |  10 environments x 1 or 10   |       
 | Tenant data policies   |  Total number of environments    | 10 environments |      
 | Tenant isolation   |  Total number of environments    | 10 environments |         
-| Tenant Lockbox   |  If turned on, the total number of Managed Environments.<br>0 if not turned on.<br>0 if not turned on and there are no Managed Environments.    | 5 environments |   
+| Customer Lockbox   |  If turned on, the total number of Managed Environments.<br>0 if not turned on.<br>0 if not turned on and there are no Managed Environments.    | 5 environments |   
 
 The maximum impact possible is 55. 
 
