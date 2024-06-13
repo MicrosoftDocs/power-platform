@@ -123,7 +123,7 @@ Example: If an environment has Unattended bot add on units assigned and then PAY
 If the owner of a flow is service principal, the flow runs are charged unless the flow has a per-flow license. 
 
 > [!NOTE]
-> Assigning a Power Automate per user/per flow license ensures that any runs of the flow doesnt trigger Power Automate flow run meter if the flow features are within their license entitlements. But, if the flow uses more Power platform requests than the [limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits), Power platform request meter is triggered for any overages.
+> Assigning a Power Automate per user/per flow license ensures that any runs of the flow doesn't trigger Power Automate flow run meter if the flow features are within their license entitlements. But, if the flow uses more Power platform requests than the [limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits), Power platform request meter is triggered for any overages.
 
 |User |Standard flow runs  |Premium cloud flow runs |Attended RPA flow runs |Unattended RPA runs| Azure billable runs|
 |---------|----------------------|----------------|--------------|-------------|-------------|

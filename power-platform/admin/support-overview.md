@@ -222,7 +222,7 @@ Technical support does not conduct RCAs as part of any support experience. If an
 
 Data may become corrupt due to a variety of reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft does not provide assistance for correcting damaged data.  Note that per the Service Provider License Agreement (SPLA), Microsoft does not have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
 
-### What happens if the issue can not be reproduced or has to do with customized databases?
+### What happens if the issue can't be reproduced or has to do with customized databases?
 
 In scenarios where a problem is not able to be reproduced in a standard non-modified Dynamics installation, the Microsoft Dynamics support team will invest best effort support up to 4 hours of time on a break fix case to assist. If after 4 hours, we have not yet identified the repro steps of an issue, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.
 

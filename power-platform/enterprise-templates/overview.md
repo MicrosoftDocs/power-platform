@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/27/2024
+ms.date: 05/09/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -59,6 +59,15 @@ Be sure to check back often for new templates that become available.
       ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
    :::column-end:::
 :::row-end:::
+:::row:::
+   :::column span="":::
+      ![Expense Reimbursement](media/overview/exre-logo.png "Expense Reimbursement") <br> **Expense Reimbursement template** <br>  Improve the expense reimbursement process <br> [Documentation](https://aka.ms/LearnExpenseReimbursementTemplate) <br> [AppSource](https://aka.ms/AccessExpenseReimbursementTemplate)  
+   :::column-end:::
+   :::column span="":::  
+   :::column-end:::
+   :::column span="":::  
+   :::column-end:::
+:::row-end:::
 
 ## Benefits of using enterprise templates
 
@@ -94,6 +103,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Onboarding Buddy template](hr/onboarding-buddy/install-and-set-up.md)
 - [Install and set up the Hardware Request and Management template](it/hardware-request-and-management/install-and-set-up.md)
 - [Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
+- [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 
 ## Support
 

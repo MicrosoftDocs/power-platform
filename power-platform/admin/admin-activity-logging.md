@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/30/2024
+ms.date: 06/06/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -51,7 +51,7 @@ Each activity event contains a payload of metadata that is specific to the indiv
 | Reset environment          | A sandbox environment has been reset.                                                                                                  |
 | Upgraded environment       | A component of an environment has been upgraded to a new version.                                                                      |
 | CMK-Renewed environment    | The customer-managed key (CMK) has been renewed on the environment.                                                                         |
-| CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was retured to Microsoft-managed key.                                              |
+| CMK-Reverted environment   | Environment was removed from enterprise policy and encryption was returned to Microsoft-managed key.                                              |
 
 ## Activity category: Environment property and setting change activities
 
@@ -162,6 +162,99 @@ Here's an example of the payload of metadata that can be expected from one of th
         "Value": "3a568f62-11ff-4e89-bee8-4d47041b0003"
     }
 ]
+```
+
+## Activity category: Data policy events
+
+> [!NOTE]
+> Activity logging for data policies is not currently available in sovereign clouds.
+
+All the data policy events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
+The following data policy events are delivered to Microsoft Purview.
+
+| **Category** | **Description** |
+|-------------------------------------------------------------|-----------------------------------------|
+| Create DLP Policy | Emitted when a new data policy is created.
+| Update DLP Policy | Emitted when a data policy is updated.
+| Delete DLP Policy | Emitted when a data policy is deleted.
+| Create Custom Connector Patterns | Emitted when a new custom connector URL pattern is created.
+| Update Custom Connector Patterns | Emitted when a custom connector URL pattern is updated.
+| Delete Custom Connector Patterns | Emitted when a custom connector URL pattern is deleted.
+| Create Connector Configurations | Emitted when a connector configuration is created for the data policy.
+| Update Connector Configurations | Emitted when a connector configuration is updated for the data policy.
+| Delete Connector Configurations | Emitted when a connector configuration is deleted for the data policy.
+| Create Policy Scope | Emitted when a new policy scope is created.
+| Update Policy Scope | Emitted when a policy scope is updated.
+| Delete Policy Scope | Emitted when a policy scope is deleted.
+| Create Exempt Resources | Emitted when an exempt resources list is created for the data policy.
+| Update Exempt Resources | Emitted when an exempt resources list is updated for the data policy.
+| Delete Exempt Resources | Emitted when an exempt resources list is deleted for the data policy.
+| Create connector blocking policy | Emitted when a new connector blocking policy is created.
+| Update connector blocking policy | Emitted when connector blocking policy is updated.
+| Delete connector blocking policy | Emitted when connector blocking policy is deleted.
+
+Here's an example payload of metadata that can be expected from one of the events in the table.
+
+```
+[
+    {
+        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.additional_resources",
+        "Value": "<<json>>"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.display_name",
+        "Value": "ConnectorBlockingPolicy"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.operation_result",
+        "Value": "True"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.id",
+        "Value": "ConnectorBlockingPolicy"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.type",
+        "Value": "ApiPolicy"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.operation_name",
+        "Value": "DeleteDlpPolicy"
+    },
+    {
+        "Name": "version",
+        "Value": "1.0"
+    },
+    {
+        "Name": "type",
+        "Value": "PowerPlatformAdministratorActivityRecord"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.name",
+        "Value": "GovernanceApiPolicyOperation"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.id",
+        "Value": "99ac5d50-a0f4-4878-8ff4-e02b7da3a510"
+    },
+    {
+        "Name": "enduser.id",
+        "Value": "888c1bf5-3127-4c8c-84ee-b6a9c684e315"
+    },
+    {
+        "Name": "enduser.principal_name",
+        "Value": admin@contosotest.onmicrosoft.com
+    },
+    {
+        "Name": "enduser.role",
+        "Value": "Admin"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.id",
+        "Value": "ce65293a-e07d-4638-9dfa-79483fcd5136"
+    }
+]
+
 ```
 
 ## View activities in Microsoft Purview

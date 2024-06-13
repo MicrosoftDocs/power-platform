@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -18,7 +18,7 @@ contributors:
 
 # Operators and Identifiers in Power Apps
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps  :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages 
 
 Some of these operators are dependent on the language of the author. For more information about language support in canvas apps, see [Global apps](/power-apps/maker/canvas-apps/global-apps).
 
@@ -307,7 +307,7 @@ Behind the scenes, a mapping is maintained between the display names seen in for
 
 ## Name disambiguation
 
-Since display names aren't unique, the same display name may appear more than once in the same table. When this happens, the logical name will be added to the end of the display name in parenthesis for one of more of the conflicting names. Building on the example above, if there was a second field with the same display name of **Custom Field** with a logical name of **cra3a_customfieldalt** then the suggestions would show:
+Since display names aren't unique, the same display name may appear more than once in the same table. When this happens, the logical name will be added to the end of the display name in parentheses for one of more of the conflicting names. Building on the example above, if there was a second field with the same display name of **Custom Field** with a logical name of **cra3a_customfieldalt** then the suggestions would show:
 
 > [!div class="mx-imgBorder"]  
 > ![Studio formula bar showing the use of the logical name cr5e3_customfieldalt to disambiguate the two versions of "Custom Field."](media/operators/customfield_suggest_alt.png)

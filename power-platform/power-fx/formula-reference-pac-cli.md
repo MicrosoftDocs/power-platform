@@ -113,7 +113,7 @@ Use these commands to interact with data in Dataverse using a command line or sc
 
 **[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
 
-**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in a HTML context.
+**[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in an HTML context.
 
 **[EncodeUrl](reference/function-encode-decode.md)** – Encodes special characters using URL encoding.
 

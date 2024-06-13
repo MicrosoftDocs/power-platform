@@ -1,14 +1,13 @@
 ---
-title: "Package Deployer tool | Microsoft Docs"
+title: "Create packages for the Package Deployer tool"
 description: "Learn about migrating configuration data, solutions, and more from one environment to another."
 keywords: 
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.custom: ""
-ms.date: 10/20/2022
-ms.reviewer: "pehecke"
-ms.topic: "article"
+ms.date: 06/10/2024
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---
@@ -46,7 +45,7 @@ These steps are described in detail in this article.
 
 ## Create a package project
 
-The first step is to create a Visual Studio or MSBuild project for the package. To do that, you must have one of two available tool extensions installed on your development computer. If using Visual Studio Code, install [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli). Otherwise, if using Visual Studio 2019, install [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install). The Power Platform tools extension is currently only available for Visual Studio 2019. However, the created project can be built using Visual Studio 2019 or later.
+The first step is to create a Visual Studio or MSBuild project for the package. To do that, you must have one of two available tool extensions installed on your development computer. If using Visual Studio Code, install [Microsoft Power Platform CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli). Otherwise, if using Visual Studio 2019 or later, install [Power Platform tools for Visual Studio](/power-apps/developer/data-platform/tools/devtools-install).
 
 Select the appropriate tab below to find out how to create a project using the desired tool extension. Both tools output the project in a similar format.
 
