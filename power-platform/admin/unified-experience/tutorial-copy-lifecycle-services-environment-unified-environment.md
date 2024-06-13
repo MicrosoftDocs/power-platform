@@ -14,10 +14,9 @@ search.audienceType:
 
 # Tutorial: Copy a Lifecycle Services environment to a unified environment 
 
-Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics 365 Lifecycle Services, but now everything can be managed in the Power Platform admin center.
+Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics Lifecycle Services, but now everything can be managed in the Power Platform admin center.
 
-In this tutorial, you learn how to:
-
+In this tutorial, learn how to:
 
 - Prepare the source environment
 - Copy the environment to the target
@@ -34,7 +33,7 @@ Ensure that both the source and target environments are provisioned in the same 
 
 ## Prepare the source environment
 
-Before the source environment can be copied, you must perform several steps to ensure that data and code get copied correctly to the target environment. Without performing these steps, code or data loss can occur. 
+Before the source environment can be copied, you must perform several steps to ensure that data and code are copied correctly to the target environment. If you don't perform these steps, code or data loss can occur. 
 
 ### Install or update the latest Dynamics 365 Finance and Operations Platform Tools app
 
@@ -76,11 +75,11 @@ This deploy command makes no changes to the finance and operations environment h
 2. [Authenticate and connect to source Dataverse](../../developer/cli/reference/auth.md#pac-auth-create).
 3. Run the following command:
 
-```
-pac auth list
-pac auth select --index 1
-pac package deploy --logConsole --package <OutputPath>\<Package>.dll
-```
+    ```
+    pac auth list
+    pac auth select --index 1
+    pac package deploy --logConsole --package <OutputPath>\<Package>.dll
+    ```
 
 # [Power Platform admin center](#tab/PPAC)
 
