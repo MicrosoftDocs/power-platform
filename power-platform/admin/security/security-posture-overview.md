@@ -89,9 +89,6 @@ The system generates various recommendations based on common, best practices tha
 - System-generated recommendations can be acted upon by selecting the link under the recommended action of that feature.
 - To configure features outside of the recommendations, select the **Manage** button.
 
-> [!Note]
-> You may see a different set of environments when you follow the recommended actions than if you used the **Manage** workflow. This is because recommendations show _all_ environments (Managed Envrionments and non-Managed Environments). When a user tries to manage their environments, the tab contains only Managed Environments and, this is true only for features that require Managed Environments.
-
 ## Manage proactive policies for governance and security
  
 There are several security features that help secure your tenant, including:
