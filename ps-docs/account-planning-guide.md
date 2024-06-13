@@ -30,8 +30,8 @@ Use the account planning guide in Project "Sophia" to help you generate account 
 1. Select **Add data** and then select one of the following options:
    - **Upload files**
    - Connect to **Dynamics 365 Sales**
-  > [!IMPORTANT]
-  > You need to have account to establish a connection with Dynamics 365 Sales. For more informatoin, see [Use data from Dynamics 365 Sales](ask-question.md#use-data-from-dynamics-365-sales).
+    > [!IMPORTANT]
+    > You need to have an account to establish a connection with Dynamics 365 Sales. For more informatoin, see [Use data from Dynamics 365 Sales](ask-question.md#use-data-from-dynamics-365-sales).
 1. When your data loads, select **Generate**.
 
 Project "Sophia" is going to generate a tailored account plan based on your data. You can upload or connect to more data and refine your account plan or continue exploring your data.
