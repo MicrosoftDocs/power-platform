@@ -2,7 +2,7 @@
 title: Ask Project “Sophia” a question
 description: Use the exploratory option to explore a question or topic.
 author: mikkelsen2000
-ms.topic: Overview
+ms.topic: Explore a topic
 ms.custom: 
 ms.reviewer: mkaur
 ms.date: 06/10/2024
