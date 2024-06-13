@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks

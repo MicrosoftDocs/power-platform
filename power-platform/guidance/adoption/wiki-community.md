@@ -5,14 +5,14 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Create an internal Microsoft Power Platform hub 
+# Create an internal Microsoft Power Platform hub
 
 At the heart of growth is a community, a place for people to collaborate, share ideas, and discover new ways to apply technology to achieve more. A community is a safe place to ask questions to share tacit knowledge and expand skill sets. Organizations that have succeeded at creating a growing community of makers provide tools such as Yammer or Microsoft Teams groups, regular events and speaking opportunities, and foster an environment of ongoing learning.
 

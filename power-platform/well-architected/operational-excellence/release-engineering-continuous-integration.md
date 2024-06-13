@@ -4,7 +4,7 @@ description: Learn how to optimize software development and quality by following
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 06/13/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
