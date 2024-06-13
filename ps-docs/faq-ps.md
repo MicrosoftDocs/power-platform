@@ -15,11 +15,11 @@ contributors:
   - mikkelsen2000
 ---
 
-# Frequently asked questions about Project “Sophia” (preview)
+# Frequently asked questions about Project "Sophia" (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-## 1. Why can't I access Project  “Sophia"?
+## 1. Why can't I access Project  "Sophia"?
 Project "Sophia" is only available in the  European Union (EU) and United States. If you're trying to access it while you're in the  European Union (EU) or United States and still get a notification stating **Project Sophia is not yet available your region**, then it's because the data residency of the tenant you're trying to access from is based outside of the European Union (EU) or United Stated. You can sign up for product news and to be notified when Project "Sophia" is available in new regions, [here](https://aka.ms/projectsophianews). 
 
 ## 2. Can I provide feedback to the product team?
