@@ -52,10 +52,13 @@ We recommend that you create connections to all connectors used in the solution 
     - [Power Query Dataflows](/connectors/dataflows/)
     - [RSS](/connectors/rss/)
     - [SharePoint](/connectors/sharepointonline/)
-    - [HTTP with Microsoft Entra ID](/connectors/webcontents/)
-1. Create a connection for [HTTP with Microsoft Entra ID](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+    - [HTTP with Azure AD](/connectors/webcontents/)
+1. Create a connection for the [HTTP with Entra ID (preauthorized)](/connectors/webcontents/) connector. Set **Base Resource URL** and **Azure AD Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-:::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Microsoft Entra connection":::
+:::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Azure AD connection":::
+
+> [!NOTE]
+> The [HTTP with Entra ID Connector (preauthorized)](https://learn.microsoft.com/en-us/connectors/webcontents/) connector was previously called 'HTTP with Azure AD.' and is preconfigured with admin consent for key Microsoft services. The [HTTP with Entra ID](https://learn.microsoft.com/en-us/connectors/webcontentsv2/) connector is newer, but requires explicitly granting admin consent to the connector to work with the Graph API.  
 
 ## Set up the Inventory components using the Setup Wizard
 
