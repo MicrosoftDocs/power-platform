@@ -8,7 +8,7 @@ contributors:
   - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -139,7 +139,7 @@ Two solutions are installed in your environment, **Employee Experience Base** an
 
     - Managed:
       - [mpa_EmployeeExperienceBase_managed.zip](https://aka.ms/EEBaseManagedSolution)
-      - [mpa_ExpenseReimbursement_managed.zip](https://aka.ms/ExpenseReimbursementManagedSolution)
+      - [mpa_ExpenseReimbursement_managed.zip](https://aka.ms/mpa_ExpenseReimbursement_managed.zip)
     - Unmanaged:
       - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
       - [mpa_ExpenseReimbursement.zip](https://aka.ms/ExpenseReimbursementUnManagedSolution)
