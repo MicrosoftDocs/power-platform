@@ -2,7 +2,7 @@
 title: Frequently asked questions Project “Sophia” 
 description: Frequently asked questions about Project “Sophia.”
 author: mikkelsen2000
-ms.topic: Overview
+ms.topic: FAQ about Project "Sophia"
 ms.custom: 
 ms.reviewer: mkaur
 ms.date: 3/20/2024
