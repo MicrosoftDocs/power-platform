@@ -2,7 +2,7 @@
 title: View your workspace in Project “Sophia”
 description: Learn how to navigate a workspace in Project “Sophia".
 author: mikkelsen2000
-ms.topic: Overview
+ms.topic: What is a workspace?
 ms.custom: 
 ms.reviewer: mkaur
 ms.date: 3/20/2024
