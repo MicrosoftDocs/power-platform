@@ -5,7 +5,7 @@ author: tshanep
 ms.author: shanep
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 05/31/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -27,7 +27,7 @@ As a Microsoft Power Platform admin, follow the steps outlined in this article t
 
 ## Step 1: Review prerequisites
 
-Review the requirements, identify opportunities and develop a plan of action that suits your organization's needs.
+Review the requirements, identify opportunities, and develop a plan of action that suits your organization's needs.
 
 ### Confirm licensing
 
@@ -53,16 +53,16 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Employee Kudos template, confirm these resources and practices are in place.
 
-- **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
+- **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments. You'll need:
 
-  - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
-  - Power Platform Administrator to create environments
+  - A Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing.
+  - A Power Platform Administrator to create environments.
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
 - **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
-  - A Power Platform environment is set up with a Dataverse database
+  - A Power Platform environment is set up with a Dataverse database.
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
@@ -79,7 +79,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
-The installation requires you to set up three new connections. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+The installation requires you to set up three new connections. It's best to create connections before importing the solution to make the import smoother. If you create the connections during import, you must jump between browser windows.
 
 To create the connections in advance, take these steps:
 
@@ -141,9 +141,9 @@ You also have the option to download *managed* or *unmanaged* solution files to 
 1. Select **Import** to start the import process of the *Employee Experience Base* solution. Once the import is complete, you're notified with a *Success* message.
 1. Browse for and select either the **managed** or **unmanaged** version of the *mpa_Kudos* file downloaded in previous step.
 1. Select **Next** and **Next** again.
-1. For each of the connections listed, select the *existing connection that was created in the previous step*.
+1. For each of the connections listed, select the *existing connection created in the previous step*.
 1. Select **Next**.
-1. Ignore entering values for the environment variables as that will be completed in an additional step later. Since the apps have not been imported into the environment yet, we are unable to capture what their URL values are at the moment.
+1. Ignore entering values for the environment variables as that will be completed in an additional step later.  Since the apps have not been imported into the environment yet, we cannot capture their URL values now.
 1. Select **Import** to start the import process of the *Employee Kudos* solution. Once the import is complete, you're notified with a *Success* message.
 
 More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
@@ -239,17 +239,18 @@ Follow these steps for each flow:
     - **Kudo app**: Share Kudos with sender, assign to recipient
     - **Kudos app**: Notification email
 
-1. Edit the *Kudo app - Share Kudo with Sender, Assign to Recipient* by taking these steps:
+1. Edit the Kudo app's *Share Kudo with Sender, Assign to Recipient* by taking these steps:
 
     1. In the Kudos solution, select *Cloud Flows* on the left pane.
     1. Select the *flow* to open the flow's overview screen.
 
-    1. On the flow overview screen, select **Edit** on the command bar to connect the to the Microsoft Dataverse connector.
+    1. On the flow overview screen, select **Edit** on the command bar to connect to the Microsoft Dataverse connector.
     1. Select **Continue**.
     1. Select **Save**.
+  
     :::image type="content" source="media/install/kudo-app-flow.png" alt-text="Image of Kudo App - Share Kudo with Sender, Assign to Recipient flow. Select save.":::
 
-1. Edit the *Kudos app - Notification Email* by taking these steps:
+1. Edit the Kudos app's *Notification Email* by taking these steps:
 
     1. In the Kudos solution, select *Cloud Flows* on the left pane.
     1. Select the *flow* to open the flow's overview screen.
@@ -265,7 +266,7 @@ Follow these steps for each flow:
 
        :::image type="content" source="media/install/SetFlow12.png" alt-text="Create new connection reference.":::
 
-## Step 8: Set cloud flows to *On*
+## Step 8: Turn on cloud flows
 
 Open the newly installed *Kudos solution* and verify that the four cloud flows are set to the *on* status. If they aren't, turn them on.
 
