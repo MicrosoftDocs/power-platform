@@ -33,7 +33,7 @@ You can detect frequently used apps and chatbots in your tenant and request that
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Compliance process**.
 
-This app provides a guides you through the configuration steps.
+This app guides you through the configuration steps.
 :::image type="content" source="media/setupwizard-compliance.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard compliance process.":::
 
 > [!NOTE]
@@ -43,7 +43,7 @@ This app provides a guides you through the configuration steps.
 
 ### Configure mandatory environment variables
 
-This step gets completed after you import the solution. Environment variables store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and it's used in all necessary flows and apps in that environment.
+This step gets completed after you import the solution. Environment variables store application and flow configuration data. Using environment variables means that you only have to set the value once per environment and used in all necessary flows and apps in that environment.
 
 > [!TIP]
 > Learn how to update environment variables: [Update Environment Variables](faq.md#update-environment-variables).
@@ -61,7 +61,7 @@ You can exempt environments from the compliance process using the Power Platform
 1. Go to [make.powerapps.com](<https://make.powerapps.com>).
 1. Go to your CoE environment.
 1. Open the **Power Platform Admin View** app.
-1. Select **Environments**, then chose the environment you want to exempt.
+1. Select **Environments**, then choose the environment you want to exempt.
 1. Set the **Excuse From Compliance Flow** field to *Yes*.
 1. Select **Save**.
 
