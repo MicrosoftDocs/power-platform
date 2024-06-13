@@ -77,7 +77,7 @@ Assume the following information about an environment:
 - 3 of 10 Environments have IP cookie bindings 
 - Customer Lockbox is off 
  
-Based on the example outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30. Given the formula: **Total achieved impact/Total possible impact** the assessment is 30/55. 
+Based on the example outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30. Given the formula: **Total achieved impact/Total possible impact** the assessment is 30/55, which has a label of _Enhanced_. 
  
 > [!Note]
 > The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations. There can be one-to-many relationships. For example, an environment can have a recommendation to enable IP firewall and IP cookie binding.
