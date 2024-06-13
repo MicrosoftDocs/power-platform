@@ -1,6 +1,6 @@
 ---
-title: Project “Sophia” overview
-description: Learn how to use Project “Sophia” to help you create exploratory journeys and understand business data with AI-generated charts and insights.
+title: Project "Sophia" overview
+description: Learn how to use Project "Sophia" to help you create exploratory journeys and understand business data with AI-generated charts and insights.
 author: mikkelsen2000
 ms.topic: overview
 ms.custom: 
