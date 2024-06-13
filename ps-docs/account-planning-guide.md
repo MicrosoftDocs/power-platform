@@ -2,7 +2,7 @@
 title: Overview of an account planning guide
 description: Learn how to generate an account planning guide in Project “Sophia”.
 author: mikkelsen2000
-ms.topic: Use the account planning guide
+ms.topic: overview
 ms.custom: 
 ms.reviewer: mkaur
 ms.date: 3/20/2024
