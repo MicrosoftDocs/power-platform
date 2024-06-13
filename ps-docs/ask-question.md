@@ -1,6 +1,6 @@
 ---
-title: Ask Project “Sophia” a question
-description: Use the exploratory option to explore a question or topic.
+title: Ask Project "Sophia" a question
+description: Use the exploratory option to explore a question or topic. Write questions in natural language to reason over your data with AI-generated analysis and charts.
 author: mikkelsen2000
 ms.topic: overview
 ms.custom: 
