@@ -3,7 +3,7 @@ title: "Establishing tenant hygiene with the CoE Starter Kit | Microsoft Docs"
 description: "The CoE Starter Kit contains many useful components to help you establish tenant hygiene."
 author: stjeffer
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks

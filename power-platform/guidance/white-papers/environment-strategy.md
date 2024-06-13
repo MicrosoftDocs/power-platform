@@ -4,7 +4,7 @@ description: Learn how to best use the latest features of the platform to implem
 author: robstand
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/04/2024
+ms.date: 06/13/2024
 ms.author: rstand
 ms.reviewer: sericks
 ms.custom: bap-template
@@ -502,11 +502,11 @@ When you evaluate the production environment for an app, keep the following cons
 
 ### Capacity
 
-Each environment (besides trial and developer environments) will consume 1 GB to initially provision. Capacity is shared across the tenant so it needs to be allocated to those who need it.
+Each environment (besides trial and developer environments) consumes 1 GB to initially provision. Capacity is shared across the tenant so it needs to be allocated to those who need it.
 
 Conserve capacity by:
 
-- Managing shared test and production environments. Unlike shared development environments, permissions in test and production environments should be limited to end-user access for testing.
+- Managing shared test and production environments. Unlike shared development environments, permissions in test and production environments should be limited to user access for testing.
 - Automate cleanup of temporary development environments and encourage use of trial environments for testing or proof-of-concept work.
 
 ### Environment groups
@@ -573,7 +573,7 @@ The following table lists example use cases and migration actions. Ultimately, y
 
 ### Assets in Dataverse for Teams environments
 
-[Microsoft Dataverse for Teams](/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to their team. [Learn how to establish governance policies to manage Microsoft Dataverse for Teams environments.](/power-platform/guidance/adoption/teams-environment-strategy).
+[Microsoft Dataverse for Teams](/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. When a team owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to their team. [Learn how to establish governance policies to manage Microsoft Dataverse for Teams environments.](/power-platform/guidance/adoption/teams-environment-strategy).
 
 ### Environment strategy internally at Microsoft
 

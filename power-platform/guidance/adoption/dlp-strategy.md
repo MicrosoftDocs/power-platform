@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -48,7 +48,7 @@ As an administrator taking over an environment or starting to support use of Pow
 
 We recommend the following starting point for DLP policies for **shared user and team productivity environments**:
 
-- Create a policy spanning all environments except selected ones (for example, your production environments), keep the available connectors in this policy limited to Office 365 and other standard microservices, and block access to everything else. This policy applies to the default environment, and to training environments you have for running internal training events. Additionally, this policy also applies to any new environments that is created.
+- Create a policy spanning all environments except selected ones (for example, your production environments), keep the available connectors in this policy limited to Office 365 and other standard microservices, and block access to everything else. This policy applies to the default environment, and to training environments you have for running internal training events. Additionally, this policy also applies to any new environments that are created.
 - Create appropriate and more permissive DLP policies for your [shared user and team productivity environments](../white-papers/environment-strategy.md). These policies could allow makers to use connectors like Azure services in addition to the Office 365 services. The connectors available in these environments depend on your organization, and where your organization stores business data.
 
 We recommend the following starting point for DLP policies for **production (business unit and project) environments**:
@@ -74,17 +74,17 @@ Let’s look at how Contoso Corporation, our sample organization for this guidan
 
 Contoso admins want to support user and team productivity scenarios and business applications, in addition to Center of Excellence (CoE) activity management.
 
-The environment and DLP strategy Contoso admins have applied here consists of:
+The environment and DLP strategy Contoso admins applied here consists of:
 
-1. A tenant-wide restrictive DLP policy that applies to all environments in the tenant except some specific environments that they have excluded from the policy scope. Admins intend to keep the available connectors in this policy limited to Office 365 and other standard micro-services by blocking access to everything else. This policy also applies to the default environment.
+1. A tenant-wide restrictive DLP policy that applies to all environments in the tenant except some specific environments that they excluded from the policy scope. Admins intend to keep the available connectors in this policy limited to Office 365 and other standard micro-services by blocking access to everything else. This policy also applies to the default environment.
 
-1. Contoso admins have created another shared environment for users to create apps for user and team productivity use cases. This environment has an associated tenant-level DLP policy that isn't as risk-averse as a default policy and allows makers to use connectors like Azure services in addition to the Office 365 services. Because this environment is a non-default environment, admins can actively control the environment maker list for it. This is a tiered approach to shared user and team productivity environment and associated DLP settings.
+1. Contoso admins created another shared environment for users to create apps for user and team productivity use cases. This environment has an associated tenant-level DLP policy that isn't as risk-averse as a default policy and allows makers to use connectors like Azure services in addition to the Office 365 services. Because this environment is a non-default environment, admins can actively control the environment maker list for it. This is a tiered approach to shared user and team productivity environment and associated DLP settings.
 
-1. In addition, for the business units to create line-of-business applications, they have created development, test, and production environments for their tax and audit subsidiaries across various countries/regions. The environment maker access to these environments is carefully managed, and appropriate first- and third-party connectors are made available using tenant-level DLP policies in consultation with the business unit stakeholders.
+1. In addition, for the business units to create line-of-business applications, they created development, test, and production environments for their tax and audit subsidiaries across various countries/regions. The environment maker access to these environments is carefully managed, and appropriate first- and third-party connectors are made available using tenant-level DLP policies in consultation with the business unit stakeholders.
 
 1. Similarly, dev/test/production environments are created for Central IT's use to develop and roll out relevant or right applications. These business application scenarios typically have a well-defined set of connectors that need to be made available for makers, testers, and users in these environments. Access to these connectors is managed using a dedicated tenant-level policy.
 
-1. Contoso also has a special purpose environment dedicated to their Center of Excellence activities. In Contoso, the DLP policy for the special purpose environment remains high touch given the experimental nature of the theory teams book. In this case, tenant admins have delegated DLP management for this environment directly to a trusted environment admin of the CoE team and excluded it from a school of all tenant-level policies. This environment is managed only by the environment-level DLP policy, which is an exception rather than the rule at Contoso.
+1. Contoso also has a special purpose environment dedicated to their Center of Excellence activities. In Contoso, the DLP policy for the special purpose environment remains high touch given the experimental nature of the theory teams book. In this case, tenant admins delegated DLP management for this environment directly to a trusted environment admin of the CoE team and excluded it from a school of all tenant-level policies. This environment is managed only by the environment-level DLP policy, which is an exception rather than the rule at Contoso.
 
 As expected, any new environments that are created in Contoso map to the original all-environments policy.
 
@@ -106,6 +106,5 @@ Set up a [SharePoint site or a wiki](wiki-community.md) that clearly communicate
 - Your admin group’s email ID so that makers can make contact for exception scenarios. For example, admins can help makers get back into compliance editing an existing DLP policy, moving the solution to a different environment, creating a new environment and a new DLP policy, and moving the maker and resource to this new environment.
 
 Also clearly communicate your organization's [environment strategy to makers](/power-platform/guidance/white-papers/environment-strategy#communicate-your-environment-strategy-to-your-organization).
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
