@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions Project “Sophia” 
-description: Frequently asked questions about Project “Sophia.”
+title: Frequently asked questions Project "Sophia"
+description: Frequently asked questions about Project "Sophia."
 author: mikkelsen2000
 ms.topic: overview
 ms.custom: 
