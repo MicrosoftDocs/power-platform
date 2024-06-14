@@ -1,7 +1,7 @@
 ---
 title: "Content security policy"
 description: "Use content security policy to prevent clickjacking in Power Apps."  
-ms.date: 04/25/2024
+ms.date: 06/14/2024
 ms.topic: conceptual
 author: JesseParsons
 ms.subservice: admin
@@ -70,7 +70,7 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 - `https://teams.microsoft.com/`
 - `https://msteamstabintegration.dynamics.com/`
 
-For Dynamics 365 App for Outlook, add the following to `frame-ancestors`:
+For the Dynamics 365 App for Outlook, add the following to `frame-ancestors`:
 - Your Outlook Web App homepage origin
 - `https://outlook.office.com`
 
