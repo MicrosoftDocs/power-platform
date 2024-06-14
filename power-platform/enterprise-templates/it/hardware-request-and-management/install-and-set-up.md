@@ -114,13 +114,17 @@ After you create all your connections, your list should look like this example:
 
 [Learn how to manage connections in canvas apps](/power-apps/maker/canvas-apps/add-manage-connections).
 
-## Step 3: Install Approvals solution
+## Step 3: Create approvals database
 
-The Hardware Request and Management template leverages Power Automate Approvals to approve or reject requests. By default, Power Platform environments are not set up with the required Approvals database that gets created the first time a flow with the Approvals connector is run in that environment by an administrator. Perform these steps to create the Approvals database:
+The Expense Reimbursement solution leverages Power Automate Approvals to approve or reject requests.
+
+By default, Power Platform environments aren't set up with the required database for approvals. The database is created the first time a flow with the [Approvals connector](/connectors/approvals/) is run in that environment by an administrator.
+
+Take these steps to create the database for approvals:
 
 1. Go to the [Power Automate maker portal](https://make.preview.powerautomate.com/environments/) and select your targeted deployment environment.
 1. Select **+ Create** on left pane.
-1. Select **Instant cloud flow** underneath the *Start from blank* section.
+1. Select **Instant cloud flow** underneath the *Create from blank* section.
 1. Choose **Manually trigger a flow** and then select **Create**.
 1. Select **+ New step**.
 1. Search on *Approvals* and choose **Create an approval**.
@@ -131,11 +135,11 @@ The Hardware Request and Management template leverages Power Automate Approvals 
 1. Select **Save**.
 1. Select **Test Manually** and then **Test** again.
 1. Select **Continue** and then **Run flow**, followed by **Done**.
-1. *Delete* the flow you just created, as it is no longer needed.
+1. Delete the *flow* you just created, as it is no longer needed.
 
 > [!NOTE]
 >
-> It can take a few minutes for the database provisioning to complete, and you'll notice this delay the first time you run this flow. Once this first-time flow run is complete, subsequent approval flows will be faster.
+> It can take a few minutes for the database provisioning to complete, and you'll notice this delay the first time you run this flow. Once you complete this first-time flow run, subsequent approval flows will be faster.
 
 [Learn how to get started with Power Automate approvals](/power-automate/get-started-approvals)
 
@@ -161,7 +165,12 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 [Learn more about AppSource](https://appsource.microsoft.com/en-US/)
 
-Two solutions are installed in your environment, **IT Base** and **Hardware Request and Management**. [Learn more about the Hardware Request and Management template solutions](./overview.md).
+Two solutions are installed in your environment:
+
+- **IT Base**
+- **Hardware Request and Management**
+
+Go to the [Hardware Request and Management overview article](./overview.md) to learn more about the two solutions.
 
 ### Download and manually install solution files
 

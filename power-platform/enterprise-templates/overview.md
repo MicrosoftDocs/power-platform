@@ -8,7 +8,7 @@ contributors:
 - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 05/09/2024
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
