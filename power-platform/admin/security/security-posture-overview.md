@@ -14,7 +14,7 @@ search.audienceType:
 
 # Manage security
                                                   
-The **Securiry** page in the Power Platform admin center offers a consolidated experience that brings together all the best practices and a wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
+The **Security** page in the Power Platform admin center offers a consolidated experience that brings together all the best practices and a wide set of security features available to run your organizational workloads in the safest way possible. Take advantage of the following capabilities:
 
 - **Security assessment**: Admins can understand and improve their organization’s security policies specific to their needs. 
 - **Reactive governance through recommendations**: Admins can identify and act on the top-most, impactful recommendations to improve the assessment. 
