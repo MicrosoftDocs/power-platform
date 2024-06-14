@@ -56,6 +56,9 @@ When the [allow record ownership across business units](wp-security-cds.md#enabl
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
+> [!NOTE]
+> The panel shown above shows and manages only direct roles assignments for the user. [This document](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
+
 ## User settings privileges for record ownership across business units
   
 If you have enabled [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure), your users can access data in other business units by having a security role from these other business units directly assigned to them. The user also needs a security role assigned from the user's business unit with  privileges from the following tables in order to update the user UI settings:  
