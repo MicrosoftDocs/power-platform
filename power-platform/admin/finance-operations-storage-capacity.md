@@ -42,7 +42,6 @@ To determine whether you have any of these licenses, sign in to the [Microsoft 3
 
 > [!NOTE]
 > The following licenses are eligible for entitlements but aren't represented in the current reporting:
->
 > - Dynamics AX (Online) licenses
 > - China-specific licenses for finance and operations apps
 > - Operations Sandbox Tier 4 and Tier 5 per-user subscription license incremental capacity  
@@ -53,7 +52,7 @@ To determine whether you have any of these licenses, sign in to the [Microsoft 3
 
 The **Summary** page of the report provides a tenant-level view of where your organization is using finance and operations storage capacity.
 
-To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Resources** > **Capacity** > **Summary** tab.
+To view the **Summary** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select the **Resources** > **Capacity** > **Summary** tab.
 
 :::image type="content" source="media/finance-operations-storage-summary-tab.png" alt-text="Screenshot of the Capacity Summary page including finance and operations data.":::
 
@@ -65,7 +64,7 @@ If you're using the [legacy Dataverse storage capacity model](legacy-capacity-st
 
 The **Finance and Operations** page provides an environment-level view of where your organization is using finance and operations storage capacity.
 
-To view the **Finance and Operations** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select **Resources** > **Capacity** > **Finance and Operations** tab.
+To view the **Finance and Operations** page, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select the **Resources** > **Capacity** > **Finance and Operations** tab.
 
 :::image type="content" source="media/finance-operations-storage-finops-tab.png" alt-text="Screenshot of the Finance and Operations page with capacity data by environment.":::
 
