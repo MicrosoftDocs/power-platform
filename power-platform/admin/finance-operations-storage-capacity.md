@@ -12,6 +12,9 @@ search.audienceType:
   - admin
 ---
 
+<!-- note from editor: I'm unsure about the use of "Dynamics 365 Operations," as it appears in lines 40, 41, and 42. Is this a legacy reference? The style guide says not to use it: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48216 -->
+
+
 # Finance and operations storage capacity
 
 The finance and operations storage capacity report shows how much finance and operations storage your organization is using compared with how much its license entitles it to.
