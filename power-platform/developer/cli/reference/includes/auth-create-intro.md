@@ -28,7 +28,7 @@ pac auth create --environment < Your environment ID >
 
 > [!TIP]
 > To find an environment id:
-> 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select an the **Environment** you want to connect to. 
+> 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com) and select the **Environment** you want to connect to. 
 > In the **Details** section, look for **Environment ID**
 
 #### Named Create

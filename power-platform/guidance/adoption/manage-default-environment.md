@@ -5,7 +5,7 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 02/28/2024
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
@@ -44,7 +44,7 @@ While the default environment is intended for personal productivity, makers migh
 
 Use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](/power-platform/guidance/coe/power-bi-govern#identify-widely-shared-apps).
 
-When 10 or more employees are using a personal productivity app or flow, the Power Platform CoE can also help you to evaluate whether it should be moved to its own or a shared environment. The following table describes the parameters to consider. [Learn more about establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy).
+When 10 or more employees are using a personal productivity app or flow, the Power Platform CoE can also help you to evaluate whether it should be moved to its own or a shared environment. The following table describes the parameters to consider. [Learn more about establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy).
 
 <table>
     <th>Parameters</th><th>Defining criteria</th><th>Environment</th>

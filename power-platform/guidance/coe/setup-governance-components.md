@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/05/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -54,7 +54,7 @@ For more information, see [Get App URL – Production Environment](faq.md#get-a-
 
 ### Exempt environments from the compliance process
 
-You can exempt environments from the compliance process, for example well-managed and dedicated environments or the environment with the CoE Starter Kit. For more information, see [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy).
+You can exempt environments from the compliance process, for example well-managed and dedicated environments or the environment with the CoE Starter Kit. For more information, see [Establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy).
 
 You can exempt environments from the compliance process using the Power Platform Admin View app:  
 
