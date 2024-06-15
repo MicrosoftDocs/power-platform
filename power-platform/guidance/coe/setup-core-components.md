@@ -38,7 +38,7 @@ The CoE Starter Kit requires the installation of the [Creator Kit](../creator-ki
 
 ### Create connections
 
-Create these connections manually ahead of install to ensure they're correctly configured.
+Create these connections manually ahead of installing the kit to ensure they're correctly configured.
 
 1. Go to [Power Automate](https://make.powerautomate.com/).
 1. Select your CoE environment and go to **Data** > **Connections** > **+ New connection**.
