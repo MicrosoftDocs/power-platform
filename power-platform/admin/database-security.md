@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/02/2024
+ms.date: 06/14/2024
 search.audienceType: 
   - admin
 ---
@@ -107,7 +107,7 @@ The following table describes which resources each security role can author.
 |Connector     |X (non&ndash;solution-aware)         |X         |X         |X         |
 |Connection<sup>*</sup>     |X         |X         |X         |X         |
 |Data gateway     |-         |X         |-         |X         |
-|Dataflow     |X         |X         |-         |X         |
+|Dataflow     |X         |X         |X       |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |X         |-         |X         |X         |
