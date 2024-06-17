@@ -468,7 +468,7 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
-To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down 2 times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
+To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
 
  > [!Recommendation]
  > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**. ](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version)
