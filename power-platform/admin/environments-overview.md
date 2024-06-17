@@ -160,6 +160,8 @@ $settings = Get-TenantSettings
 $settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment = $true
 Set-TenantSettings -RequestBody $settings
 ```
+Updating this value will also update the default location that is populated in the Power Platform Admin Center create environment experience.
+
 ### Environment history
 
 Environment history gives admins a timeline of the full environment lifecycle from the moment it's created until it's completely deleted with all the actions performed on the environment in between, such as Edit, Copy, Reset, etc. Actions on the timeline format are:
