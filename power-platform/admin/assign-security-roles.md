@@ -8,7 +8,7 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 06/17/2024
 search.audienceType: 
   - admin
 contributors:
@@ -57,7 +57,7 @@ When the [allow record ownership across business units](wp-security-cds.md#enabl
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
 
 > [!NOTE]
-> The panel shown above shows and manages only direct roles assignments for the user. [This document](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
+> The panel shown above shows and manages only direct role assignments for the user. [Manage group teams](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
 
 ## User settings privileges for record ownership across business units
   
