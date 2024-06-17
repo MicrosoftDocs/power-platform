@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/17/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms
@@ -65,6 +65,9 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 > [!NOTE]
 > Power Apps display names, descriptions, and connection metadata continues to be encrypted with a Microsoft-managed key.
+
+> [!NOTE]
+> Data analyzed by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
@@ -465,7 +468,7 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
-To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down 2 times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
+To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
 
  > [!Recommendation]
  > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**. ](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version)
