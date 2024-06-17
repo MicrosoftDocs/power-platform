@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 06/07/2024
+ms.date: 06/17/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,26 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability will continue to work and is fully supported until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Hierarchy control in model-driven apps is deprecated
+
+Effective October 2024, the hierarchy control in model-driven apps is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product.
+
+The hierarchy control allows users to visualize relationships between records for a table. This is applicable for any table that has a self-referential relationship.
+
+### Why is this needed?
+
+Due to low usage, issues with accessibility, and incompatibility with the modern look, the hierarchy control will no longer be supported.
+
+### Impact
+
+After its removal, end users will not be able to view the visual representation of the hierarchical relationships of records.
+
+### Action required by you
+
+You can enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.  
+
+If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
 ## Schema for DLP activity logging
 The schema DLP activity logging is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin/admin-activity-logging.md#activity-category-data-policy-events).
@@ -764,20 +784,6 @@ with HTML5 to create UI components to visualize and interact with data.
 
 Gateways for desktop flows are deprecated. Direct connectivity is the preferred option to run attended and unattended desktop flows on your machine(s). This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](/power-automate/desktop-flows/manage-machines#switch-from-gateways-to-direct-connectivity).
 
-## Hierarchy control in model-driven apps is deprecated
-Effective October 2024, the hierarchy control in model-driven apps is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product. 
-The hierarchy control allows users to visualize relationships between records for an entity. This is applicable for any entity that has a self-referential relationship.
-
-### Why is this needed?
-Due to low usage, issues with accessibility, and incompatibility with the modern look, the hierarchy control will no longer be supported.
-
-### Impact
-After its removal, end users will no longer be able to view the visual represenation of the hierarchical relationships of records.
-
-### Action required by you
-You can enable the control until its removed in the product by editing the app settings in make.powerapps.com, going to Settings | Features and switching on the "Enable View hierarchy capability".  
-
-If the hierarchy view is essential to an app, a custom PCF control that handles the hierarchy view will need to be implemented and deployed.
 
 ## Canvas apps
 
