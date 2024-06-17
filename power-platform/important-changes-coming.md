@@ -764,6 +764,21 @@ with HTML5 to create UI components to visualize and interact with data.
 
 Gateways for desktop flows are deprecated. Direct connectivity is the preferred option to run attended and unattended desktop flows on your machine(s). This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](/power-automate/desktop-flows/manage-machines#switch-from-gateways-to-direct-connectivity).
 
+## Hierarchy control in model-driven apps is deprecated
+Effective October 2024, the hierarchy control in model-driven apps is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product. 
+The hierarchy control allows users to visualize relationships between records for an entity. This is applicable for any entity that has a self-referential relationship.
+
+### Why is this needed?
+Due to low usage, issues with accessibility, and incompatibility with the modern look, the hierarchy control will no longer be supported.
+
+### Impact
+After its removal, end users will no longer be able to view the visual represenation of the hierarchical relationships of records.
+
+### Action required by you
+You can enable the control until its removed in the product by editing the app settings in make.powerapps.com, going to Settings | Features and switching on the "Enable View hierarchy capability".  
+
+If the hierarchy view is essential to an app, a custom PCF control that handles the hierarchy view will need to be implemented and deployed.
+
 ## Canvas apps
 
 See [Important upcoming changes and deprecations in canvas apps](/powerapps/maker/canvas-apps/important-changes-deprecations).
