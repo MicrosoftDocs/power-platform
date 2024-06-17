@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Hierarchy control in model-driven apps is deprecated
 
-Effective October 2024, the hierarchy control in model-driven apps is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product.
+Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product.
 
 The hierarchy control allows users to visualize relationships between records for a table. This is applicable for any table that has a self-referential relationship.
 
