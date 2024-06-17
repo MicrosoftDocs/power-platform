@@ -4,16 +4,13 @@ description: Learn to use the finance and operations storage capacity report to 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/04/2024
+ms.date: 06/17/2024
 ms.subservice: admin
 ms.author: ceian 
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
-
-<!-- note from editor: I'm unsure about the use of "Dynamics 365 Operations," as it appears in lines 40, 41, and 42. Is this a legacy reference? The style guide says not to use it: https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=48216 -->
-
 
 # Finance and operations storage capacity
 
