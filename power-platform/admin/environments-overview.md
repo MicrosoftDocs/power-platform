@@ -128,6 +128,38 @@ Select **Edit** to review and edit environment details.
 > [!div class="mx-imgBorder"]
 > ![More environment details.](media/environment-details-more.png "More environment details")
 
+## Environment location
+
+Depending on the environment type, the location it can be created in will vary.
+|Type  |Location Information  |
+|---------|---------|
+|Production  |Set by user at creation time. |
+|Default   |Set to the tenant home location. To modify this, see Preferred Environment Location section below. |
+|Sandbox  |Set by user at creation time. |
+|Trial    |Set by user at creation time. |
+|Developer |If created via the admin portal, location can be specified during creation. If created during [sign up](/powerapps/maker/developer-plan), it will be set to tenant home location. To modify, see Preferred Environment Location section below.  |
+|Microsoft Dataverse for Teams |Set to the tenant home location. To modify this, see Preferred Environment Location section below. |
+
+### Preferred environment location
+
+If you want Teams environments and developer environments (created on signup) to be created in a location different from the tenant location, you can set Preferred Environment Location for your tenant using the [Power Platform Powershell commandlets](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell). These settings can be found under Settings -> PowerPlatform -> Environments.
+
+```powershell
+$requestBody = [pscustomobject]@{
+powerPlatform = [pscustomobject]@{
+environments = [pscustomobject]@{
+preferredEnvironmentLocation = "unitedstates"
+}
+}
+}
+Set-TenantSettings -RequestBody $requestBody
+```
+Note that if you have an [O365 multi-geo tenant ](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide) you will additionally need to set settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment to true for the preferred Environment Location value to be used.
+```powershell
+$settings = Get-TenantSettings 
+$settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment = $true
+Set-TenantSettings -RequestBody $settings
+```
 ### Environment history
 
 Environment history gives admins a timeline of the full environment lifecycle from the moment it's created until it's completely deleted with all the actions performed on the environment in between, such as Edit, Copy, Reset, etc. Actions on the timeline format are:
