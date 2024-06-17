@@ -8,7 +8,7 @@ contributors:
   - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -67,7 +67,7 @@ Once you have submitted an expense request, you can view the status of the reque
 
 On the _My requests_ screen, select the _number_ of the reimbursement request you want to view. This takes you to the _View request_ screen.
 
-:::image type="content" source="media/use/exre-underreview.png" alt-text="Screenshot of the Reimbursement Request app's View request screen. It shows the request number, request name, program name, category, subcategory, currency, created-on date and expense details.":::
+:::image type="content" source="media/use/exre-underreview-ed.png" alt-text="Screenshot of the Reimbursement Request app's View request screen. It shows the request number, request name, program name, category, subcategory, currency, created-on date and expense details.":::
 
 ## Use the Expense Reimbursement Administrator app
 
