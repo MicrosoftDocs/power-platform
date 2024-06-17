@@ -1,6 +1,6 @@
 ---
 title: Overview of unified admin experience for finance and operations apps
-description: "Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center."
+description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
 ms.date: 06/06/2024
@@ -14,33 +14,33 @@ ms.reviewer: sericks
 
 Users of finance and operations apps can now administer their environments, policies, licensing, and capacity in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now an application within Power Platform. In this new experience, multiple Dynamics 365 applications, such as Sales, Marketing, finance and operations, as well as low-code apps, flows, and websites can be installed and hosted in the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database). This unification provides a consistent and single set of lifecycle operations that an admin can perform across all artifacts in a particular environment.
+As part of the unification of admin experiences of finance and operations apps within Power Platform, the environment for finance and operations apps is now an application within Power Platform. In this new experience, multiple Dynamics 365 applications, such as Sales, Marketing, and finance and operations apps, and also low-code apps, flows, and websites can be installed and hosted in the same Power Platform environment [with a Dataverse database](/power-platform/admin/create-environment#create-an-environment-with-a-database). This unification provides a consistent and single set of lifecycle operations that an admin can perform across all artifacts in a particular environment.
 
 :::image type="content" source="media/one-admin-journey.png" alt-text="Screenshot that shows the unified admin experience for finance and operations apps.":::
 
-This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
+This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
 
 To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecyle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
 ## How do finance and operations apps surface in the Power Platform admin center?
 
-Finance and operations now has the same behavior as other Dynamics 365 apps have had within Power Platform admin center. The apps are available to licensed customers both during new environment creation, as well as installed in to an existing environment.  
+Finance and operations apps now have the same behavior that other Dynamics 365 apps have within the Power Platform admin center. The apps are available to licensed customers both during new environment creation and when they are installed in an existing environment.  
 
-You can deploy the finance and operations apps within the Power Platform admin center in one of the following ways:
+You can deploy finance and operations apps within the Power Platform admin center in one of the following ways.
 
 ### Option A: Create a new environment through templates
 
-A template is simply a bundle of Microsoft published applications that are pre-installed on a Dataverse-based Power Platform environment. This is a means of increasing productivity as you can deploy an environment with a known configuration of apps quickly without having to install each one in the proper sequence manually. When using a template, you always get the very latest version of each of those applications available as of that moment.
+A template is simply a bundle of Microsoft-published applications that are pre-installed in a Dataverse-based Power Platform environment. Templates help increase productivity, because you can quickly deploy an environment with a known configuration of apps without having to manually install each app in the correct sequence. When you use a template, you always get the very latest version that is available for each app at that moment.
 
-When creating a new environment in Power Platform admin center, you can add a Dataverse data store and choose to **Enable Dynamics 365 apps**. Then you see a list of environment templates that becomes available under **Automatically deploy these apps**.   
+When you create a new environment in the Power Platform admin center, you can add a Dataverse data store and select **Enable Dynamics 365 apps**. A list of environment templates then becomes available under **Automatically deploy these apps**.   
 
 :::image type="content" source="media/new-environment-template.png" alt-text="Environment templates":::
 
-This list is dynamic, so you only see references to **Finance**, **Supply Chain Management**, **Commerce**, **Project Operations**, and other finance and operations apps based on the licenses assigned to the admin creating the environment. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
+This list is dynamic, so you only see references to **Finance**, **Supply Chain Management**, **Commerce**, **Project Operations**, and other finance and operations apps, based on the licenses assigned to the admin creating the environment. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md).
 
 ### Option B: Install the provisioning app on an existing environment
 
-If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that requires a complex integration. The environment you use must support Dynamics 365 apps. As part of the install process, you can pick any of the supported versions of the finance and operations apps, which is helpful if you want to get a version that is not the latest generally available version.
+If you already have an environment that should function with finance and operations apps, you can simply install it instead of creating a separate environment that requires a complex integration. The environment that you use must support Dynamics 365 apps. As part of the installation process, you can select any of the supported versions of finance and operations apps. This flexibility is helpful if you want to use a version that isn't the latest generally available version.
 
 :::image type="content" source="media/install-provisioning-app.png" alt-text="Install provisioning app":::
 
@@ -57,7 +57,7 @@ With either option, your environment has two runtime URLs:
 
 When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
 
-:::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in Power Platform admin center":::
+:::image type="content" source="media/PPI-Capacity.png" alt-text="Capacity view in the Power Platform admin center":::
 
 A license is required to create or install any finance and operations app in the Power Platform admin center. You must also have at least 1 GB available of both operations and Dataverse database capacity to provision one more environment. There are no strict limits on how many environments you can create. Lifecycle Services is different, where each sandbox and production environment slot has a predetermined purchase.
 
@@ -73,7 +73,7 @@ With the unified experience, customers no longer deploy all-in-one VMs. Instead,
 1. Build new solutions that span the entire platform set of capabilities.
 1. Deploy solutions to a sandbox environment provisioned through the Power Platform admin center.  
 
-## Terminology differences between Lifecycle Services and Power Platform admin center
+## Terminology differences between Lifecycle Services and the Power Platform admin center
 
 The following table is a reference for each operation type and explains any nuances between the two environment lifecycle operations.
 
