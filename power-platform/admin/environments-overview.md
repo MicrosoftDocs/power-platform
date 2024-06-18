@@ -3,7 +3,7 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: overview
-ms.date: 06/17/2024
+ms.date: 06/18/2024
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
@@ -130,19 +130,20 @@ Select **Edit** to review and edit environment details.
 
 ## Environment location
 
-Depending on the environment type, the location it can be created in will vary.
-|Type  |Location Information  |
+Depending on the environment type, the environment location will vary.
+
+|Type  |Location information  |
 |---------|---------|
 |Production  |Set by user at creation time. |
-|Default   |Set to the tenant home location. To modify this, see Preferred Environment Location section below. |
+|Default   |Set to the tenant home location. To modify this, see [Preferred environment location](#preferred-environment-location).|
 |Sandbox  |Set by user at creation time. |
 |Trial    |Set by user at creation time. |
-|Developer |If created via the admin portal, location can be specified during creation. If created during [sign up](/powerapps/maker/developer-plan), it will be set to tenant home location. To modify, see Preferred Environment Location section below.  |
-|Microsoft Dataverse for Teams |Set to the tenant home location. To modify this, see Preferred Environment Location section below. |
+|Developer |If created through the admin portal, the location can be specified during creation. If created during [sign-up](/powerapps/maker/developer-plan), it is set to tenant home location. To modify, see [Preferred environment location](#preferred-environment-location).  |
+|Microsoft Dataverse for Teams |Set to the tenant home location. To modify this, see [Preferred environment location](#preferred-environment-location). |
 
 ### Preferred environment location
 
-If you want Teams environments and developer environments (created on signup) to be created in a location different from the tenant location, you can set Preferred Environment Location for your tenant using the [Power Platform Powershell commandlets](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell). This change will not update existing environments and will apply to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
+If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform Powershell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
 
 ```powershell
 $requestBody = [pscustomobject]@{
@@ -154,13 +155,14 @@ preferredEnvironmentLocation = "unitedstates"
 }
 Set-TenantSettings -RequestBody $requestBody
 ```
-Note that if you have an [O365 multi-geo tenant ](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide) you will additionally need to set settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment to true for the preferred Environment Location value to be used.
+Note that if you have an [O365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide) you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
+
 ```powershell
 $settings = Get-TenantSettings 
 $settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment = $true
 Set-TenantSettings -RequestBody $settings
 ```
-Updating this value will also update the default location that is populated in the Power Platform Admin Center create environment experience.
+Updating this value updates the default location that is populated in the Power Platform admin center create environment experience.
 
 ### Environment history
 
