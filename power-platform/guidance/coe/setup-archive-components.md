@@ -4,7 +4,7 @@ description: "Learn how to set up the inactivity notifications components of the
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -58,7 +58,7 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 
 ### Exempt environments from the inactivity notifications process
 
-You might want to exempt some environments from the inactivity notification process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](../adoption/environment-strategy.md)
+You might want to exempt some environments from the inactivity notification process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](../white-papers/environment-strategy.md)
 
 You can exempt environments from the inactivity notification process by using the Power Platform Admin View app.  
 

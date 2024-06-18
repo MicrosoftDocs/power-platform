@@ -5,7 +5,7 @@ author: manuelap-msft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -46,7 +46,7 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 
 ### Add or exempt environments from the app quarantine process
 
-You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 
 You can exempt environments from the app quarantine process by using the Power Platform Admin View app.  
 
