@@ -167,7 +167,7 @@ Your CoE team can quickly and efficiently identify and address compliance issues
 
 For more information, see:
 
-- [App and flow compliance detail request](governance-components.md#admin--compliance-detail-request-v3)
+- [App and flow compliance detail request](governance-components.md#admin---compliance-detail-request-v3)
 - [How the CoE Starter Kit's compliance process works (video)](https://youtu.be/WXXFjHLt5ss)
 - [Power Platform Support Strategy](../adoption/support-strategy.md)
 

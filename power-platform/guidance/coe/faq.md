@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions | MicrosoftDocs
-description: Frequently asked questions, tips, and how-to's about getting the CoE Starter Kit set up.
+title: "Frequently asked questions"
+description: "Explore frequently asked questions, tips, and how-to's when getting the Microsoft CoE Starter Kit set up."
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: conceptual
@@ -11,135 +11,135 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Frequently asked questions, tips, and how-to's
 
-This article provides you with answers to frequently asked questions and tips on setting up and using the CoE Starter Kit.
+This article answers frequently asked questions (FAQs) and tips on setting up and using the Microsoft CoE Starter Kit.
 
 ## Installing a solution in a production environment
 
-1. Go to [make.powerapps.com](<https://make.powerapps.com>).
-1. Go to your CoE environment. In the example in the following screenshot, we're importing to the environment named **Contoso CoE**.
+1. Go to [make.powerapps.com](https://make.powerapps.com).
+1. Go to your CoE environment. In this example image, we're importing to the environment named **Contoso CoE**.
 
-    ![Power Apps maker portal environment selection.](media/coe6.png "Power Apps maker portal environment selection")
+   :::image type="content" source="media/coe6.png" alt-text="Screenshot that shows the Power Apps maker portal environment with the example environment highlighted from the Environments menu.":::
 
 1. On the left pane, select **Solutions**.
 1. Select **Import**, and then select **Browse**.
 1. Select the solution from the CoE Starter Kit download.
-1. To activate your solution, establish connections. If you create a new connection, ensure to select **Refresh**. Your import progress remains intact.
-
-     ![To activate your solution, establish connections.](media/msi-import.png "To activate your solution, establish connections.")
-1. Update environment variable values. These environment variables store application and flow configuration data specific to your organization or environment. By setting the value once per environment, it is utilized across all necessary flows and applications within that environment.
-    ![Update environment variable values.](media/msi-envvar.png "Update environment variable values")
+1. To activate your solution, establish connections. If you create a new connection, select **Refresh**. Your import progress remains intact.
+   :::image type="content" source="media/msi-import.png" alt-text="Screenshot that shows the Import a solution pane opened from the Solutions navigation menu.":::
+1. Update environment variable values. These environment variables store application and flow configuration data specific to your organization or environment. By setting the value once per environment, it appears across all necessary flows and applications within that environment.
+   :::image type="content" source="media/msi-envvar.png" alt-text="Screenshot that shows the Environment variables section of the Import a solution pane. Here you can add a value for the Power Automate Environment Variable.":::
 1. Select **Import**.
 
 ## Set flow run-only users properties
 
 1. Remove [unmanaged layers](after-setup.md) for all flows.
-1. Go to the details page, and then select the **Run only users** edit button.
-
-    ![Find the setting for run-only users.](media/tips-flow2.png "Find the setting for run-only users")
-
+1. Go to the **Details** page, and then select the **Run only users** edit button.
+   :::image type="content" source="media/tips-flow2.png" alt-text="Screenshot that shows the location of the Edit link on the Run only users card.":::
 1. You see all the connections in the child flow. For each one except Microsoft Dataverse, change the value to **Use this connection (userPrincipalName\@company.com)**. For Microsoft Dataverse, leave the value blank.
+   :::image type="content" source="media/tips-flow1.png" alt-text="Screenshot that shows the Manage run-only permissions pane with the Use this connection option highlighted under a connection.":::
 1. If there's no connection for any of the connectors, go to **Data** > **Connections**, and create one for the connector.
-
-    ![Configure run-only users.](media/tips-flow1.png "Configure run only users")
-
-1. Once you have updated all run-only users, you can enable the child flow.
+1. Once you updated all run-only users, you can enable the child flow.
 
 ## Find a users Security Roles in an Environment
 
-To find the Security Roles of a user in an environment, you can use the product UX as shown here
+To find the security roles of a user in an environment, you can use the product UX:
 
-1. Go to [https://admin.powerplatform.microsoft.com/environments](https://admin.powerplatform.microsoft.com/environments)
-2. Select the desired environment
-3. Settings
-    ![Find environment SRs 1](media/find-SR-1.png "Find environment SRs 1")
-4. From Users + Permissions, select Users
-    ![Find environment SRs 2](media/find-SR-2.png "Find environment SRs 2")
-5. Locate the user and select their name to view their properties. There, you see their Security Roles.
-    ![Find environment SRs 3](media/find-SR-3.png "Find environment SRs 3")
+1. Go to [Power Platform admin center environments](https://admin.powerplatform.microsoft.com/environments).
+2. Select your environment.
+3. Go to **Settings** on your navigation bar.
+   :::image type="content" source="media/find-SR-1.png " alt-text="Screenshot that shows where the Settings menu is located in an environment.":::
+4. From **Users + Permissions**, select **Users**.
+   :::image type="content" source="media/find-SR-2.png" alt-text="Screenshot that shows where the Users option is located under the Users + permissions menu.":::
+5. Locate the user and select their name to view their properties. You see their security roles under the **Roles** section.
+   :::image type="content" source="media/find-SR-3.png" alt-text="Screenshot that shows the location of Roles on a user's settings page.":::
 
 ## Import a Flow
 
-Occasionally, we deploy a one-time flow to address specific issues. When these flows are made available, the first step is to import them. Below are the instructions for importing flows.
+Occasionally, we deploy a one-time flow to address specific issues. When these flows are made available, the first step is to import them.
 
-1. Go to [https://make.powerautomate.com/](https://make.powerautomate.com/)
-1. Select your target environment. For us that will typically be our CoE Environment.
-1. Select My flows > Import > Import Package (Legacy)
-    ![Import flow 1](media/import-flow-1.png "Import flow 1")
+Import your flows:
+
+1. Go to [make.powerautomate.com](https://make.powerautomate.com/)
+1. Select your target environment. For this example, we choose our CoE Environment.
+1. Select **My flows** > **Import** > **Import Package (Legacy)**
+   :::image type="content" source="media/import-flow-1.png" alt-text="Screenshot that shows where to import a flow from the My flows navigation menu.":::
 1. Select and upload your flow.
-    ![Import flow 2](media/import-flow-2.png "Import flow 2")
-1. Create any needed connections and Import
-    ![Import flow 3](media/import-flow-3.png "Import flow 3")
-1. When done click Open Flow to view and then back to see details and turn on.
-    ![Import flow 4](media/import-flow-4.png "Import flow 4")
-    ![Import flow 5](media/import-flow-5.png "Import flow 5")
-    ![Import flow 6](media/import-flow-6.png "Import flow 6")
+   :::image type="content" source="media/import-flow-2.png" alt-text="Screenshot that shows the Import package prompt.":::
+1. Create any needed connections and then select **Import**.
+   :::image type="content" source="media/import-flow-3.png" alt-text="Screenshot that shows the Import Setup section of a resource with an email address in it.":::
+1. Select **Open flow** to view.
+   :::image type="content" source="media/import-flow-4.png" alt-text="Screenshot that shows where the Open flow link is located.":::
+1. Return to the previous view to see package details.
+   :::image type="content" source="media/import-flow-5.png" alt-text="Screnshot that shows where the back button icon is located.":::
+1. Turn on your flow.
+   :::image type="content" source="media/import-flow-6.png" alt-text="Screenshot that shows where the Turn on selection is located in the navigation bar of the Audit logs flow.":::
 
 ## Setting up CoE for a subset of environments
 
-You may want to monitor and govern only certain environments using the CoE Starter Kit. For example, this could be applicable if you are setting up the CoE Starter Kit for individual business units managing their own smaller Centers of Excellence or if you wish to include your Dynamics 365 environments in the CoE Starter Kit processes. The following option outlines how to selectively enable CoE Starter Kit processes for specific environments
+You might want to monitor and govern only certain environments using the CoE Starter Kit. For example, if you set up the CoE Starter Kit for individual business units managing their own smaller Centers of Excellence, or if you wish to include your Dynamics 365 environments in the CoE Starter Kit processes.
+
+You can selectively enable CoE Starter Kit processes for specific environments:
 
 > [!IMPORTANT]
-> This is not a security feature and does not implement data privacy or row-level security. It is solely intended to facilitate the monitoring and management of environments for organizational units.
+> A starter kit process isn't a security feature and doesn't implement data privacy or row-level security. The process is solely intended to facilitate the monitoring and management of environments for organizational units.
 
-1. After import of the Core components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. Learn more: [Update environment variables](#update-environment-variables)).
+1. After you import the **Core** components and before you turn on flows, set the value of the **is All Environments Inventory** environment variable to **No**. For more information, see [Update environment variables](#update-environment-variables).
 1. Continue with the [inventory setup](setup-core-components.md) and turn on all inventory flows.
-1. Wait for first inventory run of **Admin | Sync Template v3** to complete.
-All environments in the tenant are added as excluded from inventory
-      ![All environments start as opted out](media/tips-Opt-In-Envt1.png "All environments start as opted out")
-
-1. Add environments you want to monitor and manage to the inventory by selecting **No** for the **Excuse from inventory** configuration.
-      ![Opt-in desired environments](media/tips-Opt-In-Envt2.png "Opt-in desired environments")
-
-1. Wait for the next inventory run to complete. It will automatically pick up and monitor inventory for the selected environments.
+1. Wait for the first inventory run of **Admin | Sync Template v3** to complete. All environments in the tenant are added as excluded from inventory.
+   :::image type="content" source="media/tips-Opt-In-Envt1.png" alt-text="Screenshot that shows the location of the Environment Excused from Inventory page from the Environments menu.":::
+1. Add the environments you want to monitor and manage to the inventory by selecting **No** for the **Excuse From Inventory** configuration.
+   :::image type="content" source="media/tips-Opt-In-Envt2.png" alt-text="Screenshot that highlights the Excuse From Inventory configuration set to No.":::
+1. Wait for the next inventory run to complete. The run automatically picks up and monitors inventory for the selected environments.
 
 ## Running a full inventory
 
-To reduce API calls, the inventory flows do not update all objects with every sync flow. The flows only update objects modified since the last inventory.
+To reduce API calls, the inventory flows don't update all objects with every sync flow. The flows only update objects modified since the last inventory.
 
-The inventory flows also don't check each object every day to see if its modified date is more recent than what is in inventory. Instead these flows:
+> [!NOTE]
+> Inventory flows don't check each object every day to see if its modified date is more recent than the date in inventory.
 
-1. Get all the objects. For example, by calling [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin).
-1. Filter the returned list of objects down to objects where the modified date is greater than 7 days old (configurable via **InventoryFilter_DaysToLookBack**).
-1. Check each object in the filtered result to see if its current modified date is more recent than the inventoried one.
-1. Update these objects with the more recent modified by date.
+Inventory flow actions:
 
-If your sync flows were turned off for longer than 7 days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. Learn more: [Update environment variables](#update-environment-variables)).
+1. Gets all objects. For example, the flow calls [Get Apps as Admin](/connectors/powerappsforadmins/#get-apps-as-admin).
+1. Filters the returned list of objects to get objects where the modified date is greater than seven days old (configurable via **InventoryFilter_DaysToLookBack**).
+1. Checks each object in the filtered result to see if its current modified date is more recent than the inventory date.
+1. Updates these objects with the more recent _modified by_ date.
 
-If you want to fully update your entire inventory again, you can do that by changing the **Full inventory** environment variable:
+If your sync flows are turned off for longer than seven days, you can only get the inventory updates you missed by modifying the **InventoryFilter_DaysToLookBack** environment variable. For more information, see [Update environment variables](#update-environment-variables).
 
-1. Set the value of the **Full inventory** environment variable to **Yes**. Learn more: [Update environment variables](#update-environment-variables)).
+To fully update your entire inventory again, change the **Full inventory** environment variable:
+
+1. Set the value of the **Full inventory** environment variable to **Yes**. For more information, see [Update environment variables](#update-environment-variables).
 1. Run the **Admin | Sync Template v4 (Driver)** flow.
-1. Wait till the flow finishes running.
+1. Wait until the flow finishes running.
 1. Set the **Full inventory** environment variable to **No**.
 
 ## Update inventory for a selected app or flow
 
 ### Force inventory on Objects
 
-To reduce API calls, the inventory flows do not update all objects with each synchronization run. Instead, they only update objects modified since the last inventory.
+To reduce API calls, the inventory flows don't update all objects with each synchronization run. Instead, the flows only update objects modified since the last inventory. However, if you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag.
 
-If you want to force the inventory for an individual object, you can use the **Inventory Me** flag. All objects have this flag.
+Here's an example of how to set this flag using Cloud Flow objects.
 
-Here is an example of how to set this using Cloud Flow objects.
-
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Go to [Power Apps](https://make.powerapps.com) and select your CoE environment.
 1. Open the **Power Platform Admin View** app.
 1. Select **Flows**.
 1. Select the flow for which you want to force inventory from the view.
 1. Select **Settings**.
 1. Change the **Inventory Me** flag to **Yes**.
 
-Once this flag has been set to **Yes**, the next inventory run updates the object, even if it hasn't recently been modified. The flag is then set back to **No**.
+Once this flag is set to **Yes**, the next inventory run updates the object, even if it isn't recently modified. The flag is then set back to **No**.
 
 ### Force inventory on cloud flow action details
 
-We gather details about the flows actions in a long running flow called **Admin | Sync Template v3 (Flow Action Details)**.
+We gather details about the flow actions in a long running flow called **Admin | Sync Template v3 (Flow Action Details)**.
 
-To force this to run for your flow, you can use the **Inventory My FlowActionDetails** flag.
+To force inventory to run for your flow, you can use the **Inventory My FlowActionDetails** flag.
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Go to [Power Apps](https://make.powerapps.com) and select your CoE environment.
 1. Open the **Power Platform Admin View** app.
 1. Select **Flows**.
 1. Select the flow for which you want to force flow action detail inventory from the view.
@@ -158,47 +158,43 @@ The following limitations apply when updating environment variables:
 
 ### Update CoE Starter kit specific environment variables
 
-To update environment variables used in the kit, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center)
+To update environment variables used in the kit, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center):
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Go to [Power Apps](https://make.powerapps.com) and select your CoE environment.
 1. Open the **CoE Admin Command Center** app.
-1. Select **Environment Variables** screen
-1. Select an environment variable to update, click edit and update.
+1. Select the **Environment Variables** screen.
+1. Select an environment variable to update, then select **Edit** from the navigation bar.
+   :::image type="content" source="media/tips-command1.png" alt-text="Screenshot that shows where to select an environment variable and the location of the Edit button.":::
 
-    ![Update environment variable values in the CoE Admin Command Center app.](media/tips-command1.png "Update environment variable values in the CoE Admin Command Center app")
+### Ensure flows that use environment variables aren't cached
 
-### Ensure flows that use it are not cached
-
-At times, Power Automate caches old values for environment variables. If you do not see the expected behavior after changing an environment variable, it is recommended to restart the impacted flows after setting the environment variable.
+At times, Power Automate caches old values for environment variables. If you don't see the expected behavior after changing an environment variable, restart the impacted flows after setting the environment variable.
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution**, and change the filter to show **Environment variables**.
-1. Select a variable that you want to update, and show its dependencies
-
-    ![Reset flows that use an environment variable - find dependencies.](media/env-var-reset-1.png "Reset flows that use an environment variable - find dependencies")
-
-1. Look at the Used by find the Object type Process.
-    ![Reset flows that use an environment variable - see processes to restart.](media/env-var-reset-2.png "Reset flows that use an environment variable - see processes to restart")
-
-1. Go turn all these flows off and back on.
+1. Select a variable that you want to update and select its overflow menu to choose **Advanced** > **Show dependencies**.
+   :::image type="content" source="media/env-var-reset-1.png" alt-text="Screenshot showing the Advanced menu accessed through the environment variable overflow menu, allowing you to see dependencies.":::
+1. Look at the **Used by** tab and the **Object type** process.
+   :::image type="content" source="media/env-var-reset-2.png" alt-text="Screenshot that shows the Used by tab and Object type section of a dependency.":::
+1. Turn off all these flows and then turn them back on.
 
 ### Environment variables outside the kit
 
-If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, or you need to update environment variables outside the kit. You can do so directly in the environment. This is also the only way to update Azure Key Vault secret environment variables.
+If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app, you can update environment variables outside the kit. You can update environment variables directly in the environment. Updating through the environment is the only way to update Azure Key Vault secret environment variables.
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution**, and change the filter to show **Environment variables**.
 1. Select a variable that you want to update, and then configure its **Current Value**.
-1. If you are updating an Azure Key Vault secret environment variable, enter the following information:
-    - **Azure Subscription ID**: The Azure subscription ID associated with the key vault.
-    - **Resource Group Name**: The Azure resource group where the key vault that contains the secret is located.
-    - **Azure Key Vault Name**: The name of the key vault that contains the secret.
-    - **Secret Name**: The name of the secret located in Azure Key Vault.
+1. If you're updating an Azure Key Vault secret environment variable, enter the following information:
+   - **Azure Subscription ID**: The Azure subscription ID associated with the key vault.
+   - **Resource Group Name**: The Azure resource group where the key vault that contains the secret is located.
+   - **Azure Key Vault Name**: The name of the key vault that contains the secret.
+   - **Secret Name**: The name of the secret located in Azure Key Vault.
 
-  > [!TIP]
-  > The subscription ID, resource group name, and key vault name can be found on the Azure portal **Overview** page of the key vault. The secret name can be found on the key vault page in the Azure portal by selecting **Secrets** under **Settings**.
+> [!TIP]
+> The subscription ID, resource group name, and key vault name can be found on the Azure portal **Overview** page of the key vault. The secret name can be found on the key vault page in the Azure portal by selecting **Settings** > **Secrets**.
 
 ## Update connection references
 
@@ -206,110 +202,117 @@ If you aren't using the [CoE Admin Command Center](core-components.md#coe-admin-
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution**, and change the filter to show **Connection References**.
 1. Select a connection reference.
-1. Set the value by selecting an existing connection from the drop down or creating a new one.
+1. Set the value by selecting an existing connection from the dropdown or by creating a new connection.
 1. Select **Save** and confirm you want to save the changes.
 
-## Monitor and Customize emails
+## Monitor and customize emails
 
-All emails that are sent as part of the CoE Starter Kit are stored in the **Customized Emails** table. To customize the emails, you don't need to modify the flows or apps that send the emails. Instead, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app.
+All emails sent as part of the CoE Starter Kit are stored in the **Customized Emails** table. To customize the emails, you don't need to modify the flows or apps that send the emails. Instead, you can use the [CoE Admin Command Center](core-components.md#coe-admin-command-center) app.
 
 1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
 1. Open the **CoE Admin Command Center** app.
 1. Select **Customized Emails**.
 1. Select the email you want to customize, and then select **Edit**.
-1. By default, all emails are provided in English. You can also add localized versions of the email by selecting **Add language**.
-
-      ![Customize emails.](media/commandcenter-customize-email.png "Customize emails")
+1. By default, all emails are provided in English. You can add localized versions of the email by selecting **Add language**.
+   :::image type="content" source="media/commandcenter-customize-email.png" alt-text="Screenshot showing the Customized Emails page of the Power Apps CoE Admin Command Center.":::
 
 ## Share an app from a production environment
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
-1. On the app that you want to share, select **...** > **Share**.
-
-      ![Select the user or group to share the app with.](media/tips-share1.png "Select the user or group to share the app with")
-
+1. Go to [Power Apps](https://make.powerapps.com) and select your CoE environment.
+1. On the app that you want to share, select the overflow menu **...** > **Share**.
+   :::image type="content" source="media/tips-share1.png" alt-text="Screenshot that shows The Share Admin - Command Center pane, highlighting the location where you can assign a security role.":::
 1. Select the Dataverse security role. The CoE Starter Kit makes three security roles available:
     - **Power Platform Admin SR** for sharing an app with admins
     - **Power Platform Maker SR** for sharing an app with your makers
     - **Power Platform User SR** for sharing an app with users
 
-      ![Assign a security role to the user or group.](media/tips-share2.png "Assign a security role to the user or group")
-
+   :::image type="content" source="media/tips-share2.png" alt-text="Screenshot that shows the three Power Platform roles in a list in the Share Admin - Command Center. Each has a checkbox you can check or uncheck.":::
 1. Select **Share**.
 
 ## Get a Power Apps URL from a production environment
 
-1. Go to [Power Apps](https://make.powerapps.com), and then select your CoE environment.
+1. Go to [Power Apps](https://make.powerapps.com) and select your CoE environment.
 1. Select **Apps**.
-1. Select the app of which you need the URL from.
-1. Select **...** > **Details**.
+1. Select the app that has the URL you need.
+1. Select the overflow menu **...** > **Details**.
 1. Select the **Web link**.
+   :::image type="content" source="media/tips-link1.png" alt-text="Screenshot that highlights the Web link URL on the Details tab of the Admin - Command Center.":::
 
-      ![Get the web link for a canvas app.](media/tips-link1.png "Get the web link for a canvas app")
+## Handling backend throttling during inventory runs
 
-## Deal with backend throttling during inventory runs
+Some users might encounter throttling by the product backends, such as updating records in Dataverse, during their inventory process, resulting in 429 errors. To address this issue, there's an environment variable that adds a delay at the beginning of each individual inventory action. This delay prevents actions from running concurrently. While this approach mitigates concurrency issues, it might prolong the inventory process.
 
-Some users may encounter throttling by the product backends (such as updating records in Dataverse) during their inventory process, resulting in 429 errors. To address this issue, we have introduced an environment variable that users can utilize. This variable adds a delay at the beginning of each individual inventory action, preventing them from running concurrently. While this approach mitigates concurrency issues, it may prolong the inventory process.
+To use this environment variable, change `DelayObjectInventory` to **Yes**.
 
-To use this update value of the DelayObjectInventory environment variable to Yes
+For more information, see [How to update environment variables](#update-environment-variables).
 
-See [How to update environment variables](#update-environment-variables) for how to update environment variables.
-
-## Cross Tenant Connection Identities
+## Cross tenant connection identities
 
 In the Power Platform Admin View app, you can see where we highlight cross tenant connection identities. How do we configure what is considered cross tenant?
-    ![Find cross tenant connections.](media/coe-cross-tenant-connectoin-reference.png "Find cross tenant connections")
+
+:::image type="content" source="media/coe-cross-tenant-connection-reference.png" alt-text="Screenshot that shows Cross Tenant Connection References page from the Connection Identities navigation menu in the Power Platform Admin View.":::
 
 ### How to configure what is a local connection identity
 
-By default, only the host domain of the identity running the inventory flows will be considered a local identity. To configure this you can use  the **Host Domains** environment variable.
-Enter any hosts you which to add to this environment variable as a comma separated string.
-    ![Configure cross tenant connections.](media/coe-cross-tenant-connectoin-reference2.png "Configure cross tenant connections")
+By default, only the host domain of the identity running the inventory flows are considered to be a _local_ identity. To configure this identity, you can use the **Host Domains** environment variable.
 
-See [How to update environment variables](#update-environment-variables) for how to update environment variables.
+Enter any hosts you wish to add to this environment variable as a comma-separated string.
+
+:::image type="content" source="media/coe-cross-tenant-connection-reference2.png" alt-text="Screenshot that shows the Configure Environment Variable pane from a selected environment variable name.":::
+
+For more information, see [How to update environment variables](#update-environment-variables).
 
 ### How to update data to respect configured local tenants
 
-Note that changing the Host Domains environment variable does not retroactively update the old data in the tables. As we anticipate this setting change to be infrequent, we do not regularly compare it to avoid additional API hits. Therefore, you need to update this manually.
+[!TIP]
+> Changing the Host Domains environment variable doesn't retroactively update old data in tables. Since this setting change is infrequent, we don't regularly compare it to avoid additional API hits. Therefore, you need to update this environment variable manually.
 
-There are multiple methods to accomplish this, including custom flows, the Excel add-in, or through plugins.
-The underlying logic remains consistent, allowing you to choose the method that best suits your needs.
-We have demonstrated how to achieve this using the Excel Add-In, which is ideal due to its speed and minimal API impact.
+You can update manually with custom flows, the Excel add-in, or through plugins. The underlying logic remains consistent, allowing you to choose the method that best suits your needs.
 
-1. Browse to the **Connection Reference Identity** table and **Edit data in Excel**
-    ![Update host data step 1.](media/coe-cross-tenant-connectoin-reference3.png "Update host data step 1")
+For this example, we use the Excel Add-In, which is ideal due to its speed and minimal API impact.
 
-1. Click Enable Editing, Accept and Continue if prompted and sign in as your CoE Admin identity
-    ![Update host data step 2.](media/coe-cross-tenant-connectoin-reference4.png "Update host data step 2")
-    ![Update host data step 3.](media/coe-cross-tenant-connectoin-reference5.png "Update host data step 3")
+1. Browse to the **Connection Reference Identity** table and **Edit data in Excel**.
+   :::image type="content" source="media/coe-cross-tenant-connection-reference3.png" alt-text="Screenshot of where to choose the Edit data in Excel option in the Edit menu bar.":::
+1. Select **Enable Editing**
+   :::image type="content" source="media/coe-cross-tenant-connection-reference4.png" alt-text="Screenshot that shows where to select the Enable Editing button.":::
+1. Select **Accept and Continue**, if prompted, then sign in as your CoE Admin identity.
+   :::image type="content" source="media/coe-cross-tenant-connection-reference5.png" alt-text="Screenshot that shows where to select the Accept and Continue button.":::
 
-1. Filter the **accountName** field by the domain you have added to the **Host Domains** environment variable
-    ![Update host data step 4.](media/coe-cross-tenant-connectoin-reference6.png "Update host data step 4")
+1. Filter the **accountName** field by the domain you added to the **Host Domains** environment variable.
+   :::image type="content" source="media/coe-cross-tenant-connection-reference6.png" alt-text="Screenshot showing filtered results by domain name.":::
 
-1. Set the **NoneOrCrossTenantIdentity** to false (No)
-    ![Update host data step 5.](media/coe-cross-tenant-connectoin-reference7.png "Update host data step 5")
+1. Set the **NoneOrCrossTenantIdentity** to **No**.
+   :::image type="content" source="media/coe-cross-tenant-connection-reference7.png" alt-text="Screenshot showing where to change the NoneOrCrossTenantIdentity field.":::
 
 1. Remove the filters and publish.
-    ![Update host data step 6.](media/coe-cross-tenant-connectoin-reference8.png "Update host data step 6")
+   :::image type="content" source="media/coe-cross-tenant-connection-reference8.png" alt-text="Screenshot that highlights the Publish button.":::
 
 ## How to activate Business Process Flows?
 
-Occasionally, users encounter disabled Business Process Flows (BPFs) within the kit due to installation issues. In such cases, to utilize features relying on these BPFs, you need to activate them manually.
+Occasionally, users encounter disabled Business Process Flows (BPFs) within the kit due to installation issues.
 
-1. Browse to the solution with the BPFs and click to view Processes
-1. Find BPFs that are turned off and click their name to open
-    ![Turn on BPF step 1.](media/coe-bpf-turnon1.png "Turn on BPF step 1")
+To use features relying on these BPFs, you can activate them manually:
 
-1. Click Activate to turn on the BPF
-    ![Turn on BPF step 2.](media/coe-bpf-turnon2.png "Turn on BPF step 2")
+1. Browse to the solution with the BPFs and select to view **Processes**.
+1. Find BPFs that are turned off and select a name to open.
+   :::image type="content" source="media/coe-bpf-turnon1.png" alt-text="Screenshot that shows where to find the status of a process.":::
+
+1. Select **Activate** to turn on the BPF.
+   :::image type="content" source="media/coe-bpf-turnon2.png" alt-text="Screenshot that shows location of the Activate button on the navigation bar of a flow view." lightbox="media/coe-bpf-turnon2.png":::
 
 ## Which license should I assign to the user that's running the CoE Starter Kit flows?
 
-The prerequisite for installing the CoE Starter Kit is that the user installing it must have a Power Automate Per User license, or the flows must be covered with a Per Flow license. Often, a combination of these licenses is required to run the CoE Starter Kit successfully. The specific combination depends on factors such as the number of resources (apps, flows, environments) in your tenant, the number of makers you have, and how frequently new resources are created and modified. Different Power Automate license types have different API limits and enforcements. If your license type is not sufficient, the flow may be throttled or run for an extended period. Please refer to the following guide to determine which license to select.
+Before installing the CoE Starter Kit, the user must have a Power Automate Per User license, or the flows must be covered with a Per Flow license.
+
+Often, a combination of these licenses is required to run the CoE Starter Kit successfully. The specific combination depends on factors such as the number of resources (apps, flows, environments) in your tenant, your number of makers, and how frequently new resources are created and modified.
+
+Different Power Automate license types have different API limits and enforcements. If your license type isn't sufficient, the flow might be throttled or run for an extended period.
+
+This guide helps you determine which license to select:
 
   1. Understand the [Power Automate request limits](/power-platform/admin/api-request-limits-allocations).
-  1. Start by assigning a Power Automate Per user license and turn on all the required flows. Monitor the flows with **CLEANUP**, **Sync Template (Flows)** and **Sync Template (Apps)** in the name - these often consume a high number of API requests. You can use [**action analytics**](https://powerautomate.microsoft.com/blog/introduction-action-usage-analytics-in-power-automate/) to monitor the API requests of these flows.
-  1. If the flow runs too many actions, [change the flow owner](/power-automate/change-cloud-flow-owner) to a different account with a Power Automate Per User license. This will load balance the API requests.
-  1. If the flow continues to execute too many actions, consider assigning a [Per Flow](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to it. This action will allocate capacity and API requests specifically for the flow.
+  1. Start by assigning a Power Automate Per user license and turn on all required flows. Monitor the flows with **CLEANUP**, **Sync Template (Flows)**, and **Sync Template (Apps)** in the name. The options might consume a high number of API requests. You can use [action analytics](https://powerautomate.microsoft.com/blog/introduction-action-usage-analytics-in-power-automate/) to monitor the API requests of these flows.
+  1. If the flow runs too many actions, [change the flow owner](/power-automate/change-cloud-flow-owner) to a different account with a Power Automate Per User license. This load balances the API requests.
+  1. If the flow continues to execute too many actions, consider assigning a [Per Flow](/power-platform/admin/power-automate-licensing/types#standalone-plans) plan to it. This action allocates capacity and API requests specifically for the flow.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

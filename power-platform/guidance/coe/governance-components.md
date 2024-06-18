@@ -36,9 +36,9 @@ The Governance components solution contains assets relevant to admins and makers
 | Admin \| Compliance request complete custom connector v3 | Automated |  Triggered if the [Custom Connector Approval BPF](#custom-connector-approval-bpf) is marked complete. |
 | Admin \| Compliance request complete flow v3 | Automated |  Triggered if the [Flow Approval BPF](#flow-approval-bpf) is marked complete. |
 | Admin \| Compliance Teams Environment BPF kickoff v3 | Automated |  Triggered if a business justification is submitted for a Microsoft Teams environment. |
-| [Admin \| Compliance Detail request v3](#admin--compliance-detail-request-v3) | Scheduled | Facilitate the process described in [App auditing process](example-processes.md). |
+| [Admin \| Compliance Detail request v3](#admin---compliance-detail-request-v3) | Scheduled | Facilitate the process described in [App auditing process](example-processes.md). |
 
-#### Admin: Compliance Detail request v3
+#### Admin - Compliance Detail request v3
 
 This flow works together with other apps and flows in the Center of Excellence (CoE) Starter Kit to facilitate the process described in [App auditing process](example-processes.md). Compliance detail request emails are sent for apps and chatbots.
 
