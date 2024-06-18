@@ -159,7 +159,7 @@ If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsof
 
 ```PowerShell
 $settings = Get-TenantSettings 
-$settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment = $true
+$settings.powerPlatform.environments.disablePreferredDataLocationForTeamsEnvironment = $true
 Set-TenantSettings -RequestBody $settings
 ```
 Updating this value updates the default location that is populated in the Power Platform admin center create environment experience.
