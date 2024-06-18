@@ -4,7 +4,7 @@ description: Learn how to optimize software development and quality by following
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 06/13/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -108,7 +108,7 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 - [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
 - [Build CI/CD with Azure for Microsoft Power Platform](/azure/architecture/solution-ideas/articles/azure-devops-continuous-integration-for-power-platform)
 - [Power Platform environments](/power-platform/admin/environments-overview)
-- [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+- [Establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 - [Co-development governance](/power-apps/guidance/co-develop/governance)
 - [Use scenarios to implement healthy ALM with Microsoft Power Apps](/power-platform/alm/implement-healthy-alm)
 - [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)

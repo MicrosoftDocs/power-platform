@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 10/31/2021
+ms.date: 06/13/2024
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
@@ -70,11 +70,11 @@ The [Center of Excellence (CoE) Starter Kit](../coe/starter-kit.md) is deployed 
 :::row:::
    :::column span="":::
       ![Develop an environment strategy](media/adoption-7.png "Develop an environment strategy")
-      Develop an [environment strategy](environment-strategy.md) and configure layers of security in a way that supports productive development in your organization, while securing and organizing resources.
+      Develop an [environment strategy](../white-papers/environment-strategy.md) and configure layers of security in a way that supports productive development in your organization, while securing and organizing resources.
    :::column-end:::
    :::column span="":::
       ![Establish tiers of application support](media/adoption-8.png "Establish tiers of application support")
-     Define [tiers of application support](environment-strategy.md#factors-that-influence-provisioning) – taking into account the level of complexity, how critical the app is, and users impacted by the application.
+     Define [tiers of application support](/power-platform/guidance/white-papers/environment-strategy#new-environments) – taking into account the level of complexity, how critical the app is, and users impacted by the application.
    :::column-end:::
 :::column span="":::
    ![Share your success stories](media/adoption-9.png "Share your success stories")

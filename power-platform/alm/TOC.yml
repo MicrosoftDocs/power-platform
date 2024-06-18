@@ -150,6 +150,8 @@
               href: configure-and-deploy-tools.md
             - name: Package Deployer tool
               href: package-deployer-tool.md
+            - name: ImportConfig reference
+              href: importconfig-reference.md
             - name: Solution Packager tool
               href: solution-packager-tool.md
             - name: Source control with solution files
