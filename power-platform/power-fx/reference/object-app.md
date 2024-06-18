@@ -117,7 +117,7 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), you need to set up the **Instrumentation Key** for your canvas app. 
 
-1. Open your app for [editing](/power-apps/maker/canvas-apps/edit-app) in Power Apps Stuido.
+1. Open your app for [editing](/power-apps/maker/canvas-apps/edit-app) in Power Apps Studio.
 2. Select the **App** object in the left navigation tree view.
 3. Enter the **Instrumentation Key** in the properties pane.
 

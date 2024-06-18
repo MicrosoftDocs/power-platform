@@ -196,7 +196,7 @@ The maker is always routed to their own existing personal developer environment,
 
 ### What happens if the Power Platform admin changes the Developer environment assignments setting from "Everyone" to "Only specific admins" while Environment routing is **On**? 
 
-The admin recieves the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910." The admin won't be able to change the Developer environment assignments setting unless they turn environment routing off. 
+The admin receives the following error "Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: 1234567910." The admin won't be able to change the Developer environment assignments setting unless they turn environment routing off. 
 
 ### Where are makers routed to if they don’t have an existing developer environment?
 

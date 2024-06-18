@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 03/27/2024
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,7 @@ The SAP Vendor Management app is part of the SAP Procurement solution for Micros
 
  Watch the demo to see how you can manage your SAP vendor data using the SAP Vendor Management app.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18F9g]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18F9g]
 
 ## View vendor information
 

@@ -75,7 +75,7 @@ You can find personal data from Dataverse users within the following resources:
 |Resource | Purpose | Website access | Programmatic access  |
 | --- | --- | --- | ---  |
 | Table row | Known as the system User table, it stores a user's personal data. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
-| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at an table level. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
+| Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at a table level. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
 
 #### User
 User personal data is stored in the Microsoft Entra and is automatically synced to all environments with a Dataverse database. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
@@ -183,7 +183,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 12. Select **Next**, and then select **Submit**.
 
 #### Permanently delete user
-You can either remove user's personal data or permanently delete the user record from the Datavese user table. More information: [Permanently delete users in Power Platform](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). 
+You can either remove user's personal data or permanently delete the user record from the Dataverse user table. More information: [Permanently delete users in Power Platform](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). 
 
 When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by and in the audit logs will show as **No Name**.
 
@@ -267,7 +267,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 Dataverse System Administrators can delete an individual's personal data from records where that data is stored.  The Dataverse System Administrator can choose to either delete the record where the personal data is stored, or remove the contents of the personal data from the record.  
 
 > [!NOTE]
-> Dataverse administrators can customize an environment to prevent a record from being deleted from an table. If configured in this way, you'll have to remove the contents of the personal data from the record rather than delete the record itself.
+> Dataverse administrators can customize an environment to prevent a record from being deleted from a table. If configured in this way, you'll have to remove the contents of the personal data from the record rather than delete the record itself.
 
 From the Dataverse search results, to the following:
 
@@ -284,7 +284,7 @@ You may be storing personal data from individuals (such as your own customers) w
 
 Dataverse System Administrators are responsible for maintaining an inventory of where personal data is being stored within various tables for each individual so that they can locate that data in response to any DSR requests.  
 
-Personal data can then be exported, rectified, or deleted in an table using the in-product functionality.  
+Personal data can then be exported, rectified, or deleted in a table using the in-product functionality.  
 
 ### Discover
 When Dataverse System Administrators receives a DSR request from an individual, they must identify which environments/environments with a Dataverse database contain personal data from that individual. Personal data is typically stored in key tables (for example, Account, Contact, Lead, Opportunity, etc.), but it's your responsibility to develop policies and procedures for maintaining an inventory of where you store each individual's personal data so you're prepared to respond to DSR requests.
