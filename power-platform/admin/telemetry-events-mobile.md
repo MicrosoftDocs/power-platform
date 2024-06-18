@@ -4,7 +4,7 @@ description: Learn more about telemetry events for mobile app synchronization an
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/31/2022
+ms.date: 06/18/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -15,10 +15,9 @@ search.audienceType:
 
 # Telemetry events for mobile app synchronization and actions
 
-Power Apps Mobile application data related to Offline Sync events is now available for Model Driven Applications and Canvas applications. This data can be used to evaluate health and performance of Offline sync for your organization. 
+Power Apps mobile application data related to offline syncronization events is now available for model-driven and canvas apps. This data can be used to evaluate the health and performance of offline sync events for your organization. 
 
-This data goes into the **Power Apps (Peview)** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accessing a mobile application Power Apps Mobile application which is enabled for Offline mode.  Additional data related to application failure events in Model Driven Applications is available via the **Power Apps (Peview)** > **UCI**
-
+This data goes into the **Power Apps (Peview)** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode.  Additional data, related to failure events in model-driven apps is available through the **Power Apps (Peview)** > **UCI**.
 
 ## Mobile app synchronization and action event definitions
 
@@ -27,7 +26,7 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 - **type**: Source table of the event
 - **name**: Name of the scenario tracked by the event
 - **success**: Result of the scenario tracked by the event (values SUCCESS or FAILURE)
-- **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive
+- **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive.
 - **FailureType**: Defines type of sync failure
 - **ErrorCode**: Error Code generated upon sync failure. See [error code mapping table](#Error_Code_mapping).
 - **operation_Id**: Unique identifier for the session
@@ -45,28 +44,29 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
         - **ProfileId**: ID of the offline profile configured for the app and user
         - **recordCount**: Number of records downloaded
         - **responseSize**: Response size of an HTTP request
-    - **appInfo_Version**: Version of the native app as seen in the app store.
+    - **appInfo_Version**: Version of the native app, as seen in the app store.
     - **activeDuration**: Scenario duration in milliseconds including only time while the app is active.
     - **offlineSyncFcbs**: Features (de)activated for the offline sync
     - **deviceInfo_Id**: Unique identifier of the device
-    - **deviceInfo_model**: Device Model (i.e. Iphone 13)
-    - **deviceInfo_make**: Device Make (i.e. Apple)
-    - **deviceInfo_OsName**: Device OS i.e. (Android)
-    - **deviceInfo_OsVersion**: OS version i.e. (Android 13)
+    - **deviceInfo_model**: Device model (that is, Iphone 13)
+    - **deviceInfo_make**: Device Make (that is, Apple)
+    - **deviceInfo_OsName**: Device OS (that is, Android)
+    - **deviceInfo_OsVersion**: OS version (Athat is, Android 13)
     - **"eventName"**: Step of the scenario tracked by the event (ScenarioEnd, ScenarioStart, ScenarioStory, Trace, AggregateTrace, AggregatedTrace, trace, ScenarioDuplicateEnd)
     - **logLevel**: The severity or reporting level of the event (valid values are info, error, warning, error, verbose)
     - **scenarioGuid**: Unique identifier for the scenario tracked by the event
-    - **dataSyncMode**: What type of Offline sync the user has experienced
+    - **dataSyncMode**: What type of offline sync the user has experienced
         - DELTA_SYNC
         - GRID_SYNC
         - FIRST_SYNC
         - FORCED_SYNC
         - SINGLE_RECORD_SYNC
     - **appFlavor**: Native app installed on the devices (valid values are FieldService, PowerApps)
-    - **loc_country**: Telemetry Device origin
+    - **loc_country**: Telemetry device origin
 
 
-## UCI Failure Events
+## UCI failure events
+
 - **timestamp [UTC]**: When the event happened
 - **problemId**: "uci_trace" or "uciMonitorFailure" (where the data came from)
 - **type**: "uci_trace" or "uciMonitorFailure" (where the data came from)
@@ -75,9 +75,9 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 - **itemType**: "exception"
 - **CustomDimensions**: 
   - **eventContext**: Additional details related to the error
-  - **ServerConnectivityState**: Is user in offlineMode? (Offline/Online)
+  - **ServerConnectivityState**: Is user in offline mode? (Offline/Online)
   - **NetworkConnectivityState**: Does user have internet connection (note user can be in offline but have an internet connection)
-  - **IsOfflineByDefaultApp**: When this is false it means "Work in Offline Mode" feature is on. When true it means OfflineFirst is enabled
+  - **IsOfflineByDefaultApp**: When this is false it means "Work in offline mode" feature is on. When true it means offline-first is turned on.
   - **callStack**: Where the programming code where the error occurred
   - **hostSubType**: "PowerApps-Player-iOS-fieldservice"
   - **hostType**: "MobileApplication"
@@ -86,14 +86,14 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 - **SessionId**: SessionID of error
 - **UserId**: Dynamics UserID
 - **User_authenticatedID**: Dynamics UserID
-- **Application_version**: App version e.g., 9.2.24045.00212
-- **Client_Type**: OS version (i.e iOS/Android)
+- **Application_version**: App version, for example: 9.2.24045.00212
+- **Client_Type**: Operating system version (that is, iOS or Android).
 
 
-# Example Scenarios
+## Example scenarios
 
 
-## Offline Sync Failures by Error Code 
+### Offline Sync Failures by Error Code 
 This query allows you see what types of failures frontline workers are encountering when a sync failes. Some failures are excepted, such as if the mobile application is closed while syncing, or if network disconnects while syncing preventing the sync from completion. Defintion of failure codes is shown in [error code mapping table](#Error_Code_mapping).
 
 ```kusto
@@ -109,7 +109,7 @@ dependencies
 | render piechart with (title="Sync Failures Categorized by FailureType and ErrorCode")
 ```
 
-## Tables Synced by Record Count
+### Tables Synced by Record Count
 This query allows you to evaluate which tables are contributing most records to a sync. Using this data you can try to further [optimize your offline profile](/power-apps/mobile/mobile-offline-guidelines#dont-make-your-users-download-too-much-data) to reduce records or [data within each table](power-apps/mobile/mobile-offline-guidelines#optimize-dowloaded-data-with-offline-table-column-selection-preview). 
 
 ```kusto
@@ -125,7 +125,7 @@ dependencies
 | render piechart // Visualize the results as a pie chart
 ```
 
-## Users by Device Type and App Version
+### Users by Device Type and App Version
 This query will give more information on users in your organization accessing the mobile application by their device model. 
 
 ```kusto
@@ -143,7 +143,7 @@ dependencies
 ```
 
 
-# Error Code mapping
+## Error code mapping
 
 | ErrorCode	| FailureType |	Definition|
 | ------ | ------ | ------ |
