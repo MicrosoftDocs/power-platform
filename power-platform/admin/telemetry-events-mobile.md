@@ -93,28 +93,30 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 # Example Scenarios
 
 
-## Offline Sync Failure Rate by Sync Type \\ THIS QUERY NEEDS TO BE REVISED
-This query allows you see what types of failures frontline workers are encountering when a sync failes. Some failures are excepted, such as if the application users closes the app while syncing, or if network disconnects while syncing preventing the sync from completion. Defintion of failure codes is shown in the [error code mapping table](#Error_Code_mapping) below.
+## Offline Sync Failures by Error Code 
+This query allows you see what types of failures frontline workers are encountering when a sync failes. Some failures are excepted, such as if the mobile application is closed while syncing, or if network disconnects while syncing preventing the sync from completion. Defintion of failure codes is shown in [error code mapping table](#Error_Code_mapping).
 
 ```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
 | where cd.appFlavor == "FieldService"
 | where type  == "modelAppEvent"
-| where success == false
-| extend dataSyncMode = tostring(parse_json(customDimensions).dataSyncMode)
-| summarize failure_count = count() by dataSyncMode
-| order by failure_count desc
+| where isnotempty(cd.FailureType)
+| extend FailureType = tostring(cd.FailureType), 
+         ErrorCode = tostring(cd.ErrorCode)
+| summarize Count = count() by FailureType, ErrorCode
+| project FailureType, ErrorCode, Count
+| render piechart with (title="Sync Failures Categorized by FailureType and ErrorCode")
 ```
 
 ## Tables Synced by Record Count
-This query allows you to evaluate which tables are contributing most records to a sync. 
+This query allows you to evaluate which tables are contributing most records to a sync. Using this data you can try to further [optimize your offline profile](/power-apps/mobile/mobile-offline-guidelines#dont-make-your-users-download-too-much-data) to reduce records or [data within each table](power-apps/mobile/mobile-offline-guidelines#optimize-dowloaded-data-with-offline-table-column-selection-preview). 
 
 ```kusto
 dependencies
 | extend cd = parse_json(customDimensions)
 | extend eventContext = parse_json(tostring(cd.eventContext))
-//| where eventContext.IsFirstSync == "true" // 
+//| where eventContext.IsFirstSync == "true" // Filter sync type
 | extend dataSyncStatus = parse_json(tostring(eventContext.DataSyncStatus))
 | mv-expand entities = dataSyncStatus.entities to typeof(dynamic) // Expand the entities list into rows
 | project TableName = entities.entityName, SyncedRecordCount = entities.totalSyncedRecordCount
