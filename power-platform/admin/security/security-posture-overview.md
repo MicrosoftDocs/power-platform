@@ -103,6 +103,9 @@ There are several security features that help secure your tenant, including:
 
 - **Data policies**: This feature is applicable at both tenant-level and environment-level to both Managed Environments and non-Managed Environments. Setting up data policies at the environment or tenant-level  acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more: [Data policies](../wp-data-loss-prevention.md)
 
+    > [!Note]
+    > As a best practice, we recommend implementing tenant-level policies for effective data protection. While it's possible to implement environment-level policies, note that the overall security status is only calculated for policies set at the tenant level.
+
 - **Environment security group**: This feature is applicable to both Managed Environments and non-Managed Environments. Setting up security groups helps control which licensed users can access environments. Learn more: [Control user access to environments: security groups and licenses](../control-user-access.md)
 
 - **Azure Virtual Network:** This feature is applicable to only Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your 
