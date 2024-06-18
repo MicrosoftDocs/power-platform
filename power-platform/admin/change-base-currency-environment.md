@@ -17,7 +17,7 @@ When you create an environment that includes a database in Power Platform, you m
 
 1. Make a backup of the environment's database before starting base currency conversion. Learn more: [Back up and restore environments](backup-restore-environments.md)
 
-1. Go to [AppSource](https://appsource.microsoft.com/), enter *base currency*, and then select **Get it now** next to **Base Currency Conversion**. Follow the steps to install the app into the Power Platform environment you want.
+1. Go to [AppSource](https://appsource.microsoft.com/), enter *base currency* in the search box, and then select **Get it now** next to **Base Currency Conversion**. Follow the steps to install the app into the Power Platform environment you want.
 
 1. After the Base Currency Conversion solution installation completes, go to Power Apps (make.powerapps.com), select **Apps** on the left navigation pane, and then **Play** the **Base Currency Conversion** app.
 
