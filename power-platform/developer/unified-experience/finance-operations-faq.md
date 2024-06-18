@@ -1,6 +1,6 @@
 ---
 title: "Unified developer - Frequently asked questions"
-description: "FAQs for the Power Platform unified developer experience".
+description: "FAQs for the Power Platform unified developer experience."
 author: pvillads
 ms.date: 06/06/2024
 ms.topic: faq
