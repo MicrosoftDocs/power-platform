@@ -82,7 +82,7 @@ The default environment is limited to 1 TB of storage capacity. To store more da
 
 - 3 GB Dataverse Database Capacity
 - 3 GB Dataverse File Capacity
-- 1-GB Dataverse Log Capacity
+- 1 GB Dataverse Log Capacity
 
 The capacity check conducted prior to creating new environments exclude the default environment's included storage capacity when calculating whether you have  sufficient capacity to create a new environment.
 
@@ -155,7 +155,7 @@ preferredEnvironmentLocation = "unitedstates"
 }
 Set-TenantSettings -RequestBody $requestBody
 ```
-If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide) you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
+If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide), you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
 
 ```PowerShell
 $settings = Get-TenantSettings 
