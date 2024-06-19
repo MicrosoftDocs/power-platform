@@ -19,7 +19,7 @@ search.audienceType:
 
 As users interact with copilot while supporting a customer they will interact with corpus of data sources ingested plus responses from plugins calling external systems for data. As a user gets a response from Copilot the user can give a feedback signal of whether the response was good to bad. 
 
-The msdyn_copilotinteraction table contains metadata on all copilot interactions, including the request response for various Dynamics 365 Custome Service copilot response (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions
+The **msdyn_copilotinteraction** table contains metadata on all copilot interactions, including the request response for various Dynamics 365 Custome Service copilot response (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions
 
 ## Causes of growth
 
@@ -32,11 +32,11 @@ When you enable the Copilot features, agents can do the following actions in the
 - Draft a chat response
 - Summarize a case and conversation
 
-As more agents interact with Copilot in Customer Service and provide feedback signals the larger the msdyn_copilotinteraction table will grow. 
+As more agents interact with Copilot in Customer Service and provide feedback signals the larger the **msdyn_copilotinteraction** table will grow. 
 
 ## Table cleanup
 
- Admin's can set data retention policy to purge tables, [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
+ Admin's can set data retention policy to purge the **msdyn_copilotinteraction** table, [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
 ## Appendix
 
