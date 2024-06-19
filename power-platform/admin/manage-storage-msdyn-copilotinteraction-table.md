@@ -17,9 +17,11 @@ search.audienceType:
 
 # msdyn_copilotinteraction table
 
-As users interact with copilot while supporting a customer they will interact with corpus of data sources ingested plus responses from plugins calling external systems for data. As a user gets a response from Copilot the user can give a feedback signal of whether the response was good to bad. 
+As users interact with Copilot in Customer Service while supporting a customer, they will interact with corpus of data sources ingested plus responses from plugins calling external systems for data.
 
-The **msdyn_copilotinteraction** table contains metadata on all copilot interactions, including the request response for various Dynamics 365 Custome Service copilot response (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions
+As a user gets a response from Copilot the user can give a feedback signal of whether the response was good or bad.
+
+The **msdyn_copilotinteraction** table contains metadata on all copilot interactions, including the request response for various Copilot in Customer Service responses (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions
 
 ## Causes of growth
 
