@@ -27,10 +27,12 @@ Copilot in Customer Service provides real-time AI assistance that helps agents a
 
 When you enable the Copilot features, agents can do the following actions in the Customer Service workspace app:
 
-Respond to questions
-Compose an email
-Draft a chat response
-Summarize a case and conversation
+- Respond to questions
+- Compose an email
+- Draft a chat response
+- Summarize a case and conversation
+
+As more agents interact with Copilot in Customer Service and provide feedback signals the larger the msdyn_copilotinteraction table will grow. 
 
 ## Table cleanup
 
