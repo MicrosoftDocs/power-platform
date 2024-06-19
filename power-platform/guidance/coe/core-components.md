@@ -373,7 +373,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Dataverse. End-users must have a **Per User** license and the app must be assigned a **Per App** license or the environment must be covered by pay-as-you-go.
 
-:::image type="content" source="media\dev-resources-admin-details.png" alt-text="Screenshot that shows the Environment Creation Requests page.":::
+:::image type="content" source="media\dev-resources-admin-details.png" alt-text="Screenshot that shows the Environment Creation Requests details page.":::
 
 #### CoE Maker Command Center
 
