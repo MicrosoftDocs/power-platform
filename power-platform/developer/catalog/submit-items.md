@@ -1,5 +1,5 @@
 ---
-title: "Using the catalog with Power Platform CLI"
+title: "Work with the catalog in Power Platform using code"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: derekkwanpm
 ms.author: derekkwan
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Using the catalog with Power Platform CLI (preview)
+# Work with the catalog in Power Platform using code (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 

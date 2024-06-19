@@ -213,7 +213,7 @@ Set the [OfferDetails](#offerdetails) `businessCategories` property to one or mo
 |`526430017`|Geolocation|
 |`526430018`|Human Resources|
 
-Currently, new business categories can't be configured.
+Currently, new business categories can't be configured, but they can be retrieved from the Catalog Business Category (mspcat_catalogbusinesscategory) global choice.
 
 ### CatalogFileAsset
 
