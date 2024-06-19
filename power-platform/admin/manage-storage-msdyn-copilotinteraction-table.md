@@ -36,7 +36,7 @@ As more agents interact with Copilot in Customer Service and provide feedback si
 
 ## Table cleanup
 
- Admin's can set data retention policy to purge tables, [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview)
+ Admin's can set data retention policy to purge tables, [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
 ## Appendix
 
