@@ -82,7 +82,7 @@ For Dynamics 365 Sales connection:
 Current limitations in data integration:
 - We currently support contacts, opportunities, leads, accounts, sales orders, and cases.
 - The data is fetched at the time of connection. 
-- By default we include the most recent 2000 rows (most recentently created) and a maximum of 100 columns for each table.
+- By default we include the most recent 2000 rows (most recently created) and a maximum of 100 columns for each table.
 - You can establish one connection in a workspace. 
 - You can upload files for additional context in addition to connecting to a data source.
 
