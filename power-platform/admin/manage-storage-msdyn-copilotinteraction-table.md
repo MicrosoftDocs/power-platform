@@ -32,7 +32,7 @@ When you enable the Copilot features, agents can do the following actions in the
 - Draft a chat response
 - Summarize a case and conversation
 
-As more agents interact with Copilot in Customer Service and provide feedback signals the larger the **msdyn_copilotinteraction** table will grow. 
+As more agents interact with Copilot in Customer Service and provide feedback signals the larger the **msdyn_copilotinteraction** table will grow in size. 
 
 ## Table cleanup
 
