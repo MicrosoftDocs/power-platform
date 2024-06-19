@@ -14,7 +14,7 @@ search.audienceType:
 
 # Tutorial: Perform a transaction-less copy between environments 
 
-Environment copy for finance and operations apps has traditionally always been a full copy, meaning it includes the entire database worth of configuration, master data, and transactions.  While helpful for debugging specific situations, this has a side effect of significantly increasing the storage consumption for both finance and operations apps as well as Dataverse.  
+Environment copy for finance and operations apps has traditionally been a full copy, meaning it includes the entire database worth of configuration, master data, and transactions.  While helpful for debugging specific situations, this has a side effect of significantly increasing the storage consumption for both finance and operations apps and Dataverse.  
 
 :::image type="content" source="media/transactionless-copy-process.png" alt-text="Diagram of the copy process.":::
 
@@ -23,7 +23,7 @@ In this tutorial, learn how to:
 - Prepare the source environment
 - Copy the environment to the target
 
-As an example of this scenario, assume that a customer would like to reduce their storage consumption on their sandbox and unified developer enviornments, where there is no need for having 100% of the transactions from production. To achieve this, the customer copies their production environment directly to their unified, developer environment and specifies that transactions are to be skipped.
+As an example of this scenario, assume that a customer would like to reduce their storage consumption on their sandbox and unified developer environments, where there's no need for having 100% of the transactions from production. To achieve this, the customer copies their production environment directly to their unified, developer environment and specifies that transactions are to be skipped.
 
 ## Before you begin
 
@@ -47,7 +47,7 @@ By using metadata present on the X++ tables, all transaction tables and their re
 - Staging (12)
 
 ## Prerequisites
-The source environment must have had a servicing action performed on it after April 3, 2024, such as a DBSync, software deployable package install (through Lifecycle Services, if applicable) or a unified package deployed through Power Platform CLI, if the source enviornment is managed by Power Platform admin center.
+The source environment must have had a servicing action performed on it after April 3, 2024, such as a DBSync, software deployable package install (through Lifecycle Services, if applicable) or a unified package deployed through Power Platform CLI, if the source environment is managed by Power Platform admin center.
 
 You also need the details of the source and target environments, including the **Environment ID** for each, in the subsequent step.
 
