@@ -117,7 +117,7 @@ There are several security features that help secure your tenant, including:
 - **Auditing:** This feature is applicable to only Managed Environments and non-Managed Environments with Dataverse. Auditing log changes are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. Learn more: [Manage Dataverse auditing](../manage-dataverse-auditing.md)
 
     > [!Note]
-    > Recommendations for Azure Virtual Netwroks aren't available in the current version, but are planned for future updates.
+    > Recommendations for auditing aren't available in the current version, but are planned for future updates.
 
 ## Frequently asked questions (FAQ)
 
