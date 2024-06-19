@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center wit
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/18/2024
+ms.date: 06/19/2024
 author: jahnavisunil
 ms.author: jasunil
 ms.reviewer: sericks
@@ -104,7 +104,7 @@ There are several security features that help secure your tenant, including:
 - **Data policies**: This feature is applicable at both tenant-level and environment-level to both Managed Environments and non-Managed Environments. Setting up data policies at the environment or tenant-level  acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more: [Data policies](../wp-data-loss-prevention.md)
 
     > [!Note]
-    > As a best practice, we recommend implementing tenant-level policies for effective data protection. While it's possible to implement environment-level policies, note that the overall security status is only calculated for policies set at the tenant level.
+    > The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
 
 - **Environment security group**: This feature is applicable to both Managed Environments and non-Managed Environments. Setting up security groups helps control which licensed users can access environments. Learn more: [Control user access to environments: security groups and licenses](../control-user-access.md)
 
@@ -115,6 +115,9 @@ There are several security features that help secure your tenant, including:
     > Recommendations for Azure Virtual Netwroks aren't available in the current version, but are planned for future updates.
 
 - **Auditing:** This feature is applicable to only Managed Environments and non-Managed Environments with Dataverse. Auditing log changes are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. Learn more: [Manage Dataverse auditing](../manage-dataverse-auditing.md)
+
+    > [!Note]
+    > Recommendations for auditing aren't available in the current version, but are planned for future updates.
 
 ## Frequently asked questions (FAQ)
 
