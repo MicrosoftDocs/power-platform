@@ -6,6 +6,7 @@ contributors:
   - samathur
   - PriyaKodukula
   - v-aangie
+  - V-Camille
 ms.subservice: admin
 ms.topic: overview
 ms.date: 05/30/2024
@@ -85,25 +86,38 @@ Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power A
 
 ## License entitlements
 
-Connectors represent the app/service to which your flows connect. For example, OneDrive, SharePoint, Twitter, etc. are examples of services to which flows connect. The connectors in Power Automate are designed to *speak the language* of the apps/services to which your flows connect, and give Power Automate access to the account. Connectors are categorized as either [standard](#standard-connectors) or [premium connectors](#premium-connectors).
+Licenses have entitlements, each giving access to a specific Power Automate capability : 
+- Usage of specific connector types in cloud flows :
+  - Standard connectors
+  - Premium connectors
+  - Custom connectors
+- Usage of Robotic Process Automation (RPA) :
+  - In attended mode
+  - In unattended mode
+  - Hosted 
+- Usage of business process flows
+- Usage of on-premise gateways
+- Usage of process mining
+
+> [!NOTE]
+>
+> A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions and triggers to build its automation.
 
 ### Standard connectors
 
-[Standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) are included in your standard Microsoft 365 subscription. We're continuously adding more standard connectors.
+The [Standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in both [seeded plans](#seeded-plans) and [standalone plans](#standalone-plans). We're continuously adding more standard connectors.
 
 ### Premium connectors
 
-Premium connectors aren't included in the Microsoft 365 license but included in all [standalone plans](#standalone-plans).
-
-Here's the full list of [premium connectors](/connectors/connector-reference/connector-reference-premium-connectors) in Power Automate.
-
-### Business process flows
-
-You can create [business process flows](/power-automate/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization defined for interactions that need to be advanced to reach a conclusion.
+The [Premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans) (except if the cloud flow is in context of an app - details in [Compare Power Automate plans](#compare-power-automate-plans)).
 
 ### Custom connectors
 
 You might want to communicate with apps/services that aren't available as prebuilt connectors. [Custom connectors](/connectors/custom-connectors) allow you to create (and even share) your own connectors.
+
+### Business process flows
+
+You can create [business process flows](/power-automate/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization defined for interactions that need to be advanced to reach a conclusion.
 
 ### Robotic process automation
 
