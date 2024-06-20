@@ -27,7 +27,7 @@ landingContent:
       - text: Copilot in Power Apps
         url: /power-apps/maker/canvas-apps/ai-overview
       - text: Copilot in Power Automate
-        url: /power-automate/get-started-with-copilot
+        url: /power-automate/copilot-overview
       - text: Copilot in Power Pages
         url: /power-pages/configure/ai-copilot-overview
 
