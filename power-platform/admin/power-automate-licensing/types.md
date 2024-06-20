@@ -87,17 +87,8 @@ Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power A
 ## License entitlements
 
 Licenses have entitlements and each entitlement gives access to a specific Power Automate capability : 
-- Usage of specific connector types in cloud flows :
-  - Standard connectors
-  - Premium connectors
-  - Custom connectors
-- Usage of Robotic Process Automation (RPA) :
-  - In attended mode
-  - In unattended mode
-  - Hosted 
-- Usage of business process flows
-- Usage of on-premise gateways
-- Usage of process mining
+
+![License entitlements](../media/RPA-license/entitlement_list.png)
 
 > [!NOTE]
 >
