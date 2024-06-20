@@ -106,7 +106,7 @@ When validating a form, it can be helpful to not only display a message if there
 
 ![An animation of validating a data entry form and having not only a message displayed but also setting the input focus to the offending input control, even if it is scrolled off the screen.](media/function-setfocus/scrollable-screen.gif)
 
-In this animation, the validation button is repeatedly pressed until all the fields have been filled in properly. Note that the mouse pointer doesn't move down from the top of the screen. Instead the **SetFocus** function hsa moved the input focus to the control that requires attention with this formula:
+In this animation, the validation button is repeatedly pressed until all the fields have been filled in properly. Note that the mouse pointer doesn't move down from the top of the screen. Instead the **SetFocus** function has moved the input focus to the control that requires attention with this formula:
 
 ```powerapps-dot
 If( IsBlank( Name ),
