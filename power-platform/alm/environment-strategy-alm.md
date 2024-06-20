@@ -8,7 +8,7 @@ ms.author: matp
 ms.custom: ""
 ms.date: 05/23/2024
 ms.reviewer: ""
-
+ms.topic: conceptual
 search.audienceType: 
   - maker
 ---
@@ -51,7 +51,7 @@ should include using a test environment prior to deploying anything to the produ
 environment. This ensures that you have a place to test your app, but also
 ensures that the deployment itself can be tested. 
 
-More information: [Establishing an environment strategy for Microsoft Power Platform](../guidance/adoption/environment-strategy.md)
+More information: [Establishing an environment strategy for Microsoft Power Platform](../guidance/white-papers/environment-strategy.md)
 
 ## Multi-geographical considerations
 

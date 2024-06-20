@@ -1,26 +1,23 @@
 ---
-title: "Unified admin trials (preview)"
+title: "Unified admin trials"
 description: "Subscription-based trial environments for administrators of finance and operations apps."
 author: laneswenka
 ms.topic: conceptual
-ms.date: 09/13/2023
+ms.date: 06/06/2024
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
+
 ---
 
-# Unified admin trials (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Unified admin trials
 
 Administrators, partners, and ISVs historically have had to use cloud-hosted environments in Lifecycle Services to create demo or trial environments for finance and operations apps. This was to demonstrate the software capabilities and try out new features of the product on a low-cost basis.
 
 To improve this experience, Microsoft has made available free subscription-based trial environments for finance and operations apps, including Dynamics 365 Finance, Supply Chain Management, Project Operations, and Commerce apps.
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The trial environments don't support development with Visual Studio. For development, you'll need a developer-focused sandbox environment. More information: [Install and configure development tools](/power-platform/developer/unified-experience/finance-operations-install-config-tools).
+> The trial environments don't support development with Visual Studio. For development, you need a developer-focused sandbox environment. More information: [Install and configure development tools](/power-platform/developer/unified-experience/finance-operations-install-config-tools).
 
 ## Acquire a free subscription-based trial license
 

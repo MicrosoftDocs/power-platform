@@ -67,7 +67,7 @@ public static ImportSolutionAsyncResponse ImportSolution(
     // Import the staged solution
     var componentDetails = stagingResults.SolutionComponentsDetails;
 
-    // TODO These are not referenced in the code but are usefull to explore
+    // TODO These are not referenced in the code but are useful to explore
     var missingDependencies = stagingResults.MissingDependencies;   // Contains missing dependencies
     var solutionDetails = stagingResults.SolutionDetails;           // Contains solution details
 

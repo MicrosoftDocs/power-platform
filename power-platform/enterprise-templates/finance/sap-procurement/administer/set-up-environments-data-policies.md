@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/18/2023
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -61,7 +61,7 @@ Installing, configuring, testing, and running [solutions](/power-apps/maker/data
 
 More information:
 
-- [Establish an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+- [Establish an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 - [Create an environment in the Power Platform admin center](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center)
 - [Manage Microsoft Dataverse settings](/power-platform/admin/admin-settings)
 - [Microsoft Dataverse developer documentation](/power-apps/developer/data-platform/)
