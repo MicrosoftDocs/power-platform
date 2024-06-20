@@ -52,9 +52,9 @@ The different configurations of the screen enable different printing outcomes. F
 
 ### Hide controls while printing
 
-To enable more customizable content, you can access the screen when the screen is printing to the change properties of the canvas app. For example, hiding buttons, or changing a form to view mode.
+To enable more customizable content, you can access the screen when the screen is printing to change properties of the canvas app. For example, hiding buttons, or changing a form to view mode.
 
-From the above example, where you insert a button on the screen and when you print the screen, you notice that the button is also gets printed. To remove the button from the screen while printing, on the button’s **Visible** property add the formula `Not Screen1.Printing`. Preview the app and select the button. Observe that the button does not show in the content in the browser preview print dialog.
+From the above example, where you insert a button on the screen and when you print the screen, you notice that the button also gets printed. To remove the button from the screen while printing, on the button’s **Visible** property add the formula `Not Screen1.Printing`. Preview the app and select the button. Observe that the button does not show in the content in the browser preview print dialog.
 
 ### Use a screen template
 
