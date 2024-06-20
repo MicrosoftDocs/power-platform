@@ -96,7 +96,7 @@ This dataSource error means not all required folders and files are available yet
 #### A DataFormat.Error after updating the `DatalakeURL` and `EnvironmentAPI` parameters
 
 This error might mean you entered the incorrect URLs. Verify that the `DatalakeURL` parameter points to your Azure Storage account URL. The URL should contain `dfs.core` and end with `/powerplatform`. Verify that the `EnvironmentAPI` points to your Environment Web API. The URL should contain `api.crm` and end with `/api/data/v9.2`.
-:::image type="content" source="media/byodl-18.png" alt-text="Screenshot that shows the DataFormat.Error." lightbox=media/byodl-18.png":::
+:::image type="content" source="media/byodl-18.png" alt-text="Screenshot that shows the DataFormat.Error." lightbox="media/byodl-18.png":::
 
 #### The publish or refresh failed
 
