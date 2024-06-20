@@ -34,7 +34,7 @@ You can detect frequently used apps and chatbots in your tenant and request that
 1. Open the **More features** page and select **Compliance process**.
 
 This app guides you through the configuration steps.
-:::image type="content" source="media/setupwizard-compliance.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard compliance process.":::
+:::image type="content" source="media/setupwizard-compliance.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard compliance process." lightbox="media/setupwizard-compliance.png":::
 
 > [!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
@@ -65,7 +65,7 @@ You can exempt environments from the compliance process using the Power Platform
 1. Set the **Excuse From Compliance Flow** field to *Yes*.
 1. Select **Save**.
 
-   :::image type="content" source="media/coe-compliance1.png" alt-text="Screenshot that shows where the Excuse From Compliance Flow setting is located.":::
+   :::image type="content" source="media/coe-compliance1.png" alt-text="Screenshot that shows where the Excuse From Compliance Flow setting is located." lightbox="media/coe-compliance1.png":::
 
 ### Turn on flows
 

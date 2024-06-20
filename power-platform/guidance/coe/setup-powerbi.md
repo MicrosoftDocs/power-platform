@@ -17,7 +17,7 @@ search.audienceType:
 
 The Microsoft Power BI dashboard provides a holistic overview with visualizations and insights into the resources of your tenant: environments, apps, Power Automate flows, connectors, connection references, makers, and audit logs. Telemetry from the audit log is stored when you set up the Center of Excellence (CoE) Starter Kit, so you can identify trends over time.
 
-:::image type="content" source="media/pb-1.png " alt-text="Screenshot of the CoE Starter Kit Power BI dashboard.":::
+:::image type="content" source="media/pb-1.png" alt-text="Screenshot of the CoE Starter Kit Power BI dashboard." lightbox="media/pb-1.png":::
 
 [Watch a walk-through (video)](https://www.youtube.com/watch?v=Lsooi7xp6eA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG&index=1&t=1942s) on how to set up the Power BI dashboard.
 
@@ -46,11 +46,11 @@ You need the URL of the Power Platform environment where the CoE Starter Kit is 
 1. Select **Environments**, then choose your environment where your CoE solution is installed.
 1. Copy the organization URL in the details window, including the `https://` prefix and the ending slash `/`.
 
-   :::image type="content" source="media/coe19.png" alt-text="Screenshot of the Power Platform admin center with the environment URL highlighted.":::
+   :::image type="content" source="media/coe19.png" alt-text="Screenshot of the Power Platform admin center with the environment URL highlighted." lightbox="media/coe19.png":::
 
    If the URL is truncated, you can see the full URL by selecting **See all** > **Environment URL**.
   
-   :::image type="content" source="media/coe20.png" alt-text="Screenshot showing the Environment settings available in the Power Platform admin center.":::
+   :::image type="content" source="media/coe20.png" alt-text="Screenshot showing the Environment settings available in the Power Platform admin center." lightbox="media/coe20.png":::
 
 ## Configure the Production and Governance Power BI dashboard
 
@@ -64,7 +64,7 @@ You can configure and modify the Power BI dashboard by working directly with the
 
 1. If prompted, sign in to Power BI Desktop with your organization account, containing the CoE Starter Kit environment.
 
-   :::image type="content" source="media/pbit.png" alt-text="Screenshot that shows where you enter your OrgUrl to configure Power BI dashboard.":::
+   :::image type="content" source="media/pbit.png" alt-text="Screenshot that shows where you enter your OrgUrl to configure Power BI dashboard." lightbox="media/pbit.png":::
 
 1. Save the dashboard locally or select **Publish**, and choose the workspace where you want to publish your report.
 
@@ -84,7 +84,7 @@ You can configure and modify the Power BI dashboard by working directly with the
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL.
 
-   :::image type="content" source="media/byodl-1.png" alt-text="Screenshot showing where to copy the Data Lake Storage URL from Storage Account endpoints.":::
+   :::image type="content" source="media/byodl-1.png" alt-text="Screenshot showing where to copy the Data Lake Storage URL from Storage Account endpoints." lightbox="media/byodl-1.png":::
 
 1. Append `/powerplatform` to the URL.
 
@@ -97,37 +97,37 @@ Power BI dataflows can transform data from the Azure Storage account into tables
 1. Provide a name and description, select **Advanced**, and choose **Premium per user** or **Premium per capacity** depending on what’s available in your tenant.
 1. Select **Large dataset storage format**. You can also use an existing premium workspace, if available.
 
-   :::image type="content" source="media/byodlbi-1.png" alt-text="Screenshot that shows the Create a workspace pane you see when creating a new premium workspace.":::
+   :::image type="content" source="media/byodlbi-1.png" alt-text="Screenshot that shows the Create a workspace pane you see when creating a new premium workspace." lightbox="media/byodlbi-1.png":::
 
    > [!NOTE]
    > A Power BI Premium trial is sufficient if you are only testing the integration of the [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) feature with the CoE Starter Kit.
 
 1. Select **+ New** > **Dataflow**. If prompted, select **No, create dataflow** instead of a datamart.
-   :::image type="content" source="media/byodlbi-2.png" alt-text="Screenshot that shows how to create a new dataflow workspace.":::
+   :::image type="content" source="media/byodlbi-2.png" alt-text="Screenshot that shows how to create a new dataflow workspace." lightbox="media/byodlbi-2.png":::
 1. Select **Import Model** and upload the **PowerPlatformAdminAnalytics-DF.json** file, which can be found in the [CoE Starter Kit you downloaded](https://aka.ms/CoEStarterKitDownload).
    :::image type="content" source="media/byodlbi-3.png" alt-text="Screenshot that shows the Import model option highlighted." lightbox="media/byodlbi-3.png":::
 1. From the workspace, select **Datasets + Dataflows** to see your imported dataflow.
 1. Edit the dataflow.
-   :::image type="content" source="media/byodlbi-4.png" alt-text="Screenshot that shows where the Edit menu option is located for your dataset.":::
+   :::image type="content" source="media/byodlbi-4.png" alt-text="Screenshot that shows where the Edit menu option is located for your dataset." lightbox="media/byodlbi-4.png":::
 1. Select **Edit tables**.
-   :::image type="content" source="media/byodlbi-5.png" alt-text="Screenshot that shows where the Edit tables option is located from the menu bar. This option allows you to edit the tables of the imported dataflow.":::
+   :::image type="content" source="media/byodlbi-5.png" alt-text="Screenshot that shows where the Edit tables option is located from the menu bar. This option allows you to edit the tables of the imported dataflow." lightbox="media/byodlbi-5.png":::
 1. Select the Datalake URL parameter.
-   :::image type="content" source="media/byodlbi-6.png" alt-text="Screenshot that shows where you can update the Datalake URL parameter to point to your Azure Storage account URL.":::
+   :::image type="content" source="media/byodlbi-6.png" alt-text="Screenshot that shows where you can update the Datalake URL parameter to point to your Azure Storage account URL." lightbox="media/byodlbi-6.png":::
 1. Paste the Azure Storage account URL and make sure it ends with `/powerplatform` (no trailing slash `/`).
 1. From the **Queries** view, select one table after the other to configure connections and sign in with your account. If creating the connection fails, try selecting **Source** under **Applied steps** to retry configuring the connection.
-   :::image type="content" source="media/byodlbi-7.png" alt-text="Screenshot that shows how to configure a connection.":::
+   :::image type="content" source="media/byodlbi-7.png" alt-text="Screenshot that shows how to configure a connection." lightbox="media/byodlbi-7.png":::
 1. Select **Continue** when you see a notification about connecting data from multiple sources.
 1. Select **Save and Close** and wait for the validation to finish.
 1. Select **Close** to close the **Edit tables** view.
 1. Select the overflow menu **…** > **Settings** on the dataflow.
 1. Configure a daily schedule refresh. A good time to refresh your dataflow is just after files write to your storage account by the Data Export feature. Therefore, your dataflow runs after data is exported to your storage account.
-   :::image type="content" source="media/byodlbi-8.png" alt-text="Screenshot that shows where to schedule a refresh for your dataflow.":::
+   :::image type="content" source="media/byodlbi-8.png" alt-text="Screenshot that shows where to schedule a refresh for your dataflow." lightbox="media/byodlbi-8.png":::
 1. Refresh the dataflow manually. The initial refresh might take one to two hours to run, depending on the size of your inventory. Check the **Refresh history** to see when the refresh completes.
 1. Copy the Power BI workspace and dataflow ID contained in the URL. Parts of the ID are removed for security purposes in the example images, but you should see a full ID number in your URL.
    1. Select the dataflow and copy the Workspace ID by looking at the URL and copying the GUID after `/groups/`.
-      :::image type="content" source="media/byodlbi-9.png" alt-text="Screenshot that shows where you copy the workspace ID in the URL.":::
+      :::image type="content" source="media/byodlbi-9.png" alt-text="Screenshot that shows where you copy the workspace ID in the URL." lightbox="media/byodlbi-9.png":::
    1. Select the dataflow and copy the Dataflow ID by looking at the URL and copying the GUID after `/dataflows/`.
-      :::image type="content" source="media/byodlbi-10.png" alt-text="Screenshot that shows where you copy the dataflow ID in the URL.":::
+      :::image type="content" source="media/byodlbi-10.png" alt-text="Screenshot that shows where you copy the dataflow ID in the URL." lightbox="media/byodlbi-10.png":::
 
 ### Configure the Power BI dashboard
 
@@ -165,24 +165,24 @@ The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit**
    :::image type="content" source="media/coe84.png" alt-text="Screenshot that shows the Manage App Access page in Power BI Desktop accessed from the Manage App Access tab.":::
 
 1. Select the existing Power Apps visual, then choose **Format visual** and select **Reset to default**.
-   :::image type="content" source="media/coebireset.png" alt-text="Screenshot that shows where to select Reset to default to format the visual.":::
+   :::image type="content" source="media/coebireset.png" alt-text="Screenshot that shows where to select Reset to default to format the visual." lightbox="media/coe84.png":::
 
 1. Close the sharing notification.
-   :::image type="content" source="media/coebireset2.png" alt-text="Screenshot that shows how to close the sharing notification.":::
+   :::image type="content" source="media/coebireset2.png" alt-text="Screenshot that shows how to close the sharing notification." lightbox="media/coebireset2.png":::
 
 1. Select **Choose app**.
 
 1. Select the environment of your CoE, where you imported the apps.
-   :::image type="content" source="media/coe88.png" alt-text="Screenshot that shows where to select Choose app.":::
+   :::image type="content" source="media/coe88.png" alt-text="Screenshot that shows where to select Choose app." lightbox="media/coe88.png":::
 
 1. Search for and select **Admin – Access this App [works embedded in Power BI only]**.
-   :::image type="content" source="media/coe89.png" alt-text="Screenshot that shows where to add the app access.":::
+   :::image type="content" source="media/coe89.png" alt-text="Screenshot that shows where to add the app access." lightbox="media/coe89.png":::
 
    > [!TIP]
    > If you see one of these errors, ignore it. The app doesn't work when browsing directly to this page, but only works when an app is sent in via a drill through.
    >
-   > :::image type="content" source="media/PBI-setuperror.PNG" alt-text="Screenshot that shows the first possible setup error.":::
-   > :::image type="content" source="media/PBI-setuperror2.PNG" alt-text="Screenshot that shows the second possible setup error.":::
+   > :::image type="content" source="media/PBI-setuperror.PNG" alt-text="Screenshot that shows the first possible setup error." lightbox="media/PBI-setuperror.PNG":::
+   > :::image type="content" source="media/PBI-setuperror2.PNG" alt-text="Screenshot that shows the second possible setup error." lightbox="media/PBI-setuperror2.PNG":::
 
 1. Go to the **Manage Flow Access** tab and repeat the previous steps, but selecting the **Admin - Access this Flow [works embedded in Power BI only]** app this time.
 
@@ -194,26 +194,26 @@ Republish the dashboard, and view it under [app.powerbi.com](https://app.powerbi
 
 This error message means the connector failed to connect to the tabular data stream (TDS) endpoint. This error can occur when the URL used with the connector includes `https://` and/or the ending slash `/`. Remove the `https://` and ending slash `/` so the URL is in the form `orgname.crm.dynamics.com`.
 
-:::image type="content" source="media/pbi_error.png" alt-text="Screenshot that shows the error message: Unable to connect.":::
+:::image type="content" source="media/pbi_error.png" alt-text="Screenshot that shows the error message: Unable to connect." lightbox="media/pbi_error.png":::
 
 ### A connection was successfully established with the server, but an error occurred during the handshake before you sign in
 
 This error message means the connector failed to connect to the TDS endpoint. This error can occur if the ports, the TDS endpoint uses, are blocked. For more information, see [Ports required for using SQL to query data](/powerapps/developer/data-platform/dataverse-sql-query#blocked-ports).
 
-:::image type="content" source="media/pbi_error2.png" alt-text="Screenshot that shows the second type of error message that happens after you connect.":::
+:::image type="content" source="media/pbi_error2.png" alt-text="Screenshot that shows the second type of error message that happens after you connect." lightbox="media/pbi_error2.png":::
 
 ### Unable to open document: The queries were authored with a newer version of Power BI Desktop and might not work with your version
 
 This error message means you're on the current version of Power BI Desktop, select **Close** to continue, and [set up the latest version](https://www.microsoft.com/download/details.aspx?id=58494).
 
-:::image type="content" source="media/pbi_error3.png" alt-text="Screenshot that shows the Unable to open document error message.":::
+:::image type="content" source="media/pbi_error3.png" alt-text="Screenshot that shows the Unable to open document error message." lightbox="media/pbi_error3.png":::
 
 ### Sign-in issues
 
 When you see sign-in issues, your data source settings might be cached to the wrong user or tenant. Here are a few examples of what that might look like:
 
-:::image type="content" source="media/pbi-signin-failure1.png" alt-text="Screenshot that shows the remote name not resolved error.":::
-:::image type="content" source="media/pbi-signin-failure2.png" alt-text="Screenshot that shows the authorization not specified error.":::
+:::image type="content" source="media/pbi-signin-failure1.png" alt-text="Screenshot that shows the remote name not resolved error." lightbox="media/pbi-signin-failure1.png":::
+:::image type="content" source="media/pbi-signin-failure2.png" alt-text="Screenshot that shows the authorization not specified error." lightbox="media/pbi-signin-failure2.png":::
 
 The solution in this case is to clear the permissions:
 
@@ -227,7 +227,7 @@ The solution in this case is to clear the permissions:
 If you're not prompted for the input parameters like **OrgURL** when you open the pbit files, clear the cache:
 
 1. Open the pbit file and select discard changes.
-   :::image type="content" source="media/pbi_error4.png" alt-text="Screenshot that shows where to select Discard changes.":::
+   :::image type="content" source="media/pbi_error4.png" alt-text="Screenshot that shows where to select Discard changes." lightbox="media/pbi_error4.png":::
 1. Reopen the pbit file.
 
    You're prompted for the input parameters.
@@ -241,26 +241,26 @@ Change the privacy level and update the credentials to resolve the issue:
 1. Open Power BI Desktop.
 1. Select **File** > **Options and settings** > **Options**.
 1. Select **Global** > **Privacy** and set the privacy level to **Always combine data according to your Privacy Level settings for each source**.
-   :::image type="content" source="media/coepbi-byodl.png " alt-text="Screenshot that shows where to set the privacy level in Options.":::
+   :::image type="content" source="media/coepbi-byodl.png" alt-text="Screenshot that shows where to set the privacy level in Options." lightbox="media/coepbi-byodl.png":::
 
 1. Select **OK**, and then select **File** > **Options and settings** > **Options** again.
 1. Select **Current File** > **Privacy** and set the privacy level to **Combine data according to your Privacy Level settings for each source**.
-   :::image type="content" source="media/coepbi-byodl2.png" alt-text="Screenshot that shows where to set the privacy level in Options for the current file.":::
+   :::image type="content" source="media/coepbi-byodl2.png" alt-text="Screenshot that shows where to set the privacy level in Options for the current file." lightbox="media/coepbi-byodl2.png":::
 
 1. Select **OK**.
 1. Select **File** > **Options and settings** > **Data source settings**.
 1. Select **Edit Permissions** and set the privacy level to **Organizational** for both data sources.
-   :::image type="content" source="media/coepbi-byodl3.png" alt-text="Screenshot that shows where to set the privacy level in Edit permissions section of your Data source settings.":::
+   :::image type="content" source="media/coepbi-byodl3.png" alt-text="Screenshot that shows where to set the privacy level in Edit permissions section of your Data source settings." lightbox="media/coepbi-byodl3.png":::
 
 1. Save and refresh the report in Power BI Desktop.
 1. Select **Publish**.
 1. Navigate to [app.powerbi.com](https://app.powerbi.com/) and select your workspace.
 1. Select **Datasets + dataflows**.
 1. Select **Settings** on the dataset.
-   :::image type="content" source="media/coepbi-byodl5.png" alt-text="Screenshot that shows where to find Settings in the overflow menu.":::
+   :::image type="content" source="media/coepbi-byodl5.png" alt-text="Screenshot that shows where to find Settings in the overflow menu." lightbox="media/coepbi-byodl5.png":::
 1. Select **Data Source Credentials**.
 1. Select **Edit credentials**, set the privacy level to **Organizational** for both data sources, and select **Sign in** for each data source.
-   :::image type="content" source="media/coepbi-byodl4.png" alt-text="Screenshot that shows where to configure privacy settings.":::
+   :::image type="content" source="media/coepbi-byodl4.png" alt-text="Screenshot that shows where to configure privacy settings." lightbox="media/coepbi-byodl4.png":::
 
 ## I found a bug with the CoE Starter Kit. Where should I go?
 

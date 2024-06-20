@@ -44,7 +44,7 @@ Create these connections manually ahead of installing the kit to ensure they're 
 1. Select your CoE environment and go to **Data** > **Connections** > **+ New connection**.
 1. Create a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra ID Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-   :::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID connection window.":::
+   :::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID connection window." lightbox="media/httpazuread.png":::
 
 ### Import the core components solution
 
@@ -68,7 +68,7 @@ The import can take up to an hour to be complete, and upgrades can take up to tw
 1. After the solution import is successful, open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. This app guides you through the configuration steps.
-   :::image type="content" source="media\coesetupwizard.png" alt-text="Screenshot that shows the CoE Setup Wizard.":::
+   :::image type="content" source="media\coesetupwizard.png" alt-text="Screenshot that shows the CoE Setup Wizard." lightbox="media\coesetupwizard.png":::
 
 #### Troubleshooting
 
@@ -86,7 +86,7 @@ You can choose your data source for inventory. **Cloud flows** is the default an
 
 However, you might wish to experiment with the **Data Export (Preview)** data source. To experiment, use the [Data Export setup](setup-dataexport.md) instructions when you get to the **Configure dataflows** page.
 
-:::image type="content" source="media\setupWizard-datasource.png" alt-text="Screenshot that shows the Setup Wizard data source selection.":::
+:::image type="content" source="media\setupWizard-datasource.png" alt-text="Screenshot that shows the Setup Wizard data source selection." lightbox="media\setupWizard-datasource.png":::
 
 ## Set up the CoE Admin Command Center app
 
@@ -101,18 +101,18 @@ Using these steps, you set up the Entra app registration used in a cloud flow to
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 1. Go to **Microsoft Entra ID** > **App registrations**.
-   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Entra app registration":::
+   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the Entra app registration." lightbox="media/coe33.png":::
 1. Select **+ New Registration**.
 1. Enter a name. For example, use the **CoE Command Center** name. Don't change any other settings and select **Register**.
 1. Select **API Permissions** > **+ Add a permission**.
-   :::image type="content" source="media\coe34.png" alt-text="Screenshot that shows API permissions.":::
+   :::image type="content" source="media\coe34.png" alt-text="Screenshot that shows API permissions." lightbox="media\coe34.png":::
 1. Select **Microsoft Graph** and configure permissions as follows:
    1. Select **Application permissions**, and then select **ServiceMessage.Read.All**.
    1. Select **Add permissions**.
 1. Select **Grant Admin Consent for (your organization)**.
 1. Select **Certificates and secrets**.
 1. Select **+ New client secret**.
-   :::image type="content" source="media\coe39.png" alt-text="Screenshot that shows where the +New client secret button is located in the Certificates & secrets menu.":::
+   :::image type="content" source="media\coe39.png" alt-text="Screenshot that shows where the +New client secret button is located in the Certificates & secrets menu." lightbox="media\coe39.png":::
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 1. Copy and paste the **Secret** to a text document such as Notepad.
 1. Select **Overview** and copy and paste the application (client) ID value to the same text document. Be sure to make a note of which GUID is for which value.

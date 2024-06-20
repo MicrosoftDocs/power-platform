@@ -45,21 +45,21 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. Go to **Microsoft Entra ID** > **App registrations**.
-   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the location of the App registrations Azure service.":::
+   :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the location of the App registrations Azure service." lightbox="media/coe33.png" :::
 
 1. Select **+ New Registration**.
 
 1. Enter a name, such as **Microsoft 365 Management**, but don't change any other setting, and then select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
-   :::image type="content" source="media/coe34.png" alt-text="Screenshot showing the location of the +Add a permission button of the API permissions menu.":::
+   :::image type="content" source="media/coe34.png" alt-text="Screenshot showing the location of the +Add a permission button of the API permissions menu." lightbox="media/coe34.png":::
 
 1. Select **Office 365 Management API** and configure permissions as follows:
 
-   a. Select **Application permissions**, and then select **ActivityFeed.Read**.
-      ![Application permissions](media/coe36new.png "Application permissions")
+   1. Select **Application permissions**, and then select **ActivityFeed.Read**.
+      :::image type="content" source="media/coe36new.png" alt-text="Screenshot that shows the ActivityFeed.Read setting on the Request API permissions page of the API permissions menu." lightbox="media/coe36new.png":::
 
-   b. Select **Add permissions**.
+   1. Select **Add permissions**.
 
 1. Select **Grant Admin Consent for (your organization)**. To set up admin content, see [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
 
@@ -68,7 +68,7 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 1. Select **Certificates and secrets**.
 
 1. Select **+ New client secret**.
-   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows the location of the +New client secret button on the Certificates & secrets menu.":::
+   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows the location of the +New client secret button on the Certificates & secrets menu." lightbox="media/coe39.png":::
 
 1. Add a description and expiration in line with your organization's policies, and then select **Add**.
 
@@ -99,9 +99,9 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 2. Select **Solutions**.
 3. Open the **Center of Excellence – Core Components** solution.
 4. Turn on the **Admin | Audit Logs | Office 365 Management API Subscription** flow and run it, enter _start_ as the operation to run.
-   :::image type="content" source="media/coe-startsubscription.png" alt-text="Screenshot that shows the location of the Run button in the navigation bar and the start operation in the Run flow pane.":::
+   :::image type="content" source="media/coe-startsubscription.png" alt-text="Screenshot that shows the location of the Run button in the navigation bar and the start operation in the Run flow pane." lightbox="media/coe-startsubscription.png":::
 5. Open the flow and verify that the action to start the subscription is passed.
-   :::image type="content" source="media/coe-startsubscription-passed.png " alt-text="Screenshot that shows the Status code of 200 in the StartSubscription window.":::
+   :::image type="content" source="media/coe-startsubscription-passed.png" alt-text="Screenshot that shows the Status code of 200 in the StartSubscription window." lightbox="media/coe-startsubscription-passed.png":::
 
 > [!IMPORTANT]
 > If you previously enabled the subscription, you see a _(400) The subscription is already enabled_ message. This means the subscription successfully enabled in the past. You can ignore this message and continue with the setup.
@@ -131,12 +131,12 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 
 1. Browse to the [Audit Log search](https://compliance.microsoft.com/auditlogsearch).
 1. Search for the Launched app activity in the date range available to you.
-   :::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Screenshot that highlights the date range and launched app activity for a search in the Audit page of Microsoft Purview.":::
+   :::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Screenshot that highlights the date range and launched app activity for a search in the Audit page of Microsoft Purview." lightbox="media/coe-oldauditlogs-1.png":::
 1. Once the search runs, select **Export** to download the results.
-   :::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Screenshot that highlights the Completed Job status and Export button after an audit search.":::
+   :::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Screenshot that highlights the Completed Job status and Export button after an audit search." lightbox="media/coe-oldauditlogs-2.png":::
 1. Browse to this flow in the core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**.
 1. Turn on the flow and run it, selecting the downloaded file for the Audit Log CSV parameter.
-   :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Screenshot that shows the Audit Log CSV import field and Run flow button of the Run flow pane.":::
+   :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Screenshot that shows the Audit Log CSV import field and Run flow button of the Run flow pane." lightbox="media/coe-oldauditlogs-3.png":::
 
    > [!NOTE]
    > If you don't see the file loading after selecting **Import**, it might exceed the allowed content size for this trigger. Try breaking up the file into smaller files (50,000 rows per file) and run the flow once per file. The flow can be run simultaneously for multiple files.
@@ -147,13 +147,13 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 ### API permissions
 
 Go to your app registration and validate that you have the correct API permissions. Your app registration requires application permissions not delegated. Validate that the status is _Granted_.
-:::image type="content" source="media/auditlog-troubleshoot-1.png" alt-text="Screenshot that highlights the Application type and Granted for status of a configured permission.":::
+:::image type="content" source="media/auditlog-troubleshoot-1.png" alt-text="Screenshot that highlights the Application type and Granted for status of a configured permission." lightbox="media/auditlog-troubleshoot-1.png":::
 
 ### Secret environment variable - Azure secret
 
 If you're using Azure Key value to store the app registration secret, validate that the Azure Key Vault permissions are correct.
 A user needs to be in the _Key Vault Secret User_ role to read and in the _Key Vault Contributor_ role to update.
-:::image type="content" source="media/auditlog-troubleshoot-2.png" alt-text="Screenshot that shows the Key Vault Contributor and Key Vault Secrets User roles.":::
+:::image type="content" source="media/auditlog-troubleshoot-2.png" alt-text="Screenshot that shows the Key Vault Contributor and Key Vault Secrets User roles." lightbox="media/auditlog-troubleshoot-2.png":::
 
 If you have other issues with Azure Key Vault regarding a firewall, static IPs for Dataverse Environment, or other such feature issues,  contact product support to resolve them.
 

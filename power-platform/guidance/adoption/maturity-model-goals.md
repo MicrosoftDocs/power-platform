@@ -30,15 +30,15 @@ Apps are mostly used by a single team and supported by the makers. Apps primaril
 
 :::row:::
    :::column span="":::
-       :::image type="content" source="media/adoption-1.png" alt-text="Screenshot that shows the organization of training events.":::
+       :::image type="content" source="media/adoption-1.png" alt-text="Screenshot that shows the organization of training events." lightbox="media/adoption-1.png":::
        Organize [training events](https://aka.ms/powerappsdemos), [hackathons](hackathons.md), and [lunch and learn sessions](in-a-day.md#lunch-and-learn).
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="media/adoption-2.png" alt-text="Screenshot showing champions.":::
+       :::image type="content" source="media/adoption-2.png" alt-text="Screenshot showing champions." lightbox="media/adoption-2.png":::
        Find and nurture [champions](champions.md) or recognize early success.
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="media/adoption-3.png" alt-text="Screenshot showing sponsors.":::
+       :::image type="content" source="media/adoption-3.png" alt-text="Screenshot showing sponsors." lightbox="media/adoption-3.png":::
        Get key sponsors and teams as you review the [roles and responsibilities](roles.md) needed for your Power Platform adoption.
    :::column-end:::
 :::row-end:::
@@ -57,15 +57,15 @@ Environments are used as needed. For example, various production environments an
 
 :::row:::
    :::column span="":::
-       :::image type="content" source="media/adoption-4.png" alt-text="Screenshot that shows a gain in tenant-wide oversight of resources being created in your tenant.":::
+       :::image type="content" source="media/adoption-4.png" alt-text="Screenshot that shows a gain in tenant-wide oversight of resources being created in your tenant." lightbox="media/adoption-4.png":::
        Gain tenant-wide oversight of resources being created in your tenant.
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="media/adoption-5.png" alt-text="Screenshot that shows where you can establish DLP policies.":::
+       :::image type="content" source="media/adoption-5.png" alt-text="Screenshot that shows where you can establish DLP policies." lightbox="media/adoption-5.png":::
        [Establish DLP policies](dlp-strategy.md) in the default environment. Mitigate the risk of apps and flows breaking by performing a [DLP Impact Analysis](../coe/core-components.md#dlp-impact-analysis) first.
   :::column-end:::
   :::column span="":::
-      :::image type="content" source="media/adoption-6.png" alt-text="Screenshot that shows where to send a welcome email to new makers.":::
+      :::image type="content" source="media/adoption-6.png" alt-text="Screenshot that shows where to send a welcome email to new makers." lightbox="media/adoption-6.png":::
       Embrace new makers with a [welcome email](onboard-makers.md), informing them of internal training resources and policies.
   :::column-end:::
 :::row-end:::
@@ -84,15 +84,15 @@ Much of this transformation might reflect the organic growth of the organization
 
 :::row:::
    :::column span="":::
-      :::image type="content" source="media/adoption-7.png" alt-text="Diagram that shows an environment strategy.":::
+      :::image type="content" source="media/adoption-7.png" alt-text="Diagram that shows an environment strategy." lightbox="media/adoption-7.png":::
       Develop an [environment strategy](environment-strategy.md) and configure layers of security to support productive development in your organization, while securing and organizing resources.
    :::column-end:::
    :::column span="":::
-      :::image type="content" source="media/adoption-8.png" alt-text="Diagram that describes the tiers of application support.":::
+      :::image type="content" source="media/adoption-8.png" alt-text="Diagram that describes the tiers of application support." lightbox="media/adoption-8.png":::
       Define [tiers of application support](environment-strategy.md#factors-that-influence-provisioning) based on the level of complexity, the criticality of the app, and users impacted by the application.
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="media/adoption-9.png" alt-text="Screenshot that shows a success story in an article.":::
+       :::image type="content" source="media/adoption-9.png" alt-text="Screenshot that shows a success story in an article." lightbox="media/adoption-9.png":::
        Celebrate your makers and champions by [sharing their success stories](show-and-tell.md). Focus on the business value and impact they have on the organization.
    :::column-end:::
 :::row-end:::
@@ -111,15 +111,15 @@ Standard, branded app templates and components are available to all makers. Busi
 
 :::row:::
     :::column span="":::
-        :::image type="content" source="media/adoption-10.png" alt-text="Screenshot that shows where you can create an app catalog in Power Platform.":::
+        :::image type="content" source="media/adoption-10.png" alt-text="Screenshot that shows where you can create an app catalog in Power Platform." lightbox="media/adoption-10.png":::
         Create an [app catalog](../coe/core-components.md#app-catalog) to make apps more discoverable and avoid duplication. Create [shared component libraries](reusable.md) with common design patterns, such as headers and navigation to ensure consistency across apps.
     :::column-end:::
     :::column span="":::
-        :::image type="content" source="media/adoption-11.png" alt-text="Screenshot that shows where to use approvals and Teams to automate communication.":::
+        :::image type="content" source="media/adoption-11.png" alt-text="Screenshot that shows where to use approvals and Teams to automate communication." lightbox="media/adoption-11.png":::
         Automate the communication between CoE, IT, and admins through approvals and Teams messages.
    :::column-end:::
    :::column span="":::
-       :::image type="content" source="media/adoption-12.png" alt-text="Screenshot that shows where you can define key responsibilities for your CoE.":::
+       :::image type="content" source="media/adoption-12.png" alt-text="Screenshot that shows where you can define key responsibilities for your CoE." lightbox="media/adoption-12.png":::
        Define [key responsibilities for your CoE](coe.md), admins, and makers to ensure they're understood and agreeable to everyone.
    :::column-end:::
 :::row-end:::
@@ -138,15 +138,15 @@ In organizations at the Efficient stage, Power Platform is a key part of the dig
 
 :::row:::
     :::column span="":::
-        :::image type="content" source="media/adoption-13.png" alt-text="Screenshot that shows the submitted ideas page.":::
+        :::image type="content" source="media/adoption-13.png" alt-text="Screenshot that shows the submitted ideas page." lightbox="media/adoption-13.png":::
         Enable everyone to [submit ideas](../coe/use-innovationbacklog.md), describe pain points, and pick the most valuable ideas for development. Build a portfolio for your career development opportunities. Provide big-picture dashboards emphasizing the impact of the platform.
     :::column-end:::
     :::column span="":::
-        :::image type="content" source="media/adoption-14.png " alt-text="Screenshot of application lifecycle management (ALM).":::
+        :::image type="content" source="media/adoption-14.png" alt-text="Screenshot of application lifecycle management (ALM)." lightbox="media/adoption-14.png":::
         [Simplify application lifecycle management](../coe/almaccelerator-components.md). Help makers more easily manage their solutions and deployment.
     :::column-end:::
     :::column span="":::
-        :::image type="content" source="media/adoption-15.png " alt-text="Screenshot of the Microsoft Power Platform Stories website.":::
+        :::image type="content" source="media/adoption-15.png" alt-text="Screenshot of the Microsoft Power Platform Stories website." lightbox="media/adoption-15.png":::
         [Tell your story](https://aka.ms/powerplatformstories). Influence our best practices and inspire other leaders to go on the same journey.
     :::column-end:::
 :::row-end:::

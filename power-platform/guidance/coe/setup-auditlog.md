@@ -52,7 +52,7 @@ Using these steps, you set up a Microsoft Entra app registration that is used in
 
 1. Go to **Microsoft Entra ID** > **App registrations**.
 
-   :::image type="content" source="media/coe33.png" alt-text="Screenshot that shows the Microsoft Entra app registration.":::
+   :::image type="content" source="media/coe33.png" alt-text="Screenshot that shows the Microsoft Entra app registration." lightbox="media/coe33.png":::
 
 1. Select **+ New Registration**.
 
@@ -60,13 +60,13 @@ Using these steps, you set up a Microsoft Entra app registration that is used in
 
 1. Select **API permissions** > **+ Add a permission**.
 
-   :::image type="content" source="media/coe34.png" alt-text="Screenshot that shows API Permissions - Add a permission.":::
+   :::image type="content" source="media/coe34.png" alt-text="Screenshot that shows API Permissions - Add a permission." lightbox="media/coe34.png":::
 
 1. Select **Office 365 Management API**, and configure permissions as follows:
 
    1. Select **Delegated permissions**, and then select **ActivityFeed.Read**.
 
-      :::image type="content" source="media/coe36.png" alt-text="Screenshot that shows delegated permissions.":::
+      :::image type="content" source="media/coe36.png" alt-text="Screenshot that shows delegated permissions." lightbox="media/coe36.png":::
 
    1. Select **Add permissions**.
 
@@ -78,7 +78,7 @@ Using these steps, you set up a Microsoft Entra app registration that is used in
 
 1. Select **+ New client secret**.
 
-   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows where you create a new client secret.":::
+   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows where you create a new client secret." lightbox="media/coe39.png":::
 
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 
@@ -108,11 +108,11 @@ Now you configure and set up a custom connector that uses the [Office 365 Manage
 1. Select **Security**.
 1. Select **Edit** at the bottom of the **OAuth 2.0** area to edit the authentication parameters.
 
-   :::image type="content" source="media/coe42.png" alt-text="Screenshot that shows how you can edit the OAuth 2.0 section of Security tab of Custom connectors.":::
+   :::image type="content" source="media/coe42.png" alt-text="Screenshot that shows how you can edit the OAuth 2.0 section of Security tab of Custom connectors." lightbox="media/coe42.png":::
 
 1. Change the **Identity Provider** to Microsoft Entra ID.
 
-   :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Microsoft Entra ID.":::
+   :::image type="content" source="media/auditlogcc.png" alt-text="Change the identity provider to Microsoft Entra ID." lightbox="media/auditlogcc.png":::
 
 1. Paste the application (client) ID you copied from the app registration into **Client Id**.
 
@@ -163,7 +163,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
 1. Under **Operations**, select **StartSubscription**.
 
-   :::image type="content" source="media/coe43.png" alt-text="Screenshot that shows the custom connector Start Subscription.":::
+   :::image type="content" source="media/coe43.png" alt-text="Screenshot that shows the custom connector Start Subscription." lightbox="media/coe43.png":::
 
 1. Paste the **directory (tenant) ID**—copied earlier from the **App Registration** overview page in Microsoft Entra ID—into the **Tenant** field.
 1. Paste the **directory (tenant) ID** into **PublisherIdentifier**.
@@ -172,7 +172,7 @@ Go back to the custom connector to set up a connection to the custom connector a
 
 You should see a (200) status returned, which means the query was successful.
 
-:::image type="content" source="media/coe44.png" alt-text="Screenshot that shows a successful status returned from the StartSubscription activity.":::
+:::image type="content" source="media/coe44.png" alt-text="Screenshot that shows a successful status returned from the StartSubscription activity." lightbox="media/coe44.png":::
 
 > [!IMPORTANT]
 > If you have previously enabled the subscription, you see a `(400) The subscription is already enabled` message. This means the subscription is successfully enabled already. Ignore this error and continue with the setup.
@@ -199,22 +199,22 @@ A Power Automate flow uses the custom connector, queries the audit log daily, an
 1. Import the Center of Excellence audit logs solution using the `CenterofExcellenceAuditLogs_*x_x_x_xxx*_managed.zip` file.
 1. Establish connections then activate your solution. If you create a new connection, you must select **Refresh**. You don't lose your import progress.
 
-   :::image type="content" source="media/coe-custom2.png" alt-text="Screenshot that shows how to import the CoE audit log components solution.":::
+   :::image type="content" source="media/coe-custom2.png" alt-text="Screenshot that shows how to import the CoE audit log components solution." lightbox="media/coe-custom2.png":::
 
 1. Open the **Center of Excellence – Audit Log solution**.
 1. [Remove the unmanaged layer](after-setup.md) from the **[Child] Admin | Sync Logs**.
 1. Select the **[Child] Admin | Sync Logs**.
 1. Edit the **Run only users** settings.
 
-   :::image type="content" source="media/coe49.png" alt-text="Child flow - run-only users.":::
+   :::image type="content" source="media/coe49.png" alt-text="Child flow - run-only users." lightbox="media/coe49.png":::
 
 1. For the  Office 365 Management API custom connector, change the value to **Use this connection (userPrincipalName\@company.com)**. If there's no connection for any of the connectors, go to **Dataverse** > **Connections**, and create one for the connector.
 
-   :::image type="content" source="media/coe50.png" alt-text="Screenshot that shows where to find the Configure run-only users selection.":::
+   :::image type="content" source="media/coe50.png" alt-text="Screenshot that shows where to find the Configure run-only users selection." lightbox="media/coe50.png":::
 
 1. For the Microsoft Dataverse connector, leave the run-only permission value blank and confirm that the connection reference for the **CoE Audit Logs - Dataverse** connection is configured correctly. If the connection is showing an error, [update the connection reference](faq.md#update-connection-references) for the **CoE Audit Logs - Dataverse** connection reference.
 
-   :::image type="content" source="media/auditlogdv.png" alt-text="Screenshot that shows where to check the CoE Audit Logs - Dataverse connection reference.":::
+   :::image type="content" source="media/auditlogdv.png" alt-text="Screenshot that shows where to check the CoE Audit Logs - Dataverse connection reference." lightbox="media/auditlogdv.png":::
 
 1. Select **Save**, and then close the **Flow details** tab.
 
@@ -235,7 +235,7 @@ For more information on updating environment variables, see [Update Environment 
 
 1. Back in the solution, turn on both the [Child] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
-   :::image type="content" source="media/coe-custom4.PNG" alt-text="Screenshot that shows how to turn audit log flows on.":::
+   :::image type="content" source="media/coe-custom4.PNG" alt-text="Screenshot that shows how to turn audit log flows on." lightbox="media/coe-custom4.PNG":::
 
 ### Example configurations for environment variables
 

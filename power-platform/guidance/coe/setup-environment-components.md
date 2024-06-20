@@ -32,7 +32,7 @@ This article helps you set up the environment request components of the core sol
 1. Open the **More features** page and select **Environment Request management**.
 1. This app provides a guided step by step experience through the configuration steps.
 
-   :::image type="content" source="media/setupwizard-env.png" alt-text="Screenshot showing the CoE Starter Kit Setup Wizard.":::
+   :::image type="content" source="media/setupwizard-env.png" alt-text="Screenshot showing the CoE Starter Kit Setup Wizard." lightbox="media/setupwizard-env.png":::
 
 > [!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the inventory components manually.

@@ -65,13 +65,13 @@ Follow the [instructions for setting environment variables](/power-platform/guid
 
 When enabled, **Video hub** users can comment on selected videos. Comment moderation is managed through the admin app. Comments must be approved before being visible in the **Video hub**.
 
-:::image type="content" source="media/approve-or-reject-comment.png" alt-text="Screenshot that shows where you can approve or reject a single comment in the **Video hub** app.":::
+:::image type="content" source="media/approve-or-reject-comment.png" alt-text="Screenshot that shows where you can approve or reject a single comment in the **Video hub** app." lightbox="media/approve-or-reject-comment.png":::
 
 ##### Related video
 
 When enabled, **Video hub** users see a list of similar videos to the one that they selected. The *content category* value of content filters similar videos.  
 
-:::image type="content" source="media/Video-hub-RelatedVideoEnabled.png" alt-text="Screenshot that shows the similar or related video content.":::
+:::image type="content" source="media/Video-hub-RelatedVideoEnabled.png" alt-text="Screenshot that shows the similar or related video content." lightbox="media/Video-hub-RelatedVideoEnabled.png":::
 
 #### Share **Video hub** apps with admins and makers
 
@@ -160,7 +160,7 @@ The comments schema:
 1. Open the **More features** page and select **Training in a day**.
 
    This app provides a guided step by step experience through the configuration steps.
-   :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard - Training in a day":::
+   :::image type="content" source="media/setupwizard-training.png" alt-text="CoE Starter Kit Setup Wizard - Training in a day" lightbox="media/setupwizard-training.png":::
 
 > [!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
@@ -182,8 +182,7 @@ The comments schema:
 1. Select **Duplicate it**.
 1. Edit the form to add your own questions.
 1. Select **Share**, and copy the link for **Send and collect responses**.
-
-    ![Copy the feedback form URL to send and collect responses.](media/nurture-feedback.png "Copy the feedback form URL to send and collect responses")
+   :::image type="content" source="media/nurture-feedback.png" alt-text="Screensohot that shows location of the URL you can copy from the Share and collect reponses pane. The pane is opened from the Share button of Microsoft Forms." lightbox="media/nurture-feedback.png":::
 
 1. When importing the solution, update thee *Training in a day - Feedback Form* with this value.
 
@@ -213,7 +212,7 @@ For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app
 1. Open the **More features** page and select **Maker Assessment**.
 
    This app provides a guided step by step experience through the configuration steps.
-   :::image type="content" source="media/setupwizard-assessment.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard - Solution Assessment.":::
+   :::image type="content" source="media/setupwizard-assessment.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard - Solution Assessment." lightbox="media/setupwizard-assessment.png":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
@@ -260,7 +259,7 @@ More information:
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Pulse feedback**.
 1. This app provides a guided step by step experience through the configuration steps.
- :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard - Pulse Feedback":::
+ :::image type="content" source="media/setupwizard-pulse.png" alt-text="CoE Starter Kit Setup Wizard - Pulse Feedback" lightbox="media/setupwizard-pulse.png":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
@@ -300,7 +299,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Template Catalog**.
 1. This app provides a guided step by step experience through the configuration steps.
- :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard - Template Catalog":::
+ :::image type="content" source="media/setupwizard-template.png" alt-text="CoE Starter Kit Setup Wizard - Template Catalog" lightbox="media/setupwizard-template.png":::
 
 >[!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.

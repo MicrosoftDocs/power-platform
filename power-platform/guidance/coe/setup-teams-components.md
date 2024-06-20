@@ -38,7 +38,7 @@ For more information, see [Microsoft Dataverse for Teams environment management]
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Teams environment governance**. This app provides a guided step by step experience through the configuration steps.
 
-   :::image type="content" source="media/setupwizard-teams.png" alt-text="Screenshot of the CoE Starter Kit Setup Wizard." lightbox="media/setupwizard-teams.png":::
+   :::image type="content" source="media/setupwizard-teams.png" alt-text="Screenshot of the CoE Starter Kit Setup Wizard." lightbox="media/setupwizard-teams.png" lightbox="media/setupwizard-teams.png":::
 
 > [!NOTE]
 > The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.

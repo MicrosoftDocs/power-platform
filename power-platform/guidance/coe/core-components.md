@@ -235,7 +235,7 @@ Use this app to:
 
 **Prerequisite**: This CoE solution is installed or upgraded before you boot. The app doesn't assist with the upgrade of components, only the configuration of them afterwards.
 
-:::image type="content" source="media\coesetupwizard.png" alt-text="Screenshot that shows the CoE Upgrade Wizard list of prerequisites for the user to confirm.":::
+:::image type="content" source="media\coesetupwizard.png" alt-text="Screenshot that shows the CoE Upgrade Wizard list of prerequisites for the user to confirm." lightbox="media\coesetupwizard.png":::
 
 #### CoE Admin Command Center
 
@@ -260,11 +260,11 @@ Use this app to:
 > [!NOTE]
 > When you first launch the app, bookmarks to all apps included in the CoE Starter Kit get created. Add other relevant bookmarks such as links to the Power BI dashboard, your Power Platform wiki, and community by selecting **Edit bookmarks**.
 
-:::image type="content" source="media\commandcenter1.png" alt-text="Screenshot showing the Bookmarks page of the Command Center menu.":::
+:::image type="content" source="media\commandcenter1.png" alt-text="Screenshot showing the Bookmarks page of the Command Center menu." lightbox="media\commandcenter1.png":::
 
 When you first launch the app, you might have to establish a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-:::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID popup that asks for your Base Resource URL and Microsoft Entra ID Resource URI.":::
+:::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID popup that asks for your Base Resource URL and Microsoft Entra ID Resource URI." lightbox="media/httpazuread.png":::
 
 #### DLP Impact Analysis
 
@@ -300,7 +300,7 @@ Permissions you can change with this app include:
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-:::image type="content" source="media/managepermissions1.png" alt-text="Screenshot that shows the Admin - App Permission Center page from the Apps menu.":::
+:::image type="content" source="media/managepermissions1.png" alt-text="Screenshot that shows the Admin - App Permission Center page from the Apps menu." lightbox="media/managepermissions1.png":::
 
 #### Power Platform Admin View
 
@@ -319,19 +319,19 @@ Use this app to:
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
 
-:::image type="content" source="media/coe-mda1.png" alt-text="Screenshot that shows the Power Platform Dashboard page from the Overview Dashboard menu of the Power Platform Admin View.":::
+:::image type="content" source="media/coe-mda1.png" alt-text="Screenshot that shows the Power Platform Dashboard page from the Overview Dashboard menu of the Power Platform Admin View." lightbox="media/coe-mda1.png":::
 
 You can use this app to see with whom an app is shared, what roles (editor or viewer) the users have, and for groups. You can check the size of the group.
 
-:::image type="content" source="media/coe-mda2.png" alt-text="Screenshot that shows a PowerApps App page with the App Shared With (list) section highlighted.":::
+:::image type="content" source="media/coe-mda2.png" alt-text="Screenshot that shows a PowerApps App page with the App Shared With (list) section highlighted." lightbox="media/coe-mda2.png":::
 
 You can use this app to manage permissions for apps and flows by selecting **Manage Permissions** from the command bar.
 
-:::image type="content" source="media/ppadmin-setapp.png" alt-text="Screenshot that shows the Manage Permissions pane from the Manage Permissions button in the menu bar.":::
+:::image type="content" source="media/ppadmin-setapp.png" alt-text="Screenshot that shows the Manage Permissions pane from the Manage Permissions button in the menu bar." lightbox="media/ppadmin-setapp.png":::
 
 You can use this app to email app owners and app users by selecting **Email Users** from the command bar.
 
-:::image type="content" source="media/ppadmin-email.png" alt-text="Screenshot that shows the Email Users pane opened from the Email Users button on the menu bar.":::
+:::image type="content" source="media/ppadmin-email.png" alt-text="Screenshot that shows the Email Users pane opened from the Email Users button on the menu bar." lightbox="media/ppadmin-email.png":::
 
 ### Power BI report
 
@@ -339,7 +339,7 @@ With Power BI reports, you can get a holistic view of Dataverse data. You can un
 
 Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboard. For more information, see [Gain deep insights into your Microsoft Power Platform adoption with the CoE Power BI dashboard](power-bi.md).
 
-:::image type="content" source="media/pb-2.png" alt-text="Screenshot that shows how to filter your apps in the Overview - Power Apps page of Power BI.":::
+:::image type="content" source="media/pb-2.png" alt-text="Screenshot that shows how to filter your apps in the Overview - Power Apps page of Power BI." lightbox="media/pb-2.png":::
 
 ## Environment Request management components
 
@@ -385,7 +385,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Dataverse. End-users must have a **Per User** license and the app must be assigned a **Per App** license or the environment must be covered by pay-as-you-go.
 
-:::image type="content" source="media\dev-resources-admin-details.png" alt-text="Screenshot that shows the Environment Creation Requests details page.":::
+:::image type="content" source="media\dev-resources-admin-details.png" alt-text="Screenshot that shows the Environment Creation Requests details page." lightbox="media\dev-resources-admin-details.png":::
 
 #### CoE Maker Command Center
 
@@ -401,7 +401,7 @@ Use this app to:
 
 **Prerequisite**: This app uses Dataverse. End-users must have a **Per User** license, the app must be assigned a **Per App** license, or the environment must be covered by pay-as-you-go.
 
-:::image type="content" source="media\dev-resources-maker-env.png" alt-text="Screenshot that shows the Environment Creation Requests page.":::
+:::image type="content" source="media\dev-resources-maker-env.png" alt-text="Screenshot that shows the Environment Creation Requests page." lightbox="media\dev-resources-maker-env.png":::
 
 ## Other core components
 
@@ -430,6 +430,6 @@ When you first open the app catalog, you don't see any apps there. There's a fie
 
 **Prerequisite**: This app uses Dataverse. If you installed this solution in a production environment, end-users need to have a **Per User** license, or the app needs to be assigned a **Per App** license, or the environment needs to be covered by pay-as-you-go.
 
-:::image type="content" source="media/coe67.png" alt-text="Screenshot that shows the App Catalog page of Power Apps.":::
+:::image type="content" source="media/coe67.png" alt-text="Screenshot that shows the App Catalog page of Power Apps." lightbox="media/coe67.png":::
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

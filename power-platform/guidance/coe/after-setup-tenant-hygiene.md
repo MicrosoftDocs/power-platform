@@ -23,7 +23,7 @@ As you gain visibility into your tenant's Power Platform environments, you might
 
 The CoE Starter Kit's Power BI dashboard includes an **Environment Overview** page, which helps you understand which environments exist in your tenant, who created them, and how many apps and flows are created in each environment. This information helps you clean up empty environments or ones no longer required. You can work with environment creators on establishing a suitable environment strategy for their team.
 
-:::image type="content" source="media/pb-5.png" alt-text="Environments overview.":::
+:::image type="content" source="media/pb-5.png" alt-text="Environments overview." lightbox="media/pb-5.png":::
 
 The CoE Starter Kit's governance component includes **Developer Compliance Center**. This component establishes control over environments by requiring environment owners to provide a business justification for maintaining their environment. This control helps ensure all environments in your tenant are aligned with your organization's overall strategy and goals. The control increases visibility on the use of an environment.
 
@@ -144,7 +144,7 @@ These visualizations help you understand how your organization is using the Powe
 
 The inactivity notification process in the CoE Starter Kit automatically detects inactive apps, including their inactive duration. The kit sends notifications to the app owner, asking them to confirm if the app is still needed or can be safely deleted. This process helps organizations manage their Power Platform apps more efficiently by identifying and removing unused or redundant apps. The CoE team can configure the inactivity threshold.
 
-:::image type="content" source="media/coe58.png" alt-text="Screenshot of the inactivity notification mail sent to an app owner":::
+:::image type="content" source="media/coe58.png" alt-text="Screenshot of the inactivity notification mail sent to an app owner." lightbox=media/coe58.png":::
 
 For more information, see:
 
@@ -192,7 +192,7 @@ When an employee owns an app or flow within Power Platform and leaves the organi
 
 This clean-up process is designed to run daily checks for any resources owned by former employees. The checks ensure the resources are either reassigned to a new owner or removed from the tenant if they're no longer needed. This component can help keep your Power Platform solutions secure and compliant, even when employee turnover occurs.
 
-:::image type="content" source="media/orphanedobjects2.png" alt-text="Screenshot of the orphaned resources adaptive card sent to a line manager.":::
+:::image type="content" source="media/orphanedobjects2.png" alt-text="Screenshot of the orphaned resources adaptive card sent to a line manager." lightbox="media/orphanedobjects2.png":::
 
 For more information, see:
 
