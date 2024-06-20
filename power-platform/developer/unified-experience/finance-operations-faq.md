@@ -1,5 +1,5 @@
 ---
-title: "Unified developer - Frequently asked questions"
+title: "Frequently asked questions"
 description: "FAQs for the Power Platform unified developer experience."
 author: pvillads
 ms.date: 06/06/2024
@@ -9,9 +9,9 @@ ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Unified developer - Frequently asked questions
+# Frequently asked questions
 
-This FAQ answers common questions regarding the  experience for finance and operations apps.
+This FAQ answers common questions regarding the unified developer experience for finance and operations apps.
 
 ## Licensing, capacity, and environment provisioning
 
