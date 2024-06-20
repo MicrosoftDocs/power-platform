@@ -1,17 +1,15 @@
 ---
-title: "Frequently asked questions (preview)"
+title: "Frequently asked questions"
 description: FAQs for the Power Platform unified developer experience.
 author: pvillads
-ms.date: 05/22/2024
+ms.date: 06/06/2024
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
 ms.subservice: developer
 ---
 
-# Frequently asked questions (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Frequently asked questions
 
 This FAQ answers common questions regarding the unified developer experience for finance and operations apps.
 
@@ -39,29 +37,32 @@ We currently don't have the capability to provision or update the environment to
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
-### I can't access SQL Server using my SQL Server Management Studio client running in a OneBox environment
+### Can I watch a presentation and demos covering core developer scenarios
 
-We don't currently have a solution for secure connection to SQL Server running behind a cloud endpoint. A TDS endpoint (like the one Dataverse has) is planned to provide read-only queries to a database from SQL Server Management Studio. There's also a JIT access that will allow you to access the data after providing authentication.
+Yes, one such place among others is [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
 
 ### I connected to the environment from Visual Studio but didn't get any pop-up to download metadata
 
-Ensure that the unified development environment you created is of type **Sandbox**. A **Trial** environment won't work.
+Ensure that the unified development environment you created is a unified development environment of type **Sandbox**. A **Trial** environment won't work.
 
 ### The Configure Metadata option doesn't appear on the menu
 
-When this option is missing from the menu, open the Infolog from the menu and retry.
+When this option is missing from the menu, open the Infolog from the menu and retry. This is addressed in application version 10.0.39 and above.
 
-### How do I download again the client assets
+### How do I re download the client assets 
 
-When you connect to the unified development environment, the tool does a few checks and doesn't initiate download if the required assets were previously downloaded. In case you need to download again, simply rename/delete the child folder with the application version of the environment under %LOCALAPPDATA%\Microsoft\Dynamics365. 
+In Visual Studio from the **Tools** menu, select **Download Dynamics 365 FinOps assets**. 
 
 ### PackagesLocalDirectory extraction doesn't complete
 
-Use [7-Zip](https://www.7-zip.org/download.html) to extract the metadata.
+You can configure settings using the Visual Studio setting **Tools** > **Options** > **Power Platform Tools**.
+The option **Auto setup for Dynamics 365...** is enabled by default. This ensures you do not have to manually extract system metadata or create the metadata configuration. The tool will do this for you. The Visual Studio output pane will inform you of any user action needed.
+
+If you still need to, try and use [7-Zip](https://www.7-zip.org/download.html) to extract the metadata.
 
 ### The message "Please wait for update to complete" pop up keeps appearing
 
-When a configuration is created, saved, and the dialog closed, the necessary files are updated and this popup will stop. If the dialog keeps recurring even after you open a new Visual Studio instance, the find the file PackagesLocalDirectory/bin/InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
+When a configuration is created, saved, and the dialog closed, the necessary files are updated and this popup will stop. If the dialog keeps recurring even after you open a new Visual Studio instance, the find the file C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\<AppVersion>\PackagesLocalDirectory\bin\InstalledVersion.json in reference metadata folder and update the version to match the platform version in your environment.
 
 ### Cross reference database validation keeps failing
 
@@ -75,6 +76,7 @@ Ensure that your Microsoft Windows user has access to the specified SQL Server o
 ```powershell
 sqllocaldb stop MSSQLLocalDB
 sqllocaldb delete MSSQLLocalDB
+sqllocaldb create MSSQLLocalDB -s
 ```
 
 5. Run the new SqlLocalDB.msi (2019) installer. It creates a new MSSQLLocalDB instance.
@@ -91,15 +93,11 @@ Error message:
 
 ### My Operations fails with error EnvironmentNotInReadyState
 
-This result happens when the the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
+This result happens when the unified developer environment isn't ready to service the request. Retry after a few minutes. You can check if the environment is in the ready state by opening the finance and operations environment link.
 
 ### What is the earliest version of source environment I can copy from?
 
-Unified developer experience functionality is available for version 10.0.35 and later. Since during copy we also copy compute, if the source environment is earlier than 10.0.35 the target loses unified developer experience functionality.
-
-### I provisioned an environment from UI, but am unable to run unified developer experience operations
-
-The UI doesn't provision online environments. Only sandbox and production environments are provisioned via the UI, and unified developer experience operations aren't supported on these environments. Provision OnlineDev environments via the command line, and then run unified developer experience operations.
+Unified developer experience functionality is generally available for version 10.0.39 and later. Since during copy we also copy compute, if the source environment is earlier than the target one may lose some unified developer experience features that were made available only in the more recent version.
 
 ### Is package deployment of the unit test code required for executing tests in the cloud runtime?
 
@@ -111,7 +109,11 @@ Application Foundation and Test Essentials are required for unit test execution.
 
 ### How can I set up a pipeline that automates creation and application of a deployable package to a new environment?
 
-Use the latest version of the Azure DevOps extension from the marketplace. It's now capable of package creation, ISV license addition, and application of the package. Refer to [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools).
+Use the latest version of the Azure DevOps extension from the marketplace. It's capable of package creation, ISV license addition, and application of the package. Refer to [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools).
+
+### How can I deploy packages received from ISVs to my Unified Developer Environment?
+
+Place the ISV modules in a common folder and add this common parent folder of all ISV modules to the existing list of reference metadata folders in the active configuration you intend to use. Refer [Install and configure development tools](finance-operations-install-config-tools.md) 
 
 ### How do I include a license and directly deploy from Visual Studio?
 
@@ -123,15 +125,23 @@ Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is
 
 Locate ModelUtil.exe inside the bin folder and run it from the command line to see usage. Choose the `-convertToUnifiedPackage` option and provide the package zip and output location as parameters.
 
+### How can I create a fully deployable package (Lifecycle Services legacy package) from Visual Studio?
+
+For UDE we have moved on to Power Platform Unified Package format but you can still create the fully deployable package from Azure DevOps pipelines in addition to the unified format.
+
 ### Stopping debugging restarts the runtime
 
 Use **Detach All** to end debugging in place of **Stop Debugging**.
+
+### Are you still improving developer experiences in UDE?
+
+Yes, we are focused on improving developer experiences across all scenarios encompassing F&O, Dataverse and all of Power Platform. These include login, deployment, troubleshooting, SSRS and richer, uniform and modern UX across the board.
 
 ## Checking logs and history
 
 ### I applied a package, but it failed. How can I do further debugging to determine the failure?
 
-A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
+The package deployment could fail in various stages including DB sync, for various reasons including developer bugs. A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
 
 You can also download the logs from your Dataverse organization:
 
@@ -140,9 +150,9 @@ You can also download the logs from your Dataverse organization:
 - Select the app and then from left pane, select **Operation History**
 - Open the respective record by selecting the **Operation Name** and download the operation logs (`operationlogs.zip` file)
 
-### How can I find out what packages are applied to my environment?
+### How can I find the history of packages applied, DB sync, and other updates to my environment?
 
-You can check the package applied to your Finance and Operations environment with the following steps:
+You can check the packages applied and other updates to your Finance and Operations environment with the following steps:
 
 - Login to the Dataverse organization
 - Find **Finance and Operation Package Manager App** on the main page
@@ -151,7 +161,10 @@ You can check the package applied to your Finance and Operations environment wit
 
 ### My operation failed, and wasn't able to find sufficient information in the logs. What information do I provide to Microsoft Support?
 
-The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\16.11.32802.440\VisualStudioD365Extension-2022-08-12.log.
+The correlation ID, client machine name, and timestamp are required for Microsoft to investigate. The correlation ID is in the Visual Studio output pane. 
+
+The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:\Users\<user>\AppData\Local\Microsoft\Dynamics365\Logs.
+Additionally, a log file named VisualStudioD365Extension*.log is generated at a path similar to C:\Users\AppData\Roaming\Microsoft Corporation\Microsoft® Visual Studio®\<version>\VisualStudioD365Extension-*.log.
 
 ### How do I monitor and diagnose deployed code running in the unified environment?
 
@@ -161,4 +174,9 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 ### See also
 
-[Unified developer experience for finance and operations apps (preview)](finance-operations-dev-overview.md)
+
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
+[Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)  
+[Install and configure development tools](finance-operations-install-config-tools.md)  
+[Write, deploy, and debug X++ code](finance-operations-debug.md)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)

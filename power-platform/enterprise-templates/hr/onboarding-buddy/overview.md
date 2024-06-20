@@ -43,19 +43,19 @@ The Onboarding Buddy template is available in [Microsoft AppSource](<https://aka
 
 The **Employee Experience Base** solution contains components that manage app language preferences.
 
-- **Employee Experience Localization Admin** (model-driven app) allows admins to view and edit localized string values.
-- **Employee Experience Localization** (table) stores the string replacements for every localized version of the app.
+- **Employee Experience Localization Admin** is the model-driven app that allows admins to view and edit localized string values.
+- **Employee Experience Localization** is the table that stores the string replacements for every localized version of the app.
 - Two security roles:
   - **Employee Experience Localization Reader** provides *read* access to the table.
   - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
-- **ISO Employee Experience Language Code** (choice) stores the abbreviations that identify available language codes.
+- **ISO Employee Experience Language Code** is the *one choice* that stores the abbreviations for the available language codes.
 
 ## Onboarding Buddy solution components
 
 The **Onboarding Buddy** solution contains components that manage the user experience.
 
-- **Onboarding Buddy** (canvas app) allows employees to register as Buddies and managers to match them with Onboarders.
-- **Onboarding Buddy Admin** (model-driven app) allows Power Platform and program administrators to set up and manage the program and view the status of all Onboarders and Buddies. With the required security role, administrators can also localize strings in the app.
+- **Onboarding Buddy** is the canvas app that allows employees to register as Buddies and managers to match them with Onboarders.
+- **Onboarding Buddy Admin** is the model-driven app that allows Power Platform and program administrators to set up and manage the program and view the status of all Onboarders and Buddies. With the required security role, administrators can also localize strings in the app.
 - Three tables:
   - **Buddy List** stores information about and the status of Buddies.
   - **Onboarders** stores information about and the status of new and transfer employees.

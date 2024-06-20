@@ -326,7 +326,7 @@ It's important to understand what happens if your organization stops using Manag
 |:---:|:---:|:---:|
 | Maker welcome | Indirect: They stop seeing the welcome message when they enter the environment. | Indirect: They can't define customized welcome messages in environments. |
 | Limit sharing | Direct: They can share their apps with any security groups and users. | Indirect: They can't control how apps in the environment are being shared. |
-| Usage unsights| None | Direct: They, and any other recipients, stop receiving the weekly email digest. |
+| Usage insights| None | Direct: They, and any other recipients, stop receiving the weekly email digest. |
 | Data policies | None | Indirect: DLPs are enforced, but admins can't apply multiple DLPs to the environment. |
 | Pipelines in Power Platform | Direct: They can't use the pipelines to deploy their solutions. | None |
 | Solution checker enforcement | Indirect: They can import any solution without a check for errors, security, and noncompliant assets. | None |
