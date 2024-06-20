@@ -86,7 +86,7 @@ Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power A
 
 ## License entitlements
 
-Licenses have entitlements, each giving access to a specific Power Automate capability : 
+Licenses have entitlements and each entitlement gives access to a specific Power Automate capability : 
 - Usage of specific connector types in cloud flows :
   - Standard connectors
   - Premium connectors
@@ -101,31 +101,37 @@ Licenses have entitlements, each giving access to a specific Power Automate capa
 
 > [!NOTE]
 >
-> A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions and triggers to build its automation.
+> A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions to build its automation.
 
 ### Standard connectors
 
-The [Standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in both [seeded plans](#seeded-plans) and [standalone plans](#standalone-plans). We're continuously adding more standard connectors.
+The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in both [seeded plans](#seeded-plans) and [standalone plans](#standalone-plans). We're continuously adding more standard connectors.
 
 ### Premium connectors
 
-The [Premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans) (except if the cloud flow is in context of an app - details in [Compare Power Automate plans](#compare-power-automate-plans)).
+The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans) (except if the cloud flow is in context of an app - details in [Compare Power Automate plans](#compare-power-automate-plans)).
 
 ### Custom connectors
 
-You might want to communicate with apps/services that aren't available as prebuilt connectors. [Custom connectors](/connectors/custom-connectors) allow you to create (and even share) your own connectors.
-
-### Business process flows
-
-You can create [business process flows](/power-automate/business-process-flows-overview) for a workflow to ensure that users enter data consistently and follow the same steps every time. Business process flows provide a streamlined user experience that leads people through the processes their organization defined for interactions that need to be advanced to reach a conclusion.
+The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
 
 ### Robotic process automation
 
-What if I have an application that Power Automate doesn't have a connector for, and I can't create a custom connector because the app doesn't have an API? _Robotic process automation_ (RPA) is perfect for scenarios such as this one. You can use RPA to create automation even in older systems that don't have an API. With RPA, you automate applications by teaching Power Automate to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. In other words, whereas digital process automation provides connectors so you can _tell_ the application what to do, with RPA, you _show_ it what to do.
+> [!NOTE]
+>
+> What if I have an application that Power Automate doesn't have a connector for, and I can't create a custom connector because the app doesn't have an API? _Robotic process automation_ (RPA) is perfect for scenarios such as this one. You can use RPA to create automation even in older systems that don't have an API. With RPA, you automate applications by teaching Power Automate to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. In other words, whereas digital process automation provides connectors so you can _tell_ the application what to do, with RPA, you _show_ it what to do.
+
+- The attended RPA entitlement is needed to register a machine and trigger a desktop flow in attended mode. It is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user plan.
+- The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine. It is included in the Power Automate Process license and in the Unattended RPA add-on.
+- The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process license.
+
+### Business process flows
+
+The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
 
 ### On premises gateway
 
-The [on-premises data gateway](/power-automate/gateway-reference) acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.
+The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
 
 ### AI Builder credits
 
