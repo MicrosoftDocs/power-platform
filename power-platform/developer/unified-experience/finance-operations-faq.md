@@ -11,7 +11,7 @@ ms.subservice: developer
 
 # Frequently asked questions
 
-This FAQ answers common questions regarding the  experience for finance and operations apps.
+This FAQ answers common questions regarding the unified developer experience for finance and operations apps.
 
 ## Licensing, capacity, and environment provisioning
 
