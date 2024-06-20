@@ -56,7 +56,7 @@
           href: unified-experience\finance-operations-trace-parser.md
         - name: Execute unit tests in Azure Pipelines
           href: unified-experience\finance-operations-pipeline-test.md
-        - name: Unified developer - FAQ
+        - name: Frequently asked questions (FAQ's)
           href: unified-experience\finance-operations-faq.md
     - name: Tools
       expanded: true
