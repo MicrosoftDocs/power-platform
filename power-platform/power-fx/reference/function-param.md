@@ -26,7 +26,7 @@ Launches a webpage or a canvas app and provides access to launch parameters.
 
 Launches a webpage or a canvas app. The function supports:
 
-- **Address** (required), the URL of the webpage or App URI (app id prefixed with `/providers/Microsoft.PowerApps/apps/`) of the canvas app.
+- **Address** (required), the URL of the webpage of the canvas app.
 - **Parameters** (optional), named values to pass to the webpage or canvas app. In a canvas app, parameters can be read with the [**Param**](#param) function.
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
@@ -53,16 +53,14 @@ You can launch canvas apps with **Web link** or **App URI** (app id prefixed wit
 
    ![App details option.](media/function-param/portal-details.png "App details option")
 
-1. Copy **Web link** or **App ID**.
+1. Copy **Web link**.
 
    ![App details with web link and app id.](media/function-param/portal-links.png "App details with web link and app id")
 
-The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function.
-
-The **App ID** can be used with the **Launch** function, but must be prefixed with `/providers/Microsoft.PowerApps/apps/`. For example:
+The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function. For example:
 
 ```powerapps-dot
-Launch( "/providers/Microsoft.PowerApps/apps/f342faaf-5f82-4ace-a64b-7c1b01499231" )
+Launch( "https://apps.powerapps.com/e/{environment id}/a/{app id}?tenantId={tenantId}" )
 ```
 
 Native apps on a device can't be launched directly. There may be indirect options available on some platforms, such as a native app installing a custom URL scheme or registering with the web browser to offer an option for specific web sites.
