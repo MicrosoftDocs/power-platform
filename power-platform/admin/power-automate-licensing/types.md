@@ -92,7 +92,7 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 > [!NOTE]
 >
-> A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions to build its automation.
+> A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions and triggers.
 
 ### Standard connectors
 
@@ -110,10 +110,10 @@ The [custom connectors](/connectors/custom-connectors) entitlement is needed to 
 
 > [!NOTE]
 >
-> What if I have an application that Power Automate doesn't have a connector for, and I can't create a custom connector because the app doesn't have an API? _Robotic process automation_ (RPA) is perfect for scenarios such as this one. You can use RPA to create automation even in older systems that don't have an API. With RPA, you automate applications by teaching Power Automate to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. In other words, whereas digital process automation provides connectors so you can _tell_ the application what to do, with RPA, you _show_ it what to do.
+> Robotic Process Automation (RPA) is needed to interact with applications which are lacking a prebuilt connector and which don't have APIs that could be leverage to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
 
-- The attended RPA entitlement is needed to register a machine and trigger a desktop flow in attended mode. It is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user plan.
-- The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine. It is included in the Power Automate Process license and in the Unattended RPA add-on.
+- The attended RPA entitlement is needed to register a machine, access RPA management portal pages and trigger a desktop flow in attended mode (attended mode refers to a desktop flow execution with human supervision). This entitlement is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user plan.
+- The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It is included in the Power Automate Process license and in the Unattended RPA add-on.
 - The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process license.
 
 ### Business process flows
@@ -123,6 +123,10 @@ The [business process flows](/power-automate/business-process-flows-overview) en
 ### On premises gateway
 
 The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
+
+### Process mining
+
+The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate. It is included in the Power Automate Premium user plan.
 
 ### AI Builder credits
 
