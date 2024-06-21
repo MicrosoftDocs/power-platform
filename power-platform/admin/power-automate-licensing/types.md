@@ -28,7 +28,8 @@ Rights to use [Power Automate capabilities](#license-entitlements) (standard con
 > [!NOTE]
 >
 > - A user-license is user-centric : assigned to a user it entitles this user to access [specific capabilities](#license-entitlements)
-> - A capacity-license is object-centric : consumed by a Power Automate object (cloud flow, machine, hosted machine, etc.) it entitles this object to be licensed autonomously (regardless of user-license owned by makers interacting the object)
+> - A capacity-license is object-centric : consumed by a Power Automate object (cloud flow, machine, hosted machine, etc.) it entitles this object to be licensed autonomously (regardless of user-license owned by makers interacting the 
+> - As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs. 
 
 ## Standalone plans
 
@@ -66,10 +67,6 @@ License name|License type|Consumer object|Entitlements
 Power Automate Process|Capacity|Cloud flow / Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium and custom connectors while being accessed by unlimited users (regardless of their user-license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). Allocated to a machine, it becomes an unattended bot : each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate Hosted Process|Capacity|Cloud flow / Standard machine / Hosted machine / Hosted machine group|The Power Automate Hosted Process is a superset of the Power Automate process : allocated to a cloud flow or to a machine it can provide the same entitlements (as the Process license) but it can also serve the alternative scenario of supporting a Microsoft hosted machine bot that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate Per-flow plan|Capacity (legacy)|Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
-
-> [!NOTE]
->
-> Power Automate pay-as-you-go plan (preview)|Environment|With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
 
 > [!IMPORTANT]
 > __Capacity licenses can't always replace user licenses__:
