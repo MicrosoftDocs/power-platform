@@ -54,7 +54,10 @@ P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer
 > Organizations with these licenses with renewals that are due on or after January 1, 2021 need to transition to the Power Automate Premium user-license or to the Power Apps Premium user-license to continue using the Microsoft Power Platform services. Organizations with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/).
 
 ### Standalone capacity licenses
-On top of user-licenses, organizations can enrich their automation scenarios with capacity licenses which are consummed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
+
+![Standalone capacity licenses](../media/RPA-license/standalone_capacity_licenses.png)
+
+On top of user-licenses, organizations can upgrade their automation scenarios with capacity licenses which are consumed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
 
 License name|License type|Consumer object|Entitlements
 ------|------|------|------
