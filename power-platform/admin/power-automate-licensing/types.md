@@ -21,7 +21,12 @@ ms.collection: bap-ai-copilot
 
 Users gain rights to use Power Automate capabilities (standard connectors, premium connectors, attended RPA, etc.) via licenses. User licenses are available either as :
 - [standalone plans](#standalone-plans) tied to the Power Automate product (divided in 2 categories : user-licenses and capacity-licenses)
-- [seeded plans](#seeded-plans) inherited by licenses from other Microsoft products, they offer limited capabilities on Power Automate.
+- [seeded plans](#seeded-plans) inherited by licenses from other Microsoft products, they offer limited capabilities on Power Automate (made only of user-licenses)
+
+> [!NOTE]
+>
+> - User license
+> - Capacity license
 
 ## Standalone plans
 
