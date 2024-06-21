@@ -1,6 +1,6 @@
 ---
-title: "Write, deploy, and debug X++ code"
-description: "Learn how to write an X++ class, deploy it, and then debug it in the unified developer experience."
+title: "Tutorial: Write, deploy, and debug X++ code"
+description: "Try a tutorial on how to create a module, write an X++ class, deploy it, and then debug it using the unified developer experience."
 author: pvillads
 ms.date: 06/06/2024
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.author: pathaku
 ms.subservice: developer
 ---
 
-# Write, deploy, and debug X++ code
+# Tutorial: Write, deploy, and debug X++ code
 
 The unified developer experience for finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
@@ -26,9 +26,9 @@ Let's begin by developing a runnable X++ class to use as an example. The class's
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
->
->[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
-
+> 
+> [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+ 
 ## Prerequisites
 
 You should have access to a unified developer environment, the Visual Studio tools extensions installed and configured on your developer machine and connected to the same environment. It's important to keep the metadata changes on your developer machine deployed to the connected environment .
@@ -132,7 +132,7 @@ Now let's set a breakpoint in the form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.
 1. In the browser window, select one of the colored squares, let's say the red one. You'll hit the breakpoint.
 1. Continue the execution by pressing F10 or F5. Another colored square is hit and the breakpoint is triggered again.
-1. You can watch the locals, set new breakpoints and do various debugging tasks.
+1. You can watch the locals, set new breakpoints and do various debugging tasks. 
 
 > [!IMPORTANT]
 > If you want to attach the debugger to the running AOS process in the unified environment use **Dynamics 365** > **Launch debugger**.

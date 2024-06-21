@@ -22,7 +22,7 @@ In this tutorial, learn how to:
 - Provision a developer-focused sandbox using PowerShell to use with X++ code.
 - Delete an environment when no longer in use.
 
-As an example of this scenario, a customer who operates their finance and operations apps environments in Microsoft Dynamics 365 Lifecycle Services can provision one of the newer, developer-focused sandboxes in the Power Platform admin center. 
+As an example of this scenario, a customer who operates their finance and operations apps environments in Microsoft Dynamics Lifecycle Services can provision one of the newer, developer-focused sandboxes in the Power Platform admin center. 
 
 ## Environment provisioning
 
@@ -44,7 +44,7 @@ All Dynamics 365 environment templates are associated with their related full us
 | Dynamics 365 Supply Chain Management (preview) | Supply Chain Management (preview) | D365_FinOps_SCM |  |
 | Dynamics 365 Project Operations | Project Operations Integrated (preview) | D365_FinOps_ProjOps |  |
 | Dynamics 365 Operations Application Partner Sandbox | Project Operations Integrated (preview) | D365_FinOps_ProjOps | |
-| Dynamics 365 Commerce| Commerce (preview) | D365_FinOps_Commerce | This template is only available for trials. |
+| Dynamics 365 Commerce| Commerce (preview) | D365_FinOps_Commerce | This template is available only for trials. |
 
 ### Known limitations
 
@@ -56,18 +56,18 @@ Be sure to check out the latest known limitations available in the overview arti
 
 ### Create an environment
 
-> [!Important]
-> New environment creation for sandbox and production environments with finance and operations apps are not available through the UI at this time, but is planned for a future release.
+> [!IMPORTANT]
+> You can't currently use the user interface (UI) to create new sandbox and production environments that have finance and operations apps. However, this capability is planned for a future release.
 
-If you wish to create a new environment with finance and operations apps pre-installed, you can use the PowerShell tab to complete this task in a single action. If you require the user interface (UI), you can follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
+If you want to create a new environment where finance and operations apps are pre-installed, you can use the information on the "PowerShell" tab to complete this task in a single action. If you require the UI, follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md).
 
 # [PowerShell](#tab/PowerShell)
 
 ### Create an environment
 
-Load up your PowerShell console and execute the following commands to generate the environment. Note the variables so that you can change the input values, as required. If you wish to use a service principal, follow the instructions at [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
+Open your PowerShell console application, and run the following commands to generate the environment. Note the variables, so that you can change the input values as required. If you want to use a service principal, follow the instructions in [Creating a service principal application using PowerShell](../powershell-create-service-principal.md).
 
-In the script below, the parameter **DevToolsEnabled** determines if your sandbox environment get provisioned with support for X++ development or wether it becomes a traditional sandbox environemnt for user acceptance testing and training purposes. By setting this value to **true** you can do development, and by setting it to **false** or ommitting it, you receive a traditional sandbox environment with finance and operations apps installed.
+In the following script, the **DevToolsEnabled** parameter determines whether your sandbox environment is provisioned with support for X++ development, or whether it becomes a traditional sandbox environment for user acceptance testing (UAT) and training purposes. If you set the value to **true**, you can do development. If you set the value to **false** or omit the parameter, you receive a traditional sandbox environment that has finance and operations apps installed.
 
 ```powershell
 #Install the module

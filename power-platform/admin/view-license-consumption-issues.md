@@ -73,7 +73,7 @@ This view is available for users with global admin, Power Platform admin, and Dy
 
 The **Power Automate licensing summary** section provides details of how many Power Automate licenses have been purchased, assigned, and consumed in your entire tenant. It provides details of which flow runs are consuming licenses. 
 
-The **Attention neded** section provides a summary count of flows requiring licensing attention in your entire tenant.
+The **Attention needed** section provides a summary count of flows requiring licensing attention in your entire tenant.
 
 | Setting | Description |
 | ------- | ----------- |

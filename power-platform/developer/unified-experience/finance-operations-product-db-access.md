@@ -38,8 +38,9 @@ To request credentials for database access, follow these steps:
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
->
->[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+> 
+> [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+
 
 ### See also
 
