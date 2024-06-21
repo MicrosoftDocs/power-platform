@@ -26,7 +26,7 @@ Rights to use [Power Automate capabilities](#license-entitlements) (standard con
 > [!NOTE]
 >
 > - A user-license is user-centric : assigned to a user it entitles this user to access [specific capabilities](#license-entitlements)
-> - A capacity-license is object-centric : consumed by a Power Automate object (cloud flow, machine, hosted machine, etc.) it entitles this object to be licensed autonomously regardless of the user-license owned by users interacting with this object
+> - A capacity-license is object-centric : consumed by a Power Automate object (cloud flow, machine, hosted machine, etc.) it entitles this object to be licensed autonomously (regardless of user-license owned by makers interacting the object)
 
 ## Standalone plans
 
@@ -57,7 +57,7 @@ P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer
 
 ![Standalone capacity licenses](../media/RPA-license/standalone_capacity_licenses.png)
 
-On top of user-licenses, organizations can upgrade their automation scenarios with capacity licenses which are consumed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
+As an alternative to user-licenses, organizations can upgrade their automation scenarios with capacity licenses which are consumed by Power Automate objects (cloud flows, machines, hosted machines, hosted machine groups) and entitles these objects to be licensed autonomously (regardless of user-license owned by makers interacting with those objects).
 
 License name|License type|Consumer object|Entitlements
 ------|------|------|------
