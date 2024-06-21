@@ -33,7 +33,10 @@ Rights to use [Power Automate capabilities](#license-entitlements) (standard con
 You can purchase the standalone licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page.
 
 ### Standalone user licenses
-Amongst the Power Automate standalone user-license, users who need to create general-purpose automations (with the [premium connectors entitlement](#premium-connectors)), to have full flexibility (with the [custom connectors entitlement](#custom-connectors)) or to interact with applications mimicking mouse movement of a human user (with the [Robotic Process Automation attended entitlement](#robotic-process-automation)) should consider a Power Automate Premium license.
+
+![Standalone user licenses](../media/RPA-license/standalone_user_licenses.png)
+
+Users who need to create general-purpose automations (with the [premium connectors entitlement](#premium-connectors)), to have full flexibility (with the [custom connectors entitlement](#custom-connectors)) or to interact with applications mimicking mouse movement of a human user (with the [Robotic Process Automation attended entitlement](#robotic-process-automation)) should consider a Power Automate Premium license.
 
 Here-after the list of standalone Power Automate user-licenses:
 
