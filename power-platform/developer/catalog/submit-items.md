@@ -4,7 +4,7 @@ description: "Learn how to submit items to your organization's catalog of templa
 author: derekkwanpm
 ms.author: derekkwan
 ms.subservice: developer
-ms.date: 05/24/2024
+ms.date: 07/01/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -56,6 +56,7 @@ After you have installed the Power Platform CLI, you must create an authenticati
 
 1. [View environments with catalogs in your tenant](#view-environments-with-catalogs-in-your-tenant)
 1. [View catalog information](#view-catalog-information)
+1. [Update catalog information](#update-catalog-information)
 1. [View items in the catalog](#view-items-in-the-catalog)
 1. [Install items from the catalog](#install-items-from-the-catalog)
 1. [Submit items to the catalog](#submit-items-to-the-catalog)
@@ -126,7 +127,6 @@ CanSubmit: True
 ### [Web API](#tab/webapi)
 
 Use the `mspcat_GetPowerCatalogInformation` function to get information about the catalog in the environment.
-<!-- TODO add link to reference when generated next time -->
 
 **Request**
 
@@ -158,6 +158,240 @@ OData-Version: 4.0
 
 ---
 
+## Update catalog information
+
+You can update information about the catalog and catalog configuration using the Power Platform Catalog Manager. Select the **Settings** area. More information: [Set up the catalog](../../admin/administer-catalog.md#set-up-the-catalog).
+
+You can also update this information using PAC CLI, The SDK for .NET, and Web API.
+
+### [PAC CLI](#tab/cli)
+
+Use the [pac catalog update](../cli/reference/catalog.md#pac-catalog-update) command to update catalog information.
+
+This command requires a `--path` parameter to a JSON file that looks like this:
+
+```json
+{
+   "catalogEnabled": true,
+   "enableGlobalAutoApproval": false,
+   "catalogHelpLink": "http://www.yourcompany.com/support/",
+   "allowUnmanagedSolutions": false,
+   "catalogName": "Your company catalog name",
+   "catalogDescription": "Catalog for Power Platform applications created by your company."
+}
+```
+
+Use the command like this:
+
+```powershell
+PS C:\catalog> pac catalog update --path "C:\catalog\catalogSettings.json"
+Connected as you@yourorg.onmicrosoft.com
+Connected to... YourOrg
+Catalog settings updated.
+{
+  "catalogDescriptionId": "368b5441-88d0-ec11-a7b5-0022481e6583",
+  "catalogName": "Your company catalog name",
+  "catalogDescription": "Catalog for Power Platform applications created by your company.",
+  "catalogHelpLink": "http://www.yourcompany.com/support/",
+  "catalogEnabled": true,
+  "allowUnmanagedSolutions": false,
+  "enableGlobalAutoApproval": false
+}
+```
+
+### [SDK for .NET](#tab/sdk)
+
+This static `UpdateCatalog` method demonstrates how to update the `mspcat_CatalogDescription` table columns to specify behavior of the catalog.
+
+```csharp
+/// <summary>
+/// Updates catalog information properties
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="catalogName">Display name of the catalog</param>
+/// <param name="catalogDescription">Describes the purpose of this catalog</param>
+/// <param name="catalogHelpLink">Link to help users with submission information</param>
+/// <param name="catalogEnabled">   Enable or disable all operations for the Catalog</param>
+/// <param name="allowUnmanagedSolutions">Allows unmanaged solutions in packages</param>
+/// <param name="enableGlobalAutoApproval">When enabled, this will automatically 
+/// approve all submissions into the system that reach the submitted stage without review. 
+/// Warning When enabled there will be no opportunity to reject a submission.</param>
+static void UpdateCatalog(
+    IOrganizationService service,
+    string? catalogName = null,
+    string? catalogDescription = null,
+    string? catalogHelpLink = null,
+    bool? catalogEnabled = null,
+    bool? allowUnmanagedSolutions = null,
+    bool? enableGlobalAutoApproval = null
+    )
+{
+
+    AttributeCollection attributes = new();
+
+    if (catalogName != null)
+    {
+        attributes.Add("mspcat_catalogname", catalogName);
+    }
+    if (catalogDescription != null)
+    {
+        attributes.Add("mspcat_description", catalogDescription);
+    }
+    if (catalogHelpLink != null)
+    {
+        attributes.Add("mspcat_helplink", catalogHelpLink);
+    }
+    if (catalogEnabled != null)
+    {
+        attributes.Add("mspcat_catalogenabled", catalogEnabled);
+    }
+    if (allowUnmanagedSolutions != null)
+    {
+        attributes.Add("mspcat_allowunmanagedsolutions", allowUnmanagedSolutions);
+    }
+    if (enableGlobalAutoApproval != null)
+    {
+        attributes.Add("mspcat_enableglobalautoapproval", enableGlobalAutoApproval);
+    }
+
+    // Do nothing if nothing changed.
+    if (attributes.Count > 0)
+    {
+
+        //Get the first catalog record
+        QueryExpression query = new("mspcat_catalogdescription")
+        {
+            ColumnSet = new ColumnSet("mspcat_catalogdescriptionid"),
+            TopCount = 1
+        };
+
+        EntityCollection catalogs = service.RetrieveMultiple(query);
+        if (catalogs.Entities.Count == 0)
+        {
+            throw new Exception("No catalog record to update");
+        }
+        Guid firstCatalogId = catalogs.Entities[0].Id;
+
+        Entity catalogConfiguration = new("mspcat_catalogdescription", firstCatalogId)
+        {
+            Attributes = attributes
+        };
+
+        service.Update(catalogConfiguration);
+    }
+    else
+    {
+        // Do nothing
+    }
+}
+```
+
+
+
+### [Web API](#tab/webapi)
+
+This `Update-Catalog` PowerShell function demonstrates how to update the `mspcat_CatalogDescription` table columns to specify behavior of the catalog.
+This function depends on the `Get-Records` and `Update-Record` PowerShell functions described in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api).
+
+
+```powershell
+
+<#
+.SYNOPSIS
+   Updates a catalog record with the provided parameters.
+
+.DESCRIPTION
+   The `Update-Catalog` function updates a catalog record with the provided parameters. 
+   If a parameter is not provided or is `$null`, it will not be included in the update.
+
+.PARAMETER catalogName
+   Display name of the catalog
+
+.PARAMETER catalogDescription
+   Describes the purpose of this catalog
+
+.PARAMETER catalogHelpLink
+   Link to help users with submission information
+
+.PARAMETER catalogEnabled
+   Enable or disable all operations for the catalog
+
+.PARAMETER allowUnmanagedSolutions
+   Allows unmanaged solutions in packages
+
+.PARAMETER enableGlobalAutoApproval
+   When enabled, this will automatically approve all submissions into the system that reach the submitted stage without review. 
+   Warning When enabled there will be no opportunity to reject a submission.
+
+.EXAMPLE
+   # Example 1: Update a catalog with a new name and description
+   Update-Catalog -catalogName "New Catalog Name" -catalogDescription "New Catalog Description"
+
+.EXAMPLE
+   # Example 2: Enable a catalog and allow unmanaged solutions
+   Update-Catalog -catalogEnabled $true -allowUnmanagedSolutions $true
+
+.NOTES
+   This function throws an exception if there are no catalog records to update.
+#>
+function Update-Catalog {
+   param (
+      [string]
+      $catalogName,
+      [string]
+      $catalogDescription,
+      [string]
+      $catalogHelpLink,
+      [Nullable[bool]]
+      $catalogEnabled,
+      [Nullable[bool]]
+      $allowUnmanagedSolutions,
+      [Nullable[bool]]
+      $enableGlobalAutoApproval
+   )
+
+   $body = @{}
+   
+   if ($catalogName) {
+      $body.Add('mspcat_catalogname', $catalogName)
+   }
+   if ($catalogDescription) {
+      $body.Add('mspcat_description', $catalogDescription)
+   }
+   if ($catalogHelpLink) {
+      $body.Add('mspcat_helplink', $catalogHelpLink)
+   }
+   if ($null -ne $catalogEnabled) {
+      $body.Add('mspcat_catalogenabled', $catalogEnabled)
+   }
+   if ($null -ne $allowUnmanagedSolutions) {
+      $body.Add('mspcat_allowunmanagedsolutions', $allowUnmanagedSolutions)
+   }
+   if ($null -ne $enableGlobalAutoApproval) {
+      $body.Add('mspcat_enableglobalautoapproval', $enableGlobalAutoApproval)
+   }
+
+   if ($body.Count -gt 0) {
+      # Get the first catalog record
+      $query = "?`$select=mspcat_catalogdescriptionid&`$top=1"
+      $catalogs = (Get-Records -setName 'mspcat_catalogdescriptions' -query $query).value
+      if ($catalogs.Count -eq 0) {
+         throw "No catalog records to update"
+      }
+      $firstCatalogId = $catalogs[0].mspcat_catalogdescriptionid
+
+      Update-Record `
+         -setName 'mspcat_catalogdescriptions' `
+         -id $firstCatalogId `
+         -body $body
+   }
+   else {
+      # Do nothing
+   }
+}
+```
+
+---
 
 ## View items in the catalog
 

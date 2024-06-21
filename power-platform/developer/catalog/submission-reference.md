@@ -22,7 +22,7 @@ This table describes the properties for the submission document:
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
 |`modelVersion`|string|No|Version number of the submission document. Default is 1.0.0.0.|
-|`sourcePortal`|int|No|Identifies the source of this request. Defaults to `526430005` which is the PAC CLI. For other sources, use `526430000`. Full list of portals can be retried by asking the catalog for the current allowed list.|
+|`sourcePortal`|int|No|Identifies the source of this request. Defaults to `526430005` which is the PAC CLI. For other sources, use `526430000`. The full list is returned by the `mspcat_GetPowerCatalogDetails` function. The `mspcat_GetPowerCatalogDetailsResponse.CatalogDetails.sourceOptions` property lists the available options.|
 |`submissionId`|guid|No|Guid to identify the submission. This is a foreign key to allow for linking the request to other systems.|
 |`operation`|string|Yes|Type of operation that is expected to be used, this is for future expansion and is not currently respected. Valid values:<br /> - `CreateOrUpdate` (Default)<br /> - `Create`<br /> - `Update`<br /> - `Disabled`<br />|
 |`businessJustification`|string|No|Describes the business value of the submission to the approver. This value can contain HTML or Rich Text Format (RTF). This informationappears in the planned consumption experience in the maker discovery user experience. Users might say their submission helps with cost reduction or productivity, for example. Some organizations require certain classes of value and those values can be entered here.|
