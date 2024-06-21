@@ -462,6 +462,8 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
+            - name: Manage security
+              href: security/security-posture-overview.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -1093,6 +1095,8 @@
               href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
             - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Tutorial: Perform a transaction-less copy between environments"
+              href: unified-experience/tutorial-perform-transactionless-copy.md
             - name: "Admin trials for finance and operations apps"
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization

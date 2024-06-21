@@ -11,15 +11,9 @@ ms.topic: "article"
 search.audienceType: 
   - maker
 ---
-# Block unmanaged customizations in Dataverse (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Block unmanaged customizations in Dataverse
 
 This article describes how you as a Power Platform administrator can enable the **Block unmanaged customizations** environment setting in the Power Platform admin center for your Microsoft Dataverse environments. Unmanaged customizations reside at the top layer for a component and subsequently define the runtime behavior of the component. In most situations, you don't want unmanaged customizations determining the behavior of your components.
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 This environment setting allows system administrators to prevent unmanaged customizations in Microsoft Dataverse environments. By blocking unmanaged customizations, you ensure the changes to the environment are only coming from approved application lifecycle management (ALM) processes that have sufficient safety, visibility, and auditing. Block unmanaged customizations continues to allow solution operations that are needed to transport the unmanaged customizations to development environments while keeping the environment unmanaged customization free by removing the unmanaged customizations. This feature is helpful in reducing unmanaged customizations in production environments.
 
