@@ -75,36 +75,25 @@ Power Automate Per-flow plan|Capacity (legacy)|Cloud flow|This license has been 
 
 ## Seeded plans
 
-Users also gain rights to use Power Automate if they're licensed to use any of the following plans where Power Automate licenses are *seeded*. 
-- Microsoft 365 (formerly Office 365)
-- Dynamics 365 Enterprise
-- Dynamics 365 Professional
-- Dynamics 365 Team Member
-- Power Apps (Canvas and Model driven Apps)- Per App plans
-- Power Apps Premium
-- Power Apps Plan 1 (legacy)
-- Power Apps Plan 2 (legacy)
+Users also gain rights to use Power Automate (with limited capabilities) if they have inherited seeded plans from licenses tied to other Microsoft products:
+- Microsoft 365 (formerly Office 365) / Dynamics 365 Enterprise / Dynamics 365 Professional / Dynamics 365 Team Member
+- Power Apps Per-app plan / Power Apps Premium / Power Apps Plan 1 or Plan 2 (legacy)
 - Windows licenses
 
-When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics 365/App created using Power Apps can connect to the following.
+Those plans entitles the user to create and run cloud flows with standard connectors. They can also entitle them to create and run a cloud flow with premium and custom connectors if the cloud flow is associated to the application from which the seeded plan is inherited. 
 
-- To any data source within the use rights of the Dynamics 365/App created using Power Apps.
+- Example 1: if a cloud flow uses [premium connectors](#premium-connectors), is owned by a user with a Power Apps Premium license, associated to a Power App and triggered by the app, any user can run the flow if they have a Power Apps license.
+- Example 2: a cloud flow created within a Dynamics 365/App using a Power Apps can connect to the following :
+  - To any data source within the use rights of the Dynamics 365/App created using Power Apps.
+  - Directly with the Dynamics 365/App created using Power Apps (via built-in triggers/actions).
 
-- Directly with the Dynamics 365/App created using Power Apps (via built-in triggers/actions).
-
-For example, if a flow uses [premium connectors](#premium-connectors) and it's triggered by an app, any user can run the flow if they have a Power Apps license.
-
-If the flow is isolated and has nothing to do with the application, then a standalone Power Automate license must be purchased.
-
-You can find more details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+If the cloud flow is isolated and has nothing to do with the application, then a standalone Power Automate Premium must be purchased. You can find more details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Compare Power Automate plans
 
-Learn [more about license entitlements](#license-entitlements).
+Here-bellow a table detailing each license [entitlement](#license-entitlements) and limits:
 
-Here's a chart that lays out the limits that are associated with the different license plans.
-
-|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Business process flows, Custom connectors, on-premises gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accrued per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
+|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Custom connectors, Business process flows, On-premises gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accrued per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
 |--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
 Power Automate Premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included|One bot included|Not Included|5000|250 MB|2 GB|Included|50 MB per user license up to 100 GB per tenant|
 Power Automate process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|50 MB|200 MB|Not Included|Not Included
