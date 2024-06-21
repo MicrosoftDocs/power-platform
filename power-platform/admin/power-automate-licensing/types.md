@@ -37,7 +37,7 @@ Power Automate P1 and P2 plans (grand fathered)|User license (legacy)|These plan
 
 On top of user-licenses, organizations can enrich their automation scenarios with capacity licenses which are consummed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
 
-License name|License type|Consummer|Description
+License name|License type|Consummer object|Description
 ------|------|------|------
 Power Automate Process|Capacity|Cloud flow or Standard machine|Licensed per bot, Power Automate process licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate Hosted Process|Capacity|Hosted machine or Hosted machine group|Licensed per bot, Power Automate Hosted Process is a superset of the Power Automate process, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
