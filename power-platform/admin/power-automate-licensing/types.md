@@ -69,9 +69,9 @@ Power Automate Hosted Process|Capacity|Cloud flow / Standard machine / Hosted ma
 Power Automate Per-flow plan|Capacity (legacy)|Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
 
 > [!IMPORTANT]
-> __Capacity licenses can't always replace user licenses__:
-> For RPA scenarios, a Power AUtomate Premium user-license is needed to register a machine 
-> s
+> Capacity licenses can't replace all user licenses as some important capabilities are only available to licensed users :
+> - Allocation of a Process license on a machine (to enable unattended mode) still requires the machine to have been registered by a Power Automate Premium user.
+> - Multiple pages in the Power Automate are displayed only to Power Automate Premium users (workqueue page, machine list, desktop flow list, etc.).
 
 ## Seeded plans
 
