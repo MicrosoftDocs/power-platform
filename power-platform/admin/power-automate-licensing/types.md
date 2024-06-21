@@ -37,7 +37,7 @@ Amongst the Power Automate standalone user-license, users who need to create gen
 
 Here-after the list of standalone Power Automate user-licenses:
 
-License name|License type|Description
+License name|License type|Entitlements
 -------|------|------
 Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within service limits) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. [Purchase it](https://powerautomate.microsoft.com/pricing)
 Power Automate Free|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within service limits) restricted to standard connectors only.
@@ -53,7 +53,7 @@ P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer
 ### Standalone capacity licenses
 On top of user-licenses, organizations can enrich their automation scenarios with capacity licenses which are consummed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
 
-License name|License type|Consumer object|Description
+License name|License type|Consumer object|Entitlements
 ------|------|------|------
 Power Automate Process|Capacity|Cloud flow or Standard machine|Licensed per bot, Power Automate process licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate Hosted Process|Capacity|Hosted machine or Hosted machine group|Licensed per bot, Power Automate Hosted Process is a superset of the Power Automate process, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
