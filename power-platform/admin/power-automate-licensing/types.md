@@ -19,12 +19,13 @@ ms.collection: bap-ai-copilot
 
 # Types of Power Automate licenses
 
-Users gain rights to use Power Automate capabilities (standard connectors, premium connectors, attended RPA, etc.) via licenses and add-ons. User licenses are available either as :
-- [standalone plans](#standalone-plans) tied to the Power Automate product
+Users gain rights to use Power Automate capabilities (standard connectors, premium connectors, attended RPA, etc.) via licenses. User licenses are available either as :
+- [standalone plans](#standalone-plans) tied to the Power Automate product (divided in 2 categories : user-licenses and capacity-licenses)
 - [seeded plans](#seeded-plans) inherited by licenses from other Microsoft products, they offer limited capabilities on Power Automate.
 
 ## Standalone plans
 
+### User licenses
 Users who need to create general-purpose automations (with [business process automation entitlement](#business-process-flows) or the [premium connectors entitlement](#premium-connectors)), to have full flexibility (with the [custom connectors entitlement](#custom-connectors)) or to interact with applications mimicking mouse movement of a human user (with the [Robotic Process Automation attended entitlement](#robotic-process-automation)) should consider a standalone Power Automate user-license : 
 
 
@@ -35,6 +36,7 @@ Power Automate pay-as-you-go plan (preview)|Environment|With this plan, organiza
 Power Automate Per-user|User license (legacy)|This plan is no longer available for purchase from [pricing page](https://powerautomate.microsoft.com/pricing). However, customers can purchase it via deal desk. Purchase Power Automate Premium plan instead of this plan. This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate. This includes [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
 Power Automate P1 and P2 plans (grand fathered)|User license (legacy)|These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
 
+### Capacity licenses
 On top of user-licenses, organizations can enrich their automation scenarios with capacity licenses which are consummed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
 
 License name|License type|Consummer object|Description
