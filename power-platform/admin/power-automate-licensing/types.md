@@ -44,42 +44,50 @@ Here-after the list of standalone Power Automate user-licenses:
 
 License name|License type|Entitlements
 -------|------|------
-Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within service limits) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. [Purchase it](https://powerautomate.microsoft.com/pricing)
-Power Automate Free|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within service limits) restricted to standard connectors only.
+Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. [Purchase it](https://powerautomate.microsoft.com/pricing)
+Power Automate Free|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows [PPR limits](#power-platform-requests) restricted to standard connectors only.
 Power Automate Trial|User license (90 days trial)|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits) and with the additional capability to execute their desktop flows in unattended mode on their registered machine (with no unattended bot required).
-Power Automate Per-user plan|User license (legacy)|This license has been replaced by the Power Automate Premium license (providing more entitlements for the same price). It is no longer available for purchase from the [pricing page](https://powerautomate.microsoft.com/pricing) but organizations can still purchase it via deal desk.
+Power Automate Per-user plan|User license (legacy)|This license has been replaced by the Power Automate Premium license (providing more entitlements for the same price). It is no longer available for purchase from the pricing page but organizations can still purchase it via deal desk.
 P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer available for purchase nor via auto-renewal after December 31, 2020.
 
 > [!IMPORTANT]
-> __To organization with active Power Automate P1 and P2 plans__ :
+> __To organizations with active Power Automate P1 and P2 plans__ :
 > 
-> Organizations with these licenses with renewals that are due on or after January 1, 2021 need to transition to the Power Automate Premium user-license or to the Power Apps Premium user-license to continue using the Microsoft Power Platform services. Organizations with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/).
+> Organizations with these licenses with renewals that are due on or after January 1, 2021 need to transition to the Power Automate Premium user-license or to the Power Apps Premium user-license to continue using the Microsoft Power Platform services. Organizations with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or purchase the replacing licenses.
 
 ### Standalone capacity licenses
 
 ![Standalone capacity licenses](../media/RPA-license/standalone_capacity_licenses.png)
 
-As an alternative to user-licenses, organizations can upgrade their automation scenarios with capacity licenses which are consumed by Power Automate objects (cloud flows, machines, hosted machines, hosted machine groups) and entitles these objects to be licensed autonomously (regardless of user-license owned by makers interacting with those objects).
+As an alternative to user-licenses, organizations can upgrade their automation scenarios with capacity licenses which are consumed by Power Automate objects (cloud flows, machines, hosted machines, hosted machine groups) and entitles these objects to be licensed autonomously (regardless of user-license owned by makers interacting with those objects). 
 
 License name|License type|Consumer object|Entitlements
 ------|------|------|------
-Power Automate Process|Capacity|Cloud flow or Standard machine|Licensed per bot, Power Automate process licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization. [Purchase it](https://powerautomate.microsoft.com/pricing) 
-Power Automate Hosted Process|Capacity|Hosted machine or Hosted machine group|Licensed per bot, Power Automate Hosted Process is a superset of the Power Automate process, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
-Power Automate pay-as-you-go plan (preview)|Environment|With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
-Power Automate Per-flow|Capacity (legacy)|Cloud flow|This plan is no longer available for purchase from [pricing page](https://powerautomate.microsoft.com/pricing). However, customers can purchase it via deal desk. Purchase process plan instead of this plan. With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for five active flows. There's a monthly fee for each extra active flow (beyond the five flows that are included in the base fee).
+Power Automate Process|Capacity|Cloud flow / Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium and custom connectors while being accessed by unlimited users (regardless of their user-license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). Allocated to a machine, it becomes an unattended bot : each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. [Purchase it](https://powerautomate.microsoft.com/pricing) 
+Power Automate Hosted Process|Capacity|Cloud flow / Standard machine / Hosted machine / Hosted machine group|The Power Automate Hosted Process is a superset of the Power Automate process : allocated to a cloud flow or to a machine it can provide the same entitlements (as the Process license) but it can also serve the alternative scenario of supporting a Microsoft hosted machine bot that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
+Power Automate Per-flow plan|Capacity (legacy)|Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
+
+> [!NOTE]
+>
+> Power Automate pay-as-you-go plan (preview)|Environment|With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
+
+> [!IMPORTANT]
+> __Capacity licenses can't always replace user licenses__:
+> For RPA scenarios, a Power AUtomate Premium user-license is needed to register a machine 
+> s
 
 ## Seeded plans
 
 Users also gain rights to use Power Automate if they're licensed to use any of the following plans where Power Automate licenses are *seeded*. 
-- Microsoft 365 (formerly Office 365).
-- Dynamics 365 Enterprise.
-- Dynamics 365 Professional.
-- Dynamics 365 Team Member.
-- Power Apps (Canvas and Model driven Apps)- Per App plans.
-- Power Apps per user.
-- Power Apps Plan 1 (grandfathered).
-- Power Apps Plan 2 (grandfathered)
-- Windows licenses.
+- Microsoft 365 (formerly Office 365)
+- Dynamics 365 Enterprise
+- Dynamics 365 Professional
+- Dynamics 365 Team Member
+- Power Apps (Canvas and Model driven Apps)- Per App plans
+- Power Apps Premium
+- Power Apps Plan 1 (legacy)
+- Power Apps Plan 2 (legacy)
+- Windows licenses
 
 When you use seeded plans, your flows must run within the context of the application in which the seeded plan is available. For example, flows included within a Dynamics 365/App created using Power Apps can connect to the following.
 
