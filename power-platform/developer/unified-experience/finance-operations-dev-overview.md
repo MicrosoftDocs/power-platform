@@ -2,7 +2,7 @@
 title: "Unified developer experience for finance and operations apps"
 description: Learn about developing code for finance and operations apps using the new Power Platform unified developer experience.
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 06/21/2024
 ms.topic: overview
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -33,7 +33,7 @@ More information: [Microsoft Power Platform developer documentation](../index.ym
 
 Dual-write provides a tightly coupled near real-time and bi-directional integration between the finance and operations apps and Dataverse. Once an entity is enabled for dual-write, any create, update, or delete change in finance and operations apps results in writes to Dataverse and vice versa. For example, a change in the Customer entity in finance and operations apps is reflected in the Account entity in Dataverse and vice-versa. While all this happens with minimal setup, Power Platform does provide an advanced user interface for all your customization needs.
 
-More information: [DualWrite](https://powerapps.microsoft.com/en-us/blog/announcing-dual-write-preview/).
+More information: [DualWrite](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/).
 
 ### Virtual tables
 
