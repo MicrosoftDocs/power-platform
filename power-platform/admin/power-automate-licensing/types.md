@@ -19,38 +19,44 @@ ms.collection: bap-ai-copilot
 
 # Types of Power Automate licenses
 
-Users gain rights to use Power Automate capabilities (standard connectors, premium connectors, attended RPA, etc.) via licenses. User licenses are available either as :
-- [standalone plans](#standalone-plans) tied to the Power Automate product (divided in 2 categories : user-licenses and capacity-licenses)
-- [seeded plans](#seeded-plans) (user-licenses only) inherited by licenses from other Microsoft products, they offer limited capabilities on Power Automate 
+Rights to use [Power Automate capabilities](#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses. Those licenses are available either as :
+- standalone plans tied to the Power Automate product (divided in 2 categories : user-licenses and capacity-licenses).
+- seeded plans (user-licenses only) inherited by licenses tied to other Microsoft products, they offer limited capabilities on Power Automate.
 
 > [!NOTE]
 >
-> - User licenses are assigned to users and entitle them to access specific capabilities
-> - Capacity license are allocated to Power Automate objects (cloud flows, machines, hosted machines) and entitle them to perform specific operations regardless of user-licenses
+> - A user-license is user-centric : assigned to a user it entitles this user to access [specific capabilities](#license-entitlements)
+> - A capacity-license is object-centric : consumed by a Power Automate object (cloud flow, machine, hosted machine, etc.) it entitles this object to be licensed autonomously regardless of the user-license owned by users interacting with this object
 
 ## Standalone plans
 
+You can purchase the standalone licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page.
+
 ### Standalone user licenses
-Users who need to create general-purpose automations (with [business process automation entitlement](#business-process-flows) or the [premium connectors entitlement](#premium-connectors)), to have full flexibility (with the [custom connectors entitlement](#custom-connectors)) or to interact with applications mimicking mouse movement of a human user (with the [Robotic Process Automation attended entitlement](#robotic-process-automation)) should consider a standalone Power Automate user-license : 
+Users who need to create general-purpose automations (with the [premium connectors entitlement](#premium-connectors)), to have full flexibility (with the [custom connectors entitlement](#custom-connectors)) or to interact with applications mimicking mouse movement of a human user (with the [Robotic Process Automation attended entitlement](#robotic-process-automation)) should consider a standalone Power Automate Premium license.
+
+Here-after the list of standalone Power Automate user-licenses:
 
 License name|License type|Description
-------|------|------
-Power Automate Premium|User license|This plan spans legacy and modern applications, allowing makers to create unlimited flows for API-based automation and automate legacy applications with desktop flows [through Robotic process automation (RPA)](#robotic-process-automation) and AI. This plan includes the ability for users to run an attended RPA bot on their workstation. Additionally, this plan includes access to [AI Builder capacity](#ai-builder-credits), supporting scenarios like forms processing, object detection, prediction, text classification, and recognition. It also includes full process mining desktop functionality and a limited amount of process mining data storage (50 MB per user license up to 100 GB per tenant). This plan can be purchased for a monthly fixed cost for each user. [Purchase it](https://powerautomate.microsoft.com/pricing)
-Power Automate pay-as-you-go plan (preview)|Environment|With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
-Power Automate Per-user|User license (legacy)|This plan is no longer available for purchase from [pricing page](https://powerautomate.microsoft.com/pricing). However, customers can purchase it via deal desk. Purchase Power Automate Premium plan instead of this plan. This plan provides a user with rights to run an unlimited number of flows (within service limits) with the full capabilities of Power Automate. This includes [standard connectors](https://preview.flow.microsoft.com/connectors/?filter=&category=standard),[premium connectors](#premium-connectors),[business process flows](#business-process-flows), [custom connectors](#custom-connectors),[on-premises gateways](#on-premises-gateway) based on their unique needs for a monthly fixed cost for each user.
-Power Automate P1 and P2 plans (grand fathered)|User license (legacy)|These plans are no longer available for purchase nor via auto-renewal after December 31, 2020. Organizations with these plan licenses with renewals that are due on or after January 1, 2021 need to transition to either the Power Automate per user or per flow plan or to the Power Apps per user or per app plan to continue using the Microsoft Power Platform services. Customers with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/?ef_id=dd65eaf79fda13e945118bbef5cc361a:G:s&amp;OCID=AID2200054_SEM_dd65eaf79fda13e945118bbef5cc361a:G:s&amp;msclkid=dd65eaf79fda13e945118bbef5cc361a).
+-------|------|------
+Power Automate Premium|User license|This license allows users to create unlimited cloud flows (within service limits) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to run an attended RPA bot on their registered machine. Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. [Purchase it](https://powerautomate.microsoft.com/pricing)
+Power Automate Per-user plan|User license (legacy)|This license has been replaced by the Power Automate Premium license (providing more entitlements for the same price). It is no longer available for purchase from the [pricing page](https://powerautomate.microsoft.com/pricing) but organizations can still purchase it via deal desk.
+P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer available for purchase nor via auto-renewal after December 31, 2020.
+
+> [!IMPORTANT]
+> __To organization with active Power Automate P1 and P2 plans__ :
+> 
+> Organizations with these licenses with renewals that are due on or after January 1, 2021 need to transition to the Power Automate Premium user-license or to the Power Apps Premium user-license to continue using the Microsoft Power Platform services. Organizations with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or [purchase licenses](https://flow.microsoft.com/pricing/).
 
 ### Standalone capacity licenses
 On top of user-licenses, organizations can enrich their automation scenarios with capacity licenses which are consummed by Power Automate objects (cloud flows, machines, hosted machines, etc.) and license those to perform their operation autonomously from their owner license entitlement :
 
-License name|License type|Consummer object|Description
+License name|License type|Consumer object|Description
 ------|------|------|------
 Power Automate Process|Capacity|Cloud flow or Standard machine|Licensed per bot, Power Automate process licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate Hosted Process|Capacity|Hosted machine or Hosted machine group|Licensed per bot, Power Automate Hosted Process is a superset of the Power Automate process, providing the same functionality but with the addition of a Microsoft hosted machine capacity that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
 Power Automate pay-as-you-go plan (preview)|Environment|With this plan, organizations can get started building flows without any license commitment or upfront costs and use their Azure subscription to [pay only when their flows run](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview). 
 Power Automate Per-flow|Capacity (legacy)|Cloud flow|This plan is no longer available for purchase from [pricing page](https://powerautomate.microsoft.com/pricing). However, customers can purchase it via deal desk. Purchase process plan instead of this plan. With this plan, organizations can implement flows with reserved capacity that serve a team, a department, or an entire organization without having to license each user separately. This plan starts with a fixed monthly cost for five active flows. There's a monthly fee for each extra active flow (beyond the five flows that are included in the base fee).
-
-You can purchase the standalone licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page.
 
 ## Seeded plans
 
@@ -103,7 +109,7 @@ Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power A
 
 ## License entitlements
 
-Licenses have entitlements and each entitlement gives access to a specific Power Automate capability : 
+Licenses have entitlements and each entitlement gives access to a specific Power Automate capability. Here-bellow the list of entitlements that licenses can provide:
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
@@ -113,15 +119,15 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ### Standard connectors
 
-The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in both [seeded plans](#seeded-plans) and [standalone plans](#standalone-plans). We're continuously adding more standard connectors.
+The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in all [seeded plans](#seeded-plans) and all [standalone plans](#standalone-plans). We're continuously adding more standard connectors.
 
 ### Premium connectors
 
-The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans) (except if the cloud flow is in context of an app - details in [Compare Power Automate plans](#compare-power-automate-plans)).
+The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
 
 ### Custom connectors
 
-The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
+The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
 
 ### Robotic process automation
 
@@ -129,21 +135,23 @@ The [custom connectors](/connectors/custom-connectors) entitlement is needed to 
 >
 > [Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications which are lacking a prebuilt connector and which don't have APIs that could be leverage to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
 
-- The attended RPA entitlement is needed to register a machine, access RPA management portal pages and trigger a desktop flow in attended mode (attended mode refers to a desktop flow execution with human supervision). This entitlement is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user plan.
-- The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It is included in the Power Automate Process license and in the Unattended RPA add-on.
-- The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process license.
+- The attended RPA entitlement is needed to register a machine, access RPA management portal pages and trigger a desktop flow in attended mode (attended mode refers to a desktop flow execution with human supervision). This entitlement is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user-license.
+- The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It is included in the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license.
+- The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process capacity-license.
 
 ### Business process flows
 
-The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
+The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
 
 ### On premises gateway
 
-The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the [standalone plans](#standalone-plans) but not in the [seeded plans](#seeded-plans).
+The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
 
 ### Process mining
 
-The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate. It is included in the Power Automate Premium user plan.
+The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate. It is included in the Power Automate Premium user-license.
+
+## Additional entitlements
 
 ### AI Builder credits
 
