@@ -32,27 +32,27 @@ Before you can work with catalog items, you must install and configure it. More 
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems. This can be done using the manager app. More information: [View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)
 
-This article explains how to view, submit and install catalog items programmatically.
+This article explains how to view, submit, and install catalog items programmatically.
 
 
 ## Get started
 
-1. [Install Power Platform CLI](#install-power-platform-cli)
-1. [Get access to catalog as submitter or reader](#get-access-to-catalog-as-submitter-or-reader)
-
-### Install Power Platform CLI
-
-Follow the steps to install Power Platform CLI: [Install Microsoft Power Platform CLI](../cli/introduction.md#install-microsoft-power-platform-cli)
-
-<!-- Use the [pac catalog](cli/reference/catalog.md) commands to interact with the catalog.-->
+- [Get access to catalog as submitter or reader](#get-access-to-catalog-as-submitter-or-reader)
+- [Choose how to interact](#choose-how-to-interact)
 
 ### Get access to catalog as submitter or reader
 
-Contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../../admin/administer-catalog.md#edit-user-access)
+If you don't have the system administrator security role, contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../../admin/administer-catalog.md#edit-user-access)
+
+### Choose how to interact
+
+This article shows three different ways to perform operations with the catalog. Use the one that best suites your skills and the requirements of your project.
+
+#### PAC CLI
+
+After you have installed the Power Platform CLI, you must create an authentication profile using the [pac auth create](../cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed.
 
 ## Use the catalog
-
-After you have installed the Power Platform CLI, you must create an authentication profile using the [pac auth create](../cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed, you can perform the following tasks using PAC CLI:
 
 1. [View environments with catalogs in your tenant](#view-environments-with-catalogs-in-your-tenant)
 1. [View catalog information](#view-catalog-information)
@@ -122,7 +122,7 @@ CanSubmit: True
 ```
 
 [Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
-
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
@@ -156,13 +156,13 @@ OData-Version: 4.0
 }
 ```
 
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+
 ---
 
 ## Update catalog information
 
 You can update information about the catalog and catalog configuration using the Power Platform Catalog Manager. Select the **Settings** area. More information: [Set up the catalog](../../admin/administer-catalog.md#set-up-the-catalog).
-
-You can also update this information using PAC CLI, The SDK for .NET, and Web API.
 
 ### [PAC CLI](#tab/cli)
 
@@ -198,6 +198,8 @@ Catalog settings updated.
   "enableGlobalAutoApproval": false
 }
 ```
+
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
 
 ### [SDK for .NET](#tab/sdk)
 
@@ -286,7 +288,7 @@ static void UpdateCatalog(
 }
 ```
 
-
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
@@ -391,6 +393,8 @@ function Update-Catalog {
 }
 ```
 
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+
 ---
 
 ## View items in the catalog
@@ -409,19 +413,176 @@ Contoso Conference Custom Connector Catalog Conferences Team  ContosoConferences
 Contoso Themed Components           ContosoPublisher          ContosoThemedComponents              efbc469d-f1b2-ed11-83fd-000d3a0a2d9d 1.0.0.1 Published
 ```
 
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+
 ### [SDK for .NET](#tab/sdk)
 
-TODO
+The static `RetrieveCatalogItems` method retrieves and prints a table of data from the `mspcat_applications` and `mspcat_packages` tables about items in the catalog. This function depends on the [ConsoleTables NuGet package](https://www.nuget.org/packages/ConsoleTables) to render the table in a console application.
+
+```csharp
+/// <summary>
+/// Retrieves information about catalog items and writes it to the console
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+static void RetrieveCatalogItems(IOrganizationService service)
+{
+    QueryExpression query = new("mspcat_applications")
+    {
+        ColumnSet = new ColumnSet(
+             "mspcat_tpsid",
+             "mspcat_deploytype",
+             "mspcat_applicationtype",
+             "mspcat_businesscategory",
+             "mspcat_description",
+             "mspcat_applicationsid",
+             "mspcat_publisherid",
+             "mspcat_name",
+             "statuscode"),
+        Criteria = new FilterExpression(LogicalOperator.And)
+        {
+            Conditions = {
+                 { new ConditionExpression("statecode", ConditionOperator.Equal, 0) }
+            }
+        }
+    };
+
+    LinkEntity linkToPackages = query.AddLink(
+        "mspcat_packages",
+        "mspcat_packageasset",
+        "mspcat_packagesid",
+        JoinOperator.Inner);
+
+    linkToPackages.Columns = new ColumnSet(
+        "statecode",
+        "mspcat_uniquename",
+        "mspcat_version",
+        "statuscode");
+
+    linkToPackages.EntityAlias = "pkg";
+
+    EntityCollection catalogs = service.RetrieveMultiple(query);
+
+    var table = new ConsoleTables.ConsoleTable(
+        "Catalog Item Name",
+        "Publisher Name",
+        "Catalog Item ID",
+        "Revision ID",
+        "Version",
+        "Status");
+
+    foreach (Entity catalog in catalogs.Entities)
+    {
+
+        string catalogItemName = catalog.GetAttributeValue<string>("mspcat_name");
+        string publisherName = catalog.FormattedValues["mspcat_publisherid"];
+        string catalogItemId = catalog.GetAttributeValue<string>("mspcat_tpsid");
+        Guid revisionId = catalog.GetAttributeValue<Guid>("mspcat_applicationsid");
+        string version = (string)catalog.GetAttributeValue<AliasedValue>("pkg.mspcat_version").Value;
+        string status = catalog.FormattedValues["statuscode"];
+
+        string[] rowData = {
+            catalogItemName,
+            publisherName,
+            catalogItemId,
+            revisionId.ToString(),
+            version,
+            status
+        };
+
+        table.Rows.Add(rowData);
+
+    }
+
+    table.Write();
+}
+```
+
+The output of this example might look something like this:
+
+```text
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | Catalog Item Name                  | Publisher Name          | Catalog Item ID                   | Revision ID                          | Version | Status    |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | Contoso Conference Custom Connector| Catalog Conferences Team| ContosoConferencesCustomConnector | 4e882dd6-74f3-ed11-8849-000d3a0a286b | 1.0.0.1 | Published |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | Contoso Themed Components          | ContosoPublisher        | ContosoThemedComponents           | efbc469d-f1b2-ed11-83fd-000d3a0a2d9d | 1.0.0.1 | Published |
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
+
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)   
+[Query data using QueryExpression](/power-apps/developer/data-platform/org-service/queryexpression/overview)
+
 
 ### [Web API](#tab/webapi)
 
-// Get Submission details from the catalog.
-GET /mspcat_GetPowerCatalogDetails
+The static `RetrieveCatalogItems` method retrieves and prints a table of data from the `mspcat_applications` and `mspcat_packages` tables about items in the catalog. This function depends on the `Get-Records` function introduced in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
+```powershell
+function Get-CatalogItems{
+
+   $columns = @(
+      "mspcat_tpsid",
+      "mspcat_deploytype",
+      "mspcat_applicationtype",
+      "mspcat_businesscategory",
+      "mspcat_description",
+      "mspcat_applicationsid",
+      "_mspcat_publisherid_value",
+      "mspcat_name",
+      "statuscode"
+   )
+   $select = "?`$select=" + ($columns -join ',')
+
+   $filter = "&`$filter=statecode eq 0 and _mspcat_packageasset_value ne null"
+
+   $expandColumns = @(
+      "statecode",
+      "mspcat_uniquename",
+      "mspcat_version",
+      "statuscode"
+   )
+
+   $expand = "&`$expand=mspcat_PackageAsset"
+   $expand += "(`$select=" + ($expandColumns -join ',')+ ")"
+
+   (Get-Records `
+      -setName 'mspcat_applicationses' `
+      -query ($select + $filter + $expand)).value 
+      | Format-Table @{Name='Catalog Item Name' ; Expression={$_.mspcat_name}}, `
+         @{Name='Publisher Name' ; Expression={$_.'_mspcat_publisherid_value@OData.Community.Display.V1.FormattedValue'}}, `
+         @{Name='Catalog Item ID' ; Expression={$_.mspcat_tpsid}}, `
+         @{Name='Revision ID' ; Expression={$_.mspcat_applicationsid }}, `
+         @{Name='Version' ; Expression={$_.mspcat_PackageAsset.mspcat_version}}, `
+         @{Name='Status' ; Expression={$_.mspcat_PackageAsset.'statuscode@OData.Community.Display.V1.FormattedValue'}}
+}
+```
+
+This is the query composed:
+
+```http
+GET [Organization URI]/api/data/v9.2/mspcat_applicationses?$select=mspcat_tpsid,mspcat_deploytype,mspcat_applicationtype,mspcat_businesscategory,mspcat_description,mspcat_applicationsid,_mspcat_publisherid_value,mspcat_name,statuscode&$filter=statecode%20eq%200%20and%20_mspcat_packageasset_value%20ne%20null&$expand=mspcat_PackageAsset($select=statecode,mspcat_uniquename,mspcat_version,statuscode) HTTP/1.1
+OData-MaxVersion: 4.0
+Authorization: Bearer [REDACTED]
+Prefer: odata.include-annotations="*"
+OData-Version: 4.0
+Accept: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Microsoft Windows 10.0.22631; en-US) PowerShell/7.4.2
+Accept-Encoding: gzip, deflate, br
+```
+
+The output of this example might look something like this:
+
+```text
+Catalog Item Name                   Publisher Name           Catalog Item ID                   Revision ID                          Version Status
+----------------------------------- ------------------------ --------------------------------- -----------------------------------  ------- ---------
+Contoso Conference Custom Connector Catalog Conferences Team ContosoConferencesCustomConnector 4e882dd6-74f3-ed11-8849-000d3a0a286b 1.0.0.1 Published
+Contoso Themed Components           ContosoPublisher         ContosoThemedComponents           efbc469d-f1b2-ed11-83fd-000d3a0a2d9d 1.0.0.1 Published
+```
+
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
 ---
-
-
 
 
 ## Install items from the catalog
@@ -438,13 +599,15 @@ ContosoConferencesCustomConnector
 Tracking id for this installation is 202012ec-80f3-ed11-8849-000d3a0a2d9d
 ```
 
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+
 ### [SDK for .NET](#tab/sdk)
 
-TODO
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
-TODO
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
 ---
 
@@ -469,15 +632,19 @@ Connected as user@domain
 Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
 ```
 
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+
 ### [SDK for .NET](#tab/sdk)
 
-TODO
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
 // Send base64 encoded submission document as `EncodedApprovalRequest`
 POST //mspcat_SubmitCatalogApprovalRequest
 Returns AsyncOperationId and CertificationRequestId
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
 ---
 
@@ -512,15 +679,18 @@ Connected as user@domain
 Status of the Submit request: Submitted
 ```
 
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+
 ### [SDK for .NET](#tab/sdk)
 
-TODO
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
 // Poll for status of certification request
 GET /mspcat_certificationrequests(id)?$select=statuscode
 
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
 ---
 
