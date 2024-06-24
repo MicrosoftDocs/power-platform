@@ -3,14 +3,14 @@ title: Types of Power Automate licenses
 description: Learn about types of Power Automate licenses.
 author: V-Camille
 contributors:
-  - V-Camille
+  - cvassallo
   - samathur
   - PriyaKodukula
   - v-aangie
 ms.subservice: admin
 ms.topic: overview
 ms.date: 06/24/2024
-ms.author: V-Camille
+ms.author: cvassallo
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
