@@ -48,7 +48,7 @@ If you see this error, you should either sign in with the identity that installe
 
 To ensure compatibility with all apps and flows, include the English language pack in your environment as the CoE Starter Kit solutions don't offer localization and only support English. For more information, see [Regional and language options for your environment](/power-platform/admin/enable-languages).
 
-## Coe owned by Service Principle
+## Service Principles
 
 Not all connectors yet support Service Principles. For example, the Dataverse connector doesn't yet support them. As a result, you can't install and run the CoE Starter Kit using a Service Principle as an identity.
 
@@ -60,7 +60,7 @@ We advise against using security groups to manage access to your CoE environment
 
 Trial licenses don't have sufficient [API call allowances](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits) to run the CoE Starter Kit flows. For a full list of license requirements, see [Setup Prerequisite](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
-## MFA (multifactor authentication)
+## Multifactor authentication
 
 Multifactor authentication can be used for the account setting up the CoE Starter Kit, if **MaxAgeMultiFactor** is set to **Until-Revoked** instead of a fixed time. For more information, see [Recommendations for conditional access and multifactor authentication in Microsoft Power Automate (Flow)](/troubleshoot/power-platform/power-automate/conditional-access-and-multi-factor-authentication-in-flow).
 
@@ -115,7 +115,7 @@ The longer you have the CoE starter kit installed, the more usage data is gather
 
 [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) returns all cloud flows.
 
-### Power Platform Admin Center
+### Power Platform admin center
 
 [Power Apps](/power-platform/admin/admin-manage-apps) and [Power Automate](/power-platform/admin/manage-power-automate) resources return the latest and most up-to-date inventory of your environment. To show the latest information in the admin center, refresh the page.
 
