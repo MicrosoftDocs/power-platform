@@ -69,9 +69,9 @@ Power Automate Hosted Process|Capacity|- Cloud flow <br>- Standard machine <br>-
 Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
 
 > [!IMPORTANT]
-> Capacity licenses can't replace all user licenses as some important capabilities are only available to licensed users :
+> Capacity licenses can't replace all user licenses within an environment as some essential capabilities are only available to licensed users :
 > - Allocation of a Process license on a machine (to enable unattended mode) still requires the machine to have been registered by a Power Automate Premium user.
-> - Multiple pages in the Power Automate are displayed only to Power Automate Premium users (workqueue page, machine list, desktop flow list, etc.).
+> - Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
 
 ## Compare standalone Power Automate licenses
 
@@ -80,19 +80,25 @@ Here-bellow a table detailing each license [entitlement](#license-entitlements) 
 ||Premium license<br>____________________________|Process license<br>____________________________|Hosted Process license<br>____________________________|
 |----------|-------|---------------------|--------------|
 |__Applied to__|User|- Cloud flow <br>- Machine|- Cloud flow <br>- Machine <br>- Hosted machine <br>- Hosted machine group|
-|__Daily PPR limit  <sup>1</sup>__|40k per user|250k per Process license|250k per Hosted Process license|
+|__Daily PPR limit  <sup>1</sup>__|40k per user|250k per Process license <sup>2</sup>|250k per Hosted Process license <sup>2</sup>|
 |__Standard connectors__|Included|Included|Included|
 |__Premium connectors__|Included|Included|Included|
 |__Custom connectors__|Included|Included|Included|
 |__Attended RPA__|Included|Not included|Not included|
-|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>2</sup>|
-|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>2</sup>|
+|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>3</sup>|
+|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>3</sup>|
 |__Business process flows__|Included|Included|Included|
 |__On-premises gateways__|Included|Included|Included|
 |__Process mining__|Included|Not included|Not included|
+|__Process mining data storage__|50 MB per license <sup>4</sup>|Not included|Not included|
+|__AI Builder credits__|5000|5000|5000|
+|__Dataverse database storage__|250 MB per license|50 MB per license|Not included|
+|__Dataverse file storage__|2 GB per license|200 MB per license|Not included|
 
-_1 : The Power Platform Requests are subjected to higher limits during the transition period ([see details](#power-platform-requests))_ <br>
-_2 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._
+_1 : The Power Platform Requests are subjected to higher limits during the transition period ([see details](#power-platform-requests))._ <br>
+_2 : When multiple units of Process / Hosted Process licenses are allocated the a cloud flow, their PPR limits are stacked._ <br>
+_3 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._<br>
+_4 : Up to 100 GB per tenant._
 
 ## License entitlements
 
@@ -124,22 +130,19 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 |Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
 |----------|-------|
-|Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans))..|
+|Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
 |On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
 |Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate. It is included in the Power Automate Premium user-license.|
 
 
-## Additional entitlements
+### Additional entitlements : credits and storage
 
-### AI Builder credits
+|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|----------|-------|
+|AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_ Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each Power Automate Premium license grants you 5,000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq)..|
+|Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
+|Process mining data storage||
 
-With [AI builder](/power-automate/use-ai-builder), you to add intelligence to your automated processes, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits". Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic OCR extractions with _text recognition_.
-
-Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each Power Automate Premium license grants you 5,000 credits, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).
-
-### Dataverse database and file capacity
-
-Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).
 
 ## Seeded licenses
 
