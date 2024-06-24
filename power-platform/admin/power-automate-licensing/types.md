@@ -108,6 +108,17 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
+### How can I see my current entitlements ?
+
+In the Power Automate portal, click on the __Settings__ and on __View my licenses__ :
+
+![License entitlements](../media/RPA-license/view-my-licenses-2.png)
+
+> [!NOTE]
+> - The user license(s) are displayed in the section _My licenses_
+> - The capacity license(s) (and add-ons) are displayed in the section _Environment capacities_
+> - The user entitlement are displayed in the _Capabilities_ section with a green check mark
+
 ### Entitlements to usage of connector types in cloud flows
 
 A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
