@@ -43,9 +43,9 @@ Users who need to create general-purpose automations (with the [premium connecto
 
 Here-after the list of standalone Power Automate user-licenses:
 
-License name|License type|Entitlements
+License name &nbsp; &nbsp; &nbsp; &nbsp;|License type|Entitlements
 -------|------|------
-Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. [Purchase it](https://powerautomate.microsoft.com/pricing)
+Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. <br><br>[Purchase it](https://powerautomate.microsoft.com/pricing)
 Power Automate Free|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows [PPR limits](#power-platform-requests) restricted to standard connectors only.
 Power Automate Trial|User license (90 days trial)|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits) and with the additional capability to execute their desktop flows in unattended mode on their registered machine (with no unattended bot required).
 Power Automate Per-user plan|User license (legacy)|This license has been replaced by the Power Automate Premium license (providing more entitlements for the same price). It is no longer available for purchase from the pricing page but organizations can still purchase it via deal desk.
@@ -64,9 +64,9 @@ As an alternative to user-licenses, organizations can upgrade their automation s
 
 License name|License type|Consumer object|Entitlements
 ------|------|------|------
-Power Automate Process|Capacity|Cloud flow / Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium and custom connectors while being accessed by unlimited users (regardless of their user-license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). Allocated to a machine, it becomes an unattended bot : each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. [Purchase it](https://powerautomate.microsoft.com/pricing) 
-Power Automate Hosted Process|Capacity|Cloud flow / Standard machine / Hosted machine / Hosted machine group|The Power Automate Hosted Process is a superset of the Power Automate process : allocated to a cloud flow or to a machine it can provide the same entitlements (as the Process license) but it can also serve the alternative scenario of supporting a Microsoft hosted machine bot that can be used for hosted machine or hosted machine group, enabling RPA with zero infrastructure. [Purchase it](https://powerautomate.microsoft.com/pricing) 
-Power Automate Per-flow plan|Capacity (legacy)|Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
+Power Automate Process|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium and custom connectors while being accessed by unlimited users (regardless of their user-license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot : each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. <br><br>[Purchase it](https://powerautomate.microsoft.com/pricing) 
+Power Automate Hosted Process|Capacity|- Cloud flow <br>- Standard machine <br>- Hosted machine <br>- Hosted machine group|The Power Automate Hosted Process is a superset of the Power Automate process : allocated to a cloud flow or to a machine it provides it the same entitlements (as the Process license) but it can also serve the alternative scenario of supporting a Microsoft hosted machine bot that can be used for a hosted machine or a hosted machine group, enabling RPA with zero infrastructure. <br><br>[Purchase it](https://powerautomate.microsoft.com/pricing) 
+Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
 
 > [!IMPORTANT]
 > Capacity licenses can't replace all user licenses as some important capabilities are only available to licensed users :
@@ -92,6 +92,21 @@ If the cloud flow is isolated and has nothing to do with the application, then a
 ## Compare Power Automate plans
 
 Here-bellow a table detailing each license [entitlement](#license-entitlements) and limits:
+
+||Premium license|Process license|Hosted Process license|
+|----------|-------|---------------------|--------------|
+|__Applied to__|User|- Cloud flow <br>- Machine|- Cloud flow <br>- Machine <br>- Hosted machine <br>- Hosted machine group|
+|__Standard connectors__|Included|Included|Included|
+|__Premium connectors__|Included|Included|Included|
+|__Custom connectors__|Included|Included|Included|
+|__Attended RPA__|Included|Not included|Not included|
+|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included<sup>1</sup>|
+|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>1</sup>|
+|__Business process flows__|Included|Included|Included|
+|__On-premises gateways__|Included|Included|Included|
+|__Process mining__|Included|Not included|Not included|
+
+1 : The Hosted Process license provides an unattended bot when allocated to a standard machine OR a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group).
 
 |License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Custom connectors, Business process flows, On-premises gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accrued per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
 |--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
