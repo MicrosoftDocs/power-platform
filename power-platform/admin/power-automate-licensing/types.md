@@ -80,17 +80,19 @@ Here-bellow a table detailing each license [entitlement](#license-entitlements) 
 ||Premium license<br>____________________________|Process license<br>____________________________|Hosted Process license<br>____________________________|
 |----------|-------|---------------------|--------------|
 |__Applied to__|User|- Cloud flow <br>- Machine|- Cloud flow <br>- Machine <br>- Hosted machine <br>- Hosted machine group|
+|__Daily PPR limit  <sup>1</sup>__|40k per user|250k per Process license|250k per Hosted Process license|
 |__Standard connectors__|Included|Included|Included|
 |__Premium connectors__|Included|Included|Included|
 |__Custom connectors__|Included|Included|Included|
 |__Attended RPA__|Included|Not included|Not included|
-|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>1</sup>|
-|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>1</sup>|
+|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>2</sup>|
+|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>2</sup>|
 |__Business process flows__|Included|Included|Included|
 |__On-premises gateways__|Included|Included|Included|
 |__Process mining__|Included|Not included|Not included|
 
-_1 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._
+_1 : The Power Platform Requests are subjected to higher limits during the transition period ([see details](#power-platform-requests))_ <br>
+_2 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._
 
 ## License entitlements
 
