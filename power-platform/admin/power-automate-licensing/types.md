@@ -27,7 +27,7 @@ Rights to use [Power Automate capabilities](#license-entitlements) (standard con
 
 > [!NOTE]
 >
-> - A user-license is user-centric: i's assigned to a user and it entitles this user to access [specific capabilities](#license-entitlements)
+> - A user-license is user-centric: it's assigned to a user and it entitles this user to access [specific capabilities](#license-entitlements)
 > - A capacity-license is object-centric: it's consumed by a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user-licenses owned by makers interacting with the object)
 > - As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs. 
 
