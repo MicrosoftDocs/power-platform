@@ -262,19 +262,25 @@ To know which users have the Power Automate Free license, admins can go to the [
 
 Select **Assigned licenses** to see which users have Free license.
 
-### Trial license
-
-There are two types of Trial license available for Power Automate : admin managed trials and user trial (= Power Automate Trial license).
-
-#### Power Automate Trial license
+### Power Automate Trial license
 
 The Power Automate Trial license is started by the user from within the Power Automate portal. For example, when a user tries to create a desktop flow without a Power Automate Premium license, the user is prompted to start a Trial that includes usage of premium connectors, attended RPA and unattended RPA. This trial lasts for 90 days.
 
 ![Start free trial from within Power Automate](../media/power-automate-licensing/free-trial-inline.png)
 
-#### Admin managed Trial license
+#### How can admins allow or block Power Automate Trial licenses (self-assisted)?
 
-Global admins use the Microsoft 365 admin center to get Power Automate Premium, Power Automate Process, or Power Automate Hosted Process trials and assign them to users / environments. These Trial licenses are for 30 days. Global admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). 
+Admins can use PowerShell cmdlets to enable or disable self-assisted trials. Once disabled, all existing licenses of the specified type are removed from all users in the tenant. These aren't recoverable. Additionally, it blocks all further assignment of licenses of that type. Admins can enable self-assisted trials at any time.
+
+[Learn how to create a trial (subscription-based) environment in the Power Platform admin center](../trial-environments.md#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
+
+#### Are Power Automate Trial licenses available in GCC and government clouds?
+
+No, Power Automate Trial licenses are not available work in government clouds (GCC). Those organizations can only purchase licenses with volume discounting.
+
+### Admin managed trial licenses
+
+Global admins use the Microsoft 365 admin center to get Power Automate Premium, Power Automate Process, or Power Automate Hosted Process trials and assign them to users / environments. These trials are for 30 days. Global admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). 
 
 > [!NOTE]
 > - Admin managed trials are different from the Power Automate Trial license (self-assisted).
@@ -300,29 +306,16 @@ Follow these steps to get started.
 
 After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
 
-#### Power Apps Developer plan
-
-There's a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You aren't allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows can't be created in an environment with the Power Apps Developer plan.
-
-
-### FAQ on trials
-
-Here are some of the frequently asked questions about trials.
-
 #### How can I create an admin trial, check expiry and extend trials?
 
 Follow these instructions to [create an admin trial, check expiry, and extend trials](../trial-environments.md#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
 
-#### How can admins allow or block Power Automate Trial licenses (self-assisted)?
-
-Admins can use PowerShell cmdlets to enable or disable self-assisted trials. Once disabled, all existing licenses of the specified type are removed from all users in the tenant. These aren't recoverable. Additionally, it blocks all further assignment of licenses of that type. Admins can enable self-assisted trials at any time.
-
-[Learn how to create a trial (subscription-based) environment in the Power Platform admin center](../trial-environments.md#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
-
 #### How can I convert a trial environment to a production environment?
 
-You can convert either type of trial environments to a production environment by switching it to consume from paid capacity, keeping it from being disabled and deleted. After it becomes a production environment, it follows the paid license lifecycle.
+You can convert either type of trial environments to a production environment by switching it to consume from paid capacity, keeping it from being disabled and deleted. After it becomes a production environment, it follows the paid license lifecycl
 
-#### Do trials work in GCC and government clouds?
+### Power Apps Developer plan
 
-No, trials don't work in government clouds (GCC), they can only purchase plans with volume discounting.
+There's a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You aren't allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows can't be created in an environment with the Power Apps Developer plan.
+
+
