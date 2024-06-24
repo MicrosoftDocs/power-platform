@@ -45,9 +45,9 @@ Here-after the list of standalone Power Automate user-licenses:
 
 |License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________________|
 -------|------|------
-Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition. <br><br>[Purchase it](https://powerautomate.microsoft.com/pricing)
-Power Automate Free|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows [PPR limits](#power-platform-requests) restricted to standard connectors only.
-Power Automate Trial|User license <br>(90 days trial) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits) and with the additional capability to execute their desktop flows in unattended mode on their registered machine (with no unattended bot required).
+Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through [Robotic process automation (RPA)](#robotic-process-automation)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to [process mining](#process-mining) functionalities and provisioning of [AI Builder credits](#ai-builder-credits) which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition.
+Power Automate Free|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) restricted to standard connectors only.
+Power Automate Trial|User license <br>(90 days trial) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits) and with the additional capability to execute their desktop flows in unattended mode on their registered machine (without unattended bot requirement).
 Power Automate Per-user plan &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|User license (legacy)|This license has been replaced by the Power Automate Premium license (providing more entitlements for the same price). It is no longer available for purchase from the pricing page but organizations can still purchase it via deal desk.
 P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer available for purchase nor via auto-renewal after December 31, 2020.
 
@@ -64,8 +64,8 @@ As an alternative to user-licenses, organizations can upgrade their automation s
 
 |License name<br>__________________________|License type<br>_______________|Consumer object<br>___________________________|Entitlements<br>___________________________________________________________________|
 ------|------|------|------
-Power Automate Process|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium and custom connectors while being accessed by unlimited users (regardless of their user-license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot : each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. <br><br>[Purchase it](https://powerautomate.microsoft.com/pricing) 
-Power Automate Hosted Process|Capacity|- Cloud flow <br>- Standard machine <br>- Hosted machine <br>- Hosted machine group|The Power Automate Hosted Process is a superset of the Power Automate process : allocated to a cloud flow or to a machine it provides it the same entitlements (as the Process license) but it can also serve the alternative scenario of supporting a Microsoft hosted machine bot that can be used for a hosted machine or a hosted machine group, enabling RPA with zero infrastructure. <br><br>[Purchase it](https://powerautomate.microsoft.com/pricing) 
+Power Automate Process|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium and custom connectors while being accessed by unlimited users (regardless of their user-license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot : each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.
+Power Automate Hosted Process|Capacity|- Cloud flow <br>- Standard machine <br>- Hosted machine <br>- Hosted machine group|The Power Automate Hosted Process is a superset of the Power Automate process : allocated to a cloud flow or to a machine it provides it the same entitlements (as the Process license) but it can also serve the alternative scenario of supporting a Microsoft hosted machine bot that can be used for a hosted machine or a hosted machine group, enabling RPA with zero infrastructure.
 Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|This license has been replaced by the Power Automate Process license. It is no longer available for purchase from pricing page but customers can still purchase it via deal desk.
 
 > [!IMPORTANT]
@@ -90,7 +90,7 @@ Here-bellow a table detailing each license [entitlement](#license-entitlements) 
 |__On-premises gateways__|Included|Included|Included|
 |__Process mining__|Included|Not included|Not included|
 
-1 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group).
+_1 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._
 
 ## License entitlements
 
@@ -98,31 +98,26 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
-> [!NOTE]
->
-> A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions and triggers.
+### Entitlements by connector types usable in cloud flows
 
-### Standard connectors
+A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions and triggers.
 
-The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in all [seeded plans](#seeded-plans) and all [standalone plans](#standalone-plans). We're continuously adding more standard connectors.
+|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|----------|-------|
+|Standard connectors|The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It is included in all [seeded plans](#seeded-plans) and all [standalone plans](#standalone-plans). We're continuously adding more standard connectors.|
+|Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
+|Custom connectors|The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
 
-### Premium connectors
+### Entitlements for usage of Robotic process automation (RPA)
 
-The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
+[Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications which are lacking a prebuilt connector and which don't have APIs that could be leverage to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
 
-### Custom connectors
+|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|----------|-------|
+|Attended RPA|The attended RPA entitlement is needed to register a machine, access RPA management portal pages and trigger a desktop flow in attended mode (attended mode refers to a desktop flow execution with human supervision). This entitlement is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user-license.|
+|Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It is included in the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license.|
+|Hosted RPA|The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process capacity-license.|
 
-The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
-
-### Robotic process automation
-
-> [!NOTE]
->
-> [Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications which are lacking a prebuilt connector and which don't have APIs that could be leverage to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
-
-- The attended RPA entitlement is needed to register a machine, access RPA management portal pages and trigger a desktop flow in attended mode (attended mode refers to a desktop flow execution with human supervision). This entitlement is also needed to create a desktop flow in any non-default environment. It is included in the Power Automate Premium user-license.
-- The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It is included in the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license.
-- The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process capacity-license.
 
 ### Business process flows
 
