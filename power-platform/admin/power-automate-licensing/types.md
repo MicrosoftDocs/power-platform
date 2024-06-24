@@ -231,7 +231,7 @@ Dynamics 365 Team member|6k per user| 10k per cloud flow|
 
 > [!NOTE]
 > - The Power Automate Process licenses can be stacked on a cloud flow to increase its PRR limit
-> - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs.md#power-platform-requests-questions) 
+> - [FAQ on Power Platform Request within Power Automate](faqs.md#power-platform-requests-questions) 
 
 
 ### Transition period
