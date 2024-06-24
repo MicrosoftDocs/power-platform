@@ -123,7 +123,7 @@ In the Power Automate portal, click on __Settings__ and on __View my licenses__:
 
 A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
 
-|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|Entitlement to<br>____________________________|Entitlement description<br>_____________________________________________________________________________________|
 |----------|-------|
 |Standard connectors|The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it. It's included in all [seeded licenses](#seeded-licenses) and all [standalone licenses](#standalone-licenses). We're continuously adding more standard connectors.|
 |Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It's included in the Power Automate Premium user-license, the Power Automate Process capacity-license, and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded licenses](#seeded-licenses) when the cloud flow is in context of an app.|
@@ -133,7 +133,7 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 [Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
 
-|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|Entitlement to<br>____________________________|Entitlement description<br>_____________________________________________________________________________________|
 |----------|-------|
 |Attended RPA|The attended RPA entitlement is needed to register a machine, access RPA management portal pages, add premium RPA actions to a desktop flow, share a desktop flow and trigger a desktop flow in attended mode. Attended mode refers to a desktop flow execution with human supervision. This entitlement is also needed to create any desktop flow in non-default environments. It's included in the Power Automate Premium user-license.|
 |Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It's included in the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license.|
@@ -141,7 +141,7 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 ### Entitlements to other Power Automate capabilities
 
-|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|Entitlement to<br>____________________________|Entitlement description<br>_____________________________________________________________________________________|
 |----------|-------|
 |Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It's included in the Power Automate Premium user-license, the Power Automate Process capacity-license, and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded licenses](#seeded-licenses) when the cloud flow is in context of an app.|
 |On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premises data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It's included in the Power Automate Premium user-license, the Power Automate Process capacity-license, and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded licenses](#seeded-licenses) when the cloud flow is in context of an app.|
@@ -150,7 +150,7 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 ### Credits and storage entitlements
 
-|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|Entitlement to<br>____________________________|Entitlement description<br>_____________________________________________________________________________________|
 |----------|-------|
 |AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you add intelligence to your automations, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits." Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic text extractions. Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Each Power Automate Premium license grants you 5,000 credits per month, allowing you to assess the capabilities in AI Builder. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).|
 |Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
@@ -178,7 +178,7 @@ If the cloud flow is isolated and has nothing to do with the application, then a
 
 Here-bellow a table detailing each seeded license [entitlement](#license-entitlements):
 
-||Power Apps Premium<br>_______________|Office <br>365<br>_______________|Dynamics 365 professional <sup>1</sup><br>_______________|Dynamics 365 Enterprise applications <sup>2</sup><br>___________________________|Dynamics 365 Team member<br>_______________|Windows licenses<br>_______________|
+||Power Apps Premium<br>_______________|Office <br>365<br>_______________|Dynamics 365 professional <sup>1</sup><br>______________________|Dynamics 365 Enterprise applications <sup>2</sup><br>______________________________|Dynamics 365 Team member<br>________________________|Windows licenses<br>_______________|
 |----------|-------|---------------------|--------------|--------------|--------------|--------------|
 |__Applied to__|User|User|User|User|User|Machine|
 |__Daily PPR limit__|40k per user|6k per user|40k per user|40k per user|6k per user|Not included|
