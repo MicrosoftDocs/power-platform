@@ -143,9 +143,9 @@ Depending on the environment type, the environment location varies.
 
 ### Preferred environment location
 
-If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform Powershell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
+If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform PowerShell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
 
-```powershell
+```PowerShell
 $requestBody = [pscustomobject]@{
 powerPlatform = [pscustomobject]@{
 environments = [pscustomobject]@{
