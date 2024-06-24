@@ -155,7 +155,7 @@ preferredEnvironmentLocation = "unitedstates"
 }
 Set-TenantSettings -RequestBody $requestBody
 ```
-If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide), you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
+If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&preserve-view=true), you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
 
 ```PowerShell
 $settings = Get-TenantSettings 
