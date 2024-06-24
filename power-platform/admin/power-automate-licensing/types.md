@@ -27,15 +27,15 @@ Rights to use [Power Automate capabilities](#license-entitlements) (standard con
 
 > [!NOTE]
 >
-> - A user-license is user-centric : assigned to a user it entitles this user to access [specific capabilities](#license-entitlements)
-> - A capacity-license is object-centric : consumed by a Power Automate object (cloud flow, machine, hosted machine, etc.) it entitles this object to be licensed autonomously (regardless of user-license owned by makers interacting the 
+> - A user-license is user-centric : it is assigned to a user and it entitles this user to access [specific capabilities](#license-entitlements)
+> - A capacity-license is object-centric : it is consumed by a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user-licenses owned by makers interacting with the object)
 > - As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs. 
 
-## Standalone plans
+## Standalone licenses
 
 You can purchase the standalone licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page.
 
-### Standalone user licenses
+### Standalone user-licenses
 
 ![Standalone user licenses](../media/RPA-license/standalone_user_licenses.png)
 
@@ -56,7 +56,7 @@ P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer
 > 
 > Organizations with these licenses with renewals that are due on or after January 1, 2021 need to transition to the Power Automate Premium user-license or to the Power Apps Premium user-license to continue using the Microsoft Power Platform services. Organizations with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting October 1, 2024, these plans will no longer be usable. Contact your Microsoft account representative for more information or purchase the replacing licenses.
 
-### Standalone capacity licenses
+### Standalone capacity-licenses
 
 ![Standalone capacity licenses](../media/RPA-license/standalone_capacity_licenses.png)
 
@@ -73,58 +73,24 @@ Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|This license has bee
 > - Allocation of a Process license on a machine (to enable unattended mode) still requires the machine to have been registered by a Power Automate Premium user.
 > - Multiple pages in the Power Automate are displayed only to Power Automate Premium users (workqueue page, machine list, desktop flow list, etc.).
 
-## Seeded plans
-
-Users also gain rights to use Power Automate (with limited capabilities) if they have inherited seeded plans from licenses tied to other Microsoft products:
-- Microsoft 365 (formerly Office 365) / Dynamics 365 Enterprise / Dynamics 365 Professional / Dynamics 365 Team Member
-- Power Apps Per-app plan / Power Apps Premium / Power Apps Plan 1 or Plan 2 (legacy)
-- Windows licenses
-
-Those plans entitles the user to create and run cloud flows with standard connectors. They can also entitle them to create and run a cloud flow with premium and custom connectors if the cloud flow is associated to the application from which the seeded plan is inherited. 
-
-- Example 1: if a cloud flow uses [premium connectors](#premium-connectors), is owned by a user with a Power Apps Premium license, associated to a Power App and triggered by the app, any user can run the flow if they have a Power Apps license.
-- Example 2: a cloud flow created within a Dynamics 365/App using a Power Apps can connect to the following :
-  - To any data source within the use rights of the Dynamics 365/App created using Power Apps.
-  - Directly with the Dynamics 365/App created using Power Apps (via built-in triggers/actions).
-
-If the cloud flow is isolated and has nothing to do with the application, then a standalone Power Automate Premium must be purchased. You can find more details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
-
-## Compare Power Automate plans
+## Compare standalone Power Automate licenses
 
 Here-bellow a table detailing each license [entitlement](#license-entitlements) and limits:
 
-||Premium license|Process license|Hosted Process license|
+||Premium license<br>____________________________|Process license<br>____________________________|Hosted Process license<br>____________________________|
 |----------|-------|---------------------|--------------|
 |__Applied to__|User|- Cloud flow <br>- Machine|- Cloud flow <br>- Machine <br>- Hosted machine <br>- Hosted machine group|
 |__Standard connectors__|Included|Included|Included|
 |__Premium connectors__|Included|Included|Included|
 |__Custom connectors__|Included|Included|Included|
 |__Attended RPA__|Included|Not included|Not included|
-|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included<sup>1</sup>|
+|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>1</sup>|
 |__Hosted RPA__|Not included|Not included|One hosted bot included <sup>1</sup>|
 |__Business process flows__|Included|Included|Included|
 |__On-premises gateways__|Included|Included|Included|
 |__Process mining__|Included|Not included|Not included|
 
-1 : The Hosted Process license provides an unattended bot when allocated to a standard machine OR a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group).
-
-|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Custom connectors, Business process flows, On-premises gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accrued per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
-|--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
-Power Automate Premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included|One bot included|Not Included|5000|250 MB|2 GB|Included|50 MB per user license up to 100 GB per tenant|
-Power Automate process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|50 MB|200 MB|Not Included|Not Included
-Power Automate hosted process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|Not Included|Not Included|Not Included|Not Included
-Office 365|Actual limit-6K/user Transition period limit-10K/flow|Included|Not included|Not included|Not Included|Not included|Not included|Not included|Not included|Not included
-Power Apps Premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of a Power App|Not included|Not included|500 credits|250 MB|2 GB|Not included|Not included
-Dynamics 365 professional 1|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of Dynamics 365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Dynamics 365 Enterprise applications 2|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of Dynamics 365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Dynamics 365 Team member|Actual limit-6K/user Transition period limit-10K/flow|Included|Included if the flow is in context of Dynamics 365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
-Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power Automate for desktop flows only|Not included|Not included|Not included|Not included|Not included|Not included
-
-1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
-
-1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
-
-1. In Dataverse for Teams environments (included in [select Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
+1 : The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group).
 
 ## License entitlements
 
@@ -181,6 +147,44 @@ Different scenarios (for example, forms processing, prediction, etc.) consume se
 ### Dataverse database and file capacity
 
 Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Power Automate standalone license customers receive a tenant-wide default entitlement for each of these three storage types. You can buy more storage in 1-GB increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).
+
+## Seeded licenses
+
+Users also gain rights to use Power Automate (with limited capabilities) if they have inherited seeded plans from licenses tied to other Microsoft products:
+- Microsoft 365 (formerly Office 365) / Dynamics 365 Enterprise / Dynamics 365 Professional / Dynamics 365 Team Member
+- Power Apps Per-app plan / Power Apps Premium / Power Apps Plan 1 or Plan 2 (legacy)
+- Windows licenses
+
+Those plans entitles the user to create and run cloud flows with standard connectors. They can also entitle them to create and run a cloud flow with premium and custom connectors if the cloud flow is associated to the application from which the seeded plan is inherited. 
+
+- Example 1: if a cloud flow uses [premium connectors](#premium-connectors), is owned by a user with a Power Apps Premium license, associated to a Power App and triggered by the app, any user can run the flow if they have a Power Apps license.
+- Example 2: a cloud flow created within a Dynamics 365/App using a Power Apps can connect to the following :
+  - To any data source within the use rights of the Dynamics 365/App created using Power Apps.
+  - Directly with the Dynamics 365/App created using Power Apps (via built-in triggers/actions).
+
+If the cloud flow is isolated and has nothing to do with the application, then a standalone Power Automate Premium must be purchased. You can find more details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+## Compare seeded licenses
+
+Here-bellow a table detailing each license [entitlement](#license-entitlements) and limits:
+|License|Power platform limits per 24 hours|Standard connectors|Premium connectors, Custom connectors, Business process flows, On-premises gateway|RPA attended|RPA Unattended|AI builder credits|Dataverse database capacity(accrued per USL/flow)|Dataverse file capacity(accrued per USL/flow)|Process Mining desktop functionality|Process Mining data storage |
+|--------|--------|----|-------|----|------|-----|--------|----------|--------|-----|
+Power Automate Premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included|One bot included|Not Included|5000|250 MB|2 GB|Included|50 MB per user license up to 100 GB per tenant|
+Power Automate process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|50 MB|200 MB|Not Included|Not Included
+Power Automate hosted process plan|Actual limit-250K/process Transition period limit-500K/process|Included|Included|Not included|Included|5000|Not Included|Not Included|Not Included|Not Included
+Office 365|Actual limit-6K/user Transition period limit-10K/flow|Included|Not included|Not included|Not Included|Not included|Not included|Not included|Not included|Not included
+Power Apps Premium|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of a Power App|Not included|Not included|500 credits|250 MB|2 GB|Not included|Not included
+Dynamics 365 professional 1|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of Dynamics 365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
+Dynamics 365 Enterprise applications 2|Actual limit-40K/user Transition period limit-200K/flow|Included|Included if the flow is in context of Dynamics 365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
+Dynamics 365 Team member|Actual limit-6K/user Transition period limit-10K/flow|Included|Included if the flow is in context of Dynamics 365 app|Not included|Not included|Not included|Not included|Not included|Not included|Not included
+Windows licenses|Not included|Not Included|Not Included |Limited RPA via Power Automate for desktop flows only|Not included|Not included|Not included|Not included|Not included|Not included
+
+1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional.
+
+1. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan.
+
+1. In Dataverse for Teams environments (included in [select Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams) customers can use custom connectors built on Azure and Dataverse capabilities.
+
 
 ## Power Platform requests
 
