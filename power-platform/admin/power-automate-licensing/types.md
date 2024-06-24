@@ -72,6 +72,8 @@ Power Automate Per-flow plan|Capacity ([legacy](#entitlements-of-all-standalone-
 > Capacity licenses can't replace all user licenses within an environment as some essential capabilities are only available to licensed users
 > - Allocation of a Process license to a machine (as required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
 > - Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
+> <br>
+> Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in Process overage (which overage quantity should be ignored if the Hosted Process licenses exceed it)
 
 ## Compare standalone Power Automate licenses
 
