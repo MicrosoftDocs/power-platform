@@ -264,7 +264,7 @@ For more information, see [How to update environment variables](#update-environm
 
 ### How to update data to respect configured local tenants
 
-[!TIP]
+> [!TIP]
 > Changing the Host Domains environment variable doesn't retroactively update old data in tables. Since this setting change is infrequent, we don't regularly compare it to avoid additional API hits. Therefore, you need to update this environment variable manually.
 
 You can update manually with custom flows, the Excel add-in, or through plugins. The underlying logic remains consistent, allowing you to choose the method that best suits your needs.
