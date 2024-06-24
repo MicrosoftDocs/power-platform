@@ -98,7 +98,7 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
-### Entitlements by connector types usable in cloud flows
+### Entitlements to usage of connector types in cloud flows
 
 A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and leverage a set of prebuilt actions and triggers.
 
@@ -108,7 +108,7 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 |Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
 |Custom connectors|The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
 
-### Entitlements for usage of Robotic process automation (RPA)
+### Entitlements to usage of Robotic process automation (RPA)
 
 [Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications which are lacking a prebuilt connector and which don't have APIs that could be leverage to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
 
@@ -118,18 +118,14 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 |Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It is included in the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license.|
 |Hosted RPA|The hosted RPA entitlement is needed to create an hosted machine or an hosted machine group. It is included in the Power Automate Hosted Process capacity-license.|
 
+### Entitlements to other Power Automate capabilities
 
-### Business process flows
+|Entitlement to<br>____________________________|Entitlement description<br>________________________________________________________________________________________________________________|
+|----------|-------|
+|Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans))..|
+|On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).|
+|Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate. It is included in the Power Automate Premium user-license.|
 
-The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization has defined. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
-
-### On premises gateway
-
-The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premise data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services. It is included in the Power Automate Premium user-license, the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license. It can also be included in some [seeded plans](#seeded-plans) when the cloud flow is in context of an app (details in [Compare Power Automate plans](#compare-power-automate-plans)).
-
-### Process mining
-
-The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate. It is included in the Power Automate Premium user-license.
 
 ## Additional entitlements
 
