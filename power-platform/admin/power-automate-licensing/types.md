@@ -112,7 +112,7 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 In the Power Automate portal, click on __Settings__ and on __View my licenses__:
 
-![License entitlements](../media/RPA-license/view-my-licenses-4.png)
+![View my licenses](../media/RPA-license/view-my-licenses-4.png)
 
 > [!NOTE]
 > - The user license(s) are displayed in the section _My licenses_
