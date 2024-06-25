@@ -164,7 +164,7 @@ Users gain limited rights to use Power Automate if they inherited seeded plans f
 - Power Apps Per-app plan / Power Apps Premium / Power Apps Plan 1 or Plan 2 (legacy)
 - Windows licenses
 
-Those licenses entitle the user to create and run cloud flows with standard connectors. They can also entitle them to create and run a cloud flow with premium and custom connectors if the flow is in-context and associated to the application from which the seeded plan is inherited. 
+Those licenses entitle the user to create and run cloud flows with standard connectors. They can also entitle them to create and run a cloud flow with premium and custom connectors if the flow is in-context and associated to the application from which the seeded license is inherited. 
 
 > [!NOTE]
 > - Example 1: if a cloud flow uses premium connectors, is owned by a user with a Power Apps Premium license, associated to a Power App and triggered by the app, any user can run the flow if they have a Power Apps license.
