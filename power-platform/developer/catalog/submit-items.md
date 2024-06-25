@@ -82,11 +82,15 @@ Active Environment Environment ID                       Environment Url         
 
 ## View catalog information
 
-### [PAC CLI](#tab/cli)
+There are two Dataverse functions you can use to get information about the catalog.
+
+### mspcat_GetPowerCatalogInformationRequest
+
+#### [PAC CLI](#tab/cli)
 
 There is no PAC CLI command to return this information.
 
-### [SDK for .NET](#tab/sdk)
+#### [SDK for .NET](#tab/sdk)
 
 The following `GetPowerCatalogInformationExample` static method retrieves data using the `mspcat_GetPowerCatalogInformationRequest` and `mspcat_GetPowerCatalogInformationResponse` classes generated for the `mspcat_GetPowerCatalogInformation` message by the [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build) command.
 
@@ -124,7 +128,7 @@ CanSubmit: True
 [Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
-### [Web API](#tab/webapi)
+#### [Web API](#tab/webapi)
 
 Use the `mspcat_GetPowerCatalogInformation` function to get information about the catalog in the environment.
 
@@ -155,6 +159,175 @@ OData-Version: 4.0
    "CanSubmit": true
 }
 ```
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+
+---
+
+### mspcat_GetPowerCatalogDetails
+
+TODO: Tell what mspcat_GetPowerCatalogDetails is for.
+
+#### [PAC CLI](#tab/cli)
+
+There is no PAC CLI command to return this information.
+
+#### [SDK for .NET](#tab/sdk)
+
+The following `GetPowerCatalogDetailsExample` static method retrieves data using the `mspcat_GetPowerCatalogDetailsRequest` and `mspcat_GetPowerCatalogDetailsResponse` classes generated for the `mspcat_GetPowerCatalogDetails` message by the [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build) command.
+
+```csharp
+/// <summary>
+/// Outputs details of the catalog in Power Platform.
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+static void GetPowerCatalogDetailsExample(IOrganizationService service) {
+
+    var request = new mspcat_GetPowerCatalogDetailsRequest();
+    var response = (mspcat_GetPowerCatalogDetailsResponse)service.Execute(request);
+
+   JsonDocument catalogDetails = JsonDocument.Parse(response.CatalogDetails);
+
+    string catalogId = catalogDetails.RootElement.GetProperty("catalogId").GetString();
+    bool isSuccess = catalogDetails.RootElement.GetProperty("isSuccess").GetBoolean();
+    JsonElement sourceOptions = catalogDetails.RootElement.GetProperty("sourceOptions");
+    JsonElement categoryOptions = catalogDetails.RootElement.GetProperty("categoryOptions");
+    string publisherLocalizedDisplayName = catalogDetails.RootElement.GetProperty("publisherLocalizedDisplayName").GetString();
+    string catalogItemLocalizedDisplayName = catalogDetails.RootElement.GetProperty("catalogItemLocalizedDisplayName").GetString();
+
+
+    Console.WriteLine($"catalogId: {catalogId}");
+    Console.WriteLine($"isSuccess: {isSuccess}");
+    Console.WriteLine("sourceOptions:");
+    foreach (JsonElement element in sourceOptions.EnumerateArray())
+    {
+        int id = element.GetProperty("id").GetInt32();
+        string label = element.GetProperty("userLocalziedLabel").GetString();
+        Console.WriteLine($"  {id} {label}");
+    }
+    Console.WriteLine("categoryOptions:");
+    foreach (JsonElement element in categoryOptions.EnumerateArray())
+    {
+        int id = element.GetProperty("id").GetInt32();
+        string label = element.GetProperty("userLocalziedLabel").GetString();
+        Console.WriteLine($"  {id} {label}");
+    }
+    Console.WriteLine($"publisherLocalizedDisplayName: {publisherLocalizedDisplayName}");
+    Console.WriteLine($"catalogItemLocalizedDisplayName: {catalogItemLocalizedDisplayName}");
+}
+```
+
+**Output**
+
+The static `GetPowerCatalogDetailsExample` method will write something like this to the console:
+
+```dotnetcli
+catalogId: 883278f5-07af-45eb-a0bc-3fea67caa544
+isSuccess: True
+sourceOptions:
+  526430000 Other
+  526430001 Power Automate Maker Portal
+  526430002 Power Platform Maker Portal
+  526430003 Power Virtual Agents Maker Portal
+  526430004 Power Platform Admin API
+  526430005 PAC CLI
+  526430006 PAC Build Task
+  526430007 Pipelines in Power Platform
+categoryOptions:
+  526430000 Customer Service
+  526430001 Project Management
+  526430002 Calendar Management & Scheduling
+  526430003 Email Management
+  526430004 Files & Documentation
+  526430005 Notification & Reminders
+  526430006 Analytics
+  526430007 Collaboration
+  526430008 Commerce
+  526430009 Finance
+  526430010 Compliance & Legal
+  526430011 Sales
+  526430012 IT Tools
+  526430013 Marketing
+  526430014 Operations & Supply Chain
+  526430015 Internet of Things
+  526430016 AI Machine Learning
+  526430017 Geolocation
+  526430018 Human Resources
+publisherLocalizedDisplayName: Catalog Publisher
+catalogItemLocalizedDisplayName: Catalog Item
+```
+
+[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
+
+#### [Web API](#tab/webapi)
+
+Use the `mspcat_GetPowerCatalogDetails` function to get information about the catalog in the environment.
+
+```powershell
+function GetPowerCatalogDetails {
+   $results = Invoke-RestMethod `
+      -Method Get `
+      -Uri $baseURI"mspcat_GetPowerCatalogDetails" `
+      -Headers $baseHeaders
+
+   $catalogDetails =  $results.CatalogDetails 
+   | ConvertFrom-Json
+
+   Write-Host "catalogId: $($catalogDetails.catalogId)"
+   Write-Host "isSuccess: $($catalogDetails.isSuccess)"
+   Write-Host "sourceOptions:"
+   foreach($option in $catalogDetails.sourceOptions) {
+      Write-Host ('   {0} {1}' -f $option.id, $option.userLocalziedLabel)
+   }
+   Write-Host "categoryOptions:"
+   foreach($option in $catalogDetails.categoryOptions) {
+      Write-Host ('   {0} {1}' -f $option.id, $option.userLocalziedLabel)
+   }
+   Write-Host "publisherLocalizedDisplayName: $($catalogDetails.publisherLocalizedDisplayName)"
+   Write-Host "catalogItemLocalizedDisplayName: $($catalogDetails.catalogItemLocalizedDisplayName)"
+}
+```
+
+The output of this function will look something like this:
+
+```dotnetcli
+catalogId: 883278f5-07af-45eb-a0bc-3fea67caa544
+isSuccess: True
+sourceOptions:
+   526430000 Other
+   526430001 Power Automate Maker Portal
+   526430002 Power Platform Maker Portal
+   526430003 Power Virtual Agents Maker Portal
+   526430004 Power Platform Admin API
+   526430005 PAC CLI
+   526430006 PAC Build Task
+   526430007 Pipelines in Power Platform
+categoryOptions:
+   526430000 Customer Service
+   526430001 Project Management
+   526430002 Calendar Management & Scheduling
+   526430003 Email Management
+   526430004 Files & Documentation
+   526430005 Notification & Reminders
+   526430006 Analytics
+   526430007 Collaboration
+   526430008 Commerce
+   526430009 Finance
+   526430010 Compliance & Legal
+   526430011 Sales
+   526430012 IT Tools
+   526430013 Marketing
+   526430014 Operations & Supply Chain
+   526430015 Internet of Things
+   526430016 AI Machine Learning
+   526430017 Geolocation
+   526430018 Human Resources
+publisherLocalizedDisplayName: Catalog Publisher
+catalogItemLocalizedDisplayName: Catalog Item
+```
+
+
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -587,25 +760,119 @@ Contoso Themed Components           ContosoPublisher         ContosoThemedCompon
 
 ## Install items from the catalog
 
+Catalog items are stored in the `mspcat_applications`(**Catalog Item**) table. This table has a `mspcat_TPSID` (**Catalog Item Id**) column that stores a unique string value you can use to refer to a catalog item.
+
 ### [PAC CLI](#tab/cli)
 
 Use the [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
 
+In this example, you are connected to the `EnvironmentWithCatalog`.
+
+Use the `-cid` parameter to specify the catalog item ID and `-te` to specify the environment to install the catalog item in.
+
 ```powershell
-pac catalog install -tu https://<your org>.crm.dynamics.com/ -cid ContosoConferencesCustomConnector
-Connected to... TestCatalog
+pac catalog install  -cid ContosoConferencesCustomConnector -te https://<org to install item>.crm.dynamics.com/
 Connected as user@domain
-ContosoConferencesCustomConnector
-Tracking id for this installation is 202012ec-80f3-ed11-8849-000d3a0a2d9d
+Connected to... EnvironmentWithCatalog
+Tracking ID for this installation is 9cc47262-2f33-ef11-8409-6045bdd3aec3
 ```
+
+The Tracking ID returned is the primary key of the `mspcat_InstallHistory` (**Install History**) record which you can review to see whether the installation succeeds.
 
 [What is Microsoft Power Platform CLI?](../cli/introduction.md)
 
 ### [SDK for .NET](#tab/sdk)
 
-[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
+There are two messages you can use to install catalog items: `mspcat_InstallCatalogItem` and `mspcat_InstallCatalogItemByCID`.
+
+### mspcat_InstallCatalogItem
+
+Use this message when you have a reference to the catalog item you want to install or you want to include a reference to a packageid for some reason. 
+<!-- TODO: provide reason for packageid parameter -->
+
+The following static `InstallCatalogItemExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
+
+```csharp
+static EntityReference InstallCatalogItemExample(IOrganizationService service,
+    EntityReference target,
+    Uri deployToOrgUrl,
+    string? settings = null,
+    Guid? packageId = null)
+{
+
+    if (target.LogicalName != "mspcat_applications")
+    {
+        throw new Exception("target parameter must be a reference to a Catalog Item (mspcat_applications) record");
+    }
+
+    var request = new mspcat_InstallCatalogItemRequest
+    {
+        Target = target,
+        DeployToOrganizationUrl = deployToOrgUrl.ToString(),
+
+    };
+
+    if (packageId.HasValue)
+    {
+        // TODO explain what this is for
+
+        request.PackageId = packageId.Value;
+    }
+
+    if (string.IsNullOrEmpty(settings))
+    {
+        // TODO explain what these settings are
+        request.Settings = settings;
+    }
+
+    var response = (mspcat_InstallCatalogItemResponse)service.Execute(request);
+
+    return response.InstallHistoryReferance;
+
+}
+```
+
+
+### mspcat_InstallCatalogItemByCID
+
+Use this message when you have only the `mspcat_applications`(**Catalog Item**) `mspcat_TPSID` (**Catalog Item Id**). This is the message that is invoked by the PAC CLI and the application.
+
+The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build). 
+
+
+```csharp
+static EntityReference InstallCatalogItemByCIDExample(IOrganizationService service,
+    string catalogItemId,
+    Uri deployToOrgUrl,
+    string? settings = null)
+{
+
+    var request = new mspcat_InstallCatalogItemByCIDRequest
+    {
+        CID = catalogItemId,
+        DeployToOrganizationUrl = deployToOrgUrl.ToString(),
+    };
+    if (string.IsNullOrEmpty(settings))
+    {
+        // TODO explain what these settings are
+        request.Settings = settings;
+    }
+
+    var response = (mspcat_InstallCatalogItemByCIDResponse)service.Execute(request);
+
+    return response.InstallHistoryReferance;
+
+}
+```
+
+
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)   
+[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
+
 
 ### [Web API](#tab/webapi)
+
+
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -643,6 +910,114 @@ Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
 // Send base64 encoded submission document as `EncodedApprovalRequest`
 POST //mspcat_SubmitCatalogApprovalRequest
 Returns AsyncOperationId and CertificationRequestId
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+
+---
+
+## Approve catalog submissions
+
+TODO: What is the `requestsuccess` parameter for?
+
+### [PAC CLI](#tab/cli)
+
+There is no PAC CLI command to perform this operation.
+
+### [SDK for .NET](#tab/sdk)
+
+This static `ResolveApproval` method demonstrates how to resolve request for a catalog submission.
+
+```csharp
+/// <summary>
+/// Resolves a catalog submission approval
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="certificationRequestId"></param>
+/// <param name="requestsuccess"></param>
+/// <param name="message"></param>
+static void ResolveApproval(
+   IOrganizationService service,
+   Guid certificationRequestId,
+   bool requestsuccess, 
+   string message)
+{
+
+   mspcat_ResolveApprovalRequest request = new()
+   {
+         Target = new EntityReference("mspcat_certificationrequest", certificationRequestId),
+         requestsuccess = requestsuccess,
+         message = message
+   };
+
+   // mspcat_ResolveApprovalResponse has no properties to return
+   service.Execute(request);
+}
+```
+
+
+### [Web API](#tab/webapi)
+
+
+This `ResolveApproval` Powershell function approves a catalog submission.
+
+
+```powershell
+<#
+.SYNOPSIS
+   This function resolves an approval request.
+
+.DESCRIPTION
+   The ResolveApproval function sends a POST request to a specific URI to resolve an approval request. 
+   The URI is constructed using the base URI and the certification request ID. 
+   The body of the request contains the success status and a message.
+
+.PARAMETER certificationRequestId
+   This is a mandatory GUID parameter that represents the ID of the certification request.
+
+.PARAMETER requestsuccess
+   This is a mandatory Boolean parameter that indicates whether the request was successful.
+
+.PARAMETER message
+   This is a mandatory string parameter that contains a message about the request.
+
+.EXAMPLE
+   ResolveApproval -certificationRequestId "GUID" -requestsuccess $true -message "Request processed successfully."
+
+.NOTES
+   The function does not return any value. Any output from the Invoke-RestMethod cmdlet is sent to Out-Null.
+#>
+function ResolveApproval {
+   param (
+      [Parameter(Mandatory)]
+      [guid]
+      $certificationRequestId,
+      [Parameter(Mandatory)]
+      [bool]
+      $requestsuccess,
+      [Parameter(Mandatory)]
+      [string]
+      $message
+   )
+
+   $uri = $baseURI + "mspcat_certificationrequests($certificationRequestId)/Microsoft.Dynamics.CRM.mspcat_ResolveApproval"
+
+   $body = @{
+      requestsuccess = $requestsuccess
+      message        = $message
+   } | ConvertTo-Json
+
+   $postHeaders = $baseHeaders.Clone()
+   $postHeaders.Add('Content-Type', 'application/json')
+
+   Invoke-RestMethod `
+      -Method Post `
+      -Uri $uri `
+      -Headers $postHeaders `
+      -Body $body | Out-Null
+}
+
+```
+
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
