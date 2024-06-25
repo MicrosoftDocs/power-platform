@@ -22,7 +22,7 @@ Entitlements to use [Power Automate capabilities](types.md#license-entitlements)
 
 ## Power Automate capacity add-ons
 
-A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#standalone-capacity-licenses).
+A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#standalone-capacity-licenses).
 
 ![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
 
@@ -120,7 +120,7 @@ A storage add-on provides data storage space to support scalling of operations.
 
 ![Power Automate storage add-ons](../media/RPA-license/storage-add-ons-1.png)
 
-### Power Automate Process Mining add-on
+### Process Mining add-on
 
 ### Dataverse storage capacity add-on
 
