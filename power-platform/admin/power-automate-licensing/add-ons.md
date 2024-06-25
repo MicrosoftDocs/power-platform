@@ -26,7 +26,7 @@ A capacity add-on is object-centric: it's allocated to a Power Automate object (
 
 ![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
 
-## Unattended RPA add-on (legacy)
+### Unattended RPA add-on (legacy)
 
 > [!IMPORTANT]
 > - The Power Automate Process license has replaced the Unattended RPA add-on (same price with more entitlements)
@@ -61,7 +61,7 @@ Here are a few important notes of which you should be aware regarding the unatte
 
    Yes, if you need to run them at the same time. If not, the runs are queued and begin when the bot is free.
    
-## Hosted RPA add-on  (legacy)
+### Hosted RPA add-on  (legacy)
 
 > [!IMPORTANT]
 > - The Power Automate Hosted RPA add-on has been converted into the [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
@@ -88,7 +88,7 @@ A consumptive add-on provides a monthly quantity of consumptive units which are 
 
 ![Power Automate consumptive add-ons](../media/RPA-license/consumptive-add-ons-1.png)
 
-## AI builder capacity add-on
+### AI builder capacity add-on
 
 AI Builder is licensed as an add-on to standalone Power Apps and Power Automate licensing and to Dynamics 365 licenses. AI Builder is licensed on a capacity basis. AI Builder capacity is expressed as *service credits*. Service credits serve as the single (common) currency across all the scenarios supported by AI Builder. The available service credits decrease when you use AI Builder services. Different scenarios (for example, forms processing, prediction, etc.) use service credits at different rates. Purchase the appropriate number of AI Builder capacity add-on units based on anticipated usage across all scenarios.
 
@@ -100,7 +100,7 @@ Each unit of AI Builder capacity add-on includes 1 million service credits per m
 > - Service credits are deducted / consumed for both training and production usage
 > - Service credits are pooled across the tenant.
 
-### FAQs about the AI builder add-on
+##### FAQs about the AI builder add-on
 
 I have a Power Automate per user with RPA plan and I got AI builder credits as part of the plan. Can I transfer the credits to someone else?
 
