@@ -46,9 +46,9 @@ Here-after the list of standalone Power Automate user licenses:
 |License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________________|
 -------|------|------|
 Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through Robotic process automation (RPA)). More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to process mining functionalities and provisioning of AI Builder credits, which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition.|
-[Power Automate Free](#power-automate-free-license)|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) restricted to standard connectors only. This license also restricts users to share their flows.|
-[Power Automate Trial](#power-automate-trial-license)|User license <br>(90 days trial)|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities) and with the extra capability to execute their desktop flows in unattended mode on their registered machine (without unattended bot requirement).|
-Power Automate Per-user plan|User license (legacy)|The Power Automate Premium license has replaced this license (it provides more entitlements for the same price). It's no longer available for purchase from the pricing page but organizations can still purchase it via deal desk. [Details on its entitlements](#entitlements-of-legacy-licenses).|
+[Power Automate Free](#power-automate-free-license)|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) restricted to standard connectors only. This license also restricts users to share their flows. [Details on its entitlements](#entitlements-of-free--trial--legacy-licenses).|
+[Power Automate Trial](#power-automate-trial-license)|User license <br>(90 days trial)|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities) and with the extra capability to execute their desktop flows in unattended mode on their registered machine (without unattended bot requirement). [Details on its entitlements](#entitlements-of-free--trial--legacy-licenses).|
+Power Automate Per-user plan|User license (legacy)|The Power Automate Premium license has replaced this license (it provides more entitlements for the same price). It's no longer available for purchase from the pricing page but organizations can still purchase it via deal desk. [Details on its entitlements](#entitlements-of-free--trial--legacy-licenses).|
 P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer available for purchase nor via autorenewal after December 31, 2020.|
 
 > [!IMPORTANT]
@@ -66,7 +66,7 @@ In addition to user licenses, organizations can upgrade their automation scenari
 ------|------|------|------
 [Power Automate Process](#power-automate-process-license)|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.
 Power Automate Hosted Process|Capacity|- Hosted machine <br>- Hosted machine group<sup>1</sup><br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process it can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an alternative scenario the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling RPA with zero infrastructure.
-Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from pricing page but customers can still purchase it via deal desk. [Details on its entitlements](#entitlements-of-legacy-licenses).
+Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from pricing page but customers can still purchase it via deal desk. [Details on its entitlements](#entitlements-of-free--trial--legacy-licenses).
 
 _1. The Hosted Process license is not statically allocated to a hosted machine group : it is dynamically allocated and deallocated (load balancing) from a hosted machine group depending on workload to support each of its active hosted machines_ <br>
 
@@ -353,27 +353,25 @@ Follow these instructions to [create an admin trial, check expiry, and extend tr
 
 There's a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You aren't allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows can't be created in an environment with the Power Apps Developer plan.
 
-## Entitlements of legacy licenses
+## Entitlements of free / trial / legacy licenses
 
-||Free license<br>____________________________|Per-user plan (legacy) <br>____________________________|Premium license<br>____________________________|Trial license <br>____________________________|Per-flow plan (legacy)<br>____________________________|Process license<br>____________________________|Hosted Process license<br>____________________________|
-|----------|-------|---------------------|--------------|-------|---------------------|--------------|--------------|
-|__Applied to__|User|User|User|User|Cloud flow|- Cloud flow <br>- Machine|- Cloud flow <br>- Machine <br>- Hosted machine <br>- Hosted machine group|
-|__Daily PPR limit  <sup>1</sup>__|6k per user|40k per user|40k per user||250k per Per-flow plan|250k per Process license <sup>2</sup>|250k per Hosted Process license <sup>2</sup>|
-|__Standard connectors__|Included|Included|Included|Included|Included|Included|Included|
-|__Premium connectors__|Not included|Included|Included|Included|Included|Included|Included|
-|__Custom connectors__|Not included|Included|Included|Included|Included|Included|Included|
-|__Attended RPA__|Not included|Not included|Included|Included|Not included|Not included|Not included|
-|__Unattended RPA__|Not included|Not included|Not included|Included|Not included|One unattended bot included|One unattended bot included <sup>3</sup>|
-|__Hosted RPA__|Not included|Not included|Not included|Not included|Not included|Not included|One hosted bot included <sup>3</sup>|
-|__Business process flows__|Not included|Included|Included|Included|Included|Included|Included|
-|__On-premises gateways__|Not included|Included|Included|Included|Included|Included|Included|
-|__Process mining__|Not included|Not included|Included|Included|Not included|Not included|Not included|
-|__Process mining data storage__|Not included|Not included|50-MB per license <sup>4</sup>|Not included|Not included|Not included|Not included|
-|__AI Builder credits__|Not included|Not included|5000 per month|Not included|Not included|5000 per month|5000 per month|
-|__Dataverse database storage__|Not included|250-MB per license|250-MB per license|Not included|50-MB per license|50-MB per license|50-MB per license|
-|__Dataverse file storage__|Not included|2-GB per license|2-GB per license|Not included|200-MB per license|200-MB per license|200-MB per license|
+||Free license<br>____________________________|Trial license <br>____________________________|Per-user plan (legacy) <br>____________________________|Per-flow plan (legacy)<br>____________________________|
+|----------|-------|---------------------|--------------|-------|
+|__Applied to__|User|User|User|Cloud flow|
+|__Daily PPR limit  <sup>1</sup>__|6k per user||40k per user|250k per Per-flow plan<sup>2</sup>|
+|__Standard connectors__|Included|Included|Included|Included|
+|__Premium connectors__|Not included|Included|Included|Included|
+|__Custom connectors__|Not included|Included|Included|Included|
+|__Attended RPA__|Not included|Included|Not included|Not included|
+|__Unattended RPA__|Not included|Included|Not included|Not included|
+|__Hosted RPA__|Not included|Not included|Not included|Not included|
+|__Business process flows__|Not included|Included|Included|Included|
+|__On-premises gateways__|Not included|Included|Included|Included|
+|__Process mining__|Not included|Included|Not included|Not included|
+|__Process mining data storage__|Not included|Not included|Not included|Not included|
+|__AI Builder credits__|Not included|Not included|Not included|Not included|
+|__Dataverse database storage__|Not included|Not included|250-MB per license|50-MB per license|
+|__Dataverse file storage__|Not included|Not included|2-GB per license|200-MB per license|
 
 _1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](#power-platform-requests))._ <br>
-_2. When multiple units of Process licenses are allocated to a cloud flow, their PPR limits are stacked._ <br>
-_3 The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._<br>
-_4 Up to 100 GB per tenant._
+_2. Only one Per-flow plan can be allocated to a cloud flow (no multi-allocation), PPR limits can't be stacked_
