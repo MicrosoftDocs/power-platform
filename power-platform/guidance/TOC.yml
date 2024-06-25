@@ -44,7 +44,7 @@
                 - name: Plan and manage licenses and capacity
                   href: adoption/capacity-and-licenses.md
                 - name: Establish an environment strategy
-                  href: adoption/environment-strategy.md
+                  href: white-papers/environment-strategy.md
                 - name: Manage Dataverse for Teams environments
                   href: adoption/teams-environment-strategy.md
                 - name: Manage the default environment
@@ -387,6 +387,18 @@
                   href: creator-kit/dialog.md
                 - name: Panel (experimental)
                   href: creator-kit/panel.md
+            - name: Charts
+              items:
+                - name: DonutChart (preview)
+                  href: creator-kit/donutchart.md
+                - name: GaugeChart (preview)
+                  href: creator-kit/gaugechart.md
+                - name: HorizontalBar
+                  items:
+                  - name: HorizontalBarChart (preview)
+                    href: creator-kit/horizontalbarchart.md
+                  - name: HorizontalBarChart - Stacked (preview)
+                    href: creator-kit/stackedbarchart.md
             - name: Utilities
               items:
                 - name: Elevation

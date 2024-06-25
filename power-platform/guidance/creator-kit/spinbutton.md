@@ -47,7 +47,7 @@ This code component provides a wrapper around the [Fluent UI SpinButton](https:/
 | `Max` | Min value of the control. If not provided, the control has no minimum value. |
 | `Step` | Difference between two adjacent values of the control. This value is used to calculate the precision of the input if no precision is given. The precision calculated this way will always be >= 0. |
 | `Value` | Current value of the control. |
-| `DefaultValue` | Intial value of the control when first rendered. |
+| `DefaultValue` | Initial value of the control when first rendered. |
 | `Suffix` | Suffix to define any unit (e.g. cm, kg, ml) |
 
 ## Additional properties
@@ -64,7 +64,7 @@ This code component provides a wrapper around the [Fluent UI SpinButton](https:/
 
 ## Example
 
-### Connecting SpinButton to a Edit Form data card
+### Connecting SpinButton to an Edit Form data card
 
 1. Unlock the data card
 1. Hide the default control for the field

@@ -2,7 +2,7 @@
 title: Change the base currency of a Dataverse environment in Power Platform
 description: Learn how to change the base currency of a Dataverse environment in Power Platform.
 author: sanjeevgoyal
-ms.date: 03/27/2024
+ms.date: 06/18/2024
 ms.reviewer: matp
 ms.topic: conceptual
 ms.subservice: admin
@@ -17,7 +17,7 @@ When you create an environment that includes a database in Power Platform, you m
 
 1. Make a backup of the environment's database before starting base currency conversion. Learn more: [Back up and restore environments](backup-restore-environments.md)
 
-1. Sign in to the Power Platform admin center, go to **Resources** > **Dynamics 365 apps**. Select **...** next to **Base Currency Conversion**, and then select **Install**.
+1. Go to [AppSource](https://appsource.microsoft.com/), enter *base currency* in the search box, and then select **Get it now** next to **Base Currency Conversion**. Follow the steps to install the app into the Power Platform environment you want.
 
 1. After the Base Currency Conversion solution installation completes, go to Power Apps (make.powerapps.com), select **Apps** on the left navigation pane, and then **Play** the **Base Currency Conversion** app.
 
