@@ -12,8 +12,9 @@ search.audienceType:
 
 # Type of Power Automate add-ons
 
-Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (premium connectors, unattended RPA, etc.) are obtained via [licenses](types.md) and add-ons to licenses. This article focusses on add-ons. 
+Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (premium connectors, unattended RPA, etc.) are obtained via [licenses](types.md) and add-ons. This article focusses on add-ons. 
 
+![Power Automate add-ons](../media/RPA-license/add-ons-1.png)
 
 
 ## Power Automate capacity add-ons
