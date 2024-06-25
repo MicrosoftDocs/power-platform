@@ -19,5 +19,8 @@ contributors:
 
 In this article, learn about all the functions available with [plug-ins in Microsoft Dataverse](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant).
 
-## A
+## C
+
+**[Collect](reference/function-clear-collect-clearcollect.md )** – Creates a collection or adds data to a data source.
+
 
