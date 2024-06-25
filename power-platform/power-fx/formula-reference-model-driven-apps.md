@@ -155,11 +155,31 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Exp](reference/function-numericals.md)** – Returns _e_ raised to a power.
 
+## F
+
+**[Filter](reference/function-filter-lookup.md)** – Returns a filtered table based on one or more criteria.
+
+**[Find](reference/function-find.md)** – Checks whether one string appears within another and returns the location.
+
+**[First](reference/function-first-last.md)** – Returns the first record of a table.
+
+**[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
+
+**[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
+
 ## G
 
 **[GroupBy](reference/function-groupby.md )** – Returns a table with records grouped together.
 
+**[GUID](reference/function-guid.md)** – Converts a GUID string to a GUID value or creates a new GUID value.
+
 ## H
+
+**[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
+
+**[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
+
+**[Host](reference/object-host.md)** – Provides information about the current host running the app.
 
 **[Hour](reference/function-datetime-parts.md )** – Returns the hour portion of a date/time value.
 
@@ -169,14 +189,29 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[IfError](reference/function-iferror.md )** – Detects errors and provides an alternative value or takes action.
 
+**[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
+
+**[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
 
 **[Int](reference/function-round.md )** – Rounds down to the nearest integer.
 
 **[IsBlank](reference/function-isblank-isempty.md )** – Checks for a [blank](reference/function-isblank-isempty.md) value.
 
+**[IsBlankOrError](reference/function-iferror.md)** – Checks for a [blank](reference/function-isblank-isempty.md) value or error.
+
+**[IsEmpty](reference/function-isblank-isempty.md)** – Checks for an empty table.
+
 **[IsError](reference/function-iferror.md )** – Checks for an error.
 
+**[IsMatch](reference/function-ismatch.md)** – Checks a string against a pattern. Regular expressions can be used.
+
+**[IsNumeric](reference/function-isnumeric.md)** – Checks for a numeric value.
+
 **[ISOWeekNum](reference/function-weeknum.md )** – Returns the ISO week number of a date/time value.
+
+**[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
+
+**[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
 
 **[IsUTCToday](reference/function-now-today-istoday.md )** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
 
@@ -186,9 +221,29 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## L
 
+**[Last](reference/function-first-last.md)** – Returns the last record of a table.
+
+**[LastN](reference/function-first-last.md)** – Returns the last set of records (N records) of a table.
+
+**[Left](reference/function-left-mid-right.md)** – Returns the left-most portion of a string.
+
+**[Len](reference/function-len.md)** – Returns the length of a string.
+
+**[Ln](reference/function-numericals.md)** – Returns the natural log.
+
+**[Location](reference/signals.md)** – Returns your location as a map coordinate by using the Global Positioning System (GPS) and other information.
+
+**[Log](reference/function-numericals.md)** – Returns the logarithm in any base of a number.
+
+**[LookUp](reference/function-filter-lookup.md)** – Looks up a single record in a table based on one or more criteria.
+
 **[Lower](reference/function-lower-upper-proper.md )** – Converts letters in a string of text to all lowercase.
 
 ## M
+
+**[Match](reference/function-ismatch.md)** – Extracts a substring based on a pattern. Regular expressions can be used.
+
+**[MatchAll](reference/function-ismatch.md)** – Extracts multiple substrings based on a pattern. Regular expressions can be used.
 
 **[Max](reference/function-aggregates.md )** – Maximum value of a table expression or a set of arguments.
 
@@ -204,7 +259,13 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## N
 
+**[Navigate](reference/function-navigate.md#navigate)** – Changes which screen is displayed.
+
 **[Not](reference/function-logicals.md )** – Boolean logic NOT. Returns true if its argument is false, and returns false if its argument is true. You can also use the [! operator](reference/operators.md).
+
+**[Notify](reference/function-showerror.md)** – Displays a banner message to the user.
+
+**[Now](reference/function-now-today-istoday.md)** – Returns the current date/time value in the user's time zone.
 
 ## O
 
@@ -212,11 +273,47 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## P
 
+**[Parent](reference/operators.md#self-and-parent-operators)** – Provides access to a container control's properties.
+
+**[ParseJSON](reference/function-parsejson.md)** – Converts JSON document represented as text to an [Untyped object](untyped-object.md) value.
+
+**[Patch](reference/function-patch.md)** – Modifies or creates a record in a data source, or merges records outside of a data source.
+
+**[PDF](reference/function-pdf.md)** – Export contents from the current screen to an object for use in multiple scenarios.
+
+**[Pi](reference/function-trig.md)** – Returns the number &pi;.
+
 **[PlainText](reference/function-encode-decode.md )** – Removes HTML and XML tags from a string.
+
+**[Power](reference/function-numericals.md)** – Returns a number raised to a power. You can also use the [**^** operator](reference/operators.md).
+
+**[Proper](reference/function-lower-upper-proper.md)** – Converts the first letter of each word in a string to uppercase, and converts the rest to lowercase.
 
 ## R
 
+**[Radians](reference/function-trig.md)** – Converts degrees to radians.
+
+**[Rand](reference/function-rand.md)** – Returns a pseudo-random number between 0 and 1.
+
+**[RandBetween](reference/function-rand.md)** – Returns a pseudo-random number between two numbers.
+
+**[RecordInfo](reference/function-recordinfo.md)** – Provides information about a record of a data source.
+
+**[Refresh](reference/function-refresh.md)** – Refreshes the records of a data source.
+
+**[Relate](reference/function-relate-unrelate.md)** – Relates records of two tables through a one-to-many or many-to-many relationship.
+
+**[Remove](reference/function-remove-removeif.md)** – Removes one or more specific records from a data source.
+
+**[RemoveIf](reference/function-remove-removeif.md)** – Removes records from a data source based on a condition.
+
+**[RenameColumns](reference/function-table-shaping.md)** – Renames columns of a table.
+
 **[Replace](reference/function-replace-substitute.md )** – Replaces part of a string with another string, by starting position of the string.
+
+**[Reset](reference/function-reset.md)** – Resets an input control to its default value, discarding any user changes.
+
+**[RGBA](reference/function-colors.md)** – Returns a color value for a set of red, green, blue, and alpha components.
 
 **[Right](reference/function-left-mid-right.md )** – Returns the right-most portion of a string.
 
@@ -228,9 +325,39 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## S
 
+**[Search](reference/function-filter-lookup.md)** – Finds records in a table that contain a string in one of their columns.
+
 **[Second](reference/function-datetime-parts.md )** – Retrieves the second portion of a date/time value.
 
+**[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
+
+**[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
+
+**[Sequence](reference/function-sequence.md)** – Generate a table of sequential numbers, useful when iterating with **ForAll**.
+
+**[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
+
+**[SetFocus](reference/function-setfocus.md)** – Moves input focus to a specific control.
+
+**[SetProperty](reference/function-setproperty.md)** – Simulates interactions with input controls.
+
+**[ShowColumns](reference/function-table-shaping.md)** – Returns a table with only selected columns.
+
+**[Shuffle](reference/function-shuffle.md)** – Randomly reorders the records of a table.
+
+**[Sin](reference/function-trig.md)** – Returns the sine of an angle specified in radians.
+
+**[Sort](reference/function-sort.md)** – Returns a sorted table based on a formula.
+
+**[SortByColumns](reference/function-sort.md)** – Returns a sorted table based on one or more columns.
+
+**[Split](reference/function-split.md)** – Splits a text string into a table of substrings.
+
+**[Sqrt](reference/function-numericals.md)** – Returns the square root of a number.
+
 **[StartsWith](reference/function-startswith.md )** – Checks if a text string begins with another text string.
+
+**[StdevP](reference/function-aggregates.md)** – Returns the standard deviation of its arguments.
 
 **[Substitute](reference/function-replace-substitute.md )** – Replaces part of a string with another string, by matching strings.
 
@@ -240,15 +367,43 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## T
 
+**[Table](reference/function-table.md)** – Creates a temporary table.
+
+**[Tan](reference/function-trig.md)** – Returns the tangent of an angle specified in radians.
+
 **[Text](reference/function-text.md )** – Converts any value and formats a number or date/time value to a string of text.
+
+**[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a gallery or form control.
+
+**[ThisRecord](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Returns the record for the current item in a record scope function, such as **ForAll**, **With**, and **Sum**.
+
+**[Time](reference/function-date-time.md)** – Returns a date/time value, based on **Hour**, **Minute**, and **Second** values.
+
+**[TimeValue](reference/function-datevalue-timevalue.md)** – Converts a time-only string to a date/time value.
+
+**[TimeZoneOffset](reference/function-dateadd-datediff.md)** – Returns the difference between UTC and the user's local time in minutes.
+
+**[Today](reference/function-now-today-istoday.md)** – Returns the current date-only value.
+
+**[Trace](reference/function-trace.md)** – Provide additional information in your test results.
 
 **[Trim](reference/function-trim.md )** – Removes extra spaces from the ends and interior of a string of text.
 
+**[TrimEnds](reference/function-trim.md)** – Removes extra spaces from the ends of a string of text only.
+
 **[Trunc](reference/function-round.md )** – Truncates the number to only the integer portion by removing any decimal portion.
 
-**[TrimEnds](reference/function-trim.md )** – Removes extra spaces from the ends of a string of text only.
-
 ## U
+
+**[Ungroup](reference/function-groupby.md)** – Removes a grouping.
+
+**[UniChar](reference/function-char.md)** – Translates a Unicode code into a string.
+
+**[Unrelate](reference/function-relate-unrelate.md)** – Unrelates records of two tables from a one-to-many or many-to-many relationship.
+
+**[Update](reference/function-update-updateif.md)** – Replaces a record in a data source.
+
+**[UpdateIf](reference/function-update-updateif.md)** – Modifies a set of records in a data source based on a condition.
 
 **[Upper](reference/function-lower-upper-proper.md )** – Converts letters in a string of text to all uppercase.
 
@@ -258,13 +413,19 @@ In this article, learn about all the functions available with [commanding in Pow
 
 ## V
 
+**[Validate](reference/function-validate.md)** – Checks whether the value of a single column or a complete record is valid for a data source.
+
 **[Value](reference/function-value.md )** – Converts a string to a number.
 
-**[Validate](reference/function-validate.md )** – Checks whether the value of a single column or a complete record is valid for a data source.
+**[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
 
 ## W
 
+**[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
+
 **[WeekNum](reference/function-weeknum.md )** – Returns the week number of a date/time value.
+
+**[With](reference/function-with.md)** – Calculates values and performs actions for a single record, including inline records of named values.
 
 ## Y
 
