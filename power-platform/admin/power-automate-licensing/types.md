@@ -274,7 +274,7 @@ Here are a few things to be aware of during the transition period:
 
 A Power Automate Process license can be allocated to a machine or to a cloud flow.
 
-##### Process allocated to a cloud flow
+#### Process allocated to a cloud flow
 
 Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily Power Platform Request (stackable limit).
 
@@ -282,15 +282,15 @@ A cloud flow that has been allocated a Process license becomes a 'process flow' 
 
 Discover [how to allocate a Process license to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).
 
-##### Process allocated to a machine
+#### Process allocated to a machine
 
 Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.
 
 Discover [how to allocate a Process license to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-machine).
 
-##### Manage the Process licenses within an environment
+#### Manage the Process licenses within an environment
 
-You can visualize and manage all the Process licenses utilization within an environment using the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page.
+You can visualize and manage all Process licenses allocated to cloud flows and machines within an environment using the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page.
 
 ### Power Automate Free license
 
