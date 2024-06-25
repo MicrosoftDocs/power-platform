@@ -20,36 +20,13 @@ Entitlements to use [Power Automate capabilities](types.md#license-entitlements)
 
 ![Power Automate add-ons](../media/RPA-license/add-ons-3.png)
 
-> [!NOTE]
->
-> - 
-> - 
-> - 
-
 ## Power Automate capacity add-ons
 
 A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#Standalone-capacity-licenses).
 
 ![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
 
-## Hosted process (previously Power Automate hosted RPA add-on)
-
-Desktop flows can have varying levels of workload throughout a period of time. For example, desktop flows for processing invoices or schedule reconciliation across multiple systems might have a monthly peak period. As desktop flows require a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
-
-The Power Automate Hosted Process license provides Microsoft hosted machine capacity, enabling RPA with zero infrastructure. The Hosted Process license supports two scenarios:
-- Individual hosted machines, enable developers to build or test automation and business users to run automation.
-- Hosted machine groups, automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
-
-The following are important points you should be aware of regarding the Hosted Process license:
-- One Hosted Process license includes the capacity to one Microsoft hosted machine and unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
-- One Hosted Process license can also be used as a process license to run unattended automation on a customer managed bot machine.
-- You can purchase more AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
-- Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate Hosted Process license.
-  
-> [!NOTE]
-> The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
-
-## Unattended RPA add-on
+## Unattended RPA add-on (legacy)
 
 > [!NOTE]
 > The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan.
@@ -70,7 +47,7 @@ Here are a few important notes of which you should be aware regarding the unatte
 - You can purchase additional AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
 - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the unattended license in addition to the Power Automate unattended RPA add-on.
 
-### FAQs about the unattended add-on
+##### FAQs about the Unattended RPA add-on
 
 1. I want to run unattended flow. What licenses do I need?
 
@@ -80,9 +57,28 @@ Here are a few important notes of which you should be aware regarding the unatte
 
    Yes, if you need to run them at the same time. If not, the runs are queued and begin when the bot is free.
    
+## Hosted RPA add-on (legacy converted to Power Automate Hosted Process license)
+
+Desktop flows can have varying levels of workload throughout a period of time. For example, desktop flows for processing invoices or schedule reconciliation across multiple systems might have a monthly peak period. As desktop flows require a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
+
+The Power Automate Hosted Process license provides Microsoft hosted machine capacity, enabling RPA with zero infrastructure. The Hosted Process license supports two scenarios:
+- Individual hosted machines, enable developers to build or test automation and business users to run automation.
+- Hosted machine groups, automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
+
+The following are important points you should be aware of regarding the Hosted Process license:
+- One Hosted Process license includes the capacity to one Microsoft hosted machine and unattended RPA bot. All desktop flows (RPA) running on the machine and cloud flows (DPA) that are part of the business process are also covered by the license.
+- One Hosted Process license can also be used as a process license to run unattended automation on a customer managed bot machine.
+- You can purchase more AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
+- Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Office, the Microsoft 365, you must purchase the unattended license in addition to the Power Automate Hosted Process license.
+  
+> [!NOTE]
+> The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
+   
 ## Power Automate consumptive add-ons
 
 A consumptive add-on provides a monthly quantity of consumptive units which are consumed by flow runs and destroyed after usage (AI builder credits, Power Platform requests entitlement).
+
+![Power Automate consumptive add-ons](../media/RPA-license/consumptive-add-ons-1.png)
 
 ## AI builder capacity add-on
 
@@ -112,5 +108,11 @@ If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-pl
 
 ## Power Automate storage add-ons
 
-A storage add-on provides data storage space to support scalling of operations
+A storage add-on provides data storage space to support scalling of operations.
+
+![Power Automate storage add-ons](../media/RPA-license/storage-add-ons-1.png)
+
+### Power Automate Process Mining add-on
+
+### Dataverse storage capacity add-on
 
