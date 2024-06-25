@@ -301,13 +301,15 @@ Admins can use PowerShell cmdlets to enable or disable self-assisted trials. Onc
 
 No, Power Automate Trial licenses aren't available work in government clouds (GCC). Those organizations can only purchase licenses with volume discounting.
 
-### Admin managed trial licenses
+### Admin-managed trial licenses
 
-Global admins use the Microsoft 365 admin center to get Power Automate Premium, Power Automate Process, or Power Automate Hosted Process trials and assign them to users / environments. These trials are for 30 days. Global admins can add a trial (subscription-based) environment to their tenant, or new organizations can sign up for a new tenant and become the global admin. For new organizations, an admin-managed subscription is created with a specific number of licenses (usually 25); admins control which users get licenses. assigned to them. An admin-managed subscription has an end date that can be extended once (another 30 days). 
+Admin-managed trial licenses are trial versions of the Power Automate Premium, Power Automate Process, or Power Automate Hosted Process licenses. They bear the same entitlements but have a 30 days lifetime. 
+
+Global admins can provision those trial licenses on the Microsoft 365 admin center and assign them to users / environments. An admin-managed trial has an end date that can be extended once (another 30 days). 
 
 > [!NOTE]
-> - Admin managed trials are different from the Power Automate Trial license (self-assisted).
-> - When using an admin managed trial SKU, the SKU name might not say Trial.
+> - Admin-managed trials are different from the Power Automate Trial license (self-provisioned).
+> - When using an admin-managed trial SKU, the SKU name might not say Trial.
 
 Follow these steps to get started.
 
@@ -332,10 +334,6 @@ After the free trial starts, go to **Billing** > **Licenses** to see the 25 new 
 ##### How can I create an admin trial, check expiry and extend trials?
 
 Follow these instructions to [create an admin trial, check expiry, and extend trials](../trial-environments.md#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
-
-##### How can I convert a trial environment to a production environment?
-
-You can convert either type of trial environments to a production environment by switching it to consume from paid capacity, keeping it from being disabled and deleted. After it becomes a production environment, it follows the paid license lifecycle
 
 ### Power Apps Developer plan
 
