@@ -23,6 +23,10 @@ In this article, learn about all the functions available with [plug-ins in Micro
 
 **[Collect](reference/function-clear-collect-clearcollect.md )** – Creates a collection or adds data to a data source.
 
+## H
+
+**[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
+
 ## S
 
 **[Set](reference/function-set.md )** – Sets the value of a global variable.
