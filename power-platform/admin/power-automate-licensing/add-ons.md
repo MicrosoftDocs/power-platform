@@ -18,18 +18,19 @@ Entitlements to use [Power Automate capabilities](types.md#license-entitlements)
 - consumptive add-ons
 - storage add-ons
 
-![Power Automate add-ons](../media/RPA-license/add-ons-2.png)
+![Power Automate add-ons](../media/RPA-license/add-ons-3.png)
 
 > [!NOTE]
 >
-> - A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#Standalone-capacity-licenses).
-> - A consumptive add-on provides a monthly quantity of consumptive units which are consumed by flow runs and destroyed after usage (AI builder credits, Power Platform requests entitlement).
-> - A storage add-on provides data storage space to support scalling of operations
+> - 
+> - 
+> - 
 
 ## Power Automate capacity add-ons
 
+A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#Standalone-capacity-licenses).
 
-![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-1.png)
+![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
 
 ## Hosted process (previously Power Automate hosted RPA add-on)
 
@@ -81,6 +82,8 @@ Here are a few important notes of which you should be aware regarding the unatte
    
 ## Power Automate consumptive add-ons
 
+A consumptive add-on provides a monthly quantity of consumptive units which are consumed by flow runs and destroyed after usage (AI builder credits, Power Platform requests entitlement).
+
 ## AI builder capacity add-on
 
 AI Builder is licensed as an add-on to standalone Power Apps and Power Automate licensing and to Dynamics 365 licenses. AI Builder is licensed on a capacity basis. AI Builder capacity is expressed as *service credits*. Service credits serve as the single (common) currency across all the scenarios supported by AI Builder. The available service credits decrease when you use AI Builder services. Different scenarios (for example, forms processing, prediction, etc.) use service credits at different rates. Purchase the appropriate number of AI Builder capacity add-on units based on anticipated usage across all scenarios.
@@ -108,4 +111,6 @@ You can't assign Power Platform requests capacity add-on packs to users or flows
 If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-platform-requests-pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you can't use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 ## Power Automate storage add-ons
+
+A storage add-on provides data storage space to support scalling of operations
 
