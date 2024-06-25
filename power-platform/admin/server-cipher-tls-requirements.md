@@ -44,7 +44,7 @@ To comply with our security policy for a secure connection, your server must hav
    > Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated).
    > Your servers must have the above security protocol to continue running the Dataverse services.
    > 
-   > **TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 and TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384** may show up as weak when you performed a SSL report test. This is due to known attacks toward OpenSSL implementation. Dataverse uses Windows implementation that is not based on OpenSSL and therefore is not vulnerable. 
+   > **TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 and TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384** may show up as weak when you performed an SSL report test. This is due to known attacks toward OpenSSL implementation. Dataverse uses Windows implementation that is not based on OpenSSL and therefore is not vulnerable. 
 
    You may either upgrade the [Windows version](/windows/win32/secauthn/cipher-suites-in-schannel) or update the [Windows TLS registry](/windows-server/security/tls/tls-registry-settings) to make sure that your server endpoint supports one of these ciphers.
 

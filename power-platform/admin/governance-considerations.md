@@ -72,7 +72,7 @@ The following principals are supported for each role type.
 > - In the Default environment, all users in a tenant are granted access to the Environment Maker role. 
 > - Microsoft Entra tenant Global Administrators have admin access to all environments.
 
-#### FAQ - What permissions exist at an Microsoft Entra tenant level? 
+#### FAQ - What permissions exist at a Microsoft Entra tenant level? 
 
 Today, Microsoft Power Platform admins can do the following: 
 

@@ -1,11 +1,11 @@
 ---
 title: Overview of an account planning guide
-description: Learn how to generate an account planning guide in Project “Sophia”.
+description: Learn how to generate an account planning guide in Project "Sophia." Guides help the user provide the needed data, and then reason over it for a given scenario.
 author: mikkelsen2000
-ms.topic: Overview
+ms.topic: overview
 ms.custom: 
 ms.reviewer: mkaur
-ms.date: 10/31/2023
+ms.date: 3/20/2024
 ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
@@ -26,12 +26,16 @@ Use the account planning guide in Project "Sophia" to help you generate account 
 
 1. Go to [https://projectsophia.preview.microsoft.com]( https://projectsophia.preview.microsoft.com).
 1. From the **Home** screen, select **Guides** > **Account planning**.
-1. From the top right, select **Domains** to optimize responses your specific area of interest.
-1. Select **Add data** > **Upload files**.
-1. Select the file name and then select **Open**.
-1. Select **Generate**.
+1. To get relevant results, select **Domains** located at the top right and choose a specific domain.
+1. Select **Add data** and then select one of the following options:
+   - **Upload files**
+   - Connect to **Dynamics 365 Sales**
+    > [!IMPORTANT]
+    > You need to have an account to establish a connection with Dynamics 365 Sales. For more informatoin, see [Use data from Dynamics 365 Sales](ask-question.md#use-data-from-dynamics-365-sales).
+    
+1. When your data loads, select **Generate**.
 
-Project "Sophia" is going to generate a tailored account plan based on your data. You can upload more data and refine your account plan or continue exploring your data.
+Project "Sophia" is going to generate a tailored account plan based on your data. You can upload or connect to more data and refine your account plan or continue exploring your data.
 
 > [!div class="mx-imgBorder"]
 > ![Accounting planning guide.](media/account-plan.png)

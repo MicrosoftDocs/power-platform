@@ -462,6 +462,8 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
+            - name: Manage security
+              href: security/security-posture-overview.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -948,6 +950,8 @@
                       items:
                         - name: Configure incoming and outgoing email synchronization
                           href: set-incoming-outgoing-email-synchronization.md
+                        - name: Select the start date for processing incoming email
+                          href: select-incoming-email-processing-start-date.md
                         - name: Specify which emails are automatically tracked
                           href: email-message-filtering-correlation.md
                         - name: Associate an email address with a row
@@ -1079,15 +1083,20 @@
                   href: connect-yammer.md
         - name: Unified admin experience for finance and operations apps (preview)
           items:
-            - name: Overview
+            - name: Overview of unified admin experience for finance and operations apps
               href: unified-experience/finance-operations-apps-overview.md
-              displayName: Overview of unified admin experience for finance and operations apps
+            - name: Administration for partners and systems implementers
+              href: unified-experience/partners-systems-implementers.md
             - name: "Tutorial: Provision a new environment with an ERP-based template"
               href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
             - name: "Tutorial: Install the Finance and Operations Provisioning apps"
               href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
+            - name: "Tutorial: Update the Finance and Operations Provisioning app"
+              href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
             - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Tutorial: Perform a transaction-less copy between environments"
+              href: unified-experience/tutorial-perform-transactionless-copy.md
             - name: "Admin trials for finance and operations apps"
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
