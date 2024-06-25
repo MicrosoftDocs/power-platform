@@ -12,18 +12,21 @@ search.audienceType:
 
 # Type of Power Automate add-ons
 
-Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (premium connectors, unattended RPA, etc.) are obtained via [licenses](types.md) and add-ons. This article focusses on add-ons. 
+Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (premium connectors, unattended RPA, etc.) are obtained via [licenses](types.md) and add-ons. This article focusses on add-ons, which are categorized as follows:
 
-![Power Automate add-ons](../media/RPA-license/add-ons-1.png)
+- capacity add-ons
+- consumptive add-ons
+- storage add-ons
 
+![Power Automate add-ons](../media/RPA-license/add-ons-2.png)
+
+> [!NOTE]
+>
+> - A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#Standalone-capacity-licenses).
+> - A consumptive add-on provides a monthly quantity of consumptive units which are consumed by flow runs and destroyed after usage (AI builder credits, Power Platform requests entitlement).
+> - A storage add-on provides data storage space to support scalling of operations
 
 ## Power Automate capacity add-ons
-
-Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an additional 50,000 daily Power Platform requests per unit for $50/month. Unused Power Platform requests don't carry over from day to day. You can purchase these add-ons at any time and they remain part of the subscription for the remainder of the subscription term.
-
-You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends.
-
-If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-platform-requests-pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you can't use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 ## Hosted process (previously Power Automate hosted RPA add-on)
 
@@ -72,6 +75,8 @@ Here are a few important notes of which you should be aware regarding the unatte
 1. I need multiple instances running unattended. Do I need multiple add-ons?
 
    Yes, if you need to run them at the same time. If not, the runs are queued and begin when the bot is free.
+   
+## Power Automate consumptive add-ons
 
 ## AI builder capacity add-on
 
@@ -91,4 +96,13 @@ I have a Power Automate per user with RPA plan and I got AI builder credits as p
 
 No. AI builder service credits are pooled at the tenant level and can't be assigned to a particular user. So, any user who runs a flow that needs AI builder service credits needs to use credits from the pool.
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+### Power Platform Requests add-on
+
+Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an additional 50,000 daily Power Platform requests per unit for $50/month. Unused Power Platform requests don't carry over from day to day. You can purchase these add-ons at any time and they remain part of the subscription for the remainder of the subscription term.
+
+You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends.
+
+If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-platform-requests-pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you can't use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
+
+## Power Automate storage add-ons
+
