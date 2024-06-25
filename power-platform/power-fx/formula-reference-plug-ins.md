@@ -23,4 +23,8 @@ In this article, learn about all the functions available with [plug-ins in Micro
 
 **[Collect](reference/function-clear-collect-clearcollect.md )** – Creates a collection or adds data to a data source.
 
+## S
+
+**[Set](reference/function-set.md )** – Sets the value of a global variable.
+
 

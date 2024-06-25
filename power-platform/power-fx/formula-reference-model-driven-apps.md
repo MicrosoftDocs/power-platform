@@ -84,3 +84,84 @@ In this article, learn about all the functions available with [commanding in Pow
 
 **[Lower](reference/function-lower-upper-proper.md )** – Converts letters in a string of text to all lowercase.
 
+## M
+
+**[Max](reference/function-aggregates.md )** – Maximum value of a table expression or a set of arguments.
+
+**[Mid](reference/function-left-mid-right.md )** – Returns the middle portion of a string.
+
+**[Min](reference/function-aggregates.md )** – Minimum value of a table expression or a set of arguments.
+
+**[Minute](reference/function-datetime-parts.md )** – Retrieves the minute portion of a date/time value.
+
+**[Mod](reference/function-mod.md )** – Returns the remainder after a dividend is divided by a divisor.
+
+**[Month](reference/function-datetime-parts.md )** – Retrieves the month portion of a date/time value.
+
+## N
+
+**[Not](reference/function-logicals.md )** – Boolean logic NOT. Returns true if its argument is false, and returns false if its argument is true. You can also use the [! operator](reference/operators.md).
+
+## O
+
+**[Or](reference/function-logicals.md )** – Boolean logic OR. Returns true if any of its arguments are true. You can also use the [|| operator](reference/operators.md).
+
+## P
+
+**[PlainText](reference/function-encode-decode.md )** – Removes HTML and XML tags from a string.
+
+## R
+
+**[Replace](reference/function-replace-substitute.md )** – Replaces part of a string with another string, by starting position of the string.
+
+**[Right](reference/function-left-mid-right.md )** – Returns the right-most portion of a string.
+
+**[Round](reference/function-round.md )** – Rounds to the closest number.
+
+**[RoundDown](reference/function-round.md )** – Rounds down to the largest previous number.
+
+**[RoundUp](reference/function-round.md )** – Rounds up to the smallest next number.
+
+## S
+
+**[Second](reference/function-datetime-parts.md )** – Retrieves the second portion of a date/time value.
+
+**[StartsWith](reference/function-startswith.md )** – Checks if a text string begins with another text string.
+
+**[Substitute](reference/function-replace-substitute.md )** – Replaces part of a string with another string, by matching strings.
+
+**[Sum](reference/function-aggregates.md )** – Calculates the sum of a table expression or a set of arguments.
+
+**[Switch](reference/function-if.md )** – Matches with a set of values and then evaluates a corresponding formula.
+
+## T
+
+**[Text](reference/function-text.md )** – Converts any value and formats a number or date/time value to a string of text.
+
+**[Trim](reference/function-trim.md )** – Removes extra spaces from the ends and interior of a string of text.
+
+**[Trunc](reference/function-round.md )** – Truncates the number to only the integer portion by removing any decimal portion.
+
+**[TrimEnds](reference/function-trim.md )** – Removes extra spaces from the ends of a string of text only.
+
+## U
+
+**[Upper](reference/function-lower-upper-proper.md )** – Converts letters in a string of text to all uppercase.
+
+**[UTCNow](reference/function-now-today-istoday.md )** – Returns the current date/time value in Coordinated Universal Time (UTC).
+
+**[UTCToday](reference/function-now-today-istoday.md )** – Returns the current date-only value in Coordinated Universal Time (UTC).
+
+## V
+
+**[Value](reference/function-value.md )** – Converts a string to a number.
+
+**[Validate](reference/function-validate.md )** – Checks whether the value of a single column or a complete record is valid for a data source.
+
+## W
+
+**[WeekNum](reference/function-weeknum.md )** – Returns the week number of a date/time value.
+
+## Y
+
+**[Year](reference/function-datetime-parts.md )** – Retrieves the year portion of a date/time value.
