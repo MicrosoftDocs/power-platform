@@ -28,6 +28,9 @@ Entitlements to use [Power Automate capabilities](types.md#license-entitlements)
 
 ## Power Automate capacity add-ons
 
+
+![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-1.png)
+
 ## Hosted process (previously Power Automate hosted RPA add-on)
 
 Desktop flows can have varying levels of workload throughout a period of time. For example, desktop flows for processing invoices or schedule reconciliation across multiple systems might have a monthly peak period. As desktop flows require a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
