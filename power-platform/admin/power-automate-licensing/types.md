@@ -41,11 +41,11 @@ You can purchase the standalone licenses on [Power Automate Pricing](https://flo
 
 Users who need to create general-purpose automations (with the premium connectors entitlement), to have full flexibility (with the custom connectors entitlement) or to interact with applications mimicking mouse movement of a human user (with the Robotic Process Automation attended entitlement) should consider a Power Automate Premium license.
 
-Here-after the list of standalone Power Automate user-licenses:
+Here-after the list of standalone Power Automate user-licenses: 
 
 |License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________________|
 -------|------|------|
-Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through Robotic process automation (RPA)). More precisely on the RPA side, this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to process mining functionalities and provisioning of AI Builder credits, which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition.|
+Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through Robotic process automation (RPA)). More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to process mining functionalities and provisioning of AI Builder credits, which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition.|
 [Power Automate Free](#power-automate-free-license)|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) restricted to standard connectors only. This license also restricts users to share their flows.|
 [Power Automate Trial](#power-automate-trial-license)|User license <br>(90 days trial)|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities) and with the extra capability to execute their desktop flows in unattended mode on their registered machine (without unattended bot requirement).|
 Power Automate Per-user plan|User license ([legacy](#entitlements-of-all-standalone-licenses-including-legacy))|The Power Automate Premium license has replaced this license (it provides more entitlements for the same price). It's no longer available for purchase from the pricing page but organizations can still purchase it via deal desk.|
@@ -68,12 +68,15 @@ Power Automate Process|Capacity|- Cloud flow <br>- Standard machine|Allocated to
 Power Automate Hosted Process|Capacity|- Hosted machine <br>- Hosted machine group<br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process it can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an alternative scenario the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling RPA with zero infrastructure.
 Power Automate Per-flow plan|Capacity ([legacy](#entitlements-of-all-standalone-licenses-including-legacy))|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from pricing page but customers can still purchase it via deal desk.
 
-> [!IMPORTANT]
-> Capacity licenses can't replace all user licenses within an environment as some essential capabilities are only available to licensed users
-> - Allocation of a Process license to a machine (as required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
-> - Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
-> <br>
-> Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in Process overage (which overage quantity should be ignored if the Hosted Process licenses exceed it)
+##### Can my organization only purchase and use capacity licenses within an environment?
+Capacity licenses usually can't replace all user licenses within an environment as some essential capabilities are only available to licensed users:
+- Allocation of a Process license to a machine (required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
+- Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
+
+> [!NOTE]
+>
+> - Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) (which overage quantity should be ignored if the Hosted Process licenses exceed it)
+> - Process license and Hosted Process license utilization within an environment are manageable through the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page
 
 ## Compare standalone Power Automate licenses
 
@@ -131,13 +134,15 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 ### Entitlements to usage of Robotic process automation (RPA)
 
-[Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer.
+[Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. 
 
 |Entitlement to<br>____________________________|Entitlement description<br>_____________________________________________________________________________________|
 |----------|-------|
 |Attended RPA|The attended RPA entitlement is needed to register a machine, access RPA management portal pages, add premium RPA actions to a desktop flow, share a desktop flow and trigger a desktop flow in attended mode. Attended mode refers to a desktop flow execution with human supervision. This entitlement is also needed to create any desktop flow in non-default environments. It's included in the Power Automate Premium user-license.|
 |Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). It's included in the Power Automate Process capacity-license and the Power Automate Hosted Process capacity-license.|
 |Hosted RPA|The hosted RPA entitlement is needed to create a hosted machine or a hosted machine group. It's included in the Power Automate Hosted Process capacity-license.|
+
+To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
 ### Entitlements to other Power Automate capabilities
 
@@ -284,13 +289,13 @@ A user can self-provision a Power Automate Trial license from within the Power A
 
 ![Start free trial from within Power Automate](../media/power-automate-licensing/free-trial-inline.png)
 
-#### How can admins allow or block Power Automate Trial licenses (self-assisted)?
+##### How can admins allow or block Power Automate Trial licenses (self-assisted)?
 
 Admins can use PowerShell cmdlets to enable or disable self-assisted trials. Once disabled, all existing licenses of the specified type are removed from all users in the tenant. These trials aren't recoverable. Additionally, it blocks all further assignment of licenses of that type. Admins can enable self-assisted trials at any time.
 
 [Learn how to create a trial (subscription-based) environment in the Power Platform admin center](../trial-environments.md#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
 
-#### Is Power Automate Trial license available in government clouds?
+##### Is Power Automate Trial license available in government clouds?
 
 No, Power Automate Trial licenses aren't available work in government clouds (GCC). Those organizations can only purchase licenses with volume discounting.
 
@@ -322,11 +327,11 @@ Follow these steps to get started.
 
 After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
 
-#### How can I create an admin trial, check expiry and extend trials?
+##### How can I create an admin trial, check expiry and extend trials?
 
 Follow these instructions to [create an admin trial, check expiry, and extend trials](../trial-environments.md#create-a-trial-subscription-based-environment-in-the-power-platform-admin-center).
 
-#### How can I convert a trial environment to a production environment?
+##### How can I convert a trial environment to a production environment?
 
 You can convert either type of trial environments to a production environment by switching it to consume from paid capacity, keeping it from being disabled and deleted. After it becomes a production environment, it follows the paid license lifecycle
 
