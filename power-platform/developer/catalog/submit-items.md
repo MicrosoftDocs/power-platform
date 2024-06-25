@@ -771,7 +771,9 @@ In this example, you are connected to the `EnvironmentWithCatalog`.
 Use the `-cid` parameter to specify the catalog item ID and `-te` to specify the environment to install the catalog item in.
 
 ```powershell
-pac catalog install  -cid ContosoConferencesCustomConnector -te https://<org to install item>.crm.dynamics.com/
+pac catalog install  `
+   -cid ContosoConferencesCustomConnector `
+   -te https://<org to install item>.crm.dynamics.com/
 Connected as user@domain
 Connected to... EnvironmentWithCatalog
 Tracking ID for this installation is 9cc47262-2f33-ef11-8409-6045bdd3aec3
@@ -837,7 +839,7 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 
 Use this message when you have only the `mspcat_applications`(**Catalog Item**) `mspcat_TPSID` (**Catalog Item Id**). This is the message that is invoked by the PAC CLI and the application.
 
-The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build). 
+The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
 
 ```csharp
@@ -872,7 +874,16 @@ static EntityReference InstallCatalogItemByCIDExample(IOrganizationService servi
 
 ### [Web API](#tab/webapi)
 
+There are two actions you can use to install catalog items: `mspcat_InstallCatalogItem` and `mspcat_InstallCatalogItemByCID`.
 
+### mspcat_InstallCatalogItem
+
+TODO: Web API example
+
+
+### mspcat_InstallCatalogItemByCID
+
+TODO: Web API example
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -891,6 +902,8 @@ Use the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-
 
 After your submission metadata JSON document is ready, use the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command to submit it.
 
+TODO: Explain when and why someone would include a reference to the solution zip file.
+
 ```powershell
 pac catalog submit -p "BuildDemoSubmission.json" -sz "ContosoConference_1_0_0_1_managed.zip"
 Creating package for catalog submit request...
@@ -903,13 +916,73 @@ Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
 
 ### [SDK for .NET](#tab/sdk)
 
+TODO: Why doesn't the `mspcat_SubmitCatalogApprovalRequest` include parameters that correspond to the solution zip file?
+
+
+```csharp
+/// <summary>
+/// Submits a Catalog item for approval
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="pathToSubmissionFile">The location of the submission file</param>
+/// <returns>mspcat_SubmitCatalogApprovalRequestResponse contains AsyncOperationId and CertificationRequestId</returns>
+static mspcat_SubmitCatalogApprovalRequestResponse SubmitCatalogApprovalRequest(
+   IOrganizationService service,
+   FileInfo pathToSubmissionFile)
+{
+
+   byte[] fileBytes = File.ReadAllBytes(pathToSubmissionFile.FullName);
+   string encodedSubmissionFile = Convert.ToBase64String(fileBytes);
+
+
+   var request = new mspcat_SubmitCatalogApprovalRequestRequest
+   {
+         EncodedApprovalRequest = encodedSubmissionFile
+   };
+
+   return (mspcat_SubmitCatalogApprovalRequestResponse)service.Execute(request);
+
+}
+```
+
+
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
-// Send base64 encoded submission document as `EncodedApprovalRequest`
-POST //mspcat_SubmitCatalogApprovalRequest
-Returns AsyncOperationId and CertificationRequestId
+The following `SubmitCatalogApprovalRequest` PowerShell function demonstrates how to use the `mspcat_SubmitCatalogApprovalRequest` message.
+The results returned are an instance of the `mspcat_SubmitCatalogApprovalRequestResponse` complex type, which contains
+
+```powershell
+function SubmitCatalogApprovalRequest {
+   param (
+      [Parameter(Mandatory)]
+      [System.IO.FileInfo]
+      $pathToSubmissionFile
+   )
+
+   $uri = $baseURI + 'mspcat_SubmitCatalogApprovalRequest'
+
+   $encodedApprovalRequest = [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes($pathToSubmissionFile.FullName))
+
+   $body = @{
+      EncodedApprovalRequest = $encodedApprovalRequest
+   } | ConvertTo-Json
+
+   $postHeaders = $baseHeaders.Clone()
+   $postHeaders.Add('Content-Type', 'application/json')
+
+   $results = Invoke-RestMethod `
+      -Method Post `
+      -Uri $uri `
+      -Headers $postHeaders `
+      -Body $body
+
+   return   $results
+
+}
+```
+
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -999,7 +1072,8 @@ function ResolveApproval {
       $message
    )
 
-   $uri = $baseURI + "mspcat_certificationrequests($certificationRequestId)/Microsoft.Dynamics.CRM.mspcat_ResolveApproval"
+   $uri = $baseURI + "mspcat_certificationrequests($certificationRequestId)"
+   $uri += "/Microsoft.Dynamics.CRM.mspcat_ResolveApproval"
 
    $body = @{
       requestsuccess = $requestsuccess
