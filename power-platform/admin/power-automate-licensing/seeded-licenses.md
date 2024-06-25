@@ -1,4 +1,23 @@
-## Seeded licenses
+---
+title: Seeded licenses in Power Automate
+description: Learn about seeded licenses in Power Automate
+author: cvassallo
+contributors:
+  - cvassallo
+ms.subservice: admin
+ms.topic: overview
+ms.date: 06/24/2024
+ms.author: cvassallo
+ms.reviewer: angieandrews
+search.audienceType: 
+  - admin
+---
+
+# Seeded licenses in Power Automate
+
+Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors) can be obtained via seeded licenses. Seeded licenses are user licenses, they are tied to other Microsoft products and they offer limited capabilities on Power Automate.
+ 
+## Types of seeded licenses
 
 Users gain limited rights to use Power Automate if they inherited seeded plans from licenses tied to other Microsoft products:
 - Microsoft 365 (formerly Office 365) / Dynamics 365 Enterprise / Dynamics 365 Professional / Dynamics 365 Team Member
@@ -15,9 +34,9 @@ Those licenses entitle the user to create and run cloud flows with standard conn
 
 If the cloud flow is isolated and has nothing to do with the application, then a standalone Power Automate Premium must be purchased. You can find more details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-### Compare seeded licenses
+## Compare seeded licenses
 
-Here-bellow a table detailing each seeded license [entitlement](#license-entitlements):
+Here-bellow a table detailing each seeded license [entitlement](types.md#license-entitlements):
 
 ||Power Apps Premium<br>_______________|Office <br>365<br>_______________|Dynamics 365 professional <sup>1</sup><br>______________________|Dynamics 365 Enterprise applications <sup>2</sup><br>______________________________|Dynamics 365 Team member<br>________________________|Windows licenses<br>_______________|
 |----------|-------|---------------------|--------------|--------------|--------------|--------------|
@@ -43,3 +62,7 @@ _3. In Dataverse for Teams environments (included in [specific Office licenses)]
 _4. Only included if cloud flow is in-context & associated to a Power App_ <br>
 _5. Only included if cloud flow is in-context & associated to a Dynamic 365 app_ <br>
 _6. Only includes local execution of desktop flow (no orchestration)_ <br>
+
+## How to gain more entitlements in Power Automate ?
+
+To gain access to all premium connectors, custom connectors, attended RPA, etc., a user should opt for a [Power Automate license](types.md).
