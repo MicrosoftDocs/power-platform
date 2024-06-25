@@ -35,9 +35,6 @@ A capacity add-on is object-centric: it's allocated to a Power Automate object (
 
 >  [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
 
-> [!NOTE]
-> The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan.
-
 Unattended desktop flows run without human interaction. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
 When running unattended, Power Automate securely signs into the device on your behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
@@ -45,7 +42,7 @@ When running unattended, Power Automate securely signs into the device on your b
 The Power Automate unattended RPA add-on extends desktop-based automation by enabling a bot to run autonomously (independent of a user). Unattended bots can be deployed on a local or remote desktop, or in a virtualized environment. The Power Automate per user with attended RPA or Power Automate per flow plans are the eligible standalone offers for the unattended RPA add-on.
 
 > [!NOTE]
-> The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license (user license or flow license).
+> - The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license (user license or flow license).
 
 Here are a few important notes of which you should be aware regarding the unattended add-on.
 
@@ -67,7 +64,8 @@ Here are a few important notes of which you should be aware regarding the unatte
 ## Hosted RPA add-on  (legacy)
 
 > [!IMPORTANT]
-> The Power Automate Hosted RPA add-on has been converted into the [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
+> - The Power Automate Hosted RPA add-on has been converted into the [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
+> - The already purchased Hosted RPA add-on units were automatically converted to Power Automate Hosted Process licenses and no action needs to be taken
 
 Desktop flows can have varying levels of workload throughout a period of time. For example, desktop flows for processing invoices or schedule reconciliation across multiple systems might have a monthly peak period. As desktop flows require a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
 
