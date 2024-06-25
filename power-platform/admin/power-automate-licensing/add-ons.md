@@ -1,5 +1,5 @@
 ---
-title: "Capacity based licensing for Power Automate"
+title: "Type of Power Automate add-ons"
 description: "Add-ons for Power Automate licensing."
 author: msftman
 ms.topic: overview
@@ -10,9 +10,14 @@ search.audienceType:
   - admin
 ---
 
-# Capacity based licensing for Power Automate
+# Type of Power Automate add-ons
 
 Add-ons can be added onto a standalone Power Automate license.
+
+Rights to use Power Automate capabilities (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article focusses on licenses, which are available either as:
+
+standalone licenses tied to the Power Automate product (divided in two categories: user-licenses and capacity-licenses).
+seeded licenses (user-licenses only) inherited by licenses tied to other Microsoft products, they offer limited capabilities on Power Automate.
 
 ## Power Automate capacity add-ons
 
