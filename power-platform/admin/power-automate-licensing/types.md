@@ -20,7 +20,7 @@ ms.collection: bap-ai-copilot
 # Types of Power Automate licenses
 
 Entitlements to use [Power Automate capabilities](#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and [add-ons](add-ons.md). This article focusses on licenses, which are categorized as follows:
-- standalone licenses tied to the Power Automate product (divided in two categories: user-licenses and capacity-licenses).
+- standalone licenses tied to the Power Automate product (made of user-licenses and capacity-licenses).
 - seeded licenses (user-licenses only) inherited by licenses tied to other Microsoft products, they offer limited capabilities on Power Automate.
 
 ![Power Automate licenses](../media/RPA-license/licenses.png)
