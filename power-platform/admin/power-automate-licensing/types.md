@@ -75,8 +75,8 @@ Capacity licenses usually can't replace all user licenses within an environment 
 
 > [!NOTE]
 >
-> - Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) (which overage quantity should be ignored if the Hosted Process licenses exceed it)
 > - Process license and Hosted Process license utilization within an environment are manageable through the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page
+> - Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) which overage quantity should be ignored if the Hosted Process license quantity exceeds it
 
 ## Compare standalone Power Automate licenses
 
