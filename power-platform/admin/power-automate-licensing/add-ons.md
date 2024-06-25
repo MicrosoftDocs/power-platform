@@ -22,11 +22,18 @@ Entitlements to use [Power Automate capabilities](types.md#license-entitlements)
 
 ## Power Automate capacity add-ons
 
-A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#Standalone-capacity-licenses).
+A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object). Its role is exactly identical to a [capacity license](types.md#standalone-capacity-licenses).
 
 ![Power Automate capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
 
 ## Unattended RPA add-on (legacy)
+
+> [!IMPORTANT]
+> - The Power Automate Process license has replaced the Unattended RPA add-on (same price with more entitlements)
+> - The already purchased Unattended RPA add-on units are considered legacy and should not be renewed but replaced by Power Automate Process.
+> - Process licenses and Unattended RPA add-ons have been combined in a single capacity pool and can be used interchangeably within Power Automate. They now have exactly the same value and role.
+
+>  [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
 
 > [!NOTE]
 > The Power Automate unattended RPA add-on is now replaced by the Power Automate Process plan.
@@ -57,7 +64,10 @@ Here are a few important notes of which you should be aware regarding the unatte
 
    Yes, if you need to run them at the same time. If not, the runs are queued and begin when the bot is free.
    
-## Hosted RPA add-on (legacy converted to Power Automate Hosted Process license)
+## Hosted RPA add-on  (legacy)
+
+> [!IMPORTANT]
+> The Power Automate Hosted RPA add-on has been converted into the [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
 
 Desktop flows can have varying levels of workload throughout a period of time. For example, desktop flows for processing invoices or schedule reconciliation across multiple systems might have a monthly peak period. As desktop flows require a physical or virtual machine to run on, most organizations would provision machines to cope with requests during peak periods, leaving machine underutilized for most of the remaining time.
 
