@@ -1,6 +1,4 @@
 items:
-- name: "About Power Platform Catalog Manager Table/Entity Reference"
-  href: ../about-entity-reference.md
 - name: "Account"
   displayName: "Account entity"
   href: account.md

@@ -41,6 +41,6 @@ One-To-Many Relationship: [mspcat_installactivity mspcat_InstallActivity_activit
 
 ### See also
 
-[Dataverse table/entity reference](../about-entity-reference.md)  
+[Dataverse table/entity reference](/power-apps/developer/data-platform/reference/about-entity-reference)  
 [Dataverse Web API Reference](/power-apps/developer/data-platform/webapi/reference/about)   
 <xref:Microsoft.Dynamics.CRM.activityparty?displayProperty=fullName>

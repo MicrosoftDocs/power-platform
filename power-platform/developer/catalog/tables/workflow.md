@@ -40,6 +40,6 @@ Many-To-One Relationship: [mspcat_bpf_06d86bf860814221be8c81204be2199d lk_mspcat
 
 ### See also
 
-[Dataverse table/entity reference](../about-entity-reference.md)  
+[Dataverse table/entity reference](/power-apps/developer/data-platform/reference/about-entity-reference)  
 [Dataverse Web API Reference](/power-apps/developer/data-platform/webapi/reference/about)   
 <xref:Microsoft.Dynamics.CRM.workflow?displayProperty=fullName>

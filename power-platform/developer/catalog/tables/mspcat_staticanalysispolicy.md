@@ -588,6 +588,6 @@ See [mspcat_applications mspcat_app_policy_reln Many-To-Many Relationship](mspca
 
 ### See also
 
-[Dataverse table/entity reference](../about-entity-reference.md)  
+[Dataverse table/entity reference](/power-apps/developer/data-platform/reference/about-entity-reference)  
 [Dataverse Web API Reference](/power-apps/developer/data-platform/webapi/reference/about)   
 

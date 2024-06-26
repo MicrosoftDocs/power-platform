@@ -945,6 +945,6 @@ Many-To-One Relationship: [task mspcat_packagelocales_Tasks](task.md#BKMK_mspcat
 
 ### See also
 
-[Dataverse table/entity reference](../about-entity-reference.md)  
+[Dataverse table/entity reference](/power-apps/developer/data-platform/reference/about-entity-reference)  
 [Dataverse Web API Reference](/power-apps/developer/data-platform/webapi/reference/about)   
 

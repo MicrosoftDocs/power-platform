@@ -899,6 +899,6 @@ Many-To-One Relationship: [syncerror mspcat_catalogitemfile_SyncErrors](syncerro
 
 ### See also
 
-[Dataverse table/entity reference](../about-entity-reference.md)  
+[Dataverse table/entity reference](/power-apps/developer/data-platform/reference/about-entity-reference)  
 [Dataverse Web API Reference](/power-apps/developer/data-platform/webapi/reference/about)   
 
