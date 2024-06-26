@@ -4,8 +4,8 @@ description: Learn how to use the environment routing governance feature.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/26/2024
-author: hasharaf 
-ms.author: hasharaf 
+author: akadrno
+ms.author: kauguillard 
 ms.reviewer: sericks
 ms.subservice: admin
 search.audienceType: 
