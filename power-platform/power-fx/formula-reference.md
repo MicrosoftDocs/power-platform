@@ -221,7 +221,6 @@ Other elements include:
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
-
 ## I
 
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
@@ -501,5 +500,3 @@ Other elements include:
 ## Y
 
 **[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.
-
-

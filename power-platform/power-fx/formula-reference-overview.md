@@ -34,7 +34,6 @@ The Power Fx formulas are available for the following Power Platform components:
 | Cards for Power Apps   | Not applicable |
 | Power Platform CLI   | Not applicable |
 
-
 The Power Fx formula reference information is organized in the following way:
 
 - Each Power Platform component is listed as a filter article in the table of contents that you can use to find a list of all the available formulas for the component. For example, [Power Apps formula reference](formula-reference.md) and [Dataverse formula reference](formula-reference-dataverse.md).
@@ -45,6 +44,7 @@ The Power Fx formula reference information is organized in the following way:
 ### See also
 
 - [Supported expressions by cards in Power Apps](/power-apps/cards/make-a-card/power-fx/intro-to-pfx#supported-expressions)
-- [Supported expressions by Dataverse formula columns in Power Apps](/power-apps/maker/data-platform/formula-columns#functions)
-- [Power Fx functions not supported by Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins-powerfx)
-- [Power Fx functions not supported by model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/commanding-use-powerfx#functions-not-supported)
+- [Formula reference - model-driven apps](formula-reference-model-driven-apps.md)
+- [Formula reference - Dataverse formula columns](formula-reference-formula-columns.md)
+- [Formula reference - Dataverse plug-ins](formula-reference-plug-ins.md)
+
