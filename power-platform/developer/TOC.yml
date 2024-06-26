@@ -35,10 +35,17 @@
           href: appsource\appendix-add-license-information-to-your-solution.md
     - name: Use the catalog for Power Platform (preview)
       items: 
+        - name: Overview
+          href: catalog/overview.md
+        - name: Retrieve catalog data
+          href: catalog/retrieve-data.md
         - name: Submit catalog items
           href: catalog/submit-items.md
-        - name: Item submission reference
-          href: catalog/submission-reference.md
+          items:
+            - name: Item submission reference
+              href: catalog/submission-reference.md
+        - name: Install catalog items
+          href: catalog/install-items.md
         - name: Event reference
           href: catalog/events.md
     - name: Unified developer experience for finance and operations apps
