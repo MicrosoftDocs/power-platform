@@ -62,7 +62,7 @@ TODO: This is your place to tell about the design of these tables and how you ex
 
 There are two Dataverse functions you can use to get information about the catalog.
 
- - `mspcat_GetPowerCatalogInformation` TODO Add guidance use this when...
+- `mspcat_GetPowerCatalogInformation` TODO Add guidance use this when...
 - `mspcat_GetPowerCatalogDetails` TODO Add guidance use this when...
 
 ### mspcat_GetPowerCatalogInformation
@@ -72,12 +72,12 @@ This function has a `permissionsonly` boolean parameter that can be ignored. It 
 
 |Name|Type|Description|
 |---------|---------|---------|
-|SolutionVersion|string|         |
-|CatalogDescription|string|         |
-|CanRead|bool|         |
-|CatalogName|string|         |
-|ImageLink|string|         |
-|CanSubmit|bool|         |
+|SolutionVersion|string|Version of the catalog solution installed|
+|CatalogDescription|string|Describes what this catalog is for|
+|CanRead|bool|Can the user read the items in the catalog|
+|CatalogName|string|Name of the catalog installed on this environment|
+|ImageLink|string|If set, is the image for the catalog|
+|CanSubmit|bool|Can the user submit items to the catalog|
 
 
 
