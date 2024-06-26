@@ -520,81 +520,6 @@ These columns/attributes return false for both **IsValidForCreate** and **IsVali
 
 These relationships are many-to-one. Listed by **SchemaName**.
 
-- [business_unit_mspcat_packagesolutions](#BKMK_business_unit_mspcat_packagesolutions)
-- [lk_mspcat_packagesolutions_createdby](#BKMK_lk_mspcat_packagesolutions_createdby)
-- [lk_mspcat_packagesolutions_createdonbehalfby](#BKMK_lk_mspcat_packagesolutions_createdonbehalfby)
-- [lk_mspcat_packagesolutions_modifiedby](#BKMK_lk_mspcat_packagesolutions_modifiedby)
-- [lk_mspcat_packagesolutions_modifiedonbehalfby](#BKMK_lk_mspcat_packagesolutions_modifiedonbehalfby)
-- [mspcat_mspcat_packagesolutions_Package_mspcat_pa](#BKMK_mspcat_mspcat_packagesolutions_Package_mspcat_pa)
-- [owner_mspcat_packagesolutions](#BKMK_owner_mspcat_packagesolutions)
-- [team_mspcat_packagesolutions](#BKMK_team_mspcat_packagesolutions)
-- [user_mspcat_packagesolutions](#BKMK_user_mspcat_packagesolutions)
-
-### <a name="BKMK_business_unit_mspcat_packagesolutions"></a> business_unit_mspcat_packagesolutions
-
-One-To-Many Relationship: [businessunit business_unit_mspcat_packagesolutions](businessunit.md#BKMK_business_unit_mspcat_packagesolutions)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`businessunit`|
-|ReferencedAttribute|`businessunitid`|
-|ReferencingAttribute|`owningbusinessunit`|
-|ReferencingEntityNavigationPropertyName|`owningbusinessunit`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `Restrict`<br />Assign: `NoCascade`<br />Delete: `Restrict`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_packagesolutions_createdby"></a> lk_mspcat_packagesolutions_createdby
-
-One-To-Many Relationship: [systemuser lk_mspcat_packagesolutions_createdby](systemuser.md#BKMK_lk_mspcat_packagesolutions_createdby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`createdby`|
-|ReferencingEntityNavigationPropertyName|`createdby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_packagesolutions_createdonbehalfby"></a> lk_mspcat_packagesolutions_createdonbehalfby
-
-One-To-Many Relationship: [systemuser lk_mspcat_packagesolutions_createdonbehalfby](systemuser.md#BKMK_lk_mspcat_packagesolutions_createdonbehalfby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`createdonbehalfby`|
-|ReferencingEntityNavigationPropertyName|`createdonbehalfby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_packagesolutions_modifiedby"></a> lk_mspcat_packagesolutions_modifiedby
-
-One-To-Many Relationship: [systemuser lk_mspcat_packagesolutions_modifiedby](systemuser.md#BKMK_lk_mspcat_packagesolutions_modifiedby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`modifiedby`|
-|ReferencingEntityNavigationPropertyName|`modifiedby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_packagesolutions_modifiedonbehalfby"></a> lk_mspcat_packagesolutions_modifiedonbehalfby
-
-One-To-Many Relationship: [systemuser lk_mspcat_packagesolutions_modifiedonbehalfby](systemuser.md#BKMK_lk_mspcat_packagesolutions_modifiedonbehalfby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`modifiedonbehalfby`|
-|ReferencingEntityNavigationPropertyName|`modifiedonbehalfby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
 ### <a name="BKMK_mspcat_mspcat_packagesolutions_Package_mspcat_pa"></a> mspcat_mspcat_packagesolutions_Package_mspcat_pa
 
 One-To-Many Relationship: [mspcat_packages mspcat_mspcat_packagesolutions_Package_mspcat_pa](mspcat_packages.md#BKMK_mspcat_mspcat_packagesolutions_Package_mspcat_pa)
@@ -608,57 +533,10 @@ One-To-Many Relationship: [mspcat_packages mspcat_mspcat_packagesolutions_Packag
 |IsHierarchical||
 |CascadeConfiguration|Archive: `NoCascade`<br />Assign: `Cascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `Cascade`<br />RollupView: `NoCascade`<br />Share: `Cascade`<br />Unshare: `Cascade`|
 
-### <a name="BKMK_owner_mspcat_packagesolutions"></a> owner_mspcat_packagesolutions
-
-One-To-Many Relationship: [owner owner_mspcat_packagesolutions](owner.md#BKMK_owner_mspcat_packagesolutions)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`owner`|
-|ReferencedAttribute|`ownerid`|
-|ReferencingAttribute|`ownerid`|
-|ReferencingEntityNavigationPropertyName|`ownerid`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_team_mspcat_packagesolutions"></a> team_mspcat_packagesolutions
-
-One-To-Many Relationship: [team team_mspcat_packagesolutions](team.md#BKMK_team_mspcat_packagesolutions)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`team`|
-|ReferencedAttribute|`teamid`|
-|ReferencingAttribute|`owningteam`|
-|ReferencingEntityNavigationPropertyName|`owningteam`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_user_mspcat_packagesolutions"></a> user_mspcat_packagesolutions
-
-One-To-Many Relationship: [systemuser user_mspcat_packagesolutions](systemuser.md#BKMK_user_mspcat_packagesolutions)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`owninguser`|
-|ReferencingEntityNavigationPropertyName|`owninguser`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
 
 ## One-to-Many relationships
 
 These relationships are one-to-many. Listed by **SchemaName**.
-
-- [mspcat_mspcat_packagedsolutioncomponents_Containi](#BKMK_mspcat_mspcat_packagedsolutioncomponents_Containi)
-- [mspcat_packagesolutions_AsyncOperations](#BKMK_mspcat_packagesolutions_AsyncOperations)
-- [mspcat_packagesolutions_BulkDeleteFailures](#BKMK_mspcat_packagesolutions_BulkDeleteFailures)
-- [mspcat_packagesolutions_MailboxTrackingFolders](#BKMK_mspcat_packagesolutions_MailboxTrackingFolders)
-- [mspcat_packagesolutions_PrincipalObjectAttributeAccesses](#BKMK_mspcat_packagesolutions_PrincipalObjectAttributeAccesses)
-- [mspcat_packagesolutions_ProcessSession](#BKMK_mspcat_packagesolutions_ProcessSession)
-- [mspcat_packagesolutions_SyncErrors](#BKMK_mspcat_packagesolutions_SyncErrors)
 
 ### <a name="BKMK_mspcat_mspcat_packagedsolutioncomponents_Containi"></a> mspcat_mspcat_packagedsolutioncomponents_Containi
 
@@ -671,78 +549,6 @@ Many-To-One Relationship: [mspcat_packagedsolutioncomponents mspcat_mspcat_packa
 |ReferencedEntityNavigationPropertyName|`mspcat_mspcat_packagedsolutioncomponents_Containi`|
 |IsCustomizable|`True`|
 |AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseCollectionName`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_packagesolutions_AsyncOperations"></a> mspcat_packagesolutions_AsyncOperations
-
-Many-To-One Relationship: [asyncoperation mspcat_packagesolutions_AsyncOperations](asyncoperation.md#BKMK_mspcat_packagesolutions_AsyncOperations)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`asyncoperation`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_packagesolutions_AsyncOperations`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_packagesolutions_BulkDeleteFailures"></a> mspcat_packagesolutions_BulkDeleteFailures
-
-Many-To-One Relationship: [bulkdeletefailure mspcat_packagesolutions_BulkDeleteFailures](bulkdeletefailure.md#BKMK_mspcat_packagesolutions_BulkDeleteFailures)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`bulkdeletefailure`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_packagesolutions_BulkDeleteFailures`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_packagesolutions_MailboxTrackingFolders"></a> mspcat_packagesolutions_MailboxTrackingFolders
-
-Many-To-One Relationship: [mailboxtrackingfolder mspcat_packagesolutions_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_mspcat_packagesolutions_MailboxTrackingFolders)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`mailboxtrackingfolder`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_packagesolutions_MailboxTrackingFolders`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_packagesolutions_PrincipalObjectAttributeAccesses"></a> mspcat_packagesolutions_PrincipalObjectAttributeAccesses
-
-Many-To-One Relationship: [principalobjectattributeaccess mspcat_packagesolutions_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_mspcat_packagesolutions_PrincipalObjectAttributeAccesses)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`principalobjectattributeaccess`|
-|ReferencingAttribute|`objectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_packagesolutions_PrincipalObjectAttributeAccesses`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_packagesolutions_ProcessSession"></a> mspcat_packagesolutions_ProcessSession
-
-Many-To-One Relationship: [processsession mspcat_packagesolutions_ProcessSession](processsession.md#BKMK_mspcat_packagesolutions_ProcessSession)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`processsession`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_packagesolutions_ProcessSession`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_packagesolutions_SyncErrors"></a> mspcat_packagesolutions_SyncErrors
-
-Many-To-One Relationship: [syncerror mspcat_packagesolutions_SyncErrors](syncerror.md#BKMK_mspcat_packagesolutions_SyncErrors)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`syncerror`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_packagesolutions_SyncErrors`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 
 

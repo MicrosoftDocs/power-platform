@@ -390,65 +390,6 @@ These columns/attributes return false for both **IsValidForCreate** and **IsVali
 
 These relationships are many-to-one. Listed by **SchemaName**.
 
-- [lk_mspcat_sspolicytemplate_createdby](#BKMK_lk_mspcat_sspolicytemplate_createdby)
-- [lk_mspcat_sspolicytemplate_createdonbehalfby](#BKMK_lk_mspcat_sspolicytemplate_createdonbehalfby)
-- [lk_mspcat_sspolicytemplate_modifiedby](#BKMK_lk_mspcat_sspolicytemplate_modifiedby)
-- [lk_mspcat_sspolicytemplate_modifiedonbehalfby](#BKMK_lk_mspcat_sspolicytemplate_modifiedonbehalfby)
-- [mspcat_ssPolicyTemplate_PolicyCode_msdy](#BKMK_mspcat_ssPolicyTemplate_PolicyCode_msdy)
-- [organization_mspcat_sspolicytemplate](#BKMK_organization_mspcat_sspolicytemplate)
-
-### <a name="BKMK_lk_mspcat_sspolicytemplate_createdby"></a> lk_mspcat_sspolicytemplate_createdby
-
-One-To-Many Relationship: [systemuser lk_mspcat_sspolicytemplate_createdby](systemuser.md#BKMK_lk_mspcat_sspolicytemplate_createdby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`createdby`|
-|ReferencingEntityNavigationPropertyName|`createdby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_sspolicytemplate_createdonbehalfby"></a> lk_mspcat_sspolicytemplate_createdonbehalfby
-
-One-To-Many Relationship: [systemuser lk_mspcat_sspolicytemplate_createdonbehalfby](systemuser.md#BKMK_lk_mspcat_sspolicytemplate_createdonbehalfby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`createdonbehalfby`|
-|ReferencingEntityNavigationPropertyName|`createdonbehalfby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_sspolicytemplate_modifiedby"></a> lk_mspcat_sspolicytemplate_modifiedby
-
-One-To-Many Relationship: [systemuser lk_mspcat_sspolicytemplate_modifiedby](systemuser.md#BKMK_lk_mspcat_sspolicytemplate_modifiedby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`modifiedby`|
-|ReferencingEntityNavigationPropertyName|`modifiedby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_sspolicytemplate_modifiedonbehalfby"></a> lk_mspcat_sspolicytemplate_modifiedonbehalfby
-
-One-To-Many Relationship: [systemuser lk_mspcat_sspolicytemplate_modifiedonbehalfby](systemuser.md#BKMK_lk_mspcat_sspolicytemplate_modifiedonbehalfby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`modifiedonbehalfby`|
-|ReferencingEntityNavigationPropertyName|`modifiedonbehalfby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
 ### <a name="BKMK_mspcat_ssPolicyTemplate_PolicyCode_msdy"></a> mspcat_ssPolicyTemplate_PolicyCode_msdy
 
 One-To-Many Relationship: [mspcat_sspolicy mspcat_ssPolicyTemplate_PolicyCode_msdy](mspcat_sspolicy.md#BKMK_mspcat_ssPolicyTemplate_PolicyCode_msdy)
@@ -462,33 +403,10 @@ One-To-Many Relationship: [mspcat_sspolicy mspcat_ssPolicyTemplate_PolicyCode_ms
 |IsHierarchical||
 |CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `RemoveLink`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
 
-### <a name="BKMK_organization_mspcat_sspolicytemplate"></a> organization_mspcat_sspolicytemplate
-
-One-To-Many Relationship: [organization organization_mspcat_sspolicytemplate](organization.md#BKMK_organization_mspcat_sspolicytemplate)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`organization`|
-|ReferencedAttribute|`organizationid`|
-|ReferencingAttribute|`organizationid`|
-|ReferencingEntityNavigationPropertyName|`organizationid`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
 
 ## One-to-Many relationships
 
 These relationships are one-to-many. Listed by **SchemaName**.
-
-- [cr9d4_mspcat_CertificationRejectionAppliedPol](#BKMK_cr9d4_mspcat_CertificationRejectionAppliedPol)
-- [mspcat_sspolicytemplate_AsyncOperations](#BKMK_mspcat_sspolicytemplate_AsyncOperations)
-- [mspcat_sspolicytemplate_BulkDeleteFailures](#BKMK_mspcat_sspolicytemplate_BulkDeleteFailures)
-- [mspcat_sspolicytemplate_DuplicateBaseRecord](#BKMK_mspcat_sspolicytemplate_DuplicateBaseRecord)
-- [mspcat_sspolicytemplate_DuplicateMatchingRecord](#BKMK_mspcat_sspolicytemplate_DuplicateMatchingRecord)
-- [mspcat_sspolicytemplate_MailboxTrackingFolders](#BKMK_mspcat_sspolicytemplate_MailboxTrackingFolders)
-- [mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses](#BKMK_mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses)
-- [mspcat_sspolicytemplate_ProcessSession](#BKMK_mspcat_sspolicytemplate_ProcessSession)
-- [mspcat_sspolicytemplate_SyncErrors](#BKMK_mspcat_sspolicytemplate_SyncErrors)
 
 ### <a name="BKMK_cr9d4_mspcat_CertificationRejectionAppliedPol"></a> cr9d4_mspcat_CertificationRejectionAppliedPol
 
@@ -501,102 +419,6 @@ Many-To-One Relationship: [mspcat_certificationrejectionappliedpolicy cr9d4_mspc
 |ReferencedEntityNavigationPropertyName|`cr9d4_mspcat_CertificationRejectionAppliedPol`|
 |IsCustomizable|`True`|
 |AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseCollectionName`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_AsyncOperations"></a> mspcat_sspolicytemplate_AsyncOperations
-
-Many-To-One Relationship: [asyncoperation mspcat_sspolicytemplate_AsyncOperations](asyncoperation.md#BKMK_mspcat_sspolicytemplate_AsyncOperations)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`asyncoperation`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_AsyncOperations`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_BulkDeleteFailures"></a> mspcat_sspolicytemplate_BulkDeleteFailures
-
-Many-To-One Relationship: [bulkdeletefailure mspcat_sspolicytemplate_BulkDeleteFailures](bulkdeletefailure.md#BKMK_mspcat_sspolicytemplate_BulkDeleteFailures)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`bulkdeletefailure`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_BulkDeleteFailures`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_DuplicateBaseRecord"></a> mspcat_sspolicytemplate_DuplicateBaseRecord
-
-Many-To-One Relationship: [duplicaterecord mspcat_sspolicytemplate_DuplicateBaseRecord](duplicaterecord.md#BKMK_mspcat_sspolicytemplate_DuplicateBaseRecord)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`duplicaterecord`|
-|ReferencingAttribute|`baserecordid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_DuplicateBaseRecord`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_DuplicateMatchingRecord"></a> mspcat_sspolicytemplate_DuplicateMatchingRecord
-
-Many-To-One Relationship: [duplicaterecord mspcat_sspolicytemplate_DuplicateMatchingRecord](duplicaterecord.md#BKMK_mspcat_sspolicytemplate_DuplicateMatchingRecord)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`duplicaterecord`|
-|ReferencingAttribute|`duplicaterecordid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_DuplicateMatchingRecord`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_MailboxTrackingFolders"></a> mspcat_sspolicytemplate_MailboxTrackingFolders
-
-Many-To-One Relationship: [mailboxtrackingfolder mspcat_sspolicytemplate_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_mspcat_sspolicytemplate_MailboxTrackingFolders)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`mailboxtrackingfolder`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_MailboxTrackingFolders`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses"></a> mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses
-
-Many-To-One Relationship: [principalobjectattributeaccess mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`principalobjectattributeaccess`|
-|ReferencingAttribute|`objectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_PrincipalObjectAttributeAccesses`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_ProcessSession"></a> mspcat_sspolicytemplate_ProcessSession
-
-Many-To-One Relationship: [processsession mspcat_sspolicytemplate_ProcessSession](processsession.md#BKMK_mspcat_sspolicytemplate_ProcessSession)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`processsession`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_ProcessSession`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_sspolicytemplate_SyncErrors"></a> mspcat_sspolicytemplate_SyncErrors
-
-Many-To-One Relationship: [syncerror mspcat_sspolicytemplate_SyncErrors](syncerror.md#BKMK_mspcat_sspolicytemplate_SyncErrors)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`syncerror`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_sspolicytemplate_SyncErrors`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 
 

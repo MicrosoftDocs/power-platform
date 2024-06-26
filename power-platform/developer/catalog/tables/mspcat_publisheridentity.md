@@ -559,82 +559,9 @@ These columns/attributes return false for both **IsValidForCreate** and **IsVali
 
 These relationships are many-to-one. Listed by **SchemaName**.
 
-- [business_unit_mspcat_publisheridentity](#BKMK_business_unit_mspcat_publisheridentity)
-- [lk_mspcat_publisheridentity_createdby](#BKMK_lk_mspcat_publisheridentity_createdby)
-- [lk_mspcat_publisheridentity_createdonbehalfby](#BKMK_lk_mspcat_publisheridentity_createdonbehalfby)
-- [lk_mspcat_publisheridentity_modifiedby](#BKMK_lk_mspcat_publisheridentity_modifiedby)
-- [lk_mspcat_publisheridentity_modifiedonbehalfby](#BKMK_lk_mspcat_publisheridentity_modifiedonbehalfby)
 - [mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher](#BKMK_mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher)
 - [mspcat_publisheridentity_ApplyToGeo_msd](#BKMK_mspcat_publisheridentity_ApplyToGeo_msd)
 - [mspcat_publisheridentity_OriginatingPub](#BKMK_mspcat_publisheridentity_OriginatingPub-many-to-one)
-- [owner_mspcat_publisheridentity](#BKMK_owner_mspcat_publisheridentity)
-- [team_mspcat_publisheridentity](#BKMK_team_mspcat_publisheridentity)
-- [user_mspcat_publisheridentity](#BKMK_user_mspcat_publisheridentity)
-
-### <a name="BKMK_business_unit_mspcat_publisheridentity"></a> business_unit_mspcat_publisheridentity
-
-One-To-Many Relationship: [businessunit business_unit_mspcat_publisheridentity](businessunit.md#BKMK_business_unit_mspcat_publisheridentity)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`businessunit`|
-|ReferencedAttribute|`businessunitid`|
-|ReferencingAttribute|`owningbusinessunit`|
-|ReferencingEntityNavigationPropertyName|`owningbusinessunit`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `Restrict`<br />Assign: `NoCascade`<br />Delete: `Restrict`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_publisheridentity_createdby"></a> lk_mspcat_publisheridentity_createdby
-
-One-To-Many Relationship: [systemuser lk_mspcat_publisheridentity_createdby](systemuser.md#BKMK_lk_mspcat_publisheridentity_createdby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`createdby`|
-|ReferencingEntityNavigationPropertyName|`createdby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_publisheridentity_createdonbehalfby"></a> lk_mspcat_publisheridentity_createdonbehalfby
-
-One-To-Many Relationship: [systemuser lk_mspcat_publisheridentity_createdonbehalfby](systemuser.md#BKMK_lk_mspcat_publisheridentity_createdonbehalfby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`createdonbehalfby`|
-|ReferencingEntityNavigationPropertyName|`createdonbehalfby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_publisheridentity_modifiedby"></a> lk_mspcat_publisheridentity_modifiedby
-
-One-To-Many Relationship: [systemuser lk_mspcat_publisheridentity_modifiedby](systemuser.md#BKMK_lk_mspcat_publisheridentity_modifiedby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`modifiedby`|
-|ReferencingEntityNavigationPropertyName|`modifiedby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_lk_mspcat_publisheridentity_modifiedonbehalfby"></a> lk_mspcat_publisheridentity_modifiedonbehalfby
-
-One-To-Many Relationship: [systemuser lk_mspcat_publisheridentity_modifiedonbehalfby](systemuser.md#BKMK_lk_mspcat_publisheridentity_modifiedonbehalfby)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`modifiedonbehalfby`|
-|ReferencingEntityNavigationPropertyName|`modifiedonbehalfby`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
 
 ### <a name="BKMK_mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher"></a> mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher
 
@@ -675,106 +602,10 @@ One-To-Many Relationship: [mspcat_publisheridentity mspcat_publisheridentity_Ori
 |IsHierarchical||
 |CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `RemoveLink`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
 
-### <a name="BKMK_owner_mspcat_publisheridentity"></a> owner_mspcat_publisheridentity
-
-One-To-Many Relationship: [owner owner_mspcat_publisheridentity](owner.md#BKMK_owner_mspcat_publisheridentity)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`owner`|
-|ReferencedAttribute|`ownerid`|
-|ReferencingAttribute|`ownerid`|
-|ReferencingEntityNavigationPropertyName|`ownerid`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_team_mspcat_publisheridentity"></a> team_mspcat_publisheridentity
-
-One-To-Many Relationship: [team team_mspcat_publisheridentity](team.md#BKMK_team_mspcat_publisheridentity)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`team`|
-|ReferencedAttribute|`teamid`|
-|ReferencingAttribute|`owningteam`|
-|ReferencingEntityNavigationPropertyName|`owningteam`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_user_mspcat_publisheridentity"></a> user_mspcat_publisheridentity
-
-One-To-Many Relationship: [systemuser user_mspcat_publisheridentity](systemuser.md#BKMK_user_mspcat_publisheridentity)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`systemuser`|
-|ReferencedAttribute|`systemuserid`|
-|ReferencingAttribute|`owninguser`|
-|ReferencingEntityNavigationPropertyName|`owninguser`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `NoCascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
 
 ## One-to-Many relationships
 
 These relationships are one-to-many. Listed by **SchemaName**.
-
-- [mspcat_publisheridentity_Annotations](#BKMK_mspcat_publisheridentity_Annotations)
-- [mspcat_publisheridentity_AsyncOperations](#BKMK_mspcat_publisheridentity_AsyncOperations)
-- [mspcat_publisheridentity_BulkDeleteFailures](#BKMK_mspcat_publisheridentity_BulkDeleteFailures)
-- [mspcat_publisheridentity_MailboxTrackingFolders](#BKMK_mspcat_publisheridentity_MailboxTrackingFolders)
-- [mspcat_publisheridentity_OriginatingPub](#BKMK_mspcat_publisheridentity_OriginatingPub-one-to-many)
-- [mspcat_publisheridentity_PrincipalObjectAttributeAccesses](#BKMK_mspcat_publisheridentity_PrincipalObjectAttributeAccesses)
-- [mspcat_publisheridentity_ProcessSession](#BKMK_mspcat_publisheridentity_ProcessSession)
-- [mspcat_publisheridentity_SyncErrors](#BKMK_mspcat_publisheridentity_SyncErrors)
-
-### <a name="BKMK_mspcat_publisheridentity_Annotations"></a> mspcat_publisheridentity_Annotations
-
-Many-To-One Relationship: [annotation mspcat_publisheridentity_Annotations](annotation.md#BKMK_mspcat_publisheridentity_Annotations)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`annotation`|
-|ReferencingAttribute|`objectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_Annotations`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_publisheridentity_AsyncOperations"></a> mspcat_publisheridentity_AsyncOperations
-
-Many-To-One Relationship: [asyncoperation mspcat_publisheridentity_AsyncOperations](asyncoperation.md#BKMK_mspcat_publisheridentity_AsyncOperations)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`asyncoperation`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_AsyncOperations`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_publisheridentity_BulkDeleteFailures"></a> mspcat_publisheridentity_BulkDeleteFailures
-
-Many-To-One Relationship: [bulkdeletefailure mspcat_publisheridentity_BulkDeleteFailures](bulkdeletefailure.md#BKMK_mspcat_publisheridentity_BulkDeleteFailures)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`bulkdeletefailure`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_BulkDeleteFailures`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_publisheridentity_MailboxTrackingFolders"></a> mspcat_publisheridentity_MailboxTrackingFolders
-
-Many-To-One Relationship: [mailboxtrackingfolder mspcat_publisheridentity_MailboxTrackingFolders](mailboxtrackingfolder.md#BKMK_mspcat_publisheridentity_MailboxTrackingFolders)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`mailboxtrackingfolder`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_MailboxTrackingFolders`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 ### <a name="BKMK_mspcat_publisheridentity_OriginatingPub-one-to-many"></a> mspcat_publisheridentity_OriginatingPub
 
@@ -787,42 +618,6 @@ Many-To-One Relationship: [mspcat_publisheridentity mspcat_publisheridentity_Ori
 |ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_OriginatingPub`|
 |IsCustomizable|`True`|
 |AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseCollectionName`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_publisheridentity_PrincipalObjectAttributeAccesses"></a> mspcat_publisheridentity_PrincipalObjectAttributeAccesses
-
-Many-To-One Relationship: [principalobjectattributeaccess mspcat_publisheridentity_PrincipalObjectAttributeAccesses](principalobjectattributeaccess.md#BKMK_mspcat_publisheridentity_PrincipalObjectAttributeAccesses)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`principalobjectattributeaccess`|
-|ReferencingAttribute|`objectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_PrincipalObjectAttributeAccesses`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_publisheridentity_ProcessSession"></a> mspcat_publisheridentity_ProcessSession
-
-Many-To-One Relationship: [processsession mspcat_publisheridentity_ProcessSession](processsession.md#BKMK_mspcat_publisheridentity_ProcessSession)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`processsession`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_ProcessSession`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_publisheridentity_SyncErrors"></a> mspcat_publisheridentity_SyncErrors
-
-Many-To-One Relationship: [syncerror mspcat_publisheridentity_SyncErrors](syncerror.md#BKMK_mspcat_publisheridentity_SyncErrors)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`syncerror`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencedEntityNavigationPropertyName|`mspcat_publisheridentity_SyncErrors`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 
 
