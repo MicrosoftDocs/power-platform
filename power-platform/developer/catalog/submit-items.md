@@ -1,5 +1,5 @@
 ---
-title: "Work with the catalog in Power Platform using code"
+title: "Work with the catalog in Power Platform using code (preview)"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: derekkwanpm
 ms.author: derekkwan
@@ -35,22 +35,6 @@ Application makers and developers can submit items to the catalog so that they c
 This article explains how to view, submit, and install catalog items programmatically.
 
 
-## Get started
-
-- [Get access to catalog as submitter or reader](#get-access-to-catalog-as-submitter-or-reader)
-- [Choose how to interact](#choose-how-to-interact)
-
-### Get access to catalog as submitter or reader
-
-If you don't have the system administrator security role, contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../../admin/administer-catalog.md#edit-user-access)
-
-### Choose how to interact
-
-This article shows three different ways to perform operations with the catalog. Use the one that best suites your skills and the requirements of your project.
-
-#### PAC CLI
-
-After you have installed the Power Platform CLI, you must create an authentication profile using the [pac auth create](../cli/reference/auth.md#pac-auth-create) command. Using the authentication profile for the environment where the catalog is installed.
 
 ## Use the catalog
 

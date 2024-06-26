@@ -1,5 +1,5 @@
 ---
-title: "Catalog item submission document reference"
+title: "Catalog item submission document reference (preview)"
 description: "Find details about the structure of the JSON data that must be included when submitting an item to the catalog in Power Platform"
 author: derekkwanpm
 ms.author: derekkwan

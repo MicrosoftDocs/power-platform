@@ -1,5 +1,5 @@
 ---
-title: "Catalog for Power Platform Events reference"
+title: "Catalog for Power Platform Events reference (preview)"
 description: "Subscribe to events that notify you when changes occur in the catalog for Power Platform"
 author: derekkwanpm
 ms.author: derekkwan
@@ -13,7 +13,7 @@ contributors:
  - JimDaly
 ---
 
-# Catalog for Power Platform Events reference
+# Catalog for Power Platform Events reference (preview)
 
 The following messages represent events that occur within catalog for Power Platform. Subscribe to these [business events](/power-apps/developer/data-platform/business-events) to enable automation based on the events that occur within the catalog for Power Platform.
 
