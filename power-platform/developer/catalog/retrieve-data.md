@@ -14,6 +14,9 @@ contributors:
 ---
 # Retrieve data about the catalog in Power Platform (preview)
 
+
+## Tables added by the Power Platform catalog manager application
+
 When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the following tables are added to that environment:
 
 

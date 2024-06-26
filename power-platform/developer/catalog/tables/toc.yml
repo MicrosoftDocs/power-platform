@@ -1,0 +1,243 @@
+items:
+- name: "About Power Platform Catalog Manager Table/Entity Reference"
+  href: ../about-entity-reference.md
+- name: "Account"
+  displayName: "Account entity"
+  href: account.md
+- name: "Action Card (ActionCard)"
+  displayName: "ActionCard entity"
+  href: actioncard.md
+- name: "Activity (ActivityPointer)"
+  displayName: "ActivityPointer entity"
+  href: activitypointer.md
+- name: "Activity Party (ActivityParty)"
+  displayName: "ActivityParty entity"
+  href: activityparty.md
+- name: "Ad Placement (mspp_adplacement)"
+  displayName: "mspp_adplacement entity"
+  href: mspp_adplacement.md
+- name: "Appointment"
+  displayName: "Appointment entity"
+  href: appointment.md
+- name: "Approval Rejection Applied Policy (mspcat_CertificationRejectionAppliedPolicy)"
+  displayName: "mspcat_CertificationRejectionAppliedPolicy entity"
+  href: mspcat_certificationrejectionappliedpolicy.md
+- name: "Approval Request (mspcat_certificationrequest)"
+  displayName: "mspcat_certificationrequest entity"
+  href: mspcat_certificationrequest.md
+- name: "Bulk Delete Failure (BulkDeleteFailure)"
+  displayName: "BulkDeleteFailure entity"
+  href: bulkdeletefailure.md
+- name: "Business Unit (BusinessUnit)"
+  displayName: "BusinessUnit entity"
+  href: businessunit.md
+- name: "Catalog Configuration (mspcat_CatalogDescription)"
+  displayName: "mspcat_CatalogDescription entity"
+  href: mspcat_catalogdescription.md
+- name: "Catalog Item (mspcat_applications)"
+  displayName: "mspcat_applications entity"
+  href: mspcat_applications.md
+- name: "Catalog Item Cross Reference (mspcat_applicationreference)"
+  displayName: "mspcat_applicationreference entity"
+  href: mspcat_applicationreference.md
+- name: "Catalog Item File (mspcat_CatalogItemFile)"
+  displayName: "mspcat_CatalogItemFile entity"
+  href: mspcat_catalogitemfile.md
+- name: "Catalog Publisher (mspcat_publisher)"
+  displayName: "mspcat_publisher entity"
+  href: mspcat_publisher.md
+- name: "Certification Request Life Cycle (mspcat_bpf_06d86bf860814221be8c81204be2199d)"
+  displayName: "mspcat_bpf_06d86bf860814221be8c81204be2199d entity"
+  href: mspcat_bpf_06d86bf860814221be8c81204be2199d.md
+- name: "Configuration for PowerApps Checker (mspcat_configurationforpowerapps)"
+  displayName: "mspcat_configurationforpowerapps entity"
+  href: mspcat_configurationforpowerapps.md
+- name: "Connection"
+  displayName: "Connection entity"
+  href: connection.md
+- name: "Connection Instance (ConnectionInstance)"
+  displayName: "ConnectionInstance entity"
+  href: connectioninstance.md
+- name: "Contact"
+  displayName: "Contact entity"
+  href: contact.md
+- name: "Currency (TransactionCurrency)"
+  displayName: "TransactionCurrency entity"
+  href: transactioncurrency.md
+- name: "Data Map (ImportMap)"
+  displayName: "ImportMap entity"
+  href: importmap.md
+- name: "Document Location (SharePointDocumentLocation)"
+  displayName: "SharePointDocumentLocation entity"
+  href: sharepointdocumentlocation.md
+- name: "Duplicate Detection Rule (DuplicateRule)"
+  displayName: "DuplicateRule entity"
+  href: duplicaterule.md
+- name: "Duplicate Record (DuplicateRecord)"
+  displayName: "DuplicateRecord entity"
+  href: duplicaterecord.md
+- name: "Email"
+  displayName: "Email entity"
+  href: email.md
+- name: "Fax"
+  displayName: "Fax entity"
+  href: fax.md
+- name: "Feedback"
+  displayName: "Feedback entity"
+  href: feedback.md
+- name: "Field Sharing (PrincipalObjectAttributeAccess)"
+  displayName: "PrincipalObjectAttributeAccess entity"
+  href: principalobjectattributeaccess.md
+- name: "FileAttachment"
+  displayName: "FileAttachment entity"
+  href: fileattachment.md
+- name: "GEO Deployment Status (mspcat_crmgeodeploymentstatus)"
+  displayName: "mspcat_crmgeodeploymentstatus entity"
+  href: mspcat_crmgeodeploymentstatus.md
+- name: "Install Activity (mspcat_InstallActivity)"
+  displayName: "mspcat_InstallActivity entity"
+  href: mspcat_installactivity.md
+- name: "Install History (mspcat_InstallHistory)"
+  displayName: "mspcat_InstallHistory entity"
+  href: mspcat_installhistory.md
+- name: "Interaction for Email (InteractionForEmail)"
+  displayName: "InteractionForEmail entity"
+  href: interactionforemail.md
+- name: "Invitation (adx_invitation)"
+  displayName: "adx_invitation entity"
+  href: adx_invitation.md
+- name: "Invite Redemption (adx_inviteredemption)"
+  displayName: "adx_inviteredemption entity"
+  href: adx_inviteredemption.md
+- name: "Knowledge Article (KnowledgeArticle)"
+  displayName: "KnowledgeArticle entity"
+  href: knowledgearticle.md
+- name: "Knowledge Base Record (KnowledgeBaseRecord)"
+  displayName: "KnowledgeBaseRecord entity"
+  href: knowledgebaserecord.md
+- name: "Letter"
+  displayName: "Letter entity"
+  href: letter.md
+- name: "Mailbox"
+  displayName: "Mailbox entity"
+  href: mailbox.md
+- name: "Mailbox Auto Tracking Folder (MailboxTrackingFolder)"
+  displayName: "MailboxTrackingFolder entity"
+  href: mailboxtrackingfolder.md
+- name: "Note (Annotation)"
+  displayName: "Annotation entity"
+  href: annotation.md
+- name: "Organization"
+  displayName: "Organization entity"
+  href: organization.md
+- name: "Owner"
+  displayName: "Owner entity"
+  href: owner.md
+- name: "Package (mspcat_packages)"
+  displayName: "mspcat_packages entity"
+  href: mspcat_packages.md
+- name: "Package Locales (mspcat_packagelocales)"
+  displayName: "mspcat_packagelocales entity"
+  href: mspcat_packagelocales.md
+- name: "Packaged Solution (mspcat_PackageSolutions)"
+  displayName: "mspcat_PackageSolutions entity"
+  href: mspcat_packagesolutions.md
+- name: "Packaged Solution Components (mspcat_packagedsolutioncomponents)"
+  displayName: "mspcat_packagedsolutioncomponents entity"
+  href: mspcat_packagedsolutioncomponents.md
+- name: "Phone Call (PhoneCall)"
+  displayName: "PhoneCall entity"
+  href: phonecall.md
+- name: "Policy (mspcat_sspolicy)"
+  displayName: "mspcat_sspolicy entity"
+  href: mspcat_sspolicy.md
+- name: "Policy Template (mspcat_ssPolicyTemplate)"
+  displayName: "mspcat_ssPolicyTemplate entity"
+  href: mspcat_sspolicytemplate.md
+- name: "Poll Placement (mspp_pollplacement)"
+  displayName: "mspp_pollplacement entity"
+  href: mspp_pollplacement.md
+- name: "Portal Comment (adx_portalcomment)"
+  displayName: "adx_portalcomment entity"
+  href: adx_portalcomment.md
+- name: "Power Platform Geo (mspcat_crmgeo)"
+  displayName: "mspcat_crmgeo entity"
+  href: mspcat_crmgeo.md
+- name: "Process (Workflow)"
+  displayName: "Workflow entity"
+  href: workflow.md
+- name: "Process Log (WorkflowLog)"
+  displayName: "WorkflowLog entity"
+  href: workflowlog.md
+- name: "Process Session (ProcessSession)"
+  displayName: "ProcessSession entity"
+  href: processsession.md
+- name: "Process Stage (ProcessStage)"
+  displayName: "ProcessStage entity"
+  href: processstage.md
+- name: "Publisher Identity (mspcat_publisheridentity)"
+  displayName: "mspcat_publisheridentity entity"
+  href: mspcat_publisheridentity.md
+- name: "Publisher Users (mspcat_PublisherUsers)"
+  displayName: "mspcat_PublisherUsers entity"
+  href: mspcat_publisherusers.md
+- name: "Publishing State Transition Rule (mspp_publishingstatetransitionrule)"
+  displayName: "mspp_publishingstatetransitionrule entity"
+  href: mspp_publishingstatetransitionrule.md
+- name: "Queue Item (QueueItem)"
+  displayName: "QueueItem entity"
+  href: queueitem.md
+- name: "Recurring Appointment (RecurringAppointmentMaster)"
+  displayName: "RecurringAppointmentMaster entity"
+  href: recurringappointmentmaster.md
+- name: "Redirect (mspp_redirect)"
+  displayName: "mspp_redirect entity"
+  href: mspp_redirect.md
+- name: "Rule set for PowerApps Checker (mspcat_rulesetforpowerappschecker)"
+  displayName: "mspcat_rulesetforpowerappschecker entity"
+  href: mspcat_rulesetforpowerappschecker.md
+- name: "Shortcut (mspp_shortcut)"
+  displayName: "mspp_shortcut entity"
+  href: mspp_shortcut.md
+- name: "Similarity Rule (SimilarityRule)"
+  displayName: "SimilarityRule entity"
+  href: similarityrule.md
+- name: "SLA"
+  displayName: "SLA entity"
+  href: sla.md
+- name: "SLA KPI Instance (SLAKPIInstance)"
+  displayName: "SLAKPIInstance entity"
+  href: slakpiinstance.md
+- name: "Social Activity (SocialActivity)"
+  displayName: "SocialActivity entity"
+  href: socialactivity.md
+- name: "Static Analysis Policy (mspcat_staticanalysispolicy)"
+  displayName: "mspcat_staticanalysispolicy entity"
+  href: mspcat_staticanalysispolicy.md
+- name: "Status of PowerApps Checker package scan (mspcat_powerappsScanStatus)"
+  displayName: "mspcat_powerappsScanStatus entity"
+  href: mspcat_powerappsscanstatus.md
+- name: "Sync Error (SyncError)"
+  displayName: "SyncError entity"
+  href: syncerror.md
+- name: "System Job (AsyncOperation)"
+  displayName: "AsyncOperation entity"
+  href: asyncoperation.md
+- name: "Task"
+  displayName: "Task entity"
+  href: task.md
+- name: "Team"
+  displayName: "Team entity"
+  href: team.md
+- name: "Teams chat (chat)"
+  displayName: "chat entity"
+  href: chat.md
+- name: "Templates (mspcat_templates)"
+  displayName: "mspcat_templates entity"
+  href: mspcat_templates.md
+- name: "User (SystemUser)"
+  displayName: "SystemUser entity"
+  href: systemuser.md
+- name: "Website (mspp_website)"
+  displayName: "mspp_website entity"
+  href: mspp_website.md

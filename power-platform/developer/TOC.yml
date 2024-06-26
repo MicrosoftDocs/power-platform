@@ -39,6 +39,9 @@
           href: catalog/overview.md
         - name: Retrieve catalog data
           href: catalog/retrieve-data.md
+          items:
+            - name: Table reference
+              href: catalog/tables/toc.yml
         - name: Submit catalog items
           href: catalog/submit-items.md
           items:
