@@ -47,7 +47,7 @@
           href: catalog/submission-reference.md
         - name: Event reference
           href: catalog/events.md
-        - name: Table reference
+        - name: Catalog table reference
           href: catalog/tables/toc.yml
     - name: Unified developer experience for finance and operations apps
       items:

@@ -17,36 +17,7 @@ contributors:
 
 ## Tables added by the Power Platform catalog manager application
 
-When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the following tables are added to that environment:
-
-
-|Schema Name|Display Name|Description |
-|---------|---------|---------|
-|`mspcat_applicationreference`|**Catalog Item Cross Reference**|Cross Reference table between Catalog items as they are versioned.|
-|`mspcat_applications`|**Catalog Item**|Entry that will appear in the Catalog|
-|`mspcat_bpf_06d86bf860814221be8c81204be2199d`|**Certification Request Life Cycle**|Base entity for process Approval Request Life Cycle|
-|`mspcat_CatalogDescription`|**Catalog Configuration**|Contains descriptive data for the Catalog|
-|`mspcat_CatalogItemFile`|**Catalog Item File**|Supporting Files for the a catalog item|
-|`mspcat_CertificationRejectionAppliedPolicy`|**Approval Rejection Applied Policy**|*None provided*|
-|`mspcat_certificationrequest`|**Approval Request**|Contains Approval records that are used to process new or updated submissions to the catalog system.|
-|`mspcat_configurationforpowerapps`|**Configuration for PowerApps Checker**|*None provided*|
-|`mspcat_crmgeo`|**Power Platform Geo**|This lists the Power Platform GEO's that are available to be assigned|
-|`mspcat_crmgeodeploymentstatus`|**GEO Deployment Status**|Tracks the deployment status of a given Application to a CRM Region.|
-|`mspcat_InstallActivity`|**Install Activity**|Install History Activity Id's|
-|`mspcat_InstallHistory`|**Install History**|Contains record of installations and their status|
-|`mspcat_packagedsolutioncomponents`|**Packaged Solution Components**|Component types that are in solutions stored in a package|
-|`mspcat_packagelocales`|**Package Locales**|*None provided*|
-|`mspcat_packages`|**Package**|Deployment Assets for a Catalog Item.|
-|`mspcat_PackageSolutions`|**Packaged Solution**|Solutions that relate to packages|
-|`mspcat_powerappsScanStatus`|**Status of PowerApps Checker package scan**|*None provided*|
-|`mspcat_publisher`|**Catalog Publisher**|This the publisher Entity for holding TPS Publisher data.|
-|`mspcat_publisheridentity`|**Publisher Identity**|*None provided*|
-|`mspcat_PublisherUsers`|**Publisher Users**|Users that have access to the related Publisher|
-|`mspcat_rulesetforpowerappschecker`|**Rule set for PowerApps Checker**|*None provided*|
-|`mspcat_sspolicy`|**Policy**|Smart Cert policy table|
-|`mspcat_ssPolicyTemplate`|**Policy Template**|*None provided*|
-|`mspcat_staticanalysispolicy`|**Static Analysis Policy**|*None provided*|
-|`mspcat_templates`|**Templates**|*None provided*|
+When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the tables listed in the [Catalog in Power Platform  table/entity reference](about-entity-reference.md) are added to that environment only.
 
 > [!NOTE]
 > The [Catalog Submission Files (mspcat_CatalogSubmissionFiles)](/power-apps/developer/data-platform/reference/entities/mspcat_catalogsubmissionfiles) and [Package Submission Store (mspcat_PackageStore)](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) tables are found in every Dataverse environment. They are not added by the Power Platform Catalog manager application.

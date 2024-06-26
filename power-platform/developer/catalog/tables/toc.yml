@@ -1,4 +1,6 @@
 items:
+- name: About Catalog table reference
+  href: ../about-entity-reference.md
 - name: "Approval Rejection Applied Policy (mspcat_CertificationRejectionAppliedPolicy)"
   displayName: "mspcat_CertificationRejectionAppliedPolicy entity"
   href: mspcat_certificationrejectionappliedpolicy.md
