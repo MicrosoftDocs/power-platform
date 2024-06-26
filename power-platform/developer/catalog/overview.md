@@ -45,9 +45,9 @@ Articles in this section describe three different ways to perform operations wit
 
 |Method|Description|
 |---------|---------|
-|PAC CLI|Provides commands to perform certain operations. You need to:<br />[Install the PAC CLI](../cli/introduction.md).<br />Create an authentication profile using the [pac auth create](../cli/reference/auth.md#pac-auth-create) command.|
+|PAC CLI|Provides commands to perform many operations. You need to:<br />- [Install the PAC CLI](../cli/introduction.md).<br />- Create an authentication profile using the [pac auth create](../cli/reference/auth.md#pac-auth-create) command.|
 |SDK for .NET|For .NET client applications. [Learn more about the SDK for .NET](/power-apps/developer/data-platform/org-service/overview)|
-|Dataverse Web API|For any client application. Examples in this section use PowerShell functions as described in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)<br />[Learn more about the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)|
+|Dataverse Web API|For any client application.<br />Examples in this section use PowerShell functions as described in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)<br />[Learn more about the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)|
 
 ## Next steps
 
