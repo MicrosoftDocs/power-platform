@@ -53,9 +53,6 @@ items:
 - name: "Policy Template (mspcat_ssPolicyTemplate)"
   displayName: "mspcat_ssPolicyTemplate entity"
   href: mspcat_sspolicytemplate.md
-- name: "Poll Placement (mspp_pollplacement)"
-  displayName: "mspp_pollplacement entity"
-  href: mspp_pollplacement.md
 - name: "Power Platform Geo (mspcat_crmgeo)"
   displayName: "mspcat_crmgeo entity"
   href: mspcat_crmgeo.md
@@ -65,9 +62,6 @@ items:
 - name: "Publisher Users (mspcat_PublisherUsers)"
   displayName: "mspcat_PublisherUsers entity"
   href: mspcat_publisherusers.md
-- name: "Publishing State Transition Rule (mspp_publishingstatetransitionrule)"
-  displayName: "mspp_publishingstatetransitionrule entity"
-  href: mspp_publishingstatetransitionrule.md
 - name: "Rule set for PowerApps Checker (mspcat_rulesetforpowerappschecker)"
   displayName: "mspcat_rulesetforpowerappschecker entity"
   href: mspcat_rulesetforpowerappschecker.md

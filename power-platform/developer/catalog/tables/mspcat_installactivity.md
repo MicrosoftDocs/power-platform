@@ -1240,8 +1240,6 @@ These relationships are many-to-one. Listed by **SchemaName**.
 - [mspcat_packages_mspcat_InstallActivities](#BKMK_mspcat_packages_mspcat_InstallActivities)
 - [mspcat_publisher_mspcat_InstallActivities](#BKMK_mspcat_publisher_mspcat_InstallActivities)
 - [mspcat_templates_mspcat_InstallActivities](#BKMK_mspcat_templates_mspcat_InstallActivities)
-- [mspp_pollplacement_mspcat_InstallActivities](#BKMK_mspp_pollplacement_mspcat_InstallActivities)
-- [mspp_publishingstatetransitionrule_mspcat_InstallActivities](#BKMK_mspp_publishingstatetransitionrule_mspcat_InstallActivities)
 
 ### <a name="BKMK_mspcat_applications_mspcat_InstallActivities"></a> mspcat_applications_mspcat_InstallActivities
 
@@ -1333,32 +1331,6 @@ One-To-Many Relationship: [mspcat_templates mspcat_templates_mspcat_InstallActiv
 |ReferencingEntityNavigationPropertyName|`regardingobjectid_mspcat_templates_mspcat_installactivity`|
 |IsHierarchical||
 |CascadeConfiguration|Archive: `NoCascade`<br />Assign: `Cascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `Cascade`<br />RollupView: `NoCascade`<br />Share: `Cascade`<br />Unshare: `Cascade`|
-
-### <a name="BKMK_mspp_pollplacement_mspcat_InstallActivities"></a> mspp_pollplacement_mspcat_InstallActivities
-
-One-To-Many Relationship: [mspp_pollplacement mspp_pollplacement_mspcat_InstallActivities](mspp_pollplacement.md#BKMK_mspp_pollplacement_mspcat_InstallActivities)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`mspp_pollplacement`|
-|ReferencedAttribute|`mspp_pollplacementid`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencingEntityNavigationPropertyName|`regardingobjectid_mspp_pollplacement_mspcat_installactivity`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
-
-### <a name="BKMK_mspp_publishingstatetransitionrule_mspcat_InstallActivities"></a> mspp_publishingstatetransitionrule_mspcat_InstallActivities
-
-One-To-Many Relationship: [mspp_publishingstatetransitionrule mspp_publishingstatetransitionrule_mspcat_InstallActivities](mspp_publishingstatetransitionrule.md#BKMK_mspp_publishingstatetransitionrule_mspcat_InstallActivities)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`mspp_publishingstatetransitionrule`|
-|ReferencedAttribute|`mspp_publishingstatetransitionruleid`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencingEntityNavigationPropertyName|`regardingobjectid_mspp_publishingstatetransitionrule_mspcat_installactivity`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
 
 
 
