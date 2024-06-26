@@ -14,26 +14,9 @@ contributors:
 ---
 # Retrieve data about the catalog in Power Platform (preview)
 
+To retrieve data about the catalogs for your tenant you need to determine which environment the catalog is installed on. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this inoformation.
 
-## New tables
-
-When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the tables listed in the [Catalog in Power Platform  table/entity reference](about-entity-reference.md) are added to that environment only.
-
-Some of the most important tables you may use are in the following table:
-
-|Table |Description|
-|---------|---------|
-|[Catalog Item (mspcat_applications) table/entity reference](tables/mspcat_applications.md)|Entry that will appear in the Catalog|
-|[Install History (mspcat_InstallHistory) table/entity reference](tables/mspcat_installhistory.md)|Contains record of installations and their status|
-|[Approval Request (mspcat_certificationrequest) table/entity reference](tables/mspcat_certificationrequest.md)|Contains Approval records that are used to process new or updated submissions to the catalog system.|
-|[Install Activity (mspcat_InstallActivity) table/entity reference](tables/mspcat_installactivity.md)|Install History Activity Id's|
-|TODO|Add more??|
-
-TODO Add Diagram?
-TODO: This is your place to tell about the design of these tables and how you expect people to use them.
-
-
-## View environments with catalogs in your tenant
+## Find environments with catalogs in your tenant
 
 Use the [pac admin list](../cli/reference/admin.md#pac-admin-list) command to view the environments with catalogs in your tenant.
 
@@ -41,6 +24,8 @@ Use the [pac admin list](../cli/reference/admin.md#pac-admin-list) command to vi
 > This command requires an administrator authentication profile.
 
 When using this command, you must use the following `--application` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`. This value is the application ID associated with the catalog.
+
+TODO: Matt mentioned some non-guid value that is easier to remember.
 
 ```powershell
 PS C:\Users\you> pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
@@ -51,15 +36,50 @@ Active Environment Environment ID                       Environment Url         
 *      Your Org    b16bdb7a-e023-4158-a839-4f8831ed2432 https://yourorg.crm.dynamics.com/ Production e20be4c1-02ce-4e81-93c6-6e95ff053943
 ```
 
+## Catalog tables
+
+When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the tables listed in the [Catalog in Power Platform  table/entity reference](about-entity-reference.md) are added to that environment only.
+
+Some of the most important tables you may use are in the following table:
+
+|Table |Description|
+|---------|---------|
+|[Approval Request (mspcat_certificationrequest)](tables/mspcat_certificationrequest.md)|Contains Approval records that are used to process new or updated submissions to the catalog system.|
+|[Catalog Publisher (mspcat_publisher)](tables/mspcat_publisher.md)|The publisher Entity for holding TPS Publisher data.|
+|[Catalog Item (mspcat_applications)](tables/mspcat_applications.md)|Entry that will appear in the Catalog|
+|[Package (mspcat_packages)](tables/mspcat_packages.md)|Deployment Assets for a Catalog Item.|
+|[Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md)|Contains record of installations and their status|
+|[Install Activity (mspcat_InstallActivity)](tables/mspcat_installactivity.md)|Install History Activity Id's|
+|TODO|Add more??|
+
+TODO Add Diagram?
+TODO: This is your place to tell about the design of these tables and how you expect people to use them.
+
+
+
+
 ## View catalog information
 
 There are two Dataverse functions you can use to get information about the catalog.
 
-### mspcat_GetPowerCatalogInformationRequest
+ - `mspcat_GetPowerCatalogInformation` TODO Add guidance use this when...
+- `mspcat_GetPowerCatalogDetails` TODO Add guidance use this when...
 
-#### [PAC CLI](#tab/cli)
+### mspcat_GetPowerCatalogInformation
 
-There is no PAC CLI command to return this information.
+This function has a `permissionsonly` boolean parameter that can be ignored. It returns the following information:
+
+
+|Name|Type|Description|
+|---------|---------|---------|
+|SolutionVersion|string|         |
+|CatalogDescription|string|         |
+|CanRead|bool|         |
+|CatalogName|string|         |
+|ImageLink|string|         |
+|CanSubmit|bool|         |
+
+
 
 #### [SDK for .NET](#tab/sdk)
 
@@ -139,9 +159,18 @@ OData-Version: 4.0
 
 TODO: Tell what mspcat_GetPowerCatalogDetails is for.
 
-#### [PAC CLI](#tab/cli)
+This function returns an object with a single `CatalogDetails` string property that contains an encoded string. When decoded, the string contains the following properties:
 
-There is no PAC CLI command to return this information.
+|Name|Type|Description|
+|---------|---------|---------|
+|catalogId|string|TODO: provide description|
+|isSuccess|string|TODO: provide description|
+|sourceOptions|option array|TODO: provide description|
+|categoryOptions|option array|TODO: provide description|
+|publisherLocalizedDisplayName|string|TODO: provide description|
+|catalogItemLocalizedDisplayName|string|TODO: provide description|
+
+
 
 #### [SDK for .NET](#tab/sdk)
 
@@ -233,7 +262,7 @@ catalogItemLocalizedDisplayName: Catalog Item
 
 #### [Web API](#tab/webapi)
 
-Use the `mspcat_GetPowerCatalogDetails` function to get information about the catalog in the environment.
+Use this `GetPowerCatalogDetails` PowerShell function to use the `mspcat_GetPowerCatalogDetails` function. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 ```powershell
 function GetPowerCatalogDetails {
@@ -298,13 +327,17 @@ publisherLocalizedDisplayName: Catalog Publisher
 catalogItemLocalizedDisplayName: Catalog Item
 ```
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use Web API functions](/power-apps/developer/data-platform/webapi/use-web-api-functions)   
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
 ## View items in the catalog
 
-### [PAC CLI](#tab/cli)
+You can discover items in the catalog using PAC CLI or by querying the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) table.
+
+### Using PAC CLI
 
 Use the [pac catalog list](../cli/reference/catalog.md#pac-catalog-list) command to view items in the catalog.
 
@@ -318,9 +351,11 @@ Contoso Conference Custom Connector Catalog Conferences Team  ContosoConferences
 Contoso Themed Components           ContosoPublisher          ContosoThemedComponents              efbc469d-f1b2-ed11-83fd-000d3a0a2d9d 1.0.0.1 Published
 ```
 
-[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+### Query Dataverse tables
 
-### [SDK for .NET](#tab/sdk)
+Information about catalog items is in the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) table, so you can retrieve data from it as you would any Dataverse table.
+
+#### [SDK for .NET](#tab/sdk)
 
 The static `RetrieveCatalogItems` method retrieves and prints a table of data from the `mspcat_applications` and `mspcat_packages` tables about items in the catalog. This function depends on the [ConsoleTables NuGet package](https://www.nuget.org/packages/ConsoleTables) to render the table in a console application.
 
@@ -418,7 +453,7 @@ The output of this example might look something like this:
 [Query data using QueryExpression](/power-apps/developer/data-platform/org-service/queryexpression/overview)
 
 
-### [Web API](#tab/webapi)
+#### [Web API](#tab/webapi)
 
 The static `RetrieveCatalogItems` method retrieves and prints a table of data from the `mspcat_applications` and `mspcat_packages` tables about items in the catalog. This function depends on the `Get-Records` function introduced in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
