@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/13/2024
+ms.date: 06/26/2024
 author: hasharaf 
 ms.author: hasharaf 
 ms.reviewer: sericks
@@ -35,16 +35,6 @@ Dataverse is available in developer environments, and these environments are [Ma
 Understand that environment routing is a tenant-level, admin setting that:
 
 - Only Power Platform admins can enable.
-
-- Requires the **Developer environment assignment** setting to be enabled for **Everyone**.
-
-  :::image type="content" source="media/default-environment-routing/developer-environments-assignment-everyone.png" alt-text="The Developer environment assignment setting must be enabled for Everyone." lightbox="media/default-environment-routing/developer-environments-assignment-everyone.png":::
-
-  > [!Note]
-  > If the admin attempts to use environment routing while the **Developer Environment assignments** setting is configured as **only specific admins**, the following error appears:
-  >
-  > _Something went wrong while saving your changes. Try again and if the problem persists, submit a support ticket with correlation id: NNNNN-NNNNN-NNNNN._
-
 
 - Requires the use of Managed Environments, since all of the newly, created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
