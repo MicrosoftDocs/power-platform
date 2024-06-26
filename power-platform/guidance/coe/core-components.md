@@ -356,7 +356,7 @@ Use this app to:
 
 ![CoE Admin Command Center canvas app](media\commandcenter1.png "CoE Admin Command Center canvas app")
 
-When you first launch the app, you may have to establish a connection for [HTTP with Microsoft Entra ID](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+When you first launch the app, you may have to establish a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 :::image type="content" source="media/httpazuread.png" alt-text="Establish an HTTP with Microsoft Entra connection":::
 
 #### DLP Editor v2
