@@ -39,18 +39,16 @@
           href: catalog/overview.md
         - name: Retrieve catalog data
           href: catalog/retrieve-data.md
-          items:
-            - name: Table reference
-              href: catalog/tables/toc.yml
         - name: Submit catalog items
           href: catalog/submit-items.md
-          items:
-            - name: Item submission reference
-              href: catalog/submission-reference.md
         - name: Install catalog items
           href: catalog/install-items.md
+        - name: Item submission reference
+          href: catalog/submission-reference.md
         - name: Event reference
           href: catalog/events.md
+        - name: Table reference
+          href: catalog/tables/toc.yml
     - name: Unified developer experience for finance and operations apps
       items:
         - name: Overview
