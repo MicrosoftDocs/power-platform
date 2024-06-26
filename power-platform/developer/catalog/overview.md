@@ -28,8 +28,9 @@ The catalog in Power Platform enables developers and makers to:
 - Find and install the latest and authoritative version of a component.
 - Get started with templates and components that provide immediate value.
 
-> [!NOTE]
-> Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../../admin/administer-catalog.md)
+[Learn more about the catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)
+
+
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems. This can be done using the manager app. More information: [View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)
 
@@ -38,6 +39,9 @@ The articles in this section describe how developers can view, submit, and insta
 ## Get started
 
 If you don't have the system administrator security role, contact your administrator to grant access to the catalog. You need the **Catalog Submitter** security role to be associated with your user account or a team that you belong to. More information: [Edit user access](../../admin/administer-catalog.md#edit-user-access)
+
+> [!NOTE]
+> Before you can work with catalog items, you must install and configure it. [Set up the catalog](../../admin/administer-catalog.md#set-up-the-catalog)
 
 ## Choose how to interact
 
@@ -53,3 +57,9 @@ Articles in this section describe three different ways to perform operations wit
 
 > [!div class="nextstepaction"]
 > [Retrieve data about the catalog](retrieve-data.md)
+
+### See also
+
+[Catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)   
+[View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)   
+[Administer the catalog (preview)](../../admin/administer-catalog.md)

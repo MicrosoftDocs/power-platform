@@ -44,6 +44,7 @@ Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
 ### [SDK for .NET](#tab/sdk)
 
 TODO: Why doesn't the `mspcat_SubmitCatalogApprovalRequest` include parameters that correspond to the solution zip file?
+Answer: Because it expects that the file referenced by a SAS URL?
 
 
 ```csharp
@@ -115,7 +116,100 @@ function SubmitCatalogApprovalRequest {
 
 ---
 
+## Check status of catalog submissions
+
+The `statuscode` options of the `mspcat_certificationrequest` table. Completed (2) represents a successful submission.
+
+|Value|Label|
+|---|---|
+|1|Submitted|
+|526430001|InProgress|
+|526430002|Waiting On Submitter|
+|526430003|Pending Deployment|
+|526430008|Draft|
+|526430009|Processing|
+|2|Completed|
+|526430000|Abandoned|
+|526430004|Rejected|
+|526430005|Marketing Content|
+|526430006|Duplicate Request|
+|526430010|Failed Prevalidation|
+
+
+### [PAC CLI](#tab/cli)
+
+Use the [pac catalog status](../cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog submissions.
+
+```powershell
+pac catalog status --tracking-id 0e6b119d-80f3-ed11-8849-000d3a0a2d9d --type submit
+Connected to... TestCatalog
+Connected as user@domain
+Status of the Submit request: Submitted
+```
+
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+
+### [SDK for .NET](#tab/sdk)
+
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
+
+### [Web API](#tab/webapi)
+
+// Poll for status of certification request
+GET /mspcat_certificationrequests(id)?$select=statuscode
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+
+---
+
+## Submission attributes
+
+Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
+
+To help you, the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
+
+> [!NOTE]
+> More attributes are supported in the submission file and those are covered in the subsequent section.
+
+You need to edit this file to submit an item. Here's an example submission created from the JSON above.
+
+```json
+{
+  "modelVersion": "1.0.0.0",
+  "operation": "CreateOrUpdate",
+  "sourcePortal": 526430005,
+  "businessJustification": "Power Platform custom connector for Conference API",
+  "publisherDetails": {
+    "publisherId": "ContosoConferencesTeam",
+    "publisherDisplayName": "Catalog Conferences Team"
+  },
+  "catalogItemDefinition": {
+    "id": "ContosoConferencesCustomConnector",
+    "displayName": "Contoso Conference Custom Connector",
+    "description": "Demo Custom connector to query Conference Speakers & Sessions",
+    "offer": {
+      "type": "Component_Collection",
+      "deploymentType": "Normal",
+      "engineeringName": {
+        "firstName": "Jennifer",
+        "lastName": "Wilkins",
+        "email": "jwilkins@contoso.com",
+        "phoneNumber": "555-111-1234"
+      },
+      "supportName": {
+        "firstName": "Aidan",
+        "lastName": "Hunt",
+        "email": "ahunt@mouse.com",
+        "phoneNumber": "555-111-1234"
+      }
+    }
+  }
+}
+```
+
 ## Approve catalog submissions
+
+Catalog submissions are typically approved within the Power Platform Catalog Manager application.
 
 ### [PAC CLI](#tab/cli)
 
@@ -215,102 +309,11 @@ function ResolveApproval {
 
 ```
 
-
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
 [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
-## Check status of catalog submissions
-
-The `statuscode` options of the `mspcat_certificationrequest` table. Completed (2) represents a successful submission.
-
-|Value|Label|
-|---|---|
-|1|Submitted|
-|526430001|InProgress|
-|526430002|Waiting On Submitter|
-|526430003|Pending Deployment|
-|526430008|Draft|
-|526430009|Processing|
-|2|Completed|
-|526430000|Abandoned|
-|526430004|Rejected|
-|526430005|Marketing Content|
-|526430006|Duplicate Request|
-|526430010|Failed Prevalidation|
-
-
-### [PAC CLI](#tab/cli)
-
-Use the [pac catalog status](../cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog submissions.
-
-```powershell
-pac catalog status --tracking-id 0e6b119d-80f3-ed11-8849-000d3a0a2d9d --type submit
-Connected to... TestCatalog
-Connected as user@domain
-Status of the Submit request: Submitted
-```
-
-[What is Microsoft Power Platform CLI?](../cli/introduction.md)
-
-### [SDK for .NET](#tab/sdk)
-
-[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
-
-### [Web API](#tab/webapi)
-
-// Poll for status of certification request
-GET /mspcat_certificationrequests(id)?$select=statuscode
-
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
-
----
-
-## Submission attributes
-
-Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
-
-To help you, the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
-
-> [!NOTE]
-> More attributes are supported in the submission file and those are covered in the subsequent section.
-
-You need to edit this file to submit an item. Here's an example submission created from the JSON above.
-
-```json
-{
-  "modelVersion": "1.0.0.0",
-  "operation": "CreateOrUpdate",
-  "sourcePortal": 526430005,
-  "businessJustification": "Power Platform custom connector for Conference API",
-  "publisherDetails": {
-    "publisherId": "ContosoConferencesTeam",
-    "publisherDisplayName": "Catalog Conferences Team"
-  },
-  "catalogItemDefinition": {
-    "id": "ContosoConferencesCustomConnector",
-    "displayName": "Contoso Conference Custom Connector",
-    "description": "Demo Custom connector to query Conference Speakers & Sessions",
-    "offer": {
-      "type": "Component_Collection",
-      "deploymentType": "Normal",
-      "engineeringName": {
-        "firstName": "Jennifer",
-        "lastName": "Wilkins",
-        "email": "jwilkins@contoso.com",
-        "phoneNumber": "555-111-1234"
-      },
-      "supportName": {
-        "firstName": "Aidan",
-        "lastName": "Hunt",
-        "email": "ahunt@mouse.com",
-        "phoneNumber": "555-111-1234"
-      }
-    }
-  }
-}
-```
 
 ## Next steps
 
@@ -319,8 +322,4 @@ Review the [Catalog item submission document reference](submission-reference.md)
 > [!div class="nextstepaction"]
 > [Compose submission document](submission-reference.md)
 
-### See also
 
-[Catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)   
-[View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)   
-[Administer the catalog (preview)](../../admin/administer-catalog.md)
