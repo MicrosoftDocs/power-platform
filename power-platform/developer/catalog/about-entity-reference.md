@@ -15,4 +15,6 @@ This reference is based on the [Dataverse table/entity reference](/power-apps/de
 
 > [!NOTE]
 > The Power Platform Catalog manager managed solution makes many more changes to columns and relationships for existing Dataverse tables. These changes are not included here because they don't impact core scenarios to use these tables.
+>
+> The [Catalog Submission Files (mspcat_CatalogSubmissionFiles)](/power-apps/developer/data-platform/reference/entities/mspcat_catalogsubmissionfiles) and [Package Submission Store (mspcat_PackageStore)](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) tables are found in every Dataverse environment. They are not added by the Power Platform Catalog manager application.
 

@@ -30,8 +30,6 @@ The catalog in Power Platform enables developers and makers to:
 
 [Learn more about the catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)
 
-
-
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems. This can be done using the manager app. More information: [View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)
 
 The articles in this section describe how developers can view, submit, and install catalog items programmatically.
@@ -43,7 +41,7 @@ If you don't have the system administrator security role, contact your administr
 > [!NOTE]
 > Before you can work with catalog items, you must install and configure it. [Set up the catalog](../../admin/administer-catalog.md#set-up-the-catalog)
 
-## Choose how to interact
+## APIs and commands you can use
 
 Articles in this section describe three different ways to perform operations with the catalog. Use the one that best suites your skills and the requirements of your project.
 

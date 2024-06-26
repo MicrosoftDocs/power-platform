@@ -23,10 +23,9 @@ Event raised when a catalog approval request is received.
 
 ### mspcat_OnCatalogApprovalRequested parameters
 
-
 |Name|Type|Description|
 |---------|---------|---------|
-|ApprovalRequest|entity|mspcat_certificationrequest TODO|
+|`ApprovalRequest`|[mspcat_certificationrequest record](tables/mspcat_certificationrequest.md)|Approval Request Entity Reference|
 
 
 ## mspcat_OnCatalogApprovalUpdated
@@ -37,10 +36,10 @@ Catalog Approval Updated Event raised when a catalog approval request is complet
 
 |Name|Type|Description|
 |---------|---------|---------|
-|StatusMessage|string|TODO|
-|IsCompleted|bool|TODO|
-|ApprovalRequest|entity|mspcat_certificationrequest TODO|
-|IsApproved|bool|TODO|
+|`StatusMessage`|string|Status Message from the install process|
+|`IsCompleted`|bool|True of the operation is complete|
+|`ApprovalRequest`|[mspcat_certificationrequest record](tables/mspcat_certificationrequest.md)|Approval Request that has been completed|
+|`IsApproved`|bool|True if is approved|
 
 ## mspcat_OnCatalogInstallRequested
 
@@ -50,8 +49,8 @@ Catalog Install Requested Event, raised when a Catalog Item is being installed.
 
 |Name|Type|Description|
 |---------|---------|---------|
-|InstallHistory|entity|mspcat_installhistory TODO|
-|CatalogItem|entity|mspcat_applications TODO|
+|`InstallHistory`|[mspcat_installhistory record](tables/mspcat_installhistory.md)|Install History entity reference that is the subject of this notification |
+|`CatalogItem`|[mspcat_applications record](tables/mspcat_applications.md)|Catalog Item|
 
 ## mspcat_OnCatalogInstallUpdated
 
@@ -61,8 +60,8 @@ Catalog Install Updated Event, Raised on each status event received by the syste
 
 |Name|Type|Description|
 |---------|---------|---------|
-|CatalogItem|entity|mspcat_applications TODO|
-|StatusMessage|string|TODO|
-|IsCompleted|bool|TODO|
-|InstallHistory|entity|mspcat_installhistory TODO|
-|IsSuccess|bool|TODO|
+|`CatalogItem`|[mspcat_applications record](tables/mspcat_applications.md)|Catalog Item|
+|`StatusMessage`|string|Status Message from the install process|
+|`IsCompleted`|bool|True of the operation is complete|
+|`InstallHistory`|[mspcat_installhistory record](tables/mspcat_installhistory.md)|Install History entity reference that is the subject of this notification|
+|`IsSuccess`|bool|Will be set to true if the request was completed successfully|

@@ -15,12 +15,23 @@ contributors:
 # Retrieve data about the catalog in Power Platform (preview)
 
 
-## Tables added by the Power Platform catalog manager application
+## New tables
 
 When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the tables listed in the [Catalog in Power Platform  table/entity reference](about-entity-reference.md) are added to that environment only.
 
-> [!NOTE]
-> The [Catalog Submission Files (mspcat_CatalogSubmissionFiles)](/power-apps/developer/data-platform/reference/entities/mspcat_catalogsubmissionfiles) and [Package Submission Store (mspcat_PackageStore)](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) tables are found in every Dataverse environment. They are not added by the Power Platform Catalog manager application.
+Some of the most important tables you may use are in the following table:
+
+|Table |Description|
+|---------|---------|
+|[Catalog Item (mspcat_applications) table/entity reference](tables/mspcat_applications.md)|Entry that will appear in the Catalog|
+|[Install History (mspcat_InstallHistory) table/entity reference](tables/mspcat_installhistory.md)|Contains record of installations and their status|
+|[Approval Request (mspcat_certificationrequest) table/entity reference](tables/mspcat_certificationrequest.md)|Contains Approval records that are used to process new or updated submissions to the catalog system.|
+|[Install Activity (mspcat_InstallActivity) table/entity reference](tables/mspcat_installactivity.md)|Install History Activity Id's|
+|TODO|Add more??|
+
+TODO Add Diagram?
+TODO: This is your place to tell about the design of these tables and how you expect people to use them.
+
 
 ## View environments with catalogs in your tenant
 
