@@ -14,19 +14,7 @@ contributors:
 ---
 # Submit and approve catalog items (preview)
 
-
-
-
-
-## Use the catalog
-
-1. [View environments with catalogs in your tenant](#view-environments-with-catalogs-in-your-tenant)
-1. [View catalog information](#view-catalog-information)
-1. [View items in the catalog](#view-items-in-the-catalog)
-1. [Install items from the catalog](#install-items-from-the-catalog)
-1. [Submit items to the catalog](#submit-items-to-the-catalog)
-1. [Check status of catalog submissions](#check-status-of-catalog-submissions)
-
+People must submit their catalog items for approval and an administrator must approve them before others can use them.
 
 ## Submit items to the catalog
 
@@ -168,7 +156,7 @@ static void ResolveApproval(
 ### [Web API](#tab/webapi)
 
 
-This `ResolveApproval` Powershell function approves a catalog submission.
+This `ResolveApproval` Powershell function approves a catalog submission. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 
 ```powershell
@@ -177,15 +165,13 @@ This `ResolveApproval` Powershell function approves a catalog submission.
    This function resolves an approval request.
 
 .DESCRIPTION
-   The ResolveApproval function sends a POST request to a specific URI to resolve an approval request. 
-   The URI is constructed using the base URI and the certification request ID. 
-   The body of the request contains the success status and a message.
+   mspcat_ResolveApproval is an action bound to the mspcat_certificationrequests table.
 
 .PARAMETER certificationRequestId
    This is a mandatory GUID parameter that represents the ID of the certification request.
 
 .PARAMETER requestsuccess
-   This is a mandatory Boolean parameter that indicates whether the request was successful.
+   This is a mandatory Boolean parameter that indicates the decision to approve or reject the request..
 
 .PARAMETER message
    This is a mandatory string parameter that contains a message about the request.
@@ -230,7 +216,8 @@ function ResolveApproval {
 ```
 
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
