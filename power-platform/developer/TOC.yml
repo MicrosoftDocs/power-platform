@@ -39,6 +39,8 @@
           href: catalog/submit-items.md
         - name: Item submission reference
           href: catalog/submission-reference.md
+        - name: Event reference
+          href: catalog/events.md
     - name: Unified developer experience for finance and operations apps
       items:
         - name: Overview
