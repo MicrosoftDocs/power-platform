@@ -16,20 +16,67 @@ contributors:
 
 People must submit their catalog items for approval and an administrator must approve them before others can use them.
 
-## Submit items to the catalog
-
 To submit an item to the catalog, you need:
 
 - A solution or package deployer package containing the item you want to submit
-- A submission metadata JSON document
+- A submission metadata JSON document.
+
+  Use the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission attributes](#submission-attributes)
+
+## Submission attributes
+
+Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
+
+To help you, the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
+
+> [!NOTE]
+> More attributes are supported in the submission file and those are covered in the subsequent section.
+
+You need to edit this file to submit an item. Here's an example submission created from the JSON above.
+
+```json
+{
+  "modelVersion": "1.0.0.0",
+  "operation": "CreateOrUpdate",
+  "sourcePortal": 526430005,
+  "businessJustification": "Power Platform custom connector for Conference API",
+  "publisherDetails": {
+    "publisherId": "ContosoConferencesTeam",
+    "publisherDisplayName": "Catalog Conferences Team"
+  },
+  "catalogItemDefinition": {
+    "id": "ContosoConferencesCustomConnector",
+    "displayName": "Contoso Conference Custom Connector",
+    "description": "Demo Custom connector to query Conference Speakers & Sessions",
+    "offer": {
+      "type": "Component_Collection",
+      "deploymentType": "Normal",
+      "engineeringName": {
+        "firstName": "Jennifer",
+        "lastName": "Wilkins",
+        "email": "jwilkins@contoso.com",
+        "phoneNumber": "555-111-1234"
+      },
+      "supportName": {
+        "firstName": "Aidan",
+        "lastName": "Hunt",
+        "email": "ahunt@contoso.com",
+        "phoneNumber": "555-111-1234"
+      }
+    }
+  }
+}
+```
+
+## Submit items to the catalog
+
 
 ### [PAC CLI](#tab/cli)
-
-Use the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission attributes](#submission-attributes)
 
 After your submission metadata JSON document is ready, use the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command to submit it.
 
 TODO: Explain when and why someone would include a reference to the solution zip file.
+hypothesis: If they include a reference to the solution zip file, they don't need to provide a package because the PAC CLI will generate one for them using the mspcat_PackageStore table.
 
 ```powershell
 pac catalog submit -p "BuildDemoSubmission.json" -sz "ContosoConference_1_0_0_1_managed.zip"
@@ -118,7 +165,7 @@ function SubmitCatalogApprovalRequest {
 
 ## Check status of catalog submissions
 
-The `statuscode` options of the `mspcat_certificationrequest` table. Completed (2) represents a successful submission.
+The [statuscode Choices/Options](tables/mspcat_certificationrequest.md#statuscode-choicesoptions) options of the [Approval Request (mspcat_certificationrequest) table](tables/mspcat_certificationrequest.md). Completed (2) represents a successful submission.
 
 |Value|Label|
 |---|---|
@@ -162,50 +209,7 @@ GET /mspcat_certificationrequests(id)?$select=statuscode
 
 ---
 
-## Submission attributes
 
-Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
-
-To help you, the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
-
-> [!NOTE]
-> More attributes are supported in the submission file and those are covered in the subsequent section.
-
-You need to edit this file to submit an item. Here's an example submission created from the JSON above.
-
-```json
-{
-  "modelVersion": "1.0.0.0",
-  "operation": "CreateOrUpdate",
-  "sourcePortal": 526430005,
-  "businessJustification": "Power Platform custom connector for Conference API",
-  "publisherDetails": {
-    "publisherId": "ContosoConferencesTeam",
-    "publisherDisplayName": "Catalog Conferences Team"
-  },
-  "catalogItemDefinition": {
-    "id": "ContosoConferencesCustomConnector",
-    "displayName": "Contoso Conference Custom Connector",
-    "description": "Demo Custom connector to query Conference Speakers & Sessions",
-    "offer": {
-      "type": "Component_Collection",
-      "deploymentType": "Normal",
-      "engineeringName": {
-        "firstName": "Jennifer",
-        "lastName": "Wilkins",
-        "email": "jwilkins@contoso.com",
-        "phoneNumber": "555-111-1234"
-      },
-      "supportName": {
-        "firstName": "Aidan",
-        "lastName": "Hunt",
-        "email": "ahunt@mouse.com",
-        "phoneNumber": "555-111-1234"
-      }
-    }
-  }
-}
-```
 
 ## Approve catalog submissions
 

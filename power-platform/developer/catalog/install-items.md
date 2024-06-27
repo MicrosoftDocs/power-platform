@@ -14,7 +14,7 @@ contributors:
 ---
 # Install items from the catalog in Power Platform using code (preview)
 
-Catalog items are stored in the `mspcat_applications`(**Catalog Item**) table. This table has a `mspcat_TPSID` (**Catalog Item Id**) column that stores a unique string value you can use to refer to a catalog item.
+Catalog items are stored in the [Catalog Item (mspcat_applications) table](tables/mspcat_applications.md). This table has a [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) that stores a unique string value you can use to refer to a catalog item.
 
 ### [PAC CLI](#tab/cli)
 
@@ -33,7 +33,7 @@ Connected to... EnvironmentWithCatalog
 Tracking ID for this installation is 9cc47262-2f33-ef11-8409-6045bdd3aec3
 ```
 
-The Tracking ID returned is the primary key of the `mspcat_InstallHistory` (**Install History**) record which you can review to see whether the installation succeeds.
+The Tracking ID returned is the primary key of the [Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md) record which you can review to see whether the installation succeeds.
 
 [What is Microsoft Power Platform CLI?](../cli/introduction.md)
 
@@ -91,7 +91,7 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 
 ### mspcat_InstallCatalogItemByCID
 
-Use this message when you have only the `mspcat_applications`(**Catalog Item**) `mspcat_TPSID` (**Catalog Item Id**). This is the message that is invoked by the PAC CLI and the application.
+Use this message when you have only the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
 
 The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 

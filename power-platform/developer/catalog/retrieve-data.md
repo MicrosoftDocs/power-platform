@@ -60,10 +60,10 @@ TODO: There are 25 tables in the reference. This is your place to tell about the
 
 ## View catalog information
 
-There are two Dataverse functions you can use to get information about the catalog.
+There are two Dataverse messages you can use to get information about the catalog.
 
-- `mspcat_GetPowerCatalogInformation` TODO Add guidance use this when...
-- `mspcat_GetPowerCatalogDetails` TODO Add guidance use this when...
+- `mspcat_GetPowerCatalogInformation` This message is intended to be very fast and provide the minimal permissions and descriptive data for the catalog.
+- `mspcat_GetPowerCatalogDetails` Use the contents of this message to populate the submission document and set the labels for what a Catalog Item and a Publisher should be called for this catalog.
 
 ### mspcat_GetPowerCatalogInformation
 
@@ -164,7 +164,7 @@ function GetPowerCatalogInformationExample {
 
 ### mspcat_GetPowerCatalogDetails
 
-TODO: Tell what mspcat_GetPowerCatalogDetails is for.
+This information is used to populate the submission document and set the labels for what a Catalog Item and a Publisher should be called for this catalog.
 
 This function returns an object with a single `CatalogDetails` string property that contains an encoded string. When decoded, the string contains the following properties:
 
@@ -264,7 +264,7 @@ publisherLocalizedDisplayName: Catalog Publisher
 catalogItemLocalizedDisplayName: Catalog Item
 ```
 
-[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
+[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)   
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 #### [Web API](#tab/webapi)
@@ -504,7 +504,7 @@ function Get-CatalogItems{
 }
 ```
 
-This is the request sent by the `Get-CatalogItems` function:
+This is the HTTP request sent by the `Get-CatalogItems` function:
 
 ```http
 GET [Organization URI]/api/data/v9.2/mspcat_applicationses?$select=mspcat_tpsid,mspcat_deploytype,mspcat_applicationtype,mspcat_businesscategory,mspcat_description,mspcat_applicationsid,_mspcat_publisherid_value,mspcat_name,statuscode&$filter=statecode%20eq%200%20and%20_mspcat_packageasset_value%20ne%20null&$expand=mspcat_PackageAsset($select=statecode,mspcat_uniquename,mspcat_version,statuscode) HTTP/1.1
@@ -527,7 +527,8 @@ Contoso Themed Components           ContosoPublisher         ContosoThemedCompon
 ```
 
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Query data using the Web API](/power-apps/developer/data-platform/webapi/query-data-web-api)
 
 ---
 
