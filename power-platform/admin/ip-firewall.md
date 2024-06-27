@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 05/29/2024
+ms.date: 06/27/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
