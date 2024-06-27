@@ -46,7 +46,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 - Use [Azure Key Vault](/connectors/keyvault/) (preview) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) (preview) to securely connect to service authentication by Microsoft Entra ID.
 - Use [custom connectors](/connectors/custom-connectors/) (preview) to securely connect to your services that are protected by private endpoints in Azure or services that are hosted within your private network.
-- Use [Azure File Storage](/connectors/azurefile/) (preview) to securely connect to private endpoint enabled Azure file storage. 
+- Use [Azure File Storage](/connectors/azurefile/) (preview) to securely connect to private, endpoint-enabled Azure file storage. 
 
 ### Limitations
 
@@ -147,9 +147,9 @@ Yes. You can use Network Security Group and firewalls to monitor outbound traffi
 
 You need to delegate at least 24 Classless Inter-Domain Routing (CIDR), or 255 IP addresses, in the subnet. If you want to delegate the same subnet to multiple environments, you might need more IP addresses in that subnet.
 
-### Can I make internet-bound calls from plug-ins/connectors after my environment is subnet-delegated?
+### Can I make internet-bound calls from plug-ins or connectors after my environment is subnet-delegated?
 
-Yes. You can make internet-bound calls from plug-ins/connectors, but the subnet must be configured with an [Azure NAT gateway](/azure/nat-gateway/nat-overview).
+Yes. You can make internet-bound calls from plug-ins or connectors, but the subnet must be configured with an [Azure NAT gateway](/azure/nat-gateway/nat-overview).
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
@@ -211,8 +211,8 @@ As a customer, you have ownership and control over the Virtual Network and its a
 
 One Virtual Network and one dedicated subnet in each of your primary and secondary Azure regions are required for production workloads to ensure proper failover. However, for Dev/Test environments, we recommend a single Virtual Network together with two dedicated subnets for Power Platform.
 
-### Does virtual network support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin)?
-No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) does not support virtual network.
+### Does Virtual Network support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin)?
+No, Virtual Network doesn't support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin).
 
 ## Next steps
 
