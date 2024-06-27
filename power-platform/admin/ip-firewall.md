@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 05/29/2024
+ms.date: 06/27/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -16,9 +16,6 @@ ms.custom:
 The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment, and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
-
-> [!IMPORTANT]
-> The IP firewall support for [TDS endpoint](settings-features.md#tds-endpoint) is in preview.
 
 ## Key benefits
 
