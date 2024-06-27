@@ -4,9 +4,10 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/30/2024
+ms.date: 06/27/2024
 ms.subservice: admin
 ms.author: ritesp
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -39,10 +40,13 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources, such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You can protect your data from data exfiltration and other incidents.
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private, endpoint-protected resources in Azure, such as Web API, or any resources within your private network, such as SQL and Web API. You can protect your data from data breaches and other external threats.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 - Use [Virtual Network–supported connectors](vnet-support-overview.md#supported-services) (preview) such as [SQL Server](/connectors/sql/) (preview) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) (preview) connector to establish secure connections to private, endpoint-enabled Azure Queues.
 - Use [Azure Key Vault](/connectors/keyvault/) (preview) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) (preview) to securely connect to service authentication by Microsoft Entra ID.
 - Use [custom connectors](/connectors/custom-connectors/) (preview) to securely connect to your services that are protected by private endpoints in Azure or services that are hosted within your private network.
+- Use [Azure File Storage](/connectors/azurefile/) (preview) to securely connect to private, endpoint-enabled Azure file storage. 
 
 ### Limitations
 
@@ -81,8 +85,7 @@ The following table lists the services that support Azure subnet delegation for 
 | Area      | Power Platform services | Virtual Network support availability|
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
-| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li></ul> | Preview |
-
+| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li></ul> | Preview |
 
 ## Licensing requirements
 
@@ -144,9 +147,9 @@ Yes. You can use Network Security Group and firewalls to monitor outbound traffi
 
 You need to delegate at least 24 Classless Inter-Domain Routing (CIDR), or 255 IP addresses, in the subnet. If you want to delegate the same subnet to multiple environments, you might need more IP addresses in that subnet.
 
-### Can I make internet-bound calls from plug-ins after my environment is subnet-delegated?
+### Can I make internet-bound calls from plug-ins or connectors after my environment is subnet-delegated?
 
-Yes. You can make internet-bound calls from plug-ins, but the subnet must be configured with an [Azure NAT gateway](/azure/nat-gateway/nat-overview).
+Yes. You can make internet-bound calls from plug-ins or connectors, but the subnet must be configured with an [Azure NAT gateway](/azure/nat-gateway/nat-overview).
 
 ### Can I update the subnet IP address range after it's delegated to "Microsoft.PowerPlatform/enterprisePolicies"?
 
@@ -207,6 +210,9 @@ As a customer, you have ownership and control over the Virtual Network and its a
 ### How can I configure Virtual Network support for Power Platform in Dev/Test environments without using two separate Virtual Networks in different Azure regions?
 
 One Virtual Network and one dedicated subnet in each of your primary and secondary Azure regions are required for production workloads to ensure proper failover. However, for Dev/Test environments, we recommend a single Virtual Network together with two dedicated subnets for Power Platform.
+
+### Does Virtual Network support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin)?
+No, Virtual Network doesn't support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin).
 
 ## Next steps
 
