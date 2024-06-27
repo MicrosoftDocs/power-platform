@@ -211,8 +211,8 @@ As a customer, you have ownership and control over the Virtual Network and its a
 
 One Virtual Network and one dedicated subnet in each of your primary and secondary Azure regions are required for production workloads to ensure proper failover. However, for Dev/Test environments, we recommend a single Virtual Network together with two dedicated subnets for Power Platform.
 
-### Does Virtual Network support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin)?
-No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) doesn't support virtual network.
+### Do [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) support Virtual Network?
+No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) don't support Virtual Network.
 
 ## Next steps
 
