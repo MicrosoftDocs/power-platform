@@ -17,9 +17,6 @@ The IP firewall helps to protect your organizational data by limiting user acces
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
 
-> [!IMPORTANT]
-> The IP firewall support for [TDS endpoint](settings-features.md#tds-endpoint) is in preview.
-
 ## Key benefits
 
 Enabling the IP firewall in your Power Platform environments offers several key benefits.
