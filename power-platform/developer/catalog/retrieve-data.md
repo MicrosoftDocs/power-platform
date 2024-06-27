@@ -14,7 +14,7 @@ contributors:
 ---
 # Retrieve data about the catalog in Power Platform (preview)
 
-To retrieve data about the catalogs for your tenant you need to determine which environment the catalog is installed on. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this inoformation.
+To retrieve data about the catalogs for your tenant you need to determine which environment(s) the catalog is installed on. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
 
 ## Find environments with catalogs in your tenant
 
@@ -53,7 +53,7 @@ Some of the most important tables you may use are in the following table:
 |TODO|Add more??|
 
 TODO Add Diagram?
-TODO: This is your place to tell about the design of these tables and how you expect people to use them.
+TODO: There are 25 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
 
 
 
@@ -67,18 +67,19 @@ There are two Dataverse functions you can use to get information about the catal
 
 ### mspcat_GetPowerCatalogInformation
 
-This function has a `permissionsonly` boolean parameter that can be ignored. It returns the following information:
+This function returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
 
 
 |Name|Type|Description|
 |---------|---------|---------|
-|SolutionVersion|string|Version of the catalog solution installed|
-|CatalogDescription|string|Describes what this catalog is for|
-|CanRead|bool|Can the user read the items in the catalog|
-|CatalogName|string|Name of the catalog installed on this environment|
-|ImageLink|string|If set, is the image for the catalog|
-|CanSubmit|bool|Can the user submit items to the catalog|
+|`SolutionVersion`|string|Version of the catalog solution installed|
+|`CatalogDescription`|string|Describes what this catalog is for|
+|`CanRead`|bool|Can the user read the items in the catalog|
+|`CatalogName`|string|Name of the catalog installed on this environment|
+|`ImageLink`|string|If set, is the image for the catalog|
+|`CanSubmit`|bool|Can the user submit items to the catalog|
 
+If the `permissionsonly` boolean parameter is true, the `CatalogDescription`, `CatalogName`, and `ImageLink` values are not returned. `SolutionVersion`, `CanRead`, and `CanSubmit` values are always returned.
 
 
 #### [SDK for .NET](#tab/sdk)
@@ -90,9 +91,13 @@ The following `GetPowerCatalogInformationExample` static method retrieves data u
 /// Returns data about the catalog for an environment
 /// </summary>
 /// <param name="service">The authenticated IOrganizationService instance.</param>
-static void GetPowerCatalogInformationExample(IOrganizationService service) {
-
+/// <param name="permissionsonly">Whether to only return information about permissions.</param>
+static void GetPowerCatalogInformationExample(IOrganizationService service, bool permissionsonly = false)
+{
    var request = new mspcat_GetPowerCatalogInformationRequest();
+   if (permissionsonly) {
+         request.permissionsonly = true;
+   }
    var response = (mspcat_GetPowerCatalogInformationResponse)service.Execute(request);
 
    Console.WriteLine($"SolutionVersion: {response.SolutionVersion}");
@@ -101,11 +106,12 @@ static void GetPowerCatalogInformationExample(IOrganizationService service) {
    Console.WriteLine($"CatalogName: {response.CatalogName}");
    Console.WriteLine($"ImageLink: {response.ImageLink}");
    Console.WriteLine($"CanSubmit: {response.CanSubmit}");
-
 }
 ```
 
 **Output**
+
+With `permissionsonly` equal false.
 
 ```
 SolutionVersion: 1.1.24.500
@@ -121,37 +127,38 @@ CanSubmit: True
 
 #### [Web API](#tab/webapi)
 
-Use the `mspcat_GetPowerCatalogInformation` function to get information about the catalog in the environment.
+The following `GetPowerCatalogInformationExample` PowerShell function invokes the `mspcat_GetPowerCatalogInformationRequest` and processes the results that are represent the `mspcat_GetPowerCatalogInformationResponse` complex type. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
-**Request**
+```powershell
+function GetPowerCatalogInformationExample {
+   param (
+      [bool]
+      $permissionsonly
+   )
 
-```http
-GET [Organization URI]/api/data/v9.2/mspcat_GetPowerCatalogInformation HTTP/1.1
-Accept: application/json
-Authorization: Bearer [REDACTED]
-OData-MaxVersion: 4.0
-OData-Version: 4.0
-```
+   $uri = $baseURI + 'mspcat_GetPowerCatalogInformation'
+   if ($permissionsonly) {
+      $uri += '(permissionsonly=true)'
+   }
+   $results = Invoke-RestMethod `
+      -Method Get `
+      -Uri $uri `
+      -Headers $baseHeaders 
 
-**Response**
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json; odata.metadata=minimal
-OData-Version: 4.0
-
-{
-   "@odata.context": "[Organization URI]/api/data/v9.2/$metadata#Microsoft.Dynamics.CRM.mspcat_GetPowerCatalogInformationResponse",
-   "SolutionVersion": "1.1.24.500",
-   "CatalogDescription": "Catalog for Power Platform applications created by your company.",
-   "CanRead": true,
-   "CatalogName": "Default Catalog Name",
-   "ImageLink": null,
-   "CanSubmit": true
+   return  @{
+      SolutionVersion     = $results.SolutionVersion
+      CatalogDescription  = $results.CatalogDescription
+      CanRead             = $results.CanRead
+      CatalogName         = $results.CatalogName
+      ImageLink           = $results.ImageLink
+      CanSubmit           = $results.CanSubmit
+   }
 }
 ```
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use Web API functions](/power-apps/developer/data-platform/webapi/use-web-api-functions)   
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
@@ -163,12 +170,12 @@ This function returns an object with a single `CatalogDetails` string property t
 
 |Name|Type|Description|
 |---------|---------|---------|
-|catalogId|string|TODO: provide description|
-|isSuccess|string|TODO: provide description|
-|sourceOptions|option array|TODO: provide description|
-|categoryOptions|option array|TODO: provide description|
-|publisherLocalizedDisplayName|string|TODO: provide description|
-|catalogItemLocalizedDisplayName|string|TODO: provide description|
+|`catalogId`|string|TODO: provide description|
+|`isSuccess`|string|TODO: provide description|
+|`sourceOptions`|option array|TODO: provide description|
+|`categoryOptions`|option array|TODO: provide description|
+|`publisherLocalizedDisplayName`|string|TODO: provide description|
+|`catalogItemLocalizedDisplayName`|string|TODO: provide description|
 
 
 
@@ -497,7 +504,7 @@ function Get-CatalogItems{
 }
 ```
 
-This is the query composed:
+This is the request sent by the `Get-CatalogItems` function:
 
 ```http
 GET [Organization URI]/api/data/v9.2/mspcat_applicationses?$select=mspcat_tpsid,mspcat_deploytype,mspcat_applicationtype,mspcat_businesscategory,mspcat_description,mspcat_applicationsid,_mspcat_publisherid_value,mspcat_name,statuscode&$filter=statecode%20eq%200%20and%20_mspcat_packageasset_value%20ne%20null&$expand=mspcat_PackageAsset($select=statecode,mspcat_uniquename,mspcat_version,statuscode) HTTP/1.1
