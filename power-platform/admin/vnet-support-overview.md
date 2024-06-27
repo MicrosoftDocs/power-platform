@@ -40,8 +40,6 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to connect to your cloud data sources, such as Azure SQL, Azure Storage, blob storage, or Azure Key Vault. You can protect your data from data exfiltration and other incidents.
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private, endpoint-protected resources in Azure, such as Web API, or any resources within your private network, such as SQL and Web API. You can protect your data from data breaches and other external threats.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 - Use [Virtual Network–supported connectors](vnet-support-overview.md#supported-services) (preview) such as [SQL Server](/connectors/sql/) (preview) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) (preview) connector to establish secure connections to private, endpoint-enabled Azure Queues.
 - Use [Azure Key Vault](/connectors/keyvault/) (preview) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) (preview) to securely connect to service authentication by Microsoft Entra ID.
@@ -85,7 +83,9 @@ The following table lists the services that support Azure subnet delegation for 
 | Area      | Power Platform services | Virtual Network support availability|
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
-| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li></ul> | Preview |
+| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li></ul> | Production ready preview |
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
 ## Licensing requirements
 
@@ -212,7 +212,7 @@ As a customer, you have ownership and control over the Virtual Network and its a
 One Virtual Network and one dedicated subnet in each of your primary and secondary Azure regions are required for production workloads to ensure proper failover. However, for Dev/Test environments, we recommend a single Virtual Network together with two dedicated subnets for Power Platform.
 
 ### Does Virtual Network support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin)?
-No, Virtual Network doesn't support [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin).
+No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) doesn't support virtual network.
 
 ## Next steps
 
