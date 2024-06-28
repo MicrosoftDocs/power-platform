@@ -27,7 +27,7 @@ Use the [pac admin list](../cli/reference/admin.md#pac-admin-list) command to vi
 
 When using this command, you must use the following `--application` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`. This value is the application ID associated with the catalog.
 
-TODO: Matt mentioned some non-guid value that is easier to remember.
+> TODO: Matt mentioned some non-guid value that is easier to remember.
 
 ```powershell
 PS C:\Users\you> pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695

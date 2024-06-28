@@ -144,3 +144,49 @@ TODO: Web API example
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
 ---
+
+## Check status of catalog installation
+
+The [statuscode Choices/Options](tables/mspcat_installhistory.md#statuscode-choicesoptions) options of the [Install History (mspcat_InstallHistory) table](tables/mspcat_installhistory.md). **Completed** (526430003) represents a successful submission.
+
+|State|Value|Label|Allowed Transition to|
+|---|---|---|
+|`0` (**Active**)|`1`|**Requested**|2,526430001,526430002,526430003,526430004|
+|`1` (**Inactive**)|`2`|**Inactive**||
+|`0` (**Active**)|`526430001`|**Pending**|2, 526430002,526430003,526430004,|
+|`0` (**Active**)|`526430002`|**In Progress**|2,526430003,526430004,|
+|`1` (**Inactive**)|`526430003`|**Completed**||
+|`1` (**Inactive**)|`526430004`|**Failed**||
+
+
+### [PAC CLI](#tab/cli)
+
+Use the [pac catalog status](../cli/reference/catalog.md#pac-catalog-status) command to check the status of catalog installations.
+
+```powershell
+pac catalog status --tracking-id 0e6b119d-80f3-ed11-8849-000d3a0a2d9d --type Install
+Connected to... TestCatalog
+Connected as user@domain
+Status of the Install request: Requested
+```
+
+[What is Microsoft Power Platform CLI?](../cli/introduction.md)
+
+### [SDK for .NET](#tab/sdk)
+
+TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
+
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
+
+### [Web API](#tab/webapi)
+
+TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
+
+// Poll for status of certification request
+GET /mspcat_installhistories(id)?$select=statuscode
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+
+---
+
+
