@@ -67,10 +67,11 @@ Deleted records might not appear when the recycle bin feature is turned on. Veri
 
 If the **Status Reason** isn't **Succeeded**, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
-### Records deleted via table relationship cascade behavior not present in Deleted Records view.
+### Records deleted through cascading behaviors aren't present in Deleted Records view
 
-Records that were deleted via table relationship cascade behavior cannot be restored independently. To restore these records, parent deleted record should be restored.
-For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
+Records that were deleted through automated, cascading behaviors can't be restored independently. These records need to be restored in the order in which they were deleted. The original record that was deleted must be restored before any related records that were deleted through automated cascading behaviors. 
+
+For more information about cascading behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
 ### See also
 
