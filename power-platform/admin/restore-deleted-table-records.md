@@ -4,7 +4,7 @@ description: "Learn how to use the Power Platform admin center to view restore d
 author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/11/2024
+ms.date: 06/28/2024
 ms.subservice: admin
 ms.author: adkuppa
 search.audienceType: 
@@ -61,9 +61,11 @@ Some organizations add custom business logic that deletes records related to a r
 
 Records deleted via the table relationship cascade behavior process can be restored. For more information about cascade behavior, go to [Configure table relationship cascading behavior](/power-apps/developer/data-platform/configure-entity-relationship-cascading-behavior).
 
-### Deleted Records are not shown after enabling the recycle bin
+### Deleted records aren't shown after turning on the recycle bin
 
-The Deleted Records might not appear even when the recycle bin feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, **Settings** > **Audit and logs** > **System jobs**, and search for **Enable RecycleBin** and confirm the **Status Reason** is **Succeeded**. If the status reason isn't **Succeeded** or despite the success state appearing correct you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
+Deleted records might not appear when the recycle bin feature is turned on. Verify that the **Enable RecycleBin for Organization** system job is turned on. Go to the Power Platform admin center, select the environment where this issue is happening, and select **Settings** > **Audit and logs** > **System jobs**. On the **System Jobs** page, search for **Enable RecycleBin**. Confirm that the **Status Reason** is **Succeeded**. 
+
+If the **Status Reason** isn't **Succeeded**, or despite the success state appearing correct, and you're not seeing the **Restore** option for deleted records, contact a [Microsoft support representative and create a support request](get-help-support.md).
 
 ### Records deleted via table relationship cascade behavior not present in Deleted Records view.
 
