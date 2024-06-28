@@ -15,6 +15,8 @@ contributors:
 
 # Catalog for Power Platform Events reference (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 The following messages represent events that occur within catalog for Power Platform. Subscribe to these [business events](/power-apps/developer/data-platform/business-events) to enable automation based on the events that occur within the catalog for Power Platform.
 
 ## mspcat_OnCatalogApprovalRequested

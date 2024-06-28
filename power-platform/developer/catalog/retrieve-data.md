@@ -14,6 +14,8 @@ contributors:
 ---
 # Retrieve data about the catalog in Power Platform (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 To retrieve data about the catalogs for your tenant you need to determine which environment(s) the catalog is installed on. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
 
 ## Find environments with catalogs in your tenant
@@ -54,6 +56,7 @@ Some of the most important tables you may use are in the following table:
 
 TODO Add Diagram?
 TODO: There are 25 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
+TODO This whole section could be moved to the about-entity-reference article.
 
 
 
@@ -67,7 +70,7 @@ There are two Dataverse messages you can use to get information about the catalo
 
 ### mspcat_GetPowerCatalogInformation
 
-This function returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
+`mspcat_GetPowerCatalogInformation` returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
 
 
 |Name|Type|Description|
@@ -122,7 +125,7 @@ ImageLink:
 CanSubmit: True
 ```
 
-[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
+[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)   
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 #### [Web API](#tab/webapi)
@@ -164,19 +167,18 @@ function GetPowerCatalogInformationExample {
 
 ### mspcat_GetPowerCatalogDetails
 
-This information is used to populate the submission document and set the labels for what a Catalog Item and a Publisher should be called for this catalog.
+Use the information returned by `mspcat_GetPowerCatalogDetails` to populate the submission document and set the labels for what a catalog item and a publisher should be called for this catalog.
 
 This function returns an object with a single `CatalogDetails` string property that contains an encoded string. When decoded, the string contains the following properties:
 
 |Name|Type|Description|
 |---------|---------|---------|
-|`catalogId`|string|TODO: provide description|
-|`isSuccess`|string|TODO: provide description|
-|`sourceOptions`|option array|TODO: provide description|
-|`categoryOptions`|option array|TODO: provide description|
-|`publisherLocalizedDisplayName`|string|TODO: provide description|
-|`catalogItemLocalizedDisplayName`|string|TODO: provide description|
-
+|`catalogId`|string|TODO: provide description The unique ID of the catalog?|
+|`isSuccess`|string|TODO: provide description What is success?|
+|`sourceOptions`|option array|The options from the `mspcat_certificationrequest_requestsource` global choice.|
+|`categoryOptions`|option array|The options from the `mspcat_catalogbusinesscategory` global choice.|
+|`publisherLocalizedDisplayName`|string|The localized name of the catalog publisher.|
+|`catalogItemLocalizedDisplayName`|string|The localized name used to refer to catalog items.|
 
 
 #### [SDK for .NET](#tab/sdk)
@@ -358,13 +360,26 @@ Contoso Conference Custom Connector Catalog Conferences Team  ContosoConferences
 Contoso Themed Components           ContosoPublisher          ContosoThemedComponents              efbc469d-f1b2-ed11-83fd-000d3a0a2d9d 1.0.0.1 Published
 ```
 
+
+You can also use these parameters to filter returned records:
+
+|parameter|alias|description
+|---------|---------|---------|
+|`catalog-item-id`|`cid`|Catalog item ID to search for. When catalog item ID is used, catalog item name is ignored.|
+|`catalog-item-name`|`n`|Catalog item name to search for.|
+|`include-active`|`ia`|Include active items.|
+
+Use the `json` parameter to return JSON data.
+
+Use the `environment` (`env`) parameter to query a catalog in a different environment.
+
 ### Query Dataverse tables
 
 Information about catalog items is in the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) table, so you can retrieve data from it as you would any Dataverse table.
 
 #### [SDK for .NET](#tab/sdk)
 
-The static `RetrieveCatalogItems` method retrieves and prints a table of data from the `mspcat_applications` and `mspcat_packages` tables about items in the catalog. This function depends on the [ConsoleTables NuGet package](https://www.nuget.org/packages/ConsoleTables) to render the table in a console application.
+The static `RetrieveCatalogItems` method retrieves and prints a table of data from the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) and [Package (mspcat_packages)](tables/mspcat_packages.md) tables about items in the catalog. This function depends on the [ConsoleTables NuGet package](https://www.nuget.org/packages/ConsoleTables) to render the table in a console application.
 
 ```csharp
 /// <summary>
@@ -462,7 +477,7 @@ The output of this example might look something like this:
 
 #### [Web API](#tab/webapi)
 
-The static `RetrieveCatalogItems` method retrieves and prints a table of data from the `mspcat_applications` and `mspcat_packages` tables about items in the catalog. This function depends on the `Get-Records` function introduced in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
+The static `RetrieveCatalogItems` method retrieves and prints a table of data from the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) and [Package (mspcat_packages)](tables/mspcat_packages.md) tables about items in the catalog. This function depends on the `Get-Records` function introduced in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ```powershell
 function Get-CatalogItems{

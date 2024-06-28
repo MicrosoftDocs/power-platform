@@ -14,6 +14,8 @@ contributors:
 ---
 # Submit and approve catalog items (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 People must submit their catalog items for approval and an administrator must approve them before others can use them.
 
 To submit an item to the catalog, you need:
@@ -321,9 +323,8 @@ function ResolveApproval {
 
 ## Next steps
 
-Review the [Catalog item submission document reference](submission-reference.md)
+> [!div class="nextstepaction"]
+> [Review the catalog item submission document reference](submission-reference.md)
 
 > [!div class="nextstepaction"]
 > [Compose submission document](submission-reference.md)
-
-

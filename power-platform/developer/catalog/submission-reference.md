@@ -14,6 +14,8 @@ contributors:
 ---
 # Catalog item submission document reference (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 You must include data in JSON format when you submit an item to the catalog. This article describes the valid properties for that document.
 
 This table describes the properties for the submission document:
@@ -213,7 +215,7 @@ Set the [OfferDetails](#offerdetails) `businessCategories` property to one or mo
 |`526430017`|Geolocation|
 |`526430018`|Human Resources|
 
-Currently, new business categories can't be configured, but they can be retrieved from the Catalog Business Category (mspcat_catalogbusinesscategory) global choice.
+Currently, new business categories can't be configured, but they can be retrieved from the Catalog Business Category (`mspcat_catalogbusinesscategory`) global choice.
 
 ### CatalogFileAsset
 

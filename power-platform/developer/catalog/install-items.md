@@ -14,6 +14,8 @@ contributors:
 ---
 # Install items from the catalog in Power Platform using code (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
 Catalog items are stored in the [Catalog Item (mspcat_applications) table](tables/mspcat_applications.md). This table has a [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) that stores a unique string value you can use to refer to a catalog item.
 
 ### [PAC CLI](#tab/cli)
