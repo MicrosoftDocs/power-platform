@@ -20,21 +20,18 @@ People must submit their catalog items for approval and an administrator must ap
 
 To submit an item to the catalog, you need:
 
-- A solution or package deployer package containing the item you want to submit
+- A solution or package deployer package containing the item you want to submit.
 - A submission metadata JSON document.
 
   Use the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command to get an example submission metadata JSON document. You must edit this document and more submission attributes can be added. More information: [Submission attributes](#submission-attributes)
 
 ## Submission attributes
 
-Before you can submit items to a catalog, you must prepare a JSON document that describes the items you want to submit. More information: [Submit items to the catalog](#submit-items-to-the-catalog)
+Before you can [submit items to a catalog](#submit-items-to-the-catalog), you must prepare a JSON document that describes the items you want to submit.
 
 To help you, the [pac catalog create-submission](../cli/reference/catalog.md#pac-catalog-create-submission) command generates a sample `submission.json` file.
 
-> [!NOTE]
-> More attributes are supported in the submission file and those are covered in the subsequent section.
-
-You need to edit this file to submit an item. Here's an example submission created from the JSON above.
+You need to edit this file to submit an item. Here's an example:
 
 ```json
 {
@@ -70,15 +67,25 @@ You need to edit this file to submit an item. Here's an example submission creat
 }
 ```
 
+[Learn about the valid properties for the submission file](submission-reference.md)
+
 ## Submit items to the catalog
+
+Items submitted to the catalog need to be included within a package deployer package. A package deployer package contains a solution zip file and some optional instructions to apply when deploying the package. If you don't have a package deployer package, you can create one for the solution that contains your items.
 
 
 ### [PAC CLI](#tab/cli)
 
 After your submission metadata JSON document is ready, use the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command to submit it.
 
-TODO: Explain when and why someone would include a reference to the solution zip file.
-hypothesis: If they include a reference to the solution zip file, they don't need to provide a package because the PAC CLI will generate one for them using the mspcat_PackageStore table.
+Use the required `--path` parameter to refer to the catalog submission JSON document.
+
+If you already have a package deployer package:
+
+- Use the `--package-zip` parameter to refer to the package deployer package.
+- Otherwise, use the `--solution-zip` parameter to refer to this solution. The `submit` command will create the package behind the scenes.
+
+If you want to combine polling the status of your submission request, use the --poll-status parameter. Otherwise, use the [pac catalog status](../cli/reference/catalog.md#pac-catalog-status) command as described in [Check status of catalog submissions](#check-status-of-catalog-submissions).
 
 ```powershell
 pac catalog submit -p "BuildDemoSubmission.json" -sz "ContosoConference_1_0_0_1_managed.zip"
@@ -92,8 +99,7 @@ Tracking id for this submission is 0e6b119d-80f3-ed11-8849-000d3a0a2d9d
 
 ### [SDK for .NET](#tab/sdk)
 
-TODO: Why doesn't the `mspcat_SubmitCatalogApprovalRequest` include parameters that correspond to the solution zip file?
-Answer: Because it expects that the file referenced by a SAS URL?
+The `mspcat_SubmitCatalogApprovalRequest` message requires that the submission JSON file [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property is set to a specify a URL to download a package deployer package file.
 
 
 ```csharp
@@ -128,7 +134,9 @@ static mspcat_SubmitCatalogApprovalRequestResponse SubmitCatalogApprovalRequest(
 ### [Web API](#tab/webapi)
 
 The following `SubmitCatalogApprovalRequest` PowerShell function demonstrates how to use the `mspcat_SubmitCatalogApprovalRequest` message.
-The results returned are an instance of the `mspcat_SubmitCatalogApprovalRequestResponse` complex type, which contains
+The results returned are an instance of the `mspcat_SubmitCatalogApprovalRequestResponse` complex type, which contains `CertificationRequestId` and `AsyncOperationId` properties you can use the check the status of the submission.
+
+This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 ```powershell
 function SubmitCatalogApprovalRequest {
@@ -155,15 +163,54 @@ function SubmitCatalogApprovalRequest {
       -Headers $postHeaders `
       -Body $body
 
-   return   $results
+   return   @{
+      CertificationRequestId = $results.CertificationRequestId
+      AsyncOperationId = $results.AsyncOperationId
+   }
 
 }
 ```
 
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
 
 ---
+
+## Create package deployer package from an unmanaged solution
+
+When you use the `mspcat_SubmitCatalogApprovalRequest` message with the SDK for .NET or Web API as described in [Submit items to the catalog](#submit-items-to-the-catalog), the submission JSON file must include a [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property is set to a specify a URL in the `filesaslink` to download a package deployer package file. This is not needed by the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command because it takes care of this for you in a manager similar to what is described here.
+
+This URL can represent anywhere that Dataverse can download a file without any credentials, but we don't recommend you place the files on public download location. Instead, you can use the [Package Submission Store (mspcat_PackageStore) table](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) to generate a package deployer package using an unmanaged solution from any environment in your tenant. This process will generate a record in this table that contains a package in the [PackageFile (mspcat_PackageFile) file column](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore#BKMK_mspcat_PackageFile). You can then use the `GetFileSasUrl` message to get a shared access signature (SAS) URL to enable anonymous downloading of the file within 1 hour. Because the URL is only valid within an hour, this process should be automated so that access to download the file doesn't expire.
+
+> [!NOTE]
+> This example uses the [mspcat_PackageStore.mspcat_packagefile column](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore#BKMK_mspcat_PackageFile), but the `GetFileSasUrl` message can provide a SAS URL for any file or image column in Dataverse. [Learn more about granting limited access to Dataverse files using shared access signatures](/power-apps/developer/data-platform/getfilesasurl)
+
+The process works like this:
+
+1. Create a `mspcat_PackageStore` record with these values
+   
+   |Column|Value|
+   |---------|---------|
+   |`mspcat_name`|The name of the unmanaged solution|
+   |`mspcat_solutionuniquename`|The unique name of the unmanaged solution|
+   |`mspcat_intendeddeploymenttype`|`526430000` for **Standard** deployment|
+   |`mspcat_operation`|`958090001` for **Create Package**|
+   
+1. Update the `statuscode` value from `958090003` for **Draft** to `958090004` for **Submitted**.
+
+   This starts the process.
+
+1. Wait for `statuscode` to change to `958090001` for **Completed**.
+1. Use `GetFileSasUrl` to get a URL for the [mspcat_PackageStore.mspcat_packagefile column](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore#BKMK_mspcat_PackageFile). This returns a [GetFileSasUrlResponse](/power-apps/developer/data-platform/getfilesasurl#response) object.
+1. Create a [CatalogFileAsset](submission-reference.md#catalogfileasset) JSON object setting these properties:
+
+   |Property|Value|
+   |---------|---------|
+   |`name`|GetFileSasUrlResponse.FileName|
+   |`filesaslink`|GetFileSasUrlResponse.SasUrl|
+
+1. Set this to the [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property of the JSON submission file.
+1. Use the `mspcat_SubmitCatalogApprovalRequest` to send the submission as described in [Submit items to the catalog](#submit-items-to-the-catalog)
 
 ## Check status of catalog submissions
 
@@ -200,9 +247,13 @@ Status of the Submit request: Submitted
 
 ### [SDK for .NET](#tab/sdk)
 
+TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
+
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
+
+TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
 
 // Poll for status of certification request
 GET /mspcat_certificationrequests(id)?$select=statuscode
@@ -223,7 +274,7 @@ There is no PAC CLI command to perform this operation.
 
 ### [SDK for .NET](#tab/sdk)
 
-This static `ResolveApproval` method demonstrates how to resolve request for a catalog submission.
+This static `ResolveApproval` method demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` message.
 
 ```csharp
 /// <summary>
@@ -256,7 +307,9 @@ static void ResolveApproval(
 ### [Web API](#tab/webapi)
 
 
-This `ResolveApproval` Powershell function approves a catalog submission. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
+This `ResolveApproval` Powershell function demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` message.
+
+This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 
 ```powershell
@@ -277,7 +330,7 @@ This `ResolveApproval` Powershell function approves a catalog submission. This f
    This is a mandatory string parameter that contains a message about the request.
 
 .EXAMPLE
-   ResolveApproval -certificationRequestId "GUID" -requestsuccess $true -message "Request processed successfully."
+   ResolveApproval -certificationRequestId "<Guid>" -requestsuccess $true -message "Request processed successfully."
 
 .NOTES
    The function does not return any value. Any output from the Invoke-RestMethod cmdlet is sent to Out-Null.

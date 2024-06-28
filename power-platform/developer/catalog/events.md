@@ -32,7 +32,7 @@ Event raised when a catalog approval request is received.
 
 ## mspcat_OnCatalogApprovalUpdated
 
-Catalog Approval Updated Event raised when a catalog approval request is completed.
+Event raised when a catalog approval request is completed.
 
 ###  mspcat_OnCatalogApprovalUpdated parameters
 
@@ -45,7 +45,7 @@ Catalog Approval Updated Event raised when a catalog approval request is complet
 
 ## mspcat_OnCatalogInstallRequested
 
-Catalog Install Requested Event, raised when a Catalog Item is being installed.
+Event raised when a Catalog Item is being installed.
 
 ### mspcat_OnCatalogInstallRequested parameters
 
@@ -56,7 +56,7 @@ Catalog Install Requested Event, raised when a Catalog Item is being installed.
 
 ## mspcat_OnCatalogInstallUpdated
 
-Catalog Install Updated Event, Raised on each status event received by the system.
+Event raised on each status event received by the system.
 
 ### mspcat_OnCatalogInstallUpdated parameters
 

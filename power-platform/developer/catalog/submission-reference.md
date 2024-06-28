@@ -16,7 +16,45 @@ contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-You must include data in JSON format when you submit an item to the catalog. This article describes the valid properties for that document.
+You must include data in JSON format when you submit an item to the catalog. This article describes the valid properties for that document. This is an example:
+
+```json
+{
+  "modelVersion": "1.0.0.0",
+  "operation": "CreateOrUpdate",
+  "sourcePortal": 526430005,
+  "businessJustification": "Power Platform custom connector for Conference API",
+  "publisherDetails": {
+    "publisherId": "ContosoConferencesTeam",
+    "publisherDisplayName": "Catalog Conferences Team"
+  },
+  "catalogItemDefinition": {
+    "id": "ContosoConferencesCustomConnector",
+    "displayName": "Contoso Conference Custom Connector",
+    "description": "Demo Custom connector to query Conference Speakers & Sessions",
+    "offer": {
+      "type": "Component_Collection",
+      "deploymentType": "Normal",
+      "engineeringName": {
+        "firstName": "Jennifer",
+        "lastName": "Wilkins",
+        "email": "jwilkins@contoso.com",
+        "phoneNumber": "555-111-1234"
+      },
+      "supportName": {
+        "firstName": "Aidan",
+        "lastName": "Hunt",
+        "email": "ahunt@contoso.com",
+        "phoneNumber": "555-111-1234"
+      }
+    },
+      "packageFile": {
+         "name": "packageFileName.zip",
+         "filesaslink": "https://Contoso.blob.core.windows.net/ContosoConferencesCustomConnector/packageFileName.zip"
+      }
+  }
+}
+```
 
 This table describes the properties for the submission document:
 
@@ -219,7 +257,7 @@ Currently, new business categories can't be configured, but they can be retrieve
 
 ### CatalogFileAsset
 
-These properties define a file referenced in the catalog item [OfferDetails](#offerdetails) `small48x48Image`, `large216x216Image`, `useCaseDocument`, `videos`, `documents`, and `screenshots` properties.
+These properties define a file referenced in the [CatalogItemDefinition](#catalogitemdefinition) `packageFile` and the [OfferDetails](#offerdetails) `small48x48Image`, `large216x216Image`, `useCaseDocument`, `videos`, `documents`, and `screenshots` properties.
 
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
