@@ -72,7 +72,7 @@ There are two Dataverse messages you can use to get information about the catalo
 
 ### mspcat_GetPowerCatalogInformation
 
-`mspcat_GetPowerCatalogInformation` returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
+The `mspcat_GetPowerCatalogInformation` message a single `permissionsonly` boolean parameter and returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
 
 
 |Name|Type|Description|
@@ -171,7 +171,7 @@ function GetPowerCatalogInformationExample {
 
 Use the information returned by `mspcat_GetPowerCatalogDetails` to populate the submission document and set the labels for what a catalog item and a publisher should be called for this catalog.
 
-This function returns an object with a single `CatalogDetails` string property that contains an encoded string. When decoded, the string contains the following properties:
+This function returns an object with a single `CatalogDetails` string property that contains an encoded string. When decoded, the string contains JSON data with the following properties:
 
 |Name|Type|Description|
 |---------|---------|---------|
@@ -367,13 +367,13 @@ You can also use these parameters to filter returned records:
 
 |parameter|alias|description
 |---------|---------|---------|
-|`catalog-item-id`|`cid`|Catalog item ID to search for. When catalog item ID is used, catalog item name is ignored.|
-|`catalog-item-name`|`n`|Catalog item name to search for.|
-|`include-active`|`ia`|Include active items.|
+|`--catalog-item-id`|`-cid`|Catalog item ID to search for. When catalog item ID is used, any `--catalog-item-name` parameter values is ignored.|
+|`--catalog-item-name`|`-n`|Catalog item name to search for.|
+|`--include-active`|`-ia`|Include active items.|
 
-Use the `json` parameter to return JSON data.
+Use the `--json` parameter to return JSON data.
 
-Use the `environment` (`env`) parameter to query a catalog in a different environment.
+Use the `--environment` (`-env`) parameter to query a catalog in a different environment.
 
 ### Query Dataverse tables
 
@@ -381,7 +381,7 @@ Information about catalog items is in the [Catalog Item (mspcat_applications)](t
 
 #### [SDK for .NET](#tab/sdk)
 
-The static `RetrieveCatalogItems` method retrieves and prints a table of data from the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) and [Package (mspcat_packages)](tables/mspcat_packages.md) tables about items in the catalog. This function depends on the [ConsoleTables NuGet package](https://www.nuget.org/packages/ConsoleTables) to render the table in a console application.
+The following static `RetrieveCatalogItems` method retrieves and prints a table of data from the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) and [Package (mspcat_packages)](tables/mspcat_packages.md) tables about items in the catalog. This function depends on the [ConsoleTables NuGet package](https://www.nuget.org/packages/ConsoleTables) to render the table in a console application.
 
 ```csharp
 /// <summary>
@@ -405,16 +405,21 @@ static void RetrieveCatalogItems(IOrganizationService service)
         Criteria = new FilterExpression(LogicalOperator.And)
         {
             Conditions = {
-                 { new ConditionExpression("statecode", ConditionOperator.Equal, 0) }
+                {
+                    new ConditionExpression(
+                        attributeName: "statecode",
+                        conditionOperator: ConditionOperator.Equal,
+                        value: 0)
+                }
             }
         }
     };
 
     LinkEntity linkToPackages = query.AddLink(
-        "mspcat_packages",
-        "mspcat_packageasset",
-        "mspcat_packagesid",
-        JoinOperator.Inner);
+       linkToEntityName: "mspcat_packages",
+       linkFromAttributeName: "mspcat_packageasset",
+       linkToAttributeName: "mspcat_packagesid",
+       joinOperator: JoinOperator.Inner);
 
     linkToPackages.Columns = new ColumnSet(
         "statecode",
@@ -436,7 +441,6 @@ static void RetrieveCatalogItems(IOrganizationService service)
 
     foreach (Entity catalog in catalogs.Entities)
     {
-
         string catalogItemName = catalog.GetAttributeValue<string>("mspcat_name");
         string publisherName = catalog.FormattedValues["mspcat_publisherid"];
         string catalogItemId = catalog.GetAttributeValue<string>("mspcat_tpsid");
@@ -454,9 +458,7 @@ static void RetrieveCatalogItems(IOrganizationService service)
         };
 
         table.Rows.Add(rowData);
-
     }
-
     table.Write();
 }
 ```
