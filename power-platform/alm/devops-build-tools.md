@@ -92,6 +92,8 @@ To interact with the Microsoft Power Platform environment, you must establish a 
 |Service principal and client secret (recommended)|Uses service principal based authentication and supports multi-factor authentication|
 |Username/password|A generic service connection with username and password. Doesn't support multi-factor authentication.|
 
+In order to perform environment level actions the Service Principal would need to be added as an admin application. Follow the steps [Creating a service principal application using API](https://learn.microsoft.com/en-us/power-platform/admin/powerplatform-api-create-service-principal).
+
 ## Configure service connections using a service principal
 
 To configure a connection using service principal, you must first have a Power Platform profile authenticated with the required permissions. You must add a Microsoft Entra ID application and associated application user to the Dataverse environment.
