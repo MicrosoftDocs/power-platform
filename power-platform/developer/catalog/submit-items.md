@@ -225,17 +225,17 @@ There is no PAC CLI equivilent for this
 
 ### [SDK for .NET](#tab/sdk)
 
-TODO: A static method that accepts these parameters:
- - The name of an unmanaged solution
- - The Unique Name of an unmanaged solution
-The return value is a completed catalog item ready to install
+> TODO: A static method that accepts these parameters:
+>  - The name of an unmanaged solution
+> - The Unique Name of an unmanaged solution
+> The return value is a completed catalog item ready to install
 
 ### [Web API](#tab/webapi)
 
-TODO: A PowerShell function that accepts these parameters:
- - The name of an unmanaged solution
- - The Unique Name of an unmanaged solution
-The return value is a completed catalog item ready to install
+> TODO: A PowerShell function that accepts these parameters:
+>  - The name of an unmanaged solution
+>  - The Unique Name of an unmanaged solution
+> The return value is a completed catalog item ready to install
 
 ---
 
@@ -274,13 +274,13 @@ Status of the Submit request: Submitted
 
 ### [SDK for .NET](#tab/sdk)
 
-TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
+> TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
-TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
+> TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
 
 // Poll for status of certification request
 GET /mspcat_certificationrequests(id)?$select=statuscode

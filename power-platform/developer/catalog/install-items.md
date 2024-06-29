@@ -134,12 +134,12 @@ There are two actions you can use to install catalog items: `mspcat_InstallCatal
 
 ### mspcat_InstallCatalogItem
 
-TODO: Web API example
+> TODO: Web API example
 
 
 ### mspcat_InstallCatalogItemByCID
 
-TODO: Web API example
+> TODO: Web API example
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -174,13 +174,13 @@ Status of the Install request: Requested
 
 ### [SDK for .NET](#tab/sdk)
 
-TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
+> TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
-TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
+> TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
 
 // Poll for status of certification request
 GET /mspcat_installhistories(id)?$select=statuscode

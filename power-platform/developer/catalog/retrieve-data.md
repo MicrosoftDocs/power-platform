@@ -16,7 +16,9 @@ contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-To retrieve data about the catalogs for your tenant you need to determine which environment(s) the catalog is installed on. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
+To retrieve data about the catalogs for your tenant you need to determine which environment(s) have catalogs installed. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
+
+Most tenants will only install one catalog, but it is possible to install a catalog on multiple environments in the tenant.
 
 ## Find environments with catalogs in your tenant
 
@@ -52,11 +54,11 @@ Some of the most important tables you may use are in the following table:
 |[Package (mspcat_packages)](tables/mspcat_packages.md)|Deployment Assets for a Catalog Item.|
 |[Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md)|Contains record of installations and their status|
 |[Install Activity (mspcat_InstallActivity)](tables/mspcat_installactivity.md)|Install History Activity Id's|
-|TODO|Add more??|
+|**TODO**|Add more??|
 
-TODO Add Diagram?
-TODO: There are 25 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
-TODO This whole section could be moved to the about-entity-reference article.
+> TODO Add Diagram?
+> TODO: There are 25 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
+> TODO This whole section could be moved to the about-entity-reference article.
 
 
 
@@ -173,8 +175,8 @@ This function returns an object with a single `CatalogDetails` string property t
 
 |Name|Type|Description|
 |---------|---------|---------|
-|`catalogId`|string|TODO: provide description The unique ID of the catalog?|
-|`isSuccess`|string|TODO: provide description What is success?|
+|`catalogId`|string|**TODO**: provide description The unique ID of the catalog?|
+|`isSuccess`|string|**TODO**: provide description What is success?|
 |`sourceOptions`|option array|The options from the `mspcat_certificationrequest_requestsource` global choice.|
 |`categoryOptions`|option array|The options from the `mspcat_catalogbusinesscategory` global choice.|
 |`publisherLocalizedDisplayName`|string|The localized name of the catalog publisher.|
