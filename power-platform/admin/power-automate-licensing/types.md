@@ -26,11 +26,11 @@ The Power Automate licenses are categorized as follows:
 
 |License type<br>__________________|License scope<br>__________________________________________________________|Description<br>_______________________________________________________________|
 |-------|------|------|
-|User license| User-centric: it's assigned to a user.|It entitles the user to access [specific capabilities](#license-entitlements).|
-|Capacity license| Object-centric: it's allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group).|It provides the object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object).|
+|User license| User-centric: a user license is assigned to a user.|It entitles the user to access [specific capabilities](#license-entitlements).|
+|Capacity license| Object-centric: a capacity license is allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group).|It provides the object specific autonomous entitlements (regardless of the user licenses owned by makers interacting with the object).|
 
 
-You can purchase the licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page. 
+You can purchase those licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (only if you are a Power Platform admin). [Learn more](buy-licenses.md)
 
 > [!NOTE]
 > 
@@ -46,8 +46,8 @@ Here-after the list of available Power Automate user licenses:
 
 |License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________________|
 -------|------|------|
-Power Automate Premium|User license|This license allows users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through Robotic process automation (RPA)). More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to process mining functionalities and provisioning of AI Builder credits, which support AI consuming scenarios like forms processing, object detection, prediction, text classification, and recognition.|
-[Power Automate Free](#power-automate-free-license)|User license (free)|This license provides basic access to Power Automate allowing users to create and run unlimited cloud flows (within [PPR limits](#power-platform-requests)) restricted to standard connectors only. This license also restricts users to share their flows.|
+Power Automate Premium|User license|This license allows users to create, run and shared unlimited cloud flows (within [PPR limits](#power-platform-requests)) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications mimicking mouse movement of a human user (with desktop flows through Robotic process automation (RPA)). More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine. <br><br>Additionally, this license also includes full access to process mining functionalities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, etc.|
+[Power Automate Free](#power-automate-free-license)|User license (free)|This license provides basic access to Power Automate allowing users to create and run (but not share) unlimited cloud flows (within [PPR limits](#power-platform-requests)) restricted to standard connectors only.|
 [Power Automate Trial](#power-automate-trial-license)|User license <br>(90 days trial)|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities) and with the extra capability to execute their desktop flows in unattended mode on their registered machine (without unattended bot requirement).|
 Power Automate Per-user plan|User license (legacy)|The Power Automate Premium license has replaced this license (it provides more entitlements for the same price). It's no longer available for purchase from the pricing page but organizations can still purchase it via deal desk.|
 P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer available for purchase nor via autorenewal after December 31, 2020.|
@@ -66,8 +66,8 @@ In addition to user licenses, organizations can upgrade their automation scenari
 |License name<br>__________________________|License type<br>_______________|Allocated object<br>___________________________|Entitlements<br>___________________________________________________________________|
 ------|------|------|------
 [Power Automate Process](#power-automate-process-license)|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.
-Power Automate Hosted Process|Capacity|- Hosted machine <br>- Hosted machine group<sup>1</sup><br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process it can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an alternative scenario the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling RPA with zero infrastructure.
-Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from pricing page but customers can still purchase it via deal desk.
+Power Automate Hosted Process|Capacity|- Hosted machine <br>- Hosted machine group<sup>1</sup><br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process. It can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an extra scenario: the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling RPA with zero infrastructure.
+Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from the pricing page but customers can still purchase it via deal desk.
 
 _1. The Hosted Process license is not statically allocated to a hosted machine group : it is dynamically allocated and deallocated (load balancing) from a hosted machine group depending on workload to support each of its active hosted machines_ <br>
 
@@ -122,7 +122,7 @@ In the Power Automate portal, click on __Settings__ and on __View my licenses__:
 
 > [!NOTE]
 > - The user license(s) are displayed in the section _My licenses_
-> - The capacity license(s) (and add-ons) are displayed in the section _Environment capacities_
+> - The capacity license(s) (and capacity add-ons) are displayed in the section _Environment capacities_
 > - The user entitlement are displayed in the _Capabilities_ section with a green check mark
 
 ### Entitlements to usage of connector types in cloud flows
@@ -228,12 +228,23 @@ Here are a few things to be aware of during the transition period:
 
 A Power Automate Process license can be allocated to a machine or to a cloud flow.
 
-|Scenario<br>_________________________________________|Description<br>____________________________________________________________________________________________|
+|Process license scenarios<br>______________________________________________|Description<br>____________________________________________________________________________________________|
 |----------|-------|
-|__Assign Process licenses to an environment__||
-|__Allocate Process licenses to a cloud flow__|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily Power Platform Request (stackable limit). <br><br>A cloud flow that has been allocated a Process license becomes a 'process flow' and a process-flow can be associated to other cloud flows (excluding other process-flows). A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its runs are considered 'in-context' or the Process license and its PPR consumption is counted against the Process license entitlement. A process-flow can be associated to a maximum of 25 cloud flows. <br><br>Discover [how to allocate a Process license to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).|
-|__Allocate Process licenses to a machine__|Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. <br><br>Discover [how to allocate a Process license to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-machine).|
-|__Manage the Process licenses within an environment__|You can visualize and manage all Process licenses allocated to cloud flows and machines within an environment using the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page.|
+|__Environment assignment__|To be used by a cloud flow or a machine, a Process capacity license first needs to be assigned to the environment where the cloud flow or the machine is located. Learn [how to allocate a Process capacity license to an environment](/power-platform/admin/capacity-add-on.md#allocate-or-change-capacity-in-an-environment).|
+|__Cloud flow allocation__|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily Power Platform Request (stackable limit). <br><br>A cloud flow that has been allocated a Process license becomes a 'process flow' and a process-flow can be associated to other cloud flows (excluding other process-flows). A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its runs are considered 'in-context' or the Process license and its PPR consumption is counted against the Process license PPR entitlement. A process-flow can be associated to a maximum of 25 cloud flows. <br><br>Discover [how to allocate a Process license to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).|
+|__Machine allocation__|Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. <br><br>Discover [how to allocate a Process license to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-machine).|
+|__Utilization management__|You can visualize and manage all Process licenses allocated to cloud flows and machines within an environment using the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page.|
+
+### Power Automate Hosted Process license
+
+A Power Automate Hosted Process is auto-allocated to a hosted machine at its creation and released at its deletion. It is 
+
+|Process license scenarios<br>______________________________________________|Description<br>____________________________________________________________________________________________|
+|----------|-------|
+|__Environment assignment__|To be used by a hosted machine or a hosted, a Process capacity license first needs to be assigned to the environment where the cloud flow or the machine is located. Learn [how to allocate a Process capacity license to an environment](/power-platform/admin/capacity-add-on.md#allocate-or-change-capacity-in-an-environment).|
+|__Cloud flow allocation__|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily Power Platform Request (stackable limit). <br><br>A cloud flow that has been allocated a Process license becomes a 'process flow' and a process-flow can be associated to other cloud flows (excluding other process-flows). A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its runs are considered 'in-context' or the Process license and its PPR consumption is counted against the Process license PPR entitlement. A process-flow can be associated to a maximum of 25 cloud flows. <br><br>Discover [how to allocate a Process license to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).|
+|__Machine allocation__|Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. <br><br>Discover [how to allocate a Process license to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-machine).|
+|__Utilization management__|You can visualize and manage all Process licenses allocated to cloud flows and machines within an environment using the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page.|
 
 ### Power Automate Free license
 
@@ -250,7 +261,7 @@ Select **Assigned licenses** to see which users have Free license.
 
 ### Power Automate Trial license
 
-A user can self-provision a Power Automate Trial license from within the Power Automate portal. For example, when a user tries to create a desktop flow without a Power Automate Premium license, the user is prompted to start a Trial that includes usage of premium connectors, attended RPA and unattended RPA. This trial lasts for 90 days.
+A user can self-provision a Power Automate Trial license from within the Power Automate portal. This trial lasts for 90 days. For example, when a Power Automate Free user tries to create a desktop flow, the user is prompted to start a Trial that includes usage of premium connectors, attended RPA and unattended RPA:
 
 ![Start free trial from within Power Automate](../media/power-automate-licensing/free-trial-inline.png)
 
