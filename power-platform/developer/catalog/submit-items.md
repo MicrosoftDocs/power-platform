@@ -191,7 +191,7 @@ This URL can represent anywhere that Dataverse can download a file without any c
 > [!NOTE]
 > This example uses the [mspcat_PackageStore.mspcat_packagefile column](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore#BKMK_mspcat_PackageFile), but the `GetFileSasUrl` message can provide a SAS URL for any file or image column in Dataverse. [Learn more about granting limited access to Dataverse files using shared access signatures](/power-apps/developer/data-platform/getfilesasurl)
 
-The process works like this:
+### Process
 
 1. Create a `mspcat_PackageStore` record with these values
    
@@ -221,14 +221,216 @@ The process works like this:
 
 ### [PAC CLI](#tab/cli)
 
-There is no PAC CLI equivilent for this
+There is no PAC CLI command to do this.
 
 ### [SDK for .NET](#tab/sdk)
 
-> TODO: A static method that accepts these parameters:
->  - The name of an unmanaged solution
-> - The Unique Name of an unmanaged solution
-> The return value is a completed catalog item ready to install
+The static `CatalogItemFromSolution` method below shows how to create a catalog item from a solution following the steps described in [Process](#process). The `catalogItemSubmissionJsonString` parameter for this function should not have a `packageFile` property set because this function will add it.
+
+```csharp
+/// <summary>
+/// Processes a solution and returns the catalog item ID
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance</param>
+/// <param name="solutionName">The name of the solution</param>
+/// <param name="solutionUniqueName">The unique name of the solution</param>
+/// <param name="catalogItemSubmissionJsonString">The string containing the submission json file</param>
+/// <returns></returns>
+/// <exception cref="Exception"></exception>
+static string CatalogItemFromSolution(
+    IOrganizationService service,
+    string solutionName,
+    string solutionUniqueName,
+    string catalogItemSubmissionJsonString
+    )
+{
+    Entity packageStoreRecord = new("mspcat_packagestore")
+    {
+        Attributes = {
+            {"mspcat_name", solutionName},
+            {"mspcat_solutionuniquename", solutionUniqueName},
+            {"mspcat_intendeddeploymenttype", new OptionSetValue(526430000)},
+            {"mspcat_operation", new OptionSetValue(958090001)}
+        }
+    };
+
+    Guid packageStoreRecordId = service.Create(packageStoreRecord);
+    Console.WriteLine($"Created package store record with ID {packageStoreRecordId}");
+
+    packageStoreRecord.Attributes.Clear(); //Don't send values again
+    packageStoreRecord.Id = packageStoreRecordId;
+    int statusCodeValue = 958090004; // Submitted
+    string statusReason;
+    packageStoreRecord["statuscode"] = new OptionSetValue(statusCodeValue);
+    service.Update(packageStoreRecord); //Set status to Submitted
+    Console.WriteLine("Updated package store record status to Submitted");
+    // Columns to retrieve while polling the package store record
+    ColumnSet packageStoreColumns = new("statuscode");
+
+    do
+    {
+        Task.Delay(10000).Wait(); //Wait 10 seconds between polling
+
+        // Retrieve the record
+        packageStoreRecord = service.Retrieve(
+            "mspcat_packagestore",
+            packageStoreRecord.Id,
+            packageStoreColumns);
+
+        // Get the status code value
+        statusCodeValue = packageStoreRecord
+            .GetAttributeValue<OptionSetValue>("statuscode").Value;
+
+        statusReason = packageStoreRecord
+            .FormattedValues["statuscode"];
+
+        Console.WriteLine($" - Package store record status is {statusReason}");
+
+        // Continue while statusCodeValue is Submitted, Pending, or Running
+    } while (statusCodeValue.Equals(958090004) ||
+             statusCodeValue.Equals(1) ||
+             statusCodeValue.Equals(958090000));
+
+    // If it isn't Completed, throw an exception
+    if (!statusCodeValue.Equals(958090001))
+    {
+        statusReason = packageStoreRecord
+            .FormattedValues["statuscode"];
+
+        // 958090002 is 'Failed'
+        throw new Exception($"Package submission {statusReason}");
+    }
+    Console.WriteLine($"Package submission {statusReason}");
+
+    // If successful, retrieve the details about the file to download
+    GetFileSasUrlRequest getFileSasUrlRequest = new()
+    {
+        Target = new EntityReference("mspcat_packagestore", packageStoreRecord.Id),
+        FileAttributeName = "mspcat_packagefile"
+    };
+
+    var getFileSasUrlResponse = (GetFileSasUrlResponse)service
+        .Execute(getFileSasUrlRequest);
+    FileSasUrlResponse getFileSasUrlResponseResult = getFileSasUrlResponse.Result;
+    Console.WriteLine($"Retrieved SAS URL for {getFileSasUrlResponseResult.FileName}");
+
+    // Add the packageFile to the catalog item submission
+    var catalogItemSubmissionJsonObject = JsonNode.Parse(catalogItemSubmissionJsonString).AsObject();
+
+    var packageFile = new JsonObject
+    {
+        ["name"] = getFileSasUrlResponseResult.FileName,
+        ["filesaslink"] = getFileSasUrlResponseResult.SasUrl
+    };
+
+    // Add the packageFile to the catalog item submission
+    catalogItemSubmissionJsonObject["catalogItemDefinition"]["packageFile"] = packageFile;
+
+    catalogItemSubmissionJsonString = catalogItemSubmissionJsonObject.ToJsonString();
+
+    string encodedSubmissionJson = Convert
+        .ToBase64String(Encoding.UTF8.GetBytes(catalogItemSubmissionJsonString));
+
+    var submitCatalogApprovalRequest = new mspcat_SubmitCatalogApprovalRequestRequest
+    {
+        EncodedApprovalRequest = encodedSubmissionJson
+    };
+
+    var submitCatalogApprovalResponse = (mspcat_SubmitCatalogApprovalRequestResponse)service
+        .Execute(submitCatalogApprovalRequest);
+    Console.WriteLine($"Submitted catalog approval request with ID {submitCatalogApprovalResponse.CertificationRequestId}");
+
+    Guid certificationRequestId = submitCatalogApprovalResponse.CertificationRequestId;
+
+    // Approval must be in either InProgress or Submitted to be processed
+
+    // Columns to retrieve while polling the certification request record
+    ColumnSet certificationRequestColumns = new("statuscode", "mspcat_application");
+    Entity certificationRequestRecord;
+
+    do
+    {
+        Task.Delay(10000).Wait(); //Wait 10 seconds between polling
+
+        // Retrieve the record
+        certificationRequestRecord = service.Retrieve(
+           "mspcat_certificationrequest",
+           certificationRequestId,
+           certificationRequestColumns);
+
+        // Get the status code value
+        statusCodeValue = certificationRequestRecord
+            .GetAttributeValue<OptionSetValue>("statuscode").Value;
+
+        statusReason = packageStoreRecord
+            .FormattedValues["statuscode"];
+
+        Console.WriteLine($" - Approval Request status is {statusReason}");
+
+        // Continue while statusCodeValue is:
+    } while (statusCodeValue.Equals(526430002) || // Waiting On Submitter,
+             statusCodeValue.Equals(526430003) || // Pending Deployment,
+             statusCodeValue.Equals(526430008) || // Draft
+             statusCodeValue.Equals(526430009));  // Processing
+
+    // If it isn't Submitted or InProgress, throw an exception
+    if (!(statusCodeValue.Equals(1) || statusCodeValue.Equals(526430001)))
+    {
+        string statusreason = certificationRequestRecord
+            .FormattedValues["statuscode"];
+
+        throw new Exception($"Certification request {statusreason}");
+    }
+
+
+    // Approve the request
+    mspcat_ResolveApprovalRequest resolveApprovalRequest = new()
+    {
+        Target = new EntityReference("mspcat_certificationrequest", certificationRequestId),
+        requestsuccess = true, //Approve the request
+        message = "Approved by CatalogItemFromSolution function"
+    };
+
+    // mspcat_ResolveApprovalResponse has no properties to return
+    service.Execute(resolveApprovalRequest);
+    Console.WriteLine("Approved the certification request");
+
+    // Get the Catalog Item
+    EntityReference catalogItemReference = certificationRequestRecord
+            .GetAttributeValue<EntityReference>("mspcat_application");
+
+    Entity catalogItem = service.Retrieve(
+        "mspcat_applications",
+        catalogItemReference.Id,
+        new ColumnSet("mspcat_tpsid"));
+
+    string tpsid = catalogItem.GetAttributeValue<string>("mspcat_tpsid");
+    Console.WriteLine($"Returning Catalog Item ID: {tpsid}");
+
+    return tpsid;
+}
+```
+
+**Output**
+
+The output of this function should look something like this:
+
+```
+Created package store record with ID 46f662aa-2137-ef11-8409-6045bdd3aec3
+Updated package store record status to Submitted
+ - Package store record status is Submitted
+ - Package store record status is Pending
+ - Package store record status is Running
+ - Package store record status is Running
+ - Package store record status is Completed
+Package submission Completed
+Retrieved SAS URL for <solutionName>_1_0_0_0.zip
+Submitted catalog approval request with ID b932c7c8-2137-ef11-8409-6045bdd3aec3
+ - Approval Request status is Completed
+Approved the certification request
+Returning Catalog Item ID: <solutionUniqueName>
+```
+
 
 ### [Web API](#tab/webapi)
 
