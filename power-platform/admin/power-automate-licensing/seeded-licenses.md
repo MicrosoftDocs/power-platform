@@ -15,7 +15,7 @@ search.audienceType:
 
 # Seeded licenses in Power Automate
 
-Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors) can be obtained via seeded licenses. Seeded licenses are user licenses, they are tied to other Microsoft products and they offer limited capabilities on Power Automate.
+Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors) can be obtained via seeded licenses. Seeded licenses are a particular type of [Power Automate user licenses](types.md#user-licenses), they are tied to other Microsoft products and they offer limited capabilities on Power Automate.
  
 ## Types of seeded licenses
 
