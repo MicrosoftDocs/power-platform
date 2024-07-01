@@ -54,7 +54,7 @@ This canvas component mimics the style and *limited* behavior of the [Fluent UI 
 
 Example `Items` property:
 
-```powerapps-dot
+```power-fx
 Table(
     {
         Icon: "PowerApps", 
@@ -99,7 +99,7 @@ Table(
 
 Set the `Width` property to the following expression. The width values can be adjusted based on the resolution of the app.
 
-```powerapps-dot
+```power-fx
 If( Self.IsExpanded, 200, 46 )
 ```
 
