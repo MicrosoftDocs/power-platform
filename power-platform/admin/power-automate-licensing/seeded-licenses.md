@@ -16,7 +16,9 @@ search.audienceType:
 # Seeded licenses in Power Automate
 
 Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors) can be obtained via seeded licenses. Seeded licenses are a particular type of [Power Automate user licenses](types.md#user-licenses), they are tied to other Microsoft products and they offer limited capabilities on Power Automate.
- 
+
+<br>
+
 ## Types of seeded licenses
 
 Users gain limited rights to use Power Automate if they inherited seeded plans from licenses tied to other Microsoft products:
@@ -33,6 +35,8 @@ Those licenses entitle the user to create and run cloud flows with standard conn
 >   - Directly with the Dynamics 365/App created using Power Apps (via built-in triggers/actions).
 
 If the cloud flow is isolated and has nothing to do with the application, then a standalone Power Automate Premium must be purchased. You can find more details can be found in [Microsoft Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+<br>
 
 ## Compare seeded licenses
 
