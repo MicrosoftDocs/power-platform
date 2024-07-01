@@ -1,4 +1,4 @@
----
+.---
 title: "Type of Power Automate add-ons"
 description: "Add-ons for Power Automate licensing."
 author: msftman
@@ -24,7 +24,7 @@ The Power Automate add-ons are categorized as follows:
 
 |Add-on type<br>_________________________|Description<br>______________________________________________________________________________________________________________________|
 |-------|------|
-|Capacity add-on|A capacity add-on is allocated to a Power Automate object (cloud flow, machine, hosted machine). It provides the object specific autonomous entitlements (the same way a user license provides entitlements to a user).|
+|Capacity add-on|A capacity add-on is allocated to a Power Automate object (cloud flow, machine, etc.). It provides the object specific autonomous entitlements (the same way a user license provides entitlements to a user).|
 |Consumptive add-on|A consumptive add-on provides a monthly quantity of units (AI builder credits, Power Platform requests) which are consumed and destroyed after usage.|
 |Storage add-on|A storage add-on provides data storage space to support scalling of various Power Automate operations.|
 
@@ -36,39 +36,20 @@ A capacity add-on is object-centric: it's allocated to a Power Automate object (
 
 ### Unattended RPA add-on (legacy)
 
+The Unattended RPA add-on provides the unattended RPA entitlement needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). 
+
+When allocated to a machine, an Unattended RPA add-on becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. Unattended bots can be deployed on a local or remote desktop, or in a virtualized environment.
+
+When an unattended run is triggered through an unattended bot, Power Automate securely signs into the user's machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
+
+Unattended RPA scenarios, without human interaction, are applicable for example to scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
+
 > [!IMPORTANT]
-> - The Power Automate Process license has replaced the Unattended RPA add-on (same price with more entitlements)
-> - The already purchased Unattended RPA add-on units are considered legacy and should not be renewed but replaced by Power Automate Process.
-> - Process licenses and Unattended RPA add-ons have been combined in a single capacity pool and can be used interchangeably within Power Automate. They now have exactly the same value and role.
-
->  [Power Automate Hosted Process license](types.md#standalone-capacity-licenses)
-
-Unattended desktop flows run without human interaction. These flows are best for scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
-
-When running unattended, Power Automate securely signs into the device on your behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
-
-The Power Automate unattended RPA add-on extends desktop-based automation by enabling a bot to run autonomously (independent of a user). Unattended bots can be deployed on a local or remote desktop, or in a virtualized environment. The Power Automate per user with attended RPA or Power Automate per flow plans are the eligible standalone offers for the unattended RPA add-on.
-
-> [!NOTE]
-> - The Power Automate unattended RPA add-on is licensed by a bot. Concurrent instances of a singular process require an additional unattended bot for each instance. Multiple unattended RPA add-ons can be applied against a qualifying base license (user license or flow license).
-
-Here are a few important notes of which you should be aware regarding the unattended add-on.
-
-- One unattended RPA add-on license includes the rights to one unattended RPA bot.
-- If you run the unattended RPA bot in a virtual machine, you must purchase the necessary compute resources.
-- You can purchase additional AI Builder capacity; AI Builder service credit capacity is pooled at the tenant level.
-- Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the unattended license in addition to the Power Automate unattended RPA add-on.
-
-##### FAQs about the Unattended RPA add-on
-
-1. I want to run unattended flow. What licenses do I need?
-
-   You need either **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) or Power Automate per flow plans as a base license and Unattended add-on to be able to run the unattended flow.
-
-1. I need multiple instances running unattended. Do I need multiple add-ons?
-
-   Yes, if you need to run them at the same time. If not, the runs are queued and begin when the bot is free.
-   
+> - The [Power Automate Process license](types.md#power-automate-process-license) has replaced the Unattended RPA add-on (same price with more entitlements)
+> - The already purchased Unattended RPA add-on units are considered legacy and should not be renewed but replaced by Power Automate Process units.
+> - Process licenses and Unattended RPA add-ons have been combined in a single capacity pool and can be used interchangeably within Power Automate (allocated to cloud flows or machines). They have exactly the same value and role.
+> - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
+    
 ### Hosted RPA add-on  (legacy)
 
 > [!IMPORTANT]
