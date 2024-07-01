@@ -66,7 +66,7 @@ For the following examples, we'll use the **IceCream** [data source](/power-apps
 
 This table can be placed in a collection with this formula (put in the OnStart formula for a Button control and press the button):
 
-```powerapps-dot
+```power-fx
 Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
                           { Flavor: "Vanilla", Quantity: 200 },
                           { Flavor: "Strawberry", Quantity: 300 },

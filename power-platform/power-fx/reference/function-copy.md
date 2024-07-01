@@ -45,7 +45,7 @@ When the button is selected, the text from the text input control will be copied
 
 The **Copy** function accepts text, which can be itself an expression that manipulates text from your app in some way. For example, an app may have an employee record that contain the employee's first name, last name, and title. A formula could put this information on the clipboard as one piece of text. The following example uses string interpolation to combine the data into one string:
 
-```powerapps-dot
+```power-fx
 Copy( $"{employeeRecord.Name} {employeeRecord.LastName} ({employeeRecord.Title})" )
 ```
 

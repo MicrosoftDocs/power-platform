@@ -42,7 +42,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
 1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( CityPopulations,
        { City: "London",    Country: "United Kingdom", Population: 8615000 },
        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
@@ -62,7 +62,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
 1. Insert a [**Data table**](/power-apps/maker/canvas-apps/controls/control-data-table) control, and set its **Items** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Distinct( CityPopulations, Country )
    ```
 
@@ -78,7 +78,7 @@ The **Distinct** function evaluates a formula across each record of a table and 
 
 1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control, and set its **Text** property to the formula:
 
-   ```powerapps-dot
+   ```power-fx
    First( Sort( Distinct( CityPopulations, Country ), Value ) ).Value
    ```
 

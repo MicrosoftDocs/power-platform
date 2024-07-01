@@ -32,7 +32,7 @@ The **IfError** function tests values until it finds an error. If the function d
 
 Use **IfError** to replace an error with a valid value so that downstream calculations can continue. For example, use this function if user input might result in a division by zero:
 
-```powerapps-dot
+```power-fx
 IfError( 1/x, 0 )
 ```
 
@@ -42,7 +42,7 @@ This formula returns `0` if the value of `x` is zero, as `1/x` will produce an e
 
 When [chaining](operators.md) formulas together in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth), such as:
 
-```powerapps-dot
+```power-fx
 Patch( DS1, ... );
 Patch( DS2, ... )
 ```
@@ -51,7 +51,7 @@ The second [**Patch**](function-patch.md) function to `DS2` will be attempted ev
 
 Use **IfError** to do an action and only continue processing if the action was successful. Applying **IfError** to this example:
 
-```powerapps-dot
+```power-fx
 IfError(
     Patch( DS1, ... ), Notify( "problem in the first action" ),
     Patch( DS2, ... ), Notify( "problem in the second action" )
@@ -64,7 +64,7 @@ If supplied, the optional _DefaultResult_ argument is returned if no errors are 
 
 Building on the last example, the return value from **IfError** can be checked to determine if there were any problems:
 
-```powerapps-dot
+```power-fx
 IfError(
     Patch( DS1, ... ), Notify( "problem in the first action" );  false,
     Patch( DS2, ... ), Notify( "problem in the second action" ); false,
@@ -83,7 +83,7 @@ In the last example, **Patch** will return a record that isn't compatible with t
 
 In the simple example described earlier:
 
-```powerapps-dot
+```power-fx
 IfError( 1/x, 0 )
 ```
 
@@ -93,13 +93,13 @@ Excel will display **#DIV/0!** when a division by zero occurs.
 
 Consider **IfError** with the following instead:
 
-```powerapps-dot
+```power-fx
 IfError( 1/x, "#DIV/0!" )
 ```
 
 The above formula won't work. The text string `"#DIV/0!"` will be coerced to the type of the first argument to **IfError**, which is a number. The result of **IfError** will be yet another error since the text string can't be coerced. As a fix, convert the first argument to a text string so that **IfError** always returns a text string:
 
-```powerapps-dot
+```power-fx
 IfError( Text( 1/x ), "#DIV/0!" )
 ```
 
@@ -121,13 +121,13 @@ Error records include:
 
 For example, consider the following formula as a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control's **OnSelect** property:
 
-```powerapps-dot
+```power-fx
 Set( a, 1/0 )
 ```
 
 And this formula on the **OnSelect** property of a second [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control:
 
-```powerapps-dot
+```power-fx
 IfError( a, Notify( "Internal error: originated on " & FirstError.Source & ", surfaced on " & FirstError.Observed ) )
 ```
 
@@ -213,14 +213,14 @@ A _blank_ record or empty table passed to **Error** results in no error.
 
 In this example, dates are validated relative to one another, resulting in an error if there is a problem.
 
-```powerapps-dot
+```power-fx
 If( StartDate > EndDate,
     Error( { Kind: ErrorKind.Validation, Message: "Start Date must be before End Date" } ) )
 ```
 
 In this example, some errors are allowed to pass through while others are supressed and replaced with a value. In the first case, **b** will be in an error state because the **Value** function has an invalid argument. Because this is unexpcted by the formula writer, it is passed through so the user will see it. In the second case, with the same formula, **b** will have the value 0, resulting in a division by zero. In this case, the formula writer may know that this is acceptable for this logic, suppress the error (no banner is shown), and return -1 instead.
 
-```powerapps-dot
+```power-fx
 With( {a: 1, b: Value("a")},
       IfError( a/b, If( FirstError.Kind <> ErrorKind.Div0, Error( FirstError ), -1 ) ) )
 // returns an error with Kind = ErrorKind.InvalidArgument
@@ -232,7 +232,7 @@ With( {a: 1, b: 0} )
 
 The **AllErrors** table can be filtered like any other table. Used with the **Error** function, expected errors can be removed and the remaining errors retained and reported. For example, if we knew that division by zero was not going to be a problem in a particular context, those errors could be filtered out, leaving all other errors intact with the following formula:
 
-```powerapps-dot
+```power-fx
 Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 ```
 
@@ -244,7 +244,7 @@ Error( Filter( AllErrors, Kind <> ErrorKind.Div0 ) )
 
 1. Set the formula for **Label1**'s **Text** property to:
 
-   ```powerapps-dot
+   ```power-fx
    IfError( Value( TextInput1.Text ), -1 )
    ```
 

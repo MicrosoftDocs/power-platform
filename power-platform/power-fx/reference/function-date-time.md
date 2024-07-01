@@ -75,7 +75,7 @@ If a user typed
 
 this formula would return `3/17/1979`:
 
-```powerapps-dot
+```power-fx
 Date( Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text) )
 ```
 
@@ -88,7 +88,7 @@ If a user typed
 
 this formula would return `02:50:24 P`:
 
-```powerapps-dot
+```power-fx
 Text( 
     Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), 
     "hh:mm:ss A/P" 
@@ -108,7 +108,7 @@ If a user typed
 
 this formula would return `10/28/23 01:14:05.231 PM`:
 
-```powerapps-dot
+```power-fx
 Text(
     DateTime(Value(EclipseYear.Text), Value(EclipseMonth.Text), Value(EclipseDate.Text), 
         Value(EclipseHour.Text), Value(EclipseMinute.Text), 

@@ -55,7 +55,7 @@ The examples in this section use these global variables:
 
 To create these global variables in an app, insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula:
 
-```powerapps-dot
+```power-fx
 Set( FirstName, "Jane" ); Set( LastName, "Doe" );
 Set( Products,
     Table(

@@ -108,7 +108,7 @@ When validating a form, it can be helpful to not only display a message if there
 
 In this animation, the validation button is repeatedly pressed until all the fields have been filled in properly. Note that the mouse pointer doesn't move down from the top of the screen. Instead the **SetFocus** function hsa moved the input focus to the control that requires attention with this formula:
 
-```powerapps-dot
+```power-fx
 If( IsBlank( Name ),
         Notify( "Name requires a value", Error ); SetFocus( Name ),
     IsBlank( Street1 ),
@@ -150,7 +150,7 @@ In this animation, the data entry screen on the left is not using **SetFocus**. 
 
 On the right we have exactly the same app with the **OnVisible** property of the data entry screen set to this formula:
 
-```powerapps-dot
+```power-fx
 SetFocus( Name )
 ```
 

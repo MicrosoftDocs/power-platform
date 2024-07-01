@@ -50,7 +50,7 @@ The Tag Picker has the following input datasets, which are described in detail i
 
 The `Suggestions` dataset should be filtered by using the `SearchTerm` output property, for example:
 
-```powerapps-dot
+```power-fx
 Search(colSuggestions,TagPicker.SearchTerm,"name")
 ```
 
@@ -118,7 +118,7 @@ The `TagPicker`component raises an `OnChange` event when tags are added or remov
 
 The event should contain an expression similar to:
 
-```powerapps-dot
+```power-fx
 If( TagPicker.TagEvent = "Add" && CountRows(Filter(colTags,name=TagPicker.TagsDisplayName)) = 0,
     Collect( colTags, { name:TagPicker.TagsDisplayName })
 );

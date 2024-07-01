@@ -68,7 +68,7 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 1. Add a button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **Original**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **Original** button to this formula:
 
-```powerapps-dot
+```power-fx
 ClearCollect( CityPopulations,
     { City: "London",    Country: "United Kingdom", Population: 8615000},
     { City: "Berlin",    Country: "Germany",        Population: 3562000},

@@ -119,7 +119,7 @@ In addition, an in-app notification can include zero to many actions on the noti
 
 The following sends a simple in-app notification to a recipient with a title and body. It doesn't include any actions and utilizes default values for all other parameters.
 
-```powerapps-dot
+```power-fx
 XSendAppNotification(
     "Welcome", 
     LookUp(Users, 'Primary Email'="<User's email address>"), 
@@ -135,7 +135,7 @@ The following example formula can be used with an automated plugin when a a new 
 - A **side pane** action, opens the new task record in a side pane.
 - A **Teams chat** action, initiates a Teams chat with the owner of the account record that is assigned as the **Regarding** table record for the new task. It's important to note that this assumes an account record has been selected in the task field.
 
-```powerapps-dot
+```power-fx
 XSendAppNotification(
 	"New task assigned",
 	AsType(ThisRecord.Owner, Users),

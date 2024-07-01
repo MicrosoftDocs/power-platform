@@ -36,7 +36,7 @@ Launches a webpage or a canvas app. The function supports:
 
 Webpages are launched via a URL address. For example:
 
-```powerapps-dot
+```power-fx
 Launch( "https://bing.com" )
 ```
 
@@ -57,7 +57,7 @@ The **Web link** can be used in any web page and will launch the canvas app. It 
 
 The **App ID** can be used with the **Launch** function, but must be prefixed with `/providers/Microsoft.PowerApps/apps/`. For example:
 
-```powerapps-dot
+```power-fx
 Launch( "/providers/Microsoft.PowerApps/apps/f342faaf-5f82-4ace-a64b-7c1b01499231" )
 ```
 
@@ -69,13 +69,13 @@ Native apps on a device can't be launched directly. There may be indirect option
 
 - An argument list of name value pairs. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", "q", "Power Apps", "count", 1 )
   ```
 
 - A record of field values. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", { q: "Power Apps", count: 1 } )
   ```
 
@@ -206,7 +206,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 
 Update the app ID, screen name, and record number as appropriate.
 
-```powerapps-dot
+```power-fx
 Launch( "/providers/Microsoft.PowerApps/apps/YOUR-APP-ID",
         { Navigate: "Second Screen", Record: 34 }
 )

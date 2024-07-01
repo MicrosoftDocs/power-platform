@@ -57,7 +57,7 @@ For all these functions, the result is a new table with the transform applied. T
 
 The arguments to these functions support delegation. For example, a **Filter** function used as an argument to pull in related records searches through all listings, even if the **'[dbo].[AllListings]'** data source contains a million rows:
 
-```powerapps-dot
+```power-fx
 AddColumns( RealEstateAgents,
    Listings,
    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName )
@@ -118,7 +118,7 @@ Let's try some of the examples from earlier in this article.
 
 1. Create a collection by adding a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control and setting its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( IceCreamSales,
       Table(
           { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 },
@@ -132,7 +132,7 @@ Let's try some of the examples from earlier in this article.
 
 1. Add a second **Button** control, set its **OnSelect** property to this formula, and then run it:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( FirstExample,
       AddColumns( IceCreamSales, Revenue, UnitPrice * QuantitySold )
    )

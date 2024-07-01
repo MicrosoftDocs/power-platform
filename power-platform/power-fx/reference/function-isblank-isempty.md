@@ -97,7 +97,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 1. Create an app from scratch, and add a **Button** control.
 2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
    ```
 
@@ -111,7 +111,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 5. Click or tap the back arrow to return to the default workspace.
 6. Add a **Label** control, and set its **Text** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    IsBlank( First( Cities ).Weather )
    ```
 
@@ -119,7 +119,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 
 7. Add a second button, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Patch( Cities, First( Cities ), { Weather: Blank() } )
    ```
 
@@ -145,7 +145,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 1. Create an app from scratch, add a text-input control, and name it **FirstName**.
 2. Add a label, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    If( IsBlank( FirstName.Text ), "First Name is a required field." )
    ```
 
