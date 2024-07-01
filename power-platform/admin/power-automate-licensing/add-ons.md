@@ -12,13 +12,21 @@ search.audienceType:
 
 # Type of Power Automate add-ons
 
-Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (premium connectors, unattended RPA, etc.) are obtained via [licenses](types.md) and add-ons. This article focusses on add-ons, which are categorized as follows:
+Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article focusses on add-ons (for details on licenses, visit the [types of Power Automate licenses](types.md) page). 
+
+The Power Automate add-ons are categorized as follows:
 
 - capacity add-ons
 - consumptive add-ons
 - storage add-ons
 
 ![Power Automate add-ons](../media/RPA-license/add-ons-3.png)
+
+|Add-on type<br>_________________________|Description<br>______________________________________________________________________________________________________________________|
+|-------|------|
+|Capacity add-on|A capacity add-on is allocated to a Power Automate object (cloud flow, machine, hosted machine). It provides the object specific autonomous entitlements (the same way a user license provides entitlements to a user).|
+|Consumptive add-on|A consumptive add-on provides a monthly quantity of units (AI builder credits, Power Platform requests) which are consumed and destroyed after usage.|
+|Storage add-on|A storage add-on provides data storage space to support scalling of various Power Automate operations.|
 
 ## Power Automate capacity add-ons
 
