@@ -65,11 +65,12 @@ In addition to user licenses, organizations can upgrade their automation scenari
 
 |License name<br>__________________________|License type<br>_______________|Allocated object<br>___________________________|Entitlements<br>___________________________________________________________________|
 ------|------|------|------
-[Power Automate Process](#power-automate-process-license)|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.
-Power Automate Hosted Process|Capacity|- Hosted machine <br>- Hosted machine group<sup>1</sup><br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process. It can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an extra scenario: the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling RPA with zero infrastructure.
+[Power Automate Process](#power-automate-process-license)|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time<sup>1</sup>. 
+Power Automate Hosted Process|Capacity|- Hosted machine <br>- Hosted machine group<sup>2</sup><br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process. It can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an extra scenario: the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling RPA with zero infrastructure.
 Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from the pricing page but customers can still purchase it via deal desk.
 
-_1. The Hosted Process license is not statically allocated to a hosted machine group : it is dynamically allocated and deallocated (load balancing) from a hosted machine group depending on workload to support each of its active hosted machines_ <br>
+_1. When an unattended run is triggered through an unattended bot, Power Automate securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
+_2. The Hosted Process license is not statically allocated to a hosted machine group : it is dynamically allocated and deallocated (load balancing) from a hosted machine group depending on workload to support each of its active hosted machines_ <br>
 
 ##### Can my organization only purchase and use capacity licenses within an environment?
 Capacity licenses usually can't replace all user licenses within an environment as some essential capabilities are only available to licensed users:
@@ -93,20 +94,21 @@ Here-bellow a table detailing each license [entitlement](#license-entitlements):
 |__Premium connectors__|Included|Included|Included|
 |__Custom connectors__|Included|Included|Included|
 |__Attended RPA__|Included|Not included|Not included|
-|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>3</sup>|
-|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>3</sup>|
+|__Unattended RPA <sup>3</sup>__|Not included|One unattended bot included|One unattended bot included <sup>4</sup>|
+|__Hosted RPA__|Not included|Not included|One hosted bot included <sup>4</sup>|
 |__Business process flows__|Included|Included|Included|
 |__On-premises gateways__|Included|Included|Included|
 |__Process mining__|Included|Not included|Not included|
-|__Process mining data storage__|50 MB per license <sup>4</sup>|Not included|Not included|
+|__Process mining data storage__|50 MB per license <sup>5</sup>|Not included|Not included|
 |__AI Builder credits__|5000 per month|5000 per month|5000 per month|
 |__Dataverse database storage__|250 MB per license|50 MB per license|50 MB per license|
 |__Dataverse file storage__|2 GB per license|200 MB per license|200 MB per license|
 
 _1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](#power-platform-requests))._ <br>
 _2. When multiple units of Process licenses are allocated to a cloud flow, their PPR limits are stacked._ <br>
-_3. The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._<br>
-_4. Up to 100 GB per tenant._
+_3. Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on._ <br>
+_4. The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._<br>
+_5. Up to 100 GB per tenant._
 
 ## License entitlements
 
@@ -142,8 +144,11 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 |Entitlement to<br>____________________________|Entitlement description<br>_____________________________________________________________________________________|
 |----------|-------|
 |Attended RPA|The attended RPA entitlement is needed to register a machine, access RPA management portal pages, add premium RPA actions to a desktop flow, share a desktop flow and trigger a desktop flow in attended mode. Attended mode refers to a desktop flow execution with human supervision. This entitlement is also needed to create any desktop flow in non-default environments.|
-|Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision).|
+|Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). When an unattended run is triggered, Power Automate securely signs into the  machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.|
 |Hosted RPA|The hosted RPA entitlement is needed to create and turn-on a hosted machine (standalone or included in a hosted machine group). It's only included in the Power Automate Hosted Process capacity license.|
+
+
+
 
 To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
