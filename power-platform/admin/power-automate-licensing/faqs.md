@@ -20,6 +20,8 @@ search.audienceType:
 
 Here are some frequently asked questions about Power Automate standalone licenses.
 
+<br>
+
 ## How do Power Automate license plans work for flow runs?
 
 If a flow is set to the Power Automate process plan, then it can access premium connectors, has the highest limits, and always uses the process plan request limits, regardless of who runs the flow.
@@ -166,6 +168,8 @@ Windows 11 users can search for "Power Automate" in the Windows search bar. The 
 
 Yes, they can use Power Automate for the desktop (they have usage rights for it) but they'll have to download it from the download center.
 
+<br>
+
 ## Legacy license questions
 
 Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They'll be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that is easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
@@ -179,6 +183,8 @@ For cloud flows, one per flow license entitles the flow with the license and its
 ### How is Power Automate Premium license different from Power Automate per user with attended RPA license?
 
 Power Automate Premium offer includes all the benefits of Power Automate per user with attended RPA offered at $40 per user/month, plus the process Mining visualize and analyze processes capabilities and is offered at $15 per user/month.
+
+<br>
 
 ## Power Platform requests questions
 
@@ -360,6 +366,8 @@ Schema on how overage PPR requests are billed in a pay-as-you-go environment:
 
 You can consult this [requests limits frequently asked questions](../api-request-limits-allocations.md#frequently-asked-questions) for more information about requests limits.
 
+<br>
+
 ## Office 365 license questions
 
 Here are some frequently asked questions about using Power Automate with an Office 365 license.
@@ -409,6 +417,8 @@ The following Office 365 licenses include Power Automate capabilities:
 - Office 365 A5 for Faculty
 - Office 365 A5 for Students
 - Office 365 A5 for Student Use Benefit
+
+<br>
 
 ## Dynamics 365 license questions
 
@@ -466,6 +476,8 @@ The following Dynamics 365 licenses include Power Automate capabilities:
 - Dynamics 365 Business Central
 - Dynamics 365 Business Central Team Members
 
+<br>
+
 ## Power Apps license questions
 
 The following questions are related to Power Apps licensing and Power Automate use rights.
@@ -509,6 +521,8 @@ In this example, the flow created using Power Automate is being used outside the
 
 An environment has multiple apps. There are flows for data management that don't directly support the app but ensure the data quality. The user needs a standalone Power Automate license.
 
+<br>
+
 ## AI Builder license questions
 
 Find global AI Builder licensing information in the following articles:
@@ -526,6 +540,8 @@ You can also use [AI Builder trial](https://go.microsoft.com/fwlink/?linkid=2246
 ### How many credits are included in Power Automate Premium licenses?
 
 To find details of seeded credits, go to [Get entitlement to AI Builder credits](https://go.microsoft.com/fwlink/?linkid=2239020).
+
+<br>
 
 ## Enforcement
 
@@ -580,6 +596,8 @@ Makers can also associate their flows to apps from the Power Automate portal. To
 A Power Apps per app plan gives users the ability to run Power Automate flows that use premium features. The flows either need to be triggered by Power Apps or associated to an app through PowerShell or the Power Automate portal.
 
 To learn more, go to [Associate in context flows to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
+
+<br>
 
 ## Multiplexing
 
