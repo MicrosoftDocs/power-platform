@@ -3,8 +3,8 @@ title: Recommendations for following design standards
 description: Learn the importance of adhering to design standards, conventions, and guidelines to enhance user experience and application success.
 author: Denise-MSFT
 ms.author: demora
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -126,7 +126,7 @@ Interaction is where accessibility matters the most. If a user can't navigate a 
 - *Hyperlinks*. Usability and accessibility of hyperlinks can be improved by making them clear, concise, and meaningful out of context. Apply sufficient color contrast and visually differentiate from other content.
 - *Tables*. Relying on visual cues alone isn't sufficient to create an accessible table. Structural markup allows assistive technology to recognize headers and data cells.
 - *Forms*. Input fields, used for various web interactions, often raise accessibility concerns for individuals who use screen readers or keyboards.
-- *Focus*. Focus visibility helps users who rely on the keyboard to navigate the page, by visually indicating the element they interact with next. Sometimes focus needs to be moved programatically or limited to a specific area to optimize the experience.
+- *Focus*. Focus visibility helps users who rely on the keyboard to navigate the page, by visually indicating the element they interact with next. Sometimes focus needs to be moved programmatically or limited to a specific area to optimize the experience.
 - *State changes*. Specify text for any state change and announcements. Communicating error states and guiding users through error recovery (such as missing information or system issue) is critical.
 
 ## Power Platform facilitation
@@ -156,6 +156,8 @@ Canvas apps require code components to enable keyboard shortcuts, which can be c
 - [Fluent UI accessibility guidance](https://fluent2.microsoft.design/accessibility)
 
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

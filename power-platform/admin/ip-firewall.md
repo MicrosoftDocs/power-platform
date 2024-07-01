@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 03/28/2024
+ms.date: 06/27/2024
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -16,9 +16,6 @@ ms.custom:
 The IP firewall helps to protect your organizational data by limiting user access to Microsoft Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. For example, suppose the IP firewall is turned on in your production Dataverse environment, and allowed IP addresses are in the ranges associated with your office locations and not any external IP location like a coffee shop. If a user tries to access organizational resources from a coffee shop, Dataverse denies access in real time.
 
 :::image type="content" source="media/ip-firewall-dataverse-diagram.png" alt-text="Diagram illustrating the IP firewall feature in Dataverse.":::
-
-> [!IMPORTANT]
-> The IP firewall feature only supports OData endpoints for accessing Dataverse data. Support for [TDS endpoints](settings-features.md#tds-endpoint) will be included in a future release.
 
 ## Key benefits
 
@@ -121,6 +118,10 @@ You should test the IP firewall to verify that it's working.
 
 We recommend that you should test the IP firewall in your test environment first, followed by audit-only mode in Production environment before enforcing the IP firewall on your Production environment.
 
+> [!NOTE]
+> By default, [TDS endpoint](settings-features.md#tds-endpoint) is turned on within the Power Platform environment.
+
+
 ## Licensing requirements for IP firewall
 
 IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
@@ -187,9 +188,6 @@ In the IP firewall settings, allow the service tags listed in [Managed connector
 ### I have configured the reverse proxy address correctly, but the IP firewall isn't working. What should I do?
 
 Make sure your reverse proxy is configured to send the client IP address in the forwarded header.
-
-### Some of the calls from Power BI are failing after I enabled the IP firewall on the Power Platform environment. What should I do?
-Currently, you can only use IP firewall for OData endpoints in Dataverse to access data from configured IP location. If you want to continue using [TDS endpoints](settings-features.md#tds-endpoint), you must disable IP firewall in the environment.
 
 ### IP firewall audit functionality isn't working in my environment. What should I do?
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).

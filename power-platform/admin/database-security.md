@@ -12,7 +12,7 @@ ms.custom:
   - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/02/2024
+ms.date: 06/28/2024
 search.audienceType: 
   - admin
 ---
@@ -38,7 +38,7 @@ Environment Maker and Environment Admin are the only predefined roles for enviro
 | Security role |  Description |
 |---------|---------|
 | Environment Admin | The Environment Admin role can perform all administrative actions on an environment, including:<br/><ul><li>Add or remove a user from either the Environment Admin or Environment Maker role.</li><li>Provision a Dataverse database for the environment. After a database is provisioned, assign the System Customizer role to an Environment Admin to give them access to the environment's data.</li><li>View and manage all resources created in an environment.</li><li>Create [data loss prevention policies](prevent-data-loss.md).</li></ul> |
-| Environment Maker |Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have privileges to access data in an environment.<br/><br/>Environment makers can also [distribute the apps they build](/powerapps/maker/canvas-apps/share-app) in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. |
+| Environment Maker |Can create new resources associated with an environment, including apps, connections, custom APIs, and flows using Microsoft Power Automate. However, this role doesn't have privileges to access data in an environment.<br/><br/>Environment makers can also [distribute the apps they build](/powerapps/maker/canvas-apps/share-app) in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. |
 
 ### Environments with a Dataverse database
 
@@ -53,12 +53,12 @@ The following table describes the predefined security roles in an environment th
 | App Opener | Has [minimum privileges for common tasks](create-edit-security-role.md#minimum-privileges-for-common-tasks). This role is primarily used as a template to [create a custom security role](#create-or-configure-a-custom-security-role) for model-driven apps. It doesn't have any privileges to the core business tables, such as Account, Contact, and Activity. However, it has **Organization**-level read access to system tables, such as **Process**, to support reading system-supplied workflows. Note that this security role is used when a [new, custom security role is created](create-edit-security-role.md#create-a-security-role).  |
 | Basic User |  For out-of-the-box entities only, can run an app in the environment and perform common tasks on the records they own. It has privileges to the core business tables, such as Account, Contact, and Activity.<br/><br/>**Note**: The Common Data Service **User** security role was renamed **Basic User**. Only the name was changed; user privileges and role assignment are the same. If you have a solution with the Common Data Service **User** security role, you should update the solution before you import it again. Otherwise, you might inadvertently change the security role name back to **User** when you import the solution. |
 | Delegate | Allows code to [*impersonate*, or run as, another user](/powerapps/developer/common-data-service/impersonate-another-user). Typically used with another security role to allow access to records. |
-| Dynamics 365 Administrator | *Dynamics 365 administrator* is a Microsoft Power Platform service admin role. This role can do admin functions on Microsoft Power Platform because they have the system administrator role.  |
-| Environment Maker | Can create new resources associated with an environment, including apps, connections, custom APIs, gateways, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data in an environment.<br/> <br/>Environment makers can also [distribute the apps they build](/powerapps/maker/canvas-apps/share-app) in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. |
-| Global Administrator | *Global administrator* is a Microsoft 365 administrator role. A person who purchases the Microsoft business subscription is a global administrator and has unlimited control over products in the subscription and access to most data. |
+| Dynamics 365 Administrator | *Dynamics 365 administrator* is a Microsoft Power Platform service admin role. Users of this role can do admin functions on Microsoft Power Platform after they [self-elevate](manage-high-privileged-admin-roles.md) to the system administrator role.  |
+| Environment Maker | Can create new resources associated with an environment, including apps, connections, custom APIs, and flows using Microsoft Power Automate. However, this role doesn't have any privileges to access data in an environment.<br/> <br/>Environment makers can also [distribute the apps they build](/powerapps/maker/canvas-apps/share-app) in an environment to other users in your organization. They can share the app with individual users, security groups, or all users in the organization. |
+| Global Administrator | *Global administrator* is a Microsoft 365 administrator role. A person who purchases the Microsoft business subscription is a global administrator and has unlimited control over products in the subscription and access to most data. Users of this role must [self-elevate](manage-high-privileged-admin-roles.md) to the system administrator role. |
 | Global Reader | The [Global Reader](/azure/active-directory/roles/permissions-reference) role isn't supported yet in the Power Platform admin center. |
 | Office Collaborator |Has Read permission to tables in which a record was shared with the organization. Doesn't have access to any other core and custom table records. This role is assigned to the Office Collaborators owner team and not to an individual user. |
-| Power Platform administrator | *Power Platform administrator* is a Microsoft Power Platform service administrator role. This role can perform admin functions on Microsoft Power Platform because they have the system administrator role. |
+| Power Platform administrator | *Power Platform administrator* is a Microsoft Power Platform service administrator role. Users of this role can do admin functions on Microsoft Power Platform after they [self-elevate](manage-high-privileged-admin-roles.md) to the system administrator role. |
 | Service Deleted | Has full Delete permission to all entities, including custom entities. This role is primarily used by the service and requires deleting records in all entities. **This role can't be assigned to a user or team.** |
 | Service Reader | Has full Read permission to all entities, including custom entities. This role is primarily used by the service and requires reading all entities. **This role can't be assigned to a user or team.** |
 | Service Writer |  Has full Create, Read, and Write permission to all entities, including custom entities. This role is primarily used by the service and requires creating and updating records. **This role can't be assigned to a user or team.** |
@@ -106,8 +106,8 @@ The following table describes which resources each security role can author.
 |Cloud flow     |X (non&ndash;solution-aware)         |X         |X         |X         |
 |Connector     |X (non&ndash;solution-aware)         |X         |X         |X         |
 |Connection<sup>*</sup>     |X         |X         |X         |X         |
-|Data gateway     |X         |X         |-         |X         |
-|Dataflow     |X         |X         |-         |X         |
+|Data gateway     |-         |X         |-         |X         |
+|Dataflow     |X         |X         |X       |X         |
 |Dataverse tables     |-         |-         |X         |X         |
 |Model-driven app     |X        |-         |X         |X         |
 |Solution framework     |X         |-         |X         |X         |

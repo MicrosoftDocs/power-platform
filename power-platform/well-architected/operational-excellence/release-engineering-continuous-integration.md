@@ -1,10 +1,10 @@
 ---
-title: Recommendations for using continuous integration
-description: Learn how to use continuous integration (CI) in release engineering, source control integration, test integration, and more.
+title: Continuous integration recommendation for Power Platform workloads
+description: Learn how to optimize software development and quality by following industry-proven practices for development and testing.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 06/13/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -96,7 +96,7 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 
 [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open-source tool that consists of a set of applications, scripts, and pipelines designed to automate the continuous integration/continuous delivery process.
 
-[Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
+[Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
 [Power Apps checker Web API](/power-platform/alm/checker-api/overview) provides a mechanism to run static analysis checks against customizations and extensions to the Microsoft Dataverse platform.
 
@@ -108,7 +108,14 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 - [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
 - [Build CI/CD with Azure for Microsoft Power Platform](/azure/architecture/solution-ideas/articles/azure-devops-continuous-integration-for-power-platform)
 - [Power Platform environments](/power-platform/admin/environments-overview)
-- [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+- [Establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 - [Co-development governance](/power-apps/guidance/co-develop/governance)
 - [Use scenarios to implement healthy ALM with Microsoft Power Apps](/power-platform/alm/implement-healthy-alm)
-- [Automate tests with Azure DevOps Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
+- [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor)
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Operational Excellence checklist](checklist.md)

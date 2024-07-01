@@ -3,7 +3,7 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 05/07/2024
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
@@ -11,6 +11,8 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+- paulliew
 ---
 # Manage the encryption key 
 
@@ -19,7 +21,7 @@ All environments of Microsoft Dataverse use [!INCLUDE[pn_MS_SQL_Server](../inclu
  By default, [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] stores and manages the database encryption key for your environments so you don't have to. The manage keys feature in the Microsoft Power Platform admin center gives administrators the ability to self-manage the database encryption key that is associated with the Dataverse tenant. 
 
 > [!IMPORTANT]
-> - As of June 2, 2023, this service is upgraded to [Customer-managed encryption key](customer-managed-key.md). New customers who need to manage their own encryption key will use the upgraded service as this service is no longer offerred.
+> - As of June 2, 2023, this service is upgraded to [Customer-managed encryption key](customer-managed-key.md). New customers who need to manage their own encryption key will use the upgraded service as this service is no longer offered.
 > - Self-managed database encryption keys are only available for customers who have more than 1000 Power Apps per user licenses, or more than 1000 Dynamics 365 Enterprise licenses, or more than 1000 licenses from a combination of both in a single tenant. To opt in to this program, submit a [support request](./support-overview.md#using-support).
 
 Encryption key management is only applicable to Azure SQL environment databases. The following features and services continue to use the Microsoft-managed encryption key to encrypt their data and can't be encrypted with the self-managed encryption key:
@@ -32,9 +34,11 @@ Encryption key management is only applicable to Azure SQL environment databases.
  
 > [!NOTE] 
 > - The self-manage database encryption key feature must be turned on by Microsoft for your tenant before you can use the feature.  
-> - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.  
-> - Support of [File](/powerapps/developer/data-platform/file-attributes) and [Image](/powerapps/developer/data-platform/image-attributes) with size < 128MB can be enabled if your environment has version 9.2.21052.00103 or higher.
+> - To use the data encryption management features for an environment, the environment must be created *after* the self-manage the database encryption key feature is turned on by Microsoft.
+> - After the feature is turned on in your tenant, all new environments are created with Azure SQL storage only. These environments, regardless of whether they're encrypted with bring-your-own-key (BYOK) or a Microsoft-managed key, have restrictions with file upload size, can't use Cosmos and Datalake services, and Dataverse Search indexes are encrypted with a Microsoft-managed key. To use these services, you must [migrate to customer-managed key](cmk-migrate-from-byok.md).
+> - [Files](/powerapps/developer/data-platform/file-attributes) and [Images](/powerapps/developer/data-platform/image-attributes) with sizes less than 128 MB can be used if your environment is version 9.2.21052.00103 or higher.
 > - A majority of existing environments have file and log stored in non-Azure SQL databases. These environments cannot be opted in to self-managed encryption key. Only new environments (once you signed up for this program) can be enabled with self-managed encryption key.
+
 
 <a name="KM_tasks"></a>   
 ## Introduction to key management  

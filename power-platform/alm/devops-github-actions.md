@@ -2,14 +2,12 @@
 title: "GitHub Actions for Microsoft Power Platform | Microsoft Docs"
 description: "Learn about the ALM-related tools and services that are available to developers when using GitHub and Microsoft Power Platform."
 keywords: 
-author: kkanakas 
+author: devkeydet
 ms.subservice: alm
-ms.author: kartikka
-ms.custom: ""
-ms.date: 08/30/2021
-ms.reviewer: "pehecke"
-
-ms.topic: "article"
+ms.author: marcsc
+ms.date: 05/14/2024
+ms.reviewer: pehecke
+ms.topic: article
 search.audienceType: 
   - developer
 ---
@@ -83,7 +81,7 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ***How do I get GitHub Actions for Microsoft Power Platform working in my repository?***
 
-*Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform. When you arrive on the page, select the green button to instatiate the actions into your repository.*
+*Go to the [GitHub Marketplace for Actions](https://github.com/marketplace/actions/powerplatform-actions) and search for Power Platform. When you arrive on the page, select the green button to instantiate the actions into your repository.*
 
 ![GitHub Actions Install](media/github-actions-tutorial/GHActionsinstall.png "GitHub Actions Install")
 
@@ -105,10 +103,9 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ### See also
 
-[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)
-
-
-[Available GitHub Actions](devops-github-available-actions.md)
+[GitHub Actions for Power Platform release notes](https://github.com/microsoft/powerplatform-actions/releases)<br/>
+[Available GitHub Actions Hands on Lab](https://github.com/microsoft/powerplatform-actions-lab)<br/>
+[Available GitHub Actions](devops-github-available-actions.md)<br/>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

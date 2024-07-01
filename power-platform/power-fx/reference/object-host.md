@@ -45,7 +45,7 @@ For example, a browser user agent string might be:
 - Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78
 
 > [!NOTE]
-> If you're running Power Apps in a native app or using the [the wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
+> If you're running Power Apps in a native app or using the [wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
 
 ## OSType property
 

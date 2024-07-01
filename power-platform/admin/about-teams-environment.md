@@ -4,7 +4,7 @@ description: Administer and manage Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/31/2023
+ms.date: 05/04/2024
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -119,7 +119,7 @@ There's a difference in the models for adding users to an environment with a Dat
 </tr>
 <tr>
 <td width="20%"> Dynamics 365 admin </td>
-<td width="50%"> These admins need to be owners or members of the team (because every team is linked to an Microsoft 365 group and the Dataverse for Teams environment will always be restricted for access to that Microsoft 365 group) to have System Administrator&ndash;level privileges to manage the health and maintenance of the environment. </td>
+<td width="50%"> These admins need to be owners or members of the team (because every team is linked to a Microsoft 365 group and the Dataverse for Teams environment will always be restricted for access to that Microsoft 365 group) to have System Administrator&ndash;level privileges to manage the health and maintenance of the environment. </td>
 <td width="30%"> System Administrator if they are an owner in the team; System Administrator and Teams Member if they are a member in the team. No access if they aren't an owner or member in the team. </td>
 </tr>
 <tr>
@@ -265,15 +265,15 @@ The **Built by your colleagues** catalog intentionally filters out **Shared with
 >
 > Microsoft Power Platform data governance policies like data loss prevention and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
 
-## Applying a data loss prevention policy to all Dataverse for Teams environments 
+## Applying a data policy to all Dataverse for Teams environments 
 
-Microsoft offers a solution that applies a data loss prevention policy (DLP) to all Teams environments within a tenant, allowing you to better control your organization's data without hindering your ability to create low-code and no-code solutions within Teams. 
+Microsoft offers a solution that applies a data policy to all Teams environments within a tenant, allowing you to better control your organization's data without hindering your ability to create low-code and no-code solutions within Teams. 
 
 Follow these steps to apply a DLP policy:
 
 1. Choose or create the policy that you want applied to your Teams environments. This policy must be marked to apply to specific environments, which can be done as follows: 
    - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its environmentType is "OnlyEnvironments," or 
-   - In the [web app](create-dlp-policy.md), make sure the scope is set to multiple environments. 
+   - In the [web app](prevent-data-loss.md), make sure the scope is set to multiple environments. 
 
    You will need to add at least one environment to save your policy. Any environments you add now will be overridden by the PowerShell function below, which will automatically add the Teams environments to the policy. 
 

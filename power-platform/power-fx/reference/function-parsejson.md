@@ -6,7 +6,7 @@ author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
@@ -17,7 +17,7 @@ contributors:
 ---
 # ParseJSON function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).
 

@@ -1,10 +1,10 @@
 ---
-title: Recommendations for handling transient faults
-description: Learn about recommendations for handling transient faults in your cloud applications.
+title: Handle transient faults recommendation for Power Platform workloads
+description: Learn how to strengthen the resiliency of your Power Platform workload by implementing transient fault handling. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -170,6 +170,13 @@ Use the Application Insights integrations to log errors in Power Automate and Po
 - [Set up Application Insights with Power Automate (preview)](/power-platform/admin/app-insights-cloud-flow)
 - [Analyze system-generated logs using Application Insights in Power Apps](/power-apps/maker/canvas-apps/application-insights)
 
-### See also
+## See also
 
 [Business continuity and disaster recovery for Dynamics 365 SaaS apps](/power-platform/admin/business-continuity-disaster-recovery)
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)
