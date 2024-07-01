@@ -36,6 +36,8 @@ You can purchase those licenses on [Power Automate Pricing](https://flow.microso
 > 
 > As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs. 
 
+<br>
+
 ## User licenses
 
 ![User licenses](../media/RPA-license/standalone_user_licenses.png)
@@ -56,6 +58,8 @@ P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer
 > __To organizations with active Power Automate P1 and P2 plans__:
 > 
 > Organizations with these licenses with renewals that are due on or after January 1, 2021 need to transition to the Power Automate Premium user license or to the Power Apps Premium user license to continue using the Microsoft Power Platform services. Organizations with active contracts that started before January 1, 2021 with grandfathered licenses will continue to be supported until the contract end date. Starting __October 1, 2024__, these plans will no longer be usable. Contact your Microsoft account representative for more information or purchase the replacing licenses.
+
+<br>
 
 ##  Capacity licenses
 
@@ -81,6 +85,8 @@ Capacity licenses usually can't replace all user licenses within an environment 
 >
 > - Process license and Hosted Process license utilization within an environment are manageable through the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page
 > - Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) which overage quantity should be ignored if the Hosted Process license quantity exceeds it
+
+<br>
 
 ## Compare Power Automate licenses
 
@@ -109,6 +115,8 @@ _2. When multiple units of Process licenses are allocated to a cloud flow, their
 _3. Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on._ <br>
 _4. The Hosted Process license provides an unattended bot when allocated to a standard machine __OR__ a hosted bot when used by a hosted machine (which can be a standalone hosted machine or be part of a hosted machine group)._<br>
 _5. Up to 100 GB per tenant._
+
+<br>
 
 ## License entitlements
 
@@ -147,9 +155,6 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 |Unattended RPA|The unattended RPA entitlement is needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). When an unattended run is triggered, Power Automate securely signs into the  machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.|
 |Hosted RPA|The hosted RPA entitlement is needed to create and turn-on a Microsoft hosted machine (standalone or included in a hosted machine group) thus enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview). It's only included in the Power Automate Hosted Process capacity license.|
 
-
-
-
 To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
 ### Entitlements to other Power Automate capabilities
@@ -168,6 +173,8 @@ To learn more about the premium RPA capabilities, go to [Premium RPA features](/
 |AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you add intelligence to your automations, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits." Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic text extractions. Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).|
 |Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Some Power Automate license provide a tenant-wide entitlement for each of these three storage types. You can buy more storage in 1-GB add-on increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
 |Process mining data storage|The process mining capability in Power Automate is suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). The process mining capability displays maps of your processes with data and metrics to recognize performance issues.|
+
+<br>
 
 ## Power Platform requests
 
@@ -226,6 +233,8 @@ Here are a few things to be aware of during the transition period:
 5. Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
 6. Seeded license users can only use cloud flows within the context of the app. To learn more, see [seeded licenses](#seeded-licenses) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
+
+<br>
 
 ## Zoom on specific licenses
 
@@ -325,6 +334,8 @@ Learn more on [Power Automate seeded licenses](seeded-licenses.md).
 ### Power Apps Developer plan
 
 There's a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You aren't allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows can't be created in an environment with the Power Apps Developer plan.
+
+<br>
 
 ## Entitlements of free / trial / legacy licenses
 
