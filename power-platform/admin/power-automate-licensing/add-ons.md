@@ -73,22 +73,21 @@ At provisioning of any hosted machine (individual or within a group), a Hosted R
 
 |<br>__________________________|Hosted machine<br>______________________________________________|Hosted machine group<br>__________________________________________________________|
 |-------|------|------|
-|__Scenario__|The hosted machine enables developers to build, test and run automation on a constantly active (= turned-on) hosted machine.|The hosted machine group enables developers to run automation on an auto-scaling group of hosted machines. <br><br>It is continuously adjusting the number of hosted machines turned-on to the desktop flow workload.|
-|__Hosted bot allocation__|The hosted bot is allocated to the individual hosted machine at its creation.|The hosted bot is temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one hosted bot.|
-|__Hosted bot release__|The hosted bots is released to the available hosted pool<sup>1</sup> at manual deletion of the hosted machine.|The hosted bot is automatically released to the available hosted pool<sup>1</sup> by the hosted machine group when it scales down (= when one of its hosted machine is turned-off).|
-|__Scenario benefits__|- Hosted machine constantly turned-on <br> - Reaction time|- Auto-scalability delivering high processing parallelization and reacting to demand spikes<br>- Load balancing accross multiple hosted machine groups which enables hosted bot utilization rate optimization|
+|__Scenario description__|A hosted machine enables developers to build, test and run automation on a constantly active (= turned-on) hosted machine.|A hosted machine group enables developers to run automation on an auto-scaling group of hosted machines. <br><br>It is continuously adjusting the number of hosted machines turned-on to the desktop flow workload.|
+|__Hosted bot allocation__|One hosted bot is allocated to the individual hosted machine at its creation.|One hosted bot is temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one extra hosted bot.|
+|__Hosted bot release__|The hosted bots is released to the available hosted pool<sup>1</sup> at manual deletion of the hosted machine.|The hosted bot is automatically released to the available hosted pool<sup>1</sup> by the hosted machine group when it scales down (= when one of its hosted machines is turned-off).|
+|__Hosted bot settings__|None|An hosted machine group has two scaling settings:<br>- __Max bots__: the maximum number of hosted bots it can auto-allocate itself to turn-on hosted machines.<br>- __Committed bots__: the guaranteed number of hosted bots it can immediately auto-allocate itself when required.|
+|__Scenario benefits__|- Hosted machine constantly turned-on <br> - Reaction time|- Auto-scalability delivering high processing parallelization and reacting to demand spikes<br>- Load balancing<sup>2</sup> accross multiple hosted machine groups which optimizes the hosted bot utilization rate|
 
-_1. The available hosted pool support all hosted machine group auto-scaling operations and their load balancing_
+_1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty_ <br>
+_2. Load balancing refers to the ability of multiple hosted machine group to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._
 
-
-So hosted bots are never really allocated per-say to hosted machine groups: they are pulled and released from a shared pool of available hosted bots (non-allocated to hosted machines)
-
-Each hosted bot can carry one unattended desktop flow run at a time. Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license.
+Each hosted bot can carry one unattended desktop flow run at a time (and so can be seen as an unattended bot too). Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license or a [Trial license](types.md#power-automate-trial-license).<br>
 
 > [!NOTE]
 > - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
 
-As the Hosted RPA add-ons have been converted to into Hosted Process licenses, learn about their extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) on the [Hosted Process license](types.md#power-automate-hosted-process-license) documentation.
+As the Hosted RPA add-ons have been converted into Hosted Process licenses, learn about their extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) on the [Hosted Process license](types.md#power-automate-hosted-process-license) documentation.
 
 <br>
 
