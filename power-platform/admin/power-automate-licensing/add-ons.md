@@ -55,7 +55,7 @@ When an unattended run is triggered through an unattended bot, Power Automate se
 
 Unattended RPA scenarios, without human interaction, are applicable for example to scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
-As the Unattended RPA add-on has been upgraded to align on the Process license, its extra-capabilities (to cover cloud flows invoking the machine with unattended bot(s) / to be allocated to a cloud flow directy) are detailed on the [Process license](types.md#power-automate-process-license) documentation.
+As the Unattended RPA add-on has been upgraded to align on the Process license, learn about its extra-capabilities (to cover cloud flows invoking the machine with unattended bot(s) / to be allocated to a cloud flow directy) on the [Process license](types.md#power-automate-process-license) documentation.
   
 ### Hosted RPA add-on  (legacy)
 
@@ -78,7 +78,7 @@ Each hosted bot can carry one unattended desktop flow run at a time. Individual 
 > [!NOTE]
 > - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
 
-As the Hosted RPA add-ons have been converted to into Hosted Process licenses, its extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) are detailed on the [Hosted Process license](types.md#power-automate-hosted-process-license) documentation.
+As the Hosted RPA add-ons have been converted to into Hosted Process licenses, learn about their extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) on the [Hosted Process license](types.md#power-automate-hosted-process-license) documentation.
 
 <br>
 
