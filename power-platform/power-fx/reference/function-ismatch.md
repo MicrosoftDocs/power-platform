@@ -206,7 +206,7 @@ The user types **Hello world** into **TextInput1**.
 
 Let's drill into that last example. If you wanted to convert this string to a date/time value using the **[Time](function-date-time.md)** function, you must pass in the named sub-matches individually. To do this, you can use the **[With](function-with.md)** function operating on the record that **Match** returns:
 
-```powerapps-dot
+```power-fx
 With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
    Time( Value( hours ), Value( minutes ), Value( seconds ) )
@@ -215,7 +215,7 @@ With(
 
 For these examples, add a [Button](/power-apps/maker/canvas-apps/controls/control-button) control, set its **OnSelect** property to this formula, and then select the button:
 
-```powerapps-dot
+```power-fx
 Set( pangram, "The quick brown fox jumps over the lazy dog." )
 ```
 

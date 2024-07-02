@@ -40,7 +40,7 @@ Launches a webpage or a canvas app. The function supports:
 
 Webpages are launched via a URL address. For example:
 
-```powerapps-dot
+```power-fx
 Launch( "https://bing.com" )
 ```
 
@@ -59,8 +59,10 @@ You can launch canvas apps with **Web link** or **App URI** (app id prefixed wit
 
 The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function. For example:
 
-```powerapps-dot
+
+```power-fx
 Launch( "https://apps.powerapps.com/e/{environment id}/a/{app id}?tenantId={tenantId}" )
+
 ```
 
 Native apps on a device can't be launched directly. There may be indirect options available on some platforms, such as a native app installing a custom URL scheme or registering with the web browser to offer an option for specific web sites.
@@ -71,13 +73,13 @@ Native apps on a device can't be launched directly. There may be indirect option
 
 - An argument list of name value pairs. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", "q", "Power Apps", "count", 1 )
   ```
 
 - A record of field values. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", { q: "Power Apps", count: 1 } )
   ```
 
@@ -208,7 +210,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 
 Update the app ID, screen name, and record number as appropriate.
 
-```powerapps-dot
+```power-fx
 Launch( "/providers/Microsoft.PowerApps/apps/YOUR-APP-ID",
         { Navigate: "Second Screen", Record: 34 }
 )
