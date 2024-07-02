@@ -69,22 +69,22 @@ In addition to user licenses, organizations can upgrade their automation scenari
 
 |License name<br>__________________________|License type<br>_______________|Allocated object<br>___________________________|Entitlements<br>___________________________________________________________________|
 ------|------|------|------
-[Power Automate Process](#power-automate-process-license)|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Multiple cloud flows part of the same business process (invoicing process, ticketing process, etc.) can be associated together and covered by the same licenses.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time<sup>1</sup>. 
+[Power Automate Process](#power-automate-process-license)|Capacity|- Cloud flow <br>- Standard machine|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users (regardless of their user license) within the organization. Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](#power-platform-requests) (stackable limit). <br><br>Multiple cloud flows part of the same business process (invoicing process, ticketing process, etc.) can be associated together and covered by the same Process license(s).<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>. 
 [Power Automate Hosted Process](#power-automate-hosted-process-license)|Capacity|- Hosted machine <br>- Hosted machine group<sup>2</sup><br>- Cloud flow<br>- Machine|The Power Automate Hosted Process is a superset of the Power Automate Process. It can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine) but it's also able to support an extra scenario: the provisioning of Microsoft hosted machine (standalone or within a hosted machine group), enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview).
 Power Automate Per-flow plan|Capacity (legacy)|- Cloud flow|The Power Automate Process license has replaced this license. It's no longer available for purchase from the pricing page but customers can still purchase it via deal desk.
 
 _1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
 _2. The Hosted Process license is not statically allocated to a hosted machine group : it is dynamically allocated and deallocated (load balancing) from a hosted machine group depending on workload to support each of its active hosted machines_ <br>
 
-##### Can my organization only purchase and use capacity licenses within an environment?
-Capacity licenses usually can't replace all user licenses within an environment as some essential capabilities are only available to licensed users:
-- Allocation of a Process license to a machine (required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
-- Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
-
 > [!NOTE]
 >
 > - Process license and Hosted Process license utilization within an environment are manageable through the [capacity utilization](/power-automate/desktop-flows/capacity-utilization) page
 > - Hosted Process licenses are not yet usable on machines and cloud flows, in the meantime any Hosted Process license in an environment allows it to go in [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) which overage quantity should be ignored if the Hosted Process license quantity exceeds it
+
+#### Can my organization only purchase and use capacity licenses within an environment?
+Capacity licenses usually can't replace all user licenses within an environment as some essential capabilities are only available to licensed users:
+- Allocation of a Process license to a machine (required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
+- Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
 
 <br>
 
@@ -99,7 +99,7 @@ Here-bellow a table detailing each license [entitlement](#license-entitlements):
 |__Standard connectors__|Included|Included|Included|
 |__Premium connectors__|Included|Included|Included|
 |__Custom connectors__|Included|Included|Included|
-|__Attended RPA__|Included|Not included|Not included|
+|__Attended RPA__|One attended bot included|Not included|Not included|
 |__Unattended RPA <sup>3</sup>__|Not included|One unattended bot included|One unattended bot included <sup>4</sup>|
 |__Hosted RPA__|Not included|Not included|One hosted bot included <sup>4</sup>|
 |__Business process flows__|Included|Included|Included|
@@ -346,8 +346,8 @@ There's a [free Power Apps Developer plan to learn about Power Platform](https:/
 |__Standard connectors__|Included|Included|Included|Included|
 |__Premium connectors__|Not included|Included|Included|Included|
 |__Custom connectors__|Not included|Included|Included|Included|
-|__Attended RPA__|Not included|Included|Not included|Not included|
-|__Unattended RPA__|Not included|Included|Not included|Not included|
+|__Attended RPA__|Not included|One attended bot included|Not included|Not included|
+|__Unattended RPA__|Not included|One unattended bot included|Not included|Not included|
 |__Hosted RPA__|Not included|Not included|Not included|Not included|
 |__Business process flows__|Not included|Included|Included|Included|
 |__On-premises gateways__|Not included|Included|Included|Included|
