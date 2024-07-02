@@ -54,7 +54,7 @@ This canvas component mimics the style and behavior of the [Fluent UI Panel cont
 | `Label` | The label displayed on the button |
 | `ButtonType` | Enumeration that determines the styling of the button. Choose between `Standard` and `Primary` |
 
-```powerapps-dot
+```power-fx
 Table(
   {
     Label: "Cancel",
@@ -90,7 +90,7 @@ The `Panel`'s visibility can be toggled with a Boolean (true/false) type variabl
 
 1. Use the following Power Fx formula to display the dialog (e.g., the `OnSelect` property of a button control):
 
-    ```powerapps-dot
+    ```power-fx
     UpdateContext({ showHideDialog: true })
     ```
 
@@ -105,7 +105,7 @@ The `Panel`'s visibility can be toggled with a Boolean (true/false) type variabl
 
 In the `OnButtonSelect` property of the panel, provide actions in an `If()` or `Switch()` condition based on the `Self.SelectedButton.Label` text value to define the action. Depending on the action, it is common to hide the `Panel` after the action is completed.
 
-```powerapps-dot
+```power-fx
 Switch( Self.SelectedButton.Label,
   "Ok", Notify("The Ok button was pressed.");
 );

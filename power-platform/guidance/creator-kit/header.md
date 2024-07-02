@@ -75,7 +75,7 @@ This canvas component mimics the style and behavior of the default Power Apps he
 
 If you want to only display the header, you can hide the default navigation bar that is rendered by Power Apps player by sharing the app link with the query parameter `hideNavBar`:
 
-```powerapps-dot
+```power-fx
 https://apps.powerapps.com/play/APPID?source=iframe&hidenavbar=true
 ```
 
