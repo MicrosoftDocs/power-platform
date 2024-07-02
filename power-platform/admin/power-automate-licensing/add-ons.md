@@ -55,7 +55,7 @@ When an unattended run is triggered through an unattended bot, Power Automate se
 
 Unattended RPA scenarios, without human interaction, are applicable for example to scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
-As the Unattended RPA add-on has been upgraded to align on the Process license, learn about its extra-capabilities (to cover cloud flows invoking the machine with unattended bot(s) / to be allocated to a cloud flow directy) on the [Process license](types.md#power-automate-process-license) documentation.
+As the Unattended RPA add-on has been upgraded to align on the Process license, learn about its extra-capabilities (to cover cloud flows invoking the machine with unattended bot(s) / to be allocated to a cloud flow directly) on the [Process license](types.md#power-automate-process-license) documentation.
   
 ### Hosted RPA add-on  (legacy)
 
@@ -63,18 +63,25 @@ As the Unattended RPA add-on has been upgraded to align on the Process license, 
 > - The [Power Automate Hosted Process license](types.md#power-automate-hosted-process-license) has replaced the Hosted RPA add-on (same price with more entitlements)
 > - The existing Hosted RPA add-ons have been automatically converted into Power Automate Hosted Process licenses: no action needs to be taken
 
-The Hosted RPA add-on provides the [hosted RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview.md) (= no machine management on user side).
+The Hosted RPA add-on provides the [hosted RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview.md) (= no physical machine management on the user side).
 
-It's needed to provision a Microsof hosted machine in the two following scenarios:
-- [Individual hosted machines](/power-automate/desktop-flows/hosted-machines.md), enable developers to build, test and run automation on a constantly active (= turned-on) hosted machine.
-- [Hosted machine groups](/power-automate/desktop-flows/hosted-machine-groups.md), enable developers to run automation on an automatically up-scaling and down-scaling group of hosted machines (adjusting the number of hosted machines turned-on to the desktop flow workload) to optimize automation in production, delivering improved business process continuity and governance at scale.
+The add-on is needed to provision a Microsoft hosted machine in the two following scenarios:
+- [Individual hosted machine](/power-automate/desktop-flows/hosted-machines.md)
+- [Hosted machine group](/power-automate/desktop-flows/hosted-machine-groups.md)
 
-Hence, at provisionning of any hosted machine (individual or part of a group), a Hosted RPA add-on is automatically auto-allocated to it and becomes a hosted bot:
-- When allocated to a standalone hosted machine, the hosted bot and its underlying Hosted RPA add-on remain allocated to the hosted machine until it gets deleted.
-- When allocated to hosted machine within a hosted machine group (at hosted machine group up-scaling), the hosted bot and its underlying Hosted RPA add-on are later automatically released once the hosted machine gets turned-off on workload decrease.
+At provisioning of any hosted machine (individual or within a group), a Hosted RPA add-on is auto-allocated to it and becomes a __hosted bot__.
+
+|<br>__________________________|Hosted machine<br>______________________________________________|Hosted machine group<br>__________________________________________________________|
+|-------|------|------|
+|__Scenario__|The hosted machine enables developers to build, test and run automation on a constantly active (= turned-on) hosted machine.|The hosted machine group enables developers to run automation on an auto-scaling group of hosted machines. <br><br>It is continuously adjusting the number of hosted machines turned-on to the desktop flow workload.|
+|__Hosted bot allocation__|The hosted bot is allocated to the individual hosted machine at its creation.|The hosted bot is temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one hosted bot.|
+|__Hosted bot release__|The hosted bots is released to the available hosted pool<sup>1</sup> at manual deletion of the hosted machine.|The hosted bot is automatically released to the available hosted pool<sup>1</sup> by the hosted machine group when it scales down (= when one of its hosted machine is turned-off).|
+|__Scenario benefits__|- Hosted machine constantly turned-on <br> - Reaction time|- Auto-scalability delivering high processing parallelization and reacting to demand spikes<br>- Load balancing accross multiple hosted machine groups which enables hosted bot utilization rate optimization|
+
+_1. The available hosted pool support all hosted machine group auto-scaling operations and their load balancing_
 
 
-An essential benefit of hosted machine group is their ability to share hosted bots: 2 hosted machine groups wi
+So hosted bots are never really allocated per-say to hosted machine groups: they are pulled and released from a shared pool of available hosted bots (non-allocated to hosted machines)
 
 Each hosted bot can carry one unattended desktop flow run at a time. Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license.
 
