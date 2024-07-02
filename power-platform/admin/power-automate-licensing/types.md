@@ -166,7 +166,7 @@ To learn more about the premium RPA capabilities, go to [Premium RPA features](/
 |Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate.|
 
 
-### Credits and storage entitlements
+### Consumptive credits and storage entitlements
 
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
 |----------|-------|
