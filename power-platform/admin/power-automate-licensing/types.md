@@ -252,6 +252,9 @@ _1. Process allocation to cloud flows and flow association to process flows is n
 _2. Cloud flow with "Process plan inherited from machine" are not yet available_ <br>
 _3. Breakdown of cloud flow allocations is not yet available in the process capacity utilization page_
 
+> [!NOTE]
+> - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Process license.
+
 ### Power Automate Hosted Process license
 
 A Power Automate Hosted Process is auto-allocated to a hosted machine at its creation and released at its deletion. It is 
