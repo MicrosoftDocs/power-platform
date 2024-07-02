@@ -63,15 +63,18 @@ As the Unattended RPA add-on has been upgraded to align on the Process license, 
 > - The [Power Automate Hosted Process license](types.md#power-automate-hosted-process-license) has replaced the Hosted RPA add-on (same price with more entitlements)
 > - The existing Hosted RPA add-ons have been automatically converted into Power Automate Hosted Process licenses: no action needs to be taken
 
-The Hosted RPA add-on provides the [hosted RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview.md). 
+The Hosted RPA add-on provides the [hosted RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview.md) (= no machine management on user side).
 
-It's needed to provision a hosted machine in the two following scenarios:
-- [Individual hosted machines](/power-automate/desktop-flows/hosted-machines.md), enable developers to build or test automation and business users to run automation.
-- [Hosted machine groups](/power-automate/desktop-flows/hosted-machine-groups.md), automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
+It's needed to provision a Microsof hosted machine in the two following scenarios:
+- [Individual hosted machines](/power-automate/desktop-flows/hosted-machines.md), enable developers to build, test and run automation on a constantly active (= turned-on) hosted machine.
+- [Hosted machine groups](/power-automate/desktop-flows/hosted-machine-groups.md), enable developers to run automation on an automatically up-scaling and down-scaling group of hosted machines (adjusting the number of hosted machines turned-on to the desktop flow workload) to optimize automation in production, delivering improved business process continuity and governance at scale.
 
 Hence, at provisionning of any hosted machine (individual or part of a group), a Hosted RPA add-on is automatically auto-allocated to it and becomes a hosted bot:
 - When allocated to a standalone hosted machine, the hosted bot and its underlying Hosted RPA add-on remain allocated to the hosted machine until it gets deleted.
-- When allocated to hosted machine within a hosted machine group (at hosted machine group scaling), the hosted bot and its underlying Hosted RPA add-on are later automatically released once the hosted machine gets turned-off at workload down-scaling.
+- When allocated to hosted machine within a hosted machine group (at hosted machine group up-scaling), the hosted bot and its underlying Hosted RPA add-on are later automatically released once the hosted machine gets turned-off on workload decrease.
+
+
+An essential benefit of hosted machine group is their ability to share hosted bots: 2 hosted machine groups wi
 
 Each hosted bot can carry one unattended desktop flow run at a time. Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license.
 
