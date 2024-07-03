@@ -63,12 +63,12 @@ On the next page of the wizard, you can set the frequency your bulk deletion job
 
 ## Priority Bulk Delete jobs for asyncoperation
 
-To Unblock customer with huge asyncoperation size, We recently introduced **Bulk Delete Priority** Feature for asyncoperation cleanup. This feature will be available out of the box for all organizations by End of July 2024. Here are some key points to note:
+To Unblock customer with huge asyncoperation size, We recently introduced **Priority Based Bulk Delete** Feature for asyncoperation cleanup. This feature will be available out of the box for all organizations by End of July 2024. Here are some key points to note:
 
-- Bulk Delete Priority applies only to Newly Created Non-Recurring Bulk Delete jobs.
+- Bulk Delete Priority applies only to Newly Created Non-Recurring Bulk Delete jobs for entity asyncoperation.
 - To maximize effectiveness of this feature and get optimal job performance: Create jobs with varying filter conditions, such as jobs with different date ranges, system job types, status codes, or any other criteria.
-- Organizations can create up to 5 priority jobs. Post that, new jobs will be created with default preference.
-- Regardless of the number of non-async jobs in the queue, one async job can always be created with priority.
+- Organizations can create up to **5 priority jobs**. Post that, new jobs will be created with default preference.
+- Regardless of the number of non-asyncoperation entity jobs in the queue, one asyncoperation job can always be created with priority.
 - There is no change with respect to Bulk Delete job creation steps.
 
 ## Best practices for designing workflows
