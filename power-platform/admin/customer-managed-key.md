@@ -268,10 +268,9 @@ Register Power Platform as a resource provider. You only need to do this task on
 1. Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](https://ms.portal.azure.com/#create/Microsoft.Template)
 1. After the PowerShell MSI is installed, go back to [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure.
 1. Select the **Build your own template in the editor** link.
-1. Copy the JSON template into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
+1. Copy [this JSON template](#enterprise-policy-json-template) into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
 1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, and *keyName*. More information: [Field definitions for json template](#field-definitions-for-json-template)
 1. Copy the updated template from your text editor then paste it into the **Edit template** of the **Custom deployment** in Azure, and select **Save**.
-   :::image type="content" source="media/cmk-keyvault-template.png" alt-text="Azure key vault template":::
 1. Select a **Subscription** and **Resource group** where the enterprise policy is to be created.
 1. Select **Review + create**, and then select **Create**.
 
