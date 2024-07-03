@@ -48,9 +48,17 @@ There are two Power Automate (legacy) capacity add-ons:
 
 The Unattended RPA add-on provides the [unattended RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). 
 
-When allocated to a machine, an Unattended RPA add-on becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time. Unattended bots can be deployed on a local or remote desktop, or in a virtualized environment. Discover [how to allocate an unattended bot to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-machine).
+|<br>_________________________________|Standard machine (physical or virtual)<br>__________________________________________________________________________________________________________|
+|-------|------|
+|__Scenario description__|When allocated to a machine, an Unattended RPA add-on becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time<sup>1</sup>. |
+|__Unattended bot allocation__|Unattended bots can be manually allocated to machines or automatically allocated to them at runtime<sup>2</sup>. <br><br>Discover [how to allocate an unattended bot to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-machine).|
+|__Unattended bot release__|Unattended bots needs to be manually deallocated from the machine.|
+|__Unattended bot settings__|Each machine - depending on its OS - can support a maximum number of unattended bots (equal to the maximum number of Windows session the machine can concurrently open).<br><br>For example some Windows server can open 10 Windows session at the same time and can therefore be allocated up to 10 unattended bots.|
+|__Scenario benefits__|- Unattended mode enablement on the machine<sup>3</sup> <br>- Multi-session management through multi-allocation <br>- Reduced machine management through auto-allocation at desktop flow runtime|
 
-When an unattended run is triggered through an unattended bot, Power Automate securely signs into the user's machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
+_1. When an unattended run is triggered through an unattended bot, Power Automate securely signs into the user's machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
+_2. Unattended bot can be auto-allocated at desktop flow unattended runtime if the machine setting 'Enable auto-allocation' is ON and the machine needs an additional bot to perform the run._ <br>
+_3. A standard machine with no unattended bot cannot run unattended except when the user has a [Trial license](types.md#power-automate-trial-license)._ 
 
 > [!NOTE]
 > - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
