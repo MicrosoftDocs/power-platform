@@ -61,16 +61,15 @@ On the next page of the wizard, you can set the frequency your bulk deletion job
 
 :::image type="content" source="media/bulk-deletion-job-duration.png" alt-text="Set duration of bulk deletion job.":::
 
-## Bulk Delete Priority jobs
+## Priority Bulk Delete jobs for asyncoperation
 
-To Unblock customer with huge asyncoperation size, We recently introduced **Bulk Delete Priority** Feature for Asyncoperation cleanup. This feature will be available out of the box for all organizations by End of July 2024. Here are some key points to note:
+To Unblock customer with huge asyncoperation size, We recently introduced **Bulk Delete Priority** Feature for asyncoperation cleanup. This feature will be available out of the box for all organizations by End of July 2024. Here are some key points to note:
 
-- Bulk Delete Priority applies only to New Created Non-Recurring Bulk Delete jobs.
-- To maximize effectiveness of this feature and get optimal job performance: Create jobs with varying filter conditions, such as different date ranges, system job types, status codes, or other criteria.
-- Organizations have the ability to create up to 5 asynchronous jobs that can run with priority. Post that, new jobs will be created with default preference.
+- Bulk Delete Priority applies only to Newly Created Non-Recurring Bulk Delete jobs.
+- To maximize effectiveness of this feature and get optimal job performance: Create jobs with varying filter conditions, such as jobs with different date ranges, system job types, status codes, or any other criteria.
+- Organizations can create up to 5 priority jobs. Post that, new jobs will be created with default preference.
 - Regardless of the number of non-async jobs in the queue, one async job can always be created with priority.
-- While currently specific to the Asyncoperation entity, we have plans to extend this feature to other entities which will be announced when available.
-- There is no change with respect to job creation.
+- There is no change with respect to Bulk Delete job creation steps.
 
 ## Best practices for designing workflows
 
