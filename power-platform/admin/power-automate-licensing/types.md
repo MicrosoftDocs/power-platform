@@ -258,15 +258,18 @@ _4. Breakdown of cloud flow allocations is not yet available in the process capa
 
 ### Power Automate Hosted Process license
 
-A Power Automate Hosted Process is auto-allocated to a hosted machine at its creation and released at its deletion. It is 
+A Power Automate Hosted Process can be used by an individual hosted machine, by a hosted machine group (or by a cloud flow / a machine acting as a Process license):
 
 |Hosted Process license scenarios<br>______________________________________________|Description<br>____________________________________________________________________________________________|
 |----------|-------|
-|__Environment assignment__|To be used by a hosted machine or a hosted machine group, a Hosted Process capacity license first needs to be assigned to the environment where the hosted machine or the hosted machine group is located. Learn [how to allocate a Hosted Process capacity license to an environment](/power-platform/admin/capacity-add-on.md#allocate-or-change-capacity-in-an-environment).|
-|__Hosted machine allocation__|.|
-|__Hosted machine group usage__|.|
+|__Environment assignment__|To be used by a hosted machine or a hosted machine group (or by a cloud / flow a machine), a Hosted Process capacity license first needs to be assigned to the environment where the hosted machine or the hosted machine group is located. <br><br>Learn [how to allocate a Hosted Process capacity license to an environment](/power-platform/admin/capacity-add-on.md#allocate-or-change-capacity-in-an-environment).|
+|__Hosted machine allocation__|A hosted machine enables developers to build, test and run automation on a constantly active (= turned-on) hosted machine. <br><br>At creation of an individual hosted machine, a Hosted RPA add-on is auto-allocated to it and becomes a hosted bot. This hosted bot is pulled from the available hosted pool<sup>1</sup> and is automatically released back to the pool at manual deletion of the hosted machine.|
+|__Hosted machine group usage__|A hosted machine group enables developers to run automation on an auto-scaling group of hosted machines. It is continuously adjusting the number of hosted machines turned-on to the desktop flow workload. <br><br>One hosted bot is automatically pulled from the available hosted pool<sup>1</sup> and temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one extra hosted bot. The hosted bot is automatically released to the available hosted pool<sup>1</sup>by the hosted machine group when it scales down (= when one of its hosted machines is turned-off). <br><br>An hosted machine group has two scaling settings: <br>- Max bots: the maximum number of hosted bots it can auto-allocate itself to turn-on hosted machines. <br>- Committed bots: the guaranteed number of hosted bots it can immediately auto-allocate itself when required.<br><br>The key benefits of hosted machine groups are: <br>- Auto-scalability delivering high processing parallelization and reacting to demand spikes <br> - [Load balancing](/power-automate/desktop-flows/hosted-machine-groups.md#load-balance-hosted-machine-group)<sup>2</sup> accross multiple hosted machine groups which optimizes the hosted bot utilization rate.|
 |__Hosted Process usage as a Process license__|.|
 |__Utilization management__|You can visualize and manage all Hosted Process licenses allocated to hosted machines and hosted machine groups within an environment using the [Hosted Process capacity utilization](/power-automate/desktop-flows/capacity-utilization-hosted) page.|
+
+_1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty_ <br>
+_2. Load balancing refers to the ability of multiple hosted machine group to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._
 
 ### Power Automate Free license
 
