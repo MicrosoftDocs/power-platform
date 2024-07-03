@@ -28,6 +28,8 @@ The Power Automate add-ons are categorized as follows:
 |Consumptive add-on|A consumptive add-on provides a monthly quantity of units (AI builder credits, Power Platform requests) which are consumed and destroyed after usage.|
 |Storage add-on|A storage add-on provides data storage space to support scalling of various Power Automate operations.|
 
+You can purchase those add-ons on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you are an admin).
+
 <br>
 
 ## Power Automate capacity add-ons
@@ -74,8 +76,8 @@ At provisioning of any hosted machine (individual or within a group), a Hosted R
 |<br>__________________________|Hosted machine<br>______________________________________________|Hosted machine group<br>__________________________________________________________|
 |-------|------|------|
 |__Scenario description__|A hosted machine enables developers to build, test and run automation on a constantly active (= turned-on) hosted machine.|A hosted machine group enables developers to run automation on an auto-scaling group of hosted machines. <br><br>It is continuously adjusting the number of hosted machines turned-on to the desktop flow workload.|
-|__Hosted bot allocation__|One hosted bot is pulled from the available hosted pool<sup>1</sup> and allocated to the individual hosted machine at its creation.|One hosted bot is pulled from the available hosted pool<sup>1</sup> and temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one extra hosted bot.|
-|__Hosted bot release__|The hosted bots is released to the available hosted pool<sup>1</sup> at manual deletion of the hosted machine.|The hosted bot is automatically released to the available hosted pool<sup>1</sup> by the hosted machine group when it scales down (= when one of its hosted machines is turned-off).|
+|__Hosted bot allocation__|One hosted bot is automatically pulled from the available hosted pool<sup>1</sup> and allocated to the individual hosted machine at its creation.|One hosted bot is automatically pulled from the available hosted pool<sup>1</sup> and temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one extra hosted bot.|
+|__Hosted bot release__|The hosted bots is automatically released to the available hosted pool<sup>1</sup> at manual deletion of the hosted machine.|The hosted bot is automatically released to the available hosted pool<sup>1</sup> by the hosted machine group when it scales down (= when one of its hosted machines is turned-off).|
 |__Hosted bot settings__|None|An hosted machine group has two scaling settings:<br>- __Max bots__: the maximum number of hosted bots it can auto-allocate itself to turn-on hosted machines.<br>- __Committed bots__: the guaranteed number of hosted bots it can immediately auto-allocate itself when required.|
 |__Scenario benefits__|- Hosted machine constantly turned-on <br> - Reaction time|- Auto-scalability delivering high processing parallelization and reacting to demand spikes<br>- [Load balancing](/power-automate/desktop-flows/hosted-machine-groups.md#load-balance-hosted-machine-group)<sup>2</sup> accross multiple hosted machine groups which optimizes the hosted bot utilization rate|
 
