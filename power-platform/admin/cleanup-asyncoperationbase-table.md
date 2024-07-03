@@ -70,7 +70,7 @@ To Unblock customer with huge asyncoperation size, We recently introduced **Bulk
 - Organizations have the ability to create up to 5 asynchronous jobs that can run with priority. Post that, new jobs will be created with default preference.
 - Regardless of the number of non-async jobs in the queue, one async job can always be created with priority.
 - While currently specific to the Asyncoperation entity, we have plans to extend this feature to other entities which will be announced when available.
-- There is no change with repect to job creation.
+- There is no change with respect to job creation.
 
 ## Best practices for designing workflows
 
