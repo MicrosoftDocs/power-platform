@@ -39,6 +39,15 @@ If you open one of these recurring bulk deletion system job records, you can see
 
 :::image type="content" source="media/bulk-deletion-operation-actions.png" alt-text="Bulk deletion operation Action menu.":::
 
+To Unblock customer with huge asyncoperation, We recently introduced **Bulk Delete Priority** Feature for Asyncoperation cleanup. This feature will be available out of the box for all organizations by July 20th, 2024. Here are some key points to note:
+
+1. Bulk Delete Priority applies only to Non-Recurring Bulk Delete jobs.
+2. To maximize the effectiveness of this feature and get optimal job performance: Create jobs with varying filter conditions, such as different date ranges, system job types, status codes, or other criteria.
+3. Organizations have the ability to create up to 5 asynchronous jobs that can run with priority. Post that, new jobs will be created with default priority.
+4. Regardless of the number of non-async jobs in the queue, one async job can always be created with priority.
+5. While currently specific to the Asyncoperation entity, we have plans to extend this feature to other entities by Dec 2024.
+
+
 ## Create your own bulk deletion jobs
 
 If the out-of-the-box system bulk deletion jobs don't meet your organization's needs, you can create your own bulk deletion job. From the **Bulk Record Deletion** grid, select **New** on the command bar. This opens the Bulk Deletion wizard that allows you to define a query for the records you want deleted. The wizard also lets you preview the set of records the query picks up for deletion to allow you to test that you constructed your query correctly.
