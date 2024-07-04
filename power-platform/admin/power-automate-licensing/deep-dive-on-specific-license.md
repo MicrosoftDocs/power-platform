@@ -1,6 +1,6 @@
 ---
-title: Zoom on specific licenses
-description: Learn about each license
+title: Deep dive on specific licenses
+description: Learn more about each license
 author: cvassallo
 contributors:
   - cvassallo
@@ -16,7 +16,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---
-## Zoom on specific licenses
+## Deep dive on specific licenses
 
 Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article provides details on each licenses.
 
