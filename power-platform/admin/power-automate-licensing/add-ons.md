@@ -46,7 +46,7 @@ There are two Power Automate (legacy) capacity add-ons:
 ### Unattended RPA add-on (legacy)
 
 > [!IMPORTANT]
-> - The [Power Automate Process license](types.md#power-automate-process-license) has replaced the Unattended RPA add-on (same price with more entitlements).
+> - The [Power Automate Process license](deep-dive-on-specific-license.md#power-automate-process-license) has replaced the Unattended RPA add-on (same price with more entitlements).
 > - The already purchased Unattended RPA add-ons are considered legacy and shouldn't be renewed but instead replaced by Power Automate Process licenses.
 > - The existing Unattended RPA add-ons have however been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
 
@@ -69,12 +69,12 @@ _3. A standard machine with no unattended bot cannot run unattended except when 
 
 Unattended RPA scenarios, without human interaction, are applicable for example to scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
-As the Unattended RPA add-on has been upgraded to align on the Process license, learn about its extra-capabilities (to cover cloud flows invoking the machine with unattended bot(s) / to be allocated to a cloud flow directly) on the [Process license](types.md#power-automate-process-license) documentation.
+As the Unattended RPA add-on has been upgraded to align on the Process license, learn about its extra-capabilities (to cover cloud flows invoking the machine with unattended bot(s) / to be allocated to a cloud flow directly) on the [Process license](deep-dive-on-specific-license.md#power-automate-process-license) documentation.
   
 ### Hosted RPA add-on  (legacy)
 
 > [!IMPORTANT]
-> - The [Power Automate Hosted Process license](types.md#power-automate-hosted-process-license) has replaced the Hosted RPA add-on (same price with more entitlements)
+> - The [Power Automate Hosted Process license](deep-dive-on-specific-license.md#power-automate-hosted-process-license) has replaced the Hosted RPA add-on (same price with more entitlements)
 > - The existing Hosted RPA add-ons have been automatically converted into Power Automate Hosted Process licenses: no action needs to be taken
 
 The Hosted RPA add-on provides the [hosted RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview.md) (= no physical machine management on the user side).
@@ -96,12 +96,12 @@ At provisioning of any hosted machine (individual or within a group), a Hosted R
 _1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty_ <br>
 _2. Load balancing refers to the ability of multiple hosted machine group to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._
 
-Each hosted bot can carry one unattended desktop flow run at a time (and so can be seen as an unattended bot too). Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license or a [Trial license](types.md#power-automate-trial-license).<br>
+Each hosted bot can carry one unattended desktop flow run at a time (and so can be seen as an unattended bot too). Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license or a [Trial license](deep-dive-on-specific-license.md#power-automate-trial-license).<br>
 
 > [!NOTE]
 > - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
 
-As the Hosted RPA add-ons have been converted into Hosted Process licenses, learn about their extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) on the [Hosted Process license](types.md#power-automate-hosted-process-license) documentation.
+As the Hosted RPA add-ons have been converted into Hosted Process licenses, learn about their extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) on the [Hosted Process license](deep-dive-on-specific-license.md#power-automate-hosted-process-license) documentation.
 
 <br>
 
