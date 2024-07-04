@@ -33,7 +33,8 @@ You can purchase those licenses on [Power Automate Pricing](https://flow.microso
 
 > [!NOTE]
 > 
-> As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs. 
+> - As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs.
+> - Within a Pay-as-you-go environment all premium capabilities (including RPA) are available 
 
 ## User licenses
 
