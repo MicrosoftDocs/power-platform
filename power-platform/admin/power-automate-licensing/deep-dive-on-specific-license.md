@@ -169,5 +169,5 @@ There's a [free Power Apps Developer plan to learn about Power Platform](https:/
 |__Dataverse database storage__|Not included|Not included|250-MB per license|50-MB per license|
 |__Dataverse file storage__|Not included|Not included|2-GB per license|200-MB per license|
 
-_1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](power-automate-request-limit.md))._ <br>
+_1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](api-request-limits-allocations.md#Request-limits-in-power-automate))._ <br>
 _2. Only one Per-flow plan can be allocated to a cloud flow (no multi-allocation), PPR limits can't be stacked_
