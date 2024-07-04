@@ -245,6 +245,8 @@ Dynamics 365 professional|40k per user | 200k per cloud flow|
 Dynamics 365 Enterprise applications|40k per user | 200k per cloud flow|
 Dynamics 365 Team member|6k per user| 10k per cloud flow|
 
+Learn more about [Power Automate licenses](types.md).
+
 > [!NOTE]
 > - The Power Automate Process licenses can be stacked on a cloud flow to increase its PRR limit
 > - [FAQ on Power Platform Request within Power Automate](faqs.md#power-platform-requests-questions) 
