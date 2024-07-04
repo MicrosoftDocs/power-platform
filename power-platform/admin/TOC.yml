@@ -80,7 +80,7 @@
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
                   href: global-service-administrators-can-administer-without-license.md
-            - name: Power Apps
+            - name: Power Apps licensing
               items:
                 - name: Purchase Power Apps
                   href: signup-for-powerapps-admin.md
@@ -94,7 +94,7 @@
                   href: powerapps-licensing-faq.md
                 - name: Manage Power Apps licenses
                   href: signup-question-and-answer.md
-            - name: Power Automate
+            - name: Power Automate licensing
               items:
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
