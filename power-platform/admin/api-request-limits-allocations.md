@@ -215,7 +215,7 @@ Here's a sample of a detailed usage report:
 > [!IMPORTANT]
 > Desktop flow executions don't consume Power Platform requests
 
-To ensure Power Automate service availability and quality, there are limits to the number of Power Platform requests (PPR) users can make across their cloud flows. Those limits are set against normal flow usage patterns in both five minutes and per 24 hour intervals. Most organizations don't exceed these limits.
+To ensure Power Automate service availability and quality, there are limits to the number of Power Platform requests (PPR) users can make across their cloud flows. Those limits are set against normal flow usage patterns in both five minutes and per 24 hour intervals.
 
 The 24 hour limit is based on the user license or on the Process / Per-flow plan license allocated to a cloud flow
   - If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24 hour period. This limit includes requests the platform makes to third party connectors too. 
