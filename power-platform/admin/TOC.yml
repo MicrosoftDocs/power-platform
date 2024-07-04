@@ -98,12 +98,12 @@
               items:
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
+                - name: Types of add-ons
+                  href: power-automate-licensing/add-ons.md
                 - name: Deep dive on specific licenses
                   href: power-automate-licensing/deep-dive-on-specific-license.md
                 - name: FAQs about licenses
                   href: power-automate-licensing/faqs.md
-                - name: Types of add-ons
-                  href: power-automate-licensing/add-ons.md
                 - name: Licensing management
                   items:
                     - name: When premium flows are subject to license enforcement
