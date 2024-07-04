@@ -7,6 +7,7 @@ contributors:
   - samathur
   - PriyaKodukula
   - v-aangie
+  - kenseongtan
 ms.subservice: admin
 ms.topic: overview
 ms.date: 06/24/2024
@@ -14,7 +15,6 @@ ms.author: cvassallo
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
-ms.collection: bap-ai-copilot
 ---
 
 # Types of Power Automate licenses
