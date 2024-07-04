@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions about Power Automate licensing
+title: Power Automate licensing FAQs
 description: Learn the answers to frequently asked Power Automate questions.
 author: PriyaKodukula
 contributors:
@@ -16,7 +16,7 @@ search.audienceType:
 ---
 
 
-# Frequently asked questions about Power Automate licensing
+# Power Automate licensing FAQs
 
 Here are some frequently asked questions about Power Automate standalone licenses.
 
@@ -377,13 +377,13 @@ Here are some frequently asked questions about using Power Automate with an Offi
 
 ### What Power Automate capabilities are included in Office 365 licenses?
 
-Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends the [Premium license](types#user-licenses).
+Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends the [Premium license](types.md#user-licenses).
 
 Office 365 licenses include the following Power Automate capabilities:
   
 - Create and execute automated, scheduled, and button flows.
 - Access to standard connectors.
-- 6,000 [Power Platform requests/day](./types.md#power-platform-requests). 10,000 requests/day during [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
+- 6,000 [Power Platform requests/day](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate). 10,000 requests/day during [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
   
 The following Power Automate capabilities aren't included:
   
@@ -437,7 +437,7 @@ Dynamics 365 licenses include the following Power Automate capabilities:
 - Business process flows within app context.
 - Custom connectors within app context.
 - On-premises gateways within app context.
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)).
+- [Power Platform request](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)).
 
 The following Power Automate capabilities aren't included in Dynamics 365 licenses:
 
