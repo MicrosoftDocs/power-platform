@@ -245,11 +245,11 @@ Dynamics 365 professional|40k per user | 200k per cloud flow|
 Dynamics 365 Enterprise applications|40k per user | 200k per cloud flow|
 Dynamics 365 Team member|6k per user| 10k per cloud flow|
 
-Learn more about [Power Automate licenses](/power-platform/admin/power-automate-licensing/types.md).
+Learn more about [Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
 
 > [!NOTE]
 > - The Power Automate Process licenses can be stacked on a cloud flow to increase its PRR limit
-> - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs.md#power-platform-requests-questions) 
+> - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions) 
 
 
 ### Power Automate transition period
@@ -268,7 +268,7 @@ Here are a few things to be aware of during the transition period:
 
 5. Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
-6. Seeded license users can only use cloud flows within the context of the app. To learn more, see [seeded licenses](/power-platform/admin/seeded-licenses.md) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
+6. Seeded license users can only use cloud flows within the context of the app. To learn more, see [seeded licenses](/power-platform/admin/deep-dive-on-specific-license#seeded-licenses.md) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
 ## Frequently asked questions
 
