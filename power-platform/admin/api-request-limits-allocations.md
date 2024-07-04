@@ -268,7 +268,7 @@ Here are a few things to be aware of during the transition period:
 
 5. Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
-6. Seeded license users can only use cloud flows within the context of the app. To learn more, see [seeded licenses](/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
+6. Seeded license users can only use cloud flows within the context of the app. To learn more, see [seeded licenses](power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
 
 ## Frequently asked questions
 
