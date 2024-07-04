@@ -34,7 +34,7 @@ Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide li
 
 Trial plans are available for both Power Apps and Power Automate. Free trials last 30 days for Power Apps and 90 days for [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) plans. Users can self-service sign up for these trials in your organization. This can be done by explicitly visiting the pricing pages or by being prompted when they attempt an action in the apps that require additional licensing.
 
-For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the [Power Automate Free](./power-automate-licensing/deep-dive-on-specific-license#power-automate-free-license) license. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate Trial. This trial wouldn't show up under the user licenses in the Microsoft 365 Portal, however you can see it in the Power Automate and Power Apps license report discussed later in the security section.
+For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the [Power Automate Free](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) license. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate Trial. This trial wouldn't show up under the user licenses in the Microsoft 365 Portal, however you can see it in the Power Automate and Power Apps license report discussed later in the security section.
 
 For Power Apps, if a user signs up for a Power Apps trial, they'll get a Power Apps per user trial if needed for any of the actions they take such as creating an environment.
 
@@ -60,7 +60,7 @@ Here is a brief overview of capabilities included with the Power Apps for Micros
 | Access on-premises data or use premium or custom connectors           | \-                           |
 | Access to Microsoft Dataverse                    | Yes (see the next section for details)                |
 
-To learn about capabilities included with the Power Automate for Microsoft 365 plan, see [Power Automate seeded license for Microsoft 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses).
+To learn about capabilities included with the Power Automate for Microsoft 365 plan, see [Power Automate seeded license for Microsoft 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license).
 
 ### Dataverse capabilities with Microsoft 365 licenses
 
@@ -114,7 +114,7 @@ Power Apps and Power Automate capabilities for Dynamics 365 enable users to exte
 - Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
 - Power Automate is the platform to customize and extend automations in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
 
-To learn about capabilities included with the Power Automate for Dynamics 365 plan, see [Power Automate seeded license for Dynamics 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses).
+To learn about capabilities included with the Power Automate for Dynamics 365 plan, see [Power Automate seeded license for Dynamics 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license).
 
 More information on [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
