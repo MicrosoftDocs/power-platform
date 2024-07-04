@@ -96,22 +96,24 @@
                   href: powerapps-licensing-faq.md
             - name: Power Automate
               items:
-                - name: Overview
-                  href: power-automate-licensing/overview.md
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
+                - name: Deep dive on specific licenses
+                  href: power-automate-licensing/deep-dive-on-specific-license.md
                 - name: FAQs about licenses
                   href: power-automate-licensing/faqs.md
-                - name: When premium flows are subject to license enforcement
-                  href: power-automate-licensing/when-flows-are-turned-off.md
-                - name: Buy Power Automate licenses
-                  href: power-automate-licensing/buy-licenses.md
-                - name: Add-ons
+                - name: Types of add-ons
                   href: power-automate-licensing/add-ons.md
-                - name: Request a Power Automate premium license
-                  href: power-automate-licensing/request-premium-license.md
-                - name: Autoclaim policies for Power Automate licenses (preview)
-                  href: power-automate-licensing/power-automate-auto-claim.md
+                - name: About license administration
+                    items:
+                      - name: When premium flows are subject to license enforcement
+                        href: power-automate-licensing/when-flows-are-turned-off.md
+                      - name: Buy Power Automate licenses
+                        href: power-automate-licensing/buy-licenses.md
+                      - name: Request a Power Automate premium license
+                        href: power-automate-licensing/request-premium-license.md
+                      - name: Autoclaim policies for Power Automate licenses (preview)
+                        href: power-automate-licensing/power-automate-auto-claim.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
             - name: Pay-as-you-go plan
