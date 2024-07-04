@@ -22,7 +22,7 @@ search.audienceType:
 Entitlements to use [Power Automate capabilities](#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article focusses on licenses (for details on add-ons, visit the [types of Power Automate add-ons](add-ons.md) page). 
 
 The Power Automate licenses are categorized as follows:
-![Power Automate licenses](../media/RPA-license/licenses-2.png)
+![Power Automate licenses](../media/RPA-license/licenses-3.png)
 
 |License type<br>__________________|License scope<br>_________________________________________________________|Description<br>_________________________________________________________|
 |-------|------|------|
@@ -38,7 +38,7 @@ You can purchase those licenses on [Power Automate Pricing](https://flow.microso
 
 ## User licenses
 
-![User licenses](../media/RPA-license/standalone_user_licenses.png)
+![User licenses](../media/RPA-license/standalone_user_licenses-2.png)
 
 To create, test, run and monitor Power Automate automations (cloud flows or destkop flows), users need to be individualy licensed. 
 
@@ -52,7 +52,7 @@ Power Automate Premium|User license|This is the license we recommend for all use
 
 ##  Capacity licenses
 
-![ capacity licenses](../media/RPA-license/standalone_capacity_licenses.png)
+![ capacity licenses](../media/RPA-license/standalone_capacity_licenses-2.png)
 
 In addition to user licenses, organizations can upgrade their automation scenarios with capacity licenses, which are allocated to Power Automate objects (cloud flows, machines, hosted machines, hosted machine groups) and provide these objects autonomous entitlements (regardless of the user license owned by persons interacting with those objects). 
 
