@@ -18,6 +18,10 @@ search.audienceType:
 ---
 ## Zoom on specific licenses
 
+Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors, attended RPA, etc.) are obtained via licenses and add-ons. This article provides details on each licenses.
+
+To get an overview of the Power Automate key licenses, visit the [types of Power Automate licenses](types.md) page. 
+
 ## Power Automate Process license
 
 A Power Automate Process license can be allocated to a machine or to a cloud flow.
