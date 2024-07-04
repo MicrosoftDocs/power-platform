@@ -26,7 +26,7 @@ To get an overview of the Power Automate key licenses, visit the [types of Power
 
 A Power Automate Process license can be allocated to a machine or to a cloud flow.
 
-|Process license scenarios<br>______________________________|Description<br>_______________________________________________________________________________________|
+|Process license scenarios<br>______________________________|Description<br>________________________________________________________________________________________________________|
 |----------|-------|
 |__Environment assignment__|To be used by a cloud flow or a machine, a Process capacity license first needs to be assigned to the environment where the cloud flow or the machine is located. Learn [how to allocate a Process capacity license to an environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment).|
 |__Cloud flow allocation__<sup>1</sup>|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process license allocated to a cloud flow entitles it to 250k daily Power Platform Request (stackable limit). <br><br>Discover [how to allocate a Process license to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).<br><br>A cloud flow that has been allocated a Process license becomes a 'process flow'. Process flows have their plan switch to "Process plan" and a process-flow can be associated to other cloud flows (excluding other process-flows). <br><br>A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its plan switches to "This flow is associated to run on process plan", its runs are considered 'in-context' or the Process license and its PPR consumption is counted against the Process license PPR entitlement. A process-flow can be associated to a maximum of 25 cloud flows. <br><br>Discover [how to associate flows to a process flow](/power-automate/desktop-flows/capacity-process#associate-flows-to-a-process-flow).|
@@ -39,14 +39,14 @@ _3. Cloud flow with "Process plan inherited from machine" are not yet available_
 _4. Breakdown of cloud flow allocations is not yet available in the process capacity utilization page_
 
 > [!NOTE]
-> - The Process license has replaced the [Unattended RPA add-on](add-ons#unattended-rpa-add-on) (same price with more entitlements).
+> - The Process license has replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on) (same price with more entitlements).
 > - The existing Unattended RPA add-ons have been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
 
 ## Power Automate Hosted Process license
 
 A Power Automate Hosted Process can be used by an individual hosted machine, by a hosted machine group (or by a cloud flow / a machine acting as a Process license):
 
-|Hosted Process license scenarios<br>____________________________________|Description<br>_______________________________________________________________________________________|
+|Hosted Process license scenarios<br>_________________________________________|Description<br>_________________________________________________________________________________________________|
 |----------|-------|
 |__Environment assignment__|To be used by a hosted machine or a hosted machine group (or by a cloud / flow a machine), a Hosted Process capacity license first needs to be assigned to the environment where the hosted machine or the hosted machine group is located. <br><br>Learn [how to allocate a Hosted Process capacity license to an environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment).|
 |__Hosted machine allocation__|A hosted machine enables developers to build, test and run automation on a constantly active (= turned-on) hosted machine. <br><br>At creation of an individual hosted machine, a Hosted RPA add-on is auto-allocated to it and becomes a hosted bot. This hosted bot is pulled from the available hosted pool<sup>1</sup> and is automatically released back to the pool at manual deletion of the hosted machine.|
@@ -147,7 +147,7 @@ If the cloud flow is isolated and has nothing to do with the application, then a
 
 Here-bellow a table detailing each seeded license [entitlement](types.md#license-entitlements):
 
-||Power Apps Premium<br>_______________|Office <br>365<br>_______________|Dynamics 365 professional <sup>1</sup><br>______________________|Dynamics 365 Enterprise applications <sup>2</sup><br>______________________________|Dynamics 365 Team member<br>________________________|Windows licenses<br>_______________|
+||Power Apps Premium<br>_____________________|Office 365<br>_________________|Dynamics 365 professional <sup>1</sup><br>______________________________|Dynamics 365 Enterprise applications <sup>2</sup><br>___________________________________________|Dynamics 365 Team member<br>_________________________________|Windows licenses<br>_______________________|
 |----------|-------|---------------------|--------------|--------------|--------------|--------------|
 |__Applied to__|User|User|User|User|User|Machine|
 |__Daily PPR limit__|40k per user|6k per user|40k per user|40k per user|6k per user|Not included|
@@ -174,7 +174,7 @@ _6. Only includes local execution of desktop flow (no orchestration)_ <br>
 
 ## Power Automate legacy licenses
 
-|License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________________|
+|License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________|
 -------|------|------|
 Power Automate Per-user plan|User license (legacy)|The Power Automate Premium license has replaced this license (it provides more entitlements for the same price). <br><br>The already purchased Per-user plan licenses are still usable but considered legacy and they shouldn't be renewed but instead replaced by Power Automate Premium licenses.|
 Power Automate Per-flow plan|Capacity (legacy) allocated to cloud flow|The Power Automate Process license has replaced this license. <br><br>The already purchased Per-flow plan licenses are still usable but considered legacy and they shouldn't be renewed but instead replaced by Power Automate Process licenses.|
