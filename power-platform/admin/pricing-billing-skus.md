@@ -17,7 +17,7 @@ ms.collection:
 
 # Licensing overview for Microsoft Power Platform
 
-This article provides detailed information about Microsoft Power Platform licensing.
+This article provides detailed information about Microsoft Power Platform licensing. You can also learn more on the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 ## Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages offers 
 
@@ -27,10 +27,18 @@ Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide li
 - Learn more about [Power Apps licensing](/power-platform/admin/signup-for-powerapps-admin)
 - Learn more about [Power BI licensing](https://powerbi.microsoft.com/en-us/pricing/)
 
-Learn more about all the Power Platform offering on [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
-
 > [!Note]
 > [AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
+
+## Trial Plans
+
+Trial plans are available for both Power Apps and Power Automate. Free trials last 30 days for Power Apps and 90 days for [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) plans. Users can self-service sign up for these trials in your organization. This can be done by explicitly visiting the pricing pages or by being prompted when they attempt an action in the apps that require additional licensing.
+
+For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the [Power Automate Free](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-free-license) license. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate Trial. This trial wouldn't show up under the user licenses in the Microsoft 365 Portal, however you can see it in the Power Automate and Power Apps license report discussed later in the security section.
+
+For Power Apps, if a user signs up for a Power Apps trial, they'll get a Power Apps per user trial if needed for any of the actions they take such as creating an environment.
+
+As the administrator, you'll likely be assisting users that had started in a trial and either want to continue experimenting or are ready to get a regular license to keep working with the app they are building. If you are moving to a regular license for a user, it would also be a good time to work with them to see if their app should stay where it was built or should be moved according to the environment strategy you adopt. For those not ready to get a full license but want to keep experimenting you could help them get set up on the developer plan and help them move their application and flow assets into their new developer environment.
 
 ## Power Apps and Power Automate for Microsoft 365
 
@@ -110,9 +118,9 @@ To learn about capabilities included with the Power Automate for Dynamics 365 pl
 
 More information on [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
-## Developer Plan
+## Power Apps Developer Plan
 
-If you want to build skills and learn more about Power Apps, Power Automate, and Dataverse, the Power Apps Developer Plan is the right plan for you. The Power Apps Developer Plan gives you a free development environment for individual use to learn with full functionality of Power Apps. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/).
+In addition to the trial plans, there's also a *free* Power Apps Developer Plan. This is a special plan that allows up individual self-service sign and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there's no ability to share with other users. Users in your organization can self-service sign up for this plan even if they have Power Apps and Power Automate license entitlements via another licensing plan. Sign-up for the Power Apps Developer Plan can be found [here](https://powerapps.microsoft.com/communityplan/) and more details on its features [here](/powerapps/maker/dev-community-plan).
 
 ## Pay-as-you-go plan
 
@@ -147,5 +155,19 @@ You can view a list of all assigned licenses in the [Microsoft Admin Center](htt
 | Project Plan 3 for GCC  | 074c6829-b3a0-430a-ba3d-aca365e57065  | PROJECTPROFESSIONAL_GOV  |
 | Project Plan 5 for GCC  | f2230877-72be-4fec-b1ba-7156d6f75bd6  | PROJECTPREMIUM_GOV  |
 | Dynamics 365 Customer Insights (and Attach)  | 1720c3f7-7da3-4a11-8324-92aad283eb68  | DYN365_CUSTOMER_INSIGHTS_JOURNEYS_BASE  |
+
+## What users are licensed
+
+You can always look at individual user licensing in the Microsoft 365 admin center by drilling into specific users. 
+
+You can also use the following PowerShell command to export assigned user licenses.
+
+```powershell
+Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
+```
+
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign-up internal trial plans and plans that are sourced from Microsoft Entra ID. The internal trial plans aren't visible to admins in the Microsoft 365 admin center.
+
+The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
