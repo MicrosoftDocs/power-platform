@@ -21,20 +21,24 @@ This article provides detailed information about Microsoft Power Platform licens
 
 ## Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages offers 
 
-Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data. 
+Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide licensed users the ability to create and run apps, bots, flows, and custom websites across multiple data sources that extend beyond Microsoft 365 (such as Salesforce and on-premises or custom data sources). Those product licenses also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data.
+
+- Learn more about [Power Automate licensing](/power-platform/admin/power-automate-licensing/types)
+- Learn more about [Power Apps licensing](/power-platform/admin/signup-for-powerapps-admin)
+- Learn more about [Power BI licensing](https://powerbi.microsoft.com/en-us/pricing/)
+
+Learn more about all the Power Platform offering on [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 > [!Note]
 > [AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
 
-More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
-
-For information about Power BI licensing, see [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
-
 ## Power Apps and Power Automate for Microsoft 365
 
-Power Apps and Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
+Power Apps and Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience: with these productivity apps, users can create applications and flows based on Microsoft 365 data. Power Apps and Power Automate can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors. 
 
-Here is a brief overview of capabilities included with the Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
+Learn more about Microsoft 365 plans including these capabilities in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+Here is a brief overview of capabilities included with the Power Apps for Microsoft 365 plan:
 
 | Functionalities                                                   | Power Apps for Microsoft 365 |
 |-----------------------------------------------------------------------|------------------------------|
@@ -47,6 +51,8 @@ Here is a brief overview of capabilities included with the Power Apps for Micros
 | Support for data policies established by the Microsoft 365 administrator | Yes                          |
 | Access on-premises data or use premium or custom connectors           | \-                           |
 | Access to Microsoft Dataverse                    | Yes (see the next section for details)                |
+
+To learn about capabilities included with the Power Automate for Microsoft 365 plan, see [Power Automate seeded license for Microsoft 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses).
 
 ### Dataverse capabilities with Microsoft 365 licenses
 
@@ -96,11 +102,13 @@ Users who have any Microsoft Power Platform or Dynamics 365 license are always s
 
 ## Power Apps and Power Automate for Dynamics 365
 
-Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
+Power Apps and Power Automate capabilities for Dynamics 365 enable users to extend and customize the Dynamics experience: 
+- Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
+- Power Automate is the platform to customize and extend automations in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
 
-Dynamics 365 Applications can be customized using Power Apps and Power Automate capabilities.
+To learn about capabilities included with the Power Automate for Dynamics 365 plan, see [Power Automate seeded license for Dynamics 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses).
 
-More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+More information on [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
 ## Developer Plan
 
