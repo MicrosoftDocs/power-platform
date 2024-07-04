@@ -29,13 +29,13 @@ The **Sequence** function generates a single column table of sequential numbers,
 
 Use **Sequence** with the **ForAll** function to iterate a specific number of times. For example, the following formula adds 10 random numbers to the collection **MyRandomNumbers**:
 
-```powerapps-dot
+```power-fx
 ForAll( Sequence( 10 ), Collect( MyRandomNumbers, Rand() ) )
 ```
 
 **ForAll** can also be used to transform the value into other data types and return a new table. For example, the following formula returns a table of the next 10 days:
 
-```powerapps-dot
+```power-fx
 ForAll( Sequence( 10 ), DateAdd( Today(), Value, Days ) )
 ```
 

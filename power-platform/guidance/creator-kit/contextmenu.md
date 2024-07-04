@@ -64,7 +64,7 @@ This code component provides a wrapper around the [Fluent UI ContextualMenu](htt
 
 Example Power Fx formula for `Items`:
 
-  ```powerapps-dot
+  ```power-fx
     Table(
         {
             ItemKey: "File",
@@ -115,7 +115,7 @@ Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) form
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 
-  ```powerapps-dot
+  ```power-fx
     Switch( Self.Selected.ItemKey,
       /* Action for ItemKey 1 */
       "File", false,

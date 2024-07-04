@@ -71,7 +71,7 @@ A list of users can come from any data source, but the image must be provided to
 
 Generate a collection called `UserPersonas` using [Office 365 Users connector](/connectors/office365users/), by referring to the below sample code, then pass the collection into the `Items` property of the control.
 
-```powerapps-dot
+```power-fx
 ClearCollect(
     UserPersonas,
     AddColumns(
@@ -131,7 +131,7 @@ Supports [SetFocus](setfocus.md) as an `InputEvent`.
 Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) formula in the component's `OnSelect` property to configure specific actions for each item by referring to the control's selected `ItemPersonaKey` as the switch value.
 
 Example Power Fx formula in `OnSelect` property of `Facepile`:
-  ```powerapps-dot
+  ```power-fx
     Switch( Self.EventName,
       /* Define action when persona clicked */
       "PersonaEvent", 
