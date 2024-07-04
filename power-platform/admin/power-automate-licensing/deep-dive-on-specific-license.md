@@ -39,7 +39,7 @@ _3. Cloud flow with "Process plan inherited from machine" are not yet available_
 _4. Breakdown of cloud flow allocations is not yet available in the process capacity utilization page_
 
 > [!NOTE]
-> - The Process license has replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on) (same price with more entitlements).
+> - The Process license has replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on-legacy) (same price with more entitlements).
 > - The existing Unattended RPA add-ons have been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
 
 ## Power Automate Hosted Process license
@@ -147,7 +147,7 @@ If the cloud flow is isolated and has nothing to do with the application, then a
 
 Here-bellow a table detailing each seeded license [entitlement](types.md#license-entitlements):
 
-||Power Apps Premium<br>_____________________|Office 365<br>_________________|Dynamics 365 professional <sup>1</sup><br>______________________________|Dynamics 365 Enterprise applications <sup>2</sup><br>___________________________________________|Dynamics 365 Team member<br>_________________________________|Windows licenses<br>_______________________|
+||Power Apps Premium<br>_________________________|Office 365<br>_________________|Dynamics 365 professional <sup>1</sup><br>__________________________________|Dynamics 365 Enterprise applications <sup>2</sup><br>_____________________________________________|Dynamics 365 Team member<br>_________________________________|Windows licenses<br>_______________________|
 |----------|-------|---------------------|--------------|--------------|--------------|--------------|
 |__Applied to__|User|User|User|User|User|Machine|
 |__Daily PPR limit__|40k per user|6k per user|40k per user|40k per user|6k per user|Not included|
