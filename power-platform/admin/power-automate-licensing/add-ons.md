@@ -142,5 +142,18 @@ A storage add-on provides data storage space to support scalling of operations.
 
 ### Process Mining add-on
 
+The Process Mining add-on is a tenant wide add-on that is available with the Power Automate Premium license. It offers:
+
+- Additional 100 GB of process mining capacity to the capacity pool, from which users with the Power Automate Premium license can consume.
+- Additional 2 GB of Dataverse database capacity.
+- Additional 1 TB of Dataverse file capacity.
+
+Get Power Automate pricing details at [Power Automate pricing](https://powerautomate.microsoft.com/en-us/pricing/). For inquiries about add-on capability licensing, contact [Microsoft Process and Task Mining Questions](mailto:minitq@microsoft.com).
+
 ### Dataverse storage capacity add-on
+
+Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. 
+
+To support the growing needs of today's organizations, Dataverse storage capacity add-ons can support scalling of Power Automate operations. For more information, see [how to add storage capacity to Power Platform](/power-platform/admin/add-storage).
+
 
