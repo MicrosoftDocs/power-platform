@@ -87,6 +87,9 @@ Yes. A solution can have multiple processes with a Process license assigned to e
 
 ### Who needs to purchase a Premium license?
 
+Users who need to create general-purpose automations (with the premium connectors entitlement), to have full flexibility (with the custom connectors entitlement) or to interact with applications simulating a human behavior such as keyboard or mouse keys and movement (with the Robotic Process Automation attended entitlement) should consider a Power Automate Premium license.
+
+More precisely:
 - You need a Premium license for each RPA developer who builds and manages desktop flows on the Power Automate portal. To learn more, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 - The Power Automate process plan has the highest priority among all licenses. This means if a Process license is assigned to a flow, the flow always uses this license and doesn't need an owner or running user to have a Premium license.
 - Automated and scheduled flows always run in the context of the flow owner regardless of who starts the flow or what accounts are used for connections inside of the flow. Instant flows (button, hybrid triggers) run in the context of the user who invokes them, regardless of the connections used in the flow. If an automated or scheduled flow uses a premium connector, only the owner needs to have a Premium license.
