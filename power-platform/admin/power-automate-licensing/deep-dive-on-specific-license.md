@@ -147,7 +147,7 @@ If the cloud flow is isolated and has nothing to do with the application, then a
 
 Here-bellow a table detailing each seeded license [entitlement](types.md#license-entitlements):
 
-||Power Apps Premium<br>_________________________|Office 365<br>_________________|Dynamics 365 professional <sup>1</sup><br>__________________________________|Dynamics 365 Enterprise applications <sup>2</sup><br>_____________________________________________|Dynamics 365 Team member<br>_________________________________|Windows licenses<br>_______________________|
+||Power Apps Premium<br>_________________________|Microsoft 365<br>______________________|Dynamics 365 professional <sup>1</sup><br>__________________________________|Dynamics 365 Enterprise applications <sup>2</sup><br>_____________________________________________|Dynamics 365 Team member<br>_________________________________|Windows licenses<br>_______________________|
 |----------|-------|---------------------|--------------|--------------|--------------|--------------|
 |__Applied to__|User|User|User|User|User|Machine|
 |__Daily PPR limit__|40k per user|6k per user|40k per user|40k per user|6k per user|Not included|
