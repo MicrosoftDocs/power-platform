@@ -44,7 +44,7 @@ You can purchase those licenses on [Power Automate Pricing](https://flow.microso
 
 Users who need to create general-purpose automations (with the premium connectors entitlement), to have full flexibility (with the custom connectors entitlement) or to interact with applications mimicking mouse movement of a human user (with the Robotic Process Automation attended entitlement) should consider a Power Automate Premium license.
 
-Here-after the list of available Power Automate user licenses: 
+Hereunder the list of available Power Automate user licenses: 
 
 |License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________________|
 -------|------|------|
@@ -86,7 +86,7 @@ Capacity licenses usually can't replace all user licenses within an environment 
 
 ## Compare Power Automate licenses
 
-Here-bellow a table detailing each license [entitlement](#license-entitlements):
+Hereunder a table detailing each license [entitlement](#license-entitlements):
 
 ||Premium license<br>____________________________|Process license<br>____________________________|Hosted Process license<br>____________________________|
 |----------|-------|---------------------|--------------|
@@ -116,7 +116,7 @@ _5. Up to 100 GB per tenant._
 
 ## License entitlements
 
-Licenses have entitlements and each entitlement gives access to a specific Power Automate capability. Here-bellow the list of entitlements that licenses can provide:
+Licenses have entitlements and each entitlement gives access to a specific Power Automate capability. Hereunder the list of entitlements that licenses can provide:
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
