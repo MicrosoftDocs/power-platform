@@ -126,7 +126,7 @@ Follow these instructions to [create an admin trial, check expiry, and extend tr
 
 Entitlements to use [Power Automate capabilities](types.md#license-entitlements) (standard connectors, premium connectors) can be obtained via seeded licenses. Seeded licenses are a particular type of [Power Automate user licenses](types.md#user-licenses), they are tied to other Microsoft products and they offer limited capabilities on Power Automate.
 
-### Types of seeded licenses
+### Seeded licenses
 
 Users gain limited rights to use Power Automate if they inherited seeded plans from licenses tied to other Microsoft products:
 - Microsoft 365 (formerly Office 365) / Dynamics 365 Enterprise / Dynamics 365 Professional / Dynamics 365 Team Member
