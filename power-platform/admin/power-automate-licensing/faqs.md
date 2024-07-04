@@ -107,7 +107,7 @@ To find out what type (automated/manual/scheduled) of flow you have, select a fl
     - The child flow uses premium connectors, and
     - The child flow doesn't have a Process license. If the child flow has a Process license, it uses the Process license and not the parent flow's license.
 
-During the [transition period](types.md#transition-period), the parent flow license isn't inherited by the child flow. The child flow uses the owner's license. However, after the transition period ends, only the parent flow license (owner's license/parent flow's Process license) will be used, unless the child flow has a Process license.
+During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), the parent flow license isn't inherited by the child flow. The child flow uses the owner's license. However, after the transition period ends, only the parent flow license (owner's license/parent flow's Process license) will be used, unless the child flow has a Process license.
 
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Process license for every environment?
 
@@ -276,7 +276,7 @@ Here are some things you can do if you exceeded the limits of your license:
 
 - Turn on [Pay-as-you-go](#power-platform-requests-pay-as-you-go) for the environment to ensure none of the flows in the environment are throttled.
 
-- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](types.md#transition-period), because enforcement is less strict, there's no facility to assign the **Power Apps and Power Automate capacity add-on** to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. Create a support ticket with the flow details and add on details to get temporary relief (30 days) from throttling. This temporary relief isn't available for flows that already have a Process or Per-flow license assigned to them.
+- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), because enforcement is less strict, there's no facility to assign the **Power Apps and Power Automate capacity add-on** to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. Create a support ticket with the flow details and add on details to get temporary relief (30 days) from throttling. This temporary relief isn't available for flows that already have a Process or Per-flow license assigned to them.
 
 If a flow is consistently above the transition period limits for 14 consecutive days, Power Automate suspends the flow and sends a notification to the owner. You can purchase a higher PPR license, and then turn it on anytime. You can edit and save the flow to reset the 14 day counter while you purchase the license.  
 
@@ -377,13 +377,13 @@ Here are some frequently asked questions about using Power Automate with an Offi
 
 ### What Power Automate capabilities are included in Office 365 licenses?
 
-Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends [standalone licenses](./types.md#standalone-licenses).
+Limited Power Automate use rights are included with select Office 365 licenses to allow users to customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends the [Premium license](types#user-licenses).
 
 Office 365 licenses include the following Power Automate capabilities:
   
 - Create and execute automated, scheduled, and button flows.
 - Access to standard connectors.
-- 6,000 [Power Platform requests/day](./types.md#power-platform-requests). 10,000 requests/day during [transition period](./types.md#transition-period).
+- 6,000 [Power Platform requests/day](./types.md#power-platform-requests). 10,000 requests/day during [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
   
 The following Power Automate capabilities aren't included:
   
@@ -437,7 +437,7 @@ Dynamics 365 licenses include the following Power Automate capabilities:
 - Business process flows within app context.
 - Custom connectors within app context.
 - On-premises gateways within app context.
-- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](./types.md#transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)), and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)).
+- [Power Platform request](./types.md#power-platform-requests) limits: Dynamics 365 Team member gets 6,000 requests/day (25,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), Dynamics 365 professional gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)), and Dynamics 365 Enterprise gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)).
 
 The following Power Automate capabilities aren't included in Dynamics 365 licenses:
 
@@ -495,7 +495,7 @@ A limited set of Power Automate capabilities are included as part of a Power App
 - Business process flows within app context.
 - Custom connectors within app context.
 - On-premises gateways within app context.
-- Power Platform request limits: Power Apps Premium gets 40,000 requests/day (100,000 requests/day during the [transition period](./types.md#transition-period)) and Power Apps per app gets 6,000 requests/day (10,000 requests/day during the [transition period](./types.md#transition-period)).
+- Power Platform request limits: Power Apps Premium gets 40,000 requests/day (100,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)) and Power Apps per app gets 6,000 requests/day (10,000 requests/day during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period)).
 - Power Apps Premium gets 250 MB Dataverse database capacity and 2 GB Dataverse file capacity. Power Apps per app gets 50 MB Dataverse database capacity and 400 MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects will consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting will consume this limit.
 
 The following Power Automate capabilities aren't included in Power Apps licenses:
