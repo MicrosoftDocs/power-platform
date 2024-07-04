@@ -70,16 +70,16 @@
           items:
             - name: Overview
               href: pricing-billing-skus.md
-            - name: About licensing and license management
-              href: wp-license-management.md
-            - name: View license consumption for Power Apps and Power Automate (preview)
-              href: view-license-consumption-issues.md
-            - name: View license consumption for finance and operations apps
-              href: view-license-consumption-finops-apps.md
-            - name: View Intelligent recommendations about licensing (preview)
-              href: get-recommendations-licensing.md
-            - name: Administer without a license
-              href: global-service-administrators-can-administer-without-license.md
+            - name: License consumption and management
+              items:
+                - name: View license consumption for Power Apps and Power Automate (preview)
+                  href: view-license-consumption-issues.md
+                - name: View license consumption for finance and operations apps
+                  href: view-license-consumption-finops-apps.md
+                - name: View Intelligent recommendations about licensing (preview)
+                  href: get-recommendations-licensing.md
+                - name: Administer without a license
+                  href: global-service-administrators-can-administer-without-license.md
             - name: Power Apps
               items:
                 - name: Purchase Power Apps
@@ -114,8 +114,6 @@
                       href: power-automate-licensing/request-premium-license.md
                     - name: Autoclaim policies for Power Automate licenses
                       href: power-automate-licensing/power-automate-auto-claim.md
-            - name: Power Platform licensing FAQs
-              href: powerapps-flow-licensing-faq.md
             - name: Pay-as-you-go plan
               items:
                 - name: Overview
@@ -128,8 +126,10 @@
                   href: pay-as-you-go-usage-costs.md
                 - name: Issues and frequently asked questions
                   href: pay-as-you-go-issues-faq.md
-            - name: Requests limits and allocations
+            - name: Power Platform Requests limits
               href: api-request-limits-allocations.md
+            - name: Power Platform licensing FAQs
+              href: powerapps-flow-licensing-faq.md
         - name: Environments
           items:
             - name: Administer environments
