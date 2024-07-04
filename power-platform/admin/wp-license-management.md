@@ -15,9 +15,15 @@ search.audienceType:
 ---
 # About licensing and license management
 
-Organizations can obtain licenses by either licensing Microsoft Power Apps or Microsoft Power Automate specifically or by it being included in the license of another Microsoft cloud service offering. For example, both Microsoft 365 and Dynamics 365 provide entitlements for Power Apps and Power Automate. As with most Microsoft licensing, you can mix and match for users as appropriate, giving some additional entitlements.
+Organizations can license their users to get full access to Microsoft Power Apps or Microsoft Power Automate specifically:
+- Learn more about [Power Automate licensing](/power-platform/admin/power-automate-licensing/types)
+- Learn more about [Power Apps licensing](/power-platform/admin/signup-for-powerapps-admin)
 
-In the rest of this section, we will highlight some of the key implications and scenarios related to licensing, but it is not the product licensing documentation. You should consult licensing documentation for the latest details. Pricing and specific plan details for Power Apps and Power Automate can be found in the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Limited capabilities to those products are also included in the license of other Microsoft cloud service offering through seeded licenses. For example, both Microsoft 365 and Dynamics 365 plans provide entitlements for some Power Apps and Power Automate capabilities. As with most Microsoft licensing, you can mix and match for users as appropriate, giving some additional entitlements. 
+
+Learn more about [Power Automate seeded license for Microsoft 365 and Dynamics 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#seeded-licenses).
+
+In the rest of this article, we will highlight some of the key implications and scenarios related to licensing, but it is not the product licensing documentation. You should consult licensing documentation for the latest details. Pricing and specific plan details for Power Apps and Power Automate can be found in the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 ## Use of connectors
 
@@ -25,10 +31,9 @@ Power Apps and Power Automate use connectors to interact with services. Connecto
 
 ## Trial Plans
 
-Trial plans are available for both Power Apps and Power Automate. Free trials last 30 days for Power Apps and 90 days for Power Automate plans. Users can self-service sign up for these trials in your organization. This can be done by explicitly visiting the pricing pages or by being prompted when they attempt an action in the apps that require additional licensing.
+Trial plans are available for both Power Apps and Power Automate. Free trials last 30 days for Power Apps and 90 days for [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) plans. Users can self-service sign up for these trials in your organization. This can be done by explicitly visiting the pricing pages or by being prompted when they attempt an action in the apps that require additional licensing.
 
-For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the *free* Power Automate plan. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate trial. This trial wouldn't show up under the user licenses in the Microsoft 365
-Portal, however you can see it in the Power Apps license report discussed later in the security section.
+For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the [Power Automate Free](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-free-license) license. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate Trial. This trial wouldn't show up under the user licenses in the Microsoft 365 Portal, however you can see it in the Power Automate and Power Apps license report discussed later in the security section.
 
 For Power Apps, if a user signs up for a Power Apps trial, they'll get a Power Apps per user trial if needed for any of the actions they take such as creating an environment.
 
