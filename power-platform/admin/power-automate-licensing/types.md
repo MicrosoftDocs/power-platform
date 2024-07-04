@@ -84,21 +84,20 @@ Hereunder a table detailing each license [entitlement](#license-entitlements):
 |__Premium connectors__|Included|Included|Included|
 |__Custom connectors__|Included|Included|Included|
 |__Attended RPA__|One attended bot included|Not included|Not included|
-|__Unattended RPA <sup>3</sup>__|Not included|One unattended bot included|One unattended bot included <sup>4</sup>|
+|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>3</sup>|
 |__Hosted RPA__|Not included|Not included|One hosted bot included|
 |__Business process flows__|Included|Included|Included|
 |__On-premises gateways__|Included|Included|Included|
 |__Process mining__|Included|Not included|Not included|
-|__Process mining data storage__|50 MB per license <sup>5</sup>|Not included|Not included|
+|__Process mining data storage__|50 MB per license <sup>4</sup>|Not included|Not included|
 |__AI Builder credits__|5000 per month|5000 per month|5000 per month|
 |__Dataverse database storage__|250 MB per license|50 MB per license|50 MB per license|
 |__Dataverse file storage__|2 GB per license|200 MB per license|200 MB per license|
 
 _1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](api-request-limits-allocations.md#Request-limits-in-power-automate))._ <br>
 _2. When multiple units of Process licenses are allocated to a cloud flow, their PPR limits are stacked._ <br>
-_3. Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on._ <br>
-_4. As the Hosted Process license is a superset of the Process license, each hosted bot can also be seen as an unattended bot which allows to run in unattended mode on the hosted machine / hosted machine group_<br>
-_5. Up to 100 GB per tenant._
+_3. As the Hosted Process license is a superset of the Process license, each hosted bot can also be seen as an unattended bot which allows to run in unattended mode on the hosted machine / hosted machine group_<br>
+_4. Up to 100 GB per tenant._
 
 ## License entitlements
 
