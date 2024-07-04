@@ -1,10 +1,14 @@
 ---
-title: "Types of Power Automate add-ons"
-description: "Add-ons for Power Automate licensing."
+title: Types of Power Automate add-ons
+description: Learn about types of Power Automate add-ons.
 author: msftman
 ms.topic: overview
 ms.date: 05/01/2024
-ms.author: kenseongtan
+ms.author: 
+  - kenseongtan
+  - cvassallo
+  - samathur
+  - v-aangie
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin
