@@ -106,13 +106,13 @@
                   href: power-automate-licensing/faqs.md
                 - name: Licensing management
                   items:
-                    - name: When premium flows are subject to license enforcement
+                    - name: When premium flows are subject to enforcement
                       href: power-automate-licensing/when-flows-are-turned-off.md
                     - name: Buy Power Automate licenses
                       href: power-automate-licensing/buy-licenses.md
                     - name: Request a Power Automate premium license
                       href: power-automate-licensing/request-premium-license.md
-                    - name: Autoclaim policies for Power Automate licenses (preview)
+                    - name: Autoclaim policies for Power Automate licenses
                       href: power-automate-licensing/power-automate-auto-claim.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md
