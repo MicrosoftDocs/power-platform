@@ -3,8 +3,9 @@ title: Types of Power Automate add-ons
 description: Learn about types of Power Automate add-ons.
 author: msftman
 ms.topic: overview
-ms.date: 05/01/2024
-ms.author: 
+ms.date: 07/04/2024
+ms.author: cvassallo
+contributors:
   - kenseongtan
   - cvassallo
   - samathur
@@ -38,7 +39,7 @@ You can purchase those add-ons on [Power Automate Pricing](https://flow.microsof
 
 ## Power Automate capacity add-ons
 
-A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by persons interacting with the object). Its role is exactly identical to a [capacity license](types.md#standalone-capacity-licenses).
+A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by persons interacting with the object). Its role is exactly identical to a [capacity license](types.md#capacity-licenses).
 
 There are two Power Automate (legacy) capacity add-ons:
 ![Unattended RPA and Hosted RPA capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
@@ -62,10 +63,7 @@ The Unattended RPA add-on provides the [unattended RPA entitlement](types.md#ent
 
 _1. When an unattended run is triggered through an unattended bot, Power Automate securely signs into the user's machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
 _2. Unattended bot can be auto-allocated at desktop flow unattended runtime if the machine setting 'Enable auto-allocation' is ON and the machine needs an additional bot to perform the run._ <br>
-_3. A standard machine with no unattended bot cannot run unattended except when the user has a [Trial license](types.md#power-automate-trial-license)._ 
-
-> [!NOTE]
-> - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
+_3. A standard machine with no unattended bot cannot run unattended except when the user has a [Trial license](deep-dive-on-specific-license.md#power-automate-trial-license)._ 
 
 Unattended RPA scenarios, without human interaction, are applicable for example to scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
@@ -97,9 +95,6 @@ _1. The available hosted pool supports all hosted machine groups auto-scaling op
 _2. Load balancing refers to the ability of multiple hosted machine group to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._
 
 Each hosted bot can carry one unattended desktop flow run at a time (and so can be seen as an unattended bot too). Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license or a [Trial license](deep-dive-on-specific-license.md#power-automate-trial-license).<br>
-
-> [!NOTE]
-> - Any services or applications the unattended bot accesses must be licensed separately. For instance, if the bot is accessing Windows or Microsoft 365, you must purchase the [M365 - Unattended license](deployoffice/overview-licensing-activation-microsoft-365-apps.md#unattended-license) in addition to the Power Automate Unattended RPA add-on.
 
 As the Hosted RPA add-ons have been converted into Hosted Process licenses, learn about their extra-capabilities (to cover cloud flows invoking hosted machines / to be used as Process licenses) on the [Hosted Process license](deep-dive-on-specific-license.md#power-automate-hosted-process-license) documentation.
 
@@ -133,7 +128,7 @@ No. AI builder service credits are pooled at the tenant level and can't be assig
 
 Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an additional 50,000 daily Power Platform requests per unit for $50/month. Unused Power Platform requests don't carry over from day to day. You can purchase these add-ons at any time and they remain part of the subscription for the remainder of the subscription term.
 
-You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](types.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends.
+You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](api-request-limits-allocations.md#transition-period). However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends.
 
 If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-platform-requests-pay-as-you-go) to ensure that none of the flows in the environment are throttled. If you can't use Pay-as-you-go, purchase add-ons and create a Microsoft support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
 
