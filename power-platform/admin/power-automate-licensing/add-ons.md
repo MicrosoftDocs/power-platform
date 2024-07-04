@@ -42,7 +42,7 @@ You can purchase those add-ons on [Power Automate Pricing](https://flow.microsof
 A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by persons interacting with the object). Its role is exactly identical to a [capacity license](types.md#capacity-licenses).
 
 There are two Power Automate (legacy) capacity add-ons:
-![Unattended RPA and Hosted RPA capacity add-ons](../media/RPA-license/capacity-add-ons-2.png)
+![Unattended RPA and Hosted RPA capacity add-ons](../media/RPA-license/capacity-add-ons-3.png)
 
 ### Unattended RPA add-on (legacy)
 
@@ -104,7 +104,7 @@ As the Hosted RPA add-ons have been converted into Hosted Process licenses, lear
 
 A consumptive add-on provides a monthly quantity of consumptive units which are consumed by flow runs and destroyed after usage (AI builder credits, Power Platform requests entitlement).
 
-![Power Automate consumptive add-ons](../media/RPA-license/consumptive-add-ons-1.png)
+![Power Automate consumptive add-ons](../media/RPA-license/consumptive-add-ons-2.png)
 
 ### AI builder capacity add-on
 
@@ -138,7 +138,7 @@ If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-pl
 
 A storage add-on provides data storage space to support scalling of operations.
 
-![Power Automate storage add-ons](../media/RPA-license/storage-add-ons-1.png)
+![Power Automate storage add-ons](../media/RPA-license/storage-add-ons-2.png)
 
 ### Process Mining add-on
 
