@@ -26,6 +26,10 @@ To get an overview of the Power Automate key licenses, visit the [types of Power
 
 A Power Automate Process license can be allocated to a machine or to a cloud flow.
 
+> [!NOTE]
+> - The Process license replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on-legacy) (same price with more entitlements).
+> - The existing Unattended RPA add-ons have been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
+
 |Process license scenarios<br>______________________________|Description<br>________________________________________________________________________________________________________|
 |----------|-------|
 |__Environment assignment__|To be used by a cloud flow or a machine, a Process capacity license first needs to be assigned to the environment where the cloud flow or the machine is located. Learn [how to allocate a Process capacity license to an environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment).|
@@ -42,10 +46,6 @@ A Power Automate Process license can be allocated to a machine or to a cloud flo
 > 4. Breakdown of cloud flow allocations isn't yet available in the process capacity utilization page
 
 [Compare the Power Automate Process](types.md#capacity-licenses) license with the other Power Automate capacity licenses.
-
-> [!NOTE]
-> - The Process license replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on-legacy) (same price with more entitlements).
-> - The existing Unattended RPA add-ons have been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
 
 ## Power Automate Hosted Process license
 
