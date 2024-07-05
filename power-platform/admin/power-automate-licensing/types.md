@@ -97,6 +97,8 @@ Hereunder the list of available Power Automate capacity licenses:
 
 Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#power-automate-process-license) license.
 
+>> **1.** When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device. <br>
+
 # [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
 #### Power Automate Hosted Process
@@ -104,20 +106,15 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 |--------|--------|
 |**License type**|Capacity license (paid)|
 |**Allocated object**|- Hosted machine <br>- Hosted machine group<br>- Cloud flow<br>- Machine|
-|**Entitlements**|The Hosted Process license enables [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview) (= no physical machine management on the user side). Each Hosted Process license bears one hosted bot, which enables the creation of one Microsoft hosted machine requires.<br><br>Those hosted machines can be created as individual hosted machines or as part of hosted machine groups, which provide 1) auto-scalability delivering high processing parallelization and reacting to demand spikes and 2) [load balancing](/power-automate/desktop-flows/hosted-machine-groups#load-balance-hosted-machine-group)<sup>2</sup> across multiple hosted machine groups, which optimizes the hosted bot utilization rate.<br><br>The Power Automate Hosted Process is also a superset of the Power Automate Process, which means it can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine).<sup>3</sup|
+|**Entitlements**|The Hosted Process license enables [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview) (= no physical machine management on the user side). Each Hosted Process license bears one hosted bot, which enables the creation of one Microsoft hosted machine requires.<br><br>Those hosted machines can be created as individual hosted machines or as part of hosted machine groups, which provide 1) auto-scalability delivering high processing parallelization and reacting to demand spikes and 2) [load balancing](/power-automate/desktop-flows/hosted-machine-groups#load-balance-hosted-machine-group)<sup>1</sup> across multiple hosted machine groups, which optimizes the hosted bot utilization rate.<br><br>The Power Automate Hosted Process is also a superset of the Power Automate Process, which means it can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine).<sup>2</sup>|
 |**Will benefit**|Organizations looking to enable their RPA desktop automations quickly and at scale while freeing up the previously required management of physical resources and thus reducing costs.|
 
 Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-license.md#power-automate-hosted-process-license) license.
 
-> _1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
-> _2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
-> _3. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage._ 
+>> **1.** Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings. <br>
+>> **2.** The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.
 
 ---
-
-> _1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
-> _2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
-> _3. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage._ 
 
 > [!IMPORTANT]
 > __Can my organization only purchase and use capacity licenses within an environment?__
