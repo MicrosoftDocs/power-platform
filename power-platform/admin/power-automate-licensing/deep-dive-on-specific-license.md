@@ -33,10 +33,13 @@ A Power Automate Process license can be allocated to a machine or to a cloud flo
 |__Machine allocation__|Allocated to a machine, it becomes an unattended bot<sup>2</sup>. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.<br><br>Machines can be manually allocated unattended bots or be set to auto-allocate themselves when required by a run in unattended mode. Any unattended bot allocation (manual or automatic) on a machine remains until a manual de-allocation occurs. To prevent a machine from auto-allocating itself Process capacity, disable its auto-allocation setting.<br><br>Any cloud flow targeting a machine with unattended bot(s) is automatically covered by the machine's bot(s) and considered to be a 'process flow' (with the flow association capability) and is entitled to a 250k daily Power Platform Request (non-stackable limit). Those cloud flows have their plan automatically switch to "Process plan inherited from machine"<sup>3</sup>.<br><br>Discover [how to allocate a Process license to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-machine).|
 |__Utilization management__|You can visualize and manage all Process licenses allocated to cloud flows and machines within an environment using the [Process capacity utilization](/power-automate/desktop-flows/capacity-utilization-process) page<sup>4</sup>.|
 
-_1. Process allocation to cloud flows and flow association to process flows isn't yet completely available_ <br>
-_2. Each machine - depending on its OS - can support a maximum number of unattended bots (equal to the maximum number of Windows sessions the machine can concurrently open)._ <br>
-_3. Cloud flow with "Process plan inherited from machine" aren't yet available_ <br>
-_4. Breakdown of cloud flow allocations isn't yet available in the process capacity utilization page_
+> 1. Process allocation to cloud flows and flow association to process flows isn't yet completely available
+
+> 2. Each machine - depending on its OS - can support a maximum number of unattended bots (equal to the maximum number of Windows sessions the machine can concurrently open).
+
+> 3. Cloud flow with "Process plan inherited from machine" aren't yet available
+
+> 4. Breakdown of cloud flow allocations isn't yet available in the process capacity utilization page
 
 [Compare the Power Automate Process](types.md#capacity-licenses) license with the other Power Automate capacity licenses.
 
@@ -56,10 +59,13 @@ A Power Automate Hosted Process can be used by an individual hosted machine, by 
 |__Hosted Process usage as a Process license__<sup>4</sup>|The Power Automate Hosted Process is a superset of the Power Automate Process, which means it can provide the same entitlements as the Process license and act as one. <br><br>When all Process licenses in an environment are already allocated to machines and cloud flows (or when there's no Process license assigned to the environment), the Hosted Process licenses are used instead of the Process license at any new allocation to machines / cloud flows IF the setting "Allow hosted capacity to be used as Process capacity" (in Admin Center) was enabled by the environment admin.|
 |__Utilization management__|You can visualize and manage all Hosted Process licenses allocated to hosted machines and hosted machine groups within an environment using the [Hosted Process capacity utilization](/power-automate/desktop-flows/capacity-utilization-hosted) page.|
 
-_1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty_ <br>
-_2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
-_3. Cloud flow with "Process plan inherited from machine" aren't yet available_  <br>
-_4. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) and Admin Center setting aren't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage ._ 
+> 1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty.
+
+> 2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.
+
+> 3. Cloud flow with "Process plan inherited from machine" aren't yet available.
+
+> 4. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) and Admin Center setting aren't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.
 
 [Compare the Power Automate Hosted Process](types.md#capacity-licenses) license with the other Power Automate capacity licenses.
 
@@ -173,12 +179,17 @@ Here-bellow a table detailing each seeded license [entitlement](types.md#license
 |__Dataverse database storage__|250-MB per license|Not included|Not included|Not included|Not included|Not included|
 |__Dataverse file storage__|2-GB per license|Not included|Not included|Not included|Not included|Not included|
 
-_1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional_ <br>
-_2. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan_ <br>
-_3. In Dataverse for Teams environments (included in [specific Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams), users can use custom connectors built on Azure and Dataverse_ <br>
-_4. Only included if cloud flow is in-context & associated to a Power App_ <br>
-_5. Only included if cloud flow is in-context & associated to a Dynamic 365 app_ <br>
-_6. Only includes local execution of desktop flow (no orchestration)_ <br>
+> 1. Dynamics 365 Sales Professional and Dynamics 365 Customer Service Professional
+
+> 2. Dynamics 365 Sales Enterprise, Dynamics 365 Customer Service Enterprise, Dynamics 365 Field Service, Dynamics 365 Project Service Automation, Dynamics 365 Retail, Dynamics 365 Talent, and Dynamics 365 Customer Engagement plan
+
+> 3. In Dataverse for Teams environments (included in [specific Office licenses)](../powerapps-flow-licensing-faq.md#which-microsoft-365-subscriptions-include-dataverse-for-teams-and-microsoft-copilot-studio-capabilities-with-teams), users can use custom connectors built on Azure and Dataverse
+
+> 4. Only included if cloud flow is in-context & associated to a Power App
+
+> 5. Only included if cloud flow is in-context & associated to a Dynamic 365 app
+
+> 6. Only includes local execution of desktop flow (no orchestration)
 
 ## Power Automate legacy licenses
 
@@ -217,5 +228,6 @@ There's a [free Power Apps Developer plan to learn about Power Platform](https:/
 |__Dataverse database storage__|Not included|Not included|250-MB per license|50-MB per license|
 |__Dataverse file storage__|Not included|Not included|2-GB per license|200-MB per license|
 
-_1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate))._ <br>
-_2. Only one Per-flow plan can be allocated to a cloud flow (no multi-allocation), PPR limits can't be stacked_
+> 1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)).
+
+> 2. Only one Per-flow plan can be allocated to a cloud flow (no multi-allocation), PPR limits can't be stacked.
