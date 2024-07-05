@@ -92,12 +92,12 @@ Hereunder the list of available Power Automate capacity licenses:
 |--------|--------|
 |**License type**|Capacity license (paid)|
 |**Allocated object**|- Cloud flow <br>- Standard machine|
-|**Entitlements**|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit). <br><br>Multiple cloud flows part of the same business process (invoicing process, ticketing process, etc.) can be associated together and covered by the same Process licenses.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>.|
+|**Entitlements**|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit). <br><br>Multiple cloud flows part of the same business process (invoicing process, ticketing process, etc.) can be associated together and covered by the same Process licenses.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>.<br><br> > **1.** When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.|
 |**Will benefit**|Organizations looking to automatize at scale their business processes though cloud automation and/or RPA desktop automations.|
 
 Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#power-automate-process-license) license.
 
->> **1.** When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
+> **1.** When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
 
 # [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
