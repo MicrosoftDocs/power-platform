@@ -45,7 +45,7 @@ Optionally, you can choose to generate a separate Lifecycle Services format pack
 
    > [!NOTE]
    > If you see this error:<p/>
-   > 'An item with the specified name <initial drive path>\3c5d3d3b-4428-4901-9357-4559d510e2a8\<model> already exists.' <p/>
+   > 'An item with the specified name \<initial drive path>\3c5d3d3b-4428-4901-9357-4559d510e2a8\<model> already exists.' <p/>
    > please ensure that you do not have duplicate modules as only 1 version per module is accepted.
 
 ## Link to your deploy pipeline
