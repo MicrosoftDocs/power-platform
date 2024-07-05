@@ -33,7 +33,7 @@ The Power Automate add-ons are categorized as follows:
 |Consumptive add-on|A consumptive add-on provides a monthly quantity of units (AI builder credits, Power Platform requests), which are consumed and destroyed after usage.|
 |Storage add-on|Storage add-ons provide data storage space to support scaling of various Power Automate operations.|
 
-You can purchase those add-ons on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more on purchasing](buy-licenses.md).
+You can purchase those add-ons on the [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more on purchasing](buy-licenses.md).
 
 > [!TIP]
 > 
