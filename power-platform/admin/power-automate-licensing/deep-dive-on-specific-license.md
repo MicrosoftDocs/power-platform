@@ -63,6 +63,8 @@ _4. The Power Automate Hosted Process superset behavior (allowing it to be appli
 
 If you sign in with your work or school email address, you get all capabilities included in the Power Automate Free license. If you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the Power Automate Free license. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
 
+[Compare the Power Automate Free](types.md#power-automate-free) license with the other Power Automate user licenses.
+
 > [!NOTE]
 > You can't share flows when you use the Free license.
 
@@ -74,9 +76,11 @@ Select **Assigned licenses** to see which users have Free license.
 
 ## Power Automate Trial license
 
-A user can self-provision a Power Automate Trial license from within the Power Automate portal. This trial lasts for 90 days. For example, when a Power Automate Free user tries to create a desktop flow, the user is prompted to start a Trial that includes usage of premium connectors, attended RPA and unattended RPA:
+A user can self-provision a Power Automate Trial license from within the Power Automate portal. This trial lasts for 90 days. For example, when a Power Automate Free user tries to create a desktop flow in a non-default environment (which operation he doesn't have entitlement for), the user is prompted to start a Trial that includes usage of premium connectors, attended RPA and unattended RPA:
 
 ![Start free trial from within Power Automate](../media/power-automate-licensing/free-trial-inline.png)
+
+[Compare the Power Automate Trial](types.md#power-automate-trial) license with the other Power Automate user licenses.
 
 #### How can admins allow or block Power Automate Trial licenses (self-assisted)?
 
