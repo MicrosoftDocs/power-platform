@@ -67,9 +67,11 @@ The Unattended RPA add-on provides the [unattended RPA entitlement](types.md#ent
 |__Unattended bot settings__|Each machine - depending on its OS - can support a maximum number of unattended bots (equal to the maximum number of Windows sessions the machine can concurrently open).<br><br>For example, some Windows server can open 10 Windows sessions at the same time and can therefore be allocated up to 10 unattended bots.|
 |__Scenario benefits__|- Unattended mode enablement on the machine<sup>3</sup> <br>- Multi-session management through multi-allocation <br>- Reduced machine management through auto-allocation at desktop flow runtime|
 
-_1. When an unattended run is triggered through an unattended bot, Power Automate securely signs into the user's machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
-_2. Unattended bot can be auto-allocated at desktop flow unattended runtime if the machine setting 'Enable auto-allocation' is ON and the machine needs an extra bot to perform the run._ <br>
-_3. A standard machine with no unattended bot can't run unattended except when the user has a [Trial license](deep-dive-on-specific-license.md#power-automate-trial-license)._ 
+> 1. When an unattended run is triggered through an unattended bot, Power Automate securely signs into the user's machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
+
+> 2. Unattended bot can be auto-allocated at desktop flow unattended runtime if the machine setting 'Enable auto-allocation' is ON and the machine needs an extra bot to perform the run.
+
+> 3. A standard machine with no unattended bot can't run unattended except when the user has a [Trial license](deep-dive-on-specific-license.md#power-automate-trial-license).
 
 Unattended RPA scenarios, without human interaction, are applicable for example, to scenarios such as processing invoices and entering them into a legacy application automatically or scheduled financial reconciliation across multiple systems that can only be automated by clicking user interfaces.
 
@@ -97,8 +99,9 @@ At provisioning of any hosted machine (individual or within a group), a Hosted R
 |__Hosted bot settings__|None|A hosted machine group has two scaling settings:<br>- __Max bots__: the maximum number of hosted bots it can auto-allocate itself to turn-on hosted machines.<br>- __Committed bots__: the guaranteed number of hosted bots it can immediately auto-allocate itself when required.|
 |__Scenario benefits__|- Hosted machine constantly turned-on <br> - Reaction time|- Auto-scalability delivering high processing parallelization and reacting to demand spikes<br>- [Load balancing](/power-automate/desktop-flows/hosted-machine-groups#load-balance-hosted-machine-group)<sup>2</sup> across multiple hosted machine groups, which optimizes the hosted bot utilization rate|
 
-_1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty_ <br>
-_2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._
+> 1. The available hosted pool supports all hosted machine groups auto-scaling operations: the hosted machine groups pull hosted bots from it when they scale up and are throttled (= can't scale-up) when the available hosted pool is empty
+
+> 2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.
 
 Each hosted bot can carry one unattended desktop flow run at a time (and so can be seen as an unattended bot too). Individual hosted machines also support attended runs if the user has a [Power Automate Premium](types.md#user-licenses) license or a [Trial license](deep-dive-on-specific-license.md#power-automate-trial-license).<br>
 
