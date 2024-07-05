@@ -109,11 +109,15 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 
 Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-license.md#power-automate-hosted-process-license) license.
 
+> _1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
+> _2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
+> _3. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage._ 
+
 ---
 
-_1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
-_2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
-_3. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage._ 
+> _1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device._ <br>
+> _2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
+> _3. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage._ 
 
 > [!IMPORTANT]
 > __Can my organization only purchase and use capacity licenses within an environment?__
