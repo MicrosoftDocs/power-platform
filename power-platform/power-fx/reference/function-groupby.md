@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 4/11/2024
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,7 +19,7 @@ contributors:
 
 # GroupBy and Ungroup functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
 
 Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -46,7 +46,7 @@ You can also aggregate results based on a grouping:
 A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and a function can return a table. **GroupBy** and **Ungroup** don't modify a table; instead they take a table as an argument and return a different table. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
 
 > [!NOTE]
-> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. Afer this version, all apps were automatically updated to the new syntax described in this article. 
+> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. After this version, all apps were automatically updated to the new syntax described in this article. 
 
 ## Syntax
 
@@ -68,7 +68,7 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 1. Add a button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **Original**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **Original** button to this formula:
 
-```powerapps-dot
+```power-fx
 ClearCollect( CityPopulations,
     { City: "London",    Country: "United Kingdom", Population: 8615000},
     { City: "Berlin",    Country: "Germany",        Population: 3562000},

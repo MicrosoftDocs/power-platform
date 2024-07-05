@@ -2,7 +2,7 @@
 title: Diagnose issues and analyze performance using a trace parser with the unified developer experience.
 description: Learn how you can use a trace parser to consume traces and analyze performance in your deployment from your unified developer experience.
 author: pvillads
-ms.date: 05/29/2024
+ms.date: 06/06/2024
 ms.topic: article
 ms.subservice: developer
 ms.reviewer: pehecke

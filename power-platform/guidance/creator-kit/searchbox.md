@@ -59,7 +59,7 @@ Add this control to your app where a search interface is needed, usually coupled
 
 Create a search experience by using the [Search() or Filter()](/power-apps/maker/canvas-apps/functions/function-filter-lookup) expressions that use the value of the `SearchText` property in the `SearchBox`.
 
-```powerapps-dot
+```power-fx
 Search( Accounts, SearchBox.SearchText, "name" )
 ```
 

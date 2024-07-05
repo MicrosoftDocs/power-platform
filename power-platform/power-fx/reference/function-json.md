@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/28/2024
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,7 +19,7 @@ contributors:
 
 # JSON function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
 
 Generates a JSON text string for a table, a record, or a value.
 
@@ -76,7 +76,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( CityPopulations,
        { City: "London",    Country: "United Kingdom", Population: 8615000 },
        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
@@ -102,7 +102,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Insert another button, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Set( CitiesByCountryJSON, JSON( CitiesByCountry ) )
    ```
 
@@ -112,7 +112,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control, and set its **Text** property to this variable.
 
-   ```powerapps-dot
+   ```power-fx
    CitiesByCountryJSON
    ```
 
@@ -144,7 +144,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Change the second button's formula to make the output more readable.
 
-   ```powerapps-dot
+   ```power-fx
    Set( CitiesByCountryJSON, JSON(CitiesByCountry, JSONFormat.IndentFour ))
    ```
 
@@ -204,7 +204,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
-   ```powerapps-dot
+   ```power-fx
    Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )
    ```
 
@@ -212,7 +212,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Add a label, and set its **Text** property to this variable.
 
-   ```powerapps-dot
+   ```power-fx
    ImageJSON
    ```
 
@@ -227,13 +227,13 @@ If a column has both a display name and a logical name, the result contains the 
 ### Value tables
 
 This formula:
-```powerapps-dot
+```power-fx
 JSON( [1,2,3] )
 ```
 produces the text string **[{"Value":1},{"Value":2},{"Value":3}]**.  
 
 The same formula with the JSONFormat.FlattenValueTables option:
-```powerapps-dot
+```power-fx
 JSON( [1,2,3], JSONFormat.FlattenValueTables )
 ```
 produces the text string **[1,2,3]**.

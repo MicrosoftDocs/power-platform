@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -19,7 +19,7 @@ contributors:
 
 # ForAll function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Calculates values and performs actions for all the [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -118,7 +118,7 @@ The following examples use the **Products** [data source](/power-apps/maker/canv
 
 To create this data source as a collection, set the **OnSelect** property of a **Button** control to this formula, open Preview mode, and then select the button:
 
-```powerapps-dot
+```power-fx
 ClearCollect( Products,
     Table(
         { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
@@ -139,7 +139,7 @@ We can perform this task in a couple of different ways, all of which produce the
 
 Don't make that copy! We can use the following formula anywhere we need:
 
-```powerapps-dot
+```power-fx
 // Table shaping on demand, no need for a copy of the result
 ShowColumns(
     AddColumns(
@@ -161,7 +161,7 @@ And because we didn't make a copy, there is no additional copy of the informatio
 
 Another approach is to use the **ForAll** function to replace the table-shaping functions:
 
-```powerapps-dot
+```power-fx
 ForAll( Products,
     If( 'Quantity Requested' > 'Quantity Available',
         {
@@ -182,7 +182,7 @@ In some situations, a copy of data may be required. You may need to move informa
 
 We use the same table shaping as the previous two examples, but we capture the result into a collection:
 
-```powerapps-dot
+```power-fx
 ClearCollect( NewOrder,
     ShowColumns(
         AddColumns(
@@ -195,7 +195,7 @@ ClearCollect( NewOrder,
 )
 ```
 
-```powerapps-dot
+```power-fx
 ClearCollect( NewOrder,
     ForAll( Products,
         If( 'Quantity Requested' > 'Quantity Available',
@@ -214,7 +214,7 @@ ClearCollect( NewOrder,
 
 Finally, we can perform the **Collect** directly within the **ForAll**:
 
-```powerapps-dot
+```power-fx
 Clear( NewOrder );
 ForAll( Products,
     If( 'Quantity Requested' > 'Quantity Available',

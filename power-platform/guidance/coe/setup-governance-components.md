@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/05/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -50,7 +50,7 @@ This step will be completed after you import the solution. Environment variables
 
 ### Exempt environments from the compliance process
 
-You may want to exempt certain environments from the compliance process - for example, dedicated environments that are already well managed or the environment you've installed the CoE Starter Kit in. Learn more: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+You may want to exempt certain environments from the compliance process - for example, dedicated environments that are already well managed or the environment you've installed the CoE Starter Kit in. Learn more: [Establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 
 You can exempt environments from the compliance process using the Power Platform Admin View app.  
 

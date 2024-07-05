@@ -65,7 +65,7 @@ If the environment hasn't been deleted and still doesn’t show up in the admin 
 
 The most common reason for environments to not show up in the list is a missing [role assignment](assign-security-roles.md). Compare the roles assigned to the user with the requirements in the [Requirements table](#requirements-for-access-by-product-experience) above. 
 
-In Dataverse environments, the role may be assigned directly to the user or indirectly via an assignment of the role to an [Microsoft Entra group team](manage-teams.md). 
+In Dataverse environments, the role may be assigned directly to the user or indirectly via an assignment of the role to a [Microsoft Entra group team](manage-teams.md). 
 
 > [!NOTE]
 > Role assignments made via Dataverse owner teams will not cause an environment to be included in the environment list. Do not attempt to use owner teams for this purpose. 

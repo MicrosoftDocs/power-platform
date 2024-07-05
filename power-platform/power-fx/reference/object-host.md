@@ -45,7 +45,7 @@ For example, a browser user agent string might be:
 - Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78
 
 > [!NOTE]
-> If you're running Power Apps in a native app or using the [the wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
+> If you're running Power Apps in a native app or using the [wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
 
 ## OSType property
 
@@ -65,7 +65,7 @@ The **OSType** property provides the name of the operating system where the app 
 
 The **OSType** text can be used in any formula, such as showing it in a label's text property:
 
-```powerapps-dot
+```power-fx
 Label1.Text: "You're running " & Host.OSType
 ```
 
@@ -75,7 +75,7 @@ The **SessionID** property returns the GUID that identifies the current session.
 > [!NOTE]
 > In embedded scenarios such as Power Apps in Power BI, the SessionID property returns the underlying Power Apps session ID, not the Power BI session ID.
 
-```powerapps-dot
+```power-fx
 Label1.Text: $"Provide session ID { Host.SessionID } to your administrator."
 ```
 
@@ -86,7 +86,7 @@ The **TenantID** property provides the Globally Unique Identifier (GUID) that sp
 > [!NOTE]
 > Similar to **SessionID**, in embedded scenarios such as Power Apps in Power BI, the tenant ID is the tenant used for the Power Apps session authentication.
 
-```powerapps-dot
+```power-fx
 Label1.Text: Host.TenantID
 ```
 
@@ -97,7 +97,7 @@ The **Version** property provides the identification and version number of the P
 > [!NOTE]
 > The **Version** property is always an empty string when working in Power Apps Studio.
 
-```powerapps-dot
+```power-fx
 Label1.Text: Host.Version
 ```
 ## OfflineEnabled property
@@ -107,7 +107,7 @@ The **OfflineEnabled** property provides the runtime mode of the app in the Powe
 > [!NOTE]
 > Even if a canvas app doesn't function without network connectivity, the **OfflineEnabled** property remains true in Power Apps Studio for canvas apps that have been enabled for offline use.
 
-```powerapps-dot
+```power-fx
 Label1.Text: Host.OfflineEnabled
 ```
 ## Examples

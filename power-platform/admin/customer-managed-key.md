@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 06/17/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms
@@ -65,6 +65,9 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 > [!NOTE]
 > Power Apps display names, descriptions, and connection metadata continues to be encrypted with a Microsoft-managed key.
+
+> [!NOTE]
+> Data analyzed by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
 
 Environments with finance and operations apps where [Power Platform integration is enabled](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) can also be encrypted. Finance and operations environments without Power Platform integration will continue to use the default Microsoft managed key to encrypt data. More information: [Encryption in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/sysadmin/customer-managed-keys)
 
@@ -265,10 +268,9 @@ Register Power Platform as a resource provider. You only need to do this task on
 1. Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](https://ms.portal.azure.com/#create/Microsoft.Template)
 1. After the PowerShell MSI is installed, go back to [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure.
 1. Select the **Build your own template in the editor** link.
-1. Copy the JSON template into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
+1. Copy [this JSON template](#enterprise-policy-json-template) into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
 1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, and *keyName*. More information: [Field definitions for json template](#field-definitions-for-json-template)
 1. Copy the updated template from your text editor then paste it into the **Edit template** of the **Custom deployment** in Azure, and select **Save**.
-   :::image type="content" source="media/cmk-keyvault-template.png" alt-text="Azure key vault template":::
 1. Select a **Subscription** and **Resource group** where the enterprise policy is to be created.
 1. Select **Review + create**, and then select **Create**.
 
@@ -432,7 +434,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
 1. Select **Save**.
    
   > [!IMPORTANT]
-  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enteprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
+  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault.** The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 ### Review the environment's encryption status
 
@@ -465,7 +467,7 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 ### Change the environment's encryption key with a new enterprise policy and key
 
-To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down 2 times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
+To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
 
  > [!Recommendation]
  > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**. ](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version)
@@ -480,7 +482,7 @@ To change your encryption key, create a new key and a new enterprise policy. You
 1. Repeat steps 2-6 until all environments in the enterprise policy have been removed.
 
   > [!IMPORTANT]
-  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enteprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
+  > The environment will be disabled when it is removed from the enterprise policy to revert the data encryption to the Microsoft-managed key. **Do not delete or disable the key, delete or disable the key vault, or remove the enterprise policy's permissions to the key vault**. The key and key vault's access is necessary to support database restoration. You may delete and remove the enterprise policy's permissions after 30 days.
 
 1. Once all the environments are removed, from the Power Platform admin center go to **Enterprise policies**.
 1. Select the new enterprise policy, and then select **Edit policy**.
