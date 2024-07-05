@@ -26,10 +26,10 @@ The Power Automate licenses are categorized as follows:
 
 |License type<br>__________________|License scope<br>_________________________________________________________|Description<br>_________________________________________________________|
 |-------|------|------|
-|User license| User-centric: a user license is assigned to a user.|It entitles the user to access [specific capabilities](#license-entitlements).|
+|User license| User-centric: a user license is assigned to a user.|It entitles the user to access specific capabilities.|
 |Capacity license| Object-centric: a capacity license is allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group).|It provides the object autonomous entitlements (the same way a user license provides entitlements to a user).|
 
-You can purchase those licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more on purchasing](buy-licenses.md).
+You can purchase those licenses on the [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more on purchasing](buy-licenses.md).
 
 > [!TIP]
 > 
