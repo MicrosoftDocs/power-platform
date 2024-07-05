@@ -97,7 +97,9 @@ Hereunder the list of available Power Automate capacity licenses:
 
 Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#power-automate-process-license) license.
 
-> <span style="font-size:0.5em;">**1.** When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.<span style="font-size:0.5em;">
+> `1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.`
+
+`1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.`
 
 # [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
