@@ -47,31 +47,31 @@ Hereunder the list of available Power Automate user licenses:
 # [**Power Automate Premium license**](#tab/power-automate-premium)
 
 ### Power Automate Premium
-|License name|Power Automate Premium|
+|License name<br>_______________________|Power Automate Premium<br>_______________________________________________________________________________________________|
 |--------|--------|
-|License type|User license (paid)|
-|Entitlements|It's the license we recommend for all users as it gives them the full set of capabilities to create both API based and desktop automations.<br><br>This license allows users to create, run, and shared unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications simulating a human behavior such as keyboard or mouse keys and movement (with desktop flows through Robotic process automation (RPA).<br><br>More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine through an attended bot borne by the license. <br><br>Additionally, this license also includes full access to process mining functionalities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, etc.|
-|User category|The Power Automate Premium license suits users looking to __plainly take advantage of Power Automate__.|
+|**License type**|User license (paid)|
+|**Entitlements**|It's the license we recommend for all users as it gives them the full set of capabilities to create both API based and desktop automations.<br><br>This license allows users to create, run, and shared unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications simulating a human behavior such as keyboard or mouse keys and movement (with desktop flows through Robotic process automation (RPA).<br><br>More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine through an attended bot borne by the license. <br><br>Additionally, this license also includes full access to process mining functionalities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, etc.|
+|**User category**|The Power Automate Premium license suits users looking to plainly take advantage of Power Automate.|
 
 # [**Power Automate Trial license**](#tab/power-automate-trial)
 
 ### Power Automate Trial
-|License name|Power Automate Trial|
+|License name<br>_______________________|Power Automate Trial<br>_______________________________________________________________________________________________|
 |--------|--------|
-|License type|User license (90 days trial)|
-|Entitlements|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities). <br><br>The Trial license bears the extra capability to execute their desktop flows in unattended mode on their registered machine through an unattended bot borne by the license.|
-|User category|The Power Automate Trial license suits users eager to __discover desktop flows__|
+|**License type**|User license (90 days trial)|
+|**Entitlements**|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities). <br><br>The Trial license bears the extra capability to execute their desktop flows in unattended mode on their registered machine through an unattended bot borne by the license.|
+|**User category**|The Power Automate Trial license suits users eager to discover desktop flows.|
 
 Learn more about the [Power Automate Trial](deep-dive-on-specific-license.md#power-automate-trial-license) license.
 
 # [**Power Automate Free license**](#tab/power-automate-free)
 
 ### Power Automate Free
-|License name|Power Automate Free|
+|License name<br>_______________________|Power Automate Free<br>_______________________________________________________________________________________________|
 |--------|--------|
-|License type|User license (free)|
-|Entitlements|This license provides basic access to Power Automate allowing users to create and run (but not share) unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)) restricted to standard connectors only.|
-|User category|The Power Automate Free license suits users eager to __discover cloud flows__.|
+|**License type**|User license (free)|
+|**Entitlements**|This license provides basic access to Power Automate allowing users to create and run (but not share) unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)) restricted to standard connectors only.|
+|**User category**|The Power Automate Free license suits users eager to discover cloud flows.|
 
 Learn more about the [Power Automate Free](deep-dive-on-specific-license.md#power-automate-free-license) license.
 
@@ -132,7 +132,7 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
-# [__Connector types__](#tab/connector-types)
+# [**Connector types**](#tab/connector-types)
 
 ### Entitlements to usage of connector types in cloud flows
 A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
@@ -156,7 +156,7 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
-# [Other capabilities](#tab/other-capabilities)
+# [**Other capabilities**](#tab/other-capabilities)
 
 ### Entitlements to other Power Automate capabilities
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
@@ -165,7 +165,7 @@ To learn more about the premium RPA capabilities, go to [Premium RPA features](/
 |On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premises data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.|
 |Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate.|
 
-# [Consumptive credit and storage](#tab/consumptive-credit-and-storage)
+# [**Consumptive credit and storage**](#tab/consumptive-credit-and-storage)
 
 ### Consumptive credits and storage entitlements
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
