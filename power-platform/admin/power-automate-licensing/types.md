@@ -46,7 +46,7 @@ Hereunder the list of available Power Automate user licenses:
 
 # [**Power Automate Premium license**](#tab/power-automate-premium)
 
-### Power Automate Premium
+#### Power Automate Premium
 |License name<br>_______________________|Power Automate Premium<br>_____________________________________________________________________________________________________________|
 |--------|--------|
 |**License type**|User license (paid)|
@@ -55,7 +55,7 @@ Hereunder the list of available Power Automate user licenses:
 
 # [**Power Automate Trial license**](#tab/power-automate-trial)
 
-### Power Automate Trial
+#### Power Automate Trial
 |License name<br>_______________________|Power Automate Trial<br>_____________________________________________________________________________________________________________|
 |--------|--------|
 |**License type**|User license (90 days trial)|
@@ -66,7 +66,7 @@ Learn more about the [Power Automate Trial](deep-dive-on-specific-license.md#pow
 
 # [**Power Automate Free license**](#tab/power-automate-free)
 
-### Power Automate Free
+#### Power Automate Free
 |License name<br>_______________________|Power Automate Free<br>_____________________________________________________________________________________________________________|
 |--------|--------|
 |**License type**|User license (free)|
