@@ -31,7 +31,7 @@ The Power Automate licenses are categorized as follows:
 
 You can purchase those licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more](buy-licenses.md)
 
-> [!NOTE]
+> [!TIP]
 > 
 > - As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs.
 > - Within a Pay-as-you-go environment all premium capabilities (including RPA) are available 
