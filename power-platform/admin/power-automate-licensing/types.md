@@ -105,6 +105,50 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
+### Deep dive on entitlements
+
+# [Connector types](#tab/table)
+
+#### Entitlements to usage of connector types in cloud flows
+A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
+
+|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
+|----------|-------|
+|Standard connectors|The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it.|
+|Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it.|
+|Custom connectors|The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector.|
+
+# [Robotic Process Automation](#tab/table)
+
+#### Entitlements to usage of Robotic process automation (RPA)
+[Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. 
+
+|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
+|----------|-------|
+|Attended RPA|The attended RPA entitlement is needed to perform most of the RPA related operations: register a machine, access RPA management portal pages, add premium and custom actions to desktop flows, share desktop flows, create desktop flows in non-default environments and trigger desktop flows in __attended mode__ through an attended bot (in default attended mode or in Picture-in-picture attended mode). <br><br>Attended run mode refers to a desktop flow execution with human supervision, it's materialized by __attended bots__: the Trial user license and the Premium user license bear one attended bot each.<br><br> When an attended run is triggered, the attended bot securely accesses the machine already is use by the user and executes the desktop flow actions on the target applications.<br><br> Picture-in-picture attended mode refers to attended desktop flows executions within a virtual window that replicates the user's desktop, so that they can continue working on their machine while the automation is running in parallel.|
+|Unattended RPA|The unattended RPA entitlement is needed to trigger desktop flows in __unattended mode__ through an unattended bot. <br><br>Unattended run mode refers to a desktop flow execution without human supervision, it's materialized by __unattended bots__: the Trial user license and the Process license bear one unattended bot each (to be allocated to a machine for the Process license). <br><br> When an unattended run is triggered, the unattended bot securely signs into the  machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.|
+|Hosted RPA|The hosted RPA entitlement is needed to create and turn-on a __Microsoft hosted machine__ (individual hosted machine or part of a hosted machine group) thus enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview) (= no physical machine management on the user side).<br><br>An active (= turned-on) hosted machine is materialized by an __hosted bot__: each Hosted Process license bears one hosted bot.<br><br>As the Hosted Process license is a superset of the Process license, the hosted entitlement implicitly includes the unattended entitlement, meaning that each hosted bot can also be seen as an unattended bot (= provides the unattended run mode capability on the hosted machines (individual or part of a group)).|
+
+To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
+
+# [Other capabilities](#tab/table)
+
+#### Entitlements to other Power Automate capabilities
+|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
+|----------|-------|
+|Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization defined.|
+|On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premises data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.|
+|Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate.|
+
+# [Consumptive credit and storage](#tab/table)
+
+#### Consumptive credits and storage entitlements
+|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
+|----------|-------|
+|AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you add intelligence to your automations, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits." Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic text extractions. Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).|
+|Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Some Power Automate license provide a tenant-wide entitlement for each of these three storage types. You can buy more storage in 1-GB add-on increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
+|Process mining data storage|The process mining capability in Power Automate is suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). The process mining capability displays maps of your processes with data and metrics to recognize performance issues.|
+
 ### How can I see my current entitlements ?
 
 In the Power Automate portal, click on __Settings__, and on __View my licenses__:
@@ -115,80 +159,3 @@ In the Power Automate portal, click on __Settings__, and on __View my licenses__
 > - The user license(s) are displayed in the section _My licenses_
 > - The capacity license(s) (and capacity add-ons) are displayed in the section _Environment capacities_
 > - The user entitlement are displayed in the _Capabilities_ section with a green check mark
-
-
-# [Connector](#tab/table)
-
-A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|Standard connectors|The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it.|
-|Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it.|
-|Custom connectors|The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector.|
-
-# [RPA](#tab/table)
-
-[Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. 
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|Attended RPA|The attended RPA entitlement is needed to perform most of the RPA related operations: register a machine, access RPA management portal pages, add premium and custom actions to desktop flows, share desktop flows, create desktop flows in non-default environments and trigger desktop flows in __attended mode__ through an attended bot (in default attended mode or in Picture-in-picture attended mode). <br><br>Attended run mode refers to a desktop flow execution with human supervision, it's materialized by __attended bots__: the Trial user license and the Premium user license bear one attended bot each.<br><br> When an attended run is triggered, the attended bot securely accesses the machine already is use by the user and executes the desktop flow actions on the target applications.<br><br> Picture-in-picture attended mode refers to attended desktop flows executions within a virtual window that replicates the user's desktop, so that they can continue working on their machine while the automation is running in parallel.|
-|Unattended RPA|The unattended RPA entitlement is needed to trigger desktop flows in __unattended mode__ through an unattended bot. <br><br>Unattended run mode refers to a desktop flow execution without human supervision, it's materialized by __unattended bots__: the Trial user license and the Process license bear one unattended bot each (to be allocated to a machine for the Process license). <br><br> When an unattended run is triggered, the unattended bot securely signs into the  machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.|
-|Hosted RPA|The hosted RPA entitlement is needed to create and turn-on a __Microsoft hosted machine__ (individual hosted machine or part of a hosted machine group) thus enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview) (= no physical machine management on the user side).<br><br>An active (= turned-on) hosted machine is materialized by an __hosted bot__: each Hosted Process license bears one hosted bot.<br><br>As the Hosted Process license is a superset of the Process license, the hosted entitlement implicitly includes the unattended entitlement, meaning that each hosted bot can also be seen as an unattended bot (= provides the unattended run mode capability on the hosted machines (individual or part of a group)).|
-
-To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
-
-# [Other](#tab/table)
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization defined.|
-|On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premises data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.|
-|Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate.|
-
-# [Credit](#tab/table)
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you add intelligence to your automations, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits." Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic text extractions. Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).|
-|Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Some Power Automate license provide a tenant-wide entitlement for each of these three storage types. You can buy more storage in 1-GB add-on increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
-|Process mining data storage|The process mining capability in Power Automate is suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). The process mining capability displays maps of your processes with data and metrics to recognize performance issues.|
-
-### Entitlements to usage of connector types in cloud flows
-
-A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|Standard connectors|The [standard connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a standard connector to a cloud flow and trigger it.|
-|Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it.|
-|Custom connectors|The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector.|
-
-### Entitlements to usage of Robotic process automation (RPA)
-
-[Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. 
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|Attended RPA|The attended RPA entitlement is needed to perform most of the RPA related operations: register a machine, access RPA management portal pages, add premium and custom actions to desktop flows, share desktop flows, create desktop flows in non-default environments and trigger desktop flows in __attended mode__ through an attended bot (in default attended mode or in Picture-in-picture attended mode). <br><br>Attended run mode refers to a desktop flow execution with human supervision, it's materialized by __attended bots__: the Trial user license and the Premium user license bear one attended bot each.<br><br> When an attended run is triggered, the attended bot securely accesses the machine already is use by the user and executes the desktop flow actions on the target applications.<br><br> Picture-in-picture attended mode refers to attended desktop flows executions within a virtual window that replicates the user's desktop, so that they can continue working on their machine while the automation is running in parallel.|
-|Unattended RPA|The unattended RPA entitlement is needed to trigger desktop flows in __unattended mode__ through an unattended bot. <br><br>Unattended run mode refers to a desktop flow execution without human supervision, it's materialized by __unattended bots__: the Trial user license and the Process license bear one unattended bot each (to be allocated to a machine for the Process license). <br><br> When an unattended run is triggered, the unattended bot securely signs into the  machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.|
-|Hosted RPA|The hosted RPA entitlement is needed to create and turn-on a __Microsoft hosted machine__ (individual hosted machine or part of a hosted machine group) thus enabling [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview) (= no physical machine management on the user side).<br><br>An active (= turned-on) hosted machine is materialized by an __hosted bot__: each Hosted Process license bears one hosted bot.<br><br>As the Hosted Process license is a superset of the Process license, the hosted entitlement implicitly includes the unattended entitlement, meaning that each hosted bot can also be seen as an unattended bot (= provides the unattended run mode capability on the hosted machines (individual or part of a group)).|
-
-To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
-
-### Entitlements to other Power Automate capabilities
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization defined.|
-|On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premises data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.|
-|Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate.|
-
-### Consumptive credits and storage entitlements
-
-|Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
-|----------|-------|
-|AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you add intelligence to your automations, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits." Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic text extractions. Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).|
-|Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Some Power Automate license provide a tenant-wide entitlement for each of these three storage types. You can buy more storage in 1-GB add-on increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
-|Process mining data storage|The process mining capability in Power Automate is suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). The process mining capability displays maps of your processes with data and metrics to recognize performance issues.|
