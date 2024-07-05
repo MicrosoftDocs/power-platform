@@ -97,12 +97,9 @@ Hereunder the list of available Power Automate capacity licenses:
 |**Entitlements**|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit). <br><br>Multiple cloud flows part of the same business process (invoicing process, ticketing process, etc.) can be associated together and covered by the same Process licenses.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>.|
 |**Will benefit**|Organizations looking to automatize at scale their business processes though cloud automation and/or RPA desktop automations.|
 
-Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#power-automate-process-license) license.
-
-> `1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.`
-
 > 1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
 
+Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#power-automate-process-license) license.
 
 # [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
@@ -114,11 +111,11 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 |**Entitlements**|The Hosted Process license enables [RPA with zero infrastructure](/power-automate/desktop-flows/hosted-rpa-overview) (= no physical machine management on the user side). Each Hosted Process license bears one hosted bot, which enables the creation of one Microsoft hosted machine requires.<br><br>Those hosted machines can be created as individual hosted machines or as part of hosted machine groups, which provide 1) auto-scalability delivering high processing parallelization and reacting to demand spikes and 2) [load balancing](/power-automate/desktop-flows/hosted-machine-groups#load-balance-hosted-machine-group)<sup>1</sup> across multiple hosted machine groups, which optimizes the hosted bot utilization rate.<br><br>The Power Automate Hosted Process is also a superset of the Power Automate Process, which means it can provide the same entitlements as the Process license (allocated to a cloud flow or to a machine).<sup>2</sup>|
 |**Will benefit**|Organizations looking to enable their RPA desktop automations quickly and at scale while freeing up the previously required management of physical resources and thus reducing costs.|
 
-Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-license.md#power-automate-hosted-process-license) license.
-
 > 1. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using a common hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.
 
 > 2. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.
+
+Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-license.md#power-automate-hosted-process-license) license.
 
 ---
 
