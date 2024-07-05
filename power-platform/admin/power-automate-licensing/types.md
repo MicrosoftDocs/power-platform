@@ -215,4 +215,4 @@ In the Power Automate portal, click on __Settings__, and on __View my licenses__
 > [!NOTE]
 > - The user license(s) are displayed in the section _My licenses_
 > - The capacity license(s) (and capacity add-ons) are displayed in the section _Environment capacities_
-> - The user entitlement are displayed in the _Capabilities_ section with a green check mark
+> - The user entitlement (in context of environment capacities) are displayed in the _Capabilities_ section with a green check mark
