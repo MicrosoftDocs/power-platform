@@ -101,6 +101,8 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 
 > `1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.`
 
+> 1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
+
 
 # [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
@@ -114,9 +116,9 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 
 Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-license.md#power-automate-hosted-process-license) license.
 
->> `1. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.`
->
->> `2. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.`
+> 1. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using a common hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.
+
+> 2. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.
 
 ---
 
@@ -149,10 +151,13 @@ Hereunder a table detailing each license [entitlement](#license-entitlements):
 |__Dataverse database storage__|250 MB per license|50 MB per license|50 MB per license|
 |__Dataverse file storage__|2 GB per license|200 MB per license|200 MB per license|
 
-_1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate))._ <br>
-_2. When multiple units of Process licenses are allocated to a cloud flow, their PPR limits are stacked._ <br>
-_3. As the Hosted Process license is a superset of the Process license, each hosted bot can also be seen as an unattended bot, which allows to run in unattended mode on the hosted machine / hosted machine group_<br>
-_4. Up to 100 GB per tenant._
+> 1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)).
+
+> 2. When multiple units of Process licenses are allocated to a cloud flow, their PPR limits are stacked.
+
+> 3. As the Hosted Process license is a superset of the Process license, each hosted bot can also be seen as an unattended bot, which allows to run in unattended mode on the hosted machine / hosted machine group
+
+> 4. Up to 100 GB per tenant.
 
 ## License entitlements
 
