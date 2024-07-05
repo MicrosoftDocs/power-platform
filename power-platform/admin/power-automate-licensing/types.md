@@ -97,7 +97,7 @@ Hereunder the list of available Power Automate capacity licenses:
 
 Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#power-automate-process-license) license.
 
-# [**Power Automate Premium license**](#tab/power-automate-hosted-process)
+# [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
 ### Power Automate Hosted Process
 |License name<br>_______________________|Power Automate Hosted Process<br>_____________________________________________________________________________________________________________|
