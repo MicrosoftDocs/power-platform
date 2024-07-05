@@ -63,7 +63,7 @@ _4. The Power Automate Hosted Process superset behavior (allowing it to be appli
 
 If you sign in with your work or school email address, you get all capabilities included in the Power Automate Free license. If you have a non-business user account (such as an account that ends with @outlook.com or @gmail.com), you can still use Power Automate with the Power Automate Free license. Go to [Power Automate](https://flow.microsoft.com/) and then select **Try free**.
 
-[Compare the Power Automate Free](types.md#power-automate-free) license with the other Power Automate user licenses.
+[Compare the Power Automate Free](types.md#user-licenses) license with the other Power Automate user licenses.
 
 > [!NOTE]
 > You can't share flows when you use the Free license.
@@ -80,7 +80,7 @@ A user can self-provision a Power Automate Trial license from within the Power A
 
 ![Start free trial from within Power Automate](../media/power-automate-licensing/free-trial-inline.png)
 
-[Compare the Power Automate Trial](types.md#power-automate-trial) license with the other Power Automate user licenses.
+[Compare the Power Automate Trial](types.md#user-licenses) license with the other Power Automate user licenses.
 
 #### How can admins allow or block Power Automate Trial licenses (self-assisted)?
 
