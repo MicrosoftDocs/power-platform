@@ -105,11 +105,9 @@ Licenses have entitlements and each entitlement gives access to a specific Power
 
 ![License entitlements](../media/RPA-license/entitlement_list.png)
 
-### Deep dive on entitlements
+# [Connector types](#tab/connector-types)
 
-# [Connector types](#tab/table)
-
-#### Entitlements to usage of connector types in cloud flows
+### Entitlements to usage of connector types in cloud flows
 A [connector](/connectors/overview) represents the underlying service (such as OneDrive, SharePoint, Salesforce, etc.) with which a cloud flow can interact. It provides a way for a user to connect its cloud flow to a third-party account (such as a Salesforce account) and use a set of prebuilt actions and triggers.
 
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
@@ -118,9 +116,9 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 |Premium connectors|The [premium connectors](/connectors/connector-reference/connector-reference-standard-connectors) entitlement is needed to add a premium connector to a cloud flow and trigger it.|
 |Custom connectors|The [custom connectors](/connectors/custom-connectors) entitlement is needed to create a connector with its own triggers and actions when an app / a service does't have a prebuilt connector.|
 
-# [Robotic Process Automation](#tab/table)
+# [Robotic Process Automation](#tab/rpa)
 
-#### Entitlements to usage of Robotic process automation (RPA)
+### Entitlements to usage of Robotic process automation (RPA)
 [Robotic process automation (RPA)](/power-automate/desktop-flows/introduction) is needed to interact with applications, which are lacking a prebuilt connector and which don't have APIs that could be used to build a custom connector. With RPA, you automate applications by teaching Power Automate for Desktop to mimic the mouse movements and keyboard entries of a human user, as if a robot was using the computer. 
 
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
@@ -131,23 +129,25 @@ A [connector](/connectors/overview) represents the underlying service (such as O
 
 To learn more about the premium RPA capabilities, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
-# [Other capabilities](#tab/table)
+# [Other capabilities](#tab/other-capabilities)
 
-#### Entitlements to other Power Automate capabilities
+### Entitlements to other Power Automate capabilities
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
 |----------|-------|
 |Business process flows|The [business process flows](/power-automate/business-process-flows-overview) entitlement is needed to create a business process flow. Business process flows provide a guide for people to get work done they offer a streamlined user experience that leads people through the processes their organization defined.|
 |On premises gateway|The [on-premises data gateway](/power-automate/gateway-reference) entitlement is needed to create and use an on-premises data gateway. It acts as a bridge to provide quick and secure data transfer between on-premises data and several Microsoft cloud services. With gateways, organizations can keep databases and other data sources on-premises and securely use that on-premises data in cloud services.|
 |Process mining|The process mining entitlement is needed to use the process mining and task mining capabilities of Power Automate.|
 
-# [Consumptive credit and storage](#tab/table)
+# [Consumptive credit and storage](#tab/consumptive-credit-and-storage)
 
-#### Consumptive credits and storage entitlements
+### Consumptive credits and storage entitlements
 |Entitlement to<br>____________________________|Entitlement description<br>___________________________________________________________________________________________________________|
 |----------|-------|
 |AI Builder credits|With [AI builder](/power-automate/use-ai-builder), you add intelligence to your automations, predict outcomes, and help improve business performance. AI Builder capacity is expressed in the form of "service credits." Service credits serve as the single (common) currency across all the scenarios that AI Builder supports. Available service credits are deducted when AI Builder services are used. For instance, you could use these credits to extract data from a few documents with _form processing_ or perform hundreds of basic text extractions. Different scenarios (for example, forms processing, prediction, etc.) consume service credits at different rates. Learn more about [AI builder licensing](/power-platform/admin/powerapps-flow-licensing-faq).|
 |Dataverse database and file storage|Data volume continues to grow exponentially as businesses advance their digital transformation journey and bring data together across their organizations. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. To support the growing needs of today's organizations, data storage solutions need to evolve continuously and provide the right solution to support expanding business needs. Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). Some Power Automate license provide a tenant-wide entitlement for each of these three storage types. You can buy more storage in 1-GB add-on increments. Learn more about [Dataverse capacity storage](../capacity-storage.md).|
 |Process mining data storage|The process mining capability in Power Automate is suited for discovery of inefficiencies in organization-wide processes. It enables you to gain a deep understanding of your processes using event log files that you can get from your system of recording (apps you use in your processes). The process mining capability displays maps of your processes with data and metrics to recognize performance issues.|
+
+---
 
 ### How can I see my current entitlements ?
 
