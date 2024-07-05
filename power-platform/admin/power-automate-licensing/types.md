@@ -29,12 +29,14 @@ The Power Automate licenses are categorized as follows:
 |User license| User-centric: a user license is assigned to a user.|It entitles the user to access [specific capabilities](#license-entitlements).|
 |Capacity license| Object-centric: a capacity license is allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group).|It provides the object autonomous entitlements (the same way a user license provides entitlements to a user).|
 
-You can purchase those licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more](buy-licenses.md)
+You can purchase those licenses on [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more on purchasing](buy-licenses.md).
 
 > [!TIP]
 > 
 > - As alternative to licenses, an organization can enable its environments to use the [Pay-as-you-go model](/power-platform/admin/pay-as-you-go-overview) and get started building flows without any license requirement or upfront costs.
-> - Within a Pay-as-you-go environment all premium capabilities (including RPA) are available 
+> - Within a Pay-as-you-go environment all premium capabilities (including RPA) are available
+
+Extra details on the Power Platform licensing model can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 ## User licenses
 
@@ -99,7 +101,6 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 
 > `1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.`
 
-`1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.`
 
 # [**Power Automate Hosted Process license**](#tab/power-automate-hosted-process)
 
@@ -113,9 +114,9 @@ Learn more about the [Power Automate Process](deep-dive-on-specific-license.md#p
 
 Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-license.md#power-automate-hosted-process-license) license.
 
->> **1.** Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.
+>> `1. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings.`
 >
->> **2.** The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.
+>> `2. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) isn't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage.`
 
 ---
 
