@@ -38,6 +38,8 @@ _2. Each machine - depending on its OS - can support a maximum number of unatten
 _3. Cloud flow with "Process plan inherited from machine" aren't yet available_ <br>
 _4. Breakdown of cloud flow allocations isn't yet available in the process capacity utilization page_
 
+[Compare the Power Automate Process](types.md#capacity-licenses) license with the other Power Automate capacity licenses.
+
 > [!NOTE]
 > - The Process license replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on-legacy) (same price with more entitlements).
 > - The existing Unattended RPA add-ons have been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
@@ -58,6 +60,8 @@ _1. The available hosted pool supports all hosted machine groups auto-scaling op
 _2. Load balancing refers to the ability of multiple hosted machine groups to scale-up and down at different moments using the same available hosted pool. The load balancing governance is managed through the max bots and committed bots scaling settings._ <br>
 _3. Cloud flow with "Process plan inherited from machine" aren't yet available_  <br>
 _4. The Power Automate Hosted Process superset behavior (allowing it to be applied to machines and cloud flows) and Admin Center setting aren't yet available, in the meantime any organization with [Process overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) that could be covered by its Hosted Process licenses should ignore the Process overage ._ 
+
+[Compare the Power Automate Hosted Process](types.md#capacity-licenses) license with the other Power Automate capacity licenses.
 
 ## Power Automate Free license
 
