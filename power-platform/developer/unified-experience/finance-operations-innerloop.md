@@ -21,7 +21,6 @@ Let's start by talking about a development machine with multiple unified develop
 
 ## Multiple unified development environments
 
-s
 A developer machine can be used to connect to multiple unified development environments. However, an instance of Visual Studio can at any time be connected to only one environment and have only one metadata configuration active. You can switch the active configuration using the menu item **Extensions** > **Dynamics 365** > **Configure Metadata**.
 
 Switching the active metadata configuration doesn't change the environment you're connected to. You can change it from the Visual Studio menu item **Tools** > **Connect to Dataverse**.
