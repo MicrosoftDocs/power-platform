@@ -1,7 +1,7 @@
 ---
 title: Get started managing the Meeting Room Services program
 description: Learn how to manage resources in the Meeting Room Services Admin model-driven app for Microsoft Power Platform.
-author: ananth-msft
+author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
