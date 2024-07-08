@@ -19,7 +19,7 @@ contributors:
 ---
 # General availability deployment
 
-Each release wave becomes _generally available_ twice a year. Your environments automatically receives these mandatory updates.
+Each release wave becomes _generally available_ twice a year. Your environments automatically receive these mandatory updates.
 
 To test the upcoming updates, [opt in to early access updates](opt-in-early-access-updates.md).
 
