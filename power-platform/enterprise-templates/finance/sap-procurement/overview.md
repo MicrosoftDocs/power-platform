@@ -1,6 +1,6 @@
 ---
 title: SAP Procurement template for Power Platform
-description: Learn about Microsoft's SAP Procurement template for Power Platform.
+description: Microsoft's SAP Procurement template streamlines and automates SAP procurement processes to drive efficiencies in your organization's procure-to-pay processes.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -14,13 +14,14 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/21/2024
+ms.date: 06/24/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+#customer intent: As a user, I want to learn about Microsoft's SAP Procurement template for Power Platform and understand how it can help streamline and automate SAP procurement processes.
 ---
 
-# SAP Procurement template for Power Platform
+# What is the SAP Procurement template for Power Platform?
 
 SAP enterprise resource planning (ERP) is a centralized system of record that facilitates the management of data and business processes between departments in an organization. Microsoft Power Platform can help you transform the way you view and work with your SAP data. Enhanced functionalities in the on-premises data gateway and the [SAP ERP connector](/connectors/saperp/) make it easier for you to get started with and manage your SAP integration with Power Platform.
 
@@ -77,12 +78,9 @@ You can access the SAP Procurement template two ways:
 > [!IMPORTANT]
 > Before accessing and installing the SAP Procurement template solution files, you must [integrate SAP with Power Platform](administer/get-started.md#integrate-sap-with-power-platform).
 
-### Next step
+### Related content
 
-[Get started with SAP Procurement template](administer/get-started.md)
-
-### See also
-
+- [Get started with SAP Procurement template](administer/get-started.md)
 - [Frequently asked questions about SAP integration with Power Platform](faqs.md)
 - [SAP Vendor Management app](use/vendor-management.md)
 - [SAP Requisition Management app](use/requisition-management.md)

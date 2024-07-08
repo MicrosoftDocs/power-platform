@@ -115,7 +115,7 @@ You can easily access and install the Awards and Recognition template from AppSo
 
 ### Download and manually install solution files
 
-You also have the option to download *managed* or *unmanaged* solution files to manually install into your prepared environment according to your organization's requirements:
+Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download the following managed or unmanaged solution files:
 

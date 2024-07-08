@@ -1,6 +1,6 @@
 ---
 title: Use the SAP Vendor Invoice Management app
-description: Learn how you can search for and view vendor invoices in SAP, approve vendor invoices in SAP for payment, or create invoices against existing POs in SAP using Microsoft's SAP Vendor Invoice Management app for Microsoft Power Platform.
+description: Work with vendor invoices in SAP using the SAP Vendor Invoice Management app for Microsoft Power Platform.
 author: jongilman88
 ms.author: jongilman
 contributors:

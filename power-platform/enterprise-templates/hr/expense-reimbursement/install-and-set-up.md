@@ -8,7 +8,7 @@ contributors:
   - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 07/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -16,7 +16,17 @@ ms.subservice: solution-templates
 
 # Install and set up the Expense Reimbursement template
 
-As a Power Platform admin, you install, set up, and deploy the Expense Reimbursement template solutions for your organization. This article covers the following steps:
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Expense Reimbursement template.
 
 ## Step 1: Review prerequisites
 
@@ -24,7 +34,7 @@ Make sure that you have the required license and an environment and data policy 
 
 ### Confirm licensing
 
-Make sure that your organization has the necessary licensing to use enterprise templates. Power Apps usage rights that are included with Microsoft 365 and Office 365 licenses aren't sufficient. You need one of the following Power Apps plans:
+Make sure that your organization has the necessary licensing to use enterprise templates. Power Apps usage rights that are included with Microsoft 365 and Office 365 licenses aren't sufficient. More license details are available in the [Microsoft Power Platform Licensing Guide.](https://go.microsoft.com/fwlink/?linkid=2085130) You need one of the following Power Apps plans:
 
 - Power Apps Premium
 - Power Apps per app
@@ -33,8 +43,6 @@ Make sure that your organization has the necessary licensing to use enterprise t
 
 > [!TIP]
 > A free [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/) is a great way to install the template for evaluation purposes.
-
-More license details are available in the [Microsoft Power Platform Licensing Guide.](https://go.microsoft.com/fwlink/?linkid=2085130)
 
 ### Create environment and data policies
 
@@ -49,12 +57,10 @@ It's important to have a cohesive environment and data policy and to ensure requ
 
   [Learn more about Microsoft Power Platform administration.](/power-platform/admin/)
 
-- **Environments**
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Expense Reimbursement solution files. Also consider:
 
-  Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments.](/power-platform/admin/create-environment)
-
-  - Make sure that a Power Platform environment is set up with a Dataverse database.
-  - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
+  - The Power Platform environment is set up with a Dataverse database
+  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   [Learn more about Power Platform environments.](/power-platform/admin/environments-overview)
 
@@ -139,7 +145,15 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
     Go to the [Expense Reimbursement overview article](./overview.md) to learn more about the two solutions.
 
+> [!IMPORTANT]
+> Two solutions are always installed in your environment:
+>
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Expense Reimbursement**. Contains all the components needed to enable the implementation of the Expense Reimbursement program within an organization.
+
 ### Download and manually install solution files
+
+Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download solution files.
 
@@ -226,11 +240,11 @@ Share the Expense Reimbursement app with the users in your organization.
 
 1. Go to [Power Apps](https://make.powerapps.com/) and select the environment that contains the solution.
 
-1. In the left side panel, select **Solutions**.
+1. On the left side panel, select **Solutions**.
 
 1. Select **Expense Reimbursement**.
 
-1. In the left side panel, select **Apps**.
+1. On the left side panel, select **Apps**.
 
 1. Select the **Expense Reimbursement canvas app** and select **More actions** (**&hellip;**) > **Share**.
 
@@ -240,7 +254,7 @@ Share the Expense Reimbursement app with the users in your organization.
 
 1. Select **Share**.
 
-    More information: [Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
 > [!NOTE]
 > If the Expense Reimbursement app isn't shared with you and you can't access it directly in Power Apps, contact your administrator.
@@ -272,4 +286,4 @@ Auditing isn't required, but we recommend turning it on so that it's easy to see
 
 ### See also
 
-[Get started using the Expense Reimbursement app](use.md)
+[Use the Expense Reimbursement app](use.md)

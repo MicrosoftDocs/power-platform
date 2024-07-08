@@ -7,7 +7,7 @@ contributors:
   - microsoft-george
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 07/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -69,11 +69,10 @@ It's important to have a cohesive environment and data policy and to ensure requ
 
   [Learn more about Microsoft Power Platform administration](/power-platform/admin/).
 
-- **Environments**
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Hardware Request and Management solution files. Also consider:
 
-  - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment).
-  - Make sure that a Power Platform environment is set up with a Dataverse database.
-  - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
+  - The Power Platform environment is set up with a Dataverse database
+  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   [Learn more about Power Platform environments](/power-platform/admin/environments-overview).
 
@@ -173,6 +172,8 @@ Two solutions are installed in your environment:
 Go to the [Hardware Request and Management overview article](./overview.md) to learn more about the two solutions.
 
 ### Download and manually install solution files
+
+Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download the following Managed *or* Unmanaged solution files:
 

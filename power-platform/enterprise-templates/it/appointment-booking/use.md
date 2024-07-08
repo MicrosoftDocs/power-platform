@@ -1,5 +1,5 @@
 ---
-title: Use the Appointment Booking template for Power Platform
+title: Use the Appointment Booking app
 description: Learn how you can use the Appointment Booking app for Microsoft Power Platform to streamline and automate managing your appointments.
 author: microsoft-george
 ms.author: georgenewton

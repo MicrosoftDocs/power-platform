@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 04/05/2024
+ms.date: 07/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -74,7 +74,7 @@ It's important to have a cohesive environment and data policy strategy for enter
   - [Office 365 Outlook](/connectors/office365/)
   - [Teams](/connectors/teams/)
 
-  More information: [Environment overview](/power-platform/admin/environments-overview)
+More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
 ## Step 2: Create connections
 
@@ -118,6 +118,8 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 Two solutions are installed in your environment, **IT Base** and **Appointment Booking**. [Learn more about the Appointment Booking template solutions](./overview.md).
 
 ### Download and manually install solution files
+
+Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download the following Managed *or* Unmanaged solution files:
 
@@ -188,7 +190,7 @@ There are three security roles:
 
 - **Appointment Booking – User** - Assign this role to everyone in your organization who needs access to the Appointment Booking canvas app, where appointment slots are managed and appointment bookings are made.
 
-Roles can be assigned from the admin portal.
+Take these steps to assign roles:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Environments** on the left-side menu and select the environment where the solution is installed.  
@@ -202,12 +204,12 @@ Roles can be assigned from the admin portal.
 
 More information:
 
-- [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
-- [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
+- [Learn how to manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
+- [Learn how to control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
 ## Step 7: Turn on cloud flows
 
-Open the newly installed Appointment Booking solutions and verify that the cloud flows are set to the *on* status. If not, turn the status to *on*.
+Verify that the cloud flows are turned on in the newly installed Appointment Booking solution. Turn on any flows that are not already set to *on*.
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane.
