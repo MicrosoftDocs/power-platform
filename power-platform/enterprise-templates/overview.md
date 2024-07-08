@@ -3,12 +3,9 @@ title: Overview of Enterprise templates for Power Platform
 description: Learn how Enterprise templates for Power Platform can help you quickly build, extend, and deploy solutions that improve common organizational workflows.
 author: ananthar-msft
 ms.author: ananthar
-contributors: 
-- tverhasselt
-- EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/20/2024
+ms.date: 07/08/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -51,20 +48,21 @@ Be sure to check back often for new templates that become available.
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> **Onboarding Buddy template** <br> Match new employees to _Buddies_ <br> [Documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
+      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> **Onboarding Buddy template** <br> Match new employees to _Buddies_ <br> [Documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [AppSource](https://aka.ms/AccessOnboardingBuddyTemplate)
+   :::column-end:::
+   :::column span="":::
+      ![Expense Reimbursement](media/overview/exre-logo.png "Expense Reimbursement") <br> **Expense Reimbursement template** <br>  Improve the expense reimbursement process <br> [Documentation](https://aka.ms/LearnExpenseReimbursementTemplate) <br> [AppSource](https://aka.ms/AccessExpenseReimbursementTemplate)
    :::column-end:::
    :::column span="":::
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> **Hardware Request and Management template**<br> Manage hardware requests and assets <br> [Documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br> [AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
-   :::column span="":::
-      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Expense Reimbursement](media/overview/exre-logo.png "Expense Reimbursement") <br> **Expense Reimbursement template** <br>  Improve the expense reimbursement process <br> [Documentation](https://aka.ms/LearnExpenseReimbursementTemplate) <br> [AppSource](https://aka.ms/AccessExpenseReimbursementTemplate)  
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate)
    :::column-end:::
-   :::column span="":::  
+   :::column span="":::
+      ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingServicesTemplate)
    :::column-end:::
    :::column span="":::  
    :::column-end:::
