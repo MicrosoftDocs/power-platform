@@ -81,7 +81,7 @@ To create a collection with this data:
 1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control.
 1. Set button control's **OnSelect** property to the below formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( IceCream,
                  { ID: 1, Flavor: "Chocolate",  Quantity: 100 },
                  { ID: 2, Flavor: "Vanilla",    Quantity: 200 },
@@ -147,7 +147,7 @@ In this example, you'll remove an item by using a _button_ that is outside the g
 
 1. Set the **OnSelect** property for this button control to the following formula:
 
-   ```powerapps-dot
+   ```power-fx
    Remove( Contacts, Gallery1.Selected )
    ```
 
@@ -185,7 +185,7 @@ If you already have [prepared sample data](#prepare-for-sample-data), skip this 
 1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control to your screen.
 1. Set the **OnSelect** property to the following formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( SampleContacts,
          { 'Full Name': "Yvonne McKay (sample)",      'Primary Email': "someone_a@example.com" },
          { 'Full Name': "Susanna Stubberod (sample)", 'Primary Email': "someone_b@example.com" },
@@ -242,7 +242,7 @@ Sample collection is created that you can use in the following example.
 
 1. Select the **Icon** property for icon and set it to the following formula to update the icon image as trash icon:
 
-   ```powerapps-dot
+   ```power-fx
    Icon.Trash
    ```
 
@@ -253,7 +253,7 @@ Sample collection is created that you can use in the following example.
 
 1. Set the **OnSelect** property to the following formula:
 
-   ```powerapps-dot
+   ```power-fx
    Remove( [@Contacts], ThisItem )
    ```
 

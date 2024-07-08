@@ -90,7 +90,7 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 1. Set the **App** object's **ConfirmExit** property to this expression:
 
-    ```powerapps-dot
+    ```power-fx
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -101,7 +101,7 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 1. Set the **App** object's **ConfirmExitMessage** property to this formula:
 
-    ```powerapps-dot
+    ```power-fx
     If( AccountsForm.Unsaved,
         "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
@@ -129,7 +129,7 @@ Use named formulas, in the **Formulas** property, to define a formula that can b
 
 In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the **Fill** property for each to a common formula:
 
-```powerapps-dot
+```power-fx
 Label1.Fill: ColorValue( Param( "BackgroundColor" ) )
 Label2.Fill: ColorValue( Param( "BackgroundColor" ) )
 Label3.Fill: ColorValue( Param( "BackgroundColor" ) )
@@ -137,7 +137,7 @@ Label3.Fill: ColorValue( Param( "BackgroundColor" ) )
 
 With so many places where this formula may appear, it becomes tedious and error prone to update them all if a change is needed.  Instead, you can create a global variable in **OnStart** to set the color once, and then reuse the value throughout the app:
 
-```powerapps-dot
+```power-fx
 App.OnStart: Set( BGColor, ColorValue( Param( "BackgroundColor" ) ) )
 Label1.Fill: BGColor
 Label2.Fill: BGColor
@@ -148,7 +148,7 @@ While this method is better, it also depends on **OnStart** running before the v
 
 Named formulas provide an alternative. Just as we commonly write *control-property = expression*, we can instead write *name = expression* and then reuse *name* throughout our app to replace *expression*.  The definitions of these formulas are done in the **Formulas** property:
 
-```powerapps-dot
+```power-fx
 App.Formulas: BGColor = ColorValue( Param( "BackgroundColor" ) );
 Label1.Fill: BGColor
 Label2.Fill: BGColor
@@ -165,7 +165,7 @@ The advantages of using named formulas include:
 
 Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they're used together.  For example, these named formulas retrieve useful information about the current user from Dataverse:
 
-```powerapps-dot
+```power-fx
 UserEmail = User().Email;
 UserInfo = LookUp( Users, 'Primary Email' = User().Email );
 UserTitle = UserInfo.Title;
@@ -198,7 +198,7 @@ Although each error is processed individually by **OnError**, the default error 
 
 Consider a **Label** control and **Slider** control that are bound together through the formula:
 
-```powerapps-dot
+```power-fx
 Label1.Text = 1/Slider1.Value
 ```
 
@@ -220,7 +220,7 @@ If necessary, we could also modify the formula to `Label1.Text = IfError( 1/Slid
 
 If we add an **OnError** handler, it will have no impact before step 5, but it can impact how the error is reported:
 
-```powerapps-dot
+```power-fx
 Trace( $"Error {FirstError.Message} in {FirstError.Source}" )
 ```
 
@@ -232,7 +232,7 @@ With this in place, from the app user's perspective, there won't be any error. B
 
 If we also wanted to have the same default error banner displayed in addition to the trace, we can rethrow the error with the **Error** function after the **Trace** call just as it did if the **Trace** wasn't there:
 
-```powerapps-dot
+```power-fx
 Trace( $"Error {FirstError.Message} in {FirstError.Source}" );
 Error( FirstError )
 ```
@@ -285,22 +285,22 @@ After changing **StartScreen** in Studio, test it by hovering over the **App** o
 
 ### Examples
 
-```powerapps-dot
+```power-fx
 Screen9
 ```
 Indicates that `Screen9` should be shown first whenever the app starts.
 
-```powerapps-dot
+```power-fx
 If( Param( "admin-mode" ) = 1, HomeScreen, AdminScreen )
 ```
 Checks if the Param "admin-mode" has been set by the user and uses it to decide if the HomeScreen or AdminScreen should be displayed first.
 
-```powerapps-dot
+```power-fx
 If( LookUp( Attendees, User = User().Email ).Staff, StaffPortal, HomeScreen )
 ```
 Checks if an attendee to a conference is a staff member and directs them to the proper screen on startup.
 
-```powerapps-dot
+```power-fx
 IfError( If( CustomConnector.APICall() = "Forest", 
              ForestScreen, 
              OceanScreen 

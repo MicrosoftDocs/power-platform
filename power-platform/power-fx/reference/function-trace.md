@@ -40,7 +40,7 @@ When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace
 
 1. Create a button control in Power Apps Studio.
 2. Set the **OnSelect** formula to the formula:
-  ```powerapps-dot
+  ```power-fx
   Set( x, x+1 );
   Trace( x );
   ```

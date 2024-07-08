@@ -46,7 +46,7 @@ If the _Record_ argument to **With** is an error, that error will be returned by
 
 ### Simple named values
 
-```powerapps-dot
+```power-fx
 With( { radius: 10,
         height: 15 },
     Pi() * (radius*radius) * height
@@ -60,7 +60,7 @@ This example uses a record of named values to calculate the volume of a cylinder
 
 ![Interest calculator using With function.](media/function-with/interest-calculator.gif)
 
-```powerapps-dot
+```power-fx
 With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
         Amount: AmountSlider*10000,          // slider moves by 10,000 increment
         Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
@@ -96,7 +96,7 @@ Here are the detailed instructions for creating this app:
 
 ### Primary key returned from Patch
 
-```powerapps-dot
+```power-fx
 With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
       ForAll( NewOrderDetails,
               Patch( OrderDetails, Defaults( OrderDetails ),
@@ -112,7 +112,7 @@ This example adds a record to the **Order** table in SQL Server. It then uses th
 
 ### Extracted values with a regular expression
 
-```powerapps-dot
+```power-fx
 With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
     Time( Value( hours ), Value( minutes ), Value( seconds ) )

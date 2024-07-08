@@ -59,12 +59,12 @@ Here's an example:
 1. From the Data pane, select **Add data** and then add the **Environment** data source.
 1. From the Insert pane, add a **Button** control.
 1. In the formula bar, select the **OnSelect** property and enter the following formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Summary, Environment.AISummarize( {Text: "2, 4, 6, 8, 10, 12, 14, 16"} ).SummarizedText )
    ```
 1. From the Insert pane, add a **Text** control.
 1. In the formula bar, select the **Text** property and enter the following formula:
-   ```powerapps-dot
+   ```power-fx
    Summary
    ```
 1. The text box displays an AI generated summary similar to:
@@ -108,7 +108,7 @@ Here's an example:
 
 To setup the following examples:
 1. In the Tree view, select the **App** object and add the following to the **Formulas** property:
-   ```powerapps-dot
+   ```power-fx
    Subject = "Washington is a state that offers a variety of food experiences for locals and visitors alike. 
    Whether you are looking for fresh seafood, farm-to-table produce, ethnic specialties, or gourmet treats, 
    you will find something to satisfy your taste buds in Washington. Washington is famous for its seafood, 
@@ -117,18 +117,18 @@ To setup the following examples:
    ```
 1. Create a **Button** control.
 1. Create a **Text** control and set its **Text** property to:
-   ```powerapps-dot
+   ```power-fx
    Result
    ```
 
 ### AIClassify
 
 1. In Canvas apps, set the **OnSelect** property of the **Button** control to:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, Environment.AIClassify( {Text:Subject, Categories: ["Housing", "Food"]} ).Classification )
    ```
    For all other products, use this formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, AIClassify( Subject, ["Housing", "Food"] ) )
    ```
 1. Press the button. The **Text** control displays the result:
@@ -139,11 +139,11 @@ To setup the following examples:
 ### AIExtract
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, Environment.AIExtract( {Text:Subject, Entity: "State"} ).ExtractedText )
    ```
    For all other products, use this formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, AIExtract( Subject, "State" ) )
    ```
 1. Press the button. The **Text** control displays the result.
@@ -151,11 +151,11 @@ To setup the following examples:
 ### AIReply
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, Environment.AIReply( {Text:Subject} ).PreparedResponse )
    ```
    For all other products, use this formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, AIReply( Subject ) )
    ```
 1. Press the button. The **Text** control displays a result similar to:
@@ -172,11 +172,11 @@ To setup the following examples:
 ### AISummarize
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, Environment.AISummarize( {Text:Subject} ).SummarizedText )
    ```
    For all other products, use this formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, AISummarize( Subject ) )
    ```
 1. Press the button. The **Text** control displays a result similar to:
@@ -191,11 +191,11 @@ To setup the following examples:
 ### AISentiment
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, Environment.AISentiment( {Text:Subject} ).AnalyzedSentiment )
    ```
    For all other products, use this formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, AISentiment( Subject ) )
    ```
 1. Press the button. The **Text** control displays the result:
@@ -206,11 +206,11 @@ To setup the following examples:
 ### AITranslate
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, Environment.AITranslate( {Text:Subject, Language: "fr"} ).TranslatedText )
    ```
    For all other products, use this formula:
-   ```powerapps-dot
+   ```power-fx
    Set( Result, AITranslate( Subject, "fr" ) )
    ```
 1. Press the button. The **Text** control displays a result similar to:
