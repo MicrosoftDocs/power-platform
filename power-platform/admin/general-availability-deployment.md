@@ -51,7 +51,7 @@ For each region listed, deployment begins as early as the Friday dark hours befo
 
 |Region  | Deployment schedule for 2024 wave 1 general availability |
 |---------|---------|
-| First Release                | September 23, 2024 |
+| First release                | September 23, 2024 |
 | Canada                       | September 30, 2024  |
 | South America                | September 30, 2024  |
 | India                        | September 30, 2024  |
