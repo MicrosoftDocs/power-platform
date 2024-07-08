@@ -43,15 +43,15 @@ The business value toolkit solution contains the following artifacts:
 | Cloud flow | SPO-CreateSuccessStory | Used to create a success story in SharePoint online. |
 | Cloud flow | AI-ProposalComparison | Used to identify similar apps or proposals. |
 | Cloud flow | AI-RunComparisonCheckAgainstProposal | Used to summarize the potential impact of an idea/ proposal. |
-| Connection references | <ul><li>Microsoft Dataverse</li><li>Microsoft Teams</li><li>Office 365 Users</li><li>Power Apps for Admins</li><li>Power Apps for Makers</li><li>Power Automate for Admins</li><li>Power Automate Management</li><li>SharePoint Online</li></ul> | Used throughout the Business Value Toolkit | 
+| Connection references | Microsoft Dataverse, Microsoft Teams, Office 365 Users, Power Apps for Admins, Power Apps for Makers, Power Automate for Admins, Power Automate Management, SharePoint Online | Used throughout the Business Value Toolkit |
 | Environment variable | BusinessValueAppUrl | Launch URI for the Business value capture app |
 | Environment variable | CommunityHubUrl | SharePoint Online site collection URL for success stories |
 
 > [!NOTE]
-> The Business Value Toolkit component doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently. 
+> The Business Value Toolkit component doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 > [!NOTE]
-> The Business Value Toolkit utilizes generative AI actions in Power Automate, please ensure you consider the global availability of this feature. Frequently check ([this article](https://learn.microsoft.com/en-us/ai-builder/availability-region))
+> The Business Value Toolkit utilizes generative AI actions in Power Automate, please ensure you consider the global availability of this feature. Frequently check ([this article](https://learn.microsoft.com/ai-builder/availability-region))
 
 ## Import the Business Value Toolkit component solution
 
@@ -77,7 +77,7 @@ The import can take up to 15 minutes to be completed.
 
 If you want to prepopulate the solution with strategic objectives, organizational hierarchy and the average cost of things, follow these steps. This can be particularly helpful when you're just getting started with the Business Value Toolkit, or are testing.
 
-1. Sample data must be installed via the 'Configuration Migration Tool' - part of ([PAC CLI](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli))
+1. Sample data must be installed via the 'Configuration Migration Tool' - part of ([PAC CLI](https://learn.microsoft.com/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli))
 
 1. From the PAC CLI command line, launch the tool by typing `pac tool cmt`
 
@@ -97,7 +97,7 @@ If you want to prepopulate the solution with strategic objectives, organizationa
 
 ## Populating Data in the Business Value Admin App
 
-The Business Value Admin App serves as the central repository for data related to your organization’s structure, strategic objectives, and average costs. This essential data underpins the toolkit's capabilities in value alignment analysis and value calculation. 
+The Business Value Admin App serves as the central repository for data related to your organization’s structure, strategic objectives, and average costs. This essential data underpins the toolkit's capabilities in value alignment analysis and value calculation.
 
 The following table provides guidance for populating the Business Value Admin app with essential data
 
@@ -107,7 +107,7 @@ The following table provides guidance for populating the Business Value Admin ap
 | Adding strategic objectives           | Work closely with the various teams and departments to capture the objectives and how they are measuring progress towards them. This is a crucial component of the sample solution. Assign strategic objectives to the relevant team/ department. |
 | The average cost of things            | This data is used to calculate the tangible impact an app is having against a strategic objective. Work with your teams and departments to add in this data. This data is assigned to business units. |
 
-#### Business Value Toolkit Schema Overview
+### Business Value Toolkit Schema Overview
 
 The schema below outlines the various tables and columns used within the Business Value Admin App, detailing their specific purposes:
 
@@ -156,7 +156,6 @@ These prompts facilitate the creation of engaging and well-structured success st
 
 The following table illustrates the data schema relating to stories and proposals:
 
-
 | Table                              | Column                     | Purpose                                                                                                                       |
 |------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Value assessment stories    | AI assist                   | If story has been enhanced with genAI. |
@@ -175,20 +174,20 @@ Before a story is shared within the organization, it must receive user approval.
 
 > [!NOTE] SharePoint Online site collection URL
 >
->To integrate with SharePoint Online, ensure you populate the environment variable: **CommunityHubUrl**. This URL should point to a SharePoint Online site collection provisioned using the communications site template. Success stories are housed within the Pages library. For instance, your URL might resemble: https://contoso.sharepoint.com/sites/power-platform-coe. You should also ensure the account that the cloud flow runs with has at least **'Member'** access in the SharePoint Online site collection.
-
+>To integrate with SharePoint Online, ensure you populate the environment variable: **CommunityHubUrl**. This URL should point to a SharePoint Online site collection provisioned using the communications site template. Success stories are housed within the Pages library. For instance, your SharePoint site URL might resemble: `https://contoso.sharepoint.com/sites/power-platform-coe`. You should also ensure the account that the cloud flow runs with has at least **'Member'** access in the SharePoint Online site collection.
 
 #### Adding value cards to a success story in SharePoint Online
 
 The Business Value Toolkit provides a canvas app ('Display value card in SharePoint Online') that can be added to the success story. The following steps instruct how to **add and configure the canvas app**:
 
 Prior to editing the page in SharePoint Online:
+
 1. Go to make.powerapps.com > select **'Solutions'** > select **'Business Value'** > **Apps**
 1. Select the elipsis **(...)** next to the canvas app named **'Display value cards in SharePoint Online'** then copy the web link:
 
 ![Web link screen shot](media/BVT-WebLinkForCanvasApp.png "Web link for canvas app")
-1. Copy the **'Story ID'** of the success story that you want to add the canvas app to 
 
+1. Copy the **'Story ID'** of the success story that you want to add the canvas app to
 1. Enter 'edit' mode on the story page, by selecting the **'Edit'** button.
 1. Choose the area in the page where you would like to add the canvas app, then select the **'+'** button and select **'Microsoft Power Apps (Preview)'**
 1. In the **'App web link or Id'** input, add the following parameter to the web link URL: ``` ?&storyId=<paste story Id> ```
@@ -200,11 +199,11 @@ The Business Value Toolkit provides flexible methods for initiating a value asse
 
 ### Methods of Initiation
 
-1. **User Initiated - existing app assessment**: 
+1. **User Initiated - existing app assessment**:
    - Users launch the Business Value Capture app.
    - Users select an application to assess from within the app.
 
-2. **Admin Initiated - existing app assessment**: 
+2. **Admin Initiated - existing app assessment**:
    - Administrators identify an application that requires assessment.
    - Administrators initiate the value assessment process.
 
@@ -257,18 +256,16 @@ The following steps apply to the **administrator initiated** value assessment sc
 >
 >Administator initiated assessments are initiated by populating the New-AdminInitiatedAssessment cloud flow.  This flow requires that the **BusinessValueAppUrl** environment variable is populated with the launch Url of the Business Value Capture canvas app.  You can retrieve this Url by selecting the elipsis '...' > Details and copying the 'Web link' Url
 
-
 #### Administrator initiated personal productivity assessment
 
 The following steps apply to the **administrator initiated personal productivity assessment**
 
-1. The administrator identifies an environment that they want to assess. 
+1. The administrator identifies an environment that they want to assess.
 1. The administrator copies the ID of the environment.
 1. The administrator runs the cloud flow 'New-PersonalProductivityAssessment', pasting the ID for the environment into the variable 'Environment ID'.
 1. The flow runs and sends an adaptive card to the owner of each flow in the environment containing two questions designed to establish value (in time saved), and criticality of flow.
 
 ![Personal productivity assessment](media\personal-productivity-helper.png "Screenshot of personal productivity assessment")
-
 
 #### Personal productivity assessment data schema
 
@@ -307,7 +304,6 @@ The data collected during value assessment is described in the table below:
 | Value assessment collected data    | Confidence                 | Indicates the level of confidence in the analysis.                                                                             |
 | Value assessment collected data    | User Acceptance            | Indicates whether the analysis has been agreed upon by the user.                                                                |
 
-
 These datasets can be used to develop dashboards providing valuable insights into the time saved by personal productivity flows.
 
 ## Assessing the potential value of an idea or proposal
@@ -331,16 +327,14 @@ These prompts facilitate the creation of engaging and well-structured success st
 The data collected from an idea/ proposal is stored in the following Dataverse table:
 
 | Table name | Purpose |
-|------|-------|
-| Proposal assessment collected data | Stores data relating to the assessment of a proposal/ idea. Data is stored in the following columns:
-<ul>
-   <li>AppStoryName: text - the title provided for the idea/ proposal.</li>
-   <li>AudienceMatch: text - summary data from checking for audiences.</li>
-   <li>ComparisonScore: integer - Score provided (confidence in overall comparison).</li>
-   <li>FeatureMatch: text - summary data from checking for similar features</li>
-   <li>Name: text (GUID) - Id of the idea/ proposal.</li>
-   <li>StoryId: text (GUID) - Id of the related story.</li>
-</ul>
+|------------|---------|
+| Proposal assessment collected data | Stores data relating to the assessment of a proposal/ idea. Data is stored in the following columns:|
 
+- AppStoryName: text - the title provided for the idea/ proposal.
+- AudienceMatch: text - summary data from checking for audiences.
+- ComparisonScore: integer - Score provided (confidence in overall comparison).
+- FeatureMatch: text - summary data from checking for similar features.
+- Name: text (GUID) - Id of the idea/ proposal.
+- StoryId: text (GUID) - Id of the related story. |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

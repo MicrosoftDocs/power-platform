@@ -27,7 +27,7 @@ Capturing and communicating value can be a complicated process, presenting sever
 
 ## The Business value toolkit
 
-The Business Value Toolkit is a collection of sample apps and processes designed to address these challenges head-on. It provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its impact on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions. 
+The Business Value Toolkit is a collection of sample apps and processes designed to address these challenges head-on. It provides a comprehensive framework to capture and communicate the value of Power Platform solutions effectively. By guiding app owners through a structured storytelling process, enhanced by AI to both refine the narrative and analyze its impact on organizational strategic objectives, the toolkit helps transform raw insights into compelling success stories that highlight the true impact of their solutions.
 
 ### A structured approach to storytelling
 
@@ -35,11 +35,11 @@ At the heart of assessing broadly used apps is a five-stage storytelling framewo
 
 1. The problem or challenge
 2. The solution
-3. The obstacles 
+3. The obstacles
 4. The value
 5. The next steps
 
-![Storytelling frameowrk screenshot](media\storytelling-framework.png "Screenshot showing the storytelling framework interface")
+![Storytelling framework screenshot](media\storytelling-framework.png "Screenshot showing the storytelling framework interface")
 
 By leveraging generative AI, the toolkit enhances these raw stories, refining them into polished narratives. Once approved, these stories are automatically created as SharePoint pages, ready for further refinement (such as adding images, screenshots, etc). This process enables organizations to move from a position of scarcity, where success stories are rare and require effort, to one of enrichment, with a backlog of well-documented stories.
 
@@ -55,11 +55,12 @@ App owners review the analysis results and select the findings they agree with, 
 
 ### Quantifying value with the value calculator
 
-A key feature of the value assessment is the value calculator, empowering organizations to tangibly quantify the impact of their solution. Leveraging the concept of the 'average cost of things,' the calculator facilitates the input of specific metrics aligned with strategic objectives. For instance, it allows app owners to delineate key performance indicators, such as the number of invoices processed per hour, both before and after implementing the app. By capturing these metrics, the calculator paints an accurate and granular picture of value, deriving the tangible benefits from solution deployment. 
+A key feature of the value assessment is the value calculator, empowering organizations to tangibly quantify the impact of their solution. Leveraging the concept of the 'average cost of things,' the calculator facilitates the input of specific metrics aligned with strategic objectives. For instance, it allows app owners to delineate key performance indicators, such as the number of invoices processed per hour, both before and after implementing the app. By capturing these metrics, the calculator paints an accurate and granular picture of value, deriving the tangible benefits from solution deployment.
 
 ![Value calculator screen](media\value-calculator.png "Screenshot of value calculator screen")
 
 #### Communicate value with value cards
+
 When completed, this data is presented as 'value cards', which are a clear, concise representation of the data collected. Value cards are designed to inspire organizations by illustrating various ways to showcase and communicate the impact of Power Platform solutions.
 
 ![Value card summary screen](media\value-card.png "Screenshot of value card summary screen")
@@ -86,7 +87,7 @@ Anticipating the potential impact of a solution before its actual construction i
 
 3. **Optimized Development Prioritization:** The insights into the potential impact of various solutions, IT departments can prioritize their development efforts. By focusing on proposals with the highest projected impact, resources are utilized efficiently, driving tangible results and value.
 
-This capability in the Business Value Toolkit is further enhanced by a function comparing proposals to similar apps and ideas. This comparison is approached from two angles: audience similarity and feature resemblance. 
+This capability in the Business Value Toolkit is further enhanced by a function comparing proposals to similar apps and ideas. This comparison is approached from two angles: audience similarity and feature resemblance.
 
 ![Value card summary screen](media\bv-proposal-assessment.png "Screenshot of value card summary screen")
 
