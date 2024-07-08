@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 07/08/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -76,7 +76,6 @@ If a user was assigned a Power Apps license, then you can take the following ste
 
 5. Find the Power Apps license, uncheck the box and select **Save changes**.
 
-   ![Remove license.](./media/signup-question-and-answer/remove-license.png)
 
 If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 plan license, then you can disable their access to the Power Apps service by taking the following steps:
 
@@ -90,7 +89,6 @@ If a user has access to Power Apps through their Microsoft 365 and Dynamics 365 
 
 5. Expand the user's Microsoft 365 or Dynamics 365 license, uncheck the box to the service and select **Save changes**.
 
-    ![Remove service plan.](./media/signup-question-and-answer/remove-service-plan.png)
 
 Bulk removal of licenses is also possible through PowerShell. See [Remove Microsoft 365 licenses from user accounts with PowerShell](/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell) for a detailed example.   Finally, further guidance about bulk removal of services within a license can be found at [Disable access to Microsoft 365 services with PowerShell](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell).
 
