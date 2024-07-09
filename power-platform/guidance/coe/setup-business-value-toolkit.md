@@ -11,7 +11,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Set up the Microsoft Power Platform administration planning component
+# Set up the Microsoft Power Platform business value toolkit component
 
 This article will help you set up the [Business value toolkit component](business-value-toolkit.md) of the Center of Excellence (CoE) Starter Kit.
 
@@ -51,7 +51,7 @@ The business value toolkit solution contains the following artifacts:
 > The Business Value Toolkit component doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 > [!NOTE]
-> The Business Value Toolkit utilizes generative AI actions in Power Automate, please ensure you consider the global availability of this feature. Frequently check ([this article](https://learn.microsoft.com/ai-builder/availability-region))
+> The Business Value Toolkit utilizes generative AI actions in Power Automate, please ensure you consider the global availability of this feature. Frequently check ([this article](ai-builder/availability-region))
 
 ## Import the Business Value Toolkit component solution
 
@@ -77,7 +77,7 @@ The import can take up to 15 minutes to be completed.
 
 If you want to prepopulate the solution with strategic objectives, organizational hierarchy and the average cost of things, follow these steps. This can be particularly helpful when you're just getting started with the Business Value Toolkit, or are testing.
 
-1. Sample data must be installed via the 'Configuration Migration Tool' - part of ([PAC CLI](https://learn.microsoft.com/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli))
+1. Sample data must be installed via the 'Configuration Migration Tool' - part of ([PAC CLI](developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli))
 
 1. From the PAC CLI command line, launch the tool by typing `pac tool cmt`
 
@@ -133,8 +133,7 @@ The schema below outlines the various tables and columns used within the Busines
 | Average cost       | Unit            | Defines the unit of measurement (e.g., qty, time). |
 | Average cost       | Business unit   | Associates the cost data with a particular business unit. |
 
-> [!NOTE] Recommendations for Populating this Data
->
+> [!NOTE]
 >To effectively populate this data, collaborate closely with stakeholders across various business units. Since strategic objectives are often decentralized and embedded within individual units, gathering this information directly from the teams involved is crucial. Engage with these teams to gain a thorough understanding of their strategic goals and the average costs associated with their operations.
 
 ## Assessing the value of an existing app
@@ -172,8 +171,7 @@ The following table illustrates the data schema relating to stories and proposal
 
 Before a story is shared within the organization, it must receive user approval. Once approved, the story is created as a news article in SharePoint Online. Initially, as an unpublished page, the article then requires an administrator or a user with appropriate permissions to finalize it by adding images and making any necessary adjustments before publishing.
 
-> [!NOTE] SharePoint Online site collection URL
->
+> [!NOTE]
 >To integrate with SharePoint Online, ensure you populate the environment variable: **CommunityHubUrl**. This URL should point to a SharePoint Online site collection provisioned using the communications site template. Success stories are housed within the Pages library. For instance, your SharePoint site URL might resemble: `https://contoso.sharepoint.com/sites/power-platform-coe`. You should also ensure the account that the cloud flow runs with has at least **'Member'** access in the SharePoint Online site collection.
 
 #### Adding value cards to a success story in SharePoint Online
@@ -239,7 +237,7 @@ The following steps apply to the **administrator initiated** value assessment sc
 
 1. The administrator identifies an app (either through CoE Starter Kit dashboard, PPAC dashboard, or custom solution):
 
-![Screenshot of admin center](media\admin-dashboard-PPAC.png "Screenshot of Power Platform Admin Center screen")
+![Screenshot of admin dashboard](media\admin-dashboard-PPAC.png "Screenshot of Power Platform Admin Center screen")
 
 1. The administrator copies the ID of the app, and ID of the environment.
 1. The administrator runs the cloud flow titled 'New-AdminInitiatedAssessment', pasting the ID for the app and environment.
@@ -252,9 +250,8 @@ The following steps apply to the **administrator initiated** value assessment sc
 
 1. The user clicks the button to start the assessment, and launches the Business value capture app (with context).
 
-> [!NOTE] Administrator initiated value assessment
->
->Administator initiated assessments are initiated by populating the New-AdminInitiatedAssessment cloud flow.  This flow requires that the **BusinessValueAppUrl** environment variable is populated with the launch Url of the Business Value Capture canvas app.  You can retrieve this Url by selecting the elipsis '...' > Details and copying the 'Web link' Url
+> [!NOTE]
+>Administrator initiated assessments are initiated by populating the New-AdminInitiatedAssessment cloud flow.  This flow requires that the **BusinessValueAppUrl** environment variable is populated with the launch Url of the Business Value Capture canvas app.  You can retrieve this Url by selecting the elipsis '...' > Details and copying the 'Web link' Url
 
 #### Administrator initiated personal productivity assessment
 

@@ -3,7 +3,7 @@ title: "Business Value Toolkit | Microsoft Docs"
 description: "The CoE Starter Kit now contains useful components for measuring and communicating the value of Power Platform solutions."
 author: stjeffer
 ms.topic: conceptual
-ms.date: 10/05/2024
+ms.date: 07/09/2024
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -89,10 +89,10 @@ Anticipating the potential impact of a solution before its actual construction i
 
 This capability in the Business Value Toolkit is further enhanced by a function comparing proposals to similar apps and ideas. This comparison is approached from two angles: audience similarity and feature resemblance.
 
-![Value card summary screen](media\bv-proposal-assessment.png "Screenshot of value card summary screen")
+![Value card summary screen](media\bv-proposal-assessment.png "Screenshot of proposal assessment screen")
 
 This dual-pronged approach ensures that proposed solutions are not only aligned with organizational objectives but also distinct from existing offerings in the tenant. By identifying overlaps and gaps, this capability enables us to make informed decisions, minimize redundancy, and maximize the value of your development efforts.
 
-Learn more about configuring the Business Value Toolkit [here](/power-platform/guidance/coe/setup-business-value-toolkit.md).
+Learn more about configuring the Business Value Toolkit [here](setup-business-value-toolkit.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
