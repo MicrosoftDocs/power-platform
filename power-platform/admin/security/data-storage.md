@@ -132,6 +132,67 @@ This setting enables all SAS calls within Power Platform to be logged into Purvi
 | enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.     |
 | enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
 
+### Enabling Purview Audit Logging
+In order for the logs to to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated via the Power Platform Admin Center by a **tenant admin**: 
+
+1. Go to https://admin.powerplatform.microsoft.com and log in with tenant admin credentials.
+1. On the left navigation pane, Click on `Environments`, then pick the environment that you want to enable admin logging for.
+1. Click on `Settings` at the top, then expand the `Product` section and click on `Privacy + Security`.
+
+    ![purview-enable-1.png](power-platform/admin/security/media/purview-enable-1.png)
+1. Under `Storage Shared Access Signature (SAS) Security Settings(Preview)`, toggle the `Enable SAS Logging in Purview ` feature.
+
+    [purview-enable-1.png](../attachments/purview-enable-2.png)
+    
+
+## Searching Audit Logs
+Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in case of IP validation issues. **Logs in Purview are the most reliable solution** as Microsoft internally does not log full customer IPs, so cannot confidently determine why IP checks might fail at any time.
+
+Instructions below may be useful in diagnosing issues or understanding SAS usage patterns within your tenant:
+
+1. Make sure audit logging is enabled for the environment. See [Enabling Purview Audit Logging](#enabling-purview-audit-logging).
+1. Go to https://compliance.microsoft.com and log in with tenant admin credentials.
+1. On the left navigation pane, Click on `Audit`. If this options is missing, it means the logged-in user doesn't have admin access to query audit logs.
+1. Pick the date and time range in UTC for when you're trying to look for logs (e.g. when a 403 Forbidden error with an `unauthorized_caller` error code was returned).
+1. From the `Activities - friendly names` dropdown, search for `power platform storage operations` and select `Created SAS URI` and `Used SAS URI`.
+1. Specify a keyword under `Keyword Search` (refer to [Purview's public documentation](https://learn.microsoft.com/en-us/purview/audit-search?tabs=compliance-portal#get-started-with-search) for this field). You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
+    - The value of `x-ms-service-request-id` response header. This will filter the results to just one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. Most useful when investigating a 403 Forbidden error from the proxy service. Can also be used to grab the `powerplatform.analytics.resource.sas.operation_id` value.
+    - The value of `x-ms-sas-operation-id` response header. This will filter the results to one SAS URI Creation event and one or more Usage events for that SAS URI depending on how many times it was accessed. Maps to the `powerplatform.analytics.resource.sas.operation_id` field.
+    - Full or partial SAS URI, minus the signature. This might return many SAS URI Creation and many SAS URI Usage events, because it is possible for the same URI to be requested for generation as many times as needed.
+    - Caller IP address. Will return all Creation and Usage events for that IP.
+    - Environment ID. This might return a large set of data that can span across many different offerings of Power Platform, so avoid if possible or consider narrowing down the search window.
+
+    > [!WARNING]
+    > It is NOT recommended to search using User Principal Name or Object ID, as those are only propagated to Creation events and not Usage events.
+
+1. Click on the Search button and wait for results to appear.
+
+![purview-search](../media/purview-search.png)
+
+
+> [!WARNING]
+> Log ingestion into Purview can be delayed for up to an hour or more, so keep that in mind when looking for most recent events.
+
+### Troubleshooting 403 Forbidden/unauthorized_caller
+You can use Creation and Usage logs to determine why a call to the proxy endpoint would result in a 403 Forbidden with an `unauthorized_caller` error code.
+
+1. Find logs in Purview as described above. Consider using either `x-ms-service-request-id` or `x-ms-sas-operation-id` from the response headers as the search keyword.
+1. Open the Usage event (`Used SAS URI`), and look for the `powerplatform.analytics.resource.sas.computed_ip_filters` field under `PropertyCollection`. This IP range is what the proxy service uses to determine whether the request is authorized to proceed or not.
+1. Compare this value against the `IP Address` field of the log, which should be sufficient for determining why the request failed.
+1. If you think the value of `powerplatform.analytics.resource.sas.computed_ip_filters` is incorrect, continue with the next steps.
+1. Open the Creation event (`Created SAS URI`) by searching using the `x-ms-sas-operation-id` response header value (or the value of `powerplatform.analytics.resource.sas.operation_id` field from the Creation log).
+1. Get the value of `powerplatform.analytics.resource.sas.ip_binding_mode` field. If it's missing or empty, it means IP binding wasn't enabled on that environment at the time of that particular request.
+1. Get the value of `powerplatform.analytics.resource.sas.admin_provided_ip_ranges`. If it's missing or empty, it means IP firewall ranges weren't specified on that environment at the time of that particular request.
+1. Get the value of `powerplatform.analytics.resource.sas.computed_ip_filters`, which should be identical to the `Usage` event and is derived based on IP binding mode and admin-provided IP firewall ranges. See the derivation logic on [Data storage and governance in Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/security/data-storage#storage-shared-access-signature-sas-ip-restriction).
+
+This should give tenant admins enough information to correct any misconfiguration against the environment for IP binding settings.
+
+> [!WARNING]
+> Changes made to environment settings for SAS IP binding can take at least 30 minutes to take effect. It might be more if partner teams have their own cache on top of the proxy service.
+
+
+
+
 ### Related articles
 
 [Security in Microsoft Power Platform](./overview.md)  
