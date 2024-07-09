@@ -1,6 +1,6 @@
 ---
 title: "Solution concepts | Microsoft Docs"
-description: "Learn about solutions in Power Apps, Power Automate, and Power Virtual Agents"
+description: "Learn about solutions in Power Apps, Power Automate, and Microsoft Copilot Studio"
 keywords: 
 author: Mattp123
 ms.subservice: alm
