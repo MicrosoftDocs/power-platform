@@ -3,7 +3,7 @@ title: Types of Power Automate add-ons
 description: Learn about types of Power Automate add-ons.
 author: msftman
 ms.topic: overview
-ms.date: 07/04/2024
+ms.date: 07/10/2024
 ms.author: cvassallo
 contributors:
   - kenseongtan
@@ -25,11 +25,11 @@ The Power Automate add-ons are categorized as follows:
 - consumptive add-ons
 - storage add-ons
 
-![Power Automate add-ons](../media/RPA-license/add-ons-3.png)
+:::image type="content" source="../media/RPA-license/add-ons-3.png" alt-text="Screenshot of Power Automate add-ons.":::
 
-|Add-on type<br>________________________|Description<br>__________________________________________________________________________________________________________________|
+|Add-on type | Description  |
 |-------|------|
-|Capacity add-on|A capacity add-on is allocated to a Power Automate object (cloud flow, machine, etc.). It provides the object autonomous entitlements (the same way a user license provides entitlements to a user).|
+|Capacity add-on|A capacity add-on is allocated to a Power Automate object (cloud flow, machine, and more.). It provides the object autonomous entitlements (the same way a user license provides entitlements to a user).|
 |Consumptive add-on|A consumptive add-on provides a monthly quantity of units (AI builder credits, Power Platform requests), which are consumed and destroyed after usage.|
 |Storage add-on|Storage add-ons provide data storage space to support scaling of various Power Automate operations.|
 
@@ -48,7 +48,8 @@ Extra details on the Power Platform licensing model can be found in the [Microso
 A capacity add-on is object-centric: it's allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group) and it provides this object specific autonomous entitlements (regardless of the user licenses owned by persons interacting with the object). Its role is exactly identical to a [capacity license](types.md#capacity-licenses).
 
 There are two Power Automate (legacy) capacity add-ons:
-![Unattended RPA and Hosted RPA capacity add-ons](../media/RPA-license/capacity-add-ons-3.png)
+
+:::image type="content" source="../media/RPA-license/capacity-add-ons-3.png" alt-text="Screenshot of unattended RPA and hosted RPA capacity add-ons.":::
 
 ### Unattended RPA add-on (legacy)
 
@@ -59,7 +60,7 @@ There are two Power Automate (legacy) capacity add-ons:
 
 The Unattended RPA add-on provides the [unattended RPA entitlement](types.md#entitlements-to-usage-of-robotic-process-automation-rpa) needed to trigger a desktop flow in unattended mode on a standard machine (unattended mode refers to a desktop flow execution without human supervision). 
 
-|<br>_________________________________|Standard machine (physical or virtual)<br>__________________________________________________________________________________________________________|
+| |Standard machine (physical or virtual)|
 |-------|------|
 |__Scenario description__|When allocated to a machine, an Unattended RPA add-on becomes an unattended bot. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time<sup>1</sup>. |
 |__Unattended bot allocation__|Unattended bots can be manually allocated to machines or automatically allocated to them at runtime<sup>2</sup>. <br><br>Discover [how to allocate an unattended bot to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-machine).|
@@ -91,7 +92,7 @@ The add-on is needed to provision a Microsoft hosted machine in the two followin
 
 At provisioning of any hosted machine (individual or within a group), a Hosted RPA add-on is auto-allocated to it and becomes a __hosted bot__.
 
-|<br>__________________________|Hosted machine<br>______________________________________________|Hosted machine group<br>__________________________________________________________|
+| |Hosted machine |Hosted machine group |
 |-------|------|------|
 |__Scenario description__|A hosted machine enables developers to build, test, and run automation on a constantly active (= turned-on) hosted machine.|A hosted machine group enables developers to run automation on an auto-scaling group of hosted machines. <br><br>It's continuously adjusting the number of hosted machines turned-on to the desktop flow workload.|
 |__Hosted bot allocation__|One hosted bot is automatically pulled from the available hosted pool<sup>1</sup> and allocated to the individual hosted machine at its creation.|One hosted bot is automatically pulled from the available hosted pool<sup>1</sup> and temporarily allocated to the hosted machine group when it scales up: any new hosted machine turned-on in the group consumes one extra hosted bot.|
@@ -111,7 +112,7 @@ As the Hosted RPA add-ons was converted into Hosted Process licenses, learn abou
 
 A consumptive add-on provides a monthly quantity of consumptive units, which are consumed by flow runs and destroyed after usage (AI builder credits, Power Platform requests entitlement).
 
-![Power Automate consumptive add-ons](../media/RPA-license/consumptive-add-ons-2.png)
+:::image type="content" source="../media/RPA-license/consumptive-add-ons-2.png" alt-text="Screenshot of Power Automate consumptive add-ons.":::
 
 ### AI builder capacity add-on
 
@@ -131,7 +132,7 @@ I have a Power Automate per user with RPA plan and I got AI builder credits as p
 
 No. AI builder service credits are pooled at the tenant level and can't be assigned to a particular user. So, any user who runs a flow that needs AI builder service credits needs to use credits from the pool.
 
-### Power Platform Requests add-on
+### Power Platform requests add-on
 
 Power Apps and Power Automate capacity add-ons increase the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an extra 50,000 daily Power Platform requests per unit for $50/month. Unused Power Platform requests don't carry over from day to day. You can purchase these add-ons at any time and they remain part of the subscription for the remainder of the subscription term.
 
@@ -143,7 +144,7 @@ If Power Automate is throttling your flows, try [Pay-as-you-go](faqs.md#power-pl
 
 Storage add-ons provide data storage space to support scaling of operations.
 
-![Power Automate storage add-ons](../media/RPA-license/storage-add-ons-2.png)
+:::image type="content" source="../media/RPA-license/storage-add-ons-2.png" alt-text="Screenshot of Power Automate storage add-ons.":::
 
 ### Process Mining add-on
 
@@ -159,6 +160,6 @@ Get Power Automate pricing details at [Power Automate pricing](https://powerauto
 
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. 
 
-To support the growing needs of today's organizations, Dataverse storage capacity add-ons can support scaling of Power Automate operations. For more information, see [how to add storage capacity to Power Platform](/power-platform/admin/add-storage).
+To support the growing needs of today's organizations, Dataverse storage capacity add-ons can support scaling of Power Automate operations. Learn more in [How to add storage capacity to Power Platform](/power-platform/admin/add-storage).
 
 

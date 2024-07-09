@@ -76,7 +76,7 @@
                   href: view-license-consumption-issues.md
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
-                - name: View Intelligent recommendations about licensing (preview)
+                - name: View intelligent recommendations about licensing (preview)
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
                   href: global-service-administrators-can-administer-without-license.md
@@ -126,7 +126,7 @@
                   href: pay-as-you-go-usage-costs.md
                 - name: Issues and frequently asked questions
                   href: pay-as-you-go-issues-faq.md
-            - name: Power Platform Requests limits
+            - name: Power Platform requests limits
               href: api-request-limits-allocations.md
             - name: Power Platform licensing FAQs
               href: powerapps-flow-licensing-faq.md

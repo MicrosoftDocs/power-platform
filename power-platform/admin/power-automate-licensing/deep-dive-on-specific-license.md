@@ -1,6 +1,6 @@
 ---
 title: Deep dive on specific licenses
-description: Learn more about each license
+description: Learn more about each license.
 author: cvassallo
 contributors:
   - cvassallo
@@ -9,7 +9,7 @@ contributors:
   - v-aangie
   - kenseongtan
 ms.subservice: admin
-ms.topic: overview
+ms.topic: conceptual
 ms.date: 07/04/2024
 ms.author: cvassallo
 ms.reviewer: angieandrews
@@ -30,7 +30,7 @@ A Power Automate Process license can be allocated to a machine or to a cloud flo
 > - The Process license replaced the [Unattended RPA add-on](add-ons.md#unattended-rpa-add-on-legacy) (same price with more entitlements).
 > - The existing Unattended RPA add-ons have been upgraded to align on the Process license: once assigned to an environment, they now have exactly the same role as Process licenses and those two SKUs can be used interchangeably (allocated to cloud flows or machines).
 
-|Process license scenarios<br>______________________________|Description<br>________________________________________________________________________________________________________|
+|Process license scenarios |Description |
 |----------|-------|
 |__Environment assignment__|To be used by a cloud flow or a machine, a Process capacity license first needs to be assigned to the environment where the cloud flow or the machine is located. Learn [how to allocate a Process capacity license to an environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment).|
 |__Cloud flow allocation__<sup>1</sup>|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process license allocated to a cloud flow entitles it to 250k daily Power Platform Request (stackable limit). <br><br>Discover [how to allocate a Process license to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).<br><br>A cloud flow that was allocated a Process license becomes a 'process flow.' Process flows have their plan switch to "Process plan" and a process-flow can be associated to other cloud flows (excluding other process-flows). <br><br>A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its plan switches to "This flow is associated to run on process plan," its runs are considered 'in-context' or the Process license and its PPR consumption is counted against the Process license PPR entitlement. A process-flow can be associated to a maximum of 25 cloud flows. <br><br>Discover [how to associate flows to a process flow](/power-automate/desktop-flows/capacity-process#associate-flows-to-a-process-flow).|
@@ -51,7 +51,7 @@ A Power Automate Process license can be allocated to a machine or to a cloud flo
 
 A Power Automate Hosted Process can be used by an individual hosted machine, by a hosted machine group (or by a cloud flow / a machine acting as a Process license):
 
-|Hosted Process license scenarios<br>_________________________________________|Description<br>_________________________________________________________________________________________________|
+|Hosted Process license scenarios |Description |
 |----------|-------|
 |__Environment assignment__|To be used by a hosted machine or a hosted machine group (or by a cloud / flow a machine), a Hosted Process capacity license first needs to be assigned to the environment where the hosted machine or the hosted machine group is located. <br><br>Learn [how to allocate a Hosted Process capacity license to an environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment).|
 |__Hosted machine allocation__|A hosted machine enables developers to build, test, and run automation on a constantly active (= turned-on) hosted machine. <br><br>At creation of an individual hosted machine, a Hosted RPA add-on is auto-allocated to it and becomes a hosted bot. This hosted bot is pulled from the available hosted pool<sup>1</sup> and is automatically released back to the pool at manual deletion of the hosted machine.|
@@ -78,11 +78,11 @@ If you sign in with your work or school email address, you get all capabilities 
 > [!NOTE]
 > You can't share flows when you use the Free license.
 
-To know which users have the Power Automate Free license, admins can go to the [Microsoft 365 admin portal](https://admin.microsoft.com/), sign in, select **Billing** > **Licenses** to see how many Free licenses are assigned vs available:
+To know which users have the Power Automate Free license, admins can go to the [Microsoft 365 admin portal](https://admin.microsoft.com/), sign in, and then select **Billing** > **Licenses** to find out how many Free licenses are assigned vs available:
 
-![Image of free licenses](../media/power-automate-licensing/trial-licenses.png)
+:::image type="content" source="../media/power-automate-licensing/trial-licenses.png" alt-text="Screenshot of free licences.":::
 
-Select **Assigned licenses** to see which users have Free license.
+To find out which users have a free license, select **Assigned licenses**.
 
 ## Power Automate Trial license
 
@@ -104,9 +104,9 @@ No, Power Automate Trial licenses aren't available work in government clouds (GC
 
 ## Admin-managed trial licenses
 
-Admin-managed trial licenses are trial versions of the Power Automate Premium, Power Automate Process, or Power Automate Hosted Process licenses. They bear the same entitlements but have a 30 days lifetime. 
+Admin-managed trial licenses are trial versions of the Power Automate Premium, Power Automate Process, or Power Automate Hosted Process licenses. They bear the same entitlements but have a 30 days lifetime.
 
-Global admins can provision those trial licenses on the Microsoft 365 admin center and assign them to users / environments. An admin-managed trial has an end date that can be extended once (another 30 days). 
+Global admins can provision those trial licenses on the Microsoft 365 admin center and assign them to users / environments. An admin-managed trial has an end date that can be extended once (another 30 days).
 
 > [!NOTE]
 > - Admin-managed trials are different from the Power Automate Trial license (self-provisioned).
@@ -115,22 +115,20 @@ Global admins can provision those trial licenses on the Microsoft 365 admin cent
 Follow these steps to get started.
 
 1. Sign in to [the Microsoft 365 admin center](https://admin.microsoft.com/).
+1. Under the **Billing** section, select **Purchase services**.
+1. Search for **Power Automate**, and then select a license.
 
-2. Under the **Billing** section, select **Purchase services**.
+    :::image type="content" source="../media/power-automate-licensing/select-plan.png" alt-text="Screenshot of selecting a licensing plan.":::
 
-3. Search for **Power Automate**, and then select a license.
+1. Select the details of a license, and then select **Start free trial**.
 
-   ![Select a licensing plan](../media/power-automate-licensing/select-plan.png)
+    :::image type="content" source="../media/power-automate-licensing/start-free-trial.png" alt-text="Screenshot of starting a free trial.":::
 
-4. Select the details of a license, and then select **Start free trial**.
+1. A confirmation similar to this one opens.
 
-   ![Start a free trial](../media/power-automate-licensing/start-free-trial.png)
+    :::image type="content" source="../media/power-automate-licensing/start-free-trial-confirmation.png" alt-text="Screenshot of free trial confirmation.":::
 
-5. You see a confirmation similar to this one.
-
-   ![Start a free trial confirmation](../media/power-automate-licensing/start-free-trial-confirmation.png)
-
-After the free trial starts, go to **Billing** > **Licenses** to see the 25 new licenses available for you to assign to users.
+1. After the free trial starts, select **Billing** > **Licenses** to get the 25 new licenses available for you to assign to users.
 
 #### How can I create an admin trial, check expiry and extend trials?
 
@@ -161,7 +159,7 @@ If the cloud flow is isolated and has nothing to do with the application, then a
 
 Here-bellow a table detailing each seeded license [entitlement](types.md#license-entitlements):
 
-||Power Apps Premium<br>_________________________|Microsoft 365<br>______________________|Dynamics 365 professional <sup>1</sup><br>__________________________________|Dynamics 365 Enterprise applications <sup>2</sup><br>_____________________________________________|Dynamics 365 Team member<br>_________________________________|Windows licenses<br>_______________________|
+||Power Apps Premium |Microsoft 365 |Dynamics 365 professional<sup>1</sup> |Dynamics 365 Enterprise applications<sup>2</sup> |Dynamics 365 Team member| Windows licenses |
 |----------|-------|---------------------|--------------|--------------|--------------|--------------|
 |__Applied to__|User|User|User|User|User|Machine|
 |__Daily PPR limit__|40k per user|6k per user|40k per user|40k per user|6k per user|Not included|
@@ -193,7 +191,7 @@ Here-bellow a table detailing each seeded license [entitlement](types.md#license
 
 ## Power Automate legacy licenses
 
-|License name<br>____________________________|License type<br>___________________|Entitlements<br>____________________________________________________________________________________|
+|License name |License type |Entitlements |
 -------|------|------|
 Power Automate Per-user plan|User license (legacy)|The Power Automate Premium license replaced this license (it provides more entitlements for the same price). <br><br>The already purchased Per-user plan licenses are still usable but considered legacy and they shouldn't be renewed but instead replaced by Power Automate Premium licenses.|
 Power Automate Per-flow plan|Capacity (legacy) allocated to cloud flow|The Power Automate Process license replaced this license. <br><br>The already purchased Per-flow plan licenses are still usable but considered legacy and they shouldn't be renewed but instead replaced by Power Automate Process licenses.|
@@ -210,7 +208,7 @@ There's a [free Power Apps Developer plan to learn about Power Platform](https:/
 
 ## Entitlements of free / trial / legacy licenses
 
-||Free license<br>____________________________|Trial license <br>____________________________|Per-user plan (legacy) <br>____________________________|Per-flow plan (legacy)<br>____________________________|
+||Free license |Trial license |Per-user plan (legacy)  |Per-flow plan (legacy) |
 |----------|-------|---------------------|--------------|-------|
 |__Applied to__|User|User|User|Cloud flow|
 |__Daily PPR limit  <sup>1</sup>__|6k per user||40k per user|250k per Per-flow plan<sup>2</sup>|
@@ -228,6 +226,6 @@ There's a [free Power Apps Developer plan to learn about Power Platform](https:/
 |__Dataverse database storage__|Not included|Not included|250-MB per license|50-MB per license|
 |__Dataverse file storage__|Not included|Not included|2-GB per license|200-MB per license|
 
-> 1. The Power Platform Requests are subjected to higher limits during the transition period ([see details](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)).
+> 1. The Power Platform Requests are subjected to higher limits during the transition period. Learn more on [Request limits in Power Automate](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)).
 
 > 2. Only one Per-flow plan can be allocated to a cloud flow (no multi-allocation), PPR limits can't be stacked.
