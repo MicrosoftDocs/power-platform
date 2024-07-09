@@ -89,7 +89,7 @@ Anticipating the potential impact of a solution before its actual construction i
 
 This capability in the Business Value Toolkit is further enhanced by a function comparing proposals to similar apps and ideas. This comparison is approached from two angles: audience similarity and feature resemblance.
 
-![Value card summary screen](media\bv-proposal-assessment.png "Screenshot of proposal assessment screen")
+![Proposal assessment screen](media\bv-proposal-assessment.png "Screenshot of proposal assessment screen")
 
 This dual-pronged approach ensures that proposed solutions are not only aligned with organizational objectives but also distinct from existing offerings in the tenant. By identifying overlaps and gaps, this capability enables us to make informed decisions, minimize redundancy, and maximize the value of your development efforts.
 

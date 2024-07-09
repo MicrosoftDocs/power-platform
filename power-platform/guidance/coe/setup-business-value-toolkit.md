@@ -51,7 +51,7 @@ The business value toolkit solution contains the following artifacts:
 > The Business Value Toolkit component doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
 
 > [!NOTE]
-> The Business Value Toolkit utilizes generative AI actions in Power Automate, please ensure you consider the global availability of this feature. Frequently check ([this article](ai-builder/availability-region))
+> The Business Value Toolkit utilizes generative AI actions in Power Automate, please ensure you consider the global availability of this feature.
 
 ## Import the Business Value Toolkit component solution
 
@@ -77,7 +77,7 @@ The import can take up to 15 minutes to be completed.
 
 If you want to prepopulate the solution with strategic objectives, organizational hierarchy and the average cost of things, follow these steps. This can be particularly helpful when you're just getting started with the Business Value Toolkit, or are testing.
 
-1. Sample data must be installed via the 'Configuration Migration Tool' - part of ([PAC CLI](developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli))
+1. Sample data must be installed via the 'Configuration Migration Tool' - part of ([PAC CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli))
 
 1. From the PAC CLI command line, launch the tool by typing `pac tool cmt`
 
