@@ -174,7 +174,6 @@ Learn more about observability: [Monitoring and telemetry using Application Insi
 
 ### See also
 
-
 [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk Dev](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
 [Unified developer experience for finance and operations apps](finance-operations-dev-overview.md)  
 [Install and configure development tools](finance-operations-install-config-tools.md)  
