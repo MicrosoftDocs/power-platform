@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: devkeydet
 ms.author: marcsc
-ms.date: 5/13/2024
+ms.date: 7/8/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
