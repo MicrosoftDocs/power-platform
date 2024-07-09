@@ -327,7 +327,7 @@ More information:
 
 ## Set up product newsletter
 
-Turn on the **Admin \| Newsletter with Product Updates** flow to receive a weekly email with updates from the Power Apps, Power Automate, Power BI and Power Virtual Agents blog posts. This email is sent to the admin only.
+Turn on the **Admin \| Newsletter with Product Updates** flow to receive a weekly email with updates from the Power Apps, Power Automate, Power BI and Microsoft Copilot Studio blog posts. This email is sent to the admin only.
 
 ## All environment variables
 
