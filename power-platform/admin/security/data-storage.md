@@ -160,7 +160,7 @@ Use the steps below to diagnose issues or better understand SAS usage patterns w
     - Environment ID. This might return a large set of data that can span across many different offerings of Power Platform, so avoid if possible or consider narrowing down the search window.
 
     > [!WARNING]
-    > It is NOT recommended to search using User Principal Name or Object ID, as those are only propagated to creation events, and not usage events.
+    > We don't recommended searching for User Principal Name or Object ID, as those are only propagated to creation events, not usage events.
 
 1. Select the **Search** button and wait for results to appear.
 
