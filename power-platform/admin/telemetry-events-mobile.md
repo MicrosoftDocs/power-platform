@@ -34,7 +34,7 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 - **success**: Result of the scenario tracked by the event (values SUCCESS or FAILURE)
 - **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive.
 - **FailureType**: Defines type of sync failure
-- **ErrorCode**: Error Code generated upon sync failure. See [error code mapping table](#Error_Code_mapping).
+- **ErrorCode**: Error Code generated upon sync failure. See [error code mapping table](#error-code-mapping).
 - **operation_Id**: Unique identifier for the session
 - **operation_ParentId**: Unique identifier for the scenario tracked by the event
 - **user_Id**: AAD user ID
@@ -100,7 +100,7 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 
 
 ### Offline Sync Failures by Error Code 
-This query allows you see what types of failures frontline workers are encountering when a sync failes. Some failures are excepted, such as if the mobile application is closed while syncing, or if network disconnects while syncing preventing the sync from completion. Defintion of failure codes is shown in [error code mapping table](#Error_Code_mapping).
+This query allows you see what types of failures frontline workers are encountering when a sync failes. Some failures are excepted, such as if the mobile application is closed while syncing, or if network disconnects while syncing preventing the sync from completion. Defintion of failure codes is shown in [error code mapping table](#error-code-mapping).
 
 ```kusto
 dependencies
