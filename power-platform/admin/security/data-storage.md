@@ -103,7 +103,7 @@ Admins can enable one of these four configurations for this setting:
 
 - **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
-  - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages that loose connection.
+  - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages that lose connection.
   - More significantly, due to the IP validation that this security setting uses, some functionality may perform slower than if it was turned off.
 
 
