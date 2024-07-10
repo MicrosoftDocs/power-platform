@@ -165,6 +165,7 @@ Use the steps below to diagnose issues or better understand SAS usage patterns w
 1. Select the **Search** button and wait for results to appear.
 
 ![purview-search](../media/purview-search.png)
+:::image type="content" source="media/purview-search.png" alt-text="A new search":::
 
 
 > [!WARNING]
