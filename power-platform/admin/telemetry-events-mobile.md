@@ -149,45 +149,45 @@ dependencies
 
 | Error code	| Failure type |	Definition|
 | ------ | ------ | ------ |
-|-2146864604 |	CONFIG_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2146864606 |	CONFIG_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2146864607 |	CONFIG_ERROR |	App/user configuration error. [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2146864608 |	CONFIG_ERROR |	App/user configuration error. [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2146869250 |	CONFIG_ERROR |	App/user configuration error. [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2147015328 |	ACCESS_ERROR |	App/user configuration error. [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2147088248 |	CONFIG_ERROR |	App/user configuration error. [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147155198 |	ERROR	| For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147155198 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147167669 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147180269 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147180284 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147187375 |	ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-|-2147187388 |	ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147187389 |	ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147204270 |	ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147204339 |	ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147204784 |	ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147209463 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147217124 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147220884 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147220955 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147220956 |	EXTERNAL_ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147220960 |	ACCESS_ERROR |	App/user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147220970 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -2147220989 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes) |
-| -50 |	ERROR |	Internal Error |
-| 0 |	ERROR |	Unknown Error |
-| 2000 |	ERROR |	Unmapped Error |
-| 2002 |	ERROR |	Dataverse SQL Timeout |
-| 2003 |	DATABASE_ERROR |	Database Error |
-| 2004 |	NETWORK_ERROR |	Network Error |
-| 2005 |	SERVER_ERROR |	Server Error |
-| 2006 |	AUTH_ERROR |	Auth Error |
-| 2007 |	DEVICE_ERROR |	Disk full Error |
-| 2008 |	ERROR |	Internal Error |
-| 2009 |	AUTH_ERROR |	Auth Error |
-| 2011 |	CONFIG_ERROR |	App module privilege error |
-| 2016 |	CONFIG_ERROR |	Offline configuration error |
-| 2017 |	CONFIG_ERROR |	Offline profile configuration error |
-| 3000 |	EXPECTED_ERROR |	Sync internal event |
-| 3003 | CONFIG_ERROR |	Offline profile configuration error |
+|-2146864604 |	CONFIG_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2146864606 |	CONFIG_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2146864607 |	CONFIG_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2146864608 |	CONFIG_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2146869250 |	CONFIG_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2147015328 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2147088248 |	CONFIG_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147155198 |	ERROR	| For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147155198 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147167669 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147180269 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147180284 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147187375 |	ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+|-2147187388 |	ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147187389 |	ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147204270 |	ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147204339 |	ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147204784 |	ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147209463 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147217124 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147220884 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147220955 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147220956 |	EXTERNAL_ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147220960 |	ACCESS_ERROR |	App or user configuration error. See [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147220970 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -2147220989 |	ERROR |	For error codes beginning in –214, see [Web service error codes](/power-apps/developer/data-platform/reference/web-service-error-codes). |
+| -50 |	ERROR |	Internal error. |
+| 0 |	ERROR |	Unknown error. |
+| 2000 |	ERROR |	Unmapped error. |
+| 2002 |	ERROR |	Dataverse SQL timeout. |
+| 2003 |	DATABASE_ERROR |	Database error. |
+| 2004 |	NETWORK_ERROR |	Network error. |
+| 2005 |	SERVER_ERROR |	Server error. |
+| 2006 |	AUTH_ERROR |	Authentication error. |
+| 2007 |	DEVICE_ERROR |	Disk is full error. |
+| 2008 |	ERROR |	Internal error. |
+| 2009 |	AUTH_ERROR |	Authentication error. |
+| 2011 |	CONFIG_ERROR |	App module privilege error. |
+| 2016 |	CONFIG_ERROR |	Offline configuration error. |
+| 2017 |	CONFIG_ERROR |	Offline profile configuration error. |
+| 3000 |	EXPECTED_ERROR |	Sync internal event. |
+| 3003 | CONFIG_ERROR |	Offline profile configuration error. |
