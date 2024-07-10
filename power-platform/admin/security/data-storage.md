@@ -164,32 +164,28 @@ Use the steps below to diagnose issues or better understand SAS usage patterns w
 
 1. Select the **Search** button and wait for results to appear.
 
-![purview-search](../media/purview-search.png)
-:::image type="content" source="media/purview-search.png" alt-text="A new search":::
+    :::image type="content" source="media/purview-search.png" alt-text="A new search":::
 
 
 > [!WARNING]
 > Log ingestion into Purview can be delayed for up to an hour or more, so keep that in mind when looking for most recent events.
 
-### Troubleshooting 403 Forbidden/unauthorized_caller
-You can use Creation and Usage logs to determine why a call to the proxy endpoint would result in a 403 Forbidden with an `unauthorized_caller` error code.
+### Troubleshooting 403 Forbidden/unauthorized_caller error
+You can use creation and usage logs to determine why a call to the proxy endpoint would result in a 403 Forbidden error with an **unauthorized_caller** error code.
 
-1. Find logs in Purview as described above. Consider using either `x-ms-service-request-id` or `x-ms-sas-operation-id` from the response headers as the search keyword.
-1. Open the Usage event (`Used SAS URI`), and look for the `powerplatform.analytics.resource.sas.computed_ip_filters` field under `PropertyCollection`. This IP range is what the proxy service uses to determine whether the request is authorized to proceed or not.
-1. Compare this value against the `IP Address` field of the log, which should be sufficient for determining why the request failed.
-1. If you think the value of `powerplatform.analytics.resource.sas.computed_ip_filters` is incorrect, continue with the next steps.
-1. Open the Creation event (`Created SAS URI`) by searching using the `x-ms-sas-operation-id` response header value (or the value of `powerplatform.analytics.resource.sas.operation_id` field from the Creation log).
-1. Get the value of `powerplatform.analytics.resource.sas.ip_binding_mode` field. If it's missing or empty, it means IP binding wasn't enabled on that environment at the time of that particular request.
-1. Get the value of `powerplatform.analytics.resource.sas.admin_provided_ip_ranges`. If it's missing or empty, it means IP firewall ranges weren't specified on that environment at the time of that particular request.
-1. Get the value of `powerplatform.analytics.resource.sas.computed_ip_filters`, which should be identical to the `Usage` event and is derived based on IP binding mode and admin-provided IP firewall ranges. See the derivation logic on [Data storage and governance in Power Platform](https://learn.microsoft.com/en-us/power-platform/admin/security/data-storage#storage-shared-access-signature-sas-ip-restriction).
+1. Find logs in Purview as described in the previous section. Consider using either **x-ms-service-request-id** or **x-ms-sas-operation-id** from the response headers as the search keyword.
+1. Open the usage event, **Used SAS URI**, and look for the **powerplatform.analytics.resource.sas.computed_ip_filters** field under **PropertyCollection**. This IP range is what the proxy service uses to determine whether the request is authorized to proceed or not.
+1. Compare this value against the **IP Address** field of the log, which should be sufficient for determining why the request failed.
+1. If you think the value of **powerplatform.analytics.resource.sas.computed_ip_filters** is incorrect, continue with the next steps.
+1. Open the creation event, **Created SAS URI**, by searching using the **x-ms-sas-operation-id** response header value (or the value of **powerplatform.analytics.resource.sas.operation_id** field from the creation log).
+1. Get the value of **powerplatform.analytics.resource.sas.ip_binding_mode** field. If it's missing or empty, it means IP binding wasn't turned on for that environment at the time of that particular request.
+1. Get the value of **powerplatform.analytics.resource.sas.admin_provided_ip_ranges**. If it's missing or empty, it means IP firewall ranges weren't specified for that environment at the time of that particular request.
+1. Get the value of **powerplatform.analytics.resource.sas.computed_ip_filters**, which should be identical to the usage event and is derived based on IP binding mode and admin-provided IP firewall ranges. See the derivation logic in [Data storage and governance in Power Platform](data-storage.md#storage-shared-access-signature-sas-ip-restriction).
 
 This should give tenant admins enough information to correct any misconfiguration against the environment for IP binding settings.
 
 > [!WARNING]
 > Changes made to environment settings for SAS IP binding can take at least 30 minutes to take effect. It might be more if partner teams have their own cache on top of the proxy service.
-
-
-
 
 ### Related articles
 
