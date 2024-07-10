@@ -70,19 +70,17 @@
           items:
             - name: Overview
               href: pricing-billing-skus.md
-            - name: About licensing and license management
-              href: wp-license-management.md
-            - name: View license consumption for Power Apps and Power Automate (preview)
-              href: view-license-consumption-issues.md
-            - name: View license consumption for finance and operations apps
-              href: view-license-consumption-finops-apps.md
-            - name: Manage Power Apps licenses
-              href: signup-question-and-answer.md
-            - name: View Intelligent recommendations about licensing (preview)
-              href: get-recommendations-licensing.md
-            - name: Administer without a license
-              href: global-service-administrators-can-administer-without-license.md
-            - name: Power Apps
+            - name: License consumption and management
+              items:
+                - name: View license consumption for Power Apps and Power Automate (preview)
+                  href: view-license-consumption-issues.md
+                - name: View license consumption for finance and operations apps
+                  href: view-license-consumption-finops-apps.md
+                - name: View intelligent recommendations about licensing (preview)
+                  href: get-recommendations-licensing.md
+                - name: Administer without a license
+                  href: global-service-administrators-can-administer-without-license.md
+            - name: Power Apps licensing
               items:
                 - name: Purchase Power Apps
                   href: signup-for-powerapps-admin.md
@@ -94,26 +92,28 @@
                   href: auto-claim-licensing.md
                 - name: Power Apps licensing FAQs
                   href: powerapps-licensing-faq.md
-            - name: Power Automate
+                - name: Manage Power Apps licenses
+                  href: signup-question-and-answer.md
+            - name: Power Automate licensing
               items:
-                - name: Overview
-                  href: power-automate-licensing/overview.md
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
-                - name: FAQs about licenses
-                  href: power-automate-licensing/faqs.md
-                - name: When premium flows are subject to license enforcement
-                  href: power-automate-licensing/when-flows-are-turned-off.md
-                - name: Buy Power Automate licenses
-                  href: power-automate-licensing/buy-licenses.md
-                - name: Add-ons
+                - name: Types of add-ons
                   href: power-automate-licensing/add-ons.md
-                - name: Request a Power Automate premium license
-                  href: power-automate-licensing/request-premium-license.md
-                - name: Autoclaim policies for Power Automate licenses (preview)
-                  href: power-automate-licensing/power-automate-auto-claim.md
-            - name: Power Platform licensing FAQs
-              href: powerapps-flow-licensing-faq.md
+                - name: Deep dive on specific licenses
+                  href: power-automate-licensing/deep-dive-on-specific-license.md
+                - name: Licensing FAQ
+                  href: power-automate-licensing/faqs.md
+                - name: Licensing management
+                  items:
+                    - name: When premium flows are subject to enforcement
+                      href: power-automate-licensing/when-flows-are-turned-off.md
+                    - name: Buy Power Automate licenses
+                      href: power-automate-licensing/buy-licenses.md
+                    - name: Request a Power Automate premium license
+                      href: power-automate-licensing/request-premium-license.md
+                    - name: Autoclaim policies for Power Automate licenses
+                      href: power-automate-licensing/power-automate-auto-claim.md
             - name: Pay-as-you-go plan
               items:
                 - name: Overview
@@ -126,8 +126,10 @@
                   href: pay-as-you-go-usage-costs.md
                 - name: Issues and frequently asked questions
                   href: pay-as-you-go-issues-faq.md
-            - name: Requests limits and allocations
+            - name: Power Platform requests limits
               href: api-request-limits-allocations.md
+            - name: Power Platform licensing FAQs
+              href: powerapps-flow-licensing-faq.md
         - name: Environments
           items:
             - name: Administer environments
@@ -462,6 +464,8 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
+            - name: Manage security
+              href: security/security-posture-overview.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -1093,6 +1097,8 @@
               href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
             - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Tutorial: Perform a transaction-less copy between environments"
+              href: unified-experience/tutorial-perform-transactionless-copy.md
             - name: "Admin trials for finance and operations apps"
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
