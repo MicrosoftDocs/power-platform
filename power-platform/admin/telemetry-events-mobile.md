@@ -1,6 +1,6 @@
 ---
 title: Telemetry events for mobile app synchronization and actions (preview)
-description: Power Apps mobile application data related to offline syncronization events is now available for model-driven and canvas apps.
+description: Power Apps mobile application data related to offline synchronization events is now available for model-driven and canvas apps.
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
@@ -16,9 +16,9 @@ search.audienceType:
 # Telemetry events for mobile app synchronization and actions (preview)
 [This article is prerelease documentation and is subject to change.]
 
-Power Apps mobile application data related to offline syncronization events is available for model-driven and canvas apps. This data can be used to evaluate the health and performance of offline sync events for your organization. 
+Power Apps mobile application data related to offline synchronization events is available for model-driven and canvas apps. This data can be used to evaluate the health and performance of offline sync events for your organization. 
 
-This data goes into the **Power Apps (Peview)** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode.  Additional data, related to failure events in model-driven apps is available through the **Power Apps (Peview)** > **UCI**.
+This data goes into the **Power Apps (Preview)** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode. More data, related to failure events in model-driven apps is available through the **Power Apps (Preview)** > **UCI**.
 
 > [!IMPORTANT]
 >
@@ -42,7 +42,7 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 - **application_Version**: Version of the app.
 - **customDimensions**: Contains the following attributes:
      - **eventContext**: Contains the following properties:
-        - **CurrentSyncId**: Identifier for the current sync session which may span multiple app sessions.
+        - **CurrentSyncId**: Identifier for the current sync session, which may span multiple app sessions.
         - **DataSyncStatus**: (No value provided.)
         - **entityName**: Name of the table in data download events.
         - **hasNetworkTimeouts**: Flag indicating whether any HTTP calls failed with network timeouts in the current sync.
@@ -79,11 +79,11 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 - **outerMessage**: Error message.
 - **itemType**: "exception"
 - **CustomDimensions**: 
-  - **eventContext**: Additional details related to the error.
+  - **eventContext**: More details related to the error.
   - **ServerConnectivityState**: Is user in offline mode? (Offline/Online)
   - **NetworkConnectivityState**: Does user have internet connection? Note that a user can be in offline mode, but have an internet connection.
   - **IsOfflineByDefaultApp**: When false, it means the **Work in offline mode** feature is on. When true, it means **offline-first** is turned on.
-  - **callStack**: Where the programming code where the error occurred.
+  - **callStack**: The programming code where the error occurred.
   - **hostSubType**: "PowerApps-Player-iOS-fieldservice"
   - **hostType**: "MobileApplication"
 - **Operation_ID**: A string concatenation of sessionID followed by a '_' and External correlation ID, for example, _e11e8465-bc8f-4319-b64a-9c1e42453148_0da90a33-ad68-4a4e-bd45-5728d5da719a_.
@@ -97,7 +97,7 @@ This data goes into the **Power Apps (Peview)** > **Mobile app synchronization a
 ## Example scenarios
 
 ### Offline sync failures by error code 
-This query allows you see what types of failures frontline workers are encountering when a sync fails. Some failures are excepted, such as if the mobile application is closed while syncing, or if the network disconnects while syncing and prevents the sync from completing. Defintion of failure codes is shown in the [Error code mapping table](#error-code-mapping).
+This query allows you see what types of failures frontline workers are encountering when a sync fails. Some failures are excepted, such as if the mobile application is closed while syncing, or if the network disconnects while syncing and prevents the sync from completing. Definition of failure codes is shown in the [Error code mapping table](#error-code-mapping).
 
 ```kusto
 dependencies
