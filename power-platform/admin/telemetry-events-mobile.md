@@ -70,7 +70,7 @@ This data goes into the **Power Apps (Preview)** > **Mobile app synchronization 
     - **appFlavor**: Native app installed on the devices. Valid values are FieldService and PowerApps.
     - **loc_country**: Telemetry device origin.
 
-## UCI failure events
+## Unified Client Interface failure events
 
 - **timestamp [UTC]**: When the event happened.
 - **problemId**: "uci_trace" or "uciMonitorFailure" (Where the data came from.)
