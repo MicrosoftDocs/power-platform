@@ -33,7 +33,7 @@ A Microsoft Entra tenant houses information that's relevant to an organization a
 
 Some organizations have a global presence. For example, a business may be headquartered in the United States but do business in Australia. It may need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home geo. All metadata and product data in that environment is stored in the remote geo.
 
-Microsoft may replicate data to other regions for data resiliency. We don't replicate or move personal data outside the geo, however. Data replicated to other regions may include non-personal data such as employee authentication information.
+Microsoft may replicate data to other regions for data resiliency. We don't replicate or move personal data outside the geo, however. Data replicated to other regions may include nonpersonal data such as employee authentication information.
 
 Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](../regions-overview.md).
 
@@ -103,7 +103,7 @@ Admins can enable one of these four configurations for this setting:
 
 - **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
-  - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages that lose connection.
+  - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages that loose connection.
   - More significantly, due to the IP validation that this security setting uses, some functionality may perform slower than if it was turned off.
 
 
@@ -133,7 +133,7 @@ This setting enables all SAS calls within Power Platform to be logged into Purvi
 | enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
 
 ### Turn on Purview audit logging
-In order for the logs to to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated in the Power Platform admin center by a **tenant admin**. 
+In order for the logs to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated in the Power Platform admin center by a **tenant admin**. 
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and log in with tenant admin credentials.
 1. In the left navigation pane, select **Environments**.
@@ -143,19 +143,19 @@ In order for the logs to to show in your Purview instance, you must first opt in
 1. Under **Storage Shared Access Signature (SAS) Security Settings (Preview)**, turn on the **Enable SAS Logging in Purview** feature.
 
 ## Search audit logs
-Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in case of IP validation issues. Logs in Purview are the most reliable solution.
+Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in IP validation issues. Logs in Purview are the most reliable solution.
 
-Use the steps below to diagnose issues or better understand SAS usage patterns within your tenant.
+Use the following steps to diagnose issues or better understand SAS usage patterns within your tenant.
 
 1. Make sure audit logging is turned on for the environment. See [Turn on Purview audit logging](#turn-on-purview-audit-logging).
 1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) and log in with tenant admin credentials.
-1. In the left navigation pane, select **Audit**. If this options isn't available to you, it means the logged-in user doesn't have admin access to query audit logs.
+1. In the left navigation pane, select **Audit**. If this option isn't available to you, it means the logged-in user doesn't have admin access to query audit logs.
 1. Pick the date and time range in UTC for when you're trying to look for logs. For example, when a 403 Forbidden error with an **unauthorized_caller** error code was returned.
 1. From the **Activities - friendly names** dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
 1. Specify a keyword under **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
     - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error from the proxy service. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
     - The value of **x-ms-sas-operation-id** response header. This filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the **powerplatform.analytics.resource.sas.operation_id** field.
-    - Full or partial SAS URI, minus the signature. This might return many SAS URI creation and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
+    - Full or partial SAS URI, minus the signature. This might return many SAS URI creations and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
     - Caller IP address. Returns all creation and usage events for that IP.
     - Environment ID. This might return a large set of data that can span across many different offerings of Power Platform, so avoid if possible or consider narrowing down the search window.
 
