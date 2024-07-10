@@ -152,7 +152,7 @@ Use the following steps to diagnose issues or better understand SAS usage patter
 1. In the left navigation pane, select **Audit**. If this option isn't available to you, it means the logged-in user doesn't have admin access to query audit logs.
 1. Pick the date and time range in UTC for when you're trying to look for logs. For example, when a 403 Forbidden error with an **unauthorized_caller** error code was returned.
 1. From the **Activities - friendly names** dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
-1. Specify a keyword under **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
+1. Specify a keyword in **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
     - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error from the proxy service. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
     - The value of **x-ms-sas-operation-id** response header. This filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the **powerplatform.analytics.resource.sas.operation_id** field.
     - Full or partial SAS URI, minus the signature. This might return many SAS URI creations and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
@@ -162,7 +162,7 @@ Use the following steps to diagnose issues or better understand SAS usage patter
     > [!WARNING]
     > We don't recommended searching for User Principal Name or Object ID, as those are only propagated to creation events, not usage events.
 
-1. Select the **Search** button and wait for results to appear.
+1. Select **Search** and wait for results to appear.
 
     :::image type="content" source="media/purview-search.png" alt-text="A new search":::
 
