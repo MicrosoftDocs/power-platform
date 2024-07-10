@@ -132,25 +132,22 @@ This setting enables all SAS calls within Power Platform to be logged into Purvi
 | enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.     |
 | enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
 
-### Enabling Purview Audit Logging
-In order for the logs to to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated via the Power Platform Admin Center by a **tenant admin**: 
+### Turn on Purview audit logging
+In order for the logs to to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated in the Power Platform admin center by a **tenant admin**. 
 
-1. Go to https://admin.powerplatform.microsoft.com and log in with tenant admin credentials.
-1. On the left navigation pane, Click on `Environments`, then pick the environment that you want to enable admin logging for.
-1. Click on `Settings` at the top, then expand the `Product` section and click on `Privacy + Security`.
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and log in with tenant admin credentials.
+1. In the left navigation pane, select **Environments**.
+1. Select the environment that you want to turn on admin logging for.
+1. Select **Settings** in the command bar.
+1. Select **Product** >  **Privacy + Security**. 
+1. Under **Storage Shared Access Signature (SAS) Security Settings (Preview)**, turn on the **Enable SAS Logging in Purview** feature.
 
-    ![purview-enable-1.png](power-platform/admin/security/media/purview-enable-1.png)
-1. Under `Storage Shared Access Signature (SAS) Security Settings(Preview)`, toggle the `Enable SAS Logging in Purview ` feature.
+## Search audit logs
+Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in case of IP validation issues. Logs in Purview are the most reliable solution.
 
-    [purview-enable-1.png](../attachments/purview-enable-2.png)
-    
+Use the steps below to diagnose issues or better understand SAS usage patterns within your tenant.
 
-## Searching Audit Logs
-Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in case of IP validation issues. **Logs in Purview are the most reliable solution** as Microsoft internally does not log full customer IPs, so cannot confidently determine why IP checks might fail at any time.
-
-Instructions below may be useful in diagnosing issues or understanding SAS usage patterns within your tenant:
-
-1. Make sure audit logging is enabled for the environment. See [Enabling Purview Audit Logging](#enabling-purview-audit-logging).
+1. Make sure audit logging is turned on for the environment. See [Turn on Purview audit logging](#turn-on-purview-audit-logging).
 1. Go to https://compliance.microsoft.com and log in with tenant admin credentials.
 1. On the left navigation pane, Click on `Audit`. If this options is missing, it means the logged-in user doesn't have admin access to query audit logs.
 1. Pick the date and time range in UTC for when you're trying to look for logs (e.g. when a 403 Forbidden error with an `unauthorized_caller` error code was returned).
