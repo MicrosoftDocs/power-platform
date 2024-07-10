@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 05/28/2024
+ms.date: 07/10/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -148,21 +148,21 @@ Tenant admins can use Purview to view audit logs emitted for SAS operations, and
 Use the steps below to diagnose issues or better understand SAS usage patterns within your tenant.
 
 1. Make sure audit logging is turned on for the environment. See [Turn on Purview audit logging](#turn-on-purview-audit-logging).
-1. Go to https://compliance.microsoft.com and log in with tenant admin credentials.
-1. On the left navigation pane, Click on `Audit`. If this options is missing, it means the logged-in user doesn't have admin access to query audit logs.
-1. Pick the date and time range in UTC for when you're trying to look for logs (e.g. when a 403 Forbidden error with an `unauthorized_caller` error code was returned).
-1. From the `Activities - friendly names` dropdown, search for `power platform storage operations` and select `Created SAS URI` and `Used SAS URI`.
-1. Specify a keyword under `Keyword Search` (refer to [Purview's public documentation](https://learn.microsoft.com/en-us/purview/audit-search?tabs=compliance-portal#get-started-with-search) for this field). You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
-    - The value of `x-ms-service-request-id` response header. This will filter the results to just one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. Most useful when investigating a 403 Forbidden error from the proxy service. Can also be used to grab the `powerplatform.analytics.resource.sas.operation_id` value.
-    - The value of `x-ms-sas-operation-id` response header. This will filter the results to one SAS URI Creation event and one or more Usage events for that SAS URI depending on how many times it was accessed. Maps to the `powerplatform.analytics.resource.sas.operation_id` field.
-    - Full or partial SAS URI, minus the signature. This might return many SAS URI Creation and many SAS URI Usage events, because it is possible for the same URI to be requested for generation as many times as needed.
-    - Caller IP address. Will return all Creation and Usage events for that IP.
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) and log in with tenant admin credentials.
+1. In the left navigation pane, select **Audit**. If this options isn't available to you, it means the logged-in user doesn't have admin access to query audit logs.
+1. Pick the date and time range in UTC for when you're trying to look for logs. For example, when a 403 Forbidden error with an **unauthorized_caller** error code was returned.
+1. From the **Activities - friendly names** dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
+1. Specify a keyword under **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
+    - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error from the proxy service. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
+    - The value of **x-ms-sas-operation-id** response header. This filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the **powerplatform.analytics.resource.sas.operation_id** field.
+    - Full or partial SAS URI, minus the signature. This might return many SAS URI creation and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
+    - Caller IP address. Returns all creation and usage events for that IP.
     - Environment ID. This might return a large set of data that can span across many different offerings of Power Platform, so avoid if possible or consider narrowing down the search window.
 
     > [!WARNING]
-    > It is NOT recommended to search using User Principal Name or Object ID, as those are only propagated to Creation events and not Usage events.
+    > It is NOT recommended to search using User Principal Name or Object ID, as those are only propagated to creation events, and not usage events.
 
-1. Click on the Search button and wait for results to appear.
+1. Select the **Search** button and wait for results to appear.
 
 ![purview-search](../media/purview-search.png)
 
