@@ -18,7 +18,7 @@ search.audienceType:
 
 # When premium flows are subject to license enforcement
 
-This article describes when a premium license is required for Power Automate flows and enforcement scenarios currently in scope.
+This article describes when a [Premium user license](types.md#user-licenses) is required for Power Automate flows and enforcement scenarios currently in scope.
 
 ## Enforcement
 
@@ -28,20 +28,20 @@ As part of enforcement, admins are notified of flows that need licenses by email
 
 To ensure compliance and prevent surprises, admins should keep up-to-date with the following information and ensure proper licenses are attached to flows.  
 
-- Admins are encouraged to enable Auto-claim so license assignment is automated.
-- Admins should periodically review the Power Automate license reporting, which now includes both tenant and environment level reporting views. To learn more, go to [View license consumption for Power Apps and Power Automate (preview)](../view-license-consumption-issues.md).
+- Admins are encouraged to enable [Auto-claim user licenses](power-automate-auto-claim.md) so that license assignment is automated.
+- Admins should periodically review the [Power Automate license reporting](../view-license-consumption-issues.md), which now includes both tenant and environment level reporting views.
 
-    The report identifies flows that require a license for a subset of scenarios that are in scope of the power platform licensing guide. This subset of scenarios constitutes the current scope of enforcement. We expect customers to ensure compliance with all licensing requirements covered in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). We expect to add more scenarios to this report to help administrators identify flows that require their attention. We might broaden the scope of enforcements at such time.
+The report identifies flows that require a license for a subset of scenarios that are in scope of the power platform licensing guide. This subset of scenarios constitutes the current scope of enforcement. We expect customers to ensure compliance with all licensing requirements covered in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). We expect to add more scenarios to this report to help administrators identify flows that require their attention. We might broaden the scope of enforcements at such time.
 
 ## Types of enforcements
 
-Admins can access the details of flows that need attention through either the environment level or tenant level license usage reports.
+Admins can access the details of flows that need attention through either the environment level or tenant level [license usage reports](../view-license-consumption-issues.md).
 
 Enforcement using the environment lifecycle operations commences in the third quarter of 2024.
 
 |Enforcement type  |Exceptions  |Recommended action   |
 |---------|---------|---------|
-|Premium flows where flow owner left the organization      |Manual flows licensing is evaluated at runtime and is based on the invoking user license unless the flow is licensed using a per flow or per process plan.         |Assign a Power Automate license to the flow owner or per-flow/process license to the flow.      |
+|Premium flows where flow owner left the organization      |Manual flows licensing is evaluated at runtime and is based on the invoking user license unless the flow is licensed using a per flow or [per process plan](./deep-dive-on-specific-license.md#power-automate-process-license).         |Assign a Power Automate license to the flow owner or per-flow/process license to the flow.      |
 |Premium flows where the flow owner doesn't have a Premium license (owner previously had a trial/license that is expired now)     |Manual flows licensing is evaluated at runtime and is based on the invoking user license unless the flow is licensed using a per flow or per process plan.        |Assign a Power Automate license to the flow owner or per-flow/process license to the flow.     |
 |Premium flows created by flow owner with a Power Apps license, but the flow isn't triggered by the app built with Power Apps      |Power Apps licensed user flows that are triggered from canvas apps, or that use the Microsoft Dataverse 'For a select record' trigger in a model driven app, are automatically considered as being in context of the app built with Power Apps and are excluded from enforcement.        |Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting an app built with Power Apps, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps).  |
 |Premium flows created by the flow owner with a Dynamics 365 license, but the flow isn't in a Dynamics environment, or the flow isn't interacting with Dynamics entities    |Dynamics 365 licensed user flows that are using a Dataverse connector to talk to Dynamics entities in the environment, or using First party Dynamics connectors like finance and operations, are automatically considered as being in context of the Dynamics 365 app in the environment and are excluded from enforcement.         |Assign a Power Automate license to the flow owner or per-flow/process license to the flow. Alternatively, if the flow is supporting a Dynamics 365 app, [associate the flow to the app](faqs.md#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps).  |

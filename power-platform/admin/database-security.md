@@ -68,14 +68,14 @@ The following table describes the predefined security roles in an environment th
 | Website App Owner | A user who owns the [website application registration](/azure/active-directory/develop/quickstart-register-app) in the [Azure portal](https://ms.portal.azure.com/). |
 |Website Owner  | The user who created the Power Pages website. **This role is managed and can't be changed.** |
 
-In addition to the predefined security roles described for Dataverse, other security roles might be available in your environment depending on the Power Platform components&mdash;Power Apps, Power Automate, Power Virtual Agents&mdash;you have. The following table provides links to more information.
+In addition to the predefined security roles described for Dataverse, other security roles might be available in your environment depending on the Power Platform components&mdash;Power Apps, Power Automate, Microsoft Copilot Studio&mdash;you have. The following table provides links to more information.
 
 | Power Platform component | Information |
 |---------|---------|
 | Power Apps | [Predefined security roles for environments with a Dataverse database](#environments-with-a-dataverse-database) |
 | Power Automate | [Security and privacy ](/power-automate/process-advisor-security) |
 | Power Pages | [Roles required for website administration](/power-pages/admin/admin-roles) |
-| Power Virtual Agents | [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
+| Microsoft Copilot Studio | [Assign environment security roles](/power-virtual-agents/admin-share-bots#assign-environment-security-roles) |
 
 ### Dataverse for Teams environments
 
