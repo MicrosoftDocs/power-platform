@@ -59,7 +59,7 @@ You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following li
 Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dynamics 365 Sales**, **Dynamics 365 Customer Service**, and **Dataverse** data sources. With more to come in the future.
 
 > [!IMPORTANT]
-> You need to have an account at the data source to establish a connection with it. 
+> You need to have an account at the data source to establish a connection with it.
 
 1. If you're connecting to a data source, follow the instructions in the authentication dialog box.
 1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
