@@ -18,7 +18,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-One of the many benefits of Project Sophia is that you can connect to your business data; Project Sophia supports multiple ways to do this, you can upload files, or connect to your enterprise data source like Dynamics 365 and Dataverse.
+One of the many benefits of Project Sophia is that you can connect to your business data. Project Sophia supports multiple ways: you can upload files, or connect to an enterprise data source like Dynamics 365 and Dataverse.
 
 Follow these steps to ask a question:
 
@@ -76,11 +76,11 @@ For Dynamics 365 Sales connection:
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
 - If you have access to multiple instances, you are prompted to choose one.
 - If an instance isn't found, then the option to connect to **Dynamics 365 Sales** won't be available.
-- If Project "Sophia" is not able to access the data in the instance, it will show an error message.
+- If Project "Sophia" is not able to access the data in the instance, it shows an error message.
 
-Based on the question you ask, Project "Sophia" will look through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (e.g. Table and Column descriptions) to help identify the relevant data. Hint: make sure that custom tables added to Dynamics 365 Sales have proper descreiptions. The blueprint generated will depend on the data found. If no data is found, then Project "Sophia" will show an error and might ask if you can rephrase the question. If you use the AI Cursor to ask additional questions, Project "Sophia" will determine if it has enough information to answer, or if it needs to identify additional data from Dynamics 365 Sales to answer the question.
+Based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. Hint: make sure that custom tables added to Dynamics 365 Sales have proper descreiptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI Cursor to ask more questions, Project "Sophia" will consider the data-source again to answer it.
 
-If the user does not enter any question, by default, Project "Sophia" will answer the question based on core tables in Dynamics 365 Sales, like (accounts, opportunities, leads, etc.). You can establish one connection in a workspace. You can upload files for additional context in addition to connecting to a data source. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Sales instances. It is advisable to have proper descriptions to these custom items.
+If the user does not enter any question, by default, Project "Sophia" answers the question based on core tables in Dynamics 365 Sales, like (accounts, opportunities, leads, etc.). You can establish one connection in a workspace. You can upload files for additional context in addition to connecting to a data source. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Sales instances. It is advisable to have proper descriptions to these custom items.
 
 ### Use data from Dynamics 365 Customer Service
 
@@ -93,11 +93,11 @@ For Dynamics 365 Customer Service connection:
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Customer Service.
 - If you have access to multiple instances, you are prompted to choose one.
 - If an instance isn't found, then the option to connect to **Dynamics 365 Customer Service** won't be available.
-- If Project "Sophia" is not able to access the data in the instance, it will show an error message.
+- If Project "Sophia" is not able to access the data in the instance, it shows an error message.
 
-Similar to Dynamics 365 Sales connection, based on the question you ask, Project "Sophia" will look through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (e.g. Table and Column descriptions) to help identify the relevant data. Hint: make sure that custom tables added to Dynamics 365 Customer Service have proper descreiptions. The blueprint generated will depend on the data found. If no data is found, then Project "Sophia" will show an error and might ask if you can rephrase the question. If you use the AI Cursor to ask additional questions, Project "Sophia" will determine if it has enough information to answer, or if it needs to identify additional data from Dynamics 365 Customer Service to answer the question.
+Similar to Dynamics 365 Sales connection, based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. Hint: make sure that custom tables added to Dynamics 365 Customer Service have proper descreiptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI Cursor to ask more questions, Project "Sophia" will consider the data-source again to answer it.
 
-If the user does not enter any question, by default, Project "Sophia" will answer the question based on core tables in Dynamics 365 Customer Service, like (accounts, queue, etc.). You can establish one connection in a workspace. You can upload files for additional context in addition to connecting to a data source. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Customer Service instances. It is advisable to have proper descriptions to these custom items.
+If the user does not enter any question, by default, Project "Sophia" answers the question based on core tables in Dynamics 365 Customer Service, like (accounts, queue, etc.). You can establish one connection in a workspace. You can upload files for additional context in addition to connecting to a data source. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Customer Service instances. It is advisable to have proper descriptions to these custom items.
 
 ### Use data from Dataverse
 
@@ -110,9 +110,9 @@ For Dataverse connection:
 - Your sign in information for Project "Sophia" is used to connect to Dataverse.
 - If you have access to multiple instances, you are prompted to choose one.
 - If an instance isn't found, then the option to connect to **Dataverse** won't be available.
-- If Project "Sophia" is not able to access the data in the instance, it will show an error message.
+- If Project "Sophia" is not able to access the data in the instance, it shows an error message.
 
-Similar to other connections, based on the question you ask, Project "Sophia" will look through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (e.g. Table and Column descriptions) to help identify the relevant data. Hint: make sure that custom tables have proper descreiptions. The blueprint generated will depend on the data found. If no data is found, then Project "Sophia" will show an error and might ask if you can rephrase the question. If you use the AI Cursor to ask additional questions, Project "Sophia" will determine if it has enough information to answer, or if it needs to identify additional data to answer the question.
+Similar to other connections, based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. Hint: make sure that custom tables have proper descreiptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI Cursor to ask more questions, Project "Sophia" will consider the data-source again to answer it.
 
 You can establish one connection in a workspace. You can upload files for additional context in addition to connecting to a data source.
 
