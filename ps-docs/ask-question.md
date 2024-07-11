@@ -40,52 +40,15 @@ One of the many benefits of Project Sophia is that you can connect to your busin
 1. Use one of the following options to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
-   - On the Home screen, select **New workspace** > **Add data** > use data from **Dynamics 365 Sales**.
+   - On the Home screen, select **New workspace** > **Add data** > use data from **Dynamics 365 Sales**, **Dynamics 365 Sales**, or **Dataverse**, 
     > [!IMPORTANT]
-    > You need to have account to establish a connection with Dynamics 365 Sales. For more informatoin, see [Use data from Dynamics 365 Sales](ask-question.md#use-data-from-dynamics-365-sales).
+    > You need to have account at the data-source to establish a connection to it. For more informatoin, see [Connect to your data](data-connections.md).
     
-1. If you're uploading a file, select the file name and then select **Open**. If you're connecting to a data source, follow the instructions in the authentication dialog box.
-1. From the top right, select **Domains** to optimize  responses your specific area of interest. 
-1. Select **Generate** or enter your question in the text box and then select **Generate**.
-
 Your data is analyzed to create a blueprint that provides valuable insights, charts, and actionable steps.
 
-### Supported data files
+For more info about uploading files and supported data files, please see [Uploading files](data-connections.md#uploading-files)
 
-You can upload a PDF (.pdf), CSV (.csv), and Excel (.xls) file. The following limitations apply to file uploads:
-
-- The maximum supported file size is 10 mb.
-- For .csv (comma-separated values) files, the data within the file needs to be separated by commas. 
-- Excel:
-  - Column header in the first row only.
-  - No more than 10 tables and max 50 columns for each table.
-  - Can’t contain merged cells.
-  - Elements such as images, charts, and macros can't be processed.
-- PDF:
-  - The file must contain selectable text. You can test it by trying to highlight text within the PDF. If you can’t select or highlight the text, then it can't be processed.
-  - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF won't work.
--	Encrypted or password-protected files aren’t supported.
-- If a PDF contains tables make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
-
-### Use data from Dynamics 365 Sales
-
-> [!IMPORTANT]
-> You need to have account to establish a connection with Dynamics 365 Sales.
-
-You can connect to your business data from Dynamics 365 Sales, which enables you to do rich analysis across your business data estate.
-
-For Dynamics 365 Sales connection:
-- Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
-- If you have access to multiple instances, you are prompted to choose one.
-- If an instance isn't found, then the option to connect to **Dynamics 365 Sales** won't be available.
-
-Current limitations in data integration:
-- We currently support contacts, opportunities, leads, accounts, sales orders, and cases.
-- The data is fetched at the time of connection. 
-- Currently we include the most recent 2000 rows (most recently created) and a maximum of 100 columns for each table.
-- You can establish one connection in a workspace. 
-- You can upload files for additional context in addition to connecting to a data source.
-
+For more info about data-sources that you can connect to, please see [Connecting to a data source](data-connections.md#connecting-to-a-data-source)
 
 ### Work with content
 
