@@ -25,11 +25,11 @@ When content is generated, follow these steps to use the AI cursor:
 
 1. Select the AI cursor or use the keyboard shortcut **Alt + C**.
 2. Select an area or block of content to ask a question about and enter your question.
-3. Select **Generate** > **Generate as new blueprint** to create a new blueprint, or **Generate in place of existing block** to regenerate content in the selected block. Pressing **Enter** instead of manually selecting one of the two options generates a new blueprint as well. 
+3. Select **Generate** > **Generate as new blueprint** to create a new blueprint, or **Update block** to regenerate content in the selected block. Pressing **Enter** instead of manually selecting one of the two options generates a new blueprint as well. 
 
 > [!TIP]
-> - **Update an existing block**: If you experience unexpected results, you can ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. When you press **Enter** it generates a new blueprint instead of updating an existing block on the current blueprint.
-> - **Add data**: You can add additional data to an existing workspace using the AI cursor. You can add more data by [uploading files](ask-question.md#supported-data-files) or [use data from Dynamics 365 Sales](ask-question.md#use-data-from-dynamics-365-sales).
+> - **Update block**: If you experience unexpected results, you can ask Project "Sophia" to adjust the results. For example, update an existing block to use another chart type, group by something else, or explain what an acronym means in your source data to help get better results. When you press **Enter** it generates a new blueprint instead of updating an existing block on the current blueprint.
+> - **Add data**: You can add additional data to an existing workspace using the AI cursor. You can add more data by uploading files or connecting to a data source [Connect to your data](data-connections.md). If you already have a data connection established in the workspace,  Project "Sophia" will consider the data-source to answer the question.
    
    > [!div class="mx-imgBorder"]
    > ![Use the AI cursor.](media/ai-cursor.png)
