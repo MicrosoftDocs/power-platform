@@ -35,7 +35,7 @@ You'll get an AI-powered blueprint in response to your question including an ove
 
 ## Ask questions about your data
 
-One of the many benefits of Project Sophia is that you can connect to your business data; currently Dynamics 365 Sales. Additinoally, you can further enrich the analysis by uploading data files. The [supported file formats](ask-question.md#supported-data-files) are .csv, .xlsx, and .pdf.
+One of the many benefits of Project Sophia is that you can connect to your business data; currently Dynamics 365 Sales. Additinoally, you can further enrich the analysis by uploading data files. The [supported file formats](data-connections.md#supported-data-files) are .csv, .xlsx, and .pdf.
 
 1. Use one of the following options to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
