@@ -3,12 +3,13 @@ title: "Clean up records from System Job (AsyncOperationBase) and Process Log (W
 description: "Learn how to clean up records from System Job (AsyncOperationBase) and Process Log (WorkflowLogBase) tables."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/05/2024
+ms.date: 07/11/2024
 author: swylezol
 ms.subservice: admin
 ms.author: swylezol
 ms.reviewer: sericks 
 contributors:
+  - dhsinms 
   - MicroSri
 search.audienceType: 
   - admin
