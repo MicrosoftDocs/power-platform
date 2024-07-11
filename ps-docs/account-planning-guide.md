@@ -29,9 +29,9 @@ Use the account planning guide in Project "Sophia" to help you generate account 
 1. To get relevant results, select **Domains** located at the top right and choose a specific domain.
 1. Select **Add data** and then select one of the following options:
    - **Upload files**
-   - Connect to **Dynamics 365 Sales**
+   - Connect to (one of the possible connections, like **Dynamics 365 Sales**, **Dynamics 365 Customer Service**, **Dataverse**)
     > [!IMPORTANT]
-    > You need to have an account to establish a connection with Dynamics 365 Sales. For more informatoin, see [Use data from Dynamics 365 Sales](ask-question.md#use-data-from-dynamics-365-sales).
+    > You need to have an account at the data-source to establish a connection to it. For more informatoin, see [Connect to your data](data-connections.md).
     
 1. When your data loads, select **Generate**.
 
