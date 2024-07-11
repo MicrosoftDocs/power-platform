@@ -35,7 +35,7 @@ Dataverse search helps you quickly find what you're looking for. It delivers fas
 - **Search across documents in Microsoft Dataverse**: Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
 
     > [!Note]
-    > Searching across images is not supported.
+    > Searching across images isn't supported.
 
 - **Understanding of underlying data**: Understands data types like **Choice** and **Lookup**, so it can effectively interpret a search query that includes multiple search terms.
 
