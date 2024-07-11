@@ -4,7 +4,7 @@ description: Configure Dataverse search to improve search results and performanc
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/17/2024
+ms.date: 07/11/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -32,7 +32,10 @@ Dataverse search helps you quickly find what you're looking for. It delivers fas
 
 - **Smart**: Finds matches that include inflectional words such as **stream**, **streaming**, or **streamed**.
 
-- **Search across documents in Microsoft Dataverse**: Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.  Searching across images is not supported.
+- **Search across documents in Microsoft Dataverse**: Includes search results for text in documents that are stored in Dataverse such as PDF, Microsoft Office documents, HTML, XML, ZIP, EML, plain text, and JSON file formats. It also searches text in notes and attachments.
+
+    > [!Note]
+    > Searching across images is not supported.
 
 - **Understanding of underlying data**: Understands data types like **Choice** and **Lookup**, so it can effectively interpret a search query that includes multiple search terms.
 
