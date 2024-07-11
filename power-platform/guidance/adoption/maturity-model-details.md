@@ -131,7 +131,7 @@ Secondarily, this series of articles are helpful for:
 
 ## Assumptions and scope
 
-The primary focus of this series of articles is on the Power Platform technology platform, with an emphasis on Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse.
+The primary focus of this series of articles is on the Power Platform technology platform, with an emphasis on Power Apps, Power Automate, Microsoft Copilot Studio, and Microsoft Dataverse.
 
 For information about Power BI adoption, see the [Power BI adoption roadmap](/power-bi/guidance/powerbi-adoption-roadmap-overview).
 

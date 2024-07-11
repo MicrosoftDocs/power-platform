@@ -3,7 +3,7 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: overview
-ms.date: 06/18/2024
+ms.date: 06/24/2024
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
@@ -88,7 +88,7 @@ The capacity check conducted prior to creating new environments exclude the defa
 
 ### Assign administrators to the default environment
 
-Microsoft 365 Power Platform administrators are automatically assigned the Dataverse system administrator security role in the default environment. However, no other users are automatically added to the default environment as an administrator. To avoid the possibility of an administrative lockout to the default environment, we recommend that you assign the system administrator security role to a few trusted users without assigning those users the Power Platform administrator role. More information: [Environments with a Dataverse database](database-security.md#environments-with-a-dataverse-database)
+Microsoft 365 Power Platform administrators are no longer automatically assigned the Dataverse system administrator security role in the default environment. For more information on how to gain access to the system administrator role, see [Manage admin roles with Microsoft Entra Privileged Identity Management](manage-high-privileged-admin-roles.md). No other users are automatically added to the default environment as an administrator. To avoid the possibility of an administrative lockout to the default environment, we recommend that you assign the system administrator security role to a few trusted users without assigning those users the Power Platform administrator role. More information: [Environments with a Dataverse database](database-security.md#environments-with-a-dataverse-database)
 
 ### Rename the default environment
 
@@ -143,9 +143,9 @@ Depending on the environment type, the environment location varies.
 
 ### Preferred environment location
 
-If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform Powershell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
+If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform PowerShell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
 
-```powershell
+```PowerShell
 $requestBody = [pscustomobject]@{
 powerPlatform = [pscustomobject]@{
 environments = [pscustomobject]@{
@@ -155,7 +155,7 @@ preferredEnvironmentLocation = "unitedstates"
 }
 Set-TenantSettings -RequestBody $requestBody
 ```
-If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide), you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
+If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&preserve-view=true), you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
 
 ```PowerShell
 $settings = Get-TenantSettings 

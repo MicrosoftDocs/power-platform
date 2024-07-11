@@ -20,7 +20,7 @@ This guide describes the recommendations for defining availability and recovery 
 
 The targets are improved through monitoring and testing. Work with your internal stakeholders to establish realistic expectations for reliability. This exercise will also help stakeholders support your architectural design choices and understand that you're designing to best meet the targets you agreed on.
 
-Microsoft Power Platform handles most [infrastructure-level](https://trust.salesforce.com/) availability and reliability concerns for you. However, the availability of the workloads you build is a shared responsibility. It's important to understand that even with Microsoft's [commitment to high availability](https://trust.salesforce.com/en/#systemStatus), the risk of system downtime is never zero.
+Microsoft Power Platform handles most [infrastructure-level](/power-platform/admin/business-continuity-disaster-recovery) availability and reliability concerns for you. However, the availability of the workloads you build is a shared responsibility. It's important to understand that even with Microsoft's [commitment to high availability](https://servicetrust.microsoft.com/), the risk of system downtime is never zero.
 
 Consider using the following metrics to quantify the business requirements.
 
