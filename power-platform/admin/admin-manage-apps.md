@@ -13,7 +13,7 @@ search.audienceType:
 ---
 
 # Manage Power Apps
-If you're an Environment Admin, Global admin, or Microsoft Power Platform admin, you can manage the apps created in your organization.
+If you're an environment admin or a Microsoft Power Platform admin, you can manage the apps created in your organization.
 
 Admins can do the following from the Power Platform admin center:
 
@@ -23,7 +23,7 @@ Admins can do the following from the Power Platform admin center:
 ## Prerequisites
 
 - Either a Power Apps plan or Power Automate plan. Alternatively, you can sign up for a [free Power Apps trial](/powerapps/maker/signup-for-powerapps).
-- Power Apps Environment Admin, Global admin, or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-overview.md).
+- Power Apps environment admin or Power Platform admin permissions. For more information, see [Environments administration in Power Apps](environments-overview.md).
 
 
 ## Manage Power Apps
