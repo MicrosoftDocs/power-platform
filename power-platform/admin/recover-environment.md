@@ -31,7 +31,7 @@ You can recover a recently deleted environment ([within seven days of deletion](
 
 An administrator can recover a recently deleted environment by using the Power Platform admin center.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Power Platform admin).
 2. In the navigation pane, select **Environments**, and then select **Recover deleted environments**.
 
     > [!div class="mx-imgBorder"] 
