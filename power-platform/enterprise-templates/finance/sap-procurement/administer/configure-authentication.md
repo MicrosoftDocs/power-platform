@@ -1,5 +1,5 @@
 ---
-title: Configure authentication for SAP Procurement solutions
+title: Configure authentication for SAP solutions
 description: Set up SSO for your Microsoft Power Platform users to streamline access management to SAP.
 author: jongilman88
 ms.author: jongilman
@@ -13,15 +13,18 @@ contributors:
   - ryanb58
   - scottwoodallmsft
   - Wrighttyler
+  - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/27/2024
+ms.date: 07/12/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Configure authentication for SAP Procurement solutions
+# Configure authentication for SAP solutions
+
+## SAP ERP connector
 
 The [SAP ERP connector](/connectors/saperp/) is designed so multiple people can access and use an application at once; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
 
@@ -43,7 +46,7 @@ More information:
 - [Microsoft Entra documentation](/entra/)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
 
-## Step 1: Configure Kerberos constrained delegation
+### Step 1: Configure Kerberos constrained delegation
 
 [Kerberos constrained delegation (KCD)](/windows-server/security/kerberos/kerberos-constrained-delegation-overview) provides secure user or service access to resources permitted by administrators without multiple requests for credentials. Configure Kerberos constrained delegation for Windows and Microsoft Entra ID authentication.
 
@@ -72,7 +75,7 @@ More information:
 - [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview)
 - [Configure Kerberos-based SSO to on-premises data sources](/power-bi/connect-data/service-gateway-sso-kerberos)
 
-## Step 2: Configure SAP ERP to enable using CommonCryptoLib (sapcrypto.dll)
+### Step 2: Configure SAP ERP to enable using CommonCryptoLib (sapcrypto.dll)
 
 To use SSO to access your SAP server, make sure:
 
@@ -99,7 +102,7 @@ To use SSO to access your SAP server, make sure:
 
 More information: [Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib](/power-bi/connect-data/service-gateway-sso-kerberos-sap-bw-commoncryptolib)
 
-## Step 3: Enable SAP SNC for Azure AD and Windows authentication
+### Step 3: Enable SAP SNC for Azure AD and Windows authentication
 
 The SAP ERP connector supports Microsoft Entra ID, and Windows server AD authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
 
@@ -117,7 +120,7 @@ The SAP SNC name for the user must equal the user's Active Directory fully quali
 >
 > Microsoft Entra ID auth only—the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
 
-## Step 4: Set up SAP server and user accounts to allow actions
+### Step 4: Set up SAP server and user accounts to allow actions
 
 Review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/) to learn more about the supported user-account types and the minimum required authorization for each action type, like remote function call (RFC), business application programming interface (BAPI), and intermediate document (IDOC).
 
@@ -128,6 +131,33 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 |RFC actions    | `RFC_GROUP_SEARCH` and `DD_LANGU_TO_ISOLA`  |
 |Read Table action   | Either `RFC BBP_RFC_READ_TABLE` or `RFC_READ_TABLE` |
 |Grant strict minimum access to SAP server for your SAP connection  | `RFC_METADATA_GET` and `RFC_METADATA_GET_TIMESTAMP`|
+
+## SAP OData Connector
+
+The [SAP OData connector](/connectors/sapodata/) enables consumption of any OData service from the SAP ecosystem.
+
+Enabling SAP Principal Propagation makes it easy to interact with data while adhering to user-level permissions configured in SAP.
+
+The SAP OData connector supports the following authentication types (API Key can be combined with any of the following):
+
+| Authentication type | How a user connects  |  Configuration steps |
+|--------------|--------------|----------------|
+| [Basic](/connectors/sapodata/#creating-a-connection)     | Use SAP user name and password to access SAP server.  | Obtain user credentials from SAP Basis admin |
+| [API Key]()     | Use the API key provided by the API Management solution | Request from API Management developer portal or via your Azure API Manager |
+| [Anonymous](/connectors/sapodata/##creating-a-connection)     | Use with API key | Use with API Management or for unsecured APIs |
+| [Microsoft Entra ID Integrated]()    | Map Microsoft Entra ID identities to named SAP backend users (SAP Principal Propagation) |  Use [SAP Principal Propagation](#guidance-for-sap-principal-propagation)  |
+
+### Guidance for SAP Principal Propagation
+
+Prinicipal Propagation is a mechanism well established in the SAP ecosystem. The SAP OData Connector supports this mechanism by providing a first-party Entra Id app registration with client id "6bee4d13-fd19-43de-b82c-4b6401d174c3" and scope "user_impersonation". Use the field "Microsoft Entra ID Resource URI (Application ID URI)" to maintain your globally unique resource URI of the Entra ID app registration authorized to access the SAP OData service.
+
+> [!NOTE]
+> An existing trust setup between your SAP backend and Entra ID using an enterprise app registration is required. The configuration needs to support the OAuth2SAMLBearer flow. See [this Microsoft learn article](/entra/identity/saas-apps/sap-netweaver-tutorial) and this SAP blog for details on the initial steps.
+> :::image type="content" source="media/configure-authentication/sap-principal-propagation-trust.png" alt-text="Illustration of trust relationship between SAP, Entra ID, and API Management solution to support SAP Principal Propagation.":::
+
+For the Entra ID token exchange required by SAP ([OAuth2SAMLBearer flow](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/6e/aec739afad4c5c96487c780c0bf82a/frameset.htm)), we recommend using an API Management solution. See [this Microsoft learn article](/azure/api-management/sap-api?tabs=odata#production-considerations) for details on the initial steps with Azure API Management.
+
+:::image type="content" source="media/configure-authentication/sap-principal-propagation.png" alt-text="Authentication flow of the SAP OData Connector with Azure API Management to support SAP Principal Propagation.":::
 
 ## Related content
 
