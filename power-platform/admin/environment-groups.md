@@ -27,6 +27,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 - [Solution checker enforcement](managed-environment-solution-checker.md)
 - [Usage insights](managed-environment-usage-insights.md)
 - [Extended backup retention](backup-restore-environments.md)
+- [Move data across regions](geographical-availability-copilot.md)
 
 ## Strategies for using environment groups
 
