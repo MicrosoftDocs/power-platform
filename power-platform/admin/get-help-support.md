@@ -145,9 +145,9 @@ For some support requests, you’ll be asked to request a support environment. C
 :::image type="content" source="media/how-can-we-help.png" alt-text="Select Dynamics 365 Sales as the product.":::
 
 ### See also
-[Create an effective support request](/power-apps/maker/canvas-apps/service-request-support)<br />
-[Support overview](support-overview.md)<br />
-[How do I check my online service health?](check-online-service-health.md) <br />
+- [Create an effective support request](/power-apps/maker/canvas-apps/service-request-support)
+- [Support overview](support-overview.md)
+- [How do I check my online service health?](check-online-service-health.md)
 
 
 
