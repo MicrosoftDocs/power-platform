@@ -53,7 +53,7 @@ Only on Windows, **Download** returns the location where the file was stored loc
 
 The following formula will download the user's guide for the Surface Book, a PDF file:
 
-```powerapps-dot
+```power-fx
 Download( "https://go.microsoft.com/fwlink/?linkid=827480" )
 ```
 

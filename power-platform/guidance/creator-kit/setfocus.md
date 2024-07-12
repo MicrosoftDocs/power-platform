@@ -23,7 +23,7 @@ To make calls to the input event, you can set a context variable that is bound t
 
 Example Power Fx formula that triggers the focus behavior:
 
-```powerapps-dot
+```power-fx
 UpdateContext({ ctxComponentEvent: "SetFocus" & Text(Rand()) });
 ```
 
