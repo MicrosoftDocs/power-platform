@@ -26,8 +26,6 @@
           items:
           - name: Overview
             href: formula-reference-overview.md
-          - name: Power Apps formula reference
-            href: formula-reference.md
           - name: Canvas apps formula reference
             href: formula-reference-canvas-apps.md
           - name: Model-driven apps formula reference
