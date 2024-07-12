@@ -49,7 +49,7 @@ The **Summary** tab on the **Licenses (preview)** page displays a summary of any
 ### Power Apps licensing summary 
 From the **Product** dropdown list, select **Power Apps** to view license consumption information for Power Apps.
 
-The **Power Apps licensing summary** section provides details of how many Power Apps licenses have been purchased, how many of those licenses are assigned, and how many of those licenses are being actively used. This view is available for users with global admin, Power Platform admin, and Dynamics 365 admins roles.
+The **Power Apps licensing summary** section provides details of how many Power Apps licenses have been purchased, how many of those licenses are assigned, and how many of those licenses are being actively used. This view is available to Power Platform admin and Dynamics 365 admins roles.
 
 | Setting | Description |
 | ------- | ----------- |
@@ -69,7 +69,7 @@ The **Power Apps licensing summary** section provides details of how many Power 
 ### Power Automate licensing summary 
 From the **Product** dropdown list, select **Power Automate** to view license consumption information for Power Automate.
 
-This view is available for users with global admin, Power Platform admin, and Dynamics 365 admins roles.
+This view is available to Power Platform admin and Dynamics 365 admins roles.
 
 The **Power Automate licensing summary** section provides details of how many Power Automate licenses have been purchased, assigned, and consumed in your entire tenant. It provides details of which flow runs are consuming licenses. 
 
