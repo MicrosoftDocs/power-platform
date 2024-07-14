@@ -207,7 +207,7 @@ To setup the following examples:
 
 1. In canvas apps, set the **OnSelect** property of the **Button** control to:
    ```power-fx
-   Set( Result, Environment.AITranslate( {Text:Subject, Language: "fr"} ).TranslatedText )
+   Set( Result, Environment.AITranslate( {Text:Subject, TargetLanguage: "fr"} ).TranslatedText )
    ```
    For all other products, use this formula:
    ```power-fx
