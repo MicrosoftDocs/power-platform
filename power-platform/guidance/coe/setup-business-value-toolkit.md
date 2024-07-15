@@ -1,10 +1,10 @@
 ---
-title: "Set up the Business value toolkit component | Microsoft Docs"
-description: "Instructions for how to set up the Business Value Toolkit component of the CoE Starter Kit."
+title: Set up the Business value toolkit component | Microsoft Docs
+description: Instructions for how to set up the Business value toolkit component of the CoE Starter Kit.
 author: stjeffer
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/07/2022
+ms.date: 07/15/2024
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
