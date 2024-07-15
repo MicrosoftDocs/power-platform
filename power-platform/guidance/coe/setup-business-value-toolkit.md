@@ -1,5 +1,5 @@
 ---
-title: Set up the Business value toolkit component | Microsoft Docs
+title: Set up the Business value toolkit | Microsoft Docs
 description: Instructions for how to set up the Business value toolkit component of the CoE Starter Kit.
 author: stjeffer
 ms.component: pa-admin
@@ -11,9 +11,9 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Set up the Microsoft Power Platform business value toolkit component
+# Set up the Business value toolkit
 
-This article will help you set up the [Business value toolkit component](business-value-toolkit.md) of the Center of Excellence (CoE) Starter Kit.
+This article helps you set up the Microsoft Power Platform [Business value toolkit](business-value-toolkit.md), a component of the Center of Excellence (CoE) Starter Kit.
 
 The business value toolkit solution contains the following artifacts:
 
