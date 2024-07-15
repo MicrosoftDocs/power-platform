@@ -19,7 +19,7 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-Use the account planning guide in Project "Sophia" to help you generate account plans and meet your revenue goals.
+Use the account planning guide in Project "Sophia" to help generate account plans and meet your revenue goals.
 
 > [!NOTE]
 > Data strengths indicator is a useful tool for gaining insight into data and improving outcomes. Its purpose is to assist users who are unsure where to begin by providing guidance on which data to use for optimal results. The data indicator shouldn't be viewed as the sole source of data or the only data that should be provided.
@@ -28,14 +28,14 @@ Use the account planning guide in Project "Sophia" to help you generate account 
 1. From the **Home** screen, select **Guides** > **Account planning**.
 1. To get relevant results, select **Domains** located at the top right and choose a specific domain.
 1. Select **Add data** and then select one of the following options:
+   - Connect to data from **Dataverse**, **Dynamics 365 Customer Service**, or **Dynamics 365 Sales**
    - **Upload files**
-   - Connect to (one of the possible connections, like **Dynamics 365 Sales**, **Dynamics 365 Customer Service**, **Dataverse**)
     > [!IMPORTANT]
-    > You need to have an account at the data-source to establish a connection to it. For more informatoin, see [Connect to your data](data-connections.md).
+    > You need to have an account with the data source to establish a connection to it. For more informatoin, see [Connect to your data](data-connections.md).
     
 1. When your data loads, select **Generate**.
 
-Project "Sophia" is going to generate a tailored account plan based on your data. You can upload or connect to more data and refine your account plan or continue exploring your data.
+Project "Sophia" generates a tailored account plan based on your data. You can upload or connect to more data and refine your account plan or continue exploring your data.
 
 > [!div class="mx-imgBorder"]
 > ![Accounting planning guide.](media/account-plan.png)
