@@ -45,7 +45,7 @@ By leveraging generative AI, the toolkit enhances these raw stories, refining th
 
 The toolkit goes beyond storytelling. It includes an analytical process that evaluates each story against the strategic objectives of the organization. This process assesses alignment and impact, offering a broader view of value that might have been previously hidden.  
 
-![Strategic alignment screen](media\strategic-alignment-analysis.png "Screenshot of strategic alignment screen")
+:::image type="content" source="media/strategic-alignment-analysis.png" alt-text="Screenshot of strategic alignment screen.":::
 
 App owners review the analysis results and select the findings they agree with, utilizing a built-in value calculator to further assess impact, featuring the _average cost of things_ such as the cost of processing an invoice, to quantify overall value. This data is stored in Microsoft Dataverse, facilitating the creation of insightful dashboards.
 
@@ -53,17 +53,17 @@ App owners review the analysis results and select the findings they agree with, 
 
 A key feature of the value assessment is the value calculator, empowering organizations to tangibly quantify the impact of their solution. Leveraging the concept of the _average cost of things_, the calculator facilitates the input of specific metrics aligned with strategic objectives. For instance, it allows app owners to delineate key performance indicators, such as the number of invoices processed per hour, both before and after implementing the app. By capturing these metrics, the calculator paints an accurate and granular picture of value, deriving the tangible benefits from solution deployment.
 
-![Value calculator screen](media\value-calculator.png "Screenshot of value calculator screen")
+:::image type="content" source="media/value-calculator.png" alt-text="Screenshot of value calculator screen.":::
 
 #### Communicate value with value cards
 
 When completed, this data is presented as _value cards_, which are a clear, concise representation of the data collected. Value cards are designed to inspire organizations by illustrating various ways to showcase and communicate the impact of Power Platform solutions.
 
-![Value card summary screen](media\value-card.png "Screenshot of value card summary screen")
+:::image type="content" source="media/value-card.png" alt-text="Screenshot of value card summary screen.":::
 
 Value cards can be added to SharePoint Online to increase the visual impact of your success stories.
 
-![Value card canvas app in SharePoint Online](media\sharepoint-story-creation.png "Screenshot of value card canvas app in SharePoint Online")
+:::image type="content" source="media/sharepoint-story-creation.png" alt-text="Screenshot of value card canvas app in SharePoint Online.":::
 
 ### Tailoring approaches for different use cases
 
@@ -71,7 +71,7 @@ Recognizing that not all Power Platform solutions are the same, the toolkit empl
 
 However, for personal productivity helpers, such as individual flows that save users time on routine tasks, a more automated and light-touch process is necessary. To efficiently capture the value of these solutions, the toolkit utilizes adaptive cards. These cards are automatically sent to users, soliciting feedback on how many minutes or hours the flow saves them each week. This approach ensures that even the smaller, yet impactful productivity improvements are measured and recorded without requiring extensive manual effort.
 
-![Personal productivity assessment](media\personal-productivity-helper.png "Screenshot of personal productivity assessment")
+:::image type="content" source="media/personal-productivity-helper.png" alt-text="Screenshot of personal productivity assessment.":::
 
 ### Assessing ideas and proposals
 
@@ -85,7 +85,7 @@ Anticipating the potential impact of a solution before its actual construction i
 
 This capability in the Business value toolkit is further enhanced by a function comparing proposals to similar apps and ideas. This comparison is approached from two angles: audience similarity and feature resemblance.
 
-![Proposal assessment screen](media\bv-proposal-assessment.png "Screenshot of proposal assessment screen")
+:::image type="content" source="media/bv-proposal-assessment.png" alt-text="Screenshot of proposal assessment screen":::
 
 This dual-pronged approach ensures that proposed solutions are not only aligned with organizational objectives, but also distinct from existing offerings in the tenant. By identifying overlaps and gaps, this capability enables us to make informed decisions, minimize redundancy, and maximize the value of your development efforts.
 
