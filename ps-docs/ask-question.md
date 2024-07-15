@@ -37,10 +37,10 @@ You'll get an AI-powered blueprint in response to your question including an ove
 
 One of the many benefits of Project Sophia is that you can connect to your business data; currently Dynamics 365 Sales. Additinoally, you can further enrich the analysis by uploading data files. The [supported file formats](data-connections.md#supported-data-files) are .csv, .xlsx, and .pdf.
 
-1. Use one of the following options to ask questions about your data:
+Use one of the following options to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **go** > **Exploratory** > **upload data or use sample data**. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
+   - On the Home screen, select **New workspace** > **Add data** > use data from **Dataverse**, **Dynamics 365 Customer Service**, or **Dynamics 365 Sales**.
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
-   - On the Home screen, select **New workspace** > **Add data** > use data from **Dynamics 365 Sales**, **Dynamics 365 Sales**, or **Dataverse**, 
     > [!IMPORTANT]
     > You need to have account at the data source to establish a connection to it. For more information, see [Connect to your data](data-connections.md).
     
