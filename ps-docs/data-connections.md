@@ -56,7 +56,7 @@ You can upload a PDF (.pdf), CSV (.csv), or Excel (.xls) file. The following lim
 
 ## Connecting to a data source
 
-Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dataverse**, **Dynamics 365 Customer Service**, and **Dynamics 365 Sales** data sources, with more to come in the future. You can establish one connection in a workspace. You can upload files for additional context in addition to connecting to a data source.
+Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dataverse**, **Dynamics 365 Customer Service**, and **Dynamics 365 Sales** data sources, with more to come in the future. You can establish one connection in a workspace. You can upload files for more context in addition to connecting to a data source.
 
 > [!IMPORTANT]
 > You need to have an account with the data source to establish a connection with it.
@@ -73,7 +73,7 @@ You can connect to your business data in Dataverse, which enables you to do rich
 
 For a Dataverse connection:
 - Your sign in information for Project "Sophia" is used to connect to Dataverse.
-- If you have access to multiple instances, you're prompted to choose one.
+- If you have access to multiple instances, choose one.
 - If an instance isn't found, then the option to connect to **Dataverse** won't be available.
 - If Project "Sophia" isn't able to access the data in the instance, it shows an error message.
 
@@ -91,7 +91,7 @@ You can connect to your business data from Dynamics 365 Customer Service, which 
 
 For a Dynamics 365 Customer Service connection:
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Customer Service.
-- If you have access to multiple instances, you're prompted to choose one.
+- If you have access to multiple instances, choose one.
 - If an instance isn't found, then the option to connect to **Dynamics 365 Customer Service** won't be available.
 - If Project "Sophia" isn't able to access the data in the instance, it shows an error message.
 
@@ -111,7 +111,7 @@ You can connect to your business data from Dynamics 365 Sales, which enables you
 
 For a Dynamics 365 Sales connection:
 - Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Sales.
-- If you have access to multiple instances, you're prompted to choose one.
+- If you have access to multiple instances, choose one.
 - If an instance isn't found, then the option to connect to **Dynamics 365 Sales** won't be available.
 - If Project "Sophia" isn't able to access the data in the instance, it shows an error message.
 
