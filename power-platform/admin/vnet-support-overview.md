@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/27/2024
+ms.date: 07/08/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -83,7 +83,7 @@ The following table lists the services that support Azure subnet delegation for 
 | Area      | Power Platform services | Virtual Network support availability|
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
-| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li></ul> | Production ready preview |
+| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li></ul> | Production ready previews |
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
 
