@@ -51,6 +51,8 @@ Tenant admins can't perform activities that require direct access to Dataverse d
 
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
+- If you are a D365 administrator and the environment is protected by a Security Group, you must be a member of the Security Group. This rule does not apply for users with the Global administrator or Power Platform administrator roles.
+
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
