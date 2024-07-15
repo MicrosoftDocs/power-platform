@@ -42,7 +42,7 @@ One of the many benefits of Project Sophia is that you can connect to your busin
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
    - On the Home screen, select **New workspace** > **Add data** > use data from **Dynamics 365 Sales**, **Dynamics 365 Sales**, or **Dataverse**, 
     > [!IMPORTANT]
-    > You need to have account at the data-source to establish a connection to it. For more informatoin, see [Connect to your data](data-connections.md).
+    > You need to have account at the data-source to establish a connection to it. For more information, see [Connect to your data](data-connections.md).
     
 Your data is analyzed to create a blueprint that provides valuable insights, charts, and actionable steps.
 
