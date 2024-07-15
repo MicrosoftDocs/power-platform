@@ -172,15 +172,17 @@ The following table illustrates the data schema relating to stories and proposal
 Before a story is shared within the organization, it must receive user approval. Once approved, the story is created as a news article in SharePoint Online. Initially, as an unpublished page, the article then requires an administrator or a user with appropriate permissions to finalize it by adding images and making any necessary adjustments before publishing.
 
 > [!NOTE]
->To integrate with SharePoint Online, ensure you populate the environment variable: **CommunityHubUrl**. This URL should point to a SharePoint Online site collection provisioned using the communications site template. Success stories are housed within the Pages library. For instance, your SharePoint site URL might resemble: `https://contoso.sharepoint.com/sites/power-platform-coe`. You should also ensure the account that the cloud flow runs with has at least **'Member'** access in the SharePoint Online site collection.
+>To integrate with SharePoint Online, ensure you populate the environment variable: **CommunityHubUrl**. This URL should point to a SharePoint Online site collection provisioned using the communications site template. Success stories are housed within the Pages library. For instance, your SharePoint site URL might resemble: `https://contoso.sharepoint.com/sites/power-platform-coe`. You should also ensure the account that the cloud flow runs with has at least **Member** access in the SharePoint Online site collection.
 
-#### Adding value cards to a success story in SharePoint Online
+#### Add value cards to a success story in SharePoint Online
 
-The Business Value Toolkit provides a canvas app ('Display value card in SharePoint Online') that can be added to the success story. The following steps instruct how to **add and configure the canvas app**:
+The Business value toolkit provides a canvas app, **Display value card in SharePoint Online**, that can be added to the success story. The following steps explain how to add and configure the canvas app.
 
-Prior to editing the page in SharePoint Online:
+Complete the following steps before you edit the page in SharePoint Online.
 
-1. Go to make.powerapps.com > select **'Solutions'** > select **'Business Value'** > **Apps**
+1. Sign in to [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
+1. Select **Solutions** .
+1. Select **Business Value** > **Apps**.
 1. Select the elipsis **(...)** next to the canvas app named **'Display value cards in SharePoint Online'** then copy the web link:
 
 ![Web link screen shot](media/BVT-WebLinkForCanvasApp.png "Web link for canvas app")
