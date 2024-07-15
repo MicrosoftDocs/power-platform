@@ -274,7 +274,7 @@ The data collected from user responses is described in the following table.
 
 | Table                              | Column                     | Purpose                                                                                                                       |
 |------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Personal productivity collected data    | Asset type                   | Describes the asset type assessed. Currently, only cloud flows are assessed.                                                           |
+| Personal productivity collected data    | Asset type                   | Describes the asset type assessed. Currently, only cloud flows are assessed.                                                          |
 | Personal productivity collected data    | Criticality                  | Integer defining criticality of cloud flow to the user, team, department, or organization.                                         |
 | Personal productivity collected data    | Duration                | Describes the duration of saving hours or minutes.  |
 | Personal productivity collected data    | Value                  | Describes the amount of time saved.                                  |
@@ -303,7 +303,7 @@ The data collected during value assessment is described in the following table.
 | Value assessment collected data    | Value statement verb       | Describes the impact the app has on achieving the strategic objective in verb form.                                           |
 | Value assessment collected data    | Before implementation value| Represents the value before the app was implemented.                                                                           |
 | Value assessment collected data    | Confidence                 | Indicates the level of confidence in the analysis.                                                                             |
-| Value assessment collected data    | User Acceptance            | Indicates whether the analysis has been agreed upon by the user.                                                                |
+| Value assessment collected data    | User acceptance            | Indicates whether the analysis has been agreed upon by the user.                                                                |
 
 These datasets can be used to develop dashboards providing valuable insights into the time saved by personal productivity flows.
 
@@ -313,29 +313,29 @@ The toolkit employs specific prompts within Power Automate to assess the potenti
 
 ![Screenshot of proposal analysis](media\BVTK-ProposalAnalysis.png "Screenshot of proposal analysis results")
 
-Below is an overview of the prompts used in this process:
+The following table provides an overview of the prompts used in the process.
 
 | Prompt name                  | Description                                                                                                                      | Where used                     |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | Assess a proposal | This prompt takes the idea created by the app user and analyzes for alignment and impact against each strategic objective | Cloud flow: AI-ValueAssessmentProposal|
 | Proposal comparison | This prompt checks for similarities with other stories and proposal over two scopes: similarity in audience and similarity of features and functionality. | Cloud flow: AI-ProposalComparison |
-| Summarise proposal impact | This prompt summaries the potential impact, providing an overview of the solution, potential business value and positive impact on stakeholders. | Cloud flow: AI-RunComparisonCheckAgainstProposal |
+| Summarise proposal impact | This prompt summaries the potential impact, providing an overview of the solution, potential business value, and positive impact on stakeholders. | Cloud flow: AI-RunComparisonCheckAgainstProposal |
 
 These prompts facilitate the creation of engaging and well-structured success stories that resonate with business audiences, making complex app functionalities accessible and relatable.
 
-### Proposal/ idea assessment data schema
+### Proposal or idea assessment data schema
 
-The data collected from an idea/ proposal is stored in the following Dataverse table:
+The data collected from an idea or proposal is stored in the **Proposal assessment collected data** Dataverse table. The table stores data relating to the assessment of a proposal or idea. 
 
-| Table name | Purpose |
-|------------|---------|
-| Proposal assessment collected data | Stores data relating to the assessment of a proposal/ idea. Data is stored in the following columns:|
+Data is stored in the following columns:
 
-- AppStoryName: text - the title provided for the idea/ proposal.
-- AudienceMatch: text - summary data from checking for audiences.
-- ComparisonScore: integer - Score provided (confidence in overall comparison).
-- FeatureMatch: text - summary data from checking for similar features.
-- Name: text (GUID) - Id of the idea/ proposal.
-- StoryId: text (GUID) - Id of the related story. |
+| Table                              | Column               | Data type  |Purpose                                                                                                                       |
+|------------------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Proposal assessment collected data    | AppStoryName      |  Text        | The title provided for the idea or proposal.     |
+| Proposal assessment collected data  | AudienceMatch       |  Text        | Summary data from checking for audiences.    |
+| Proposal assessment collected data    | ComparisonScore   |  Integer     | Score provided for confidence in overall comparison.            |
+| Proposal assessment collected data    | FeatureMatch      |  Text        | Summary data from checking for similar features.     |
+| Proposal assessment collected data    | Name              |  Text (GUID) | ID of the idea or proposal.  |
+| Proposal assessment collected data    | StoryId           | Text (GUID)  | ID of the related story.    |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
