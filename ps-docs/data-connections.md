@@ -14,7 +14,7 @@ contributors:
   - marrabi
 ---
 
-# Connect Project "Sophia" to your data
+# Connect Project "Sophia" to your data (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
