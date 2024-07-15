@@ -24,7 +24,7 @@ Follow these steps to ask a question:
 
 1. Go to [https://projectsophia.microsoft.com](https://projectsophia.microsoft.com).
 1. From the Home screen, select **New workspace**.
-1. Click on **Add data**, and choose an option.
+1. Select **Add data**, and choose an option.
 1. From the top right, select **Domains** to optimize responses for your specific area of interest. 
 1. Enter your question in the text box and then select **Generate**.
 
@@ -79,8 +79,8 @@ For a Dataverse connection:
 
 Similar to other connections, based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. 
 
-[!TIP]
-Make sure that custom tables have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI Cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
+> [!TIP]
+> Make sure that custom tables have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
 
 ### Use data from Dynamics 365 Customer Service
 
@@ -97,8 +97,8 @@ For a Dynamics 365 Customer Service connection:
 
 Similar to a Dynamics 365 Sales connection, based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data.
 
-[!TIP]
-Make sure that custom tables added to Dynamics 365 Customer Service have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI Cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
+> [!TIP]
+> Make sure that custom tables added to Dynamics 365 Customer Service have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
 
 If the user doesn't enter any question, by default, Project "Sophia" answers the question based on core tables in Dynamics 365 Customer Service, like (accounts, queue, etc.). Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Customer Service instances. It's advisable to have proper descriptions to these custom items.
 
@@ -117,7 +117,7 @@ For a Dynamics 365 Sales connection:
 
 Based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data.
 
-[!TIP]
-Make sure that custom tables added to Dynamics 365 Sales have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI Cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
+> [!TIP]
+> Make sure that custom tables added to Dynamics 365 Sales have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
 
 If the user doesn't enter any question, by default, Project "Sophia" answers the question based on core tables in Dynamics 365 Sales, like accounts, opportunities, leads, and more. You can establish one connection in a workspace. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Sales instances. It's advisable to have proper descriptions to these custom items.
