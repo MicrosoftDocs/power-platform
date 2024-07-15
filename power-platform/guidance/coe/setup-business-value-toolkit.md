@@ -186,7 +186,7 @@ Complete the following steps before you edit the page in SharePoint Online.
 1. Select the elipsis (**...**) next to the canvas app named **Display value cards in SharePoint Online**.
 1. Copy the web link.
 
-    ![Web link screen shot](media/BVT-WebLinkForCanvasApp.png "Web link for canvas app")
+   :::image type="content" source="media/BVT-WebLinkForCanvasApp.png" alt-text="Web link for canvas app.":::
 
 1. Copy the **Story ID** of the success story that you want to add the canvas app to.
 1. Enter 'edit' mode on the story page, by selecting the **Edit** button.
@@ -233,24 +233,22 @@ The following steps outline the user-initiated, value assessment process.
 7. The user reviews and selects the strategic objectives impacted by the solution, identifying the areas of greatest impact.
 8. The final phase involves using the value calculator to accurately determine the app's value.
 
-    ![Animated GIF showing user initiated assessment](media\bvtk-user-initiated-assessment.gif "Animation of user initiating an assessment on an existing app")
-
 #### Administrator-initiated, value assessment
 
 The following steps apply to the administrator-initiated, value assessment scenario.
 
 1. The administrator identifies an app either through CoE Starter Kit dashboard, Power Platform admin center dashboard, or a custom solution.
 
-    ![Screenshot of admin dashboard](media\admin-dashboard-PPAC.png "Screenshot of Power Platform Admin Center screen")
+   :::image type="content" source="media/admin-dashboard-PPAC.png" alt-text="Screenshot of Power Platform admin center screen.":::
 
 1. The administrator copies the ID of the app and ID of the environment.
 1. The administrator runs the cloud flow titled, **New-AdminInitiatedAssessment**, pasting the ID for the app and environment.
 
-    ![Screenshot of runtime parameters](media\bv-admin-initiated-runtime-params.png "Screenshot of runtime params")
+   :::image type="content" source="media/bv-admin-initiated-runtime-params.png" alt-text="Screenshot of runtime parameters.":::
 
 1. The flow runs and sends an adaptive card to the flow owner, inviting them to complete an assessment.
 
-    ![Screenshot of admin center](media\Admin-Initiated-Assessment.png "Screenshot of Power Platform Admin Center screen")
+   :::image type="content" source="media/Admin-Initiated-Assessment.png" alt-text="The flow runs and sends an adaptive card to the flow owner.":::
 
 1. The user selects the button to start the assessment and launches the **Business value capture** app with context.
 
@@ -266,7 +264,7 @@ The following steps apply to the administrator-initiated, personal productivity 
 1. The administrator runs the cloud flow **New-PersonalProductivityAssessment**, pasting the ID for the environment into the variable **Environment ID**.
 1. The flow runs and sends an adaptive card to the owner of each flow in the environment, containing two questions designed to establish value (in time saved) and criticality of flow.
 
-![Personal productivity assessment](media\personal-productivity-helper.png "Screenshot of personal productivity assessment")
+:::image type="content" source="media/personal-productivity-helper.png" alt-text="Screenshot of personal productivity assessment.":::
 
 #### Personal productivity assessment data schema
 
@@ -311,7 +309,7 @@ These datasets can be used to develop dashboards providing valuable insights int
 
 The toolkit employs specific prompts within Power Automate to assess the potential impact of an idea or proposal, along with conducting checks for similar apps and ideas to reduce duplication of effort.
 
-![Screenshot of proposal analysis](media\BVTK-ProposalAnalysis.png "Screenshot of proposal analysis results")
+:::image type="content" source="media/BVTK-ProposalAnalysis.png" alt-text="Screenshot of proposal analysis results.":::
 
 The following table provides an overview of the prompts used in the process.
 
