@@ -183,15 +183,17 @@ Complete the following steps before you edit the page in SharePoint Online.
 1. Sign in to [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. Select **Solutions** .
 1. Select **Business Value** > **Apps**.
-1. Select the elipsis **(...)** next to the canvas app named **'Display value cards in SharePoint Online'** then copy the web link:
+1. Select the elipsis (**...**) next to the canvas app named **Display value cards in SharePoint Online**.
+2. Copy the web link.
 
 ![Web link screen shot](media/BVT-WebLinkForCanvasApp.png "Web link for canvas app")
 
-1. Copy the **'Story ID'** of the success story that you want to add the canvas app to
-1. Enter 'edit' mode on the story page, by selecting the **'Edit'** button.
-1. Choose the area in the page where you would like to add the canvas app, then select the **'+'** button and select **'Microsoft Power Apps (Preview)'**
-1. In the **'App web link or Id'** input, add the following parameter to the web link URL: ``` ?&storyId=<paste story Id> ```
-1. Save the page/ republish the page when ready.
+1. Copy the **Story ID** of the success story that you want to add the canvas app to.
+1. Enter 'edit' mode on the story page, by selecting the **Edit** button.
+1. Choose the area in the page where you would like to add the canvas app, then select the plus icon (**+**) and select **Microsoft Power Apps (Preview)**.
+1. In the **App web link or Id** input, add the following parameter to the web link URL:
+    ``` ?&storyId=<paste story Id> ```
+1. Save the page and republish the page when ready.
 
 ### Initiating Value Assessments with the Business Value Toolkit
 
