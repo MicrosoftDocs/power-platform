@@ -31,7 +31,7 @@ Use the account planning guide in Project "Sophia" to help generate account plan
    - Connect to data from **Dataverse**, **Dynamics 365 Customer Service**, or **Dynamics 365 Sales**
    - **Upload files**
     > [!IMPORTANT]
-    > You need to have an account with the data source to establish a connection to it. For more informatoin, see [Connect to your data](data-connections.md).
+    > You need to have an account with the data source to establish a connection to it. For more information, go to [Connect to your data](data-connections.md).
     
 1. When your data loads, select **Generate**.
 
