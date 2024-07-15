@@ -1,9 +1,9 @@
 ---
-title: "Business Value Toolkit | Microsoft Docs"
-description: "The CoE Starter Kit now contains useful components for measuring and communicating the value of Power Platform solutions."
+title: Business Value Toolkit | Microsoft Docs
+description: The CoE Starter Kit now contains useful components for measuring and communicating the value of Power Platform solutions.
 author: stjeffer
 ms.topic: conceptual
-ms.date: 07/09/2024
+ms.date: 07/15/2024
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
