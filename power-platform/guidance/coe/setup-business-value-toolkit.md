@@ -184,43 +184,43 @@ Complete the following steps before you edit the page in SharePoint Online.
 1. Select **Solutions** .
 1. Select **Business Value** > **Apps**.
 1. Select the elipsis (**...**) next to the canvas app named **Display value cards in SharePoint Online**.
-2. Copy the web link.
+1. Copy the web link.
 
-![Web link screen shot](media/BVT-WebLinkForCanvasApp.png "Web link for canvas app")
+    ![Web link screen shot](media/BVT-WebLinkForCanvasApp.png "Web link for canvas app")
 
 1. Copy the **Story ID** of the success story that you want to add the canvas app to.
 1. Enter 'edit' mode on the story page, by selecting the **Edit** button.
 1. Choose the area in the page where you would like to add the canvas app, then select the plus icon (**+**) and select **Microsoft Power Apps (Preview)**.
 1. In the **App web link or Id** input, add the following parameter to the web link URL:
+
     ``` ?&storyId=<paste story Id> ```
+   
 1. Save the page and republish the page when ready.
 
-### Initiating Value Assessments with the Business Value Toolkit
+### Initiation
 
-The Business Value Toolkit provides flexible methods for initiating a value assessment, catering to different roles and use cases within the organization. These methods ensure that assessments can be effectively managed and initiated according to specific needs and in the correct context.
+The Business value toolkit provides flexible methods for initiating a value assessment and catering to different roles and use cases within the organization. These methods ensure that assessments can be effectively managed and initiated according to specific needs and in the correct context.
 
-### Methods of Initiation
-
-1. **User Initiated - existing app assessment**:
+- **User initiated - existing app assessment**:
    - Users launch the Business Value Capture app.
    - Users select an application to assess from within the app.
 
-2. **Admin Initiated - existing app assessment**:
+- **Admin initiated - existing app assessment**:
    - Administrators identify an application that requires assessment.
    - Administrators initiate the value assessment process.
 
-3. **Admin Initiated - personal productivity flows**:
+- **Admin initiated - personal productivity flows**:
    - Administrators identify an environment to assess personal productivity flows.
    - Administrators initiate the assessment process.
 
 These initiation methods offer tailored approaches for different organizational stakeholders, enhancing the efficiency and relevance of value assessments.
 
-#### User-Initiated Value Assessment
+#### User-initiated, value assessment
 
-The following steps outline the **user-initiated** value assessment process:
+The following steps outline the user-initiated, value assessment process.
 
-1. The user launches the business value capture app.
-2. The user selects 'Assess an existing app' from the navigation options.
+1. The user launches the **Business Value Capture** app.
+2. The user selects **Assess an existing app** from the navigation options.
 3. From the list of available apps, the user chooses the app they want to assess.
 4. The user shares the story behind the app, including:
    - The challenges faced
@@ -233,61 +233,61 @@ The following steps outline the **user-initiated** value assessment process:
 7. The user reviews and selects the strategic objectives impacted by the solution, identifying the areas of greatest impact.
 8. The final phase involves using the value calculator to accurately determine the app's value.
 
-![Animated GIF showing user initiated assessment](media\bvtk-user-initiated-assessment.gif "Animation of user initiating an assessment on an existing app")
+    ![Animated GIF showing user initiated assessment](media\bvtk-user-initiated-assessment.gif "Animation of user initiating an assessment on an existing app")
 
-#### Administrator initiated value assessment
+#### Administrator-initiated, value assessment
 
-The following steps apply to the **administrator initiated** value assessment scenario:
+The following steps apply to the administrator-initiated, value assessment scenario.
 
-1. The administrator identifies an app (either through CoE Starter Kit dashboard, PPAC dashboard, or custom solution):
+1. The administrator identifies an app either through CoE Starter Kit dashboard, Power Platform admin center dashboard, or a custom solution.
 
-![Screenshot of admin dashboard](media\admin-dashboard-PPAC.png "Screenshot of Power Platform Admin Center screen")
+    ![Screenshot of admin dashboard](media\admin-dashboard-PPAC.png "Screenshot of Power Platform Admin Center screen")
 
-1. The administrator copies the ID of the app, and ID of the environment.
-1. The administrator runs the cloud flow titled 'New-AdminInitiatedAssessment', pasting the ID for the app and environment.
+1. The administrator copies the ID of the app and ID of the environment.
+1. The administrator runs the cloud flow titled, **New-AdminInitiatedAssessment**, pasting the ID for the app and environment.
 
-![Screenshot of runtime parameters](media\bv-admin-initiated-runtime-params.png "Screenshot of runtime params")
+    ![Screenshot of runtime parameters](media\bv-admin-initiated-runtime-params.png "Screenshot of runtime params")
 
-1. The flow runs, and sends an adaptive card to the flow owner, inviting them to complete an assessment:
+1. The flow runs and sends an adaptive card to the flow owner, inviting them to complete an assessment.
 
-![Screenshot of admin center](media\Admin-Initiated-Assessment.png "Screenshot of Power Platform Admin Center screen")
+    ![Screenshot of admin center](media\Admin-Initiated-Assessment.png "Screenshot of Power Platform Admin Center screen")
 
-1. The user clicks the button to start the assessment, and launches the Business value capture app (with context).
+1. The user selects the button to start the assessment and launches the **Business value capture** app with context.
 
 > [!NOTE]
->Administrator initiated assessments are initiated by populating the New-AdminInitiatedAssessment cloud flow.  This flow requires that the **BusinessValueAppUrl** environment variable is populated with the launch Url of the Business Value Capture canvas app.  You can retrieve this Url by selecting the elipsis '...' > Details and copying the 'Web link' Url
+>Administrator-initiated assessments are initiated by populating the **New-AdminInitiatedAssessment** cloud flow. This flow requires that the **BusinessValueAppUrl** environment variable is populated with the launch URL of the **Business Value Capture** canvas app.  You can retrieve this URL by selecting the elipsis (**...**) > **Details** and copying the **Web link** URL.
 
-#### Administrator initiated personal productivity assessment
+#### Administrator-initiated, personal productivity assessment
 
-The following steps apply to the **administrator initiated personal productivity assessment**
+The following steps apply to the administrator-initiated, personal productivity assessment.
 
 1. The administrator identifies an environment that they want to assess.
 1. The administrator copies the ID of the environment.
-1. The administrator runs the cloud flow 'New-PersonalProductivityAssessment', pasting the ID for the environment into the variable 'Environment ID'.
-1. The flow runs and sends an adaptive card to the owner of each flow in the environment containing two questions designed to establish value (in time saved), and criticality of flow.
+1. The administrator runs the cloud flow **New-PersonalProductivityAssessment**, pasting the ID for the environment into the variable **Environment ID**.
+1. The flow runs and sends an adaptive card to the owner of each flow in the environment, containing two questions designed to establish value (in time saved) and criticality of flow.
 
 ![Personal productivity assessment](media\personal-productivity-helper.png "Screenshot of personal productivity assessment")
 
 #### Personal productivity assessment data schema
 
-The data collected from user responses is described in the table below:
+The data collected from user responses is described in the following table.
 
 | Table                              | Column                     | Purpose                                                                                                                       |
 |------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Personal productivity collected data    | Asset type                   | Describes the asset type assessed, currently only cloud flows are assessed.                                                           |
-| Personal productivity collected data    | Criticality                  | Integer defining criticality of cloud flow to user, team, department or organization.                                         |
-| Personal productivity collected data    | Duration                | Describes the duration of saving (hours/ minutes).  |
+| Personal productivity collected data    | Asset type                   | Describes the asset type assessed. Currently, only cloud flows are assessed.                                                           |
+| Personal productivity collected data    | Criticality                  | Integer defining criticality of cloud flow to the user, team, department, or organization.                                         |
+| Personal productivity collected data    | Duration                | Describes the duration of saving hours or minutes.  |
 | Personal productivity collected data    | Value                  | Describes the amount of time saved.                                  |
-| Personal productivity collected data    | Name                   | The Identifier of the asset assessed.          |
+| Personal productivity collected data    | Name                   | The identifier of the asset assessed.          |
 
 #### Value assessment data schema
 
-The data collected during value assessment is described in the table below:
+The data collected during value assessment is described in the following table.
 
 | Table                              | Column                     | Purpose                                                                                                                       |
 |------------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | Value assessment collected data    | Accepted                   | Indicates whether the analysis has been agreed upon by the user.                                                              |
-| Value assessment collected data    | Action category            | Describes the type of strategic objective (e.g., improvement, reduction).                                                     |
+| Value assessment collected data    | Action category            | Describes the type of strategic objective. For example, _improvement_ or _reduction_).                                                     |
 | Value assessment collected data    | Action verb                | Specifies the action associated with the strategic objective.                                                                 |
 | Value assessment collected data    | Actual impact measure      | Quantifies the impact of the app on a scale of 1 to 5 during value analysis.                                                   |
 | Value assessment collected data    | After implementation value| Reflects the value observed after the implementation of the app.                                                               |
@@ -307,7 +307,7 @@ The data collected during value assessment is described in the table below:
 
 These datasets can be used to develop dashboards providing valuable insights into the time saved by personal productivity flows.
 
-## Assessing the potential value of an idea or proposal
+## Assess the potential value of an idea or proposal
 
 The toolkit employs specific prompts within Power Automate to assess the potential impact of an idea or proposal, along with conducting checks for similar apps and ideas to reduce duplication of effort.
 
@@ -315,7 +315,7 @@ The toolkit employs specific prompts within Power Automate to assess the potenti
 
 Below is an overview of the prompts used in this process:
 
-| Prompt Name                  | Description                                                                                                                      | Where Used                     |
+| Prompt name                  | Description                                                                                                                      | Where used                     |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | Assess a proposal | This prompt takes the idea created by the app user and analyzes for alignment and impact against each strategic objective | Cloud flow: AI-ValueAssessmentProposal|
 | Proposal comparison | This prompt checks for similarities with other stories and proposal over two scopes: similarity in audience and similarity of features and functionality. | Cloud flow: AI-ProposalComparison |
