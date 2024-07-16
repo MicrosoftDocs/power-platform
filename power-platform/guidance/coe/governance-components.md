@@ -326,7 +326,7 @@ This flow runs weekly and deletes environments that:
 - Have been created more than **90 days** ago and have no apps or flows in the environment.
 
 > [!NOTE]
-> Currently, bots created via Power Virtual Agents in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
+> Currently, bots created via Microsoft Copilot Studio in Microsoft Teams environments aren't discoverable in the CoE Starter Kit.
 
 Environments are deleted from the tenant and marked as deleted in the Environment table of the CoE Starter Kit. You can view deleted environments in the [Power Platform Admin View](core-components.md).
 

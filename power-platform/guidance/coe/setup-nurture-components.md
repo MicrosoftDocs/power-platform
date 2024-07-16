@@ -325,7 +325,7 @@ For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app
 
 ## Set up product newsletter
 
-Turn on the **Admin | Newsletter with Product Updates** flow to receive a weekly email from the Power Apps, Power Automate, Power BI and Power Virtual Agents blog posts. This email is sent to the admin only.
+Turn on the **Admin \| Newsletter with Product Updates** flow to receive a weekly email with updates from the Power Apps, Power Automate, Power BI and Microsoft Copilot Studio blog posts. This email is sent to the admin only.
 
 ## All environment variables
 
