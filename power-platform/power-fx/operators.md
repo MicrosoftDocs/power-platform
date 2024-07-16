@@ -85,7 +85,7 @@ A few controls and functions apply formulas to individual records of a table.  T
 
 For example, in the following **Gallery** control, the **Items** property is set to the **Employees** data source (such as the **Employees** entity included with the [Northwind Traders sample](/powerapps/maker/canvas-apps/northwind-orders-canvas-overview)):
 
-```powerapps-dot
+```power-fx
 Employees
 ``` 
 
@@ -94,7 +94,7 @@ Employees
 
 The first item in the gallery is a template that is replicated for each employee.  In the template, the formula for the picture uses **ThisItem** to refer to the current item:
 
-```powerapps-dot
+```power-fx
 ThisItem.Picture
 ``` 
 
@@ -103,7 +103,7 @@ ThisItem.Picture
 
 Likewise, the formula for the name also uses **ThisItem**:
 
-```powerapps-dot
+```power-fx
 ThisItem.'First Name' & " " & ThisItem.'Last Name'
 ``` 
 
@@ -114,7 +114,7 @@ ThisItem.'First Name' & " " & ThisItem.'Last Name'
 
 **ThisRecord** is used in functions that have a [record scope](/powerapps/maker/canvas-apps/working-with-tables).  For example, we can use the **Filter** function with our gallery's **Items** property to only show first names that being with *M*:
 
-```powerapps-dot
+```power-fx
 Filter( Employees, StartsWith( ThisRecord.Employee.'First Name', "M" ) )
 ``` 
 
@@ -123,7 +123,7 @@ Filter( Employees, StartsWith( ThisRecord.Employee.'First Name', "M" ) )
 
 **ThisRecord** is optional and implied by using the fields directly, for example, in this case, we could have written:
 
-```powerapps-dot
+```power-fx
 Filter( Employees, StartsWith( 'First Name', "M" ) )
 ```  
 
@@ -131,7 +131,7 @@ Although optional, using **ThisRecord** can make formulas easier to understand a
 
 Use **ThisRecord** to reference the whole record with **Patch**, **Collect**, and other record scope functions.  For example, the following formula sets the status for all inactive employees to active:
 
-```powerapps-dot
+```power-fx
 With( { InactiveEmployees: Filter( Employees, Status = 'Status (Employees)'.Inactive ) },
       ForAll( InactiveEmployees, 
               Patch( Employees, ThisRecord, { Status: 'Status (Employees)'.Active } ) ) )
@@ -143,7 +143,7 @@ Use the **As** operator to name a record in a gallery or record scope function, 
 
 For example, you can modify the **Items** property of our gallery to use **As** to identify that we are working with an Employee:
 
-```powerapps-dot
+```power-fx
 Employees As Employee
 ```   
 
@@ -152,13 +152,13 @@ Employees As Employee
 
 The formulas for the picture and name are adjusted to use this name for the current record:
 
-```powerapps-dot
+```power-fx
 Employee.Picture
 ```
 > [!div class="mx-imgBorder"]  
 > ![Picture of an employee using the Employee name set with the As operator.](media/operators/as-gallery-as-picture.png)
 
-```powerapps-dot
+```power-fx
 Employee.'First Name' & " " & Employee.'Last Name'
 ```
 > [!div class="mx-imgBorder"]  
@@ -166,7 +166,7 @@ Employee.'First Name' & " " & Employee.'Last Name'
 
 **As** can also be used with record scope functions to replace the default name **ThisRecord**.  We can apply this to our previous example to clarify the record we are working with:
 
-```powerapps-dot
+```power-fx
 With( { InactiveEmployees: Filter( Employees, Status = 'Status (Employees)'.Inactive ) },
       ForAll( InactiveEmployees As Employee, 
               Patch( Employees, Employee, { Status: 'Status (Employees)'.Active } ) ) )
@@ -176,7 +176,7 @@ When nesting galleries and record scope functions, **ThisItem** and **ThisRecord
 
 For example, this formula produces a chessboard pattern as a text string by nesting two **ForAll** functions:
 
-```powerapps-dot
+```power-fx
 Concat( 
     ForAll( Sequence(8) As Rank,
         Concat( 
@@ -204,7 +204,7 @@ Let's unpack what is happening here:
 
 A similar example is possible with nested **Gallery** controls instead of **ForAll** functions. Let's start with the vertical gallery for the **Rank**.  This gallery control will have an **Items** formula of:  
 
-```powerapps-dot
+```power-fx
 Sequence(8) as Rank
 ```
 
@@ -213,7 +213,7 @@ Sequence(8) as Rank
 
 Within this gallery, we'll place a horizontal gallery for the **File**, that will be replicated for each **Rank**, with an **Items** property of:
 
-```powerapps-dot
+```power-fx
 Sequence(8) as File
 ```
 
@@ -222,7 +222,7 @@ Sequence(8) as File
 
 And finally, within this gallery, we'll add a **Label** control that will be replicated for each **File** and each **Rank**.   We'll size it to fill the entire space and use the **Fill** property to provide the color with this formula:
 
-```powerapps-dot
+```power-fx
 If( Mod( Rank.Value + File.Value, 2 ) = 1, Green, Beige )
 ```
 
