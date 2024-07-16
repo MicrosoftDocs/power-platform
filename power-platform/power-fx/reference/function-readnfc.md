@@ -77,7 +77,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 
 1. Set the **OnSelect** property of the button control to this formula that will add an item to our collection:  
 
-    ```powerapps-dot
+    ```power-fx
     With(ReadNFC(),
         Set(id, Coalesce(Identifier, "No ID"));
         ForAll(NDEFRecords, Collect(tagRecords, {ID: id, Value: Coalesce(Text, URI)})))

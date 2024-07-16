@@ -76,7 +76,7 @@ When Visual Studio runs a web app and a tunnel is active, the web browser opens 
 1. Change the button **Text** to *Load Data*.
 1. Enter the following formula in the button's **OnSelect** property:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect(weatherCollection, WeatherSample_Connector.GetWeatherForecast())
    ```
 

@@ -5,7 +5,7 @@ keywords: "pac cli"
 ms.subservice: developer
 author: devkeydet
 ms.author: marcsc
-ms.date: 5/13/2024
+ms.date: 7/8/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -260,12 +260,6 @@ Output directory
 #### `--packagetype` `-p`
 
 Specifies the extraction type for the solution. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is: 'Both'.
-
-#### `--processCanvasApps` `-pca`
-
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
-
-This parameter requires no value. It's a switch.
 
 #### `--targetversion` `-v`
 
@@ -610,12 +604,6 @@ The full path to a mapping xml file from which to read component folders to pack
 
 When unpacking or extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is 'Unmanaged'.
 
-#### `--processCanvasApps` `-pca`
-
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
-
-This parameter requires no value. It's a switch.
-
 #### `--singleComponent` `-sc`
 
 Only perform action on a single component type [WebResource|Plugin|Workflow|None]. The default value is 'None'.
@@ -718,12 +706,6 @@ Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 When unpacking or extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is: 'Both'.
 
-#### `--processCanvasApps` `-pca`
-
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
-
-This parameter requires no value. It's a switch.
-
 #### `--solution-folder` `-f`
 
 Path to the local, unpacked solution folder: either the root of the 'Other/Solution.xml' file or a folder with a .cdsproj file.
@@ -795,12 +777,6 @@ The full path to a mapping xml file from which to read component folders to pack
 #### `--packagetype` `-p`
 
 When unpacking or extracting, use to specify dual Managed and Unmanaged operation. When packing, use to specify Managed or Unmanaged from a previous unpack 'Both'. Can be: 'Unmanaged', 'Managed' or 'Both'. The default value is 'Unmanaged'.
-
-#### `--processCanvasApps` `-pca`
-
-(Preview) Pack/unpack any Canvas apps (.msapp) while processing the solution. The default value is 'false'.
-
-This parameter requires no value. It's a switch.
 
 #### `--singleComponent` `-sc`
 
