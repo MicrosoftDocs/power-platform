@@ -230,4 +230,8 @@ In the Power Automate portal, select **Settings** > **View my licenses**:
 > - The capacity license(s) (and capacity add-ons) display in the section _Environment capacities_.
 > - The user entitlement (in context of environment capacities) display in the _Capabilities_ section with a green check mark.
 
+## Seeded licenses
+Learn more about power automate capabilities included in [Seeded licenses](deep-dive-on-specific-license.md#power-automate-seeded-licenses) 
 
+## Legacy licenses
+Learn more about power automate capabilities included in [Legacy licenses](deep-dive-on-specific-license.md#power-automate-legacy-licenses) 
