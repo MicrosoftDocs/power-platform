@@ -116,7 +116,7 @@ This setting enables all SAS calls within Power Platform to be logged into Purvi
 | response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                |
 | ip_binding_mode                              | IP binding mode set by a tenant admin, if turned on. Applies to SAS creation events only.                        |
 | admin_provided_ip_ranges                     | IP ranges set by a tenant admin, if any. Applies to SAS creation events only.                                  |
-| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS creation and usage events.                     |
+| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS creation and usage events.                              |
 | analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
 | enduser.ip_address                           | The public IP of the caller.                                                                                   |
 | analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
@@ -153,7 +153,7 @@ Use the following steps to diagnose issues or better understand SAS usage patter
 1. Pick the date and time range in UTC for when you're trying to look for logs. For example, when a 403 Forbidden error with an **unauthorized_caller** error code was returned.
 1. From the **Activities - friendly names** dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
 1. Specify a keyword in **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
-    - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error from the proxy service. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
+    - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error returned to the user. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
     - The value of **x-ms-sas-operation-id** response header. This filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the **powerplatform.analytics.resource.sas.operation_id** field.
     - Full or partial SAS URI, minus the signature. This might return many SAS URI creations and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
     - Caller IP address. Returns all creation and usage events for that IP.
@@ -171,10 +171,10 @@ Use the following steps to diagnose issues or better understand SAS usage patter
 > Log ingestion into Purview can be delayed for up to an hour or more, so keep that in mind when looking for most recent events.
 
 ### Troubleshooting 403 Forbidden/unauthorized_caller error
-You can use creation and usage logs to determine why a call to the proxy endpoint would result in a 403 Forbidden error with an **unauthorized_caller** error code.
+You can use creation and usage logs to determine why a call would result in a 403 Forbidden error with an **unauthorized_caller** error code.
 
 1. Find logs in Purview as described in the previous section. Consider using either **x-ms-service-request-id** or **x-ms-sas-operation-id** from the response headers as the search keyword.
-1. Open the usage event, **Used SAS URI**, and look for the **powerplatform.analytics.resource.sas.computed_ip_filters** field under **PropertyCollection**. This IP range is what the proxy service uses to determine whether the request is authorized to proceed or not.
+1. Open the usage event, **Used SAS URI**, and look for the **powerplatform.analytics.resource.sas.computed_ip_filters** field under **PropertyCollection**. This IP range is what the SAS call uses to determine whether the request is authorized to proceed or not.
 1. Compare this value against the **IP Address** field of the log, which should be sufficient for determining why the request failed.
 1. If you think the value of **powerplatform.analytics.resource.sas.computed_ip_filters** is incorrect, continue with the next steps.
 1. Open the creation event, **Created SAS URI**, by searching using the **x-ms-sas-operation-id** response header value (or the value of **powerplatform.analytics.resource.sas.operation_id** field from the creation log).
@@ -185,7 +185,7 @@ You can use creation and usage logs to determine why a call to the proxy endpoin
 This should give tenant admins enough information to correct any misconfiguration against the environment for IP binding settings.
 
 > [!WARNING]
-> Changes made to environment settings for SAS IP binding can take at least 30 minutes to take effect. It might be more if partner teams have their own cache on top of the proxy service.
+> Changes made to environment settings for SAS IP binding can take at least 30 minutes to take effect. It could be more if partner teams have their own cache.
 
 ### Related articles
 
