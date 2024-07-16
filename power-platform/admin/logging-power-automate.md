@@ -3,7 +3,7 @@ title: View Power Automate audit logs
 description: Learn how to view Power Automate logs in the Microsoft Purview compliance portal.
 author: msftman
 ms.topic: conceptual
-ms.date: 12/15/2022
+ms.date: 07/16/2024
 ms.subservice: admin
 ms.author: kenseongtan
 ms.reviewer: angieandrews
@@ -50,8 +50,8 @@ All logging is done at the SDK layer, so a single action can trigger multiple lo
 |Trials | Renewed a paid trial | When a user renews a paid trial.|
 |Hosted RPA | Microsoft Entra ID joined | When a hosted RPA bot is joined to the customer's tenant Microsoft Entra ID.|
 
-   > [!NOTE]
-> For events under the Hosted RPA category, the events currently appear under the RecordTypes 'HostedRPA' and 'PowerPlatformAdministratorActivity'. From September 30, 2024 onwards, the RecordTypes 'HostedRPA' will be discontinued. Please use the RecordTypes 'PowerPlatformAdministratorActivity' to view Hosted RPA events.
+> [!NOTE]
+> For events under the Hosted RPA category, the events appear under the record type of *HostedRPA* and *PowerPlatformAdministratorActivity*. Starting on September 30th of 2024, the record type *HostedRPA* will be discontinued. Please use the RecordTypes *PowerPlatformAdministratorActivity* to view Hosted RPA events.
 
 ## Get details on base schema for logging
 
