@@ -48,7 +48,7 @@ The **AsType** function treats a record reference as a specific table type, some
 
 Use these functions together to first test the table type of a record and then treat it as a record of that type so that the fields are available:
 
-```powerapps-dot
+```power-fx
 If( IsType( First( Accounts ).Owner, Users ),
     AsType( First( Accounts ).Owner, Users ).'Full Name',
     AsType( First( Accounts ).Owner, Teams ).'Team Name'
@@ -57,19 +57,19 @@ If( IsType( First( Accounts ).Owner, Users ),
 
 You need these functions only if you're accessing the fields of a record reference. For example, you can use record references in the [**Filter**](function-filter-lookup.md) function without **IsType** or **AsType**:
 
-```powerapps-dot
+```power-fx
 Filter( Accounts, Owner = First( Users ) )
 ```
 
 Similarly, you can use record references with the [**Patch**](function-patch.md) function:
 
-```powerapps-dot
+```power-fx
 Patch( Accounts, First( Accounts ), { Owner: First( Teams ) } )
 ```
 
 If used in a record context, such as within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) or [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, you might need to use the [global disambiguation operator](operators.md#disambiguation-operator) to reference the table type. For example, this formula would be effective for a gallery that's displaying a list of contacts where **Company Name** is a **Customer** lookup:
 
-```powerapps-dot
+```power-fx
 If( IsType( ThisItem.'Company Name', Accounts ),
     AsType( ThisItem.'Company Name', Accounts ).'Account Name',
     AsType( ThisItem.'Company Name', Contacts ).'Full Name'
@@ -128,7 +128,7 @@ If the record reference is _blank_, **IsType** returns FALSE, and **AsType** ret
 
 1. Set the **Text** property of **Subtitle1** to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    If( IsBlank( ThisItem.'Company Name' ), "--",
        IsType( ThisItem.'Company Name', Accounts ),
            "Account: " & AsType( ThisItem.'Company Name', Accounts ).'Account Name',

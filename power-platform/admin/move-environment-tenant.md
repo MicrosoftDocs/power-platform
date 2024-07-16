@@ -41,7 +41,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Power Virtual Agents</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li><li>Omnichannel for Customer Service</li> </ul> |
+| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Microsoft Copilot Studio</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li><li>Omnichannel for Customer Service</li> </ul> |
 
 <sup>*</sup>There may be potential data loss during migration and additional steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-additional-steps-either-from-you-or-support)
 
@@ -78,7 +78,7 @@ Once a migration request is submitted, the support team is engaged to review the
 
 ### Prerequisites:
 
-If you don't have a paid subscription of Dynamics 365, Power Apps, or Power Virtual Agents in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial subscription to paid subscription, if not already done.
+If you don't have a paid subscription of Dynamics 365, Power Apps, or Microsoft Copilot Studio in the destination tenant, you'll need to create one. You might need to purchase a new subscription, or convert a trial subscription to paid subscription, if not already done.
 
 The destination tenant needs an equal or higher number of active user licenses and equal or greater storage as the source tenant.
 
@@ -111,7 +111,7 @@ You'll also need to provide the following information:
 ### Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support:
  
 - Power Apps or Power Automate
-- Power Virtual Agents
+- Microsoft Copilot Studio
 - Dynamics 365 Customer Voice
   - Tenant to tenant migration is not supported for [Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant). Projects and surveys must be recreated after the migration.
 - Power Apps Portals
@@ -155,7 +155,7 @@ For administrative access users:
       Note: If the destination user isn't assigned any license, the migration will fail.
    3. Save the CSV file that has both full access users and administrative access users mapped.
 
-### Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing before and after the migration: 
+### Do the following steps for Power Apps, Power Automate, Microsoft Copilot Studio, Power Apps Portals, and Marketing before and after the migration: 
 
 #### For Power Apps and Power Automate: 
 
@@ -193,9 +193,9 @@ After the migration:
 6. Complete all of the import option selections, and then select **Import**.
 7. Repeat these steps until all apps have been imported. 
 
-#### For Power Virtual Agents: 
+#### For Microsoft Copilot Studio 
 
--	Any Power Virtual Agents chatbots must be manually exported. 
+-	Any Microsoft Copilot Studio chatbots must be manually exported. 
 -	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
 
 Before the migration: 

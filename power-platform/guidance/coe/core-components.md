@@ -131,7 +131,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Role name (Owner, CanEdit, CanView)
   - Friendly role name (Owner, Co-Owner, Viewer)
 
-- **PVA** represents a bot in Power Virtual Agents. The following information is available for each bot:
+- **Microsoft Copilot Studio** represents a bot in Microsoft Copilot Studio. The following information is available for each bot:
   - Display name
   - ID
   - Created on
@@ -145,7 +145,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Environment
   - Is bot orphaned (yes/no)
 
-- **PVA Component** represents a Power Virtual Agents component, such as a topic. The following information is available for each bot component:
+- **Microsoft Copilot Studio Component** represents a Microsoft Copilot Studio component, such as a topic. The following information is available for each bot component:
   - Name
   - ID
   - Component created on
@@ -157,7 +157,7 @@ The [sync flows](#flows) of the CoE Starter Kit sync your tenant resources to th
   - Type (topic, table)
   - Uses flow (yes/no)
 
-- **PVA Component Flow Lookup** represents a flow triggered as part of Power Virtual Agents. The following information is available for each bot component flow:
+- **Microsoft Copilot Studio Component Flow Lookup** represents a flow triggered as part of Microsoft Copilot Studio. The following information is available for each bot component flow:
   - Name
   - ID
   - Created on/by
@@ -290,8 +290,8 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | Admin \| Sync Template v3 (Portals) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves Power Pages information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, only turn this flow if you're using portals in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (Solutions) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves solution information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional. Only turn this flow on if a tenant-level overview of solutions is important. |
 | Admin \| Sync Template v3 (AI Models) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves Power Platform AI model information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional. Only turn this flow on if you're using AI Builder models in your tenant and are interested in getting a tenant-wide overview. |
-| Admin \| Sync Template v3 (PVA) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves Power Virtual Agents (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional. Only turn this flow on if a tenant-level overview of chatbots is important. |
-| Admin \| Sync Template v3 (PVA Usage) | Scheduled | Daily | This flow retrieves Power Virtual Agents (bot) usage information on a daily basis. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview. |
+| Admin \| Sync Template v3 (Microsoft Copilot Studio) | Automated | triggered by Admin \| Sync Template v3 (Driver) | This flow retrieves Microsoft Copilot Studio (bot) information. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional. Only turn this flow on if a tenant-level overview of chatbots is important. |
+| Admin \| Sync Template v3 (Microsoft Copilot Studio Usage) | Scheduled | Daily | This flow retrieves Microsoft Copilot Studio (bot) usage information on a daily basis. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Microsoft Copilot Studio in your tenant and are interested in getting a tenant-wide overview. |
 | Admin \| Sync Template v3 (Sync Flow Errors) | Scheduled | Daily | This flow sends an email to the admin about environments that failed to sync (with a link to the flow instance). |
 | Admin \| Sync Template v3 (Call Updates) | Scheduled | Daily | Used to trigger these three flows to run on a schedule. Needed so that those flows can be of type button and be used to be run on demand or on a schedule.|
 | Admin \| Excuse Support Envts from Governance Flows | Automated | When an environment record is created in the Environments table | This flow checks if [support environments](/power-platform/admin/support-environment#what-are-support-environments) exist, and excludes those environments from the [inactivity](governance-components.md#inactivity-processes) and [compliance](governance-components.md#compliance-processes) governance processes. |
@@ -300,12 +300,12 @@ Learn more: [Security roles and privileges](/power-platform/admin/security-roles
 | CLEANUP - Admin \| Sync Template v3 (Delete Bad Data) | Scheduled | Daily | This flow runs daily, and looks for data in the inventory that is not complete, for example flows without an environment, and removes this data. |
 | CLEANUP - Admin \| Sync Template v3 (Orphaned Makers) | Scheduled | Weekly | This flow runs weekly, and checks if any makers have left the organization - if maker information can't be found in Microsoft Entra/Office 365 Users, any resources created by the maker (apps, cloud and desktop flows, environments, chatbots) are marked as orphaned. |
 | CLEANUP - Admin \| Sync Template v3 (Power Apps User Shared With) | Scheduled | Every two weeks | This long running flow runs every other week, and gets who the app is shared with by using [Get App Role Assignments as Admin](/connectors/powerappsforadmins/#get-app-role-assignments-as-admin). |
-| CLEANUP - Admin \| Sync Template v3 (PVA Usage)  | Scheduled | Monthly | This flow rolls up Power Virtual Agents (bot) information on a monthly basis. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Power Virtual Agents in your tenant and are interested in getting a tenant-wide overview. |
+| CLEANUP - Admin \| Sync Template v3 (PMicrosoft Copilot StudioVA Usage)  | Scheduled | Monthly | This flow rolls up Microsoft Copilot Studio (bot) information on a monthly basis. This information is retrieved from underlying Dataverse tables and requires the user running the flow to have system administrator privileges in the environment. Turning on this flow is optional, and we recommend that you do so only if you're using Microsoft Copilot Studio in your tenant and are interested in getting a tenant-wide overview. |
 | CLEANUP HELPER - Check Deleted (Business Process Flows) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for business process flows  |
 | CLEANUP HELPER - Check Deleted (Canvas Apps) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for canvas apps  |
 | CLEANUP HELPER - Check Deleted (Cloud Flows) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for cloud flows  |
 | CLEANUP HELPER - Check Deleted (Model Driven Apps) | Child flow | called from Check Deleted | Does the check deleted work for a given environment for model driven apps  |
-| CLEANUP HELPER - Check Deleted (PVA) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for chatbots  |
+| CLEANUP HELPER - Check Deleted (Microsoft Copilot Studio) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for chatbots  |
 | CLEANUP HELPER - Check Deleted (Solutions) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for solutions  |
 | CLEANUP HELPER - Check Deleted (Custom Connectors) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for custom connectors  |
 | CLEANUP HELPER - Check Deleted (Ai Models) | Child Flow | called from Check Deleted | Does the check deleted work for a given environment for Ai Models  |
@@ -344,7 +344,7 @@ Use this app to:
 - View Microsoft 365 Message Center news related to Microsoft Power Platform.
 - Download the latest CoE Starter Kit version and raise support tickets with the team.
 - Launch learning paths to learn more about Microsoft Power Platform.
-- Launch the latest posts of the Power Apps, Power Automate, Power BI and Power Virtual Agent blogs.
+- Launch the latest posts of the Power Apps, Power Automate, Power BI and Microsoft Copilot Studio blogs.
 - Configure email subject and body text for emails send through the CoE Starter Kit.
 
 **Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
