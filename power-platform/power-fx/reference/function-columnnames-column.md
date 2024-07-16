@@ -45,17 +45,17 @@ Given the following JSON string in a variable named `JsonString`
 ```
 
 1. The following formula returns a single-column table with a `Value` column containing the following values: "name", "population":
-    ```powerapps-dot
+    ```power-fx
     ColumnNames( ParseJSON( JsonString ) )
     ```
 2. The following formula returns the number `737000`:
-    ```powerapps-dot
+    ```power-fx
     Value( Column( ParseJSON( JsonString ), "population" ) )
     ```
     2.1. Notice that this is similar to the `.` operator for [untyped records](../untyped-object.md#record-types), but the column name doesn't have to be known beforehand.
 
 3. The following formula returns the text value `"name: Seattle, population: 737000"`:
-    ```powerapps-dot
+    ```power-fx
     With(
         { untyped: ParseJSON( JsonString ) },
         Concat(
@@ -71,11 +71,11 @@ Given the following JSON string in a variable named `JsonString`
 ```
 
 1. Attempting to access nonexisting fields returns **Blank()**. The following formula returns `true`:
-    ```powerapps-dot
+    ```power-fx
     IsBlank( Column( ParseJSON( JsonString ), "does not exist" ) )
     ```
 2. JSON `null` values are considered **Blank()**. The following formula returns `true`:
-    ```powerapps-dot
+    ```power-fx
     IsBlank( Column( ParseJSON( JsonString ), "empty" ) )
     ```
 

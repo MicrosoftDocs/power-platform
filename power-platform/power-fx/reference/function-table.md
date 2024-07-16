@@ -46,21 +46,21 @@ You can also create a single-column table with the **[ value1, value2, ... ]** s
 ## Examples
 
 - Set the **[Items](/power-apps/maker/canvas-apps/controls/properties-core)** property of a listbox to this formula:
-  ```powerapps-dot
+  ```power-fx
   Table( {Color: "red"}, {Color: "green"}, {Color: "blue" } )
   ```
 
   The listbox shows each color as an option.
 
 - Add a text gallery, and set its **[Items](/power-apps/maker/canvas-apps/controls/properties-core)** property to this function:<br>
-  ```powerapps-dot
+  ```power-fx
   Table( {Item: "Violin123", Location:"France", Owner:"Fabrikam"}, {Item:"Violin456", Location:"Chile"} )
   ```
 
   The gallery shows two records, both of which contain the name and location of an item. Only one record contains the name of the owner.
 
 - This formula combines standard sizes with extended sizes into a single table
-  ```powerapps-dot
+  ```power-fx
   Table( { Value: "XS" }, [ "S", "M", "L" ], { Value: "XL" } )
   ```
 

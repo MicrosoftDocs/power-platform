@@ -12,7 +12,7 @@ metadata:
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/02/2024 #Required; mm/dd/yyyy format.
+  ms.date: 07/10/2024 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -48,7 +48,7 @@ productDirectory:
     - url: /training/powerplatform/power-apps
       text: Power Apps training
     - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
-      text: Power Apps Videos
+      text: Power Apps videos
   - title: Power Automate
     imageSrc: "media/hub-page/power-automate.svg"
     summary: Learn how to create flows quickly using low-code platform to automate business tasks and workflows.
@@ -78,7 +78,15 @@ productDirectory:
     - url: /training/paths/power-pages-get-started
       text: Power Pages training
     - url: /power-pages/training-videos
-      text: Power Pages videos    
+      text: Power Pages videos   
+  - title: Microsoft Copilot Studio
+    imageSrc: "media/hub-page/copilot-studio.svg"
+    summary: Learn how to extend or create your own AI-driven copilot experiences.
+    links:
+    - url: /microsoft-copilot-studio
+      text: Copilot Studio documentation
+    - url: /training/paths/work-power-virtual-agents
+      text: Copilot Studio training  
     
 tools:
   title: Power Platform capabilities 
@@ -129,11 +137,7 @@ additionalContent:
           summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"
           url: ./well-architected/index.yml        
     - title: Related products and capabilities
-      items:        
-        # Card
-        - title: Microsoft Copilot Studio
-          summary: "Build AI-driven copilots and integrate into your websites"
-          url: /microsoft-copilot-studio
+      items:      
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"

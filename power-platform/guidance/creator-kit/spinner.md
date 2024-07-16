@@ -57,7 +57,7 @@ Make the spinner control visible when a process begins, then hide it when the pr
 
 Use a variable to control the visibility of the spinner, and update the values before and after the code block of the process.
 
-```powerapps-dot
+```power-fx
 UpdateContext({ var_showLoader: true });
 
 /* Some code ... */
