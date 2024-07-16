@@ -41,7 +41,8 @@ Your data is analyzed to create a blueprint that provides valuable insights, cha
 You can upload a PDF (.pdf), CSV (.csv), or Excel (.xls) file. The following limitations apply to file uploads:
 
 - The maximum supported file size is 10 mb.
-- Encrypted or password-protected files aren’t supported.
+- The maximum number of uploaded files is 5, and maximum total size for all is 30 mb.
+- Encrypted, password-protected, or copyright-managed files aren’t supported.
 - CSV:
   - Data within the file needs to be separated by commas. 
 - Excel:
