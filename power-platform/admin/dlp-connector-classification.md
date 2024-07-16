@@ -137,6 +137,6 @@ Any new services that are added to apps will be placed in the designated default
 ## Related information
 
 - [Power Platform DLP policies](/power-platform/admin/wp-data-loss-prevention)
-- [Power Automate DLP policies](/power-automate/prevent-data-loss)
+- [DLP policies for Power Automate](/power-automate/prevent-data-loss)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
