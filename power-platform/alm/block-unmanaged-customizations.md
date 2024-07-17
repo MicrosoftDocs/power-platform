@@ -5,7 +5,7 @@ author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 05/02/2024
+ms.date: 07/15/2024
 ms.reviewer: "matp"
 ms.topic: "article"
 search.audienceType: 
@@ -57,6 +57,7 @@ If you must use one of the below apps or features in an environment where block 
 |Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
 | Omnichannel  | Install or upgrade don't work.      |
 |Service Level Agreement (SLA)  | Activation, deactivation, and editing of service level agreement doesn't work.|
+|Attachments | File attachments to appointments or emails using the `activitymimeattachment` table fail.
 
 ## FAQ for block unmanaged customizations
 
