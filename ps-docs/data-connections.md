@@ -57,7 +57,7 @@ You can upload a PDF (.pdf), CSV (.csv), or Excel (.xls) file. The following lim
 
 ## Connecting to a data source
 
-Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dataverse**, and **Dynamics 365 Sales** data sources, with more to come in the future. You can establish one connection in a workspace. You can upload files for more context in addition to connecting to a data source.
+Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dataverse** and **Dynamics 365 Sales** data sources, with more to come in the future. You can establish one connection in a workspace. You can upload files for more context in addition to connecting to a data source.
 
 > [!IMPORTANT]
 > You need to have an account with the data source to establish a connection with it.
