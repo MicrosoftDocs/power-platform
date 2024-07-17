@@ -141,7 +141,7 @@ The PowerShell scripts have been written to catch any failures. However, if you 
 
 #### Can't connect to SharePoint Online
 
-If you can't connect to SharePoint Online, this could be caused by PnP PowerShell not being registered.  Your global administrator will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
+If you can't connect to SharePoint Online, this could be caused by PnP PowerShell not being registered.  You will need to register by following the steps [in this document](https://pnp.github.io/powershell/articles/authentication.html).
 
 #### Can't run the script
 
