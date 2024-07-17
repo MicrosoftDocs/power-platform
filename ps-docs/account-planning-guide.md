@@ -28,7 +28,7 @@ Use the account planning guide in Project "Sophia" to help generate account plan
 1. From the **Home** screen, select **Guides** > **Account planning**.
 1. To get relevant results, select **Domains** located at the top right and choose a specific domain.
 1. Select **Add data** and then select one of the following options:
-   - Connect to data from **Dataverse**, **Dynamics 365 Customer Service**, or **Dynamics 365 Sales**
+   - Connect to data from **Dataverse**, or **Dynamics 365 Sales**
    - **Upload files**
     > [!IMPORTANT]
     > You need to have an account with the data source to establish a connection to it. For more information, go to [Connect to your data](data-connections.md).
