@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 07/10/2024
+ms.date: 07/17/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
