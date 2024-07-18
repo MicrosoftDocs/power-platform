@@ -1,6 +1,6 @@
 ---
-title: Set up Managed Identity for Power Platform
-description: Learn how to set up Power Platform Managed Identity.
+title: Set up managed identity for Power Platform
+description: Learn how to set up Power Platform managed identity.
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,58 +12,68 @@ search.audienceType:
   - admin
 ---
 
-# Set up Managed Identity for Power Platform
-Power Platform Managed Identity allows Dataverse plug-ins to connect with Azure resources supporting Managed Identity without the need of credentials. This article helps you set up Managed Identity in your Power Platform environments.
+# Set up managed identity for Power Platform
+Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources supporting managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
+
 > [!NOTE]
-> To enable Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
+> To use Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
 
 ## Prerequisites
 
-- An azure subscription with access to provision User Assigned Managed Identity (UAMI) or Application Registration
-- Plug-ins tools
+- An Azure subscription with access to provision user-assigned managed identity (UAMI) or application registration.
+- Plug-ins tools:
     - IDE like Visual Studio to build plug-in
-    - [Plug-in registration tool](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/download-tools-nuget)
-    - [SignTool.exe (Sign Tool)](https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly.
-    - [Power Platform CLI](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction?tabs=windows)
-- A valid certificate to sign the Plug-in's assembly or package.
+    - [Plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget)
+    - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly.
+    - [Power Platform CLI](../developer/cli/introduction.md)
+- A valid certificate to sign the plug-in's assembly or package.
 
-## Set up Managed Identity
-To configure Power Platform Managed Identity for Dataverse plug-in's, you need to execute following steps
-1. Create a new app registration or user assigned managed identity
-2. Configure federated identity credentials
-3. Create and register Dataverse Plug-ins or Dataverse plug-ins package
-    - Dataverse Plug-ins
-        - Build plug-in assembly
-        - Register the plug-in
-    - Create and register a Dataverse plug-ins package
-4. Create managed identity record in Dataverse
-5. Grant access to the azure resource(s) to application or user assigned managed identity (UAMI).
-6. Validate the plug-in integration
-## Create a new app registration or user assigned managed identity
-You can create either User Assigned Managed Identity or Application in Microsoft Entra ID based on following scenarios.
-1. If you want to have app Identity associated with plug-in connecting to the Azure resources  like Azure Key Vault, use [Application registration](https://learn.microsoft.com/en-us/entra/identity-platform/howto-create-service-principal-portal). With App Identity, you will be able to apply azure policies on the plug-in accessing azure resources.
-2. If you want to just have service principle to access the Azure resources like Azure Key Vault, you can provision [user assigned managed identity](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity)
+## Set up managed identity
+To configure Power Platform managed identity for Dataverse plug-in's, complete the following steps.
 
-*Output from this step*: Capture following ID’s, it will be used in later steps.
-  - Application ID
-  - Tenant ID
+1. Create a new app registration or user-assigned managed identity.
+2. Configure federated identity credentials.
+3. Create and register Dataverse plug-ins or Dataverse plug-ins package. 
+
+    - Dataverse plug-ins:
+        - Build plug-in assembly.
+        - Register the plug-in.
+    - Create and register a Dataverse plug-ins package.
+      
+4. Create managed identity record in Dataverse.
+5. Grant access to the Azure resources to application or user-assigned managed identity (UAMI).
+6. Validate the plug-in integration.
+   
+## Create a new app registration or user-assigned managed identity
+You can create either user-assigned managed identity or application in Microsoft Entra ID based on following scenarios.
+
+- If you want to have app identity associated with the plug-in that connects to the Azure resources, such as Azure Key Vault, use [application registration](/entra/identity-platform/howto-create-service-principal-portal). With app identity, you can apply Azure policies on the plug-in accessing Azure resources.
+- If you want to just have service principle to access the Azure resources, such as Azure Key Vault, you can provision [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity)
+
+    > [!Note]
+    > Be sure to capture the following ID’s, as you'll use them in later steps.
+    > - Application ID
+    > - Tenant ID
+  
 ## Configure federated identity credentials
-To configure Managed Identity, you need to open the User Assigned Managed Identity/Microsoft Entra ID application on the Azure Portal that you have created in previous step.
-- Browse to [Azure Portal](https://portal.azure.com/)
-- Navigate to Microsoft Entra ID
-- Click on App Registration
-- Open the App you created in Step #1
-- Navigate to Certificates & Secrets
-- Click on “Federated credential” tab and click “Add credential”.
-- Select issuer as “Other issuer”. 
-- Fill up the following information:
-    - **Issuer**: The URL of the token issuer. Format will be like
-              `https://[env id prefix].[env id suffix].enviornment.api.powerplatform.com/sts`     
-              [env id prefix] - Environment Id except for last two characters
-              [env id suffix] - Last 2 characters of environment id
+To configure managed identity, open the user-assigned managed identity or Microsoft Entra ID application in the Azure portal that you created in previous section.
+
+1. Go to the [Azure portal](https://portal.azure.com/)
+2. Navigate to **Microsoft Entra ID**.
+3. Select **App registration**.
+4. Open the app you created in Step #1
+5. Navigate to **Certificates & Secrets**.
+6. Select the **Federated credential** tab and select **Add credential**.
+7. Select issuer as **Other issuer**. 
+8. Enter the following information:
+    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[env id prefix].[env id suffix].enviornment.api.powerplatform.com/sts`     
+      - **Env ID prefix** - Environment ID, except for the last two characters.
+      - **Env ID suffix** - Last two characters of environment JD.
       
       Example: `https://92e1c10d0b34e28ba4a87e3630f46a.06.environment.api.powerplatform.com/sts`
-    - **Subject identifier**: If a self-signed certificate is used for signing the assembly use, Only recommended for non-production use cases.
+      
+    - **Subject identifier**: If a self-signed certificate is used for signing the assembly, use only recommended for non-production use cases.
+
 *component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>*
 
 ![alt text](FIC.image)
