@@ -17,7 +17,9 @@ search.audienceType:
 
 # msdyn_copilotinteraction table
 
-As users interact with Copilot in Customer Service while supporting a customer, they will interact with corpus of data sources ingested plus responses from plugins calling external systems for data.
+:::image type="content" source="media/manage-storage-msdyn-copilotinteraction-table.png" alt-text="Microsoft Copilot for Service" lightbox="media/manage-storage-msdyn-copilotinteraction-table.png" :::
+
+As users interact with [Microsoft Copilot for Service](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-for-service) while supporting a customer, they will interact with corpus of data sources ingested plus responses from plugins calling external systems for data.
 
 As a user gets a response from Copilot the user can give a feedback signal of whether the response was good or bad.
 
