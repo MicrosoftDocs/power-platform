@@ -74,9 +74,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
       
     - **Subject identifier**: If a self-signed certificate is used for signing the assembly, use only recommended for non-production use cases.
 
-*component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>*
-
-![alt text](FIC.image)
+:::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
 
 ## Create and register Dataverse Plug-ins or Dataverse plug-ins package
 ### For Dataverse Plug-ins
