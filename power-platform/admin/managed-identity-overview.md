@@ -48,7 +48,7 @@ The following table lists the services that support Power Platform managed ident
 ## Licensing requirements
 Licensing requirements for Power Platform managed identity will be announced near to general availability.
 
-# Next steps
+## Next steps
 [Set up Power Platform managed identity](set-up-managed-identity.md)
 
 
