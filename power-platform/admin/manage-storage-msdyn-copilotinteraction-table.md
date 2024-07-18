@@ -52,7 +52,7 @@ Admin's can you set up custom bulk delete jobs to control how long transcripts a
 
 Using the Bulk delete capabilities of the platform, admins can extend the ConversationTranscript schema with more columns allowing for finer grain selection around which transcript records are deleted, or retained. 
 
- Admin's can also set data retention policy to purge the **msdyn_copilotinteraction** table via [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
+Admin's can also set data retention policy to purge the **msdyn_copilotinteraction** table via [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
 ## Appendix
 
