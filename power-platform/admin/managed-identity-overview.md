@@ -37,10 +37,13 @@ The following table lists the services that support Power Platform Managed Ident
 |-----------|-------------------------|-------------------------|
 | Dataverse | <ul><li>[Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins)</li><li>[Dependent assembly plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies)</li></ul> | Preview |
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
+[!INCLUDE Power Platform Maanaged Identity is in preview]
 
 ## Licensing requirements
 Licensing requirements for Power Platform Managed Identity will be announced near to General Availability.
+
+# Next steps
+[Set up Power Platform Managed Identity]()
 
 
 
