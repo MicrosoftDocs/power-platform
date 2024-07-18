@@ -449,6 +449,10 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
+    - name: Technical case studies
+      items:
+        - name: Boost team efficiency & customer experience
+          href: case-studies/boost-efficiency-experience-story.md
     - name: White papers
       items:
         - name: Power Platform white papers
