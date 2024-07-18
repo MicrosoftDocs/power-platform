@@ -48,9 +48,9 @@ Admins can turn off historical analytics for Copilot in Customer Service Admin C
 
 Once admins turn off historical analytics for Copilot, then admin can turn off the interactions for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
 
-Admin's can you set up custom bulk delete jobs to control how long transcripts are [retained as data](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period). 
+Admin's can you set up custom [bulk delete job](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) to control how long transcripts are [retained as data](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period). 
 
-Using the Bulk delete capabilities of the platform, admins can extend the ConversationTranscript schema with more columns allowing for finer grain selection around which transcript records are deleted, or retained. 
+Using the [bulk delete job](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) capabilities of the platform, admins can extend the ConversationTranscript schema with more columns allowing for finer grain selection around which transcript records are deleted, or retained. 
 
 Admin's can also set data retention policy to purge the **msdyn_copilotinteraction** table via [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
