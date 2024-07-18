@@ -431,6 +431,10 @@
           href: architecture/real-world-examples/sql-gateway-canvas.md
         - name: Using Power Apps component framework with canvas apps
           href: architecture/real-world-examples/pcf-canvas-components.md
+    - name: Real-world case studies
+      items:
+        - name: Boost team efficiency & customer experience
+          href: case-studies/boost-efficiency-experience-case-study.md
     - name: ExpressRoute and Power Platform
       items:
         - name: Overview
@@ -449,10 +453,6 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
-    - name: Technical case studies
-      items:
-        - name: Boost team efficiency & customer experience
-          href: case-studies/boost-efficiency-experience-story.md
     - name: White papers
       items:
         - name: Power Platform white papers
