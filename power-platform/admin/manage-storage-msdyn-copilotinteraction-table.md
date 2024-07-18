@@ -23,7 +23,7 @@ As users interact with [Microsoft Copilot for Service](https://www.microsoft.com
 
 As a user gets a response from Copilot the user can give a feedback signal of whether the response was good or bad.
 
-The **msdyn_copilotinteraction** table contains metadata on all copilot interactions, including the request response for various Copilot in Customer Service responses (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions. It additionally contains responses from the Compose an Email feature during multi turn responses.  
+The **msdyn_copilotinteraction** table contains metadata on all copilot interactions, including the request response for Copilot in Customer Service responses (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions. It additionally contains responses from the Compose an Email feature during multi turn responses.  
 
 When agents use Copilot, agent interactions with Copilot such as copying summaries, using a suggested reply, feedback, and chat transcripts are stored in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables in Dataverse.
 
@@ -38,7 +38,7 @@ When you enable the Copilot features, agents can do the following actions in the
 - [Draft a chat response](/dynamics365/customer-service/administer/copilot-enable-help-pane#enable-draft-a-response-preview)
 - [Summarize a case and conversation](/dynamics365/customer-service/administer/copilot-enable-summary)
 
-As more agents interact with Copilot in Customer Service and provide feedback signals the larger the **msdyn_copilotinteraction** table will grow in size. 
+As more agents interact with Copilot in Customer Service and provide feedback signals the larger the **msdyn_copilotinteraction** table grows in size. 
 
 The chat transcripts and msdyn_interactiondata can be downloaded for offline analysis [Download Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data) 
 
@@ -46,9 +46,9 @@ The chat transcripts and msdyn_interactiondata can be downloaded for offline ana
 
 Admins can disable copilot interaction captured by first disabling historical analytics for Copilot in Customer Service Admin Center [Enable historical analytics for Copilot](/dynamics365/customer-service/administer/configure-cs-historical-analytics-csh#enable-historical-analytics-for-copilot). 
 
-After disabling historical analytics for Copilot then the capture can individually be disabled for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
+After disabling historical analytics for Copilot, then the interactions can be individually disabled for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
 
-Admin's can you setup custom bulk delete jobs to control how long transcripts are [retained as data in your environment](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period).Leveraging Bulk delete capabilities of the platform, admins can extend the ConversationTranscript schema with columns that alloww for finer grain selection around which transcript records are deleted, or retained. 
+Admin's can you set up custom bulk delete jobs to control how long transcripts are [retained as data in your environment](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period).Applying Bulk delete capabilities of the platform, admins can extend the ConversationTranscript schema with columns that allows for finer grain selection around which transcript records are deleted, or retained. 
 
  Admin's can set data retention policy to purge the **msdyn_copilotinteraction** table via [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
