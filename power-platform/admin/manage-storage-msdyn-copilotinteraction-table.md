@@ -17,7 +17,7 @@ search.audienceType:
 
 # msdyn_copilotinteraction table
 
-:::image type="content" source="media/manage-storage-msdyn-copilotinteraction-table.png" alt-text="Microsoft Copilot for Service" lightbox="media/manage-storage-msdyn-copilotinteraction-table.png" :::
+:::image type="content" source="media/manage-storage-msdyn-copilotinteraction-table.png" alt-text="Microsoft Copilot for Service":::
 
 As users interact with [Microsoft Copilot for Service](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-for-service) while supporting a customer, they interact with a large set of data sources, including responses from plugins calling external systems for data.
 
