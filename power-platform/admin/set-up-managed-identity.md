@@ -74,36 +74,48 @@ To configure managed identity, open the user-assigned managed identity or Micros
       
     - **Subject identifier**: If a self-signed certificate is used for signing the assembly, use only recommended for non-production use cases.
 
-:::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
+    :::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
 
-## Create and register Dataverse Plug-ins or Dataverse plug-ins package
-### For Dataverse Plug-ins
+## Create and register Dataverse plug-ins or Dataverse plug-ins package
+
+### For Dataverse plug-ins
+
 #### Build plug-in assembly
-- [Create a plug-in](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building plug-in use Tenant ID from Step #1 and scopes as organization URL like https://{OrgName}.crm*.dymanics.com/.default or even more granular scopes.
-- Use [IManagedIdentityService](https://learn.microsoft.com/en-us/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest), acquire Token method to request for token with given scope.
-- string AcquireToken(IEnumerable<string> scopes); The method accepts a collection of scopes and return the access token. 
-- Sign the assembly with a certificate. Refer this article - https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe.
-“Self-signed certificate should be used only for testing and is not supported option for use in Production scenarios.”
+- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building plug-in use Tenant ID from Step #1 and scopes as organization URL like https://{OrgName}.crm*.dymanics.com/.default or even more granular scopes.
+- Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest) and acquire a token method to request a token with given scope.
+- String AcquireToken(IEnumerable<string> scopes). The method accepts a collection of scopes and returns the access token. 
+- Sign the assembly with a certificate. For more information, see [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe).
+
+> [!Note]
+> A self-signed certificate should be used only for testing. It's not a supported option for use in production scenarios.
+
 #### Register the plug-in
-- Install the plug-in registration tool if you don’t have it on your machine by using the article - https://learn.microsoft.com/en-us/power-apps/developer/data-platform/download-tools-nuget
-- Register the plug-in using the article - https://learn.microsoft.com/en-us/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in
-### For Dataverse Plug-in package
+- Install the plug-in registration tool if you don’t have it on your machine already. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
+- Register the plug-in. For more information, see [Register plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in).
+
+### For Dataverse plug-in package
 #### Create and register a plug-in package
-- You can follow this article https://learn.microsoft.com/en-us/power-platform/developer/howto/cli-create-package  to create and register a plug-in package.
-- Before registering the plug-in package using this step https://learn.microsoft.com/en-us/power-platform/developer/howto/cli-create-package, ensure that you sign the plug-in package by following below instructions
+- Create and register a plug-in package. For more information, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md).
+- Before registering the plug-in package, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md). Be sure that you sign the plug-in package by following these steps:
     - Create a new certificate or use an existing certificate.
     - Run the following command to sign the plug-in package with the certificate.
-        nuget sign <local path-to-package> -CertificatePath <local path-to-certificate> -CertificatePassword <certificate-password> 
-- Register the plug-in package using this article  https://learn.microsoft.com/en-us/power-platform/developer/howto/cli-create-package
+
+      ```
+      nuget sign <local path-to-package> -CertificatePath <local path-to-certificate> -CertificatePassword <certificate-password>
+      ```
+
+- Register the plug-in package. For more information, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md).
 
 ## Create managed identity record in Dataverse
-To provision managed identity record in Dataverse,
-1. You need to make post call to following URL using [Insomia](https://insomnia.rest/download) or any other tool of your choice.
+To provision managed identity record in Dataverse, complete the following steps.
+
+1. Call the following URL using [Insomia](https://insomnia.rest/download) or any other tool of your choice.
+   
     `https://<<orgUrl>>https://aurorabapenv0bc9e.crmtest.dynamics.com/api/data/v9.0/managedidentities`
 
-    Ensure that Credentialsource is set to **2** in the payload, SubjectScope is set to **1** for environment specific scenarios
+    Ensure that **Credentialsource** is set to **2** in the payload and **SubjectScope** is set to **1** for environment-specific scenarios.
  
-     ``` Sample payload.
+     ``` Sample payload
       {
       "applicationid":"<<appId>>",
        "managedidentityid":"<<anyGuid>>",
@@ -111,29 +123,37 @@ To provision managed identity record in Dataverse,
       “subjectscope”:1,
        "tenantid":"<<tenantId>>"
       }
-2. Make a patch call to bind plug-in assembly Id or plug-in package Id with the Managed Identity record that is created through post call in step **#1**.
-  **Plug-in assembly**:
+     ```
+     
+2. Make a patch call to bind the plug-in assembly ID or plug-in package ID with the managed identity record that is created through post call in step #1.
+
+   **Plug-in assembly**:
+
+   ```
                    `PATCH https:// <<orgUrl>>/api/data/v9.0/pluginassemblies(<<PluginAssemblyId>>)`
                     *Replace: orgUrl and PluginAssemblyId*
       ```Sample Payload:
       {
        "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)"
       }
+   ```
 
-  **Plug-in package**:  
+  **Plug-in package**:
+
+  ```
                   `PATCH https://<<orgUrl>>/api/data/v9.0/pluginpackages(<<PluginPackageId>>) `
                   *Replace the orgUrl and PluginpackageId*
         Sample Payload:
         `{ 
           "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)" 
         }`
+  ```
 
+## Grant access to the Azure resources to application or user-assigned managed identity
+If you need to give access to application ID to access Azure resource, such as Azure Key Vault, you need to grant access to application or user-assigned managed identity to that resource.
 
-## Grant access to the azure resource(s) to Application or user assigned managed Identity
-If you need to give access to application ID to access azure resource such as Azure Key Vault, you need to grant access to application or user assigned managed identity to that resource.
-
-## Validate the Plug-in integration
-Your plug-in or package can securely request access to Azure resources that support Managed Identity, eliminating the need for separate credentials.
+## Validate the plug-in integration
+Your plug-in or package can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
 
 
 
