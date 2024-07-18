@@ -29,7 +29,7 @@ When agents use Copilot, agent interactions with Copilot such as copying summari
 
 ## Causes of growth
 
-Copilot in Customer Service provides real-time AI assistance that helps agents automate time-consuming tasks to handle cases efficiently and resolve issues faster so that they can deliver value to customers.
+ [Microsoft Copilot for Service](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-for-service) provides real-time assistance that helps agents automate time-consuming tasks to handle cases efficiently and resolve issues faster so that they can deliver value to customers.
 
 When you enable the Copilot features, agents can do the following actions in the Customer Service workspace app:
 
