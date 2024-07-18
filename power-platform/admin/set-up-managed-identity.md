@@ -78,7 +78,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 
 ## Create and register Dataverse plug-ins or Dataverse plug-ins package
 
-### For Dataverse plug-ins
+### Dataverse plug-ins
 
 #### Build plug-in assembly
 - [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building plug-in use Tenant ID from Step #1 and scopes as organization URL like https://{OrgName}.crm*.dymanics.com/.default or even more granular scopes.
@@ -93,7 +93,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 - Install the plug-in registration tool if you don’t have it on your machine already. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
 - Register the plug-in. For more information, see [Register plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in).
 
-### For Dataverse plug-in package
+### Dataverse plug-in package
 #### Create and register a plug-in package
 - Create and register a plug-in package. For more information, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md).
 - Before registering the plug-in package, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md). Be sure that you sign the plug-in package by following these steps:
