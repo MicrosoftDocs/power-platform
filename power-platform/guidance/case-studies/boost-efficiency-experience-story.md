@@ -21,6 +21,7 @@ Accessing real-time information was vital for the agency as travel rules and bor
 Developing *'Fifi'* - a copilot with the persona of a wise, elderly lady who knows everything about the company and the travel industry - was the next game changer. Embedded in A1's website to provide immediate customer assistance, and in Microsoft Teams for easy access by staff, Fifi is considered to be a colleague not just a chat bot.
 
 > *"Power Platform changed our business in a way that we never expected. It gave us the power to make things that we didn't believe were possible. Before Power Platform and Copilot Studio, we never thought it was possible for us to create software - it gave us the power to put our ideas to work easily and in an affordable way for a small company".*
+>
 > *Daniel Schaurich de Oliviera, CEO*
 
 ![Daniel Schaurich de Oliviera's profile picture](media/a1-travel/image1.png)
@@ -125,6 +126,7 @@ Daniel created a copilot to assist Travel Agents in answering complex questions 
 Naming the copilot ‘Fifi' helped it to become established as an integral and accepted part of the team.
 
 > '*Create a persona for the copilot. We created Fifi and today she's not only a bot, she's a work colleague - this makes adoption higher and faster.'*
+>
 > *Daniel Schaurich de Oliviera, CEO*
 
 Created in Copilot Studio, Fifi uses [Custom Topics](/microsoft-copilot-studio/authoring-create-edit-topics) to generate human-like responses to frequently asked questions. Each topic is based on defined [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) that are used for [generative answers](/microsoft-copilot-studio/nlu-boost-conversations), which gathers results from external websites using [Bing Custom Search](/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search).
