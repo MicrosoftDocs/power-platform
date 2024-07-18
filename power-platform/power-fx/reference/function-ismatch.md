@@ -256,13 +256,15 @@ Here is a summary of the major features that are not supported:
 | Single quoted capture group names | `(?'cap'a)\k'a'` | Not supported | Use angle bracket syntax instead: `(?<cap>a)\k<cap>` |
 | Self referencing capture groups | `(?<cap>\k<cap>)` | Same syntax as .NET but different semantics.  | Please send us feedback on how you would use this in the community forum. |
 | Octal codes for characters | `\101`, `\o101`, `\o{101}` | Same syntax, but different disambiguation rules. | Use hexadecimal or Unicode codes instead: `\x41` or `\u0041` |
+| Escaped letters or underscore | Error | Supported | Error. There is no need to escape letters or underscore |
 
 And here are more subtle differences:
 
 | Feature | .NET | JavaScript | Power Fx |
 |---------|----------|--------|----------|
 | Definition of `\w` and `\b` | Unicode based | ASCII based | Unicode based. Use `[a-zA-Z0-9_]` if ASCII is desired. |
-| Definition of . (dot) | `[^\n]` | `[^\n\r]` | 
+| Definition of . (dot) and anchorse in multi-line | `[^\n]` | `[^\n\r\u2028\u2029]` | ?? |
+| Matches newline at end of string | Yes | No | Yes |
 
 The following features from .NET and JavaScript are not supported, but may be added in the future if they can be implemented across all Power Fx platforms:
 - Balancing capture groups.
@@ -270,5 +272,6 @@ The following features from .NET and JavaScript are not supported, but may be ad
 - Inline options for a sub-expression.
 - Character class subtraction.
 - Conditional alternation.
+- Permanent start and end of string anchors.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
