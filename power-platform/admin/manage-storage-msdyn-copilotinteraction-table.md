@@ -46,7 +46,9 @@ The chat transcripts and msdyn_interactiondata can be downloaded for offline ana
 
 Admins can disable copilot interaction captured by first disabling historical analytics for Copilot in Customer Service Admin Center [Enable historical analytics for Copilot](/dynamics365/customer-service/administer/configure-cs-historical-analytics-csh#enable-historical-analytics-for-copilot). 
 
-After disabling historical analytics for Copilot then the capture can individually be disabled for each feature for [Copilot for questions and email]((/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and summaries(/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
+After disabling historical analytics for Copilot then the capture can individually be disabled for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
+
+Admin's can you setup custom bulk delete jobs to control how long transcripts are [retained as data in your environment](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period).Leveraging Bulk delete capabilities of the platform, admins can extend the ConversationTranscript schema with columns that alloww for finer grain selection around which transcript records are deleted, or retained. 
 
  Admin's can set data retention policy to purge the **msdyn_copilotinteraction** table via [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
