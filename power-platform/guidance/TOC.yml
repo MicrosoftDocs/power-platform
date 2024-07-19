@@ -413,6 +413,24 @@
               href: creator-kit/setfocus.md
     - name: Automation adoption best practices
       href: /power-automate/guidance/automation-coe/overview
+    - name: ExpressRoute and Power Platform
+      items:
+        - name: Overview
+          href: expressroute/overview.md
+        - name: Benefits of using ExpressRoute
+          href: expressroute/benefits.md
+        - name: How ExpressRoute works
+          href: expressroute/how-expressroute-works.md
+        - name: Before you use ExpressRoute
+          href: expressroute/things-to-consider.md
+        - name: Understand Microsoft Power Platform architecture
+          href: expressroute/understanding-architecture.md
+        - name: Plan an ExpressRoute deployment
+          href: expressroute/planning-expressroute.md
+        - name: Set up ExpressRoute for Microsoft Power Platform
+          href: expressroute/setup.md
+        - name: ExpressRoute readiness checklist
+          href: expressroute/checklist.md
     - name: Real-world architecture examples
       items:
         - name: Overview
@@ -435,24 +453,6 @@
       items:
         - name: Boost team efficiency & customer experience
           href: case-studies/boost-efficiency-experience-case-study.md
-    - name: ExpressRoute and Power Platform
-      items:
-        - name: Overview
-          href: expressroute/overview.md
-        - name: Benefits of using ExpressRoute
-          href: expressroute/benefits.md
-        - name: How ExpressRoute works
-          href: expressroute/how-expressroute-works.md
-        - name: Before you use ExpressRoute
-          href: expressroute/things-to-consider.md
-        - name: Understand Microsoft Power Platform architecture
-          href: expressroute/understanding-architecture.md
-        - name: Plan an ExpressRoute deployment
-          href: expressroute/planning-expressroute.md
-        - name: Set up ExpressRoute for Microsoft Power Platform
-          href: expressroute/setup.md
-        - name: ExpressRoute readiness checklist
-          href: expressroute/checklist.md
     - name: White papers
       items:
         - name: Power Platform white papers
