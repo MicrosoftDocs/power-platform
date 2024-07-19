@@ -33,7 +33,7 @@ To use this feature, it must be enabled in the environment where you want to res
 
 ### Enable restore table records
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Environments** and open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
 1. Scroll down to view the **Recycle Bin** settings.
