@@ -31,7 +31,7 @@ When agents use Copilot, agent interactions with Copilot such as copying summari
 
  [Microsoft Copilot for Service](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-for-service) provides real-time assistance that helps agents automate time-consuming tasks to handle cases efficiently and resolve issues faster so that they can deliver value to customers.
 
-When you enable the Copilot features, agents can do the following actions in the Customer Service workspace app:
+When you turn on the Copilot features, agents can perform the following actions in the Customer Service workspace app:
 
 - [Respond to questions](/dynamics365/customer-service/administer/copilot-enable-help-pane#enable-ask-a-question)
 - [Compose an email](/dynamics365/customer-service/administer/copilot-email-enable)
@@ -40,29 +40,24 @@ When you enable the Copilot features, agents can do the following actions in the
 
 The **msdyn_copilotinteraction** table grows in size as more agents interact with Copilot in Customer Service and provide feedback signals.
 
-The chat transcripts in **msdyn_interactiondata** can be downloaded for offline analysis [Download Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data) 
+The chat transcripts in **msdyn_interactiondata** can be downloaded for offline analysis. Learn more: [Download Copilot transcripts and interaction data](/dynamics365/customer-service/develop/download-copilot-transcript-data) 
 
-## Table cleanup
+## Table clean-up
 
 Admins can turn off historical analytics for Copilot in Customer Service Admin Center through disabling [historical analytics for Copilot](/dynamics365/customer-service/administer/configure-cs-historical-analytics-csh#enable-historical-analytics-for-copilot). 
 
-Once admins turn off historical analytics for Copilot, then admin can turn off the interactions for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
+Once admins turn off historical analytics for Copilot, then an admin can turn off the interactions for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
 
-Admin's can you set up custom [bulk delete job](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) to control how long transcripts are [retained as data](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period). 
+Admins can set up custom [bulk delete jobs](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) to control how long transcripts are [retained as data](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period). 
 
-Using the [bulk delete job](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) capabilities of the platform, admins can extend the ConversationTranscript schema with more columns allowing for finer grain selection around which transcript records are deleted, or retained. 
+Using the [bulk delete job](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) capabilities of the platform, admins can extend the ConversationTranscript schema with more columns allowing for better selection around which transcript records are deleted, or retained. 
 
-Admin's can also set data retention policy to purge the **msdyn_copilotinteraction** table via [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
-
-## Appendix
-
-To learn more about [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)
-
-[FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)
+Admins can also set the data retention policy to purge the **msdyn_copilotinteraction** table through [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
 ### See also
 
-
+- [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)
+- [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)
 - [Dataverse storage capacity](capacity-storage.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
