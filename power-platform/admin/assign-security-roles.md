@@ -88,11 +88,14 @@ When users are added to Dataverse, roles are assigned automatically based on the
 
 1. For the Default environment type, **Basic User** and **Environment Maker** roles are assigned automatically to all users added in Dataverse.
 
-1. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse. 
+1. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse.
+
+> [!NOTE]
+> Previously, Microsoft Entra ID admins, including Power Platform admins and Dynamics 365 service admins, were automatically assigned the System Administrator role in Dataverse. This is no longer the case. However, if an admin was previously assigned a role in Dataverse, removing them from the Power Platform admin and Dynamics 365 service admin roles will not automatically remove their System Administrator role in Dataverse. There is currently no way to determine whether the role was assigned automatically by the system or manually by an administrator. Therefore, we recommend that administrators manually remove the System Administrator role once the Microsoft Entra role has been removed.
 
 ## License to role mapping
 
-If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in the Power Platform admin center. 
+If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in the Power Platform admin center.
 
 Go to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **License To Role mapping**.
 
