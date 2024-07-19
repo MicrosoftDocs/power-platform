@@ -169,6 +169,9 @@ Here's an example of the payload of metadata that can be expected from one of th
 > [!NOTE]
 > Activity logging for data policies is not currently available in sovereign clouds.
 
+> [!NOTE]
+> Currently users with E5 license can view these audit events.
+
 All the data policy events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
 The following data policy events are delivered to Microsoft Purview.
 
