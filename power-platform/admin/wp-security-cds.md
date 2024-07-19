@@ -39,9 +39,9 @@ To better understand let’s look at the following example. We have three busine
 
 Customers can use an organization structure where data and user are compartmentalized in a tree-like hierarchy.  
 
-When we associate a user with this environment, we can set the user to be in one of these three business units and assign a security role from the business unit to the user. The business unit the user is associated with determines which business unit owns the records when the user creates a record. By having that association it allows us to tailor a security role which allows the user to see records in that business unit. 
+When we associate a user with this environment, we can set the user to be in one of these three business units and assign a security role from the business unit to the user. The business unit the user is associated with determines which business unit owns the records when the user creates a record. By having that association it allows us to tailor a security role, which allows the user to see records in that business unit. 
 
-User A is associated with Division A and assigned a security role Y from Division A. This allows user A to access the Contact #1 and Contact #2 records. While user B in Division B cannot access Division A’s Contact records but can access Contact #3 record. 
+User A is associated with Division A and assigned a security role Y from Division A. This allows user A to access the Contact #1 and Contact #2 records. While user B in Division B can't access Division A’s Contact records but can access Contact #3 record. 
 
 > [!div class="mx-imgBorder"] 
 > ![Matrix data access structure example](media/example-business-unit0.png "Matrix data access structure example")
@@ -90,7 +90,7 @@ In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-mode
 
 ### Owning Business Unit
 
-Each record has an **Owning Business Unit** column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
+Each record has an **Owning Business Unit** column, which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and can't be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
 > When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using SDK for .NET to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
@@ -100,7 +100,7 @@ You can manage whether you want to allow your user to set the Owning Business Un
 To allow your user to set this column, you can enable this column in the following:
 1. Form - both the body and header.
 2. View.
-3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you are using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the column in your column mapping. 
+3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you're using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the column in your column mapping. 
 
 > [!NOTE]
 > If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
@@ -156,11 +156,11 @@ Individual records can be shared on a one-by-one basis with another user. This i
 
 ### Record-level security in Dataverse
 
-You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it is the combination of all their security roles, the business unit they are associated with, the teams they are members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Dataverse database environment. These entitlements are only granted within a single database and are individually tracked in each Dataverse database. This all requires they have an appropriate license to access Dataverse.
+You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it's the combination of all their security roles, the business unit they're associated with, the teams they're members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Dataverse database environment. These entitlements are only granted within a single database and are individually tracked in each Dataverse database. This all requires they have an appropriate license to access Dataverse.
 
 ### Column-level security in Dataverse
 
-Sometimes record-level control of access is not adequate for some business scenarios. Dataverse has a column-level security feature to allow more granular control of security at the column level. Column-level security can be enabled on all custom columns and most system columns. Most system columns that include personal identifiable information (PII) are capable of being individually secured. Each column’s metadata defines if that is an available option for the system column.
+Sometimes record-level control of access isn't adequate for some business scenarios. Dataverse has a column-level security feature to allow more granular control of security at the column level. Column-level security can be enabled on all custom columns and most system columns. Most system columns that include personal identifiable information (PII) are capable of being individually secured. Each column’s metadata defines if that is an available option for the system column.
 
 Column-level security is enabled on a column by column basis. Access is then managed by creating a Column Security Profile. The profile contains all column that have column-level security enabled and the access granted by that specific profile. Each column can be controlled within the profile for Create, Update and Read access. Column Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that column-level security has nothing to do with record-level security. A user must already have access to the record for the Column Security Profile to grant them any access to the columns. Column-level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
 
@@ -176,7 +176,7 @@ In addition, you would assign any security roles that user needs. You would also
 
 If you have used column-level security, you would need to associate the user or a team of the user to one of the Column Securities Profiles you created.
 
-Security is a complex article and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
+Security is a complex article and is best accomplished as a joint effort between the application makers and the team administering the users' permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
 
 ### See also
 [Configure environment security](database-security.md)<br/>
