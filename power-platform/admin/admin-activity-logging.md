@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/06/2024
+ms.date: 07/19/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -170,7 +170,7 @@ Here's an example of the payload of metadata that can be expected from one of th
 > Activity logging for data policies is not currently available in sovereign clouds.
 
 > [!NOTE]
-> Currently users with E5 license can view these audit events.
+> Currently users with an E5 license can view these audit events.
 
 All the data policy events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
 The following data policy events are delivered to Microsoft Purview.
