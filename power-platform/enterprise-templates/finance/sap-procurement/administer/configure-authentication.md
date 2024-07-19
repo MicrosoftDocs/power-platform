@@ -149,19 +149,19 @@ The SAP OData connector supports the following authentication types (API Key can
 
 ### Guidance for SAP Principal Propagation
 
-Prinicipal Propagation is a mechanism well established in the SAP ecosystem. The SAP OData Connector supports this mechanism by providing a first-party Entra Id app registration with client id "6bee4d13-fd19-43de-b82c-4b6401d174c3" and scope "user_impersonation". Use the field "Microsoft Entra ID Resource URI (Application ID URI)" to maintain your globally unique resource URI of the Entra ID app registration authorized to access the SAP OData service.
+Prinicipal Propagation is a mechanism well established in the SAP ecosystem. The SAP OData Connector supports this mechanism by providing a first-party Entra Id app registration with client id `6bee4d13-fd19-43de-b82c-4b6401d174c3` and scope `user_impersonation`. Use the field `Microsoft Entra ID Resource URI (Application ID URI)` to maintain your globally unique resource URI of the Entra ID app registration authorized to access the SAP OData service.
 
 > [!NOTE]
 > An existing trust setup between your SAP backend and Entra ID using an enterprise app registration is required. The configuration needs to support the OAuth2SAMLBearer flow. See [this Microsoft learn article](/entra/identity/saas-apps/sap-netweaver-tutorial) and this SAP blog for details on the initial steps.
-> :::image type="content" source="media/configure-authentication/sap-principal-propagation-trust.png" alt-text="Illustration of trust relationship between SAP, Entra ID, and API Management solution to support SAP Principal Propagation.":::
+> :::image type="content" source="media/configure-authentication/sap-principal-propagation-trust.png" alt-text="Illustration of trust relationship between SAP, Entra ID, and API Management solution to support SAP Principal Propagation." lightbox="media/configure-authentication/sap-principal-propagation-trust.png":::
 
 For the Entra ID token exchange required by SAP ([OAuth2SAMLBearer flow](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/6e/aec739afad4c5c96487c780c0bf82a/frameset.htm)), we recommend using an API Management solution. See [this Microsoft learn article](/azure/api-management/sap-api?tabs=odata#production-considerations) for details on the initial steps with Azure API Management.
 
-:::image type="content" source="media/configure-authentication/sap-principal-propagation.png" alt-text="Authentication flow of the SAP OData Connector with Azure API Management to support SAP Principal Propagation.":::
+:::image type="content" source="media/configure-authentication/sap-principal-propagation.png" alt-text="Authentication flow of the SAP OData Connector with Azure API Management to support SAP Principal Propagation." lightbox="media/configure-authentication/sap-principal-propagation.png":::
 
 ## Related content
 
-- [SAP Single Sign-On](<https://help.sap.com/docs/SAP_SINGLE_SIGN-ON>
+- [SAP Single Sign-On](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON)
 - [Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
 - [SAP ERP connector](/connectors/saperp/)
