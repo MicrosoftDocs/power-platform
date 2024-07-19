@@ -1,5 +1,5 @@
 ---
-title: msdyn_copilotinteraction table storage 
+title: Overview of the msdyn_copilotinteraction table 
 description: Learn about managing msdyn_copilotinteraction table storage.
 author: ceian
 ms.component: pa-admin
@@ -15,9 +15,7 @@ search.audienceType:
   - admin
 ---
 
-# msdyn_copilotinteraction table storage 
-
-:::image type="content" source="media/manage-storage-msdyn-copilotinteraction-table.png" alt-text="Microsoft Copilot for Service":::
+#  Overview of the msdyn_copilotinteraction table 
 
 As users interact with [Microsoft Copilot for Service](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-for-service) while supporting a customer, they interact with a large set of data sources, including responses from plug-ins calling external systems for data.
 
