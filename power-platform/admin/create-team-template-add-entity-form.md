@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/18/2024
+ms.date: 07/18/2024
 search.audienceType: 
   - admin
 ---
@@ -38,7 +38,7 @@ Check your security role:
 - Follow the steps in [View your user information](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
@@ -55,7 +55,7 @@ Check your security role:
 
 ## Create a team template  
   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 1. On the control bar, select **+New**,
 1. Enter a **Name** for your template.
@@ -69,7 +69,7 @@ Check your security role:
 
 ## Add a team template to the entity form   
   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
