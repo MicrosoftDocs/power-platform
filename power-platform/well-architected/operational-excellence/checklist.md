@@ -19,7 +19,7 @@ If you don't consider tradeoffs and recommendations for operational excellence, 
 
 ## Checklist
 
-| | Code | Recommendation |
+| &nbsp; | Code | Recommendation |
 |-|-|-|
 | &#9744; | [OE:01](fusion-culture.md) | **Determine workload team members' specializations, and integrate them into a robust set of practices** to design, develop, deploy, and operate your workload to specification. Team members must have clarity in decision making and responsibilities, value continuous improvement and optimization, and adopt a blameless culture that incorporates continuous learning. |
 | &#9744; | [OE:02](formalize-operations-tasks.md) | **Formalize the way you run routine, as-needed, and emergency operational tasks** by using documentation, checklists, or automation. Strive for consistency and predictability for team processes and deliverables by adopting industry-leading practices and approaches, such as a "shift left" approach. |
