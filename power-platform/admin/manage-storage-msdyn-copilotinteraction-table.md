@@ -4,7 +4,7 @@ description: Learn about managing msdyn_copilotinteraction table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/19/2024
+ms.date: 07/19/2024
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
@@ -15,15 +15,15 @@ search.audienceType:
   - admin
 ---
 
-# msdyn_copilotinteraction table
+# msdyn_copilotinteraction table storage 
 
 :::image type="content" source="media/manage-storage-msdyn-copilotinteraction-table.png" alt-text="Microsoft Copilot for Service":::
 
-As users interact with [Microsoft Copilot for Service](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-for-service) while supporting a customer, they interact with a large set of data sources, including responses from plugins calling external systems for data.
+As users interact with [Microsoft Copilot for Service](https://www.microsoft.com/microsoft-copilot/microsoft-copilot-for-service) while supporting a customer, they interact with a large set of data sources, including responses from plug-ins calling external systems for data.
 
 When a user gets a response from Copilot, the user can give a feedback signal of whether the response was good or bad.
 
-The **msdyn_copilotinteraction** table contains metadata on all copilot interactions, including the request response for Copilot in Customer Service responses (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions. It additionally contains responses from the Compose an Email feature during multi turn responses.  
+The **msdyn_copilotinteraction** table contains metadata on all Copilot interactions, including the request response for Copilot in Customer Service responses (thumbs up/down) and can be useful for audit or request/response analysis for thumbs down interactions. It additionally contains responses from the Compose an Email feature during multiturn responses.  
 
 When agents use Copilot, agent interactions with Copilot such as copying summaries, using a suggested reply, feedback, and chat transcripts are stored in the [msdyn_copilotinteraction](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteraction), [msdyn_copilotinteractiondata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilotinteractiondata), [msdyn_copilottranscript](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscript), and [msdyn_copilottranscriptdata](/dynamics365/customer-service/develop/reference/entities/msdyn_copilottranscriptdata) tables in Dataverse.
 
