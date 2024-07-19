@@ -7,7 +7,7 @@ ms.author: meeram
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/18/2023
+ms.date: 07/19/2024
 search.audienceType: 
   - admin
 ---
@@ -21,7 +21,7 @@ Using the Microsoft Power Platform admin center, you can create environments of 
 Not all companies and admins approach trials the same way. This is especially true when it comes to deciding whether to allow users to try new capabilities. Some companies let users try features in a self-serve manner. Others want admins to completely control what's being tried and who's licensed to use the environment. The two types of trial environments provide this level of control.
 
 - **Trial (standard)**: This is the type of trial environment that companies can use to allow users and department managers to try new features and quickly build low-code and no-code applications and processes. Organization (tenant) admins can enable all users to create trials, or only tenant admins. If allowed for users, any user from that organization who has [a suitable license](create-environment.md#who-can-create-environments) can create a 30-day trial environment. After 30 days, the environment is disabled and deleted. 
-- **Trial (subscription-based)**: This is the type of trial environment that companies can use to develop larger, multiuser and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the Global admin. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended. 
+- **Trial (subscription-based)**: This is the type of trial environment that companies can use to develop larger, multiuser and multiple-department solutions and perform proof-of-concept reviews. Tenant admins can add a trial (subscription-based) environment to their tenant, or new customers can sign up for a new tenant and become the administrator of the tenant. For new customers, an admin-managed subscription is created with a set number of licenses (usually 25); admins control which other users get licenses assigned to them. An admin-managed subscription has an end date that can be extended. 
 
 Neither type of environment consumes paid capacity. You can convert either type of trial environment to a production environment by switching it to consume from paid capacity, which will keep it from being disabled and deleted. After it becomes a production environment, it will follow the paid license lifecycle.
 
@@ -121,11 +121,11 @@ The type of trial environment you create depends on where you start and your ten
 
 A trial (subscription-based) environment lasts as long as the subscription is active. To check its expiration date, perform the following steps.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) using Global admin credentials.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a user with access to view subscription information such as a user with the [Billing Administrator](/entra/identity/role-based-access-control/permissions-reference#billing-administrator) role.
   
-2. Select **Billing** > **Your products**, and then select the **Subscriptions** tab.
+2. Select **Billing** > **Your products**, and then select the **Products** tab.
   
-3. Select your Dynamics 365 subscription, and review the date in the **Billing** section.
+3. Select your Dynamics 365 subscription, and review the date in the **Expiration Date** section.
 
    > [!div class="mx-imgBorder"] 
    > ![Check trial (subscription-based) expiration.](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")

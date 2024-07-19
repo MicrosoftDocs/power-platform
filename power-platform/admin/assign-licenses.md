@@ -9,15 +9,15 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/19/2024
 search.audienceType: 
   - admin
 ---
 # Assign licenses
 
-A user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and Microsoft Dataverse security roles](grant-users-access.md#differences-between-the-microsoft-online-services-environment-administrative-roles-and-microsoft-dataverse-security-roles)
+A user account must be assigned a license in order for the user to have access to the service.
 
-## Add a license to a user account  
+## Add a license to a user account
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. 
   
 For step-by-step instructions to use user licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
