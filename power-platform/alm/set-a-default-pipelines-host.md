@@ -41,7 +41,7 @@ If you have configured the setting and are using a custom host as the replacemen
 ### Removing or replacing an existing default custom pipelines host
 When in the platform host's Deployment Pipeline Configuration experience, select **Advanced Settings** from the left navigation pane.
 
-- To replace: in the "Use a custom pipelines host" setting, replace the **Pipelines host environment ID** and click **Save**  setting with the toggle.
+- To replace: in the "Use a custom pipelines host" setting, replace the **Pipelines host environment ID** and click **Save**.
 - To remove: in the "Use a custom pipelines host" setting, click **Remove**, and confirm.
 
 ## Frequently Asked Questions
