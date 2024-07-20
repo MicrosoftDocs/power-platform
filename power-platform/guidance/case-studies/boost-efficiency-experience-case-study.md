@@ -100,7 +100,7 @@ The following steps are automated:
 
 An email being received acts as the workflow trigger—a [text function](https://community.dynamics.com/blogs/post/?postid=c009f06c-4f94-4aa4-a0ea-c19c6f33b917) to identify relevant details in the email. Next, an HTTP action retrieves information from external sources through APIs. Finally, a join action collates and formats the content collected.
 
-| | Action | Description |
+| App | Action | Description |
 |-|--------|---------|
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 1. A new email arrives in a shared mailbox. | With the Outlook connector, select a shared mailbox that triggers the workflow. |
 |![Text function icon](media/a1-travel/text-function-icon.png)| 2. Find the travel destination. | With a text function, identify details (parameters) in the email to be automatically read. |
@@ -223,7 +223,7 @@ You can configure the SharePoint Online library to save the document output each
 
 Finalize the automation with the *Respond to Copilot* action to indicate the document is completed and sent.
 
-| | Action | Description |
+| App | Action | Description |
 |-|--------|-------------|
 | ![Copilot icon](media/a1-travel/copilot-icon.png) | Run a flow from Copilot Studio. | Select each input, coming from the copilot's interaction with the user, that populates the template placeholders. |
 | ![Word icon](media/a1-travel/word-icon.png) | Populate the Word document template. | Select the site, library, and file to use for the template. |
