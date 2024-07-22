@@ -3,7 +3,7 @@ title: "Data Loss Prevention (DLP) policies | MicrosoftDocs"
 description: You can create data policies that can act as guardrails to help reduce the risk of users from unintentionally exposing organizational data.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/03/2024
+ms.date: 07/22/2024
 author: laneswenka
 ms.subservice: admin
 ms.author: laswenka
@@ -11,6 +11,8 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+- ChrisGarty 
 ---
 # Data Loss Prevention (DLP) policies 
 Data Loss Prevention (DLP) is a critical aspect of maintaining data security and compliance within the Microsoft Power Platform ecosystem. 
