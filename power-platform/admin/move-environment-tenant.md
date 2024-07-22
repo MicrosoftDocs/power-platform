@@ -1,7 +1,7 @@
 ---
 title: "Migrate an environment to a different tenant"
 description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
-ms.date: 06/07/2023
+ms.date: 07/17/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -97,7 +97,7 @@ You'll also need to provide the following information:
 - The user mapping file for the first environment to be migrated. Each environment will need to have a separate mapping file. Note that the users need to exist in both the source and target tenants, and need to be licensed and enabled in the environments in order for the migration to succeed. They can have different source and target domains as long as they're active.
 - The security group object ID in the target tenant to assign to each environment, if a security group should be assigned. The target tenant security group object ID will be assigned during the migration if it's provided. If not provided, the security group can be assigned from the Power Platform admin center after the migration is completed.
 
-### Steps to be performed by a global admin, Dynamics 365 admin, or Power Platform admin
+### Steps to be performed by a Power Platform admin or Dynamics 365 admin
 
 1. Be authorized to perform the migration.
 3. A migration with a sandbox copy should be executed and validated by all parties prior to planning the migration of a business critical environment. In that case, we'll also need a new environment in the source tenant so we can copy the business critical environment into the new environment and perform the test migration.

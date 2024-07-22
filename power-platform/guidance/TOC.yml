@@ -241,7 +241,7 @@
                   href: coe/cli/cli-development/documentation.md
         - name: FAQ and Tips
           items:
-            - name: Questions, Tips and How To's
+            - name: CoE Starter Kit - FAQ
               href: coe/faq.md
             - name: Questions related to the Data Export integration
               href: coe/faq-dataexport.md
