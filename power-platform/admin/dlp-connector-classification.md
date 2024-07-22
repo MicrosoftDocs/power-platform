@@ -66,7 +66,7 @@ The following connectors can't be blocked by using DLP policies.
 |Excel Online (Business)     | [Dataverse (legacy)](/connectors/commondataservice/)       |
 |Kaizala       | [Dataverse](/connectors/commondataserviceforapps/)        |
 |Microsoft 365 Groups      | Power Apps Notifications ([v1](/connectors/powerappsnotification/) and [v2](/connectors/powerappsnotificationv2/))        |
-|Microsoft 365 Groups Mail (Preview)      | [Power Virtual Agents](/connectors/powervirtualagents/)        |
+|Microsoft 365 Groups Mail (Preview)      | [Microsoft Copilot Studio](/connectors/powervirtualagents/)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |
 |Microsoft Teams       |      |
