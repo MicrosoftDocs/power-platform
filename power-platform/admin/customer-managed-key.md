@@ -199,8 +199,8 @@ In Azure, perform the following steps:
       - **Key type**: **RSA**
       - **RSA key size**: **2048**
         
-   > [!Note]
-   > If you set an expiration date in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
+   > [!Important]
+   > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
    
 
 #### Import protected keys for Hardware Security Modules (HSM)
