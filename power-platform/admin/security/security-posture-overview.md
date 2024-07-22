@@ -66,7 +66,7 @@ Example: Tenant with 10 environments (five Managed Environments and five non-Man
 | Environment security group   |   1 x each environment    |  10 environments x 1 or 10   |       
 | Tenant data policies   |  Total number of environments    | 10 environments |      
 | Tenant isolation   |  Total number of environments    | 10 environments |         
-| Customer Lockbox   |  If turned on, the total number of Managed Environments.<br>0 if not turned on.<br>0 if not turned on and there are no Managed Environments.    | 5 environments |   
+| Customer Lockbox   |  If turned on, the total number of Managed Environments.<br>0 if not turned on.<br>0 if not turned on and there are no Managed Environments.    | Five environments |   
 
 The maximum impact possible is 55. 
 
@@ -79,7 +79,7 @@ Assume the following information about an environment:
 - 3 of 10 Environments have IP cookie bindings 
 - Customer Lockbox is off 
  
-Based on the example outlined above, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30. Given the formula: **Total achieved impact/Total possible impact** the assessment is 30/55, which has a label of _Enhanced_. 
+Based on the example outlined, the achieved status is: 10 + 10 + 5 + 2 + 3 or 30. Given the formula: **Total achieved impact/Total possible impact** the assessment is 30/55, which has a label of _Enhanced_. 
  
 > [!Note]
 > The advisor can have more recommendations than the number of environments in the tenant because an environment can have multiple recommendations. There can be one-to-many relationships. For example, an environment can have a recommendation to enable IP firewall and IP cookie binding.
@@ -108,7 +108,7 @@ There are several security features that help secure your tenant, including:
     > [!Note]
     > The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
 
-- **Environment security group**: This feature is applicable to both Managed Environments and non-Managed Environments. Setting up security groups helps control which licensed users can access environments. For more information, see [Control user access to environments: security groups and licenses](../control-user-access.md)
+- **Environment security group**: This feature is applicable to both Managed Environments and non-Managed Environments. Setting up security groups helps control, which licensed users can access environments. For more information, see [Control user access to environments: security groups and licenses](../control-user-access.md)
 
 - **Azure Virtual Network:** This feature is applicable only to Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your virtual network without exposing them over the public internet. For more information, see [Virtual Network support for Power Platform overview](../vnet-support-overview.md)
 
