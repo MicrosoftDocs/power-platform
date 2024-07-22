@@ -33,7 +33,7 @@ Anyone with a [work or school email address](/power-apps/maker/signup-for-power
 
 You can get the plan using one of the following ways:
 
-- Sign up on the Power Apps Developer Plan [website](https://powerapps.microsoft.com/en-us/developerplan/).
+- Sign up on the Power Apps Developer Plan [website](https://www.microsoft.com/power-platform/products/power-apps/free).
 
 - Get the Power Apps Developer Plan with Visual Studio Dev Essentials. If you're a Visual Studio Dev Essentials user, the Power Apps Developer Plan is included in your benefits. Visit [My
 benefits](https://my.visualstudio.com/benefits) and select the Power Apps tile to sign up for the Power Apps Developer Plan.
