@@ -368,6 +368,7 @@ Once the enterprise policy is created, the key vault administrator grants the en
    > - The key is active and not expired.
    > - The key isn't deleted.
    > - The above key permissions aren't revoked.
+   >   
    > The environments which are using this key will be disabled when the encryption key is not accessible.   
    
 ### Grant the Power Platform admin privilege to read enterprise policy
