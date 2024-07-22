@@ -480,7 +480,7 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
 
- > [!Recommendation]
+ > [!Tip]
  > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
@@ -516,7 +516,7 @@ To rotate the encryption key by creating a new key version, use the following st
 1.	The **Enabled** setting defaults to **Yes**, which means that the new key version is automatically enabled upon creation.
 1.	Select **Create**.
    
-> [!Recommendation]
+> [!Tip]
 > To comply with your key rotation policy, you can rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy). You can either configure a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
 
 > [!IMPORTANT]
