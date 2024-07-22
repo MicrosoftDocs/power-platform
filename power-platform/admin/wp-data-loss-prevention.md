@@ -76,7 +76,7 @@ As new data policies are created, or when existing policies are updated, there's
 ## Latency considerations
 The time it takes to effectively implement data policies varies from customer to customer based on their volume of environments and resources within those environments. The more apps, flows, and chatbots a customer has the longer it takes for policy changes to take full effect. For the most extreme cases, the latency for full enforcement is 24 hours. In most cases it is within an hour.
 
-### Related information
+### See also
 
 - [Manage data loss prevention (DLP) policies](prevent-data-loss.md)
 - [DLP policies for Power Automate](/power-automate/prevent-data-loss)
