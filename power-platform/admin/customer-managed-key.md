@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 06/17/2024
+ms.date: 07/22/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms
@@ -200,7 +200,7 @@ In Azure, perform the following steps:
       - **RSA key size**: **2048**
         
    > [!Note]
-   > If you set an **expiration date** in your key and the key expired, all the environments that are encrypted with this key will be down. Set [an alert to monitor expiry certificates](https://learn.microsoft.com/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
+   > If you set an expiration date in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
    
 
 #### Import protected keys for Hardware Security Modules (HSM)
@@ -363,9 +363,13 @@ Once the enterprise policy is created, the key vault administrator grants the en
 > The above permission setting is based on your key vault's **Permission model** of **Azure role-based access control**. If your key vault is set to **Vault access policy**, it's recommended that you migrate to the role-based model. To grant your enterprise policy access to the key vault using **Vault access policy**, create an Access policy, select **Get** on *Key management operations* and **Unwrap key** and **Wrap key** on *Cryptographic Operations*.
 
    > [!Note]
-   > To prevent any unplanned system outages, it is important that the Enterprise policy has access to the key. Please make sure that the Key vault is active, the key is active and not expired, key is not deleted, and the above key permissions are not revoked. The environments which are using this key will be disabled when the encryption key is not accessible.   
+   > To prevent any unplanned system outages, it's important that the enterprise policy has access to the key. Make sure that:
+   > - The key vault is active.
+   > - The key is active and not expired.
+   > - The key isn't deleted.
+   > - The above key permissions aren't revoked.
+   > The environments which are using this key will be disabled when the encryption key is not accessible.   
    
-
 ### Grant the Power Platform admin privilege to read enterprise policy
 
 Administrators who have Azure global, Dynamics 365, and Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the global admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator is able to view the enterprise policies on the Power Platform admin center.  
