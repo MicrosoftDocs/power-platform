@@ -173,7 +173,11 @@ Since all the raw telemetry is now flowing into Application Insights, you can us
 
 Within these tables, **Custom Dimensions** column contains most of the metadata required for detailed debugging of cloud flows – such as environment ID, flow ID and action names.
 
-### See also
+## Known limitations
+
+- When an environment is enabled for [customer-managed keys](/power-automate/customer-managed-keys), then Power Automate data cannot be sent to Application Insights.
+
+## Related information
 
 - [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard)
 - [Create or edit an alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric)
