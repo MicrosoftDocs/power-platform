@@ -4,7 +4,7 @@ description: Learn about how to set up Azure Application Insights with Power Aut
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/30/2024
+ms.date: 07/23/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -12,7 +12,8 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- srpoduri 
+  - ChrisGarty
+  - srpoduri 
 ms.contributors:
 - rakrish
 - Zeffin
@@ -173,7 +174,11 @@ Since all the raw telemetry is now flowing into Application Insights, you can us
 
 Within these tables, **Custom Dimensions** column contains most of the metadata required for detailed debugging of cloud flows – such as environment ID, flow ID and action names.
 
-### See also
+## Known limitations
+
+When an environment is enabled for [customer-managed keys](/power-automate/customer-managed-keys), then Power Automate data can't be sent to Application Insights.
+
+## Related information
 
 - [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard)
 - [Create or edit an alert rule](/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric)
