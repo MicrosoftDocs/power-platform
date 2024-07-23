@@ -3,7 +3,7 @@ title: "Manage the encryption key | MicrosoftDocs"
 description: "Learn how you can manage database encryption key for your environment."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/07/2024
+ms.date: 07/23/2024
 author: mikferland-msft
 ms.subservice: admin
 ms.author: miferlan
@@ -103,7 +103,7 @@ Use this procedure to set the manage key feature the first time for an environme
 
 > [!WARNING]
 > When you perform the steps described here for the first time you are opting in to self-managing your encryption keys. More information: [Understand the potential risk when you manage your keys](#understand-the-potential-risk-when-you-manage-your-keys).  
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
   
 2. Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar. 
 
@@ -138,7 +138,7 @@ Use this procedure to set the manage key feature the first time for an environme
 ### Activate an encryption key for a tenant
 Once an encryption key is generated or uploaded for the tenant, it can be activated. 
 
-1.    Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1.    Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 2.    Select the **Environments** tab, and then select **Manage encryption keys** on the toolbar.
 1.  Select **Confirm** to acknowledge the manage key risk.
 2.  Select a key that has an **Available** state and then select **Activate key** on the toolbar.
@@ -180,7 +180,7 @@ By default, each environment is encrypted with the Microsoft-provided encryption
 1.  For production environments, confirm the environment by entering the environment's name.
 2.  Select **Confirm** to return to standard encryption key management.
   
-#### Lock the tenant  
+#### Lock the tenant
 Since there is only one active key per tenant, locking the encryption for the tenant *disables all the environments* that are in the tenant. All locked environments remain inaccessible to everyone, including [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)], until a Power Platform admin in your organization unlocks it by using the key that was used to lock it.  
   
 > [!CAUTION]
@@ -195,7 +195,7 @@ Since there is only one active key per tenant, locking the encryption for the te
 > - You must wait at least one hour after you lock active environments before you can unlock them. 
 > - Once the lock process begins, all encryption keys with either an Active or Available state are deleted. The lock process can take up to an hour and during this time unlocking locked environments is not allowed. 
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 2. Select the **Environments** tab and then on the command bar select **Manage encryption keys**. 
 3. Select the **Active** key and then select **Lock active environments**. 
 4. On the right pane select **Upload active key**, browse to and select the key, enter the password, and then select **Lock**. 
@@ -210,7 +210,7 @@ To unlock environments you must first [upload](#upload-a-key-pfx-or-byok) and th
 > - You can't generate a new or upload an existing key until all locked environments are unlocked. 
 
 ##### Unlock encryption key
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 2. Select the **Environments** tab and then select **Manage encryption keys**.  
 3. Select the key that has a **Locked** state, and then on the command bar select **Unlock key**. 
 4. Select **Upload locked key**, browse to and select the key that was used to lock the tenant, enter the password, and then select **Unlock**. 
