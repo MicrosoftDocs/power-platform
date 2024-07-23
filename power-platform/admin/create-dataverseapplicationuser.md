@@ -6,7 +6,7 @@ ms.reviewer: sericks
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/10/2022
+ms.date: 07/23/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use this endpoint to create an application user in a target environment.  Callers of this endpoint must either be Power Platform administrators, Global administrators, or a Power Platform Service Principal application.
+Use this endpoint to create an application user in a target environment.  Callers of this endpoint must either be Power Platform administrators or a Power Platform Service Principal application.
 
 ## Authentication
 
