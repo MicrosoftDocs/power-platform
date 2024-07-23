@@ -76,11 +76,11 @@ To show an image for entities that don't have an **EntityImage** by default, you
 
 **To add the entity image to the Word template** 
 
-1. Download and open the Word template.
+1. Download and open the word template.
 
    The downloaded template is saved in the following format:<br>*recordType organizationDateFormat time localDateFormat time*.docx<br>For example, the downloaded template name for the appointment is: **Appointment 2020-7-15 15-39-27 17-7-2020 12-28-00 PM.docx**.
 
-2. Open the **XML Mapping** pane, right-click to select **new_entityimage**, and then select **Insert Content Control** > **Picture**.
+2. In the **Developer** tab, open **XML Mapping Pane**, right-click to select **new_entityimage**, and then select **Insert Content Control** > **Picture**.
 
     > [!div class="mx-imgBorder"]
     > ![Add an image control to a Word template.](media/ts-wordtemplate-add-image-word-template.png "Add an image control to a Word template")
