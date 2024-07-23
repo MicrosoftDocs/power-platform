@@ -52,7 +52,7 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
-            - name: View known issues (preview)
+            - name: View known issues
               href: view-known-issues.md
             - name: Support environments and the consent process
               href: support-environment.md
@@ -682,6 +682,8 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
+                - name: Telemetry events for mobile app synchronization and actions (preview)
+                  href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
                 - name: Set up Application Insights with Power Automate
@@ -714,6 +716,8 @@
               items:
                 - name: AsyncOperationBase table
                   href: manage-storage-asyncoperation-base-table.md
+                - name: msdyn_copilotinteraction table
+                  href: manage-storage-msdyn-copilotinteraction-table.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage
