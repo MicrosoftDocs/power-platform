@@ -31,7 +31,7 @@ Early access begins approximately two months before general availability of each
 - Sovereign early access: Second Monday of February
 
 **Release wave 2**
-- Early access: First Monday of August
+- Early access: August 12, 2024
 - Sovereign early access: Second Monday of August
 
 > [!NOTE]
