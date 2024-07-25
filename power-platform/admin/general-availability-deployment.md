@@ -7,10 +7,11 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/08/2024
+ms.date: 07/25/2024
 search.audienceType: 
   - admin
 ms.contributors:
+- leicke
 - matleon
 - swatim
 - alvaror
@@ -49,7 +50,7 @@ You receive release wave updates as part of your Dataverse weekly updates. This 
 
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
 
-|Region  | Deployment schedule for 2024 wave 1 general availability |
+|Region  | Deployment schedule for 2024 wave 2 general availability |
 |---------|---------|
 | First release                | September 23, 2024 |
 | Canada                       | September 30, 2024  |
