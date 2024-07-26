@@ -28,7 +28,7 @@ The Power Automate licenses are categorized as follows:
 |License type |License scope |Description |
 |-------|------|------|
 |User license| User-centric: a user license is assigned to a user.|It entitles the user to access specific capabilities.|
-|Capacity license| Object-centric: a capacity license is allocated to a Power Automate object (cloud flow, machine, hosted machine, hosted machine group).|It provides the object autonomous entitlements (the same way a user license provides entitlements to a user).|
+|Capacity license| Automation-centric: a capacity license is allocated to a Power Automate automation (cloud flow, machine, hosted machine, hosted machine group).|It provides the automation entitlements (the same way a user license provides entitlements to a user).|
 
 You can purchase those licenses on the [Power Automate Pricing](https://flow.microsoft.com/pricing/) page or from your [Microsoft 365 Admin Center](https://admin.microsoft.com/) (if you're an admin). [Learn more on purchasing](buy-licenses.md).
 
@@ -53,8 +53,8 @@ Hereunder the list of available Power Automate user licenses:
 |License name |Power Automate Premium |
 |--------|--------|
 |**License type**|User license (paid)|
-|**Entitlements**|It's the license we recommend for all users as it gives them the full set of capabilities to create both API based and desktop automations.<br><br>This license allows users to create, run, and shared unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) for API-based automation (with standard, premium and custom connectors) and to automate their legacy applications simulating a human behavior such as keyboard or mouse keys and movement (with desktop flows through Robotic process automation (RPA).<br><br>More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine through an attended bot borne by the license. <br><br>Additionally, this license also includes full access to process mining functionalities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, etc.|
-|**User category**|The Power Automate Premium license suits users looking to plainly take advantage of Power Automate.|
+|**Entitlements**|We recommend the Power Automate Premium license for all users, as it gives them the full set of capabilities to create both API based and desktop automations.<br><br>This license allows users to create, run, and share unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) for API-based automation (with standard, premium, and custom connectors) and to automate their legacy applications simulating a human behavior such as keyboard or mouse keys and movement (with desktop flows through robotic process automation (RPA).<br><br>More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine through an attended bot borne by the license. <br><br>Additionally, this license also includes full access to process mining capabilities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, and more.|
+|**User category**|The Power Automate Premium license suits users looking to build automations and take advantage of the full spectrum of Power Automate capabilities.|
 
 # [**Power Automate Trial license**](#tab/power-automate-trial)
 
@@ -63,8 +63,8 @@ Hereunder the list of available Power Automate user licenses:
 |License name |Power Automate trial |
 |--------|--------|
 |**License type**|User license (90 days trial)|
-|**Entitlements**|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacities). <br><br>The Trial license bears the extra capability to execute their desktop flows in unattended mode on their registered machine through an unattended bot borne by the license.|
-|**User category**|The Power Automate Trial license suits users eager to discover desktop flows.|
+|**Entitlements**|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacity). <br><br>The Trial license bears the extra capability to execute their desktop flows in unattended mode on their registered machine through an unattended bot borne by the license.|
+|**User category**|The Power Automate Trial license suits users eager to discover how desktop flows can be leveraged as a way to create automations.|
 
 Learn more about the [Power Automate trial](deep-dive-on-specific-license.md#power-automate-trial-license) license.
 
@@ -76,7 +76,7 @@ Learn more about the [Power Automate trial](deep-dive-on-specific-license.md#pow
 |--------|--------|
 |**License type**|User license (free)|
 |**Entitlements**|This license provides basic access to Power Automate allowing users to create and run (but not share) unlimited cloud flows (within [PPR limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)) restricted to standard connectors only.|
-|**User category**|The Power Automate Free license suits users eager to discover cloud flows.|
+|**User category**|The Power Automate Free license suits users eager to discover how cloud flows can be leveraged as a way to create automations.|
 
 Learn more about the [Power Automate Free](deep-dive-on-specific-license.md#power-automate-free-license) license.
 
@@ -86,7 +86,7 @@ Learn more about the [Power Automate Free](deep-dive-on-specific-license.md#powe
 
 :::image type="content" source="../media/RPA-license/standalone_capacity_licenses-2.png" alt-text="Screenshot of capacity licenses.":::
 
-In addition to user licenses, organizations can upgrade their automation scenarios with capacity licenses, which are allocated to Power Automate objects (cloud flows, machines, hosted machines, hosted machine groups) and provide these objects autonomous entitlements (regardless of the user license owned by persons interacting with those objects). 
+In addition to user licenses, organizations can upgrade their automation scenarios with capacity licenses, which are allocated to Power Automate automations (cloud flows, machines, hosted machines, hosted machine groups) and provide these automations autonomous entitlements (regardless of the user license owned by persons interacting with those automations). 
 
 Hereunder the list of available Power Automate capacity licenses: 
 
@@ -97,9 +97,9 @@ Hereunder the list of available Power Automate capacity licenses:
 |License name |Power Automate Process |
 |--------|--------|
 |**License type**|Capacity license (paid)|
-|**Allocated object**|- Cloud flow <br>- Standard machine|
+|**Allocated automation**|- Cloud flow <br>- Standard machine|
 |**Entitlements**|Allocated to a cloud flow, a Power Automate Process license entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process license allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit). <br><br>Multiple cloud flows part of the same business process (invoicing process, ticketing process, etc.) can be associated together and covered by the same Process licenses.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>.|
-|**Will benefit**|Organizations looking to automatize at scale their business processes though cloud automation and/or RPA desktop automations.|
+|**Will benefit**|Organizations looking to automate their business processes at scale using cloud flows or RPA desktop automations or a combination of both.|
 
 > 1. When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
 
@@ -126,8 +126,8 @@ Learn more about the [Power Automate Hosted Process](deep-dive-on-specific-licen
 
 > [!IMPORTANT]
 > __Can my organization only purchase and use capacity licenses within an environment?__
-> 
-> Capacity licenses usually can't replace all user licenses within an environment as some essential capabilities are only available to licensed users:
+>
+> Capacity licenses are not meant to replace user licenses within an environment as some essential capabilities are only available to licensed users to create automations. Capacity licenses can grant higher [PPR](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) to such flows built using the premium user licenses:
 > - Allocation of a Process license to a machine (required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
 > - Multiple monitoring pages in the Power Automate portal are displayed only to Power Automate Premium users (workqueue page, machine list page, desktop flow list page, etc.).
 
@@ -138,20 +138,26 @@ Hereunder a table detailing each license [entitlement](#license-entitlements):
 ||Premium license |Process license |Hosted Process license |
 |----------|-------|---------------------|--------------|
 |__Applied to__|User|- Cloud flow <br>- Machine|- Hosted machine <br>- Hosted machine group<br>- Cloud flow <br>- Machine|
-|__Daily PPR limit  <sup>1</sup>__|40k per user|250k per Process license <sup>2</sup>|250k per Hosted Process license <sup>2</sup>|
-|__Standard connectors__|Included|Included|Included|
-|__Premium connectors__|Included|Included|Included|
-|__Custom connectors__|Included|Included|Included|
-|__Attended RPA__|One attended bot included|Not included|Not included|
-|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included <sup>3</sup>|
-|__Hosted RPA__|Not included|Not included|One hosted bot included|
-|__Business process flows__|Included|Included|Included|
-|__On-premises gateways__|Included|Included|Included|
-|__Process mining__|Included|Not included|Not included|
-|__Process mining data storage__|50 MB per license <sup>4</sup>|Not included|Not included|
+|__<b>Capacity Limits</b>__||||
+|__Daily PPR limit<sup>1</sup>__|40k per user|250k per Process license<sup>2</sup>|250k per Hosted Process license<sup>2</sup>|
+|__Process mining data storage__|50 MB per license<sup>4</sup>|Not included|Not included|
 |__AI Builder credits__|5000 per month|5000 per month|5000 per month|
 |__Dataverse database storage__|250 MB per license|50 MB per license|50 MB per license|
 |__Dataverse file storage__|2 GB per license|200 MB per license|200 MB per license|
+|__Standard connectors__|Included|Included|Included|
+|__<b>Connectors</b>__||||
+|__Premium connectors__|Included|Included|Included|
+|__Premium connectors__|Included|Included|Included|
+|__Custom connectors__|Included|Included|Included|
+|__<b>Desktop Automation</b>__||||
+|__Attended RPA__|One attended bot included|Not included|Not included|
+|__Unattended RPA__|Not included|One unattended bot included|One unattended bot included<sup>3</sup>|
+|__Hosted RPA__|Not included|Not included|One hosted bot included|
+|__<b>Other</b>__||||
+|__Process mining__|Included|Not included|Not included|
+|__Business process flows__|Included|Included|Included|
+|__On-premises gateways__|Included|Included|Included|
+
 
 > 1. The Power Platform requests are subjected to higher limits during the transition period. Learn more in [Request limits in Power Automate](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate).
 
@@ -224,4 +230,8 @@ In the Power Automate portal, select **Settings** > **View my licenses**:
 > - The capacity license(s) (and capacity add-ons) display in the section _Environment capacities_.
 > - The user entitlement (in context of environment capacities) display in the _Capabilities_ section with a green check mark.
 
+## Seeded licenses
+Learn more about power automate capabilities included in [Seeded licenses](deep-dive-on-specific-license.md#power-automate-seeded-licenses) 
 
+## Legacy licenses
+Learn more about power automate capabilities included in [Legacy licenses](deep-dive-on-specific-license.md#power-automate-legacy-licenses) 
