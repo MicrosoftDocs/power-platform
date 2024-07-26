@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/19/2022
+ms.date: 07/23/2024
 ms.subservice: admin
 ms.author: paulliew
 search.audienceType: 
@@ -63,7 +63,7 @@ Standard user personal data (for example, UserName, UserID, Phone, Email, and Ad
 
 To avoid interruption to business applications that may be critical to your organization's operations, a user's rows are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application.
 
-Only Global admin and Dataverse System Administrators can perform the discover, rectify, export, and delete actions listed below.
+Dataverse System Administrators can perform the discover, rectify, export, and delete actions listed below.
 
 ### Discover
 System Administrators can create multiple environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User table with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
