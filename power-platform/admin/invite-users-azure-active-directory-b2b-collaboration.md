@@ -3,7 +3,7 @@ title: "Invite users with Microsoft Entra B2B collaboration  | MicrosoftDocs"
 description: Invite users with Microsoft Entra B2B collaboration
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/15/2022
+ms.date: 07/23/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -18,11 +18,11 @@ contributors:
 ---
 # Invite users with Microsoft Entra B2B collaboration
 
-You can invite other users to access your environment. The [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] Global admin can do this through the [Azure portal](https://portal.azure.com). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. The use of the apps created using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps are granted. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
+You can invite other users to access your environment. A user with the [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) role can do this through the [Azure portal](https://portal.azure.com). Learn more at [Add guest users to the directory](/entra/external-id/add-users-administrator#add-guest-users-to-the-directory). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. The use of the apps created using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps are granted. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   
 ## Requirements  
   
-- To send  business-to-business (B2B) user invitations, you  must have an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] Global admin role.  
+- To send  business-to-business (B2B) user invitations, you  must have at least the User Administrator role.  
   
 - To bulk- invite users, get the latest [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] which can be downloaded from the [PowerShell module's release page](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.98).  
   
@@ -46,7 +46,7 @@ You can invite other users to access your environment. The [!INCLUDE[pn_Office_3
    Invited users will not be able to use Dynamics 365 Customer Voice. You must create a new user in your tenant and then provide access to the new user.
    
 ## Invite a user  
- You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Global admins and limited admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
+ You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Users with sufficient access such as user admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
   
  Admins can use one of the following methods to invite B2B users to their environment:  
   
