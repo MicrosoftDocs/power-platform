@@ -7,13 +7,13 @@ ms.author: meeram
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/19/2024
+ms.date: 07/26/2024
 search.audienceType: 
   - admin
 ---
 # About trial environments
 
-Using the Microsoft Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based). 
+Using the Microsoft Power Platform admin center, you can create environments of multiple types. Using trial environments, companies and customers can try out new features and solutions. There are two types of trial environments: trial (standard) and trial (subscription-based).
 
 > [!NOTE]
 > The term "trial," as used in all other topics and the user interface, refers to the standard type of trial environment rather than the subscription-based type.
@@ -121,13 +121,13 @@ The type of trial environment you create depends on where you start and your ten
 
 A trial (subscription-based) environment lasts as long as the subscription is active. To check its expiration date, perform the following steps.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a user with access to view subscription information such as a user with the [Billing Administrator](/entra/identity/role-based-access-control/permissions-reference#billing-administrator) role.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a user with access to view subscription information. Learn more about admin roles at [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
   
 2. Select **Billing** > **Your products**, and then select the **Products** tab.
   
-3. Select your Dynamics 365 subscription, and review the date in the **Expiration Date** section.
+3. Select your Dynamics 365 subscription, and review the expiration date.
 
-   > [!div class="mx-imgBorder"] 
+   > [!div class="mx-imgBorder"]
    > ![Check trial (subscription-based) expiration.](media/subscription-expiration-date.png "Check trial (subscription-based) expiration")
 
 ## Extend a trial (standard) environment
@@ -136,7 +136,6 @@ Note the following:
 
 - Within the last 7 days before the standard trial environment is set to expire, the trial environment admin can do a self-service extension of the expiring environment. This adds an additional 30 days from the original expiration date.
 - There is only one self-service extension allowed per standard trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
-
 
 **To extend a standard trial:**
 
@@ -159,10 +158,9 @@ The expiration of subscription-based trial (also known as an admin trial) enviro
 
 **To extend a subscription-based (admin) trial:**
 
-Admins can request a single extension in the Microsoft 365 admin center. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/extend-your-trial?view=o365-worldwide).
+Admins can request a single extension in the Microsoft 365 admin center. See [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/extend-your-trial).
 
 There is only one self-service extension allowed per offer-based trial environment. To further retain the environment, it must be [converted to production](#convert-either-type-of-trial-environment-to-a-production-environment).
-
 
 ## Convert either type of trial environment to a production environment
 
