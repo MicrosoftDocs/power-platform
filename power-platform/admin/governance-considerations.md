@@ -4,7 +4,7 @@ description: Explains how Power Apps and Power Automate be made widely available
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/07/2022
+ms.date: 07/26/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -14,7 +14,7 @@ search.audienceType:
   - admin
 ---
 
-# Security and governance considerations 
+# Security and governance considerations
 
 Many customers wonder how can Power Platform be made available to their broader business and supported by IT? Governance is the answer. It aims to enable business groups to focus on solving business problems efficiently while complying with IT and business compliance standards. The following content is intended to structure themes often associated with governing software and bring awareness to capabilities available for each theme as it relates to governing Power Platform. 
 
@@ -70,7 +70,7 @@ The following principals are supported for each role type.
 
 > [!NOTE]
 > - In the Default environment, all users in a tenant are granted access to the Environment Maker role. 
-> - Microsoft Entra tenant Global Administrators have admin access to all environments.
+> - Users with the Power Platform Administrator role have admin access to all environments.
 
 #### FAQ - What permissions exist at a Microsoft Entra tenant level? 
 
