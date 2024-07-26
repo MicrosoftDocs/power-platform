@@ -590,7 +590,7 @@
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
                       href: use-service-admin-role-manage-tenant.md
-                    - name: Manage high privileged admin roles (preview)
+                    - name: Manage high privileged admin roles
                       href: manage-high-privileged-admin-roles.md
                     - name: Miscellaneous privileges
                       href: miscellaneous-privileges.md
@@ -684,6 +684,8 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
+                - name: Telemetry events for mobile app synchronization and actions (preview)
+                  href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
                 - name: Set up Application Insights with Power Automate
@@ -716,6 +718,8 @@
               items:
                 - name: AsyncOperationBase table
                   href: manage-storage-asyncoperation-base-table.md
+                - name: msdyn_copilotinteraction table
+                  href: manage-storage-msdyn-copilotinteraction-table.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage
