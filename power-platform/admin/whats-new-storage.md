@@ -1,12 +1,12 @@
 ---
 title: Dataverse capacity-based storage administration in Microsoft Power Platform
 description: Learn about enhancements for Dataverse capacity-based storage that affect administrators, including reporting and reaching Dataverse database capacity limits.
-author: mayadumesh
+author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/04/2024
 ms.subservice: admin
-ms.author: mayadu
+ms.author: ianceicys-msft
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -44,7 +44,7 @@ Following the introduction of Dataverse capacity, we updated our capacity report
 There are two versions for storage capacity reporting: 
 
 - **Legacy capacity model**: Organizations with the [previous licensing model](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) for storage. Users with these licenses see a single capacity for entitlement. More information: [Legacy storage capacity](legacy-capacity-storage.md)
-- **New capacity model**: Organizations with the [new licensing model](capacity-storage.md#licenses-for-the-new-storage-model) for storage. Users with these licenses see the storage capacity entitlement and usage by database, file, and log. More information: [Dataverse storage capacity](capacity-storage.md)
+- **New capacity model**: Organizations with the [new licensing model](capacity-storage.md#Licenses-for-Microsoft-Dataverse-capacity-based-storage-model) for storage. Users with these licenses see the storage capacity entitlement and usage by database, file, and log. More information: [Dataverse storage capacity](capacity-storage.md)
 
 ## What happens when my organization exceeds storage entitlements?
 

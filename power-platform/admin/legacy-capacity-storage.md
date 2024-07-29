@@ -28,9 +28,9 @@ The following licenses provide capacity using the legacy storage model. If you h
 To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Licenses**.
 
 > [!NOTE]
-> If you have a mix of the abovementioned legacy model licenses and [new model licenses](capacity-storage.md#licenses-for-the-new-storage-model), you'll see the [new model report](capacity-storage.md).
+> If you have a mix of the abovementioned legacy model licenses and [new model licenses](capacity-storage.md#Licenses-for-Microsoft-Dataverse-capacity-based-storage-model), you'll see the [new model report](capacity-storage.md).
 > 
-> If you have none of the abovementioned legacy model licenses nor the [new model licenses](capacity-storage.md#licenses-for-the-new-storage-model), you'll see the [new model report](capacity-storage.md).
+> If you have none of the abovementioned legacy model licenses nor the [new model licenses](capacity-storage.md#Licenses-for-Microsoft-Dataverse-capacity-based-storage-model), you'll see the [new model report](capacity-storage.md).
 
 ## Verifying your legacy storage model
 
