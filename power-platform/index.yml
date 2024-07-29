@@ -99,9 +99,9 @@ tools:
   - title: Connectors
     imageSrc: "media/hub-page/connectors.png"
     url: /connectors/
-  - title: Copilot and generative AI
+  - title: Copilots and generative AI
     imageSrc: "media/hub-page/copilot.svg"
-    url: admin/geographical-availability-copilot.md
+    url: copilot.yml
   - title: Microsoft Dataverse
     imageSrc: "media/hub-page/dataverse.svg"
     url: /power-apps/maker/data-platform/
