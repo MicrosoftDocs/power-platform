@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 07/22/2024
+ms.date: 07/23/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms
@@ -130,7 +130,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 ##### Prerequisites
 
 - An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules.
-- Global tenant admin or a Microsoft Entra ID with:
+- A Microsoft Entra ID with:
   - Contributor permission to the Microsoft Entra subscription.
   - Permission to create an Azure Key Vault and key.
   - Access to create a resource group. This is required to set up the key vault.
@@ -199,8 +199,8 @@ In Azure, perform the following steps:
       - **Key type**: **RSA**
       - **RSA key size**: **2048**
         
-   > [!Note]
-   > If you set an expiration date in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
+   > [!Important]
+   > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
    
 
 #### Import protected keys for Hardware Security Modules (HSM)
@@ -373,7 +373,7 @@ Once the enterprise policy is created, the key vault administrator grants the en
    
 ### Grant the Power Platform admin privilege to read enterprise policy
 
-Administrators who have Azure global, Dynamics 365, and Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the global admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator is able to view the enterprise policies on the Power Platform admin center.  
+Administrators who have Dynamics 365 or Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator is able to view the enterprise policies on the Power Platform admin center.  
 
 > [!NOTE]
 > Only Power Platform and Dynamics 365 administrators who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 administrators might be able to view the enterprise policy but they'll get an error when they try to **Add environment** to the policy.
@@ -400,7 +400,7 @@ Administrators who have Azure global, Dynamics 365, and Power Platform administr
 To manage the environment's encryption, you need the following permission:
 
 - Microsoft Entra active user who has a Power Platform and/or Dynamics 365 admin security role.
-- Microsoft Entra user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
+- Microsoft Entra user who has either a Power Platform or Dynamics 365 service admin role.
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
