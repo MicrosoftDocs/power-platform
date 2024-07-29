@@ -295,6 +295,8 @@ To monitor the status of audit delete jobs, see the next section.
 
 1. Review the system job, and the status reason column for details about the status your job. Select the job to see more details about the results of the delete job.
 
+   :::image type="content" source="media/audit-log-delete-job-status.png" alt-text="Screenshot that shows the system job detail for bulk delete of audit logs." lightbox="media/audit-log-delete-job-status.png":::
+
    :::image type="content" source="media/audit-log-delete-job-details.png" alt-text="Screenshot that shows the system job detail for bulk delete of audit logs." lightbox="media/audit-log-delete-job-details.png":::
 
 ## Reduce database storage
