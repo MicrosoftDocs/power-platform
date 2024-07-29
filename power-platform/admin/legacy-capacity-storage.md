@@ -12,13 +12,13 @@ search.audienceType:
 ---
 # Legacy storage capacity
 
-In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
+In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you're using the legacy licensing model for storage discussed in this article.
 
 For information on the new storage model, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
 ## Licenses for the legacy storage model 
 
-The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you'll see the legacy model report: 
+The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you will see the legacy model report: 
 
 - Microsoft Dynamics 365 Additional Non-production Instance 
 - Microsoft Dynamics 365 Additional Test Instance 
@@ -155,16 +155,20 @@ The 110 GB of storage is used by the three types of storage: database, log, and 
 
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
 
-Notifications for capacity approaching storage limits will be triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when total legacy model capacity has less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
+Notifications for capacity approaching storage limits will be triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted is sent when total legacy model capacity has less than 5% of space available.  The final tier of notification is sent when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements). This alerts the admin that the following operations are not available until there is available capacity present on the tenant.
 
-- Create a new environment (requires minimum 1GB capacity available)
+- Create a new environment (requires minimum 1 GB capacity available)
 - Copy an environment
 - Restore an environment
-- Convert a trial environment to paid (requires minimum 1GB capacity available)
-- Recover an environment (requires minimum 1GB capacity available)
+- Convert a trial environment to paid (requires minimum 1 GB capacity available)
+- Recover an environment (requires minimum 1 GB capacity available)
 - Add Dataverse database to an environment
 
-These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
+These notifications are sent out to tenant admins on a weekly basis. 
+
+At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. 
+
+All tenant admins for a tenant will automatically receive these notifications.
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
 
@@ -176,11 +180,11 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
-We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
+We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage, leading to decreased usage of database capacity and an increase in file capacity.
 
 ### Why could my database table size decrease while my table and file data sizes remain the same?
 
-As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space. This leads to decreased usage of database capacity, while the table and file data size computations remain unchanged.
+As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space leading to decreased usage of database capacity, while the table and file data size computations remain unchanged.
 
 ### I have available instances (production and sandbox), but my capacity usage is more than my capacity entitlement. Will I be able to provision new environments? 
 
@@ -188,15 +192,21 @@ Provisioning a new environment requires that you not be delinquent in storage ca
 
 ### I have storage licenses from the legacy licensing model, and I also purchased new model storage licenses. Which report will I see?
 
-You'll see the report for the [new licensing model](capacity-storage.md). 
+You will see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
 
 ### Do I get notified through email when my org is over capacity?
 
-Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
+Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. 
+
+Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
 
 ### What are tables ending in “- analytics” in my capacity report?
 
-Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+Tables ending in "– Analytics" are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service. 
+
+Resource scheduling and optimization analytics dashboards generate predictive insights and require data that is synched from Dataverse tables. 
+
+See **More information** below for documentation covering the installed Insights applications and the "– Analytics" tables used to create insights and dashboards.
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
