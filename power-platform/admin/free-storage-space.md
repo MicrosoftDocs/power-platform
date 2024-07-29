@@ -265,11 +265,11 @@ When you enable auditing, customer engagement apps create audit logs to store th
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
 
-1. Under **Auditing**, select **Delete logs**.
+1. Under **Auditing**, **Free up capacity**, select **Delete audit logs**.
 
    :::image type="content" source="media/audit-log-delete.png" alt-text="Screenshot that shows where the Delete logs option is located on the Auditing card of an environment." lightbox="media/audit-log-delete.png":::
 
-1. Delete audit logs to free up log storage capacity for the selected environment.
+1. Select to delete logs either by table, access type, or by date.
 
    :::image type="content" source="media/audit-log-delete-select.png" alt-text="Screenshot that shows the Select logs to delete window where you can specify the type of logs you want to delete." lightbox="media/audit-log-delete-select.png":::
 
@@ -281,7 +281,7 @@ When you enable auditing, customer engagement apps create audit logs to store th
 
 1. Select **Delete**, and then confirm the deletions.
 
-All data is deleted in an asynchronous background system job.
+All data is deleted in an asynchronous background system job that may take up to 72 hours to be scheduled to run.
 
 To monitor the status of audit delete jobs, see the next section.
 
@@ -293,9 +293,9 @@ To monitor the status of audit delete jobs, see the next section.
 
    :::image type="content" source="media/free-storage-method8a-1.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-1.png":::
 
-1. Select the system job name to open details about your delete job.
+1. Review the system job, and the status reason column for detaisl about your job. Select the ojb to see more details about your delete job.
 
-   :::image type="content" source="media/audit-log-delete-job-status.png" alt-text="Screenshot that shows the system job for bulk delete of audit logs." lightbox="media/audit-log-delete-job-status.png":::
+   :::image type="content" source="media/audit-log-delete-job-details.png" alt-text="Screenshot that shows the system job detail for bulk delete of audit logs." lightbox="media/audit-log-delete-job-details.png":::
 
 ## Reduce database storage
 
