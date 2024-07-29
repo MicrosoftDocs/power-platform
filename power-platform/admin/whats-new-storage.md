@@ -1,6 +1,6 @@
 ---
-title: What's new for storage administration in Microsoft Power Platform
-description: Learn about enhancements for storage that affect administrators, including reporting and reaching Dataverse database capacity limits.
+title: Dataverse capacity-based storage administration in Microsoft Power Platform
+description: Learn about enhancements for Dataverse capacity-based storage that affect administrators, including reporting and reaching Dataverse database capacity limits.
 author: mayadumesh
 ms.component: pa-admin
 ms.topic: overview
@@ -13,11 +13,11 @@ search.audienceType:
 contributors:
 - ianceicys-msft 
 ---
-# What's new about storage
+# Dataverse capacity-based storage
 
 Key enhancements have been made to the admin experience for the Microsoft Power Platform admin center. These enhancements include:
 
-- Storage reporting is based on customer licenses and capacity add-ons.
+- Dataverse storage reporting is based on customer licenses and capacity add-ons.
 - Changes have been implemented for exceeding storage capacity entitlements.
 
 We're rolling out these features now so check back if your user experience varies from the following content.

@@ -1,6 +1,6 @@
 ---
-title: "New Microsoft Dataverse storage capacity  | MicrosoftDocs"
-description: Introducing a new storage model for Microsoft Dataverse.
+title: "Microsoft Dataverse capacity-based storage  | MicrosoftDocs"
+description: Microsoft Dataverse capacity-based storage model.
 ms.date: 10/17/2023
 ms.topic: conceptual
 author: MicroSri
@@ -14,7 +14,7 @@ contributors:
 - pnghub
 ---
 
-# New Microsoft Dataverse storage capacity 
+# Microsoft Dataverse capacity-based storage
 
 If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today. 
 
@@ -27,7 +27,7 @@ We're rolling out this feature now so check back if your user experience varies 
 >
 > If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The steps below do not apply to partner-based subscriptions.
 
-## Licenses for the new storage model
+## Licenses for Microsoft Dataverse capacity-based storage model
 
 The following licenses provide capacity by using the new storage model. If you have any of these licenses, you'll see the new model report: 
 
@@ -42,7 +42,7 @@ To see whether you have any of these licenses, sign in to the Microsoft 365 admi
 > 
 > If you have none of the [legacy model licenses](legacy-capacity-storage.md#licenses-for-the-legacy-storage-model) nor the new model licenses, you'll see the new model report.
 
-## Verifying your new storage model
+## Verifying your Microsoft Dataverse capacity-based storage model
 
 1. Sign in to the Power Platform admin center, and then select an environment. 
 
@@ -164,7 +164,6 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 
 ## Changes for exceeding storage capacity entitlements
 
-
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
 
 Notifications for capacity approaching storage limits will be triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
@@ -183,6 +182,11 @@ These notifications are sent out to tenant admins, Power Platform admins, and Dy
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
 
+The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+
+Your organization must have the right licenses for the storage you use: 
+- If you use more than your documented entitlements or usage limits, you must buy additional licenses.
+- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
 
 ## Example storage capacity scenarios, overage enforcement
 

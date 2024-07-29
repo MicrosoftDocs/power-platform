@@ -694,9 +694,9 @@
           items:
             - name: Add Dataverse storage capacity
               href: add-storage.md
-            - name: Dataverse Capacity-based storage
+            - name: Dataverse capacity-based storage
               href: whats-new-storage.md
-            - name: Dataverse Capacity-based storage details 
+            - name: Dataverse capacity-based storage details 
               href: capacity-storage.md
             - name: Database Tables
               items:
