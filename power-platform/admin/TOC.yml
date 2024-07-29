@@ -704,20 +704,20 @@
               href: view-self-service-capacity.md
             - name: Free up storage
               items:
-                - name: Manage PrincipalObjectAccess storage
-                  href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
                 - name: Clean up System Job and Process Log tables
                   href: cleanup-asyncoperationbase-table.md
-                - name: Subscription Tracking Deleted Object table
-                  href: subscription-tracking-deleted-object-retention.md
             - name: Database Tables
               items:
                 - name: AsyncOperationBase table
                   href: manage-storage-asyncoperation-base-table.md
                 - name: msdyn_copilotinteraction table
                   href: manage-storage-msdyn-copilotinteraction-table.md
+                - name: PrincipalObjectAccess table
+                  href: manage-principalobjectaccess-storage.md
+                - name: Subscription Tracking Deleted Object table
+                  href: subscription-tracking-deleted-object-retention.md
             - name: Add storage capacity
               href: add-storage.md
             - name: Access storage
