@@ -293,11 +293,13 @@ To monitor the status of audit delete jobs, see the next section.
 
    :::image type="content" source="media/free-storage-method8a-1.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-1.png":::
 
-1. Review the system job, and the status reason column for details about the status your job. Select the job to see more details about the results of the delete job.
+1. Review the system job and the **Status Reason** column for details about the status of your job.
 
-   :::image type="content" source="media/audit-log-delete-job-status.png" alt-text="Screenshot that shows the system job detail for bulk delete of audit logs." lightbox="media/audit-log-delete-job-status.png":::
+   :::image type="content" source="media/audit-log-delete-job-status.png" alt-text="Screenshot that shows the system job details for bulk delete of audit logs." lightbox="media/audit-log-delete-job-status.png":::
 
-   :::image type="content" source="media/audit-log-delete-job-details.png" alt-text="Screenshot that shows the system job detail for bulk delete of audit logs." lightbox="media/audit-log-delete-job-details.png":::
+   Select the job to see more details about the results of the delete job.
+
+   :::image type="content" source="media/audit-log-delete-job-details.png" alt-text="Select the job to see more details about the results of the delete job." lightbox="media/audit-log-delete-job-details.png":::
 
 ## Reduce database storage
 
