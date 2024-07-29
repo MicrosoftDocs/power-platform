@@ -47,7 +47,7 @@ An administrator security role is required. All methods (except three and five) 
 ## Freeing storage for Dataverse
 
 > [!NOTE]
-> The system can take up to 24 hours to update storage information. We recommend waiting up to 24 hours and monitoring your storage.
+> The system can take up to 72 hours to update storage information. We recommend waiting up to 72 hours and monitoring your storage.
 
 Use the following methods to free up storage for each of the capacity types.
 
@@ -253,6 +253,9 @@ Microsoft is migrating audit logs to a new storage location. Environments whose 
   
 ### Method 10: Delete audit logs - new process
 
+> [!NOTE]
+> The system can take up to 72 hours to update storage information for the deletion of audit logs. After choosing to delete audit logs, we recommend waiting up to 72 hours and monitoring your storage to see avialable log capacity.
+
 Microsoft is migrating audit logs to a new storage location. Environments whose data migration is complete can use the new audit delete experience.
 
 When you enable auditing, customer engagement apps create audit logs to store the audit history of the records. You can delete the audit logs to free space when they're no longer needed.  
@@ -291,6 +294,8 @@ To monitor the status of audit delete jobs, see the next section.
    :::image type="content" source="media/free-storage-method8a-1.png" alt-text="Screenshot that shows where the Bulk deletion option is located in an environment." lightbox="media/free-storage-method8a-1.png":::
 
 1. Select the system job name to open details about your delete job.
+
+   :::image type="content" source="media/audit-log-delete-job-status.png" alt-text="Screenshot that shows the system job for bulk delete of audit logs." lightbox="media/audit-log-delete-job-status.png":::
 
 ## Reduce database storage
 
