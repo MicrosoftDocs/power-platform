@@ -43,19 +43,17 @@ To configure Power Platform managed identity for Dataverse plug-in's, complete t
 2. Configure federated identity credentials.
 3. Create and register Dataverse plug-ins. 
 
-    - Dataverse plug-ins:
-        - Build plug-in assembly.
-        - Register the plug-in.
+    Be sure to build the plug-in assembly and register the plug-in.
       
 4. Create managed identity record in Dataverse.
 5. Grant access to the Azure resources to application or user-assigned managed identity (UAMI).
 6. Validate the plug-in integration.
    
 ## Create a new app registration or user-assigned managed identity
-You can create either user-assigned managed identity or application in Microsoft Entra ID based on following scenarios.
+You can create either user-assigned managed identity or an application in Microsoft Entra ID based on following scenarios.
 
 - If you want to have app identity associated with the plug-in that connects to the Azure resources, such as Azure Key Vault, use [application registration](/entra/identity-platform/howto-create-service-principal-portal). With app identity, you can apply Azure policies on the plug-in accessing Azure resources.
-- If you want to just have service principle to access the Azure resources, such as Azure Key Vault, you can provision [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity)
+- If you want to have a service principle to access the Azure resources, such as Azure Key Vault, you can provision [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
 
     > [!Note]
     > Be sure to capture the following ID’s, as you'll use them in later steps.
@@ -63,7 +61,7 @@ You can create either user-assigned managed identity or application in Microsoft
     > - Tenant ID
   
 ## Configure federated identity credentials
-To configure managed identity, open the user-assigned managed identity or Microsoft Entra ID application in the Azure portal that you created in previous section.
+To configure managed identity, open the user-assigned managed identity or Microsoft Entra ID application in the Azure portal that you created in the previous section.
 
 1. Go to the [Azure portal](https://portal.azure.com/).
 2. Navigate to **Microsoft Entra ID**.
@@ -89,7 +87,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 ### Dataverse plug-ins
 
 #### Build plug-in assembly
-- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building plug-in, use Tenant ID from Step #1 and scopes as organization URL like https://{OrgName}.crm*.dymanics.com/.default or even more granular scopes.
+- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building the plug-in, use the tenant ID from Step #1 and scopes as organization URL like https://[OrgName].crm*.dymanics.com/.default or even more granular scopes.
 - Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest&preserve-view=true) and acquire a token method to request a token with given scope.
 - String AcquireToken(`IEnumerable<string>` scopes). The method accepts a collection of scopes and returns the access token. 
 - Sign the assembly with a certificate. For more information, see [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe).
