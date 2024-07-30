@@ -16,13 +16,13 @@ search.audienceType:
 Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources supporting managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
 
 > [!NOTE]
-> To use Virtual Network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
+> To use Power Platform Managed Identity, environments must be [Managed Environments](managed-environment-overview.md).
 
 ## Prerequisites
 
 - An Azure subscription with access to provision user-assigned managed identity (UAMI) or application registration.
 - Plug-ins tools:
-    - IDE like Visual Studio to build plug-in
+    - IDE (Integrated Development Environment) like Visual Studio to build plug-in
     - [Plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget)
     - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly.
     - [Power Platform CLI](../developer/cli/introduction.md)
