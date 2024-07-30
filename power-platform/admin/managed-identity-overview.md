@@ -33,18 +33,17 @@ Power Platform managed identity provides the following, key benefits:
 - Enables seamless authentication to other Azure services.
 
 ## Supported scenarios
-Enterprises can securely connect to Azure resources that support managed identity from their IP/ISV [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) 
-and [dependent assembly plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies). For example, enterprises can use managed identity to connect to their Azure key vault from Dataverse plug-ins to retrieve sensitive information like keys and secrets without needing to manage credentials.
+Enterprises can securely connect to Azure resources that support managed identity from their IP/ISV [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). For example, enterprises can use managed identity to connect to their Azure key vault from Dataverse plug-ins to retrieve sensitive information like keys and secrets without needing to manage credentials.
 
 ## Supported services
 The following table lists the services that support Power Platform managed identity.
 
 | Area      | Power Platform services | Availability|
 |-----------|-------------------------|-------------------------|
-| Dataverse | <ul><li>[Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins)</li><li>[Dependent assembly plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies)</li></ul> | Preview |
+| Dataverse | <ul><li>[Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins)</li></ul> | Preview |
 
-## Licensing requirements
-Licensing requirements for Power Platform managed identity will be announced near to general availability.
+## Known limitations
+Managed identity support for [dependent assembly plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies) is unsupported.
 
 ## Next steps
 [Set up Power Platform managed identity](set-up-managed-identity.md)
