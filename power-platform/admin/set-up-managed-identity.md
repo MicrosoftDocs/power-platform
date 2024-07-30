@@ -26,19 +26,18 @@ Power Platform managed identity allows Dataverse plug-ins to connect with Azure 
     - [Plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget)
     - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly.
     - [Power Platform CLI](../developer/cli/introduction.md)
-- A valid certificate to sign the plug-in's assembly or package.
+- A valid certificate to sign the plug-in's assembly.
 
 ## Set up managed identity
 To configure Power Platform managed identity for Dataverse plug-in's, complete the following steps.
 
 1. Create a new app registration or user-assigned managed identity.
 2. Configure federated identity credentials.
-3. Create and register Dataverse plug-ins or Dataverse plug-ins package. 
+3. Create and register Dataverse plug-ins. 
 
     - Dataverse plug-ins:
         - Build plug-in assembly.
         - Register the plug-in.
-    - Create and register a Dataverse plug-ins package.
       
 4. Create managed identity record in Dataverse.
 5. Grant access to the Azure resources to application or user-assigned managed identity (UAMI).
@@ -61,7 +60,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 1. Go to the [Azure portal](https://portal.azure.com/)
 2. Navigate to **Microsoft Entra ID**.
 3. Select **App registration**.
-4. Open the app you created in Step #1
+4. Open the app you created in Step **Set up managed identity**
 5. Navigate to **Certificates & Secrets**.
 6. Select the **Federated credential** tab and select **Add credential**.
 7. Select issuer as **Other issuer**. 
@@ -76,7 +75,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 
     :::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
 
-## Create and register Dataverse plug-ins or Dataverse plug-ins package
+## Create and register Dataverse plug-ins
 
 ### Dataverse plug-ins
 
@@ -92,19 +91,6 @@ To configure managed identity, open the user-assigned managed identity or Micros
 #### Register the plug-in
 - Install the plug-in registration tool if you don’t have it on your machine already. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
 - Register the plug-in. For more information, see [Register plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in).
-
-### Dataverse plug-in package
-#### Create and register a plug-in package
-- Create and register a plug-in package. For more information, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md).
-- Before registering the plug-in package, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md). Be sure that you sign the plug-in package by following these steps:
-    - Create a new certificate or use an existing certificate.
-    - Run the following command to sign the plug-in package with the certificate.
-
-      ```
-      nuget sign <local path-to-package> -CertificatePath <local path-to-certificate> -CertificatePassword <certificate-password>
-      ```
-
-- Register the plug-in package. For more information, see [Create and register a plug-in package using PAC CLI](../developer/howto/cli-create-package.md).
 
 ## Create managed identity record in Dataverse
 To provision managed identity record in Dataverse, complete the following steps.
@@ -125,7 +111,7 @@ To provision managed identity record in Dataverse, complete the following steps.
       }
      ```
      
-2. Make a patch call to bind the plug-in assembly ID or plug-in package ID with the managed identity record that is created through post call in step #1.
+2. Make a patch call to bind the plug-in assembly ID with the managed identity record that is created through post call in step #1 under section **Create managed identity record in Dataverse**.
 
    **Plug-in assembly**:
 
@@ -138,22 +124,11 @@ To provision managed identity record in Dataverse, complete the following steps.
       }
    ```
 
-  **Plug-in package**:
-
-  ```
-                  `PATCH https://<<orgUrl>>/api/data/v9.0/pluginpackages(<<PluginPackageId>>) `
-                  *Replace the orgUrl and PluginpackageId*
-        Sample Payload:
-        `{ 
-          "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)" 
-        }`
-  ```
-
 ## Grant access to the Azure resources to application or user-assigned managed identity
 If you need to give access to application ID to access Azure resource, such as Azure Key Vault, you need to grant access to application or user-assigned managed identity to that resource.
 
 ## Validate the plug-in integration
-Your plug-in or package can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
+Your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
 
 
 
