@@ -33,7 +33,7 @@ Power Platform managed identity provides the following, key benefits:
 - Enables seamless authentication to other Azure services.
 
 ## Supported scenarios
-Enterprises can securely connect to Azure resources that support managed identity from their IP/ISV [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). For example, enterprises can use managed identity to connect to their Azure key vault from Dataverse plug-ins to retrieve sensitive information, like keys and secrets, without needing to manage credentials.
+Enterprises can securely connect to Azure resources that support managed identity from their IP/ISV [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins). For example, enterprises can use managed identity to connect to their Azure Key Vault from Dataverse plug-ins to retrieve sensitive information, like keys and secrets, without needing to manage credentials.
 
 ## Supported services
 The following table lists the services that support Power Platform managed identity.
