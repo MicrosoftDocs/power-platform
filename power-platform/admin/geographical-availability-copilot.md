@@ -36,14 +36,15 @@ However, copilots and generative AI features aren't available in all regions and
 
 ## Regions involved with copilots and generative AI features
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models.
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve any Generative AI model.
 
 The following table lists the regions involved with copilots and generative AI features.
 
-| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
+| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Generative AI model is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
-| Australia<br>India<br>United Kingdom<br>United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
-| Europe\*  | Sweden or Switzerland| United States |
+| United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
+| Australia<br>India<br>United Kingdom | Within the geographical region of your Power Platform or Dynamics 365 environment or Sweden | United States| 
+| Europe\*  | Sweden or Switzerland | United States |
 | France<br>Germany<br>Norway<br>Switzerland | Sweden or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
