@@ -4,7 +4,7 @@ description: Learn about managed identity for Power Platform and Dynamics 365 ap
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/18/2024
+ms.date: 07/30/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
