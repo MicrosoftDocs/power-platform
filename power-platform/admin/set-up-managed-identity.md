@@ -19,7 +19,7 @@ search.audienceType:
 Power Platform managed identity allows Dataverse plug-ins to connect with Azure resources supporting managed identity without the need of credentials. This article helps you set up managed identity in your Power Platform environments.
 
 > [!NOTE]
-> To use Power Platform Managed Identity, environments must be [Managed Environments](managed-environment-overview.md).
+> To use Power Platform managed identity, environments must be [Managed Environments](managed-environment-overview.md).
 
 > [!IMPORTANT]
 >
@@ -30,9 +30,9 @@ Power Platform managed identity allows Dataverse plug-ins to connect with Azure 
 
 - An Azure subscription with access to provision user-assigned managed identity (UAMI) or application registration.
 - Plug-ins tools:
-    - IDE (Integrated Development Environment) like Visual Studio to build plug-in
+    - Integrated Development Environment (IDE), like Visual Studio, to build plug-in
     - [Plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget)
-    - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly.
+    - [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe) to sign the plug-in assembly
     - [Power Platform CLI](../developer/cli/introduction.md)
 - A valid certificate to sign the plug-in's assembly.
 
@@ -65,17 +65,18 @@ You can create either user-assigned managed identity or application in Microsoft
 ## Configure federated identity credentials
 To configure managed identity, open the user-assigned managed identity or Microsoft Entra ID application in the Azure portal that you created in previous section.
 
-1. Go to the [Azure portal](https://portal.azure.com/)
+1. Go to the [Azure portal](https://portal.azure.com/).
 2. Navigate to **Microsoft Entra ID**.
 3. Select **App registration**.
-4. Open the app you created in Step **Set up managed identity**
+4. Open the app you created in [Set up managed identity](#set-up-managed-identity).
 5. Navigate to **Certificates & Secrets**.
 6. Select the **Federated credential** tab and select **Add credential**.
 7. Select issuer as **Other issuer**. 
 8. Enter the following information:
-    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[env id prefix].[env id suffix].enviornment.api.powerplatform.com/sts`     
-      - **Env ID prefix** - Environment ID, except for the last two characters.
-      - **Env ID suffix** - Last two characters of environment JD.
+   
+    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[environment ID prefix].[environment ID suffix].enviornment.api.powerplatform.com/sts`     
+      - **Environment ID prefix** - The environment ID, except for the last two characters.
+      - **Environment ID suffix** - The last two characters of the environment JD.
       
       Example: `https://92e1c10d0b34e28ba4a87e3630f46a.06.environment.api.powerplatform.com/sts`
       
@@ -88,7 +89,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 ### Dataverse plug-ins
 
 #### Build plug-in assembly
-- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building plug-in use Tenant ID from Step #1 and scopes as organization URL like https://{OrgName}.crm*.dymanics.com/.default or even more granular scopes.
+- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building plug-in, use Tenant ID from Step #1 and scopes as organization URL like https://{OrgName}.crm*.dymanics.com/.default or even more granular scopes.
 - Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest&preserve-view=true) and acquire a token method to request a token with given scope.
 - String AcquireToken(`IEnumerable<string>` scopes). The method accepts a collection of scopes and returns the access token. 
 - Sign the assembly with a certificate. For more information, see [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe).
@@ -136,7 +137,7 @@ To provision managed identity record in Dataverse, complete the following steps.
 If you need to give access to application ID to access Azure resource, such as Azure Key Vault, you need to grant access to application or user-assigned managed identity to that resource.
 
 ## Validate the plug-in integration
-Your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
+Verify that your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
 
 
 
