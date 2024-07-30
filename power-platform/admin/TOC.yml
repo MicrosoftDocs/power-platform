@@ -468,9 +468,9 @@
               href: security/security-posture-overview.md
             - name: Power Platform managed identity
               items:
-              - name: Power Platform managed identity overview (preveiw)
+              - name: Managed identity overview (preveiw)
                 href: managed-identity-overview.md
-              - name: Set up managed identity for Power Platform (preview)
+              - name: Set up managed identity (preview)
                 href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
