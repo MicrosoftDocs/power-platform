@@ -19,15 +19,15 @@ The task of managing Power Platform on a large scale across numerous environment
 
 Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location.
 
-Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. In this first release, six key capabilities of Managed Environments are available as rules:
+Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
 
-- [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
+- [Move data across regions](geographical-availability-copilot.md)
+- [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
 - [Maker welcome content](welcome-content.md)
 - [Solution checker enforcement](managed-environment-solution-checker.md)
 - [Usage insights](managed-environment-usage-insights.md)
 - [Extended backup retention](backup-restore-environments.md)
-- [Move data across regions](geographical-availability-copilot.md)
 
 ## Strategies for using environment groups
 
@@ -59,7 +59,7 @@ Enabling _default environment routing_ might give you more environments to manag
 
 ## Configure the rules for your environment group
 
-After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
+After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. The available rules are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
 
 ### The sharing limits rule
 
