@@ -96,10 +96,6 @@ The following steps are automated:
 
 :::image type="content" source="media/a1-travel/image5.png" alt-text="A diagram that shows the automation process step by step." lightbox="media/a1-travel/image5.png":::
 
-
-
-
-
 ## Build the travel booking process automation
 
 An email being received acts as the workflow trigger—a [text function](https://community.dynamics.com/blogs/post/?postid=c009f06c-4f94-4aa4-a0ea-c19c6f33b917) to identify relevant details in the email. Next, an HTTP action retrieves information from external sources through APIs. Finally, a join action collates and formats the content collected.
@@ -109,11 +105,14 @@ An email being received acts as the workflow trigger—a [text function](https:/
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 1. A new email arrives in a shared mailbox. | With the Outlook connector, select a shared mailbox that triggers the workflow. |
 |![Text function icon](media/a1-travel/text-function-icon.png)| 2. Find the travel destination. | With a text function, identify details (parameters) in the email to be automatically read. |
 |![Variables icon](media/a1-travel/variables-icon.png)| 3. Identify the travel requirements for collection. | Variables act as placeholders to collect data during the workflow. |
-|![Dataverse icon](media/a1-travel/dataverse-icon.png)| 4. Find the destination country and airport code. | With the Dataverse or SQL connector, lookup destination details from a list. |
-|![Http icon](media/a1-travel/http-icon.png)| 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data, for example credentials, for the API.|
+|![Dataverse icon](media/a1-travel/dataverse-icon.png)| 4. Find the destination country and airport code. | With the Dataverse or SQL connector, look up destination details from a list. |
+|![Http icon](media/a1-travel/http-icon.png)| 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data—
+for example, credentials—for the API.|
 |![Join icon](media/a1-travel/join-icon.png)| 6. Collate the travel requirements. | With the join action, collate information from various sources and formats to serve as inputs for an email. |
 |![Condition icon](media/a1-travel/condition-icon.png)| 7. Check that the travel requirements are complete. | With a condition, check that all received information is complete. If `yes`, get ready to send the email or if `no`, issue an error.|
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 8. Send the email to the travel agent and client. | With the Outlook connector, send the email to its recipients. |
+
+
 
 ### Technical considerations
 
