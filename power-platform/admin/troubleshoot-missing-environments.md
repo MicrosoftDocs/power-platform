@@ -76,7 +76,7 @@ This step only applies to environments with a Dataverse database. Many of the sa
 
 Common issues that may be identified by this step include: 
 
-1. The user is [not a member of the environment security group](troubleshooting-user-needs-read-write-access-organization.md#user-isnt-a-member-of-the-environments-security-group). 
+1. The user is [not a member of the environment security group](troubleshooting-user-needs-read-write-access-organization.md). 
 2. The user is missing from the environment, or the user record in Dataverse is out of sync with Microsoft Entra ID, and so the user may need to be [explicitly added by an administrator](add-users-to-environment.md). 
 
 ## Special notes about developer, trial, and support environment types 
