@@ -1,71 +1,37 @@
 ---
-title: Formula reference - Power Apps
-description: Reference information for all functions in Power Apps.
+title: Formula reference - Dataverse plug-ins
+description: Reference information for functions, signals, and enumerations available with plug-ins in Microsoft Dataverse.
 author: gregli-msft
 ms.topic: reference
-ms.custom: canvas
-ms.reviewer: mkaur-msft
-ms.date: 3/22/2024
+ms.reviewer: matp
+ms.date: 6/25/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
 contributors:
-  - mduelae
+  - Mattp123
   - gregli-msft
   - gregli
 ---
 
-# Formula reference - Power Apps
+# Formula reference - Dataverse plug-ins
 
-In this article, learn about all the functions available in Power Apps.
+In this article, learn about all the functions available with [plug-ins in Microsoft Dataverse](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant).
 
-Formulas in Power Apps combine many elements. Listed below are:
-
-- **Functions** take parameters, perform an operation, and return a value. For example, **Sqrt(25)** returns **5**. Functions are modeled after Microsoft Excel functions. Some functions have side effects, such as **SubmitForm**, which are appropriate only in a [behavior formula](/power-apps/maker/canvas-apps/working-with-formulas-in-depth) such as **Button.OnSelect**.
-- **Signals** return information about the environment. For example, **[Location](reference/signals.md)** returns the device's current GPS coordinates. Signals don't take parameters or have side effects.
-- **Enumerations** return a pre-defined constant value. For example, **[Color](reference/function-colors.md)** is an enumeration that has pre-defined values for **Color.Red**, **Color.Blue**, and so forth. Common enumerations are included here; function-specific enumerations are described with the function.
-- **Named operators**, such as **[ThisItem](reference/operators.md#thisitem-thisrecord-and-as-operators)** and **[Self](reference/operators.md#self-and-parent-operators)**, provide access to information from within a container.
-
-Other elements include:
-
-- [Operators and identifiers](reference/operators.md)
-- [Controls and their properties](/power-apps/maker/canvas-apps/reference-properties)
-- [Data types](data-types.md)
-
-## <a id="-a"></a> A
+## A
 
 **[Abs](reference/function-numericals.md)** – Absolute value of a number.
-
-**[Acceleration](reference/signals.md)** – Reads the acceleration sensor in your device.
 
 **[Acos](reference/function-trig.md)** – Returns the arccosine of a number, in radians.
 
 **[Acot](reference/function-trig.md)** – Returns the arccotangent of a number, in radians.
 
-**[AddColumns](reference/function-table-shaping.md)** – Returns a table with [columns](/power-apps/maker/canvas-apps/working-with-tables#columns) added.
-
 **[And](reference/function-logicals.md)** – Boolean logic AND. Returns **true** if all arguments are **true**. You can also use the [**&&** operator](reference/operators.md).
-
-**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
-
-**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
-
-**[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
-
-**[AISentiment](reference/function-ai.md)** – Detects the sentiment of the text that you provide.
-
-**[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
-
-**[AITranslate](reference/function-ai.md)** – Translates text from another language.
-
-**[App](reference/object-app.md)** – Provides information about the currently running app and control over the app's behavior.
 
 **[Asin](reference/function-trig.md)** – Returns the arcsine of a number, in radians.
 
 **[Assert](reference/function-assert.md)** – Evaluates to true or false in a test.
-
-**[As](reference/operators.md#thisitem-thisrecord-and-as-operators)** – Names the current record in gallery, form, and record scope functions such as **ForAll**, **With**, and **Sum**.
 
 **[AsType](reference/function-astype-istype.md)** – Treats a record reference as a specific table type.
 
@@ -77,31 +43,17 @@ Other elements include:
 
 ## B
 
-**[Back](reference/function-navigate.md)** – Displays the previous screen.
-
 **[Blank](reference/function-isblank-isempty.md)** – Returns a _blank_ value that can be used to insert a NULL value in a data source.
 
 **[Boolean](reference/function-boolean.md)** – Converts a text string, number, or untyped value to a Boolean value.
 
 ## C
 
-**[Calendar](reference/function-clock-calendar.md)** – Retrieves information about the calendar for the current locale.
-
 **[Char](reference/function-char.md)** – Translates a character code into a string.
-
-**[Choices](reference/function-choices.md)** – Returns a table of the possible values for a lookup column.
-
-**[Clear](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a [collection](/power-apps/maker/canvas-apps/working-with-data-sources#collections).
-
-**[ClearCollect](reference/function-clear-collect-clearcollect.md)** – Deletes all data from a collection and then adds a set of [records](/power-apps/maker/canvas-apps/working-with-tables#records).
-
-**[ClearData](reference/function-savedata-loaddata.md)** – Clears a collection or all collections from an app host such as a local device.
-
-**[Clock](reference/function-clock-calendar.md)** – Retrieves information about the clock for the current locale.
 
 **[Coalesce](reference/function-isblank-isempty.md)** – Replaces _blank_ values while leaving non-_blank_ values unchanged.
 
-**[Collect](reference/function-clear-collect-clearcollect.md)** – Creates a collection or adds data to a data source.
+**[Collect](reference/function-clear-collect-clearcollect.md )** – Creates a collection or adds data to a data source.
 
 **[Color](reference/function-colors.md)** – Sets a property to a built-in color value.
 
@@ -113,15 +65,9 @@ Other elements include:
 
 **[ColumnNames](reference/function-columnnames-column.md)** – Retrieves column names and values from an [Untyped object data type](untyped-object.md).
 
-**[Compass](reference/signals.md)** – Returns your compass heading.
-
-**[Concat](reference/function-concatenate.md)** – Concatenates strings in a data source.
-
 **[Concatenate](reference/function-concatenate.md)** – Concatenates strings.
 
 **[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
-
-**[Connection](reference/signals.md)** – Returns information about your network connection.
 
 **[Copy](reference/function-copy.md)** – Copies text to the clipboard on the device where the app is running.
 
@@ -157,25 +103,15 @@ Other elements include:
 
 **[Dec2Hex](reference/function-hexdec.md)** – Convert a number to a hexadecimal text string.
 
-**[Defaults](reference/function-defaults.md)** – Returns the default values for a data source.
-
 **[Degrees](reference/function-trig.md)** – Converts radians to degrees.
 
 **[Disable](reference/function-enable-disable.md)** – Disables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
 **[Distinct](reference/function-distinct.md)** – Summarizes records of a table, removing duplicates.
 
-**[Download](reference/function-download.md)** – Downloads a file from the web to the local device.
-
-**[DropColumns](reference/function-table-shaping.md)** – Returns a table with one or more columns removed.
-
 ## E
 
 **[EDate](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, without changing the day of the month.
-
-**[EditForm](reference/function-form.md)** – Resets a form control for editing of an item.
-
-**[Enable](reference/function-enable-disable.md)** – Enables a signal, such as **[Location](reference/signals.md)** for reading the GPS.
 
 **[EncodeHTML](reference/function-encode-decode.md)** – Encodes characters that need to be escaped to be used in an HTML context.
 
@@ -186,8 +122,6 @@ Other elements include:
 **[EOMonth](reference/function-edate-eomonth.md)** – Adds or subtracts months to a date, returning the last day of that month.
 
 **[Error](reference/function-iferror.md)** – Create a custom error or pass through an error.
-
-**[Errors](reference/function-errors.md)** – Provides error information for previous changes to a data source.
 
 **[exactin](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case dependent. Also used to check if a record is in a table.
 
@@ -209,13 +143,9 @@ Other elements include:
 
 ## G
 
-**[GroupBy](reference/function-groupby.md)** – Returns a table with records grouped together.
-
 **[GUID](reference/function-guid.md)** – Converts a GUID string to a GUID value or creates a new GUID value.
 
 ## H
-
-**[HashTags](reference/function-hashtags.md)** – Extracts the hashtags (#strings) from a string.
 
 **[Hex2Dec](reference/function-hexdec.md)** – Convert a hexadecimal text string to a number.
 
@@ -223,13 +153,11 @@ Other elements include:
 
 **[Hour](reference/function-datetime-parts.md)** – Returns the hour portion of a date/time value.
 
-
 ## I
 
 **[If](reference/function-if.md)** – Returns one value if a condition is true and another value if not.
 
 **[IfError](reference/function-iferror.md)** – Detects errors and provides an alternative value or takes action.
-
 **[in](reference/operators.md#in-and-exactin-operators)** – Checks if a text string is contained within another text string or table, case independent. Also used to check if a record is in a table.
 
 **[Index](reference/function-first-last.md)** – Returns a record from a table based on ordered position.
@@ -240,25 +168,15 @@ Other elements include:
 
 **[IsBlankOrError](reference/function-iferror.md)** – Checks for a [blank](reference/function-isblank-isempty.md) value or error.
 
-**[IsEmpty](reference/function-isblank-isempty.md)** – Checks for an empty table.
-
 **[IsError](reference/function-iferror.md)** – Checks for an error.
 
 **[IsMatch](reference/function-ismatch.md)** – Checks a string against a pattern. Regular expressions can be used.
 
 **[IsNumeric](reference/function-isnumeric.md)** – Checks for a numeric value.
 
-**[ISOWeekNum](reference/function-weeknum.md)** – Returns the ISO week number of a date/time value.
-
 **[IsToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in the user's time zone.
 
-**[IsType](reference/function-astype-istype.md)** – Checks whether a record reference refers to a specific table type.
-
 **[IsUTCToday](reference/function-now-today-istoday.md)** – Checks whether a date/time value is sometime today in Coordinated Universal Time (UTC).
-
-## J
-
-**[JSON](reference/function-json.md)** – Generates a JSON text string for a table, a record, or a value.
 
 ## L
 
@@ -275,10 +193,6 @@ Other elements include:
 **[Len](reference/function-len.md)** – Returns the length of a string.
 
 **[Ln](reference/function-numericals.md)** – Returns the natural log.
-
-**[LoadData](reference/function-savedata-loaddata.md)** – Loads a collection from an app host such as a local device.
-
-**[Location](reference/signals.md)** – Returns your location as a map coordinate by using the Global Positioning System (GPS) and other information.
 
 **[Log](reference/function-numericals.md)** – Returns the logarithm in any base of a number.
 
@@ -308,11 +222,7 @@ Other elements include:
 
 **[Navigate](reference/function-navigate.md)** – Changes which screen is displayed.
 
-**[NewForm](reference/function-form.md)** – Resets a form control for creation of an item.
-
 **[Not](reference/function-logicals.md)** – Boolean logic NOT. Returns **true** if its argument is **false**, and returns **false** if its argument is **true**. You can also use the [**!** operator](reference/operators.md).
-
-**[Notify](reference/function-showerror.md)** – Displays a banner message to the user.
 
 **[Now](reference/function-now-today-istoday.md)** – Returns the current date/time value in the user's time zone.
 
@@ -348,27 +258,17 @@ Other elements include:
 
 **[RandBetween](reference/function-rand.md)** – Returns a pseudo-random number between two numbers.
 
-**[ReadNFC](reference/function-readnfc.md)** – Reads a Near Field Communication (NFC) tag.
-
 **[RecordInfo](reference/function-recordinfo.md)** – Provides information about a record of a data source.
-
-**[Refresh](reference/function-refresh.md)** – Refreshes the records of a data source.
 
 **[Relate](reference/function-relate-unrelate.md)** – Relates records of two tables through a one-to-many or many-to-many relationship.
 
 **[Remove](reference/function-remove-removeif.md)** – Removes one or more specific records from a data source.
-
-**[RemoveIf](reference/function-remove-removeif.md)** – Removes records from a data source based on a condition.
-
-**[RenameColumns](reference/function-table-shaping.md)** – Renames columns of a table.
 
 **[Replace](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by starting position of the string.
 
 **[RequestHide](reference/function-requesthide.md)** – Hides a SharePoint form.
 
 **[Reset](reference/function-reset.md)** – Resets an input control to its default value, discarding any user changes.
-
-**[ResetForm](reference/function-form.md)** – Resets a form control for editing of an existing item.
 
 **[Revert](reference/function-revert.md)** – Reloads and clears errors for the records of a data source.
 
@@ -384,13 +284,9 @@ Other elements include:
 
 ## S
 
-**[SaveData](reference/function-savedata-loaddata.md)** – Saves a collection to an app host such as a local device.
-
 **[Search](reference/function-filter-lookup.md)** – Finds records in a table that contain a string in one of their columns.
 
 **[Second](reference/function-datetime-parts.md)** – Retrieves the second portion of a date/time value.
-
-**[Select](reference/function-select.md)** – Simulates a select action on a control, causing the **OnSelect** formula to be evaluated.
 
 **[Self](reference/operators.md#self-and-parent-operators)** – Provides access to the properties of the current control.
 
@@ -398,13 +294,7 @@ Other elements include:
 
 **[SendAppNotification (preview)](reference/function-send-app-notification.md)** – Send an in-app notification with optional actions to a recipient.
 
-**[Set](reference/function-set.md)** – Sets the value of a global variable.
-
-**[SetFocus](reference/function-setfocus.md)** – Moves input focus to a specific control.
-
-**[SetProperty](reference/function-setproperty.md)** – Simulates interactions with input controls.
-
-**[ShowColumns](reference/function-table-shaping.md)** – Returns a table with only selected columns.
+**[Set](reference/function-set.md )** – Sets the value of a global variable.
 
 **[ShowHostInfo](reference/showhostinfo.md)** – Displays information to the user in the app. 
 
@@ -413,8 +303,6 @@ Other elements include:
 **[Sin](reference/function-trig.md)** – Returns the sine of an angle specified in radians.
 
 **[Sort](reference/function-sort.md)** – Returns a sorted table based on a formula.
-
-**[SortByColumns](reference/function-sort.md)** – Returns a sorted table based on one or more columns.
 
 **[Split](reference/function-split.md)** – Splits a text string into a table of substrings.
 
@@ -425,8 +313,6 @@ Other elements include:
 **[StdevP](reference/function-aggregates.md)** – Returns the standard deviation of its arguments.
 
 **[Substitute](reference/function-replace-substitute.md)** – Replaces part of a string with another string, by matching strings.
-
-**[SubmitForm](reference/function-form.md)** – Saves the item in a form control to the data source.
 
 **[Sum](reference/function-aggregates.md)** – Calculates the sum of a table expression or a set of arguments.
 
@@ -468,40 +354,20 @@ Other elements include:
 
 **[Unrelate](reference/function-relate-unrelate.md)** – Unrelates records of two tables from a one-to-many or many-to-many relationship.
 
-**[Update](reference/function-update-updateif.md)** – Replaces a record in a data source.
-
-**[UpdateContext](reference/function-updatecontext.md)** – Sets the value of one or more [context variables](/power-apps/maker/canvas-apps/working-with-variables#use-a-context-variable) of the current screen.
-
-**[UpdateIf](reference/function-update-updateif.md)** – Modifies a set of records in a data source based on a condition.
-
 **[Upper](reference/function-lower-upper-proper.md)** – Converts letters in a string of text to all uppercase.
 
 **[User](reference/function-user.md)** – Returns information about the current user.
 
-**[UTCNow](reference/function-now-today-istoday.md)** – Returns the current date/time value in Coordinated Universal Time (UTC).
-
-**[UTCToday](reference/function-now-today-istoday.md)** – Returns the current date-only value in Coordinated Universal Time (UTC).
-
 ## V
-
-**[Validate](reference/function-validate.md)** – Checks whether the value of a single column or a complete record is valid for a data source.
 
 **[Value](reference/function-value.md)** – Converts a string to a number.
 
 **[VarP](reference/function-aggregates.md)** – Returns the variance of its arguments.
 
-**[ViewForm](reference/function-form.md)** – Resets a form control for viewing of an existing item.
-
 ## W
-
-**[Weekday](reference/function-datetime-parts.md)** – Retrieves the weekday portion of a date/time value.
-
-**[WeekNum](reference/function-weeknum.md)** – Returns the week number of a date/time value.
 
 **[With](reference/function-with.md)** – Calculates values and performs actions for a single record, including inline records of named values.
 
 ## Y
 
 **[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.
-
-
