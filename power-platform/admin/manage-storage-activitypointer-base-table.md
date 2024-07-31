@@ -20,7 +20,7 @@ The **ActivityPointerBase** table is used to store information about activities 
 
 - **Activity details**: The table includes all default, activity columns such as subject, description, owner, regarding, status, and more. For a full list of the columns in this table, see [activitypointer EntityType](/power-apps/developer/data-platform/webapi/reference/activitypointer).
 
-- **Description**: The description column contains the description for each activity in the system. It is the same column used to store the email body for an email activity. Because an email body can include a large amount of text, large emails can contribute to the growth in data capacity consumed by this table. The storage of this column is moving to blob storage. See [Transition period](/power-apps/developer/data-platform/email-activity-entities#transition-period) for more information.
+- **Description**: The description column contains the description for each activity in the system. It's the same column used to store the email body for an email activity. Because an email body can include a large amount of text, large emails can contribute to the growth in data capacity consumed by this table. The storage of this column is moving to blob storage. Learn more in [Transition period](/power-apps/developer/data-platform/email-activity-entities#transition-period).
 
 - **Activity type**: Each activity pointer row has an activity type defining the type of the activity (email, appointment, or custom activity). These fields can be used to define how many rows in **ActivityPointerBase** are from each activity type. 
 
@@ -44,7 +44,7 @@ Due to the need to test these deletion actions first in a sandbox environment, t
 
 If you want to retain the data, but remove it from the relational storage, see [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
-To clean-up the **ActivityPointerBase** table, customers can search for and delete any activities that are not relevant to their business. 
+To clean up the **ActivityPointerBase** table, customers can search for and delete any activities that aren't relevant to their business. 
 
 Set up a [bulk delete](delete-bulk-records.md) job to keep the size down in the future. 
 
