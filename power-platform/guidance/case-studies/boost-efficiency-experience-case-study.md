@@ -1,6 +1,6 @@
 ---
 title: Boost team efficiency and customer experience with Power Automate and generative AI
-description: Learn about how A1 Inteligencia em Viagens boosted team efficiency & customer experience with Power Automate and generative AI
+description: Learn about how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and generative AI.
 author: robstand
 ms.author: sashi
 ms.topic: overview
@@ -10,15 +10,15 @@ ms.date: 07/18/2024
 
 # Boost team efficiency and customer experience with Power Automate and generative AI
 
-Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed the travel coordination process with their clients and team collaboration using the power of Power Automate and Copilot Studio.
+Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed the travel coordination process with their clients and team collaboration using the power of Power Automate and Microsoft Copilot Studio.
 
 Established over 30 years ago, the agency specializes in coordinating international travel and luxury vacations for their executive client base. With a global partner network of airlines and hotels to personalize each traveler's experience, travel plans are rarely the same.
 
-Daniel Schaurich de Oliviera is the company's Founder and CEO. Since clients traveled less frequently during the Covid pandemic, Daniel utilized the time to work on improving business processes through automation. He started with time-consuming research and coordination for international travel, which required his travel agents to search multiple government websites and call embassies for the latest travel guidelines.
+Daniel Schaurich de Oliviera is the company's founder and CEO. Since clients traveled less during the Covid pandemic, Daniel used the time to work on improving business processes through automation. He started with time-consuming research and coordination for international travel, which required his travel agents to search multiple government websites and call embassies for the latest travel guidelines.
 
 Accessing real-time information is vital for the agency as travel rules and border closures quickly and frequently changed during the pandemic.
 
-The company developed *Fifi*—a copilot with the persona of a wise, elderly lady who knows everything about the company and the travel industry. Fifi is embedded in A1's website to provide immediate customer assistance. She's also in Microsoft Teams for easy access by staff who think of Fifi as a colleague not just a chat bot.
+The company developed *Fifi*—a copilot with the persona of a wise, older woman who knows everything about the company and the travel industry. Fifi is embedded in A1's website to provide immediate customer assistance. She's also in Microsoft Teams for easy access by staff who think of Fifi as a colleague not just a chat bot.
 
 *"Power Platform changed our business in ways we never expected. Before Power Platform and Copilot Studio, we never thought it would be possible for us to create software. Power Platform gave us the power to put our ideas to work easily and in an affordable way for a small company."*
 
@@ -26,13 +26,13 @@ The company developed *Fifi*—a copilot with the persona of a wise, elderly lad
 
 ## Case study
 
-In this technical case study, you learn:
+In this technical case study, you'll learn:
 
-- How the corporate travel agency A1 Inteligência em Viagens in Brazil digitally transformed their travel booking process using Power Automate and Copilot Studio
-- How Power Automate can replace time consuming & error-prone manual data collation tasks
-- How to build upon an existing automation to create more business solutions
-- How to build a copilot with generative AI to improve customer experience
-- How to establish a copilot as a core part of your team
+- How the corporate travel agency A1 Inteligência em Viagens in Brazil digitally transformed their travel booking process using Power Automate and Copilot Studio.
+- How Power Automate can replace time-consuming and error-prone manual data collation tasks.
+- How to build upon an existing automation to create more business solutions.
+- How to build a copilot with generative AI to improve the customer experience.
+- How to establish a copilot as a core part of your team.
 
 ## The scenario
 
@@ -40,7 +40,7 @@ Daniel's team at A1 Inteligência em Viagens coordinates travel bookings with th
 
 Daniel saw the potential for Power Automate to support the travel agents on his team to identify and collate travel requirements from various national authorities in real time.
 
-When you automate routine, manual data checking, and collation processes, it not only boosts team productivity but has the potential to improve the completeness, timeliness, and reliability of information provided.
+When you automate routine, manual data checking and collation processes, it not only boosts team productivity but has the potential to improve the completeness, timeliness, and reliability of information provided.
 
 For Daniel and his team, this automation measurably reduced the time required for travel coordination—boosting efficiency by 55%—and inspired many business improvements.
 
@@ -63,7 +63,7 @@ Power Automate and Copilot Studio help A1 to:
 - Schedule time each week for business improvements with Power Platform and AI.
 - Inspire and advocate new ideas from leadership team members.
 - Identify a well-defined, repeatable process to automate.
-- Focus on how automation improves the customer or end user experience.
+- Focus on how automation improves the customer or end-user experience.
 - Create a persona to establish the copilot as a valuable team member.
 
 ## Streamline travel bookings with Power Automate
@@ -77,13 +77,13 @@ The travel booking process consistently needs to:
 1. Identify the latest travel risk status for the destination country.
 1. Collate all information into an email and send it to the client.
 
-:::image type="content" source="media/a1-travel/image4.png" alt-text="A diagram that shows the travel booking process using Power Automate flow.":::
+:::image type="content" source="media/a1-travel/image4.png" alt-text="A diagram that shows the travel booking process using a Power Automate flow.":::
 
 ### The Power Automate process
 
-The Power Automate solution automatically analyzes the booking confirmation email and retrieves destination country and airport codes from Dataverse. This information is used to request the latest travel requirements in real-time through various authorities' APIs.
+The Power Automate solution automatically analyzes the booking confirmation email and retrieves destination country and airport codes from Dataverse. This information is used to request the latest travel requirements in real time through various authorities' APIs.
 
-Manual data collation effort is no longer required and information is automatically translated from English to the client's native Portuguese before being sent out.
+Manual data collation is no longer required and information is automatically translated from English into the client's native Portuguese before being sent out.
 
 The following steps are automated:
 
@@ -94,7 +94,11 @@ The following steps are automated:
 1. Information is translated from English to Portuguese, the national language of Brazil, using Microsoft Translator.
 1. The data is formatted into an email and sent to the travel agent and client.
 
-:::image type="content" source="media/a1-travel/image5.png" alt-text="A diagram that shows the automation process step-by-step." lightbox="media/a1-travel/image5.png":::
+:::image type="content" source="media/a1-travel/image5.png" alt-text="A diagram that shows the automation process step by step." lightbox="media/a1-travel/image5.png":::
+
+
+
+
 
 ## Build the travel booking process automation
 
