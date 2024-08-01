@@ -28,7 +28,7 @@ If your tenant is running low on available storage capacity, you can add storage
 
 ## Preliminary steps
 
-1. You must be a billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+1. You must be a Microsoft 365 Billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you know how much more storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Purchase Dataverse Capacity add-on
