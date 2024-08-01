@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Dataverse capacity-based storage  | MicrosoftDocs"
-description: Microsoft Dataverse capacity-based storage model.
-ms.date: 10/17/2023
+title: Microsoft Dataverse capacity-based storage  
+description: Learn about the Microsoft Dataverse capacity-based storage model.
+ms.date: 08/01/2024
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -10,6 +10,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+- ianceicys-msft 
 - amiyapatr-zz
 - pnghub
 ---
