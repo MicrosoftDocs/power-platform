@@ -1,5 +1,5 @@
 ---
-title: Additional Microsoft Dataverse Capacity
+title: More Microsoft Dataverse capacity for your tenant
 description: Learn about adding Microsoft Dataverse storage capacity.
 author: sericks007
 ms.subservice: admin
@@ -15,7 +15,7 @@ contributors:
 - ianceicys-msft
 ---
 
-# Additional Microsoft Dataverse Capacity for your tenant
+# More Microsoft Dataverse capacity for your tenant
 
 You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
@@ -28,12 +28,12 @@ If your tenant is running low on available storage capacity, you can add storage
 
 ## Preliminary steps
 
-1. You must be billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+1. You must be a billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
 2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you know how much more storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Purchase Dataverse Capacity add-on
 
-After you determine how much storage you're using, you can add or remove storage space for your subscription. Follow the steps below to review pricing and purchase more storage capacity.
+After you determine how much storage you're using, you can add or remove storage space for your subscription. Use the following steps to review pricing and purchase more storage capacity.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/catalog).
 
@@ -58,4 +58,4 @@ After you determine how much storage you're using, you can add or remove storage
 
    :::image type="content" source="media/storage-file-capacity-purchase.png" alt-text="Buy Dataverse File capacity storage add-on." lightbox="media/storage-file-capacity-purchase.png"::::::
 
-After completing the purchase process, the additional storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+After completing the purchase process, the extra storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
