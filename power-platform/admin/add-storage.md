@@ -8,9 +8,11 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/24/2021
+ms.date: 08/01/2024
 search.audienceType: 
   - admin
+contributors:
+- ianceicys-msft
 ---
 
 ## Additional Microsoft Dataverse capacity for your tenant
