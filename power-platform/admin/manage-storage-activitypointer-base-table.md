@@ -4,7 +4,7 @@ description: Learn about managing ActivityPointerBase table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 08/01/2024
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
