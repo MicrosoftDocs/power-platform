@@ -1,6 +1,6 @@
 ---
-title: "Migrate an environment to a different tenant"
-description: "Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request." 
+title: Tenant-to-tenant migrations 
+description: Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request.
 ms.date: 08/01/2024
 ms.topic: conceptual
 author: matapg007
@@ -15,7 +15,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Tenant-to-tenant migration 
+# Tenant-to-tenant migrations 
 
 ## Migrate an environment to a different tenant
 
