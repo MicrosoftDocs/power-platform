@@ -4,7 +4,7 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 5/23/2023
+ms.date: 08/01/2024
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
@@ -83,10 +83,10 @@ The following topics have information that could be helpful to understand the mo
 -	Any Power Apps and Power Automate flows must be manually exported prior to the date and time arranged for performing the Geo-to-Geo migration.
 -	We do not support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
 
-##### For apps which are solution aware
+##### For apps that're solution-aware
 
 Before the migration: 
-1. For apps that are solution aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
+1. For apps that are solution-aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
 2. Once the canvas apps have been exported, delete the apps in the environment.
 
 > [!IMPORTANT]
@@ -97,7 +97,7 @@ After the migration:
 2. Select **Import**,                and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
-##### For apps which are not solution aware
+##### For apps which aren't solution-aware
 
 Before the migration: 
 1. Go to https://make.powerapps.com, and then select **Apps**.
@@ -120,7 +120,7 @@ After the migration:
 -	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
 
 Before the migration: 
-1. Chatbots are solution aware. You can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
+1. Chatbots are solution-aware. You can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/, and navigate to the **Solutions** page.
@@ -156,6 +156,6 @@ You'll be provided with a list of prerequisites and post-requisites for your mig
 
 We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
-### See also  
+### Related information
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
