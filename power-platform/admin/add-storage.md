@@ -1,6 +1,6 @@
 ---
-title: "Additional Microsoft Dataverse storage capacity"
-description: "Learn about adding Microsoft Dataverse storage capacity." 
+title: Additional Microsoft Dataverse storage capacity for your tenant
+description: Learn about adding Microsoft Dataverse storage capacity.
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -15,9 +15,9 @@ contributors:
 - ianceicys-msft
 ---
 
-## Additional Microsoft Dataverse capacity for your tenant
+## Additional Microsoft Dataverse storage capacity for your tenant
 
-You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. To learn more about storage capacity add-ons, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
+You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more storage capacity to be compliant with storage usage requirements. Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
 
 If your tenant is running low on available storage capacity, you can add storage to your subscription.  
 
@@ -28,8 +28,8 @@ If your tenant is running low on available storage capacity, you can add storage
 
 ## Preliminary steps
 
-1. You must be a **Microsoft 365 Global** or **Billing admin** to do the tasks in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
-2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you know how much additional storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
+1. You must be billing admin to complete the tasks in this article. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+2. Determine your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you know how much more storage capacity is needed. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Purchase Dataverse Capacity add-on
 
@@ -44,7 +44,7 @@ After you determine how much storage you're using, you can add or remove storage
 
 3. Choose a **billing account** to buy products or manage products you own.
 
-4. Search for "Dataverse".
+4. Search for *Dataverse*.
    
    :::image type="content" source="media/storage-search-capacity.png" alt-text="Search for capacity to list Dynamics 365 apps for capacity add-on storage to purchase." lightbox="media/storage-search-capacity.png":::
 
@@ -52,7 +52,7 @@ After you determine how much storage you're using, you can add or remove storage
 
 6. From the **Select license quantity** box, enter the number of licenses to purchase.
 
-7. From the **Subscription length**, choose a perido from 1 month to 3 years.
+7. From the **Subscription length**, choose a period from 1 month to 3 years.
 
 8. Select your billing frequency, and then select **Buy** to complete the purchase process.
 
