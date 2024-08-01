@@ -1,5 +1,5 @@
 ---
-title: Dataverse capacity-based storage administration in Microsoft Power Platform
+title: Dataverse capacity-based storage overview
 description: Learn about enhancements for Dataverse capacity-based storage that affect administrators, including reporting and reaching Dataverse database capacity limits.
 author: ianceicys-msft
 ms.component: pa-admin
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
 - ianceicys-msft 
 ---
-# Dataverse capacity-based storage
+# Dataverse capacity-based storage overview
 
 Key enhancements have been made to the admin experience for the Microsoft Power Platform admin center. These enhancements include:
 
