@@ -712,8 +712,10 @@
                   href: cleanup-asyncoperationbase-table.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
-            - name: Database Tables
+            - name: Database tables
               items:
+                - name: ActivityPointerBase table
+                  href: manage-storage-activitypointer-base-table.md
                 - name: AsyncOperationBase table
                   href: manage-storage-asyncoperation-base-table.md
                 - name: msdyn_copilotinteraction table
