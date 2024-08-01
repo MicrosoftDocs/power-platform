@@ -69,7 +69,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul></li><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity provided at account creation </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity provided at account creation </li><li>**User licenses**: Extra capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center) |
 
@@ -152,13 +152,13 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |---------|---------|---------|
 |**Total storage**     | 100 GB        | 110 GB        |
 
-The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
+The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there's a deficit. This tenant should free up storage or purchase more capacity.
 
 ## Changes for exceeding storage capacity entitlements
 
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
 
-Notifications for capacity approaching storage limits will be triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted is sent when total legacy model capacity has less than 5% of space available.  The final tier of notification is sent when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements). This alerts the admin that the following operations are not available until there is available capacity present on the tenant.
+Notifications for capacity approaching storage limits are triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted is sent when total legacy model capacity has less than 5% of space available.  The final tier of notification is sent when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements). This alerts the admin that the following operations aren't available until there's available capacity present on the tenant.
 
 - Create a new environment (requires minimum 1 GB capacity available)
 - Copy an environment
@@ -169,11 +169,11 @@ Notifications for capacity approaching storage limits will be triggered when any
 
 These notifications are sent out to tenant admins on a weekly basis. 
 
-At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. 
+At this time, there's no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. 
 
 All tenant admins for a tenant automatically receive these notifications.
 
-Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
+A notification banner is displayed in the Power Platform admin center when a tenant has exceeded storage capacity.
 
 ## Actions to take for a storage capacity deficit
 
@@ -183,7 +183,7 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
-We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as _Annotation_ and _Attachment_ is moving from database to file storage, leading to decreased usage of database capacity and an increase in file capacity.
+We're constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as _Annotation_ and _Attachment_ is moving from database to file storage, leading to decreased usage of database capacity and an increase in file capacity.
 
 ### Why could my database table size decrease while my table and file data sizes remain the same?
 
@@ -195,13 +195,13 @@ Provisioning a new environment requires that you not be delinquent in storage ca
 
 ### I have storage licenses from the legacy licensing model, and I also purchased new model storage licenses. Which report will I see?
 
-You'll see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
+You see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
 
 ### Do I get notified through email when my organization is over capacity?
 
 Yes, tenant admins are notified through email on a weekly basis if their organization is at or over capacity. 
 
-Additionally, tenant admins are also notified when their organization reaches 15% of available capacity, and when their organization reaches 5% of available capacity.
+Tenant admins are also notified when their organization reaches 15% of available capacity, and when their organization reaches 5% of available capacity.
 
 ### What are tables ending in “- Analytics” in my capacity report?
 
