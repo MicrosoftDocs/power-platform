@@ -694,7 +694,7 @@
           items:
             - name: Additional Microsoft Dataverse Capacity
               href: add-storage.md
-            - name: Dataverse capacity-based storage
+            - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
             - name: Dataverse capacity-based storage details 
               href: capacity-storage.md
