@@ -166,14 +166,14 @@ For administrative access users:
 ##### For solution-aware apps
 
 Before the migration: 
-1. For apps that are solution-aware, you can go to https://make.powerapps.com/, navigate to the Solutions page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
+1. For apps that are solution-aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions (either individually or group them together in a single solution if they're not already)
 2. Delete these solution-aware apps in the environment after exporting them.
 
 > [!IMPORTANT]
-> Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration will be left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further Solution updates.
+> Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration will be left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further solution updates.
 
 After the migration: 
-1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
@@ -200,10 +200,10 @@ After the migration:
 -	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors. 
 
 Before the migration: 
-1. Chatbots are solution-aware. You can go to https://make.powerapps.com/, navigate to the Solutions page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
+1. Chatbots are solution-aware. You can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
 
 After the migration: 
-1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
 2. Select **Import** and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
