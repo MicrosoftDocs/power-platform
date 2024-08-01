@@ -41,7 +41,7 @@ The template package consists of two solutions:
 
 ## Hardware Request and Management solution components
 
-The Hardware Request and Management solution file contains the following Power Platform capabilities that can easily be customized to fit your own organizational requirements:
+The Hardware Request and Management solution file contains many Power Platform capabilities that can easily be customized to fit your own organizational requirements.
 
 ### Hardware Request app
 

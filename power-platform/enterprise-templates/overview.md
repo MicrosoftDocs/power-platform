@@ -1,20 +1,18 @@
 ---
 title: Overview of Enterprise templates for Power Platform
 description: Learn how Enterprise templates for Power Platform can help you quickly build, extend, and deploy solutions that improve common organizational workflows.
-author: kaagar
-ms.author: kaagar
-contributors: 
-- tverhasselt
-- EllenWehrle
+author: ananthar-msft
+ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 06/13/2024
+ms.date: 07/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+# customer intent: As a reader, I want to understand the purpose and benefits of Enterprise templates for Power Platform.
 ---
 
-# Enterprise templates for Power Platform
+# What are Enterprise templates for Microsoft Power Platform?
 
 Enterprise templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), information technology (IT), and human resource (HR) systems.
 

@@ -7,7 +7,7 @@ contributors:
   - microsoft-george
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/29/2023
+ms.date: 07/30/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -60,26 +60,21 @@ More information: [Microsoft Power Platform Licensing Guide](https://go.microsof
 
 It's important to have a cohesive environment and data policy and to ensure required resources in place.
 
-- **Administrators**
-
-  Make sure that admins with the necessary privileges are available to assign licenses and create environments:
+- **Administrators** - Make sure that admins with the necessary privileges are available to assign licenses and create environments:
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
   - Power Platform Administrator to create environments
 
   [Learn more about Microsoft Power Platform administration](/power-platform/admin/).
 
-- **Environments**
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment).
 
-  - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment).
   - Make sure that a Power Platform environment is set up with a Dataverse database.
   - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
 
   [Learn more about Power Platform environments](/power-platform/admin/environments-overview).
 
-- **Data loss prevention policies**
-
-Make sure that the environment has access to connectors used by the template:
+- **Data loss prevention policies** - Make sure that the environment has access to connectors used by the template:
 
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
 - [Office 365 Outlook](/connectors/office365/)

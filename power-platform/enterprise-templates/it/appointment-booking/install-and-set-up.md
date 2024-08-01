@@ -80,7 +80,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
-The installation requires you to set up four new connections for the Appointment Booking app. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump back and forth between browser windows.
+You need to set up connections for the Appointment Booking app. It's best to create the connections before importing the solution to make the import smoother. If you create the connections during import, you have to jump between browser windows.
 
 To create the connections in advance, take these steps:
 
@@ -119,7 +119,7 @@ Two solutions are installed in your environment, **IT Base** and **Appointment B
 
 ### Download and manually install solution files
 
-1. Download the following Managed *or* Unmanaged solution files:
+1. Download the IT Base and Appointment Booking solution files. You can download either Managed *or* Unmanaged versions:
 
     - Managed
       - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
@@ -216,6 +216,8 @@ Open the newly installed Appointment Booking solutions and verify that the clo
 1. Select *each cloud flow* to verify that it is turned on.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
+[Learn how to support service principal owned flows.](/power-automate/service-principal-support)
+
 ## Step 8: Share the apps
 
 Take the following steps to share the apps with your users:
@@ -237,7 +239,7 @@ Take the following steps to share the apps with your users:
 > [!NOTE]
 >If Appointment Booking apps aren't shared with you and you cannot access them directly from Power Apps, please contact your admin.
 
-More information: [Share a canvas app with your organization](/power-apps/maker/canvas-apps/share-app)
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
 ## Step 9: Enable Copilot (optional)
 

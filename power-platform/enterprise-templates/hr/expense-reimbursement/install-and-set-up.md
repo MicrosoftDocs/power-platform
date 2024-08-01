@@ -8,7 +8,7 @@ contributors:
   - nghiemdoan-msft
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 07/30/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -40,27 +40,21 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 It's important to have a cohesive environment and data policy and to ensure required resources in place.
 
-- **Administrators**
-
-  Make sure that admins with the necessary privileges are available to assign licenses and create environments:
+- **Administrators** - Make sure that admins with the necessary privileges are available to assign licenses and create environments:
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licenses
   - Power Platform Administrator to create environments
 
   [Learn more about Microsoft Power Platform administration.](/power-platform/admin/)
 
-- **Environments**
-
-  Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments.](/power-platform/admin/create-environment)
+- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments.](/power-platform/admin/create-environment)
 
   - Make sure that a Power Platform environment is set up with a Dataverse database.
   - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
 
   [Learn more about Power Platform environments.](/power-platform/admin/environments-overview)
 
-- **Data loss prevention policies**
-
-  Make sure that the environment has access to the connectors used by the Expense Reimbursement template:
+- **Data loss prevention policies** - Make sure that the environment has access to the connectors used by the Expense Reimbursement template:
 
   - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
   - [Office 365 Outlook connector](/connectors/office365/)
@@ -71,7 +65,7 @@ It's important to have a cohesive environment and data policy and to ensure requ
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up three new connections for the Expense Reimbursement app.
 
-It's best to create the connections before you import the solution. If you create the connections during import, you have to jump back and forth between browser windows.
+It's best to create the connections before you import the solution. If you create the connections during import, you have to jump between browser windows.
 
 1. Sign in to [Power Apps.](https://make.preview.powerapps.com/)
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
@@ -135,13 +129,13 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 1. Select **Install**. Two [solutions](/power-platform/alm/solution-concepts-alm) are installed in your environment:
 
     - **Employee Experience Base**
-    - **Expense Reimbursement**.
+    - **Expense Reimbursement**
 
-    Go to the [Expense Reimbursement overview article](./overview.md) to learn more about the two solutions.
+  Go to the [Expense Reimbursement overview article](./overview.md) to learn more about the two solutions.
 
 ### Download and manually install solution files
 
-1. Download solution files.
+1. Download the IT Base and Expense Reimbursement solution files. You can download either Managed *or* Unmanaged versions:
 
     - Managed:
       - [mpa_EmployeeExperienceBase_managed.zip](https://aka.ms/EEBaseManagedSolution)
@@ -240,7 +234,7 @@ Share the Expense Reimbursement app with the users in your organization.
 
 1. Select **Share**.
 
-    More information: [Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
 > [!NOTE]
 > If the Expense Reimbursement app isn't shared with you and you can't access it directly in Power Apps, contact your administrator.

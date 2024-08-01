@@ -117,6 +117,16 @@
       href: it/appointment-booking/manage.md
     - name: Use
       href: it/appointment-booking/use.md
+  - name: Checklist
+    items:
+    - name: Overview
+      href: it/checklist/overview.md
+    - name: Install and set up
+      href: it/checklist/install-and-set-up.md
+    - name: Manage
+      href: it/checklist/manage.md
+    - name: Use
+      href: it/checklist/use.md
 - name: Related content
   items:
   - name: Power Apps documentation

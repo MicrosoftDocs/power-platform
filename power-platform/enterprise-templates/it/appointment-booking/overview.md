@@ -29,7 +29,7 @@ The Appointment Booking template is available in [Microsoft AppSource](<https://
 
 - **Appointment Booking** contains all the components to enable users to manage appointment slots and bookings.
 
-## IT Base solution components
+## IT Base solution
 
 The **IT Base** solution contains various components that allow an admin to set up and manage the language preferences.
 
@@ -39,7 +39,7 @@ The **IT Base** solution contains various components that allow an admin to set 
 
   - **IT Localization** records the app string replacements for every localized version of the app
   - **IT Error** records all errors from app and flows
-- One choice: **ISO Language Code** stores the abbreviation for available language codes
+- One choice: **ISO Language Code** stores the abbreviation for available language codes.
 
 ## Appointment Booking solution components
 
