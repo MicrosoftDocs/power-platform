@@ -1,5 +1,5 @@
 ---
-title: Microsoft Dataverse capacity-based storage  
+title: Microsoft Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
 ms.date: 08/01/2024
 ms.topic: conceptual
@@ -15,7 +15,7 @@ contributors:
 - pnghub
 ---
 
-# Microsoft Dataverse capacity-based storage
+# Microsoft Dataverse capacity-based storage details
 
 If you purchased storage in or after April 2019, or you have a mix of storage purchases made before and after April 2019, you'll see your storage capacity entitlement and usage by database, file, and log as it appears in the Microsoft Power Platform admin center today. 
 
