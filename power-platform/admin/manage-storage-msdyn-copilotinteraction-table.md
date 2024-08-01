@@ -44,7 +44,7 @@ The chat transcripts in **msdyn_interactiondata** can be downloaded for offline 
 
 Admins can turn off historical analytics for Copilot in Customer Service Admin Center through disabling [historical analytics for Copilot](/dynamics365/customer-service/administer/configure-cs-historical-analytics-csh#enable-historical-analytics-for-copilot). 
 
-Once admins turn off historical analytics for Copilot, then an admin can turn off the interactions for each feature for [Copilot for questions, email, summaries](/dynamics365/customer-service/administer/configure-copilot-features#opt-out-from-using-copilot-features). 
+Once admins turn off historical analytics for Copilot, then an admin can turn off the interactions for each feature for [Copilot for questions, email, and summaries](/dynamics365/customer-service/administer/configure-copilot-features#opt-out-from-using-copilot-features). 
 
 Admins can set up custom [bulk delete jobs](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) to control how long transcripts are [retained as data](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period). 
 
