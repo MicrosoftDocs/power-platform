@@ -442,11 +442,11 @@
                   href: automatic-environment-cleanup.md
                 - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md
-                - name: Migrate environment
+                - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
-                - name: Geo to geo migrations
+                - name: Geo-to-geo migrations
                   href: geo-to-geo-migrations.md
-                - name: Power Platform Geos
+                - name: Power Platform geos
                   href: regions-overview.md
                 - name: Multiple online environments or tenants
                   href: multiple-online-environments-tenants.md
