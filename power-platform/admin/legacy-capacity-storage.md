@@ -1,15 +1,18 @@
 ---
-title: "Legacy storage capacity  | MicrosoftDocs"
-description: Legacy storage model details.
-ms.date: 06/08/2021
-ms.reviewer: ""
+title: Legacy storage capacity
+description: Learn more about the legacy storage model details.
+ms.date: 08/01/2024
+ms.reviewer: sericks
 ms.topic: conceptual
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- ianceicys-msft 
 ---
+
 # Legacy storage capacity
 
 In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage before April 2019, you're using the legacy licensing model for storage discussed in this article.
@@ -168,7 +171,7 @@ These notifications are sent out to tenant admins on a weekly basis.
 
 At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. 
 
-All tenant admins for a tenant will automatically receive these notifications.
+All tenant admins for a tenant automatically receive these notifications.
 
 Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
 
@@ -180,11 +183,11 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
-We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage, leading to decreased usage of database capacity and an increase in file capacity.
+We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as _Annotation_ and _Attachment_ is moving from database to file storage, leading to decreased usage of database capacity and an increase in file capacity.
 
 ### Why could my database table size decrease while my table and file data sizes remain the same?
 
-As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space leading to decreased usage of database capacity, while the table and file data size computations remain unchanged.
+As part of moving file-type data such as _Annotation_ and _Attachment_ out from database and into file storage, we periodically reclaim the freed database space leading to decreased usage of database capacity, while the table and file data size computations remain unchanged.
 
 ### I have available instances (production and sandbox), but my capacity usage is more than my capacity entitlement. Will I be able to provision new environments? 
 
@@ -192,29 +195,27 @@ Provisioning a new environment requires that you not be delinquent in storage ca
 
 ### I have storage licenses from the legacy licensing model, and I also purchased new model storage licenses. Which report will I see?
 
-You will see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
+You'll see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
 
-### Do I get notified through email when my org is over capacity?
+### Do I get notified through email when my organization is over capacity?
 
-Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. 
+Yes, tenant admins are notified through email on a weekly basis if their organization is at or over capacity. 
 
-Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
+Additionally, tenant admins are also notified when their organization reaches 15% of available capacity, and when their organization reaches 5% of available capacity.
 
-### What are tables ending in “- analytics” in my capacity report?
+### What are tables ending in “- Analytics” in my capacity report?
 
 Tables ending in "– Analytics" are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service. 
 
 Resource scheduling and optimization analytics dashboards generate predictive insights and require data that is synched from Dataverse tables. 
 
-See **More information** below for documentation covering the installed Insights applications and the "– Analytics" tables used to create insights and dashboards.
-
-**More information:**
+For more documentation covering the installed Insights applications and the "– Analytics" tables used to create insights and dashboards learn more in:
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
+- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                          
 - [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
-### See also
+### Related information
 
 [Dataverse storage capacity](capacity-storage.md) <br />
 [What's new in storage](whats-new-storage.md) <br />
