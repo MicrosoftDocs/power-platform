@@ -1,5 +1,5 @@
 ---
-title: Geo to geo migrations
+title: Geo-to-geo migrations
 description: Move your environment in a single tenant from one region to another with the Geo Migration feature.
 author: matapg007
 ms.component: pa-admin
@@ -16,7 +16,7 @@ search.audienceType:
   - admin
 ---
 
-# Geo to geo migrations
+# Geo-to-geo migrations
 
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
 
