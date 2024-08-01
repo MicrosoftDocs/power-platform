@@ -26,11 +26,11 @@ We're rolling out this feature now so check back if your user experience varies 
 > [!NOTE]
 > For licensing information, see the [Power Apps and Power Automate licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 >
-> If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The steps below do not apply to partner-based subscriptions.
+> If you purchased your Dynamics 365 subscription through a Microsoft partner, contact them to manage storage capacity. The following steps don't apply to partner-based subscriptions.
 
 ## Licenses for Microsoft Dataverse capacity-based storage model
 
-The following licenses provide capacity by using the new storage model. If you have any of these licenses, you'll see the new model report: 
+The following licenses provide capacity by using the new storage model. If you have any of these licenses, you see the new model report: 
 
 - Dataverse for Apps Database Capacity 
 - Dataverse for Apps File Capacity 
@@ -77,7 +77,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul></li><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database including the Dataverse search index</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: More capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center) |
 
@@ -112,8 +112,8 @@ Note the following features:
 >   - Developer
 > - The default environment has the following included storage capacity: 3GB Dataverse database capacity, 3GB Dataverse file capacity, and 1GB Dataverse log capacity.
 > - You can select an environment that's showing 0 GB, and then go to its environment capacity analytics page to see the actual consumption.
-> - For the default environment, the list view will only show the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
-> - The capacity check conducted prior to creating new environments will exclude the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
+> - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
+> - The capacity check conducted prior to creating new environments excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
 
 #### Environment storage capacity details
@@ -167,7 +167,7 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
 
-Notifications for capacity approaching storage limits will be triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
+Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted are sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification triggers when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which alerts the admin that the following operations are no longer available until the overage is resolved.
 
 - Create a new environment (requires minimum 1GB capacity available)
 - Copy an environment
@@ -179,19 +179,19 @@ Notifications for capacity approaching storage limits will be triggered when any
 > [!NOTE]
 > The storage driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage has been taken into consideration to reduce the number of emails a tenant admin receives.
 
-These notifications are sent out to tenant admins, Power Platform admins, and Dynamics 365 admins on a weekly basis. At this time, there is no option for a customer to opt-out of these notifications or delegate these notifications to someone else. All admins types listed earlier will automatically receive these notifications.
+These notifications are sent out to tenant admins, Power Platform admins, and Dynamics 365 admins on a weekly basis. At this time, there is no option for a customer to opt-out of these notifications or delegate these notifications to someone else. All admins types listed earlier automatically receive these notifications.
 
-Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
+Additionally, there is a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity. 
 
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 
 Your organization must have the right licenses for the storage you use: 
 - If you use more than your documented entitlements or usage limits, you must buy additional licenses.
-- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
+- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
 
 ## Example storage capacity scenarios, overage enforcement
 
-You should be within limits for your entitled capacity for database, log, and file. If you have used more capacity than you're entitled to, you should buy more capacity or free up capacity. However, if you've overused database, log, or file capacity, review the following scenarios to understand when enforcement will be applied.
+You should be within limits for your entitled capacity for database, log, and file. If you have used more capacity than you're entitled to, you should buy more capacity or free up capacity. However, if you've overused database, log, or file capacity, review the following scenarios to understand when enforcement is applied.
 
 ### Scenario 1: Database storage is over capacity, overage enforcement
 
@@ -257,7 +257,7 @@ Possibly. Database storage includes both the database rows and index files used 
 - Data volume or complexity changes.
 - A change in usage patterns that indicate new indexes are in need of reevaluation.
 
-If Quick Find lookups are configured for data that's frequently used, this will also create additional indexes in the database. Admin-configured Quick Find values can increase the size of the indexes based on:
+If Quick Find lookups are configured for data that's frequently used, this also creates additional indexes in the database. Admin-configured Quick Find values can increase the size of the indexes based on:
 
 - The number of columns chosen and the data type of those columns.
 - The volume of rows for the tables and columns.
@@ -286,15 +286,15 @@ Customers who renew existing subscriptions can choose to continue to transact by
 
 ### I'm a Power Apps/Power Automate customer and have environments with and without database. Will they consume storage capacity?
 
-Yes. All environments will consume 1 GB, regardless of whether they have an associated database.
+Yes. All environments consume 1 GB, regardless of whether they have an associated database.
 
-### Do I get notified through email when my org is over capacity?
+### Do I get notified through email when my organization is over capacity?
 
-Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
+Yes, tenant admins are notified through email on a weekly basis if their organization is at or over capacity. Additionally, tenant admins are notified when their organization reaches 15% of available capacity, and when their organization reaches 5% of available capacity.
 
 ### Why am I no longer getting storage notifications?
 
-Capacity email notifications are sent weekly to tenant admins based on three different thresholds. If you're no longer getting storage notifications, check to see your admin role. It could also be the case that your org is over the three pre-defined capacity thresholds. In that case, you will not receive an email notification.
+Capacity email notifications are sent weekly to tenant admins based on three different thresholds. If you're no longer getting storage notifications, check to see your admin role. It could also be the case that your organization is over the three pre-defined capacity thresholds. In that case, you don't receive an email notification.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
@@ -314,7 +314,7 @@ Tables ending in “– Analytics” are tables used by one or more Insights app
 
 ### Why can I no longer see the Summary tab in my capacity report? 
 
-This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, will no longer see this tab and will be redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
+This is due to a change that occurred in April 2023, after which only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab in the capacity report. Users, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you have a user that requires access to the **Summary** tab, assign one of the required roles. 
 
 **More information:**
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
@@ -322,7 +322,7 @@ This is due to a change that occurred in April 2023, after which only users with
 - [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
-### See also
+### Related information
 [Add Microsoft Dataverse storage capacity](add-storage.md) <br />
 [Capacity add-ons](capacity-add-on.md)<br />
 [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning) <br />
