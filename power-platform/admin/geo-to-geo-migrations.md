@@ -20,7 +20,7 @@ search.audienceType:
 
 We continue to open new datacenter regions for business services, and to add datacenters to existing regions.  
 
-The Geo Migration feature will allow customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they are separate services. Your environment will still appear in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
+The Geo Migration feature allows customers to move their environments in a single tenant from one region to another. There are no user-interface changes or version changes as part of this move. In the case of an environment residing in an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment in a single tenant, moving the environment doesn't move the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment; they're separate services. Your environment still appears in your tenant alongside the [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] environment.  
 
 > [!IMPORTANT]
 > - Support for geo migration is limited and generally not available.
@@ -45,7 +45,7 @@ Moving an environment to a different region changes your tenant to be multiregio
 > [!IMPORTANT]
 > Once an environment is moved to the new region, prior backups of that environment are no longer available.
 
-The other significant change is to your organization URL. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier will change. For example:  
+The other significant change is to your organization URL. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier changes. For example:  
 
 - South America (LATAM/SAM) = .crm2.dynamics.com  
 - Canada (CAN) = .crm3.dynamics.com  
@@ -60,10 +60,10 @@ The other significant change is to your organization URL. Each of the regional d
 
 For example, if your existing organization URL is `https://myorg.crm`<strong>5</strong>.dynamics.com and you request it to be moved to Australia, the new organization URL will be `https://myorg.crm`<strong>6</strong>.dynamics.com.  
 
-You'll need to update any direct references to your organization URL.  
+You need to update any direct references to your organization URL.  
 
 > [!NOTE]
-> Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. In the unlikely event this happens, we will work with you to decide how to proceed.  
+> Organization URLs must be unique. If your organization name has already been reserved in the destination datacenter, it won't be available. In the unlikely event this happens, we work with you to decide how to proceed.  
 
 See [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
 
@@ -81,16 +81,16 @@ The following topics have information that could be helpful to understand the mo
 #### For Power Apps and Power Automate: 
 
 -	Any Power Apps and Power Automate flows must be manually exported prior to the date and time arranged for performing the Geo-to-Geo migration.
--	We do not support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
+-	We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration. 
 
-##### For apps that're solution-aware
+##### For apps that are solution-aware
 
 Before the migration: 
 1. For apps that are solution-aware, you can go to https://make.powerapps.com/, navigate to the **Solutions** page, and export all apps/solutions either individually or group them together into a single solution (if they're not already).
 2. Once the canvas apps have been exported, delete the apps in the environment.
 
 > [!IMPORTANT]
-> Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration will be left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further solution updates.
+> Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration are left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further solution updates.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
@@ -127,7 +127,7 @@ After the migration:
 2. Select **Import**, and use the file selector to pick the packages exported from the above steps.
 3. Confirm that the import was successfully completed by checking the solution contents in the target environment. 
 
-#### For Power Apps portals (must be done for each portal in the environment(s)): 
+#### For Power Apps portals (must be done for each portal in the environments): 
               
 Before the migration: 
 1. Sign in to the environment.
@@ -140,7 +140,7 @@ After the migration:
 3. Provision the portal with the same portal type and language.
 
 #### For Dynamics 365 Marketing app:
-The Dynamics 365 Marketing app does not support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, the app must be uninstalled prior to the migration.
+The Dynamics 365 Marketing app doesn't support geo migration, due to component dependencies. For more information, see [Manage your Dynamics 365 Marketing instances](/dynamics365/marketing/manage-marketing-instances). If installed, the app must be uninstalled prior to the migration.
 
 Before the migration: 
 
@@ -148,13 +148,13 @@ Before the migration:
 
 
 ## How the move works  
-You'll be provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move. 
+You are provided with a list of prerequisites and post-requisites for your migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after your move. 
 
 |   |    Before the move   |  During the move | After the move |
 |-----|------|---|----|
-| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager will work with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps, primarily changing your new URLs with any associated plugins or services. |
+| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You'll be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your geo has migrated you can perform the post requisite steps, primarily changing your new URLs with any associated plugins or services. |
 
-We will adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
+We adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
 
 ### Related information
 
