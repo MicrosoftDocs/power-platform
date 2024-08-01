@@ -24,7 +24,7 @@ We're rolling out these features now so check back if your user experience varie
 
 ## Updates to storage reporting 
 
-In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types. They also receive additional per-user subscription license entitlements. More storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
+In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types. They also receive more per-user subscription license entitlements. More storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
 ![Evolution of data management.](media/storage-model-evolution.png "Evolution of data management")
 
@@ -69,10 +69,10 @@ More information:
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 
 Your organization must have the right licenses for the storage you use: 
-- If you use more than your documented entitlements or usage limits, you must buy additional licenses.
+- If you use more than your documented entitlements or usage limits, you must buy more licenses.
 - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
 
-If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing additional operations storage capacity.
+If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing extra operations storage capacity.
 
 ### Request a temporary extension
 
@@ -123,8 +123,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 | January 2021 | The amount of default Dataverse database capacity entitled per tenant for both the per-app and per-flow licenses increased from **1 GB** to **5 GB**. The corresponding update to the ["Subscription Capacity" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) is in progress and should be published soon. |
 | December 2020 | As part of our storage optimization efforts, we continue to make improvements. In December 2020, we included most of the *WebResourceBase* table and *RibbonClientMetadataBase* table as part of file storage. Customers see file storage consumption increase and database consumption decrease based on the amount of data in these tables. This effort will continue for other tables in the future. Check back here to see when more tables go through a similar transition. |
 
-### See also
-
+### Related information
 [Legacy storage capacity](legacy-capacity-storage.md)<br>
 [Dataverse storage capacity](capacity-storage.md)<br>
 [Free up storage space](free-storage-space.md)<br>
