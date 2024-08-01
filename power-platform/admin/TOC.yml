@@ -692,7 +692,7 @@
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
-            - name: Additional Microsoft Dataverse Capacity
+            - name: Add more Dataverse capacity
               href: add-storage.md
             - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
