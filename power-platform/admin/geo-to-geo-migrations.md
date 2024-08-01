@@ -9,6 +9,7 @@ ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
 contributors: 
+    - brsova
     - ProfessorKendrick
     - - LaurentPepin
 search.audienceType: 
@@ -89,7 +90,7 @@ Before the migration:
 2. Once the canvas apps have been exported, delete the apps in the environment.
 
 > [!IMPORTANT]
-> Solution aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration will be left in an inoperable state after the migration completes. They will not playable, editable, or exportable and will need to be deleted to unblock any further Solution updates.
+> Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration will be left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further Solution updates.
 
 After the migration: 
 1. Select the new environment from https://make.powerapps.com/ and navigate to the **Solutions** page.
