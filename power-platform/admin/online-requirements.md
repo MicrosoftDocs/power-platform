@@ -4,7 +4,7 @@ description: Provides information about URLs and IP addresses to be added to the
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2024
+ms.date: 06/20/2024
 ms.subservice: admin
 ms.author: sericks
 contributors:
@@ -36,7 +36,7 @@ Add the following URLs to the allow list.
 |Power Automate| - [Public cloud](/power-automate/ip-address-configuration#required-services)<br/>- [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)|
 |Power BI|- [Public cloud](/power-bi/admin/power-bi-allow-list-urls)<br/>- [Government cloud](/power-bi/admin/service-govus-overview#allow-connections-to-power-bi)|
 |Power Pages| - [Public cloud](/power-pages/system-requirements#required-services)<br/>- [Government cloud](/power-pages/system-requirements#required-services)|
-|Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
+|Microsoft Copilot Studio|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
 > [!IMPORTANT]
 > If you are a customer in China and want to access Power Platform services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md) 
@@ -81,7 +81,7 @@ All IP addresses for various services for public and government clouds are avail
 
 The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. 
 
-For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`.
+For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. For real-time collaboration features, you must add the IP address values specified under the `MicrosoftAzureFluidRelay` service tag.
 
 :::image type="content" source="media/ip-example.png" alt-text="PowerPlatformInfra service tag for Power Platform IPs":::  
 

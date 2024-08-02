@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 06/17/2024
+ms.date: 07/23/2024
 ms.custom: template-how-to
 contributors:
 - kavehkazms
@@ -92,7 +92,7 @@ To simplify the key management tasks, the tasks are broken down into three main 
 
 ## Licensing requirements for customer managed key
 
-Customer managed key policy is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+Customer managed key policy is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to using customer managed key for Microsoft Power Platform and Dynamics 365 requires users in the environments where the encryption key policy is enforced to have one of these subscriptions:
 
@@ -130,7 +130,7 @@ The key vault administrator then grants the respective Power Platform/Dynamics 3
 ##### Prerequisites
 
 - An Azure subscription that includes Azure Key Vault or Azure Key Vault managed hardware security modules.
-- Global tenant admin or a Microsoft Entra ID with:
+- A Microsoft Entra ID with:
   - Contributor permission to the Microsoft Entra subscription.
   - Permission to create an Azure Key Vault and key.
   - Access to create a resource group. This is required to set up the key vault.
@@ -198,6 +198,10 @@ In Azure, perform the following steps:
       - **Name**: Provide a name for the key
       - **Key type**: **RSA**
       - **RSA key size**: **2048**
+        
+   > [!Important]
+   > If you set an **expiration date** in your key and the key expired, all the environments that're encrypted with this key will be down. Set [an alert to monitor expiry certificates](/azure/key-vault/general/alert#example-log-query-alert-for-near-expiry-certificates) with email notifications for your local Power Platform admin and Azure key vault admin as a reminder to renew the expiration date. This is important to prevent any unplanned system outages.  
+   
 
 #### Import protected keys for Hardware Security Modules (HSM)
 You can use your protected keys for hardware security modules (HSM) to encrypt your Power Platform Dataverse environments. Your [HSM-protected keys must be imported into the key vault](/azure/key-vault/keys/hsm-protected-keys) so an Enterprise policy can be created. For more information, see [Supported HSMs](/azure/key-vault/keys/hsm-protected-keys#supported-hsms) [Import HSM-protected keys to Key Vault (BYOK)](/azure/key-vault/keys/hsm-protected-keys-byok?tabs=azure-cli). 
@@ -268,10 +272,9 @@ Register Power Platform as a resource provider. You only need to do this task on
 1. Install PowerShell MSI. More information: [Install PowerShell on Windows, Linux, and macOS](https://ms.portal.azure.com/#create/Microsoft.Template)
 1. After the PowerShell MSI is installed, go back to [Deploy a custom template](https://ms.portal.azure.com/#create/Microsoft.Template) in Azure.
 1. Select the **Build your own template in the editor** link.
-1. Copy the JSON template into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
+1. Copy [this JSON template](#enterprise-policy-json-template) into a text editor such as Notepad. More information: [Enterprise policy json template](#enterprise-policy-json-template)
 1. Replace the values in the JSON template for: *EnterprisePolicyName*, *location where EnterprisePolicy needs to be created*, *keyVaultId*, and *keyName*. More information: [Field definitions for json template](#field-definitions-for-json-template)
 1. Copy the updated template from your text editor then paste it into the **Edit template** of the **Custom deployment** in Azure, and select **Save**.
-   :::image type="content" source="media/cmk-keyvault-template.png" alt-text="Azure key vault template":::
 1. Select a **Subscription** and **Resource group** where the enterprise policy is to be created.
 1. Select **Review + create**, and then select **Create**.
 
@@ -359,11 +362,18 @@ Once the enterprise policy is created, the key vault administrator grants the en
 > [!NOTE]
 > The above permission setting is based on your key vault's **Permission model** of **Azure role-based access control**. If your key vault is set to **Vault access policy**, it's recommended that you migrate to the role-based model. To grant your enterprise policy access to the key vault using **Vault access policy**, create an Access policy, select **Get** on *Key management operations* and **Unwrap key** and **Wrap key** on *Cryptographic Operations*.
 
-
-
+   > [!Note]
+   > To prevent any unplanned system outages, it's important that the enterprise policy has access to the key. Make sure that:
+   > - The key vault is active.
+   > - The key is active and not expired.
+   > - The key isn't deleted.
+   > - The above key permissions aren't revoked.
+   >   
+   > The environments which are using this key will be disabled when the encryption key is not accessible.   
+   
 ### Grant the Power Platform admin privilege to read enterprise policy
 
-Administrators who have Azure global, Dynamics 365, and Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the global admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator is able to view the enterprise policies on the Power Platform admin center.  
+Administrators who have Dynamics 365 or Power Platform administration roles can access the Power Platform admin center to assign environments to the enterprise policy. To access the enterprise policies, the admin with Azure key vault access is required to grant the **Reader** role to the Power Platform admin. Once the **Reader** role is granted, the Power Platform administrator is able to view the enterprise policies on the Power Platform admin center.  
 
 > [!NOTE]
 > Only Power Platform and Dynamics 365 administrators who are granted the reader role to the enterprise policy can add an environment to the policy. Other Power Platform or Dynamics 365 administrators might be able to view the enterprise policy but they'll get an error when they try to **Add environment** to the policy.
@@ -390,7 +400,7 @@ Administrators who have Azure global, Dynamics 365, and Power Platform administr
 To manage the environment's encryption, you need the following permission:
 
 - Microsoft Entra active user who has a Power Platform and/or Dynamics 365 admin security role.
-- Microsoft Entra user who has either a global tenant admin, Power Platform or Dynamics 365 service admin role.
+- Microsoft Entra user who has either a Power Platform or Dynamics 365 service admin role.
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
@@ -470,8 +480,8 @@ You can see the [environment history](environments-overview.md#environment-histo
 
 To change your encryption key, create a new key and a new enterprise policy. You can then change the enterprise policy by removing the environments and then adding the environments to the new enterprise policy. The system is down two times when changing to a new enterprise policy - 1) to revert the encryption to Microsoft Managed key and 2) to apply the new enterprise policy.
 
- > [!Recommendation]
- > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**. ](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version)
+ > [!Tip]
+ > To rotate the encryption key, we recommend using the Key vaults' [**New version** or setting a **Rotation policy**](customer-managed-key.md#rotate-the-environments-encryption-key-with-a-new-key-version).
 
 1. In [Azure portal](https://ms.portal.azure.com/), create a new key and a new enterprise policy. More information:  [Create encryption key and grant access](#create-encryption-key-and-grant-access) and [Create an enterprise policy](#create-enterprise-policy)
 1. Once the new key and enterprise policy are created, go to **Policies** > **Enterprise policies**.
@@ -506,7 +516,7 @@ To rotate the encryption key by creating a new key version, use the following st
 1.	The **Enabled** setting defaults to **Yes**, which means that the new key version is automatically enabled upon creation.
 1.	Select **Create**.
    
-> [!Recommendation]
+> [!Tip]
 > To comply with your key rotation policy, you can rotate the encryption key using the [Rotation policy](/azure/key-vault/keys/how-to-configure-key-rotation#key-rotation-policy). You can either configure a rotation policy or rotate, on demand, by invoking [Rotate now](/azure/key-vault/keys/how-to-configure-key-rotation#rotation-on-demand).
 
 > [!IMPORTANT]

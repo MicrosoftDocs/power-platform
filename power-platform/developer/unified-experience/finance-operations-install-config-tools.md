@@ -1,5 +1,5 @@
 ---
-title: "Install and configure development tools (preview)"
+title: "Install and configure development tools"
 description: Set up required finance and operations app development tools on your local computer.
 author: pvillads
 ms.date: 06/06/2024
@@ -14,7 +14,6 @@ contributors:
 # Install and configure development tools
 
 This article describes how to install and configure required Visual Studio finance and operations tools into your local development environment. The instructions in each section should be followed in the order presented in this article.
-
 
 > [!IMPORTANT]
 > You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series

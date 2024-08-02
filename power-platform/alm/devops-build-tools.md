@@ -5,7 +5,7 @@ keywords:
 author: devkeydet
 ms.author: marcsc
 ms.subservice: alm
-ms.date: 05/14/2024
+ms.date: 07/08/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -36,9 +36,9 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 
 ![ALM powered by Azure DevOps.](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
-> [!NOTE] 
+> [!NOTE]
 > Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
-> 
+>
 > Microsoft Power Platform Build Tools are now available for use in **GCC** and **GCC High** regions.
 
 ## What are Microsoft Power Platform Build Tools?
@@ -57,8 +57,7 @@ changes*. The build tasks can largely be categorized into four types:
 - Solution
 - Environment management
 
-For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
-
+For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md).
 
 ## What is Power Platform Build Tools version 2.0?
 
@@ -85,7 +84,6 @@ searching for "Power Platform".
 ## Connection to environments
 
 To interact with the Microsoft Power Platform environment, you must establish a connection so the build tool tasks can perform the required actions. Two types of connections are available:
-
 
 |Connection type|Description|
 |---------|---------|
@@ -140,7 +138,6 @@ Use the information displayed to configure the Power Platform service connection
 > [!IMPORTANT]
 > Keep the client secret safe and secure. Once the command prompt is cleared, you cannot retrieve the same client secret again.
 
-
 ### Configure environment with the Application ID
 
 You must add the Application ID as an Application User in the Microsoft Power Platform environment you're connecting to. There are two ways you can do this.
@@ -169,7 +166,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
+*The build tools work for both canvas and model-driven apps, Microsoft CoPilot Studio virtual agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
 
 **I had previously installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 

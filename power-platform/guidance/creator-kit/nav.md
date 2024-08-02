@@ -61,7 +61,7 @@ Each item uses the following schema to visualize data in the component.
 
 Example:
 
-  ```powerapps-dot
+  ```power-fx
 Table(
     {
         ItemKey: "1",
@@ -115,7 +115,7 @@ Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) form
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 
-  ```powerapps-dot
+  ```power-fx
     Switch( Self.Selected.ItemKey,
 
       /* Action for ItemKey 1 */
@@ -146,7 +146,7 @@ To make calls to the input event, you can set a context variable that is bound t
 
 E.g.
 
-```powerapps-dot
+```power-fx
 UpdateContext({ctxResizableTextareaEvent:"SetFocus" & Text(Rand())}));
 ```
 

@@ -52,7 +52,7 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
-            - name: View known issues (preview)
+            - name: View known issues
               href: view-known-issues.md
             - name: Support environments and the consent process
               href: support-environment.md
@@ -70,19 +70,17 @@
           items:
             - name: Overview
               href: pricing-billing-skus.md
-            - name: About licensing and license management
-              href: wp-license-management.md
-            - name: View license consumption for Power Apps and Power Automate (preview)
-              href: view-license-consumption-issues.md
-            - name: View license consumption for finance and operations apps
-              href: view-license-consumption-finops-apps.md
-            - name: Manage Power Apps licenses
-              href: signup-question-and-answer.md
-            - name: View Intelligent recommendations about licensing (preview)
-              href: get-recommendations-licensing.md
-            - name: Administer without a license
-              href: global-service-administrators-can-administer-without-license.md
-            - name: Power Apps
+            - name: License consumption and management
+              items:
+                - name: View license consumption for Power Apps and Power Automate (preview)
+                  href: view-license-consumption-issues.md
+                - name: View license consumption for finance and operations apps
+                  href: view-license-consumption-finops-apps.md
+                - name: View intelligent recommendations about licensing (preview)
+                  href: get-recommendations-licensing.md
+                - name: Administer without a license
+                  href: global-service-administrators-can-administer-without-license.md
+            - name: Power Apps licensing
               items:
                 - name: Purchase Power Apps
                   href: signup-for-powerapps-admin.md
@@ -94,26 +92,28 @@
                   href: auto-claim-licensing.md
                 - name: Power Apps licensing FAQs
                   href: powerapps-licensing-faq.md
-            - name: Power Automate
+                - name: Manage Power Apps licenses
+                  href: signup-question-and-answer.md
+            - name: Power Automate licensing
               items:
-                - name: Overview
-                  href: power-automate-licensing/overview.md
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
-                - name: FAQs about licenses
-                  href: power-automate-licensing/faqs.md
-                - name: When premium flows are subject to license enforcement
-                  href: power-automate-licensing/when-flows-are-turned-off.md
-                - name: Buy Power Automate licenses
-                  href: power-automate-licensing/buy-licenses.md
-                - name: Add-ons
+                - name: Types of add-ons
                   href: power-automate-licensing/add-ons.md
-                - name: Request a Power Automate premium license
-                  href: power-automate-licensing/request-premium-license.md
-                - name: Autoclaim policies for Power Automate licenses (preview)
-                  href: power-automate-licensing/power-automate-auto-claim.md
-            - name: Power Platform licensing FAQs
-              href: powerapps-flow-licensing-faq.md
+                - name: Deep dive on specific licenses
+                  href: power-automate-licensing/deep-dive-on-specific-license.md
+                - name: Licensing FAQ
+                  href: power-automate-licensing/faqs.md
+                - name: Licensing management
+                  items:
+                    - name: When premium flows are subject to enforcement
+                      href: power-automate-licensing/when-flows-are-turned-off.md
+                    - name: Buy Power Automate licenses
+                      href: power-automate-licensing/buy-licenses.md
+                    - name: Request a Power Automate premium license
+                      href: power-automate-licensing/request-premium-license.md
+                    - name: Autoclaim policies for Power Automate licenses
+                      href: power-automate-licensing/power-automate-auto-claim.md
             - name: Pay-as-you-go plan
               items:
                 - name: Overview
@@ -126,8 +126,10 @@
                   href: pay-as-you-go-usage-costs.md
                 - name: Issues and frequently asked questions
                   href: pay-as-you-go-issues-faq.md
-            - name: Requests limits and allocations
+            - name: Power Platform requests limits
               href: api-request-limits-allocations.md
+            - name: Power Platform licensing FAQs
+              href: powerapps-flow-licensing-faq.md
         - name: Environments
           items:
             - name: Administer environments
@@ -440,11 +442,11 @@
                   href: automatic-environment-cleanup.md
                 - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md
-                - name: Migrate environment
+                - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
-                - name: Geo to geo migrations
+                - name: Geo-to-geo migrations
                   href: geo-to-geo-migrations.md
-                - name: Power Platform Geos
+                - name: Power Platform geos
                   href: regions-overview.md
                 - name: Multiple online environments or tenants
                   href: multiple-online-environments-tenants.md
@@ -462,6 +464,8 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
+            - name: Manage security
+              href: security/security-posture-overview.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -584,7 +588,7 @@
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
                       href: use-service-admin-role-manage-tenant.md
-                    - name: Manage high privileged admin roles (preview)
+                    - name: Manage high privileged admin roles
                       href: manage-high-privileged-admin-roles.md
                     - name: Miscellaneous privileges
                       href: miscellaneous-privileges.md
@@ -678,6 +682,8 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
+                - name: Telemetry events for mobile app synchronization and actions (preview)
+                  href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
                 - name: Set up Application Insights with Power Automate
@@ -686,33 +692,37 @@
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
-            - name: What's new for storage
+            - name: Add more Dataverse capacity
+              href: add-storage.md
+            - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
-            - name: New capacity storage model
+            - name: Dataverse capacity-based storage details 
               href: capacity-storage.md
-            - name: Legacy capacity storage model
-              href: legacy-capacity-storage.md
-            - name: Finance and operations storage capacity
-              href: finance-operations-storage-capacity.md
-            - name: View self-service capacity
-              href: view-self-service-capacity.md
+            - name: Database Tables
+              items:
+                - name: ActivityPointerBase table
+                  href: manage-storage-activitypointer-base-table.md
+                - name: AsyncOperationBase table
+                  href: manage-storage-asyncoperation-base-table.md
+                - name: msdyn_copilotinteraction table
+                  href: manage-storage-msdyn-copilotinteraction-table.md
+                - name: PrincipalObjectAccess table
+                  href: manage-principalobjectaccess-storage.md
+                - name: Subscription Tracking Deleted Object table
+                  href: subscription-tracking-deleted-object-retention.md
             - name: Free up storage
               items:
-                - name: Manage PrincipalObjectAccess storage
-                  href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
                 - name: Clean up System Job and Process Log tables
                   href: cleanup-asyncoperationbase-table.md
-                - name: Subscription Tracking Deleted Object table
-                  href: subscription-tracking-deleted-object-retention.md
-            - name: Database Tables
-              items:
-                - name: AsyncOperationBase table
-                  href: manage-storage-asyncoperation-base-table.md
-            - name: Add storage capacity
-              href: add-storage.md
-            - name: Access storage
+            - name: Finance and Operations storage capacity
+              href: finance-operations-storage-capacity.md
+            - name: Legacy capacity storage model
+              href: legacy-capacity-storage.md
+            - name: View self-service capacity
+              href: view-self-service-capacity.md
+            - name: Ways to access storage
               href: access-storage.md
         - name: Resources
           items:
@@ -1093,6 +1103,8 @@
               href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
             - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Tutorial: Perform a transaction-less copy between environments"
+              href: unified-experience/tutorial-perform-transactionless-copy.md
             - name: "Admin trials for finance and operations apps"
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization
