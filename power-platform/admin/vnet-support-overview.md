@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/08/2024
+ms.date: 07/29/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -86,20 +86,6 @@ The following table lists the services that support Azure subnet delegation for 
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li></ul> | Production ready previews |
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/production-ready-preview-dynamics365.md)]
-
-## Licensing requirements
-
-Virtual network support for Power Platform is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
-
-In addition, access to using Virtual network support for Power Platform requires users in the environments where the Virtual network is enabled to have one of these subscriptions:
-
-- Microsoft 365 or Office 365 A5/E5/G5
-- Microsoft 365 A5/E5/F5/G5 Compliance
-- Microsoft 365 F5 Security & Compliance
-- Microsoft 365 A5/E5/F5/G5 Information Protection and Governance
-- Microsoft 365 A5/E5/F5/G5 Insider Risk Management
-
-[Learn more about these licenses](https://go.microsoft.com/fwlink/?linkid=2214240)
 
 ## Considerations to enable Virtual Network support for Power Platform Environment
 
