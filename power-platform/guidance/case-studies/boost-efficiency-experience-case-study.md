@@ -7,7 +7,8 @@ ms.topic: overview
 ms.subservice: guidance
 ms.date: 07/18/2024
 ---
-<!-- In line 119, does "Data Loss Prevention" mean "Purview Data Loss Prevention," or the generic industry term, which would be lowercase? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=56620 -->
+<!-- Looks like Daniel's last name is misspelled. I'm changing it from "Oliviera" to "Oliveira," which matches the image and also is what I find on the A1 website. -->
+<!-- In line 120, does "Data Loss Prevention" mean "Purview Data Loss Prevention," or the generic industry term, which would be lowercase? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=56620 -->
 
 
 # Boost team efficiency and customer experience with Power Automate and generative AI
@@ -16,7 +17,7 @@ Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed t
 
 Established over 30 years ago, the agency specializes in coordinating international travel and luxury vacations for their executive client base. With a global partner network of airlines and hotels to personalize each traveler's experience, travel plans are rarely the same.
 
-Daniel Schaurich de Oliviera is the company's founder and CEO. Since clients traveled less during the Covid pandemic, Daniel used the time to work on improving business processes through automation. He started with time-consuming research and coordination for international travel, which required his travel agents to search multiple government websites and call embassies for the latest travel guidelines.
+Daniel Schaurich de Oliveira is the company's founder and CEO. Since clients traveled less during the Covid pandemic, Daniel used the time to work on improving business processes through automation. He started with time-consuming research and coordination for international travel, which required his travel agents to search multiple government websites and call embassies for the latest travel guidelines.
 
 Accessing real-time information is vital for the agency as travel rules and border closures quickly and frequently changed during the pandemic.
 
@@ -24,7 +25,7 @@ The company developed *Fifi*—a copilot with the persona of a wise, older woman
 
 *"Power Platform changed our business in ways we never expected. Before Power Platform and Copilot Studio, we never thought it would be possible for us to create software. Power Platform gave us the power to put our ideas to work easily and in an affordable way for a small company."*
 
-~ *Daniel Schaurich de Oliviera, CEO*
+~ *Daniel Schaurich de Oliveira, CEO*
 
 ## Case study
 
@@ -70,7 +71,7 @@ Power Automate and Copilot Studio help A1 to:
 
 ## Streamline travel bookings with Power Automate
 
-Daniel identifies the frequently used travel booking process to automate and maximize time savings for travel agents on his team. The team previously needed to collate and check travel information manually and from multiple sources.
+Daniel identified the frequently used travel booking process to automate and maximize time savings for travel agents on his team. The team previously needed to collate and check travel information manually and from multiple sources.
 
 The travel booking process consistently needs to:
 
@@ -108,8 +109,7 @@ An email being received acts as the workflow trigger—a [text function](https:/
 |![Text function icon](media/a1-travel/text-function-icon.png)| 2. Find the travel destination. | With a text function, identify details (parameters) in the email to be automatically read. |
 |![Variables icon](media/a1-travel/variables-icon.png)| 3. Identify the travel requirements for collection. | Variables act as placeholders to collect data during the workflow. |
 |![Dataverse icon](media/a1-travel/dataverse-icon.png)| 4. Find the destination country and airport code. | With the Dataverse or SQL connector, look up destination details from a list. |
-|![Http icon](media/a1-travel/http-icon.png)| 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data—
-for example, credentials—for the API.|
+|![Http icon](media/a1-travel/http-icon.png)| 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data—for example, credentials—for the API.|
 |![Join icon](media/a1-travel/join-icon.png)| 6. Collate the travel requirements. | With the join action, collate information from various sources and formats to serve as inputs for an email. |
 |![Condition icon](media/a1-travel/condition-icon.png)| 7. Check that the travel requirements are complete. | With a condition, check that all received information is complete. If `yes`, get ready to send the email or if `no`, issue an error.|
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 8. Send the email to the travel agent and client. | With the Outlook connector, send the email to its recipients. |
@@ -144,7 +144,7 @@ Each travel booking generates an invoice to be sent to the client—another rout
 
 *"Creativity is the main thing—to have ideas—then [automating] is easy to do."*
 
-~ *Daniel Schaurich de Oliviera, CEO*
+~ *Daniel Schaurich de Oliveira, CEO*
 
 ## Answer customer questions with Copilot Studio
 
@@ -154,7 +154,7 @@ Naming the copilot Fifi helps it become an integral and accepted part of the tea
 
 *Create a persona for the copilot. Fifi isn't only a bot, she's a work colleague, helping the team to accept and assimilate her contributions faster.*
 
-~ *Daniel Schaurich de Oliviera, CEO*
+~ *Daniel Schaurich de Oliveira, CEO*
 
 Fifi uses [custom topics](/microsoft-copilot-studio/authoring-create-edit-topics) to generate human-like responses to frequently asked questions. Each topic is based on defined [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) used for [generative answers](/microsoft-copilot-studio/nlu-boost-conversations). As a copilot, Fifi gathers results from external websites using [Bing Custom Search](/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search).
 
