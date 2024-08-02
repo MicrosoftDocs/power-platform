@@ -7,6 +7,8 @@ ms.topic: overview
 ms.subservice: guidance
 ms.date: 07/18/2024
 ---
+<!-- In line 119, does "Data Loss Prevention" mean "Purview Data Loss Prevention," or the generic industry term, which would be lowercase? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=56620 -->
+
 
 # Boost team efficiency and customer experience with Power Automate and generative AI
 
@@ -112,8 +114,6 @@ for example, credentials—for the API.|
 |![Condition icon](media/a1-travel/condition-icon.png)| 7. Check that the travel requirements are complete. | With a condition, check that all received information is complete. If `yes`, get ready to send the email or if `no`, issue an error.|
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 8. Send the email to the travel agent and client. | With the Outlook connector, send the email to its recipients. |
 
-
-
 ### Technical considerations
 
 - Data Loss Prevention (DLP) safeguards on your Power Platform environments determine the connectors available, such as custom connectors to external APIs.
@@ -138,9 +138,9 @@ Each travel booking generates an invoice to be sent to the client—another rout
 > [!TIP]
 > Daniel creates an automation to retrieve, collate, and send the latest travel requirements to his clients. You can use the same solution architecture and design pattern for similar use cases in your organization, such as:
 >
-> - Automatically collate your organization's travel policy and documentation requirements into an email when a team member submits a travel request
-> - Assess inspection or audit results against an external standard and send the results to a shared Microsoft Teams workspace
-> - Identify a test score that compares with a target score, then send the results to a team member for review
+> - Automatically collate your organization's travel policy and documentation requirements into an email when a team member submits a travel request.
+> - Assess inspection or audit results against an external standard and send the results to a shared Microsoft Teams workspace.
+> - Identify a test score that compares with a target score, then send the results to a team member for review.
 
 *"Creativity is the main thing—to have ideas—then [automating] is easy to do."*
 
@@ -148,7 +148,7 @@ Each travel booking generates an invoice to be sent to the client—another rout
 
 ## Answer customer questions with Copilot Studio
 
-Daniel created a copilot to help travel agents answer complex questions and enable customers to find information themselves on the agency's website. Automating these time-intensive tasks upskills travel agents with much information.
+Daniel created a copilot to help travel agents answer complex questions and enable customers to find information themselves on the agency's website. Automating these time-intensive tasks provides travel agents with much information.
 
 Naming the copilot Fifi helps it become an integral and accepted part of the team.
 
@@ -172,7 +172,7 @@ As a result, Fifi provides answers that might be hard to find through a manual s
 
 - Perks of first-class travel
 - Closest airport to a conference location
-- Highest rated hotel in a specific neighborhood
+- Highest-rated hotel in a specific neighborhood
 
 Customer experience improves through Fifi's quick responses and her ability to make recommendations.
 
@@ -184,7 +184,7 @@ Daniel designed Fifi to [interact with users across different channels](/microso
 
 :::image type="content" source="media/a1-travel/image10.png" alt-text="Screenshot that shows how a bot can be embedded in Teams.":::
 
-Custom topics and associated knowledge sources are defined for each channel, as questions commonly asked by travel agents are different to those questions asked by clients through the website.
+Custom topics and associated knowledge sources are defined for each channel, as questions commonly asked by travel agents are different than those asked by clients through the website.
 
 :::image type="content" source="media/a1-travel/image11.png" alt-text="Diagram that explains how custom topics and associated knowledge sources are defined for each channel.":::
 
@@ -198,13 +198,13 @@ This feature brings together Power Automate and Copilot Studio to populate a Wor
 
 Here's how this feature works:
 
-1. A custom topic is triggered in Copilot Studio when a client asks a relevant question, such as "I want to create a Travel Policy."
+1. A custom topic is triggered in Copilot Studio when a client makes a relevant request such as, "I want to create a Travel Policy."
 1. Fifi prompts the client to answer the series of predefined questions used to populate the policy template. These questions include their name, company, the notice period that an employee is required to give for domestic or international travel, and any reimbursements paid by the company to an employee. The chat is configured to provide recommendations at each step to support data input.
 1. Copilot Studio triggers Power Automate to populate placeholders in the Word document template with data provided in the client's chat responses.
 1. Power Automate saves the new travel policy document and emails the file to the client.
 1. Fifi completes the chat interaction with the client.
 
-:::image type="content" source="media/a1-travel/image12.png" alt-text="Diagram that shows the steps of the solution of the automation as the chat box provides travel policy.":::
+:::image type="content" source="media/a1-travel/image12.png" alt-text="Diagram that shows the steps of the solution of the automation as the chat box provides a travel policy.":::
 
 ## Build the travel policy template automation
 
@@ -230,29 +230,29 @@ Finalize the automation with the *Respond to Copilot* action to indicate the doc
 |-|--------|-------------|
 | ![Copilot icon](media/a1-travel/copilot-icon.png) | Run a flow from Copilot Studio. | Select each input, coming from the copilot's interaction with the user, that populates the template placeholders. |
 | ![Word icon](media/a1-travel/word-icon.png) | Populate the Word document template. | Select the site, library, and file to use for the template. |
-| ![Generate icon](media/a1-travel/generate-icon.png) | Generate a unique file name. | Use a *Compose action to generate unique file name* action, for example prefixing the title with the client's company name. |
+| ![Generate icon](media/a1-travel/generate-icon.png) | Generate a unique file name. | Use a *Compose action to generate unique file name* action—for example, prefixing the title with the client's company name. |
 | ![SharePoint Online icon](media/a1-travel/sharepoint-online-icon.png) | Create a travel policy file. | Select the folder path and file name where you want to save the new document output. |
 | ![Outlook icon](media/a1-travel/outlook-icon.png) | Email the policy document to the client. | Use the Outlook connector to email the customized document to the client. |
 | ![Copilot icon](media/a1-travel/copilot-icon.png)| Respond to the copilot. | After the document is sent through an email to the client, notify the copilot. |
 
 ### Build the copilot
 
-To set up the copilot component of this automation flow, [create a new copilot in Copilot Studio](/microsoft-copilot-studio/fundamentals-get-started?tabs=web) then create a new [topic](/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp). Describe what the topic does using keywords that copilot can use to detect and trigger the next steps.
+To set up the copilot component of this automation flow, [create a new copilot in Copilot Studio](/microsoft-copilot-studio/fundamentals-get-started?tabs=web) and then create a new [topic](/microsoft-copilot-studio/authoring-create-edit-topics?tabs=webApp). Describe what the topic does using keywords that copilot can use to detect and trigger the next steps.
 
-Add a series of questions. These questions are used by your copilot to ask the user to gather the inputs required to populate the content control placeholders in the Word template (one question per placeholder). Then select *Call an Action'* to trigger the Power Automate automation you created which generates, saves, and emails the new document.
+Add a series of questions. These questions are used by your copilot to ask the user to gather the inputs required to populate the content control placeholders in the Word template (one question per placeholder). Then select *Call an Action* to trigger the Power Automate automation you created, which generates, saves, and emails the new document.
 
 Adding another message at the end of the conversation enables the copilot to close out the interaction with the user, such as notifying them that the document was emailed to them.
 
 This flow diagram shows how triggers, questions, actions, and a final message can work together in a topic:
 
-:::image type="content" source="media/a1-travel/image15.png" alt-text="Diagram that shows the steps in a copilot towards building a new topic." lightbox="media/a1-travel/image15.png":::
+:::image type="content" source="media/a1-travel/image15.png" alt-text="Diagram that shows the steps in a copilot toward building a new topic." lightbox="media/a1-travel/image15.png":::
 
 > [!TIP]
 > Daniel created a Copilot Studio topic with an associated Power Automate automation to enable clients to generate a customized travel policy document based on their answers to predefined questions. You can use the same solution architecture and design pattern for similar use cases in your organization, such as when you want to:
 >
-> - Enable website customers to generate a policy or a guideline document relevant to your industry
-> - Generate a customized conference program based on sessions or topics selected by the participant
-> - Personalise business event invitations with each attendee's name, position, title, and company
+> - Enable website customers to generate a policy or a guideline document relevant to your industry.
+> - Generate a customized conference program based on sessions or topics selected by the participant.
+> - Personalize business event invitations with each attendee's name, position, title, and company.
 
 ## Learn more
 
