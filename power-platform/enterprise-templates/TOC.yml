@@ -1,7 +1,9 @@
 - name: Enterprise templates for Power Platform
   href: overview.md
-- name: Finance - SAP Procurement
+- name: Finance
   items:
+  - name: SAP Procurement
+    items:
   - name: Overview
     href: finance/sap-procurement/overview.md
   - name: Administer
@@ -51,8 +53,18 @@
       href: finance/sap-procurement/use/vendor-invoice-management.md
     - name: Vendor payment management
       href: finance/sap-procurement/use/payment-management.md
-  - name: FAQs
-    href: finance/sap-procurement/faqs.md
+  - name: SAP Supplier Portal
+    items:
+  - name: Overview
+    href: finance/sap-supplier-portal/overview.md
+  - name: Install and set up
+    href: finance/sap-supplier-portal/install-and-set-up.md
+  - name: Manage
+    href: finance/sap-supplier-portal/manage.md
+  - name: Use
+    href: finance/sap-supplier-portal/use.md
+- name: SAP FAQs
+  href: finance/faqs.md
 - name: Human Resources
   items:
   - name: Employee Kudos

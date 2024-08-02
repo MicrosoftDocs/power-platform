@@ -2,10 +2,11 @@
 title: Install and set up the Expense Reimbursement template for Power Platform
 description: Learn how to install, set up, and deploy the Expense Reimbursement template for Microsoft Power Platform.
 author: tverhasselt
-ms.author: thoverh
 contributors:
   - microsoft-george
   - nghiemdoan-msft
+  - EllenWehrle
+ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 06/13/2024
