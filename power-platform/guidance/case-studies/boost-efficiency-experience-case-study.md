@@ -1,6 +1,6 @@
 ---
 title: Boost team efficiency and customer experience with Power Automate and generative AI
-description: Learn about how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and generative AI.
+description: Learn how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and generative AI.
 author: robstand
 ms.author: sashi
 ms.topic: overview
@@ -184,7 +184,7 @@ Daniel designed Fifi to [interact with users across different channels](/microso
 
 :::image type="content" source="media/a1-travel/image10.png" alt-text="Screenshot that shows how a bot can be embedded in Teams.":::
 
-Custom topics and associated knowledge sources are defined for each channel, as questions commonly asked by travel agents are different than those asked by clients through the website.
+Custom topics and associated knowledge sources are defined for each channel because questions commonly asked by travel agents are different than those asked by clients through the website.
 
 :::image type="content" source="media/a1-travel/image11.png" alt-text="Diagram that explains how custom topics and associated knowledge sources are defined for each channel.":::
 
