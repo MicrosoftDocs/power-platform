@@ -138,7 +138,7 @@ exceptions
 The entity ID and entity name are available in **customDimensions** in the **dependency** table.
 
 ```kusto
-dependencies<br />
+dependencies
 | where type == "SDK Retrieve"
 ```
 
