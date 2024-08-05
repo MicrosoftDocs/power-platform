@@ -87,7 +87,7 @@ To build out a print for a specific size, you can build a [responsive app](/powe
 ## Known limitations
 
 - The **Print** function currently doesn't work on mobile devices and on SharePoint forms.
-- The **Print** function currently doesn't work on custom pages or embedded scenarios.
+- The **Print** function currently doesn't work on custom pages, embedded scenarios, or in Power Fx expressions with commands.
 - The default browser printers are the ones that will be available to print to.
 - In some browser print dialogs, a setting called **Background graphics** should be enabled to see all the images and colors in the print.
 - The **Print** function can't print multiple pages.
