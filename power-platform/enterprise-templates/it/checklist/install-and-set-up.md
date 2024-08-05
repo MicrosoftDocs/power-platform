@@ -159,3 +159,41 @@ More information:
 
 - [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
 - [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
+
+## Step 5: Share the apps
+
+Share the Checklist apps with users in your organization.
+
+> [!TIP]
+> Share the app with Checklist program managers first so that they can configure the app to meet your organization's needs. After that configuration is complete, share the app to the wider organization.
+
+1. 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Select **Solutions** on the left pane and select the **Checklist** solution from the list.
+1. Select **Apps**.
+1. Go to the *Checklist canvas app* in the list and select the **three dots** to see a list of actions.
+1. Select **Share**.
+1. Search for and add the users you want to share the app with.
+    - For users who should be able to edit the app, select the **Co-owner** box.
+    - For regular users of the app, leave that checkbox empty.
+    - If everyone in the organization should be able to use the app, select **Everyone** in the *Enter a name* box.
+1. In the *Data permission* area, select the roles from a dropdown list. It's next to the Microsoft Dataverse tables that the Checklist app uses.
+1. Add an optional email message.
+1. Select **Share**.
+:::image type="content" source="media/install/share-app.png" alt-text="Screenshot of sharing the Checklist app with users.":::
+
+> [!NOTE]
+>If the Checklist app isn't shared with you and you cannot access it directly in Power Apps, please contact your admin.
+
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
+
+## Step 6: Turn on auditing (optional)
+
+We recommend enabling the audit setting on the system, so it's easy to see who creates and updates records.
+
+Take these steps to enable the audit settings:
+
+1. Go to [Power Platform admin center](https://gcc.admin.powerplatform.microsoft.us/home).
+1. Select **Environments** on the left pane and select the *environment* where the solution is installed.
+1. Select **Settings**.
+1. Select **Start Auditing**.
+:::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of turning on auditing in the Power Platform admin center.":::
