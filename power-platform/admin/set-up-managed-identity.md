@@ -87,7 +87,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 ### Dataverse plug-ins
 
 #### Build plug-in assembly
-- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building the plug-in, use the tenant ID from Step #1 and scopes as organization URL like https://[OrgName].crm*.dymanics.com/.default or even more granular scopes.
+- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building the plug-in, use the tenant ID from [this Step](#create-a-new-app-registration-or-user-assigned-managed-identity) and scopes as organization URL like https://[OrgName].crm*.dymanics.com/.default or even more granular scopes.
 - Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest&preserve-view=true) and acquire a token method to request a token with given scope.
 - String AcquireToken(`IEnumerable<string>` scopes). The method accepts a collection of scopes and returns the access token. 
 - Sign the assembly with a certificate. For more information, see [SignTool.exe (Sign Tool)](/dotnet/framework/tools/signtool-exe).
