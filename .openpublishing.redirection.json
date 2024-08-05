@@ -1050,6 +1050,11 @@
       "source_path": "power-platform/admin/wp-license-management.md",
       "redirect_url": "/power-platform/admin/pricing-billing-skus",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/power-fx/formula-reference.md",
+      "redirect_url": "/power-platform/power-fx/formula-reference-canvas-apps",
+      "redirect_document_id": "false"
     }
   ]
 }
