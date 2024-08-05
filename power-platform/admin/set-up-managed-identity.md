@@ -102,32 +102,34 @@ To configure managed identity, open the user-assigned managed identity or Micros
 ## Create managed identity record in Dataverse
 To provision managed identity record in Dataverse, complete the following steps.
 
-1. Call the following URL using [Insomia](https://insomnia.rest/download) or any other tool of your choice.
+1. Make a POST call using [Insomia](https://insomnia.rest/download) or any other tool of your choice.
+   You can use URL with Payload in below format.
    
-    `https://<<orgUrl>>https://aurorabapenv0bc9e.crmtest.dynamics.com/api/data/v9.0/managedidentities`
-
+    `POST https://<<orgUrl>>/api/data/v9.0/managedidentities`
+   
+   *Replace **orgUrl** with the URL of Organization*
     Ensure that **Credentialsource** is set to **2** in the payload and **SubjectScope** is set to **1** for environment-specific scenarios.
  
      ``` Sample payload
       {
-      "applicationid":"<<appId>>",
-       "managedidentityid":"<<anyGuid>>",
-       "credentialsource":2,
-      “subjectscope”:1,
-       "tenantid":"<<tenantId>>"
+         "applicationid":"<<appId>>",
+         "managedidentityid":"<<anyGuid>>",
+         "credentialsource":2,
+         “subjectscope”:1,
+         "tenantid":"<<tenantId>>"
       }
      ```
      
-2. Make a patch call to bind the plug-in assembly ID with the managed identity record that is created through post call in step #1 under section **Create managed identity record in Dataverse**.
+3. Make a patch call to bind the plug-in assembly ID with the managed identity record that is created through post call in step #1 under section **Create managed identity record in Dataverse**.
 
    **Plug-in assembly**:
 
-   ```
-                   `PATCH https:// <<orgUrl>>/api/data/v9.0/pluginassemblies(<<PluginAssemblyId>>)`
-                    *Replace: orgUrl and PluginAssemblyId*
-      ```Sample Payload:
+      `PATCH https:// <<orgUrl>>/api/data/v9.0/pluginassemblies(<<PluginAssemblyId>>)`
+   
+   *Replace: orgUrl and PluginAssemblyId*
+     ```Sample Payload:
       {
-       "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)"
+         "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)"
       }
    ```
 
