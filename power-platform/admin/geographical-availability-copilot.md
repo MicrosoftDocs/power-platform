@@ -4,13 +4,14 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/26/2024
+ms.date: 08/05/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
 search.audienceType:
   - admin
-contributors: 
+contributors:
+  - antoinecellerier 
   - JesseParsons
   - tapanm-msft
   - sidhartg
@@ -43,8 +44,8 @@ The following table lists the regions involved with copilots and generative AI f
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | Australia<br>India<br>United Kingdom<br>United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
-| Europe\*  | Sweden or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Switzerland | Sweden or Switzerland | United States|
+| Europe\*  | Spain, Sweden, or Switzerland| United States |
+| France<br>Germany<br>Norway<br>Switzerland | Spain, Sweden, or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
 
