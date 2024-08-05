@@ -692,27 +692,13 @@
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
-            - name: What's new for storage
+            - name: Add more Dataverse capacity
+              href: add-storage.md
+            - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
-            - name: New capacity storage model
+            - name: Dataverse capacity-based storage details 
               href: capacity-storage.md
-            - name: Legacy capacity storage model
-              href: legacy-capacity-storage.md
-            - name: Finance and operations storage capacity
-              href: finance-operations-storage-capacity.md
-            - name: View self-service capacity
-              href: view-self-service-capacity.md
-            - name: Free up storage
-              items:
-                - name: Manage PrincipalObjectAccess storage
-                  href: manage-principalobjectaccess-storage.md
-                - name: Recover storage space
-                  href: free-storage-space.md
-                - name: Clean up System Job and Process Log tables
-                  href: cleanup-asyncoperationbase-table.md
-                - name: Subscription Tracking Deleted Object table
-                  href: subscription-tracking-deleted-object-retention.md
-            - name: Database tables
+            - name: Database Tables
               items:
                 - name: ActivityPointerBase table
                   href: manage-storage-activitypointer-base-table.md
@@ -720,9 +706,23 @@
                   href: manage-storage-asyncoperation-base-table.md
                 - name: msdyn_copilotinteraction table
                   href: manage-storage-msdyn-copilotinteraction-table.md
-            - name: Add storage capacity
-              href: add-storage.md
-            - name: Access storage
+                - name: PrincipalObjectAccess table
+                  href: manage-principalobjectaccess-storage.md
+                - name: Subscription Tracking Deleted Object table
+                  href: subscription-tracking-deleted-object-retention.md
+            - name: Free up storage
+              items:
+                - name: Recover storage space
+                  href: free-storage-space.md
+                - name: Clean up System Job and Process Log tables
+                  href: cleanup-asyncoperationbase-table.md
+            - name: Finance and Operations storage capacity
+              href: finance-operations-storage-capacity.md
+            - name: Legacy capacity storage model
+              href: legacy-capacity-storage.md
+            - name: View self-service capacity
+              href: view-self-service-capacity.md
+            - name: Ways to access storage
               href: access-storage.md
         - name: Resources
           items:
