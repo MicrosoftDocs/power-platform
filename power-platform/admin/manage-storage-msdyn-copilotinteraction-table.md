@@ -4,7 +4,7 @@ description: Learn about managing msdyn_copilotinteraction table storage.
 author: ceian
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/19/2024
+ms.date: 08/01/2024
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
@@ -44,7 +44,7 @@ The chat transcripts in **msdyn_interactiondata** can be downloaded for offline 
 
 Admins can turn off historical analytics for Copilot in Customer Service Admin Center through disabling [historical analytics for Copilot](/dynamics365/customer-service/administer/configure-cs-historical-analytics-csh#enable-historical-analytics-for-copilot). 
 
-Once admins turn off historical analytics for Copilot, then an admin can turn off the interactions for each feature for [Copilot for questions and email](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot) and [summaries](/dynamics365/customer-service/administer/configure-copilot-features#record-agent-interactions-with-copilot). 
+Once admins turn off historical analytics for Copilot, then an admin can turn off the interactions for each feature for [Copilot for questions, email, and summaries](/dynamics365/customer-service/administer/configure-copilot-features#opt-out-from-using-copilot-features). 
 
 Admins can set up custom [bulk delete jobs](/microsoft-copilot-studio/analytics-sessions-transcripts#create-a-new-bulk-delete-job) to control how long transcripts are [retained as data](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period). 
 
@@ -52,9 +52,9 @@ Using the [bulk delete job](/microsoft-copilot-studio/analytics-sessions-transcr
 
 Admins can also set the data retention policy to purge the **msdyn_copilotinteraction** table through [Dataverse long term data retention](/power-apps/maker/data-platform/data-retention-overview).
 
-### See also
+### Related information
 
-- [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)
+- [Opt out from using Copilot features](/dynamics365/customer-service/administer/configure-copilot-features#opt-out-from-using-copilot-features)
 - [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)
 - [Dataverse storage capacity](capacity-storage.md)
 
