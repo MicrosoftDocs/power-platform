@@ -3,7 +3,7 @@ title: Manage data policies
 description: Learn how to create, edit, and delete data policies, including the default data group for new connectors.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/03/2024
+ms.date: 07/24/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -29,12 +29,7 @@ To create, edit, or delete data policies, you must have either Environment Admin
 
 ### Tenant-level policies 
 
-Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, *one* of the following permissions is required:
-
-- Microsoft Power Platform admin permissions
-- Microsoft 365 Global admin permissions
-
-We refer to these roles throughout this article as *tenant admins*. Learn more: [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)
+Tenant-level policies can be defined to include or exclude specific environments. To follow the steps described in this article for tenant-level policies, log in as a user with the Power Platform Administrator role. Learn more about the Power Platform Administrator role at [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
 ### Environment-level policies
 
@@ -346,7 +341,7 @@ Because no data policy has been applied to test environments, apps and flows can
 
 ## Change the default data group
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [global admin](/microsoft-365/admin/add-users/about-admin-roles).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a [Power Platform admin](use-service-admin-role-manage-tenant.md#power-platform-administrator).
 
 1. From the list of data policies, select an environment, and then select **Edit Policy**. If you have a long list of policies, use the **Search** box to find specific environments.
 
