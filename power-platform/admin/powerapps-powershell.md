@@ -8,7 +8,7 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2024
+ms.date: 08/06/2024
 ms.subservice: admin
 ms.author: cgarty
 search.audienceType: 
@@ -75,7 +75,7 @@ To run PowerShell cmdlets for app creators:
 
    :::image type="content" source="media/accept-installationpolicy-value75.png" alt-text="Screenshot that shows where to accept the InstallationPolicy value in PowerShell.":::
 
-4. Optionally, before accessing the commands, you can provide your credentials. Credentials are refreshed for up to eight hours before you're required to sign in again.  If credentials aren't provided before a command is executed, then a prompt for credentials will appear.
+4. Optionally, before accessing the commands, you can provide your credentials. Credentials are refreshed for up to eight hours before you're required to sign in again.  If credentials aren't provided before a command is executed, then a prompt for credentials appears.
     ```powershell
     # Opens a prompt to collect credentials (Microsoft Entra account and password).
     Add-PowerAppsAccount
@@ -87,7 +87,7 @@ To run PowerShell cmdlets for app creators:
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
     ```
 
-5. Optionally, a specific endpoint can be targeted. The default endpoint is "prod". If a user wants to run a PowerShell script targeting an environment in a non-prod region, such as GCC, the -Endpoint parameter can be changed to "usgov" for GCC Moderate, or "usgovhigh" for GCC High, or "dod" for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
+5. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a non-production region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
 
     ```powershell
     # An environment in another region, such as GCC, can be targeted using the -Endpoint parameter.
@@ -306,7 +306,7 @@ The export can take a while for tenants with a large number of Microsoft Power P
 Set-AdminPowerAppOwner –AppName 'AppName' -AppOwner $Global:currentSession.userId –EnvironmentName 'EnvironmentName'
 ```
 
-Changes the owner role of a PowerApp to the current user, and replaces the original owner as a "can view" role type.
+Changes the owner role of a Power App to the current user, and replaces the original owner as a "can view" role type.
 
 > [!NOTE]
 > The AppName and EnvironmentName fields are the unique identifiers (guids), not the display names.
