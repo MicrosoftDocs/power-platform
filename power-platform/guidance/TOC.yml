@@ -168,6 +168,8 @@
               items:
                 - name: Core components
                   href: coe/core-components.md
+                - name: Business value toolkit
+                  href: coe/business-value-toolkit.md
                 - name: Governance components
                   href: coe/governance-components.md
                 - name: Nurture components
