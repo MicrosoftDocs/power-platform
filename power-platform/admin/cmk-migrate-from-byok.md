@@ -5,8 +5,9 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 04/04/2024
+ms.date: 08/06/2024
 ms.custom: template-how-to
+
 ---
 
 # Migrate bring-your-own-key (BYOK) environments to customer-managed key
