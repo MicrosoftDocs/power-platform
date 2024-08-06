@@ -267,7 +267,7 @@ This flow diagram shows how triggers, questions, actions, and a final message ca
 
 ## Related information
 
-- Find best practice architecture guidance with [Power Platform Well-Architected](/power-platform/well-architected/)
+- [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Use an incoming email to trigger an automation](/power-automate/email-overview)
 - [Popular scenarios for sending emails to end users](/power-automate/email-top-scenarios)
 - [How to use Copilot to help build your automation](/power-automate/get-started-with-copilot)
