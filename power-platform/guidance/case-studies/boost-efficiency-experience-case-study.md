@@ -1,16 +1,19 @@
 ---
 title: Boost team efficiency and customer experience with Power Automate and generative AI
-description: Learn about how A1 Inteligencia em Viagens boosted team efficiency & customer experience with Power Automate and generative AI.
+description: Learn how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and generative AI.
 author: robstand
 ms.author: sashi
 ms.topic: overview
 ms.subservice: guidance
 ms.date: 07/18/2024
 ---
+<!-- Looks like Daniel's last name is misspelled. I'm changing it from "Oliviera" to "Oliveira," which matches the image and also is what I find on the A1 website. -->
+<!-- In line 120, does "Data Loss Prevention" mean "Purview Data Loss Prevention," or the generic industry term, which would be lowercase? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=56620 -->
+
 
 # Boost team efficiency and customer experience with Power Automate and generative AI
 
-Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed the travel coordination process with their clients and team collaboration using the power of Power Automate and Copilot Studio.
+Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed the travel coordination process with their clients and team collaboration using the power of Power Automate and Microsoft Copilot Studio.
 
 Established over 30 years ago, the agency specializes in coordinating international travel and luxury vacations for their executive client base. With a global partner network of airlines and hotels to personalize each traveler's experience, travel plans are rarely the same.
 
@@ -18,11 +21,11 @@ Daniel Schaurich de Oliviera is the company's Founder and CEO. Since clients tra
 
 Accessing real-time information is vital for the agency as travel rules and border closures quickly and frequently changed during the pandemic.
 
-The company developed *Fifi*—a copilot with the persona of a wise, elderly lady who knows everything about the company and the travel industry. Fifi is embedded in A1's website to provide immediate customer assistance. She's also in Microsoft Teams for easy access by staff who think of Fifi as a colleague not just a chat bot.
+The company developed *Fifi*—a copilot with the persona of a wise, older woman who knows everything about the company and the travel industry. Fifi is embedded in A1's website to provide immediate customer assistance. She's also in Microsoft Teams for easy access by staff who think of Fifi as a colleague not just a chat bot.
 
 *"Power Platform changed our business in ways we never expected. Before Power Platform and Copilot Studio, we never thought it would be possible for us to create software. Power Platform gave us the power to put our ideas to work, easily, and in an affordable way for a small company."*
 
-~ *Daniel Schaurich de Oliviera, CEO*
+~ *Daniel Schaurich de Oliveira, CEO*
 
 ## Case study
 
@@ -40,7 +43,7 @@ Daniel's team at A1 Inteligência em Viagens coordinates travel bookings with th
 
 Daniel saw the potential in Power Automate to help travel agents on his team identify and collate travel requirements from various national authorities in real time.
 
-When you automate routine, manual data checking, and collation processes, it not only boosts team productivity but has the potential to improve the completeness, timeliness, and reliability of information provided.
+When you automate routine, manual data checking and collation processes, it not only boosts team productivity but has the potential to improve the completeness, timeliness, and reliability of information provided.
 
 For Daniel and his team, this automation measurably reduced the time required for travel coordination—boosting efficiency by 55%—and inspired many business improvements.
 
@@ -61,12 +64,12 @@ Power Automate and Copilot Studio help A1 to:
 - Schedule time each week for business improvements with Power Platform and AI.
 - Inspire and advocate new ideas from leadership team members.
 - Identify a well-defined, repeatable process to automate.
-- Focus on how automation improves the customer or end user experience.
+- Focus on how automation improves the customer or end-user experience.
 - Create a persona to establish the copilot as a valuable team member.
 
 ## Streamline travel bookings with Power Automate
 
-Daniel identifies the frequently used travel booking process to automate and maximize time savings for travel agents on his team. The team previously needed to collate and check travel information manually and from multiple sources.
+Daniel identified the frequently used travel booking process to automate and maximize time savings for travel agents on his team. The team previously needed to collate and check travel information manually and from multiple sources.
 
 The travel booking process consistently needs to:
 
@@ -75,7 +78,7 @@ The travel booking process consistently needs to:
 1. Identify the latest travel risk status for the destination country.
 1. Collate all information into an email and send it to the client.
 
-:::image type="content" source="media/a1-travel/image4.png" alt-text="A diagram that shows the travel booking process using Power Automate flow." lihtbox="media/a1-travel/image4.png":::
+:::image type="content" source="media/a1-travel/image4.png" alt-text="A diagram that shows the travel booking process using Power Automate flow." lightbox="media/a1-travel/image4.png":::
 
 ### The Power Automate process
 
@@ -92,7 +95,7 @@ The following steps are automated:
 1. Information is translated from English to Portuguese, the national language of Brazil, using Microsoft Translator.
 1. Data is formatted into an email and sent to the travel agent and client.
 
-:::image type="content" source="media/a1-travel/image5.png" alt-text="A diagram that shows the automation process step-by-step." lightbox="media/a1-travel/image5.png":::
+:::image type="content" source="media/a1-travel/image5.png" alt-text="A diagram that shows the automation process step by step." lightbox="media/a1-travel/image5.png":::
 
 ## Build the travel booking process automation
 
@@ -103,8 +106,8 @@ An email being received acts as the workflow trigger—a [text function](https:/
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 1. A new email arrives in a shared mailbox. | With the Outlook connector, select a shared mailbox that triggers the workflow. |
 |![Text function icon](media/a1-travel/text-function-icon.png)| 2. Find the travel destination. | With a text function, identify details (parameters) in the email to be automatically read. |
 |![Variables icon](media/a1-travel/variables-icon.png)| 3. Identify the travel requirements for collection. | Variables act as placeholders to collect data during the workflow. |
-|![Dataverse icon](media/a1-travel/dataverse-icon.png)| 4. Find the destination country and airport code. | With the Dataverse or SQL connector, lookup destination details from a list. |
-|![Http icon](media/a1-travel/http-icon.png)| 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data, for example credentials, for the API.|
+|![Dataverse icon](media/a1-travel/dataverse-icon.png)| 4. Find the destination country and airport code. | With the Dataverse or SQL connector, look up destination details from a list. |
+|![Http icon](media/a1-travel/http-icon.png)| 5. Collect the travel requirements. | Connect to APIs to retrieve information from external sources. A custom connector populates data—for example, credentials—for the API.|
 |![Join icon](media/a1-travel/join-icon.png)| 6. Collate the travel requirements. | With the join action, collate information from various sources and formats to serve as inputs for an email. |
 |![Condition icon](media/a1-travel/condition-icon.png)| 7. Check that the travel requirements are complete. | With a conditional, check that all received information is complete. If `yes`, get ready to send the email or if `no`, issue an error.|
 |![Outlook icon](media/a1-travel/outlook-icon.png)| 8. Send the email to the travel agent and client. | With the Outlook connector, send the email to its recipients. |
@@ -141,17 +144,17 @@ The automated invoicing process:
 
 *"Creativity is the main thing—to have ideas—then [automating] is easy to do."*
 
-~ *Daniel Schaurich de Oliviera, CEO*
+~ *Daniel Schaurich de Oliveira, CEO*
 
 ## Answer customer questions with Copilot Studio
 
-Daniel created a copilot to help travel agents answer complex questions and enable customers to find information themselves on the agency's website. Automating these time-intensive tasks upskills travel agents with much information.
+Daniel created a copilot to help travel agents answer complex questions and enable customers to find information themselves on the agency's website. Automating these time-intensive tasks provides travel agents with much information.
 
 Naming the copilot Fifi helps it become an integral and accepted part of the team.
 
 *Create a persona for the copilot. Fifi isn't only a bot, she's a work colleague, helping the team to accept and assimilate her contributions faster.*
 
-~ *Daniel Schaurich de Oliviera, CEO*
+~ *Daniel Schaurich de Oliveira, CEO*
 
 Fifi uses [custom topics](/microsoft-copilot-studio/authoring-create-edit-topics) to generate human-like responses to frequently asked questions. Each topic is based on defined [knowledge sources](/microsoft-copilot-studio/knowledge-copilot-studio) used for [generative answers](/microsoft-copilot-studio/nlu-boost-conversations). As a copilot, Fifi gathers results from external websites using [Bing Custom Search](/microsoft-copilot-studio/guidance/optimize-prompts-bing-custom-search).
 
@@ -169,7 +172,7 @@ As a result, Fifi provides answers that might be hard to find through a manual s
 
 - Perks of first-class travel
 - Closest airport to a conference location
-- Highest rated hotel in a specific neighborhood
+- Highest-rated hotel in a specific neighborhood
 
 Customer experience improves through Fifi's quick responses and her ability to make recommendations.
 
@@ -181,7 +184,7 @@ Daniel designed Fifi to [interact with users across different channels](/microso
 
 :::image type="content" source="media/a1-travel/image10.png" alt-text="Screenshot that shows how a bot can be embedded in Teams.":::
 
-Custom topics and associated knowledge sources are defined for each channel, as questions commonly asked by travel agents are different to those questions asked by clients through the website.
+Custom topics and associated knowledge sources are defined for each channel because questions commonly asked by travel agents are different than those asked by clients through the website.
 
 :::image type="content" source="media/a1-travel/image11.png" alt-text="Diagram that explains how custom topics and associated knowledge sources are defined for each channel.":::
 
@@ -195,13 +198,13 @@ This feature brings together Power Automate and Copilot Studio to populate a Wor
 
 Here's how the travel policy feature works:
 
-1. A custom topic is triggered in Copilot Studio when a client asks a relevant question, such as "I want to create a Travel Policy."
+1. A custom topic is triggered in Copilot Studio when a client makes a relevant request such as, "I want to create a Travel Policy."
 1. Fifi prompts the client to answer the series of predefined questions used to populate the policy template. These questions include their name, company, the notice period that an employee is required to give for domestic or international travel, and any reimbursements paid by the company to an employee. The chat is configured to provide recommendations at each step to support data input.
 1. Copilot Studio triggers Power Automate to populate placeholders in the Word document template with data provided in the client's chat responses.
 1. Power Automate saves the new travel policy document and emails the file to the client.
 1. Fifi completes the chat interaction with the client.
 
-:::image type="content" source="media/a1-travel/image12.png" alt-text="Diagram that shows the steps of the solution of the automation as the chat box provides travel policy." lightbox="media/a1-travel/image12.png":::
+:::image type="content" source="media/a1-travel/image12.png" alt-text="Diagram that shows the steps of the solution of the automation as the chat box provides a travel policy.":::
 
 ## Build the travel policy template automation
 
@@ -255,14 +258,14 @@ You can build a copilot to set up the copilot component of this automation flow.
 
 This flow diagram shows how triggers, questions, actions, and a final message can work together in a topic:
 
-:::image type="content" source="media/a1-travel/image15.png" alt-text="Diagram that shows the steps in a copilot towards building a new topic." lightbox="media/a1-travel/image15.png":::
+:::image type="content" source="media/a1-travel/image15.png" alt-text="Diagram that shows the steps in a copilot toward building a new topic." lightbox="media/a1-travel/image15.png":::
 
 > [!TIP]
 > Daniel created a Copilot Studio topic with an associated Power Automate automation to enable clients to generate a customized travel policy document based on their answers to predefined questions. You can use the same solution architecture and design pattern for similar use cases in your organization, such as when you want to:
 >
 > - Enable website customers to generate a policy or a guideline document relevant to your industry.
 > - Generate a customized conference program based on sessions or topics selected by the participant.
-> - Personalise business event invitations with each attendee's name, position, title, and company.
+> - Personalize business event invitations with each attendee's name, position, title, and company.
 
 ## Learn more
 
