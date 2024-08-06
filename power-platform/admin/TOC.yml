@@ -612,7 +612,7 @@
                     href: delete-users.md
                   - name: Delete stub users from an environment (preview)
                     href: delete-stub-users.md
-                  - name: Delete unlicensed or removed Microsoft Entra group members (preview)
+                  - name: Delete unlicensed or removed Microsoft Entra group members
                     href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
