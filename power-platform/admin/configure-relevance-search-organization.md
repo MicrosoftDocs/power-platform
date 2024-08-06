@@ -9,8 +9,7 @@ ms.subservice: admin
 ms.author: mspilde
 search.audienceType: 
   - admin
-contributors:
-- mspilde 
+
 ---
 # Configure Dataverse search for your environment
 
