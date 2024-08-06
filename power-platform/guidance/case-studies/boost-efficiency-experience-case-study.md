@@ -30,7 +30,7 @@ The company developed *Fifi*—a copilot with the persona of a wise, older woman
 In this technical case study, you learn how:
 
 - A1 Inteligência em Viagens digitally transformed their travel booking process using Power Automate and Copilot Studio.
-- Power Automate can replace time consuming & error-prone manual data collation tasks.
+- Power Automate can replace time consuming and error-prone manual data collation tasks.
 - To build upon an existing automation that creates more business solutions.
 - To build a copilot with generative AI that improves customer experience.
 - To establish a copilot as a core part of your team.
