@@ -5,11 +5,9 @@ author: robstand
 ms.author: sashi
 ms.topic: overview
 ms.subservice: guidance
-ms.date: 07/18/2024
----
-<!-- Looks like Daniel's last name is misspelled. I'm changing it from "Oliviera" to "Oliveira," which matches the image and also is what I find on the A1 website. -->
-<!-- In line 120, does "Data Loss Prevention" mean "Purview Data Loss Prevention," or the generic industry term, which would be lowercase? https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=56620 -->
+ms.date: 08/06/2024
 
+---
 
 # Boost team efficiency and customer experience with Power Automate and generative AI
 
@@ -17,7 +15,7 @@ Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed t
 
 Established over 30 years ago, the agency specializes in coordinating international travel and luxury vacations for their executive client base. With a global partner network of airlines and hotels to personalize each traveler's experience, travel plans are rarely the same.
 
-Daniel Schaurich de Oliviera is the company's Founder and CEO. Since clients traveled less frequently during the COVID-19 pandemic, Daniel utilized the time to work on improving business processes through automation. He started with time-consuming research and coordination for international travel, which required his travel agents to search multiple government websites and call embassies for the latest travel guidelines.
+Daniel Schaurich de Oliveira is the company's Founder and CEO. Since clients traveled less frequently during the COVID-19 pandemic, Daniel utilized the time to work on improving business processes through automation. He started with time-consuming research and coordination for international travel, which required his travel agents to search multiple government websites and call embassies for the latest travel guidelines.
 
 Accessing real-time information is vital for the agency as travel rules and border closures quickly and frequently changed during the pandemic.
 
@@ -114,7 +112,7 @@ An email being received acts as the workflow trigger—a [text function](https:/
 
 ### Technical considerations
 
-- Data Loss Prevention (DLP) safeguards on your Power Platform environments determine the connectors available, such as custom connectors to external APIs.
+- Data loss prevention (DLP) safeguards on your Power Platform environments determine the connectors available, such as custom connectors to external APIs.
 - PDF analysis might require [AI Builder](/ai-builder/overview), which has licensing requirements to consider.
 - Triggering the automation might require the configuration of associated systems or a new work instruction for team members. If necessary, the booking system is updated to send the travel confirmation to an email address.
 - Dataverse, a part of Power Platform, makes change management simpler:
@@ -152,7 +150,7 @@ Daniel created a copilot to help travel agents answer complex questions and enab
 
 Naming the copilot Fifi helps it become an integral and accepted part of the team.
 
-*Create a persona for the copilot. Fifi isn't only a bot, she's a work colleague, helping the team to accept and assimilate her contributions faster.*
+*"Create a persona for the copilot. Fifi isn't only a bot, she's a work colleague, helping the team to accept and assimilate her contributions faster."*
 
 ~ *Daniel Schaurich de Oliveira, CEO*
 
@@ -267,7 +265,7 @@ This flow diagram shows how triggers, questions, actions, and a final message ca
 > - Generate a customized conference program based on sessions or topics selected by the participant.
 > - Personalize business event invitations with each attendee's name, position, title, and company.
 
-## Learn more
+## Related information
 
 - Find best practice architecture guidance with [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Use an incoming email to trigger an automation](/power-automate/email-overview)
