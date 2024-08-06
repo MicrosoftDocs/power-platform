@@ -1,16 +1,15 @@
 ---
 title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
 description: Configure Dataverse search to improve search results and performance. 
-author: sericks007
+author: mspilde
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2024
+ms.date: 08/06/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: mspilde
 search.audienceType: 
   - admin
-contributors:
-- mspilde 
+
 ---
 # Configure Dataverse search for your environment
 
@@ -168,7 +167,7 @@ The progress bar at the bottom shows the percentage of indexed fields as a fract
 
 When you've reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
-By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable.
+By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable. The numbers in parenthesis, below, indicate the total number of columns included in the index for that table.
 
 | Tables enabled for Dataverse search<br /> without Dynamics 365 apps enabled | Tables enabled for Dataverse search<br /> with Dynamics 365 apps enabled |
 |-------------------------|-------------------------|

@@ -466,6 +466,12 @@
               href: security/overview.md
             - name: Manage security
               href: security/security-posture-overview.md
+            - name: Power Platform managed identity
+              items:
+              - name: Managed identity overview (preveiw)
+                href: managed-identity-overview.md
+              - name: Set up managed identity (preview)
+                href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -604,9 +610,9 @@
                   items:
                   - name: Delete users from an environment
                     href: delete-users.md
-                  - name: Delete stub users from an environment (preview)
+                  - name: Delete stub users from an environment
                     href: delete-stub-users.md
-                  - name: Delete unlicensed or removed Microsoft Entra group members (preview)
+                  - name: Delete unlicensed or removed Microsoft Entra group members
                     href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
