@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2024
+ms.date: 08/06/2024
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
 > [!NOTE]
-> [Deleting an inactive, application user](#delete-an-inactive-application-user-preview) is now supported.
+> [Deleting an inactive, application user](#delete-an-inactive-application-user) is now supported.
 > [!TIP]
 > Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
 
