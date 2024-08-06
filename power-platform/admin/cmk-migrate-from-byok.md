@@ -5,8 +5,9 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: matp, ratrtile, sericks
 ms.topic: how-to 
-ms.date: 04/04/2024
+ms.date: 08/06/2024
 ms.custom: template-how-to
+
 ---
 
 # Migrate bring-your-own-key (BYOK) environments to customer-managed key
@@ -19,7 +20,6 @@ For customers using the previous [manage the encryption key](manage-encryption-k
 > [!Note]
 > BYOK tenants' environments are locked out of the following services unless they migrate to customer-managed key:
 > 
-> - Long term data retention
 > - Audit in IP firewall
 > -	Audit data in Synapse workspace and Power BI 
 > -	Copilot search index which uses Dataverse search 
