@@ -3,7 +3,7 @@ title: Business value toolkit | Microsoft Docs
 description: The CoE Starter Kit now contains useful components for measuring and communicating the value of Power Platform solutions.
 author: stjeffer
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 08/07/2024
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -39,7 +39,7 @@ At the heart of assessing broadly used apps is a five-stage storytelling framewo
 4. The value
 5. The next steps
 
-By leveraging generative AI, the toolkit enhances these raw stories, refining them into polished narratives. Once approved, these stories are automatically created as SharePoint pages, ready for further refinement such as adding images or screenshots. This process enables organizations to move from a position of scarcity, where success stories are rare and require effort, to one of enrichment, with a backlog of well-documented stories.
+By using generative AI, the toolkit enhances these raw stories, refining them into polished narratives. Once approved, these stories are automatically created as SharePoint pages, ready for further refinement such as adding images or screenshots. This process enables organizations to move from a position of scarcity, where success stories are rare and require effort, to one of enrichment, with a backlog of well-documented stories.
 
 ### Strategic alignment and value analysis
 
@@ -51,7 +51,7 @@ App owners review the analysis results and select the findings they agree with, 
 
 ### Quantifying value with the value calculator
 
-A key feature of the value assessment is the value calculator, empowering organizations to tangibly quantify the impact of their solution. Leveraging the concept of the _average cost of things_, the calculator facilitates the input of specific metrics aligned with strategic objectives. For instance, it allows app owners to delineate key performance indicators, such as the number of invoices processed per hour, both before and after implementing the app. By capturing these metrics, the calculator paints an accurate and granular picture of value, deriving the tangible benefits from solution deployment.
+A key feature of the value assessment is the value calculator, empowering organizations to tangibly quantify the impact of their solution. Using the concept of the _average cost of things_, the calculator facilitates the input of specific metrics aligned with strategic objectives. For instance, it allows app owners to delineate key performance indicators, such as the number of invoices processed per hour, both before and after implementing the app. By capturing these metrics, the calculator paints an accurate and granular picture of value, deriving the tangible benefits from solution deployment.
 
 :::image type="content" source="media/value-calculator.png" alt-text="Screenshot of value calculator screen.":::
 
@@ -79,7 +79,7 @@ Anticipating the potential impact of a solution before its actual construction i
 
 - **Alignment with strategic objectives:** By evaluating a proposed solution's potential impact, we ensure it aligns with the overarching strategic goals of the department or organization. This alignment is critical for maximizing resources and driving meaningful progress.
 
-- **Clarity in feature definition:** Through assessment prior to development, we outline a clear and comprehensive list of features and use cases. This clarity not only guides development but also fosters a shared understanding among stakeholders, minimizing ambiguity and maximizing efficiency.
+- **Clarity in feature definition:** Through assessment prior to development, we outline a clear and comprehensive list of features and use cases. This clarity not only guides development but also fosters a shared understanding among stakeholders, minimizing ambiguity, and maximizing efficiency.
 
 - **Optimized development prioritization:** The insights into the potential impact of various solutions, IT departments can prioritize their development efforts. By focusing on proposals with the highest projected impact, resources are utilized efficiently, driving tangible results and value.
 
@@ -87,7 +87,7 @@ This capability in the Business value toolkit is further enhanced by a function 
 
 :::image type="content" source="media/bv-proposal-assessment.png" alt-text="Screenshot of proposal assessment screen":::
 
-This dual-pronged approach ensures that proposed solutions are not only aligned with organizational objectives, but also distinct from existing offerings in the tenant. By identifying overlaps and gaps, this capability enables us to make informed decisions, minimize redundancy, and maximize the value of your development efforts.
+This dual-pronged approach ensures that proposed solutions aren't only aligned with organizational objectives, but also distinct from existing offerings in the tenant. By identifying overlaps and gaps, this capability enables us to make informed decisions, minimize redundancy, and maximize the value of your development efforts.
 
 Learn more about configuring the Business value toolkit in [Set up the Microsoft Power Platform business value toolkit component](setup-business-value-toolkit.md).
 
