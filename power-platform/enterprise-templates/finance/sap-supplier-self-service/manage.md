@@ -12,3 +12,6 @@ ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
+
+# Get started managing the SAP Supplier Self Service solution
+

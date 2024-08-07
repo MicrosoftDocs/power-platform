@@ -56,13 +56,13 @@
   - name: SAP Supplier Portal
     items:
   - name: Overview
-    href: finance/sap-supplier-portal/overview.md
+    href: finance/sap-supplier-self-service/overview.md
   - name: Install and set up
-    href: finance/sap-supplier-portal/install-and-set-up.md
+    href: finance/sap-supplier-self-service/install-and-set-up.md
   - name: Manage
-    href: finance/sap-supplier-portal/manage.md
+    href: finance/sap-supplier-self-service/manage.md
   - name: Use
-    href: finance/sap-supplier-portal/use.md
+    href: finance/sap-supplier-self-service/use.md
 - name: SAP FAQs
   href: finance/faqs.md
 - name: Human Resources
