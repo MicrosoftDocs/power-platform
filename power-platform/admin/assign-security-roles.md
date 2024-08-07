@@ -94,7 +94,7 @@ If defined in your environment, certain roles are automatically assigned to user
 
 Go to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **License To Role mapping**.
 
-### See also
+### Related information
 [Get started with security roles in Dataverse](/training/modules/get-started-security-roles/)
 
 
