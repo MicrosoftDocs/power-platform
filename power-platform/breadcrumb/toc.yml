@@ -9,6 +9,9 @@
     - name: Power Fx
       tocHref: /power-platform/power-fx/
       topicHref: /power-platform/power-fx/overview/
+	  - name: Guidance
+      tocHref: /power-platform/guidance/
+      topicHref: /power-platform/guidance/index
     - name: Well-Architected
       tocHref: /power-platform/well-architected/
       topicHref: /power-platform/well-architected/index
