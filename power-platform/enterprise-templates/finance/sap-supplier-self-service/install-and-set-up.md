@@ -26,17 +26,17 @@ Before you install and set up the SAP Supplier Self Service template, you need t
 
 These links provide SAP integration with Power Platform steps:
 
-- [Review requirements to integrate SAP with Power Platform](sap-procurement/administer/requirements).
-- [Set up environments and DLP policies](sap-procurement/administer/set-up-connections).
-- [Set up an on-premises data gateway](sap-procurement/administer/set-up-gateway).
-- [Configure authentication](sap-procurement/administer/configure-authentication).
+- [Review requirements to integrate SAP with Power Platform](/sap-procurement/administer/requirements).
+- [Set up environments and DLP policies](/sap-procurement/administer/set-up-connections).
+- [Set up an on-premises data gateway](/sap-procurement/administer/set-up-gateway).
+- [Configure authentication](/sap-procurement/administer/configure-authentication).
 
 These links provide SAP Procurement installation and setup steps:
 
-- [Install and set up the SAP Procurement solution](sap-procurement/administer/install).
-- [Configure environment variables](sap-procurement/administer/configure-environment-variables).
-- [Set up connections for SAP and Dataverse](sap-procurement/administer/set-up-connections).
-- [Set up SAP List of Values](sap-procurement/administer/apply-seed-data#apply-saps-list-of-values).
+- [Install and set up the SAP Procurement solution](/sap-procurement/administer/install).
+- [Configure environment variables](/sap-procurement/administer/configure-environment-variables).
+- [Set up connections for SAP and Dataverse](/sap-procurement/administer/set-up-connections).
+- [Set up SAP List of Values](/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values).
 
 The SAP List of Values must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
 
