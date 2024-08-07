@@ -59,6 +59,35 @@ Once you have imported both solutions, select **Publish all customizations**. Yo
 
 ## Set up the SAP Supplier Self Service solution
 
-Take these steps to set up the SAP Supplier Self Service solution in the same environment as SAP Procurement:
+Once you have successfully installed the SAP Supplier template, take these steps to set up the SAP Supplier Self Service solution in the same environment as SAP Procurement:
 
-1. 
+1. Open make.powerpages.microsoft.com to select the appropiate environment.
+1. Go to **Inactive** sites.
+1. Reactivate Supplier Self Service site.
+1. Choose desired URL for the site and wait for the activation phase to complete.
+
+## Activate and configure cloud flow steps
+
+You need to take steps to ensure that flows are turned on and added to the site.
+
+1. Go to Power Automate and open solution **Supplier Self Service** and ensure all the flows are turned on.
+1. Go to **maker studio > Setup**.
+1. Remove any flows that already appear to be added to the site.
+1. Add these Power Automate flows to your Supplier Self Service site:
+    1. Power Pages CreateVendorInvoice
+    1. Power Pages ReadPurchseOrder
+    1. Power Pages ReadPurchaseOrderList
+    1. Power Pages Read Vendor
+    1. Power Pages Read Vendor Invoice List
+    1. Power Pages Update Vendor
+1. Restart the Power Pages site.
+1. Update the flow URL in each of the custom components on the respective web pages. High-level instructions are provided in the table. Detailed steps with screenshots are available in [in Appendix – I – Page components and Cloud Flow URL detailed setup]().
+
+| Web Page  | Component Inputs  | Cloud Flow URLs  |
+|----------------|--------------------------------------|----------------------------------|
+| Manage Profile | Enter **Power Pages Read Vendor flow URL** | Select **Edit Custom Component** and update the URL. Make sure to add the partial URL in this format:/_api/cloudflow/v1.0/trigger/xxxxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxxxx. Select **Done**  |
+| Edit Profile   | Enter **Power Pages Read Vendor flow URL**; Enter **Power Pages Update Vendor flow URL**   | Select **Edit Custom Component** and update the URL. Make sure to add the partial URL in this format: /_api/cloudflow/v1.0/trigger/xxxxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxxxx. Select **Done**  |
+| Orders         | Enter **Power Pages Read Vendor flow URL**; Enter **Power Pages ReadPurchaseOrderList flow URL**     | Select **Edit Custom Component** and update the URL. Make sure to add the partial URL in this format: /_api/cloudflow/v1.0/trigger/xxxxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxxxx. Select **Done**  |
+| Invoice        | Enter **Power Pages Read Vendor flow URL**; Enter **Power Pages Read Vendor Invoice List flow URL**   | Select **Edit Custom Component** and update the URL. Make sure to add the partial URL in this format: /_api/cloudflow/v1.0/trigger/xxxxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxxxx. Select **Done**  |
+| Create         | Enter **Power Pages Read Vendor flow URL**; Enter **Power Pages Read Purchase Order flow URL**; Enter **Power Pages CreateVendorInvoice flow URL** | Select **Edit Custom Component** and update the URL. Make sure to add the partial URL in this format: /_api/cloudflow/v1.0/trigger/xxxxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxxxx. Select **Done**  |
+
