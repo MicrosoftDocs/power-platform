@@ -103,6 +103,8 @@ Consider the following:
 - Does the workload need permanent access or can conditional access be considered?
 - Does the workload perform actions that require administrative/elevated permissions?
 - How will the workload interact with third-party services?
+- For copilots, do you have SSO requirements?
+- Is the copilot working unauthenticated, authenticated, or both?
 
 #### Role assignment
 
@@ -246,7 +248,7 @@ Threat detection can take the form of reacting to an alert of suspicious activit
 
 ### Identity logging
 
-Power Apps, Power Automate, Connectors, and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
+Power Apps, Power Automate, Copilot Studio, Connectors, and Data Loss Prevention activity logging are tracked and viewed from the Microsoft Purview compliance portal. For more information, see [Learn about Microsoft Purview](/purview/purview).
 
 Logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment. This auditing is enabled at the environment level, and additional configuration is required for individual tables and columns.
 
@@ -259,6 +261,21 @@ Use [Microsoft Entra Privileged Identity Management (PIM)](/power-platform/admin
 ### Securing Dataverse data
 
 One of the key features of Dataverse is its rich security model that can adapt to many business usage scenarios. This security model is only available when a Dataverse database is in the environment. As a security professional, you likely won't be building the entire security model yourself but may be involved in making sure the use of the security features is consistent with the data security requirements of the organization. Dataverse uses role-based security to group together a collection of privileges. These security roles can be associated directly to users, or they can be associated with Dataverse teams and business units. For more information, see [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds).
+
+### Configure user authentication in Copilot Studio
+
+Copilot Studio supports several authentication options. Choose the one that meets your needs. Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with Microsoft Entra ID, or with any OAuth2 identity provider such as Google or Facebook. Learn more: [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication)
+
+With [Direct Line-based security](microsoft-copilot-studio/configure-web-security), you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
+
+Copilot Studio supports single sign-on (SSO), which means copilots can sign the user in.
+SSO needs to be implemented on your web pages, mobile applications. For Microsoft Teams, SSO is seamless if you select the “Only in Teams” authentication. It can also be configured with Manual AAD v2, but in this case the Teams app must be deployed as a zip file, not with the 1-click Teams deployment from Copilot Studio.
+
+Learn more:
+
+- [Configure single sign-on with Microsoft Entra ID](/microsoft-copilot-studio/configure-sso?tabs=webApp)
+- [Configure single sign-on with Microsoft Entra ID for copilots in Microsoft Teams](/microsoft-copilot-studio/configure-sso-teams)
+- [Configure single sign-on with a generic OAuth provider](/microsoft-copilot-studio/configure-sso-3p)
 
 ### Securely access data using Customer Lockbox
 

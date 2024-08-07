@@ -121,6 +121,7 @@ For more information, see:
 
 - [Power Apps activity logging](/power-platform/admin/logging-powerapps)
 - [Power Automate activity logging](/power-platform/admin/logging-power-automate)
+- [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
 - [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)

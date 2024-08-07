@@ -28,7 +28,7 @@ This guide describes the recommendations for minimizing unnecessary complexity a
 
 A key tenet of designing for reliability is to keep things simple and efficient. Focus your workload design on meeting business requirements to reduce the risk of unnecessary complexity or excess overhead. Consider the recommendations in this article to help you make decisions about your design to create a lean, efficient, and reliable workload. Different workloads might have different requirements for availability, scalability, data consistency, and disaster recovery.
 
-You must justify every design decision with a business requirement. This design principle might seem obvious, but it's crucial for workload design. Does your application support millions of users, or a few thousand? Are there large traffic bursts, or a steady workload? What level of application outage is acceptable? Business requirements drive these design considerations.
+You must justify every design decision with a business requirement. This design principle might seem obvious, but it's crucial for workload design. Does your workload support millions of users, or a few thousand? Are there large traffic bursts, or a steady workload? What level of outage is acceptable? Business requirements drive these design considerations.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff:** A complex solution can offer more features and flexibility, but it might affect the reliability of the workload because it requires more coordination, communication, and management of components. Alternatively, a simpler solution might not fully meet user expectations, or it might have a negative effect on extensibility as the workload evolves.
 
@@ -77,7 +77,10 @@ You can perform the following recommendations without stakeholder engagement:
 
 The principles of simplicity, efficiency, and reliability also apply to your development practices. Consider these recommendations:
 
-- Use platform capabilities when they meet your business requirements. For example, use modern controls instead of developing your own code components to achieve a Fluent 2 design standard.
+- Use platform capabilities when they meet your business requirements. For example
+    - Use modern controls instead of developing your own code components to achieve a Fluent 2 design standard.
+    - Use native connectors instead of developing custom connectors to reduce custom code.
+    - Use generative answers in Microsoft Copilot Studio allow your copilot to find and present information from multiple sources, internal or external, without created topics.
 
 - Introduce dedicated code review sessions as a development practice.
 
@@ -104,11 +107,24 @@ These Power Apps articles provide practical design advice:
 - [Date modeling: Designing your data structure](/power-apps/guidance/planning/data-modeling)
 - Data design: [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
+These Power Automate articles provide practical design advice:
+
+- [Determining which automation method to use](/power-automate/guidance/planning/determine-automation-methods)
+- [Reducing risk and planning for error handling](/power-automate/guidance/planning/reducing-risk)
+- [Separate flows into smaller automated processes](/power-automate/guidance/planning/separate-flows)
+
+These Copilot Studio articles provide practical design advice:
+
+- The [Microsoft Copilot Studio implementation guide](https://aka.ms/copilotStudioImplementationGuide) provides a framework to do a 360-degree review of your project. Through probing questions, it highlights potential risks and gaps, aims at aligning the project with the product roadmap, and shares guidance, best practices and reference architecture examples.
+- The [Microsoft Copilot Studio guidance documentation](/microsoft-copilot-studio/guidance/) provides best practices, implementation, and architecture guidance information from the team that works with our enterprise customers.
+
 ## See also
 
 - [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
 - [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
-- [Planning a Power Apps project ](/power-apps/guidance/planning/planning-phase)
+- [Planning a Power Apps project](/power-apps/guidance/planning/planning-phase)
+- [Planning a Power Automate project](/power-automate/guidance/planning/separate-flows)
+- [Planning a conversational AI project](/microsoft-copilot-studio/guidance/project-best-practices)
 
 ## Reliability checklist
 

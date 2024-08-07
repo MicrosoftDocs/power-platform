@@ -108,7 +108,7 @@ How you define healthy, degraded, and unhealthy states depends on your reliabili
 - A **red or unhealthy** state indicates that degradation has persisted longer than allowable by your reliability targets or that the flow has become unavailable.
 
 > [!NOTE]
-> The health model shouldn't treat all failures the same. The health model should distinguish between *transient* and*nontransient* faults. It should clearly distinguish between expected-transient but recoverable failures and a true disaster state.
+> The health model shouldn't treat all failures the same. The health model should distinguish between *transient* and *nontransient* faults. It should clearly distinguish between expected-transient but recoverable failures and a true disaster state.
 
 This model works by using a monitoring and alerting strategy that is developed and operated on the principles of continuous improvement. As your workloads evolve, your health models must evolve with them.
 
