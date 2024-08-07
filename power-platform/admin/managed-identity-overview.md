@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Power Platform managed identity overview (preveiw)
+# Power Platform managed identity overview (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
