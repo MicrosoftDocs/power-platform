@@ -1,10 +1,10 @@
 ---
-title: Set up the Business value toolkit | Microsoft Docs
+title: Set up the Business value toolkit
 description: Instructions for how to set up the Business value toolkit component of the CoE Starter Kit.
 author: stjeffer
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 08/07/2024
 ms.subservice: guidance
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -31,7 +31,7 @@ The business value toolkit solution contains the following artifacts:
 | AI prompt | Generate enhanced success story | Used to generate enhanced success stories. |
 | AI prompt | Review and refine the story | Used to refine an enhanced story. |
 | AI prompt | Proposal comparison | Used to identify similar apps or proposals. |
-| AI prompt | Summarise the proposal | Used to summarise the proposal for value. |
+| AI prompt | Summarize the proposal | Used to summarize the proposal for value. |
 | App | Business value admin | Used to define organizational structure, strategic objectives, and average cost of things. |
 | App | Business value capture | Used to author success stories, perform value analysis, and calculation. |
 | App | Display value cards in SharePoint Online | When added to SharePoint news articles, provides visualization of value. |
@@ -55,13 +55,13 @@ The business value toolkit solution contains the following artifacts:
 
 ## Import the Business value toolkit component solution
 
-Begin by downloading the CoE Starter Kit file to install the Business value toolkit. Note that the solution doesn't mandate the installation or use of the remaining components of the CoE Starter Kit.
+Begin by downloading the CoE Starter Kit file to install the Business value toolkit. The solution doesn't mandate the installation or use of the remaining components of the CoE Starter Kit.
 
 1. Download the CoE Starter Kit compressed file at [aka.ms/CoeStarterKitDownload](https://aka.ms/CoeStarterKitDownload).
 
 2. Extract the zip file.
 
-   The CoE Starter Kit compressed file contains all solution and non-solution components that make up the CoE Starter Kit.
+   The CoE Starter Kit compressed file contains all solution and nonsolution components that make up the CoE Starter Kit.
 
    > [!IMPORTANT]
    > The solution name contains the version number. In the following step, use the **business_value_core_x_x_x_xx_managed** zip solution from the download.
@@ -75,7 +75,7 @@ The import can take up to 15 minutes to be completed.
 > [!NOTE]
 > Importing the sample task data is optional, but recommended.
 
-If you want to prepopulate the solution with strategic objectives, organizational hierarchy, and the average cost of things, complete the following steps. This can be particularly helpful when you're just getting started with the Business value toolkit, or are testing.
+If you want to prepopulate the solution with strategic objectives, organizational hierarchy, and the average cost of things, complete the following steps. This can be helpful when you're just getting started with the Business value toolkit, or are testing.
 
 1. Sample data must be installed through the **Configuration Migration Tool** - part of [PAC CLI](/power-platform/developer/cli/introduction?tabs=windows#install-microsoft-power-platform-cli).
 
@@ -104,7 +104,7 @@ The following table provides guidance for populating the Business value Admin ap
 | **Task**                               | **Description**                                                                                          |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Set up business units             | Use the Business Value Admin app and select the **Business units** page. Add the teams, departments, and business units that represent your organization and hierarchy. |
-| Add strategic objectives           | Work closely with the various teams and departments to capture the objectives and how they are measuring progress towards them. This is a crucial component of the sample solution. Assign strategic objectives to the relevant team or department. |
+| Add strategic objectives           | Work closely with the various teams and departments to capture the objectives and how they're measuring progress towards them. This is a crucial component of the sample solution. Assign strategic objectives to the relevant team or department. |
 | Add the average cost of things            | This data is used to calculate the tangible impact an app is having against a strategic objective. Work with your teams and departments to add this data. This data is assigned to business units. |
 
 ### Schema overview of the Business Value Admin App
@@ -116,13 +116,13 @@ The schema below outlines the various tables and columns used within the Busines
 | Business unit     | Name              | Identifies the name of the business unit, team, or department. |
 | Business unit     | Parent business   | Links a business unit, team, or department to its overarching entity. |
 | Strategic objective | Name            | Names the strategic objective such as _Foster a safe and healthy work environment_. |
-| Strategic objective | Description     | Provides detailed information about the strategic objective. For example _Contoso will prioritize employee well-being by ensuring a safe and healthy workplace_. |
+| Strategic objective | Description     | Provides detailed information about the strategic objective. For example _Contoso prioritizes employee well-being by ensuring a safe and healthy workplace_. |
 | Strategic objective | Measures        | Lists metrics that indicate progress towards the strategic objective. For example, _workplace incidents_, _accident severity_, and _training completion rates_. |
 | Strategic objective | Business unit   | Associates the strategic objective with a specific business unit. |
 | Strategic objective | Owner           | Indicates the user who created the strategic objective record. |
 | Strategic objective | Action verb     | Specifies the action type the objective promotes, using a choice column. For example, _Decrease_. |
 | Strategic objective | Key result area | Categorizes objectives for analytics purposes, useful for Power BI dashboards. For example, _Employee engagement_. |
-| Strategic objective | Quantifiable target | Details the type of measure used employing a choice column. For examle, _%_, _$_, _qty_, _time_, _rating_, and _score_). |
+| Strategic objective | Quantifiable target | Details the type of measure used employing a choice column. For example, _%_, _$_, _qty_, _time_, _rating_, and _score_). |
 | Strategic objective | Time period     | Defines the duration for achieving the objective using a choice column. For example, _Annual_. |
 | Strategic objective | Measurable component | Expands on the **Measures** column to describe detailed tracking methods for the objective's progress. For example, _Track the number of workplace incidents_, _frequency and severity of injuries_, and _monitor employee safety training completion_. |
 | Strategic objective | Objective target | Sets a specific target for the objective. For example _75%_, when combined with the quantifiable target. |
@@ -138,7 +138,7 @@ The schema below outlines the various tables and columns used within the Busines
 
 ## Assess the value of an existing app
 
-The Business value toolkit is designed to systematically capture and articulate the story behind the app, ensuring organizations can consistently produce high-quality success stories. Leveraging generative AI capabilities through the _create text using a prompt_ action in Power Automate, the toolkit enhances the narrative quality of these stories and analyzes for alignment and impact on strategic goals of the organization.
+The Business value toolkit is designed to systematically capture and articulate the story behind the app, ensuring organizations can consistently produce high-quality success stories. Using generative AI capabilities through the _create text using a prompt_ action in Power Automate, the toolkit enhances the narrative quality of these stories and analyzes for alignment and impact on strategic goals of the organization.
 
 ### AI-enhanced success story generation
 
@@ -147,7 +147,7 @@ The toolkit employs specific prompts within Power Automate to enhance and refine
 | Prompt name                  | Description                                                                                                                      | Where used                     |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | Generate enhanced success story | This prompt transforms the initial story text into a polished format similar to a business magazine article. It also converts the text into HTML for publication on SharePoint Online, pending approval from the app owner. | Cloud flow: AI-EnhancedStoryGen |
-| Review and refine the story    | This prompt further refines the enhanced story, improving readability and flow by processing the AI-generated content through additional refinement stages. | Cloud flow: AI-EnhancedStoryGen |
+| Review and refine the story    | This prompt further refines the enhanced story, improving readability and flow by processing the AI-generated content through more refinement stages. | Cloud flow: AI-EnhancedStoryGen |
 
 These prompts facilitate the creation of engaging and well-structured success stories that resonate with business audiences, making complex app functionalities accessible and relatable.
 
@@ -183,7 +183,7 @@ Complete the following steps before you edit the page in SharePoint Online.
 1. Sign in to [Power Apps](https://make.powerapps.com?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc).
 1. Select **Solutions** .
 1. Select **Business Value** > **Apps**.
-1. Select the elipsis (**...**) next to the canvas app named **Display value cards in SharePoint Online**.
+1. Select the ellipsis (**...**) next to the canvas app named **Display value cards in SharePoint Online**.
 1. Copy the web link.
 1. Copy the **Story ID** of the success story that you want to add the canvas app to.
 1. Enter 'edit' mode on the story page, by selecting the **Edit** button.
@@ -314,7 +314,7 @@ The following table provides an overview of the prompts used in the process.
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | Assess a proposal | This prompt takes the idea created by the app user and analyzes for alignment and impact against each strategic objective | Cloud flow: AI-ValueAssessmentProposal|
 | Proposal comparison | This prompt checks for similarities with other stories and proposal over two scopes: similarity in audience and similarity of features and functionality. | Cloud flow: AI-ProposalComparison |
-| Summarise proposal impact | This prompt summaries the potential impact, providing an overview of the solution, potential business value, and positive impact on stakeholders. | Cloud flow: AI-RunComparisonCheckAgainstProposal |
+| Summarize proposal impact | This prompt summarizes the potential impact, providing an overview of the solution, potential business value, and positive impact on stakeholders. | Cloud flow: AI-RunComparisonCheckAgainstProposal |
 
 These prompts facilitate the creation of engaging and well-structured success stories that resonate with business audiences, making complex app functionalities accessible and relatable.
 
