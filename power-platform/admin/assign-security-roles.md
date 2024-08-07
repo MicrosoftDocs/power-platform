@@ -1,22 +1,21 @@
 ---
-title: "Assign security roles | MicrosoftDocs"
-description: About assigning security roles to a user.
-author: sericks007
+title: Assign security roles 
+description: Learn about assigning security roles to a user.
+author: paulliew
 ms.reviewer: sericks
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 08/07/2024
 search.audienceType: 
   - admin
-contributors:
-- paulliew
+
 ---
 # Assign a security role to a user  
 
-**About security roles**
+Consider the following information about security roles:
 
  - Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
  - Dataverse provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name. See [Predefined security roles](database-security.md#predefined-security-roles).
