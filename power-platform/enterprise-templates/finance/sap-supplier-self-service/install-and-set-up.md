@@ -24,14 +24,14 @@ The SAP solutions are enterprise-ready and therefore need to be customized, depl
 
 Before you install and set up the SAP Supplier Self Service template, you need to ensure that SAP is integrated with Power Platform and that the SAP Procurement template is installed and set up in its own environment.
 
-These links provide SAP integration with Power Platform steps:
+Take these steps to integrate SAP with Power Platform:
 
 - [Review requirements to integrate SAP with Power Platform](/sap-procurement/administer/requirements).
 - [Set up environments and DLP policies](/sap-procurement/administer/set-up-connections).
 - [Set up an on-premises data gateway](/sap-procurement/administer/set-up-gateway).
 - [Configure authentication](/sap-procurement/administer/configure-authentication).
 
-These links provide SAP Procurement installation and setup steps:
+Take these steps to install and set up the SAP Procurement template:
 
 - [Install and set up the SAP Procurement solution](/sap-procurement/administer/install).
 - [Configure environment variables](/sap-procurement/administer/configure-environment-variables).
@@ -81,7 +81,7 @@ You need to take steps to ensure that flows are turned on and added to the site.
     1. Power Pages Read Vendor Invoice List
     1. Power Pages Update Vendor
 1. Restart the Power Pages site.
-1. Update the flow URL in each of the custom components on the respective web pages. High-level instructions are provided in the table. Detailed steps with screenshots are available in [in Appendix – I – Page components and Cloud Flow URL detailed setup]().
+1. Update the flow URL in each of the custom components on the respective web pages. High-level instructions are provided in the table.
 
 | Web Page  | Component Inputs  | Cloud Flow URLs  |
 |----------------|--------------------------------------|----------------------------------|
