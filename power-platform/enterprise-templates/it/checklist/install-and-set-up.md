@@ -197,3 +197,11 @@ Take these steps to enable the audit settings:
 1. Select **Settings**.
 1. Select **Start Auditing**.
 :::image type="content" source="media/install/start-auditing.png" alt-text="Screenshot of turning on auditing in the Power Platform admin center.":::
+
+### Next step
+
+[Manage the Checklist app](manage.md)
+
+### See also
+
+[Use the Checklist app](use.md)
