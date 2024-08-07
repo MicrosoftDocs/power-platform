@@ -230,7 +230,7 @@ You can use an encryption key created from the Azure Key Vault Managed HSM to en
       - **RSA key size**: **2048**
 
       > [!NOTE]
-      > Supported [RSA-HSM key sizes:](/azure/key-vault/keys/about-keys#hsm-protected-keys) 2048-bit, 3072-bit, 4096-bit.
+      > Supported [RSA-HSM key sizes:](/azure/key-vault/keys/about-keys#hsm-protected-keys) 2048-bit, 3072-bit.
 
 #### Encrypt your environment with key from Azure Key Vault with private link
 
