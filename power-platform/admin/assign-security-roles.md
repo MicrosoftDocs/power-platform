@@ -44,11 +44,7 @@ Follow these steps to assign a security role.
 
 5. On the **Users** page select a user, and then select **Manage security roles**.
 
-   :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles.":::
-
-6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
-
-   :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
 
 When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business unit. 
 
