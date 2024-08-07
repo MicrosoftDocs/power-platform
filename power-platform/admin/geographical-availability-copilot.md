@@ -4,13 +4,14 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/15/2024
+ms.date: 08/05/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
 search.audienceType:
   - admin
-contributors: 
+contributors:
+  - antoinecellerier 
   - JesseParsons
   - tapanm-msft
   - sidhartg
@@ -43,8 +44,8 @@ The following table lists the regions involved with copilots and generative AI f
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | Australia<br>India<br>United Kingdom<br>United States | Within the geographical region of your Power Platform or Dynamics 365 environment | United States| 
-| Europe\*  | Sweden or Switzerland| United States |
-| France<br>Germany<br>Norway<br>Switzerland | Sweden or Switzerland | United States|
+| Europe\*  | Spain, Sweden, or Switzerland| United States |
+| France<br>Germany<br>Norway<br>Switzerland | Spain, Sweden, or Switzerland | United States|
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
 
@@ -52,7 +53,7 @@ The following table lists the regions involved with copilots and generative AI f
 
 ## Turn on copilots and generative AI features
 
-To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Microsoft 365 global administrator, Power Platform administrator, or Dynamics 365 administrator.
+To use copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the left side panel, select **Environments**.

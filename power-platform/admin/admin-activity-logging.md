@@ -26,6 +26,7 @@ In this article, you learn about activities that are performed on Power Platform
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
 > [!IMPORTANT]
+>
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
 > - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
