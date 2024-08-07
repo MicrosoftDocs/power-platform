@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 08/07/2024
 search.audienceType: admin
 
 ---
@@ -38,7 +38,7 @@ These admins can't perform activities that require direct access to Dataverse da
 - Installing apps for an environment
 
 > [!IMPORTANT]
-> Global, Power Platform and Dynamics 365 Service Administrators must complete another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
+> Global admins, Power Platform admins, and Dynamics 365 service administrators must complete another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
 
 ## Known limitations
 
