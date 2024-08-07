@@ -15,7 +15,7 @@ ms.subservice: solution-templates
 
 Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
 
-Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best-practices and administration resource links and to develop plans that suit your organization's needs.
+Establish a centralized team that consists of key stakeholders, product owners, and Power Platform administrators and developers. Be sure to review Power Platform best practices and administration resource links and to develop plans that suit your organization's needs.
 
 More information:
 
@@ -27,13 +27,11 @@ As a Microsoft Power Platform admin, follow the steps outlined in this article t
 
 ## Step 1: Review prerequisites
 
-Review the requirements, identify opportunities and develop a plan of action that suits your organization's needs.
+Review the requirements, identify opportunities, and develop a plan of action that suits your organization's needs.
 
 ### Confirm licensing
 
-Confirm your organization has the necessary licensing to use enterprise templates. You need:
-
-- One of the following Power Apps plans:
+To confirm your organization has the necessary licensing to use enterprise templates you need one of the following Power Apps plans:
 
   - Power Apps Premium
   - Power Apps per app
@@ -53,21 +51,21 @@ More license details are available in the [Microsoft Power Platform Licensing Gu
 
 It's important to have a cohesive environment and data policy strategy for enterprise templates. To successfully install and manage the Awards and Recognition template, confirm these resources and practices are in place.
 
-- **Administrators** - Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
+- **Administrators**: Be sure admins with the necessary privileges are available to coordinate to assign licensing and create environments.
 
   - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
   - Power Platform Administrator to create environments
   
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments** - Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
+- **Environments**: Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
 
   - A Power Platform environment is set up with a Dataverse database
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   More information: [Environments overview](/power-platform/admin/environments-overview)
 
-- **Data loss prevention policies** - Ensure the environment has access to the Dataverse connector used by the template.
+- **Data loss prevention policies**: Ensure the environment has access to the Dataverse connector used by the template.
 
     More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
@@ -75,7 +73,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be manually set up.
 
-The installation requires a Microsoft Dataverse connection. It's best to create connections before you install the template to avoid having to jump back and forth between browser windows.
+The installation requires a Microsoft Dataverse connection. It's best to create connections before you install the template to avoid jumping back and forth between browser windows.
 
 Create a new connection with the [Microsoft Dataverse connector](/connectors/commondataserviceforapps/).
 
@@ -90,8 +88,8 @@ More information: [Manage connections in canvas apps](/power-apps/maker/canvas-a
 
 There are two solution installation options available for you to consider:
 
-- You can select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
-- You can download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
+- Select the *Get it now* button on the template's AppSource offer page and it automatically takes you to an *install window* in the Power Platform admin center.
+- Download either a *managed* or an *unmanaged* version of the solution files and manually import them into your environment according to your organization's requirements.
 
 > [!TIP]
 >
@@ -102,9 +100,9 @@ There are two solution installation options available for you to consider:
 You can easily access and install the Awards and Recognition template from AppSource, a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
 1. Go to the [Awards and Recognition solution template on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate) and select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-:::image type="content" source="media/install/ar-install-env.png" alt-text="AScreenshot of the modal dialog window where you select the environment you set up for the template.":::
+:::image type="content" source="media/install/ar-install-env.png" alt-text="Screenshot of the modal dialog window where you select the environment you set up for the template.":::
 1. Select the environment that you prepared for the template.
-1. Agree to the *Terms and Privacy* statements by checking the boxes.
+1. Agree to the *Terms and Privacy* statements by ticking the checkboxes.
 1. Select **Install**. You're taken to a screen where you can view the installation status. Once the installation is complete, the status shows as *Installed*.
 
 > [!IMPORTANT]
@@ -115,7 +113,7 @@ You can easily access and install the Awards and Recognition template from AppSo
 
 ### Download and manually install solution files
 
-Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
+Managed and unmanaged solution files are available to download and manually install. Use these steps to download and import the solutions directly into the development environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download the following managed or unmanaged solution files:
 
