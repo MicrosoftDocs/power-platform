@@ -1,3 +1,26 @@
+---
+title: Set up Microsoft Entra ID (with certificates) - Single Sign-On
+description: This guide will walk you through setting up the connector so your users can access SAP data and perform RFC calls in the Power Platform using their Microsoft Entra ID for authentication.
+author: ryanb58
+ms.author: ryanb58
+contributors:
+  - robinsonshields
+  - microsoft-george
+  - tverhasselt
+  - galitskyd
+  - microsoft-dustin
+  - ryanb58
+  - scottwoodallmsft
+  - Wrighttyler
+  - EllenWehrle
+ms.reviewer: ellenwehrle
+ms.topic: how-to
+ms.date: 08/15/2024
+ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
+---
+
 # Microsoft Entra ID (with certificates) - Single Sign-On
 
 This guide will walk you through setting up the connector so your users can access SAP data and perform RFC calls in the Power Platform using their Microsoft Entra ID for authentication.

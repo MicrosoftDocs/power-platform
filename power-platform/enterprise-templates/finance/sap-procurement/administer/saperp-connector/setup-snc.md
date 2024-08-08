@@ -1,3 +1,26 @@
+---
+title: Set up Secure Network Communications (SNC) for SAP and Power Platform
+description: Learn how to create a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
+author: ryanb58
+ms.author: ryanb58
+contributors:
+  - robinsonshields
+  - microsoft-george
+  - tverhasselt
+  - galitskyd
+  - microsoft-dustin
+  - ryanb58
+  - scottwoodallmsft
+  - Wrighttyler
+  - EllenWehrle
+ms.reviewer: ellenwehrle
+ms.topic: how-to
+ms.date: 08/15/2024
+ms.custom: bap-template
+ms.service: power-platform
+ms.subservice: solution-templates
+---
+
 # Set up Secure Network Communications (SNC) for SAP and Power Platform
 
 Learn how to create a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
