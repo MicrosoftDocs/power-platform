@@ -494,7 +494,7 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
-                - name: Control access to environment
+                - name: Control access to environment (Preview)
                   href: control-client-app-access-to-environment.md
                 - name: Configure environment security
                   items:
