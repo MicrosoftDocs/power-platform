@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/22/2024
+ms.date: 08/06/2024
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
 > [!NOTE]
-> [Deleting an inactive, application user](#delete-an-inactive-application-user-preview) is now supported in preview.
+> [Deleting an inactive, application user](#delete-an-inactive-application-user) is now supported.
 > [!TIP]
 > Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
 
@@ -126,12 +126,7 @@ On the **Application user** page, do one of the following:
 
 - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
 
-## Delete an inactive, application user (preview)
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+## Delete an inactive, application user 
 
 To delete an inactive application user, complete the following steps.
 
@@ -143,12 +138,8 @@ To delete an inactive application user, complete the following steps.
 > [!NOTE]
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
 
-## View the details of system-provided application users (preview)
+## View the details of system-provided application users
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 In each of your environments, there's a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
 
