@@ -67,6 +67,8 @@ When you identify key metrics to focus on, consider metrics related to availabil
 
 - _Response time:_ Latency and load time are common response time metrics. Latency is the time it takes to respond to a request (200 milliseconds). Load time is the time it takes for an application or web page to be interactive. A common target is 99% of customer lookup requests completing in less than 2 seconds.
 
+- _Deflection rate:_ In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI and CSAT, and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
+
 ### Set specific targets
 
 After you identify the key metrics, you need to specify performance targets or thresholds for each metric. Performance targets should be measurable, realistic, and aligned with your workload objectives. For example, you might set a target response time of less than 500 milliseconds (ms) or a target error rate of less than 1 percent. 
@@ -108,6 +110,8 @@ Power Platform ensures consistent availability and performance by applying servi
 - [Power Platform request limits and allocations](/power-platform/admin/api-request-limits-allocations)
 - [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk)
 - [Limits of automated, scheduled, and instant Power Automate flows](/power-automate/limits-and-config)
+
+[Copilot Studio](/microsoft-copilot-studio/analytics-overview) has a comprehensive set of analytics that show you the key performance indicators for your copilot. Multiple charts show you trends and usage for your copilot's topics. These charts use AI to highlight the topics that have the greatest impact on your copilot's performance. You can also design a [custom analytics strategy](/microsoft-copilot-studio/guidance/custom-analytics-strategy) to design a report not covered by out-of-the-box analytics.
 
 ## Performance Efficiency checklist
 
