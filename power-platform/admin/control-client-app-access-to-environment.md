@@ -52,7 +52,7 @@ Client app access control isn’t applied to:
 - First-party apps with service-to-service calls (application context)
 - Partner apps with service-to-service calls
 
-  To block these apps, make them inactive in the Power Platform admin center—[Manage application users in the Power Platform admin center](manage-application-users).
+  To block these apps, make them inactive in the Power Platform admin center—[Manage application users in the Power Platform admin center](manage-application-users.md).
 
 ## Prerequisites
 
