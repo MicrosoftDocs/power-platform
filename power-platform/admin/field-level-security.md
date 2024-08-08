@@ -3,7 +3,7 @@ title: "Column-level security  | MicrosoftDocs"
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/05/2024
+ms.date: 08/08/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -35,22 +35,22 @@ Column-level security is available for the default columns on most out-of-box ta
 1. Select an optional masking rule (**preview**). 
 1. Associate one more existing security profile, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
   
-A security profile determines the following:  
-  
-- Permissions to the secure columns  
-- Users and teams assigned access 
-  
-  A security profile can be configured to grant user or team members the following permissions at the column level:  
-  
-- **Read**. Read-only access to the column's data.
-- **Read unmasked**. Read column's data unmasked values. (**preview**)
-- **Create**. Users or teams in this profile can add data to this column when creating a row.  
-- **Update**. Users or teams in this profile can update the column's data after it has been created.  
-  
-A combination of these four permissions can be configured to determine the user privileges for a specific data column.  
-  
-> [!IMPORTANT]
-> Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
+    A security profile determines the following:  
+      
+    - Permissions to the secure columns  
+    - Users and teams assigned access 
+      
+      A security profile can be configured to grant user or team members the following permissions at the column level:  
+      
+    - **Read**. Read-only access to the column's data.
+    - **Read unmasked**. Read column's data unmasked values. (**preview**)
+    - **Create**. Users or teams in this profile can add data to this column when creating a row.  
+    - **Update**. Users or teams in this profile can update the column's data after it has been created.  
+      
+    A combination of these four permissions can be configured to determine the user privileges for a specific data column.  
+      
+    > [!IMPORTANT]
+    > Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
   
 ## Example for restricting the mobile phone column for the Contact table  
 Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
@@ -63,7 +63,7 @@ Imagine your company's policy is that sales members should have different levels
   
  To restrict this column, you would do the following tasks.  
   
- **Secure the column**
+ ### Secure the column
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
@@ -89,7 +89,7 @@ Imagine your company's policy is that sales members should have different levels
   
 8. Select **Save**.
 
-**Configure the security profiles**
+### Configure the security profiles
   
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select the environment to configure security profiles for. 
 
@@ -108,7 +108,7 @@ Imagine your company's policy is that sales members should have different levels
 
 5. Repeat the above steps and create a column security profile for *Vice President*.  
 
-**Configure column permissions**
+### Configure column permissions
 
 1. Select the **Column Security Profiles** tab, and then select **Sales Manager**. 
 
@@ -125,7 +125,7 @@ Any users not defined in the previously created column security profiles won't h
 
 ## Which columns can be secured?  
 
-### Adding a new column 
+### Add a new column 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
 
 1. Select **Tables** in the navigation pane.
@@ -142,7 +142,7 @@ Any users not defined in the previously created column security profiles won't h
    
 1. Expand **Advance options**, and then under **General**, select the **Enable column security** checkbox.
 
-### Viewing column level security
+### View column-level security
 Every column in the system contains a setting for whether column security is allowed. Use the following steps to view column security settings.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
@@ -166,16 +166,14 @@ Although most attributes can be secured, there are system attributes, such as ID
 -    fullname, firstname, middlename, lastname, yominame, yomifirstname, yomifullname, yomilastname, yomimiddlename
 -    deprecated columns, for example: traversedpath, stageid
 
-
 You can view the table metadata for your organization including which columns can be enabled for column security, by installing the Metadata Browser solution described in [Browse the Metadata for Your Organization](/powerapps/developer/common-data-service/browse-your-metadata). 
-   
- 
+    
 ## Best practices when you use column security  
  When you use calculated column that include a column that is secured, data may be displayed in the calculated column to users that don't have permission to the secured column. In this situation, both the original column and the calculated column should be secured.  
   
  Some data, such as addresses, are made up of multiple columns. Therefore, to completely secure data that includes multiple columns, such as addresses, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure addresses for a table, secure all relevant address columns, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
   
-### See also  
+### Related information
 [Set up security permissions for a column](set-up-security-permissions-field.md) <br />
 [Enable or disable security for a column to control access](enable-disable-security-field.md)   <br />
 [Add teams or users to a column security profile to control access](add-teams-users-field-security-profile.md) <br />
