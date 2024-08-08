@@ -20,7 +20,7 @@ You can protect against data exfiltration by managing and controlling what apps 
 
 When this capability is enabled in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## How does app access control work?
 
