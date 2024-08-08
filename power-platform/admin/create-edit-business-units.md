@@ -41,7 +41,7 @@ Keep the following in mind when creating business units:
 
 -   Each business unit can have multiple child business units.
 
--   Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.
+-   Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit. When creating a security role, you can choose any business unit according to your business needs, or use the root business unit if there are no specific requirements.
 
 -   You can't add a user into a business unit directly. All newly provisioned users are assigned to the root business.
 
