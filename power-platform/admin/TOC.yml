@@ -284,7 +284,7 @@
                       href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
                     - name: Positions
                       href: hierarchy-security.md#position-hierarchy
-                    - name: Security roles
+                    - name: Security roles and privileges
                       href: security-roles-privileges.md
                     - name: Create a team template to control access rights
                       href: create-team-template-add-entity-form.md

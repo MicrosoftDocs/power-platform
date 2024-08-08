@@ -9,7 +9,10 @@ ms.custom:
   - "admin-security"
   - bap-template
 ms.topic: conceptual
-ms.date: 06/23/2023
+ms.date: 08/08/2024
+contributors:
+- shahzorkhan123
+
 ---
 
 # Security roles and privileges
@@ -246,10 +249,12 @@ A security role can be set to provide team members with direct Basic-level acces
 
 You can only select Basic-level privileges in the member's privilege inheritance. If you need to provide access to a child business unit, elevate the privilege to Deep. For example, you need to assign a security role to the Group team and you want the members of the group to be able to Append to Account. Set up the security role with a Basic-level member's privilege inheritance. Set the Append to Account privilege to Deep. This is because Basic privileges apply only to the user's business unit.
 
-### See also
+> [!NOTE]
+> Since July 2024, the **Team member's privilege inheritance** attribute of a role is no longer a [managed property](../alm/use-managed-properties.md). When you import a solution that has security roles, this attribute isn't included. 
 
-[Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8)  
-[Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)  
-[Predefined security roles](database-security.md#predefined-security-roles)
+### Related information
+- [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/en-us/videoplayer/embed/RWJBr8)  
+- [Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)  
+- [Predefined security roles](database-security.md#predefined-security-roles)
 
 [!INCLUDE [footer-include](../includes/footer-banner.md)]
