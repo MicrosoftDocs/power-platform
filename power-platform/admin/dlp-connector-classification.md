@@ -61,12 +61,12 @@ The following connectors can't be blocked by using DLP policies.
 
 |Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
-|Defender for Cloud Apps      | Approvals        |
-|Dynamics 365 Customer Voice      | Notifications        |
-|Excel Online (Business)     | Dataverse       |
-|Kaizala       | Dataverse (current environment)        |
-|Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
-|Microsoft 365 Groups Mail (Preview)      |         |
+|Defender for Cloud Apps      | [Approvals](/connectors/approvals/)        |
+|Dynamics 365 Customer Voice      | [Notifications](/connectors/flowpush/)        |
+|Excel Online (Business)     | [Dataverse (legacy)](/connectors/commondataservice/)       |
+|Kaizala       | [Dataverse](/connectors/commondataserviceforapps/)        |
+|Microsoft 365 Groups      | Power Apps Notifications ([v1](/connectors/powerappsnotification/) and [v2](/connectors/powerappsnotificationv2/))        |
+|Microsoft 365 Groups Mail (Preview)      | [Microsoft Copilot Studio](/connectors/powervirtualagents/)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |
 |Microsoft Teams       |      |
@@ -134,8 +134,9 @@ Any new services that are added to apps will be placed in the designated default
 > [!NOTE]
 > Microsoft 365 Enterprise license connectors and a few core Microsoft Power Platform connectors are exempt from being marked as **Blocked**, and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
 
+## Related information
 
-
-
+- [Power Platform DLP policies](/power-platform/admin/wp-data-loss-prevention)
+- [DLP policies for Power Automate](/power-automate/prevent-data-loss)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

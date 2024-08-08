@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 07/25/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
@@ -60,7 +60,7 @@ The **Restore backup to a target environment** pane shows backup details that ar
 
 ### Change the backup retention period for production environments without Dynamics 365 applications
 
-For environments that don't have Dynamics 365 applications, the default backup retention period is seven days. Admins who run production [Managed Environments](managed-environment-overview.md) of this type can use PowerShell to change the retention period to 7, 14, 21, or 28 days. To change this setting, you must have an admin role, such as Global admin, Power Platform admin, or Dynamics 365 admin, in Microsoft Entra ID.
+For environments that don't have Dynamics 365 applications, the default backup retention period is seven days. Admins who run production [Managed Environments](managed-environment-overview.md) of this type can use PowerShell to change the retention period to 7, 14, 21, or 28 days. To change this setting, you must have an admin role, such as Power Platform admin or Dynamics 365 admin in Microsoft Entra ID.
 
 Keep the following points in mind:
 
@@ -101,7 +101,7 @@ You can't restore backups to production environments. If you want to restore a s
 
 You must restore an environment in the same region where it was backed up. The target and source environments should be in the same region. When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time (t1), full audit data for the environment is available. This data includes any audit logs that were generated after t1.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using administrator credentials. Consider using the less-privileged service admin role instead of the global admin role. For more information, see [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) by using administrator credentials. For more information, see [Use the service admin role to manage your tenant](use-service-admin-role-manage-tenant.md).
 1. Go to **Environments**, select an environment, and then select **Backup & Restore** \> **Restore or manage**.
 1. On the **System** tab, look for available system backups by selecting a date and time.
 1. Select **Continue**.
