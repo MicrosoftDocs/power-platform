@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 12/12/2022
 author: Zeffin
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -138,7 +138,7 @@ exceptions
 The entity ID and entity name are available in **customDimensions** in the **dependency** table.
 
 ```kusto
-dependencies<br />
+dependencies
 | where type == "SDK Retrieve"
 ```
 

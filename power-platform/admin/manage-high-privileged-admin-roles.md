@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 08/07/2024
 search.audienceType: admin
 
 ---
@@ -18,32 +18,27 @@ search.audienceType: admin
 
 Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
-
 ## Prerequisites
 
 - Remove old system administrator role assignments in your environments. You can use [PowerShell scripts](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement) to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environments.
 
 ## Changes to feature support
 
-Microsoft doesn't automatically assign the **System Administrator** role for users with these Microsoft Entra ID roles (also called tenant admins):
+Microsoft no longer automatically assigns the **System Administrator** role to users with global or service level admin roles such as Power Platform Administrator and Dynamics 365 Administrator.
 
-- Global administrator
-- Power Platform administrator
-- Dynamics 365 administrator
-
-Tenant admins can continue to sign in, to the Power Platform admin center, with these privileges:
+These admins can continue to sign in, to the Power Platform admin center, with these privileges:
 
 - Enable or disable tenant level settings
 - View analytics information for environments
 - View capacity consumption
 
-Tenant admins can't perform activities that require direct access to Dataverse data. Examples of these activities include:
+These admins can't perform activities that require direct access to Dataverse data without a license. Examples of these activities include:
 
 - Updating the security role for a user in an environment
 - Installing apps for an environment
 
 > [!IMPORTANT]
-> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
+> Global admins, Power Platform admins, and Dynamics 365 service administrators must complete another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
 
 ## Known limitations
 
