@@ -52,10 +52,6 @@ Avoid jargon and acronyms. Even most software engineers prefer simple, non-techn
 
 Replace overly technical words with simpler ones. Words like "configure," "activate," or "invalid" are unnecessarily technical. Keep it simple. Only use acronyms your users are familiar with. Spell out acronyms on the first mention on each page and include the parenthetic reference. For example, "call to action (CTA)." If the spelled-out version of an acronym exceeds a character limit, consider writing around the phrase.
 
-<!--
-Not sure what we mean by "writing around the phrase"
--->
-
 Avoid double negatives. Double negatives increase cognitive load—they make people spend extra time decoding the message. Focus on direct, positive actions.
 
 ### Use a polite and friendly tone

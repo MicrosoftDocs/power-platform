@@ -69,6 +69,10 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 
 **Implement and communicate the design improvements** by applying the changes and modifications that were suggested by the test results and analysis, and by documenting and sharing the design process and outcomes with the relevant stakeholders. Update and improve the workload based on the user feedback and data, to ensure the workload meets user expectations and goals. Create and deliver design artifacts and deliverables that demonstrate the design solutions and rationale, such as wireframes, mockups, prototypes, and specifications. Implementation and communication should be used to finalize and launch the workload and to showcase the design value and impact.
 
+## Power Platform facilitation
+
+**Analyze copilot performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) give you a broad overview of your copilot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is crucial to measure the copilot performance metrics, and discover areas for improvements.
+
 ## Experience Optimization checklist
 
 Refer to the complete set of recommendations.
