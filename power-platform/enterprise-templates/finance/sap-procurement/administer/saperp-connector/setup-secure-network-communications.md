@@ -23,36 +23,22 @@ ms.subservice: solution-templates
 
 # Set up Secure Network Communications (SNC) for SAP and Power Platform
 
-Learn how to create a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
+This guide walks you through setting up a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
 
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
-## In this article
+# Pre-Requisites
 
-After completing this guide, you'll be able to:
+ 1. [Setup SAP Connection via Getting Started Guide](getting-started-with-the-sap-erp-connector.md)
+ 1. Access to an SAP instance that you can restart and administer
+ 1. SAP GUI installed and set up
+ 1. OpenSSL installed.
+    - If you have Git for Windows, you can use the `openssl` command by adding `C:\Program Files\Git\usr\bin\` to your system PATH
 
-- Install and set up SAP Common Crypto
-- Generate certificates for secure communication
-- Configure SAP for SNC
-- Set up the OPDG for SNC communication
-- Test the secure connection between OPDG and SAP
+## Install SAP Common Crypto Library
 
-## Before you start
-
-Make sure you have:
-
-- An S-User account on SAP's website
-- A Windows machine with the latest [On-premises Data Gateway (OPDG)](https://aka.ms/opdg) installed
-- Access to an SAP instance that you can restart and administer
-- SAP GUI installed and set up
-- OpenSSL installed:
-  - If you have Git for Windows, you can use the `openssl` command in Git Bash
-  - Add `C:\Program Files\Git\usr\bin\` to your system PATH
-
-## Install SAP Common Crypto
-
-SAP Common Crypto enables encrypted communication between OPDG and SAP. Here's how to install it:
+SAP Common Crypto Library enables NCO to encrypt encrypted communication between the OPDG and SAP. To extract the library we will need a proprietary decompression utility called `SAPCAR`.
 
 ### Get SAPCAR
 
@@ -61,25 +47,25 @@ SAP Common Crypto enables encrypted communication between OPDG and SAP. Here's h
 3. Choose your operating system.
 4. Download the .EXE file to `C:\sap\SAR`.
 
-### Get SAP Common Crypto
+### Get SAP Common Crypto Library
 
 1. In the SAP Software Center, search for "COMMONCRYPTOLIB".
-2. Select "COMMONCRYPTOLIB 8".
+2. Select the latest version.
 3. Choose your operating system.
 4. Download the .SAR file with the most recent release date to `C:\sap\SAR`.
 
 ### Extract SAP Common Crypto
 
 1. Open PowerShell and go to `C:\sap\SAR`.
-2. Run this command:
+2. Run the following command, replacing parts of it with your own values:
    ```powershell
-   .\SAPCAR_1200-70007719.EXE -xvf .\SAPCRYPTOLIBP_8553-20011729.SAR -R .\..\libs\sapcryptolib
+   .\SAPCAR_xxxx.EXE -xvf .\SAPCRYPTOLIBP_xxxx.SAR -R .\..\libs\sapcryptolib
    ```
-3. Check that `sapgenpse.exe` is in `C:\sap\libs\sapcryptolib`.
+3. Check that `sapgenpse.exe` is in `C:\sap\libs\sapcryptolib` folder.
 
 ## Generate certificates
 
-This will establish a trust between your OPDG and the SAP box which will allow the data to be sent back and forth in an encrypted format.
+Certificate establish trust and encryption between your OPDG and the SAP box.
 
 > [!WARNING]
 > This method is for demo purposes and not recommended for production systems.
@@ -87,7 +73,7 @@ This will establish a trust between your OPDG and the SAP box which will allow t
 
 ### Certificate structure
 
-Here's how the certificates will be structured:
+In this example our certificates will be structured as follows. This article specifically focuses on setting up the blue boxes.
 
 ```mermaid
 flowchart TD
@@ -104,34 +90,52 @@ flowchart TD
 
 ### Create certificates
 
+
 1. Set up the folder structure:
    ```powershell
    mkdir rootCA
    mkdir sncCert
-   echo 1000 > serial
-   New-Item index.txt -ItemType File
+   
+   # Create the necessary serial and index files if they don't exist
+   if (-Not (Test-Path "rootCA\index.txt")) { New-Item -Path "rootCA\index.txt" -ItemType File }
+   if (-Not (Test-Path "rootCA\serial")) { Set-Content -Path "rootCA\serial" -Value "01" }
    ```
 
-2. Generate a Root CA:
+1. Generate a Root CA:
    ```powershell
    openssl genpkey -algorithm RSA -out rootCA/ca.key.pem -pkeyopt rsa_keygen_bits:2048
    openssl req -x509 -new -key rootCA/ca.key.pem -days 7305 -sha256 -extensions v3_ca -out rootCA/ca.cert.pem -subj "/O=Contoso/CN=Root CA"
    ```
 
-3. Generate the SNC certificate:
+1. Generate the SNC certificate:
    ```powershell
    openssl genrsa -out sncCert/snc.key.pem 2048
    openssl req -key sncCert/snc.key.pem -new -sha256 -out sncCert/snc.csr.pem -subj "/O=Contoso/CN=SNC"
    ```
 
-4. Sign the SNC certificate with the Root CA:
-   ```powershell
-   openssl x509 -req -in sncCert/snc.csr.pem -days 3650 -CA rootCA/ca.cert.pem -CAkey rootCA/ca.key.pem -CAcreateserial -out sncCert/snc.cert.pem
+1. Create an OpenSSL configuration file for signing:
+   `sncCert/extensions.cnf`
+   ```
+   [ v3_leaf ]
+   subjectKeyIdentifier = hash
+   authorityKeyIdentifier = keyid,issuer
+   basicConstraints = critical,CA:false
+   keyUsage = critical,digitalSignature,keyEncipherment,dataEncipherment
+   extendedKeyUsage = clientAuth,emailProtection
    ```
 
-5. Verify the SNC certificate:
+1. Sign the SNC certificate with the Root CA:
    ```powershell
-   openssl x509 -in sncCert\snc.cert.pem -text
+   openssl x509 -req `
+      -in sncCert/snc.csr.pem `
+      -CA rootCA/ca.cert.pem `
+      -CAkey rootCA/ca.key.pem `
+      -CAcreateserial `
+      -out sncCert/snc.cert.pem `
+      -days 3650 `
+      -sha256 `
+      -extfile sncCert\extensions.cnf `
+      -extensions v3_leaf
    ```
 
 ## Create a PSE for the OPDG
@@ -235,7 +239,6 @@ This is a secure container that the NCo library pulls the SNC certificate from.
 Now that you've set up SNC between your On-premises Data Gateway and SAP system, you can:
 
 - Implement SNC in your production environment
-- Learn about X.509 user authentication for SAP
-- Explore advanced SNC configuration options
+- Learn about Microsoft Entra ID using certificates(X.509 user authentication) for SAP
 
 By following this guide, you've created a fully encrypted connection between your On-premises Data Gateway and SAP system. This enhances the security of your SAP integration with Microsoft Power Platform.

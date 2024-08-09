@@ -48,11 +48,12 @@ Create the proper extension files:
 
 `signingUsersCert/extensions.cnf`
 ```
-[ v3_ca ]
-subjectKeyIdentifier=hash
-authorityKeyIdentifier=keyid:always,issuer
-basicConstraints = critical,CA:true,pathlen:0
-keyUsage = cRLSign, keyCertSign
+[ v3_leaf ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer
+basicConstraints = critical,CA:false
+keyUsage = critical,digitalSignature,keyEncipherment,dataEncipherment
+extendedKeyUsage = clientAuth,emailProtection
 ```
 
 `userCerts/extensions.cnf`
@@ -66,10 +67,6 @@ extendedKeyUsage = clientAuth
 
 Create the nessesary index.txt and serial files to keep track of certificates signed.
 ```
-# Create the necessary serial and index files if they don't exist
-if (-Not (Test-Path "rootCA\index.txt")) { New-Item -Path "rootCA\index.txt" -ItemType File }
-if (-Not (Test-Path "rootCA\serial")) { Set-Content -Path "rootCA\serial" -Value "0001" }
-
 # Create the necessary serial and index files if they don't exist
 if (-Not (Test-Path "signingUsersCert\index.txt")) { New-Item -Path "signingUsersCert\index.txt" -ItemType File }
 if (-Not (Test-Path "signingUsersCert\serial")) { Set-Content -Path "signingUsersCert\serial" -Value "0001" }
