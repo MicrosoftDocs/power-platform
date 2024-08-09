@@ -79,7 +79,7 @@ SAP Common Crypto enables encrypted communication between OPDG and SAP. Here's h
 
 ## Generate certificates
 
-Create a certificate structure for secure communication.
+This will establish a trust between your OPDG and the SAP box which will allow the data to be sent back and forth in an encrypted format.
 
 > [!WARNING]
 > This method is for demo purposes and not recommended for production systems.
@@ -106,7 +106,8 @@ flowchart TD
 
 1. Set up the folder structure:
    ```powershell
-   mkdir rootCA sncCert
+   mkdir rootCA
+   mkdir sncCert
    echo 1000 > serial
    New-Item index.txt -ItemType File
    ```
@@ -135,6 +136,8 @@ flowchart TD
 
 ## Create a PSE for the OPDG
 
+This is a secure container that the NCo library pulls the SNC certificate from.
+
 1. Create a PKCS#12 container:
    ```powershell
    openssl pkcs12 -export -out snc.p12 -inkey sncCert\snc.key.pem -in sncCert\snc.cert.pem -certfile rootCA\ca.cert.pem
@@ -145,7 +148,7 @@ flowchart TD
    - Select "Environment Variables"
    - Under "System variables", select "New"
    - Set Variable name to "SECUDIR"
-   - Set Variable value to "C:\sap\libs\sapcryptolib"
+   - Set Variable value to "C:\sapsecudir"
    - Select "OK" to save
 
 3. Import the PKCS#12 container into a PSE:
@@ -156,9 +159,9 @@ flowchart TD
 ## Set up SAP for SNC
 
 1. Sign in to SAP GUI.
-2. Go to transaction code SNC0.
+2. Go to transaction code `SNC0`.
 3. Enter `E` as the work area.
-4. Select "New Entry" from the top bar and fill in the required information.
+4. Select `New Entry` from the top bar and fill in the required information.
    ![SAP GUI Screen Cap Of SNC: Access Control List for Systems](~/assets/images/Pasted%20image%2020240208144512.png)
 5. Select the "Save" icon.
 6. Return to the SAP GUI home screen.
@@ -176,7 +179,7 @@ flowchart TD
    snc/permit_insecure_start: 1
    snc/data_protection/max: 3
    ```
-9. Save the profile parameters and restart your SAP instance.
+9. Save the profile parameters and restart your SAP system.
 
 ## Exchange certificates between SAP and OPDG
 

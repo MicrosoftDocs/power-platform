@@ -1,5 +1,5 @@
 ---
-title: Get started with the SAP ERP connector for Power Platform
+title: Get started with the SAP ERP connector
 description: The SAP ERP connector for Power Platform helps you seamlessly integrate your SAP systems with Microsoft Power Platform. This guide walks you through setting up the connector so you can start creating flows that work with your SAP environment.
 author: ryanb58
 ms.author: ryanb58
@@ -21,68 +21,66 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Get started with the SAP ERP connector for Power Platform
+# Get started with the SAP ERP connector
 
 The SAP ERP connector for Power Platform helps you seamlessly integrate your SAP systems with Microsoft Power Platform. This guide walks you through setting up the connector so you can start creating flows that work with your SAP environment.
 
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
-## What you'll need
+## Prerequisite
 
-Before you begin, make sure you have:
+Before you begin, make sure you meet the requirements defined in the [SAP ERP Connector documentation](https://learn.microsoft.com/en-us/connectors/saperp/#pre-requisites).
 
-- Access to Microsoft Power Platform
-- An SAP system
-- Admin rights on a Windows virtual machine (VM)
-- An SAP S-User account
+## Setup your on-premises data gateway (OPDG)
 
-## Set up the on-premises data gateway
+[Download](https://aka.ms/opdg) and [install](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway on your Windows VM.
 
-1. Download and install the [on-premises data gateway](https://aka.ms/opdg) on your Windows VM.
-2. Launch the installer and follow these steps:
-   - Accept the terms of use
-   - Sign in with your Power Platform account
-   - Select **Register a new gateway**
-   - Name your gateway (for example, "SAP-Gateway")
-   - Create a recovery key
+Verify your Windows VM can access your SAP instance.
 
-## Check your gateway connection
+```powershell
+telnet sap.example.com 3300
+```
 
-1. Open the Power Platform admin center.
-2. Go to **Gateways**.
-3. Find your new gateway.
-4. Make sure the status shows as "Online".
+## Install the SAP .NET connector(NCo) onto the OPDG Windows VM
 
-## Install the SAP .NET connector
+This enables the OPDG to communicate with your SAP system.
 
-1. Go to the [SAP Support Portal](https://support.sap.com/en/product/connectors/msnet.html) and download the SAP Connector for Microsoft .NET.
-2. Select the .NET Standard 64-bit version.
-3. Run the installer.
-4. Make sure to select "SAP .NET Connector for Microsoft .NET" during installation.
+1. Go to the [SAP Support Portal](https://support.sap.com/en/product/connectors/msnet.html) and download the SAP Connector for Microsoft .NET to your Windows VM.
+1. Select the .NET Standard 64-bit version.
+1. Run the installer.
+1. Make sure "SAP .NET Connector for Microsoft .NET" is checked during installation.
 
 ## Restart the gateway service
 
 1. Open the On-premises data gateway app.
-2. Select **Service Settings**.
-3. Select **Restart now**.
+1. Select **Service Settings**.
+1. Select **Restart now**.
+
+## Verify Power Platform to OPDG Connection
+
+1. Open the Power Platform Portal(Power Apps or Power Automate).
+1. Select **Gateways** from the left panel.
+1. Find and select your new gateway from the list.
+1. Make sure the status shows as "Online".
 
 ## Create a flow with the SAP ERP connector
 
-1. Open Power Automate.
-2. Create a new flow.
-3. Add the "Call SAP function (V3)" action.
-4. Set up a new connection:
+1. Create a new flow.
+1. Search for the `SAP ERP` Connector
+1. Add a `Call SAP function (V3)` action to the flow.
+1. Set up a new connection:
    - Name your connection (for example, "SAP-Test-Connection")
-   - For Authentication Type, select **Basic**
+   - For Authentication Type, select `Basic`
    - Choose your on-premises data gateway
    - Enter your SAP username and password
 
 ## Set up and test the SAP action
 
-1. In your flow, select an SAP function (for example, "Call function module").
-2. For the SAP System, enter this JSON data (replace with your own values):
+1. In your flow, select the `Call SAP function` to open the panel.
+1. For the `SAP System`, enter your config values as JSON data (replace with your own values). For more parameter options please see the [documentation](https://learn.microsoft.com/en-us/connectors/saperp/#call-sap-function-(v3)-(preview)).
 
+   e.g.
    ```json
    {
      "AppServerHost": "sap.example.com",
@@ -92,16 +90,16 @@ Before you begin, make sure you have:
    }
    ```
 
-3. For RFC Name, enter `STFC_CONNECTION`.
-4. Wait for the input parameters to load.
-5. Enter a test sentence for the required `REQUTEXT` parameter.
-6. Save your flow.
-7. Select **Test** to run your flow.
+1. For `RFC Name`, enter `STFC_CONNECTION`.
+1. Wait for the input parameters to load.
+1. Enter a test sentence for the required `REQUTEXT` parameter.
+1. Save your flow.
+1. Finally, select **Test** to try out your flow.
 
 ## Troubleshooting tips
 
-- If you see a "SAP Library load failure" error, make sure you've installed the SAP .NET Connector correctly and restarted the gateway service.
-- For connection issues, double-check your SAP credentials and system ID.
+- If you see a "SAP Library load failure" error, make sure you've installed the SAP .NET Connector correctly and restarted the OPDG.
+- For connection issues, double-check your SAP credentials and System ID.
 - Remember that the first connection may take up to 2 minutes to establish.
 
 ## Next steps
