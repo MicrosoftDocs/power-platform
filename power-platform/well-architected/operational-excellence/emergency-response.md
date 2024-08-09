@@ -91,7 +91,7 @@ The first step in issue remediation is to identify the component of the workload
 
 ### Root cause analysis reporting
 
-The incident owner or someone who worked closely with them should create the root cause aAnalysis (RCA) reports. This strategy ensures an accurate accounting of the incident. Typically, organizations have a defined RCA template with guidelines about how information is presented and what kinds of information can or can't be shared. If you need to create your own template and guidelines, ensure that they are reviewed and approved by stakeholders.
+The incident owner or someone who worked closely with them should create the root cause analysis (RCA) reports. This strategy ensures an accurate accounting of the incident. Typically, organizations have a defined RCA template with guidelines about how information is presented and what kinds of information can or can't be shared. If you need to create your own template and guidelines, ensure that they are reviewed and approved by stakeholders.
 
 ### Incident postmortems
 
@@ -116,6 +116,8 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 - Connect your [canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights). You can use these analytics to diagnose issues and understand what users do with your apps. You can collect information to help you drive better business decisions and improve the quality of your apps.
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. For example, to monitor cloud flow executions and create alerts for cloud-flow run failures.
+
+- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations and custom telemetry events that can be sent from your topics.
 
 Application Insights is a comprehensive solution for collecting, analyzing, and responding to monitoring data from cloud and on-premises environments. It includes a robust alerting platform that you can configure for [automatic notifications and other actions](/azure/azure-monitor/alerts/action-groups).
 

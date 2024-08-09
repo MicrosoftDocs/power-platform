@@ -88,14 +88,8 @@ Power Automate Approvals (out of the box) or the Approvals Kit (custom solution)
 
 ## See also
 
-- [Recommendations for designing a reliability testing strategy](/azure/well-architected/reliability/testing-strategy)
-- [Recommendations for designing a reliable scaling strategy](/azure/well-architected/reliability/scaling)
-- [Recommendations for self-healing and self-preservation](/azure/well-architected/reliability/self-preservation)
 - [Environment Request Management](/power-platform/guidance/coe/setup-environment-components), part of the CoE Starter Kit
-- Approvals Kit
-<!--
-Need link for Approvals Kit, best to include it in the Power Platform facilitation section
--->
+- [Business approvals templates](/power-automate/guidance/business-approvals-templates/introduction)
 
 ## Operational Excellence checklist
 

@@ -116,6 +116,8 @@ Require your workload team to understand the security practices related to devel
 
 [Power CAT Code Review Tool](https://github.com/microsoft/powerapps-tools/tree/master/Tools/Apps/Microsoft.PowerApps.CodeReview) allows you to perform code reviews.
 
+[Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) allows you to configure copilots and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the copilot responses are evaluated against expected results.
+
 [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open-source tool that consists of a set of applications, scripts, and pipelines designed to automate the continuous integration/continuous delivery process.
 
 [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction) (PAC CLI) is a command-line tool that supports, among other things, the import and export of Power Platform Solutions, and packing to and unpacking from Power Platform Solutions source files. PAC CLI is available as a [standalone command line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).

@@ -67,13 +67,13 @@ When you identify key metrics to focus on, consider metrics related to availabil
 
 - _Response time:_ Latency and load time are common response time metrics. Latency is the time it takes to respond to a request (200 milliseconds). Load time is the time it takes for an application or web page to be interactive. A common target is 99% of customer lookup requests completing in less than 2 seconds.
 
-- _Deflection rate:_ In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI and CSAT, and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
+- _Deflection rate:_ In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
 
 ### Set specific targets
 
 After you identify the key metrics, you need to specify performance targets or thresholds for each metric. Performance targets should be measurable, realistic, and aligned with your workload objectives. For example, you might set a target response time of less than 500 milliseconds (ms) or a target error rate of less than 1 percent. 
 
-Avoid qualitative assessments of performance. For example, your users have different opinions on what fast or slow means. Stakeholders need to agree on what "fast" means and on how to measure it. 
+Avoid qualitative assessments of performance. For example, your users have different opinions on what fast or slow means. Stakeholders need to agree on what "fast" means and on how to measure it.
 
 By using numerical targets, you can objectively assess performance over time. As you set specific performance targets, consider these recommendations:
 
