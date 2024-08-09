@@ -138,7 +138,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website id",
+        "description": "Get website details from Website Id",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
