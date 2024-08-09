@@ -124,6 +124,15 @@ While the system should be intuitive enough to use without documentation, there 
 
 ## Power Platform facilitation
 
+Copilot-powered experiences for end-users in Power Apps can help end-users discover insights in conversation instead of mouse-clicks:
+
+- [Add a Chatbot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-chatbot)
+- [Add a Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot)
+- [Add a custom Copilot to a canvas app](/power-apps/maker/canvas-apps/add-custom-copilot)
+- [Add copilot for app users in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
+- [Filter, sort, and search galleries with Copilot](/power-apps/user/smartgrid)
+- [Draft well-written input text with Copilot](/power-apps/user/well-written-input-text-copilot)
+
 For canvas apps, you can indicate progress and loading states with the [progress bar](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-progress-bar) and [spinner](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-spinner) modern controls. Use the [badge control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) to display status information.
 
 Implement robust error handling in canvas apps on the client [using Power Fx expressions related to errors](/power-platform/power-fx/reference/function-iferror). Define custom server-side errors with Power Fx using [low-code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors), which include pre-operation validation.
