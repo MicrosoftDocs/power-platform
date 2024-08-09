@@ -266,7 +266,7 @@ One of the key features of Dataverse is its rich security model that can adapt t
 
 Copilot Studio supports several authentication options. Choose the one that meets your needs. Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with Microsoft Entra ID, or with any OAuth2 identity provider such as Google or Facebook. Learn more: [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication)
 
-With [Direct Line-based security](microsoft-copilot-studio/configure-web-security), you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
+With [Direct Line-based security](/microsoft-copilot-studio/configure-web-security), you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
 
 Copilot Studio supports single sign-on (SSO), which means copilots can sign the user in.
 SSO needs to be implemented on your web pages, mobile applications. For Microsoft Teams, SSO is seamless if you select the “Only in Teams” authentication. It can also be configured with Manual AAD v2, but in this case the Teams app must be deployed as a zip file, not with the 1-click Teams deployment from Copilot Studio.
