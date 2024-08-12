@@ -167,8 +167,7 @@ Select option `DN` when prompted for `Type of ACL`.
 
 Choose `New Entry` and enter `CN=TESTUSER01@CONTOSO.COM` (replacing the content for your own UPN) for the external ID. Make sure CN comes first. Select your UPN for the username field; and last Check the `Activated` option and save the results.
 
-> ![IMPORTANT]
-> DO NOT INCLUDE '**p:**' prefix.
+> DO NOT INCLUDE `p:` prefix.
 
 ### Mapping X.509 Certificates to Users Using Rules
 
@@ -176,8 +175,7 @@ Use Certificate Rules to easy bulk map Entra ID users to SAP users.
 
 Ensure the `login/certificate_mapping_rulebased` profile parameter is set to a current value of `1`.
 
-> ![NOTE]
->	Alert that this will not be persisted between restarts.
+> Method does not persisted setting between restarts.
 
 Then created the following rule in t-code `CERTRULE`
 
