@@ -4,7 +4,7 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/27/2023
+ms.date: 08/12/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -41,7 +41,7 @@ Keep the following in mind when creating business units:
 
 -   Each business unit can have multiple child business units.
 
--   Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.
+-   Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit. When creating a security role, you can choose any business unit according to your business needs, or use the root business unit if there are no specific requirements.
 
 -   You can't add a user into a business unit directly. All newly provisioned users are assigned to the root business.
 
