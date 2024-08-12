@@ -153,11 +153,6 @@ Check subject name of certificate in the Windows Certificate Store
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
 ```
 
-View certs in .p12 file.
-```powershell
-openssl pkcs12 -nokeys -info -in .\user_signing_cert.p12
-```
-
 ## Entra ID to SAP User Mapping
 
 ### Mapping X.509 Certificates to Users Explicitly
