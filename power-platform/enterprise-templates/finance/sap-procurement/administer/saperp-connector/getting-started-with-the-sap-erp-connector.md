@@ -30,11 +30,11 @@ The SAP ERP connector for Power Platform helps you seamlessly integrate your SAP
 
 ## Prerequisites
 
-Before you begin, make sure you meet the requirements defined in the [SAP ERP Connector documentation](https://learn.microsoft.com/en-us/connectors/saperp/#pre-requisites).
+Before you begin, make sure you meet the requirements defined in the [SAP ERP Connector documentation](https://learn.microsoft.com/connectors/saperp/#pre-requisites).
 
 ## Setup your on-premises data gateway (OPDG)
 
-[Download](https://aka.ms/opdg) and [install](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway on your Windows VM.
+[Download](https://aka.ms/opdg) and [install](https://learn.microsoft.com/data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) the on-premises data gateway on your Windows VM.
 
 Verify your Windows VM can access your SAP instance.
 
@@ -78,7 +78,7 @@ This enables the OPDG to communicate with your SAP system.
 ## Set up and test the SAP action
 
 1. In your flow, select the `Call SAP function` to open the panel.
-1. For the `SAP System`, enter your config values as JSON data (replace with your own values). For more parameter options please see the [documentation](https://learn.microsoft.com/en-us/connectors/saperp/#call-sap-function-(v3)-(preview)).
+1. For the `SAP System`, enter your config values as JSON data (replace with your own values). For more parameter options please see the [documentation](https://learn.microsoft.com/connectors/saperp/#call-sap-function-(v3)-(preview)).
 
    e.g.
    ```json
