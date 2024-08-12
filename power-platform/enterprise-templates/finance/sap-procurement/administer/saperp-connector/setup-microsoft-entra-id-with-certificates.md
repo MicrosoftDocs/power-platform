@@ -2,7 +2,7 @@
 title: Set up Microsoft Entra ID (with certificates) - Single Sign-On
 description: This guide will walk you through setting up the connector so your users can access SAP data and perform RFC calls in the Power Platform using their Microsoft Entra ID for authentication.
 author: ryanb58
-ms.author: ryanb58
+ms.author: tbrazelton
 contributors:
   - robinsonshields
   - microsoft-george
@@ -28,7 +28,7 @@ This guide will walk you through setting up the connector so your users can acce
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
-# Pre-Requisites
+# Prerequisites
  1. [Setup SAP Connection](getting-started.md)
  2. [Setup SNC](setup-snc.md)
 
@@ -48,12 +48,11 @@ Create the proper extension files:
 
 `signingUsersCert/extensions.cnf`
 ```
-[ v3_leaf ]
-subjectKeyIdentifier = hash
-authorityKeyIdentifier = keyid,issuer
-basicConstraints = critical,CA:false
-keyUsage = critical,digitalSignature,keyEncipherment,dataEncipherment
-extendedKeyUsage = clientAuth,emailProtection
+[ v3_ca ]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer
+basicConstraints = critical,CA:true,pathlen:0
+keyUsage = cRLSign, keyCertSign
 ```
 
 `userCerts/extensions.cnf`

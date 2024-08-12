@@ -2,7 +2,7 @@
 title: Get started with the SAP ERP connector
 description: The SAP ERP connector for Power Platform helps you seamlessly integrate your SAP systems with Microsoft Power Platform. This guide walks you through setting up the connector so you can start creating flows that work with your SAP environment.
 author: ryanb58
-ms.author: ryanb58
+ms.author: tbrazelton
 contributors:
   - robinsonshields
   - microsoft-george
@@ -28,7 +28,7 @@ The SAP ERP connector for Power Platform helps you seamlessly integrate your SAP
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
-## Prerequisite
+## Prerequisites
 
 Before you begin, make sure you meet the requirements defined in the [SAP ERP Connector documentation](https://learn.microsoft.com/en-us/connectors/saperp/#pre-requisites).
 

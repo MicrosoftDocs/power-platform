@@ -2,7 +2,7 @@
 title: Set up Secure Network Communications (SNC) for SAP and Power Platform
 description: Learn how to create a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
 author: ryanb58
-ms.author: ryanb58
+ms.author: tbrazelton
 contributors:
   - robinsonshields
   - microsoft-george
@@ -28,7 +28,7 @@ This guide walks you through setting up a secure encrypted connection between th
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
-# Pre-Requisites
+## Prerequisites
 
  1. [Setup SAP Connection via Getting Started Guide](getting-started-with-the-sap-erp-connector.md)
  1. Access to an SAP instance that you can restart and administer
@@ -166,7 +166,7 @@ This is a secure container that the NCo library pulls the SNC certificate from.
 2. Go to transaction code `SNC0`.
 3. Enter `E` as the work area.
 4. Select `New Entry` from the top bar and fill in the required information.
-   ![SAP GUI Screen Cap Of SNC: Access Control List for Systems](~/assets/images/Pasted%20image%2020240208144512.png)
+   ![SAP GUI Screen Cap Of SNC: Access Control List for Systems](./media/setup-secure-network-communications/sap-snc-access-controll-list-for-systems.png)
 5. Select the "Save" icon.
 6. Return to the SAP GUI home screen.
 7. Go to transaction code RZ10.
@@ -195,7 +195,7 @@ This is a secure container that the NCo library pulls the SNC certificate from.
 4. Select "Import Certificate" and choose your `sncCert\snc.cert.pem` file.
 5. Select "Add to Certificate List".
 
-   ![STRUST Add Certificate](~/assets/images/Pasted_image_20240207113302.png)
+   ![STRUST Add Certificate](./media/setup-secure-network-communications/sap-strust-add-to-certificate-list.png)
 
 ### Add SAP's SNC certificate to OPDG
 
@@ -203,7 +203,7 @@ This is a secure container that the NCo library pulls the SNC certificate from.
 2. Double-click "SNC SAPCryptolib" and then double-click your Own Certificate.
 3. Export the public certificate.
 
-   ![Export Public Certificate](~/assets/images/Pasted_image_20240223162554.png)
+   ![STRUST Add Certificate](./media/setup-secure-network-communications/sap-strust-add-to-certificate-list.png)
 
 4. Move the public cert to your OPDG machine (e.g., `C:\sap\contoso-public-key.crt`).
 5. Import the certificate into your OPDG's PSE:
@@ -232,7 +232,7 @@ This is a secure container that the NCo library pulls the SNC certificate from.
    ```
 4. Test the connection using the `STFC_CONNECTION` RFC function.
 
-   ![Test Connection](~/assets/images/Pasted_image_20240223164854.png)
+   ![Test Connection](./media/setup-secure-network-communications/sap-stfc_connection-response-in-power-automate.png)
 
 ## Next steps
 
