@@ -42,18 +42,7 @@ We will generate an example self signed root certificate similar to those provid
 
 Extending the [Setup Secure Network Communication](./setup-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
 
-```mermaid
-flowchart TD
-    classDef defaultStyle fill:#fff,stroke:#333,stroke-width:1px,color:black;
-    classDef highlightStyle fill:#8df,stroke:#333,stroke-width:2px,color:black;
-    RootCA["Root CA [O=Contoso, CN=Root CA]"] --> SNCCert["Encryption Cert [O=Contoso, CN=SNC]"]
-    RootCA --> UsersCert["Signing Cert [O=Contoso, CN=Users]"]
-    UsersCert --> U1[UserID: testuser01]
-    UsersCert --> U2[UserID testuser02]
-    UsersCert --> U3[UserID testuser03]
-    class UsersCert,U1,U2,U3 highlightStyle;
-    class RootCA,SNCCert defaultStyle;
-```
+![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
 Create the folder structure.
 

@@ -76,18 +76,7 @@ Certificate establish trust and encryption between your OPDG and the SAP box.
 
 In this example, our certificates are structured as follows. This article specifically focuses on setting up the blue boxes.
 
-```mermaid
-flowchart TD
-    classDef defaultStyle fill:#fff,stroke:#333,stroke-width:1px,color:black;
-    classDef highlightStyle fill:#8df,stroke:#333,stroke-width:2px,color:black;
-    RootCA["Root CA [O=Contoso, CN=Root CA]"] --> SNCCert["Encryption Cert [O=Contoso, CN=SNC]"]
-    RootCA --> UsersCert["Signing Cert [O=Contoso, CN=Users]"]
-    UsersCert --> U1[UserID: testuser01]
-    UsersCert --> U2[UserID testuser02]
-    UsersCert --> U3[UserID testuser03]
-    class UsersCert,U1,U2,U3 defaultStyle;
-    class RootCA,SNCCert highlightStyle;
-```
+![Flow Chart of demo PKI](./media/setup-secure-network-communications/fc-pki-demo.svg)
 
 ### Create certificates
 
