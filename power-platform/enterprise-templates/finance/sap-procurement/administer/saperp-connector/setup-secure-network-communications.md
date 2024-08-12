@@ -38,7 +38,7 @@ This guide walks you through setting up a secure encrypted connection between th
 
 ## Install SAP Common Crypto Library
 
-SAP Common Crypto Library enables NCO to encrypt encrypted communication between the OPDG and SAP. To extract the library we will need a proprietary decompression utility called `SAPCAR`.
+SAP Common Crypto Library enables NCo to encrypt encrypted communication between the OPDG and SAP. To extract the library, we need a proprietary decompression utility called `SAPCAR`.
 
 ### Get SAPCAR
 
@@ -73,7 +73,7 @@ Certificate establish trust and encryption between your OPDG and the SAP box.
 
 ### Certificate structure
 
-In this example our certificates will be structured as follows. This article specifically focuses on setting up the blue boxes.
+In this example, our certificates are structured as follows. This article specifically focuses on setting up the blue boxes.
 
 ```mermaid
 flowchart TD
@@ -138,9 +138,9 @@ flowchart TD
       -extensions v3_leaf
    ```
 
-## Create a PSE for the OPDG
+## Create a Personal Secure Environment (PSE) for the OPDG
 
-This is a secure container that the NCo library pulls the SNC certificate from.
+The NCo library will look for the SNC certificate inside of the PSE.
 
 1. Create a PKCS#12 container:
    ```powershell
@@ -205,7 +205,7 @@ This is a secure container that the NCo library pulls the SNC certificate from.
 
    ![STRUST Add Certificate](./media/setup-secure-network-communications/sap-strust-add-to-certificate-list.png)
 
-4. Move the public cert to your OPDG machine (e.g., `C:\sap\contoso-public-key.crt`).
+4. Move the public cert to your OPDG machine (for example, `C:\sap\contoso-public-key.crt`).
 5. Import the certificate into your OPDG's PSE:
    ```powershell
    C:\sap\libs\sapcryptolib\sapgenpse.exe maintain_pk -p SAPSNCSKERB.pse -v -a C:\pki-certs\sncCert\sapkerb.public.cert
@@ -236,9 +236,9 @@ This is a secure container that the NCo library pulls the SNC certificate from.
 
 ## Next steps
 
-Now that you've set up SNC between your On-premises Data Gateway and SAP system, you can:
+Now, SNC is established between your On-premises Data Gateway and SAP system, you can:
 
 - Implement SNC in your production environment
 - Learn about Microsoft Entra ID using certificates(X.509 user authentication) for SAP
 
-By following this guide, you've created a fully encrypted connection between your On-premises Data Gateway and SAP system. This enhances the security of your SAP integration with Microsoft Power Platform.
+By following this guide, you establish a fully encrypted connection between your On-premises Data Gateway and SAP system, enhancing the security of your SAP integration with Microsoft Power Platform.

@@ -132,7 +132,7 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
 1.  Import the Root CA(cert only)
 	1. Import into "Trusted Root Certification Authorities"
 2. Import the User Certificate + Key
-	- In the Certificate Manager, navigate to the appropriate certificate store (e.g., Personal).
+	- In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
 	- Right-click and select `All Tasks > Import`.
 	- Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG can use it to encrypt data.
 	- Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.

@@ -80,7 +80,7 @@ This enables the OPDG to communicate with your SAP system.
 1. In your flow, select the `Call SAP function` to open the panel.
 1. For the `SAP System`, enter your config values as JSON data (replace with your own values). For more parameter options please see the [documentation](https://learn.microsoft.com/connectors/saperp/#call-sap-function-(v3)-(preview)).
 
-   e.g.
+   for example
    ```json
    {
      "AppServerHost": "sap.example.com",
