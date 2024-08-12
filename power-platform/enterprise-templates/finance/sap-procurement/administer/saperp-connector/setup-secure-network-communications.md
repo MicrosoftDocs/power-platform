@@ -26,7 +26,7 @@ ms.subservice: solution-templates
 This guide walks you through setting up a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
 
 > [!IMPORTANT]
-> This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
+> This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. For more information about this topic,  consult your security team, internal policies, and Microsoft Partner for further guidance.
 
 ## Prerequisites
 

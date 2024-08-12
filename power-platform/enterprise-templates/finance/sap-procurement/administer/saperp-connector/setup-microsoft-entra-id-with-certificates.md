@@ -26,7 +26,7 @@ ms.subservice: solution-templates
 This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in the Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
 > [!IMPORTANT]
-> This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
+> This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. For more information about this topic,  consult your security team, internal policies, and Microsoft Partner for further guidance.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ This guide walks you through setting up the connector so your users can access S
 
 ## Generating a Signing Certificate to Issue Tokens for Users
 
-We will generate an example self signed root certificate similar to those provided by a Certificate Authority.
+We generate an example self signed root certificate similar to those certificates provided by a Certificate Authority.
 
 ### Creating A Demo Public Key Infrastructure
 
@@ -119,7 +119,7 @@ openssl x509 -req -days 365 -in userCerts/TESTUSER01.csr.pem -sha256 `
 > [!NOTE]
 > CN=TESTUSER01 should be the first parameter.
 
-You should now have a root cert, an intermediate SNC Cert, an intermediate Users Cert, and a certificate to identify the user cert.
+You should now have a root cert, an intermediate SNC (short for Secure Network Communications) Cert, an intermediate Users Cert, and a certificate to identify the user cert.
 
 Verify the chain with the following command:
 
@@ -140,13 +140,13 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
 1. Open the Windows Certificate Manager:
 	1. Press `Win + R`, type `certlm.msc`, and press Enter.
 1.  Import the public Root CA certificate.
-	1. Import into "Trusted Root Certification Authorities"
-2. Import the User Certificate + Key
-	- In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
-	- Right-click and select `All Tasks > Import`.
-	- Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG can use it to encrypt data.
-	- Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
-		- Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
+	1. Import into `Trusted Root Certification Authorities`.
+1. Import the User Certificate + Key:
+	1. In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
+	1. Right-click and select `All Tasks > Import`.
+	1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
+	1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
+  1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
 
 Check subject name of certificate in the Windows Certificate Store
 ```powershell
@@ -162,7 +162,7 @@ openssl pkcs12 -nokeys -info -in .\user_signing_cert.p12
 
 ### Mapping X.509 Certificates to Users Explicitly
 
-Explicitly map a small amount of Entra ID users to SAP users.
+Explicitly map a small number of Entra ID users to SAP users.
 
 Navigate the SAP GUI to T-Code `SM30`.
 
@@ -170,7 +170,10 @@ Enter table `VUSREXTID` and select the maintain button.
 
 Select option `DN` when prompted for `Type of ACL`.
 
-Choose "New Entry" and enter `CN=USER@CONTOSO.COM` for the external ID. Make sure CN comes first.(DO NOT INCLUDE the '**p:**' prefixed); Select your username for the username field; and last Check the 'Activated' option and click the save button.
+Choose `New Entry` and enter `CN=TESTUSER01@CONTOSO.COM` (replacing the content for your own UPN) for the external ID. Make sure CN comes first. Select your UPN for the username field; and last Check the `Activated` option and save the results.
+
+> ![IMPORTANT]
+> DO NOT INCLUDE '**p:**' prefix.
 
 ### Mapping X.509 Certificates to Users Using Rules
 
@@ -196,7 +199,7 @@ In `STRUST` add the users.cert.pem file to the box.
 
 Add the `SsoCertificateSubject` to your SAP System parameters.
 
-Use the `Microsoft Entra ID using Certificates` to login to SAP with your Entra ID account.
+Use the `Microsoft Entra ID using Certificates` to sign in to SAP with your Entra ID account.
 ```
 "SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso",
 ```
