@@ -3,7 +3,7 @@ title: "Column-level security  | MicrosoftDocs"
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/08/2024
+ms.date: 08/12/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -99,8 +99,6 @@ Imagine your company's policy is that sales members should have different levels
    :::image type="content" source="media/field-security-new-profile.png" alt-text="Create a new column security profile.":::
 
 4. Select **Sales Manager**, select the **Users** tab, select **+ Add Users**, select the users that you want to grant access to the mobile phone number on the contact form, and then select **Add**.   
-
-   :::image type="content" source="media/field-security-add-users.png" alt-text="Add users to the column security profile.":::
 
    > [!TIP]
    > Instead of adding each user, create one or more teams that include all users that you want to grant access.  
