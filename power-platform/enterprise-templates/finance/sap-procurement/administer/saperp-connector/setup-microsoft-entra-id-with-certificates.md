@@ -140,7 +140,7 @@ $ openssl verify -CAfile rootCA/ca.cert.pem -untrusted signingUsersCert/users.ce
 userCerts/TESTUSER01.cert.pem: OK
 ```
 
-## Adding Users Signing Cert + Cert Chain to Windows Store
+## Adding Users Signing Certificate + Certificate Chain to Windows Store
 
 Generate .p12 file from users signing certificate & private key.
 
@@ -150,7 +150,7 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
 
 1. Open the Windows Certificate Manager:
 	1. Press `Win + R`, type `certlm.msc`, and press Enter.
-1.  Import the Root CA(cert only)
+1.  Import the public Root CA certificate.
 	1. Import into "Trusted Root Certification Authorities"
 2. Import the User Certificate + Key
 	- In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
@@ -159,7 +159,7 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
 	- Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
 		- Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
 
-Check subject name of certificate in the Windows Cert Store
+Check subject name of certificate in the Windows Certificate Store
 ```powershell
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
 ```
@@ -169,7 +169,11 @@ View certs in .p12 file.
 openssl pkcs12 -nokeys -info -in .\user_signing_cert.p12
 ```
 
-## Map X.509 Certificate to User (1:1)
+## Entra ID to SAP User Mapping
+
+### Mapping X.509 Certificates to Users Explicitly
+
+Explicitly map a small amount of Entra ID users to SAP users.
 
 Navigate the SAP GUI to T-Code `SM30`.
 
@@ -179,7 +183,23 @@ Select option `DN` when prompted for `Type of ACL`.
 
 Choose "New Entry" and enter `CN=USER@CONTOSO.COM` for the external ID. Make sure CN comes first.(DO NOT INCLUDE the '**p:**' prefixed); Select your username for the username field; and last Check the 'Activated' option and click the save button.
 
-## Add the Users Intermediate Cert to SAP
+### Mapping X.509 Certificates to Users Using Rules
+
+Use Certificate Rules to easy bulk map Entra ID users to SAP users.
+
+Ensure the `login/certificate_mapping_rulebased` profile parameter is set to a current value of `1`.
+
+> ![Note]
+	Alert that this will not be persisted between restarts.
+
+Then created the following rule in t-code `CERTRULE`
+
+![T-Code: CERTRULE](./media/setup-microsoft-entra-id-with-certificates/sap-certrule-mapping.png)
+
+> [!NOTE]
+> Now wait 2 minutes to ensure cached connections to SAP have expired.. Then retest the connection. If not, you may run into the `No suitable SAP user found for X.509-client certificate` error.
+
+## Add the Users Intermediate Certificate to SAP
 
 In `STRUST` add the users.cert.pem file to the box.
 
@@ -196,20 +216,6 @@ Also enable
 ```
 "SncSso": "On"
 ```
-
-## Using CERTRULE to map users.
-
-Ensure the `login/certificate_mapping_rulebased` profile parameter is set to a current value of `1`.
-
-> ![Note]
-	Alert that this will not be persisted between restarts.
-
-Then created the following rule in t-code `CERTRULE`
-
-![T-Code: CERTRULE](./media/setup-microsoft-entra-id-with-certificates/sap-certrule-mapping.png)
-
-> [!NOTE]
-> Now wait 2 minutes to ensure cached connections to SAP have expired.. Then retest the connection. If not, you may run into the `No suitable SAP user found for X.509-client certificate` error.
 
 > [!IMPORTANT]
 > Delete the temporary TESTUSER01 public and private keys on completion of this tutorial.
