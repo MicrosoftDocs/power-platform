@@ -193,13 +193,19 @@ Then created the following rule in t-code `CERTRULE`
 
 ## Add the Users Intermediate Certificate to SAP
 
-In `STRUST` add the users.cert.pem file to the box.
+Open t-code `STRUST` and double click on 
+In `STRUST` add the public certificate users.cert.pem file to the box.
+
+1. In SAP GUI, go to transaction code STRUST.
+2. If "SNC SAPCryptolib" has a red X, right-click and select "Create".
+3. Double-click "SNC SAPCryptolib" and then double-click your Own Certificate.
+4. Select "Import Certificate" and choose your `signingUsersCert\users.cert.pem` public certificate.
+5. Select "Add to Certificate List".
 
 ## Updating SAP System
 
 Add the `SsoCertificateSubject` to your SAP System parameters.
 
-Use the `Microsoft Entra ID using Certificates` to sign in to SAP with your Entra ID account.
 ```
 "SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso",
 ```
@@ -208,6 +214,9 @@ Also enable
 ```
 "SncSso": "On"
 ```
+
+Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Entra ID account.
+
 
 > [!IMPORTANT]
 > Delete the temporary TESTUSER01 public and private keys on completion of this tutorial.
