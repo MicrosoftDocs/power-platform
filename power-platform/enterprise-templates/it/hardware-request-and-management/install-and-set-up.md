@@ -79,14 +79,14 @@ It's important to have a cohesive environment and data policy and to ensure requ
 
 - **Data loss prevention policies**
 
-Make sure that the environment has access to connectors used by the template:
+  Make sure that the environment has access to connectors used by the template:
 
-- [Microsoft Dataverse](/connectors/commondataserviceforapps/)
-- [Office 365 Outlook](/connectors/office365/)
-- [Office 365 Users](/connectors/office365users/)
-- [Approvals](/connectors/approvals/)
-- [Microsoft Teams](/connectors/teams/)
-- [Cards for Power Apps](/connectors/cardsforpowerapps/)
+  - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
+  - [Office 365 Outlook](/connectors/office365/)
+  - [Office 365 Users](/connectors/office365users/)
+  - [Approvals](/connectors/approvals/)
+  - [Microsoft Teams](/connectors/teams/)
+  - [Cards for Power Apps](/connectors/cardsforpowerapps/)
   
 More information: [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention)
 
@@ -94,7 +94,7 @@ More information: [Data loss prevention policies](/power-platform/admin/wp-data-
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up six new connections for the Hardware Request and Management app
 
-It's best to create the connections before you import the solution. If you create the connections during import, you have to jump back and forth between browser windows. It is okay to use existing connections.
+It's best to create the connections before you import the solution. If you create the connections during import, you have to jump between between browser windows. It is okay to use existing connections.
 
 To create connections in advance, take these steps:
 
