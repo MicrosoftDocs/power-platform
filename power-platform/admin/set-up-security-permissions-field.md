@@ -66,8 +66,8 @@ After you create the profile, you assign users and or teams to that profile, and
 
 5. Select the **Users** tab, select **+ Add Users**, select the users that you want to control access, and then select **Add**. 
 
-  > [!TIP]
-  > Instead of adding each user, create one or more teams that include all users that you want to control access. 
+    > [!TIP]
+    > Instead of adding each user, create one or more teams that include all users that you want to control access. 
 
 6. Select the **Column Permission** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three columns for the desired access.  
 
