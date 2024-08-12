@@ -33,7 +33,8 @@ This guide walks you through setting up a secure encrypted connection between th
  1. [Setup SAP Connection via Getting Started Guide](./getting-started-with-the-sap-erp-connector.md)
  1. Access to an SAP instance that you can restart and administer
  1. SAP GUI installed and set up
- 1. OpenSSL installed.
+ 1. Familiarity with public and private key technologies.
+ 1. OpenSSL
     - If you have Git for Windows, you can use the `openssl` command by adding `C:\Program Files\Git\usr\bin\` to your system PATH
 
 ## Install SAP Common Crypto Library
@@ -192,7 +193,7 @@ The NCo library will look for the SNC certificate inside of the PSE.
 1. In SAP GUI, go to transaction code STRUST.
 2. If "SNC SAPCryptolib" has a red X, right-click and select "Create".
 3. Double-click "SNC SAPCryptolib" and then double-click your Own Certificate.
-4. Select "Import Certificate" and choose your `sncCert\snc.cert.pem` file.
+4. Select "Import Certificate" and choose your `sncCert\snc.cert.pem` public certificate.
 5. Select "Add to Certificate List".
 
    ![STRUST Add Certificate](./media/setup-secure-network-communications/sap-strust-add-to-certificate-list.png)
@@ -205,7 +206,7 @@ The NCo library will look for the SNC certificate inside of the PSE.
 
    ![STRUST Add Certificate](./media/setup-secure-network-communications/sap-strust-add-to-certificate-list.png)
 
-4. Move the public cert to your OPDG machine (for example, `C:\sap\contoso-public-key.crt`).
+4. Move the public certificate to your OPDG machine (for example, `C:\sap\contoso-public-key.crt`).
 5. Import the certificate into your OPDG's PSE:
    ```powershell
    C:\sap\libs\sapcryptolib\sapgenpse.exe maintain_pk -p SAPSNCSKERB.pse -v -a C:\pki-certs\sncCert\sapkerb.public.cert
@@ -233,6 +234,9 @@ The NCo library will look for the SNC certificate inside of the PSE.
 4. Test the connection using the `STFC_CONNECTION` RFC function.
 
    ![Test Connection](./media/setup-secure-network-communications/sap-stfc_connection-response-in-power-automate.png)
+
+> [!IMPORTANT] 
+> Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
 ## Next steps
 

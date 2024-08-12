@@ -1,6 +1,6 @@
 ---
 title: Set up Microsoft Entra ID (with certificates) - Single Sign-On
-description: This guide will walk you through setting up the connector so your users can access SAP data and perform RFC calls in the Power Platform using their Microsoft Entra ID for authentication.
+description: This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in the Power Platform using their Microsoft Entra ID for authentication.​
 author: ryanb58
 ms.author: tbrazelton
 contributors:
@@ -23,28 +23,49 @@ ms.subservice: solution-templates
 
 # Microsoft Entra ID (with certificates) - Single Sign-On
 
-This guide will walk you through setting up the connector so your users can access SAP data and perform RFC calls in the Power Platform using their Microsoft Entra ID for authentication.
+This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in the Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
 ## Prerequisites
+
  1. [Setup SAP Connection](./getting-started-with-the-sap-erp-connector.md)
- 2. [Setup SNC](./setup-secure-network-communications.md)
+ 1. [Setup Secure Network Communications](./setup-secure-network-communications.md)
+ 1. Familiarity with public and private key technologies.
 
 ## Generating a Signing Certificate to Issue Tokens for Users
 
-This method is provided as an example as how a Root Certificate Authority might organize and issue a signing certificate.
+We will generate an example self signed root certificate similar to those provided by a Certificate Authority.
 
-### Using `OpenSSL`
+### Creating A Demo Public Key Infrastructure
 
-```shell
+Extending the [Setup Secure Network Communication](./setup-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
+
+```mermaid
+flowchart TD
+    classDef defaultStyle fill:#fff,stroke:#333,stroke-width:1px,color:black;
+    classDef highlightStyle fill:#8df,stroke:#333,stroke-width:2px,color:black;
+    RootCA["Root CA [O=Contoso, CN=Root CA]"] --> SNCCert["Encryption Cert [O=Contoso, CN=SNC]"]
+    RootCA --> UsersCert["Signing Cert [O=Contoso, CN=Users]"]
+    UsersCert --> U1[UserID: testuser01]
+    UsersCert --> U2[UserID testuser02]
+    UsersCert --> U3[UserID testuser03]
+    class UsersCert,U1,U2,U3 highlightStyle;
+    class RootCA,SNCCert defaultStyle;
+```
+
+Create the folder structure.
+
+```powershell
+cd C:\
+mkdir pki-certs
 cd C:\pki-certs\
 mkdir signingUsersCert
 mkdir userCerts
 ```
 
-Create the proper extension files:
+Create extension files to ensure our certificates are created with the correct metadata and restrictions.
 
 `signingUsersCert/extensions.cnf`
 ```
@@ -64,17 +85,17 @@ keyUsage = digitalSignature, keyEncipherment
 extendedKeyUsage = clientAuth
 ```
 
-Create the nessesary index.txt and serial files to keep track of certificates signed.
-```
+Create the necessary `index.txt` and `serial` files to keep track of signed certificates.
+
+```powershell
 # Create the necessary serial and index files if they don't exist
 if (-Not (Test-Path "signingUsersCert\index.txt")) { New-Item -Path "signingUsersCert\index.txt" -ItemType File }
 if (-Not (Test-Path "signingUsersCert\serial")) { Set-Content -Path "signingUsersCert\serial" -Value "0001" }
-
 ```
 
 Generate our intermediate Users cert.
 
-```bash
+```powershell
 openssl genrsa -out signingUsersCert/users.key.pem 2048
 
 # Create Certificate Signing Request
@@ -92,7 +113,7 @@ openssl x509 -req -in signingUsersCert/users.csr.pem -days 3650 `
 
 Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`.
 
-```bash
+```powershell
 # Create the private key.
 openssl genrsa -out userCerts/TESTUSER01.key.pem 2048
 
@@ -113,7 +134,7 @@ You should now have a root cert, an intermediate SNC Cert, an intermediate Users
 
 Verify the chain with the following command:
 
-```bash
+```powershell
 $ openssl verify -CAfile rootCA/ca.cert.pem -untrusted signingUsersCert/users.cert.pem userCerts/TESTUSER01.cert.pem
 
 userCerts/TESTUSER01.cert.pem: OK
@@ -154,7 +175,7 @@ Navigate the SAP GUI to T-Code `SM30`.
 
 Enter table `VUSREXTID` and select the maintain button.
 
-Select option `DN` when prompted for "Type of ACL
+Select option `DN` when prompted for `Type of ACL`.
 
 Choose "New Entry" and enter `CN=USER@CONTOSO.COM` for the external ID. Make sure CN comes first.(DO NOT INCLUDE the '**p:**' prefixed); Select your username for the username field; and last Check the 'Activated' option and click the save button.
 
@@ -178,11 +199,7 @@ Also enable
 
 ## Using CERTRULE to map users.
 
-Update the `login/certificate_mapping_rulebased` profile parameter. I'm not sure how to do this via RZ10.
-
-Went into RZ11 and entered in `login/certificate_mapping_rulebased` then hit the `Display` button.
-
-Then when I confirmed the value was `0`. I hit the `Change Value` button and set the `Current Value` to `1` and hit save.
+Ensure the `login/certificate_mapping_rulebased` profile parameter is set to a current value of `1`.
 
 > ![Note]
 	Alert that this will not be persisted between restarts.
@@ -194,8 +211,11 @@ Then created the following rule in t-code `CERTRULE`
 > [!NOTE]
 > Now wait 2 minutes to ensure cached connections to SAP have expired.. Then retest the connection. If not, you may run into the `No suitable SAP user found for X.509-client certificate` error.
 
+> [!IMPORTANT]
+> Delete the temporary TESTUSER01 public and private keys on completion of this tutorial.
 
-## Delete the TESTUSER01 key
+> [!IMPORTANT] 
+> Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
 ## Sources:
 [On-premises data gateway FAQ | Microsoft Learn](https://learn.microsoft.com/data-integration/gateway/service-gateway-onprem-faq#what-is-the-actual-windows-service-called---)
