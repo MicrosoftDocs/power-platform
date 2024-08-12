@@ -176,7 +176,7 @@ Use Certificate Rules to easy bulk map Entra ID users to SAP users.
 
 Ensure the `login/certificate_mapping_rulebased` profile parameter is set to a current value of `1`.
 
-> ![Note]
+> ![NOTE]
 >	Alert that this will not be persisted between restarts.
 
 Then created the following rule in t-code `CERTRULE`
