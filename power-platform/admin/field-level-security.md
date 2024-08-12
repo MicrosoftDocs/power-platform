@@ -16,48 +16,47 @@ search.audienceType:
 ---
 # Column-level security to control access 
 
-Record-level permissions are granted at the table level, but you may have certain columns associated with a table that contain data that is more sensitive than the other columns. For these situations, you use column-level security to control access to specific columns.  
+Record-level permissions are granted at the table level, but you may have certain columns associated with a table that contain data that is more sensitive than the other columns. For these situations, you use _column-level security_ to control access to specific columns.  
   
  The scope of column-level security is organization-wide and applies to all data access requests, including the following requests and calls:  
   
-- Data access requests from within a client application, such as web browser, mobile client, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)].  
-  
+- Data access requests from within a client application, such as web browser, mobile client, or [!INCLUDE[pn_microsoft_dynamics_crm_for_outlook](../includes/pn-microsoft-dynamics-crm-for-outlook.md)]  
 - Web service calls using the Microsoft Dataverse web services (for use in plug-ins, custom workflow activities, and custom code)  
-- Reporting (using Filtered Views)  
+- Reporting (using filtered views)  
   
 > [!NOTE]
-> The use of table-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
+> The use of table-related terminology depends on the protocol or class library used. Learn more in [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
 
 ## Overview of column-level security  
 Column-level security is available for the default columns on most out-of-box tables, custom columns, and custom columns on custom tables. Column-level security is managed by the security profiles. To implement column-level security, a system administrator performs the following tasks.  
   
-1. Enable column security on one or more columns for a given table.
-1. Select an optional masking rule (**preview**). 
-1. Associate one more existing security profile, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
+1. Turn on column security on one or more columns for a given table.
+1. Select an optional [masking rule](create-manage-masking-rules.md).  
+1. Associate one more existing security profiles, or create one or more new security profiles to grant the appropriate access to specific users or teams.  
   
     A security profile determines the following:  
       
     - Permissions to the secure columns  
     - Users and teams assigned access 
+
+    A security profile can be configured to grant user or team members the following permissions at the column level:  
       
-      A security profile can be configured to grant user or team members the following permissions at the column level:  
-      
-    - **Read**. Read-only access to the column's data.
-    - **Read unmasked**. Read column's data unmasked values. (**preview**)
-    - **Create**. Users or teams in this profile can add data to this column when creating a row.  
-    - **Update**. Users or teams in this profile can update the column's data after it has been created.  
+    - **Read**: Read-only access to the column's data.
+    - **Read unmasked**: The Read column's data [unmasked values](create-manage-masking-rules.md).
+    - **Create**: Users or teams in this profile can add data to this column when creating a row.  
+    - **Update**: Users or teams in this profile can update the column's data after it has been created.  
       
     A combination of these four permissions can be configured to determine the user privileges for a specific data column.  
       
     > [!IMPORTANT]
-    > Unless one or more security profiles are assigned to a security enabled column, only users with the system administrator security role will have access to the column.  
+    > Unless one or more security profiles are assigned to a column with security, only users with the system administrator security role can access the column.  
   
-## Example for restricting the mobile phone column for the Contact table  
-Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers as described here.  
+## Example of restricting the mobile phone column for the Contact table  
+Imagine your company's policy is that sales members should have different levels of access to contact mobile phone numbers, as described here.  
   
 |User or Team|Access|  
 |------------------|------------|  
-|Sales Managers|Read-only. Can only view mobile phone numbers in masked form for contacts. (**preview**)|  
+|Sales managers|Read-only. Can only view mobile phone numbers in [masked form](create-manage-masking-rules.md) for contacts.|  
 |Vice presidents|Full. Can create, update, and view mobile phone numbers for contacts.|  
 |Salespersons and all other users|None. Can't create, update, or view mobile phone numbers for contacts.|  
   
@@ -85,7 +84,7 @@ Imagine your company's policy is that sales members should have different levels
 
    :::image type="content" source="media/field-security-advanced-options-enable.png" alt-text="Expand Advanced options and enable column security.":::
 
-7. Select the **Masking rule** dropdown menu, and select a masking rule (**preview**).
+7. Select the **Masking rule** dropdown menu, and select a [masking rule](create-manage-masking-rules.md).
   
 8. Select **Save**.
 
@@ -118,7 +117,7 @@ Imagine your company's policy is that sales members should have different levels
 
 3. Select the **Column Security Profiles** tab, and then select **Vice President**. 
 
-4. Select the **Column Permissions** tab, select **mobilephone**, and then select **Edit**. Set the **Read** setting to **Allowed**, the **Read unmasked** to **One record** (**preview**), and the rest as **Allowed**, and then select **Save**.  
+4. Select the **Column Permissions** tab, select **mobilephone**, and then select **Edit**. Set the **Read** setting to **Allowed**, the [**Read unmasked**](create-manage-masking-rules.md) to **One record**, and the rest as **Allowed**, and then select **Save**.  
 
 Any users not defined in the previously created column security profiles won't have access to the mobile phone column on contact forms or views. The column value displays ![Lock icon.](../admin/media/admin-field-level-security-lock.png "Lock icon") ********, indicating that the column is secured.  
   
