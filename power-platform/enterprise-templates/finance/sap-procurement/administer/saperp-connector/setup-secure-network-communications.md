@@ -30,7 +30,7 @@ This guide walks you through setting up a secure encrypted connection between th
 
 ## Prerequisites
 
- 1. [Setup SAP Connection via Getting Started Guide](getting-started-with-the-sap-erp-connector.md)
+ 1. [Setup SAP Connection via Getting Started Guide](./getting-started-with-the-sap-erp-connector.md)
  1. Access to an SAP instance that you can restart and administer
  1. SAP GUI installed and set up
  1. OpenSSL installed.

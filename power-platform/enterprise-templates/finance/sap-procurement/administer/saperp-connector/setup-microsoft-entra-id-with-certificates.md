@@ -28,9 +28,9 @@ This guide will walk you through setting up the connector so your users can acce
 > [!IMPORTANT]
 > This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. Please consult your security team, internal policies, and Microsoft Partner for further guidance.
 
-# Prerequisites
- 1. [Setup SAP Connection](getting-started.md)
- 2. [Setup SNC](setup-snc.md)
+## Prerequisites
+ 1. [Setup SAP Connection](./getting-started-with-the-sap-erp-connector.md)
+ 2. [Setup SNC](./setup-secure-network-communications.md)
 
 ## Generating a Signing Certificate to Issue Tokens for Users
 
@@ -106,7 +106,8 @@ openssl x509 -req -days 365 -in userCerts/TESTUSER01.csr.pem -sha256 `
   -CAserial signingUsersCert/serial
 ```
 
-	Note: CN=TESTUSER01 should be first.
+> [!NOTE]
+> CN=TESTUSER01 should be the first parameter.
 
 You should now have a root cert, an intermediate SNC Cert, an intermediate Users Cert, and a certificate to identify the user cert.
 
@@ -188,7 +189,7 @@ Then when I confirmed the value was `0`. I hit the `Change Value` button and set
 
 Then created the following rule in t-code `CERTRULE`
 
-![](~/assets/images/3e40aaf75644ddb5a2306f94c568240c97cc3781a6d04155ba716ec621e19b89.png)
+![T-Code: CERTRULE](./media/setup-microsoft-entra-id-with-certificates/sap-certrule-mapping.png)
 
 > [!NOTE]
 > Now wait 2 minutes to ensure cached connections to SAP have expired.. Then retest the connection. If not, you may run into the `No suitable SAP user found for X.509-client certificate` error.
@@ -197,4 +198,4 @@ Then created the following rule in t-code `CERTRULE`
 ## Delete the TESTUSER01 key
 
 ## Sources:
-[On-premises data gateway FAQ | Microsoft Learn](https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem-faq#what-is-the-actual-windows-service-called---)
+[On-premises data gateway FAQ | Microsoft Learn](https://learn.microsoft.com/data-integration/gateway/service-gateway-onprem-faq#what-is-the-actual-windows-service-called---)
