@@ -4,7 +4,7 @@ description: Overview of the Creator Kit
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 06/10/2024
+ms.date: 08/12/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -26,9 +26,6 @@ Elevate your development workflow and create modern, seamless user experiences e
 
 > [!NOTE]
 > Before you download and install the Creator Kit, ensure that you [enable code components](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in your environment first.
-
-> [!CAUTION]
-> Do not install the latest version of the Creator Kit (May 2024) in apps using a dialog, panel, or expandMenu. For more information, go to [Important Warning: Platform Regression affecting upgrade to latest Creator Kit Version](#important-warning-platform-regression-affecting-upgrade-to-latest-creator-kit-version).
 
 > [!div class="nextstepaction"]
 > [Download the Creator Kit](https://aka.ms/creatorkitdownload)
@@ -69,23 +66,6 @@ If you face issues with:
 - **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support. See guidance on contacting support for [admins]() and [makers](https://powerapps.microsoft.com/en-us/support/).
 
 If you are not sure if you're experiencing an issue with the Creator Kit or the platform, [report the issue on the GitHub](https://aka.ms/Creator-Kit-Issues) first and our team will triage the issue.
-
-## Updates
-
-### Important Warning: Platform Regression affecting upgrade to latest Creator Kit Version
-
-We have identified an issue related to a platform regression that was introduced and affecting previous versions of the Creator Kit that affects canvas library components containing Power Fx formulas, specifically the Dialog, Panel, and ExpandMenu components. A fix for this issue was pushed in the latest version of the Creator Kit that was released May 2024, however due to current platform limitations the upgrade results in data loss of the Power Fx formulas for Event type properties of the components (e.g., OnButtonSelect). A platform update will finish rolling out by 24 June 2024.
-
-**Impact:**
-Power Fx formulas within these components may be lost when upgrading to the latest Creator Kit version (May 2024).
-
-**Action required:**
-**DO NOT INSTALL** the latest version of the Creator Kit (May 2024) if you are using the aforementioned canvas library components with Power Fx formulas. Installing this version may cause functionality issues within your applications.
-
-**Next steps:**
-Wait for fix. We are actively working on resolving this issue. A fix will be included in the upcoming Power Apps client version 2406.2, available in all public regions by Monday, 24 June 2024.
-
-We apologize for any inconvenience this may cause and appreciate your understanding and patience as we address this issue. If you have any questions or need further assistance, please raise an issue in our [Github repository](https://github.com/microsoft/powercat-creator-kit/issues).
 
 ## More resources
 
