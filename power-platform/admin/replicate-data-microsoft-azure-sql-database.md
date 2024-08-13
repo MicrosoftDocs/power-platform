@@ -308,8 +308,6 @@ For information about the programmatic interface for managing configuration and 
   
 7. Paste the URL from your clipboard in to the **Connect to Azure Storage** box, and then select **Next**.  
   
-   ![Storage url.](../admin/media/azure-store-url.png "Storage url")  
-  
 8. On the Connection Summary page, select **Connect**.  
   
 9. Azure Storage Explorer connects to the destination database. If failed records exist for the Export Profile, Azure Storage Explorer displays failed record  synchronization folders.  
