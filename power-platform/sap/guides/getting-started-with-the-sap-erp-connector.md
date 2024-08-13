@@ -111,6 +111,6 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 Now that you've set up the SAP ERP connector for Power Platform, you can:
 
 - Try out more complex SAP functions in your flows
-- Set up Secure Network Communication (SNC) for better security between the on-premises data gateway and your SAP system
+- [Set up Secure Network Communication (SNC)](set-up-secure-network-communications.md)
 
 By following this guide, you've successfully set up the SAP ERP connector. You're now ready to create powerful integrations between your SAP systems and Microsoft Power Platform solutions.

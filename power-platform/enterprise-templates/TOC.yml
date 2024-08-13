@@ -37,8 +37,6 @@
       href: finance/sap-procurement/administer/extend-model-apps-dataverse.md
     - name: Extend cloud flows
       href: finance/sap-procurement/administer/extend-cloud-flows.md
-    - name: SAP ERP Connector
-      href: finance/sap-procurement/administer/saperp-connector/TOC.yml
   - name: Use
     items:
     - name: Vendor management

@@ -232,6 +232,6 @@ The NCo library will look for the SNC certificate inside of the PSE.
 Now, SNC is established between your On-premises Data Gateway and SAP system, you can:
 
 - Implement SNC in your production environment
-- Learn about Microsoft Entra ID using certificates(X.509 user authentication) for SAP
+- [Learn about Microsoft Entra ID using certificates(X.509 user authentication) for SAP](set-up-microsoft-entra-id-with-certificates.md)
 
 By following this guide, you establish a fully encrypted connection between your On-premises Data Gateway and SAP system, enhancing the security of your SAP integration with Microsoft Power Platform.
