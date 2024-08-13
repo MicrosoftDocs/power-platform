@@ -112,7 +112,6 @@ Using these steps, you set up the Entra app registration used in a cloud flow to
 1. Select **Grant Admin Consent for (your organization)**.
 1. Select **Certificates and secrets**.
 1. Select **+ New client secret**.
-   :::image type="content" source="media\coe39.png" alt-text="Screenshot that shows where the +New client secret button is located in the Certificates & secrets menu." lightbox="media\coe39.png":::
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 1. Copy and paste the **Secret** to a text document such as Notepad.
 1. Select **Overview** and copy and paste the application (client) ID value to the same text document. Be sure to make a note of which GUID is for which value.
