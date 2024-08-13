@@ -28,4 +28,5 @@ Learn more:
  - [Getting Started with the SAP ERP Connector](guides/getting-started-with-the-sap-erp-connector.md)
  - [Set up Secure Network Communications(SNC)](guides/set-up-secure-network-communications.md)
  - [Set up Microsoft Entra ID using certificates(SSO)](guides/set-up-microsoft-entra-id-with-certificates.md)
+ - [Learn about SAP Procurement template for Microsoft Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview)
 
