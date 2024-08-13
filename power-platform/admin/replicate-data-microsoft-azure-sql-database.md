@@ -90,7 +90,7 @@ For information about the programmatic interface for managing configuration and 
 - You must have the System Administrator security role in the environment.  
   
 ### Web browser  
- Enable pop-ups for the domain https://discovery.crmreplication.azure.net/ in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
+ Enable pop-ups for the domain `https://discovery.crmreplication.azure.net/` in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
   
 ## Services, credentials, and privileges required  
  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] feature, you must have the following services, credentials, and privileges.  
