@@ -1,6 +1,6 @@
 ---
-title: Set up Secure Network Communications (SNC) for SAP and Power Platform
-description: Learn how to create a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
+title: Set up Secure Network Communications (SNC) for SAP and Microsoft Power Platform
+description: Learn how to create a secure encrypted connection between the on-premises data gateway and SAP using SNC.
 author: ryanb58
 ms.author: tbrazelton
 contributors:
@@ -21,16 +21,16 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Set up Secure Network Communications (SNC) for SAP and Power Platform
+# Set up Secure Network Communications (SNC) for SAP and Microsoft Power Platform
 
-This guide walks you through setting up a secure encrypted connection between the On-premises Data Gateway (OPDG) and SAP using Secure Network Communications (SNC).
+This guide walks you through setting up a secure encrypted connection between the on-premises data gateway (OPDG) and SAP using Secure Network Communications (SNC).
 
 > [!IMPORTANT]
-> This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. For more information about this topic,  consult your security team, internal policies, and Microsoft Partner for further guidance.
+> This article is for setting up a proof of concept only. The settings and recommendations are not intended for production use. For more information about this topic,  consult your security team, internal policies, and Microsoft Partner for further guidance.
 
 ## Prerequisites
 
- 1. [Setup SAP Connection via Getting Started Guide](./getting-started-with-the-sap-erp-connector.md)
+ 1. [Set up SAP connection via Getting started guide](./getting-started-with-the-sap-erp-connector.md)
  1. Access to an SAP instance that you can restart and administer
  1. SAP GUI installed and set up
  1. Familiarity with public and private key technologies.
@@ -39,7 +39,7 @@ This guide walks you through setting up a secure encrypted connection between th
 
 ## Install SAP Common Crypto Library
 
-SAP Common Crypto Library enables NCo to encrypt encrypted communication between the OPDG and SAP. To extract the library, we need a proprietary decompression utility called `SAPCAR`.
+SAP Common Crypto Library enables NCo to encrypt encrypted communication between the on-premises data gateway and SAP. To extract the library, we need a proprietary decompression utility called `SAPCAR`.
 
 ### Get SAPCAR
 
@@ -66,7 +66,7 @@ SAP Common Crypto Library enables NCo to encrypt encrypted communication between
 
 ## Generate certificates
 
-Certificate establish trust and encryption between your OPDG and the SAP box.
+Certificate establish trust and encryption between your on-premises data gateway and the SAP box.
 
 > [!WARNING]
 > This method is for demo purposes and not recommended for production systems.
@@ -128,9 +128,9 @@ In this example, our certificates are structured as follows. This article specif
       -extensions v3_leaf
    ```
 
-## Create a Personal Secure Environment (PSE) for the OPDG
+## Create a Personal Secure Environment
 
-The NCo library will look for the SNC certificate inside of the PSE.
+Create a Personal Secure Environment (PSE) for the on-premises data gateway. The NCo library will look for the SNC certificate inside of the PSE.
 
 1. Create a PKCS#12 container:
    ```powershell
