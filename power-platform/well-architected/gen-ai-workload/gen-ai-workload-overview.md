@@ -41,20 +41,20 @@ Addressing these challenges requires thorough planning, collaboration across dif
 
 ### The Well-Architected Framework approach
 
-We recommend that you structure your well-architected workload to meet specific reliability, security, cost optimization, operational excellence, and performance efficiency objectives. To enhance customer experiences and deliver consistency and reliability, follow architectural principles and guidelines that are specific to Oracle on Azure IaaS. This guidance addresses Oracle databases, like Exadata databases, and other Oracle applications.
+We recommend that you structure your well-architected workload to meet specific reliability, security, operational excellence, performance efficiency, and experience optimization objectives. To enhance customer experiences and deliver consistency and reliability, follow architectural principles and guidelines that are specific to Generative AI Power Platform workloads.
 
-The Well-Architected Framework pillars help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create application workloads without unnecessary complexities and unforeseen costs.
+The Well-Architected Framework pillars help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create workloads without unnecessary complexities and unforeseen costs.
 
-Use the Well-Architected Framework pillars to improve your Oracle on Azure IaaS workload in the following ways:
+Use the Well-Architected Framework pillars to improve your Generative AI Power Platform workload in the following ways:
 
-Reliability: An Oracle workload requires resiliency at the architecture layer. Create a database and application architecture with high availability to process critical and noncritical business data.
+- **Reliability**: 
 
-Security: An Oracle workload might contain business-critical data. Most Oracle applications also require a Secure Shell (SSH) port. Help secure your Oracle databases and applications with multiple security layers, including identity, access, input validation, data sovereignty, and encryption layers.
+- **Security**: 
 
-Cost optimization: An Oracle workload requires that you bring your own license. You can generate an AWR report to optimize costs. You can use the AWR report to determine the virtual machine (VM) SKU and storage that you need to meet performance requirements.
+- **Operational Excellence**: 
 
-Operational excellence: An Oracle workload requires monitoring to meet productivity requirements. Ensure that your Oracle workload meets operational excellence standards.
+- **Performance Efficiency**: 
 
-Performance efficiency: An Oracle workload's life cycle consists mostly of operational tasks. Manage an Oracle workload so that it remains performant and meets customers' demands. You must also manage costs.
+- **Experience Optimization**:
 
 ## What are the key design areas?
