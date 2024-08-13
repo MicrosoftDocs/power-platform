@@ -177,7 +177,7 @@
       items: 
       - name: Overview
         href: workloads.md
-      - name: Generative AI Power Platform workload
+      - name: Intelligent applications
         href: gen-ai-workload/index.yml
     - name: Implementing recommendations
       href: implementing-recommendations.md

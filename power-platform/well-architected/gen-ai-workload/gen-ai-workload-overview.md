@@ -1,5 +1,5 @@
 ---
-title: Overview of Generative AI Power Platform workloads
+title: Overview of intelligent applications
 description: Learn how architecture patterns, design areas, and architecture layers relate to well-architected Power Platform workloads that use generative AI features
 author: manuelap-msft
 ms.author: mapichle
@@ -9,14 +9,14 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Overview of Generative AI Power Platform workloads
+# Overview of Intelligent applications
 
-This article provides Well-Architected Framework best practices for a Generative AI Power Platform workload. Application owners, Power Platform administrators, business stakeholders, and architects can use this guidance to create a technical foundation for their Generative AI Power Platform workload.
+This article provides Well-Architected Framework best practices for an intelligent application workloads. Application owners, Power Platform administrators, business stakeholders, and architects can use this guidance to create a technical foundation for their intelligent application workloads.
 
 >[!TIP]
 >To assess your workload through the lenses of reliability, security, operational excellence, performance efficiency, and experience optimization see the [Power Platform Well-Architected Assessment](https://aka.ms/powa/assessment).
 
-## What is a Gen AI workload?
+## What is an intelligent application workload?
 
 The term _workload_ is used to describe a set of application resources, data, and supporting infrastructure that work together to deliver desired business outcomes. A workload comprises application and technology components as well as behavioral, development, and operational processes.
 
@@ -67,28 +67,41 @@ You may also want to consider updating current workloads to use Generative AI ca
 
 #### Data availability and quality
 
-High quality data ensures consistency and accuracy for the AI system. As part of your feasibility assessment, consider the following:
+High quality data ensures consistency and accuracy for the Generative AI Power Platform workload. As part of your feasibility assessment, consider the following:
 
 - **Source Identification**: Identify and catalog all potential data sources, including internal databases, external APIs, and third-party datasets. Ensure these sources are reliable and accessible.
-- **Data Collection**: Implement robust data collection mechanisms to gather data consistently. This includes setting up automated pipelines using tools like Power BI and Power Automate to streamline data ingestion.
+- **Data Silos**: Identify if the current process uses any disparate data sources, like spreadsheets. The integration of this disparate data into the AI system may pose a challenge but is essential for providing accurate responses.
 - **Data Volume and Variety**: Assess the volume and variety of data available. Generative AI models typically require large and diverse datasets to perform effectively. Ensure that the data sources can provide sufficient quantity and diversity to train and validate the models.
-
-- **Data Cleaning**: Perform data cleaning to remove duplicates, correct errors, and handle missing values. This step is critical to ensure the data fed into AI models is accurate and reliable1.
+- **Data Cleaning**: Perform data cleaning to remove duplicates, correct errors, and handle missing values. This step is critical to ensure the data fed into AI models is accurate and reliable.
 - **Data Transformation**: Transform raw data into a suitable format for AI model training. This may involve normalization, scaling, and encoding categorical variables.
-- **Quality Metrics**: Establish and monitor key data quality metrics such as accuracy, completeness, consistency, and timeliness. Use tools like Power Query to automate these checks and generate reports.
-- **Validation and Testing**: Regularly validate and test the data to ensure it meets the required quality standards. This includes running automated tests to check for anomalies and inconsistencies2.
+- **Validation and Testing**: Regularly validate and test the data to ensure it meets the required quality standards. 
 
 #### Integration requirements
 
+Straightforward integration facilitates real-time data access and updates for the Generative AI Power Platform workload. As part of your feasibility assessment, consider the following:
+
+- **Existing Infrastructure**: Assess the compatibility of generative AI models with your current infrastructure. Assess if robust APIs are available for easy integration.
+- **Integration Points**: Identify how Generative AI will integrate with the required data sources. Assess if connectors or APIs are available
+
 #### Technical complexity challenges
+
+Accurate responses rely on a well-architected Generative AI Power Platform workload. As part of your feasibility assessment, consider the following:
+
+- **Crafting Effective Prompts**: Design precise and contextually relevant prompts helps guide the AI to produce accurate and relevant responses.
+- **Regular Evaluation**: Implement continuous monitoring and testing of AI outputs to assess accuracy, relevance, and ethical adherence.
+- **Feedback Loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
+- **Domain-Specific Training**: Fine-tune models on domain-specific data to enhance their accuracy in specific contexts.
+- **Regular Updates**: Periodically update models with new data to maintain their relevance and accuracy.
+- **Performance Metrics:** Establish clear performance metrics to evaluate the success and accuracy of AI responses
 
 ### Operational feasibility
 
 #### Resource availability
 
-#### User adoption
+The success of your Generative AI Power Platform workload depends on a the availability of a dedicated budget and team resources, supported by an AI-focused CoE. Existing teams have ongoing commitments, necessitating careful planning. As part of your feasibility assessment, consider the following: 
 
-#### Potential disruptions
+
+#### User adoption
 
 ### Risks and mitigations
 

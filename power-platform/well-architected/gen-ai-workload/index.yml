@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 
-title: Generative AI Power Platform workload documentation
-summary: When you create an Generative AI Power Platform workload, follow Power Platform Well-Architected Framework design principles and explore important design areas.
+title: Intelligent application workload documentation
+summary: When you create an intelligent application workload in Power Platform, follow Power Platform Well-Architected Framework design principles and explore important design areas.
 metadata: 
-  title: Generative AI Power Platform workload documentation
+  title: Intelligent application workload documentation
   description: In this Power Platform Well-Architected Framework documentation, learn about creating Power Platform workloads that use Generative AI capabilities, including design principles, design areas, and best practices.
   author: manuelap-msft
   ms.author: mapichle
@@ -21,7 +21,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Generative AI Power Platform workloads
+          - text: Intelligent applications
             url: gen-ai-workload-overview.md
           - text: Design principles
             url: gen-ai-workload-principles.md
