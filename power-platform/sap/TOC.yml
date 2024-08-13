@@ -3,3 +3,4 @@
   href: overview.md
 - name: Guides
   href: guides/TOC.yml
+  expanded: true
