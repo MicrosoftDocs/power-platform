@@ -178,7 +178,7 @@
       - name: Overview
         href: workloads.md
       - name: Generative AI Power Platform workload
-        href: workloads/gen-ai-workload-overview.md
+        href: gen-ai-workload/index.yml
     - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support

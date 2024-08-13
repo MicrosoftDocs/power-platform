@@ -1,0 +1,7 @@
+- name: Generative AI Power Platform workloads
+  href: index.yml
+  items:
+  - name: Overview
+    href: gen-ai-workload-overview.md
+  - name: Design principles
+    href: gen-ai-workload-principles.md

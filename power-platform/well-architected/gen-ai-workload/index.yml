@@ -1,0 +1,55 @@
+### YamlMime:Landing
+
+title: Generative AI Power Platform workload documentation
+summary: When you create an Generative AI Power Platform workload, follow Power Platform Well-Architected Framework design principles and explore important design areas.
+metadata: 
+  title: Generative AI Power Platform workload documentation
+  description: In this Power Platform Well-Architected Framework documentation, learn about creating Power Platform workloads that use Generative AI capabilities, including design principles, design areas, and best practices.
+  author: manuelap-msft
+  ms.author: mapichle
+  ms.reviewer: jhaskett-msft
+  ms.date: 09/15/2024
+  ms.subservice: well-architected
+  ms.topic: conceptual
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+ # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Generative AI Power Platform workloads
+            url: gen-ai-workload-overview.md.md
+          - text: Design principles
+            url: gen-ai-workload-principles.md.md
+   # Card
+  - title: Explore design areas
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Optimize security
+            url: na.md
+          - text: Monitor workloads
+            url: na.md
+ # Card
+  - title: Take the assessment
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Take the Power Platform Well-Architected assessment
+            url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
+
+ # Card
+  - title: Learn
+    linkLists:
+      - linkListType: training
+        links:
+          - text: Microsoft Azure AI Fundamentals - Generative AI
+            url: /training/paths/introduction-generative-ai/
+          - text: Copilot Foundations
+            url: /training/paths/copilot-foundations/
+          - text: Create and extend custom copilots in Microsoft Copilot Studio
+            url: /training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
