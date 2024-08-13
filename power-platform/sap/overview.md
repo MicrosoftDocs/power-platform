@@ -22,6 +22,10 @@ Unlock the full potential of your SAP data with [Microsoft Power Platform](/powe
 
 Discover how SAP on Power Platform empowers your team to make data-driven decisions and streamline business processes. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, our connectors provide the tools you need to succeed. Start transforming your SAP data today and experience the benefits of a truly integrated digital ecosystem.
 
-Learn more by learning from the documentation listed below.
- - [SAP ERP Connector Documentation](/connectors/saperp/)
- - [SAP OData Connector Documentation](/connectors/sapodata/)
+Learn more:
+ - [SAP ERP Connector](/connectors/saperp/)
+ - [SAP OData Connector](/connectors/sapodata/)
+ - [Getting Started with the SAP ERP Connector](./guides/getting-started-with-the-sap-erp-connector.md)
+ - [Set up Secure Network Communications(SNC)](set-up-secure-network-communications.md)
+ - [Set up Microsoft Entra ID using certificates(SSO)](set-up-microsoft-entra-id-with-certificates.md)
+
