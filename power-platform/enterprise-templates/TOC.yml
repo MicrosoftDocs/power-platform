@@ -53,7 +53,7 @@
       href: finance/sap-procurement/use/vendor-invoice-management.md
     - name: Vendor payment management
       href: finance/sap-procurement/use/payment-management.md
-  - name: SAP Supplier Portal
+  - name: SAP Supplier Self Service
     items:
   - name: Overview
     href: finance/sap-supplier-self-service/overview.md

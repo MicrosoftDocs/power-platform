@@ -52,12 +52,12 @@ This section provides links to the SAP Supplier Self Service solution files and 
 
 Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub and download and import the following solutions in this sequence:
 
-1. Import mpa_supplier_self_service_1_0_0_17.zip (version 1.0.0.17)
-1. Import SupplierSelfServicePortal_1_0_0_14.zip  (Version 1.0.0.14)
+1. SAP Supplier Self Service: Import mpa_supplier_self_service_1_0_0_17.zip (version 1.0.0.17)
+1. Supplier Self Service Portal: Import SupplierSelfServicePortal_1_0_0_14.zip  (Version 1.0.0.14)
 
 Once you have imported both solutions, select **Publish all customizations**. You will also need to [set up connections for SAP and Dataverse](sap-procurement/administer/set-up-connections). For the connector setup, use an SAP service user account that is supported with the appropriate SAP licenses and permissions.
 
-## Set up the SAP Supplier Self Service solution
+## Activate the Supplier Self Service site
 
 Once you have successfully installed the SAP Supplier template, take these steps to set up the SAP Supplier Self Service solution in the same environment as SAP Procurement:
 
@@ -71,7 +71,7 @@ Once you have successfully installed the SAP Supplier template, take these steps
 You need to take steps to ensure that flows are turned on and added to the site.
 
 1. Go to Power Automate and open solution **Supplier Self Service** and ensure all the flows are turned on.
-1. Go to **maker studio > Setup**.
+1. Go to [**Power Pages design studio**](/power-pages/configure/design-build-overview) > **Setup**.
 1. Remove any flows that already appear to be added to the site.
 1. Add these Power Automate flows to your Supplier Self Service site:
     1. Power Pages CreateVendorInvoice
@@ -80,7 +80,7 @@ You need to take steps to ensure that flows are turned on and added to the site.
     1. Power Pages Read Vendor
     1. Power Pages Read Vendor Invoice List
     1. Power Pages Update Vendor
-1. Restart the Power Pages site.
+1. Restart the Power Pages site from the Power Platform admin center. Go to **Site Actions** > **Restart site**.
 1. Update the flow URL in each of the custom components on the respective web pages. High-level instructions are provided in the table.
 
 | Web Page  | Component Inputs  | Cloud Flow URLs  |

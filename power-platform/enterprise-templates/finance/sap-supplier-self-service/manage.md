@@ -21,6 +21,8 @@ You can set up your suppliers and users so they have access to your SAP Supplier
 
 The SAP Supplier Self Service template represents a Supplier in SAP using an Account record with the Supplier ID saved in the Account record. Once this is done, portal users can be added related to this Account record.
 
+[Learn more about how to provide access to an external audience.](/power-pages/security/external-access)
+
 ## Activate a chat bot
 
 You can activate a chat bot to provide site demos and assist suppliers on the site. Take these steps to get started:
