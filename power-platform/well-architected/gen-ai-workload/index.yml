@@ -22,18 +22,18 @@ landingContent:
       - linkListType: overview
         links:
           - text: Generative AI Power Platform workloads
-            url: gen-ai-workload-overview.md.md
+            url: gen-ai-workload-overview.md
           - text: Design principles
-            url: gen-ai-workload-principles.md.md
+            url: gen-ai-workload-principles.md
    # Card
   - title: Explore design areas
     linkLists:
       - linkListType: concept
         links:
           - text: Optimize security
-            url: na.md
+            url: gen-ai-workload-principles.md
           - text: Monitor workloads
-            url: na.md
+            url: gen-ai-workload-principles.md
  # Card
   - title: Take the assessment
     linkLists:
