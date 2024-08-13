@@ -57,4 +57,40 @@ Use the Well-Architected Framework pillars to improve your Generative AI Power P
 
 - **Experience Optimization**: A Generative AI Power Platform workload needs to have a focus on conversation design to be user-friendly and allow users to achieve their goals with minimal effort. The experience should account for topics the generative AI can't handle and have fallback mechanisms in place. Also implement mechanisms to gather user feedback and continuously improve the AI models and workload based on this feedback. 
 
+## Assess technical and operational feasibility
+
+Before you start developing your Generative AI Power Platform workload assess technical and operational feasibility and identify risks and mitigation strategies.
+
+You may also want to consider updating current workloads to use Generative AI capabilities - for example, when these capabilities can meet business needs at reduced costs. Consider modernizing based on the purpose of the application, life expectancy, supportability, cost, and service-level agreements (SLAs).
+
+### Technical feasibility
+
+#### Data availability and quality
+
+High quality data ensures consistency and accuracy for the AI system. As part of your feasibility assessment, consider the following:
+
+- **Source Identification**: Identify and catalog all potential data sources, including internal databases, external APIs, and third-party datasets. Ensure these sources are reliable and accessible.
+- **Data Collection**: Implement robust data collection mechanisms to gather data consistently. This includes setting up automated pipelines using tools like Power BI and Power Automate to streamline data ingestion.
+- **Data Volume and Variety**: Assess the volume and variety of data available. Generative AI models typically require large and diverse datasets to perform effectively. Ensure that the data sources can provide sufficient quantity and diversity to train and validate the models.
+
+- **Data Cleaning**: Perform data cleaning to remove duplicates, correct errors, and handle missing values. This step is critical to ensure the data fed into AI models is accurate and reliable1.
+- **Data Transformation**: Transform raw data into a suitable format for AI model training. This may involve normalization, scaling, and encoding categorical variables.
+- **Quality Metrics**: Establish and monitor key data quality metrics such as accuracy, completeness, consistency, and timeliness. Use tools like Power Query to automate these checks and generate reports.
+- **Validation and Testing**: Regularly validate and test the data to ensure it meets the required quality standards. This includes running automated tests to check for anomalies and inconsistencies2.
+
+#### Integration requirements
+
+#### Technical complexity challenges
+
+### Operational feasibility
+
+#### Resource availability
+
+#### User adoption
+
+#### Potential disruptions
+
+### Risks and mitigations
+
+
 ## What are the key design areas?
