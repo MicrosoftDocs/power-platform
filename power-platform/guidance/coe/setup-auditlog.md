@@ -78,8 +78,6 @@ Using these steps, you set up a Microsoft Entra app registration that is used in
 
 1. Select **+ New client secret**.
 
-   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows where you create a new client secret." lightbox="media/coe39.png":::
-
 1. Add a description and expiration (in line with your organization's policies), and then select **Add**.
 
 1. Copy and paste the **Secret** to a text document in Notepad for the time being.
