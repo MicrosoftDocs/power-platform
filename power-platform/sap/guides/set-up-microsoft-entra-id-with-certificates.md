@@ -31,7 +31,7 @@ This guide walks you through setting up the connector so your users can access S
 ## Prerequisites
 
  1. [Setup SAP Connection](getting-started-with-the-sap-erp-connector.md)
- 1. [Setup Secure Network Communications](setup-secure-network-communications.md)
+ 1. [Setup Secure Network Communications](set-up-secure-network-communications.md)
  1. Familiarity with public and private key technologies.
 
 ## Generating a Signing Certificate to Issue Tokens for Users
@@ -40,7 +40,7 @@ We generate an example self signed root certificate similar to those certificate
 
 ### Creating A Demo Public Key Infrastructure
 
-Extending the [Setup Secure Network Communication](./setup-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
+Extending the [Setup Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
 
 ![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
