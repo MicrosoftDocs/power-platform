@@ -30,8 +30,8 @@ This guide walks you through setting up the connector so your users can access S
 
 ## Prerequisites
 
- 1. [Setup SAP Connection](./getting-started-with-the-sap-erp-connector.md)
- 1. [Setup Secure Network Communications](./setup-secure-network-communications.md)
+ 1. [Setup SAP Connection](getting-started-with-the-sap-erp-connector.md)
+ 1. [Setup Secure Network Communications](setup-secure-network-communications.md)
  1. Familiarity with public and private key technologies.
 
 ## Generating a Signing Certificate to Issue Tokens for Users

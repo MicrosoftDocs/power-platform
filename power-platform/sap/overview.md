@@ -13,7 +13,7 @@ ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 08/14/2024
 ms.service: power-platform
-ms.subservice: sap
+ms.subservice: connectors
 ---
 
 # SAP on Power Platform
