@@ -79,6 +79,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
       Example: `https://92e1c10d0b34e28ba4a87e3630f46a.06.environment.api.powerplatform.com/sts`
       
     - **Subject identifier**: If a self-signed certificate is used for signing the assembly, use only recommended for non-production use cases.
+      Example: `component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>`
 
     :::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
 
