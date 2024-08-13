@@ -1,6 +1,6 @@
 ---
-title: Set up Microsoft Entra ID (with certificates) - Single Sign-On
-description: This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in the Power Platform using their Microsoft Entra ID for authentication.​
+title: Set up Microsoft Entra ID (with certificates) - single sign-on
+description: This guide walks you through setting up the connector so your users can access SAP data and run RFC in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
 author: ryanb58
 ms.author: tbrazelton
 contributors:
@@ -21,26 +21,26 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Microsoft Entra ID (with certificates) - Single Sign-On
+# Microsoft Entra ID (with certificates) - single sign-on
 
-This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in the Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
+This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
 > [!IMPORTANT]
-> This article is for setting up a Proof of Concept only. The settings and recommendations are not intended for production use. For more information about this topic,  consult your security team, internal policies, and Microsoft Partner for further guidance.
+> This article is for setting up a proof of concept only. The settings and recommendations are not intended for production use. For more information about this topic, consult your security team, internal policies, and Microsoft Partner for more guidance.
 
 ## Prerequisites
 
- 1. [Setup SAP Connection](getting-started-with-the-sap-erp-connector.md)
- 1. [Setup Secure Network Communications](set-up-secure-network-communications.md)
+ 1. [Set up SAP Connection](getting-started-with-the-sap-erp-connector.md)
+ 1. [Set up Secure Network Communications](set-up-secure-network-communications.md)
  1. Familiarity with public and private key technologies.
 
-## Generating a Signing Certificate to Issue Tokens for Users
+## Generating a signing certificate to issue tokens for users
 
 We generate an example self signed root certificate similar to those certificates provided by a Certificate Authority.
 
-### Creating A Demo Public Key Infrastructure
+### Creating a demo public key infrastructure
 
-Extending the [Setup Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
+Extending the [Set up Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
 
 ![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
@@ -98,7 +98,7 @@ openssl x509 -req -in signingUsersCert/users.csr.pem -days 3650 `
   -CAserial rootCA/serial
 ```
 
-#### Generating User Certs:
+#### Generating user certs:
 
 Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`.
 
@@ -119,7 +119,7 @@ openssl x509 -req -days 365 -in userCerts/TESTUSER01.csr.pem -sha256 `
 > [!NOTE]
 > CN=TESTUSER01 should be the first parameter.
 
-You should now have a root cert, an intermediate SNC (short for Secure Network Communications) Cert, an intermediate Users Cert, and a certificate to identify the user cert.
+You now have a root cert, an intermediate SNC (short for Secure Network Communications) Cert, an intermediate Users Cert, and a certificate to identify the user cert.
 
 Verify the chain with the following command:
 
@@ -129,7 +129,7 @@ $ openssl verify -CAfile rootCA/ca.cert.pem -untrusted signingUsersCert/users.ce
 userCerts/TESTUSER01.cert.pem: OK
 ```
 
-## Adding Users Signing Certificate + Certificate Chain to Windows Store
+## Adding users signing certificate + certificate chain to Windows Store
 
 Generate .p12 file from users signing certificate & private key.
 
@@ -153,9 +153,11 @@ Check subject name of certificate in the Windows Certificate Store
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
 ```
 
-## Entra ID to SAP User Mapping
+## Entra ID to SAP user mapping
 
-### Mapping X.509 Certificates to Users Explicitly
+You can map X.509 certificates to users explicitly, using rules, or by adding a user intermediate certificate to SAP.
+
+### Mapping X.509 certificates to users explicitly
 
 Explicitly map a small number of Entra ID users to SAP users.
 
@@ -169,7 +171,7 @@ Choose `New Entry` and enter `CN=TESTUSER01@CONTOSO.COM` (replacing the content 
 
 > DO NOT INCLUDE `p:` prefix.
 
-### Mapping X.509 Certificates to Users Using Rules
+### Mapping X.509 certificates to users using rules
 
 Use Certificate Rules to easy bulk map Entra ID users to SAP users.
 
@@ -184,7 +186,7 @@ Then created the following rule in t-code `CERTRULE`
 > [!NOTE]
 > Now wait 2 minutes to ensure cached connections to SAP have expired.. Then retest the connection. If not, you may run into the `No suitable SAP user found for X.509-client certificate` error.
 
-## Add the Users Intermediate Certificate to SAP
+## Add a user intermediate certificate to SAP
 
 Open t-code `STRUST` and double click on 
 In `STRUST` add the public certificate users.cert.pem file to the box.
@@ -195,7 +197,7 @@ In `STRUST` add the public certificate users.cert.pem file to the box.
 4. Select "Import Certificate" and choose your `signingUsersCert\users.cert.pem` public certificate.
 5. Select "Add to Certificate List".
 
-## Updating SAP System
+## Updating the SAP System
 
 Add the `SsoCertificateSubject` to your SAP System parameters.
 
@@ -217,5 +219,5 @@ Replace the connection with a new one that uses `Microsoft Entra ID (using certi
 > [!IMPORTANT] 
 > Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
-## Sources:
+Learn more:
 [On-premises data gateway FAQ | Microsoft Learn](/data-integration/gateway/service-gateway-onprem-faq#what-is-the-actual-windows-service-called---)
