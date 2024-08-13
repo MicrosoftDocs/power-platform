@@ -1,6 +1,6 @@
 ---
-title: Overview of intelligent applications
-description: Learn how architecture patterns, design areas, and architecture layers relate to well-architected Power Platform workloads that use generative AI features
+title: Overview of intelligent application workloads
+description: Learn how architecture patterns, design areas, and architecture layers relate to well-architected intelligent application workloads built with Power Platform
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Overview of Intelligent applications
+# Overview of intelligent application workloads
 
 This article provides Well-Architected Framework best practices for an intelligent application workloads. Application owners, Power Platform administrators, business stakeholders, and architects can use this guidance to create a technical foundation for their intelligent application workloads.
 
@@ -22,11 +22,11 @@ The term _workload_ is used to describe a set of application resources, data, an
 
 Generative AI is an artificial intelligence technology that uses large language models (LLMs) to generate original content and provide natural language understanding and responses. For details, see Technology guidance > [Generative AI](/ai/playbook/technology-guidance/generative-ai/).
 
-A Generative AI Power Platform workload leverages the capabilities of Microsoft’s Power Platform to integrate and utilize generative AI models for automating and enhancing business processes.
+An intelligent application workload built on Power Platform leverages the capabilities of Microsoft’s Power Platform to integrate and utilize generative AI models for automating and enhancing business processes.
 
 ## What are the common challenges?
 
-Developing Power Platform workloads that use Generative AI features can be complex and presents several challenges. Here are some of the most common ones:
+Developing an intelligent application workload built on Power Platform can be complex and presents several challenges. Here are some of the most common ones:
 
 - **Data quality and availability**: Generative AI models require large volumes of high-quality data. Ensuring data is clean, well-structured, and accessible can increase complexity.
 - **Integration with existing systems**: Seamlessly integrating generative AI with existing IT infrastructure and business processes can be resource-intensive and technically challenging.
@@ -59,7 +59,7 @@ Use the Well-Architected Framework pillars to improve your Generative AI Power P
 
 ## Assess technical and operational feasibility
 
-Before you start developing your Generative AI Power Platform workload assess technical and operational feasibility and identify risks and mitigation strategies.
+Before you start developing your intelligent application with Power Platform assess technical and operational feasibility and identify risks and mitigation strategies.
 
 You may also want to consider updating current workloads to use Generative AI capabilities - for example, when these capabilities can meet business needs at reduced costs. Consider modernizing based on the purpose of the application, life expectancy, supportability, cost, and service-level agreements (SLAs).
 
@@ -67,7 +67,7 @@ You may also want to consider updating current workloads to use Generative AI ca
 
 #### Data availability and quality
 
-High quality data ensures consistency and accuracy for the Generative AI Power Platform workload. As part of your feasibility assessment, consider the following:
+High quality data ensures consistency and accuracy for the intelligent application workload. As part of your feasibility assessment, consider the following:
 
 - **Source Identification**: Identify and catalog all potential data sources, including internal databases, external APIs, and third-party datasets. Ensure these sources are reliable and accessible.
 - **Data Silos**: Identify if the current process uses any disparate data sources, like spreadsheets. The integration of this disparate data into the AI system may pose a challenge but is essential for providing accurate responses.
@@ -78,14 +78,14 @@ High quality data ensures consistency and accuracy for the Generative AI Power P
 
 #### Integration requirements
 
-Straightforward integration facilitates real-time data access and updates for the Generative AI Power Platform workload. As part of your feasibility assessment, consider the following:
+Straightforward integration facilitates real-time data access and updates for the intelligent application workload. As part of your feasibility assessment, consider the following:
 
 - **Existing Infrastructure**: Assess the compatibility of generative AI models with your current infrastructure. Assess if robust APIs are available for easy integration.
 - **Integration Points**: Identify how Generative AI will integrate with the required data sources. Assess if connectors or APIs are available
 
 #### Technical complexity challenges
 
-Accurate responses rely on a well-architected Generative AI Power Platform workload. As part of your feasibility assessment, consider the following:
+Accurate responses rely on a well-architected intelligent application workload. As part of your feasibility assessment, consider the following:
 
 - **Crafting Effective Prompts**: Design precise and contextually relevant prompts helps guide the AI to produce accurate and relevant responses.
 - **Regular Evaluation**: Implement continuous monitoring and testing of AI outputs to assess accuracy, relevance, and ethical adherence.
@@ -117,11 +117,7 @@ The success of your intelligent application workload depends on users being comf
 
 ### Risks and mitigations
 
-Data privacy concerns, potential biases in AI response, and technical failures are potential risks. Ensuring data privacy is critical, especially as the intelligent application workload might handle sensitive data.
-
-- **Data Privacy**: 
-
-When planning a generative AI power platform workload, it's essential to address several key risks and implement effective mitigations:
+Data privacy concerns, potential biases in AI response, and technical failures are potential risks. Ensuring data privacy is critical, especially as the intelligent application workload might handle sensitive data. When planning an intelligent application workload with Power Platform, it's essential to address several key risks and implement effective mitigations:
 
 - **Data Privacy**: Safeguard sensitive data used and generated by AI models. Implement encryption, access controls, and regular security audits. Ensure the workload complies with relevant regulation standards, such as GDPR or HIPAA, to protect user privacy and data.
 
@@ -137,4 +133,13 @@ When planning a generative AI power platform workload, it's essential to address
 
 ## What are the key design areas?
 
-- Responsible AI ? 
+- Responsible AI
+- Security and Compliance
+- Monitoring
+- Publishing / deploying
+- Configuring and integrating knowledge sources
+- Optimize for plug-ins / Leveraging advanced plugin actions and connectors 
+- Enhancing NLU, packaging and deploying copilot
+- Optimize for RAG
+- Costs and scale
+- Use case prioritization ? 
