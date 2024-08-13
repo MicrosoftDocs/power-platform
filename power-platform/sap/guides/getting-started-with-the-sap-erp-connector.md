@@ -30,7 +30,7 @@ The SAP ERP connector for Power Platform helps you seamlessly integrate your SAP
 
 ## Prerequisites
 
-Before you begin, make sure you meet the requirements defined in the [SAP ERP Connector documentation](/connectors/saperp/#pre-requisites).
+Before you begin, make sure you have the necessary [administration](/power-platform/admin/admin-documentation) rights and meet the requirements defined in the [SAP ERP Connector documentation](/connectors/saperp/#pre-requisites).
 
 ## Step 1: Set up your on-premises data gateway (OPDG)
 
@@ -100,9 +100,11 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 1. Save your flow.
 1. Select **Test** to try out your flow.
 
+Once you test and verify the SAP action, you're ready to learn [best practices for building](/power-platform/well-architected/) powerful Microsoft Power Platform solutions that work with your SAP systems.
+
 ## Troubleshooting tips
 
-- If you see a *SAP Library load failure* error, make sure you've installed the SAP .NET Connector correctly and restarted the OPDG.
+- If you see an *SAP Library load failure* error, make sure the SAP .NET Connector is installed correctly and restart the on-premises data gateway.
 - For connection issues, double-check your SAP credentials and System ID.
 - Remember that the first connection may take up to 2 minutes to establish.
 
@@ -112,5 +114,3 @@ Now that you've set up the SAP ERP connector for Power Platform, you can:
 
 - Try out more complex SAP functions in your flows
 - [Set up Secure Network Communication (SNC)](set-up-secure-network-communications.md)
-
-By following this guide, you've successfully set up the SAP ERP connector. You're now ready to create powerful integrations between your SAP systems and Microsoft Power Platform solutions.
