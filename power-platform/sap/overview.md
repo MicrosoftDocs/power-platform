@@ -25,7 +25,7 @@ Discover how SAP on Power Platform empowers your team to make data-driven decisi
 Learn more:
  - [SAP ERP Connector](/connectors/saperp/)
  - [SAP OData Connector](/connectors/sapodata/)
- - [Getting Started with the SAP ERP Connector](./guides/getting-started-with-the-sap-erp-connector.md)
- - [Set up Secure Network Communications(SNC)](set-up-secure-network-communications.md)
- - [Set up Microsoft Entra ID using certificates(SSO)](set-up-microsoft-entra-id-with-certificates.md)
+ - [Getting Started with the SAP ERP Connector](guides/getting-started-with-the-sap-erp-connector.md)
+ - [Set up Secure Network Communications(SNC)](guides/set-up-secure-network-communications.md)
+ - [Set up Microsoft Entra ID using certificates(SSO)](guides/set-up-microsoft-entra-id-with-certificates.md)
 
