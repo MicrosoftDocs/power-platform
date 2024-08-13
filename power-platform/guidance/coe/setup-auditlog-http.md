@@ -68,7 +68,6 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 1. Select **Certificates and secrets**.
 
 1. Select **+ New client secret**.
-   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows the location of the +New client secret button on the Certificates & secrets menu." lightbox="media/coe39.png":::
 
 1. Add a description and expiration in line with your organization's policies, and then select **Add**.
 
