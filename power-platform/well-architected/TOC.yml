@@ -174,7 +174,11 @@
             - name: XO:09 User interface content
               href: ./experience-optimization/user-interface-content.md
     - name: Workloads
-      href: workloads.md
+      items: 
+      - name: Overview
+        href: workloads.md
+      - name: Generative AI Power Platform workload
+        href: workloads/gen-ai-workload-overview.md
     - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support
