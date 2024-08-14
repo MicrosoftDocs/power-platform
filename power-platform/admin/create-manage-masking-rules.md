@@ -2,7 +2,7 @@
 title: Create and manage masking rules (preview)
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 08/13/2024
+ms.date: 08/14/2024
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
@@ -208,10 +208,6 @@ In these examples, replace `<url>`, `<tablename>`, and `<recordid>` with your ow
 
 ## Known limitations
 
-- **Assigning masking rules on a secured column isn't effective immediately on the client form**
-
-  Assigning a masking rule to a secured column can *take up to one day* for it to be effective on the client form/grid. This caching issue is being addressed and should be resolved by May 30, 2024.
-
 - **Using Search**
 
   You can enable **Search** on a secured column with masking rules. When you search on a sensitive column with unmasked values, the results might return as unmasked values.
@@ -227,7 +223,3 @@ In these examples, replace `<url>`, `<tablename>`, and `<recordid>` with your ow
 - **Creating and updating unmasked values on the form**
 
   When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked. You can update the field but make sure that you enter the unmasked values.
-
-- **Using the Timeline view**
-
-  If you enabled a masking rule in the email description, the description of the email in the *Timeline* view is shown with unmasked values.
