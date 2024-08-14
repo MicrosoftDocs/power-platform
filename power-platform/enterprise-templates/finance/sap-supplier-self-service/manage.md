@@ -1,7 +1,7 @@
 ---
 title: Manage the SAP Supplier Self Service template for Power Platform
 description: Learn how to manage the SAP Supplier Self Service template for Microsoft Power Platform.
-author: sandhangitmsft
+author: sandhangitms
 contributor:
   - EllenWehrle
 ms.author: sandhan

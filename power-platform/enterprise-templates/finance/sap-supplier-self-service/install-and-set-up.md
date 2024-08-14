@@ -1,7 +1,7 @@
 ---
 title: Install and set up the SAP Supplier Self Service template for Power Platform
-description: Learn how to install, set up, and deploy the SAP Supplier Self Service template for Microsoft Power Platform.
-author: sandhangitmsft
+description: Learn how to install, set up, and deploy the SAP Supplier Self Service solution for Microsoft Power Platform.
+author: sandhangitms
 contributor:
   - EllenWehrle
 ms.author: sandhan
