@@ -61,10 +61,6 @@
     href: finance/sap-supplier-self-service/install-and-set-up.md
   - name: Manage
     href: finance/sap-supplier-self-service/manage.md
-  - name: Use
-    href: finance/sap-supplier-self-service/use.md
-- name: SAP FAQs
-  href: finance/faqs.md
 - name: Human Resources
   items:
   - name: Employee Kudos
