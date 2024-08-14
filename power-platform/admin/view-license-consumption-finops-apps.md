@@ -2,7 +2,7 @@
 title: View license consumption for finance and operations apps 
 description: Learn how to view your organization's Power Apps license consumption for finance and operations apps. 
 author: amiyapatr-zz
-ms.date: 01/03/2024
+ms.date: 08/15/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice:
@@ -22,7 +22,7 @@ You can use the **Licenses** page in the [Power Platform admin center](https://a
 - What types of finance and operations licenses do you have available for your tenant?
 - How many licenses have been assigned to users?
 - How many roles have been assigned to users in different finance and operations environments, and what licenses are needed based on their role assignment?
-- Are additional licenses needed based on role assignments in your tenant?
+- Are extra licenses needed based on role assignments in your tenant?
 
 
 ## Summary tab
@@ -50,7 +50,7 @@ You can view the individual licenses mapped to a license level, and the number o
 
 ### Drill-down view
 
-Select the specific **User license level** to see a list, and additional details of users who are required to have the selected license.
+Select the specific **User license level** to see a list, and more details of users who are required to have the selected license.
 
 | Information | Description |
 | ------- | ----------- |
