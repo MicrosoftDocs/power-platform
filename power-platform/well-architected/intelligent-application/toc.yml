@@ -1,0 +1,17 @@
+- name: Intelligent application
+  href: index.yml
+  items:
+  - name: Overview
+    href: overview.md
+  - name: Design principles
+    href: design-principles.md
+  - name: Design areas
+    items: 
+      - name: Responsible AI
+        href: responsible-ai.md
+      - name: Security and Compliance
+        href: security.md
+      - name: Monitoring
+        href: monitoring.md
+      - name: Publishing
+        href: publishing.md

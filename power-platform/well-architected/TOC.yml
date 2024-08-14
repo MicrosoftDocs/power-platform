@@ -177,8 +177,8 @@
       items: 
       - name: Overview
         href: workloads.md
-      - name: Intelligent applications
-        href: gen-ai-workload/index.yml
+      - name: Intelligent application
+        href: intelligent-application/index.yml
     - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support
