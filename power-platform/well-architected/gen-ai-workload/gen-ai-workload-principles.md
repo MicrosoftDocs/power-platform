@@ -11,7 +11,6 @@ ms.topic: conceptual
 
 # Design Principles of intelligent application workloads
 
-Guidance about well-architected intelligent application workloads is built on the Power Platform Well-Architected Framework and its five pillars of architectural excellence. The following table lists each pillar and a summary of its goals.
 
 | Well-Architected Framework pillar | Summary |
 |---|-----|
@@ -21,13 +20,83 @@ Guidance about well-architected intelligent application workloads is built on th
 | **Operational Excellence** | An intelligent application workload requires comprehensive monitoring and logging to track the performance and health of AI models, workflows and conversations. This helps in quickly identifying and resolving issues. Operational Excellence also recommends how to use automation to streamline operations, reduce manual intervention, and minimize the risk of human error. Ensure that your intelligent application workload meets operational excellence standards. |
 | **Experience Optimization** | An intelligent application workload needs to have a focus on conversation design to be user-friendly and allow users to achieve their goals with minimal effort. The experience should account for topics the generative AI can't handle and have fallback mechanisms in place. Also implement mechanisms to gather user feedback and continuously improve the AI models and workload based on this feedback. |
 
-## Reliability 
+## Reliability
+
+It's important to focus on resilience and availability when you design an intelligent application workload with power Platform.
+
+- *Resiliency* refers to recovering from failures and maintaining functionality.
+- *Availability* ensures uninterrupted uptime. High availability minimizes application downtime and enhances recovery from incidents.
+
+Reliability is important in the development of any workload, and generative AI is no exception. There are unique considerations when engineering generative AI workloads through a reliability lens. Recognizing and emphasizing resilience is essential for generative AI workloads to ensure organizational availability and maintain business continuity.
+
+Failures can happen in the cloud. Instead of trying to prevent failures altogether, your goal should be to minimize the effects of a single failing component. Use the following information to minimize downtime and ensure that recommended practices for high availability are built into your intelligent application workload:
+
+- Ensure the workload can handle failures and continue to operate, even if at reduced functionality. This involves identifying potential faults and making the system resilient to tolerate and recover from these faults.
+- Make the workload observable so that development teams can learn from failures. This includes monitoring, logging, and alerting mechanisms to quickly identify and address issues.
+- Ensure the workload can scale to handle varying loads, especially important for AI workloads that may have fluctuating demands. This includes horizontal scaling and performance testing.
+- Implement robust error handling and recovery mechanisms. This includes setting up automated alerts for system failures and having a clear plan for quick recovery.
+- Understand the target volumes of chat messages or conversations to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential impact on Dataverse storage for the conversation transcripts.
+
+When discussing reliability with intelligent applications that use generative AI capabilities, you need to consider not only the resiliency and availability, but also how reliable and accurate responses can be provided by the intelligent workload. Consider the following recommendations for each design consideration:
+
+- Optimize for Retrieval Augmented Generation (RAG): Ensure your data is clean and well-structured, create efficient embeddings and indexes for quick retrieval, and implement robust monitoring and feedback mechanisms to continuously improve the workload's performance.
+- Effective Prompts: Design precise and contextually relevant prompts helps guide the AI to produce accurate and relevant responses.
+- Regular Evaluation: Implement continuous monitoring and testing of AI outputs to assess accuracy, relevance, and ethical adherence.
+- Feedback Loops: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
+- Domain-Specific Training: Fine-tune models on domain-specific data to enhance their accuracy in specific contexts.
+- Regular Updates: Periodically update models with new data to maintain their relevance and accuracy.
+- Unrecognized intents: Handle unrecognized intents by using [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) to look for the answer on various data sources and/or using the [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) to integrate with other systems. For example, question answering in Azure Cognitive Service for Language allows you to offload large volumes of question-and-answer pairs. It also has a chitchat model to handle random questions to the copilot.
 
 ## Security
 
+In a shared-responsibility model:
+
+- Organizations are primarily responsible for managing and operating workloads.
+- Microsoft manages the the security of the underlying infrastructure, including data centers, network security, and physical security measures and built-in security features such as encryption, identity management, and compliance with industry standards. Learn more: [Security in Power Platform](/power-platform/admin/security/overview) and [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance)
+
+We recommend that you regularly assess the services and technologies to ensure that your security posture adapts to the evolving threat landscape. Establishing a clear understanding of the shared responsibility model when you collaborate with vendors to implement suitable security measures is also essential.
+
+You can employ several methods to secure your intelligent application workloads:
+
+- **User authentication and access control**: Implement robust authentication and access control measures to ensure authorized users can access Copilot.
+- **Compliance**: Ensuring that data is protected and managed in compliance with regulatory requirements.
+- **Integration**: Secure all integrations with service principals and other best practices. Monitor and protect the network integrity of internal and external endpoints through security capabilities and appliances, such as firewalls or web application firewalls.
+- **Ongoing monitoring and auditing**: Continuously monitor and audit the Copilots activities to detect and respond proactively.
+
 ## Performance efficiency
 
+Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users.
+
+Increase performance efficiency by:
+
+- Understanding target volumes helps validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential impact on Dataverse storage for the conversation transcripts.
+- Understand [platform limits](/microsoft-copilot-studio/requirements-quotas). When integrating with external systems, for example through Power Automate or HTTP requests, it’s important to validate that every part can handle the load.
+- Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts
+- Understand the expected copilot response times for
+  - First chat load and first message response
+  - Maximum latency for the copilot to answer user queries
+  - Approach for handling long-running actions (e.g. waiting for an external system to return data)
+
+Considering each of these aspects helps you build an intelligent application workload a consistent, cohesive user experience.
+
+In the context of intelligent application workloads and conversational AI, the deflection rate should also be used as a metric to measure performance. Deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
+
 ## Operational excellence
+
+Operational excellence is about creating efficient processes to support your intelligent application workload.
+
+Operation failures affect the other design areas and the overall success of the intelligent application workload. It’s critical to tailor your operational processes to support an intelligent application workload in production. The following recommendations drive operational excellence:
+
+- Automate build and release processes. Fully automated build and release processes reduce the friction and increase the velocity of deploying updates, bringing repeatability and consistency across environments. Automation shortens the feedback loop from developers pushing changes to getting insights on code quality, test coverage, resiliency, security, and performance, which increases developer productivity.
+- Maintain governance and compliance.
+- Analyze your environment's performance and health in production.
+- Maintain documentation that captures:
+  - Troubleshooting procedures.
+  - Disaster-recovery plans.
+- Remediation guidance on how to accelerate the process of resolving problems.
+- Embrace continuous operational improvement. Prioritize routine improvement of the system and user experience, using a health model to understand and measure operational efficiency with feedback mechanisms to enable application teams to understand and address gaps in an iterative manner.
+
+These recommendations can help your team collaborate in a way that's efficient and transparent.
 
 ## Experience Optimization
 
