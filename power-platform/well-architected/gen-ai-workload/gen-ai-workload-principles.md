@@ -11,7 +11,6 @@ ms.topic: conceptual
 
 # Design Principles of intelligent application workloads
 
-
 Guidance about well-architected intelligent application workloads is built on the Power Platform Well-Architected Framework and its five pillars of architectural excellence. The following table lists each pillar and a summary of its goals.
 
 | Well-Architected Framework pillar | Summary |
