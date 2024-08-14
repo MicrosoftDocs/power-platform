@@ -67,8 +67,6 @@ You can filter the view using **Environment, Security role, Role license** and *
 
 Select an **Email/User ID** to view the details of all roles assigned to the selected user across all finance and operations environments in the tenant. This view also provides recommendations on what licenses should be assigned to the user based on the user's assigned roles. This can be seen in the following image.
 
-:::image type="content" source="media/user-license-level-details.png" alt-text="Screenshot of the details of all roles assigned to a selected user across all finance and operations environments in a tenant.":::
-
 ## Download
 
 To download the license usage information, select **Download** in the **summary** tab to initiate a download. After a CSV file is generated, you can download the same file again within five days without having to start a new download.
