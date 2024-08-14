@@ -25,7 +25,7 @@ The SAP Supplier Self Service solution improves your procurement operations. It 
 The template's components are ready for you to extend and customize to meet your organization's unique needs. The template consists of two solutions:
 
 - **SAP Supplier Self Service** contains tables, cloud flows, chatbot definitions and customizations
-- **Supplier Self Service Portal** contains Power Pages supplier website and its components
+- **Supplier Self Service Portal** contains the Power Pages supplier website and its components
 
 You can learn more about the SAP Supplier Self Service template solutions on the [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) GitHub site.
 
