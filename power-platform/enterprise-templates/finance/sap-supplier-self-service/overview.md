@@ -18,9 +18,9 @@ ms.collection: bap-ai-copilot
 
 The SAP Supplier Self Service template introduces a customizable Power Pages site to complement the [SAP Procurement](sap-procurement/overview) template. It leverages the same architecture as the SAP Procurement template utilizing Power Automate cloud flows and the SAP ERP connector for integration.
 
-The SAP Supplier Self Service solution improves your procurement operations. It offers a streamlined self-service site for your suppliers and vendors to create and update business records related to to Vendors, Orders, and Invoices in your SAP system.
+:::image type="content" source="media/overview/sap-ss-site.png" alt-text="Screenshot of the Supplier Self-Service site.":::
 
-- The option to set up a copilot chat bot to assist users.
+The SAP Supplier Self Service solution improves your procurement operations. It offers a streamlined self-service site for your suppliers and vendors to create and update business records related to to Vendors, Orders, and Invoices in your SAP system, and the option to set up a copilot chat bot to assist users.
 
 The template's components are ready for you to extend and customize to meet your organization's unique needs. The template consists of two solutions:
 
