@@ -30,10 +30,14 @@ landingContent:
     linkLists:
       - linkListType: concept
         links:
-          - text: Optimize security
-            url: gen-ai-workload-principles.md
-          - text: Monitor workloads
-            url: gen-ai-workload-principles.md
+          - text: Responsible AI
+            url: gen-ai-responsible-ai.md
+          - text: Security and Compliance
+            url: gen-ai-security.md.md
+          - text: Monitoring
+            url: gen-ai-monitoring.md.md
+          - text: Publishing
+            url: gen-ai-publishing.md
  # Card
   - title: Take the assessment
     linkLists:

@@ -5,3 +5,13 @@
     href: gen-ai-workload-overview.md
   - name: Design principles
     href: gen-ai-workload-principles.md
+  - name: Design gen-ai-workload-principles.md
+    items: 
+      - name: Responsible AI
+        href: gen-ai-responsible-ai.md
+      - name: Security and Compliance
+        href: gen-ai-security.md
+      - name: Monitoring
+        href: gen-ai-monitoring.md
+      - name: Publishing
+        href: gen-ai-publishing.md
