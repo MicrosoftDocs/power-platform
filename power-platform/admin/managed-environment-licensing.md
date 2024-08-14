@@ -31,7 +31,7 @@ To see your current license usage, select **View license consumption (preview)**
 > [!IMPORTANT]
 > At this time, enabling [pay-as-you-go](pay-as-you-go-overview.md) for a managed environment will not be sufficient to meet Managed Environments licensing requirements, if:
 > - There are users without standalone Power Apps licenses using Power Apps in that environment.
-> - There are users without standalone Power Automate licenses using flows in that environment, or users using flows without Power Automate per flow licenses in that environment, or users using flows without Power Automate per flow licenses in that environment.
+> - There are users without standalone Power Automate licenses using flows in that environment, or users using flows without Power Automate per flow licenses in that environment.
 
 
 > [!NOTE]
