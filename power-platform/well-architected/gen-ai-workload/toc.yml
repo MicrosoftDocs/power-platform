@@ -5,7 +5,7 @@
     href: gen-ai-workload-overview.md
   - name: Design principles
     href: gen-ai-workload-principles.md
-  - name: Design gen-ai-workload-principles.md
+  - name: Design areas
     items: 
       - name: Responsible AI
         href: gen-ai-responsible-ai.md
