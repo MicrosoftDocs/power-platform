@@ -3,7 +3,7 @@ title: View Power Platform administrative logs using auditing solutions in Micro
 description: In this article, you learn how to view Power Platform administrative logs using auditing solutions in Microsoft Purview.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/06/2024
+ms.date: 07/23/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -26,10 +26,11 @@ In this article, you learn about activities that are performed on Power Platform
 - [Environment property and setting change activities](#activity-category-environment-property-and-setting-change-activities)
 
 > [!IMPORTANT]
+>
 > - Administrative activities for Power Platform environments are enabled by default on all tenants. You can't disable activity collection.
 > - At least one user with an assigned Microsoft 365 E5 or greater license, as required by Microsoft Purview. More information: [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 
-The audit activities include actions made by global administrators, Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
+The audit activities include actions made by Power Platform administrators, Dynamics 365 administrators, members of the System Administrator role (for Power Platform environments with Dataverse), the environment creator or owner (for Power Platform environments without Dataverse), and impersonated users that map to any of these roles.
 
 Each activity event consists of a common schema defined at [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). The schema defines the payload of metadata that is unique for each activity.
 
@@ -168,6 +169,9 @@ Here's an example of the payload of metadata that can be expected from one of th
 
 > [!NOTE]
 > Activity logging for data policies is not currently available in sovereign clouds.
+
+> [!NOTE]
+> Currently users with an E5 license can view these audit events.
 
 All the data policy events show up under **GovernanceApiPolicyOperation** activity. Each activity event contains a property collection, which emits the following properties: <ul><li>Operation Name</li><li>Policy ID</li><li>Policy display name</li><li>Additional Resources(if applicable)</li></ul>
 The following data policy events are delivered to Microsoft Purview.
