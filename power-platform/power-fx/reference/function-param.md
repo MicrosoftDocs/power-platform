@@ -26,17 +26,21 @@ Launches a webpage or a canvas app and provides access to launch parameters.
 
 Launches a webpage or a canvas app. The function supports:
 
-- **Address** (required), the URL of the webpage or App URI (app id prefixed with `/providers/Microsoft.PowerApps/apps/`) of the canvas app.
+- **Address** (required), the URL of the webpage of the canvas app.
 - **Parameters** (optional), named values to pass to the webpage or canvas app. In a canvas app, parameters can be read with the [**Param**](#param) function.
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
 **Launch** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
+>[!NOTE]
+> If the Launch formula is used to open Power Apps and the app isn't visible to the end user, it's recommended to check if the app is blocked by a browser pop-up blocker or if the browser is wait for the user's response to a dialog box that asks whether they want to navigate to a new screen.
+
+
 ### Address
 
 Webpages are launched via a URL address. For example:
 
-```powerapps-dot
+```power-fx
 Launch( "https://bing.com" )
 ```
 
@@ -49,16 +53,16 @@ You can launch canvas apps with **Web link** or **App URI** (app id prefixed wit
 
    ![App details option.](media/function-param/portal-details.png "App details option")
 
-1. Copy **Web link** or **App ID**.
+1. Copy **Web link**.
 
    ![App details with web link and app id.](media/function-param/portal-links.png "App details with web link and app id")
 
-The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function.
+The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function. For example:
 
-The **App ID** can be used with the **Launch** function, but must be prefixed with `/providers/Microsoft.PowerApps/apps/`. For example:
 
-```powerapps-dot
-Launch( "/providers/Microsoft.PowerApps/apps/f342faaf-5f82-4ace-a64b-7c1b01499231" )
+```power-fx
+Launch( "https://apps.powerapps.com/e/{environment id}/a/{app id}?tenantId={tenantId}" )
+
 ```
 
 Native apps on a device can't be launched directly. There may be indirect options available on some platforms, such as a native app installing a custom URL scheme or registering with the web browser to offer an option for specific web sites.
@@ -69,13 +73,13 @@ Native apps on a device can't be launched directly. There may be indirect option
 
 - An argument list of name value pairs. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", "q", "Power Apps", "count", 1 )
   ```
 
 - A record of field values. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", { q: "Power Apps", count: 1 } )
   ```
 
@@ -206,7 +210,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 
 Update the app ID, screen name, and record number as appropriate.
 
-```powerapps-dot
+```power-fx
 Launch( "/providers/Microsoft.PowerApps/apps/YOUR-APP-ID",
         { Navigate: "Second Screen", Record: 34 }
 )

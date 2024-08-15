@@ -3,8 +3,8 @@ title: Recommendations for implementing effective information architecture
 description: Learn strategies for implementing an effective information architecture in your workload to ensure user experience optimization.
 author: RobStand
 ms.author: rstand
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -65,6 +65,8 @@ To implement a wizard pattern, use the [SubwayNav component](/power-platform/gui
 [Navigation in a canvas app learn module](/training/modules/navigation-canvas-app/)
 
 ## Experience Optimization checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Experience Optimization checklist](checklist.md)

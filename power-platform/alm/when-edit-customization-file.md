@@ -37,7 +37,7 @@ The customizations.xml file that is exported as part of an unmanaged solution ca
  For more information, see [Change Application Navigation using the SiteMap](/dynamics365/customer-engagement/developer/customize-dev/change-application-navigation-using-sitemap)
  
  **Editing FormXml**  
- FormXml is used to define entity forms and dashboards. The form editor and dashboard designer in the application are the most commonly used tools for this purpose. Editing the customizations.xml file is an alternative method. For more information, see [Customize entity forms](/powerapps/developer/model-driven-apps/customize-entity-forms)and [Create a Dashboard](/powerapps/developer/model-driven-apps/create-dashboard).
+ FormXml is used to define entity forms and dashboards. The form editor and dashboard designer in the application are the most commonly used tools for this purpose. Editing the customizations.xml file is an alternative method. For more information, see [Customize entity forms](/powerapps/developer/model-driven-apps/customize-entity-forms) and [Create a Dashboard](/powerapps/developer/model-driven-apps/create-dashboard).
   
  **Editing saved queries**  
  Definitions of views for entities are included in the customizations.xml file and may be manually edited. The view editor in the application is the most commonly used tool for this purpose. Editing customizations.xml is an alternative method. For more information, see [Customize entity views](/powerapps/developer/model-driven-apps/customize-entity-views).

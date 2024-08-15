@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI Command Groups| Microsoft Docs
 description: "Descriptions for Power Platform Command Line Interface commands."
 keywords: "pac cli"
 ms.subservice: developer
-ms.author: marcsc
 author: devkeydet
-ms.date: 1/22/2024
+ms.author: marcsc
+ms.date: 7/8/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -31,15 +31,15 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac connector](connector.md)|Commands for working with Power Platform Connectors|
 |[pac copilot](copilot.md)|Tools and utilities for copilot management|
 |[pac data](data.md)|Import and export data from Dataverse.|
+|[pac env](env.md)|Work with your Dataverse organization.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
 |[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables|
-|[pac org](org.md)|Work with your Dataverse organization.|
 |[pac package](package.md)|Commands for working with Dataverse package projects|
+|[pac pages](pages.md)|Commands for working with Power Pages website.|
 |[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects|
 |[pac pipeline](pipeline.md)|Work with Pipelines|
 |[pac plugin](plugin.md)|Commands for working with Dataverse plug-in class library|
 |[pac power-fx](power-fx.md)|(Preview) Commands for working with Power Fx|
-|[pac powerpages](powerpages.md)|Commands for working with Power Pages website.|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects|
 |[pac telemetry](telemetry.md)|Manage telemetry settings.|
 |[pac test](test.md)|(Preview) Execution of automated tests for a Power App|

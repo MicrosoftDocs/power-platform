@@ -15,7 +15,7 @@ search.audienceType:
 
 ## Introduction
 
-Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Power Virtual Agents, and other services), and Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available.
+Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, and other services), and Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available.
 
 For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). For each of these scenarios, communication is provided through the Microsoft 365 admin center in the Message Center, and the Service health dashboard. The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions [here](/microsoft-365/admin/manage/message-center#preferences).
 
@@ -133,7 +133,7 @@ If the Microsoft 365 admin portal is unavailable, we will provide status updates
 
 **What information is provided about service incidents?**
 
-During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on a hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
+During the event, we include information that is related to the user impact, duration, any feasible workaround, and preliminary root cause. Our goal is to provide status updates on an hourly cadence, although this guideline may be reduced for substantive new information or extended based on waiting on recovery activities. At the restoration of the service to optimal operation, we will publish a final status update and determine if additional post incident report will be provided based on the breadth and type of impact to customers. 
 
 A post incident report (PIR) may be published after five business days on the Microsoft 365 Service health dashboard for certain events. 
 

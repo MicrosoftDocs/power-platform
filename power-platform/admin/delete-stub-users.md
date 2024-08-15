@@ -1,5 +1,5 @@
 ---
-title: Delete stub users from an environment (preview)
+title: Delete stub users from an environment 
 description: This article shows how to delete stub users from an environment in Microsoft Power Platform admin center.
 ms.subservice: admin
 author: paulliew
@@ -7,21 +7,15 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 04/25/2024
+ms.date: 08/05/2024
 search.audienceType: 
   - admin
 ---
 
-# Delete stub users from an environment (preview)
+# Delete stub users from an environment 
 [This article is prerelease documentation and is subject to change.]
 
-Stub user records are created as placeholder records in the user table. The records are typically imported from external systems during migration of those applications. The stub user records are created with a _disabled_ status and assigned with a security role. These users can’t log into the Dataverse environment. For more information, see [How stub users are created](create-users.md#how-stub-users-are-created).
-
-The stub users who are still active in the Microsoft Entra ID can be converted and activated as Dataverse users by mapping the stub users to the Microsoft Entra ID user. For stub users who are no longer in Microsoft Entra ID, they remain in the disabled status. Disabled status stub [users can be deleted.](delete-users.md#delete-users-in-power-platform)
-
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+Stub user records are created as placeholder records in the user table. They're created to allow records to be imported from external systems during migration of those applications. Stub user records are created with a _disabled_ status and assigned with a security role. These users can’t log into the Dataverse environment. For more information, see [How stub users are created](create-users.md#how-stub-users-are-created). You can delete these stub users from the user table.
 
 
 ## Delete disabled status stub users

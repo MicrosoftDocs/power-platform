@@ -19,7 +19,7 @@ There are different ways to obtain access to a particular record in Dataverse. T
  
 ## Privilege check
  
-The privilege check is the first barrier that needs to be passed in order to do a certain action with a record of an table. The privilege checks validate that the user has the required privilege for that table. For each table, whether out of the box or custom, there exist different privileges to provide interaction capabilities with the records of that type. 
+The privilege check is the first barrier that needs to be passed in order to do a certain action with a record of a table. The privilege checks validate that the user has the required privilege for that table. For each table, whether out of the box or custom, there exist different privileges to provide interaction capabilities with the records of that type. 
 
 For example, for Account, the privileges are:
 
@@ -106,7 +106,7 @@ In this case, the user would have access to the record if both of the following 
 
 ## Record access check
 
-For each record that is displayed in the web client, the user has the ability to see how they were granted access to the record through the [**Check Access**](/power-apps/user/access-checker) option on the command bar. The user can also see other users who have accecss to the record and their respective access level.
+For each record that is displayed in the web client, the user has the ability to see how they were granted access to the record through the [**Check Access**](/power-apps/user/access-checker) option on the command bar. The user can also see other users who have access to the record and their respective access level.
 
 There are two environment database settings to configure to use the **Who has access** feature. [Install the **OrganizationSettingsEditor** tool](environment-database-settings.md#install-the-organizationsettingseditor-tool) and set the following to true:
  

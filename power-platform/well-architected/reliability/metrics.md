@@ -1,10 +1,10 @@
 ---
-title: Recommendations for defining reliability targets
-description: Learn how to define availability and recovery target metrics for critical workloads.
+title: Define reliability targets recommendation for Power Platform workloads
+description: Learn how to define a health model that includes availability and recovery target metrics for critical Power Platform workloads.
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/16/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -20,7 +20,7 @@ This guide describes the recommendations for defining availability and recovery 
 
 The targets are improved through monitoring and testing. Work with your internal stakeholders to establish realistic expectations for reliability. This exercise will also help stakeholders support your architectural design choices and understand that you're designing to best meet the targets you agreed on.
 
-Microsoft Power Platform handles most [infrastructure-level](https://trust.salesforce.com/) availability and reliability concerns for you. However, the availability of the workloads you build is a shared responsibility. It's important to understand that even with Microsoft's [commitment to high availability](https://trust.salesforce.com/en/#systemStatus), the risk of system downtime is never zero.
+Microsoft Power Platform handles most [infrastructure-level](/power-platform/admin/business-continuity-disaster-recovery) availability and reliability concerns for you. However, the availability of the workloads you build is a shared responsibility. It's important to understand that even with Microsoft's [commitment to high availability](https://servicetrust.microsoft.com/), the risk of system downtime is never zero.
 
 Consider using the following metrics to quantify the business requirements.
 
@@ -131,3 +131,10 @@ Microsoft Business Applications provides Business Continuity and Disaster Recove
 Cloud Adoption Framework provides guidance for recommendations for SLOs and SLIs related to monitoring across the organization.
 
 For more information, see [Cloud monitoring SLOs](/azure/cloud-adoption-framework/manage/monitor/service-level-objectives#how-do-you-define-slis).
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

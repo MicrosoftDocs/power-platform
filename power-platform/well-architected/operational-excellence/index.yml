@@ -1,17 +1,17 @@
 ### YamlMime:Landing
 
-title: Operational excellence quick links
+title: Operational Excellence quick links
 summary: Apply operational excellence guidance to your workload to ensure workload quality through standardized processes and team cohesion.
 
 metadata:
-  title: Operational excellence quick links
+  title: Operational Excellence quick links
   description: Learn about resources that can help you apply operational excellence guidance to your architectures.
   ms.topic: landing-page
   ms.service: power-platform
   ms.subservice: well-architected
   author: robstand
   ms.author: rstand
-  ms.date: 03/28/2024
+  ms.date: 05/10/2024
 
 landingContent:
   - title: Learn key points
@@ -26,7 +26,7 @@ landingContent:
             url: tradeoffs.md
       - linkListType: learn
         links:
-          - text: Operational excellence
+          - text: Operational Excellence
             url: /training/modules/azure-well-architected-operational-excellence/
       - linkListType: video
         links:
@@ -37,11 +37,11 @@ landingContent:
       - linkListType: concept
         links:
           - text: Embrace fusion and DevOps culture
-            url: principles.md#embrace-fusion-development-and-devops-culture
+            url: principles.md#embrace-a-fusion-development-and-devops-culture
           - text: Establish development standards
             url: principles.md#establish-development-standards
           - text: Evolve operations with observability
-            url: principles.md#evolve-operations-with-observability
+            url: principles.md#improve-operations-with-monitoring-and-insights
           - text: Deploy with confidence
             url: principles.md#deploy-with-confidence
           - text: Automate for efficiency
@@ -52,7 +52,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Start with a Fusion culture
+          - text: Start with a fusion culture
             url: fusion-culture.md
           - text: Formalize operational tasks
             url: formalize-operations-tasks.md
@@ -62,7 +62,7 @@ landingContent:
             url: tools-processes.md
           - text: Follow continuous integration practices
             url: release-engineering-continuous-integration.md
-          - text: Use safe deployment practices (SPD)
+          - text: Use safe deployment practices
             url: safe-deployments.md
   - title: Use automation
     linkLists:
@@ -82,7 +82,7 @@ landingContent:
             url: workload-supply-chain.md
           - text: Handle deployment failures
             url: mitigation-strategy.md
-          - text: Design an emergency response strategy 
+          - text: Design an emergency response strategy
             url: emergency-response.md
   - title: Explore related resources
     linkLists:

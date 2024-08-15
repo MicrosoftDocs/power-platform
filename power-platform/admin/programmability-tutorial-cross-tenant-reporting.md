@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/13/2023
+ms.date: 07/23/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -38,7 +38,7 @@ In this tutorial, learn how to:
 Use the following PowerShell script to authenticate using Power Platform API.
 
 > [!NOTE]
-> Only users with Global administrator and Power Platform administrator Entra ID roles have permission to run the tenant isolation impact report.
+> Users with the Power Platform administrator Entra ID role have permission to run the tenant isolation impact report.
 
 ```PowerShell
 Import-Module "MSAL.PS"

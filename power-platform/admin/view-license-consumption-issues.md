@@ -49,7 +49,7 @@ The **Summary** tab on the **Licenses (preview)** page displays a summary of any
 ### Power Apps licensing summary 
 From the **Product** dropdown list, select **Power Apps** to view license consumption information for Power Apps.
 
-The **Power Apps licensing summary** section provides details of how many Power Apps licenses have been purchased, how many of those licenses are assigned, and how many of those licenses are being actively used. This view is available for users with global admin, Power Platform admin, and Dynamics 365 admins roles.
+The **Power Apps licensing summary** section provides details of how many Power Apps licenses have been purchased, how many of those licenses are assigned, and how many of those licenses are being actively used. This view is available to Power Platform admin and Dynamics 365 admins roles.
 
 | Setting | Description |
 | ------- | ----------- |
@@ -69,11 +69,11 @@ The **Power Apps licensing summary** section provides details of how many Power 
 ### Power Automate licensing summary 
 From the **Product** dropdown list, select **Power Automate** to view license consumption information for Power Automate.
 
-This view is available for users with global admin, Power Platform admin, and Dynamics 365 admins roles.
+This view is available to Power Platform admin and Dynamics 365 admins roles.
 
 The **Power Automate licensing summary** section provides details of how many Power Automate licenses have been purchased, assigned, and consumed in your entire tenant. It provides details of which flow runs are consuming licenses. 
 
-The **Attention neded** section provides a summary count of flows requiring licensing attention in your entire tenant.
+The **Attention needed** section provides a summary count of flows requiring licensing attention in your entire tenant.
 
 | Setting | Description |
 | ------- | ----------- |
@@ -134,7 +134,7 @@ The **Environments** tab on the **Licenses (preview)** page displays licensing i
 | Premium feature | Indicates if a premium feature, such as a premium connector, custom connector, or Dataverse connector, was used in the flow. |
 | Flow type | Indicates if the flow is scheduled, instant, or automated. |
 | Download | Downloads the information in CSV format. Select a specific license type to start the download. After a CSV file is generated, you can download the same file again within five days without having to start a new download. |
-| Attention needed | Summary count of flows requiring licensing attention, which includes: </br><ul></br><li>List of flow not having an owner.</li></br><li>Standalone, Premium flow using standard or expired licenses.</li></br><li>Out of Context flow, such as Premium flows using Power Apps, Microsoft Copilot Studio, or Dynamics 365 licenses but not running in in the context of Power Apps, Microsoft Copilot Studio, or Dynamics 365.</li></br></ul> |
+| Attention needed | Summary count of flows requiring licensing attention, which includes: </br><ul></br><li>List of flow not having an owner.</li></br><li>Standalone, Premium flow using standard or expired licenses.</li></br><li>Out of Context flow, such as Premium flows using Power Apps, Microsoft Copilot Studio, or Dynamics 365 licenses but not running in the context of Power Apps, Microsoft Copilot Studio, or Dynamics 365.</li></br></ul> |
 
 ## Other ways to view licensing pages
 

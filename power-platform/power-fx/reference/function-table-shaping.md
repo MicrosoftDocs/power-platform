@@ -57,7 +57,7 @@ For all these functions, the result is a new table with the transform applied. T
 
 The arguments to these functions support delegation. For example, a **Filter** function used as an argument to pull in related records searches through all listings, even if the **'[dbo].[AllListings]'** data source contains a million rows:
 
-```powerapps-dot
+```power-fx
 AddColumns( RealEstateAgents,
    Listings,
    Filter(  '[dbo].[AllListings]', ListingAgentName = AgentName )
@@ -69,7 +69,7 @@ However, the output of these functions is subject to the [non-delegation record 
 If you use **AddColumns** in this manner, **Filter** must make separate calls to the data source for each of those first records in **RealEstateAgents**, which causes lots of network chatter. If **[dbo](.[AllListings]** is small enough and doesn't change often. You can call the **Collect** function in [**OnStart**](signals.md#app) to cache the data source in your app when it starts. As an alternative, you could restructure your app so that you pull in the related records only when the user asks for them.
 
 > [!NOTE]
-> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. Afer this version, all apps were automatically updated to the new syntax described in this article. 
+> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. After this version, all apps were automatically updated to the new syntax described in this article. 
 
 ## Syntax
 
@@ -118,7 +118,7 @@ Let's try some of the examples from earlier in this article.
 
 1. Create a collection by adding a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control and setting its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( IceCreamSales,
       Table(
           { Flavor: "Strawberry", UnitPrice: 1.99, QuantitySold: 20 },
@@ -132,7 +132,7 @@ Let's try some of the examples from earlier in this article.
 
 1. Add a second **Button** control, set its **OnSelect** property to this formula, and then run it:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( FirstExample,
       AddColumns( IceCreamSales, Revenue, UnitPrice * QuantitySold )
    )

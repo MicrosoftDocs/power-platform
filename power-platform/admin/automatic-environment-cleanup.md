@@ -47,7 +47,7 @@ If an environment has already been deleted, you have a limited window of time to
 
 A cleanup mechanism in Power Platform automatically removes environments that aren't being used. After 90 days of inactivity, an environment is disabled. After 30 days, if no action is taken, the disabled environment is deleted. You have seven days to recover deleted environments.
 
-Only developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the actvity-based automatic cleanup.
+Only developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for developer environments in the Power Platform admin center. 
@@ -71,14 +71,14 @@ A notification appears on the **Environments** list page and **Environment** pag
 
 ### Definition of user activity
 
-Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
+Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Microsoft Copilot Studio, and Dataverse.
 
 Most create, read, update, and delete operations on the environment&mdash;and its resources that a user, maker, or admin initiates&mdash;are considered activity. Most read operations like visits to the home page, solution explorer, and Power Apps or Power Automate designer aren't considered activity.
 
 Here are some examples of the types of activities that are included in the measure:
 
-- **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
-- **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Power Virtual Agents bot, or custom connector
+- **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Microsoft Copilot Studio bot
+- **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector
 - **Admin activity**: Environment operations such as copy, delete, recover, and reset  
 
 Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.

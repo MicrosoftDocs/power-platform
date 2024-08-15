@@ -26,16 +26,20 @@
           items:
           - name: Overview
             href: formula-reference-overview.md
-          - name: Power Apps formula reference
-            href: formula-reference.md
           - name: Canvas apps formula reference
             href: formula-reference-canvas-apps.md
-          - name: Dataverse formula reference
-            href: formula-reference-dataverse.md
           - name: Cards formula reference
-            href: formula-reference-cards.md
+            href: formula-reference-cards.md  
+          - name: Dataverse formula columns formula reference
+            href: formula-reference-formula-columns.md
+          - name: Dataverse plug-ins formula reference
+            href: formula-reference-plug-ins.md  
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md
+          - name: Model-driven apps formula reference
+            href: formula-reference-model-driven-apps.md
+          - name: Power Pages formula reference
+            href: formula-reference-power-pages.md
           - name: Power Platform CLI formula reference
             href: formula-reference-pac-cli.md
           - name: Abs

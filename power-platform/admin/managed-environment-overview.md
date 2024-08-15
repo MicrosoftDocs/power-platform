@@ -3,11 +3,12 @@ title: Managed Environments overview
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/08/2024
+ms.date: 05/28/2024
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: sericks
 contributors:
+  - ritesp 
   - ShawnNandiMSFT
   - AngelMarshall
 ms.subservice: admin
@@ -39,13 +40,14 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Extended backup](backup-restore-environments.md)
 - [DLP for desktop flow](/power-automate/prevent-data-loss)
 - [Export data to Azure Application Insights](overview-integration-application-insights.md)
-- [Catalog in Power Platform](../developer/catalog.md)
+- [Administer the catalog](administer-catalog.md)
 - [Default environment routing](default-environment-routing.md)
 - [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
+- [Virtual Network support for Power Platform](vnet-support-overview.md)
   
 
 > [!NOTE]
-> Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+> Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 >
 > Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 

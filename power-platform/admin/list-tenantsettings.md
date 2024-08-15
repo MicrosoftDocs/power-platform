@@ -5,14 +5,17 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/23/2024
+ms.date: 07/29/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
 contributors:
+- arjunmayur 
 - bibekTimalsina948
 - dannylevymsft
+ms.contributors:
+- pandeyashish
 ms.collection: bap-ai-copilot
 ---
 
@@ -77,7 +80,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
             "shareWithColleaguesUserLimit": 10000
         },
         "powerApps": {
-            "disableShareWithEveryone": false,
+            "disableShareWithEveryone": true,
             "enableGuestsToMake": false
         },
         "modelExperimentation": {
@@ -102,13 +105,13 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |disableSurveyFeedback | Boolean | Ability to disable all NPS survey feedback prompts in Power Platform. Default value is false.|
 |disableTrialEnvironmentCreationByNonAdminusers | Boolean | Restrict all trial environments to be created by tenant admins, Power Platform admins, or Dynamics 365 service admins. Default value is false.|
 |disableCapacityAllocationByEnvironmentAdmins | Boolean | Ability to disable capacity allocation by environment administrators. Default value is false.|
-|disableSupportTicketsVisibleByAllUsers | Boolean | Ability to disable support ticket creation by nonadmin users in the tenant. Default value is false.|
+|disableSupportTicketsVisibleByAllUsers | Boolean | Allows users, who already have access to the **Help + Support** page in Power Platform admin center, to see support requests created by other users in the tenant. Default value is True, which means this feature is turned off by default.|
 |powerPlatform.search.disableDocsSearch | Boolean | When this setting is true, users in the environment can see a message that indicates Microsoft Learn and documentation search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator. Default value is false.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is false.|
+|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to turn off the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is true.|
+|powerPlatform.powerApps.enableCanvasAppInsights | Boolean | Allow users to collect telemetry data about their app in Azure Application Insights. Setting this to **False**  blocks the transmission of this data. |
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
-|powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to disable the **Share with Everyone** capability in all Power Apps. Default value is false.|
 |powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default value is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps. Default value is false.|
 |powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting isn't currently used by the platform but might be used in the future.|

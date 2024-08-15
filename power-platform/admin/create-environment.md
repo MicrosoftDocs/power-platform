@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 2/27/2024
+ms.date: 07/26/2024
 ms.subservice: admin
 ms.author: mbajwa
 ms.reviewer: sericks
@@ -15,6 +15,7 @@ search.audienceType:
   - admin 
 contributors:
   - marcelbf
+  - iyanni
 ---
 
 # Create and manage environments in the Power Platform admin center
@@ -29,7 +30,7 @@ To determine which license a user has, sign in to the [Microsoft 365 admin cente
 
 To create an environment, these requirements must be true:
 
-1. The user has a license that allows environment creation. This requirement is waived for Global admins and Power Platform admins except for trial (standard) environments; see #2.c later.
+1. The user has a license that allows environment creation. This requirement is waived for service administrators such as Power Platform admins and Dynamics 365 admins except for trial (standard) environments; see #2.c later.
 
    | License | Trial | Production |
    | --- | --- | --- | 
@@ -120,7 +121,7 @@ For Dynamics 365 finance and operations apps, you need at least:
 
 ### Steps
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin, Global admin, or Power Platform admin.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
 
 1. In the navigation pane, select **Environments**, and then select **New**.
 
@@ -130,6 +131,7 @@ For Dynamics 365 finance and operations apps, you need at least:
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
+   |Get new features early     | Select **Yes** for early release cycle.        |
    |Type     | Choose production, trial, or sandbox.        |
    |Purpose     | A description of the environment.         |
    |Add a Dataverse data store | Select **Yes**. |
@@ -160,7 +162,7 @@ You need 1 GB of available database capacity.
 
 ### Steps
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin, Global admin, or Power Platform admin.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
 
 1. In the navigation pane, select **Environments**, and then select **New**.
 
@@ -170,6 +172,7 @@ You need 1 GB of available database capacity.
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
+   |Get new features early     | Select **Yes** for early release cycle.        |
    |Type     | You can choose production or trial.        |
    |Purpose     | A description of the environment.         |
    |Add a Dataverse data store | Select **No**. |
@@ -188,7 +191,7 @@ You can indicate how often you prefer an environment to receive updates and feat
 
 ### Set refresh cadence
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin, Global admin, or Power Platform admin.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 admin or Power Platform admin.
 
 2. In the navigation pane, select **Environments**, and then select an environment.
 
@@ -225,6 +228,12 @@ Users can access resources in an environment if they have:
   Learn how to share Power Platform resources:
   - [Share a canvas app with your organization](/powerapps/maker/canvas-apps/share-app)
   - [Share a cloud flow](/power-automate/create-team-flows)
+
+### Why do I no longer see Preview (United states) region?
+
+This region is no longer available as a choice. It has been replaced with the **Get new features early** setting when the United States region is selected.
+
+Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
 
 ### What are the new trial limits for Power Apps customers?
 

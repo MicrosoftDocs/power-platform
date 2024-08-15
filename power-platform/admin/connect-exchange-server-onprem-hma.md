@@ -73,9 +73,6 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 4. Select permissions. Be sure to add **Get permission** under **Secret permissions** and **Certificate permissions**.  Both are required for the KV-App to be able to access the certificate.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of setting permissions for access policy in Key Vault.](media/azure-key-vault-add-access-policy[1].png "Key Vault set permissions for access policy")
-
 5. Select **Add**.
 
 ## Create a new app registration for HMA access 
@@ -132,7 +129,7 @@ Before you [create an email server profile](connect-exchange-server-on-premises.
 - HMA Application Id: The App ID for HMA-App. It can be found on the main page for the app registration of HMA-App.
 - Key Vault Uri: The URI of the Key Vault used for certificate storage. 
 - Key Vault KeyName: The certificate name used in Key Vault. 
-- KeyVault Application Id: The the app ID of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
+- KeyVault Application Id: The app ID of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
 - KeyVault Client Secret: The client secret for the KV-App used by Dynamics 365. 
 
   > [!div class="mx-imgBorder"] 

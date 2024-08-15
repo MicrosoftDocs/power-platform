@@ -1,7 +1,7 @@
 ---
 title: Restrict cross-tenant inbound and outbound access
 description: "Use tenant restrictions to control access to SaaS cloud applications based on the Microsoft Entra tenant. You can also enforce tenant isolation for Power Platform connections."  
-ms.date: 10/12/2023
+ms.date: 07/26/2024
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: conceptual
@@ -19,7 +19,7 @@ search.audienceType:
 
 # Cross-tenant inbound and outbound restrictions
 
-Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft Entra that allow authorized Microsoft Entra users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Global administrators and Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. 
+Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft Entra that allow authorized Microsoft Entra users to build compelling apps and flows establishing connections to the business data available through these data stores. Tenant isolation makes it easy for administrators to ensure that these connectors can be harnessed in a safe and secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant. 
 
 Note that Power Platform tenant isolation is different from Microsoft Entra ID-wide tenant restriction. It *doesn't* impact Microsoft Entra ID-based access outside of Power Platform. Power Platform tenant isolation only works for connectors using Microsoft Entra ID-based authentication such as Office 365 Outlook or SharePoint. 
 
@@ -101,13 +101,12 @@ In this scenario, the admin adds the Fabrikam tenant to both the inbound and out
 
 :::image type="content" source="media/allow-list-both-tenants.png" alt-text="Bidirectional allow lists.":::
 
-
 ## Enable tenant isolation and configure allowlist
 
 In the Power Platform admin center, tenant isolation is set with **Policies** > **Tenant isolation**.  
 
 > [!NOTE]
-> You must have a Global administrator role or a Power Platform administrator role to see and set the tenant isolation policy.
+> You must have a Power Platform administrator role to see and set the tenant isolation policy.
 
 :::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation.":::
 
@@ -115,7 +114,7 @@ The tenant isolation allowlist can be configured by using **New tenant rule** on
 
 :::image type="content" source="media/new-tenant-rule.png" alt-text="New tenant rule to add rule to the allow list.":::
 
-From the **New tenant rule Direction** dropdown list, choose the direction of the allowlist entry.   
+From the **New tenant rule Direction** dropdown list, choose the direction of the allowlist entry.
 
 :::image type="content" source="media/new-tenant-rule-select-direction.png" alt-text="Select the direction for the new tenant rule.":::
 
@@ -164,7 +163,7 @@ Selecting the failed run will show details of the failed flow run.
 
 ## Known issues
 
-[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Microsoft Entra ID, the tenant isolation policy is not enforced. As a mitigation, we recomend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
+[Azure DevOps connector](/connectors/visualstudioteamservices) uses Microsoft Entra authentication as the identity provider, but uses its own OAuth flow and STS for authorizing and issuing a token. Since the token returned from the ADO flow based on that Connector’s configuration is not from Microsoft Entra ID, the tenant isolation policy is not enforced. As a mitigation, we recommend using other types of [data policies](wp-data-loss-prevention.md) to limit the use of the connector or its actions.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

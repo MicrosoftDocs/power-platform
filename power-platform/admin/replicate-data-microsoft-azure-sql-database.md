@@ -90,7 +90,7 @@ For information about the programmatic interface for managing configuration and 
 - You must have the System Administrator security role in the environment.  
   
 ### Web browser  
- Enable pop-ups for the domain https://discovery.crmreplication.azure.net/ in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
+ Enable pop-ups for the domain `https://discovery.crmreplication.azure.net/` in your web browser. This is required for auto-sign in when you navigate to Settings > Data Export.  
   
 ## Services, credentials, and privileges required  
  To use the [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] feature, you must have the following services, credentials, and privileges.  
@@ -244,7 +244,7 @@ For information about the programmatic interface for managing configuration and 
 ## Resolving synchronization issues  
  Even after several retry attempts, record synchronization failures  may occur from database storage constraints or table locking due to long running queries. To resolve these failures you can force a resynchronization of only failed records or a  resynchronization of all records.  
   
-1. View your export profiles to look for any that have record synchronization failures. You do this by viewing the data profiles in the Synchronization area or by opening a Export Profile , such as this profile that has a contact entity record synchronization failure.  
+1. View your export profiles to look for any that have record synchronization failures. You do this by viewing the data profiles in the Synchronization area or by opening an Export Profile , such as this profile that has a contact entity record synchronization failure.  
   
    ![DataExport&#95;failed&#95;records&#95;exist.](../admin/media/data-export-failed-records-exist.PNG "DataExport_failed_records_exist")  
   
@@ -307,8 +307,6 @@ For information about the programmatic interface for managing configuration and 
 6. In Azure Storage Explorer, select **Connect to Azure Storage**.  
   
 7. Paste the URL from your clipboard in to the **Connect to Azure Storage** box, and then select **Next**.  
-  
-   ![Storage url.](../admin/media/azure-store-url.png "Storage url")  
   
 8. On the Connection Summary page, select **Connect**.  
   

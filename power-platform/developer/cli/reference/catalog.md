@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI catalog command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI catalog command group."
 keywords: "pac cli"
 ms.subservice: developer
-ms.author: marcsc
 author: devkeydet
-ms.date: 1/22/2024
+ms.author: marcsc
+ms.date: 7/8/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -67,7 +67,7 @@ Catalog item to be installed on the target environment.
 
 #### `--environment` `-env`
 
-Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--poll-status` `-ps`
 
@@ -81,9 +81,13 @@ Runtime Package Settings for the installation framework to execute. The format o
 
 **Note**: The format of the string must be `key=value|key=value`.
 
+#### `--target-env` `-te`
+
+Url or ID of the target environment for catalog item installation
+
 #### `--target-url` `-tu`
 
-**Deprecated**: Use `--environment` instead.
+**Deprecated**: Use `--target-env` instead.
 #### `--target-version` `-tv`
 
 Target version to install. If left empty, the published version is selected.
@@ -109,7 +113,7 @@ Catalog item name to search for.
 
 #### `--environment` `-env`
 
-Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--include-active` `-ia`
 
@@ -146,7 +150,7 @@ Use one of these values:
 
 #### `--environment` `-env`
 
-Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [catalog-status-remarks](includes/catalog-status-remarks.md)]
 
@@ -168,7 +172,7 @@ Path to catalog submission document
 
 #### `--environment` `-env`
 
-Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--package-zip` `-pz`
 
@@ -204,7 +208,7 @@ Path to catalog settings document
 
 #### `--environment` `-env`
 
-Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [catalog-update-remarks](includes/catalog-update-remarks.md)]
 

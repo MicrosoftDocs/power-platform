@@ -1,10 +1,10 @@
 ---
-title: Recommendations for designing a reliability testing strategy
-description: Learn how to design a reliability testing strategy that focuses on validating and optimizing the reliability of your workload.
+title: Design a reliability testing strategy recommendation for Power Platform workloads
+description: Learn how to establish a reliability testing strategy that tests resiliency and availability scenarios. 
 author: manuelap-msft
 ms.author: mapichle
-ms.reviewer: robstand
-ms.date: 03/28/2024
+ms.reviewer: jhaskett-msft
+ms.date: 05/10/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -147,3 +147,10 @@ You can use static results in Power Automate to return a fixed result to test yo
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
 If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio), a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
+
+## Reliability checklist
+
+Refer to the complete set of recommendations.
+
+> [!div class="nextstepaction"]
+> [Reliability checklist](checklist.md)

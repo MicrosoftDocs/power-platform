@@ -1,22 +1,21 @@
 ---
-title: "Assign security roles | MicrosoftDocs"
-description: About assigning security roles to a user.
-author: sericks007
+title: Assign security roles 
+description: Learn about assigning security roles to a user.
+author: paulliew
 ms.reviewer: sericks
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 08/07/2024
 search.audienceType: 
   - admin
-contributors:
-- paulliew
+
 ---
 # Assign a security role to a user  
 
-**About security roles** 
+Consider the following information about security roles:
 
  - Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
  - Dataverse provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name. See [Predefined security roles](database-security.md#predefined-security-roles).
@@ -45,16 +44,15 @@ Follow these steps to assign a security role.
 
 5. On the **Users** page select a user, and then select **Manage security roles**.
 
-   :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles.":::
-
-6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
-
-   :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
 
 When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business unit. 
 
 > [!IMPORTANT] 
 > You must assign at least one security role to every user either directly or indirectly as a member of a [group team](manage-group-teams.md). The service doesn't allow access to users who don't have at least one security role.
+
+> [!NOTE]
+> The panel shown above shows and manages only direct role assignments for the user. [Manage group teams](manage-group-teams.md) explains how to see and manage roles assigned as a member of a [group team](manage-group-teams.md).
 
 ## User settings privileges for record ownership across business units
   
@@ -72,9 +70,7 @@ To assign security roles to users in an environment that has zero or one Microso
 
 ## (Optional) Assign an administrator role  
 
-You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. You might decide to assign the global administrator role to a second person in your organization for times when you're not available.  
-  
-There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles with varying levels of permissions. For example, the password reset administrator role can reset user passwords only; the user management administrator role can reset user passwords in addition to adding, editing, or deleting user accounts; and the global administrator role can add online service subscriptions for the organization and manage all aspects of subscriptions. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](/microsoft-365/admin/add-users/assign-admin-roles).  
+You can share [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administration tasks among several people by assigning [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles to users you select to fill each role. For detailed information about [!INCLUDE[pn_MS_Online_Services](../includes/pn-ms-online-services.md)] administrator roles, see [Assigning Admin Roles](/microsoft-365/admin/add-users/assign-admin-roles).  
   
 > [!NOTE]
 > [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)] administrator roles are valid only for managing aspects of the online service subscription. These roles don't affect permissions within the service.
@@ -83,24 +79,22 @@ There are five [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-on
 
 When users are added to Dataverse, roles are assigned automatically based on the following criteria: 
 
-1. All Microsoft Entra ID admins (tenant admin, Power Platform admin, Dynamics 365 service admin) get the System Administrator role in Dataverse. 
+1. Users, with a valid license, get corresponding mapped roles assigned to them automatically. Removal of the respective license results in automatic role removal. License-based default role management isn't applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
 
-   > [!IMPORTANT]
-   > The System Administrator role isn't removed automatically if the Microsoft Entra admin role is removed. Since there is no mechanism to track if the role was assigned by the system automatically or by an administrator, we recommend the administrator manually remove the System Administrator role once the Microsoft Entra role is removed. 
+1. For the Default environment type, **Basic User** and **Environment Maker** roles are assigned automatically to all users added in Dataverse.
 
-2. Users, with a valid license, get corresponding mapped roles assigned to them automatically. Removal of the respective license results in automatic role removal. License-based default role management isn't applicable for users in these types of environments: Dataverse for Teams, Trial, and Developer. 
+1. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse.
 
-3. For the Default environment type, **Basic User** and **Environment Maker** roles are assigned automatically to all users added in Dataverse.
-
-4. In the finance and operations linked environment with a Dataverse database, the finance and operations **Basic User** security role is automatically assigned to all active users in Dataverse. 
+> [!NOTE]
+> Previously, Microsoft Entra ID admins, including Power Platform admins and Dynamics 365 service admins, were automatically assigned the System Administrator role in Dataverse. This is no longer the case. However, if an admin was previously assigned a role in Dataverse, removing them from the Power Platform admin and Dynamics 365 service admin roles will not automatically remove their System Administrator role in Dataverse. There is currently no way to determine whether the role was assigned automatically by the system or manually by an administrator. Therefore, we recommend that administrators manually remove the System Administrator role once the Microsoft Entra role has been removed.
 
 ## License to role mapping
 
-If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in the Power Platform admin center. 
+If defined in your environment, certain roles are automatically assigned to users when users are added to Dataverse based on the license the users are assigned. You can view the license to role mapping in an environment by navigating to the License to Role Mapping page in the Power Platform admin center.
 
 Go to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **License To Role mapping**.
 
-### See also
+### Related information
 [Get started with security roles in Dataverse](/training/modules/get-started-security-roles/)
 
 
