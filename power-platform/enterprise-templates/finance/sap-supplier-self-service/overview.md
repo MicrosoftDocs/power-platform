@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 
 # What is Microsoft Power Platform SAP Supplier Self Service template?
 
-The SAP Supplier Self Service template introduces a customizable Power Pages site to complement the [SAP Procurement](power-platform/enterprise-templates/finance/sap-procurement/overview) template. It leverages the same architecture as the SAP Procurement template utilizing Power Automate cloud flows and the SAP ERP connector for integration.
+The SAP Supplier Self Service template introduces a customizable Power Pages site to complement the [SAP Procurement](finance/sap-procurement/overview) template. It leverages the same architecture as the SAP Procurement template utilizing Power Automate cloud flows and the SAP ERP connector for integration.
 
 :::image type="content" source="media/overview/sap-ss-site.png" alt-text="Screenshot of the Supplier Self-Service site.":::
 
@@ -29,4 +29,4 @@ The template's components are ready for you to extend and customize to meet your
 
 You can learn more about the SAP Supplier Self Service template solutions on the [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) GitHub site.
 
-The SAP Supplier Self Service template's solutions work with the SAP Procurement template. It's important that SAP integration with Power Platform is complete and the SAP Procurement template is set up before adding the SAP Supplier Self Service solution. The [Install and set up](install-and-set-up) article reviews the prerequisite steps in more detail.
+The SAP Supplier Self Service template's solutions work with the SAP Procurement template. It's important that SAP integration with Power Platform is complete and the SAP Procurement template is set up before adding the SAP Supplier Self Service solution. The [Install and set up](install-and-set-up.md) article reviews the prerequisite steps in more detail.
