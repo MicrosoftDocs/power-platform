@@ -45,6 +45,9 @@ A panel opens, where you enter:
 - **Description**: An optional description to describe what the pipeline is used for.
 - **Target environment**: The environment that solutions in the current development environment are deployed to.
 
+ > [!NOTE]
+  > The Target environments list is filtered based on import access and geographical region (if the [cross-geo solution deployments](enable-cross-geo-solution-deployments.md) setting is disabled).
+
 Once you select **Save**, the current (source) environment and the selected target environment are associated with the platform host, and environment records for each are created in the platform host. Then, the newly created pipeline is autoselected and you're ready to [run the pipeline](run-pipeline.md).
 
 > [!IMPORTANT]
