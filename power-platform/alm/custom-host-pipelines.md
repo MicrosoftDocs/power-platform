@@ -147,7 +147,7 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ### Accessing the Deployment Pipeline Configuration app from Power Apps
 
-From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar navigates to the app of the pipelines host that is associated with the current environment:
+From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar navigates to the configuration app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button links to the Deployment Pipeline Configuration app within the dedicated Host environment.
 1. If the current environment is associated with the Platform host, the button links to an embedded Deployment Pipeline Configuration app within Power Apps.
