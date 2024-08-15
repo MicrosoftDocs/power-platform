@@ -38,7 +38,7 @@ You also can't create a pipeline with a target environment that is already assoc
 
 ### Why am I seeing an error that states "this environment is already associated with another pipelines host?"
 
-This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to [Using Force Link to associate an environment with a new host](#using-force-link-to-associate-an-environment-with-a-new-host) or [Disassociating environments from one host and associating them with another host](custom-host-pipelines.md#manually-disassociating-environments-from-one-host-and-associating-them-with-another-host).
+This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to [Using Force Link to associate an environment with a new host](custom-host-pipelines.md#using-force-link-to-associate-an-environment-with-a-new-host) or [Disassociating environments from one host and associating them with another host](custom-host-pipelines.md#manually-disassociating-environments-from-one-host-and-associating-them-with-another-host).
 
 ### Do the pipelines and data within the platform host count towards my Dataverse capacity?
 
