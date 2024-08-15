@@ -34,11 +34,11 @@ The target environment picker filters out any environments that:
 - The current user doesn't have import-access to, or
 are outside of the geographical region that the pipelines host is located in if host-wide setting is disabled (see [Enable cross-geo solution deployments](enable-cross-geo-solution-deployments.md)).
 
-You also can't create a pipeline with a target environment that is already associated to the host as a development environment. To change an environment's type distinction in a host, you must [play the Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps), delete the environment record, and re-create the environment record with the desired type.
+You also can't create a pipeline with a target environment that is already associated to the host as a development environment. To change an environment's type distinction in a host, you must [play the Deployment Pipeline Configuration app](custom-host-pipelines.md#accessing-the-deployment-pipeline-configuration-app-from-power-apps), delete the environment record, and re-create the environment record with the desired type.
 
 ### Why am I seeing an error that states "this environment is already associated with another pipelines host?"
 
-This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to [Using Force Link to associate an environment with a new host](#using-force-link-to-associate-an-environment-with-a-new-host) or [Disassociating environments from one host and associating them with another host](#manually-disassociating-environments-from-one-host-and-associating-them-with-another-host).
+This error indicates that another host already contains an active environment record that you're trying to associate with the current host. To resolve this, go to [Using Force Link to associate an environment with a new host](#using-force-link-to-associate-an-environment-with-a-new-host) or [Disassociating environments from one host and associating them with another host](custom-host-pipelines.md#manually-disassociating-environments-from-one-host-and-associating-them-with-another-host).
 
 ### Do the pipelines and data within the platform host count towards my Dataverse capacity?
 
@@ -54,9 +54,9 @@ This Deployment Pipelines Default role isn't assigned to anyone by default in th
 
 ### As an admin, how do I prevent makers from creating personal pipelines by default?
 
-Because custom hosts don't grant pipeline create-access by default like the platform host does. You can [set up a custom host](#install-the-pipelines-application-in-your-host-environment) and then [use force link](#using-force-link-to-associate-an-environment-with-a-new-host), if necessary, to associate development environments with a custom host.
+Because custom hosts don't grant pipeline create-access by default like the platform host does. You can [set up a custom host](custom-host-pipelines.md#install-the-pipelines-application-in-your-host-environment) and then [use force link](custom-host-pipelines.md#using-force-link-to-associate-an-environment-with-a-new-host), if necessary, to associate development environments with a custom host.
 
-1. If there's already a custom host available skip this step. If not, you have to create one following the steps to [create a pipeline using a custom pipelines host](#create-a-pipeline-using-a-custom-pipelines-host).
+1. If there's already a custom host available skip this step. If not, you have to create one following the steps to [create a pipeline using a custom pipelines host](custom-host-pipelines.md).
 1. Once there's a custom host available, as an admin, navigate to the Deployment Pipeline Configuration app for the custom host. The app is located in the environment that you installed the Power Platform Pipelines package in.
 1. Go to **Environments** from the side navigation pane, and **create new environment record(s)** for the development environments that you would like to prevent makers from creating new personal pipelines from. If the environment was already linked to another host, such as the platform host, the validation fails. If this occurs, select **Force Link** on the command bar after validation failure to override the current link to the other pipelines host.
 
