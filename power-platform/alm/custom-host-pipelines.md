@@ -177,3 +177,8 @@ After creating an environment record in the Deployment Pipeline Configuration ap
 > - Makers lose access to any pipelines in the previous host that were accessible within that environment when you perform this action on a development (source) environment.
 > - This action can be undone by performing a **Force Link** in the previous host.
 > - The environment record in the previous host will have a stale validation status until it's updated, so it will show as **Succeeded** unless it's updated.
+
+## Next steps
+
+- [Extend pipelines in Power Platform](extend-pipelines.md)
+- [Run pipelines in Power Platform](run-pipeline.md)
