@@ -61,7 +61,7 @@ Select **Add stage** on the command bar to append a stage to the current single-
 
 > [!NOTE]
 > - You must be the owner of the current pipeline to add a stage.
-> - Ahe add stage capability is limited to single-stage pipelines, but administrators can add more stages in the [Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps).
+> - The add stage capability is limited to single-stage pipelines, but administrators can add more stages in the [Deployment Pipeline Configuration app](#accessing-the-deployment-pipeline-configuration-app-from-power-apps).
 
 ### Delete a pipeline you own from Power Apps
 
