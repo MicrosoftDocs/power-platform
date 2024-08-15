@@ -34,7 +34,7 @@ landingContent:
             url: responsible-ai.md
           - text: Security and Compliance
             url: security.md
-          - text: Monitoring
+          - text: Performance monitoring
             url: monitoring.md
           - text: Publishing
             url: publishing.md

@@ -60,7 +60,7 @@ Learn more:
 - [Copilot Studio compliance offerings](/microsoft-copilot-studio/admin-certification)
 - [Copilot Studio GDPR compliance](/microsoft-copilot-studio/personal-data-summary)
 - [Copilot Studio Data Locations](/microsoft-copilot-studio/data-location?tabs=web)
-- [Managing compliance in the cloud](/trust-center/compliance/compliance-overview)
+- [Managing compliance in the cloud](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/HomePageVNext)
 - [Change the default retention period for conversation transcripts](/microsoft-copilot-studio/analytics-sessions-transcripts#change-the-default-retention-period)
 - [Move data across geographic locations for generative AI features outside United States](/microsoft-copilot-studio/manage-data-movement-outside-us)
