@@ -46,4 +46,4 @@ Make sure you have the System Administrator security role or equivalent permissi
 |---------|-------------|---------------|
 | Show record name and type to unauthorized users when unfurling links in Teams chats| When a link is pasted into a Teams chat, display the name and type of record in a card.| On |
 | Install the Dynamics 365 app for Teams for users in the organization. Lets people in your org see business data while working in Teams| Active users of Dynamics 365 apps and Power Apps model-driven apps get the Dynamics 365 app for Teams automatically installed in their Teams client. | On |
-| Microsoft Teams activity feed notification for sharing events in the environment. | Description | On|
+| Microsoft Teams activity feed notification for sharing events in the environment. | When a record is shared in a model-driven app, a Teams activity feed notification appears for the recipient, alerting them to the record that was shared. | On|
