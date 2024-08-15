@@ -71,3 +71,7 @@ This action doesn't remove the run history for the pipeline nor does it delete t
 If you have the same pipeline process for an additional development environment, such as your UAT and production environments are the same for another source environment, you can reuse the pipeline you already created.
 
 Choose the created pipeline from the dropdown menu. When you select **Next** in the first step of the deployment configuration process, the current environment is linked to the pipeline (and the host) as a development environment.
+
+## Next steps
+
+- [Run pipelines in Power Platform](run-pipeline.md)
