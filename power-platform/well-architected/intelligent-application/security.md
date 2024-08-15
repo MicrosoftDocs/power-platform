@@ -66,10 +66,9 @@ Learn more:
 - [Move data across geographic locations for generative AI features outside United States](/microsoft-copilot-studio/manage-data-movement-outside-us)
 - [Design to protect confidentiality](/power-platform/well-architected/security/principles#design-to-protect-confidentiality)
 
-## Secure all integrations with service principals
+## Secure all integrations
 
-Secure all integrations with service principals and other best practices.
-Your intelligent application workload needs to integrate with other systems to access and process data. Using service principals ensures connections are secure and do not rely on individual credentials.
+Ensure secure communication between your intelligent application workload and data sources. Use service principals for non-human access to resources and managed identities for Azure resources to simplify identity management and enhance security. Secure APIs by using OAuth2 for authentication and ensuring that all API communications are encrypted. Your intelligent application workload needs to integrate with other systems to access and process data. Using service principals ensures connections are secure and do not rely on individual credentials.
 
 Learn more:
 
