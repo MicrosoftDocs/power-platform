@@ -22,22 +22,22 @@ landingContent:
       - linkListType: overview
         links:
           - text: Intelligent applications
-            url: gen-ai-workload-overview.md
+            url: overview.md
           - text: Design principles
-            url: gen-ai-workload-principles.md
+            url: design-principles.md
    # Card
   - title: Explore design areas
     linkLists:
       - linkListType: concept
         links:
           - text: Responsible AI
-            url: gen-ai-responsible-ai.md
+            url: responsible-ai.md
           - text: Security and Compliance
-            url: gen-ai-security.md.md
+            url: security.md
           - text: Monitoring
-            url: gen-ai-monitoring.md.md
+            url: monitoring.md
           - text: Publishing
-            url: gen-ai-publishing.md
+            url: publishing.md
  # Card
   - title: Take the assessment
     linkLists:

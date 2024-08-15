@@ -73,9 +73,6 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 4. Select permissions. Be sure to add **Get permission** under **Secret permissions** and **Certificate permissions**.  Both are required for the KV-App to be able to access the certificate.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of setting permissions for access policy in Key Vault.](media/azure-key-vault-add-access-policy[1].png "Key Vault set permissions for access policy")
-
 5. Select **Add**.
 
 ## Create a new app registration for HMA access 
