@@ -86,8 +86,6 @@ You can invite other users to access your environment. A user with the [User Adm
   
 3. Update **First name**, **Last name**, and **Usage location**.  
   
-   ![Update Microsoft Entra user profile.](../admin/media/update-azure-active-directory-user-profile.png "Update Microsoft Entra user profile")  
-  
 4. Click **Save**, and then close the Profile blade.  
   
 ## Assign invited users a license and security role  
