@@ -38,6 +38,7 @@ Use **Match** to extract the first text string that matches a pattern and **Matc
 | _named sub&#8209;match or sub&#8209;matches_ | Text                                           | Each named sub-match will have its own column. Create a named sub-match by using **(?&lt;_name_&gt;**...**)** in the regular expression. If a named sub-match has the same name as one of the predefined columns (below), the sub-match takes precedence, and a warning is generated. To avoid this warning, rename the sub-match.                                                                                                                                         |
 | **FullMatch**                                | Text                                           | All of the text string that was matched.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | **StartMatch**                               | Number                                         | The starting position of the match within the input text string. The first character of the string returns 1.                                                                                                                                                                                                                                                                                                                                                             |
+| **SubMatches**, only if **MatchOptions.NumberedSubMatches** is used.                               | Single-column table of Text (column **Value**) | The table of numbered sub-matches in the order in which they appear in the regular expression. Generally, named sub-matches are easier to work with and are encouraged. Use the [**ForAll**](function-forall.md) function or [**Last**](function-first-last.md)( [**FirstN**](function-first-last.md)( **...** ) ) functions to work with an individual sub-match. If no sub-matches are defined in the regular expression, this table will be present but empty. |
 
 These functions support [**MatchOptions**](#match-options). By default:
 
@@ -62,25 +63,9 @@ Combine these elements by using the [string-concatenation operator **&**](operat
 
 The simplest pattern is a sequence of ordinary characters to be matched exactly.
 
-For example, when used with the **IsMatch** function, the string "Hello" matches the pattern **"Hello"** exactly. No more and no less. The string "hello!" doesn't match the pattern because of the exclamation point on the end and because the case is wrong for the letter "h". (See [MatchOptions](#match-options) for ways to modify this behavior.)
+For example, when used with the **IsMatch** function, the string "Hello" matches the pattern **"Hello"** exactly. No more and no less. The string `"hello!"` doesn't match the pattern because of the exclamation point on the end and because the case is wrong for the letter "h". (See [Match options](#match-options) for ways to modify this behavior.)
 
-In the pattern language, certain characters are reserved for special purposes. To use these characters, either prefix the character with a **\\** (backslash) to indicate that the character should be taken literally, or use one of the predefined patterns described later in this topic. This table lists the special characters:
-
-| Special character | Description          |
-| ----------------- | -------------------- |
-| **.**             | dot or period        |
-| **?**             | question mark        |
-| **\***            | asterisk             |
-| **\+**            | plus                 |
-| **( )**           | parentheses          |
-| **[ ]**           | square brackets      |
-| **{ }**           | curly braces         |
-| **^**             | caret                |
-| **$**             | dollar sign          |
-| **\|**            | vertical bar or pipe |
-| **\\**            | backslash            |
-
-For example, you can match "Hello?" by using the pattern **"Hello\\?"** with a backslash before the question mark.
+In the pattern language, the characters `. ? * + ( ) [ ] ^ $ | \` are reserved for special purposes. To use these characters, either prefix the character with a **\\** (backslash) to indicate that the character should be taken literally, or use one of the predefined patterns. For example, you can match `"Hello?"` by using the pattern `"Hello\\?` with a backslash before the question mark.
 
 ### Predefined patterns
 
@@ -115,14 +100,42 @@ For example, the pattern **"A" & MultipleDigits** will match the letter "A" foll
 
 The pattern that these functions use is a [regular expression](https://en.wikipedia.org/wiki/Regular_expression). The ordinary characters and predefined patterns that are described earlier in this topic help build regular expressions.
 
-Regular expressions are very powerful, available in many programming languages, and used for a wide variety of purposes. They can also often look like a random sequence of punctuation marks. This article doesn't describe all aspects of regular expressions, but a wealth of information, tutorials, and tools are available on the web.
+Regular expressions are very powerful, available in many programming languages, and used for a wide variety of purposes. They can also often look like a random sequence of punctuation marks. This article doesn't describe all aspects of regular expressions, but a wealth of information, tutorials, and tools are available online.
 
-Regular expressions come in different dialects, and Power Apps uses a variant of the JavaScript dialect. See [regular-expression syntax](</previous-versions/1400241x(v=vs.100)>) for an introduction to the syntax. Named sub-matches (sometimes called named capture groups) are supported:
+Every programming language has its own dialect of regular expressions and there is no standard.  Power Fx uses a dialect that includes the most common regular expression features found in the industry, avoids ambiguity, and ensures that Power Fx regular expressions give the same result everywhere that Power Fx is used.
 
-- Named sub-matches: **(?&lt;_name_&gt; ...)**
-- Named backreferences: **\\k&lt;_name_&gt;**
+Power Fx regular expressions support these common regular expression features:
 
-In the **Match** enum table earlier in this topic, each enum appears in the same row as its corresponding regular expression.
+| Feature | Description |
+|---------|---------|
+| Literal characters | Any character except `[ ] \ ^ $ . | ? * + ( )`. |
+| Escaped literal characters | `\` (backslash) followed by any character except `[A-Za-z_]`. | 
+| Dot | `.`, matches everything except `[\r\n]` unless **MatchOptions.DotAll** is used. |
+| Anchors | `^` and `$`, matches the beginning and end of the string, or the line if **MatchOptions.Multiline** is used. |
+| Greedy quantifiers | `?` matches 0 or 1, `+` matches 1 or more, `*` matches 0 or more, all as *much* as possible. |
+| Lazy quantifiers | `??` matches 0 or 1, `+?` matches 1 or more, `*?` matches 0 or more, all as *little* as possible. |
+| Limited quantifiers | `{3}` matches exactly 3 times, `{1,}` matches at least 1 time, `{1,3}` matches between 1 and 3 times. |
+| Named sub-match | `(?<name>chars)` captures a sub-match with the name `name`. Cannot be used if **MatchOptions.NumberedSubMatches** is enabled |
+| Named back reference | `\k<name>` references a sub-match previously defined with `(?<name>chars)`. |
+| Alternation and numbered sub-match | `(a|b)` captures a sub-match if **MatchOptions.NumberedSubMatches** is enabled. |
+| Numbered back reference | `\2` references the second sub-match, only when **MatchOptions.NumberedSubMatches** is enabled. |
+| Non capture group | `(?:a|b)`, groups alternation without capturing the result in a sub-match. |
+| Lookahead and lookbehind | `(?=a)`, `(?!a)`, `(?<=b)`, `(?<!b)`. |
+| Character classes, including range and negation | `[abc]`, `[a-fA-f0-9]`, `[^a-z]`, where character classes cannot be nested, subtracted, or intersected, and the same character cannot appear twice (except for a hyphen). |  
+| Word characters and breaks | `\w`, `\W`, `\b`, `\B`, using the Unicode definition of letters `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`. |
+| Digit characters | `\d`, `\D`, using the Unicode definition of digits `\p{Nd}`. |
+| Newline characters | `\s`, `\r`, `\n`, `\t`, `\f`. |
+| Control characters | `\cA`, where the control characters is `[A-Za-z]`. |
+| Hexadecimal and Unicode character codes | `\x20` with two hexadecimal digits, `\u2028` with four hexadecimal digits. |
+| Unicode character class and property | `\p{Ll}`, `\P{L}`. |
+| Inline comments | `(?# comment here)`, which is ignored as a comment.  See **MatchOptions.FreeSpacing** for an alternative to formatting and commenting regular expressions. |
+| Inline mode modifiers | `(?im)` is the same as using **MatchOptions.IgnoreCase** and **MatchOptions.Multiline**. Must be used at the beginning of the regular expression. |
+
+Power Fx regular expressions do not support these features:
+
+- Octal codes for characters, such as `\044` or `\o{044}`. Use `\x` or `\u` instead.
+- Unescaped `[`, `]`, `{`, or `}` as a literal character. Escape these characters with backslash.
+- And other features from other regular expression implementations. Power Fx will provide an authoring time error when these are encountered. This is one of the reasons that the regular expression and options must be a constant and not dynamic (for example stored in a variable).
 
 ## Match options
 
@@ -133,9 +146,12 @@ You can modify the behavior of these functions by specifying one or more options
 | **MatchOptions.BeginsWith**    | The pattern must match from the beginning of the text.                                                                     | Adds a **^** to the start of the regular expression.                                                                       |
 | **MatchOptions.Complete**      | Default for **IsMatch**. The pattern must match the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
 | **MatchOptions.Contains**      | Default for **Match** and **MatchAll**. The pattern must appear somewhere in the text but doesn't need to begin or end it. | Doesn't modify the regular expression.                                                                                     |
+| **MatchOptions.DotAll**      | The `.` (dot) operator matches all characters, including newline characters. | Doesn't modify the regular expression. This option is the equivalent of the standard "s" modifier for regular expressions.                                                                        |
 | **MatchOptions.EndsWith**      | The pattern must match the end of the string of text.                                                                      | Adds a **$** to the end of the regular expression.                                                                         |
+| **MatchOptions.FreeSpacing**    | Whitespace characters, including newlines, are ignored in the regular expression. End of line comments beginning with a `#` are ignored. | Only changes how the regular expression syntax. This option is the equivalent of the standard "x" modifier for regular expressions. |
 | **MatchOptions.IgnoreCase**    | Treats uppercase and lowercase letters as identical. By default, matching is case sensitive.                               | Doesn't modify the regular expression. This option is the equivalent of the standard "i" modifier for regular expressions. |
 | **MatchOptions.Multiline**     | Matches across multiple lines.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
+| **MatchOptions.NumberedSubMatches**     | Named captures are preferred as they are easier to understand and maintain.  Performance is also improved as unneeded captures are not retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result.  .  | Doesn't modify the regular expression. Named captures are not supported and `\1` style backreferences are enabled. |
 
 Using **MatchAll** is equivalent to using the standard "g" modifier for regular expressions.
 
@@ -145,19 +161,19 @@ Using **MatchAll** is equivalent to using the standard "g" modifier for regular 
 
 - _Text_ – Required. The text string to test.
 - _Pattern_ – Required. The pattern to test as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
-- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Complete** is used.
+- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Complete** is used. _Options_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
 
 **Match**( _Text_, _Pattern_ [, *Options* ] )
 
 - _Text_ – Required. The text string to match.
 - _Pattern_ – Required. The pattern to match as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
-- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Contains** is used.
+- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Contains** is used. _Options_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
 
 **MatchAll**( _Text_, _Pattern_ [, *Options* ] )
 
 - _Text_ – Required. The text string to match.
 - _Pattern_ – Required. The pattern to match as a text string. Concatenate predefined patterns that the **Match** enum defines, or provide a regular expression. _Pattern_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
-- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Contains** is used.
+- _Options_ – Optional. A text-string combination of **MatchOptions** enum values. By default, **MatchOptions.Contains** is used. _Options_ must be a constant formula without any variables, data sources, or other dynamic references that change as the app runs.
 
 ## IsMatch examples
 
@@ -244,34 +260,6 @@ To see the results of **MatchAll** in a gallery:
 
    ![Text property.](media/function-ismatch/pangram-gallery2.png)
 
-## Differences with other regular expression languages
 
-Power Fx runs on a variety of platforms, each with its own, subtly different, regular expression language. In order to keep Power Fx portable, we have selected a subset of language features that is unambiguous and will return the same answer in any Power Fx host. If you are familiar with regular expressions in C#/.NET, JavaScript, or another language, you may find that a feature is missing here, but in most cases the same result can be obtained in a different manner.
-
-Here is a summary of the major features that are not supported:
-
-| Feature | .NET | JavaScript | Power Fx Alternative |
-|---------|----------|------|------|
-| Numbered capture groups | `(a)\1` | Same syntax as .NET but numbered differently if named captures are also present. | Always use named capture groups: `(?<cap>a)\k<cap>` |
-| Single quoted capture group names | `(?'cap'a)\k'a'` | Not supported | Use angle bracket syntax instead: `(?<cap>a)\k<cap>` |
-| Self referencing capture groups | `(?<cap>\k<cap>)` | Same syntax as .NET but different semantics.  | Please send us feedback on how you would use this in the community forum. |
-| Octal codes for characters | `\101`, `\o101`, `\o{101}` | Same syntax, but different disambiguation rules. | Use hexadecimal or Unicode codes instead: `\x41` or `\u0041` |
-| Escaped letters or underscore | Error | Supported | Error. There is no need to escape letters or underscore |
-
-And here are more subtle differences:
-
-| Feature | .NET | JavaScript | Power Fx |
-|---------|----------|--------|----------|
-| Definition of `\w` and `\b` | Unicode based | ASCII based | Unicode based. Use `[a-zA-Z0-9_]` if ASCII is desired. |
-| Definition of . (dot) and anchorse in multi-line | `[^\n]` | `[^\n\r\u2028\u2029]` | ?? |
-| Matches newline at end of string | Yes | No | Yes |
-
-The following features from .NET and JavaScript are not supported, but may be added in the future if they can be implemented across all Power Fx platforms:
-- Balancing capture groups.
-- Inline options anywhere in the regular expression.
-- Inline options for a sub-expression.
-- Character class subtraction.
-- Conditional alternation.
-- Permanent start and end of string anchors.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
