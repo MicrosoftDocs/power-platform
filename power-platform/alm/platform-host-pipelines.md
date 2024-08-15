@@ -75,6 +75,16 @@ If you have the same pipeline process for an additional development environment,
 
 Choose the created pipeline from the dropdown menu. When you select **Next** in the first step of the deployment configuration process, the current environment is linked to the pipeline (and the host) as a development environment.
 
+### Accessing the Deployment Pipeline Configuration app from Power Apps
+
+From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar navigates to the configuration app of the pipelines host that is associated with the current environment:
+
+1. If the current environment is associated with a custom pipelines host, the button links to the Deployment Pipeline Configuration app within the dedicated Host environment.
+1. If the current environment is associated with the platform host, the button links to an embedded Deployment Pipeline Configuration app within Power Apps.
+
+The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
+
+
 ## Next steps
 
 - [Run pipelines in Power Platform](run-pipeline.md)
