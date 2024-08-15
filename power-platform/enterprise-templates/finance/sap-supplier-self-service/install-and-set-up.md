@@ -48,14 +48,14 @@ More information:
 
 ## Download and install
 
-This section provides links to the SAP Supplier Self Service solution files and gives the steps to manually import them into the same developer environment that contains the SAP Procurement solutions.
+This section provides links to the SAP Supplier Self Service solution files and gives the steps to manually install them into the same developer environment that contains the SAP Procurement solutions.
 
-Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub and download and import the following solutions in this sequence:
+Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub to download and install the the solutions following this sequence:
 
 1. **SAP Supplier Self Service**: mpa_supplier_self_service_1_0_0_17.zip (version 1.0.0.17)
 1. **Supplier Self Service Portal**: SupplierSelfServicePortal_1_0_0_14.zip  (Version 1.0.0.14)
 
-Once you have import both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](/sap-procurement/administer/set-up-connections.md).
+Once you install both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](/sap-procurement/administer/set-up-connections.md).
 
 > [!NOTE]
 > For the connector setup, use an SAP service-user account that is supported with the appropriate SAP licenses and permissions. All interactions corresponding to the operations done on the supplier website are done under this service-user context.
