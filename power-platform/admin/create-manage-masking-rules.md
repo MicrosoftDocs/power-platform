@@ -89,8 +89,6 @@ You get a predefined set of masking rules, to start, or you can create your own.
 
 ### Get the list of masking rules
 
-You can get a list of all masking rules from the Maker portal.
-
 1. Go to the [Power Apps portal](https://make.powerapps.com).
 
 1. Select the environment where you want to see the list of masking rules.
