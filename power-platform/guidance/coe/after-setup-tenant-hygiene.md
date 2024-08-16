@@ -144,8 +144,6 @@ These visualizations help you understand how your organization is using the Powe
 
 The inactivity notification process in the CoE Starter Kit automatically detects inactive apps, including their inactive duration. The kit sends notifications to the app owner, asking them to confirm if the app is still needed or can be safely deleted. This process helps organizations manage their Power Platform apps more efficiently by identifying and removing unused or redundant apps. The CoE team can configure the inactivity threshold.
 
-:::image type="content" source="media/coe58.png" alt-text="Screenshot of the inactivity notification mail sent to an app owner." lightbox="media/coe58.png":::
-
 For more information, see:
 
 - [Inactivity notifications (video)](https://youtu.be/PZ5u_2E9uUI)
