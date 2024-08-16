@@ -4,7 +4,7 @@ description: Learn how to use collaboration settings to adjust how collaboration
 author: fikaradz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/15/2024
+ms.date: 08/16/2024
 ms.subservice: admin
 ms.author: fikaradz
 ms.reviewer: sericks
