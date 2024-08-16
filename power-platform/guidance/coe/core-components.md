@@ -271,8 +271,6 @@ Use this app to:
 
 When you first launch the app, you might have to establish a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-:::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID popup that asks for your Base Resource URL and Microsoft Entra ID Resource URI." lightbox="media/httpazuread.png":::
-
 #### DLP Impact Analysis
 
 DLP Impact Analysis is an app that allows you to experiment with changes to policy configurations. You can get a list of canvas apps and cloud flows impacted by those changes.
@@ -306,8 +304,6 @@ Permissions you can change with this app include:
 - Connections across the tenant
 
 **Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
-
-:::image type="content" source="media/managepermissions1.png" alt-text="Screenshot that shows the Admin - App Permission Center page from the Apps menu." lightbox="media/managepermissions1.png":::
 
 #### Power Platform Admin View
 

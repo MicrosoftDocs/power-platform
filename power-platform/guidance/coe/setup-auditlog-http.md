@@ -100,7 +100,6 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 4. Turn on the **Admin | Audit Logs | Office 365 Management API Subscription** flow and run it, enter _start_ as the operation to run.
    :::image type="content" source="media/coe-startsubscription.png" alt-text="Screenshot that shows the location of the Run button in the navigation bar and the start operation in the Run flow pane." lightbox="media/coe-startsubscription.png":::
 5. Open the flow and verify that the action to start the subscription is passed.
-   :::image type="content" source="media/coe-startsubscription-passed.png" alt-text="Screenshot that shows the Status code of 200 in the StartSubscription window." lightbox="media/coe-startsubscription-passed.png":::
 
 > [!IMPORTANT]
 > If you previously enabled the subscription, you see a _(400) The subscription is already enabled_ message. This means the subscription successfully enabled in the past. You can ignore this message and continue with the setup.
