@@ -220,8 +220,6 @@ It recommends that the app owner takes a backup of the app if they would like to
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-![Inactivity notifications v2 (Start Approval for Apps) flow.](media/coe58.png "Inactivity notifications v2 (Start Approval for Apps) flow")
-
 **Customize**: By default, this flow assigns approvals to the app owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals are sent to the admin account instead.
 
 ![Inactivity notifications v2 - workflow for Apps.](media/archivalFlow-Apps.png "Inactivity notifications v2 - workflow for Apps")
