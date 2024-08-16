@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 8/15/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -65,7 +65,7 @@ The simplest pattern is a sequence of ordinary characters to be matched exactly.
 
 For example, when used with the **IsMatch** function, the string "Hello" matches the pattern **"Hello"** exactly. No more and no less. The string `"hello!"` doesn't match the pattern because of the exclamation point on the end and because the case is wrong for the letter "h". (See [Match options](#match-options) for ways to modify this behavior.)
 
-In the pattern language, the characters `. ? * + ( ) [ ] ^ $ | \` are reserved for special purposes. To use these characters, either prefix the character with a **\\** (backslash) to indicate that the character should be taken literally, or use one of the predefined patterns. For example, you can match `"Hello?"` by using the pattern `"Hello\\?` with a backslash before the question mark.
+In the pattern language, the characters `. ? * + ( ) [ ] ^ $ | \` are reserved for special purposes. To use these characters, either prefix the character with a **\\** (backslash) to indicate that the character should be taken literally, or use one of the predefined patterns. For example, you can match the string `"Hello?"` by using the pattern `"Hello\\?"` with a backslash before the question mark.
 
 ### Predefined patterns
 
@@ -111,13 +111,13 @@ Power Fx regular expressions support these common regular expression features:
 | Literal characters | Any character except `[ ] \ ^ $ . | ? * + ( )` can be inserted directly. |
 | Escaped literal characters | `\` (backslash) followed by any character except `[A-Za-z_]`. Used to insert the exceptions to direct literal characters, such as `\?` to insert a question mark. | 
 | Dot | `.`, matches everything except `[\r\n]` unless **MatchOptions.DotAll** is used. |
-| Greedy quantifiers | `?` matches 0 or 1, `+` matches 1 or more, `*` matches 0 or more, `{3}` matches exactly 3 times, `{1,}` matches at least 1 time, `{1,3}` matches between 1 and 3 times. By default, matching is "greedy" and the match will be as *large* as possible. |
+| Greedy quantifiers | `?` matches 0 or 1 times, `+` matches 1 or more times, `*` matches 0 or more times, `{3}` matches exactly 3 times, `{1,}` matches at least 1 time, `{1,3}` matches between 1 and 3 times. By default, matching is "greedy" and the match will be as *large* as possible. |
 | Lazy quantifiers | Same as the greedy quantifiers followed by `?`, for example `*?` or `{1,3}?`. With the lazy modifier, the match will be as *small* as possible. |
 | Alternation | `a|b` matches "a" or "b". |
 | Non capture group | `(?:a)`, group without capturing the result as a named or numbered sub-match. |
 | Named group and back reference | `(?<name>chars)` captures a sub-match with the name `name`, referenced with `\k<name>`. Cannot be used if **MatchOptions.NumberedSubMatches** is enabled. |
 | Numbered group and back reference | `(a|b)` captures a sub-match, referenced with `\1`. **MatchOptions.NumberedSubMatches** must be enabled. |
-| Anchors | `^` and `$`, matches the beginning and end of the string, or the line if **MatchOptions.Multiline** is used. |
+| Anchors | `^` and `$`, matches the beginning and end of the string, or of a line if **MatchOptions.Multiline** is used. |
 | Lookahead and lookbehind | `(?=a)`, `(?!a)`, `(?<=b)`, `(?<!b)`. |
 | Character class | `[abc]` list of characters, `[a-fA-f0-9]` range of characters, `[^a-z]` everything but these characters. Character classes cannot be nested, subtracted, or intersected, and the same character cannot appear twice in the character class (except for a hyphen). |  
 | Word characters and breaks | `\w`, `\W`, `\b`, `\B`, using the Unicode definition of letters `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`. |
@@ -125,9 +125,9 @@ Power Fx regular expressions support these common regular expression features:
 | Space characters | `\s` includes spacing characters `[ \r\n\t\f\x0B\x85\p{Z}]`, `\S` which matches everything except characters matched by `\s`, `\r` carriage return, `\n` newline, `\t` tab, `\f` form feed. |
 | Control characters | `\cA`, where the control characters is `[A-Za-z]`. |
 | Hexadecimal and Unicode character codes | `\x20` with two hexadecimal digits, `\u2028` with four hexadecimal digits. |
-| Unicode character class and property | `\p{Ll}` for lowercase letters, `\P{L}`. |
+| Unicode character class and property | `\p{Ll}` matches all Unicode lowercase letters, while `\P{Ll}` matches everything that is not a Unicode lowercase letter. |
 | Inline comments | `(?# comment here)`, which is ignored as a comment.  See **MatchOptions.FreeSpacing** for an alternative to formatting and commenting regular expressions. |
-| Inline mode modifiers | `(?im)` is the same as using **MatchOptions.IgnoreCase** and **MatchOptions.Multiline**. Must be used at the beginning of the regular expression. |
+| Inline mode modifiers | `(?im)` is the same as using **MatchOptions.IgnoreCase** and **MatchOptions.Multiline**. Must be used at the beginning of the regular expression. Supported inline modes are `[imsx]`, corresponding to **MatchOptions.IgnoreCase**, **MatchOptions.Multiline**, **MatchOptions.DotAll**, and **MatchOptions.FreeSpacing**, respectively. |
 
 Power Fx regular expressions do not support these features:
 
@@ -145,12 +145,12 @@ You can modify the behavior of these functions by specifying one or more options
 | **MatchOptions.BeginsWith**    | The pattern must match from the beginning of the text.                                                                     | Adds a **^** to the start of the regular expression.                                                                       |
 | **MatchOptions.Complete**      | Default for **IsMatch**. The pattern must match the entire string of text, from beginning to end.                          | Adds a **^** to the start and a **$** to the end of the regular expression.                                                |
 | **MatchOptions.Contains**      | Default for **Match** and **MatchAll**. The pattern must appear somewhere in the text but doesn't need to begin or end it. | Doesn't modify the regular expression.                                                                                     |
-| **MatchOptions.DotAll**      | The `.` (dot) operator matches all characters, including newline characters. | Doesn't modify the regular expression. This option is the equivalent of the standard "s" modifier for regular expressions.                                                                        |
+| **MatchOptions.DotAll**      | Changes the behavior of the `.` (dot) operator to match all characters, including newline characters. | Doesn't modify the regular expression. This option is the equivalent of the standard "s" modifier for regular expressions.                                                                        |
 | **MatchOptions.EndsWith**      | The pattern must match the end of the string of text.                                                                      | Adds a **$** to the end of the regular expression.                                                                         |
 | **MatchOptions.FreeSpacing**    | Whitespace characters, including newlines, are ignored in the regular expression. End of line comments beginning with a `#` are ignored. | Only changes how the regular expression syntax. This option is the equivalent of the standard "x" modifier for regular expressions. |
 | **MatchOptions.IgnoreCase**    | Treats uppercase and lowercase letters as identical. By default, matching is case sensitive.                               | Doesn't modify the regular expression. This option is the equivalent of the standard "i" modifier for regular expressions. |
-| **MatchOptions.Multiline**     | Matches across multiple lines.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
-| **MatchOptions.NumberedSubMatches**     | Named captures are preferred as they are easier to understand and maintain.  Performance is also improved as unneeded captures are not retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result.  .  | Doesn't modify the regular expression. Named captures are not supported and `\1` style backreferences are enabled. |
+| **MatchOptions.Multiline**     | Changes the behavior of `^` and `$` to match at the end of aline.                                                                                             | Doesn't modify the regular expression. This option is the equivalent of the standard "m" modifier for regular expressions. |
+| **MatchOptions.NumberedSubMatches**     | Named captures are preferred as they are easier to understand and maintain.  Performance is also improved as unneeded captures are not retained.  But for older regular expressions, treats each set of parenthesis as a numbered capture that is included with the **SubMatches** table in the result.  .  | Doesn't modify the regular expression. Named captures are disabled and `\1` style back references are enabled. |
 
 Using **MatchAll** is equivalent to using the standard "g" modifier for regular expressions.
 
