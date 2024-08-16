@@ -1,6 +1,6 @@
 ---
 title: Limit sharing 
-description: Limit how broadly makers can share canvas apps in your managed environments.
+description: Limit how broadly makers can share canvas apps in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 08/16/2024
@@ -18,7 +18,7 @@ contributors:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
-In Managed Environments, admins can limit how broadly users can share canvas apps, custom copilots, and copilot extensions. To configure these rules, select a managed environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Limit sharing** section.
+In Managed Environments, admins can limit how broadly users can share canvas apps, custom copilots, and copilot extensions. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Limit sharing** section.
 
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
