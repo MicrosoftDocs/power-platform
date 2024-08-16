@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps in your managed environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2023
+ms.date: 08/16/2024
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -11,6 +11,8 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+- arjunmayur
 ---
 # Limit sharing 
 
