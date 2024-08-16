@@ -108,34 +108,33 @@ Power Fx regular expressions support these common regular expression features:
 
 | Feature | Description |
 |---------|---------|
-| Literal characters | Any character except `[ ] \ ^ $ . | ? * + ( )`. |
-| Escaped literal characters | `\` (backslash) followed by any character except `[A-Za-z_]`. | 
+| Literal characters | Any character except `[ ] \ ^ $ . | ? * + ( )` can be inserted directly. |
+| Escaped literal characters | `\` (backslash) followed by any character except `[A-Za-z_]`. Used to insert the exceptions to direct literal characters, such as `\?` to insert a question mark. | 
 | Dot | `.`, matches everything except `[\r\n]` unless **MatchOptions.DotAll** is used. |
+| Greedy quantifiers | `?` matches 0 or 1, `+` matches 1 or more, `*` matches 0 or more, `{3}` matches exactly 3 times, `{1,}` matches at least 1 time, `{1,3}` matches between 1 and 3 times. By default, matching is "greedy" and the match will be as *large* as possible. |
+| Lazy quantifiers | Same as the greedy quantifiers followed by `?`, for example `*?` or `{1,3}?`. With the lazy modifier, the match will be as *small* as possible. |
+| Alternation | `a|b` matches "a" or "b". |
+| Non capture group | `(?:a)`, group without capturing the result as a named or numbered sub-match. |
+| Named group and back reference | `(?<name>chars)` captures a sub-match with the name `name`, referenced with `\k<name>`. Cannot be used if **MatchOptions.NumberedSubMatches** is enabled. |
+| Numbered group and back reference | `(a|b)` captures a sub-match, referenced with `\1`. **MatchOptions.NumberedSubMatches** must be enabled. |
 | Anchors | `^` and `$`, matches the beginning and end of the string, or the line if **MatchOptions.Multiline** is used. |
-| Greedy quantifiers | `?` matches 0 or 1, `+` matches 1 or more, `*` matches 0 or more, all as *much* as possible. |
-| Lazy quantifiers | `??` matches 0 or 1, `+?` matches 1 or more, `*?` matches 0 or more, all as *little* as possible. |
-| Limited quantifiers | `{3}` matches exactly 3 times, `{1,}` matches at least 1 time, `{1,3}` matches between 1 and 3 times. |
-| Named sub-match | `(?<name>chars)` captures a sub-match with the name `name`. Cannot be used if **MatchOptions.NumberedSubMatches** is enabled |
-| Named back reference | `\k<name>` references a sub-match previously defined with `(?<name>chars)`. |
-| Alternation and numbered sub-match | `(a|b)` captures a sub-match if **MatchOptions.NumberedSubMatches** is enabled. |
-| Numbered back reference | `\2` references the second sub-match, only when **MatchOptions.NumberedSubMatches** is enabled. |
-| Non capture group | `(?:a|b)`, groups alternation without capturing the result in a sub-match. |
 | Lookahead and lookbehind | `(?=a)`, `(?!a)`, `(?<=b)`, `(?<!b)`. |
-| Character classes, including range and negation | `[abc]`, `[a-fA-f0-9]`, `[^a-z]`, where character classes cannot be nested, subtracted, or intersected, and the same character cannot appear twice (except for a hyphen). |  
+| Character class | `[abc]` list of characters, `[a-fA-f0-9]` range of characters, `[^a-z]` everything but these characters. Character classes cannot be nested, subtracted, or intersected, and the same character cannot appear twice in the character class (except for a hyphen). |  
 | Word characters and breaks | `\w`, `\W`, `\b`, `\B`, using the Unicode definition of letters `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]`. |
-| Digit characters | `\d`, `\D`, using the Unicode definition of digits `\p{Nd}`. |
-| Newline characters | `\s`, `\r`, `\n`, `\t`, `\f`. |
+| Digit characters | `\d` includes the digits 0-9 and `\p{Nd}`, `\D` matches everything except characters matched by `\d`. |
+| Space characters | `\s` includes spacing characters `[ \r\n\t\f\x0B\x85\p{Z}]`, `\S` which matches everything except characters matched by `\s`, `\r` carriage return, `\n` newline, `\t` tab, `\f` form feed. |
 | Control characters | `\cA`, where the control characters is `[A-Za-z]`. |
 | Hexadecimal and Unicode character codes | `\x20` with two hexadecimal digits, `\u2028` with four hexadecimal digits. |
-| Unicode character class and property | `\p{Ll}`, `\P{L}`. |
+| Unicode character class and property | `\p{Ll}` for lowercase letters, `\P{L}`. |
 | Inline comments | `(?# comment here)`, which is ignored as a comment.  See **MatchOptions.FreeSpacing** for an alternative to formatting and commenting regular expressions. |
 | Inline mode modifiers | `(?im)` is the same as using **MatchOptions.IgnoreCase** and **MatchOptions.Multiline**. Must be used at the beginning of the regular expression. |
 
 Power Fx regular expressions do not support these features:
 
-- Octal codes for characters, such as `\044` or `\o{044}`. Use `\x` or `\u` instead.
-- Unescaped `[`, `]`, `{`, or `}` as a literal character. Escape these characters with backslash.
-- And other features from other regular expression implementations. Power Fx will provide an authoring time error when these are encountered. This is one of the reasons that the regular expression and options must be a constant and not dynamic (for example stored in a variable).
+- Octal codes for characters, such as `\044` or `\o{044}`. Use `\x` or `\u` instead. Octal character codes can be ambiguous with numbered back references which is why Power Fx disallows them.
+- Unescaped `[`, `]`, `{`, or `}` as a literal character. Escape these characters with a backslash. 
+- Named and numbered sub-matches cannot be used together. By default, named sub-matches are enabled and are preferred for clarity and maintainability, while standard capture groups become non capture groups with improved performance. This can be changed with **MatchOptions.NumberedSubMatches** which provides for traditional capture groups but disables named captures groups. Some implementations treat a mix of numbered and named capture groups differently, leading to ambiguity, which is why Power Fx disallows it.
+- And there are many other features from other regular expression implementations that are not supported. Power Fx will provide an authoring time error when these are encountered. This is one of the reasons that the regular expression and options must be a constant and not dynamic (for example stored in a variable).
 
 ## Match options
 
