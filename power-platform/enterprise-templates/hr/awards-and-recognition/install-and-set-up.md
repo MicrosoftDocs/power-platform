@@ -281,7 +281,7 @@ Take these steps to publish to Teams:
     1. Select **Show to my teammates and shared users** to deploy the Awards & Recognition Copilot to a more limited audience. Here, you can select both security groups and individual users. When finished with selections, select **Share** to save changes to the copilot permissions.
 
 > [!NOTE]
-> Awards & Recognition Copilot is designed for a Microsoft Teams experience and the default authentication has been configured to *Authenticate with Microsoft*. [Learn more about adding user authentication to topics](microsoft-copilot-studio/advanced-end-user-authentication?tabs=web).
+> Awards & Recognition Copilot is designed for a Microsoft Teams experience and the default authentication has been configured to *Authenticate with Microsoft*. [Learn more about adding user authentication to topics](/microsoft-copilot-studio/advanced-end-user-authentication?tabs=web).
 
 More information:
 

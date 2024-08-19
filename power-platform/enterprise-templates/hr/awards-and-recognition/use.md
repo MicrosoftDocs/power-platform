@@ -1,11 +1,11 @@
 ---
 title: Use the Awards and Recognition App and Copilot
 description: Take a look at what it's like to use the Awards and Recognition App and Copilot.
-author: tshanep
-ms.author: shanep
+author: tverhasselt
+ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 09/25/2023
+ms.date: 08/19/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
