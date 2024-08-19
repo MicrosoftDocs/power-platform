@@ -59,7 +59,7 @@ landingContent:
             url: /training/paths/copilot-foundations/
           - text: Create and extend custom copilots in Microsoft Copilot Studio
             url: /training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
-      - linkListType: learn
+      - linkListType: reference
         links:
            - text: Responsible AI Tools and practices
              url: https://www.microsoft.com/en-gb/ai/tools-practices
