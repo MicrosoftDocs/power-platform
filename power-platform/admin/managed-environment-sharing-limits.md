@@ -50,6 +50,10 @@ If a user tries to share a canvas app that contradicts the sharing rules, the us
 
 :::image type="content" source="media/managed-environment-canvas-app-sharing-rule.png" alt-text="Screenshot of a message when canvas app doesn't respect sharing rule.":::
 
+If a user tries to share a copilot when sharing with viewers is turned off, the user is informed, as shown below.
+
+:::image type="content" source="media/share-this-copilot-error.png" alt-text="Screenshot of a message when canvas app doesn't respect sharing rule.":::
+
 ## Use PowerShell to set sharing limits
 
 You can also use PowerShell to set and remove sharing limits.
