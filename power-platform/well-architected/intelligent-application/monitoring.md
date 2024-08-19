@@ -1,5 +1,5 @@
 ---
-title: Performance monitoring considerations for intelligent application workloads
+title: Optimize performance for intelligent application workloads
 description: Performance monitoring considerations for intelligent application workloads TODO
 author: manuelap-msft
 ms.author: mapichle
@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Performance monitoring considerations for intelligent application workloads
+# Optimize performance for intelligent application workloads
 
 Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users. Monitoring the performance of your intelligent application workload is crucial to ensuring it operates effectively and efficiently.
 
@@ -17,7 +17,7 @@ The workload team need to establish key performance metrics, regularly review sy
 
 ## Define performance targets
 
-Identifying key performance metrics involves determining the essential measurements that track the progress towards achieving workload performance goals. This identification provides a quantifiable way to measure and improve performance efficiency. 
+Identifying key performance metrics involves determining the essential measurements that track the progress towards achieving workload performance goals. This identification provides a quantifiable way to measure and improve performance efficiency.
 
 When you identify key metrics to focus on, consider metrics related to availability, capacity, and response time:
 
