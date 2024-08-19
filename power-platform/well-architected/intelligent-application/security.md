@@ -21,19 +21,32 @@ You should periodically assess the services and technologies you employ to ensur
 
 Understand the key requirements for the intelligent application workload you are implementing.
 
+### Access Control and Authentication
+
 - What access control and authentication mechanisms will be implemented to ensure only authorized users can access the intelligent application workload?
-- What data residency requirements do you have for the types of data being used with the intelligent application workload? Understand where your data will reside and if this aligns with your legal or regulatory obligations.
-- What regulatory and compliance requirements must be met for the intelligent application workload?
-- How will the intelligent application workload securely integrate with other internal and external systems? 
-- How will application secrets, such as API keys and passwords, be managed and secured?
-- What network security requirements will impact the intelligent application workload? For example, are internal APIs only accessible in a VNET? 
-- How will access and usage of the intelligent application workload be audited and monitored?
 - How do you ensure secure and seamless user authentication?
-- What are the network and integration requirements for your workload? Is there a need to integrate with internal or external data sources or APIs? 
-- What are the defined user and system flows, and how will they be secured? 
+- How do you control which apps can interact with the Copilot and what measures ensure these restrictions are effective?
+ 
+### Security and Incident Management
+
+- How will application secrets, such as API keys and passwords, be managed and secured?
+- What network security requirements will impact the intelligent application workload? For example, are internal APIs only accessible in a VNET?
+- How will access and usage of the intelligent application workload be audited and monitored?
 - What is the incident response plan for addressing security breaches or vulnerabilities?
+ 
+### Compliance and Data Residency
+
+- What data residency requirements do you have for the types of data being used with the intelligent application workload? Understand where your data will reside and if this aligns with your legal or regulatory obligations?
+- What regulatory and compliance requirements must be met for the intelligent application workload?
+ 
+### System Integration and Network Requirements
+
+- How will the intelligent application workload securely integrate with other internal and external systems?
+- What are the network and integration requirements for your workload? Is there a need to integrate with internal or external data sources or APIs?
+
+### Ethical Considerations and Responsible AI
+
 - How will ethical considerations and responsible AI practices be incorporated into the intelligent application workload?
-- How do you control which apps can interact with the Copilot and what measures ensure these restrictions are effectively?
 
 ## Implement robust authentication and access control measures
 

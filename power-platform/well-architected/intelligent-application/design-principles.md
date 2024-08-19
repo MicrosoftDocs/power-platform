@@ -58,7 +58,7 @@ We recommend that you regularly assess the services and technologies to ensure t
 
 You can employ several methods to secure your intelligent application workloads:
 
-- **User authentication and access control**: Implement robust authentication and access control measures to ensure authorized users can access Copilot.
+- **User authentication and access control**: Implement robust authentication and access control measures to ensure authorized users can access Copilot. Unauthorized users could gain access to the intelligent application workload, leading to data breaches, misuse of resources, and potential exposure of sensitive information. Weak or ineffective authentication mechanisms may also result in compromised user accounts.
 - **Compliance**: Ensuring that data is protected and managed in compliance with regulatory requirements.
 - **Integration**: Secure all integrations with service principals and other best practices. Monitor and protect the network integrity of internal and external endpoints through security capabilities and appliances, such as firewalls or web application firewalls.
 - **Ongoing monitoring and auditing**: Continuously monitor and audit the Copilots activities to detect and respond proactively.
