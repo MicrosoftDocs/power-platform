@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/16/2024
+ms.date: 08/19/2024
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -24,16 +24,15 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 
 ## Sharing rules
 
-| Canvas app sharing rules | System behavior when selected |
+| Canvas app sharing rules | Description |
 | --- | --- |
 | Don't set limits | Select to not limit sharing canvas apps. |
 | Exclude sharing with security groups | Select if users aren't allowed to share canvas apps with any security groups or with everyone. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, you can control the maximum number of users with whom a canvas app can be shared. |
 
-| Custom copilot and copilot extension sharing rules | System behavior when selected |
+| Custom copilot and copilot extension sharing rules | Description |
 | --- | --- |
-| **Let people grant Editor permissions when copilots and extensions are shared** is selected. | Owners and editors can share with any individual as an editor. |
-| **Let people grant Editor permissions when copilots and extensions are shared** isn't selected. | Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers. |
+| Let people grant Editor permissions when copilots and extensions are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
 | **Let people grant Viewer permissions when copilots and extensions are shared** is selected. | Owners and editors can share with any individual as a viewer and any security group. |
 | **Let people grant Viewer permissions when copilots and extensions are shared** isn't selected. | Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
 | **Only share with individuals (no security groups)** is selected. | Owners and editors can only share with individuals as viewers. They can't share with a security group. |
