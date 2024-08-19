@@ -15,58 +15,68 @@ Performance efficiency is the ability of your workload to efficiently scale to m
 
 The workload team need to establish key performance metrics, regularly review system performance, and diagnose any issues promptly. Effective monitoring and diagnostic procedures help maintain system reliability and user satisfaction. 
 
-The AI helpdesk comes with OOTB capabilities such as topic analysis to provide insights into common issues and integration with Azure Application Insights for advanced monitoring.
+## Define performance targets
 
+Identifying key performance metrics involves determining the essential measurements that track the progress towards achieving workload performance goals. This identification provides a quantifiable way to measure and improve performance efficiency. 
 
-Increase performance efficiency by:
+When you identify key metrics to focus on, consider metrics related to availability, capacity, and response time:
+
+- _Capacity_: Throughput and concurrency are sample capacity metrics. Throughput refers to the ability to handle a specific number of transactions within a given time period. For instance, a copilot might handle 200,000 chat sessions per month. Understanding target volumes helps validate the target architecture and scale. Also consider seasonal impact and expected maximum peak of concurrent conversations.
+
+- _Response time:_ Latency and load time are common response time metrics. Latency is the time it takes to respond to a request (200 milliseconds). Load time is the time it takes for a copilot to be active with the response of the first message. Understand the expected maximum latency for the copilot to answer queries, and define an approach for handling long-running actions (e.g. waiting for an external system to return data).
+
+- _Deflection rate:_ In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
+
+- _Engagement and outcomes_: Tracking conversation engagement and outcomes is crucial to measure the copilot performance metrics and identify areas for improvements in the analytics dashboard. Learn more: [Measure copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measure copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes)
+
+## Performance planning
+
+Resources in your workload have performance limitations. Performance limitations apply to features within each service. You need to understand the limitations of the resources in your workload and factor those limitations into your design decisions. For example, you should know whether resource limitations require you to change the design approach or to change resources altogether.
 
 - Understanding target volumes helps validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential impact on Dataverse storage for the conversation transcripts.
 - Understand [platform limits](/microsoft-copilot-studio/requirements-quotas). When integrating with external systems, for example through Power Automate or HTTP requests, it’s important to validate that every part can handle the load.
-- Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts
-- Understand the expected copilot response times for
-  - First chat load and first message response
-  - Maximum latency for the copilot to answer user queries
-  - Approach for handling long-running actions (e.g. waiting for an external system to return data)
 
-Considering each of these aspects helps you build an intelligent application workload a consistent, cohesive user experience.
+## Performance monitoring
 
-In the context of intelligent application workloads and conversational AI, the deflection rate should also be used as a metric to measure performance. Deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
+Performance optimization requires data to measure the current performance of a workload or a flow against its performance targets. You need to collect the right amount and diversity of data to measure the performance of the code and the infrastructure against performance targets. Ensure that every component and flow within the workload automatically generates continuous and meaningful metrics and logs.
 
-Monitoring the performance of the AI-powered HR helpdesk is crucial to ensuring it operates effectively and efficiently. 
+Monitoring the performance of your intelligent application workload is crucial to ensuring it operates effectively and efficiently. 
 
-Administrators need to establish key performance metrics, regularly review system performance, and diagnose any issues promptly. Effective monitoring and diagnostic procedures help maintain system reliability and user satisfaction. 
+Copilot Studio provides comprehensive out-of-the-box analytics that allow you to understand a copilot's usage and key performance indicators.
 
-The AI helpdesk comes with OOTB capabilities such as topic analysis to provide insights into common issues and integration with Azure Application Insights for advanced monitoring.
-
-Importance of monitoring system performance.
-Key performance metrics for the AI-powered helpdesk.
-Leveraging OOTB capabilities for monitoring.
-Advanced monitoring with Azure Application Insights.
-Regular performance reviews and reporting.
-
-Tracking conversation engagement and outcomes is crucial to measure the copilot performance metrics and spot areas for improvements in the analytics dashboard.
-https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-engagement
-https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/measuring-outcomes
-
-Analytics strategy
-
-Copilot Studio provides comprehensive out-of-the-box analytics that allow customers to understand a copilot's usage and key performance indicators.
 Customers can view reports related to:
-Performance and usage.
-Customer satisfaction.
-Session information.
-Topic usage.
-Billed sessions.
-However, there are often scenarios where you'll need to create or use custom analytics. For example, you may need to:
-Share analytics with non-makers or users.
-Report on conversation transcripts data for a period longer than the default last 30 days.
-Design a report not covered by out-of-the-box analytics.
-https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/custom-analytics-strategy
 
-Optimization strategy
+- Performance and usage.
+- Customer satisfaction.
+- Session information.
+- Topic usage.
+- Billed sessions.
 
-What is your plan to keep improving your copilot’s performance and ROI?
-Return on investment (ROI) and improved customer satisfaction (CSAT) are top priorities for the organizations that implement Copilot Studio copilots.
-Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around ROI and CSAT, and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
-While the metrics continue to evolve, there are several things you can do as a copilot builder to improve the deflection rate of your copilot. In these articles, we cover the importance of deflection in conversational AI and general techniques/considerations that are universal for optimizing deflection for copilots.
-https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/deflection-overview
+In addition to the native analytics features within Copilot Studio, you can send telemetry data to Application Insights. Learn more: [Capture Copilot Studio telemetry with Azure Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp). Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
+
+Define the key performance indicators (KPIs) that you will monitor to measure your intelligent application workloads success - e.g. the engagement rate, resolution rate, and deflection rate. Start by assessing the native dashboards, and then evaluate if developing a custom report would better meet your requirements.
+
+Learn more: [Custom analytics strategy](/microsoft-copilot-studio/guidance/custom-analytics-strategy)
+
+## Continuous performance optimization
+
+Proactively optimizing performance means taking measures to improve and enhance the performance of the workload before any performance issues arise. Using proactive measures involves identifying potential bottlenecks, monitoring performance metrics, and implementing optimizations to ensure that the workload operates efficiently and meets the desired performance goals.
+
+Optimizing the copilot deflection rate is often one of the top focus areas to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and customer satisfaction (CSAT).
+
+To regularly improve your intelligent application workload, plan regular review of the copilot performance:
+
+- Deflection rate
+- Resolution rate
+- Engagement rate
+- Topics with low resolution
+- Unrecognized utterances
+- Analysis per channel
+
+This review helps prioritize the backlog of copilot updates. For example, unrecognized utterances are used to either train existing topic or create new topic where there is demand.
+
+Learn more: [Deflection optimization](/microsoft-copilot-studio/guidance/deflection-overview)
+
+
+
+
