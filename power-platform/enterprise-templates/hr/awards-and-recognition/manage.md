@@ -20,7 +20,7 @@ Create custom experiences for your users in the Awards and Recognition app. A pr
 - Approve, reject, withdraw, or cancelling nominations.
 - Create, update, or delete language localization data (this capability can be assigned to any user).
 
-Get started by configuring the Awards and Recognition Administration app and the Employee Experiences Base app.
+Get started by configuring the Awards and Recognition Administration app.
 
 ## Create awards and assessment ratings
 
@@ -40,11 +40,9 @@ Take these steps to create an award record:
 1. Select **+ New** in the toolbar and fill out the *Name* and *Description* for the award. The description text should help nominators understand who might be eligible for a given award. Additionally, define whether the award can be made available to a single individual, multiple individuals (user-defined groups), or teams (pre-defined groups).
 1. Select **Save**.
 
-### Associate an image
+### Associate an image (optional)
 
-The app is a visual experience, so it's important to assign an image to each award.
-
-Take these steps to associate an image:
+The app is a visual experience, so it's important to assign an image to each award. Take these steps to associate an image:
 
 - Select **Choose file**.
 - Choose the *image* you want and select **Open**.
@@ -54,7 +52,7 @@ Take these steps to associate an image:
 
 Adding assessment ratings to an award is an optional step that allows a nominator to assess additional traits related to the award. Take these steps to create assessment ratings for an award:
 
-1. With the newly defined award on the screen, select **+ New Award Assessment Rating** in the *Award Assessment Ratings Questions* section. This will open up a new *Award Assessment Rating* form.
+1. With the newly defined award on the screen, select **+ New Award Assessment Rating** in the *Award Assessment Ratings Questions* section. This opens up a new *Award Assessment Rating* form.
 1. Specify the name of the trait to assess as part of the nomination for this award.
 1. Provide details about how the nominator should assess the nominee in the *Description* section.
 1. Specify the order in which it will be presented to the nominator.
@@ -154,23 +152,6 @@ Follow these steps to review the nominations and approve or reject:
 > The solution is not set up to automatically send out email notifications to the award recipients once the nominations are finalized.
 >
 > You need to set up your own organizational process to notify award recipients after the entire review process is complete. For example, you could send out an official communication that acknowledges the award recipients or have an awards ceremony.
-
-## Support more languages
-
- You can localize all the strings in the Awards and Recognition app to support the diverse set of languages that may be spoken at your organization. The app contains default strings for all text, but checks to see if there's a localized version in the Employee Experience Localization table. The table is included in the Employee Experience Base solution that gets installed alongside the Awards and Recognition solution. The Employee Experience Base solution and the Awards and Recognition solution are accessed together from AppSource.
-
-To localize app strings, users must have the **Employee Experience Localizer** security role assigned to them by a Power Platform admin. Once assigned, a user takes these steps:
-
-1. Go to the *Employee Experience Admin app*.
-1. Select **+New**.
-1. Fill out the form:
-
-    - *English Value* is the text in the app that you want to replace.
-    - *Language* is the language you want to provide a localized value for.
-    - *Localized Value* is the translated text.
-    - *String Type* is the type of string you're replacing. This field is optional.
-
-1. Select **Save & Close**.
 
 ### Next step
 

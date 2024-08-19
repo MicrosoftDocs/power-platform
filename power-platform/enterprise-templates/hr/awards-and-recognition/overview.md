@@ -13,38 +13,35 @@ ms.subservice: solution-templates
 
 # Awards and Recognition template for Power Platform
 
-The Awards and Recognition template makes it easy to set up and facilitate an employee awards program.
+The Awards and Recognition template makes it easy to set up and facilitate an employee awards program. It's designed to streamline the process of nominating and recognizing coworkers for their contributions and achievements.
 
-Employees use a canvas app to nominate coworkers and teams and to track their own recognitions.
+Employees use a canvas app or a Microsoft custom copilot deployed in Teams to nominate coworkers and teams and to track their own recognitions.
 
 Program admins manage the awards program in the admin model-driven app. They have the ability to define nomination periods and the available awards (types of recognition) in those periods. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. At the close of a nomination period, a program admin can review all the nominations and approve or decline them.
 
-:::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition." lightbox="media/overview/ar-four-screens.png":::
+:::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition app pages." lightbox="media/overview/ar-four-screens.png":::
 
-The Awards and Recognition template is available in [Microsoft AppSource](<https://aka.ms/AccessAwardsAndRecognitionTemplate>). The template package consists of two solutions:
+:::image type="content" source="media/overview/a-r-copilot-ex.png" alt-text="Awards and Recognition app's  create a nomination copilot experience.":::
 
-- **Employee Experience Base** contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+:::image type="content" source="media/overview/a-r-copilot-ex1.png" alt-text="Awards and Recognition app's customize option working with copilot.":::
 
-- **Awards and Recognition** contains all the components necessary to enable the Awards & Recognition experience in your organization.
+Both Power App and Microsoft Copilot Awards and Recognition template versions are available in [Microsoft AppSource](<https://aka.ms/AccessAwardsAndRecognitionTemplate>) and can be installed independent of each other by selecting either:
 
-## Employee Experience base solution components
+- Awards and Recognition App
+- Awards and Recognition Copilot
 
-The *Employee Experience Base* solution contains various components that allow an admin to set up and manage the language preferences.
+Each install package contains the Awards and Recognition Base solution. You can choose to download one or both packages. If you choose to download both packages, you'll have three solutions.
 
-- **Employee Experience Localization Admin** is the model-driven app that allows you to see and edit localized string values as an admin.
-- **Employee Experience Localization** is the table that records the app string replacements for every localized version of the app.
-- **ISO Employee Experience Language Code** is the *one choice* that stores the abbreviation for available language codes.
-- Two security roles:
-  - **Employee Experience Localization Reader** provides *read* access to the table.
-  - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
+- **Awards and Recognition Base** contains the common foundational components needed to enable the Awards and Recognition experience in your organization, such as data tables and an admin interface. 
 
-## Awards and Recognition solution components
+- **Awards and Recognition App** contains the Power App canvas app interface.
+- **Awards and Recognition Copilot** contains the custom copilot interface.
 
-The *Awards and Recognition* solution contains various components that an admin can configure. It is composed of two apps, eight tables, and two security roles.
+## Awards and Recognition Base solution components
 
-- Two apps:
-  - **Awards and Recognition** is the canvas app for the users. It's where you nominate others for awards, view their past nominations, and see awards they have received.
-  - **Awards and Recognition Administration** is the model-driven app for the admins. It's where you, as an admin, can:
+The *Awards and Recognition Base* solution contains the foundational components needed to run an Awards and Recognition program.
+
+- One model-driven app: **Awards and Recognition Administration** is where an admin can:
 
   - Configure nomination periods.
   - Configure available awards and related assessment questions.
@@ -67,8 +64,34 @@ The *Awards and Recognition* solution contains various components that an admin 
   - **Awards and Recognition - Program Admin** is a role that is granted to anyone who needs to configure nomination periods, awards, and group—as well as anyone who will be involved with setting the final state of nominations.
   - **Awards and Recognition - User** is a role that is granted to ALL users of the application. Generally, everyone in an organization in which the awards program is being rolled out to.
 
-- **Awards and Recognition - Recognition gets deactivated** is the Power Automate flow that sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
+- One Power Automate flow: **Awards and Recognition - Recognition gets deactivated** sets the *reviewed by* and *reviewed on* fields once a nomination has been set to a final state.
+- One connection reference: **Awards and Recognition - Dataverse** sets the Dataverse connection.
 
+## Awards and Recognition App solution components
+
+The *Awards and Recognition App* solution enables Awards and Recognition program participants to interact within a Power Apps canvas app.
+
+One canvas app: **Awards and Recognition App** is where users nominate others for awards, view their past nominations, and see awards they've received.
+
+## Awards and Recognition Copilot solution components
+
+The *Awards and Recognition Copilot* solution enables Awards and Recognition program participants to interact with a copilot chatbot.
+
+- One copilot: **Awards and Recognition Copilot** is where users:
+
+  - Create an Award nomination for a single user, list of users, or a team.
+  - View recognitions that they've submitted and received.
+  - View help topics with definitions for the program.
+
+- Three Power Automate flows:
+
+  - **Awards & Recognition – Get Next Rating** helps the user create ratings for the selected award category one-by-one.
+  - **Awards & Recognition – Handle User Selection** keeps track of user selections as they create an award nomination in the copilot.
+  - **Awards & Recognition – Submit to Dataverse** submits the award nomination to be saved within Dataverse.
+
+- One connection reference: **Awards and Recognition - Dataverse** sets the Dataverse connection.
+- One AI prompt: **Award Writer** uses the AI's general knowledge to generate an award message in addition to a prompt describing how to use that information and form it into an award use case.
+  
 ### Next step
 
 [Install and set up the Awards and Recognition template](install-and-set-up.md)
