@@ -34,8 +34,8 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | --- | --- |
 | Let people grant Editor permissions when copilots and extensions are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
 | Let people grant Viewer permissions when copilots and extensions are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
-| Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:**|
-| Limit number of viewers who can access each copilot and extension. | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a custom copilot and copilot extensions can be shared with. |
+| Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:** Owners and editors can't share with individuals as viewers. They can't share with a security group.|
+| Limit number of viewers who can access each copilot and extension | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a custom copilot and copilot extensions can be shared with. |
 
 To learn more about editor and viewer permissions on custom copilots and copilot extensions, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
@@ -46,7 +46,7 @@ To learn more about editor and viewer permissions on custom copilots and copilot
 >
 > Sharing rules in Dataverse for Teams environments do not impact sharing to a Team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a Team other than the one bound to the environment, the sharing limits are enforced. 
 
-If a user tries to share a canvas app or copilot that contradicts the sharing rules, the user is informed, as shown below.
+If a user tries to share a canvas app that contradicts the sharing rules, the user is informed, as shown below.
 
 :::image type="content" source="media/managed-environment-canvas-app-sharing-rule.png" alt-text="Screenshot of a message when canvas app doesn't respect sharing rule.":::
 
