@@ -31,21 +31,21 @@ Here is the *Awards and Recognition* Copilot experience.
 
 ## View nominations you submitted
 
-In the Awards and Recognition App, you can select to see nominations you've submitted.
+In the Awards and Recognition App, you can select to see nominations.
 
 :::image type="content" source="media/use/a-r-app-noms.png" alt-text="Look at nominations you've submitted in the Awards and Recognition canvas app.":::
 
-In the Awards and Recognition Copilot chat experience, you can select to see nominations you've submitted.
+In the Awards and Recognition Copilot chat experience, you can select to see nominations.
 
 :::image type="content" source="media/use/a-r-copilot-use-1.png" alt-text="Look at nominations you've submitted in the Awards and Recognition Copilot.":::
 
 ## View recognitions you received
 
-In the Awards and Recognition App, you can select to see the recognitions you've received.
+In the Awards and Recognition App, you can select to see your recognitions.
 
 :::image type="content" source="media/use/a-r-app-rec-rec.png" alt-text="Look at recognitions you've received in the Awards and Recognition canvas app.":::
 
-In the Awards and Recognition Copilot chat experience, you can ask Copilot to show you the recognitions you've received.
+In the Awards and Recognition Copilot chat experience, you can ask Copilot to show you your recognitions.
 
 :::image type="content" source="media/use/a-r-copilot-recs.png" alt-text="Copilot can show you recognitions you've received in the Awards and Recognition Copilot.":::
 
