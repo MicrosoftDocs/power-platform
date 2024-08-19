@@ -1,11 +1,11 @@
 ---
 title: Install and set up the Awards and Recognition template for Power Platform
 description: Learn how to install, set up, and deploy the Awards and Recognition template for Microsoft Power Platform.
-author: tshanep
-ms.author: shanep
+author: tverhasselt
+ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/27/2024
+ms.date: 08/19/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
