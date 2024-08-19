@@ -54,10 +54,7 @@ For the remainder of this tutorial, you'll need an environment ID and an applica
 
 Next we'll authenticate with Microsoft Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication (preview)](programmability-authentication-v2.md).
 
-In this tutorial, we're using a user credential with password to obtain a token.  An example call to Microsoft Entra ID is below:
-
-> [!div class="mx-imgBorder"] 
-> ![Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.](media/appmgmt-tutorial-2.png "Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API")
+In this tutorial, we're using a user credential with password to obtain a token. 
 
 We then parse the Microsoft Entra token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
