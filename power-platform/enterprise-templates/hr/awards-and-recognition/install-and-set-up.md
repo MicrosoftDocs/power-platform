@@ -124,7 +124,7 @@ You can easily access and install Awards and Recognition templates from AppSourc
 
 1. Go to one of the Awards and Recognition AppSource offerings:
     - [Awards and Recognition App template on AppSource](https://aka.ms/AccessAwardsandRecognitionTemplate)
-    - [Awards and Recognition Copilot template on AppSource](https://aka.ms/AccessAwardsandRecognitionCopilotTemplate)
+    - [Awards and Recognition Copilot template on AppSource](https://go.microsoft.com/fwlink/?linkid=2281726)
 1. Select **Get it now**. This takes you to the *Install Awards and Recognition Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
     :::image type="content" source="media/install/ar-install-env.png" alt-text="AScreenshot of the modal dialog window where you select the environment you set up for the template.":::
@@ -138,13 +138,13 @@ You can easily access and install Awards and Recognition templates from AppSourc
 You also have the option to download *managed* or *unmanaged* solution files to manually install into your prepared environment according to your organization's requirements.
 
 - Managed
-  - [mpa_AwardsRecognitionBase](https://aka.ms/AwardsRecognitionBaseManaged)
-  - [mpa_AwardsRecognitionApp](https://aka.ms/AwardsRecognitionAppManaged)
-  - [map_AwardsRecognitionCopilot](https://aka.ms/AwardsRecognitionCopilotManaged)
+  - [mpa_AwardsRecognitionBase](https://go.microsoft.com/fwlink/?linkid=2282103)
+  - [mpa_AwardsRecognitionApp](https://aka.ms/AwardsAndRecognitionManagedSolution)
+  - [map_AwardsRecognitionCopilot](https://go.microsoft.com/fwlink/?linkid=2281725)
 - Unmanaged
-  - [mpa_AwardsRecognitionBase](https://aka.ms/AwardsRecognitionBaseUnmanaged)
-  - [mpa_AwardsRecognitionApp](https://aka.ms/AwardsRecognitionUnmanaged)
-  - [mpa_AwardsRecognitionCopilot](https://aka.ms/AwardsRecognitionCopilotUnmanaged)
+  - [mpa_AwardsRecognitionBase](https://go.microsoft.com/fwlink/?linkid=2281581)
+  - [mpa_AwardsRecognitionApp](https://aka.ms/AwardsAndRecognitionUnmanagedSolution)
+  - [mpa_AwardsRecognitionCopilot](https://go.microsoft.com/fwlink/?linkid=2281640)
 
 Take these steps to manually install solution files:
 
