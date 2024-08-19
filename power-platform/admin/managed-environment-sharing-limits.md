@@ -37,6 +37,11 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:** Owners and editors can't share with individuals as viewers. They can't share with a security group.|
 | Limit number of viewers who can access each copilot and extension | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a custom copilot and copilot extensions can be shared with. |
 
+> [!IMPORTANT]
+>
+> - The ability to share custom copilots and copilot extensions is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
 To learn more about editor and viewer permissions on custom copilots and copilot extensions, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
 > [!NOTE]
