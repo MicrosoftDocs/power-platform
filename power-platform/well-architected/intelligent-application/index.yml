@@ -36,7 +36,7 @@ landingContent:
             url: security.md
           - text: Optimize performance
             url: monitoring.md
-          - text: Publishing
+          - text: Deploy workloads
             url: publishing.md
  # Card
   - title: Take the assessment
@@ -53,7 +53,19 @@ landingContent:
         links:
           - text: Microsoft Azure AI Fundamentals - Generative AI
             url: /training/paths/introduction-generative-ai/
+          - text: Microsoft Azure Learning courses on responsible AI
+            url: /training/paths/responsible-ai-business-principles/
           - text: Copilot Foundations
             url: /training/paths/copilot-foundations/
           - text: Create and extend custom copilots in Microsoft Copilot Studio
             url: /training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
+      - linkListType: learn
+        links:
+           - text: Responsible AI Tools and practices
+             url: https://www.microsoft.com/en-gb/ai/tools-practices
+           - text: HAX Design Library
+             url: https://www.microsoft.com/en-us/haxtoolkit/library/
+           - text: Microsoft AI principles
+             url: https://www.microsoft.com/ai/responsible-ai
+           - text: Microsoft responsible AI resources
+             url: https://www.microsoft.com/ai/responsible-ai-resources
