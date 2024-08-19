@@ -103,9 +103,9 @@ Take these steps to create the database for approvals:
 1. Select **+ New step**.
 1. Search on *Approvals* and choose **Create an approval**.
 1. Enter the following properties on the *Create an approval* step:
-    - **Approval type** – *Approve/Reject – First to respond*
-    - **Title** – *Test*
-    - **Assigned to** – *select your email address*
+    - **Approval type**: *Approve/Reject – First to respond*
+    - **Title**: *Test*
+    - **Assigned to**: *select your email address*
 1. Select **Save**.
 1. Select **Test Manually** and then **Test** again.
 1. Select **Continue** and then **Run flow**, followed by **Done**.
