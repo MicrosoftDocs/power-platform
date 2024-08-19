@@ -56,7 +56,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
 - **Administrators**: Be sure admins with the necessary privileges are available to coordinate and assign licensing and create environments.
 
-  - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing
+  - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licensing.
   - Power Platform Administrator to create environments.
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
