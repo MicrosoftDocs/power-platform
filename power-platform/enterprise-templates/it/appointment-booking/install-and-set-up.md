@@ -61,7 +61,7 @@ It's important to have a cohesive environment and data policy strategy for enter
 
   More information: [Microsoft Power Platform admin](/power-platform/admin/)
 
-- **Environments*: Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Appointment Booking solution files. Also consider:
+- **Environments**: Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Appointment Booking solution files. Also consider:
 
   - The Power Platform environment is set up with a Dataverse database.
   - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
