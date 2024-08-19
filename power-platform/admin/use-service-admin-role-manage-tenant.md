@@ -98,6 +98,8 @@ The following matrix shows what management is possible with the various service 
 |**Data policies**|||||
 |View and manage tenant policies|Yes|Yes|Yes|No|  
 |View and manage environment policies|Yes|Yes|Yes|No|  
+|**Copilot**|||||
+|View Copilot page in Power Platform Admin Center|Yes|Yes|Yes|No|  
 ||||||
 |**POWER BI**|||||  
 |Manage the Power BI tenant|Yes|Yes|No|Yes|  
