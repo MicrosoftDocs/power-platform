@@ -1,11 +1,11 @@
 ---
 title: Awards and Recognition template for Power Platform
 description: The Awards and Recognition template for Microsoft Power Platform enables organizations to facilitate an engaging and efficient awards system to acknowledge the outstanding efforts of employees .
-author: tshanep
-ms.author: shanep
+author: tverhasselt
+ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/19/2024
+ms.date: 08/20/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

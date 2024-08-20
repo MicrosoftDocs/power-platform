@@ -1,11 +1,11 @@
 ---
-title: Use the Awards and Recognition App and Copilot
+title: Use the Awards and Recognition App or Copilot
 description: Take a look at what it's like to use the Awards and Recognition App and Copilot.
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
-ms.topic: overview
-ms.date: 08/19/2024
+ms.topic: how-to
+ms.date: 08/20/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -13,39 +13,64 @@ ms.customerIntent: As a user, I want to take a look at the different user experi
 ---
 
 
-# Use the Awards and Recognition App or Copilot in Microsoft Power Platform
+# What is Microsoft Power Platform Awards and Recognition App or Copilot?
 
-Use the Awards and Recognition App or Copilot to submit nominations to recognize individual coworkers and teams, view your own recognitions, and update your user settings.
+The Awards and Recognition program allows you to  nominate individual coworkers and teams for awards, view your own recognitions, and update your user settings. Your organization can opt to have users interact with either the Awards and Recognition App or Awards and Recognition Copilot—or offer both options. Each version offers a different user experience to support an awards program and this article provides details about each type of experience.
 
-## Nominate coworkers for awards
+## Use the Awards and Recognition App
 
-Submit nominations that recognize your coworkers for outstanding efforts in your organization and view your own recognitions that you receive in the Awards and Recognition App or Copilot. You can nominate an individual, a group of people, or a team.
+The Awards and Recognition App is designed to be used as a mobile application. If your organization has set up this program, you simply open the mobile app to:
 
-Here is the *Awards and Recognition* App experience.
+- nominate coworkers for outstanding efforts
+- view nominations you submitted and recognitions received
+- change screen settings
 
+### Nominate coworkers for awards
+
+In the Awards and Recognition App, you take steps to nominate coworkers for awards
 :::image type="content" source="media/use/ar-awards-recognition.png" alt-text="Awards and Recognition app's start a new nomination screen.":::
 
-Here is the *Awards and Recognition* Copilot experience.
+To get started, take these steps:
 
-:::image type="content" source="media/use/a-r-copilot-use.png" alt-text="Awards and Recognition Copilot's chat start screen.":::
+1. Open the *Awards and Recognition App*
+1. Select the **Nomination Period** in the *Select here* drop-down on the main screen, then select **Next**.
+1. Select from available awards. Select **Next**.
+1. Select who you are nominating (if there's only one choice, it's preselected).
+1. Search and select the nominees from the drop-down list. Select Next.
+1. Make a case for the nomination and select **Next**.
+1. If assessment ratings are defined for this award, go to the *Star Ratings* screen to rate each assessment area and then select **Next** to review and submit the nomination. If there are no assessment ratings to give, go directly to the *Review & Submit* screen.
+1. On the Review & Submit screen, review the award selected, nominee or team, rationale, and ratings you provided. If everything looks good, select **Submit**. If not, select the back arrow to update.
+1. Once complete, go back to the Review & Submit screen to select **Submit**.
 
-## View nominations you submitted
+### View nominations and recognitions
 
-In the Awards and Recognition App, you can select to see nominations.
-
-:::image type="content" source="media/use/a-r-app-noms.png" alt-text="Look at nominations you've submitted in the Awards and Recognition canvas app.":::
-
-In the Awards and Recognition Copilot chat experience, you can select to see nominations.
-
-:::image type="content" source="media/use/a-r-copilot-use-1.png" alt-text="Look at nominations you've submitted in the Awards and Recognition Copilot.":::
-
-## View recognitions you received
-
-In the Awards and Recognition App, you can select to see your recognitions.
+You can view the nominations you submitted in the past and view the approved rewards that you received.
 
 :::image type="content" source="media/use/a-r-app-rec-rec.png" alt-text="Look at recognitions you've received in the Awards and Recognition canvas app.":::
 
-In the Awards and Recognition Copilot chat experience, you can ask Copilot to show you your recognitions.
+To get to the *My Recognitions* screen, select **Recent Activity** to see:
+
+- Nominations I've submitted
+- Recognitions I've received
+
+> [!TIP]
+> If there are many records, use the search and filter capabilities to narrow down the results.
+
+### Change screen settings
+
+The Awards and Recognition App offers three color-theme settings. By default, the app is set to the light theme, but you can update it to the dark theme or to the high-contrast theme for accessibility. Select the settings icon (gear icon) to select the theme and then select the back arrow to continue through the app with your updated theme.
+
+## Use the Awards and Recognition Copilot
+
+The Awards and Recognition Copilot is designed to be accessed and used in Microsoft Teams. If your organization has set up this program, go into Teams and select **+Apps** to add the Awards and Recognition Copilot to your Teams setup. It's easy to get started interacting with the Awards and Recognition Copilot in Teams to:
+
+- nominate coworkers for awards
+- inquire about recognitions you received from others
+- Ask to see the nominations you submitted
+
+To get started in the Awards and Recognition Copilot, you simply tell it what Awards and Recognition task you want to do. Copilot also offers buttons to select the next action, such as *Create a nomination* or *See my recognitions*.
+
+:::image type="content" source="media/use/a-r-copilot-use.png" alt-text="Awards and Recognition Copilot's chat start screen.":::
 
 :::image type="content" source="media/use/a-r-copilot-recs.png" alt-text="Copilot can show you recognitions you've received in the Awards and Recognition Copilot.":::
 

@@ -181,14 +181,17 @@ More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
 
 Set up security roles in your solutions so admins can manage access to and the experiences in the app. There are two security roles:
 
-- **Program Admins** configure award programs and review and finalizing nominations. Assign this role to people who need to:
+- **Awards and Recognition - Program Admin** configures award programs and reviews and finalizes nominations. Assign this role to people who need to:
 
   - See and update all the data
   - Configure awards, award assessment ratings, nomination periods, groups, and group membership
   - Approve, reject, withdraw, or cancel nominations
   - Create, update, or delete language localization data
 
-- **Basic Users** potentially nominate others for awards.Assign this role to admins and basic users so they can nominate people and see their own data.
+- **Awards and Recognition - User** potentially nominates others for awards.Assign this role to admins and basic users so they can nominate people and see their own data.
+
+> [!IMPORTANT]
+> All users must be assigned the basic **User** role in addition to any other roles assigned to them.
 
 Take these steps to assign roles:
 
@@ -197,9 +200,6 @@ Take these steps to assign roles:
 1. Select **Users**, then select **See all**.
 1. Choose the users who will be using the app and then select **Manage security roles** to assign *Basic User* and any other appropriate roles to each user.
 1. Select **Save**.
-
-> [!IMPORTANT]
-> All users must be assigned the **Basic User** role in addition to any other roles assigned to them.
 
 > [!TIP]
 > For large organization, create a Microsoft Entra security group containing all targeted users for the Awards and Recognition program and associate it to a new Microsoft Entra ID Security Dataverse Team created via the Power Platform admin center, then assign the **Awards@Recognition-User** role to this Dataverse team.
