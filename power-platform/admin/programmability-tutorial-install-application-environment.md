@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Install an application to a target environment (preview) | Microsoft Docs"
+title: Tutorial: Install an application to a target environment (preview) 
 description: This tutorial demonstrates how to use the Power Platform API (preview) to install an application in an environment context.
 author: laneswenka
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ search.audienceType:
 
 This tutorial is aimed at enabling Power Platform admins so they can take advantage of the Power Platform API to install Applications of which their tenant already has entitlement. These applications should be visible in the Power Platform admin center under **Environments** > ***[environment-name]*** > **Resources** > **Dynamics 365 apps**. 
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 1.	Create a Power Automate or Logic Apps workflow (Azure) that authenticates with Power Platform API. 
 2.	Call the Get Environment Application Package API to retrieve the list of Applications you can install to a specific environment 
@@ -32,7 +32,7 @@ In this example scenario, a Customer is looking to install Office Groups to a sp
 > The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
 
 ## Choose a tool that can authenticate with Power Platform API
-Below are details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, and a native Power Platform CLI example.
+The following information provides details on getting connected to the Power Platform programmatically.  This tutorial includes using Azure Logic Apps as a common client for admins working in the Azure space, and a native Power Platform CLI example.
 
 # [Azure](#tab/Azure)
 ### Create the workflow and set up the variables
@@ -404,7 +404,8 @@ We make use of the [Application Install Status](/rest/api/power-platform/appmana
 GET https://api.powerplatform.com/appmanagement/environments/{environmentId}/operations/{operationId}?api-version=2022-03-01-preview
 ```
 
-An example output is shown below:
+An example output is shown:
+
 ```json
 {
   "status": "NotStarted",
@@ -426,4 +427,4 @@ Now that the monitoring has concluded, we can share the result over email as an 
 
 # [Power Platform CLI](#tab/pacCLI)
 ### Monitor progress
-Congratulations! You've reached the easy part, now just sit back and watch as your application completes installation.  If a failure occurs, you can always review the detailed logs from the Dynamics 365 apps list in your environment in the Power Platform admin center.
+Congratulations! Now watch as your application completes installation. If a failure occurs, you can always review the detailed logs from the Dynamics 365 apps list in your environment in the Power Platform admin center.
