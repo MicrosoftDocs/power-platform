@@ -41,7 +41,39 @@ The Tracking ID returned is the primary key of the [Install History (mspcat_Inst
 
 ### [SDK for .NET](#tab/sdk)
 
-There are two messages you can use to install catalog items: `mspcat_InstallCatalogItem` and `mspcat_InstallCatalogItemByCID`.
+There are two messages you can use to install catalog items: `mspcat_InstallCatalogItemByCID` and `mspcat_InstallCatalogItem`.
+
+### mspcat_InstallCatalogItemByCID
+
+Use this message when you have only the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
+
+The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
+
+
+```csharp
+static EntityReference InstallCatalogItemByCIDExample(IOrganizationService service,
+    string catalogItemId,
+    Uri deployToOrgUrl,
+    string? settings = null)
+{
+
+    var request = new mspcat_InstallCatalogItemByCIDRequest
+    {
+        CID = catalogItemId,
+        DeployToOrganizationUrl = deployToOrgUrl.ToString(),
+    };
+    if (string.IsNullOrEmpty(settings))
+    {
+        // TODO explain what these settings are
+        request.Settings = settings;
+    }
+
+    var response = (mspcat_InstallCatalogItemByCIDResponse)service.Execute(request);
+
+    return response.InstallHistoryReferance;
+
+}
+```
 
 ### mspcat_InstallCatalogItem
 
@@ -91,37 +123,7 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 ```
 
 
-### mspcat_InstallCatalogItemByCID
 
-Use this message when you have only the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
-
-The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
-
-
-```csharp
-static EntityReference InstallCatalogItemByCIDExample(IOrganizationService service,
-    string catalogItemId,
-    Uri deployToOrgUrl,
-    string? settings = null)
-{
-
-    var request = new mspcat_InstallCatalogItemByCIDRequest
-    {
-        CID = catalogItemId,
-        DeployToOrganizationUrl = deployToOrgUrl.ToString(),
-    };
-    if (string.IsNullOrEmpty(settings))
-    {
-        // TODO explain what these settings are
-        request.Settings = settings;
-    }
-
-    var response = (mspcat_InstallCatalogItemByCIDResponse)service.Execute(request);
-
-    return response.InstallHistoryReferance;
-
-}
-```
 
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)   
@@ -132,14 +134,16 @@ static EntityReference InstallCatalogItemByCIDExample(IOrganizationService servi
 
 There are two actions you can use to install catalog items: `mspcat_InstallCatalogItem` and `mspcat_InstallCatalogItemByCID`.
 
+### mspcat_InstallCatalogItemByCID
+
+> TODO: Web API example
+
 ### mspcat_InstallCatalogItem
 
 > TODO: Web API example
 
 
-### mspcat_InstallCatalogItemByCID
 
-> TODO: Web API example
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
