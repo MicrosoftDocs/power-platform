@@ -1130,7 +1130,6 @@ Many-To-One Relationship: [mspcat_installhistory mspcat_mspcat_installhistory_Ca
 These relationships are many-to-many. Listed by **SchemaName**.
 
 - [mspcat_app_policy_reln](#BKMK_mspcat_app_policy_reln)
-- [mspcat_mspcat_app_autoapproved_geo](#BKMK_mspcat_mspcat_app_autoapproved_geo)
 - [mspcat_mspcat_packages_mspcat_applications](#BKMK_mspcat_mspcat_packages_mspcat_applications)
 
 ### <a name="BKMK_mspcat_app_policy_reln"></a> mspcat_app_policy_reln

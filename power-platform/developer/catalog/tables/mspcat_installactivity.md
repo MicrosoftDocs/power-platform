@@ -1239,7 +1239,6 @@ These relationships are many-to-one. Listed by **SchemaName**.
 - [mspcat_packagelocales_mspcat_InstallActivities](#BKMK_mspcat_packagelocales_mspcat_InstallActivities)
 - [mspcat_packages_mspcat_InstallActivities](#BKMK_mspcat_packages_mspcat_InstallActivities)
 - [mspcat_publisher_mspcat_InstallActivities](#BKMK_mspcat_publisher_mspcat_InstallActivities)
-- [mspcat_templates_mspcat_InstallActivities](#BKMK_mspcat_templates_mspcat_InstallActivities)
 
 ### <a name="BKMK_mspcat_applications_mspcat_InstallActivities"></a> mspcat_applications_mspcat_InstallActivities
 

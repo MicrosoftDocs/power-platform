@@ -560,7 +560,6 @@ These columns/attributes return false for both **IsValidForCreate** and **IsVali
 These relationships are many-to-one. Listed by **SchemaName**.
 
 - [mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher](#BKMK_mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher)
-- [mspcat_publisheridentity_ApplyToGeo_msd](#BKMK_mspcat_publisheridentity_ApplyToGeo_msd)
 - [mspcat_publisheridentity_OriginatingPub](#BKMK_mspcat_publisheridentity_OriginatingPub-many-to-one)
 
 ### <a name="BKMK_mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher"></a> mspcat_mspcat_publisher_mspcat_publisheridentity_Publisher
