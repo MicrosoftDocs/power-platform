@@ -1,0 +1,34 @@
+---
+title: Security considerations for intelligent application workloads
+description: Security considerations for intelligent application workloads TODO
+author: manuelap-msft
+ms.author: mapichle
+ms.reviewer: jhaskett-msft
+ms.date: 09/12/2024
+ms.subservice: well-architected
+ms.topic: conceptual
+---
+
+# Security considerations for intelligent application workloads
+
+Copilot Studio integration patterns are not exclusive and can be combined. 
+Integration can only be as fast as the endpoints you connect to. In a conversational experience, queries should always be optimized.
+If Power Automate or Copilot Studio don’t run your logic fast enough, or if logic is better handled in code, consider moving it to Dataverse custom APIs or Dataverse low-code plug-ins – both have 2-min timeout limit – or Azure functions. These can be invoked by connectors or HTTP.
+Alternatively, in specific scenarios, customers may want to do the data integration in a middle layer, effectively modifying messages as they are relayed (e.g., for data enrichment, data masking before they get to Copilot Studio, etc.).
+Use of premium connectors is covered as part of Copilot Studio licensing.
+
+| | Power Automate cloud flows | HTTP requests and connectors | Bot Framework Skills
+| --- | --- | --- | --- |
+| **Pro** | No-code / low-code.<br>Clear separation of integration and conversational logic.<br>Can be monitored separately.<br>Existing cloud flows can be updated to integrate with Copilot Studio. | No-code / low-code.<br>Synchronous.<br>Can be monitored as part of Copilot Studio App Insights integration.<br>Can leverage variables, including environment variables and secrets.<br>Variables, conditions, parameters, etc. can use Power Fx formulas.<br>Parsing and error handling support. | Synchronous execution.<br>Support for private endpoints.<br>Existing Bot Framework investments can be reused. |
+| **Con** | Asynchronous execution can cause latency and slowness (both to invoke or to run complex flows).<br>If scale/performance are a concern, the higher-tier “Power Automate Process” plan can be evaluated.<br>“Power Automate Process” required for service principal ownership.<br>Need to return results within 100s. | Mixing conversational logic and integration logic, but integration topics can be isolated, as they can be configured for inputs and outputs.<br>Need to return results within 100s. | Pro-code (e.g., C#)<br>Runs in the Azure AI Bot Service.<br>Additional costs need to be covered by an Azure subscription.<br>ALM differs from Power Platform. |
+
+## See also
+
+Call a cloud flow as an action
+Perform HTTP requests
+Use connectors (preview)
+Use plugin actions (preview)
+Use Bot Framework skills 
+Dataverse custom APIs 
+Dataverse low-code plug-ins (preview)
+Azure functions
