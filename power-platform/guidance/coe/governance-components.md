@@ -275,8 +275,6 @@ And then for each employee, either reject the deletion or send a reminder.
 
 They can send the person to the app to do the cleanup as well. There, they're able to approve/reject deletion for all their objects.
 
-![Send reminder mail screen.](media/ArchiveApps4.png "Send reminder mail screen")
-
 #### App and Flow Inactivity Notifications Clean Up View
 
 This app gives the admin a view of all objects currently being considered for archival and deletion. An admin can filter to the apps that have been rejected with a note to review:
