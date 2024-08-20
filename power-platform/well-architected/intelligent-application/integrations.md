@@ -1,6 +1,6 @@
 ---
-title: Security considerations for intelligent application workloads
-description: Security considerations for intelligent application workloads TODO
+title: Understand integration options for intelligent application workloads
+description: Understand integration options for intelligent application workloads TODO
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Security considerations for intelligent application workloads
+# Understand integration options for intelligent application workloads
 
 
 ## Key considerations
