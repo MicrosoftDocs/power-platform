@@ -207,9 +207,6 @@ dependencies
 
 Yes. Basic 429 error details are currently provided.
 
-> [!div class="mx-imgBorder"] 
-> ![Basic 429 error.](media/application-insights-basic-429-error.png "Basic 429 error")
-
 ### Can I understand execution paths? Are calls made by the plug-in slowing the plug-in?  
 
 Yes. You can view all the messages and plug-ins that are executed for any request.  
