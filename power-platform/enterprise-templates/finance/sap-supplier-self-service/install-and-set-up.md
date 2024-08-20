@@ -38,7 +38,9 @@ Take these steps to install and set up the SAP Procurement template:
 - [Set up connections for SAP and Dataverse](/sap-procurement/administer/set-up-connections).
 - [Set up SAP List of Values](/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values).
 
-The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
+  The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
+
+-  Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](https://learn.microsoft.com/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import
 
 More information:
 
