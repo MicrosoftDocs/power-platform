@@ -35,6 +35,25 @@ Connected to... EnvironmentWithCatalog
 Tracking ID for this installation is 9cc47262-2f33-ef11-8409-6045bdd3aec3
 ```
 
+When you want to install a specific version of a catalog item, you can append the version number to the end of the string value passed to the `-cid` parameter. For example, let's say that the following table represents the available versions of the `MyCatalogItem` catalog item:
+
+
+|Version|Description|
+|---------|---------|
+|3.0.0.0|Published|
+|2.0.0.0|Active but not published|
+|1.0.0.0|inactive|
+
+The following `-cid` parameter values will have different behaviors:
+
+|Column1  |Column2  |
+|---------|---------|
+|`-cid MyCatalogItem`|Installs version 3.0.0.0 (Published version)|
+|`-cid MyCatalogItem@3.0.0.0 `|Installs version 3.0.0.0 (Published version)|
+|`-cid MyCatalogItem@2.0.0.0 `|Installs version 2.0.0.0|
+|`-cid MyCatalogItem@1.0.0.0 `|fails with an error indicating that the version is not available.|
+
+
 The Tracking ID returned is the primary key of the [Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md) record which you can review to see whether the installation succeeds.
 
 [What is Microsoft Power Platform CLI?](../cli/introduction.md)
