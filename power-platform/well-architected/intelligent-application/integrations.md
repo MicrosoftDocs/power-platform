@@ -11,6 +11,18 @@ ms.topic: conceptual
 
 # Security considerations for intelligent application workloads
 
+
+## Key considerations
+
+- Balancing configuration vs custom development: Determine when to use out-of-the-box configuration vs custom development to meet specific organizational needs.
+-  Monitoring and auditing: Understand how to monitor and audit integrations to ensure compliance and performance.
+- Understanding integration options: Explore the available integration options using connectors and plugin actions in Copilot Studio.
+
+
+
+## Integration patterns
+
+
 Copilot Studio integration patterns are not exclusive and can be combined. 
 Integration can only be as fast as the endpoints you connect to. In a conversational experience, queries should always be optimized.
 If Power Automate or Copilot Studio don’t run your logic fast enough, or if logic is better handled in code, consider moving it to Dataverse custom APIs or Dataverse low-code plug-ins – both have 2-min timeout limit – or Azure functions. These can be invoked by connectors or HTTP.

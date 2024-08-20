@@ -38,6 +38,8 @@ landingContent:
             url: monitoring.md
           - text: Deploy workloads
             url: publishing.md
+          - text: Understand integration options
+            url: integrations.md
  # Card
   - title: Take the assessment
     linkLists:

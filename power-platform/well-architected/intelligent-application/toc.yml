@@ -15,3 +15,5 @@
         href: monitoring.md
       - name: Publishing
         href: publishing.md
+      - name: Integrations
+        href: integrations.md
