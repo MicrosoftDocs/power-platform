@@ -576,18 +576,6 @@ One-To-Many Relationship: [mspcat_publisher mspcat_mspcat_publisher_mspcat_publi
 |IsHierarchical||
 |CascadeConfiguration|Archive: `NoCascade`<br />Assign: `Cascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `Cascade`<br />RollupView: `NoCascade`<br />Share: `Cascade`<br />Unshare: `Cascade`|
 
-### <a name="BKMK_mspcat_publisheridentity_ApplyToGeo_msd"></a> mspcat_publisheridentity_ApplyToGeo_msd
-
-One-To-Many Relationship: [mspcat_crmgeo mspcat_publisheridentity_ApplyToGeo_msd](mspcat_crmgeo.md#BKMK_mspcat_publisheridentity_ApplyToGeo_msd)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`mspcat_crmgeo`|
-|ReferencedAttribute|`mspcat_crmgeoid`|
-|ReferencingAttribute|`mspcat_applytogeo`|
-|ReferencingEntityNavigationPropertyName|`mspcat_ApplyToGeo`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `NoCascade`<br />Delete: `RemoveLink`<br />Merge: `NoCascade`<br />Reparent: `NoCascade`<br />RollupView: `NoCascade`<br />Share: `NoCascade`<br />Unshare: `NoCascade`|
 
 ### <a name="BKMK_mspcat_publisheridentity_OriginatingPub-many-to-one"></a> mspcat_publisheridentity_OriginatingPub
 

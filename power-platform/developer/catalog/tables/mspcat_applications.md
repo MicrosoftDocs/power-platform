@@ -1073,7 +1073,6 @@ These relationships are one-to-many. Listed by **SchemaName**.
 - [mspcat_applications_mspcat_InstallActivities](#BKMK_mspcat_applications_mspcat_InstallActivities)
 - [mspcat_CatalogItemFile_CatalogItem_mspcat](#BKMK_mspcat_CatalogItemFile_CatalogItem_mspcat)
 - [mspcat_mspcat_applications_mspcat_certificationrequest_Application](#BKMK_mspcat_mspcat_applications_mspcat_certificationrequest_Application)
-- [mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application](#BKMK_mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application)
 - [mspcat_mspcat_installhistory_CatalogItem_mspcat_](#BKMK_mspcat_mspcat_installhistory_CatalogItem_mspcat_)
 
 ### <a name="BKMK_mspcat_applications_mspcat_InstallActivities"></a> mspcat_applications_mspcat_InstallActivities
@@ -1112,17 +1111,6 @@ Many-To-One Relationship: [mspcat_certificationrequest mspcat_mspcat_application
 |IsCustomizable|`True`|
 |AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseCollectionName`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
-### <a name="BKMK_mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application"></a> mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application
-
-Many-To-One Relationship: [mspcat_crmgeodeploymentstatus mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application](mspcat_crmgeodeploymentstatus.md#BKMK_mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`mspcat_crmgeodeploymentstatus`|
-|ReferencingAttribute|`mspcat_application`|
-|ReferencedEntityNavigationPropertyName|`mspcat_mspcat_applications_mspcat_crmgeodeploymentstatus_Application`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseCollectionName`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 ### <a name="BKMK_mspcat_mspcat_installhistory_CatalogItem_mspcat_"></a> mspcat_mspcat_installhistory_CatalogItem_mspcat_
 
@@ -1143,7 +1131,6 @@ These relationships are many-to-many. Listed by **SchemaName**.
 
 - [mspcat_app_policy_reln](#BKMK_mspcat_app_policy_reln)
 - [mspcat_mspcat_app_autoapproved_geo](#BKMK_mspcat_mspcat_app_autoapproved_geo)
-- [mspcat_mspcat_crmgeo_mspcat_applications](#BKMK_mspcat_mspcat_crmgeo_mspcat_applications)
 - [mspcat_mspcat_packages_mspcat_applications](#BKMK_mspcat_mspcat_packages_mspcat_applications)
 
 ### <a name="BKMK_mspcat_app_policy_reln"></a> mspcat_app_policy_reln
@@ -1157,32 +1144,6 @@ See [mspcat_staticanalysispolicy mspcat_app_policy_reln Many-To-Many Relationshi
 |SchemaName|`mspcat_app_policy_reln`|
 |IntersectAttribute|`mspcat_applicationsid`|
 |NavigationPropertyName|`mspcat_app_policy_reln`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_mspcat_app_autoapproved_geo"></a> mspcat_mspcat_app_autoapproved_geo
-
-See [mspcat_crmgeo mspcat_mspcat_app_autoapproved_geo Many-To-Many Relationship](mspcat_crmgeo.md#BKMK_mspcat_mspcat_app_autoapproved_geo)
-
-|Property|Value|
-|---|---|
-|IntersectEntityName|`mspcat_mspcat_app_autoapproved_geo_reln`|
-|IsCustomizable|True|
-|SchemaName|`mspcat_mspcat_app_autoapproved_geo`|
-|IntersectAttribute|`mspcat_applicationsid`|
-|NavigationPropertyName|`mspcat_mspcat_app_autoapproved_geo`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseLabel`<br />Group: `Details`<br />Label: Auto-approved apps<br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_mspcat_crmgeo_mspcat_applications"></a> mspcat_mspcat_crmgeo_mspcat_applications
-
-See [mspcat_crmgeo mspcat_mspcat_crmgeo_mspcat_applications Many-To-Many Relationship](mspcat_crmgeo.md#BKMK_mspcat_mspcat_crmgeo_mspcat_applications)
-
-|Property|Value|
-|---|---|
-|IntersectEntityName|`mspcat_mspcat_crmgeo_mspcat_applications`|
-|IsCustomizable|True|
-|SchemaName|`mspcat_mspcat_crmgeo_mspcat_applications`|
-|IntersectAttribute|`mspcat_applicationsid`|
-|NavigationPropertyName|`mspcat_mspcat_crmgeo_mspcat_applications`|
 |AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `DoNotDisplay`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: <br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 ### <a name="BKMK_mspcat_mspcat_packages_mspcat_applications"></a> mspcat_mspcat_packages_mspcat_applications

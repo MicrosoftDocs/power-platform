@@ -22,15 +22,9 @@ items:
 - name: "Catalog Publisher (mspcat_publisher)"
   displayName: "mspcat_publisher entity"
   href: mspcat_publisher.md
-- name: "Certification Request Life Cycle (mspcat_bpf_06d86bf860814221be8c81204be2199d)"
-  displayName: "mspcat_bpf_06d86bf860814221be8c81204be2199d entity"
-  href: mspcat_bpf_06d86bf860814221be8c81204be2199d.md
 - name: "Configuration for PowerApps Checker (mspcat_configurationforpowerapps)"
   displayName: "mspcat_configurationforpowerapps entity"
   href: mspcat_configurationforpowerapps.md
-- name: "GEO Deployment Status (mspcat_crmgeodeploymentstatus)"
-  displayName: "mspcat_crmgeodeploymentstatus entity"
-  href: mspcat_crmgeodeploymentstatus.md
 - name: "Install Activity (mspcat_InstallActivity)"
   displayName: "mspcat_InstallActivity entity"
   href: mspcat_installactivity.md
@@ -55,9 +49,6 @@ items:
 - name: "Policy Template (mspcat_ssPolicyTemplate)"
   displayName: "mspcat_ssPolicyTemplate entity"
   href: mspcat_sspolicytemplate.md
-- name: "Power Platform Geo (mspcat_crmgeo)"
-  displayName: "mspcat_crmgeo entity"
-  href: mspcat_crmgeo.md
 - name: "Publisher Identity (mspcat_publisheridentity)"
   displayName: "mspcat_publisheridentity entity"
   href: mspcat_publisheridentity.md

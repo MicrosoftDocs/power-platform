@@ -32,7 +32,7 @@ Event raised when a catalog approval request is received.
 
 ## mspcat_OnCatalogApprovalUpdated
 
-Event raised when a catalog approval request is completed.
+Event raised on each update made to the approval record including completion.
 
 ###  mspcat_OnCatalogApprovalUpdated parameters
 

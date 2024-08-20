@@ -1256,23 +1256,11 @@ One-To-Many Relationship: [mspcat_publisher mspcat_mspcat_publisher_mspcat_certi
 
 These relationships are one-to-many. Listed by **SchemaName**.
 
-- [bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d](#BKMK_bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d)
 - [mspcat_certificationrequest_mspcat_InstallActivities](#BKMK_mspcat_certificationrequest_mspcat_InstallActivities)
 - [mspcat_certreject_cert](#BKMK_mspcat_certreject_cert)
 - [mspcat_certreq_analysis_status_reln](#BKMK_mspcat_certreq_analysis_status_reln)
 - [mspcat_mspcat_certificationrequest_mspcat_certificationrequest_Supersededby](#BKMK_mspcat_mspcat_certificationrequest_mspcat_certificationrequest_Supersededby-one-to-many)
 
-### <a name="BKMK_bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d"></a> bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d
-
-Many-To-One Relationship: [mspcat_bpf_06d86bf860814221be8c81204be2199d bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d](mspcat_bpf_06d86bf860814221be8c81204be2199d.md#BKMK_bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d)
-
-|Property|Value|
-|---|---|
-|ReferencingEntity|`mspcat_bpf_06d86bf860814221be8c81204be2199d`|
-|ReferencingAttribute|`bpf_mspcat_certificationrequestid`|
-|ReferencedEntityNavigationPropertyName|`bpf_mspcat_certificationrequest_mspcat_bpf_06d86bf860814221be8c81204be2199d`|
-|IsCustomizable|`True`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseLabel`<br />Group: `Details`<br />Label: mspcat_certificationrequest<br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 ### <a name="BKMK_mspcat_certificationrequest_mspcat_InstallActivities"></a> mspcat_certificationrequest_mspcat_InstallActivities
 
@@ -1325,11 +1313,6 @@ Many-To-One Relationship: [mspcat_certificationrequest mspcat_mspcat_certificati
 
 ## Many-to-Many relationships
 
-These relationships are many-to-many. Listed by **SchemaName**.
-
-- [mspcat_attachedpackages](#BKMK_mspcat_attachedpackages)
-- [mspcat_certreq_targeted_geos](#BKMK_mspcat_certreq_targeted_geos)
-
 ### <a name="BKMK_mspcat_attachedpackages"></a> mspcat_attachedpackages
 
 See [mspcat_packages mspcat_attachedpackages Many-To-Many Relationship](mspcat_packages.md#BKMK_mspcat_attachedpackages)
@@ -1342,19 +1325,6 @@ See [mspcat_packages mspcat_attachedpackages Many-To-Many Relationship](mspcat_p
 |IntersectAttribute|`mspcat_certificationrequestid`|
 |NavigationPropertyName|`mspcat_attachedpackages`|
 |AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseLabel`<br />Group: `Details`<br />Label: Related offers<br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
-
-### <a name="BKMK_mspcat_certreq_targeted_geos"></a> mspcat_certreq_targeted_geos
-
-See [mspcat_crmgeo mspcat_certreq_targeted_geos Many-To-Many Relationship](mspcat_crmgeo.md#BKMK_mspcat_certreq_targeted_geos)
-
-|Property|Value|
-|---|---|
-|IntersectEntityName|`mspcat_certreq_targeted_geos_reln`|
-|IsCustomizable|True|
-|SchemaName|`mspcat_certreq_targeted_geos`|
-|IntersectAttribute|`mspcat_certificationrequestid`|
-|NavigationPropertyName|`mspcat_certreq_targeted_geos`|
-|AssociatedMenuConfiguration|AvailableOffline: True<br />Behavior: `UseCollectionName`<br />Group: `Details`<br />Label: <br />MenuId: null<br />Order: 10000<br />QueryApi: null<br />ViewId: `00000000-0000-0000-0000-000000000000`|
 
 
 
