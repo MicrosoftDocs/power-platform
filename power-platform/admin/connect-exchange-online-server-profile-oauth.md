@@ -42,9 +42,6 @@ A client secret is a string value your app uses to identity itself. It's used by
 
 To create a client secret, follow the steps in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, because you'll need this information later to configure the email server profile.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of creating a new client secret.](media/client-sercret.png "Create new client secret")
-
 ## Add API permissions 
 
 To allow your app to have access to Exchange Online, you need to grant **Office 365 Exchange Online** API permission. 

@@ -19,7 +19,7 @@ contributors:
 
 # Print function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps 
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps
 
 Opens the current screen in the default browser print dialog.
 
@@ -34,7 +34,7 @@ The different configurations of the screen enable different printing outcomes. F
 
 ## Syntax
 
-**Print()**
+`Print()`
 
 ### Examples
 
@@ -87,7 +87,7 @@ To build out a print for a specific size, you can build a [responsive app](/powe
 ## Known limitations
 
 - The **Print** function currently doesn't work on mobile devices and on SharePoint forms.
-- The **Print** function currently doesn't work on custom pages or embedded scenarios.
+- The **Print** function currently doesn't work on custom pages, embedded scenarios, and when [using Power Fx with commands](/power-apps/maker/model-driven-apps/commanding-use-powerfx) in model-driven apps.
 - The default browser printers are the ones that will be available to print to.
 - In some browser print dialogs, a setting called **Background graphics** should be enabled to see all the images and colors in the print.
 - The **Print** function can't print multiple pages.

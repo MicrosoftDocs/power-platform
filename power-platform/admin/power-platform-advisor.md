@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/03/2024
+ms.date: 07/24/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -30,9 +30,10 @@ All tenant admins can access Advisor in the [Power Platform admin center](https:
 
 Tenant admins must have at least _one_ of the following roles:
 
-- Power Platform admin role
-- Dynamics 365 admin role
-- Global admin role within the Power Platform tenant
+- Power Platform Administrator
+- Dynamics 365 Administrator
+
+Learn more about these roles at [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
 > [!IMPORTANT]
 >

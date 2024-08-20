@@ -7,7 +7,7 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/22/2024
+ms.date: 08/06/2024
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 We're in the process of moving application user management from the legacy web client, as documented in [Enable or disable application users](create-users.md#enable-or-disable-user-accounts). Follow these steps to manage application users in the Power Platform admin center.
 
 > [!NOTE]
-> [Deleting an inactive, application user](#delete-an-inactive-application-user-preview) is now supported in preview.
+> [Deleting an inactive, application user](#delete-an-inactive-application-user) is now supported.
 > [!TIP]
 > Check out the video: [Administer application users, security roles, teams, and users in the Power Platform admin center](https://www.microsoft.com/videoplayer/embed/RWJBr8).
 
@@ -31,8 +31,6 @@ On the **Application users** page, you can view and manage application users. Th
 1. Select **Settings**.
 
 1. Select **Users + permissions**, and then select **Application users**.
-
-    :::image type="content" source="media/manage-application-user.png" alt-text="Screenshot of Application users.":::
 
 ## Create an application user
 
@@ -53,8 +51,6 @@ In an environment, you can only have one application user for each Microsoft Ent
    :::image type="content" source="media/create-new-app-user.png" alt-text="Screenshot of Create a new application user.":::
 
 1. Select **+ Add an app** to choose the registered Microsoft Entra application that was created for the selected user, and then select **Add**.
-
-   :::image type="content" source="media/add-app-from-azure-ad.png" alt-text="Screenshot of Add an application from Microsoft Entra ID.":::
 
    > [!NOTE]
    > In addition to entering the Application Name or Application ID, you can also enter an Azure Managed Identity Application ID. For Managed Identity, do not enter the Managed Identity Application Name, use the Managed Identity Application ID instead.
@@ -82,8 +78,6 @@ In an environment, you can only have one application user for each Microsoft Ent
 1. Select **Users + permissions**, and then select **Application users**.
 
 1. Select an application user, and then select **Details**.
-
-   :::image type="content" source="media/application-user-details.png" alt-text="Screenshot of Select application user details.":::
 
     The **Details** page shows the following properties for the application user:
 
@@ -114,24 +108,15 @@ In addition to using the entry point on the **Details** page to manage roles, yo
 
 You can select or deselect roles, and then select **Save**. All selected roles become the current assigned roles for the application user. Any unselected roles aren't assigned.
 
-:::image type="content" source="media/application-user-edit-security-roles.png" alt-text="Screenshot of editing security roles for an application user.":::
-
 ## Activate or deactivate an application user
 
 On the **Application user** page, do one of the following:
 
 - To activate an application user, select **Activate** on the menu bar, and then select **Activate** in the confirmation dialog.  
 
-     :::image type="content" source="media/activate-application-user.png" alt-text="Screenshot of activate an application user.":::
-
 - To deactivate an application user, select **Deactivate** on the menu bar, and then select **Deactivate** in the confirmation dialog.
 
-## Delete an inactive, application user (preview)
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+## Delete an inactive, application user 
 
 To delete an inactive application user, complete the following steps.
 
@@ -143,12 +128,8 @@ To delete an inactive application user, complete the following steps.
 > [!NOTE]
 > Only application users with the **inactive** state can be deleted. You must reassign all records owned by inactive application users before those user records can be deleted. You can add an application user back into the environment if the application user still exists in your Microsoft Entra **App registrations**.
 
-## View the details of system-provided application users (preview)
+## View the details of system-provided application users
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 In each of your environments, there's a set of [system-provided application users](system-application-users.md#application-users). You can now view these application users from the Power Platform admin center.
 
