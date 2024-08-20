@@ -99,3 +99,4 @@ Ensure that you understand nonfunctional requirements like availability, complia
 ## See also
 
 - [Power Platform ALM](/power-platform/alm/)
+- [Recommendations for safe deployment practices](../operational-excellence/safe-deployments.md)
