@@ -64,6 +64,3 @@ items:
 - name: "Status of PowerApps Checker package scan (mspcat_powerappsScanStatus)"
   displayName: "mspcat_powerappsScanStatus entity"
   href: mspcat_powerappsscanstatus.md
-- name: "Templates (mspcat_templates)"
-  displayName: "mspcat_templates entity"
-  href: mspcat_templates.md

@@ -1319,19 +1319,6 @@ One-To-Many Relationship: [mspcat_publisher mspcat_publisher_mspcat_InstallActiv
 |IsHierarchical||
 |CascadeConfiguration|Archive: `NoCascade`<br />Assign: `Cascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `Cascade`<br />RollupView: `NoCascade`<br />Share: `Cascade`<br />Unshare: `Cascade`|
 
-### <a name="BKMK_mspcat_templates_mspcat_InstallActivities"></a> mspcat_templates_mspcat_InstallActivities
-
-One-To-Many Relationship: [mspcat_templates mspcat_templates_mspcat_InstallActivities](mspcat_templates.md#BKMK_mspcat_templates_mspcat_InstallActivities)
-
-|Property|Value|
-|---|---|
-|ReferencedEntity|`mspcat_templates`|
-|ReferencedAttribute|`mspcat_templatesid`|
-|ReferencingAttribute|`regardingobjectid`|
-|ReferencingEntityNavigationPropertyName|`regardingobjectid_mspcat_templates_mspcat_installactivity`|
-|IsHierarchical||
-|CascadeConfiguration|Archive: `NoCascade`<br />Assign: `Cascade`<br />Delete: `Cascade`<br />Merge: `NoCascade`<br />Reparent: `Cascade`<br />RollupView: `NoCascade`<br />Share: `Cascade`<br />Unshare: `Cascade`|
-
 
 
 ### See also
