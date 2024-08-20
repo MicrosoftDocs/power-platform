@@ -9,7 +9,7 @@
     items: 
       - name: Responsible AI
         href: responsible-ai.md
-      - name: Security and Compliance
+      - name: Security and compliance
         href: security.md
       - name: Performance
         href: monitoring.md
