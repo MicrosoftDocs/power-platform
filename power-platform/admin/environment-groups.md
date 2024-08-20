@@ -60,15 +60,15 @@ Enabling _default environment routing_ might give you more environments to manag
 
 ## Configure the rules for your environment group
 
-After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
+After you create the environment group, Power Platform tenant administrators can immediately add Managed Environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
 
 ### The sharing limits rules
 
 You can also configure the _sharing limit_ rules for canvas apps and copilots. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps and copilots with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
-First, go to  the **Personal Productivity** group and select the **Rules** tab.
+First, go to the **Personal Productivity** group and select the **Rules** tab.
 
-  **For canvas apps**
+**For canvas apps**
 1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
