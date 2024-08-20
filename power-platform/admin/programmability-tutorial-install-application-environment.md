@@ -49,7 +49,7 @@ After that finishes provisioning, edit the workflow using the Designer and set u
 > ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
 
 For the remainder of this tutorial, you need an environment ID and an application name to complete the subsequent steps:
-- **Environment Id**: The ID of the environment to which you would install the package. This isn't the organization ID.
+- **Environment Id**: The ID of the environment to which you would install the package. This ID isn't the organization ID.
 - **Application name**: The name of the application you're trying to install.
 
 Next we authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication (preview)](programmability-authentication-v2.md).
@@ -83,7 +83,7 @@ We then parse the Microsoft Entra token response into a typed object using this 
 
 # [Power Platform CLI](#tab/pacCLI)
 ### Get authenticated
-Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To do this, select an existing auth profile:
+Using Power Platform CLI, you can easily get authenticated with a particular Dataverse organization.  To get authenticated, select an existing auth profile:
 ```cmd
 pac auth select --name "NameOfProfile"
 ```
@@ -337,7 +337,8 @@ And the request body has the application entry from the earlier step:
             }
 ```
 
-The following is an example response:
+The following code is an example response:
+
 ```json
 {
         "id": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
