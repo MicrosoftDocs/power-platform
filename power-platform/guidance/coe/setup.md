@@ -74,37 +74,6 @@ You need an individual named *admin* to receive these communications:
 - Individual to receive chat bot chats
 - Individual to receive approvals
 
-## What data source should I use for my Power Platform inventory?
-
-At the heart of the CoE Starter Kit are processes that gather information about your Power Platform inventory to provide processes to manage, govern, and nurture Power Platform adoption in your tenant.
-
-The CoE Starter Kit offers two mechanisms to gather this data:
-
-- **Data Export (preview)**
-
-  You can export Power Platform inventory and usage data directly into Azure Data Lake Storage using the [Data Export](/power-platform/admin/self-service-analytics) feature in the Power Platform admin center. Since the admin center provides the data, this mechanism is high in performance. [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) must be configured in advance from the Power Platform Admin Center to use this option.
-
-  > [!IMPORTANT]
-  > The CoE Starter Kit using data provided by Data Export for inventory is currently in experimental preview. We recommend to first test the kit in a dedicated test environment. Trying this feature helps us validate that the feature meets your needs and prevents unintended side effects.
-
-  For more information, see [Try out the Data Export feature](#how-can-i-try-out-the-data-export-feature).
-
-- **Cloud flows**
-
-  Cloud flows use Power Platform admin connectors to query and crawl your tenant and store inventory and usage data in Dataverse tables. 
-  
-  This method is suitable for small to medium sized tenants but can cause performance issues in tenants where Power Platform inventory exceeds 10,000 objects (combined number of environments, apps, flows).
-
-### How can I try out the Data Export feature?
-
-1. Enable the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant.
-
-   Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
-1. [Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-using-the-setup-wizard) to configure the feature in your tenant.
-1. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). Your feedback is critical to this process.
-
-For more information, see [Frequently asked questions about the Data Export integration](faq-dataexport.md).
-
 ## Plan your upgrade strategy
 
 A new version of the CoE Starter Kit is released monthly, usually in the first full week of each month. This release cadence is important to know so you can review, organize, plan, and test the latest version.
@@ -157,6 +126,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
 - [Power Query Dataflows](/connectors/dataflows/)
 - [RSS](/connectors/rss/)
+- [Sharepoint](/connectors/sharepointonline/)
 
 > [!NOTE]
 > The CoE Starter Kit collects information about who owns a resource, such as an app or a flow.
