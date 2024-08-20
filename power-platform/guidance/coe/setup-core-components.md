@@ -44,8 +44,6 @@ Create these connections manually ahead of installing the kit to ensure they're 
 1. Select your CoE environment and go to **Data** > **Connections** > **+ New connection**.
 1. Create a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra ID Resource URI (Application ID URI)** to [https://graph.microsoft.com/](https://graph.microsoft.com/) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-   :::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID connection window." lightbox="media/httpazuread.png":::
-
 ### Import the core components solution
 
 1. Download the CoE Starter Kit [compressed file](https://aka.ms/CoeStarterKitDownload) to your computer.
