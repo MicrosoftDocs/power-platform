@@ -48,7 +48,6 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Select the settings symbol (cog), then select **Developer resources**.
    :::image type="content" source="media/byodl-3.png" alt-text="Screenshot that shows the Developer resources location in the Settings." lightbox="media/byodl-3.png":::
 1. Copy the Web API endpoint.
-   :::image type="content" source="media/byodl-4.png" alt-text="Screenshot that shows the location of the Web API endpoint URL in Developer resources." lightbox="media/byodl-4.png":::
 
 ### Configure connections to data sources
 
