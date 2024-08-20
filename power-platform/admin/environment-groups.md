@@ -21,7 +21,7 @@ Similar to folders, _environment groups_ are designed to help administrators org
 
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. In this first release, six key capabilities of Managed Environments are available as rules:
 
-- [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
+- [Sharing controls for copilots and canvas apps](managed-environment-sharing-limits.md)
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
 - [Maker welcome content](welcome-content.md)
 - [Solution checker enforcement](managed-environment-solution-checker.md)
@@ -60,17 +60,29 @@ Enabling _default environment routing_ might give you more environments to manag
 
 After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. Currently, there are six available rules, which are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
 
-### The sharing limits rule
+### The sharing limits rules
 
-You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limit_ rules for canvas apps and copilots. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps and copilots with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
-1. In the **Personal Productivity** group, select the **Rules** tab.
-1. Select the **Sharing Limits** rule to open its configuration panel.
+First, go to  the **Personal Productivity** group and select the **Rules** tab.
+
+  **For canvas apps**
+1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
-1. Repeat these steps until all desired rules are configured.
-1. Select **Publish rules**.
+
+**For custom copilots and copilot extensions**
+1. Select the **Sharing Copilots with Editor permissions** rule to open its configuration panel.
+2. Ensure that **Let people grant Editor permissions when copilots and extensions are shared** is unselected.
+3. Select **Save**.
+4. Select the **Sharing Copilots with Viewer permissions** rule to open its configuration panel.
+5. Select **Let people grant Viewer permissions when copilots and extensions are shared**.
+6. Select **Only share with individuals (no security groups)**.
+7. Select **Limit the number of viewers who can access each copilot and extension** and enter the desired number of Viewers you would like to have on the copilot.
+8. Select **Save** .
+
+Repeat these steps until all desired rules are configured and select **Publish rules**.
 
 > [!NOTE]
 > All rules are equally applied to all environments in the group.
