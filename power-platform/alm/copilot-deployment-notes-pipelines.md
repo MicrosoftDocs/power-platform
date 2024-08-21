@@ -26,7 +26,7 @@ When you deploy solutions in a pipeline in Power Platform, you can [deploy with 
 ## Prerequisites
 
 - One or more pipelines must already be created and associated with the environment that's used for development.
-- You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](set-up-pipelines.md#grant-access-to-edit-or-run-pipelines)
+- You must have access to run a pipeline. More information: [Grant access to edit or run pipelines](custom-host-pipelines.md#grant-access-to-edit-or-run-pipelines)
 - Your pipeline, and all of its linked environments, must be in the **United States** region to use this feature.
 - The **Power Platform Pipelines** solution must have **App Deployment Anchor Solution** version 9.1.1.6 or later version. For information about how to update a solution, go to [Environment-level view of apps](../admin/manage-apps.md#environment-level-view-of-apps) 
 - The setting for **AI deployment notes** must be set to **Enabled** in the **Deployment Pipeline Configuration** app for each pipeline you want to use this feature with.

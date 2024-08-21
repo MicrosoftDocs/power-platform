@@ -153,9 +153,6 @@ You can specify users in an environment to provide access to Dataverse for Teams
 
 4. You'll see a list of enabled and disabled users who are members of the Dataverse for Teams environment. You can select a user from the list to run diagnostics and view their access details and status.
 
-   > [!div class="mx-imgBorder"] 
-   > ![List of users in a Dataverse for Teams environment.](media/teams-environment-user-list.png "List of users in a Dataverse for Teams environment") 
-
 5. Select **+ Add user** to add a tenant user to the selected Dataverse for Teams environment. 
 
    > [!div class="mx-imgBorder"] 
