@@ -26,21 +26,21 @@ Before you install and set up the SAP Supplier Self Service template, you need t
 
 Take these steps to integrate SAP with Power Platform:
 
-- [Review requirements to integrate SAP with Power Platform](/sap-procurement/administer/requirements).
-- [Set up environments and DLP policies](/sap-procurement/administer/set-up-connections).
-- [Set up an on-premises data gateway](/sap-procurement/administer/set-up-gateway).
-- [Configure authentication](/sap-procurement/administer/configure-authentication).
+- [Review requirements to integrate SAP with Power Platform](sap-procurement/administer/requirements).
+- [Set up environments and DLP policies](sap-procurement/administer/set-up-connections).
+- [Set up an on-premises data gateway](sap-procurement/administer/set-up-gateway).
+- [Configure authentication](sap-procurement/administer/configure-authentication).
 
 Take these steps to install and set up the SAP Procurement template:
 
-- [Install and set up the SAP Procurement solution](/sap-procurement/administer/install).
-- [Configure environment variables](/sap-procurement/administer/configure-environment-variables).
-- [Set up connections for SAP and Dataverse](/sap-procurement/administer/set-up-connections).
-- [Set up SAP List of Values](/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values).
+- [Install and set up the SAP Procurement solution](sap-procurement/administer/install).
+- [Configure environment variables](sap-procurement/administer/configure-environment-variables).
+- [Set up connections for SAP and Dataverse](sap-procurement/administer/set-up-connections).
+- [Set up SAP List of Values](sap-procurement/administer/apply-seed-data#apply-saps-list-of-values).
 
   The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
 
--  Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](https://learn.microsoft.com/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import
+- Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](https://learn.microsoft.com/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import
 
 More information:
 
@@ -57,7 +57,7 @@ Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-
 1. **SAP Supplier Self Service**: mpa_supplier_self_service_1_0_0_17.zip (version 1.0.0.17)
 1. **Supplier Self Service Portal**: SupplierSelfServicePortal_1_0_0_14.zip  (Version 1.0.0.14)
 
-Once you install both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](/sap-procurement/administer/set-up-connections.md).
+Once you install both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](sap-procurement/administer/set-up-connections.md).
 
 > [!NOTE]
 > For the connector setup, use an SAP service-user account that is supported with the appropriate SAP licenses and permissions. All interactions corresponding to the operations done on the supplier website are done under this service-user context.
