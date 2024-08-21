@@ -57,7 +57,7 @@ Some of the most important tables you may use are in the following table:
 |**TODO**|Add more??|
 
 > TODO Add Diagram?
-> TODO: There are 25 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
+> TODO: There are 21 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
 > TODO This whole section could be moved to the about-entity-reference article.
 
 
@@ -72,7 +72,7 @@ There are two Dataverse messages you can use to get information about the catalo
 
 ### mspcat_GetPowerCatalogInformation
 
-The `mspcat_GetPowerCatalogInformation` message a single `permissionsonly` boolean parameter and returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
+The `mspcat_GetPowerCatalogInformation` message has a single `permissionsonly` boolean parameter and returns the following information defined by the `mspcat_GetPowerCatalogInformationResponse` complex type:
 
 
 |Name|Type|Description|
@@ -132,7 +132,7 @@ CanSubmit: True
 
 #### [Web API](#tab/webapi)
 
-The following `GetPowerCatalogInformationExample` PowerShell function invokes the `mspcat_GetPowerCatalogInformationRequest` and processes the results that are represent the `mspcat_GetPowerCatalogInformationResponse` complex type. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
+The following `GetPowerCatalogInformationExample` PowerShell function invokes the `mspcat_GetPowerCatalogInformation` function and processes the results that are represent the `mspcat_GetPowerCatalogInformationResponse` complex type. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 ```powershell
 function GetPowerCatalogInformationExample {

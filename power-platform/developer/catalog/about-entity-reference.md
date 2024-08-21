@@ -9,7 +9,7 @@ ms.reviewer: jdaly
 search.audienceType: 
   - developer
 ---
-# Catalog in Power Platform  table/entity 
+# Catalog in Power Platform  table/entity reference
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
