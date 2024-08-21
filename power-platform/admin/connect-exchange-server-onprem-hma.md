@@ -66,9 +66,6 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 2. Select **Add Access Policy**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of Azure Key Vault Add access policy selected.](media/azure-key-vault-access-policies2[1].png "Azure Key Vault add access policy")
-
 3. For **Select principal**, select a principal. For these example, we'll select **KV-App**. 
 
 4. Select permissions. Be sure to add **Get permission** under **Secret permissions** and **Certificate permissions**.  Both are required for the KV-App to be able to access the certificate.
