@@ -17,3 +17,5 @@
         href: publishing.md
       - name: Integrations
         href: integrations.md
+      - name: Intent recognition and Entity extraction
+        href: language.md
