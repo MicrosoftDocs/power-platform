@@ -36,13 +36,10 @@ Take these steps to install and set up the SAP Procurement template:
 - [Install and set up the SAP Procurement solution](/power-platform/enterprise-templates/finance/sap-procurement/administer/install).
 - [Configure environment variables](/power-platform/enterprise-templates/finance/sap-procurement/administer/configure-environment-variables).
 - [Set up connections for SAP and Dataverse](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections).
-- [Set up SAP List of Values](/power-platform/enterprise-templates/finance/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values).
-
-  The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
-
+- [Set up SAP List of Values](/power-platform/enterprise-templates/finance/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values). The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
 - Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import
 
-More information:
+### More information
 
 - [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
 - [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
@@ -51,10 +48,6 @@ More information:
 ## Download and install
 
 This section provides links to the SAP Supplier Self Service solution files and the guidance to manually install them into the same developer environment that contains the SAP Procurement solutions.
-
-> [!TIP]
->
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the SAP Procurement template.
 
 You have the option to download either *managed* or *unmanaged* solution files.
 
@@ -72,13 +65,17 @@ Once you install both solutions, select **Publish all customizations**. Be sure 
 > [!NOTE]
 > For the connector setup, use an SAP service-user account that is supported with the appropriate SAP licenses and permissions. All interactions corresponding to the operations done on the supplier website are done under this service-user context.
 
+> [!TIP]
+>
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the SAP Procurement template.
+
 More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
 ## Activate the Supplier Self Service site
 
 Once you have successfully installed the SAP Supplier template, take these steps to set up the SAP Supplier Self Service solution in the same environment as SAP Procurement:
 
-1. Open [Power Pages design studio](https://make.powerpages.microsoft.com/) and select the appropriate environment.
+1. Open [Power Pages design studio](https://make.powerpages.microsoft.com) and select the appropriate environment.
 1. Go to **Inactive** sites.
 1. Reactivate **Supplier Self Service** site.
 1. Choose desired URL for the site and wait for the activation phase to complete.
@@ -128,8 +125,15 @@ Refer to this table for high-level guidance for updating component inputs and cl
 Take these steps to update the *Manage Profile* page:
 
 1. Copy flow URL for **Power Pages Read Vendor**.
-1. Go to [**Power Pages design studio**](/power-pages/configure/design-build-overview) > **Pages**.
+1. Go to **Power Pages design studio** > **Pages**.
 1. Select **Manage Profile** page.
 1. Select **Edit Custom Component** and update the URL. Add the partial URL in this format: `/_api/cloudflow/v1.0/trigger/xxxxxxxxx-xxxxxx-xxxxxxxx-xxxxxxxxxxxx`
 1. Select **Done**.
 :::image type="content" source="media/install-and-set-up/components-flows-updates.png" alt-text="Screenshot of setting up Suppliers with SAP IDs and the associated users with each Supplier account.":::
+
+## Next step
+
+[Manage the SAP Supplier Self Service solution](manage.md)
+
+
+

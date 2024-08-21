@@ -19,15 +19,15 @@ You can set up your suppliers and users so they have access to your SAP Supplier
 
 ## Set up suppliers and users
 
-The SAP Supplier Self Service template is set up to save the Supplier's SAP ID in *Account Information*. You want to set up your account information first and then associate users with each account. Take these steps to get started:
+The SAP Supplier Self Service template is set up to save the Supplier's SAP ID in *Account Table* in Dataverse. You want to set up your account information first and then associate users with each account. Take these steps to get started:
 
-1. Open the **SAP Supplier Self Service** model-driven app.
+1. Open the [**Power Pages Management**](/power-pages/configure/portal-management-app) model-driven app.
 1. Go to the **Account** page.
 1. Set up each existing account record. Be sure to add the Supplier's SAP ID to **Supplier Number (SAP)** in the Account Information card.
 
 Once all the accounts are set up, portal users can be set up and related to each Account record.
 
-[Learn more about how to provide access to an external audience.](/power-pages/security/external-access)
+[Learn more about how to set up portal users.](/power-pages/security/external-access)
 
 :::image type="content" source="media/manage/suppliers-users-setup.png" alt-text="Screenshot of setting up Suppliers with SAP IDs and the associated users with each Supplier account.":::
 
