@@ -162,11 +162,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit**
 
 1. Open the CoE Power BI dashboard in **Power BI Desktop**.
 1. Go to the **Manage App Access** page.
-   :::image type="content" source="media/coe84.png" alt-text="Screenshot that shows the Manage App Access page in Power BI Desktop accessed from the Manage App Access tab.":::
-
 1. Select the existing Power Apps visual, then choose **Format visual** and select **Reset to default**.
-   :::image type="content" source="media/coebireset.png" alt-text="Screenshot that shows where to select Reset to default to format the visual." lightbox="media/coe84.png":::
-
 1. Close the sharing notification.
    :::image type="content" source="media/coebireset2.png" alt-text="Screenshot that shows how to close the sharing notification." lightbox="media/coebireset2.png":::
 
