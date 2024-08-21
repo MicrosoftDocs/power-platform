@@ -1,40 +1,41 @@
 ---
-title: Awards and Recognition template for Power Platform
-description: The Awards and Recognition template for Microsoft Power Platform enables organizations to facilitate an engaging and efficient awards system to acknowledge the outstanding efforts of employees .
+title: Awards and Recognition templates for Power Platform
+description: The Awards and Recognition templates for Microsoft Power Platform enable organizations to facilitate an engaging and efficient awards system to acknowledge the outstanding efforts of employees .
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/20/2024
+ms.date: 08/21/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Awards and Recognition template for Power Platform
+# What are the Awards and Recognition templates for Power Platform?
 
-The Awards and Recognition template makes it easy to set up and facilitate an employee awards program. It's designed to streamline the process of nominating and recognizing coworkers for their contributions and achievements.
+Awards and Recognition templates make it easy to set up and facilitate an employee awards program. The templates streamline the process of nominating and recognizing your coworkers for their contributions and achievements and make it easy for you to track your own recognitions .
 
-Employees use a canvas app or a Microsoft custom copilot deployed in Teams to nominate coworkers and teams and to track their own recognitions.
-
-Program admins manage the awards program in the admin model-driven app. They have the ability to define nomination periods and the available awards (types of recognition) in those periods. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. At the close of a nomination period, a program admin can review all the nominations and approve or decline them.
+The *Awards and Recognition App* template is designed to  allow employees to use a canvas app which can be viewed in a mobile format.
 
 :::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition app pages." lightbox="media/overview/ar-four-screens.png":::
+:::image type="content" source="media/overview/ar-four-screens.png" alt-text="Screenshots of Awards and Recognition app pages." lightbox="media/overview/ar-four-screens.png":::
+
+The *Awards and Recognition Copilot* template is designed to be deployed in Microsoft Teams so employees can easily access it.
 
 :::image type="content" source="media/overview/a-r-copilot-ex.png" alt-text="Awards and Recognition app's  create a nomination copilot experience.":::
 
 :::image type="content" source="media/overview/a-r-copilot-ex1.png" alt-text="Awards and Recognition app's customize option working with copilot.":::
 
-Both Power App and Microsoft Copilot Awards and Recognition template versions are available in [Microsoft AppSource](<https://aka.ms/AccessAwardsAndRecognitionTemplate>) and can be installed independent of each other by selecting either:
+Program admins manage the awards program in the *Awards and Recognition Administration* model-driven app. They can define nomination periods and the available awards (types of recognition) in those periods. Awards can be configured to be available to single individuals, multiple individuals, or predefined teams. At the close of a nomination period, a program admin can review all the nominations and approve or decline them.
 
-- Awards and Recognition App
-- Awards and Recognition Copilot
+:::image type="content" source="media/overview/ar-model-driven-app.png" alt-text="Screenshot of the Awards and Recognition Administration model-driven app's Groups screen.":::
 
-Each install package contains the Awards and Recognition Base solution. You can choose to download one or both packages. If you choose to download both packages, you'll have three solutions.
+Both the Awards and Recognition App and Awards and Recognition Copilot template versions are available in [Microsoft AppSource](<https://aka.ms/AccessAwardsAndRecognitionTemplate>) and can be installed independent of each other.
 
-- **Awards and Recognition Base** contains the common foundational components needed to enable the Awards and Recognition experience in your organization, such as data tables and an admin interface. 
+Each install package contains the Awards and Recognition Base solution that contains the Administration model-driven app. You can choose to download one or both packages. If you choose to download both packages, you'll have three solutions.
 
-- **Awards and Recognition App** contains the Power App canvas app interface.
+- **Awards and Recognition Base** contains the common foundational components needed to enable the Awards and Recognition experience in your organization, such as data tables and an admin interface.
+- **Awards and Recognition App** contains the Power Apps canvas app interface.
 - **Awards and Recognition Copilot** contains the custom copilot interface.
 
 ## Awards and Recognition Base solution components

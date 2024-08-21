@@ -1,11 +1,11 @@
 ---
 title: Use the Awards and Recognition App or Copilot
-description: Take a look at what it's like to use the Awards and Recognition App and Copilot.
+description: See what it's like to use the Awards and Recognition App or Copilot.
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/20/2024
+ms.date: 08/21/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -13,9 +13,9 @@ ms.customerIntent: As a user, I want to take a look at the different user experi
 ---
 
 
-# What is Microsoft Power Platform Awards and Recognition App or Copilot?
+# What is the Awards and Recognition App or Copilot for Microsoft Power Platform?
 
-The Awards and Recognition program allows you to  nominate individual coworkers and teams for awards, view your own recognitions, and update your user settings. Your organization can opt to have users interact with either the Awards and Recognition App or Awards and Recognition Copilot—or offer both options. Each version offers a different user experience to support an awards program and this article provides details about each type of experience.
+The Awards and Recognition program allows you to  nominate individual coworkers and teams for awards, view your own recognitions, and update your user settings. Your organization can opt to have users interact with either the Awards and Recognition App or Awards and Recognition Copilot—or offer both options. Each version offers a different user experience to support an awards program and this article shares some details about each type of experience.
 
 ## Use the Awards and Recognition App
 
@@ -68,7 +68,7 @@ The Awards and Recognition Copilot is designed to be accessed and used in Micros
 - inquire about recognitions you received from others
 - Ask to see the nominations you submitted
 
-To get started in the Awards and Recognition Copilot, you simply tell it what Awards and Recognition task you want to do. Copilot also offers buttons to select the next action, such as *Create a nomination* or *See my recognitions*.
+To get started in the Awards and Recognition Copilot, you simply tell it what Awards and Recognition task you want to do. Copilot offers buttons to select the next action, such as *Create a nomination* or *See my recognitions* and predefined dropdown options, such as *Nomination period* and *Award*.
 
 :::image type="content" source="media/use/a-r-copilot-use.png" alt-text="Awards and Recognition Copilot's chat start screen.":::
 

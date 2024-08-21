@@ -5,22 +5,20 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/20/2024
+ms.date: 08/21/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Get started managing the Awards and Recognition app
+# Manage the Awards and Recognition program
 
-Create custom experiences for your users in the Awards and Recognition app. A program admin can:
+Create custom experiences for your users in the Awards and Recognition Administration model-driven app. A program admin can:
 
 - See and update all the data.
 - Configure awards, award assessment ratings, nomination periods, groups, and group membership.
 - Approve, reject, withdraw, or cancelling nominations.
 - Create, update, or delete language localization data (this capability can be assigned to any user).
-
-Get started configuring your Awards and Recognition Administration program.
 
 ## Create awards and assessment ratings
 
