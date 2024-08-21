@@ -481,7 +481,7 @@ The output of this example might look something like this:
 
 #### [Web API](#tab/webapi)
 
-The static `RetrieveCatalogItems` method retrieves and prints a table of data from the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) and [Package (mspcat_packages)](tables/mspcat_packages.md) tables about items in the catalog. This function depends on the `Get-Records` function introduced in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
+This `RetrieveCatalogItems` PowerShell function retrieves and prints a table of data from the [Catalog Item (mspcat_applications)](tables/mspcat_applications.md) and [Package (mspcat_packages)](tables/mspcat_packages.md) tables about items in the catalog. This function depends on the `Get-Records` function introduced in [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ```powershell
 function Get-CatalogItems{

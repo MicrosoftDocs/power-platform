@@ -66,7 +66,7 @@ There are two messages you can use to install catalog items: `mspcat_InstallCata
 
 Use this message when you have only the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
 
-The following static `InstallCatalogItemByCIDExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
+The following static `InstallCatalogItemByCIDExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
 
 ```csharp

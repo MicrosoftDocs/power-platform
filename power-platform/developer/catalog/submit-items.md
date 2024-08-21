@@ -559,10 +559,14 @@ This function depends on the `$baseURI` and `$baseHeaders` values set using the 
    This is a mandatory string parameter that contains a message about the request.
 
 .EXAMPLE
-   ResolveApproval -certificationRequestId "<Guid>" -requestsuccess $true -message "Request processed successfully."
+   ResolveApproval `
+      -certificationRequestId "<Guid>" `
+      -requestsuccess $true `
+      -message "Request processed successfully."
 
 .NOTES
-   The function does not return any value. Any output from the Invoke-RestMethod cmdlet is sent to Out-Null.
+   The function does not return any value. 
+   Any output from the Invoke-RestMethod cmdlet is sent to Out-Null.
 #>
 function ResolveApproval {
    param (
