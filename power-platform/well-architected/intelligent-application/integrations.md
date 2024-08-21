@@ -23,11 +23,13 @@ As you develop your workload and evaluate integration options, consider:
 
 ## Integration patterns
 
-Copilot Studio integration patterns are not exclusive and can be combined. For each integration use case, consider the best integration option. 
+Integration patterns in Copilot Studio are not exclusive and can be combined to suit different use cases. Here are some key considerations:
 
-- Integration can only be as fast as the endpoints you connect to. In a conversational experience, queries should always be optimized. Learn more: [Optimize data performance](../performance-efficiency/optimize-data-performance.md)
-- If Power Automate or Copilot Studio don’t run your logic fast enough, or if logic is better handled in code, consider moving it to Dataverse custom APIs or Dataverse low-code plug-ins – both have 2-min timeout limit – or Azure functions. These can be invoked by connectors or HTTP.
-- Alternatively, doing the data integration in a middle layer gives you an opportunity to effectively modify messages as they are relayed (for example for data enrichment, data masking before they get to Copilot Studio, etc.).
+1. **Endpoint Performance**: The speed of your integration is limited by the performance of the endpoints you connect to. In a conversational experience, it's crucial to optimize queries to ensure quick responses. For more details, refer to the [Optimize Data Performance](../performance-efficiency/optimize-data-performance.md) guide.
+
+2. **Handling Logic**: If Power Automate or Copilot Studio cannot execute your logic quickly enough, or if the logic is better suited to code, consider moving it to Dataverse custom APIs, Dataverse low-code plug-ins (both with a 2-minute timeout limit), or Azure Functions. These can be invoked via connectors or HTTP requests, providing more flexibility and efficiency.
+
+3. **Middle Layer Integration**: Implementing data integration in a middle layer can be beneficial. This approach allows you to modify messages as they are relayed, such as performing data enrichment or data masking before they reach Copilot Studio. This can enhance data security and ensure that only relevant information is processed.
 
 | | Power Automate cloud flows | HTTP requests and connectors | Bot Framework Skills
 | --- | --- | --- | --- |
@@ -36,15 +38,7 @@ Copilot Studio integration patterns are not exclusive and can be combined. For e
 
 ## Power Automate and HTTP/Connector integrations
 
-Power Automate offers great integration capabilities, with more 1,000 native connectors or ways to create your own custom connectors to your APIs.
-
-For a good end-user experience, cloud flows triggered from Copilot Studio must execute quickly so that the user doesn’t have to wait too long for the copilot to answer.
-
-Cloud flows triggered from Copilot Studio have a maximum of 100 seconds to return to Copilot Studio before they time out.
-
-You can make HTTP requests or use connectors directly from Copilot Studio, to avoid invoking cloud flows and optimize performance.
-
-Consider how you will optimize your cloud flows and HTTP/Connector requests to make sure they run as fast as possible - for example, when connecting to the target system, filter the results and only returns the columns that will be used. Consider how you will handle cloud flow timeouts and limits - for example, by adding a parallel branch that returns a result to Copilot Studio within 100s, you can more gracefully handle the timeout on the copilot side.
+When integrating Power Automate and HTTP/connectors with Copilot Studio for an intelligent application workload, several key considerations are essential. Power Automate offers extensive integration capabilities with over 1,000 native connectors and options to create custom connectors to your APIs. For a good end-user experience, ensure that cloud flows triggered from Copilot Studio execute quickly, as they have a maximum of 100 seconds to return a response before timing out. To optimize performance, consider making HTTP requests or using connectors directly from Copilot Studio, bypassing cloud flows when possible. Optimize your cloud flows and HTTP/connector requests by filtering results to only return necessary data. Additionally, handle cloud flow timeouts by implementing parallel branches that return results within the 100-second limit, ensuring a graceful handling of timeouts on the copilot side. These strategies will help maintain efficient and responsive interactions in your intelligent application workload.
 
 ## See also
 

@@ -32,15 +32,15 @@ When designing your intelligent application workload, it's important to choose t
 
 Choosing the right option for intent recognition and entity extraction in your intelligent application workload involves several key considerations:
 
-1. **Prebuilt vs. Custom Entities**: Evaluate whether the prebuilt entities provided by Copilot Studio meet your needs. These cover common information types like dates, numbers, and names. If your application requires domain-specific knowledge, you might need to create custom entities.
+- **Prebuilt vs. Custom Entities**: Evaluate whether the prebuilt entities provided by Copilot Studio meet your needs. These cover common information types like dates, numbers, and names. If your application requires domain-specific knowledge, you might need to create custom entities.
 
-2. **Complexity of User Inputs**: Consider the complexity and variability of user inputs. For straightforward scenarios, prebuilt entities might suffice. For more complex interactions, custom entities and advanced configurations like regular expressions (regex) might be necessary.
+- **Complexity of User Inputs**: Consider the complexity and variability of user inputs. For straightforward scenarios, prebuilt entities might suffice. For more complex interactions, custom entities and advanced configurations like regular expressions (regex) might be necessary.
 
-3. **Slot Filling**: Determine if your application requires proactive slot filling, where the copilot actively seeks out and fills in missing information from user inputs. This can enhance the user experience by reducing the need for follow-up questions.
+- **Slot Filling**: Determine if your application requires proactive slot filling, where the copilot actively seeks out and fills in missing information from user inputs. This can enhance the user experience by reducing the need for follow-up questions.
 
-4. **Performance and Scalability**: Assess the performance and scalability of your chosen method. Custom entities and complex configurations might require more processing power and could impact response times.
+- **Performance and Scalability**: Assess the performance and scalability of your chosen method. Custom entities and complex configurations might require more processing power and could impact response times.
 
-5. **Ease of Maintenance**: Consider the ease of maintaining and updating your entities. Prebuilt entities are easier to manage, while custom entities might require ongoing adjustments as your application evolves.
+- **Ease of Maintenance**: Consider the ease of maintaining and updating your entities. Prebuilt entities are easier to manage, while custom entities might require ongoing adjustments as your application evolves.
 
 ## Choose between the standard NLU, Azure CLU or dynamic chaining
 
@@ -97,15 +97,15 @@ Learn more:
 
 When developing copilots, structuring topics effectively is crucial for creating natural and seamless conversations. Topics are discrete conversation paths that, when combined, allow users to interact with the copilot smoothly. Here are some key considerations for designing topic structures:
 
-1. **Trigger-Based Topics**: These topics are activated based on user utterances and serve as entry points. It's important to define clear trigger phrases for these topics. If trigger phrases overlap across multiple topics, consider implementing a catch-all topic that can redirect to the appropriate topic after asking clarifying questions. With entity extraction and slot filling, these clarifying questions can be skipped if the necessary information is already provided.
+- **Trigger-Based Topics**: These topics are activated based on user utterances and serve as entry points. It's important to define clear trigger phrases for these topics. If trigger phrases overlap across multiple topics, consider implementing a catch-all topic that can redirect to the appropriate topic after asking clarifying questions. With entity extraction and slot filling, these clarifying questions can be skipped if the necessary information is already provided.
 
-2. **Redirect-Based Topics**: These topics are triggered by redirect actions, activities, or events and can be called by multiple other topics. They should be designed to be reusable and modular, with input and output variables to facilitate seamless integration into various conversation paths.
+- **Redirect-Based Topics**: These topics are triggered by redirect actions, activities, or events and can be called by multiple other topics. They should be designed to be reusable and modular, with input and output variables to facilitate seamless integration into various conversation paths.
 
-3. **Dual-Trigger Topics**: Some topics can be triggered either through intent recognition or by an explicit redirect. This flexibility allows for more dynamic and responsive conversations.
+- **Dual-Trigger Topics**: Some topics can be triggered either through intent recognition or by an explicit redirect. This flexibility allows for more dynamic and responsive conversations.
 
-4. **Conversational Boosting and Fallback**: Implement topics that handle scenarios where no matching topic is triggered based on a user query. These fallback topics can provide generic responses or suggest potential topics to keep the conversation going.
+- **Conversational Boosting and Fallback**: Implement topics that handle scenarios where no matching topic is triggered based on a user query. These fallback topics can provide generic responses or suggest potential topics to keep the conversation going.
 
-### Design Approach
+**Design Approach:**
 
 - **Custom Topics for Key Scenarios**: Develop a few custom topics for key scenarios with relevant trigger phrases and redirects. Use a parent-child topic structure to manage complex interactions. For unrecognized intents, implement generative answers and fallback mechanisms.
 
@@ -121,29 +121,29 @@ Learn more:
 
 When developing a copilot, effectively managing unrecognized intents ensures a smooth user experience. Unrecognized intents occur when the copilot doesn't understand a user utterance and lacks sufficient confidence to trigger any existing topics. Here are some key considerations for handling these scenarios:
 
-1. **Managing Unrecognized Intents**: Initially, direct unrecognized intents to the Conversational Boosting topic, which searches for answers in corporate resources like SharePoint sites and public websites. If no relevant information is found, the system can then fall back to a ChatGPT-like experience using a custom system prompt with the Azure OpenAI GPT-4 model. This approach ensures that users receive helpful responses even when their queries are unplanned.
+- **Managing Unrecognized Intents**: Initially, direct unrecognized intents to the Conversational Boosting topic, which searches for answers in corporate resources like SharePoint sites and public websites. If no relevant information is found, the system can then fall back to a ChatGPT-like experience using a custom system prompt with the Azure OpenAI GPT-4 model. This approach ensures that users receive helpful responses even when their queries are unplanned.
 
-2. **Integration with External Systems**: If integrating with external systems as part of the fallback strategy, use HTTP requests to call models like Azure OpenAI GPT-4. This integration allows the copilot to provide a compliant ChatGPT-like experience, enhancing its ability to handle diverse queries.
+- **Integration with External Systems**: If integrating with external systems as part of the fallback strategy, use HTTP requests to call models like Azure OpenAI GPT-4. This integration allows the copilot to provide a compliant ChatGPT-like experience, enhancing its ability to handle diverse queries.
 
-3. **Monitoring Fallback Usage**: Regularly review the percentage of conversations hitting fallback. Use these insights to enrich existing topics or create new ones, ensuring that the copilot continuously improves its understanding and response capabilities.
+- **Monitoring Fallback Usage**: Regularly review the percentage of conversations hitting fallback. Use these insights to enrich existing topics or create new ones, ensuring that the copilot continuously improves its understanding and response capabilities.
 
-4. **Fallback Topic and Generative Answers**: The [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) is triggered when no matching topic is identified. If [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) are enabled, the Conversational Boosting topic triggers first on unknown intent events, followed by the Fallback topic if necessary. This layered approach helps manage unrecognized intents effectively.
+- **Fallback Topic and Generative Answers**: The [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) is triggered when no matching topic is identified. If [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) are enabled, the Conversational Boosting topic triggers first on unknown intent events, followed by the Fallback topic if necessary. This layered approach helps manage unrecognized intents effectively.
 
-5. **Leveraging Conversational Boosting and Fallback**: Utilize [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) to search various data sources or integrate with other systems like Azure Cognitive Service for Language for question answering. This service can handle large volumes of question-and-answer pairs and includes a chitchat model for random questions.
+- **Leveraging Conversational Boosting and Fallback**: Utilize [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) to search various data sources or integrate with other systems like Azure Cognitive Service for Language for question answering. This service can handle large volumes of question-and-answer pairs and includes a chitchat model for random questions.
 
-6. **Core Scenarios and Custom Topics**: Ensure that core scenarios and topics are well-defined and handled through custom topics. Clearly define the outcomes of these topics to maintain a structured and efficient conversation flow.
+- **Core Scenarios and Custom Topics**: Ensure that core scenarios and topics are well-defined and handled through custom topics. Clearly define the outcomes of these topics to maintain a structured and efficient conversation flow.
 
 ## Localization & languages
 
 When building a copilot, consider what languages your intelligent application workload needs to speak and what markets your copilot should support. Localization and language support are critical factors to ensure your intelligent application workload meets the needs of diverse user bases. Here are the main approaches and considerations:
 
-1. **One Copilot per Language**: This approach involves creating a separate copilot for each language. It ensures that each copilot is fully optimized for its specific language, but it can be resource-intensive to maintain multiple copilots.
+- **One Copilot per Language**: This approach involves creating a separate copilot for each language. It ensures that each copilot is fully optimized for its specific language, but it can be resource-intensive to maintain multiple copilots.
 
-2. **One Copilot for Multiple Languages (Configured Translations)**: In this approach, a single copilot supports multiple languages, with translations provided as part of the copilot configuration. This requires updating translations each time the copilot is updated or new content is added. It offers a balance between resource efficiency and language support but requires careful management of translation updates.
+- **One Copilot for Multiple Languages (Configured Translations)**: In this approach, a single copilot supports multiple languages, with translations provided as part of the copilot configuration. This requires updating translations each time the copilot is updated or new content is added. It offers a balance between resource efficiency and language support but requires careful management of translation updates.
 
-3. **One Copilot for Multiple Languages (Real-Time Translations)**: This method uses a relay copilot to provide real-time translations at runtime. It allows for rapid deployment of additional languages and reduces the need for frequent translation updates. However, it introduces a dependency on the relay copilot and a real-time translation layer, such as Azure Service Copilot and Azure Cognitive Services Translator.
+- **One Copilot for Multiple Languages (Real-Time Translations)**: This method uses a relay copilot to provide real-time translations at runtime. It allows for rapid deployment of additional languages and reduces the need for frequent translation updates. However, it introduces a dependency on the relay copilot and a real-time translation layer, such as Azure Service Copilot and Azure Cognitive Services Translator.
 
-### Key Considerations
+**Key Considerations:**
 
 - **Languages and Markets**: Determine which languages and markets your copilot needs to support. This will influence your choice of localization strategy.
   
