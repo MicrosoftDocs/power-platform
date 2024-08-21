@@ -9,6 +9,12 @@
     - name: Get started
       displayName: Get started with the SAP Procurement template
       href: finance/sap-procurement/administer/get-started.md
+    - name : Use SAP Setup Assistant
+      items:
+      - name: Overview
+        href: finance/sap-procurement/administer/sap-setup-assistant/overview.md
+      - name: Install And Setup
+        href: finance/sap-procurement/administer/sap-setup-assistant/install-and-set-up.md
     - name: Requirements
       href: finance/sap-procurement/administer/requirements.md
     - name: Set up environments and DLP policies
