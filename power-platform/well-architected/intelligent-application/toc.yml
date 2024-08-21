@@ -13,7 +13,7 @@
         href: security.md
       - name: Performance
         href: monitoring.md
-      - name: Publishing
+      - name: Deployment and Testing
         href: publishing.md
       - name: Integrations
         href: integrations.md

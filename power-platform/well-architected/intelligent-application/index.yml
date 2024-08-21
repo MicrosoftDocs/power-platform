@@ -34,11 +34,11 @@ landingContent:
             url: responsible-ai.md
           - text: Security and Compliance
             url: security.md
-          - text: Optimize performance
+          - text: Performance Optimization
             url: monitoring.md
-          - text: Deploy workloads
+          - text: Deployment and Testing
             url: publishing.md
-          - text: Understand integration options
+          - text: Integration options
             url: integrations.md
  # Card
   - title: Take the assessment
