@@ -44,6 +44,7 @@ The SAP Procurement template contains the building blocks necessary to:
 
 The solution template's starter apps, flows, and other components are ready to be built upon and customized to meet your organization's unique needs. You can:
 
+- Install and set up a [SAP Supplier Self Service](/power-platform/enterprise-templates/finance/sap-supplier-self-service/install-and-set-up) site to work with the SAP Procurement solution.
 - Customize your solutions to meet your organization's unique needs.
 - Integrate your system of record with other features, applications, and systems.
 - Incorporate additional controls over how your users interact with data.

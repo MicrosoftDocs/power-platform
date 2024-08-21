@@ -50,17 +50,29 @@ More information:
 
 ## Download and install
 
-This section provides links to the SAP Supplier Self Service solution files and gives the steps to manually install them into the same developer environment that contains the SAP Procurement solutions.
+This section provides links to the SAP Supplier Self Service solution files and the guidance to manually install them into the same developer environment that contains the SAP Procurement solutions.
 
-Go to [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub to download and install the the solutions following this sequence:
+> [!TIP]
+>
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the SAP Procurement template.
 
-1. **SAP Supplier Self Service**: mpa_supplier_self_service_1_0_0_17.zip (version 1.0.0.17)
-1. **Supplier Self Service Portal**: SupplierSelfServicePortal_1_0_0_14.zip  (Version 1.0.0.14)
+You have the option to download either *managed* or *unmanaged* solution files.
+
+Whichever option you choose, be sure to download both **SAP Supplier Self Service** and **SAP Supplier Self Service Portal** solution files and then install **SAP Supplier Self Service** first.
+
+- Managed
+  - [mpa_supplier_self_service_managed](https://aka.ms/mpa_supplier_self_service_managed)
+  - [SupplierSelfServicePortal_managed](https://aka.ms/SupplierSelfServicePortal_managed)
+- Unmanaged
+  - [mpa_supplier_self_service_unmanaged](https://aka.ms/mpa_supplier_self_service_unmanaged)
+  - [SupplierSelfServicePortal_unmanaged](https://aka.ms/SupplierSelfServicePortal_unmanaged)
 
 Once you install both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections).
 
 > [!NOTE]
 > For the connector setup, use an SAP service-user account that is supported with the appropriate SAP licenses and permissions. All interactions corresponding to the operations done on the supplier website are done under this service-user context.
+
+More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
 
 ## Activate the Supplier Self Service site
 
