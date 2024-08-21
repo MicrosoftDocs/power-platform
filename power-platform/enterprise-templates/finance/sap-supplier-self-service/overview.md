@@ -33,7 +33,7 @@ You can learn more about the SAP Supplier Self Service template solutions on the
 
 The SAP Supplier Self Service template's solutions work with the SAP Procurement template. It's important that SAP integration with Power Platform is complete and the SAP Procurement template is set up before adding the SAP Supplier Self Service solution. The [Install and set up](install-and-set-up.md) article reviews the prerequisite steps in more detail.
 
-## License information for third party libraries
+## License information for third-party libraries
 
 The template uses third-party libraries to show data in forms and lists from cloud flows. Please ensure you review and agree to the terms of use for these licenses:
 
