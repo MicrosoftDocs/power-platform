@@ -33,7 +33,7 @@ Before you begin, you need to identify which environments participate in pipelin
    >
    > Deleting the host environment deletes all pipelines and run data. Use caution and understand the impact of data and configuration loss as well as maker access to pipelines hosted in the environment.
    >
-- **Development environment**. This environment is where you develop solutions. A pipeline can be run from within any development environments linked to it.
+- **Development environment**. This environment is where you develop solutions. A pipeline can be run from within any development environment linked to it.
 - **Target environment**. The destination environment a pipeline deploys to. For example, integration testing, user assistance testing (UAT), production, and so on.
 
 > [!TIP]
@@ -69,7 +69,7 @@ Once installed, the deployment pipelines configuration application appears in th
    - **Description**: Optionally, enter a meaningful description for the pipeline.
     :::image type="content" source="media/Create new pipeline.png" alt-text="New pipeline icon":::
 
-1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. A pipeline must have at least one development environment and one stage before it can be run.
+1. Within the **Linked Development Environments** grid, select **Add Existing Development Environment**, then associate one or more development environments. A pipeline must have at least one development environment and one stage before it can run.
 :::image type="content" source="media/Pipelines add development environment.png" alt-text="Add development environment icon":::
 
 1. Within the **Deployment Stages** grid, select **New Deployment Stage**, to display the quick create pane.
@@ -89,14 +89,14 @@ Once installed, the deployment pipelines configuration application appears in th
 
 Pipeline security is managed within the host environment by assigning security roles. Additionally, users must currently have access to all environments associated with a pipeline in order to create or run the pipeline.
 
-When you installed the Power Platform pipelines application, two security roles were added:
+When you install the Power Platform pipelines application, two security roles are added:
 
 - **Deployment Pipeline User**: Has privileges to run pipelines that have been shared with them.
 - **Deployment Pipeline Administrator**: Has full control over all pipeline configuration, without needing system administrator security role membership.
 
 ## Share pipelines with makers
 
-The **Deployment Pipeline User** security role grants access to run one or more pipelines. It doesn't grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role won't see the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
+The **Deployment Pipeline User** security role grants access to run one or more pipelines. It doesn't grant access to create, edit, or delete pipelines. Users with the Deployment Pipeline User security role can't view the host environment within the environment picker in Power Apps or Power Automate, or otherwise need to be aware of it.
 
 To share pipelines:
 
@@ -106,7 +106,7 @@ To share pipelines:
 
 ## Share with pipeline administrators
 
-The Deployment Pipeline Administrator security role grants full privileges to all pipelines (and tables, which store pipeline information) within the host environment. It also grants access to run all pipelines associated with the current host. The Deployment Pipeline Administrator security role doesn't grant privileges to perform other activities within the host environment.
+The Deployment Pipeline Administrator security role grants full privileges to all pipelines (and tables, which store pipeline information) within the host environment. The role also grants access to run all pipelines associated with the current host. The Deployment Pipeline Administrator security role doesn't grant privileges to perform other activities within the host environment.
 
 > [!IMPORTANT]
 > Pipeline administrators must also have access to all development, test, and production environments that are associated with pipelines they create or run.
@@ -118,21 +118,21 @@ Assign the **Deployment Pipeline Administrator** security role to users or Micro
 As a **Deployment Pipeline Administrator**, you can assign out-of-the-box Pipelines roles easily in the **Deployment Pipeline Configuration** app:
 
 1. Play the **Deployment Pipeline Configuration** app.
-1. Click **Security Teams** under Settings in the left navigation pane.
+1. Select **Security Teams** under **Settings** in the left navigation pane.
 
 There are three teams:
-  - Deployment Pipeline Administrators. These users have full access to all pipelines and can play the Deployment Pipeline Configuration app.
-  - Deployment Pipeline Makers. These users can create and consume personal pipelines that are managed in the custom host. If a maker needs to use a shared pipeline, it is recommended that the user is assigned the Deployment Pipeline Users role to gain access to shared artifacts and shared stage runs.
-  - Deployment Pipeline Users. These users may trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
 
+- Deployment Pipeline Administrators. These users have full access to all pipelines and can play the Deployment Pipeline Configuration app.
+- Deployment Pipeline Makers. These users can create and consume personal pipelines that are managed in the custom host. If a maker needs to use a shared pipeline, we recommend that the user is assigned the Deployment Pipeline Users role to gain access to shared artifacts and shared stage runs.
+- Deployment Pipeline Users. These users can trigger a pipeline that is shared with them. Deployment Pipeline Users also have read access to all deployment stage runs within the same business unit.
 
-## Using a pipeline with other development environments that are not already associated
+## Using a pipeline with other development environments that aren't already associated
 
-If a user has **write-access** on a given pipeline, they will be able to associate other development environments with that pipeline in the Pipelines experience.
+If a user has **write-access** on a given pipeline, they're able to associate other development environments with that pipeline in the Pipelines experience.
 
 Choose the created pipeline from the dropdown menu. When you select **Next** in the first step of the deployment configuration process, the current environment is linked to the pipeline (and the host, if not already) as a development environment.
 
-This is useful if you have the same pipeline process for an additional development environment (i.e., your UAT and production environments are the same for another source environment). You can reuse the pipeline you already created or have been given write-access to.
+This is useful if you have the same pipeline process for an additional development environment. For example, your UAT and production environments are the same for another source environment. You can reuse the pipeline you already created or have been given write-access to.
 
 ## Centrally manage and monitor deployments
 
@@ -147,23 +147,23 @@ The pipeline configuration app and host environment provide many other benefits 
 
 ### Accessing the Deployment Pipeline Configuration app from Power Apps
 
-From the **Pipelines** page within any solution, the **Manage pipelines** button in the command bar navigates to the configuration app of the pipelines host that is associated with the current environment:
+From the **Pipelines** page within any solution, the **Manage pipelines** command on the command bar navigates to the configuration app of the pipelines host that is associated with the current environment:
 
 1. If the current environment is associated with a custom pipelines host, the button links to the Deployment Pipeline Configuration app within the dedicated Host environment.
 1. If the current environment is associated with the Platform host, the button links to an embedded Deployment Pipeline Configuration app within Power Apps.
 
-The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
+The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the platform host.
 
 #### Manually disassociating environments from one host and associating them with another host
 
 1. From Power Apps (make.powerapps.com), begin in an environment that you want to disassociate, and select **Solutions**.
 1. Choose any solution that you have access to, and select into it.
 1. Navigate to the **Pipelines** page from the left navigation pane, and then select **Manage pipelines** on the command bar. If you're beginning with a custom host, you can also go directly to the dedicated host environment and run the **Deployment Pipeline Configuration** app from there.
-1. Now that you are in the **Deployment Pipeline Configuration** app, navigate to **Environments** from the left navigation pane.
+1. Now that you are in the **Deployment Pipeline Configuration** app, go to **Environments** from the left navigation pane.
 1. In the **Added Deployment Environments** table shown by default, select the environment records for the environments that you want to disassociate from this host.
 1. Select **Delete** on the command bar, and confirm deletion.
-1. For associating the deleted environments to the new host, Repeat steps 1-4 but in the context of the desired host to associate the environments with.
-1. In the **Added Deployment Environments** table shown by default, select **New** in the command bar.
+1. For associating the deleted environments to the new host, repeat steps 1-4 but in the context of the desired host to associate the environments with.
+1. In the **Added Deployment Environments** table shown by default, select **New** on the command bar.
 1. Create the environment record by assigning a name, type, environment ID, and optional description.
 
 Now you're able to link the environments to pipelines in the new host.

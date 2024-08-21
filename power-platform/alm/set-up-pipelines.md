@@ -32,9 +32,9 @@ No. Thanks to the host separation dynamic that we have in place, there's no way 
 The target environment picker filters out any environments that:
 
 - The current user doesn't have import-access to, or
-are outside of the geographical region that the pipelines host is located in if host-wide setting is disabled (see [Enable cross-geo solution deployments](enable-cross-geo-solution-deployments.md)).
+are outside of the geographical region that the pipelines host is located in if host-wide setting is disabled. More information: [Enable cross-geo solution deployments](enable-cross-geo-solution-deployments.md)
 
-You also can't create a pipeline with a target environment that is already associated to the host as a development environment. To change an environment's type distinction in a host, you must [play the Deployment Pipeline Configuration app](custom-host-pipelines.md#accessing-the-deployment-pipeline-configuration-app-from-power-apps), delete the environment record, and re-create the environment record with the desired type.
+You also can't create a pipeline with a target environment that's already associated to the host as a development environment. To change an environment's type distinction in a host, you must [play the Deployment Pipeline Configuration app](custom-host-pipelines.md#accessing-the-deployment-pipeline-configuration-app-from-power-apps), delete the environment record, and re-create the environment record with the desired type.
 
 ### Why am I seeing an error that states "this environment is already associated with another pipelines host?"
 
