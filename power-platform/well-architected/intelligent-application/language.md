@@ -91,7 +91,7 @@ Learn more:
 - [Azure CLU integration overview](/microsoft-copilot-studio/advanced-clu-integration)
 - [Azure CLU supported languages](/azure/ai-services/language-service/conversational-language-understanding/language-support#languages-supported-by-conversational-language-understanding)
 - [Azure CLU limits](/azure/ai-services/language-service/conversational-language-understanding/service-limits)
-- [Azure CLU pricing](/pricing/details/cognitive-services/language-service/?cdn=disable)
+- [Azure CLU pricing](/pricing/details/cognitive-services/language-service)
 
 ## Considerations for Topic Structures
 
