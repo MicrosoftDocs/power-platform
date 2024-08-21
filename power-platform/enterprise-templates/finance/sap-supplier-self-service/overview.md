@@ -22,6 +22,8 @@ The SAP Supplier Self Service template introduces a customizable Power Pages sit
 
 The SAP Supplier Self Service solution improves your procurement operations. It offers a streamlined self-service site for your suppliers and vendors to create and update business records related to to Vendors, Orders, and Invoices in your SAP system, and the option to set up a copilot chat bot to assist users.
 
+## The SAP Supplier Self Service components
+
 The template's components are ready for you to extend and customize to meet your organization's unique needs. The template consists of two solutions:
 
 - **SAP Supplier Self Service** contains tables, cloud flows, chatbot definitions and customizations
@@ -31,8 +33,10 @@ You can learn more about the SAP Supplier Self Service template solutions on the
 
 The SAP Supplier Self Service template's solutions work with the SAP Procurement template. It's important that SAP integration with Power Platform is complete and the SAP Procurement template is set up before adding the SAP Supplier Self Service solution. The [Install and set up](install-and-set-up.md) article reviews the prerequisite steps in more detail.
 
-### License information for third party libraries
+## License information for third party libraries
 
-The template uses  third party libraries to show data in forms and lists from cloud flows. Please ensure you review and agree to the terms of use of these licenses 
-- Form.io: https://cdn.form.io/js/formio.embed.js ([License information](https://github.com/formio/formio.js/blob/4.19.x/LICENSE.txt))
-- Data tables: https://cdn.datatables.net/2.0.8/js/dataTables.min.js ([License information](https://datatables.net/license/mit))
+The template uses third-party libraries to show data in forms and lists from cloud flows. Please ensure you review and agree to the terms of use for these licenses:
+
+- **Form.io**: https://cdn.form.io/js/formio.embed.js ([License information](https://github.com/formio/formio.js/blob/4.19.x/LICENSE.txt))
+- **Data tables**: https://cdn.datatables.net/2.0.8/js/dataTables.min.js ([License information](https://datatables.net/license/mit))
+
