@@ -18,7 +18,7 @@ Follow the steps below to create custom Services, Subservices, Survey Topics, an
 
 ## Prerequisites
 
-Ensure that the admin who installed and set up the template designated you a *co-owner**, selected an appropriate role that allows you to manage the program, and shared two apps with you :
+Ensure that the admin who installed and set up the template designated you as a *co-owner**, selected an appropriate role that allows you to manage the program, and shared two apps with you:
 
 - Meeting Room Services app
 - Meeting Room Services Administrative model-driven app
@@ -43,7 +43,7 @@ In the Meeting Room Services Administrator model-driven app, set up the custom c
 1. Start the *Meeting Room Services Administrator** app and select **Subservices**.
 1. Select **+ New** on the toolbar and fill out the Subservice Name, Service Id, and Subservice Description for the new subservice.
 1. Select **Save**.
-1. Repeat the process untilyou have all the subservices that you want to be available in the experience.
+1. Repeat the process until you have all the subservices that you want to be available in the experience.
 
 ## Create custom survey topics
 
