@@ -91,8 +91,6 @@ In an environment, you can only have one application user for each Microsoft Ent
 
     The business unit, email address, and security roles can be edited.
 
-    :::image type="content" source="media/application-user-details-page.png" alt-text="Screenshot of the application user details page.":::
-
 ## Sync the application user name with the Microsoft Entra application name  
 
 When an application user is first created, the username is the same as the name of the registered Microsoft Entra application. The two names can get out of sync when the name of the Microsoft Entra application is changed. You can sync the application user name with the Microsoft Entra application name by selecting **Refresh** on the **Details** page.
