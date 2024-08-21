@@ -11,17 +11,13 @@ ms.topic: conceptual
 
 # Understand integration options for intelligent application workloads
 
-
 ## Key considerations
 
 - Balancing configuration vs custom development: Determine when to use out-of-the-box configuration vs custom development to meet specific organizational needs.
--  Monitoring and auditing: Understand how to monitor and audit integrations to ensure compliance and performance.
+- Monitoring and auditing: Understand how to monitor and audit integrations to ensure compliance and performance.
 - Understanding integration options: Explore the available integration options using connectors and plugin actions in Copilot Studio.
 
-
-
 ## Integration patterns
-
 
 Copilot Studio integration patterns are not exclusive and can be combined. 
 Integration can only be as fast as the endpoints you connect to. In a conversational experience, queries should always be optimized.
@@ -36,11 +32,11 @@ Use of premium connectors is covered as part of Copilot Studio licensing.
 
 ## See also
 
-Call a cloud flow as an action
-Perform HTTP requests
-Use connectors (preview)
-Use plugin actions (preview)
-Use Bot Framework skills 
-Dataverse custom APIs 
-Dataverse low-code plug-ins (preview)
-Azure functions
+- [Call a cloud flow as an action](/microsoft-copilot-studio/advanced-use-flow)
+- [Perform HTTP requests](/microsoft-copilot-studio/authoring-http-node)
+- [Use connectors](/microsoft-copilot-studio/advanced-connectors)
+- [Use plugin actions](/microsoft-copilot-studio/advanced-plugin-actions)
+- [Use Bot Framework skills](/microsoft-copilot-studio/advanced-use-skills)
+- [Dataverse custom APIs](/power-apps/developer/data-platform/custom-api)
+- [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)
+- [Azure functions](/azure/azure-functions/)
