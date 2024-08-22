@@ -63,10 +63,7 @@ Next, we'll need to initialize five variables as detailed below:
 
 Next we'll authenticate with Microsoft Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication - legacy](programmability-authentication.md).
 
-In this tutorial, we're using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Microsoft Entra to retrieve the token as shown:
-
-> [!div class="mx-imgBorder"] 
-> ![Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API")
+In this tutorial, we're using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Microsoft Entra to retrieve the token.
 
 We then parse the Microsoft Entra token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
