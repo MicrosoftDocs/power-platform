@@ -19,24 +19,24 @@ You should periodically assess the services and technologies you employ to ensur
 
 ## Understand your security requirements
 
-Understand the key requirements for the intelligent application workload you are implementing.
+Understand the key requirements for the intelligent application workload you're implementing.
 
 ### Access Control and Authentication
 
-- What access control and authentication mechanisms will be implemented to ensure only authorized users can access the intelligent application workload?
+- What access control and authentication mechanisms are implemented to ensure only authorized users can access the intelligent application workload?
 - How do you ensure secure and seamless user authentication?
 - How do you control which apps can interact with the Copilot and what measures ensure these restrictions are effective?
  
 ### Security and Incident Management
 
-- How will application secrets, such as API keys and passwords, be managed and secured?
-- What network security requirements will impact the intelligent application workload? For example, are internal APIs only accessible in a VNET?
-- How will access and usage of the intelligent application workload be audited and monitored?
+- How will you manage and secure application secrets, such as API keys and passwords?
+- What network security requirements impact the intelligent application workload? For example, are internal APIs only accessible in a virtual network?
+- How will you monitor and audit access and usage of the intelligent application?
 - What is the incident response plan for addressing security breaches or vulnerabilities?
  
 ### Compliance and Data Residency
 
-- What data residency requirements do you have for the types of data being used with the intelligent application workload? Understand where your data will reside and if this aligns with your legal or regulatory obligations?
+- What data residency requirements do you have for the types of data being used with the intelligent application workload? Understand where your data will reside and if the location aligns with your legal or regulatory obligations?
 - What regulatory and compliance requirements must be met for the intelligent application workload?
  
 ### System Integration and Network Requirements
@@ -52,7 +52,7 @@ Understand the key requirements for the intelligent application workload you are
 
 Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
-- Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing MFA](/entra/fundamentals/how-subscriptions-associated-directory) adds an extra layer of security. Define roles and permissions to ensure that users have access only to the resources they need. This minimizes the risk of unauthorized access. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
+- Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing MFA](/entra/fundamentals/how-subscriptions-associated-directory) adds an extra layer of security. Define roles and permissions to ensure that users have access only to the resources they need and to minimize the risk of unauthorized access. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
 
 Learn more:
 
@@ -60,7 +60,7 @@ Learn more:
 - [Configure single sign-on](/microsoft-copilot-studio/configure-sso?tabs=webApp)
 - [Configure web channel security](/microsoft-copilot-studio/configure-web-security)
 
-## Understand how regulatory requirements impact your project
+## Understand how regulatory requirements affect your project
 
 Identify and adhere to regulatory requirements and norms applicable to your industry, such as GDPR, HIPAA, or CCPA. Implement necessary controls to ensure compliance. Schedule regular compliance audits to verify adherence to regulatory standards and address any gaps. Assess if there are specific requirements for data location, such as data must be stored within a particular country or region. Ensure that your data storage strategy meets these requirements. 
 
@@ -81,7 +81,7 @@ Learn more:
 
 ## Secure all integrations
 
-Ensure secure communication between your intelligent application workload and data sources. Use service principals for non-human access to resources and managed identities for Azure resources to simplify identity management and enhance security. Secure APIs by using OAuth2 for authentication and ensuring that all API communications are encrypted. Your intelligent application workload needs to integrate with other systems to access and process data. Using service principals ensures connections are secure and do not rely on individual credentials.
+Ensure secure communication between your intelligent application workload and data sources. Use service principals for nonhuman access to resources and managed identities for Azure resources to simplify identity management and enhance security. Secure APIs by using OAuth2 for authentication and ensuring that all API communications are encrypted. Your intelligent application workload needs to integrate with other systems to access and process data. Using service principals ensures connections are secure and don't rely on individual credentials.
 
 Learn more:
 
