@@ -131,15 +131,9 @@ Data privacy concerns, potential biases in AI response, and technical failures a
 
 - **Compliance and Regulatory Issues**: Stay informed about relevant regulations and ensure that AI systems comply with all legal requirements. Conduct regular compliance audits and update policies as needed.
 
-## What are the key design areas?
+## Next steps
 
-- Responsible AI
-- Security and Compliance
-- Monitoring
-- Publishing / deploying
-- Configuring and integrating knowledge sources
-- Optimize for plug-ins / Leveraging advanced plugin actions and connectors 
-- Enhancing NLU, packaging and deploying copilot
-- Optimize for RAG
-- Costs and scale
-- Use case prioritization ? 
+Start by reviewing design principles.
+
+> [!div class="nextstepaction"]
+> [Design principles](design-principles.md)

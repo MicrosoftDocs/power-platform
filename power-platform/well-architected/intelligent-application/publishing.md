@@ -15,7 +15,7 @@ It’s key to have a healthy application lifecycle management (ALM) process to a
 
 ## Determine Your ALM Strategy
 
-Develop a comprehensive ALM strategy that includes version control, continuous integration/continuous deployment (CI/CD), and automated testing. This ensures that your development process is efficient and scalable.
+Ensure that your development process is efficient and scalable by developing a comprehensive ALM strategy that includes version control, continuous integration/continuous deployment (CI/CD), and automated testing.
 
 Evaluate options from simple to advanced continuous integration & delivery (CI/CD)
 
@@ -28,13 +28,13 @@ Evaluate options from simple to advanced continuous integration & delivery (CI/C
 
 Maintain separate environments for development, testing, and production. This helps in isolating issues and ensures that changes are thoroughly tested before reaching end users.
 
-Utilize solutions to move plug-ins created in Copilot Studio across different environments. This makes it easier to manage and deploy your projects.
+Utilize solutions to move plug-ins created in Copilot Studio across different environments.
 
 Key recommendations and considerations:
 
 - **Work within the context of solutions**: Ensure all development is conducted within the framework of solutions.
-- **Separate solutions for independent deployment**: Create distinct solutions only when there is a need to deploy components independently.
-- **Understand limitations**: Understand limitations of automated deployment, and evaluate which settings have to be set or updated manually after deployment - such as Azure Application Insights integration, deployed channels and security settings.
+- **Separate solutions for independent deployment**: Create distinct solutions only when there's a need to deploy components independently.
+- **Understand limitations**: Understand limitations of automated deployment, and evaluate which settings have to be set or updated manually after deployment - such as Azure Application Insights integration, deployed channels, and security settings.
 - **Utilize a custom publisher and prefix**: Implement a custom publisher and prefix for better organization and management.
 - **Use environment variables**: Use [environment variables](/power-apps/maker/data-platform/environmentvariables) for settings and secrets that vary across environments.
 - **Export and deploy as managed solutions**: Export and deploy solutions as managed, except when setting up a development environment.
@@ -48,7 +48,7 @@ The example provides an overview of the deployment strategy for your intelligent
 ![Example solution configuration](media/solutionconfig.png)
 
 1. **Development Environment (Dev):**
-   - **Purpose:** This environment is dedicated to the initial creation and customization of the solution.
+   - **Purpose:** This environment is for the initial creation and customization of the solution.
    - **Activities:** Developers build and modify components such as apps, flows, and copilots. All customizations and configurations are performed here.
    - **Key Practices:**
      - Use a custom publisher and prefix for all components.
@@ -81,7 +81,7 @@ The example provides an overview of the deployment strategy for your intelligent
 
 **Overall Strategy:**
 
-- **Separation of Concerns:** Each environment serves a distinct purpose, ensuring that development, testing, QA, and production activities do not interfere with one another.
+- **Separation of Concerns:** Each environment serves a distinct purpose, ensuring that development, testing, QA, and production activities don't interfere with one another.
 - **Automation:** Automate ALM processes, including source control, testing, and deployments, to enhance efficiency and reduce the risk of errors.
 - **Consistency:** Maintain consistency across environments by using environment variables and automated deployment scripts.
 
@@ -89,12 +89,12 @@ The example provides an overview of the deployment strategy for your intelligent
 
 Understand your plans to validate that your copilots and integrations work as expected.
 
-Define your test strategy for intelligent application workloads. Use of the [Test Framework](https://aka.ms/PVASamples/PVATestFramework) to bulk test user utterances and validate that the appropriate topic triggers or that the first ‘did you mean’ option is the correct one in 90% of the time.
-Integrations will be tested as part the full end-to-end conversation testing with the Test Framework scale test capability.
+Define your test strategy for intelligent application workloads. Use of the [Test Framework](https://aka.ms/PVASamples/PVATestFramework) to bulk test user utterances and validate that the appropriate topic triggers or that the first "did you mean" option is the correct one in 90% of the time.
+Integrations are tested as part the full end-to-end conversation testing with the Test Framework scale test capability.
 
-Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure copilots and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the copilot responses are evaluated against expected results.
+Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure copilots and tests. Run individual tests against the Copilot Studio APIs (Direct Line), and evaluate the copilot responses against expected results.
 
-Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security, and scalability. For example, a chat widget on the website should load and start the conversation in less then 5 seconds when clicked or a cloud flows triggered to return information to the user need to return the desired data in a maximum of 10s.
+Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security, and scalability. For example, a chat widget on the website should load and start the conversation in less than 5 seconds when clicked or a cloud flow triggered to return information to the user need to return the desired data in a maximum of 10 seconds.
 
 ## See also
 
