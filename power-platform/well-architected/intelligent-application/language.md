@@ -53,7 +53,7 @@ In Copilot Studio, topic or action triggering can be done in different ways: You
 
 ## Trigger phrases and slot filling
 
-When developing intelligent application workloads, it's essential to use native capabilities for better intent recognition and efficient conversations. Start by defining topic trigger phrases, which can be derived from existing FAQ bases and chat transcripts to ensure relevance and accuracy. Consider your expected use of entities, such as using regular expressions to identify order IDs, prebuilt entities for emails, and closed lists for operation types with synonyms. Additionally, plan how you will test topic triggering with test utterances to validate and refine the accuracy of your intent recognition and entity extraction processes. By focusing on these best practices, you can create more effective and responsive intelligent applications.
+When developing intelligent application workloads, it's essential to use native capabilities for better intent recognition and efficient conversations. Start by defining topic trigger phrases, which can be derived from existing FAQ bases and chat transcripts to ensure relevance and accuracy. Consider your expected use of entities, such as using regular expressions to identify order IDs, prebuilt entities for emails, and closed lists for operation types with synonyms. Additionally, plan how you will test topic triggering with test utterances to validate and refine the accuracy of your intent recognition and entity extraction processes. Learn more: [Deployment and testing](publishing.md)
 
 ### Trigger phrases
 
@@ -123,7 +123,7 @@ When developing a copilot, effectively managing unrecognized intents ensures a s
 
 - **Managing Unrecognized Intents**: Initially, direct unrecognized intents to the Conversational Boosting topic, which searches for answers in corporate resources like SharePoint sites and public websites. If no relevant information is found, the system can then fall back to a ChatGPT-like experience using a custom system prompt with the Azure OpenAI GPT-4 model. This approach ensures that users receive helpful responses even when their queries are unplanned.
 
-- **Integration with External Systems**: If integrating with external systems as part of the fallback strategy, use HTTP requests to call models like Azure OpenAI GPT-4. This integration allows the copilot to provide a compliant ChatGPT-like experience, enhancing its ability to handle diverse queries.
+- **Integration with External Systems**: Consider if you are integrating with external systems as part of the fallback strategy. For example, you could integrate with the Azure OpenAI GPT-4 model using HTTP requests to provide a compliant ChatGPT-like experience.
 
 - **Monitoring Fallback Usage**: Regularly review the percentage of conversations hitting fallback. Use these insights to enrich existing topics or create new ones, ensuring that the copilot continuously improves its understanding and response capabilities.
 
