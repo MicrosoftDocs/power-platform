@@ -16,7 +16,7 @@ ms.subservice: solution-templates
 
 Enterprise templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), information technology (IT), and human resource (HR) systems.
 
-Enterprise templates are built for centralized teams to locally install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
+Enterprise templates are built for centralized teams to install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner to implement a Power Platform template project.
 
 Enterprise templates for Power Platform help you:
 
@@ -25,9 +25,9 @@ Enterprise templates for Power Platform help you:
 
 Additionally, you can:
 
-- Customize your solutions
-- Integrate your system of record with other features, applications, and systems
-- Incorporate more controls over how your users interact with data
+- Customize your solutions.
+- Integrate your system of record with other features, applications, and systems.
+- Incorporate more controls over how your users interact with data.
 
 ## Available enterprise templates
 
@@ -70,7 +70,7 @@ Be sure to check back often for new templates that become available.
 
 ## Benefits of using enterprise templates
 
-Implementing enterprise software use cases is often time consuming and expensive. An enterprise template provides a foundation to help you quickly get started digitizing manually intensive processes. You can even extend a template by connecting workflows across more systems of record to drive more value with Power Platform.
+Implementing enterprise software use cases is often time-consuming and expensive. An enterprise template provides a foundation to help you quickly get started digitizing manually intensive processes. You can even extend a template by connecting workflows across more systems of record to drive more value with Power Platform.
 
 Templates for Power Platform offer the following benefits:
 
