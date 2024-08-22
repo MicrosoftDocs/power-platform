@@ -40,6 +40,8 @@ landingContent:
             url: publishing.md
           - text: Integration options
             url: integrations.md
+          - text: Intent recognition and entity extraction
+            url: language.md
  # Card
   - title: Take the assessment
     linkLists:
