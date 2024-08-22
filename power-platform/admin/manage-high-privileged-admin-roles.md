@@ -50,6 +50,8 @@ These admins can't perform activities that require direct access to Dataverse da
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
+- The system administrator role assigned via self elevation is NOT removed when the role assignment expires in PIM. You must manually remove the user from the system administrator role. See [clean up acitivity](#step-3-clean-up-activity)
+
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
 
 - Role assignments through groups aren't supported. Make sure that you assign roles directly to the user.
