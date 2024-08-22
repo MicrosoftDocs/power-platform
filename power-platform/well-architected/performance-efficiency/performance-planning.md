@@ -4,7 +4,7 @@ description: Learn how to conduct performance and capacity planning in your Powe
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/12/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

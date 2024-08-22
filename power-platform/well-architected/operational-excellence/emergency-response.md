@@ -4,7 +4,7 @@ description: Learn how to design an effective emergency operations practice that
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/12/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

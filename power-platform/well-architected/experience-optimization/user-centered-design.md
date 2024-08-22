@@ -4,7 +4,7 @@ description: Learn user-centered design strategies to ensure your workloads are 
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/12/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -71,7 +71,7 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 
 ## Power Platform facilitation
 
-**Analyze copilot performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) give you a broad overview of your copilot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is crucial to measure the copilot performance metrics, and discover areas for improvements.
+If your workload includes a copilot, you can **analyze performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) give you a broad overview of your copilot's performance. It uses artificial intelligence (AI) technology to show you which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is crucial to measure the copilot performance metrics, and discover areas for improvements.
 
 ## Experience Optimization checklist
 
