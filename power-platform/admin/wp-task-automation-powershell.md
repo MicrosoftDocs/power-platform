@@ -50,12 +50,6 @@ Use the GUID to return a non-display name for the environment. Then you can dril
 
 Get-AdminPowerAppEnvironment -Environment 'EnvironmentName'.
 
-This returns the following:
-
-> [!div class="mx-imgBorder"] 
-> ![User PowerShell to get environment details.](media/powershell-get-environment-details.png "User PowerShell to get environment details")
-
-
 This example returns a list of connections in an environment, including all the connections in a tenant's default environment.
 
 ```powershell
