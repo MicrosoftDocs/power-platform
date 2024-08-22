@@ -16,10 +16,7 @@ ms.collection: bap-ai-copilot
 
 # Hardware Request and Management template for Power Platform
 
-The Hardware Request and Management template enables your organization to digitize and automate asset requests and management.
-
-Employees can request new hardware, such as laptops, keyboards, and monitors.
-
+The Hardware Request and Management template enables your organization to digitize and automate asset requests and management. Employees can request new hardware, such as laptops, keyboards, and monitors.
 Program admins or managers can perform several functions, such as:
 
 - Configure a hardware product catalog and business and budget units with respective approvers
