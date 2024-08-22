@@ -32,7 +32,7 @@ As an example of this scenario, a customer is looking to get a handle on their c
 
 ## Connect and variable setup
 
-Below are details on getting connected to the Power Platform programmatically. You can choose between an Azure experience or PowerShell scripts using the tabs below.
+Use the following details on getting connected to the Power Platform programmatically. You can choose between an Azure experience or PowerShell scripts.
 
 # [Azure](#tab/Azure)
 
@@ -50,7 +50,7 @@ After that finishes provisioning, edit the workflow using the Designer and set u
 > [!div class="mx-imgBorder"] 
 > ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
 
-Next, we need to initialize five variables as detailed below:
+Next, we need to initialize five variables:
 
 - **SPN-Id** – This is your service principal ClientID. It's used later to perform the authentication in a service principal context. If you're using username/password context, you can skip this variable.
 - **DBCapacity** – This is a Float variable for the consumed database capacity in megabytes.
@@ -61,7 +61,7 @@ Next, we need to initialize five variables as detailed below:
 > [!div class="mx-imgBorder"] 
 > ![Create five variables.](media/capacity3.png "Create five variables")
 
-Next, we authenticate with Microsoft Microsoft Entra and retrieve a token for calling the Power Platform API. If you haven’t completed your Microsoft Entra setup, see [Authentication - legacy](programmability-authentication.md).
+Next, we authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API. If you haven’t completed your Microsoft Entra setup, see [Authentication - legacy](programmability-authentication.md).
 
 In this tutorial, we're using a key vault to store our service principal secret value. In this way, an IT administrator can make this value securely available for your workflow. This is then populated in the POST call to Microsoft Entra to retrieve the token.
 
@@ -93,7 +93,7 @@ We then parse the Microsoft Entra token response into a typed object using this 
 # [PowerShell](#tab/PowerShell)
 
 ### Initialize the variables and connect to Power Platform API
-Use the below script to initialize some variables that we use throughout the tutorial. Optionally, you may use Username/Password authentication but it isn't advised.
+Use the following script to initialize some variables that we use throughout the tutorial. Optionally, you may use Username/Password authentication but it isn't advised.
 
 ```powershell
 #Install the module
@@ -387,7 +387,7 @@ We then parse the Power Platform API response into a typed object using this JSO
 # [PowerShell](#tab/PowerShell)
 
 ### Pass capacity flag
-Use the below script to pull a list of all environments you're the administrator over. Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
+Use the following script to pull a list of all environments you're the administrator over. Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
 
 ```powershell
 #fetch environment list with capacity populated. This is only possible when calling full environment list
@@ -649,7 +649,7 @@ Next, we use another For Each control using the ‘capacity’ of the Parse-Curr
 > [!div class="mx-imgBorder"] 
 > ![For Each control using the capacity of the Parse-CurrentItem output.](media/capacity9.png "For Each control using the capacity of the Parse-CurrentItem output")
 
-Now we can use the Switch control on the CapacityType property from the Parse-Capacity output. This is either the value of ‘Database’, ‘File’, or ‘Log’. Under each switch case, capture the related ‘actualConsumption’ property into the related variable.  In the case below, you see we're capturing Database capacity:
+Now we can use the Switch control on the CapacityType property from the Parse-Capacity output. This is either the value of ‘Database’, ‘File’, or ‘Log’. Under each switch case, capture the related ‘actualConsumption’ property into the related variable.  In the following case, you see we're capturing Database capacity:
 
 > [!div class="mx-imgBorder"] 
 > ![Use the Switch control on the CapacityType property from the Parse-Capacity output.](media/capacity10.png "Use the Switch control on the CapacityType property from the Parse-Capacity output")
