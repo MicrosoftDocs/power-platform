@@ -102,13 +102,10 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 
 6. For **Authentication Type**, select **Gmail OAuth**.
 
-7. For **Client id** and **Client Secret**, enter the information you noted in step 8 of the previous procedure.
+7. For **Client ID** and **Client Secret**, enter the information you noted in step 8 of the previous procedure.
 
    > [!NOTE]
    > The **Locations and ports** fields are automatically populated.
-   
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of creating a new server profile for Gmail using Oauth.](media/gmail-oauth-profile.png "Create a new server profile for Gmail using Oauth")
 
 8. Expand **Advanced**, and then use the tooltips to choose your email processing options.
 
@@ -135,9 +132,6 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
    |Server profile    | The profile created in step 4     |
    |Incoming email    | Server-Side Synchronization or Email Router       |
    |Outgoing email | Server-Side Synchronization or Email Router   |
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of OAuth mailbox information.](media/gmail-oauth-mailbox-information.png "OAuth mailbox information")
 
 6. Select **Save**.
 

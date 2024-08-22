@@ -98,8 +98,6 @@ When an application user is first created, the username is the same as the name 
 > [!NOTE]
 > **Refresh** and the Microsoft Entra app name are only shown when the two names are out of sync.
 
-:::image type="content" source="media/sync-app-user-name-azure-ad-app-name.png" alt-text="Screenshot of Sync the application user name with the Microsoft Entra application name.":::
-
 ## Manage roles for an application user
 
 In addition to using the entry point on the **Details** page to manage roles, you can select **Edit security Roles** on the menu bar on the **Application users** page. If the application user has roles assigned already, those roles appear as selected on the page.
