@@ -126,8 +126,6 @@ The Microsoft 365 **Audit** tab allows admins to search for events associated wi
 
 Admins can directly export the result set based on the filter criteria.
 
-:::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
-
 Customer Lockbox produces two types of audit logs:
 1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs do not correspond to a specific user ID since the actions are initiated by Microsoft.
 2.	Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations does not have an E5 license assigned, the logs are filtered out and will not show up in the audit logs.
