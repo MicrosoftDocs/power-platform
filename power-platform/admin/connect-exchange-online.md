@@ -60,9 +60,6 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 
     - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). Note that the **Locations and ports** fields are automatically populated.
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of the mail server profile form.](media/server-profile-form.png "Email server profile form") 
-
 7. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
 
 8. When you're done, select **Save**.
