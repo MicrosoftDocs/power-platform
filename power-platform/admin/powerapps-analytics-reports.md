@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 11/16/2022
 author: Zeffin
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
