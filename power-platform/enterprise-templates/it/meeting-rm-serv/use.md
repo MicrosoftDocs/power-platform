@@ -1,6 +1,6 @@
 ---
 title: Use the Meeting Room Services app
-description: Learn how you can use the Appointment Booking app to streamline and automate the appointment booking process.
+description: Learn how to use the Appointment Booking app to streamline and automate the appointment booking process.
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
@@ -15,7 +15,7 @@ ms.subservice: solution-templates
 
 As a user of the Meeting Room Services app, you can:
 
-- Create, view, cancel, or update your own service requests meetings.
+- Create, view, cancel, or update your service request meetings.
 - Submit feedback for completed service requests.
 - Report issues on meeting rooms.
 
@@ -33,7 +33,7 @@ Take these steps to create a service request:
 ## View service requests
 
 1. On the left navigation pane, select **My requests**.
-1. Select on any request number from the list.
+1. Select any request number from the list.
 
 ## Cancel a service request
 
@@ -43,7 +43,7 @@ Take these steps to create a service request:
 
 ## Update a service request
 
-1. On the My requests screen, select on the request number of any *New* or *In Progress* service request.
+1. On the *My requests* screen, select on the request number of any *New* or *In Progress* service request.
 1. Update the *Subservice* and *Additional details* field(s) as necessary.
 1. Select **Update** to trigger the *Meeting Room Services - When service is requested or updated* flow, which notifies the service owner(s) about the updated service request.
 1. On the Success screen, select **Go to My requests**.
@@ -51,15 +51,15 @@ Take these steps to create a service request:
 ## Submit feedback for a completed service request
 
 1. On the left navigation pane select **Feedback and issues**.
-1. On the Feedback and issues screen, choose a meeting to provide feedback and select **Give feedback** for that meeting.
-1. The Give feedback screen displays the completed service requests for that meeting and the survey topics for each service. Select the rating for each survey topic and then select **Next** to view more completed service requests and provide ratings.
+1. Choose a meeting to provide feedback and select **Give feedback** for that meeting. The Give feedback screen displays the completed service requests for that meeting and the survey topics for each service.
+1. Select the rating for each survey topic and then select **Next** to view more completed service requests and provide ratings.
 1. Select **Submit** when you are done providing ratings.
 
 ## Report an issue for a meeting room
 
-1. On the left navigation pane, select **Feedback and issues**.
-1. On the Feedback and Issues screen, choose a meeting to provide feedback and select **Report issue** for that meeting.
-1. On the Report an Issue screen, give details in the field.
+1. On the left navigation pane select **Feedback and issues**.
+1. Choose a meeting to provide feedback and select **Report issue** for that meeting.
+1. On the **Report issue** screen provide details in the field.
 1. Toggle to indicate if the room was usable or not.
 1. Select **Report issue** to trigger the *Meeting Room Services - Notify administrator When an Issue is Reported* flow, which notifies the program managers about the issue with the meeting room.
 
