@@ -48,3 +48,16 @@ For more information on each feature, refer to the links below:
 ### Power Pages 
 
 - Maker Copilot: [Create an AI-generated webpage using Copilot](/power-pages/getting-started/create-page-copilot)
+
+## Governance 
+
+This section displays the percentage of environments in your tenant that have specific Copilot features enabled/disabled. Clicking on Power Automate or Copilot Studio features will lead you to documentation that includes detailed information on that Copilot’s capabilities, prerequisites, and how to enable/disable it.  
+
+Clicking on Power Apps Copilots or “Manage Settings” next to the governance header will open the settings panel where you can modify tenant and environment level Copilot settings. Select your environment, your Power Platform product, and set your controls before selecting save. 
+
+> [!Note]
+> There may be a delay of up to 8 hours for data refresh of usage insights and select settings enablement statuses.
+
+## Content moderation 
+
+This section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../faqs-copilot-data-security-privacy#how-does-copilot-block-harmful-content.md)
