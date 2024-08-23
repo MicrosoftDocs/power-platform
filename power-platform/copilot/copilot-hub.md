@@ -31,20 +31,20 @@ For more information on each feature, refer to the links below:
 
 ### Copilot Studio 
 
-- Copilot: [AI-based copilot authoring overview}(https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-overview)
-- Generative answers: [Generative answers](https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-boost-conversations)
+- Copilot: [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview)
+- Generative answers: [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations)
   
 ### Power Apps 
 
-- Copilot for makers: [Build apps through conversation](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-conversations-create-app)
-- Copilot for apps: [Add Copilot for app users in model-driven apps]( 
-- App descriptions: [FAQ for generate app descriptions with Copilot]( 
+- Copilot for makers: [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app)
+- Copilot for apps: [Add Copilot for app users in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Add a Copilot Control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot)
+- App descriptions: [FAQ for generate app descriptions with Copilot](/power-apps/maker/common/ai-app-descriptions-faq)
 
 ### Power Automate  
 
-- Cloud flow Copilot: [FAQ for Copilot in cloud flows](
-- Process flow Copilot: {FAQ for Copilot in Power Automate Process Mining}(
+- Cloud flow Copilot: [FAQ for Copilot in cloud flows](/power-automate/faqs-copilot)
+- Process flow Copilot: [FAQ for Copilot in Power Automate Process Mining](/power-automate/faqs-copilot-in-process-mining)
 
 ### Power Pages 
 
-- Maker Copilot: [Create an AI-generated web page using Copilot](
+- Maker Copilot: [Create an AI-generated webpage using Copilot](/power-pages/getting-started/create-page-copilot)
