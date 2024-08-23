@@ -16,7 +16,12 @@ search.audienceType:
 
 [!INCLUDE [preview-baner](../../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Copilot page (preview) is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
+The **Copilot** page (preview) is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Readiness 
 
@@ -25,11 +30,11 @@ Resources and documents to help admins better understand and govern Copilots are
 The **What’s new** web part lists new Copilot features as they are introduced or promoted to general availability. 
 
 > [!Note]
-> There may be a one to two week delay to updates made in the **What’s new** web part. The [Release plans](/dynamics365/release-plans/) and [Power Platform blogs](https://www.microsoft.com/power-platform/blog) are the best source to stay on top of new Copilot features. 
+> There may be a one or two week delay to updates made in the **What’s new** web part. The [Release plans](/dynamics365/release-plans/) and [Power Platform blogs](https://www.microsoft.com/power-platform/blog) are the best source to stay on top of new Copilot features. 
 
 ## Usage 
 
-The usage metrics in this section show monthly active users for each Copilot feature. “Active” usage is defined as a session and/or interaction with Copilot. 
+The usage metrics in the **Usage** section show monthly active users for each Copilot feature. _Active_ usage is defined as a session or interaction with Copilot. 
 
 For more information on each feature, refer to the links below: 
 
@@ -55,13 +60,13 @@ For more information on each feature, refer to the links below:
 
 ## Governance 
 
-This section displays the percentage of environments in your tenant that have specific Copilot features enabled/disabled. Clicking on Power Automate or Copilot Studio features will lead you to documentation that includes detailed information on that Copilot’s capabilities, prerequisites, and how to enable/disable it.  
+The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. Selecting the Power Automate or Copilot Studio features lead you to documentation that includes detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
 
-Clicking on Power Apps Copilots or “Manage Settings” next to the governance header will open the settings panel where you can modify tenant and environment level Copilot settings. Select your environment, your Power Platform product, and set your controls before selecting save. 
+Selecting the Power Apps Copilots or **Manage Settings** next to the governance header opens the settings panel where you can modify tenant and environment-level Copilot settings. Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
 
 > [!Note]
-> There may be a delay of up to 8 hours for data refresh of usage insights and select settings enablement statuses.
+> There may be a delay of up to eight hours for data refresh of usage insights and select settings enablement statuses.
 
 ## Content moderation 
 
-This section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../faqs-copilot-data-security-privacy.md#how-does-copilot-block-harmful-content)
+The **Content moderation** section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../faqs-copilot-data-security-privacy.md#how-does-copilot-block-harmful-content)
