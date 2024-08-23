@@ -27,7 +27,7 @@ The **Copilot** page (preview) is a centralized location in the Power Platform a
 
 Resources and documents to help admins better understand and govern Copilots are available in the **Readiness** section. These documents are updated over time as new Copilot capabilities are released. 
 
-The **What’s new** web part lists new Copilot features as they are introduced or promoted to general availability. 
+The **What’s new** web part lists new Copilot features as they're introduced or promoted to general availability. 
 
 > [!Note]
 > There may be a one or two week delay to updates made in the **What’s new** web part. The [Release plans](/dynamics365/release-plans/) and [Power Platform blogs](https://www.microsoft.com/power-platform/blog) are the best source to stay on top of new Copilot features. 
