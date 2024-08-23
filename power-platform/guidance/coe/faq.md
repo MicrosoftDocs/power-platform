@@ -53,7 +53,6 @@ To find the security roles of a user in an environment, you can use the product 
 4. From **Users + Permissions**, select **Users**.
    :::image type="content" source="media/find-SR-2.png" alt-text="Screenshot that shows where the Users option is located under the Users + permissions menu." lightbox="media/find-SR-2.png":::
 5. Locate the user and select their name to view their properties. You see their security roles under the **Roles** section.
-   :::image type="content" source="media/find-SR-3.png" alt-text="Screenshot that shows the location of Roles on a user's settings page." lightbox="media/find-SR-3.png":::
 
 ## Import a Flow
 
@@ -220,13 +219,12 @@ All emails sent as part of the CoE Starter Kit are stored in the **Customized Em
 
 1. Go to [Power Apps](https://make.powerapps.com) and select your CoE environment.
 1. On the app that you want to share, select the overflow menu **...** > **Share**.
-   :::image type="content" source="media/tips-share1.png" alt-text="Screenshot that shows The Share Admin - Command Center pane, highlighting the location where you can assign a security role." lightbox="media/tips-share1.png":::
+   
 1. Select the Dataverse security role. The CoE Starter Kit makes three security roles available:
     - **Power Platform Admin SR** for sharing an app with admins
     - **Power Platform Maker SR** for sharing an app with your makers
     - **Power Platform User SR** for sharing an app with users
 
-   :::image type="content" source="media/tips-share2.png" alt-text="Screenshot that shows the three Power Platform roles in a list in the Share Admin - Command Center. Each has a checkbox you can check or uncheck." lightbox="media/tips-share2.png":::
 1. Select **Share**.
 
 ## Get a Power Apps URL from a production environment

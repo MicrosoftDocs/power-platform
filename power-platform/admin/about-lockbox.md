@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/31/2024
+ms.date: 07/26/2024
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
@@ -25,11 +25,11 @@ This article covers how to enable Customer Lockbox and how lockbox requests are 
 
 ## Summary
 
-You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Global administrators and Power Platform administrators can enable the lockbox policy.
+You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Power Platform administrators can enable the lockbox policy.
 
 For more information, go to [Enable the lockbox policy](#enable-the-lockbox-policy).
 
-In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (for example, Dataverse), a lockbox request is sent to the Global administrators and Power Platform administrators for approval. For more information, go to [Review a lockbox request](#review-a-lockbox-request).
+In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (for example, Dataverse), a lockbox request is sent to the Power Platform administrators for approval. For more information, go to [Review a lockbox request](#review-a-lockbox-request).
 
 All updates to a lockbox request are recorded and made available to your organization as audit logs. For more information, go to [Audit lockbox requests](#audit-lockbox-requests).
 
@@ -48,7 +48,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 2. A Microsoft operator reviews the support request/event and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, irrespective of lockbox policy being enabled or not.
 
-3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy enablement. An email notification is sent to the designated approvers (Global administrators and Power Platform administrators) about the pending data access request from Microsoft.  
+3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy enablement. An email notification is sent to the designated approvers (Power Platform administrators) about the pending data access request from Microsoft.  
 
    > [!IMPORTANT]
    > The Microsoft engineer won’t be able to proceed with their investigation until the lockbox request is approved by the customer. This could cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.
@@ -61,7 +61,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 ## Enable the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox.
+Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings, select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane.
@@ -125,8 +125,6 @@ The Microsoft 365 **Audit** tab allows admins to search for events associated wi
 :::image type="content" source="media/lockbox-select-power-platform.png" alt-text="Select the Power Platform lockbox category.":::
 
 Admins can directly export the result set based on the filter criteria.
-
-:::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
 
 Customer Lockbox produces two types of audit logs:
 1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs do not correspond to a specific user ID since the actions are initiated by Microsoft.

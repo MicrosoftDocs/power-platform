@@ -3,7 +3,7 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/19/2023
+ms.date: 07/23/2024
 author: rahulmital 
 ms.subservice: admin
 ms.author: rahulmital 
@@ -105,7 +105,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
  **Cause:**  
   
- This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in customer engagement apps as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, customer engagement apps be able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
+ This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by a [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with sufficient access to approve mailboxes needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. Learn more about who can approve mailboxes at [Approve email](connect-exchange-online.md#approve-email). The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. After the [approval process](connect-exchange-online.md#approve-email), customer engagement apps are able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
   
  **Solution:**  
   
@@ -143,7 +143,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 6. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
   
 > [!NOTE]
-> You can remove the requirement for approving mailboxes using: **Settings** > **Administration** > **System Settings** > **Email** tab. Uncheck **Process emails only for approved users** and **Process emails only for approved queues**, then click **OK**. If you are using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, email addresses must still be approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator.  
+> You can remove the requirement for approving mailboxes. Learn more at [Remove the requirement to approve mailboxes](connect-exchange-online.md#remove-the-requirement-to-approve-mailboxes).
   
 ### Mailbox location could not be determined  
  **Alert:** The mailbox location could not be determined while sending/receiving the email message \<Message Subject>. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the associated email server profile \<Email Server Profile name> has been notified.  

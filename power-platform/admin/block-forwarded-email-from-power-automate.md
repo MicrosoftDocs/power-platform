@@ -1,7 +1,6 @@
 ---
 title: "Email exfiltration controls for connectors | MicrosoftDocs"
 description: Block forwarded emails sent from Microsoft Power Automate.
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/14/2020
@@ -19,14 +18,14 @@ search.audienceType:
 
 Microsoft Power Platform has the capability to insert specific SMTP headers in email messages sent through Power Automate and Power Apps. It does this using Microsoft 365 Exchange/Outlook connectors. You can use these SMTP headers to set up appropriate exfiltration rules. These rules are for the unauthorized transfer of data from one device to another in Exchange for outbound emails.  
 
-For more details on the Microsoft 365 Outlook connector, see: [SMTP headers](/connectors/office365/#smtp-headers). 
+For more details on the Microsoft 365 Outlook connector, go to: [SMTP headers](/connectors/office365/#smtp-headers).
 
->[!NOTE]
->This method of exfiltration control is not available in GCC High and DoD environments.  In these clouds the x-ms-mail-* headers are not used.
+> [!NOTE]
+> This method of exfiltration control is not available in GCC High and DoD environments.  In these clouds the x-ms-mail-* headers are not used.
 
 ## Block exfiltration of forwarded emails 
 
-Admins can set up Exchange mail flow rules to monitor or block emails sent by Power Automate and/or Power Apps using the Microsoft 365 Outlook connector. The format of the SMTP header uses a reserved phrase ‘Microsoft Power Automate’ or ‘Microsoft Power Apps’. It's inserted with the header type: ‘x-ms-mail-application’. For example:
+Admins can set up Exchange mail flow rules to monitor or block emails sent by Power Automate and/or Power Apps using the Microsoft 365 Outlook connector. The format of the SMTP header uses a reserved phrase ‘Microsoft Power Automate’ or 'Microsoft Power Apps.' It's inserted with the header type: ‘x-ms-mail-application.’ For example:
 
 ```
 **x-ms-mail-application: Microsoft Power Automate**; User-Agent: 
@@ -35,7 +34,7 @@ azure-logic-apps/1.0 (workflow afa0fb167803450aa650267e95d43287; version
 x-ms-mail-operation-type: Forward 
 ```
 
-To identify the operation ID, a reserved word, such as Forward, Reply or Send, gets inserted with the header type ‘x-ms-mail-operation-type’. For example:
+To identify the operation ID, a reserved word, such as Forward, Reply or Send, gets inserted with the header type ‘x-ms-mail-operation-type.’ For example:
 
 ```
 x-ms-mail-application: Microsoft Power Automate; User-Agent: 
@@ -44,12 +43,12 @@ azure-logic-apps/1.0 (workflow afa0fb167803450aa650267e95d43287; version
 **x-ms-mail-operation-type: Forward**
 ```
 
-Exchange admins can use these headers to set up exfiltration blocking rules in the Exchange admin center as shown in the example below. Here the ‘mail flow’ rule rejects outbound email messages with:  
+Exchange admins can use these headers to set up exfiltration blocking rules in the Exchange admin center as shown in the example here. Here the ‘mail flow’ rule rejects outbound email messages with:  
 
 - ‘x-ms-mail-application’ header set as ‘Microsoft Power Automate’ and
 - ‘x-ms-mail-operation-type’ header set as ‘Send’ or ‘Forward’  
 
-This is equivalent to the Exchange ‘mail flow’ rule set up for the message type equal to ‘auto-forward’.  This rules uses Outlook and Outlook for web clients. 
+This is equivalent to the Exchange ‘mail flow’ rule set up for the message type equal to ‘autoforward.’  This rule uses Outlook and Outlook for web clients. 
 
 :::image type="content" source="media/block-outbound-forwards80.png" alt-text="Block outbound forwards.":::
 

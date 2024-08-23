@@ -3,7 +3,7 @@ title: Administer Microsoft Power Platform
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 06/12/2024
+ms.date: 07/25/2024
 ms.author: sericks
 ---
 # Administer Microsoft Power Platform
@@ -21,6 +21,8 @@ Currently, the admin center provides the following capabilities.
 |Feature  |Description  |
 |---------|---------|
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. Learn more: [Manage environment settings](./admin-settings.md)|
+| Environment groups |  Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location. Learn more: [Environment groups](environment-groups.md) |
+| Advisor | Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. Learn more: [Use Power Platform Advisor](power-platform-advisor.md) |
 |Security | Run your organizational workloads in the safest way possible with a wide set of security features available. Learn more: [Manage security](security/security-posture-overview.md). |
 |Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. Learn more:: [Microsoft Dataverse analytics](./analytics-common-data-service.md)      |
 |Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. Learn more: [Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md)  |
