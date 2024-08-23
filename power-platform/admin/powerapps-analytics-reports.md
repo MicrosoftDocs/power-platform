@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 11/16/2022
 author: Zeffin
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -27,9 +27,6 @@ Power Apps reports provide insights into tenant and environment usage and invent
 - How many apps exist in my tenant or environment?
 - Which of my environments had the most unique users? 
 - What were the top apps by unique users/app sessions? 
-
-> [!div class="mx-imgBorder"] 
-> ![Power Apps usage report.](media/power-apps-usage.png "Power Apps usage report")
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take 24 to 36 hours to reflect service activities from the previous day.

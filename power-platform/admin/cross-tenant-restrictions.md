@@ -108,11 +108,7 @@ In the Power Platform admin center, tenant isolation is set with **Policies** > 
 > [!NOTE]
 > You must have a Power Platform administrator role to see and set the tenant isolation policy.
 
-:::image type="content" source="media/enable-tenant-isolation.png" alt-text="Enable tenant isolation.":::
-
 The tenant isolation allowlist can be configured by using **New tenant rule** on the **Tenant Isolation** page. If tenant isolation is **Off**, you can add or edit the rules in the list. However, these rules won't be enforced until you turn tenant isolation **On**. 
-
-:::image type="content" source="media/new-tenant-rule.png" alt-text="New tenant rule to add rule to the allow list.":::
 
 From the **New tenant rule Direction** dropdown list, choose the direction of the allowlist entry.
 
@@ -120,19 +116,11 @@ From the **New tenant rule Direction** dropdown list, choose the direction of th
 
 You can also enter the value of the allowed tenant as either tenant domain or tenant ID. Once saved, the entry gets added to the rule list along with other allowed tenants. If you use the tenant domain to add the allowlist entry, the Power Platform admin center automatically calculates the tenant ID. 
 
-:::image type="content" source="media/new-tenant-rule-select-tenant-domain-id.png" alt-text="Select tenant domain or tenant ID for the new tenant rule.":::
-
 Once the entry appears in the list, **Tenant ID** and **Microsoft Entra tenant name** fields are displayed. Note that in Microsoft Entra ID, tenant name is different from the tenant domain. The tenant name is unique for the tenant, but a tenant may have more than one domain name. 
-
-:::image type="content" source="media/new-tenant-rule-in-allow-list.png" alt-text="New tenant rule appears in allowlist.":::
 
 You can use "\*" as a special character to signify all tenants are allowed in the designated direction when tenant isolation is turned **On**. 
 
-:::image type="content" source="media/new-tenant-rule-all-tenants.png" alt-text="All tenants are allowed in the designated direction when tenant isolation is turned on.":::
-
 You can edit the direction of the tenant allowlist entry based on business requirements. Note that the **Tenant Domain or ID** field can't be edited in the **Edit tenant rule** page. 
-
-:::image type="content" source="media/edit-tenant-rule.png" alt-text="Edit a tenant rule.":::
 
 You can perform all the allowlist operations like add, edit, and delete while tenant isolation is turned **On** or **Off**. Allowlist entries do have an effect on the connection behavior when tenant isolation is turned **Off** since all cross-tenant connections are allowed. 
 
