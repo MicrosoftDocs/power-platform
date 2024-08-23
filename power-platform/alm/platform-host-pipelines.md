@@ -33,6 +33,9 @@ Pipelines are available to all who navigate to the pipelines page for the first 
 
 If you're the first user in your tenant to navigate to the **Pipelines** page in an environment not already associated with a custom pipelines host, the platform host is provisioned for everyone in the tenant to use.
 
+ > [!NOTE]
+  > The platform host is always created in the tenant's home geographical region. If you would like to create pipelines using the platform host that include environments not present in this geographical region, you must [enable cross-geo solution deployments](enable-cross-geo-solution-deployments.md) as a tenant administrator.
+
 ## Create a pipeline in Power Apps
 
 First, ensure that you are in the development environment where you want your pipeline to start.
