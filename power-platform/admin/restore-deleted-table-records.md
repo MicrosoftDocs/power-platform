@@ -92,7 +92,7 @@ Developers can run a [query that returns which tables are enabled for recycle bi
 
 ### Tables not currently supported for Recycle Bin
 
-These tables are returned from the query to [detect which tables don't have recycle bin enabled](/power-apps/developer/data-platform/restore-deleted-records#tables-not-currently-supported-for-recycle-bin) an un-customized Dataverse environment as of August 2024.
+These tables are returned from the query to [detect which tables don't have recycle bin enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) an un-customized Dataverse environment as of August 2024.
 
 Your environment may have different results. Tables customized by adding large numbers of columns may not be supported.
 
