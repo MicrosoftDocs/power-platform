@@ -62,4 +62,4 @@ Clicking on Power Apps Copilots or “Manage Settings” next to the governance 
 
 ## Content moderation 
 
-This section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../faqs-copilot-data-security-privacy#how-does-copilot-block-harmful-content.md)
+This section shows a count of queries that are blocked as part of Microsoft’s Responsible AI initiatives. For more information on content moderation, go to [How does Copilot block harmful content?](../faqs-copilot-data-security-privacy.md#how-does-copilot-block-harmful-content)
