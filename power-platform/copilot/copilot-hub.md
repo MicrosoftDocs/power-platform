@@ -36,7 +36,7 @@ The **What’s new** web part lists new Copilot features as they are introduced 
 
 The usage metrics in the **Usage** section show monthly active users for each Copilot feature. _Active_ usage is defined as a session or interaction with Copilot. 
 
-For more information on each feature, refer to the links below: 
+To learn more information on each feature, use the following links.
 
 ### Copilot Studio 
 
