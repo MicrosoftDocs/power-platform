@@ -1,5 +1,5 @@
 ---
-title: Copilot page (preview)
+title: Manage Copilot (preview)
 description: Learn more about the Copilot page, a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. 
 author: caitlinshaw1
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Copilot page (preview)
+# Managed Copilot (preview)
 
 [!INCLUDE [preview-baner](../../shared-content/shared/preview-includes/preview-banner.md)]
 
