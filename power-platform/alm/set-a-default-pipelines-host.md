@@ -4,7 +4,7 @@ description: Learn how to replace the platform host as your tenant's default pip
 author: asheehi1
 ms.author: matp
 ms.topic: how-to
-ms.date: 07/19/2024
+ms.date: 09/12/2024
 ms.custom: template-how-to
 ---
 # Set a default pipelines host instead of the platform host
