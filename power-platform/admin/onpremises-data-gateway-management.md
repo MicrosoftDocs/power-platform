@@ -164,13 +164,7 @@ As either a Microsoft Entra Global administrator (which includes Global admins) 
 
 4. Enable **Restrict Users in your organization from installing gateways**. This option is off by default, allowing anyone in your organization to install a gateway.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Enable restrict users.](media/manage-gateway-installers-turn-on.png "Enable restrict users")
-
 5. Add users who can install gateways, and then select **Add**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Add users.](media/manage-gateway-installers-add-users.png "Add users")
 
    > [!NOTE]
    > Currently, we do not support groups for Manage Installers; you can add individual users. 
