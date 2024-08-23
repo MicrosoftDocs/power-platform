@@ -88,6 +88,12 @@ From the **Pipelines** page within any solution, the **Manage pipelines** button
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
 
+## Frequently Asked Questions
+
+### When I navigate to "Manage pipelines", why am I receiving a privilege error when I am a System Administrator or why is it loading the app indefinitely?
+
+Sometimes, when another user authentication cookie is present in your browser, the embedded model-driven app experience can throw an error related to privileges to access the app. In this case, try **clearing your web browser's cookies** or **switching to an incognito window** in your web browser to ensure that your authorization token is the only one being considered.
+
 ## Next steps
 
 - [Run pipelines in Power Platform](run-pipeline.md)
