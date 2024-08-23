@@ -36,7 +36,7 @@ If you have configured the setting and are using a custom host as the replacemen
 1. From the left navigation pane, go to **Solutions**.
 1. Choose an unmanaged solution with Dataverse (e.g. "Common Data Services Default Solution") and click into it.
 1. In the left navigation pane, click **Pipelines**.
-1. Click "Go to platform host" in the command bar, and the platform host's Deployment Pipeline Configuration will open.
+1. Click **Manage platform host** in the command bar, and the platform host's Deployment Pipeline Configuration will open.
 
 ### Removing or replacing an existing default custom pipelines host
 When in the platform host's Deployment Pipeline Configuration experience, select **Advanced Settings** from the left navigation pane.
