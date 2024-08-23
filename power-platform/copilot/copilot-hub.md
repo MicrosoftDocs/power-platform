@@ -16,11 +16,13 @@ search.audienceType:
 
 [!INCLUDE [preview-baner](../../shared-content/shared/preview-includes/preview-banner.md)]
 
-The Copilot page [preview] is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
+The Copilot page (preview) is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
 
 ## Readiness 
 
-Resources and documents to help admins better understand and govern Copilots are available in the **Readiness** section. These documents are updated over time as new Copilot capabilities are released. The **What’s new** web part lists new Copilot features as they are introduced or promoted to general availability. 
+Resources and documents to help admins better understand and govern Copilots are available in the **Readiness** section. These documents are updated over time as new Copilot capabilities are released. 
+
+The **What’s new** web part lists new Copilot features as they are introduced or promoted to general availability. 
 
 > [!Note]
 > There may be a one to two week delay to updates made in the **What’s new** web part. The [Release plans](/dynamics365/release-plans/) and [Power Platform blogs](https://www.microsoft.com/power-platform/blog) are the best source to stay on top of new Copilot features. 
