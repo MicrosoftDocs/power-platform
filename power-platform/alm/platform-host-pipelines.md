@@ -92,7 +92,7 @@ The Deployment Pipeline Configuration app can be accessed by anyone with the Dep
 
 ### When I navigate to "Manage pipelines", why am I receiving a privilege error when I am a System Administrator or why is it loading the app indefinitely?
 
-Sometimes, when another user authentication cookie is present in your browser, the embedded model-driven app experience can throw an error related to privileges to access the app. In this case, try **clearing your web browser's cookies** or **switching to an incognito window** in your web browser to ensure that your authorization token is the only one being considered.
+Sometimes, when another user authentication cookie is present in your browser, the embedded model-driven app experience can throw an error related to privileges to access the app. In this case, try **clearing your web browser's cookies** or **switching to an InPrivate window** in your web browser to ensure that your authorization token is the only one being considered.
 
 ## Next steps
 
