@@ -4,6 +4,7 @@ description:  This guide walks you through setting up SAP and Azure API manageme
 author: scottwoodallmsft
 ms.author: scottwoodall
 ms.service: power-platform
+ms.subservice: connectors
 ms.topic: how-to
 ms.date: 08/23/2024
 ---
