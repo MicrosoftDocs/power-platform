@@ -1,6 +1,6 @@
 ---
-title: Publishing considerations for intelligent application workloads
-description: Publishing considerations for intelligent application workloads TODO
+title: Deployment and test considerations for intelligent application workloads
+description: Learn about key considerations for  deploying and testing your intelligent application workloads
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,17 +9,17 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Publishing considerations for intelligent application workloads
+# Deployment and test considerations for intelligent application workloads
 
 It’s key to have a healthy application lifecycle management (ALM) process to avoid production issues and catch and fix any regression early.
 
-## Determine Your ALM Strategy
+## Determine your ALM strategy
 
 Ensure that your development process is efficient and scalable by developing a comprehensive ALM strategy that includes version control, continuous integration/continuous deployment (CI/CD), and automated testing.
 
 Evaluate options from simple to advanced continuous integration & delivery (CI/CD)
 
-- Manual deployment of solutions
+- Manual deployment of solutions.
 - Automated deployment with user-friendly [pipelines in Power Platform](/power-platform/alm/pipelines) (no source control).
 - Automated deployment + source control with [Azure DevOps](/power-platform/alm/devops-build-tools) or [GitHub Power Platform](/power-platform/alm/devops-github-actions) tools.
 - Automated testing of the copilot as part of the deployment process.
@@ -89,7 +89,7 @@ The example provides an overview of the deployment strategy for your intelligent
 
 Understand your plans to validate that your copilots and integrations work as expected.
 
-Define your test strategy for intelligent application workloads. Use of the [Test Framework](https://aka.ms/PVASamples/PVATestFramework) to bulk test user utterances and validate that the appropriate topic triggers or that the first "did you mean" option is the correct one in 90% of the time.
+Define your test strategy for intelligent application workloads. Use the [Test Framework](https://aka.ms/PVASamples/PVATestFramework) to bulk test user utterances and validate that the appropriate topic triggers or that the first "did you mean" option is the correct one in 90% of the time.
 Integrations are tested as part the full end-to-end conversation testing with the Test Framework scale test capability.
 
 Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure copilots and tests. Run individual tests against the Copilot Studio APIs (Direct Line), and evaluate the copilot responses against expected results.

@@ -23,7 +23,7 @@ Understand the key requirements for the intelligent application workload you're 
 
 ### Access Control and Authentication
 
-- What access control and authentication mechanisms are implemented to ensure only authorized users can access the intelligent application workload?
+- How will you implement access control and authentication mechanisms to ensure only authorized users can access the intelligent application workload?
 - How do you ensure secure and seamless user authentication?
 - How do you control which apps can interact with the Copilot and what measures ensure these restrictions are effective?
  
@@ -64,7 +64,7 @@ Learn more:
 
 Identify and adhere to regulatory requirements and norms applicable to your industry, such as GDPR, HIPAA, or CCPA. Implement necessary controls to ensure compliance. Schedule regular compliance audits to verify adherence to regulatory standards and address any gaps. Assess if there are specific requirements for data location, such as data must be stored within a particular country or region. Ensure that your data storage strategy meets these requirements. 
 
-Ensuring that data is protected and managed in compliance with regulatory requirements. Protecting the data handled by the intelligent application workload is critical to maintaining trust and adhering to legal and regulatory standards – 
+Ensuring that data is protected and managed in compliance with regulatory requirements. Protecting the data handled by the intelligent application workload is critical to maintaining trust and adhering to legal and regulatory standards.
 
 Microsoft complies with data protection and privacy laws applicable to cloud services. Our compliance with world-class industry standards is verified. Environments can be created in specific regions, even if different from the region the tenant resides in. By default, conversation transcripts are only kept for 30 days in Dataverse. This can be updated on per-environment basis.
 

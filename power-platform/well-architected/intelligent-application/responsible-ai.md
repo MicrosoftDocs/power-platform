@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Responsible AI considerations for intelligent application workloads
 
-Implementing intelligent application workloads must adhere to responsible AI principles to ensure fairness, accountability, transparency, and ethical behavior. 
+Implementing intelligent application workloads must adhere to responsible AI principles to ensure fairness, accountability, transparency, and ethical behavior.
 
 Design the AI system to treat all users equitably, holding the developers and users accountable for its performance, ensuring transparency in AI operations and adhering to ethical standards.
 
@@ -56,7 +56,7 @@ Recognize the importance of addressing biases in the system and ensure fairness 
 - **Diverse and Representative Data**: Ensure that the training data is diverse and representative of different demographics to minimize inherent biases. Regularly audit the data for biases and imbalances, and take corrective actions as needed.
 - **Bias Detection and Mitigation Tools**: Use tools and techniques to detect biases in the AI models. This includes statistical analysis and fairness metrics. Implement debiasing techniques such as resampling, reweighting, or adversarial debiasing to reduce biases in the models.
 - **Human-in-the-Loop**: Incorporate human review and feedback loops to identify and correct biases that the AI might introduce. Establish an ethics committee or governance board to oversee AI development and deployment, ensuring ethical standards are met.
-- **Transparency and Explainability**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it's designed, and how it's monitored and updated.
+- **Transparency and Trust**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it's designed, and how it's monitored and updated.
 - **Continuous Monitoring and Improvement**: Continuously monitor the AI system for biases and performance issues, and update the models as needed. Ensure models remain fair and unbiased by regularly retraining models with updated and more diverse data.
 
 ## Ongoing monitoring and evaluation

@@ -1,6 +1,6 @@
 ---
 title: Understand integration options for intelligent application workloads
-description: Understand integration options for intelligent application workloads TODO
+description: Integration options for Microsoft Copilot Studio include Power Automate cloud flows, HTTP requests and connectors, and Bot Framework skills. Understand key considerations when evaluating integration options.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -49,11 +49,10 @@ Endpoint performance is a critical factor that directly impacts the user experie
 Ensure that responses are timely and efficient when you're designing logic for your intelligent application workload, especially when integrating with Power Automate. Here are the key considerations and strategies:
 
 - **Response Time Requirement**: Power Automate needs to respond to Copilot within 100 ms. This requirement necessitates highly optimized and efficient logic.
-- **Evaluating Execution Speed**: If the logic can't be executed quickly enough within Power Automate or Copilot Studio, or if it involves complex operations better suited to code, consider offloading this logic to other services.
-- **Alternative Solutions**: 
-  - **Dataverse Custom APIs** are custom endpoints that can be created within Dataverse to handle specific logic. They have a 2-minute timeout limit, providing more time for more complex operations. Custom APIs can be invoked via connectors or HTTP requests, offering flexibility in integration.
-  - **Dataverse Low-Code Plug-ins** are similar to custom APIs but can be created with minimal coding. They also have a 2-minute timeout limit and can be invoked similarly. 
-  - **Azure Functions** are serverless functions that can execute code in response to events. They offer high scalability and can handle more complex logic efficiently. Azure Functions can be triggered via HTTP requests, making them easy to integrate with Power Automate and Copilot Studio.
+- **Evaluating Execution Speed**: If the logic can't be executed quickly enough within Power Automate or Copilot Studio, or if it involves complex operations better suited to code, consider offloading this logic to other services:
+  - **[Dataverse custom APIs](/power-apps/developer/data-platform/custom-api)** are custom endpoints that can be created within Dataverse to handle specific logic. They have a 2-minute timeout limit, providing more time for more complex operations. Custom APIs can be invoked via connectors or HTTP requests, offering flexibility in integration.
+  - **[Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)** are similar to custom APIs but can be created with minimal coding. They also have a 2-minute timeout limit and can be invoked similarly. 
+  - **[Azure functions](/azure/azure-functions/)** are serverless functions that can execute code in response to events. They offer high scalability and can handle more complex logic efficiently. Azure Functions can be triggered via HTTP requests, making them easy to integrate with Power Automate and Copilot Studio.
 
 ## Middle Layer Integration
 
@@ -61,7 +60,7 @@ Middle Layer Integration is a strategic approach that can significantly enhance 
 
 - **Data Enrichment**: Enhance the quality and value of the data before it reaches your workload by integrating external data sources or applying business logic to add context or additional information to the data. Performing data enrichment can help provide more comprehensive and insightful data for processing, leading to better decision-making and user interactions.
 
-- **Data Masking**: Protect sensitive information by obfuscating or anonymizing data by applying masking techniques to sensitive fields such as personal identifiers, financial information, or proprietary data. Data masking can help enhance data security and privacy, ensuring compliance with regulations like GDPR or HIPAA.
+- **Data Masking**: Protect sensitive information by obfuscating or anonymizing data. Apply masking techniques to sensitive fields such as personal identifiers, financial information, or proprietary data. Data masking can help enhance data security and privacy, ensuring compliance with regulations like GDPR or HIPAA.
 
 - **Message Transformation**: Modify the structure or format of messages by using transformation logic to convert data formats, normalize data, or aggregate information. Message transformation can help ensure compatibility and consistency of data, reducing errors and improving processing efficiency.
 
@@ -80,15 +79,10 @@ Integration patterns aren't exclusive and can be combined. Evaluate the integrat
 
 ## Power Automate and HTTP/Connector integrations
 
-When integrating Power Automate and HTTP/connectors with Copilot Studio for an intelligent application workload, several key considerations are essential. Power Automate offers extensive integration capabilities with over 1,000 native connectors and options to create custom connectors to your APIs. For a good end-user experience, ensure that cloud flows triggered from Copilot Studio execute quickly, as they have a maximum of 100 seconds to return a response before timing out. To optimize performance, consider making HTTP requests or using connectors directly from Copilot Studio, bypassing cloud flows when possible. Optimize your cloud flows and HTTP/connector requests by filtering results to only return necessary data. Additionally, handle cloud flow timeouts by implementing parallel branches that return results within the 100-second limit, ensuring a graceful handling of timeouts on the copilot side. These strategies help maintain efficient and responsive interactions in your intelligent application workload.
+When [integrating Power Automate](/microsoft-copilot-studio/advanced-use-flow) and HTTP/connectors with Copilot Studio for an intelligent application workload, several key considerations are essential. 
 
-## See also
+Power Automate offers extensive integration capabilities with over 1,000 native connectors and options to create custom connectors to your APIs. 
 
-- [Call a cloud flow as an action](/microsoft-copilot-studio/advanced-use-flow)
-- [Perform HTTP requests](/microsoft-copilot-studio/authoring-http-node)
-- [Use connectors](/microsoft-copilot-studio/advanced-connectors)
-- [Use plugin actions](/microsoft-copilot-studio/advanced-plugin-actions)
-- [Use Bot Framework skills](/microsoft-copilot-studio/advanced-use-skills)
-- [Dataverse custom APIs](/power-apps/developer/data-platform/custom-api)
-- [Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant)
-- [Azure functions](/azure/azure-functions/)
+For a good end-user experience, ensure that cloud flows triggered from Copilot Studio execute quickly, as they have a maximum of 100 seconds to return a response before timing out. To optimize performance, consider [making HTTP requests](/microsoft-copilot-studio/authoring-http-node) or [using connectors directly](/microsoft-copilot-studio/advanced-connectors) from Copilot Studio, bypassing cloud flows when possible. Optimize your cloud flows and HTTP/connector requests by filtering results to only return necessary data. Additionally, handle cloud flow timeouts by implementing parallel branches that return results within the 100-second limit, ensuring a graceful handling of timeouts on the copilot side. 
+
+These strategies help maintain efficient and responsive interactions in your intelligent application workload.

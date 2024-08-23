@@ -1,6 +1,6 @@
 ---
 title: Optimize performance for intelligent application workloads
-description: Performance monitoring considerations for intelligent application workloads TODO
+description: Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users. Learn how to optimize performance for intelligent application workloads.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users. Monitoring the performance of your intelligent application workload is crucial to ensuring it operates effectively and efficiently.
 
-The workload team need to establish key performance metrics, regularly review system performance, and diagnose any issues promptly. Effective monitoring and diagnostic procedures help maintain system reliability and user satisfaction. 
+The workload team need to establish key performance metrics, regularly review system performance, and diagnose any issues promptly. Effective monitoring and diagnostic procedures help maintain system reliability and user satisfaction.
 
 ## Define performance targets
 
@@ -27,7 +27,7 @@ When you identify key metrics to focus on, consider metrics related to availabil
 
 - _Deflection rate:_ In the context of conversational AI, deflection is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
 
-- _Engagement and outcomes_: Tracking conversation engagement and outcomes is crucial to measure the copilot performance metrics and identify areas for improvements in the analytics dashboard. Learn more: [Measure copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measure copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes)
+- _Engagement and outcomes_: Tracking conversation engagement and outcomes is important to measure the copilot performance metrics and identify areas for improvements in the analytics dashboard. Learn more: [Measure copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measure copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes)
 
 ## Performance planning
 
@@ -43,9 +43,9 @@ Learn more: [Recommendations for performance planning](../performance-efficiency
 
 Performance optimization requires data to measure the current performance of a workload or a flow against its performance targets. You need to collect the right amount and diversity of data to measure the performance of the code and the infrastructure against performance targets. Ensure that every component and flow within the workload automatically generates continuous and meaningful metrics and logs.
 
-Monitoring the performance of your intelligent application workload is crucial to ensuring it operates effectively and efficiently. 
+Monitoring the performance of your intelligent application workload is important to ensure it operates effectively and efficiently. 
 
-Copilot Studio provides comprehensive out-of-the-box analytics that allow you to understand a copilot's usage and key performance indicators.
+Copilot Studio provides comprehensive [out-of-the-box analytics](/microsoft-copilot-studio/analytics-overview) that allow you to understand a copilot's usage and key performance indicators.
 
 Customers can view reports related to:
 
@@ -59,10 +59,10 @@ In addition to the native analytics features within Copilot Studio, you can send
 
 Define the key performance indicators (KPIs) that you'll monitor to measure your intelligent application workloads success - for example, the engagement rate, resolution rate, and deflection rate. Start by assessing the native dashboards, and then evaluate if developing a custom report would better meet your requirements.
 
-Learn more: 
+Learn more:
 
 - [Custom analytics strategy](/microsoft-copilot-studio/guidance/custom-analytics-strategy) 
-- Learn more: [Recommendations for collecting performance data](../performance-efficiency/collect-performance-data.md)
+- [Recommendations for collecting performance data](../performance-efficiency/collect-performance-data.md)
 
 ## Continuous performance optimization
 

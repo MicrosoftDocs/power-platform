@@ -11,18 +11,20 @@ ms.topic: conceptual
 
 # Overview of intelligent application workloads
 
-This article provides Well-Architected Framework best practices for an intelligent application workloads. Application owners, Power Platform administrators, business stakeholders, and architects can use this guidance to create a technical foundation for their intelligent application workloads.
+This documentation provides actionable guidance for planning, developing and maintaining intelligent application workloads with Power Platform. The guidance has a technical foundation in Power Platform Well-Architected Framework best practices and is also informed by learnings from numerous customer deployments.
+
+This guidance is intended for workload owners, technical stakeholders, and business stakeholders. It's appropriate for people who play an integral role designing, building, and maintaining an intelligent application workload.
 
 >[!TIP]
 >To assess your workload through the lenses of reliability, security, operational excellence, performance efficiency, and experience optimization see the [Power Platform Well-Architected Assessment](https://aka.ms/powa/assessment).
 
 ## What is an intelligent application workload?
 
-The term _workload_ is used to describe a set of application resources, data, and supporting infrastructure that work together to deliver desired business outcomes. A workload comprises application and technology components as well as behavioral, development, and operational processes.
-
-Generative AI is an artificial intelligence technology that uses large language models (LLMs) to generate original content and provide natural language understanding and responses. For details, see Technology guidance > [Generative AI](/ai/playbook/technology-guidance/generative-ai/).
+The term _workload_ is used to describe a set of application resources, data, and supporting infrastructure and processes that work together to deliver desired business outcomes. A workload comprises application and technology components as well as behavioral, development, and operational processes.
 
 An intelligent application workload built on Power Platform leverages the capabilities of Microsoft’s Power Platform to integrate and utilize generative AI models for automating and enhancing business processes.
+
+Generative AI is an artificial intelligence technology that uses large language models (LLMs) to generate original content and provide natural language understanding and responses. For details, see Technology guidance > [Generative AI](/ai/playbook/technology-guidance/generative-ai/).
 
 ## What are the common challenges?
 
@@ -32,7 +34,6 @@ Developing an intelligent application workload built on Power Platform can be co
 - **Integration with existing systems**: Seamlessly integrating generative AI with existing IT infrastructure and business processes can be resource-intensive and technically challenging.
 - **Ethical and compliance issues**: Addressing ethical concerns and ensuring compliance with legal and regulatory standards is crucial. This includes managing data privacy, avoiding biases in AI models, and maintaining transparency.
 - **Skills and expertise**: Developing and managing generative AI solutions requires specialized skills. Organizations often need to invest in training their workforce or hiring new talent with the necessary expertise.
-- **Cultural resistance and change management**: Employees may resist adopting new AI technologies due to fears of job displacement or changes in established workflows. Effective change management strategies are essential to ease this transition.
 - **Cost and resource allocation**: Implementing generative AI can be costly. Organizations need to carefully manage their resources and often start with small, high-impact pilot projects to demonstrate value before scaling up.
 - **Security concerns**: Ensuring the security of AI systems and protecting sensitive data from breaches is a critical challenge. This includes safeguarding against potential vulnerabilities in AI models and infrastructure.
 - **User Interface design**: Creating intuitive and user-friendly interfaces that effectively leverage AI capabilities without overwhelming users can be difficult.
@@ -41,25 +42,25 @@ Addressing these challenges requires thorough planning, collaboration across dif
 
 ### The Well-Architected Framework approach
 
-We recommend that you structure your well-architected workload to meet specific reliability, security, operational excellence, performance efficiency, and experience optimization objectives. To enhance user experiences and deliver consistency and reliability, follow architectural principles and guidelines that are specific to Generative AI Power Platform workloads.
+We recommend that you structure your well-architected workload to meet specific reliability, security, operational excellence, performance efficiency, and experience optimization objectives. To enhance user experiences and deliver consistency and reliability, follow architectural principles and guidelines that are specific to intelligent application workloads.
 
 The Well-Architected Framework pillars help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create workloads without unnecessary complexities and unforeseen costs.
 
-Use the Well-Architected Framework pillars to improve your Generative AI Power Platform workload in the following ways:
+Use the Well-Architected Framework pillars to improve your intelligent application workload in the following ways:
 
-- **Reliability**: An intelligent application workload requires resiliency at the architecture layer to ensure the AI models and workflows are highly available and can recover quickly from failures. This involves building redundancy and implementing robust error-handling mechanisms. Resiliency at the architecture layer also maintains the integrity of data used by AI models to ensure consistent and accurate outputs.
+- **Reliability**: An intelligent application workload requires resiliency at the architecture layer to ensure the AI models and workflows are highly available and can recover quickly from failures. This involves implementing robust error-handling mechanisms. Resiliency at the architecture layer also maintains the integrity of data used by AI models to ensure consistent and accurate outputs.
 
-- **Security**: An intelligent application workload might handle sensitive data. Safeguard sensitive data used and generated by AI models. Implement encryption, access controls, and regular security audits. Ensure the workload complies with relevant regulation standards, such as GDPR or HIPAA, to protect user privacy and data.
+- **Security**: An intelligent application workload might handle sensitive data. Safeguard sensitive data used and generated by AI models by implementing access controls, and regular security audits. Ensure the workload complies with relevant regulation standards, such as GDPR or HIPAA, to protect user privacy and data.
 
-- **Operational Excellence**: An intelligent application workload requires comprehensive monitoring and logging to track the performance and health of AI models, workflows and conversations. This helps in quickly identifying and resolving issues. Operational Excellence also recommends how to use automation to streamline operations, reduce manual intervention, and minimize the risk of human error. Ensure that your intelligent application workload meets operational excellence standards. 
+- **Operational Excellence**: An intelligent application workload requires comprehensive monitoring and logging to track the performance and health of AI models, workflows and conversations. This helps in quickly identifying and resolving issues. Operational Excellence also recommends how to use automation to streamline operations, reduce manual intervention, and minimize the risk of human error.
 
-- **Performance Efficiency**: An intelligent application workload needs to be designed to scale seamlessly with increasing data volumes and user demands. You must also manage costs. 
+- **Performance Efficiency**: An intelligent application workload needs to be designed to scale seamlessly with increasing data volumes and user demands. Identify key performance metrics and implement monitoring to track the progress towards achieving workload performance goals. In the context of intelligent application workloads, performance also refers to the amount of requests and interactions that can be completed in a self-service fashion that would otherwise be handled by a human.
 
 - **Experience Optimization**: An intelligent application workload needs to have a focus on conversation design to be user-friendly and allow users to achieve their goals with minimal effort. The experience should account for topics the generative AI can't handle and have fallback mechanisms in place. Also implement mechanisms to gather user feedback and continuously improve the AI models and workload based on this feedback. 
 
 ## Assess technical and operational feasibility
 
-Before you start developing your intelligent application with Power Platform assess technical and operational feasibility and identify risks and mitigation strategies.
+Before you start developing your intelligent application workload with Power Platform assess technical and operational feasibility and identify risks and mitigation strategies.
 
 You may also want to consider updating current workloads to use Generative AI capabilities - for example, when these capabilities can meet business needs at reduced costs. Consider modernizing based on the purpose of the application, life expectancy, supportability, cost, and service-level agreements (SLAs).
 
@@ -81,29 +82,29 @@ High quality data ensures consistency and accuracy for the intelligent applicati
 Straightforward integration facilitates real-time data access and updates for the intelligent application workload. As part of your feasibility assessment, consider the following:
 
 - **Existing Infrastructure**: Assess the compatibility of generative AI models with your current infrastructure. Assess if robust APIs are available for easy integration.
-- **Integration Points**: Identify how Generative AI will integrate with the required data sources. Assess if connectors or APIs are available
+- **Integration Points**: Identify how your intelligent application workload will integrate with the required data sources. Assess if connectors or APIs are available
 
 #### Technical complexity challenges
 
 Accurate responses rely on a well-architected intelligent application workload. As part of your feasibility assessment, consider the following:
 
-- **Crafting Effective Prompts**: Design precise and contextually relevant prompts helps guide the AI to produce accurate and relevant responses.
+- **Crafting Effective Prompts**: Design precise and contextually relevant prompts to help guide the AI to produce accurate responses.
 - **Regular Evaluation**: Implement continuous monitoring and testing of AI outputs to assess accuracy, relevance, and ethical adherence.
-- **Feedback Loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
+- **Feedback Loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models. Microsoft Copilot Studio provides [customer satisfaction analytics](/microsoft-copilot-studio/analytics-csat) that provide actionable insights on drivers of satisfaction or dissatisfaction with your copilot's responses.
 - **Domain-Specific Training**: Fine-tune models on domain-specific data to enhance their accuracy in specific contexts.
 - **Regular Updates**: Periodically update models with new data to maintain their relevance and accuracy.
-- **Performance Metrics:** Establish clear performance metrics to evaluate the success and accuracy of AI responses
+- **Performance Metrics:** Establish clear performance metrics to evaluate the success and accuracy of AI responses.
 
 ### Operational feasibility
 
 #### Resource availability
 
-The success of your intelligent application workload depends on a the availability of a dedicated budget and team resources, supported by an AI-focused CoE. Consider the following: 
+The success of your intelligent application workload depends on a the availability of a dedicated budget and team resources, supported by an AI-focused Center of Excellence (CoE). Consider the following:
 
 - **Skill Assessment**: Assess the skills of your team members to identify any gaps that need to be filled through training or hiring.
 - **Role Allocation**: Clearly define roles and responsibilities to ensure that each team member knows their tasks and how they contribute to the overall project.
 - **Training and Development**: Invest in continuous training and development to keep the team updated with the latest AI technologies and methodologies.
-- **Cost Estimation**: Begin with a detailed cost estimation that includes hardware, software, cloud services, and personnel costs1. This helps in setting a realistic budget.
+- **Cost Estimation**: Begin with a detailed cost estimation that includes license cost, software and cloud services cost, and personnel costs. This helps in setting a realistic budget.
 
 #### User adoption
 
@@ -112,7 +113,7 @@ The success of your intelligent application workload depends on users being comf
 - **User-Centric Design**: Design the system to be intuitive and user-friendly. Complex interfaces can deter users, so simplicity and clarity are crucial. Ensure the system is accessible to all users.
 - **Training**: Facilitate comprehensive training sessions and ongoing support.
 - **Feedback Loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
-- **Transparency and Trust**: Make the AI’s decision-making process transparent. Users are more likely to trust the system if they understand how it works and why it makes certain decisions.
+- **Transparency and Trust**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it's designed, and how it's monitored and updated.
 - **Change Management**: Align the change with the organization’s culture and values. This can help in gaining broader acceptance and support. 
 
 ### Risks and mitigations
