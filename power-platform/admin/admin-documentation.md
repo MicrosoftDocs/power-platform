@@ -32,7 +32,7 @@ Currently, the admin center provides the following capabilities.
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support. Learn more in [Get Help + Support](./get-help-support.md).<br/><br/>**Note**: Although, you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.  |
 |Data integration| Learn more in [Integrate data into Dataverse](data-integrator.md). |
 |Data| Manage your cloud and data gateway connections. Learn more in [Set up data transfer between on-premises data and cloud services](onpremises-data-gateway-management.md). |
-|Policies     | View and manage various policies for your tenant and environments. Learn more:<br/>- [Manage data policies](prevent-data-loss.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
+|Policies     | View and manage various policies for your tenant and environments. Learn more in the following articles:<br/>- [Manage data policies](prevent-data-loss.md)<br/>- [Tenant isolation policy](cross-tenant-restrictions.md)<br/>- [Customer Lockbox policy](about-lockbox.md)<br/>- [Enterprise policies](customer-managed-key.md)<br/>- [Billing policies](pay-as-you-go-overview.md)|
 
 ## Dashboard overview for home page
 
