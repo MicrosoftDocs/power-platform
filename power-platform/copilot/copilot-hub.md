@@ -4,7 +4,7 @@ description: Learn more about the Copilot page, a centralized location in the Po
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2024
+ms.date: 08/26/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -65,7 +65,7 @@ The **Governance** section displays the percentage of environments in your tenan
 Selecting the Power Apps Copilots or **Manage Settings** next to the governance header opens the settings panel where you can modify tenant and environment-level Copilot settings. Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
 
 > [!Note]
-> There may be a delay of up to eight hours for data refresh of usage insights and select settings enablement statuses.
+> There may be a delay of up to eight hours for data refresh.
 
 ## Content moderation 
 
