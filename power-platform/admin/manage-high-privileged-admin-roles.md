@@ -85,8 +85,6 @@ In this PowerShell script, you:
 
 1. Get your **Environment ID** from the **Environments** tab of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
 
-   :::image type="content" source="media/manage-high-privileged-admin-roles/get-env-id.png" alt-text="Screenshot that shows where you can get your environment ID.":::
-
 1. Add your unique `<environment id>` to the script.
 
 ##### Run the script

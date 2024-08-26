@@ -81,8 +81,6 @@ Update the website record after the site has been deployed to your downstream en
 
 1. Select **Save**.
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Update-Bindings.png" alt-text="Screenshot of updating the details of a Power Pages website in the Power Platform admin center.":::<!-- EDITOR'S NOTE: Please crop and highlight the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
-
 ## Clear the configuration cache
 
 If your changes aren't reflected on the website after deployment, clear the configuration cache. You can clear the cache in a couple of ways.
@@ -106,8 +104,6 @@ Site administrators can use this method. It requires more setup and planning but
 1. In your web browser, navigate to the **{site URL}/_services/about** page.
 
 1. Select **Clear cache**.
-
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png" alt-text="Screenshot of the Portal Details page, with the Clear cache option highlighted.":::
 
 1. Refresh the website in your browser to see the changes.
 
