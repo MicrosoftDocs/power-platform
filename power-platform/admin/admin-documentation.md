@@ -3,7 +3,7 @@ title: Administer Microsoft Power Platform
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 07/25/2024
+ms.date: 08/26/2024
 ms.author: sericks
 ---
 # Administer Microsoft Power Platform
@@ -27,6 +27,7 @@ Currently, the admin center provides the following capabilities.
 |Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. Learn more:: [Microsoft Dataverse analytics](./analytics-common-data-service.md)      |
 |Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. Learn more: [Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md)  |
 |Settings  |  Manage settings for all environments in your tenant. Learn more: [Tenant settings](tenant-settings.md)  |
+| Copilot | Access educational resources, track usage, and access governance controls about Copilot features.
 |Resources  |  View and manage resources in your tenant and environments. Learn more: [View and manage resources](view-manage-resources.md)  |
 |Help + support     | Get a list of self-help solutions or create a support ticket for technical support. Learn more: [Get Help + Support](./get-help-support.md)<br/><br/>**Note**: Although, you administer Power BI using the Power BI admin portal, you request support for Power BI through Help + support in the Power Platform admin center.       |
 |Data integration| Learn more: [Integrate data into Dataverse](data-integrator.md) |
