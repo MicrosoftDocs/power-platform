@@ -69,7 +69,7 @@ It's important to have a cohesive environment and data policy and to ensure requ
 
 ## Step 2: Create connections
 
-Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up three new connections for the Expense Reimbursement app.
+Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up six new connections for the SAP Setup Assistant app.
 
 It's best to create the connections before you import the solution. If you create the connections during import, you have to jump back and forth between browser windows.
 
@@ -77,8 +77,11 @@ It's best to create the connections before you import the solution. If you creat
 1. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
 
     - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-    - [Office 365 Outlook connector](/connectors/office365/)
-    - [Teams](/connectors/teams/)
+    - [Office 365 Users connector](/connectors/office365users/)
+    - [Power Apps for Makers connector](/connectors/powerappsforappmakers/)
+    - [Power Automate Management](/connectors/flowmanagement/)
+    - [Power Platform for Admins connector](/connectors/powerplatformforadmins/)
+    - [Power Query Dataflows connector](/connectors/dataflows/)
 
   [Learn how to manage connections in canvas apps.](/power-apps/maker/canvas-apps/add-manage-connections)
 
@@ -98,20 +101,41 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 1. Go to the [SAP Setup Assistant on AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>) and select **Get it now**.
 
-1. In the **Install SAP Setup Assistant** window in the [Power Platform admin center,](https://admin.powerplatform.microsoft.com/) select the developer environment that you prepared in the [review prerequisites step.](#step-1-review-prerequisites)
+2. In the **Install SAP Setup Assistant** window in the [Power Platform admin center,](https://admin.powerplatform.microsoft.com/) select the developer environment that you prepared in the [review prerequisites step.](#step-1-review-prerequisites)
 
-1. Agree to the *Terms and Privacy* statements when prompted.
+3. Agree to the *Terms and Privacy* statements when prompted.
 
-1. Select **Install**. One [solutions](/power-platform/alm/solution-concepts-alm) are installed in your environment:
+4. Select **Install**. One [solutions](/power-platform/alm/solution-concepts-alm) are installed in your environment:
 
     - **SAP Setup Assistant**
 
     Go to the [SAP Setup Assistant overview article](./overview.md) to learn more about the solution.
 
-### Next step
+### Step 4: Update Connection References
 
-# Use the SAP Setup Assistant
+There are six connection references imported as part of the solution. Inorder for the flows to run , you need to update the each connection reference with the connections created in the previous steps.
 
-**SAP Setup Assistant** app is part of the SAP Setup Assistant solution:
+1. Go to the **Default Solution** in your environment.
+2. Select **Connection References** from the list of the Objects in the left tab
+3. Select Each Connection References from the list and update the Connection:
+   - Power Query Dataflows mpa_SAPTemplateInstallerDropDownValues-39423
+   - Template Installer Dataverse
+   - Template Installer Office 365 Users
+   - Template Power Apps for Makers
+   - Template Power Automate Management
+   - Template Power Platform for Admins
+
+### Step 5: Turn on cloud flows
+Open the newly installed SAP Setup Assistant and verify that the eight cloud flows are set to the on status.If they aren't turn them on
+
+1. Selection **Solutions** on the left pan
+2. Select the **SAP Setup Assistant** from managed solutions list
+3. Select **Cloud flows(8)** on the left pan
+4. Select each of the eight flows in the list to verify that each one is turned on
+5. Select **Turn on** on the command bar if the flow is not already set to on.
+   
+### Step 6 : Use the SAP Setup Assistant
+
+**SAP Setup Assistant** is the canvas app, installed as part of the SAP Setup Assistant solution:
 
 Once the install and setup steps are complete, the app is ready to share and use.
