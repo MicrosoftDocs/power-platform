@@ -1,12 +1,11 @@
 ---
 title: Install and set up the Checklist template
 description: Learn how to install, set up, and deploy the Checklist template for Microsoft Power Platform.
-author: tverhasselt
 author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 07/030/2024
+ms.date: 08/26/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

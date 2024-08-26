@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/11/2024
+ms.date: 08/26/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -91,4 +91,3 @@ As an administrator, you will often need to review steps. Take these steps:
 ### See also
 
 [Manage the Checklist app](manage.md)
-
