@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Managed Copilot (preview)
+# Manage Copilot (preview)
 
 [!INCLUDE [preview-baner](../../shared-content/shared/preview-includes/preview-banner.md)]
 
