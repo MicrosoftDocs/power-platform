@@ -49,8 +49,6 @@ The admin doesn't need to be a licensed user. Environment admins gain access to 
 1. Select the **Overview** tab.
 
 1. Select **Enable** to redirect to the **Analytics** pane.
-
-    :::image type="content" source="media/analytics-overview-tab-enble.png" alt-text="Select Enable on the Overview tab.":::
   
     You may also select the **Settings** icon in the upper-right corner of the site, and then select **Power Platform settings**. 
 
