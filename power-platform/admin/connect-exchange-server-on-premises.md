@@ -70,6 +70,7 @@ For more information about authentication, go to:
 6. For **Authentication Type**, choose one of the following:
 
     - **Credential specified in email server profile**: The credentials specified in the email server profile are used for sending or receiving email for the mailboxes of all users and queues associated with this profile. The credentials must have impersonation or delegation permissions on the mailboxes associated with the profile. This option requires some configuration on the email server, for example configuring impersonation rights on Exchange for the mailboxes associated with the profile.
+
       > [!NOTE]
       > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
     
