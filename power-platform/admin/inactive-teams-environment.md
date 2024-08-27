@@ -75,7 +75,6 @@ The following table describes the schedule of notifications and actions for Data
 > The **Environment inactive** warning tile only displays if the Dataverse for Teams environment is <= 7 days until disablement.
 
 <sup>3</sup>**Disabled environment alert on the Environment page in Power Platform admin center**
-:::image type="content" source="media/disabled-environment-state-box.png" alt-text="Screenshot of the disabled environment alert on the Environment page, with the Re-enable environment checkbox highlighted.":::
 
 > [!NOTE]
 > The **Environment disabled** tile displays anytime a Dataverse for Teams environment is disabled due to inactivity.

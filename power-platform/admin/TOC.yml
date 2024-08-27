@@ -466,6 +466,8 @@
               href: security/overview.md
             - name: Manage security
               href: security/security-posture-overview.md
+            - name: Manage Copilot (preview)
+              href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
               - name: Managed identity overview (preveiw)
@@ -556,6 +558,8 @@
                       href: enable-disable-security-field.md
                     - name: Add teams or users to column security profile
                       href: add-teams-users-field-security-profile.md
+                    - name: Create and manage masking rules (preview)
+                      href: create-manage-masking-rules.md
                 - name: Configure teams and team templates
                   items:
                     - name: Manage teams
