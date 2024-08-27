@@ -126,9 +126,7 @@ To view and edit a user's profile in the Power Platform admin center:
 1. Select an environment and go to **Settings** > **Users + permissions** > **Users**.
 2. Select a user in the list.
 
-On the user profile page you can view and make changes to important user profile information such as Security Roles, Team membership, Business Unit, Manager, Position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Microsoft Entra ID. 
-
-:::image type="content" source="media/edit-user-profile.png" alt-text="Edit a user's profile.":::
+On the user profile page you can view and make changes to important user profile information such as security roles, team membership, business unit, manager, position, and more. You can also **Run diagnostics** to troubleshoot access issues or **Refresh User** to re-sync from Microsoft Entra ID. 
 
 ## Add a license to a user account
 
