@@ -48,11 +48,11 @@ The SAP Setup Assistan template is available in [Microsoft AppSource](<https://a
 - Eight Cloud flows
 - Six Connection references
   - **Template Installer Dataverse**
-  - **Template Installer Office 365 Outlook**
   - **Template Installer Office 365 Users**
   - **Template Power Apps for Makers**
   - **Template Power Automate Management**
   - **Template Power Platform for Admins**
+  - **Power Query Dataflows**
 - One security role
   - **Template Installer**
 - Thirteen Dataverse Tables
