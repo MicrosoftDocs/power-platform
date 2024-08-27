@@ -45,9 +45,6 @@ Follow the steps below to configure HMA for Exchange (on-premises).
 
 2. Select **Generate/Import**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing Generate/Import selected.](media/azure-key-vault-generate-import[1].png "Select Generate/Import")
-
 3. At this point, a certificate can be either generated or imported. Specify a certificate name, and then select **Create**. 
 
 The certificate name is used later to reference the certificate. In this example, the certificate is named **HMA-Cert**. 
@@ -92,9 +89,6 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 
 2. Select **API Permissions** > **Add a permission**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of adding API permissions to the app.](media/azure-key-vault-api-permissions[1].png "Add API permissions to the app")
-
 3. Select **APIs my organization uses**.
 
 4. Enter **Office 365 Exchange Online**, and select it.
@@ -112,10 +106,6 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 
 7. Select **Grant admin consent**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of granting admin access to API permission for the app.](media/azure-key-vault-api-permissions-grant-admin-access[1].png "Grant admin access to API permission for the app")
-
-
 ## Email server profile with authentication type Exchange Hybrid Modern Auth (HMA)
 
 Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 by using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure portal:
@@ -128,6 +118,3 @@ Before you [create an email server profile](connect-exchange-server-on-premises.
 - Key Vault KeyName: The certificate name used in Key Vault. 
 - KeyVault Application Id: The app ID of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
 - KeyVault Client Secret: The client secret for the KV-App used by Dynamics 365. 
-
-  > [!div class="mx-imgBorder"] 
-  > ![Screenshot of Exchange Hybrid Modern Auth (HMA) email server profile.](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")
