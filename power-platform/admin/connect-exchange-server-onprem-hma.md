@@ -112,10 +112,6 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 
 7. Select **Grant admin consent**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of granting admin access to API permission for the app.](media/azure-key-vault-api-permissions-grant-admin-access[1].png "Grant admin access to API permission for the app")
-
-
 ## Email server profile with authentication type Exchange Hybrid Modern Auth (HMA)
 
 Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 by using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure portal:
