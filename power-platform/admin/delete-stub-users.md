@@ -7,13 +7,12 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 08/05/2024
+ms.date: 08/27/2024
 search.audienceType: 
   - admin
 ---
 
 # Delete stub users from an environment 
-[This article is prerelease documentation and is subject to change.]
 
 Stub user records are created as placeholder records in the user table. They're created to allow records to be imported from external systems during migration of those applications. Stub user records are created with a _disabled_ status and assigned with a security role. These users can’t log into the Dataverse environment. For more information, see [How stub users are created](create-users.md#how-stub-users-are-created). You can delete these stub users from the user table.
 
