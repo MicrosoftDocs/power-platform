@@ -128,8 +128,7 @@
               "$ref": "#/definitions/ErrorMessage"
             }
           }
-        },
-        "x-codegen-request-body-name": "NewWebsiteRequest"
+        }
       }
     },
     "/powerpages/environments/{environmentId}/websites/{id}": {
@@ -138,7 +137,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website id",
+        "description": "Get website details from Website Id",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -384,8 +383,7 @@
             "schema": {
               "$ref": "#/definitions/ErrorMessage"
             }
-          },
-          "x-codegen-request-body-name": "PortalDataModelDto"
+          }
         }
       }
     },

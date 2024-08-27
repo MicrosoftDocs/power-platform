@@ -1,22 +1,21 @@
 ---
-title: "Assign security roles | MicrosoftDocs"
-description: About assigning security roles to a user.
-author: sericks007
+title: Assign security roles 
+description: Learn about assigning security roles to a user.
+author: paulliew
 ms.reviewer: sericks
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 08/07/2024
 search.audienceType: 
   - admin
-contributors:
-- paulliew
+
 ---
 # Assign a security role to a user  
 
-**About security roles**
+Consider the following information about security roles:
 
  - Security roles control a user's access to data through a set of access levels and permissions. The combination of access levels and permissions that are included in a specific security role sets limits on the user's view of data and on the user's interactions with that data.  
  - Dataverse provide a default set of security roles. If necessary for your organization, you can create new security roles by editing one of the default security roles and then saving it under a new name. See [Predefined security roles](database-security.md#predefined-security-roles).
@@ -45,11 +44,7 @@ Follow these steps to assign a security role.
 
 5. On the **Users** page select a user, and then select **Manage security roles**.
 
-   :::image type="content" source="media/manage-security-roles.png" alt-text="Manage security roles.":::
-
-6. Select or deselect security roles. If the user has roles already assigned. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
-
-   :::image type="content" source="media/manage-security-roles-page.png" alt-text="Manage security roles page.":::
+6. Select or deselect security roles. When finished, select **Save**.  After saving, all selected roles become the current assigned roles for the user.  Unselected roles aren't assigned. 
 
 When the [allow record ownership across business units](wp-security-cds.md#enable-the-matrix-data-access-structure) is enabled, you can select security roles from different business unit. 
 
@@ -99,7 +94,7 @@ If defined in your environment, certain roles are automatically assigned to user
 
 Go to **Environments** > [select an environment] > **Settings** > **Users + Permissions** > **License To Role mapping**.
 
-### See also
+### Related information
 [Get started with security roles in Dataverse](/training/modules/get-started-security-roles/)
 
 
