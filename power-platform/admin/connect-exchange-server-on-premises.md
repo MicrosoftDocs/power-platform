@@ -73,9 +73,6 @@ For more information about authentication, go to:
       > [!NOTE]
       > To ensure the credentials are secured, SQL encryption is used to encrypt the credentials stored in the email server profile.
     
-      > [!div class="mx-imgBorder"] 
-      > ![Screenshot of credentials specified in the email server profile.](media/server-profile-onprem-cred-server.png "Credential specified in email server profile")
-
     - **Exchange Hybrid Modern Auth (HMA)**: To get the information for this option, follow the steps in [Hybrid Modern Authentication (HMA) for Exchange on-premises](connect-exchange-server-onprem-hma.md).
 
 7. Expand **Locations and ports**, and follow these steps:
