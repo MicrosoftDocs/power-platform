@@ -70,7 +70,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 
 ### For components that are in solutions
 #### Before geo-to-geo migration
-All solutions must [be exported](/power-apps/maker/data-platform/export-solutions) if they contain any of the below components which do not support geo-to-geo migration:
+1. All solutions must [be exported](/power-apps/maker/data-platform/export-solutions) if they contain any of the below components which do not support geo-to-geo migration:
 > [!NOTE]
 > Managed solutions cannot be exported, but [ALM best practices](/power-platform/alm/overview-alm) ensure all managed solutions you own will have an associated unmanaged solution which you can export as a managed solution.
 - Canvas apps
@@ -81,6 +81,10 @@ All solutions must [be exported](/power-apps/maker/data-platform/export-solution
 - Environment variables using Data Type "Data source"
 - Connection references
 - Chatbots
+
+2. Delete all canvas apps, custom pages, and component libraries in the solutions you exported above.
+> [!IMPORTANT]
+> Solution-aware canvas apps, custom pages, and component libraries that you don't delete from the environment before geo-to-geo migration are left in an inoperable state after the migration completes. You cannot play, edit, or export them. You must delete them to unblock any further solution updates. They will be restored upon solution import after geo-to-geo migration.
 
 #### After geo-to-geo migration
 Complete the steps below in order:
