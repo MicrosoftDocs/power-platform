@@ -67,9 +67,6 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 > ![Click on the mailboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the mailboxes listed for more info.")  
   
  Click on the grid icon in each chart to view the records that are used to generate the chart.  
-  
-> [!div class="mx-imgBorder"] 
-> ![Click to view records used to create chart.](../admin/media/server-side-sync-performance-dashboard-chart.PNG "Click to view records used to create chart")  
 
 ## Common alerts and recommended resolutions  
   
