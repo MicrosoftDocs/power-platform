@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 08/26/2024
+ms.date: 08/27/2024
 search.audienceType: admin
 
 ---
@@ -42,7 +42,7 @@ These admins can't perform activities that require direct access to Dataverse da
 
 ## Known limitations
 
-- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- When using the API, you notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
@@ -50,7 +50,7 @@ These admins can't perform activities that require direct access to Dataverse da
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
 
-- The system administrator role assigned through self-elevation is **not** removed when the role assignment expires in Privileged Identity Management. You must manually remove the user from the system administrator role. See [clean up acitivity](#step-3-clean-up-activity)
+- The system administrator role assigned through self-elevation is **not** removed when the role assignment expires in Privileged Identity Management. You must manually remove the user from the system administrator role. See [clean-up activity](#step-3-clean-up-activity)
 
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
 
@@ -170,7 +170,7 @@ You might see an error message if you don't have the right permissions.
 "Unable to assign System Administrator security role as the user is not either a Global admin, Power Platform admin, or Dynamics 365 admin. Please review your role assignments in Entra ID and try again later. For help, please reach out to your administrator."
 ```
 
-#### Step 3: Clean up activity
+#### Step 3: Clean-up activity
 
 Run [Remove-RoleAssignmentFromUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) to remove users from the System Administrator security role after the assignment expires in PIM.
 
