@@ -84,7 +84,7 @@ Log events at service boundaries. Include a correlation ID that flows across ser
 
 Separate application and copilot logging from auditing. Audit records are commonly maintained for compliance or regulatory requirements and must be complete. To avoid dropped transactions, maintain audit logs separate from diagnostic logs.
 
-Use white box monitoring to instrument the application or copilot with semantic logs and metrics. Collect application and copilot-level metrics and logs, such as memory consumption or request latency, from the application or copilot to inform a health model and to detect and predict issues.
+Use white box monitoring to instrument the application or copilot with semantic logs and metrics. Collect application- and copilot-level metrics and logs, such as memory consumption or request latency, from the application or copilot to inform a health model and to detect and predict issues.
 
 Use black box monitoring to measure platform services and the resulting customer experience. Black box monitoring tests externally visible application or copilot behavior without knowledge of the internals of the system. This approach is common for measuring customer-centric service-level indicators (SLIs), service-level objectives (SLOs), and service-level agreements (SLAs).
 
@@ -110,7 +110,7 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
 
-- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations and custom telemetry events that can be sent from your topics.
+- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
 
 Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
 
@@ -127,7 +127,7 @@ Your Power Platform workload may include Azure resources. To learn more about mo
 
 The [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit) is a reference implementation containing a collection of components and tools designed to help you get started with developing a strategy for adopting and supporting Power Platform. The kit provides automation and tooling to help teams build monitoring and automation necessary to support a CoE.
 
-## See also
+## Related information
 
 [How do I check my online service health?](/power-platform/admin/check-online-service-health)
 

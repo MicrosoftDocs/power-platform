@@ -158,7 +158,7 @@ Ensure that the Azure enrollment portal includes administrator contact informati
 
 Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](/azure/cloud-adoption-framework/secure/security-operations).
 
-## See also
+## Related information
 
 - [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 - [Automatically create incidents from Microsoft security alerts](/azure/sentinel/create-incidents-from-alerts)

@@ -96,7 +96,7 @@ Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Co
 
 Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security, and scalability. For example, a chat widget on the website should load and start the conversation in less than 5 seconds when clicked or a cloud flow triggered to return information to the user need to return the desired data in a maximum of 10 seconds.
 
-## See also
+## Related information
 
 - [Power Platform ALM](/power-platform/alm/)
 - [Recommendations for safe deployment practices](../operational-excellence/safe-deployments.md)

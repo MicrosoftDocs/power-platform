@@ -70,7 +70,7 @@ For basic field-level input validation, Dataverse offers [server-side business r
 
 Use connectors to send notifications to other services in the Power Platform ecosystem, such as for services like [Outlook](/power-apps/teams/add-app-notifications).
 
-## See also
+## Related information
 
 [Recommendations for writing content for user interfaces](user-interface-content.md)
 

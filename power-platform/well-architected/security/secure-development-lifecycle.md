@@ -181,7 +181,7 @@ Defender for DevOps and the SAST (Static Application Security Testing) tools are
 
 With the solution checker feature, you can perform a rich static analysis check on your solutions against a set of best practice rules and quickly identify these problematic patterns. See [Use solution checker to validate your solutions](/power-apps/maker/data-platform/use-powerapps-checker).
 
-## See also
+## Related information
 
 - [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
 - [Overview of pipelines in Power Platform](/power-platform/alm/pipelines)

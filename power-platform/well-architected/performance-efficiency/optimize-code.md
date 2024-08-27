@@ -110,7 +110,7 @@ Many applications require background tasks that run independently of the user in
 
 **Instrumenting code**: When building canvas apps, performant patterns should be used to enhance app efficiency, while anti-patterns should be avoided. For more information, see [Overview of creating performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview). Use [Monitor](/power-apps/maker/monitor-overview) in Power Apps to diagnose and troubleshoot performance issues during development.
 
-**Measure engagement and outcomes**: When building copilots, tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is crucial to measure the copilot performance metrics and discover areas for improvements in the analytics dashboard.
+**Measure engagement and outcomes**: When building copilots, tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring copilot performance metrics and discovering areas for improvement.
 
 **Optimizing code logic**: With the [solution checker](/power-apps/maker/data-platform/use-powerapps-checker) feature, you can perform a rich static analysis check on your solutions against a set of best-practice rules and quickly identify problematic patterns. With [Flow Checker](/power-automate/error-checker), you can get insights into which areas of your flow's implementation pose a performance risk?
 
@@ -118,7 +118,7 @@ Many applications require background tasks that run independently of the user in
 
 **Optimizing Dataverse performance**: Microsoft Dataverse provides an extensible framework that allows developers to build highly customized and tailored experiences. When you're customizing, extending, or integrating with Dataverse, be aware of the established guidance and best practices. See [Best practices and guidance when using Microsoft Dataverse](/power-apps/developer/data-platform/best-practices/).
 
-## See also
+## Related information
 
 - [Concurrency, looping, and debatching limits in Power Automate](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
 - [Product-specific guidance for optimizing Dynamics 365 performance](/dynamics365/guidance/implementation-guide/performing-solution-product-specific-guidance)

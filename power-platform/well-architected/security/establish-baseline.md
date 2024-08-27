@@ -30,7 +30,7 @@ Security baselines should be published widely throughout your organization so th
 
 Establishing a security baseline for Microsoft Power Platform involves several steps and considerations, such as:
 
-- Understanding the architecture and components of Power Platform, such as environments, connectors, Dataverse, Power Apps, Power Automate and Copilot Studio.
+- Understanding the architecture and components of Power Platform, such as environments, connectors, Dataverse, Power Apps, Power Automate, and Copilot Studio.
 
 - Configuring the security settings and roles for Power Platform at the tenant, environment and resource level, such as Data Loss Prevention policies, environment permissions, and security groups.
 
@@ -180,11 +180,10 @@ The Power Platform service follows the Security Development Lifecycle (SDL). The
 
 The Microsoft cloud security benchmark (MCSB) is a comprehensive security best-practice framework you can use as a starting point for your security baseline. Use it along with other resources that provide input to your baseline. For more information, see [Introduction to the Microsoft cloud security benchmark](/security/benchmark/azure/introduction).
 
-The [Security page](/power-platform/admin/security/security-posture-overview) in the Power Platform admin center helps you manage security in your organization with best practices and a comprehensive set of security features in the safest way possible. You can use this page to:
-
-- **Assess your security status:** Understand and improve your organization’s security policies specific to your needs.
-- **Act on recommendations:** Identify and act on the top-most, impactful recommendations to improve the assessment.
-- **Set up proactive policies:** Use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively set policies in place to help safeguard the organization from vulnerabilities and risks.
+The [Security page](/power-platform/admin/security/security-posture-overview) in the Power Platform admin center helps you to manage your organization's security with best practices and a comprehensive set of features to ensure maximum security. For example, to:
+- **Assess your security status:** Understand and improve your organization's security policies to meet your specific needs.
+- **Act on recommendations:** Identify and implement the most impactful recommendations to improve the assessment.
+- **Set up proactive policies:** Use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively establish policies to help safeguard the organization from vulnerabilities and risks.
 
 ## Organizational alignment
 
@@ -193,7 +192,7 @@ Ensure the security baseline you establish for Power Platform is well aligned wi
 - [Security Baseline discipline overview](/azure/cloud-adoption-framework/govern/security-baseline/)
 - [Security Baseline discipline template](/azure/cloud-adoption-framework/govern/security-baseline/template)
 
-## See also
+## Related information
 
 - [Microsoft compliance](/compliance/)
 - [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)

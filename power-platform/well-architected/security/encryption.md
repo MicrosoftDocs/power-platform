@@ -73,7 +73,7 @@ An Azure Active Directory (Azure AD) tenant houses information that's relevant t
 
 Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, see [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](/power-platform/admin/regions-overview).
 
-Accessing Copilot Studio generative AI features from regions outside the United States results in [data movement across regional boundaries](/microsoft-copilot-studio/manage-data-movement-outside-us). This data movement can be enabled and disabled in Power Platform. Learn more: [Regions involved with copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#regions-involved-with-copilots-and-generative-ai-features)
+Accessing Copilot Studio generative AI features from regions outside the United States results in [data movement across regional boundaries](/microsoft-copilot-studio/manage-data-movement-outside-us). This data movement can be enabled and disabled in Power Platform. Learn more in [Regions involved with copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#regions-involved-with-copilots-and-generative-ai-features). Learn more about data residency and Copilot Studio in [Geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency) and [Security and geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency-security).
 
 ### Data at rest
 
@@ -89,7 +89,7 @@ Power Platform requires all incoming HTTP traffic to be encrypted using TLS 1.2 
 
 For more information, see [About data encryption in Power Platform](/power-platform/admin/about-encryption) and [Data storage and governance in Power Platform](/power-platform/admin/security/data-storage).
 
-## See also
+## Related information
 
 - [About data encryption](/power-platform/admin/about-encryption)
 - [Data storage and governance in Power Platform](/power-platform/admin/security/data-storage)

@@ -237,7 +237,7 @@ If your workload includes a Microsoft Copilot Studio copilot, you can use the [P
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff**: Testing takes time and skill to perform and can affect operational efficiency.
 
-## See also
+## Related information
 
 - [Recommendations for security testing](../security/testing.md)
 - [Recommendations for designing a reliability testing strategy](../reliability/testing-strategy.md)

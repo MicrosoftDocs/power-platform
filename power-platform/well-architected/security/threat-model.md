@@ -118,7 +118,7 @@ This example builds on the Information Technology (IT) environment established i
 
 **Security information event management (SIEM) solution**. Microsoft Sentinel may be added even in an early stage of the solution so you can build some analytics queries to mitigate threats and vulnerabilities, anticipating your security environment when you are in production.
 
-## See also
+## Related information
 
 - [STRIDE model](/azure/security/develop/threat-modeling-tool-threats)
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)

@@ -103,8 +103,8 @@ Consider the following:
 - Does the workload need permanent access or can conditional access be considered?
 - Does the workload perform actions that require administrative/elevated permissions?
 - How will the workload interact with third-party services?
-- For copilots, do you have SSO requirements?
-- Is the copilot working unauthenticated, authenticated, or both?
+- For copilots, do you have single sign-on (SSO) requirements?
+- Is the copilot operating in unauthenticated mode, authenticated mode, or both?
 
 #### Role assignment
 
@@ -264,12 +264,11 @@ One of the key features of Dataverse is its rich security model that can adapt t
 
 ### Configure user authentication in Copilot Studio
 
-Copilot Studio supports several authentication options. Choose the one that meets your needs. Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with Microsoft Entra ID, or with any OAuth2 identity provider such as Google or Facebook. Learn more: [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication)
+Copilot Studio supports several authentication options. Choose the one that meets your needs. Authentication allows users to sign in, thereby granting your copilot access to restricted resources or information. Users can sign in using Microsoft Entra ID or any OAuth 2.0 identity provider, such as Google or Facebook. Learn more in [Configure user authentication in Copilot Studio](/microsoft-copilot-studio/configuration-end-user-authentication).
 
-With [Direct Line-based security](/microsoft-copilot-studio/configure-web-security), you can enable access only to locations that you control by enabling secured access with Direct Line secrets or tokens.
+With [Direct Line-based security](/microsoft-copilot-studio/configure-web-security), you can restrict access to locations that you control by enabling secured access with Direct Line secrets or tokens.
 
-Copilot Studio supports single sign-on (SSO), which means copilots can sign the user in.
-SSO needs to be implemented on your web pages, mobile applications. For Microsoft Teams, SSO is seamless if you select the “Only in Teams” authentication. It can also be configured with Manual AAD v2, but in this case the Teams app must be deployed as a zip file, not with the 1-click Teams deployment from Copilot Studio.
+Copilot Studio supports single sign-on (SSO), which means copilots can sign the user in. SSO must be implemented on your web pages and mobile applications. For Microsoft Teams, SSO is seamless if you select the "Only in Teams" authentication option. It can also be configured manually with Azure AD v2; however, in this case the Teams app must be deployed as a zip file, not through the 1-click Teams deployment from Copilot Studio.
 
 Learn more:
 
@@ -281,7 +280,7 @@ Learn more:
 
 Most operations, support, and troubleshooting performed by Microsoft personnel (including subprocessors) don't require access to customer data. With Power Platform Customer Lockbox, we provide an interface for the customers to review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed. For example, it's used when a Microsoft engineer needs to access customer data, whether in response to a customer-initiated support ticket or a problem identified by Microsoft. For more information, see [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](/power-platform/admin/about-lockbox).
 
-## See also
+## Related information
 
 - [Connecting and authenticating to data sources](/power-platform/admin/security/connect-data-sources)
 - [Authenticating to Power Platform services](/power-platform/admin/security/authenticate-services)
