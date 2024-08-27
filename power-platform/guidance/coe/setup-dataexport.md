@@ -45,8 +45,7 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 1. Select the environment with the CoE Starter Kit.
-1. Select the settings symbol (cog), then select **Developer resources**.
-   :::image type="content" source="media/byodl-3.png" alt-text="Screenshot that shows the Developer resources location in the Settings." lightbox="media/byodl-3.png":::
+1. Select the **Settings** icon, then select **Developer resources**.
 1. Copy the Web API endpoint.
 
 ### Configure connections to data sources

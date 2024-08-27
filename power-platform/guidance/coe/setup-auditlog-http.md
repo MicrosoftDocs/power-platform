@@ -144,7 +144,6 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 ### API permissions
 
 Go to your app registration and validate that you have the correct API permissions. Your app registration requires application permissions not delegated. Validate that the status is _Granted_.
-:::image type="content" source="media/auditlog-troubleshoot-1.png" alt-text="Screenshot that highlights the Application type and Granted for status of a configured permission." lightbox="media/auditlog-troubleshoot-1.png":::
 
 ### Secret environment variable - Azure secret
 
