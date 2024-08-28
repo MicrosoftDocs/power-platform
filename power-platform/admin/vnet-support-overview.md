@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/29/2024
+ms.date: 08/28/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -53,7 +53,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 
 ## Supported regions
 
-Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your Virtual Network, and subnets must be in the `eastus` and `westus` Azure region.
+Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your Virtual Network and subnets must be in the **eastus** and **westus** Azure regions.
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
@@ -171,7 +171,7 @@ Yes, you can use an existing Virtual Network for Power Platform, provided that a
 
 ### Can I use US East 2 as the failover if my Power Platform environment is in Canada?
 
-To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast**, respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, if you want to support connectivity with resources in **useast2** region, establish Virtual Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region.
+To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast**, respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, if you want to support connectivity with resources in the **useast2** region, establish Virtual Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region.
 
 ### What is a Dataverse plug-in?
 
