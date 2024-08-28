@@ -188,7 +188,6 @@ In Azure, perform the following steps:
    1. Under **Purge protection**, set or verify that **Enable purge protection (enforce a mandatory retention period for deleted vaults and vault objects)** is enabled.
    1. If you made changes, select **Save**.
 
-   :::image type="content" source="media/cmk-key-vault-purge-protect.png" alt-text="Enable purge protection on the key vault":::
 ##### Create RSA keys
 1. Create or import a key that has these properties:
    1. On the **Key Vault** properties pages, select **Keys**.

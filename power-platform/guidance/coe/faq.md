@@ -163,7 +163,6 @@ To update environment variables used in the kit, you can use the [CoE Admin Comm
 1. Open the **CoE Admin Command Center** app.
 1. Select the **Environment Variables** screen.
 1. Select an environment variable to update, then select **Edit** from the navigation bar.
-   :::image type="content" source="media/tips-command1.png" alt-text="Screenshot that shows where to select an environment variable and the location of the Edit button." lightbox="media/tips-command1.png" :::
 
 ### Ensure flows that use environment variables aren't cached
 
@@ -173,7 +172,6 @@ At times, Power Automate caches old values for environment variables. If you don
 1. On the left pane, select **Solutions**.
 1. Select the **Default Solution**, and change the filter to show **Environment variables**.
 1. Select a variable that you want to update and select its overflow menu to choose **Advanced** > **Show dependencies**.
-   :::image type="content" source="media/env-var-reset-1.png" alt-text="Screenshot showing the Advanced menu accessed through the environment variable overflow menu, allowing you to see dependencies." lightbox="media/env-var-reset-1.png":::
 1. Look at the **Used by** tab and the **Object type** process.
    :::image type="content" source="media/env-var-reset-2.png" alt-text="Screenshot that shows the Used by tab and Object type section of a dependency." lightbox="media/env-var-reset-2.png":::
 1. Turn off all these flows and then turn them back on.
@@ -234,7 +232,6 @@ All emails sent as part of the CoE Starter Kit are stored in the **Customized Em
 1. Select the app that has the URL you need.
 1. Select the overflow menu **...** > **Details**.
 1. Select the **Web link**.
-   :::image type="content" source="media/tips-link1.png" alt-text="Screenshot that highlights the Web link URL on the Details tab of the Admin - Command Center." lightbox="media/tips-link1.png":::
 
 ## Handling backend throttling during inventory runs
 
