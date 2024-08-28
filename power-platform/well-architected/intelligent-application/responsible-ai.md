@@ -1,6 +1,6 @@
 ---
 title: Responsible AI considerations for intelligent application workloads
-description: Responsible AI TODO 
+description: Implement responsible AI principles in intelligent application workloads to ensure fairness, accountability, transparency, and ethical behavior while protecting data privacy.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -38,14 +38,14 @@ By integrating these practices into your development and deployment processes, y
 
 ## Data privacy and security
 
-Ensuring data privacy is critical, especially as the intelligent application workload might handle sensitive data. When planning an intelligent application workload with Power Platform, it's essential to address several key risks and implement effective mitigations:
+Ensuring data privacy is critical, especially as the intelligent application workload might handle sensitive data. When planning an intelligent application workload with Power Platform, it's essential to address several key risks and implement effective mitigation strategies:
 
-- **Platform Features**: Understand native controls and platform features that safeguard your data. Copilot is built on [Microsoft Azure OpenAI Service](/azure/cognitive-services/openai/overview) and runs completely within the Azure cloud. Copilot uses OpenAI models with all the [security capabilities of Microsoft Azure](/azure/security/fundamentals/overview). Copilot is integrated in Microsoft services like Dynamics 365 and Power Platform and inherits their security, privacy, and compliance policies and processes, such as multifactor authentication and compliance boundaries.
-- **Data Encryption**:  Service-side technologies encrypt organizational content at rest and in transit for robust security. Connections are safeguarded with Transport Layer Security (TLS), and data transfers between Dynamics 365, Power Platform, and Azure OpenAI occur over the Microsoft backbone network, ensuring both reliability and safety. [Learn more about encryption in the Microsoft Cloud](/purview/office-365-encryption-in-the-microsoft-cloud-overview).
-- **Access Controls**: Data is provided to Copilot based on the access level of the current user. Implement role-based access control (RBAC) using Microsoft Entra ID to ensure only authorized users can access data. Apply the principle of least privilege to limit access to only what is necessary.
-- **Monitoring and Auditing**: Detect and respond to potential security incidents by regularly monitoring access and usage of the AI system. Maintain detailed audit logs to track data access and modifications.
-- **Compliance and Governance**: Ensure compliance with relevant data privacy regulations such as GDPR, HIPAA, and CCPA. Implement ethical AI practices to avoid biases and ensure fairness in AI outputs.
-- **User Education and Training**: Train users on security best practices and the importance of data privacy. Keep users informed about updates and changes to security policies and procedures.
+- **Platform features**: Understand native controls and platform features that safeguard your data. Copilot is built on [Microsoft Azure OpenAI Service](/azure/cognitive-services/openai/overview) and runs completely within the Azure cloud. Copilot uses OpenAI models with all the [security capabilities of Microsoft Azure](/azure/security/fundamentals/overview). Copilot is integrated in Microsoft services like Dynamics 365 and Power Platform and inherits their security, privacy, and compliance policies and processes, such as multifactor authentication and compliance boundaries.
+- **Data encryption**:  Service-side technologies encrypt organizational content at rest and in transit for robust security. Connections are safeguarded with Transport Layer Security (TLS), and data transfers between Dynamics 365, Power Platform, and Azure OpenAI occur over the Microsoft backbone network, ensuring both reliability and safety. [Learn more about encryption in the Microsoft Cloud](/purview/office-365-encryption-in-the-microsoft-cloud-overview).
+- **Access controls**: Data is provided to Copilot based on the access level of the current user. Implement role-based access control (RBAC) using Microsoft Entra ID to ensure only authorized users can access data. Apply the principle of least privilege to limit access to only what is necessary.
+- **Monitoring and auditing**: Detect and respond to potential security incidents by regularly monitoring access and usage of the AI system. Maintain detailed audit logs to track data access and modifications.
+- **Compliance and governance**: Ensure compliance with relevant data privacy regulations such as GDPR, HIPAA, and CCPA. Implement ethical AI practices to avoid biases and ensure fairness in AI outputs.
+- **User education and raining**: Train users on security best practices and the importance of data privacy. Keep users informed about updates and changes to security policies and procedures.
 
 Learn more: [FAQ for Copilot data security and privacy](/power-platform/faqs-copilot-data-security-privacy)
 
@@ -53,18 +53,18 @@ Learn more: [FAQ for Copilot data security and privacy](/power-platform/faqs-cop
 
 Recognize the importance of addressing biases in the system and ensure fairness to avoid biases in AI responses.
 
-- **Diverse and Representative Data**: Ensure that the training data is diverse and representative of different demographics to minimize inherent biases. Regularly audit the data for biases and imbalances, and take corrective actions as needed.
-- **Bias Detection and Mitigation Tools**: Use tools and techniques to detect biases in the AI models. This includes statistical analysis and fairness metrics. Implement debiasing techniques such as resampling, reweighting, or adversarial debiasing to reduce biases in the models.
-- **Human-in-the-Loop**: Incorporate human review and feedback loops to identify and correct biases that the AI might introduce. Establish an ethics committee or governance board to oversee AI development and deployment, ensuring ethical standards are met.
-- **Transparency and Trust**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it's designed, and how it's monitored and updated.
-- **Continuous Monitoring and Improvement**: Continuously monitor the AI system for biases and performance issues, and update the models as needed. Ensure models remain fair and unbiased by regularly retraining models with updated and more diverse data.
+- **Diverse and representative data**: Ensure that the training data is diverse and representative of different demographics to minimize inherent biases. Regularly audit the data for biases and imbalances, and take corrective actions as needed.
+- **Bias detection and mitigation tools**: Use tools and techniques to detect biases in the AI models. This includes statistical analysis and fairness metrics. Implement debiasing techniques such as resampling, reweighting, or adversarial debiasing to reduce biases in the models.
+- **Human-in-the-loop**: Incorporate human review and feedback loops to identify and correct biases that the AI might introduce. Establish an ethics committee or governance board to oversee AI development and deployment, ensuring ethical standards are met.
+- **Transparency and trust**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it's designed, and how it's monitored and updated.
+- **Continuous monitoring and improvement**: Continuously monitor the AI system for biases and performance issues, and update the models as needed. Ensure models remain fair and unbiased by regularly retraining models with updated and more diverse data.
 
 ## Ongoing monitoring and evaluation
 
 Continue improving your intelligent application workload. Establish a framework for continuous monitoring and evaluation, and incorporate user feedback and evolving ethical standards into updates.
 
-- **Feedback Loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
-- **Monitoring and Auditing**: Detect and respond to potential security incidents by regularly monitoring access and usage of the AI system. Maintain detailed audit logs to track data access and modifications.
+- **Feedback loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
+- **Monitoring and auditing**: Detect and respond to potential security incidents by regularly monitoring access and usage of the AI system. Maintain detailed audit logs to track data access and modifications.
 
 <!-- NOTE: I've copied this from https://learn.microsoft.com/en-us/legal/cognitive-services/openai/overview?context=%2Fazure%2Fai-services%2Fopenai%2Fcontext%2Fcontext at the very bottom of the page- not sure if this is something we need to include -->
 

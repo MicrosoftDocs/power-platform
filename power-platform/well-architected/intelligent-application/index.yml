@@ -32,11 +32,11 @@ landingContent:
         links:
           - text: Responsible AI
             url: responsible-ai.md
-          - text: Security and Compliance
+          - text: Security and compliance
             url: security.md
-          - text: Performance Optimization
+          - text: Performance optimization
             url: monitoring.md
-          - text: Deployment and Testing
+          - text: Deployment and testing
             url: publishing.md
           - text: Integration options
             url: integrations.md
@@ -69,7 +69,7 @@ landingContent:
              url: https://www.microsoft.com/en-gb/ai/tools-practices
            - text: HAX Design Library
              url: https://www.microsoft.com/en-us/haxtoolkit/library/
-           - text: Microsoft AI principles
+           - text: Microsoft AI practices
              url: https://www.microsoft.com/ai/responsible-ai
            - text: Microsoft responsible AI resources
              url: https://www.microsoft.com/ai/responsible-ai-resources

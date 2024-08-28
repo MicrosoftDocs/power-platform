@@ -1,6 +1,6 @@
 ---
 title: Choosing the right option for intent recognition and entity extraction for your intelligent application workloads
-description: Intent recognition and entity extraction are key components of natural language understanding in Microsoft Copilot Studio. Understand key considerations when choosing the option for intent recognition and entity extraction for your intelligent application workloads.
+description: Optimize your intelligent application workload by choosing the right intent recognition and entity extraction options in Microsoft Copilot Studio.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Choosing the right option for intent recognition and entity extraction for your intelligent application workloads
+# Intent recognition and entity extraction options for your intelligent application workloads
 
 Intent recognition and entity extraction are key components of natural language understanding in Microsoft Copilot Studio.
 
@@ -63,14 +63,14 @@ Trigger phrases train your copilot's natural language understanding (NLU) model.
 
 Entity extraction and slot filling are important components in developing effective copilots. These processes enable the copilot to acquire and utilize information efficiently by identifying and extracting relevant details from user queries.
 
-**Entity Extraction** involves parsing the user's input to identify specific pieces of information, known as entities. For example, in the query "I’d like to order three large blue t-shirts," the copilot's Natural Language Understanding (NLU) model can extract the following entities:
+**Entity extraction** involves parsing the user's input to identify specific pieces of information, known as entities. For example, in the query "I’d like to order three large blue t-shirts," the copilot's Natural Language Understanding (NLU) model can extract the following entities:
 
 - **Quantity**: 3
 - **Color**: Blue
 - **Size**: Large
 - **Item Type**: T-Shirt
 
-**Slot Filling** is the process of using these extracted entities to complete the necessary information for a given task. In this example, the copilot recognizes the topic as an order and fills in the required slots with the extracted entities. This allows the copilot to understand the user's request without needing more questions, streamlining the interaction.
+**Slot filling** is the process of using these extracted entities to complete the necessary information for a given task. In this example, the copilot recognizes the topic as an order and fills in the required slots with the extracted entities. This allows the copilot to understand the user's request without needing more questions, streamlining the interaction.
 
 By implementing entity extraction and slot filling, copilots can handle complex queries more effectively, providing accurate and contextually relevant responses. This enhances the user experience by reducing the need for follow-up questions and ensuring that the copilot can quickly and accurately fulfill user requests.
 
@@ -134,7 +134,7 @@ Effectively managing unrecognized intents ensures a smooth user experience. Unre
 
 - **Core scenarios and custom topics**: Ensure that core scenarios and topics are well-defined and handled through custom topics. Clearly define the outcomes of these topics to maintain a structured and efficient conversation flow.
 
-## Localization & languages
+## Localization and languages
 
 When building a copilot, consider what languages your intelligent application workload needs to speak and what markets your copilot should support. Localization and language support are critical factors to ensure your intelligent application workload meets the needs of diverse user bases. Here are the main approaches and considerations:
 
@@ -144,7 +144,7 @@ When building a copilot, consider what languages your intelligent application wo
 
 - **One copilot for multiple languages (real-time translations)**: This method uses a relay copilot to provide real-time translations at runtime. It allows for rapid deployment of more languages and reduces the need for frequent translation updates. However, it introduces a dependency on the relay copilot and a real-time translation layer, such as Azure Service Copilot and Azure Cognitive Services Translator.
 
-**Key Considerations:**
+**Key considerations:**
 
 - **Languages and markets**: Determine which languages and markets your copilot needs to support. This influences your choice of localization strategy.
   

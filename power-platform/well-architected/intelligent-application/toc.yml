@@ -11,11 +11,11 @@
         href: responsible-ai.md
       - name: Security and compliance
         href: security.md
-      - name: Performance
+      - name: Performance optimization
         href: monitoring.md
-      - name: Deployment and Testing
+      - name: Deployment and testing
         href: publishing.md
-      - name: Integrations
+      - name: Integration options
         href: integrations.md
-      - name: Intent recognition and Entity extraction
+      - name: Intent recognition and entity extraction
         href: language.md

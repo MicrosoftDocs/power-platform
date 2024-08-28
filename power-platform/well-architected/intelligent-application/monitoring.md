@@ -1,6 +1,6 @@
 ---
-title: Optimize performance for intelligent application workloads
-description: Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users. Learn how to optimize performance for intelligent application workloads.
+title: Performance optimization for intelligent application workloads
+description: Optimize intelligent application workloads by monitoring key performance metrics, diagnosing issues promptly, and continuously enhancing efficiency to meet user demands.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Optimize performance for intelligent application workloads
+# Performance optimization for intelligent application workloads
 
 Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users. Monitoring the performance of your intelligent application workload is crucial to ensuring it operates effectively and efficiently.
 
@@ -76,8 +76,8 @@ To regularly improve your intelligent application workload, plan regular review 
 | --- | --- |
 | Resolution rate | The deflection rate refers to the percentage of user requests that are successfully resolved by the Copilot without needing to escalate to a human agent. |
 | Engagement rate | The engagement rate refers to the percentage of total sessions that become engaged. A session is considered engaged when a user interacts with the Copilot in a meaningful way, such as triggering a nonsystem topic, escalating the session, or invoking a fallback topic. | 
-| Abandon Rate | The abandon rate refers to the percentage of engaged sessions that end without reaching a resolution or escalation. Essentially, it measures how often users leave or stop interacting with the Copilot before their issue is resolved or escalated to a human agent. | 
-| Escalation Rate | The escalation rate refers to the percentage of engaged sessions that are escalated to a human agent. This metric is crucial for understanding how often the Copilot is unable to resolve user queries on its own and requires human intervention. |
+| Abandon rate | The abandon rate refers to the percentage of engaged sessions that end without reaching a resolution or escalation. Essentially, it measures how often users leave or stop interacting with the Copilot before their issue is resolved or escalated to a human agent. | 
+| Escalation rate | The escalation rate refers to the percentage of engaged sessions that are escalated to a human agent. This metric is crucial for understanding how often the Copilot is unable to resolve user queries on its own and requires human intervention. |
 | Unrecognized utterances | An unrecognized utterance refers to a user input that the Copilot’s natural language understanding (NLU) model can't match to any predefined intent or topic. When this occurs, the system is unable to determine the user’s intent based on the provided input. | 
 | CSAT | Customer satisfaction |
 | Topics with low resolution | Topics with low resolution refer to conversation topics that frequently fail to resolve user queries effectively. These topics often lead to user dissatisfaction, abandonment, or escalation to human agents. |

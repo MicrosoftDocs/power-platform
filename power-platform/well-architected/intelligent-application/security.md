@@ -1,6 +1,6 @@
 ---
 title: Security considerations for intelligent application workloads
-description: Security considerations for intelligent application workloads TODO
+description: Implement robust security for intelligent application workloads, ensuring compliance and proactive threat detection.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Security considerations for intelligent application workloads
 
-Security is crucial for any architecture. Microsoft Power Platform offers a comprehensive range of tools to effectively secure your intelligent application workload. This article describes security considerations and recommendations for developing intelligent application workloads with Power Platform.
+Security is critical for any architecture. Microsoft Power Platform offers a comprehensive range of tools to effectively secure your intelligent application workload. This article describes security considerations and recommendations for developing intelligent application workloads with Power Platform.
 
 Copilot for Dynamics 365 and Power Platform features follow a set of core security and privacy practices and the Microsoft [Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Dynamics 365 and Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls. For more information on Copilot Studio and Power Platform features, see [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance), [FAQ for Copilot data security and privacy](/power-platform/faqs-copilot-data-security-privacy) and [Security in Microsoft Power Platform](/power-platform/admin/security/overview).
 
@@ -21,30 +21,30 @@ You should periodically assess the services and technologies you employ to ensur
 
 Understand the key requirements for the intelligent application workload you're implementing.
 
-### Access Control and Authentication
+### Access control and authentication
 
 - How will you implement access control and authentication mechanisms to ensure only authorized users can access the intelligent application workload?
 - How do you ensure secure and seamless user authentication?
 - How do you control which apps can interact with the Copilot and what measures ensure these restrictions are effective?
  
-### Security and Incident Management
+### Security and incident management
 
 - How will you manage and secure application secrets, such as API keys and passwords?
 - What network security requirements impact the intelligent application workload? For example, are internal APIs only accessible in a virtual network?
 - How will you monitor and audit access and usage of the intelligent application?
 - What is the incident response plan for addressing security breaches or vulnerabilities?
  
-### Compliance and Data Residency
+### Compliance and data residency
 
 - What data residency requirements do you have for the types of data being used with the intelligent application workload? Understand where your data will reside and if the location aligns with your legal or regulatory obligations?
 - What regulatory and compliance requirements must be met for the intelligent application workload?
  
-### System Integration and Network Requirements
+### System integration and network requirements
 
 - How will the intelligent application workload securely integrate with other internal and external systems?
 - What are the network and integration requirements for your workload? Is there a need to integrate with internal or external data sources or APIs?
 
-### Ethical Considerations and Responsible AI
+### Ethical considerations and Responsible AI
 
 - How will ethical considerations and responsible AI practices be incorporated into the intelligent application workload?
 

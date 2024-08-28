@@ -1,6 +1,6 @@
 ---
 title: Deployment and test considerations for intelligent application workloads
-description: Learn about key considerations for  deploying and testing your intelligent application workloads
+description: Learn key considerations for deploying and testing your intelligent application workloads.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -17,7 +17,7 @@ It’s key to have a healthy application lifecycle management (ALM) process to a
 
 Ensure that your development process is efficient and scalable by developing a comprehensive ALM strategy that includes version control, continuous integration/continuous deployment (CI/CD), and automated testing.
 
-Evaluate options from simple to advanced continuous integration & delivery (CI/CD)
+Evaluate options from simple to advanced continuous integration & delivery (CI/CD):
 
 - Manual deployment of solutions.
 - Automated deployment with user-friendly [pipelines in Power Platform](/power-platform/alm/pipelines) (no source control).
@@ -35,7 +35,7 @@ Key recommendations and considerations:
 - **Work within the context of solutions**: Ensure all development is conducted within the framework of solutions.
 - **Separate solutions for independent deployment**: Create distinct solutions only when there's a need to deploy components independently.
 - **Understand limitations**: Understand limitations of automated deployment, and evaluate which settings have to be set or updated manually after deployment - such as Azure Application Insights integration, deployed channels, and security settings.
-- **Utilize a custom publisher and prefix**: Implement a custom publisher and prefix for better organization and management.
+- **Use a custom publisher and prefix**: Implement a custom publisher and prefix for better organization and management.
 - **Use environment variables**: Use [environment variables](/power-apps/maker/data-platform/environmentvariables) for settings and secrets that vary across environments.
 - **Export and deploy as managed solutions**: Export and deploy solutions as managed, except when setting up a development environment.
 - **Restrict customizations to development**: Avoid making customizations outside of the development environment.
@@ -47,41 +47,41 @@ The example provides an overview of the deployment strategy for your intelligent
 
 ![Example solution configuration](media/solutionconfig.png)
 
-1. **Development Environment (Dev):**
+1. **Development environment (Dev):**
    - **Purpose:** This environment is for the initial creation and customization of the solution.
    - **Activities:** Developers build and modify components such as apps, flows, and copilots. All customizations and configurations are performed here.
-   - **Key Practices:**
+   - **Key practices:**
      - Use a custom publisher and prefix for all components.
      - Implement environment variables for settings and secrets.
      - Ensure all changes are version-controlled and documented.
 
-2. **Testing Environment (Test):**
+2. **Testing environment (Test):**
    - **Purpose:** This environment is used for preliminary validation and testing of the developed solution.
    - **Activities:** Solutions are exported from the Dev environment as managed solutions and imported into the Test environment. Functional and integration testing is conducted to identify and resolve issues early.
-   - **Key Practices:**
+   - **Key practices:**
      - Maintain a separate Test environment to simulate real-world scenarios.
      - Use environment variables to manage settings and secrets specific to the Test environment.
      - Automate deployment processes to ensure consistency and repeatability.
 
-3. **Quality Assurance Environment (QA):**
+3. **Quality Assurance environment (Q.A.):**
    - **Purpose:** This environment is dedicated to thorough quality assurance and user acceptance testing (UAT).
    - **Activities:** Managed solutions are imported from the Test environment into the QA environment. Extensive testing, including performance, security, and UAT, is conducted to ensure the solution meets all requirements and standards.
-   - **Key Practices:**
+   - **Key practices:**
      - Use environment variables to manage QA-specific settings and secrets.
      - Involve end-users in UAT to gather feedback and ensure the solution meets their needs.
      - Automate testing processes where possible to enhance efficiency and accuracy.
 
-4. **Production Environment (Prod):**
+4. **Production environment (Prod):**
    - **Purpose:** This environment hosts the live, user-facing version of the solution.
    - **Activities:** After successful QA testing, the managed solution is exported from the QA environment and imported into the Production environment. This environment is strictly controlled to ensure stability and reliability.
-   - **Key Practices:**
+   - **Key practices:**
      - Deploy solutions as managed to prevent unauthorized changes.
      - Use environment variables to manage production-specific settings and secrets.
      - Monitor and maintain the solution to ensure optimal performance and address any issues promptly.
 
-**Overall Strategy:**
+**Overall strategy:**
 
-- **Separation of Concerns:** Each environment serves a distinct purpose, ensuring that development, testing, QA, and production activities don't interfere with one another.
+- **Separation of concerns:** Each environment serves a distinct purpose, ensuring that development, testing, QA, and production activities don't interfere with one another.
 - **Automation:** Automate ALM processes, including source control, testing, and deployments, to enhance efficiency and reduce the risk of errors.
 - **Consistency:** Maintain consistency across environments by using environment variables and automated deployment scripts.
 
