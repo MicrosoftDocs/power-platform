@@ -924,7 +924,8 @@
             "$ref": "#/definitions/CurrencyAllocationRequestModelV1"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "AllocationsByEnvironmentResponseModelV1": {
       "description": "The response body includes environment ID and allocated currencies",
@@ -942,7 +943,8 @@
             "$ref": "#/definitions/CurrencyAllocationResponseModelV1"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "CurrencyAllocationRequestModelV1": {
       "type": "object",
@@ -956,7 +958,8 @@
           "type": "integer",
           "example": 10
         }
-      }
+      },
+      "additionalProperties": false
     },
     "CurrencyAllocationResponseModelV1": {
       "type": "object",
@@ -970,7 +973,8 @@
           "type": "integer",
           "example": 10
         }
-      }
+      },
+      "additionalProperties": false
     },
     "ExternalCurrencyType": {
       "description": "Available currency type which can be allocated to environment",
@@ -996,6 +1000,7 @@
           "$ref": "#/definitions/BillingPolicyConditionsApiFilterModel"
         }
       },
+      "additionalProperties": false,
       "example": {
         "apiFilter": {
           "allowOtherPremiumConnectors": true,
@@ -1025,7 +1030,8 @@
             "$ref": "#/definitions/BillingPolicyConditionsApiModel"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyConditionsApiModel": {
       "type": "object",
@@ -1034,7 +1040,8 @@
           "description": "The name of an API connector.",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingInstrumentModel": {
       "description": "The ISV billing instrument information.",
@@ -1055,7 +1062,8 @@
         "id": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyEnvironmentAddRequestModel": {
       "type": "object",
@@ -1066,7 +1074,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyEnvironmentRemoveRequestModel": {
       "type": "object",
@@ -1077,7 +1086,8 @@
             "type": "string"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyEnvironmentResponseModelV1": {
       "type": "object",
@@ -1088,7 +1098,8 @@
         "environmentId": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyEnvironmentResponseModelV1ResponseWithOdataContinuation": {
       "type": "object",
@@ -1102,7 +1113,8 @@
         "@odata.nextLink": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyPostRequestModel": {
       "type": "object",
@@ -1119,7 +1131,8 @@
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyPutRequestModel": {
       "type": "object",
@@ -1130,7 +1143,8 @@
         "status": {
           "$ref": "#/definitions/BillingPolicyStatus"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyResponseModel": {
       "type": "object",
@@ -1164,7 +1178,8 @@
         "lastModifiedBy": {
           "$ref": "#/definitions/Principal"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyResponseModelResponseWithOdataContinuation": {
       "type": "object",
@@ -1178,7 +1193,8 @@
         "@odata.nextLink": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "BillingPolicyStatus": {
       "description": "The desired ISV contract status.",
@@ -1200,7 +1216,8 @@
             "tenantId": "00000000-0000-0000-0000-000000000000"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "IsvContractPostRequestModel": {
       "description": "The ISV contract model for update operations.",
@@ -1262,6 +1279,7 @@
           "$ref": "#/definitions/PowerAutomatePolicyModel"
         }
       },
+      "additionalProperties": false,
       "example": {
         "name": "exampleContract",
         "geo": "unitedstates",
@@ -1308,7 +1326,8 @@
         "powerAutomatePolicy": {
           "$ref": "#/definitions/PowerAutomatePolicyModel"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "IsvContractResponseModel": {
       "type": "object",
@@ -1351,7 +1370,8 @@
         "lastModifiedBy": {
           "$ref": "#/definitions/Principal"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "IsvContractResponseModelResponseWithOdataContinuation": {
       "type": "object",
@@ -1365,7 +1385,8 @@
         "@odata.nextLink": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "PowerAutomatePolicyModel": {
       "description": "The Power Platform Requests policies.",
@@ -1380,7 +1401,8 @@
         "desktopFlowAttendedRunsPayAsYouGoState": {
           "$ref": "#/definitions/PayAsYouGoState"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "PayAsYouGoState": {
       "enum": [
@@ -1398,7 +1420,8 @@
         "type": {
           "$ref": "#/definitions/PrincipalType"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "PrincipalType": {
       "enum": [
@@ -1415,13 +1438,17 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
-      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "scopes": {
+        ".default": ".default"
+      },
       "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": [
+        ".default"
+      ]
     }
   ]
 }
