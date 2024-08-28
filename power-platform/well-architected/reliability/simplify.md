@@ -101,7 +101,7 @@ These Power Apps articles provide practical design advice:
 
 - Determining [where to place logic in your system: Canvas apps, model-driven apps, Microsoft Dataverse, or Power Automate flows](/power-apps/guidance/planning/logic)
 - [Determining which type of app to make](/power-apps/guidance/planning/app-type): model-driven or canvas apps
-- [Date modeling: Designing your data structure](/power-apps/guidance/planning/data-modeling)
+- [Data modeling: Designing your data structure](/power-apps/guidance/planning/data-modeling)
 - Data design: [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
 ## See also
