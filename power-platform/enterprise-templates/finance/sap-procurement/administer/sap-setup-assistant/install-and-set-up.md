@@ -74,7 +74,8 @@ Cloud flows need specific connection references to work correctly. Connection re
 It's best to create the connections before you import the solution. If you create the connections during import, you have to jump back and forth between browser windows.
 
 1. Sign in to [Power Apps.](https://make.preview.powerapps.com/)
-1. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
+2. Select the target environment where you want to install the template
+3. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
 
     - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
     - [Office 365 Users connector](/connectors/office365users/)
@@ -108,22 +109,29 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 4. Select **Install**. One [solutions](/power-platform/alm/solution-concepts-alm) are installed in your environment:
 
     - **SAP Setup Assistant**
+  
+    Please note that the installtion could you take several minutes.Find the **SAP Setup Assistant** from the list of apps, make sure the template is **Installed** before proceeding with next steps.
 
     Go to the [SAP Setup Assistant overview article](./overview.md) to learn more about the solution.
 
 ### Step 4: Update Connection References
 
-There are six connection references imported as part of the solution. Inorder for the flows to run , you need to update the each connection reference with the connections created in the previous steps.
+There are six connection references imported as part of the solution. Inorder for the cloud flows to run , you need to update the each connection reference with the connections created in the previous steps.
 
-1. Go to the **Default Solution** in your environment.
+1. Go to the Solutions, find the **Default Solution** in your environment and open it.
 2. Select **Connection References** from the list of the Objects in the left tab
-3. Select Each Connection References from the list and update the Connection:
+4. Select each Connection References from the list:
    - Power Query Dataflows mpa_SAPTemplateInstallerDropDownValues-39423
    - Template Installer Dataverse
    - Template Installer Office 365 Users
    - Template Power Apps for Makers
    - Template Power Automate Management
    - Template Power Platform for Admins
+5. For each connection :
+   - Click on the Connection Reference
+   - Select the Connection you have created in step 2 from the **Connection** dropdown
+   - **Save** the changes
+   - Pop-up will be prompted for confirmation, select **Save changes**
 
 ### Step 5: Turn on cloud flows
 Open the newly installed SAP Setup Assistant and verify that the eight cloud flows are set to the on status.If they aren't turn them on
