@@ -18,9 +18,6 @@ Configuring the settings for Power Platform admin center, such as the view theme
 
 2. Select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site.
 
-> [!div class="mx-imgBorder"] 
-> ![Power Platform settings.](media/power-platform-settings.png "Microsoft Power Platform settings")
-
 ## Prerequisites
 The [Power Platform administrator role](use-service-admin-role-manage-tenant.md#power-platform-administrator) is required to view these settings and the [Global admin role](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) to update these settings.
 
