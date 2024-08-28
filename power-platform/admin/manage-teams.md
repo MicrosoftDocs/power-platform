@@ -111,9 +111,6 @@ You can add and delete members from a team.
 5. Do one of the following:
 
    - To add new team members, select **+ Add team members** and then specify users.
-
-     :::image type="content" source="media/dataverse-team-manage-add-members.png" alt-text="Screenshot of adding team members.":::
-
    - To delete a team member, select the user and then select **Remove**.
 
 > [!NOTE]
