@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/29/2024
+ms.date: 08/28/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -53,7 +53,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 
 ## Supported regions
 
-Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your Virtual Network, subnets, and enterprise policy must be in the `eastus` or `westus` Azure region.
+Confirm that your Power Platform environment and enterprise policy are in supported Power Platform and Azure regions. For example, if your Power Platform environment is in the United States, then your Virtual Network and subnets must be in the **eastus** and **westus** Azure regions.
 
 | Power Platform region | Azure region |
 |-----------------------|--------------|
@@ -171,7 +171,7 @@ Yes, you can use an existing Virtual Network for Power Platform, provided that a
 
 ### Can I use US East 2 as the failover if my Power Platform environment is in Canada?
 
-To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast**, respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, establish Virtual Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region for connectivity.
+To ensure proper failover, the primary and failover subnets must be provisioned in **canadacentral** and **canadaeast**, respectively. For effective failover, create the primary and failover subnets in the **canadacentral** and **canadaeast** regions, respectively. Additionally, if you want to support connectivity with resources in the **useast2** region, establish Virtual Network peering between the primary and failover Virtual Networks, including the Virtual Network in the **useast2** region.
 
 ### What is a Dataverse plug-in?
 
@@ -192,10 +192,6 @@ As the number of concurrent plug-in executions increases, the infrastructure aut
 ### Who controls the Virtual Network and network policies associated with it?
 
 As a customer, you have ownership and control over the Virtual Network and its associated network policies. On the other hand, Power Platform uses the allocated IP addresses from the delegated subnet within that Virtual Network.
-
-### How can I configure Virtual Network support for Power Platform in Dev/Test environments without using two separate Virtual Networks in different Azure regions?
-
-One Virtual Network and one dedicated subnet in each of your primary and secondary Azure regions are required for production workloads to ensure proper failover. However, for Dev/Test environments, we recommend a single Virtual Network together with two dedicated subnets for Power Platform.
 
 ### Do [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) support Virtual Network?
 No, [Azure-aware plug-ins](/power-apps/developer/data-platform/write-custom-azure-aware-plugin) don't support Virtual Network.
