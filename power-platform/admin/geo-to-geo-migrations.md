@@ -51,6 +51,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 
 ### For environment administration features
 #### Before geo-to-geo migration
+- Environment settings (for example, [feature settings](./settings-features.md), [Generative AI features](./geographical-availability-copilot.md), [privacy and security settings](./settings-privacy-security.md)) will be set back to their default values after geo-to-geo migration. Take note of any environment settings you need to reconfigure after migration.
 - [Managed environment](admin/managed-environment-overview.md#managed-environments-overview) status and associated settings will be lost (for example, Admin Digest, Environment Routing). Take note of the managed environment status and associated settings so that you can reapply these settings after geo-to-geo migration.
 - Enterprise policy link state and associated properties will be lost (for example, [customer-managed keys](./customer-managed-key.md), [Virtual Network](./vnet-support-overview.md)). Take note of any enterprise policies linked to the environment so that you can relink the enterprise policies after geo-to-geo migration.
 - [Lockbox](./about-lockbox.md) requests for the environment undergoing G2G will be lost or broken. If Microsoft Support needs access to your environment after geo-to-geo migration, a new Lockbox request must be created.
@@ -60,6 +61,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 - [Currency allocations](./capacity-add-on.md) will be lost for the environment undergoing geo-to-geo migration. Take note of any currency allocations for the environment that you would like to retain after geo-to-geo migration.
 
 #### After geo-to-geo migration
+- Reconfigure environment settings as necessary.
 - [Reenable managed environments](./managed-environment-enable.md) and resave managed environment settings as necessary.
 - Relink enterprise policies to the environment as necessary. For example, [virtual network](./vnet-support-setup-configure.md#configure-your-power-platform-environment), [customer-managed keys](./customer-managed-key.md#manage-environments-encryption)
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
