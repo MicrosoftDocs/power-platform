@@ -3,11 +3,11 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 08/29/2024
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: matp 
+ms.reviewer: sericks 
 contributors: 
     - ProfessorKendrick
 search.audienceType: 
@@ -51,7 +51,7 @@ The following operations can be audited:
 - Deletion of audit logs.
 - For changes made to entity fields that can be localized, such as the Product entity name or description fields, the locale ID (LCID) appears in the audit record.
 
-Auditing is not supported on table or column definition changes or during authentication. Furthermore, auditing does not support retrieve operations or export operations. [Dataverse and model-driven apps activity logging](enable-use-comprehensive-auditing.md) can be enabled in addition to Dataverse auditing to log data retrieve operations and export operations.
+Auditing is not supported on table or column definition changes or during authentication. Furthermore, auditing does not support retrieve operations or export operations. [Dataverse and model-driven apps activity logging](enable-use-comprehensive-auditing.md) can be turned on, in addition to Dataverse auditing, to log data retrieve operations and export operations.
 
 The following list enumerates the non-customizable tables that cannot be audited. This list was obtained by testing for a CanModifyAuditSettings column value of false on each table's definition:
 
@@ -89,19 +89,21 @@ The following list enumerates the non-customizable tables that cannot be audited
 
 ## Configure auditing for an environment
 
-There are three levels where auditing can be configured: an environment, table, and column. Auditing must be enabled at the environment level first. To log data changes in a table, auditing must be enabled on the table, and on the column. 
+There are three levels where auditing can be configured: an environment, table, and column. Auditing must be turned on at the environment-level first. To log data changes in a table, auditing must be turned on for the table, and for the column. 
 
-To enable user access auditing (Log access) or activity logging (Read logs), auditing must be enabled at the environment level. The option to enable activity logging is only visible when the minimum Office licensing requirements are met.
+To turn on user access auditing (log access) or activity logging (Read logs), auditing must be turned on at the environment-level. The option to turn on activity logging is only visible when the minimum Office licensing requirements are met.
+
 > [!NOTE]
-> User access or activity logging is sent to Purview for Production environment only.
+> User access or activity logging is sent to Purview for production environments only.
 
-You must have System Administrator or System Customizer role or equivalent permissions to enable or disable auditing.
+You must have System Administrator or System Customizer role or equivalent permissions to turn on or off auditing.
 
-Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. See [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
+Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
-### Enable auditing via Security page (Preview)
-You must have Power Platform or Dynamics 365 admin role to enable or disable auditing via the [Security page](https://learn.microsoft.com/power-platform/admin/security/security-posture-overview).
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are enabled automatically when you enable auditing via the Security page. You can enable other tables where applicable but please note that there are some core tables that audit is enabled by default. 
+### Turn on auditing through Security page (Preview)
+You must have Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Security page](/security/security-posture-overview.md).
+
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can turn on other tables, where applicable, but please note that there are some core tables that audit is turned on by default. 
 
 |Category  |Table  |
 |-----------|-----------|
@@ -149,7 +151,7 @@ To meet your external and internal auditing, compliance, security, and governanc
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. From the left-side menu, select **Security**.
 1. Select the **Auditing** tile.
-1. Select the environment that you want to enable auditing.
+1. Select the environment that you want to turn on auditing.
 1. Select the **Turn on auditing** switch.
 1. Review the list of Dataverse data and Dynamics 365 apps entities.
 1. Review and update the **Event log retention** by selecting on the dropdown.
@@ -196,11 +198,11 @@ This task requires the System Administrator or System Customizer role or equival
 
 More information: [Dataverse developer guide: Configure auditing > Configure organization settings](/power-apps/developer/data-platform/auditing/configure#configure-organization-settings)
 
-## Enable auditing for a specific app in a web app
+## Turn on auditing for a specific app in a web app
 
 This task requires the System Administrator or System Customizer role or equivalent permissions.
 
-This feature allows you to quickly enable auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application, for example Sales tables correspond to the Sales Hub app.
+This feature allows you to quickly turn on auditing for multiple tables (entities) simultaneously. The grouping of tables corresponds to a Dynamics 365 application, for example Sales tables correspond to the Sales Hub app.
 
 1. In the web app, go to **Settings** (![Settings.](media/settings-gear-icon.png "Settings")) > **Advanced Settings**.
 
@@ -226,7 +228,7 @@ This task requires the System Administrator or System Customizer role or equival
 2. Select the environment for which you want to configure auditing.
 
    > [!NOTE]
-   > We recommend that you manage the audit configuration as part of a solution. This enables you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. To learn more about solutions, see [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
+   > We recommend that you manage the audit configuration as part of a solution. This allows you to easily find your customizations, apply your own solution published prefix, and export your solution for distribution to other environments. To learn more about solutions, see [Use a solution to customize](../alm/use-solutions-for-your-customizations.md). When using a solution, add all tables you want to configure for auditing to your solution, then perform steps 3-8 before saving and publishing your solution.
 
 3. Select **Dataverse** > **Tables**.
 
@@ -252,7 +254,7 @@ This task requires the System Administrator or System Customizer role or equival
 
     :::image type="content" source="media/field-security-schema-columns.png" alt-text="Under Schema, select Columns.":::
 
-12. Select a column you want to enable for auditing, and then expand **Advanced options**.
+12. Select a column you want to turn on for auditing, and then expand **Advanced options**.
 
     :::image type="content" source="media/field-security-mobile-phone.png" alt-text="Select the Mobile Phone column.":::
 
@@ -264,13 +266,13 @@ This task requires the System Administrator or System Customizer role or equival
 
 15. Repeat steps 3 – 10 for all tables and columns you want to edit.
 
-## Enable or disable entities and fields for auditing  
+## Turn on auditing for entities and fields
 
 <!-- this content copied from audit-data-user-activity -->
 
 System administrators or customizers can change the default audit settings for entities and for specific fields for an entity.  
   
-### Enable or disable auditing for an entity  
+### Turn on or off auditing for an entity  
   
 1. Browse to the Power Platform admin center and sign in using administrator credentials.
   
@@ -278,25 +280,25 @@ System administrators or customizers can change the default audit settings for e
 
 3. Under **Components**, expand **Entities**.  
   
-4. Select the entity for which you want to enable or disable auditing.  
+4. Select the entity for which you want to turn on auditing.  
   
-5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to enable auditing, or clear the **Auditing** check box to disable it.  
+5. To start auditing, on the **General** tab, in the **Data Services** section, select the **Auditing** check box to turn on auditing, or clear the **Auditing** check box to turn it off.  
   
    By default, when you start or stop auditing for an entity, you also start or stop auditing for all the fields of this entity.  
 
-   If you have enabled the **Read Logs** in the environment's audit settings, you'll need to enable the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. More information: [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
+   If you have turned on the **Read Logs** in the environment's audit settings, you'll need to turn on the **Single record auditing. Log a record when opened** and **Multiple record auditing. Log all records displayed on an opened page** auditing settings to see the read audit logs from this table. Learn more at [Activity logging](/power-platform/admin/enable-use-comprehensive-auditing).
   
 6. Select **Save**.  
   
 7. Publish the customization. To publish for a single entity, choose the entity, such as Account, and then select **Publish** on the toolbar.  
   
-### Enable or disable auditing for specific fields on an entity
+### Turn on or off auditing for specific fields on an entity
   
-1. Under the entity for which you want to enable or disable auditing with specific fields, select **Fields**.  
+1. Under the entity for which you want to turn on auditing with specific fields, select **Fields**.  
   
-2. To enable or disable a single field, open the field and in the Auditing section, select **Enable** or **Disable**.  
+2. To turn on or off auditing for a single field, open the field and in the **Auditing** section, select **Enable** or **Disable**.  
   
-   To enable or disable more than one field, select the fields you want, and then on the toolbar select **Edit**. In the **Edit Multiple Fields** dialog box, in the Auditing area, select **Enabled** or **Disabled**.  
+   To turn on or off auditing for more than one field, select the fields you want, and then on the toolbar select **Edit**. In the **Edit Multiple Fields** dialog box, in the **Auditing** area, select **Enabled** or **Disabled**.  
   
 3. Select **Save**.  
   
@@ -387,7 +389,7 @@ The deletion of a record's audit history can be done in a model-driven applicati
 
 ## Reduce log storage: Delete audit logs – legacy process
 
-When you enable Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space.
+When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space.
 
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the period covered by that audit log.
@@ -405,7 +407,7 @@ When you enable Dataverse auditing, your apps create audit logs to store changes
 
 ## Reduce log storage: Delete audit logs – new process
 
-When you enable Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space.
+When you turn on Dataverse auditing, your apps create audit logs to store changes to the records and user access. You can delete audit logs when they are no longer needed to free up log capacity space.
 
 > [!WARNING]
 > When you delete audit logs, you can no longer view the audit history for the tables, user access, period covered by that audit log.
