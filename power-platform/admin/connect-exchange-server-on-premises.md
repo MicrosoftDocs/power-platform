@@ -133,8 +133,6 @@ For more information about authentication, go to:
 
  If you've run the **Test Connection** command and have issues with the Exchange Server (Hybrid) profile connection, use the information in the **Test Connection** dialog to diagnose and fix the connection.
 
- ![Screenshot of the Test Connection dialog with an issue with "Auto discovering server location" and details about the error in the Failure Details box.](../admin/media/server-side-sync-exchange-hybrid-troubleshoot.png "Review the error messages")  
-
  In this example, there was a problem with the auto-discover server location feature. Review the username and password used for **Authentication Using Impersonation** for the Exchange Server (Hybrid) profile.  
 
  You can find information about recurring issues and other troubleshooting information in [Blog: Test and Enable Mailboxes in Microsoft Dynamics CRM 2015](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/31/test-and-enable-mailboxes-in-microsoft-dynamics-crm-2015/) and [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).  

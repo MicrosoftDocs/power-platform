@@ -4,7 +4,7 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/01/2024
+ms.date: 08/29/2024
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 > - After making a request, expect at least 10 days for the migration to be completed.  
 > - Geo migrations are not supported into or out of US GCC, US GCC High, or China.
 > - Geo migrations are restricted into or out of OCE or IND.
-> - There are important and critical preparation steps mentioned in the [Geo-to-geo migration steps section](#geo-to-geo-migration-steps) that need to be performed for Power Apps/Power Automate, etc. prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps/Power Automate solutions.
+> - There are important and critical preparation steps mentioned in the [Geo-to-geo migration steps](#geo-to-geo-migration-steps) section that need to be performed for Power Apps or Power Automate prior to the geo migration. If these steps are missed, it is difficult to recover Power Apps or Power Automate solutions.
 
 ### Supported environment types
 
@@ -39,17 +39,17 @@ The Geo Migration feature allows customers to move their environments in a singl
 
 ## Impact of migrating
 - Backups for the environment undergoing geo-to-geo migration are no longer available.
-- Your organization URL is changed. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another this identifier changes. See [New datacenter regions](new-datacenter-regions.md).
-- Your environment ID is changed to a new globally unique identifier.
+- Your organization URL is changed. Each of the regional datacenters has a unique identifier in the URL. When your organization is moved from one regional datacenter to another, this identifier changes. Learn more at [New datacenter regions](new-datacenter-regions.md).
+- Your environment ID is changed to a new globally, unique identifier.
 
 > [!NOTE]
-> Organization URLs must be unique. If your organization domain name has already been reserved in the destination datacenter, it won't be available. In the unlikely event this happens, we work with you to decide how to proceed.  
+> Organization URLs must be unique. If your organization, domain name has already been reserved in the destination datacenter, it isn't available. In the unlikely event this happens, we work with you to decide how to proceed.  
 
 ## Geo-to-geo migration steps
 > [!IMPORTANT]
-> As support for geo-to-geo migration is limited, many Power Platform components, Dynamics 365 applications, and environment administration settings are impacted. It is vital for you to follow this section to retain functionality of certain features.
+> As support for geo-to-geo migration is limited, many Power Platform components, Dynamics 365 applications, and environment, administration settings are impacted. It's vital for you to follow this section to retain functionality of certain features.
 
-### For environment administration features
+### For environment, administration features
 #### Before geo-to-geo migration
 - Environment settings (for example, [feature settings](./settings-features.md), [Generative AI features](./geographical-availability-copilot.md), [privacy and security settings](./settings-privacy-security.md)) will be set back to their default values after geo-to-geo migration. Take note of any environment settings you need to reconfigure after migration.
 - [Managed environment](admin/managed-environment-overview.md#managed-environments-overview) status and associated settings will be lost (for example, Admin Digest, Environment Routing). Take note of the managed environment status and associated settings so that you can reapply these settings after geo-to-geo migration.
@@ -73,66 +73,71 @@ The Geo Migration feature allows customers to move their environments in a singl
 ### For components that are in solutions
 #### Before geo-to-geo migration
 1. All solutions must [be exported](/power-apps/maker/data-platform/export-solutions) if they contain any of the following components that don't support geo-to-geo migration:
+
 > [!NOTE]
-> Managed solutions cannot be exported, but [ALM best practices](/power-platform/alm/overview-alm) ensure all managed solutions you own will have an associated unmanaged solution that you can export as a managed solution.
+> Managed solutions cannot be exported, but [ALM best practices](/power-platform/alm/overview-alm) ensure all managed solutions you own have an associated unmanaged solution that you can export as a managed solution.
+
 - Canvas apps
 - Custom pages
 - Component libraries
 - Custom connectors
 - Dataflows
-- Environment variables using Data Type "Data source"
+- Environment variables using data type "Data source"
 - Connection references
 - Chatbots
 
 2. Delete all canvas apps, custom pages, and component libraries in the solutions you exported in step 1.
+
 > [!IMPORTANT]
-> Solution-aware canvas apps, custom pages, and component libraries that you don't delete from the environment before geo-to-geo migration are left in an inoperable state after the migration completes. You cannot play, edit, or export them. You must delete them to unblock any further solution updates. They'll be restored upon solution import after geo-to-geo migration.
+> Solution-aware canvas apps, custom pages, and component libraries that you don't delete from the environment before geo-to-geo migration are left in an inoperable state after the migration completes. You can't play, edit, or export them. You must delete them to unblock any further solution updates. They are restored upon solution import after geo-to-geo migration.
 
 #### After geo-to-geo migration
+
 Complete these steps in order:
-1. Chatbots must be deleted. They will be recreated upon solution import in the next step.
-2. All solutions that were exported before geo-to-geo migration must [be imported](/power-apps/maker/data-platform/import-update-export-solutions).
-     - When prompted about **Connections**, make sure to **Review and adjust all connections** and recreate connections as necessary
-     - When prompted about **Environment variables**, make sure environment variables are configured correctly
-4. For Power Pages sites, [delete the website host](/power-pages/admin/delete-website) then [reactivate the site](/power-pages/admin/reactivate-website).
-5. For dataflows, depending on your connection, you may need to edit the dataflow and [reconfigure the connection](/power-query/dataflows/data-sources?tabs=power-bi-service#connect-to-a-data-source).
-6. Cloud flows must be [reenabled](/power-automate/disable-flow#turn-on-a-flow) to restore functionality.
+
+1. Chatbots must be deleted. They are recreated upon solution import in the next step.
+1. All solutions that were exported before geo-to-geo migration must [be imported](/power-apps/maker/data-platform/import-update-export-solutions).
+     - When prompted about **Connections**, make sure to **Review and adjust all connections** and recreate connections, as necessary.
+     - When prompted about **Environment variables**, make sure environment variables are configured correctly.
+1. For Power Pages sites, [delete the website host](/power-pages/admin/delete-website) then [reactivate the site](/power-pages/admin/reactivate-website).
+1. For dataflows, depending on your connection, you may need to edit the dataflow and [reconfigure the connection](/power-query/dataflows/data-sources?tabs=power-bi-service#connect-to-a-data-source).
+1. Cloud flows must be [reenabled](/power-automate/disable-flow#turn-on-a-flow) to restore functionality.
 
 ### For components that are not in solutions
-In general, it is recommended to create and add all components to solutions, and many components are added to a solution by default. However, if you still have components that are not in a solution, many of these components can be migrated with the following steps.
+In general, it's recommended to create and add all components to solutions, and many components are added to a solution, by default. However, if you still have components that aren't in a solution, many of these components can be migrated with the following steps.
 
 > [!NOTE]
-> - [On-premises gateways](./admin/wp-onpremises-gateway.md) cannot be migrated and must be manually reconfigured after geo-to-geo migration.
-> - Connections cannot be migrated and must be manually recreated after geo-to-geo migration. However, for connections that are used by canvas apps, cloud flows, or any solution-aware components, you will be prompted to reconfigure them as part of the import processes for each of these components.
+> - [On-premises gateways](wp-onpremises-gateway.md) can't be migrated and must be manually reconfigured after geo-to-geo migration.
+> - Connections can't be migrated and must be manually recreated after geo-to-geo migration. However, for connections that're used by canvas apps, cloud flows, or any solution-aware components, you're prompted to reconfigure them as part of the import processes for each of these components.
 
 #### Custom connectors
-[Custom connectors](/connectors/custom-connectors/) that are not in solutions are not supported for geo-to-geo migration, but can be downloaded as an OpenAPI JSON file then recreated using the OpenAPI JSON file after geo-to-geo migration.
+[Custom connectors](/connectors/custom-connectors/) that aren't in solutions aren't supported for geo-to-geo migration. They can be downloaded as an OpenAPI JSON file, then recreated using the OpenAPI JSON file after geo-to-geo migration.
 
 ##### Before geo-to-geo migration
-1. Navigate to [https://make.powerautomate.com/](https://make.powerautomate.com/)
-2. Navigate to the **Custom Connectors** page
-3. Click on the download button next to the custom connector you would like to download. This downloads an OpenAPI JSON file to your device.
+1. Navigate to [https://make.powerautomate.com/](https://make.powerautomate.com/).
+2. Navigate to the **Custom Connectors** page.
+3. Select the **Download** button next to the custom connector you want to download. This downloads an OpenAPI JSON file to your device.
 
 ##### After geo-to-geo migration
-1. Navigate to [https://make.powerautomate.com/](https://make.powerautomate.com/)
-2. Navigate to the **Custom Connectors** page
-3. Click on **New custom connector**
-4. Click on **Import an OpenAPI file** and select the OpenAPI JSON file that was downloaded in the **Before geo-to-geo migration** section.
+1. Navigate to [https://make.powerautomate.com/](https://make.powerautomate.com/).
+2. Navigate to the **Custom Connectors** page.
+3. Select **New custom connector**.
+4. Select **Import an OpenAPI file** and select the OpenAPI JSON file that was downloaded in the **Before geo-to-geo migration** section.
 
 #### Canvas apps
-Canvas apps can exist outside of solutions. In order to retain canvas apps, they must be exported before geo-to-geo migration then imported after geo-to-geo migration.
+Canvas apps can exist outside of solutions. In order to retain canvas apps, they must be exported before geo-to-geo migration, and then imported after geo-to-geo migration.
 
 ##### Before geo-to-geo migration
-[Export the canvas apps](/power-apps/maker/canvas-apps/export-import-app#exporting-a-canvas-app-package) that are not in solutions.
+[Export the canvas apps](/power-apps/maker/canvas-apps/export-import-app#exporting-a-canvas-app-package) that aren't in solutions.
 
 ##### After geo-to-geo migration
 [Import the canvas apps](/power-apps/maker/canvas-apps/export-import-app#importing-a-canvas-app-package) that were exported in the **Before geo-to-geo migration** section.
 
 #### Cloud flows
-Cloud flows can exist outside of solutions. In order to retain cloud flows, they must be exported before geo-to-geo migration then imported after geo-to-geo migration.
+Cloud flows can exist outside of solutions. In order to retain cloud flows, they must be exported before geo-to-geo migration, and then imported after geo-to-geo migration.
 
 ##### Before geo-to-geo migration
-[Export the cloud flows](/power-automate/export-import-flow-non-solution#export-a-flow-package) that are not in solutions.
+[Export the cloud flows](/power-automate/export-import-flow-non-solution#export-a-flow-package) that aren't in solutions.
 
 ##### After geo-to-geo migration
 [Import the cloud flows](/power-automate/export-import-flow-non-solution#import-a-flow) that were exported in the **Before geo-to-geo migration** section.
@@ -142,32 +147,32 @@ If you use any of the following Dynamics 365 apps, you need to take the followin
 
 #### Dataverse Accelerator
 ##### After geo-to-geo migration
-Uninstall the app using [PAC CLI](developer/cli/introduction.md) with these commands:
+Uninstall the app using [PAC CLI](../developer/cli/introduction.md) with these commands:
 ```
 pac solution delete --solution-name msdyn_DataverseAcceleratorApp --environment <environment URL>
 pac solution delete --solution-name DataverseAccelerator --environment <environment URL>
 pac solution delete --solution-name DataverseAccelerator_Anchor --environment <environment URL>
 ```
 
-After uninstallation, [reinstall the app](/power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator#install-the-dataverse-accelerator) via Power Platform admin center.
+After uninstallation, [reinstall the app](/power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator#install-the-dataverse-accelerator) through the Power Platform admin center.
 
-#### Project for the Web
+#### Project for the web
 ##### After geo-to-geo migration
-Project for the Web is reprovisioned automatically when navigating to [https://project.microsoft.com/](https://project.microsoft.com/). Your existing plans still remain intact.
+Project for the web is reprovisioned automatically when navigating to [https://project.microsoft.com/](https://project.microsoft.com/). Your existing plans still remain intact.
 
-#### Dynamics 365 Marketing Application (Customer Insights - Journeys)
+#### Dynamics 365 marketing application (Customer Insights - Journeys)
 ##### Before geo-to-geo migration
-Uninstall the Dynamics 365 Marketing application using the following guide: [Uninstall Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/uninstall).
+Uninstall the Dynamics 365 marketing application using the following guide: [Uninstall Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/uninstall).
 
 ##### After geo-to-geo migration
-[Reinstall the Dynamics 365 Marketing app](/dynamics365/customer-insights/journeys/setup) via Power Platform admin center.
+[Reinstall the Dynamics 365 marketing app](/dynamics365/customer-insights/journeys/setup) through the Power Platform admin center.
 
 ### Desktop applications
 If you use any of the following Power Platform desktop applications, you need to take the following actions to retain functionality after geo-to-geo migration.
 
 #### Power Automate machine runtime
 ##### After geo-to-geo migration
-If you selected the environment that is being migrated as your machine environment in the Power Automate machine runtime application, you need to reselect the environment in the app after geo-to-geo migration.
+If you selected the environment that's being migrated as your machine environment in the Power Automate machine runtime application, you need to reselect the environment in the app after geo-to-geo migration.
 
 ## How the move works  
 You should follow the above steps before and after geo-to-geo migration. The following table describes what [!INCLUDE[cc_Microsoft](../includes/cc-microsoft.md)] does before, during, and after the geo-to-geo migration. 
@@ -177,7 +182,5 @@ You should follow the above steps before and after geo-to-geo migration. The fol
 | **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and scheduling. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but may take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You will be alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment has migrated, you can perform the post migration steps. |
 
 We adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.  
-
-### Related information
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
