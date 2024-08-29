@@ -60,8 +60,6 @@ More information: [Contact Technical Support](get-help-support.md)
 ## Set the password expiration  
  Use the Security & privacy page to set how frequently a user's password expires and the number of days before a user is notified of an upcoming expiration.  
   
- ![Microsoft 365 admin center manage password expiration.](../admin/media/o365-admin-center-password-expiration.png "Microsoft 365 admin center manage password expiration")  
-  
 > [!TIP]
 >  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you'll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Microsoft Entra ID: how to enable, configure, and test self-service password reset](/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
   
