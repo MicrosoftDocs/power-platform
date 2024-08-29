@@ -101,9 +101,9 @@ You must have System Administrator or System Customizer role or equivalent permi
 Auditing can be configured manually through the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. Learn more at [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
 
 ### Turn on auditing through Security page (Preview)
-You must have Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Security page](/security/security-posture-overview.md).
+You must be assigned to the Power Platform or Dynamics 365 admin role to turn on or off auditing through the [Security page](/security/security-posture-overview.md).
 
-To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can turn on other tables, where applicable, but please note that there are some core tables that audit is turned on by default. 
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are turned on automatically when you turn on auditing through the Security page. You can audit other tables, where applicable, but please note that there are some core tables that audit is turned on by default. 
 
 |Category  |Table  |
 |-----------|-----------|
@@ -154,22 +154,21 @@ To meet your external and internal auditing, compliance, security, and governanc
 1. Select the environment that you want to turn on auditing.
 1. Select the **Turn on auditing** switch.
 1. Review the list of Dataverse data and Dynamics 365 apps entities.
-1. Review and update the **Event log retention** by selecting on the dropdown.
+1. Review and update the **Event log retention** by selecting the dropdown.
 1. Select the period that meets your data retention policy.
-1. The selected period is effective from the current date and overrides existing retention policy. To apply the new retention policy for new logs only, select to switch the **Existing logs** to **on**. 
+1. The selected period is effective from the current date and overrides the existing retention policy. To apply the new retention policy for new logs only, select to switch the **Existing logs** to **On**. 
 
 > [!NOTE]
-> It is recommended that you apply the new retention policy to all logs. If you turned on the **Existing logs** switch, older logs will continue to be retained using the prior retention policy, for example by default the initial logs are kept **Forever** and they will not be deleted with the new retention policy.
+> It is recommended that you apply the new retention policy to all logs. If you turned on the **Existing logs** switch, older logs continue to be retained using the prior retention policy. For example, by default, the initial logs are kept **Forever** and they aren't deleted with the new retention policy.
 
 ## Start/stop auditing for an environment and set retention policy
 
 This task requires the System Administrator or System Customizer role or equivalent permissions.
 
-> [!NOTE]
+> [!Important]
 > The audit retention period is not available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
 >  
->  **It is recommended that you use the Security page auditing option to set the Retention policy** as it provides the flexibility to apply the retention policy to existing logs.  
-
+>  It is recommended that you use the Security page auditing option to set the retention policy. This provides the flexibility to apply the retention policy to existing logs. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
   
