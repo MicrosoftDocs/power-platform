@@ -51,7 +51,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 
 ### For environment, administration features
 #### Before geo-to-geo migration
-- [Managed environment](admin/managed-environment-overview.md#managed-environments-overview) status and associated settings are lost, such as Admin Digest and environment routing. Take note of the Managed Environment status and associated settings so that you can reapply these settings after geo-to-geo migration.
+- [Managed environment](managed-environment-overview.md#managed-environments-overview) status and associated settings are lost, such as Admin Digest and environment routing. Take note of the Managed Environment status and associated settings so that you can reapply these settings after geo-to-geo migration.
 - Enterprise policy link state and associated properties are lost, such as [customer-managed keys](./customer-managed-key.md) and [Virtual Network](./vnet-support-overview.md). Take note of any enterprise policies linked to the environment so that you can relink the enterprise policies after geo-to-geo migration.
 - [Lockbox](./about-lockbox.md) requests for the environment undergoing geo-to-geo migaration are lost or broken. If Microsoft Support needs access to your environment after geo-to-geo migration, a new Lockbox request must be created.
 - [Data loss prevention (DLP) policies](wp-data-loss-prevention.md) that either include or exclude the environment undergoing geo-to-geo migration no longer apply to the environment. Take note of the DLP policies that apply to the environment so that you can reapply the policies after geo-to-geo migration.
@@ -105,7 +105,7 @@ Complete these steps in order:
 In general, it's recommended to create and add all components to solutions, and many components are added to a solution, by default. However, if you still have components that aren't in a solution, many of these components can be migrated with the following steps.
 
 > [!NOTE]
-> - [On-premises gateways](./admin/wp-onpremises-gateway.md) can't be migrated and must be manually reconfigured after geo-to-geo migration.
+> - [On-premises gateways](wp-onpremises-gateway.md) can't be migrated and must be manually reconfigured after geo-to-geo migration.
 > - Connections can't be migrated and must be manually recreated after geo-to-geo migration. However, for connections that're used by canvas apps, cloud flows, or any solution-aware components, you're prompted to reconfigure them as part of the import processes for each of these components.
 
 #### Custom connectors
@@ -145,7 +145,7 @@ If you use any of the following Dynamics 365 apps, you need to take the followin
 
 #### Dataverse Accelerator
 ##### After geo-to-geo migration
-Uninstall the app using [PAC CLI](developer/cli/introduction.md) with these commands:
+Uninstall the app using [PAC CLI](../developer/cli/introduction.md) with these commands:
 ```
 pac solution delete --solution-name msdyn_DataverseAcceleratorApp --environment <environment URL>
 pac solution delete --solution-name DataverseAccelerator --environment <environment URL>
