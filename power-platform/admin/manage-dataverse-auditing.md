@@ -89,13 +89,75 @@ The following list enumerates the non-customizable tables that cannot be audited
 
 ## Configure auditing for an environment
 
-There are three levels where auditing can be configured: an environment, table, and column. For table auditing to take place, auditing must be enabled at the environment level. For column auditing to take place, auditing must be enabled at the environment level and the table level.
+There are three levels where auditing can be configured: an environment, table, and column. Auditing must be enabled at the environment level first. To log data changes in a table, auditing must be enabled on the table, and on the column. 
 
 To enable user access auditing (Log access) or activity logging (Read logs), auditing must be enabled at the environment level. The option to enable activity logging is only visible when the minimum Office licensing requirements are met.
+> [!NOTE]
+> User access or activity logging is sent to Purview for Production environment only.
 
 You must have System Administrator or System Customizer role or equivalent permissions to enable or disable auditing.
 
 Auditing can be configured manually via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and the [Power Apps portal](https://make.powerapps.com/). Auditing can also be configured programmatically. See [Auditing overview](/power-apps/developer/data-platform/auditing/overview).
+
+### Enable auditing via Security page (Preview)
+You must have Power Platform or Dynamics 365 admin role to enable or disable auditing via the [Security page](https://learn.microsoft.com/power-platform/admin/security/security-posture-overview).
+To meet your external and internal auditing, compliance, security, and governance policies that are common to many enterprises, auditing for the following tables are enabled automatically when you enable auditing via the Security page. You can enable other tables where applicable but please note that there are some core tables that audit is enabled by default. 
+
+|Category  |Table  |
+|-----------|-----------|
+|Common entities| systemuser|
+|Common entities| role |
+|Common entities|report|
+|Common entities|goalrollupquery|
+|Common entities| metric|
+|Common entities| goal|
+|Common entities|bulkoperation|
+|Common entities|list|
+|Common entities|salesliterature|
+|Common entities | product|
+|Common entities| lead|
+|Common entities |contact|
+|Common entities| account|
+|Common entities | activitypointer|
+|Sales| opportunitysalesprocess|
+|Sales| leadtoopportunitysalesprocess|
+|Sales|invoice|
+|Sales| salesorder|
+|Sales|quote|
+|Sales| competitor|
+|Sales| opportunity|
+|Marketing | campaign|
+|CustomerService |translationprocess|
+|CustomerService|expiredprocess|
+|CustomerService| newprocess|
+|CustomerService| phonetocaseprocess|
+|CustomerService| service|
+|CustomerService| contract|
+|CustomerService| kbarticle|
+|CustomerService| knowledgearticle|
+|CustomerService| queueitem|
+|CustomerService| incident|
+|CustomerService| socialprofile|
+|Security|solution|
+|Security|entity|
+|Security|team|
+|Security|position|
+|Security|organization|
+|Security|fieldsecurityprofile|
+|Security|businessunit|
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. From the left-side menu, select **Security**.
+1. Select the **Auditing** tile.
+1. Select the environment that you want to enable auditing.
+1. Select the **Turn on auditing** switch.
+1. Review the list of Dataverse data and Dynamics 365 apps entities.
+1. Review and update the **Event log retention** by selecting on the dropdown.
+1. Select the period that meets your data retention policy.
+1. The selected period is effective from the current date and overrides existing retention policy. To apply the new retention policy for new logs only, select to switch the **Existing logs** to **on**. 
+
+> [!NOTE]
+> It is recommended that you apply the new retention policy to all logs. If you turned on the **Existing logs** switch, older logs will continue to be retained using the prior retention policy, for example by default the initial logs are kept **Forever** and they will not be deleted with the new retention policy.
 
 ## Start/stop auditing for an environment and set retention policy
 
@@ -103,6 +165,9 @@ This task requires the System Administrator or System Customizer role or equival
 
 > [!NOTE]
 > The audit retention period is not available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
+>  
+>  **It is recommended that you use the Security page auditing option to set the Retention policy** as it provides the flexibility to apply the retention policy to existing logs.  
+
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using administrator credentials.
   
@@ -121,15 +186,13 @@ This task requires the System Administrator or System Customizer role or equival
    | Set the retention policy for these logs   | Default: Forever   |
    | Set a custom retention policy | Maximum: 24,855 days. Visible if you select "Custom" in the above setting.   |  
 
-   When the audit retention period is set to Forever, logs will never be deleted. When the audit retention period is set to any other value, logs will be deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
+>[!NOTE]
+> When the audit retention period is set to **Forever**, logs will never be deleted. When the audit retention period is set to any other value, logs will be deleted continuously starting at the time an audit record exceeds the time defined in the retention policy.
+> Example: The retention policy is set to 30 days. Audit records that were created 30 days +1 second ago will start to be deleted in the background.
+>  Each audit log is stamped with the currently active retention period. **Changing the retention period here does not change the retention period for already existing records.** The new retention period will be applied to all new records created after the retention policy was changed.
+>  Example: The retention period is changed from 30 days to 90 days. Audit records that were created prior to the change will be deleted in the background after 30 days. Audit records that were created after the change will be deleted in the background after 90 days.
 
-   Example: The retention policy is set to 30 days. Audit records that were created 30 days +1 second ago will start to be deleted in the background.
-
-   Each audit log is stamped with the currently active retention period. Changing the retention period does not change the retention period for already existing records. The new retention period will be applied to all new records created after the retention policy was changed.
-
-   Example: The retention period is changed from 30 days to 90 days. Audit records that were created prior to the change will be deleted in the background after 30 days. Audit records that were created after the change will be deleted in the background after 90 days.
-
-4. Select **Save**.
+5. Select **Save**.
 
 More information: [Dataverse developer guide: Configure auditing > Configure organization settings](/power-apps/developer/data-platform/auditing/configure#configure-organization-settings)
 
