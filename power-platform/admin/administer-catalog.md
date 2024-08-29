@@ -3,7 +3,7 @@ title: "Administer the catalog"
 description: "Learn how to administer the catalog for Power Platform. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: derekkwanpm
 ms.author: derekkwan
-ms.date: 05/23/2024
+ms.date: 08/29/2024
 ms.reviewer: matp
 ms.topic: article
 ms.subservice: admin
@@ -106,7 +106,7 @@ You can add more catalogs to your tenant at any time by going through this wizar
 
 After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-In addition, When successfully completed, you see the Power Platform Catalog Manager in the **Apps** area in Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
+In addition, When successfully completed, the **Power Platform Catalog Manager** appears in the **Apps** area in Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
 
 Repeat this process if you would like to set up a catalog in more environments.
 
@@ -254,8 +254,3 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 
  [Use the catalog with Power Platform CLI (preview)](/power-platform/developer/submit-catalog-items)
 
-
-<!-- ### See also
-
-[Catalog in Power Platform (Preview)](catalog.md)   
-[View, submit, and install catalog items  (Preview)](submit-catalog-items.md) -->
