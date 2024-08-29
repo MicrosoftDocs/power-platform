@@ -457,7 +457,7 @@ Follow these steps if you want to return to a Microsoft managed encryption key.
     > [!Note]
     > The environment's encryption status can be:
     > - **Encrypted** - the Enterprise policy encryption key is active and the environment is encrypted with your key.
-    > - **Failed** - the Enterprise policy encryption key is not used and the environment continues to be encrypted with the Microsoft-managed key.
+    > - **Failed** - the Enterprise policy encryption key is not used by all the Dataverse storage services. They required more time to process and you can re-run the **Add environment**. Contact support if the re-run fails.
     > - **Warning** - the Enterprise policy encryption key is active and one of the service's data continues to be encrypted with the Microsoft-managed key. Learn more: [Power Automate CMK application warning messages](/power-automate/customer-managed-keys#power-automate-cmk-application-warning-messages)
     >
     > You can re-run the **Add environment** option for the environment that has a **Failed** encryption status. 
@@ -527,7 +527,7 @@ To rotate the encryption key by creating a new key version, use the following st
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
 
 > [!NOTE]
-> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, submit a Microsoft Support request for help.
+> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try re-running the **Add environment** or submit a Microsoft Support request for help.
 
 ## Environment database operations
 
