@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 08/30/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -221,18 +221,17 @@ To review these websites, select the recommendation to see a list of the website
 
 If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
 
-To shut down a website:
+#### Supported actions for websites without traffic in the last 30 days
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Under **Resources**, select **Power Pages sites**, and select the site.
-1. Select **Site Actions** > **Shut down this site** > **Stop**.
+##### Shut down
 
-    :::image type="content" source="media/power-platform-advisor/shut-down-site.svg" alt-text="Screenshot showing the action to shut down a site.":::
+To shut down a site:
+
+1. Select one or more sites from the list and select **Shut down**.
+1. After you confirm the shut down operation, the selected sites are shut down.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
-
-If you want to start the site again later, select **Site Actions** > **Start this site** > **Start**.
 
 ### Websites don't have Content Delivery Network (CDN) enabled
 
