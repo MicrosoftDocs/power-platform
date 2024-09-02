@@ -36,9 +36,9 @@ Consider the following recommendations to ensure that you prioritize tasks that 
 
 Adopt automation throughout your entire workload life cycle, from development to day-to-day management. Use the following examples to help you consider the broad areas of your workload life cycle that can benefit from automation:
 
-- **Pipeline definition, execution, and management**: Use continuous integration and continuous delivery (CI/CD) tools, like Azure DevOps and other DevOps tools, to automatically define a pipeline and how it runs. These tools can help you automate CI/CD tasks or other tasks, like creating reports.
+- **Pipeline definition, execution, and management**: Use continuous integration and continuous delivery (CI/CD) tools, like pipelines for Power Platform, Azure DevOps and other DevOps tools, to automatically define a pipeline and how it runs. These tools can help you automate CI/CD tasks or other tasks, like creating reports.
 
-- **Deployments**: Use tools like Azure Resource Manager templates, Bicep, Terraform, and Ansible to automate your workload development and release processes.
+- **Deployments**: Use tools like pipelines for Power Platform, Azure Resource Manager templates, Bicep, Terraform, and Ansible to automate your workload development and release processes.
 
 - **Testing**: Some tools are available for automating your testing processes. These tools can relieve a significant burden from your quality assurance team and ensure that tests are standardized and reliable.
 
