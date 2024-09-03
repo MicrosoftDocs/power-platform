@@ -144,3 +144,8 @@ Azure API Management has the capability, through policies, to convert our Micros
 1. Under `Inbound processing` select `Policies </>`.
 1. Delete the existing policy and paste the policy copied previously.
 1. Select `Save`.
+
+## Learn more
+
+* [SAP OData connector documentation](/connectors/sapodata/)
+* [SAP OData connector now supports OAuth2 and SAP Principal Propagation](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0)
