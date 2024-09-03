@@ -135,7 +135,6 @@ Use the Azure Synapse Analytics SQL connection for larger volumes of data to bui
 1. Select **Connect**.
 1. Enter the **Server** and **Database** names.
    - The server name can be found in the Azure portal. Enter the workspace name in the **Search** bar, and then select the workspace. On the **Overview** page, copy the **Serverless SQL endpoint** and return to the **Power BI SQL Server database** page and paste it to the **Server** field.
-   :::image type="content" source="media/servless-sql-endp-pbid.png" alt-text="Copy Serverless SQL endpoint" lightbox="media/servless-sql-endp-pbid.png":::
    - The database name can be found in the Azure Synapse Link in [Power Apps (make.powerapps.com)](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Select **Azure Synapse Link for Dataverse** on the left navigation pane, select the Azure Synapse Link, and then select **Go to Azure Synapse Analytics workspace** on the command bar. Your database name can be found under the **Lake database** folder on the **Data** page.
 1. Select **OK**.
 
