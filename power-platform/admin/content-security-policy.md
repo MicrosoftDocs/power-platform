@@ -76,7 +76,7 @@ For the Dynamics 365 App for Outlook, add the following to `frame-ancestors`:
 
 For embedding Power Apps in Power BI reports, add the following to `frame-ancestors`:
 - `https://app.powerbi.com`
-- `https://msi-pbi.pbi.microsoft.com`
+- `https://ms-pbi.pbi.microsoft.com`
 
 ### Important considerations
 Turning off the default directive and saving with an empty list *turns off the directive completely* and doesn't send it as part of the CSP response header.
