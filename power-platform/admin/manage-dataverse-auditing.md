@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 09/03/2024
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -18,7 +18,7 @@ search.audienceType:
 
 The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment.
 
-Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the Audit History tab for a single record and in the Audit Summary view for all audited operations in a single environment. Audit logs can also be retrieved using the Web API or the SDK for .NET. Audit logs are created when there are changes to the record on a table where audit is enabled. Audit log for updates are created when a new value is different from the old value of a column. 
+Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. Audit logs can be viewed in the **Audit History** tab for a single record and in the **Audit Summary** view for all audited operations in a single environment. Audit logs can also be retrieved using the web API or the SDK for .NET. Audit logs are created when there are changes to the record on a table where auditing is turned on. Audit log for updates are created when a new value is different from the old value of a column. 
 
 > [!NOTE]
 > The use of entity-related terminology depends on the protocol or class library used. See [Terminology use depending on protocol or technology](/power-apps/developer/data-platform/understand-terminology).
