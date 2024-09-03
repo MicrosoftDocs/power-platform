@@ -4,12 +4,15 @@ description: View and manage email tracking settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/19/2022
+ms.date: 09/03/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
   - admin
+ms.contributors:
+- rahulmital
 ---
+
 # Manage email tracking settings
 
 Use Email settings to adjust how customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), features appear and function.
@@ -40,9 +43,6 @@ Make sure you have the System Administrator or System Customizer security role o
 > |Use smart matching|Default: Off. Select **On** to use smart matching to correlate email based on the similarity between email messages. Smart matching isn’t as accurate as tracking tokens or folder-level tracking. More information: [Email message filtering and correlation](email-message-filtering-correlation.md)|
 > |**Folder-level tracking**||  
 > |Use folder-level tracking for Exchange folders (server-side synchronization must be enabled)|Default: On. Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders, and then move messages to those folders to track them automatically on virtually any device. More information: [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)<br /><br /> Folder-level tracking provides 100% tracking accuracy. To use folder-level tracking:<br /><br /> -   Select **On**.<br />-   Your organization must synchronize email through server-side synchronization. More information: [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)|  
-> |**Tracking items**| |
-> |People can use categories to track emails and appointments|Default: Off. Content coming.|
-> |Allow auto-tracking on outgoing email|Default: Off. Content coming.|
 > |**Tracking between people**| |
 > |Track emails sent between Dynamics 365 users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 
 
