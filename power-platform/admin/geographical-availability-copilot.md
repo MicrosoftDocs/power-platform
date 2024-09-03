@@ -22,6 +22,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
   - ai-seo-date:09/07/2023
+  - copilot-learning-hub
 ms.collection: 
     - bap-ai-copilot
 ---
