@@ -527,7 +527,7 @@ To rotate the encryption key by creating a new key version, use the following st
 1. On the **Enterprise policies** page, select the **Environments with policies** tab. The list of environments that were added to enterprise policies are displayed.
 
 > [!NOTE]
-> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try re-running the **Add environment** or submit a Microsoft Support request for help.
+> There might be situations where the **Environment status** or the **Encryption status** show a **Failed** status. When this occurs, you can try re-running the **Add environment** operation or submit a Microsoft Support request for help.
 
 ## Environment database operations
 
