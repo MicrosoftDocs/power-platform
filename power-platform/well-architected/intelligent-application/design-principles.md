@@ -107,7 +107,7 @@ Optimizing the user experience for an intelligent application workload involves 
 
 - **Conversation design**: Design conversations that are intuitive and easy to navigate. Use clear and concise language, and ensure that the AI can handle common user queries effectively. Focus on helping users achieve their goals with minimal effort. Understand user intents and provide relevant responses quickly to ensure a seamless and efficient user experience.
 
-- **Handling limitations**: Implement fallback mechanisms for topics the generative AI can't handle, such as redirecting users to human agents or providing alternative resources. Design robust error-handling processes to manage unexpected inputs gracefully. Inform users when the AI cannot process their request and offer alternatives.
+- **Handling limitations**: Implement fallback mechanisms for topics the generative AI can't handle, such as redirecting users to human agents or providing alternative resources. Design robust error-handling processes to manage unexpected inputs gracefully. Inform users when the AI is unable to process their request and offer alternatives.
 
 - **User feedback**: Integrate mechanisms to gather user feedback continuously. Microsoft Copilot Studio provides [customer satisfaction analytics](/microsoft-copilot-studio/analytics-csat) that provide actionable insights on drivers of satisfaction or dissatisfaction with your copilot's responses. Use the collected feedback to refine and improve the AI models and overall workload. Regular updates based on user input can significantly enhance the user experience.
 

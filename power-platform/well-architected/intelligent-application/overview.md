@@ -117,7 +117,7 @@ The success of your intelligent application workload depends on users being comf
 - **User-centric design**: Design the system to be intuitive and user-friendly. Complex interfaces can deter users&mdash;simplicity and clarity are critical. Ensure the system is accessible to all users.
 - **Training**: Facilitate comprehensive training sessions and provide ongoing support.
 - **Feedback loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models.
-- **Transparency and trust**: Ensure end users know that they're using a workload that includes generative AI capabilities. Clearly communicate why an AI solution was chosen, how it's designed, and how it's monitored and updated.
+- **Transparency and trust**: Ensure end users know that they're using a workload that includes generative AI capabilities. Clearly communicate why an AI solution was chosen, how it was designed, and how it's monitored and updated.
 - **Change management**: Align the change with the organization's culture and values, to ensure broad acceptance and support. 
 
 ### Risks and mitigations

@@ -13,13 +13,13 @@ ms.topic: conceptual
 
 Security is critical for any architecture. Microsoft Power Platform offers a comprehensive range of tools to effectively secure your intelligent application workload. This article describes security considerations and recommendations for developing intelligent application workloads with Power Platform.
 
-Copilot for Dynamics 365 and Power Platform features follow a set of core security and privacy practices and the Microsoft [Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Dynamics 365 and Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls. For more information on Copilot Studio and Power Platform features, see [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance), [FAQ for Copilot data security and privacy](/power-platform/faqs-copilot-data-security-privacy) and [Security in Microsoft Power Platform](/power-platform/admin/security/overview).
+Copilot for Dynamics 365 and Power Platform features follow a set of core security and privacy practices and the Microsoft [Responsible AI Standard](https://www.microsoft.com/ai/principles-and-approach). Dynamics 365 and Power Platform data is protected by comprehensive, industry-leading compliance, security, and privacy controls. For more information on Copilot Studio and Power Platform security features, see [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance), [FAQ for Copilot data security and privacy](/power-platform/faqs-copilot-data-security-privacy) and [Security in Microsoft Power Platform](/power-platform/admin/security/overview).
 
 You should periodically assess the services and technologies you employ to ensure that your security measures align with the changing threat landscape.
 
-## Understand your security requirements
+## Understand security requirements
 
-Understand the key requirements for the intelligent application workload you're implementing.
+Understand the key requirements for the intelligent application workload you're implementing. Ask yourself the following questions to help identify the security measures to address.
 
 ### Access control and authentication
 
@@ -36,7 +36,7 @@ Understand the key requirements for the intelligent application workload you're 
  
 ### Compliance and data residency
 
-- What data residency requirements do you have for the types of data being used with the intelligent application workload? Understand where your data will reside and if the location aligns with your legal or regulatory obligations?
+- What data residency requirements apply to the data used in the intelligent application workload? Do you know where your data will reside and if the location aligns with your legal or regulatory obligations?
 - What regulatory and compliance requirements must be met for the intelligent application workload?
  
 ### System integration and network requirements
@@ -50,9 +50,11 @@ Understand the key requirements for the intelligent application workload you're 
 
 ## Implement robust authentication and access control measures
 
-Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad), or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
+Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad) or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
-- Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing MFA](/entra/fundamentals/how-subscriptions-associated-directory) adds an extra layer of security. Define roles and permissions to ensure that users have access only to the resources they need and to minimize the risk of unauthorized access. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
+- Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing MFA](/entra/fundamentals/how-subscriptions-associated-directory) adds an extra layer of security. Tto minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
+ 
+<!-- Multifactor auth isn't discussed in above link. Is it the correct link? OR should we change the text link so users aren't confused about where they've landed? -->
 
 Learn more:
 
@@ -62,11 +64,11 @@ Learn more:
 
 ## Understand how regulatory requirements affect your project
 
-Identify and adhere to regulatory requirements and norms applicable to your industry, such as GDPR, HIPAA, or CCPA. Implement necessary controls to ensure compliance. Schedule regular compliance audits to verify adherence to regulatory standards and address any gaps. Assess if there are specific requirements for data location, such as data must be stored within a particular country or region. Ensure that your data storage strategy meets these requirements. 
+Identify and adhere to regulatory requirements and norms applicable to your industry, such as GDPR (General Data Protection Regulation), HIPAA (Health Insurance Portability and Accountability Act), or CCPA (California Consumer Privacy Act). Implement necessary controls to ensure compliance. Schedule regular compliance audits to verify adherence to regulatory standards and address any gaps. Assess if there are specific requirements for data location, such as a requirement for data to be stored in a particular country or region. Ensure that your data storage strategy meets these requirements. 
 
-Ensuring that data is protected and managed in compliance with regulatory requirements. Protecting the data handled by the intelligent application workload is critical to maintaining trust and adhering to legal and regulatory standards.
+Ensure that data is protected and managed in compliance with regulatory requirements. Protecting the data handled by the intelligent application workload is critical to maintaining trust and adherence to legal and regulatory standards.
 
-Microsoft complies with data protection and privacy laws applicable to cloud services. Our compliance with world-class industry standards is verified. Environments can be created in specific regions, even if different from the region the tenant resides in. By default, conversation transcripts are only kept for 30 days in Dataverse. This can be updated on per-environment basis.
+Microsoft complies with data protection and privacy laws applicable to cloud services. Our compliance with world-class industry standards is verified. Environments can be created in specific regions, even if different from the region where the tenant resides. By default, conversation transcripts are only kept for 30 days in Dataverse. You can adjust this retention period on a per-environment basis.
 
 Learn more:
 
@@ -81,16 +83,16 @@ Learn more:
 
 ## Secure all integrations
 
-Ensure secure communication between your intelligent application workload and data sources. Use service principals for nonhuman access to resources and managed identities for Azure resources to simplify identity management and enhance security. Secure APIs by using OAuth2 for authentication and ensuring that all API communications are encrypted. Your intelligent application workload needs to integrate with other systems to access and process data. Using service principals ensures connections are secure and don't rely on individual credentials.
+Ensure secure communication between your intelligent application workload and data sources. Your intelligent application workload needs to integrate with other systems to access and process data. To simplify identity management and enhance security, use service principals for nonhuman access to resources and managed identities for Azure resources. Secure APIs by using OAuth2 for authentication and by ensuring that all API communications are encrypted. Using service principals ensures connections are secure and don't rely on individual credentials.
 
 Learn more:
 
 - [Design for integration security](/power-platform/well-architected/security/principles#design-for-integration-security)
 - [Service Principal support](/power-automate/service-principal-support)
 
-## Ongoing monitoring and auditing
+## Implement ongoing monitoring and auditing
 
-The main purpose of security monitoring is threat detection. The primary objective is to prevent potential security breaches and maintain a secure environment. Continuously monitor and audit the intelligent application workloads activities to detect and respond proactively. Security is an ongoing process, not one-time configuration. Regular monitoring and auditing user access and interactions are essential to keep your intelligent application workload secure.
+The main purpose of security monitoring is threat detection. The primary objective is to prevent potential security breaches and maintain a secure environment. Continuously monitor and audit the intelligent application workload's activities to detect and respond proactively. Security is an ongoing process, not a one-time configuration task. Regular monitoring and auditing of user access and interactions are essential to keep your intelligent application workload secure.
 
 Learn more:
 
