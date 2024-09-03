@@ -13,15 +13,15 @@ search.audienceType:
 
 # Hybrid Modern Authentication (HMA) for Exchange on-premises
 
-Dynamics 365 can connect to mailboxes hosted on Exchange Server (on-premises) by using Hybrid Modern Authentication (HMA). Server-side synchronization will authenticate against Microsoft Entra by using a certificate you provide and stored securely in Azure Key Vault. You'll need to establish an application registration secured by a client secret to enable Dynamics 365 to access the certificate in Key Vault. After Dynamics 365 is able to retrieve the certificate, the certificate will be used to authenticate as a specific app and access the Exchange (on-premises) resource. 
+Dynamics 365 can connect to mailboxes hosted on Exchange Server (on-premises) by using Hybrid Modern Authentication (HMA). Server-side synchronization authenticates against Microsoft Entra by using a certificate you provide and stored securely in Azure Key Vault. You need to establish an application registration secured by a client secret to enable Dynamics 365 to access the certificate in Key Vault. After Dynamics 365 is able to retrieve the certificate, the certificate is used to authenticate as a specific app and access the Exchange (on-premises) resource. 
 
 ## Supported Exchange versions
 
-HMA will only be available from Exchange 2013 (CU19+) or Exchange 2016 (CU8+). More information: [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-hybrid-modern-authentication-for-exchange-on-premises/ba-p/607476) (blog)
+HMA is only available from Exchange 2013 (CU19+) or Exchange 2016 (CU8+). More information: [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-hybrid-modern-authentication-for-exchange-on-premises/ba-p/607476) (blog)
 
 ## Prerequisites
 
-To deploy HMA with Dynamics 365, you'll need to meet the following requirements:
+To deploy HMA with Dynamics 365, you need to meet the following requirements:
 
 - **HMA must be enabled on Exchange by using Microsoft Entra ID pass-through authentication**. More information:
 
@@ -45,20 +45,17 @@ Follow the steps below to configure HMA for Exchange (on-premises).
 
 2. Select **Generate/Import**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing Generate/Import selected.](media/azure-key-vault-generate-import[1].png "Select Generate/Import")
-
 3. At this point, a certificate can be either generated or imported. Specify a certificate name, and then select **Create**. 
 
-The certificate name will be used later to reference the certificate. In this example, the certificate is named **HMA-Cert**. 
+The certificate name is used later to reference the certificate. In this example, the certificate is named **HMA-Cert**. 
 
 ### Create a new app registration for Key Vault access 
 
-Create a new app registration in the Azure portal in the tenant where the Key Vault resides. For these example, the app will be named **KV-App** during the configuration process. More information: [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
+Create a new app registration in the Azure portal in the tenant where the Key Vault resides. For this example, the app is named **KV-App** during the configuration process. More information: [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
 
 ### Add a client secret for KV-App 
 
-The client secret will be used by Dynamics 365 to authenticate the app and retrieve the certificate. More information: [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)
+The client secret is used by Dynamics 365 to authenticate the app and retrieve the certificate. More information: [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret)
 
 ### Add KV-App to the Key Vault access policies 
 
@@ -66,10 +63,7 @@ The client secret will be used by Dynamics 365 to authenticate the app and retri
 
 2. Select **Add Access Policy**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of Azure Key Vault Add access policy selected.](media/azure-key-vault-access-policies2[1].png "Azure Key Vault add access policy")
-
-3. For **Select principal**, select a principal. For these example, we'll select **KV-App**. 
+3. For **Select principal**, select a principal. For this example, select **KV-App**. 
 
 4. Select permissions. Be sure to add **Get permission** under **Secret permissions** and **Certificate permissions**.  Both are required for the KV-App to be able to access the certificate.
 
@@ -83,7 +77,7 @@ In this example, the app will be named **HMA-App** during this configuration pro
 
 ## Add the certificate for HMA-App 
 
-This will be used by Dynamics 365 to authenticate HMA-App. HMA only supports certificate usage to authenticate an app; therefore, a certificate is needed for this authentication scheme. 
+This is used by Dynamics 365 to authenticate HMA-App. HMA only supports certificate usage to authenticate an app; therefore, a certificate is needed for this authentication scheme. 
 
 Add the HMA-Cert previously provisioned in Key Vault. More information: [Add a certificate](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
 
@@ -94,9 +88,6 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 1. In the [Azure portal](https://portal.azure.com/), open **App registrations** and select **HMA-App**. 
 
 2. Select **API Permissions** > **Add a permission**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of adding API permissions to the app.](media/azure-key-vault-api-permissions[1].png "Add API permissions to the app")
 
 3. Select **APIs my organization uses**.
 
@@ -115,22 +106,15 @@ To allow HMA-App to have access to Exchange (on-premises), grant the **Office 36
 
 7. Select **Grant admin consent**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of granting admin access to API permission for the app.](media/azure-key-vault-api-permissions-grant-admin-access[1].png "Grant admin access to API permission for the app")
-
-
 ## Email server profile with authentication type Exchange Hybrid Modern Auth (HMA)
 
 Before you [create an email server profile](connect-exchange-server-on-premises.md) on Dynamics 365 by using Exchange Hybrid Modern Auth (HMA), you need to collect the following information from the Azure portal:
 
 - EWS URL: The Exchange Web Services (EWS) endpoint where Exchange (on-premises) is located, which must be publicly accessible from Dynamics 365. 
-- Microsoft Entra resource Id: The Azure resource ID to which the HMA app will request access. It's usually the host part of the EWS endpoint URL. 
+- Microsoft Entra resource Id: The Azure resource ID to which the HMA app requests access. It's usually the host part of the EWS endpoint URL. 
 - TenantId: The tenant ID of the tenant where Exchange (on-premises) is configured with Microsoft Entra ID pass-through authentication. 
 - HMA Application Id: The App ID for HMA-App. It can be found on the main page for the app registration of HMA-App.
 - Key Vault Uri: The URI of the Key Vault used for certificate storage. 
 - Key Vault KeyName: The certificate name used in Key Vault. 
 - KeyVault Application Id: The app ID of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
 - KeyVault Client Secret: The client secret for the KV-App used by Dynamics 365. 
-
-  > [!div class="mx-imgBorder"] 
-  > ![Screenshot of Exchange Hybrid Modern Auth (HMA) email server profile.](media/hma-auth.png "Exchange Hybrid Modern Auth (HMA)")

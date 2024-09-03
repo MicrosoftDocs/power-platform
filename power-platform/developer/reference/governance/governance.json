@@ -109,7 +109,7 @@
           {
             "in": "path",
             "name": "reportId",
-            "description": "The report ID",
+            "description": "The report ID.",
             "required": true,
             "type": "string"
           },
@@ -224,7 +224,8 @@
           "description": "The URI of the next page of the report containing additional cross-tenant connections.",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "CrossTenantConnectionReportsResponseWithOdataContinuation": {
       "type": "object",
@@ -240,7 +241,62 @@
           "description": "The URI of the next page of the list response.",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
+    },
+    "SharedConnector": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "isCustomApi": {
+          "type": "boolean"
+        },
+        "iconUri": {
+          "type": "string"
+        },
+        "tier": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "externalDocumentUri": {
+          "type": "string"
+        },
+        "externalDocumentDescription": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "SharedConnectorsResponseWithOdataContinuation": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SharedConnector"
+          }
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
     }
   },
   "securityDefinitions": {
@@ -248,13 +304,17 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
-      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "scopes": {
+        ".default": ".default"
+      },
       "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": [
+        ".default"
+      ]
     }
   ]
 }

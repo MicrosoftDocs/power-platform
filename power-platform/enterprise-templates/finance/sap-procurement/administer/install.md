@@ -29,7 +29,7 @@ This article provides links to the SAP Procurement solution files and gives the 
 
 You have the option to download either managed or unmanaged solution files.
 
-Whichever option you choose, be sure to download both **SAP Base** and **SAP Procurement** solution files. 
+Whichever option you choose, be sure to download both **SAP Base** and **SAP Procurement** solution files.
 
 - Managed
   - [mpa_SAPBase_managed.zip](https://aka.ms/SAPBaseManagedSolution)
