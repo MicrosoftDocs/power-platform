@@ -18,64 +18,15 @@ ms.subservice: solution-templates
 
 As a Power Platform admin, you install, set up, and deploy the SAP Setup Assistant for your organization. This article covers the following steps:
 
-## Step 1: Review prerequisites
-
-Make sure that you have the required license and an environment and data policy in place before you start.
-
-### Confirm licensing
-
-Make sure that your organization has the necessary licensing to use enterprise templates. Power Apps usage rights that are included with Microsoft 365 and Office 365 licenses aren't sufficient. You need one of the following Power Apps plans:
-
-- Power Apps Premium
-- Power Apps per app
-- Power Apps per app pay-as-you-go-meter
-- Power Apps use rights included with Dynamics 365 licenses
-
-> [!TIP]
-> A free [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/) is a great way to install the template for evaluation purposes.
-
-More license details are available in the [Microsoft Power Platform Licensing Guide.](https://go.microsoft.com/fwlink/?linkid=2085130)
-
-### Create environment and data policies
-
-It's important to have a cohesive environment and data policy and to ensure required resources in place.
-
-- **Administrators**
-
-  Make sure that admins with the necessary privileges are available to assign licenses and create environments:
-
-  - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licenses
-  - Power Platform Administrator to create environments
-
-  [Learn more about Microsoft Power Platform administration.](/power-platform/admin/)
-
-- **Environments**
-
-  Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments.](/power-platform/admin/create-environment)
-
-  - Make sure that a Power Platform environment is set up with a Dataverse database.
-  - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
-
-  [Learn more about Power Platform environments.](/power-platform/admin/environments-overview)
-
-- **Data loss prevention policies**
-
-  Make sure that the environment has access to the connectors used by the SAP Setup Assistant template:
-
-  - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-  - [Office 365 Outlook connector](/connectors/office365/)
-  
-  [Learn more about data loss prevention policies.](/power-platform/admin/wp-data-loss-prevention)
-
-## Step 2: Create connections
+## Step 1: Create connections
 
 Cloud flows need specific connection references to work correctly. Connection references are included in the solution, but connectors often need to be set up manually. You need to set up six new connections for the SAP Setup Assistant app.
 
 It's best to create the connections before you import the solution. If you create the connections during import, you have to jump back and forth between browser windows.
 
 1. Sign in to [Power Apps.](https://make.preview.powerapps.com/)
-2. Select the target environment where you want to install the template
-3. Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
+2. Select the target environment where you want to install the SAP Setup Assistant
+4. Go to **Connections** and select **+ New Connection** to create new connections for each of these connectors if they do not already exist:
 
     - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
     - [Office 365 Users connector](/connectors/office365users/)
@@ -86,7 +37,7 @@ It's best to create the connections before you import the solution. If you creat
 
   [Learn how to manage connections in canvas apps.](/power-apps/maker/canvas-apps/add-manage-connections)
 
-## Step 3: Install SAP Setup Assistant
+## Step 2: Install SAP Setup Assistant
 
 You have one options for installing the SAP Setup Assistant:
 
@@ -106,7 +57,7 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 3. Agree to the *Terms and Privacy* statements when prompted.
 
-4. Select **Install**. One [solutions](/power-platform/alm/solution-concepts-alm) are installed in your environment:
+4. Select **Install**. One [solution](/power-platform/alm/solution-concepts-alm) is installed in your environment:
 
     - **SAP Setup Assistant**
   
@@ -114,7 +65,7 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
     Go to the [SAP Setup Assistant overview article](./overview.md) to learn more about the solution.
 
-### Step 4: Update Connection References
+## Step 3: Update Connection References
 
 There are six connection references imported as part of the solution. Inorder for the cloud flows to run , you need to update the each connection reference with the connections created in the previous steps.
 
@@ -133,16 +84,16 @@ There are six connection references imported as part of the solution. Inorder fo
    - **Save** the changes
    - Pop-up will be prompted for confirmation, select **Save changes**
 
-### Step 5: Turn on cloud flows
-Open the newly installed SAP Setup Assistant and verify that the eight cloud flows are set to the on status.If they aren't turn them on
+## Step 4: Turn on cloud flows
+Open the newly installed SAP Setup Assistant and verify that the eight cloud flows are set to the **On** status.If they aren't turn them **On**
 
-1. Selection **Solutions** on the left pan
-2. Select the **SAP Setup Assistant** from managed solutions list
-3. Select **Cloud flows(8)** on the left pan
-4. Select each of the eight flows in the list to verify that each one is turned on
-5. Select **Turn on** on the command bar if the flow is not already set to on.
+1. Select **Solutions** on the left pane
+2. Go to the **Managed** Solutions list, Select the **SAP Setup Assistant**
+3. Select **Cloud flows(8)** on the left pane
+4. Navigate into the cloud flows that have **Status**="Off"
+5. Select **Turn on** on the command bar.
    
-### Step 6 : Use the SAP Setup Assistant
+## Step 5 : Use the SAP Setup Assistant
 
 **SAP Setup Assistant** is the canvas app, installed as part of the SAP Setup Assistant solution:
 
