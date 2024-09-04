@@ -47,12 +47,12 @@ The SAP Setup Assistan template is available in [Microsoft AppSource](<https://a
   - **ISO Language Code** is the choice that stores the abbreviations for the available language codes.
 - Eight Cloud flows
 - Six Connection references
-  - **Template Installer Dataverse**
-  - **Template Installer Office 365 Users**
-  - **Template Power Apps for Makers**
-  - **Template Power Automate Management**
-  - **Template Power Platform for Admins**
-  - **Power Query Dataflows**
+  - **SAP Setup Assistant - Dataverse**
+  - **SAP Setup Assistant - Office 365 Users**
+  - **SAP Setup Assistant - Power Apps for Makers**
+  - **SAP Setup Assistant - Power Automate Management**
+  - **SAP Setup Assistant - Power Platform for Admins**
+  - **SAP Setup Assistant - Power Query Dataflows**
 - One security role
   - **Template Installer**
 - Thirteen Dataverse Tables
