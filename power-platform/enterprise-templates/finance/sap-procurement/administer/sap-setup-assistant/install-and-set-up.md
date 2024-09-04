@@ -70,7 +70,8 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 There are six connection references imported as part of the solution. Inorder for the cloud flows to run , you need to update the each connection reference with the connections created in the previous steps.
 
 1. Go to the Solutions, find the **Default Solution** in your environment and open it.
-   :::image type="content" source="media/sap-setup-assistant/power-apps-default-solution.png" alt-text="Image of Power Apps Default Solution.":::
+
+   :::image type="content" source="media/power-apps-default-solution.png" alt-text="Image of Power Apps Default Solution.":::
 3. Select **Connection References** from the list of the Objects in the left pane
 4. Select each Connection References from the list:
    - SAP Setup Assistant - Power Query Dataflows
@@ -79,14 +80,16 @@ There are six connection references imported as part of the solution. Inorder fo
    - SAP Setup Assistant - Power Apps for Makers
    - SAP Setup Assistant - Power Automate Management
    - SAP Setup Assistant - Power Platform for Admins
-     :::image type="content" source="media/sap-setup-assistant/connection-references-list-in-default-soultion.png" alt-text="Image of List of SAP Setup Assistant Connection References.":::
+     :::image type="content" source="media/connection-references-list-in-default-soultion.png" alt-text="Image of List of SAP Setup Assistant Connection References.":::
 5. For each connection :
    - Click on the Connection Reference
    - Select the Connection you have created in step 2 from the **Connection** dropdown
    - **Save** the changes
-     :::image type="content" source="media/sap-setup-assistant/update-connection-for-connection-reference.png" alt-text="Image of Updating the SAP Setup Assistant Connection Reference.":::
+
+     :::image type="content" source="media/update-connection-for-connection-reference.png" alt-text="Image of Updating the SAP Setup Assistant Connection Reference.":::
    - Pop-up will be prompted for confirmation, select **Save changes**
-     :::image type="content" source="media/sap-setup-assistant/save-connection-in-connection-reference.png" alt-text="Image of Saving the SAP Setup Assistant Connection Reference.":::
+
+     :::image type="content" source="media/save-connection-in-connection-reference.png" alt-text="Image of Saving the SAP Setup Assistant Connection Reference.":::
 
 ## Step 4: Turn on cloud flows
 Open the newly installed SAP Setup Assistant and verify that the eight cloud flows are set to the **On** status.If they aren't turn them **On**
@@ -94,8 +97,11 @@ Open the newly installed SAP Setup Assistant and verify that the eight cloud flo
 1. Select **Solutions** on the left pane
 2. Go to the **Managed** Solutions list, Select the **SAP Setup Assistant**
 3. Select **Cloud flows(8)** on the left pane
-4. Navigate into the cloud flows that have **Status**="Off"
-5. Select **Turn on** on the command bar.
+4. Check for the **Status** column
+
+   :::image type="content" source="media/cloud-flows-status-column.png" alt-text="Image of Saving the SAP Setup Assistant Connection Reference.":::
+6. Navigate into the cloud flows that have **Status**="Off"
+7. Select **Turn on** on the command bar.
    
 ## Step 5 : Use the SAP Setup Assistant
 
