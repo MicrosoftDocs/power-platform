@@ -41,7 +41,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 |--------------|-----------------|-----|  
 |Full name display order|Select the order in which you want customer and user names to be displayed. |  First Name |
 |Display currencies using|Set how to display currencies, either by a currency symbol, which is the default setting, or by currency code. For example, a currency symbol could be $, and the currency code could be USD.|  Currency symbol | 
-|Pricing decimal precision|Select how many decimal points to use for a currency.| 0|
+|Pricing decimal precision|Select how many decimal points to use for a currency.| 2|
 
 ## Display behavior
 
