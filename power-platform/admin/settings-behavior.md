@@ -20,19 +20,21 @@ Adjust the settings in the Power Platform admin center by going to **Environment
 
 Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
-## Settings
+## Release channel
 
-> [!div class="mx-tableFixed"]
-> |Settings|Description| Default value |
-> |--------------|-----------------|-----|  
-> |**Release channel**||  |
-> |Model-driven apps release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at anytime and users are switched after one to two browser refreshes. More information: [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview)   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. More information: [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel) | 
-> |**Basic behavior**||  |
-> |Auto save|If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](/dynamics365/customer-engagement/customize/manage-auto-save)| On |
-> |Load default static content from Content Delivery Network| Canvas apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Content Delivery Network feature. <br><br>**Note**: This setting does not apply to model-driven apps as they do not use CDN currently.|   On|
-> |Share reassigned records with original owner|Select whether a record is shared with the original owner of the record, or completely reassigned to another user.|  Off |
-> |Open in application mode|Select **On** to enable application mode. When this mode is enabled, customer engagement apps can be opened in a browser without menus, navigation, or toolbars. Hiding these parts of the browser causes customer engagement apps to appear like a separate application rather than a website. |  Off|
-> |**Formatting**||  |
+|Settings|Description| Default value |
+|--------------|-----------------|-----|  
+|Model-driven apps release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at anytime and users are switched after one to two browser refreshes. More information: [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview)   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. More information: [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel) | 
+
+## Basic behavior
+|Settings|Description| Default value |
+|--------------|-----------------|-----|  
+|Auto save|If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](/dynamics365/customer-engagement/customize/manage-auto-save)| On |
+|Load default static content from Content Delivery Network| Canvas apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Content Delivery Network feature. <br><br>**Note**: This setting does not apply to model-driven apps as they do not use CDN currently.|   On|
+|Share reassigned records with original owner|Select whether a record is shared with the original owner of the record, or completely reassigned to another user.|  Off |
+|Open in application mode|Select **On** to enable application mode. When this mode is enabled, customer engagement apps can be opened in a browser without menus, navigation, or toolbars. Hiding these parts of the browser causes customer engagement apps to appear like a separate application rather than a website. |  Off|
+
+## Formatting
 > |Full name display order|Select the order in which you want customer and user names to be displayed. |  First Name |
 > |Display currencies using|Set how to display currencies, either by a currency symbol, which is the default setting, or by currency code. For example, a currency symbol could be $, and the currency code could be USD.|  Currency symbol | 
 > |Pricing decimal precision|Select how many decimal points to use for a currency.| 0|
