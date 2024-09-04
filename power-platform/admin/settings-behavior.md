@@ -4,7 +4,7 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/29/2024
+ms.date: 09/04/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -31,7 +31,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Settings|Description| Default value |
 > |--------------|-----------------|-----|  
 > |**Release channel**||  |
-> |Model-driven apps release channel|If this setting is set to **Semi-annual channel**, users in the org will use features from the current release wave, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users will use features from the current monthly release. <br><br>This setting can be changed at anytime and users will be switched after one to two browser refreshes. More information: [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview)   | Auto<br><br>**Note**: Behavior for Auto is changing with 2024 release wave 2. More information: [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel) | 
+> |Model-driven apps release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at anytime and users are switched after one to two browser refreshes. More information: [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview)   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. More information: [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel) | 
 > |**Basic behavior**||  |
 > |Auto save|If **On**, after a record is created (initially saved), any changes made to a form will automatically be saved thirty seconds after the change is made. The 30-second period starts again after a change is made. If no changes are made, the automatic save doesn’t happen. More information: [Manage auto-save](/dynamics365/customer-engagement/customize/manage-auto-save)| On |
 > |Load default static content from Content Delivery Network| Canvas apps will load out-of-the-box static content from the Azure Content Delivery Network (CDN) service. For firewall restrictions and IP approved list related issues, system administrators can select **Off** to disable the Azure Content Delivery Network feature. <br><br>**Note**: This setting does not apply to model-driven apps as they do not use CDN currently.|   On|
@@ -46,7 +46,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > |Show the Switch to classic buttons in Power Apps| When **On**, makers are able to open and continue to use the deprecated classic app, view, and form designers.  More information: [Classic app, form, and view designers are deprecated](../important-changes-coming.md#classic-app-form-and-view-designers-are-deprecated) |Off |
 > |Show app download message|If **On**, users will see a message regarding downloading the Dynamics 365 for tablets app.| On|
 > |Show legacy app to everyone, not just admins|The legacy web app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom (hidden for users)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-users).| On | 
-> |Show legacy app for admins|Indicate if the legacy web app, also known as *Dynamics 365 - custom*, is hidden from System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom (hidden for admins)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-admins).| Auto<br><br>New environments are defaulted to Off. | 
+> |Show legacy app for admins|Indicate if the legacy web app, also known as *Dynamics 365 - custom*, is hidden from System Administrator and System Customizer roles, and to other custom roles with similar privileges.  More information: [Dynamics 365 - custom (hidden for admins)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-admins).| Auto<br><br>**Note**: New environments are defaulted to **Off**. | 
 > |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 home page. More information: [Dynamics 365 - custom (hidden for users)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-users).|Dynamics 365 - custom |
 > |Show welcome screen on sign in|Indicate if you want users to see the welcome screen when they sign in. |  On|
 > |Show Microsoft Power Automate on forms and in the site map|Select **On** to enable embedded Power Automate flows in your organization. More information: [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).|  On | 
