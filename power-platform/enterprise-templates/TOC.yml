@@ -47,20 +47,20 @@
           href: finance/sap-procurement/administer/manually-administer/extend-model-apps-dataverse.md
         - name: Extend cloud flows
           href: finance/sap-procurement/administer/manually-administer/extend-cloud-flows.md
-      - name: Use
-        items:
-        - name: Vendor management
-          href: finance/sap-procurement/use/vendor-management.md
-        - name: Requisition management
-          href: finance/sap-procurement/use/requisition-management.md
-        - name: Purchase order management
-          href: finance/sap-procurement/use/purchase-order-management.md
-        - name: Goods receipt management
-          href: finance/sap-procurement/use/goods-receipt-management.md
-        - name: Vendor invoice management
-          href: finance/sap-procurement/use/vendor-invoice-management.md
-        - name: Vendor payment management
-          href: finance/sap-procurement/use/payment-management.md
+    - name: Use
+      items:
+      - name: Vendor management
+        href: finance/sap-procurement/use/vendor-management.md
+      - name: Requisition management
+        href: finance/sap-procurement/use/requisition-management.md
+      - name: Purchase order management
+        href: finance/sap-procurement/use/purchase-order-management.md
+      - name: Goods receipt management
+        href: finance/sap-procurement/use/goods-receipt-management.md
+      - name: Vendor invoice management
+        href: finance/sap-procurement/use/vendor-invoice-management.md
+      - name: Vendor payment management
+        href: finance/sap-procurement/use/payment-management.md
   - name: SAP Supplier Self Service
     items:
     - name: Overview
