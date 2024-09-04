@@ -303,7 +303,7 @@
                     - name: Audit summary view
                       href: manage-dataverse-auditing.md#use-the-audit-summary-view
                     - name: Entity and field audit settings
-                      href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
+                      href: manage-dataverse-auditing.md#turn-on-or-off-auditing-for-entities-and-fields
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
@@ -466,6 +466,8 @@
               href: security/overview.md
             - name: Manage security
               href: security/security-posture-overview.md
+            - name: Manage Copilot (preview)
+              href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
               - name: Managed identity overview (preveiw)

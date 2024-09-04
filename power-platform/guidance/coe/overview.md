@@ -58,8 +58,6 @@ After you've [installed the CoE Starter Kit solution](setup.md), get familiar wi
    - How can you support your maker community in building compliant apps that follow best practices?
    - What actions do you take based on your collected information?
 
-   :::image type="content" source="media/coe4.PNG" alt-text="Screenshot that shows the Developer Compliance Center website." lightbox="media/coe4.PNG":::
-
 1. Embrace your maker community and develop a nurture and adoption strategy. Think about how to onboard new makers. Organize internal events such as training workshops and hackathons. Put together templates and best practices for your makers to use.
 
    :::image type="content" source="media/coe5.PNG" alt-text="Screenshot of an email that welcomes new makers, presenting lots of resources." lightbox="media/coe5.PNG":::

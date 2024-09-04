@@ -131,7 +131,6 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 1. Search for the Launched app activity in the date range available to you.
    :::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Screenshot that highlights the date range and launched app activity for a search in the Audit page of Microsoft Purview." lightbox="media/coe-oldauditlogs-1.png":::
 1. Once the search runs, select **Export** to download the results.
-   :::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Screenshot that highlights the Completed Job status and Export button after an audit search." lightbox="media/coe-oldauditlogs-2.png":::
 1. Browse to this flow in the core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**.
 1. Turn on the flow and run it, selecting the downloaded file for the Audit Log CSV parameter.
    :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Screenshot that shows the Audit Log CSV import field and Run flow button of the Run flow pane." lightbox="media/coe-oldauditlogs-3.png":::
@@ -145,7 +144,6 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 ### API permissions
 
 Go to your app registration and validate that you have the correct API permissions. Your app registration requires application permissions not delegated. Validate that the status is _Granted_.
-:::image type="content" source="media/auditlog-troubleshoot-1.png" alt-text="Screenshot that highlights the Application type and Granted for status of a configured permission." lightbox="media/auditlog-troubleshoot-1.png":::
 
 ### Secret environment variable - Azure secret
 
