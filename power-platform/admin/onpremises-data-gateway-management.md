@@ -103,9 +103,6 @@ For on-premises data gateways in standard mode, users can be added in any of the
 > - **Can Use** and **Can use + share** do not apply to custom connectors in Power Apps and Power Automate.
 > - The gateway must be shared with the **Admin** permission level to be used by custom connectors.
 
-> [!div class="mx-imgBorder"] 
-> ![Manage users.](media/manage-gateway-users.png "Manage users")
-
 ## Remove a gateway cluster
 
 Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
@@ -167,21 +164,12 @@ As either a Microsoft Entra Global administrator (which includes Global admins) 
 
 4. Enable **Restrict Users in your organization from installing gateways**. This option is off by default, allowing anyone in your organization to install a gateway.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Enable restrict users.](media/manage-gateway-installers-turn-on.png "Enable restrict users")
-
 5. Add users who can install gateways, and then select **Add**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Add users.](media/manage-gateway-installers-add-users.png "Add users")
 
    > [!NOTE]
    > Currently, we do not support groups for Manage Installers; you can add individual users. 
 
 6. To remove users who have permission to install gateways, select **Remove installer** (![Remove installer.](media/nb-ua-r1-trashbin.png)), and then select **Confirm**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Remove user.](media/remove-installer.png "Remove user")
 
    > [!NOTE]
    > This does not impact gateways that are already installed. This feature only allows or restricts users from installing gateways going forward.

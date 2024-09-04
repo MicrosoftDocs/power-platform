@@ -50,8 +50,6 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 1. Go to **Settings** > **Data management** > **View Deleted Records**.
 1. You can view all the deleted records from all tables in a new tab. 
 1. Select one or more records you wish to restore, and then select **Restore** on the command bar.
-   :::image type="content" source="media/restore-deleted-table-record.png" alt-text="Restore deleted table records" lightbox="media/restore-deleted-table-record.png":::
-
 1. Select **Ok** to confirm the action to restore.
 
 ## Known issues

@@ -83,9 +83,6 @@ You can configure and modify the Power BI dashboard by working directly with the
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL.
-
-   :::image type="content" source="media/byodl-1.png" alt-text="Screenshot showing where to copy the Data Lake Storage URL from Storage Account endpoints." lightbox="media/byodl-1.png":::
-
 1. Append `/powerplatform` to the URL.
 
 ### Import Power BI dataflows
@@ -175,10 +172,7 @@ The **Production_CoEDashboard_MMMYY.pbit** and **BYODL_CoEDashboard_MMMYY.pbit**
    :::image type="content" source="media/coe89.png" alt-text="Screenshot that shows where to add the app access." lightbox="media/coe89.png":::
 
    > [!TIP]
-   > If you see one of these errors, ignore it. The app doesn't work when browsing directly to this page, but only works when an app is sent in via a drill through.
-   >
-   > :::image type="content" source="media/PBI-setuperror.PNG" alt-text="Screenshot that shows the first possible setup error." lightbox="media/PBI-setuperror.PNG":::
-   > :::image type="content" source="media/PBI-setuperror2.PNG" alt-text="Screenshot that shows the second possible setup error." lightbox="media/PBI-setuperror2.PNG":::
+   > The app doesn't work when browsing directly to the page, but only works when an app is sent in via a drill through.
 
 1. Go to the **Manage Flow Access** tab and repeat the previous steps, but selecting the **Admin - Access this Flow [works embedded in Power BI only]** app this time.
 

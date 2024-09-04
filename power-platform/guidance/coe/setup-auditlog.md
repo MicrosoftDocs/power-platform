@@ -233,8 +233,6 @@ For more information on updating environment variables, see [Update Environment 
 
 1. Back in the solution, turn on both the [Child] Admin | Sync Logs flow and the Admin | Sync Audit Logs flow.
 
-   :::image type="content" source="media/coe-custom4.PNG" alt-text="Screenshot that shows how to turn audit log flows on." lightbox="media/coe-custom4.PNG":::
-
 ### Example configurations for environment variables
 
 Here are example configurations for these values:

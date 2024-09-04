@@ -15,8 +15,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get list of application packages available for a tenant.",
-        "description": "",
+        "summary": "Get list of Application Packages that are available for a tenant",
+        "description": "Get list of available application packages for a tenant",
         "operationId": "GetTenantApplicationPackage",
         "produces": [
           "application/json"
@@ -55,8 +55,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get list of application packages that are available for installation in a target environment.",
-        "description": "",
+        "summary": "List Application Packages that are available for install in a target environment.",
+        "description": "Get list of Application Packages that are relevant in the context of a target environment. Client can filter the Application Packages based on Install State (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
           "application/json"
@@ -65,7 +65,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment ID (not to be confused with Org ID)",
+            "description": "Environment Id (not to be confused with Org id)",
             "required": true,
             "type": "string"
           },
@@ -83,7 +83,7 @@
           {
             "in": "query",
             "name": "lcid",
-            "description": "Application Package Supported Language ID",
+            "description": "Application Package Supported Language Id",
             "type": "string"
           },
           {
@@ -119,8 +119,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Trigger installation of an application package based on the package unique name into a target environment.",
-        "description": "",
+        "summary": "Trigger application package install into a target environment.",
+        "description": "Trigger installation of an application package based on the package unique name to be installed in a target environment. Client can also include custom payload when requesting installation of an application package.",
         "operationId": "InstallApplicationPackage",
         "consumes": [
           "application/json"
@@ -132,14 +132,14 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment ID (not to be confused with Org ID)",
+            "description": "Environment Id (not to be confused with Org id)",
             "required": true,
             "type": "string"
           },
           {
             "in": "path",
             "name": "uniqueName",
-            "description": "Package unique name",
+            "description": "Package Unique Name",
             "required": true,
             "type": "string"
           },
@@ -154,7 +154,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Payload to be sent during installation of the package",
+            "description": "Payload to be sent during installation of the Package",
             "schema": {
               "$ref": "#/definitions/TpsInstallRequestPayload"
             }
@@ -187,8 +187,8 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get the polling status for a previously triggered installation based on the operation ID.",
-        "description": "",
+        "summary": "Get the polling status for a previously triggered installation",
+        "description": "Get the polling status to check on the progress of a previously triggered installation based on the operation ID",
         "operationId": "GetApplicationPackageInstallStatus",
         "produces": [
           "application/json"
@@ -197,7 +197,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "Environment ID (not to be confused with Org ID)",
+            "description": "Environment Id (not to be confused with Org id)",
             "required": true,
             "type": "string"
           },
@@ -240,7 +240,7 @@
   },
   "definitions": {
     "ApplicationInstallState": {
-      "description": "Application installation state for the packages",
+      "description": "Application Install State for ApplicationPackages",
       "enum": [
         "All",
         "Installed",
@@ -283,11 +283,11 @@
           "type": "string"
         },
         "applicationName": {
-          "description": "Application name",
+          "description": "Application Name",
           "type": "string"
         },
         "applicationDescription": {
-          "description": "Application description",
+          "description": "Application Description",
           "type": "string"
         },
         "singlePageApplicationUrl": {
@@ -347,13 +347,14 @@
           "type": "string"
         },
         "supportedCountries": {
-          "description": "List of supported countries/regions for the application",
+          "description": "List of supported countries for the application",
           "type": "array",
           "items": {
             "type": "string"
           }
         }
-      }
+      },
+      "additionalProperties": false
     },
     "ApplicationPackageContinuationResponse": {
       "type": "object",
@@ -367,7 +368,8 @@
         "@odata.nextLink": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "ApplicationVisibility": {
       "description": "Application Visibility",
@@ -419,7 +421,8 @@
           "description": "Source of the error",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "InstancePackage": {
       "type": "object",
@@ -436,7 +439,7 @@
         },
         "applicationId": {
           "format": "uuid",
-          "description": "Application ID associated with the instance package",
+          "description": "ApplicationID associated with the instance package",
           "type": "string"
         },
         "applicationName": {
@@ -497,7 +500,8 @@
           "description": "Custom handle upgrade flag for the application",
           "type": "boolean"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "InstancePackageOperation": {
       "type": "object",
@@ -529,10 +533,11 @@
         },
         "operationId": {
           "format": "uuid",
-          "description": "Operation ID for the operation triggered on the instance package",
+          "description": "OperationID for the operation triggered on the instance package",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "InstancePackageOperationPollingResponse": {
       "type": "object",
@@ -558,7 +563,8 @@
           "format": "uuid",
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "InstancePackageOperationStatus": {
       "enum": [
@@ -596,7 +602,7 @@
           "type": "string"
         },
         "localizedDescription": {
-          "description": "Localized description of tenant application package",
+          "description": "Localized description of tenant application Package",
           "type": "string"
         },
         "localizedName": {
@@ -609,15 +615,15 @@
           "type": "string"
         },
         "applicationName": {
-          "description": "Application name",
+          "description": "Application Name",
           "type": "string"
         },
         "applicationDescription": {
-          "description": "Application description",
+          "description": "Application Description",
           "type": "string"
         },
         "publisherName": {
-          "description": "Publisher name",
+          "description": "Publisher Name",
           "type": "string"
         },
         "publisherId": {
@@ -638,7 +644,8 @@
         "lastError": {
           "$ref": "#/definitions/ErrorDetails"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "TenantApplicationPackageContinuationResponse": {
       "type": "object",
@@ -652,16 +659,18 @@
         "@odata.nextLink": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "TpsInstallRequestPayload": {
-      "description": "Payload to be sent during installation of the package",
+      "description": "Payload to be sent during installation of the Package",
       "type": "object",
       "properties": {
         "payloadValue": {
           "type": "string"
         }
-      }
+      },
+      "additionalProperties": false
     }
   },
   "securityDefinitions": {
@@ -669,13 +678,17 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
-      "tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+      "scopes": {
+        ".default": ".default"
+      },
       "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": [
+        ".default"
+      ]
     }
   ]
 }

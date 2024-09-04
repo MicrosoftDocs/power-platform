@@ -74,11 +74,7 @@ In the compliance center Audit Log Search, administrators can search and view Po
 
 5. When the search is completed, select it to see the list of related activities.
 
-   :::image type="content" source="media/compliance-manager-power-automate-details1.png" alt-text="List of Power Automate activities.":::
-
 6. Select a row in the list to see the activity details.
-
-   :::image type="content" source="media/compliance-manager-power-automate-details1.png" alt-text="List of Power Automate activities.":::
 
 Audit data is retained for 90 days. You can do CDSV exports of the data allowing you to move it into Excel or PowerBI for further analysis. You can find a complete walkthrough of using the audit information here: https://flow.microsoft.com/blog/security-and-compliance-center/
 

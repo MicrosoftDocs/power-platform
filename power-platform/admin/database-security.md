@@ -132,8 +132,6 @@ For environments with no Dataverse database, a user who has the Environment Admi
 
 1. Select **Add people**, and then specify the name or email address of one or more users or groups from Microsoft Entra ID.
 
-    :::image type="content" source="media/assign-security-role-nodb-action.png" alt-text="Screenshot of adding users to the Environment Maker role in the Power Platform admin center.":::
-
 1. Select **Add**.
 
 ## Assign security roles to users in an environment that has a Dataverse database

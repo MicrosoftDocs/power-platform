@@ -84,35 +84,33 @@
             "description": "The recommendation name",
             "required": true,
             "type": "string",
-            "enum": [
-              "OrphanedApps",
-              "UnusedApps",
-              "HighValueNonSolutionApps",
-              "SharedWithEveryoneApps"
-            ],
             "x-ms-summary": "Recommendation Name",
-            "x-ms-enum": [
-              {
-                "value": "OrphanedApps",
-                "description": "Apps without a valid owner",
-                "name": "Orphaned apps"
-              },
-              {
-                "value": "UnusedApps",
-                "description": "Apps not used in recent past",
-                "name": "Unused apps"
-              },
-              {
-                "value": "HighValueNonSolutionApps",
-                "description": "Apps which are highly used but not part of a solution",
-                "name": "High value non-solution apps"
-              },
-              {
-                "value": "SharedWithEveryoneApps",
-                "description": "Apps which are shared with everyone in the tenant",
-                "name": "Apps shared with everyone"
+            "x-ms-dynamic-values": {
+              "operationId": "GetRecommendationScenarios",
+              "value-path": "scenario",
+              "value-title": "scenarioName",
+              "parameters": {
+                "tenantId": {
+                  "parameter": "tenantId"
+                },
+                "x-ms-api-version": {
+                  "parameter": "api-version"
+                }
               }
-            ]
+            },
+            "x-ms-dynamic-list": {
+              "operationId": "GetRecommendationScenarios",
+              "itemValuePath": "scenario",
+              "itemTitlePath": "scenarioName",
+              "parameters": {
+                "tenantId": {
+                  "parameterReference": "tenantId"
+                },
+                "x-ms-api-version": {
+                  "parameterReference": "api-version"
+                }
+              }
+            }
           },
           {
             "in": "query",
@@ -182,35 +180,39 @@
             "description": "The name of the action to execute",
             "required": true,
             "type": "string",
-            "enum": [
-              "DeleteApp",
-              "AssignAppOwner",
-              "QuarantineApp",
-              "AssignAppToCoOwner"
-            ],
             "x-ms-summary": "Action Name",
-            "x-ms-enum": [
-              {
-                "value": "DeleteApp",
-                "description": "Delete an existing app",
-                "name": "Delete app"
-              },
-              {
-                "value": "AssignAppOwner",
-                "description": "Assign a new owner to the app",
-                "name": "Assign new app owner"
-              },
-              {
-                "value": "QuarantineApp",
-                "description": "Quarantine an existing app",
-                "name": "Qurantine app"
-              },
-              {
-                "value": "AssignAppToCoOwner",
-                "description": "Promote co-owner of the app as an owner",
-                "name": "Assign app to co-owner"
+            "x-ms-dynamic-values": {
+              "operationId": "GetScenarioActions",
+              "value-path": "actionType",
+              "value-title": "actionName",
+              "parameters": {
+                "tenantId": {
+                  "parameter": "tenantId"
+                },
+                "scenario": {
+                  "parameter": "scenario"
+                },
+                "x-ms-api-version": {
+                  "parameter": "api-version"
+                }
               }
-            ]
+            },
+            "x-ms-dynamic-list": {
+              "operationId": "GetScenarioActions",
+              "itemValuePath": "actionType",
+              "itemTitlePath": "actionName",
+              "parameters": {
+                "tenantId": {
+                  "parameterReference": "tenantId"
+                },
+                "scenario": {
+                  "parameterReference": "body/scenario"
+                },
+                "x-ms-api-version": {
+                  "parameterReference": "api-version"
+                }
+              }
+            }
           },
           {
             "in": "query",
@@ -227,7 +229,8 @@
             "required": true,
             "schema": {
               "$ref": "#/definitions/AdvisorActionRequest"
-            }
+            },
+            "x-ms-adminsdk-frontloadasparameter": true
           }
         ],
         "responses": {
@@ -252,6 +255,171 @@
         },
         "x-ms-summary": "Execute recommendation action"
       }
+    },
+    "/analytics/advisorRecommendations/scenarios": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendation names",
+        "description": "Gets the list of recommendation scenario names for the tenant.",
+        "operationId": "GetRecommendationScenarios",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IEnumerableAdvisorScenario"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "x-ms-summary": "Get recommendation names",
+        "x-ms-visibility": "internal"
+      }
+    },
+    "/analytics/advisorRecommendations/{scenario}/actions": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get recommendation actions",
+        "description": "Gets allowed actions for a recommendation.",
+        "operationId": "GetScenarioActions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "scenario",
+            "description": "The recommendation name",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Recommendation Name"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/IEnumerableAdvisorAction"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Get recommendation actions",
+        "x-ms-visibility": "internal"
+      }
+    },
+    "/analytics/advisorRecommendations/{scenario}/actionmetadata/{actionName}": {
+      "get": {
+        "tags": [
+          "Recommendations"
+        ],
+        "summary": "Get action schema",
+        "description": "Gets schema for an action",
+        "operationId": "GetActionSchema",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "scenario",
+            "description": "The recommendation name",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Recommendation Name"
+          },
+          {
+            "in": "path",
+            "name": "actionName",
+            "description": "The name of the action",
+            "required": true,
+            "type": "string",
+            "x-ms-summary": "Action Name"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "object"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Get schema for an action",
+        "x-ms-visibility": "internal"
+      }
     }
   },
   "definitions": {
@@ -264,18 +432,75 @@
       "type": "object",
       "properties": {
         "scenario": {
-          "$ref": "#/definitions/AdvisorRecommendationScenario"
+          "description": "The name of the recommendation for which the action is triggered",
+          "type": "string",
+          "x-ms-summary": "Recommendation Name",
+          "x-ms-dynamic-values": {
+            "operationId": "GetRecommendationScenarios",
+            "value-path": "scenario",
+            "value-title": "scenarioName",
+            "parameters": {
+              "tenantId": {
+                "parameter": "tenantId"
+              },
+              "x-ms-api-version": {
+                "parameter": "api-version"
+              }
+            }
+          },
+          "x-ms-dynamic-list": {
+            "operationId": "GetRecommendationScenarios",
+            "itemValuePath": "scenario",
+            "itemTitlePath": "scenarioName",
+            "parameters": {
+              "tenantId": {
+                "parameterReference": "tenantId"
+              },
+              "x-ms-api-version": {
+                "parameterReference": "api-version"
+              }
+            }
+          }
         },
         "actionParameters": {
           "description": "The collection of parameters to carry out the action for a resource",
-          "type": "array",
-          "items": {
-            "type": "object",
-            "additionalProperties": {
-              "type": "string"
+          "type": "object",
+          "x-ms-summary": "Parameters",
+          "x-ms-dynamic-schema": {
+            "operationId": "GetActionSchema",
+            "value-path": "properties",
+            "parameters": {
+              "tenantId": {
+                "parameter": "tenantId"
+              },
+              "scenario": {
+                "parameter": "scenario"
+              },
+              "actionName": {
+                "parameter": "actionName"
+              },
+              "x-ms-api-version": {
+                "parameter": "api-version"
+              }
             }
           },
-          "x-ms-summary": "Parameters"
+          "x-ms-dynamic-properties": {
+            "operationId": "GetActionSchema",
+            "parameters": {
+              "tenantId": {
+                "parameterReference": "tenantId"
+              },
+              "scenario": {
+                "parameterReference": "body/scenario"
+              },
+              "actionName": {
+                "parameterReference": "actionName"
+              },
+              "x-ms-api-version": {
+                "parameterReference": "api-version"
+              }
+            }
+          }
         }
       }
     },
@@ -323,46 +548,15 @@
         }
       }
     },
-    "AdvisorActionType": {
-      "description": "Available action types which can be taken on a resource",
-      "enum": [
-        "DeleteApp",
-        "AssignAppOwner",
-        "QuarantineApp",
-        "AssignAppToCoOwner"
-      ],
-      "type": "string",
-      "example": "DeleteApp",
-      "x-ms-summary": "Action Name",
-      "x-ms-enum": [
-        {
-          "value": "DeleteApp",
-          "description": "Delete an existing app",
-          "name": "Delete app"
-        },
-        {
-          "value": "AssignAppOwner",
-          "description": "Assign a new owner to the app",
-          "name": "Assign new app owner"
-        },
-        {
-          "value": "QuarantineApp",
-          "description": "Quarantine an existing app",
-          "name": "Qurantine app"
-        },
-        {
-          "value": "AssignAppToCoOwner",
-          "description": "Promote co-owner of the app as an owner",
-          "name": "Assign app to co-owner"
-        }
-      ]
-    },
     "AdvisorRecommendation": {
       "description": "Information for a recommendation",
       "type": "object",
       "properties": {
         "scenario": {
-          "$ref": "#/definitions/AdvisorRecommendationScenario"
+          "description": "The recommendation name",
+          "type": "string",
+          "example": "OrphanedApps",
+          "x-ms-summary": "Recommendation Name"
         },
         "details": {
           "$ref": "#/definitions/AdvisorRecommendationDetails"
@@ -503,39 +697,51 @@
         }
       }
     },
-    "AdvisorRecommendationScenario": {
-      "description": "The recommendation name",
-      "enum": [
-        "OrphanedApps",
-        "UnusedApps",
-        "HighValueNonSolutionApps",
-        "SharedWithEveryoneApps"
-      ],
-      "type": "string",
-      "example": "OrphanedApps",
-      "x-ms-summary": "Recommendation Name",
-      "x-ms-enum": [
-        {
-          "value": "OrphanedApps",
-          "description": "Apps without a valid owner",
-          "name": "Orphaned apps"
+    "IEnumerableAdvisorScenario": {
+      "description": "List of recommendation scenarios",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AdvisorScenario"
+      }
+    },
+    "AdvisorScenario": {
+      "description": "The recommendation scenario",
+      "type": "object",
+      "properties": {
+        "scenario": {
+          "description": "The scenario identifier",
+          "type": "string",
+          "x-ms-summary": "Scenario"
         },
-        {
-          "value": "UnusedApps",
-          "description": "Apps not used in recent past",
-          "name": "Unused apps"
-        },
-        {
-          "value": "HighValueNonSolutionApps",
-          "description": "Apps which are highly used but not part of a solution",
-          "name": "High value non-solution apps"
-        },
-        {
-          "value": "SharedWithEveryoneApps",
-          "description": "Apps which are shared with everyone in the tenant",
-          "name": "Apps shared with everyone"
+        "scenarioName": {
+          "description": "Scenario display name",
+          "type": "string",
+          "x-ms-summary": "Scenario name"
         }
-      ]
+      }
+    },
+    "IEnumerableAdvisorAction": {
+      "description": "List of scenario actions",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/AdvisorAction"
+      }
+    },
+    "AdvisorAction": {
+      "description": "The allowed action",
+      "type": "object",
+      "properties": {
+        "actionType": {
+          "description": "The action identifier",
+          "type": "string",
+          "x-ms-summary": "Action"
+        },
+        "actionName": {
+          "description": "Action display name",
+          "type": "string",
+          "x-ms-summary": "Action name"
+        }
+      }
     }
   },
   "securityDefinitions": {
@@ -543,12 +749,17 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
       "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": [
+        ".default"
+      ]
     }
   ]
 }
