@@ -39,7 +39,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 |Settings|Description| Default value |
 |--------------|-----------------|-----|  
-|Full name display order|Select the order in which you want customer and user names to be displayed. |  First Name |
+|Full name display order|Select the order in which you want customer and user names to be displayed. |  First mame |
 |Display currencies using|Set how to display currencies, either by a currency symbol, which is the default setting, or by currency code. For example, a currency symbol could be $, and the currency code could be USD.|  Currency symbol | 
 |Pricing decimal precision|Select how many decimal points to use for a currency.| 2|
 
@@ -61,7 +61,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 |Settings|Description| Default value |
 |--------------|-----------------|-----|  
-|Minimum number of characters to trigger typeahead search  | Enter the minimum number of characters that trigger an automatic typeahead search in a lookup field in model-driven apps. <br><br>This setting can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data.  | 2 |
+|Minimum number of characters to trigger typeahead search  | Enter the minimum number of characters that trigger an automatic typeahead search in a lookup field in model-driven apps. <br><br>This setting can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data.  | Field is empty by default. |
 | Delay between character inputs that will trigger a search | Enter the delay interval in milliseconds that will be introduced in lookups before a search is executed. <br><br> This can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data.   | 250 ms|
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
