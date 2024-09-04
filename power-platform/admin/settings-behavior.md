@@ -1,5 +1,5 @@
 ---
-title: "Manage behavior settings  | MicrosoftDocs"
+title: Manage behavior settings 
 description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
@@ -14,16 +14,11 @@ contributors:
 ---
 # Manage behavior settings 
 
-Use Behavior settings to adjust how model-driven apps appear and function. These settings do not apply to canvas apps, except where noted.
+Use behavior settings to adjust how model-driven apps appear and function. These settings do not apply to canvas apps, except where noted.
 
-These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Behavior**.
+Adjust the settings in the Power Platform admin center by going to **Environments** > _select an environment_ > **Settings** > **Product** > **Behavior**.
 
-Make sure you have the System Administrator security role or equivalent permissions to update the business closures.
-
-**Check your security role**
-
-- Follow the steps in [View your user profile](/powerapps/user/view-your-user-profile).
-- Don’t have the correct permissions? Contact your system administrator.
+Make sure you have the System Administrator security role or equivalent permissions to update the collaboration settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
 
 ## Settings
 
