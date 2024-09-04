@@ -154,9 +154,10 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Apps for Makers](/connectors/powerappsforappmakers/)
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
 - [Power Automate Management](/connectors/flowmanagement/)
-- [Power Platform for Admins](/connectors/powerplatformforadmins/)
+- [Power Platform for Admins V2](/connectors/powerplatformforadminsv2/)
 - [Power Query Dataflows](/connectors/dataflows/)
 - [RSS](/connectors/rss/)
+- [SharePoint Online](/connectors/sharepointonline)
 
 > [!NOTE]
 > The CoE Starter Kit collects information about who owns a resource, such as an app or a flow.
