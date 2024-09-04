@@ -5,7 +5,7 @@
   - name: SAP Procurement
     items:
     - name: Overview
-        href: finance/sap-procurement/administer/sap-setup-assistant/overview.md
+      href: finance/sap-procurement/administer/sap-setup-assistant/overview.md
     - name: Administer
       items:
       - name: Get started
