@@ -80,7 +80,7 @@ Depending on your geographic location and rollout cadence, this change impacts y
 
 ### Re-enabling the classic designers
 
-Admins can turn the **Switch to classic** option back on in the Power Platform admin center for specific environments. The modern app, form, and view designers are at core feature parity with the deprecated classic designers. As such, makers are expected to fully transition to use only the modern designers to build model-driven apps and components. More information: [Manage behavior settings](admin/settings-behavior.md#settings)
+Admins can turn the **Switch to classic** option back on in the Power Platform admin center for specific environments. The modern app, form, and view designers are at core feature parity with the deprecated classic designers. As such, makers are expected to fully transition to use only the modern designers to build model-driven apps and components. More information: [Manage behavior settings](admin/settings-behavior.md)
 
 ## Dynamics 365 for phones and tablets will be deprecated for online users and replaced by Power Apps
 
