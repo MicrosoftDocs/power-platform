@@ -4,7 +4,7 @@ description: "Learn how to use the Power Platform admin center to view restore d
 author: adkuppa
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/23/2024
+ms.date: 09/04/2024
 ms.subservice: admin
 ms.author: adkuppa
 search.audienceType: 
@@ -55,7 +55,7 @@ Viewing and acting on the deleted records in the Power Apps user experience is o
 
 1. Select **Ok** to confirm the action to restore.
 
-## Known issues
+## Limitations
 
 ### Some records aren't restored
 
@@ -80,21 +80,21 @@ For more information about cascading behavior, go to [Configure table relationsh
 
 When recycle bin is generally available, it will be enabled for most tables.
 
-Some tables will not support recycle bin. These include:
+Some tables won't support recycle bin. These tables include:
 
 - [Virtual tables](/power-apps/maker/data-platform/create-edit-virtual-entities)
 - Tables that store [solution components](../alm/solution-concepts-alm.md#solution-components)
 - [Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables)
 
-During this preview, some tables with large numbers of columns are not currently supported. Currently, the maximum number of columns is 400. This may go higher or lower as we determine the correct threshold.
+During the preview, some tables with large numbers of columns aren't currently supported. Currently, the maximum number of columns is 400. This value might go higher or lower as we determine the correct threshold.
 
 Developers can run a [query that returns which tables are enabled for recycle bin](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-recycle-bin) in your environment.
 
 ### Tables not currently supported for Recycle Bin
 
-These tables are returned from the query to [detect which tables don't have recycle bin enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) an un-customized Dataverse environment as of August 2024.
+These tables are returned from the query to [detect which tables don't have recycle bin enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-dont-have-recycle-bin-enabled) an uncustomized Dataverse environment as of August 2024.
 
-Your environment may have different results. Tables customized by adding large numbers of columns may not be supported.
+Your environment might have different results. Tables customized by adding large numbers of columns might not be supported.
 
 :::row:::
    :::column:::
