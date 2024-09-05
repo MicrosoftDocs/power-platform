@@ -60,9 +60,11 @@ We recommend that you regularly assess the services and technologies to ensure t
 You can employ several methods to secure your intelligent application workloads:
 
 - **User authentication and access control**: Implement robust authentication and access control measures to ensure only authorized users can access the intelligent application workload. Unauthorized access to the intelligent application workload can result in data breaches, misuse of resources, and potential exposure of sensitive information. Weak or ineffective authentication mechanisms might also result in compromised user accounts. 
-- **Compliance**: Ensure that data is protected and managed in compliance with regulatory requirements.
+- **Compliance**: Ensure that data is protected and managed in compliance with regulatory requirements. Understand local regulations, and stay informed about local data protection laws and ensure that your data residency strategy complies with these regulations.
 - **Integration**: Secure all integrations with service principals. Monitor and protect the network integrity of internal and external endpoints through security capabilities and appliances, such as firewalls or web application firewalls.
 - **Ongoing monitoring and auditing**: Continuously monitor and audit the workloads activities to detect and respond proactively.
+- **Employee training**: Train employees on data protection best practices and the importance of adhering to data residency requirements.
+- **Utilize Azure security tools**: Utilize Azure’s built-in security tools, such as Azure Security Center and Azure Policy, to monitor and enforce security policies.
 
 ## Performance Efficiency
 

@@ -52,10 +52,8 @@ Understand the key requirements for the intelligent application workload you're 
 
 Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad) or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
-- Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing MFA](/entra/fundamentals/how-subscriptions-associated-directory) adds an extra layer of security. Tto minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
+- Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing MFA](/entra/identity/authentication/concept-mfa-howitworks) adds an extra layer of security. To minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
  
-<!-- Multifactor auth isn't discussed in above link. Is it the correct link? OR should we change the text link so users aren't confused about where they've landed? -->
-
 Learn more:
 
 - [Configure end user authentication](/microsoft-copilot-studio/configuration-authentication-azure-ad)
@@ -72,6 +70,8 @@ Microsoft complies with data protection and privacy laws applicable to cloud ser
 
 Learn more:
 
+- [Security and geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency-security)
+- [Security and geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency)
 - [Copilot Studio compliance offerings](/microsoft-copilot-studio/admin-certification)
 - [Copilot Studio GDPR compliance](/microsoft-copilot-studio/personal-data-summary)
 - [Copilot Studio Data Locations](/microsoft-copilot-studio/data-location?tabs=web)
@@ -99,3 +99,11 @@ Learn more:
 - [Recommendations for monitoring and threat detection](/power-platform/well-architected/security/monitor-threats)
 - [View Copilot Studio audit logs](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Capture Copilot Studio telemetry with Azure Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp)
+
+## Utilize Azure security tools
+
+Utilize Azure’s built-in security tools, such as [Azure Security Center](/azure/defender-for-cloud/) and [Azure Policy](/azure/governance/policy/overview), to monitor and enforce security policies.
+
+## Employee training
+
+Train employees on data protection best practices and the importance of adhering to data residency requirements. Tailor training materials to the specific roles and responsibilities of different employees. Data protection laws and regulations are constantly evolving. Ensure that training programs are regularly updated to reflect the latest legal requirements and best practices. Use interactive methods such as workshops, simulations, and real-life scenarios to make the training engaging and effective. Provide continuous support and resources, such as access to data protection officers or legal advisors, to help employees stay informed and compliant. 
