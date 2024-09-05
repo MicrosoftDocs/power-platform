@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
 title: Intelligent application workload documentation
-summary: When you create an intelligent application workload in Power Platform, follow Power Platform Well-Architected Framework design principles and explore important design areas.
+summary: When you create an intelligent application workload in Power Platform, follow Power Platform Well-Architected design principles and explore key design areas.
 metadata: 
   title: Intelligent application workload documentation
-  description: In this Power Platform Well-Architected Framework documentation, learn about creating Power Platform workloads that use Generative AI capabilities, including design principles, design areas, and best practices.
+  description: In this Power Platform Well-Architected documentation, learn about creating Power Platform workloads that use Generative AI capabilities, including design principles, design areas, and best practices.
   author: manuelap-msft
   ms.author: mapichle
   ms.reviewer: jhaskett-msft
@@ -69,7 +69,7 @@ landingContent:
              url: https://www.microsoft.com/en-gb/ai/tools-practices
            - text: HAX Design Library
              url: https://www.microsoft.com/en-us/haxtoolkit/library/
-           - text: Microsoft AI practices
+           - text: Microsoft Responsible AI practices
              url: https://www.microsoft.com/ai/responsible-ai
            - text: Microsoft responsible AI resources
              url: https://www.microsoft.com/ai/responsible-ai-resources

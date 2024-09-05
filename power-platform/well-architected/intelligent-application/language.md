@@ -11,68 +11,68 @@ ms.topic: conceptual
 
 # Intent recognition and entity extraction options for your intelligent application workloads
 
-Intent recognition and entity extraction are key components of natural language understanding in Microsoft Copilot Studio.
+Intent recognition and entity extraction are key components of natural language understanding.
 
 Intent recognition involves identifying the user's goal or purpose behind their input. For example, if a user says, "I want to book a flight," the intent is to book a flight. Intent recognition helps the copilot understand what action needs to be taken based on the user's request.
 
 Entity extraction involves identifying and extracting specific pieces of information from the user's input. Entities can be things like dates, names, locations, or any other relevant data. For instance, in the sentence "Book a flight to New York on September 15," "New York" and "September 15" are entities.
 
-By combining intent recognition and entity extraction, Copilot can understand both what the user wants to do and the specific details needed to complete the task. This makes interactions more efficient and accurate, enhancing the overall user experience.
+A copilot uses the intent to understand the user's goal and the entities to identify the specific details needed to complete the task. Intent recognition and entity extraction, therefore, enable the copilot to provide accurate and efficient responses to user queries.
 
-When designing your intelligent application workload, it's important to choose the right option for intent recognition and entity extraction to ensure your intelligent application workload provides accurate and efficient responses.
+When designing your intelligent application workload, you need to choose the best option for intent recognition and entity extraction to ensure your intelligent application workload provides a positive user experience.
 
 ## Definitions
 
 | Term | Definition| 
 | --- | ---- | 
-| NLU |  Natural Language Understanding (NLU) is a subset of natural language processing (NLP) in artificial intelligence that focuses on machine reading comprehension. |
-| CLU | Conversational Language Understanding (CLU) is a feature of Azure AI that enables the creation of custom natural language understanding models. |
-| LLM | A large language model (LLM) is a type of artificial intelligence model designed to understand and generate human language. |
-| GPT | GPT stands for Generative Pretrained Transformer. It refers to a family of large language models (LLMs) that use the transformer architecture to understand and generate human-like text. |
+| NLU |  Natural Language Understanding is a subset of natural language processing (NLP) in artificial intelligence that focuses on machine reading comprehension. |
+| CLU | Conversational Language Understanding is a feature of Azure AI that enables the creation of custom NLU models. |
+| LLM | A Large Language Model is a type of artificial intelligence model designed to understand and generate human language. |
+| GPT | Generative Pretrained Transformer refers to a family of LLMs that use the transformer architecture to understand and generate human-like text. |
 
 Choosing the right option for intent recognition and entity extraction in your intelligent application workload involves several key considerations:
 
-- **Prebuilt vs. custom entities**: Evaluate whether the prebuilt entities provided by Copilot Studio meet your needs. These cover common information types like dates, numbers, and names. If your application requires domain-specific knowledge, you might need to create custom entities.
+- **Prebuilt vs. custom entities**: Evaluate whether the prebuilt entities provided by Copilot Studio meet your needs. Prebuilt entities cover common information types like dates, numbers, and names. If your application requires domain-specific knowledge, you might need to create custom entities.
 
-- **Complexity of user inputs**: Consider the complexity and variability of user inputs. For straightforward scenarios, prebuilt entities might suffice. For more complex interactions, custom entities and advanced configurations like regular expressions (regex) might be necessary.
+- **Complexity of user inputs**: Consider the complexity and variability of user inputs. For straightforward scenarios, prebuilt entities may suffice. For more complex interactions, custom entities and advanced configurations like regular expressions (regex) might be necessary.
 
 - **Slot filling**: Determine if your application requires proactive slot filling, where the copilot actively seeks out and fills in missing information from user inputs. Slot filling can enhance the user experience by reducing the need for follow-up questions.
 
-- **Performance and scalability**: Assess the performance and scalability of your chosen method. Custom entities and complex configurations might require more processing power and could affect response times.
+- **Performance and scalability**: Assess the performance and scalability of your chosen method. Custom entities and complex configurations often require more processing power and could affect response times.
 
-- **Ease of maintenance**: Consider the ease of maintaining and updating your entities. Prebuilt entities are easier to manage, while custom entities might require ongoing adjustments as your application evolves.
+- **Ease of maintenance**: Consider the ease of maintaining and updating your entities. Prebuilt entities are easier to manage, while custom entities require ongoing adjustments as your application evolves.
 
 ## Choose between the standard NLU, Azure CLU, or dynamic chaining
 
-In Copilot Studio, topic or action triggering can be done in different ways: You can choose to override the standard NLU (Natural Language Understanding) model with Azure CLU (Conversational Language Understanding) or you can fully replace it with [dynamic chaining](/microsoft-copilot-studio/advanced-generative-actions), a GPT LLM-based model.
+In Copilot Studio, topic or action triggering can be achieved by using the standard NLU model, combining or overriding it with a custom Azure CLU model, or by fully replacing the NLU model with [dynamic chaining](/microsoft-copilot-studio/advanced-generative-actions), a GPT LLM-based model.
 
 | | Standard NLU model | Custom Azure CLU model | Dynamic chaining |
 |---|---|---|---|
-| **Pro** |  Default, out-of-the-box, model that comes pretrained, with many predefined entity types.<br><br>Configuration is done by adding trigger phrases and custom entities (either closed lists with values and synonyms, or regular expressions). | Supports more languages, with native models.<br><br>Allows to further customize the intent triggering model for better intent recognition or to address specific industry requirements.<br><br>Allows for complex entity extraction (for example, of the same type).<br><br>Entity extraction can also use Copilot Studio standard NLU. |Uses a GPT LLM and comes pre-trained on a wider spectrum of data.<br><br>Can handle multiple intents and chain topics and/or plugins.<br><br>Automatically generate questions for missing inputs and answers complex entities and questions from the conversation context.<br><br>Configuration is done by describing topics, plugin actions, inputs, and outputs. | 
-| **Con** |Single intent recognition per query.<br><br>Can't be extended. You can't modify how the model behaves or fine tune the model. It is provided as is. <br><br>Slot-filling multiple entities of the same type in the same query requires disambiguation for each (for example, from and to cities) |Single intent recognition per query.<br><br>Configuration is done in Azure and involves extra costs.<br><br>Has its own service limits that need to be evaluated.<br><br>Azure CLU intents and Copilot Studio topics must be carefully kept in sync. |As it’s a generative AI feature, the licensing burn rate of messages is higher than in regular topic triggering. |
+| **Pro** |  Default, out-of-the-box model that comes pretrained, with many predefined entity types.<br><br>Configuration is done by adding trigger phrases and custom entities (either closed lists with values and synonyms, or regular expressions). | Supports more languages, with native models.<br><br>Supports customization of the intent triggering model for better intent recognition or to address specific industry requirements.<br><br>Allows for complex entity extraction (for example, of the same type).<br><br>Entity extraction can also use Copilot Studio standard NLU. |Uses a GPT LLM and comes pre-trained on a wider spectrum of data.<br><br>Can handle multiple intents and chain topics and/or plugins.<br><br>Automatically generate questions for missing inputs and answers complex entities and questions from the conversation context.<br><br>Configuration is done by describing topics, plugin actions, inputs, and outputs. | 
+| **Con** |Single intent recognition per query.<br><br>Can't be extended. You can't modify how the model behaves or fine tune the model. It is provided as is. <br><br>Slot-filling multiple entities of the same type in the same query requires disambiguation for each (for example, from and to cities). |Single intent recognition per query.<br><br>Configuration is done in Azure at additional cost.<br><br>Has its own service limits that need to be evaluated.<br><br>Azure CLU intents and Copilot Studio topics must be carefully kept in sync. |As it's a generative AI feature, the licensing burn rate of messages is higher than for regular topic triggering. |
 
 ## Trigger phrases and slot filling
 
-When developing intelligent application workloads, it's essential to use native capabilities for better intent recognition and efficient conversations. Start by defining topic trigger phrases, which can be derived from existing FAQ bases and chat transcripts to ensure relevance and accuracy. Consider your expected use of entities, such as using regular expressions to identify order IDs, prebuilt entities for emails, and closed lists for operation types with synonyms. Additionally, plan how you'll test topic triggering with test utterances to validate and refine the accuracy of your intent recognition and entity extraction processes. Learn more: [Deployment and testing](publishing.md)
+When developing intelligent application workloads, use native capabilities to enhance intent recognition and streamline conversations. Begin by identifying topic trigger phrases from existing FAQ databases and chat transcripts to ensure anticipated phrases are relevant and accurate. Consider how you'll use entities; for example, whether you'll use regular expressions to find order IDs, prebuilt entities for emails, or closed lists for operation types with synonyms. Also plan how you'll test topic triggers with sample phrases to validate and refine the accuracy of your intent recognition and entity extraction processes. Learn more in [Deployment and testing](publishing.md).
 
 ### Trigger phrases
 
-Trigger phrases train your copilot's natural language understanding (NLU) model. They help the copilot recognize and respond accurately to user utterances by defining specific phrases that trigger particular topics. Proper configuration of these trigger phrases ensures that the copilot can correctly identify the user's intent and respond appropriately. When the copilot is uncertain about which topic to trigger, it can suggest up to three potential topic candidates (Multiple Topics Matched topic) or fall back to a default response if no topic is identified. This mechanism helps maintain the flow of conversation and ensures that the copilot can handle a wide range of user inputs effectively.
+Trigger phrases train your copilot's NLU model. They help the copilot recognize and respond accurately to user utterances by defining specific phrases that trigger particular topics. Proper configuration of these trigger phrases ensures that the copilot can correctly identify the user's intent and respond appropriately. When the copilot is uncertain about which topic to trigger, it can suggest up to three potential topic candidates (Multiple Topics Matched system topic) or fall back to a default response if no topic is identified. This mechanism helps maintain the flow of conversation and ensures that the copilot can handle a wide range of user inputs effectively.
 
 ### Entity extraction and slot filling
 
-Entity extraction and slot filling are important components in developing effective copilots. These processes enable the copilot to acquire and utilize information efficiently by identifying and extracting relevant details from user queries.
+Entity extraction and slot filling are important components in developing effective copilots. These processes enable the copilot to acquire and use information efficiently by identifying and extracting relevant details from user queries.
 
-**Entity extraction** involves parsing the user's input to identify specific pieces of information, known as entities. For example, in the query "I’d like to order three large blue t-shirts," the copilot's Natural Language Understanding (NLU) model can extract the following entities:
+**Entity extraction** involves parsing the user's input to identify specific pieces of information. For example, in the query "I'd like to order three large blue t-shirts," the copilot's NLU model should extract the following entities:
 
 - **Quantity**: 3
 - **Color**: Blue
 - **Size**: Large
 - **Item Type**: T-Shirt
 
-**Slot filling** is the process of using these extracted entities to complete the necessary information for a given task. In this example, the copilot recognizes the topic as an order and fills in the required slots with the extracted entities. This allows the copilot to understand the user's request without needing more questions, streamlining the interaction.
+**Slot filling** is the process of using these extracted entities to complete the necessary information for a given task. In this example, the copilot recognizes the topic as an order and fills in the required slots with the extracted entities. The copilot is able to understand the user's request without asking more questions, streamlining the interaction.
 
-By implementing entity extraction and slot filling, copilots can handle complex queries more effectively, providing accurate and contextually relevant responses. This enhances the user experience by reducing the need for follow-up questions and ensuring that the copilot can quickly and accurately fulfill user requests.
+Entity extraction and slot filling enable copilots to handle complex queries more effectively, providing accurate and contextually relevant responses and enhancing the user experience.
 
 Learn more:
 
@@ -81,11 +81,11 @@ Learn more:
 
 ## Integrating Microsoft Copilot Studio with Azure CLU
 
-Integrating a Conversational Language Understanding (CLU) model with a Copilot Studio copilot can significantly enhance the copilot's capabilities. This integration involves mapping Azure CLU intents to Copilot Studio topics, allowing the copilot to understand and respond to user intents more accurately. Additionally, Copilot Studio prebuilt entities can be used alongside Azure CLU entities, providing a robust framework for entity extraction.
+Integrating a CLU model with a Copilot Studio copilot can significantly enhance the copilot's capabilities. This integration involves mapping Azure CLU intents to Copilot Studio topics, allowing the copilot to understand and respond to user intents more accurately. Additionally, Copilot Studio prebuilt entities can be used alongside Azure CLU entities, providing a robust framework for entity extraction.
 
-When considering this integration, it's important to evaluate whether your intelligent application workload requires Azure CLU. For instance, Azure CLU supports more languages, industry-specific dictionaries, and complex entity extraction, which might be essential for your application. Custom entity extractions with Azure CLU can also enable silent or lucky slot filling, allowing the copilot to handle scenarios like identifying both source and destination cities in a single phrase without needing to ask follow-up questions.
+When considering this integration, it's important to evaluate whether your intelligent application workload requires Azure CLU. For instance, Azure CLU supports more languages, industry-specific dictionaries, and complex entity extraction, which might be essential for your application. Custom entity extractions with Azure CLU can also enable silent or "lucky" slot filling, which allows the copilot to handle scenarios like identifying both source and destination cities in a single phrase without asking follow-up questions.
 
-Another import aspect is ensuring that the Azure CLU service quotas and limits align with your copilot's usage. For example, if you expect less than 1,000 calls requiring intent recognition per minute, you might set up Azure CLU using the S tier. This ensures that your copilot can handle the expected workload without exceeding service limits or incurring unexpected costs.
+Another important aspect is ensuring that the Azure CLU service quotas and limits align with your copilot's usage. For example, if you anticipate fewer than 1,000 calls requiring intent recognition per minute, you might set up Azure CLU using the S tier. This configuration ensures that your copilot can handle the expected workload without exceeding service limits or incurring unexpected costs.
 
 Learn more:
 
@@ -98,13 +98,13 @@ Learn more:
 
 Structuring topics effectively is important for creating natural and seamless conversations. Topics are discrete conversation paths that, when combined, allow users to interact with the copilot smoothly. Here are some key considerations for designing topic structures:
 
-- **Trigger-based topics**: These topics are activated based on user utterances and serve as entry points. It's important to define clear trigger phrases for these topics. If trigger phrases overlap across multiple topics, consider implementing a catch-all topic that can redirect to the appropriate topic after asking clarifying questions. With entity extraction and slot filling, these clarifying questions can be skipped if the necessary information is already provided.
+- **Trigger-based topics**: These topics are activated based on user utterances and serve as entry points. Define clear trigger phrases for these topics. If trigger phrases overlap across multiple topics, consider implementing a catch-all topic that can redirect to the appropriate topic after asking clarifying questions. With entity extraction and slot filling, these clarifying questions can be skipped if the necessary information is already provided.
 
-- **Redirect-based topics**: These topics are triggered by redirect actions, activities, or events and can be called by multiple other topics. They should be designed to be reusable and modular, with input and output variables to facilitate seamless integration into various conversation paths.
+- **Redirect-based topics**: These topics are triggered by redirect actions, activities, or events, and can be called by multiple other topics. They should be designed to be reusable and modular, with input and output variables to facilitate seamless integration into various conversation paths.
 
 - **Dual-trigger topics**: Some topics can be triggered either through intent recognition or by an explicit redirect. This flexibility allows for more dynamic and responsive conversations.
 
-- **Conversational boosting and fallback**: Implement topics that handle scenarios where no matching topic is triggered based on a user query. These fallback topics can provide generic responses or suggest potential topics to keep the conversation going.
+- **Conversational boosting and fallback**: Create fallback topics for situations where no matching topic is triggered by the user's query. These topics can offer generic responses or suggest relevant topics to maintain the conversation flow.
 
 **Design approach:**
 
@@ -112,7 +112,7 @@ Structuring topics effectively is important for creating natural and seamless co
 
 - **Disambiguation topics**: Plan to use disambiguation topics for operations that require clarifying questions. For example, user account operations might need clarification on the type of operation (for example, create, unlock, suspend) and the system involved (for example, SAP, ServiceNow, Microsoft).
 
-- **Avoiding duplication**: To avoid duplicating content, create reusable topics for dialog paths that need to be repeated. These reusable topics can be called by a parent topic, and once completed, the conversation can resume the parent topic's logic.
+- **Avoiding duplication**: To avoid duplicating content, create reusable topics for dialog paths that need to be repeated. These reusable topics can be called by a parent topic and, once completed, the conversation can resume the parent topic's logic.
 
 Learn more:
 
@@ -120,33 +120,33 @@ Learn more:
 
 ## Handling unrecognized intents
 
-Effectively managing unrecognized intents ensures a smooth user experience. Unrecognized intents occur when the copilot doesn't understand a user utterance and lacks sufficient confidence to trigger any existing topics. Here are some key considerations for handling these scenarios:
+Effectively managing unrecognized intents ensures a smooth user experience. Unrecognized intents occur when the copilot doesn't understand a user utterance and lacks sufficient confidence to trigger an existing topic. Here are some suggestions for handling these scenarios:
 
-- **Managing unrecognized intents**: Initially, direct unrecognized intents to the Conversational Boosting topic, which searches for answers in corporate resources like SharePoint sites and public websites. If no relevant information is found, the system can then fall back to a ChatGPT-like experience using a custom system prompt with the Azure OpenAI GPT-4 model. This approach ensures that users receive helpful responses even when their queries are unplanned.
+- **Managing unrecognized intents**: Initially, direct unrecognized intents to the Conversational boosting system topic, which searches for answers in public websites and corporate resources like SharePoint sites. If no relevant information is found, the system can then fall back to a ChatGPT-like experience using a custom system prompt with the Azure OpenAI GPT-4 model. This approach ensures that users receive helpful responses even when queries are unplanned.
 
-- **Integration with external systems**: Consider if you're integrating with external systems as part of the fallback strategy. For example, you could integrate with the Azure OpenAI GPT-4 model using HTTP requests to provide a compliant ChatGPT-like experience.
+- **Integration with external systems**: Consider if you're integrating with external systems as part of your fallback strategy. For example, integrating with the Azure OpenAI GPT-4 model using HTTP requests to provide a compliant ChatGPT-like experience.
 
 - **Monitoring fallback usage**: Regularly review the percentage of conversations hitting fallback. Use these insights to enrich existing topics or create new ones, ensuring that the copilot continuously improves its understanding and response capabilities.
 
-- **Fallback topic and generative answers**: The [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) is triggered when no matching topic is identified. If [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) are enabled, the Conversational Boosting topic triggers first on unknown intent events, followed by the Fallback topic if necessary. This layered approach helps manage unrecognized intents effectively.
+- **Fallback topic and generative answers**: The [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) is triggered when no matching topic is identified. If [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) are enabled, the Conversational boosting topic triggers first on unknown intent events, followed by the Fallback topic as required. This layered approach helps manage unrecognized intents effectively.
 
-- **Use conversational boosting and fallback**: Utilize [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) to search various data sources or integrate with other systems like Azure Cognitive Service for Language for question answering. This service can handle large volumes of question-and-answer pairs and includes a chitchat model for random questions.
+- **Use conversational boosting and fallback**: Use [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) to search various data sources or integrate with other systems like Azure Cognitive Service for Language. This service can handle large volumes of question-and-answer pairs and includes a chitchat model for random questions.
 
 - **Core scenarios and custom topics**: Ensure that core scenarios and topics are well-defined and handled through custom topics. Clearly define the outcomes of these topics to maintain a structured and efficient conversation flow.
 
 ## Localization and languages
 
-When building a copilot, consider what languages your intelligent application workload needs to speak and what markets your copilot should support. Localization and language support are critical factors to ensure your intelligent application workload meets the needs of diverse user bases. Here are the main approaches and considerations:
+When building a copilot, consider the languages and markets your intelligent application workload must support. Localization and language support are critical factors to ensure your intelligent application workload meets the needs of diverse user bases. Here are some suggested approaches:
 
-- **One copilot per language**: This approach involves creating a separate copilot for each language. It ensures that each copilot is fully optimized for its specific language, but it can be resource-intensive to maintain multiple copilots.
+- **One copilot per language**: This approach involves creating a separate copilot for each language. It ensures that each copilot is fully optimized for its specific language; however, it can be resource-intensive to maintain multiple copilots.
 
-- **One copilot for multiple languages (configured translations)**: In this approach, a single copilot supports multiple languages, with translations provided as part of the copilot configuration. This requires updating translations each time the copilot is updated or new content is added. It offers a balance between resource efficiency and language support but requires careful management of translation updates.
+- **One copilot for multiple languages (configured translations)**: With this approach, a single copilot supports multiple languages, with translations provided as part of the copilot configuration. This approach requires updating translations each time the copilot is updated or new content is added. It offers a balance between resource efficiency and language support but requires careful management of translation updates.
 
 - **One copilot for multiple languages (real-time translations)**: This method uses a relay copilot to provide real-time translations at runtime. It allows for rapid deployment of more languages and reduces the need for frequent translation updates. However, it introduces a dependency on the relay copilot and a real-time translation layer, such as Azure Service Copilot and Azure Cognitive Services Translator.
 
 **Key considerations:**
 
-- **Languages and markets**: Determine which languages and markets your copilot needs to support. This influences your choice of localization strategy.
+- **Languages and markets**: The languages and markets your copilot must support influences your localization strategy.
   
 - **Single vs. multi-language copilot**: Decide whether to develop a single copilot that supports multiple languages or separate copilots for each language. This decision depends on factors like resource availability, maintenance capabilities, and the complexity of the languages involved.
 

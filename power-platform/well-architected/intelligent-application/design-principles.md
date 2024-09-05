@@ -36,7 +36,7 @@ Failures can happen in the cloud. Instead of trying to prevent failures altogeth
 - Make the workload observable so that development teams can learn from failures. Quickly identify and address issues by implementing monitoring, logging, and alerting mechanisms.
 - Ensure the workload can scale to handle varying loads, especially important for AI workloads that might have fluctuating demands. 
 - Implement robust error handling and recovery mechanisms. Set up automated alerts for system failures and have a clear plan for quick recovery.
-- Validate the target architecture and scale through understanding the target volumes of chat messages or conversations. Target volumes also help validate the licensing aspects of the intelligent application and the potential affect on Dataverse storage for the conversation transcripts.
+- Validate the target architecture and scale by understanding the target volumes of chat messages or conversations. Target volumes also help validate the licensing aspects of the intelligent application and the potential affect on Dataverse storage for conversation transcripts.
 
 When discussing reliability with intelligent applications that use generative AI capabilities, consider not only resiliency and availability, but also the reliability and accuracy of the responses provided by the intelligent workload. Consider the following recommendations for each design consideration:
 
@@ -63,8 +63,8 @@ You can employ several methods to secure your intelligent application workloads:
 - **Compliance**: Ensure that data is protected and managed in compliance with regulatory requirements. Understand local regulations, and stay informed about local data protection laws and ensure that your data residency strategy complies with these regulations.
 - **Integration**: Secure all integrations with service principals. Monitor and protect the network integrity of internal and external endpoints through security capabilities and appliances, such as firewalls or web application firewalls.
 - **Ongoing monitoring and auditing**: Continuously monitor and audit the workloads activities to detect and respond proactively.
+- **Azure security tools**: Use Azure's built-in security tools, such as Microsoft Defender for Cloud and Azure Policy, to monitor and enforce security policies.
 - **Employee training**: Train employees on data protection best practices and the importance of adhering to data residency requirements.
-- **Utilize Azure security tools**: Utilize Azure’s built-in security tools, such as Azure Security Center and Azure Policy, to monitor and enforce security policies.
 
 ## Performance Efficiency
 
@@ -72,7 +72,7 @@ Performance efficiency is the ability of your workload to efficiently scale to m
 
 Increase performance efficiency by:
 
-- Understanding target volumes to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential affect on Dataverse storage for the conversation transcripts.
+- Understanding target volumes to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential affect on Dataverse storage for conversation transcripts.
 - Understanding [platform limits](/microsoft-copilot-studio/requirements-quotas). When you integrate your intelligent application workload with external systems, for example through Power Automate or HTTP requests, it's important to validate that every component can handle the load.
 - Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
 - Understanding the expected response times for:
@@ -97,7 +97,7 @@ Operational failures can affect other design areas as well as the overall succes
   - Troubleshooting procedures
   - Disaster-recovery plans
 - Provide remediation guidance on how to accelerate the process of resolving problems.
-- Embrace continuous operational improvement. Prioritize routine improvement of the system and user experience, using a health model to understand and measure operational efficiency, with feedback mechanisms to enable application teams to understand and address gaps in an iterative manner.
+- Embrace continuous operational improvement. Prioritize routine improvement of the system and user experience. Use a health model to understand and measure operational efficiency, together with feedback mechanisms to enable application teams to understand and address gaps in an iterative manner.
 
 These recommendations can help your team collaborate in a way that's efficient and transparent.
 

@@ -71,7 +71,7 @@ Microsoft complies with data protection and privacy laws applicable to cloud ser
 Learn more:
 
 - [Security and geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency-security)
-- [Security and geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency)
+- [Geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency)
 - [Copilot Studio compliance offerings](/microsoft-copilot-studio/admin-certification)
 - [Copilot Studio GDPR compliance](/microsoft-copilot-studio/personal-data-summary)
 - [Copilot Studio Data Locations](/microsoft-copilot-studio/data-location?tabs=web)
@@ -100,10 +100,10 @@ Learn more:
 - [View Copilot Studio audit logs](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Capture Copilot Studio telemetry with Azure Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp)
 
-## Utilize Azure security tools
+## Use Azure security tools to enforce security policies
 
-Utilize Azure’s built-in security tools, such as [Azure Security Center](/azure/defender-for-cloud/) and [Azure Policy](/azure/governance/policy/overview), to monitor and enforce security policies.
+Use Azure's built-in security tools, such as [Microsoft Defender for Cloud](/azure/defender-for-cloud/) (formerly known as Azure Security Center) and [Azure Policy](/azure/governance/policy/overview), to monitor and enforce security policies.
 
-## Employee training
+## Provide employee training
 
 Train employees on data protection best practices and the importance of adhering to data residency requirements. Tailor training materials to the specific roles and responsibilities of different employees. Data protection laws and regulations are constantly evolving. Ensure that training programs are regularly updated to reflect the latest legal requirements and best practices. Use interactive methods such as workshops, simulations, and real-life scenarios to make the training engaging and effective. Provide continuous support and resources, such as access to data protection officers or legal advisors, to help employees stay informed and compliant. 

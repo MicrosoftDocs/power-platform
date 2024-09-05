@@ -17,7 +17,7 @@ The workload team need to establish key performance metrics, regularly review sy
 
 ## Define performance targets
 
-Identifying key performance metrics involves determining the essential measurements that track the progress towards achieving workload performance goals. This identification provides a quantifiable way to measure and improve performance efficiency.
+Identifying key performance metrics involves determining the essential measurements that track the progress towards achieving workload performance goals. These metrics provide a quantifiable way to measure and improve performance efficiency.
 
 When you identify key metrics to focus on, consider metrics related to capacity, response time, deflection rate, and engagement and outcomes:
 
@@ -25,39 +25,39 @@ When you identify key metrics to focus on, consider metrics related to capacity,
 
 - _Response time:_ Latency and load time are common response time metrics. *Latency* is the time it takes to respond to a request (200 milliseconds). *Load time* is the time it takes for a copilot to become active and respond to the first message. Understand the expected maximum latency for the copilot to answer queries, and define an approach for handling long-running actions (for example, waiting for an external system to return data).
 
-- _Deflection rate:_ In the context of conversational AI, *deflection* is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of items a team avoids having to deal with as a result of automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), and to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and CSAT.
+- _Deflection rate:_ In the context of conversational AI, *deflection* is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of tasks a team no longer has to handle due to automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals, from return on investment (ROI) and customer satisfaction (CSAT), to improvement of the copilot's overall performance. Copilot Studio provides an overview of your copilot's performance, including key indicators such as resolution rate, escalation rate, and CSAT.
 
-- _Engagement and outcomes_: Tracking conversation engagement and outcomes is important to measure the copilot performance metrics and identify areas for improvements in the analytics dashboard. Learn more: [Measure copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measure copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes)
+- _Engagement and outcomes_: Tracking conversation engagement and outcomes is key to measuring copilot performance metrics and identifying areas for improvement. Learn more in [Measure copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measure copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes).
 
 ## Performance planning
 
 Resources in your workload have performance limitations. Performance limitations apply to features within each service. You need to understand the limitations of the resources in your workload and factor those limitations into your design decisions. For example, you should know whether resource limitations require you to change the design approach or to change resources altogether.
 
-- Understanding target volumes helps validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential affect on Dataverse storage for the conversation transcripts.
-- Understand [platform limits](/microsoft-copilot-studio/requirements-quotas). When integrating your intelligent application workload with external systems, for example through Power Automate or HTTP requests, it’s important to validate that every part can handle the load.
-- Identify bottlenecks by measuring throughput and response times to identify the specific components of your system that might become bottlenecks as the workload grows. Identify bottlenecks in the end-to-end process by using process mining analysis capabilities like rework and root cause analysis.
+- Understand target volumes. Target volumes help validate the target architecture and scale, licensing aspects of the copilot, and the potential affect on Dataverse storage for conversation transcripts.
+- Understand [platform limits](/microsoft-copilot-studio/requirements-quotas). When integrating your intelligent application workload with external systems, for example through Power Automate or HTTP requests, it's important to validate that every component can handle the load.
+- Identify bottlenecks. Measure throughput and response times to identify the components of your system that might become problematic as the workload grows. Identify bottlenecks in the end-to-end process by using process-mining analysis capabilities like rework and root cause analysis.
 
 Learn more: [Recommendations for performance planning](../performance-efficiency/performance-planning.md)
 
 ## Performance monitoring
 
-Performance optimization requires data to measure the current performance of a workload or a flow against its performance targets. You need to collect the right amount and diversity of data to measure the performance of the code and the infrastructure against performance targets. Ensure that every component and flow within the workload automatically generates continuous and meaningful metrics and logs.
+Performance optimization requires data to measure the current performance of a workload or a flow against its performance targets. Collect a sufficient amount and variety of data to accurately measure the performance of the code and infrastructure against set performance targets. Ensure that every component and flow within the workload automatically generates continuous and meaningful metrics and logs.
 
-Monitoring the performance of your intelligent application workload is important to ensure it operates effectively and efficiently. 
+Vigilantly monitor the performance of your intelligent application workload to ensure it operates at peak effectiveness and efficiency.
 
 Copilot Studio provides comprehensive [out-of-the-box analytics](/microsoft-copilot-studio/analytics-overview) that allow you to understand a copilot's usage and key performance indicators.
 
-Customers can view reports related to:
+You can view reports related to:
 
-- Performance and usage.
-- Customer satisfaction.
-- Session information.
-- Topic usage.
-- Billed sessions.
+- Performance and usage
+- Customer satisfaction
+- Session information
+- Topic usage
+- Billed sessions
 
-In addition to the native analytics features within Copilot Studio, you can send telemetry data to Application Insights. Learn more: [Capture Copilot Studio telemetry with Azure Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp). Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
+In addition to the native analytics features within Copilot Studio, you can send telemetry data to Application Insights. Learn more in [Capture Copilot Studio telemetry with Azure Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp). Continuously monitor performance and detect anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
 
-Define the key performance indicators (KPIs) that you'll monitor to measure your intelligent application workloads success - for example, the engagement rate, resolution rate, and deflection rate. Start by assessing the native dashboards, and then evaluate if developing a custom report would better meet your requirements.
+Define the key performance indicators (KPIs) that you intend to monitor to measure your intelligent application workloads success, such as engagement rate, resolution rate, and deflection rate. First, review the native dashboards to understand the available data. Then, decide if creating a custom report would better meet your specific needs.
 
 Learn more:
 
@@ -66,23 +66,27 @@ Learn more:
 
 ## Continuous performance optimization
 
-Proactively optimizing performance means taking measures to improve and enhance the performance of the workload before any performance issues arise. Using proactive measures involves identifying potential bottlenecks, monitoring performance metrics, and implementing optimizations to ensure that the workload operates efficiently and meets the desired performance goals.
+Proactively optimizing performance involves implementing measures to improve and enhance the performance of the workload before any issues arise. Proactive measures include identifying potential bottlenecks, monitoring performance metrics, and implementing optimizations to ensure the workload runs efficiently and meets performance goals.
+
+<!-- proposing to cut this para, mentioned above in bullet list for "Deflection rate" 
 
 Optimizing the copilot deflection rate is often one of the top focus areas to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and customer satisfaction (CSAT).
 
-To regularly improve your intelligent application workload, plan regular review of the copilot performance:
+<!-- end -->
 
-| Performance Indicator | Definition |
+To continuously enhance your intelligent application workload, schedule regular reviews of the copilot's performance:
+
+| Performance indicator | Definition |
 | --- | --- |
-| Resolution rate | The deflection rate refers to the percentage of user requests that are successfully resolved by the Copilot without needing to escalate to a human agent. |
-| Engagement rate | The engagement rate refers to the percentage of total sessions that become engaged. A session is considered engaged when a user interacts with the Copilot in a meaningful way, such as triggering a nonsystem topic, escalating the session, or invoking a fallback topic. | 
-| Abandon rate | The abandon rate refers to the percentage of engaged sessions that end without reaching a resolution or escalation. Essentially, it measures how often users leave or stop interacting with the Copilot before their issue is resolved or escalated to a human agent. | 
-| Escalation rate | The escalation rate refers to the percentage of engaged sessions that are escalated to a human agent. This metric is crucial for understanding how often the Copilot is unable to resolve user queries on its own and requires human intervention. |
-| Unrecognized utterances | An unrecognized utterance refers to a user input that the Copilot’s natural language understanding (NLU) model can't match to any predefined intent or topic. When this occurs, the system is unable to determine the user’s intent based on the provided input. | 
-| CSAT | Customer satisfaction |
-| Topics with low resolution | Topics with low resolution refer to conversation topics that frequently fail to resolve user queries effectively. These topics often lead to user dissatisfaction, abandonment, or escalation to human agents. |
+| Resolution rate | Percentage of user requests that are successfully resolved by the copilot without requiring escalation to a human agent. |
+| Engagement rate | Percentage of total engaged sessions. A session is considered engaged when a user interacts with the copilot in a meaningful way, such as triggering a nonsystem topic, escalating the session, or invoking a fallback topic. | 
+| Abandon rate | Percentage of engaged sessions that end without reaching a resolution or escalation. Essentially, it measures how often users leave or stop interacting with the copilot before their issue is resolved or escalated to a human agent. | 
+| Escalation rate | Percentage of engaged sessions that are escalated to a human agent. This metric is key to understanding how often the copilot is unable to resolve user queries on its own and requires human intervention. |
+| Unrecognized utterances | Occurs when the copilot's natural language understanding (NLU) model can't match a user input to any predefined intent or topic. The system is unable to determine the user's intent based on the input provided. | 
+| CSAT | Customer satisfaction. |
+| Topics with low resolution | Refers to conversation topics that frequently fail to resolve user queries effectively. These topics often lead to user dissatisfaction, abandonment, or escalation to human agents. |
 
-This review helps prioritize the backlog of copilot updates. For example, if unrecognized utterances are escalated to a human agent–that is, not deflected–there's an opportunity to improve the deflection by addressing the usage patterns of the user that triggers fallback consistently and use unrecognized utterances are to either train existing topic or create new topic where there's demand.
+This review helps prioritize the backlog of copilot updates. For example, if unrecognized utterances are frequently escalated to a human agent, take the opportunity to improve deflection. Analyze user patterns that trigger fallback and unrecognized utterances, and either train existing topics or create new ones to equip the copilot to better address user needs.
 
 Learn more:
 
