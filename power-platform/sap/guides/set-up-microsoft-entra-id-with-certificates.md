@@ -31,6 +31,7 @@ This guide walks you through setting up the connector so your users can access S
 ## Prerequisites
 
  1. [Set up SAP Connection](getting-started-with-the-sap-erp-connector.md)
+    - [On-premise data gateway](https://powerapps.microsoft.com/downloads/) (Version July 2024 - 3000.230 or higher)
  1. [Set up Secure Network Communications](set-up-secure-network-communications.md)
  1. Familiarity with public and private key technologies.
 
