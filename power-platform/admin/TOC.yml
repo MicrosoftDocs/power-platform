@@ -470,7 +470,7 @@
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
-              - name: Managed identity overview (preveiw)
+              - name: Managed identity overview (preview)
                 href: managed-identity-overview.md
               - name: Set up managed identity (preview)
                 href: set-up-managed-identity.md
