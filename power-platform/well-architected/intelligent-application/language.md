@@ -53,7 +53,7 @@ In Copilot Studio, topic or action triggering can be achieved by using the stand
 
 ## Trigger phrases and slot filling
 
-When developing intelligent application workloads, use native capabilities to enhance intent recognition and streamline conversations. Begin by identifying topic trigger phrases from existing FAQ databases and chat transcripts to ensure anticipated phrases are relevant and accurate. Consider how you'll use entities; for example, whether you'll use regular expressions to find order IDs, prebuilt entities for emails, or closed lists for operation types with synonyms. Also plan how you'll test topic triggers with sample phrases to validate and refine the accuracy of your intent recognition and entity extraction processes. Learn more in [Deployment and testing](publishing.md).
+When developing intelligent application workloads, use native capabilities to enhance intent recognition and streamline conversations. Begin by identifying topic trigger phrases from existing FAQ databases and chat transcripts to ensure anticipated phrases are relevant and accurate. Consider how you'll use entities; for example, whether you'll use regular expressions to find order IDs, prebuilt entities for emails, or closed lists for operation types with synonyms. Also plan how you'll test topic triggers with sample phrases to validate and refine the accuracy of your intent recognition and entity extraction processes. Learn more in [Deployment and test considerations](publishing.md).
 
 ### Trigger phrases
 
@@ -128,7 +128,7 @@ Effectively managing unrecognized intents ensures a smooth user experience. Unre
 
 - **Monitoring fallback usage**: Regularly review the percentage of conversations hitting fallback. Use these insights to enrich existing topics or create new ones, ensuring that the copilot continuously improves its understanding and response capabilities.
 
-- **Fallback topic and generative answers**: The [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) is triggered when no matching topic is identified. If [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) are enabled, the Conversational boosting topic triggers first on unknown intent events, followed by the Fallback topic as required. This layered approach helps manage unrecognized intents effectively.
+- **Fallback topic and generative answers**: The [Fallback system topic](/microsoft-copilot-studio/guidance/fallback-topic) is triggered when no matching topic is identified. If [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) are enabled, the Conversational boosting topic triggers first on unknown intent events, followed by the Fallback topic as required. This layered approach helps manage unrecognized intents effectively.
 
 - **Use conversational boosting and fallback**: Use [Generative Answers](/microsoft-copilot-studio/nlu-boost-conversations) to search various data sources or integrate with other systems like Azure Cognitive Service for Language. This service can handle large volumes of question-and-answer pairs and includes a chitchat model for random questions.
 

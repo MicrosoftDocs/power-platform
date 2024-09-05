@@ -13,14 +13,14 @@ ms.topic: conceptual
 
 This documentation provides actionable guidance for planning, developing, and maintaining intelligent application workloads with Microsoft Power Platform. The guidance has a technical foundation in Power Platform Well-Architected best practices and is also informed by experience derived from customer deployments.
 
-This guidance is intended for workload owners, technical stakeholders, and business stakeholders. It's appropriate for people who play an integral role designing, building, and maintaining an intelligent application workload.
+This guidance is intended primarily for workload owners, technical stakeholders, and business stakeholders&mdash;anyone who plays an integral role in designing, building, and maintaining an intelligent application workload.
 
 >[!TIP]
 >To assess your workload through the lenses of reliability, security, operational excellence, performance efficiency, and experience optimization, conduct a [Power Platform Well-Architected Assessment](https://aka.ms/powa/assessment).
 
 ## What is an intelligent application workload?
 
-The term _workload_, within the context of Power Platform Well-Architected, describes a set of application resources, data, and supporting infrastructure and processes that work together to deliver desired business outcomes. A workload comprises application and technology components as well as behavioral, development, and operational processes.
+Within the context of Power Platform Well-Architected, the term *workload* describes a set of application resources, data, and supporting infrastructure and processes that work together to deliver desired business outcomes. A workload comprises application and technology components as well as behavioral, development, and operational processes.
 
 An intelligent application workload built on Power Platform applies the capabilities of Power Platform to integrate and consume generative AI models for automating and enhancing business processes.
 
@@ -34,7 +34,7 @@ Developing an intelligent application workload built on Power Platform can be co
 - **Integration with existing systems**: Seamlessly integrating generative AI with existing IT infrastructure and business processes can be resource-intensive and technically challenging.
 - **Ethical and compliance issues**: Addressing ethical concerns and ensuring compliance with legal and regulatory standards is critical. Managing data privacy, avoiding biases in AI models, and maintaining transparency, are just some of the issues to navigate.
 - **Skills and expertise**: Developing and managing generative AI solutions requires specialized skills. Organizations often need to invest in training their workforce or hire new talent with the necessary expertise.
-- **Cost and resource allocation**: Implementing generative AI can be costly. Organizations need to carefully manage their resources and often start with small, high-impact pilot projects to demonstrate value before scaling up.
+- **Cost and resource allocation**: Implementing generative AI can be costly. Organizations need to carefully manage their resources and start with small, high-impact pilot projects to demonstrate value before scaling up.
 - **Security concerns**: Ensuring the security of AI systems is critical, and includes protecting sensitive data from breaches as well as safeguarding against potential vulnerabilities in AI models and infrastructure.
 - **User interface design**: Designing intuitive, user-friendly interfaces that harness AI capabilities, particularly without overwhelming users, can be difficult.
 
@@ -44,11 +44,11 @@ Addressing these challenges requires thorough planning, collaboration across dif
 
 We recommend that you structure your well-architected workload to meet specific reliability, security, operational excellence, performance efficiency, and experience optimization objectives. To enhance user experiences and deliver consistency and reliability, follow architectural principles and guidelines that are tailored to intelligent application workloads.
 
-The Power Platform Well-Architected pillars help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create workloads without unnecessary complexity and unforeseen costs.
+The Power Platform Well-Architected pillars help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create workloads without unnecessary complexity and cost.
 
 Use the Power Platform Well-Architected pillars to improve your intelligent application workload in the following ways:
 
-- **Reliability**: An intelligent application workload requires resiliency at the architecture layer to ensure AI models and workflows are highly available and can recover quickly from failure. Resiliency includes implementing robust error-handling mechanisms. A resilient architecture also maintains the integrity of data used by the AI models, ensuring consistent and accurate outputs.
+- **Reliability**: An intelligent application workload requires resilience at the architecture layer to ensure AI models and workflows are highly available and can recover quickly from failure. Resiliency includes implementing robust error-handling mechanisms. A resilient architecture also maintains the integrity of data used by the AI models, ensuring consistent and accurate outputs.
 
 - **Security**: An intelligent application workload often handles sensitive data. Safeguard sensitive data used and generated by AI models by implementing access controls and by conducting regular security audits. Ensure the workload complies with relevant regulation standards, such as GDPR (General Data Protection Regulation) and HIPAA (Health Insurance Portability and Accountability Act), to safeguard user privacy and data.
 
@@ -72,12 +72,12 @@ Technical feasibility involves assessing the availability and quality of data, i
 
 High-quality data ensures consistency and accuracy for the intelligent application workload. As part of your feasibility assessment, consider the following:
 
-- **Source identification**: Identify and catalog all potential data sources, including internal databases, external APIs, and third-party datasets. Ensure these sources are reliable and accessible.
+- **Data sources**: Identify and catalog all potential data sources, including internal databases, external APIs, and third-party datasets. Ensure these sources are reliable and accessible.
 - **Data silos**: Identify if the current process uses any disparate data sources, like spreadsheets. The integration of this disparate data into the AI system might pose a challenge yet may be essential for providing accurate responses.
 - **Data volume and variety**: Assess the volume and variety of data available. Generative AI models typically require large and diverse datasets to perform effectively. Ensure that the data sources provide sufficient quantity and diversity to train and validate the models.
 - **Data cleaning**: Perform data cleaning to remove duplication, correct errors, and handle missing values. This step is critical to ensure the data that is fed into the AI models is accurate and reliable.
 - **Data transformation**: Transform raw data into a suitable format for AI model training. This process may involve normalization, scaling, and encoding categorical variables.
-- **Validation and testing**: Regularly validate and test the data to ensure it meets the required quality standards. 
+- **Data validation and testing**: Regularly validate and test the data to ensure it meets the required quality standards. 
 
 #### Integration requirements
 
@@ -124,7 +124,7 @@ The success of your intelligent application workload depends on users being comf
 
 Data privacy concerns, potential biases in AI responses, and technical failures are potential risks. Ensuring data privacy is critical, especially as the intelligent application workload may handle sensitive data. 
 
-When planning an intelligent application workload with Power Platform, it's essential to address several key risks and implement effective mitigation strategies:
+When planning an intelligent application workload, address the following risks and implement effective mitigation strategies:
 
 - **Data privacy**: Safeguard sensitive data used and generated by AI models. Implement encryption, access controls, and regular security audits. Ensure the workload complies with relevant regulation standards, such as GDPR or HIPAA, to protect user privacy and data.
 
@@ -136,7 +136,7 @@ When planning an intelligent application workload with Power Platform, it's esse
 
 - **Ethical concerns**: Establish clear ethical guidelines and governance frameworks for AI use. Ensure transparency in AI operations and maintain a human-in-the-loop approach for critical decisions.
 
-- **Compliance and Regulatory Issues**: Stay informed about relevant regulations and ensure that AI systems comply with all legal requirements. Conduct regular compliance audits and update policies as needed.
+- **Compliance and regulatory issues**: Stay informed about relevant regulations and ensure that AI systems comply with all legal requirements. Conduct regular compliance audits and update policies as needed.
 
 ## Next steps
 

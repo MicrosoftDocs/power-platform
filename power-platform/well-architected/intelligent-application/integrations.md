@@ -38,7 +38,7 @@ Endpoint performance is a critical factor that directly impacts the user experie
   - **Caching**: Implementing caching strategies to reduce the load on endpoints and speed up response times.
   - **Load balancing**: Where applicable, distributing requests across multiple endpoints to avoid overloading any single endpoint.
   
-    Learn more: [Optimized Data Performance](../performance-efficiency/optimize-data-performance.md).
+    Learn more: [Recommendations for optimizing data performance](../performance-efficiency/optimize-data-performance.md).
 
 - **Scalability and reliability**: High-performing endpoints contribute to the scalability and reliability of your application. As the number of users grows, well-optimized endpoints can handle increased traffic without significant degradation in performance.
 
@@ -52,7 +52,7 @@ Ensure that responses are timely and efficient when you're designing logic for y
 - **Evaluating execution speed**: If the logic can't be executed quickly enough within Power Automate or Copilot Studio, or if it involves complex operations better suited to code, consider offloading the logic to other services:
   - **[Dataverse custom APIs](/power-apps/developer/data-platform/custom-api),** custom endpoints that can be created within Dataverse to handle specific logic. They have a 2-minute timeout limit, providing more time for complex operations. Custom APIs can be invoked via connectors or HTTP requests, offering flexibility in integration.
   - **[Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant),** similar to custom APIs but can be created with minimal coding. They also have a 2-minute timeout limit and can be invoked similarly. 
-  - **[Azure functions](/azure/azure-functions/),**  serverless functions that can execute code in response to events. They offer high scalability and can handle complex logic efficiently. Azure Functions can be triggered via HTTP requests, making them easy to integrate with Power Automate and Copilot Studio.
+  - **[Azure Functions](/azure/azure-functions/),** serverless functions that can execute code in response to events. They offer high scalability and can handle complex logic efficiently. Azure Functions can be triggered via HTTP requests, making them easy to integrate with Power Automate and Copilot Studio.
 
 ## Middle Layer Integration
 

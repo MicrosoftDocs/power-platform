@@ -27,7 +27,7 @@ When you identify key metrics to focus on, consider metrics related to capacity,
 
 - _Deflection rate:_ In the context of conversational AI, *deflection* is an indicator representing the percentage of requests that are completed in a self-service fashion that would otherwise be handled by live agents. In other words, it refers to the number of tasks a team no longer has to handle due to automation. Optimizing the copilot deflection rate is one of the top focus areas for organizations to achieve their business goals, from return on investment (ROI) and customer satisfaction (CSAT), to improvement of the copilot's overall performance. Copilot Studio provides an overview of your copilot's performance, including key indicators such as resolution rate, escalation rate, and CSAT.
 
-- _Engagement and outcomes_: Tracking conversation engagement and outcomes is key to measuring copilot performance metrics and identifying areas for improvement. Learn more in [Measure copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measure copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes).
+- _Engagement and outcomes_: Tracking conversation engagement and outcomes is key to measuring copilot performance metrics and identifying areas for improvement. Learn more in [Measuring copilot engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [Measuring copilot outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes).
 
 ## Performance planning
 
@@ -55,7 +55,7 @@ You can view reports related to:
 - Topic usage
 - Billed sessions
 
-In addition to the native analytics features within Copilot Studio, you can send telemetry data to Application Insights. Learn more in [Capture Copilot Studio telemetry with Azure Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp). Continuously monitor performance and detect anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
+In addition to the native analytics features within Copilot Studio, you can send telemetry data to Azure Application Insights. Learn more in [Capture telemetry with Application Insights](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry?tabs=webApp). Continuously monitor performance and detect anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
 
 Define the key performance indicators (KPIs) that you intend to monitor to measure your intelligent application workloads success, such as engagement rate, resolution rate, and deflection rate. First, review the native dashboards to understand the available data. Then, decide if creating a custom report would better meet your specific needs.
 

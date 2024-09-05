@@ -28,7 +28,7 @@ Evaluate options from simple to advanced CI/CD:
 
 Maintain separate environments for development, testing, and production. This practice helps to isolate issues and ensures that changes are thoroughly tested before reaching end users.
 
-Use [solutions](../../alm/solution-concepts-alm) to move plug-ins created in Copilot Studio across different environments.
+Use [solutions](../../alm/solution-concepts-alm.md) to move plugins created in Copilot Studio across different environments.
 
 Key recommendations and considerations:
 
