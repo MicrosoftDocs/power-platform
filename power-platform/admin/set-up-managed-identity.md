@@ -74,7 +74,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
    
     - **Issuer**: The URL of the token issuer. Format similar to this: `https://[environment ID prefix].[environment ID suffix].enviornment.api.powerplatform.com/sts`     
       - **Environment ID prefix** - The environment ID, except for the last two characters.
-      - **Environment ID suffix** - The last two characters of the environment JD.
+      - **Environment ID suffix** - The last two characters of the environment ID.
       
       Example: `https://92e1c10d0b34e28ba4a87e3630f46a.06.environment.api.powerplatform.com/sts`
       
