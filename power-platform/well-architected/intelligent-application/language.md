@@ -47,7 +47,9 @@ Choosing the right option for intent recognition and entity extraction in your i
 In Copilot Studio, topic or action triggering can be achieved by using the standard NLU model, combining or overriding it with a custom Azure CLU model, or by fully replacing the NLU model with [dynamic chaining](/microsoft-copilot-studio/advanced-generative-actions), a GPT LLM-based model.
 
 <!-- 
-This might be a better link or perhaps both would be great to provide, as dynamic chaining requires generative mode in Copilot Studio, as above link points out more clearly. See https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration (Guidance docs). Not sure now that we need a definition since it's pretty well covered in the table. I drafted the following just in case: 
+This might be a better link or perhaps both would be great to provide, as dynamic chaining requires generative mode in Copilot Studio, as above link points out more clearly. See https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration (Guidance docs). Not sure now that we need a definition since it's pretty well covered in the table. Note that above guidance topic is mentioned in design-principles#experience-optimization (last bullet point), which mentions dynamic chaining.
+
+I drafted the following just in case: 
 
 "Dynamic chaining provides multi-intent detection (selects and chains together one or more topics and/or plugin actions as required) and multi-entity extraction (even for entities of the same type), providing a much more detailed answer to the user. In Copilot Studio dynamic chaining is enabled in [generative mode](microsoft-copilot-studio/advanced-generative-actions#turn-on-generative-mode-for-a-copilot). Learn more in [Optimize prompts and topic configuration](/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration)."  
 -->
