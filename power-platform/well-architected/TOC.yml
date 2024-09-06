@@ -181,7 +181,7 @@
         items:
         - name: Quick links
           href: intelligent-application/index.yml
-        - name: What is an intelligent application?
+        - name: What is an intelligent application workload
           href: intelligent-application/overview.md
         - name: Design principles
           href: intelligent-application/design-principles.md

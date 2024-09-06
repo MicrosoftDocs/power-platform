@@ -46,6 +46,12 @@ Choosing the right option for intent recognition and entity extraction in your i
 
 In Copilot Studio, topic or action triggering can be achieved by using the standard NLU model, combining or overriding it with a custom Azure CLU model, or by fully replacing the NLU model with [dynamic chaining](/microsoft-copilot-studio/advanced-generative-actions), a GPT LLM-based model.
 
+<!-- 
+This might be a better link or perhaps both would be great to provide, as dynamic chaining requires generative mode in Copilot Studio, as above link points out more clearly. See https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration (Guidance docs). Not sure now that we need a definition since it's pretty well covered in the table. I drafted the following just in case: 
+
+"Dynamic chaining provides multi-intent detection (selects and chains together one or more topics and/or plugin actions as required) and multi-entity extraction (even for entities of the same type), providing a much more detailed answer to the user. In Copilot Studio dynamic chaining is enabled in [generative mode](microsoft-copilot-studio/advanced-generative-actions#turn-on-generative-mode-for-a-copilot). Learn more in [Optimize prompts and topic configuration](/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration)."  
+-->
+
 | | Standard NLU model | Custom Azure CLU model | Dynamic chaining |
 |---|---|---|---|
 | **Pro** |  Default, out-of-the-box model that comes pretrained, with many predefined entity types.<br><br>Configuration is done by adding trigger phrases and custom entities (either closed lists with values and synonyms, or regular expressions). | Supports more languages, with native models.<br><br>Supports customization of the intent triggering model for better intent recognition or to address specific industry requirements.<br><br>Allows for complex entity extraction (for example, of the same type).<br><br>Entity extraction can also use Copilot Studio standard NLU. |Uses a GPT LLM and comes pre-trained on a wider spectrum of data.<br><br>Can handle multiple intents and chain topics and/or plugins.<br><br>Automatically generate questions for missing inputs and answers complex entities and questions from the conversation context.<br><br>Configuration is done by describing topics, plugin actions, inputs, and outputs. | 

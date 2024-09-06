@@ -9,7 +9,7 @@ ms.subservice: well-architected
 ms.topic: conceptual
 ---
 
-# Security considerations for intelligent application workloads
+# Security and compliance considerations for intelligent application workloads
 
 Security is critical for any architecture. Microsoft Power Platform offers a comprehensive range of tools to effectively secure your intelligent application workload. This article describes security considerations and recommendations for developing intelligent application workloads with Power Platform.
 
