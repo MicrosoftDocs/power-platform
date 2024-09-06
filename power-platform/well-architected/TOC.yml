@@ -178,7 +178,27 @@
       - name: Overview
         href: workloads.md
       - name: Intelligent application
-        href: intelligent-application/index.yml
+        items:
+        - name: Quick links
+          href: intelligent-application/index.yml
+        - name: What is an intelligent application?
+          href: overview.md
+        - name: Design principles
+          href: design-principles.md
+        - name: Design areas
+          items: 
+          - name: Responsible AI
+            href: responsible-ai.md
+          - name: Security and compliance
+            href: security.md
+          - name: Performance optimization
+            href: monitoring.md
+          - name: Deployment and testing
+            href: publishing.md
+          - name: Integration options
+            href: integrations.md
+          - name: Intent recognition and entity extraction
+            href: language.md
     - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support
