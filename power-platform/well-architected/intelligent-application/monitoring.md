@@ -68,12 +68,6 @@ Learn more:
 
 Proactively optimizing performance involves implementing measures to improve and enhance the performance of the workload before any issues arise. Proactive measures include identifying potential bottlenecks, monitoring performance metrics, and implementing optimizations to ensure the workload runs efficiently and meets performance goals.
 
-<!-- proposing to cut this para, mentioned above in bullet list for "Deflection rate" 
-
-Optimizing the copilot deflection rate is often one of the top focus areas to improve the copilot's overall performance. There are major indicators in Copilot Studio that help improve copilot performance, such as resolution rate, escalation rate, and customer satisfaction (CSAT).
-
-<!-- end -->
-
 To continuously enhance your intelligent application workload, schedule regular reviews of the copilot's performance:
 
 | Performance indicator | Definition |
