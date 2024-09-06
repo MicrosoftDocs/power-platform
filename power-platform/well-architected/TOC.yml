@@ -182,23 +182,23 @@
         - name: Quick links
           href: intelligent-application/index.yml
         - name: What is an intelligent application?
-          href: overview.md
+          href: intelligent-application/overview.md
         - name: Design principles
-          href: design-principles.md
+          href: intelligent-application/design-principles.md
         - name: Design areas
           items: 
           - name: Responsible AI
-            href: responsible-ai.md
+            href: intelligent-application/responsible-ai.md
           - name: Security and compliance
-            href: security.md
+            href: intelligent-application/security.md
           - name: Performance optimization
-            href: monitoring.md
+            href: intelligent-application/monitoring.md
           - name: Deployment and testing
-            href: publishing.md
+            href: intelligent-application/publishing.md
           - name: Integration options
-            href: integrations.md
+            href: intelligent-application/integrations.md
           - name: Intent recognition and entity extraction
-            href: language.md
+            href: intelligent-application/language.md
     - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support
