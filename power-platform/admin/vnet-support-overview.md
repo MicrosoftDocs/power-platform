@@ -42,7 +42,6 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 - Use [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) to securely connect to private, endpoint-protected resources in Azure, such as Web API, or any resources within your private network, such as SQL and Web API. You can protect your data from data breaches and other external threats.
 - Use [Virtual Network–supported connectors](vnet-support-overview.md#supported-services) such as [SQL Server](/connectors/sql/) to securely connect to your cloud-hosted data sources, such as Azure SQL or SQL Server, without exposing them to the internet. Similarly, you can use [Azure Queue](/azure/storage/queues/) connector to establish secure connections to private, endpoint-enabled Azure Queues.
 - Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private, endpoint-protected Azure Key Vault.
-- Use [HTTP With Microsoft Entra ID](/connectors/webcontentsv2/) to securely connect to service authentication by Microsoft Entra ID.
 - Use [custom connectors](/connectors/custom-connectors/) to securely connect to your services that are protected by private endpoints in Azure or services that are hosted within your private network.
 - Use [Azure File Storage](/connectors/azurefile/) to securely connect to private, endpoint-enabled Azure file storage. 
 
@@ -83,7 +82,7 @@ The following table lists the services that support Azure subnet delegation for 
 | Area      | Power Platform services | Virtual Network support availability|
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Generally available |
-| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[HTTP With Microsoft Entra ID](/connectors/webcontentsv2/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li></ul> | Generally available |
+| Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li></ul> | Generally available |
 
 ## Considerations to enable Virtual Network support for Power Platform Environment
 
