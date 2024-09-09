@@ -13,6 +13,16 @@ ms.date: 05/10/2024
 
 Get the latest info about what's new and what's changed in Power Platform Well-Architected.
 
+## September 2024
+
+### Updated articles
+
+- Recommendations across all five pillars have been revised to incorporate guidance on using Microsoft Copilot Studio features to facilitate their implementation.
+
+### New articles
+
+- The [Intelligent application](./intelligent-application/index.yml) workload is now included in Power Platform Well-Architected. This documentation provides guidance around planning, developing, and maintaining intelligent application workloads is built on Power Platform Well-Architected and its five pillars of architectural excellence.
+
 ## May 2024
 
 This is the official release of Power Platform Well-Architected.
