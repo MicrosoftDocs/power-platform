@@ -68,6 +68,7 @@ Leaving the default directive toggled on uses the default value specified in the
 ### Common configurations
 For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-integration/teams-integration), add the following to `frame-ancestors`:
 - `https://teams.microsoft.com/`
+- `https://teams.cloud.microsoft/`
 - `https://msteamstabintegration.dynamics.com/`
 
 For the Dynamics 365 App for Outlook, add the following to `frame-ancestors`:
