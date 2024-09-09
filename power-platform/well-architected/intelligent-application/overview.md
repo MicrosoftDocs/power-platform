@@ -78,13 +78,7 @@ Straightforward integration facilitates real-time data access and updates for th
 
 #### Technical complexity challenges
 
-Accurate responses rely on a well-architected intelligent application workload. As part of your feasibility assessment, consider the following:
-
-- **Effective prompts**: Craft precise and contextually relevant prompts to help guide the AI to produce accurate responses.
-- **Regular evaluation**: Implement continuous monitoring and testing of AI outputs to assess accuracy, relevance, and ethical adherence.
-- **Domain-specific training**: Fine-tune models on domain-specific data to enhance accuracy in specific contexts.
-- **Regular updates**: Periodically update models with new data to maintain their relevance and accuracy.
-- **Performance metrics:** Establish clear performance metrics to evaluate the success and accuracy of AI responses.
+Accurate responses rely on a well-architected intelligent application workload. As part of your feasibility assessment, evaluate the reliability and accuracy of the responses provided by the intelligent workload. Consider how to to optimize, monitor, and improve the generated responses. The technical complexity challenges require a combination of technical expertise, robust infrastructure, and ongoing management to successfully implement and maintain intelligent application workloads. Learn more: [Reliability design principles of intelligent application workloads](design-principles.md#reliability)
 
 ### Operational feasibility
 

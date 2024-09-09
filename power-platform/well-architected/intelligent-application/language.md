@@ -29,6 +29,7 @@ When designing your intelligent application workload, you need to choose the bes
 | CLU | Conversational Language Understanding is a feature of Azure AI that enables the creation of custom NLU models. |
 | LLM | A Large Language Model is a type of artificial intelligence model designed to understand and generate human language. |
 | GPT | Generative Pretrained Transformer refers to a family of LLMs that use the transformer architecture to understand and generate human-like text. |
+| Dynamic chaining | Dynamic chaining is a method of automating triggers for generative actions. Instead of manually defining every possible topic or trigger phrase, dynamic chaining allows the AI to determine which topics or plugin actions need to be called based on the context of the conversation. |
 
 Choosing the right option for intent recognition and entity extraction in your intelligent application workload involves several key considerations:
 
