@@ -20,19 +20,21 @@ The SAP Setup Assistant walks you through a checklist of manual and automated st
 
 The Assistant is organized by stages, activities, and steps. Each stage has at least one activity with specific steps you need to complete.
 
-The stages are:
+The stages SAP Setup Assistant walk you through are:
 
 - **Introduction**: Get to know the SAP Procurement template and the SAP Setup Assistant.
 - **Prerequisites**: Ensure you have the necessary licensing and environment setup.
 - **Installation & Configuration**: Import and deploy the SAP Procurement template solution.
 - **Optional activities**: Enable additional features to optimize your deployment and end-user experience.
 - **Deployment and next steps**: Review the installer stages, launch the app, and explore the next steps.
+  
+To ensure the best chance of a successful installation and deployment of the SAP Procurement template, it's important to complete as many activity steps as possible in each stage before going to the next stage.
 
-## Watch the demo
+To avoid having to transfer downloaded files across the machines, we recommend to **run the SAP Setup Assistant on the Windows Virtual Machine** where the data gateway will be setup. 
 
 ## SAP Setup Assistant package
 
-The SAP Setup Assistan template is available in [Microsoft AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>). The template package consists of one solution:
+The SAP Setup Assistant template is available in [Microsoft AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>). The template package consists of one solution:
 
 - **SAP Setup Assistant** contains foundational components used for SAP Setup Assistant
 
@@ -41,13 +43,22 @@ The SAP Setup Assistan template is available in [Microsoft AppSource](<https://a
 - One canvas app:
   - **SAP Setup Assistant** is the canvas app that takes user through different stages, activities, and steps.
 - One copilot:
-  - **SAP Setup Assistant Copilot** Get help with template installation instructions.
+  - **SAP Setup Assistant Copilot** Helps with in-app knowledge.
 - Two choices
   - **Install Template Batch Type** is the choice which helps with batch processing.
   - **ISO Language Code** is the choice that stores the abbreviations for the available language codes.
 - Eight Cloud flows
-- Six Connection references
+  - **InstallTemplateGetCurrentEnvironment**
+  - **InstallTemplateImportSolutionFile**
+  - **InstallTemplateSAPMenuItem**
+  - **InstallTemplateSAPProcess**
+  - **InstallTemplateSAPProcessBatchRun**
+  - **InstallTemplateSAPStrings**
+  - **InstallTemplateShareApps**
+  - **InstallTemplateShareFlows**
+- Seven Connection references
   - **SAP Setup Assistant - Dataverse**
+  - **SAP Setup Assistant - Office 365 Outlook**
   - **SAP Setup Assistant - Office 365 Users**
   - **SAP Setup Assistant - Power Apps for Makers**
   - **SAP Setup Assistant - Power Automate Management**
@@ -56,6 +67,18 @@ The SAP Setup Assistan template is available in [Microsoft AppSource](<https://a
 - One security role
   - **Template Installer**
 - Thirteen Dataverse Tables
+  - **Activity Step**
+  - **Activity Step Resource**
+  - **Activity Step Value**
+  - **Deployment Team**
+  - **Install Process**
+  - **Install Template Async Process**
+  - **Install Template Async Process Item**
+  - **Process Stage**
+  - **SAP List of Value**
+  - **SAP Localization**
+  - **SAP Menu Item**
+  - **Stage Activity**
 - Three Web resources
   - **List of Value Icon**
   - **Menu Items Icon**
@@ -65,6 +88,3 @@ The SAP Setup Assistan template is available in [Microsoft AppSource](<https://a
 
 [Install and set up the SAP Setup Assistant template](install-and-set-up.md)
 
-### See also
-
-[Manage the SAP Setup Assistant app](manage.md)
