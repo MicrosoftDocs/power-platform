@@ -49,11 +49,11 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
     - **SAP Setup Assistant**
   
-   Please note that the installation can take several minutes. Find the **SAP Setup Assistant** from the list of apps and make sure the template is **Installed** before proceeding with next step.
+   The installation may take several minutes. Before proceeding with next step, find the **SAP Setup Assistant** from the list of apps and make sure the template is **Installed**.
 
 ## Step 3: Update Connection References
 
-There are six connection references imported as part of the solution. In order for the cloud flows to run, you need to update the each connection reference with the connections created in the previous steps.
+Six connection references are imported as part of the solution. In order for the cloud flows to run, you need to update each connection reference with the connections created in step one.
 
 1. Go to the solution, find the **Default Solution** in your environment and open it.
 
