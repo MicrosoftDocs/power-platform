@@ -4,7 +4,7 @@ description: Learn how to turn on copilots and generative AI features.
 author: caitlinshaw1
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/05/2024
+ms.date: 09/10/2024
 ms.subservice: admin
 ms.author: caitlinshaw
 ms.reviewer: sericks
@@ -38,7 +38,7 @@ However, copilots and generative AI features aren't available in all regions and
 
 ## Regions involved with copilots and generative AI features
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the Azure OpenAI Service is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. For product-specific Copilot availability, see the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. For product-specific Copilot availability, see the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
 
 The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where Azure OpenAI service and Bing search service are hosted:
 
@@ -105,7 +105,7 @@ More copilots and generative AI features will be available in the future.
 
 ## Languages availability
 
-To learn about the languages that are supported, see the [Copilot International Availability report](https://aka.ms/bapcopilot-intl-report-external).
+To learn about the languages that are supported, see the [Copilot international availability report](https://aka.ms/bapcopilot-intl-report-external).
 
 ## Related content
 
