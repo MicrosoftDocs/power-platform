@@ -1,6 +1,6 @@
 ---
 title: Requirements to integrate SAP with Power Platform
-description: Learn about and access what's required to successfully integrate SAP with Microsoft Power Platform. 
+description: Learn what you need to do to successfully integrate SAP with Microsoft Power Platform. 
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -31,14 +31,14 @@ Review [Power Platform licensing](/power-platform/admin/pricing-billing-skus) an
 - The admins, developers, and functional business users who work with SAP solutions all need standalone licenses.
 - The admin who's setting up the on-premises data gateway needs a [Power BI license](/power-bi/fundamentals/service-features-license-type).
 - [Managed Environments](/power-platform/admin/managed-environment-licensing) is included in premium standalone licensing but is not included in the [Developer Plan](/power-platform/developer/plan).
-- Admins can [view Power Apps and Power Automate consumption](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center (Note: this is a preview feature gradually being rolled out to different regions).
+- Admins can [view Power Apps and Power Automate consumption](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center.
 
 ## SAP subscription
 
-Work with an SAP administrator to review your existing [SAP](<https://www.sap.com/>) subscription. Keep these points in mind:
+Work with an SAP administrator to review your [SAP](<https://www.sap.com/>) subscription. Keep these points in mind:
   
 - The [SAP ERP connector](/connectors/saperp/) can work with any SAP system that uses RFC and BAPI calls.
-- An administrator who has valid S-User access to the SAP system(s) is required to assist through the integration process. The S-User is an SAP super administrator and has all the authorizations for the portal and can manage other necessary SAP roles as necessary.
+- An administrator who has valid S-User access to the SAP system(s) is required to assist through the integration process. The S-User is an SAP super administrator and has all the authorizations for the portal and can manage other necessary SAP roles as needed.
 - SAP server and user accounts need to be set up to **allow actions**.
 
 ## Windows Virtual Machine
@@ -51,7 +51,7 @@ Create a [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/vir
 ## On-premises data gateway
 
 Set up an on-premises data gateway on your virtual machine or server along with a Microsoft .NET Framework, a Visual C++ Redistributable, and an SAP Connector for Microsoft .NET.
-The on-premises data gateway set up with the additional components on your machine or server work together to support the SAP ERP connector.
+The on-premises data gateway set up with the other components on your machine or server work together to support the SAP ERP connector.
 
 ### Privileges
 
