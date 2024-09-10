@@ -75,7 +75,7 @@ Download and set up the on-premises data gateway and the additional components t
   - Identify the operating systems and .NET Frameworks required to support the most recent version of the gateway in the _System Requirements_ section on the gateway download page.
 - Go to the [Microsoft .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)page to select the version that supports the most recent version of the gateway.
 - Go to the [Microsoft C++ Runtime DLLs version 14.x](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true) page to select version 14.x of the library. SAP's NCo 3.1 connector requires this library to support the .NET Framework.
-- Got to the [SAP Connector for Microsoft .NET](https://support.sap.com/en/product/connectors/msnet.html) page. Select the SAP NCo 3.1 connector for Microsoft .NET 3.1 (NCo 3.1) SDK from SAP. The specific link is in the _NCo 3.1 - compiled with .NET Framework 4.6.2_ section and looks like this: **SAP Connector for Microsoft .NET 3.1.3.0 for Windows 64 bit (x64), July 19, 2023 (ZIP archive, 35,121 KB)**.
+- Go to the [SAP Connector for Microsoft .NET](https://support.sap.com/en/product/connectors/msnet.html) page. Select the SAP NCo 3.1 connector for Microsoft .NET 3.1 (NCo 3.1) SDK from SAP. The specific link is in the _NCo 3.1 - compiled with .NET Framework 4.6.2_ section and looks like this: **SAP Connector for Microsoft .NET 3.1.3.0 for Windows 64 bit (x64), July 19, 2023 (ZIP archive, 35,121 KB)**.
 
 > [!IMPORTANT]
 >
