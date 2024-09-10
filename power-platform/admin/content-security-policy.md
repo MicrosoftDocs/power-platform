@@ -34,7 +34,7 @@ This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; wo
 
 ## Configuring CSP
 
-CSP can be toggled and configured through the Power Platform admin center. **It's important to enable on a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
+CSP can be toggled and configured through the Power Platform admin center. **It's important to enable on a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated. We also support a "report-only mode" to allow for easier ramp-up in production.
 
 To configure CSP, navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) -> **Environments** -> **Settings** -> **Privacy + Security**. The following image shows the default state of the settings:
 
@@ -55,9 +55,9 @@ The "Enforce content security policy" toggle turns on the default policy for enf
 2. Enable report-only mode in production.
 3. Enforce in production once no violations are reported.
 
-### Configuring directives
+### Configure directives
 
-The final section is "Configure directives". This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
+This section allows you to control individual directives within the policy. Currently, only `frame-ancestors` can be customized.
 
 ![Configure CSP directives](media/csp-directives.png "Configure CSP directives")
 
@@ -90,7 +90,7 @@ Let's take a look at a couple examples of CSP configuration:
 
 ![CSP example 1](media/csp-example-1.png "CSP example 1")
 
-In the above example:
+In the example:
 - Reporting is turned off.
 - Model-driven enforcement is enabled.
   - `frame-ancestors` is customized to `https://www.foo.com` and `https://www.bar.com`
@@ -104,7 +104,7 @@ The effective headers would be:
 
 ![CSP example 2](media/csp-example-2.png "CSP example 2")
 
-In the above example:
+In the example:
 - Reporting is turned on.
   - Reporting endpoint is set to `https://www.mysite.com/myreportingendpoint`
 - Model-driven enforcement is enabled.
@@ -122,7 +122,7 @@ CSP can be configured without using the UI by modifying the following organizati
 
 - [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in model-driven apps.
 
-- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it's set to `'self'` if `ContentSecurityPolicyConfiguration` is not set).  This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`.  This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
+- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it's set to `'self'` if `ContentSecurityPolicyConfiguration` is not set). This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`. This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
   - (From MDN) The HTTP Content-Security-Policy (CSP) frame-ancestors directive specifies valid parents that may embed a page using `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>`.
 
 - [IsContentSecurityPolicyEnabledForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabledForCanvas) controls whether the Content-Security-Policy header is sent in canvas apps.
@@ -139,7 +139,7 @@ Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
 - Paste and execute the below script into the console.
 - To enable CSP, pass the default configuration - `enableFrameAncestors(["'self'"])`
-- As an example of enabling additional origins to embed the app - `enableFrameAncestors(["*.powerapps.com", "'self'", "abcxyz"])`
+- As an example of enabling other origins to embed the app - `enableFrameAncestors(["*.powerapps.com", "'self'", "abcxyz"])`
 
 ```js
 async function enableFrameAncestors(sources) {
@@ -202,7 +202,7 @@ async function enableFrameAncestors(sources) {
 ### Disabling CSP without UI
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
-- Paste and execute the below script into the console.
+- Paste and execute the following script into the console.
 - To disable CSP, paste into the console: `disableCSP()`
 
 ```js
