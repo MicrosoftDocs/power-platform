@@ -1,6 +1,6 @@
 ---
-title: "Content security policy"
-description: "Use content security policy to prevent clickjacking in Power Apps."  
+title: Content security policy
+description: Use content security policy to prevent click jacking in Power Apps. 
 ms.date: 06/14/2024
 ms.topic: conceptual
 author: JesseParsons
@@ -30,11 +30,11 @@ Each component of the CSP header value controls the assets that can be downloade
 This results in a default CSP of `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'self' https://*.powerapps.com;`. In our roadmap, we have the ability to modify currently noncustomizable headers.
 
 ### Prerequisites
-- For Dynamics 365 Customer Engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 Customer Engagement (on-premises), version 9.1 or later version.
+- For Dynamics 365 customer engagement apps and other model-driven apps, CSP is only available in online environments and in organizations with Dynamics 365 customer engagement (on-premises), version 9.1 or later version.
 
 ## Configuring CSP
 
-CSP can be toggled and configured through the Power Platform admin center. **It is important to enable on a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
+CSP can be toggled and configured through the Power Platform admin center. **It's important to enable on a dev/test environment first** since enabling CSP could start blocking scenarios if the policy is violated.  We also support a "report-only mode" to allow for easier ramp-up in production.
 
 To configure CSP, navigate to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) -> **Environments** -> **Settings** -> **Privacy + Security**. The following image shows the default state of the settings:
 
@@ -122,7 +122,7 @@ CSP can be configured without using the UI by modifying the following organizati
 
 - [IsContentSecurityPolicyEnabled](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabled) controls whether the Content-Security-Policy header is sent in model-driven apps.
 
-- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it is set to `'self'` if `ContentSecurityPolicyConfiguration` is not set).  This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`.  This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
+- [ContentSecurityPolicyConfiguration](/powerapps/developer/data-platform/reference/entities/organization#BKMK_ContentSecurityPolicyConfiguration) controls the value of the frame-ancestors portion (as seen above, it's set to `'self'` if `ContentSecurityPolicyConfiguration` is not set).  This setting is represented by a JSON object with the following structure – `{ "Frame-Ancestor": { "sources": [ { "source": "foo" }, { "source": "bar" } ] } }`.  This would translate into `script-src * 'unsafe-inline' 'unsafe-eval'; worker-src 'self' blob:; style-src * 'unsafe-inline'; font-src * data:; frame-ancestors 'foo' 'bar';`
   - (From MDN) The HTTP Content-Security-Policy (CSP) frame-ancestors directive specifies valid parents that may embed a page using `<frame>`, `<iframe>`, `<object>`, `<embed>`, or `<applet>`.
 
 - [IsContentSecurityPolicyEnabledForCanvas](/powerapps/developer/data-platform/reference/entities/organization#BKMK_IsContentSecurityPolicyEnabledForCanvas) controls whether the Content-Security-Policy header is sent in canvas apps.
@@ -138,7 +138,7 @@ Especially for environments not in the Power Platform admin center such as on-pr
 Steps:
 - Open browser dev tools while using the model-driven app as a user with organization entity update privileges (System Administrator is a good option).
 - Paste and execute the below script into the console.
-- To simply enable CSP, pass the default configuration - `enableFrameAncestors(["'self'"])`
+- To enable CSP, pass the default configuration - `enableFrameAncestors(["'self'"])`
 - As an example of enabling additional origins to embed the app - `enableFrameAncestors(["*.powerapps.com", "'self'", "abcxyz"])`
 
 ```js
