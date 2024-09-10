@@ -2,7 +2,7 @@
 title: Install and set up the SAP Setup Assistant template for Power Platform
 description: Learn how to install, set up, and deploy the SAP Setup Assistant template for Microsoft Power Platform.
 author: menakakmsft
-ms.author: menakakmsft
+ms.author: menakakollu
 contributors:
   - menakakmsft
   - ellenwehrle
@@ -29,7 +29,7 @@ It's best to create the connections before you import the solution. If you creat
 1. Go to **Connections** and select **+ New Connection** to create the connections that are not already set up in your target environment:
 
     - [Microsoft Dataverse connector](/connectors/commondataserviceforapps/)
-    - [Office 365 Outlook](/connectors/office365outlook/)
+    - [Office 365 Outlook](/connectors/office365/)
     - [Office 365 Users connector](/connectors/office365users/)
     - [Power Apps for Makers connector](/connectors/powerappsforappmakers/)
     - [Power Automate Management](/connectors/flowmanagement/)
@@ -91,7 +91,7 @@ Open the newly installed SAP Setup Assistant and verify that the eight cloud flo
 1. Select **Cloud flows(8)** on the left pane
 1. Check for the **Status** column
 
-   :::image type="content" source="media/cloud-flows-status-column.png" alt-text="Image of Saving the SAP Setup Assistant Connection Reference.":::
+   :::image type="content" source="media/cloud-flows-status-column.png" alt-text="Image of SAP Setup Assistant cloud flow status column.":::
    
 1. Navigate into the cloud flows that have **Status**="Off"
 1. Select **Turn on** on the command bar.
