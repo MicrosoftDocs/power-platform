@@ -1,14 +1,14 @@
 ---
 title: SAP Setup Assistant template for Power Platform
 description: The SAP Setup Assistant template for Microsoft Power Platform enables get Power Platform + SAP installation up.
-author: menakamsft
+author: menakakmsft
 contributors:
   - menakakmsft
   - ellenwehrle
 ms.author: menakakollu
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/20/2024
+ms.date: 09/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
