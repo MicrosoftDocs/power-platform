@@ -45,7 +45,7 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 1. Go to the [SAP Setup Assistant on AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>) and select **Get it now**.
 1. In the **Install SAP Setup Assistant** window in the [Power Platform admin center,](https://admin.powerplatform.microsoft.com/) select the developer environment that you prepared.
 1. Agree to the *Terms and Privacy* statements when prompted.
-1. Select **Install**. One [solution](/power-platform/alm/solution-concepts-alm) is installed in your environment:
+1. Select **Install** to install one [solution](/power-platform/alm/solution-concepts-alm) in your environment:
 
     - **SAP Setup Assistant**
   
@@ -73,7 +73,7 @@ Six connection references are imported as part of the solution. In order for the
      
 1. For each connection :
    - Select the Connection Reference.
-   - Select the Connection you have created in step two from the **Connection** dropdown.
+   - Select the Connection you created in step two from the **Connection** dropdown.
    - **Save** the changes.
 
      :::image type="content" source="media/update-connection-for-connection-reference.png" alt-text="Image of Updating the SAP Setup Assistant Connection Reference.":::
