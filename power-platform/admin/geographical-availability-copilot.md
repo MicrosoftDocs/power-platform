@@ -50,7 +50,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Asia<br>Brazil<br>Canada<br>Japan<br>Korea<br>Singapore<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Government cloud (GCC, GCC High) | United States (commercial cloud) | United States |
 
-\*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI service in the same boundary.
+\*If your Power Platform and Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.
 
 ## Turn on copilots and generative AI features
 
