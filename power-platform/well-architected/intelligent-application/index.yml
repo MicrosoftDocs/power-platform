@@ -21,7 +21,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Intelligent applications
+          - text: Intelligent application workloads
             url: overview.md
           - text: Design principles
             url: design-principles.md

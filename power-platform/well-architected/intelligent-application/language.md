@@ -151,7 +151,7 @@ When building a copilot, consider the languages and markets your intelligent app
   
 - **Single vs. multi-language copilot**: Decide whether to develop a single copilot that supports multiple languages or separate copilots for each language. This decision depends on factors like resource availability, maintenance capabilities, and the complexity of the languages involved.
 
-- **Translation timing**: Consider whether translations should be set during the configuration phase or provided in real-time at runtime. Configured translations offer stability and control, while real-time translations provide flexibility and rapid deployment.
+- **Translation timing**: Consider whether translations should be set during the configuration phase or provided in real time at runtime. Configured translations offer stability and control, while real-time translations provide flexibility and rapid deployment.
 
 Learn more:
 

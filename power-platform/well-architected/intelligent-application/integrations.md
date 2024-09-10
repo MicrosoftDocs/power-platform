@@ -38,7 +38,7 @@ Endpoint performance is a critical factor that directly impacts the user experie
   - **Caching**: Implementing caching strategies to reduce the load on endpoints and speed up response times.
   - **Load balancing**: Where applicable, distributing requests across multiple endpoints to avoid overloading any single endpoint.
   
-    Learn more: [Recommendations for optimizing data performance](../performance-efficiency/optimize-data-performance.md).
+    Learn more: [Recommendations for optimizing data performance](../performance-efficiency/optimize-data-performance.md)
 
 - **Scalability and reliability**: High-performing endpoints contribute to the scalability and reliability of your application. As the number of users grows, well-optimized endpoints can handle increased traffic without significant degradation in performance.
 
@@ -75,7 +75,7 @@ Integration patterns aren't exclusive and can be combined. Evaluate the integrat
 | | Power Automate cloud flows | HTTP requests and connectors | Bot Framework Skills
 | --- | --- | --- | --- |
 | **Pro** | No-code / low-code.<br>Clear separation of integration and conversational logic.<br>Can be monitored separately.<br>Existing cloud flows can be updated to integrate with Copilot Studio. | No-code / low-code.<br>Synchronous.<br>Can be monitored as part of Copilot Studio App Insights integration.<br>Can use variables, including environment variables and secrets.<br>Variables, conditions, parameters, and so on can use Power Fx formulas.<br>Parsing and error handling support. | Synchronous execution.<br>Support for private endpoints.<br>Existing Bot Framework investments can be reused. |
-| **Con** | Asynchronous execution can cause latency and slowness (both to invoke or to run complex flows).<br>If scale/performance is a concern, the higher-tier "Power Automate Process" plan can be evaluated.<br>"Power Automate Process" required for service principal ownership.<br>Need to return results within 100 seconds. | Mixes conversational logic and integration logic, but integration topics can be isolated, as they can be configured for inputs and outputs.<br>Need to return results within 100 seconds. | Pro-code (for example, C#)<br>Runs in the Azure AI Bot Service.<br>Extra costs need to be covered by an Azure subscription.<br>Application Lifecycle Management differs from Power Platform. |
+| **Con** | Asynchronous execution can cause latency and slowness (both to invoke or to run complex flows).<br>If scale/performance is a concern, the higher-tier "Power Automate Process" plan can be evaluated.<br>"Power Automate Process" required for service principal ownership.<br>Need to return results within 100 seconds. | Mixes conversational logic and integration logic, but integration topics can be isolated, as they can be configured for inputs and outputs.<br>Need to return results within 100 seconds. | Pro-code (for example, C#).<br>Runs in the Azure AI Bot Service.<br>Extra costs need to be covered by an Azure subscription.<br>Application Lifecycle Management differs from Power Platform. |
 
 ## Power Automate and HTTP/connector integrations
 

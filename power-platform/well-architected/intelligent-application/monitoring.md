@@ -11,7 +11,7 @@ ms.topic: conceptual
 
 # Performance optimization for intelligent application workloads
 
-Performance efficiency is the ability of your workload to efficiently scale to meet the demands placed on it by users. Monitoring the performance of your intelligent application workload is crucial to ensuring it operates effectively and efficiently.
+Performance efficiency is the ability of your workload to scale efficiently to meet the demands placed on it by users. Monitoring the performance of your intelligent application workload is crucial to ensuring that it operates effectively and efficiently.
 
 The workload team need to establish key performance metrics, regularly review system performance, and diagnose any issues promptly. Effective monitoring and diagnostic procedures help maintain system reliability and user satisfaction.
 
