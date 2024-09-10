@@ -5,7 +5,7 @@ author: menakamsft
 contributors:
   - menakakmsft
   - ellenwehrle
-ms.author: menakakmsft
+ms.author: menakakollu
 ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 08/20/2024
