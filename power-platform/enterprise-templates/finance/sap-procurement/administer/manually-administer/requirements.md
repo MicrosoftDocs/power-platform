@@ -51,7 +51,6 @@ Create a [Windows Virtual Machine (VM)](https://azure.microsoft.com/products/vir
 ## On-premises data gateway
 
 Set up an on-premises data gateway on your virtual machine or server along with a Microsoft .NET Framework, a Visual C++ Redistributable, and an SAP Connector for Microsoft .NET.
-
 The on-premises data gateway set up with the additional components on your machine or server work together to support the SAP ERP connector.
 
 ### Privileges
@@ -69,38 +68,31 @@ More information:
 
 ### Downloads
 
-Go to these links to download and set up the on-premises data gateway and the additional components that support it on your machine or server:
+Download and set up the on-premises data gateway and the additional components that support it on your machine or server.
 
-- [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127)
-
-  - Select the most recent version (October 2023 - 3000.194 or higher) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference)
-  - Identify the operating systems and .NET Frameworks required to support the most recent version of the gateway in the _System Requirements_ section on the gateway download page
-- [Microsoft .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)
-
-  - Select the version that supports the most recent version of the gateway
-- [Microsoft C++ Runtime DLLs version 14.x](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true)
-  - Select version 14.x of the library. SAP's NCo 3.1 connector requires this library to support the .NET Framework
-- [SAP Connector for Microsoft .NET](https://support.sap.com/en/product/connectors/msnet.html)
-
-  - Select the SAP NCo 3.1 connector for Microsoft .NET 3.1 (NCo 3.1) SDK from SAP
-    - The specific link is in the _NCo 3.1 - compiled with .NET Framework 4.6.2_ section and looks like this: **SAP Connector for Microsoft .NET 3.1.3.0 for Windows 64 bit (x64), July 19, 2023 (ZIP archive, 35,121 KB)**
+- Go to the [Microsoft Download Center's on-premises data gateway page](https://www.microsoft.com/download/details.aspx?id=53127).
+  - Select the most recent version (July 2024 - 3000.194 or higher) of the gateway to connect to [Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install), [Power Apps](/power-apps/maker/canvas-apps/gateway-reference), and [Power Automate](/power-automate/gateway-reference).
+  - Identify the operating systems and .NET Frameworks required to support the most recent version of the gateway in the _System Requirements_ section on the gateway download page.
+- Go to the [Microsoft .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)page to select the version that supports the most recent version of the gateway.
+- Go to the [Microsoft C++ Runtime DLLs version 14.x](/cpp/windows/latest-supported-vc-redist?view=msvc-170&preserve-view=true) page to select version 14.x of the library. SAP's NCo 3.1 connector requires this library to support the .NET Framework.
+- Got to the [SAP Connector for Microsoft .NET](https://support.sap.com/en/product/connectors/msnet.html) page. Select the SAP NCo 3.1 connector for Microsoft .NET 3.1 (NCo 3.1) SDK from SAP. The specific link is in the _NCo 3.1 - compiled with .NET Framework 4.6.2_ section and looks like this: **SAP Connector for Microsoft .NET 3.1.3.0 for Windows 64 bit (x64), July 19, 2023 (ZIP archive, 35,121 KB)**.
 
 > [!IMPORTANT]
 >
-> - NCo 3.1 works with .NET Framework releases 4.6.2 to 4.8.1. Download the most recent .NET Framework listed in the _Systems Requirements_ section of the gateway download page
-> - You must choose the 64-bit version, the 32-bit version will not work
-> - Version NCo 3.0 is no longer supported
+> - NCo 3.1 works with .NET Framework releases 4.6.2 to 4.8.1. Download the most recent .NET Framework listed in the _Systems Requirements_ section of the gateway download page.
+> - You must choose the 64-bit version, the 32-bit version will not work.
+> - **Version NCo 3.0 is no longer supported**.
 
 ## Admin centers
 
 Be sure admin centers are set up and ready to support an enterprise-level deployment. You or someone on your team need to have Global or system admin privileges to several different admin centers so you can configure and manage various components and users.
 
-- [Microsoft 365 admin center](<https://admin.microsoft.com/>). Work with a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) if you need to:
+- Go to the [Microsoft 365 admin center](<https://admin.microsoft.com/>). Work with a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) if you need to:
 
   - Update licenses, subscriptions, and services.
   - Assign high-level admin roles to your team members, such as Entra Global admin.
 
-- [Microsoft Entra admin center](<https://entra.microsoft.com/>). As an [Entra Global admin](/entra/identity/role-based-access-control/permissions-reference#global-administrator), you need to:
+- Go to the [Microsoft Entra admin center](<https://entra.microsoft.com/>). As an [Entra Global admin](/entra/identity/role-based-access-control/permissions-reference#global-administrator), you need to:
 
   - Access [Microsoft Entra ID](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView) from the Microsoft Entra admin center.
   - Set up a new [tenant](/entra/identity-platform/quickstart-create-new-tenant) or reconfigure an existing tenant. The tenant will need to have at least 1 GB of database storage capacity available for the environments within it.
@@ -108,7 +100,7 @@ Be sure admin centers are set up and ready to support an enterprise-level deploy
   - Set up [Microsoft Entra ID single sign-on (SSO) for gateway](/fabric/admin/service-admin-portal-integration#azure-ad-single-sign-on-sso-for-gateway) having constrained delegation to support SSO.
   - Create [security groups](configure-security-groups.md) within the Microsoft Entra ID tenant created to support conditional access to solution components.
 
-- [Power Platform admin center](https://admin.powerplatform.microsoft.com/). As a Global admin or Power Platform System admin, you need to:
+- Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). As a Global admin or Power Platform System admin, you need to:
   - Set up the admin center's [management and admin connectors](/power-platform/admin/wp-management-monitoring).
   - Configure the [admin center](/power-platform/admin/wp-work-with-admin-portals) so Power Platform admins can [manage](/power-platform/admin/governance-considerations#faq---what-permissions-exist-at-an-azure-ad-tenant-level) gateways, tenants, environments and user access.
   - Assign specified users Power Platform admin roles so they can monitor and manage in the admin center.
