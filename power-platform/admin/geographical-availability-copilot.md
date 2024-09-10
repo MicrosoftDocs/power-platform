@@ -38,7 +38,7 @@ However, copilots and generative AI features aren't available in all regions and
 
 ## Regions involved with copilots and generative AI features
 
-When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. For product-specific Copilot availability, see the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
+When you use copilots and generative AI features, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability, in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
 
 The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where Azure OpenAI service and Bing search service are hosted:
 
@@ -105,8 +105,8 @@ More copilots and generative AI features will be available in the future.
 
 ## Languages availability
 
-To learn about the languages that are supported, see the [Copilot international availability report](https://aka.ms/bapcopilot-intl-report-external).
+Learn about the languages that are supported, in the [Copilot international availability report](https://aka.ms/bapcopilot-intl-report-external).
 
-## Related content
+## Related information
 
 [Legal terms](https://go.microsoft.com/fwlink/?linkid=2182773)
