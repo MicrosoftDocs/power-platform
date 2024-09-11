@@ -3,16 +3,14 @@ title: "Administer the catalog"
 description: "Learn how to administer the catalog for Power Platform. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: derekkwanpm
 ms.author: derekkwan
-ms.date: 08/29/2024
+ms.date: 09/10/2024
 ms.reviewer: matp
 ms.topic: article
 ms.subservice: admin
 search.audienceType:
 - admin
 ---
-# Administer the catalog (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Administer the catalog
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -31,9 +29,7 @@ Administering the catalog includes the following tasks:
 - [Edit user access](#edit-user-access)
 
 > [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> You need a Managed Environment in order to submit items to the catalog. You can however install catalog items from any environment. More information: [Managed Environments overview](managed-environment-overview.md)
 
 ## Access controls
 
@@ -252,5 +248,5 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 
 ### See also
 
- [Use the catalog with Power Platform CLI (preview)](/power-platform/developer/submit-catalog-items)
+ [Use the catalog with Power Platform CLI](/power-platform/developer/submit-catalog-items)
 
