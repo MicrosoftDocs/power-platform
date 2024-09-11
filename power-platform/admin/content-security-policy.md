@@ -74,6 +74,7 @@ For Microsoft Teams integration using the [Dynamics 365 app](/dynamics365/teams-
 For the Dynamics 365 App for Outlook, add the following to `frame-ancestors`:
 - Your Outlook Web App homepage origin
 - `https://outlook.office.com`
+- `https://outlook.office365.com`
 
 For embedding Power Apps in Power BI reports, add the following to `frame-ancestors`:
 - `https://app.powerbi.com`
