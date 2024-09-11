@@ -277,7 +277,7 @@ Implement consistency in common visual elements with reusable [custom components
 
 In canvas apps, [modern controls](/power-apps/maker/canvas-apps/controls/modern-controls/overview-modern-controls) feature integrated signaling within their design. Specifically, the [button](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-button) and [badge](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) controls offer various options in their style properties, making them effective signals. Adhere to best practices for each component and apply signaling selectively to ensure optimal communication.
 
-## See also
+## Related information
 
 - [Principles of grouping](https://en.wikipedia.org/wiki/Principles_of_grouping)
 - [Gestalt psychology](https://en.wikipedia.org/wiki/Gestalt_psychology)

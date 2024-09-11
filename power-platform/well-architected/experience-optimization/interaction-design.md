@@ -180,7 +180,7 @@ Clearly communicate expectations and instructions to users, specifying what acti
 Although some interaction implementation has been encapsulated into the modern components themselves, these rules should also be considered on the scope of the screen layout or overall application flow.
 --->
 
-## See also
+## Related information
 
 - [Affordance](https://en.wikipedia.org/wiki/Affordance)
 - [Mental model](https://en.wikipedia.org/wiki/Mental_model)
