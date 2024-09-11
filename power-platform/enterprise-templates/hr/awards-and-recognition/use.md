@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/21/2024
+ms.date: 08/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -15,15 +15,17 @@ ms.customerIntent: As a user, I want to take a look at the different user experi
 
 # What is the Awards and Recognition App or Copilot for Microsoft Power Platform?
 
-The Awards and Recognition program allows you to  nominate individual coworkers and teams for awards, view your own recognitions, and update your user settings. Your organization can opt to have users interact with either the Awards and Recognition App or Awards and Recognition Copilot—or offer both options. Each version offers a different user experience to support an awards program and this article shares some details about each type of experience.
+The Awards and Recognition program allows you to  nominate individual coworkers and teams for awards, view your own recognitions, and update your user settings.
+
+Your organization can opt to have you interact with either the *Awards and Recognition App* or *Awards and Recognition Copilot*—or offer both options. Each version offers a different experience to support an awards program and this article shares some details about each type of experience.
 
 ## Use the Awards and Recognition App
 
 The Awards and Recognition App is designed to be used as a mobile application. If your organization has set up this program, you simply open the mobile app to:
 
-- nominate coworkers for outstanding efforts
-- view nominations you submitted and recognitions received
-- change screen settings
+- Nominate coworkers for outstanding efforts
+- View nominations you submitted and recognitions received
+- Change screen settings
 
 ### Nominate coworkers for awards
 
@@ -64,8 +66,8 @@ The Awards and Recognition App offers three color-theme settings. By default, th
 
 The Awards and Recognition Copilot is designed to be accessed and used in Microsoft Teams. If your organization has set up this program, go into Teams and select **+Apps** to add the Awards and Recognition Copilot to your Teams setup. It's easy to get started interacting with the Awards and Recognition Copilot in Teams to:
 
-- nominate coworkers for awards
-- inquire about recognitions you received from others
+- Nominate coworkers for awards
+- Inquire about recognitions you received from others
 - Ask to see the nominations you submitted
 
 To get started in the Awards and Recognition Copilot, you simply tell it what Awards and Recognition task you want to do. Copilot offers buttons to select the next action, such as *Create a nomination* or *See my recognitions* and predefined dropdown options, such as *Nomination period* and *Award*.
