@@ -792,6 +792,8 @@
                   href: programmability-tutorial-allocate-capacity-addons.md
                 - name: "Tutorial: Create cross tenant isolation reports (preview)"
                   href: programmability-tutorial-cross-tenant-reporting.md
+                - name: "Tutorial: Create, update, and list Environment Management Settings (preview)"
+                  href: programmability-tutorial-environmentmanagement-settings.md
             - name: PowerShell
               items:
                 - name: Getting started
