@@ -70,7 +70,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Intelligent application workload
-            url: well-architected/intelligent-application/
+            url: well-architected/intelligent-application/index.yml
       - linkListType: reference
         links:
           - text: Power Platform Well-Architected assessment
