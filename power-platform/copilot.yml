@@ -63,10 +63,10 @@ landingContent:
 # Card
   - title: Power Platform Well-Architected
     linkLists:
-#      - linkListType: overview
-#        links:
-#          - text: Pillars of architectural excellence
-#            url: well-architected/pillars.md
+      - linkListType: overview
+        links:
+          - text: What is Power Platform Well-Architected?
+            url: well-architected/what-is-power-well-architected.md
       - linkListType: concept
         links:
           - text: Intelligent application workload
