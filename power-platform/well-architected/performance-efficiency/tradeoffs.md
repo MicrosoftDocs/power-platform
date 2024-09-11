@@ -99,7 +99,7 @@ Sharing resources is an approach for improving efficiency. It increases density 
 
 - User interface development is often done in faster iterations and ship cycles, which can make it harder to enhance performance continuously.
 
-## See also
+## Related information
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)

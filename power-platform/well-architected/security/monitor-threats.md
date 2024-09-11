@@ -172,6 +172,7 @@ For more information, see:
 
 - [Power Apps activity logging](/power-platform/admin/logging-powerapps)
 - [Power Automate activity logging](/power-platform/admin/logging-power-automate)
+- [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
 - [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)
@@ -209,7 +210,7 @@ Microsoft Entra ID uses adaptive machine learning algorithms, heuristics, and kn
 
 DevOps advocates change management of workloads via continuous integration and continuous delivery (CI/CD). Be sure to add security validation in the pipelines. Follow the guidance described in [Securing Azure Pipelines](/azure/devops/pipelines/security/overview).
 
-## See also
+## Related information
 
 - [What is Microsoft Sentinel?](/azure/sentinel/overview)
 - [Threat intelligence integration in Microsoft Sentinel](/azure/sentinel/threat-intelligence-integration)
