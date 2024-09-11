@@ -78,7 +78,7 @@ For a Dataverse connection:
 - If an instance isn't found, then the option to connect to **Dataverse** won't be available.
 - If Project "Sophia" isn't able to access the data in the instance, it shows an error message.
 
-Similar to other connections, based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. 
+Similar to other connections, based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. Currently Dataverse connection can load up to 15 tables. It will keep adding more tables until hitting that limit. Data is aggregated before reading it, and it is limited to 10,000 rows.
 
 > [!TIP]
 > Make sure that custom tables have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
@@ -96,7 +96,7 @@ For a Dynamics 365 Sales connection:
 - If an instance isn't found, then the option to connect to **Dynamics 365 Sales** won't be available.
 - If Project "Sophia" isn't able to access the data in the instance, it shows an error message.
 
-Based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data.
+Based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. This connection has same limitations on number of tables and rows as the Dataverse connection. If the logged in user does not have read access to the Sales Hub app in Dynamics 365 Sales deployment, then Project "Sophia" might not show the option to connect to it. In this case, try connecting to it as a Dataverse connection.
 
 > [!TIP]
 > Make sure that custom tables added to Dynamics 365 Sales have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.

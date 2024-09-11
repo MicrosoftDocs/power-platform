@@ -60,8 +60,6 @@ More information: [Contact Technical Support](get-help-support.md)
 ## Set the password expiration  
  Use the Security & privacy page to set how frequently a user's password expires and the number of days before a user is notified of an upcoming expiration.  
   
- ![Microsoft 365 admin center manage password expiration.](../admin/media/o365-admin-center-password-expiration.png "Microsoft 365 admin center manage password expiration")  
-  
 > [!TIP]
 >  Note the information on this page about users doing their own password reset. To enable your users to be able to reset their passwords themselves, you'll need to purchase an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] subscription and configure it for password self-service. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Self-service password reset in Microsoft Entra ID: how to enable, configure, and test self-service password reset](/azure/active-directory/authentication/quickstart-sspr#enable-self-service-password-reset)  
   
@@ -69,8 +67,6 @@ More information: [Contact Technical Support](get-help-support.md)
  If you have an [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] Basic or Premium subscription, you can set it up so users can do their own password reset. You can access [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] configuration from the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)]. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Enable users to reset their Microsoft Entra passwords]([Enable self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr#enable-self-service-password-reset)  
   
  On the left-side menu of the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], choose **Admin centers** > **Microsoft Entra**. Select your subscription in [!INCLUDE[pn_Windows_Azure](../includes/pn-windows-azure.md)] and then choose **Configure**.  
-  
- ![Microsoft Entra password policy.](../admin/media/o365-admin-center-azure-ad.png "Microsoft Entra password policy")  
   
 ## Add your domain  
  Use the Manage domains page to add your domain to your subscription. When you add your own domain, user sign-ins can match your company's URL. For example, instead of user@contoso.onmicrosoft.com, it could be user@contoso.com. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Add a domain to Microsoft 365](https://support.office.com/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
