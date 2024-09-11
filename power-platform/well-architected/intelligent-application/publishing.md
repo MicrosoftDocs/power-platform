@@ -4,7 +4,7 @@ description: Learn key considerations for deploying and testing your intelligent
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/12/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

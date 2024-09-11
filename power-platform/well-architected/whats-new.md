@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 09/12/2024
+ms.date: 09/11/2024
 ---
 
 # What's new in Power Platform Well-Architected

@@ -4,7 +4,7 @@ description: Learn how to design your Power Platform workload with business requ
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 09/12/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---

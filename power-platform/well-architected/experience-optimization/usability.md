@@ -4,7 +4,7 @@ description: Learn how to prioritize ease of use or usability during the design 
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 09/12/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
