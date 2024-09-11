@@ -470,7 +470,7 @@
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
-              - name: Managed identity overview (preveiw)
+              - name: Managed identity overview (preview)
                 href: managed-identity-overview.md
               - name: Set up managed identity (preview)
                 href: set-up-managed-identity.md
@@ -746,7 +746,7 @@
               href: manage-power-automate.md
             - name: Add-on capacity management
               href: capacity-add-on.md
-            - name: Administer the catalog (preview)
+            - name: Administer the catalog
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center

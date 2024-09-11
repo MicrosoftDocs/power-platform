@@ -4,7 +4,7 @@ description: View and manage Microsoft Dataverse settings.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/08/2022
+ms.date: 09/04/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -47,7 +47,7 @@ These security settings are managed in the Power Platform admin center.
 
 Getting to app feature settings can vary based on the type of app you're using. 
 
-When the **[Display behavior -> Use updated experience for classic settings where possible](settings-behavior.md#settings)** toggle is **On** , the following app settings have the modernized experience available in the unified interface. 
+When the **[Display behavior -> Use updated experience for classic settings where possible](settings-behavior.md)** toggle is **On** , the following app settings have the modernized experience available in the unified interface. 
 
 | Legacy settings | Modernized experience  |
 |--- | --- | 

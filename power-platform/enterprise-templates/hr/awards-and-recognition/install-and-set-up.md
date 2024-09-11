@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/21/2024
+ms.date: 08/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -76,7 +76,7 @@ It's important to have a cohesive environment and data policy strategy for enter
     1. Select **Assign to an environment**.
     1. Search for the environment where the Awards and Recognition Copilot solution is to be deployed.
     1. Allocate **Microsoft Copilot Studio messages** to the environment.
-    
+
 More information: [Microsoft Copilot Studio messages and capacity](/microsoft-copilot-studio/requirements-messages-management)
 
 - **Copilot for Program Admin users** (optional) - Copilot for model-driven apps in Power Apps is the next-generation AI assistant for app admins to get insights about the data through conversation in natural language. As an Awards and Recognition Program Admin, you can leverage Copilot within the administrator Power App to help you get insights on data. As a Power Platform admin, take these steps to [enable Copilot](/power-apps/maker/model-driven-apps/add-ai-copilot#enable-copilot-for-model-driven-apps-feature-for-your-environment) and [manage behavior settings](/power-platform/admin/settings-behavior) for all users in the selected environment:
@@ -288,7 +288,7 @@ More information:
 - [Manage your apps in the Microsoft Teams admin center](/microsoftteams/manage-apps)
 - [Add a copilot to Microsoft Teams](/microsoft-copilot-studio/publication-add-bot-to-microsoft-teams)
 
-## Step 8: Turn on auditing (optional)
+## Step 9: Turn on auditing (optional)
 
 While this isn't required, we recommend enabling the audit setting on the system, so it's easy to see who created and updated records in the future. To do this:
 
