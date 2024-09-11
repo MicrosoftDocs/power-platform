@@ -1,17 +1,17 @@
 ---
-title: Awards and Recognition templates for Power Platform
-description: The Awards and Recognition templates for Microsoft Power Platform enable organizations to facilitate an engaging and efficient awards system to acknowledge the outstanding efforts of employees .
+title: Awards and Recognition App and Copilot templates for Power Platform
+description: The Awards and Recognition App and Copilot templates for Microsoft Power Platform enable organizations to facilitate an engaging and efficient awards system to acknowledge the outstanding efforts of employees.
 author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 08/21/2024
+ms.date: 08/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# What are the Awards and Recognition templates for Power Platform?
+# What are the Awards and Recognition App and Copilot templates for Power Platform?
 
 Awards and Recognition templates make it easy to set up and facilitate an employee awards program. The templates streamline the process of nominating and recognizing your coworkers for their contributions and achievements and make it easy for you to track your own recognitions .
 
