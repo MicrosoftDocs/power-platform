@@ -4,7 +4,7 @@ description: Learn how to prioritize ease of use or usability during the design 
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -124,19 +124,20 @@ While the system should be intuitive enough to use without documentation, there 
 
 ## Power Platform facilitation
 
+Copilot-powered experiences in Power Apps can help end-users discover valuable insights during conversations:
+
+- [Add a Chatbot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-chatbot)
+- [Add a Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot)
+- [Add a custom Copilot to a canvas app](/power-apps/maker/canvas-apps/add-custom-copilot)
+- [Add Copilot for app users in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)
+- [Filter, sort, and search galleries with Copilot](/power-apps/user/smartgrid)
+- [Draft well-written input text with Copilot](/power-apps/user/well-written-input-text-copilot)
+
 For canvas apps, you can indicate progress and loading states with the [progress bar](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-progress-bar) and [spinner](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-spinner) modern controls. Use the [badge control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-controls-badge) to display status information.
 
 Implement robust error handling in canvas apps on the client [using Power Fx expressions related to errors](/power-platform/power-fx/reference/function-iferror). Define custom server-side errors with Power Fx using [low-code plugins](/power-apps/maker/data-platform/lowcode-plug-ins-examples#input-validation-and-custom-errors), which include pre-operation validation.
 
 In model-driven apps, where usability is built into the interface, focus on configuring aspects of the experience that enhance usability. An example of a built-in accelerator is the [personal views](/power-apps/maker/model-driven-apps/create-edit-views#personal-views) feature, which lets users save filtering and column preferences for a table in an app. Additionally, configure [custom help pages](/power-apps/maker/data-platform/create-custom-help-pages) to offer a detailed help resource within the app.
-
-<!--
-
-## See also
-
-Related links here.
-
--->
 
 ## Experience Optimization checklist
 

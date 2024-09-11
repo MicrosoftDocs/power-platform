@@ -4,7 +4,7 @@ description: Learn how to standardize your tools and processes and optimize your
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -117,6 +117,8 @@ Require your workload team to understand the security practices related to devel
 [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
 [Power CAT Code Review Tool](https://github.com/microsoft/powerapps-tools/tree/master/Tools/Apps/Microsoft.PowerApps.CodeReview) allows you to perform code reviews.
+
+[Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) allows you to configure copilots and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the copilot responses are evaluated against expected results.
 
 [ALM Accelerator](/power-platform/guidance/coe/setup-almaccelerator) is an open-source tool that consists of a set of applications, scripts, and pipelines designed to automate the continuous integration/continuous delivery process.
 
