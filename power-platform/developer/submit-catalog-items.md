@@ -20,7 +20,7 @@ The catalog in Power Platform enables developers and makers to:
 - Find and install the latest and authoritative version of a component.
 - Get started with templates and components that provide immediate value.
 
-Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../admin/administer-catalog.md)
+Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog](../admin/administer-catalog.md)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
