@@ -4,7 +4,7 @@ description: Learn user-centered design strategies to ensure your workloads are 
 author: RobStand
 ms.author: rstand
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -68,6 +68,10 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 **Analyze and synthesize the test results** by organizing, interpreting, and presenting the data and insights that were collected from the testing phase. Identify the patterns, trends, and themes that emerge from the data, and draw conclusions and implications for design decisions and solutions. Compare and contrast test results with initial user needs and requirements to highlight the strengths and weaknesses of the workload. With analysis and synthesis, the goal is to generate actionable recommendations and suggestions for design improvement and refinement.
 
 **Implement and communicate the design improvements** by applying the changes and modifications that were suggested by the test results and analysis, and by documenting and sharing the design process and outcomes with the relevant stakeholders. Update and improve the workload based on the user feedback and data, to ensure the workload meets user expectations and goals. Create and deliver design artifacts and deliverables that demonstrate the design solutions and rationale, such as wireframes, mockups, prototypes, and specifications. Implementation and communication should be used to finalize and launch the workload and to showcase the design value and impact.
+
+## Power Platform facilitation
+
+If your workload includes a copilot, you can **analyze performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your copilot's performance. It uses artificial intelligence (AI) to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring copilot performance metrics and discovering areas for improvement.
 
 ## Experience Optimization checklist
 
