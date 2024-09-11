@@ -53,7 +53,7 @@ landingContent:
       links:
       - text: Use Copilot to generate deployment notes in pipelines
         url: alm/copilot-deployment-notes-pipelines.md
-      - text: Microsoft 365 Copilot extensibility
+      - text: Extend Microsoft 365 Copilot
         url: /microsoft-365-copilot/extensibility/
     - linkListType: reference
       links:
@@ -63,14 +63,14 @@ landingContent:
 # Card
   - title: Power Platform Well-Architected
     linkLists:
-      - linkListType: overview
-        links:
-          - text: Pillars of architectural excellence
-            url: well-architected/pillars
+#      - linkListType: overview
+#        links:
+#          - text: Pillars of architectural excellence
+#            url: well-architected/pillars.md
       - linkListType: concept
         links:
-          - text: Intelligent application workloads
-            url: well-architected/intelligent-application/
+          - text: Intelligent application workload
+            url: well-architected/intelligent-application.md
       - linkListType: reference
         links:
           - text: Power Platform Well-Architected assessment
