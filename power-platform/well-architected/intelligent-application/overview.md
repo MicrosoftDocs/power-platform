@@ -44,7 +44,7 @@ Addressing these challenges requires thorough planning, collaboration across dif
 
 We recommend that you structure your well-architected workload to meet specific reliability, security, operational excellence, performance efficiency, and experience optimization objectives. To enhance user experiences and deliver consistency and reliability, follow architectural principles and guidelines that are tailored to intelligent application workloads.
 
-The Power Platform Well-Architected pillars help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create workloads without unnecessary complexity and cost.
+The Power Platform Well-Architected [pillars](../pillars.md) help you implement modularity, separate roles, and improve operational productivity. Use a well-architected approach to create workloads without unnecessary complexity and cost.
 
 To understand how each pillar can improve your intelligent application workload, consult [Design principles of intelligent application workloads](design-principles.md).
 
