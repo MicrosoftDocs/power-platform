@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Create, update, and list Environment Management Settings (preview) | Microsoft Docs"
-description: Learn how to use the Power Platform API (preview) to create, update, and list Environment Management Settings(preview).
+title: Tutorial: Create, update, and list Environment Management Settings (preview) 
+description: Learn how to use the Power Platform API (preview) to create, update, and list Environment Management Settings (preview).
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/11/2024
+ms.date: 09/12/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -21,12 +21,12 @@ This tutorial demonstrates how to use the Power Platform API (preview) to create
 
 In this tutorial, learn how to:
 
-1. [Authenticate using Power Platform API](#step-1-authenticate-using-power-platform-api)
-2. [Create a new setting value](#step-2-create-a-new-setting-value)
-3. [List all management setting values for the environment](#step-3-list-all-management-settings-for-the-environment)
-4. [Update a setting value](#step-4-update-a-setting-value)
+1. [Authenticate using Power Platform API](#step-1-authenticate-using-power-platform-api).
+2. [Create a new setting value](#step-2-create-a-new-setting-value).
+3. [List all management setting values for the environment](#step-3-list-all-management-settings-for-the-environment).
+4. [Update a setting value](#step-4-update-a-setting-value).
 
-As an example of this scenario, a customer may want to enable [Storage Shared Access Signature (SAS) IP restrictions](/power-platform/admin/security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) as well as logging of SAS calls.
+As an example of this scenario, a customer may want to turn on [Storage Shared Access Signature (SAS) IP restrictions](/security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) as well as logging of SAS calls.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -44,7 +44,7 @@ $Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
 
 ## Step 2. Create a new setting value
 
-Use the following PowerShell script to create a new setting value for Storage Shared Access Signature (SAS) IP restrictions as well as default the logging to disabled.
+Use the following PowerShell script to create a new setting value for Storage Shared Access Signature (SAS) IP restrictions, as well as, the related audit logging capability. These two settings are off, however, we will later update them to turn them on.
 
 ```PowerShell
 #Set your environment ID
@@ -82,7 +82,7 @@ catch
 }
 ```
 
-Power Platform API reference: [Environment Management Settings - Create Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/create-environment-management-settings)
+To learn more about the Power Platform API reference, go to [Environment Management Settings - Create Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/create-environment-management-settings).
 
 ## Step 3. List all management settings for the environment
 
