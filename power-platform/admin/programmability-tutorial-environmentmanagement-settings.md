@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Create, update, and list Environment Management Settings (preview) 
+title: Create, update, and list Environment Management Settings (preview) 
 description: Learn how to use the Power Platform API (preview) to create, update, and list Environment Management Settings (preview).
 author: laneswenka
 ms.reviewer: sericks
