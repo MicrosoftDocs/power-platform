@@ -25,7 +25,7 @@ In this tutorial, learn how to:
 3. [List all management setting values for the environment](#step-3-list-all-management-settings-for-the-environment).
 4. [Update a setting value](#step-4-update-a-setting-value).
 
-As an example of this scenario, a customer may want to turn on [Storage Shared Access Signature (SAS) IP restrictions](/security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) as well as logging of SAS calls.
+As an example of this scenario, a customer may want to turn on [Storage Shared Access Signature (SAS) IP restrictions](security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) as well as logging of SAS calls.
 
 > [!IMPORTANT]
 > - This is a preview feature.
