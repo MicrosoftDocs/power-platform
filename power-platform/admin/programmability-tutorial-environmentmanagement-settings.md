@@ -10,7 +10,6 @@ ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
   - admin
-contributors:
 ---
 
 # Tutorial: Create, update, and list Environment Management Settings (preview)
