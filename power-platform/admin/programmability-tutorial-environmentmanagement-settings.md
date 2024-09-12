@@ -81,7 +81,7 @@ catch
 }
 ```
 
-To learn more about the Power Platform API reference, go to [Environment Management Settings - Create Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/create-environment-management-settings).
+Learn more about the Power Platform API reference in [Environment Management Settings - Create Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/create-environment-management-settings).
 
 ## Step 3. List all management settings for the environment
 
@@ -115,11 +115,11 @@ catch
 }
 ```
 
-Power Platform API reference: [Environment Management Settings - List Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/list-environment-management-settings)
+Learn more about the Power Platform API reference in [Environment Management Settings - List Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/list-environment-management-settings).
 
 ## Step 4. Update a setting value
 
-Use the following PowerShell script to update a previously defined setting value. In this step we can enable the logging for SAS.
+Use the following PowerShell script to update a previously defined setting value. In this step, you turn on the logging for Storage Shared Access Signature (SAS).
 
 ```PowerShell
 #Set your environment ID
@@ -156,8 +156,8 @@ catch
 }
 ```
 
-Power Platform API reference: [Environment Management Settings - Update Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/update-environment-management-settings)
+Learn more about the Power Platform API reference in [Environment Management Settings - Update Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/update-environment-management-settings).
 
-### See also
+### Related information
 
 [Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings)
