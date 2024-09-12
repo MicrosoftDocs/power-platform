@@ -4,7 +4,7 @@ description: Learn how to drive continuous improvement by setting performance ta
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -40,7 +40,7 @@ Set performance targets before you deploy your workload. Performance targets req
 
 ### Determine performance requirements
 
-Determining performance requirements is about identifying essential performance metrics like response time, throughput, and latency that are critical for your application. Aligning these performance targets with your organization's business goals ensures the workload meets the desired standards, whether for a best-in-class or average product. For example, you might aim to reduce response times, increase throughput rates, or optimize resource use.
+Determining performance requirements is about identifying essential performance metrics like response time, throughput, and latency that are critical for your workload. Aligning these performance targets with your organization's business goals ensures the workload meets the desired standards, whether for a best-in-class or average product. For example, you might aim to reduce response times, increase throughput rates, or optimize resource use.
 
 When setting performance goals, it's important to align the organization's objectives with the distinct needs of the user base. Users ultimately determine the success of performance, emphasizing the need to align performance targets with their expectations. This balance ensures that performance targets capture the intended user experience and the overall efficiency of the workload. 
 
@@ -67,11 +67,13 @@ When you identify key metrics to focus on, consider metrics related to availabil
 
 - _Response time:_ Latency and load time are common response time metrics. Latency is the time it takes to respond to a request (200 milliseconds). Load time is the time it takes for an application or web page to be interactive. A common target is 99% of customer lookup requests completing in less than 2 seconds.
 
+- _Deflection rate:_ In the context of conversational AI, deflection measures the percentage of requests completed through self-service that would otherwise be handled by live agents. In other words, it indicates the number of tasks that can be automated, reducing the workload for the team. Optimizing the copilot deflection rate is one of the top focus areas for organizations aiming to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), as well as to improve the copilot's overall performance. Key indicators in Copilot Studio that help improve copilot performance include resolution rate, escalation rate, and CSAT.
+
 ### Set specific targets
 
 After you identify the key metrics, you need to specify performance targets or thresholds for each metric. Performance targets should be measurable, realistic, and aligned with your workload objectives. For example, you might set a target response time of less than 500 milliseconds (ms) or a target error rate of less than 1 percent. 
 
-Avoid qualitative assessments of performance. For example, your users have different opinions on what fast or slow means. Stakeholders need to agree on what "fast" means and on how to measure it. 
+Avoid qualitative assessments of performance. For example, your users have different opinions on what fast or slow means. Stakeholders need to agree on what "fast" means and on how to measure it.
 
 By using numerical targets, you can objectively assess performance over time. As you set specific performance targets, consider these recommendations:
 
@@ -108,6 +110,8 @@ Power Platform ensures consistent availability and performance by applying servi
 - [Power Platform request limits and allocations](/power-platform/admin/api-request-limits-allocations)
 - [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk)
 - [Limits of automated, scheduled, and instant Power Automate flows](/power-automate/limits-and-config)
+
+[Copilot Studio](/microsoft-copilot-studio/analytics-overview) has a comprehensive set of analytics that identify the key performance indicators for your copilot. Multiple charts show you trends and usage for your copilot's topics. These charts use AI to highlight the topics that have the greatest impact on your copilot's performance. You can also design a [custom analytics strategy](/microsoft-copilot-studio/guidance/custom-analytics-strategy) to create a report not covered by out-of-the-box analytics.
 
 ## Performance Efficiency checklist
 
