@@ -1,0 +1,75 @@
+### YamlMime:Landing
+
+title: Intelligent application workload documentation
+summary: When you create an intelligent application workload in Power Platform, follow Power Platform Well-Architected design principles and explore key design areas.
+metadata: 
+  title: Intelligent application workload documentation
+  description: In this Power Platform Well-Architected documentation, learn about creating Power Platform workloads that use Generative AI capabilities, including design principles, design areas, and best practices.
+  author: manuelap-msft
+  ms.author: mapichle
+  ms.reviewer: jhaskett-msft
+  ms.date: 09/15/2024
+  ms.subservice: well-architected
+  ms.topic: conceptual
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+ # Card
+  - title: Get started
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Intelligent application workloads
+            url: overview.md
+          - text: Design principles
+            url: design-principles.md
+   # Card
+  - title: Explore design areas
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Responsible AI
+            url: responsible-ai.md
+          - text: Security and compliance
+            url: security.md
+          - text: Performance optimization
+            url: monitoring.md
+          - text: Deployment and testing
+            url: publishing.md
+          - text: Integration options
+            url: integrations.md
+          - text: Intent recognition and entity extraction
+            url: language.md
+ # Card
+  - title: Take the assessment
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Take the Power Platform Well-Architected assessment
+            url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
+
+ # Card
+  - title: Learn
+    linkLists:
+      - linkListType: training
+        links:
+          - text: Microsoft Azure AI Fundamentals - Generative AI
+            url: /training/paths/introduction-generative-ai/
+          - text: Microsoft Azure Learning courses on responsible AI
+            url: /training/paths/responsible-ai-business-principles/
+          - text: Copilot Foundations
+            url: /training/paths/copilot-foundations/
+          - text: Create and extend custom copilots in Microsoft Copilot Studio
+            url: /training/paths/create-extend-custom-copilots-microsoft-copilot-studio/
+      - linkListType: reference
+        links:
+           - text: Responsible AI Tools and practices
+             url: https://www.microsoft.com/en-gb/ai/tools-practices
+           - text: HAX Design Library
+             url: https://www.microsoft.com/en-us/haxtoolkit/library/
+           - text: Microsoft Responsible AI practices
+             url: https://www.microsoft.com/ai/responsible-ai
+           - text: Microsoft responsible AI resources
+             url: https://www.microsoft.com/ai/responsible-ai-resources

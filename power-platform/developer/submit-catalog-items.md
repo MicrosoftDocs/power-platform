@@ -4,7 +4,7 @@ description: "Learn how to submit items to your organization's catalog of templa
 author: derekkwanpm
 ms.author: derekkwan
 ms.subservice: developer
-ms.date: 05/24/2024
+ms.date: 09/11/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
@@ -12,9 +12,7 @@ search.audienceType:
 contributors:
  - JimDaly
 ---
-# Using the catalog with Power Platform CLI (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Using the catalog with Power Platform CLI
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -22,15 +20,12 @@ The catalog in Power Platform enables developers and makers to:
 - Find and install the latest and authoritative version of a component.
 - Get started with templates and components that provide immediate value.
 
-Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog (preview)](../admin/administer-catalog.md)
+Before you can work with catalog items, you must install and configure it. More information: [Administer the catalog](../admin/administer-catalog.md)
 
 Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems.
 
 > [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../admin/managed-environment-overview.md)
+> Managed environments are required to submit items to the catalog. However, you can install items from any environments. [Learn more about managed environments](../admin/managed-environment-overview.md)
 
 ## Get started
 
@@ -469,6 +464,4 @@ Any legal terms or internal guidance for evaluation of the consumer of the catal
 
 ### See also
 
-<!-- [Catalog in Power Platform (Preview)](catalog.md) -->
-
-[Administer the catalog (preview)](../admin/administer-catalog.md)
+[Administer the catalog](../admin/administer-catalog.md)

@@ -43,7 +43,7 @@ During the design phase of a workload, it's important to consider how decisions 
 
 - Customizations in the workload's experience can have a negative impact on performance.
 
-## See also
+## Related information
 
 - [Reliability tradeoffs](../reliability/tradeoffs.md)
 - [Operational Excellence tradeoffs](../operational-excellence/tradeoffs.md)
