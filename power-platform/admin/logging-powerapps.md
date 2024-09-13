@@ -34,35 +34,35 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 
 |Event  |Description  |
 |---------|---------|
-|CreatePowerApp   |When the app gets created for the first time by a maker |
-|LaunchPowerApp    |When the app gets launched |
-|MarkPowerAppAsFeatured   |Every time the app is marked as Featured|
-|PromotePowerAppVersion   |The version of the app when restored|
-|UpdatePowerApp    |Any updates made to the app by the maker|
-|PublishPowerApp     |When the app is published and is made available to others in the environment|
-|PowerAppPermissionEdited  |Every time a user's permissions to the app is changed|
-|DeletePowerApp |When the app is deleted  |
-|MarkPowerAppAsHero |Every time the app is marked as Hero  |
-|PowerAppPermissionDeleted |Every time a user's permissions to the app is removed  |
-|RemoveHeroApp  |Every time the app is unset as Hero |
-|RemoveFeaturedApp    |Every time the app is unset as Featured  |
-|PatchPowerApp   |Every time the app is patched|
-|DeletePowerAppVersion   |The version of the app when deleted|
-|RecordScopesConsent    | When the current user has consented to the application's APIs|
-|ImportNewCanvasApp |Every time new canvas app is imported |
-|ImportExistingCanvasApp   |Every time existing canvas app is imported |
-|PublishSolutionCanvasAppVersion |When canvas app version from solution is published |
-|AppDlpEvaluationResultChange | When DLP evaluation occurs for the App |
-|AdminRestoreDeletePowerApp    |When the deleted app is restored by the admin|
-|AdminSetAppDesiredLogicalName  |When the desired logical name of the app is set by the admin|
-|AdminModifyAppOwner |When the app owner is modified by the admin  |
-|AdminModifyAppPermissions |When the app permissions is modified by admin   |
-|AdminDeleteApp |When the app is deleted by the admin |
-|AdminQuarantineApp |When the quarantine state of the app is set by the admin|
-|AdminSetAppConditionalAccess   |When the conditional access of the app is set by the admin|
-|AdminSetAppBypassConsent |When the bypass consent state of the app is set by the admin|
-|AdminSetAppAsFeatured |Every time the app is marked as Featured by the admin |
-|AdminSetAllowedThirdPartyApps | When third party apps were allowed by the admin |
+|Created app   |When the app gets created for the first time by a maker |
+|Launched app    |When the app gets launched |
+|Marked app as Featured   |Every time the app is marked as Featured|
+|Restored app version   |The version of the app when restored|
+|Edited app    |Any updates made to the app by the maker|
+|Published app     |When the app is published and is made available to others in the environment|
+|Edited app permission  |Every time a user's permissions to the app is changed|
+|Deleted app |When the app is deleted  |
+|Marked app as Hero |Every time the app is marked as Hero  |
+|Deleted app permission |Every time a user's permissions to the app is removed  |
+|Removed app as Hero  |Every time the app is unset as Hero |
+|Removed app as Featured    |Every time the app is unset as Featured  |
+|Patched app   |Every time the app is patched|
+|Deleted app version   |The version of the app when deleted|
+|Consented to the app's APIs    | When the current user has consented to the application's APIs|
+|Imported new canvas app |Every time new canvas app is imported |
+|Imported existing canvas app   |Every time existing canvas app is imported |
+|Published solution canvas app version |When canvas app version from solution is published |
+|Added DataLossPreventionEvaluationResult | When DLP evaluation occurs for the App |
+|Admin restored deleted app    |When the deleted app is restored by the admin|
+|Admin set desired logical name  |When the desired logical name of the app is set by the admin|
+|Admin modified app owner |When the app owner is modified by the admin  |
+|Admin modified app permissions |When the app permissions is modified by admin   |
+|Admin deleted app |When the app is deleted by the admin |
+|Admin set quarantine state |When the quarantine state of the app is set by the admin|
+|Admin set conditional access   |When the conditional access of the app is set by the admin|
+|Admin set bypass consent state |When the bypass consent state of the app is set by the admin|
+|Admin set app as featured |Every time the app is marked as Featured by the admin |
+|Admin allowed third party apps | When third party apps were allowed by the admin |
 
 
 ## Base schema
@@ -71,20 +71,20 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
 ```
 [
     {
-        "Name": "powerplatform.analytics.resource.tenant.governance.api_policy.additional_resources",
-        "Value": "<<json>>"
+        "Name": "powerplatform.analytics.resource.power_app.display_name",
+        "Value": "Test canvas app"
     },
     {
-        "Name": "powerplatform.analytics.resource.display_name",
-        "Value": "CreatePowerApp"
+        "Name": "powerplatform.analytics.resource.power_app.id",
+        "Value": "a81399c4-8e32-4460-b0d6-69d7d6c404e5"
     },
     {
-        "Name": "powerplatform.analytics.resource.id",
-        "Value": "CreatePowerApp"
+        "Name": "powerplatform.analytics.resource.environment.name",
+        "Value": "Contoso (default)"
     },
     {
-        "Name": "powerplatform.analytics.resource.type",
-        "Value": "PowerAppsApp"
+        "Name": "powerplatform.analytics.resource.environment.id",
+        "Value": "default-99ca106f-36df-429e-9998-b6131ea7cc86"
     },
     {
         "Name": "version",
@@ -93,6 +93,50 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
     {
         "Name": "type",
         "Value": "PowerPlatformAdministratorActivityRecord"
+    },
+    {
+        "Name": "powerplatform.analytics.operation.is_successful",
+        "Value": "True"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.telemetry_correlation.id",
+        "Value": "8c423c52-ebc3-47b5-a604-a8b98bbce92a"
+    },
+    {
+        "Name": "enduser.ip_address",
+        "Value": "::ffff:172.172.34.12"
+    },
+    {
+        "Name": "user_agent.original",
+        "Value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.0.0"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.type",
+        "Value": "PowerApp"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.name",
+        "Value": "AdminDeleteApp"
+    },
+    {
+        "Name": "powerplatform.analytics.activity.id",
+        "Value": "f88c7b59-6908-4f40-8489-7eca71b531b0"
+    },
+    {
+        "Name": "enduser.id",
+        "Value": "e5568c4f-015e-49d6-bf04-16c14301e9a3"
+    },
+    {
+        "Name": "enduser.principal_name",
+        "Value": "admin@M365DS679477.onmicrosoft.com"
+    },
+    {
+        "Name": "enduser.role",
+        "Value": "Admin"
+    },
+    {
+        "Name": "powerplatform.analytics.resource.tenant.id",
+        "Value": "99ca106f-36df-429e-9998-b6131ea7cc86"
     }
 ]
 
