@@ -466,6 +466,10 @@
               href: security/overview.md
             - name: Manage security
               href: security/security-posture-overview.md
+              - name: Security tasks
+                items:
+                - name: Security overview
+                  href: security/security-overview.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
