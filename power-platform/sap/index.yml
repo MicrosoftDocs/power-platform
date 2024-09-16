@@ -1,0 +1,353 @@
+### YamlMime:Marketing
+title: Copilot learning hub
+metadata:
+  title: 'Learn how to use Microsoft 365 Copilot | Microsoft Learn'
+  description: Explore Microsoft 365 Copilot resources to help you leverage AI technology and enhance productivity, such as documentation, training, videos, and tutorials. Start your Copilot learning journey. 
+  ms.service: microsoft-copilot
+  keywords: what is Copilot, how to use Microsoft Copilot, Copilot documentation
+  ms.topic: marketing-hub
+  ms.author: saadad
+  author: sadadow
+  ms.date: 04/24/2024
+  ms.collection: magic-ai-copilot
+  brand: azure
+sections:
+  # Intro
+  # Hero with background image - default transform
+  - componentType: hero-product
+    supertitle: Microsoft Learn
+    title: Copilot learning hub
+  # size: small
+    summary: "Copilot is an AI assistant powered by language models, which offers innovative solutions across the Microsoft Cloud. Find what you, a technical professional, need to enhance your productivity, creativity, and data accessibility, and make the most of the enterprise-grade data security and privacy features for your organization." 
+    heroImage:
+     componentType: hero-image
+     lightImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-light-copilot-learning-hub-2x.png
+     darkImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-dark-copilot-learning-hub-2x.png
+# Start your Journey here
+  - componentType: cards
+    isShadowless: false
+    backgroundColor: alternating-grey
+    title: Start your Copilot learning journey
+    summary: Learn how to use Copilot. Get started by exploring our curated training, documentation, videos, and other resources in these official collections, official Plans, and video playlists.  
+    blocks:
+    - componentType: card
+      title: "Step 1. Understand Copilot"
+      summary: Learn how the integration of Copilot experiences within Microsoft platforms and products provide a more interactive and efficient digital workspace.
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
+      links: 
+        - componentType: link
+          text: Explore the collection
+          url: /collections/7rmiy0yrnw8d6
+    - componentType: card
+      title: "Step 2. Adopt Copilot"
+      summary: Integrate OpenAI, communication, and organizational data in your apps to take them to the next level.
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/step-2.png
+      links: 
+        - componentType: link
+          text: Explore the collection
+          url: /collections/4gmb2422rxg5r
+        - componentType: link
+          text: Watch videos
+          url: /shows/copilot-learning-hub/
+    - componentType: card
+      title: "Step 3. Extend Copilot"
+      summary: Expand, enrich, and customize Copilot with plugins, connectors, or message extensions. 
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
+      links: 
+        - componentType: link
+          text: Explore the collection
+          url: /collections/r2rupnp88p6e5
+        - componentType: link
+          text: Watch videos
+          url: /collections/20mijo44z6xq6
+    - componentType: card
+      title: "Step 4. Build Copilot"
+      summary: Build a custom AI copilot to create a personalized conversational AI experience using Microsoft Cloud technologies.
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/step-4.png
+      links: 
+        - componentType: link
+          text: Explore the collection
+          url: /collections/4gmb242e53832
+        - componentType: link
+          text: Watch videos
+          url: /collections/0d6s6nx05qd1o
+  # Spotlight selections
+  - componentType: testimonials-section
+    title: 'Discover top picks'
+    cards:
+      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+        componentType: testimonial-card
+        name: Video
+        role: 'Copilot in M365 logistics'
+        feedback: Explore human elements involved in Microsoft 365 Copilot deployment, understand strategic implementation, and gain advanced techniques for extending Copilot with your organization's data. 
+        link:
+          componentType: link
+          url: https://www.youtube.com/watch?v=_nfSpw052Vs
+          text: Watch now
+      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+        componentType: testimonial-card
+        name: Video
+        role: Empowering students with Microsoft 365 Copilot for career preparation
+        feedback: Learn how Microsoft 365 Copilot can elevate your productivity, upskill your journey, and boost your career-readiness as a student.
+        link:
+          componentType: link
+          url: https://www.youtube.com/watch?v=enbHU5Njr7E
+          text: Watch now
+      - avatarUrl: \copilot\media\copilot\copilot-learning-hub\blog-icon.png
+        componentType: testimonial-card
+        name: Blog
+        role: What's new in Microsoft Copilot
+        feedback: Dive into the newest end-user capabilities designed to boost your productivity and efficiency.
+        link:
+          componentType: link
+          url: https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/what-s-new-in-copilot-july-2024/ba-p/4200439
+          text: See updates
+    backgroundImage:
+      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+  # Additional resources
+  - componentType: cards
+    isShadowless: false
+    backgroundColor: alternating-grey
+    title: More resources for your Copilot learning journey
+    blocks:
+    - componentType: card
+      title: "AI learning hub"
+      summary: Learn how to build your own copilot with Azure AI Copilot Studio.  
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/ai-learning.png
+      links: 
+        - componentType: link
+          text: Go to the AI learning hub
+          url: /ai/
+    - componentType: card
+      title: "Get Copilot adoption resources"
+      summary: Make the most of the adoption kit to drive usage of Microsoft 365 Copilot with commercial data protection.  
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/adoption-kit.png
+      links: 
+        - componentType: link
+          text: Get started
+          url: https://adoption.microsoft.com/copilot/
+        - componentType: link
+          text: Browse the Scenario Library
+          url: https://adoption.microsoft.com/copilot-scenario-library/
+    - componentType: card
+      title: "Secure your Data"
+      summary: Find out how to eliminate gaps and get simplified, effective protection with Microsoft Copilot for Security. 
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/secure.png
+      links: 
+        - componentType: link
+          text: Start the Learn Live experience
+          url: /shows/learn-live/microsoft-copilot-for-security/
+
+# Learn Copilot based on your role
+  - componentType: grid
+    title: Find resources about Copilot for your role
+    summary: Discover how Copilot is relevant to your role and explore these Microsoft Learn resources.
+    blocks:
+      - componentType: icon-card
+        title: Administrator
+        summary: Let Copilot assist you in implementing your organization's cloud infrastructure.
+        url: /collections/pzkb8e8dz4k50
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
+      - componentType: icon-card
+        title: App maker
+        summary: Use Copilot to help improve your ability to solve technical business problems.
+        url: /collections/4gmb2m2k8n6k7
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
+      - componentType: icon-card
+        title: Data analyst/Data engineer
+        summary: Empower your business to maximize the value of its data assets and analysis by putting Copilot visualization and reporting tools to work.
+        url: /collections/nq2bdzdox7pr2
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/data-icon.png
+      - componentType: icon-card
+        title: Developer/Solutions architect
+        summary: Discover how to integrate and optimize technologies across your organization through the power of Copilot.
+        url: /collections/kxqa5k5dqz5j2
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
+      - componentType: icon-card
+        title: Functional consultant 
+        summary: Make the most of Copilot to help people and organizations work through complex business challenges and create solutions that can drive success.
+        url: /collections/20mijmjp46024
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
+      - componentType: icon-card
+        title: Independent Software Vendor (ISV)
+        summary: Let Copilot support your business in achieving more.
+        url: /collections/7rmiyjy2006wj
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/startup-founder-icon.png
+      - componentType: icon-card
+        title: Partner
+        summary: Unlock a new era of productivity growth with Copilot.
+        url: /collections/qygcmdmzd07we
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
+      - componentType: icon-card
+        title: Security engineer/Security operations analyst
+        summary: Make the most of Microsoft Copilot for Security to help secure your systems and protect your data.
+        url: /collections/mjqfm1m3ngd5y
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
+      - componentType: icon-card
+        title: Service adoption specialist
+        summary: Build and validate your skills for delivering business results and helping to upskill employees.
+        url: /collections/5m3so3owrq6ok
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
+      - componentType: icon-card
+        title: Startup founder
+        summary: Learn how to put Copilot to work to improve every stage of your entrepreneurial journey.
+        url: /collections/0d6s6p64zz0ek
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/partner-icon.png
+      - componentType: icon-card
+        title: Student
+        summary: Discover how Copilot can support you through your education journey.
+        url: /collections/183t6z6442k5g
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/student-icon.png
+      - componentType: icon-card
+        title: Technology manager
+        summary: Leads AI strategy and adoption, with focus on technology adoption. 
+        url: /collections/zmgsk4kw68ere
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
+
+# Copilot Documentation
+  - componentType: grid
+    title: Documentation
+    summary: Explore Microsoft Copilot documentation and resources for Copilot experiences in Microsoft products.
+    blocks:
+      - componentType: summary-card
+        title: Microsoft Copilot
+        summary: Find documentation about Microsoft Copilot with enterprise data protection.
+        url: overview.md
+      - componentType: summary-card
+        title: Microsoft 365 Copilot
+        summary: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work.
+        url: /copilot/microsoft-365/
+      - componentType: summary-card
+        title: Copilot for Security
+        summary: Use Copilot for Security to bring the full power of OpenAI architecture to defend your organization at machine speed and scale.
+        url: /copilot/security/
+      - componentType: summary-card
+        title: Copilot in Azure (preview)
+        summary: Learn how to manage operations from cloud to edge with an AI assistant.
+        url: /azure/copilot/
+      - componentType: summary-card
+        title: Copilot experiences in Dynamics 365
+        summary: Find information about Copilot and generative AI in Dynamics 365 apps, including training and documentation.
+        url: /dynamics365/copilot/
+      - componentType: summary-card
+        title: Copilot experiences for your industry
+        summary: Find information about Copilot and generative AI in Industry Solutions, including training and documentation.
+        url: /industry/copilot/
+      - componentType: summary-card
+        title: Copilot experiences in Power Platform
+        summary: Find information about Copilot and generative AI in Power Platform, including training and documentation.
+        url: /power-platform/copilot/
+      - componentType: summary-card
+        title: Microsoft Copilot Studio
+        summary: Discover how to build AI-driven copilots easily with Microsoft Copilot Studio.
+        url: /microsoft-copilot-studio/
+      - componentType: summary-card
+        title: Microsoft Azure AI Studio
+        summary: Build cutting-edge, market-ready, responsible applications for your organization with AI.
+        url: /azure/ai-studio/
+      - componentType: summary-card
+        title: GitHub Copilot
+        summary: Use GitHub Copilot to get autocomplete-style suggestions from an AI pair programmer as you code.
+        url: https://docs.github.com/copilot/
+      - componentType: summary-card
+        title: GitHub Copilot in Visual Studio
+        summary: Learn about GitHub Copilot Completions and GitHub Copilot Chat in Visual Studio.
+        url: /visualstudio/ide/visual-studio-github-copilot-install-and-states
+
+# Video section
+  - componentType: cards
+    isShadowless: false
+    backgroundColor: alternating-grey
+    title: Discover Copilot video resources
+    summary: Watch these short videos with experts to level up your work with Copilot and gain new skills.
+    blocks:
+    - componentType: card
+      title: "Copilot for everyone"
+      summary: Not sure where to start with Microsoft Copilot? Sharpen your prompting skills as we share our favorite use cases and walk you through them step-by-step.
+      imageUrl: /copilot/media/copilot/copilot-learning-hub/copilot-for-everyone-thumbnail.jpg
+      links: 
+        - componentType: link
+          text: Watch now
+          url: /shows/copilot-learning-hub/
+    - componentType: card
+      title: "Strategically implement Microsoft Copilot (Part 1)"
+      summary: Learn to avoid common pitfalls, develop a robust AI strategy, and maximize the benefits of Copilot for business success.
+      imageUrl: https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-7416480b-a4b9-4362-822c-3ab6b31cd0f6/CLH_147985_Pt1_thumbnail_w1120.jpg
+      links: 
+        - componentType: link
+          text: Watch now
+          url: /shows/copilot-learning-hub/how-to-strategically-implement-microsoft-copilot-expert-insights-and-best-practices-part-1
+    - componentType: card
+      title: "Advanced strategies for extending Microsoft Copilot (Part 2)"
+      summary: Discover how to combine hands-on development with strategic planning for customized Copilot solutions.
+      imageUrl: https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-aa70291e-af64-476d-803f-2a8be27af85a/CLH_148440_Pt2_thumbnail_w1120.jpg
+      links: 
+        - componentType: link
+          text: Watch now
+          url: /shows/copilot-learning-hub/advanced-strategies-for-extending-microsoft-copilot-expert-tips-and-real-world-applications-part-2
+    - componentType: card
+      title: "Exploring the human element in Microsoft Copilot deployments"
+      summary: Learn how cultural shifts and human factors play a crucial role in the successful implementation of AI technology like Copilot.
+      imageUrl: https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-1e9cc08b-53ad-497f-a5a0-5213f2ed69c2/CLH_142924_thumbnail_w1120.jpg
+      links: 
+        - componentType: link
+          text: Watch now
+          url: /shows/copilot-learning-hub/exploring-the-human-element-in-microsoft-copilot-deployments-insights-from-industry-experts
+    addendum:
+      text: Explore the 
+      link:
+        text: full video playlist.
+        url: /shows/copilot-learning-hub/
+# Additional links section
+  - componentType: grid
+    title: More resources
+    blocks:
+      - componentType: summary-card
+        title: Microsoft Copilot training
+        summary: Find self-paced training resources to help you build your Copilot skills.
+        url: https://learn.microsoft.com/en-us/training/browse/?products=ms-copilot
+      - componentType: summary-card
+        title: Copilot FAQ
+        summary: Get answers to common questions about Copilot.
+        url: /copilot/faq
+      - componentType: summary-card
+        title: Copilot glossary
+        summary: Find common terms and definitions to help you better understand Copilot.
+        url: /copilot/glossary
+      - componentType: summary-card
+        title: Copilot Lab
+        summary: Learn how to use Copilot on your everyday apps.
+        url: https://copilot.cloud.microsoft/
+      - componentType: summary-card
+        title: Microsoft 365 Roadmap
+        summary: Get the latest updates on our best-in-class productivity apps and intelligent cloud services.
+        url: https://www.microsoft.com/en-us/microsoft-365/roadmap?msockid=112484b720886e3322089035213b6f50&filters=
+      - componentType: summary-card
+        title: Release plans
+        summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
+        url: /dynamics365/release-plans/
