@@ -31,38 +31,38 @@ sections:
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
-      title: "Step 1. Understand Copilot"
-      summary: Learn how the integration of Copilot experiences within Microsoft platforms and products provide a more interactive and efficient digital workspace.
+      title: "Understand Power Platform SAP integration"
+      summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
       links: 
         - componentType: link
-          text: Explore the collection
+          text: Explore Power Platform and SAP integration
           url: /collections/7rmiy0yrnw8d6
     - componentType: card
-      title: "Step 2. Adopt Copilot"
-      summary: Integrate OpenAI, communication, and organizational data in your apps to take them to the next level.
+      title: "Get started with Power Platform"
+      summary: Learn basics of the Power Platform and how to start using it in your environments.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-2.png
       links: 
         - componentType: link
-          text: Explore the collection
+          text: Set up Power Platform environments
           url: /collections/4gmb2422rxg5r
-        - componentType: link
-          text: Watch videos
-          url: /shows/copilot-learning-hub/
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /shows/copilot-learning-hub/
     - componentType: card
-      title: "Step 3. Extend Copilot"
-      summary: Expand, enrich, and customize Copilot with plugins, connectors, or message extensions. 
+      title: "Connect to SAP"
+      summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
       links: 
         - componentType: link
-          text: Explore the collection
+          text: Getting started with SAP connectors
           url: /collections/r2rupnp88p6e5
-        - componentType: link
-          text: Watch videos
-          url: /collections/20mijo44z6xq6
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /collections/20mijo44z6xq6
     - componentType: card
-      title: "Step 4. Build Copilot"
-      summary: Build a custom AI copilot to create a personalized conversational AI experience using Microsoft Cloud technologies.
+      title: "Leverage Power Platform SAP templates"
+      summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-4.png
       links: 
         - componentType: link
