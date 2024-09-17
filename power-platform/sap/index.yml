@@ -1,62 +1,69 @@
+@ -0,0 +1,353 @@
 ### YamlMime:Marketing
-title: Power Platform and SAP learning hub
+title: Copilot learning hub
 metadata:
-  title: 'Learn how to accelerate integration of the Power Platform with SAP | Microsoft Learn'
-  description: Explore guidance, template, samples, and tools to help unlock Power Platform capabilities integration with SAP. 
-  ms.service: power-platform
-  keywords: what are Power Platform SAP connectors, how to use Power Platform with SAP, Power Platform and SAP documentation
+  title: 'Learn how to use Microsoft 365 Copilot | Microsoft Learn'
+  description: Explore Microsoft 365 Copilot resources to help you leverage AI technology and enhance productivity, such as documentation, training, videos, and tutorials. Start your Copilot learning journey. 
+  ms.service: microsoft-copilot
+  keywords: what is Copilot, how to use Microsoft Copilot, Copilot documentation
   ms.topic: marketing-hub
-  ms.author: edleh
-  author: edlehman
-  ms.date: 09/16/2024
-  ms.collection: power-platform
-  brand: power-platform
+  ms.author: saadad
+  author: sadadow
+  ms.date: 04/24/2024
+  ms.collection: magic-ai-copilot
+  brand: azure
 sections:
   # Intro
   # Hero with background image - default transform
   - componentType: hero-product
     supertitle: Microsoft Learn
-    title: Power Platform and SAP
+    title: Copilot learning hub
   # size: small
-    summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
+    summary: "Copilot is an AI assistant powered by language models, which offers innovative solutions across the Microsoft Cloud. Find what you, a technical professional, need to enhance your productivity, creativity, and data accessibility, and make the most of the enterprise-grade data security and privacy features for your organization." 
     heroImage:
      componentType: hero-image
      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-light-copilot-learning-hub-2x.png
      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-dark-copilot-learning-hub-2x.png
-# Start your Power Platform and SAP learning journey
+# Start your Journey here
   - componentType: cards
     isShadowless: false
     backgroundColor: alternating-grey
-    title: Start your Power Platform and SAP learning journey
-    summary: Learn how to use Microsoft Power Platform with your SAP data.  
+    title: Start your Copilot learning journey
+    summary: Learn how to use Copilot. Get started by exploring our curated training, documentation, videos, and other resources in these official collections, official Plans, and video playlists.  
     blocks:
     - componentType: card
-      title: "Understand Power Platform SAP integration"
-      summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate thier business processes.
+      title: "Step 1. Understand Copilot"
+      summary: Learn how the integration of Copilot experiences within Microsoft platforms and products provide a more interactive and efficient digital workspace.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
       links: 
         - componentType: link
-          text: Explore Power Platform and SAP integration
+          text: Explore the collection
           url: /collections/7rmiy0yrnw8d6
     - componentType: card
-      title: "Get started with Power Platform"
-      summary: Learn basics of the Power Platform and how to start using it in your environments.
+      title: "Step 2. Adopt Copilot"
+      summary: Integrate OpenAI, communication, and organizational data in your apps to take them to the next level.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-2.png
       links: 
         - componentType: link
-          text: Set up Power Platform environments
+          text: Explore the collection
           url: /collections/4gmb2422rxg5r
+        - componentType: link
+          text: Watch videos
+          url: /shows/copilot-learning-hub/
     - componentType: card
-      title: "Connect to SAP"
-      summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple.
+      title: "Step 3. Extend Copilot"
+      summary: Expand, enrich, and customize Copilot with plugins, connectors, or message extensions. 
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
       links: 
         - componentType: link
-          text: Getting started with SAP connectors
+          text: Explore the collection
           url: /collections/r2rupnp88p6e5
+        - componentType: link
+          text: Watch videos
+          url: /collections/20mijo44z6xq6
     - componentType: card
-      title: "Leverage Power Platform SAP templates"
-      summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
+      title: "Step 4. Build Copilot"
+      summary: Build a custom AI copilot to create a personalized conversational AI experience using Microsoft Cloud technologies.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-4.png
       links: 
         - componentType: link
@@ -65,99 +72,6 @@ sections:
         - componentType: link
           text: Watch videos
           url: /collections/0d6s6nx05qd1o
-# Learn Copilot based on your role
-  - componentType: grid
-    title: Find resources about Copilot for your role
-    summary: Discover how Copilot is relevant to your role and explore these Microsoft Learn resources.
-    blocks:
-      - componentType: icon-card
-        title: Power Platform app maker
-        summary: How to work with TCodes, BAPIs, and complex JSON structures.
-        url: /collections/pzkb8e8dz4k50
-        icon:
-          componentType: image
-          src: "/copilot/media/copilot/copilot-learning-hub/app-maker-icon.png"
-      - componentType: icon-card
-        title: Power Platform Administrator
-        summary: Guidance on SAP access methods and a directory of the most used SAP data.
-        url: /collections/4gmb2m2k8n6k7
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
-      - componentType: icon-card
-        title: SAP security administrator
-        summary: How to understand and administer Power Platform compared to SAP.
-        url: /collections/nq2bdzdox7pr2
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
-          # src: /copilot/media/copilot/copilot-learning-hub/data-icon.png
-      - componentType: icon-card
-        title: SAP Basis administrator
-        summary: Password reset copilot.
-        url: /collections/kxqa5k5dqz5j2
-        icon:
-          componentType: image
-          # src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
-          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
-      - componentType: icon-card
-        title: SAP Functional consultant 
-        summary: 
-        url: /collections/20mijmjp46024
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
-      - componentType: icon-card
-        title: SAP Technical Consultant
-        summary: Working with Power Platform connections
-        url: /collections/7rmiyjy2006wj
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
-          #src: /copilot/media/copilot/copilot-learning-hub/startup-founder-icon.png
-      - componentType: icon-card
-        title: Technology manager
-        summary: 
-        url: /collections/mjqfm1m3ngd5y
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
-          #src: /copilot/media/copilot/copilot-learning-hub/security-icon.png- 
-      - componentType: icon-card
-        title: Partner
-        summary: Unlock a new era of productivity growth with Copilot.
-        url: /collections/qygcmdmzd07we
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
-      # componentType: icon-card
-      #   title: Service adoption specialist
-      #   summary: Build and validate your skills for delivering business results and helping to upskill employees.
-      #   url: /collections/5m3so3owrq6ok
-      #   icon:
-      #     componentType: image
-      #     src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
-      # componentType: icon-card
-      #   title: Startup founder
-      #   summary: Learn how to put Copilot to work to improve every stage of your entrepreneurial journey.
-      #   url: /collections/0d6s6p64zz0ek
-      #   icon:
-      #     componentType: image
-      #     src: /copilot/media/copilot/copilot-learning-hub/partner-icon.png
-      # - componentType: icon-card
-      #   title: Student
-      #   summary: Discover how Copilot can support you through your education journey.
-      #   url: /collections/183t6z6442k5g
-      #   icon:
-      #     componentType: image
-      #     src: /copilot/media/copilot/copilot-learning-hub/student-icon.png
-      # - componentType: icon-card
-      #   title: Technology manager
-      #   summary: Leads AI strategy and adoption, with focus on technology adoption. 
-      #   url: /collections/zmgsk4kw68ere
-      #   icon:
-      #     componentType: image
-      #     src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
   # Spotlight selections
   - componentType: testimonials-section
     title: 'Discover top picks'
@@ -226,7 +140,95 @@ sections:
           text: Start the Learn Live experience
           url: /shows/learn-live/microsoft-copilot-for-security/
 
-
+# Learn Copilot based on your role
+  - componentType: grid
+    title: Find resources about Copilot for your role
+    summary: Discover how Copilot is relevant to your role and explore these Microsoft Learn resources.
+    blocks:
+      - componentType: icon-card
+        title: Administrator
+        summary: Let Copilot assist you in implementing your organization's cloud infrastructure.
+        url: /collections/pzkb8e8dz4k50
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
+      - componentType: icon-card
+        title: App maker
+        summary: Use Copilot to help improve your ability to solve technical business problems.
+        url: /collections/4gmb2m2k8n6k7
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
+      - componentType: icon-card
+        title: Data analyst/Data engineer
+        summary: Empower your business to maximize the value of its data assets and analysis by putting Copilot visualization and reporting tools to work.
+        url: /collections/nq2bdzdox7pr2
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/data-icon.png
+      - componentType: icon-card
+        title: Developer/Solutions architect
+        summary: Discover how to integrate and optimize technologies across your organization through the power of Copilot.
+        url: /collections/kxqa5k5dqz5j2
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
+      - componentType: icon-card
+        title: Functional consultant 
+        summary: Make the most of Copilot to help people and organizations work through complex business challenges and create solutions that can drive success.
+        url: /collections/20mijmjp46024
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
+      - componentType: icon-card
+        title: Independent Software Vendor (ISV)
+        summary: Let Copilot support your business in achieving more.
+        url: /collections/7rmiyjy2006wj
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/startup-founder-icon.png
+      - componentType: icon-card
+        title: Partner
+        summary: Unlock a new era of productivity growth with Copilot.
+        url: /collections/qygcmdmzd07we
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
+      - componentType: icon-card
+        title: Security engineer/Security operations analyst
+        summary: Make the most of Microsoft Copilot for Security to help secure your systems and protect your data.
+        url: /collections/mjqfm1m3ngd5y
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
+      - componentType: icon-card
+        title: Service adoption specialist
+        summary: Build and validate your skills for delivering business results and helping to upskill employees.
+        url: /collections/5m3so3owrq6ok
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
+      - componentType: icon-card
+        title: Startup founder
+        summary: Learn how to put Copilot to work to improve every stage of your entrepreneurial journey.
+        url: /collections/0d6s6p64zz0ek
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/partner-icon.png
+      - componentType: icon-card
+        title: Student
+        summary: Discover how Copilot can support you through your education journey.
+        url: /collections/183t6z6442k5g
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/student-icon.png
+      - componentType: icon-card
+        title: Technology manager
+        summary: Leads AI strategy and adoption, with focus on technology adoption. 
+        url: /collections/zmgsk4kw68ere
+        icon:
+          componentType: image
+          src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
 
 # Copilot Documentation
   - componentType: grid
