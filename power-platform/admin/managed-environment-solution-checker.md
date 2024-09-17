@@ -2,7 +2,7 @@
 title: Solution checker enforcement in Managed Environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 08/01/2024
+ms.date: 09/17/2024
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -12,6 +12,7 @@ search.audienceType:
 - admin
 contributors:
 - JesseParsons
+- TYLEROL 
 
 ---
 
