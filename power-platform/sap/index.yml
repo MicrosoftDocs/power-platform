@@ -72,72 +72,72 @@ sections:
           text: Watch videos
           url: /collections/0d6s6nx05qd1o
   # Spotlight selections
-  - componentType: testimonials-section
-    title: 'Discover top picks'
-    cards:
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
-        componentType: testimonial-card
-        name: Video
-        role: 'Copilot in M365 logistics'
-        feedback: Explore human elements involved in Microsoft 365 Copilot deployment, understand strategic implementation, and gain advanced techniques for extending Copilot with your organization's data. 
-        link:
-          componentType: link
-          url: https://www.youtube.com/watch?v=_nfSpw052Vs
-          text: Watch now
-      - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
-        componentType: testimonial-card
-        name: Video
-        role: Empowering students with Microsoft 365 Copilot for career preparation
-        feedback: Learn how Microsoft 365 Copilot can elevate your productivity, upskill your journey, and boost your career-readiness as a student.
-        link:
-          componentType: link
-          url: https://www.youtube.com/watch?v=enbHU5Njr7E
-          text: Watch now
-      - avatarUrl: \copilot\media\copilot\copilot-learning-hub\blog-icon.png
-        componentType: testimonial-card
-        name: Blog
-        role: What's new in Microsoft Copilot
-        feedback: Dive into the newest end-user capabilities designed to boost your productivity and efficiency.
-        link:
-          componentType: link
-          url: https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/what-s-new-in-copilot-july-2024/ba-p/4200439
-          text: See updates
-    backgroundImage:
-      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
-  # Additional resources
-  - componentType: cards
-    isShadowless: false
-    backgroundColor: alternating-grey
-    title: More resources for your Copilot learning journey
-    blocks:
-    - componentType: card
-      title: "AI learning hub"
-      summary: Learn how to build your own copilot with Azure AI Copilot Studio.  
-      imageUrl: /copilot/media/copilot/copilot-learning-hub/ai-learning.png
-      links: 
-        - componentType: link
-          text: Go to the AI learning hub
-          url: /ai/
-    - componentType: card
-      title: "Get Copilot adoption resources"
-      summary: Make the most of the adoption kit to drive usage of Microsoft 365 Copilot with commercial data protection.  
-      imageUrl: /copilot/media/copilot/copilot-learning-hub/adoption-kit.png
-      links: 
-        - componentType: link
-          text: Get started
-          url: https://adoption.microsoft.com/copilot/
-        - componentType: link
-          text: Browse the Scenario Library
-          url: https://adoption.microsoft.com/copilot-scenario-library/
-    - componentType: card
-      title: "Secure your Data"
-      summary: Find out how to eliminate gaps and get simplified, effective protection with Microsoft Copilot for Security. 
-      imageUrl: /copilot/media/copilot/copilot-learning-hub/secure.png
-      links: 
-        - componentType: link
-          text: Start the Learn Live experience
-          url: /shows/learn-live/microsoft-copilot-for-security/
+  # - componentType: testimonials-section
+  #   title: 'Discover top picks'
+  #   cards:
+  #     - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+  #       componentType: testimonial-card
+  #       name: Video
+  #       role: 'Copilot in M365 logistics'
+  #       feedback: Explore human elements involved in Microsoft 365 Copilot deployment, understand strategic implementation, and gain advanced techniques for extending Copilot with your organization's data. 
+  #       link:
+  #         componentType: link
+  #         url: https://www.youtube.com/watch?v=_nfSpw052Vs
+  #         text: Watch now
+  #     - avatarUrl: /copilot/media/copilot/copilot-learning-hub/video-icon.png
+  #       componentType: testimonial-card
+  #       name: Video
+  #       role: Empowering students with Microsoft 365 Copilot for career preparation
+  #       feedback: Learn how Microsoft 365 Copilot can elevate your productivity, upskill your journey, and boost your career-readiness as a student.
+  #       link:
+  #         componentType: link
+  #         url: https://www.youtube.com/watch?v=enbHU5Njr7E
+  #         text: Watch now
+  #     - avatarUrl: \copilot\media\copilot\copilot-learning-hub\blog-icon.png
+  #       componentType: testimonial-card
+  #       name: Blog
+  #       role: What's new in Microsoft Copilot
+  #       feedback: Dive into the newest end-user capabilities designed to boost your productivity and efficiency.
+  #       link:
+  #         componentType: link
+  #         url: https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/what-s-new-in-copilot-july-2024/ba-p/4200439
+  #         text: See updates
+  #   backgroundImage:
+  #     lightImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+  #     darkImageSrc: /copilot/media/copilot/copilot-learning-hub/spotlight-background-clear.png
+  # # Additional resources
+  # - componentType: cards
+  #   isShadowless: false
+  #   backgroundColor: alternating-grey
+  #   title: More resources for your Copilot learning journey
+  #   blocks:
+  #   - componentType: card
+  #     title: "AI learning hub"
+  #     summary: Learn how to build your own copilot with Azure AI Copilot Studio.  
+  #     imageUrl: /copilot/media/copilot/copilot-learning-hub/ai-learning.png
+  #     links: 
+  #       - componentType: link
+  #         text: Go to the AI learning hub
+  #         url: /ai/
+  #   - componentType: card
+  #     title: "Get Copilot adoption resources"
+  #     summary: Make the most of the adoption kit to drive usage of Microsoft 365 Copilot with commercial data protection.  
+  #     imageUrl: /copilot/media/copilot/copilot-learning-hub/adoption-kit.png
+  #     links: 
+  #       - componentType: link
+  #         text: Get started
+  #         url: https://adoption.microsoft.com/copilot/
+  #       - componentType: link
+  #         text: Browse the Scenario Library
+  #         url: https://adoption.microsoft.com/copilot-scenario-library/
+  #   - componentType: card
+  #     title: "Secure your Data"
+  #     summary: Find out how to eliminate gaps and get simplified, effective protection with Microsoft Copilot for Security. 
+  #     imageUrl: /copilot/media/copilot/copilot-learning-hub/secure.png
+  #     links: 
+  #       - componentType: link
+  #         text: Start the Learn Live experience
+  #         url: /shows/learn-live/microsoft-copilot-for-security/
 
 # Learn Copilot based on your role
   - componentType: grid
