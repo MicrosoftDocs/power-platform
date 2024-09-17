@@ -1,16 +1,16 @@
 ### YamlMime:Marketing
 title: Copilot learning hub
 metadata:
- title: 'Learn how to accelerate integration of the Power Platform with SAP | Microsoft Learn'
-  description: Explore guidance, template, samples, and tools to help unlock Power Platform capabilities integration with SAP. 
-  ms.service: power-platform
-  keywords: what are Power Platform SAP connectors, how to use Power Platform with SAP, Power Platform and SAP documentation
+  title: 'Learn how to use Microsoft 365 Copilot | Microsoft Learn'
+  description: Explore Microsoft 365 Copilot resources to help you leverage AI technology and enhance productivity, such as documentation, training, videos, and tutorials. Start your Copilot learning journey. 
+  ms.service: microsoft-copilot
+  keywords: what is Copilot, how to use Microsoft Copilot, Copilot documentation
   ms.topic: marketing-hub
-  ms.author: edleh
-  author: edlehman
-  ms.date: 09/16/2024
-  ms.collection: power-platform
-  brand: power-platform
+  ms.author: saadad
+  author: sadadow
+  ms.date: 04/24/2024
+  ms.collection: magic-ai-copilot
+  brand: azure
 sections:
   # Intro
   # Hero with background image - default transform
