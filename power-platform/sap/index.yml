@@ -76,7 +76,7 @@ sections:
         url: /collections/pzkb8e8dz4k50
         icon:
           componentType: image
-                    src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
+          src: "/copilot/media/copilot/copilot-learning-hub/app-maker-icon.png"
       - componentType: icon-card
         title: Power Platform Administrator
         summary: Guidance on SAP access methods and a directory of the most used SAP data.
