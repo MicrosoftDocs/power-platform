@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Security checklist recommendation:**
 
-|[SE:02](checklist.md)| **Establish a security baseline that's aligned to compliance requirements, industry standards, and platform recommendations. Regularly measure your workload architecture and operations against the baseline to sustain or improve your security posture over time.** |
+|[SE:02](checklist.md)| **Incorporate a secure design by using threat modeling to safeguard against security-defeating implementations.** |
 |---|---|
 
 A comprehensive analysis to identify threats, attacks, vulnerabilities, and counter measures is crucial during the design phase of a workload. Threat modeling is an engineering exercise that includes defining security requirements, identifying, and mitigating threats, and validating those mitigations. You can use this technique at any stage of application development or production, but it's most effective during the design stages of new functionality.
@@ -69,7 +69,7 @@ Here's an example:
 
 | Ask this question | To determine controls that... |
 |---|---|
-| Are connections authenticated through Microsoft Entra ID, and use modern security protocols that the security team approved:<br><br>- Between users and the application?<br><br>- Between application components and services? | Prevent unauthorized access to the application components and data. |
+| Are connections authenticated through Microsoft Entra ID, and use modern security protocols that the security team approved:<br><br>- Between users and the application?<br><br>- Between application components and services?<br><br>- Between users and the copilot? | Prevent unauthorized access to the application components and data. |
 | Are you limiting access to only accounts that need to write or modify data in the application? | Prevent unauthorized data tampering or alteration. |
 | Is the application activity logged and fed into a security information and event management (SIEM) system through Azure Monitor or a similar solution? | Detect and investigate attacks quickly. |
 | Is critical data protected with encryption that the security team approved? | Prevent unauthorized copying of data at rest. |
@@ -118,7 +118,7 @@ This example builds on the Information Technology (IT) environment established i
 
 **Security information event management (SIEM) solution**. Microsoft Sentinel may be added even in an early stage of the solution so you can build some analytics queries to mitigate threats and vulnerabilities, anticipating your security environment when you are in production.
 
-## See also
+## Related information
 
 - [STRIDE model](/azure/security/develop/threat-modeling-tool-threats)
 - [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling)
