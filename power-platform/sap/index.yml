@@ -115,7 +115,7 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
           #src: /copilot/media/copilot/copilot-learning-hub/startup-founder-icon.png
-      componentType: icon-card
+      - componentType: icon-card
         title: Technology manager
         summary: 
         url: /collections/mjqfm1m3ngd5y
@@ -123,7 +123,7 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
           #src: /copilot/media/copilot/copilot-learning-hub/security-icon.png- 
-      componentType: icon-card
+      - componentType: icon-card
         title: Partner
         summary: Unlock a new era of productivity growth with Copilot.
         url: /collections/qygcmdmzd07we
