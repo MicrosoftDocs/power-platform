@@ -4,7 +4,7 @@ description: Learn how to build high-performing workload teams with fusion devel
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -67,6 +67,8 @@ The following recommendations can help you adopt and implement fusion developmen
 Strictly defined roles and responsibilities could result in a level of discomfort for some team members when they're performing functions outside their responsibility. Conduct open and honest discussions with the team about team structure, and be open to making adjustments when needed.
 
 ## Power Platform facilitation
+
+The generative AI features in Power Apps and Power Automate are transforming how software applications are built. With the power of large language models, Power Platform is advancing to the next step in the evolution of code abstraction: moving from low-code to natural language authoring, and enabling humans and machines to work together to build solutions. With the Copilot feature in [Power Apps](/power-apps/maker/canvas-apps/ai-conversations-create-app) and [Power Automate](/power-automate/get-started-with-copilot#create-a-flow-using-the-cloud-flows-designer-with-copilot), you receive in-app guidance through natural language processing to help you build your app or flow. These features can help workload teams with diverse skill sets to develop better apps and streamline their software development processes.
 
 Create or expand your Center of Excellence (CoE) with the [Power Platform CoE Starter Kit](/power-platform/guidance/coe/starter-kit).
 

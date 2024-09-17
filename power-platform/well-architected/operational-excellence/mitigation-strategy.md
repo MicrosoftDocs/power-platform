@@ -4,7 +4,7 @@ description: Learn how to design a standardized strategy for handling deployment
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -128,6 +128,8 @@ Test your entire deployment failure mitigation strategy frequently. Like emergen
 
 [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
+Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure copilots and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the copilot responses are evaluated against expected results.
+
 [Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) store the parameter keys and values, which then serve as input to other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 
 [Power Platform environments](/power-platform/admin/backup-restore-environments) provide point-in-time restore functionality that can help you roll back.
@@ -140,7 +142,11 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights; for example, to monitor cloud flow executions and create alerts for cloud flow run failures.
 
-## Next steps
+- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
+
+## Operational Excellence checklist
+
+Refer to the complete set of recommendations.
 
 > [!div class="nextstepaction"]
 > [Operational Excellence checklist](checklist.md)
