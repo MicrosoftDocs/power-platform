@@ -53,7 +53,7 @@ To enable solution checker enforcement for your Managed Environment:
 
 When the validation mode is set to **Warn** or **Block**, a summary email is sent when a solution is imported or blocked. When the solution is imported into an environment, the summary email shows the count of issues by severity in the solution. The contents of the email may include a link to the solution analysis results. In some instances, the link to the results may have expired. To get new results, submit the solution to solution checker.
 
-Solutions checked from Power Apps [(make.powerapps.com](https://make.powerapps.com)) have the results stored in the source environment. Solutions imported to an environment with solution checker enforcement enabled may have results stored in the target import environment.
+Solutions checked from Power Apps [make.powerapps.com](https://make.powerapps.com) have the results stored in the source environment. Solutions imported to an environment with solution checker enforcement turned on may have results stored in the target, import environment.
 
 The email is sent to all users with the roles of [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) and [Dynamics 365 service administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). It is also sent to recipients of the [weekly digest emails](managed-environment-usage-insights.md#who-can-receive-the-weekly-digest).
 
