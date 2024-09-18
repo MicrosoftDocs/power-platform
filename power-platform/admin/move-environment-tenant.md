@@ -73,7 +73,7 @@ Any Copilot Studio chatbots must be manually exported. Some dependent components
 
 Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or group them together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
 
-## Power Pages 
+### Power Pages 
 The following steps must be done for each website in an environment.
 
 1.	Sign in to the environment.
