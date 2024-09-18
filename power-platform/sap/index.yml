@@ -188,14 +188,14 @@ sections:
           src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
       - componentType: icon-card
         title: Technology manager
-        summary: 
+        summary: text goes here
         url: /collections/qygcmdmzd07we
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
       - componentType: icon-card
         title: Partner
-        summary: 
+        summary: text goes here
         url: /collections/mjqfm1m3ngd5y
         icon:
           componentType: image
