@@ -40,16 +40,16 @@ Be sure that you complete the following prerequisites before you start the migra
 -	If Lockbox is turned on in the source tenant, be prepared to approve a Lockbox request at the start of the tenant-to-tenant operation.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
-## Pre-migration process
+## Preparation process
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 for Marketing before the migration. You also must create a user mapping file.
 
-### Power Automate
+### Prepare Power Automate
 
 If your flows are already defined in Dataverse, then no additional work is required. 
 
 Any Power Automate flows that should be migrated need to have their definitions added in Dataverse in the source environment. Learn more about this in [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). This can be done in bulk by running the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest) cmdlet.
       
-### Power Apps
+### Prepare Power Apps
 Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
 
 #### For solution-aware apps:
@@ -68,19 +68,19 @@ Any Power Apps must be manually exported. We don't support the migration of cust
   	
 1.	Repeat these steps until all apps have been exported.
 
-### Copilot Studio
+### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
 
 Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or group them together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
 
-### Power Pages 
+### Prepare Power Pages 
 The following steps must be done for each website in an environment.
 
 1.	Sign in to the environment.
 2.	Open the [Power Apps Portals admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 3.	[Delete](/power-pages/admin/delete-website) the website.
 
-### Dynamics 365 Marketing:
+### Prepare Dynamics 365 Marketing
 If the Dynamics 365 Marketing app is deployed in the tenant, be sure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Learn more in [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 ### Create user mapping file
@@ -281,7 +281,7 @@ TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
 •	Migrate Environment: Running
 •	Migrate Environment: Succeeded
 
-## Post-migration
+## Post-migration process
 After moving environments to another tenant:
 
 -	The environment URL, organization ID (OrgID), and the name don't change.
@@ -290,20 +290,21 @@ After moving environments to another tenant:
 
 Do the following steps for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
 
-### For Power Automate
+### Post-migration process for Power Automate
 1. After the copy has completed, step through the Review components section as a checklist to get flows and other components adjusted and activated. Key steps:
     1. Create connections for all connection references
     1. Start all flows, including starting child flows before parent flows
     1. For any HTTP triggered flows, retrieve the new URL, and place it in any calling apps or flows to refresh those references.
 1. Note that if flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
 
-### For Power Apps
-For solution aware apps:
+### Post-migration process for Power Apps
+
+#### For solution aware apps:
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 1. Select Import and use the file selector to pick the packages exported from the above steps.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
-For non-solution aware apps:
+#### For non-solution aware apps:
 1. Go to https://make.powerapps.com.
 1. Select the new environment from the environment picker in the upper-right.
 1. Select Apps.
@@ -312,17 +313,19 @@ For non-solution aware apps:
 1. Complete all of the import option selections, and then select Import.
 1. Repeat these steps until all apps have been imported.
 
-### Copilot Studio
+### Post-migration process for Copilot Studio
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 1. Select Import and use the file selector to pick the packages exported from the above steps.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
-### For Power Pages (must be done for each portal in the environment(s)):
+### Post-migration process for Power Pages 
+The following steps must be completed for each website in the environment.
+
 1. Sign in to the environment.
 1. Open the Power Apps Portals admin center.
-1. Provision the portal with the same portal type and language.
+1. Provision the website with the same portal type and language.
 
-### For Dynamics 365 Marketing:
-If the Marketing app is deployed in the tenant, ensure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Go to: Tenant-to-tenant migration for Dynamics 365 Marketing.
+### Post-migration process for Dynamics 365 Marketing:
+If the Dynamics 365 Marketing app is deployed in the tenant, ensure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Learn more at [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 
