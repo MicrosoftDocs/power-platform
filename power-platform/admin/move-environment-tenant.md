@@ -41,7 +41,7 @@ Be sure that you complete the following prerequisites before you start the migra
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Pre-migration process
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 for Marketing before the migration. You also must generate a mapping file.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 for Marketing before the migration. You also must create a user mapping file.
 
 ### Power Automate
 
@@ -143,7 +143,7 @@ This step involves creating the SAS URI, which will be utilized later for upload
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
 ```
 
-##### Sample output
+#### Sample output
 
 ```PowerShell
 Code        :
@@ -154,13 +154,13 @@ Errors      :
 Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?sv=2018-03-28&sr=c&si=SASpolicyXXRRRX}
 ```
 
-#### Upload the user mapping file 
-The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, execute the following commands in Windows PowerShell ISE, ensuring that the parameters 'SASUri' and 'FileToUpload' are correctly highlighted. This step is crucial for uploading mapping of the users accurately in the system.
+### Upload the user mapping file 
+The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, execute the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for uploading mapping of the users accurately in the system.
 
 > [!Note]
-> The installation of the Az module is required to run the script mentioned in the preparation for migration step.
+> The installation of the Az module is required to run the script mentioned.
 
-```PowerShell
+```Windows PowerShell ISE
 $SASUri ="Update the SAS Uri from previous step”
 $Uri = [System.Uri] $SASUri
  
@@ -178,8 +178,8 @@ $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -
 Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $storageContext -Force
 ```
 
-#### Prepare the environment migration
-The subsequent step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
+### Prepare the environment migration
+The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
 
 ```PowerShell
 TenantToTenant-PrepareMigration 
@@ -189,74 +189,75 @@ TenantToTenant-PrepareMigration
 ```
 
 > [!Note]
-> While passing SASUri value you need to provide until container name as below:
-> https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?
+> While passing the **SASUri** value, you must provide until container name as below:
+> **https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?**
 
-##### Sample output
+#### Sample output
 
 ```PowerShell
 Code        : 202
 Description : Accepted
 ```
 
-This step's duration will vary depending on the number of users in the user mapping file. You can monitor the progress of this step by using the “TenantToTenant-GetStatus” command provided below.
+This step's duration will vary depending on the number of users in the user mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
 
 ```PowerShell
 TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
 ```
 
-###### Sample output
+#### Sample output
 •	Validate Tenant To Tenant Migration: Running 
 •	Validate Tenant To Tenant Migration: Succeeded
 •	Validation Failed, Errors are updated on the blob here: SASURI
 
-Once you have successfully completed this step, move on to the next one to initiate the migration process. If there are any errors in the user mapping, there is an option to download the error report. This can be done by using the command provided below, using the SAS URI from the previous step and the desired location to download failure report.
+### Download the error report
+If there are any errors in the user mapping, there is an option to download the error report. This can be done by using the followng commands that use the SAS URI from the previous step and the desired location to download the error report.
 
 Complete the following steps with Windows PowerShell ISE.
 
 1. Import the required module
 
-```PowerShell
+```Windows PowerShell ISE
 Import-Module Az.Storage
 ```
     
 1. Define the SAS URI of the blob
 
-```PowerShell
+```Windows PowerShell ISE
 $sasUri = " Update the SAS Uri from previous step "
 ```
 
 1. Define the path where the blob will be downloaded
 
-```PowerShell
+```Windows PowerShell ISE
 $destinationPath = "C:\Downloads\Failed\"
 ```
  
 1. Split the SAS URI on the '?' character to separate the URL and the SAS token
 
-```PowerShell
+```Windows PowerShell ISE
 $url, $sasToken = $sasUri -split '\?', 2
 ```
 
 1. Extract the container name from the URL
 
-```PowerShell
+```Windows PowerShell ISE
 $containerName = $url.Split('/')[3]
 ```
 1. Extract the storage account name from the URL
 
-```PowerShell
+```Windows PowerShell ISE
 $storageAccountName = $url.Split('/')[2].Split('.')[0]
 ```
 1. Create a context for the storage account
 
-```PowerShell
+```Windows PowerShell ISE
 $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
 ```
  
 1. Download the blob
 
-```PowerShell
+```PowerShellWindows PowerShell ISE
 Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
 ```
 
