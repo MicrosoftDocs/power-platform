@@ -339,14 +339,13 @@ sections:
         summary: Free online program to learn low-code skills and get certified with Microsoft Power Platform.
         url: /copilot/microsoft-365/
       - componentType: summary-card
-        title: Microsoft certified: Power Platform fundamentals
+        title: "Microsoft certified: Power Platform fundamentals"
         summary: Demonstrate the business value and capabilities of the Microsoft Power Platform.
         url: /copilot/security/
       - componentType: summary-card
         title: Community Video gallery
         summary: Power Platform and SAP demos and training from community experts.
         url: /azure/copilot/
-
 # Additional links section
   - componentType: grid
     title: More resources
