@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
-description: Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request.
-ms.date: 09/12/2024
+description: Learn about the impact of migrating an environment from one tenant to another. 
+ms.date: 09/18/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -15,7 +15,22 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# Tenant-to-tenant migrations 
+
+# Tenant-to-tenant migrations
+The tenant-to-tenant migration feature allows the transfer of an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment does not actually move but rather is linked to another tenant. The environment still exists but is not part of the source tenant anymore. It is accessible and managed under the destination tenant. There is no user interface changes or version changes as part of this move.
+
+## Limitations
+Be aware of the following limitations.
+
+-	**Supported environment types:** Production and sandbox only.
+-	**Not Supported:** Environment types (Default, Developer, trial, teams), GCC to public clouds or vice versa.
+-	Components not fully supported: Canvas app, Custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, Component library, Power Apps Checker App, Café X.
+-	Mailboxes. If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you'll need to reconfigure the mailbox:
+  -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox will be enabled by default. Before the tenant-to-tenant process, customers need to migrate/configure their mailboxes on the target tenant.
+  -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post migration domain name is changed (test@targetcompanyname.onmicrosoft.com). Customers need to reconfigure the mailbox. To configure the mailbox, see Connect to Exchange Online.
+
+
+
 
 ## Migrate an environment to a different tenant
 
