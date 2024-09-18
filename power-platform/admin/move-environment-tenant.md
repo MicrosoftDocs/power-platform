@@ -88,6 +88,8 @@ Ex: Template (save the file as usermapping.csv, it is case sensitive)
 |------|-------------|
 |User1@sourcetenant.com	|User2@targettenant.com|
 
+### For Dynamics 365 Marketing:
+If the Marketing app is deployed in the tenant, ensure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Go to: [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 
 
