@@ -22,7 +22,7 @@ Similar to folders, _environment groups_ are designed to help administrators org
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
 
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
-- [Move data across regions](geographical-availability-copilot.md)
+- [Generative AI settings](geographical-availability-copilot.md)
 - [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
 - [Maker welcome content](welcome-content.md)
 - [Solution checker enforcement](managed-environment-solution-checker.md)
