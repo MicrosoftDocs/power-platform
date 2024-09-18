@@ -53,14 +53,14 @@ Any Power Automate flows that should be migrated need to have their definitions 
 ### Power Apps
 Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
 
-For solution-aware apps:
+#### For solution-aware apps:
 1. For apps that are solution aware, go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all apps and solutions. You can export them individually or group them together in a single solution, if they're not already.
 1. Delete these solution-aware apps in the environment after exporting them.
 
     > [!Important]
     > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
 
-For apps that aren't solution-aware
+#### For apps that aren't solution-aware
 1.	Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
 1.	For each app that you want to move, select **More Commands** (…), and then select **Export package (preview)**.
 1.	Enter the details required to perform the export of the app, and then select **Export**. Once the export completes, a download begins.
