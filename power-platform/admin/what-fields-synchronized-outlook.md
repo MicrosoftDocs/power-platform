@@ -1,12 +1,13 @@
 ---
 title: "What fields can be synchronized between customer engagement apps and Outlook? | MicrosoftDocs"
 description: What fields can be synchronized between customer engagement apps and Outlook?
-author: sericks007
+author: rahulmital 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 09/18/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: rahulmital
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
