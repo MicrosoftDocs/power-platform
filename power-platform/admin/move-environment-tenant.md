@@ -276,8 +276,7 @@ TenantToTenant-MigratePowerAppEnvironment
 TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
 ```
 
-
-### Sample output
+#### Sample output
 
 •	Migrate Environment: Running
 •	Migrate Environment: Succeeded
@@ -287,20 +286,18 @@ After moving environments to another tenant:
 
 -	The environment URL, organization ID (OrgID), and the name don't change.
 -	The source environment won't be accessible.
--	Users not included in the mapping file won't be migrated and mapped post migration.
+-	Users not included in the mapping file won't be migrated and mapped post-migration.
 
-Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing after the migration.
+Do the following steps for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
 
-
-### For Power Automate:
+### For Power Automate
 1. After the copy has completed, step through the Review components section as a checklist to get flows and other components adjusted and activated. Key steps:
     1. Create connections for all connection references
     1. Start all flows, including starting child flows before parent flows
     1. For any HTTP triggered flows, retrieve the new URL, and place it in any calling apps or flows to refresh those references.
 1. Note that if flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
 
-### For Power Apps:
-
+### For Power Apps
 For solution aware apps:
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 1. Select Import and use the file selector to pick the packages exported from the above steps.
@@ -315,12 +312,12 @@ For non-solution aware apps:
 1. Complete all of the import option selections, and then select Import.
 1. Repeat these steps until all apps have been imported.
 
-### For Power Virtual Agents:
+### Copilot Studio
 1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
 1. Select Import and use the file selector to pick the packages exported from the above steps.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
-### For Power Apps Portals (must be done for each portal in the environment(s)):
+### For Power Pages (must be done for each portal in the environment(s)):
 1. Sign in to the environment.
 1. Open the Power Apps Portals admin center.
 1. Provision the portal with the same portal type and language.
