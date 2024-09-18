@@ -25,6 +25,7 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 -	**Supported environment types:** Production and sandbox only.
 -	**Not Supported:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
 -	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Power Apps Checker App, and Café X.
+-	Once users are created and configured, you must generate a mapping file, which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you'll need to reconfigure the mailbox.
   -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
   -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post migration domain name is changed 
@@ -36,12 +37,11 @@ Be sure that you complete the following prerequisites before you start the migra
 -	Create users in the target tenant. You must:
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
--	Once the users are created and configured, create the mapping file.
 -	If Lockbox is turned on in the source tenant, be prepared to approve a Lockbox request at the start of the tenant-to-tenant operation.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Pre-migration process
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 for Marketing before the migration.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 for Marketing before the migration. You also must generate a mapping file.
 
 ### Power Automate
 
@@ -83,16 +83,19 @@ The following steps must be done for each website in an environment.
 ### Dynamics 365 Marketing:
 If the Dynamics 365 Marketing app is deployed in the tenant, be sure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Learn more in [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
-### Prepare Generate user mapping file
-To initiate the migration process, begin by creating a user mapping file for the initial environment to be transferred as described later in this article. It's essential to note that each environment requires an individual mapping file. Ensure that users are present and authorized in both the originating and destination tenants, as this is a prerequisite for a successful migration. The users' domains may vary between source and target, provided they are active. The procedure for generating the user mapping file will be outlined in this document described later in this article.
+### Create user mapping file
+Create a user mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they are active.
 
- It is important to have a user mapping file named usermapping.csv, you can use the usermapping.csv template and accurately record the details of users, including their source and destination email IDs. 
- 
-Ex: Template (save the file as usermapping.csv, it is case sensitive)
+1. Create a user mapping file named **usermapping.csv**.
 
-|Source|	Destination|
-|------|-------------|
-|User1@sourcetenant.com	|User2@targettenant.com|
+   > [!Note]
+   > The file name is case sensative.
+  
+1. Accurately record the details of users, including their source and destination email IDs. Your mapping file should look to the following example:
+
+    |Source|	Destination|
+    |------|-------------|
+    |SourceUser@sourcetenant.com	|DestinationUser@targettenant.com|
 
 ## Migration
 Install necessary PowerShell modules.
