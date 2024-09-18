@@ -230,7 +230,7 @@ sections:
 # Documentation
   - componentType: grid
     title: Documentation
-    summary: Explore Power Platform and SAP documentation and resources.
+    #summary: Explore Power Platform and SAP documentation and resources.
     blocks:
       - componentType: summary-card
         title: Power Platform and SAP Setup Assistant
@@ -328,7 +328,7 @@ sections:
 # Documentation
   - componentType: grid
     title: Training and certification
-    summary: Build Power Platform and SAP integration skills.
+    #summary: Build Power Platform and SAP integration skills.
     blocks:
       - componentType: summary-card
         title: Power Platform app maker
