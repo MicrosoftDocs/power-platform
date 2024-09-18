@@ -138,7 +138,6 @@ sections:
   #       - componentType: link
   #         text: Start the Learn Live experience
   #         url: /shows/learn-live/microsoft-copilot-for-security/
-
 # Learn Copilot based on your role
   - componentType: grid
     title: Find resources about Power Platform and SAP for your role
@@ -228,7 +227,6 @@ sections:
       #   icon:
       #     componentType: image
       #     src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
-
 # Copilot Documentation
   - componentType: grid
     title: Documentation
@@ -236,47 +234,51 @@ sections:
     blocks:
       - componentType: summary-card
         title: Power Platform and SAP Setup Assistant
-        summary: Find documentation about how the setup assistant helps you to configure Power Platform and SAP integration.
+        summary: Learn how the setup assistant helps you to configure Power Platform and SAP integration.
         url: overview.md
       - componentType: summary-card
-        title: Microsoft 365 Copilot
-        summary: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work.
+        title: Power Platform and SAP templates
+        summary: Find details on our industry-aligned and general pattern templates.
         url: /copilot/microsoft-365/
       - componentType: summary-card
-        title: Copilot for Security
-        summary: Use Copilot for Security to bring the full power of OpenAI architecture to defend your organization at machine speed and scale.
+        title: SAP ERP connector
+        summary: Getting started wiht the SAP ERP connector.
         url: /copilot/security/
       - componentType: summary-card
-        title: Copilot in Azure (preview)
-        summary: Learn how to manage operations from cloud to edge with an AI assistant.
+        title: SAP OData connector
+        summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
         url: /azure/copilot/
       - componentType: summary-card
-        title: Copilot experiences in Dynamics 365
-        summary: Find information about Copilot and generative AI in Dynamics 365 apps, including training and documentation.
+        title: Secure Network Communications (SNC)
+        summary: Learn how to secure Power Platform and SAP data communications.
         url: /dynamics365/copilot/
       - componentType: summary-card
-        title: Copilot experiences for your industry
-        summary: Find information about Copilot and generative AI in Industry Solutions, including training and documentation.
+        title: Entra ID using certficates (SSO)
+        summary: Find information about using SSO connections from the Power Platform to SAP.
         url: /industry/copilot/
       - componentType: summary-card
-        title: Copilot experiences in Power Platform
-        summary: Find information about Copilot and generative AI in Power Platform, including training and documentation.
+        title: Power Platform security and governance
+        summary: Learn how to secure and govern Power Platform environments.
         url: /power-platform/copilot/
       - componentType: summary-card
-        title: Microsoft Copilot Studio
-        summary: Discover how to build AI-driven copilots easily with Microsoft Copilot Studio.
+        title: Power Apps and Teams integration
+        summary: How to use Power Apps to extend Microsoft Teams.
         url: /microsoft-copilot-studio/
       - componentType: summary-card
-        title: Microsoft Azure AI Studio
-        summary: Build cutting-edge, market-ready, responsible applications for your organization with AI.
+        title: Dataverse
+        summary: Learn about Power Platform SAAS data storage.
         url: /azure/ai-studio/
       - componentType: summary-card
-        title: GitHub Copilot
-        summary: Use GitHub Copilot to get autocomplete-style suggestions from an AI pair programmer as you code.
+        title: Power Platform solutions
+        summary: Find information on how Power Platform solutions support application management and migration.
         url: https://docs.github.com/copilot/
       - componentType: summary-card
-        title: GitHub Copilot in Visual Studio
-        summary: Learn about GitHub Copilot Completions and GitHub Copilot Chat in Visual Studio.
+        title: Power Platform Application Lifecycle Management (ALM)
+        summary: Learn about ALM in the Power Platform.
+        url: /visualstudio/ide/visual-studio-github-copilot-install-and-states
+      - componentType: summary-card
+        title: Power Platform build tools
+        summary: Find details on tools used for Power Platform build processes.
         url: /visualstudio/ide/visual-studio-github-copilot-install-and-states
 
 # Video section
