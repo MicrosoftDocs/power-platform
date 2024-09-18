@@ -236,7 +236,7 @@ sections:
     blocks:
       - componentType: summary-card
         title: Power Platform and SAP Setup Assistant
-        #summary: Find documentation about Microsoft Copilot with enterprise data protection.
+        summary: Find documentation about how the setup assistant helps you to configure Power Platform and SAP integration.
         url: overview.md
       - componentType: summary-card
         title: Microsoft 365 Copilot
