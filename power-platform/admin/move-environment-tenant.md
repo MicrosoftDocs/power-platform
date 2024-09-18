@@ -42,7 +42,7 @@ Be sure that you complete the following prerequisites before you start the migra
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Pre-migration process
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Apps Portals, and Dynamics 365 for Marketing before the migration.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 for Marketing before the migration.
 
 ### Power Automate
 
@@ -70,12 +70,13 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 1.	Repeat these steps until all apps have been exported.
 
 ### Copilot Studio
--	Any Power Virtual Agents chatbots must be manually exported.
--	Some chatbots' dependent components must be manually reconfigured during or after the migration - for example, connections, environment variables, custom connectors.
+Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
 
-Chatbots are solution aware. You can go to https://make.powerapps.com/, navigate to the Solutions page, and export all chatbots'solutions - either individually or group them together in a single solution. For more information, see [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
+Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or group them together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
 
-For Power Apps Portals (must be done for each portal in the environment(s)):
+## Power Pages 
+The following steps must be done for each Power Page in the environments.
+
 1.	Sign in to the environment.
 2.	Open the [Power Apps Portals admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 3.	[Delete](/power-pages/admin/delete-website) the portal.
