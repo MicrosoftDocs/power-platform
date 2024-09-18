@@ -77,6 +77,7 @@ Most of these users are hidden from user views but they can be found by using th
 | # InsightsAppsPlatform | InsightsAppsPlatform@onmicrosoft.com | For insights generation and ingestion of data into Dataverse | Insights Apps Platform Role  |
 | # SSSAdminProd | SSSAdminProd@onmicrosoft.com | To allow Server Side Sync to integrate with Dataverse | System admin    |
 | Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
+| Dataverse Information Protection | dvinfoprotection@microsoft.com | To allow Microsoft Purview to Integrate with Dataverse | Service Reader Role, PurviewLabelRole |
 
 ## The purpose of the system account?
 
