@@ -358,10 +358,10 @@ sections:
         title: SAP and Azure
         summary: Learn about running SAP on Azure.
         url: /copilot/faq
-      # - componentType: summary-card
-      #   title: Copilot glossary
-      #   summary: Find common terms and definitions to help you better understand Copilot.
-      #   url: /copilot/glossary
+      - componentType: summary-card
+        title: Power Platform and SAP FAQ
+        summary: Get answers to common questions about Power Platform and SAP integration.
+        url: /copilot/faq
       # - componentType: summary-card
       #   title: Copilot Lab
       #   summary: Learn how to use Copilot on your everyday apps.
@@ -370,7 +370,7 @@ sections:
       #   title: Microsoft 365 Roadmap
       #   summary: Get the latest updates on our best-in-class productivity apps and intelligent cloud services.
       #   url: https://www.microsoft.com/en-us/microsoft-365/roadmap?msockid=112484b720886e3322089035213b6f50&filters=
-      # - componentType: summary-card
-      #   title: Release plans
-      #   summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
-      #   url: /dynamics365/release-plans/
+      - componentType: summary-card
+        title: Release plans
+        summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
+        url: /dynamics365/release-plans/
