@@ -174,7 +174,7 @@ sections:
           src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
         title: SAP Functional consultant 
-        summary: 
+        summary: text goes here
         url: /collections/20mijmjp46024
         icon:
           componentType: image
