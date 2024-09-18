@@ -60,7 +60,7 @@ Any Power Apps must be manually exported. We don't support the migration of cust
     > [!Important]
     > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
 
-#### For apps that aren't solution-aware
+#### For apps that aren't solution-aware:
 1.	Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
 1.	For each app that you want to move, select **More Commands** (…), and then select **Export package (preview)**.
 1.	Enter the details required to perform the export of the app, and then select **Export**. Once the export completes, a download begins.
