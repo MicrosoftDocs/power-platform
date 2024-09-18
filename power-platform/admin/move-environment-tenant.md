@@ -37,7 +37,6 @@ Be sure that you complete the following prerequisites before you start the migra
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
 -	Once the users are created and configured, create the mapping file.
--	If there are any solutions for Power Apps or Power Automate flows, these need to be exported from Power Apps and imported again into the new environment after the migration.
 -	If Lockbox is turned on in the source tenant, be prepared to approve a Lockbox request at the start of the tenant-to-tenant operation.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
@@ -75,11 +74,14 @@ Any Copilot Studio chatbots must be manually exported. Some dependent components
 Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or group them together in a single solution. Learn more in [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
 
 ## Power Pages 
-The following steps must be done for each Power Page in the environments.
+The following steps must be done for each website in an environment.
 
 1.	Sign in to the environment.
 2.	Open the [Power Apps Portals admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
-3.	[Delete](/power-pages/admin/delete-website) the portal.
+3.	[Delete](/power-pages/admin/delete-website) the website.
+
+### Dynamics 365 Marketing:
+If the Dynamics 365 Marketing app is deployed in the tenant, be sure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Learn more in [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 ### Prepare Generate user mapping file
 To initiate the migration process, begin by creating a user mapping file for the initial environment to be transferred as described later in this article. It's essential to note that each environment requires an individual mapping file. Ensure that users are present and authorized in both the originating and destination tenants, as this is a prerequisite for a successful migration. The users' domains may vary between source and target, provided they are active. The procedure for generating the user mapping file will be outlined in this document described later in this article.
@@ -91,10 +93,6 @@ Ex: Template (save the file as usermapping.csv, it is case sensitive)
 |Source|	Destination|
 |------|-------------|
 |User1@sourcetenant.com	|User2@targettenant.com|
-
-### Dynamics 365 Marketing:
-If the Marketing app is deployed in the tenant, ensure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Go to: [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
-
 
 ## Migration
 Install necessary PowerShell modules.
