@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Control client app access to environment (Preview)
+# Control client app access to environment (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -60,22 +60,163 @@ Client app access control isn’t applied to:
 
 ## Prerequisites
 
-- Environment must be a managed environment—[Managed environment overview](managed-environment-overview.md).
-- Enable auditing in the environment with system admin permissions.
-- Set organization settings with system admin permissions (requires system administrator security role).
+Your environment must be a managed environment—[Managed environment overview](managed-environment-overview.md).
 
-## Enable auditing in the environment
+The following paragraphs show you how to set up the needed prerequisites.
 
-In the Power Platform Admin Center:
+In summary, the system admin permissions should let you:
 
-1. Go to **Environments** -> **YourEnvironment** -> **Settings** -> **Audit settings**.
-1. Check the box for **Start Auditing** in the **Auditing** section.
+- [Enable auditing in the environment](#enable-auditing-in-the-environment).
+- [Create an appliction list in the environment](#create-an-application-list-in-the-environment).
+- Set organization settings (requires system administrator security role).
 
-## Enable audit mode
+### Enable auditing in the environment
 
-We recommend that you enable the audit mode first for at least one week to get the list of apps that your users are running in an environment.
+In the Power Platform admin center:
 
-Using this audit log list, you can determine which apps you want to allow or block. Be sure to enable your environment as a managed environment.
+1. Go to **Environments** > **YourEnvironment** > **Settings** > **Audit and logs** > **Audit settings**.
+1. In the **Auditing** section, check the boxes for **Start Auditing**, **Log access**, and **Read logs**.
+1. Select **Save**.
+
+### Create an application list in the environment
+
+There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications can be different between different environments. To manage app access control, you must first build the list of applications that can be managed.
+
+There are two ways to build the list of applications to manage:
+
+- [Get the list](#get-the-list-of-pre-authorized-applications) with the function `createOperationUsingWebAPI()`.
+- [Enable audit mode](#enable-audit-mode) to see the list of applications running in the environment.
+
+> [!NOTE]
+> The following list of apps are pre-authorized to run in a Dataverse environment.
+>
+> - All Microsoft apps that are pre-authorized to acquire OBO (On-Behalf-Of) tokens. For more information, see [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
+> - Application users: [Special system users and application users](/power-platform/admin/system-application-users).
+> - All legacy apps that can dynamically acquire OBO tokens.
+> - All apps with `prvActOnBehalfOfAnotherUser` privilege and those using headers to impersonate users. For more information, see [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
+
+#### Get the list of pre-authorized applications
+
+1. In Power Platform admin center, select the Dataverse environment with your desired list of applications.
+1. Open the web client.
+1. Select `F12` on your keyboard to open the developer tools.
+1. Select the **Console** tab.
+1. At the prompt, paste the following code snippet:
+
+   ```javascript
+   function createOperationUsingWebAPI() {
+     var clientUrl = Xrm.Page.context.getClientUrl();
+     var req = new XMLHttpRequest()
+     req.open("POST", encodeURI(clientUrl +   "/api/data/v9.0/RetrieveAppsWithDelegatedAccessPermissions"), true);
+     req.setRequestHeader("Accept", "application/json");
+     req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+     req.setRequestHeader("OData-MaxVersion", "4.0");
+     req.setRequestHeader("OData-Version", "4.0");
+     req.setRequestHeader("CallerId", "YOUR_CALLER_ID_GUID"); // Replace with actual GUID
+     req.onreadystatechange = function () {
+       if (this.readyState == 4 && this.status == 200) {
+         // Typical action to be performed when the document is ready:
+         console.log(req.responseText);
+       }
+     };
+     var body = JSON.stringify({ "cloud":0 });
+     req.send(body);
+   }
+
+   createOperationUsingWebAPI()
+   ```
+
+1. Press the **Enter** key.
+1. Select the **Network** tab.
+1. Locate and select the `RetrieveAppsWithDelegatedAccessPermissions` row.
+1. Select the **Response** tab.
+
+   A list of all the pre-authorized applications in the environment is listed. You might see a list similar to this one:
+
+   :::image type="content" source="media/control-client-app-access-to-environment/pre-authorized-apps.png" alt-text="Screenshot that shows a list of pre-authorized apps." lightbox="media/control-client-app-access-to-environment/pre-authorized-apps.png":::
+1. Copy the list of applications and paste it into a text editor such as Notepad.
+
+#### Build the list of applications to manage their access
+
+If you didn't use the function to get a list of apps, you can build a list manually. If you already started a list, you can add more applications to the environment.
+
+1. From Power Platform admin center, select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
+1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<orgurl>` with your own environment URL, then press **Enter**.
+
+   ```http  
+   https:/<orgurl>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
+   ```
+
+1. Select **+ New**.
+
+   :::image type="content" source="media/control-client-app-access-to-environment/new-application.png" alt-text="Screenshot that shows the location of the New button at the URL destination.":::
+1. On the new screen, enter an **ApplicationId**.
+1. Enter a **Name**.
+1. Select **Save**.
+
+   :::image type="content" source="media/control-client-app-access-to-environment/new-application-form.png" alt-text="Screenshot showing the location of the ApplicationId and Name fields. The image also shows where the Save button is located.":::
+
+Using this **New Application** page, you can add apps from the [commonly used apps list](#commonly-used-apps-you-might-want-to-allow), for example to add Dataverse, enter `00000007-0000-0000-c000-000000000000` as the **ApplicationId**.
+
+#### Allow or block apps
+
+When considering which apps you want to pre-authorize for your list, here are some commonly used apps that are safe to allow and powerful export apps that are better to block.
+
+##### Commonly used apps you might want to allow
+
+| Application ID | Application Name |
+|----------------|------------------|
+| 00000007-0000-0000-c000-000000000000 | Dataverse |
+| 065d9450-1e87-434e-ac2f-69af271549ed | PowerPlatformAdminCenter |
+| 07ce06e6-4ae9-4466-bca4-2984fa04d057 | Microsoft Dynamics File Storage |
+| 1884bdbf-452a-4a11-9c76-afdbdb1b3768 | RelevanceSearch |
+| 3570e63c-5acf-4f3f-9f15-a49faa5120d3| PowerAppsCustomerManagementPlaneBackend |
+| 3e62f81e-590b-425b-9531-cad6683656cf | PowerApps - apps.powerapps.com |
+| 44a02aaa-7145-4925-9dcd-79e6e1b94eff |MicrosoftDynamics365OfficeAppsIntegration |
+| 4ade18ba-d41e-45d6-a563-97c67fc0be15 | Microsoft Dynamics NRD Service |
+| 4e291c71-d680-4d0e-9640-0a3358e31177 | PowerApps |
+| 546068c3-99b1-4890-8e93-c8aeadcfe56a | Common Data Service - Azure Data Lake Storage |
+| 5bdbebb2-509f-458e-b56e-d0b934dfdafa | DynamicsInstaller |
+| 60216f25-dbae-452b-83ae-6224158ce95e | Microsoft Dynamics CRM App for Outlook |
+| 61d02d70-ab6c-4569-be48-787ea2cda65d | Dynamics 365 Analytics |
+| 6204c1d1-4712-4c46-a7d9-3ed63d992682 | Microsoft Flow Portal |
+| 637fcc9f-4a9b-4aaa-8713-a2a3cfda1505 | Dynamics CRM Online Administration |
+| 6eb29b24-9d89-4f26-bf2f-9a84ed2499b8 | Common Data Service Global Discovery Service |
+| 730d33da-0894-409f-a907-c577151719c5 | Flow-RP |
+| 7df0a125-d3be-4c96-aa54-591f83ff541c | Microsoft Flow Service |
+| 7f15f9d9-cad0-44f1-bbba-d36650e07765 | Azure Synapse Link for Dataverse |
+| 84e37c07-7362-4d9f-b4b1-09be02be0195 | DAMS PROD CL |
+| 8d605dfc-1a04-4da6-9be2-8426724af3f3 | Power Platform Authorization Service PROD |
+| 978b42f5-e03a-4695-b8df-454959d032c8 | BAP |
+| 99ff962b-6252-4b98-8478-0c65a3ea1925 | InsightsAppsPlatform |
+| a8f7a65c-f5ba-4859-b2d6-df772c264e9d | make.powerapps.com |
+| a94f9c62-97fe-4d19-b06d-472bed8d2bcf | Azure SQL Database and Data Warehouse |
+| aeb01831-b358-4750-92ce-722e4f3ea7e8 | BizQA for CDS |
+| b5faaec4-04c9-45e6-990a-093ed6d02c94 | Dynamic 365 Sales Insights Connector for Power Automate |
+| b6fb6bd6-f0fb-4a60-beb1-4e50afd0eaa9 | PowerAppsDataPlaneBackend |
+| be5f0473-6b57-40f8-b0a9-b3054b41b99e | IBuilder_StructuredML_Prod_CDS |
+| c6a9976b-9beb-43b8-9aea-52a55ba8e39b | Flow-CDSNativeConnectorGermany |
+| c92229fa-e4e7-47fc-81a8-01386459c021 | CDSUserManagement |
+| e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | JobsServiceProd |
+| ef32e2a3-262a-44e5-a270-4dfb7b6d0bb2 | AiBuilder PAIO-CDS Prod |
+
+##### Apps you might want to block
+
+These apps are powerful exporters of data. Blocking them prevents possible data exfiltration of sensitive information.
+
+| Application ID | Application Name |
+|----------------|------------------|
+| a672d62c-fc7b-4e81-a576-e60dc46e951d | Excel client |
+| d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
+| 51f81489-12ee-4a9e-aaae-a2591f45987d | xRm Tool kit |
+| 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
+| a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
+
+#### Enable audit mode
+
+We recommend that you enable the audit mode for at least one week to get the list of apps that your users are running in an environment.
+
+Using this *audit log* list, you can determine which apps you want to allow or block. Be sure to enable your environment as a managed environment.
 
 1. On the **Security** page, locate the **Client application access control** card and select **Manage client application access**.
 1. Select the environment where you want to manage app access.
