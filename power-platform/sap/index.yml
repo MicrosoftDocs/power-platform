@@ -142,7 +142,7 @@ sections:
 # Learn Copilot based on your role
   - componentType: grid
     title: Find resources about Power Platform and SAP for your role
-    summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
+    # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
     blocks:
       - componentType: icon-card
         title: Power Platform app maker
@@ -174,7 +174,7 @@ sections:
           src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
         title: SAP Functional consultant 
-        summary: text goes here
+        summary: How to build Power Apps integrated with SAP
         url: /collections/20mijmjp46024
         icon:
           componentType: image
@@ -188,7 +188,7 @@ sections:
           src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
       - componentType: icon-card
         title: Technology manager
-        summary: text goes here
+        summary: Considerations for implementing Power Platform integration with SAP
         url: /collections/qygcmdmzd07we
         icon:
           componentType: image
@@ -232,11 +232,11 @@ sections:
 # Copilot Documentation
   - componentType: grid
     title: Documentation
-    summary: Explore Microsoft Copilot documentation and resources for Copilot experiences in Microsoft products.
+    #summary: Explore Microsoft Copilot documentation and resources for Copilot experiences in Microsoft products.
     blocks:
       - componentType: summary-card
-        title: Microsoft Copilot
-        summary: Find documentation about Microsoft Copilot with enterprise data protection.
+        title: Power Platform and SAP Setup Assistant
+        #summary: Find documentation about Microsoft Copilot with enterprise data protection.
         url: overview.md
       - componentType: summary-card
         title: Microsoft 365 Copilot
