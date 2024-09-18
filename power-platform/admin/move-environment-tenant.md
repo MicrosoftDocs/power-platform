@@ -207,5 +207,121 @@ TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
 •	Validate Tenant To Tenant Migration: Succeeded
 •	Validation Failed, Errors are updated on the blob here: SASURI
 
+Once you have successfully completed this step, move on to the next one to initiate the migration process. If there are any errors in the user mapping, there is an option to download the error report. This can be done by using the command provided below, using the SAS URI from the previous step and the desired location to download failure report.
+
+Complete the following steps with Windows PowerShell ISE.
+
+1. Import the required module
+
+```PowerShell
+Import-Module Az.Storage
+```
+    
+1. Define the SAS URI of the blob
+
+```PowerShell
+$sasUri = " Update the SAS Uri from previous step "
+```
+
+1. Define the path where the blob will be downloaded
+
+```PowerShell
+$destinationPath = "C:\Downloads\Failed\"
+```
+ 
+1. Split the SAS URI on the '?' character to separate the URL and the SAS token
+
+```PowerShell
+$url, $sasToken = $sasUri -split '\?', 2
+```
+
+1. Extract the container name from the URL
+
+```PowerShell
+$containerName = $url.Split('/')[3]
+```
+1. Extract the storage account name from the URL
+
+```PowerShell
+$storageAccountName = $url.Split('/')[2].Split('.')[0]
+```
+1. Create a context for the storage account
+
+```PowerShell
+$storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
+```
+ 
+1. Download the blob
+
+```PowerShell
+Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
+```
+
+## Migrate the environment
+
+```PowerShell
+TenantToTenant-MigratePowerAppEnvironment
+-EnvironmentName {EnvironmentId}
+-TargetTenantId {TargetTenantId}
+-GuestAdminUserEmail {Guest User in Target Tenant}
+```
+
+### Get status 
+
+```PowerShell
+TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
+```
+
+
+### Sample output
+
+•	Migrate Environment: Running
+•	Migrate Environment: Succeeded
+
+## Post-migration
+After moving environments to another tenant:
+
+-	The environment URL, organization ID (OrgID), and the name don't change.
+-	The source environment won't be accessible.
+-	Users not included in the mapping file won't be migrated and mapped post migration.
+
+Do the following steps for Power Apps, Power Automate, Power Virtual Agents, Power Apps Portals, and Marketing after the migration.
+
+
+### For Power Automate:
+1. After the copy has completed, step through the Review components section as a checklist to get flows and other components adjusted and activated. Key steps:
+    1. Create connections for all connection references
+    1. Start all flows, including starting child flows before parent flows
+    1. For any HTTP triggered flows, retrieve the new URL, and place it in any calling apps or flows to refresh those references.
+1. Note that if flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
+
+### For Power Apps:
+
+For solution aware apps:
+1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+1. Select Import and use the file selector to pick the packages exported from the above steps.
+1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
+
+For non-solution aware apps:
+1. Go to https://make.powerapps.com.
+1. Select the new environment from the environment picker in the upper-right.
+1. Select Apps.
+1. Select Import canvas app.
+1. Upload the app package file.
+1. Complete all of the import option selections, and then select Import.
+1. Repeat these steps until all apps have been imported.
+
+### For Power Virtual Agents:
+1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
+1. Select Import and use the file selector to pick the packages exported from the above steps.
+1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
+
+### For Power Apps Portals (must be done for each portal in the environment(s)):
+1. Sign in to the environment.
+1. Open the Power Apps Portals admin center.
+1. Provision the portal with the same portal type and language.
+
+### For Dynamics 365 Marketing:
+If the Marketing app is deployed in the tenant, ensure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Go to: Tenant-to-tenant migration for Dynamics 365 Marketing.
 
 
