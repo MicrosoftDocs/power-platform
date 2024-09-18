@@ -92,6 +92,120 @@ Ex: Template (save the file as usermapping.csv, it is case sensitive)
 If the Marketing app is deployed in the tenant, ensure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Go to: [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 
+## Migration
+Install necessary PowerShell modules.
+
+### Install PowerShell for Power Platform administrators
+The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
+
+Import or update the necessary module by using one of the following commands:
+
+```PowerShell
+Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
+Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
+```
+
+#### Install Azure PowerShell on Windows
+
+The Az PowerShell module is a rollup module. Installing the Az PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more at [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery).
+
+Use the Install-Module cmdlet to install the Az PowerShell module:
+
+```PowerShell
+Install-Module -Name Az -Repository PSGallery -Force
+```
+
+#### Submit Migration request
+To initiate a tenant-to-tenant migration, the source tenant's D365 or Power platform administrator must submit request to target tenant using below command and provide environment name ID and tenant ID.
+
+You must have Power Platform Administrator or Dynamics 365 Administrator) enter credential of source user who is running the step. 
+
+```PowerShell
+TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
+```
+
+Destination tenant admin should run below command to see all the migration request and status. They can review all the migration requests and options to approve or reject. 
+
+Once request is approved, they can notify source admin to proceed with the next step of migration.
+
+```PowerShell
+TenantToTenant-ApproveMigration 
+Enter the sourceEnvironmentId you want to approve:
+```
+
+#### Generate SAS URL
+This initial step involves creating the SAS URI, which will be utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting {EnvironmentId} with the actual environment ID:
+
+```PowerShell
+GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
+```
+
+##### Sample output
+
+```PowerShell
+Code        :
+Description :
+Headers     :
+Error       :
+Errors      :
+Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?sv=2018-03-28&sr=c&si=SASpolicyXXRRRX}
+```
+
+#### Upload the user mapping file 
+The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, execute the following commands in Windows PowerShell ISE, ensuring that the parameters 'SASUri' and 'FileToUpload' are correctly highlighted. This step is crucial for uploading mapping of the users accurately in the system.
+
+> [!Note]
+> The installation of the Az module is required to run the script mentioned in the preparation for migration step.
+
+```PowerShell
+$SASUri ="Update the SAS Uri from previous step”
+$Uri = [System.Uri] $SASUri
+ 
+$storageAccountName = $uri.DnsSafeHost.Split(".")[0]
+$container = $uri.LocalPath.Substring(1)
+$sasToken = $uri.Query
+ 
+# File to upload
+$fileToUpload = 'C:\filelocation\usermapping.csv'
+ 
+# Create a storage context
+$storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
+ 
+# Upload the file to Azure Blob Storage
+Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $storageContext -Force
+```
+
+#### Prepare the environment migration
+The subsequent step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
+
+```PowerShell
+TenantToTenant-PrepareMigration 
+-EnvironmentName {EnvironmentId} 
+-TargetTenantId {TargetTenantId} 
+-ReadOnlyUserMappingFileContainerUri {SasUri}
+```
+
+> [!Note]
+> While passing SASUri value you need to provide until container name as below:
+> https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?
+
+##### Sample output
+
+```PowerShell
+Code        : 202
+Description : Accepted
+```
+
+This step's duration will vary depending on the number of users in the user mapping file. You can monitor the progress of this step by using the “TenantToTenant-GetStatus” command provided below.
+
+```PowerShell
+TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
+```
+
+###### Sample output
+•	Validate Tenant To Tenant Migration: Running 
+•	Validate Tenant To Tenant Migration: Succeeded
+•	Validation Failed, Errors are updated on the blob here: SASURI
 
 
 
