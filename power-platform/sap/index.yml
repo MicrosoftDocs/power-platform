@@ -230,7 +230,7 @@ sections:
 # Copilot Documentation
   - componentType: grid
     title: Documentation
-    #summary: Explore Microsoft Copilot documentation and resources for Copilot experiences in Microsoft products.
+    summary: Explore Power Platform and SAP documentation and resources.
     blocks:
       - componentType: summary-card
         title: Power Platform and SAP Setup Assistant
