@@ -23,7 +23,7 @@ The tenant-to-tenant migration feature allows you to transfer an environment fro
 Be aware of the following notes before you get started with a tenant-to-tenant migration.
 
 -	**Supported environment types:** Production and sandbox only.
--	**Not Supported:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
+-	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
 -	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Power Apps Checker App, and Café X.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you'll need to reconfigure the mailbox.
@@ -84,7 +84,7 @@ The following steps must be done for each website in an environment.
 If the Dynamics 365 Marketing app is deployed in the tenant, be sure that the necessary licenses are present in the destination tenant in order to reprovision the application once the migration is complete. Learn more in [Tenant-to-tenant migration for Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/tenant-to-tenant).
 
 ### Create user mapping file
-Create a user mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they are active.
+Create a user mapping file for the source environment to be transferred to the target environment. It's essential to note that each environment requires an individual mapping file. Be sure that users are present and authorized in both the originating and destination tenants, as this is required for a successful migration. The users' domains may vary between source and target, provided they're active.
 
 1. Create a user mapping file named **usermapping.csv**.
 
@@ -98,19 +98,19 @@ Create a user mapping file for the source environment to be transferred to the t
     |SourceUser@sourcetenant.com	|DestinationUser@targettenant.com|
 
 ## Migration
-Install necessary PowerShell modules.
+Complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform administrators
-The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
+The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
 
-Import or update the necessary module by using one of the following commands:
+Install or update the necessary module by using one of the following commands:
 
 ```PowerShell
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 ```
 
-#### Install Azure PowerShell on Windows
+### Install Azure PowerShell on Windows
 
 The Az PowerShell module is a rollup module. Installing the Az PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more at [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery).
 
@@ -120,26 +120,24 @@ Use the Install-Module cmdlet to install the Az PowerShell module:
 Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-#### Submit Migration request
-To initiate a tenant-to-tenant migration, the source tenant's D365 or Power platform administrator must submit request to target tenant using below command and provide environment name ID and tenant ID.
+### Submit migration request
+To initiate a tenant-to-tenant migration, the source tenant's Dynamics 365 or Power Platform administrator must submit a request to the target tenant using the following command and provide the environment name ID and tenant ID.
 
-You must have Power Platform Administrator or Dynamics 365 Administrator) enter credential of source user who is running the step. 
+You must have Power Platform administrator or Dynamics 365 administrator credentials to complete this step. 
 
 ```PowerShell
 TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
 ```
+The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
 
-Destination tenant admin should run below command to see all the migration request and status. They can review all the migration requests and options to approve or reject. 
-
-Once request is approved, they can notify source admin to proceed with the next step of migration.
+Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
 ```PowerShell
 TenantToTenant-ApproveMigration 
 Enter the sourceEnvironmentId you want to approve:
 ```
-
-#### Generate SAS URL
-This initial step involves creating the SAS URI, which will be utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting {EnvironmentId} with the actual environment ID:
+### Generate SAS URL
+This step involves creating the SAS URI, which will be utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting {EnvironmentId} with the actual environment ID:
 
 ```PowerShell
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
