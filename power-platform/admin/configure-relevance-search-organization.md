@@ -235,6 +235,8 @@ To edit the searchable fields of a table:
 >
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
 >
+> - The maximum search term size is 1024 characters.
+>
 > - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
 >
 > - If the length of text in a table column is changed and the column is set to **Simple Search View**, the import may not be successful and the following error may occur.
