@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 09/18/2024
+ms.date: 09/19/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -77,7 +77,7 @@ Chatbots are solution-aware. Go to [Power Apps](https://make.powerapps.com), nav
 The following steps must be done for each website in an environment.
 
 1.	Sign in to the environment.
-2.	Open the [Power Apps Portals admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
+2.	Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 3.	[Delete](/power-pages/admin/delete-website) the website.
 
 ### Prepare Dynamics 365 Marketing
@@ -288,41 +288,41 @@ After moving environments to another tenant:
 -	The source environment won't be accessible.
 -	Users not included in the mapping file won't be migrated and mapped post-migration.
 
-Do the following steps for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
+Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
 
 ### Post-migration process for Power Automate
-1. After the copy has completed, step through the Review components section as a checklist to get flows and other components adjusted and activated. Key steps:
-    1. Create connections for all connection references
-    1. Start all flows, including starting child flows before parent flows
-    1. For any HTTP triggered flows, retrieve the new URL, and place it in any calling apps or flows to refresh those references.
+1. After the copy has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. Key steps:
+    1. Create connections for all connection references.
+    1. Start all flows, including starting child flows before parent flows.
+    1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
 1. Note that if flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
 
 ### Post-migration process for Power Apps
 
 #### For solution aware apps:
-1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
-1. Select Import and use the file selector to pick the packages exported from the above steps.
+1. Select the new environment from [Power Apps](https://make.powerapps.com) and navigate to the **Solutions** page.
+1. Select **Import** and use the file selector to select the packages exported from the above step.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
 #### For non-solution aware apps:
-1. Go to https://make.powerapps.com.
-1. Select the new environment from the environment picker in the upper-right.
-1. Select Apps.
-1. Select Import canvas app.
+1. Go to [Power Apps](https://make.powerapps.com).
+1. Select the new environment from the environment dropdown list.
+1. Select **Apps**.
+1. Select **Import canvas app**.
 1. Upload the app package file.
-1. Complete all of the import option selections, and then select Import.
+1. Complete all of the import option selections, and then select **Import**.
 1. Repeat these steps until all apps have been imported.
 
 ### Post-migration process for Copilot Studio
-1. Select the new environment from https://make.powerapps.com/ and navigate to the Solutions page.
-1. Select Import and use the file selector to pick the packages exported from the above steps.
+1. Select the new environment from [Power Apps](https://make.powerapps.com) and navigate to the **Solutions** page.
+1. Select **Import** and use the file selector to select the packages exported from the above step.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
 ### Post-migration process for Power Pages 
 The following steps must be completed for each website in the environment.
 
 1. Sign in to the environment.
-1. Open the Power Apps Portals admin center.
+1. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 1. Provision the website with the same portal type and language.
 
 ### Post-migration process for Dynamics 365 Marketing:
