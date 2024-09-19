@@ -24,6 +24,6 @@ Protect applications and cloud workloads from network-based cyberattacks.
   
 - **Azure Virtual Network**: This feature is applicable only to Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Learn more in [Virtual Network support for Power Platform overview](../vnet-support-overview.md).
 
-> [!Note]
-> Recommendations for Azure Virtual Networks aren't available in the current version but are planned for future updates.
+  > [!Note]
+  > Recommendations for Azure Virtual Networks aren't available in the current version but are planned for future updates.
 
