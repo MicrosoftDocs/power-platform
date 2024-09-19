@@ -17,7 +17,7 @@ contributors:
   - gregli
 ---
 
-# GroupBy and Ungroup functions
+# Summarize function
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
 
@@ -27,28 +27,28 @@ Summarize [records](/power-apps/maker/canvas-apps/working-with-tables#records) o
 
 Use the **Summarize** function to group records of a table and summarize the columns in the group.
 
-The first argument to **Summarize** is the table to operate on.  The remaining arguments can be in any order and fall into two categories:
-- Group column names. Use these to define what columns to group on.
-- Summarization formulas. Use these to summarize the columns in the **ThisGroup** table.  **ThisGroup** is a table which contains all the columns of the original table, but is limited to just the records of one group at a time.  Each formula must be named with **As** for the result table.
+The first argument to **Summarize** is the table to operate on. The remaining arguments can be in any order and fall into two categories:
+- Group column names. Use these to specify which columns to group on.
+- Summarization formulas. Use these to summarize the columns in the **ThisGroup** table. **ThisGroup** is a table which contains all the columns of the original table, but is limited to just the records of one group at a time based on the group columns. Each formula must be named with **As** for column name in the result table.
 
-A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and a function can return a table. **Summarize** doesn't modify a table; instead it takes a table as an argument and returns a different table. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
+A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and a function can return a table. **Summarize** doesn't modify a table; instead it takes a table as an argument and returns a different table. For more information, see [working with tables](/power-apps/maker/canvas-apps/working-with-tables).
 
 ## Delegation
 
-**Summarize** can be delegated depending on the data source and complexity of the summarization formulas. Sticking with basic operations such as **Sum**, **Average**, **CountRows** is safe, but others are possible, it is best to test your formula by monitoring the network traffic. 
+**Summarize** can be delegated depending on the data source and complexity of the summarization formulas. Basic aggregate functions such as [**Sum**](function-aggregates), [**Average**](function-aggregates), [**Max**](function-aggregates), [**Min**](function-aggregates), [**CountRows**](function-table-counts), and [**Concat**](function-concatenate) have a good chance of being delegated. 
 
 If complete delegation of a formula isn't possible, the authoring environment will flag the portion that can't be delegated with a warning. When possible, consider changing the formula to avoid functions and operators that can't be delegated. 
 
-See the [delegation overview](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview) for more information.
+For more information, see [delegation overview](/power-apps/maker/canvas-apps/delegation-overview).
 
 ## Syntax
 
-**Summarize**( _Table_, _GroupByColumnName1_ [, _GroupByColumnName2_, ... ], [, _SummarizeColumns_ As _SummarizeNames_, ...] )
+**Summarize**( _Table_, _GroupByColumnName1_ [, _GroupByColumnName2_, ... ] [, _SummarizeColumns_ As _SummarizeNames_, ...] )
 
 - _Table_ - Required. Table to be summarized.
 - _GroupByColumnNames_ - At least one required. The column names in _Table_ by which to group records. These columns become columns in the resulting table.
 - _SummarizeColumns_ - Optional. Summarization formula over the **ThisGroup** table for each group.
-- _SummarizeNames_ - Required for each _SummarizeColumn_.  Each summarized column must be explicitly named for the output table.
+- _SummarizeNames_ - Required for each _SummarizeColumn_. Each summarized column must be explicitly named for the output table.
 
 ## Examples
 
@@ -58,7 +58,7 @@ See the [delegation overview](https://learn.microsoft.com/en-us/power-apps/maker
 
 ```power-fx
 Set( CityPopulations, 
-    Table(
+   Table(
         { City: "London",    Country: "United Kingdom", Population: 8615000},
         { City: "Berlin",    Country: "Germany",        Population: 3562000},
         { City: "Madrid",    Country: "Spain",          Population: 3165000},
@@ -84,7 +84,7 @@ Summarize( CityPopulations, Country,
 The result will be the table:
 
 | Country | Total Population | Cities |
-|=========|==================|========|
+|---------|------------------|--------|
 | United Kingdom | 8615000 | London |
 | Germany | 6816000 | Berlin, Hamburg, Munich |
 | Spain | 4767000 | Madrid, Barcelona | 
@@ -115,7 +115,7 @@ Summarize( Inventory, Supplier, Fruit, Average( ThisGroup, Price ) As 'Average P
 ```
 
 | Fruit   | Supplier  | Average Price |
-|=========|===========|===============|
+|---------|-----------|---------------|
 | Grapes  | Contoso   | 215           |
 | Lemons  | Fabrikam  | 30.5          |
 | Lemons  | Contoso   | 29            |
