@@ -136,8 +136,8 @@ Once a request is approved, the admin of the destination tenant can notify the a
 TenantToTenant-ApproveMigration 
 Enter the sourceEnvironmentId you want to approve:
 ```
-### Generate SAS URL
-This step involves creating the SAS URI, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID:
+### Generate a shared access signature (SAS) URL
+This step involves creating the SAS URL, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID:
 
 ```PowerShell
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
