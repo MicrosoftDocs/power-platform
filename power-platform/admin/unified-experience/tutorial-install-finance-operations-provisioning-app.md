@@ -26,7 +26,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 ## Prerequisites
     
 > [!IMPORTANT]
-> App cannot be installed if the linked environment is LCS managed environment. If user try to install the app in an org which is linked with LCS managed environment, app installation will fail.
+> If user try to install the **Dynamics 365 Finance and Operations Provisioning App ** on Dataverse Organization which is already linked with LCS managed environment, the app installation will fail. This application should only be used while provisioning a new Unified environment.
 
 - You must have a license to install finance and operations apps in Power Platform.
 
@@ -52,7 +52,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 ## Known limitations
 
 Installation of the provisioning app has the following known limitations:
-- **Reusing domain of deleted environment**: Provisioning App cannot be installed on an org if the domain is same as the UDE which was deleted with-in 7 days. If user want to use the same domain name, user needs to wait for 7 days (from the day environment was deleted).
+- **Reusing domain of deleted environment**: Environment domain name for unified environments are not reusable for up to 7 days from the date of deletion of the environment.
 - **Environment URL length**: The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length. Otherwise, installation of the Finance and Operations Provisioning app fails. To bypass this limitation, edit the URL of your environment so that it's the required length.
 - **Finance and operations URL missing**: After the installation is successful, the finance and operations URL might not be shown on the environment details page in the Power Platform admin center. To bypass this limitation, edit the environment, and change a field such as **Description** to a new value. This edit operation synchronizes the new URL value and shows it on the screen.
 
