@@ -114,7 +114,7 @@ To provision managed identity record in Dataverse, complete the following steps.
          "applicationid":"<<appId>>",
          "managedidentityid":"<<anyGuid>>",
          "credentialsource":2,
-         “subjectscope”:1,
+         "subjectscope":1,
          "tenantid":"<<tenantId>>"
       }
      ```

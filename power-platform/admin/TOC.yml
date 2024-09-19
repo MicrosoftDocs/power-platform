@@ -270,7 +270,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units (preview)
+                    - name: Create or edit business units 
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md

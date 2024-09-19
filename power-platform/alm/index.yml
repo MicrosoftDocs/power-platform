@@ -117,6 +117,4 @@ landingContent:
             url: ../guidance/coe/starter-kit-explained.md
           - text: "Best practices and guidance when using Microsoft Dataverse"
             url: /powerapps/developer/data-platform/best-practices
-          - text: "Canvas apps coding standards and guidelines"
-            url: https://www.microsoft.com/en-us/power-platform/blog/power-apps/powerapps-canvas-app-coding-standards-and-guidelines/
 
