@@ -45,7 +45,7 @@ sections:
       links: 
         - componentType: link
           text: Set up Power Platform environments
-          url: /collections/4gmb2422rxg5r
+          url: https://learn.microsoft.com/en-us/power-platform/guidance/
         # - componentType: link
         #   text: Watch videos
         #   url: /shows/copilot-learning-hub/
@@ -56,7 +56,7 @@ sections:
       links: 
         - componentType: link
           text: Getting started with SAP connectors
-          url: /collections/r2rupnp88p6e5
+          url: https://learn.microsoft.com/en-us/power-platform/sap/overview
         # - componentType: link
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
@@ -66,11 +66,11 @@ sections:
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-4.png
       links: 
         - componentType: link
-          text: Explore the collection
-          url: /collections/4gmb242e53832
-        - componentType: link
-          text: Watch videos
-          url: /collections/0d6s6nx05qd1o
+          text: Get started with the SAP Procurement template
+          url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /collections/0d6s6nx05qd1o
   # Spotlight selections
   # - componentType: testimonials-section
   #   title: 'Discover top picks'
@@ -242,8 +242,8 @@ sections:
         url: /copilot/microsoft-365/
       - componentType: summary-card
         title: SAP ERP connector
-        summary: Getting started wiht the SAP ERP connector.
-        url: /copilot/security/
+        summary: Getting started with the SAP ERP connector.
+        url: https://learn.microsoft.com/en-us/power-platform/sap/guides/getting-started-with-the-sap-erp-connector
       - componentType: summary-card
         title: SAP OData connector
         summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
@@ -346,6 +346,10 @@ sections:
         title: Community Video gallery
         summary: Power Platform and SAP demos and training from community experts.
         url: /azure/copilot/
+      - componentType: summary-card
+        title: "Module: Connect Power Platform to SAP on Azure"
+        summary: Learn to Connect Power BI Desktop to SAP HANA on a Windows computer and connect Power Automate and Power Apps to SAP systems.
+        url: https://learn.microsoft.com/en-us/training/modules/connect-power-platform-to-sap-azure/?source=recommendations
 # Additional links section
   - componentType: grid
     title: More resources
@@ -355,13 +359,13 @@ sections:
         summary: Engage with the community to learn and share about Power Platform and SAP integration.
         url: https://learn.microsoft.com/en-us/training/browse/?products=ms-copilot
       - componentType: summary-card
-        title: SAP and Azure
+        title: SAP on Azure
         summary: Learn about running SAP on Azure.
-        url: /copilot/faq
+        url: https://learn.microsoft.com/en-us/azure/sap/
       - componentType: summary-card
         title: Power Platform and SAP FAQ
         summary: Get answers to common questions about Power Platform and SAP integration.
-        url: /copilot/faq
+        url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/faqs?source=recommendations
       # - componentType: summary-card
       #   title: Copilot Lab
       #   summary: Learn how to use Copilot on your everyday apps.
