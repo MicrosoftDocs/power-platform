@@ -2,7 +2,6 @@
 title: Summarize function
 description: Reference information including syntax and examples for Summarize function.
 author: gregli-msft
-
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
@@ -16,7 +15,6 @@ contributors:
   - mduelae
   - gregli
 ---
-
 # Summarize function
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
@@ -37,7 +35,7 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 
 **Summarize** can be delegated depending on the data source and complexity of the summarization formulas. Basic aggregate functions such as [**Sum**](function-aggregates.md), [**Average**](function-aggregates.md), [**Max**](function-aggregates.md), [**Min**](function-aggregates.md), [**CountRows**](function-table-counts.md), and [**Concat**](function-concatenate.md) have a good chance of being delegated. 
 
-If complete delegation of a formula isn't possible, the authoring environment will flag the portion that can't be delegated with a warning. When possible, consider changing the formula to avoid functions and operators that can't be delegated. 
+If complete delegation of a formula isn't possible, the authoring environment flags the portion that can't be delegated with a warning. When possible, consider changing the formula to avoid functions and operators that can't be delegated. 
 
 For more information, see [delegation overview](/power-apps/maker/canvas-apps/delegation-overview).
 
@@ -46,7 +44,7 @@ For more information, see [delegation overview](/power-apps/maker/canvas-apps/de
 **Summarize**( _Table_, _GroupByColumnName1_ [, _GroupByColumnName2_, ... ] [, _SummarizeColumns_ As _SummarizeNames_, ...] )
 
 - _Table_ - Required. Table to be summarized.
-- _GroupByColumnNames_ - At least one required. The column names in _Table_ by which to group records. These columns become columns in the resulting table.
+- _GroupByColumnNames_ - At least one is required. The column names in _Table_ by which to group records. These columns become columns in the resulting table.
 - _SummarizeColumns_ - Optional. Summarization formula over the **ThisGroup** table for each group.
 - _SummarizeNames_ - Required for each _SummarizeColumn_. Each summarized column must be explicitly named for the output table.
 
@@ -56,32 +54,32 @@ For more information, see [delegation overview](/power-apps/maker/canvas-apps/de
 
 1. Create a table in your Power Fx host with this sample data:
 
-```powerapps-dot
-Set( CityPopulations, 
-   Table(
-        { City: "London",    Country: "United Kingdom", Population: 8615000},
-        { City: "Berlin",    Country: "Germany",        Population: 3562000},
-        { City: "Madrid",    Country: "Spain",          Population: 3165000},
-        { City: "Rome",      Country: "Italy",          Population: 2874000},
-        { City: "Paris",     Country: "France",         Population: 2273000},
-        { City: "Hamburg",   Country: "Germany",        Population: 1760000},
-        { City: "Barcelona", Country: "Spain",          Population: 1602000},
-        { City: "Munich",    Country: "Germany",        Population: 1494000},
-        { City: "Milan",     Country: "Italy",          Population: 1344000}
-    )
-)
-```
+   ```powerapps-dot
+  Set( CityPopulations,
+      Table(
+           { City: "London",    Country: "United Kingdom", Population: 8615000},
+           { City: "Berlin",    Country: "Germany",        Population: 3562000},
+           { City: "Madrid",    Country: "Spain",          Population: 3165000},
+           { City: "Rome",      Country: "Italy",          Population: 2874000},
+           { City: "Paris",     Country: "France",         Population: 2273000},
+           { City: "Hamburg",   Country: "Germany",        Population: 1760000},
+           { City: "Barcelona", Country: "Spain",          Population: 1602000},
+           { City: "Munich",    Country: "Germany",        Population: 1494000},
+           { City: "Milan",     Country: "Italy",          Population: 1344000}
+       )
+  )
+  ```
 
 2. Evaluate the following formula:
 
-```powerapps-dot
-Summarize( CityPopulations, Country,
-           Sum( ThisGroup, Population ) As 'Total Population',
-           Concat( ThisGroup, City, ", " ) As Cities 
-)
-```
+   ```powerapps-dot
+   Summarize( CityPopulations, Country,
+              Sum( ThisGroup, Population ) As 'Total Population',
+              Concat( ThisGroup, City, ", " ) As Cities 
+   )
+   ```
 
-The result will be the table:
+The result is this table:
 
 | Country | Total Population | Cities |
 |---------|------------------|--------|
