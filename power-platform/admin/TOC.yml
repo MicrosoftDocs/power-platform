@@ -465,9 +465,9 @@
             - name: Overview of Power Platform security
               href: security/overview.md
             - name: Manage security
-              href: security/security-posture-overview.md
-              - name: Security pages
-                items:  
+              items: 
+                - name: Manage security
+                  href: security/security-posture-overview.md
                 - name: Overview
                   href: security/security-overview.md
                 - name: Network security
