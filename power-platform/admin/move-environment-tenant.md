@@ -37,7 +37,6 @@ Be sure that you complete the following prerequisites before you start the migra
 -	Create users in the target tenant. You must:
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
--	If Lockbox is turned on in the source tenant, be prepared to approve a Lockbox request at the start of the tenant-to-tenant operation.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
@@ -189,7 +188,7 @@ TenantToTenant-PrepareMigration
 ```
 
 > [!Note]
-> While passing the **SASUri** value, you must provide until container name as below:
+> While passing the **SASUri** value, you must provide the parameter as below:
 > **https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?**
 
 #### Sample output
