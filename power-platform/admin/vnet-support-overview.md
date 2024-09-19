@@ -1,5 +1,5 @@
 ---
-title: Virtual Network support for Power Platform overview
+title: Virtual Network support overview
 description: Learn about Microsoft Azure Virtual Network support for Power Platform and Dynamics 365 apps.
 author: ritesp
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Virtual Network support for Power Platform overview
+# Virtual Network support overview
 
 With [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) support for Power Platform, you can integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Virtual Network support uses [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview) to manage outbound traffic from Power Platform at runtime. Using Azure Subnet delegation avoids the need for protected resources to be available over the internet to integrate with Power Platform. With virtual network support, Power Platform components can call resources owned by your enterprise inside your network, whether they're hosted in Azure or on-premises, and use plug-ins and connectors to make outbound calls.
 
