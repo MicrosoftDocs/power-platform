@@ -26,7 +26,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 ## Prerequisites
     
 > [!IMPORTANT]
-> If user try to install the **Dynamics 365 Finance and Operations Provisioning App ** on Dataverse Organization which is already linked with LCS managed environment, the app installation will fail. This application should only be used while provisioning a new Unified environment.
+> If user try to install the **Dynamics 365 Finance and Operations Provisioning App** on Dataverse Organization which is already linked with LCS managed environment, the app installation will fail. This application should only be used while provisioning a new Unified environment.
 
 - You must have a license to install finance and operations apps in Power Platform.
 
