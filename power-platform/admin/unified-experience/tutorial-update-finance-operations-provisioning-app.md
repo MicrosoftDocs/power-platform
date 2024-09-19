@@ -42,6 +42,9 @@ For example, a customer reads that a new service update is available and wants t
 
     > [!NOTE]
     > The dropdown list includes only versions that are later than your currently installed version. If no versions are listed, the current version of your environment is the latest version.
+    
+    > [!IMPORTANT]
+    > If application version dropdown is empty, it means environment is on the latest version already. Please do not sumbit the request in this case.
 
 1. Agree to the terms and conditions, and then select **Install** to start the update.
 
