@@ -35,7 +35,7 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 
 ## Delegation
 
-**Summarize** can be delegated depending on the data source and complexity of the summarization formulas. Basic aggregate functions such as [**Sum**](function-aggregates), [**Average**](function-aggregates), [**Max**](function-aggregates), [**Min**](function-aggregates), [**CountRows**](function-table-counts), and [**Concat**](function-concatenate) have a good chance of being delegated. 
+**Summarize** can be delegated depending on the data source and complexity of the summarization formulas. Basic aggregate functions such as [**Sum**](function-aggregates.md), [**Average**](function-aggregates.md), [**Max**](function-aggregates.md), [**Min**](function-aggregates.md), [**CountRows**](function-table-counts.md), and [**Concat**](function-concatenate.md) have a good chance of being delegated. 
 
 If complete delegation of a formula isn't possible, the authoring environment will flag the portion that can't be delegated with a warning. When possible, consider changing the formula to avoid functions and operators that can't be delegated. 
 
