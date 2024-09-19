@@ -4,11 +4,14 @@ description: Configure Dataverse search to improve search results and performanc
 author: mspilde
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 09/19/2024
 ms.subservice: admin
 ms.author: mspilde
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- wobushixinxin67
 
 ---
 # Configure Dataverse search for your environment
