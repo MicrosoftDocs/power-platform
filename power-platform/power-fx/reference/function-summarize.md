@@ -54,30 +54,30 @@ For more information, see [delegation overview](/power-apps/maker/canvas-apps/de
 
 1. Create a table in your Power Fx host with this sample data:
 
-   ```powerapps-dot
-  Set( CityPopulations,
-      Table(
-           { City: "London",    Country: "United Kingdom", Population: 8615000},
-           { City: "Berlin",    Country: "Germany",        Population: 3562000},
-           { City: "Madrid",    Country: "Spain",          Population: 3165000},
-           { City: "Rome",      Country: "Italy",          Population: 2874000},
-           { City: "Paris",     Country: "France",         Population: 2273000},
-           { City: "Hamburg",   Country: "Germany",        Population: 1760000},
-           { City: "Barcelona", Country: "Spain",          Population: 1602000},
-           { City: "Munich",    Country: "Germany",        Population: 1494000},
-           { City: "Milan",     Country: "Italy",          Population: 1344000}
-       )
-  )
-  ```
+```powerapps-dot
+Set( CityPopulations,
+   Table(
+        { City: "London",    Country: "United Kingdom", Population: 8615000},
+        { City: "Berlin",    Country: "Germany",        Population: 3562000},
+        { City: "Madrid",    Country: "Spain",          Population: 3165000},
+        { City: "Rome",      Country: "Italy",          Population: 2874000},
+        { City: "Paris",     Country: "France",         Population: 2273000},
+        { City: "Hamburg",   Country: "Germany",        Population: 1760000},
+        { City: "Barcelona", Country: "Spain",          Population: 1602000},
+        { City: "Munich",    Country: "Germany",        Population: 1494000},
+        { City: "Milan",     Country: "Italy",          Population: 1344000}
+    )
+)
+```
 
 2. Evaluate the following formula:
 
-   ```powerapps-dot
-   Summarize( CityPopulations, Country,
-              Sum( ThisGroup, Population ) As 'Total Population',
-              Concat( ThisGroup, City, ", " ) As Cities 
-   )
-   ```
+```powerapps-dot
+Summarize( CityPopulations, Country,
+           Sum( ThisGroup, Population ) As 'Total Population',
+           Concat( ThisGroup, City, ", " ) As Cities 
+)
+```
 
 The result is this table:
 
