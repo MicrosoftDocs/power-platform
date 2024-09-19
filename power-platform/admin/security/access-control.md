@@ -30,4 +30,4 @@ Access controls are a fundamental aspect of securing modern IT environments, par
 You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration safeguards prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantage.
 When this capability is enabled in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
-•	**Administrator Privileges**
+- **Administrator Privileges**
