@@ -17,7 +17,7 @@ search.audienceType:
 ---
 
 # Tenant-to-tenant migrations
-The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but is not part of the source tenant anymore. It is accessible and managed under the destination tenant. There is no user interface changes or version changes as part of this move.
+The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move.
 
 ## Before you get started
 Be aware of the following notes before you get started with a tenant-to-tenant migration.
@@ -26,7 +26,7 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 -	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
 -	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Power Apps Checker App, and Café X.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
--	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you'll need to reconfigure the mailbox.
+-	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
   -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
   -	If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post migration domain name is changed 
  to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. To configure the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
@@ -45,7 +45,7 @@ Complete the following procedures for Power Automate, Power Apps, Copilot Studio
 
 ### Prepare Power Automate
 
-If your flows are already defined in Dataverse, then no additional work is required. 
+If your flows are already defined in Dataverse, then no extra work is required. 
 
 Any Power Automate flows that should be migrated need to have their definitions added in Dataverse in the source environment. Learn more about this in [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). This can be done in bulk by running the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest) cmdlet.
       
@@ -137,7 +137,7 @@ TenantToTenant-ApproveMigration
 Enter the sourceEnvironmentId you want to approve:
 ```
 ### Generate SAS URL
-This step involves creating the SAS URI, which will be utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting {EnvironmentId} with the actual environment ID:
+This step involves creating the SAS URI, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID:
 
 ```PowerShell
 GenerateResourceStorage-PowerAppEnvironment –EnvironmentName {EnvironmentId}
@@ -199,7 +199,7 @@ Code        : 202
 Description : Accepted
 ```
 
-This step's duration will vary depending on the number of users in the user mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
+This step's duration varies depending on the number of users in the user mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
 
 ```PowerShell
 TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
@@ -211,7 +211,7 @@ TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
 •	Validation Failed, Errors are updated on the blob here: SASURI
 
 ### Download the error report
-If there are any errors in the user mapping, there is an option to download the error report. This can be done by using the followng commands that use the SAS URI from the previous step and the desired location to download the error report.
+If there are any errors in the user mapping, there's an option to download the error report. This can be done by using the following commands that use the SAS URI from the previous step and the desired location to download the error report.
 
 Complete the following steps with Windows PowerShell ISE.
 
@@ -295,7 +295,7 @@ Complete the following procedures for Power Automate, Power Apps, Copilot Studio
     1. Create connections for all connection references.
     1. Start all flows, including starting child flows before parent flows.
     1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
-1. Note that if flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
+1. If flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
 
 ### Post-migration process for Power Apps
 
@@ -304,7 +304,7 @@ Complete the following procedures for Power Automate, Power Apps, Copilot Studio
 1. Select **Import** and use the file selector to select the packages exported from the above step.
 1. Confirm that the import was successfully completed by checking the solution contents of the migrated environment.
 
-#### For non-solution aware apps:
+#### For apps that aren't solution-aware:
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select the new environment from the environment dropdown list.
 1. Select **Apps**.
