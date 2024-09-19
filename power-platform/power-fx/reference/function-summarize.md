@@ -56,7 +56,7 @@ For more information, see [delegation overview](/power-apps/maker/canvas-apps/de
 
 1. Create a table in your Power Fx host with this sample data:
 
-```power-fx
+```powerapps-dot
 Set( CityPopulations, 
    Table(
         { City: "London",    Country: "United Kingdom", Population: 8615000},
@@ -74,7 +74,7 @@ Set( CityPopulations,
 
 2. Evaluate the following formula:
 
-```power-fx
+```powerapps-dot
 Summarize( CityPopulations, Country,
            Sum( ThisGroup, Population ) As 'Total Population',
            Concat( ThisGroup, City, ", " ) As Cities 
@@ -95,7 +95,7 @@ The result will be the table:
 
 1. Create a table in your Power Fx host with this sample data:
 
-```power-fx
+```powerapps-dot
 Set( Inventory, 
    Table(
       {Supplier:"Contoso",  Fruit:"Grapes",  Price:220, Purchase:Date(2015,10,1), Tags: ["Red","Seedless"]},
@@ -110,7 +110,7 @@ Set( Inventory,
 
 2. Evaluate the following formula:
 
-```power-fx
+```powerapps-dot
 Summarize( Inventory, Supplier, Fruit, Average( ThisGroup, Price ) As 'Average Price' )
 ```
 
