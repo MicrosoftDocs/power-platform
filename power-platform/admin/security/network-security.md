@@ -14,4 +14,16 @@ search.audienceType:
 
 # Network security
                                                   
-Content goes here.
+Network security is crucial for protecting applications and cloud workloads from network-based cyberattacks. It is important because it helps safeguard organizational data, ensures secure access to applications, and protects against potential threats and vulnerabilities. It involves several key features.
+
+Protect applications and cloud workloads from network-based cyberattacks. 
+
+- **IP firewall**: This feature is applicable to only Managed Environments with Dataverse. The IP firewall helps to protect your organizational data by limiting user access to Dataverse from only allowed IP locations. The IP firewall analyzes the IP address of each request in real time. Learn more in [IP firewall in Power Platform environments](../ip-firewall.md).
+  
+- **IP address-based cookie binding**: This feature is applicable to only Managed Environments with Dataverse. It prevents session, hijacking exploits in Dataverse with IP address-based cookie binding. Learn more in [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
+  
+- **Azure Virtual Network**: This feature is applicable only to Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Learn more in [Virtual Network support for Power Platform overview](../vnet-support-overview.md).
+
+> [!Note]
+> Recommendations for Azure Virtual Networks aren't available in the current version but are planned for future updates.
+
