@@ -27,11 +27,11 @@ sections:
   - componentType: cards
     isShadowless: false
     backgroundColor: alternating-grey
-    title: Start your Power Platform and SAP learning journey
+    title: Start your Power Platform and SAP journey
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
-      title: "Understand Power Platform SAP integration"
+      title: "Understand Power Platform SAP integration (Ignite)"
       summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
       links: 
@@ -40,11 +40,11 @@ sections:
           url: /collections/7rmiy0yrnw8d6
     - componentType: card
       title: "Get started with Power Platform"
-      summary: Learn basics of the Power Platform and how to start using it in your environments.
+      summary: Learn about the Power Platform and how to start using it in your environments.
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-2.png
       links: 
         - componentType: link
-          text: Set up Power Platform environments
+          text: Power Platform guidance documentation
           url: https://learn.microsoft.com/en-us/power-platform/guidance/
         # - componentType: link
         #   text: Watch videos
@@ -55,7 +55,7 @@ sections:
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
       links: 
         - componentType: link
-          text: Getting started with SAP connectors
+          text: SAP on Power Platform
           url: https://learn.microsoft.com/en-us/power-platform/sap/overview
         # - componentType: link
         #   text: Watch videos
@@ -144,49 +144,49 @@ sections:
     # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
     blocks:
       - componentType: icon-card
-        title: Power Platform app maker
+        title: Power Platform app maker (Ignite)
         summary: How to work with TCodes, BAPIs, and complex JSON structures.
-        url: /collections/pzkb8e8dz4k50
+        url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
       - componentType: icon-card
-        title: Power Platform Administrator
+        title: Power Platform Administrator (later)
         summary: Guidance on SAP access methods and a directory of the most used SAP data.
         url: /collections/4gmb2m2k8n6k7
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
       - componentType: icon-card
-        title: SAP security administrator
+        title: SAP security administrator (later)
         summary: How to understand and administer Power Platform compared to SAP.
-        url: /collections/nq2bdzdox7pr2
+        url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
       - componentType: icon-card
-        title: SAP Basis administrator
+        title: SAP Basis administrator (Ignite)
         summary: Password reset copilot.
-        url: /collections/kxqa5k5dqz5j2
+        url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
-        title: SAP Functional consultant 
+        title: SAP Functional consultant (later)
         summary: How to build Power Apps integrated with SAP
-        url: /collections/20mijmjp46024
+        url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
       - componentType: icon-card
-        title: SAP Technical Consultant
+        title: SAP Technical Consultant (Ignite)
         summary: Working with Power Platform connections
-        url: /collections/7rmiyjy2006wj
+        url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
       - componentType: icon-card
-        title: Technology manager
+        title: Technology manager 
         summary: Considerations for implementing Power Platform integration with SAP
         url: /collections/qygcmdmzd07we
         icon:
