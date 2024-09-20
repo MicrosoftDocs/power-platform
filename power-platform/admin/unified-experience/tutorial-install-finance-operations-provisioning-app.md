@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Install the Finance and Operations Provisioning app  | Microsoft Docs"
+title: Tutorial: Install the Finance and Operations Provisioning app 
 description: Learn how to install the Finance and Operations Provisioning app onto an existing Power Platform environment.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 09/20/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -26,7 +26,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 ## Prerequisites
     
 > [!IMPORTANT]
-> If user try to install the **Dynamics 365 Finance and Operations Provisioning App** on Dataverse Organization which is already linked with LCS managed environment, the app installation will fail. This application should only be used while provisioning a new Unified environment.
+> If a user tries to install the **Dynamics 365 Finance and Operations Provisioning app** on a Dataverse organization that is already linked to an Lifecylce Services (LCS) managed environment, the app installation fails. This application should only be used while provisioning a new unified environment.
 
 - You must have a license to install finance and operations apps in Power Platform.
 
@@ -41,7 +41,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 - You must use an environment where the **Enable Dynamics 365 apps** option was turned on when the environment is created. This option is a prerequisite for all Dynamics 365 apps, including Sales, Customer Service, Field Service, and all finance and operations apps.
 
     > [!IMPORTANT]
-    > If you try to install without turning on the **Enable Dynamics 365 apps** option, you receive an error such as "Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard." The schema isn't a visible property in the Power Platform admin center and can't be changed after the environment is created. You can try to install finance and operations apps in another environment, or you can [create an environment by using an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).  
+    > If you try to install without turning on the **Enable Dynamics 365 apps** option, you receive an error message that says, _Dynamics 365 Finance and Operations Provisioning App isn't supported on SchemaType: Standard_. The schema isn't a visible property in the Power Platform admin center and can't be changed after the environment is created. You can try to install finance and operations apps in another environment, or you can [create an environment by using an ERP template](./tutorial-deploy-new-environment-with-ERP-template.md).  
     
 
 - You must install the platform tools app before you install the provisioning app. Detailed steps are given in the [Install on an environment](#install-on-an-environment) section.
@@ -52,7 +52,7 @@ For example, a customer who already purchased other Dynamics 365 apps wants to a
 ## Known limitations
 
 Installation of the provisioning app has the following known limitations:
-- **Reusing domain of deleted environment**: Environment domain name for unified environments are not reusable for up to 7 days from the date of deletion of the environment.
+- **Reusing the domain of a deleted environment**: The environment, domain name for a unified environment isn't reusable for up to 7 days from when the environment was deleted.
 - **Environment URL length**: The hostname of your Dataverse environment URL must be less than or equal to 19 characters in length. Otherwise, installation of the Finance and Operations Provisioning app fails. To bypass this limitation, edit the URL of your environment so that it's the required length.
 - **Finance and operations URL missing**: After the installation is successful, the finance and operations URL might not be shown on the environment details page in the Power Platform admin center. To bypass this limitation, edit the environment, and change a field such as **Description** to a new value. This edit operation synchronizes the new URL value and shows it on the screen.
 
