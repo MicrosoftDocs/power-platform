@@ -1,8 +1,8 @@
 ---
-title: "How do I check my online service health? | MicrosoftDocs"
+title: How do I check my online service health? 
 description: Check service health.
-ms.date: 09/21/2021
-ms.reviewer: ""
+ms.date: 09/20/2024
+ms.reviewer: sericks
 ms.topic: conceptual
 author: sericks007
 ms.subservice: admin
