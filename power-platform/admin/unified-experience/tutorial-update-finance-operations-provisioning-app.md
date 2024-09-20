@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Update the Finance and Operations Provisioning app   | Microsoft Docs"
+title: Tutorial: Update the Finance and Operations Provisioning app 
 description: This tutorial demonstrates how to use the Power Platform admin center to provision an environment with finance and operations apps installed.
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 09/20/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -44,7 +44,7 @@ For example, a customer reads that a new service update is available and wants t
     > The dropdown list includes only versions that are later than your currently installed version. If no versions are listed, the current version of your environment is the latest version.
     
     > [!IMPORTANT]
-    > If application version dropdown is empty, it means environment is on the latest version already. Please do not sumbit the request in this case.
+    > If the application version dropdown list is empty, it means that the environment is the latest version, already. Don't sumbit the request in this case.
 
 1. Agree to the terms and conditions, and then select **Install** to start the update.
 
