@@ -112,12 +112,12 @@ You can export a user's personal data stored in the system User table to Excel f
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Security**, and then select **Enabled Users View**.
-
-4. Select **Export to Excel**.
+1. Go to **Settings** > **Users + permissions** > **Users**.
+1. Select **Manage users in Dynamics 365** from the ribbon.
+1. Select **Enabled users** view from the view dropdown if the user you want to export is **Enabled** otherwise select **Disabaled users** view.
+1. Enter the name of the user in the **Search** box, and select **Enter**.
+1. Select the checkbox of the user you want to export.
+1. Expand on the ellipsis and select **Export to Excel**. 
 
 #### Audit history
 You can take screenshots of the audit history from within the administration center.
@@ -125,18 +125,9 @@ You can take screenshots of the audit history from within the administration cen
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
-
-    ![Power Apps Audit History Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
-
-4. Locate the user audit record, and then press Alt+PrtScn to take the screenshot.
-
-    ![Power Apps Audit History Details.](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
-
-5. Save the screenshot to a file, which you can then send to the DSR requestor.
+1. Go to **Settings** > **Audit and logs** > and select **Audit Summary View**.
+1. Locate the user audit record, and then press Alt+PrtScn to take the screenshot.
+1. Save the screenshot to a file, which you can then send to the DSR requestor.
 
 ### Delete
 
@@ -151,36 +142,31 @@ When a user record is deleted from the Microsoft Entra, the following message is
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Security** > **Users**, and then select **Disabled Users View**.
-
-4. Enter the name of the user in the **Search** box, and then select **Search**.
-
-9. Double-click the user's name in the search results list.
-
-10. On the user's Summary page, remove all personal data, and then select **Save**.
+1. Go to **Settings** > **Users + permissions** > **Users**.
+1. Select the **Filter** and select **Disabled Users** view from the ribbon.
+1. Enter the name of the user in the **Search** box, and select **Enter**.
+1. To view the user's personal data, select the user's name by clicking or double-tapping.
+1. To make changes to the user information, expand on the ellipse and click **Manage user in Dynamics 365**
+1. On the user's Summary page, remove all personal data, and then select **Save**.
 
 #### Remove a user's personal data by using Excel
 
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Security** > **Users**, and then select **Disabled Users View**.
-
-4. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](analyze-your-data-with-excel-templates.md#create-a-new-excel-template).
-
-8. Open the downloaded Excel template file, remove the user's personal data, and then save the file.
-
-9. Return to the **Disabled Users View** page and select **Import Data**.
-
-10. Select the Excel template file in the **Upload data file** dialog box and make all the necessary changes in the **Map Fields** window.
-
-12. Select **Next**, and then select **Submit**.
+1. Go to **Settings** > **Users + permissions** > **Users**.
+1. Select **Manage users in Dynamics 365** from the ribbon.
+1. Select **Disabaled users** view.
+1. Enter the name of the user in the **Search** box, and select **Enter**.
+1. Select the checkbox of the user you want to export.
+1. Expand on the ellipsis and select **Export to Excel**. 
+1. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](analyze-your-data-with-excel-templates.md#create-a-new-excel-template).
+1. Open the downloaded Excel template file, remove the user's personal data, and then save the file.
+1. Return to the **Disabled Users View** page and select **Import Data**.
+1. Select **Choose File** and select your updated Excel file.
+1. Select **Next** twice.
+1. Make all the necessary changes in the **Map Fields** window, example change the **Full Name** action to **Ignore**.
+1. Select **Next** twice, and then select **Submit**.
 
 #### Permanently delete user
 You can either remove user's personal data or permanently delete the user record from the Dataverse user table. More information: [Permanently delete users in Power Platform](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). 
@@ -192,12 +178,8 @@ When the user record is permanently deleted, the user's name in all records wher
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
-
-4. Locate the user's change history, select the check box next to the row(s), and then select **Delete Change History**.
+1. Go to **Settings** > **Audit and logs** > and select **Audit Summary View**.
+1. Locate the user's change history, select the check box next to the row(s), and then select **Delete Change History**.
 
 ## Personal data stored in databases of Dataverse
 
@@ -216,28 +198,20 @@ Using an inventory, Dataverse System Administrators can configure the search tab
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Select **Dataverse search**.
-
-    ![Power Apps Dataverse search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
-
-4. Enter the individual's personal data in the search box, and then select **Search**.
-
-    ![Power Apps Dataverse search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+1. Select **Open** from the ribbon.
+1. Select an app.
+1. Enter the user in the **Search** box.
+1. Review the Search results for all the tables that the user is being referenced.
 
 ### Rectify
 Dataverse System Administrators can update an individual's personal data by using the list of results from the Dataverse search. However, an individual's personal data may also be stored in other custom tables. Dataverse System Administrators are responsible for maintaining an inventory of these other custom tables and making the appropriate updates to an individual's personal data.
 
-From the Dataverse search results, do the following:
+From the Dataverse search results (above), do the following:
 
 1. Select an item that contains the individual's personal data.
+1. Update the individual's personal data where appropriate, and then select **Save**.
 
-2. Update the individual's personal data where appropriate, and then select **Save**.
-
-    ![Power Apps Account details.](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
-
+  
 ### Export
 
 You can take a screenshot of the data and share it with your DSR requestor.
@@ -245,22 +219,13 @@ You can take a screenshot of the data and share it with your DSR requestor.
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Select **Dataverse search**.
-
-    ![Power Apps Dataverse search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
-
-4. Enter the individual's personal data in the search box, and then select **Search**.
-
-    ![Power Apps Dataverse search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
-
-5. Double-click the item in the search results list.
-
-6. Press Alt+PrtScn to take the screenshot.
-
-7. Save the screenshot to a file, which you can then send to the DSR requestor.
+1. Select **Open** from the ribbon.
+1. Select an app.
+1. Enter the user in the **Search** box.
+1. Review the Search results for all the tables that the user is being referenced.
+1. Double-click the item in the search results list.
+1. Press Alt+PrtScn to take the screenshot.
+1. Save the screenshot to a file, which you can then send to the DSR requestor.
 
 ### Delete
 
@@ -272,10 +237,7 @@ Dataverse System Administrators can delete an individual's personal data from re
 From the Dataverse search results, to the following:
 
 1. Select an item that contains the individual's personal data.
-
-2. In the ribbon, select **Delete**. (Note that **Delete** is disabled if the record cannot be deleted).
-
-    ![Power Apps Account delete.](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
+1. In the ribbon, select **Delete**. (Note that **Delete** is disabled if the record cannot be deleted).
 
 ## Personal data stored in databases of the previous version of Dataverse
 
