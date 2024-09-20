@@ -26,8 +26,8 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 -	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
 -	A Dataverse organization linked to a finance and operations organization cannot be migrated to a different tenant.
 -	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint or others.
--	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Power Apps Checker App, and Café X.
--	There are additional steps required for Power Apps, Power Automate, Pages & Copilot studio called out later in Premigration and post migrations steps.
+-	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library.
+-	**There are additional steps required for Power Apps, Power Automate, Pages & Copilot studio** called out later in Premigration and post migrations steps.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
   -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
@@ -40,6 +40,7 @@ Be sure that you complete the following prerequisites before you start the migra
 -	Create users in the target tenant. You must:
   -	Create users in Microsoft 365 and Microsoft Entra ID.
   -	Assign licenses.
+- you must have Power platform admin or dynamics admin privileges to perform migration.
 -	The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. Learn more at [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ## Preparation process
@@ -91,7 +92,7 @@ Create a user mapping file for the source environment to be transferred to the t
 1. Create a user mapping file named **usermapping.csv**.
 
    > [!Note]
-   > The file name is case sensative.
+   > The file name is case sensative. Make sure records are comma seperated not semicolon.
   
 1. Accurately record the details of users, including their source and destination email IDs.Also make sure there are no extra space before anf after header. Your mapping file should look to the following example:
 
@@ -165,7 +166,9 @@ The admin of the destination tenant should run the following command to see all 
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
 ```PowerShell
-TenantToTenant-ApproveMigration 
+TenantToTenant-ViewMigrationRequest - TenantID{Target admin should provide targetTenantID (self) to view list of requests pending for approval}
+
+TenantToTenant-ManageMigrationRequest -RequestId {Request ID}
 Enter the sourceEnvironmentId you want to approve:
 ```
 ### Generate a shared access signature (SAS) URL
