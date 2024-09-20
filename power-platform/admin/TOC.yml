@@ -5,7 +5,7 @@
         - name: Admin documentation
           href: index.yml
         - name: Overview
-          href: admin-dochttps://github.com/MicrosoftDocs/power-platform-pr/blob/Yuko-Suggestion/power-platform/admin/view-service-health.mdumentation.md
+          href: admin-documentation.md
         - name: Work with various admin portals
           href: wp-work-with-admin-portals.md
         - name: Get started
