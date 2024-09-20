@@ -1,6 +1,6 @@
 ---
 title: View service health
-description: Check service health.
+description: Check service health in the Power Platform admin center.
 ms.date: 09/20/2024
 ms.reviewer: sericks
 ms.topic: conceptual
