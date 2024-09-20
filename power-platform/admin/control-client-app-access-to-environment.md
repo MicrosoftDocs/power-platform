@@ -1,5 +1,5 @@
 ---
-title: Control client app access to environment (Preview)
+title: Control client app access to environment (preview)
 description: You can protect against data exfiltration by managing and controlling what apps can run in their Dataverse environment.
 author: paulliew
 ms.author: paulliew
@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 4/1/2024
+ms.date: 9/20/2024
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration safeguards prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantage.
+You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration safeguards help prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantage.
 
 When this capability is enabled in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
