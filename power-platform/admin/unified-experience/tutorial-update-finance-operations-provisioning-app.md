@@ -1,5 +1,5 @@
 ---
-title: Tutorial: Update the Finance and Operations Provisioning app 
+title: "Tutorial: Update the Finance and Operations Provisioning app   | Microsoft Docs"
 description: This tutorial demonstrates how to use the Power Platform admin center to provision an environment with finance and operations apps installed.
 author: laneswenka
 ms.reviewer: sericks
