@@ -47,6 +47,7 @@ Select the **Message center** on your home dashboard (from the menu: **Health** 
    
 ### Related information
 [Get Help + Support](get-help-support.md) <br />
+[View service health in Power Platform admin center](view-service-health.md) <br />
 [Microsoft Dataverse analytics](analytics-common-data-service.md)
 
 
