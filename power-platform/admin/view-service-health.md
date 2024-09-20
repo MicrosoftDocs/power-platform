@@ -22,7 +22,7 @@ You can view service health informaiton for Dynamics 365 and Power Platform prod
 1. From the **Issue type** list, select if you want to view all issues, advisory issues, or incident issues.
 1. From the **Status** list, select if you want to view all issues, active issues, or resolved issues.
 
-    The page lists the type of issues that you selected.  To reset the filters, repeat steps 3-5.
+    The page lists the type of issues that you selected.  To reset the filters, repeat steps 4-6.
 
 ### Related information
 [How do I check my online service health?](check-online-service-health.md)
