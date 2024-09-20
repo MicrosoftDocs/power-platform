@@ -1,32 +1,33 @@
 ---
-title: "Special system users and application users"
-description: "Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose." 
+title: Special system users and application users
+description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/13/2024
+ms.date: 09/18/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
-ms.custom: "admin-security"
+ms.custom: admin-security
 search.audienceType: 
   - admin
 ms.contributors:
+- sanjeevgoyalmsft 
 - gattimassimo
 - saponcer
 ---
 
 # System and application users
 
-There is a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
+There's a list of special system and application users that is created when the system is provisioned.  Special system users are created for integration and support scenarios. Application users are created during system provisioning for setup and configuration management.  [Application users](create-users.md#create-an-application-user) can also be used for performing back-end services and their data access is managed by the special security role that is assigned. These security roles are managed by the system and might not be modifiable. See other system [predefined security roles](database-security.md#predefined-security-roles).  
 
-Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Do not delete or modify these users including changing or reassigning security role.
+Most of these users are hidden from user views but they can be found by using the Advanced Find on the Users table.  Don't delete or modify these users including changing or reassigning security role.
 
 ## System users
 
 |Full name  |User name  |Purpose  | Security role assigned |
 |-----------|-----------|---------|------------------------|
-| Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (does not have privilege to customer data) |
+| Support user |crmoln@microsoft.com |To allow Microsoft support staff to have restricted/limited access to any customer environment for customer support. |Support user (doesn't have privilege to customer data) |
 | Delegated admin |crmoln2@microsoft.com |See [For partners: the Delegated admin](for-partners-delegated-administrator.md). |System admin |
 
 ## Application users
@@ -77,12 +78,13 @@ Most of these users are hidden from user views but they can be found by using th
 | # InsightsAppsPlatform | InsightsAppsPlatform@onmicrosoft.com | For insights generation and ingestion of data into Dataverse | Insights Apps Platform Role  |
 | # SSSAdminProd | SSSAdminProd@onmicrosoft.com | To allow Server Side Sync to integrate with Dataverse | System admin    |
 | Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
+| Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 
 ## The purpose of the system account?
 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins.
 - The primary usage of this user account is to meet special business requirements that require elevation of privileges; for example, running background processes to integrate with other applications.
-- It can also be used to handle rollup scenarios where individual users do not have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
+- It can also be used to handle rollup scenarios where individual users don't have the required privilege. For example, the priority of a Case is automatically set to the highest priority of an individual user’s tasks and individual users can only update their own task priority but not the Case priority.
 
 ## Technical details on permissions?
 
@@ -102,6 +104,6 @@ Most of these users are hidden from user views but they can be found by using th
 
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they shouldn't be updated. The security roles that are assigned to these accounts shouldn't be updated either. This is to prevent any service outages.  
-- These users do not consume any service licenses.
+- These users don't consume any service licenses.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

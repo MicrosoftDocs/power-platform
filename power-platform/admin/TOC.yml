@@ -270,7 +270,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units (preview)
+                    - name: Create or edit business units 
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -543,9 +543,9 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: /power-automate/prevent-data-loss
+                      href: prevent-data-loss.md
                     - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
+                      href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
