@@ -24,7 +24,10 @@ Be aware of the following notes before you get started with a tenant-to-tenant m
 
 -	**Supported environment types:** Production and sandbox only.
 -	**Not supported environment types:** Default, developer, trial, and teams environment types and Government Community Cloud (GCC) to public clouds or vice versa.
+-	A Dataverse organization linked to a finance and operations organization cannot be migrated to a different tenant.
+-	You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Microsoft Dynamics 365 for Outlook, server-side sync, SharePoint or others.
 -	Components not fully supported include canvas apps, custom pages, Power Automate, Power Apps, Microsoft Copilot Studio, Dynamics 365 Customer voice, Omnichannel for Customer Service, component library, Power Apps Checker App, and Café X.
+-	There are additional steps required for Power Apps, Power Automate, Pages & Copilot studio called out later in Premigration and post migrations steps.
 -	Once users are created and configured, you must [create a mapping file](#create-user-mapping-file), which is described later in this article.
 -	If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
   -	If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
@@ -90,14 +93,44 @@ Create a user mapping file for the source environment to be transferred to the t
    > [!Note]
    > The file name is case sensative.
   
-1. Accurately record the details of users, including their source and destination email IDs. Your mapping file should look to the following example:
+1. Accurately record the details of users, including their source and destination email IDs.Also make sure there are no extra space before anf after header. Your mapping file should look to the following example:
 
     |Source|	Destination|
     |------|-------------|
     |SourceUser@sourcetenant.com	|DestinationUser@targettenant.com|
 
+For full access users:
+
+1. Access the source environment.
+2. Use Advanced Find (Screen shot of Advanced Find button.) and look for users.
+3. Select Use Saved View > Full Access Users, and then select Edit Columns.
+4. Remove all columns except Full Name.
+5. Select Add Columns > Windows Live ID.
+6. Select OK > Results to see the list of full access users.
+7. Select all the records, select Export Users in the ribbon, and then choose Static Worksheet.
+8. Follow steps 1-7 above for the destination tenant, if possible. You should now have two separate Excel sheets—one for source and one for target tenant.
+9. Open the files for editing.
+10. Starting with the source Excel sheet, copy the records under the Windows Live ID column into Notepad. Don't copy the header.
+11. Save the Notepad file.
+12. Next, enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding Source UPN, separating Source and Destination UPNs by a comma (,).
+Example:
+  user001@source.com, user001@destination.com
+  user002@source.com, user002@destination.com
+  user003@source.com, user003@destination.com
+13. Save the file as a CSV.
+
+For administrative access users:
+
+1. Access the source environment.
+2. Use Advanced Find (Screen shot of Advanced Find button.) and look for users.
+3. Select Use Saved View > Administrative Access Users, and then select Results to see the list of administrative access users.
+4. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in mapping:
+  Find the corresponding users in the destination tenant.
+  Make sure a valid Dynamics 365 license is assigned to the destination user in the destination tenant. Note: If the destination user isn't assigned any license, the migration fails.
+  Save the CSV file that has both full access users and administrative access users mapped.
+
 ## Migration
-Complete the following sections to migrate.
+Before processing with migration make sure you have reviewed and completed the preparetion process. Now you can process to complete the following sections to migrate.
 
 ### Install PowerShell for Power Platform administrators
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
@@ -220,43 +253,17 @@ Complete the following steps with Windows PowerShell ISE.
 Import-Module Az.Storage
 ```
     
-1. Define the SAS URI of the blob
+# Define the SAS URI of the blob
 
 ```Windows PowerShell ISE
 $sasUri = " Update the SAS Uri from previous step "
-```
-
-1. Define the path where the blob will be downloaded
-
-```Windows PowerShell ISE
+# Define the path where the blob will be downloaded
 $destinationPath = "C:\Downloads\Failed\"
-```
- 
-1. Split the SAS URI on the '?' character to separate the URL and the SAS token
-
-```Windows PowerShell ISE
+# Split the SAS URI on the '?' character to separate the URL and the SAS token
 $url, $sasToken = $sasUri -split '\?', 2
-```
-
-1. Extract the container name from the URL
-
-```Windows PowerShell ISE
 $containerName = $url.Split('/')[3]
-```
-1. Extract the storage account name from the URL
-
-```Windows PowerShell ISE
 $storageAccountName = $url.Split('/')[2].Split('.')[0]
-```
-1. Create a context for the storage account
-
-```Windows PowerShell ISE
 $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
-```
- 
-1. Download the blob
-
-```PowerShellWindows PowerShell ISE
 Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
 ```
 
