@@ -31,8 +31,8 @@ sections:
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
-      title: "Understand Power Platform SAP integration (Ignite)"
-      summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes.
+      title: "Understand Power Platform SAP integration"
+      summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes. (Ignite)
       imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
       links: 
         - componentType: link
@@ -144,58 +144,58 @@ sections:
     # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
     blocks:
       - componentType: icon-card
-        title: Power Platform app maker (Ignite)
-        summary: How to work with TCodes, BAPIs, and complex JSON structures.
+        title: Power Platform app maker
+        summary: How to work with TCodes, BAPIs, and complex JSON structures. (Ignite)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
       - componentType: icon-card
-        title: Power Platform Administrator (later)
-        summary: Guidance on SAP access methods and a directory of the most used SAP data.
+        title: Power Platform Administrator
+        summary: Guidance on SAP access methods and a directory of the most used SAP data. (later)
         url: /collections/4gmb2m2k8n6k7
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
       - componentType: icon-card
-        title: SAP security administrator (later)
-        summary: How to understand and administer Power Platform compared to SAP.
+        title: SAP security administrator
+        summary: How to understand and administer Power Platform compared to SAP. (later)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
       - componentType: icon-card
-        title: SAP Basis administrator (Ignite)
-        summary: Password reset copilot.
+        title: SAP Basis administrator
+        summary: Password reset copilot. (Ignite)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
-        title: SAP Functional consultant (later)
-        summary: How to build Power Apps integrated with SAP
+        title: SAP Functional consultant
+        summary: How to build Power Apps integrated with SAP (later)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
       - componentType: icon-card
-        title: SAP Technical Consultant (Ignite)
-        summary: Working with Power Platform connections
+        title: SAP Technical Consultant
+        summary: Working with Power Platform connections (Ignite)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
       - componentType: icon-card
         title: Technology manager 
-        summary: Considerations for implementing Power Platform integration with SAP
-        url: /collections/qygcmdmzd07we
+        summary: Considerations for implementing Power Platform integration with SAP (later)
+        url: https://www.microsoft.com
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
       - componentType: icon-card
         title: Partner
-        summary: text goes here
-        url: /collections/mjqfm1m3ngd5y
+        summary: How to partner with Microsoft to integrate customer Power Platform and SAP environments. (later)
+        url: https://www.microsoft.com
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
@@ -235,51 +235,51 @@ sections:
       - componentType: summary-card
         title: Power Platform and SAP Setup Assistant
         summary: Learn how the setup assistant helps you to configure Power Platform and SAP integration.
-        url: overview.md
-      - componentType: summary-card
-        title: Power Platform and SAP templates
-        summary: Find details on our industry-aligned and general pattern templates.
-        url: /copilot/microsoft-365/
+        url: https://learn.microsoft.com/en-us/power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
+      # - componentType: summary-card
+      #   title: Power Platform and SAP templates
+      #   summary: Find details on our industry-aligned and general pattern templates.
+      #   url: /copilot/microsoft-365/
       - componentType: summary-card
         title: SAP ERP connector
         summary: Getting started with the SAP ERP connector.
         url: https://learn.microsoft.com/en-us/power-platform/sap/guides/getting-started-with-the-sap-erp-connector
       - componentType: summary-card
         title: SAP OData connector
-        summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
-        url: /azure/copilot/
+        summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps. (Ignite)
+        url: https://www.microsoft.com
       - componentType: summary-card
         title: Secure Network Communications (SNC)
-        summary: Learn how to secure Power Platform and SAP data communications.
-        url: /dynamics365/copilot/
+        summary: Set up Secure Network Communications (SNC) for SAP and Microsoft Power Platform
+        url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-secure-network-communications
       - componentType: summary-card
         title: Entra ID using certficates (SSO)
         summary: Find information about using SSO connections from the Power Platform to SAP.
-        url: /industry/copilot/
+        url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
       - componentType: summary-card
         title: Power Platform security and governance
-        summary: Learn how to secure and govern Power Platform environments.
-        url: /power-platform/copilot/
+        summary: Learn how to set up and maintain security and governance for Power Platform.
+        url: https://learn.microsoft.com/en-us/power-platform/admin/security
       - componentType: summary-card
         title: Power Apps and Teams integration
-        summary: How to use Power Apps to extend Microsoft Teams.
-        url: /microsoft-copilot-studio/
+        summary: Create apps in Microsoft Teams by using Power Apps.
+        url: https://learn.microsoft.com/en-us/power-apps/teams/create-apps-overview
       - componentType: summary-card
-        title: Dataverse
-        summary: Learn about Power Platform SAAS data storage.
-        url: /azure/ai-studio/
+        title: Power Platform Administration
+        summary: Use Power Platform admin center to manage environments and settings for Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, and customer engagement apps.
+        url: https://learn.microsoft.com/en-us/power-platform/admin/
       - componentType: summary-card
         title: Power Platform solutions
         summary: Find information on how Power Platform solutions support application management and migration.
-        url: https://docs.github.com/copilot/
+        url: https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm
       - componentType: summary-card
         title: Power Platform Application Lifecycle Management (ALM)
-        summary: Learn about ALM in the Power Platform.
-        url: /visualstudio/ide/visual-studio-github-copilot-install-and-states
-      - componentType: summary-card
-        title: Power Platform build tools
-        summary: Find details on tools used for Power Platform build processes.
-        url: /visualstudio/ide/visual-studio-github-copilot-install-and-states
+        summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform (Power Apps, Power Automate, Microsoft Dataverse, Microsoft Copilot Studio).
+        url: https://learn.microsoft.com/en-us/power-platform/alm/
+      # - componentType: summary-card
+      #   title: Power Platform build tools
+      #   summary: Find details on tools used for Power Platform build processes.
+      #   url: /visualstudio/ide/visual-studio-github-copilot-install-and-states
 
 # Video section
   # - componentType: cards
@@ -333,19 +333,15 @@ sections:
       - componentType: summary-card
         title: Power Platform app maker
         summary: Get started learning the basics of building Power Platform apps.
-        url: overview.md
+        url: https://learn.microsoft.com/en-us/training/career-paths/app-maker
       - componentType: summary-card
         title: Power Up
         summary: Free online program to learn low-code skills and get certified with Microsoft Power Platform.
-        url: /copilot/microsoft-365/
+        url: https://powerup.microsoft.com/
       - componentType: summary-card
-        title: "Microsoft certified: Power Platform fundamentals"
-        summary: Demonstrate the business value and capabilities of the Microsoft Power Platform.
-        url: /copilot/security/
-      - componentType: summary-card
-        title: Community Video gallery
-        summary: Power Platform and SAP demos and training from community experts.
-        url: /azure/copilot/
+        title: "Power Platform fundamentals"
+        summary: Learn the business value and product capabilities of Microsoft Power Platform. 
+        url: https://learn.microsoft.com/en-us/training/courses/pl-900t00
       - componentType: summary-card
         title: "Module: Connect Power Platform to SAP on Azure"
         summary: Learn to Connect Power BI Desktop to SAP HANA on a Windows computer and connect Power Automate and Power Apps to SAP systems.
@@ -355,16 +351,20 @@ sections:
     title: More resources
     blocks:
       - componentType: summary-card
-        title: Power Platform and SAP community forum
-        summary: Engage with the community to learn and share about Power Platform and SAP integration.
-        url: https://learn.microsoft.com/en-us/training/browse/?products=ms-copilot
+        title: SAP on Power Automate Using Connectors Community Forum
+        summary: Engage with the community to learn and share about using SAP connectors. (Ignite)
+        url: https://www.microsoft.com
+      - componentType: summary-card
+        title: SAP and Power Platform Community Videos
+        summary: Power Platform and SAP demos and training from community experts. (Ignite)
+        url: https://www.microsoft.com
       - componentType: summary-card
         title: SAP on Azure
         summary: Learn about running SAP on Azure.
         url: https://learn.microsoft.com/en-us/azure/sap/
       - componentType: summary-card
         title: Power Platform and SAP FAQ
-        summary: Get answers to common questions about Power Platform and SAP integration.
+        summary: Get answers to common questions about Power Platform and SAP integration. (Ignite)
         url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/faqs?source=recommendations
       # - componentType: summary-card
       #   title: Copilot Lab
