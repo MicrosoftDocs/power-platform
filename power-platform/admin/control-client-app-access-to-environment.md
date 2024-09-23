@@ -28,16 +28,16 @@ App access control is performed at the Dataverse authentication layer. Learn mor
 
 App access requests can be authenticated as follows:
 
-1. **User signs in**  
+1. **User signs in.**  
     The user signs in to the system, such as Dynamics 365 Sales, with their credentials.
    
-1. **First-party app makes call with user impersonation**  
+1. **First-party app makes call with user impersonation.**  
     The user signs in to a first-party, Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
    
-1. **First-party app makes service-to-service call (application context)**  
+1. **First-party app makes service-to-service call (application context).**  
     A first-party, Microsoft app makes a call to Dataverse, using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
    
-1. **Third-party apps is registered in your Azure portal’s app registration**  
+1. **Third-party apps is registered in your Azure portal’s app registration.**  
     Your custom app authenticates, using your Azure app registration’s certificate or user-token.  
 
 Client app access control can be applied to the _user_ and _application_ context with user impersonation authentication. This is outlined in the following steps.
