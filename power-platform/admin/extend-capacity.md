@@ -15,7 +15,7 @@ contributors:
 - ianceicys-msft
 ---
 
-# Extend Microsoft Dataverse Capacity for 30 Days to your tenant
+# Extend Dataverse Capacity for 30 Days
 
 You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an additional 25% amount of capacity to your tenant for 30 days. 
 
