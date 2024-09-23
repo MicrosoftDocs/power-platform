@@ -55,7 +55,7 @@ After you determine how much storage you're using, use the following steps to en
    
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
-5. Review the details of the capacity overage. The 25% capacity is calculated based on your usage and will apply to each capacity type (database, file, and log). Select **Enable Capacity Extension**.
+5. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable Capacity Extension**.
 
    :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
 
