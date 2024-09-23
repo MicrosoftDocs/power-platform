@@ -68,6 +68,11 @@ Client app access control isn’t applied to the following apps:
 
 Complete the following prerequisites.
 
+### Verify your role
+There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
+- Power Platform admin
+- Dynamics 365 admin
+
 ### Verify that your enviroment is a Managed Environment
 Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
 
@@ -220,6 +225,8 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 We recommend that you turn on audit mode, for at least one week, to get the list of apps that your users are running in an environment.
 
 Using this *audit log* list, you can determine which apps you want to allow or block.
+
+You must be a Power Platform admin, a Dynamics 365 admin, 
 
 1. On the **Security** page, locate the **Client application access control** card and select **Manage client application access**.
 1. Select the environment where you want to manage app access.
