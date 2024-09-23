@@ -17,19 +17,17 @@ contributors:
 
 # Extend Microsoft Dataverse Capacity for 30 Days to your tenant
 
-You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an additional 25% amount of capacity to your tenant for 30 days. Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an additional 25% amount of capacity to your tenant for 30 days. 
+
+Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 If your tenant is running low on available storage capacity, and you need immediate capacity while you work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md), you can temporarily extend an additional 25% of storage to your tenant for 30 days.
 
 > [!NOTE]
 > The Universal License Terms for Online Services apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
-
 > Your organization must have the right licenses for the storage you use:
-
 > If you use more than your documented entitlements or usage limits, you must buy additional licenses.
-
 > If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. 
-
 > Microsoft provides reasonable notice before suspending your online service.
 
 ## Prerequisites
