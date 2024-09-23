@@ -32,7 +32,7 @@ If your tenant is running low on available storage capacity, and you need immedi
 
 ## Prerequisites
 
-- Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you are aware of know how much more storage capacity is needed to be extended. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
+- Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of know how much more storage capacity is needed to be extended. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Extend Dataverse Capacity 
 
@@ -47,7 +47,7 @@ After you determine how much storage you're using, use the following steps to en
 
 3. Select **capacity**.
 
-4. If you're running low on storage capacity, you will see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+4. If you're running low on storage capacity, you'll see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
    
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
@@ -57,7 +57,7 @@ After you determine how much storage you're using, use the following steps to en
 
 6. Select **Confirm**.
 
-7. A banner will be updated stating that the temporary capacity extension has beeen successfully enabled. 
+7. A banner will display the temporary capacity extension has beeen successfully enabled. 
 
    :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
 
