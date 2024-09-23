@@ -26,37 +26,37 @@ You can configure which apps are allowed or blocked in your environment. Malicio
 
 App access control is performed at the Dataverse authentication layer. Learn more in [Authenticating to Power Platform services](security/authenticate-services.md). Dataverse authentication validates the client app ID in the user’s token against a list of allowed and blocked apps configured for the environment. The authentication either grants or denies the user’s app access to the environment.  
 
-App access requests can be authenticated as follows:
+There are four different ways that a user can authenticate.
 
-1. **User signs in.**  
+- **User context**  
     The user signs in to the system, such as Dynamics 365 Sales, with their credentials.
    
-1. **First-party app makes call with user impersonation.**  
+- **Application context with user impersonation**
     The user signs in to a first-party, Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
    
-1. **First-party app makes service-to-service call (application context).**  
+- **First-party app with service-to-service call (application context).**  
     A first-party, Microsoft app makes a call to Dataverse, using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
    
-1. **Third-party apps is registered in your Azure portal’s app registration.**  
+- **Third-party apps registered in your Azure portal’s app registration.**  
     Your custom app authenticates, using your Azure app registration’s certificate or user-token.  
 
-Client app access control can be applied to the _user_ and _application_ context with user impersonation authentication. This is outlined in the following steps.
+Here are examples of how client app access control works in the _user_ and _application_ context authentication.
 
-1. **User context with user token**
+- **User context with user token**
 
-   1. For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
-   1. To allow or block session authentication used by a Unified Interface (UCI), the user must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
-   1. Features restrict access control for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
+  - For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
+  - To allow or block session authentication used by a Unified Interface (UCI), the user must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
+  - Features restrict access control for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
       > [!TIP]
       > We don’t recommend allowing a public client unless you need it needed temporarily.
       
-1. **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
+- **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
   
-1. **Impersonation using a first-party app**
+- **Impersonation using a first-party app**
 
-   1. For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
-   1. For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
+  - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
+  - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
 Client app access control isn’t applied to the following apps:
 - First-party apps with service-to-service calls (application context).
@@ -66,7 +66,7 @@ Client app access control isn’t applied to the following apps:
 
 ## Prerequisites
 
-Complete the folloiwng prerequisites.
+Complete the following prerequisites.
 
 ### Verify that your enviroment is a Managed Environment
 Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
@@ -91,7 +91,7 @@ There are two ways to build the list of applications to manage:
 > The following list of apps are pre-authorized to run in a Dataverse environment.
 >
 > - All Microsoft apps that are pre-authorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
-> - Application users: [Special system users and application users](/power-platform/admin/system-application-users).
+> - Application users app. Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
 > - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
 > - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
 
@@ -215,7 +215,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 
-#### Turn on audit mode
+## Turn on audit mode
 
 We recommend that you turn on audit mode, for at least one week, to get the list of apps that your users are running in an environment.
 
