@@ -68,3 +68,16 @@ After you determine how much storage you're using, use the following steps to en
 After enabling the extension, for the next 30 days the additional capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
    :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
+
+
+## FAQ
+
+### What will happen after a capacity extension expires in 30 days?
+
+Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+
+The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+
+Your organization must have the right licenses for the storage you use: 
+- If you use more than your documented entitlements or usage limits, you must buy additional licenses. 
+- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
