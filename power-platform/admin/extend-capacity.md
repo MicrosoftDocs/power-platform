@@ -28,11 +28,11 @@ If your tenant is running low on available storage capacity, and you need immedi
 >
 > Your organization must have the right licenses for the storage you use:
 >
-> If you use more than your documented entitlements or usage limits, you must buy additional licenses.
+> - If you use more than your documented entitlements or usage limits, you must buy additional licenses.
 >
-> If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. 
+> - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. 
 >
-> Microsoft provides reasonable notice before suspending your online service.
+> - Microsoft provides reasonable notice before suspending your online service.
 
 ## Prerequisites
 
@@ -45,9 +45,9 @@ After you determine how much storage you're using, use the following steps to en
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
 
    > [!Note]
-   > Be sure to select the correct tenant to extend the storage capacity for 30 days. 
+   > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
    >
-   > You may extend an additional 25% of capacity on your account a maximum of 3 times.
+   > - You may extend an additional 25% of capacity on your account a maximum of 3 times.
 
 2. In the left pane, select **Resources**.
 
