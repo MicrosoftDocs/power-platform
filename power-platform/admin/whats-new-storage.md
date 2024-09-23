@@ -96,21 +96,43 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 #### Extension request for Restore
 
-1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
-2. Select **Backups** > **Restore or manage** from the top menu bar.
-3. Select the backup type, the date and time, and then select **Continue**.
-4. Select the various restore options, and then select **Restore**.
-5. Select **Confirm**.
-6. The **Restore backup** page appears where you can select **Request an extension**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
+
+   > [!Note]
+   > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
+   >
+   > - You can extend capacity on your account a maximum of 3 times.
+
+2. In the left pane, select **Resources**.
+
+3. Select **capacity**.
+
+4. If you're running low on storage capacity, you'll see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+   
+   :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
+
+5. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable Capacity Extension**.
+
+   :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
+
+6. Select **Confirm**.
+
+7. A banner displays the temporary capacity extension has is enabled. 
+
+   :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
+
+After enabling the extension, for the next 30 days the additional capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+
+   :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
 
 #### About extensions
 
 - An extension is at the tenant level.
 - An extension applies to both the legacy and new storage capacity models.
-- An extension doesn't allow you to create an environment.
+- An extension allows you to create an environment.
 - An extension allows admins to copy and restore environments for a maximum of 30 days while over the capacity limit.
-- Your organization can request an extension only once.
-- After the one-time extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this situation, admins should reduce storage usage and/or purchase more storage capacity.
+- Your organization can request an extension a maximum of 3 times.
+- After extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this situation, admins should reduce storage usage and/or purchase more storage capacity.
 
 ## Change log for major updates in storage
 
