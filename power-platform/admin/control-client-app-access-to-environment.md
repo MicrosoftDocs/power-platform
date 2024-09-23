@@ -37,7 +37,7 @@ App access requests can be authenticated as follows:
 1. **First-party app makes service-to-service call (application context)**  
     A first-party, Microsoft app makes a call to Dataverse, using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
    
-1. **Third-party apps registered in your Azure portal’s app registration**  
+1. **Third-party apps is registered in your Azure portal’s app registration**  
     Your custom app authenticates, using your Azure app registration’s certificate or user-token.  
 
 Client app access control can be applied to the _user and application_ context with user impersonation authentication. This is outlined in the following steps.
