@@ -85,7 +85,7 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 There are two ways to build the list of applications to manage:
 
 - [Get the list](#get-the-list-of-pre-authorized-applications) with the function **createOperationUsingWebAPI()**.
-- [Enable audit mode](#enable-audit-mode) to see the list of applications running in the environment.
+- [Turn on audit mode](#turn-on-audit-mode) to see the list of applications running in the environment.
 
 > [!NOTE]
 > The following list of apps are pre-authorized to run in a Dataverse environment.
@@ -143,7 +143,7 @@ There are two ways to build the list of applications to manage:
 If you didn't use the function to get a list of apps, you can build a list manually. If you already started a list, you can add more applications to the environment.
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
-1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace **<OrgURL>** with your own environment URL, then press **Enter**.
+1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace 'OrgURL' with your own environment URL, then press **Enter**.
 
    ```http  
    https:/<OrgURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
