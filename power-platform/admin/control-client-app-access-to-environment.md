@@ -51,15 +51,15 @@ Client app access control can be applied to the user and application context wit
       > We don’t recommend allowing a public client unless you need it needed temporarily.
 1. **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
 1. **Impersonation using a first-party app**
-   1. For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
-   1. For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
+   - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
+   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
 Client app access control isn’t applied to:
 
-- First-party apps with service-to-service calls (application context)
-- Partner apps with service-to-service calls
+- First-party apps with service-to-service calls (application context).
+- Partner apps with service-to-service calls.
 
-  To block these apps, make them inactive in the Power Platform admin center—[Manage application users in the Power Platform admin center](manage-application-users.md).
+  To block these apps, make them inactive in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
 
 ## Prerequisites
 
