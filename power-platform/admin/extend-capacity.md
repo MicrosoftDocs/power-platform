@@ -46,7 +46,7 @@ After you determine how much storage you're using, use the following steps to en
 
    > [!Note]
    > Be sure to select the correct tenant to extend the storage capacity for 30 days. 
-
+   >
    > You may extend an additional 25% of capacity on your account a maximum of 3 times.
 
 2. In the left pane, select **Resources**.
