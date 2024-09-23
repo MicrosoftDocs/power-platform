@@ -43,6 +43,7 @@ App access requests can be authenticated as follows:
 Client app access control can be applied to the _user_ and _application_ context with user impersonation authentication. This is outlined in the following steps.
 
 1. **User context with user token**
+
    1. For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
    1. To allow or block session authentication used by a Unified Interface (UCI), the user must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
    1. Features restrict access control for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
@@ -51,7 +52,9 @@ Client app access control can be applied to the _user_ and _application_ context
       > We don’t recommend allowing a public client unless you need it needed temporarily.
       
 1. **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
+  
 1. **Impersonation using a first-party app**
+
    1. For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
    1. For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
@@ -94,7 +97,8 @@ There are two ways to build the list of applications to manage:
 
 #### Get the list of pre-authorized applications
 
-1. In Power Platform admin center, select the Dataverse environment with your desired list of applications.
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Select the Dataverse environment with your desired list of applications.
 1. Open the web client.
 1. Select **F12** on your keyboard to open the developer tools.
 1. Select the **Console** tab.
