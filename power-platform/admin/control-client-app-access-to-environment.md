@@ -96,7 +96,7 @@ There are two ways to build the list of applications to manage:
 
 1. In Power Platform admin center, select the Dataverse environment with your desired list of applications.
 1. Open the web client.
-1. Select `F12` on your keyboard to open the developer tools.
+1. Select **F12** on your keyboard to open the developer tools.
 1. Select the **Console** tab.
 1. At the prompt, paste the following code snippet:
 
@@ -125,7 +125,7 @@ There are two ways to build the list of applications to manage:
 
 1. Press the **Enter** key.
 1. Select the **Network** tab.
-1. Locate and select the `RetrieveAppsWithDelegatedAccessPermissions` row.
+1. Locate and select the **RetrieveAppsWithDelegatedAccessPermissions** row.
 1. Select the **Response** tab.
 
    A list of all the pre-authorized applications in the environment is listed. You might see a list similar to this one:
