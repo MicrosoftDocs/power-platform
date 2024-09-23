@@ -1,24 +1,24 @@
 ---
-title: Control client app access to environment (preview)
-description: You can protect against data exfiltration by managing and controlling what apps can run in their Dataverse environment.
+title: Control which apps are allowed in your enviornment (preview)
+description: You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment.
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 9/20/2024
+ms.date: 9/23/2024
 search.audienceType: 
   - admin
 ---
 
-# Control client app access to environment (preview)
+# Control which apps are allowed in your enviornment (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration safeguards help prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantage.
+You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration safeguards help prevent sensitive information from unauthorized removal or extraction from your environment. This allows a business to maintain business continuity and comply with regulatory requirements.
 
-When this capability is enabled in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
+You can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
