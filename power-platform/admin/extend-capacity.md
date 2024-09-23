@@ -36,18 +36,20 @@ If your tenant is running low on available storage capacity, and you need immedi
 
 ## Prerequisites
 
-- Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of know how much more storage capacity is needed to be extended. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
+An administrator security role is required and you must have at least 1 active license.
+
+Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of know how much more storage capacity is needed to be extended. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Extend Dataverse Capacity 
-
-After you determine how much storage you're using, use the following steps to enable an additional 25% of capacity to your tenant.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
 
    > [!Note]
    > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
    >
    > - You can extend capacity on your account a maximum of 3 times.
+
+After you determine how much storage you're using, use the following steps to enable an a capacity extension.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/resources/capacity).
 
 2. In the left pane, select **Resources**.
 
