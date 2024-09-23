@@ -1,5 +1,5 @@
 ---
-title: Extend Microsoft Dataverse capacity for your tenant
+title: Extend Dataverse capacity for 30 days
 description: Learn about extending Microsoft Dataverse storage capacity.
 author: sericks007
 ms.subservice: admin
