@@ -24,7 +24,7 @@ You can configure which apps are allowed or blocked in your environment. Malicio
 
 ## How does app access control work?
 
-App access control is performed at the Dataverse Authentication layer. Learn more in [Authenticating to Power Platform services](security/authenticate-services.md). Dataverse authentication validates the client app ID in the user’s token against a list of allowed and blocked apps configured for the environment. The authentication either grants or denies the user’s app access to the environment.  
+App access control is performed at the Dataverse authentication layer. Learn more in [Authenticating to Power Platform services](security/authenticate-services.md). Dataverse authentication validates the client app ID in the user’s token against a list of allowed and blocked apps configured for the environment. The authentication either grants or denies the user’s app access to the environment.  
 
 App access requests can be authenticated as follows:
 
