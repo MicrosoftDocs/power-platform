@@ -63,37 +63,34 @@ Client app access control isn’t applied to:
 
 ## Prerequisites
 
-To complete the procedures in this article, the followng prerequisites must be met.
+Complete the folloiwng prerequisites.
 
-- Your environment must be a managed environment. Learn more in [Managed environment overview](managed-environment-overview.md).
-- [Enable auditing in the environment](#enable-auditing-in-the-environment).
-- [Create an appliction list in the environment](#create-an-application-list-in-the-environment).
-- Set organization settings (requires system administrator security role).
+### Verify that your enviroment is a Managed Environment
+Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
 
 ### Enable auditing in the environment
-
-In the Power Platform admin center:
-
-1. Go to **Environments** > **YourEnvironment** > **Settings** > **Audit and logs** > **Audit settings**.
-1. In the **Auditing** section, check the boxes for **Start Auditing**, **Log access**, and **Read logs**.
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
+1. In the navigatio pane, select **Environments**. Then select your specific environment.
+1. Select **Settings** in the command bar.
+1. Select **Audit and logs** > **Audit settings**.
+1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
 1. Select **Save**.
 
 ### Create an application list in the environment
-
 There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications can be different between different environments. To manage app access control, you must first build the list of applications that can be managed.
 
 There are two ways to build the list of applications to manage:
 
-- [Get the list](#get-the-list-of-pre-authorized-applications) with the function `createOperationUsingWebAPI()`.
+- [Get the list](#get-the-list-of-pre-authorized-applications) with the function **createOperationUsingWebAPI()**.
 - [Enable audit mode](#enable-audit-mode) to see the list of applications running in the environment.
 
 > [!NOTE]
 > The following list of apps are pre-authorized to run in a Dataverse environment.
 >
-> - All Microsoft apps that are pre-authorized to acquire OBO (On-Behalf-Of) tokens. For more information, see [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
+> - All Microsoft apps that are pre-authorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
 > - Application users: [Special system users and application users](/power-platform/admin/system-application-users).
-> - All legacy apps that can dynamically acquire OBO tokens.
-> - All apps with `prvActOnBehalfOfAnotherUser` privilege and those using headers to impersonate users. For more information, see [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
+> - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
+> - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
 
 #### Get the list of pre-authorized applications
 
