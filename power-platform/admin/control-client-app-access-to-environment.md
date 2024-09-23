@@ -97,7 +97,7 @@ There are two ways to build the list of applications to manage:
 
 #### Get the list of pre-authorized applications
 
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select the Dataverse environment with your desired list of applications.
 1. Open the web client.
 1. Select **F12** on your keyboard to open the developer tools.
@@ -132,40 +132,42 @@ There are two ways to build the list of applications to manage:
 1. Locate and select the **RetrieveAppsWithDelegatedAccessPermissions** row.
 1. Select the **Response** tab.
 
-   A list of all the pre-authorized applications in the environment is listed. You might see a list similar to this one:
+   A list of all the pre-authorized applications in the environment is listed. You might see a list similar to this list.
 
    :::image type="content" source="media/control-client-app-access-to-environment/pre-authorized-apps.png" alt-text="Screenshot that shows a list of pre-authorized apps." lightbox="media/control-client-app-access-to-environment/pre-authorized-apps.png":::
+
 1. Copy the list of applications and paste it into a text editor such as Notepad.
 
 #### Build the list of applications to manage their access
 
 If you didn't use the function to get a list of apps, you can build a list manually. If you already started a list, you can add more applications to the environment.
 
-1. From Power Platform admin center, select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
-1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<orgurl>` with your own environment URL, then press **Enter**.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
+1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace **<OrgURL>** with your own environment URL, then press **Enter**.
 
    ```http  
-   https:/<orgurl>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
+   https:/<OrgURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
    ```
 
 1. Select **+ New**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/new-application.png" alt-text="Screenshot that shows the location of the New button at the URL destination.":::
+   
 1. On the new screen, enter an **ApplicationId**.
 1. Enter a **Name**.
 1. Select **Save**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/new-application-form.png" alt-text="Screenshot showing the location of the ApplicationId and Name fields. The image also shows where the Save button is located.":::
 
-Using this **New Application** page, you can add apps from the [commonly used apps list](#commonly-used-apps-you-might-want-to-allow), for example to add Dataverse, enter `00000007-0000-0000-c000-000000000000` as the **ApplicationId**.
+Using this **New Application** page, you can add apps from the [commonly used apps list](#commonly-used-apps-you-might-want-to-allow). For example, to add Dataverse, enter **00000007-0000-0000-c000-000000000000** as the **ApplicationId**.
 
 #### Allow or block apps
 
-When considering which apps you want to pre-authorize for your list, here are some commonly used apps that are safe to allow and powerful export apps that are better to block.
-
 ##### Commonly used apps you might want to allow
 
-| Application ID | Application Name |
+Here are some commonly used apps that are safe to allow.
+
+| Application ID | Application name |
 |----------------|------------------|
 | 00000007-0000-0000-c000-000000000000 | Dataverse |
 | 065d9450-1e87-434e-ac2f-69af271549ed | PowerPlatformAdminCenter |
@@ -205,7 +207,7 @@ When considering which apps you want to pre-authorize for your list, here are so
 
 These apps are powerful exporters of data. Blocking them prevents possible data exfiltration of sensitive information.
 
-| Application ID | Application Name |
+| Application ID | Application name |
 |----------------|------------------|
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Excel client |
 | d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
@@ -213,11 +215,11 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 
-#### Enable audit mode
+#### Turn on audit mode
 
-We recommend that you enable the audit mode for at least one week to get the list of apps that your users are running in an environment.
+We recommend that you turn on audit mode, for at least one week, to get the list of apps that your users are running in an environment.
 
-Using this *audit log* list, you can determine which apps you want to allow or block. Be sure to enable your environment as a managed environment.
+Using this *audit log* list, you can determine which apps you want to allow or block.
 
 1. On the **Security** page, locate the **Client application access control** card and select **Manage client application access**.
 1. Select the environment where you want to manage app access.
@@ -232,7 +234,7 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 > [!TIP]
 > In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.
 
-## Enable app access enforcement mode
+## Turn on app access enforcement mode
 
 Enabling this mode starts blocking apps not allowed or apps that only allow approved apps. You can select apps to enable allowed or blocked access. To make changes to access, you must have your environment enabled as a managed environment.
 
@@ -241,40 +243,42 @@ Enabling this mode starts blocking apps not allowed or apps that only allow appr
 1. Select **Enable client application access**.
 1. Select **Enabled** under the **Access control** dropdown.
 1. Select a Dataverse application, then select one of these options:
-   - **Allow**—to allow access
-   - **Block**—to deny access
+   - **Allow** to allow access
+   - **Block** to deny access
 1. Select **Save**.
 
    > [!NOTE]
    > Enforcement mode might take up to an hour to take effect, after you update the configuration settings.
 
-## Enable app access with security role enforcement mode
+## Turn on app access with security role enforcement mode
 
 Enabling this mode starts blocking apps that aren't allowed or only allows approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. To make changes to access, you must have your environment enabled as a managed environment.
 
-1. On the Security page, locate the **Client application access control** card and select **Manage client application access**.
+1. On the **Security** page, locate the **Client application access control** card and select **Manage client application access**.
 1. Select the environment where you want to manage app access.
 1. Select **Enable client application access**.
 1. Select **Enabled for roles** in the **Access control** dropdown.
 1. Select an application, then select **Allow**.
 1. Once your app is selected, select **Manage security roles**.
 1. Select one or more desired security roles.
-1. Select Save.
+1. Select **Save**.
 
    You return to the **Enable client application access** page.
 
 > [!NOTE]
 > This mode might take up to an hour to take effect, after you update the configuration settings.
 
-## Disable app access control
+## Turn off app access control
 
-You can remove app access control by disabling the feature. With this setting, there are no restrictions on apps that run in an environment. To make changes to access, you must have your environment enabled as a managed environment.
+You can remove app access control by turning off the feature. With this setting, there are no restrictions on apps that run in an environment. 
+
+To make changes to access, your environment must be a Managed Environment.
 
 1. On the **Security** page, locate the **Client application access control** card and select **Manage client application access**.
 1. Select the environment where you want to manage app access.
 1. Select **Enable client application access**.
 1. Select **Disabled** in the **Access control** dropdown.
-1. Select Save.
+1. Select **Save**.
 
 > [!TIP]
 > If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the access control is set to **Disabled**. There are no app restrictions in this environment.
@@ -315,7 +319,7 @@ The audit settings for an environment must be enabled, including the **Log acces
 1. Confirm the list of apps that you want to allow to run in the environment.
 1. Set the feature setting to **Enabled for roles**.
 
-## See also
+## Related information
 
 Application IDs of commonly used Microsoft applications:
 
