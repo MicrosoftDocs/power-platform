@@ -25,9 +25,13 @@ If your tenant is running low on available storage capacity, and you need immedi
 
 > [!NOTE]
 > The Universal License Terms for Online Services apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+>
 > Your organization must have the right licenses for the storage you use:
+>
 > If you use more than your documented entitlements or usage limits, you must buy additional licenses.
+>
 > If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. 
+>
 > Microsoft provides reasonable notice before suspending your online service.
 
 ## Prerequisites
