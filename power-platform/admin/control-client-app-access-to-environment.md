@@ -31,7 +31,7 @@ App access requests can be authenticated as follows:
 1. **User signs in to the system.**  
     The user signs in to the system, such as Dynamics 365 Sales, with their credentials.
    
-1. **App makes a call to Dataverse.**  
+1. **User signs in to first-party app.**  
     The user signs in to a first-party, Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
    
 1. **First-party app with service-to-service call (application context)**  
@@ -63,12 +63,9 @@ Client app access control isn’t applied to:
 
 ## Prerequisites
 
-Your environment must be a managed environment—[Managed environment overview](managed-environment-overview.md).
+To complete the procedures in this article, the followng prerequisites must be met.
 
-The following paragraphs show you how to set up the needed prerequisites.
-
-In summary, the system admin permissions should let you:
-
+- Your environment must be a managed environment. Learn more in [Managed environment overview](managed-environment-overview.md).
 - [Enable auditing in the environment](#enable-auditing-in-the-environment).
 - [Create an appliction list in the environment](#create-an-application-list-in-the-environment).
 - Set organization settings (requires system administrator security role).
