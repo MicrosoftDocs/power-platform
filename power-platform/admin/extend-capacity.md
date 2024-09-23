@@ -61,7 +61,7 @@ After you determine how much storage you're using, use the following steps to en
 
 6. Select **Confirm**.
 
-7. A banner will display the temporary capacity extension has beeen successfully enabled. 
+7. A banner displays the temporary capacity extension has is enabled. 
 
    :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
 
