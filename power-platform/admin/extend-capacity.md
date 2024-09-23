@@ -63,4 +63,4 @@ After you determine how much storage you're using, use the following steps to en
 
 After enabling the extension, for the next 30 days the extra storage capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
-   :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-banner-30-days.png"::::::
+   :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png"::::::
