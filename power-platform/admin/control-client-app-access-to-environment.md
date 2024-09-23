@@ -40,7 +40,7 @@ App access requests can be authenticated as follows:
 1. **Third-party apps is registered in your Azure portal’s app registration**  
     Your custom app authenticates, using your Azure app registration’s certificate or user-token.  
 
-Client app access control can be applied to the _user _and_ application_ context with user impersonation authentication. This is outlined in the following steps.
+Client app access control can be applied to the _user_ and _application_ context with user impersonation authentication. This is outlined in the following steps.
 
 1. **User context with user token**
    1. For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
