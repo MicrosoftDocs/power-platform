@@ -220,6 +220,10 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 
+(Add procedure from Word doc.)
+(Add a small paragraph explaining there are 4 different modes: enabled, disabled, audit mode, enabled for roles)
+(Put recommended steps, from below)
+
 ## Turn on audit mode
 
 We recommend that you turn on audit mode, for at least one week, to get the list of apps that your users are running in an environment.
@@ -239,9 +243,9 @@ You must be a Power Platform admin, a Dynamics 365 admin,
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
 
 > [!TIP]
-> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.
+> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  To Do: Put the link to the audit mode example blelow.
 
-## Turn on app access enforcement mode
+## Turn on app enabled mode
 
 Enabling this mode starts blocking apps not allowed or apps that only allow approved apps. You can select apps to enable allowed or blocked access. To make changes to access, you must have your environment enabled as a managed environment.
 
@@ -257,8 +261,7 @@ Enabling this mode starts blocking apps not allowed or apps that only allow appr
    > [!NOTE]
    > Enforcement mode might take up to an hour to take effect, after you update the configuration settings.
 
-## Turn on app access with security role enforcement mode
-
+## Turn on enabled for security roles
 Enabling this mode starts blocking apps that aren't allowed or only allows approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. To make changes to access, you must have your environment enabled as a managed environment.
 
 1. On the **Security** page, locate the **Client application access control** card and select **Manage client application access**.
@@ -275,7 +278,7 @@ Enabling this mode starts blocking apps that aren't allowed or only allows appro
 > [!NOTE]
 > This mode might take up to an hour to take effect, after you update the configuration settings.
 
-## Turn off app access control
+## Turn off app access control (disabled)
 
 You can remove app access control by turning off the feature. With this setting, there are no restrictions on apps that run in an environment. 
 
@@ -302,7 +305,7 @@ If you choose **Audit only** mode, only telemetry is logged for failures and req
 
 The audit settings for an environment must be enabled, including the **Log access** option.
 
-## Retrieve app access audit log
+### Retrieve app access audit log
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
 1. Select **Environments**, and then select the environment with the enabled feature.
@@ -318,7 +321,7 @@ The audit settings for an environment must be enabled, including the **Log acces
 
    Your filtered audits appear.
 
-### Recommended steps
+### Recommended steps (move up in the article
 
 1. Enable audit mode in your nonproduction environment.
 1. Review the audit log for the apps that are running in the environment to get the list of apps whose access control you want to manage.
