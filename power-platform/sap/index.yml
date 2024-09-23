@@ -158,8 +158,8 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
       - componentType: icon-card
-        title: SAP security administrator
-        summary: How to understand and administer Power Platform compared to SAP. (later)
+        title: Governance and security administrator
+        summary: How to govern and secure Power Platform and SAP integration. (Ignite)
         url: https://www.microsoft.com/
         icon:
           componentType: image
@@ -362,10 +362,10 @@ sections:
         title: SAP on Azure
         summary: Learn about running SAP on Azure.
         url: https://learn.microsoft.com/en-us/azure/sap/
-      - componentType: summary-card
-        title: Power Platform and SAP FAQ
-        summary: Get answers to common questions about Power Platform and SAP integration. (Ignite)
-        url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/faqs?source=recommendations
+      # - componentType: summary-card
+      #   title: Power Platform and SAP FAQ
+      #   summary: Get answers to common questions about Power Platform and SAP integration. (Ignite)
+      #   url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/faqs?source=recommendations
       # - componentType: summary-card
       #   title: Copilot Lab
       #   summary: Learn how to use Copilot on your everyday apps.
