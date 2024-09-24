@@ -31,7 +31,7 @@ There are four different ways that a user can authenticate.
 - **User context**  
     The user signs in to the system, such as Dynamics 365 Sales, with their credentials.
    
-- **Application context with user impersonation**
+- **Application context with user impersonation** <br>
     The user signs in to a first-party, Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
    
 - **First-party app with service-to-service call (application context)**  
