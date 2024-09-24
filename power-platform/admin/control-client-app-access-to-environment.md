@@ -237,10 +237,10 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
  
 ## Modes of app access control
 After you turn on the app access control feature, there are four different modes:
-- Turn on audit mode
-- Turn on enabled mode
-- Turn on enabled for roles mode
-- Turn off app access 
+- [Turn on audit mode](#turn-on-audit-mode)
+- [Turn on enabled mode](#turn-on-enabled-mode)
+- [Turn on enabled for roles mode](#turn-on-enabled-for-roles-mode)
+- [Turn off app access](#turn-off-app-access-control)
 
 ## Recommended steps 
 
