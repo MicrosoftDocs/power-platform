@@ -96,7 +96,7 @@ There are two ways to build the list of applications to manage:
 > The following list of apps are pre-authorized to run in a Dataverse environment.
 >
 > - All Microsoft apps that are pre-authorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
-> - Application users app. Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
+> - Application users app - Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
 > - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
 > - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
 
