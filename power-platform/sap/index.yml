@@ -25,7 +25,7 @@ sections:
      darkImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-dark-copilot-learning-hub-2x.png
 # Start your Power Platform and SAP learning journey
   - componentType: cards
-    isShadowless: false
+    #isShadowless: false
     backgroundColor: alternating-grey
     title: Start your Power Platform and SAP journey
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
@@ -33,7 +33,7 @@ sections:
     - componentType: card
       title: "Understand Power Platform SAP integration"
       summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes. (Ignite)
-      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: Explore Power Platform and SAP integration
@@ -41,7 +41,7 @@ sections:
     - componentType: card
       title: "Get started with Power Platform"
       summary: Learn about the Power Platform and how to start using it in your environments.
-      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: Power Platform guidance documentation
@@ -52,7 +52,7 @@ sections:
     - componentType: card
       title: "Connect to SAP"
       summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
-      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: SAP on Power Platform
@@ -63,7 +63,7 @@ sections:
     - componentType: card
       title: "Leverage Power Platform SAP templates"
       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: Get started with the SAP Procurement template
