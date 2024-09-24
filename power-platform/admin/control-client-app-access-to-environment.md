@@ -34,10 +34,10 @@ There are four different ways that a user can authenticate.
 - **Application context with user impersonation**
     The user signs in to a first-party, Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
    
-- **First-party app with service-to-service call (application context).**  
+- **First-party app with service-to-service call (application context)**  
     A first-party, Microsoft app makes a call to Dataverse, using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
    
-- **Third-party apps registered in your Azure portal’s app registration.**  
+- **Third-party apps registered in your Azure portal’s app registration**  
     Your custom app authenticates, using your Azure app registration’s certificate or user-token.  
 
 Here are examples of how client app access control works in the _user_ and _application_ context authentication.
