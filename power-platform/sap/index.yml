@@ -31,8 +31,8 @@ sections:
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
-      title: "Understand Power Platform SAP integration"
-      summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes. (Ignite)
+      title: "Understand Power SAP integration"
+      summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally automate their business processes. (Ignite)
       #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
@@ -61,7 +61,7 @@ sections:
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
     - componentType: card
-      title: "Leverage Power Platform SAP templates"
+      title: "Leverage Power SAP templates"
       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
       #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
@@ -158,7 +158,7 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
       - componentType: icon-card
-        title: Governance and security administrator
+        title: Governance Administrator
         summary: How to govern and secure Power Platform and SAP integration. (Ignite)
         url: https://www.microsoft.com/
         icon:
@@ -194,7 +194,7 @@ sections:
           src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
       - componentType: icon-card
         title: Partner
-        summary: How to partner with Microsoft to integrate customer Power Platform and SAP environments. (later)
+        summary: Partner with Microsoft to integrate customer Power and SAP environments. (later)
         url: https://www.microsoft.com
         icon:
           componentType: image
@@ -266,7 +266,7 @@ sections:
         url: https://learn.microsoft.com/en-us/power-apps/teams/create-apps-overview
       - componentType: summary-card
         title: Power Platform Administration
-        summary: Use Power Platform admin center to manage environments and settings for Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, and customer engagement apps.
+        summary: Use Power Platform admin center to manage environments Microsoft Power Platform settings.
         url: https://learn.microsoft.com/en-us/power-platform/admin/
       - componentType: summary-card
         title: Power Platform solutions
@@ -274,7 +274,7 @@ sections:
         url: https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm
       - componentType: summary-card
         title: Power Platform Application Lifecycle Management (ALM)
-        summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform (Power Apps, Power Automate, Microsoft Dataverse, Microsoft Copilot Studio).
+        summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform.
         url: https://learn.microsoft.com/en-us/power-platform/alm/
       # - componentType: summary-card
       #   title: Power Platform build tools
@@ -343,8 +343,8 @@ sections:
         summary: Learn the business value and product capabilities of Microsoft Power Platform. 
         url: https://learn.microsoft.com/en-us/training/courses/pl-900t00
       - componentType: summary-card
-        title: "Module: Connect Power Platform to SAP on Azure"
-        summary: Learn to Connect Power BI Desktop to SAP HANA on a Windows computer and connect Power Automate and Power Apps to SAP systems.
+        title: "Connect Power Platform to SAP on Azure"
+        summary: Learn to Connect Power BI Desktop SAP HANA on Windows and Power Automate and Power Apps to SAP.
         url: https://learn.microsoft.com/en-us/training/modules/connect-power-platform-to-sap-azure/?source=recommendations
 # Additional links section
   - componentType: grid
