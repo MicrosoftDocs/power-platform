@@ -151,14 +151,14 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
       - componentType: icon-card
-        title: Power Platform Administrator
+        title: Power Platform administrator
         summary: Guidance on SAP access methods and a directory of the most used SAP data. (later)
         url: /collections/4gmb2m2k8n6k7
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
       - componentType: icon-card
-        title: Governance Administrator
+        title: Governance administrator
         summary: How to govern and secure Power Platform and SAP integration. (Ignite)
         url: https://www.microsoft.com/
         icon:
@@ -172,14 +172,14 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
-        title: SAP Functional consultant
+        title: SAP functional consultant
         summary: How to build Power Apps integrated with SAP (later)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
       - componentType: icon-card
-        title: SAP Technical Consultant
+        title: SAP technical Consultant
         summary: Working with Power Platform connections (Ignite)
         url: https://www.microsoft.com/
         icon:
