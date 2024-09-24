@@ -54,7 +54,7 @@ Here are examples of how client app access control works in the _user_ and _appl
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
   
 - **Impersonation using a first-party app**
-
+<br>
   - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
