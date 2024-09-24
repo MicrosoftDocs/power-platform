@@ -223,22 +223,19 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 ## Turn on the app access control feature
 1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2.	Add a tab in the browser and paste this URL: **https://admin.powerplatform.microsoft.com/security?ppac.enableFeatureFlagsPanel=true** 
-3.	Select the airplane icon on the title bar to show the PPAC ECS Feature Flags pane.
+3.	Select the airplane icon on the title bar to show the **PPAC ECS Feature Flags** pane.
 
     :::image type="content" source="media/airplane-icon.png" alt-text="The airplane icon in the title bar of the Power Platform admin center.":::
  
-4.	Toggle the EnableClientApplicationAccessControl feature on.
+4.	Turn the **EnableClientApplicationAccessControl** feature on.
 
     :::image type="content" source="media/app-access-control-feature.png" alt-text="Turn on the EnableClientApplicationAccessControl feature.":::
 
-5.	You now see a Client application access control card added to your Security page.
+5.	You now see a **Client application access control** card added to your **Security** page in the Power Platform admin center.
 
     :::image type="content" source="media/client-application-access-control-card.png" alt-text="The **Client application access control** card in the **Security** page.":::
  
-
 ## Modes of app access control
-Add a small paragraph explaining there are 4 different modes: enabled, disabled, audit mode, enabled for roles)
-
 After you turn on the app access control feature, there are four different modes:
 - Turn on audit mode
 - Turn on enabled mode
