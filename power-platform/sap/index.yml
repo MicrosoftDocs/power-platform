@@ -33,7 +33,7 @@ sections:
     - componentType: card
       title: "Understand Power Platform SAP integration"
       summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally transform and automate their business processes. (Ignite)
-      # imageUrl: /copilot/media/copilot/copilot-learning-hub/step-1.png
+      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: Explore Power Platform and SAP integration
@@ -41,7 +41,7 @@ sections:
     - componentType: card
       title: "Get started with Power Platform"
       summary: Learn about the Power Platform and how to start using it in your environments.
-      # imageUrl: /copilot/media/copilot/copilot-learning-hub/step-2.png
+      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: Power Platform guidance documentation
@@ -52,7 +52,7 @@ sections:
     - componentType: card
       title: "Connect to SAP"
       summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
-      # imageUrl: /copilot/media/copilot/copilot-learning-hub/step-3.png
+      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: SAP on Power Platform
@@ -63,7 +63,7 @@ sections:
     - componentType: card
       title: "Leverage Power Platform SAP templates"
       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-      # imageUrl: /copilot/media/copilot/copilot-learning-hub/step-4.png
+      imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
           text: Get started with the SAP Procurement template
