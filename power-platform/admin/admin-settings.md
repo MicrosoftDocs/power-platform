@@ -41,7 +41,10 @@ These security settings are managed in the Power Platform admin center.
 - [Dataverse teams management](manage-teams.md)
 - [Assign security roles to users in an environment that has a Dataverse database](database-security.md#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database)
 - [Manage application users](manage-application-users.md)
+- [Create users](create-users.md)
 - [Field-level security to control access](field-level-security.md)
+- [Manage business units](create-edit-business-units.md)
+- [Hierarchy security to control access](hierarchy-security.md)
 
 ## App settings
 
