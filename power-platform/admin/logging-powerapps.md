@@ -65,8 +65,8 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Admin allowed third party apps | When third party apps were allowed by the admin |
 
 
-## Base schema
-Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps. To identify Power Apps activities, look for schema property **powerplatform.analytics.resource.type** with value **PowerAppsApp**. Below is an example of the schema.
+## Schema
+Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. Below is an example of the activity specific schema.
 
 ```
 [
