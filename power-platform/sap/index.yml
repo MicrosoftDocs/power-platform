@@ -140,7 +140,7 @@ sections:
   #         url: /shows/learn-live/microsoft-copilot-for-security/
 # Learn Copilot based on your role
   - componentType: grid
-    title: Find resources about Power Platform and SAP for your role
+    title: Find Power Platform and SAP resources for your role
     # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
     blocks:
       - componentType: icon-card
@@ -179,7 +179,7 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
       - componentType: icon-card
-        title: SAP technical Consultant
+        title: SAP technical consultant
         summary: Working with Power Platform connections (Ignite)
         url: https://www.microsoft.com/
         icon:
