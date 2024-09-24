@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 9/23/2024
+ms.date: 9/24/2024
 search.audienceType: 
   - admin
 ---
@@ -269,7 +269,32 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
 
 > [!TIP]
-> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in [Audit only mode (identify apps that allow or block)](audit-only-mode-identify-apps-that-allow-or-block). 
+> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in [Audit only mode (identify apps that allow or block)](audit-only-mode-identify-apps-that-allow-or-block).
+
+#### Audit mode (identify apps that allow or block)
+
+If you choose **Audit only** mode, only telemetry is logged for failures and requests aren’t rejected.
+
+The audit settings for an environment must be enabled, including the **Log access** option.
+
+#### Retrieve app access audit log
+
+1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
+1. Select **Environments**, and then select the environment with the enabled feature.
+1. Select **Settings**.
+
+   :::image type="content" source="media/control-client-app-access-to-environment/settings-button.png" alt-text="Screenshot that shows the location of the settings button once you select an environment.":::
+   
+1. Select **Audit and logs** and choose **Audit summary view**.
+1. Select **Enable/Disable Filters** to review list heading dropdown capabilities.
+1. Select the dropdown arrow near the **Event** heading, then find and check **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
+
+   :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
+   
+1. Select **OK**.
+
+   Your filtered audits appear.
+
 ## Turn on enabled mode
 
 The enabled mode starts blocking apps that aren't allowed or apps that only allow approved apps. You can select apps to either have **Allowed** or **Blocked** access.
@@ -322,36 +347,11 @@ You can remove app access control by turning off the feature. With this setting,
 > [!TIP]
 > If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the access control is set to **Disabled**. There are no app restrictions in this environment.
 
-## App denied user error
+## Error message: App denied user error
 
 Users see the following error message if they try to run an app not allowed:  
 
 *Access to the Dataverse API is restricted for this application ID.*
-
-## Audit only mode (identify apps that allow or block)
-
-If you choose **Audit only** mode, only telemetry is logged for failures and requests aren’t rejected.
-
-The audit settings for an environment must be enabled, including the **Log access** option.
-
-### Retrieve app access audit log
-
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
-1. Select **Environments**, and then select the environment with the enabled feature.
-1. Select **Settings**.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/settings-button.png" alt-text="Screenshot that shows the location of the settings button once you select an environment.":::
-   
-1. Select **Audit and logs** and choose **Audit summary view**.
-1. Select **Enable/Disable Filters** to review list heading dropdown capabilities.
-1. Select the dropdown arrow near the **Event** heading, then find and check **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
-   
-1. Select **OK**.
-
-   Your filtered audits appear.
-
 
 ## Related information
 
