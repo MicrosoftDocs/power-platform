@@ -359,6 +359,4 @@ The audit settings for an environment must be enabled, including the **Log acces
 
 ## Related information
 
-Application IDs of commonly used Microsoft applications:
-
 [Verify first-party Microsoft applications in sign-in reports](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications)
