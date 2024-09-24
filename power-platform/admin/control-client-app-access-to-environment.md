@@ -234,6 +234,14 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 5.	You now see a **Client application access control** card added to your **Security** page in the Power Platform admin center.
 
     :::image type="content" source="media/client-application-access-control-card.png" alt-text="The **Client application access control** card in the **Security** page.":::
+
+## Recommended steps 
+
+1. [Turn on audit mode](#turn-on-audit-mode) in your nonproduction environment.
+1. Review the audit log for the apps that are running in the environment to get the list of apps whose access control you want to manage.
+1. Repeat steps 1-2 in your production environment.
+1. Confirm the list of apps that you want to allow to run in the environment.
+1. Set the feature setting to **Enabled for roles**.
  
 ## Modes of app access control
 After you turn on the app access control feature, there are four different modes:
@@ -241,14 +249,6 @@ After you turn on the app access control feature, there are four different modes
 - [Turn on enabled mode](#turn-on-enabled-mode)
 - [Turn on enabled for roles mode](#turn-on-enabled-for-roles-mode)
 - [Turn off app access](#turn-off-app-access-control)
-
-## Recommended steps 
-
-1. Turn on audit mode in your nonproduction environment.
-1. Review the audit log for the apps that are running in the environment to get the list of apps whose access control you want to manage.
-1. Repeat these steps in your production environment.
-1. Confirm the list of apps that you want to allow to run in the environment.
-1. Set the feature setting to **Enabled for roles**.
 
 ### Turn on audit mode
 
@@ -269,8 +269,7 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
 
 > [!TIP]
-> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  To Do: Put the link to the audit mode example blelow.
-
+> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in...
 ## Turn on enabled mode
 
 The enabled mode starts blocking apps that aren't allowed or apps that only allow approved apps. You can select apps to either have **Allowed** or **Blocked** access.
@@ -290,7 +289,7 @@ The enabled mode starts blocking apps that aren't allowed or apps that only allo
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
 
 ## Turn on enabled for roles mode
-Enabling this mode starts blocking apps that aren't allowed or only allows approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. To make changes to access, you must have your environment enabled as a managed environment.
+The enabled for roles mode starts blocking apps that aren't allowed or only allows approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
@@ -312,11 +311,9 @@ Enabling this mode starts blocking apps that aren't allowed or only allows appro
 
 You can remove app access control by turning off the feature. With this setting, there are no restrictions on apps that run in an environment. 
 
-To make changes to access, your environment must be a Managed Environment.
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-2. Locate the **Client application access control** card and select **Manage client application access**.
+1. Locate the **Client application access control** card and select **Manage client application access**.
 1. Select the environment where you want to manage app access.
 1. Select **Enable client application access**.
 1. Select **Disabled** in the **Access control** dropdown.
