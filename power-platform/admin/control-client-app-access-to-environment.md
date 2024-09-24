@@ -244,9 +244,9 @@ After you turn on the app access control feature, there are four different modes
 
 ## Recommended steps 
 
-1. Enable audit mode in your nonproduction environment.
+1. Turn on audit mode in your nonproduction environment.
 1. Review the audit log for the apps that are running in the environment to get the list of apps whose access control you want to manage.
-1. Repeat these steps in your UAT/Production environment.
+1. Repeat these steps in your production environment.
 1. Confirm the list of apps that you want to allow to run in the environment.
 1. Set the feature setting to **Enabled for roles**.
 
@@ -273,7 +273,7 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 ## Turn on enabled mode
 
-Enabling this mode starts blocking apps not allowed or apps that only allow approved apps. You can select apps to enable allowed or blocked access. To make changes to access, you must have your environment enabled as a managed environment.
+The enabled mode starts blocking apps that aren't allowed or apps that only allow approved apps. You can select apps to either have **Allowed** or **Blocked** access.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
