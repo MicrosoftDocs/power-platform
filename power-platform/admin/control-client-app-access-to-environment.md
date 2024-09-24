@@ -76,8 +76,8 @@ There are two Power Platform related service admin roles you can assign to provi
 ### Verify that your enviroment is a Managed Environment
 Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
 
-### Enable auditing in the environment
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
+### Turn on auditing in the environment
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
 1. In the navigatio pane, select **Environments**. Then select your specific environment.
 1. Select **Settings** in the command bar.
 1. Select **Audit and logs** > **Audit settings**.
