@@ -220,9 +220,26 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 
-(Add procedure from Word doc.)
-(Add a small paragraph explaining there are 4 different modes: enabled, disabled, audit mode, enabled for roles)
-(Put recommended steps, from below)
+### Turn on the app access control feature
+1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2.	Add a tab in the browser and paste this URL: **https://admin.powerplatform.microsoft.com/security?ppac.enableFeatureFlagsPanel=true** 
+3.	Select the airplane icon on the title bar to show the PPAC ECS Feature Flags pane.
+
+    :::image type="content" source="media/airplane-icon.png" alt-text="The airplane icon in the title bar of the Power Platform admin center.":::
+ 
+4.	Toggle the EnableClientApplicationAccessControl feature on.
+
+    :::image type="content" source="media/app-access-control-feature.png" alt-text="Turn on the EnableClientApplicationAccessControl feature.":::
+
+5.	You now see a Client application access control card added to your Security page.
+
+    :::image type="content" source="media/client-application-access-control-card.png" alt-text="The **Client application access control** card in the **Security** page.":::
+ 
+
+## (Add a small paragraph explaining there are 4 different modes: enabled, disabled, audit mode, enabled for roles)
+
+
+## (Put recommended steps, from below)
 
 ## Turn on audit mode
 
