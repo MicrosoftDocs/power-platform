@@ -67,9 +67,9 @@ Your data can only be accessed by Microsoft personnel with elevated access permi
 
 All data is handled as per the Copilot data security and privacy guidelines explained in [FAQ for Copilot data security and privacy in Microsoft Power Platform](faqs-copilot-data-security-privacy.md).
 
-## What about Customer Lockbox?
+## What about Customer Lockbox and customer-managed keys?
 
-[Customer Lockbox](admin/about-lockbox.md) won't apply to the access and manual review of customer data shared using this setting.
+[Customer Lockbox](admin/about-lockbox.md) and [customer-managed keys](/admin/customer-managed-key.md) won't apply to the access and manual review of customer data shared using this setting.
 
 ### Related content
 
