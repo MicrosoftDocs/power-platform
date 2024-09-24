@@ -435,7 +435,7 @@ Max asynchronous wait time in minutes. The default value is 60 minutes.
 
 #### `--path` `-p`
 
-Path to solution zip file. If not specified, assumes the current folder is a cdsproj project.
+Path to solution zip file. If not specified, assumes the current folder is a cdsproj project. If `SolutionPackageType` in cdsproj file is set to `Both`, the managed solution is used by default.
 
 #### `--publish-changes` `-pc`
 
