@@ -269,7 +269,7 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
 
 > [!TIP]
-> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in...
+> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in [Audit only mode (identify apps that allow or block)](audit-only-mode-identify-apps-that-allow-or-block). 
 ## Turn on enabled mode
 
 The enabled mode starts blocking apps that aren't allowed or apps that only allow approved apps. You can select apps to either have **Allowed** or **Blocked** access.
@@ -341,11 +341,13 @@ The audit settings for an environment must be enabled, including the **Log acces
 1. Select **Settings**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/settings-button.png" alt-text="Screenshot that shows the location of the settings button once you select an environment.":::
+   
 1. Select **Audit and logs** and choose **Audit summary view**.
 1. Select **Enable/Disable Filters** to review list heading dropdown capabilities.
 1. Select the dropdown arrow near the **Event** heading, then find and check **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
+   
 1. Select **OK**.
 
    Your filtered audits appear.
