@@ -22,7 +22,7 @@ sections:
     heroImage:
      componentType: hero-image
      lightImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-light-copilot-learning-hub-2x.png
-     darkImageSrc: /power-platform/media/hub-page/toolkitPOC.png
+     darkImageSrc: /power-platform/media/hub-page/toolkitpoc.png
 # Start your Power Platform and SAP learning journey
   - componentType: cards
     isShadowless: false
