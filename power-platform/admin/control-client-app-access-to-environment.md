@@ -69,7 +69,7 @@ Client app access control isn’t applied to the following apps:
 Complete the following prerequisites.
 
 ### Verify your role
-There are two Power Platform related service admin roles you can assign to provide a high level of admin management.
+There are two Power Platform related service admin roles you can assign to provide a high level of admin management:
 - Power Platform admin
 - Dynamics 365 admin
 
