@@ -78,7 +78,7 @@ Straightforward integration facilitates real-time data access and updates for th
 
 #### Technical complexity challenges
 
-Accurate responses rely on a well-architected intelligent application workload. As part of your feasibility assessment, evaluate the reliability and accuracy of the responses provided by the intelligent workload. Consider how to to optimize, monitor, and improve the generated responses. The technical complexity challenges require a combination of technical expertise, robust infrastructure, and ongoing management to successfully implement and maintain intelligent application workloads. Learn more in [Reliability design principles of intelligent application workloads](design-principles.md#reliability).
+Accurate responses rely on a well-architected intelligent application workload. As part of your feasibility assessment, evaluate the reliability and accuracy of the responses provided by the intelligent workload. Consider how to optimize, monitor, and improve the generated responses. The technical complexity challenges require a combination of technical expertise, robust infrastructure, and ongoing management to successfully implement and maintain intelligent application workloads. Learn more in [Reliability design principles of intelligent application workloads](design-principles.md#reliability).
 
 ### Operational feasibility
 
