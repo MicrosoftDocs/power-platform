@@ -162,7 +162,7 @@ To evaluate responsiveness:
 
 **Understanding and evaluating services**: Review the platform services to determine if they meet your performance requirements. Power Platform offers several services that accomplish the same outcome. You have the flexibility to align your choice of service to your performance needs, team skill set, and cost requirements.
 
-## See also
+## Related information
 
 - [Verify network capacity and throughput for clients](/power-platform/admin/verify-network-capacity-throughput-clients)
 - [Advanced Monitor concepts](/power-apps/maker/monitor-advanced)

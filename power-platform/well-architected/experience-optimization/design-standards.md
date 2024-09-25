@@ -145,7 +145,7 @@ Model-driven apps provide built-in [standard keyboard shortcuts for navigating f
 
 Canvas apps require code components to enable keyboard shortcuts, which can be configured using Creator Kit's [keyboard shortcuts](/power-platform/guidance/creator-kit/keyboardshortcuts).
 
-## See also
+## Related information
 
 - [Designing and building accessible canvas apps in Power Apps](/power-apps/maker/canvas-apps/accessible-apps)
 - [Accessibility limitations in canvas apps](/power-apps/maker/canvas-apps/accessible-apps-limitations)
