@@ -31,7 +31,7 @@ sections:
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
-      title: "1. Understand Power SAP integration"
+      title: "1. Understand integration with SAP"
       summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally automate their business processes. (Ignite)
       #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
