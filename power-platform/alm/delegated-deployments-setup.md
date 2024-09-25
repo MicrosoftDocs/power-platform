@@ -24,14 +24,14 @@ For a delegated deployment with a service principal, follow these steps.
 
 1. Create an enterprise application (service principal) in Microsoft Entra ID.
 
-    > [!IMPORTANT]
-    > Anyone enabling or modifying service principal configurations in pipelines must be an owner of the enterprise application (service principal) in Microsoft Entra ID.  
+   > [!IMPORTANT]
+   > Anyone enabling or modifying service principal configurations in pipelines must be an owner of the enterprise application (service principal) in Microsoft Entra ID.  
 1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Deployment Pipeline Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. Lower permission security roles can't deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Select **Save**.
 1. Optionally, **Allow sharing requests** so that deployment requestors can specify which security groups can access deployed objects within the target environment. Sharing requests are part of the deployment request and can be approved or rejected.
   > [!IMPORTANT]
-    > Deployment approvers are responsible for carefully reviewing sharing and security role information. When a deployment is approved, pipelines automatically assigns permissions using the deploying service principal's identity.  
+  > Deployment approvers are responsible for carefully reviewing sharing and security role information. When a deployment is approved, pipelines automatically assigns permissions using the deploying service principal's identity.  
     > 
 1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Microsoft Dataverse APIs.
 1. Select the **OnApprovalStarted** trigger. 
