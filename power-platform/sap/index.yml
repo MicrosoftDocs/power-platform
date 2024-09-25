@@ -164,13 +164,14 @@ sections:
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
+          #here
       - componentType: icon-card
-        title: SAP Basis administrator
-        summary: Password reset copilot. (Ignite)
-        url: https://www.microsoft.com/
+        title: Technology manager 
+        summary: Considerations for implementing Power Platform integration with SAP (later)
+        url: https://www.microsoft.com
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
+          src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
       - componentType: icon-card
         title: SAP functional consultant
         summary: How to build Power Apps integrated with SAP (later)
@@ -186,12 +187,12 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
       - componentType: icon-card
-        title: Technology manager 
-        summary: Considerations for implementing Power Platform integration with SAP (later)
-        url: https://www.microsoft.com
+        title: SAP Basis administrator
+        summary: Password reset copilot. (Ignite)
+        url: https://www.microsoft.com/
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
+          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png-
       - componentType: icon-card
         title: Partner
         summary: Partner with Microsoft to integrate customer Power and SAP environments. (later)
