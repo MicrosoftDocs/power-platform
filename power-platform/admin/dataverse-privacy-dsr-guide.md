@@ -156,7 +156,7 @@ From the [Power Platform admin center](https://admin.powerplatform.microsoft.com
 1. Select **Environments**, and then select an environment from the list.
 1. Go to **Settings** > **Users + permissions** > **Users**.
 1. Select **Manage users in Dynamics 365** from the command bar.
-1. Select the **Disabaled users** view.
+1. Select the **Disabled users** view.
 1. Enter the name of the user in the **Search** box, and press **Enter**.
 1. Select the checkbox of the user you want to export.
 1. Select the ellipsis button, if needed, and then select **Export to Excel**. 
