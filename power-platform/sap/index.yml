@@ -164,7 +164,6 @@ sections:
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
-          #here
       - componentType: icon-card
         title: Technology manager 
         summary: Considerations for implementing Power Platform integration with SAP (later)
@@ -192,7 +191,7 @@ sections:
         url: https://www.microsoft.com/
         icon:
           componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png-
+          src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
         title: Partner
         summary: Partner with Microsoft to integrate customer Power and SAP environments. (later)
