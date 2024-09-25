@@ -1,5 +1,5 @@
 ---
-title: How A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and Copilot Studio
+title: A1 Inteligencia em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio
 description: Learn how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and Copilot Studio.
 author: robstand
 ms.author: sashi
@@ -9,7 +9,7 @@ ms.date: 08/06/2024
 
 ---
 
-# Boost team efficiency and customer experience with Power Automate and Copilot Studio
+# A1 Inteligencia em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio
 
 Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed the travel coordination process with their clients and team collaboration using the power of Power Automate and Microsoft Copilot Studio.
 

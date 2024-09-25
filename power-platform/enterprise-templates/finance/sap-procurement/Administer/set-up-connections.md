@@ -1,6 +1,6 @@
 ---
-title: Set up connections
-description: Learn how to set up data connections in solutions for SAP Procurement apps and flows.
+title: Set up connections for SAP solutions
+description: Learn how to set up and manage data connection information for SAP-related solution apps and flows and manage connection references.
 author: jongilman88
 ms.author: jongilman
 contributors:
@@ -13,7 +13,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/27/2024
+ms.date: 09/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

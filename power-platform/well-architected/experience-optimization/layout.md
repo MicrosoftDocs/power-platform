@@ -181,7 +181,7 @@ Model-driven app form layouts are configured using Power Apps Studio. The [form 
 
 Canvas apps require explicit configuration for each component to [implement responsive behavior](/power-apps/maker/canvas-apps/create-responsive-layout), allowing more control over the experience. Screen sizes are determined on the app definition, which can be referenced to determine position, behavior, visibility, and other relevant properties.
 
-## See also
+## Related information
 
 [Fluent layout](https://fluent2.microsoft.design/layout)
 
