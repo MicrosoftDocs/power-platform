@@ -45,15 +45,15 @@ Here are examples of how client app access control works in the _user_ and _appl
 - **User context with user token**
 
   - For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
-  - To allow or block session authentication used by a Unified Interface (UCI), the user must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
-  - Features restrict access control for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
+  - To allow or block session authentication used by a Unified Interface (UCI), the admin must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
+  - User token can also be obtained for public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
       > [!TIP]
-      > We don’t recommend allowing a public client unless you need it needed temporarily.
+      > We don’t recommend allowing a public client unless it needed temporarily.
       
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
-  
-- **Impersonation using a first-party app**
+ 
+- ***Impersonation using a first-party app**
   
   - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
@@ -62,7 +62,7 @@ Client app access control isn’t applied to the following apps:
 - First-party apps with service-to-service calls (application context).
 - Partner apps with service-to-service calls.
 
-    To block these apps, make them inactive in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
+    To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
 
 ## Prerequisites
 
@@ -345,7 +345,7 @@ You can remove app access control by turning off the feature. With this setting,
 1. Select **Save**.
 
 > [!TIP]
-> If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the access control is set to **Disabled**. There are no app restrictions in this environment.
+> If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the access control is turned off to **Disabled**. There are no app restrictions in this environment.
 
 ## Error message: App denied user error
 
