@@ -157,6 +157,13 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 |---------|-------------|---------------|
 | Enable email address validation in model-driven apps (preview).  |  When **On**, enables smart data validation for certain columns, such as text columns using the email format. More information: [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) | Off |
 
+## Power Automate capacity
+| Setting | Description | Default value |
+|---------|-------------|---------------| 
+| Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into Process capacity overage. New process capacity overage is only possible in an environment with at least 1 Process / Hosted Process / Unattended capacity assigned. More information: [Process capacity overage]](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
+| Allow auto-claim of process capacity |  When **On**, enables auto-assignation of Process capacity to the environment (if any is available in the admin center) when required by an assignation of Process capacity to a cloud flow or to a machine while there is no available capacity in the environment. More information: [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
+
+
 ## Search
 | Setting | Description | Default value |
 |---------|-------------|---------------|
