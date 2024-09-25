@@ -53,7 +53,7 @@ Here are examples of how client app access control works in the _user_ and _appl
       
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
  
-- ***Impersonation using a first-party app**
+- ***Impersonation using a first-party app***
   
   - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
@@ -269,11 +269,11 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
 
 > [!TIP]
-> In audit mode, you must select at least one environment to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in [Audit only mode (identify apps that allow or block)](#audit-mode-identify-apps-that-allow-or-block).
+> In audit mode, you must select at least one application to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in [Audit only mode (identify apps that allow or block)](#audit-mode-identify-apps-that-allow-or-block).
 
 #### Audit mode (identify apps that allow or block)
 
-If you choose **Audit** mode, only telemetry is logged for failures and requests aren’t rejected.
+If you choose **Audit** mode, audit is logged for both allowed and blocked however blocked access requests aren’t rejected.
 
 The audit settings for an environment must be enabled, including the **Log access** option.
 
