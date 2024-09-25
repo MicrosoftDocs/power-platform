@@ -33,7 +33,7 @@ sections:
     - componentType: card
       title: "1. Understand integration with SAP"
       summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally automate their business processes. (Ignite)
-      size: extra-small
+      #size: extra-small
       imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
@@ -42,7 +42,7 @@ sections:
     - componentType: card
       title: "2. Get started with Power Platform"
       summary: Learn about the Power Platform and how to start using it in your environments.
-      size: extra-small
+      #size: extra-small
       imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
@@ -54,7 +54,7 @@ sections:
     - componentType: card
       title: "3. Connect to SAP"
       summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
-      size: extra-small
+      #size: extra-small
       imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
@@ -66,7 +66,7 @@ sections:
     - componentType: card
       title: "4. Leverage Power SAP templates"
       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-      size: extra-small
+      #size: extra-small
       imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
