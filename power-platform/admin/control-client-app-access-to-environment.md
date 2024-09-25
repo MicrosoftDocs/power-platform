@@ -1,5 +1,5 @@
 ---
-title: Control which apps are allowed in your enviornment (preview)
+title: Control which apps are allowed in your environment (preview)
 description: You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment.
 author: paulliew
 ms.author: paulliew
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Control which apps are allowed in your enviornment (preview)
+# Control which apps are allowed in your environment (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
