@@ -2,7 +2,7 @@
 title: View license consumption for finance and operations apps 
 description: Learn how to view your organization's Power Apps license consumption for finance and operations apps. 
 author: amiyapatr-zz
-ms.date: 08/15/2024
+ms.date: 09/25/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice:
@@ -39,8 +39,7 @@ To see a summary of license usage:
 The **User license level summary** section provides a summary count of user licenses available, assigned, and required for the tenant for finance and operations environments.
 
 > [!IMPORTANT]
->
-> - Device license are not included in the count of licenses available, assigned, or required for the tenant for finance and operations environments.
+> Device license aren't included in the count of licenses available, assigned, or required for the tenant for finance and operations environments.
 
 | Information | Description |
 | ------- | ----------- |
@@ -75,7 +74,7 @@ Select an **Email/User ID** to view the details of all roles assigned to the sel
 
 ## Download
 
-To download the license usage information, select **Export to CSV** in the **summary** tab to initiate a download. After a CSV file is generated, you can download the same file again within five days without having to start a new download.
+To download the license usage information, select **Export to CSV** in the **Summary** tab to start download process. After a .csv file is generated, you can download the same file again within five days without having to start a new download.
 
    :::image type="content" source="media/view-license-consumption-finops-apps-download.png" alt-text="Download license summary" lightbox="media/view-license-consumption-finops-apps-download.png":::
 
