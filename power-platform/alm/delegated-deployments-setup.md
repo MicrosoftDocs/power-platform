@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 04/11/2024
+ms.date: 09/25/2024
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner
@@ -29,7 +29,7 @@ For a delegated deployment with a service principal, follow these steps.
 1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Deployment Pipeline Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. Lower permission security roles can't deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Select **Save**.
-1. Optionally, **Allow sharing requests** so that deployment requestors can specify which security groups will access deployed objects within the target environment. Sharing requests are part of the deployment request and can be approved or rejected.
+1. Optionally, **Allow sharing requests** so that deployment requestors can specify which security groups can access deployed objects within the target environment. Sharing requests are part of the deployment request and can be approved or rejected.
   > [!IMPORTANT]
     > Deployment approvers are responsible for carefully reviewing sharing and security role information. When a deployment is approved, pipelines automatically assigns permissions using the deploying service principal's identity.  
     > 
@@ -59,8 +59,6 @@ Here's a screenshot of a canonical approval flow.
 
 :::image type="content" source="media/canonical-approval-flow.png" alt-text="Canonical Approval Flow":::
 
-
-
 ## Deploy as the pipeline stage owner
 
 Regular users, including those used as service accounts, can also serve as delegates. Configuration is more straightforward when compared to service principals, but solutions containing connection references for oAuth connections can't be deployed.
@@ -84,7 +82,7 @@ To deploy as the pipeline stage owner, follow these steps.
 ## Delegated deployment samples
 
 > [!IMPORTANT]
-> The functionality provided in these samples is now supported natively in the product, but these samples may provide insights into extending native sharing functionality.
+> The functionality provided in these samples is now supported natively in the product, but these samples might provide insights into extending native sharing functionality.
 
 This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
 
@@ -94,20 +92,20 @@ Download and import the managed solution to your pipelines host environment. The
 
 ### How can makers access deployed objects within target environments?
 
-Sharing during deployment is a native capability of delegated deployments with service principals. It avoids Admins needing to manually assign security roles and share deployed apps, flows, Copilots, and so on, within the Power Platform admin center. Instead, Admins only need to approve the deployment request and sharing is carried out automatically by the system.
+Sharing during deployment is a native capability of delegated deployments with service principals. It avoids admins needing to manually assign security roles and share deployed apps, flows, Copilots, and so on, within the Power Platform admin center. Instead, admins only need to approve the deployment request and sharing is carried out automatically by the system.
 
 ### Which object types can be shared during deployment?
 
-Currently, security roles, canvas apps, and cloud flows are supported. Copilot sharing may also be available depending on your region. 
+Currently, security roles, canvas apps, and cloud flows are supported. Copilot sharing might also be available depending on your region. 
 
 ### Which permissions are assigned for canvas apps and flows?
 
 Pipelines assigns the minimum privileges required to run apps and flows. 
-If higher privileges are desired, pipelines can be extended. It's recommended to enable the 'Block unmanaged customizations' feature when assigning higher permissions. 
+If higher privileges are desired, pipelines can be extended. We recommend you enable the 'Block unmanaged customizations' feature when assigning higher permissions.
 
 ### Can makers share with individual users?
 
-Not currently. It's recommended to manage individual user access via security groups after the first deployment of the object. 
+Not currently. We recommend managing individual user access via security groups after the first deployment of the object.
 
 ### I'm getting an error _The deployment stage isn't an owner of the service principal (&lt;AppId&gt;). Only owners of the service principal may use it for delegated deployments._
 
@@ -138,7 +136,7 @@ Yes. For example, Power Automate approvals can be customized to meet the needs o
 ### Why do I have to own the service principal?
 
 This is enforced for security reasons. 
-You may also create pipelines using a service account and add the same service account as the owner. 
+You might also create pipelines using a service account and add the same service account as the owner. 
 Another option is assigning the service principal (application user) as the owner of the pipeline stage and as an owner of itself (Enterprise application) in Microsoft Entra. However, assigning pipeline stage ownership to an application must be done via the Dataverse API in the pipelines host.  
 
 ### I'm getting an error _Delegated deployments of type 'ServicePrincipal' may only be approved or rejected by the Service Principal configured in the deployment stage._
