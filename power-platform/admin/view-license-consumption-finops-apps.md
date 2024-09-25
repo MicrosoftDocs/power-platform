@@ -38,6 +38,10 @@ To see a summary of license usage:
 
 The **User license level summary** section provides a summary count of user licenses available, assigned, and required for the tenant for finance and operations environments.
 
+> [!IMPORTANT]
+>
+> - Device license are not included in the count of licenses available, assigned, or required for the tenant for finance and operations environments.
+
 | Information | Description |
 | ------- | ----------- |
 | User license level | Type of finance and operations license available, or required by the tenant. |
@@ -60,10 +64,6 @@ Select the specific **User license level** to see a list, and more details of us
 | Role license | The role license mapped to the security role. |
 | Required license | Mapped user license level for the role license. |
 | Assigned license | The license assigned to the user. |
-
-> [!IMPORTANT]
->
-> - Finance and operations Device license are not included in the count of licenses available, assigned, or required for the tenant for finance and operations environments
 
 The following is a screenshot of the **Licenses** page displaying **User license level**.
 
