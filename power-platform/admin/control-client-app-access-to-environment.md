@@ -49,7 +49,7 @@ Here are examples of how client app access control works in the _user_ and _appl
   - User token can also be obtained for public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
       > [!TIP]
-      > We don’t recommend allowing a public client unless it needed temporarily.
+      > We don’t recommend allowing a public client unless it is needed temporarily.
       
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
  
