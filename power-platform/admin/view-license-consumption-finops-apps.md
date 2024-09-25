@@ -75,7 +75,7 @@ Select an **Email/User ID** to view the details of all roles assigned to the sel
 
 ## Download
 
-To download the license usage information, select **Download** in the **summary** tab to initiate a download. After a CSV file is generated, you can download the same file again within five days without having to start a new download.
+To download the license usage information, select **Export to CSV** in the **summary** tab to initiate a download. After a CSV file is generated, you can download the same file again within five days without having to start a new download.
 
    :::image type="content" source="media/view-license-consumption-finops-apps-download.png" alt-text="Download license summary" lightbox="media/view-license-consumption-finops-apps-download.png":::
 
