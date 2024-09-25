@@ -1,5 +1,5 @@
 ---
-title: "Manage Microsoft Dataverse settings  | MicrosoftDocs"
+title: Manage Microsoft Dataverse settings 
 description: View and manage Microsoft Dataverse settings.
 author: sericks007
 ms.component: pa-admin
@@ -19,7 +19,7 @@ Settings for the selected environment can be managed here.
 ![Environment settings.](media/environment-settings.png)
 
 ## Environment settings are moving
-Across organization admin settings are gradually moving from the web client to the Power Platform admin center, apps with unified interface, or Power Apps. Meanwhile, you’ll still be able to manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
+Across organization admin settings are gradually moving from the web client to the Power Platform admin center, apps with unified interface, or Power Apps. Meanwhile, you can manage settings in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), as usual.
 
 Many of these settings...
 
@@ -29,7 +29,7 @@ Many of these settings...
 
 ![Environment settings mini.](media/environment-settings-mini.png)
 
-Use the links on this page to manage organization-wide settings. App-specific settings will remain in customer engagement apps and accessed through the app settings. 
+Use the links on this page to manage organization-wide settings. App-specific settings remain in customer engagement apps and accessed through the app settings. 
 
 ## New location for admin settings
 The following web client admin settings have moved.
