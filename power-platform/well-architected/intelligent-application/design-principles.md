@@ -36,7 +36,7 @@ Failures can happen in the cloud. Instead of trying to prevent failures altogeth
 - Make the workload observable so that development teams learn from failures. Quickly identify and address issues by implementing monitoring, logging, and alerting mechanisms.
 - Ensure the workload can scale to handle varying loads, especially important for AI workloads that might have fluctuating demands. 
 - Implement robust error handling and recovery mechanisms. Set up automated alerts for system failures and have a clear plan for quick recovery.
-- Validate the target architecture and scale by understanding the target volumes of chat messages or conversations. Target volumes also help validate the licensing aspects of the intelligent application and the potential affect on Dataverse storage for conversation transcripts.
+- Validate the target architecture and scale by understanding the target volumes of chat messages or conversations. Target volumes also help validate the licensing aspects of the intelligent application and the potential effect on Dataverse storage for conversation transcripts.
 
 For intelligent applications that use generative AI capabilities, consider not only resilience and availability, but also the reliability and accuracy of the responses provided by the intelligent workload. Consider the following recommendations for each design consideration:
 
@@ -72,7 +72,7 @@ Performance efficiency is the ability of your workload to efficiently scale to m
 
 Increase performance efficiency by:
 
-- Understanding target volumes to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential affect on Dataverse storage for conversation transcripts.
+- Understanding target volumes to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential effect on Dataverse storage for conversation transcripts.
 - Understanding [platform limits](/microsoft-copilot-studio/requirements-quotas). When you integrate your intelligent application workload with external systems, for example through Power Automate or HTTP requests, it's important to validate that every component can handle the load.
 - Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
 - Understanding the expected response times for:
