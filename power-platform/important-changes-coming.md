@@ -36,7 +36,7 @@ Token Generation for the multitenant apps will fail if service principal for tha
 
 ### Action required by you
 
-To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal/). Note – If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in tenant.
+To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). Note – If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in tenant.
 
 ### When is this change coming into effect? 
 
