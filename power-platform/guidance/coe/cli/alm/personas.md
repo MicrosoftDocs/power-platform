@@ -63,7 +63,7 @@ Reviews the entire ALM process and components and verifies it matches with the s
 
 #### Power Platform administrator
 
-Using Power Platform administration rights allocated to the user or a service principal manage environments (create, update, delete).
+Using Power Platform administrator rights allocated to manage environments (create, update, delete).
 
 ```bash
 coe alm generate install -o quickstart.json
