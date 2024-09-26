@@ -5,7 +5,7 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 05/23/2023
+ms.date: 09/26/2024
 
 ms.topic: "article"
 ms.reviewer: sericks
@@ -61,7 +61,7 @@ Reviews the entire ALM process and components and verifies it matches with the s
 
 ### Administrators
 
-#### Power Platform Administrator
+#### Power Platform administrator
 
 Using Power Platform administration rights allocated to the user or a service principal manage environments (create, update, delete).
 
