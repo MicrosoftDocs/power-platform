@@ -5,7 +5,7 @@ author: sericks007
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 09/26/2024
 ms.subservice: admin
 ms.author: paulliew
 search.audienceType: 
@@ -16,7 +16,7 @@ search.audienceType:
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-This article provides examples of steps you can take to support privacy compliance when using Power Apps, Power Automate, and Dataverse. You'll learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to Data Subject Rights (DSR) requests.
+This article provides examples of steps you can take to support privacy compliance when using Power Apps, Power Automate, and Dataverse. Learn how to use Microsoft products, services, and administrative tools to help controller customers find, access, and act on personal data in the Microsoft cloud in response to Data Subject Rights (DSR) requests.
 
 The following actions are covered in this article:
 
@@ -59,14 +59,14 @@ After you determine which type of environment you have, follow the steps in the 
 
 You must create users in the Microsoft 365 admin center and assign them an appropriate user license and security role before they can access and use Dataverse.
 
-Standard user personal data (for example, UserName, UserID, Phone, Email, and Address) is kept and maintained in the Microsoft 365 admin center. System administrators can update this personal data only in the Microsoft 365 admin center, and the data is then automatically synced to the Dataverse system User table in all environments. System administrators can also create custom attributes to capture additional user personal data within the Dataverse system User table, and then manually maintain and manage these attributes.
+Standard user personal data (for example, UserName, UserID, Phone, Email, and Address) is kept and maintained in the Microsoft 365 admin center. System administrators can update this personal data only in the Microsoft 365 admin center, and the data is then automatically synced to the Dataverse system User table in all environments. System administrators can also create custom attributes to capture more user personal data within the Dataverse system User table, and then manually maintain and manage these attributes.
 
-To avoid interruption to business applications that may be critical to your organization's operations, a user's rows are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application.
+To avoid interruption to business applications that may be critical to your organization's operations, a user's rows aren't automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application.
 
 Dataverse System Administrators can perform the discover, rectify, export, and delete actions listed below.
 
 ### Discover
-System Administrators can create multiple environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User table with any custom attributes that may have been added by the system administrator, as well as the user personal data synced from the Microsoft 365 admin center.
+System Administrators can create multiple environments. These environments can be used for trial, development, or production purposes. Each of these environments has a copy of the system User table with any custom attributes that may have been added by the system administrator, and the user personal data synced from the Microsoft 365 admin center.
 
 System administrators can find a list of all the environments by navigating to the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -78,7 +78,7 @@ You can find personal data from Dataverse users within the following resources:
 | Audit history | Allows customers to identify resources that users created, accessed, changed, or deleted at a table level. | [Power Platform admin center](https://admin.powerplatform.microsoft.com/) | Through the [Web API](/powerapps/developer/common-data-service/webapi/update-delete-entities-using-web-api#basic-update)  |
 
 #### User
-User personal data is stored in the Microsoft Entra and is automatically synced to all environments with a Dataverse database. System administrators cannot update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
+User personal data is stored in the Microsoft Entra and is automatically synced to all environments with a Dataverse database. System administrators can't update this personal data directly in Dataverse while the user is active&mdash;they must update the data from within the Microsoft 365 admin center. System administrators can add personal data (for example, custom attributes) directly to Dataverse, but they must manually manage this data.
 
 To find a user and their personal data, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) and do the following:
 
@@ -100,7 +100,7 @@ When [audit tracking](manage-dataverse-auditing.md) is enabled for a table in Da
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
-You can use Microsoft Entra to manage the identities (personal data) of your users within Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Microsoft Entra to manage the identities (personal data) of your users within Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
 
 Once a user row is deleted from Microsoft Entra ID, System Administrators can then remove any remaining personal data related to that user (such as custom attributes) from all the environments.  
 
@@ -112,12 +112,12 @@ You can export a user's personal data stored in the system User table to Excel f
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Security**, and then select **Enabled Users View**.
-
-4. Select **Export to Excel**.
+1. Go to **Settings** > **Users + permissions** > **Users**.
+1. Select **Manage users in Dynamics 365** from the command bar.
+1. Select **Enabled users** view from the view dropdown if the user you want to export is **Enabled**, otherwise select the **Disabaled users** view.
+1. Enter the name of the user in the **Search** box, and select **Enter**.
+1. Select the checkbox of the user you want to export.
+1. Expand on the ellipsis, if needed, and select **Export to Excel**. 
 
 #### Audit history
 You can take screenshots of the audit history from within the administration center.
@@ -125,23 +125,14 @@ You can take screenshots of the audit history from within the administration cen
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
-
-    ![Power Apps Audit History Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-menu.png)
-
-4. Locate the user audit record, and then press Alt+PrtScn to take the screenshot.
-
-    ![Power Apps Audit History Details.](./media/common-data-service-gdpr-dsr-guide/powerapps-audit-history-details.png)
-
-5. Save the screenshot to a file, which you can then send to the DSR requestor.
+1. Go to **Settings** > **Audit and logs** > and select **Audit Summary View**.
+1. Locate the user audit record, and then press **Alt+PrtScn** to take the screenshot.
+1. Save the screenshot to a file, which you can then send to the DSR requestor.
 
 ### Delete
 
 #### User
-To avoid interruption to business applications that may be critical to your organization's operations, a user's records are not automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each environment. You can remove the user's personal data or [permanently delete the user](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
+To avoid interruption to business applications that may be critical to your organization's operations, a user's records aren't automatically removed from the Dataverse system User table when that user is deleted from within the Microsoft 365 admin center. The user's status is set to Disabled in Dataverse, but a Dataverse System Administrator must locate and remove the user's personal data from Dataverse within the application or delete the user from each environment. You can remove the user's personal data or [permanently delete the user](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform).
 
 #### Remove a user's personal data from the user's Summary page
 When a user record is deleted from the Microsoft Entra, the following message is displayed on the user's Summary page:
@@ -151,53 +142,44 @@ When a user record is deleted from the Microsoft Entra, the following message is
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Security** > **Users**, and then select **Disabled Users View**.
-
-4. Enter the name of the user in the **Search** box, and then select **Search**.
-
-9. Double-click the user's name in the search results list.
-
-10. On the user's Summary page, remove all personal data, and then select **Save**.
+1. Go to **Settings** > **Users + permissions** > **Users**.
+1. Select **Filter** and select **Disabled Users** view from the dropdown menu.
+1. Enter the name of the user in the **Search** box, and press **Enter**.
+1. To view the user's personal data, select the user's name by selecting the name or double-clicking the name.
+1. To make changes to the user information, select the ellipse button and select **Manage user in Dynamics 365**.
+1. On the user's **Summary** page, remove all personal data, and then select **Save**.
 
 #### Remove a user's personal data by using Excel
 
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Security** > **Users**, and then select **Disabled Users View**.
-
-4. Create and download an Excel template file from the user's personal data. For step-by-step instructions, see [Create a new Excel template](analyze-your-data-with-excel-templates.md#create-a-new-excel-template).
-
-8. Open the downloaded Excel template file, remove the user's personal data, and then save the file.
-
-9. Return to the **Disabled Users View** page and select **Import Data**.
-
-10. Select the Excel template file in the **Upload data file** dialog box and make all the necessary changes in the **Map Fields** window.
-
-12. Select **Next**, and then select **Submit**.
+1. Go to **Settings** > **Users + permissions** > **Users**.
+1. Select **Manage users in Dynamics 365** from the command bar.
+1. Select the **Disabled users** view.
+1. Enter the name of the user in the **Search** box, and press **Enter**.
+1. Select the checkbox of the user you want to export.
+1. Select the ellipsis button, if needed, and then select **Export to Excel**. 
+1. Create and download an Excel template file of the user's personal data. For step-by-step instructions, see [Create a new Excel template](analyze-your-data-with-excel-templates.md#create-a-new-excel-template).
+1. Open the downloaded Excel template file, remove the user's personal data, and then save the file.
+1. Return to the **Disabled Users** view page and select **Import from Excel**.
+1. Select **Choose File** and select your updated Excel file.
+1. Select **Next** twice.
+1. Make all the necessary changes in the **Map Fields** window, example change the **Full Name** action to **Ignore**.
+1. Select **Next** twice, and then select **Submit**.
 
 #### Permanently delete user
 You can either remove user's personal data or permanently delete the user record from the Dataverse user table. More information: [Permanently delete users in Power Platform](/power-platform/admin/delete-users#permanently-delete-users-in-power-platform). 
 
-When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by and in the audit logs will show as **No Name**.
+When the user record is permanently deleted, the user's name in all records where the deleted user was the creator or last modified by and in the audit logs shows as **No Name**.
 
 #### Remove audit history from the Audit Summary View page
 
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Go to **Settings** > **Audit and logs**, and then select **Audit Summary View**.
-
-4. Locate the user's change history, select the check box next to the row(s), and then select **Delete Change History**.
+1. Go to **Settings** > **Audit and logs** > and select **Audit summary view**.
+1. Locate the user's change history, select the check box next to the row(s), and then select **Delete Change History**.
 
 ## Personal data stored in databases of Dataverse
 
@@ -216,28 +198,20 @@ Using an inventory, Dataverse System Administrators can configure the search tab
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Select **Dataverse search**.
-
-    ![Power Apps Dataverse search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
-
-4. Enter the individual's personal data in the search box, and then select **Search**.
-
-    ![Power Apps Dataverse search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
+1. Select **Open** from the command bar.
+1. Select an app.
+1. Enter the user in the **Search** box.
+1. Review the search results for all the tables that the user is being referenced.
 
 ### Rectify
 Dataverse System Administrators can update an individual's personal data by using the list of results from the Dataverse search. However, an individual's personal data may also be stored in other custom tables. Dataverse System Administrators are responsible for maintaining an inventory of these other custom tables and making the appropriate updates to an individual's personal data.
 
-From the Dataverse search results, do the following:
+From the Dataverse search results (above), do the following:
 
 1. Select an item that contains the individual's personal data.
+1. Update the individual's personal data where appropriate, and then select **Save**.
 
-2. Update the individual's personal data where appropriate, and then select **Save**.
-
-    ![Power Apps Account details.](./media/common-data-service-gdpr-dsr-guide/powerapps-account-details.png)
-
+  
 ### Export
 
 You can take a screenshot of the data and share it with your DSR requestor.
@@ -245,22 +219,13 @@ You can take a screenshot of the data and share it with your DSR requestor.
 From the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), do the following:
 
 1. Select **Environments**, and then select an environment from the list.
-
-2. Select **Open environment**.
-
-3. Select **Dataverse search**.
-
-    ![Power Apps Dataverse search Menu.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-menu.png)
-
-4. Enter the individual's personal data in the search box, and then select **Search**.
-
-    ![Power Apps Dataverse search Results.](./media/common-data-service-gdpr-dsr-guide/powerapps-relevance-search-results.png)
-
-5. Double-click the item in the search results list.
-
-6. Press Alt+PrtScn to take the screenshot.
-
-7. Save the screenshot to a file, which you can then send to the DSR requestor.
+1. Select **Open** from the command bar.
+1. Select an app.
+1. Enter the user in the **Search** box.
+1. Review the search results for all the tables that the user is being referenced.
+1. Double-click the item in the search results list.
+1. Press **Alt+PrtScn** to take the screenshot.
+1. Save the screenshot to a file, which you can then send to the DSR requestor.
 
 ### Delete
 
@@ -272,10 +237,7 @@ Dataverse System Administrators can delete an individual's personal data from re
 From the Dataverse search results, to the following:
 
 1. Select an item that contains the individual's personal data.
-
-2. In the ribbon, select **Delete**. (Note that **Delete** is disabled if the record cannot be deleted).
-
-    ![Power Apps Account delete.](./media/common-data-service-gdpr-dsr-guide/powerapps-account-delete.png)
+1. In the ribbon, select **Delete**. (Note that **Delete** isn't available if the record can't be deleted).
 
 ## Personal data stored in databases of the previous version of Dataverse
 
@@ -325,7 +287,7 @@ To see a list of your tables, do the following:
 ### Rectify
 If a data subject asks you to rectify the personal data that resides in your organization's data, you and your organization must determine whether it's appropriate to honor the request. Rectifying data may include editing, redacting, or removing personal data from a document or other type of item.
 
-You can use Microsoft Entra to manage the identities (personal data) of your users within the previous version of Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft does not offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
+You can use Microsoft Entra to manage the identities (personal data) of your users within the previous version of Dataverse. Enterprise customers can manage DSR rectify requests by using the limited editing features within a given Microsoft service. As a data processor, Microsoft doesn't offer the ability to correct system-generated logs, because they reflect factual activities and constitute a historical record of events within Microsoft services.
 
 To rectify personal data that resides in the environment, you can export the table data into an Excel spreadsheet, update it, and then import the updates back to the database.
 
@@ -353,7 +315,7 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 8. In Power Apps, go back to the selected table, and then select **Import** > **Import data**.
 
-9. Select **Search**, and then select and open the Excel spreadsheet that you just updated.
+9. Select **Search**, and then select and open the Excel spreadsheet that you updated.
 
 10. Select **Import**.
 
@@ -403,7 +365,7 @@ From [Power Apps](https://make.powerapps.com), do the following:
 
 8. In Power Apps, go back to the selected table, and then select **Import** > **Import data**.
 
-9. Select **Search**, and then select and open the Excel spreadsheet that you just updated.
+9. Select **Search**, and then select and open the Excel spreadsheet that you updated.
 
 10. Select **Import**.
 
