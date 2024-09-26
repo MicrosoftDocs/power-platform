@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 9/24/2024
+ms.date: 9/26/2024
 search.audienceType: 
   - admin
 ---
@@ -46,10 +46,10 @@ Here are examples of how client app access control works in the _user_ and _appl
 
   - For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
   - To allow or block session authentication used by a Unified Interface (UCI), the admin must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
-  - User token can also be obtained for public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
+  - A user token can also be obtained for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
       > [!TIP]
-      > We don’t recommend allowing a public client unless it is needed temporarily.
+      > We don’t recommend allowing a public client unless it's needed temporarily.
       
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
  
@@ -273,9 +273,9 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 #### Audit mode (identify apps that allow or block)
 
-If you choose **Audit** mode, audit is logged for both allowed and blocked however blocked access requests aren’t rejected.
+If you choose **Audit** mode, auditing is used for both allowed and blocked apps. However, blocked access requests aren’t rejected.
 
-The audit settings for an environment must be enabled, including the **Log access** option.
+The audit settings for an environment must be allowed, including the **Log access** option.
 
 #### Retrieve app access audit log
 
