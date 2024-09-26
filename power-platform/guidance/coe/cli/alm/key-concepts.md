@@ -128,7 +128,7 @@ The CoE CLI provides the following key steps:
 
 ### Environments
 
-The CoE CLI commands assume the following environments have been created [https://aka.ms/ppac](https://aka.ms/ppac) as a global administrator or environment administrator with the following configuration:
+The CoE CLI commands assume the following environments have been created [https://aka.ms/ppac](https://aka.ms/ppac) as a privelged identity managed (PIM) administrator or environment administrator with the following configuration:
 
 - Dataverse is enabled.
 

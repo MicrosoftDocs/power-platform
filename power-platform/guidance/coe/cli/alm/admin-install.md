@@ -34,7 +34,7 @@ The following roles are involved with Power Platform.
 
 It is assumed that this installation will be run by a single user that has the following rights:
 
-- Power Platform [administration role](/microsoft-365/admin/add-users/about-admin-roles) of Global admin or Power Platform admin.
+- Power Platform [administration role](/microsoft-365/admin/add-users/about-admin-roles) or Power Platform admin.
 
 - DevOps administrator rights.
 

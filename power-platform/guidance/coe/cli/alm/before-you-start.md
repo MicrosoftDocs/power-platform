@@ -40,7 +40,7 @@ Ensure the user you run with has the following permissions.
 
 Component | Description
 --------- | ----------
-Global administrator or privileged role administrator|Grant tenant-wide admin consent to an application. More information:[Grant admin consent](/azure/active-directory/manage-apps/grant-admin-consent)
+Privileged role administrator|Grant tenant-wide admin consent to an application. More information:[Grant admin consent](/azure/active-directory/manage-apps/grant-admin-consent)
 
 ### Azure DevOps
 
