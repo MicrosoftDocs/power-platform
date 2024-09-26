@@ -73,12 +73,12 @@ There are two Power Platform related service admin roles you can assign to provi
 - Power Platform admin
 - Dynamics 365 admin
 
-### Verify that your enviroment is a Managed Environment
+### Verify that your environment is a Managed Environment
 Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
 
 ### Turn on auditing in the environment
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
-1. In the navigatio pane, select **Environments**. Then select your specific environment.
+1. In the navigation pane, select **Environments**. Then select your specific environment.
 1. Select **Settings** in the command bar.
 1. Select **Audit and logs** > **Audit settings**.
 1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
@@ -93,14 +93,14 @@ There are two ways to build the list of applications to manage:
 - [Turn on audit mode](#turn-on-audit-mode) to see the list of applications running in the environment.
 
 > [!NOTE]
-> The following list of apps are pre-authorized to run in a Dataverse environment.
+> The following list of apps are preauthorized to run in a Dataverse environment.
 >
-> - All Microsoft apps that are pre-authorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
+> - All Microsoft apps that are preauthorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
 > - Application users app - Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
 > - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
 > - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
 
-#### Get the list of pre-authorized applications
+#### Get the list of preauthorized applications
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select the Dataverse environment with your desired list of applications.
@@ -137,9 +137,9 @@ There are two ways to build the list of applications to manage:
 1. Locate and select the **RetrieveAppsWithDelegatedAccessPermissions** row.
 1. Select the **Response** tab.
 
-   A list of all the pre-authorized applications in the environment is listed. You might see a list similar to this list.
+   A list of all the preauthorized applications in the environment is listed. You might see a list similar to this list.
 
-   :::image type="content" source="media/control-client-app-access-to-environment/pre-authorized-apps.png" alt-text="Screenshot that shows a list of pre-authorized apps." lightbox="media/control-client-app-access-to-environment/pre-authorized-apps.png":::
+   :::image type="content" source="media/control-client-app-access-to-environment/pre-authorized-apps.png" alt-text="Screenshot that shows a list of preauthorized apps." lightbox="media/control-client-app-access-to-environment/pre-authorized-apps.png":::
 
 1. Copy the list of applications and paste it into a text editor such as Notepad.
 
@@ -179,10 +179,10 @@ Here are some commonly used apps that are safe to allow.
 | 07ce06e6-4ae9-4466-bca4-2984fa04d057 | Microsoft Dynamics File Storage |
 | 1884bdbf-452a-4a11-9c76-afdbdb1b3768 | RelevanceSearch |
 | 3570e63c-5acf-4f3f-9f15-a49faa5120d3| PowerAppsCustomerManagementPlaneBackend |
-| 3e62f81e-590b-425b-9531-cad6683656cf | PowerApps - apps.powerapps.com |
+| 3e62f81e-590b-425b-9531-cad6683656cf | Power Apps - apps.powerapps.com |
 | 44a02aaa-7145-4925-9dcd-79e6e1b94eff |MicrosoftDynamics365OfficeAppsIntegration |
 | 4ade18ba-d41e-45d6-a563-97c67fc0be15 | Microsoft Dynamics NRD Service |
-| 4e291c71-d680-4d0e-9640-0a3358e31177 | PowerApps |
+| 4e291c71-d680-4d0e-9640-0a3358e31177 | Power Apps |
 | 546068c3-99b1-4890-8e93-c8aeadcfe56a | Common Data Service - Azure Data Lake Storage |
 | 5bdbebb2-509f-458e-b56e-d0b934dfdafa | DynamicsInstaller |
 | 60216f25-dbae-452b-83ae-6224158ce95e | Microsoft Dynamics CRM App for Outlook |
@@ -227,7 +227,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 
     :::image type="content" source="media/airplane-icon.png" alt-text="The airplane icon in the title bar of the Power Platform admin center.":::
  
-4.	Turn the **EnableClientApplicationAccessControl** feature on.
+4.	Turn on the **EnableClientApplicationAccessControl** feature.
 
     :::image type="content" source="media/app-access-control-feature.png" alt-text="Turn on the EnableClientApplicationAccessControl feature.":::
 
