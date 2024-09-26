@@ -50,7 +50,7 @@ Complete the following procedures for Power Automate, Power Apps, Copilot Studio
 
 If your flows are already defined in Dataverse, then no extra work is required. 
 
-Any Power Automate flows that should be migrated need to have their definitions added in Dataverse in the source environment. Learn more about this in [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). This can be done in bulk by running the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest) cmdlet.
+Any Power Automate flows that should be migrated need to have their definitions added into Dataverse solutions in the source environment. Learn more about this in [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). This can be done in bulk by running the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest) cmdlet.
       
 ### Prepare Power Apps
 Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
@@ -304,11 +304,10 @@ After moving environments to another tenant:
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and Dynamics 365 Marketing after the migration.
 
 ### Post-migration process for Power Automate
-1. After the copy has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. Key steps:
+After the migration has completed, step through the **Review components** section as a checklist to get flows and other components adjusted and activated. Key steps:
     1. Create connections for all connection references.
     1. Start all flows, including starting child flows before parent flows.
     1. For any HTTP triggered flows, retrieve the new URL and place it in any calling apps or flows to refresh those references.
-1. If flows in the source environment were left on, then they should be turned off as flows in the target environment are turned on.
 
 ### Post-migration process for Power Apps
 
