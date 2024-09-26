@@ -53,7 +53,7 @@ Here are examples of how client app access control works in the _user_ and _appl
       
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
  
-- ***Impersonation using a first-party app***
+- **Impersonation using a first-party app**
   
   - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
@@ -89,7 +89,7 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 
 There are two ways to build the list of applications to manage:
 
-- [Get the list](#get-the-list-of-pre-authorized-applications) with the function **createOperationUsingWebAPI()**.
+- [Get the list](#get-the-list-of-preauthorized-applications) with the function **createOperationUsingWebAPI()**.
 - [Turn on audit mode](#turn-on-audit-mode) to see the list of applications running in the environment.
 
 > [!NOTE]
