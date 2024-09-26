@@ -70,7 +70,7 @@ All data is handled as per the Copilot data security and privacy guidelines expl
 
 ## What about Customer Lockbox and customer-managed keys?
 
-[Customer Lockbox](admin/about-lockbox.md) and [customer-managed keys](/admin/customer-managed-key.md) won't apply to the access and manual review of customer data shared using this setting.
+[Customer Lockbox](admin/about-lockbox.md) and [customer-managed keys](admin/customer-managed-key.md) won't apply to the access and manual review of customer data shared using this setting.
 
 ### Related content
 
