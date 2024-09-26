@@ -770,7 +770,7 @@ Although apps may be granted to use the Dynamics 365 connector for an extended t
 
 #### I have apps and flows that were in an extended transition period until October 1, 2024, under the Power Apps and Power Automate use rights for Microsoft 365 applications. What happens to my apps and flows after October 1, 2024?
 
-The period for extended use rights concludes on October 1, 2024, however the enforcement of Premium connector licensing requirements for the reclassified connectors will be technically enforced starting April 1, 2025. Until then your apps and flows will continue to work. If an action to assign Premium licenses to users is not taken by this full enforcement date of April 1, 2025, these apps and flows will no longer function Please refer to the [licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and data gateways.
+The period for extended use rights concludes on October 1, 2024, however the enforcement of Premium connector licensing requirements for the reclassified connectors will be technically enforced starting April 1, 2025. Until then your apps and flows will continue to work. If an action to assign Premium licenses to users is not taken by this full enforcement date of April 1, 2025, these apps and flows will no longer function Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and data gateways.
 
 #### Are there any considerations or recommendations before enforcement of Premium connector licensing requirements for the reclassified connectors starts from 1st April 2025?
 
@@ -790,7 +790,7 @@ Following Inventory reports are available in the Power Platform Admin center to 
 
         :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
 
-    This takes you to the Connectors used by the App.
+    This takes you to the Connectors used by the app.
 
     :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
 
