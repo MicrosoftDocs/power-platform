@@ -464,7 +464,7 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security
+            - name: Manage security (preview)
               href: security/security-posture-overview.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
