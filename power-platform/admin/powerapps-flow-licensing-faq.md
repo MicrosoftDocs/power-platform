@@ -775,7 +775,7 @@ The period for extended use rights concludes on October 1, 2024, however the enf
 #### Are there any considerations or recommendations before enforcement of Premium connector licensing requirements for the reclassified connectors starts from 1st April 2025?
 
 - Ensure that you have appropriate capacity purchased and allocated.
-- We recommend that you enable [auto-claim policies for Power Apps licenses](https://learn.microsoft.com/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&WT.mc_id=365AdminCSH_inproduct#auto-claim-policies-for-microsoft-power-apps&preserve-view=true)  and [auto-claim policies for Power Automate licenses](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/power-automate-auto-claim). Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default),  starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](https://learn.microsoft.com/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide&WT.mc_id=365AdminCSH_inproduct#auto-claim-policies-for-microsoft-power-apps&preserve-view=true)  
+- We recommend that you enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim). Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default),  starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
 #### How do I identify apps and flows that are using these specific premium connectors that were under the extended use rights? 
 
@@ -792,7 +792,7 @@ Following Inventory reports are available in the Power Platform Admin center to 
 
     This takes you to the Connectors used by the App.
 
-    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of Power Apps Inventory report":::
+    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
 
 #### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
 
