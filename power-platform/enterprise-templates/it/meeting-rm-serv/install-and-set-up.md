@@ -181,7 +181,7 @@ Verify that the cloud flows are turned on in the newly installed Meeting Room Se
 1. Select *each cloud flow* to verify that it is turned on.
 1. Select **Turn on** on the command bar if the flow is not already set to *on*.
 
-## Step 6: Share the apps
+## Step 6: Share the app
 
 Share the Meeting Room Services app with the users in your organization.
 
