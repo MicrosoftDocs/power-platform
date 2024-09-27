@@ -770,33 +770,33 @@ Although apps may be granted to use the Dynamics 365 connector for an extended t
 
 #### I have apps and flows that were in an extended transition period until October 1, 2024, under the Power Apps and Power Automate use rights for Microsoft 365 applications. What happens to my apps and flows after October 1, 2024?
 
-The period for extended use rights concludes on October 1, 2024 for these apps and flows that now require their users to have appropriate licensing to maintain compliance. In-product enforcement will begin April 1, 2025, until which your apps and flows will continue to work. If an action to assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
+The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use such apps and flows. However, if an action to purchase and assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
 
 #### Are there any considerations or recommendations before enforcement of Premium connector licensing requirements for the reclassified connectors starts from 1st April 2025?
 
-- Ensure that you have appropriate capacity purchased and allocated. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
-- We recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim). Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default),  starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
+- Ensure that you have appropriate licenses purchased and allocated. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
+- We recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim).
 
 #### How do I identify apps and flows that are using these specific connectors that were under the extended use rights? 
 
 Following Inventory reports are available in the Power Platform Admin center to help you identify your Apps and Flows with the connectors being used -  
 
 - **Inventory Reports**
-    - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **App Inventory** tab
-         
-        :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports.png" alt-text="A screenshot of Power Automate Inventory report":::
-
     - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the Connectors list in the drill through report. Right click on the app with connections and in the menu that opens click **Drill-through** > **App Connectors**
 
         :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
 
-    This takes you to the Connectors used by the app.
+        This takes you to the Connectors used by the app.
 
     :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
 
+   - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **App Inventory** tab.
+
+        Steps to view connectors for a Power Automate flow are similar to the steps described above for Power Apps. 
+
 #### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
 
-Yes, we recommend that you enable auto-claim policy to help you automatically assign licenses to users and void any disruption. Starting January 2025, auto-claim policy will also be enabled as a default for customer tenants that were under the extended transition period.  
+Yes, we recommend that you enable auto-claim policy to help you automatically assign licenses to users and void any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
 #### How many apps can I run with Microsoft 365 plans?
 
