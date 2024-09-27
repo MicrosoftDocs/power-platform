@@ -41,9 +41,7 @@ The following table lists the services that support Power Platform managed ident
 | Area      | Power Platform services | Availability|
 |-----------|-------------------------|-------------------------|
 | Dataverse | [Dataverse plug-ins](/power-apps/developer/data-platform/plug-ins) | Preview |
-
-## Known limitations
-Managed identity support for [dependent, assembly plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies) is not supported.
+|           | [Dependent, assembly plug-ins](/power-apps/developer/data-platform/build-and-package#dependent-assemblies) | Preview |
 
 ## Next steps
 [Set up Power Platform managed identity](set-up-managed-identity.md)
