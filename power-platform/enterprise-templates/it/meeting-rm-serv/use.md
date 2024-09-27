@@ -25,10 +25,10 @@ Take these steps to create a service request:
 
 1. In the Meeting Room Services app, go to the *Upcoming Meetings* screen.
 1. Select **Request service** for an upcoming meeting listed on the screen.
-1. On the *Request service* screen, specify the service and any subservice or additional details to complete the request.
+1. On the *Request service* screen, specify the service and any subservice or other details to complete the request.
 1. Select **Add to service requests**.
 1. Repeat steps three and four until you have all the required services added in the *Service requests* section.
-1. Select **Submit**. This triggers the *Meeting Room Services - When service is requested or updated* flow, which notifies the service owner(s) regarding the submitted service request.
+1. Select **Submit**. This triggers the *Meeting Room Services - When service is requested or updated* flow, which notifies one or more service owners regarding the submitted service request.
 
 ## View service requests
 
@@ -39,13 +39,13 @@ Take these steps to create a service request:
 
 1. On the *My requests* screen, select on the request number of any *New* or *In Progress* service request.
 1. Select **Cancel Request**.
-1. Select **Yes** on the confirmation screen to trigger the *Meeting Room Services - When service is requested or updated* flow, which notifies the service owner(s) about the updated service request.
+1. Select **Yes** on the confirmation screen to trigger the *Meeting Room Services - When service is requested or updated* flow, which notifies one or more service owners about the updated service request.
 
 ## Update a service request
 
 1. On the *My requests* screen, select on the request number of any *New* or *In Progress* service request.
-1. Update the *Subservice* and *Additional details* field(s) as necessary.
-1. Select **Update** to trigger the *Meeting Room Services - When service is requested or updated* flow, which notifies the service owner(s) about the updated service request.
+1. Update the *Subservice* and *Additional details* fields as necessary.
+1. Select **Update** to trigger the *Meeting Room Services - When service is requested or updated* flow, which notifies one or more service owners about the updated service request.
 1. On the Success screen, select **Go to My requests**.
 
 ## Submit feedback for a completed service request
