@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 08/02/2024
+ms.date: 09/27/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -22,21 +22,24 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Deprecating Support for Multitenant apps without a service principal in the Microsoft Entra ID tenant 
+## Deprecating support for multi-tenant apps without a service principal in the Microsoft Entra ID tenant 
 
-To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the Target Tenant will no longer be supported. This crucial change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
+To boost security and system performance, we are updating authentication protocols for multi-tenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
 
 ### Why is this needed?
 
-[Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs will start to fail from these apps in deprecated environments.
+[Multi-tenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant, open authorization (OAuth) app-only tokens for multi-tenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs fail from these apps in deprecated environments.
 
 ### Impact
 
-Token Generation for the multitenant apps will fail if service principal for that App is not present in the Target Tenant 
+Token generation for multi-tenant apps fail if the service principal for that app is not present in the target tenant.
 
 ### Action required by you
 
-To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). Note – If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in tenant.
+To ensure the security and integrity of your system and data, we strongly encourage customers to provision the multi-tenant apps in their Microsoft Entra ID tenant. Learn more in [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). 
+
+> [!Note]
+> If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
 
 ### When is this change coming into effect? 
 
