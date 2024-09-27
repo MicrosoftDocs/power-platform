@@ -780,7 +780,7 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
 
-Following inventory reports are available in the Power Platform Admin center to help you identify your Apps and Flows with the connectors being used -  
+Following inventory reports are available in the Power Platform admin center to help you identify your Apps and Flows with the connectors being used -  
 
   - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the Connectors list in the drill through report. Right click on the app with connections and in the menu that opens click **Drill-through** > **App Connectors**
 
