@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 07/08/2024
+ms.date: 09/26/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -24,27 +24,9 @@ The Meeting Room Services apps offer the following capabilities:
 
 You can further extend the capabilities of the Meeting Room Services template by customizing the apps to meet your organization's unique processing needs.
 
-## Meeting Room Services package
-
 The Meeting Room Services template is available in [Microsoft AppSource](<https://aka.ms/MeetingRoomServicesTemplate>).
 
-- **Employee Experience Base** contains common foundational components that all solutions use. For now, only components that are needed for localization capabilities are included. Common strings can be localized once in the base solution and shared so that all dependent solutions get the benefit.
-- **Meeting Room Services** contains all the components that are necessary to enable users to manage service requests for meetings.
-
-### Employee Experience Base solution
-
-The **Employee Experience Base** solution contains components that allow you to manage app language preferences and view errors as an admin.
-
-- **Employee Experience Localization Admin** is a model-driven app that allows you to view and edit localized string values as an admin.
-- **ISO Employee Experience Language Code** is the *one choice* that stores the abbreviations for the available language codes.
-- Two tables:
-  - **Employee Experience Localization** is the table that stores the string replacements for every localized version of the app.
-  - **Employee Experience Error** records all errors from apps and flows.
-- Two security roles:
-  - **Employee Experience Localization Reader** provides *read* access to the table.
-  - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
-
-### Meeting Room Services solution
+## Meeting Room Services components
 
 The Meeting Room Services solution contains components that manage the user experience.
 
