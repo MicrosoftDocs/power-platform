@@ -790,9 +790,7 @@ Following Inventory reports are available in the Power Platform Admin center to 
 
     :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
 
-   - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **App Inventory** tab.
-
-        Steps to view connectors for a Power Automate flow are similar to the steps described above for Power Apps. 
+   - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **App Inventory** tab. Steps to view the connectors list in the drill through report are similar to the steps described above for Power Apps. 
 
 #### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
 
