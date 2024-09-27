@@ -8,6 +8,7 @@ contributors:
   - Antoine2F
   - chrisgarty
   - v-aangie
+  - sandhangitms
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
@@ -788,7 +789,7 @@ Following inventory reports are available in the Power Platform Admin center to 
 
         This takes you to the Connectors used by the app.
 
-    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
+        :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
 
    - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **Inventory** tab. Steps to view the connectors list in the drill through **Flow connectors** report are similar to the steps described above for Power Apps. 
 
