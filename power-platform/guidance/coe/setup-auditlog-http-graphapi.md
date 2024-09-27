@@ -1,6 +1,6 @@
 ---
 title: "Using Office Graph API (recommended)"
-description: "Connect audit log sync flows to the audit log using an HTTP action and Office 365 Management API in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365."
+description: "Connect audit log sync flows to the audit log using an graph API action in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365."
 author: pete-msft
 
 ms.component: pa-admin
@@ -92,9 +92,9 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 | Audit Logs - Use Graph API | Parameter for controlling should Graph API be used to query events | `Yes` |
 | Audit Logs - Audience | The audience parameter for the HTTP calls | Commercial (Default): `https://graph.microsoft.com`<br><br>GCC: `https://graph.microsoft.com`<br><br>GCC High: `https://graph.microsoft.us`<br><br>DoD: `https://dod-graph.microsoft.us`|
 | Audit Logs - Authority | The authority field in the HTTP calls | Commercial (Default): `https://login.windows.net`<br><br>GCC: `https://login.windows.net`<br><br>GCC High: `https://login.microsoftonline.us`<br><br>DoD: `https://login.microsoftonline.us` |
-| Audit Logs - ClientID | App registration Client ID | The application client ID is from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) step. |
-| Audit Logs - Client Secret | App registration client secret (not the secret ID but the actual value) in plain text | The application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret  | The Azure Key Vault reference for the application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, see [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).|
+| Audit Logs - ClientID | App registration Client ID | The application client ID is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. |
+| Audit Logs - Client Secret | App registration client secret (not the secret ID but the actual value) in plain text | The application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
+| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret  | The Azure Key Vault reference for the application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, see [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).|
 
 
 ### Turn on flows

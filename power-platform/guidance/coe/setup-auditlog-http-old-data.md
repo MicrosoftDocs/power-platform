@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-## How to get older data
+# How to get older data
 
 This solution collects app launches after being configured, but isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](https://www.microsoft.com/licensing/docs), historic data is available for up to one year using the audit log in Microsoft Purview.
 

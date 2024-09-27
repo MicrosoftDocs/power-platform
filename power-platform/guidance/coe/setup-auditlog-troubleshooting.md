@@ -13,14 +13,14 @@ search.audienceType:
   - admin
 ---
 
-## Troubleshooting
+# Troubleshooting
 
-### API permissions
+## API permissions
 
 Go to your app registration and validate that you have the correct API permissions. Your app registration requires application permissions not delegated. Validate that the status is _Granted_.
 :::image type="content" source="media/auditlog-troubleshoot-1.png" alt-text="Screenshot that highlights the Application type and Granted for status of a configured permission." lightbox="media/auditlog-troubleshoot-1.png":::
 
-### Secret environment variable - Azure secret
+## Secret environment variable - Azure secret
 
 If you're using Azure Key value to store the app registration secret, validate that the Azure Key Vault permissions are correct.
 A user needs to be in the _Key Vault Secret User_ role to read and in the _Key Vault Contributor_ role to update.
@@ -28,7 +28,6 @@ A user needs to be in the _Key Vault Secret User_ role to read and in the _Key V
 
 If you have other issues with Azure Key Vault regarding a firewall, static IPs for Dataverse Environment, or other such feature issues,  contact product support to resolve them.
 
-### Secret Environment Variable - plain text
+## Secret Environment Variable - plain text
 
 If you're using plain text to store the app registration secret, validate that you entered the secret value itself and not the secret ID. The secret value is a longer string with a larger character set than a GUID, for example the string might have tilde characters.
-
