@@ -771,7 +771,7 @@ Although apps may be granted to use the Dynamics 365 connector for an extended t
 
 #### I have apps and flows that were in an extended transition period until October 1, 2024, under the Power Apps and Power Automate use rights for Microsoft 365 applications. What happens to my apps and flows after October 1, 2024?
 
-The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use such apps and flows. However, if an action to purchase and assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
+The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use these apps and flows. However, if an action to purchase and assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
 
 #### What is the recommendation before the enforcement of Premium connector licensing requirements begins from 1st April 2025?
 
