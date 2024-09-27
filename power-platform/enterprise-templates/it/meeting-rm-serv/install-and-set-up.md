@@ -115,12 +115,8 @@ Managed and unmanaged solution files are available for you download and manually
 
 1. Download the following Managed *or* Unmanaged solution files:
 
-    - Managed
-      - [mpa_EmployeeExperienceBase_managed.zip](https://aka.ms/EEBaseManagedSolution)
-      - [mpa_MeetingRoomServices_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
-    - Unmanaged
-      - [mpa_EmployeeExperienceBase_unmanaged.zip](<https://aka.ms/EEBaseUnmanagedSolution>)
-      - [mpa_MeetingRoomServices_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
+    - Managed:[mpa_MeetingRoomServices_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
+    - Unmanaged:[mpa_MeetingRoomServices_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. In the left pane, select **Solutions**.
