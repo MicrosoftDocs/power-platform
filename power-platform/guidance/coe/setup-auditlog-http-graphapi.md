@@ -59,7 +59,8 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
    1. Select **Application permissions**, and search for **auditlogsquery**.
       :::image type="content" source="media/coe93.png" alt-text="Screenshot that shows the search of AuditLogQuery permissions." lightbox="media/coe93.png":::
 
-   1. Select **AuditLogsQuery.Read.All**
+   1. Select **AuditLogsQuery.Read.All**.
+   
       :::image type="content" source="media/coe94.png" alt-text="Screenshot that shows the selection of correct permissions." lightbox="media/coe94.png":::
 
    1. Select **Add permissions**.
