@@ -115,7 +115,12 @@ As part of our ongoing efforts to enhance the security and performance of Datave
 
 ### What is changing?
 
-If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that aren't registered in your Microsoft Entra tenant, you won't be able to access Dataverse on the common endpoint. You'll see an error message like "Microsoft EntraSTS50020: user account `<contoso@contoso.com>`; from identity provider 'https://sts.windows.net/{tenant ID}/' doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they are blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+If [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) aren't registered in your Microsoft Entra tenant, you can't access Dataverse on the common endpoint. 
+
+You may see an error message similar to this one:
+Microsoft EntraSTS50020: user account `<contoso@contoso.com>`; from identity provider `https://sts.windows.net/{tenant ID}/` doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant. 
+
+The account must be added as an external user in the tenant. Sign out and sign in again with a different Microsoft Entra user account. Previously, Dataverse denied access to these accounts, but now they're blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
 
 ### What do you need to do?
 
