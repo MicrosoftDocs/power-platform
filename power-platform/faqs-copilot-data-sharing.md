@@ -1,15 +1,18 @@
 ---
 title: "FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
 description: "This FAQ describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
-author: amishastri 
-ms.date: 02/22/2024
+author: sericks007 
+ms.date: 09/24/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-ms.author: amishastri
+ms.author: svnielse
 ms.reviewer: sericks
 ms.collection: 
     - bap-ai-copilot
+ms.contributors:
+- jordanwoo
+- knakasu
 ---
 
 # FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform
@@ -65,9 +68,9 @@ Your data can only be accessed by Microsoft personnel with elevated access permi
 
 All data is handled as per the Copilot data security and privacy guidelines explained in [FAQ for Copilot data security and privacy in Microsoft Power Platform](faqs-copilot-data-security-privacy.md).
 
-## What about Customer Lockbox?
+## What about Customer Lockbox and customer-managed keys?
 
-[Customer Lockbox](admin/about-lockbox.md) won't apply to the access and manual review of customer data shared using this setting.
+[Customer Lockbox](admin/about-lockbox.md) and [customer-managed keys](admin/customer-managed-key.md) won't apply to the access and manual review of customer data shared using this setting.
 
 ### Related content
 

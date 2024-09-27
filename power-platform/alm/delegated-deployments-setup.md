@@ -17,7 +17,7 @@ Delegated deployments can be run as a service principal or pipeline stage owner.
 ### Prerequisites
 
 - A Microsoft Entra user account. If you don't already have one, you can [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- One of the following Microsoft Entra roles: Global Administrator, Cloud Application Administrator, or Application Administrator.
+- One of the following Microsoft Entra roles: Cloud Application Administrator, or Application Administrator.
 - You must be an owner of the enterprise application (service principal) in Microsoft Entra ID.
 
 For a delegated deployment with a service principal, follow these steps.
