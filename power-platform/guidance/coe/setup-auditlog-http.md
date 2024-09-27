@@ -108,7 +108,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 >
 > - Are audit logs enabled, and do you have permission to view the audit logs? Test if the logs are enabled by searching in [Microsoft Compliance Manager](https://compliance.microsoft.com/auditlogsearch).
 > - Did you enable the audit log recently? If so, try again in a few minutes, to give the audit log time to activate.
-> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api).
+> - Validate that you correctly followed the steps in [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access).
 > - Validate that you correctly updated the environment variables for these flows.
 
 ### Turn on flows
