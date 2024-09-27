@@ -270,7 +270,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units (preview)
+                    - name: Create or edit business units 
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -464,7 +464,7 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security
+            - name: Manage security (preview)
               href: security/security-posture-overview.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
@@ -502,6 +502,8 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Control which apps are allowed in your environment (preview)
+                  href: control-client-app-access-to-environment.md
                 - name: Configure environment security
                   items:
                     - name: Control user access to environments
@@ -543,9 +545,9 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: /power-automate/prevent-data-loss
+                      href: prevent-data-loss.md
                     - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
+                      href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
