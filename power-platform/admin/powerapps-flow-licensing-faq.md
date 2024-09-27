@@ -772,12 +772,12 @@ Although apps may be granted to use the Dynamics 365 connector for an extended t
 
 The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use such apps and flows. However, if an action to purchase and assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
 
-#### Are there any considerations or recommendations before enforcement of Premium connector licensing requirements for the reclassified connectors starts from 1st April 2025?
+#### What is the recommendation before the enforcement of Premium connector licensing requirements begins from 1st April 2025?
 
 - Ensure that you have appropriate licenses purchased and allocated. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
-- We recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim).
+- We also recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim).
 
-#### How do I identify apps and flows that are using these specific connectors that were under the extended use rights? 
+#### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
 
 Following Inventory reports are available in the Power Platform Admin center to help you identify your Apps and Flows with the connectors being used -  
 
