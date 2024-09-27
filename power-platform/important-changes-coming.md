@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 08/02/2024
+ms.date: 09/27/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,29 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecating support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
+
+To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
+
+### Why is this needed?
+
+[Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable. They pose a significant risk of acquiring cross-tenant, open authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs fail from these apps in deprecated environments.
+
+### Impact
+
+Token generation for multitenant apps fail if the service principal for that app isn't present in the target tenant.
+
+### Action required by you
+
+To ensure the security and integrity of your system and data, we encourage customers to provision the multitenant apps in their Microsoft Entra ID tenant. Learn more in [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). 
+
+> [!Note]
+> If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
+
+### When is this change coming into effect? 
+
+Support for app-only tokens by multitenant apps that don't have a service principal ID in the Target Tenant will be removed by October 2024.
 
 ## Hierarchy control in model-driven apps is deprecated
 
@@ -92,7 +115,7 @@ As part of our ongoing efforts to enhance the security and performance of Datave
 
 ### What is changing?
 
-If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that aren't registered in your Microsoft Entra tenant, you won't be able to access Dataverse on the common endpoint. You'll see an error message like "Microsoft EntraSTS50020: user account '<contoso@contoso.com>; from identity provider '<https://sts.windows.net/{tenant> ID}/' doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they are blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
+If a [Microsoft Accounts (MSA)](/azure/active-directory/external-identities/microsoft-account) or [Microsoft Entra accounts](/azure/active-directory/external-identities/default-account) that aren't registered in your Microsoft Entra tenant, you won't be able to access Dataverse on the common endpoint. You'll see an error message like "Microsoft EntraSTS50020: user account `<contoso@contoso.com>`; from identity provider 'https://sts.windows.net/{tenant ID}/' doesn't exist in tenant '{tenant name}' and can't access the application '{application ID}'(Dataverse org name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra user account.". Previously, Dataverse would deny access to these accounts, but now they are blocked at the Microsoft Entra tenant level. This change doesn't affect [GDAP](/partner-center/gdap-introduction) or CSP users.
 
 ### What do you need to do?
 
