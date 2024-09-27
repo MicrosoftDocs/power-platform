@@ -24,7 +24,7 @@ Detects errors and provides an alternative value or takes action. Create a custo
 
 > [!NOTE]
 >
-> - The behavior that this article describes is available only when the _Formula-level error management_ preview feature in [Settings > Upcoming features > Preview](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on.
+> - If an app has chosen to disable the feature _Formula-level error management_ under the retired settings in [Settings > Updates > Retired](/power-apps/maker/canvas-apps/working-with-experimental-preview#retired), then those functions will not work correctly.
 
 ## IfError
 
