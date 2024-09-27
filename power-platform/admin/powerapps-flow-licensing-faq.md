@@ -774,12 +774,12 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 
 #### What is the recommendation before the enforcement of Premium connector licensing requirements begins from 1st April 2025?
 
-- Ensure that you have appropriate licenses purchased and allocated. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
-- We also recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim).
+- Ensure that you have appropriate licenses purchased. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
+- Ensure users have licenses assigned. For this, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users. 
 
 #### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
 
-Following Inventory reports are available in the Power Platform Admin center to help you identify your Apps and Flows with the connectors being used -  
+Following inventory reports are available in the Power Platform Admin center to help you identify your Apps and Flows with the connectors being used -  
 
 - **Inventory Reports**
     - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the Connectors list in the drill through report. Right click on the app with connections and in the menu that opens click **Drill-through** > **App Connectors**
@@ -790,11 +790,11 @@ Following Inventory reports are available in the Power Platform Admin center to 
 
     :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
 
-   - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **App Inventory** tab. Steps to view the connectors list in the drill through report are similar to the steps described above for Power Apps. 
+   - [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **Inventory** tab. Steps to view the connectors list in the drill through **Flow connectors** report are similar to the steps described above for Power Apps. 
 
 #### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
 
-Yes, we recommend that you enable auto-claim policy to help you automatically assign licenses to users and void any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
+Yes, we highly recommend that you enable auto-claim policy to help you automatically assign licenses to users and avoid any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
 #### How many apps can I run with Microsoft 365 plans?
 
