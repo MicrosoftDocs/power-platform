@@ -28,15 +28,15 @@ To boost security and system performance, we are updating authentication protoco
 
 ### Why is this needed?
 
-[Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant, open authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs fail from these apps in deprecated environments.
+[Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps/) that don't have a client service principal have been recognized as vulnerable. They pose a significant risk of acquiring cross-tenant, open authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant are no longer authenticated. Dataverse APIs fail from these apps in deprecated environments.
 
 ### Impact
 
-Token generation for multitenant apps fail if the service principal for that app is not present in the target tenant.
+Token generation for multitenant apps fail if the service principal for that app isn't present in the target tenant.
 
 ### Action required by you
 
-To ensure the security and integrity of your system and data, we strongly encourage customers to provision the multitenant apps in their Microsoft Entra ID tenant. Learn more in [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). 
+To ensure the security and integrity of your system and data, we encourage customers to provision the multitenant apps in their Microsoft Entra ID tenant. Learn more in [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=msgraph-powershell). 
 
 > [!Note]
 > If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
