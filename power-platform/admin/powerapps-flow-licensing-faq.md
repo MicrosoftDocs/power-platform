@@ -782,7 +782,7 @@ The period for extended use rights concludes on October 1, 2024 and users are re
 
 The following inventory reports are available in the Power Platform admin center to help you identify your apps and flows with the connectors being used -  
 
-  - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the Connectors list in the drill through report. Right click on the app with connections and in the menu that opens click **Drill-through** > **App Connectors**
+  - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the connectors list in the drill through the report. Right-click on the app with the connections and in the menu that opens, select **Drill-through** > **App Connectors**
 
     :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
 
