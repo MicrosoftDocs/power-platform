@@ -8,8 +8,6 @@ author: paulliew
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: sericks 
-contributors: 
-    - ProfessorKendrick
 search.audienceType: 
   - admin
 ---
