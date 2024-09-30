@@ -44,6 +44,9 @@ Learn more about how to use AI functions in the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
 
+## Prerequisites
+See [requirements and licensing](https://learn.microsoft.com/ai-builder/prebuilt-prompts#prerequisites) for using these functions.
+
 ## Use in canvas apps
 
 You can call these functions from canvas apps. However, it's a little more complicated than described for other Power Fx hosts:
