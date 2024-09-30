@@ -35,3 +35,10 @@
             - name: Experience Optimization
               tocHref: /power-platform/well-architected/experience-optimization/
               topicHref: /power-platform/well-architected/experience-optimization/index
+          - name: Workloads
+            tocHref: /power-platform/well-architected/workloads/
+            topicHref: /power-platform/well-architected/workloads
+            items:
+            - name: Intelligent application
+              tocHref: /power-platform/well-architected/intelligent-application/
+              topicHref: /power-platform/well-architected/intelligent-application/index

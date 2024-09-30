@@ -4,3 +4,5 @@
   href: set-up-secure-network-communications.md
 - name: Set up Microsoft Entra ID using certificates(SSO)
   href: set-up-microsoft-entra-id-with-certificates.md
+- name: Set up Microsoft Entra ID with Azure APIM and OAuth
+  href: set-up-microsoft-entra-id-with-azure-apim-and-oauth.md
