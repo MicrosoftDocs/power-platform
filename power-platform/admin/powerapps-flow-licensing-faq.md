@@ -816,17 +816,17 @@ Yes, you can use the finance and operations apps connector to build canvas apps 
 
 Managed Environments is included as an entitlement with: 
 
-•	Power Apps Premium
-•	Power Apps per app
-•	Power Automate Premium
-•	Power Automate Process
-•	Power Automate Hosted Process
-•	Power Automate per user
-•	Power Automate per flow
-•	Microsoft Copilot Studio
-•	Power Pages Authenticated Users
-•	Power Pages Anonymous Users and
-•	Dynamics 365 Premium, Enterprise and Team Members licenses.
+- Power Apps Premium
+- Power Apps per app
+- Power Automate Premium
+- Power Automate Process
+- Power Automate Hosted Process
+- Power Automate per user
+- Power Automate per flow
+- Microsoft Copilot Studio
+- Power Pages Authenticated Users
+- Power Pages Anonymous Users and
+- Dynamics 365 Premium, Enterprise and Team Members licenses.
 
 For more information, see [Managed Environments Licensing[(/power-platform/admin/managed-environment-licensing).
 
@@ -836,10 +836,10 @@ For more information, see [Managed Environments Licensing[(/power-platform/admin
 
 Customer Managed Key policy will only be enforced in environments that are activated for Managed Environments. Users in the environment are required to have one of these subscriptions:
 
-•	Microsoft 365 or Office 365 A5/E5/G5
-•	Microsoft 365 A5/E5/F5/G5 Compliance
-•	Microsoft 365 F5 Security & Compliance
-•	Microsoft 365 E5/F5/G5 Information Protection and Governance
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/F5/G5 Information Protection and Governance
 
 For more information, see [Licensing requirements for Customer Managed Key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key). 
 
@@ -847,10 +847,10 @@ For more information, see [Licensing requirements for Customer Managed Key](/pow
 
 Enabling Customer Lockbox will enforce the policy only for environments that are activated for Managed Environments. Users in the environment where the Lockbox policy is enforced are required to have any of these subscriptions:
 
-•	Microsoft 365 or Office 365 A5/E5/G5
-•	Microsoft 365 A5/E5/F5/G5 Compliance
-•	Microsoft 365 F5 Security & Compliance
-•	Microsoft 365 E5/F5/G5 Insider Risk Management
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/F5/G5 Insider Risk Management
 
 Note: Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
 
@@ -860,12 +860,12 @@ For more information, see [Licensing requirements for Customer Lockbox](/power-p
 
 To enable Virtual Network support for Power Platform, environments must be Managed Environments. In addition, access to using Virtual Network support for Power platform requires users in the environments where the Virtual Network is enabled to have one of these subscriptions:
 
-•	Microsoft 365 or Office 365 A5/E5/G5
-•	Microsoft 365 A5/E5/F5/G5 Compliance
-•	Microsoft 365 F5 Security & Compliance
-•	Microsoft 365 E5/F5/G5 Information Protection and Governance
-•	Microsoft 365 E5/F5/G5 Insider Risk Management
-•	Organization must have an Azure subscription with permissions to create a virtual
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/F5/G5 Information Protection and Governance
+- Microsoft 365 E5/F5/G5 Insider Risk Management
+- Organization must have an Azure subscription with permissions to create a virtual network, subnet, and the enterprise policy resources.
 
 For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure). 
 
