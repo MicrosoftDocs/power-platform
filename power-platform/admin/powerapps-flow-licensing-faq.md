@@ -828,7 +828,7 @@ Managed Environments is included as an entitlement with:
 - Power Pages Anonymous Users and
 - Dynamics 365 Premium, Enterprise and Team Members licenses.
 
-For more information, see [Managed Environments Licensing[(/power-platform/admin/managed-environment-licensing).
+For more information, see [Managed Environments Licensing](/power-platform/admin/managed-environment-licensing).
 
 ### Advanced security and governance
 
