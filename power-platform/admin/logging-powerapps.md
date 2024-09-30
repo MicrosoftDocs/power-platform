@@ -1,17 +1,17 @@
 ---
-title: "Power Apps activity logging| MicrosoftDocs"
+title: Power Apps activity logging
 description: Activity logging for Power Apps 
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/07/2023
-author: Zeffin
+ms.date: 09/30/2024
+author: amchern
 ms.subservice: admin
-ms.author: sericks 
+ms.author: amchern 
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
+
 # Power Apps activity logging
 
 Power Apps activities are tracked from the [Microsoft Purview compliance portal](/purview/purview). 
