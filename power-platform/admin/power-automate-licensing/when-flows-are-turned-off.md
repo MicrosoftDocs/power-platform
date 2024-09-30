@@ -1,7 +1,7 @@
 ---
 title: When premium flows are subject to license enforcement
 description: Learn about types of enforcements and recommendations.
-author: PriyaKodukula
+author: Samathur
 contributors:
   - samathur
   - rakrish84
@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/20/2024
+ms.date: 09/30/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
