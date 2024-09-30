@@ -17,7 +17,7 @@ search.audienceType:
 
 # PowerShell support for Power Apps and Power Automate
 
-With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many monitoring and management tasks. Tasks that are only possible _manually_ today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform activity center](https://admin.powerplatform.microsoft.com/).
+With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many monitoring and management tasks. Tasks that are only possible _manually_ today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Cmdlets
 

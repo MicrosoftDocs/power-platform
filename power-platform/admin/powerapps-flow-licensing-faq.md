@@ -2,12 +2,13 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 09/26/2024
 author: chrisgarty
 contributors:
   - Antoine2F
   - chrisgarty
   - v-aangie
+  - sandhangitms
 ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
@@ -762,11 +763,38 @@ Power Apps and Power Automate usage will be subject to service limits describedÂ
 
 Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020, or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period, customers can continue to create additional apps and flows using these connectors.
 
-In addition, apps and flows created prior to October 1, 2019, that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
+In addition, apps and flows created prior to October 1, 2019, that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors, custom connectors and on-premise data gateways.
 
 The extended transition period allows for using the connectors listed above but it doesn't allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse.
+
+#### I have apps and flows that were in an extended transition period until October 1, 2024, under the Power Apps and Power Automate use rights for Microsoft 365 applications. What happens to my apps and flows after October 1, 2024?
+
+The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use these apps and flows. However, if an action to purchase and assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
+
+#### What is the recommendation before the enforcement of Premium connector licensing requirements begins from 1st April 2025?
+
+- Ensure that you have appropriate licenses purchased. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
+- Ensure users have licenses assigned. For this, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users. 
+
+#### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
+
+The following inventory reports are available in the Power Platform admin center to help you identify your apps and flows with the connectors being used -  
+
+  - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the connectors list in the drill through the report. Right-click on the app with the connections and in the menu that opens, select **Drill-through** > **App Connectors**
+
+    :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
+
+    This takes you to the Connectors used by the app.
+
+    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
+
+- [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **Inventory** tab. Steps to view the connectors list in the drill through **Flow connectors** report are similar to the steps described above for Power Apps. 
+
+#### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
+
+Yes, we highly recommend that you enable auto-claim policy to help you automatically assign licenses to users and avoid any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
 #### How many apps can I run with Microsoft 365 plans?
 

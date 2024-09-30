@@ -10,7 +10,6 @@ ms.author: matgupta
 ms.reviewer: sericks
 contributors: 
     - brsova
-    - ProfessorKendrick
     - LaurentPepin
     - bfok123
 search.audienceType: 

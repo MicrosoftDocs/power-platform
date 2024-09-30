@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2020
+ms.date: 09/16/2020
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -44,15 +44,15 @@ An email template is attached to an email activity after the activity is created
   
    > [!TIP]
    > - Although you cannot insert images or HTML directly into email messages or email templates, you can use the copy feature in [!INCLUDE[pn_Internet_Explorer](../includes/pn-internet-explorer.md)] to copy an image from a website and paste it into the email message or email template.  The image is available as long as the website is accessible.  
-   > - To include a hyperlink in an email template, type the URL including the http://, for example, http://contoso.com. Do not include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
+   > - To include a hyperlink in an email template, type the URL including the https://, for example, https://contoso.com. Do not include a period or comma or a space after the URL or the link will break. Select the link text and select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
    > 
    >    A link is automatically added to the  URL and the text is underlined and changed to blue.  
    > - To  include data fields in a hyperlink:  
    > 
-   >   1. Select the link text and data fields. For example: http://contoso.com/q?{!User : City;}  
+   >   1. Select the link text and data fields. For example: https://contoso.com/q?{!User : City;}  
    >   2. Select **Make this a Hyperlink** (![Make this a Hyperlink.](../admin/media/make-this-hyperlink.png "Make this a Hyperlink")).  
    > 
-   >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">http://contoso.com/q?{!User : City;}\</a>.  
+   >      The text and data fields will be converted to a hyperlink. For example: \<a href="https://contoso.com/q?{!User : City;}">https://contoso.com/q?{!User : City;}\</a>.  
    > 
    >      The hyperlink text will appear as a link when the template is used in an email.  
    > - There is no spell check built into customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). There might be third-party solutions available. For more information, visit [Microsoft Dynamics Solution Finder](https://www.microsoft.com/dynamics365/partners).  
