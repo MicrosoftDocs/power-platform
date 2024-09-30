@@ -92,11 +92,15 @@ Download and import the managed solution to your pipelines host environment. The
 
 ### How can makers access deployed objects within target environments?
 
-Sharing during deployment is a native capability of delegated deployments with service principals. It avoids admins needing to manually assign security roles and share deployed apps, flows, Copilots, and so on, within the Power Platform admin center. Instead, admins only need to approve the deployment request and sharing is carried out automatically by the system.
+Sharing during deployment is a native capability of delegated deployments with service principals. It avoids admins needing to manually assign security roles and share deployed apps, flows, Copilots, and so on, within the Power Platform admin center. Instead, admins only need to approve the deployment request and sharing is carried out automatically by the system. 
 
 ### Which object types can be shared during deployment?
 
 Currently, security roles, canvas apps, and cloud flows are supported. Copilot sharing might also be available depending on your region. 
+
+### Can I update sharing when new versions are deployed?
+Sharing is available the first time an object is deployed to the target environment. Not updates. 
+Be sure to select an appropriate security group during the first deployment. Manage ongoing access via security groups. 
 
 ### Which permissions are assigned for canvas apps and flows?
 
