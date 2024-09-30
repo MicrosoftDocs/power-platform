@@ -828,7 +828,7 @@ Managed Environments is included as an entitlement with:
 •	Power Pages Anonymous Users and
 •	Dynamics 365 Premium, Enterprise and Team Members licenses.
 
-For more information, see 9Managed Environments Licensing[(/power-platform/admin/managed-environment-licensing).
+For more information, see [Managed Environments Licensing[(/power-platform/admin/managed-environment-licensing).
 
 ### Advanced security and governance
 
@@ -867,6 +867,6 @@ To enable Virtual Network support for Power Platform, environments must be Manag
 •	Microsoft 365 E5/F5/G5 Insider Risk Management
 •	Organization must have an Azure subscription with permissions to create a virtual
 
-For more information, please see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure). 
+For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure). 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
