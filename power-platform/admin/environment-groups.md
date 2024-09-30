@@ -59,8 +59,7 @@ Enabling _default environment routing_ might give you more environments to manag
 
 ## Configure the rules for your environment group
 
-After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. The available rules are the same capabilities found in [Managed Environment](managed-environment-overview.md). 
-
+After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules.
 ### The sharing limits rule
 
 You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
