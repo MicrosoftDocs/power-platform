@@ -30,7 +30,7 @@ Within the **Audit log search** screen, Power Platform admins can search audit l
 Once the **Audit log search** screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown and searching for **PowerApps app activities V2**.
 
 ## What events are audited
-Logging takes place at the SDK layer, which means a single action can trigger multiple events that're logged. The following are a sample of user events you can audit.
+Logging takes place at the SDK layer, which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit.
 
 |Event  |Description  |
 |---------|---------|
@@ -56,7 +56,7 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 |Admin restored deleted app    |When the deleted app is restored by the admin|
 |Admin set desired logical name  |When the desired logical name of the app is set by the admin|
 |Admin modified app owner |When the app owner is modified by the admin  |
-|Admin modified app permissions |When the app permissions is modified by admin   |
+|Admin modified app permissions |When the app permissions are modified by admin   |
 |Admin deleted app |When the app is deleted by the admin |
 |Admin set quarantine state |When the quarantine state of the app is set by the admin|
 |Admin set conditional access   |When the conditional access of the app is set by the admin|
@@ -143,15 +143,15 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
 
 ## Review your audit data using reports in Microsoft Purview compliance portal
 
-You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true).
+You can review your audit data in the Microsoft Purview compliance portal. See [Search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true).
 
 To use the preconfigured Power Apps reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Power Apps app activities** tab.
 
 > [!div class="mx-imgBorder"] 
 > ![Audit log search Power Apps.](media/audit-log-search-pa.png "Audit log search Power Apps")
 
-### See also
- [Search the audit log in the compliance Center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true)<br/>
+### Related information
+ [Search the audit log](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide&preserve-view=true)<br/>
  [Office 365 Management APIs overview](/office/office-365-management-api/office-365-management-apis-overview)<br/>
  [Permissions in the Security & Compliance Center](/office365/securitycompliance/permissions-in-the-security-and-compliance-center)
 
