@@ -27,10 +27,10 @@ Follow these steps.
 
 Within the **Audit log search** screen, Power Platform admins can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Microsoft Entra ID, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Microsoft Power Apps.
 
-Once the Audit log search screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown and searching for **PowerApps app activities V2**.
+Once the **Audit log search** screen is accessed, an administrator can filter for specific activities by pulling down the **Activities** dropdown and searching for **PowerApps app activities V2**.
 
 ## What events are audited
-Logging takes place at the SDK layer which means a single action can trigger multiple events that are logged. The following are a sample of user events you can audit.
+Logging takes place at the SDK layer, which means a single action can trigger multiple events that're logged. The following are a sample of user events you can audit.
 
 |Event  |Description  |
 |---------|---------|
@@ -64,9 +64,8 @@ Logging takes place at the SDK layer which means a single action can trigger mul
 |Admin set app as featured |Every time the app is marked as Featured by the admin |
 |Admin allowed third party apps | When third party apps were allowed by the admin |
 
-
 ## Schema
-Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. Below is an example of the activity specific schema.
+Schemas define which Power Apps fields are sent to the Microsoft Purview compliance portal.  Some fields are common to all applications that send audit data to Microsoft Purview, while others are specific to Power Apps activities. The value in the **PropertyCollection** field is specific to each Power Apps activity type. To identify Power Apps activities, look for nested schema property **powerplatform.analytics.resource.type** with value **PowerApp** within the **PropertyCollection** property. Below is an example of the activity-specific schema.
 
 ```
 [
