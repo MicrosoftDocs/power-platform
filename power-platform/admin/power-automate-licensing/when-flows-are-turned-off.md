@@ -37,7 +37,7 @@ The report identifies flows that require a license for a subset of scenarios tha
 
 Admins can access the details of flows that need attention through either the environment level or tenant level [license usage reports](../view-license-consumption-issues.md).
 
-Enforcement using the environment lifecycle operations commences in the third quarter of 2024.
+Updated timeline for enforcement using the environment lifecycle operations will be shared in Q4 2024.
 
 |Enforcement type  |Exceptions  |Recommended action   |
 |---------|---------|---------|
