@@ -5,12 +5,11 @@ author: asheehi1
 ms.author: asheehi
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 08/15/2024
+ms.date: 09/30/2024
 ms.custom: template-how-to
 contributors:
 - asheehi1
 ---
-
 # Create a personal pipeline using the platform host
 
 Pipelines are available to all who navigate to the pipelines page for the first time. Create personal pipelines from your development environments to other target environments that you have import access to. Apply the benefits of pipelines such as no downloads or uploads required, deployment scheduling, inline target environment solution validation, upfront connection reference and environment variable value validation, and Copilot-generated deployment notes with an easy setup process.
@@ -75,7 +74,7 @@ This action doesn't remove the run history for the pipeline nor does it delete t
 
 ### Use your personal pipeline with other development environments
 
-If you have the same pipeline process for an additional development environment, such as your UAT and production environments are the same for another source environment, you can reuse the pipeline that you already created.
+If you have the same pipeline process for an additional development environment, such as your user acceptance testing (UAT) and production environments are the same for another source environment, you can reuse the pipeline that you already created.
 
 Choose the created pipeline from the dropdown menu. When you select **Next** in the first step of the deployment configuration process, the current environment is linked to the pipeline (and the host) as a development environment.
 
@@ -88,11 +87,11 @@ From the **Pipelines** page within any solution, the **Manage pipelines** button
 
 The Deployment Pipeline Configuration app can be accessed by anyone with the Deployment Pipeline Administrator role if using a custom host, and any tenant administrator for the app associated with the Platform host.
 
-## Frequently Asked Questions
+## Frequently asked questions
 
-### When I navigate to "Manage pipelines", why am I receiving a privilege error when I am a System Administrator or why is it loading the app indefinitely?
+### When I navigate to "Manage pipelines", why am I receiving a privilege error when I'm a system administrator or why is it loading the app indefinitely?
 
-Sometimes, when another user authentication cookie is present in your browser, the embedded model-driven app experience can throw an error related to privileges to access the app. In this case, try **clearing your web browser's cookies** or **switching to an InPrivate window** in your web browser to ensure that your authorization token is the only one being considered.
+Sometimes, when another user authentication cookie is present in your browser, the embedded model-driven app experience can display an error message related to privileges to access the app. In this case, clear your web browser's cookies or open the app in an InPrivate window in your web browser to ensure that your authorization token is the only one considered.
 
 ## Next steps
 
