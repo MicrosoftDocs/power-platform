@@ -45,7 +45,7 @@ Learn more about how to use AI functions in the following video.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1iGPI]
 
 ## Prerequisites
-See [requirements and licensing](https://learn.microsoft.com/ai-builder/prebuilt-prompts#prerequisites) for using these functions.
+For more information on prerequisites, see [Requirements and licensing for prebuilt prompts](ai-builder/prebuilt-prompts#prerequisites).
 
 ## Use in canvas apps
 
