@@ -214,10 +214,12 @@ This recommendation lists trial websites that are expiring in the next seven day
 
 ### Websites didn't receive any traffic in the last 30 days
 
-This recommendation lists websites that received no traffic in the last 30 days. This means there are some websites
-in your tenant that didn't have any visitors in the past month. These websites might be outdated, irrelevant, or redundant.
+This recommendation lists websites that received no traffic in the last 30 days. This means some websites
+in your tenant had no visitors in the past month. These websites might be outdated, irrelevant, or redundant.
 
-To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center, select **Resources**, > **Power Pages sites**> **Analytics** to get more insights into the traffic.
+To review these websites, select the recommendation to see a list of the websites, their URLs, environment names, and environment types. You can also visit the Power Pages admin center to get more insights into the traffic.
+
+1. Select **Resources** > **Power Pages sites** > **Analytics**.
 
 If a website isn't currently needed, you can shut it down. When a website is shut down, it's unavailable to users. You can always restart the websites later if you need them.
 
