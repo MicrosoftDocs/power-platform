@@ -51,12 +51,10 @@ Ensure that responses are timely and efficient when you're designing logic for y
 - **Response time requirement**: Requiring Power Automate to respond to Copilot within 100 milliseconds, which necessitates highly optimized and efficient logic.
 
 - **Evaluating execution speed**: If the logic can't be executed quickly enough within Power Automate or Copilot Studio, or if it involves complex operations better suited to code, consider offloading the logic to other services:
+
   - **[Dataverse custom APIs](/power-apps/developer/data-platform/custom-api),** custom endpoints that can be created within Dataverse to handle specific logic. They have a 2-minute timeout limit, providing more time for complex operations. Custom APIs can be invoked via connectors or HTTP requests, offering flexibility in integration.
   - **[Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins?tabs=instant),** similar to custom APIs but can be created with minimal coding. They also have a 2-minute timeout limit and can be invoked similarly. 
   - **[Azure Functions](/azure/azure-functions/),** serverless functions that can execute code in response to events. They offer high scalability and can handle complex logic efficiently. Azure Functions can be triggered via HTTP requests, making them easy to integrate with Power Automate and Copilot Studio.
-
-
-
 
 ## Middle Layer Integration
 
@@ -70,11 +68,11 @@ Middle Layer Integration is a strategic approach that can significantly enhance 
 
 - **Data validation**: Ensure the integrity and accuracy of data before it's processed by adding validation rules to check for data completeness, correctness, and consistency. Data validation can help prevent errors and ensures that only high-quality data is processed, improving the reliability of the application.
 
-- **Performance optimization**: Improve the speed and efficiency of data processing by using caching, or asynchronous processing to handle large volumes of data efficiently. This strategy can help reduce latency and ensure timely responses, enhancing the overall user experience.
+- **Performance optimization**: Improve the speed and efficiency of data processing by using caching, or asynchronous processing, to handle large volumes of data efficiently. This strategy can help reduce latency and ensure timely responses, enhancing the overall user experience.
 
 ## Compare integration patterns
 
-Integration patterns aren't exclusive and can be combined. Evaluate the integration options to align with the specific needs and constraints of the intelligent application workload, such as performance requirements, scalability, security, and maintainability. Mitigate risks, optimize resource utilization, and ensure a seamless and robust integration by evaluating available integration patterns.
+Integration patterns aren't exclusive and can be combined. Evaluate the integration options to align with the specific needs and constraints of the intelligent application workload, such as performance requirements, scalability, security, and maintainability. Mitigate risks, optimize resource usage, and ensure a seamless and robust integration by evaluating available integration patterns.
 
 | | Power Automate cloud flows | HTTP requests and connectors | Bot Framework Skills
 | --- | --- | --- | --- |
