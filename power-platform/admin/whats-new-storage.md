@@ -24,7 +24,7 @@ We're rolling out these features now so check back if your user experience varie
 
 ## Updates to storage reporting 
 
-In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types. They also receive more per-user subscription license entitlements. More storage can be purchased in 1-GB increments. Existing customers won't be affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
+In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types. They also receive more per-user subscription license entitlements. More storage can be purchased in 1-GB increments. Existing customers aren't affected by this change until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
 ![Evolution of data management.](media/storage-model-evolution.png "Evolution of data management")
 
@@ -70,7 +70,7 @@ The [Universal License Terms for Online Services](https://www.microsoft.com/lice
 
 Your organization must have the right licenses for the storage you use: 
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
-- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft will provide reasonable notice before suspending your online service.
+- If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
 
 If the storage consumption goes over the entitled limit, we encourage you to manage the excess consumption by deleting unused data or purchasing extra operations storage capacity.
 
@@ -104,7 +104,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
 1. In the navigation pane, select **Resources** > **Capacity**.
 
-1. If you're running low on storage capacity, you'll see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+1. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
    
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
@@ -118,7 +118,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
    :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
 
-    After enabling the extension, for the next 30 days the additional capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+    After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
    :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
 
@@ -128,7 +128,7 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 - An extension applies to both the legacy and new storage capacity models.
 - An extension allows you to create an environment.
 - An extension allows admins to copy and restore environments for a maximum of 30 days while over the capacity limit.
-- Your organization can request an extension a maximum of 3 times.
+- Your organization can request an extension a maximum of three times.
 - After extension, copying and restoring environments will again be blocked if the tenant doesn't have available storage capacity. To avoid this situation, admins should reduce storage usage and/or purchase more storage capacity.
 
 ## Change log for major updates in storage
