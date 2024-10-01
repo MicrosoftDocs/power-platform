@@ -100,28 +100,25 @@ You can request a temporary (30-day) extension that allows copy and restore oper
 
    > [!Note]
    > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
-   >
-   > - You can extend capacity on your account a maximum of 3 times.
+   > - You can extend capacity on your account a maximum of three times.
 
-2. In the left pane, select **Resources**.
+1. In the navigation pane, select **Resources** > **Capacity**.
 
-3. Select **capacity**.
-
-4. If you're running low on storage capacity, you'll see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+1. If you're running low on storage capacity, you'll see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
    
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
-5. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable Capacity Extension**.
+1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
    :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
 
-6. Select **Confirm**.
+1. Select **Confirm**.
 
-7. A banner displays the temporary capacity extension has is enabled. 
+1. A banner displays the temporary capacity extension has been enabled. 
 
    :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png"::::::
 
-After enabling the extension, for the next 30 days the additional capacity will appear in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+    After enabling the extension, for the next 30 days the additional capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
    :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
 
