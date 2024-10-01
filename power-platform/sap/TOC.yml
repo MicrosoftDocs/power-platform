@@ -1,5 +1,5 @@
 
-- name: Overview
+- name: Overview of SAP on Power Platform
   href: overview.md
 - name: Getting Started with the SAP ERP Connector
   href: guides/getting-started-with-the-sap-erp-connector.md
