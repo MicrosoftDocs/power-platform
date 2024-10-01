@@ -16,18 +16,18 @@ search.audienceType:
 
 # Extend Dataverse capacity for 30 days
 
-You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an additional 25% amount of capacity to your tenant for 30 days. 
+You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an extra 25% amount of capacity to your tenant for 30 days. 
 
 Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-If your tenant is running low on available storage capacity, and you need immediate capacity while you work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md), you can temporarily extend an additional 25% of storage to your tenant for 30 days.
+If your tenant is running low on available storage capacity, and you need immediate capacity while you work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md), you can temporarily extend an extra 25% of storage to your tenant for 30 days.
 
 > [!NOTE]
 > The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 >
 > Your organization must have the right licenses for the storage you use:
 >
-> - If you use more than your documented entitlements or usage limits, you must buy additional licenses.
+> - If you use more than your documented entitlements or usage limits, you must buy extra licenses.
 >
 > - If your storage consumption exceeds the documented entitlements or usage limits, we may suspend use of the online service. 
 >
@@ -35,21 +35,21 @@ If your tenant is running low on available storage capacity, and you need immedi
 
 ## Prerequisites
 
-Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of know how much more storage capacity is needed to be extended. Non-admins can also [view self-service storage capacity](view-self-service-capacity.md).
+Review your [current capacity storage usage](capacity-storage.md#verifying-your-microsoft-dataverse-capacity-based-storage-model) to make sure you're aware of how much more storage capacity is needed to be extended. Nonadmins can also [view self-service storage capacity](view-self-service-capacity.md).
 
 ## Extend Dataverse capacity 
 
-After you determine how much storage you're using, use the following steps to extend an additional 25% of capacity to your tenant.
+After you determine how much storage you're using, use the following steps to extend an extra 25% of capacity to your tenant.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
    > [!Note]
    > - Be sure to select the correct tenant to extend the storage capacity for 30 days. 
-   > - You can extend capacity on your account a maximum of 3 times.
+   > - You can extend capacity on your account a maximum of three times.
 
 1. In the navigation pane, select **Resources > Capacity**.
 
-1. If you're running low on storage capacity, you'll see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
+1. If you're running low on storage capacity, you see the following banner. In the banner at the top of the page, select **Enable capacity extension**.
    
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
@@ -59,17 +59,17 @@ After you determine how much storage you're using, use the following steps to ex
 
 1. Select **Confirm**.
 
-1. A banner displays the temporary capacity extension has is enabled. 
+1. A banner displays the temporary capacity extension has been enabled. 
 
    :::image type="content" source="media/storage-extend-capacity-success.png" alt-text="Successfully tenant capacity extension." lightbox="media/storage-extend-capacity-success.png":::
 
-  After enabling the extension, for the next 30 days the additional capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
+  After turning on the extension, for the next 30 days the extra capacity appears in the Power Platform admin center **Capacity** page (**Resources** > **Capacity** > **Summary**).
 
    :::image type="content" source="media/storage-extend-capacity-banner-30-days.png" alt-text="Tenant capacity extension in admin center." lightbox="media/storage-extend-capacity-banner-30-days.png":::
 
 ## What happens after a capacity extension expires in 30 days?
 
-If you exceed your storage capacity, you receive email notifications that alerts you to the over-capacity usage. Learn more about the new model for email notification in [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). Learn more about the legacy model for email notification in [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. Learn more about the new model for email notification in [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). Learn more about the legacy model for email notification in [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 
