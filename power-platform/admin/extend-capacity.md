@@ -8,22 +8,22 @@ ms.reviewer: sericks
 ms.custom: admin-security
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/26/2024
+ms.date: 10/01/2024
 search.audienceType: 
   - admin
     
 ---
 
-# Extend Dataverse capacity for 30 Days
+# Extend Dataverse capacity for 30 days
 
 You have options when you're running low on storage capacity. You can [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or extend an additional 25% amount of capacity to your tenant for 30 days. 
 
-Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) and the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 If your tenant is running low on available storage capacity, and you need immediate capacity while you work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md), you can temporarily extend an additional 25% of storage to your tenant for 30 days.
 
 > [!NOTE]
-> The Universal License Terms for Online Services apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+> The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
 >
 > Your organization must have the right licenses for the storage you use:
 >
@@ -53,7 +53,7 @@ After you determine how much storage you're using, use the following steps to ex
    
    :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
 
-1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable Capacity Extension**.
+1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
 
    :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
 
