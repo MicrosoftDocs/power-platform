@@ -35,10 +35,6 @@ For more information on the different roles for managing your tenant across the 
 
  **Key highlights**  
 
-- **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
-
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Dataverse in future releases. 
-
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
 - **Manage storage and performance**: Monitor storage quotas, storage use, and top tables by size to optimize performance.  
