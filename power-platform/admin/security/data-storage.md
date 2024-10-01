@@ -76,9 +76,7 @@ Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../
 > [!NOTE]
 > Prior to activating either of these SAS features, customers must first allow access to the `https://*.api.powerplatformusercontent.com` domain or most SAS functionalities won't work.
 
-This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting restricts who, based on IP, can use enterprise SAS tokens. 
-
-This feature is currently in private preview. Public preview is planned for later this spring, with general availability in summer 2024. For more information, see [Release Planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). 
+This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting restricts who, based on IP (IPv4 & IPv6) can use enterprise SAS tokens. 
 
 These settings can be found in an environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
@@ -90,6 +88,9 @@ Admins can enable one of these four configurations for this setting:
 | IP Firewall Only        | This restricts using SAS keys to only work within an admin specified range.                                                |
 | IP Binding and Firewall | This restricts using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
 | IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding is applied. |
+
+> [!NOTE]
+> Admins who chose to enable IP Firewall (Option 2, 3, & 4) must enter BOTH the IPv4 and IPv6 ranges of their networks to ensure proper coverage of their users.
 
 #### Products enforcing IP Binding when enabled:
 - Dataverse
@@ -106,6 +107,9 @@ Admins can enable one of these four configurations for this setting:
   - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages that lose connection.
   - More significantly, due to the IP validation that this security setting uses, some functionality may perform slower than if it was turned off.
 
+
+#### Updating These Settings Programatically
+Admins can leverage automation to set and update both the IP Binding vs Firewall, The IP Range that is allowlisted, and the Logging toggle. [Programaticly Update Settings](https://learn.microsoft.com/en-us/power-platform/admin/programmability-tutorial-environmentmanagement-settings)
 
 ### Logging of SAS calls
 This setting enables all SAS calls within Power Platform to be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
