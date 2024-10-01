@@ -9,7 +9,6 @@ ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
 contributors:
-    - ProfessorKendrick
     - jasongre
 search.audienceType: 
   - admin

@@ -154,6 +154,8 @@
               href: coe/setup-admin-tasks-component.md
             - name: Set up theming components
               href: coe/setup-theming.md
+            - name: Set up the Business value toolkit
+              href: coe/setup-business-value-toolkit.md              
             - name: What's next - updating the CoE Starter Kit
               href: coe/after-setup.md
             - name: What's next - extending the CoE Starter Kit
@@ -166,6 +168,8 @@
               items:
                 - name: Core components
                   href: coe/core-components.md
+                - name: Business value toolkit
+                  href: coe/business-value-toolkit.md
                 - name: Governance components
                   href: coe/governance-components.md
                 - name: Nurture components
@@ -413,24 +417,6 @@
               href: creator-kit/setfocus.md
     - name: Automation adoption best practices
       href: /power-automate/guidance/automation-coe/overview
-    - name: Real-world architecture examples
-      items:
-        - name: Overview
-          href: architecture/real-world-examples/overview.md
-        - name: Using the SharePoint connector with canvas apps
-          href: architecture/real-world-examples/sharepoint-canvas.md
-        - name: Using Dataverse with canvas apps
-          href: architecture/real-world-examples/dataverse-canvas-app.md
-        - name: Using Azure Functions to extend a canvas app
-          href: architecture/real-world-examples/azure-function-canvas.md
-        - name: Using REST APIs through custom connectors with canvas apps
-          href: architecture/real-world-examples/custom-connector-canvas.md
-        - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
-          href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
-        - name: Using on-premises SQL Server with canvas apps
-          href: architecture/real-world-examples/sql-gateway-canvas.md
-        - name: Using Power Apps component framework with canvas apps
-          href: architecture/real-world-examples/pcf-canvas-components.md
     - name: ExpressRoute and Power Platform
       items:
         - name: Overview
@@ -449,6 +435,30 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
+    - name: Real-world architecture examples
+      items:
+        - name: Overview
+          href: architecture/real-world-examples/overview.md
+        - name: Using the SharePoint connector with canvas apps
+          href: architecture/real-world-examples/sharepoint-canvas.md
+        - name: Using Dataverse with canvas apps
+          href: architecture/real-world-examples/dataverse-canvas-app.md
+        - name: Using Azure Functions to extend a canvas app
+          href: architecture/real-world-examples/azure-function-canvas.md
+        - name: Using REST APIs through custom connectors with canvas apps
+          href: architecture/real-world-examples/custom-connector-canvas.md
+        - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
+          href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
+        - name: Using on-premises SQL Server with canvas apps
+          href: architecture/real-world-examples/sql-gateway-canvas.md
+        - name: Using Power Apps component framework with canvas apps
+          href: architecture/real-world-examples/pcf-canvas-components.md
+    - name: Real-world case studies
+      items:
+        - name: A1 Inteligencia em Viagens boosts team efficiency
+          href: case-studies/boost-efficiency-experience-case-study.md
+        - name: Epiq streamlines employee onboarding
+          href: case-studies/streamline-employee-onboarding.md
     - name: White papers
       items:
         - name: Power Platform white papers

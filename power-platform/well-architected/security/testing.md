@@ -151,7 +151,7 @@ Security experts who aren't part of the organization's IT or application teams c
 
 > :::image type="icon" source="../_images/risk.svg"::: **Risk**: A pentesting exercise might affect the runtime environment and might disrupt the availability for normal traffic.
 
-The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [See also](#see-also).
+The practitioners might need access to sensitive data in the entire organization. Follow the rules of engagement to ensure that access isn't misused. See the resources listed in [Related information](#related-information).
 
 ##### Tests that simulate attacks through war game exercises
 
@@ -190,9 +190,7 @@ The practice of DevSecOps integrates security testing as part of an ongoing and 
 
 Azure DevOps supports third-party tools that can be automated as part of the continuous integration/continuous deployment (CI/CD) pipelines. For more information, see [Enable DevSecOps with Azure and GitHub](/devops/devsecops/enable-devsecops-azure-github).
 
-## See also
-
-<!-- This is not our typical "See also" section. If we change the heading note cross reference above to this section. -->
+## Related information
 
 The latest penetration tests and security assessments can be found on the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/viewpage/PenTest).
 

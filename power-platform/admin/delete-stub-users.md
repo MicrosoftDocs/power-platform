@@ -1,5 +1,5 @@
 ---
-title: Delete stub users from an environment (preview)
+title: Delete stub users from an environment 
 description: This article shows how to delete stub users from an environment in Microsoft Power Platform admin center.
 ms.subservice: admin
 author: paulliew
@@ -7,19 +7,14 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 07/09/2024
+ms.date: 08/27/2024
 search.audienceType: 
   - admin
 ---
 
-# Delete stub users from an environment (preview)
-[This article is prerelease documentation and is subject to change.]
+# Delete stub users from an environment 
 
 Stub user records are created as placeholder records in the user table. They're created to allow records to be imported from external systems during migration of those applications. Stub user records are created with a _disabled_ status and assigned with a security role. These users can’t log into the Dataverse environment. For more information, see [How stub users are created](create-users.md#how-stub-users-are-created). You can delete these stub users from the user table.
-
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 
 ## Delete disabled status stub users

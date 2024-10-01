@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/11/2024
+ms.date: 07/29/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -110,7 +110,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.search.disableCommunitySearch | Boolean | When this setting is true, users in the environment can see a message that indicates community and blog search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.search.disableBingVideoSearch | Boolean | When this setting is true, users in the environment can see a message that indicates video search categories have been turned off by the administrator. Default value is false.|
 |powerPlatform.powerApps.disableShareWithEveryone | Boolean | Ability to turn off the **Share with Everyone** capability for nonadmin users in all Power Apps. Default value is true.|
-|powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
+|powerPlatform.powerApps.enableCanvasAppInsights | Boolean | Allow users to collect telemetry data about their app in Azure Application Insights. Setting this to **False**  blocks the transmission of this data. |
 |powerPlatform.powerApps.DisableConnectionSharingWithEveryone | Boolean | Gets or sets a value indicating whether non-admin users in the tenant can share connections with everyone. Default value is false. |
 |powerPlatform.powerApps.enableGuestsToMake | Boolean | Ability to allow guest users in your tenant to create Power Apps. Default value is false.|
 |powerPlatform.powerApps.disableMembersIndicator | Boolean | This setting isn't currently used by the platform but might be used in the future.|
@@ -118,7 +118,6 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.powerApps.disableUnusedLicenseAssignment | Boolean | This setting isn't currently used by the platform but might be used in the future.|
 |powerPlatform.powerApps.disableCreateFromImage | Boolean | Allow people to use AI to generate an app based on an image. Default value is false.|
 |powerPlatform.powerApps.disableCreateFromFigma | Boolean | Allow people to create a canvas app based on a Figma file. Default value is false.|
-|powerPlatform.powerApps.disableConnectionSharingWithEveryone | Boolean | This setting isn't currently used by the platform but might be used in the future.|
 |powerPlatform.teamsIntegration.shareWithColleaguesUserLimit | Integer | Maximum value setting for the number of users in a security group used to share an app built using Power Apps on Microsoft Teams. Default value is 10000 but can be increased or decreased, as required.|
 |powerPlatform.powerAutomate.disableCopilot | Boolean | Disables cloud flows copilot in Power Automate.<br><br>It doesn't control the ability to add AI-related connectors or actions in the flow designer. For example, the Skills connector or AI Builder creates text with a GPT action. Default value is false.|
 |powerPlatform.powerAutomate.disableCopilotWithBing | Boolean | Disables the copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search. Default value is false.|

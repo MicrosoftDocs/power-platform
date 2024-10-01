@@ -220,8 +220,6 @@ It recommends that the app owner takes a backup of the app if they would like to
 
 This flow starts the approval process and writes the approval task to the Archive Approval Dataverse table.
 
-![Inactivity notifications v2 (Start Approval for Apps) flow.](media/coe58.png "Inactivity notifications v2 (Start Approval for Apps) flow")
-
 **Customize**: By default, this flow assigns approvals to the app owner. In order to test in a debug environment, in which you don't want to involve users, you can update the [*ProductionEnvironment* environment variable](setup-governance-components.md#all-environment-variables) to **No**, and the approvals are sent to the admin account instead.
 
 ![Inactivity notifications v2 - workflow for Apps.](media/archivalFlow-Apps.png "Inactivity notifications v2 - workflow for Apps")
@@ -276,8 +274,6 @@ And then for each employee, either reject the deletion or send a reminder.
 ![Cleanup screen.](media/ArchiveApps3.png "Cleanup screen")
 
 They can send the person to the app to do the cleanup as well. There, they're able to approve/reject deletion for all their objects.
-
-![Send reminder mail screen.](media/ArchiveApps4.png "Send reminder mail screen")
 
 #### App and Flow Inactivity Notifications Clean Up View
 
@@ -427,7 +423,5 @@ If the app is released from quarantine, an email is sent to the maker to inform 
 ![The app maker gets an email notification to inform them their app has been released from quarantine.](media/quarantine3.png "The app maker gets an email notification to inform them their app has been released from quarantine.")
 
 Apps that are quarantined are also flagged in the [Developer Compliance Center](#developer-compliance-center) as **Non-Compliant**.
-
-![Quarantined apps are highlighted as such in the Developer Compliance Center app.](media/quarantine5.png "Quarantined apps are highlighted as such in the Developer Compliance Center app.")
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

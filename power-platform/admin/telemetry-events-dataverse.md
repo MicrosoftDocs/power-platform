@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 12/12/2022
 author: Zeffin
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -138,7 +138,7 @@ exceptions
 The entity ID and entity name are available in **customDimensions** in the **dependency** table.
 
 ```kusto
-dependencies<br />
+dependencies
 | where type == "SDK Retrieve"
 ```
 
@@ -206,9 +206,6 @@ dependencies
 ### Will this telemetry have throttling? 
 
 Yes. Basic 429 error details are currently provided.
-
-> [!div class="mx-imgBorder"] 
-> ![Basic 429 error.](media/application-insights-basic-429-error.png "Basic 429 error")
 
 ### Can I understand execution paths? Are calls made by the plug-in slowing the plug-in?  
 

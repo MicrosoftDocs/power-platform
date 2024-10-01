@@ -1,5 +1,5 @@
 ---
-title: Delete unlicensed or removed Microsoft Entra group users (preview)
+title: Delete unlicensed or removed Microsoft Entra group users 
 description: This article explains how to delete unlicensed or Microsoft Entra group users who are no longer in the group from an environment in Microsoft Power Platform admin center.
 ms.subservice: admin
 author: paulliew
@@ -7,13 +7,12 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.topic: conceptual
-ms.date: 04/25/2024
+ms.date: 08/27/2024
 search.audienceType: 
   - admin
 ---
 
-# Delete unlicensed or removed Microsoft Entra group members (preview)
-[This article is prerelease documentation and is subject to change.]
+# Delete unlicensed or removed Microsoft Entra group members 
 
 There are different scenarios where a user’s status might be set to _disabled_, including the following scenarios:
 
@@ -23,9 +22,6 @@ There are different scenarios where a user’s status might be set to _disabled_
 
 -	When a user is removed from the Microsoft Entra group.
 
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## Delete unlicensed or removed Microsoft Entra group users
 There’s an organization setting which allows you to override the validation of the unlicensed or removed Microsoft group user’s active status so you can delete them.

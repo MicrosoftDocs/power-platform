@@ -1,16 +1,18 @@
 ---
 title: "Configure Dataverse search to improve search results and performance   | MicrosoftDocs"
 description: Configure Dataverse search to improve search results and performance. 
-author: sericks007
+author: mspilde
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/11/2024
+ms.date: 09/19/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: mspilde
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
-- mspilde 
+- wobushixinxin67
+
 ---
 # Configure Dataverse search for your environment
 
@@ -168,7 +170,7 @@ The progress bar at the bottom shows the percentage of indexed fields as a fract
 
 When you've reached the indexed field limit, you'll see a warning message. If you want to add more fields to the index, you'll have to free up space, either by removing some of the fields that are already in the index or removing entire tables from Dataverse search scope.
 
-By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable.
+By default, the following system tables are indexed for Dataverse search. However, custom tables aren't included. You must add them to Dataverse search for them to be searchable. The numbers in parenthesis, below, indicate the total number of columns included in the index for that table.
 
 | Tables enabled for Dataverse search<br /> without Dynamics 365 apps enabled | Tables enabled for Dataverse search<br /> with Dynamics 365 apps enabled |
 |-------------------------|-------------------------|
@@ -235,6 +237,8 @@ To edit the searchable fields of a table:
 > [!NOTE]
 >
 > - Changes made to the Dataverse search configuration or to the searchable data may take up to 15 minutes to appear in the search service. It may take up to an hour or more to complete a full sync for average size organizations, and a couple of days for very large size organizations.
+>
+> - The maximum search term size is 1024 characters.
 >
 > - Although you can have related table fields as a **View column** or a **Find column** or a **Filter column** in a table's Quick Find View, related table fields are not supported by Dataverse search and hence ignored.
 >

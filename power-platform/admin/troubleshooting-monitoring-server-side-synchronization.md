@@ -3,7 +3,7 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/19/2023
+ms.date: 07/23/2024
 author: rahulmital 
 ms.subservice: admin
 ms.author: rahulmital 
@@ -55,9 +55,6 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
  You can use the Server-Side Synchronization Monitoring dashboard to get a quick look at the health of mailboxes using server-side sync.  
   
  Go to any dashboard, click Select ![Drop-down button.](../admin/media/drop-down-button.png "Drop-down button") next to the dashboard title, and then click **Server-Side Synchronization Monitoring**.  
-
-> [!div class="mx-imgBorder"] 
-> ![Server-side Synchronization Monitoring dashboard.](../admin/media/server-side-sync-performance-dashboard.png "Server-side Synchronization Monitoring dashboard")  
   
  This dashboard is made up of multiple charts, each providing insights into your organization's server-side sync performance.  
   
@@ -67,9 +64,6 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 > ![Click on the mailboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the mailboxes listed for more info.")  
   
  Click on the grid icon in each chart to view the records that are used to generate the chart.  
-  
-> [!div class="mx-imgBorder"] 
-> ![Click to view records used to create chart.](../admin/media/server-side-sync-performance-dashboard-chart.PNG "Click to view records used to create chart")  
 
 ## Common alerts and recommended resolutions  
   
@@ -105,7 +99,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
  **Cause:**  
   
- This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in customer engagement apps as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, customer engagement apps be able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
+ This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by a [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with sufficient access to approve mailboxes needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. Learn more about who can approve mailboxes at [Approve email](connect-exchange-online.md#approve-email). The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. After the [approval process](connect-exchange-online.md#approve-email), customer engagement apps are able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
   
  **Solution:**  
   
@@ -143,7 +137,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 6. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
   
 > [!NOTE]
-> You can remove the requirement for approving mailboxes using: **Settings** > **Administration** > **System Settings** > **Email** tab. Uncheck **Process emails only for approved users** and **Process emails only for approved queues**, then click **OK**. If you are using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, email addresses must still be approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator.  
+> You can remove the requirement for approving mailboxes. Learn more at [Remove the requirement to approve mailboxes](connect-exchange-online.md#remove-the-requirement-to-approve-mailboxes).
   
 ### Mailbox location could not be determined  
  **Alert:** The mailbox location could not be determined while sending/receiving the email message \<Message Subject>. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the associated email server profile \<Email Server Profile name> has been notified.  

@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 ms.component: pa-admin
 contributors: srpoduri
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 08/27/2024
 search.audienceType: admin
 
 ---
@@ -18,42 +18,39 @@ search.audienceType: admin
 
 Use Microsoft Entra Privileged Identity Management (PIM) to manage high-privileged admin roles in the Power Platform admin center.
 
-
 ## Prerequisites
 
 - Remove old system administrator role assignments in your environments. You can use [PowerShell scripts](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement) to inventory and remove unwanted users from the **System Administrator** role in one or more Power Platform environments.
 
 ## Changes to feature support
 
-Microsoft doesn't automatically assign the **System Administrator** role for users with these Microsoft Entra ID roles (also called tenant admins):
+Microsoft no longer automatically assigns the **System Administrator** role to users with global or service level admin roles such as Power Platform Administrator and Dynamics 365 Administrator.
 
-- Global administrator
-- Power Platform administrator
-- Dynamics 365 administrator
-
-Tenant admins can continue to sign in, to the Power Platform admin center, with these privileges:
+These admins can continue to sign in, to the Power Platform admin center, with these privileges:
 
 - Enable or disable tenant level settings
 - View analytics information for environments
 - View capacity consumption
 
-Tenant admins can't perform activities that require direct access to Dataverse data. Examples of these activities include:
+These admins can't perform activities that require direct access to Dataverse data without a license. Examples of these activities include:
 
 - Updating the security role for a user in an environment
 - Installing apps for an environment
 
 > [!IMPORTANT]
-> Tenant admins must do another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
+> Global admins, Power Platform admins, and Dynamics 365 service administrators must complete another step before they can perform activities requiring access to Dataverse. They must elevate themselves to the **System Administrator** role in the environment where they need access. All elevation actions are logged to Microsoft Purview.
 
 ## Known limitations
 
-- When using the API, you'll notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
+- When using the API, you notice that if the caller is a system administrator, the self-elevate call returns a success rather than notifying the caller that the system administrator already exists.
 
 - The user making the call must have the tenant admin role assigned. For a full list of users who meet the tenant admin criteria, see [Changes to feature support](#changes-to-feature-support)
 
 - If you're a Dynamics 365 administrator and the environment is protected by a security group, you must be a member of the security group. This rule doesn't apply to users with the global administrator or Power Platform administrator roles.
 
 - The elevation API can only be invoked by the user who needs to elevate their status. It doesn't support making API calls on behalf of another user for elevation purposes.
+
+- The system administrator role assigned through self-elevation is **not** removed when the role assignment expires in Privileged Identity Management. You must manually remove the user from the system administrator role. See [clean-up activity](#step-3-clean-up-activity)
 
 - A workaround is available for customers using the Microsoft Power Platform CoE Starter Kit. See [PIM Issue and Workaround #8119](https://github.com/microsoft/coe-starter-kit/issues/8119) for more information and details.
 
@@ -89,8 +86,6 @@ In this PowerShell script, you:
 ##### Add your environment ID
 
 1. Get your **Environment ID** from the **Environments** tab of the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/).
-
-   :::image type="content" source="media/manage-high-privileged-admin-roles/get-env-id.png" alt-text="Screenshot that shows where you can get your environment ID.":::
 
 1. Add your unique `<environment id>` to the script.
 
@@ -175,7 +170,7 @@ You might see an error message if you don't have the right permissions.
 "Unable to assign System Administrator security role as the user is not either a Global admin, Power Platform admin, or Dynamics 365 admin. Please review your role assignments in Entra ID and try again later. For help, please reach out to your administrator."
 ```
 
-#### Step 3: Clean up activity
+#### Step 3: Clean-up activity
 
 Run [Remove-RoleAssignmentFromUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#remove-role-assignments-from-given-list-of-users) to remove users from the System Administrator security role after the assignment expires in PIM.
 

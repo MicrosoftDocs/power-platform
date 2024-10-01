@@ -8,7 +8,7 @@ contributors:
 ms.reviewer: angieandrews
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/22/2024
+ms.date: 08/06/2024
 ms.subservice: admin
 ms.author: cgarty
 search.audienceType: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 # PowerShell support for Power Apps and Power Automate
 
-With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many monitoring and management tasks. Tasks that are only possible _manually_ today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform activity center](https://admin.powerplatform.microsoft.com/).
+With [PowerShell](/powershell/scripting/overview) cmdlets for Power Platform creators and administrators, you can automate many monitoring and management tasks. Tasks that are only possible _manually_ today in [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com/), or the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 ## Cmdlets
 
@@ -31,15 +31,6 @@ Cmdlets are available on the PowerShell gallery as two separate modules:
 - [Maker](https://www.powershellgallery.com/packages/Microsoft.PowerApps.PowerShell)
 
 For information on the Power Apps admin module, see [Get started using the Power Apps admin module](/powershell/powerapps/get-started-powerapps-admin) and [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell).
-
-> [!NOTE]
-> Regarding Dynamics 365 Government Community Cloud (GCC) level 2 support:
-> 
-> The default endpoint is "prod". If a user wants to run a PowerShell script targeting a GCC environment, the -Endpoint parameter needs to be changed to "usgov" for GCC Moderate, or "usgovhigh" for GCC High, or "dod" for GCC DOD.
->
-> ```powershell
-> Add-PowerAppsAccount -Endpoint "usgov" 
-> ```
 
 ## Get started with PowerShell
 
@@ -58,7 +49,7 @@ If you have an outdated version, go to [Upgrading existing Windows PowerShell](/
 > [!IMPORTANT]
 > The modules described in this document use .NET Framework, which is incompatible with PowerShell 6.0 and later. These later versions use .NET Core.
 
-## Module installation
+## Module installation and sign in
 
 To run PowerShell cmdlets for app creators:
 
@@ -84,8 +75,7 @@ To run PowerShell cmdlets for app creators:
 
    :::image type="content" source="media/accept-installationpolicy-value75.png" alt-text="Screenshot that shows where to accept the InstallationPolicy value in PowerShell.":::
 
-4. Before accessing the commands, you can provide your credentials using the following command. Credentials are refreshed for up to eight hours before you're required to sign in again.
-
+4. Optionally, before accessing the commands, you can provide your credentials. Credentials are refreshed for up to eight hours before you're required to sign in again.  If credentials aren't provided before a command is executed, then a prompt for credentials appears.
     ```powershell
     # Opens a prompt to collect credentials (Microsoft Entra account and password).
     Add-PowerAppsAccount
@@ -95,6 +85,13 @@ To run PowerShell cmdlets for app creators:
     # Here is how you can pass in credentials (to avoid opening a prompt).
     $pass = ConvertTo-SecureString "password" -AsPlainText -Force
     Add-PowerAppsAccount -Username user@contoso.com -Password $pass
+    ```
+
+5. Optionally, a specific endpoint can be targeted. The default endpoint is `prod`. If a user wants to run a PowerShell script targeting an environment in a non-production region, such as GCC, the `-Endpoint` parameter can be changed to `usgov` for GCC Moderate, or `usgovhigh` for GCC High, or `dod` for GCC DOD. The full list of endpoints supported is: "prod,preview,tip1,tip2,usgov,usgovhigh,dod,china".
+
+    ```powershell
+    # An environment in another region, such as GCC, can be targeted using the -Endpoint parameter.
+    Add-PowerAppsAccount -Endpoint "usgov" 
     ```
 
 ### Module updates
@@ -309,7 +306,7 @@ The export can take a while for tenants with a large number of Microsoft Power P
 Set-AdminPowerAppOwner –AppName 'AppName' -AppOwner $Global:currentSession.userId –EnvironmentName 'EnvironmentName'
 ```
 
-Changes the owner role of a PowerApp to the current user, and replaces the original owner as a "can view" role type.
+Changes the owner role of a Power App to the current user, and replaces the original owner as a "can view" role type.
 
 > [!NOTE]
 > The AppName and EnvironmentName fields are the unique identifiers (guids), not the display names.
