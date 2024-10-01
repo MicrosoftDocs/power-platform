@@ -4,7 +4,7 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/01/2024
+ms.date: 10/01/2024
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
@@ -83,10 +83,10 @@ If your database storage is over capacity, admins can't copy or restore any of t
 
 You can request a temporary (30-day) extension that allows copy and restore operations during the extension. To do so, follow these steps.
 
-#### Extension request for Copy
+#### Extension request for copy
 
 1. Sign in as a tenant admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select an environment.
-2. Select **Copy** from the top menu bar.
+2. Select **Copy** from the command bar.
 3. Select and enter the various copy options, and then select **Copy**.
 4. Select **Confirm**.
 5. The **Copy environment** page appears where you can select **Request an extension**.
