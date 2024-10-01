@@ -5,9 +5,9 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 05/22/2023
+ms.date: 09/26/2024
 
-ms.topic: "article"
+ms.topic: article
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -40,7 +40,7 @@ Ensure the user you run with has the following permissions.
 
 Component | Description
 --------- | ----------
-Global administrator or privileged role administrator|Grant tenant-wide admin consent to an application. More information:[Grant admin consent](/azure/active-directory/manage-apps/grant-admin-consent)
+Privileged role administrator|Grant tenant-wide admin consent to an application. More information:[Grant admin consent](/azure/active-directory/manage-apps/grant-admin-consent)
 
 ### Azure DevOps
 
