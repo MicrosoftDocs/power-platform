@@ -142,7 +142,7 @@
               items:
                   - name: Using an Office 365 Management API
                     href: coe/setup-auditlog-http.md
-                  - name: Collect audit logs using Microsoft Graph API (recommended)
+                  - name: Collect audit logs using Microsoft Graph API
                     href: coe/setup-auditlog-http-graphapi.md
                   - name: How to get older data
                     href: coe/setup-auditlog-http-old-data.md
