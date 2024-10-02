@@ -1,11 +1,10 @@
 ---
-title: "Using Office 365 Management API"
-description: "Connect audit log sync flows to the audit log using an HTTP action and Office 365 Management API in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365."
+title: Collect audit logs using Office 365 Management API
+description: Connect audit log sync flows to the audit log using an HTTP action and Office 365 Management API in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365.
 author: pete-msft
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2024
+ms.date: 10/02/2024
 ms.subservice: guidance
 ms.author: petrip
 ms.reviewer: sericks
@@ -31,20 +30,21 @@ The audit log sync flows connect to the [Office 365 Management Activity API refe
 
 ## Before you set up the audit log flows
 
-1. Microsoft 365 audit log search must be turned on for the audit log connector to work. For more information, see [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide).
-1. Your tenant must have a subscription that supports unified audit logging. For more information, see [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
-1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) fore more guidance.
+1. Microsoft 365 audit log search must be turned on for the audit log connector to work. Learn more in [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide).
+1. Your tenant must have a subscription that supports unified audit logging. Learn more in [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) for more guidance.
 
 > [!NOTE]
-> The Office 365 Management APIs uses Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
+> The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
 
 ## Create a Microsoft Entra app registration for the Office 365 Management API access
 
-Using these steps, you can set up a Microsoft Entra app registration for an HTTP call in a Power Automate flow to connect to the audit log. For more information, see [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
+Using these steps, you can set up a Microsoft Entra app registration for an HTTP call in a Power Automate flow to connect to the audit log. Learn more in [Get started with Office 365 Management APIs](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. Go to **Microsoft Entra ID** > **App registrations**.
+
    :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the location of the App registrations Azure service." lightbox="media/coe33.png" :::
 
 1. Select **+ New Registration**.
@@ -52,16 +52,18 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 1. Enter a name, such as **Microsoft 365 Management**, but don't change any other setting, and then select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
+
    :::image type="content" source="media/coe34.png" alt-text="Screenshot showing the location of the +Add a permission button of the API permissions menu." lightbox="media/coe34.png":::
 
 1. Select **Office 365 Management API** and configure permissions as follows:
 
    1. Select **Application permissions**, and then select **ActivityFeed.Read**.
-      :::image type="content" source="media/coe36new.png" alt-text="Screenshot that shows the ActivityFeed.Read setting on the Request API permissions page of the API permissions menu." lightbox="media/coe36new.png":::
+
+       :::image type="content" source="media/coe36new.png" alt-text="Screenshot that shows the ActivityFeed.Read setting on the Request API permissions page of the API permissions menu." lightbox="media/coe36new.png":::
 
    1. Select **Add permissions**.
 
-1. Select **Grant Admin Consent for (your organization)**. To set up admin content, see [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
+1. Select **Grant Admin Consent for (your organization)**. Learn more about setting up admin content in [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
 
    The API permissions now reflect delegated **ActivityFeed.Read** with a status of **Granted for _(your organization)_**.
 
