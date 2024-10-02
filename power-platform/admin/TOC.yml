@@ -464,7 +464,7 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security
+            - name: Manage security (preview)
               href: security/security-posture-overview.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
@@ -502,6 +502,8 @@
                   href: continuous-access-evaluation.md
                 - name: Control access of TDS endpoint
                   href: control-tds-settings.md
+                - name: Control which apps are allowed in your environment (preview)
+                  href: control-client-app-access-to-environment.md
                 - name: Configure environment security
                   items:
                     - name: Control user access to environments
@@ -720,6 +722,8 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Extend Dataverse capacity for 30 days
+              href: extend-capacity.md
             - name: Free up storage
               items:
                 - name: Recover storage space
