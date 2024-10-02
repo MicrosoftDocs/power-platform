@@ -146,6 +146,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - HTTP
 - [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
+- [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
 - [Microsoft Teams](/connectors/teams/)
 - [Office 365 Groups](/connectors/office365groups/)
 - [Office 365 Outlook](/connectors/office365/)
@@ -155,6 +156,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
 - [Power Automate Management](/connectors/flowmanagement/)
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+- [Power Platform for Admins V2](/connectors/powerplatformadminv2/)
 - [Power Query Dataflows](/connectors/dataflows/)
 - [RSS](/connectors/rss/)
 
