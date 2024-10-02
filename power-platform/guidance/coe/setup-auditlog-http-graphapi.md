@@ -1,5 +1,5 @@
 ---
-title: Using Office Graph API (recommended)
+title: Collect audit logs using Microsoft Graph API
 description: Connect audit log sync flows to the audit log using a graph API action in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365.
 author: pete-msft
 ms.component: pa-admin
