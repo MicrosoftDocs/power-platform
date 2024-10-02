@@ -5,6 +5,7 @@ ms.date: 10/02/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
+  - val-bc 
   - brsova
   - ImadYanni
   - bevans 
@@ -14,8 +15,7 @@ ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
-contributors:
-- val-bc 
+
 ---
 
 # Tenant-to-tenant migrations 
