@@ -107,8 +107,5 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 1. Turn on the **Admin | Audit Logs | Update Data (V2)** flow. This flow updates the PowerApps table with last launch information and adds metadata to the audit logs records.
 1. Turn on the **Admin | Audit Logs | Sync Audit Logs (V2)** flow. This flow runs on an hourly schedule and collects audit log events into the audit log table.
 
-## Frequently asked questions
-
-### I found a bug with the CoE Starter Kit. What should I do?
-
-To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
+## Provide feedback
+If you find a bug with the CoE Starter Kit, file a bug against the solution at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
