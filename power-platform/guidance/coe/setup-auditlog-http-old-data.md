@@ -1,5 +1,5 @@
 ---
-title: How to get older Audit Log events
+title: Load historic audit log events
 description: Learn how to export old LaunchPowerApp events from Purview audit logs and import them into the CoE Kit Audit Logs Dataverse table.
 author: pete-msft
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# How to get older Audit Log events
+# Load historic audit log events
 
 This solution collects app launches after they've being configured, but it isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](https://www.microsoft.com/licensing/docs), historic data is available for up to one year using the audit log in Microsoft Purview.
 
