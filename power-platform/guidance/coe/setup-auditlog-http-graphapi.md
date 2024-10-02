@@ -1,11 +1,10 @@
 ---
-title: "Using Office Graph API (recommended)"
-description: "Connect audit log sync flows to the audit log using an graph API action in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365."
+title: Using Office Graph API (recommended)
+description: Connect audit log sync flows to the audit log using a graph API action in a cloud flow to gather telemetry data (unique users, launches) for apps in Microsoft 365.
 author: pete-msft
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/10/2024
+ms.date: 10/02/2024
 ms.subservice: guidance
 ms.author: petrip
 ms.reviewer: sericks
@@ -31,20 +30,21 @@ The audit log sync flows connect to the [Microsoft Audit Logs Graph API](/graph/
 
 ## Before you set up the audit log flows
 
-1. Microsoft 365 audit log search must be turned on for the audit log connector to work. For more information, see [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide).
-1. Your tenant must have a subscription that supports unified audit logging. For more information, see [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
-1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) fore more guidance.
+1. Microsoft 365 audit log search must be turned on for the audit log connector to work. Learn more in [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide).
+1. Your tenant must have a subscription that supports unified audit logging. Learn more in [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) for more guidance.
 
 > [!NOTE]
-> The Graph APIs uses Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
+> The Graph APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
 
 ## Create a Microsoft Entra app registration for the Graph API access
 
-Using these steps, you can set up a Microsoft Entra app registration for an HTTP call in a Power Automate flow to connect to the audit log. For more information, see [Get started with Microsoft Graph APIs](/graph/overview).
+Using these steps, you can set up a Microsoft Entra app registration for an HTTP call in a Power Automate flow to connect to the audit log. Learn more in [Get started with Microsoft Graph APIs](/graph/overview).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. Go to **Microsoft Entra ID** > **App registrations**.
+   
    :::image type="content" source="media/coe33.png" alt-text="Screenshot showing the location of the App registrations Azure service." lightbox="media/coe33.png" :::
 
 1. Select **+ New Registration**.
@@ -52,12 +52,14 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 1. Enter a name, such as **Microsoft 365 Management**, but don't change any other setting, and then select **Register**.
 
 1. Select **API Permissions** > **+ Add a permission**.
-   :::image type="content" source="media/coe34.png" alt-text="Screenshot showing the location of the +Add a permission button of the API permissions menu." lightbox="media/coe34.png":::
+
+    :::image type="content" source="media/coe34.png" alt-text="Screenshot showing the location of the +Add a permission button of the API permissions menu." lightbox="media/coe34.png":::
 
 1. Select **Microsoft Graph** and configure permissions as follows:
 
    1. Select **Application permissions**, and search for **auditlogsquery**.
-      :::image type="content" source="media/coe93.png" alt-text="Screenshot that shows the search of AuditLogQuery permissions." lightbox="media/coe93.png":::
+
+       :::image type="content" source="media/coe93.png" alt-text="Screenshot that shows the search of AuditLogQuery permissions." lightbox="media/coe93.png":::
 
    1. Select **AuditLogsQuery.Read.All**.
    
@@ -65,7 +67,7 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 
    1. Select **Add permissions**.
 
-1. Select **Grant Admin Consent for (your organization)**. To set up admin content, see [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
+1. Select **Grant Admin Consent for (your organization)**. Learn more about setting up admin content in [Grant tenant-wide admin consent to an application](/azure/active-directory/manage-apps/grant-admin-consent#prerequisites).
 
    The API permissions now reflect application **AuditLogsQuery.Read.All** with a status of **Granted for _(your organization)_**.
 
@@ -81,21 +83,21 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 
 ### Update environment variables
 
-Environment variables are used to control what API to use, legacy Office 365 Management API or Graph API. Variables are also used to store the client ID and secret for the app registration and audience and authority service endpoints, depending on your cloud (commercial, GCC, GCC High, DoD) for the HTTP action. Update the [environment variables](faq.md#update-environment-variables) before turning on the flows.
+Environment variables are used to control what API to use, legacy Office 365 Management API or Graph API. Variables are also used to store the client ID and secret for the app registration, audience, and authority service endpoints, depending on your cloud (commercial, GCC, GCC High, DoD) for the HTTP action. Update the [environment variables](faq.md#update-environment-variables) before turning on the flows.
 
 You can store the client secret either in plain text in the **Audit Logs - Client Secret** environment variable, which isn't recommended. Instead, we recommend you create and store the client secret in the Azure Key Vault and reference it in the **Audit Logs - Client Azure Secret** environment variable.
 
 > [!NOTE]
 > The flow using this environment variable is configured with a condition to expect either the **Audit Logs - Client Secret** or the **Audit Logs - Client Azure Secret** environment variable. However, you don't need to edit the flow to work with Azure Key Vault.
 
-| Name | Description | Values |
+| Name | Description | Value |
 |------|-------------|--------|
-| Audit Logs - Use Graph API | Parameter for controlling should Graph API be used to query events | `Yes` |
-| Audit Logs - Audience | The audience parameter for the HTTP calls | Commercial (Default): `https://graph.microsoft.com`<br><br>GCC: `https://graph.microsoft.com`<br><br>GCC High: `https://graph.microsoft.us`<br><br>DoD: `https://dod-graph.microsoft.us`|
-| Audit Logs - Authority | The authority field in the HTTP calls | Commercial (Default): `https://login.windows.net`<br><br>GCC: `https://login.windows.net`<br><br>GCC High: `https://login.microsoftonline.us`<br><br>DoD: `https://login.microsoftonline.us` |
-| Audit Logs - ClientID | App registration Client ID | The application client ID is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. |
-| Audit Logs - Client Secret | App registration client secret (not the secret ID but the actual value) in plain text | The application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. Leave empty if you're using Azure Key Vault to store your client ID and secret. |
-| Audit Logs - Client Azure Secret | Azure Key Vault reference of the App registration client secret  | The Azure Key Vault reference for the application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. For more information, see [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).|
+| Audit Logs - Use Graph API | Parameter for controlling if Graph API should be used to query events. | Yes |
+| Audit Logs - Audience | The audience parameter for the HTTP calls. | Commercial (default): `https://graph.microsoft.com`<br><br>GCC: `https://graph.microsoft.com`<br><br>GCC High: `https://graph.microsoft.us`<br><br>DoD: `https://dod-graph.microsoft.us`|
+| Audit Logs - Authority | The authority field in the HTTP calls. | Commercial (default): `https://login.windows.net`<br><br>GCC: `https://login.windows.net`<br><br>GCC High: `https://login.microsoftonline.us`<br><br>DoD: `https://login.microsoftonline.us` |
+| Audit Logs - ClientID | The app registration Client ID. | The application client ID is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step. |
+| Audit Logs - Client Secret | The app registration client secret (not the secret ID, but the actual value) in plain text. | The application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step.<br><br>Leave empty if you're using Azure Key Vault to store your client ID and secret. |
+| Audit Logs - Client Azure Secret | The Azure Key Vault reference of the app registration client secret.  | The Azure Key Vault reference for the application client secret is from the [Create a Microsoft Entra app registration for the Office 365 Management API](./setup-auditlog-http.md#create-a-microsoft-entra-app-registration-for-the-office-365-management-api-access) step.<br><br>Leave empty if you're storing your client ID in plain text in the **Audit Logs - Client Secret** environment variable. This variable expects the Azure Key Vault reference, not the secret. Learn more in [Use Azure Key Vault secrets in environment variables](/powerapps/maker/data-platform/environmentvariables#use-azure-key-vault-secrets-preview).|
 
 
 ### Turn on flows
@@ -106,7 +108,8 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 1. Turn on the **Admin | Audit Logs | Update Data (V2)** flow. This flow updates the PowerApps table with last launch information and adds metadata to the audit logs records.
 1. Turn on the **Admin | Audit Logs | Sync Audit Logs (V2)** flow. This flow runs on an hourly schedule and collects audit log events into the audit log table.
 
+## Frequently asked questions
 
-## I found a bug with the CoE Starter Kit. Where should I go?
+### I found a bug with the CoE Starter Kit. What should I do?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
