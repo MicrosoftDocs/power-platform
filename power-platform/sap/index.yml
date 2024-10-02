@@ -194,7 +194,7 @@ sections:
           src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
       - componentType: icon-card
         title: Partner
-        summary: Partner with Microsoft to integrate customer Power and SAP environments. (later)
+        summary: Resources for Microsoft Partners to integrate customer Power and SAP environments. (later)
         url: https://www.microsoft.com
         icon:
           componentType: image
