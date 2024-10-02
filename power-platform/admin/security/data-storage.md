@@ -109,7 +109,7 @@ Admins can allow one of these four options for this setting:
 
 
 #### Update settings programatically
-Admins can use automation to set and update both the IP binding vs firewall setting, the IP range that is allow-listed, and the **Logging** toggle. Learn more in [Tutorial: Create, update, and list Environment Management Settings](../admin/programmability-tutorial-environmentmanagement-settings.md).
+Admins can use automation to set and update both the IP binding vs firewall setting, the IP range that is allow-listed, and the **Logging** toggle. Learn more in [Tutorial: Create, update, and list Environment Management Settings](../programmability-tutorial-environmentmanagement-settings.md).
 
 ### Logging of SAS calls
 This setting enables all SAS calls within Power Platform to be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
