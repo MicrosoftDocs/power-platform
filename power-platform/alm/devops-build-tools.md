@@ -87,8 +87,9 @@ To interact with the Microsoft Power Platform environment, you must establish a 
 
 |Connection type|Description|
 |---------|---------|
-|Service principal and client secret (recommended)|Uses service principal based authentication and supports multi-factor authentication|
-|Username/password|A generic service connection with username and password. Doesn't support multi-factor authentication.|
+|Service Principal via Workload Identity Federation (recommended)|Uses service principal based authentication via Federated Credentials.  Recommended for tenants which require multi-factor authentication.|
+|Service principal and client secret|Uses service principal based authentication.|
+|Username/password|A generic service connection with username and password. Does not support users requring multi-factor authentication.|
 
 ## Configure service connections using a service principal
 
