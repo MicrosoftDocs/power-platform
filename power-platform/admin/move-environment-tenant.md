@@ -149,7 +149,8 @@ You must provide the following information:
 
 13.	Save the file as a CSV.
 
-Please note that application users can't be migrated. Learn more about application users in [System and application users](system-application-users.md).
+> [!Note]
+> Application users can't be migrated. Learn more about application users in [System and application users](system-application-users.md).
 
 #### For administrative access users: 
 1. Access the source environment.
