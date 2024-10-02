@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/06/2023
+ms.date: 09/26/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -33,7 +33,7 @@ The audit log sync flows connect to the [Office 365 Management Activity API refe
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. For more information, see [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide).
 1. Your tenant must have a subscription that supports unified audit logging. For more information, see [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
-1. A global admin is required to configure the Microsoft Entra app registration.
+1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) fore more guidance.
 
 > [!NOTE]
 > The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
