@@ -172,19 +172,19 @@ sections:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
       - componentType: icon-card
-        title: SAP functional consultant
-        summary: How to build Power Apps integrated with SAP (later)
+        title: SAP consultant
+        summary: How to build Power Apps integrated with SAP (Ignite)
         url: https://www.microsoft.com/
         icon:
           componentType: image
           src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
-      - componentType: icon-card
-        title: SAP technical consultant
-        summary: Working with Power Platform connections (Ignite)
-        url: https://www.microsoft.com/
-        icon:
-          componentType: image
-          src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
+      # - componentType: icon-card
+      #   title: SAP technical consultant
+      #   summary: Working with Power Platform connections (Ignite)
+      #   url: https://www.microsoft.com/
+      #   icon:
+      #     componentType: image
+      #     src: /copilot/media/copilot/copilot-learning-hub/developer-icon.png
       - componentType: icon-card
         title: SAP Basis administrator
         summary: Password reset copilot. (Ignite)
