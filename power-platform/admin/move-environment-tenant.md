@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request.
-ms.date: 08/01/2024
+ms.date: 10/02/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
@@ -14,7 +14,10 @@ ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- val-bc 
 ---
+
 # Tenant-to-tenant migrations 
 
 ## Migrate an environment to a different tenant
@@ -146,7 +149,7 @@ You must provide the following information:
 
 13.	Save the file as a CSV.
 
-Please note that application users can't be migrated. To learn more about application users, see [here](system-application-users.md).
+Please note that application users can't be migrated. Learn more about application users in [System and application users](system-application-users.md).
 
 #### For administrative access users: 
 1. Access the source environment.
