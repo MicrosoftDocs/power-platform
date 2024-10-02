@@ -144,7 +144,7 @@
                     href: coe/setup-auditlog-http.md
                   - name: Collect audit logs using Microsoft Graph API
                     href: coe/setup-auditlog-http-graphapi.md
-                  - name: How to get older data
+                  - name: Collect historic audit log events
                     href: coe/setup-auditlog-http-old-data.md
                   - name: Audit log Troubleshooting
                     href: coe/setup-auditlog-troubleshooting.md
