@@ -9,7 +9,6 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 05/26/2023
 contributors:
-    - ProfessorKendrick
     - ColeHarrison-Microsoft 
 search.audienceType: 
   - admin
