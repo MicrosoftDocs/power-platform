@@ -10,6 +10,9 @@ ms.author: petrip
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- Grant-Archibald-MS
+  
 ---
 
 # Collect historic audit log events
