@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2024
+ms.date: 10/03/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -59,7 +59,8 @@ Enabling _default environment routing_ might give you more environments to manag
 
 ## Configure the rules for your environment group
 
-After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules.
+After you create the environment group, Power Platform tenant administrators can immediately add Managed Environments or configure the group's rules.
+
 ### The sharing limits rule
 
 You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
