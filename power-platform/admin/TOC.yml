@@ -722,6 +722,8 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Extend Dataverse capacity for 30 days
+              href: extend-capacity.md
             - name: Free up storage
               items:
                 - name: Recover storage space
