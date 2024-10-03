@@ -50,7 +50,7 @@ sections:
         #   text: Watch videos
         #   url: /shows/copilot-learning-hub/
     - componentType: card
-      title: "3. Step 3. Connect to SAP"
+      title: "Step 3. Connect to SAP"
       summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
       #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
