@@ -4,7 +4,7 @@ description: Provides common causes for sync issues to help troubleshooting.
 author: pete-msft
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/01/2024
+ms.date: 10/03/2024
 ms.subservice: guidance
 ms.author: petrip
 ms.reviewer: sericks
