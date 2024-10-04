@@ -22,6 +22,12 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Organization Insights Dashboard
+
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Soltion dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+
+As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
+
 ## Deprecating support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
 To boost security and system performance, we are updating authentication protocols for multitenant apps in the Dataverse platform. Starting October 2024, app-only tokens for apps without a service principal in the target tenant aren't supported. This change is essential for mitigating vulnerabilities and safeguarding your data from potential threats. 
