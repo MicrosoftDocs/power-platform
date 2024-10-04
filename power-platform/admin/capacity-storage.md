@@ -115,6 +115,16 @@ Note the following features:
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
 > - The capacity check conducted prior to creating new environments excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
+#### Allocate capacity for an environment 
+
+In Dataverse tab you can allocate capacity to a specific environment.Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state
+
+- Select the environment for capacity allocation by clicking the radio button
+- Click the "Allocate Capacity" button located above the environment list, a panel for capacity management will open on the right side of the page
+- In the panel, view the currently allocated and consumed capacity for the environment
+- Allocate capacity by entering the desired value in the box, and click "Save" to apply the changese
+- Ensure the capacity value is a positive integer and does not exceed the available capacity displayed at the top of the panel.
+- Opt-in to receive daily email alerts sent to Tenant and Environment Admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity
 
 #### Environment storage capacity details
 
