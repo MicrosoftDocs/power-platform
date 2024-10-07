@@ -336,7 +336,22 @@ This is due to a change that occurred in April 2023, after which only users with
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
 - [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
-- [Field Service](/dynamics365/field-service/reports) 
+- [Field Service](/dynamics365/field-service/reports)
+
+### Who can allocate capacity?
+Users with global admin, Power Platform admin, and Dynamics 365 admin roles can allocate Dataverse capacity.
+
+### Does this impact my total available capacity in my tenant?
+There is no impact on the overall capacity available at the tenant level. Admins can optionally pre-allocate capacity from the tenant pool to an environment. Pre-allocated capacity is reduced from the tenant level's total available capacity for use by other environments.
+
+### What happens if capacity consumption goes beyond the allocated capacity?
+Currently, only _soft enforcement_ through email notification is turned on. Admins (Power Platform admins and environment admins) start receiving notifications when capacity usage exceeds 85% of the allocated capacity.
+
+### What types of Dataverse capacity can be allocated?
+Database, file, and log capacity can be allocated.
+
+### Do I need to allocate capacity to every environment like other supported currencies?
+No, admins can select specific environments to allocate capacity.
 
 ### Related information
 [Add Microsoft Dataverse storage capacity](add-storage.md) <br />
