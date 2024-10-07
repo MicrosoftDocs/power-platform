@@ -24,7 +24,7 @@ Read the full story: [Nonprofit organization expands career programs by using Po
 
 The team works with seven communities, 17 partner colleges, and a growing number of employers in the northwestern United States. Each community recruits volunteers to run the Act Six and Seed Internship programs locally, with centralized support from Degrees of Change staff.
 
-Before building its Act Six and Seeds Internship solutions with Power Platform tools, the Degrees of Change team faced some operational challenges:
+Before building its Act Six and Seed Internship solutions with Power Platform tools, the Degrees of Change team faced some operational challenges:
 
 - **Manual and time-consuming processes** for managing program applications and selections, limiting their ability to scale and serve more students.
 - **Lack of integration between different systems**, leading to data silos and making it difficult to track and analyze student progress and outcomes effectively.
@@ -168,7 +168,7 @@ The AI Builder match recommendations significantly increase the speed and quanti
 
 AI Builder provides a selection of prebuilt models, and the ability to create custom models for different business scenarios. To streamline the candidate matching process, the Degrees of Change team uses these models and tools:
 
-- **Entity extraction**: The team uses the prebuilt entity extraction model in AI Builder to identity key elements of structured data from candidate applications, and unstructured data elements from candidate r&eacute;sum&eacute;s. The data is used to match with the internship position requirements outlined by employers and hiring managers.
+- **Entity extraction**: The team uses the prebuilt entity extraction model in AI Builder to identify key elements of structured data from candidate applications, and unstructured data elements from candidate r&eacute;sum&eacute;s. The data is used to match with the internship position requirements outlined by employers and hiring managers.
 
 - **Match recommendation**: A second AI model then combines these elements to generate a match recommendation that is displayed to staff in the Matching app in Power Apps.
 
