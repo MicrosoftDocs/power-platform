@@ -1,0 +1,27 @@
+- name: Microsoft Power Platform Architecture Center
+  href: ./index.yml
+  items:
+    - name: Browse Power Platform Architectures
+      href: ./azure/architecture/browse/
+    - name: Power Platform icons
+      href: ./power-platform/guidance/icons
+    - name: What's new
+      href: whats-new.md
+    - name: Categories
+      items:
+      - name: AI + Copilot studio
+        items:
+          - name: Architecture 1
+            href: whats-new.md
+          - name: Architecture 2
+            href: whats-new.md
+      - name: Modern applications
+        items:
+          - name: Architecture 3
+            href: whats-new.md
+          - name: Architecture 4
+            href: whats-new.md
+    - name: Microsoft Power Platform Well-Architected
+      href: ./power-platform/well-architected
+    - name: Microsoft Power Platform adoption guidance
+      href: ./power-platform/guidance

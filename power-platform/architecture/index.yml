@@ -1,0 +1,139 @@
+### YamlMime:Marketing
+title: Power Platform Architecture Center
+metadata:
+  title: Power Platform Architecture Center
+  description: Guidance for architecting solutions with Power Platform using established patterns and practices.
+  ms.service: power-platform
+  ms.topic: hub-page
+  ms.subservice: power-platform-architecture
+  author: mapichle
+  ms.author: mapichle
+  ms.reviewer: jhaskett-msft
+  ms.date: 07/10/2024
+sections:
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Browse Power Platform architectures
+      itemType: architecture
+      url: https://learn.microsoft.com/azure/architecture/browse/?products=power-platform
+    # Card
+    - title: Explore Power Platform architecture guidance
+      itemType: concept
+      url: guide/index.md
+    # Card
+    - title: See what's new
+      url: ./whats-new.md
+      itemType: whats-new
+    # Card
+    - title: Power Platform Well-Architected
+      url: /power-platform/well-architected/
+      itemType: how-to-guide
+    # Card
+    - title: Power Platform adoption guidance
+      url: /power-platform/guidance
+      itemType: how-to-guide
+# productDirectory section (optional)
+productDirectory:
+  title: Architecting workloads on Power Platform
+  summary: "Best practices and patterns for building workloads on Microsoft Power Platform:"
+  items:
+    # Card
+    - title: Reference and real-world architecture examples
+      imageSrc: /media/common/i_design.svg
+      links:
+        - url: whats-new.md
+          text: Architecture Example 1
+    # Card
+    - title: Optimize your workload
+      imageSrc: /media/common/i_architecture.svg
+      links:
+        - url: /power-platform/well-architected/
+          text: Guiding tenets for your architecture
+        - url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
+          text: Examine your workload
+        - url: ./power-platform/well-architected/reliability/principles
+          text: Increase reliability
+        - url: /power-platform/well-architected/performance-efficiency/principles
+          text: Improve performance
+        - url: /power-platform/well-architected/security/principles
+          text: Secure your workload
+        - url: /power-platform/well-architected/experience-optimization/principles
+          text: Create meaningful and useful experiences
+        - url: /power-platform/well-architected/operational-excellence/principles
+          text: Ensure quality through standardized processes and team cohesion
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Technology areas # < 60 chars (optional)
+  summary: Explore architectures and guides for different technologies. # < 160 chars (optional)
+  items:    
+    - title: AI & Copilot Studio
+      links:
+      - text: Topic authoring best practices in Copilot Studio
+        url: ./microsoft-copilot-studio/guidance/topic-authoring-best-practices
+        itemType: how-to-guide
+      - text: Optimizing trigger phrases and natural language understanding
+        url: ./microsoft-copilot-studio/guidance/trigger-phrases-best-practices
+        itemType: how-to-guide
+      - text: Entities and slot filling best practices
+        url: ./microsoft-copilot-studio/guidance/slot-filling-best-practices
+        itemType: how-to-guide
+
+    - title: Modern applications
+      links:
+        - text: Coding standards guidelines
+          itemType: how-to-guide
+          url: ./power-apps/guidance/coding-guidelines/overview
+        - text: Build large and complex canvas apps
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/working-with-large-apps
+        - text: Optimize app or page load for peak performance
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/fast-app-page-load
+        - text: Optimized query data patterns
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/optimized-query-data-patterns
+        - text: Small data payloads
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/small-data-payloads
+        - text: Fast calculations
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/efficient-calculations
+         
+    - title: Hyperautomation
+      links:
+        - url: ./power-automate/guidance/business-approvals-templates/introduction
+          itemType: reference
+          text: Business approvals templates
+
+    - title: SAP
+      links:
+        - text: Robotic Process Automation with SAP
+          url: ./power-automate/guidance/rpa-sap-playbook/introduction
+          itemType: reference
+
+    - title: SQL
+      links:
+        - text: Use Microsoft SQL Server securely with Power Apps
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/connections/sql-server-security
+        - text: Connect to SQL Server from Power Apps
+          itemType: how-to-guide
+          url: ./power-apps/maker/canvas-apps/connections/connection-azure-sqldatabase
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Build your skills with Microsoft Learn training
+      items:
+        - title: Microsoft Power Platform Solution Architect course
+          url: /training/courses/pl-600t00
+        - title: Architect solutions for Dynamics 365 and Microsoft Power Platform
+          url: /training/paths/become-solution-architect/
+        - title: Design Microsoft Power Platform solutions
+          url: /training/paths/solution-architect-data/
