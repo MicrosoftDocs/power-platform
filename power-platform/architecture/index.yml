@@ -1,5 +1,8 @@
 ### YamlMime:Marketing
 title: Power Platform Architecture Center
+summary: Provides guidance for architecting solutions with Power Platform using established patterns and practices.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: dynamics
 metadata:
   title: Power Platform Architecture Center
   description: Guidance for architecting solutions with Power Platform using established patterns and practices.
@@ -10,13 +13,14 @@ metadata:
   ms.author: mapichle
   ms.reviewer: jhaskett-msft
   ms.date: 07/10/2024
+
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
     - title: Browse Power Platform architectures
       itemType: architecture
-      url: https://learn.microsoft.com/azure/architecture/browse/?products=power-platform
+      url: ./azure/architecture/browse/?products=power-platform
     # Card
     - title: Explore Power Platform architecture guidance
       itemType: concept
@@ -36,11 +40,9 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Architecting workloads on Power Platform
-  summary: "Best practices and patterns for building workloads on Microsoft Power Platform:"
   items:
     # Card
     - title: Reference and real-world architecture examples
-      imageSrc: /media/common/i_design.svg
       links:
         - url: whats-new.md
           text: Architecture Example 1
@@ -80,7 +82,6 @@ conceptualContent:
       - text: Entities and slot filling best practices
         url: ./microsoft-copilot-studio/guidance/slot-filling-best-practices
         itemType: how-to-guide
-
     - title: Modern applications
       links:
         - text: Coding standards guidelines
@@ -101,19 +102,16 @@ conceptualContent:
         - text: Fast calculations
           itemType: how-to-guide
           url: ./power-apps/maker/canvas-apps/efficient-calculations
-         
     - title: Hyperautomation
       links:
         - url: ./power-automate/guidance/business-approvals-templates/introduction
           itemType: reference
           text: Business approvals templates
-
     - title: SAP
       links:
         - text: Robotic Process Automation with SAP
           url: ./power-automate/guidance/rpa-sap-playbook/introduction
           itemType: reference
-
     - title: SQL
       links:
         - text: Use Microsoft SQL Server securely with Power Apps
