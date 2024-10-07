@@ -5,7 +5,7 @@ keywords:
 author: devkeydet
 ms.author: marcsc
 ms.subservice: alm
-ms.date: 07/08/2024
+ms.date: 10/07/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -87,7 +87,7 @@ To interact with the Microsoft Power Platform environment, you must establish a 
 
 |Connection type|Description|
 |---------|---------|
-|Service Principal via Workload Identity Federation (recommended)|Uses service principal based authentication via Federated Credentials.  Recommended for tenants which require multi-factor authentication.|
+|Service Principal via Workload Identity Federation (recommended)|Uses service principal based authentication via federated credentials.  Recommended for tenants which require multi-factor authentication.|
 |Service principal and client secret|Uses service principal based authentication.|
 |Username/password|A generic service connection with username and password. Does not support users requring multi-factor authentication.|
 
