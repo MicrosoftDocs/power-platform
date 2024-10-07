@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 08/01/2024
+ms.date: 10/07/2024
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -117,7 +117,7 @@ Note the following features:
 
 #### Allocate capacity for an environment 
 
-In Dataverse tab you can allocate capacity to a specific environment.Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state
+In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
 - Select the environment for capacity allocation by clicking the radio button
 - Click the "Allocate Capacity" button located above the environment list, a panel for capacity management will open on the right side of the page
