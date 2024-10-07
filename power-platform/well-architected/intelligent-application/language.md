@@ -25,10 +25,10 @@ When designing your intelligent application workload, you need to choose the bes
 
 | Term | Definition| 
 | --- | ---- | 
-| NLU |  Natural Language Understanding is a subset of natural language processing (NLP) in artificial intelligence that focuses on machine reading comprehension. |
-| CLU | Conversational Language Understanding is a feature of Azure AI that enables the creation of custom NLU models. |
-| LLM | A Large Language Model is a type of artificial intelligence model designed to understand and generate human language. |
-| GPT | Generative Pretrained Transformer refers to a family of LLMs that use the transformer architecture to understand and generate human-like text. |
+| NLU |  Natural language understanding is a subset of natural language processing in AI that focuses on machine reading comprehension. |
+| CLU | Conversational language understanding is a feature of Azure AI that enables the creation of custom NLU models. |
+| LLM | A large language model is a type of AI model designed to understand and generate human language. |
+| GPT | Generative pretrained transformer refers to a family of large language models that use the transformer architecture to understand and generate human-like text. |
 | Dynamic chaining | Dynamic chaining is a method of automating triggers for generative actions. Instead of manually defining every possible topic or trigger phrase, dynamic chaining allows the AI to determine which topics or plugin actions need to be called based on the context of the conversation. |
 
 Choosing the right option for intent recognition and entity extraction in your intelligent application workload involves several key considerations:
@@ -45,12 +45,12 @@ Choosing the right option for intent recognition and entity extraction in your i
 
 ## Choose between the standard NLU, Azure CLU, or dynamic chaining
 
-In Copilot Studio, topic or action triggering can be achieved by using the standard NLU model, combining or overriding it with a custom Azure CLU model, or by fully replacing the NLU model with [dynamic chaining](/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration), a GPT LLM-based model.
+In Copilot Studio, topic or action triggering can be achieved by using the standard NLU model, combining or overriding it with a custom Azure CLU model, or by fully replacing the NLU model with [dynamic chaining](/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration), a GPT large language model-based model.
 
 | | Standard NLU model | Custom Azure CLU model | Dynamic chaining |
 |---|---|---|---|
-| **Pro** |  Default, out-of-the-box model that comes pretrained, with many predefined entity types.<br><br>Configuration is done by adding trigger phrases and custom entities (either closed lists with values and synonyms, or regular expressions). | Supports more languages, with native models.<br><br>Supports customization of the intent triggering model for better intent recognition or to address specific industry requirements.<br><br>Allows for complex entity extraction (for example, of the same type).<br><br>Entity extraction can also use Copilot Studio standard NLU. |Uses a GPT LLM and comes pre-trained on a wider spectrum of data.<br><br>Can handle multiple intents and chain topics and/or plugins.<br><br>Automatically generate questions for missing inputs and answers complex entities and questions from the conversation context.<br><br>Configuration is done by describing topics, plugin actions, inputs, and outputs. | 
-| **Con** |Single intent recognition per query.<br><br>Can't be extended. You can't modify how the model behaves or fine tune the model. It is provided as is. <br><br>Slot-filling multiple entities of the same type in the same query requires disambiguation for each (for example, from and to cities). |Single intent recognition per query.<br><br>Configuration is done in Azure at additional cost.<br><br>Has its own service limits that need to be evaluated.<br><br>Azure CLU intents and Copilot Studio topics must be carefully kept in sync. |As it's a generative AI feature, the licensing burn rate of messages is higher than for regular topic triggering. |
+| **Pro** |  Default, out-of-the-box model that comes pretrained, with many predefined entity types.<br><br>Configuration is done by adding trigger phrases and custom entities (either closed lists with values and synonyms, or regular expressions). | Supports more languages, with native models.<br><br>Supports customization of the intent triggering model for better intent recognition or to address specific industry requirements.<br><br>Allows for complex entity extraction (for example, of the same type).<br><br>Entity extraction can also use Copilot Studio standard NLU. |Uses a GPT large language model and comes pretrained on a wider spectrum of data.<br><br>Can handle multiple intents and chain topics and/or plugins.<br><br>Automatically generates questions for missing inputs and answers complex entities and questions from the conversation context.<br><br>Configuration is done by describing topics, plugin actions, inputs, and outputs. | 
+| **Con** |Single intent recognition per query.<br><br>Can't be extended. You can't modify how the model behaves or fine-tune the model. It's provided as is. <br><br>Slot-filling multiple entities of the same type in the same query requires disambiguation for each (for example, from and to cities). |Single intent recognition per query.<br><br>Configuration is done in Azure at additional cost.<br><br>Has its own service limits that need to be evaluated.<br><br>Azure CLU intents and Copilot Studio topics must be carefully kept in sync. |As it's a generative AI feature, the licensing burn rate of messages is higher than for regular topic triggering. |
 
 ## Trigger phrases and slot filling
 
@@ -147,9 +147,9 @@ When building a copilot, consider the languages and markets your intelligent app
 
 **Key considerations:**
 
-- **Languages and markets**: The languages and markets your copilot must support influences your localization strategy.
+- **Languages and markets**: The languages and markets your copilot must support influence your localization strategy.
   
-- **Single vs. multi-language copilot**: Decide whether to develop a single copilot that supports multiple languages or separate copilots for each language. This decision depends on factors like resource availability, maintenance capabilities, and the complexity of the languages involved.
+- **Single vs. multilanguage copilot**: Decide whether to develop a single copilot that supports multiple languages or separate copilots for each language. This decision depends on factors like resource availability, maintenance capabilities, and the complexity of the languages involved.
 
 - **Translation timing**: Consider whether translations should be set during the configuration phase or provided in real time at runtime. Configured translations offer stability and control, while real-time translations provide flexibility and rapid deployment.
 
