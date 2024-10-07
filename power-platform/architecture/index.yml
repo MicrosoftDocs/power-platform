@@ -9,7 +9,7 @@ metadata:
   ms.service: power-platform
   ms.topic: hub-page
   ms.subservice: power-platform-architecture
-  author: mapichle
+  author: manuelap-msft
   ms.author: mapichle
   ms.reviewer: jhaskett-msft
   ms.date: 07/10/2024
@@ -43,7 +43,7 @@ productDirectory:
   items:
     # Card
     - title: Reference and real-world architecture examples
-      imageSrc: ./media/sample-more.svg
+      imageSrc: /media/common/i_architecture.svg
       links:
         - url: whats-new.md
           text: Architecture Example 1
@@ -55,7 +55,7 @@ productDirectory:
           text: Guiding tenets for your architecture
         - url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
           text: Examine your workload
-        - url: ./power-platform/well-architected/reliability/principles
+        - url: /power-platform/well-architected/reliability/principles
           text: Increase reliability
         - url: /power-platform/well-architected/performance-efficiency/principles
           text: Improve performance
