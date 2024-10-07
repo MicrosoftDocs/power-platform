@@ -129,7 +129,7 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 
     Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 
-1. Opt-in to receive daily email alerts sent to Tenant and Environment Admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
+1. Opt-in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
 
 #### Environment storage capacity details
