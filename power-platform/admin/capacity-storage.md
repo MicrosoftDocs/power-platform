@@ -124,6 +124,9 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 1. On the **Capacity** page, select the **Datavese** tab.
 1. Select the environment for which you want to allocate capacity.
 1. Select the **Allocate capacity** button, located above the environment list. The **Allocate capacity** pane is displayed on the right side of the page.
+
+    :::image type="content" source="media/allocate-capacity.png" alt-text="Screenshot of the Allocate capacity pane.":::
+   
 1. In the **Allocate capacity** pane, view the currently allocated and consumed capacity for the environment.
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. 
 
