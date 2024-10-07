@@ -119,12 +119,18 @@ Note the following features:
 
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
-- Select the environment for capacity allocation by clicking the radio button
-- Click the "Allocate Capacity" button located above the environment list, a panel for capacity management will open on the right side of the page
-- In the panel, view the currently allocated and consumed capacity for the environment
-- Allocate capacity by entering the desired value in the box, and click "Save" to apply the changese
-- Ensure the capacity value is a positive integer and does not exceed the available capacity displayed at the top of the panel.
-- Opt-in to receive daily email alerts sent to Tenant and Environment Admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Resources** > **Capacity**.
+1. On the **Capacity** page, select the **Datavese** tab.
+1. Select the environment for which you want to allocate capacity.
+1. Select the **Allocate capacity** button, located above the environment list. The **Allocate capacity** pane is displayed on the right side of the page.
+1. In the **Allocate capacity** pane, view the currently allocated and consumed capacity for the environment.
+1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. 
+
+    Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
+
+1. Opt-in to receive daily email alerts sent to Tenant and Environment Admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
+1. Select **Save** to apply the changes.
 
 #### Environment storage capacity details
 
