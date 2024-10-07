@@ -40,10 +40,10 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Architecting workloads on Power Platform
-  imageSrc: ./media/sample-more.svg
   items:
     # Card
     - title: Reference and real-world architecture examples
+      imageSrc: ./media/sample-more.svg
       links:
         - url: whats-new.md
           text: Architecture Example 1
@@ -63,8 +63,6 @@ productDirectory:
           text: Secure your workload
         - url: /power-platform/well-architected/experience-optimization/principles
           text: Create meaningful and useful experiences
-        - url: /power-platform/well-architected/operational-excellence/principles
-          text: Ensure quality through standardized processes and team cohesion
 
 # conceptualContent section (optional)
 conceptualContent:
