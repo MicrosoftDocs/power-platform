@@ -4,7 +4,8 @@
     - name: Browse Power Platform Architectures
       href: ./azure/architecture/browse/
     - name: Power Platform icons
-      href: ./power-platform/guidance/icons
+      tocHref: /power-platform/
+      topicHref: /power-platform/guidance/icons
     - name: What's new
       href: whats-new.md
     - name: Categories
