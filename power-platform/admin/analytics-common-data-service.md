@@ -1,13 +1,14 @@
 ---
 title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
-author: Zeffin 
+author: sericks007 
 ms.topic: conceptual
 ms.date: 03/26/2024
 ms.subservice: admin
-ms.author: johnev
+ms.author: sericks
 ms.reviewer: sericks
 ms.contriutors:
+ - yingchin
  - mbajwa
  - olegov
 ---
@@ -34,10 +35,6 @@ Admins with the following roles and a [license](pricing-billing-skus.md) can vie
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
  **Key highlights**  
-
-- **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
-
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Dataverse in future releases. 
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
