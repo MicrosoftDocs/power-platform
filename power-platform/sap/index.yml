@@ -66,7 +66,7 @@ sections:
       #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
       links: 
         - componentType: link
-          text: Get started with the Procurement template for SAP
+          text: Procurement template for SAP
           url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
         # - componentType: link
         #   text: Watch videos
