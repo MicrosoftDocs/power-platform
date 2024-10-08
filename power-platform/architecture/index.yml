@@ -22,10 +22,6 @@ highlightedContent:
       itemType: architecture
       url: /azure/architecture/browse/?products=power-platform
     # Card
-    - title: Explore Power Platform architecture guidance
-      itemType: concept
-      url: ./whats-new.md
-    # Card
     - title: See what's new
       url: ./whats-new.md
       itemType: whats-new
@@ -43,7 +39,7 @@ productDirectory:
   items:
     # Card
     - title: Reference and real-world architecture examples
-      imageSrc: /media/common/i_architecture.svg
+      imageSrc: /media/common/i_best-practices.svg
       links:
         - url: whats-new.md
           text: Architecture Example 1
