@@ -84,13 +84,8 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
 1. Select **Save**.
 
-### Create an application list in the environment
-There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications can be different between different environments. To manage app access control, you must first build the list of applications that can be managed.
-
-There are two ways to build the list of applications to manage:
-
-- [Get the list](#get-the-list-of-preauthorized-applications) with the function **createOperationUsingWebAPI()**.
-- [Turn on audit mode](#turn-on-audit-mode) to see the list of applications running in the environment.
+### Review the application list in the environment
+There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications can be different between different environments. These apps are automatically loaded into your environment.
 
 > [!NOTE]
 > The following list of apps are preauthorized to run in a Dataverse environment.
@@ -100,59 +95,15 @@ There are two ways to build the list of applications to manage:
 > - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
 > - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
 
-#### Get the list of preauthorized applications
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select the Dataverse environment with your desired list of applications.
-1. Open the web client.
-1. Select **F12** on your keyboard to open the developer tools.
-1. Select the **Console** tab.
-1. At the prompt, paste the following code snippet:
-
-   ```javascript
-   function createOperationUsingWebAPI() {
-     var clientUrl = Xrm.Page.context.getClientUrl();
-     var req = new XMLHttpRequest()
-     req.open("POST", encodeURI(clientUrl +   "/api/data/v9.0/RetrieveAppsWithDelegatedAccessPermissions"), true);
-     req.setRequestHeader("Accept", "application/json");
-     req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
-     req.setRequestHeader("OData-MaxVersion", "4.0");
-     req.setRequestHeader("OData-Version", "4.0");
-     req.setRequestHeader("CallerId", "YOUR_CALLER_ID_GUID"); // Replace with actual GUID
-     req.onreadystatechange = function () {
-       if (this.readyState == 4 && this.status == 200) {
-         // Typical action to be performed when the document is ready:
-         console.log(req.responseText);
-       }
-     };
-     var body = JSON.stringify({ "cloud":0 });
-     req.send(body);
-   }
-
-   createOperationUsingWebAPI()
-   ```
-
-1. Press the **Enter** key.
-1. Select the **Network** tab.
-1. Locate and select the **RetrieveAppsWithDelegatedAccessPermissions** row.
-1. Select the **Response** tab.
-
-   A list of all the preauthorized applications in the environment is listed. You might see a list similar to this list.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/pre-authorized-apps.png" alt-text="Screenshot that shows a list of preauthorized apps." lightbox="media/control-client-app-access-to-environment/pre-authorized-apps.png":::
-
-1. Copy the list of applications and paste it into a text editor such as Notepad.
-
-#### Build the list of applications to manage their access
-
-If you didn't use the function to get a list of apps, you can build a list manually. If you already started a list, you can add more applications to the environment.
-
+#### Add or remove applications from the list
+To **add** an application from the list:
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace 'OrgURL' with your own environment URL, then press **Enter**.
 
    ```http  
    https:/<OrgURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
    ```
+  The form shows the list of applications that is loaded in your environment.
 
 1. Select **+ New**.
 
@@ -164,7 +115,13 @@ If you didn't use the function to get a list of apps, you can build a list manua
 
    :::image type="content" source="media/control-client-app-access-to-environment/new-application-form.png" alt-text="Screenshot showing the location of the ApplicationId and Name fields. The image also shows where the Save button is located.":::
 
-Using this **New Application** page, you can add apps from the [commonly used apps list](#commonly-used-apps-you-might-want-to-allow). For example, to add Dataverse, enter **00000007-0000-0000-c000-000000000000** as the **ApplicationId**.
+To **remove** an application from the list:
+1.  Select an app.
+2.  Select the **Delete** button.
+
+> [!NOTE]
+> If you removed an system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
+>
 
 #### Allow or block apps
 
@@ -207,6 +164,8 @@ Here are some commonly used apps that are safe to allow.
 | c92229fa-e4e7-47fc-81a8-01386459c021 | CDSUserManagement |
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | JobsServiceProd |
 | ef32e2a3-262a-44e5-a270-4dfb7b6d0bb2 | AiBuilder PAIO-CDS Prod |
+| 96ff4394-9197-43aa-b393-6a41652e21f8 | Microsoft Copilot studio |
+
 
 ##### Apps you might want to block
 
@@ -214,26 +173,20 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 
 | Application ID | Application name |
 |----------------|------------------|
-| a672d62c-fc7b-4e81-a576-e60dc46e951d | Excel client |
+| a672d62c-fc7b-4e81-a576-e60dc46e951d | Microsoft Power Query for Excel (desktop client) |
 | d3590ed6-52b3-4102-aeff-aad2292ab01c | Microsoft Access client |
 | 51f81489-12ee-4a9e-aaae-a2591f45987d | xRm Tool kit |
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 
-## Turn on the app access control feature
-1.	Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2.	Add a tab in the browser and paste this URL: **https://admin.powerplatform.microsoft.com/security?ppac.enableFeatureFlagsPanel=true** 
-3.	Select the airplane icon on the title bar to show the **PPAC ECS Feature Flags** pane.
-
-    :::image type="content" source="media/airplane-icon.png" alt-text="The airplane icon in the title bar of the Power Platform admin center.":::
- 
-4.	Turn on the **EnableClientApplicationAccessControl** feature.
-
-    :::image type="content" source="media/app-access-control-feature.png" alt-text="Turn on the EnableClientApplicationAccessControl feature.":::
-
-5.	You now see a **Client application access control** card added to your **Security** page in the Power Platform admin center.
-
-    :::image type="content" source="media/client-application-access-control-card.png" alt-text="The **Client application access control** card in the **Security** page.":::
+## Turn on Client app access control for your environment
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
+1. In the navigation pane, select **Security**.
+1. Select **Access controls** under the Security section.
+1. Select **Client application access control** under **Access controls**.
+1. Select the environment that you want to turn on client app access control.
+> [!NOTE]
+> To use the client app access control, the environment must be a Managed environment. You will be prompted to turn it on if you selected a non Managed environment.
 
 ## Recommended steps 
 
@@ -258,8 +211,9 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Locate the **Client application access control** card and select **Manage client application access**.
-1. Select the environment where you want to manage app access.
+1. Select **Access controls** under the Security section.
+1. Select **Client application access control** under **Access controls**.
+1. Select the environment that you want to turn on client app access control.
 1. Select the **Enable client application access** button.
 1. Select the **AuditMode** option under the **Access control** dropdown.
 1. Select a Dataverse application, then select **Allow**.
@@ -301,9 +255,10 @@ The enabled mode starts blocking apps that aren't allowed or apps that only allo
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. locate the **Client application access control** card and select **Manage client application access**.
-1. Select the environment where you want to manage app access.
-1. Select **Enable client application access**.
+1. Select **Access controls** under the Security section.
+1. Select **Client application access control** under **Access controls**.
+1. Select the environment that you want to turn on client app access control.
+1. Select the **Enable client application access** button.
 1. Select **Enabled** under the **Access control** dropdown.
 1. Select a Dataverse application, then select one of these options:
    - **Allow** to allow access
@@ -318,9 +273,10 @@ The enabled for roles mode starts blocking apps that aren't allowed or only allo
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Locate the **Client application access control** card and select **Manage client application access**.
-1. Select the environment where you want to manage app access.
-1. Select **Enable client application access**.
+1. Select **Access controls** under the Security section.
+1. Select **Client application access control** under **Access controls**.
+1. Select the environment that you want to turn on client app access control.
+1. Select the **Enable client application access** button.
 1. Select **Enabled for roles** in the **Access control** dropdown.
 1. Select an application, then select **Allow**.
 1. Once your app is selected, select **Manage security roles**.
@@ -338,9 +294,10 @@ You can remove app access control by turning off the feature. With this setting,
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Locate the **Client application access control** card and select **Manage client application access**.
-1. Select the environment where you want to manage app access.
-1. Select **Enable client application access**.
+1. Select **Access controls** under the Security section.
+1. Select **Client application access control** under **Access controls**.
+1. Select the environment that you want to turn on client app access control.
+1. Select the **Enable client application access** button.
 1. Select **Disabled** in the **Access control** dropdown.
 1. Select **Save**.
 
