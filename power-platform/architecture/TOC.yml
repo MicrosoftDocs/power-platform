@@ -2,12 +2,12 @@
   href: ./index.yml
   items:
     - name: Browse Power Platform Architectures
-      href: ./azure/architecture/browse/
+      href: /azure/architecture/browse/
     - name: Power Platform icons
       href: /power-platform/guidance/icons.md?/power-platform/architecture/toc.json&bc=/power-platform/architecture/breadcrumb/toc.json
     - name: What's new
       href: whats-new.md
-    - name: Categories
+    - name: Reference architectures
       items:
       - name: AI + Copilot studio
         items:
@@ -22,6 +22,6 @@
           - name: Architecture 4
             href: whats-new.md
     - name: Microsoft Power Platform Well-Architected
-      href: ./power-platform/well-architected
+      href: /power-platform/well-architected
     - name: Microsoft Power Platform adoption guidance
-      href: ./power-platform/guidance
+      href: /power-platform/guidance
