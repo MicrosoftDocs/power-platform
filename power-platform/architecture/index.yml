@@ -41,8 +41,14 @@ productDirectory:
     - title: Reference and real-world architecture examples
       imageSrc: /media/common/i_best-practices.svg
       links:
-        - url: whats-new.md
+        - url: /reference-architectures/ai-and-copilot-studio/architecture1.md
           text: Architecture Example 1
+        - url: /reference-architectures/ai-and-copilot-studio/architecture1.md
+          text: Architecture Example 2
+        - name: Architecture 3
+          href: /reference-architectures/modern-applications/architecture3.md
+        - name: Architecture 4
+          href: /reference-architectures/modern-applications/architecture4.md
     # Card
     - title: Optimize your workload
       imageSrc: /media/common/i_architecture.svg
