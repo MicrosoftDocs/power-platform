@@ -25,7 +25,8 @@ Read the full story: [Nonprofit organization expands career programs by using Po
 
 ## Business challenges
 
-The team works with seven communities, 17 partner colleges, and a growing number of employers in the northwestern United States. Each community recruits volunteers to run the Act Six and Seed Internship programs locally, with centralized support from Degrees of Change staff.
+The team works with seven communities, 17 partner colleges, and a growing number of employers in the northwestern United States. Each community recruits volunteers to run the Act Six and Seed Internships programs locally, with centralized support from Degrees of Change staff.
+
 
 Before building its Act Six and Seed Internship solutions with Power Platform tools, the Degrees of Change team faced some operational challenges:
 
