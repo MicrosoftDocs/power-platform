@@ -184,7 +184,8 @@ AI Builder provides a selection of prebuilt models and the ability to create cus
 
 :::image type="content" source="media/nonprofit/entity-extraction-model-flow.png" alt-text="Screenshot showing entity extraction task flow." lightbox="media/nonprofit/entity-extraction-model-flow.png":::
 
-*“Augmenting our selection process with AI Builder allows us to scale and make the most use of our human assessments.”* &mdash;Tim Herron, Founder & Chief Innovation Officer
+*“Augmenting our selection process with AI Builder allows us to scale and make the most use of our human assessments.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
+
 
 ## Related information
 
