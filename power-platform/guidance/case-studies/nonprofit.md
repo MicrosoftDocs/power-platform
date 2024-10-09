@@ -55,19 +55,9 @@ Degrees of Change automated its application processes by using Power Platform to
 
 Before implementing its Power Platform solutions, Degrees of Change faced several technology challenges with the Act Six and Seed Internships programs. The team needed a secure way to share more than 1,000 applications per year with 150 volunteer assessors. Initially, the team sent printed copies, and then digital PDFs to the volunteers, which limited scalability and risked the security of students’ personal information.
 
-
-Each community group selects local volunteers who reflect the diverse backgrounds of students in their area. These volunteers are assigned applications to review and score. The scores are then used to make program placement decisions, ensuring an equitable selection process:
-
-1. Each community group selects local volunteers who represent the diverse backgrounds of students in their area.
-
-1. Each volunteer is then assigned a set of applications to review and score.
-
-1. The scores are used to support program placement decisions.
-
-A significant investment was made in a custom web application, built and maintained by a vendor, but this approach soon became cost prohibitive.
+Each community group selects local volunteers who reflect the diverse backgrounds of students in their area. These volunteers are assigned applications to review and score. The scores are then used to make program placement decisions, ensuring an equitable selection process. A significant investment was made in a custom web application, built and maintained by a vendor, but this approach soon became cost prohibitive.
 
 *“What’s been so compelling to us is that the integration, extensibility, and flexibility of Power Platform means that we can do way more than we should be able to with the resources that we have.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
-
 
 :::image type="content" source="media/nonprofit/manual-task-flow.png" alt-text="Diagram showing manual tasks completed for Degrees of Change nonprofit." lightbox="media/nonprofit/manual-task-flow.png":::
 
