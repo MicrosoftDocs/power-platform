@@ -171,7 +171,8 @@ The AI Builder match recommendations significantly increase the speed and quanti
 
 ### Accelerate candidate matching with AI models
 
-AI Builder provides a selection of prebuilt models, and the ability to create custom models for different business scenarios. To streamline the candidate matching process, the Degrees of Change team uses these models and tools:
+AI Builder provides a selection of prebuilt models and the ability to create custom models for different business scenarios. To streamline the candidate matching process, the Degrees of Change team uses these models and tools:
+
 
 - **Entity extraction**: The team uses the prebuilt entity extraction model in AI Builder to identify key elements of structured data from candidate applications, and unstructured data elements from candidate r&eacute;sum&eacute;s. The data is used to match with the internship position requirements outlined by employers and hiring managers.
 
