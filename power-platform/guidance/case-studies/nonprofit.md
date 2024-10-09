@@ -16,7 +16,8 @@ In this article, you learn how [Degrees of Change](https://www.degreesofchange.o
 Through its Act Six and Seed Internship programs, Degrees of Change provides access to college education and graduate employment opportunities for exceptional students from underrepresented backgrounds. The team consists of 20 staff, more than 100 community volunteers, and one full-time IT resource.
 
 
-Since Degrees of Change transformed the application and selection process with Power Platform and generative AI, they're able to deliver services to more students. This shift also streamlined operations and improved data tracking and analysis.
+Since Degrees of Change transformed the application and selection process with Power Platform and generative AI, it's able to deliver services to more students. This shift also streamlined operations and improved data tracking and analysis.
+
 
 *“Part of our work is how we empower and give the tools to local, grassroots community nonprofits. We provide the technology, training, and curriculum assistance to be able to deliver the Act Six program in their community.”* &mdash;Tim Herron, Founder & Chief Innovation Officer
 
