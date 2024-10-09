@@ -56,7 +56,7 @@ Most of these users are hidden from user views but they can be found by using th
 | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
 | #CTQHotPath  | CTQHotpath@onmicrosoft.com         | To perform data integration between Omnichannel for Customer Service and Dataverse. | ServiceReader, ServiceWriter                                                           |
 | #CTQWarmPath  | CTQWarmpath@onmicrosoft.com        | To perform data integration between Omnichannel for Customer Service and Dataverse. | Omnichannel supervisor, Omnichannel agent, Omnichannel administrator, ServiceReader, ServiceWriter, ServiceDelete |
-| #CTQDiagnostics | CTQDiagnostics@onmicrosoft.com     | To generate insights for Unified Routing.                                   | ServiceReader,ServiceWriter  |                                                  
+| #CTQDiagnostics | CTQDiagnostics@onmicrosoft.com     | To generate insights for Unified Routing.                                   | ServiceReader, ServiceWriter  |                                                  
 | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
 | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining<br />@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
