@@ -115,32 +115,26 @@ You have two options for installing the Parking Reservation solution:
 
 AppSource is a Microsoft digital storefront. Take these steps to go through the AppSource install process:
 
-1. Go to the [Parking Reservation template](<https://aka.ms/AccessAppointmentBookingTemplate>) in AppSource and select **Get it now**.
+1. Go to the [Parking Reservation template](<https://aka.ms/AccessParkingReservationTemplate>) in AppSource and select **Get it now**.
 1. In the *Install Parking Reservation Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. Agree to the *Terms and Privacy Statements* when prompted.
 1. Select **Install**.
 
 [Learn more about AppSource](https://appsource.microsoft.com/en-US/).
 
-Two solutions are installed in your environment, **IT Base** and **Parking Reservation**. [Learn more about the Parking Reservation template solutions](./overview.md).
-
 ### Download and manually install solution files
 
 1. Download the following Managed *or* Unmanaged solution files:
 
     - Managed
-      - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
       - [mpa_ParkingReservation_managed.zip](https://aka.ms/ParkingReservationManagedSolution)
     - Unmanaged
-      - [mpa_ITBase_unmanaged.zip](https://aka.ms/ITBaseUnManagedSolution)
       - [mpa_ParkingReservation_unmanaged.zip](https://aka.ms/ParkingReservationUnManagedSolution)
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. In the left pane, select **Solutions**.
-1. Select **Import solution**,and then find and select the **managed** or **unmanaged version** of the `mpa_ITBase` file downloaded.
+1. Select **Import solution**,and then find and select the **managed** or **unmanaged version** of the `mpa_ParkingReservation` file downloaded.
 1. Select **Next**, and then select **Import**.
-1. After you receive a message that the import was successful, repeat steps 4 and 5 to import the `mpa_ParkingReservation` file you downloaded.
-1. Select **Next** and **Next** again.
 1. For each of the connections listed, select the connection that was created in the import steps.
 1. Select **Next**.
 1. Skip the the environment variable setup for now. The required URL values only become available after the apps are imported into the environment.
@@ -152,7 +146,7 @@ Step 4: Assign security roles
 
 Set up security roles in your solutions so admins can manage access, language support, and experiences in the app.
 
-There are four security roles:
+The Parking Reservation solution contains three security roles.
 
 - **IT Base - IT Base User** - Assign this role to an admin who needs to perform specific admin tasks such as localizing strings and monitoring for errors.
 - 
