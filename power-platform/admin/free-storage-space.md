@@ -10,7 +10,6 @@ ms.author: ceian
 ms.reviewer: sericks
 contributors:
   - DanaMartens
-  - ProfessorKendrick
   - IanCeicys
   - meesposi 
 search.audienceType: 
@@ -19,7 +18,7 @@ search.audienceType:
 
 # Free up storage space
 
-You can reduce the amount of storage space used by removing or deleting information from dynamics 365 apps, such as:
+You can reduce the amount of storage space used by removing or deleting information from Dynamics 365 apps, such as:
 
 - **Dynamics 365 Sales**
 - **Dynamics 365 Customer Service**

@@ -174,7 +174,31 @@
             - name: XO:09 User interface content
               href: ./experience-optimization/user-interface-content.md
     - name: Workloads
-      href: workloads.md
+      items: 
+      - name: Overview
+        href: workloads.md
+      - name: Intelligent application
+        items:
+        - name: Quick links
+          href: intelligent-application/index.yml
+        - name: What is an intelligent application workload
+          href: intelligent-application/overview.md
+        - name: Design principles
+          href: intelligent-application/design-principles.md
+        - name: Design areas
+          items: 
+          - name: Responsible AI
+            href: intelligent-application/responsible-ai.md
+          - name: Security and compliance
+            href: intelligent-application/security.md
+          - name: Performance optimization
+            href: intelligent-application/monitoring.md
+          - name: Deployment and testing
+            href: intelligent-application/publishing.md
+          - name: Integration options
+            href: intelligent-application/integrations.md
+          - name: Intent recognition and entity extraction
+            href: intelligent-application/language.md
     - name: Implementing recommendations
       href: implementing-recommendations.md
     - name: Feedback and support

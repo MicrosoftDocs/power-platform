@@ -1,12 +1,12 @@
 ---
-title: "Set up the CoE Starter Kit | MicrosoftDocs"
-description: "Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate"
-author: manuelap-msft
+title: Set up the CoE Starter Kit 
+description: Prerequisites and instructions for setting up the Center of Excellence (CoE) Starter Kit for adopting and supporting Microsoft Power Platform, with a focus on Power Apps and Power Automate.
+author: Grant-Archibald-MS 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/02/2023
+ms.date: 10/02/2024
 ms.subservice: guidance
-ms.author: mapichle
+ms.author: grarchib
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -146,6 +146,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - HTTP
 - [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)
 - [Microsoft Dataverse](/connectors/commondataserviceforapps/)
+- [Microsoft Dataverse (legacy)](/connectors/commondataservice/)
 - [Microsoft Teams](/connectors/teams/)
 - [Office 365 Groups](/connectors/office365groups/)
 - [Office 365 Outlook](/connectors/office365/)
@@ -155,6 +156,7 @@ The [DLP policy](/power-platform/admin/wp-data-loss-prevention) applied to your 
 - [Power Automate for Admins](/connectors/microsoftflowforadmins/)
 - [Power Automate Management](/connectors/flowmanagement/)
 - [Power Platform for Admins](/connectors/powerplatformforadmins/)
+- [Power Platform for Admins V2](/connectors/powerplatformadminv2/)
 - [Power Query Dataflows](/connectors/dataflows/)
 - [RSS](/connectors/rss/)
 

@@ -60,7 +60,7 @@ The [Nav control](/power-platform/guidance/creator-kit/nav) in Creator Kit is a 
 
 To implement a wizard pattern, use the [SubwayNav component](/power-platform/guidance/creator-kit/subwaynav) of Creator Kit.
 
-## See also
+## Related information
 
 [Navigation in a canvas app learn module](/training/modules/navigation-canvas-app/)
 

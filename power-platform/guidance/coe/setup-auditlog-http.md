@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/06/2023
+ms.date: 09/26/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -33,7 +33,7 @@ The audit log sync flows connect to the [Office 365 Management Activity API refe
 
 1. Microsoft 365 audit log search must be turned on for the audit log connector to work. For more information, see [Turn audit log search on or off](/microsoft-365/compliance/turn-audit-log-search-on-or-off?preserve-view=true&view=o365-worldwide).
 1. Your tenant must have a subscription that supports unified audit logging. For more information, see [Security & Compliance Center availability for business and enterprise plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
-1. A global admin is required to configure the Microsoft Entra app registration.
+1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) fore more guidance.
 
 > [!NOTE]
 > The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
@@ -68,7 +68,6 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 1. Select **Certificates and secrets**.
 
 1. Select **+ New client secret**.
-   :::image type="content" source="media/coe39.png" alt-text="Screenshot that shows the location of the +New client secret button on the Certificates & secrets menu." lightbox="media/coe39.png":::
 
 1. Add a description and expiration in line with your organization's policies, and then select **Add**.
 
@@ -101,7 +100,6 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 4. Turn on the **Admin | Audit Logs | Office 365 Management API Subscription** flow and run it, enter _start_ as the operation to run.
    :::image type="content" source="media/coe-startsubscription.png" alt-text="Screenshot that shows the location of the Run button in the navigation bar and the start operation in the Run flow pane." lightbox="media/coe-startsubscription.png":::
 5. Open the flow and verify that the action to start the subscription is passed.
-   :::image type="content" source="media/coe-startsubscription-passed.png" alt-text="Screenshot that shows the Status code of 200 in the StartSubscription window." lightbox="media/coe-startsubscription-passed.png":::
 
 > [!IMPORTANT]
 > If you previously enabled the subscription, you see a _(400) The subscription is already enabled_ message. This means the subscription successfully enabled in the past. You can ignore this message and continue with the setup.
@@ -133,7 +131,6 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 1. Search for the Launched app activity in the date range available to you.
    :::image type="content" source="media/coe-oldauditlogs-1.png" alt-text="Screenshot that highlights the date range and launched app activity for a search in the Audit page of Microsoft Purview." lightbox="media/coe-oldauditlogs-1.png":::
 1. Once the search runs, select **Export** to download the results.
-   :::image type="content" source="media/coe-oldauditlogs-2.png" alt-text="Screenshot that highlights the Completed Job status and Export button after an audit search." lightbox="media/coe-oldauditlogs-2.png":::
 1. Browse to this flow in the core solution: **Admin | Audit Logs | Load events from exported Audit Log CSV file**.
 1. Turn on the flow and run it, selecting the downloaded file for the Audit Log CSV parameter.
    :::image type="content" source="media/coe-oldauditlogs-3.png" alt-text="Screenshot that shows the Audit Log CSV import field and Run flow button of the Run flow pane." lightbox="media/coe-oldauditlogs-3.png":::
@@ -147,7 +144,6 @@ You can load historic data into the CoE Starter Kit tables manually, using one o
 ### API permissions
 
 Go to your app registration and validate that you have the correct API permissions. Your app registration requires application permissions not delegated. Validate that the status is _Granted_.
-:::image type="content" source="media/auditlog-troubleshoot-1.png" alt-text="Screenshot that highlights the Application type and Granted for status of a configured permission." lightbox="media/auditlog-troubleshoot-1.png":::
 
 ### Secret environment variable - Azure secret
 
