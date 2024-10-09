@@ -121,7 +121,7 @@ With the solution checker feature, you can perform a rich static analysis check 
 
 CyberArk offers an identity security platform that secures human and machine identities from end-to-end. Power Automate desktop flows enable you to retrieve credentials from CyberArk. For more information, see [CyberArk actions](/power-automate/desktop-flows/actions-reference/cyberark).
 
-## See also
+## Related information
 
 - [Use environment variables in solutions](/power-apps/maker/data-platform/environmentvariables)
 - [Use environment variables in solution custom connectors](/connectors/custom-connectors/environment-variables)

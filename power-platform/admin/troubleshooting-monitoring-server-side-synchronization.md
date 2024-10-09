@@ -55,9 +55,6 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
  You can use the Server-Side Synchronization Monitoring dashboard to get a quick look at the health of mailboxes using server-side sync.  
   
  Go to any dashboard, click Select ![Drop-down button.](../admin/media/drop-down-button.png "Drop-down button") next to the dashboard title, and then click **Server-Side Synchronization Monitoring**.  
-
-> [!div class="mx-imgBorder"] 
-> ![Server-side Synchronization Monitoring dashboard.](../admin/media/server-side-sync-performance-dashboard.png "Server-side Synchronization Monitoring dashboard")  
   
  This dashboard is made up of multiple charts, each providing insights into your organization's server-side sync performance.  
   
@@ -67,9 +64,6 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 > ![Click on the mailboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the mailboxes listed for more info.")  
   
  Click on the grid icon in each chart to view the records that are used to generate the chart.  
-  
-> [!div class="mx-imgBorder"] 
-> ![Click to view records used to create chart.](../admin/media/server-side-sync-performance-dashboard-chart.PNG "Click to view records used to create chart")  
 
 ## Common alerts and recommended resolutions  
   

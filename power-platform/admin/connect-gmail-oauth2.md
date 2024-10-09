@@ -74,9 +74,6 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
    |Authorized JavaScript origins     | Your environment's  URL (for example, `https://contoso.crm.dynamics.com`)        |
    |Authorized redirect URIs     | Your environment's URL with `/_grid/cmds/dlg_gmailoauth.aspx` appended to it (for example, `https://contoso.crm.dynamics.com/_grid/cmds/dlg_gmailoauth.aspx`)        |
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of creating the OAuth client ID.](media/gmail-oauth-consent-create-clientid.png "Create OAuth client ID")
-
 8. Select **Create**. In the screen that appears, make note of the client ID and client secret. You'll use this data in the next step.
 
 ## Step 4. Create an email server profile

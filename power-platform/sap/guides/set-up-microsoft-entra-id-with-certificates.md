@@ -30,17 +30,18 @@ This guide walks you through setting up the connector so your users can access S
 
 ## Prerequisites
 
- 1. [Set up SAP Connection](getting-started-with-the-sap-erp-connector.md)
- 1. [Set up Secure Network Communications](set-up-secure-network-communications.md)
- 1. Familiarity with public and private key technologies.
+ 1. [Set up SAP Connection](getting-started-with-the-sap-erp-connector.md). 
+	- Be sure to use version July 2024 - 3000.230 or higher of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
+ 1. [Set up Secure Network Communications](set-up-secure-network-communications.md).
+ 1. Be familiar with public and private key technologies.
 
-## Generating a signing certificate to issue tokens for users
+## Certificate
 
-We generate an example self signed root certificate similar to those certificates provided by a Certificate Authority.
+We generate an example self-signed root certificate similar to those certificates provided by a Certificate Authority. You can use it to issue tokens for your users.
 
-### Creating a demo public key infrastructure
+### Create a demo public key infrastructure
 
-Extending the [Set up Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (short for Public Key Infrastructure).
+Extend the [Set up Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (Public Key Infrastructure).
 
 ![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
@@ -98,7 +99,7 @@ openssl x509 -req -in signingUsersCert/users.csr.pem -days 3650 `
   -CAserial rootCA/serial
 ```
 
-#### Generating user certs:
+### Generate user certs
 
 Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`.
 
@@ -129,7 +130,9 @@ $ openssl verify -CAfile rootCA/ca.cert.pem -untrusted signingUsersCert/users.ce
 userCerts/TESTUSER01.cert.pem: OK
 ```
 
-## Adding users signing certificate + certificate chain to Windows Store
+## Windows Store
+
+Take these steps to add users signing certificate and certificate chain to Windows Store.
 
 Generate .p12 file from users signing certificate & private key.
 
@@ -157,7 +160,7 @@ Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Us
 
 You can map X.509 certificates to users explicitly, using rules, or by adding a user intermediate certificate to SAP.
 
-### Mapping X.509 certificates to users explicitly
+### Map X.509 certificates to users explicitly
 
 Explicitly map a small number of Entra ID users to SAP users.
 
@@ -169,35 +172,39 @@ Select option `DN` when prompted for `Type of ACL`.
 
 Choose `New Entry` and enter `CN=TESTUSER01@CONTOSO.COM` (replacing the content for your own UPN) for the external ID. Make sure CN comes first. Select your UPN for the username field; and last Check the `Activated` option and save the results.
 
+> [!NOTE]
 > DO NOT INCLUDE `p:` prefix.
 
-### Mapping X.509 certificates to users using rules
+### Map X.509 certificates to users using rules
 
-Use Certificate Rules to easy bulk map Entra ID users to SAP users.
+Use *Certificate Rules* to easy bulk-map Entra ID users to SAP users.
 
 Ensure the `login/certificate_mapping_rulebased` profile parameter is set to a current value of `1`.
 
-> Method does not persisted setting between restarts.
+> [!NOTE]
+> This mapping method does not persist between restarts.
 
-Then created the following rule in t-code `CERTRULE`
+Then create the following rule in t-code `CERTRULE`
 
 ![T-Code: CERTRULE](./media/setup-microsoft-entra-id-with-certificates/sap-certrule-mapping.png)
 
 > [!NOTE]
-> Now wait 2 minutes to ensure cached connections to SAP have expired.. Then retest the connection. If not, you may run into the `No suitable SAP user found for X.509-client certificate` error.
+> Wait two minutes to ensure cached connections to SAP have expired and then retest the connection. If not, you may run into the *No suitable SAP user found for X.509-client certificate* error.
 
-## Add a user intermediate certificate to SAP
+## User intermediate certificate
 
-Open t-code `STRUST` and double click on 
-In `STRUST` add the public certificate users.cert.pem file to the box.
+You'll need to add a user intermeditate certificate to SAP.
+
+Open t-code `STRUST` and double-click 
+on `STRUST` to add the public certificate users.cert.pem file to the box.
 
 1. In SAP GUI, go to transaction code STRUST.
-2. If "SNC SAPCryptolib" has a red X, right-click and select "Create".
-3. Double-click "SNC SAPCryptolib" and then double-click your Own Certificate.
-4. Select "Import Certificate" and choose your `signingUsersCert\users.cert.pem` public certificate.
-5. Select "Add to Certificate List".
+2. If *SNC SAPCryptolib* has a red X, right-click and select **Create**.
+3. Select **SNC SAPCryptolib** and then double-click your Own Certificate.
+4. Select **Import Certificate** and choose your `signingUsersCert\users.cert.pem` public certificate.
+5. Select **Add to Certificate List**.
 
-## Updating the SAP System
+## SAP system update
 
 Add the `SsoCertificateSubject` to your SAP System parameters.
 
@@ -210,7 +217,7 @@ Also enable
 "SncSso": "On"
 ```
 
-Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Entra ID account.
+Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Microsoft Entra ID account.
 
 
 > [!IMPORTANT]

@@ -53,9 +53,6 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 4. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met. 
 
-   > [!div class="mx-imgBorder"] 
-   > ![Enter name.](media/add-user-enter-name.png "Enter name")
-
 5. Select **Refresh** to see the added user in the list.
 
 6. After a user is added to the environment, [assign a security role to the user](database-security.md) to configure their access to resources in the environment. 

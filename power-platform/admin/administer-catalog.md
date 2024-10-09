@@ -3,16 +3,14 @@ title: "Administer the catalog"
 description: "Learn how to administer the catalog for Power Platform. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: derekkwanpm
 ms.author: derekkwan
-ms.date: 05/23/2024
+ms.date: 09/10/2024
 ms.reviewer: matp
 ms.topic: article
 ms.subservice: admin
 search.audienceType:
 - admin
 ---
-# Administer the catalog (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Administer the catalog
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -31,9 +29,7 @@ Administering the catalog includes the following tasks:
 - [Edit user access](#edit-user-access)
 
 > [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> You need a Managed Environment in order to submit items to the catalog. You can however install catalog items from any environment. More information: [Managed Environments overview](managed-environment-overview.md)
 
 ## Access controls
 
@@ -54,21 +50,13 @@ Power Platform admins and system customizers already have full access to the cat
 
 Before you can administer the catalog, you must install and configure it. Most organizations should be fine with just one catalog in their tenant. All environments in a tenant can install catalog items from a single catalog. But some organizations might want to have different catalogs for regions, departments, or other grouping.
 
-<!-- To set up a catalog, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for your tenant, and expand **Resources** and then select **Catalogs**.
+To set up a catalog, go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) for your tenant, and expand **Resources** and then select **Catalogs**.
 
 :::image type="content" source="media/admin-catalog.png" lightbox="media/admin-catalog.png" alt-text="Catalog in the Power Platform admin center":::
 
-Select **New catalog** in the top menu or in the page itself brings up a setup wizard that has seven steps. -->
+Select **New catalog** in the top menu or in the page itself brings up a setup wizard that has seven steps.
 
-1. In the same browser where you are logged into your tenant, go to this link to get the Power Platform Catalog Manager: https://appsource.microsoft.com/product/dynamics-365/powerappssvc.catalogmanager-preview?flightCodes=dde212e5c66047c59bf2b346c419cef6
-
-1. Select **Get it now**. This redirects you to the Power Platform admin center where you can install the Power Platform Catalog Manager.
-
-   :::image type="content" source="media/catalogmanager-appsource.png" lightbox="media/catalogmanager-appsource.png" alt-text="Install the catalog manager":::
-
-1. Choose the environment where you'd like to set up the catalog, select **Install**, and wait a few minutes for the installation to complete.
-
-<!-- ### Step 1: Setup
+### Step 1: Setup
 
 Enter the following information:
 
@@ -112,9 +100,9 @@ This last step summarizes everything you just set up. If everything looks good, 
   
 You can add more catalogs to your tenant at any time by going through this wizard again and selecting a different environment to create a new catalog.
 
-After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), or -->
+After the process is complete, you can access the Power Platform Catalog Manager from the same **Catalogs** screen under **Resources** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-When successfully completed, you see the Power Platform Catalog Manager in the **Apps** area in Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
+In addition, When successfully completed, the **Power Platform Catalog Manager** appears in the **Apps** area in Power Apps (make.powerapps.com). The Power Platform Catalog Manager is where you perform all your administrative tasks. The below sections are all performed inside the Power Platform Catalog Manager.
 
 Repeat this process if you would like to set up a catalog in more environments.
 
@@ -260,10 +248,5 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 
 ### See also
 
- [Use the catalog with Power Platform CLI (preview)](/power-platform/developer/submit-catalog-items)
+ [Use the catalog with Power Platform CLI](/power-platform/developer/submit-catalog-items)
 
-
-<!-- ### See also
-
-[Catalog in Power Platform (Preview)](catalog.md)   
-[View, submit, and install catalog items  (Preview)](submit-catalog-items.md) -->

@@ -88,10 +88,8 @@ Power Automate approvals (out of the box) or the [approvals kit](https://www.mic
 
 ## Related information
 
-- [Recommendations for designing a reliability testing strategy](/azure/well-architected/reliability/testing-strategy)
-- [Recommendations for designing a reliable scaling strategy](/azure/well-architected/reliability/scaling)
-- [Recommendations for self-healing and self-preservation](/azure/well-architected/reliability/self-preservation)
 - [Environment Request Management](/power-platform/guidance/coe/setup-environment-components), part of the CoE Starter Kit
+- [Business approvals templates](/power-automate/guidance/business-approvals-templates/introduction)
 
 ## Next steps
 

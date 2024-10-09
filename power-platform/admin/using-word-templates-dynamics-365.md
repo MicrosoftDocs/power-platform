@@ -9,7 +9,6 @@ ms.subservice: admin
 ms.author: cgarty
 ms.reviewer: sericks
 contributors: 
-    - ProfessorKendrick
     - sriharibs-msft
 search.audienceType: 
   - admin

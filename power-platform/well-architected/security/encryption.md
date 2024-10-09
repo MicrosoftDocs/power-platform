@@ -4,7 +4,7 @@ description: Learn how to encrypt and protect your data.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -73,6 +73,8 @@ An Azure Active Directory (Azure AD) tenant houses information that's relevant t
 
 Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, see [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](/power-platform/admin/regions-overview).
 
+Accessing Copilot Studio generative AI features from regions outside the United States results in [data movement across regional boundaries](/microsoft-copilot-studio/manage-data-movement-outside-us). This data movement can be enabled and disabled in Power Platform. Learn more in [Regions involved with copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#regions-involved-with-copilots-and-generative-ai-features). Geographic data residency in Microsoft Copilot Studio provides a robust framework for ensuring data security and compliance with local regulations. In addition to its own native security features, Copilot Studio leverages the Azure infrastructure to provide secure and compliant data residency options. Learn more about data residency and Copilot Studio in [Geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency) and [Security and geographic data residency in Copilot Studio](/microsoft-copilot-studio/geo-data-residency-security).
+
 ### Data at rest
 
 Unless otherwise stated in documentation, customer data remains in its original source (for example, Dataverse or SharePoint). All data persisted by Power Platform is encrypted by default using Microsoft-managed keys.
@@ -87,15 +89,7 @@ Power Platform requires all incoming HTTP traffic to be encrypted using TLS 1.2 
 
 For more information, see [About data encryption in Power Platform](/power-platform/admin/about-encryption) and [Data storage and governance in Power Platform](/power-platform/admin/security/data-storage).
 
-<!--
-
-## Example
-
-The following example shows encryption solutions that you can use to manage keys, certificates, and secrets.
-
--->
-
-## See also
+## Related information
 
 - [About data encryption](/power-platform/admin/about-encryption)
 - [Data storage and governance in Power Platform](/power-platform/admin/security/data-storage)
