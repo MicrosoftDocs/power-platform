@@ -164,7 +164,8 @@ Match recommendations from AI Builder are surfaced in the Matching app in Power 
 
 The AI Builder match recommendations significantly increase the speed and quantity of internship placements that staff are able to process.
 
-*“Using the prebuilt models in AI Builder is helping our staff make faster, more effective recruitment decisions without having to burn hours processing the raw data.”* &mdash;Tim Herron, Founder & Chief Innovation Officer
+*“Using the prebuilt models in AI Builder is helping our staff make faster, more effective recruitment decisions without having to burn hours processing the raw data.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
+
 
 :::image type="content" source="media/nonprofit/matching-system-task-flow.png" alt-text="Screenshot showing matching system task flow." lightbox="media/nonprofit/matching-system-task-flow.png":::
 
