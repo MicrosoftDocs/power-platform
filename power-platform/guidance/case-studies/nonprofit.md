@@ -12,7 +12,8 @@ ms.date: 08/28/2024
 
 In this article, you learn how [Degrees of Change](https://www.degreesofchange.org/), a nonprofit dedicated to helping underrepresented students succeed in college and their careers, used Power Apps, Power Pages, and AI Builder to streamline their operations.
 
-Through its Act Six and Seed Internship programs, Degrees of Change provides access to college education and graduate employment opportunities for exceptional students from underrepresented backgrounds. The team consists of 20 staff, over 100 community volunteers, and one full-time IT resource.
+Through its Act Six and Seed Internship programs, Degrees of Change provides access to college education and graduate employment opportunities for exceptional students from underrepresented backgrounds. The team consists of 20 staff, more than 100 community volunteers, and one full-time IT resource.
+
 
 Since Degrees of Change transformed the application and selection process with Power Platform and generative AI, they're able to deliver services to more students. This shift also streamlined operations and improved data tracking and analysis.
 
