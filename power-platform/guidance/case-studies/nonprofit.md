@@ -177,7 +177,8 @@ AI Builder provides a selection of prebuilt models and the ability to create cus
 - **Entity extraction**: The team uses the prebuilt entity extraction model in AI Builder to identify key elements of structured data from candidate applications and unstructured data from candidate r&eacute;sum&eacute;s. The data is used to match with the internship position requirements outlined by employers and hiring managers.
 
 
-- **Match recommendation**: A second AI model then combines these elements to generate a match recommendation that is displayed to staff in the Matching app in Power Apps.
+- **Match recommendation**: A second AI model then combines these elements to generate a match recommendation that is displayed to staff in the Matching app.
+
 
 - **Power Automate**: Power Automate orchestrates the processing of information by providing AI Builder with the data it needs from Dataverse, and then storing the results back in Dataverse.
 
