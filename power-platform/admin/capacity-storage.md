@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 08/01/2024
+ms.date: 10/07/2024
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -115,6 +115,22 @@ Note the following features:
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
 > - The capacity check conducted prior to creating new environments excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
+#### Allocate capacity for an environment 
+
+In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Resources** > **Capacity**.
+1. On the **Capacity** page, select the **Datavese** tab.
+1. Select the environment for which you want to allocate capacity.
+1. Select the **Allocate capacity** button, located above the environment list. The **Allocate capacity** pane is displayed on the right side of the page.
+1. In the **Allocate capacity** pane, view the currently allocated and consumed capacity for the environment.
+1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. 
+
+    Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
+
+1. Opt-in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
+1. Select **Save** to apply the changes.
 
 #### Environment storage capacity details
 
@@ -320,7 +336,22 @@ This is due to a change that occurred in April 2023, after which only users with
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
 - [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
-- [Field Service](/dynamics365/field-service/reports) 
+- [Field Service](/dynamics365/field-service/reports)
+
+### Who can allocate capacity?
+Users with global admin, Power Platform admin, and Dynamics 365 admin roles can allocate Dataverse capacity.
+
+### Does this impact my total available capacity in my tenant?
+There is no impact on the overall capacity available at the tenant level. Admins can optionally pre-allocate capacity from the tenant pool to an environment. Pre-allocated capacity is reduced from the tenant level's total available capacity for use by other environments.
+
+### What happens if capacity consumption goes beyond the allocated capacity?
+Currently, only _soft enforcement_ through email notification is turned on. Admins (Power Platform admins and environment admins) start receiving notifications when capacity usage exceeds 85% of the allocated capacity.
+
+### What types of Dataverse capacity can be allocated?
+Database, file, and log capacity can be allocated.
+
+### Do I need to allocate capacity to every environment like other supported currencies?
+No, admins can select specific environments to allocate capacity.
 
 ### Related information
 [Add Microsoft Dataverse storage capacity](add-storage.md) <br />
