@@ -33,7 +33,7 @@ Responsible AI core principles include fairness, accountability, transparency, a
 
 - **Fairness**: Use diverse and representative training data to minimize biases. Regularly update training data and enlist auditors to validate fairness and equity.
 - **Accountability**: Define clear roles and responsibilities for team members involved in the AI project. Establish and adhere to ethical standards that prioritize fairness and accountability.
-- **Transparency**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it was designed, and how it's monitored and updated.
+- **Transparency**: Ensure that users know they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen, how it was designed, and how it's monitored and updated.
 - **Ethics**: Foster an inclusive workforce and seek input from diverse communities early in the development process. Regularly assess and test models for ethical concerns and disparities in performance. Establish a governance framework that includes regular audits.
 
 Incorporate these practices into your development and deployment processes to create an intelligent application workload that adheres to the core principles of responsible AI.
@@ -58,7 +58,7 @@ Recognize the importance of addressing biases in the system and ensure fairness 
 - **Diverse and representative data**: Ensure that the training data is diverse and representative of different demographics to minimize inherent biases. Regularly audit the data for biases and imbalances, and take corrective actions as needed.
 - **Bias detection and mitigation tools**: Use tools and techniques to detect biases in the AI models, such as statistical analysis and fairness metrics. Implement debiasing techniques, including resampling, reweighting, or adversarial debiasing, to reduce biases in the models.
 - **Human-in-the-loop**: Incorporate human review and feedback loops to identify and correct biases that the AI might introduce. Establish an ethics committee or governance board to oversee AI development and deployment, ensuring ethical standards are met.
-- **Transparency and trust**: Ensure end users know that they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen and provide information on how it was designed and on how it's monitored and updated.
+- **Transparency and trust**: Ensure users know they're using a workload that uses generative AI capabilities. Clearly communicate why an AI solution was chosen and provide information on how it was designed and how it's monitored and updated.
 - **Continuous monitoring and improvement**: Continuously monitor the AI system for biases and performance issues, and update the models as needed. Ensure models remain fair and unbiased by regularly retraining models with updated and more diverse data.
 
 ## Ongoing monitoring and evaluation

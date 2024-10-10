@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 09/27/2024
+ms.date: 10/01/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -21,6 +21,12 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of Organization Insights Dashboard
+
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Soltion dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+
+As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
 ## Deprecating support for multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
@@ -125,9 +131,9 @@ The account must be added as an external user in the tenant. Sign out and sign i
 
 ### What do you need to do?
 
-If a user who isn't part of your Microsoft Entra ID needs access to Dataverse organization, the User needs to be added to the Tenant as an external User or Guest User. For detailed steps, see [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
+If a user who isn't part of your Microsoft Entra ID needs access to a Dataverse organization, the user needs to be added to the tenant as an external user or guest user. Learn more in [Add B2B collaboration users in the Microsoft Entra admin center](/azure/active-directory/external-identities/add-users-administrator). Additionally, you can restrict access to the Dataverse organization by reviewing the access granted to external users by following the steps below.
 
-**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it isn't, then you can disable share with everyone using the following PowerShell script:
+**Disable sharing apps with everyone:** You can assess if sharing applications with everyone (including guests) is a requirement for cross-team collaboration.  If it isn't, then you can disable sharing with everyone using the following PowerShell script:
 
 ```powershell
 $tenantSettings = Get-TenantSettings
@@ -135,7 +141,7 @@ $tenantSettings.powerPlatform.powerApps.disableShareWithEveryone = $true
 Set-TenantSettings $tenantSettings
 ```
 
-**Disable guests from making apps:** You can review if guests making apps in your organization are required. You can disable if guests aren't expected to be makers (such as, customizing SharePoint forms). Note that this option already defaults to `$false`.
+**Disable guests from making apps:** You can review if guests making apps in your organization are required. You can disable it if guests aren't expected to be makers (such as, customizing SharePoint forms). Note that this option already defaults to `$false`.
 
 ```powershell
 $tenantSettings = Get-TenantSettings
