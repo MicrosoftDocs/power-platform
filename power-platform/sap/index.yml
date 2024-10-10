@@ -4,6 +4,7 @@ metadata:
   title: 'Learn how to accelerate integration of the Power Platform with SAP | Microsoft Learn'
   description: Explore guidance, template, samples, and tools to help unlock Power Platform capabilities integration with SAP. 
   ms.service: power-platform
+  ms.subservice: connectors
   keywords: what are Power Platform SAP connectors, how to use Power Platform with SAP, Power Platform and SAP documentation
   ms.topic: marketing-hub
   ms.author: edleh
@@ -21,8 +22,8 @@ sections:
     summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
     heroImage:
      componentType: hero-image
-     lightImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-light-copilot-learning-hub-2x.png
-     darkImageSrc: /copilot/media/copilot/copilot-learning-hub/hero-dark-copilot-learning-hub-2x.png
+     lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
+     darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
 # Start your Power Platform and SAP learning journey
   - componentType: cards
     #isShadowless: false
@@ -33,15 +34,15 @@ sections:
     - componentType: card
       title: "Step 1. Understand SAP integration"
       summary: Learn how the Microsoft Power Platform makes it easier for organizations running SAP to digitally automate their business processes. (Ignite)
-      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      imageUrl: /power-platform/sap/guides/media/index-page/Understand_integration.png
       links: 
         - componentType: link
           text: Explore Power Platform and SAP integration
-          url: /collections/7rmiy0yrnw8d6
+          url: /power-platform/sap/connect-power-platform-and-SAP
     - componentType: card
       title: "Step 2. Get started with Power Platform"
       summary: Learn about the Power Platform and how to start using it in your environments.
-      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      imageUrl: /power-platform/sap/guides/media/index-page/Get_started.png
       links: 
         - componentType: link
           text: Power Platform guidance documentation
@@ -52,18 +53,18 @@ sections:
     - componentType: card
       title: "Step 3. Connect to SAP"
       summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
-      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      imageUrl: /power-platform/sap/guides/media/index-page/Connect.png
       links: 
         - componentType: link
-          text: SAP on Power Platform
-          url: https://learn.microsoft.com/en-us/power-platform/sap/overview
+          text: Connect Power Platform and SAP
+          url: /power-platform/sap/explore-power-platform-and-SAP-integration
         # - componentType: link
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
     - componentType: card
       title: "Step 4. Leverage templates"
       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-      #imageUrl: https://review.learn.microsoft.com/en-us/power-platform/media/hub-page/step1small.png
+      imageUrl: /power-platform/sap/guides/media/index-page/Leverage_templates.png
       links: 
         - componentType: link
           text: Procurement template for SAP
