@@ -24,14 +24,31 @@ sections:
   #    componentType: hero-image
   #    lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
   #    darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
-  - componentType: hero-product
-    supertitle: Microsoft Learn
-    title: Power Platform and SAP
-    #size: extra-small
-    background:
-      componentType: image
-      Src: /power-platform/sap/guides/media/index-page/Hero.png
-      subtitle: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform."
+
+  # - componentType: hero-product
+  #   supertitle: Microsoft Learn
+  #   title: Power Platform and SAP
+  #   #size: extra-small
+  #   background:
+  #     componentType: image
+  #     Src: /power-platform/sap/guides/media/index-page/Hero.png
+  #     subtitle: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform."
+
+sections:
+  - componentType: hero
+    supertitle: Lorem ipsum dolor sit amet
+    title: Standard hero
+    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    summary: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    links:
+      - componentType: link
+        url: https://bing.com
+        text: Click here
+    # up to two links may be added
+    #   - componentType: link
+    #     url: https://bing.com
+    #     text: Read me
+
 # Start your Power Platform and SAP learning journey
   - componentType: cards
     #isShadowless: false
