@@ -24,14 +24,14 @@ sections:
   #    componentType: hero-image
   #    lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
   #    darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
-    - componentType: hero
+  - componentType: hero
     supertitle: Microsoft Learn
     title: Power Platform and SAP
     #size: extra-small
     background:
-     componentType: image
-     Src: /power-platform/sap/guides/media/index-page/Hero.png
-     subtitle: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform."
+    - componentType: image
+      Src: /power-platform/sap/guides/media/index-page/Hero.png
+      subtitle: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform."
 # Start your Power Platform and SAP learning journey
   - componentType: cards
     #isShadowless: false
@@ -46,7 +46,7 @@ sections:
       links: 
         - componentType: link
           text: Explore Power Platform and SAP integration
-          url: /power-platform/sap/connect-power-platform-and-SAP
+          url: /power-platform/sap/explore-power-platform-and-SAP-integration
     - componentType: card
       title: "Step 2. Get started with Power Platform"
       summary: Discover Power Platform capabilities and learn how to start using it in your environments.
@@ -65,7 +65,7 @@ sections:
       links: 
         - componentType: link
           text: Connect Power Platform and SAP
-          url: /power-platform/sap/explore-power-platform-and-SAP-integration
+          url: /power-platform/sap/connect-power-platform-and-SAP
         # - componentType: link
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
