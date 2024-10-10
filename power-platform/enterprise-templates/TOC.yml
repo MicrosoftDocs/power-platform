@@ -133,6 +133,16 @@
       href: it/appointment-booking/manage.md
     - name: Use
       href: it/appointment-booking/use.md
+  - name: Meeting Room Services
+    items:
+    - name: Overview
+      href: it/meeting-rm-serv/overview.md
+    - name: Install and set up
+      href: it/meeting-rm-serv/install-and-set-up.md
+    - name: Manage
+      href: it/meeting-rm-serv/manage.md
+    - name: Use
+      href: it/meeting-rm-serv/use.md
 - name: Related content
   items:
   - name: Power Apps documentation
