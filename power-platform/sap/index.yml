@@ -24,7 +24,7 @@ sections:
   #    componentType: hero-image
   #    lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
   #    darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
-  - componentType: hero
+  - componentType: hero-product
     supertitle: Microsoft Learn
     title: Power Platform and SAP
     #size: extra-small
