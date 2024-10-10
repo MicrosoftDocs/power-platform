@@ -199,12 +199,12 @@ AI Builder provides a selection of prebuilt models and the ability to create cus
 
 ## Related information
 
-[Power Platform Well-Architected](/power-platform/well-architected/)
+- [Power Platform Well-Architected](/power-platform/well-architected/)
 
-[Overview of AI Builder](/ai-builder/overview)
+- [Overview of AI Builder](/ai-builder/overview)
 
-[AI models and business scenarios](/ai-builder/model-types)
+- [AI models and business scenarios](/ai-builder/model-types)
 
-[Design and build sites in Power Pages Design Studio](/power-pages/configure/design-build-overview)
+- [Design and build sites in Power Pages Design Studio](/power-pages/configure/design-build-overview)
 
 [Style your Power Pages site](/power-pages/getting-started/style-site)
