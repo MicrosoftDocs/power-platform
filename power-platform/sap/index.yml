@@ -22,8 +22,8 @@ sections:
     summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
     heroImage:
      componentType: hero-image
-     lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
-     darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
+     lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.svg
+     darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.svg
 # Start your Power Platform and SAP learning journey
   - componentType: cards
     #isShadowless: false
