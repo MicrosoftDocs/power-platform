@@ -1,6 +1,6 @@
 
-- name: Power Platform and SAP
-  href: TOC.yml
+#- name: Power Platform and SAP
+#  href: index.yml
 - name: Getting Started with the SAP ERP Connector
   href: guides/getting-started-with-the-sap-erp-connector.md
 - name: Set up Secure Network Communications (SNC)
