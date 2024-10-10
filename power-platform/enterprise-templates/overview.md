@@ -62,7 +62,7 @@ Be sure to check back often for new templates that become available.
       ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate)
    :::column-end:::
    :::column span="":::
-      ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingServicesTemplate)
+      ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingRoomSvcsReqTemplate)
    :::column-end:::
    :::column span="":::  
    :::column-end:::

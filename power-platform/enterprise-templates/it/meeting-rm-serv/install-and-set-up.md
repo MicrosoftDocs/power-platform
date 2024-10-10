@@ -87,7 +87,7 @@ To create the connections in advance, take these steps:
 
 ## Step 3: Install solution files
 
-You can install the Meeting Room Services solution from AppSource, a Microsoft digital storefront.
+You install the Meeting Room Services solution from AppSource, a Microsoft digital storefront.
 
 1. Go to the [Meeting Room Services template](<https://aka.ms/AccessMeetingRoomSvcsReqTemplate>)in AppSource and select **Get it now**.
 1. In the *Install Meeting Room Services Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
