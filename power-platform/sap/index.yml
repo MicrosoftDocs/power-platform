@@ -273,7 +273,7 @@ sections:
         summary: Find information on how Power Platform solutions support application management and migration.
         url: https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm
       - componentType: summary-card
-        title: Power Platform Application Lifecycle Management (ALM)
+        title: Power Platform Application Lifecycle Management
         summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform.
         url: https://learn.microsoft.com/en-us/power-platform/alm/
       # - componentType: summary-card
