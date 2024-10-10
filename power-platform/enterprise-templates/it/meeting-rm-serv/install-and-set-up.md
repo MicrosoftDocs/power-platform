@@ -5,7 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 09/27/2024
+ms.date: 10/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -87,49 +87,19 @@ To create the connections in advance, take these steps:
 
 ## Step 3: Install solution files
 
-You have two options for installing the Meeting Room Services solution:
+You can install the Meeting Room Services solution from AppSource, a Microsoft digital storefront.
 
-- [Select **Get it now** on the template's AppSource page](#install-from-appsource) and an installation window opens automatically in the Power Platform admin center.
-- [Download managed or unmanaged versions of the solution files and manually import them into your environment](#download-and-manually-install-solution-files).
-
-> [!TIP]
->
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Meeting Room Services template.
-
-### Install from AppSource
-
-AppSource is a Microsoft digital storefront. Take these steps to go through the AppSource install process:
-
-1. Go to the [Meeting Room Services template](<https://aka.ms/AccessMeetingRoomServicesTemplate>) in AppSource and select **Get it now**.
+1. Go to the [Meeting Room Services template](<https://aka.ms/AccessMeetingRoomSvcsReqTemplate>)in AppSource and select **Get it now**.
 1. In the *Install Meeting Room Services Template* window in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), select the developer environment that you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. Agree to the *Terms and Privacy Statements* when prompted.
 1. Select **Install**.
 
 [Learn more about AppSource](https://appsource.microsoft.com/en-US/)
-
-Two solutions are installed in your environment, **Employee Experiences Base** and **Meeting Room Services**. [Learn more about the Meeting Room Services template solutions](./overview.md).
-
-### Download and manually install solution files
-
-Managed and unmanaged solution files are available for you download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
-
-1. Download the following Managed *or* Unmanaged solution files:
-
-    - Managed:[mpa_MeetingRoomServices_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
-    - Unmanaged:[mpa_MeetingRoomServices_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
-
-1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
-1. In the left pane, select **Solutions**.
-1. Select **Import solution**,and then find and select the **managed** or **unmanaged version** of the `mpa_EmployeeExperienceBase` file downloaded.
-1. Select **Next**, and then select **Import**.
-1. After you receive a message that the import was successful, repeat steps 4 and 5 to import the `mpa_MeetingRoomServices` file you downloaded.
-1. Select **Next** and **Next** again.
-1. For each of the connections listed, select the connection that was created in the import steps.
-1. Select **Next**.
-1. Skip the the environment variable setup for now. The required URL values only become available after the apps are imported into the environment.
-1. Select **Import** to start importing the *Meeting Room Services* solution. The import process takes a few minutes and once it's complete you're notified with a *Success* message.
-
 [Learn more about solutions](/power-platform/alm/solution-concepts-alm)
+
+> [!TIP]
+>
+> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the Meeting Room Services template.
 
 ## Step 4: Assign security roles
 
