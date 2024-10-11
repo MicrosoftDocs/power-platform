@@ -29,22 +29,6 @@ sections:
   title: "Start your Power Platform and SAP learning journey"
   #summary: Learn how to use Microsoft Power Platform with your SAP data.  
   blocks:
-    #  - componentType: card
-    #    title: Card 1 title here
-    #    #date: 10/01/2021
-    #    summary: Summary text, keep it brief
-    #    imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-    #    url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
-    #  - componentType: card
-    #    title: Card 2 title here
-    #    summary: Summary text, keep it brief
-    #    imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-    #    #date: 10/01/2021
-    #    url: https://bing.com
-    #    links: # optional a list of links rendered at the bottom of the card
-    #      - componentType: link
-    #        url: https://bing.com
-    #        text: Learn more
      - componentType: card
        title: "Step 1. Understand SAP integration"
        summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
