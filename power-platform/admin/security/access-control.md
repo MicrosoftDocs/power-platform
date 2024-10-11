@@ -1,5 +1,5 @@
 ---
-title: Access controls
+title: Access controls (preview)
 description: Learn how to manage access control in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,9 +12,12 @@ search.audienceType:
   - admin
 ---
 
-# Access control
+# Access control (preview)
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 Access controls are a fundamental aspect of securing modern IT environments, particularly within cloud-based platforms such as Azure Virtual Networks and Power Platform. These controls are designed to ensure that only authorized users can access specific resources, thereby protecting sensitive data and maintaining the integrity of organizational systems.
+
+[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 - **Tenant isolation**: This feature is applicable to Managed and non-Managed Environments at the tenant level. Tenant isolation lets global administrators and Power Platform administrators govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. For more information, see [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md).
 
