@@ -291,50 +291,50 @@ sections:
     #     componentType: image
     #     src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
 # Documentation
-  # - componentType: grid
-  #   title: Documentation
-  #   #summary: Explore Power Platform and SAP documentation and resources.
-  #   blocks:
-  #     - componentType: summary-card
-  #       title: Power Platform and SAP Setup Assistant
-  #       summary: Learn how the setup assistant helps you to configure Power Platform and SAP integration.
-  #       url: https://learn.microsoft.com/en-us/power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
-  #     - componentType: summary-card
-  #       title: SAP ERP connector
-  #       summary: Getting started with the SAP ERP connector.
-  #       url: https://learn.microsoft.com/en-us/power-platform/sap/guides/getting-started-with-the-sap-erp-connector
-  #     - componentType: summary-card
-  #       title: SAP OData connector
-  #       summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps. (Ignite)
-  #       url: https://www.microsoft.com
-  #     - componentType: summary-card
-  #       title: Secure Network Communications (SNC)
-  #       summary: Set up Secure Network Communications (SNC) for SAP and Microsoft Power Platform
-  #       url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-secure-network-communications
-  #     - componentType: summary-card
-  #       title: Entra ID using certficates (SSO)
-  #       summary: Find information about using SSO connections from the Power Platform to SAP.
-  #       url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
-  #     - componentType: summary-card
-  #       title: Power Platform security and governance
-  #       summary: Learn how to set up and maintain security and governance for Power Platform.
-  #       url: https://learn.microsoft.com/en-us/power-platform/admin/security
-  #     - componentType: summary-card
-  #       title: Power Apps and Teams integration
-  #       summary: Create apps in Microsoft Teams by using Power Apps.
-  #       url: https://learn.microsoft.com/en-us/power-apps/teams/create-apps-overview
-  #     - componentType: summary-card
-  #       title: Power Platform Administration
-  #       summary: Use Power Platform admin center to manage environments Microsoft Power Platform settings.
-  #       url: https://learn.microsoft.com/en-us/power-platform/admin/
-  #     - componentType: summary-card
-  #       title: Power Platform solutions
-  #       summary: Find information on how Power Platform solutions support application management and migration.
-  #       url: https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm
-  #     - componentType: summary-card
-  #       title: Power Platform Application Lifecycle Management
-  #       summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform.
-  #       url: https://learn.microsoft.com/en-us/power-platform/alm/
+- componentType: grid
+  title: Documentation
+  #summary: Explore Power Platform and SAP documentation and resources.
+  blocks:
+    - componentType: summary-card
+      title: Power Platform and SAP Setup Assistant
+      summary: Learn how the setup assistant helps you to configure Power Platform and SAP integration.
+      url: https://learn.microsoft.com/en-us/power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
+    - componentType: summary-card
+      title: SAP ERP connector
+      summary: Getting started with the SAP ERP connector.
+      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/getting-started-with-the-sap-erp-connector
+    - componentType: summary-card
+      title: SAP OData connector
+      summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps. (Ignite)
+      url: https://www.microsoft.com
+    - componentType: summary-card
+      title: Secure Network Communications (SNC)
+      summary: Set up Secure Network Communications (SNC) for SAP and Microsoft Power Platform
+      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-secure-network-communications
+    - componentType: summary-card
+      title: Entra ID using certficates (SSO)
+      summary: Find information about using SSO connections from the Power Platform to SAP.
+      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
+    - componentType: summary-card
+      title: Power Platform security and governance
+      summary: Learn how to set up and maintain security and governance for Power Platform.
+      url: https://learn.microsoft.com/en-us/power-platform/admin/security
+    - componentType: summary-card
+      title: Power Apps and Teams integration
+      summary: Create apps in Microsoft Teams by using Power Apps.
+      url: https://learn.microsoft.com/en-us/power-apps/teams/create-apps-overview
+    - componentType: summary-card
+      title: Power Platform Administration
+      summary: Use Power Platform admin center to manage environments Microsoft Power Platform settings.
+      url: https://learn.microsoft.com/en-us/power-platform/admin/
+    - componentType: summary-card
+      title: Power Platform solutions
+      summary: Find information on how Power Platform solutions support application management and migration.
+      url: https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm
+    - componentType: summary-card
+      title: Power Platform Application Lifecycle Management
+      summary: Learn how to implement application lifecycle management (ALM) using Microsoft Power Platform.
+      url: https://learn.microsoft.com/en-us/power-platform/alm/
 
 # Video section
   # - componentType: cards
