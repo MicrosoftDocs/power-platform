@@ -47,8 +47,8 @@ sections:
 - componentType: cards
 #   #   backgroundColor: dark
 #   #   isShadowless: false # Removes the box shadow from around the card
-  title: "Start your Power Platform and SAP journey"
-  summary: Learn how to use Microsoft Power Platform with your SAP data.  
+  title: "Start your Power Platform and SAP learning journey"
+  #summary: Learn how to use Microsoft Power Platform with your SAP data.  
   blocks:
     #  - componentType: card
     #    title: Card 1 title here
@@ -237,59 +237,59 @@ sections:
   #         text: Start the Learn Live experience
   #         url: /shows/learn-live/microsoft-copilot-for-security/
 # Learn Copilot based on your role
-  # - componentType: grid
-  #   title: Find Power Platform and SAP resources for your role
-  #   # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
-  #   blocks:
-  #     - componentType: icon-card
-  #       title: Power Platform app maker
-  #       summary: "How to work with TCodes, BAPIs, and complex JSON structures. (Ignite)"
-  #       url: https://www.microsoft.com/
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
-  #     - componentType: icon-card
-  #       title: Power Platform administrator
-  #       summary: "Guidance on SAP access methods and a directory of the most used SAP data. (later)"
-  #       url: /collections/4gmb2m2k8n6k7
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
-  #     - componentType: icon-card
-  #       title: Governance administrator
-  #       summary: "How to govern and secure Power Platform and SAP integration. (Ignite)"
-  #       url: https://www.microsoft.com/
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
-  #     - componentType: icon-card
-  #       title: Technology manager 
-  #       summary: "Considerations for implementing Power Platform integration with SAP (later)"
-  #       url: https://www.microsoft.com
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
-  #     - componentType: icon-card
-  #       title: SAP consultant
-  #       summary: "How to build Power Apps integrated with SAP (Ignite)"
-  #       url: https://www.microsoft.com/
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
-  #     - componentType: icon-card
-  #       title: SAP Basis administrator
-  #       summary: "Password reset copilot. (Ignite)"
-  #       url: https://www.microsoft.com/
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
-  #     - componentType: icon-card
-  #       title: Partner
-  #       summary: "Resources for Microsoft Partners to integrate customer Power and SAP environments. (later)"
-  #       url: https://www.microsoft.com
-  #       icon:
-  #         componentType: image
-  #         src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
+- componentType: grid
+  title: Find Power Platform and SAP resources for your role
+    # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
+  blocks:
+    - componentType: icon-card
+      title: Power Platform app maker
+      summary: "How to work with TCodes, BAPIs, and complex JSON structures."
+      url: https://www.microsoft.com/
+      icon:
+        componentType: image
+        src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
+    # - componentType: icon-card
+    #   title: Power Platform administrator
+    #   summary: "Guidance on SAP access methods and a directory of the most used SAP data. (later)"
+    #   url: /collections/4gmb2m2k8n6k7
+    #   icon:
+    #     componentType: image
+    #     src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
+    - componentType: icon-card
+      title: Governance administrator
+      summary: "How to govern and secure Power Platform and SAP integration."
+      url: https://www.microsoft.com/
+      icon:
+        componentType: image
+        src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
+    # - componentType: icon-card
+    #   title: Technology manager 
+    #   summary: "Considerations for implementing Power Platform integration with SAP (later)"
+    #   url: https://www.microsoft.com
+    #   icon:
+    #     componentType: image
+    #     src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
+    - componentType: icon-card
+      title: SAP consultant
+      summary: "How to build Power Apps integrated with SAP"
+      url: https://www.microsoft.com/
+      icon:
+        componentType: image
+        src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
+    - componentType: icon-card
+      title: SAP Basis administrator
+      summary: "Password reset copilot."
+      url: https://www.microsoft.com/
+      icon:
+        componentType: image
+        src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
+    # - componentType: icon-card
+    #   title: Partner
+    #   summary: "Resources for Microsoft Partners to integrate customer Power and SAP environments. (later)"
+    #   url: https://www.microsoft.com
+    #   icon:
+    #     componentType: image
+    #     src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
 # Documentation
   # - componentType: grid
   #   title: Documentation
