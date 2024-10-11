@@ -35,12 +35,13 @@ metadata:
   #     subtitle: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform."
 sections:
 - componentType: hero
-  supertitle: Lorem ipsum dolor sit amet
-  title: Standard hero
+  supertitle: Microsoft Learn
+  title: Power Platform and SAP
   size: small
+  textColor: dark
+  summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
   background:
     componentType: image # Note difference with the below example
-    #src: ./media/hero-background-dark.svg
     src: /power-platform/sap/guides/media/index-page/Hero.png
   subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 # - componentType: cards
