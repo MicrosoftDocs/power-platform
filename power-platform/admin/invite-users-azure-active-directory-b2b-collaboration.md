@@ -142,7 +142,7 @@ After the B2B guest users are given the required permissions to create and edit 
 
 4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Microsoft Entra tenant to build apps.
    
-6. Optional, assign a security role that allows B2B guest users to perform solution import and export.  
+5. Optional, assign a security role that allows B2B guest users to perform solution import and export.  
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
