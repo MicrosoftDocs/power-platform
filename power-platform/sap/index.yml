@@ -42,38 +42,38 @@ sections:
     #src: ./media/hero-background-dark.svg
     src: /power-platform/sap/guides/media/index-page/Hero.png
   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-- componentType: cards
-  #   backgroundColor: dark
-  #   isShadowless: false # Removes the box shadow from around the card
-  blocks:
-    - componentType: card
-      title: Card 1 title here
-      date: 10/01/2021
-      summary: Summary text, keep it brief
-      imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-      url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
-    - componentType: card
-      title: Card 2 title here
-      summary: Summary text, keep it brief
-      imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-      date: 10/01/2021
-      url: https://bing.com
-      links: # optional a list of links rendered at the bottom of the card
-        - componentType: link
-          url: https://bing.com
-          text: Learn more
-    - componentType: card
-      title: Card 3 title
-      summary: Summary text, keep it brief
-      imageUrl: https://docs.microsoft.com/en-us/media/home-and-directory/featured-learn-tv-2x.png?branch=main
-      date: 10/01/2021
-      links:
-        - componentType: link
-          url: https://bing.com
-          text: Link text at the bottom of the card (1)
-        - componentType: link
-          url: https://bing.com
-          text: Link text at the bottom of the card (2)
+# - componentType: cards
+#   #   backgroundColor: dark
+#   #   isShadowless: false # Removes the box shadow from around the card
+#   blocks:
+#     - componentType: card
+#       title: Card 1 title here
+#       date: 10/01/2021
+#       summary: Summary text, keep it brief
+#       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+#       url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
+#     - componentType: card
+#       title: Card 2 title here
+#       summary: Summary text, keep it brief
+#       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+#       date: 10/01/2021
+#       url: https://bing.com
+#       links: # optional a list of links rendered at the bottom of the card
+#         - componentType: link
+#           url: https://bing.com
+#           text: Learn more
+#     - componentType: card
+#       title: Card 3 title
+#       summary: Summary text, keep it brief
+#       imageUrl: https://docs.microsoft.com/en-us/media/home-and-directory/featured-learn-tv-2x.png?branch=main
+#       date: 10/01/2021
+#       links:
+#         - componentType: link
+#           url: https://bing.com
+#           text: "Link text at the bottom of the card (1)"
+#         - componentType: link
+#           url: https://bing.com
+#           text: "Link text at the bottom of the card (2)"
 # Start your Power Platform and SAP learning journey
 #- componentType: cards
     #isShadowless: false
