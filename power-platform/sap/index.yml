@@ -402,22 +402,22 @@ sections:
 #         summary: Learn to Connect Power BI Desktop SAP HANA on Windows and Power Automate and Power Apps to SAP.
 #         url: https://learn.microsoft.com/en-us/training/modules/connect-power-platform-to-sap-azure/?source=recommendations
 # # Additional links section
-#   - componentType: grid
-#     title: More resources
-#     blocks:
-#       - componentType: summary-card
-#         title: SAP on Power Automate Using Connectors Community Forum
-#         summary: Engage with the community to learn and share about using SAP connectors. (Ignite)
-#         url: https://www.microsoft.com
-#       - componentType: summary-card
-#         title: SAP and Power Platform Community Videos
-#         summary: Power Platform and SAP demos and training from community experts. (Ignite)
-#         url: https://www.microsoft.com
-#       - componentType: summary-card
-#         title: SAP on Azure
-#         summary: Learn about running SAP on Azure.
-#         url: https://learn.microsoft.com/en-us/azure/sap/
-#       - componentType: summary-card
-#         title: Release plans
-#         summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
-#         url: /dynamics365/release-plans/
+- componentType: grid
+  title: More resources
+  blocks:
+    - componentType: summary-card
+      title: SAP on Power Automate Using Connectors Community Forum
+      summary: Engage with the community to learn and share about using SAP connectors. (Ignite)
+      url: https://www.microsoft.com
+    - componentType: summary-card
+      title: SAP and Power Platform Community Videos
+      summary: Power Platform and SAP demos and training from community experts. (Ignite)
+      url: https://www.microsoft.com
+    - componentType: summary-card
+      title: SAP on Azure
+      summary: Learn about running SAP on Azure.
+      url: https://learn.microsoft.com/en-us/azure/sap/
+    - componentType: summary-card
+      title: Release plans
+      summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
+      url: /dynamics365/release-plans/
