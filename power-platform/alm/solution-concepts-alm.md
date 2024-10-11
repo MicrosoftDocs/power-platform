@@ -37,7 +37,7 @@ A solution is either *managed* or *unmanaged*.
     - You can't edit components directly within a managed solution. To edit managed components, first add them to an unmanaged solution. 
        - When you do this, you create a dependency between your unmanaged customizations and the managed solution. When a dependency exists, the managed solution can't be uninstalled until you remove the dependency. 
     - Some managed components can’t be edited. To verify whether a component can be edited, view the [Managed properties](managed-properties-alm.md). 
-    - You can't export a managed solution.
+    - You can't export a managed solution that was imported as a managed solution.
     - When a managed solution is deleted (uninstalled), all the customizations and extensions included with it are removed.
 
     > [!IMPORTANT]
