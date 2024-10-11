@@ -37,7 +37,7 @@ sections:
 - componentType: hero
   supertitle: Lorem ipsum dolor sit amet
   title: Standard hero
-  size: extra-small
+  size: small
   background:
     componentType: image # Note difference with the below example
     #src: ./media/hero-background-dark.svg
