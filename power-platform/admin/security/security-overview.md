@@ -23,7 +23,7 @@ With Security, administrators can:
 - **Manage proactive policies:** Manage proactive policies for governance and security, including Network Security, Access Controls, Threat Detection, and Compliance.
   
 ## Prerequisite
-To see your security score, recommendations you must turn on tenant-wide analytics. For instructions, see [How do I enable tenant-level analytics](https://learn.microsoft.com/en-us/power-platform/admin/tenant-level-analytics#how-do-i-enable-tenant-level-analytics).
+To see your security score, recommendations you must turn on tenant-wide analytics. For instructions, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).
 
 > [!Note]
 > It might take up to 48 hours to populate the Security page with data after you turn on tenant-wide analytics. Until then, most sections on the page show “Not available”.
@@ -33,7 +33,7 @@ To access the Security page, you must have Microsoft Entra ID roles such as Powe
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2.	From the left-side menu, select **Security**.
 
-   Learn more about these roles at [Use service admin roles to manage your tenant](https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant).
+   Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
 
 ## Key capabilities
 
