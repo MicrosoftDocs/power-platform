@@ -23,7 +23,7 @@ Unlock the full potential of your SAP data with [Microsoft Power Platform](/powe
 
 Discover how Power Platform essentials for SAP empowers your team to streamline business processes and data-driven decisions. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, our connectors provide the tools you need to succeed. Start transforming your SAP data today and experience the benefits of a truly integrated digital ecosystem.
 
-:::image type="content" source="sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
+:::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
 Power Platform essentials for SAP also includes templates and ready-to-use copilots to accelerate your Power Platform and SAP integration journey. This includes sample cloud flows for common SAP business processes, as well as Copilots to relieve SAP Basis adminstrators of time-consuming repetitive tasks.
 

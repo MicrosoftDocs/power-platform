@@ -176,72 +176,6 @@ sections:
       title: Power Platform ALM
       summary: Implement application lifecycle management (ALM) using Microsoft Power Platform.
       url: https://learn.microsoft.com/en-us/power-platform/alm/
-
-# Video section
-  # - componentType: cards
-  #   isShadowless: false
-  #   backgroundColor: alternating-grey
-  #   title: Discover Copilot video resources
-  #   summary: Watch these short videos with experts to level up your work with Copilot and gain new skills.
-  #   blocks:
-  #   - componentType: card
-  #     title: "Copilot for everyone"
-  #     summary: Not sure where to start with Microsoft Copilot? Sharpen your prompting skills as we share our favorite use cases and walk you through them step-by-step.
-  #     imageUrl: /copilot/media/copilot/copilot-learning-hub/copilot-for-everyone-thumbnail.jpg
-  #     links: 
-  #       - componentType: link
-  #         text: Watch now
-  #         url: /shows/copilot-learning-hub/
-  #   - componentType: card
-  #     title: "Strategically implement Microsoft Copilot (Part 1)"
-  #     summary: Learn to avoid common pitfalls, develop a robust AI strategy, and maximize the benefits of Copilot for business success.
-  #     imageUrl: https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-7416480b-a4b9-4362-822c-3ab6b31cd0f6/CLH_147985_Pt1_thumbnail_w1120.jpg
-  #     links: 
-  #       - componentType: link
-  #         text: Watch now
-  #         url: /shows/copilot-learning-hub/how-to-strategically-implement-microsoft-copilot-expert-insights-and-best-practices-part-1
-  #   - componentType: card
-  #     title: "Advanced strategies for extending Microsoft Copilot (Part 2)"
-  #     summary: Discover how to combine hands-on development with strategic planning for customized Copilot solutions.
-  #     imageUrl: https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-aa70291e-af64-476d-803f-2a8be27af85a/CLH_148440_Pt2_thumbnail_w1120.jpg
-  #     links: 
-  #       - componentType: link
-  #         text: Watch now
-  #         url: /shows/copilot-learning-hub/advanced-strategies-for-extending-microsoft-copilot-expert-tips-and-real-world-applications-part-2
-  #   - componentType: card
-  #     title: "Exploring the human element in Microsoft Copilot deployments"
-  #     summary: Learn how cultural shifts and human factors play a crucial role in the successful implementation of AI technology like Copilot.
-  #     imageUrl: https://videoencodingpublic-hgeaeyeba8gycee3.b01.azurefd.net/public-1e9cc08b-53ad-497f-a5a0-5213f2ed69c2/CLH_142924_thumbnail_w1120.jpg
-  #     links: 
-  #       - componentType: link
-  #         text: Watch now
-  #         url: /shows/copilot-learning-hub/exploring-the-human-element-in-microsoft-copilot-deployments-insights-from-industry-experts
-  #   addendum:
-  #     text: Explore the 
-  #     link:
-  #       text: full video playlist.
-  #       url: /shows/copilot-learning-hub/
-# # Documentation
-#   - componentType: grid
-#     title: Training and certification
-#     #summary: Build Power Platform and SAP integration skills.
-#     blocks:
-#       - componentType: summary-card
-#         title: Power Platform app maker
-#         summary: Get started learning the basics of building Power Platform apps.
-#         url: https://learn.microsoft.com/en-us/training/career-paths/app-maker
-#       - componentType: summary-card
-#         title: Power Up
-#         summary: Free online program to learn low-code skills and get certified with Microsoft Power Platform.
-#         url: https://powerup.microsoft.com/
-#       - componentType: summary-card
-#         title: "Power Platform fundamentals"
-#         summary: Learn the business value and product capabilities of Microsoft Power Platform. 
-#         url: https://learn.microsoft.com/en-us/training/courses/pl-900t00
-#       - componentType: summary-card
-#         title: "Connect Power Platform to SAP on Azure"
-#         summary: Learn to Connect Power BI Desktop SAP HANA on Windows and Power Automate and Power Apps to SAP.
-#         url: https://learn.microsoft.com/en-us/training/modules/connect-power-platform-to-sap-azure/?source=recommendations
 # # Additional links section
 - componentType: grid
   title: More resources
@@ -252,7 +186,7 @@ sections:
       url: https://community.powerplatform.com/globalsearch/?q=SAP
     - componentType: summary-card
       title: Power Platform and SAP Videos
-      summary: Learn about Power Platform and SAP on Power Platform and SAP on Azure YouTube channel.
+      summary: Learn about Power Platform and SAP on the Power Platform and SAP on Azure YouTube channel.
       url: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
     - componentType: summary-card
       title: Power Platform and SAP Videos
