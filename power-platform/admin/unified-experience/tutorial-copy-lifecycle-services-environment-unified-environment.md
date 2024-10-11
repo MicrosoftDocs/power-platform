@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 10/11/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -16,10 +16,7 @@ search.audienceType:
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics Lifecycle Services, but now everything can be managed in the Power Platform admin center.
 
-In this tutorial, learn how to:
-
-- Prepare the source environment
-- Copy the environment to the target
+In this tutorial, learn how to copy a Lifecycle Services environment to a unified environment.
 
 As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
 
@@ -30,56 +27,6 @@ The target environment in this tutorial is always a unified environment that con
 The source environment in this tutorial is always a finance and operations apps environment in Lifecycle Services that was set up through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration).
 
 Ensure that both the source and target environments are provisioned in the same region. For general information on copying environments, refer to [Copy an environment](../copy-environment.md).
-
-## Prepare the source environment
-
-Before the source environment can be copied, you must perform several steps to ensure that data and code are copied correctly to the target environment. If you don't perform these steps, code or data loss can occur. 
-
-### Install or update the latest Dynamics 365 Finance and Operations Platform Tools app
-
-> [!NOTE]
-> This application is necessary in the source environment because it helps to store the X++ code in Microsoft Dataverse. This allows the code to copy to the target environment alongside the data. Without this, data loss can occur.
-
-1. In the Power Platform admin center, select **Environments**.
-2. Select the source environment from which you want to start the copy. From the **Resources** menu, select **Dynamics 365 apps**.
-
-:::image type="content" source="media/copy-to-ode-view-apps.png" alt-text="Viewing Dynamics 365 apps from the environment resources menu.":::
-
-You should see **Dynamics 365 Finance and Operations Platform Tools** in the list of available apps.
-
-If you see **Update Available** in the **Status** for Dynamics 365 Finance and Operations Platform Tools, select the link, agree to the terms, and select **Update**.
-
-:::image type="content" source="media/copy-to-ode-platform-tools.png" alt-text="Dynamics 365 Finance and Operations platform tools showing an Update available status.":::
-
-If Dynamics 365 Finance and Operations Platform Tools isn't listed, select **Install App** to add this app to your organization.
-
-From the list on the right side, find and select the **Dynamics 365 Finance and Operations Platform Tools** app, select **Install**, and follow the instructions to install.
-
-:::image type="content" source="media/copy-to-ode-install-apps.png" alt-text="Install Dynamics 365 apps menu.":::
-
-### Convert finance and operations apps packages to the new unified package format
-
-This step is used to convert the existing **Software deployable package**, typically used by Lifecycle Services, into a new, unified, deployment package format. The package format is changed to align with other Dynamics 365 applications hosted by Microsoft Dataverse.
-
-Run the following command using ModelUtil.exe from Windows PowerShell. You can find the .exe in PackagesLocalDirectoryDev/bin.
-
-```PowerShell
-.\ModelUtil.exe -convertToUnifiedPackage -file=<PathToYourPackage>.zip -outputpath=<OutputPath>
-```
-
-## Upload the unified deployable package to the source environment
-
-This deploy command makes no changes to the finance and operations environment hosted in Lifecycle Services, nor does it require any downtime to apply this package on either the operations environment or the Dataverse environment. This is done to upload and save the customizations into Dataverse storage so they can be copied. 
-
-1. Install [PAC CLI](https://aka.ms/PowerAppsCLI).
-2. [Authenticate and connect to source Dataverse](../../developer/cli/reference/auth.md#pac-auth-create).
-3. Run the following command:
-
-    ```
-    pac auth list
-    pac auth select --index 1
-    pac package deploy --logConsole --package <OutputPath>\<Package>.dll
-    ```
 
 # [Power Platform admin center](#tab/PPAC)
 
