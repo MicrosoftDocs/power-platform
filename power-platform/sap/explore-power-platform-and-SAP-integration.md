@@ -25,7 +25,7 @@ Discover how Power Platform essentials for SAP empowers your team to streamline 
 
 :::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
-Power Platform essentials for SAP also includes templates and ready-to-use copilots to accelerate your Power Platform and SAP integration journey. This includes sample cloud flows for common SAP business processes, as well as Copilots to relieve SAP Basis adminstrators of time-consuming repetitive tasks.
+Power Platform essentials for SAP also includes templates and ready-to-use copilots to accelerate your Power Platform and SAP integration journey. This includes sample cloud flows for common SAP business processes and Copilots to relieve SAP Basis adminstrators of time-consuming repetitive tasks.
 
 Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of Power Platform connectors.
 
