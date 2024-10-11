@@ -464,6 +464,18 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
+            - name: Manage security (preview)
+              items:
+              - name: Security overview (preview)
+                href: security/security-overview.md
+              - name: Network security (preview)
+                href: security/network-overview.md
+              - name: Access control (preview)
+                href: security/access-control.md
+              - name: Threat detection (preview)
+                href: security/threat-detection.md
+              - name: Compliance (preview)
+                href: security/complinace.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
