@@ -50,7 +50,7 @@ sections:
   blocks:
      - componentType: card
        title: Card 1 title here
-       date: 10/01/2021
+       #date: 10/01/2021
        summary: Summary text, keep it brief
        imageUrl: ./media/path-to-image.jpg # imageUrl is optional
        url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
@@ -58,7 +58,7 @@ sections:
        title: Card 2 title here
        summary: Summary text, keep it brief
        imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-       date: 10/01/2021
+       #date: 10/01/2021
        url: https://bing.com
        links: # optional a list of links rendered at the bottom of the card
          - componentType: link
