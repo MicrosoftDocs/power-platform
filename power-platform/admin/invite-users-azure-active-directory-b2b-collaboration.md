@@ -112,11 +112,7 @@ You can invite other users to access your environment. A user with the [User Adm
 ## Notify your invited users  
  To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
  
-## Power Apps support for B2B guest maker (preview)
-
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)] 
+## Power Apps support for B2B guest maker
 
 B2B guest users can [run Power Apps](/powerapps/maker/canvas-apps/share-app-guests). 
 
@@ -144,7 +140,9 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
 
 After the B2B guest users are given the required permissions to create and edit apps, they can now create Power Apps and Microsoft List [custom forms](/powerapps/maker/canvas-apps/customize-list-form#open-the-form) using Power Apps.
 
-4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Microsoft Entra tenant to build apps.   
+4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Microsoft Entra tenant to build apps.
+   
+6. Optional, assign a security role that allows B2B guest users to perform solution import and export.  
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
