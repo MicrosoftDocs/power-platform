@@ -42,9 +42,8 @@ sections:
     #src: ./media/hero-background-dark.svg
     src: /power-platform/sap/guides/media/index-page/Hero.png
   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
 # Start your Power Platform and SAP learning journey
-  - componentType: cards
+- componentType: cards
     #isShadowless: false
     backgroundColor: alternating-grey
     title: Start your Power Platform and SAP journey
