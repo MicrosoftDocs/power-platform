@@ -464,20 +464,6 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security
-              items: 
-                - name: Manage security
-                  href: security/security-posture-overview.md
-                - name: Overview
-                  href: security/security-overview.md
-                - name: Network security
-                  href: security/network-security.md
-                - name: Access control
-                  href: security/access-control.md
-                - name: Threat detection
-                  href: security/threat-detection.md
-                - name: Compliance
-                  href: security/compliance.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
@@ -555,9 +541,9 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: /power-automate/prevent-data-loss
+                      href: prevent-data-loss.md
                     - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
+                      href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
@@ -732,6 +718,8 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Extend Dataverse capacity for 30 days
+              href: extend-capacity.md
             - name: Free up storage
               items:
                 - name: Recover storage space

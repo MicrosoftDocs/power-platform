@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 04/11/2024
+ms.date: 10/10/2024
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner
@@ -17,18 +17,22 @@ Delegated deployments can be run as a service principal or pipeline stage owner.
 ### Prerequisites
 
 - A Microsoft Entra user account. If you don't already have one, you can [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- One of the following Microsoft Entra roles: Global Administrator, Cloud Application Administrator, or Application Administrator.
+- One of the following Microsoft Entra roles: Cloud Application Administrator, or Application Administrator.
 - You must be an owner of the enterprise application (service principal) in Microsoft Entra ID.
 
 For a delegated deployment with a service principal, follow these steps.
 
 1. Create an enterprise application (service principal) in Microsoft Entra ID.
 
-    > [!IMPORTANT]
-    > Anyone enabling or modifying service principal configurations in pipelines must be an owner of the enterprise application (service principal) in Microsoft Entra ID.  
+   > [!IMPORTANT]
+   > Anyone enabling or modifying service principal configurations in pipelines must be an owner of the enterprise application (service principal) in Microsoft Entra ID.  
 1. Add the enterprise application as a server-to-server (S2S) user in your pipelines host environment and each target environment it deploys to.
 1. Assign the Deployment Pipeline Administrator security role to the S2S user within the pipelines host, and System Administrator security role within target environments. Lower permission security roles can't deploy plug-ins and other code components.
 1. Choose (check) **Is delegated deployment** on a pipeline stage, select **Service Principal**, and enter the Client ID. Select **Save**.
+1. Optionally, **Allow sharing requests** so that deployment requestors can specify which security groups can access deployed objects within the target environment. Sharing requests are part of the deployment request and can be approved or rejected.
+  > [!IMPORTANT]
+  > Deployment approvers are responsible for carefully reviewing sharing and security role information. When a deployment is approved, pipelines automatically assigns permissions using the deploying service principal's identity.  
+    > 
 1. Create a cloud flow within the pipelines host environment. Alternative systems can be integrated using pipelines' Microsoft Dataverse APIs.
 1. Select the **OnApprovalStarted** trigger. 
 1. Add steps for your desired custom logic.
@@ -55,11 +59,6 @@ Here's a screenshot of a canonical approval flow.
 
 :::image type="content" source="media/canonical-approval-flow.png" alt-text="Canonical Approval Flow":::
 
-> [!IMPORTANT]
-> - Requesting makers may not have access to deployed resources in target environments. Resources can be shared after deployment. To automate sharing, you can use the below sample or the ALM Accelerator extension as a reference implementation.
-> - At a minimum, the Basic User security role is needed to deploy connection references and access the environment.
-> - When testing, if you remove your own security role, another administrator will need to restore it later. Power Platform admins can restore their own security role within the classic experience.
-
 ## Deploy as the pipeline stage owner
 
 Regular users, including those used as service accounts, can also serve as delegates. Configuration is more straightforward when compared to service principals, but solutions containing connection references for oAuth connections can't be deployed.
@@ -83,13 +82,35 @@ To deploy as the pipeline stage owner, follow these steps.
 ## Delegated deployment samples
 
 > [!IMPORTANT]
-> The functionality provided in these samples is now supported natively in the product, but may not be available in your region yet.
+> The functionality provided in these samples is now supported natively in the product, but these samples might provide insights into extending native sharing functionality.
 
 This download contains sample cloud flows for managing approvals and sharing deployed canvas apps and flows within the target environment. [Download sample solution](https://aka.ms/DownloadDelegatedDeploymentSamples)
 
 Download and import the managed solution to your pipelines host environment. The solution can then be customized to fit the needs of your organization. 
 
 ## Frequently asked questions
+
+### How can makers access deployed objects within target environments?
+
+Sharing during deployment is a native capability of delegated deployments with service principals. It avoids admins needing to manually assign security roles and share deployed apps, flows, Copilots, and so on, within the Power Platform admin center. Instead, admins only need to approve the deployment request and sharing is carried out automatically by the system. 
+
+### Which object types can be shared during deployment?
+
+Currently, security roles, canvas apps, and cloud flows are supported. Copilot sharing might also be available depending on your region. 
+
+### Can I update sharing when new versions are deployed?
+
+Sharing is available the first time an object is deployed to the target environment. Sharing cannot be updated when new versions are deployed. 
+Be sure to select an appropriate security group during the first deployment. Manage ongoing access via security groups. 
+
+### Which permissions are assigned for canvas apps and flows?
+
+Pipelines assigns the minimum privileges required to run apps and flows. 
+If higher privileges are desired, pipelines can be extended. We recommend you enable the 'Block unmanaged customizations' feature when assigning higher permissions.
+
+### Can makers share with individual users?
+
+Not currently. We recommend managing individual user access via security groups after the first deployment of the object.
 
 ### I'm getting an error _The deployment stage isn't an owner of the service principal (&lt;AppId&gt;). Only owners of the service principal may use it for delegated deployments._
 
@@ -101,6 +122,10 @@ Ensure you’re the owner of the Enterprise Application (Service Principal) in M
 
 For security reasons, you must sign in as the user that will be set as the pipeline stage owner. This prevents adding a nonconsenting user as the deployer.
 
+### For stage owner based delegated deployments, can I use a custom DeploymentSettings.json file?
+
+Not currently within the maker experience. 
+
 ### Why are my delegated deployments stuck in a pending state?
 
 All delegated deployments are pending until approved. Ensure your admin has configured a Power Automate approval flow or other automation, that it's working properly, and that the deployment was approved.
@@ -109,16 +134,15 @@ All delegated deployments are pending until approved. Ensure your admin has conf
 
 The deploying identity. For delegated deployments, the owner is the delegated service principal or pipeline stage owner.
 
-### How can makers access deployed objects within target environments?
-
-> [!IMPORTANT]
-> Native functionality for sharing during deployment is currently becoming available, allowing makers to request access to deployed resources as part of the deployment request.
-
-Requesting makers might not have access to deployed resources in target environments. Admins must assign security roles and share deployed apps, flows, and so on, within the Power Platform admin center. Alternatively, admins can build automations to manage access.
-
 ### Can I add custom approval steps?
 
 Yes. For example, Power Automate approvals can be customized to meet the needs of your organization. You might also integrate other approval systems.
+
+### Why do I have to own the service principal?
+
+This is enforced for security reasons. 
+You might also create pipelines using a service account and add the same service account as the owner. 
+Another option is assigning the service principal (application user) as the owner of the pipeline stage and as an owner of itself (Enterprise application) in Microsoft Entra. However, assigning pipeline stage ownership to an application must be done via the Dataverse API in the pipelines host.  
 
 ### I'm getting an error _Delegated deployments of type 'ServicePrincipal' may only be approved or rejected by the Service Principal configured in the deployment stage._
 
