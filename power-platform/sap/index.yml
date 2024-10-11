@@ -46,7 +46,7 @@ sections:
 - componentType: cards
     #isShadowless: false
     backgroundColor: alternating-grey
-    title: Start your Power Platform and SAP journey
+    title: "Start your Power Platform and SAP journey"
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
@@ -70,7 +70,7 @@ sections:
         #   url: /shows/copilot-learning-hub/
     - componentType: card
       title: "Step 3. Connect to SAP"
-      summary: Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple. 
+      summary: "Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple." 
       imageUrl: /power-platform/sap/guides/media/index-page/Connect.png
       links: 
         - componentType: link
