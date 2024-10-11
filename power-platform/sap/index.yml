@@ -50,22 +50,22 @@ sections:
   title: "Start your Power Platform and SAP journey"
   summary: Learn how to use Microsoft Power Platform with your SAP data.  
   blocks:
-     - componentType: card
-       title: Card 1 title here
-       #date: 10/01/2021
-       summary: Summary text, keep it brief
-       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-       url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
-     - componentType: card
-       title: Card 2 title here
-       summary: Summary text, keep it brief
-       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-       #date: 10/01/2021
-       url: https://bing.com
-       links: # optional a list of links rendered at the bottom of the card
-         - componentType: link
-           url: https://bing.com
-           text: Learn more
+    #  - componentType: card
+    #    title: Card 1 title here
+    #    #date: 10/01/2021
+    #    summary: Summary text, keep it brief
+    #    imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+    #    url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
+    #  - componentType: card
+    #    title: Card 2 title here
+    #    summary: Summary text, keep it brief
+    #    imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+    #    #date: 10/01/2021
+    #    url: https://bing.com
+    #    links: # optional a list of links rendered at the bottom of the card
+    #      - componentType: link
+    #        url: https://bing.com
+    #        text: Learn more
      - componentType: card
        title: "Step 1. Understand SAP integration"
        summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
@@ -79,13 +79,36 @@ sections:
        title: "Step 2. Get started with Power Platform"
        summary: Discover Power Platform capabilities and learn how to start using it in your environments.
        imageUrl: /power-platform/sap/guides/media/index-page/Get_started.png
-       links: 
-        - componentType: link
-          text: Power Platform guidance documentation
-          url: https://learn.microsoft.com/en-us/power-platform/guidance/
-        - componentType: link
-          text: Watch videos
-          url: /shows/copilot-learning-hub/
+       url: https://learn.microsoft.com/en-us/power-platform/guidance/
+     - componentType: card
+       title: "Step 3. Connect to SAP"
+       summary: "Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple." 
+       imageUrl: /power-platform/sap/guides/media/index-page/Connect.png
+      # links: 
+      #   - componentType: link
+      #     text: Connect Power Platform and SAP
+       url: /power-platform/sap/connect-power-platform-and-SAP
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /collections/20mijo44z6xq6
+     - componentType: card
+       title: "Step 4. Leverage templates"
+       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
+       imageUrl: /power-platform/sap/guides/media/index-page/Leverage_templates.png
+      # links: 
+      #   - componentType: link
+      #     text: Procurement template for SAP
+       url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /collections/0d6s6nx05qd1o
+      #  links: 
+      #   - componentType: link
+      #     text: Power Platform guidance documentation
+      #     url: https://learn.microsoft.com/en-us/power-platform/guidance/
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /shows/copilot-learning-hub/
 #     - componentType: card
 #       title: Card 3 title
 #       summary: Summary text, keep it brief
