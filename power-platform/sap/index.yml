@@ -45,7 +45,7 @@ sections:
 # Start your Power Platform and SAP learning journey
 - componentType: cards
     #isShadowless: false
-    backgroundColor: alternating-grey
+    #backgroundColor: alternating-grey
     title: "Start your Power Platform and SAP journey"
     summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
