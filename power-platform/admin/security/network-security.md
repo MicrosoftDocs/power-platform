@@ -1,5 +1,5 @@
 ---
-title: Network security
+title: Network security (preview)
 description: Learn how to manage network security in Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,9 +12,12 @@ search.audienceType:
   - admin
 ---
 
-# Network security
+# Network security (preview)
+!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 Network security is crucial for protecting applications and cloud workloads from network-based cyberattacks. It is important because it helps safeguard organizational data, ensures secure access to applications, and protects against potential threats and vulnerabilities. It involves several key features.
+
+[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 Protect applications and cloud workloads from network-based cyberattacks. 
 
