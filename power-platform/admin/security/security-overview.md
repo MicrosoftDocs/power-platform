@@ -40,25 +40,26 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 ## Key capabilities
 
 ## Security score
-The security score is calculated based on the security features turned on in your environment. It provides a measurement of your organizational security position for Power Platform workloads. The score is calculated using the formula: (your score / total possible score) * 100.
+The security score is calculated based on the security features turned on in your environment. It provides a measurement of your organizational security position for Power Platform workloads. The score is calculated using the formula: (your score/total possible score) * 100.
 
-- **Qualitative scale:** The security score is illustrated on a qualitative scale with labels of Low (0 to 50), Medium (51-80), or High (81-100). The more security features you have turned on, the higher your security score. Medium and High assessment labels indicate that more recommended actions have been taken, improving the security position of the tenant.
+- **Qualitative scale:** The security score is illustrated on a qualitative scale with labels of **Low** (0-50), **Medium** (51-80), or **High** (81-100). The more security features you have turned on, the higher your security score. **Medium** and **High** assessment labels indicate that more recommended actions have been taken, improving the security position of the tenant.
 - **Feature impact:** Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. As new security features are added, the total possible score may change, which can affect your overall score even if your settings remain the same.
-- **Score calculation formula:** The Security Score is calculated using the formula:
- (your score / total possible score) * 100
+- **Score calculation formula:** The security score is calculated using the formula:(your score/total possible score) * 100.
 
-For example, if you have a tenant with 10 environments (five Managed Environments and five non-Managed Environments), and you have the following features configured:
-- IP Firewall: On in 2 of 10 environments (2 points)
-- Tenant Isolation: On in 10 of 10 environments (10 points)
-- Environment Security Group: On in 5 of 10 environments (5 points)
-Your total score would be (2 + 10 + 5 = 17) and the total possible score would be 30. Using the formula, your Security Score would be: (17/30) *100 = 56.66%
+For example, if you have a tenant with ten environments (five Managed Environments and five non-Managed Environments), and you have the following features configured:
+
+- IP firewall: On in 2 of 10 environments (2 points)
+- Tenant isolation: On in 10 of 10 environments (10 points)
+- Environment security group: On in 5 of 10 environments (5 points)
+  
+Your total score would be (2 + 10 + 5 = 17) and the total possible score would be 30. Using the formula, your security score would be: (17/30) * 100 = 56.66%
 
 > [!Important]
-> Security score refreshes every 24 hours and any action taken could take up to 24 hours to reflect the updated score. 
-> Security score is in preview **generic message from content team Sally**
+> The security score refreshes every 24 hours and any action taken could take up to 24 hours to reflect the updated score. 
 
 ## Reactive governance through recommendations
-The system generates recommendations based on best practices and guide to improve your tenant's security score. These recommendations can be acted upon to enhance your overall security score only for managed environments. For non-managed environments you can still act or enable recommended features. Learn more Manage proactive policies for governance and security
+The system generates recommendations based on best practices and guides you to improve your tenant's security score. These recommendations can be acted upon to enhance your overall security score only for Managed Environments. For non-Managed Environments, you can still act or turn on recommended features. Learn more Manage proactive policies for governance and security.
+
 - An admin can take relevant actions for a specific recommendation by selecting environment.
 - Each recommendation guides through the potential score increase to overall Security score.
 - These recommendations span all environments, but you can only take action on them in environments that are managed.
