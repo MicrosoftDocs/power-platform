@@ -38,32 +38,32 @@ sections:
   supertitle: Microsoft Learn
   title: Power Platform and SAP
   size: small
-  textColor: dark
+  textColor: brand
   summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
   background:
     componentType: image # Note difference with the below example
     src: /power-platform/sap/guides/media/index-page/Hero.png
   subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-# - componentType: cards
+- componentType: cards
 #   #   backgroundColor: dark
 #   #   isShadowless: false # Removes the box shadow from around the card
-#   blocks:
-#     - componentType: card
-#       title: Card 1 title here
-#       date: 10/01/2021
-#       summary: Summary text, keep it brief
-#       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-#       url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
-#     - componentType: card
-#       title: Card 2 title here
-#       summary: Summary text, keep it brief
-#       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
-#       date: 10/01/2021
-#       url: https://bing.com
-#       links: # optional a list of links rendered at the bottom of the card
-#         - componentType: link
-#           url: https://bing.com
-#           text: Learn more
+  blocks:
+     - componentType: card
+       title: Card 1 title here
+       date: 10/01/2021
+       summary: Summary text, keep it brief
+       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+       url: https://bing.com # optional, when included the title of the card is clickable, if the links property is not specified
+     - componentType: card
+       title: Card 2 title here
+       summary: Summary text, keep it brief
+       imageUrl: ./media/path-to-image.jpg # imageUrl is optional
+       date: 10/01/2021
+       url: https://bing.com
+       links: # optional a list of links rendered at the bottom of the card
+         - componentType: link
+           url: https://bing.com
+           text: Learn more
 #     - componentType: card
 #       title: Card 3 title
 #       summary: Summary text, keep it brief
