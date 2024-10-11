@@ -2,14 +2,14 @@
 title: Connect Power Platform and SAP
 description: Learn how to connect the Power Platform and SAP to help you quickly build, extend, and deploy solutions that improve daily workflows that interact with SAP.
 author: edlehman
-ms.author:edleh
+ms.author: edleh
 contributors: 
-- tverhasselt
-- EllenWehrle
-- tbrazelton
-- dgalitsky
-- shnair
-- edlehman
+  - tverhasselt
+  - EllenWehrle
+  - tbrazelton
+  - dgalitsky
+  - shnair
+  - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 08/14/2024
