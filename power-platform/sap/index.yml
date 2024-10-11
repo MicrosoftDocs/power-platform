@@ -46,8 +46,8 @@ sections:
 - componentType: cards
     #isShadowless: false
     #backgroundColor: alternating-grey
-    title: "Start your Power Platform and SAP journey"
-    summary: Learn how to use Microsoft Power Platform with your SAP data.  
+#    title: "Start your Power Platform and SAP journey"
+#    summary: Learn how to use Microsoft Power Platform with your SAP data.  
     blocks:
     - componentType: card
       title: "Step 1. Understand SAP integration"
@@ -68,25 +68,25 @@ sections:
         # - componentType: link
         #   text: Watch videos
         #   url: /shows/copilot-learning-hub/
-    - componentType: card
-      title: "Step 3. Connect to SAP"
-      summary: "Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple." 
-      imageUrl: /power-platform/sap/guides/media/index-page/Connect.png
-      links: 
-        - componentType: link
-          text: Connect Power Platform and SAP
-          url: /power-platform/sap/connect-power-platform-and-SAP
-        # - componentType: link
-        #   text: Watch videos
-        #   url: /collections/20mijo44z6xq6
-    - componentType: card
-      title: "Step 4. Leverage templates"
-      summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-      imageUrl: /power-platform/sap/guides/media/index-page/Leverage_templates.png
-      links: 
-        - componentType: link
-          text: Procurement template for SAP
-          url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
+    # - componentType: card
+    #   title: "Step 3. Connect to SAP"
+    #   summary: "Already have a Power Platform environment? Microsoft's SAP connectors make integration with your SAP environment simple." 
+    #   imageUrl: /power-platform/sap/guides/media/index-page/Connect.png
+    #   links: 
+    #     - componentType: link
+    #       text: Connect Power Platform and SAP
+    #       url: /power-platform/sap/connect-power-platform-and-SAP
+    #     # - componentType: link
+    #     #   text: Watch videos
+    #     #   url: /collections/20mijo44z6xq6
+    # - componentType: card
+    #   title: "Step 4. Leverage templates"
+    #   summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
+    #   imageUrl: /power-platform/sap/guides/media/index-page/Leverage_templates.png
+    #   links: 
+    #     - componentType: link
+    #       text: Procurement template for SAP
+    #       url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
         # - componentType: link
         #   text: Watch videos
         #   url: /collections/0d6s6nx05qd1o
