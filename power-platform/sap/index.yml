@@ -14,16 +14,16 @@ metadata:
   brand: power-platform
 sections:
   # Intro
-  # Hero with background image - default transform
-  # - componentType: hero-product
-  #   supertitle: Microsoft Learn
-  #   title: Power Platform and SAP
-  #   size: extra-small
-  #   summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
-  #   heroImage:
-  #    componentType: hero-image
-  #    lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
-  #    darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
+  Hero with background image - default transform
+  - componentType: hero-product
+    supertitle: Microsoft Learn
+    title: Power Platform and SAP
+    size: extra-small
+    summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
+    heroImage:
+     componentType: hero-image
+     lightImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
+     darkImageSrc: /power-platform/sap/guides/media/index-page/Hero.png
 
   # - componentType: hero-product
   #   supertitle: Microsoft Learn
@@ -34,13 +34,13 @@ sections:
   #     Src: /power-platform/sap/guides/media/index-page/Hero.png
   #     subtitle: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform."
 
-- componentType: hero
-  supertitle: Lorem ipsum dolor sit amet
-  title: Standard hero
-  background:
-    componentType: image # Note difference with the below example
-    src: ./media/hero-background-dark.svg
-  subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+# - componentType: hero
+#   supertitle: Lorem ipsum dolor sit amet
+#   title: Standard hero
+#   background:
+#     componentType: image # Note difference with the below example
+#     src: ./media/hero-background-dark.svg
+#   subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 # Start your Power Platform and SAP learning journey
   - componentType: cards
