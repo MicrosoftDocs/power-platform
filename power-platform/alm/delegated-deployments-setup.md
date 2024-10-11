@@ -5,7 +5,7 @@ author: caburk
 ms.author: caburk
 ms.reviewer: pehecke
 ms.topic: overview
-ms.date: 09/25/2024
+ms.date: 10/10/2024
 ms.custom: 
 ---
 # Deploy pipelines as a service principal or pipeline owner
@@ -99,7 +99,8 @@ Sharing during deployment is a native capability of delegated deployments with s
 Currently, security roles, canvas apps, and cloud flows are supported. Copilot sharing might also be available depending on your region. 
 
 ### Can I update sharing when new versions are deployed?
-Sharing is available the first time an object is deployed to the target environment. Not updates. 
+
+Sharing is available the first time an object is deployed to the target environment. Sharing cannot be updated when new versions are deployed. 
 Be sure to select an appropriate security group during the first deployment. Manage ongoing access via security groups. 
 
 ### Which permissions are assigned for canvas apps and flows?
