@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 06/06/2024
+ms.date: 10/11/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -16,9 +16,7 @@ search.audienceType:
 
 Finance and operations apps have been reimagined as an application hosted by Microsoft Dataverse. A common function for administrators of finance and operations apps is to copy environments. Historically, this has been done in Microsoft Dynamics Lifecycle Services, but now everything can be managed in the Power Platform admin center.
 
-In this tutorial, learn how to:
-
-- Copy an LCS environment to a unified environment
+In this tutorial, learn how to copy a Lifecycle Services environment to a unified environment.
 
 As an example of this scenario, a customer who operates their finance and operations apps environments through the Lifecycle Services site today would like to copy their production environment data into their new, unified, developer environment in the Power Platform admin center.
 
