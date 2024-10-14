@@ -98,6 +98,8 @@
               href: run-pipeline.md
             - name: Enable cross-geo solution deployments
               href: enable-cross-geo-solution-deployments.md
+            - name: Import solutions from a pipelines host
+              href: import-from-pipelines-host.md
             - name: Set a default pipelines host
               href: set-a-default-pipelines-host.md
             - name: Redeploy past solution versions
