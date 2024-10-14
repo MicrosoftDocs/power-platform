@@ -18,7 +18,7 @@ sections:
   title: Power Platform and SAP
   size: small
   textColor: brand
-  summary: "The Power Platform and SAP toolkit is a collection of guidance, templates, samples, and tools to help application developers and environment admins to accelerate integration of the Power Platform with SAP. Whether you’re a Power Platform expert or an SAP professional, the toolkit will help unlock the full potential of your SAP data with Microsoft Power Platform." 
+  summary: "Microsoft Power Platform is a suite of AI-enabled, low-code development tools designed to help users build custom business solutions. Organizations using SAP leverage Power Platform as the agility layer to build applications and automate business process that are deeply connected to their SAP system. Find out how you can make the most of your SAP system and speed up time to value with Power Platform here." 
   background:
     componentType: image # Note difference with the below example
     src: /power-platform/sap/guides/media/index-page/Hero.png
