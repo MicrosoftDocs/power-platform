@@ -23,7 +23,7 @@ With our powerful connectors, you can easily access and manipulate SAP data, ena
 
 The [SAP ERP Connector](/connectors/saperp/) utilizes the SAP RFC protocol to your SAP ERP environments for create, read, and update operations on SAP data. It can also be used to call RFCs and BAPIs. The ERP connector is compatible with SAP ECC and S/4HANA environments.
 
-The [SAP OData Connector](/connectors/sapodata/) can consume data from across the SAP product portfolio using the http protocols. Using the OData connector with SAP ECC or prior versions requires configuration of Odata enpoints that is not included in ECC out-of-box setup.
+The [SAP OData Connector](/connectors/sapodata/) can consume data from across the SAP product portfolio using http protocols. Using the OData connector with SAP ECC or prior versions requires configuration of Odata enpoints that is not included in ECC out-of-box setup.
 
 Both connectors support data encryption in motion. Encryption from the gateway to SAP is supported by SAP SNC.
 
