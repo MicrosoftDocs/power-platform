@@ -123,7 +123,7 @@ You can store the client secret either in plain text in the **Audit Logs - Clien
 1. Go to [make.powerapps.com](https://make.powerapps.com).
 1. Select **Solutions**.
 1. Open the **Center of Excellence – Core Components** solution.
-1. Turn on the **Admin | Audit Logs | Update Data (V2)** flow. This flow updates the PowerApps table with last launch information and adds metadata to the audit logs records.
+1. Turn on the **Admin | Audit Logs | Update Data (V2)** flow. This flow updates the Power Apps table with last launch information and adds metadata to the audit logs records.
 1. Turn on the **Admin | Audit Logs | Sync Audit Logs (V2)** flow. This flow runs on an hourly schedule and collects audit log events into the audit log table.
 
 ## Provide feedback
