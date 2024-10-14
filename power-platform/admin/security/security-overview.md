@@ -26,10 +26,10 @@ Administrators can:
 - **Manage proactive policies:** Manage proactive policies for governance and security, including [network security](network-security.md), [access control](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
   
 ## Prerequisite
-To see your security score, you must turn on tenant-wide analytics. For instructions, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics).
+To see your security score, you must turn on tenant-wide analytics. For instructions, see [How do I enable tenant-level analytics?](../tenant-level-analytics.md#how-do-i-enable-tenant-level-analytics)
 
 > [!Note]
-> It might take up to 48 hours to populate the **Security** page with data after you turn on tenant-wide analytics. Until then, most sections on the page show “Not available”.
+> It might take up to 48 hours to populate the **Security** page with data after you turn on tenant-wide analytics. Until then, most sections on the page display “Not available”.
 
 ## Access the Security page 
 To access the **Security** page, you must have Microsoft Entra ID roles such as Power Platform administrator or Dynamics 365 administrator.  Learn more about these roles at [Use service admin roles to manage your tenant](../use-service-admin-role-manage-tenant.md).
@@ -40,17 +40,19 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 ## Key capabilities
 
 ## Security score
-The security score is calculated based on the security features turned on in your environment. It provides a measurement of your organizational security position for Power Platform workloads. The score is calculated using the formula: (your score/total possible score) * 100.
+The security score is calculated based on the security features turned on in your environment. It provides a measurement of your organizational security position for Power Platform workloads. The score is calculated using this formula: 
+
+**(your score/total possible score) * 100**
 
 - **Qualitative scale:** The security score is illustrated on a qualitative scale with labels of **Low** (0-50), **Medium** (51-80), or **High** (81-100). The more security features you have turned on, the higher your security score. **Medium** and **High** assessment labels indicate that more recommended actions have been taken, improving the security position of the tenant.
 - **Feature impact:** Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. As new security features are added, the total possible score may change, which can affect your overall score even if your settings remain the same.
-- **Score calculation formula:** The security score is calculated using the formula:(your score/total possible score) * 100.
+- **Score calculation formula:** The security score is calculated using the formula: **(your score/total possible score) * 100**.
 
 For example, if you have a tenant with ten environments (five Managed Environments and five non-Managed Environments), and you have the following features configured:
 
-- IP firewall: On in 2 of 10 environments (2 points)
-- Tenant isolation: On in 10 of 10 environments (10 points)
-- Environment security group: On in 5 of 10 environments (5 points)
+- IP firewall: On in two of ten environments (2 points)
+- Tenant isolation: On in ten of ten environments (10 points)
+- Environment security group: On in five of ten environments (5 points)
   
 Your total score would be (2 + 10 + 5 = 17) and the total possible score would be 30. Using the formula, your security score would be: (17/30) * 100 = 56.66%
 
@@ -60,29 +62,29 @@ Your total score would be (2 + 10 + 5 = 17) and the total possible score would b
 ## Reactive governance through recommendations
 The system generates recommendations based on best practices and guides you to improve your tenant's security score. These recommendations can be acted upon to enhance your overall security score only for Managed Environments. For non-Managed Environments, you can still act or turn on recommended features. Learn more Manage proactive policies for governance and security.
 
-- An admin can take relevant actions for a specific recommendation by selecting environment.
-- Each recommendation guides through the potential score increase to overall Security score.
+- An admin can take relevant actions for a specific recommendation by selecting an environment.
+- Each recommendation guides through the potential score increase to the overall, security score.
 - These recommendations span all environments, but you can only take action on them in environments that are managed.
-- Recommendations can only be applied to managed environments here. To apply this feature to more environments, go to the settings pages in Security, find this feature, and turn it on for non-managed environments there.
+- Recommendations can only be applied to Managed Environments here. To apply this feature to more environments, go to the **Settings** pages in Security, find this feature, and turn it on for non-Managed Environments there.
 
 ## Manage proactive policies for governance and security
-There are several security features that help secure your tenant, you may visit to below page to view and manage proactive policies for governance and security.
+There are several security features that help secure your tenant. You may visit the pages below to view and manage proactive policies for governance and security.
 
-- Network security: Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network. [Learn more](network-security.md)
-- Access control: Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls. [Learn more](access-control.md)
-- Threat detection: Protect your organization’s assets and resources with a unified detection with features like Auditing.[Learn more](threat-detection.md)
-- Compliance: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like Customer Lockbox and Customer Managed Key.[Learn more](compliance.md)
+- [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network.
+- [Access control](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
+- [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
+- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.mc) and [customer-managed key](../customer-managed-key.md).
 
 ## Fequently asked questions (FAQs)
 
 ### When will the Security page be available for Government Community Cloud (GCC)?
-The **Security** page is planned for availability in GCC after the general availability release.[TBD Sally ]
+The **Security** page is planned for availability in GCC after the general availability release.
 
 ### Can customers modify the recommendations or parameters based on their needs?
 No. The recommendations are system-generated and are based on Microsoft's best practices and guidance.
 
 ### When will the security score be updated after taking recommended actions?
-It might take up to 24 hours to reflect the Security score
+It might take up to 24 hours to reflect the security score.
 
 
 
