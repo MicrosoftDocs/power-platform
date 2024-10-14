@@ -73,7 +73,7 @@ There are several security features that help secure your tenant. You may visit 
 - [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network.
 - [Access control](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
 - [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
-- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.mc) and [customer-managed key](../customer-managed-key.md).
+- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
 
 ## Fequently asked questions (FAQs)
 
