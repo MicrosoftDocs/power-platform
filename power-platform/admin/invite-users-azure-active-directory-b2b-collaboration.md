@@ -27,23 +27,23 @@ You can invite other users to access your environment. A user with the [User Adm
 - To bulk- invite users, get the latest [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] which can be downloaded from the [PowerShell module's release page](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.98).  
   
 ## Incompatibilities  
- The following features are not supported for B2B invited users.  
+ The following features aren't supported for B2B invited users.  
   
 1. [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] client  
   
-     Invited users will not be able to use the [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] client to log into the host tenant’s environment.  
+     Invited users won't be able to use the [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] client to log into the host tenant’s environment.  
   
 2. [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]  
   
-     Invited users will not be able to use their own tenant email addresses when performing email related transactions in the host environment. 
+     Invited users won't be able to use their own tenant email addresses when performing email related transactions in the host environment. 
   
 3. [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)]  
   
-   [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] connects a group to customer engagement apps. Data (including new conversations and documents) are stored in the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and/or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] system. Since invited users belong to a different [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant, the invited users do not have permission to create [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in the invited-to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant. However, they can participate in the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] conversations as a guest in their [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] Inbox, but not within customer engagement apps.  
+   [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] connects a group to customer engagement apps. Data (including new conversations and documents) are stored in the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] and/or [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)] system. Since invited users belong to a different [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant, the invited users don't have permission to create [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] in the invited-to [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant. However, they can participate in the [!INCLUDE[pn_office_365_groups](../includes/pn-office-365-groups.md)] conversations as a guest in their [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] Inbox, but not within customer engagement apps.  
   
 4. Dynamics 365 Customer Voice
    
-   Invited users will not be able to use Dynamics 365 Customer Voice. You must create a new user in your tenant and then provide access to the new user.
+   Invited users won't be able to use Dynamics 365 Customer Voice. You must create a new user in your tenant and then provide access to the new user.
    
 ## Invite a user  
  You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Users with sufficient access such as user admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
@@ -56,7 +56,7 @@ You can invite other users to access your environment. A user with the [User Adm
   
    - See [Control user access to environments: security groups and licenses](control-user-access.md) on how to use security groups for your environments.  
 
-2. Invite users to your environment that does not have a security group.  
+2. Invite users to your environment that don't have a security group.  
   
    - See [Admins adding guest users to the directory](/azure/active-directory/active-directory-b2b-admin-add-users).  
   
@@ -64,16 +64,16 @@ You can invite other users to access your environment. A user with the [User Adm
   
    - See [PowerShell example](/azure/active-directory/b2b/code-samples).  
   
-   Your invited user will receive an email invitation to get started with B2B user collaboration.  
+   Your invited user receives an email invitation to get started with B2B user collaboration.  
   
    ![Email invitation sent to new user.](../admin/media/email-invitation-sent-new-user.png "Email invitation sent to new user")  
   
-   When your user accepts the invitation by clicking on the **Get Started** link on the invitation email, they will be prompted to accept the invitation.  
+   When your user accepts the invitation by clicking on the **Get Started** link on the invitation email, they are prompted to accept the invitation.  
   
    ![Accept the invitation.](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation")  
   
 > [!NOTE]
-> Until you add a license to the user account, the user will not have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
+> Until you add a license to the user account, the user doesn't have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
 ## Update user’s name and usage location  
  To assign a license, the invited user’s **Usage location** must be specified. Admins can update the invited user’s profile on the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
@@ -123,7 +123,7 @@ Follow these steps to allow B2B collaboration users to create Power Apps.
 > - A **resource tenant** is where the app is expected to exist, and where the user is expected to create the app using Power Apps as a guest.
 > - A **home tenant** is where the user's account resides and authenticates against.
 
-1. In Microsoft Entra ID, [in external collaboration settings set guest user access to "(most inclusive)"](/azure/active-directory/b2b/delegate-invitations). For more info about Microsoft Entra B2B check out: [What is guest user access in Microsoft Entra B2B?](/azure/active-directory/b2b/what-is-b2b)
+1. In Microsoft Entra ID, [in external collaboration settings set guest user access to "(most inclusive)"](/azure/active-directory/b2b/delegate-invitations). For more info about Microsoft Entra B2B checkout: [What is guest user access in Microsoft Entra B2B?](/azure/active-directory/b2b/what-is-b2b)
 
 2. Use the following PowerShell cmdlet to enable guests to make Power Apps.
 
@@ -146,7 +146,7 @@ After the B2B guest users are given the required permissions to create and edit 
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
-2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
+2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they need a license with Dataverse use rights assigned to them in the resource tenant.
 3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
 
 ### Related content
