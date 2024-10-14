@@ -1,9 +1,9 @@
 ---
-title: "Invite users with Microsoft Entra B2B collaboration  | MicrosoftDocs"
-description: Invite users with Microsoft Entra B2B collaboration
+title: Invite users with Microsoft Entra B2B collaboration
+description: Invite users with Microsoft Entra B2B collaboration.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 10/14/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -142,14 +142,14 @@ After the B2B guest users are given the required permissions to create and edit 
 
 4. B2B guests can [follow these steps](/power-apps/maker/canvas-apps/intro-maker-portal) to sign in the preferred Microsoft Entra tenant to build apps.
    
-5. Optional, assign a security role that allows B2B guest users to perform solution import and export.  
+5. **Optional**: Assign a security role that allows B2B guest users to perform solution import and export.  
 
 ### Known limitations
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they’ll need a license with Dataverse use rights assigned to them in the resource tenant.
 3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
 
-### See also  
+### Related content
 [Microsoft Entra B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)  
 [Microsoft Entra B2B collaboration code and PowerShell samples](/azure/active-directory/b2b/code-samples)   <br /> 
 [Microsoft Entra B2B collaboration frequently-asked questions (FAQ)](/azure/active-directory/active-directory-b2b-faq)   <br /> 
