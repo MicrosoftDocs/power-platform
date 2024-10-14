@@ -13,7 +13,7 @@ search.audienceType:
 ---
 
 # Network security (preview)
-!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 Network security is crucial for protecting applications and cloud workloads from network-based cyberattacks. It is important because it helps safeguard organizational data, ensures secure access to applications, and protects against potential threats and vulnerabilities. It involves several key features.
 
