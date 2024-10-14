@@ -68,7 +68,7 @@ You can invite other users to access your environment. A user with the [User Adm
   
    ![Email invitation sent to new user.](../admin/media/email-invitation-sent-new-user.png "Email invitation sent to new user")  
   
-   When your user accepts the invitation by clicking on the **Get Started** link on the invitation email, they are prompted to accept the invitation.  
+   When your user accepts the invitation by clicking on the **Get Started** link on the invitation email, they're prompted to accept the invitation.  
   
    ![Accept the invitation.](../admin/media/accept-invitation-dynamics-365.png "Accept the invitation")  
   
@@ -110,7 +110,7 @@ You can invite other users to access your environment. A user with the [User Adm
    Next, assign the invited users with appropriate security roles for the environment so they can access it. See [Create users](create-users.md).  
   
 ## Notify your invited users  
- To complete the user invitation, notify your invited users and provide them with the URL for the environment they are invited to (for example, https://contoso.crm.dynamics.com).  
+ To complete the user invitation, notify your invited users and provide them with the URL for the environment they're invited to (for example, https://contoso.crm.dynamics.com).  
  
 ## Power Apps support for B2B guest maker
 
@@ -145,7 +145,7 @@ After the B2B guest users are given the required permissions to create and edit 
 5. **Optional**: Assign a security role that allows B2B guest users to perform solution import and export.  
 
 ### Known limitations
-1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) cannot directly sign in to https://make.powerapps.com.
+1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) can't directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they need a license with Dataverse use rights assigned to them in the resource tenant.
 3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
 
