@@ -86,7 +86,7 @@ Using these steps, you can set up a Microsoft Entra app registration for an HTTP
 
 ### Update environment variables
 
-Environment variables are used to control what API to use, legacy Office 365 Management API or Graph API. Variables are also used to store the client ID and secret for the app registration, audience, and authority service endpoints, depending on your cloud (commercial, GCC, GCC High, DoD) for the HTTP action. Update the [environment variables](faq.md#update-environment-variables) before turning on the flows.
+Environment variables are used to control what API to use, legacy Office 365 Management API or Graph API. Variables are also used to store the client ID and secret for the app registration, audience, and authority service endpoints, depending on your cloud for the HTTP action. Your type of cloud may be commercial, US Government Coummunity Coud (GCC), US GCC High, or US Department of Defense (DoD). Update the [environment variables](faq.md#update-environment-variables) before turning on the flows.
 
 You can store the client secret either in plain text in the **Audit Logs - Client Secret** environment variable, which isn't recommended. Instead, we recommend you create and store the client secret in the Azure Key Vault and reference it in the **Audit Logs - Client Azure Secret** environment variable.
 
