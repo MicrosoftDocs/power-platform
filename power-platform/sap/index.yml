@@ -103,7 +103,7 @@ sections:
         src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
     - componentType: icon-card
       title: SAP Basis administrator
-      summary: "Automate administrative tasks with Copilots"
+      summary: "Automate administration with Copilots and learn integration with SAP details."
       url: https://www.microsoft.com/
       icon:
         componentType: image
