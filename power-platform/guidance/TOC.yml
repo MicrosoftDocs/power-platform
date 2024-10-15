@@ -140,10 +140,14 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               items:
-                  - name: Using an HTTP call (recommended)
+                  - name: Using an Office 365 Management API
                     href: coe/setup-auditlog-http.md
-                  - name: Using a custom connector (deprecated)
-                    href: coe/setup-auditlog.md
+                  - name: Collect audit logs using Microsoft Graph API
+                    href: coe/setup-auditlog-http-graphapi.md
+                  - name: Collect historic audit log events
+                    href: coe/setup-auditlog-http-old-data.md
+                  - name: Audit log Troubleshooting
+                    href: coe/setup-auditlog-troubleshooting.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
