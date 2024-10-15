@@ -72,7 +72,7 @@ sections:
       url: https://www.microsoft.com/
       icon:
         componentType: image
-        src: /copilot/media/copilot/copilot-learning-hub/app-maker-icon.png
+        src: power-platform/sap/guides/media/index-page/power_platform_app_maker.svg
     # - componentType: icon-card
     #   title: Power Platform administrator
     #   summary: "Guidance on SAP access methods and a directory of the most used SAP data. (later)"
@@ -86,7 +86,7 @@ sections:
       url: https://www.microsoft.com/
       icon:
         componentType: image
-        src: /copilot/media/copilot/copilot-learning-hub/security-icon.png
+        src: power-platform/sap/guides/media/index-page/governance_administrator.svg
     # - componentType: icon-card
     #   title: Technology manager 
     #   summary: "Considerations for implementing Power Platform integration with SAP (later)"
@@ -100,14 +100,14 @@ sections:
       url: https://www.microsoft.com/
       icon:
         componentType: image
-        src: /copilot/media/copilot/copilot-learning-hub/functional-consultant-icon.png
+        src: power-platform/sap/guides/media/index-page/sap_technical_consultant.svg
     - componentType: icon-card
       title: SAP Basis administrator
       summary: "Automate administration with Copilots and learn integration with SAP details."
       url: https://www.microsoft.com/
       icon:
         componentType: image
-        src: /copilot/media/copilot/copilot-learning-hub/service-adoption-icon.png
+        src: power-platform/sap/guides/media/index-page/sap_basis_administrator.svg
     # - componentType: icon-card
     #   title: Partner
     #   summary: "Resources for Microsoft Partners to integrate customer Power and SAP environments. (later)"
