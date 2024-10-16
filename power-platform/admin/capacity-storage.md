@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 10/07/2024
+ms.date: 10/16/2024
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -115,14 +115,14 @@ Note the following features:
 > - For the default environment, the list view shows the amount of capacity consumed beyond the included quota. Select the **Details** button (![Storage data details button.](media/storage-data-details-button.png "Storage data details button")) to see usage.
 > - The capacity check conducted prior to creating new environments excludes the default environment's included storage capacity when calculating whether you have sufficient capacity to create a new environment.
 
-#### Allocate capacity for an environment 
+#### Allocate capacity for an environment (preview)
 
 > [!IMPORTANT]
 >
-> - Allocate capacity for an environment is  preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available in your region yet.
-> - 
+
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
