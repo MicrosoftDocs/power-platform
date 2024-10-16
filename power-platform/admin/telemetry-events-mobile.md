@@ -39,17 +39,17 @@ This data goes into the **Power Apps (Preview)** > **Mobile app synchronization 
 - **Application_Version**: Version of the app.
 - **customDimensions**: Contains the following attributes:
      - **"EventName"**: Summary of the scenario tracked by the event (ScenarioEnd).
-     - **"ScenarioResult"**: SUCCESS or FAILURE
-     - **ErrorCode**: Error Code generated upon sync failure. See [Error code mapping table](#error-code-mapping).
-     - **ErrorMessage**: Empty on success or string describing the error
+     - **"ScenarioResult"**: SUCCESS or FAILURE.
+     - **ErrorCode**: Error code generated upon sync failure. Learn more in [Error code mapping table](#error-code-mapping).
+     - **ErrorMessage**: Empty on success or string describing the error.
      - **FailureType**: Defines type of sync failure.
-     - **LogLevel**: The severity or reporting level of the event. Valid values are info, error, warning, error, verbose.
+     - **LogLevel**: The severity or reporting level of the event. Valid values are _info_, _error_, _warning_, _error_, or _verbose_.
      - **DataSyncMode**: What type of offline sync the user has experienced.
-        - DELTA_SYNC: Automatic incremental sync
-        - GRID_SYNC: Triggered by a refresh on a Grid view
-        - FIRST_SYNC: Initial sync on a device (or after a signout/reconfigure)
-        - FORCED_SYNC: Triggered from the Device Status Page button
-        - SINGLE_RECORD_SYNC: Triggered by Push notification
+        - DELTA_SYNC: Automatic incremental sync.
+        - GRID_SYNC: Triggered by a refresh on a grid view.
+        - FIRST_SYNC: Initial sync on a device (or after a signout/reconfigure).
+        - FORCED_SYNC: Triggered from the Device Status page button.
+        - SINGLE_RECORD_SYNC: Triggered by Push notification.
      - **AppFlavor**: Native app installed on the devices. Valid values are FieldService and PowerApps.
      - **AppInfo_Version**: Version of the native app, as seen in the app store.
      - **ActiveDuration**: Scenario duration in milliseconds including only time while the app is active.
@@ -60,13 +60,13 @@ This data goes into the **Power Apps (Preview)** > **Mobile app synchronization 
      - **DeviceInfo_OsVersion**: Operating system version (such as Android 13).
      - **Loc_country**: Telemetry device origin.
      - **eventContext**: Contains the following properties:
-        - **CurrentSyncId**: ID of a successful sync pass. Reset after each successful sync. (It is not reset after an error.)
+        - **CurrentSyncId**: ID of a successful sync pass. Reset after each successful sync. (It isn't reset after an error.)
         - **CurrentActivityId**: ID of the sync pass. Reset after each sync.
         - **entityName**: Name of the table in data download events.
         - **ProfileId**: ID of the offline profile configured for the app and user.
         - **RecordCount**: Number of records downloaded.
-        - **ResponseSize**: Incoming payload data size as reported by HTTPClient (Compressed size).
-        - **ContentLength**: Incoming payload data size as reported by HTTPClient (Compressed size).
+        - **ResponseSize**: Incoming payload data size as reported by HTTPClient (compressed size).
+        - **ContentLength**: Incoming payload data size as reported by HTTPClient (compressed size).
 
 
 
