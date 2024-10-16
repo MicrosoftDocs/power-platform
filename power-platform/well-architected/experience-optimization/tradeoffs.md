@@ -11,13 +11,13 @@ ms.date: 05/16/2024
 
 # Experience Optimization tradeoffs for Power Platform workloads
 
-During the design phase of a workload, it's important to consider how decisions based on the [Experience Optimization design principles](./principles.md) and recommendations in the [Design review checklist for Experience Optimization](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for experience optimization.
+During the design phase of a workload, it's important to consider how decisions based on the [Experience Optimization design principles](./principles.md) and recommendations in the [Design review checklist for Experience Optimization](./checklist.md) might influence the goals and optimization efforts of other pillars. Certain decisions may benefit some pillars, while being tradeoffs for others. This article lists example tradeoffs that a workload team might encounter when designing workload architecture and operations for Experience Optimization.
 
 ## Experience Optimization tradeoffs with Reliability
 
-> :::image type="icon" source="../_images/trade-off.svg"::: **Increased complexity**. A workload that uses straightforward approaches and limits customization is generally easier to manage in terms of reliability.
+> :::image type="icon" source="../_images/trade-off.svg"::: **Increased complexity**. A workload that uses straightforward approaches and limits customization is generally more reliable.
 
-- Continuous improvement through adding new features in the user experience can introduce new issues that affect reliability and will require thorough testing.
+- Continuous improvement through adding new features in the user experience can introduce new issues that affect reliability and require thorough testing.
 
 - Customizing the user interface with code and components adds new reliability targets.
 

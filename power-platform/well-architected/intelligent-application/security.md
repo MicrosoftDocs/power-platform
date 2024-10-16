@@ -52,7 +52,7 @@ Understand the key requirements for the intelligent application workload you're 
 
 Authentication allows users to sign in, giving your copilot access to a restricted resource or information. Users can sign in with [Microsoft Entra ID](/microsoft-copilot-studio/configuration-authentication-azure-ad) or with any [OAuth2 identity provider](/azure/active-directory/develop/v2-oauth2-auth-code-flow) such as Google or Facebook.
 
-Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access the Copilot is the foundation of security. [Implementing multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks) adds an extra layer of security. To minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
+Implement robust authentication and access control measures to ensure authorized users can access Copilot. Ensuring only authorized users can access Copilot is the foundation of security. [Implementing multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks) adds an extra layer of security. To minimize the risk of unauthorized access, define roles and permissions to ensure that users have access only to the resources they need. Implement conditional access policies to control access based on specific conditions, such as user location, device compliance, or risk level.
  
 Learn more:
 

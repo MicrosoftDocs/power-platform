@@ -4,7 +4,7 @@ description: "Try a tutorial on how to create a module, write an X++ class, depl
 author: pvillads
 ms.date: 06/06/2024
 ms.topic: how-to
-ms.reviewer: phecke
+ms.reviewer: pehecke
 ms.author: pathaku
 ms.subservice: developer
 ---

@@ -49,7 +49,7 @@ Creates a new copilot using an existing template file as the reference.
 
 #### `--displayName`
 
-The display name of the new bopilot
+The display name of the new copilot
 
 #### `--schemaName`
 

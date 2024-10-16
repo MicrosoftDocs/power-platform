@@ -1,10 +1,11 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request.
-ms.date: 08/01/2024
+ms.date: 10/02/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
+  - val-bc 
   - brsova
   - ImadYanni
   - bevans 
@@ -14,7 +15,9 @@ ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+
 ---
+
 # Tenant-to-tenant migrations 
 
 ## Migrate an environment to a different tenant
@@ -125,7 +128,7 @@ You must provide the following information:
 
 ### Steps to create the mapping file
  
-For full access users:
+#### For full access users:
 1. Access the source environment.
 2. Use Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
@@ -146,7 +149,10 @@ For full access users:
 
 13.	Save the file as a CSV.
 
-For administrative access users: 
+> [!Note]
+> Application users can't be migrated. Learn more about application users in [System and application users](system-application-users.md).
+
+#### For administrative access users: 
 1. Access the source environment.
 2. Use Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.
