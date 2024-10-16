@@ -117,6 +117,12 @@ Note the following features:
 
 #### Allocate capacity for an environment 
 
+> [!IMPORTANT]
+>
+> - Allocate capacity for an environment is  preview feature.
+> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is being gradually rolled out across regions and might not be available in your region yet.
+> - 
 In the **Dataverse** tab, you can allocate capacity to a specific environment. Once capacity is allocated, you can view the status of your environments to determine whether they are within capacity or in an overage state.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
