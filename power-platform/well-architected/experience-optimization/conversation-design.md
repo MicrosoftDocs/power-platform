@@ -8,7 +8,7 @@ ms.date: 10/31/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
-# Recommendations for designing conversational interfaces
+# Recommendations for designing conversation interfaces
 
 **Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
