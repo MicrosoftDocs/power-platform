@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 6/10/2024
+ms.date: 10/16/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -24,7 +24,8 @@ Detects errors and provides an alternative value or takes action. Create a custo
 
 > [!NOTE]
 >
-> - If an app has chosen to disable the feature _Formula-level error management_ under the retired settings in [Settings > Updates > Retired](/power-apps/maker/canvas-apps/working-with-experimental-preview#retired), then those functions don't work correctly.
+> If an app has disabled the _Formula-level error management_ feature under **Settings** > **Updates** > **Retired**, those functions will not work correctly.
+
 
 ## IfError
 
