@@ -307,7 +307,7 @@ The image content can be defined by prefixing with:
 - `icon:` Using one of the [Fluent UI icons](https://developer.microsoft.com/en-us/fluentui#/styles/web/icons) for example, `icon:SkypeCircleCheck`
 - `data:` Using inline svg image data: for example, `data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%2020...`
 
-If the image is of type `clickableimage` the `OnChange` event will fire when the icon is selected, with an `EvenName` of `CellAction`, `EventColumn` providing the name of the image column and `EventRowKey` being the `RecordKey` of the row (if no `RecordKey` is set, then the `EventRowKey` will contain the row number).
+If the image is of type `clickableimage` the `OnChange` event will fire when the icon is selected, with an `EventName` of `CellAction`, `EventColumn` providing the name of the image column and `EventRowKey` being the `RecordKey` of the row (if no `RecordKey` is set, then the `EventRowKey` will contain the row number).
 
 for example, Consider the row data:
 
