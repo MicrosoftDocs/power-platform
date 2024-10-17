@@ -19,14 +19,13 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
 ## Enable IP address-based cookie binding
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
-
-1. Select **Environments**, and then select an environment.
-
-1. Select **Settings** > **Product**, and then select **Privacy + Security**.
-
-1. Under **IP address settings**, select **Enable IP address-based cookie binding**.
-
-1. Select **Save**.
+2. Select **Environments**, and then select an environment.
+3. Select **Settings** > **Product**, and then select **Privacy + Security**.
+4. Under **IP address settings**, select **Enable IP address-based cookie binding**.
+5. **Reverse proxy IP addresses**(Optional): If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](/block-cookie-replay-attack) and the [IP firewall](/ip-firewall). Reach out to your network administrator to get the "reverse proxy IP address"
+     > [!NOTE]
+     > Reverse proxy must be configured to send user client IP address in [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
+6.  Select **Save**.
 
 ## How cookie binding uses your IP address to work
 
