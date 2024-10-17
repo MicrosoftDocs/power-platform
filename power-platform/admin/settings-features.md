@@ -65,7 +65,7 @@ To update the business closures, make sure you have the System Administrator or 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the AI prompts feature in Power Platform and Copilot Studio. | Description. Learn more in [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio). | On |
+| Enable the AI prompts feature in Power Platform and Copilot Studio. | If you turn off AI prompts, you aren't be able to use custom or prebuilt prompts. These prompts are essential for tasks like summarizing, categorizing, translating, text completion and generation, and more. They help automate and streamline your work in Power Automate, Power Apps, and Copilot Studio.<br><br>Learn more in [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio). | On |
 
 ## AI form fill assistance
 
@@ -116,7 +116,6 @@ To update the business closures, make sure you have the System Administrator or 
 | Enable the modern read-only grid experience. | If **On**, the Power Apps read-only grid control lets users view and open records from views and subgrids. | On |
 |Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. More information: [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you enabled 2022 Release Wave 1. |  On| 
 |Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. More information: [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor). This setting only appears if you enabled 2022 Release Wave 1.| On |
-| Focused view | If enabled, focused view allows sellers to view and manage their records and their associated activities on one page. This view makes it easier for users to stay focused on their tasks, saving time by eliminating the need to navigate through multiple screens. Focused view can be [configured and set as default for required tables](/dynamics365/sales/set-focused-view-as-default#configure-as-default-for-other-entities) through [system customizations](/power-apps/maker/model-driven-apps/advanced-navigation).<br>Turn off the **Enable focused view for all records** toggle to disable focused view across your entire organization. If you need focused view for certain tables, re-enable this option and configure as necessary. More information: [Enable focused view for all records](/dynamics365/sales/enable-focused-view) | On |
 
 ## Advanced find options
 
