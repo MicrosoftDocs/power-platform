@@ -49,11 +49,23 @@ To update the business closures, make sure you have the System Administrator or 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
+## Copilot for Microsoft 365
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Allow data and objects in this environment to be used with Copilot for Microsoft 365. | Use this setting to allow integration of Copilot agents from this environment. Learn more in [Use actions in Microsoft Copilot](/microsoft-copilot-studio/copilot-plugins-overview#use-actions-in-microsoft-copilot).  | Off |
+
 ## AI Builder
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|AI Builder preview models  | If **Off**, the environment won't have access to AI Builder. Not all environments have this setting. For information about environments eligible for this feature and related details, see [Administer AI Builder](/ai-builder/administer)  | On |
+| Enable the usage of AI Builder model types that are in preview.  | If **Off**, the environment won't have access to AI Builder. Not all environments have this setting. Learn more about environments that are eligible for this feature and related details in [Administer AI Builder](/ai-builder/administer).  | On |
+
+## AI prompts
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable the AI prompts feature in Power Platform and Copilot Studio. | Description. Learn more in [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio). | On |
 
 ## AI form fill assistance
 
