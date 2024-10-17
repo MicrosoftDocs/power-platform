@@ -144,8 +144,8 @@ To update the business closures, make sure you have the System Administrator or 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Canvas apps | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
-| Cloud flows | More information: [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default) | Off |
+| Canvas apps | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
+| Cloud flows | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 
 ## Preferred solution
 
