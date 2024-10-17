@@ -147,15 +147,6 @@ To update the business closures, make sure you have the System Administrator or 
 | Canvas apps | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 | Cloud flows | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 
-## Preferred solution
-
-> [!IMPORTANT]
-> This is a preview feature.
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Preferred solution | Lets makers set which unmanaged solution maintains their created and edited components that occur anywhere in Power Apps. If not set, all components for all makers not already in the context of an unmanaged solution are maintained in the Common Data Services Default Solution. More information: [Set the preferred solution](/power-apps/maker/data-platform/preferred-solution) | Off |
-
 ## Block unmanaged customizations
 
 > [!IMPORTANT]
@@ -163,16 +154,7 @@ To update the business closures, make sure you have the System Administrator or 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. More information: [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md) | Off |
-
-## Finance and Operations in Dataverse
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Enable Finance and Operations user impersonation in Dataverse | When enabled, the Finance and Operations application in this environment has permissions to impersonate Dataverse users. This allows users of Finance and Operations to make calls to Dataverse which run as that same user in Dataverse, using the Dataverse permissions assigned to that user. Only select this option if the Finance and Operations administrator is trusted with the same level of permissions in Dataverse as the Dataverse administrator. | Off |
-
-> [!IMPORTANT]
-> Beginning March 1, 2024, the **Enable Finance and Operations user impersonation in Dataverse** toggle will be removed. With continued efforts to unify finance and operations apps with the Power Platform through the [Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/overview) and [unified admin experiences](unified-experience/finance-operations-apps-overview.md), finance and operations apps are now considered applications within the Power Platform environment. In a unified environment, the capabilities granted by the toggle are now assumed to be true for any environment with finance and operations apps installed with the same level of governance, oversight and scrutiny as all other apps in a Power Platform environment.
+| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. Learn more in [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md). | Off |
 
 ## Data validation
 
