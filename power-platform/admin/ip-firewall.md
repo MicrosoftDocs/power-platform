@@ -54,7 +54,7 @@ You can enable the IP firewall in a Power Platform environment by using either P
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](/admin/block-cookie-replay-attack) and the IP firewall. Reach out to your network administrator to get the "reverse proxy IP address"
      > [!NOTE]
-     > Reverse proxy must be configured to send client IP address in forwarded header.
+     > Reverse proxy must be configured to send user client IP address in [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
 
 1. Select **Save**.
 
