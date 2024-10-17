@@ -79,12 +79,6 @@ To update the business closures, make sure you have the System Administrator or 
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
 
-## AI suggestions for email content
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Turn on generative AI in emails | If **On**, the Copilot icon is displayed in rich text editors for app users to draft and refine email content. More information: [Use Copilot in the email rich text editor](/power-apps/maker/model-driven-apps/use-copilot-email-assist) | On |
-
 ## Embedded content
 
 | Setting | Description | Default value |
