@@ -47,7 +47,7 @@ To update the business closures, make sure you have the System Administrator or 
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
 | Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. More information: [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## AI Builder
 
