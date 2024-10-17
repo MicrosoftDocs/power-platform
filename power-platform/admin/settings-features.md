@@ -116,6 +116,7 @@ To update the business closures, make sure you have the System Administrator or 
 | Enable the modern read-only grid experience. | If **On**, the Power Apps read-only grid control lets users view and open records from views and subgrids. | On |
 |Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. More information: [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you enabled 2022 Release Wave 1. |  On| 
 |Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. More information: [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor). This setting only appears if you enabled 2022 Release Wave 1.| On |
+|Enable focused view for all records. | Focused view allows you to view and manage account, contact, lead, opportunity, and other records and their associated activities on one page. Learn more in [View and manage records in focused view](/dynamics365/sales/focused-view). | On |
 
 ## Advanced find options
 
