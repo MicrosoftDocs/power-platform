@@ -4,10 +4,10 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/02/2024
+ms.date: 10/17/2024
 ms.subservice: admin
-ms.author: cvassallo
-ms.reviewer: angieandrews
+ms.author: sericks
+ms.reviewer: sericks
 contributors:
     - V-Camille
     - jasongr
@@ -36,14 +36,18 @@ To update the business closures, make sure you have the System Administrator or 
 
 ## Copilot (preview)
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
 > [!NOTE]
 > Turning off Copilot in Power Apps for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot). 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable new AI-powered Copilot features for people who make apps. In addition, enable the AI prompts feature (preview). | When **On**, enables preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. For more information, see [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are enabled by default and can't be turned off. To disable them, a tenant admin must  [contact support](get-help-support.md).| On |
-| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. (preview)<br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
-Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. More information: [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
+| Enable new AI-powered Copilot features for people who make apps. | When **On**, enables preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. For more information, see [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are enabled by default and can't be turned off. To disable them, a tenant admin must  [contact support](get-help-support.md).| On |
+| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
+| Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. More information: [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 ## AI Builder
 
