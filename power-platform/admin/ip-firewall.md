@@ -45,14 +45,16 @@ You can enable the IP firewall in a Power Platform environment by using either P
 1. Select **Environments**, and then select an environment.
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, set **Enable IP address based firewall rule** to **On**.
-1. Under **Allowed list of IPv4 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges.
+1. Under **Allowed list of IPv4/IPv6 ranges**, specify the allowed IP ranges in classless interdomain routing (CIDR) format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632). If you have multiple IP ranges, separate them with a comma. This field accepts up to 4,000 alphanumeric characters and allows a maximum of 200 IP ranges. IPv6 addresses are allowed both in hexadecimal and compressed format.
 1. Select other settings, as appropriate:
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
    - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it will only block third-party application users.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
-   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both IP-based cookie binding and the IP firewall.
+   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](/admin/block-cookie-replay-attack) and the IP firewall. Reach out to your network administrator to get the "reverse proxy IP address"
+     > [!NOTE]
+     > Reverse proxy must be configured to send client IP address in forwarded header.
 
 1. Select **Save**.
 
@@ -193,7 +195,7 @@ Make sure your reverse proxy is configured to send the client IP address in the 
 IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key [(BYOK)](manage-encryption-key.md) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md). To migrate from BYOK to customer-managed key (CMKv2), follow the steps in [Migrate bring-your-own-key (BYOK) environments to customer-managed key](cmk-migrate-from-byok.md).
 
 ### Does IP firewall support IPv6 IP ranges?
-Currently, IP firewall doesn't support IPv6 IP ranges.
+Yes, IP firewall supports IPv6 IP ranges.
 
 ## Next steps
 
