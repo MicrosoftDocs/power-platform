@@ -4,7 +4,7 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/17/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -24,7 +24,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 |Settings|Description| Default value |
 |--------------|-----------------|-----|  
-|Model-driven apps release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at any time and users are switched after one to two browser refreshes. Learn more at [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview).   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. Learn more at [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel). | 
+|Model-driven app release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at any time and users are switched after one to two browser refreshes. Learn more at [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview).   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. Learn more at [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel). | 
 
 ## Basic behavior
 
