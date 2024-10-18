@@ -26,6 +26,7 @@ This checklist presents a set of recommendations to help you optimize experience
 | &#9744; | [XO:07](visual-design.md) | **Optimize user perception and aesthetics.** Create visually appealing and engaging experiences that resonate with workload users. |
 | &#9744; | [XO:08](interaction-design.md) | **Follow interaction design best practices.** Ensure seamless communication between users and the workload. Guide users through tasks effectively. Help users maintain context. |
 | &#9744; | [XO:09](user-interface-content.md) | **Write task-focused content in a professional tone.** Content is the primary mode of communication and should provide clear direction. Use an approachable, professional tone and provide meaningful content that facilitates success. |
+| &#9744; | [XO:10](conversation-design.md) | **Design conversations that align with users' needs and help the AI accomplish its objectives.** Create natural interactions that feel inutitive and human-like. Make it clear what the AI can do. |
 
 ## Next steps
 
