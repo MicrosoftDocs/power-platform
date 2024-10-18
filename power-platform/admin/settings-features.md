@@ -109,6 +109,14 @@ To update the business closures, make sure you have the System Administrator or 
 | Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. More information: [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
 | Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema will be turned **On** for all environments without the option to disable the feature. We recommend that you enable the feature in advance so users can benefit from the product enhancements that come with it. More information: [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
 
+## Desktop flow run action logs configuration
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Activation status of run action logs.| Defines when desktop flow run action logs should be captured and even allows you to turn them off completely. More information: [Desktop flow action logs configuration](/power-automate/desktop-flows/configure-desktop-flow-logs). | Enabled |
+| Action logs version.| The Action logs version allows you to choose V1, V2, or both. More information: [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version).   | V1 |
+| FlowLogs entity time to live in minutes | Determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. More information: [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version). | 40320 |
+
 ## Grids and views
 
 | Setting | Description | Default value |
