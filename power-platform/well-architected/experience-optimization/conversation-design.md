@@ -15,7 +15,7 @@ ms.topic: conceptual
 |[XO:10](checklist.md)| **Design conversations that align with users' needs and help the AI accomplish its objectives. Create natural interactions that feel inutitive and human-like. Make it clear what the AI can do.** |
 |---|---|
 
-This guide describes the recommendations for designing conversation interfaces. Conversation design is the process of creating structured, intuitive, and natural dialogues between users and AI. It involves crafting the flow of interactions, ensuring the AI understands user intent, responds effectively, and guides the user toward their goals. Good conversation design enhances the user experience by making interactions feel more human-like and seamless, which increases user engagement and satisfaction.
+This guide describes the recommendations for designing the user experience for conversational AI. Conversation design is the process of creating structured, intuitive, and natural dialogues between users and AI. It involves crafting the flow of interactions, ensuring the AI understands user intent, responds effectively, and guides the user toward their goals. Good conversation design enhances the user experience by making interactions feel more human-like and seamless, which increases user engagement and satisfaction.
 
 ## Key design strategies
 
