@@ -19,6 +19,8 @@ This guide describes the recommendations for designing conversation interfaces.
 
 ## Key design strategies
 
+Conversation design focuses on creating human-like, user-friendly interactions between people and AI systems, ensuring smooth, natural communication while helping users achieve their goals efficiently.
+
 ### Understand the user's intent
 
 When the AI recognizes and responds to intent appropriately, it helps avoid dead ends and frustration, making the conversation more fluid and effective. Understanding user intent plays a crucial role in designing a conversation because it ensures the AI interprets and responds accurately to user needs.
@@ -27,15 +29,15 @@ Start with identifying what users want to achieve. Map out key intents for your 
 
 ### Explain the capabilities of the AI
 
-Be upfront about the AI’s capabilities. For example, if the AI is only able to perform specific tasks, make sure this is communicated early in the interaction. Help the user understand what the AI is capable of doing.
-
-Users should understand why the AI provides certain suggestions or outputs. Adding explanations or suggestions for the AI’s recommendations will increase user trust.
+Be upfront about the AI’s capabilities. For example, if the AI is only able to perform specific tasks, make sure this is communicated early in the interaction. Help the user understand what the AI is capable of doing. Make sure users understand why the AI provides certain suggestions or outputs. Adding explanations or suggestions for the AI’s recommendations will increase user trust.
 
 ### Optimize how the AI interprets input
 
 At the core of any conversational AI is the ability to understand human language accurately. Conversational AI relies on natural language understanding to discern the user's intent, so optimizing how the AI interprets user input ensures that the AI correctly understand the intent, even when users phrase things in unexpected ways. Design responses that sound natural and how people communicate.
 
 Anticipate various ways users might phrase their requests and structure the AI's responses to accomodate different intents. Allow the AI to handle both structured commands and open-ended questions, ensuring users feel understood, regardless of how they phrase their requests.
+
+For more complex user inputs, break down the conversation into manageable steps, guiding users through a series of questions or actions that resolve their issue without overwhelming them.
 
 ### Guide the user through interactions
 
@@ -51,7 +53,13 @@ Design strategies for when the AI doesn’t understand a user input. Instead of 
 
 ## Power Platform facilitation
 
+Todo: Describe Copilot features and link to documentation or guidance.
 
+- Pre-built models
+- Customization
+- In-app assistance
+- Pre-built error management
+- Handling unexpected user input
 
 ## Experience Optimization checklist
 
