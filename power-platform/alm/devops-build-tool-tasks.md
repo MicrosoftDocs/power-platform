@@ -706,7 +706,6 @@ steps:
     CopyType: MinimalCopy
     OverrideFriendlyName: true
     FriendlyName: 'Contoso Test'
-    DisableAdminMode: false
 ```
 
 #### Parameters (Copy-env)
