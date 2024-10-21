@@ -12,7 +12,7 @@ ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
-# Building Power Platform Applications Integrated with SAP
+# Building integrated Power Platform Applications for SAP Consultants
 
 SAP Consultants can leverage Microsoft Power Platform to build applications that seamlessly integrate with SAP systems. This integration enables the creation of copilots, apps, workflows, and websites that enhance business processes by utilizing SAP data.
 
