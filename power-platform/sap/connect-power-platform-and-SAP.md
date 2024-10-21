@@ -27,6 +27,8 @@ The [SAP OData Connector](/connectors/sapodata/) can consume data from across th
 
 Both connectors support data encryption in motion. Encryption from the gateway to SAP is supported by SAP SNC.
 
+Setup of the integration requires a small Windows virtual machine (VM) with at least 8GB of RAM for the On-Premises Data Gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
+
 Learn more:
  - [SAP ERP Connector](/connectors/saperp/)
  - [SAP OData Connector](/connectors/sapodata/)

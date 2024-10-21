@@ -69,7 +69,7 @@ sections:
     - componentType: icon-card
       title: Power Platform app maker
       summary: "Work with TCodes, BAPIs, and complex JSON structures."
-      url: https://www.microsoft.com/
+      url: /power-platform/sap/guides/roles-guidance/power-platform/power-platform-app-maker.md
       icon:
         componentType: image
         src: /power-platform/sap/guides/media/index-page/power_platform_app_maker.svg
