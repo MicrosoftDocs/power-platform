@@ -76,14 +76,14 @@ First, go to the **Personal Productivity** group and select the **Rules** tab.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
 
-**For custom copilots and copilot extensions**
-1. Select the **Sharing Copilots with Editor permissions** rule to open its configuration panel.
-2. Ensure that **Let people grant Editor permissions when copilots and extensions are shared** is unselected.
+**For custom agents and Microsoft 365 Copilot agents**
+1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
+2. Ensure that **Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared** is unselected.
 3. Select **Save**.
-4. Select the **Sharing Copilots with Viewer permissions** rule to open its configuration panel.
-5. Select **Let people grant Viewer permissions when copilots and extensions are shared**.
+4. Select the **Sharing agents with Viewer permissions** rule to open its configuration panel.
+5. Select **Let people grant Viewer permissions when Microsoft 365 Copilot agents and custom agents are shared**.
 6. Select **Only share with individuals (no security groups)**.
-7. Select **Limit the number of viewers who can access each copilot and extension** and enter the desired number of Viewers you would like to have on the copilot.
+7. Select **Limit the number of viewers who can access each Microsoft 365 Copilot agent and custom agent** and enter the desired number of Viewers you would like to have on the copilot.
 8. Select **Save** .
 
 Repeat these steps until all desired rules are configured and select **Publish rules**.
