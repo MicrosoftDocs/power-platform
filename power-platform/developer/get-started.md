@@ -4,7 +4,7 @@ description: "Overview of how developers can extend Power Platform."
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.custom: ""
+ms.custom: "ai-learning-hub"
 ms.date: 09/23/2024
 ms.reviewer: jdaly
 ms.topic: "article"
