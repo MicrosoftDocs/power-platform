@@ -4,7 +4,7 @@ description: Power Apps mobile application data related to offline synchronizati
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/10/2024
+ms.date: 10/16/2024
 author: JonBaker007
 ms.subservice: admin
 ms.author: jobaker
@@ -27,48 +27,48 @@ This data goes into the **Power Apps (Preview)** > **Mobile app synchronization 
 
 ## Mobile app synchronization and action event definitions
 
-- **id**: Event ID.
-- **target**: Name of the scenario tracked by the event.
-- **type**: Source table of the event.
-- **name**: Name of the scenario tracked by the event.
-- **success**: Result of the scenario tracked by the event (values SUCCESS or FAILURE).
-- **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive.
-- **FailureType**: Defines type of sync failure.
-- **ErrorCode**: Error Code generated upon sync failure. See [Error code mapping table](#error-code-mapping).
-- **operation_Id**: Unique identifier for the session.
-- **operation_ParentId**: Unique identifier for the scenario tracked by the event.
-- **user_Id**: Microsoft Entra user ID.
-- **user_AuthenticatedId**: Microsoft Entra user ID.
-- **application_Version**: Version of the app.
+- **Id**: Event ID.
+- **Target**: Name of the scenario tracked by the event.
+- **Type**: Source table of the event.
+- **Name**: Name of the scenario tracked by the event.
+- **Duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive.
+- **Operation_Id**: Unique identifier for the session.
+- **Operation_ParentId**: Unique identifier for the scenario tracked by the event.
+- **User_Id**: Microsoft Entra user ID.
+- **User_AuthenticatedId**: Microsoft Entra user ID.
+- **Application_Version**: Version of the app.
 - **customDimensions**: Contains the following attributes:
+     - **"EventName"**: Summary of the scenario tracked by the event (ScenarioEnd).
+     - **"ScenarioResult"**: SUCCESS or FAILURE.
+     - **ErrorCode**: Error code generated upon sync failure. Learn more in [Error code mapping table](#error-code-mapping).
+     - **ErrorMessage**: Empty on success or string describing the error.
+     - **FailureType**: Defines type of sync failure.
+     - **LogLevel**: The severity or reporting level of the event. Valid values are _info_, _error_, _warning_, _error_, or _verbose_.
+     - **DataSyncMode**: What type of offline sync the user has experienced.
+        - DELTA_SYNC: Automatic incremental sync.
+        - GRID_SYNC: Triggered by a refresh on a grid view.
+        - FIRST_SYNC: Initial sync on a device (or after a signout/reconfigure).
+        - FORCED_SYNC: Triggered from the Device Status page button.
+        - SINGLE_RECORD_SYNC: Triggered by Push notification.
+     - **AppFlavor**: Native app installed on the devices. Valid values are FieldService and PowerApps.
+     - **AppInfo_Version**: Version of the native app, as seen in the app store.
+     - **ActiveDuration**: Scenario duration in milliseconds including only time while the app is active.
+     - **DeviceInfo_Id**: Unique identifier of the device.
+     - **DeviceInfo_model**: Device model (such as iPhone 13).
+     - **DeviceInfo_make**: Device make (such as Apple).
+     - **DeviceInfo_OsName**: Device operating system (such as Android).
+     - **DeviceInfo_OsVersion**: Operating system version (such as Android 13).
+     - **Loc_country**: Telemetry device origin.
      - **eventContext**: Contains the following properties:
-        - **CurrentSyncId**: Identifier for the current sync session, which may span multiple app sessions.
-        - **DataSyncStatus**: (No value provided.)
+        - **CurrentSyncId**: ID of a successful sync pass. Reset after each successful sync. (It isn't reset after an error.)
+        - **CurrentActivityId**: ID of the sync pass. Reset after each sync.
         - **entityName**: Name of the table in data download events.
-        - **hasNetworkTimeouts**: Flag indicating whether any HTTP calls failed with network timeouts in the current sync.
-        - **DataSyncStatus**: JSON object containing detailed status of a sync, including details about the data downloaded to the device.
         - **ProfileId**: ID of the offline profile configured for the app and user.
-        - **recordCount**: Number of records downloaded.
-        - **responseSize**: Response size of an HTTP request.
-    - **appInfo_Version**: Version of the native app, as seen in the app store.
-    - **activeDuration**: Scenario duration in milliseconds including only time while the app is active.
-    - **offlineSyncFcbs**: Features activated or deactivated for the offline sync.
-    - **deviceInfo_Id**: Unique identifier of the device.
-    - **deviceInfo_model**: Device model (such as iPhone 13).
-    - **deviceInfo_make**: Device make (such as Apple).
-    - **deviceInfo_OsName**: Device operating system (such as Android).
-    - **deviceInfo_OsVersion**: Operating system version (such as Android 13).
-    - **"eventName"**: Step of the scenario tracked by the event (ScenarioEnd, ScenarioStart, ScenarioStory, Trace, AggregateTrace, AggregatedTrace, trace, ScenarioDuplicateEnd).
-    - **logLevel**: The severity or reporting level of the event. Valid values are info, error, warning, error, verbose.
-    - **scenarioGuid**: Unique identifier for the scenario tracked by the event.
-    - **dataSyncMode**: What type of offline sync the user has experienced.
-        - DELTA_SYNC
-        - GRID_SYNC
-        - FIRST_SYNC
-        - FORCED_SYNC
-        - SINGLE_RECORD_SYNC
-    - **appFlavor**: Native app installed on the devices. Valid values are FieldService and PowerApps.
-    - **loc_country**: Telemetry device origin.
+        - **RecordCount**: Number of records downloaded.
+        - **ResponseSize**: Incoming payload data size as reported by HTTPClient (compressed size).
+        - **ContentLength**: Incoming payload data size as reported by HTTPClient (compressed size).
+
+
 
 ## Unified Client Interface failure events
 
