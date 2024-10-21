@@ -4,7 +4,7 @@ description: Manage email notifications
 author: karacortez
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/24
+ms.date: 10/21/2024
 ms.subservice: admin
 ms.author: kacortez
 ms.reviewer: sericks
