@@ -284,8 +284,6 @@ The property `AadGroupCanvasConfiguration` in the *customDeploymentConfiguration
 
    - Get the Microsoft Entra group ID from the **Group** page in the Azure portal.
 
-      :::image type="content" source="media/setup-almacceleratorpowerplatform-deployment-config/aadobjectid.png" alt-text="Screenshot of a Microsoft Entra group ID, highlighted in a disabled text box next to the Object ID label.":::<!-- EDITOR'S NOTE: Please crop the screenshot IAW our [screenshot guidelines](/bacx/screenshots-for-bap?branch=main) -->
-
 1. Edit the *customDeploymentSettings.json* file and paste the IDs in the `AadGroupCanvasConfiguration` property, as in the following example code:
 
    ```json

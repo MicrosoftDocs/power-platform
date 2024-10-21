@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/19/2024
+ms.date: 10/21/2024
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -128,7 +128,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 ## Surface your organization’s governance error content 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed to users. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
-### See also
+### Related content
 [Managed Environments overview](managed-environment-overview.md) <br />
 [Enable Managed Environments](managed-environment-enable.md)  <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />

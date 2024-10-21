@@ -79,7 +79,13 @@
               href: pipelines.md
               displayName: release management change management deploy solutions
             - name: Set up pipelines
-              href: set-up-pipelines.md
+              items:
+                - name: Overview of setting up pipelines
+                  href: set-up-pipelines.md
+                - name: Create a personal pipeline using the platform host
+                  href: platform-host-pipelines.md
+                - name: Create a pipeline using a custom pipelines host
+                  href: custom-host-pipelines.md
             - name: Extend pipelines
               items:
                 - name: Overview of extending pipelines
@@ -92,6 +98,10 @@
               href: run-pipeline.md
             - name: Enable cross-geo solution deployments
               href: enable-cross-geo-solution-deployments.md
+            - name: Import solutions from a pipelines host
+              href: import-from-pipelines-host.md
+            - name: Set a default pipelines host
+              href: set-a-default-pipelines-host.md
             - name: Redeploy past solution versions
               href: redeploy-past-solution-versions.md
             - name: Use Copilot to generate deployment notes in pipelines

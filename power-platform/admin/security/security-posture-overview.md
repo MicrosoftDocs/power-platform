@@ -1,5 +1,5 @@
 ---
-title: Manage security
+title: Manage security (preview)
 description: Learn how to manage security in the Power Platform admin center with security features available to run your organizational workloads in the safest way possible.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,13 +12,20 @@ search.audienceType:
   - admin
 ---
 
-# Manage security
+# Manage security (preview)
+
+[This article is prerelease documentation and is subject to change.]
                                                   
 The **Security** page in the Power Platform admin center helps you manage security in your organization with best practices and a comprehensive set of security features in the safest way possible. You can use this page to:
 
 - **Assess your security status**: Understand and improve your organization’s security policies specific to your needs. 
 - **Act on recommendations**: Identify and act on the top-most, impactful recommendations to improve the assessment. 
 - **Set up proactive policies**: Use the rich set of tools and security capabilities available to gain deep visibility, detect threats, and proactively set policies in place to help safeguard the organization from vulnerabilities and risks.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are subject to [supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2189520), and are available before an official release so that customers can get early access and provide feedback.
 
 ## Prerequisite
  

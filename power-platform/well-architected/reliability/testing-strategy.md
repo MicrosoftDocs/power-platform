@@ -4,7 +4,7 @@ description: Learn how to establish a reliability testing strategy that tests re
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -72,7 +72,7 @@ Use every outage incident as an opportunity to learn more about your workload an
 
 1. Get the workload back online for your users. You might need to perform a workaround for the issue, resolve the issue, or initiate the recovery processes.
 
-1. Determine the root cause of the outage and address it. If you can fix the root cause as part of the investigation, document the root cause and the measures that you took to fix it. If the issue requires taking another maintenance window later, ensure that your mitigation measures can handle the expected load by thoroughly testing it<!-- EDITOR'S NOTE: Does "it" refer to the expected load? If it refers to the mitigation measure, replace "it" with "them." -->. Ensure that you have set up sufficient monitoring to cover your mitigation measures.
+1. Determine the root cause of the outage and address it. If you can fix the root cause as part of the investigation, document the root cause and the measures that you took to fix it. If the issue requires taking another maintenance window later, ensure that your mitigation measures can handle the expected load by thoroughly testing them. Ensure that you have set up sufficient monitoring to cover your mitigation measures.
 
 1. If applicable, look for the same issue, or configuration weaknesses that might be affected by similar issues, across all the components in your workload. Use this opportunity to proactively address those components. Consult your incident history to detect patterns of similar issues across your workload.
 
@@ -140,13 +140,15 @@ Integrate the following recommendations and considerations to optimize your chao
 
 ## Power Platform facilitation
 
-You can use static results in Power Automate to return a fixed result to test your workload.<!-- EDITOR'S NOTE: Is there an article to link to for this? Is it Logic Apps we want to target: /azure/logic-apps/test-logic-apps-mock-data-static-results?tabs=consumption -->
+You can use [static results in Power Automate](/azure/logic-apps/test-logic-apps-mock-data-static-results?tabs=consumption#set-up-mock-outputs-on-an-action) to return a fixed result to test your workload.
 
 [Power Apps Test Engine (preview)](/power-apps/developer/test-engine/overview) is a Power Platform CLI component that you can use to test standalone canvas apps in Power Apps.
 
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 
 If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio), a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
+
+If your workload includes a Microsoft Copilot Studio copilot, you can use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure copilots and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the copilot responses are evaluated against expected results.
 
 ## Reliability checklist
 

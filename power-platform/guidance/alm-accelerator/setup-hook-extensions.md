@@ -1,7 +1,7 @@
 ---
 title: Configure pipeline extension points
 description: Learn how to use extension points to customize your deployment pipelines in the ALM Accelerator for Power Platform.
-mms.topic: how-to
+ms.topic: how-to
 ms.date: 04/07/2023
 ms.subservice: guidance
 author: jenschristianschroder

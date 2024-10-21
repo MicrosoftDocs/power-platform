@@ -5,6 +5,7 @@ author: tverhasselt
 contributors:
   - microsoft-george
   - nghiemdoan-msft
+  - EllenWehrle
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
