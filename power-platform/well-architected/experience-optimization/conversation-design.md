@@ -61,6 +61,8 @@ Copilot Studio includes [pre-built entities](/microsoft-copilot-studio/advanced-
 
 You can use [agent templates](/microsoft-copilot-studio/template-fundamentals) as a starting point and customize them for your workload's users' needs.
 
+[Provide custom instructions](/microsoft-copilot-studio/nlu-generative-answers-prompt-modification) to your copilot with prompt modification.
+
 [Configure the fallback topic](/microsoft-copilot-studio/authoring-system-fallback-topic) that a copilot can use when it doesn't understand a user's input or cannot handle the request.
 
 ## Additional information
