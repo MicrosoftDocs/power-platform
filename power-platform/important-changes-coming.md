@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of Organization Insights Dashboard
 
-The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Soltion dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
 
 As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
