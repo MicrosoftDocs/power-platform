@@ -47,7 +47,7 @@ For more complex user inputs, break down the conversation into manageable steps,
 
 Conversation flows determine how the conversation progresses depending on what the user says or chooses. The goal of a good conversation flow is to guide the user through the interaction smoothly. Design a conversation flow that maps out possible interactions and decision trees based on user inputs.
 
-In a good conversation, there's a natural back-and-forth between participants.Conversation design ensures that the AI knows when to ask questions, when to provide infromation, and when to prompt the user for further clarification or action. Design the conversation flow to manage transitions gracefully.
+In a good conversation, there's a natural back-and-forth between participants.Conversation design ensures that the AI knows when to ask questions, when to provide information, and when to prompt the user for further clarification or action. Design the conversation flow to manage transitions gracefully.
 
 ### Design fallback mechanisms
 
@@ -57,17 +57,17 @@ Design strategies for when the AI doesn’t understand a user input. Instead of 
 
 ## Power Platform facilitation
 
-Copilot Studio includes pre-built entities that are designed to understand common user intents. You can map user intents (such as scheduling meetings, retrieving documents, generating reports, etc.) using these built-in capabilities. Copilot Studio can suggest tasks and actions to users proactively, based on historical data and patterns.
+Copilot Studio includes [pre-built entities](/microsoft-copilot-studio/advanced-entities-slot-filling) that are designed to understand common user intents. You can map user intents using these built-in entities.
 
-- Pre-built models
-- Customization
-- In-app assistance
-- Pre-built error management
-- Handling unexpected user input
+You can use [agent templates](/microsoft-copilot-studio/template-fundamentals) as a starting point and customize them for your workload's users' needs.
+
+[Configure the fallback topic](/microsoft-copilot-studio/authoring-system-fallback-topic) that a copilot can use when it doesn't understand a user's input or cannot handle the request.
 
 ## Additional information
 
 - [Intelligent application workload](../intelligent-application/overview.md)
+- [Introduction to conversational experiences](/microsoft-copilot-studio/guidance/cux-overview)
+- [Conversational AI best practices](/microsoft-copilot-studio/guidance/project-best-practices)
 
 ## Experience Optimization checklist
 
