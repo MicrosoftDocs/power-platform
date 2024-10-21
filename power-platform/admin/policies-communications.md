@@ -25,7 +25,7 @@ For each of these scenarios, communication is provided through the Microsoft 365
   
 - If you want to add additional recipients to receive email communications, learn more in [Manage email notifications to admins](manage-email-notifications.md).
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
   
 ## Scheduled system updates and maintenance
