@@ -69,7 +69,7 @@ sections:
     - componentType: icon-card
       title: Power Platform app maker
       summary: "Work with TCodes, BAPIs, and complex JSON structures."
-      url: /power-platform/sap/guides/roles-guidance/power-platform-app-maker.md
+      url: /power-platform/sap/guides/roles-guidance/power-platform-app-maker
       icon:
         componentType: image
         src: /power-platform/sap/guides/media/index-page/power_platform_app_maker.svg
@@ -83,7 +83,7 @@ sections:
     - componentType: icon-card
       title: Governance administrator
       summary: "Govern and secure Power Platform and SAP integration."
-      url: /power-platform/sap/guides/roles-guidance/governance-administrator.md
+      url: /power-platform/sap/guides/roles-guidance/governance-administrator
       icon:
         componentType: image
         src: /power-platform/sap/guides/media/index-page/governance_administrator.svg
@@ -97,14 +97,14 @@ sections:
     - componentType: icon-card
       title: SAP consultant
       summary: "Build Power Apps integrated with SAP"
-      url: /power-platform/sap/guides/roles-guidance/sap-consultant.md
+      url: /power-platform/sap/guides/roles-guidance/sap-consultant
       icon:
         componentType: image
         src: /power-platform/sap/guides/media/index-page/sap_technical_consultant.svg
     - componentType: icon-card
       title: SAP Basis administrator
       summary: "Automate administration with Copilots and learn integration with SAP details."
-      url: /power-platform/sap/guides/roles-guidance/sap-basis-administrator.md
+      url: /power-platform/sap/guides/roles-guidance/sap-basis-administrator
       icon:
         componentType: image
         src: /power-platform/sap/guides/media/index-page/sap_basis_administrator.svg
