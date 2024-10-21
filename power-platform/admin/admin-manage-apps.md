@@ -154,10 +154,7 @@ After admins associate authentication contexts to Conditional Access policies in
 > [!div class="mx-imgBorder"] 
 > ![Azure Portal Authentication Context ID](media/admin-manage-apps/power_apps_authentication_context_id.png "Azure Portal Authentication Context id.")
 
-End users that don't meet Conditional Access policy requirements will observe the following dialog after signing in to access an app. 
-
-> [!div class="mx-imgBorder"] 
-> ![Conditional Access enforcement experience](media/admin-manage-apps/power_apps_conditional_access_AAD_dialog.png "Conditional Access enforcement experience" )
+End users that don't meet Conditional Access policy requirements receive an error message that indicates they don't have access.
 
 The following table reflects conditional access on granular apps support:
 

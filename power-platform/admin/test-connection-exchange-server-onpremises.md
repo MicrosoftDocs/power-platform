@@ -45,8 +45,6 @@ To help diagnose the problem, let's first eliminate the connection to Exchange S
 
 3. Fill in remaining values as appropriate and select **Perform Test**.
 
-   :::image type="content" source="media/remote-connectivity-analyzer.png" alt-text="Microsoft Remote Connectivity Analyzer.":::
-
 ### Test results
 
 If the connectivity test is **not** successful, the issue might not be with Dynamics 365 Online but could be with Microsoft Exchange on-premises configuration. The next step is to revisit your Microsoft Exchange server configuration and if necessary contact [Microsoft Exchange on-premises support](https://support.serviceshub.microsoft.com/supportforbusiness/onboarding?origin=%2Fsupportforbusiness%2Fmanage%3Fstate%3Dopen).  

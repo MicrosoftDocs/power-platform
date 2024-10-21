@@ -6,7 +6,7 @@ ms.date: 12/22/2023
 author: vamseedillimsft
 ms.subservice: admin
 ms.author: vamseedilli
-ms.reviewer: kkendrick 
+ms.reviewer: dmartens 
 search.audienceType: 
   - admin
 ---

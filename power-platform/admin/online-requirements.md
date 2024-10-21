@@ -83,8 +83,6 @@ The IP address values in these JSON files are grouped by service tags that defin
 
 For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. For real-time collaboration features, you must add the IP address values specified under the `MicrosoftAzureFluidRelay` service tag.
 
-:::image type="content" source="media/ip-example.png" alt-text="PowerPlatformInfra service tag for Power Platform IPs":::  
-
 If you are using *Power Platform connectors*, see the complete list of required IP addresses in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
 
 > [!NOTE]

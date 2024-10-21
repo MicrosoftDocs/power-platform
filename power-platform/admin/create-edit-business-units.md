@@ -1,10 +1,10 @@
 ---
-title: "Create or edit business units (preview) | MicrosoftDocs"
+title: Create or edit business units 
 description: Learn how to create or edit business units 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/12/2024
+ms.date: 09/19/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
 - paulliew 
 ---
-# Create or edit business units (preview)
+# Create or edit business units 
 
 A business unit is a logical grouping of related business activities.
 

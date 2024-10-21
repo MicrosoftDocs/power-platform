@@ -4,7 +4,7 @@ description: Learn how to establish standards for your software ideation and pla
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -80,6 +80,8 @@ Although there are no Power Platform products that directly facilitate this reco
 - [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards)
 - [User support strategy](/power-platform/guidance/adoption/support-strategy-solutions)
 - [Measuring the business value of Power Platform solutions](/power-platform/guidance/adoption/business-value)
+- [Planning a conversational AI project](/microsoft-copilot-studio/guidance/project-best-practices)
+- [Business value toolkit](/power-platform/guidance/coe/business-value-toolkit)
 
 ## Next steps
 

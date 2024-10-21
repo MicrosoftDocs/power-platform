@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI copilot command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI copilot command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: devkeydet
-ms.author: marcsc
-ms.date: 7/8/2024
+author: laneswenka
+ms.author: laswenka
+ms.date: 8/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,21 +26,21 @@ Tools and utilities for copilot management
 
 |Command|Description|
 |---------|---------|
-|[pac copilot create](#pac-copilot-create)|Creates a new bot using an existing template file as the reference.|
-|[pac copilot extract-template](#pac-copilot-extract-template)|Extracts a template file from an existing bot in an environment.|
+|[pac copilot create](#pac-copilot-create)|Creates a new copilot using an existing template file as the reference.|
+|[pac copilot extract-template](#pac-copilot-extract-template)|Extracts a template file from an existing copilot in an environment.|
 |[pac copilot extract-translation](#pac-copilot-extract-translation)|Extracts file containing localized content for one or more bots.|
-|[pac copilot list](#pac-copilot-list)|List of Virtual Agents in the current or target Dataverse environment.|
+|[pac copilot list](#pac-copilot-list)|List of copilots in the current or target Dataverse environment.|
 |[pac copilot merge-translation](#pac-copilot-merge-translation)|Merge files containing localized content for one or more bots.|
 |[pac copilot model list](#pac-copilot-model-list)|AI Builder models in the current environment.|
 |[pac copilot model predict](#pac-copilot-model-predict)|Sends text or prompt to AI Model|
 |[pac copilot model prepare-fetch](#pac-copilot-model-prepare-fetch)|Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.|
 |[pac copilot publish](#pac-copilot-publish)|Publish a Custom Copilot|
-|[pac copilot status](#pac-copilot-status)|Poll the deployment status of a specified Virtual Agent in the current or target Dataverse environment.|
+|[pac copilot status](#pac-copilot-status)|Poll the deployment status of a specified copilot in the current or target Dataverse environment.|
 
 
 ## pac copilot create
 
-Creates a new bot using an existing template file as the reference.
+Creates a new copilot using an existing template file as the reference.
 
 [!INCLUDE [copilot-create-intro](includes/copilot-create-intro.md)]
 
@@ -49,11 +49,11 @@ Creates a new bot using an existing template file as the reference.
 
 #### `--displayName`
 
-The display name of the new bot
+The display name of the new copilot
 
 #### `--schemaName`
 
-The schema name (unique name) of the new bot.
+The schema name (unique name) of the new copilot.
 
 #### `--solution` `-s`
 
@@ -61,7 +61,7 @@ Name of the solution.
 
 #### `--templateFileName`
 
-Source yaml file containing the bot template that was extracted using the extract-template command.
+Source yaml file containing the copilot template that was extracted using the extract-template command.
 
 
 ### Optional Parameters for copilot create
@@ -74,7 +74,7 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 ## pac copilot extract-template
 
-Extracts a template file from an existing bot in an environment.
+Extracts a template file from an existing copilot in an environment.
 
 [!INCLUDE [copilot-extract-template-intro](includes/copilot-extract-template-intro.md)]
 
@@ -83,11 +83,11 @@ Extracts a template file from an existing bot in an environment.
 
 #### `--bot` `-id`
 
-The Chatbot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+The Copilot ID or schema name (unique name found in Bot Details or file name in solution explorer).
 
 #### `--templateFileName`
 
-Location of the yaml file to write the bot template to.
+Location of the yaml file to write the copilot template to.
 
 
 ### Optional Parameters for copilot extract-template
@@ -121,7 +121,7 @@ This parameter requires no value. It's a switch.
 
 #### `--bot` `-id`
 
-The Chatbot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+The Copilot ID or schema name (unique name found in Bot Details or file name in solution explorer).
 
 #### `--environment` `-env`
 
@@ -149,7 +149,7 @@ Source solution directory. When specified, will ignore the connected environment
 
 ## pac copilot list
 
-List of Virtual Agents in the current or target Dataverse environment.
+List of copilots in the current or target Dataverse environment.
 
 [!INCLUDE [copilot-list-intro](includes/copilot-list-intro.md)]
 
@@ -284,7 +284,7 @@ Publish a Custom Copilot
 
 #### `--bot` `-id`
 
-The Chatbot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+The Copilot ID or schema name (unique name found in Bot Details or file name in solution explorer).
 
 
 ### Optional Parameters for copilot publish
@@ -297,7 +297,7 @@ Specifies the target Dataverse. The value may be a Guid or absolute https URL. W
 
 ## pac copilot status
 
-Poll the deployment status of a specified Virtual Agent in the current or target Dataverse environment.
+Poll the deployment status of a specified copilot in the current or target Dataverse environment.
 
 [!INCLUDE [copilot-status-intro](includes/copilot-status-intro.md)]
 
@@ -306,7 +306,7 @@ Poll the deployment status of a specified Virtual Agent in the current or target
 
 #### `--bot-id` `-id`
 
-The ID of a Virtual Agent (Chatbot).
+The ID of a copilot (Chatbot).
 
 
 ### Optional Parameters for copilot status

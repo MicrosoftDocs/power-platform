@@ -4,7 +4,7 @@ description: Learn how to establish incident response procedures that reduce the
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -121,6 +121,7 @@ For more information, see:
 
 - [Power Apps activity logging](/power-platform/admin/logging-powerapps)
 - [Power Automate activity logging](/power-platform/admin/logging-power-automate)
+- [Copilot Studio activity logging](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages activity logging](/power-platform/admin/logging-power-pages)
 - [Power Platform connector activity logging](/power-platform/admin/connector-events-power-platform)
 - [Data loss prevention activity logging](/power-platform/admin/dlp-activity-logging)
@@ -157,7 +158,7 @@ Ensure that the Azure enrollment portal includes administrator contact informati
 
 Cloud Adoption Framework for Azure provides guidance about incident response planning and security operations. For more information, see [Security operations](/azure/cloud-adoption-framework/secure/security-operations).
 
-## See also
+## Related information
 
 - [Microsoft Sentinel solution for Microsoft Power Platform overview](/azure/sentinel/business-applications/power-platform-solution-overview)
 - [Automatically create incidents from Microsoft security alerts](/azure/sentinel/create-incidents-from-alerts)

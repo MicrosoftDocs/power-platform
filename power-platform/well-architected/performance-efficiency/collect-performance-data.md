@@ -4,7 +4,7 @@ description: Learn how to collect performance data to help you assess the perfor
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -125,11 +125,13 @@ Your performance data should align with the performance targets. The data needs 
 
 ## **Power Platform facilitation**
 
-**Collecting application performance data**: [Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) is a feature of Azure Monitor that helps you monitor the performance and availability of your application. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance and Failures](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view)panels. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. You can export [Dataverse and Power Automate data](/power-platform/admin/set-up-export-application-insights) to Application Insights, and [connect your canvas apps](/power-apps/maker/canvas-apps/application-insights) to Application Insights.
+**Collecting application performance data**: [Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) is a feature of Azure Monitor that helps you monitor the performance and availability of your application. The data is stored in Azure Monitor logs by Application Insights, and visualized in [Performance and Failures](/azure/azure-monitor/app/failures-and-performance-views?tabs=failures-view) panels. The data is exported to your Application Insights environment in the standard schema defined by Application Insights. You can export [Dataverse and Power Automate data](/power-platform/admin/set-up-export-application-insights) to Application Insights, [connect your canvas apps](/power-apps/maker/canvas-apps/application-insights) to Application Insights, and capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. 
 
 Application Insights allows you to choose [**Server** and **Browser** data views](/power-platform/admin/overview-integration-application-insights#performance-panel-in-application-insights). By identifying those operations with the longest duration, you can diagnose potential problems.
 
-**Centralizing, segmenting, and retaining performance data:** Microsoft already gathers extensive telemetry on Dataverse, Power Automate cloud flows, and model-driven apps. With [**Application Insights integration**](/power-platform/admin/analyze-telemetry), an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your environment are sent to your Application Insights environment. When you use Application Insights integration, you'll receive a standardized set of telemetry that follows the Application Insights [telemetry data model](/azure/azure-monitor/app/data-model). In addition to this integration, you can also [connect canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights).
+**Use native platform features to analyze performance:** [Analytics in Copilot Studio](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your copilot's performance. It uses artificial intelligence (AI) technology to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. [Performance insights for Power Apps](/power-apps/maker/common/performance-insights-overview) analyze runtime user data and provide a prioritized list of recommendations to help improve the performance of model-driven apps.
+
+**Centralizing, segmenting, and retaining performance data:** Microsoft already gathers extensive telemetry on Dataverse, Power Automate cloud flows, and model-driven apps. With [**Application Insights integration**](/power-platform/admin/analyze-telemetry), an environment or tenant admin provides the Application Insights instrumentation key while setting up the data export process in the Power Platform admin center. As soon as setup is complete, telemetry that Microsoft gathers about your environment are sent to your Application Insights environment. When you use Application Insights integration, you'll receive a standardized set of telemetry that follows the Application Insights [telemetry data model](/azure/azure-monitor/app/data-model). In addition to this integration, you can also [connect canvas apps to Application Insights](/power-apps/maker/canvas-apps/application-insights) and capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights.
 
 **Collecting Azure resource performance data:** Most Azure services generate platform logs and metrics that provide diagnostic and auditing information. By enabling diagnostic settings, you can specify the platform logs and metrics to collect and store.For correlation purposes, enable diagnostics for all supported services and send the logs to the same destination as your application logs.
 
@@ -146,6 +148,7 @@ When you create an alert rule, you can define the criteria that determine when a
 - [Enterprise monitoring with Azure Monitor](/azure/architecture/example-scenario/monitoring/enterprise-monitoring)
 - [Create custom trace events in canvas apps](/power-apps/maker/canvas-apps/application-insights#create-custom-trace-events)
 - [Create custom alerts for cloud flows](/power-platform/admin/app-insights-cloud-flow#create-a-custom-alert)
+- [Analyze copilot performance and usage in Copilot Studio](/microsoft-copilot-studio/analytics-summary)
 
 ## Performance Efficiency checklist
 

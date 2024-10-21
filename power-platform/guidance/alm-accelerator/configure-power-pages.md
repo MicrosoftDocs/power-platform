@@ -105,8 +105,6 @@ Site administrators can use this method. It requires more setup and planning but
 
 1. Select **Clear cache**.
 
-   :::image type="content" source="media/setup-almacceleratorpowerplatform/Portal-Clear-Cache.png" alt-text="Screenshot of the Portal Details page, with the Clear cache option highlighted.":::
-
 1. Refresh the website in your browser to see the changes.
 
 ### See also

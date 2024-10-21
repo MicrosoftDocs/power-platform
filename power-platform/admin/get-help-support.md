@@ -97,13 +97,7 @@ An example of solutions provided for Dynamics 365 App for Outlook issues:
    > [!NOTE]
    > If you have one of the plans listed in [Prerequisites](#prerequisites), you can set the severity to a higher level than **Minimal**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Create a new support request.](media/support-request-page2.png "Create a new support request")
-
 5. If you have a **Unified or Premier** support plan that is not listed, select **Add new contract** and fill in the fields. If you don't know your access or contract ID, please contact your service admin or Incident Manager or Customer Success Account Manager (CSAM).
-
-   > [!div class="mx-imgBorder"] 
-   > ![Premier support info.](media/premier-support.png "Premier support info")
 
 > [!NOTE]
 > - For **Contract ID/Password**, please enter your Unified or Premier contract ID. 

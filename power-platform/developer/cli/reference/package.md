@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI package command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI package command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: devkeydet
-ms.author: marcsc
-ms.date: 7/8/2024
+author: laneswenka
+ms.author: laswenka
+ms.date: 8/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 

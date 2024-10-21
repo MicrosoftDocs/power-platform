@@ -49,10 +49,6 @@ As an admin, you can search for connector events related to connections and cust
 
    :::image type="content" source="./media/audit-logs/connector-events.png" alt-text="Screenshot of the Power Platform connector events.":::
 
-    You'll see the event details, as shown in the following example.
-
-    :::image type="content" source="./media/audit-logs/view-events.png" alt-text="Screenshot of the audit search results.":::
-
 ### Available connector events
 
 The following table lists the connector events available for searching in the audit logs.
@@ -78,8 +74,6 @@ The following table lists the connector events available for searching in the au
 ## Get details on activities for logging
 
 In the **Audit search** screen, you can select the log to view the details of the event in a list to the right.
-
-:::image type="content" source="./media/audit-logs/event-details.png" alt-text="Screenshot of the event details list for the selected log.":::
 
 ### Available logging details
 

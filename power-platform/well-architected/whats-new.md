@@ -6,12 +6,22 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ---
 
 # What's new in Power Platform Well-Architected
 
 Get the latest info about what's new and what's changed in Power Platform Well-Architected.
+
+## September 2024
+
+### Updated articles
+
+Recommendations across all five pillars have been updated to incorporate guidance on implementing Microsoft Copilot Studio features.
+
+### New articles
+
+The [Intelligent application](./intelligent-application/index.yml) workload is now included in Power Platform Well-Architected. This documentation provides guidance around planning, developing, and maintaining intelligent application workloads built on Power Platform. An intelligent application workload applies Power Platform Well-Architected best practices to integrate generative AI for automating and improving business processes.
 
 ## May 2024
 

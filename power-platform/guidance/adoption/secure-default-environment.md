@@ -171,6 +171,8 @@ Here are some potential exceptions to the Exchange rules to block email to add f
 
 - Organization-level allowlist: In this scenario, it makes sense to move the solution into a dedicated environment. If several flows in the environment have to send outbound emails, you can create a blanket exception rule to allow outbound emails from that environment. The maker and admin permission on that environment must be tightly controlled and limited.
 
+For more information about how to set up the appropriate exfiltration rules for Power Platform related email traffic, go to [Email exfiltration controls for connectors](../../admin/block-forwarded-email-from-power-automate.md).
+
 ## Apply cross-tenant isolation
 
 Power Platform has a system of connectors based on Microsoft Entra that enable authorized Microsoft Entra users to connect apps and flows to data stores. Tenant isolation governs the movement of data from Microsoft Entra authorized data sources to and from their tenant.

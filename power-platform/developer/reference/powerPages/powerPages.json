@@ -105,7 +105,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a website",
+                "description": "Location of a resource",
                 "type": "string"
               }
             }
@@ -137,7 +137,7 @@
           "Websites"
         ],
         "summary": "Get the Power Pages website details by specifying its unique identifier (ID).",
-        "description": "Get website details from Website id",
+        "description": "Get website details from Website Id",
         "operationId": "GetWebsiteById",
         "produces": [
           "application/json"
@@ -234,7 +234,7 @@
             "description": "Accepted",
             "headers": {
               "Operation-Location": {
-                "description": "Location of a website",
+                "description": "Location of a resource",
                 "type": "string"
               }
             }
@@ -365,6 +365,253 @@
         "responses": {
           "200": {
             "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/stop": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Stop a Power Pages website.",
+        "description": "Stop the website for the given site id",
+        "operationId": "StopWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/start": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Start a Power Pages website.",
+        "description": "Start the website for the given site id",
+        "operationId": "StartWebsite",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/enableWaf": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Enable Web Application Firewall on a Power Pages website.",
+        "description": "Enable Web Application Firewall on the given website",
+        "operationId": "EnableWAF",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "headers": {
+              "Operation-Location": {
+                "description": "Location of a resource",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/getWafStatus": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get the Web Application Firewall status.",
+        "description": "Get the status of Web Application Firewall associated with the given website",
+        "operationId": "GetWAFStatus",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version",
+            "required": true,
+            "type": "string",
+            "default": "2022-03-01-preview"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/WebApplicationFirewallStatus"
+            }
           },
           "400": {
             "description": "Bad Request",
@@ -617,7 +864,7 @@
           "type": "boolean"
         },
         "applicationUserAadAppId": {
-          "description": "Microsoft Entra ID object unique identifier (ID)",
+          "description": "Azure Active Directory (AAD) object unique identifier (ID)",
           "type": "string"
         },
         "ownerId": {
@@ -655,6 +902,18 @@
           "type": "boolean"
         }
       }
+    },
+    "WebApplicationFirewallStatus": {
+      "description": "Web Application Firewall status",
+      "enum": [
+        "None",
+        "Creating",
+        "Deleting",
+        "Created",
+        "CreationFailed",
+        "DeletionFailed"
+      ],
+      "type": "string"
     }
   },
   "securityDefinitions": {
@@ -662,12 +921,17 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
       "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": [
+        ".default"
+      ]
     }
   ]
 }

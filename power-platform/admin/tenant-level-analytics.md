@@ -49,15 +49,11 @@ The admin doesn't need to be a licensed user. Environment admins gain access to 
 1. Select the **Overview** tab.
 
 1. Select **Enable** to redirect to the **Analytics** pane.
-
-    :::image type="content" source="media/analytics-overview-tab-enble.png" alt-text="Select Enable on the Overview tab.":::
   
     You may also select the **Settings** icon in the upper-right corner of the site, and then select **Power Platform settings**. 
 
 1. In the **Analytics** pane, grant consent for tenant-level analytics by enabling the **Tenant-level analytics** feature.
 
-    :::image type="content" source="media/tenant-level-analytics-terms.png" alt-text="Select Enable to turn on tenant-level analytics.":::
- 
     Once enabled, this feature aggregates data from environments across all regions in your tenant and copies it into the default environment region for tenant-level reporting. A tenant-level administrator role is required for one-time operation of granting consent for tenant-level analytics. 
 
 1. Select **Save**, and then close the form. 

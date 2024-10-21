@@ -133,7 +133,7 @@ Cloud Adoption Framework provides guidance for central teams about how to classi
 
 For more information, see [What is data classification?](/azure/cloud-adoption-framework/govern/policy-compliance/data-classification)
 
-## See also
+## Related information
 
 - [Data classification and sensitivity label taxonomy](/compliance/assurance/assurance-data-classification-and-labels)
 - [Create a well-designed data classification framework](/compliance/assurance/assurance-create-data-classification-framework)

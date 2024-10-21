@@ -1,6 +1,0 @@
-- name: Getting Started with the SAP ERP Connector
-  href: getting-started-with-the-sap-erp-connector.md
-- name: Set up Secure Network Communications(SNC)
-  href: set-up-secure-network-communications.md
-- name: Set up Microsoft Entra ID using certificates(SSO)
-  href: set-up-microsoft-entra-id-with-certificates.md

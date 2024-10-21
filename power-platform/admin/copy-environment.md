@@ -13,9 +13,6 @@ ms.reviewer: sericks
 
 You can use the **Copy** option in the Microsoft Power Platform admin center to copy data between environments. You can select two levels of copy: **Everything** or **Customizations and schemas only**.  
 
-> [!div class="mx-imgBorder"] 
-> ![Copy menu.](media/copy-menu.png "Copy menu")
-
 > [!NOTE]
 > - The target environment will be listed in the **Select environment to overwrite** drop-down. If you don't see an environment, that means you can't overwrite it. For example, you can't overwrite production environments so you won't see any environments of type production.  
 >   :::image type="content" source="media/copy-environment-no-target.png" alt-text="No target for copying environment.":::
