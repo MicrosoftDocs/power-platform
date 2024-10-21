@@ -97,6 +97,7 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 
 #### Add or remove applications from the list
 To **add** an application from the list:
+
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace 'OrgURL' with your own environment URL, then press **Enter**.
 
