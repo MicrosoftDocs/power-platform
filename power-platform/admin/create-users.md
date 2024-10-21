@@ -284,7 +284,7 @@ By default, all licensed users are created with an access mode of **Read-Write**
 
 ## Create an Administrative user account
 
-An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data nor any functionality, the user doesn't require a license (after setup).
+An Administrative user is a user who has access to the Settings and Administration features but has no access to any of the functionality. Use this account to assign administrative users to perform day-to-day maintenance functions (create user accounts, manage security roles, and so on). Because an administrative user doesn't have access to customer data, apps nor any functionality, the user doesn't require a license (after setup).
 
 You need to have the System Administrator security role or equivalent permissions to create an administrative user. First, you create a user account in Microsoft 365, and then in to the customer engagement app, select the **Administrative** access mode for the account.
 
