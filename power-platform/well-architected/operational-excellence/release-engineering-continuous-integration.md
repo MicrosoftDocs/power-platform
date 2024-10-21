@@ -98,7 +98,6 @@ Failed tests should temporarily block a deployment and lead to a deeper analysis
 
 ## Related information
 
-- [Continuous Integration and Continuous Delivery (CI/CD) for Power Platform](https://playbook.microsoft.com/business-applications/FusionOps-for-Power-Platform/DevSecOps/CI-CD/)
 - [Application lifecycle management (ALM) with Microsoft Power Platform](/power-platform/alm/)
 - [Build CI/CD with Azure for Microsoft Power Platform](/azure/architecture/solution-ideas/articles/azure-devops-continuous-integration-for-power-platform)
 - [Power Platform environments](/power-platform/admin/environments-overview)
