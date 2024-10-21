@@ -44,7 +44,7 @@ landingContent:
             url: design-standards.md
           - text: Implement an information architecture
             url: information-architecture.md
-  - title: Optimize ease-of-use
+  - title: Optimize ease of use
     linkLists:
       - linkListType: how-to-guide
         links:
@@ -63,7 +63,7 @@ landingContent:
           - text: Design for different contexts
             url: layout.md
           - text: Provide clear directions
-            url: user-interface-content.md           
+            url: user-interface-content.md
   - title: Explore related resources
     linkLists:
       - linkListType: reference
