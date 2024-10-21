@@ -1,6 +1,6 @@
 ---
 title: Limit sharing 
-description: Limit how broadly makers can share canvas apps in your Managed Environments.
+description: Limit how broadly makers can share canvas apps, Microsoft 365 Copilot agents, and custom agents in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 10/21/2024
@@ -18,7 +18,7 @@ contributors:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
-In Managed Environments, admins can limit how broadly users can share canvas apps, custom copilots, and copilot extensions. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Limit sharing** section.
+In Managed Environments, admins can limit how broadly users can share canvas apps, custom agents, and Microsoft 365 Copilot agents. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Manage sharing** section.
 
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
@@ -30,22 +30,22 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | Exclude sharing with security groups | Select if users aren't allowed to share canvas apps with any security groups or with everyone. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, you can control the maximum number of users with whom a canvas app can be shared. |
 
-| Custom copilot and copilot extension sharing rules | Description |
+| Custom agent and Microsoft 365 Copilot agents sharing rules | Description |
 | --- | --- |
-| Let people grant Editor permissions when copilots and extensions are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
-| Let people grant Viewer permissions when copilots and extensions are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
+| Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
+| Let people grant Viewer permissions when Microsoft 365 Copilot agents and custom agents are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
 | Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:** Owners and editors can't share with individuals as viewers. They can't share with a security group.|
-| Limit number of viewers who can access each copilot and extension | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a custom copilot and copilot extensions can be shared with. |
+| Limit number of viewers who can access each Microsoft 365 Copilot agent and custom agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a Microsoft 365 Copilot agent and custom agent can be shared with. |
 
 > [!IMPORTANT]
 >
-> - The ability to share custom copilots and copilot extensions is a preview feature.
+> - The ability to share Microsoft 365 Copilot agents and custom agents is a preview feature.
 > - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
-To learn more about editor and viewer permissions on custom copilots and copilot extensions, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
+To learn more about editor and viewer permissions on Microsoft 365 Copilot agents and custom agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
 > [!NOTE]
-> Sharing rules are enforced when users try to share an app or copilot. This won't impact any existing users who already have access to the app or copilot prior to the application of the sharing rules. However, if an app or copilot is out of compliance after rules are set, only unsharing is allowed until the app or copilot is compliant with the new rules.
+> Sharing rules are enforced when users try to share an app or agent. This won't impact any existing users who already have access to the app or agent prior to the application of the sharing rules. However, if an app or agent is out of compliance after rules are set, only unsharing is allowed until the app or agent is compliant with the new rules.
 > 
 > After sharing rules are set in the Power Platform admin center, it may take up to an hour for them to start getting enforced.
 >
@@ -55,7 +55,7 @@ If a user tries to share a canvas app that contradicts the sharing rules, the us
 
 :::image type="content" source="media/managed-environment-canvas-app-sharing-rule.png" alt-text="Screenshot of a message when canvas app doesn't respect sharing rule.":::
 
-If a user tries to share a copilot when sharing with viewers is turned off, the user is informed, as shown below.
+If a user tries to share a agent when sharing with viewers is turned off, the user is informed, as shown below.
 
 :::image type="content" source="media/share-this-copilot-error.png" alt-text="Screenshot of a message when copilot doesn't respect sharing rule.":::
 
