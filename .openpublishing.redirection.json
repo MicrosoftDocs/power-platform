@@ -1,7 +1,12 @@
 
 {
   "redirections": [
-   {
+    {
+      "source_path": "power-platform/sap/overview.md",
+      "redirect_url": "/power-platform/sap/index",
+      "redirect_document_id": "false"
+   },
+    {
       "source_path": "power-platform/admin/control-client-app-access-to-environment.md",
       "redirect_url": "/power-platform/admin/admin-documentation",
       "redirect_document_id": "false"
