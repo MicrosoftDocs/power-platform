@@ -21,12 +21,12 @@ For each of these scenarios, communication is provided through the Microsoft 365
 
 **Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment.  
   
-- If you’re not sure who your admin is, see [Find your administrator or support person](/powerapps/user/find-admin).  
+- If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin).  
   
-- If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).
+- If you want to add additional recipients to receive email communications, learn more in [Manage email notifications to admins](manage-email-notifications.md).
 
 [!IMPORTANT]
->Starting <b>December 1, 2024</b>, only users assigned a <b>Dynamics 365 administrator</b> or <b>Power Platform administrator</b> role in the Microsoft 365 admin center, or Microsoft Entra admin center, will receive email notifications. To assign a service admin role to a user, follow refer to: <a href="https://learn.microsoft.com/en-us/power-platform/admin/use-service-admin-role-manage-tenant#assign-a-service-admin-role-to-a-user">Use service admin roles to manage your tenant</a>
+> Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
   
 ## Scheduled system updates and maintenance
 
