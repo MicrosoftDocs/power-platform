@@ -1,7 +1,7 @@
 ### YamlMime:Marketing
 title: Power Platform and SAP learning hub
 metadata:
-  title: 'Learn how to accelerate integration of the Power Platform with SAP | Microsoft Learn'
+  title: 'Learn how to accelerate integration of the Power Platform and SAP | Microsoft Learn'
   description: Explore guidance, template, samples, and tools to help unlock Power Platform capabilities integration with SAP. 
   ms.service: power-platform
   ms.subservice: connectors
@@ -165,15 +165,15 @@ sections:
   title: More resources
   blocks:
     - componentType: summary-card
-      title: Community Forum
+      title: SAP on Power Platform Community Forums
       summary: Engage with the community to learn and share about using SAP connectors.
       url: https://community.powerplatform.com/globalsearch/?q=SAP
     - componentType: summary-card
-      title: Power Platform and SAP Videos
+      title: SAP on SAP on Azure YouTube channel
       summary: Learn about Power Platform and SAP on the Power Platform and SAP on Azure YouTube channel.
       url: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
     - componentType: summary-card
-      title: Power Platform and SAP Videos
+      title: SAP on Power Platform YouTube channel
       summary: Learn about Power Platform and SAP on the Power Platform YouTube channel.
       url: https://www.youtube.com/@mspowerplatform/search?query=SAP
     - componentType: summary-card
@@ -187,4 +187,4 @@ sections:
     - componentType: summary-card
       title: SAP and Power Platform white paper
       summary: Power Platform considerations for SAP experts.
-      url: https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/
+      url: https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/EehB5jAC3_5GpzCy5xopti0B6YbWuy2vlGuNiSralcg4GA?e=UaPhFV
