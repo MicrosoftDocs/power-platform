@@ -31,5 +31,5 @@ Secure data transport is critical when integrating Power Platform with SAP syste
 Learn more:
  - [SAP and Power Platform white paper](https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/EehB5jAC3_5GpzCy5xopti0B6YbWuy2vlGuNiSralcg4GA?e=UaPhFV)
  - [Enable SAP Principal Propagation and SSO for Power Platform](/azure/sap/workloads/expose-sap-odata-to-power-platform)
- - [Set up Secure Network Communications (SNC)](guides/set-up-secure-network-communications.md)
- - [Set up Microsoft Entra ID using certificates (SSO)](guides/set-up-microsoft-entra-id-with-certificates.md)
+ - [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
+ - [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)

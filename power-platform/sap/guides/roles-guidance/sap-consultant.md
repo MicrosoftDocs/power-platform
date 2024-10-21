@@ -18,7 +18,7 @@ SAP Consultants can leverage Microsoft Power Platform to build applications that
 
 ## Microsoft Power Platform Connectors
 
-Microsoft Power Platform provides several [connectors to integrate with SAP systems](/power-platform/sap/connect-power-platform-and-SAP.md), including the SAP ERP Connector and the SAP OData Connector. These connectors encapsulate the necessary APIs for data exchange between Power Platform and SAP, supporting both RFC-based and HTTP-based connectivity. The connectors enable app makers to perform operations such as creating, updating, or retrieving data from SAP, making it easier to build integrated solutions.
+Microsoft Power Platform provides several [connectors to integrate with SAP systems](/power-platform/sap/connect-power-platform-and-SAP), including the SAP ERP Connector and the SAP OData Connector. These connectors encapsulate the necessary APIs for data exchange between Power Platform and SAP, supporting both RFC-based and HTTP-based connectivity. The connectors enable app makers to perform operations such as creating, updating, or retrieving data from SAP, making it easier to build integrated solutions.
 
 ## Capabilities of Power Platform Low Code Tools
 
@@ -85,7 +85,7 @@ Upgrading from SAP ECC to S4/HANA should not break integrations. Core data model
 
 Learn more:
 - [SAP and Power Platform white paper](https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/EehB5jAC3_5GpzCy5xopti0B6YbWuy2vlGuNiSralcg4GA?e=UaPhFV)
-- [Use a solution to customize](power-platform/alm/use-solutions-for-your-customizations)
+- [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
 - [Dataverse developer documentation](/power-apps/developer/data-platform/) 
 - [Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools](/power-platform/alm/conn-ref-env-variables-build-tools) 
 - [Manage solutions using PowerShell](/power-platform/alm/powershell-api) 
