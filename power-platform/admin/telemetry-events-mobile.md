@@ -27,16 +27,15 @@ This data goes into the **Power Apps (Preview)** > **Mobile app synchronization 
 
 ## Mobile app synchronization and action event definitions
 
-- **Id**: Event ID.
-- **Target**: Name of the scenario tracked by the event.
-- **Type**: Source table of the event.
-- **Name**: Name of the scenario tracked by the event.
-- **Duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive.
-- **Operation_Id**: Unique identifier for the session.
-- **Operation_ParentId**: Unique identifier for the scenario tracked by the event.
-- **User_Id**: Microsoft Entra user ID.
-- **User_AuthenticatedId**: Microsoft Entra user ID.
-- **Application_Version**: Version of the app.
+- **id**: Event ID.
+- **target**: Name of the scenario tracked by the event.
+- **type**: Source table of the event.
+- **name**: Name of the scenario tracked by the event.
+- **duration**: Scenario duration in milliseconds. Duration may include long periods of time when the app is inactive.
+- **operation_Id**: Unique identifier for the session.
+- **operation_ParentId**: Unique identifier for the scenario tracked by the event.
+- **user_Id**: Microsoft Entra user ID.
+- **application_Version**: Version of the app.
 - **customDimensions**: Contains the following attributes:
      - **"EventName"**: Summary of the scenario tracked by the event (ScenarioEnd).
      - **"ScenarioResult"**: SUCCESS or FAILURE.
