@@ -70,13 +70,15 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 
 First, go to the **Personal Productivity** group and select the **Rules** tab.
 
-**For canvas apps**
+#### For canvas apps
 1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
 
-**For custom agents and Microsoft 365 Copilot agents**
+#### For custom agents and Microsoft 365 Copilot agents (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
 1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
 2. Ensure that **Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared** is unselected.
 3. Select **Save**.
@@ -84,7 +86,9 @@ First, go to the **Personal Productivity** group and select the **Rules** tab.
 5. Select **Let people grant Viewer permissions when Microsoft 365 Copilot agents and custom agents are shared**.
 6. Select **Only share with individuals (no security groups)**.
 7. Select **Limit the number of viewers who can access each Microsoft 365 Copilot agent and custom agent** and enter the desired number of Viewers you would like to have on the copilot.
-8. Select **Save** .
+8. Select **Save**.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 Repeat these steps until all desired rules are configured and select **Publish rules**.
 
