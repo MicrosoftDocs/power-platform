@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI admin command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI admin command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: devkeydet
-ms.author: marcsc
-ms.date: 7/8/2024
+author: laneswenka
+ms.author: laswenka
+ms.date: 8/22/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -43,7 +43,7 @@ Work with your Power Platform Admin Account
 |[pac admin list-tenant-settings](#pac-admin-list-tenant-settings)|List tenant settings.|
 |[pac admin reset](#pac-admin-reset)|Reset the environment from your tenant.|
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
-|[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Takes a manual backup of your environment.|
+|[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Sets the backup retention period in days as provided. Valid values are: 7, 14, 21, 28.|
 |[pac admin set-governance-config](#pac-admin-set-governance-config)|Enable, disable, and edit managed environments.|
 |[pac admin set-runtime-state](#pac-admin-set-runtime-state)|Update environment administration mode.|
 |[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
@@ -201,9 +201,6 @@ Sets the backup label as provided.
 
 Environment URL or ID of the Environment that requires backup.
 
-#### `--notes` `-n`
-
-**Deprecated**: This parameter is ignored.
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
 ## pac admin copy
@@ -579,7 +576,7 @@ Environment URL or ID of the target environment required for restore. This would
 
 ## pac admin set-backup-retention-period
 
-Takes a manual backup of your environment.
+Sets the backup retention period in days as provided. Valid values are: 7, 14, 21, 28.
 
 [!INCLUDE [admin-set-backup-retention-period-intro](includes/admin-set-backup-retention-period-intro.md)]
 

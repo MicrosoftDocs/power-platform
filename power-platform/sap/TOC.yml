@@ -1,6 +1,12 @@
 
-- name: Overview
+- name: Overview of SAP on Power Platform
   href: overview.md
-- name: Guides
-  href: guides/TOC.yml
+- name: Getting Started with the SAP ERP Connector
+  href: guides/getting-started-with-the-sap-erp-connector.md
+- name: Set up Secure Network Communications (SNC)
+  href: guides/set-up-secure-network-communications.md
+- name: Set up Microsoft Entra ID using certificates (SSO)
+  href: guides/set-up-microsoft-entra-id-with-certificates.md
+- name: Set up Microsoft Entra ID with Azure APIM and OAuth
+  href: guides/set-up-microsoft-entra-id-with-azure-apim-and-oauth.md
   expanded: true

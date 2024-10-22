@@ -1,5 +1,5 @@
 ---
-title: "Use service admin roles to manage your tenant   | MicrosoftDocs"
+title: Use service admin roles to manage your tenant 
 description: Use service admin roles to manage your tenant 
 author: srpoduri 
 ms.subservice: admin
@@ -8,10 +8,11 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 contributors:
+- JesseParsons 
 - srpoduri
 - kavehkazms 
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 08/20/2024
 search.audienceType: 
   - admin
 ---
@@ -98,6 +99,8 @@ The following matrix shows what management is possible with the various service 
 |**Data policies**|||||
 |View and manage tenant policies|Yes|Yes|Yes|No|  
 |View and manage environment policies|Yes|Yes|Yes|No|  
+|**Copilot**|||||
+|View Copilot page in Power Platform admin center|Yes|Yes|Yes|No|  
 ||||||
 |**POWER BI**|||||  
 |Manage the Power BI tenant|Yes|Yes|No|Yes|  

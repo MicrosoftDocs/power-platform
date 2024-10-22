@@ -1,6 +1,6 @@
 ---
-title: Boost team efficiency and customer experience with Power Automate and generative AI
-description: Learn how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and generative AI.
+title: A1 Inteligencia em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio
+description: Learn how A1 Inteligencia em Viagens boosted team efficiency and customer experience with Power Automate and Copilot Studio.
 author: robstand
 ms.author: sashi
 ms.topic: overview
@@ -9,7 +9,7 @@ ms.date: 08/06/2024
 
 ---
 
-# Boost team efficiency and customer experience with Power Automate and generative AI
+# A1 Inteligencia em Viagens boosts team efficiency and customer experience with Power Automate and Copilot Studio
 
 Brazil-based corporate travel agency, A1 Inteligência em Viagens, transformed the travel coordination process with their clients and team collaboration using the power of Power Automate and Microsoft Copilot Studio.
 

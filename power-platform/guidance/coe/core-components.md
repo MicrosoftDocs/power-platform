@@ -3,7 +3,7 @@ title: Use core components
 description: "The CoE Starter Kit core components provide the core to get started with setting up a Center of Excellence (CoE). They sync all your resources into tables and build admin apps on top of that to help you get more visibility of the apps, flows, and makers in your environment."
 author: manuelap-msft
 ms.topic: conceptual
-ms.date: 09/05/2023
+ms.date: 09/26/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -271,8 +271,6 @@ Use this app to:
 
 When you first launch the app, you might have to establish a connection for [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/), and set **Base Resource URL** and **Microsoft Entra Resource URI (Application ID URI)** to [https://graph.microsoft.com](https://graph.microsoft.com) for commercial tenants. If your tenant is in GCC, GCC High, or DoD, check your [service root endpoint for Microsoft Graph](/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
-:::image type="content" source="media/httpazuread.png" alt-text="Screenshot that shows the HTTP with Microsoft Entra ID popup that asks for your Base Resource URL and Microsoft Entra ID Resource URI." lightbox="media/httpazuread.png":::
-
 #### DLP Impact Analysis
 
 DLP Impact Analysis is an app that allows you to experiment with changes to policy configurations. You can get a list of canvas apps and cloud flows impacted by those changes.
@@ -285,7 +283,7 @@ Use this app to:
 
 For more information, see [Data Loss Prevention policies](../../admin/wp-data-loss-prevention.md).
 
-**Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
+**Permission**: Intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
 
 :::image type="content" source="media/dlp_new1.png" alt-text="Screenshot that shows the DLP Impact Analysis page of the Data policy impact analysis menu.":::
 
@@ -305,9 +303,7 @@ Permissions you can change with this app include:
 - Security Roles in tenant environments
 - Connections across the tenant
 
-**Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
-
-:::image type="content" source="media/managepermissions1.png" alt-text="Screenshot that shows the Admin - App Permission Center page from the Apps menu." lightbox="media/managepermissions1.png":::
+**Permission**: This app is intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
 
 #### Power Platform Admin View
 
@@ -324,7 +320,7 @@ Use this app to:
 - Manage capacity alerts.
 - Set app and flow permissions for individual resources.
 
-**Permission**: This app is intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE admins.
+**Permission**: This app is intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
 
 :::image type="content" source="media/coe-mda1.png" alt-text="Screenshot that shows the Power Platform Dashboard page from the Overview Dashboard menu of the Power Platform Admin View." lightbox="media/coe-mda1.png":::
 
@@ -388,7 +384,7 @@ Use this app to:
 - Approve or reject **Environment Creation Requests**.
 - Check if connectors are blocked or restricted by existing or modified DLP policies. Modifications made in the app update those policies.
 
-**Permission**: Intended to be used only by admins. Power Platform Service Admin or Global Admin permission is required. Share this app with your CoE Admins.
+**Permission**: Intended to be used only by admins. Power Platform Service Admin or user accounts with admin permissions is required. Share this app with your CoE admins.
 
 **Prerequisite**: This app uses Dataverse. End-users must have a **Per User** license and the app must be assigned a **Per App** license or the environment must be covered by pay-as-you-go.
 

@@ -37,13 +37,7 @@ Use the following steps to run user access diagnostics on a user in an environme
 
 4. Select **Run diagnostics**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Select Run diagnostics.](media/teams-environment-user-list.png "Select Run diagnostics")
-
 5. Review the details for the user, and take any needed corrective actions.
-
-   > [!div class="mx-imgBorder"]
-   > ![Run diagnostics results.](media/run-diagnostics-results.png "Run diagnostics results")
 
 > [!NOTE]
 > The action of running or rerunning diagnostics will force the user information in Microsoft Entra ID to synchronize to the environment's Dataverse database to provide up-to-date status on the user's properties. If the diagnostic run doesn't eliminate the root cause of a user access issue, please provide the results of the diagnostic run in the support ticket you create; this will greatly help Microsoft Support engineers to resolve your issue faster.

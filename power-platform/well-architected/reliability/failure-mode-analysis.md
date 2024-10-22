@@ -4,7 +4,7 @@ description: Learn how to identify potential failure points within your Power Pl
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -102,8 +102,6 @@ During your initial FMA exercise, the documents you produce will be mostly theor
 
 The following table shows an FMA example for an expense application that's hosted as a Power Apps canvas app with a Microsoft Dataverse backend and APIs hosted in APIM to interact with a third party system.
 
-<!-- Let's spell out APIM. API Management? -->
-
 **User flow**: User sign in, submission of expense claim, and interaction with expense report
 
 | Component | Risk | Likelihood | Effect/Mitigation/Note | Outage |
@@ -116,9 +114,9 @@ The following table shows an FMA example for an expense application that's hoste
 | Dataverse | Service outage | Low | Full workload outage. Dependent on Microsoft to remediate. | Full |
 | Dataverse | Regional outage | Very low | Auto-failover group fails over to secondary region. Potential outage during failover. Recovery time objectives (RTOs) and recovery point objectives (RPOs) to be determined during reliability testing. | Potential full |
 | Dataverse | Malicious attack (injection) | Medium | Minimal risk. | Potential low risk |
-| APIM | Service outage | Low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
-| APIM | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
-| APIM | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
+| API Management | Service outage | Low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
+| API Management | Regional outage | Very low | Full outage for external users. Dependent on Microsoft to remediate. | Full |
+| API Management | DDoS attack | Medium | Potential for disruption. Microsoft manages DDoS (L3 and L4) protection. | Potential for partial outage |
 | Your Power Platform solution | Misconfiguration | Medium | Misconfigurations should be caught during deployment. If these happen during a configuration update, administrators must roll back changes. Configuration update causes a brief external outage. | Potential for full outage |
 
 ## Power Platform facilitation
@@ -131,10 +129,13 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - Configure [Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. You can use this telemetry to monitor cloud flow executions and create alerts for cloud flow run failures.
 
+- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
+
 Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
+- [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data loss prevention](/power-platform/admin/dlp-activity-logging)  

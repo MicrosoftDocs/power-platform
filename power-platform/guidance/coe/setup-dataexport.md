@@ -28,8 +28,6 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 1. Search for or select the storage account configured to receive [Data Export data](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant).
 1. Select **Endpoints**.
 1. Copy the Data Lake Storage URL to a text editor such as Notepad.
-   :::image type="content" source="media/byodl-1.png" alt-text="Screenshot the shows where to get the URL from your Data Lake Storage field in your Endpoints settings." lightbox="media/byodl-1.png":::
-
 1. Append `/powerplatform` to the URL.
 
 ### Confirm Storage Account permission
@@ -45,10 +43,8 @@ If your inventory is coming from [Data Export](setup.md#what-data-source-should-
 
 1. Navigate to [make.powerapps.com](https://make.powerapps.com).
 1. Select the environment with the CoE Starter Kit.
-1. Select the settings symbol (cog), then select **Developer resources**.
-   :::image type="content" source="media/byodl-3.png" alt-text="Screenshot that shows the Developer resources location in the Settings." lightbox="media/byodl-3.png":::
+1. Select the **Settings** icon, then select **Developer resources**.
 1. Copy the Web API endpoint.
-   :::image type="content" source="media/byodl-4.png" alt-text="Screenshot that shows the location of the Web API endpoint URL in Developer resources." lightbox="media/byodl-4.png":::
 
 ### Configure connections to data sources
 

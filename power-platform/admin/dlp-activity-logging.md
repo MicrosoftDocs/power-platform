@@ -31,9 +31,6 @@ To log DLP activities, follow these steps:
 
 3. Under **Search** > **Activities**, enter **dlp**. A list of activities appears.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing audit log search DLP policies.](media/audit-log-search-dlp.png "Audit log search DLP policies")
-
 4. Select an activity, select outside the search window to close it, and then select **Search**.
 
 On the **Audit log search** screen, you can search audit logs across many popular services including eDiscovery, Exchange, Power BI, Microsoft Entra ID, Microsoft Teams, customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), and Microsoft Power Platform. 

@@ -258,6 +258,8 @@ In this article, learn about all the functions available in [Power Automate for 
 
 **[Sum](reference/function-aggregates.md)** – Calculates the sum of a table expression or a set of arguments.
 
+**[Summarize](reference/function-summarize.md)** – Groups records by selected columns and summarizes the remainder.
+
 **[Switch](reference/function-if.md)** – Matches with a set of values and then evaluates a corresponding formula.
 
 ## T

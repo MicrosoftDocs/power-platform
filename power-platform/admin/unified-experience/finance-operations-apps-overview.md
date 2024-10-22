@@ -51,8 +51,6 @@ With either option, your environment has two runtime URLs:
 - One for customer engagement apps (**Environment URL**)
 - One for finance and operations apps (**Finance and Operations URL**)
 
-:::image type="content" source="media/environment-urls.png" alt-text="Screenshot that shows two URLs for customer engagement and finance and operations apps in your environment.":::
-
 ## Transition from an environment-slot purchasing model to a capacity-based model
 
 When you purchase a license for any finance and operations app, such as Dynamics 365 Finance or Dynamics 365 Supply Chain Management, your tenant is entitled to 60 GB of operations database capacity and an additional 10 GB of Dataverse database capacity. With each user license, you receive an incremental amount of both operations and Dataverse database capacity.
