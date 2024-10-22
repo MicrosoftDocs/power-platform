@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps, Microsoft 365 Copilot agents, and custom agents in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2024
+ms.date: 10/22/2024
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -48,16 +48,16 @@ If a user tries to share a canvas app that contradicts the sharing rules, the us
 
 To learn more about **Editor** and **Viewer** permissions on Microsoft 365 Copilot agents and custom agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
-If a user tries to share a agent when sharing with viewers is turned off, the user is informed, as shown below.
+If a user tries to share an agent when sharing with viewers is turned off, the user is informed, as shown below.
 
 :::image type="content" source="media/share-this-copilot-error.png" alt-text="Screenshot of a message when copilot doesn't respect sharing rule.":::
 
 ## Enforcement of sharing rules
-Sharing rules are enforced when users try to share an app or agent. This won't impact any existing users who already have access to the app or agent prior to the application of the sharing rules. However, if an app or agent is out of compliance after rules are set, only unsharing is allowed until the app or agent is compliant with the new rules.
+Sharing rules are enforced when users try to share an app or agent. This doesn't impact any existing users who already have access to the app or agent prior to the application of the sharing rules. However, if an app or agent is out of compliance after rules are set, only unsharing is allowed until the app or agent is compliant with the new rules.
 
 After sharing rules are set in the Power Platform admin center, it may take up to an hour for them to start getting enforced.
 
-Sharing rules in Dataverse for Teams environments do not impact sharing to a team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a team, other than the one bound to the environment, the sharing limits are enforced. 
+Sharing rules in Dataverse for Teams environments don't impact sharing to a team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a team, other than the one bound to the environment, the sharing limits are enforced. 
 
 ## Use PowerShell to set sharing limits
 
@@ -110,7 +110,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 ```
 ### Remove sharing limits
 
-Here's a PowerShell scripts that removes the canvas app sharing limits that were configured in the script above.
+Here's a PowerShell script that removes the canvas app sharing limits that were configured in the script above.
 
 ```powershell
 # Retrieve the environment
@@ -126,7 +126,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 ```
 
 ## Surface your organization’s governance error content 
-If you specify governance error message content to appear in error messages, it will be included in the error message displayed to users. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
+If you specify governance, error message content to appear in error messages, it's included in the error message displayed to users. Learn more in [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
 ### Related content
 [Managed Environments overview](managed-environment-overview.md) <br />
