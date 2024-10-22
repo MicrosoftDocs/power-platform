@@ -1,5 +1,5 @@
 ---
-title: Limit sharing (preview)
+title: Limit sharing
 description: Limit how broadly makers can share canvas apps, Microsoft 365 Copilot agents, and custom agents in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
@@ -14,36 +14,34 @@ search.audienceType:
 contributors:
 - arjunmayur
 ---
-# Limit sharing (preview)
+# Limit sharing
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 In Managed Environments, admins can limit how broadly users can share canvas apps, custom agents, and Microsoft 365 Copilot agents. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Manage sharing** section.
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
-
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
-## Sharing rules
+## Canvas app sharing rules
 
-| Canvas app sharing rules | Description |
+| Canvas app sharing rule | Description |
 | --- | --- |
 | Don't set limits | Select to not limit sharing canvas apps. |
 | Exclude sharing with security groups | Select if users aren't allowed to share canvas apps with any security groups or with everyone. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, you can control the maximum number of users with whom a canvas app can be shared. |
 
-| Custom agent and Microsoft 365 Copilot agents sharing rules | Description |
+
+## Custom agent and Microsoft 365 Copilot agents sharing rules (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+| Custom agent and Microsoft 365 Copilot agents sharing rule | Description |
 | --- | --- |
 | Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
 | Let people grant Viewer permissions when Microsoft 365 Copilot agents and custom agents are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
 | Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:** Owners and editors can't share with individuals as viewers. They can't share with a security group.|
 | Limit number of viewers who can access each Microsoft 365 Copilot agent and custom agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a Microsoft 365 Copilot agent and custom agent can be shared with. |
 
-> [!IMPORTANT]
->
-> - The ability to share Microsoft 365 Copilot agents and custom agents is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 To learn more about editor and viewer permissions on Microsoft 365 Copilot agents and custom agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
