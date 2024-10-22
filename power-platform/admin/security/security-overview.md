@@ -65,7 +65,21 @@ The system generates various recommendations based on common, best practices tha
 While these recommendations span all environments, you can only act on them in environments that are managed. For non-managed environments, you still have the option to act or enable recommended features by navigating to the settings section in Security, locating the necessary feature, and turning it on for those environments.
 
 ## Feature Recommendation Conditions
-add table 
+Below is a table outlining the conditions that trigger specific feature recommendations.
+
+| Feature | Scope | Recommendation triggering condition |
+| Administrator privileges | Environment | Environments with more than 10 administrators 
+| Auditing  | Environment | Environments with auditing off |
+| Customer Lockbox | Tenant | Tenants with Customer lockbox on but no managed environments |
+| Client application access control | Environment | Environments with auditing on and client application access control not configured |
+| Data policy | Tenant | No tenant level policy set |
+| Environments Azure VNet | Environment | Environments with no VNet policy |
+| Environment security group | Environment | |
+| Guest Access | Environment |Environments with restricted guest access off |
+| IP Firewall | Environment | Environments with IP firewall not configured |
+| IP address-based cookie binding | Environment | Environments with IP address-based cookie binding not configured |
+| Sharing | Environment | Environments with no sharing limit |
+| Tenant isolation | Tenant | Tenant Isolation setting disabled|
 
 ## Manage proactive policies for governance and security
 There are several security features that help secure your tenant. You may visit the pages below to view and manage proactive policies for governance and security.
