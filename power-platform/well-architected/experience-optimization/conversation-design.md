@@ -21,12 +21,6 @@ This guide describes the recommendations for designing the user experience for c
 
 Conversation design involves crafting the flow of interactions, ensuring the AI understands user intent, responds effectively, and guides the user toward their goals. Good conversation design enhances the user experience by making interactions feel more human-like and seamless, which increases user engagement and satisfaction. When you create conversational AI for your workload, aim to develop human-like, user-friendly interactions that facilitate natural communication and help users achieve their goals efficiently.
 
-### Understand the user's intent
-
-When the AI recognizes and responds to intent appropriately, it helps avoid dead ends and frustration, making the conversation more fluid and effective. Understanding user intent plays a crucial role in designing a conversation because it ensures the AI interprets and responds accurately to user needs.
-
-Start with identifying what users want to achieve. Map out key intents for your workload and design AI interactions that match the intents. Study user behavior, preferences, and contextual cues to anticipate the various ways users might communicate their intentions.
-
 ### Explain the capabilities of the AI
 
 Be upfront about the AI’s capabilities and help ensure users know what the AI can do. For example, if the AI is only able to perform specific tasks, let the user know right from the start. Make sure users understand why the AI suggests specific actions or produces particular results. Adding explanations or suggestions for the AI’s recommendations help users be successful with the AI and increase their trust in its capabilities and accuracy.
@@ -34,6 +28,14 @@ Be upfront about the AI’s capabilities and help ensure users know what the AI 
 Clear communication about the AI's abilities helps manage user expectations by preventing unrealistic assumptions and minimizing disappointment and frustration, leading to a more positive user experience. When an AI system is transparent about its limitations and strengths, it builds trust, which is essential for user engagement and satisfaction. This transparency significantly bolsters user confidence in the technology.
 
 Awareness of the AI’s specific capabilities improves usability by enabling users to navigate interactions more effectively and utilize the AI more efficiently. Outlining the AI’s capabilities reduces miscommunication, as users are less likely to make requests beyond the AI’s scope, thus reducing potential frustration and dead ends.
+
+### Understand the user's intent
+
+Understanding user intent is a cornerstone of conversation design, as it directly influences how well the AI can fulfill user requests and navigate complex dialogues. Accurately capturing intent ensures that the AI not only understands what the user is asking for but also responds in ways that feel intuitive and relevant to the user’s needs.
+
+When the AI recognizes and responds to intent appropriately,  it creates a more natural and seamless conversation, reducing frustration and ensuring that users can accomplish their goals efficiently. Proper intent recognition helps the AI avoid "dead ends" — moments where it doesn’t know how to proceed — by ensuring that the AI understands the underlying purpose behind a user’s input, even if the phrasing or terminology varies. This keeps the interaction fluid, with the AI proactively guiding users toward solutions, recommendations, or further actions, ultimately making the conversation more effective and satisfying.
+
+Start by identifying what users want to accomplish. Map out key intents for your workload and design targeted interactions that match the intents. Study user behavior, preferences, and contextual cues to anticipate the various ways users might communicate their intentions.
 
 ### Optimize how the AI interprets input
 
@@ -45,9 +47,15 @@ For more complex user inputs, break down the conversation into manageable steps,
 
 ### Guide the user through interactions
 
-Conversation flows determine how the conversation progresses depending on what the user says or chooses. The goal of a good conversation flow is to guide the user through the interaction smoothly. Design a conversation flow that maps out possible interactions and decision trees based on user inputs.
+Conversation flows determine how the conversation progresses depending on what the user says or chooses. A good conversation flow should always be goal-oriented. Each step in the interaction should bring the user closer to completing their objective, whether it’s scheduling a meeting, retrieving information, or resolving an issue. Designing with the user’s end goal in mind ensures that the conversation stays focused and purposeful, reducing frustration and improving the overall experience.
 
-In a good conversation, there's a natural back-and-forth between participants. Conversation design ensures that the AI knows when to ask questions, when to provide information, and when to prompt the user for further clarification or action. Design the conversation flow to manage transitions gracefully.
+To create an effective conversation flow, you first need to map out all possible interactions a user might have with the AI. This includes designing clear decision trees that branch out based on different user responses or choices. By anticipating various paths a conversation could take, you ensure that the AI is prepared to handle both expected and unexpected inputs. For example, if the user is interacting with the AI to schedule a meeting, the flow might involve paths where the AI asks about the date, time, and participants. The flow should account for responses to these questions as well as possible follow-up questions if details are unclear or incomplete.
+
+In a well-designed conversation, there’s a natural back-and-forth between the user and the AI, mirroring the dynamics of human interaction. The AI must not only respond to user inputs but also know when to take initiative, such as prompting the user for more information, asking clarifying questions, or providing suggestions. This requires designing the conversation flow to include moments where the AI can offer options, confirm user choices, or propose next steps, creating an interaction that feels cooperative and engaging.
+
+Design conversation flows to handle interruptions and deviations gracefully. Users may change their mind mid-interaction or ask unrelated questions. A flexible flow will allow the AI to manage these situations effectively, such as pausing the current task to address a new query and returning to the original task when appropriate. This ensures that the AI can maintain context while still accommodating dynamic user behavior.
+
+To enhance the fluidity of the conversation, transitions between different stages of the flow need to be managed with care. When the AI shifts from gathering information to executing an action, it should communicate this transition clearly to the user. 
 
 ### Design fallback mechanisms
 
