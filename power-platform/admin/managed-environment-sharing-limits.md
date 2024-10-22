@@ -43,7 +43,7 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
-To learn more about editor and viewer permissions on Microsoft 365 Copilot agents and custom agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
+To learn more about **Editor** and **Viewer** permissions on Microsoft 365 Copilot agents and custom agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
 > [!NOTE]
 > Sharing rules are enforced when users try to share an app or agent. This won't impact any existing users who already have access to the app or agent prior to the application of the sharing rules. However, if an app or agent is out of compliance after rules are set, only unsharing is allowed until the app or agent is compliant with the new rules.
