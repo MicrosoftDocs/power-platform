@@ -57,13 +57,13 @@ Design strategies for when the AI doesn’t understand a user input. Instead of 
 
 ## Power Platform facilitation
 
-Copilot Studio includes [prebuilt entities](/microsoft-copilot-studio/advanced-entities-slot-filling) that are designed to understand common user intents. You can map user intents using these built-in entities.
+Copilot Studio includes [prebuilt entities](/microsoft-copilot-studio/advanced-entities-slot-filling) that are designed  to understand and categorize common user intents across a variety of domains. Use the prebuilt entities to map user intents to the relevant actions or responses without needing to build everything from scratch.  Prebuilt entities are optimized to handle common variations in user input.
 
-You can use [agent templates](/microsoft-copilot-studio/template-fundamentals) as a starting point and customize them for your workload's users' needs.
+You can use [agent templates](/microsoft-copilot-studio/template-fundamentals) as a starting point as a starting point for building copilots. The templates are pre-configured with core conversational patterns, capabilities, and workflows designed to handle common tasks and scenarios. They incorporate built-in intents, entities, and dialogue flows tailored for specific use cases, such as customer support, productivity tasks, or FAQs. You can customize the templates to meet the specific needs of your workload and users.
 
-[Provide custom instructions](/microsoft-copilot-studio/nlu-generative-answers-prompt-modification) to your copilot with prompt modification.
+[Provide custom instructions](/microsoft-copilot-studio/nlu-generative-answers-prompt-modification) in your copilot through prompt modification, providing you with exact control over how the AI engages with users and answers specific questions. By altering the underlying instructions that shape the Copilot’s comprehension and language generation, prompt modification allows developers to tailor the AI's behavior, responses, and emphasis. These bespoke prompts can be customized to fit various use cases, sectors, or company requirements, ensuring that the Copilot offers contextually appropriate and useful replies.
 
-[Configure the fallback topic](/microsoft-copilot-studio/authoring-system-fallback-topic) that a copilot can use when it doesn't understand a user's input or can't handle the request.
+[Configure the fallback topic](/microsoft-copilot-studio/authoring-system-fallback-topic) that a copilot can use when it doesn't understand a user's input or can't handle the request. The fallback topic acts as a safety net, providing a pre-set response that keeps the conversation on track and prevents user frustration when the AI reaches the limits of its capabilities. By configuring the fallback topic, you can determine how the copilot responds when it's unable to interpret a user's intent. For example, you can set the fallback response to politely inform the user that it didn’t understand the request and offer helpful suggestions, such as asking the user to rephrase the query or providing a set of related options or commands that the AI can process. In more advanced configurations, the fallback topic can guide users to other resources or escalate the conversation to a human agent.
 
 ## Additional information
 
