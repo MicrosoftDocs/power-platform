@@ -12,7 +12,7 @@ ms.topic: conceptual
 
 **Applies to this Power Platform Well-Architected Experience Optimization checklist recommendation:**
 
-|[XO:10](checklist.md)| **Design conversations that align with users' needs and help the AI accomplish its objectives. Create natural interactions that feel intuitive and human-like. Make it clear what the AI can do.** |
+|[XO:10](checklist.md)| **Design conversations that align with users' needs and help the AI accomplish its objectives. Make it clear what the AI can do. Create natural interactions that feel intuitive and human-like. Provide fallback mechanisms to ensure the AI gracefully recovers from problems.** |
 |---|---|
 
 This guide describes the recommendations for designing the user experience for conversational AI in a workload. Conversation design is the process of creating structured, intuitive, and natural dialogues between users and AI. Conversation design is important in a well-architected workload because it significantly enhances user experience by making interactions intuitive and efficient, reducing frustration. It fosters trust as users feel understood and are more likely to engage repeatedly. It improves productivity by allowing users to complete tasks quickly without needing human intervention.
