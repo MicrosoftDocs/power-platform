@@ -74,7 +74,7 @@ Below is a table outlining the conditions that trigger specific feature recommen
 | Client application access control | Environment | Environments with auditing on and client application access control not configured |
 | Data policy | Tenant | No tenant level policy set |
 | Environments Azure VNet | Environment | Environments with no VNet policy |
-| Environment security group | Environment | |
+| Environment security group | Environment | Environments with no security group |
 | Guest Access | Environment |Environments with restricted guest access off |
 | IP Firewall | Environment | Environments with IP firewall not configured |
 | IP address-based cookie binding | Environment | Environments with IP address-based cookie binding not configured |
