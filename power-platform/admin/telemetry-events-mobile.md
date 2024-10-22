@@ -4,7 +4,7 @@ description: Power Apps mobile application data related to offline synchronizati
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/16/2024
+ms.date: 10/22/2024
 author: JonBaker007
 ms.subservice: admin
 ms.author: jobaker
