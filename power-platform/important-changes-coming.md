@@ -22,6 +22,24 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecating support for Azure Control Service authentication with SharePoint integration
+
+As part of our ongoing efforts to enhance the security and performance of Power Apps and Dataverse platform, we're announcing the deprecation of support for authenticating with SharePoint via Azure Control Services (ACS) and rely on On Behalf Of authentication. This change applies only to user-based connections which are seen in the [SharePoint documents control](https://learn.microsoft.com/power-platform/admin/manage-documents-using-sharepoint). We have been using On Behalf Of authentication as the primary and only falling bac to ACS when OBO fails.
+
+### Why is this needed?
+
+On Behalf Of authentication provides stronger security than Azure Control Services authentication in this area.
+
+### Impact
+
+Most users are already relying on On Behalf Of authentication but some fall back to ACS based on conditional access policies or incorrectly configured. Users who rely on ACS authenticaion to connect to SharePoint will see an warning message above the SharePoint documents grid. Rollout for this warning message will be gradual and starting in late October.
+
+Starting end of February 2025, support for the ACS fallbac will be removed and users still relying on ACS will see an error message indicating that SharePoint integration is blocked.
+
+### What do you need to do?
+
+No changes are needed if users do not see a warning message bar. When users have a warning messsage bar, use the instructions in [Troubleshooting conditional access in authentication](https://learn.microsoft.com/power-platform/admin/troubleshooting-server-based-authentication).
+
 ## Deprecation of Organization Insights Dashboard
 
 The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
