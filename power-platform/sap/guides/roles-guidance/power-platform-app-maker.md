@@ -13,16 +13,16 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 # Integrating SAP Data with Power Platform for App Makers
-Power Platform app makers can leverage Microsoft SAP connectors to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
+Power Platform app makers can leverage Microsoft's Power Platform connectors for SAP to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
 ## SAP Connectors Overview
-Microsoft provides several connectors to integrate with SAP systems, including the SAP ERP Connector and the SAP OData Connector. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP.md) for more on selecting which connector to use and setting up the connectors in your environment.
+Microsoft provides several connectors to integrate with SAP systems, including the ERP Connector for SAP and the OData Connector for SAP. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP.md) for more on selecting which connector to use and setting up the connectors in your environment.
 ## Using SAP TCodes and BAPIs
 SAP Transaction Codes (TCodes) and Business Application Programming Interfaces (BAPIs) are essential for interacting with SAP systems. TCodes are shortcuts to access specific SAP transactions, while BAPIs are standardized programming interfaces that allow external applications to perform complex business operations in SAP. The SAP connectors can be used to call TCodes and BAPIs.
 - SAP TCodes: App makers can use TCodes to navigate to specific transactions within SAP. For example, the TCode VA01 is used to create a sales order.
 - BAPIs: BAPIs enable app makers to perform operations such as creating, updating, or retrieving data from SAP. For instance, the BAPI BAPI_SALESORDER_CREATEFROMDAT2 allows the creation of sales orders.
 
 ## Working with Complex JSON Structures
-When calling SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
+When calling Power Platform for SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
 - Constructing JSON: Power Automate provides actions to construct JSON payloads required by SAP APIs. This involves defining the structure and populating it with the necessary data.
 - Parsing JSON: Power Automate also provides actions to parse JSON responses from SAP connectors. This allows app makers to extract specific data elements and use them in subsequent steps.
 
@@ -35,7 +35,7 @@ To learn more about working with JSON structures in Power Automate, refer to [Wo
 4.	Parse Response: The flow parses the JSON response to extract the sales order number.
 5.	Update App: The Power App is updated with the sales order number for user reference.
 
-## App-builing tips
+## App-building tips
 ### Handling Data Objects Without SAP APIs
 
 If SAP does not provide an API for a data object, there are several options available:
@@ -54,5 +54,4 @@ Custom SAP Tables: Ensure the function modules updating these tables are remote-
 
 ### Diagnosing User Security Errors
 
-To diagnose a user security error, run a trace in transaction ST01 to determine what is missing from the user's security profile. Confirm that the user has the S_RFC authorization object, which is required to execute BAPIs and remote-enabled custom RFCs13.
-
+To diagnose a user security error, run a trace in transaction ST01 to determine what is missing from the user's security profile. Confirm that the user has the S_RFC authorization object, which is required to execute BAPIs and remote-enabled custom RFCs.
