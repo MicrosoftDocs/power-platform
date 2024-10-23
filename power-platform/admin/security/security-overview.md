@@ -68,6 +68,7 @@ While these recommendations span all environments, you can only act on them in e
 Below is a table outlining the conditions that trigger specific feature recommendations.
 
 | Feature | Scope | Recommendation triggering condition |
+|----------|------|--------------------------------------|
 | Administrator privileges | Environment | Environments with more than 10 administrators 
 | Auditing  | Environment | Environments with auditing off |
 | Customer Lockbox | Tenant | Tenants with Customer lockbox on but no managed environments |
