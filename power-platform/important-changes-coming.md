@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecating support for Azure Control Service authentication with SharePoint integration
 
-As part of our ongoing efforts to enhance the security and performance of Power Apps and Dataverse platform, we're announcing the deprecation of support for authenticating with SharePoint via Azure Control Services (ACS) and rely on On Behalf Of authentication. This change applies only to user-based connections which are seen in the [SharePoint documents control](https://learn.microsoft.com/power-platform/admin/manage-documents-using-sharepoint). We have been using On Behalf Of authentication as the primary and only falling bac to ACS when OBO fails.
+As part of our ongoing efforts to enhance the security and performance of Power Apps and Dataverse platform, we're announcing the deprecation of support for authenticating with SharePoint via Azure Control Services (ACS) and rely on On Behalf Of authentication. This change applies only to user-based connections which are seen in the [SharePoint documents control](./admin/manage-documents-using-sharepoint.md). We have been using On Behalf Of authentication as the primary and only falling bac to ACS when OBO fails.
 
 ### Why is this needed?
 
@@ -38,7 +38,7 @@ Starting end of February 2025, support for the ACS fallbac will be removed and u
 
 ### What do you need to do?
 
-No changes are needed if users do not see a warning message bar. When users have a warning messsage bar, use the instructions in [Troubleshooting conditional access in authentication](https://learn.microsoft.com/power-platform/admin/troubleshooting-conditional-access-in-authentication).
+No changes are needed if users do not see a warning message bar. When users have a warning messsage bar, use the instructions in [Troubleshooting conditional access in authentication](./admin/troubleshooting-conditional-access-in-authentication.md).
 
 ## Deprecation of Organization Insights Dashboard
 
