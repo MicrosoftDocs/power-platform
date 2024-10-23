@@ -38,7 +38,7 @@ Starting end of February 2025, support for the ACS fallbac will be removed and u
 
 ### What do you need to do?
 
-No changes are needed if users do not see a warning message bar. When users have a warning messsage bar, use the instructions in [Troubleshooting conditional access in authentication](https://learn.microsoft.com/power-platform/admin/troubleshooting-server-based-authentication).
+No changes are needed if users do not see a warning message bar. When users have a warning messsage bar, use the instructions in [Troubleshooting conditional access in authentication](https://learn.microsoft.com/power-platform/admin/troubleshooting-conditional-access-in-authentication).
 
 ## Deprecation of Organization Insights Dashboard
 
