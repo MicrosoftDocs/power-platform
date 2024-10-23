@@ -42,7 +42,7 @@ To connect your Dataverse environment to Git, you need to bind your environment 
 1. Sign in to the [Power Platform maker portal](https://make.powerapps.com) and navigate to the **Solutions** page.
 1. On the Solutions page, select **Connect to Git** from the command bar.
 1. Select either [**Environment**](#environment-binding) or [**Solution**](#solution-binding) from the connection type options and select your Azure DevOps organization and project. You can read more about the differences between environment and solution binding [in the following section](#how-to-choose-between-environment-and-solution-binding).
-1. Depending on your binding type, you can select a repository and folder to bind the environment or solution to and select **Connect**.
+1. Depending on your binding type, you can select a project, repository, branch and enter a folder to bind the environment or solution to and select **Connect**.
 
 ### How to choose between Environment and Solution binding
 
