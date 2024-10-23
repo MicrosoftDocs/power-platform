@@ -101,6 +101,14 @@ Here's an example PowerShell script that turns off solution checker enforcement.
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none
 ```
 
+### Set rule exclusions
+
+Here's an example PowerShell script that enables solution checker enforcement in block mode and adds rule exclusions. After you run it, the slider shows block mode in the **Solution checker** section of the Managed Environments settings, and the rule exclusions are set.
+
+```powershell
+SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none -RuleExclusions "web-use-async,web-use-offline"
+```
+
 ### See also
 
 [Managed Environments overview](managed-environment-overview.md) <br />
