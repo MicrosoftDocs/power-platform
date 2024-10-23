@@ -1,6 +1,6 @@
 ---
 title: Administrative privileges (preview)
-description: Learn how to manage security in the Power Platform admin center with security features available.
+description: Learn how to review users who have these privileged roles, review the user list, and remove users who should no longer have privileged access.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Security overview (preview)
+# Administrative privileges (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                              
 You can improve the security score of your tenant by limiting the number of users who have high privileged administrative roles in Microsoft Entra ID and Power Platform. This feature enables you to review users who have these privileged roles, review the user list, and remove users who should no longer have privileged access. 
