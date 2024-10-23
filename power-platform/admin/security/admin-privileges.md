@@ -15,7 +15,12 @@ search.audienceType:
 # Administrative privileges (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                              
-You can improve the security score of your tenant by limiting the number of users who have high privileged administrative roles in Microsoft Entra ID and Power Platform. This feature enables you to review users who have these privileged roles, review the user list, and remove users who should no longer have privileged access. 
+You can improve the security score of your tenant by limiting the number of users who have high-privileged, administrative roles in Microsoft Entra ID and Power Platform. This feature allows you to review users who have these privileged roles, review the user list, and remove users who should no longer have privileged access. 
 
-The **Security** page provides a proactive recommendation if your tenant has many users with administrative privileges. You can open the recommendation which shows you a list of environments with many users (currently >20) with the System administrator security role. Click on the link below the “System administrators” column for any listed environment to display the security roles page. From there, you can select the “System administrator” security role, click Membership to view a list of users with the role assignment. From the membership page, you can select users to remove from the role, one user at a time. 
+> [!Note]
+> This feature is only available for Managed Environments.
 
+The **Security** page provides a proactive recommendation if your tenant has many users with administrative privileges. You can open the recommendation which shows you a list of environments with many users&mdash;currently more than 20 users&mdash; with the system administrator security role. Select the link below the **System administrators** column for any listed environment to display the **Security roles** page. From there, you can select the **System administrator** security role and select **Membership** to view a list of users with the role assignment. From the **Membership** page, you can select users to remove from the role, one user at a time. 
+
+> [!Note]
+> Only users assigned to the Global administrator role can remove other users from the Global administrator role. 
