@@ -4,7 +4,7 @@ description: Learn how to manage threat detection in the Power Platform admin ce
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2024
+ms.date: 10/23/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -12,7 +12,8 @@ search.audienceType:
   - admin
 ---
 
-# Threat detection
+# Threat detection (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 Threat detection is crucial in cybersecurity, leveraging AI and machine learning to monitor and analyze network traffic, user behavior, and system activities for anomalies. This real-time analysis allows swift identification and response to suspicious actions, ensuring data security and compliance.
 
