@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2024
+ms.date: 10/23/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -23,10 +23,10 @@ Similar to folders, _environment groups_ are designed to help administrators org
 
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
 
-- [Sharing controls for copilots and canvas apps](managed-environment-sharing-limits.md)
+- [Custom agent and Microsoft 365 Copilot agents sharing rules](managed-environment-sharing-limits.md#custom-agent-and-microsoft-365-copilot-agents-sharing-rules-preview)
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
 - [Generative AI settings](geographical-availability-copilot.md)
-- [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
+- [Canvas app sharing rules](managed-environment-sharing-limits.md#canvas-app-sharing-rules)
 - [Maker welcome content](welcome-content.md)
 - [Solution checker enforcement](managed-environment-solution-checker.md)
 - [Usage insights](managed-environment-usage-insights.md)
@@ -158,7 +158,7 @@ As you experiment with environment groups, you might have leftover groups that y
 
 
 
-## See also
+## Related content
 
 [Managed Environments overview](managed-environment-overview.md) <br>
 [Usage insights](managed-environment-usage-insights.md) <br>
