@@ -38,6 +38,7 @@ Our Power Platform templates for SAP and ready-to-use copilots can accelerate yo
 Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of Power Platform connectors.
 
 Learn more:
+ - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
  - [SAP ERP Connector](/connectors/saperp/)
  - [SAP OData Connector](/connectors/sapodata/)
  - [Getting Started with the SAP ERP Connector](guides/getting-started-with-the-sap-erp-connector.md)

@@ -30,6 +30,7 @@ Both connectors support data encryption in motion. Encryption from the gateway t
 Setup of the integration requires a small Windows virtual machine (VM) with at least 8GB of RAM for the On-Premises Data Gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
 
 Learn more:
+ - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
  - [SAP ERP Connector](/connectors/saperp/)
  - [SAP OData Connector](/connectors/sapodata/)
  - [Getting Started with the SAP ERP Connector](guides/getting-started-with-the-sap-erp-connector.md)

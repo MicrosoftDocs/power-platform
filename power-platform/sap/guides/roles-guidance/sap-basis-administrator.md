@@ -71,7 +71,7 @@ No installation is required on SAP servers to get Power Platform to work with SA
 
 
 Learn more:
-- [SAP and Power Platform white paper](https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/EehB5jAC3_5GpzCy5xopti0B6YbWuy2vlGuNiSralcg4GA?e=UaPhFV)
+- [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
 - [Use a solution to customize](power-platform/alm/use-solutions-for-your-customizations)
 - [Manage solutions using PowerShell](/power-platform/alm/powershell-api) 
  

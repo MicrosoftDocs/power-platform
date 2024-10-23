@@ -5,6 +5,8 @@ author: edlehman
 ms.author: edleh
 contributors:
   - EllenWehrle
+ms.contributors:
+  - reubenk
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 10/21/2024
@@ -84,7 +86,7 @@ Fiori Apps can be embedded in Power Apps menus, and Power Apps can also be embed
 Upgrading from SAP ECC to S4/HANA should not break integrations. Core data models may change, but prebuilt Power Automate flows account for these changes. SAP ensures their published APIs are carried over to new versions.
 
 Learn more:
-- [SAP and Power Platform white paper](https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/EehB5jAC3_5GpzCy5xopti0B6YbWuy2vlGuNiSralcg4GA?e=UaPhFV)
+- [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
 - [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
 - [Dataverse developer documentation](/power-apps/developer/data-platform/) 
 - [Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools](/power-platform/alm/conn-ref-env-variables-build-tools) 

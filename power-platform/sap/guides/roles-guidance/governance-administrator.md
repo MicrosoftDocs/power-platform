@@ -29,7 +29,7 @@ Principal propagation is a key mechanism that ensures secure and seamless authen
 Secure data transport is critical when integrating Power Platform with SAP systems. The on-premises data gateway acts as a bridge, providing secure data transfer between on-premises SAP systems and Power Platform. The gateway uses outbound ports to reach Azure services, ensuring that no inbound ports are required, which enhances security. Additionally, Secure Network Communications (SNC) can be configured to encrypt data between the gateway and SAP systems. Administrators should also implement [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies to control which connectors can be used and to prevent unauthorized data access or transfer.
 
 Learn more:
- - [SAP and Power Platform white paper](https://microsoft.sharepoint.com/:w:/t/SAPWhitepaper-HCL/EehB5jAC3_5GpzCy5xopti0B6YbWuy2vlGuNiSralcg4GA?e=UaPhFV)
+ - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
  - [Enable SAP Principal Propagation and SSO for Power Platform](/azure/sap/workloads/expose-sap-odata-to-power-platform)
  - [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
  - [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)
