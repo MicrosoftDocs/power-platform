@@ -4,7 +4,7 @@ description: Learn how to create or edit business units
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/19/2024
+ms.date: 10/24/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -49,8 +49,7 @@ Keep the following in mind when creating business units:
 
 -   Each business unit has a default team. You can't update the default team's name, nor delete the default team.
 
--   You can't add or remove users from the business unit's default team. However, you can change the user's current business unit to the new business unit. The system automatically removes the user from the previous business unit's default team and adds the user to the new business unit's default team. **Plugins/workflows** cannot be used for this type of user's team membership change. 
-
+-   You can't add or remove users from the business unit's default team. However, you can change a user's current business unit to the new business unit. The system automatically removes the user from the previous business unit's default team and adds the user to the new business unit's default team. **Plugins/workflows** can't be used for this type of user's team membership change. 
 
 -   You can assign a security role to the business unit's default team. This is done to simplify security role management where all your business unit team members can share the same data access.
 
