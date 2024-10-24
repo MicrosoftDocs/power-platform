@@ -33,7 +33,7 @@ The [on-premises data gateway](/data-integration/gateway/service-gateway-onprem)
 Setup of the integration requires a small Windows virtual machine (VM) with at least 8GB of RAM for the On-Premises Data Gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
 
 ## Authentication
-Our connectors support basic SAP authentication and single sign-on (SSO). SSO can be configured using either Kerberos or certificates.
+Our connectors support basic SAP authentication and single sign-on (SSO). SSO can be configured using either [Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos) or [certificates](guides/set-up-microsoft-entra-id-with-certificates).
 
 Learn more:
  - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
