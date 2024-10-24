@@ -24,7 +24,7 @@ Access controls are a fundamental aspect of securing modern IT environments, par
     > [!Note]
     > The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
 
-- **Environment security group**: Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
+- **Environment security groups**: Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
 
 - **Manage sharing**: This feature is applicable to Managed Environments only.Sharing gives administrators the ability to control who and what their makers can share (like canvas apps, cloud flows, and copilots) with other individual users and security groups, thereby ensuring that sensitive information is available only to authorized users, reducing the risk of data breachers and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
