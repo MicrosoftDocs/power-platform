@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center wit
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/23/2024
+ms.date: 10/24/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -62,12 +62,12 @@ Your total score would be (2 + 10 + 5 = 17) and the total possible score would b
 ## Reactive governance through recommendations
 The system generates various recommendations based on common, best practices that improve the security score of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security status. 
 
-- Administrators are guided through an intuitive experience to take relevant actions on environments for specific recommendations
+- Administrators are guided through an intuitive experience to take relevant actions on environments for specific recommendations.
 - Each recommendation shows the potential score increase to overall security score.
 
-While these recommendations span all environments, you can only act on them in environments that are managed. For non-managed environments, you still have the option to act or enable recommended features by navigating to the settings section in Security, locating the necessary feature, and turning it on for those environments.
+While these recommendations span all environments, you can only act on them in environments that are managed. For non-managed environments, you have the option to turn on recommended features by navigating to the settings section in **Security**, locating the necessary feature, and turning it on for those environments.
 
-## Feature Recommendation Conditions
+## Conditions that trigger feature recommendations
 Below is a table outlining the conditions that trigger specific feature recommendations.
 
 | Feature | Scope | Recommendation triggering condition |
