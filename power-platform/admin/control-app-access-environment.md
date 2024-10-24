@@ -219,13 +219,8 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 > [!NOTE]
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
-
-> [!TIP]
-> In audit mode, you must select at least one application to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.  Learn more in [Audit only mode (identify apps that allow or block)](#audit-mode-identify-apps-that-allow-or-block).
-
-#### Audit mode (identify apps that allow or block)
-
-If you choose **Audit** mode, auditing is used for both allowed and blocked apps. However, blocked access requests aren’t rejected.
+> 
+> In audit mode, you must select at least one application to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.
 
 The audit settings for an environment must be allowed, including the **Log access** option.
 
@@ -247,9 +242,9 @@ The audit settings for an environment must be allowed, including the **Log acces
 
    Your filtered audits appear.
 
-## Turn on enabled mode
+### Turn on enabled mode
 
-The enabled mode starts blocking apps that aren't allowed or apps that only allow approved apps. You can select apps to either have **Allowed** or **Blocked** access.
+Start blocking apps that are blocked or only allowed, approved apps. You can select apps to either have **Allowed** or **Blocked** access.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
@@ -266,8 +261,8 @@ The enabled mode starts blocking apps that aren't allowed or apps that only allo
    > [!NOTE]
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
 
-## Turn on enabled for roles mode
-The enabled for roles mode starts blocking apps that aren't allowed or only allows approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. 
+### Turn on enabled for roles mode
+Start blocking apps that are blocked, or only allowed, approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
@@ -286,9 +281,9 @@ The enabled for roles mode starts blocking apps that aren't allowed or only allo
 > [!NOTE]
 > The enabled for roles mode might take up to an hour to take effect, after you update the configuration settings.
 
-## Turn off app access control
+### Turn off app access control
 
-You can remove app access control by turning off the feature. With this setting, there are no restrictions on apps that run in an environment. 
+Turn off the feature. With this setting, there are no restrictions on apps that run in an environment. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
