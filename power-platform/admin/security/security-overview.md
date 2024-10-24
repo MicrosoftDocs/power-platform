@@ -65,7 +65,7 @@ The system generates various recommendations based on common, best practices tha
 - Administrators are guided through an intuitive experience to take relevant actions on environments for specific recommendations.
 - Each recommendation shows the potential score increase to overall security score.
 
-While these recommendations span all environments, you can only act on them in environments that are managed. For non-managed environments, you have the option to turn on recommended features by navigating to the settings section in **Security**, locating the necessary feature, and turning it on for those environments.
+While these recommendations span all environments, you can only act on them in environments that are managed. For non-managed environments, you have the option to turn on recommended features by navigating to the **Settings** page, locating the necessary feature, and turning it on for those environments.
 
 ## Conditions that trigger feature recommendations
 Below is a table outlining the conditions that trigger specific feature recommendations.
@@ -86,22 +86,23 @@ Below is a table outlining the conditions that trigger specific feature recommen
 | Tenant isolation | Tenant | Tenant isolation setting is turned off.|
 
 ## Manage proactive policies for governance and security
-There are several security features that help secure your tenant. You may visit the pages below to view and manage proactive policies for governance and security.
+There are several security features that help secure your tenant. Use the following links to view and manage proactive policies for governance and security.
 
 - [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network.
-- [Access control](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
+- [Access controls](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
 - [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
 
 ## Fequently asked questions (FAQs)
 
 ### How is the Security score calculated?
-The Security Score is calculated based on the security features turned on in your environment. Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. It’s important to note that as new security features are added, the total possible score may change. This means that your overall security score might be affected even if your current settings remain the same. 
+The Security score is calculated based on the security features turned on in your environment. Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. It’s important to note that as new security features are added, the total possible score may change. This means that your overall security score might be affected even if your current settings remain the same. 
 
 ### Why don’t I see all the environments in the recommendation action?
-These recommendations span across all environments, you can only act on these recommendations in environments that are managed. For non-managed environments, you still have the option to act or enable recommended features by navigating to the settings section, locating the necessary features, and turning it on for those specific environments.
+These recommendations span across all environments, but you can only act on these recommendations in Managed Environments. For non-Managed Environments, you have the option to turn on recommended features by navigating to the **Settings** page, locating the necessary features, and turning it on for those specific environments.
 
 ### Can customers modify the recommendations based on their needs?
 No. The recommendations are system-generated and are based on Microsoft's best practices and guidance.
-When will the security score be updated after taking recommended actions?
-Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. This does not get reflected in real time.
+
+### When is the security score be updated after taking recommended actions?
+Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. This doesn't get reflected in real-time.
