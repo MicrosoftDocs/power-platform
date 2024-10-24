@@ -21,5 +21,5 @@ Network security is crucial for protecting applications and cloud workloads from
   
 - **IP address-based cookie binding**: This feature is applicable to only Managed Environments with Dataverse. It prevents session hijacking exploits in Dataverse with IP address-based cookie binding. Learn more in [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
   
-- **Azure Virtual Network policies**: This feature is applicable only to Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Learn more in [Virtual Network support for Power Platform overview](../vnet-support-overview.md).
+- **Azure Virtual Network policies**: This feature is applicable only to Managed Environments. Setting up Azure Virtual Network helps you integrate Power Platform with resources inside your virtual network without exposing them over the public internet. Learn more in [Virtual Network support overview](../vnet-support-overview.md).
 
