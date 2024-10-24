@@ -65,7 +65,7 @@ Check your security role:
 1. Select **Save**.  
 
 > [!NOTE]
-> You can create two access team templates per entity.
+> You can create four access team templates per entity. See [Auto-created (system-managed) access team](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information#auto-created-system-managed-access-team) if you need to create more.
 
 ## Add a team template to the entity form   
   
