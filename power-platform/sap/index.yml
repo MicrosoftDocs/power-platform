@@ -137,8 +137,12 @@ sections:
       summary: Set up SNC for SAP and Microsoft Power Platform
       url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-secure-network-communications
     - componentType: summary-card
+      title: Entra ID using Kerberos (SSO)
+      summary: Use Kerberos SSO connections from the Power Platform to SAP.
+      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates    
+    - componentType: summary-card
       title: Entra ID using certficates (SSO)
-      summary: Use SSO connections from the Power Platform to SAP.
+      summary: Use certificate-based SSO connections from the Power Platform to SAP.
       url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
     - componentType: summary-card
       title: Power Platform security and governance
@@ -169,7 +173,7 @@ sections:
       summary: Engage with the community to learn and share about using SAP connectors.
       url: https://community.powerplatform.com/globalsearch/?q=SAP
     - componentType: summary-card
-      title: SAP on SAP on Azure YouTube channel
+      title: Power Platform on SAP on Azure YouTube channel
       summary: Learn about Power Platform and SAP on the Power Platform and SAP on Azure YouTube channel.
       url: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
     - componentType: summary-card
