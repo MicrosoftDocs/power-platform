@@ -17,31 +17,43 @@ search.audienceType:
                                                   
 Access controls are a fundamental aspect of securing modern IT environments, particularly within cloud-based platforms such as Azure Virtual Networks and Power Platform. These controls are designed to ensure that only authorized users can access specific resources, thereby protecting sensitive data and maintaining the integrity of organizational systems.
 
-- **Tenant isolation**: Tenant isolation lets Power Platform administrators govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more in [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md).
+## Tenant isolation 
+Tenant isolation lets Power Platform administrators govern the movement of tenant data from Microsoft Entra-authorized data sources to and from their tenant. Learn more in [Cross-tenant inbound and outbound restrictions](../cross-tenant-restrictions.md).
 
-- **Data policies**: Setting up data policies at the environment or tenant-level acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more in [Data policies](../wp-data-loss-prevention.md).
+## Data policies 
+Setting up data policies at the environment or tenant-level acts as guardrails to help reduce the risk of users from unintentionally exposing organizational data. Learn more in [Data policies](../wp-data-loss-prevention.md).
 
-    > [!Note]
-    > The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
+> [!Note]
+> The recommendation for data policies is triggered when there is no tenant-level policy defined. At this time, any environment-scoped data policies are not considered when performing the security assessment for the tenant.
 
-- **Environment security groups**: Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
+## Environment security groups 
+Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
 
-- **Manage sharing**: This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and copilots&mdash;with other individual users and security groups, thereby ensuring that sensitive information is available only to authorized users, reducing the risk of data breachers and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
+## Manage sharing 
+This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and copilots&mdash;with other individual users and security groups, thereby ensuring that sensitive information is available only to authorized users, reducing the risk of data breachers and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
-- **App access control**
-This feature is applicable to Managed Environments only.You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration helps prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantages.
+## App access control
+This feature is applicable to Managed Environments only. You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration helps prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantages.
 
-    When this capability is activated in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
+When this capability is activated in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
-- **Guest access**
+## Guest access
 You can bolster your security score by prohibiting guest access to your environment. This feature restricts anyone who is designated as a guest in your tenant in Microsoft Entra from interacting with any resources that have been shared with them or that they made. [Learn more](https://microsoft-my.sharepoint.com/personal/matgupta_microsoft_com/Documents/aka.ms/PowerPlatformGuestAccess).
 
-    > [!Note]
-    > Items made in Microsoft Copilot Studio may use Graph connectors as knowledge sources, and the information in them may be accessible to guests for now even if this setting is on.
+> [!Note]
+> Items made in Microsoft Copilot Studio may use Graph connectors as knowledge sources, and the information in them may be accessible to guests for now, even if this setting is on.
 
-- **Administrator privileges**
-You can improve the security posture of your tenant by limiting the number of users who have high privileged, administrative roles in Microsoft Entra ID and Power Platform. This feature allows you to review users who have these privileged roles, review the user list, and remove users who should no longer have privileged access. Learn more in [Administer Microsoft Power Platform](../admin-documentation.md).
+## Administrator privileges
+This feature is applicable to Managed Environments only. You can improve the security posture of your tenant by limiting the number of users who have high privileged, administrative roles in Microsoft Entra ID and Power Platform. This feature allows you to review users who have these privileged roles, review the user list, and remove users who should no longer have privileged access. Learn more in [Administer Microsoft Power Platform](../admin-documentation.md).
 
-    > [!Note]
-    >  Only users assigned to the global administrator role can remove other users from the global administrator role.
+### Users with administrative privileges
+The **Administrative privileges** pane provides a proactive recommendation if your tenant has many users with administrative privileges. You can open the recommendation which shows you a list of environments with many users&mdash;currently more than 20 users&mdash;with the system administrator security role. Select the link below the **System administrators** column for any listed environment to display the **Security roles** page. From there, you can select the **System administrator** security role and select **Membership** to view a list of users with the role assignment. From the **Membership** page, you can select users to remove from the role, one user at a time. 
 
+> [!Note]
+> Only users assigned to the Global administrator role can remove other users from the Global administrator role.
+
+### Known issues
+Be aware of the following known issues with the feature:
+
+- The security role **Membership** page displays only the security roles in the default business unit. Turn off the **Display only parent security roles** option to list all security roles across all business units.
+- After you remove a user from the system administrator role, it takes around 24 hours for the updated admin count to show up on the page.
