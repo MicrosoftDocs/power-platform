@@ -18,7 +18,7 @@ sections:
   title: Power Platform and SAP
   size: small
   textColor: brand
-  summary: "Microsoft Power Platform is a suite of AI-enabled, low-code development tools designed to help users build custom business solutions. Organizations using SAP leverage Power Platform as the agility layer to build applications and automate business process that are deeply connected to their SAP system. Find out how you can make the most of your SAP system and speed up time to value with Power Platform here." 
+  summary: "Microsoft Power Platform is a suite of AI-enabled, low-code development tools designed to help users build custom business solutions. Organizations using SAP leverage Power Platform as the agility layer to build applications and automate business processes that are deeply connected to their SAP system. Find out how you can make the most of your SAP system and speed up time to value with Power Platform here." 
   background:
     componentType: image # Note difference with the below example
     src: /power-platform/sap/guides/media/index-page/Hero.png
@@ -81,7 +81,7 @@ sections:
     #     componentType: image
     #     src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
     - componentType: icon-card
-      title: Governance administrator
+      title: Compliance and security administrator
       summary: "Govern and secure Power Platform and SAP integration."
       url: /power-platform/sap/guides/roles-guidance/governance-administrator
       icon:
@@ -96,7 +96,7 @@ sections:
     #     src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
     - componentType: icon-card
       title: SAP consultant
-      summary: "Build Power Apps integrated with SAP"
+      summary: "Build Power Apps integrated with SAP."
       url: /power-platform/sap/guides/roles-guidance/sap-consultant
       icon:
         componentType: image
@@ -122,7 +122,7 @@ sections:
   blocks:
     - componentType: summary-card
       title: Power Platform and SAP Setup Assistant
-      summary: Configure Power Platform and SAP integration with our Setup Assistant
+      summary: Configure Power Platform and SAP integration with our Setup Assistant.
       url: https://learn.microsoft.com/en-us/power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
     - componentType: summary-card
       title: SAP ERP connector
@@ -134,7 +134,7 @@ sections:
       url: https://www.microsoft.com
     - componentType: summary-card
       title: Secure Network Communications (SNC)
-      summary: Set up SNC for SAP and Microsoft Power Platform
+      summary: Set up SNC for SAP and Microsoft Power Platform.
       url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-secure-network-communications
     - componentType: summary-card
       title: Entra ID using Kerberos (SSO)
