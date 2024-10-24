@@ -26,9 +26,9 @@ Access controls are a fundamental aspect of securing modern IT environments, par
 
 - **Environment security group**: Setting up security groups helps control which licensed users can access environments. Learn more in [Control user access to environments: security groups and licenses](../control-user-access.md).
 
-- **Manage Sharing**: This feature is applicable to Managed Environments only.Sharing gives administrators the ability to control who and what their makers can share (like canvas apps, cloud flows, and copilots) with other individual users and security groups, thereby ensuring that sensitive information is available only to authorized users, reducing the risk of data breachers and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
+- **Manage sharing**: This feature is applicable to Managed Environments only.Sharing gives administrators the ability to control who and what their makers can share (like canvas apps, cloud flows, and copilots) with other individual users and security groups, thereby ensuring that sensitive information is available only to authorized users, reducing the risk of data breachers and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
-- **Client application access control**
+- **App access control**
 This feature is applicable to Managed Environments only.You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration helps prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantages.
 
     When this capability is activated in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
