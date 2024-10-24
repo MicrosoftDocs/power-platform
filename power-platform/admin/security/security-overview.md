@@ -48,13 +48,13 @@ The security score is calculated based on the security features turned on in you
 - **Feature impact:** Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. As new security features are added, the total possible score may change, which can affect your overall score even if your settings remain the same.
 - **Score calculation formula:** The security score is calculated using the formula: **(your score/total possible score) * 100**.
 
-For example, if you have a tenant with ten environments (five Managed Environments and five non-Managed Environments), and you have the following features configured:
+For example, if you have a tenant with 10 environments (five Managed Environments and five non-Managed Environments), and you have the following features configured:
 
-- IP firewall: On in two of ten environments (2 points)
-- Tenant isolation: On in ten of ten environments (10 points)
-- Environment security group: On in five of ten environments (5 points)
+- IP firewall: On in two of 10 environments (2 points)
+- Tenant isolation: On in 10 of 10 environments (10 points)
+- Environment security group: On in five of 10 environments (5 points)
   
-Your total score would be (2 + 10 + 5 = 17) and the total possible score would be 30. Using the formula, your security score would be: (17/30) * 100 = 56.66%
+Your total score would be (2 + 10 + 5 = 17) and the total possible score would be 30. Your security score would be: (17/30) * 100 = 56.66%
 
 > [!Important]
 > The security score refreshes every 24 hours and any action taken could take up to 24 hours to reflect the updated score. 
@@ -65,19 +65,19 @@ The system generates various recommendations based on common, best practices tha
 - Administrators are guided through an intuitive experience to take relevant actions on environments for specific recommendations.
 - Each recommendation shows the potential score increase to overall security score.
 
-While these recommendations span all environments, you can only act on them in environments that are managed. For non-managed environments, you have the option to turn on recommended features by navigating to the **Settings** page, locating the necessary feature, and turning it on for those environments.
+While these recommendations span all environments, you can only act on them in environments that are managed. For non-Managed Environments, you have the option to turn on recommended features by navigating to the **Settings** page, locating the necessary feature, and turning it on for those environments.
 
 ## Conditions that trigger feature recommendations
 Below is a table outlining the conditions that trigger specific feature recommendations.
 
 | Feature | Scope | Recommendation triggering condition |
 |----------|------|--------------------------------------|
-| Administrator privileges | Environment | Environments with more than ten administrators. 
+| Administrator privileges | Environment | Environments with more than 10 administrators. 
 | Auditing  | Environment | Environments with auditing turned off. |
 | Customer Lockbox | Tenant | Tenants with Customer Lockbox on, but no Managed Environments. |
 | Client application access control | Environment | Environments with auditing turned on and client application access control not configured. |
 | Data policy | Tenant | No tenant level policy set. |
-| Environments Azure Virtual Network | Environment | Environments with no Virutal Network policy. |
+| Environments Azure Virtual Network | Environment | Environments with no Virtual Network policy. |
 | Environment security group | Environment | Environments with no security group. |
 | Guest access | Environment |Environments with restricted guest access turned off. |
 | IP firewall | Environment | Environments with IP firewall not configured. |
@@ -93,7 +93,7 @@ There are several security features that help secure your tenant. Use the follow
 - [Threat detection](threat-detection.md): Protect your organization’s assets and resources with a unified detection with features like auditing.
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md) and [customer-managed key](../customer-managed-key.md).
 
-## Fequently asked questions (FAQs)
+## Frequently asked questions (FAQs)
 
 ### How is the Security score calculated?
 The Security score is calculated based on the security features turned on in your environment. Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. It’s important to note that as new security features are added, the total possible score may change. This means that your overall security score might be affected even if your current settings remain the same. 
