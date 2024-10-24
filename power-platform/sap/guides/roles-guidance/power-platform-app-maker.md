@@ -19,10 +19,13 @@ ms.subservice: solution-templates
 Power Platform app makers can leverage Microsoft's Power Platform connectors for SAP to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
 ## SAP Connectors Overview
 Microsoft provides several connectors to integrate with SAP systems, including the ERP Connector for SAP and the OData Connector for SAP. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP) for more on selecting which connector to use and setting up the connectors in your environment.
-## Using SAP TCodes and BAPIs
-SAP Transaction Codes (TCodes) and Business Application Programming Interfaces (BAPIs) are essential for interacting with SAP systems. TCodes are shortcuts to access specific SAP transactions, while BAPIs are standardized programming interfaces that allow external applications to perform complex business operations in SAP. The SAP connectors can be used to call TCodes and BAPIs.
-- SAP TCodes: App makers can use TCodes to navigate to specific transactions within SAP. For example, the TCode VA01 is used to create a sales order.
+## Using SAP BAPIs and RFCs
+SAP Remote Function Calls (RFCs) and Business Application Programming Interfaces (BAPIs) are essential for interacting with SAP systems.
+SAP RFCs are the foundation that enables communications between SAP and other systems. RFCs must be remote-enabled in SAP to be accessible with the Power Platform SAP connectors. BAPIs are standardized RFCs that allow external applications to perform complex business operations in SAP. 
+- RFCs: App makers can use RFCs to retrieve specific details from SAP. For example RFC_GET_TABLE_ENTRIES can be used to read contents of a specific table and RFC_GET_FUNCTION_INTERFACE can retrieve the details of a specific function module.
 - BAPIs: BAPIs enable app makers to perform operations such as creating, updating, or retrieving data from SAP. For instance, the BAPI BAPI_SALESORDER_CREATEFROMDAT2 allows the creation of sales orders.
+
+Talk to an SAP expert in your organization or ask Microsoft Copilot to find specific BAPIs and RFCs.
 
 ## Working with Complex JSON Structures
 When calling Power Platform for SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
@@ -51,10 +54,14 @@ If SAP does not provide an API for a data object, there are several options avai
 ### Handling Custom SAP Fields
 
 The approach to handling custom fields in SAP depends on their location:
-
-Appended to SAP-Standard Tables: Use BAPI Extension Structures in Power Automate flows to populate these fields.
-Custom SAP Tables: Ensure the function modules updating these tables are remote-enabled to allow the SAP connector to invoke them.
+- **Appended to SAP-Standard Tables:** Use BAPI Extension Structures in Power Automate flows to populate these fields. Custom fields appended to standard SAP tables are supported if the tables are properly extended according to SAP custom fields standards for the table in the ABAP Dictionary (SAP TCode SE11). For more information, ask an SAP expert in your organization.
+- **Custom SAP Tables:** Ensure the function modules updating these tables are remote-enabled to allow the SAP connector to invoke them.
 
 ### Diagnosing User Security Errors
 
-To diagnose a user security error, run a trace in transaction ST01 to determine what is missing from the user's security profile. Confirm that the user has the S_RFC authorization object, which is required to execute BAPIs and remote-enabled custom RFCs.
+To diagnose a user security error, run a trace in transaction ST01 in the SAP GUI application to determine what is missing from the user's security profile. Confirm that the user has the S_RFC authorization object, which is required to execute BAPIs and remote-enabled custom RFCs.
+
+Learn more:
+ - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
+ - [SAP ERP Connector](/connectors/saperp/)
+ - [SAP OData Connector](/connectors/sapodata/)

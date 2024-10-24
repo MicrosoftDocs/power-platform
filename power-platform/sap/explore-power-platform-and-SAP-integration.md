@@ -25,7 +25,7 @@ Discover how to streamline your SAP business processes with the Power Platform. 
 
 :::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
-Our SAP connectors support all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA as well as all products across the SAP portolio.
+Our SAP connectors support all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA as well as all products across the SAP portolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html).
 
 Users of Power Platform apps integrated with SAP will need the following licenses:
  - A Power Apps Premium license
@@ -33,7 +33,7 @@ Users of Power Platform apps integrated with SAP will need the following license
 
 If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It is worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses. Customers can also use Digital Access Licenses as noted [here](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
 
-Our Power Platform templates for SAP and ready-to-use copilots can accelerate your Power Platform and SAP integration journey. These include sample cloud flows for common SAP business processes and Copilots to relieve SAP Basis adminstrators of time-consuming repetitive tasks.
+Our Power Platform templates for SAP and ready-to-use copilots can accelerate your Power Platform and SAP integration journey. These include sample cloud flows for common SAP business processes.
 
 Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of Power Platform connectors.
 
