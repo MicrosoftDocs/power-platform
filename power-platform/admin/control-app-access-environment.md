@@ -145,7 +145,6 @@ Here are some commonly used apps that are safe to allow.
 | 5bdbebb2-509f-458e-b56e-d0b934dfdafa | DynamicsInstaller |
 | 60216f25-dbae-452b-83ae-6224158ce95e | Microsoft Dynamics CRM App for Outlook |
 | 61d02d70-ab6c-4569-be48-787ea2cda65d | Dynamics 365 Analytics |
-| 6204c1d1-4712-4c46-a7d9-3ed63d992682 | Microsoft Flow Portal |
 | 637fcc9f-4a9b-4aaa-8713-a2a3cfda1505 | Dynamics CRM Online Administration |
 | 6eb29b24-9d89-4f26-bf2f-9a84ed2499b8 | Common Data Service Global Discovery Service |
 | 730d33da-0894-409f-a907-c577151719c5 | Flow-RP |
@@ -155,7 +154,6 @@ Here are some commonly used apps that are safe to allow.
 | 8d605dfc-1a04-4da6-9be2-8426724af3f3 | Power Platform Authorization Service PROD |
 | 978b42f5-e03a-4695-b8df-454959d032c8 | BAP |
 | 99ff962b-6252-4b98-8478-0c65a3ea1925 | InsightsAppsPlatform |
-| a8f7a65c-f5ba-4859-b2d6-df772c264e9d | make.powerapps.com |
 | a94f9c62-97fe-4d19-b06d-472bed8d2bcf | Azure SQL Database and Data Warehouse |
 | aeb01831-b358-4750-92ce-722e4f3ea7e8 | BizQA for CDS |
 | b5faaec4-04c9-45e6-990a-093ed6d02c94 | Dynamic 365 Sales Insights Connector for Power Automate |
@@ -165,7 +163,6 @@ Here are some commonly used apps that are safe to allow.
 | c92229fa-e4e7-47fc-81a8-01386459c021 | CDSUserManagement |
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | JobsServiceProd |
 | ef32e2a3-262a-44e5-a270-4dfb7b6d0bb2 | AiBuilder PAIO-CDS Prod |
-| 96ff4394-9197-43aa-b393-6a41652e21f8 | Microsoft Copilot studio |
 
 
 ##### Apps you might want to block
