@@ -281,7 +281,7 @@ Start blocking apps that are blocked, or only allowed, approved apps. For apps t
 > [!NOTE]
 > The enabled for roles mode might take up to an hour to take effect, after you update the configuration settings.
 
-### Turn off app access control
+### Turn off the app access control feature
 
 Turn off the feature. With this setting, there are no restrictions on apps that run in an environment. 
 
