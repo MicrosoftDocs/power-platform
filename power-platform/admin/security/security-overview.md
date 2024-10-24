@@ -105,4 +105,4 @@ These recommendations span across all environments, but you can only act on thes
 No. The recommendations are system-generated and are based on Microsoft's best practices and guidance.
 
 ### When is the security score be updated after taking recommended actions?
-Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. This doesn't get reflected in real-time.
+Once you have taken action to turn on the feature, it might take up to 24 hours to reflect the overall security score. The security score isn't updated in real-time.
