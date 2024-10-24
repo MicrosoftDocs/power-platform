@@ -46,6 +46,7 @@ Keep the following in mind when creating business units:
 -   You can't add a user into a business unit directly. All newly provisioned users are assigned to the root business.
 
 -   You can change a user's business unit at any time. After the business unit is changed, the user shows up as a member of the business unit automatically.
+-   When you change a user's business unit, the system removes the user from the previous business unit and adds the user to the new business unit. You cannot use plugins/workflows for this change operation. 
 
 -   Each business unit has a default team. You can't update the default team's name, nor delete the default team.
 
