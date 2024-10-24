@@ -72,18 +72,18 @@ Below is a table outlining the conditions that trigger specific feature recommen
 
 | Feature | Scope | Recommendation triggering condition |
 |----------|------|--------------------------------------|
-| Administrator privileges | Environment | Environments with more than 10 administrators 
-| Auditing  | Environment | Environments with auditing off |
-| Customer Lockbox | Tenant | Tenants with Customer lockbox on but no managed environments |
-| Client application access control | Environment | Environments with auditing on and client application access control not configured |
-| Data policy | Tenant | No tenant level policy set |
-| Environments Azure VNet | Environment | Environments with no VNet policy |
-| Environment security group | Environment | Environments with no security group |
-| Guest Access | Environment |Environments with restricted guest access off |
-| IP Firewall | Environment | Environments with IP firewall not configured |
-| IP address-based cookie binding | Environment | Environments with IP address-based cookie binding not configured |
-| Sharing | Environment | Environments with no sharing limit |
-| Tenant isolation | Tenant | Tenant Isolation setting disabled|
+| Administrator privileges | Environment | Environments with more than ten administrators. 
+| Auditing  | Environment | Environments with auditing turned off. |
+| Customer Lockbox | Tenant | Tenants with Customer Lockbox on, but no Managed Environments. |
+| Client application access control | Environment | Environments with auditing turned on and client application access control not configured. |
+| Data policy | Tenant | No tenant level policy set. |
+| Environments Azure Virtual Network | Environment | Environments with no Virutal Network policy. |
+| Environment security group | Environment | Environments with no security group. |
+| Guest access | Environment |Environments with restricted guest access turned off. |
+| IP firewall | Environment | Environments with IP firewall not configured. |
+| IP address-based cookie binding | Environment | Environments with IP address-based cookie binding not configured. |
+| Sharing | Environment | Environments with no sharing limit. |
+| Tenant isolation | Tenant | Tenant isolation setting is turned off.|
 
 ## Manage proactive policies for governance and security
 There are several security features that help secure your tenant. You may visit the pages below to view and manage proactive policies for governance and security.
