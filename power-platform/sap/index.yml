@@ -123,47 +123,47 @@ sections:
     - componentType: summary-card
       title: Power Platform and SAP Setup Assistant
       summary: Configure Power Platform and SAP integration with our Setup Assistant.
-      url: https://learn.microsoft.com/en-us/power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
+      url: /power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
     - componentType: summary-card
       title: SAP ERP connector
       summary: Get started with the SAP ERP connector.
-      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/getting-started-with-the-sap-erp-connector
+      url: /power-platform/sap/guides/getting-started-with-the-sap-erp-connector
     - componentType: summary-card
       title: SAP OData connector
       summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
-      url: https://www.microsoft.com
+      url: /connectors/sapodata
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
-      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-secure-network-communications
+      url: /power-platform/sap/guides/set-up-secure-network-communications
     - componentType: summary-card
       title: Entra ID using Kerberos (SSO)
       summary: Use Kerberos SSO connections from the Power Platform to SAP.
-      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates    
+      url: /power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos    
     - componentType: summary-card
       title: Entra ID using certficates (SSO)
       summary: Use certificate-based SSO connections from the Power Platform to SAP.
-      url: https://learn.microsoft.com/en-us/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
+      url: /power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
     - componentType: summary-card
       title: Power Platform security and governance
       summary: Set up and maintain security and governance for Power Platform.
-      url: https://learn.microsoft.com/en-us/power-platform/admin/security
+      url: /power-platform/admin/security
     - componentType: summary-card
       title: Power Apps and Teams integration
       summary: Create apps in Microsoft Teams by using Power Apps.
-      url: https://learn.microsoft.com/en-us/power-apps/teams/create-apps-overview
+      url: /power-apps/teams/create-apps-overview
     - componentType: summary-card
       title: Power Platform Administration
       summary: Manage Power Platform environments.
-      url: https://learn.microsoft.com/en-us/power-platform/admin/
+      url: /power-platform/admin/
     - componentType: summary-card
       title: Power Platform solutions
       summary: Use solutions for application management and migration.
-      url: https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm
+      url: /power-platform/alm/solution-concepts-alm
     - componentType: summary-card
       title: Power Platform ALM
       summary: Implement application lifecycle management (ALM) using Microsoft Power Platform.
-      url: https://learn.microsoft.com/en-us/power-platform/alm/
+      url: /power-platform/alm/
 # # Additional links section
 - componentType: grid
   title: More resources
