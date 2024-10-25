@@ -38,7 +38,7 @@ This feature applies to Managed Environments only. You can protect against data 
 When this capability is activated in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
 ## Guest access
-You can bolster your security score by prohibiting guest access to your environment. This feature restricts anyone who is designated as a guest in your tenant in Microsoft Entra from interacting with any resources that have been shared with them or that they made. [Learn more](https://microsoft-my.sharepoint.com/personal/matgupta_microsoft_com/Documents/aka.ms/PowerPlatformGuestAccess).
+You can bolster your security score by prohibiting guest access to your environment. This feature restricts anyone who is designated as a guest in your tenant in Microsoft Entra from interacting with any resources that have been shared with them or that they made.
 
 > [!Note]
 > Items made in Microsoft Copilot Studio may use Graph connectors as knowledge sources, and the information in them may be accessible to guests for now, even if this setting is on.
