@@ -24,7 +24,7 @@ Select **Health** > **Service health** to get more information on all your servi
 Select the **Issue history** tab to view the history of incidents and advisories that have been resolved in the past 7-30 days. 
 
 ## Power Platform admin center
-In the the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home), you can go to **Help + support** > **Service health** to view all service health issues from the last 30 days. 
+In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home), you can go to **Help + support** > **Service health** to view all service health issues from the last 30 days. 
   
 ## Service changes
 
