@@ -281,20 +281,20 @@ Start blocking apps that are blocked and allow only approved apps. For apps that
 
 ### Turn off the app access control feature
 
-Turn off the feature. With this setting, there are no restrictions on apps that run in an environment. 
+Turn off the app access control feature. With this setting, there are no restrictions on apps that run in an environment. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** under the Security section.
-1. Select **Client application access control** under **Access controls**.
-1. Select the environment that you want to turn on client app access control.
+1. Select **Access controls** in the **Security** section.
+1. Select **App access control** in the **Access controls** section.
+1. Select the environment where you want to turn on client app access control.
 1. Select the **Enable client application access** button.
 1. Select **Disabled** in the **Access control** dropdown.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature.  Close the panel when you're done.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature. Close the panel when you're done.
 
 > [!TIP]
-> If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the access control is turned off to **Disabled**. There are no app restrictions in this environment.
+> If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the app access control feature is turned off to **Disabled**. There are no app restrictions in this environment.
 
 ## Error message: App denied user error
 
