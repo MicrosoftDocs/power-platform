@@ -17,7 +17,7 @@ You can quickly get a real-time status of your Dynamics 365, Power Platform, and
 On the [Power Platform admin center](https://admin.powerplatform.microsoft.com) home page dashboard, admins can add [Service health](admin-documentation.md#monitor-service-health) and [Message center](admin-documentation.md#message-center) cards for a quicker view of incidents and upcoming changes.
 
 ## Microsoft 365 service health
-You can see a snapshot of service health of your Microsoft services. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using one of the Microsoft 365 admin roles that include service health monitoring. See [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).  
+You can see a snapshot of service health of your Microsoft services. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using one of the Microsoft 365 admin roles that include service health monitoring. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).  
 
 Select **Health** > **Service health** to get more information on all your services.  
 
