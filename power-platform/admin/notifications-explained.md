@@ -21,7 +21,7 @@ Admins can use the [Microsoft 365 Message center](/office365/admin/manage/messag
 ## Service health dashboard
 The [Service health dashboard](/office365/enterprise/view-service-health) shows the health status of your Microsoft services. To learn how to get to the Microsoft 365 Service health dashboard, go to [Check your service health](check-online-service-health.md). 
 
-Service health communications in the Microsoft 365 admin center are limited to certain admin roles. [Assign admin roles](https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide) that have permission to view Service health and review them regularly to stay current on the latest Service health information.
+Service health communications in the Microsoft 365 admin center are limited to certain admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide) that have permission to view service health and review them regularly to stay current on the latest service health information.
 
 Sometimes we may need to notify you of issues occurring in your Managed Environment, where an admin or user in your organization may need to take action to resolve the issue. These communications  appear in the **Service health** page under the section titled **Issues in your environment that require action**. Learn more about this section in [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide).
 
