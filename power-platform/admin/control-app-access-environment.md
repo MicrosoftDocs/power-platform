@@ -304,4 +304,4 @@ Users see the following error message if they try to run an app not allowed:
 
 ## Related information
 
-[Verify first-party Microsoft applications in sign-in reports](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications)
+[Application IDs of commonly used Microsoft applications](/troubleshoot/azure/entra-id/governance/verify-first-party-apps-sign-in#application-ids-of-commonly-used-microsoft-applications)
