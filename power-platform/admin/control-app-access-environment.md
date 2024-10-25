@@ -261,20 +261,20 @@ Start blocking apps that are blocked and allow only approved apps. You can selec
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
 
 ### Turn on enabled for roles mode
-Start blocking apps that are blocked, or only allowed, approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. 
+Start blocking apps that are blocked and allow only approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** under the Security section.
-1. Select **Client application access control** under **Access controls**.
-1. Select the environment that you want to turn on client app access control.
+1. Select **Access controls** in the **Security** section.
+1. Select **App access control** in the **Access controls** section.
+1. Select the environment where you want to turn on client app access control.
 1. Select the **Enable client application access** button.
-1. Select **Enabled for roles** in the **Access control** dropdown.
-1. Select an application, then select **Allow**.
-1. Once your app is selected, select **Manage security roles**.
+1. Select **Enabled for roles** in the **Access control** dropdown list.
+1. Select an application, then select the **Allow** option that's located above the grid.
+1. Once your app is selected, select the **Manage security roles** option that's located above the grid.
 1. Select one or more desired security roles.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to start blockig apps that are blocked or only allowed, approved apps.  Close the panel when you're done.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to assign security roles. Close the panel when you're done.
 
 > [!NOTE]
 > The enabled for roles mode might take up to an hour to take effect, after you update the configuration settings.
