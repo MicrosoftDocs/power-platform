@@ -28,8 +28,8 @@ In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/h
   
 ## Service changes
 
-Select the **Health** > **Message center** on your home dashboard to view and track upcoming changes, including new and changed features, planned maintenance, or other important announcements
-  
+Select the **Health** > **Message center** on your home dashboard in the Microsoft 365 admin center to view and track upcoming changes, including new and changed features, planned maintenance, or other important announcements
+   
 ### Related content
 [Get Help + Support](get-help-support.md) <br />
 [Microsoft Dataverse analytics](analytics-common-data-service.md)
