@@ -117,12 +117,12 @@ To **add** an application from the list:
    :::image type="content" source="media/control-client-app-access-to-environment/new-application-form.png" alt-text="Screenshot showing the location of the ApplicationId and Name fields. The image also shows where the Save button is located.":::
 
 To **remove** an application from the list:
+
 1.  Select an app.
 2.  Select the **Delete** button.
 
 > [!NOTE]
-> If you removed an system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
->
+> If you removed a system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
 
 #### Allow or block apps
 
@@ -164,7 +164,6 @@ Here are some commonly used apps that are safe to allow.
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | JobsServiceProd |
 | ef32e2a3-262a-44e5-a270-4dfb7b6d0bb2 | AiBuilder PAIO-CDS Prod |
 
-
 ##### Apps you might want to block
 
 These apps are powerful exporters of data. Blocking them prevents possible data exfiltration of sensitive information.
@@ -180,11 +179,13 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 ## Turn on Client app access control for your environment
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** under the Security section.
-1. Select **Client application access control** under **Access controls**.
+1. Select **Access controls** in the **Security** section.
+1. Select **App access control** in the **Access controls** section.
 1. Select the environment that you want to turn on client app access control.
-> [!NOTE]
-> To use the client app access control, the environment must be a Managed environment. You will be prompted to turn it on if you selected a non Managed environment.
+1. Select **Enable client application access**.
+
+    > [!NOTE]
+    > To use the app access control, the environment must be a Managed environment. You will be prompted to turn it on if you selected a non-Managed Environment.
 
 ## Recommended steps 
 
