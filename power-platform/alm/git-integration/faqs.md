@@ -40,6 +40,17 @@ Make sure that your Azure DevOps Git repo has been initialized. New projects/rep
 
 This feature is designed to only have your development environments tied to source control where we will persist all of your solution customizations in source. Getting those customizations into an upstream environment will be done by building a managed solution and deploying it as a managed solution.
 
+## How do I work with branches?
+The feature currently works with a single branch that you specify when you bind the environment or solutions to your repository.  You can still use git operations to work with other branches, including raising PRs and merging with other branches.  The feature will support working with multiple branches in the future.
+
+## Why do I not see unmanaged and managed solution representation for different components?
+The feature works with unmanaged layers and does not work with managed layers.  The solution system has been modified to remove the difference in component representations between unmanaged and managed files and a single representation of all components is now supported.
+
+## Why is my source code files in YAML yet the solution export is still primarily XML?
+The feature is using YAML to represent solution content as it is easier to read, understand, and it facilitates easier merges.  Future versions of PAC CLI will be able to build a valid solution file directly from this new source format.
+
+## How can I deploy a solution from source code?
+Future versions of PAC CLI will be able to build a valid managed solution file from the source files, and future versions of pipelines will be able to deploy from source code, but for now, deployment will remain a fresh solution export from the source environment and deploying that to a target environment.
 
 ### Related content
 
