@@ -33,7 +33,7 @@ Admins can view service health issues for the last 30 days from the **Help + sup
 ## Email service notifications
 The notifications sent from the Business & Industry Copilot communications team are for the following services and are sent from the listed email addresses. Be sure to check your spam folder for these messages.
 
-|Service | Email notification sent from | 
+|Service | Email notifications sent from | 
 |--------|-------------------------------| 
 | Microsoft Dynamics 365 apps   | msdynamics365@microsoft.com  | 
 | Microsoft Dynamics 365 finance and operations apps  | msdyn365finops@microsoft.com| 
