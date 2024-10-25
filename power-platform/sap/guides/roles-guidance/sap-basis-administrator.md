@@ -16,10 +16,6 @@ ms.subservice: solution-templates
 
 SAP Basis Administrators play a crucial role in enabling the integration of SAP systems with Microsoft Power Platform. This integration allows for the creation of applications, workflows, and chatbots that enhance business processes by leveraging SAP data.
 
- ## Using Copilots to Automate Administrative Tasks
-
-Copilot Studio enables administrators to create and customize AI-powered conversational chatbots (Copilots) that can automate various administrative tasks, such as password resets. These Copilots can interact with users through natural language, providing a user-friendly interface for performing routine tasks efficiently.
-
 ## Architecture of the Integration
 
 The integration between Power Platform and SAP involves several key components:
@@ -42,6 +38,10 @@ To enable the integration, administrators need to set up and configure the neces
 
 The Power Platform SAP Setup Assistant provides a guided implementation of the integration. It walks administrators through a checklist of manual and automated steps to get the Power Platform and SAP solution up and running. This includes setting up the on-premises data gateway, configuring connectors, and ensuring secure data transport.
 
+ ## Using Copilots to Automate Administrative Tasks
+
+Copilot Studio enables administrators to create and customize AI-powered conversational chatbots (Copilots) that can automate various administrative tasks, such as password resets. These Copilots can interact with users through natural language, providing a user-friendly interface for performing routine tasks efficiently.
+
 ## Quick tips
 ### Impact of Power Platform on SAP System Performance
 
@@ -49,16 +49,16 @@ The Power Platform operates on SAP’s API layer, which typically offers better 
 
 ### Performance Bottlenecks in the SAP Connector
 
-There are no inherent performance bottlenecks in the SAP connector. Typically, any bottlenecks are within the SAP system itself. The number of concurrent API threads can be configured to match the session limits on your SAP servers. Additionally, clusters can be arranged for the on-premises data gateway.
+There are no inherent performance bottlenecks in the SAP connector. Typically, any bottlenecks are within the SAP system itself.
 
 ### Authentication Methods Against SAP
 
-The Power Platform currently supports three of the four authentication methods for SAP:
+The Power Platform currently the following authentication methods for SAP:
 
-HTTP/OData: Using the HTTP connector, the user authenticates against the OData service.
-Username/Password: Inside Power Apps, a user is prompted for their SAP username and password, which is then sent to SAP.
-OAuth (Kerberos): The On-premises Data Gateway requests a Kerberos ticket on behalf of the Power Apps user, which is then sent to SAP.
-OAuth (X.509): This method is not currently supported but is planned for future support. SAP can support both X.509 and Kerberos authentication on the same SAP instance.
+- **HTTP/OData:** Using the HTTP connector, the user authenticates against the OData service.
+- **Username/Password:** Inside Power Apps, a user is prompted for their SAP username and password, which is then sent to SAP.
+- **OAuth (Kerberos):** The On-premises Data Gateway requests a Kerberos ticket on behalf of the Power Apps user, which is then sent to SAP.
+
 ### Ensuring User Permissions in Power Platform
 
 SAP’s published APIs perform the same security checks as if the user were in the SAP GUI. Additionally, Power Automate flows can query a user’s authorization objects to conditionally hide apps, fields, and buttons, ensuring the user experience matches their permissions in SAP.
