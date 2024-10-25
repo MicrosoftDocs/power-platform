@@ -73,6 +73,13 @@ sections:
       icon:
         componentType: image
         src: /power-platform/sap/guides/media/index-page/power_platform_app_maker.svg
+    - componentType: icon-card
+      title: SAP consultant
+      summary: "Build Power Apps integrated with SAP."
+      url: /power-platform/sap/guides/roles-guidance/sap-consultant
+      icon:
+        componentType: image
+        src: /power-platform/sap/guides/media/index-page/sap_technical_consultant.svg
     # - componentType: icon-card
     #   title: Power Platform administrator
     #   summary: "Guidance on SAP access methods and a directory of the most used SAP data. (later)"
@@ -94,16 +101,10 @@ sections:
     #   icon:
     #     componentType: image
     #     src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
-    - componentType: icon-card
-      title: SAP consultant
-      summary: "Build Power Apps integrated with SAP."
-      url: /power-platform/sap/guides/roles-guidance/sap-consultant
-      icon:
-        componentType: image
-        src: /power-platform/sap/guides/media/index-page/sap_technical_consultant.svg
+   
     - componentType: icon-card
       title: SAP Basis administrator
-      summary: "Automate administration with Copilots and learn integration with SAP details."
+      summary: "Learn integration with SAP details and automate administration with Copilots."
       url: /power-platform/sap/guides/roles-guidance/sap-basis-administrator
       icon:
         componentType: image
