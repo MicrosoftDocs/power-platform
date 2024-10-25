@@ -225,10 +225,10 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 The audit settings for an environment must be allowed, including the **Log access** option.
 
-#### Retrieve app access audit log
+#### Retrieve your audit log list
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
-1. Select **Environments**, and then select the environment with the enabled feature.
+1. Select **Environments**, and then select an environment where you turned on auditing.
 1. Select **Settings**.  
 1. Select **Audit and logs** > **Audit summary view**.
 1. Select **Enable/Disable Filters** to review a list of heading dropdown capabilities.
@@ -242,20 +242,20 @@ The audit settings for an environment must be allowed, including the **Log acces
 
 ### Turn on enabled mode
 
-Start blocking apps that are blocked or only allowed, approved apps. You can select apps to either have **Allowed** or **Blocked** access.
+Start blocking apps that are blocked and allow only approved apps. You can select apps to either have **Allowed** or **Blocked** access.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** under the Security section.
-1. Select **Client application access control** under **Access controls**.
-1. Select the environment that you want to turn on client app access control.
+1. Select **Access controls** in the **Security** section.
+1. Select **App access control** in the **Access controls** section.
+1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Enable client application access** button.
-1. Select **Enabled** under the **Access control** dropdown.
-1. Select a Dataverse application, then select one of these options:
-   - **Allow** to allow access
-   - **Block** to deny access
+1. Select **Enabled** in the **Access control** dropdown list.
+1. Select a Dataverse application, then select one of these options, located above the grid:
+   - **Allow** to allow access to the app.
+   - **Block** to deny access to the app.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to start blockig apps that are blocked or only allowed, approved apps.  Close the panel when you're done.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to start blockig apps that are blocked and allow approved apps.  Close the panel when you're done.
 
    > [!NOTE]
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
