@@ -20,7 +20,7 @@ SAP Consultants can leverage Microsoft Power Platform to build applications that
 
 ## Microsoft Power Platform Connectors
 
-Microsoft Power Platform provides several [connectors to integrate with SAP systems](/power-platform/sap/connect-power-platform-and-SAP), including the SAP ERP Connector and the SAP OData Connector. These connectors encapsulate the necessary APIs for data exchange between Power Platform and SAP, supporting both RFC-based and HTTP-based connectivity. The connectors enable app makers to perform operations such as creating, updating, or retrieving data from SAP, making it easier to build integrated solutions.
+Microsoft Power Platform provides several [connectors to integrate with SAP systems](/power-platform/sap/connect-power-platform-and-SAP), including the Power Platform SAP ERP connector and the Power Platform SAP OData connector. These connectors encapsulate the necessary APIs for data exchange between Power Platform and SAP, supporting both RFC-based and HTTP-based connectivity. The connectors enable app makers to perform operations such as creating, updating, or retrieving data from SAP, making it easier to build integrated solutions.
 
 ## Capabilities of Power Platform Low Code Tools
 
@@ -54,19 +54,19 @@ Errors in SAP are displayed to users in Power Apps similarly to SAP, with red te
 Power Automate can attach files to objects in SAP using Generic Object Services (GOS) and/or ArchiveLink based on your requirements.
 
 ### Adding Custom Fields to Power Apps
-Adding custom fields to a Power App is straightforward. Fields can be inserted and copy-pasted in the WYSIWYG (What You See Is What You Get) editor6.
+Adding custom fields to a Power App is straightforward. Fields can be inserted and copy-pasted in the WYSIWYG (What You See Is What You Get) editor.
 
 ### Calling Custom Function Modules
 
-The Power Platform can call custom function modules if they are remote-enabled. However, SAP will not support custom function modules if they do not work correctly, as they are considered custom code7.
+The Power Platform can call custom function modules if they are remote-enabled. However, SAP will not support custom function modules if they do not work correctly, as they are considered custom code.
 
 ### Handling Completely Custom Processes in SAP
 
-Custom database tables can be read using the "Read SAP Table with Parsing" action for all read operations. For create and update operations, remote-enable the custom function modules used to maintain this data. Once remote-enabled, these function modules can be called by the SAP connector8.
+Custom database tables can be read using the "Read SAP Table with Parsing" action for all read operations. For create and update operations, remote-enable the custom function modules used to maintain this data. Once remote-enabled, these function modules can be called by the SAP connector.
 
 ### User Requirements for Power Apps
 
-No installation is required on users' PCs. All Power Apps are accessed through a web browser9.
+No installation is required on users' PCs. All Power Apps are accessed through a web browser.
 
 ### Deployment Time for Power Apps on SAP
 

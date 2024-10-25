@@ -27,6 +27,9 @@ The integration between Power Platform and SAP involves several key components:
 Power Platform Connectors: Microsoft provides connectors such as the SAP ERP Connector and the SAP OData Connector, which encapsulate the necessary APIs for data exchange between Power Platform and SAP. These connectors support both RFC-based and HTTP-based connectivity, enabling app makers to perform operations like creating, updating, or retrieving data from SAP1.
 On-Premises Data Gateway: The on-premises data gateway acts as a bridge, providing secure data transfer between on-premises SAP systems and Power Platform. It uses outbound ports to reach Azure services, ensuring no inbound ports are required, which enhances security1.
 Principal Propagation: This mechanism ensures secure and seamless authentication between Power Platform and SAP systems. It allows the identity of the user in Power Platform to be propagated to the SAP system, ensuring actions performed in SAP are attributed to the correct user1.
+
+:::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
+
 Implementing Microsoft Power Platform Connectors
 
 To enable the integration, administrators need to set up and configure the necessary connectors:

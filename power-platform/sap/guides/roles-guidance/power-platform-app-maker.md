@@ -16,9 +16,9 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 # Integrating SAP Data with Power Platform for App Makers
-Power Platform app makers can leverage Microsoft's Power Platform connectors for SAP to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
+Power Platform app makers can leverage Microsoft's Power Platform SAP connectors to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
 ## SAP Connectors Overview
-Microsoft provides several connectors to integrate with SAP systems, including the ERP Connector for SAP and the OData Connector for SAP. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP) for more on selecting which connector to use and setting up the connectors in your environment.
+Microsoft provides several connectors to integrate with SAP systems, including the SAP ERP Connector and the SAP OData Connector. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP) for more on selecting which connector to use and setting up the connectors in your environment.
 ## Using SAP RFCs and BAPIs
 SAP Remote Function Calls (RFCs) and Business Application Programming Interfaces (BAPIs) are essential for interacting with SAP systems.
 SAP RFCs are the foundation that enables communications between SAP and other systems. RFCs must be remote-enabled in SAP to be accessible with the Power Platform SAP connectors. BAPIs are standardized RFCs that allow external applications to perform complex business operations in SAP. 
@@ -28,7 +28,7 @@ SAP RFCs are the foundation that enables communications between SAP and other sy
 Talk to an SAP expert in your organization or ask Microsoft Copilot to find specific RFCs and BAPIs.
 
 ## Working with Complex JSON Structures
-When calling Power Platform for SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
+When calling Power Platform SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
 - Constructing JSON: Power Automate provides actions to construct JSON payloads required by SAP APIs. This involves defining the structure and populating it with the necessary data.
 - Parsing JSON: Power Automate also provides actions to parse JSON responses from SAP connectors. This allows app makers to extract specific data elements and use them in subsequent steps.
 
