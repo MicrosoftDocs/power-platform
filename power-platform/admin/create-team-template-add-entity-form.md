@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 10/25/2024
 search.audienceType: 
   - admin
 ---
@@ -65,7 +65,7 @@ Check your security role:
 1. Select **Save**.  
 
 > [!NOTE]
-> You can create four access team templates per entity. See [Auto-created (system-managed) access team](https://learn.microsoft.com/en-us/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information#auto-created-system-managed-access-team) if you need to create more.
+> You can create four access team templates per entity. Learn more in [Auto-created (system-managed) access team](../developer/data-platform/use-access-teams-owner-teams-collaborate-share-information.md#auto-created-system-managed-access-team) if you need to create more.
 
 ## Add a team template to the entity form   
   
