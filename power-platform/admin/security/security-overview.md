@@ -1,5 +1,5 @@
 ---
-title: Security overview (preview)
+title: Security overview
 description: Learn how to manage security in the Power Platform admin center with security features available.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,12 +12,9 @@ search.audienceType:
   - admin
 ---
 
-# Security overview (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Security overview
                                              
 The **Security** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. The **Security** page provides a centralized location to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 Administrators can:
 
@@ -57,7 +54,9 @@ For example, if you have a tenant with 10 environments (five Managed Environment
 Your total score would be (2 + 10 + 5 = 17) and the total possible score would be 30. Your security score would be: (17/30) * 100 = 56.66%
 
 > [!Important]
-> The security score refreshes every 24 hours and any action taken could take up to 24 hours to reflect the updated score. 
+> The security score refreshes every 24 hours and any action taken could take up to 24 hours to reflect the updated score.
+> The score calculation takes into account all environments, including both managed and non-managed ones.
+> If there are no managed environments to take action on in the recommendation panel, you will see no environments listed.
 
 ## Reactive governance through recommendations
 The system generates various recommendations based on common, best practices that improve the security score of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security status. 
@@ -86,7 +85,9 @@ Below is a table outlining the conditions that trigger specific feature recommen
 | Tenant isolation | Tenant | Tenant isolation setting is turned off.|
 
 ## Manage proactive policies for governance and security
-There are several security features that help secure your tenant. Use the following links to view and manage proactive policies for governance and security.
+There are several security features that help secure your tenant. Some of these features require being set as managed type as a prerequisite. If you decide to enable such a feature, you will be prompted to first change the environment to managed type before being allowed to configure the feature.
+
+Use the following links to view and manage proactive policies for governance and security.
 
 - [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network.
 - [Access controls](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.
