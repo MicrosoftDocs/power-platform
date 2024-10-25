@@ -211,10 +211,10 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 1. In the navigation pane, select **Security**.
 1. Select **Access controls** in the **Security** section.
 1. Select **App access control** in the **Access controls** section.
-1. Select the environment that you want to turn on client app access control.
+1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Enable client application access** button.
 1. Select the **AuditMode** option in the **Access control** dropdown list.
-1. Select a Dataverse application, then select **Allow** button, at the top of the grid.
+1. Select a Dataverse application, then select the **Allow** option that's located above the grid.
 1. Select **Save**.
 1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn on auditing.  Close the panel when you're done turning on the audit mode for your environments.
 
@@ -267,7 +267,7 @@ Start blocking apps that are blocked and allow only approved apps. For apps that
 1. In the navigation pane, select **Security**.
 1. Select **Access controls** in the **Security** section.
 1. Select **App access control** in the **Access controls** section.
-1. Select the environment where you want to turn on client app access control.
+1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Enable client application access** button.
 1. Select **Enabled for roles** in the **Access control** dropdown list.
 1. Select an application, then select the **Allow** option that's located above the grid.
@@ -287,9 +287,9 @@ Turn off the app access control feature. With this setting, there are no restric
 1. In the navigation pane, select **Security**.
 1. Select **Access controls** in the **Security** section.
 1. Select **App access control** in the **Access controls** section.
-1. Select the environment where you want to turn on client app access control.
+1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Enable client application access** button.
-1. Select **Disabled** in the **Access control** dropdown.
+1. Select **Disabled** in the **Access control** dropdown list.
 1. Select **Save**.
 1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature. Close the panel when you're done.
 
