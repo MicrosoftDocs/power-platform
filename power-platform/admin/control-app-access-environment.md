@@ -210,11 +210,11 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** under the Security section.
-1. Select **Client application access control** under **Access controls**.
+1. Select **Access controls** in the **Security** section.
+1. Select **App access control** in the **Access controls** section.
 1. Select the environment that you want to turn on client app access control.
 1. Select the **Enable client application access** button.
-1. Select the **AuditMode** option under the **Access control** dropdown.
+1. Select the **AuditMode** option in the **Access control** dropdown list.
 1. Select a Dataverse application, then select **Allow**.
 1. Select **Save**.
 
