@@ -14,9 +14,7 @@ ms.subservice: solution-templates
 ---
 # Microsoft Power Platform SAP Connectors compliance and security administration
 
-Compliance and security administrators 
-
-ensure secure, compliant, and efficient use of Microsoft SAP connectors within the Power Platform, with guidance provided in [Microsoft Power Platform documentation](/power-platform/guidance/).
+Compliance and security administrators ensure secure, compliant, and efficient use of Microsoft SAP connectors within the Power Platform, with guidance provided in [Microsoft Power Platform documentation](/power-platform/guidance/).
 
 ## Permissions enforcement
 SAP's published APIs perform the same security checks that are performed in the SAP GUI. Also, Power Automate flows can be configured to query user authorization objects so apps, fields, and buttons are conditionally hidden or revealed to match the user experience in SAP.

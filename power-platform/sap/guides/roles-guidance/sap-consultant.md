@@ -16,21 +16,21 @@ ms.subservice: solution-templates
 ---
 # Building integrated Power Platform Applications for SAP Consultants
 
-SAP Consultants can leverage Microsoft Power Platform to build applications that seamlessly integrate with SAP systems. This integration enables the creation of copilots, apps, workflows, and websites that enhance business processes by utilizing SAP data.
+SAP consultants can leverage Microsoft Power Platform to build applications that integrate seamlessly with SAP systems, including copilots, apps, workflows, and websites to enhance business processes using SAP data.
 
 ## Microsoft Power Platform Connectors
 
-Microsoft Power Platform provides several [connectors to integrate with SAP systems](/power-platform/sap/connect-power-platform-and-SAP), including the Power Platform SAP ERP connector and the Power Platform SAP OData connector. These connectors encapsulate the necessary APIs for data exchange between Power Platform and SAP, supporting both RFC-based and HTTP-based connectivity. The connectors enable app makers to perform operations such as creating, updating, or retrieving data from SAP, making it easier to build integrated solutions.
+Microsoft Power Platform offers connectors, including the SAP ERP and SAP OData connectors, for [streamlined SAP integration](/power-platform/sap/connect-power-platform-and-SAP). These connectors encapsulate APIs needed for data exchange, supporting RFC-based and HTTP-based connectivity. App makers can perform actions like creating, updating, or retrieving SAP data, making integrated solutions simpler to build.
 
 ## Capabilities of Power Platform Low Code Tools
 
-- **Power Apps:** Power Apps is a visual development tool that allows users to build custom applications with little to no code. It connects to various data sources, including SAP, and runs on any device. Power Apps can be used to create forms, dashboards, and interactive applications that streamline business processes.
+- **Power Apps:** Power Apps is a visual development tool that allows users to build custom applications including mobile apps with little to no code. It connects to various data sources, including SAP, and runs on any device. Power Apps can be used to create forms, dashboards, and interactive applications that streamline business processes.
 - **Power Automate (Cloud Flows):** Power Automate is a cloud-based automation platform that enables users to create workflows that automate repetitive tasks. It provides powerful AI, RPA, and process mining capabilities. With Power Automate, users can create flows that interact with SAP data, automate data entry, and trigger actions based on specific events.
-- **Copilot Studio:** Copilot Studio allows developers to create and customize AI-powered conversational chatbots (Copilots) for internal or external use. These chatbots can be integrated with SAP to provide users with a conversational interface for querying data, performing transactions, and receiving notifications.
+- **Copilot Studio:** Copilot Studio allows developers to create and customize AI-powered conversational chatbots (Copilots) and agents for internal or external use. These chatbots and agents can be integrated with SAP to provide users with a conversational interface for querying data, performing transactions, and receiving notifications.
 - **Power Pages:** Power Pages enables organizations to quickly design, configure, and publish secure, data-driven enterprise-grade websites. These websites can be integrated with SAP to provide users with access to SAP data and services through a web interface.
 ## Templates for Quick Start
 
- Microsoft provides a variety of [templates](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started) to help users get started quickly with building SAP-integrated solutions on Power Platform. These templates serve as starting points for specific use cases and outcomes, providing essential techniques, building blocks, and sample apps and flows. These templates can be customized to fit specific business needs and accelerate the development process.
+Microsoft offers [customizable templates](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started) to accelerate SAP-integrated solution development on Power Platform, providing essential techniques, building blocks, and sample apps and flows for specific use cases
 
 ## Example Workflow structure
 
@@ -40,7 +40,7 @@ Microsoft Power Platform provides several [connectors to integrate with SAP syst
 - **Parse** Response: The flow parses the JSON response to extract the sales order number.
 - **Update App:** The Power App is updated with the sales order number for user reference.
 
-## App-builing tips
+## App-building tips
 ### Using Power Automate Flows with Other Applications
 
 Power Automate flows that integrate with SAP can be triggered by custom applications or any software capable of REST integration.
@@ -74,16 +74,16 @@ Prebuilt Power Apps on SAP can transact against your SAP system immediately. How
 
 ### Building Mobile Power Apps on SAP
 
-Power Apps is responsive to mobile devices, and native apps can also be built on the Power Platform11.
+Power Apps is responsive to mobile devices, and native apps can also be built on the Power Platform.
 
 ### Coexistence of Fiori Apps and Power Apps
 
-Fiori Apps can be embedded in Power Apps menus, and Power Apps can also be embedded in the Fiori launchpad12.
+Fiori Apps can be embedded in Power Apps menus, and Power Apps can also be embedded in the Fiori launchpad.
 
 
 ### Upgrading from SAP ECC to S4/HANA
 
-Upgrading from SAP ECC to S4/HANA should not break integrations. Core data models may change, but prebuilt Power Automate flows account for these changes. SAP ensures their published APIs are carried over to new versions.
+Upgrading from SAP ECC to S4/HANA should not break integrations. SAP ensures their published APIs are carried over to new versions.
 
 Learn more:
 - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)

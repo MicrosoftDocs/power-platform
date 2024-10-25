@@ -37,7 +37,7 @@ The [on-premises data gateway](/data-integration/gateway/service-gateway-onprem)
 
 Setup of the integration requires a small Windows virtual machine (VM) with at least 8GB of RAM for the On-Premises Data Gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
 
-Recommended practice is to set up a separate gateway for each environment to enable testing changes without impacting other environments and to eliminate any risk of development testing impacting test and production environements.
+Recommended practice is to set up a separate gateway for each environment to enable testing changes without impacting other environments and to eliminate any risk of development testing impacting test and production environments.
 
 ### Learn more:
  - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
