@@ -12,13 +12,16 @@ ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
-# Microsoft Power Platform SAP Connectors governance and security
+# Microsoft Power Platform SAP Connectors compliance and security administration
 
-Governance administrators play a crucial role in ensuring the secure and efficient use of Microsoft SAP connectors within the Power Platform. This involves understanding Power Platform features that provide data transport between Power Platform and SAP systems and support efficient and compliant development practices. [Microsoft Power Platform guidance documentation](/power-platform/guidance/) provides in-depth guidance and best-practices for compliant, secure, and efficient power platform development.
+Compliance and security administrators play a crucial role in ensuring the secure and efficient use of Microsoft SAP connectors within the Power Platform. This involves understanding Power Platform features that provide data transport between Power Platform and SAP systems and support efficient and compliant development practices. [Microsoft Power Platform guidance documentation](/power-platform/guidance/) provides in-depth guidance and best-practices for compliant, secure, and efficient power platform development.
+
+## Permissions enforcement
+SAP's published APIs perform the same security checks that are performed in the SAP GUI. Also, Power Automate flows can be configured to query user authorization objects so apps, fields, and buttons are conditionally hidden or revealed to match the user experience in SAP.
 
 ## Principal Propagation
 
-Principal propagation is a key mechanism that ensures secure and seamless authentication between Power Platform and SAP systems. It allows the identity of the user in Power Platform to be propagated to the SAP system, ensuring that actions performed in SAP are attributed to the correct user. This is achieved through Single Sign-On (SSO) configurations using Microsoft Entra ID (formerly Azure Active Directory) and SAP's authentication mechanisms. By leveraging SSO, administrators can enforce consistent security policies and streamline user access management across both platforms.
+Principal propagation is a key mechanism that ensures secure and seamless authentication between Power Platform and SAP systems. The identity of the user in Power Platform is propagated to the SAP system, ensuring that actions performed in SAP are attributed to the correct user. This is achieved through Single Sign-On (SSO) configurations using Microsoft Entra ID (formerly Azure Active Directory) and SAP's authentication mechanisms. By leveraging SSO, administrators can enforce consistent security policies and streamline user access management across both platforms.
 
 ## Power Platform Application Lifecycle Management (ALM)
 

@@ -46,10 +46,10 @@ To learn more about working with JSON structures in Power Automate, refer to [Wo
 
 If SAP does not provide an API for a data object, there are several options available:
 
-- iDoc: Use a generic API to synchronously invoke an iDoc for any object type.
-- BDC: Utilize a generic API to synchronously process a BDC recording.
-- LSMW: Power Automate can create a file that can be dropped on the SAP application server and processed within transaction LSMW.
-- Custom Function Module: Create a custom remote-enabled function module in SAP and call it using a Power Automate cloud flow.
+- [Intermediate Document (iDoc):](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/7b24a64d9d0941bda1afa753263d9e39/3854b753128eb44ce10000000a174cb4.html) Use a generic API to synchronously invoke an iDoc for any object type.
+- [Batch Input:](https://help.sap.com/doc/saphelp_snc70/7.0/en-US/69/c250274ba111d189750000e8322d00/content.htm?no_cache=true#:%7E:text=Batch%20input%20is%20one%20of%20the%20primary%20ways,legacy%20system%20into%20a%20newly%20installed%20SAP%20system) Utilize a generic API to synchronously process a BDC recording.
+- [Legacy System Migration Workbench (LSMW):](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/4d/afeb6ad8f66d57e10000000a42189e/content.htm?no_cache=true) Power Automate can create a file that can be dropped on the SAP application server and processed within transaction LSMW.
+- [Custom Function Module:](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/c8/19764143b111d1896f0000e8322d00/content.htm?no_cache=true) Create a custom remote-enabled function module in SAP and call it using a Power Automate cloud flow.
 
 ### Handling Custom SAP Fields
 

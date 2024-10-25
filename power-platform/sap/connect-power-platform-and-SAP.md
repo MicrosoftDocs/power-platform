@@ -22,9 +22,14 @@ ms.subservice: connectors
 With our powerful connectors, you can easily access and manipulate SAP data, enabling you to create copilots, custom applications, and automate workflows. There are two connectors available to fit varying needs for integrating with your SAP environments. Both connectors support data encryption in motion. Encryption from the gateway to SAP is supported by SAP SNC.
 
 ## Connectors
+### Power Platform ERP connector for SAP
+The [Power Platfor ERP connector for SAP](/power-platform/sap/guides/getting-started-with-the-sap-erp-connector) utilizes the SAP RFC protocol to your SAP ERP environments for create, read, and update operations on SAP data. It can also be used to call RFCs and BAPIs. The ERP connector is compatible with SAP ECC and S/4HANA environments and any SAP product that runs on the NetWeaver stack. The SAP ERP Connector supports SAP Authentication, Windows Authentication, and Microsoft Entra ID with [Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos) or [certificates](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates).
 
-The [SAP ERP Connector](/connectors/saperp/) utilizes the SAP RFC protocol to your SAP ERP environments for create, read, and update operations on SAP data. It can also be used to call RFCs and BAPIs. The ERP connector is compatible with SAP ECC and S/4HANA environments. The SAP ERP Connector supports SAP Authentication, Windows Authentication, and Microsoft Entra ID with [Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos) or [certificates](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates).
+The SAP ERP connector runs on SAP's API layer, which typically has better system performance than running the same activity in the SAP GUI. As more users transition off the SAP GUI and to an external user interface like a canvas app, CPU consumption on the SAP servers drops significantly.
 
+The SAP ERP connector utilizes the message server to invoke APIs that create, read, and update SAP data. This traffic typically flows over port 33XX for single application servers or port 39XX for load-balanced connections, where XX is the system number of the SAP instance.
+
+### Power Platform OData connector for SAP
 The [SAP OData Connector](/connectors/sapodata/) can consume data from all products across the SAP portolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html). Using the OData connector with SAP ECC or prior versions requires configuration of Odata enpoints that is not included in ECC out-of-box setup. The SAP OData Connector supports Anonymous, SAP Authentication, Microsoft Entra ID with [Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos) or [certificates](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates).
 
 ## On-Premises Data Gateway
