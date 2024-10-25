@@ -3,7 +3,7 @@ title: Notifications for Business & Industry Copilot services
 description: Notifications for Business & Industry Copilot services
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/24/24
+ms.date: 10/24/2024
 ms.subservice: admin
 ms.author: kacortez
 author: kacortez
@@ -26,7 +26,7 @@ Service health communications in the Microsoft 365 admin center are limited to c
 Sometimes we may need to notify you of issues occurring in your Managed Environment, where an admin or user in your organization may need to take action to resolve the issue. These communications  appear in the **Service health** page under the section titled **Issues in your environment that require action**. Learn more about this section in [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide).
 
 ## Service health in PPAC
-On the [Power Platform admin center](https://learn.microsoft.com/en-us/power-platform/admin/admin-documentation) home page dashboard, admins can add Service health and Message center cards for a quicker view of incidents and upcoming changes.
+On the [Power Platform admin center](https://admin.powerplatform.microsoft.com) home page dashboard, admins can add [Service health](admin-documentation.md#monitor-service-health) and [Message center](admin-documentation.md#message-center) cards for a quicker view of incidents and upcoming changes.
 
 Admins can view service health issues for the last 30 days from the **Help + support** page, under the **Service health** tab. 
 
