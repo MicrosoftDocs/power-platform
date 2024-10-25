@@ -46,8 +46,8 @@
           href: git-integration/connecting-to-git.md
         - name: Committing and pushing your changes
           href: git-integration/commit-and-push.md
-        - name: Code-first development overview
-          href: git-integration/code-first-development.md
+        - name: Pull changes from Git
+          href: git-integration/pull-changes-from-git.md
         - name: Frequently asked questions
           href: git-integration/faqs.md
     - name: Tools and apps used
