@@ -195,7 +195,7 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 1. Confirm the list of apps that you want to allow to run in the environment.
  
 ## Modes of app access control
-After you [turn on the app access control feature](#turn-on-the-app-access-control-for-your-environment), there are four different modes:
+After you [turn on the app access control feature](control-app-access-environment.md#turn-on-the-app-access-control-for-your-environment), there are four different modes:
 - [Turn on audit mode](#turn-on-audit-mode)
 - [Turn on enabled mode](#turn-on-enabled-mode)
 - [Turn on enabled for roles mode](#turn-on-enabled-for-roles-mode)
