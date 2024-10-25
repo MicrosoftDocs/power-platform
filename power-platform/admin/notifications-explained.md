@@ -35,9 +35,9 @@ The notifications sent from the Business & Industry Copilot communications team 
 
 |Service | Email notifications sent from | 
 |--------|-------------------------------| 
-| Microsoft Dynamics 365 apps   | msdynamics365@microsoft.com  | 
-| Microsoft Dynamics 365 finance and operations apps  | msdyn365finops@microsoft.com| 
-| Microsoft Power Platform  | mspowerplatform@microsoft.com| | 
+| Microsoft Dynamics 365 apps| msdynamics365@microsoft.com| 
+| Microsoft Dynamics 365 finance and operations apps| msdyn365finops@microsoft.com| 
+| Microsoft Power Platform | mspowerplatform@microsoft.com|
 
 > [!IMPORTANT]
 > Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
