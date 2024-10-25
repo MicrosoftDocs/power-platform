@@ -35,6 +35,8 @@ To get started, you need an Azure DevOps project and repository to connect your 
 1. Select **New project**, enter a name and ensure that your Version control is set to Git for your project, and select **Create**.
 1. In the new project, select **Repos** and then select **Initialize** at the bottom of the page to initialize the default repository.
 
+You need to ensure that all users that are making changes in your environment have access to your repo and to commit changes.  Please review your Azure DevOps licensing configuration and security groups to ensure that they will be able to use the solution source control panel.
+
 ## Connect Dataverse to Git
 
 To connect your Dataverse environment to Git, you need to bind your environment to a project in Azure DevOps. You can bind your environment to a project using either environment or solution binding. You can read more about the differences between environment and solution binding in the following sections.
@@ -53,22 +55,22 @@ If you're not sure which binding strategy to use, environment binding is the rec
 
 #### Environment binding
 
-Environment binding is a single process for binding your entire Dataverse environment and all of the unmanaged solution and components in the environment to a single repository and folder. When you choose to bind the entire environment, all unmanaged customizations done in any custom unmanaged solution will be stored in a single Git folder and branch and you don't need to set up any other solutions once selected. Multiple solutions can be source controlled in the same folder as components aren't required to be replicated for each solution in source control. If you're using environment binding, you can select the repository and folder to bind the environment to during the initial setup.
+Environment binding is a single process for binding your entire Dataverse environment and all of the unmanaged solutions and components in the environment to a single repository and folder. When you choose to bind the entire environment, all unmanaged customizations done in any custom unmanaged solution will be stored in a single Git folder and branch and you don't need to set up any other solutions once selected. The system allows for multiple solutions to use a single root folder location and will keep track of which components belong to each solution in a separate file. It is no longer a requirement to use a unique root folder for each solution. If you're using environment binding, you can select the repository, branch, and folder to bind the environment to during the initial setup.
 
 #### Solution binding
 
-Solution binding can be used to source control multiple solutions within the same environment in separate repos or folders. Solution binding provides more flexibility in your solution to source control binding strategy but requires more management on the part of the makers to onboard new solutions to source control. Additionally, having the same component in multiple solutions isn't supported with solution binding as the components are replicated in the source control repository for each solution. However, if you want to isolate solutions from each other in source control, solution binding is the recommended approach. Solution binding doesn't require a repository or solution to be selected during the initial setup. Instead, you can select the repository and folder to bind the solution to when you're ready to bind the solution to source control.
+Solution binding can be used to source control multiple solutions within the same environment to separate repositories or folders. Solution binding provides additional flexibility in your source files organization but requires more management on the part of the makers to onboard new solutions to source control. The system requires that there only be one location in source control for each and every solution object which means that if you are going to choose to bind solutions to different source locations, the system will not allow you to have the same component in multiple solutions.  Solution binding doesn't require a repository or solution to be selected during the initial setup. Instead, you can select the repository and folder to bind each solution to when you're ready to bind the solution to source control.
 
 #### Other considerations
 
 If you select environment binding, all new unmanaged solutions are automatically synchronized with source code with no further actions, and if you select per solution binding, creation of a new solution later requires that the solution also be configured for source control before being synced to source control. Consider the safety of having all solutions synchronized versus the flexibility of having different folders and source code linkages for each solution.
 
-### Binding a solution to a repository and folder
+### Binding a solution to a repository and folder (when using the solution binding strategy)
 
-Once you connected your environment to Git, you can bind a solution to a repository and folder in the same Azure DevOps project.
+Once you connected your environment to Git using the solution binding strategy, you can bind a solution to a repository and folder in the same Azure DevOps project.
 
 1. On the Solutions page, select the 3 dots next to the solution you want to bind to source control and select **Connect to Git**.
-1. Select an existing branch, or create a new branch, and enter a Git folder to bind the solution to and select **Connect**. For more information on branching and merging in Git, see [Branching and merging in Git](/power-platform/alm/git-integration/branching-and-merging).
+1. Select an existing branch, or create a new branch, and enter a Git folder to bind the solution to and select **Connect**.
 
 ### Validate your connection
 
@@ -80,9 +82,6 @@ To validate your connection to Git, you can create a new solution or make change
 
 Now that your environment and solutions are connected to Git, you can start making changes to your solutions and committing and pushing those changes to the repository. For more information on how to commit and push changes to the repository, see [Commit and push changes to Git](/power-platform/alm/git-integration/commit-and-push).
 
-## Disconnecting Dataverse from Git (coming soon)
-
-Although you can't change your binding type after the initial setup, you can disconnect your environment or solution from Git by selecting **Disconnect from Git** on the Solutions page. When you disconnect your environment or solution from Git, the source control information is removed from the environment or solution and the environment or solution is no longer connected to the repository. To disconnect your environment or solution from Git, follow these steps.
 
 ### Related content
 
