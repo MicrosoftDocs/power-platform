@@ -13,7 +13,7 @@ ms.contributors:
 - mikefactorial
 ---
 
-# Source control repository synchronization
+# Source control repository operations
 
 When you make changes to solution components in Dataverse, you can view the changes in the solution explorer. The solution explorer shows the unmanaged changes that you made to the solution components in the solution.  The files in your commit are equivalent to the unmanaged layers in your environment. Components that are part of the managed layer aren't included in the commit.
 
