@@ -193,10 +193,9 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 1. Review the audit log for the apps that are running in the environment to get the list of apps whose access control you want to manage.
 1. Repeat steps 1-2 in your production environment.
 1. Confirm the list of apps that you want to allow to run in the environment.
-1. Set the feature setting to **Enabled for roles**.
  
 ## Modes of app access control
-After you turn on the app access control feature, there are four different modes:
+After you [turn on the app access control feature](#turn-on-the-app-access-control-for-your-environment), there are four different modes:
 - [Turn on audit mode](#turn-on-audit-mode)
 - [Turn on enabled mode](#turn-on-enabled-mode)
 - [Turn on enabled for roles mode](#turn-on-enabled-for-roles-mode)
@@ -217,7 +216,7 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 1. Select the **AuditMode** option in the **Access control** dropdown list.
 1. Select a Dataverse application, then select **Allow** button, at the top of the grid.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment that you wish to turn on auditing.  Close the panel when you're done turning on the audit mode for your environments.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn on auditing.  Close the panel when you're done turning on the audit mode for your environments.
 
 > [!NOTE]
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
@@ -230,13 +229,10 @@ The audit settings for an environment must be allowed, including the **Log acces
 
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
 1. Select **Environments**, and then select the environment with the enabled feature.
-1. Select **Settings**.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/settings-button.png" alt-text="Screenshot that shows the location of the settings button once you select an environment.":::
-   
-1. Select **Audit and logs** and choose **Audit summary view**.
-1. Select **Enable/Disable Filters** to review list heading dropdown capabilities.
-1. Select the dropdown arrow near the **Event** heading, then find and check **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
+1. Select **Settings**.  
+1. Select **Audit and logs** > **Audit summary view**.
+1. Select **Enable/Disable Filters** to review a list of heading dropdown capabilities.
+1. Select the dropdown arrow near the **Event** heading, then find and select **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
    
