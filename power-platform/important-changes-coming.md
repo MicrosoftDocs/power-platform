@@ -46,6 +46,7 @@ To ensure the security and integrity of your system and data, we encourage custo
 
 > [!Note]
 > If application onboarding isn't expected, remove that app or replace it with a compliant app that has a client service principal in the tenant.
+> <br><br>Please make sure the access token being acquired should be from your Tenanted endpoint (_https://login.microsoftonline.com/{yourtenant}_), not organization endpoint (_https://login.microsoftonline.com/organizations_) 
 
 ### When is this change coming into effect? 
 
