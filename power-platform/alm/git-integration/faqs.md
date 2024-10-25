@@ -52,6 +52,9 @@ The feature is using YAML to represent solution content as it is easier to read,
 ## How can I deploy a solution from source code?
 Future versions of PAC CLI will be able to build a valid managed solution file from the source files, and future versions of pipelines will be able to deploy from source code, but for now, deployment will remain a fresh solution export from the source environment and deploying that to a target environment.
 
+## How do I develop with code-first components like PCF controls and plugins where I don't want my compiled binaries checked into source code?
+Future versions of PAC CLI will support the new source format and allow you to freshly compile your code-first components and inject them into a solution file built from source code and this feature will have the capability of not storing the binaries for these components in source code.  Until then, you can still author those different components using a different folder like you do today, but the binaries will be checked into source code when you commit from the environment.
+
 ### Related content
 
 [Overview of Dataverse Git integration](/power-platform/alm/git-integration/overview.md)  
