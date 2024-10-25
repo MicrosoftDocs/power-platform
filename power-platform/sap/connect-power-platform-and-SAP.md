@@ -37,6 +37,6 @@ Setup of the integration requires a small Windows virtual machine (VM) with at l
  - [SAP ERP Connector](/connectors/saperp/)
  - [SAP OData Connector](/connectors/sapodata/)
  - [Getting Started with the SAP ERP Connector](/power-platform/sap/guides/getting-started-with-the-sap-erp-connector)
- - [Set up Secure Network Communications (SNC)](power-platform/sap/guides/set-up-secure-network-communications)
+ - [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
  - [Set up Microsoft Entra ID using Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos)
  - [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)

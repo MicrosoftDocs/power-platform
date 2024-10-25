@@ -61,7 +61,7 @@ The approach to handling custom fields in SAP depends on their location:
 
 To diagnose a user security error, run a trace in transaction ST01 in the SAP GUI application to determine what is missing from the user's security profile. Confirm that the user has the S_RFC authorization object, which is required to execute BAPIs and remote-enabled custom RFCs.
 
-Learn more:
+#### Learn more:
  - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
  - [SAP ERP Connector](/connectors/saperp/)
  - [SAP OData Connector](/connectors/sapodata/)
