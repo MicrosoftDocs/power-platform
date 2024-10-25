@@ -19,13 +19,13 @@ ms.subservice: solution-templates
 Power Platform app makers can leverage Microsoft's Power Platform connectors for SAP to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
 ## SAP Connectors Overview
 Microsoft provides several connectors to integrate with SAP systems, including the ERP Connector for SAP and the OData Connector for SAP. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP) for more on selecting which connector to use and setting up the connectors in your environment.
-## Using SAP BAPIs and RFCs
+## Using SAP RFCs and BAPIs
 SAP Remote Function Calls (RFCs) and Business Application Programming Interfaces (BAPIs) are essential for interacting with SAP systems.
 SAP RFCs are the foundation that enables communications between SAP and other systems. RFCs must be remote-enabled in SAP to be accessible with the Power Platform SAP connectors. BAPIs are standardized RFCs that allow external applications to perform complex business operations in SAP. 
 - RFCs: App makers can use RFCs to retrieve specific details from SAP. For example RFC_GET_TABLE_ENTRIES can be used to read contents of a specific table and RFC_GET_FUNCTION_INTERFACE can retrieve the details of a specific function module.
 - BAPIs: BAPIs enable app makers to perform operations such as creating, updating, or retrieving data from SAP. For instance, the BAPI BAPI_SALESORDER_CREATEFROMDAT2 allows the creation of sales orders.
 
-Talk to an SAP expert in your organization or ask Microsoft Copilot to find specific BAPIs and RFCs.
+Talk to an SAP expert in your organization or ask Microsoft Copilot to find specific RFCs and BAPIs.
 
 ## Working with Complex JSON Structures
 When calling Power Platform for SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
