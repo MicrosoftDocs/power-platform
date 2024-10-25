@@ -44,10 +44,8 @@
           href: git-integration/overview.md
         - name: Dataverse Git integration setup
           href: git-integration/connecting-to-git.md
-        - name: Committing and pushing your changes
-          href: git-integration/commit-and-push.md
-        - name: Pull changes from Git
-          href: git-integration/pull-changes-from-git.md
+        - name: Source control operations
+          href: git-integration/source-control-operations.md
         - name: Frequently asked questions
           href: git-integration/faqs.md
     - name: Tools and apps used
