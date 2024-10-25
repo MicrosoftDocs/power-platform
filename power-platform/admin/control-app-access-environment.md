@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 9/26/2024
+ms.date: 10/25/2024
 search.audienceType: 
   - admin
 ---
@@ -104,7 +104,7 @@ To **add** an application from the list:
    ```http  
    https:/<OrgURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
    ```
-  The form shows the list of applications that is loaded in your environment.
+    The form shows the list of applications that is loaded in your environment.
 
 1. Select **+ New**.
 
