@@ -215,8 +215,9 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 1. Select the environment that you want to turn on client app access control.
 1. Select the **Enable client application access** button.
 1. Select the **AuditMode** option in the **Access control** dropdown list.
-1. Select a Dataverse application, then select **Allow**.
+1. Select a Dataverse application, then select **Allow** button, at the top of the grid.
 1. Select **Save**.
+1. The environment list is displayed again. Repeat the procuedre for each environment that you wish to turn on auditing.  Close the panel when you're done turning on the audit mode for your environments.
 
 > [!NOTE]
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
@@ -258,6 +259,7 @@ Start blocking apps that are blocked or only allowed, approved apps. You can sel
    - **Allow** to allow access
    - **Block** to deny access
 1. Select **Save**.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to start blockig apps that are blocked or only allowed, approved apps.  Close the panel when you're done.
 
    > [!NOTE]
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
@@ -276,8 +278,7 @@ Start blocking apps that are blocked, or only allowed, approved apps. For apps t
 1. Once your app is selected, select **Manage security roles**.
 1. Select one or more desired security roles.
 1. Select **Save**.
-
-   You return to the **Enable client application access** page.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to start blockig apps that are blocked or only allowed, approved apps.  Close the panel when you're done.
 
 > [!NOTE]
 > The enabled for roles mode might take up to an hour to take effect, after you update the configuration settings.
@@ -294,6 +295,7 @@ Turn off the feature. With this setting, there are no restrictions on apps that 
 1. Select the **Enable client application access** button.
 1. Select **Disabled** in the **Access control** dropdown.
 1. Select **Save**.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature.  Close the panel when you're done.
 
 > [!TIP]
 > If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the access control is turned off to **Disabled**. There are no app restrictions in this environment.
