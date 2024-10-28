@@ -26,27 +26,9 @@ The Checklist template comes with many capabilities:
 
 You can extend the capabilities of the Checklist template by customizing the apps to meet your organization's needs.
 
-The Checklist template package is available on Microsoft AppSource. The package consists of two solutions:
+The Checklist template package is available on Microsoft AppSource.
 
-- **IT Base** contains components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
-- **Checklist App** contains all the components that enable you to create and manage custom checklist templates and create and manage reports for inventory items.
-
-## IT Base solution
-
-The **IT Base** solution contains various components that allow an admin to set up and manage the language preferences.
-
-- **IT Template Administration** is the model-driven app that lets an admin create, view, and edit localized string values.
-
-- Two tables:
-
-  - **IT Localization** records the app string replacements for every localized version of the app
-  - **IT Error** records all errors from app and flows
-- One security role: IT Template Administrator provides create, read, update, and delete access to the table. 
-- One choice: **ISO Language Code** stores the abbreviation for available language codes.
-
-## Checklist solution
-
-The Checklist solution contains components that enable the user and admin experiences.
+The Checklist solution contains components that enable the user and admin experiences. It has all the components that enable you to create and manage custom checklist templates and create and manage reports for inventory items.
 
 - **Checklist App** is the canvas app where users create reports based on custom checklist templates.
 - **Checklist App Administrator** is the model-driven app where an admin can manage all the data. This includes the creation of the checklist templates and the configuration of reference data such as inventories, items, categories, validation type, and validation units.
@@ -78,7 +60,7 @@ The Checklist solution contains components that enable the user and admin experi
   - **Checklist App - [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
   - **Checklist App _ [Teams](/connectors/teams/)** - Connection reference to Microsoft Teams
   
-### Next steps
+## Next steps
 
 [Install and set up the Checklist template](install-and-set-up.md)
 
