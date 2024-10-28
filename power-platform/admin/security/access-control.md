@@ -56,4 +56,4 @@ The **Administrative privileges** pane provides a proactive recommendation if yo
 Be aware of the following known issues with the feature:
 
 - The security role **Membership** page displays only the security roles in the default business unit. Turn off the **Display only parent security roles** option to list all security roles across all business units.
-- After you remove a user from the system administrator role, it takes around 24 hours for the updated admin count to show up on the page.
+- After you remove a user from the system administrator role, it takes around 24 hours for the updated admin count to display on the page.
