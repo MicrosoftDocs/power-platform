@@ -30,7 +30,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 | 5 | [Enable AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
 | 6 | [Generative AI settings](geographical-availability-copilot.md) |
 | 7 | [Maker welcome content](welcome-content.md) |
-| 8 | [Power Apps component framework for canvas apps]() |
+| 8 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
 | 9 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md) |
 | 10 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 11 | [Usage insights](managed-environment-usage-insights.md) |
