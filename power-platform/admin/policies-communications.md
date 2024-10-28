@@ -1,13 +1,13 @@
 ---
-title: "Policies and Communications for Power Platform and Dynamics 365 Services | MicrosoftDocs"
-description: "Policies and Communications for incidents provided for Microsoft 365 services."
-author: astockli
+title: Policies and communications for Power Platform and Dynamics 365 Services
+description: Learn more about policies and communications for incidents provided for Microsoft 365 services.
+author: kacortez
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/03/2022
+ms.date: 10/21/2024
 ms.subservice: admin
-ms.author: astockli
+ms.author: kacortez
 search.audienceType: 
   - admin
 ---
@@ -21,9 +21,12 @@ For each of these scenarios, communication is provided through the Microsoft 365
 
 **Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment.  
   
-- If you’re not sure who your admin is, see [Find your administrator or support person](/powerapps/user/find-admin).  
+- If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin).  
   
-- If you want to add additional recipients who receive email communications, see [Manage email notifications to admins](manage-email-notifications.md).  
+- If you want to add additional recipients to receive email communications, learn more in [Manage email notifications to admins](manage-email-notifications.md).
+
+> [!IMPORTANT]
+> Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
   
 ## Scheduled system updates and maintenance
 

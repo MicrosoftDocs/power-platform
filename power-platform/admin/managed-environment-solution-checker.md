@@ -2,7 +2,7 @@
 title: Solution checker enforcement in Managed Environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 09/17/2024
+ms.date: 10/24/2024
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -101,7 +101,15 @@ Here's an example PowerShell script that turns off solution checker enforcement.
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none
 ```
 
-### See also
+### Set rule exclusions
+
+Here's an example PowerShell script that enables solution checker enforcement in block mode and adds rule exclusions. After you run it, the slider shows block mode in the **Solution checker** section of the Managed Environments settings, and the rule exclusions are set.
+
+```powershell
+SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none -RuleExclusions "web-use-async,web-use-offline"
+```
+
+### Related content
 
 [Managed Environments overview](managed-environment-overview.md) <br />
 [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)  <br />
