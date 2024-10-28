@@ -36,9 +36,7 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2.	From the navigation pane, select **Security**.
-3.	Select the page you want to view in the **Security** section.
-   
-    You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
+3.	Select the page you want to view in the **Security** section. You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
 
     > [!Note]
     > On each security page, the features that apply to Managed Environments are noted with this icon:
@@ -66,8 +64,8 @@ Your total score would be (2 + 10 + 5 = 17) and the total possible score would b
 
 > [!Important]
 > The security score refreshes every 24 hours and any action taken could take up to 24 hours to reflect the updated score.
-> The score calculation takes into account all environments, including both managed and non-managed ones.
-> If there are no managed environments to take action on in the recommendation panel, you will see no environments listed.
+> The score calculation takes into account all environments, including both Managed Environments and non-Managed Environments.
+> If there are no Managed Environments to take action on in the recommendation panel, you will see no environments listed.
 
 ## Reactive governance through recommendations
 The system generates various recommendations based on common, best practices that improve the security score of your tenant. Recommendations refer to actions or measures that the administrator can take to enhance their overall security statnus. 
@@ -96,7 +94,7 @@ Below is a table outlining the conditions that trigger specific feature recommen
 | Tenant isolation | Tenant | Tenant isolation setting is turned off.|
 
 ## Manage proactive policies for governance and security
-There are several security features that help secure your tenant. Some of these features require being set as managed type as a prerequisite. If you decide to enable such a feature, you will be prompted to first change the environment to managed type before being allowed to configure the feature.
+There are several security features that help secure your tenant. Some of these features require being set as managed type as a prerequisite. If you decide to enable such a feature, you're prompted to first change the environment to managed type before being allowed to configure the feature.
 
 Use the following links to view and manage proactive policies for governance and security.
 
@@ -107,8 +105,8 @@ Use the following links to view and manage proactive policies for governance and
 
 ## Frequently asked questions (FAQs)
 
-### How is the Security score calculated?
-The Security score is calculated based on the security features turned on in your environment. Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. It’s important to note that as new security features are added, the total possible score may change. This means that your overall security score might be affected even if your current settings remain the same. 
+### How is the security score calculated?
+The security score is calculated based on the security features turned on in your environment. Each security feature is assigned a score based on its scope and the number of resources impacted by turning the feature on or off. It’s important to note that as new security features are added, the total possible score may change. This means that your overall security score might be affected even if your current settings remain the same. 
 
 ### Why don’t I see all the environments in the recommendation action?
 These recommendations span across all environments, but you can only act on these recommendations in Managed Environments. For non-Managed Environments, you have the option to turn on recommended features by navigating to the **Settings** page, locating the necessary features, and turning it on for those specific environments.
