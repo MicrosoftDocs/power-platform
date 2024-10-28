@@ -4,7 +4,7 @@ description: Learn how to manage security in the Power Platform admin center wit
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 10/28/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -38,7 +38,8 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
     You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
 
     > [!Note]
-    > On each security page, the features that apply to Managed Environments are noted with this icon: :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
+    > On each security page, the features that apply to Managed Environments are noted with this icon:
+    > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
    
 ## Key capabilities
 
