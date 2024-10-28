@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 10/28/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -23,10 +23,10 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 
 | # | Rule (in alphabetical order) |
 |----|----------|
-| 1 | [Backup retention](backup-restore-environments.md) |
-| 2 | [Block unmanaged customizations](https://learn.microsoft.com/en-us/power-platform/alm/block-unmanaged-customizations) |
-| 3 | [Copilot enable prompts](https://learn.microsoft.com/en-us/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
-| 4 | [Copilot features for makers](https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
+| 1 | [Back-up retention](backup-restore-environments.md) |
+| 2 | [Block unmanaged customizations](../alm/block-unmanaged-customizations.md) |
+| 3 | [Copilot enable prompts](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio) |
+| 4 | [Copilot features for makers](/power-apps/maker/canvas-apps/ai-overview?WT.mc_id=ppac_inproduct_settings) |
 | 5 | [Enable AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview) |
 | 6 | [Generative AI settings](geographical-availability-copilot.md) |
 | 7 | [Maker welcome content](welcome-content.md) |
@@ -35,7 +35,7 @@ Admins can apply various rules to groups to govern many environments in bulk, re
 | 10 | [Solution checker enforcement](managed-environment-solution-checker.md) |
 | 11 | [Usage insights](managed-environment-usage-insights.md) |
 
-When these rules are applied, they lock the settings at the environment level, preventing any system administrator of those individual environments from editing the settings downstream. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
+When these rules are applied, they lock the settings at the environment level, preventing any system administrator of those individual environments from editing the settings. This empowers IT teams to delegate administration and governance to other teams as Power Platform adoption grows, without relinquishing control over key environment settings. By doing so, it unlocks scalability and maintains a high standard of operational efficiency and security.
 
 :::image type="content" source="media/blocked-setting.png" alt-text="Example of a Copilot setting that is locked at the environment-level.":::
 
