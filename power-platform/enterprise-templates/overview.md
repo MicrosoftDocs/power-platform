@@ -5,18 +5,18 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 07/10/2024
+ms.date: 10/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 # customer intent: As a reader, I want to understand the purpose and benefits of Enterprise templates for Power Platform.
 ---
 
-# What are Enterprise templates for Microsoft Power Platform?
+# What are Enterprise templates for Power Platform?
 
 Enterprise templates for [Power Platform](/power-platform/) are solutions that serve as starting points for specific use cases and outcomes. They accelerate time to value by allowing you to quickly digitize new processes or extend your technology investments in enterprise resource planning (ERP), customer relationship management (CRM), information technology (IT), and human resource (HR) systems.
 
-Enterprise templates are built for centralized teams to locally install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner team to implement a Power Platform template project.
+Enterprise templates are built for centralized teams to install, extend, and deploy. You can organize an internal information technology (IT) and business operations team or select an external partner to implement a Power Platform template project.
 
 Enterprise templates for Power Platform help you:
 
@@ -25,9 +25,9 @@ Enterprise templates for Power Platform help you:
 
 Additionally, you can:
 
-- Customize your solutions
-- Integrate your system of record with other features, applications, and systems
-- Incorporate more controls over how your users interact with data
+- Customize your solutions.
+- Integrate your system of record with other features, applications, and systems.
+- Incorporate more controls over how your users interact with data.
 
 ## Available enterprise templates
 
@@ -48,20 +48,21 @@ Be sure to check back often for new templates that become available.
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> **Onboarding Buddy template** <br> Match new employees to _Buddies_ <br> [Documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [AppSource](https://aka.ms/AccessOnboardingBuddyTemplate) <br> 
+      ![Onboarding Buddy](media/overview/onboard-buddy-icon-sq.png "Onboarding Buddy") <br> **Onboarding Buddy template** <br> Match new employees to _Buddies_ <br> [Documentation](https://aka.ms/LearnOnboardingBuddyTemplate) <br> [AppSource](https://aka.ms/AccessOnboardingBuddyTemplate)
+   :::column-end:::
+   :::column span="":::
+      ![Expense Reimbursement](media/overview/exre-logo.png "Expense Reimbursement") <br> **Expense Reimbursement template** <br>  Improve the expense reimbursement process <br> [Documentation](https://aka.ms/LearnExpenseReimbursementTemplate) <br> [AppSource](https://aka.ms/AccessExpenseReimbursementTemplate)
    :::column-end:::
    :::column span="":::
       ![Hardware Request and Management](media/overview/hrm-sq-icon.png "Hardware Request and Management") <br> **Hardware Request and Management template**<br> Manage hardware requests and assets <br> [Documentation](https://aka.ms/LearnHardwareRequestAndManagementTemplate) <br> [AppSource](https://aka.ms/AccessHardwareRequestandManagementTemplate)
    :::column-end:::
-   :::column span="":::
-      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate) <br> 
-   :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="":::
-      ![Expense Reimbursement](media/overview/exre-logo.png "Expense Reimbursement") <br> **Expense Reimbursement template** <br>  Improve the expense reimbursement process <br> [Documentation](https://aka.ms/LearnExpenseReimbursementTemplate) <br> [AppSource](https://aka.ms/AccessExpenseReimbursementTemplate)  
+      ![Appointment Booking](media/overview/ab-as-icon.png "Appointment Booking") <br> **Appointment Booking template** <br> Organize the appointment booking process <br> [Documentation](https://aka.ms/LearnAppointmentBookingTemplate) <br> [AppSource](https://aka.ms/AccessAppointmentBookingTemplate)
    :::column-end:::
-   :::column span="":::  
+   :::column span="":::
+      ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingRoomSvcsReqTemplate)
    :::column-end:::
    :::column span="":::  
    :::column-end:::
@@ -69,7 +70,7 @@ Be sure to check back often for new templates that become available.
 
 ## Benefits of using enterprise templates
 
-Implementing enterprise software use cases is often time consuming and expensive. An enterprise template provides a foundation to help you quickly get started digitizing manually intensive processes. You can even extend a template by connecting workflows across more systems of record to drive more value with Power Platform.
+Implementing enterprise software use cases is often time-consuming and expensive. An enterprise template provides a foundation to help you quickly get started digitizing manually intensive processes. You can even extend a template by connecting workflows across more systems of record to drive more value with Power Platform.
 
 Templates for Power Platform offer the following benefits:
 
@@ -102,6 +103,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Hardware Request and Management template](it/hardware-request-and-management/install-and-set-up.md)
 - [Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
 - [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
+- [Install and set up the Meeting Room Services template](it/meeting-rm-serv/install-and-set-up.md)
 
 ## Support
 

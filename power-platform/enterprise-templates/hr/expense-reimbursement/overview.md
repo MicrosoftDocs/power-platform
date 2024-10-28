@@ -1,6 +1,6 @@
 ---
 title: Expense Reimbursement template for Power Platform
-description: The Expense Reimbursement template for Microsoft Power Platform enables employees to submit expenses for reimbursement.
+description: The Expense Reimbursement template for Power Platform enables you to easily set up a program that allows employees to submit expenses for reimbursement.
 author: tverhasselt
 contributors:
   - microsoft-george
@@ -13,11 +13,12 @@ ms.date: 06/13/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+#customer intent: As a user, I want to understand the purpose of the Expense Reimbursement template so that I can use it effectively.
 ---
 
-# Expense Reimbursement template for Power Platform
+# What is the Expense Reimbursement template for Power Platform?
 
-The Expense Reimbursement template makes it easy to set up and facilitate an automated expense reimbursement program within your organization.
+The Expense Reimbursement template for Power Platform makes it easy to set up and facilitate an automated expense reimbursement program within your organization.
 
 The Expense Reimbursement program enables:
 
@@ -44,8 +45,10 @@ The Expense Reimbursement template is available in [Microsoft AppSource](<https:
 The **Employee Experience Base** solution contains components that manage app language preferences.
 
 - **Employee Experience Localization Admin** is the model-driven app that allows admins to view and edit localized string values.
-- **Employee Experience Localization** is the table that stores the string replacements for every localized version of the app.
 - **ISO Employee Experience Language Code** is the *one choice* that stores the abbreviations for the available language codes.
+- Two tables:
+  - **Employee Experience Localization** is the table that stores the string replacements for every localized version of the app.
+  - **Employee Experience Error** records all errors from apps and flows.
 - Two security roles:
   - **Employee Experience Localization Reader** provides *read* access to the table.
   - **Employee Experience Localizer** provides *create*, *read*, *update*, and *delete* access to the table.
