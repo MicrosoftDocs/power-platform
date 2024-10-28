@@ -16,7 +16,7 @@ As an administrator, go to the *Checklist Administrator* model-driven app to cre
 
 ## Create custom templates
 
-The templates you create can be associated with items in your inventory and used in checklist reports. You can add templates directly in the application.
+The templates you create can be associated with items in your inventory and you can use them in checklist reports. You can add templates directly in the application.
 
 1. Start the *Checklist Administrator* model-driven app and select **Templates**.
 1. Select **+ New** and assign a name for the new template.
@@ -46,7 +46,7 @@ Each checklist template allows you to create multiple sub-steps for each step, e
 
 ## Set up categories
 
-Categories classify inventory items and can be added or managed directly in the app.
+Categories classify inventory items. You add or manage the categories directly in the app.
 
 1. Start the *Checklist Administrator* model-driven app and select **Categories**.
 1. Select **+ New** to go to the *New Category* form.
@@ -65,11 +65,11 @@ Inventories are categories of items you have on hand. Take these steps to add an
 
 ## Set up items
 
-Items are specific entries in your inventory that can be mapped to a specific checklist template, allowing for report creation within the Checklist application. You can add and manage items directly in the app.
+Items are specific entries in your inventory that you can map to a specific checklist template, allowing for report creation within the Checklist application. You add and manage items directly in the app.
 
 1. Start the *Checklist Administrator* model-driven app and select **Items**.
 1. Select **+ New** to go to the *New Item* form.
-1. Fill out *Name* and select the requried *Checklist Category*. It's recommended that you set up Categories before setting up Items.
+1. Fill out *Name* and select the required *Checklist Category*. It's recommended that you set up Categories before setting up Items.
 1. Select **Save**.
 1. Repeat the steps as necessary.
 
