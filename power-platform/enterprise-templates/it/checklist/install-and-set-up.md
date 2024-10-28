@@ -109,10 +109,10 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 ### Download and manually install solution files
 
-1. Download the IT Base and Checklist solution files. You can download either Managed *or* Unmanaged versions:
+1. Download the Checklist solution files. You can download either Managed *or* Unmanaged versions:
 
-    - Managed: [mpa_Checklist_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
-    - Unmanaged: [mpa_Checklist_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
+    - Managed: [mpa_Checklist_managed.zip](https://aka.ms/ChecklistManagedSolution)
+    - Unmanaged: [mpa_Checklist_unmanaged.zip](https://aka.ms/ChecklistUnManagedSolution)
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. In the left pane, select **Solutions**.
@@ -131,8 +131,8 @@ Set up security roles in your solutions so admins and users can use the apps. Th
 
 - **Checklist App - Administrator** is the administrator of the Checklist app. The admin security role grants access to the canvas app and model-driven app where they can:
 
-  - Create and modify Templates, Template Steps, and Template Sub Steps.
-  - Manage Categories, Inventories, Items, Validation Types and Validation Units.
+  - Create and modify templates, template steps, and template sub steps.
+  - Manage categories, inventories, items, validation types and validation units.
   - Manage report through the model-driven application.
 - **Checklist App - User** is the user of the Checklist app. The user security role grants access to the canvas app to create reports on existing inventory with the respective custom template mapped for the item category.
 
