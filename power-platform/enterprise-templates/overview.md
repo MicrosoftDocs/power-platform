@@ -5,7 +5,11 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
+<<<<<<< Updated upstream
 ms.date: 10/10/2024
+=======
+ms.date: 10/28/2024
+>>>>>>> Stashed changes
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
