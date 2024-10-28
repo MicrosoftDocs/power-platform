@@ -39,6 +39,7 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 
     > [!Note]
     > On each security page, the features that apply to Managed Environments are noted with this icon:
+    >
     > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
    
 ## Key capabilities
