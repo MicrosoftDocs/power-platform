@@ -7,6 +7,7 @@ ms.reviewer: jhaskett-msft
 ms.date: 11/6/2024
 ms.subservice: well-architected
 ms.topic: conceptual
+ai.usage: ai-assisted
 ---
 # Recommendations for designing conversational user experiences
 
