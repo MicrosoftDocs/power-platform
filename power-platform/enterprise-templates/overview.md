@@ -5,11 +5,7 @@ author: ananthar-msft
 ms.author: ananthar
 ms.reviewer: ellenwehrle
 ms.topic: overview
-<<<<<<< Updated upstream
-ms.date: 10/10/2024
-=======
 ms.date: 10/28/2024
->>>>>>> Stashed changes
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -68,7 +64,8 @@ Be sure to check back often for new templates that become available.
    :::column span="":::
       ![Meeting Room Services](media/overview/mrs-sq-logo.png "Meeting Room Services") <br> **Meeting Room Services template** <br> Simplify meeting room management <br> [Documentation](https://aka.ms/LearnMeetingRoomSvcsReqTemplate) <br> [AppSource](https://aka.ms/AccessMeetingRoomSvcsReqTemplate)
    :::column-end:::
-   :::column span="":::  
+   :::column span="":::
+      ![Checklist](media/overview/checklist-sq-logo.png "Checklist") <br> **Checklist template** <br> Create checklists to manage tasks and projects <br> [Documentation](https://aka.ms/LearnChecklistReqTemplate) <br> [AppSource](https://aka.ms/ChecklistReqTemplate)
    :::column-end:::
 :::row-end:::
 
@@ -108,6 +105,7 @@ Learn how to install and set up Enterprise templates for Power Platform. More in
 - [Install and set up the Appointment Booking template](it/appointment-booking/install-and-set-up.md)
 - [Install and set up the Expense Reimbursement template](hr/expense-reimbursement/install-and-set-up.md)
 - [Install and set up the Meeting Room Services template](it/meeting-rm-serv/install-and-set-up.md)
+- [Install and set up the Checklist template](it/checklist/install-and-set-up.md)
 
 ## Support
 

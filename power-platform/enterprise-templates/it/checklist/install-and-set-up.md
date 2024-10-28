@@ -107,25 +107,17 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 [Learn more about AppSource](https://appsource.microsoft.com/en-US/)
 
-Two solutions are installed in your environment, **IT Base** and **Appointment Booking**. [Learn more about the Checklist template solutions](./overview.md).
-
 ### Download and manually install solution files
 
 1. Download the IT Base and Checklist solution files. You can download either Managed *or* Unmanaged versions:
 
-    - Managed
-      - [mpa_ITBase_managed.zip](https://aka.ms/ITBaseManagedSolution)
-      - [mpa_Checklist_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
-    - Unmanaged
-      - [mpa_ITBase_unmanaged.zip](https://aka.ms/ITBaseUnManagedSolution)
-      - [mpa_Checklist_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
+    - Managed: [mpa_Checklist_managed.zip](https://aka.ms/AppointmentBookingManagedSolution)
+    - Unmanaged: [mpa_Checklist_unmanaged.zip](https://aka.ms/AppointmentBookingUnManagedSolution)
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 1. In the left pane, select **Solutions**.
-1. Select **Import solution**,and then find and select the **managed** or **unmanaged version** of the `mpa_ITBase` file downloaded.
+1. Select **Import solution**, and then find and select the **managed** or **unmanaged version** of the `mpa_Checklist` file downloaded.
 1. Select **Next**, and then select **Import**.
-1. After you receive a message that the import was successful, repeat steps 4 and 5 to import the `mpa_Checklist` file you downloaded.
-1. Select **Next** and **Next** again.
 1. For each of the connections listed, select the connection that was created in the import steps.
 1. Select **Next**.
 1. Skip the the environment variable setup for now. The required URL values only become available after the apps are imported into the environment.
@@ -159,14 +151,14 @@ More information:
 - [Manage application users in the Power Platform admin center](/power-platform/admin/manage-application-users)
 - [Control user access to environments: security groups and licenses](/power-platform/admin/control-user-access)
 
-## Step 5: Share the apps
+## Step 5: Share the app
 
-Share the Checklist apps with users in your organization.
+Share the Checklist app with users in your organization.
 
 > [!TIP]
 > Share the app with Checklist program managers first so that they can configure the app to meet your organization's needs. After that configuration is complete, share the app to the wider organization.
 
-1. 1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
+1. Go to [Power Apps](https://make.preview.powerapps.com/) and select the environment you installed the solution in.
 1. Select **Solutions** on the left pane and select the **Checklist** solution from the list.
 1. Select **Apps**.
 1. Go to the *Checklist canvas app* in the list and select the **three dots** to see a list of actions.
