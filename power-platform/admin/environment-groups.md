@@ -79,6 +79,8 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 #### For custom agents and Microsoft 365 Copilot agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+
 1. Select **Environment groups** in the navigation pane.
 1. Select your environment group, and then select the **Rules** tab.
 1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
@@ -89,10 +91,7 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 1. Select the **Only share with individuals (no security groups)** option.
 1. Select the **Limit the number of viewers who can access each Microsoft 365 Copilot agent and custom agent** option and enter the desired number of viewers you would like to have on the copilot.
 1. Select **Save**.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
-
-Repeat these steps until all desired rules are configured and select **Publish rules**.
+1. Repeat these steps until all desired rules are configured and select **Publish rules**.
 
 > [!NOTE]
 > All rules are equally applied to all environments in the group.
