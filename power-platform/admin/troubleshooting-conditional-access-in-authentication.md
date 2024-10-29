@@ -16,7 +16,7 @@ search.audienceType:
 
 When the Document Associated grid shows a warning message "Conditional access isn't enabled correctly", the error code at the end of the message will guide addressing the configuration.
 
-![Document associated grid authentication isnt enabled correctly](./media/document-associated-grid-conditional-access-incorrect.png "Document associated grid authentication isnt enabled correctly")  
+![Document associated grid cconditional access isn't enabled correctly](./media/troubleshooting-conditional-access-in-authentication/document-associated-grid-conditional-access-incorrect.png "Document associated grid cconditional access isn't enabled correctly")  
 
 ### Document Associated Grid warning AADSTS50076 or AADSTS50079 
 
@@ -59,4 +59,4 @@ When message shown is AADSTS53000, the device is required to be managed by Share
 
 When the Document Associated grid shows a warning message "Authentication isn't enabled correctly", please contact support to confirm that authentication is enabled for the environment.
 
-![Document associated grid authentication isnt enabled correctly](./media/document-associated-grid-authentication-incorrect.png "Document associated grid authentication isnt enabled correctly")  
+![Document associated grid authentication isn't enabled correctly](./media/troubleshooting-conditional-access-in-authentication/document-associated-grid-authentication-incorrect.png "Document associated grid authentication isn't enabled correctly")  
