@@ -1,6 +1,6 @@
 ---
 title: Limit sharing 
-description: Limit how broadly makers can share canvas apps in your managed environments.
+description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your managed environments.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 06/01/2023
@@ -28,14 +28,21 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | Exclude sharing with security groups | Select if users aren't allowed to share canvas apps with any security groups or with everyone. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, you can control the maximum number of users with whom a canvas app can be shared. |
 
+| Solution-aware cloud flow sharing rules | System behavior when selected |
+| --- | --- |
+| Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows with any number of individuals or security groups. <br><br> **When unselected:** Users cannot share their cloud flows with any individual or security group.|
+
+
 > [!NOTE]
-> Sharing rules are enforced when users try to share an app. This won't impact any existing users who already have access to the app prior to the application of the sharing rules. However, if an app is out of compliance after rules are set, only un-sharing will be allowed until the app is compliant with the new rules.
+> Sharing rules are enforced when users try to share an app or flow. This won't impact any existing users who already have access to the app or flow prior to the application of the sharing rules. However, if an app or flow is out of compliance after rules are set, only un-sharing will be allowed until the app or flow is compliant with the new rules.
 > 
 > After sharing rules are set in the Power Platform admin center, it may take up to an hour for them to start getting enforced.
 >
 > Sharing rules in Dataverse for Teams environments do not impact sharing to a Team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a Team other than the one bound to the environment, the sharing limits are enforced. 
 
-If a user tries to share a canvas app that contradicts the sharing rules, they will be informed as shown below.
+If a user tries to share a canvas app or solution-aware cloud flow that contradicts the sharing rules, they will be informed as shown below.
+
+
 
 ## Use PowerShell to set sharing limits
 
@@ -58,6 +65,20 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
+Here's a PowerShell script that disables sharing for solution-aware cloud flows.
+
+```powershell
+# Retrieve the environment
+$environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
+
+# Update the Managed Environment settings
+$governanceConfiguration = $environment.Internal.properties.governanceConfiguration
+$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'solutionCloudFlows-limitSharingMode' -Value "disableSharing" -Force
+
+# Save the updated Managed Environment settings
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
+```
+
 ### Remove sharing limits
 
 Here's a PowerShell scripts that removes the sharing limits that were configured in the script above.
@@ -74,6 +95,7 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 # Save the updated Managed Environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
+In the script above, you can substitute 'limitSharingMode' for 'solutionCloudFlows-limitSharingMode' to enable sharing for solution cloud flows. 
 
 ## Surface your organization’s governance error content 
 If you specify governance error message content to appear in error messages, it will be included in the error message displayed to users. See [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
