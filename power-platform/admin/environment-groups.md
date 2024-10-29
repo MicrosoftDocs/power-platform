@@ -43,7 +43,7 @@ This article covers how to augment your _default environment strategy_ by combin
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
 ## Known limitations
-- When creating an environment in the Power Platform admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. This is a known issue that we plan to fix soon. In the meantime, the alternative is to create the environment via API or PowerShell.
+When creating an environment in the Power Platform admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. This is a known issue that we plan to fix soon. In the meantime, the alternative is to create the environment via API or PowerShell.
 
 ## Create an environment group
 
@@ -68,11 +68,9 @@ After you create the environment group, Power Platform tenant administrators can
 
 You can also configure the _sharing limit_ rules for canvas apps and copilots. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps and copilots with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
-First, go to the **Personal Productivity** group and select the **Rules** tab.
-
 #### For canvas apps
 1. Select **Environment groups** in the navigation pane.
-1. Select your environment group, and then select the **Rules** tab.
+1. Select the **Personal Productivity** environment group, and then select the **Rules** tab.
 1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
@@ -82,7 +80,8 @@ First, go to the **Personal Productivity** group and select the **Rules** tab.
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 1. Select **Environment groups** in the navigation pane.
-1. Select your environment group, and then select the **Rules** tab.1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
+1. Select the **Personal Productivity** environment group, and then select the **Rules** tab.
+1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
 1. Ensure that **Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared** is unselected.
 1. Select **Save**.
 1. Select the **Sharing agents with Viewer permissions** rule to open its configuration panel.
