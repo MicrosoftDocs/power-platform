@@ -92,10 +92,7 @@ Now you can view the changes made to the solution and can commit and push the ch
 
 ## Next steps
 
-After your environment and solutions are connected to Git, you can start making changes to your solutions and committing and pushing those changes to the repository. For more information about how to commit and push changes to the repository, go to [Commit and push changes to Git](/power-platform/alm/git-integration/commit-and-push).
+After your environment and solutions are connected to Git, you can start making changes to your solutions and committing and pushing those changes to the repository. For more information about source control operations, go to [Source control repository operations (preview)](source-control-operations.md).
 
-### See also
-
-[Branching and merging in Git](/power-platform/alm/git-integration/branching-and-merging)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

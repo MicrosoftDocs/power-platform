@@ -30,7 +30,7 @@ In this article, you find some of the key concepts and benefits to using Git ena
 
 ## ALM in the Power Platform and Dataverse
 
-Power Platform provides many out of the box capabilities that enable organizations to manage application lifecycle management (ALM) for their solutions. Included are the ability to package solutions as containers for the many different types of components in the platform, manage environments involved in the application lifecycle, and deploy solutions using [pipelines](/power-platform/alm/pipelines.md). There are also several ways to integrate Git repositories with Power Platform using developer tooling. With native integration of Git in Dataverse, the process is simplified and streamlined for makers to work with their solutions in a familiar way and interact with source control through simplified interfaces in the maker portal.
+Power Platform provides many out of the box capabilities that enable organizations to manage application lifecycle management (ALM) for their solutions. Included are the ability to package solutions as containers for the many different types of components in the platform, manage environments involved in the application lifecycle, and deploy solutions using [pipelines in Power Platform](../pipelines.md). There are also several ways to integrate Git repositories with Power Platform using developer tooling. With native integration of Git in Dataverse, the process is simplified and streamlined for makers to work with their solutions in a familiar way and interact with source control through simplified interfaces in the maker portal.
 
 ## Benefits
 
