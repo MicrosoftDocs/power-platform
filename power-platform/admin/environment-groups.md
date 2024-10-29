@@ -73,6 +73,11 @@ You can also configure the _sharing limits_ rule. Since the environment group is
 1. Repeat these steps until all desired rules are configured.
 1. Select **Publish rules**.
 
+**For solution-aware cloud flows**
+1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
+2. Uncheck **Let people share solution-aware cloud flows**. This will disable all sharing for cloud flows in this environment group.
+3. Select **Save**
+
 > [!NOTE]
 > All rules are equally applied to all environments in the group.
 
