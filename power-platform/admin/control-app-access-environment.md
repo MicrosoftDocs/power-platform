@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 10/25/2024
+ms.date: 10/29/2024
 search.audienceType: 
   - admin
 ---
@@ -175,17 +175,6 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | 51f81489-12ee-4a9e-aaae-a2591f45987d | xRm Tool kit |
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
-
-## Turn on the app access control for your environment
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
-1. In the navigation pane, select **Security**.
-1. Select **Access controls** in the **Security** section.
-1. Select **App access control** in the **Access controls** section.
-1. Select the environment for which you want to turn on the app access control feature.
-1. Select **Enable client application access**.
-
-    > [!NOTE]
-    > To use the app access control, the environment must be a Managed environment. You will be prompted to turn it on if you selected a non-Managed Environment.
 
 ## Recommended steps 
 
