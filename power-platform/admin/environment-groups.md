@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/23/2024
+ms.date: 10/29/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -71,6 +71,8 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 First, go to the **Personal Productivity** group and select the **Rules** tab.
 
 #### For canvas apps
+1. Select **Environment groups** in the navigation pane.
+1. Select your environment group, and then select the **Rules** tab.
 1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
@@ -79,14 +81,15 @@ First, go to the **Personal Productivity** group and select the **Rules** tab.
 #### For custom agents and Microsoft 365 Copilot agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
-2. Ensure that **Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared** is unselected.
-3. Select **Save**.
-4. Select the **Sharing agents with Viewer permissions** rule to open its configuration panel.
-5. Select **Let people grant Viewer permissions when Microsoft 365 Copilot agents and custom agents are shared**.
-6. Select **Only share with individuals (no security groups)**.
-7. Select **Limit the number of viewers who can access each Microsoft 365 Copilot agent and custom agent** and enter the desired number of Viewers you would like to have on the copilot.
-8. Select **Save**.
+1. Select **Environment groups** in the navigation pane.
+1. Select your environment group, and then select the **Rules** tab.1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
+1. Ensure that **Let people grant Editor permissions when Microsoft 365 Copilot agents and custom agents are shared** is unselected.
+1. Select **Save**.
+1. Select the **Sharing agents with Viewer permissions** rule to open its configuration panel.
+1. Select **Let people grant Viewer permissions when Microsoft 365 Copilot agents and custom agents are shared**.
+1. Select **Only share with individuals (no security groups)**.
+1. Select **Limit the number of viewers who can access each Microsoft 365 Copilot agent and custom agent** and enter the desired number of Viewers you would like to have on the copilot.
+1. Select **Save**.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
