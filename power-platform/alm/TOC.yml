@@ -38,18 +38,16 @@
               href: organize-solutions.md
             - name: Use segmented solutions
               href: segmented-solutions-alm.md
-    - name: Source Control Integration
+    - name: Source control integration
       items:
         - name: Overview
           href: git-integration/overview.md
+        - name: Common scenarios with Dataverse and Git
+          href: git-integration/common-scenarios.md
         - name: Dataverse Git integration setup
-        - name: Code first development with Git
-          href: git-integration/code-first-development.md
           href: git-integration/connecting-to-git.md
         - name: Source control operations
-          href: git-integration/source-control-operations.md
-        - name: Common scenarios with Dataverse and Git
-          href: git-integration/common-scenarios.md          
+          href: git-integration/source-control-operations.md   
         - name: Frequently asked questions
           href: git-integration/faqs.md
     - name: Tools and apps used

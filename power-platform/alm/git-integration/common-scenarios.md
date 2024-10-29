@@ -1,10 +1,10 @@
 ---
-title: "Common Dataverse Git integration Scenarios"
-description: "This page discusses common use cases of Dataverse with Git, focusing on high level concepts and requirements."
+title: "Common Dataverse and Git integration scenarios"
+description: "This article discusses common use cases of Microsoft Dataverse with Git, focusing on high level concepts and requirements."
 author: shmcarth
 ms.subservice: alm
 ms.author: matp
-ms.date: 04/16/2024
+ms.date: 10/29/2024
 ms.custom: 
 ms.topic: article
 ms.reviewer: tapanm
@@ -13,13 +13,13 @@ ms.contributors:
 - mikefactorial
 ---
 
-# Common Dataverse Git integration Scenarios
+# Common Dataverse and Git integration scenarios
 
-Integrating Git with Dataverse allows you to manage your solutions and components in a source control system rather than relying solely on Dataverse environments to house your solution components during the development process. Source control, and Git in particular, is often associated with professional software development life cycles. However, source control can be used in various scenarios to manage your solutions and components in Dataverse even when no professional developers are involved. On this page, we discuss some common scenarios where Git integration can be useful in managing your solutions and components in Dataverse. All of these scenarios unlock different capabilities that can be used on their own or in combination to manage your solutions and components more effectively.
+Integrating Git with Dataverse allows you to manage your solutions and components in a source control system rather than relying solely on Dataverse environments to house your solution components during the development process. Source control, and Git in particular, is often associated with professional software development life cycles. However, source control can be used in various scenarios to manage your solutions and components in Dataverse even when no professional developers are involved. In this article, some common scenarios are discussed where Git integration can be useful in managing your solutions and components in Dataverse. All of these scenarios unlock different capabilities that can be used on their own or in combination to manage your solutions and components more effectively.
 
 ## Viewing changes made over time to your solutions
 
-Most components in Dataverse have a history of changes that can be viewed in the maker portal. However, viewing all changes to a solution over time can be difficult using only the maker tools available. There's also no way to revert changes to a previous state or compare changes made by different users. By integrating Git with Dataverse, you can view granular changes made to your solutions, compare changes made by different users, and revert changes to a previous state if needed. Being able to view and search changes made to your solutions over time can help you understand how your solutions evolve and identify when and why changes were made and by whom.
+Most components in Dataverse have a history of changes that can be viewed in the Power Apps (make.powerapps.com). However, viewing all changes to a solution over time can be difficult using only the maker tools available. There's also no way to revert changes to a previous state or compare changes made by different users. By integrating Git with Dataverse, you can view granular changes made to your solutions, compare changes made by different users, and revert changes to a previous state if needed. Being able to view and search changes made to your solutions over time can help you understand how your solutions evolve and identify when and why changes were made and by whom.
 
 ## Collaborating with other team members on solutions
 
@@ -27,7 +27,7 @@ Collaborating with other team members on solutions in Dataverse can be difficult
 
 ## Managing different versions of your solutions
 
-By integrating Dataverse with Git, you can create and manage different versions of your solutions by creating branches for different versions, tagging different versions of built solutions or the source code with version numbers. Being able to manage different versions of your solutions can help you to employ more rigid application lifecycle management practices and also recover from issues that could arise from deploying a new version of your solution or recover a lost or broken environment to a previous state.
+By integrating Dataverse with Git, you can create and manage different versions of your solutions by creating branches for different versions, tagging different versions of built solutions or the source code with version numbers. Being able to manage different versions of your solutions can help you employ more rigid application lifecycle management practices and also recover from issues that could arise from deploying a new version of your solution or recover a lost or broken environment to a previous state.
 
 ## Automate testing and validation of your solutions
 
@@ -39,7 +39,7 @@ Being able to manage both low-code and code-first components in a single environ
 
 ## Advanced approval workflows for solution changes
 
-Deployment approvals in Dataverse can be difficult without a way to track and approve changes to solutions before they're deployed to production environments. Changes inside of the zipped solution when exporting from the maker portal aren't easily comparable with previous versions and in cases including solutions with code-first components it can be impossible to know what changed without the original source code. By integrating Dataverse with Git, you can create advanced approval workflows for solution changes by creating pull requests that require approval before changes are merged into the main branch, setting up branch policies that require code reviews before changes are merged into the main branch, and setting up build policies that require successful builds before changes are merged into the main branch. Being able to create advanced approval workflows for solution changes can help you to ensure that changes are reviewed and approved before they're deployed to production environments and that changes are tracked and deployed in a controlled manner.
+Deployment approvals in Dataverse can be difficult without a way to track and approve changes to solutions before they're deployed to production environments. Changes inside of the zipped solution when exporting from the Power Apps aren't easily comparable with previous versions and in cases including solutions with code-first components it can be impossible to know what changed without the original source code. By integrating Dataverse with Git, you can create advanced approval workflows for solution changes by creating pull requests that require approval before changes are merged into the main branch, setting up branch policies that require code reviews before changes are merged into the main branch, and setting up build policies that require successful builds before changes are merged into the main branch. Being able to create advanced approval workflows for solution changes can help you to ensure that changes are reviewed and approved before they're deployed to production environments and that changes are tracked and deployed in a controlled manner.
 
 ## Better on their own, best together
 
@@ -47,8 +47,7 @@ Git integration unlocks many previously unavailable capabilities in Dataverse th
 
 ### Related content
 
-[Getting started with Git integration](/power-platform/alm/git-integration/connecting-to-git)
-[Commit and push changes to Git](/power-platform/alm/git-integration/commit-and-push)  
-[Branching and merging in Git](/power-platform/alm/git-integration/branching-and-merging)
+[Setup Git integration](connecting-to-git.md)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

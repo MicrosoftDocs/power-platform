@@ -43,9 +43,29 @@ When you're using Git integration in Dataverse, solutions stored in source contr
 
 With the introduction of Git integration in Dataverse, there are changes to the way that solutions and solution components are represented in source control. When you commit and push changes to source control, the solution components are stored in a specific format that is compatible with Git. This format is used to represent the solution components in a way that is easy to read and understand and can be used to track changes to the solution components over time. The file format for solution components is designed to be human-readable and can be used to view changes to the solution components in source control. Additionally, to allow for multiple solutions to be stored in the same repository and folder, the solution components in source control are no longer duplicated for each solution. Instead, the solution components are stored in a single location and can be shared across multiple solutions in the same repository and folder.
 
-### See also
+## Code-first development with Git
 
-[Common Dataverse Git integration Scenarios](/power-platform/alm/git-integration/common-scenarios)  
+Code-first development in the Power Platform is enabled using development tooling like the Power Platform CLI, Visual Studio, and Visual Studio Code extensions. Involving code-first developers in the solution development process is difficult without source control integration as components like PCF controls and Dataverse plugins are deployed to solutions as packaged assets built from source code and not directly editable in the Power Apps (make.powerapps.com). Without source control as a part of the development process for both low-code and code-first components, it's difficult to manage changes to the solution and ensure that changes are tracked and deployed in a controlled manner.
+
+By enabling Git integration in Dataverse, you can meet code-first developers where they work and provide a seamless experience for both low-code and code-first developers. However, there are some considerations to keep in mind when managing code-first components in a low-code environment.
+
+### Fusion development with Dataverse Git integration
+
+Power Platform provides capabilities for both low-code and code-first development. This article discusses code-first development processes associated with Dataverse and Git integration and provides guidance about how to manage code-first and low-code components in a single environment. Components like PCF controls, Dataverse plugins, and custom workflow activities that are examples of code-first components that can be managed in source control.
+
+### Code-first and low-code components in a single environment
+
+Code-first components can be included in solutions through a build process that generates a managed or unmanaged solution that can be imported into a Dataverse environment. However, code first components can also be deployed directly into an unmanaged solution in a maker environment once they're built without employing the solution build process to deploy them. There's the build process to consider given this flexibility.
+
+If you're deploying code-first components directly to an unmanaged solution in a maker environment, when those components are committed to source control, only their compiled (built) version is stored in source control. For example, the binary DLL if a plugin or the transpiled and optimized bundle.js for a PCF control. As a result, you end up with two copies of the component in source control. One represented by the built version and the other represented by the source code. Storing binaries in your repository can lead to confusion and potential conflicts if the source code and the built version aren't kept in sync. This practice isn't recommended because the source code should be the single source of truth for the component and only a single copy should be stored.
+
+The recommended approach is to build code-first components as part of a solution build process and import the generated unmanaged solution into the maker environment. This approach ensures that the source code and the built version are kept in sync and that the source code is the single source of truth for the component. However, this approach requires that you have a build process in place to generate the managed or unmanaged solution for use in the import process and deployment process. You can create Azure Pipelines or GitHub workflows, for instance, that create artifacts for pipelines in Power Platform and for the Git sync processes to consume.
+
+## Next steps
+
+[Common Dataverse and Git integration scenarios](/power-platform/alm/git-integration/common-scenarios)  
+
+### See also
 
 [Getting started with Git integration](/power-platform/alm/git-integration/connecting-to-git)
 

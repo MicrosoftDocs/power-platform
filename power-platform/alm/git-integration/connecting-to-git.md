@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Dataverse Git integration"
+title: "Setup Dataverse and Git integration"
 description: "This page discusses the integration of Dataverse with Git, focusing on connecting to Azure DevOps and binding your environment for Dynamics 365 and Power Platform."
 author: shmcarth
 ms.subservice: alm
@@ -12,7 +12,7 @@ ms.collection:
 ms.contributors:
 - mikefactorial
 ---
-# Getting started with Dataverse Git integration
+# Setup Dataverse and Git integration
 
 Git integration in Dataverse is initiated from Power Platform on the **Solutions** page in Dataverse. This article discusses the integration of Dataverse with Git, focusing on connecting to Azure DevOps and binding your environment for Dynamics 365 and Power Platform.
 
