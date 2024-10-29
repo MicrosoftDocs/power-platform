@@ -12,6 +12,8 @@ search.audienceType:
 ---
 # Troubleshooting conditional access authentication
 
+With security improvements in SharePoint integration authentication, it is suggested to keep the the SharePoint Online and Dataverse aligned to avoid conditioanl access mismatch. These sections outline how to review and align conditional access
+
 ## Conditional access isn't enabled correctly
 
 When the Document Associated grid shows a warning message "Conditional access isn't enabled correctly", the error code at the end of the message will guide addressing the configuration.
