@@ -46,6 +46,8 @@
           href: git-integration/connecting-to-git.md
         - name: Source control operations
           href: git-integration/source-control-operations.md
+        - name: Common scenarios with Dataverse and Git
+          href: git-integration/common-scenarios.md          
         - name: Frequently asked questions
           href: git-integration/faqs.md
     - name: Tools and apps used

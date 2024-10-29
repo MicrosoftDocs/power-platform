@@ -1,1 +1,0 @@
-pandoc overview.md common-scenarios.md connecting-to-git.md commit-and-push.md branching-and-merging.md code-first-development.md code-first-scenarios.md create-yaml-azdo-pipeline.md faqs.md panddoc.settings.md --ascii --pdf-engine=xelatex -o dataverse-git-integration-doc.pdf
