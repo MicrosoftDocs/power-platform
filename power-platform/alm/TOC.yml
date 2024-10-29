@@ -43,6 +43,8 @@
         - name: Overview
           href: git-integration/overview.md
         - name: Dataverse Git integration setup
+        - name: Code first development with Git
+          href: git-integration/code-first-development.md
           href: git-integration/connecting-to-git.md
         - name: Source control operations
           href: git-integration/source-control-operations.md
