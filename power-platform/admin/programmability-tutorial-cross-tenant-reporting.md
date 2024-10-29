@@ -39,11 +39,18 @@ Use the following PowerShell script to authenticate using Power Platform API.
 
 > [!NOTE]
 > Users with the Power Platform administrator Entra ID role have permission to run the tenant isolation impact report.
+> Moreover, you can also create an application registration and configure Power Platform API permissions, see [Microsoft Entra setup for calling Power Platform API (preview)](programmability-authentication-v2.md). 
 
 ```PowerShell
-Import-Module "MSAL.PS"
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default'
-$Headers = @{Authorization = "Bearer $($AuthResult.AccessToken)"}
+Import-Module "Microsoft.PowerApps.Administration.PowerShell"
+
+$tenantId = "<tenant id>"
+$appId = "<your Microsoft Entra Application Id for calling Power Platform API>"
+$certificateThumbprint = "<your Microsoft Entra app registration Certificate Thumbprint for calling Power Platform API>"
+
+Add-PowerAppsAccount -Endpoint "prod" -TenantId $tenantId -CertificateThumbprint $certificateThumbprint -ApplicationId $appId
+$AuthResult = Get-JwtToken -Audience "https://api.powerplatform.com"
+$Headers = @{Authorization = "Bearer $($AuthResult)"}
 ```
 
 ## Step 2. Create a report
@@ -142,3 +149,5 @@ Power Platform API reference: [List Cross Tenant Connection Reports](/rest/api/p
 ### See also
 
 [Power Platform API reference - Cross Tenant Connection Reports](/rest/api/power-platform/governance/cross-tenant-connection-reports)
+
+[Microsoft Entra setup for calling Power Platform API (preview)](programmability-authentication-v2.md)
