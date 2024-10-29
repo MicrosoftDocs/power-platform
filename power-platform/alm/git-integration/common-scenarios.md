@@ -13,9 +13,16 @@ ms.contributors:
 - mikefactorial
 ---
 
-# Common Dataverse and Git integration scenarios
+# Common Dataverse and Git integration scenarios (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 Integrating Git with Dataverse allows you to manage your solutions and components in a source control system rather than relying solely on Dataverse environments to house your solution components during the development process. Source control, and Git in particular, is often associated with professional software development life cycles. However, source control can be used in various scenarios to manage your solutions and components in Dataverse even when no professional developers are involved. In this article, some common scenarios are discussed where Git integration can be useful in managing your solutions and components in Dataverse. All of these scenarios unlock different capabilities that can be used on their own or in combination to manage your solutions and components more effectively.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ## Viewing changes made over time to your solutions
 

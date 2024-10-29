@@ -13,9 +13,16 @@ ms.contributors:
 - mikefactorial
 ---
 
-# Overview of Dataverse Git integration
+# Overview of Dataverse Git integration (preview)
 
-Git integration in Microsoft Dataverse is used to create source control friendly representations of solutions and solution components in your Dataverse environment and store them in Azure DevOps. Using source control as the source of truth for your solutions allows you to track changes, collaborate with team members, and manage deployments to different environments from a central location while also providing traceability and auditability of changes. Git integration in Dataverse is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy. Git is an open-source distributed version control system (DVCS) that tracks changes to computer files, especially source code in software development. 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+
+Git integration in Microsoft Dataverse is used to create source control friendly representations of solutions and solution components in your Dataverse environment and store them in Azure DevOps. Using source control as the source of truth for your solutions allows you to track changes, collaborate with team members, and manage deployments to different environments from a central location while also providing traceability and auditability of changes. Git integration in Dataverse is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy. Git is an open-source distributed version control system (DVCS) that tracks changes to computer files, especially source code in software development.
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 In this article, you find some of the key concepts and benefits to using Git enabled source control with your Dataverse environments and solutions.
 

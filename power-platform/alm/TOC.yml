@@ -38,7 +38,7 @@
               href: organize-solutions.md
             - name: Use segmented solutions
               href: segmented-solutions-alm.md
-    - name: Source control integration
+    - name: Source control integration (preview)
       items:
         - name: Overview
           href: git-integration/overview.md
