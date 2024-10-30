@@ -1,7 +1,7 @@
 ---
 title: Safeguarding Dataverse sessions with IP cookie binding
 description: Discover methods for using IP-based cookie binding to stop cookie replay, ensuring secure sessions in Dataverse against unauthorized access by internet service providers.
-ms.date: 10/17/2024
+ms.date: 10/30/2024
 ms.topic: conceptual
 author: ritesp
 ms.reviewer: sericks
@@ -19,13 +19,15 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
 ## Enable IP address-based cookie binding
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
-2. Select **Environments**, and then select an environment.
-3. Select **Settings** > **Product**, and then select **Privacy + Security**.
-4. Under **IP address settings**, select **Enable IP address-based cookie binding**.
-5. **Reverse proxy IP addresses**(Optional): If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](/block-cookie-replay-attack) and the [IP firewall](/ip-firewall). Reach out to your network administrator to get the "reverse proxy IP address"
+1. Select **Environments**, and then select an environment.
+1. Select **Settings** > **Product** > **Privacy + Security**.
+1. Under **IP address settings**, select the **Enable IP address-based cookie binding** option.
+1. **(Optional)**: If your organization has reverse proxies configured, enter the IP addresses of one or more, separated by commas in the **Reverse proxy IP addresses** field. The reverse proxy setting applies to both [IP-based cookie binding](/block-cookie-replay-attack) and the [IP firewall](/ip-firewall). Reach out to your network administrator to get the reverse proxy IP addresses.
+
      > [!NOTE]
      > Reverse proxy must be configured to send user client IP address in [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
-6.  Select **Save**.
+     
+1.  Select **Save**.
 
 ## How cookie binding uses your IP address to work
 
