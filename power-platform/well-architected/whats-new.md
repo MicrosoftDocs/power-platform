@@ -13,15 +13,21 @@ ms.date: 09/11/2024
 
 Get the latest info about what's new and what's changed in Power Platform Well-Architected.
 
+## October 2024
+
+### New articles
+
+We've added a new recommendation, [XO:10 Recommendations for designing conversational user experiences](./experience-optimization/conversation-design.md), to the Experience Optimization pillar. This recommendation provides strategies for designing effective conversational AI in your Power Platform workloads.
+
 ## September 2024
-
-### Updated articles
-
-Recommendations across all five pillars have been updated to incorporate guidance on implementing Microsoft Copilot Studio features.
 
 ### New articles
 
 The [Intelligent application](./intelligent-application/index.yml) workload is now included in Power Platform Well-Architected. This documentation provides guidance around planning, developing, and maintaining intelligent application workloads built on Power Platform. An intelligent application workload applies Power Platform Well-Architected best practices to integrate generative AI for automating and improving business processes.
+
+### Updated articles
+
+Recommendations across all five pillars have been updated to incorporate guidance on implementing Microsoft Copilot Studio features.
 
 ## May 2024
 
