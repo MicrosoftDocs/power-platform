@@ -72,7 +72,7 @@ Anticipate repeated misunderstandings. If the AI fails to understand a user mult
 
 ## Power Platform facilitation
 
-Copilot Studio includes [prebuilt entities](/microsoft-copilot-studio/advanced-entities-slot-filling) that are designed to understand and categorize common user intents across a variety of domains. Use the prebuilt entities to map user intents to the relevant actions or responses. Prebuilt entities are optimized to handle common variations in user input and save you the effort of building interactions from scratch.
+Copilot Studio includes [prebuilt entities](/microsoft-copilot-studio/advanced-entities-slot-filling) that are designed to understand and categorize common user intents across a variety of domains. Use the prebuilt entities to map user intents to the relevant actions or responses without having to build everything on your own. Prebuilt entities are optimized to handle common variations in user input.
 
 You can use [agent templates](/microsoft-copilot-studio/template-fundamentals) as a starting point for building copilots. The templates are preconfigured with core conversational patterns, capabilities, and workflows that are designed to handle common tasks and scenarios. They incorporate built-in intents, entities, and dialogue flows tailored for specific use cases, such as customer support, productivity tasks, or FAQs. You can customize the templates to meet the specific needs of your workload and users.
 
