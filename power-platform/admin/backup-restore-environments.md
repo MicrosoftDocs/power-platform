@@ -2,12 +2,13 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 10/30/2024
 ms.subservice: admin
 author: matapg007 
 ms.author: matgupta
 ms.reviewer: sericks
 contributors:
+- ttreen
 - Funken1766
 - Daniel2327 
 - elijohnson-ms 
@@ -22,7 +23,7 @@ System backups are automatically created for environments that have a database. 
 Manual backups are backups that the user initiates. You should create manual backups before you do major customization or apply a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups of production environments that have Dynamics 365 applications are kept for up to 28 days. Backups of environments that don't have Dynamics 365 applications are kept for seven days.
 
 > [!NOTE]
-> This feature is not currently supported for Microsoft Dynamics Finance and Operations.
+> This feature isn't currently supported for Microsoft Dynamics finance and operations apps.
 
 ## Supported retention period
 
