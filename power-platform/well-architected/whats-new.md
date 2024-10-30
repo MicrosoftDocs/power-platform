@@ -6,7 +6,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: conceptual
-ms.date: 09/11/2024
+ms.date: 10/30/2024
 ---
 
 # What's new in Power Platform Well-Architected
@@ -15,7 +15,7 @@ Get the latest info about what's new and what's changed in Power Platform Well-A
 
 ## October 2024
 
-### New articles
+### New article
 
 We've added a new recommendation, [XO:10 Recommendations for designing conversational user experiences](./experience-optimization/conversation-design.md), to the Experience Optimization pillar. This recommendation provides strategies for designing effective conversational AI in your Power Platform workloads.
 
