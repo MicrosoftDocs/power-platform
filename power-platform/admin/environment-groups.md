@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 10/30/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -11,6 +11,8 @@ ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
+contributors:
+- arjunmayur
 ---
 
 # Environment groups
@@ -75,7 +77,7 @@ You can also configure the _sharing limits_ rule. Since the environment group is
 
 **For solution-aware cloud flows**
 1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
-2. Uncheck **Let people share solution-aware cloud flows**. This will disable all sharing for cloud flows in this environment group.
+2. Unmark the **Let people share solution-aware cloud flows** option. This turn off all sharing for cloud flows in this environment group.
 3. Select **Save**
 
 > [!NOTE]
