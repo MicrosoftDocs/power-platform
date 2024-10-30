@@ -23,7 +23,7 @@ Using PowerShell cmdlets and management connectors, admins can build flows and a
 |Power Apps cmdlets <br/>[PowerShell support for Power Apps](powerapps-powershell.md)  |Designed for app makers and administrators to automate tasks with environments and associated apps, flows, and connectors.      |
 |Microsoft 365 cmdlets<br/> [Get started with PowerShell for Microsoft 365](/microsoft-365/enterprise/getting-started-with-microsoft-365-powershell?view=o365-worldwide)   |Use for Microsoft 365 related tasks to automate user-related actions and tasks. For example, the assignment of licenses.         |
 |Dynamics 365 cmdlets<br/> [Overview of Dynamics 365 Customer Engagement (on-premises) PowerShell](/powershell/dynamics365/customer-engagement/overview?view=dynamics365ce-ps)    |Use for environments with Microsoft Dataverse databases. Modules include support for the Dataverse online admin API, and automating solution deployment to the environments.         |
-|Microsoft Azure cmdlets <br/> [Azure PowerShell documentation](/powershell/azure/?view=azps-4.8.0)    |Use for including any Azure components in your overall solution. You can use for scripting setup of the on-prem application gateway.        |
+|Microsoft Azure cmdlets <br/> [Azure PowerShell documentation](/powershell/azure/?view=azps-4.8.0)    |Use for including any Azure components in your overall solution. You can use for scripting setup of the on-premises application gateway.        |
 
 You can use a combination of all the above cmdlets to build PowerShell scripts to do bulk operations on users, environments, or their resources.
 
@@ -46,15 +46,9 @@ Adding parameters, such as -Default, allows admins to generically find the defau
 Get-AdminPowerAppEnvironment -Default
 ```
 
-Use the GUID to return a non-display name for the environment. Then you can drill into details of that specific environment. For example:
+Use the GUID to return a nondisplay name for the environment. Then you can drill into details of that specific environment. For example:
 
 Get-AdminPowerAppEnvironment -Environment 'EnvironmentName'.
-
-This returns the following:
-
-> [!div class="mx-imgBorder"] 
-> ![User PowerShell to get environment details.](media/powershell-get-environment-details.png "User PowerShell to get environment details")
-
 
 This example returns a list of connections in an environment, including all the connections in a tenant's default environment.
 

@@ -76,7 +76,7 @@
                   href: view-license-consumption-issues.md
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
-                - name: View intelligent recommendations about licensing (preview)
+                - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
                   href: global-service-administrators-can-administer-without-license.md
@@ -270,7 +270,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units (preview)
+                    - name: Create or edit business units 
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -303,7 +303,7 @@
                     - name: Audit summary view
                       href: manage-dataverse-auditing.md#use-the-audit-summary-view
                     - name: Entity and field audit settings
-                      href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
+                      href: manage-dataverse-auditing.md#turn-on-or-off-auditing-for-entities-and-fields
                     - name: Audit security roles
                       href: audit-security-roles.md
                     - name: Access audit data using Azure Synapse Link for Dataverse
@@ -464,11 +464,13 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security
+            - name: Manage security (preview)
               href: security/security-posture-overview.md
+            - name: Manage Copilot (preview)
+              href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
-              - name: Managed identity overview (preveiw)
+              - name: Managed identity overview (preview)
                 href: managed-identity-overview.md
               - name: Set up managed identity (preview)
                 href: set-up-managed-identity.md
@@ -541,9 +543,9 @@
                       - name: Connector classification
                         href: dlp-custom-connector-parity.md
                     - name: DLP for Power Automate
-                      href: /power-automate/prevent-data-loss
+                      href: prevent-data-loss.md
                     - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
+                      href: /power-automate/prevent-data-loss
                     - name: DLP for Copilot Studio
                       href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
@@ -718,6 +720,8 @@
                   href: manage-principalobjectaccess-storage.md
                 - name: Subscription Tracking Deleted Object table
                   href: subscription-tracking-deleted-object-retention.md
+            - name: Extend Dataverse capacity for 30 days
+              href: extend-capacity.md
             - name: Free up storage
               items:
                 - name: Recover storage space
@@ -744,7 +748,7 @@
               href: manage-power-automate.md
             - name: Add-on capacity management
               href: capacity-add-on.md
-            - name: Administer the catalog (preview)
+            - name: Administer the catalog
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
@@ -790,6 +794,8 @@
                   href: programmability-tutorial-allocate-capacity-addons.md
                 - name: "Tutorial: Create cross tenant isolation reports (preview)"
                   href: programmability-tutorial-cross-tenant-reporting.md
+                - name: "Tutorial: Create, update, and list Environment Management Settings (preview)"
+                  href: programmability-tutorial-environmentmanagement-settings.md
             - name: PowerShell
               items:
                 - name: Getting started

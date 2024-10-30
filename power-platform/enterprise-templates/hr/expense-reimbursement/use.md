@@ -2,10 +2,11 @@
 title: Get started using the Expense Reimbursement apps
 description: Learn how to use the Reimbursement Request app and the Expense Reimbursement Admin app on Microsoft Power Platform.
 author: microsoft-george
-ms.author: georgenewton
 contributors:
   - tverhasselt
   - nghiemdoan-msft
+  - EllenWehrle
+ms.author: georgenewton
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 06/13/2024

@@ -1,22 +1,33 @@
 ---
-title: Install and set up the Expense Reimbursement template for Power Platform
+title: Install and set up Expense Reimbursement template for Power Platform
 description: Learn how to install, set up, and deploy the Expense Reimbursement template for Microsoft Power Platform.
 author: tverhasselt
-ms.author: thoverh
 contributors:
   - microsoft-george
   - nghiemdoan-msft
+  - EllenWehrle
+ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 07/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Install and set up the Expense Reimbursement template
+# Install and set up Expense Reimbursement template
 
-As a Power Platform admin, you install, set up, and deploy the Expense Reimbursement template solutions for your organization. This article covers the following steps:
+Enterprise templates for Power Platform are enterprise-ready solutions that are designed to be installed, customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) at your organization to support common [governance and security](/power-platform/guidance/adoption/admin-best-practices) practices.
+
+Establish a centralized team of key stakeholders, product owners, developers, and Power Platform administrators. Be sure to review Power Platform best practices and administration resource links and develop plans that suit your organization's needs.
+
+More information:
+
+- [Power Platform adoption best practices](/power-platform/guidance/adoption/methodology)
+- [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation)
+- [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+
+As a Microsoft Power Platform admin, follow the steps outlined in this article to install and set up the Expense Reimbursement template.
 
 ## Step 1: Review prerequisites
 
@@ -24,7 +35,7 @@ Make sure that you have the required license and an environment and data policy 
 
 ### Confirm licensing
 
-Make sure that your organization has the necessary licensing to use enterprise templates. Power Apps usage rights that are included with Microsoft 365 and Office 365 licenses aren't sufficient. You need one of the following Power Apps plans:
+Make sure that your organization has the necessary licensing to use enterprise templates. Power Apps usage rights that are included with Microsoft 365 and Office 365 licenses aren't sufficient. More license details are available in the [Microsoft Power Platform Licensing Guide.](https://go.microsoft.com/fwlink/?linkid=2085130) You need one of the following Power Apps plans:
 
 - Power Apps Premium
 - Power Apps per app
@@ -34,27 +45,23 @@ Make sure that your organization has the necessary licensing to use enterprise t
 > [!TIP]
 > A free [Power Apps Developer Plan](https://powerapps.microsoft.com/developerplan/) is a great way to install the template for evaluation purposes.
 
-More license details are available in the [Microsoft Power Platform Licensing Guide.](https://go.microsoft.com/fwlink/?linkid=2085130)
-
 ### Create environment and data policies
 
-It's important to have a cohesive environment and data policy and to ensure required resources in place.
+It's important to have a cohesive environment and data policy and to ensure the required resources are in place.
 
 - **Administrators**
 
   Make sure that admins with the necessary privileges are available to assign licenses and create environments:
 
-  - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licenses
-  - Power Platform Administrator to create environments
+  - Microsoft Entra ID Global or tenant User Administrator to assign Power Apps or Power BI licenses.
+  - Power Platform Administrator to create environments.
 
   [Learn more about Microsoft Power Platform administration.](/power-platform/admin/)
 
-- **Environments**
+- **Environments**: Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments](/power-platform/admin/create-environment). Create and prepare a Power Platform developer environment specifically for the Expense Reimbursement solution files. Also consider:
 
-  Follow [application lifecycle management (ALM)](/power-platform/alm/) best practices in [creating and managing environments.](/power-platform/admin/create-environment)
-
-  - Make sure that a Power Platform environment is set up with a Dataverse database.
-  - Make sure that environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
+  - The Power Platform environment is set up with a Dataverse database
+  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment
 
   [Learn more about Power Platform environments.](/power-platform/admin/environments-overview)
 
@@ -91,19 +98,19 @@ By default, Power Platform environments aren't set up with the required database
 Take these steps to create the database for approvals:
 
 1. Go to the [Power Automate maker portal](https://make.preview.powerautomate.com/environments/) and select your targeted deployment environment.
-1. Select **+ Create** on left pane.
+1. Select **+ Create**.
 1. Select **Instant cloud flow** underneath the *Create from blank* section.
 1. Choose **Manually trigger a flow** and then select **Create**.
 1. Select **+ New step**.
 1. Search on *Approvals* and choose **Create an approval**.
 1. Enter the following properties on the *Create an approval* step:
-    - **Approval type** – *Approve/Reject – First to respond*
-    - **Title** – *Test*
-    - **Assigned to** – *select your email address*
+    - **Approval type**: *Approve/Reject – First to respond*
+    - **Title**: *Test*
+    - **Assigned to**: *select your email address*
 1. Select **Save**.
 1. Select **Test Manually** and then **Test** again.
 1. Select **Continue** and then **Run flow**, followed by **Done**.
-1. Delete the *flow* you just created, as it is no longer needed.
+1. Delete the *flow* you created, as it is no longer needed.
 
 [Learn how to get started with Power Automate approvals.](/power-automate/get-started-approvals)
 
@@ -139,7 +146,15 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
     Go to the [Expense Reimbursement overview article](./overview.md) to learn more about the two solutions.
 
+> [!IMPORTANT]
+> Two solutions are always installed in your environment:
+>
+> - **Employee Experience Base**. Contains common foundational components that all human resource (HR) solutions use. For now, this is limited to components that enable localization capabilities. By sharing this across solutions, common strings can be localized once in the base solution and all dependent solutions get the benefit.
+> - **Expense Reimbursement**. Contains all the components needed to enable the implementation of the Expense Reimbursement program within an organization.
+
 ### Download and manually install solution files
+
+Managed and unmanaged solution files are available for you to download and manually install. Take these steps to download and import the solutions directly into the development environment that you prepared for it in the [review prerequisites step](#step-1-review-prerequisites).
 
 1. Download solution files.
 
@@ -152,7 +167,7 @@ AppSource is a Microsoft digital storefront. Take these steps to go through the 
 
 1. Sign in to [Power Apps](https://make.preview.powerapps.com/) and select the environment you prepared in the [review prerequisites step](#step-1-review-prerequisites).
 
-1. In the left pane, select **Solutions**.
+1.Select **Solutions**.
 
 1. Select **Import solution**, and then find and select the `mpa_EmployeeExperienceBase` file you downloaded.
 
@@ -189,7 +204,7 @@ Assign security roles in the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center.](https://admin.powerplatform.microsoft.com/)
 
-1. In the left side panel, select **Environments**.
+1. Select **Environments**.
 
 1. Select the environment where the solution is installed.
 
@@ -208,11 +223,11 @@ Want to learn more about setting up and managing users? Start here:
 
 Verify that the cloud flows are turned on in the newly installed Expense Reimbursement solution. Turn on any flows that are not already set to *on*.
 
-1. In [Power Apps,](https://make.preview.powerapps.com/) in the left side panel, select **Solutions**.
+1. In [Power Apps,](https://make.preview.powerapps.com/), select **Solutions**.
 
 1. Select the **Expense Reimbursement** solution.
 
-1. In the left side panel, select **Cloud flows**.
+1. Select **Cloud flows**.
 
 1. Select *each of the four flows* and make sure it's turned on.
 
@@ -226,11 +241,11 @@ Share the Expense Reimbursement app with the users in your organization.
 
 1. Go to [Power Apps](https://make.powerapps.com/) and select the environment that contains the solution.
 
-1. In the left side panel, select **Solutions**.
+1. Select **Solutions**.
 
 1. Select **Expense Reimbursement**.
 
-1. In the left side panel, select **Apps**.
+1. Select **Apps**.
 
 1. Select the **Expense Reimbursement canvas app** and select **More actions** (**&hellip;**) > **Share**.
 
@@ -240,7 +255,7 @@ Share the Expense Reimbursement app with the users in your organization.
 
 1. Select **Share**.
 
-    More information: [Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
+[Learn how to share a canvas app with your organization.](/power-apps/maker/canvas-apps/share-app)
 
 > [!NOTE]
 > If the Expense Reimbursement app isn't shared with you and you can't access it directly in Power Apps, contact your administrator.
@@ -250,7 +265,7 @@ Share the Expense Reimbursement app with the users in your organization.
 Copilot for model-driven apps in Power Apps is a next-generation AI assistant for app users to get insights about the data in their apps through conversation in natural language. As an expense reimbursement program administrator or reviewer, leverage Copilot to help you get insights on the expense reimbursement data while taking action. Follow these steps to turn Copilot on within your environment:
 
 1. [Go to Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Environments** on the left pane and then select the environment where the solution was installed.
+1. Select **Environments** and then select the environment where the solution was installed.
 1. Ensure the environment *Release Channel* is set to **Monthly** by following the [Changing release channels for model-driven apps guidance](/power-apps/maker/model-driven-apps/channel-change).
 1. Select the **Settings**.
 1. Expand the *Product* section and select **Features**.
@@ -272,4 +287,4 @@ Auditing isn't required, but we recommend turning it on so that it's easy to see
 
 ### See also
 
-[Get started using the Expense Reimbursement app](use.md)
+[Use the Expense Reimbursement app](use.md)

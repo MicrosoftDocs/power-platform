@@ -4,7 +4,7 @@ description: Learn how to design your Power Platform workload with business requ
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -28,7 +28,7 @@ This guide describes the recommendations for minimizing unnecessary complexity a
 
 A key tenet of designing for reliability is to keep things simple and efficient. Focus your workload design on meeting business requirements to reduce the risk of unnecessary complexity or excess overhead. Consider the recommendations in this article to help you make decisions about your design to create a lean, efficient, and reliable workload. Different workloads might have different requirements for availability, scalability, data consistency, and disaster recovery.
 
-You must justify every design decision with a business requirement. This design principle might seem obvious, but it's crucial for workload design. Does your application support millions of users, or a few thousand? Are there large traffic bursts, or a steady workload? What level of application outage is acceptable? Business requirements drive these design considerations.
+You must justify every design decision with a business requirement. This design principle might seem obvious, but it's crucial for workload design. Does your workload support millions of users, or a few thousand? Are there large traffic bursts, or a steady workload? What level of outage is acceptable? Business requirements drive these design considerations.
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff:** A complex solution can offer more features and flexibility, but it might affect the reliability of the workload because it requires more coordination, communication, and management of components. Alternatively, a simpler solution might not fully meet user expectations, or it might have a negative effect on extensibility as the workload evolves.
 
@@ -77,7 +77,10 @@ You can perform the following recommendations without stakeholder engagement:
 
 The principles of simplicity, efficiency, and reliability also apply to your development practices. Consider these recommendations:
 
-- Use platform capabilities when they meet your business requirements. For example, use modern controls instead of developing your own code components to achieve a Fluent 2 design standard.
+- Use platform capabilities when they meet your business requirements. For example:
+    - Use modern controls instead of developing your own code components to achieve a Fluent 2 design standard.
+    - Use native connectors instead of developing custom connectors to reduce custom code.
+    - Use generative answers in Microsoft Copilot Studio to enable your copilot to find and present information from multiple sources, internal or external, without manually created topics.
 
 - Introduce dedicated code review sessions as a development practice.
 
@@ -93,22 +96,34 @@ As part of your architectural design, you need to consider how to store your dat
 
 - **Read/write from an existing system**: If your app needs to retrieve data from an existing database or system, you need to evaluate the best way to connect to the database or system: using an out-of-the-box connector, a custom connector, or virtual tables.
 
-- **Make a copy of the data**: In situations where original data should never be modified or overwritten, you can copy the data to another data store such as Dataverse. This ensures that the data in the original system isn't be changed, yet your app can work with it. This scenario is common when working with data in accounting and revenue-related systems. You need to consider how data is copied, how often it's updated, and whether a two-way sync needs to take place.
+- **Make a copy of the data**: In situations where original data should never be modified or overwritten, you can copy the data to another data store such as Dataverse. This strategy keeps the original system's data unchanged while allowing your app to work with it. This scenario is common when working with data in accounting and revenue-related systems. You need to consider how data is copied, how often it's updated, and whether a two-way sync needs to take place.
 
 ## Power Platform facilitation
 
-These Power Apps articles provide practical design advice:
+For practical design advice, consult the following articles:
 
-- Determining [where to place logic in your system: Canvas apps, model-driven apps, Microsoft Dataverse, or Power Automate flows](/power-apps/guidance/planning/logic)
-- [Determining which type of app to make](/power-apps/guidance/planning/app-type): model-driven or canvas apps
-- [Date modeling: Designing your data structure](/power-apps/guidance/planning/data-modeling)
-- Data design: [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
+- Power Apps:
+    - Determining [where to place logic in your system: Canvas apps, model-driven apps, Microsoft Dataverse, or Power Automate flows](/power-apps/guidance/planning/logic)
+    - [Determining which type of app to make](/power-apps/guidance/planning/app-type): model-driven or canvas apps
+    - [Data modeling: Designing your data structure](/power-apps/guidance/planning/data-modeling)
+    - Data design: [Working with enterprise systems](/power-apps/guidance/planning/enterprise-systems)
 
-## See also
+- Power Automate:
+    - [Determining which automation method to use](/power-automate/guidance/planning/determine-automation-methods)
+    - [Reducing risk and planning for error handling](/power-automate/guidance/planning/reducing-risk)
+    - [Separate flows into smaller automated processes](/power-automate/guidance/planning/separate-flows)
+
+- Copilot Studio:
+    - The [Microsoft Copilot Studio implementation guide](https://aka.ms/copilotStudioImplementationGuide) provides a framework for conducting a 360-degree review of your project. By asking probing questions, it identifies potential risks and gaps, aligns the project with the product roadmap, and shares guidance, best practices, and reference architecture examples.
+    - The [Microsoft Copilot Studio guidance documentation](/microsoft-copilot-studio/guidance/) provides best practices, implementation tips, and architecture guidance from the team that collaborates with our enterprise customers.
+
+## Related information
 
 - [Service-level agreements for online services](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services)
 - [Work with requirements for Microsoft Power Platform and Dynamics 365](/training/modules/work-with-requirements/)
-- [Planning a Power Apps project ](/power-apps/guidance/planning/planning-phase)
+- [Planning a Power Apps project](/power-apps/guidance/planning/planning-phase)
+- [Planning a Power Automate project](/power-automate/guidance/planning/separate-flows)
+- [Planning a conversational AI project](/microsoft-copilot-studio/guidance/project-best-practices)
 
 ## Reliability checklist
 

@@ -60,9 +60,6 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
 
     - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). Note that the **Locations and ports** fields are automatically populated.
 
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of the mail server profile form.](media/server-profile-form.png "Email server profile form") 
-
 7. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
 
 8. When you're done, select **Save**.
@@ -354,9 +351,6 @@ Admins, as described in the preceding permissions model table, can change the se
 3. Select **Active Mailboxes**.  
   
 4. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing the Test & Enable Mailbox command.](media/test-enable-mailbox85.png "Test and enable mailboxes")
   
 This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
   

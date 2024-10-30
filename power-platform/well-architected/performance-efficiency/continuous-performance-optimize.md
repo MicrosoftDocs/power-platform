@@ -4,7 +4,7 @@ description: Learn how to continuously optimize performance and establish a perf
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/16/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -87,6 +87,8 @@ Continuously optimizing databases involves identifying and implementing optimiza
 **Automating performance optimization**: Solution checker provides [performance recommendations](/power-apps/maker/data-platform/use-powerapps-checker) based on a static analysis check on your solutions against a set of best-practice rules to quickly identify problematic patterns. Be sure to review and address these recommendations regularly.
 
 **Monitoring performance optimization**: Integrate your Power Platform workloads with [Application Insights](/power-platform/admin/overview-integration-application-insights?source=recommendations) to gain insights and recommendations for optimizing performance.
+
+**Analyze copilot performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your copilot's performance. It uses artificial intelligence (AI) technology to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring copilot performance metrics and discovering areas for improvement.
 
 ## Performance Efficiency checklist
 

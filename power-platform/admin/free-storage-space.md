@@ -10,7 +10,6 @@ ms.author: ceian
 ms.reviewer: sericks
 contributors:
   - DanaMartens
-  - ProfessorKendrick
   - IanCeicys
   - meesposi 
 search.audienceType: 

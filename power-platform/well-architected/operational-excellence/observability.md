@@ -4,7 +4,7 @@ description: Learn how to design and create a monitoring framework that provides
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 05/10/2024
+ms.date: 09/11/2024
 ms.subservice: well-architected
 ms.topic: conceptual
 ---
@@ -169,10 +169,13 @@ Power Platform integrates with [Application Insights](/azure/azure-monitor/app/a
 
 - [Configure Power Automate telemetry](/power-platform/admin/app-insights-cloud-flow) to flow into Application Insights. For example, you can monitor cloud flow executions and create alerts for cloud-flow run failures.
 
-Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. Learn more about logging activities in Power Platform:
+- Capture telemetry data from your [Microsoft Copilot Studio copilot](/microsoft-copilot-studio/advanced-bot-framework-composer-capture-telemetry) for use in Azure Application Insights. You can use this telemetry to monitor logged messages and events sent to and from your copilot, topics to be triggered during user conversations, and custom telemetry events that can be sent from your topics.
+
+Power Platform resources log activities in the [Microsoft Purview compliance portal](/purview/purview). Most events are available within 24 hours of the activity. Don't use this information for real-time monitoring. For more information about logging activities in Power Platform, see:
 
 - [Power Apps](/power-platform/admin/logging-powerapps)
 - [Power Automate](/power-platform/admin/logging-power-automate)
+- [Copilot Studio](/microsoft-copilot-studio/admin-logging-copilot-studio)
 - [Power Pages](/power-platform/admin/logging-power-pages)
 - [Power Platform connectors](/power-platform/admin/connector-events-power-platform)
 - [Data Loss Prevention](/power-platform/admin/dlp-activity-logging)

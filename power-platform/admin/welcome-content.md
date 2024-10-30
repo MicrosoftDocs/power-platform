@@ -16,9 +16,9 @@ ms.contributors:
 ---
 # Enable maker welcome content
 
-In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
+In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com) and [Copilot Studio](https://copilotstudio.microsoft.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
 
-When the welcome content is used, upon signing in to Power Apps, makers are greeted with customized getting started information. More information: [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview)
+When the welcome content is used, upon signing in to Power Apps or Copilot Studio, makers are greeted with customized getting started information. More information: [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview)
 
 :::image type="content" source="media/welcome/maker-welcome-1.png" alt-text="Welcome content for makers.":::
 

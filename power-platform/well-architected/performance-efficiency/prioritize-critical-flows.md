@@ -98,7 +98,7 @@ Here are recommendations for isolating critical flows:
 
 During your design phase, take into account [request limits and allocations](/power-platform/admin/api-request-limits-allocations) and [performance profiles](/power-automate/limits-and-config) that apply to your resources.
 
-## See also
+## Related information
 
 - [Recommendations for identifying and rating flows](/power-platform/well-architected/reliability/identify-flows)
 

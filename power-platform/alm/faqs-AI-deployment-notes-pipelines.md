@@ -1,7 +1,7 @@
 ---
 title: FAQ for use Copilot to generate deployment notes in pipelines
 description: FAQ that discusses using Copilot to generate deployment notes in pipelines and the key considerations for making use of this technology responsibly.
-ms.date: 9/28/2023
+ms.date: 9/03/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -42,9 +42,7 @@ This capability may be subject to usage limits or capacity throttling.
 
 The following are requirements to access the feature: 
 
-- Your pipeline environments must be in the United States region.
-
-- Your account must have English (United States) as the browser language.
+- This feature is supported in the following languages: English, Chinese (Simplified), Czech, Danish, Dutch, Finnish, French, German, Greek, Italian, Japanese, Korean, Norwegian (Bokmål), Polish, Portuguese (Brazil), Russian, Spanish, Swedish, Thai, and Turkish. Copilot uses the language selected in **Settings > Power Apps settings > Language** in make.powerapps.com.
 
 - AI deployment notes must be enabled for your pipeline to use the Copilot leveraging AI models. To enable the feature:
 
