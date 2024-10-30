@@ -149,26 +149,6 @@ dependencies
 | summarize percentile(ActiveDuration, 50), percentile(WithBackgroundTime, 50), arg_max(timestamp, ErrorMessage), countif(success == false) by user_Id, DataSyncMode
 ```
 
-### Files Synced
-This query dives into large file sync, giving you the number of files, size and sync time. 
-
-```kusto
-//For large files statistics, you can start from this ()
-| where name in (
-   "Offline.LargeFilesSync.DownloadFile", "Offline.LargeFilesSync.DownloadThumbnail", 
-   "Offline.LargeFilesSync.GetLogicalToEntitySetNameMapping", "Offline.LargeFilesClient.GetLogicalToEntitySetName.SendRequest", 
-   "Offline.LargeFilesClient.GetAnnotationDocumentsPage.SendRequest")
-| extend Type = iff(ScenarioName == "Offline.LargeFilesSync.DownloadFile", "File", 
-               iff(ScenarioName == "Offline.LargeFilesSync.DownloadThumbnail", "Thumbnail", 
-               iff(ScenarioName in ("Offline.LargeFilesClient.GetAnnotationDocumentsPage.SendRequest"), "Annotation (batch)",
-               "Misc")))
-| extend CurrentSyncId = tostring(ejson["CurrentSyncId"])
-| extend EntityName= tostring(ec.EntityName)
-| extend ResponseSize = toint(ec.ResponseSize)
-| summarize Count=count(), TotalSize=sum(ResponseSize ), AverageSize=avg(ResponseSize ), MaxSize=max(ResponseSize ), 
-       Duration=sumif(ActiveDuration, ScenarioName !in ("Offline.LargeFilesClient.GetLogicalToEntitySetName.SendRequest", "Offline.LargeFilesClient.GetAnnotationDocumentsPage.SendRequest")) 
-       by EntityName, Type
-```
 
 ### Users by device type and app version
 This query gives more information on users in your organization who are accessing the mobile application on their device model. 
