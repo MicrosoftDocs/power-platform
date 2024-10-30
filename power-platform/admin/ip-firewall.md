@@ -52,7 +52,7 @@ You can enable the IP firewall in a Power Platform environment by using either P
    - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
    - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it will only block third-party application users.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
-   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](/block-cookie-replay-attack) and the IP firewall. Reach out to your network administrator to get the "reverse proxy IP address".
+   - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](/block-cookie-replay-attack) and the IP firewall. Reach out to your network administrator to get the "reverse proxy IP address."
      
      > [!NOTE]
      > Reverse proxy must be configured to send user client IP address in [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
