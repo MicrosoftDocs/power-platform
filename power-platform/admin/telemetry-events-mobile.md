@@ -13,17 +13,12 @@ search.audienceType:
   - admin
 ---
 
-# Telemetry events for mobile app synchronization and actions (preview)
-[This article is prerelease documentation and is subject to change.]
+# Telemetry events for mobile app synchronization and actions
 
 Power Apps mobile application data related to offline synchronization events is available for model-driven and canvas apps. This data can be used to evaluate the health and performance of offline sync events for your organization. 
 
-This data goes into the **Power Apps (Preview)** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode. More data, related to failure events in model-driven apps is available through the **Power Apps (Preview)** > **UCI**.
+This data goes into the **Power Apps** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode. More data, related to failure events in model-driven apps is available through the **Power Apps** > **UCI**.
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are subject to supplemental terms of use, and are available before an official release so that customers can get early access and provide feedback.
 
 ## Mobile app synchronization and action event definitions
 
@@ -100,31 +95,79 @@ This query allows you see what types of failures frontline workers are encounter
 
 ```kusto
 dependencies
+| where name == "Offline.SyncDatabase"
+| where success == false
 | extend cd = parse_json(customDimensions)
-| where cd.appFlavor == "FieldService"
-| where type  == "modelAppEvent"
-| where isnotempty(cd.FailureType)
-| extend FailureType = tostring(cd.FailureType), 
-         ErrorCode = tostring(cd.ErrorCode)
-| summarize Count = count() by FailureType, ErrorCode
-| project FailureType, ErrorCode, Count
-| render piechart with (title="Sync Failures Categorized by FailureType and ErrorCode")
+| extend AppVersion = tostring(cd.AppInfo_Version)
+| extend ErrorCode = tostring(cd.ErrorCode)
+| extend ErrorMessage = tostring(cd.ErrorMessage)
+| extend FailureType = tostring(cd.FailureType)
+| summarize dcount(user_Id), count() by ErrorCode, ErrorMessage, FailureType, bin(timestamp, 1d)
 ```
 
-### Tables synced by record count
+### Average Records synced by Table
 This query allows you to evaluate which tables are contributing most records to a sync. Using this data you can try to further [optimize your offline profile](/power-apps/mobile/mobile-offline-guidelines#dont-make-your-users-download-too-much-data) to reduce records or [data within each table](/power-apps/mobile/mobile-offline-guidelines#optimize-dowloaded-data-with-offline-table-column-selection-preview). 
 
 ```kusto
 dependencies
+| where name endswith_cs "Offline.DdsClient.GetRecords"
 | extend cd = parse_json(customDimensions)
-| extend eventContext = parse_json(tostring(cd.eventContext))
-//| where eventContext.IsFirstSync == "true" // Filter sync type
-| extend dataSyncStatus = parse_json(tostring(eventContext.DataSyncStatus))
-| mv-expand entities = dataSyncStatus.entities to typeof(dynamic) // Expand the entities list into rows
-| project TableName = entities.entityName, SyncedRecordCount = entities.totalSyncedRecordCount
-| summarize TotalSyncedRecords = sum(toint(SyncedRecordCount)) by tostring(TableName)
-| order by TotalSyncedRecords desc
-| render piechart // Visualize the results as a pie chart
+| extend ec = parse_json(tostring(cd.eventContext))
+| extend RecordCount = toint(ec.RecordCount)
+| extend EntityName = tostring(ec.EntityName)
+| extend syncid = tostring(ec.CurrentSyncId)
+| extend DataSyncMode = tostring(cd.DataSyncMode)
+//| where DataSyncMode == "FIRST_SYNC" //This is used to pivot on the type of sync being executed.
+| summarize sum(RecordCount) by syncid, EntityName, DataSyncMode, user_Id
+| summarize percentile(sum_RecordCount, 50), arg_max(sum_RecordCount, user_Id), count() by EntityName, DataSyncMode
+```
+
+### Average sync duration by sync mode
+This query allows you to evaluate the average sync duration for users in your organization.
+
+```kusto
+dependencies
+| where name == "Offline.SyncDatabase"
+| extend cd = parse_json(customDimensions)
+| extend ActiveDuration = toint(tostring(cd.ActiveDuration))
+| extend WithBackgroundTime = duration
+| extend DataSyncMode = tostring(cd.DataSyncMode)
+| summarize percentile(ActiveDuration, 50), percentile(WithBackgroundTime, 50) by client_Type, DataSyncMode
+```
+
+### Sync Details by user
+This query provides a per-user view of sync, including last sync date, last error, duration of sync, and records synced. 
+
+```kusto
+dependencies
+| where name == "Offline.SyncDatabase"
+| extend cd = parse_json(customDimensions)
+| extend ActiveDuration = toint(tostring(cd.ActiveDuration))
+| extend WithBackgroundTime = duration
+| extend DataSyncMode = tostring(cd.DataSyncMode)
+| extend ErrorMessage = tostring(cd.ErrorMessage)
+| summarize percentile(ActiveDuration, 50), percentile(WithBackgroundTime, 50), arg_max(timestamp, ErrorMessage), countif(success == false) by user_Id, DataSyncMode
+```
+
+### Files Synced
+This query dives into large file sync, giving you the number of files, size and sync time. 
+
+```kusto
+//For large files statistics, you can start from this ()
+| where name in (
+   "Offline.LargeFilesSync.DownloadFile", "Offline.LargeFilesSync.DownloadThumbnail", 
+   "Offline.LargeFilesSync.GetLogicalToEntitySetNameMapping", "Offline.LargeFilesClient.GetLogicalToEntitySetName.SendRequest", 
+   "Offline.LargeFilesClient.GetAnnotationDocumentsPage.SendRequest")
+| extend Type = iff(ScenarioName == "Offline.LargeFilesSync.DownloadFile", "File", 
+               iff(ScenarioName == "Offline.LargeFilesSync.DownloadThumbnail", "Thumbnail", 
+               iff(ScenarioName in ("Offline.LargeFilesClient.GetAnnotationDocumentsPage.SendRequest"), "Annotation (batch)",
+               "Misc")))
+| extend CurrentSyncId = tostring(ejson["CurrentSyncId"])
+| extend EntityName= tostring(ec.EntityName)
+| extend ResponseSize = toint(ec.ResponseSize)
+| summarize Count=count(), TotalSize=sum(ResponseSize ), AverageSize=avg(ResponseSize ), MaxSize=max(ResponseSize ), 
+       Duration=sumif(ActiveDuration, ScenarioName !in ("Offline.LargeFilesClient.GetLogicalToEntitySetName.SendRequest", "Offline.LargeFilesClient.GetAnnotationDocumentsPage.SendRequest")) 
+       by EntityName, Type
 ```
 
 ### Users by device type and app version
@@ -132,16 +175,10 @@ This query gives more information on users in your organization who are accessin
 
 ```kusto
 dependencies
+| where name == "Offline.SyncDatabase"
 | extend cd = parse_json(customDimensions)
-| where isnotempty(user_Id) // Filter out rows where user_Id is empty
-| where cd.appFlavor == "FieldService"
-| where type  == "modelAppEvent"
-| extend ShortAppVersion = extract(@"\b\d+\.(\d+\.\d+)", 1, application_Version)
-| summarize Users = dcount(user_Id), 
-             iOS = dcountif(user_Id, cd.deviceInfo_OsName == "iOS"  or cd.deviceInfo_OsName == "iPadOS"), 
-             Android = dcountif(user_Id, cd.deviceInfo_OsName == "Android"), 
-             Windows = dcountif(user_Id, cd.deviceInfo_OsName has "Windows") 
-         by ShortAppVersion
+| extend AppVersion = tostring(cd.AppInfo_Version)
+| summarize dcount(user_Id) by AppVersion, client_Type
 ```
 
 ## Error code mapping
