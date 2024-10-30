@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/01/2024
+ms.date: 10/28/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -24,7 +24,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 ## Deprecation of Organization Insights Dashboard
 
-The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Soltion dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
+The Organization Insights dashboard has been deprecated from the Microsoft Power Apps Default Solution dashbards. Similar organization insights are available in [Microsoft Dataverse analytics](admin/analytics-common-data-service.md).
 
 As part of a service update to enhance security in Power Apps, we're removing Highcharts version 4.2.3.
 
@@ -67,7 +67,9 @@ After its removal, end users will not be able to view the visual representation 
 
 ### Action required by you
 
-You can enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.  
+You can temporarily enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.
+
+This feature will be fully removed April 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
