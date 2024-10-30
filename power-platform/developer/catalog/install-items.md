@@ -1,5 +1,5 @@
 ---
-title: "Install items from the catalog in Power Platform using code (preview)"
+title: "Install items from the catalog in Power Platform using code"
 description: "Learn how to install items to your organization's catalog of templates and components using code."
 author: derekkwanpm
 ms.author: derekkwan
@@ -10,11 +10,9 @@ ms.topic: article
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
+ - MattB-msft
 ---
-# Install items from the catalog in Power Platform using code (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Install items from the catalog in Power Platform using code
 
 Catalog items are stored in the [Catalog Item (mspcat_applications) table](tables/mspcat_applications.md). This table has a [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) that stores a unique string value you can use to refer to a catalog item.
 
@@ -64,7 +62,7 @@ There are two messages you can use to install catalog items: `mspcat_InstallCata
 
 ### mspcat_InstallCatalogItemByCID
 
-Use this message when you have only the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
+Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application. This is the message you should use most of the time.
 
 The following static `InstallCatalogItemByCIDExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
@@ -133,7 +131,7 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 
     if (packageId.HasValue)
     {
-        // TODO explain what this is for
+
 
         request.PackageId = packageId.Value;
     }

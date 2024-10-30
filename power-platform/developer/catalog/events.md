@@ -1,6 +1,6 @@
 ---
-title: "Catalog for Power Platform Events reference (preview)"
-description: "Subscribe to events that notify you when changes occur in the catalog for Power Platform"
+title: "Catalog in Power Platform Events reference"
+description: "Subscribe to events that notify you when changes occur in the catalog in Power Platform"
 author: derekkwanpm
 ms.author: derekkwan
 ms.subservice: developer
@@ -10,14 +10,12 @@ ms.topic: reference
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
+ - MattB-msft
 ---
 
-# Catalog for Power Platform Events reference (preview)
+# Catalog in Power Platform Events reference
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
-The following messages represent events that occur within catalog for Power Platform. Subscribe to these [business events](/power-apps/developer/data-platform/business-events) to enable automation based on the events that occur within the catalog for Power Platform.
+The following messages represent events that occur within catalog in Power Platform. Subscribe to these [business events](/power-apps/developer/data-platform/business-events) to enable automation based on the events that occur within the catalog in Power Platform.
 
 ## mspcat_OnCatalogApprovalRequested
 

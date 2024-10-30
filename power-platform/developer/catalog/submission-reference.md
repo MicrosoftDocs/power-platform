@@ -1,5 +1,5 @@
 ---
-title: "Catalog item submission document reference (preview)"
+title: "Catalog item submission document reference"
 description: "Find details about the structure of the JSON data that must be included when submitting an item to the catalog in Power Platform"
 author: derekkwanpm
 ms.author: derekkwan
@@ -10,11 +10,9 @@ ms.topic: reference
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
+ - MattB-msft
 ---
-# Catalog item submission document reference (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Catalog item submission document reference
 
 You must include data in JSON format when you submit an item to the catalog. This article describes the valid properties for that document. This is an example:
 

@@ -1,5 +1,5 @@
 ---
-title: "Catalog in Power Platform for developers (preview)"
+title: "Catalog in Power Platform for developers"
 description: "Learn about APIs to use when using catalog in Power Platform using code."
 author: derekkwanpm
 ms.author: derekkwan
@@ -10,17 +10,9 @@ ms.topic: article
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
+ - MattB-msft
 ---
-# Catalog in Power Platform for developers (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - While not required for preview, when this feature is generally available, it'll require the use of Managed Environment capabilities. More information: [Managed Environments overview](../../admin/managed-environment-overview.md)
+# Catalog in Power Platform for developers
 
 The catalog in Power Platform enables developers and makers to:
 
@@ -28,9 +20,9 @@ The catalog in Power Platform enables developers and makers to:
 - Find and install the latest and authoritative version of a component.
 - Get started with templates and components that provide immediate value.
 
-[Learn more about the catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)
+[Learn more about the catalog in Power Platform](/power-apps/maker/data-platform/catalog-overview)
 
-Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems. This can be done using the manager app. More information: [View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)
+Application makers and developers can submit items to the catalog so that they can help their colleagues solve business problems. This can be done using the manager app. More information: [View, submit, and install catalog items](/power-apps/maker/data-platform/submit-acquire-from-catalog)
 
 The articles in this section describe how developers can view, submit, and install catalog items programmatically.
 
@@ -58,6 +50,6 @@ Articles in this section describe three different ways to perform operations wit
 
 ### See also
 
-[Catalog in Power Platform (preview)](/power-apps/maker/data-platform/catalog-overview)   
-[View, submit, and install catalog items (preview)](/power-apps/maker/data-platform/submit-acquire-from-catalog)   
-[Administer the catalog (preview)](../../admin/administer-catalog.md)
+[Catalog in Power Platform](/power-apps/maker/data-platform/catalog-overview)   
+[View, submit, and install catalog items](/power-apps/maker/data-platform/submit-acquire-from-catalog)   
+[Administer the catalog](../../admin/administer-catalog.md)

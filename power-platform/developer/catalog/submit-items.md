@@ -1,5 +1,5 @@
 ---
-title: "Submit and approve catalog items (preview)"
+title: "Submit and approve catalog items"
 description: "Learn how to submit items to your organization's catalog of templates and components."
 author: derekkwanpm
 ms.author: derekkwan
@@ -10,11 +10,9 @@ ms.topic: article
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
+ - MattB-msft
 ---
-# Submit and approve catalog items (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Submit and approve catalog items
 
 People must submit their catalog items for approval and an administrator must approve them before others can use them.
 
@@ -193,7 +191,7 @@ This URL can represent anywhere that Dataverse can download a file without any c
 
 ### Process
 
-1. Create a `mspcat_PackageStore` record with these values
+1. Create a [Package Submission Store (mspcat_PackageStore) ](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) record with these values
    
    |Column|Value|
    |---------|---------|

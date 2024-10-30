@@ -1,5 +1,5 @@
 ---
-title: "Retrieve data about the catalog in Power Platform (preview)"
+title: "Retrieve data about the catalog in Power Platform"
 description: "Learn about APIs to use to retrieve data about the catalog in Power Platform using code."
 author: derekkwanpm
 ms.author: derekkwan
@@ -10,11 +10,9 @@ ms.topic: article
 search.audienceType: 
   - developer
 contributors:
- - JimDaly
+ - MattB-msft
 ---
-# Retrieve data about the catalog in Power Platform (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Retrieve data about the catalog in Power Platform
 
 To retrieve data about the catalogs for your tenant you need to determine which environment(s) have catalogs installed. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
 
@@ -28,8 +26,6 @@ Use the [pac admin list](../cli/reference/admin.md#pac-admin-list) command to vi
 > This command requires an administrator authentication profile.
 
 When using this command, you must use the following `--application` parameter with the value `83a35943-cb41-4266-b7d2-81d60f383695`. This value is the application ID associated with the catalog.
-
-> TODO: Matt mentioned some non-guid value that is easier to remember.
 
 ```powershell
 PS C:\Users\you> pac admin list --application 83a35943-cb41-4266-b7d2-81d60f383695
@@ -120,7 +116,7 @@ With `permissionsonly` equal false.
 
 ```
 SolutionVersion: 1.1.24.500
-CatalogDescription: Catalog for Power Platform applications created by your company.
+CatalogDescription: Catalog in Power Platform applications created by your company.
 CanRead: True
 CatalogName: Default Catalog Name
 ImageLink:
@@ -554,4 +550,4 @@ Contoso Themed Components           ContosoPublisher         ContosoThemedCompon
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Submit and approve catalog items (preview)](submit-items.md)
+> [Submit and approve catalog items](submit-items.md)

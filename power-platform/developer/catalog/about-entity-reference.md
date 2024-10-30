@@ -9,9 +9,7 @@ ms.reviewer: jdaly
 search.audienceType: 
   - developer
 ---
-# Catalog in Power Platform  table/entity reference
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Catalog in Power Platform table/entity reference
 
 This reference is based on the [Dataverse table/entity reference](/power-apps/developer/data-platform/reference/about-entity-reference) except that it only includes tables added by the Power Platform Catalog manager managed solution to support the catalog in Power Platform.
 
