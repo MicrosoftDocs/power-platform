@@ -26,7 +26,7 @@ Integrating Git with Dataverse allows you to manage your solutions and component
 
 ## Viewing changes made over time to your solutions
 
-Most components in Dataverse have a history of changes that can be viewed in the Power Apps (make.powerapps.com). However, viewing all changes to a solution over time can be difficult using only the maker tools available. There's also no way to revert changes to a previous state or compare changes made by different users. By integrating Git with Dataverse, you can view granular changes made to your solutions, compare changes made by different users, and revert changes to a previous state if needed. Being able to view and search changes made to your solutions over time can help you understand how your solutions evolve and identify when and why changes were made and by whom.
+Most components in Dataverse have a history of changes that can be viewed in Power Apps (make.powerapps.com). However, viewing all changes to a solution over time can be difficult using only the maker tools available. There's also no way to revert changes to a previous state or compare changes made by different users. By integrating Git with Dataverse, you can view granular changes made to your solutions, compare changes made by different users, and revert changes to a previous state if needed. Being able to view and search changes made to your solutions over time can help you understand how your solutions evolve and identify when and why changes were made and by whom.
 
 ## Collaborating with other team members on solutions
 
