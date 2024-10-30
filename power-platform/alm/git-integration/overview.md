@@ -52,13 +52,13 @@ With the introduction of Git integration in Dataverse, there are changes to the 
 
 ## Code-first development with Git
 
-Code-first development in the Power Platform is enabled using development tooling like the Power Platform CLI, Visual Studio, and Visual Studio Code extensions. Involving code-first developers in the solution development process is difficult without source control integration as components like PCF controls and Dataverse plugins are deployed to solutions as packaged assets built from source code and not directly editable in the Power Apps (make.powerapps.com). Without source control as a part of the development process for both low-code and code-first components, it's difficult to manage changes to the solution and ensure that changes are tracked and deployed in a controlled manner.
+Code-first development in the Power Platform is enabled using development tooling like the Power Platform CLI, Visual Studio, and Visual Studio Code extensions. Involving code-first developers in the solution development process is difficult without source control integration as components like PCF controls and Dataverse plug-ins are deployed to solutions as packaged assets built from source code and not directly editable in the Power Apps (make.powerapps.com). Without source control as a part of the development process for both low-code and code-first components, it's difficult to manage changes to the solution and ensure that changes are tracked and deployed in a controlled manner.
 
 By enabling Git integration in Dataverse, you can meet code-first developers where they work and provide a seamless experience for both low-code and code-first developers. However, there are some considerations to keep in mind when managing code-first components in a low-code environment.
 
 ### Fusion development with Dataverse Git integration
 
-Power Platform provides capabilities for both low-code and code-first development. This article discusses code-first development processes associated with Dataverse and Git integration and provides guidance about how to manage code-first and low-code components in a single environment. Components like PCF controls, Dataverse plugins, and custom workflow activities that are examples of code-first components that can be managed in source control.
+Power Platform provides capabilities for both low-code and code-first development. This article discusses code-first development processes associated with Dataverse and Git integration and provides guidance about how to manage code-first and low-code components in a single environment. Components like PCF controls, Dataverse plug-ins, and custom workflow activities that are examples of code-first components that can be managed in source control.
 
 ### Code-first and low-code components in a single environment
 
