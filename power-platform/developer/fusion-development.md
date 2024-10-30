@@ -1,13 +1,12 @@
 ---
-title: "fusion development in Power Platform"
+title: "Fusion development in Power Platform"
 description: "Overview of fusion development in Power Platform."
 author: marcelbf
-ms.subservice: developer
 ms.author: marcelbf
-ms.custom: ""
+ms.reviewer: jdaly
+ms.subservice: developer
 ms.date: 05/25/2022
-ms.reviewer: 
-ms.topic: "article"
+ms.topic: article
 search.audienceType: 
   - developer
 ---
