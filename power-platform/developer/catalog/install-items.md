@@ -83,7 +83,6 @@ static EntityReference InstallCatalogItemByCIDExample(IOrganizationService servi
     };
     if (string.IsNullOrEmpty(settings))
     {
-        // TODO explain what these settings are
         request.Settings = settings;
     }
 
@@ -94,12 +93,23 @@ static EntityReference InstallCatalogItemByCIDExample(IOrganizationService servi
 }
 ```
 
+#### Settings parameter
+
+The settings passed to the request as a string that represents the [IImportExtensions2.RuntimeSettings Property](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.iimportextensions2.runtimesettings) where the settings are a serialized `Dictionary<String,Object>` and the pipe character is a delimiter between the settings.  If `settings` represents the dictionary of settings, serialize the setting using code like this:
+
+```csharp
+string serializedSettings = string.Join("|", settings.Select(kvp => $"{kvp.Key}:{kvp.Value}"));
+```
+
+
+
 ### mspcat_InstallCatalogItem
 
-Use this message when you have a reference to the catalog item you want to install or you want to include a reference to a packageid for some reason. 
-<!-- TODO: provide reason for packageid parameter -->
+This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid) for normal operations.
 
-The following static `InstallCatalogItemExample` method shows how to invoke this messsage using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
+Use this message when you have a reference to the catalog item you want to install or you want to include a reference to a specific package record to install related to the catalog item.
+
+The following static `InstallCatalogItemExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
 ```csharp
 static EntityReference InstallCatalogItemExample(IOrganizationService service,
@@ -130,7 +140,6 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 
     if (string.IsNullOrEmpty(settings))
     {
-        // TODO explain what these settings are
         request.Settings = settings;
     }
 
@@ -141,8 +150,7 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 }
 ```
 
-
-
+The settings passed to this message are the same used for [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid). See [Settings parameter](#settings-parameter)
 
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)   
@@ -160,8 +168,6 @@ There are two actions you can use to install catalog items: `mspcat_InstallCatal
 ### mspcat_InstallCatalogItem
 
 > TODO: Web API example
-
-
 
 
 [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
