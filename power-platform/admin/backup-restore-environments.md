@@ -23,7 +23,7 @@ System backups are automatically created for environments that have a database. 
 Manual backups are backups that the user initiates. You should create manual backups before you do major customization or apply a version update. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups of production environments that have Dynamics 365 applications are kept for up to 28 days. Backups of environments that don't have Dynamics 365 applications are kept for seven days.
 
 > [!NOTE]
-> This feature isn't currently supported for Microsoft Dynamics finance and operations apps.
+> This feature isn't currently supported for Microsoft Dynamics 365 finance and operations apps.
 
 ## Supported retention period
 
