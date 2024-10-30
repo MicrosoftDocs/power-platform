@@ -50,7 +50,7 @@ You can enable the IP firewall in a Power Platform environment by using either P
 
    - **Service tags to be allowed by IP firewall**: From the list, select service tags that can bypass IP firewall restrictions.
    - **Allow access for Microsoft trusted services**: This setting enables Microsoft trusted services like monitoring and [support user](support-environment.md) etc. to bypass the IP firewall restrictions to access the Power Platform environment with Dataverse. Enabled by default.
-   - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it will only block third-party application users.
+   - **Allow access for all application users**: This setting allows [all application users](system-application-users.md) third-party and first-party access to Dataverse APIs. Enabled by default. If you clear this value, it only blocks third-party application users.
    - [**Enable IP firewall in audit-only mode**](#what-is-audit-only-mode): This setting enables the IP firewall but allows requests regardless of their IP address. Enabled by default.
    - **Reverse proxy IP addresses**: If your organization has reverse proxies configured, enter the IP addresses separated by commas. The reverse proxy setting applies to both [IP-based cookie binding](block-cookie-replay-attack.md) and the IP firewall. Reach out to your network administrator to get the reverse proxy IP addresses.
      
@@ -170,7 +170,7 @@ The IP firewall is available for [Managed Environments](managed-environment-over
 
 You can add up to 200 IP addresses ranges in CIDR format as per [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632), separated by commas.
 
-### What should I do if requests to Dataverse starts to fail?
+### What should I do if requests to Dataverse start to fail?
 
 An incorrect configuration of IP ranges for IP firewall might be causing this issue. You can check and verify the IP ranges on the IP firewall settings page. We recommend that you turn on the IP firewall in Audit-only mode before enforcing it.
 
