@@ -70,10 +70,10 @@ Currently, you can still author different components, such as like Power Apps co
 
 ### Related content
 
-[Overview of Dataverse Git integration](/power-platform/alm/git-integration/overview.md)
+[Overview of Dataverse Git integration](overview.md)
 
-[Dataverse Git integration setup](/power-platform/alm/git-integration/connecting-to-git.md) 
+[Dataverse Git integration setup](connecting-to-git.md)
 
-[Source control operations](/power-platform/alm/git-integration/source-control-operations.md)
+[Source control operations](source-control-operations.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
