@@ -22,7 +22,7 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
 1. Select **Environments**, and then select an environment.
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, select the **Enable IP address-based cookie binding** option.
-1. **(Optional)**: If your organization has reverse proxies configured, enter the IP addresses separated by commas in the **Reverse proxy IP addresses** field. The reverse proxy setting applies to both IP-based cookie binding and the [IP firewall](ip-firewall,md). Reach out to your network administrator to get the reverse proxy IP addresses.
+1. **(Optional)**: If your organization has reverse proxies configured, enter the IP addresses separated by commas in the **Reverse proxy IP addresses** field. The reverse proxy setting applies to both IP-based cookie binding and the [IP firewall](ip-firewall.md). Reach out to your network administrator to get the reverse proxy IP addresses.
 
      > [!NOTE]
      > Reverse proxy must be configured to send user client IP addresses in the [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
