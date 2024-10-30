@@ -2,7 +2,7 @@
 title: "Packaged Solution (mspcat_PackageSolutions) table/entity reference (Power Platform Catalog Manager)"
 description: "Includes schema information and supported messages for the Packaged Solution (mspcat_PackageSolutions) table/entity with Power Platform Catalog Manager."
 ms.date: 06/26/2024
-ms.service: powerapps
+ms.service: power-platform
 ms.topic: reference
 author: JimDaly
 ms.author: jdaly
