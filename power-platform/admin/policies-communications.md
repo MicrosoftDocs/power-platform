@@ -5,7 +5,7 @@ author: kacortez
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/21/2024
+ms.date: 10/31/2024
 ms.subservice: admin
 ms.author: kacortez
 search.audienceType: 
@@ -17,9 +17,10 @@ search.audienceType:
 
 Microsoft regularly communicates work done to maintain and update Microsoft Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, and other services), and Microsoft Dynamics 365 apps (Sales, Customer Service, Supply Chain Management, and others) to ensure security, performance, availability, and to provide new features and functionality. Microsoft also communicates details of service incidents including the potential user experience, the start and end times of the incident, and any workaround that may be available.
 
-For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions [here](/microsoft-365/admin/manage/message-center#preferences).
+For each of these scenarios, communication is provided through the Microsoft 365 admin center in the [Message Center](/microsoft-365/admin/manage/message-center), and the [Service health dashboard](/microsoft-365/enterprise/view-service-health). The Microsoft 365 admin center also has the ability to send email for a weekly digest of all messages, emails for major updates only, and emails for data privacy messages. You can opt in to this communication stream by following the instructions in [Preferences](/microsoft-365/admin/manage/message-center#preferences).
 
-**Please note**: From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin).  
+> [!NOTE]
+> From time-to-time, Microsoft may also send direct email to users with the System Administrator role in a specifically impacted environment, or Microsoft Lifecycle Services project or environment. If you’re not sure who your admin is, learn more in [Find your administrator or support person](/powerapps/user/find-admin).  
 
 > [!IMPORTANT]
 > Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
