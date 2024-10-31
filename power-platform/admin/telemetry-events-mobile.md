@@ -4,7 +4,7 @@ description: Power Apps mobile application data related to offline synchronizati
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2024
+ms.date: 10/31/2024
 author: JonBaker007
 ms.subservice: admin
 ms.author: jobaker
@@ -17,7 +17,7 @@ search.audienceType:
 
 Power Apps mobile application data related to offline synchronization events is available for model-driven and canvas apps. This data can be used to evaluate the health and performance of offline sync events for your organization. 
 
-This data goes into the **Power Apps** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode. More data, related to failure events in model-driven apps is available through the **Power Apps** > **UCI**.
+This data goes into the **Power Apps** > **Mobile app synchronization and actions** table in Application Insights. An entry is logged when a user accesses a Power Apps mobile app, which is configured for offline mode. More data, related to failure events in model-driven apps, is available through the **Power Apps** > **UCI**.
 
 
 ## Mobile app synchronization and action event definitions
@@ -105,7 +105,7 @@ dependencies
 | summarize dcount(user_Id), count() by ErrorCode, ErrorMessage, FailureType, bin(timestamp, 1d)
 ```
 
-### Average Records synced by Table
+### Average records synced by table
 This query allows you to evaluate which tables are contributing most records to a sync. Using this data you can try to further [optimize your offline profile](/power-apps/mobile/mobile-offline-guidelines#dont-make-your-users-download-too-much-data) to reduce records or [data within each table](/power-apps/mobile/mobile-offline-guidelines#optimize-dowloaded-data-with-offline-table-column-selection-preview). 
 
 ```kusto
@@ -135,8 +135,8 @@ dependencies
 | summarize percentile(ActiveDuration, 50), percentile(WithBackgroundTime, 50) by client_Type, DataSyncMode
 ```
 
-### Sync Details by user
-This query provides a per-user view of sync, including last sync date, last error, duration of sync, and records synced. 
+### Sync details by user
+This query provides a per-user view of synchronization, including last sync date, last error, duration of sync, and records synced. 
 
 ```kusto
 dependencies
