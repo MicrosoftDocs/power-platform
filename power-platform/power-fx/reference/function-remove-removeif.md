@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 3/22/2024
+ms.date: 10/31/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -44,7 +44,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 
 ### Delegation
 
-Only some data sources support RemoveIf. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maximum of either 500/2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server.
+RemoveIf is supported by only a few data sources. For data sources that don't upport this feature, Power Apps will query the server and retrieve all data matching the filter expression, up to a maximum of either 500 or 2000 records or the data page size. Subsequently, it will delete each of those records individually by making separate calls to the server.
 
 ## Syntax
 
