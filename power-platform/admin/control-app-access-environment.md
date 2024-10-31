@@ -259,10 +259,11 @@ Start blocking apps that are blocked and allow only approved apps. For apps that
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select **Enabled for roles** in the **Access control** dropdown list.
-1. Select an application, then select the **Allow** option that's located above the grid.
 1. Once your app is selected, select the **Manage security roles** option that's located above the grid.
 1. Select one or more desired security roles.
 1. Select **Save**.
+1. A window appears, asking you to confirm the roles that you selected. Select **Save**.
+1. The list of apps is displayed again. Select **Save**.
 1. The environment list is displayed again. Repeat the procuedre for each environment where you want to assign security roles. Close the panel when you're done.
 
 > [!NOTE]
