@@ -44,12 +44,12 @@ When you want to install a specific version of a catalog item, you can append th
 
 The following `-cid` parameter values will have different behaviors:
 
-|Column1  |Column2  |
+|Example  |Result|
 |---------|---------|
 |`-cid MyCatalogItem`|Installs version 3.0.0.0 (Published version)|
-|`-cid MyCatalogItem@3.0.0.0 `|Installs version 3.0.0.0 (Published version)|
-|`-cid MyCatalogItem@2.0.0.0 `|Installs version 2.0.0.0|
-|`-cid MyCatalogItem@1.0.0.0 `|fails with an error indicating that the version is not available.|
+|`-cid MyCatalogItem@3.0.0.0`|Installs version 3.0.0.0 (Published version)|
+|`-cid MyCatalogItem@2.0.0.0`|Installs version 2.0.0.0|
+|`-cid MyCatalogItem@1.0.0.0`|Fails with an error indicating that the version is not available.|
 
 
 The Tracking ID returned is the primary key of the [Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md) record which you can review to see whether the installation succeeds.
@@ -58,11 +58,11 @@ The Tracking ID returned is the primary key of the [Install History (mspcat_Inst
 
 ### [SDK for .NET](#tab/sdk)
 
-There are two messages you can use to install catalog items: `mspcat_InstallCatalogItemByCID` and `mspcat_InstallCatalogItem`.
+There are two messages you can use to install catalog items: `mspcat_InstallCatalogItemByCID` and `mspcat_InstallCatalogItem`. Most of the time you should use `mspcat_InstallCatalogItemByCID`.
 
 ### mspcat_InstallCatalogItemByCID
 
-Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application. This is the message you should use most of the time.
+Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
 
 The following static `InstallCatalogItemByCIDExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
@@ -99,8 +99,6 @@ The settings passed to the request as a string that represents the [IImportExten
 string serializedSettings = string.Join("|", settings.Select(kvp => $"{kvp.Key}:{kvp.Value}"));
 ```
 
-
-
 ### mspcat_InstallCatalogItem
 
 This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid) for normal operations.
@@ -131,8 +129,6 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 
     if (packageId.HasValue)
     {
-
-
         request.PackageId = packageId.Value;
     }
 
@@ -157,18 +153,169 @@ The settings passed to this message are the same used for [mspcat_InstallCatalog
 
 ### [Web API](#tab/webapi)
 
-There are two actions you can use to install catalog items: `mspcat_InstallCatalogItem` and `mspcat_InstallCatalogItemByCID`.
+There are two operations you can use to install catalog items: `mspcat_InstallCatalogItemByCID` action and `mspcat_InstallCatalogItem` function.
 
 ### mspcat_InstallCatalogItemByCID
 
-> TODO: Web API example
+The following `Install-CatalogItemByCID` PowerShell function describes how to use the `mspcat_InstallCatalogItemByCID` action.  This function depends on the `$baseURI` and `$baseHeaders` global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
+
+```powershell
+<#
+.SYNOPSIS
+Installs a catalog item to a specified organization URL using its catalog item ID (CID).
+
+.DESCRIPTION
+The `Install-CatalogItemByCID` function installs a catalog item to a specified organization URL using the Microsoft Dynamics CRM API. 
+It constructs the appropriate request body with mandatory and optional parameters and sends a POST request to the API.
+
+.PARAMETER catalogItemId
+The ID of the catalog item to be installed. This parameter is mandatory.
+
+.PARAMETER deployToOrgUrl
+The URL of the organization where the catalog item will be deployed. This parameter is mandatory.
+
+.PARAMETER settings
+Optional settings for the installation. This parameter is optional.
+
+.PARAMETER skipSendToCatalogService
+A boolean flag indicating whether to skip sending to the catalog service. This parameter is optional.
+
+.RETURNVALUE
+[string] The `mspcat_installhistoryid` value from the API response, which is the ID of the installation history record.
+
+.EXAMPLE
+Install-CatalogItemByCID `
+   -catalogItemId 'ExampleTable' `
+   -deployToOrgUrl 'https://example.crm.dynamics.com/' `
+   -settings = 'Key=Value|Key1=Value1'
+
+#>
+function Install-CatalogItemByCID {
+   param (
+      [Parameter(Mandatory)]
+      [string]
+      $catalogItemId,
+      [Parameter(Mandatory)]
+      [string]
+      $deployToOrgUrl,
+      [string]
+      $settings,
+      [bool]
+      $skipSendToCatalogService
+   )
+
+   $body = @{
+      CID                    = $catalogItemId
+      DeployToOrganizationUrl = $deployToOrgUrl
+   }
+
+   if ($settings) {
+      $body.Add('Settings', $settings)
+   }
+
+   if ($skipSendToCatalogService) {
+      $body.Add('SkipSendToCatalogService', $skipSendToCatalogService)
+   }
+
+   $postHeaders = $baseHeaders.Clone()
+   $postHeaders.Add('Content-Type', 'application/json')
+
+   $results = Invoke-RestMethod `
+      -Method Post `
+      -Uri $baseURI"mspcat_InstallCatalogItemByCID" `
+      -Headers $postHeaders `
+      -Body ($body | ConvertTo-Json)
+   
+   return $results.mspcat_installhistoryid
+}
+```
+
 
 ### mspcat_InstallCatalogItem
 
-> TODO: Web API example
+The following `Install-CatalogItem` PowerShell function describes how to use the `mspcat_InstallCatalogItem` function.  This function depends on the `$baseURI` and `$baseHeaders`  global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
+
+```powershell
+<#
+.SYNOPSIS
+Installs a catalog item to a specified organization URL.
+
+.DESCRIPTION
+The `Install-CatalogItem` function installs a catalog item to a specified organization URL using the Microsoft Dynamics CRM API. 
+It constructs the appropriate URL with mandatory and optional parameters and sends a GET request to the API.
+
+.PARAMETER catalogItemId
+The GUID ID of the catalog item to be installed. This parameter is mandatory.
+
+.PARAMETER deployToOrgUrl
+The URL of the organization where the catalog item will be deployed. This parameter is mandatory.
+
+.PARAMETER settings
+Optional settings for the installation. This parameter is optional.
+
+.PARAMETER skipSendToCatalogService
+A boolean flag indicating whether to skip sending to the catalog service. This parameter is optional.
+
+.RETURNVALUE
+Returns the `mspcat_installhistoryid` value from the API response, which is the ID of the installation history record.
+
+.EXAMPLE
+
+Install-CatalogItem `
+   -catalogItemId df32c7c8-2137-ef11-8409-6045bdd3aec3 `
+   -deployToOrgUrl 'https://example.crm.dynamics.com/' `
+   -settings = 'Key=Value|Key1=Value1'
+#>
+function Install-CatalogItem {
+   param (
+      [Parameter(Mandatory)]
+      [string]
+      $catalogItemId,
+      [Parameter(Mandatory)]
+      [string]
+      $deployToOrgUrl,
+      [string]
+      $settings,
+      [bool]
+      $skipSendToCatalogService
+   )
+
+   # This is a bound function that requires a GUID identifier for the 
+   # catalog item
+   $url = $baseURI + 'mspcat_applicationses(' + $catalogItemId + ')'
+   $url += '/Microsoft.Dynamics.CRM.mspcat_InstallCatalogItem'
+   $url += '(DeployToOrganizationUrl=@deployToOrgUrl'
+
+   # Set optional parameters
+   if ($settings) {
+      $url += ',Settings=@settings'
+   }
+   if ($skipSendToCatalogService) {
+      $url += ',SkipSendToCatalogService=@skipSendToCatalogService'
+   }
+
+   $url += ")?@deployToOrgUrl='" + $deployToOrgUrl +"'"
+
+   # Set optional parameter values
+   if ($settings) {
+      $url += "&@settings='" + $settings +"'"
+   }
+   if ($skipSendToCatalogService) {
+      $url += '&@skipSendToCatalogService=' + $skipSendToCatalogService
+   }
+
+   $results = Invoke-RestMethod `
+      -Method Get `
+      -Uri $url `
+      -Headers $baseHeaders
+
+   return  $results.mspcat_installhistoryid
+}
+```
 
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
