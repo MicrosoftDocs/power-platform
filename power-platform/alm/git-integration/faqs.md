@@ -71,6 +71,9 @@ Currently, you can still author different components, such as like Power Apps co
 ## Can I use an API to bind to Git and trigger commits and pulls?
 Our APIs are currently for internal use only, but we are planning on making them available for customers to use for integration purposes with the general availability (GA) release of the feature.
 
+## Can I now make changes directly in source control in a supported manner?
+Our approach to supporting direct modifications to solution customizations is not changing with this feature and our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source.  Code-first components that are supported using our developer tools are also supported, and this includes plugins, PCF controls, and web resources.
+
 ### Related content
 
 [Overview of Dataverse Git integration](overview.md)
