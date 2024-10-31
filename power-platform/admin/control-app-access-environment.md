@@ -283,7 +283,7 @@ Turn off the app access control feature. With this setting, there are no restric
 1. Select **Save**.
 1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature. Close the panel when you're done.
 
-> [!TIP]
+> [!Note]
 > If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the app access control feature is turned off to **Disabled**. There are no app restrictions in this environment.
 
 ## Error message: App denied user error
