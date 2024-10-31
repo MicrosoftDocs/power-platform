@@ -68,6 +68,9 @@ Currently, deployment remains a fresh solution export from the source environmen
 
 Currently, you can still author different components, such as like Power Apps component framework (PCF) controls and plug-ins, using a different folder similar to what you are doing today, but the binaries will be checked into source code when you commit from the environment.
 
+## Can I use an API to bind to Git and trigger commits and pulls?
+Our APIs are currently for internal use only, but we are planning on making them available for customers to use for integration purposes with the general availability (GA) release of the feature.
+
 ### Related content
 
 [Overview of Dataverse Git integration](overview.md)
