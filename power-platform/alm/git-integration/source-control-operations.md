@@ -27,7 +27,7 @@ When you make changes to solution components in Dataverse, you can view the chan
 
 1. After making a change or adding a component in unmanaged solution, go to the **Solutions** area in the Power Apps.
 1. Select and open the solution that you  made changes to and select **Source Control** on the left navigation pane.
-   :::image type="content" source="../media/git-integration-changes.png" alt-text="List of changes in solution ready to commit to Git":::
+   :::image type="content" source="../media/git-integration-changes.png" alt-text="List of changes in solution ready to commit to Git" lightbox="../media/git-integration-changes.png":::
 
 When you first enter the source control screen, you notice the list of **Changes** available to commit to source control. Select **Refresh** to refresh the list because you made changes in another browser tab. Selecting **Check for updates** queries your source code repository and identifies whether there are updates available or conflicts for you to resolve.
 
