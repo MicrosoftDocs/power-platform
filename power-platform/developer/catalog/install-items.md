@@ -121,7 +121,7 @@ string serializedSettings = string.Join("|", settings.Select(kvp => $"{kvp.Key}:
 
 ### mspcat_InstallCatalogItemRequest
 
-This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid) for normal operations. This message is used by the PAC CLI [pac catalog install command](../cli/reference/catalog.md#pac-catalog-install) when the optional  `--target-version` parameter is specified.
+This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCIDRequest](#mspcat_installcatalogitembycidrequest) for normal operations. This message is used by the PAC CLI [pac catalog install command](../cli/reference/catalog.md#pac-catalog-install) when the optional  `--target-version` parameter is specified.
 
 Use this message when you have a reference to the catalog item you want to install or you want to include a reference to a specific package record to install related to the catalog item.
 
@@ -173,7 +173,7 @@ static EntityReference InstallCatalogItemExample(IOrganizationService service,
 }
 ```
 
-The settings passed to this message are the same used for [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid). See [Settings parameter](#settings-parameter)
+The settings passed to this message are the same used for [mspcat_InstallCatalogItemByCIDRequest](#mspcat_installcatalogitembycidrequest). See [Settings parameter](#settings-parameter)
 
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)   
