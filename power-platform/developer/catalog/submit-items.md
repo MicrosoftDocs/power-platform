@@ -1,16 +1,14 @@
 ---
 title: "Submit and approve catalog items"
 description: "Learn how to submit items to your organization's catalog of templates and components."
-author: derekkwanpm
-ms.author: derekkwan
+author: MattB-msft
+ms.author: mbarbour
 ms.subservice: developer
-ms.date: 07/01/2024
+ms.date: 11/01/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
   - developer
-contributors:
- - MattB-msft
 ---
 # Submit and approve catalog items
 
@@ -233,7 +231,7 @@ The static `CatalogItemFromSolution` method below shows how to create a catalog 
 /// <param name="solutionName">The name of the solution</param>
 /// <param name="solutionUniqueName">The unique name of the solution</param>
 /// <param name="catalogItemSubmissionJsonString">The string containing the submission json file</param>
-/// <returns></returns>
+/// <returns>Catalog Item ID</returns>
 /// <exception cref="Exception"></exception>
 static string CatalogItemFromSolution(
     IOrganizationService service,

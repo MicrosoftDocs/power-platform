@@ -1,16 +1,14 @@
 ---
 title: "Catalog in Power Platform Events reference"
 description: "Subscribe to events that notify you when changes occur in the catalog in Power Platform"
-author: derekkwanpm
-ms.author: derekkwan
+author: MattB-msft
+ms.author: mbarbour
 ms.subservice: developer
-ms.date: 07/01/2024
+ms.date: 11/01/2024
 ms.reviewer: jdaly
 ms.topic: reference
 search.audienceType: 
   - developer
-contributors:
- - MattB-msft
 ---
 
 # Catalog in Power Platform Events reference

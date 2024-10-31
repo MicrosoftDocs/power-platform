@@ -1,16 +1,14 @@
 ---
 title: "Retrieve data about the catalog in Power Platform"
 description: "Learn about APIs to use to retrieve data about the catalog in Power Platform using code."
-author: derekkwanpm
-ms.author: derekkwan
+author: MattB-msft
+ms.author: mbarbour
 ms.subservice: developer
-ms.date: 07/01/2024
+ms.date: 11/01/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
   - developer
-contributors:
- - MattB-msft
 ---
 # Retrieve data about the catalog in Power Platform
 
@@ -50,13 +48,6 @@ Some of the most important tables you may use are in the following table:
 |[Package (mspcat_packages)](tables/mspcat_packages.md)|Deployment Assets for a Catalog Item.|
 |[Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md)|Contains record of installations and their status|
 |[Install Activity (mspcat_InstallActivity)](tables/mspcat_installactivity.md)|Install History Activity Id's|
-|**TODO**|Add more??|
-
-> TODO Add Diagram?
-> TODO: There are 21 tables in the reference. This is your place to tell about the design of these tables and how you expect people to use them.
-> TODO This whole section could be moved to the about-entity-reference article.
-
-
 
 
 ## View catalog information
@@ -171,8 +162,8 @@ This function returns an object with a single `CatalogDetails` string property t
 
 |Name|Type|Description|
 |---------|---------|---------|
-|`catalogId`|string|**TODO**: provide description The unique ID of the catalog?|
-|`isSuccess`|string|**TODO**: provide description What is success?|
+|`catalogId`|string|The unique ID of the catalog|
+|`isSuccess`|string|For internal use only.|
 |`sourceOptions`|option array|The options from the `mspcat_certificationrequest_requestsource` global choice.|
 |`categoryOptions`|option array|The options from the `mspcat_catalogbusinesscategory` global choice.|
 |`publisherLocalizedDisplayName`|string|The localized name of the catalog publisher.|

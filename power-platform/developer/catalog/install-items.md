@@ -1,16 +1,14 @@
 ---
 title: "Install items from the catalog in Power Platform using code"
 description: "Learn how to install items to your organization's catalog of templates and components using code."
-author: derekkwanpm
-ms.author: derekkwan
+author: MattB-msft
+ms.author: mbarbour
 ms.subservice: developer
-ms.date: 07/01/2024
+ms.date: 11/01/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
   - developer
-contributors:
- - MattB-msft
 ---
 # Install items from the catalog in Power Platform using code
 
@@ -60,7 +58,7 @@ The Tracking ID returned is the primary key of the [Install History (mspcat_Inst
 
 There are two messages you can use to install catalog items: `mspcat_InstallCatalogItemByCID` and `mspcat_InstallCatalogItem`. Most of the time you should use `mspcat_InstallCatalogItemByCID`.
 
-### mspcat_InstallCatalogItemByCID
+### mspcat_InstallCatalogItemByCIDRequest
 
 Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
 
@@ -68,6 +66,14 @@ The following static `InstallCatalogItemByCIDExample` method shows how to invoke
 
 
 ```csharp
+/// <summary>
+/// Demonstrates how to install a catalog item in Power Platform.
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="catalogItemId">The mspcat_TPSID value of the catalog item, optionally with @version</param>
+/// <param name="deployToOrgUrl">The URL of the environment to install the item in.</param>
+/// <param name="settings">The settings to apply (optional)</param>
+/// <returns>A reference to the install history so you can check the status</returns>
 static EntityReference InstallCatalogItemByCIDExample(IOrganizationService service,
     string catalogItemId,
     Uri deployToOrgUrl,
@@ -91,6 +97,20 @@ static EntityReference InstallCatalogItemByCIDExample(IOrganizationService servi
 }
 ```
 
+#### Usage example
+
+The following example shows using the static `InstallCatalogItemByCIDExample` method.
+
+```csharp
+EntityReference installHistoryReference =  InstallCatalogItemByCIDExample(
+    service: service, 
+    catalogItemId: "MyCatalogItem@1.0.0.0", 
+    deployToOrgUrl: new Uri("https://<org to install item>.crm.dynamics.com/"));
+
+  Console.WriteLine(installHistoryReference.Id);
+```
+
+
 #### Settings parameter
 
 The settings passed to the request as a string that represents the [IImportExtensions2.RuntimeSettings Property](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.iimportextensions2.runtimesettings) where the settings are a serialized `Dictionary<String,Object>` and the pipe character is a delimiter between the settings.  If `settings` represents the dictionary of settings, serialize the setting using code like this:
@@ -99,15 +119,24 @@ The settings passed to the request as a string that represents the [IImportExten
 string serializedSettings = string.Join("|", settings.Select(kvp => $"{kvp.Key}:{kvp.Value}"));
 ```
 
-### mspcat_InstallCatalogItem
+### mspcat_InstallCatalogItemRequest
 
-This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid) for normal operations.
+This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCID](#mspcat_installcatalogitembycid) for normal operations. This message is used by the PAC CLI [pac catalog install command](../cli/reference/catalog.md#pac-catalog-install) when the optional  `--target-version` parameter is specified.
 
 Use this message when you have a reference to the catalog item you want to install or you want to include a reference to a specific package record to install related to the catalog item.
 
 The following static `InstallCatalogItemExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
 ```csharp
+/// <summary>
+/// Demonstrates how to install a catalog item in Power Platform.
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="target">Reference to the catalog item to install</param>
+/// <param name="deployToOrgUrl">The URL of the environment to install the item in.</param>
+/// <param name="settings">The settings to apply (optional)</param>
+/// <param name="packageId">The packageId to apply (optional)</param>
+/// <returns>A reference to the install history so you can check the status</returns>
 static EntityReference InstallCatalogItemExample(IOrganizationService service,
     EntityReference target,
     Uri deployToOrgUrl,
@@ -153,9 +182,10 @@ The settings passed to this message are the same used for [mspcat_InstallCatalog
 
 ### [Web API](#tab/webapi)
 
-There are two operations you can use to install catalog items: `mspcat_InstallCatalogItemByCID` action and `mspcat_InstallCatalogItem` function.
+There are two operations you can use to install catalog items: `mspcat_InstallCatalogItemByCID` action and `mspcat_InstallCatalogItem` function. Most of the time you should use the `mspcat_InstallCatalogItemByCID` action.
 
-### mspcat_InstallCatalogItemByCID
+
+### mspcat_InstallCatalogItemByCID action
 
 The following `Install-CatalogItemByCID` PowerShell function describes how to use the `mspcat_InstallCatalogItemByCID` action.  This function depends on the `$baseURI` and `$baseHeaders` global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
 
@@ -185,8 +215,8 @@ A boolean flag indicating whether to skip sending to the catalog service. This p
 
 .EXAMPLE
 Install-CatalogItemByCID `
-   -catalogItemId 'ExampleTable' `
-   -deployToOrgUrl 'https://example.crm.dynamics.com/' `
+   -catalogItemId 'ContosoConferencesCustomConnector' `
+   -deployToOrgUrl 'https://<org to install item>.crm.dynamics.com/' `
    -settings = 'Key=Value|Key1=Value1'
 
 #>
@@ -231,7 +261,7 @@ function Install-CatalogItemByCID {
 ```
 
 
-### mspcat_InstallCatalogItem
+### mspcat_InstallCatalogItem function
 
 The following `Install-CatalogItem` PowerShell function describes how to use the `mspcat_InstallCatalogItem` function.  This function depends on the `$baseURI` and `$baseHeaders`  global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
 
@@ -263,7 +293,7 @@ Returns the `mspcat_installhistoryid` value from the API response, which is the 
 
 Install-CatalogItem `
    -catalogItemId df32c7c8-2137-ef11-8409-6045bdd3aec3 `
-   -deployToOrgUrl 'https://example.crm.dynamics.com/' `
+   -deployToOrgUrl 'https://<org to install item>.crm.dynamics.com/' `
    -settings = 'Key=Value|Key1=Value1'
 #>
 function Install-CatalogItem {
@@ -348,19 +378,116 @@ Status of the Install request: Requested
 
 ### [SDK for .NET](#tab/sdk)
 
-> TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
+The following static `GetInstallSuccess` method checks the status of the [Install History (mspcat_InstallHistory) record](tables/mspcat_installhistory.md) to determine whether the installation succeeded.
+
+```csharp
+/// <summary>
+/// Polls the install success of a catalog item
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="id">The mspcat_installhistoryid value</param>
+/// <param name="intervalInSeconds">The number of seconds of interval</param>
+/// <returns>Whether the installation succeeded</returns>
+/// <exception cref="Exception">The polling is limited to 10 attempts.</exception>
+static bool GetInstallSuccess(IOrganizationService service, Guid id, int intervalInSeconds = 60) {
+
+    int maxAttempts = 10;
+    int attempts = 0;
+
+    while (attempts < maxAttempts)
+    {
+        attempts++;
+        Entity currentValue = service.Retrieve("mspcat_installhistory", id, new ColumnSet("statecode", "statuscode"));
+
+        // Wait until the state of the operation is inactive
+        if (currentValue.GetAttributeValue<OptionSetValue>("statecode").Value.Equals(1))
+        {
+            if  (currentValue.GetAttributeValue<OptionSetValue>("statuscode").Value.Equals(526430003))
+            {
+               // When the statuscode values is 'Completed'
+                return true;
+            }
+            // Any other status code: 'Inactive' or 'Failed'.
+            return false;
+        }
+        Thread.Sleep(intervalInSeconds * 1000);
+    }
+
+    throw new Exception("Maximum number of polling attempts exceeded.");
+}
+```
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
-> TODO: Show how to poll a [Install History (mspcat_InstallHistory) record to check the status](tables/mspcat_installhistory.md)
+The following `Get-InstallSuccess` function checks the status of the [Install History (mspcat_InstallHistory) record](tables/mspcat_installhistory.md) to determine whether the installation succeeded. This function depends on the `Get-Record` function described in [Create table operations functions](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-table-operations-functions)
 
-// Poll for status of certification request
-GET /mspcat_installhistories(id)?$select=statuscode
+```powershell
+<#
+.SYNOPSIS
+Polls the install success of a catalog item.
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+.DESCRIPTION
+The `Get-InstallSuccess` function polls the install success of a catalog item by retrieving its state and status codes. 
+It continues polling at specified intervals until the installation is either completed or failed, or until the maximum number of attempts is reached.
+
+.PARAMETER id
+The ID of the catalog item to be checked. This parameter is mandatory.
+
+.PARAMETER intervalInSeconds
+The interval in seconds between each polling attempt. This parameter is optional and defaults to 60 seconds.
+
+.RETURNVALUE
+[bool] Returns `$true` if the installation is completed successfully, `$false` if the installation is inactive or failed.
+
+.EXAMPLE
+$id = "b54f3dff-b297-ef11-8a69-7c1e520056af"
+$intervalInSeconds = 60
+
+$result = Get-InstallSuccess -id b54f3dff-b297-ef11-8a69-7c1e520056af
+Write-Output "Installation success: $result"
+
+#>
+function Get-InstallSuccess {
+   param (
+       [Parameter(Mandatory)]
+       [string]$id,
+       [int]$intervalInSeconds = 60
+   )
+
+   $maxAttempts = 10
+   $attempts = 0
+
+   while ($attempts -lt $maxAttempts) {
+       $attempts++
+   
+       # Retrieve the record
+       $response = Get-Record `
+         -setName 'mspcat_installhistories' `
+         -id $id `
+         -query '?$select=statecode,statuscode'
+       
+       # Retrieve the record
+
+       # Wait until the state of the operation is inactive
+       if ($response.statecode -eq 1) {
+           if ($response.statuscode -eq 526430003) {
+               # When the statuscode value is 'Completed'
+               return $true
+           }
+           # Any other status code: 'Inactive' or 'Failed'
+           return $false
+       }
+       Start-Sleep -Seconds $intervalInSeconds
+   }
+
+   throw "Maximum number of polling attempts exceeded."
+}
+```
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
+
 
 ---
-
-
