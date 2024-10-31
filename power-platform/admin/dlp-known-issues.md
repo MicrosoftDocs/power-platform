@@ -34,10 +34,6 @@ Power Apps treats [Dataverse native](/power-apps/maker/canvas-apps/data-platform
 > - An app triggers a flow 
 > - Both the app and flow connect to Dataverse
 
-## Child flows
-- Blocking the HTTP connector will also block child flows because those child flows are called using the same HTTP connector technology.
-- If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
-
 ### Desktop flows
 - There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. This will be supported when [DLP for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview) is generally available.
 - There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This will be supported when [DLP for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview) is generally available.
