@@ -44,7 +44,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 
 ### Delegation
 
-Only some data sources support RemoveIf. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maximum of either 500, 2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server. 
+Only some data sources support RemoveIf. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maximum of either 500/2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server.
 
 ## Syntax
 
