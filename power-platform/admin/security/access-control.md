@@ -4,7 +4,7 @@ description: Learn how to manage access controls in the Power Platform admin cen
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2024
+ms.date: 10/31/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -32,12 +32,12 @@ Setting up security groups helps control which licensed users can access environ
 ## Manage sharing 
 This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and copilots&mdash;with other individual users and security groups, which ensures that sensitive information is available only to authorized users, reducing the risk of data breaches and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
-## App access control
+## App access control (preview)
 This feature applies to Managed Environments only. You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration helps prevent sensitive information from unauthorized removal or extraction from your environment. This safeguard allows a business to maintain business continuity, comply with regulatory requirements, and keep up with competitive advantages.
 
 When this capability is activated in an environment, you can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
 
-## Guest access
+## Guest access (preview)
 You can bolster your security score by prohibiting guest access to your environment. This feature restricts anyone who is designated as a guest in your tenant in Microsoft Entra from interacting with any resources that have been shared with them or that they made.
 
 > [!Note]
