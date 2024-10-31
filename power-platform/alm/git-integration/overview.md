@@ -23,6 +23,7 @@ Git integration in Microsoft Dataverse is used to create source control friendly
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> - This feature is being gradually rolled out across regions and might not be available in your region yet.
 
 In this article, you find some of the key concepts and benefits to using Git enabled source control with your Dataverse environments and solutions.
 
