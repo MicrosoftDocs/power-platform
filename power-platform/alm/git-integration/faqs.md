@@ -73,10 +73,12 @@ Currently, deployment remains a fresh solution export from the source environmen
 Currently, you can still author different components, such as like Power Apps component framework (PCF) controls and plug-ins, using a different folder similar to what you are doing today, but the binaries will be checked into source code when you commit from the environment.
 
 ## Can I use an API to bind to Git and trigger commits and pulls?
-Our APIs are currently for internal use only, but we are planning on making them available for customers to use for integration purposes with the general availability (GA) release of the feature.
+
+Power Platform APIs are currently for internal use only.
 
 ## Can I now make changes directly in source control in a supported manner?
-Our approach to supporting direct modifications to solution customizations is not changing with this feature and our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source.  Code-first components that are supported using our developer tools are also supported, and this includes plugins, PCF controls, and web resources.
+
+Supporting for direct modifications to solution customizations isn't changing with this feature and our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source.  Code-first components that are supported using our developer tools are also supported, and this includes plugins, PCF controls, and web resources.
 
 ### Related content
 
