@@ -47,17 +47,16 @@
               href: roles-guidance/sap-basis-administrator.md
         - name: Related content
           items:
-            - name: Power Platform and SAP Setup Assistant
+            - name: SAP Setup Assistant
               href: /enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
             - name: SAP ERP connector
               href: connect/sap-erp-connector.md
             - name: SAP integration requirements
               href: /enterprise-templates/finance/sap-procurement/administer/requirements.md
             - name: Set up environments and data policies
-              href: /set-up-environments-data-policies.md
+              href: /enterprise-templates/finance/sap-procurement/administer/set-up-environments-data-policies.md
             - name: Set up on-premises data gateway for SAP
-              href: set-up-gateway.md
-            - name: Configure authentication for SAP integration
-              href: configure-authentication.md
+              href: /enterprise-templates/finance/sap-procurement/administer/set-up-gateway.md
+            - name: 
             
 
