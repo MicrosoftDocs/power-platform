@@ -1,12 +1,61 @@
+- name: SAP
+  href: index.yml
+  items:
+    - name: Power Platform and SAP
+      items: 
+        - name: Overview
+          items:
+            - name: Power Platform and SAP
+              href: overview/explore-power-platform-and-SAP-integration.md
+            - name: Power Platform and SAP patterns
+              href: overview/common-patterns.md
+            - name: SAP + Power Platform white paper
+              href: overview/white-paper.md
+        - name: Get started with Power Platform
+          items:
+            - name: Power Platform guidance
+              href: power-platform/guidance/index.md
+        - name: Connect to SAP
+          items:
+            - name: Power Platform connectivity to SAP
+              href: connect/connect-power-platform-and-SAP.md
+            - name: SAP ERP connector
+              href: connect/sap-erp-connector.md
+            - name: SAP OData connector
+              href: connect/getting-started-with-the-SAP-OData-connector.md
+            - name: Set up Secure Network Communications
+              href: connect/secure-network-communications.md
+            - name: Set up Microsoft Entra ID using certificates
+              href: connect/entra-id-certs.md
+            - name: Set up Microsoft Entra ID with Azure API Management and OAuth
+              href: connect/entra-id-apim-oauth.md
+        - name: Use Enterprise templates
+          items:
+            - name: SAP Procurement
+              href: enterprise-templates/finance/sap-procurement/valid-overview.md
+            - name: SAP Supplier Self Service
+              href: enterprise-templates/finance/sap-supplier-self-service/overview.md
+        - name: Role-based guidance
+          items:
+            - name: App maker
+              href: guides/roles-guidance/power-platform-app-maker.md
+            - name: SAP consultant
+              href: guides/roles-guidance/sap-consultant.md
+            - name: Compliance and security admin
+              href: guides/roles-guidance/governance-administrator.md
+            - name: SAP Basis admin
+              href: guides/roles-guidance/sap-basis-administrator.md
+        - name: Related content
+          items:
+            - name: Power Platform and SAP Setup Assistant
+              href: enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
+            - name: SAP integration requirements
+              href: enterprise-templates/finance/sap-procurement/administer/requirements.md
+            - name: Set up environments and data policies
+              href: set-up-environments-data-policies.md
+            - name: Set up on-premises data gateway for SAP
+              href: set-up-gateway.md
+            - name: Configure authentication for SAP integration
+              href: configure-authentication.md
+            
 
-#- name: Power Platform and SAP
-#  href: index.yml
-- name: Getting Started with the SAP ERP Connector
-  href: guides/getting-started-with-the-sap-erp-connector.md
-- name: Set up Secure Network Communications (SNC)
-  href: guides/set-up-secure-network-communications.md
-- name: Set up Microsoft Entra ID using certificates (SSO)
-  href: guides/set-up-microsoft-entra-id-with-certificates.md
-- name: Set up Microsoft Entra ID with Azure APIM and OAuth
-  href: guides/set-up-microsoft-entra-id-with-azure-apim-and-oauth.md
-  expanded: true

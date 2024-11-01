@@ -19,7 +19,7 @@
           href: availability.md
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
-        - name: SAP on Power Platform
+        - name: Power Platform and SAP
           href: sap/index.yml
         - name: Copilots and generative AI features
           items:

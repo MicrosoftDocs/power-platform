@@ -1,15 +1,16 @@
 ### YamlMime:Marketing
-title: Power Platform and SAP learning hub
+title: Power Platform and SAP Microsoft Learn hub
 metadata:
-  title: 'Learn how to accelerate integration of the Power Platform and SAP | Microsoft Learn'
-  description: Explore guidance, template, samples, and tools to help unlock Power Platform capabilities integration with SAP. 
+  title: 'Learn how to accelerate integration of Power Platform and SAP | Microsoft Learn'
+  description: Explore guidance, templates, samples, and tools to integrate Power Platform and SAP and unlock new capabilities. 
   ms.service: power-platform
   ms.subservice: connectors
   keywords: what are Power Platform SAP connectors, how to use Power Platform with SAP, Power Platform and SAP documentation
   ms.topic: marketing-hub
   ms.author: edleh
   author: edlehman
-  ms.date: 09/16/2024
+  ms.reviewer: ellenwehrle
+  ms.date: 10/31/2024
   ms.collection: power-platform
   brand: power-platform
 sections:

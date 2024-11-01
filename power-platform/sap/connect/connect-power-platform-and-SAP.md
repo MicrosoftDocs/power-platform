@@ -1,0 +1,52 @@
+---
+title: Connect Power Platform and SAP
+description: Learn how to connect the Power Platform and SAP to help you quickly build, extend, and deploy solutions that improve daily workflows that interact with SAP.
+author: edlehman
+ms.author: edleh
+contributors: 
+  - tverhasselt
+  - EllenWehrle
+  - tbrazelton
+  - dgalitsky
+  - shnair
+  - edlehman
+ms.reviewer: ellenwehrle
+ms.topic: how-to
+ms.date: 10/30/2024
+ms.service: power-platform
+ms.subservice: connectors
+---
+
+# Connect Power Platform and SAP
+
+The SAP ERP and SAP OData connectors allow you to easily access and manipulate SAP data, enabling you to create custom applications and copilots, and automate workflows. There are two connectors available to fit varying needs for integrating with your SAP environments. Both connectors support data encryption in motion. Encryption from the gateway to SAP is supported by SAP SNC.
+
+## SAP ERP connector
+
+The [SAP ERP connector](/power-platform/sap/guides/getting-started-with-the-sap-erp-connector) utilizes the SAP RFC protocol to your SAP ERP environments for create, read, and update operations on SAP data. It can also be used to call RFCs and BAPIs. The ERP connector is compatible with SAP ECC and S/4HANA environments and any SAP product that runs on the NetWeaver stack. The SAP ERP Connector supports SAP Authentication, Windows Authentication, and Microsoft Entra ID with [Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos) or [certificates](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates).
+
+The SAP ERP connector runs on SAP's API layer, which typically has better system performance than running the same activity in the SAP GUI. As more users transition off the SAP GUI and to an external user interface like a canvas app, CPU consumption on the SAP servers drops significantly.
+
+The SAP ERP connector utilizes the message server to invoke APIs that create, read, and update SAP data. This traffic typically flows over port 33XX for single application servers or port 39XX for load-balanced connections, where XX is the system number of the SAP instance.
+
+## SAP OData connector
+
+The [SAP OData Connector](/power-platform/sap/guides/getting-started-with-the-SAP-OData-connector) can consume data from all products across the SAP portfolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html). Using the OData connector with SAP ECC or prior versions requires configuration of Odata endpoints that are not included in the ECC out-of-box setup. The SAP OData Connector supports Basic, Anonymous, [Microsoft Entra ID Integrated (with API Management)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-azure-apim-and-oauth) and Microsoft Entra ID using SuccessFactors (Preview) authentication.
+
+## On-Premises Data Gateway
+
+An [on-premises data gateway](/data-integration/gateway/service-gateway-onprem) acts as a bridge to provide secure data transfer between on-premises data that isn't in the cloud and Microsoft cloud services.is an application that provides the connectivity between Power Platform applications and your SAP network.
+
+The integration setup requires a small Windows virtual machine (VM) with at least 8GB of RAM for the On-Premises Data Gateway, which acts as a proxy server to listen for requests from your Power Platform tenant and relays them to SAP. One windows machine is sufficient for testing, but a cluster of Windows VMs should be set up for deployment to production to avoid single points of failure.
+
+Recommended practice is to set up a separate gateway for each environment to enable testing changes without impacting other environments and to eliminate any risk of development testing impacting test and production environments.
+
+### Learn more
+
+- [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
+- [SAP ERP Connector](/connectors/saperp/)
+- [SAP OData Connector](/connectors/sapodata/)
+- [Getting Started with the SAP ERP Connector](/power-platform/sap/guides/getting-started-with-the-sap-erp-connector)
+- [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
+- [Set up Microsoft Entra ID using Kerberos](/power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos)
+- [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)
