@@ -71,10 +71,6 @@ The recommended approach is to build code-first components as part of a solution
 
 ## Next steps
 
-[Common Dataverse and Git integration scenarios](/power-platform/alm/git-integration/common-scenarios)  
-
-### See also
-
-[Getting started with Git integration](/power-platform/alm/git-integration/connecting-to-git)
+[Setup Dataverse and Git integration (preview)](/power-platform/alm/git-integration/connecting-to-git)  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
