@@ -17,13 +17,11 @@ search.audienceType:
 
 Microsoft's Business Application Platform (BAP) provides Business Continuity and Disaster Recovery (BCDR) capabilities to all [production type](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform SAAS applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during regional outage.
 
-## Backup and Replication of Production Environments
+## Backup of Production Environments
 
-Microsoft is dedicated to ensuring the highest [service availability](https://servicetrust.microsoft.com/) levels for your critical applications and data. Microsoft ensures that the baseline infrastructure and platform services are available through its business continuity and [disaster recovery](/azure/reliability/disaster-recovery-overview) architecture by:
+Microsoft is dedicated to ensuring the highest [service availability](https://servicetrust.microsoft.com/) levels for your critical applications and data. Microsoft ensures that the baseline infrastructure and platform services are available through its business continuity and [disaster recovery](/azure/reliability/disaster-recovery-overview) architecture by enabling geo redundancy, where in, all data from production environments (excluding Default environments) is backed up to the paired/secondary region. These backups are referred to as geo-secondary backup that are set up during the time the primary environment is deployed.
 
-- Enabling geo redundancy, where in, all data from production environments (excluding Default environments) is backed up to the paired/secondary region. These replicas are referred to as geo-secondary replicas that are set up during the time the primary environment is deployed.
 
-- Geo-secondary replicas are kept synchronized with the primary environment through continuous data replication. While at any given point, a secondary region might be slightly behind the primary region, the data on a secondary is guaranteed to be transactionally consistent. For more information on geo replication, visit [Active geo-replication - Azure SQL Database](/azure/azure-sql/database/active-geo-replication-overview)
 
 :::image type="content" source="media/bcdr.png" alt-text="Diagram illustrating a geo-secondary replica of data storage and compute infrastructure.":::
 
@@ -39,7 +37,7 @@ To learn more about data protection in nonproduction environments, see [Back up
 
 Failover and failback are the two main tasks accomplished during the business continuity and disaster recovery (BCDR) process, the purpose is to minimize the impact of a disaster on the availability and performance of critical business functions and applications.
 
-**Failover** is the process of switching to a designated geo-secondary replica of all the systems and data from your primary production site. At the completion of failover operation your production environment will be accessible from the geo-secondary site.
+**Failover** is the process of switching to a designated geo-secondary backup of all the systems and data from your primary production site. At the completion of failover operation your production environment will be accessible from the geo-secondary site.
 
 > [!IMPORTANT]
 > While the Finance and Operations apps are operating in the secondary region after a failover maintenance, package deployments, Financial Reporting, and Power BI reporting are unavailable.
