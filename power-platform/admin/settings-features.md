@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/17/2024
+ms.date: 10/31/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -24,7 +24,7 @@ Use feature settings to adjust how features appear and function in Power Apps [c
 
 These settings can be found in the Power Platform admin center by going to **Environments** > [select an environment] > **Settings** > **Product** > **Features**.
 
-To update the business closures, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
+To update these settings, make sure you have the System Administrator or System Customizer security role or equivalent permissions.
 
 **Check your security role**
 
