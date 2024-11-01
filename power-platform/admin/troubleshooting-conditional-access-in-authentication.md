@@ -90,6 +90,9 @@ When the Document Associated grid shows a warning message "Authentication isn't 
    ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-clear-application-type.png "Clear application type filter")  
 
 1. Search for **Dataverse** and select in the list
+
+   ![Search for Dataverse](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-search-dataverse.png "Search for Dataverse")  
+  
 1. Select **Conditional Access** to show the list of Policy names
 
    ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access" )  
