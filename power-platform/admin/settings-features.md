@@ -43,9 +43,9 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable new AI-powered Copilot features for people who make apps. | When **On**, allows preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. For more information, see [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
-| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, enables Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. More information: [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is enabled. | Off |
-| Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. More information: [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
+| Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. For more information, see [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
+| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Off |
+| Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -71,19 +71,19 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
+|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available |
 
 ## AI suggestions for formula columns
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
+| AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
 
 ## Embedded content
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Power BI visualization embedding| More information: [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)| Off |
+|Power BI visualization embedding| Learn more in [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards).| Off |
 |Bing Maps| If **On**, Customer Engagement (on-premises) users need to enter a Bing Maps key. Users don't need to enter a key. | Off | 
 |Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization won't be able to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
 
@@ -91,7 +91,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Country/region code prefixing for numbers|If **On**, customer engagement apps will prefix the country/region code to numbers that users are trying to call.|  On|
+|Country/region code prefixing for numbers|If **On**, customer engagement apps prefix the country/region code to numbers that users are trying to call.|  On|
 
 ## Hosted RPA
 
@@ -100,38 +100,38 @@ To update these settings, make sure you have the System Administrator or System 
 | Enable hosted machine groups.| If **On**, users can run unattended automation at scale with [hosted machine group](/power-automate/desktop-flows/hosted-machine-groups).  | On |
 | Enable work or school accounts for hosted machine groups.| If **On**, your hosted machine group has access to your resources that are part of [your work or school account](/power-automate/desktop-flows/hosted-machine-groups#use-your-work-or-school-account). | On |
 | Enable hosted machines.| If **On**, users can build, test, and run attended and unattended desktop flows without providing or setting up any physical machine with [hosted machines](/power-automate/desktop-flows/hosted-machines). | On |
-| Enable cross-geo support for hosted machines| If **On**, this allows users to provision hosted machines in a geography different from that of the configured tenant country. More information: [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
+| Enable cross-geo support for hosted machines| If **On**, this allows users to provision hosted machines in a geography different from that of the configured tenant country. Learn more in [Azure tenant country/region and supported geographies in the public cloud](/power-automate/desktop-flows/hosted-machines#azure-tenant-countryregion-and-supported-geographies-in-the-public-cloud). | On |
 
 ## Enhanced desktop flows schema
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. More information: [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
-| Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema will be turned **On** for all environments without the option to disable the feature. We recommend that you enable the feature in advance so users can benefit from the product enhancements that come with it. More information: [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
+| Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. Learn more in [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
+| Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema is turned **On** for all environments without the option to turn off the feature. We recommend that you turn on the feature, in advance, so users can benefit from the product enhancements that come with it. Learn more in [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
 
 ## Desktop flow run action logs configuration
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Activation status of run action logs.| Defines when desktop flow run action logs should be captured and even allows you to turn them off completely. More information: [Desktop flow action logs configuration](/power-automate/desktop-flows/configure-desktop-flow-logs). | Enabled |
-| Action logs version.| The Action logs version allows you to choose V1, V2, or both. More information: [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version).   | V1 |
-| FlowLogs entity time to live in minutes | Determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. More information: [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version). | 40320 |
+| Activation status of run action logs.| Defines when desktop flow run action logs should be captured and even allows you to turn them off completely. Learn more in [Desktop flow action logs configuration](/power-automate/desktop-flows/configure-desktop-flow-logs). | Enabled |
+| Action logs version.| The Action logs version allows you to choose V1, V2, or both. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version).   | V1 |
+| FlowLogs entity time to live in minutes | Determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version). | 40320 |
 
 ## Grids and views
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable the modern read-only grid experience. | If **On**, the Power Apps read-only grid control lets users view and open records from views and subgrids. | On |
-|Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. More information: [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you enabled 2022 Release Wave 1. |  On| 
-|Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. More information: [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor). This setting only appears if you enabled 2022 Release Wave 1.| On |
+|Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. Learn more in [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you turned on 2022 Release Wave 1. |  On| 
+|Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. Learn more in [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor). This setting only appears if you turned on 2022 Release Wave 1.| On |
 |Enable focused view for all records. | Focused view allows you to view and manage account, contact, lead, opportunity, and other records and their associated activities on one page. Learn more in [View and manage records in focused view](/dynamics365/sales/focused-view). | On |
 
 ## Advanced find options
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Modern advanced find in model-driven apps| If **On**, legacy advanced find is replaced with a modern experience that enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. More information: [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you enabled 2022 Release Wave 1. |  On|
-|Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. More information: [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you enabled 2022 Release Wave 1.| Off |
+|Modern advanced find in model-driven apps| If **On**, legacy advanced find is replaced with a modern experience that enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. Learn more in [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you turned on 2022 Release Wave 1. |  On|
+|Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. Learn more in [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you turend on 2022 Release Wave 1.| Off |
 
 ## Activities
 
@@ -147,18 +147,12 @@ To update these settings, make sure you have the System Administrator or System 
 
 ## Create new canvas apps and cloud flows in a Dataverse solution
 
-> [!IMPORTANT]
-> This is a preview feature.
-
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Canvas apps | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 | Cloud flows | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 
 ## Block unmanaged customizations
-
-> [!IMPORTANT]
-> This is a preview feature.
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -168,7 +162,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable email address validation in model-driven apps (preview).  |  When **On**, enables smart data validation for certain columns, such as text columns using the email format. More information: [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) | Off |
+| Enable email address validation in model-driven apps (preview).  |  When **On**, allows smart data validation for certain columns, such as text columns using the email format. Learn more in [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) | Off |
 
 ## Power Automate capacity
 
