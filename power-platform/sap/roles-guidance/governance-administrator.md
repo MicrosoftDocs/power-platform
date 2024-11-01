@@ -8,7 +8,6 @@ contributors:
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 10/21/2024
-ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -18,6 +17,7 @@ ms.custom: ignite-2024
 Compliance and security administrators ensure secure, compliant, and efficient use of Microsoft SAP connectors within the Power Platform, with guidance provided in [Microsoft Power Platform documentation](/power-platform/guidance/).
 
 ## Enforcing permissions
+
 SAP's APIs do the same security checks as the SAP GUI. Power Automate flows can also be set up to check user permissions, so apps, fields, and buttons are shown or hidden based on the user's experience in SAP.
 
 ## Principal Propagation
@@ -35,7 +35,8 @@ Principal propagation is a way to make sure that users are securely authenticate
 Secure data transport is very important when connecting Power Platform with SAP systems. The on-premises data gateway acts as a bridge, securely transferring data between on-premises SAP systems and Power Platform. The gateway uses outbound ports to connect to Azure services, which improves security. Additionally, Secure Network Communications (SNC) can be set up to encrypt data between the gateway and SAP systems. Administrators should also use [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies to control which connectors can be used and to prevent unauthorized data access or transfer
 
 Learn more:
- - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
- - [Enable SAP Principal Propagation and SSO for Power Platform](/azure/sap/workloads/expose-sap-odata-to-power-platform)
- - [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
- - [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)
+
+- [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
+- [Enable SAP Principal Propagation and SSO for Power Platform](/azure/sap/workloads/expose-sap-odata-to-power-platform)
+- [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
+- [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)

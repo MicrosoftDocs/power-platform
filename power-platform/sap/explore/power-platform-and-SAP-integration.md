@@ -26,11 +26,12 @@ Discover how to streamline your SAP business processes with the Power Platform. 
 
 :::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
-Our SAP connectors support all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA as well as all products across the SAP portolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html).
+Our SAP connectors support all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA as well as all products across the SAP portfolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html).
 
 Users of Power Platform apps integrated with SAP will need the following licenses:
- - A Power Apps Premium license
- - An SAP indirect named user license
+
+- A Power Apps Premium license
+- An SAP indirect-named user license
 
 If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It is worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses. Customers can also use Digital Access Licenses as noted [here](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
 
@@ -39,10 +40,10 @@ Our Power Platform templates for SAP and ready-to-use copilots can accelerate yo
 Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of Power Platform connectors.
 
 Learn more:
- - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
- - [SAP ERP Connector](/connectors/saperp/)
- - [SAP OData Connector](/connectors/sapodata/)
- - [Getting Started with the SAP ERP Connector](guides/getting-started-with-the-sap-erp-connector.md)
- - [Set up Microsoft Entra ID using certificates(SSO)](guides/set-up-microsoft-entra-id-with-certificates.md)
- - [Learn about SAP Procurement template for Microsoft Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview)
 
+- [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
+- [SAP ERP Connector](/connectors/saperp/)
+- [SAP OData Connector](/connectors/sapodata/)
+- [Get Started with the SAP ERP Connector](/connect/sap-erp-connector)
+- [Set up Microsoft Entra ID using certificates(SSO)](/connect/entra-id-certs)
+- [Learn about SAP Procurement template for Microsoft Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview)

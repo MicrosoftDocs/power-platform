@@ -1,5 +1,5 @@
 ---
-title: Power Platform and SAP for SAP Basis Administors
+title: Power Platform and SAP for SAP Basis Admins
 description: As an SAP Basis Administrator, you can enable seamless integration of your SAP systems in Power Platform applications. This guide describes key concepts to understand when integrating data from your SAP systems in Power Platform applications.
 author: edlehman
 ms.author: edleh
@@ -7,14 +7,14 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/21/2024
-ms.custom: bap-template
+ms.date: 11/01/2024
+ms.custom: ignite-2024
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 # Enabling Power Platform Applications Integrated with SAP for SAP Basis Administrators
 
-SAP Basis Administrators play a crucial role in enabling the integration of SAP systems with Microsoft Power Platform. This integration allows for the creation of applications, workflows, and chatbots that enhance business processes by leveraging SAP data.
+SAP Basis Administrators play a crucial role in enabling the integration of SAP systems with Microsoft Power Platform. This integration allows for the creation of applications, workflows, and chat bots that enhance business processes by leveraging SAP data.
 
 ## Architecture of the Integration
 
@@ -38,14 +38,15 @@ To enable the integration, administrators need to set up and configure the neces
 
 The Power Platform SAP Setup Assistant provides a guided implementation of the integration. It walks administrators through a checklist of manual and automated steps to get the Power Platform and SAP solution up and running. This includes setting up the on-premises data gateway, configuring connectors, and ensuring secure data transport.
 
- ## Using Copilots to Automate Administrative Tasks
+## Using Copilots to Automate Administrative Tasks
 
 Copilot Studio enables administrators to create and customize AI-powered conversational chatbots (Copilots) that can automate various administrative tasks, such as password resets. These Copilots can interact with users through natural language, providing a user-friendly interface for performing routine tasks efficiently.
 
 ## Quick tips
+
 ### Impact of Power Platform on SAP System Performance
 
-The Power Platform operates on SAP’s API layer, which typically offers better system performance compared to running the same activities in the SAP GUI. As more users transition from the SAP GUI to an external user interface like Power Apps, CPU consumption on the SAP servers is expected to decrease significantly.
+The Power Platform operates on SAP's API layer, which typically offers better system performance compared to running the same activities in the SAP GUI. As more users transition from the SAP GUI to an external user interface like Power Apps, CPU consumption on the SAP servers is expected to decrease significantly.
 
 ### Performance Bottlenecks in the SAP Connector
 
@@ -61,19 +62,18 @@ The Power Platform currently the following authentication methods for SAP:
 
 ### Ensuring User Permissions in Power Platform
 
-SAP’s published APIs perform the same security checks as if the user were in the SAP GUI. Additionally, Power Automate flows can query a user’s authorization objects to conditionally hide apps, fields, and buttons, ensuring the user experience matches their permissions in SAP.
+SAP's published APIs perform the same security checks as if the user were in the SAP GUI. Additionally, Power Automate flows can query a user's authorization objects to conditionally hide apps, fields, and buttons, ensuring the user experience matches their permissions in SAP.
 
 ### Encrypting Traffic Between Power Platform and SAP
 
-To ensure encrypted traffic between Power Platform and SAP, it is recommended to use SAP’s Secure Network Communication (SNC), which is available via a connection setting when configuring authentication.
+To ensure encrypted traffic between Power Platform and SAP, it is recommended to use SAP's Secure Network Communication (SNC), which is available via a connection setting when configuring authentication.
 
 ### Installation Requirements on SAP Servers
 
 No installation is required on SAP servers to get Power Platform to work with SAP.
 
-
 Learn more:
+
 - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
 - [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
-- [Manage solutions using PowerShell](/power-platform/alm/powershell-api) 
- 
+- [Manage solutions using PowerShell](/power-platform/alm/powershell-api)

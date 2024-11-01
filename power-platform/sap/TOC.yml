@@ -21,6 +21,8 @@
               href: connect/connect-power-platform-and-SAP.md
             - name: SAP ERP connector
               href: connect/sap-erp-connector.md
+            - name: Set up Microsoft Entra ID with Kerberos for SSO
+              href: connect/entra-id-kerberos.md
             - name: SAP OData connector
               href: connect/sap-odata-connector.md
             - name: Set up Secure Network Communications

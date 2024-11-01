@@ -16,7 +16,6 @@ contributors:
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 08/15/2024
-ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -41,9 +40,7 @@ An on-premises data gateway acts as a bridge to provide secure data transfer bet
 
 Verify your Windows VM can access your SAP instance.
 
-```powershell
-telnet sap.example.com 3300
-```
+``` powershell telnet sap.example.com 3300 ```
 
 ## Step 2: Install the SAP .NET connector(NCo)
 
@@ -63,7 +60,7 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 ## Step 4: Verify the connection
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-2. Select **Data**.
+1. Select **Data**.
 1. Select **On-premises data gateways**.
 1. Find and select your new gateway from the list.
 1. Make sure the status shows as *Online*.
@@ -71,7 +68,7 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 ## Step 5: Create a flow with the SAP ERP connector
 
 1. Go to [Power Automate](https://make.preview.powerautomate.com)
-2. [Create a new flow].
+1. [Create a new flow].
 1. Search for the `SAP ERP` Connector
 1. Add a `Call SAP function (V3)` action to the flow.
 1. Set up a new connection:
@@ -86,14 +83,7 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 1. For the `SAP System`, enter your configuration values as JSON data (replace with your own values). For more parameter options please see the [documentation](/connectors/saperp/#call-sap-function-(v3)-(preview)).
 
    for example
-   ```json
-   {
-     "AppServerHost": "sap.example.com",
-     "Client": "100",
-     "SystemNumber": "00",
-     "LogonType": "ApplicationServer"
-   }
-   ```
+   ``` json {"AppServerHost": "sap.example.com","Client": "100" "SystemNumber": "00", "LogonType": "ApplicationServer"} ```
 
 1. For `RFC Name`, enter `STFC_CONNECTION`.
 1. Wait for the input parameters to load.
@@ -114,4 +104,4 @@ Once you test and verify the SAP action, you're ready to learn [best practices f
 Now that you've set up the SAP ERP connector for Power Platform, you can:
 
 - Try out more complex SAP functions in your flows
-- [Set up Secure Network Communication (SNC)](set-up-secure-network-communications.md)
+- [Set up Secure Network Communication (SNC)](/connect/secure-network-communications.md)

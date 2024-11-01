@@ -1,21 +1,15 @@
 ---
 title: Set up Microsoft Entra ID with Kerberos for SSO
-description: This guide walks you through setting up the SAP ERP connector so users can access SAP and run RFCs in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
+description: This guide walks you through setting up the SAP ERP connector so users can access SAP and run RFCs in Microsoft Power Platform using their Microsoft Entra ID for authentication.
 author: scottwoodallmsft
 ms.author: scottwoodall
-contributors:
-  - robinsonshields
-  - microsoft-george
-  - galitskyd
-  - microsoft-dustin
-  - ryanb58
-  - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
 ms.topic: how-to
 ms.date: 11/01/2024
+---
 
 # Microsoft Entra ID with Kerberos for SSO
 
@@ -31,9 +25,9 @@ You'll need assistance from the following roles:
 
 ## Prerequisites
 
-1. [A Windows server that has Active Directory Domain Services (AD DS role)](/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-). Note, the domain name used in this guide is corp.bestrun.com (NetBIOS: CORP), but you can can choose any other name.
+- [A Windows server that has Active Directory Domain Services (AD DS role)](/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-). Note, the domain name used in this guide is corp.bestrun.com (NetBIOS: CORP), but you can can choose any other name.
 
-1. [On-premises Data Gateway (OPDG) server](https://www.microsoft.com/download/details.aspx?id=53127), minimum version October 2024 or newer. Installation instructions and how to register the OPDG in your Power Platform environment can be found [here](/data-integration/gateway/service-gateway-install) joined to the Active Directory domain.
+- [On-premises Data Gateway (OPDG) server](https://www.microsoft.com/download/details.aspx?id=53127), minimum version October 2024 or newer. Installation instructions and how to register the OPDG in your Power Platform environment can be found [here](/data-integration/gateway/service-gateway-install) joined to the Active Directory domain.
 
 ## Configure SAP for Kerberos-based SSO with Active Directory
 
@@ -55,8 +49,10 @@ You can skip this section if your SAP system is already configured for Kerberos-
     - Select `OK`.
 1. Go back to the `Active Directory Users and Computers MMC` snap-in, and select the new SAP service account `Kerberos<SID>` from the Users list. Right-click on it and select `Properties` from the context menu.
 1. Switch to the `Account` tab. Under `Account options`, activate the checkbox for `This account supports Kerberos AES 256 bit encryption`. Select `OK`.
+
    > [!IMPORTANT]
-   > By enabling `Kererbos AES 256 bit encryption`, this is potentially a breaking change for other clients (SAP GUI for example) requesting Kerberos tickets from this Active Directory service principal as it changes the list of encryption ciphers on this Active Directory account to a list where other clients now no longer have a common encryption cipher. Active Directory teams need to determine what encryption ciphers (though Active Directory logging) are being used with all clients and manually edit the msDS-SupportedEncryptionTypes property with the correct value. Once the msDS-SupportedEncryptionTypes is edited manually, the AES 256 encryption box should appear without having to manually check it. This [blog post](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797) can help navigate the different encryption ciphers and what decimal/hex value needs to be set on the Active Directory service principal to make all clients happy.
+   > By enabling `Kererbos AES 256 bit encryption`, this is potentially a breaking change for other clients (SAP GUI, for example) requesting Kerberos tickets from this Active Directory service principal as it changes the list of encryption ciphers on this Active Directory account to a list where other clients now no longer have a common encryption cipher. Active Directory teams need to determine what encryption ciphers (though Active Directory logging) are being used with all clients and manually edit the msDS-SupportedEncryptionTypes property with the correct value. Once the msDS-SupportedEncryptionTypes is edited manually, the AES 256 encryption box should appear without having to manually check it. This [blog post](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797) can help navigate the different encryption ciphers and what decimal/hex value needs to be set on the Active Directory service principal to make all clients happy.
+
 1. Start SAP GUI and sign-in as the SAP administrator. Run transaction `SNCWIZARD` to start the SNC (Secure Network Communication) Configuration wizard.
 1. On the `Start` page of the SNC Configuration wizard, select `Continue`.
 1. Accept the default value for system's SNC Identity and select `Continue`.

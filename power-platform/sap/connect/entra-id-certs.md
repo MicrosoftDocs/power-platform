@@ -59,8 +59,7 @@ Create extension files to ensure our certificates are created with the correct m
 
 `signingUsersCert/extensions.cnf`
 
-```
-[ v3_ca ]
+``` [ v3_ca ]
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid:always,issuer
 basicConstraints = critical,CA:true,pathlen:0
@@ -69,8 +68,7 @@ keyUsage = cRLSign, keyCertSign
 
 `userCerts/extensions.cnf`
 
-```
-basicConstraints=CA:FALSE
+``` basicConstraints=CA:FALSE
 subjectKeyIdentifier=hash
 authorityKeyIdentifier=keyid,issuer
 keyUsage = digitalSignature, keyEncipherment
@@ -211,15 +209,11 @@ on `STRUST` to add the public certificate users.cert.pem file to the box.
 
 Add the `SsoCertificateSubject` to your SAP System parameters.
 
-```
-"SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso",
-```
+``` "SsoCertificateSubject": "CN=Users Intermediate Cert, O=Contoso", ```
 
 Also enable
 
-```
-"SncSso": "On"
-```
+``` "SncSso": "On" ```
 
 Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Microsoft Entra ID account.
 

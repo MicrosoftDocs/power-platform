@@ -25,7 +25,6 @@ ms.date: 11/01/2024
 
 This guide walks you through setting up Microsoft Entra ID, Azure API Management, and SAP so the Power Platform SAP OData connector can single sign-on into SAP. This process involves setting up a trust between SAP and Microsoft Entra ID. Once trust is set up, Azure API Management is configured to convert the Microsoft Entra ID OAuth token to a SAML token that is used to make OData calls to SAP.
 
-
 ![Flow Chart of HTTP traffic](./media/setup-microsoft-entra-id-with-apim-and-oauth/traffic_flow.jpg)
 
 ## Prerequisites

@@ -9,7 +9,6 @@ contributors:
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 11/01/2024
-ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -27,11 +26,12 @@ OData stands for Open Data Protocol. It's a standard way to create and use data 
 
 The SAP OData connector offers different ways to access your SAP systems, so you can choose what works best for your needs. Here are the options:
 
-    - **Basic Authentication:** Just use your username and password to connect.
-    - **Anonymous Token:** No authentication needed, great for public data.
-    - **SSO through Azure API Management (APIM):** Use Azure APIM for secure and easy logins.
+- **Basic Authentication:** Just use your username and password to connect.
+- **Anonymous Token:** No authentication needed, great for public data.
+- **SSO through Azure API Management (APIM):** Use Azure APIM for secure and easy logins.
 
-> **Note:** If the system you are integrating with is behind a company fire wall the On-premises Data Gateway is required as it serves as a secure way to access secured systems.
+> [!NOTE]
+> If the system you are integrating with is behind a company fire wall the On-premises Data Gateway is required as it serves as a secure way to access secured systems.
 
 ## Integration with Power Platform
 
