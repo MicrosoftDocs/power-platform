@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for production environments of Dynamics 365 SaaS applications if there's an Azure region-wide outage. 
 author: sericks007
-ms.date: 12/18/2023
+ms.date: 11/01/2024
 ms.reviewer: sericks
 contributors: 
  - sericks 
@@ -11,6 +11,8 @@ ms.subservice: admin
 ms.author: jasunil
 search.audienceType: 
  - admin
+contributors:
+- ImadYanni
 ---
 
 # Business continuity and disaster recovery
