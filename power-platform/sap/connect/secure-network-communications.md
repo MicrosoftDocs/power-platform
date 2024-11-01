@@ -18,7 +18,8 @@ ms.topic: how-to
 ms.date: 08/15/2024
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
+ms.custom: ignite-2024
 ---
 
 # Set up Secure Network Communications (SNC) for SAP and Microsoft Power Platform

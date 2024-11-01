@@ -3,10 +3,22 @@ title: Set up Azure API Management & SAP for single sign-on from SAP OData conne
 description:  This guide walks you through setting up SAP and Azure API management so users can access SAP and make OData calls in Microsoft Power Platform using their Microsoft Entra ID.
 author: scottwoodallmsft
 ms.author: scottwoodall
+contributors:
+  - robinsonshields
+  - microsoft-george
+  - tverhasselt
+  - galitskyd
+  - microsoft-dustin
+  - ryanb58
+  - scottwoodallmsft
+  - Wrighttyler
+  - EllenWehrle
+ms.reviewer: ellenwehrle
 ms.service: power-platform
-ms.subservice: connectors
+ms.subservice: sap
+ms.custom: ignite-2024
 ms.topic: how-to
-ms.date: 08/23/2024
+ms.date: 11/01/2024
 ---
 
 # Set up Microsoft Entra ID, Azure API Management, and SAP for single sign-on from the Microsoft Power Platform SAP OData connector

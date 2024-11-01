@@ -11,7 +11,8 @@ ms.topic: how-to
 ms.date: 11/01/2024
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
+ms.custom: ignite-2024
 ---
 
 # Get Started with the SAP OData Connector

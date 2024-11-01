@@ -14,7 +14,8 @@ ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 10/30/2024
 ms.service: power-platform
-ms.subservice: connectors
+ms.subservice: sap
+ms.custom: ignite-2024
 ---
 
 # Connect Power Platform and SAP

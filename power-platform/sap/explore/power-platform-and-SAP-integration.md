@@ -14,7 +14,8 @@ ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 10/10/2024
 ms.service: power-platform
-ms.subservice: connectors
+ms.subservice: sap
+ms.custom: ignite-2024
 ---
 
 # SAP and Power Platform integration

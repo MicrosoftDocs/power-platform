@@ -15,10 +15,11 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 08/15/2024
-ms.custom: bap-template
+ms.date: 11/01/2024
+ms.custom: ignite-2024
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
+
 ---
 
 # Microsoft Entra ID (with certificates) - single sign-on
@@ -30,10 +31,9 @@ This guide walks you through setting up the connector so your users can access S
 
 ## Prerequisites
 
- 1. [Set up SAP Connection](getting-started-with-the-sap-erp-connector.md). 
-	- Be sure to use version July 2024 - 3000.230 or higher of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
- 1. [Set up Secure Network Communications](set-up-secure-network-communications.md).
- 1. Be familiar with public and private key technologies.
+- [Set up SAP Connection](sap-erp-connector.md). Be sure to use version July 2024 - 3000.230 or higher of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
+- [Set up Secure Network Communications](secure-network-communications.md).
+- Be familiar with public and private key technologies.
 
 ## Certificate
 
@@ -41,7 +41,7 @@ We generate an example self-signed root certificate similar to those certificate
 
 ### Create a demo public key infrastructure
 
-Extend the [Set up Secure Network Communication](set-up-secure-network-communications.md) documentation by implementing the other half of our demo PKI (Public Key Infrastructure).
+Extend the [Set up Secure Network Communication](secure-network-communications.md) documentation by implementing the other half of our demo PKI (Public Key Infrastructure).
 
 ![Flow Chart of demo PKI](./media/setup-microsoft-entra-id-with-certificates/fc-pki-demo.svg)
 
@@ -58,6 +58,7 @@ mkdir userCerts
 Create extension files to ensure our certificates are created with the correct metadata and restrictions.
 
 `signingUsersCert/extensions.cnf`
+
 ```
 [ v3_ca ]
 subjectKeyIdentifier=hash
@@ -67,6 +68,7 @@ keyUsage = cRLSign, keyCertSign
 ```
 
 `userCerts/extensions.cnf`
+
 ```
 basicConstraints=CA:FALSE
 subjectKeyIdentifier=hash
@@ -141,17 +143,18 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
 ```
 
 1. Open the Windows Certificate Manager:
-	1. Press `Win + R`, type `certlm.msc`, and press Enter.
-1.  Import the public Root CA certificate.
-	1. Import into `Trusted Root Certification Authorities`.
+    1. Press `Win + R`, type `certlm.msc`, and press Enter.
+1. Import the public Root CA certificate.
+    1. Import into `Trusted Root Certification Authorities`.
 1. Import the User Certificate + Key:
-	1. In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
-	1. Right-click and select `All Tasks > Import`.
-	1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
-	1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
-  1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
+    1. In the Certificate Manager, navigate to the appropriate certificate store (for example, Personal).
+    1. Right-click and select `All Tasks > Import`.
+    1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
+    1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
+1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
 
 Check subject name of certificate in the Windows Certificate Store
+
 ```powershell
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
 ```
@@ -195,7 +198,7 @@ Then create the following rule in t-code `CERTRULE`
 
 You'll need to add a user intermeditate certificate to SAP.
 
-Open t-code `STRUST` and double-click 
+Open t-code `STRUST` and double-click
 on `STRUST` to add the public certificate users.cert.pem file to the box.
 
 1. In SAP GUI, go to transaction code STRUST.
@@ -213,17 +216,17 @@ Add the `SsoCertificateSubject` to your SAP System parameters.
 ```
 
 Also enable
+
 ```
 "SncSso": "On"
 ```
 
 Replace the connection with a new one that uses `Microsoft Entra ID (using certificates)` to sign in to SAP with your Microsoft Entra ID account.
 
-
 > [!IMPORTANT]
 > Delete the temporary TESTUSER01 public and private keys on completion of this tutorial.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
 Learn more:

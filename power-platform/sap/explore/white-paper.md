@@ -14,5 +14,6 @@ ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 11/01/2024
 ms.service: power-platform
-ms.subservice: connectors
+ms.subservice: sap
+ms.custom: ignite-2024
 ---
