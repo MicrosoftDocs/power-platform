@@ -3,18 +3,18 @@
   items:
     - name: Power Platform and SAP
       items: 
-        - name: Overview
+        - name: Explore
           items:
             - name: Power Platform and SAP
-              href: overview/explore-power-platform-and-SAP-integration.md
+              href: explore/power-platform-and-SAP-integration.md
             - name: Power Platform and SAP patterns
-              href: overview/common-patterns.md
+              href: explore/common-patterns.md
             - name: SAP + Power Platform white paper
-              href: overview/white-paper.md
+              href: explore/white-paper.md
         - name: Get started with Power Platform
           items:
             - name: Power Platform guidance
-              href: power-platform/guidance/index.md
+              href: /power-platform/index.md
         - name: Connect to SAP
           items:
             - name: Power Platform connectivity to SAP
@@ -22,7 +22,7 @@
             - name: SAP ERP connector
               href: connect/sap-erp-connector.md
             - name: SAP OData connector
-              href: connect/getting-started-with-the-SAP-OData-connector.md
+              href: connect/sap-odata-connector.md
             - name: Set up Secure Network Communications
               href: connect/secure-network-communications.md
             - name: Set up Microsoft Entra ID using certificates
@@ -32,27 +32,29 @@
         - name: Use Enterprise templates
           items:
             - name: SAP Procurement
-              href: enterprise-templates/finance/sap-procurement/valid-overview.md
+              href: /enterprise-templates/finance/sap-procurement/valid-overview.md
             - name: SAP Supplier Self Service
-              href: enterprise-templates/finance/sap-supplier-self-service/overview.md
+              href: /enterprise-templates/finance/sap-supplier-self-service/overview.md
         - name: Role-based guidance
           items:
             - name: App maker
-              href: guides/roles-guidance/power-platform-app-maker.md
+              href: roles-guidance/power-platform-app-maker.md
             - name: SAP consultant
-              href: guides/roles-guidance/sap-consultant.md
+              href: roles-guidance/sap-consultant.md
             - name: Compliance and security admin
-              href: guides/roles-guidance/governance-administrator.md
+              href: roles-guidance/governance-administrator.md
             - name: SAP Basis admin
-              href: guides/roles-guidance/sap-basis-administrator.md
+              href: roles-guidance/sap-basis-administrator.md
         - name: Related content
           items:
             - name: Power Platform and SAP Setup Assistant
-              href: enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
+              href: /enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
+            - name: SAP ERP connector
+              href: connect/sap-erp-connector.md
             - name: SAP integration requirements
-              href: enterprise-templates/finance/sap-procurement/administer/requirements.md
+              href: /enterprise-templates/finance/sap-procurement/administer/requirements.md
             - name: Set up environments and data policies
-              href: set-up-environments-data-policies.md
+              href: /set-up-environments-data-policies.md
             - name: Set up on-premises data gateway for SAP
               href: set-up-gateway.md
             - name: Configure authentication for SAP integration

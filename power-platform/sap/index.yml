@@ -22,7 +22,7 @@ sections:
   summary: "Microsoft Power Platform is a suite of AI-enabled, low-code development tools designed to help users build custom business solutions. Organizations using SAP leverage Power Platform as the agility layer to build applications and automate business processes that are deeply connected to their SAP system. Find out how you can make the most of your SAP system and speed up time to value with Power Platform here." 
   background:
     componentType: image # Note difference with the below example
-    src: /power-platform/sap/guides/media/index-page/Hero.png
+    src: /power-platform/sap/media/index-page/Hero.png
   #subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 - componentType: cards
 #   #   backgroundColor: dark
@@ -123,17 +123,17 @@ sections:
   #summary: Explore Power Platform and SAP documentation and resources.
   blocks:
     - componentType: summary-card
-      title: Power Platform and SAP Setup Assistant
-      summary: Configure Power Platform and SAP integration with our Setup Assistant.
+      title: SAP Setup Assistant
+      summary: The Setup Assistant helps you set up the SAP Procurement template.
       url: /power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
     - componentType: summary-card
       title: SAP ERP connector
       summary: Get started with the SAP ERP connector.
-      url: /power-platform/sap/connect/getting-started-with-the-sap-erp-connector
+      url: /power-platform/sap/connect/sap-erp-connector
     - componentType: summary-card
       title: SAP OData connector
       summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
-      url: /connectors/sapodata
+      url: /connectors/sap-odata
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
