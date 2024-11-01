@@ -42,8 +42,6 @@
       items:
         - name: Overview
           href: git-integration/overview.md
-        - name: Common scenarios with Dataverse and Git
-          href: git-integration/common-scenarios.md
         - name: Dataverse Git integration setup
           href: git-integration/connecting-to-git.md
         - name: Source control operations
