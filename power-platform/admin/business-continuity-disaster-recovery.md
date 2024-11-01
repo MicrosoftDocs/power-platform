@@ -33,11 +33,11 @@ To learn more about data protection in nonproduction environments, see [Back up
 
  The primary communications channel is via [Service Health Dashboard](/power-platform/admin/notifications-explained) (SHD) within Microsoft and Power platform admin centers. The Microsoft communications team will initiate the process by posting initial communications to notify you of the outage and post necessary updates to the SHD as needed. For more information on how to view your messages on the admin center, see [Home page dashboard](/power-platform/admin/admin-documentation#home-page-dashboard). To be better prepared, visit the [readiness page](/services-hub/unified/health/ir-m365).    
 
-## Failover and Failback processes and criteria for Business continuity
+## Failover and failback processes and criteria for business continuity
 
 Failover and failback are the two main tasks accomplished during the business continuity and disaster recovery (BCDR) process, the purpose is to minimize the impact of a disaster on the availability and performance of critical business functions and applications.
 
-**Failover** is the process of switching to a designated geo-secondary backup of all the systems and data from your primary production site. At the completion of failover operation your production environment will be accessible from the geo-secondary site.
+**Failover** is the process of switching to a designated geo-secondary backup of all the systems and data from your primary production site. At the completion of the failover operation, your production environment is accessible from the geo-secondary site.
 
 > [!IMPORTANT]
 > While the Finance and Operations apps are operating in the secondary region after a failover maintenance, package deployments, Financial Reporting, and Power BI reporting are unavailable.
