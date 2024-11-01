@@ -62,3 +62,26 @@ When message shown is AADSTS53000, the device is required to be managed by Share
 When the Document Associated grid shows a warning message "Authentication isn't enabled correctly", please contact support to confirm that authentication is enabled for the environment.
 
 ![Document associated grid authentication isn't enabled correctly](./media/troubleshooting-conditional-access-in-authentication/document-associated-grid-authentication-incorrect.png "Document associated grid authentication isn't enabled correctly")  
+
+## Find conditional access setup
+
+### Find SharePoint Online conditional access
+
+1. Open Microsoft Entra as tenant admin: https://entra.microsoft.com
+1. Select **Aplications** > **Enterprise Applications** in the left menu
+1. Clear the filter "Application type == Enterprise Applications"
+   ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-clear-application-type.png "Clear application type filter")  
+1. Search for **Office 365 SharePoint Online** and select the item in the list
+   ![Search for Office 365 SharePoint Online](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-search-sharepoint-online.png "Search for Office 365 SharePoint Online")  
+1. Select **Conditional Access** to show the list of Policy names
+   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")  
+
+### Find Dataverse conditional access
+
+1. Open Microsoft Entra as tenant admin: https://entra.microsoft.com
+1. Select **Aplications** > **Enterprise Applications** in the left menu
+1. Clear the filter "Application type == Enterprise Applications"
+   ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-clear-application-type.png "Clear application type filter")  
+1. Search for **Dataverse** and select in the list
+1. Select **Conditional Access** to show the list of Policy names
+   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")  
