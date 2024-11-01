@@ -38,7 +38,7 @@ Git integration in Dataverse is initiated from Power Platform on the **Solutions
 
 To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to. If you don't have an Azure DevOps project and repository set up, follow these steps to create a new project and repository in Azure DevOps.
 
-1. Sign in to [Azure DevOps](https://dev.azure.com/) and select your organization.
+1. Sign in to [Azure DevOps](https://azure.microsoft.com/products/devops/) and select your organization.
 1. Select **New project**, enter a name and ensure that your version control is set to Git for your project, and select **Create**.
 1. In the new project, select **Repos** and then select **Initialize** at the bottom of the page to initialize the default repository.
 
