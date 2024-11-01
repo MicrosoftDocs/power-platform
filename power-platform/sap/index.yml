@@ -33,7 +33,7 @@ sections:
      - componentType: card
        title: "Step 1. Understand SAP integration"
        summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
-       imageUrl: /power-platform/sap/guides/media/index-page/Understand_integration.png
+       imageUrl: /power-platform/sap/media/index-page/Understand_integration.png
        url: /power-platform/sap/explore-power-platform-and-SAP-integration
       # links: 
       #   - componentType: link
@@ -42,12 +42,12 @@ sections:
      - componentType: card
        title: "Step 2. Get started with Power Platform"
        summary: Discover Power Platform capabilities and learn how to start using it in your environments.
-       imageUrl: /power-platform/sap/guides/media/index-page/Get_started.png
+       imageUrl: /power-platform/sap/media/index-page/Get_started.png
        url: https://learn.microsoft.com/en-us/power-platform/guidance/
      - componentType: card
        title: "Step 3. Connect to SAP"
        summary: "Already have a Power Platform environment? Use SAP connectors to integrate with your SAP environment." 
-       imageUrl: /power-platform/sap/guides/media/index-page/Connect.png
+       imageUrl: /power-platform/sap/media/index-page/Connect.png
       # links: 
       #   - componentType: link
       #     text: Connect Power Platform and SAP
@@ -58,7 +58,7 @@ sections:
      - componentType: card
        title: "Step 4. Leverage templates"
        summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-       imageUrl: /power-platform/sap/guides/media/index-page/Leverage_templates.png
+       imageUrl: /power-platform/sap/media/index-page/Leverage_templates.png
       # links: 
       #   - componentType: link
       #     text: Procurement template for SAP
@@ -70,17 +70,17 @@ sections:
     - componentType: icon-card
       title: Power Platform app maker
       summary: "Work with BAPIs, RFCs, and complex JSON structures."
-      url: /power-platform/sap/guides/roles-guidance/power-platform-app-maker
+      url: /power-platform/sap/roles-guidance/power-platform-app-maker
       icon:
         componentType: image
-        src: /power-platform/sap/guides/media/index-page/power_platform_app_maker.svg
+        src: /power-platform/sap/media/index-page/power_platform_app_maker.svg
     - componentType: icon-card
       title: SAP consultant
       summary: "Build Power Apps integrated with SAP."
-      url: /power-platform/sap/guides/roles-guidance/sap-consultant
+      url: /power-platform/sap/roles-guidance/sap-consultant
       icon:
         componentType: image
-        src: /power-platform/sap/guides/media/index-page/sap_technical_consultant.svg
+        src: /power-platform/sap/media/index-page/sap_technical_consultant.svg
     # - componentType: icon-card
     #   title: Power Platform administrator
     #   summary: "Guidance on SAP access methods and a directory of the most used SAP data. (later)"
@@ -91,10 +91,10 @@ sections:
     - componentType: icon-card
       title: Compliance and security administrator
       summary: "Govern and secure Power Platform and SAP integration."
-      url: /power-platform/sap/guides/roles-guidance/governance-administrator
+      url: /power-platform/sap/roles-guidance/governance-administrator
       icon:
         componentType: image
-        src: /power-platform/sap/guides/media/index-page/governance_administrator.svg
+        src: /power-platform/sap/media/index-page/governance_administrator.svg
     # - componentType: icon-card
     #   title: Technology manager 
     #   summary: "Considerations for implementing Power Platform integration with SAP (later)"
@@ -106,10 +106,10 @@ sections:
     - componentType: icon-card
       title: SAP Basis administrator
       summary: "Learn integration with SAP details and automate administration with Copilots."
-      url: /power-platform/sap/guides/roles-guidance/sap-basis-administrator
+      url: /power-platform/sap/roles-guidance/sap-basis-administrator
       icon:
         componentType: image
-        src: /power-platform/sap/guides/media/index-page/sap_basis_administrator.svg
+        src: /power-platform/sap/media/index-page/sap_basis_administrator.svg
     # - componentType: icon-card
     #   title: Partner
     #   summary: "Resources for Microsoft Partners to integrate customer Power and SAP environments. (later)"
@@ -129,7 +129,7 @@ sections:
     - componentType: summary-card
       title: SAP ERP connector
       summary: Get started with the SAP ERP connector.
-      url: /power-platform/sap/guides/getting-started-with-the-sap-erp-connector
+      url: /power-platform/sap/connect/getting-started-with-the-sap-erp-connector
     - componentType: summary-card
       title: SAP OData connector
       summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
@@ -137,15 +137,15 @@ sections:
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
-      url: /power-platform/sap/guides/set-up-secure-network-communications
+      url: /power-platform/sap/connect/set-up-secure-network-communications
     - componentType: summary-card
       title: Entra ID using Kerberos (SSO)
       summary: Use Kerberos SSO connections from the Power Platform to SAP.
-      url: /power-platform/sap/guides/set-up-microsoft-entra-id-with-kerberos    
+      url: /power-platform/sap/connect/set-up-microsoft-entra-id-with-kerberos    
     - componentType: summary-card
-      title: Entra ID using certficates (SSO)
+      title: Entra ID using certificates (SSO)
       summary: Use certificate-based SSO connections from the Power Platform to SAP.
-      url: /power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates
+      url: /power-platform/sap/connect/set-up-microsoft-entra-id-with-certificates
     - componentType: summary-card
       title: Power Platform security and governance
       summary: Set up and maintain security and governance for Power Platform.
