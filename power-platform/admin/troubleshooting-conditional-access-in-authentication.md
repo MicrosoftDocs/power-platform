@@ -12,38 +12,38 @@ search.audienceType:
 ---
 # Troubleshooting conditional access authentication
 
-With security improvements in SharePoint integration authentication, it is suggested to keep the the SharePoint Online and Dataverse aligned to avoid conditioanl access mismatch. These sections outline how to review and align conditional access
+With security improvements in SharePoint integration authentication, it's suggested to keep the SharePoint Online and Dataverse aligned to avoid conditional access mismatch. These sections outline how to review and align conditional access
 
 ## Conditional access isn't enabled correctly
 
-When the Document Associated grid shows a warning message "Conditional access isn't enabled correctly", the error code at the end of the message will guide addressing the configuration.
+When the Document Associated grid shows a warning message "Conditional access isn't enabled correctly", the error code at the end of the message guides addressing the configuration.
 
 ![Document associated grid cconditional access isn't enabled correctly](./media/troubleshooting-conditional-access-in-authentication/document-associated-grid-conditional-access-incorrect.png "Document associated grid cconditional access isn't enabled correctly")  
 
 ### Document Associated Grid warning AADSTS50076 or AADSTS50079 
 
-In this case an external security challenge is required but not satisfied. A common cause is when Multi-Factor Authentication is enabled for SharePoint but not for Dataverse. Use these steps to ensure both are aligned.
+In this case, an external security challenge is required but not satisfied. A common cause is when Multi-Factor Authentication is enabled for SharePoint but not for Dataverse. Use these steps to ensure both are aligned.
 
 1. Open the Microsoft Entra admin center to **SharePoint Access Policy**
 1. Select **Access controls** > **Grant** to open the Grant dialog
-1. Under **Grant access** check if **Require multifactor authenication** and optionally **Require authentication strength** is checked
-1. If either of above is checked, then enable the related Dataverse conditional access access policy if it is not enabled
+1. Under **Grant access** check if **Require multifactor authentication** and optionally **Require authentication strength** is checked
+1. If either item is checked, then enable the related Dataverse conditional access policy if it's not enabled
 
-There are other situations which might cause this issue, if you checked it is not MFA related, please contact Microsoft support and open a ticket for this. 
+There are other situations which might cause this issue, if you checked it's not MFA related contact Microsoft support and open a ticket requesting support.
 
 ### Document Associated Grid warning AADSTS50158 
 
-When message shown is AADSTS53000, the error can be related to either Multi-Factor Authentication or or conditional access policy. 
+When message shown is AADSTS53000, the error can be related to either Multi-Factor Authentication or conditional access policy. 
 
 ### Document Associated Grid warning AADSTS53003 
 
-When message shown is AADSTS53000, a conditional access has been configured to block issuing a token.
+When message shown is AADSTS53000, a conditional access is configured to block issuing a token.
 
 ### Document Associated Grid warning AADSTS53001
 
-When message shown is AADSTS53000, the device is not in a domain joined status. Use these steps to fix.
+When message shown is AADSTS53000, the device isn't in a domain joined status. Use these steps to fix.
 
-1. Log out or restart your device if you are already logged in 
+1. Log out or restart your device if you're already logged in 
 1. Sign in to your device using your work or school account 
 1. Connect to your organization's network through a virtual private network (VPN) or DirectAccess 
 1. Clear your browser's cache and restart the browser 
@@ -51,7 +51,7 @@ When message shown is AADSTS53000, the device is not in a domain joined status. 
 
 ### Document Associated Grid warning AADSTS53000
 
-When message shown is AADSTS53000, the device is required to be managed by SharePoint conditional access to access the resource. If this is expected, inform the user how to access within the conditional access policy. If this is not expected, review the SharePoint conditional access within Microsoft Entra admin center **SharePoint Access Policy**.
+When message shown is AADSTS53000, the device is managed by a SharePoint conditional access policy to access the resource. If the blocked access is expected, inform the user how to access within the conditional access policy. If blocked access isn't expected, review the SharePoint conditional access within Microsoft Entra admin center **SharePoint Access Policy**.
 
 1. Open the Microsoft Entra admin center to **SharePoint Access Policy**
 1. Select **Access controls** > **Grant** to open the Grant dialog
@@ -59,7 +59,7 @@ When message shown is AADSTS53000, the device is required to be managed by Share
 
 ## Authentication isn't enabled correctly
 
-When the Document Associated grid shows a warning message "Authentication isn't enabled correctly", please contact support to confirm that authentication is enabled for the environment.
+When the Document Associated grid shows a warning message "Authentication isn't enabled correctly", contact support to confirm that authentication is enabled for the environment.
 
 ![Document associated grid authentication isn't enabled correctly](./media/troubleshooting-conditional-access-in-authentication/document-associated-grid-authentication-incorrect.png "Document associated grid authentication isn't enabled correctly")  
 
@@ -68,20 +68,28 @@ When the Document Associated grid shows a warning message "Authentication isn't 
 ### Find SharePoint Online conditional access
 
 1. Open Microsoft Entra as tenant admin: https://entra.microsoft.com
-1. Select **Aplications** > **Enterprise Applications** in the left menu
+1. Select **Applications** > **Enterprise Applications** in the left menu
 1. Clear the filter "Application type == Enterprise Applications"
-   ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-clear-application-type.png "Clear application type filter")  
+
+   ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-clear-application-type.png "Clear application type filter")  
+
 1. Search for **Office 365 SharePoint Online** and select the item in the list
-   ![Search for Office 365 SharePoint Online](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-search-sharepoint-online.png "Search for Office 365 SharePoint Online")  
+
+   ![Search for Office 365 SharePoint Online](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-search-sharepoint-online.png "Search for Office 365 SharePoint Online")  
+
 1. Select **Conditional Access** to show the list of Policy names
-   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")  
+
+   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")  
 
 ### Find Dataverse conditional access
 
 1. Open Microsoft Entra as tenant admin: https://entra.microsoft.com
-1. Select **Aplications** > **Enterprise Applications** in the left menu
+1. Select **Applications** > **Enterprise Applications** in the left menu
 1. Clear the filter "Application type == Enterprise Applications"
-   ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-clear-application-type.png "Clear application type filter")  
+   
+   ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-clear-application-type.png "Clear application type filter")  
+
 1. Search for **Dataverse** and select in the list
 1. Select **Conditional Access** to show the list of Policy names
-   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/sharepoint-online-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")  
+
+   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access" )  
