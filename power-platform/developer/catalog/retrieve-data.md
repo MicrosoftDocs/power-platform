@@ -130,7 +130,7 @@ function GetPowerCatalogInformationExample {
 
    $uri = $baseURI + 'mspcat_GetPowerCatalogInformation'
    if ($permissionsonly) {
-      $uri += '(permissionsonly=true)'
+      $uri += '(?permissionsonly=true)'
    }
    $results = Invoke-RestMethod `
       -Method Get `
@@ -352,7 +352,7 @@ Contoso Themed Components           ContosoPublisher          ContosoThemedCompo
 
 You can also use these parameters to filter returned records:
 
-|parameter|alias|description
+|parameter|alias&nbsp;&nbsp;|description
 |---------|---------|---------|
 |`--catalog-item-id`|`-cid`|Catalog item ID to search for. When catalog item ID is used, any `--catalog-item-name` parameter values is ignored.|
 |`--catalog-item-name`|`-n`|Catalog item name to search for.|

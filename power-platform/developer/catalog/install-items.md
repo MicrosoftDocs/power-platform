@@ -14,13 +14,37 @@ search.audienceType:
 
 Catalog items are stored in the [Catalog Item (mspcat_applications) table](tables/mspcat_applications.md). This table has a [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) that stores a unique string value you can use to refer to a catalog item.
 
+## Install a specific version
+
+When using PAC CLI [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command or the `mspcat_InstallCatalogItemByCID` message, you will pass a string catalog item id (`cid` or `CID`) parameter.
+
+When you want to install a specific version of a catalog item, you can append the version number to the end of the string value passed to the catalog item id parameter. The version value comes from the related [Package (mspcat_packages) record Version (mspcat_version) value](tables/mspcat_packages.md#BKMK_mspcat_Version).
+
+For example, let's say that the following table represents the available versions of the `MyCatalogItem` catalog item:
+
+
+|Version|Description|
+|---------|---------|
+|3.0.0.0|Published|
+|2.0.0.0|Active but not published|
+|1.0.0.0|inactive|
+
+The following catalog item id parameter values will have different behaviors:
+
+|Example  |Result|
+|---------|---------|
+|`MyCatalogItem`|Installs version 3.0.0.0 (Published version)|
+|`MyCatalogItem@3.0.0.0`|Installs version 3.0.0.0 (Published version)|
+|`MyCatalogItem@2.0.0.0`|Installs version 2.0.0.0|
+|`MyCatalogItem@1.0.0.0`|Fails with an error indicating that the version is not available.|
+
 ### [PAC CLI](#tab/cli)
 
 Use the [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
 
-In this example, you are connected to the `EnvironmentWithCatalog`.
+In this example, you are [connected](../cli/reference/auth.md#connect-to-your-tenant) to the `EnvironmentWithCatalog`.
 
-Use the `-cid` parameter to specify the catalog item ID and `-te` to specify the environment to install the catalog item in.
+Use the `-cid` parameter to specify the catalog item ID and `-te` to specify the environment to install the catalog item in. [You can also specify a specific version](#install-a-specific-version).
 
 ```powershell
 pac catalog install  `
@@ -30,25 +54,6 @@ Connected as user@domain
 Connected to... EnvironmentWithCatalog
 Tracking ID for this installation is 9cc47262-2f33-ef11-8409-6045bdd3aec3
 ```
-
-When you want to install a specific version of a catalog item, you can append the version number to the end of the string value passed to the `-cid` parameter. For example, let's say that the following table represents the available versions of the `MyCatalogItem` catalog item:
-
-
-|Version|Description|
-|---------|---------|
-|3.0.0.0|Published|
-|2.0.0.0|Active but not published|
-|1.0.0.0|inactive|
-
-The following `-cid` parameter values will have different behaviors:
-
-|Example  |Result|
-|---------|---------|
-|`-cid MyCatalogItem`|Installs version 3.0.0.0 (Published version)|
-|`-cid MyCatalogItem@3.0.0.0`|Installs version 3.0.0.0 (Published version)|
-|`-cid MyCatalogItem@2.0.0.0`|Installs version 2.0.0.0|
-|`-cid MyCatalogItem@1.0.0.0`|Fails with an error indicating that the version is not available.|
-
 
 The Tracking ID returned is the primary key of the [Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md) record which you can review to see whether the installation succeeds.
 
@@ -60,7 +65,7 @@ There are two messages you can use to install catalog items: `mspcat_InstallCata
 
 ### mspcat_InstallCatalogItemByCIDRequest
 
-Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. This is the message that is invoked by the PAC CLI and the application.
+Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. [You can specify a specific version](#install-a-specific-version). This is the message that is invoked by the PAC CLI and the application. 
 
 The following static `InstallCatalogItemByCIDExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
@@ -187,7 +192,9 @@ There are two operations you can use to install catalog items: `mspcat_InstallCa
 
 ### mspcat_InstallCatalogItemByCID action
 
-The following `Install-CatalogItemByCID` PowerShell function describes how to use the `mspcat_InstallCatalogItemByCID` action.  This function depends on the `$baseURI` and `$baseHeaders` global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
+The following `Install-CatalogItemByCID` PowerShell function describes how to use the `mspcat_InstallCatalogItemByCID` action. With this action, [you can specify a specific version](#install-a-specific-version) to install.
+
+This function depends on the `$baseURI` and `$baseHeaders` global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
 
 ```powershell
 <#
@@ -351,7 +358,7 @@ function Install-CatalogItem {
 
 ## Check status of catalog installation
 
-The [statuscode Choices/Options](tables/mspcat_installhistory.md#statuscode-choicesoptions) options of the [Install History (mspcat_InstallHistory) table](tables/mspcat_installhistory.md). **Completed** (526430003) represents a successful submission.
+The following table shows the [statuscode Choices/Options](tables/mspcat_installhistory.md#statuscode-choicesoptions) options of the [Install History (mspcat_InstallHistory) table](tables/mspcat_installhistory.md). **Completed** (526430003) represents a successful submission, **Failed** (526430003) represents a unsuccessful submission.  [Custom state model transitions](/power-apps/developer/data-platform/define-custom-state-model-transitions) ensure that the status value will move through the active status reasons until the installation becomes inactive.
 
 |State|Value|Label|Allowed Transition to|
 |---|---|---|
@@ -421,7 +428,7 @@ static bool GetInstallSuccess(IOrganizationService service, Guid id, int interva
 
 ### [Web API](#tab/webapi)
 
-The following `Get-InstallSuccess` function checks the status of the [Install History (mspcat_InstallHistory) record](tables/mspcat_installhistory.md) to determine whether the installation succeeded. This function depends on the `Get-Record` function described in [Create table operations functions](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-table-operations-functions)
+The following `Get-InstallSuccess` function checks the status of the [Install History (mspcat_InstallHistory) record](tables/mspcat_installhistory.md) to determine whether the installation succeeded. This function depends on the `Get-Record` function described in [Create table operations functions](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-table-operations-functions).
 
 ```powershell
 <#
@@ -429,17 +436,20 @@ The following `Get-InstallSuccess` function checks the status of the [Install Hi
 Polls the install success of a catalog item.
 
 .DESCRIPTION
-The `Get-InstallSuccess` function polls the install success of a catalog item by retrieving its state and status codes. 
-It continues polling at specified intervals until the installation is either completed or failed, or until the maximum number of attempts is reached.
+The `Get-InstallSuccess` function polls the install success of a catalog item by retrieving its state 
+and status codes. It continues polling at specified intervals until the installation is either 
+completed or failed, or until the maximum number of attempts is reached.
 
 .PARAMETER id
 The ID of the catalog item to be checked. This parameter is mandatory.
 
 .PARAMETER intervalInSeconds
-The interval in seconds between each polling attempt. This parameter is optional and defaults to 60 seconds.
+The interval in seconds between each polling attempt. This parameter is optional and defaults to 
+60 seconds.
 
 .RETURNVALUE
-[bool] Returns `$true` if the installation is completed successfully, `$false` if the installation is inactive or failed.
+[bool] Returns `$true` if the installation is completed successfully, `$false` if the installation 
+is inactive or failed.
 
 .EXAMPLE
 $id = "b54f3dff-b297-ef11-8a69-7c1e520056af"

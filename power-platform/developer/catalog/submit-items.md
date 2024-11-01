@@ -7,9 +7,10 @@ ms.subservice: developer
 ms.date: 11/01/2024
 ms.reviewer: jdaly
 ms.topic: article
-search.audienceType: 
+search.audienceType:
   - developer
 ---
+
 # Submit and approve catalog items
 
 People must submit their catalog items for approval and an administrator must approve them before others can use them.
@@ -69,7 +70,6 @@ You need to edit this file to submit an item. Here's an example:
 
 Items submitted to the catalog need to be included within a package deployer package. A package deployer package contains a solution zip file and some optional instructions to apply when deploying the package. If you don't have a package deployer package, you can create one for the solution that contains your items.
 
-
 ### [PAC CLI](#tab/cli)
 
 After your submission metadata JSON document is ready, use the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command to submit it.
@@ -101,7 +101,6 @@ This example method returns an instance of the `mspcat_SubmitCatalogApprovalRequ
 
 The `mspcat_SubmitCatalogApprovalRequest` message requires that the submission JSON file [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property is set to a specify a URL to download a package deployer package file.
 
-
 ```csharp
 /// <summary>
 /// Submits a Catalog item for approval
@@ -128,8 +127,8 @@ static mspcat_SubmitCatalogApprovalRequestResponse SubmitCatalogApprovalRequest(
 }
 ```
 
-
-[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
+[Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)  
+[Generate early-bound classes for the SDK for .NET](/power-apps/developer/data-platform/org-service/generate-early-bound-classes)
 
 ### [Web API](#tab/webapi)
 
@@ -138,7 +137,7 @@ The results returned are an instance of the `mspcat_SubmitCatalogApprovalRequest
 
 The `mspcat_SubmitCatalogApprovalRequest` message requires that the submission JSON file [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property is set to a specify a URL to download a package deployer package file.
 
-This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
+This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
 
 ```powershell
 function SubmitCatalogApprovalRequest {
@@ -173,14 +172,14 @@ function SubmitCatalogApprovalRequest {
 }
 ```
 
-
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)  
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
 ## Create package deployer package from an unmanaged solution
 
-When you use the `mspcat_SubmitCatalogApprovalRequest` message with the SDK for .NET or Web API as described in [Submit items to the catalog](#submit-items-to-the-catalog), the submission JSON file must include a [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property is set to a specify a URL in the `filesaslink` to download a package deployer package file. This is not needed by the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command because it takes care of this for you in a manager similar to what is described here.
+When you use the `mspcat_SubmitCatalogApprovalRequest` message with the SDK for .NET or Web API as described in [Submit items to the catalog](#submit-items-to-the-catalog), the submission JSON file must include a [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property set to a specify a URL in the `filesaslink` to download a package deployer package file. This is not needed by the [pac catalog submit](../cli/reference/catalog.md#pac-catalog-submit) command because it takes care of this for you in a manner similar to what is described here.
 
 This URL can represent anywhere that Dataverse can download a file without any credentials, but we don't recommend you place the files on public download location. Instead, you can use the [Package Submission Store (mspcat_PackageStore) table](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) to generate a package deployer package using an unmanaged solution from any environment in your tenant. This process will generate a record in this table that contains a package in the [PackageFile (mspcat_PackageFile) file column](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore#BKMK_mspcat_PackageFile). You can then use the `GetFileSasUrl` message to get a shared access signature (SAS) URL to enable anonymous downloading of the file within 1 hour. Because the URL is only valid within an hour, this process should be automated so that access to download the file doesn't expire.
 
@@ -190,14 +189,14 @@ This URL can represent anywhere that Dataverse can download a file without any c
 ### Process
 
 1. Create a [Package Submission Store (mspcat_PackageStore) ](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore) record with these values
-   
-   |Column|Value|
-   |---------|---------|
-   |`mspcat_name`|The name of the unmanaged solution|
-   |`mspcat_solutionuniquename`|The unique name of the unmanaged solution|
-   |`mspcat_intendeddeploymenttype`|`526430000` for **Standard** deployment|
-   |`mspcat_operation`|`958090001` for **Create Package**|
-   
+
+   | Column                          | Value                                     |
+   | ------------------------------- | ----------------------------------------- |
+   | `mspcat_name`                   | The name of the unmanaged solution        |
+   | `mspcat_solutionuniquename`     | The unique name of the unmanaged solution |
+   | `mspcat_intendeddeploymenttype` | `526430000` for **Standard** deployment   |
+   | `mspcat_operation`              | `958090001` for **Create Package**        |
+
 1. Update the `statuscode` value from `958090003` for **Draft** to `958090004` for **Submitted**.
 
    This starts the process.
@@ -206,14 +205,13 @@ This URL can represent anywhere that Dataverse can download a file without any c
 1. Use `GetFileSasUrl` to get a URL for the [mspcat_PackageStore.mspcat_packagefile column](/power-apps/developer/data-platform/reference/entities/mspcat_packagestore#BKMK_mspcat_PackageFile). This returns a [GetFileSasUrlResponse](/power-apps/developer/data-platform/getfilesasurl#response) object.
 1. Create a [CatalogFileAsset](submission-reference.md#catalogfileasset) JSON object setting these properties:
 
-   |Property|Value|
-   |---------|---------|
-   |`name`|GetFileSasUrlResponse.FileName|
-   |`filesaslink`|GetFileSasUrlResponse.SasUrl|
+   | Property      | Value                          |
+   | ------------- | ------------------------------ |
+   | `name`        | GetFileSasUrlResponse.FileName |
+   | `filesaslink` | GetFileSasUrlResponse.SasUrl   |
 
 1. Set this to the [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property of the JSON submission file.
 1. Use the `mspcat_SubmitCatalogApprovalRequest` to send the submission as described in [Submit items to the catalog](#submit-items-to-the-catalog)
-
 
 ### [PAC CLI](#tab/cli)
 
@@ -427,35 +425,34 @@ Approved the certification request
 Returning Catalog Item ID: <solutionUniqueName>
 ```
 
-
 ### [Web API](#tab/webapi)
 
 > TODO: A PowerShell function that accepts these parameters:
->  - The name of an unmanaged solution
->  - The Unique Name of an unmanaged solution
-> The return value is a completed catalog item ready to install
+>
+> - The name of an unmanaged solution
+> - The Unique Name of an unmanaged solution
+>   The return value is a completed catalog item ready to install
 
 ---
 
 ## Check status of catalog submissions
 
-The [statuscode Choices/Options](tables/mspcat_certificationrequest.md#statuscode-choicesoptions) options of the [Approval Request (mspcat_certificationrequest) table](tables/mspcat_certificationrequest.md). Completed (2) represents a successful submission.
+The [statuscode Choices/Options](tables/mspcat_certificationrequest.md#statuscode-choicesoptions) options of the [Approval Request (mspcat_certificationrequest) table](tables/mspcat_certificationrequest.md). Completed (`2`) represents a successful submission.
 
-|Value|Label|
-|---|---|
-|1|Submitted|
-|526430001|InProgress|
-|526430002|Waiting On Submitter|
-|526430003|Pending Deployment|
-|526430008|Draft|
-|526430009|Processing|
-|2|Completed|
-|526430000|Abandoned|
-|526430004|Rejected|
-|526430005|Marketing Content|
-|526430006|Duplicate Request|
-|526430010|Failed Prevalidation|
-
+| Value     | Label                |
+| --------- | -------------------- |
+| 1         | Submitted            |
+| 526430001 | InProgress           |
+| 526430002 | Waiting On Submitter |
+| 526430003 | Pending Deployment   |
+| 526430008 | Draft                |
+| 526430009 | Processing           |
+| 2         | Completed            |
+| 526430000 | Abandoned            |
+| 526430004 | Rejected             |
+| 526430005 | Marketing Content    |
+| 526430006 | Duplicate Request    |
+| 526430010 | Failed Prevalidation |
 
 ### [PAC CLI](#tab/cli)
 
@@ -472,22 +469,100 @@ Status of the Submit request: Submitted
 
 ### [SDK for .NET](#tab/sdk)
 
-> TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
+The following static `GetApprovalRequest` method retrieves selected columns from the [Approval Request (mspcat_certificationrequest) table](tables/mspcat_certificationrequest.md) for the item where the `trackingId` parameter matches the primary key of the record.
+
+```csharp
+/// <summary>
+/// Retrieves an Approval Request with selected columns
+/// </summary>
+/// <param name="service">The authenticated IOrganizationService instance.</param>
+/// <param name="trackingId">The ID of the approval request</param>
+/// <returns>The approval request record</returns>
+static Entity GetApprovalRequest(IOrganizationService service, Guid trackingId)
+{
+    ColumnSet columns = new("createdby",
+        "createdon",
+        "modifiedby",
+        "modifiedon",
+        "mspcat_autoapproved",
+        "mspcat_certstartdate",
+        "mspcat_codereview",
+        "mspcat_dropcontainsmultiplepackages",
+        "mspcat_functionalvalidation",
+        "mspcat_internalreview",
+        "mspcat_isvduration",
+        "mspcat_marketingonlychange",
+        "mspcat_packagedeployment",
+        "mspcat_publisher",
+        "mspcat_requestname",
+        "mspcat_requestsource",
+        "mspcat_requestsaccesstotspevents",
+        "mspcat_requestssecurestoreaccess",
+        "mspcat_stagename",
+        "mspcat_totalduration",
+        "ownerid",
+        "statecode",
+        "statuscode");
+
+    return service.Retrieve("mspcat_certificationrequest", trackingId, columns);
+}
+```
 
 [Use the Dataverse SDK for .NET](/power-apps/developer/data-platform/org-service/overview)
 
 ### [Web API](#tab/webapi)
 
-> TODO: Show how to poll the [Approval Request (mspcat_certificationrequest) record to check the status](tables/mspcat_certificationrequest.md)
+The following `Get-ApprovalRequest` Powershell function retrieves selected columns from the [Approval Request (mspcat_certificationrequest) table](tables/mspcat_certificationrequest.md) for the item where the `$trackingId` parameter matches the primary key of the record.
 
-// Poll for status of certification request
-GET /mspcat_certificationrequests(id)?$select=statuscode
+This function depends on the `Get-Record` function as described in [Create table operations functions](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-table-operations-functions).
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
+```powershell
+function Get-ApprovalRequest{
+   param(
+      [Parameter(Mandatory)]
+      [guid]
+      $trackingId
+   )
+
+   $columns = @(
+         '_createdby_value',
+         '_modifiedby_value',
+         '_mspcat_publisher_value',
+         '_ownerid_value',
+         'createdon',
+         'modifiedon',
+         'mspcat_autoapproved',
+         'mspcat_certstartdate',
+         'mspcat_codereview',
+         'mspcat_dropcontainsmultiplepackages',
+         'mspcat_functionalvalidation',
+         'mspcat_internalreview ',
+         'mspcat_isvduration',
+         'mspcat_marketingonlychange',
+         'mspcat_packagedeployment',
+         'mspcat_requestname',
+         'mspcat_requestsource',
+         'mspcat_requestsaccesstotspevents',
+         'mspcat_requestssecurestoreaccess',
+         'mspcat_stagename',
+         'mspcat_totalduration',
+         'statecode',
+         'statuscode'
+      )
+
+      $selectcolumns = '?$select=' + ($columns -join ',')
+
+      return Get-Record `
+         -setName 'mspcat_certificationrequests' `
+         -id $trackingId `
+         -query $selectcolumns
+}
+```
+
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)  
+[Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
-
-
 
 ## Approve catalog submissions
 
@@ -508,11 +583,11 @@ This static `ResolveApproval` method demonstrates how to resolve a request for a
 /// <param name="service">The authenticated IOrganizationService instance.</param>
 /// <param name="certificationRequestId">The ID of the certification request.</param>
 /// <param name="requestsuccess">The decision to approve or reject the request.</param>
-/// <param name="message"></param>
+/// <param name="message">Information for the submitter about the resolution</param>
 static void ResolveApproval(
    IOrganizationService service,
    Guid certificationRequestId,
-   bool requestsuccess, 
+   bool requestsuccess,
    string message)
 {
 
@@ -528,14 +603,11 @@ static void ResolveApproval(
 }
 ```
 
-
 ### [Web API](#tab/webapi)
-
 
 This `ResolveApproval` Powershell function demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` message.
 
 This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
-
 
 ```powershell
 <#
@@ -552,7 +624,7 @@ This function depends on the `$baseURI` and `$baseHeaders` values set using the 
    This is a mandatory Boolean parameter that indicates the decision to approve or reject the request..
 
 .PARAMETER message
-   This is a mandatory string parameter that contains a message about the request.
+   This is a mandatory string parameter that contains information for the submitter about the resolution.
 
 .EXAMPLE
    ResolveApproval `
@@ -561,7 +633,7 @@ This function depends on the `$baseURI` and `$baseHeaders` values set using the 
       -message "Request processed successfully."
 
 .NOTES
-   The function does not return any value. 
+   The function does not return any value.
    Any output from the Invoke-RestMethod cmdlet is sent to Out-Null.
 #>
 function ResolveApproval {
@@ -597,16 +669,13 @@ function ResolveApproval {
 
 ```
 
-[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)   
+[Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)  
 [Use PowerShell and Visual Studio Code with the Dataverse Web API](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api)
 
 ---
 
-
 ## Next steps
 
-> [!div class="nextstepaction"]
-> [Review the catalog item submission document reference](submission-reference.md)
+> [!div class="nextstepaction"] > [Review the catalog item submission document reference](submission-reference.md)
 
-> [!div class="nextstepaction"]
-> [Compose submission document](submission-reference.md)
+> [!div class="nextstepaction"] > [Compose submission document](submission-reference.md)
