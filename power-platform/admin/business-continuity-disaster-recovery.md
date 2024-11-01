@@ -19,11 +19,9 @@ contributors:
 
 Microsoft's Business Application Platform (BAP) provides Business Continuity and Disaster Recovery (BCDR) capabilities to all [production type](/power-platform/admin/environments-overview) environments in Dynamics 365 and Power Platform SAAS applications. This article describes details and practices Microsoft takes to ensure your production data is resilient during regional outage.
 
-## Backup of Production Environments
+## Backup of production environments
 
-Microsoft is dedicated to ensuring the highest [service availability](https://servicetrust.microsoft.com/) levels for your critical applications and data. Microsoft ensures that the baseline infrastructure and platform services are available through its business continuity and [disaster recovery](/azure/reliability/disaster-recovery-overview) architecture by enabling geo redundancy, where in, all data from production environments (excluding Default environments) is backed up to the paired/secondary region. These backups are referred to as geo-secondary backup that are set up during the time the primary environment is deployed.
-
-
+Microsoft is dedicated to ensuring the highest [service availability](https://servicetrust.microsoft.com/) levels for your critical applications and data. Microsoft ensures that the baseline infrastructure and platform services are available through its business continuity and [disaster recovery](/azure/reliability/disaster-recovery-overview) architecture by allowing geo redundancy, where all data from production environments&mdash;excluding Default environments&mdash;is backed up to the paired, secondary region. These backups are referred to as _geo-secondary backups_ that are set up during the time that the primary environment is deployed.
 
 :::image type="content" source="media/bcdr.png" alt-text="Diagram illustrating a geo-secondary replica of data storage and compute infrastructure.":::
 
