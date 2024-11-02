@@ -24,10 +24,10 @@ When the Document Associated grid shows a warning message "Conditional access is
 
 In this case, an external security challenge is required but not satisfied. A common cause is when multifactor authentication is enabled for SharePoint but not for Dataverse. Use these steps to ensure both are aligned.
 
-1. Open the Microsoft Entra admin center to **SharePoint Access Policy**
+1. Open the Microsoft Entra admin center to **SharePoint Access Policy** using [Find SharePoint Online conditional access](#Find-SharePoint-Online-conditional-access)
 1. Select **Access controls** > **Grant** to open the Grant dialog
 1. Under **Grant access** check if **Require multifactor authentication** and optionally **Require authentication strength** is checked
-1. If either item is checked, then enable the related Dataverse conditional access policy if not enabled already
+1. If either item is checked, then enable the related Dataverse conditional access policy if not enabled already using [Find Dataverse conditional access](#Find-Dataverse-conditional-access)
 
 There are other situations which might cause this issue, if you checked it's not MFA related contact Microsoft support and open a ticket requesting support.
 
@@ -35,9 +35,18 @@ There are other situations which might cause this issue, if you checked it's not
 
 When message shown is AADSTS53000, the error can be related to either multifactor authentication or conditional access policy.
 
-### Document Associated Grid warning AADSTS53003 
+First, check if multifactor authentication is enabled in Dataverse following steps in [AADSTS50076](#Document-Associated-Grid-warning-AADSTS50076-or-AADSTS50079). If needed enable the Dataverse multifactor authentication.
 
-When message shown is AADSTS53000, a conditional access is configured to block issuing a token.
+If multifactor authentication is enabled on both Dataverse and SharePoint, then you need to check SharePoint conditional access.
+
+1. When the devic is managed, open **Extra SharePoint Access Policy** using [Find SharePoint Online conditional access](#Find-SharePoint-Online-conditional-access)
+1. Check if the device has any network conditions
+   1. Select link under **Network**
+   1. Review network conditions selected under **Include** and **Exclude**
+1. Check if the device is in locations conditions
+   1. Select link under **Conditions**
+   1. Select link under **Locations**
+   1. Review selected network or physical locations
 
 ### Document Associated Grid warning AADSTS53001
 
@@ -53,9 +62,27 @@ When message shown is AADSTS53000, the device isn't in a domain joined status. U
 
 When message shown is AADSTS53000, a SharePoint conditional access policy is preventing the device access to the resource. If the blocked access is expected, inform the user how to access within the conditional access policy. If blocked access isn't expected, review the SharePoint conditional access within Microsoft Entra admin center **SharePoint Access Policy**.
 
-1. Open the Microsoft Entra admin center to **SharePoint Access Policy**
+1. Open the Microsoft Entra admin center to **SharePoint Access Policy** using [Find SharePoint Online conditional access](#Find-SharePoint-Online-conditional-access)
 1. Select **Access controls** > **Grant** to open the Grant dialog
 1. Under **Grant access** check if **Require device to be marked as compliant** or **Require Microsoft Entra hybrid joined device** is checked
+
+### Document Associated Grid warning AADSTS530003 
+
+When message shown is AADSTS530003, the access is related to a device. First use [AADSTS53000](#Document-Associated-Grid-warning-AADSTS53000) to check if the device is managed and then follow these steps.
+
+1. When the devic is managed, open **Extra SharePoint Access Policy** using [Find SharePoint Online conditional access](#Find-SharePoint-Online-conditional-access)
+1. Check if the device is in the supported list
+   1. Select link under **Conditions**
+   1. Select link under **Device platforms**
+   1. Review platforms selected under **Include** and **Exclude**
+1. Check if the device is in the supported list
+   1. Select link under **Conditions**
+   1. Select link under **Client apps**
+   1. Review selected client apps
+ 1. Check if the device is filtered
+   1. Select link under **Conditions**
+   1. Select link under **Filter for devices**
+   1. Review filtered devices
 
 ## Authentication isn't enabled correctly
 
@@ -79,7 +106,9 @@ When the Document Associated grid shows a warning message "Authentication isn't 
 
 1. Select **Conditional Access** to show the list of Policy names
 
-   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")  
+   ![Select Security Conditional Access](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-security-conditional-access-policies.png "Select Security Conditional Access")
+
+1. Select **SharePoint Access Policy** in the policy list
 
 ### Find Dataverse conditional access
 
