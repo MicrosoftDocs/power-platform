@@ -33,7 +33,7 @@
           href: appsource\appendix-app-certification-checklist.md
         - name: "Appendix: Add licensing information to your solution"
           href: appsource\appendix-add-license-information-to-your-solution.md
-    - name: Use the catalog for Power Platform (preview)
+    - name: Use the catalog for Power Platform
       items: 
         - name: Overview
           href: catalog/overview.md

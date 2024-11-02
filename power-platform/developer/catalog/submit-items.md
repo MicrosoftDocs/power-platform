@@ -107,7 +107,10 @@ The `mspcat_SubmitCatalogApprovalRequest` message requires that the submission J
 /// </summary>
 /// <param name="service">The authenticated IOrganizationService instance.</param>
 /// <param name="pathToSubmissionFile">The location of the submission file</param>
-/// <returns>mspcat_SubmitCatalogApprovalRequestResponse contains AsyncOperationId and CertificationRequestId</returns>
+/// <returns>
+///   mspcat_SubmitCatalogApprovalRequestResponse contains AsyncOperationId 
+///   and CertificationRequestId
+/// </returns>
 static mspcat_SubmitCatalogApprovalRequestResponse SubmitCatalogApprovalRequest(
    IOrganizationService service,
    FileInfo pathToSubmissionFile)
@@ -215,7 +218,7 @@ This URL can represent anywhere that Dataverse can download a file without any c
 
 ### [PAC CLI](#tab/cli)
 
-There is no PAC CLI command to do this.
+There is no PAC CLI command to do this because PAC CLI [pac catalog submit command](/power-platform/developer/cli/reference/catalog#pac-catalog-submit) manages this for you.
 
 ### [SDK for .NET](#tab/sdk)
 
@@ -332,9 +335,10 @@ static string CatalogItemFromSolution(
 
     var submitCatalogApprovalResponse = (mspcat_SubmitCatalogApprovalRequestResponse)service
         .Execute(submitCatalogApprovalRequest);
-    Console.WriteLine($"Submitted catalog approval request with ID {submitCatalogApprovalResponse.CertificationRequestId}");
-
+    
     Guid certificationRequestId = submitCatalogApprovalResponse.CertificationRequestId;
+
+    Console.WriteLine($"Submitted catalog approval request with ID {certificationRequestId}");
 
     // Approval must be in either InProgress or Submitted to be processed
 
@@ -427,11 +431,194 @@ Returning Catalog Item ID: <solutionUniqueName>
 
 ### [Web API](#tab/webapi)
 
-> TODO: A PowerShell function that accepts these parameters:
->
-> - The name of an unmanaged solution
-> - The Unique Name of an unmanaged solution
->   The return value is a completed catalog item ready to install
+> TODO: TEST THIS FUNCTION
+
+```powershell
+function New-CatalogItemFromSolution {
+   param(
+      [Parameter(Mandatory)]
+      [string]
+      $solutionName,
+      [Parameter(Mandatory)]
+      [string]
+      $solutionUniqueName,
+      [Parameter(Mandatory)]
+      [string]
+      $catalogItemSubmissionJsonString
+   )
+   $statusCodeLabelName = 'statuscode@OData.Community.Display.V1.FormattedValue'
+
+
+   $solutionQuery = "?`$filter=uniquename eq '$solutionUniqueName'&`$select=solutionid"
+   $solutionCollection = (Get-Records `
+         -setName 'solutions' `
+         -query $solutionQuery).value
+
+   if (!$solutionCollection.Count -eq 1) {
+      throw "Solution with unique name $solutionUniqueName does not exist"
+   }
+
+   $packageStoreRecord = @{
+      mspcat_name                   = $solutionName
+      mspcat_solutionuniquename     = $solutionUniqueName
+      mspcat_intendeddeploymenttype = 526430000 # Standard
+      mspcat_operation              = 958090001 # Create Package
+   }
+
+   $packageId = New-Record `
+      -setName 'mspcat_packagestores' `
+      -body $packageStoreRecord
+   
+   Write-Host ('Created package store record with ID' + $packageId)
+
+   # Set statuscode to Submitted
+   $packageStoreRecord = @{
+      statuscode = 958090004 # Submitted
+   }
+
+   Update-Record `
+      -setName 'mspcat_packagestores' `
+      -id $packageId `
+      -body ($packageStoreRecord | ConvertTo-Json) | Out-Null
+
+   Write-Host  'Updated package store record status to Submitted'
+
+   do {
+      Start-Sleep -Seconds 10
+
+      $packageStore = Get-Record `
+         -setName 'mspcat_packagestores' `
+         -id $packageId `
+         -query '?$select=statuscode,mspcat_processingmessage'
+      
+      $statusCodeValue = $packageStore.statuscode
+      $statusCodeLabel = $packageStore.$statusCodeLabelName
+
+      Write-Host (' - Package store record status is ' + $statusCodeLabel)
+
+   } while ($statusCodeValue -eq 958090004 -or # Submitted
+      $statusCodeValue -eq 1 -or # Pending
+      $statusCodeValue -eq 958090000) # Running
+   
+   if ($statusCodeValue -ne 958090001) {
+
+      # 958090002 is 'Failed'
+      throw "Package submission $statusCodeLabel"
+   }
+
+   # If successful, retrieve the details about the file to download
+
+   $fileSasUrlResponse = Get-FileSasUrl `
+      -setName 'mspcat_packagestores' `
+      -id $packageId `
+      -columnName 'mspcat_packagefile'
+
+   Write-Host ('Retrieved SAS URL for ' + $fileSasUrlResponse.FileName)
+
+   $catalogItemSubmission = $catalogItemSubmissionJsonString | ConvertFrom-Json
+
+   $packageFile = @{
+      name        = $fileSasUrlResponse.FileName
+      filesaslink = $fileSasUrlResponse.SasUrl
+   }
+
+   $catalogItemSubmission.catalogItemDefinition.packageFile = $packageFile
+
+   $catalogItemSubmissionJsonString = $catalogItemSubmission | ConvertTo-Json
+
+   $encodedCatalogItemSubmission = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($catalogItemSubmissionJsonString))
+
+   
+   $body = @{
+      EncodedApprovalRequest = $encodedCatalogItemSubmission 
+   } | ConvertTo-Json
+
+   $postHeaders = $baseHeaders.Clone()
+   $postHeaders.Add('Content-Type', 'application/json')
+
+   $results = Invoke-RestMethod `
+      -Method Post `
+      -Uri $baseURI + 'mspcat_SubmitCatalogApprovalRequest' `
+      -Headers $postHeaders `
+      -Body $body
+   
+   $certificationRequestId = $results.CertificationRequestId
+
+   Write-Host ('Submitted catalog approval request with ID' + $certificationRequestId)
+
+   # Approval must be in either InProgress or Submitted to be processed
+
+   do {
+      Start-Sleep -Seconds 10
+   
+      # Retrieve the record
+      $approvalRequestRecord = Get-Record `
+         -setName 'mspcat_certificationrequests' `
+         -id $certificationRequestId `
+         -query '?$select=statuscode'
+
+      # Get the status code value
+      $statusCodeValue = $approvalRequestRecord.statuscode
+      $statusCodeLabel = $approvalRequestRecord.$statusCodeLabelName
+   
+      Write-Host (' - Approval request status is ' + $statusCodeLabel)
+
+   } while ($statusCodeValue -eq 526430002 -or # Waiting On Submitter
+      $statusCodeValue -eq 526430003 -or # Pending Deployment
+      $statusCodeValue -eq 526430008 -or # Draft
+      $statusCodeValue -eq 526430009) # Processing
+   
+   # If statuscode isn't Submitted or InProgress, throw an exception
+   if ($statusCodeValue -ne 1 -or $statusCodeValue -ne 526430001) {
+      throw "Certification request $statusCodeLabel"
+   }
+
+   # Approve the request
+   ResolveApproval `
+      -certificationRequestId $certificationRequestId `
+      -requestsuccess $true `
+      -message 'Approved by script'
+
+   Write-Host 'Approved the certification request'
+
+   # Get the Catalog Item
+
+   $query = '?$select=mspcat_certificationrequestid'
+   $query += '&$expand=mspcat_Application($select=mspcat_tpsid)'
+
+   $approvalRequestRecord = Get-Record `
+         -setName 'mspcat_certificationrequests' `
+         -id $certificationRequestId `
+         -query $query
+
+   $tpsid = $approvalRequestRecord.mspcat_Application.mspcat_tpsid
+
+   Write-Host 'Returning Catalog Item ID:' + $tpsid
+
+   return $tpsid
+}
+```
+
+**Output**
+
+The output of this function should look something like this:
+
+```
+Created package store record with ID 46f662aa-2137-ef11-8409-6045bdd3aec3
+Updated package store record status to Submitted
+ - Package store record status is Submitted
+ - Package store record status is Pending
+ - Package store record status is Running
+ - Package store record status is Running
+ - Package store record status is Completed
+Package submission Completed
+Retrieved SAS URL for <solutionName>_1_0_0_0.zip
+Submitted catalog approval request with ID b932c7c8-2137-ef11-8409-6045bdd3aec3
+ - Approval Request status is Completed
+Approved the certification request
+Returning Catalog Item ID: <solutionUniqueName>
+```
+
 
 ---
 
@@ -676,6 +863,8 @@ function ResolveApproval {
 
 ## Next steps
 
-> [!div class="nextstepaction"] > [Review the catalog item submission document reference](submission-reference.md)
+> [!div class="nextstepaction"]
+> [Review the catalog item submission document reference](submission-reference.md)
 
-> [!div class="nextstepaction"] > [Compose submission document](submission-reference.md)
+> [!div class="nextstepaction"]
+> [Compose submission document](submission-reference.md)
