@@ -41,7 +41,7 @@ First, check if multifactor authentication is enabled in Dataverse following ste
 
 If multifactor authentication is enabled on both Dataverse and SharePoint, then you need to check SharePoint conditional access.
 
-1. When the devic is managed, open **Extra SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access)
+1. When the device is managed, open **Extra SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access)
 1. Check if the device has any network conditions
    1. Select link under **Network**
    1. Review network conditions selected under **Include** and **Exclude**
@@ -72,7 +72,7 @@ When message shown is AADSTS53000, a SharePoint conditional access policy is pre
 
 When message shown is AADSTS530003, the access is related to a device. First use [AADSTS53000](#sharepoint-document-grid-warning-aadsts53000) to check if the device is managed and then follow these steps.
 
-1. When the devic is managed, open **Extra SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access)
+1. When the device is managed, open **Extra SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access)
 1. Check if the device is in the supported list
    1. Select link under **Conditions**
    1. Select link under **Device platforms**
