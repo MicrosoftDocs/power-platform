@@ -5,13 +5,13 @@ author: kacortez
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/31/2024
+ms.date: 11/05/2024
 ms.subservice: admin
 ms.author: kacortez
 search.audienceType: 
   - admin
 ---
-# Policies and Communications for Power Platform and Dynamics 365 Services
+# Policies and communications for Power Platform and Dynamics 365 Services
 
 ## Introduction
 
