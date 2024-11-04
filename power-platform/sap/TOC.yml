@@ -2,7 +2,7 @@
   href: index.yml
   items:
     - name: Power Platform and SAP
-      items: 
+      items:
         - name: Explore
           items:
             - name: Power Platform and SAP
@@ -15,21 +15,21 @@
               href: /power-platform/index.md
         - name: Connect to SAP
           items:
-            - name: Power Platform connectivity to SAP
+            - name: Connecting Power Platform and SAP overview
               href: connect/connect-power-platform-and-SAP.md
-            - name: SAP ERP connector
+            - name: Get started with the SAP ERP connector
               href: connect/sap-erp-connector.md
-            - name: Set up Microsoft Entra ID with Kerberos for SSO
-              href: connect/entra-id-kerberos.md
-            - name: SAP OData connector
+            - name: Get started with the SAP OData connector
               href: connect/sap-odata-connector.md
             - name: Set up Secure Network Communications
               href: connect/secure-network-communications.md
+            - name: Set up Microsoft Entra ID with Kerberos for SSO
+              href: connect/entra-id-kerberos.md
             - name: Set up Microsoft Entra ID using certificates
               href: connect/entra-id-certs.md
             - name: Set up Microsoft Entra ID with Azure API Management and OAuth
               href: connect/entra-id-apim-oauth.md
-        - name: Use Enterprise templates
+        - name: Use enterprise templates
           items:
             - name: SAP Procurement
               href: /enterprise-templates/finance/sap-procurement/valid-overview.md
@@ -83,7 +83,3 @@
             href: /azure/sap/
           - name: Release plans
             href: https://aka.ms/PowerPlatformReleasePlan
-
-
-            
-
