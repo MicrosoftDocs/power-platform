@@ -169,6 +169,8 @@ You can view the table metadata for your organization including which columns ca
  When you use calculated column that include a column that is secured, data may be displayed in the calculated column to users that don't have permission to the secured column. In this situation, both the original column and the calculated column should be secured.  
   
  Some data, such as addresses, are made up of multiple columns. Therefore, to completely secure data that includes multiple columns, such as addresses, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure addresses for a table, secure all relevant address columns, such as address_line1, address_line2, address_line3, address1_city, address1_composite, and so on.  
+
+ Note that changes to column security will require a browser refresh from the end user on the client (like a model-driven app) for them to take effect. This should be considered when dynamically adjusting access rules. 
   
 ### Related information
 [Set up security permissions for a column](set-up-security-permissions-field.md) <br />
