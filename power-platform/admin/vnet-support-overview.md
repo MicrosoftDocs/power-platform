@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/16/2024
+ms.date: 11/04/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -44,7 +44,7 @@ Power Platform enables Virtual Network support for both Dataverse plug-ins and [
 - Use [Azure Key Vault](/connectors/keyvault/) connector to securely connect to private, endpoint-protected Azure Key Vault.
 - Use [custom connectors](/connectors/custom-connectors/) to securely connect to your services that are protected by private endpoints in Azure or services that are hosted within your private network.
 - Use [Azure File Storage](/connectors/azurefile/) to securely connect to private, endpoint-enabled Azure file storage.
-- Use [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) to securely fetch resources over virtual network from various Web services, authenticated by Microsoft Entra ID, or from an on-premise web service
+- Use [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) to securely fetch resources over Virtual Networks from various web services, authenticated by Microsoft Entra ID or from an on-premises web service.
 
 ### Limitations
 
