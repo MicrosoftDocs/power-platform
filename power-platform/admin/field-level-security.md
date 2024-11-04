@@ -1,5 +1,5 @@
 ---
-title: "Column-level security  | MicrosoftDocs"
+title: Column-level security 
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
