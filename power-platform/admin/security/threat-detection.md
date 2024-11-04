@@ -17,7 +17,7 @@ search.audienceType:
                                                   
 Threat detection is crucial in cybersecurity, using AI and machine learning to monitor and analyze network traffic, user behavior, and system activities for anomalies. This real-time analysis allows swift identification and response to suspicious actions, ensuring data security and compliance.
 
-## Auditing (preview)
+## Auditing
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
