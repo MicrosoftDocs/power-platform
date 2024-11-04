@@ -13,7 +13,6 @@ search.audienceType:
 ---
 
 # Compliance
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 Compliance is essential in safeguarding organizational data and ensuring adherence to industry regulations. Implementing robust compliance measures helps mitigate risks and maintain trust with stakeholders.
 
