@@ -40,7 +40,7 @@ This feature can be enabled or disabled from the **Features** area of the enviro
 
 These features have limitations and might not work as expected in an environment where block unmanaged customizations is enabled. Using these features can result in this error: “This environment doesn't allow unmanaged customizations. This was a choice made by your admin, and certain actions won't be available or will be view only."
 
-If you must use one of the below apps or features in an environment where block unmanaged customizations is enabled, we recommend you disable the setting during preview.
+If you must use one of the below apps or features in an environment where block unmanaged customizations is enabled, we recommend you disable the setting.
 
 | App or feature  | Limitation  |
 |---------|---------|
