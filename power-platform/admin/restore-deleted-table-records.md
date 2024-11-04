@@ -35,6 +35,11 @@ To use this feature, it must be enabled in the environment where you want to res
 
 ### Enable restore table records
 
+> [!IMPORTANT]
+>
+> When enabling this feature, the environment becomes unavailable for a few minutes; please consider to enable this feature outside working hours.
+
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 1. Select **Environments** and open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
