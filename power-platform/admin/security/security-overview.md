@@ -1,5 +1,5 @@
 ---
-title: Security overview (preview)
+title: Security overview
 description: Learn how to manage security in the Power Platform admin center with security features available.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,12 +12,9 @@ search.audienceType:
   - admin
 ---
 
-# Security overview (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Security overview
                                              
 The **Security** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. The **Security** page provides a centralized location to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 Administrators can:
 
@@ -46,6 +43,10 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 ## Key capabilities
 
 ## Security score (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
 The security score is calculated based on the security features turned on in your environment. It provides a measurement of your organizational security position for Power Platform and Dynamics 365 workloads. The score is calculated using this formula: 
 
 **(your score/total possible score) * 100**
