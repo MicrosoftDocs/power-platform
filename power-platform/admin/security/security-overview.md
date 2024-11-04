@@ -42,7 +42,7 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
    
 ## Key capabilities
 
-## Security score
+## Security score (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
