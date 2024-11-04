@@ -12,17 +12,17 @@ contributors:
 - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 10/10/2024
+ms.date: 11/03/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
 ---
 
-# SAP and Power Platform integration
+# Power Platform integration with SAP
 
-Unlock the full potential of your SAP data with [Microsoft Power Platform](/power-platform/). Seamlessly integrate SAP ERP and SAP OData services into your Copilot Studio, Power Apps, and Power Automate solutions to drive innovation and efficiency across your organization. With our powerful connectors, you can easily access and operate on SAP data, enabling you to create custom copilots, applications, and automation workflows.
+Unlock the full potential of your SAP data with [Microsoft Power Platform](/power-platform/). Seamlessly integrate SAP ERP and SAP OData services into your Copilot Studio, Power Apps, and Power Automate solutions to drive innovation and efficiency across your organization. With our connectors, you can easily access and operate on SAP data, enabling you to create custom copilots, applications, and automation workflows.
 
-Discover how to streamline your SAP business processes with the Power Platform. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, our connectors provide the tools you need to succeed. Start transforming your SAP data today and experience the benefits of a truly integrated digital ecosystem.
+Discover how to streamline your SAP business processes with the Power Platform. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, our connectors provide the tools you need to succeed. Transform how you view and work with your SAP data and experience the benefits of a truly integrated digital ecosystem.
 
 :::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
@@ -42,8 +42,9 @@ Power Platform connectors for SAP provide secure, encrypted integration of your 
 Learn more:
 
 - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
-- [SAP ERP Connector](/connectors/saperp/)
-- [SAP OData Connector](/connectors/sapodata/)
-- [Get Started with the SAP ERP Connector](/connect/sap-erp-connector)
+- [SAP ERP connector](/connectors/saperp)
+- [SAP OData connector](/connectors/sapodata)
+- [Get started with the SAP ERP connector](/connect/sap-erp-connector)
+- [Get started with the OData connector](/connect/sap-odata-connector)
 - [Set up Microsoft Entra ID using certificates(SSO)](/connect/entra-id-certs)
 - [Learn about SAP Procurement template for Microsoft Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview)

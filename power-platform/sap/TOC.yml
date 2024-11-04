@@ -7,8 +7,6 @@
           items:
             - name: Power Platform and SAP
               href: explore/power-platform-and-SAP-integration.md
-            - name: Power Platform and SAP patterns
-              href: explore/common-patterns.md
             - name: SAP + Power Platform white paper
               href: explore/white-paper.md
         - name: Get started with Power Platform
@@ -52,13 +50,27 @@
             - name: SAP Setup Assistant
               href: /enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
             - name: SAP ERP connector
-              href: connect/sap-erp-connector.md
-            - name: SAP integration requirements
-              href: /enterprise-templates/finance/sap-procurement/administer/requirements.md
-            - name: Set up environments and data policies
-              href: /enterprise-templates/finance/sap-procurement/administer/set-up-environments-data-policies.md
-            - name: Set up on-premises data gateway for SAP
-              href: /enterprise-templates/finance/sap-procurement/administer/set-up-gateway.md
-            - name: 
+              href: /connectors/saperp
+            - name: SAP OData connector
+              href: /connectors/sapodata
+            - name: Secure Network Communications (SNC)
+              href: /power-platform/sap/connect/set-up-secure-network-communications
+            - name: Microsoft Entra ID using Kerberos for SSO
+              href: /power-platform/sap/connect/entra-id-kerberos
+            - name: Microsoft Entra ID using certificates
+              href: /power-platform/sap/connect/entra-id-certs
+            - name: Microsoft Entra ID using Azure API Management and OAuth
+              href: /power-platform/sap/connect/entra-id-apim-oauth
+            - name: Power Platform security and governance
+              href: /power-platform/admin/security
+            - name: Power Apps and Teams integration
+              href: /power-apps/teams/create-apps-overview
+            - name: Power Platform administration
+              href: /power-platform/admin
+            - name: Power Platform solutions
+              href: /power-platform/alm/solution-concepts-alm
+            - name: Power Platform ALM
+              href: /power-platform/alm
+
             
 

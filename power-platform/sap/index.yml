@@ -41,7 +41,7 @@ sections:
       #     url: /power-platform/sap/explore-power-platform-and-SAP-integration
      - componentType: card
        title: "Step 2. Get started with Power Platform"
-       summary: Discover Power Platform capabilities and learn how to start using it in your environments.
+       summary: Learn how to get started with your enterprise adoption of Power Platform.
        imageUrl: /power-platform/sap/media/index-page/Get_started.png
        url: https://learn.microsoft.com/en-us/power-platform/guidance/
      - componentType: card
@@ -129,23 +129,27 @@ sections:
     - componentType: summary-card
       title: SAP ERP connector
       summary: Get started with the SAP ERP connector.
-      url: /power-platform/sap/connect/sap-erp-connector
+      url: /connectors/saperp
     - componentType: summary-card
       title: SAP OData connector
       summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
-      url: /connectors/sap-odata
+      url: /connectors/sapodata
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
       url: /power-platform/sap/connect/set-up-secure-network-communications
     - componentType: summary-card
-      title: Entra ID using Kerberos (SSO)
-      summary: Use Kerberos SSO connections from the Power Platform to SAP.
-      url: /power-platform/sap/connect/set-up-microsoft-entra-id-with-kerberos    
+      title: Entra ID using Kerberos for SSO
+      summary: Use Kerberos SSO connections from Power Platform to SAP.
+      url: /power-platform/sap/connect/entra-id-kerberos    
     - componentType: summary-card
-      title: Entra ID using certificates (SSO)
-      summary: Use certificate-based SSO connections from the Power Platform to SAP.
-      url: /power-platform/sap/connect/set-up-microsoft-entra-id-with-certificates
+      title: Entra ID using certificates for SSO
+      summary: Use certificate-based SSO connections from Power Platform to SAP.
+      url: /power-platform/sap/connect/entra-id-certs
+    - componentType: summary-card
+      title: Entra ID using Azure API Management and OAuth
+      summary: Use Azure API Management and OAuth from Power Platform to SAP.
+      url: /power-platform/sap/connect/entra-id-apim-oauth
     - componentType: summary-card
       title: Power Platform security and governance
       summary: Set up and maintain security and governance for Power Platform.
@@ -166,6 +170,7 @@ sections:
       title: Power Platform ALM
       summary: Implement application lifecycle management (ALM) using Microsoft Power Platform.
       url: /power-platform/alm/
+
 # # Additional links section
 - componentType: grid
   title: More resources
@@ -193,4 +198,4 @@ sections:
     - componentType: summary-card
       title: SAP and Power Platform white paper
       summary: Power Platform considerations for SAP experts.
-      url: https://go.microsoft.com/fwlink/?linkid=2294900
+      url: /power-platform/sap/explore/white-paper
