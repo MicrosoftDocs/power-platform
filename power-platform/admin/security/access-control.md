@@ -34,7 +34,7 @@ This feature applies to Managed Environments only. Sharing gives administrators 
 ## Guest access (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 You can bolster your security score by prohibiting guest access to your environment. This feature restricts anyone who is designated as a guest in your tenant in Microsoft Entra from interacting with any resources that have been shared with them or that they made.
 
