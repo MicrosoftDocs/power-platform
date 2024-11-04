@@ -180,7 +180,7 @@ sections:
       summary: Engage with the community to learn and share about using SAP connectors.
       url: https://community.powerplatform.com/globalsearch/?q=SAP
     - componentType: summary-card
-      title: Power Platform on SAP on Azure YouTube channel
+      title: Power Platform and SAP on the SAP on Azure YouTube channel
       summary: Learn about Power Platform and SAP on the Power Platform and SAP on Azure YouTube channel.
       url: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
     - componentType: summary-card
@@ -194,7 +194,7 @@ sections:
     - componentType: summary-card
       title: Release plans
       summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
-      url: /dynamics365/release-plans/
+      url: https://aka.ms/PowerPlatformReleasePlan
     - componentType: summary-card
       title: SAP and Power Platform white paper
       summary: Power Platform considerations for SAP experts.

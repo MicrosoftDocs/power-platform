@@ -71,6 +71,19 @@
               href: /power-platform/alm/solution-concepts-alm
             - name: Power Platform ALM
               href: /power-platform/alm
+        - name: Resources
+          items:
+          - name: Power Platform Community forums
+            href: https://community.powerplatform.com/globalsearch/?q=SAP
+          - name: Power Platform and SAP YouTube channel
+            href: https://www.youtube.com/@mspowerplatform/search?query=SAP
+          - name: Power Platform and SAP on the SAP on Azure YouTube channel
+            href: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
+          - name: SAP on Azure
+            href: https://learn.microsoft.com/en-us/azure/sap/
+          - name: Release plans
+            href: https://aka.ms/PowerPlatformReleasePlan
+
 
             
 
