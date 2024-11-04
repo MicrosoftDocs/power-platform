@@ -17,7 +17,7 @@ search.audienceType:
 ---
 
 # Known limitations
-Below are known limitations to know about when leveraging our suite of data loss prevention (DLP) capabilities:
+Below are known limitations to know about when using our suite of data loss prevention (DLP) capabilities:
 
 ## General
 - If you delete an environment and it's still within the 7-day recovery period, you'll still be able to see it in DLP policies when you view them in PowerShell. Once the recovery period ends, the environment is permanently deleted. However, it may take up to 7 days for all references to the environment to be automatically removed from your DLP policies.
