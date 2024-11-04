@@ -62,7 +62,7 @@ When message shown is AADSTS53000, the device isn't in a domain joined status. U
 
 ### SharePoint Document Grid warning AADSTS53000
 
-When message shown is AADSTS53000, a SharePoint conditional access policy is preventing the device access to the resource. If the blocked access is expected, inform the user how to access within the conditional access policy. If blocked access isn't expected, review the SharePoint conditional access within Microsoft Entra admin center **SharePoint Access Policy**.
+When message shown is AADSTS53000, a SharePoint conditional access policy is preventing the device access to the resource. If blocked access is expected, inform the user how to access within the conditional access policy. If blocked access isn't expected, review the SharePoint conditional access within Microsoft Entra admin center **SharePoint Access Policy**.
 
 1. Open the Microsoft Entra admin center to **SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access)
 1. Select **Access controls** > **Grant** to open the Grant dialog
