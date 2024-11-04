@@ -45,7 +45,7 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 ## Security score (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 The security score is calculated based on the security features turned on in your environment. It provides a measurement of your organizational security position for Power Platform and Dynamics 365 workloads. The score is calculated using this formula: 
 
