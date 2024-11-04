@@ -64,6 +64,8 @@ landingContent:
             url: layout.md
           - text: Provide clear directions
             url: user-interface-content.md
+          - text: Design conversational AI
+            url: conversation-design.md
   - title: Explore related resources
     linkLists:
       - linkListType: reference
