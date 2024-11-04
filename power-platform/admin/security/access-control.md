@@ -31,7 +31,7 @@ Setting up security groups helps control which licensed users can access environ
 ## Manage sharing 
 This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and copilots&mdash;with other individual users and security groups, which ensures that sensitive information is available only to authorized users, reducing the risk of data breaches and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
-## Guest access (preview)
+## Guest access
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
@@ -41,7 +41,7 @@ You can bolster your security score by prohibiting guest access to your environm
 > [!Note]
 > Items made in Microsoft Copilot Studio may use Graph connectors as knowledge sources, and the information in them may be accessible to guests for now, even if this setting is on.
 
-## Administrator privileges (preview)
+## Administrator privileges
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
