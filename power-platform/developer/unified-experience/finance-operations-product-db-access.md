@@ -4,7 +4,7 @@ description: "Learn how to request credentials to access D365 product database j
 author: pathaku
 ms.date: 06/06/2024
 ms.topic: how-to
-ms.reviewer: phecke
+ms.reviewer: pehecke
 ms.author: pathaku
 ms.subservice: developer
 ---
