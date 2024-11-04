@@ -16,7 +16,7 @@ ms.contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-When you make changes to solution components in Dataverse, you can view the changes in the **Solutions** area in Power Apps. The solutions area shows the unmanaged changes that you made to the solution components in the solution. The files in your commit are equivalent to the unmanaged layers in your environment. Components that are part of the managed layer aren't included in the commit.
+When you make changes to solution components in Dataverse, you can view the changes in the **Solutions** area in the Power Apps maker experience. The solutions area shows the unmanaged changes that you made to the solution components in the solution. The files in your commit are equivalent to the unmanaged layers in your environment. Components that are part of the managed layer aren't included in the commit.
 
 > [!IMPORTANT]
 >
@@ -25,11 +25,11 @@ When you make changes to solution components in Dataverse, you can view the chan
 
 ## View changes in the solutions area
 
-1. After making a change or adding a component in unmanaged solution, go to the **Solutions** area in Power Apps.
+1. After making a change or adding a component in unmanaged solution, go to the **Solutions** area in the maker experience.
 1. Open the solution that you  made changes to and select **Source Control** on the left navigation pane.
    :::image type="content" source="../media/git-integration-changes.png" alt-text="List of changes in solution ready to commit to Git" lightbox="../media/git-integration-changes.png":::
 
-When you first enter the source control screen, you notice the list of **Changes** available to commit to source control. Select **Refresh** to refresh the list because you made changes in another browser tab. Selecting **Check for updates** queries your source code repository and identifies whether there are updates available or conflicts for you to resolve.
+The source control screen will provide a list of **Changes** available to commit to source control. Select **Refresh** to refresh the list if you made changes in another browser tab. Selecting **Check for updates** queries your source code repository and identifies whether there are updates available or conflicts for you to resolve.
 
 From the source control screen you view the current branch your solution is bound to and view the changes made to the solution that are available to commit to source control, changes that have been made in source control and available to pull into your environment, or conflicts that are present because there are changes in your environment and in source code.
 
