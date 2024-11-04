@@ -1,6 +1,6 @@
 ---
 title: "Source control operations"
-description: "This page discusses the integration of Dataverse with Git, focusing on viewing changes, committing and pulling changes."
+description: "This article discusses the integration of Dataverse with Git, focusing on viewing changes, committing and pulling changes."
 author: shmcarth
 ms.subservice: alm
 ms.author: matp
@@ -25,7 +25,7 @@ When you make changes to solution components in Dataverse, you can view the chan
 
 ## View changes in the solutions area
 
-1. After making a change or adding a component in unmanaged solution, go to the **Solutions** area in the Power Apps.
+1. After making a change or adding a component in unmanaged solution, go to the **Solutions** area in Power Apps.
 1. Open the solution that you  made changes to and select **Source Control** on the left navigation pane.
    :::image type="content" source="../media/git-integration-changes.png" alt-text="List of changes in solution ready to commit to Git" lightbox="../media/git-integration-changes.png":::
 

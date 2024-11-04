@@ -1,6 +1,6 @@
 ---
 title: "Overview of Dataverse Git integration"
-description: "This page discusses the integration of Dataverse with Git, focusing on high level concepts and requirements."
+description: "This article discusses the integration of Dataverse with Git, focusing on high level concepts and requirements."
 author: shmcarth
 ms.subservice: alm
 ms.author: matp
