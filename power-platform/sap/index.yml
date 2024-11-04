@@ -190,7 +190,7 @@ sections:
     - componentType: summary-card
       title: SAP on Azure
       summary: Run SAP on Azure.
-      url: https://learn.microsoft.com/en-us/azure/sap/
+      url: /azure/sap/
     - componentType: summary-card
       title: Release plans
       summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
