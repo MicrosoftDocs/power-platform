@@ -16,7 +16,7 @@ ms.contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Git integration in Dataverse is initiated from Power Platform on the **Solutions** page in Dataverse. This article discusses the integration of Dataverse with Git, focusing on connecting to Azure DevOps and binding your environment for Dynamics 365 and Power Platform.
+Git integration in Dataverse is initiated from Power Platform on the **Solutions** page within the maker experience. This article discusses the integration of Dataverse solutions with Git, focusing on connecting to Azure DevOps and binding your environment for Dynamics 365 and Power Platform.
 
 > [!IMPORTANT]
 >
@@ -42,7 +42,7 @@ To get started, you need an Azure DevOps project and repository to connect your 
 1. Select **New project**, enter a name and ensure that your version control is set to Git for your project, and select **Create**.
 1. In the new project, select **Repos** and then select **Initialize** at the bottom of the page to initialize the default repository.
 
-Make sure that all users who are making changes in your environment have access to your repo and to commit changes.  Review your Azure DevOps licensing configuration and security groups to ensure that they're able to use the solution source control panel.
+Make sure that all users who are making changes in your environment have access to your repository and to commit changes.  Review your Azure DevOps licensing configuration and security groups to ensure that they're able to use the solution source control panel.
 
 ## Connect Dataverse to Git
 
