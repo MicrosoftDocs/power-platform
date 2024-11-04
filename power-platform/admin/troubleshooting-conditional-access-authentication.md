@@ -1,10 +1,10 @@
 ---
 title: "Troubleshooting conditional access in authentication   | MicrosoftDocs"
-description: Troubleshooting conditional access in authentication
+description: Troubleshooting SharePoint and Dataverse conditional access authentication for SharePoint integration
 author: Mattp123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/11/2020
+ms.date: 11/04/2024
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -12,9 +12,9 @@ search.audienceType:
 ---
 # Troubleshooting conditional access authentication
 
-This page outlines how to address warning messages related to conditional access authentication improvements.
+This page outlines how to address warning messages related to conditional access authentication improvements for [Manage your documents using SharePoint](manage-documents-using-sharepoint.md)
 
-With security improvements in SharePoint integration authentication, you need to keep SharePoint Online and Dataverse conditional access aligned to avoid issues. These sections outline how to review and align conditional access
+With security improvements in SharePoint integration authentication, you need to keep SharePoint Online and Dataverse conditional access aligned to avoid issues. These sections outline how to review and align conditional access.
 
 ## Conditional access isn't enabled correctly
 
@@ -37,7 +37,7 @@ There are other situations which might cause this issue, if you checked and it's
 
 When message shown is AADSTS53000, the error can be related to either multifactor authentication or conditional access policy.
 
-First, check if multifactor authentication is enabled in Dataverse following steps in [AADSTS50076](#sharepoint-document-grid-warning-aadsts50076-or-aadsts50079). If needed enable the Dataverse multifactor authentication.
+First, check if multifactor authentication is enabled in Dataverse following steps in [AADSTS50076](#sharepoint-document-grid-warning-aadsts50076-or-aadsts50079). Enable the Dataverse multifactor authentication if not already enabled.
 
 If multifactor authentication is enabled on both Dataverse and SharePoint, then you need to check SharePoint conditional access.
 
