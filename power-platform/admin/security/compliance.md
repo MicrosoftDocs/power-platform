@@ -1,10 +1,10 @@
 ---
-title: Compliance (preview)
+title: Compliance
 description: Learn how to manage compliance in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/28/2024
+ms.date: 11/04/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Compliance (preview)
+# Compliance
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 Compliance is essential in safeguarding organizational data and ensuring adherence to industry regulations. Implementing robust compliance measures helps mitigate risks and maintain trust with stakeholders.
