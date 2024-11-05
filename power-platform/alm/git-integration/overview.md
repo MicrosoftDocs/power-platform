@@ -17,7 +17,7 @@ ms.contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Source control integration allows development teams to synchronize solutions and solution objects across one or more Microsoft Dataverse environments using an [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos). The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy.
+Source control integration allows development teams to synchronize solutions and solution objects across one or more Microsoft Dataverse environments using an Azure DevOps Git repository. The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy.
 
 > [!IMPORTANT]
 >
@@ -25,7 +25,7 @@ Source control integration allows development teams to synchronize solutions and
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 > - Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
 
-In this article, you find some of the key concepts and benefits to using Git enabled source control with your Dataverse environments and solutions.
+In this article, you find some of the key concepts and benefits to using Git enabled source control with your Dataverse environments and solutions. For information about Git in Azure DevOps, go to [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos).
 
 :::image type="content" source="media/GitIntegrationFlow.png" alt-text="Makers in their environments can make changes to unmanaged solution and commit to Git before deploying with pipelines" lightbox="media/GitIntegrationFlow.png":::
 
