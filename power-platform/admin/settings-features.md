@@ -48,8 +48,6 @@ To update these settings, make sure you have the System Administrator or System 
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot). When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Off |
 | Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
 
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
 ## Copilot for Microsoft 365
 
 | Setting | Description | Default value |
@@ -80,7 +78,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
+| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
 
 ## Natural language grid and view search (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -165,6 +163,14 @@ To update these settings, make sure you have the System Administrator or System 
 | Canvas apps | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 | Cloud flows | Learn more in [Add canvas apps and cloud flows to solution by default (preview)](/power-apps/maker/canvas-apps/add-app-solution-default). | Off |
 
+## Cloud flow run history in Dataverse (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| FlowRun entity time to live | <Description> | Enabled - 28 days retention (default) |
+
 ## Block unmanaged customizations
 
 | Setting | Description | Default value |
@@ -176,6 +182,19 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable email address validation in model-driven apps (preview).  |  When **On**, allows smart data validation for certain columns, such as text columns using the email format. Learn more in [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) | Off |
+
+## Attachment security
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable security on Attachment entity |  <Description> | <Default value> |
+
+## Microsoft Fabric
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  <Description> | <Default value> |
+| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and buld apps (preview). | <Description> | <Default value> |
 
 ## Power Automate capacity
 
@@ -189,7 +208,6 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Dataverse search| If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.| Off|
-|Share search analytics with Microsoft |  To help Microsoft improve Dataverse search, you can share your environment's Dataverse search queries in Dynamics 365 and Power Platform applications with Microsoft. More information: [Help improve Dataverse search](configure-relevance-search-organization.md#help-improve-dataverse-search)      |Off|
 |Single table search option| If **On**, users get another option to search on a single table on view pages of search-enabled tables in all model-driven apps.|Off|
 |Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. More information: [Grid search](/power-apps/user/grid-filters#grid-search) | Off|
 |Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| On |
