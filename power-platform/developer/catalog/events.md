@@ -35,9 +35,9 @@ Event raised on each update made to the approval record including completion.
 |Name|Type|Description|
 |---------|---------|---------|
 |`StatusMessage`|string|Status Message from the install process|
-|`IsCompleted`|bool|True of the operation is complete|
-|`ApprovalRequest`|[mspcat_certificationrequest record](tables/mspcat_certificationrequest.md)|Approval Request that has been completed|
-|`IsApproved`|bool|True if is approved|
+|`IsCompleted`|bool|True when the operation is complete|
+|`ApprovalRequest`|[mspcat_certificationrequest record](tables/mspcat_certificationrequest.md)|Completed Approval Request|
+|`IsApproved`|bool|True when approved|
 
 ## mspcat_OnCatalogInstallRequested
 
@@ -62,4 +62,4 @@ Event raised on each status event received by the system.
 |`StatusMessage`|string|Status Message from the install process|
 |`IsCompleted`|bool|True of the operation is complete|
 |`InstallHistory`|[mspcat_installhistory record](tables/mspcat_installhistory.md)|Install History entity reference that is the subject of this notification|
-|`IsSuccess`|bool|Will be set to true if the request was completed successfully|
+|`IsSuccess`|bool|True when request was completed successfully|

@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # Catalog item submission document reference
 
-You must include data in JSON format when you submit an item to the catalog. This article describes the valid properties for that document. This is an example:
+You must include data in JSON format when you submit an item to the catalog. This article describes the valid properties for that document. This JSON is an example:
 
 ```json
 {
@@ -58,16 +58,16 @@ This table describes the properties for the submission document:
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
 |`modelVersion`|string|No|Version number of the submission document. Default is 1.0.0.0.|
-|`sourcePortal`|int|No|Identifies the source of this request. Defaults to `526430005` which is the PAC CLI. For other sources, use `526430000`. The full list is returned by the `mspcat_GetPowerCatalogDetails` function. The `mspcat_GetPowerCatalogDetailsResponse.CatalogDetails.sourceOptions` property lists the available options.|
-|`submissionId`|guid|No|Guid to identify the submission. This is a foreign key to allow for linking the request to other systems.|
-|`operation`|string|Yes|Type of operation that is expected to be used, this is for future expansion and is not currently respected. Valid values:<br /> - `CreateOrUpdate` (Default)<br /> - `Create`<br /> - `Update`<br /> - `Disabled`<br />|
+|`sourcePortal`|int|No|Identifies the source of this request. Defaults to `526430005` which is the PAC CLI. For other sources, use `526430000`. The `mspcat_GetPowerCatalogDetails` function returns the full list. The `mspcat_GetPowerCatalogDetailsResponse.CatalogDetails.sourceOptions` property lists the available options.|
+|`submissionId`|guid|No|Guid to identify the submission. This value is a foreign key to allow for linking the request to other systems.|
+|`operation`|string|Yes|For future expansion and isn't currently respected. The type of operation that to be used. Valid values:<br /> - `CreateOrUpdate` (Default)<br /> - `Create`<br /> - `Update`<br /> - `Disabled`<br />|
 |`businessJustification`|string|No|Describes the business value of the submission to the approver. This value can contain HTML or Rich Text Format (RTF). This information appears in the planned consumption experience in the maker discovery user experience. Users might say their submission helps with cost reduction or productivity, for example. Some organizations require certain classes of value and those values can be entered here.|
 |`publisherDetails`|[Publisher](#publisher)|Yes|The publisher associated with this item submission.|
 |`catalogItemDefinition`|[CatalogItemDefinition](#catalogitemdefinition)|Yes|Defines the catalog item being submitted.|
 
 ## Publisher
 
-Use this to specify the catalog submission item `publisherDetails` property.
+Use this data to specify the catalog submission item `publisherDetails` property.
 
 Creates a publisher record that can be associated to one or more Microsoft Entra ID groups containing authorized users who can make updates to the catalog item going forward.
 
@@ -103,15 +103,15 @@ Here's a sample of a publisher record that includes operations to add a person a
 
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
-|`publisherId`|string|Yes|The unique ID for this publisher. Use this ID to identify this publisher any time you are creating or updating a catalog item for this publisher. Catalog Items can only be associated to one publisher at a time. The value can be a GUID or string. Once set, it must be maintained.|
-|`publisherDisplayName`|string|Yes|Consumers see this in the catalog gallery.|
+|`publisherId`|string|Yes|The unique ID for this publisher. Use this ID to identify this publisher anytime you're creating or updating a catalog item for this publisher. Catalog Items can only be associated to one publisher at a time. The value can be a GUID or string. Once set, it must be maintained.|
+|`publisherDisplayName`|string|Yes|Consumers see this data in the catalog gallery.|
 |`publisherUpnList`|[CatalogUPNOperation](#catalogupnoperation)[]|No|People that can submit new or update catalog items as this publisher. Always includes the submitting user the first time the Publisher is created.|
 |`publisherAADGroupOIDS`|[CatalogGroupOperation](#cataloggroupoperation)[]|No|Entra ID Groups whose members are allowed to access this publisher.|
 
 
 ### CatalogUPNOperation
 
-Use this to specify the [Publisher](#publisher) `publisherUpnList` property.
+Use this data to specify the [Publisher](#publisher) `publisherUpnList` property.
 
 Defines an operation to add or remove people that can submit new or update catalog items as this publisher.
 
@@ -123,7 +123,7 @@ Defines an operation to add or remove people that can submit new or update catal
 
 ### CatalogGroupOperation
 
-Use this to specify the [Publisher](#publisher) `publisherAADGroupOIDS` property.
+Use this data to specify the [Publisher](#publisher) `publisherAADGroupOIDS` property.
 
 Defines an operation to add or remove an Entra ID Group that can access this publisher.
 
@@ -136,7 +136,7 @@ Defines an operation to add or remove an Entra ID Group that can access this pub
 
 ## CatalogItemDefinition
 
-Use this to specify the catalog submission item `catalogItemDefinition` property.
+Use this data to specify the catalog submission item `catalogItemDefinition` property.
 
 These properties define the catalog item being submitted. This is the actual Power Platform solution. A package is what is stored in the catalog.
 
@@ -198,18 +198,18 @@ Here's an example of a catalog item including its `engineeringName` and `support
 
 ### OfferDetails
 
-Use this to specify the [CatalogItemDefinition](#catalogitemdefinition) `offer` property.
+Use this data to specify the [CatalogItemDefinition](#catalogitemdefinition) `offer` property.
 
 These properties define the details of the catalog item submission.
 
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
-|`businessCategories`|int[]|No|List of choice option values respected by the target catalog. Identifies the business catagories to associate with this catalog item. See [Business categories](#business-categories) for the valid values to use.|
+|`businessCategories`|int[]|No|List of choice option values respected by the target catalog. Identifies the business categories to associate with this catalog item. See [Business categories](#business-categories) for the valid values to use.|
 |`type`|string|Yes|Type of catalog item. Valid values:<br />- `Application`<br />- `Component_Collection`|
 |`supportsApplicationTypes`|string[]|No|List of the supported application types. Valid values:<br />- `CanvasApps`<br />- `ModelApps`<br />- `PowerPortals`<br />- `PowerAutomate`|
 |`deploymentType`|string|Yes|Indicates the type of deployment to deploy this catalog item. Valid values:<br />- `Normal` represents a **managed item**.<br />- `Template` A copy of your unmanaged solution that other makers can edit however they choose. <br /> [Learn more about catalog item types](/power-apps/maker/data-platform/catalog-overview#catalog-basics)|
 |`searchKeywords`|string[]|No|Words that people might use to find this catalog item.|
-|`small48x48Image`|[CatalogFileAsset](#catalogfileasset)|No|Image for gallery view. If you don't provide this image a system default icon is used.|
+|`small48x48Image`|[CatalogFileAsset](#catalogfileasset)|No|Image for gallery view. If you don't provide this image, a system default icon is used.|
 |`large216x216Image`|[CatalogFileAsset](#catalogfileasset)|No|Image for detail view. Provide an icon to be displayed in the maker or other discovery UI. Some user experiences uses larger icons to render cards for discovery.|
 |`useCaseDocument`|[CatalogFileAsset](#catalogfileasset)|No|Use case description and explanation to approvers.|
 |`videos`|[CatalogFileAsset](#catalogfileasset)[]|No|Detail view displays links to these video/gif files.|
@@ -218,7 +218,7 @@ These properties define the details of the catalog item submission.
 |`helpLink`|uri|No|Link to documentation. These URLs can be links to internal docs or sharepoint resources.|
 |`privacyPolicyLink`|uri|No|Link to privacy document. Policies regarding careful usage of the component or application being submitted.|
 |`legalTermsLink`|uri|No|Link to the Terms and Conditions document. Any legal terms or internal guidance for evaluation of the consumer of the catalog item.|
-|`legalTerms`|string|No|Markdown,HTML, or text version of the Terms and Conditions document. Any legal terms or internal guidance for evaluation of the consumer of the catalog item.|
+|`legalTerms`|string|No|Markdown, HTML, or text version of the Terms and Conditions document. Any legal terms or internal guidance for evaluation of the consumer of the catalog item.|
 |`sourceCodeRepositoryLink`|uri|No|Link to the source code repository|
 |`engineeringName`|[PersonContactInformation](#personcontactinformation)|Yes|Contact information for engineer or group that developed this catalog item.|
 |`supportName`|[PersonContactInformation](#personcontactinformation)|No|Contact information for support or group that supports this catalog item. Can be same as the engineering contact that the consumer of a catalog item can reach out to if they run into issues with the application.|
@@ -267,6 +267,6 @@ These properties define people in the catalog item [OfferDetails](#offerdetails)
 |Property|Type|Required|Description|
 |--------|----|--------|-----------|
 |`firstName`|string|No|Person first name.|
-|`lastName`|string|Yes|Person last name.|
+|`lastName`|string|Yes|Person family name.|
 |`email`|string|Yes|Person email address.|
 |`phoneNumber`|string|No|Person phone number.|

@@ -12,9 +12,9 @@ search.audienceType:
 ---
 # Retrieve data about the catalog in Power Platform
 
-To retrieve data about the catalogs for your tenant you need to determine which environment(s) have catalogs installed. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
+To retrieve data about the catalogs for your tenant, you need to determine which environments have catalogs installed. Then you can retrieve data from that environment about the catalog by querying the tables or API designed to provide this information.
 
-Most tenants will only install one catalog, but it is possible to install a catalog on multiple environments in the tenant.
+Most tenants only install one catalog, but it's possible to install a catalog on multiple environments in the tenant.
 
 ## Find environments with catalogs in your tenant
 
@@ -38,23 +38,23 @@ Active Environment Environment ID                       Environment Url         
 
 When you [install the Power Platform Catalog manager application](../../admin/administer-catalog.md#set-up-the-catalog) in an environment in your tenant, the tables listed in the [Catalog in Power Platform  table/entity reference](about-entity-reference.md) are added to that environment only.
 
-Some of the most important tables you may use are in the following table:
+Some of the most important tables you might use are in the following table:
 
 |Table |Description|
 |---------|---------|
 |[Approval Request (mspcat_certificationrequest)](tables/mspcat_certificationrequest.md)|Contains Approval records that are used to process new or updated submissions to the catalog system.|
 |[Catalog Publisher (mspcat_publisher)](tables/mspcat_publisher.md)|The publisher Entity for holding TPS Publisher data.|
-|[Catalog Item (mspcat_applications)](tables/mspcat_applications.md)|Entry that will appear in the Catalog|
+|[Catalog Item (mspcat_applications)](tables/mspcat_applications.md)|Entry that appears in the Catalog|
 |[Package (mspcat_packages)](tables/mspcat_packages.md)|Deployment Assets for a Catalog Item.|
 |[Install History (mspcat_InstallHistory)](tables/mspcat_installhistory.md)|Contains record of installations and their status|
-|[Install Activity (mspcat_InstallActivity)](tables/mspcat_installactivity.md)|Install History Activity Id's|
+|[Install Activity (mspcat_InstallActivity)](tables/mspcat_installactivity.md)|Install History Activity IDs|
 
 
 ## View catalog information
 
 There are two Dataverse messages you can use to get information about the catalog.
 
-- `mspcat_GetPowerCatalogInformation` This message is intended to be very fast and provide the minimal permissions and descriptive data for the catalog.
+- `mspcat_GetPowerCatalogInformation` This message is intended to be fast and provide the minimal permissions and descriptive data for the catalog.
 - `mspcat_GetPowerCatalogDetails` Use the contents of this message to populate the submission document and set the labels for what a Catalog Item and a Publisher should be called for this catalog.
 
 ### mspcat_GetPowerCatalogInformation
@@ -71,7 +71,7 @@ The `mspcat_GetPowerCatalogInformation` message has a single `permissionsonly` b
 |`ImageLink`|string|If set, is the image for the catalog|
 |`CanSubmit`|bool|Can the user submit items to the catalog|
 
-If the `permissionsonly` boolean parameter is true, the `CatalogDescription`, `CatalogName`, and `ImageLink` values are not returned. `SolutionVersion`, `CanRead`, and `CanSubmit` values are always returned.
+If the `permissionsonly` boolean parameter is true, the `CatalogDescription`, `CatalogName`, and `ImageLink` values aren't returned. `SolutionVersion`, `CanRead`, and `CanSubmit` values are always returned.
 
 
 #### [SDK for .NET](#tab/sdk)
@@ -119,7 +119,7 @@ CanSubmit: True
 
 #### [Web API](#tab/webapi)
 
-The following `GetPowerCatalogInformationExample` PowerShell function invokes the `mspcat_GetPowerCatalogInformation` function and processes the results that are represent the `mspcat_GetPowerCatalogInformationResponse` complex type. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
+The following `GetPowerCatalogInformationExample` PowerShell function invokes the `mspcat_GetPowerCatalogInformation` function and processes the results that are represented the `mspcat_GetPowerCatalogInformationResponse` complex type. This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 ```powershell
 function GetPowerCatalogInformationExample {
@@ -217,7 +217,7 @@ static void GetPowerCatalogDetailsExample(IOrganizationService service) {
 
 **Output**
 
-The static `GetPowerCatalogDetailsExample` method will write something like this to the console:
+The static `GetPowerCatalogDetailsExample` method writes something like this to the console:
 
 ```dotnetcli
 catalogId: 883278f5-07af-45eb-a0bc-3fea67caa544
@@ -287,7 +287,7 @@ function GetPowerCatalogDetails {
 }
 ```
 
-The output of this function will look something like this:
+The output of this function looks something like this:
 
 ```dotnetcli
 catalogId: 883278f5-07af-45eb-a0bc-3fea67caa544
@@ -354,7 +354,7 @@ You can also use these parameters to filter returned records:
 
 |parameter|alias&nbsp;&nbsp;|description
 |---------|---------|---------|
-|`--catalog-item-id`|`-cid`|Catalog item ID to search for. When catalog item ID is used, any `--catalog-item-name` parameter values is ignored.|
+|`--catalog-item-id`|`-cid`|Catalog item ID to search for. When catalog item ID is used, any `--catalog-item-name` parameter values are ignored.|
 |`--catalog-item-name`|`-n`|Catalog item name to search for.|
 |`--include-active`|`-ia`|Include active items.|
 
@@ -510,7 +510,7 @@ function Get-CatalogItems{
 }
 ```
 
-This is the HTTP request sent by the `Get-CatalogItems` function:
+The HTTP request sent by the `Get-CatalogItems` function looks like this:
 
 ```http
 GET [Organization URI]/api/data/v9.2/mspcat_applicationses?$select=mspcat_tpsid,mspcat_deploytype,mspcat_applicationtype,mspcat_businesscategory,mspcat_description,mspcat_applicationsid,_mspcat_publisherid_value,mspcat_name,statuscode&$filter=statecode%20eq%200%20and%20_mspcat_packageasset_value%20ne%20null&$expand=mspcat_PackageAsset($select=statecode,mspcat_uniquename,mspcat_version,statuscode) HTTP/1.1

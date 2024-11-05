@@ -16,9 +16,9 @@ Catalog items are stored in the [Catalog Item (mspcat_applications) table](table
 
 ## Install a specific version
 
-When using PAC CLI [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command or the `mspcat_InstallCatalogItemByCID` message, you will pass a string catalog item id (`cid` or `CID`) parameter.
+When using PAC CLI [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command or the `mspcat_InstallCatalogItemByCID` message, pass a string catalog item ID (`cid` or `CID`) parameter.
 
-When you want to install a specific version of a catalog item, you can append the version number to the end of the string value passed to the catalog item id parameter. The version value comes from the related [Package (mspcat_packages) record Version (mspcat_version) value](tables/mspcat_packages.md#BKMK_mspcat_Version).
+When you want to install a specific version of a catalog item, append the version number to the string value passed to the catalog item ID parameter. The version value comes from the related [Package (mspcat_packages) record Version (mspcat_version) value](tables/mspcat_packages.md#BKMK_mspcat_Version).
 
 For example, let's say that the following table represents the available versions of the `MyCatalogItem` catalog item:
 
@@ -29,20 +29,20 @@ For example, let's say that the following table represents the available version
 |2.0.0.0|Active but not published|
 |1.0.0.0|inactive|
 
-The following catalog item id parameter values will have different behaviors:
+The following catalog item ID parameter values have different behaviors:
 
 |Example  |Result|
 |---------|---------|
 |`MyCatalogItem`|Installs version 3.0.0.0 (Published version)|
 |`MyCatalogItem@3.0.0.0`|Installs version 3.0.0.0 (Published version)|
 |`MyCatalogItem@2.0.0.0`|Installs version 2.0.0.0|
-|`MyCatalogItem@1.0.0.0`|Fails with an error indicating that the version is not available.|
+|`MyCatalogItem@1.0.0.0`|Fails with an error indicating that the version isn't available.|
 
 ### [PAC CLI](#tab/cli)
 
 Use the [pac catalog install](../cli/reference/catalog.md#pac-catalog-install) command to install items from the catalog.
 
-In this example, you are [connected](../cli/reference/auth.md#connect-to-your-tenant) to the `EnvironmentWithCatalog`.
+In this example, you're [connected](../cli/reference/auth.md#connect-to-your-tenant) to the `EnvironmentWithCatalog`.
 
 Use the `-cid` parameter to specify the catalog item ID and `-te` to specify the environment to install the catalog item in. [You can also specify a specific version](#install-a-specific-version).
 
@@ -65,7 +65,7 @@ There are two messages you can use to install catalog items: `mspcat_InstallCata
 
 ### mspcat_InstallCatalogItemByCIDRequest
 
-Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. [You can specify a specific version](#install-a-specific-version). This is the message that is invoked by the PAC CLI and the application. 
+Use this message with the [`mspcat_TPSID` (**Catalog Item Id**) column](tables/mspcat_applications.md#BKMK_mspcat_TPSID) value. [You can specify a specific version](#install-a-specific-version). PAC CLI and the application use this message.
 
 The following static `InstallCatalogItemByCIDExample` method shows how to invoke this message using the early-bound classes generated for it using [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build).
 
@@ -118,7 +118,7 @@ EntityReference installHistoryReference =  InstallCatalogItemByCIDExample(
 
 #### Settings parameter
 
-The settings passed to the request as a string that represents the [IImportExtensions2.RuntimeSettings Property](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.iimportextensions2.runtimesettings) where the settings are a serialized `Dictionary<String,Object>` and the pipe character is a delimiter between the settings.  If `settings` represents the dictionary of settings, serialize the setting using code like this:
+The settings passed to the request as a string that represents the [IImportExtensions2.RuntimeSettings Property](/dotnet/api/microsoft.xrm.tooling.packagedeployment.crmpackageextentionbase.iimportextensions2.runtimesettings) where the settings are a serialized `Dictionary<String,Object>` and the pipe character is a delimiter between the settings. If `settings` represents the dictionary of settings, serialize the setting using code like this:
 
 ```csharp
 string serializedSettings = string.Join("|", settings.Select(kvp => $"{kvp.Key}:{kvp.Value}"));
@@ -126,7 +126,7 @@ string serializedSettings = string.Join("|", settings.Select(kvp => $"{kvp.Key}:
 
 ### mspcat_InstallCatalogItemRequest
 
-This message is provided for completeness and generally you should not use it. Use [mspcat_InstallCatalogItemByCIDRequest](#mspcat_installcatalogitembycidrequest) for normal operations. This message is used by the PAC CLI [pac catalog install command](../cli/reference/catalog.md#pac-catalog-install) when the optional  `--target-version` parameter is specified.
+This message is provided for completeness and generally you shouldn't use it. Use [mspcat_InstallCatalogItemByCIDRequest](#mspcat_installcatalogitembycidrequest) for normal operations. This message is used by the PAC CLI [pac catalog install command](../cli/reference/catalog.md#pac-catalog-install) when the optional  `--target-version` parameter is specified.
 
 Use this message when you have a reference to the catalog item you want to install or you want to include a reference to a specific package record to install related to the catalog item.
 
@@ -270,7 +270,7 @@ function Install-CatalogItemByCID {
 
 ### mspcat_InstallCatalogItem function
 
-The following `Install-CatalogItem` PowerShell function describes how to use the `mspcat_InstallCatalogItem` function.  This function depends on the `$baseURI` and `$baseHeaders`  global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
+The following `Install-CatalogItem` PowerShell function describes how to use the `mspcat_InstallCatalogItem` function. This function depends on the `$baseURI` and `$baseHeaders`  global variable values set by the `Connect` example function described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
 
 ```powershell
 <#
@@ -358,7 +358,7 @@ function Install-CatalogItem {
 
 ## Check status of catalog installation
 
-The following table shows the [statuscode Choices/Options](tables/mspcat_installhistory.md#statuscode-choicesoptions) options of the [Install History (mspcat_InstallHistory) table](tables/mspcat_installhistory.md). **Completed** (526430003) represents a successful submission, **Failed** (526430003) represents a unsuccessful submission.  [Custom state model transitions](/power-apps/developer/data-platform/define-custom-state-model-transitions) ensure that the status value will move through the active status reasons until the installation becomes inactive.
+The following table shows the [statuscode Choices/Options](tables/mspcat_installhistory.md#statuscode-choicesoptions) options of the [Install History (mspcat_InstallHistory) table](tables/mspcat_installhistory.md). **Completed** (526430003) represents a successful submission, **Failed** (526430003) represents an unsuccessful submission. [Custom state model transitions](/power-apps/developer/data-platform/define-custom-state-model-transitions) ensure that the status value moves through the active status reasons until the installation becomes inactive.
 
 |State|Value|Label|Allowed Transition to|
 |---|---|---|
