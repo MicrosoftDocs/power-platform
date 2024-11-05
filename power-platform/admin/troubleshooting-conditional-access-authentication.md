@@ -36,7 +36,7 @@ There are other situations which might cause this issue, if you checked and it's
 
 ### SharePoint Document Grid warning AADSTS50158 
 
-When message shown is AADSTS53000, the error can be related to either multifactor authentication or conditional access policy.
+When message shown is AADSTS50158, the error can be related to either multifactor authentication or conditional access policy.
 
 First, check if multifactor authentication is turned on in Dataverse following the steps in [AADSTS50076](#sharepoint-document-grid-warning-aadsts50076-or-aadsts50079). Turn on Dataverse multifactor authentication if it's not already turned on.
 
@@ -53,7 +53,7 @@ If multifactor authentication is turned on in both Dataverse and SharePoint, the
 
 ### SharePoint Document Grid warning AADSTS53001
 
-When message shown is AADSTS53000, the device isn't in a domain-joined status. Use the following steps to resole the issue.
+When message shown is AADSTS53001, the device isn't in a domain-joined status. Use the following steps to resole the issue.
 
 1. Log out or restart your device if you're already logged in. 
 1. Sign in to your device using your work or school account. 
