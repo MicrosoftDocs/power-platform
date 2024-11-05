@@ -1,7 +1,7 @@
 ---
 title: "Important changes (deprecations) coming in Power Platform"
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/28/2024
+ms.date: 11/04/2024
 ms.topic: conceptual
 ms.subservice: admin
 searchScope:
@@ -53,7 +53,7 @@ Support for app-only tokens by multitenant apps that don't have a service princi
 
 ## Hierarchy control in model-driven apps is deprecated
 
-Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until April 2025, at which time it will be removed from the product.
+Effective October 2024, the hierarchy control, which is used to define and query hierarchically related data in model-driven apps, is deprecated. The control will continue to work in existing apps until October 2025, at which time it will be removed from the product.
 
 The hierarchy control allows users to visualize relationships between records for a table. This is applicable for any table that has a self-referential relationship.
 
@@ -69,7 +69,7 @@ After its removal, end users will not be able to view the visual representation 
 
 You can temporarily enable the control until its removed in the product by editing the app settings. Go to Power Apps (make.powerapps.com) and open the app you want for editing. Then go to **Settings** > **Features** tab and enable the **Enable the "View hierarchy" capability** setting.
 
-This feature will be fully removed April 2025.
+This feature will be fully removed October 2025.
 
 If the hierarchy view is essential to your app, a custom PCF control that handles the hierarchy view must be created and deployed. For information about how to create a code component, go to [Create and build a code component](/power-apps/developer/component-framework/create-custom-controls-using-pcf).
 
