@@ -1,7 +1,7 @@
 ---
 title: "Approval Request (mspcat_certificationrequest) table/entity reference (Power Platform Catalog Manager)"
 description: "Includes schema information and supported messages for the Approval Request (mspcat_certificationrequest) table/entity with Power Platform Catalog Manager."
-ms.date: 06/26/2024
+ms.date: 11/07/2024
 ms.service: power-platform
 ms.topic: reference
 author: JimDaly

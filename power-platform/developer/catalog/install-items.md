@@ -4,7 +4,7 @@ description: "Learn how to install items to your organization's catalog of templ
 author: MattB-msft
 ms.author: mbarbour
 ms.subservice: developer
-ms.date: 11/01/2024
+ms.date: 11/07/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
