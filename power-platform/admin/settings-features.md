@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/31/2024
+ms.date: 11/05/2024
 ms.subservice: admin
 ms.author: sericks
 ms.reviewer: sericks
@@ -78,6 +78,12 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
+
+## Natural language grid and view search
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable this feature for:  | When searching for data in a grid, you to ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” will filter your view to display only those relevant cases.  | Users as the feature becomes available|
 
 ## Embedded content
 
