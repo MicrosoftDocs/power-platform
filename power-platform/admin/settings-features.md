@@ -86,7 +86,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable this feature for:  | When searching for data in a grid, you to ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” will filter your view to display only those relevant cases.  | Users as the feature becomes available|
+| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” will filter your view to display only those relevant cases.  | Users as the feature becomes available|
 
 ## Embedded content
 
