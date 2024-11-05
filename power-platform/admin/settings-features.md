@@ -37,6 +37,7 @@ To update these settings, make sure you have the System Administrator or System 
 ## Copilot (preview)
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 > [!NOTE]
 > Turning off Copilot in Power Apps for your tenant turns off [Copilot for makers](/power-apps/maker/canvas-apps/ai-conversations-create-app). It doesn't turn off [Copilot control for canvas apps](/power-apps/maker/canvas-apps/add-ai-copilot), [Copilot for model-driven apps](/power-apps/maker/canvas-apps/add-ai-copilot), or [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot). 
@@ -75,6 +76,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 ## AI suggestions for formula columns (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -82,6 +84,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 ## Natural language grid and view search (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -155,6 +158,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 ## Create new canvas apps and cloud flows in a Dataverse solution (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -252,6 +256,8 @@ To update these settings, make sure you have the System Administrator or System 
 | Share ideas query data to help improve ideas results. |To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. More information: [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).|  Off |
 
 ## Power BI components (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -260,6 +266,8 @@ To update these settings, make sure you have the System Administrator or System 
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
 ## Recycle Bin (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
