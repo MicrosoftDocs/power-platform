@@ -1,7 +1,7 @@
 ---
 title: "Catalog Item File (mspcat_CatalogItemFile) table/entity reference (Power Platform Catalog Manager)"
 description: "Includes schema information and supported messages for the Catalog Item File (mspcat_CatalogItemFile) table/entity with Power Platform Catalog Manager."
-ms.date: 11/07/2024
+ms.date: 11/05/2024
 ms.service: power-platform
 ms.topic: reference
 author: JimDaly

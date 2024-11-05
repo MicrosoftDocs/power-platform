@@ -1,7 +1,7 @@
 ---
 title: "Configuration for PowerApps Checker (mspcat_configurationforpowerapps) table/entity reference (Power Platform Catalog Manager)"
 description: "Includes schema information and supported messages for the Configuration for PowerApps Checker (mspcat_configurationforpowerapps) table/entity with Power Platform Catalog Manager."
-ms.date: 11/07/2024
+ms.date: 11/05/2024
 ms.service: power-platform
 ms.topic: reference
 author: JimDaly

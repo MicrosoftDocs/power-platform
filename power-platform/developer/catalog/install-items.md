@@ -4,11 +4,14 @@ description: "Learn how to install items to your organization's catalog of templ
 author: MattB-msft
 ms.author: mbarbour
 ms.subservice: developer
-ms.date: 11/07/2024
+ms.date: 11/05/2024
 ms.reviewer: jdaly
 ms.topic: article
 search.audienceType: 
   - developer
+contributors:
+ - JimDaly
+ - singhguru2001us  
 ---
 # Install items from the catalog in Power Platform using code
 

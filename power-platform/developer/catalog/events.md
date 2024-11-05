@@ -4,11 +4,14 @@ description: "Subscribe to events that notify you when changes occur in the cata
 author: MattB-msft
 ms.author: mbarbour
 ms.subservice: developer
-ms.date: 11/07/2024
+ms.date: 11/05/2024
 ms.reviewer: jdaly
 ms.topic: reference
 search.audienceType: 
   - developer
+contributors:
+ - JimDaly
+ - singhguru2001us
 ---
 
 # Catalog in Power Platform Events reference
