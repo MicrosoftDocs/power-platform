@@ -17,7 +17,7 @@ ms.contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Git integration in Microsoft Dataverse is used to create source control friendly representations of solutions and solution components in your Dataverse environment and store them in Azure DevOps. Using source control as the source of truth for your solutions allows you to track changes, collaborate with team members, and manage deployments to different environments from a central location while also providing traceability and auditability of changes. Git integration in Dataverse is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy. Git is an open-source distributed version control system (DVCS) that tracks changes to computer files, especially source code in software development.
+Source control integration allows development teams to synchronize solutions and solution objects across one or more Dataverse environments using an [Azure DevOps Git repository](../../azure/devops/repos/get-started/what-is-repos?view=azure-devops). The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy.
 
 > [!IMPORTANT]
 >
