@@ -22,6 +22,7 @@ Git integration in Dataverse is initiated from Power Platform on the **Solutions
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
 
 ## Prerequisites
 
