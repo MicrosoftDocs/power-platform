@@ -17,7 +17,7 @@ ms.contributors:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Source control integration allows development teams to synchronize solutions and solution objects across one or more Microsoft Dataverse environments using an [Azure DevOps Git repository](../../azure/devops/repos/get-started/what-is-repos?view=azure-devops). The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy.
+Source control integration allows development teams to synchronize solutions and solution objects across one or more Microsoft Dataverse environments using an [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos). The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines to deploy.
 
 > [!IMPORTANT]
 >
