@@ -25,7 +25,7 @@ Git integration in Dataverse is initiated from Power Platform on the **Solutions
 
 ## Prerequisites
 
-- Git integration for Dataverse is a Managed Environment feature and requires that your maker environments be converted to managed environments during the initial setup if the environment isn't already a managed environment. More information: [Managed Environments overview](../../admin/managed-environment-overview.md)
+- Dataverse Git integration feature of [Managed Environments](../../admin/managed-environment-overview.md). Development environments must be enabled as Managed Environments to use the feature.
 - An Azure DevOps subscription and licenses for users who interact with source control are required when connecting your Dataverse environment to Git.
 
    > [!NOTE]
