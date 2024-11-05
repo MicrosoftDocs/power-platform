@@ -72,14 +72,17 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available |
+| Enable smart paaste (preview) | Description | Off |
 
-## AI suggestions for formula columns
+## AI suggestions for formula columns (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
 
-## Natural language grid and view search
+## Natural language grid and view search (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -115,7 +118,8 @@ To update these settings, make sure you have the System Administrator or System 
 | Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. Learn more in [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
 | Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema is turned **On** for all environments without the option to turn off the feature. We recommend that you turn on the feature, in advance, so users can benefit from the product enhancements that come with it. Learn more in [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
 
-## Desktop flow run action logs configuration
+## Desktop flow run action logs configuration (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
