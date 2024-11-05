@@ -23,8 +23,7 @@ Source control integration allows development teams to synchronize solutions and
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - This feature is currently only available to environments that have been created for early release cycles. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
-> - There is a deployment freeze for North America that will delay the feature from being available for another week.
+> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
 
 In this article, you find some of the key concepts and benefits to using Git enabled source control with your Dataverse environments and solutions.
 
