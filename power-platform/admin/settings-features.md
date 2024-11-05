@@ -72,7 +72,6 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available |
-| Enable smart paaste (preview) | Description | Off |
 
 ## AI suggestions for formula columns (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -118,8 +117,7 @@ To update these settings, make sure you have the System Administrator or System 
 | Enable storage of desktop flow files into v2 schema.| If **On**, Dataverse database consumption for paid license users is reduced. Also, it offloads components of your desktop flows into your Dataverse for Apps File Capacity. Learn more in [Enable the v2 schema](/power-automate/desktop-flows/schema#enable-the-v2-schema). | On |
 | Opt-out of desktop flow schema v2 enabled by default.| In 2024, v2 schema is turned **On** for all environments without the option to turn off the feature. We recommend that you turn on the feature, in advance, so users can benefit from the product enhancements that come with it. Learn more in [Schema v2 enabled by default](/power-automate/desktop-flows/schema#schema-v2-enabled-by-default).  | Off |
 
-## Desktop flow run action logs configuration (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+## Desktop flow run action logs configuration
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -155,7 +153,8 @@ To update these settings, make sure you have the System Administrator or System 
 |---------|-------------|---------------|
 | Allow records to be merged asynchronously | If **On**, records merged through the Unified Client interface are merged asynchronously in the background. |Off |
 
-## Create new canvas apps and cloud flows in a Dataverse solution
+## Create new canvas apps and cloud flows in a Dataverse solution (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
