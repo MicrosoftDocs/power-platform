@@ -140,7 +140,7 @@ The results returned are an instance of the `mspcat_SubmitCatalogApprovalRequest
 
 The `mspcat_SubmitCatalogApprovalRequest` message requires that the submission JSON file [CatalogItemDefinition](submission-reference.md#catalogitemdefinition) `packageFile` property is set to specify a URL to download a package deployer package file.
 
-This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
+This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function).
 
 ```powershell
 function SubmitCatalogApprovalRequest {
@@ -830,7 +830,7 @@ static void ResolveApproval(
 
 This `ResolveApproval` PowerShell function demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` action.
 
-This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
+This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
 ```powershell
 <#
