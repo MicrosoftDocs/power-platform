@@ -431,9 +431,48 @@ Returning Catalog Item ID: <solutionUniqueName>
 
 ### [Web API](#tab/webapi)
 
-> TODO: TEST THIS FUNCTION
+This `New-CatalogItemFromSolution` PowerShell function shows how to create a catalog item from a solution following the steps described in [Process](#process). The `catalogItemSubmissionJsonString` parameter for this function should not have a `packageFile` property set because this function will add it.
+
+This `New-CatalogItemFromSolution` PowerShell function depends on the following:
+
+- The `$baseURI` and `$baseHeaders` values set using the `Connect` function as described in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function) 
+- The `New-Record`, `Update-Record`, and `Get-Record` functions described in [Create table operations functions](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api?view=dataverse-latest#create-table-operations-functions)
+- The `Get-FileSasUrl` function described in [Grant limited access to Dataverse files using shared access signatures](/power-apps/developer/data-platform/getfilesasurl?tabs=webapi)
 
 ```powershell
+.SYNOPSIS
+Creates a new catalog item from a solution and submits it for approval.
+
+.DESCRIPTION
+The `New-CatalogItemFromSolution` function automates the process of creating a new catalog item from a specified solution and submitting it for approval. It performs the following steps:
+1. Validates the existence of the solution.
+2. Creates a package store record.
+3. Submits the package for approval.
+4. Monitors the approval status.
+5. Retrieves the SAS URL for the package file.
+6. Submits the catalog item for certification.
+
+.PARAMETER solutionName
+The name of the solution.
+
+.PARAMETER solutionUniqueName
+The unique name of the solution.
+
+.PARAMETER catalogItemSubmissionJsonString
+The JSON string containing the catalog item submission details.
+
+.EXAMPLE
+New-CatalogItemFromSolution `
+   -solutionName "MySolution" `
+   -solutionUniqueName "my_solution" `
+   -catalogItemSubmissionJsonString '{"catalogItemDefinition":{...}}'
+
+This example creates a new catalog item from the solution named "MySolution" with the unique name "my_solution" and submits it for approval using the provided JSON string.
+
+.NOTES
+Ensure that the `Get-Records`, `New-Record`, `Update-Record`, `Get-Record`, and `Get-FileSasUrl` functions are defined and accessible in your environment.
+The function uses specific status codes and operations that should be defined in your system.
+
 function New-CatalogItemFromSolution {
    param(
       [Parameter(Mandatory)]
@@ -447,7 +486,6 @@ function New-CatalogItemFromSolution {
       $catalogItemSubmissionJsonString
    )
    $statusCodeLabelName = 'statuscode@OData.Community.Display.V1.FormattedValue'
-
 
    $solutionQuery = "?`$filter=uniquename eq '$solutionUniqueName'&`$select=solutionid"
    $solutionCollection = (Get-Records `
@@ -469,17 +507,17 @@ function New-CatalogItemFromSolution {
       -setName 'mspcat_packagestores' `
       -body $packageStoreRecord
    
-   Write-Host ('Created package store record with ID' + $packageId)
+   Write-Host ('Created package store record with ID ' + $packageId)
 
    # Set statuscode to Submitted
    $packageStoreRecord = @{
-      statuscode = 958090004 # Submitted
+      statuscode = 958090004
    }
 
    Update-Record `
       -setName 'mspcat_packagestores' `
       -id $packageId `
-      -body ($packageStoreRecord | ConvertTo-Json) | Out-Null
+      -body $packageStoreRecord | Out-Null
 
    Write-Host  'Updated package store record status to Submitted'
 
@@ -524,7 +562,7 @@ function New-CatalogItemFromSolution {
 
    $catalogItemSubmission.catalogItemDefinition.packageFile = $packageFile
 
-   $catalogItemSubmissionJsonString = $catalogItemSubmission | ConvertTo-Json
+   $catalogItemSubmissionJsonString = $catalogItemSubmission | ConvertTo-Json -Depth 10
 
    $encodedCatalogItemSubmission = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($catalogItemSubmissionJsonString))
 
@@ -538,13 +576,13 @@ function New-CatalogItemFromSolution {
 
    $results = Invoke-RestMethod `
       -Method Post `
-      -Uri $baseURI + 'mspcat_SubmitCatalogApprovalRequest' `
+      -Uri ($baseURI + 'mspcat_SubmitCatalogApprovalRequest') `
       -Headers $postHeaders `
       -Body $body
    
    $certificationRequestId = $results.CertificationRequestId
 
-   Write-Host ('Submitted catalog approval request with ID' + $certificationRequestId)
+   Write-Host ('Submitted catalog approval request with ID ' + $certificationRequestId)
 
    # Approval must be in either InProgress or Submitted to be processed
 
@@ -569,7 +607,7 @@ function New-CatalogItemFromSolution {
       $statusCodeValue -eq 526430009) # Processing
    
    # If statuscode isn't Submitted or InProgress, throw an exception
-   if ($statusCodeValue -ne 1 -or $statusCodeValue -ne 526430001) {
+   if (!($statusCodeValue -eq 1 -or $statusCodeValue -eq 526430001)) {
       throw "Certification request $statusCodeLabel"
    }
 
@@ -593,7 +631,7 @@ function New-CatalogItemFromSolution {
 
    $tpsid = $approvalRequestRecord.mspcat_Application.mspcat_tpsid
 
-   Write-Host 'Returning Catalog Item ID:' + $tpsid
+   Write-Host ('Returning Catalog Item ID:' + $tpsid)
 
    return $tpsid
 }
@@ -618,8 +656,6 @@ Submitted catalog approval request with ID b932c7c8-2137-ef11-8409-6045bdd3aec3
 Approved the certification request
 Returning Catalog Item ID: <solutionUniqueName>
 ```
-
-
 ---
 
 ## Check status of catalog submissions
@@ -761,7 +797,7 @@ There is no PAC CLI command to perform this operation.
 
 ### [SDK for .NET](#tab/sdk)
 
-This static `ResolveApproval` method demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval`. This example uses the the `mspcat_ResolveApprovalRequest` class generated by the [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build) command.
+This static `ResolveApproval` method demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` message. This example uses the the `mspcat_ResolveApprovalRequest` class generated by the [pac modelbuilder build](../cli/reference/modelbuilder.md#pac-modelbuilder-build) command.
 
 ```csharp
 /// <summary>
@@ -792,7 +828,7 @@ static void ResolveApproval(
 
 ### [Web API](#tab/webapi)
 
-This `ResolveApproval` Powershell function demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` message.
+This `ResolveApproval` Powershell function demonstrates how to resolve a request for a catalog submission using the `mspcat_ResolveApproval` action.
 
 This function depends on the `$baseURI` and `$baseHeaders` values set using the `Connect` function as describe in [Create a Connect function](/power-apps/developer/data-platform/webapi/use-ps-and-vscode-web-api#create-a-connect-function)
 
