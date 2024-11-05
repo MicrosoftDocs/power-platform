@@ -73,6 +73,15 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
+        - name: Source control integration (preview)
+          href: git-integration/overview.md
+          items:
+            - name: Dataverse Git integration setup
+              href: git-integration/connecting-to-git.md
+            - name: Source control operations
+              href: git-integration/source-control-operations.md   
+            - name: Frequently asked questions
+              href: git-integration/faqs.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
