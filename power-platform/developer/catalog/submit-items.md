@@ -246,8 +246,8 @@ static string CatalogItemFromSolution(
         Attributes = {
             {"mspcat_name", solutionName},
             {"mspcat_solutionuniquename", solutionUniqueName},
-            {"mspcat_intendeddeploymenttype", new OptionSetValue(526430000)},
-            {"mspcat_operation", new OptionSetValue(958090001)}
+            {"mspcat_intendeddeploymenttype", new OptionSetValue(526430000)}, // Standard
+            {"mspcat_operation", new OptionSetValue(958090001)} //Create Package
         }
     };
 
@@ -255,10 +255,13 @@ static string CatalogItemFromSolution(
     Console.WriteLine($"Created package store record with ID {packageStoreRecordId}");
 
     packageStoreRecord.Attributes.Clear(); //Don't send values again
+
     packageStoreRecord.Id = packageStoreRecordId;
     int statusCodeValue = 958090004; // Submitted
-    string statusReason;
+
+    string statusReason; // Set in the loop
     packageStoreRecord["statuscode"] = new OptionSetValue(statusCodeValue);
+
     service.Update(packageStoreRecord); //Set status to Submitted
     Console.WriteLine("Updated package store record status to Submitted");
     // Columns to retrieve while polling the package store record
