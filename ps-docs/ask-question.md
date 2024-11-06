@@ -39,7 +39,7 @@ One of the many benefits of Project Sophia is that you can connect to your busin
 
 Use one of the following options to ask questions about your data:
    - On the Home screen, on the **Onboarding** tile, select **Go** > **Add data** > upload data or use the sample data. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
-   - On the Home screen, select **New workspace** > **Add data** > use data from **Dataverse**, or **Dynamics 365 Sales**.
+   - On the Home screen, select **New workspace** > **Add data** > use data from **Dataverse**, **Dynamics 365 Sales**, or other data sources.
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
     > [!IMPORTANT]
     > You need to have account at the data source to establish a connection to it. For more information, see [Connect to your data](data-connections.md).
