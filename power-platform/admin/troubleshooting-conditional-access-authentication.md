@@ -81,7 +81,7 @@ When message shown is AADSTS530003, the access is related to a device. First use
 1. Check if the device is in the supported list:
    1. Select the link under **Conditions**.
    1. Select the link under **Client apps**.
-   1. Review the selected client apps.
+   1. Review the selected client apps and in particular the **Browser** client app.
  1. Check if the device is filtered:
    1. Select the link under **Conditions**.
    1. Select the link under **Filter for devices**.
