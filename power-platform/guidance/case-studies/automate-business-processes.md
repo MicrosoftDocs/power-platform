@@ -21,9 +21,9 @@ Read the full story: [Cineplex saves 30,000 hours a year with Power Platform and
 
 ## Business challenges
 
-Here are some of the challenges Cineplex faced before implementing their Power Platform solution:
+Here are the challenges Cineplex faced before implementing their Power Platform solution:
 
-- **Manual processes**: Many business processes were manual and time-consuming, requiring significant human effort and increasing the likelihood of errors.
+- **Manual processes**: Business processes were manual and time-consuming, requiring significant human effort and increasing the likelihood of errors.
 
 - **Inefficiencies**: There were inefficiencies in various departments, such as finance and guest services, leading to delays and reduced productivity.
 
@@ -53,7 +53,7 @@ To automate business processes to improve efficiency and reduce manual work, the
 
 Cineplex began their automation journey with **gift card activation**, by using Power Automate to manage orders through their CRM system and activate cards in a separate system. After this success, they rolled out **email processing automation** by using AI Builder for handling high volumes of messages, automating information extraction, and routing to appropriate departments.
 
-As they expanded usage across the company, Cineplex also automated several other tasks, including:
+As they expanded usage across the company, Cineplex also automated other tasks, including:
 
 - **Invoice processing**: Cineplex automated the extraction and processing of invoice data, reducing the time and effort required for manual data entry and minimizing errors. This automation ensures that invoices are processed quickly and accurately, improving overall financial efficiency.
 
@@ -111,9 +111,9 @@ To automate email processing, Cineplex took these steps:
 
 - **Set up automated responses**: Cineplex set up automated responses for common inquiries, ensuring timely and consistent communication with customers. These automated responses provide immediate acknowledgment of receipt and address frequently asked questions, enhancing customer satisfaction.
 
-- **Integrate generative AI and AI Builder**: Cineplex integrated the email automation with other internal systems to streamline processes such as ticketing and customer support. This integration ensures that information flows seamlessly between systems, reducing manual data entry and minimizing errors.
+- **Integrate generative AI and AI Builder**: Cineplex integrated email automation with other internal systems to streamline processes such as ticketing and customer support. This integration ensures that information flows seamlessly between systems, reducing manual data entry and minimizing errors.
 
-- **Integrate with other systems**: Cineplex integrated the email automation with other internal systems to streamline processes such as ticketing and customer support.
+- **Integrate with other systems**: Cineplex integrated email automation with other internal systems to streamline processes such as ticketing and customer support.
 
 - **Monitor and optimize**: Cineplex continuously monitors and optimizes the automated workflows to ensure they remain efficient and effective. Regular monitoring allows the team to identify any issues or bottlenecks and make necessary adjustments to improve performance.
 
