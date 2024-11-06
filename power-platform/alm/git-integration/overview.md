@@ -1,6 +1,6 @@
 ---
 title: "Overview of Dataverse Git integration"
-description: "This article discusses the integration of Dataverse with Git, focusing on high level concepts and requirements."
+description: "This article discusses the integration of Dataverse with Git, focusing on high-level concepts and requirements."
 author: shmcarth
 ms.subservice: alm
 ms.author: matp
@@ -23,17 +23,20 @@ Source control integration allows development teams to synchronize solutions and
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
+> - Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
 
-In this article, you find some of the key concepts and benefits to using Git enabled source control with your Dataverse environments and solutions. For information about Git in Azure DevOps, go to [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos).
+In this article, you find some of the key concepts and benefits to using Git-enabled source control with your Dataverse environments and solutions. For information about Git in Azure DevOps, go to [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos).
 
-:::image type="content" source="media/GitIntegrationFlow.png" alt-text="Makers in their environments can make changes to unmanaged solution and commit to Git before deploying with pipelines" lightbox="media/GitIntegrationFlow.png":::
+:::image type="content" source="media/GitIntegrationFlow.png" alt-text="Makers in their environments can make changes to an unmanaged solution and commit to Git before deploying with pipelines" lightbox="media/GitIntegrationFlow.png":::
 
 ## ALM in the Power Platform and Dataverse
 
-Power Platform provides many out of the box capabilities that enable organizations to manage application lifecycle management (ALM) for their solutions. Included are the ability to package solutions as containers for the many different types of components in the platform, manage environments involved in the application lifecycle, and deploy solutions using [pipelines in Power Platform](../pipelines.md). There are also several ways to integrate Git repositories with Power Platform using developer tooling. With native integration of Git in Dataverse, the process is simplified and streamlined for makers to work with their solutions in a familiar way and interact with source control through simplified interfaces in Power Apps (make.powerapps.com).
+Power Platform provides many out-of-the-box capabilities that enable organizations to manage application lifecycle management (ALM) for their solutions. Included are the ability to package solutions as containers for the many different types of components in the platform, manage environments involved in the application lifecycle, and deploy solutions using [pipelines in Power Platform](../pipelines.md). There are also several ways to integrate Git repositories with Power Platform using developer tooling. With native integration of Git in Dataverse, the process is simplified and streamlined for makers to work with their solutions in a familiar way and interact with source control through simplified interfaces in Power Apps (make.powerapps.com).
 
 ## Benefits
+
+
+
 
 - Source control as source of truth: Within some organizations, the source of truth for deployments in Dataverse is the maker environments in which solutions are built. The primary driver for this behavior is the non-native Git integration uses advanced techniques and tools, which require professional IT expertise to get started. With the native integration of Git in Dataverse, source control can be enabled in only a few steps and provides a familiar interface for makers to work with their solutions.
 - Safety, auditing, and compliance using SDLC best practices: Software development lifecycle (SDLC) best practices are a set of guidelines and processes that help you manage your software development projects effectively. By using Git integration in Dataverse, you follow SDLC practices such as version control, code reviews, and static source code analysis to ensure the quality, reliability, and security of your solutions. Git integration in Dataverse also provides features such as auditing, compliance, and traceability that help you track changes to your solutions and collaborate with other team members effectively.
