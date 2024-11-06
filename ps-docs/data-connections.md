@@ -51,24 +51,22 @@ You can upload a PDF (.pdf), CSV (.csv), or Excel (.xls) file. The following lim
   - Can’t contain merged cells.
   - Elements such as images, charts, and macros can't be processed.
 - PDF:
+  - The maximum supported number of pages is 150 per pdf file.
   - Must contain selectable text. You can test it by trying to highlight text within the PDF. If you can’t select or highlight the text, then it can't be processed.
   - Use original digital documents or PDF that are converted directly from word processors or other digital sources. A scanned PDF doesn't work.
   - If the PDF contains tables, make sure the borders are clearly outlined. Avoid using any contrasting colors to differentiate between rows and columns.
 
 ## Connecting to a data source
 
-Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dataverse** and **Dynamics 365 Sales** data sources, with more to come in the future. You can establish one connection in a workspace. You can upload files for more context in addition to connecting to a data source.
+Project "Sophia" allows you to connect to Enterprise data sources. Currently it supports connecting to **Dataverse**, **Dynamics 365 Sales**, and **Dynamics 365 Customer Service** data sources, with more to come in the future. You can establish one connection in a workspace. You can upload files for more context in addition to connecting to a data source.
 
 > [!IMPORTANT]
-> You need to have an account with the data source to establish a connection with it.
+> The connection options depend on the user account you use to log in to Project "Sophia". If the user account has access to these data sources, then the data options will appear. If you don't see those options when connecting a data source, contact your administrator to give your account access to these sources.
 
 1. If you're connecting to a data source, follow the instructions in the authentication dialog box.
 1. Select **Generate** or enter your question in the text box and then select **Generate**.
 
 ### Use data from Dataverse
-
-> [!IMPORTANT]
-> You need a Dataverse account to establish a connection to Dataverse.
 
 You can connect to your business data in Dataverse, which enables you to do rich analysis across your business data estate. This includes any custom apps, data tables, or fields included there.
 
@@ -85,9 +83,6 @@ Similar to other connections, based on the question you ask, Project "Sophia" lo
 
 ### Use data from Dynamics 365 Sales
 
-> [!IMPORTANT]
-> You need to have a Dynamics 365 Sales account to establish a connection with Dynamics 365 Sales.
-
 You can connect to your business data from Dynamics 365 Sales, which enables you to do rich analysis across your business data estate.
 
 For a Dynamics 365 Sales connection:
@@ -102,3 +97,21 @@ Based on the question you ask, Project "Sophia" looks through the data source fo
 > Make sure that custom tables added to Dynamics 365 Sales have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
 
 If the user doesn't enter any question, by default, Project "Sophia" answers the question based on core tables in Dynamics 365 Sales, like accounts, opportunities, leads, and more. You can establish one connection in a workspace. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Sales instances. It's advisable to have proper descriptions to these custom items.
+
+### Use data from Dynamics 365 Customer Service
+
+You can connect to your business data from Dynamics 365 Customer Service, which enables you to do rich analysis across your business data estate.
+
+For a Dynamics 365 Customer Service connection:
+- Your sign in information for Project "Sophia" is used to connect to Dynamics 365 Customer Service.
+- If you have access to multiple instances, choose one.
+- If an instance isn't found, then the option to connect to **Dynamics 365 Customer Service** won't be available.
+- If Project "Sophia" isn't able to access the data in the instance, it shows an error message.
+
+Based on the question you ask, Project "Sophia" looks through the data source for the most relevant data to answer the question. Project "Sophia" depends on the metadata available (for example, table and column descriptions) to help identify the relevant data. This connection has same limitations on number of tables and rows as the Dataverse connection. If the logged in user does not have read access to the Customer Service Hub app in Dynamics 365 Customer Service deployment, then Project "Sophia" might not show the option to connect to it. In this case, try connecting to it as a Dataverse connection.
+
+> [!TIP]
+> Make sure that custom tables added to Dynamics 365 Customer Service have proper descriptions. The blueprint generated depends on the data found. If no data is found, then Project "Sophia" shows an error and might ask if you can rephrase the question. If you use the AI cursor to ask more questions, Project "Sophia" will consider the data source again to answer it.
+
+If the user doesn't enter any question, by default, Project "Sophia" answers the question based on core tables in Dynamics 365 Customer Service, like accounts, incidents, incident-resolutions, and more. You can establish one connection in a workspace. Project "Sophia" supports both custom fields and custom tables in Dynamics 365 Customer Service instances. It's advisable to have proper descriptions to these custom items.
+
