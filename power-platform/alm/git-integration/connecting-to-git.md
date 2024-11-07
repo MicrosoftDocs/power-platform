@@ -75,11 +75,11 @@ Solution binding can be used to source control multiple solutions within the sam
 
 #### Other considerations
 
-If you select environment binding, all new unmanaged solutions are automatically synchronized with source code with no further actions, and if you select per solution binding, creation of a new solution later requires that the solution also be configured for source control before being synced to source control. Consider the safety of having all solutions synchronized versus the flexibility of having different folders and source code linkages for each solution.
+If you select environment binding, all new unmanaged solutions are automatically synced with source code with no further actions, and if you select per solution binding, creation of a new solution later requires that the solution also be configured for source control before being synced to source control. Consider the safety of having all solutions synced versus the flexibility of having different folders and source code linkages for each solution.
 
 ### Binding a solution to a repository and folder (when using the solution binding strategy)
 
-Once you connected your environment to Git using the solution binding strategy, you can bind a solution to a repository and folder in the same Azure DevOps project.
+Once you've connected your environment to Git using the solution binding strategy, you can bind a solution to a repository and folder in the same Azure DevOps project.
 
 1. In the **Solutions** area, select the three vertical dots next to the solution you want to bind to source control, and then select **Connect to Git**.
 1. Select an existing branch, or create a new branch, enter a Git folder to bind the solution to, and then select **Connect**.
