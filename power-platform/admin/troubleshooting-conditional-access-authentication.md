@@ -4,7 +4,7 @@ description: Learn how to troubleshoot issues related to conditional access auth
 author: adrianorth
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/05/2024
+ms.date: 11/07/2024
 reviewer: sericks
 ms.subservice: admin
 ms.author: aorth
@@ -29,10 +29,10 @@ In this case, an external security challenge is required but not satisfied. A co
 
 1. Open the Microsoft Entra admin center to **SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access).
 1. Select **Access controls** > **Grant** to open the **Grant** dialog.
-1. Under **Grant access** check if **Require multifactor authentication** and optionally **Require authentication strength** is checked
-1. If either item is checked, then enable the related Dataverse conditional access policy if not enabled already using [Find Dataverse conditional access](#find-dataverse-conditional-access)
+1. Under **Grant access**, check if the **Require multifactor authentication** option, and optionally the **Require authentication strength** option, is selected.
+1. If either item is selected, then turn on the related Dataverse conditional access policy, if not already turned on, using [Find Dataverse conditional access](#find-dataverse-conditional-access).
 
-There are other situations which might cause this issue, if you checked and it's not multifactor authentication related contact Microsoft support and open a ticket requesting support.
+There are other situations which might cause this issue. If you checked and it's not multifactor authentication-related, contact Microsoft support and open a ticket requesting support.
 
 ### SharePoint Document Grid warning AADSTS50158 
 
@@ -47,13 +47,13 @@ If multifactor authentication is turned on in both Dataverse and SharePoint, the
    1. Select the link under **Network**.
    1. Review network conditions selected under **Include** and **Exclude**.
 1. Check if the device is in locations conditions:
-   1. Select link under **Conditions**.
-   1. Select link under **Locations**.
+   1. Select the link under **Conditions**.
+   1. Select the link under **Locations**.
    1. Review selected network or physical locations.
 
 ### SharePoint Document Grid warning AADSTS53001
 
-When message shown is AADSTS53001, the device isn't in a domain-joined status. Use the following steps to resole the issue.
+When message shown is AADSTS53001, the device isn't in a domain-joined status. Use the following steps to resolve the issue.
 
 1. Log out or restart your device if you're already logged in. 
 1. Sign in to your device using your work or school account. 
@@ -67,7 +67,7 @@ When message shown is AADSTS53000, a SharePoint conditional access policy is pre
 
 1. Open the Microsoft Entra admin center to **SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access).
 1. Select **Access controls** > **Grant** to open the **Grant** dialog.
-1. Under **Grant access**, check if the **Require device to be marked as compliant** option or **Require Microsoft Entra hybrid joined device** option is selected.
+1. Under **Grant access**, check if the **Require device to be marked as compliant** option or the **Require Microsoft Entra hybrid joined device** option is selected.
 
 ### SharePoint Document Grid warning AADSTS530003 
 
@@ -97,7 +97,7 @@ When the Document Associated grid shows a warning message "Authentication isn't 
 
 ### Find SharePoint Online conditional access
 
-1. Open Microsoft Entra as tenant admin: https://entra.microsoft.com
+1. Open [Microsoft Entra](https://entra.microsoft.com) as a tenant admin.
 1. Select **Applications** > **Enterprise Applications** in the left menu.
 1. Clear the filter "Application type == Enterprise Applications".
 
@@ -115,13 +115,13 @@ When the Document Associated grid shows a warning message "Authentication isn't 
 
 ### Find Dataverse conditional access
 
-1. Open Microsoft Entra as tenant admin: https://entra.microsoft.com
+1. Open [Microsoft Entra](https://entra.microsoft.com) as a tenant admin.
 1. Select **Applications** > **Enterprise Applications** in the left menu.
 1. Clear the filter "Application type == Enterprise Applications".
    
    ![Clear application type filter](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-clear-application-type.png "Clear application type filter")  
 
-1. Search for **Dataverse** and select in the list.
+1. Search for **Dataverse** and select it in the list.
 
    ![Search for Dataverse](./media/troubleshooting-conditional-access-in-authentication/entra-conditional-access-search-dataverse.png "Search for Dataverse")  
   
