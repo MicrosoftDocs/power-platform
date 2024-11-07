@@ -13,11 +13,11 @@ search.audienceType:
 ---
 # Troubleshooting conditional access authentication
 
-This article outlines how to address warning messages related to conditional access authentication improvements for [Manage your documents using SharePoint](manage-documents-using-sharepoint.md).
+This article outlines how to address warning messages related to conditional access authentication improvements for [Manage your documents using SharePoint](manage-documents-using-sharepoint.md). These warning messages will rollout soon notifying which users will be affected. 
 
 With security improvements in SharePoint integration authentication, you need to keep SharePoint Online and Dataverse conditional access aligned to avoid issues. These sections outline how to review and align conditional access.
 
-## Conditional access isn't enabled on correctly
+## Conditional access isn't enabled correctly
 
 When the Document Associated grid shows a warning message "Conditional access isn't enabled correctly", the error code at the end of the message guides addressing the configuration.
 
@@ -25,7 +25,7 @@ When the Document Associated grid shows a warning message "Conditional access is
 
 ### SharePoint Document Grid warning AADSTS50076 or AADSTS50079 
 
-In this case, an external security challenge is required but not satisfied. A common cause is when multifactor authentication is turned on for SharePoint, but not for Dataverse. Use these steps to ensure both are aligned.
+When message shown is AADSTS50076 or AADSTS50079, an external security challenge is required but not satisfied. A common cause is when multifactor authentication is turned on for SharePoint, but not for Dataverse. Use these steps to ensure both are aligned.
 
 1. Open the Microsoft Entra admin center to **SharePoint Access Policy** using [Find SharePoint Online conditional access](#find-sharepoint-online-conditional-access).
 1. Select **Access controls** > **Grant** to open the **Grant** dialog.
