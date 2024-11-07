@@ -1,27 +1,27 @@
 ---
 title: Cineplex automates business processes with generative AI and Power Automate
-description: Learn how Cineplex uses generative AI and Power Automate for invoice processing, payroll, financial reporting, customer feedback, inventory, onboarding, ticket sales, and email.
+description: Learn how Cineplex uses generative AI and Power Automate for invoice processing, financial reporting, onboarding, ticket sales, and more.
 author: robstand
 ms.author: sashi
 ms.topic: overview
 ms.subservice: guidance
-ms.date: 10/31/2024
+ms.date: 11/07/2024
 
 ---
 
 # Cineplex automates business processes with generative AI and Power Automate
 
-In this case study, you’ll learn how [Cineplex](https://www.cineplex.com/), one of Canada’s largest movie theater chains, transformed its operations through a range of automations to streamline business processes, reduce manual work, and improve efficiency across departments. Spearheaded by Bo Wang, Vice President of Tax and Treasury, the team established an Automation Center of Excellence that drives Cineplex’s digital shift.
+In this case study, you'll learn how [Cineplex](https://www.cineplex.com/), one of Canada's largest movie theater chains, transformed its operations through a range of automations to streamline business processes, reduce manual work, and improve efficiency across departments. Spearheaded by Bo Wang, Vice President of Tax and Treasury, the team established an Automation Center of Excellence that drives Cineplex's digital shift.
 
-With automations in critical areas like invoice processing, payroll, financial reporting, customer feedback, inventory, onboarding, ticket sales, and email processing, Cineplex has achieved faster, more accurate workflows that enhance productivity and support better decision-making across the organization.
+With automations in critical areas like invoice processing, payroll, financial reporting, customer feedback, inventory, onboarding, ticket sales, and email processing, Cineplex achieved faster, more accurate workflows that enhance productivity and support better decision-making across the organization.
 
-The team also leverages AI Builder to enhance automation with AI capabilities, such as keyword extraction in email processing, which improves system adaptability and handles high volumes of email messages during peak times.
+The team uses AI Builder to enhance automation with AI capabilities, such as keyword extraction in email processing, which improves system adaptability and handles high volumes of email messages during peak times.
 
 Read the full story: [Cineplex saves 30,000 hours a year with Power Platform and generative AI](https://customers.microsoft.com/story/1751257654493783966-cineplex-telecommunications-power-automate-en-canada)
 
 ## Business challenges
 
-Here are the challenges Cineplex faced before implementing their Power Platform solution:
+Cineplex faced these challenges before implementing their Power Platform solution:
 
 - **Manual processes**: Business processes were manual and time-consuming, requiring significant human effort and increasing the likelihood of errors.
 
@@ -39,7 +39,7 @@ To automate business processes to improve efficiency and reduce manual work, the
 
 - **Identified key tasks to automate**: Cineplex found areas where automation can reduce manual work and improve efficiency.
 
-- **Started with a pilot project**: The team began with a pilot project in one department. Used the pilot project to test and refine the automation process.
+- **Started with a pilot project**: The team began with a pilot project in one department. They used the pilot project to test and refine the automation process.
 
 - **Expanded usage**: They rolled out successful automations across the organization.
 
@@ -51,7 +51,7 @@ To automate business processes to improve efficiency and reduce manual work, the
 
 ## Identify key tasks to automate
 
-Cineplex began their automation journey with **gift card activation**, by using Power Automate to manage orders through their CRM system and activate cards in a separate system. After this success, they rolled out **email processing automation** by using AI Builder for handling high volumes of messages, automating information extraction, and routing to appropriate departments.
+Cineplex began their automation journey with **gift card activation**, by using Power Automate to manage orders through their Customer Relationship Management (CRM) system and activate cards in a separate system. After this success, they rolled out **email processing automation** by using AI Builder for handling high volumes of messages, automating information extraction, and routing to appropriate departments.
 
 As they expanded usage across the company, Cineplex also automated other tasks, including:
 
@@ -71,13 +71,13 @@ As they expanded usage across the company, Cineplex also automated other tasks, 
 
 ## Automation of gift card activation use case
 
-Cineplex’s automation of gift card activation served as a pilot project to test Microsoft Power Automate’s feasibility and benefits. The goal was to streamline the manual, time-consuming process of activating physical gift cards purchased online by integrating their CRM system with the gift card activation system. The pilot automated the entire process, from order retrieval to activation:
+Cineplex's automation of gift card activation served as a pilot project to test Microsoft Power Automate's feasibility and benefits. The goal was to streamline the manual, time-consuming process of activating physical gift cards purchased online by integrating their CRM system with the gift card activation system. The pilot automated the entire process, from order retrieval to activation:
 
 - **Scheduled cloud flow**: A Power Automate cloud flow is scheduled to run twice a day. This automated process ensures that gift card orders are processed in a timely manner, reducing delays and improving customer satisfaction.
 
 - **Desktop flow**: The cloud flow initiates a desktop flow, which handles the interaction with the systems involved in gift card activation. This desktop flow automates the steps that would otherwise require manual intervention, such as logging into systems and navigating through various screens.
 
-- **Integration with Customer Relationship Management (CRM) system**: The desktop flow accesses the CRM system to retrieve gift card orders.
+- **Integration with CRM system**: The desktop flow accesses the CRM system to retrieve gift card orders.
 
 - **Interaction with the activation system**: The flow then interacts with the separate gift card activation system to load and activate the cards. This step involves entering the necessary information into the activation system and confirming that the cards are successfully activated.
 
@@ -95,7 +95,7 @@ The Cineplex team designed a workflow using Power Automate to handle the entire 
 
 - **Validate information**: The workflow ensures that all necessary information, such as booking ID and payment details, is correctly captured and validated. This step is crucial to prevent errors and ensure that refunds are processed accurately.
 
-- **Process refunds**: The system integrates with Cineplex’s payment systems to process refunds directly to the customer’s original payment method. This integration allows for seamless and timely processing of refunds, improving customer satisfaction.
+- **Process refunds**: The system integrates with Cineplex's payment systems to process refunds directly to the customer's original payment method. This integration allows for seamless and timely processing of refunds, improving customer satisfaction.
 
 - **Notify customers**: Automated notifications are sent to customers to inform them that their refund request was received and processed. This step keeps customers informed and provides transparency throughout the refund process.
 
@@ -121,14 +121,10 @@ To automate email processing, Cineplex took these steps:
 
 ## Related information
 
-[Automation adoption best practices](/power-automate/guidance/automation-coe/overview/)
-
-[Automation Center of Excellence strategy with the Automation Kit](/power-automate/guidance/automation-kit/overview/automation-coe-strategy)
-
-[Power Automate guidance documentation](/power-automate/guidance/)
-
-[Copilot Studio guidance documentation](/microsoft-copilot-studio/guidance/)
-
-[AI Builder documentation](/ai-builder/)
+- [Automation adoption best practices](/power-automate/guidance/automation-coe/overview/)
+- [Automation Center of Excellence strategy with the Automation Kit](/power-automate/guidance/automation-kit/overview/automation-coe-strategy)
+- [Power Automate guidance documentation](/power-automate/guidance/)
+- [Microsoft Copilot Studio guidance documentation](/microsoft-copilot-studio/guidance/)
+- [AI Builder documentation](/ai-builder/)
 
 
