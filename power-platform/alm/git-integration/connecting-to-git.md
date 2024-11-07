@@ -22,7 +22,7 @@ Git integration in Dataverse is initiated from Power Platform in the **Solutions
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
+> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
 
 ## Prerequisites for Git integration with Dataverse
 
@@ -37,13 +37,13 @@ Git integration in Dataverse is initiated from Power Platform in the **Solutions
 
 ## Azure DevOps setup
 
-To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to. If you don't have an Azure DevOps project and repository set-up, follow these steps to create a new project and repository in Azure DevOps.
+To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to. If you don't have an Azure DevOps project and repository set up, follow these steps to create a new project and repository in Azure DevOps.
 
 1. Sign in to [Azure DevOps](https://azure.microsoft.com/products/devops/) and select your organization.
 1. Select **New project**, enter a name and ensure that your version control is set to Git for your project, and select **Create**.
 1. In the new project, select **Repos** and then select **Initialize** at the bottom of the page to initialize the default repository.
 
-Make sure that all users who are making changes in your environment have access to your repository and to commit changes.  Review your Azure DevOps licensing configuration and security groups to ensure that they're able to use the solution source control panel.
+Make sure that all users who are making changes in your environment have access to your repository and to commit changes. Review your Azure DevOps licensing configuration and security groups to ensure that they're able to use the solution source control panel.
 
 ## Connect Dataverse to Git
 
@@ -54,7 +54,8 @@ To connect your Dataverse environment to Git, bind your environment to a project
 1. Select either [**Environment**](#environment-binding) or [**Solution**](#solution-binding) from the connection type options, and select your Azure DevOps organization and project. 
    > [!IMPORTANT]
    > Once set, these settings can't be changed.
-   For information more about the differences between environment and solution binding go to [the following section](#how-to-choose-between-environment-and-solution-binding).
+   
+   For more information about the differences between environment and solution binding, go to [the following section](#how-to-choose-between-environment-and-solution-binding).
 1. Depending on your binding type, you can select a project, repository, or branch and enter a folder to bind the environment or solution to. Select **Connect**.
 
 ### How to choose between environment and solution binding
