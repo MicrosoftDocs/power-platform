@@ -17,7 +17,7 @@ This article outlines how to address warning messages related to conditional acc
 
 With security improvements in SharePoint integration authentication, you need to keep SharePoint Online and Dataverse conditional access aligned to avoid issues. These sections outline how to review and align conditional access.
 
-## Conditional access isn't turned on correctly
+## Conditional access isn't enabled on correctly
 
 When the Document Associated grid shows a warning message "Conditional access isn't enabled correctly", the error code at the end of the message guides addressing the configuration.
 
@@ -87,7 +87,7 @@ When message shown is AADSTS530003, the access is related to a device. First use
    1. Select the link under **Filter for devices**.
    1. Review the filtered devices.
 
-## Authentication isn't turned on correctly
+## Authentication isn't enabled correctly
 
 When the Document Associated grid shows a warning message "Authentication isn't enabled correctly", contact support to confirm that authentication is turned on for the environment.
 
