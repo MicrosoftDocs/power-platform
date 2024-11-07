@@ -11,7 +11,7 @@ ms.date: 11/07/2024
 
 # Cineplex automates business processes with generative AI and Power Automate
 
-In this case study, you'll learn how [Cineplex](https://www.cineplex.com/), one of Canada's largest movie theater chains, transformed its operations through a range of automations to streamline business processes, reduce manual work, and improve efficiency across departments. Spearheaded by Bo Wang, Vice President of Tax and Treasury, the team established an Automation Center of Excellence that drives Cineplex's digital shift.
+In this case study, you'll learn how [Cineplex](https://www.cineplex.com/), one of Canada's largest movie theater chains, transformed its operations through a range of automations to streamline business processes, reduce manual work, and improve efficiency across departments. Spearheaded by Bo Wang, Vice President of Tax and Treasury, the team established an [Automation Center of Excellence for Power Platform](/power-automate/guidance/automation-kit/overview/introduction) that drives Cineplex's digital shift.
 
 With automations in critical areas like invoice processing, payroll, financial reporting, customer feedback, inventory, onboarding, ticket sales, and email processing, Cineplex achieved faster, more accurate workflows that enhance productivity and support better decision-making across the organization.
 
