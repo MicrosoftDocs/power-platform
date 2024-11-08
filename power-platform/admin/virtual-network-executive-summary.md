@@ -153,5 +153,75 @@ While implementing the VNet support for Power Platform, following considerations
     | 10| 20| High to medium | /24 (251 usable IP addresses)|
     | 20 | 50| Medium to low | /24 (251 usable IP addresses) |
 
+- **NAT Gateway**: NAT Gateway enables Windows containers within a delegated subnet to securely connect to internet resources. It ensures secure communication by translating the private IP addresses of container instances to a static public IP address, allowing for consistent and secure outbound connections. 
+
+    Enterprises need to configure NAT Gateway to prevent disruptions in existing integrations when onboarding a production environment to VNet without migrating all data sources to the private network. This configuration allows enterprises to transition their integrations to VNet without affecting current workloads. 
+
+- **Network Monitoring**: Network monitoring helps in tracking and analysing the traffic flow within the delegated subnet, which is essential for identifying and resolving any potential issues. It ensures that the network is operating efficiently and securely by providing insights into the performance and health of the network components. Monitoring tools can detect anomalies, such as unusual traffic patterns or unauthorized access attempts, allowing for timely intervention and mitigation 
+
+- **Network Security Group (NSG)**: NSGs allow you to define security rules that control inbound and outbound traffic to and from your Azure resources. When delegating a subnet, it's crucial to configure NSGs to ensure that only authorized traffic is allowed. This helps in maintaining the security and integrity of the network by preventing unauthorized access and potential threats. NSGs can be applied to both subnets and individual network interfaces, providing flexibility in managing traffic at different levels
+
+## Security Considerations 
+
+### Security benefits of using VNet with Power Platform 
+
+Using a Virtual Network (VNet) with Power Platform offers several security benefits that enhance the protection of your data and resources. By integrating Power Platform with Azure Virtual Network, you can ensure that your services are hosted within a secure network, thereby protecting sensitive data from unauthorized access and potential breaches. VNet support allows Power Platform services to connect to your private and protected resources without exposing them to the internet, ensuring data protection and preventing unauthorized access. 
+
+Additionally, VNet support improves connectivity by providing a reliable and consistent network environment. Organizations can establish secure connections between Power Platform services and other Azure resources, ensuring seamless data flow and reducing latency. This enhanced connectivity leads to better performance and a more efficient use of network resources. 
+
+### Best practices for securing outbound connections from Power Platform services 
+
+Securing outbound connections from Power Platform services is crucial to mitigate data exfiltration risks and ensure compliance with security policies. Here are some best practices to follow: 
+
+**Restrict Outbound Traffic**: Limit the outbound traffic from Power Platform resources to only the endpoints that you allow. This can be achieved by using Azure Network Security Groups (NSGs) and Azure Firewall to enforce traffic rules and control access. 
+
+**Use Private Endpoints**: Utilize private endpoints to enable secure communication between Power Platform services and Azure resources. This ensures that the traffic remains within the Azure network and does not traverse the public internet. 
+
+**Monitor and Audit Traffic**: Use Azure Network Watcher and Azure Sentinel to monitor and audit the outbound traffic from Power Platform services. This helps in identifying and responding to potential security threats in real-time. 
+
+**Apply Security Policies**: Enforce security policies using Azure Policy and Azure Firewall to ensure that all outbound connections comply with your organization's security requirements. This includes applying data loss prevention (DLP) policies and endpoint filtering on connectors to control data flow. 
+
+By following these best practices, you can secure outbound connections from Power Platform services, protect your data from exfiltration, and ensure compliance with security policies. 
+
+## Performance and Scalability 
+
+- Impact of VNet support on performance and scalability. 
+
+- Strategies to optimize performance while using VNet. 
+
+## Case Studies 
+
+- Real-world examples of organizations that have successfully implemented VNet support for Power Platform. 
+
+- Lessons learned and best practices from these implementations. 
+
+## Future Enhancements 
+
+- Planned future enhancements for VNet support in Power Platform. 
+
+- Roadmap for upcoming features and improvements.
+
+## Conclusion 
+
+### Summary of key points 
+
+In this white paper, we have explored the various aspects of integrating Virtual Network (VNet) support with Power Platform. We discussed the security benefits of using VNet, such as protecting sensitive data from unauthorized access and ensuring secure communication between Power Platform services and private resources. We also covered best practices for securing outbound connections, including restricting outbound traffic, using private endpoints, implementing subnet delegation, monitoring and auditing traffic, and applying security policies. 
+
+Additionally, we also looked at common use cases and scenarios where VNet support can enhance security and connectivity for different organizations, such as financial institutions, healthcare providers, retail companies, and government agencies. 
+
+### Final thoughts on the importance of VNet support for Power Platform 
+
+VNet support for Power Platform is a crucial feature that enables organizations to enhance their network security, optimize connectivity, and ensure compliance with regulatory requirements. By leveraging VNet support, organizations can securely connect Power Platform services to their private data sources, eliminating the risks associated with exposing these sources to the public internet. This not only protects sensitive data but also improves security posture of Power Platform applications. 
+
+In conclusion, integrating VNet support with Power Platform provides a comprehensive solution for organizations looking to enhance their digital infrastructure. It offers a secure, reliable, and efficient way to manage data and resources, ensuring that Power Platform applications can meet the demands of modern business environments. 
+
+## Related content
+
+- [Virtual Network support overview](vnet-support-overview.md)
+- [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md)
+- [What is subnet delegation in Azure virtual network?](/azure/virtual-network/subnet-delegation-overview)
+- [Understanding Azure Network Pricing](https://azurenavigator.com/understanding-azure-network-pricing/)
+
+
 
 
