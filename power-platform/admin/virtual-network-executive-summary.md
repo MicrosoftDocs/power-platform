@@ -93,5 +93,65 @@ If you look at the ownership of Delegated subnet between Microsoft and Customers
 
 ## Technical architecture
 
+<Insert graphic.>
+
+The above diagram depicts the layout and communication flow of components when using VNET feature vs. not using VNET feature for plugin and connector workloads. As explained in the section above, in VNET configuration, the container that running plugin or connector is part of customer’s VNET and communications to endpoints within the VNET remains within the VNET boundary. Customer has the ability to extend the boundary to other VNETs or On-premises networks by using VNET peering and Express route or VPN Gateways. 
+
+While the container, and the specific workload within it is executing in customer’s VNET, for the Power Platform features to work seamlessly, Power Platform component needs to be able to have some communication with the components within the workload. For example, Power Platform needs to be able to trigger a plugin in the workload or invoke the connector when needed. Since the container is not attached to the infrastructure network, there is a special channel that is established with the container from the orchestration layer that allows these specific signals to be sent to the workload. A local specific IP withing the container (APIPA address) is used for this purpose. Only specific inbound messages to the workload from the platform is allowed through this to maintain the isolation of the container and the workload. The following diagram shows how platform can route the execution requests to the container while maintaining the container isolation boundaries.  
+
+<Insert graphic.>
+
+## Steps to enable VNet support for Power Platform
+
+You can enable VNet support for Power Platform on an environment by following this article [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md).
+
+## Use Cases and Scenarios 
+
+### Common use cases for VNet support in Power Platform 
+
+Virtual Network (VNet) support for Power Platform is essential for organizations looking to enhance their network security and optimize connectivity. Here are some common use cases: 
+
+**Secure Data Integration**: Organizations can use VNet support to securely connect Power Platform services to their private data sources, such as Azure SQL Database, Azure Storage, and on-premises resources. This ensures that data remains within the organization's network boundaries and is not exposed to the public internet. 
+
+**Private Endpoints for Connectors**: Power Platform connectors can leverage VNet support to establish private endpoints, allowing secure communication between Power Platform connectors like Azure SQL, Azure File Storage, Azure Key Vault etc. and other Azure services. This eliminates the need for public IP addresses and reduces the risk of data breaches. 
+
+**Securing your Microsoft Copilot Studio (MCS) Integrations**: You can utilize VNet supported Power Platform connectors within MCS to establish secure connectivity with data sources, eliminating the risks associated with exposing the data sources to public internet and thereby mitigating the risks of Data exfiltration. 
+
+### Examples of how different organizations can benefit from VNet integration 
+
+**Financial Institutions**: A large bank can use VNet support to securely connect Power Platform applications such as Power Apps, Power Automate, Dynamics 365 apps to its protected databases and services. By doing so, the bank can ensure that customer data is protected and complies with regulatory requirements. This setup also allows the bank to create secure workflows and automate processes without exposing sensitive information to the public internet. 
+
+**Healthcare Providers**: A healthcare organization can leverage VNet integration to connect Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps with its electronic health record (EHR) systems. This ensures that patient data is securely accessed and managed within the organization's private network. The healthcare provider can also use VNet support to create secure communication channels between different departments and external partners. 
+
+**Retail Companies**: A retail company can benefit from VNet integration by securely connecting its Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps to inventory management systems and customer databases. This allows the company to streamline operations, improve inventory tracking, and enhance customer service while ensuring that sensitive data remains protected. 
+
+**Government Agencies**: Government agencies can use VNet support to securely connect Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps to various internal systems and databases. This enables the agencies to automate processes, improve data sharing, and enhance collaboration while maintaining strict security and compliance standards. 
+
+By leveraging VNet support, organizations across different industries can enhance their security posture, improve connectivity, and ensure compliance with regulatory requirements. 
+
+## Integration Patterns 
+
+The integration pattern for the Power Platform environment should considered based on kind of workload that Enterprises would like to run within the environment. 
+
+**API workloads**: If Enterprises plan to run API workloads like Plug-ins, connectors, service endpoints etc., then VNet support for Power Platform is the only supported way to integrate securely with your data sources within your network. For Power Platform connectors, which require 3rd party drivers, Windows Auth connection and mashup hosting won’t be supporting through VNet. These connectors have <1% of total usage.  These connectors will continue to use OPDG as it is today. 
+
+**ETL workloads**: Power BI and Power Platform Data Flows will continue to use VNet Data Gateway. 
+
+It implies that Microsoft direction is to use VNet support for Power Platform as integration pattern in your environment with exceptions noted in above paragraph. 
+
+<Insert graphic.>
+
+While implementing the VNet support for Power Platform, following considerations must be applied to the set up and configuration of VNet. 
+
+- **Region considerations**: VNet support requires that Power Platform environment location must match with the delegated subnets azure regions. If you have a Power Platform environment in United States, then each of two VNet and Subnets must be in East US and West US Azure regions. In case, your Azure resources are in different Azure regions, we recommend global VNet peering or similar connectivity options with high speed, low latency and using Microsoft Backbone to establish the connectivity between the Power Platform VNet and Enterprises VNet. 
+
+- **Subnet size considerations**: It is crucial for enterprises to consider the size of the delegated subnet within the VNet, considering future growth in usage and the onboarding of new services. The following table provides guidance on the number of environments that can be attached to the same Enterprise Policy based on available IPs, ensuring that requests are not throttled.
+
+    | Min No of Environments | Max Number of Environments | VNet Execution Load  | Subnet size |
+    |------------------------|-------------------------------|--------------------|-------------|
+    | 3 | 5 | Very high to high | /24 (251 usable IP addresses)|
+    | 10| 20| High to medium | /24 (251 usable IP addresses)|
+    | 20 | 50| Medium to low | /24 (251 usable IP addresses) |
+
 
 
