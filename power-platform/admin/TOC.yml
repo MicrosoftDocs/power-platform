@@ -652,6 +652,8 @@
                   href: vnet-support-overview.md
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
+                - name: Virtual Network executive summary
+                  href: virtual-network-executive-summary.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
