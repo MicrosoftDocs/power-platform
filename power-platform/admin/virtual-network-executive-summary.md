@@ -139,7 +139,7 @@ The integration pattern for the Power Platform environment should considered bas
 
 It implies that Microsoft direction is to use VNet support for Power Platform as integration pattern in your environment with exceptions noted in above paragraph. 
 
-<Insert graphic.>
+:::image type="content" source="media/VNet-support.png" alt-text="Virtual Network support for Power Platform.":::
 
 While implementing the VNet support for Power Platform, following considerations must be applied to the set up and configuration of VNet. 
 
