@@ -148,12 +148,9 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 
 ## Block unmanaged customizations
 
-> [!IMPORTANT]
-> This is a preview feature.
-
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. More information: [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md) | Off |
+| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. More information: [Block unmanaged customizations](../alm/block-unmanaged-customizations.md) | Off |
 
 ## Data validation
 
