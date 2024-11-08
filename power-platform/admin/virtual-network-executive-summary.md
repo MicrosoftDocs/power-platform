@@ -93,7 +93,7 @@ If you look at the ownership of Delegated subnet between Microsoft and Customers
 
 ## Technical architecture
 
-<Insert graphic.>
+:::image type="content" source="media/technical-architecture.png" alt-text="Virtual Network technical architecture":::
 
 The above diagram depicts the layout and communication flow of components when using VNET feature vs. not using VNET feature for plugin and connector workloads. As explained in the section above, in VNET configuration, the container that running plugin or connector is part of customer’s VNET and communications to endpoints within the VNET remains within the VNET boundary. Customer has the ability to extend the boundary to other VNETs or On-premises networks by using VNET peering and Express route or VPN Gateways. 
 
