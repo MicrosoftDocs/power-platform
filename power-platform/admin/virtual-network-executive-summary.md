@@ -99,7 +99,7 @@ The above diagram depicts the layout and communication flow of components when u
 
 While the container, and the specific workload within it is executing in customer’s VNET, for the Power Platform features to work seamlessly, Power Platform component needs to be able to have some communication with the components within the workload. For example, Power Platform needs to be able to trigger a plugin in the workload or invoke the connector when needed. Since the container is not attached to the infrastructure network, there is a special channel that is established with the container from the orchestration layer that allows these specific signals to be sent to the workload. A local specific IP withing the container (APIPA address) is used for this purpose. Only specific inbound messages to the workload from the platform is allowed through this to maintain the isolation of the container and the workload. The following diagram shows how platform can route the execution requests to the container while maintaining the container isolation boundaries.  
 
-<Insert graphic.>
+:::image type="content" source="media/container-isolation-boundaries.png" alt-text="Diagram showing how platform can route the execution requests to the container while maintaining the container isolation boundaries.":::
 
 ## Steps to enable VNet support for Power Platform
 
