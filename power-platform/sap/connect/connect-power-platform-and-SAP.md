@@ -48,5 +48,5 @@ The recommended practice is to set up a separate gateway for each environment. T
 - [Get started with the SAP ERP connector](./sap-erp-connector.md)
 - [Get started with the SAP OData connector](./sap-odata-connector.md)
 - [Set up Secure Network Communications](./secure-network-communications.md)
-- [Set up Microsoft Entra ID using Kerberos](./entra-id-kerberos.md)
-- [Set up Microsoft Entra ID using certificates (SSO)](./entra-id-certs.md)
+- [Set up Microsoft Entra ID using Kerberos for SSO](./entra-id-kerberos.md)
+- [Set up Microsoft Entra ID using certificates for SSO](./entra-id-certs.md)
