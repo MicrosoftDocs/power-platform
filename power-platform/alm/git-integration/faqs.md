@@ -33,7 +33,7 @@ Git integration with Dataverse provides a way of storing your solutions and thei
 
 You need a Power Platform environment with the necessary permissions to connect to Azure DevOps and bind your environment to a project in Azure DevOps. It will require System Administrators role in the Dataverse environment to bind to Git.  
 
-You need an Azure DevOps subscription and licenses for users who interact with source control. These users need ##Contributors## permissions in your Git repository.
+You need an Azure DevOps subscription and licenses for users who interact with source control. These users need **Contributors** permissions in your Git repository.
 
 The Dataverse environment must be a managed environment, which will be enforced upon general availability (GA) of this feature.
 
