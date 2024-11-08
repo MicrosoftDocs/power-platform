@@ -78,4 +78,20 @@ Power Platform does not manage the configuration of the delegated subnet. The on
 
 By default, internet access is disabled from these Windows container. If the Enterprises code running within these containers have requirement to have internet access, they can configure NAT Gateway on the delegated subnet to allow the Windows containers to connect to resources on the internet. 
 
-If you look at the ownership of Delegated subnet between Microsoft and Customers, following table explains it 
+If you look at the ownership of Delegated subnet between Microsoft and Customers, following table explains it.
+
+| Controls | Description | Ownership lies with |
+|----------|-------------|---------------------|
+| NAT Gateway | When a NAT Gateway is attached to a subnet, it becomes the next hop for all internet-destined traffic from that subnet. This means that any outbound traffic from the subnet to the internet will be routed through the NAT Gateway. This setup ensures that all instances within the subnet can remain private while still having secure and scalable outbound connectivity | Customer |
+| Network Security Groups (NSGs) | Customers can associate NSGs with the delegated subnet. This allows them to define and enforce security rules to control inbound and outbound traffic to and from the subnet. | Customer |
+| Route Tables | Customers can associate route tables with the delegated subnet. This enables them to define custom routing policies to control the flow of traffic within the virtual network and to external networks | Customer |
+| Network Monitoring | Network monitoring also helps in maintaining compliance with security policies by enforcing traffic to travel through the Enterprises virtual private network. | Customer|
+| IP Address Management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges (e.g., 10.0.0.0/8, 192.168.0.0/16, 172.16.0.0/12) | Customer |
+| DNS Configuration | Customers can configure custom DNS settings for the delegated subnet, including Azure DNS entries | Customer |
+| Windows Container | Windows container executes the requests from VNet supported services and acquires IP from delegated subnet. | Microsoft |
+| Multi-tenant support  | All the customers’ requests are executed in their own delegated Subnet. | Microsoft |
+
+## Technical architecture
+
+
+
