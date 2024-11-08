@@ -22,6 +22,7 @@ ms.subservice: sap
 
 ---
 
+<!-- EDITOR'S NOTE: Is there any way you can this article to /entra/identity/authentication/how-to-certificate-based-authentication instead of duplicating content? If not, I recommend using the organizational approach in that article, which is really easy to follow. Please review this article for consistency with the MWSG and resubmit for editing. Thanks! -->
 # Microsoft Entra ID (with certificates) - single sign-on
 
 This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.

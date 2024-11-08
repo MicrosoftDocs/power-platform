@@ -11,15 +11,18 @@ ms.topic: how-to
 ms.date: 11/01/2024
 ---
 
+<!-- EDITOR'S NOTE: I found these instructions: /power-bi/connect-data/service-gateway-sso-kerberos. Would it be possible just to point the relevant parts of this article to that one to eliminate redundant information? If not, no worries, but I'd still recommend that you use the organizational approach and examples from that article. It's very easy to follow, and you'd only need to change the parts that are specific to SAP. -->
+<!-- EDITOR'S NOTE: I stopped editing at line 178. Please review the article again, especially confirming UI labels, proper text formatting for commands, user input, etc., and the accuracy of the instructions, and then resubmit for editing. Thanks! -->
+<!-- EDITOR'S NOTE: Is it still "Active Directory" not "Microsoft Entra"?  -->
+
 # Set up Microsoft Entra ID with Kerberos for SSO
 
-You can set up the Power Platform SAP ERP connector to use Microsoft Entra ID credentials for Kerberos-based single sign-on (SSO). Your users can access SAP data and run SAP Remote Function Calls (RFCs) in Power Platform solutions without having to sign in multiple times to multiple services. This article walks you through the process, including configuring Kerberos constrained delegation on the on-premises data gateway for secure communication.
+You can set up the Power Platform SAP ERP connector to use Microsoft Entra ID credentials for Kerberos-based single sign-on (SSO). Your users can access SAP data and run SAP Remote Function Calls (RFCs) in Power Platform solutions without having to sign in multiple times to multiple services. This article walks you through the process, including configuring Kerberos constrained delegation on the on-premises data gateway for secure communication. Learn more in [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
 These instructions assume that you're starting from scratch. Most customers have already completed some of the steps. Determining which steps you need to complete for your scenario is beyond the scope of this article.
 
-- [Create and configure an SAP service account in Microsoft Entra Domain Services](#create-and-configure-an-sap-service-account-in-microsoft-entra-domain-services)
-  - Skip this section if your SAP system is already configured for Kerberos-based SSO.
-- 
+- [Create an SAP service account in Active Directory Domain Services](#create-an-sap-service-account-in-ad-ds) (skip this section if your SAP system is already configured for Kerberos-based SSO)
+<!-- EDITOR'S NOTE: Continue listing H2 headings to act as a mini TOC. -->
 
 
 You'll need assistance from the following roles:
@@ -30,13 +33,13 @@ You'll need assistance from the following roles:
 
 ## Prerequisites
 
-- [A Windows server that has Active Directory Domain Services](/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-) (AD DS). The domain name used in this guide is corp.bestrun.com (NetBIOS: CORP), but you can can choose any other name.
+- [A Windows server that has Active Directory Domain Services](/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-) (AD DS). The example domain name used in this guide is corp.bestrun.com (NetBIOS: CORP).
 
 - [An on-premises data gateway server](https://www.microsoft.com/download/details.aspx?id=53127), version October 2024 or newer, joined to the Active Directory domain. Learn more in [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
 ## Create an SAP service account in AD DS
 
-If your SAP system is already configured for Kerberos-based SSO (check with your SAP Basis admin), skip this section.
+If your SAP Basis admin confirms that your SAP system is already configured for Kerberos-based SSO, skip this section.
 
 Perform the following steps as a domain admin.
 
@@ -44,7 +47,7 @@ Perform the following steps as a domain admin.
 
 1. In your domain, right-click **Users** and select **New** > **User**.
 
-1. Enter `Kerberos<SID>` as the **Full name** and **User logon name**, where `<SID>` is the ID of your SAP system, such as `A4H`.
+1. Enter *Kerberos\<SID>* as the **Full name** and **User logon name**, where *\<SID>* is the ID of your SAP system, such as *A4H*.
 
 1. Select **Next**.
 
@@ -60,19 +63,19 @@ With the service account created, next you'll define its Service Principal Name 
 
 1. Select **CN=Users** from your domain's default naming context.
 
-1. Right-click the **CN=Kerberos<SID>** user object and select **Properties**.
+1. Right-click the **CN=Kerberos\<SID>** user object and select **Properties**.
 
 1. In the **Attributes** list, select **servicePrincipalName**.
 
 1. Select **Edit**.
 
-1. Enter the Service Principal Name in the format `SAP/<SID>`, where `<SID>` is the ID of your SAP system, such as `A4H`.
+1. Enter the Service Principal Name in the format *SAP/\<SID>*, where *\<SID>* is the ID of your SAP system, such as *A4H*.
 
 1. Select **Add**, and then select **OK**.
 
 1. Go back to the Active Directory Users and Computers snap-in.
 
-1. In the **Users** list, right-click the new SAP service account `Kerberos<SID>` and select **Properties**.
+1. In the **Users** list, right-click the new SAP service account *Kerberos\<SID>* and select **Properties**.
 
 1. Select the **Account** tab.
 
@@ -87,7 +90,7 @@ With the service account created, next you'll define its Service Principal Name 
 
 Perform the following steps as an SAP Basis admin in SAP GUI.
 
-1. To start the SAP Single Sign-On wizard, enter **SNCWIZARD** in the Command field.
+1. To start the SAP Single Sign-On wizard, enter *SNCWIZARD* in the Command field.
 
 1. On the wizard **Start** page, select **Continue**.
 
@@ -109,8 +112,8 @@ Perform the following steps as an SAP Basis admin in SAP GUI.
 
 1. Enter the following values:
 
-    - **User Principal Name**: `Kerberos<SID>@DOMAIN`, where `DOMAIN` is the fully-qualified name of your Active Directory domain in uppercase letters; for example, `CORP.BESTRUN.COM`.
-    - **Password** and **Confirm Password**: The password that you entered when you created the Active Directory account.
+    - **User Principal Name**: *Kerberos\<SID>@DOMAIN*, where *Kerberos\<SID>* is the service account user name and *DOMAIN* is the fully-qualified name of your Active Directory domain in uppercase letters; for example, *KerberosA4H(at)CORP.BESTRUN.COM*
+    - **Password** and **Confirm Password**: The password that you entered when you created the Active Directory account
 
 1. Select **Check User in Active Directory** to verify the user, and then select **Exit**.
 
@@ -122,31 +125,61 @@ Perform the following steps as an SAP Basis admin in SAP GUI.
 
 Next, map the SNC user name (based on the Windows domain user name) to the SAP User Principal Name.
 
-1. In SAP GUI, run transaction **SU01**.
+1. In SAP GUI, run transaction *SU01*.
 
-1. Enter the test user ID (for example, `JDAVIS`) in the **User** field, and then select **Change**.
+1. Enter the test user ID (for example, *JDAVIS*) in the **User** field, and then select **Change**.
 
 1. Select the **SNC** tab.
 
-1. Enter the User Principal Name in the **SNC name** field; for example, `p:CN=JDAVIS@CORP.BESTRUN.COM`.
+1. Enter the User Principal Name in the **SNC name** field; for example, *p:CN=JDAVIS(at)CORP.BESTRUN.COM*.
 
 1. Select **Save**.
 
-## Set up the on-premises data gateway for Kerberos Constrained Delegation RHANA
+## Set up the on-premises data gateway for Kerberos Constrained Delegation
 
-By default, the OPDG runs as the machine-local service account NT Service\PBIEgwService. To use Kerberos Constrained Delegation with the protocol's S4U extensions, the OPDG has to run under a service account in the domain.
+By default, the on-premises gateway runs as the machine-local service account `NT Service\PBIEgwService`. To use Kerberos Constrained Delegation with the protocol's S4U extensions, the gateway has to run as a service account in the domain.
 
-1. On the Domain Controller host, go back to the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in. Right-click on Users in your domain and select New -> User from the context menu. Enter  GatewaySvc as the First name, Full name, and User login name. Select Next.
-1. Enter the password for the OPDG domain service account. Select User cannot change password and Password never expires. Select Next.
-1. Select Finish.
-1. As the domain administrator, run the following command to create an SPN for the new service account which is required to configure the Kerberos delegation in the next step:
-    - setspn –S gateway/<OPDG hostname> <domain>\GatewaySvc
-    - Replace <OPDG hostname> with the hostname of your OPDG system. You can find out the name by entering the command hostname.
-1. Right-click on the new service account and select Properties from the context menu.
-1. Switch to the Delegation tab. Select Trust this user for delegation to specified services only and Use any authentication protocol. Select Add.
-1. Select Users or Computers.
-1. Enter Kerberos<SID> in the object names field. Replace <SID> with your SAP system's ID, for example "A4H". Select Check Names to resolve it to the full existent name. Select OK.
-1. The list of allowed services now contains the value from the SPN (Service Type / Computer) of the SAP system. The new OPDG service account can request a service ticket only for the SAP system on-behalf-of the propagated user with the Kerberos S4U2proxy protocol extension. Select Select All.
+Perform the following steps as a domain admin.
+
+1. On the Domain Controller host PC, go back to the Active Directory Users and Computers snap-in.
+
+1. In your domain, right-click **Users** and select **New** > **User**.
+
+1. Enter *GatewaySvc* as the **Full name** and **User logon name**.
+
+1. Select **Next**.
+
+1. Enter and confirm the password for the new domain service account.
+
+1. Select both **User cannot change password** and **Password never expires**.
+
+1. Select **Next**, and then select **Finish**.
+
+With the domain service account created, next you'll define its Service Principal Name and enable it for Kerberos constrained delegation.
+
+1. In an elevated PowerShell window, enter the following command to create an SPN for the new service account. Replace *\<OPDG hostname>* with the hostname of your on-premises data gateway and *\<domain>* with the name of your domain. You can find out the hostname by entering the command `hostname` at a command prompt.
+
+    ```cmd
+    setspn –s gateway/<OPDG hostname> <domain>\GatewaySvc
+    ```
+
+1. In the Active Directory Users and Computers snap-in, right-click the new service account and select **Properties**.
+
+1. Select the **Delegation** tab.
+
+1. Select **Trust this user for delegation to specified services only** and **Use any authentication protocol**.
+
+1. Select **Add**.
+
+1. Select **Users or Computers**.
+
+1. Enter *Kerberos\<SID>* in the object names field, where *\<SID>* is the ID of your SAP system, such as *A4H*.
+
+1. Select **Check Names**, and then select **OK**.
+
+The list of allowed services now contains the SPN of the SAP system. The new gateway service account can request a service ticket only for the SAP system on behalf of the propagated user with the Kerberos S4U2proxy protocol extension.
+
+1. Select Select All.
 1. Select OK.
 1. Select OK a second time.
 1. The OPDG service account must be granted to local policies on the OPDG host. Perform this configuration with the Local Group Policy Editor by running gpedit.msc from an Administrator command prompt.
@@ -200,7 +233,7 @@ For the application test user Jack Davis in this scenario, set the msDS-cloudExt
 1. Select Restart now from the OPDG's configurator Service Settings tab to apply the changes.
 1. On the Domain Controller host, select Start, and select Windows Administrative Tools -> ADSI Edit from the menu. In the ADSI Editor, navigate in the left-side object tree to CN=Users under the domain's default naming context. Right-click on the test user's object (for example CN=Jack Davis) and select Properties from the context menu.
 1. Select the attribute msDS-cloudExtensionAttribute1 from the list and select Edit.
-1. Enter the test user's Microsoft Entra ID UPN (for example jdavis@<domainname>.onmicrosoft.com) in the Value field. Replace <domainname> with your Microsoft Entra ID tenant's domain name, for example, bestruncorp. Select OK.
+1. Enter the test user's Microsoft Entra ID UPN (for example jdavis@\<domainname>.onmicrosoft.com) in the Value field. Replace \<domainname> with your Microsoft Entra ID tenant's domain name, for example, bestruncorp. Select OK.
 
 ## Create a Power Automate Flow
 
@@ -220,14 +253,14 @@ All on-premises components (SAP system, OPDG, and AD) are now configured properl
 
     json
     {
-        "AppServerHost": "<SAP Server Name>",
-        "Client": "<SAP Client>",
+        "AppServerHost": "\<SAP Server Name>",
+        "Client": "\<SAP Client>",
         "LogonType": "ApplicationServer",
         "SncLibraryPath": "C:\\Program Files\\On-premises data gateway\\sapcrypto.dll",
-        "SncPartnerName": "p:<SAP Partner Name>",
+        "SncPartnerName": "p:\<SAP Partner Name>",
         "SncQOP": "Default",
         "SncSso": "On",
-        "SystemNumber": "<SAP System Number>",
+        "SystemNumber": "\<SAP System Number>",
         "UseSnc": "true"
     }
     
