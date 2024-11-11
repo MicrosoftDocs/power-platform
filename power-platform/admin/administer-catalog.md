@@ -3,7 +3,7 @@ title: "Administer the catalog"
 description: "Learn how to administer the catalog for Power Platform. Administering the catalog involves setting up users, approving or rejecting submission requests, and other work related to tracking catalog items."
 author: derekkwanpm
 ms.author: derekkwan
-ms.date: 09/10/2024
+ms.date: 11/05/2024
 ms.reviewer: matp
 ms.topic: article
 ms.subservice: admin
@@ -158,7 +158,7 @@ These views show the following columns:
 |**Modified On**|When the item was last modified|
 |**Modified By**|Who last modified the item|
 
-You can also view this data using the [pac catalog list](../developer/cli/reference/catalog.md#pac-catalog-list) command. [View items in the catalog](../developer/submit-catalog-items.md#view-items-in-the-catalog)
+You can also view this data using the [pac catalog list](../developer/cli/reference/catalog.md#pac-catalog-list) command. [View items in the catalog](../developer/catalog/retrieve-data.md#view-items-in-the-catalog)
 
 ### Review catalog publishers
 
@@ -248,5 +248,5 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 
 ### See also
 
- [Use the catalog with Power Platform CLI](/power-platform/developer/submit-catalog-items)
+[Catalog in Power Platform for developers](../developer/catalog/overview.md)
 

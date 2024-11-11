@@ -1059,6 +1059,8 @@
                   items:
                     - name: Troubleshooting server-based authentication
                       href: troubleshooting-server-based-authentication.md
+                    - name: Troubleshooting conditional access authentication
+                      href: troubleshooting-conditional-access-authentication.md
                     - name: Troubleshoot set up with SharePoint online
                       href: troubleshoot-set-up-sharepoint-online.md
                     - name: Troubleshooting document management issues
