@@ -12,7 +12,7 @@ contributors:
 - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/03/2024
+ms.date: 11/11/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -20,11 +20,11 @@ ms.custom: ignite-2024
 
 # Power Platform integration with SAP
 
-Unlock the full potential of your SAP data with [Microsoft Power Platform](/power-platform/). Integrate SAP ERP and SAP OData services into your Copilot Studio, Power Apps, and Power Automate solutions to drive innovation and efficiency across your organization. With our connectors, you can access and operate on SAP data, enabling you to create custom copilots, applications, and automation workflows.
+Unlock the full potential of your SAP data with [Microsoft Power Platform](/power-platform/). Integrate SAP ERP and SAP OData services into your Copilot Studio, Power Apps, and Power Automate solutions to drive innovation and efficiency across your organization. With Power Platform connectors, you can access and operate on SAP data, enabling you to create custom copilots, applications, and automation workflows.
 
 Discover how to streamline your SAP business processes with Power Platform. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, our connectors provide the tools you need to succeed. Transform how you view and work with your SAP data and experience the benefits of a truly integrated digital ecosystem.
 
-:::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
+:::image type="content" source="media/power-platform-and-SAP-integration/flex-design.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
 Our SAP connectors support all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA as well as all products across the SAP portfolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html).
 
@@ -33,7 +33,7 @@ Users of Power Platform apps integrated with SAP will need the following license
 - A Power Apps Premium license
 - An SAP indirect-named user license
 
-If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It is worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses. Customers can also use Digital Access Licenses as noted [here](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
+If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It is worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses. Customers can also use [Digital Access Licenses](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
 
 Our Power Platform templates for SAP and ready-to-use copilots can accelerate your Power Platform and SAP integration journey. These include sample cloud flows for common SAP business processes.
 
