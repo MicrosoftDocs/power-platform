@@ -53,15 +53,22 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 
 ## AI form fill assistance
 
+> [!NOTE]
+> Users may need to clear the cache and refresh the browser twice for the setting change to take effect.
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
+|Smart paste (Preview)  | Enable or disable the smart paste capability by navigating to **Features**. In the **AI form fill assistance** section, find the **Enable this feature for** field, and ensure that **All users immediately** is selected. | Users as the feature becomes available |
+
+> [!NOTE] 
+> If the **Users as the feature becomes available (default)** option is selected, the feature is turned on for users in Dynamics 365 model-driven apps, and the feature is kept off for users in Power Apps model-driven apps.
 
 ## AI suggestions for formula columns
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
+| AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI-generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
 
 ## AI suggestions for email content
 
