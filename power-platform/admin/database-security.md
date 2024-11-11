@@ -6,13 +6,14 @@ ms.author: paulliew
 author: paulliew
 ms.reviewer: sericks
 contributors:
-  - hamenon-ms 
+  - hamenon-ms
+  - shahzorkhan123
 ms.custom:
   - "admin-security"
   - bap-template
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/28/2024
+ms.date: 11/11/2024
 search.audienceType: 
   - admin
 ---
