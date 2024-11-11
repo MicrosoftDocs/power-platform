@@ -36,15 +36,18 @@ This feature applies to Managed Environments only. Sharing gives administrators 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Minimizing the risk of over-sharing is crucial in ensuring data security and compliance within the Power Platform ecosystem. All new Dataverse-backed environments prohibit guest access, ensuring security by default. You can allow guest access for an environment if your business use case requires it. You can also retroactively block guest access for existing environments, which blocks connections to resources guests may have already had access to.  
+Minimizing the risk of over-sharing is crucial in ensuring data security and compliance within the Power Platform ecosystem. All new Dataverse-backed environments prohibit guest access, ensuring security by default. You can allow guest access for an environment if your business use case requires it. You can also retroactively turn off guest access for existing environments, which blocks connections to resources guests may have already had access to.  
 
 ### Configure guest access
-1. Sign in to the Power Platform admin center as a system administrator.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Security**.
 1. In the **Secruity** section, select **Access controls**.
 1. In the **Access controls** section, select **Guest access**.
-1. Select the environment you want to provide guess access for.
-1. Select **Manage guest access**.
+1. The **Guest access** pane appears. Select the environment for which you want to turn off guest access.
+1. Select **Configure guest access**.
+1. Turn on the **Turn off guest access** option.
+1. Select **Save**.
+1. The environment list is displayed again. Repeat steps 5-8. Close the panel when you're done.
 
 ### Improve your security score and act on recommendations 
 Restricting guest access is a pivotal way to improve your tenant’s security posture. You can also take action by directly selecting the **Restrict guest user access** recommendation from the main security page, or the action center in the Power Platform admin center. After configuring guest access restrictions, your tenant’s security score improves based on the number of environments configured.  
