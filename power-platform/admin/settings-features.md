@@ -176,13 +176,13 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Block unmanaged customizations |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. Learn more in [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md). | Off |
+| Dataverse will block unmanaged customizations in the environment.  |  Prevents the creation of unmanaged customizations in Dataverse environments, which facilitates healthy application lifecycle management. Learn more in [Block unmanaged customizations (preview)](../alm/block-unmanaged-customizations.md). | Off |
 
 ## Data validation
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable email address validation in model-driven apps (preview).  |  When **On**, allows smart data validation for certain columns, such as text columns using the email format. Learn more in [Address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) | Off |
+| Enable email address validation in model-driven apps (preview).  |  When **On**, allows smart data validation for certain columns, such as text columns using the email format. Learn more in [Email address validation for email columns](/power-apps/maker/data-platform/data-validation-email-column) | Off |
 
 ## Attachment security
 
