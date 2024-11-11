@@ -60,7 +60,7 @@ Every tenant in Power Platform has a [default environment](/power-platform/admin
 One of the first steps in managing the default environment is identifying the business value, the risk of existing apps and flows, and unused apps and flows. The app and flow insights help you decide if solutions should be moved to production environments or have higher levels of support.
 
 > [!TIP]
-> onsider quarantining apps that aren't compliant and creating a process to clean up orphaned resources, such as apps and flows without an owner.
+> Consider quarantining apps that aren't compliant and creating a process to clean up orphaned resources, such as apps and flows without an owner.
 
 The **Default environment** page in the CoE Starter Kit's **Compliance and adoption dashboard** gives you valuable insights on the adoption in your default environment. For example, you can identify top connectors, the top most launched apps, and top makers.
 
