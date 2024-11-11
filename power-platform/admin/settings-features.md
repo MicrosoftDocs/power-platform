@@ -52,7 +52,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow data and objects in this environment to be used with Copilot for Microsoft 365. | Use this setting to allow integration of Copilot agents from this environment. Learn more in [Use actions in Microsoft Copilot](/microsoft-copilot-studio/copilot-plugins-overview#use-actions-in-microsoft-copilot).  | Off |
+| Allow data and objects in this environment to be used with Copilot for Microsoft 365. | Use this setting to allow integration of Copilot plugins from this environment. Learn more in [Use actions in Microsoft Copilot](/microsoft-copilot-studio/copilot-plugins-overview#use-actions-in-microsoft-copilot).  | Off |
 
 ## AI Builder
 
