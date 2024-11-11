@@ -33,7 +33,7 @@ sections:
        summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
        imageUrl: /power-platform/sap/media/index-page/Understand_integration.png
        url: /power-platform/sap/explore-power-platform-and-SAP-integration
-      # links:
+      # links: 
       #   - componentType: link
       #     text: Explore Power Platform and SAP integration
       #     url: /power-platform/sap/explore-power-platform-and-SAP-integration
