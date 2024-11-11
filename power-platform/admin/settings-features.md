@@ -59,7 +59,7 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available (default)<br><br>Note: If the **Users as the feature becomes available (default)** option is selected, the feature is turned on for users in Dynamics 365 model-driven apps, and the feature is kept off for users in Power Apps model-driven apps.|
-|Enable smart paste (Preview)  | Smart paste (Preview) is a capability can that reason over the form and the text copied to your clipboard to suggest what text could be used to fill specific fields, and provides suggestions inline in the form. | Off |
+|Enable smart paste (preview)  | Smart paste (preview) is a capability that can reason over the form and the text copied to your clipboard to suggest what text could be used to fill specific fields, and provides suggestions inline in the form. | Off |
 
 > [!NOTE]
 > If the **Users as the feature becomes available (default)** option is selected, the feature is turned on for users in Dynamics 365 model-driven apps, and the feature is kept off for users in Power Apps model-driven apps.
