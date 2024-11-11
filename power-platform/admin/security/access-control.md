@@ -4,7 +4,7 @@ description: Learn how to manage access controls in the Power Platform admin cen
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/04/2024
+ms.date: 11/11/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -36,10 +36,27 @@ This feature applies to Managed Environments only. Sharing gives administrators 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-You can bolster your security score by prohibiting guest access to your environment. This feature restricts anyone who is designated as a guest in your tenant in Microsoft Entra from interacting with any resources that have been shared with them or that they made.
+Minimizing the risk of over-sharing is crucial in ensuring data security and compliance within the Microsoft Power Platform ecosystem. With the preview of the new restrict guest access feature, all new Dataverse-backed environments will prohibit guest access ensuring security by default. You can choose to re-enable guest access for an environment if your business use case requires it; and, you can retroactively disable guest access for existing environments which will disable guest’s existing connections to resources they may have already had access to.  
 
-> [!Note]
-> Items made in Microsoft Copilot Studio may use Graph connectors as knowledge sources, and the information in them may be accessible to guests for now, even if this setting is on.
+### Configure guest access
+1. Sign in to the Power Platform admin center as a system administrator.
+1. Select Security in the navigation pane.
+1. Under the Security, select Access controls. Under access controls, select Guess access.
+1. Select the environment you want to provide guess access for.
+1. Select Manage guest access.
+
+### Improve your security score and act on recommendations 
+Restricting guest access is a pivotal way to improve your tenant’s security posture. You can also take action by directly selecting the “Restrict guest user access” recommendation from the main security page, or the action center in the Power Platform admin center. Upon configuring guest access restrictions, your tenant’s security score will improve based on the number of environments configured.  
+
+### Latency considerations 
+The time it takes to effectively implement disable guest access varies based on their volume of environments and resources within those environments. For the most extreme cases, the latency for full enforcement is 24 hours.  
+
+### Known limitations 
+Guest access is still a preview feature with more enhancements to come. Below are some known limitations with work in progress to remediate. 
+
+- While blocking guest access will prevent any guest from saving and leveraging resources, it may not prevent a guest from accessing a Power Platform maker portal.  
+- Items made in Copilot Studio may use Graph connectors as knowledge sources from outside of Power Platform, and the information in them may be accessible to guests for now even if guest access is blocked. 
+
 
 ## Administrator privileges (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
