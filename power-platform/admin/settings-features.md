@@ -188,21 +188,21 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable security on Attachment entity |  <Description> | <Default value> |
+| Enable security on Attachment entity |  <Description> | <Value> |
 
 ## Microsoft Fabric
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  <Description> | <Default value> |
-| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and buld apps (preview). | <Description> | <Default value> |
+| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  <Description> | <Value> |
+| Enable users to define Dataverse virtual tables using data from Microsoft Fabric and buld apps (preview). | <Description> | Value> |
 
 ## Power Automate capacity
 
 | Setting | Description | Default value |
 |---------|-------------|---------------| 
-| Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. More information: [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage) | On |
-| Allow auto-claim of process capacity |  When **On**, enables auto-assignation of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. More information: [Process capacity](/power-automate/desktop-flows/capacity-process) | On |
+| Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
+| Allow auto-claim of process capacity |  When **On**, enables auto-assignation of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
 
 ## Search
 
