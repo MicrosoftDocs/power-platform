@@ -70,8 +70,8 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available |
-| Enable smart paste (preview) | Description | Off |
+|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available (default) |
+| Enable smart paste (preview) | Smart paste (preview) is a capability that uses the text copied to your clipboard to suggest text that could be used to fill specific fields, and provides suggestions inline in the form. | Off |
 
 ## AI suggestions for formula columns (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -126,6 +126,21 @@ To update these settings, make sure you have the System Administrator or System 
 | Activation status of run action logs.| Defines when desktop flow run action logs should be captured and even allows you to turn them off completely. Learn more in [Desktop flow action logs configuration](/power-automate/desktop-flows/configure-desktop-flow-logs). | Enabled |
 | Action logs version.| The Action logs version allows you to choose V1, V2, or both. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version).   | V1 |
 | FlowLogs entity time to live in minutes | Determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version). | 40320 |
+
+## Desktop flow connection embedding
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable connection embedding for desktop flows. | <Description> | On |
+
+## Desktop flow repair at runtime configuration
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Repair at runtime for attended. | <Description> | On |
+| Repair at runtime for unattended. | <Description> | On|
 
 ## Grids and views
 
