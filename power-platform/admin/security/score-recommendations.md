@@ -34,11 +34,6 @@ To access the **Security** page, you must have Microsoft Entra ID roles such as 
 1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 2.	From the navigation pane, select **Security**.
 3.	Select the page you want to view in the **Security** section. You can view pages for [network security](network-security.md), [access controls](access-control.md), [threat detection](threat-detection.md), and [compliance](compliance.md).
-
-    > [!Note]
-    > On each security page, the features that apply to Managed Environments are noted with this icon:
-    >
-    > :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
    
 ## Key capabilities
 
