@@ -4,7 +4,7 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/17/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -24,7 +24,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 |Settings|Description| Default value |
 |--------------|-----------------|-----|  
-|Model-driven apps release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at any time and users are switched after one to two browser refreshes. Learn more at [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview).   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. Learn more at [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel). | 
+|Model-driven app release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at any time and users are switched after one to two browser refreshes. Learn more at [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview).   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. Learn more at [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel). | 
 
 ## Basic behavior
 
@@ -54,7 +54,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 |Show legacy app for admins|Indicate if the legacy web app, also known as *Dynamics 365 - custom*, is hidden from System Administrator and System Customizer roles, and to other custom roles with similar privileges.  Learn more at [Dynamics 365 - custom (hidden for admins)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-admins).| Auto<br><br>**Note**: New environments are defaulted to **Off**. | 
 |Legacy app name|Enter the label to use for the legacy app. This appears on the Dynamics 365 home page. Learn more at [Dynamics 365 - custom (hidden for users)](enable-unified-interface-only.md#dynamics-365---custom-hidden-for-users).|Dynamics 365 - custom |
 |Show welcome screen on sign in|Indicate if you want users to see the welcome screen when they sign in. |  On|
-|Show Microsoft Power Automate on forms and in the site map|Select **On** to enable embedded Power Automate flows in your organization. Learn more at [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).<br><br>**Important:** Once the Power Automate integration option has been enabled, it can't be disabled.|  On | 
+|Show Power Automate on forms and in the site map|Select **On** to enable embedded Power Automate flows in your organization. Learn more at [Enable embedded Power Automate to automate processes](enable-embedded-flow-in-your-organization.md).<br><br>**Important:** Once the Power Automate integration option has been enabled, it can't be disabled.|  On | 
 |Show dashboard cards in expanded state|Select **On** to see the detailed card form in a dashboard. If set to **Off**, only the header and minimal details are displayed in the card form.|  Off|
 
 ## Lookup behavior
