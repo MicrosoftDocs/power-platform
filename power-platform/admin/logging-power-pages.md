@@ -71,5 +71,6 @@ The following are some of the user events you can audit.
 
 ### See also
 
+- [Power Pages activity logging](https://youtu.be/pBKkkkPpX0I?feature=shared)
 - [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search)
 - [View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)

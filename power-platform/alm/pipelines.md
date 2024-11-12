@@ -219,3 +219,8 @@ We encourage customers to use pipelines for core deployment functionality, and w
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+## Related information
+
+[Deploy solutions using Pipeline in Power Apps](https://youtu.be/iziCkYl8Shc?feature=shared)
