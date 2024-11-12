@@ -22,7 +22,7 @@ Git integration in Dataverse is initiated from Power Platform in the **Solutions
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
+> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
 
 ## Prerequisites for Git integration with Dataverse
 
@@ -37,13 +37,13 @@ Git integration in Dataverse is initiated from Power Platform in the **Solutions
 
 ## Azure DevOps setup
 
-To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to. If you don't have an Azure DevOps project and repository set-up, follow these steps to create a new project and repository in Azure DevOps.
+To get started, you need an Azure DevOps project and repository to connect your Dataverse environment to. If you don't have an Azure DevOps project and repository set up, follow these steps to create a new project and repository in Azure DevOps.
 
 1. Sign in to [Azure DevOps](https://azure.microsoft.com/products/devops/) and select your organization.
 1. Select **New project**, enter a name and ensure that your version control is set to Git for your project, and select **Create**.
 1. In the new project, select **Repos** and then select **Initialize** at the bottom of the page to initialize the default repository.
 
-Make sure that all users who are making changes in your environment have access to your repository and to commit changes.  Review your Azure DevOps licensing configuration and security groups to ensure that they're able to use the solution source control panel.
+Make sure that all users who are making changes in your environment have access to your repository and to commit changes. Review your Azure DevOps licensing configuration and security groups to ensure that they're able to use the solution source control panel.
 
 ## Connect Dataverse to Git
 
@@ -54,7 +54,8 @@ To connect your Dataverse environment to Git, bind your environment to a project
 1. Select either [**Environment**](#environment-binding) or [**Solution**](#solution-binding) from the connection type options, and select your Azure DevOps organization and project. 
    > [!IMPORTANT]
    > Once set, these settings can't be changed.
-   For information more about the differences between environment and solution binding go to [the following section](#how-to-choose-between-environment-and-solution-binding).
+   
+   For more information about the differences between environment and solution binding, go to [the following section](#how-to-choose-between-environment-and-solution-binding).
 1. Depending on your binding type, you can select a project, repository, or branch and enter a folder to bind the environment or solution to. Select **Connect**.
 
 ### How to choose between environment and solution binding
@@ -74,11 +75,11 @@ Solution binding can be used to source control multiple solutions within the sam
 
 #### Other considerations
 
-If you select environment binding, all new unmanaged solutions are automatically synchronized with source code with no further actions, and if you select per solution binding, creation of a new solution later requires that the solution also be configured for source control before being synced to source control. Consider the safety of having all solutions synchronized versus the flexibility of having different folders and source code linkages for each solution.
+If you select environment binding, all new unmanaged solutions are automatically synced with source code with no further actions, and if you select per solution binding, creation of a new solution later requires that the solution also be configured for source control before being synced to source control. Consider the safety of having all solutions synced versus the flexibility of having different folders and source code linkages for each solution.
 
 ### Binding a solution to a repository and folder (when using the solution binding strategy)
 
-Once you connected your environment to Git using the solution binding strategy, you can bind a solution to a repository and folder in the same Azure DevOps project.
+Once you've connected your environment to Git using the solution binding strategy, you can bind a solution to a repository and folder in the same Azure DevOps project.
 
 1. In the **Solutions** area, select the three vertical dots next to the solution you want to bind to source control, and then select **Connect to Git**.
 1. Select an existing branch, or create a new branch, enter a Git folder to bind the solution to, and then select **Connect**.

@@ -8,7 +8,7 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2024
+ms.date: 11/12/2024
 search.audienceType: 
   - admin
 contributors:
@@ -385,7 +385,7 @@ A stub user is a user record that has been created as a placeholder. For example
 > To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, ensure that users exist in Entra ID and are sufficiently licensed for pre-provisioning. Office licenses aren't supported for pre-provisioning, but any Power Apps Premium or Dynamics 365 licenses are supported for pre-provisioning. Once users meet these requirements, they're synchronized with Dataverse environments.  
 > If you must reassign records from a stub user to another user, use the [Add-BulkRecordsToUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#command-add-bulkrecordstousers).
 
-A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
+A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in a Dynamics 365 Sales environment and the **Basic User** security role is assigned in other environments.
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
