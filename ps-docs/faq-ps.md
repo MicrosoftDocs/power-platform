@@ -35,7 +35,7 @@ This might happen if you select multiple **next actions** while a previous next 
 If you're using the AI Cursor and press enter after entering your prompt, your prompt will automatically create a new blueprint. To update only a single block on a blueprint, select **Generate** and then select **Generate in place of existing block**.
 
 ## Can I connect to data instead of uploading files? 
-Yes, you can connect to Dataverse, and Dynamics 365 Sales to analyze your data. For more information, go to [Connect to your data](data-connections.md).
+Yes, you can connect to Dataverse, Dynamics 365 Sales, and Dynamics 365 Customer Service to analyze your data. For more information, go to [Connect to your data](data-connections.md).
 We plan to support connecting to more enterprise data sources in upcoming releases.
 
 ## What are the preview terms? Is Microsoft using my data to train their models? How do I know my data is safe?
