@@ -16,17 +16,17 @@ ms.subservice: sap
 ---
 # Building integrated Power Platform Applications for SAP Consultants
 
-SAP consultants can leverage Microsoft Power Platform to build applications that integrate seamlessly with SAP systems, including copilots, apps, workflows, and websites to enhance business processes using SAP data.
+As an SAP consultant, you can leverage Microsoft Power Platform to build applications that integrate seamlessly with SAP systems, including copilots, apps, workflows, and websites to enhance business processes using SAP data.
 
 ## Microsoft Power Platform Connectors
 
-Microsoft Power Platform offers connectors, including the SAP ERP and SAP OData connectors, for [streamlined SAP integration](/power-platform/sap/connect-power-platform-and-SAP). These connectors encapsulate APIs needed for data exchange, supporting RFC-based and HTTP-based connectivity. App makers can perform actions like creating, updating, or retrieving SAP data, making integrated solutions simpler to build.
+Microsoft Power Platform offers connectors, including the SAP ERP and SAP OData connectors, for [streamlined SAP integration](/power-platform/sap/connect/power-platform-and-SAP). These connectors encapsulate APIs needed for data exchange, supporting RFC-based and HTTP-based connectivity. App makers can perform actions like creating, updating, or retrieving SAP data, making integrated solutions simpler to build.
 
 ## Capabilities of Power Platform Low Code Tools
 
 - **Power Apps:** Power Apps is a visual development tool that allows users to build custom applications including mobile apps with little to no code. It connects to various data sources, including SAP, and runs on any device. Power Apps can be used to create forms, dashboards, and interactive applications that streamline business processes.
 - **Power Automate (Cloud Flows):** Power Automate is a cloud-based automation platform that enables users to create workflows that automate repetitive tasks. It provides powerful AI, RPA, and process mining capabilities. With Power Automate, users can create flows that interact with SAP data, automate data entry, and trigger actions based on specific events.
-- **Copilot Studio:** Copilot Studio is a visual design tool for creating a custom chatbot (referred to as an agent) and autonomous agents (completes processes on behalf of a person, team or organisation). Agents can be published to Microsoft Teams, Power Apps, web portals, and public websites. Copilot Studio also integrates with Azure AI services to enable agents to use resources including powerful language models and Azure AI Search.
+- **Copilot Studio:** Copilot Studio is a visual design tool for creating a custom chatbot (referred to as an agent) and autonomous agents (completes processes on behalf of a person, team, or organization). You can publish agents to Microsoft Teams, Power Apps, web portals, and public websites. Copilot Studio also integrates with Azure AI services to enable agents to use resources including powerful language models and Azure AI Search.
 - **Power Pages:** Power Pages enables organizations to quickly design, configure, and publish secure, data-driven enterprise-grade websites. These websites can be integrated with SAP to provide users with access to SAP data and services through a web interface.
 
 ## Templates for Quick Start
@@ -37,13 +37,13 @@ Microsoft offers [customizable templates](/power-platform/enterprise-templates/f
 
 - **Trigger:** A Power App triggers a Power Automate flow to create a sales order in SAP.
 - **Construct JSON:** The flow constructs a JSON payload with the sales order details.
-- **Call BAPI:** The flow calls the BAPI BAPI_SALESORDER_CREATEFROMDAT2 using the SAP ERP Connector.
+- **Call BAPI:** The flow calls the BAPI *BAPI_SALESORDER_CREATEFROMDAT2* using the SAP ERP Connector.
 - **Parse** Response: The flow parses the JSON response to extract the sales order number.
-- **Update App:** The Power App is updated with the sales order number for user reference.
+- **Update App:** Updates the canvas or model-driven app with the sales order number for user reference.
 
 ## App-building tips
 
-Here are some tips and resources to help you get started building canvas and model-driven apps that can work with SAP.
+Here are some tips and resources to help you get started building canvas and model-driven apps that work with SAP.
 
 ### Using Power Automate Flows with Other Applications
 
