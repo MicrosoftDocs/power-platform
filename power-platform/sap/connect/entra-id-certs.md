@@ -19,22 +19,23 @@ ms.date: 11/01/2024
 ms.custom: ignite-2024
 ms.service: power-platform
 ms.subservice: sap
-
 ---
 
-<!-- EDITOR'S NOTE: Is there any way you can this article to /entra/identity/authentication/how-to-certificate-based-authentication instead of duplicating content? If not, I recommend using the organizational approach in that article, which is really easy to follow. Please review this article for consistency with the MWSG and resubmit for editing. Thanks! -->
 # Microsoft Entra ID (with certificates) - single sign-on
 
-This guide walks you through setting up the connector so your users can access SAP data and run RFC (short for Remove Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
+This guide walks you through setting up the connector so your users can access SAP data and run RFCs (Remote Function Call) in Microsoft Power Platform using their Microsoft Entra ID for authentication. T​he process involves configuring both public and private certificates for secure communication.
 
 > [!IMPORTANT]
 > This article is for setting up a proof of concept only. The settings and recommendations are not intended for production use. For more information about this topic, consult your security team, internal policies, and Microsoft Partner for more guidance.
 
 ## Prerequisites
 
-- [Set up SAP Connection](sap-erp-connector.md). Be sure to use version July 2024 - 3000.230 or higher of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
+Be sure you have already:
+
+- [Set up SAP Connection](sap-erp-connector.md). Be sure to use version July 2024 - 3000.230 or later of the [On-premise data gateway](https://powerapps.microsoft.com/downloads/).
 - [Set up Secure Network Communications](secure-network-communications.md).
-- Be familiar with public and private key technologies.
+
+You also need to be familiar with public and private key technologies.
 
 ## Certificate
 
@@ -225,4 +226,4 @@ Replace the connection with a new one that uses `Microsoft Entra ID (using certi
 > Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
 Learn more:
-[On-premises data gateway FAQ | Microsoft Learn](/data-integration/gateway/service-gateway-onprem-faq#what-is-the-actual-windows-service-called---)
+[On-premises data gateway FAQ | Microsoft Learn](/data-integration/gateway/service-gateway-onprem-faq)
