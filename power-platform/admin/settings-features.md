@@ -44,7 +44,7 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. For more information, see [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
+| Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. Learn more in [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
 | Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
 | Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
 
@@ -210,8 +210,8 @@ To update these settings, make sure you have the System Administrator or System 
 |---------|-------------|---------------|
 |Dataverse search| If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.| Off|
 |Single table search option| If **On**, users get another option to search on a single table on view pages of search-enabled tables in all model-driven apps.|Off|
-|Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. More information: [Grid search](/power-apps/user/grid-filters#grid-search) | Off|
-|Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. More information: [Configure Dataverse search for the organization](configure-relevance-search-organization.md)| On |
+|Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. Learn more in [Grid search](/power-apps/user/grid-filters#grid-search). | Off|
+|Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. Learn more in [Configure Dataverse search for the organization](configure-relevance-search-organization.md).| On |
 | Use quick find view of an entity for searching on grids and sub-grids|  Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.  |Off|
 | Search for records in Microsoft 365 apps | You can quickly enable your users to access the records they most recently used in their application.  The records are available in the Outlook Web client using a simple /mention gesture.  | On |
 
@@ -227,52 +227,52 @@ To update these settings, make sure you have the System Administrator or System 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 |Custom help for customizable tables| Select **On** to replace the default Help content with custom Help designed for your users. After you enable custom Help, you can enter a Global Custom Help URL.|  Off |
-|Global custom help URL| To replace the default Help with a single URL for all customizable record types (tables), enter the URL here. You also have the option of entering override URLs for each record type (table) for customizable record types. More information: [Create your own guided help](/powerapps/maker/model-driven-apps/create-guided-help-learning-path)|  No default value |
-|Append parameters to URL| Select **On** to append parameters to the URL, you can make your Help content more dynamic. For example, you can access parameters for User Language Code, Table Name, Entry Point, and Form ID. More information: [Create your own guided help](/powerapps/maker/model-driven-apps/create-guided-help-learning-path)|  Not selected|
-| Enable Custom Help Panes | Select **On** to enable a custom in-product help experience that is tailored to your organization. More information: [Create guided help for your Unified Interface app](/power-apps/maker/data-platform/create-custom-help-pages).|  Off|
+|Global custom help URL| To replace the default Help with a single URL for all customizable record types (tables), enter the URL here. You also have the option of entering override URLs for each record type (table) for customizable record types. Learn more in [Create your own guided help](/powerapps/maker/model-driven-apps/create-guided-help-learning-path).|  No default value |
+|Append parameters to URL| Select **On** to append parameters to the URL, you can make your Help content more dynamic. For example, you can access parameters for User Language Code, Table Name, Entry Point, and Form ID. Learn more in [Create your own guided help](/powerapps/maker/model-driven-apps/create-guided-help-learning-path).|  Not selected|
+| Enable Custom Help Panes | Select **On** to enable a custom in-product help experience that is tailored to your organization. Learn more in [Create guided help for your Unified Interface app](/power-apps/maker/data-platform/create-custom-help-pages).|  Off|
 
 ## Power Apps component framework for canvas apps
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Allow publishing of canvas apps with code components| Enables Power Apps component framework feature that allows the execution of code that might not be generated by Microsoft when a maker adds code components to an app. Make sure that the code component solution is from a trusted source. More information: [Code components for canvas apps](/powerapps/developer/component-framework/component-framework-for-canvas-apps) | Off |
+|Allow publishing of canvas apps with code components| Enables Power Apps component framework feature that allows the execution of code that might not be generated by Microsoft when a maker adds code components to an app. Make sure that the code component solution is from a trusted source. Learn more in [Code components for canvas apps](/powerapps/developer/component-framework/component-framework-for-canvas-apps). | Off |
 
 ## Delete disabled users
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable delete disabled users| Delete disabled users permanently from the environment. More information: [Permanently delete users](delete-users.md#permanently-delete-users-in-power-platform) |Off |
+|Enable delete disabled users| Delete disabled users permanently from the environment. Learn more in [Permanently delete users](delete-users.md#permanently-delete-users-in-power-platform). |Off |
 
 ## TDS endpoint
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable TDS endpoint |  Enables [Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50) (TDS) endpoint (a SQL data connection) for Microsoft Dataverse in an environment. More information: [Use SQL to query data](/powerapps/developer/common-data-service/cds-sql-query) and [View entity data in Power BI Desktop](/powerapps/maker/common-data-service/view-entity-data-power-bi)|On |
-|Enable user level access control for TDS endpoint | When off, all environment users have access to the TDS endpoint. If on, users only have access when members of a security role that has the **Allow user to access TDS endpoint** privilege. More information: [Control access of the TDS endpoint](control-tds-settings.md) | Off |
+|Enable TDS endpoint |  Enables [Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50) (TDS) endpoint (a SQL data connection) for Microsoft Dataverse in an environment. Learn more in [Use SQL to query data](/powerapps/developer/common-data-service/cds-sql-query). and [View entity data in Power BI Desktop](/powerapps/maker/common-data-service/view-entity-data-power-bi)|On |
+|Enable user level access control for TDS endpoint | When off, all environment users have access to the TDS endpoint. If on, users only have access when members of a security role that has the **Allow user to access TDS endpoint** privilege. Learn more in [Control access of the TDS endpoint](control-tds-settings.md). | Off |
 
 ## Record ownership across business units
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  More information: [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) |Off|
+| Record ownership across business units   |  Set to **On** to enable the Matrix data access structure. Not recommended for production environments.  Learn more in [Matrix data access structure (Modernize Business Units - Preview)](wp-security-cds.md#matrix-data-access-structure-modernized-business-units). |Off|
 
 ## Disable empty address record creation
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Disable empty address record creation in Dataverse | When **On**, if the incoming payload doesn't have any address relevant data, an empty address data record aren't created. This feature is supported only for **Account** and **Contact** tables. More information: [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation) |    Off    |
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload doesn't have any address relevant data, an empty address data record aren't created. This feature is supported only for **Account** and **Contact** tables. Learn more in [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation). |    Off    |
 
 ## Enable deletion of address records
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion. More information: [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records)|    Off    |
+|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion. Learn more in [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records).|    Off    |
 
 ## Power Apps ideas for canvas apps
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Share ideas query data to help improve ideas results. |To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. More information: [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).|  Off |
+| Share ideas query data to help improve ideas results. |To help Microsoft improve Power Apps Ideas, you can share your ideas query data with Microsoft. Learn more in [Power Apps Ideas (preview)](/power-apps/maker/canvas-apps/power-apps-ideas).|  Off |
 
 ## Power BI components (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -280,9 +280,9 @@ To update these settings, make sure you have the System Administrator or System 
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
- |Allow creation of Power BI components  |  If **Off**, the environment doesn't have access to Power BI. Environments with a Dataverse database have this setting. Creating a Power BI component generates a dedicated Power BI workspace for that environment. All the Power BI artifacts corresponding to the Power BI components created in an environment are generated in that dedicated Power BI environment workspace. More information: [Permission sync between Power Apps environment and Power BI workspace](/power-apps/maker/model-driven-apps/customize-manage-powerbi-components#permission-sync-between-power-apps-environment-and-power-bi-workspace) |On |
+ |Allow creation of Power BI components  |  If **Off**, the environment doesn't have access to Power BI. Environments with a Dataverse database have this setting. Creating a Power BI component generates a dedicated Power BI workspace for that environment. All the Power BI artifacts corresponding to the Power BI components created in an environment are generated in that dedicated Power BI environment workspace. Learn more in [Permission sync between Power Apps environment and Power BI workspace](/power-apps/maker/model-driven-apps/customize-manage-powerbi-components#permission-sync-between-power-apps-environment-and-power-bi-workspace). |On |
 |Automatically assign permission to Power BI workspaces | If **On**, synchronization takes place between predefined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles are assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
- |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
+ |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. Learn more in [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
 ## Recycle Bin (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -291,5 +291,5 @@ To update these settings, make sure you have the System Administrator or System 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
 | Enable recycle bin for Dataverse tables  | When **On**, you can use recycle bin for Dataverse tables to restore deleted records.       |    **Off**     |
-|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. More information: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)       |   **30**      |
+|Configure recovery time interval     | Recover table record data for up to *30* days after the record was deleted. Learn more in [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md).       |   **30**      |
 
