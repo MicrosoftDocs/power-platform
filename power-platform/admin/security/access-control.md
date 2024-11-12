@@ -47,7 +47,7 @@ Minimizing the risk of over-sharing is crucial in ensuring data security and com
 1. Select **Configure guest access**.
 1. Turn on the **Turn off guest access** option.
 1. Select **Save**.
-1. The Guest access pane is displayed again. Repeat steps 5-8. Close the pane when you're done.
+1. The **Guest access** pane is displayed again. Repeat steps 5-8. Close the pane when you're done.
 
 ### Improve your security score and act on recommendations 
 Restricting guest access is a pivotal way to improve your tenant’s security posture. You can also take action by directly selecting the **Restrict guest user access** recommendation from the main security page, or the action center in the Power Platform admin center. After configuring guest access restrictions, your tenant’s security score improves based on the number of environments configured.  
