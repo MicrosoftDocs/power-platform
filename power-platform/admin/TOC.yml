@@ -466,7 +466,7 @@
               href: security/overview.md
             - name: Manage security
               items:
-              - name: Security overview 
+              - name: Manage security overview
                 href: security/security-overview.md
               - name: Network security 
                 href: security/network-security.md
