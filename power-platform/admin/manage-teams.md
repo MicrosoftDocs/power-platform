@@ -76,8 +76,7 @@ A list of all of the teams in the environment is displayed.
 After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
 
 > [!NOTE]
-> A default security role is automatically assigned to team records that have been created through data import. The **Salesperson** security role is assigned in a Dynamics CRM environment and the **Basic User** security role is assigned in a Power Apps environment.
-
+> A default security role is automatically assigned to team records that have been created through data import. The **Salesperson** security role is assigned in an environment with Dynamics 365 Sales app and the **Basic User** security role is assigned in other environments.
 
 ### Edit a team
 
