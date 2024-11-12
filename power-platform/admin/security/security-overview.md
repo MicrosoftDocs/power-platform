@@ -24,12 +24,12 @@ Managed security empowers administrators with AI-powered real-time detection, co
 
 Managed Security encompasses, but isn't limited to, the following capabilities: 
 
-- Security score: A unified platform to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization. Learn more 
+- [Security score](score-recommendations.md): A unified platform to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization. 
 
-- Network security: Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network. Learn more 
+- [Network security](network-security.md): Protect applications and cloud workloads from network-based cyberattacks with features like IP firewall, IP address-based cookie binding, and Azure Virtual Network. 
 
-- Access control: Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls. Learn more 
+- [Access controls](access-control.md): Ensure only authorized users can access specific resources with features like tenant isolation, data policies, environment security groups, and sharing controls.  
 
-- Threat detection: Protect your organization’s assets and resources with unified detection with features like Auditing.  Learn more 
+- [Threat detection](threat-detection.md): Protect your organization’s assets and resources with unified detection with features like Auditing.  
 
-- Compliance: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like Customer Lockbox and Customer Managed Key. Learn more 
+- [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like Customer Lockbox and Customer Managed Key.
