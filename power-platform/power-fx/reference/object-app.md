@@ -240,7 +240,7 @@ Error( FirstError )
 ## OnStart property
 
 > [!NOTE]
-> The use of **OnStart** property can cause performance problems when loading an app. We're in the process of creating alternatives for the top two reasons for using property&mdash;caching data and setting up global variables.  We've already created an alternative for defining the first screen to be shown with [**Navigate**](function-navigate.md).  Depending on your context, this property may be disabled by default. If you don't see it, and you need to use it, check the app's Advanced settings for a switch to enable it. The **OnVisible** property of a screen can also be used.
+> The use of **OnStart** property can cause performance problems when loading an app. We're in the process of creating alternatives for the top two reasons for using property&mdash;caching data and setting up global variables.  We've already created an alternative for defining the first screen to be shown with [**Navigate**](function-navigate.md).  Depending on your context, this property may be disabled by default. If you don't see it, and you need to use it, check the app's Advanced settings for a switch to enable it. The **OnVisible** property of a screen can also be used. When the non-blocking OnStart rule is enabled, which is the default, this prevents OnStart from executing in parallel with other app rules. In most cases, this would cause your app's other rules to wait for OnStart to finish before executing themselves. ADditionally, it is possible that a screen can render and become interactive before either Screen.OnVisible or App.OnStart completes if either are long-running. 
 
 The **OnStart** property runs when the user starts the app. This property is often used to perform the following tasks:
 
