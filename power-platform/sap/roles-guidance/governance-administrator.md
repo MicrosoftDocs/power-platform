@@ -28,7 +28,7 @@ Principal propagation is a way to make sure that users are securely authenticate
 
 [Application Lifecycle Management (ALM) in Power Platform](/power-platform/alm/) in Power Platform is important for controlling the development, deployment, and management of apps that work with SAP. ALM practices include using [solutions](/power-platform/alm/solution-concepts-alm) to package and move parts like apps, workflows, and connections between environments (e.g., Development, Quality, and Production). Administrators can set environment-specific rules, manage permissions, and make sure only authorized users can make changes. This organized approach helps keep SAP-connected apps secure and reliable.
 
-:::image type="content" source="/power-platform/sap/guides/media/governance/Power_Platform_ALM.png" alt-text="Power Platform ALM uses solutions to migrate apps across dev, test, and prod environments":::
+:::image type="content" source="media/governance/Power_Platform_ALM.png" alt-text="Power Platform ALM uses solutions to migrate apps across dev, test, and prod environments":::
 
 ## Support of Secure Data Transport
 
@@ -38,5 +38,5 @@ Learn more:
 
 - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
 - [Enable SAP Principal Propagation and SSO for Power Platform](/azure/sap/workloads/expose-sap-odata-to-power-platform)
-- [Set up Secure Network Communications (SNC)](../secure-network-communications.md)
-- [Set up Microsoft Entra ID using certificates (SSO)](../entra-id-certs.md)
+- [Set up Secure Network Communications (SNC)](..//connect/secure-network-communications.md)
+- [Set up Microsoft Entra ID using certificates (SSO)](..//connect/entra-id-certs.md)
