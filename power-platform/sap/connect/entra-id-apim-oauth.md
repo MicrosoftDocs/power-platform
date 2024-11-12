@@ -38,7 +38,7 @@ You can set up the Power Platform SAP OData connector to use Microsoft Entra ID 
 
 To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0, first set up SAP as a SAML provider.
 
-Perform these steps as an SAP Basis admin in SAP GUI.
+Take these steps as an SAP Basis admin in SAP GUI.
 
 1. To start the SAML 2.0 wizard, enter *SAML2* in the Command field.
 
