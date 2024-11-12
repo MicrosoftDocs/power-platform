@@ -13,8 +13,6 @@ ms.contributors:
 - mikefactorial
 ---
 
-<!-- I'm not familiar with the term "transpile," used in line 70, and it's not in the dictionary. Is that the correct word choice? -->
-
 # Overview of Dataverse Git integration (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
