@@ -38,5 +38,5 @@ Learn more:
 
 - [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
 - [Enable SAP Principal Propagation and SSO for Power Platform](/azure/sap/workloads/expose-sap-odata-to-power-platform)
-- [Set up Secure Network Communications (SNC)](/power-platform/sap/guides/set-up-secure-network-communications)
-- [Set up Microsoft Entra ID using certificates (SSO)](/power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates)
+- [Set up Secure Network Communications (SNC)](../secure-network-communications.md)
+- [Set up Microsoft Entra ID using certificates (SSO)](../entra-id-certs.md)

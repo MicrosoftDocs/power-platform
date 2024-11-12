@@ -47,4 +47,4 @@ Learn more:
 - [Get started with the SAP ERP connector](../connect/sap-erp-connector.md)
 - [Get started with the OData connector](../connect/sap-odata-connector.md)
 - [Set up Microsoft Entra ID using certificates(SSO)](../connect/entra-id-certs.md)
-- [Learn about SAP Procurement template for Microsoft Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview.md)
+- [Learn about SAP Procurement template for Microsoft Power Platform](../enterprise-templates/finance/sap-procurement/overview.md)
