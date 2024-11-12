@@ -33,3 +33,8 @@ Managed Security encompasses, but isn't limited to, the following capabilities:
 - [Threat detection](threat-detection.md): Protect your organization’s assets and resources with unified detection with features like Auditing.  
 
 - [Compliance](compliance.md): Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like Customer Lockbox and Customer Managed Key.
+
+> [!Note]
+> On each security page, the features that apply to Managed Environments are noted with this icon:
+> 
+> :::image type="content" source="media/managed-environments-icon.png" alt-text="Icon noting that a Managed Environment is required.":::
