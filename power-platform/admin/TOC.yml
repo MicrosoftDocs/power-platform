@@ -466,8 +466,10 @@
               href: security/overview.md
             - name: Manage security
               items:
-              - name: Manage security overview
+              - name: Managed security overview
                 href: security/security-overview.md
+              - name: Security score & recommendations
+                href: security/score-recommendations.md
               - name: Network security 
                 href: security/network-security.md
               - name: Access control 
