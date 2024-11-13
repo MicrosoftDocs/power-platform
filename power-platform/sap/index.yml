@@ -33,8 +33,8 @@ sections:
      - componentType: card
        title: "Step 1. Understand SAP integration"
        summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
-       imageUrl: /power-platform/sap/media/index-page/Understand_integration.png
-       url: explore/power-platform-and-SAP-integration.md
+       imageUrl: power-platform/sap/media/index-page/Understand_integration.png
+       url: power-platform/sap/explore/power-platform-and-SAP-integration.md
       # links: 
       #   - componentType: link
       #     text: Explore Power Platform and SAP integration
@@ -51,7 +51,7 @@ sections:
       # links: 
       #   - componentType: link
       #     text: Connect Power Platform and SAP
-       url: /power-platform/sap/connect/connect-power-platform-and-SAP
+       url: /connect/connect-power-platform-and-SAP
         # - componentType: link
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
@@ -137,19 +137,19 @@ sections:
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
-      url: /connect/secure-network-communications
+      url: connect/secure-network-communications.md
     - componentType: summary-card
       title: Entra ID using Kerberos for SSO
       summary: Use Kerberos SSO connections from Power Platform to SAP.
-      url: /connect/entra-id-kerberos    
+      url: connect/entra-id-kerberos.md    
     - componentType: summary-card
       title: Entra ID using certificates for SSO
       summary: Use certificate-based SSO connections from Power Platform to SAP.
-      url: /connect/entra-id-certs
+      url: connect/entra-id-certs.md
     - componentType: summary-card
       title: Entra ID using Azure API Management and OAuth
       summary: Use Azure API Management and OAuth from Power Platform to SAP.
-      url: /connect/entra-id-apim-oauth
+      url: connect/entra-id-apim-oauth.md
     - componentType: summary-card
       title: Power Platform security and governance
       summary: Set up and maintain security and governance for Power Platform.
