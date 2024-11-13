@@ -40,7 +40,7 @@ Most of the pages from the classic admin center are available in either the same
 |-----------|--------------------------------------------|----------------------------------|
 | 1 | Home | Home|
 |2| Environments| Manage > Environments|
-|3| Environment groups | Manage | Environment groups|
+|3| Environment groups | Manage > Environment groups|
 | 4| Advisor | Action center > Recommendations |
 | 5| Security| Security |
 |6| Analytics | Not applicable<br><br>Experiences from Analytics pages will not be migrated in the current form. |
