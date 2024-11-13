@@ -1062,6 +1062,31 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/sap/guides/getting-started-with-the-sap-erp-connector.md",
+      "redirect_url": "/power-platform/sap/connect/connect-power-platform-and-sap",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/set-up-microsoft-entra-id-with-azure-apim-and-oauth.md",
+      "redirect_url": "/power-platform/sap/connect/entra-id-apim-oauth",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/set-up-secure-network-communications.md",
+      "redirect_url": "/power-platform/sap/connect/secure-network-communications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/overview.md",
+      "redirect_url": "/power-platform/sap/explore/power-platform-and-sap-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates.md",
+      "redirect_url": "/power-platform/sap/connect/entra-id-certs",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/power-fx/formula-reference.md",
       "redirect_url": "/power-platform/power-fx/formula-reference-canvas-apps",
       "redirect_document_id": "false"
