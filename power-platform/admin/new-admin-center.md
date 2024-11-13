@@ -50,8 +50,9 @@ Most of the pages from the classic admin center are available in either the same
 |10| Copilot | Copilot |
 |11| Resources > Capacity | Licensing > Capacity add-ons |
 |12| Resources > Catalogs | Deployment > Catalogs |
-
-
+| 13| Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |
+| 14| Resources > Power Pages sites | Manage > Proucts > Power Pages sites |
+|15| Help + Support | Support |
 
 ## What else is included in the new admin center? 
 
