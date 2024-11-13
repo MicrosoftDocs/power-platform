@@ -124,7 +124,7 @@ sections:
   blocks:
     - componentType: summary-card
       title: SAP Setup Assistant
-      summary: The Setup Assistant helps you set up the SAP Procurement template.
+      summary: Follow a guided process to install the on-premises data gateway and SAP Procurement template.
       url: /power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
     - componentType: summary-card
       title: SAP ERP connector
