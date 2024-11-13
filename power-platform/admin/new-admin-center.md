@@ -14,19 +14,19 @@ search.audienceType:
 
 # New and imporoved Power Platform admin center
                                                   
-We are happy to announce the Public Preview of the new Power Platform Admin Center! 
+We are happy to announce the public preview of the new Power Platform admin center! 
 
-The new Power Platform Admin Center is an outcome-driven hub experience, where all experiences are logically grouped into pages based on Jobs to be done by an admin in PPAC! 
+The new Power Platform admin center is an outcome-driven experience, where all experiences are logically grouped into pages based on jobs to be done by an admin.
 
-The experiences in the new Power Platform Admin Center will not only be task-oriented but will also focus on achieving specific outcomes and goals. They are designed to ensure optimal user experience and cater to a wide array of stakeholders with diverse needs. 
+The experiences in the new Power Platform admin center aren't only task-oriented, but are also focus on achieving specific outcomes and goals. They are designed to ensure optimal user experience and cater to a wide array of stakeholders with diverse needs. 
 
 ## When and how can customers benefit from the new experience 
 
-The new Power Platform Admin Center will be in public preview for all customers starting November 24, 2024 (customers in some regions might be able to enjoy the new experience sooner as well) .  
+The new Power Platform admin center is in public preview for all customers starting November 24, 2024. Customers in some regions might be able to enjoy the new experience sooner, as well.  
 
-In order to use the new User Experience, admins need to turn on the toggle in the top right corner of the existing PPAC. 
+In order to use the new user experience, admins need to turn on the **Try the new admin center** toggle in the top-right corner of the existing admin center. 
 
-<image>
+:::image type="content" source="media/classic-ppac.png" alt-text="Try the new admin center toggle.":::
 
 Upon turning on the toggle, customers will be able to transact in the new Power Platform Admin Center, with the richness of a new UI as well as logically grouped pages! 
 
