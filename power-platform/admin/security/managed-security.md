@@ -20,13 +20,13 @@ In today's AI-driven world, safeguarding your enterprise data and business proce
 
 Managed Security provides comprehensive solutions to protect your data from threats, control access, prevent data exfiltration, and gain visibility into your security posture. It also helps assess risks and ensures compliance with various regulations, making it a robust tool for today's cybersecurity challenges. 
 
-It brings together our most advanced threat protection, data protection and privacy, identity and access management, compliance, and security posture management capabilities to empower customers to meet today’s cyber security challenges.  
+It brings together our most advanced threat protection, data protection and privacy, Identity and access management and compliance capabilities to empower customers to meet today’s cyber security challenges.  
 
 Managed Security encompasses, but isn't limited to, the following capabilities: 
 
-- **Compliance**: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../admin/about-lockbox.md). 
+- **Compliance**: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like Customer Lockbox 
 
-- **Data protection and privacy**: Ensure personal information is securely handled, stored, and protected with confidentiality and integrity, preventing unauthorized access. Features like [Azure Virtual Network](../admin/vnet-support-overview.md), [customer-managed keys](../admin/customer-managed-key.md), and data policies help protect applications and cloud workloads from network-based cyberattacks. 
+- **Data protection and privacy**: Ensure personal information is securely handled, stored, and protected with confidentiality and integrity, preventing unauthorized access. Features like Azure Virtual Network, Customer Managed keys, and Data policies help protect applications and cloud workloads from network-based cyberattacks. 
 
 - **Identity and access management**: Ensure only authorized users can access specific resources with features like IP Firewall, IP cookie binding, environment security groups, and manage sharing. 
 
