@@ -15,11 +15,11 @@ ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
 ---
-# Integrating SAP Data with Power Platform for App Makers
+# Integrating SAP data with Power Platform for app makers
 
 Power Platform app makers can leverage Microsoft's Power Platform SAP connectors to build applications that seamlessly integrate data from SAP systems. This integration enables the creation of apps, workflows, and copilots that enhance business processes by utilizing SAP data.
 
-## SAP Connectors Overview
+## SAP connectors overview
 
 Microsoft provides several connectors to integrate with SAP systems, including the SAP ERP Connector and the SAP OData Connector. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](..//connect/connect-power-platform-and-SAP.md) for more on selecting which connector to use and setting up the connectors in your environment.
 
@@ -33,7 +33,7 @@ SAP RFCs are the foundation that enables communications between SAP and other sy
 
 Talk to an SAP expert in your organization or ask Microsoft Copilot to find specific RFCs and BAPIs.
 
-## Working with Complex JSON Structures
+## Working with complex JSON structures
 
 When calling Power Platform SAP connectors, app makers often need to handle complex JSON structures. This involves parsing and constructing JSON payloads to interact with SAP APIs effectively.
 
@@ -54,7 +54,7 @@ To learn more about working with JSON structures in Power Automate, refer to [Wo
 
 Here are some tips and resources to help you get started building canvas and model-driven apps that can work with SAP.
 
-### Handling Data Objects Without SAP APIs
+### Handling data objects without SAP APIs
 
 If SAP does not provide an API for a data object, there are several options available:
 
@@ -63,14 +63,14 @@ If SAP does not provide an API for a data object, there are several options avai
 - [Legacy System Migration Workbench (LSMW):](https://help.sap.com/doc/saphelp_nw73ehp1/7.31.19/en-US/4d/afeb6ad8f66d57e10000000a42189e/content.htm?no_cache=true) Power Automate can create a file that can be dropped on the SAP application server and processed within transaction LSMW.
 - [Custom Function Module:](https://help.sap.com/doc/saphelp_nw75/7.5.5/en-US/c8/19764143b111d1896f0000e8322d00/content.htm?no_cache=true) Create a custom remote-enabled function module in SAP and call it using a Power Automate cloud flow.
 
-### Handling Custom SAP Fields
+### Handling custom SAP fields
 
 The approach to handling custom fields in SAP depends on their location:
 
 - **Appended to SAP-Standard Tables:** Use BAPI Extension Structures in Power Automate flows to populate these fields. Custom fields appended to standard SAP tables are supported if the tables are properly extended according to SAP custom fields standards for the table in the ABAP Dictionary (SAP TCode SE11). For more information, ask an SAP expert in your organization.
 - **Custom SAP Tables:** Ensure the function modules updating these tables are remote-enabled to allow the SAP connector to invoke them.
 
-### Diagnosing User Security Errors
+### Diagnosing user security errors
 
 To diagnose a user security error, run a trace in transaction ST01 in the SAP GUI application to determine what is missing from the user's security profile. Confirm that the user has the S_RFC authorization object, which is required to execute BAPIs and remote-enabled custom RFCs.
 
