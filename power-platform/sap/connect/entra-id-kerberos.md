@@ -13,7 +13,9 @@ ms.date: 11/11/2024
 
 # Set up Microsoft Entra ID with Kerberos for SSO
 
-You can set up the Power Platform SAP ERP connector to use Microsoft Entra ID credentials for Kerberos-based single sign-on (SSO). Your users can access SAP data and run SAP Remote Function Calls (RFCs) in Power Platform solutions without having to sign in multiple times to multiple services. This article walks you through the process, including configuring Kerberos constrained delegation on the on-premises data gateway for secure communication. Learn more in [Kerberos constrained delegation overview](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
+You can set up the Power Platform SAP ERP connector to use Microsoft Entra ID credentials for Kerberos-based single sign-on (SSO). Your users can access SAP data and run SAP Remote Function Calls (RFCs) in Power Platform solutions without having to sign in multiple times to multiple services. This article walks you through the process, including configuring Kerberos constrained delegation (KCD) on the on-premises data gateway for secure communication.
+
+Learn more about [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
 These instructions assume that you're starting from scratch. Most customers have already completed some of the steps. Determining which steps you need to complete for your scenario is beyond the scope of this article.
 
@@ -83,7 +85,7 @@ With the service account created, define its Service Principal Name (SPN) and en
 > [!IMPORTANT]
 > Enabling Kerberos AES 256-bit encryption can cause problems for other clients, like SAP GUI, that request Kerberos tickets from this Active Directory account. This is because it changes the list of encryption methods available, and other clients no longer have a common encryption cipher. Check the Active Directory logs to determine which encryption methods all clients are using, and then manually update the `msDS-SupportedEncryptionTypes` property with the correct value. After the update, the AES 256 encryption option should appear automatically without needing to be selected manually. Learn more at [Decrypting the selection of supported Kerberos encryption types](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/decrypting-the-selection-of-supported-kerberos-encryption-types/ba-p/1628797) on the Core infrastructure and Community blog.
 
-## Set up Secure Network Communications with Kerberos SSO authentication in SAP
+## Set up Secure Network Communications with Kerberos SSO auth in SAP
 
 Perform the following steps as an SAP Basis admin in SAP GUI.
 
