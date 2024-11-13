@@ -198,4 +198,4 @@ sections:
     - componentType: summary-card
       title: SAP and Power Platform white paper
       summary: Power Platform considerations for SAP experts.
-      url: ./explore/white-paper
+      url: explore/white-paper.md

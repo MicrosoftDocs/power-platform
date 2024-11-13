@@ -26,13 +26,13 @@ Principal Propagation is a way to make sure that users are securely authenticate
 
 ## Power Platform Application Lifecycle Management (ALM)
 
-[Application Lifecycle Management (ALM) in Power Platform](/power-platform//alm/basics-alm.md) is important for controlling the development, deployment, and management of apps that work with SAP. ALM practices include using [solutions](/power-platform//alm/solution-concepts-alm.md) to package and move parts like apps, workflows, and connections between environments (e.g., Development, Quality, and Production). Administrators can set environment-specific rules, manage permissions, and make sure only authorized users can make changes. This organized approach helps keep SAP-connected apps secure and reliable.
+[Application Lifecycle Management (ALM) in Power Platform](/power-platform/alm/basics-alm) is important for controlling the development, deployment, and management of apps that work with SAP. ALM practices include using [solutions](/power-platform/alm/solution-concepts-alm) to package and move parts like apps, workflows, and connections between environments (e.g., Development, Quality, and Production). Administrators can set environment-specific rules, manage permissions, and make sure only authorized users can make changes. This organized approach helps keep SAP-connected apps secure and reliable.
 
 :::image type="content" source="media/governance/Power_Platform_ALM.png" alt-text="Power Platform ALM uses solutions to migrate apps across dev, test, and prod environments":::
 
 ## Support of secure data transport
 
-Secure data transport is very important when connecting Power Platform with SAP systems. The on-premises data gateway acts as a bridge, securely transferring data between on-premises SAP systems and Power Platform. The gateway uses outbound ports to connect to Azure services, which improves security. Additionally, Secure Network Communications (SNC) can be set up to encrypt data between the gateway and SAP systems. Administrators should also use [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention.md) policies to control which connectors can be used and to prevent unauthorized data access or transfer.
+Secure data transport is very important when connecting Power Platform with SAP systems. The on-premises data gateway acts as a bridge, securely transferring data between on-premises SAP systems and Power Platform. The gateway uses outbound ports to connect to Azure services, which improves security. Additionally, Secure Network Communications (SNC) can be set up to encrypt data between the gateway and SAP systems. Administrators should also use [Data Loss Prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies to control which connectors can be used and to prevent unauthorized data access or transfer.
 
 Learn more:
 
