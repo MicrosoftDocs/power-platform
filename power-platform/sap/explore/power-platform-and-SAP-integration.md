@@ -1,6 +1,6 @@
 ---
 title: Explore Power Platform and SAP integration
-description: Learn how Power Platform can help you quickly build, extend, and deploy solutions that improve daily workflows that interact with SAP.
+description: Learn how Power Platform helps you build, extend, and deploy solutions that interact with SAP to improve daily workflows.
 author: edlehman
 ms.author: edleh
 contributors: 

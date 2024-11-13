@@ -12,7 +12,7 @@
         - name: Get started with Power Platform
           items:
             - name: Power Platform guidance
-              href: /power-platform/index.md
+              href: /power-platform/guidance/
         - name: Connect to SAP
           items:
             - name: Connect Power Platform and SAP
