@@ -43,7 +43,7 @@ Most of the pages from the classic admin center are available in either the same
 |3| Environment groups | Manage > Environment groups|
 | 4| Advisor | Action center > Recommendations |
 | 5| Security| Security |
-|6| Analytics | Not applicable<br><br>Experiences from Analytics pages won't be migrated in the current form. |
+|6| Analytics | Not applicable<br><br>**Note:** Experiences from Analytics pages won't be migrated in the current form. |
 |7| Billing > Licenses | Licensing > Products > Power Apps |
 |8| Billing > Plans | Licensing > Pay-as-you-go plans |
 |9| Settings | Manage > Tenant settings |
@@ -51,15 +51,15 @@ Most of the pages from the classic admin center are available in either the same
 |11| Resources > Capacity | Licensing > Capacity add-ons |
 |12| Resources > Catalogs | Deployment > Catalogs |
 | 13| Resources > Dynamics 365 apps | Manage > Products > Dynamics 365 apps |
-| 14| Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>The security data of Pages will be moved to Security > Products -> Power Pages.  |
+| 14| Resources > Power Pages sites | Manage > Products > Power Pages sites<br><br>**Note:** The security data of Pages will be moved to Security > Products -> Power Pages.  |
 |15| Help + Support | Support |
-|16| Data integration | Not applicable<br><br>Experiences from Data Integration pages won't be migrated in the current form. |
+|16| Data integration | Not applicable<br><br>**Note:** Experiences from Data Integration pages won't be migrated in the current form. |
 |17| Data (Preview) | Manage > Data (Preview) |
 |18| Policies > Data policies | Security > Access control > Data policies |
 |19| Policies > Tenant isolation | Security | Access control | Tenant isolation |
 |20| Policies > Customer Lockbox | Security > Compliance > Customer Lockbox |
 |21| Policies > Enterprise policies | Security > Compliance > Enterprise policies |
-|22| Policies > Billing policies | Not applicable<br><br>Experiences from Billing Policies pages won't be migrated in the current form. |
+|22| Policies > Billing policies | Not applicable<br><br>**Note:** Experiences from Billing Policies pages won't be migrated in the current form. |
 | 23| Admin Centers | Admin Centers|
 
 ## What else is included in the new admin center? 
