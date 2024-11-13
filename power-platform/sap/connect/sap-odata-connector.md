@@ -20,7 +20,7 @@ The [SAP OData connector](/connectors/sapodata/) helps you connect your SAP syst
 
 ## What is OData?
 
-OData stands for [Open Data Protocol](odata/overview). It's a standard way to create and use data APIs, which are like doors for different software to communicate. OData makes it easy to perform basic tasks like creating, reading, updating, and deleting data. The SAP OData connector uses these rules to connect with SAP systems.
+OData stands for [Open Data Protocol](odata/overview.md). It's a standard way to create and use data APIs, which are like doors for different software to communicate. OData makes it easy to perform basic tasks like creating, reading, updating, and deleting data. The SAP OData connector uses these rules to connect with SAP systems.
 
 ## Ways to connect
 
@@ -35,7 +35,7 @@ The SAP OData connector offers the following ways for users to access SAP system
 
 If the SAP system you're integrating with is not accessible from the internet because it's behind a company firewall, you need to "proxy" / route them through the corporate firewall. Setting up an **[on-premises data gateway](/data-integration/gateway/)** allows you to access the system. To get started:
 
-- Download the on-premises data gateway from [Download and install a standard gateway](data-integration/gateway/service-gateway-install#download-and-install-a-standard-gateway) (The February 2024 release is needed)
+- Download the on-premises data gateway from [Download and install a standard gateway](data-integration/gateway/service-gateway-install) (The February 2024 release is needed)
 - Be sure to install and configure it in the same region as your Power Automate environment.
 
 To see the gateway installed in your Power Automate environment, go to *Gateways*.

@@ -24,7 +24,7 @@ The integration between Power Platform and SAP involves several key components:
 - **On-Premises Data Gateway:** The on-premises data gateway acts as a bridge, providing secure data transfer between on-premises SAP systems and Power Platform. It uses outbound ports to reach Azure services, ensuring no inbound ports are required, which enhances security.
 - **Principal Propagation:** This mechanism ensures secure and seamless authentication between Power Platform and SAP systems. It allows the identity of the user in Power Platform to be propagated to the SAP system, ensuring actions performed in SAP are attributed to the correct user.
 
-:::image type="content" source="/power-platform/sap/guides/media/explore-power-platform-and-SAP-integration/FlexibleByDesign.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
+:::image type="content" source="media/admin/flex-design.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
 ## Implementing Microsoft Power Platform Connectors
 

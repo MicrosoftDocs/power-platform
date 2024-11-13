@@ -98,4 +98,4 @@ After you verify that the SAP action is working, learn [best practices](/power-p
 
 ## Next step
 
-[Set up Secure Network Communication](/connect/secure-network-communications.md)
+[Set up Secure Network Communication](./secure-network-communications.md)

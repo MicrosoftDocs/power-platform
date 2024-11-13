@@ -21,7 +21,7 @@ Power Platform app makers can leverage Microsoft's Power Platform SAP connectors
 
 ## SAP Connectors Overview
 
-Microsoft provides several connectors to integrate with SAP systems, including the SAP ERP Connector and the SAP OData Connector. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](/power-platform/sap/connect-power-platform-and-SAP) for more on selecting which connector to use and setting up the connectors in your environment.
+Microsoft provides several connectors to integrate with SAP systems, including the SAP ERP Connector and the SAP OData Connector. These connectors provide the data exchange between Power Platform and SAP, supporting both RFC and HTTP-based connectivity. See [Connect Power Platform and SAP](..//connect/connect-power-platform-and-SAP) for more on selecting which connector to use and setting up the connectors in your environment.
 
 ## Using SAP RFCs and BAPIs
 

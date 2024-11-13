@@ -26,7 +26,7 @@ Principal Propagation is a way to make sure that users are securely authenticate
 
 ## Power Platform Application Lifecycle Management (ALM)
 
-[Application Lifecycle Management (ALM) in Power Platform](/power-platform/alm/) is important for controlling the development, deployment, and management of apps that work with SAP. ALM practices include using [solutions](/power-platform/alm/solution-concepts-alm.md) to package and move parts like apps, workflows, and connections between environments (e.g., Development, Quality, and Production). Administrators can set environment-specific rules, manage permissions, and make sure only authorized users can make changes. This organized approach helps keep SAP-connected apps secure and reliable.
+[Application Lifecycle Management (ALM) in Power Platform](/power-platform//alm/basics-alm.md) is important for controlling the development, deployment, and management of apps that work with SAP. ALM practices include using [solutions](/power-platform//alm/solution-concepts-alm.md) to package and move parts like apps, workflows, and connections between environments (e.g., Development, Quality, and Production). Administrators can set environment-specific rules, manage permissions, and make sure only authorized users can make changes. This organized approach helps keep SAP-connected apps secure and reliable.
 
 :::image type="content" source="media/governance/Power_Platform_ALM.png" alt-text="Power Platform ALM uses solutions to migrate apps across dev, test, and prod environments":::
 

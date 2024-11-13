@@ -22,7 +22,7 @@ sections:
   summary: "Microsoft Power Platform is a suite of AI-enabled, low-code development tools designed to help users build custom business solutions. Organizations using SAP leverage Power Platform as the agility layer to build applications and automate business processes that are deeply connected to their SAP system. Find out how you can make the most of your SAP system and speed up time to value with Power Platform here." 
   background:
     componentType: image # Note difference with the below example
-    src: /power-platform/sap/media/index-page/Hero.png
+    src: media/index-page/Hero.png
   #subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 - componentType: cards
 #   #   backgroundColor: dark
@@ -42,12 +42,12 @@ sections:
      - componentType: card
        title: "Step 2. Get started with Power Platform"
        summary: Learn how to get started with your enterprise adoption of Power Platform.
-       imageUrl: /power-platform/sap/media/index-page/Get_started.png
+       imageUrl: media/index-page/Get_started.png
        url: https://learn.microsoft.com/en-us/power-platform/guidance/
      - componentType: card
        title: "Step 3. Connect to SAP"
        summary: "Already have a Power Platform environment? Use SAP connectors to integrate with your SAP environment." 
-       imageUrl: /power-platform/sap/media/index-page/Connect.png
+       imageUrl: media/index-page/Connect.png
       # links: 
       #   - componentType: link
       #     text: Connect Power Platform and SAP
@@ -58,7 +58,7 @@ sections:
      - componentType: card
        title: "Step 4. Leverage templates"
        summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
-       imageUrl: /power-platform/sap/media/index-page/Leverage_templates.png
+       imageUrl: media/index-page/Leverage_templates.png
       # links: 
       #   - componentType: link
       #     text: Procurement template for SAP
@@ -137,7 +137,7 @@ sections:
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
-      url: /power-platform/sap/connect/set-up-secure-network-communications
+      url: sap/connect/set-up-secure-network-communications
     - componentType: summary-card
       title: Entra ID using Kerberos for SSO
       summary: Use Kerberos SSO connections from Power Platform to SAP.

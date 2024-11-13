@@ -20,7 +20,7 @@ As an SAP consultant, you can leverage Microsoft Power Platform to build applica
 
 ## Microsoft Power Platform Connectors
 
-Microsoft Power Platform offers connectors, including the SAP ERP and SAP OData connectors, for [streamlined SAP integration](/power-platform/sap/connect/power-platform-and-SAP). These connectors encapsulate APIs needed for data exchange, supporting RFC-based and HTTP-based connectivity. App makers can perform actions like creating, updating, or retrieving SAP data, making integrated solutions simpler to build.
+Microsoft Power Platform offers connectors, including the SAP ERP and SAP OData connectors, for [streamlined SAP integration](../explore//power-platform-and-SAP-integration.md). These connectors encapsulate APIs needed for data exchange, supporting RFC-based and HTTP-based connectivity. App makers can perform actions like creating, updating, or retrieving SAP data, making integrated solutions simpler to build.
 
 ## Capabilities of Power Platform Low Code Tools
 
@@ -31,7 +31,7 @@ Microsoft Power Platform offers connectors, including the SAP ERP and SAP OData 
 
 ## Templates for Quick Start
 
-Microsoft offers [customizable templates](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started) to accelerate SAP-integrated solution development on Power Platform, providing essential techniques, building blocks, and sample apps and flows for specific use cases
+Microsoft offers Enterprise templates for Power Platform. The [customizable SAP Procurement template](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started) to accelerate SAP-integrated solution development on Power Platform, providing essential techniques, building blocks, and sample apps and flows for specific use cases
 
 ## Example Workflow structure
 

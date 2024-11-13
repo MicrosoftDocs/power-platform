@@ -235,4 +235,4 @@ Follow the steps to test the secure connection. Once you complete the test succe
 
 ## Next step
 
-[Set up Microsoft Entra ID with certificates for SSO](/connect/entra-id-with-certs.md)
+[Set up Microsoft Entra ID with certificates for SSO](./entra-id-with-certs.md)

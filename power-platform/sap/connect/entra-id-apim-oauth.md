@@ -27,7 +27,7 @@ You can set up the Power Platform SAP OData connector to use Microsoft Entra ID 
 
 [!INCLUDE [Lightbox tip](~/../shared-content/shared/lightbox-tip.md)]
 
-:::image type="content" source="./media/setup-microsoft-entra-id-with-apim-and-oauth/traffic_flow.jpg" alt-text="Solution diagram that shows the traffic flow from Power Platform and Copilot to SAP through Azure API Management." lightbox="media/setup-microsoft-entra-id-with-apim-and-oauth/traffic_flow.jpg":::
+:::image type="content" source="./media/entra-id-apim-oauth/traffic_flow.jpg" alt-text="Solution diagram that shows the traffic flow from Power Platform and Copilot to SAP through Azure API Management." lightbox="media/setup-microsoft-entra-id-with-apim-and-oauth/traffic_flow.jpg":::
 
 ## Prerequisites
 
