@@ -36,7 +36,22 @@ If admins choose to go back to the classic admin center from the new and improve
 
 Most of the pages from the classic admin center are available in either the same form or with enhanced experiences in the new admin center. The location of these pages in the new admin center is listed in the following table. 
 
-<table>
+| Item number | Navigation in the classic admin center | Navigation in the new admin center |
+|-----------|--------------------------------------------|----------------------------------|
+| 1 | Home | Home|
+|2| Environments| Manage > Environments|
+|3| Environment groups | Manage | Environment groups|
+| 4| Advisor | Action center > Recommendations |
+| 5| Security| Security |
+|6| Analytics | Not applicable<br><br>Experiences from Analytics pages will not be migrated in the current form. |
+|7| Billing > Licenses | Licensing > Products > Power Apps |
+|8| Billing > Plans | Licensing > Pay-as-you-go plans |
+|9| Settings | Manage > Tenant settings |
+|10| Copilot | Copilot |
+|11| Resources > Capacity | Licensing > Capacity add-ons |
+|12| Resources > Catalogs | Deployment > Catalogs |
+
+
 
 ## What else is included in the new admin center? 
 
