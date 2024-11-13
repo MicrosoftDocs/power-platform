@@ -26,8 +26,8 @@ Managed Security encompasses, but isn't limited to, the following capabilities:
 
 - **Compliance**: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../about-lockbox.md).
 
-- **Data protection and privacy**: Ensure personal information is securely handled, stored, and protected with confidentiality and integrity, preventing unauthorized access. Features like Azure Virtual Network, Customer Managed keys, and Data policies help protect applications and cloud workloads from network-based cyberattacks. 
+- **Data protection and privacy**: Ensure personal information is securely handled, stored, and protected with confidentiality and integrity, preventing unauthorized access. Features like [Azure Virtual Network](../vnet-support-overview.md), [customer-managed keys](../customer-managed-key.md), and [data policies](../managed-environment-data-policies.md) help protect applications and cloud workloads from network-based cyberattacks. 
 
-- **Identity and access management**: Ensure only authorized users can access specific resources with features like IP Firewall, IP cookie binding, environment security groups, and manage sharing. 
+- **Identity and access management**: Ensure only authorized users can access specific resources with features like [IP firewall](../ip-firewall.md), [IP cookie binding](../block-cookie-replay-attack.md), [environment security groups](../control-user-access.md), and [manage sharing](../managed-environment-sharing-limits.md). 
 
-- **Threat protection**: Protect your organization’s assets and resources with unified detection with features like Auditing. This helps in identifying and mitigating potential threats effectively. Learn more in Manage Dataverse auditing.  
+- **Threat protection**: Protect your organization’s assets and resources with unified detection with features like Microsoft Sentinel seamlessly integrated with Power Platform, it enables intelligent detection and response to suspicious activities, such as mass data deletion or unauthorized app execution. This enhances security posture and effectively mitigates potential threats. 
