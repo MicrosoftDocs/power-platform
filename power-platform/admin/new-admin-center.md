@@ -1,5 +1,5 @@
 ---
-title: New and improved Power Platform admin center (preview)
+title: Use the new and improved Power Platform admin center (preview)
 description: Learn how to take advantage of the new and improved Power Platform admin center to achieve specific outcomes and goals.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# New and improved Power Platform admin center (preview)
+# Use the new and improved Power Platform admin center (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 We're happy to announce the public preview of the new Power Platform admin center! 
