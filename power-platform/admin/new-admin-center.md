@@ -37,7 +37,7 @@ If admins choose to go back to the classic admin center from the new and improve
 Most of the pages from the classic admin center are available in either the same form or with enhanced experiences in the new admin center. The location of these pages in the new admin center is listed in the following table. 
 
 | Item number | Navigation in the classic admin center | Navigation in the new admin center |
-|-----------|--------------------------------------------|----------------------------------|
+|-------------|----------------------------------------|------------------------------------|
 | 1 | Home | Home|
 |2| Environments| Manage > Environments|
 |3| Environment groups | Manage > Environment groups|
