@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 06/05/2024
+ms.date: 11/13/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -219,3 +219,8 @@ We encourage customers to use pipelines for core deployment functionality, and w
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+## Related information
+
+[Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)
