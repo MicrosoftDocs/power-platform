@@ -25,9 +25,7 @@ ms.date: 11/01/2024
 
 You can set up the Power Platform SAP OData connector to use Microsoft Entra ID credentials for single sign-on (SSO) to SAP. Your users can access SAP data and run SAP Remote Function Calls (RFCs) in Power Platform solutions without having to sign in multiple times to multiple services. This article walks you through the process, including setting up a trust between SAP and Microsoft Entra ID and configuring Azure API Management to convert the Microsoft Entra ID OAuth token to a SAML token that's used to make OData calls to SAP.
 
-[!INCLUDE [Lightbox tip](~/../shared-content/shared/lightbox-tip.md)]
-
-:::image type="content" source="media/entra-id-apim-oauth/traffic_flow.jpg" alt-text="Solution diagram that shows the traffic flow from Power Platform and Copilot to SAP through Azure API Management." lightbox="media/setup-microsoft-entra-id-with-apim-and-oauth/traffic_flow.jpg":::
+:::image type="content" source="media/entra-id-apim-oauth/traffic_flow.jpg" alt-text="Solution diagram that shows the traffic flow from Power Platform and Copilot to SAP through Azure API Management." lightbox="media/entra-id-apim-oauth/traffic_flow.jpg":::
 
 ## Prerequisites
 
@@ -226,7 +224,7 @@ Convert the SAP OData XML metadata to an OpenAPI JSON specification and upload i
 | SAPOAuthClientSecret                 | SAP system user password |
 | SAPOAuthRefreshExpiry                | Token refresh expiration |
 | SAPOAuthScope                        | OData scopes chosen during SAP OAuth configuration |
-| SAPOAuthServerAdressForTokenEndpoint | SAP endpoint for Azure API Management to call to perform the token acquisition |
+| SAPOAuthServerAddressForTokenEndpoint | SAP endpoint for Azure API Management to call to perform the token acquisition |
 | SapOdataFirstParty | Microsoft Power Platform SAP OData connector first-party application GUID. This value should always be *6bee4d13-fd19-43de-b82c-4b6401d174c3* |
 
 ## Apply the Azure API Management token policy
