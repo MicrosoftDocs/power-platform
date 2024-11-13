@@ -73,7 +73,7 @@ These new experiences help organizations measure and improve the operational hea
 
 ## What can we expect next? 
 
-Over the next several months, new experiences will be added to the Power Platform admin center to assist admins in their day-to-day jobs. These tasks will include ALM experiences, as well. 
+Over the next several months, new experiences will be added to the Power Platform admin center to assist admins in their day-to-day jobs. These tasks will include application lifecycle management (ALM) experiences, as well. 
 
 Through recurring updates, information about these experiences will be made public. 
 
