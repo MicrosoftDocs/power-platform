@@ -33,7 +33,7 @@ sections:
      - componentType: card
        title: "Step 1. Understand SAP integration"
        summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
-       imageUrl: power-platform/sap/media/index-page/Understand_integration.png
+       imageUrl: media/index-page/Understand_integration.png
        url: power-platform/sap/explore/power-platform-and-SAP-integration.md
       # links: 
       #   - componentType: link
@@ -51,7 +51,7 @@ sections:
       # links: 
       #   - componentType: link
       #     text: Connect Power Platform and SAP
-       url: /connect/connect-power-platform-and-SAP
+       url: ./connect/connect-power-platform-and-SAP
         # - componentType: link
         #   text: Watch videos
         #   url: /collections/20mijo44z6xq6
@@ -194,8 +194,8 @@ sections:
     - componentType: summary-card
       title: Release plans
       summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
-      url: https://aka.ms/PowerPlatformReleasePlan
+      url: https://releaseplans.microsoft.com/?app=Power+Apps
     - componentType: summary-card
       title: SAP and Power Platform white paper
       summary: Power Platform considerations for SAP experts.
-      url: /power-platform/sap/explore/white-paper
+      url: ./explore/white-paper
