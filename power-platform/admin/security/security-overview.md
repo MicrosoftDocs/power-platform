@@ -1,10 +1,10 @@
 ---
-title: Managed security overview
+title: Security overview
 description: Learn how to manage security in the Power Platform admin center with security features available.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 11/13/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Managed security overview
+# Security overview
 
 The **Security** page in the Power Platform admin center is designed to enhance your organization's security and streamline management. The **Security** page provides a centralized location to view and manage security recommendations, assess your security score, and implement proactive policies to safeguard your organization.
 
