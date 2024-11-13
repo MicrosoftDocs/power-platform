@@ -15,7 +15,7 @@
               href: /power-platform/index.md
         - name: Connect to SAP
           items:
-            - name: Connecting Power Platform and SAP overview
+            - name: Connect Power Platform and SAP
               href: connect/connect-power-platform-and-SAP.md
             - name: Get started with the SAP ERP connector
               href: connect/sap-erp-connector.md
