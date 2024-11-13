@@ -1,5 +1,5 @@
 ---
-title: New and improved Power Platform admin center
+title: New and improved Power Platform admin center (preview)
 description: Learn how to take advantage of the new and improved Power Platform admin center to achieve specific outcomes and goals.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,13 +12,16 @@ search.audienceType:
   - admin
 ---
 
-# New and improved Power Platform admin center
+# New and improved Power Platform admin center (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
                                                   
 We're happy to announce the public preview of the new Power Platform admin center! 
 
 The new Power Platform admin center is an outcome-driven experience, where all experiences are logically grouped into pages based on jobs to be done by an admin.
 
 The experiences in the new Power Platform admin center aren't only task-oriented, but are also focus on achieving specific outcomes and goals. They're designed to ensure optimal user experience and cater to a wide array of stakeholders with diverse needs. 
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## When and how can customers benefit from the new experience?
 
