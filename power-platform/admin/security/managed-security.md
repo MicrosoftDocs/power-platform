@@ -24,7 +24,7 @@ It brings together our most advanced threat protection, data protection and priv
 
 Managed Security encompasses, but isn't limited to, the following capabilities: 
 
-- **Compliance**: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like Customer Lockbox 
+- **Compliance**: Implement robust compliance measures to safeguard organizational data and ensure adherence to industry regulations with features like [Customer Lockbox](../admin/about-lockbox.md).
 
 - **Data protection and privacy**: Ensure personal information is securely handled, stored, and protected with confidentiality and integrity, preventing unauthorized access. Features like Azure Virtual Network, Customer Managed keys, and Data policies help protect applications and cloud workloads from network-based cyberattacks. 
 
