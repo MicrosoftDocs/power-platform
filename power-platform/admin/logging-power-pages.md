@@ -2,7 +2,7 @@
 title: Power Pages activity logging (preview)
 description: Learn how to view Power Pages logs in the Microsoft Purview compliance portal.
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 11/13/2024
 author: vamseedillimsft
 ms.subservice: admin
 ms.author: vamseedilli
