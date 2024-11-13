@@ -35,9 +35,9 @@ Users of Power Platform apps integrated with SAP will need the following license
 
 If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It is worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses. Customers can also use [Digital Access Licenses](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
 
-Our Power Platform templates for SAP and ready-to-use copilots can accelerate your Power Platform and SAP integration journey. These include sample cloud flows for common SAP business processes.
+Enterprise templates for Power Platform include the [SAP Procurement](../../enterprise-templates/finance/sap-procurement/overview.md) and [SAP Supplier Self Service](../../enterprise-templates/finance/sap-supplier-self-service/overview.md) templates. These templates and ready-to-use copilots that include sample components and cloud flows for common SAP business processes can accelerate your Power Platform and SAP integration journey.
 
-Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of Power Platform connectors.
+Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of [Power Platform connectors](/connectors/).
 
 Learn more:
 
@@ -47,4 +47,3 @@ Learn more:
 - [Get started with the SAP ERP connector](../connect/sap-erp-connector.md)
 - [Get started with the OData connector](../connect/sap-odata-connector.md)
 - [Set up Microsoft Entra ID using certificates(SSO)](../connect/entra-id-certs.md)
-- [Learn about SAP Procurement template for Microsoft Power Platform](../../enterprise-templates/finance/sap-procurement/overview.md)

@@ -1,6 +1,6 @@
 ---
-title: Connecting Power Platform and SAP overview
-description: Learn how you can connect Microsoft Power Platform and SAP to help you quickly build, extend, and deploy automated solutions that interact with your data in SAP.
+title: Connect Power Platform and SAP
+description: Learn how you can connect Microsoft Power Platform and SAP to help you build, extend, and deploy solutions that interact with your data in SAP.
 author: edlehman
 ms.author: edleh
 contributors: 
@@ -18,7 +18,7 @@ ms.subservice: sap
 ms.custom: ignite-2024
 ---
 
-# Connecting Power Platform and SAP overview
+# Connect Power Platform and SAP
 
 Power Platform offers two connectors to fit varying needs for integrating with your SAP environments. The SAP ERP and SAP OData connectors allow you to easily access and manipulate SAP data, including creating custom applications and agents and automating workflows. Both connectors support data encryption in motion. Secure Network Communications (SNC) encrypts data between the on-premises data gateway and SAP.
 

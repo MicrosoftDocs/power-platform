@@ -226,4 +226,4 @@ Replace the connection with a new one that uses `Microsoft Entra ID (using certi
 > Ensure the secure handling and eventual deletion of private keys upon completion of this setup to maintain security integrity.
 
 Learn more:
-[On-premises data gateway FAQ | Microsoft Learn](/data-integration/gateway/service-gateway-onprem-faq)
+[On-premises data gateway FAQ](/data-integration/gateway/service-gateway-onprem-faq)

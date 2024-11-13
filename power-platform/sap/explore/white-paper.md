@@ -24,4 +24,4 @@ White papers provide in-depth information, solutions, and recommendations to hel
 
 The SAP + Power Platform white paper delves into how Power Platform supports SAP extensibility and what common Power Platform and SAP patterns exist. The paper covers connectors, the on-premises data gateway, solutions, security and governance, application lifecycle management (ALM), connection methods, authentication and authorization, templates, and the role of Microsoft Dataverse.
 
-[SAP + Power Platform 2024 white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
+To download, select **[SAP + Power Platform 2024 white paper](https://go.microsoft.com/fwlink/?linkid=2294900)**.

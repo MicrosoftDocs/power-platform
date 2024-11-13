@@ -21,17 +21,16 @@ ms.subservice: sap
 ms.custom: ignite-2024
 ---
 
-<!-- EDITOR'S NOTE: What should the user replace the "xx" with in the "Test the secure connection" section? -->
 # Set up Secure Network Communications
 
-Secure Network Communications (SNC) encrypts data between an on-premises data gateway and a SAP system. This article walks you through setting up SNC as a proof of concept.
+Secure Network Communications (SNC) enhances the security of your SAP integration with Power Platform by encrypting the data between an on-premises data gateway and a SAP system. This article walks you through setting up SNC as a proof of concept.
 
 > [!IMPORTANT]
 > **The settings and recommendations presented in this article are not intended for production use.** Consult your security team, internal policies, and Microsoft Partner for guidance in setting up SNC in a production environment.
 
 ## Prerequisites
 
- 1. [You have a SAP connection that uses the SAP ERP connector](/connect/sap-erp-connector.md).
+ 1. [You have a SAP connection that uses the SAP ERP connector](sap-erp-connector.md).
  1. You have access to a SAP instance that you can restart and administer.
  1. The SAP GUI is installed and set up.
  1. You're familiar with public and private key technologies.
@@ -44,7 +43,7 @@ SAP Common Crypto Library enables the SAP Connector for Microsoft .NET (NCo) to 
 ### Get SAPCAR
 
 1. Go to the [SAP Software Download Center](https://me.sap.com/softwarecenter) and sign in with your SAP credentials.
-1. Search for "SAPCAR" and select the latest nonarchived version.
+1. Search for *SAPCAR* and select the latest non-archived version.
 1. Select your operating system.
 1. Download the .EXE file to `C:\sap\SAR`.
 
@@ -159,11 +158,11 @@ Create a Personal Secure Environment (PSE) for the on-premises data gateway. The
 
 1. Sign in to the SAP GUI.
 1. Go to transaction code `SNC0`.
-1. Enter `E` as the work area.
-1. Select `New Entry` from the top bar and fill in the required information.
+1. Enter **E** as the work area.
+1. Select **New Entry** from the top bar and fill in the required information.
 
    :::image type="content" source="./media/setup-secure-network-communications/sap-snc-access-controll-list-for-systems.png" alt-text="Screenshot of the SAP GUI showing the Access Control List for Systems.":::
-1. Select the "Save" icon.
+1. Select the **Save**.
 1. Return to the SAP GUI home screen.
 1. Go to transaction code `RZ10`.
 1. Set these profile parameters:
@@ -207,6 +206,8 @@ You need to exchange certificates between the on-premises data gateway and SAP t
 
 ## Test the secure connection
 
+Follow the steps to test the secure connection. Once you complete the test successfully, you're ready to implement SNC in your production environment.
+
 1. Create an instant flow in Power Automate.
 1. Add an `SAP ERP Call Function` action.
 1. Add the following SNC parameters to the **SAP Connection** string:
@@ -232,7 +233,6 @@ You need to exchange certificates between the on-premises data gateway and SAP t
 > [!IMPORTANT]
 > Make sure that you securely handle private keys and delete them on completion of this setup.
 
-## Next steps
+## Next step
 
-- Implement SNC in your production environment
-- [Set up Microsoft Entra ID with certificates for SSO](/connect/entra-id-with-certs.md)
+[Set up Microsoft Entra ID with certificates for SSO](/connect/entra-id-with-certs.md)

@@ -17,15 +17,7 @@ You can set up the Power Platform SAP ERP connector to use Microsoft Entra ID cr
 
 These instructions assume that you're starting from scratch. Most customers have already completed some of the steps. Determining which steps you need to complete for your scenario is beyond the scope of this article.
 
-- [Create an SAP service account in Active Directory Domain Services](#create-an-sap-service-account-in-ad-ds) (skip this section if your SAP system is already configured for Kerberos-based SSO)
-<!-- EDITOR'S NOTE: Continue listing H2 headings to act as a mini TOC. -->
-
-
-You'll need assistance from the following roles:
-
-- Microsoft Entra ID admin
-- SAP Basis admin
-- Power Platform admin
+For example, you can skip the [Create an SAP service account in Active Directory Domain Services](#create-an-sap-service-account-in-ad-ds) section if your SAP system is already configured for Kerberos-based SSO.
 
 ## Prerequisites
 
@@ -33,17 +25,26 @@ You'll need assistance from the following roles:
 
 - [An on-premises data gateway server](https://www.microsoft.com/download/details.aspx?id=53127), version October 2024 or newer, joined to the Active Directory domain. Learn more in [Install an on-premises data gateway](/data-integration/gateway/service-gateway-install).
 
+- Assistance from the following roles:
+
+  - Microsoft Entra ID admin
+  - SAP Basis admin
+  - Power Platform admin
+
 ## Create an SAP service account in AD DS
 
-If your SAP Basis admin confirms that your SAP system is already configured for Kerberos-based SSO, skip this section.
+As a domain admin, you'll first create a service account and then define the Service Principal Name (SPN) and enable it for Kerberos encryption.
 
-Perform the following steps as a domain admin.
+> [!NOTE]
+> If your SAP Basis admin confirms that your SAP system is already configured for Kerberos-based SSO, skip this section.
+
+Perform the following steps as a domain admin to set up the service account:
 
 1. On the domain controller host PC, open Microsoft Management Console (MMC) and run the Active Directory Users and Computers snap-in.
 
 1. In your domain, right-click **Users** and select **New** > **User**.
 
-1. Enter *Kerberos\<SID>* as the **Full name** and **User logon name**, where *\<SID>* is the ID of your SAP system, such as *A4H*.
+1. Enter *Kerberos\<SID\>* as the **Full name** and **User logon name**, where *\<SID\>* is the ID of your SAP system, such as *A4H*.
 
 1. Select **Next**.
 
@@ -53,25 +54,25 @@ Perform the following steps as a domain admin.
 
 1. Select **Next**, and then select **Finish**.
 
-With the service account created, next you'll define its Service Principal Name (SPN) and enable it for Kerberos encryption.
+With the service account created, define its Service Principal Name (SPN) and enable it for Kerberos encryption.
 
-1. Open the ADSI Edit snap-in (adsiedit.msc) and connect to your domain.
+1. Open the *ADSI Edit snap-in (adsiedit.msc)* and connect to your domain.
 
 1. Select **CN=Users** from your domain's default naming context.
 
 1. Right-click the **CN=Kerberos\<SID\>** user object and select **Properties**.
 
-1. In the *Attributes* list, select **servicePrincipalName**.
+1. In the *Attributes* list, select **ServicePrincipalName**.
 
 1. Select **Edit**.
 
-1. Enter the Service Principal Name in the format *SAP/\<SID>*, where *\<SID>* is the ID of your SAP system, such as *A4H*.
+1. Enter the Service Principal Name in the format *SAP/\<SID\>*, where *\<SID\>* is the ID of your SAP system, such as *A4H*.
 
 1. Select **Add**, and then select **OK**.
 
 1. Go back to the *Active Directory Users and Computers* snap-in.
 
-1. In the **Users** list, right-click the new SAP service account *Kerberos\<SID>* and select **Properties**.
+1. In the **Users** list, right-click the new SAP service account *Kerberos\<SID\>* and select **Properties**.
 
 1. Select the **Account** tab.
 

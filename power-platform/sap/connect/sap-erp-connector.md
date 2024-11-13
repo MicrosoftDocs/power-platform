@@ -1,6 +1,6 @@
 ---
 title: Get started with the SAP ERP connector
-description: Learn how to set up the Power Platform SAP ERP connector so that you can start creating automated solutions that work with your SAP environment.
+description: Learn how to set up the Power Platform SAP ERP connector so that you can start creating solutions that work with your SAP environment.
 author: ryanb58
 ms.author: tbrazelton
 contributors:
@@ -30,7 +30,7 @@ The [SAP ERP connector](/connectors/saperp) for Power Platform helps you seamles
 
 ## Prerequisites
 
-You have the necessary [administration](/power-platform/admin/admin-documentation) rights and meet the requirements defined in the [SAP ERP connector documentation](/connectors/saperp/#pre-requisites).
+Be sure you have the necessary [administration](/power-platform/admin/admin-documentation) privileges and meet the requirements defined in the [SAP ERP connector documentation](/connectors/saperp/#pre-requisites).
 
 ## Set up your on-premises data gateway
 
@@ -88,7 +88,7 @@ To enable the on-premises data gateway to communicate with your SAP system, you 
 1. Save your flow.
 1. Select **Test**.
 
-After you verify that the SAP action is working, learn [best practices](/power-platform/well-architected/) for building powerful Power Platform solutions that work with your SAP system.
+After you verify that the SAP action is working, learn [best practices](/power-platform/well-architected/) for building powerful Power Platform solutions that work with your SAP system. You can also try out more complex functions in your flows.
 
 ## Troubleshooting tips
 
@@ -96,7 +96,6 @@ After you verify that the SAP action is working, learn [best practices](/power-p
 - For connection issues, double-check your SAP credentials and System ID.
 - Remember that the first connection might take up to two minutes to establish.
 
-## Next steps
+## Next step
 
-- Try out more complex SAP functions in your flows
-- [Set up Secure Network Communication](/connect/secure-network-communications.md)
+[Set up Secure Network Communication](/connect/secure-network-communications.md)
