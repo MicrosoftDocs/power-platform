@@ -51,7 +51,7 @@ The **Share with Everyone** feature is disabled by default in Power Platform. We
 
 If you would like to share with all internal employees or a large group of people, consider sharing with an existing security group of those members or creating a security group and sharing your app with that security group.
 
-When **Share with Everyone** is disabled, only a small group of administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to enable sharing with **Everyone**.
+When **Share with Everyone** is disabled, only D365, Power Platform, and Global administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to enable sharing with **Everyone**.
 
 1. First, open PowerShell as an administrator and log into your Power Apps account by running this command.
 
