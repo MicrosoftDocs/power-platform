@@ -1,12 +1,12 @@
 ---
 title: "Set up a pay-as-you-go plan | MicrosoftDocs"
 description: Follow these steps to set up pay-as-you-go billing with an Azure subscription You can do so in the Power Platform admin center or within Power Apps.
-author: Kavishi
+author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/14/2024
 ms.subservice: admin
-ms.author: kaagar 
+ms.author: ampatra 
 ms.reviewer: sericks
 contributors:
   - ShawnNandiMSFT
