@@ -141,12 +141,12 @@ Create a Personal Secure Environment (PSE) for the on-premises data gateway. The
 
 1. Create the SECUDIR environment variable:
 
-   - Open **System Properties**: In File Explorer, right-click **This PC**, and then select **Properties** > **Advanced system settings**.
-   - Select **Environment Variables**.
-   - Under **System variables**, select **New**.
-   - Set the variable name to `SECUDIR`.
-   - Set the value to `C:\sapsecudir`.
-   - Select **OK**.
+    1. Open **System Properties**: In File Explorer, right-click **This PC**, and then select **Properties** > **Advanced system settings**.
+    1. Select **Environment Variables**.
+    1. Under **System variables**, select **New**.
+    1. Set the variable name to `SECUDIR`.
+    1. Set the value to `C:\sapsecudir`.
+    1. Select **OK**.
 
 1. Import the PKCS#12 container into a PSE:
 

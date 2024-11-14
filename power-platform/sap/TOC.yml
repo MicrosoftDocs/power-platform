@@ -54,7 +54,7 @@
             - name: SAP OData connector
               href: /connectors/sapodata
             - name: Secure Network Communications (SNC)
-              href: /power-platform/sap/connect/set-up-secure-network-communications
+              href: /power-platform/sap/connect/secure-network-communications
             - name: Microsoft Entra ID using Kerberos for SSO
               href: /power-platform/sap/connect/entra-id-kerberos
             - name: Microsoft Entra ID using certificates
