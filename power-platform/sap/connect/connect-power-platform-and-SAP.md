@@ -12,7 +12,7 @@ contributors:
   - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/30/2024
+ms.date: 11/14/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -24,7 +24,7 @@ Power Platform offers two connectors to fit varying needs for integrating with y
 
 ## SAP ERP connector
 
-The [SAP ERP connector](./sap-erp-connector.md) uses SAP Remote Function Calls (RFC) protocol to connect to your SAP ERP environments for create, read, and update operations on SAP data. The connector also uses Business APIs (BAPIs) and intermediate documents (IDOC). The ERP connector is compatible with SAP ECC and S/4HANA environments and any SAP product that runs on the NetWeaver stack. The SAP ERP connector supports SAP authentication, Windows authentication, and Microsoft Entra ID with [Kerberos](./entra-id-kerberos.md) or [certificates](./entra-id-certs.md).
+The [SAP ERP connector](./sap-erp-connector.md) uses SAP Remote Function Calls (RFCs) protocol to connect to your SAP ERP environments for create, read, and update operations on SAP data. The connector also uses Business APIs (BAPIs) and tables, including intermediate documents (IDOCs). The ERP connector is compatible with SAP ECC and S/4HANA environments and any SAP product that runs on the NetWeaver stack. The SAP ERP connector supports SAP authentication, Windows authentication, and Microsoft Entra ID with [Kerberos](./entra-id-kerberos.md) or [certificates](./entra-id-certs.md).
 
 The SAP ERP connector runs on SAP's API layer, which typically has better system performance than running the same activity in the SAP GUI. As more users transition off the SAP GUI and to an external user interface like a canvas app, CPU consumption on the SAP servers drops significantly.
 

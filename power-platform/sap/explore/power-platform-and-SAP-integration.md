@@ -26,7 +26,11 @@ Discover how to streamline your SAP business processes with Power Platform. Whet
 
 :::image type="content" source="media/power-platform-and-SAP-integration/flex-design.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
-Our SAP connectors support all SAP versions from R/3 (early 1990s) forward, including SAP ECC and SAP S4/HANA as well as all products across the SAP portfolio that support the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html).
+The ERP connector communicates with SAP over the RFC protocol through the SAP .NET connector library (NCo) 3.1 provided by SAP. SAP NCo Release and Support Strategy states that NCo 3.0 works with any SAP back-end system starting with release 4.0B, and transparently supports Unicode and non-Unicode back-ends. SAP NCo 3.1 release and support strategy does not include any statement of versions supported or change in versions supported. The ERP connector has been validated with versions of ECC and S4/HANA. If issues arise in integrating with SAP R/3 4.0B or greater, we will make a best effort attempt at supporting.
+
+The OData connector uses the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html), jointly developed by Microsoft and SAP and supported across many SAP products. You can find more about SAP Products supporting OData in [The importance and value of OData in the SAP ecosystem - SAP Community](https://community.sap.com/t5/technology-blogs-by-sap/the-importance-and-value-of-odata-in-the-sap-ecosystem/ba-p/13492946)
+
+There may be issues that are encountered where, as an SAP customer, a support ticket with SAP will need to be submitted for additional support from SAP.
 
 Users of Power Platform apps integrated with SAP will need the following licenses:
 
@@ -37,7 +41,7 @@ If you already have SAP direct named user licenses, you can use these licenses w
 
 Enterprise templates for Power Platform include the [SAP Procurement](../../enterprise-templates/finance/sap-procurement/overview.md) and [SAP Supplier Self Service](../../enterprise-templates/finance/sap-supplier-self-service/overview.md) templates. These templates and ready-to-use copilots that include sample components and cloud flows for common SAP business processes can accelerate your Power Platform and SAP integration journey.
 
-Power Platform connectors for SAP provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of [Power Platform connectors](/connectors/).
+Power Platform connectors provide secure, encrypted integration of your SAP data with Power Platform products and connected services through hundreds of [Power Platform connectors](/connectors/).
 
 Learn more:
 
