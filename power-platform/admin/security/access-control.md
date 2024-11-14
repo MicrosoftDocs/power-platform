@@ -1,5 +1,5 @@
 ---
-title: Access controls
+title: Use access control features
 description: Learn how to manage access controls in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Access controls
+# Use access control features
                                                   
 Access controls are a fundamental aspect of securing modern IT environments, particularly within cloud-based platforms such as Azure Virtual Networks and Power Platform. These controls are designed to ensure that only authorized users can access specific resources by protecting sensitive data and maintaining the integrity of organizational systems.
 
