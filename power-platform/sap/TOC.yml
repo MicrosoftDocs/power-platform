@@ -32,9 +32,9 @@
         - name: Use enterprise templates
           items:
             - name: SAP Procurement
-              href: /enterprise-templates/finance/sap-procurement/valid-overview
+              href: ../enterprise-templates/finance/sap-procurement/overview.md
             - name: SAP Supplier Self Service
-              href: /enterprise-templates/finance/sap-supplier-self-service/overview
+              href: ../enterprise-templates/finance/sap-supplier-self-service/overview.md
         - name: Role-based guidance
           items:
             - name: App maker
@@ -48,7 +48,7 @@
         - name: Related content
           items:
             - name: SAP Setup Assistant
-              href: /enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
+              href: ../enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview.md
             - name: SAP ERP connector
               href: /connectors/saperp
             - name: SAP OData connector
