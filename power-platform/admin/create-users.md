@@ -8,7 +8,7 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 11/14/2024
 search.audienceType: 
   - admin
 contributors:
@@ -389,6 +389,16 @@ A default security role is automatically assigned to these imported users. The *
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
+## View stub users
+To view a stub user's profile in the Power Platform admin center, complete the following steps.
+
+1.	Select an environment and go to **Settings > Users + permissions > Users**.
+1.	From the **Search** bar, search for **stub users**.
+1.	Select a stub user to view user details.
+
+    > [!Note]
+    > Refresh user and user diagnostics options are not available for a stub user.
 
 ### Update a user record to reflect changes in Microsoft Entra ID
 
