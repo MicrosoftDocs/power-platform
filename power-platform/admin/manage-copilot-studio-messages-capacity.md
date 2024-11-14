@@ -12,6 +12,6 @@ search.audienceType:
  - admin
 ---
 
-# Manage Copilot Studeio messages and capactiy (preview)
+# Manage Copilot Studio messages and capactiy (preview)
 
 Content goes here.
