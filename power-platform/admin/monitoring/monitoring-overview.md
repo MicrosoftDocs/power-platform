@@ -53,6 +53,7 @@ The products view allows you to compare health metrics across a pool of common r
 For resources available in the monitoring experience, you can learn more about resource specific metrics in the Maker documentation with links the following table. 
 
 | Product | Resoure | Availability |
+|---------|------------|------------|
 | Power Apps | Canvas app | Preview|
 | Power Apps | Model-driven apps | Not available yet|
 | Power Autoamte | Cloud flows | Not available yet|
@@ -80,20 +81,27 @@ When tenant wide analytics is on, by default, metrics and logs are available to 
 The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to Makers. 
 
 ### Get settings values for Maker access to analytics data
+
+```PowerShell
 Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
 {environment id}
+```
 
 ### Enable Maker access to analytics data
 This setting does not include availability of End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id). 
 
+```PowerShell
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
-     {environment id} -EnableAnalyticsForMakers $true 
+     {environment id} -EnableAnalyticsForMakers $true
+```
 
 ### Enable Maker access to session ids and user object ids in event logs
 This setting controls Maker access to End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id) in event logs.
 
+```PowerShell
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
      {environment id} -EnableEUPIForMakerAnalytics $true
+```
      
 ## Frequently Asked Questions
 
