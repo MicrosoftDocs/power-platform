@@ -119,12 +119,12 @@ Azure Application Insights contains a superset of runtime event logs.
 ### Why do Makers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
 In addition to the tenant analytics setting, the environment setting ‘Analytics data available to Makers’ must be enabled. Availability of monitoring health metrics, logs and recommendations in Maker monitoring experiences based on tenant and environment settings.
 
-| Are tenant-level analytics turned on? | Is analytics data available to Makers? | Is Operational health metrics available? | Are logs available? | Are recommendations available?|
-|---------------------------------|-------------------------------------------------|-----------------------------------|--------------------------|--------------------------------|
+| Are tenant-level analytics turned on? | Is analytics data available to Makers? | Is this a Managed Environment?| Is Operational health metrics available? | Are logs available? | Are recommendations available?|
+|---------------------------------|------------------------------------------------|---------|-----------------------------------|--------------------------|--------------------------------|
 | Yes | Yes| Yes| Yes| Yes |Yes|
-| Yes | Yes| No| Yes| Yes |No|
-| Yes | No| ??| No| No |No|
-| No  | ??| ??| No| No |No|
+| Yes | Yes| No | Yes| Yes |No |
+| Yes | No | ?? | No | No  |No |
+| No  | ?? | ?? | No | No  |No |
 
 ## Limits
 1.	Environment admins cannot see monitoring hub data in Power Platform Admin Center.
