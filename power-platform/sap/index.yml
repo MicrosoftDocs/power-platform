@@ -137,19 +137,19 @@ sections:
     - componentType: summary-card
       title: Secure Network Communications (SNC)
       summary: Set up SNC for SAP and Microsoft Power Platform.
-      url: ./connect/secure-network-communications
+      url: connect/secure-network-communications.md
     - componentType: summary-card
       title: Entra ID using Kerberos for SSO
       summary: Use Kerberos SSO connections from Power Platform to SAP.
-      url: ./connect/entra-id-kerberos    
+      url: connect/entra-id-kerberos.md    
     - componentType: summary-card
       title: Entra ID using certificates for SSO
       summary: Use certificate-based SSO connections from Power Platform to SAP.
-      url: ./connect/entra-id-certs
+      url: connect/entra-id-certs.md
     - componentType: summary-card
       title: Entra ID using Azure API Management and OAuth
       summary: Use Azure API Management and OAuth from Power Platform to SAP.
-      url: ./connect/entra-id-apim-oauth
+      url: connect/entra-id-apim-oauth.md
     - componentType: summary-card
       title: Power Platform security and governance
       summary: Set up and maintain security and governance for Power Platform.
