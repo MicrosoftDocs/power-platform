@@ -63,6 +63,14 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 |---------|-------------|---------------|
 | AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
 
+## Natural language grid and view search (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Enable this feature for:  | When searching for data in a grid, you can ask questions with natural language. For example, requesting “cases with high priority with overdue follow-up by date” filters your view to display only those relevant cases.<br><br>To allow natural language search in an environment, it's required that users in that environment have a Dynamics 365 license. If the environment only has users with Power Apps licensing, additional Copilot licenses are required to use this feature in production.   | Users as the feature becomes available (default)<br><br>**Note**: Starting with the December monthly channel, users with Dynamics 365 licenses will start seeing the feature in their apps.  We expect this rollout to be gradual.  While quality of the feature will be maintained for all users, it's possible that different users may see some UI variations in their experience.|
+
 ## AI suggestions for email content
 
 | Setting | Description | Default value |
