@@ -32,7 +32,7 @@ sections:
   blocks:
      - componentType: card
        title: "Step 1. Understand SAP integration"
-       summary: Learn how Power Platform helps organizations running SAP digitally automate their business processes.
+       summary: Learn how Power Platform helps organizations running SAP streamline and automate their business processes.
        imageUrl: media/index-page/Understand_integration.png
        url: explore/power-platform-and-SAP-integration.md
       # links: 
@@ -57,7 +57,7 @@ sections:
         #   url: /collections/20mijo44z6xq6
      - componentType: card
        title: "Step 4. Leverage templates"
-       summary: Use one of the Power Platform SAP templates as is, extend it to meet your requirements, or build your own integration based on pattern templates.
+       summary: Use one of the SAP templates for Power Platform as is, extend it to meet your requirements, or build your own solution based on template patterns.
        imageUrl: media/index-page/Leverage_templates.png
       # links: 
       #   - componentType: link

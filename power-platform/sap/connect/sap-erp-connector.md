@@ -1,6 +1,6 @@
 ---
 title: Get started with the SAP ERP connector
-description: Learn how to set up the Power Platform SAP ERP connector so that you can start creating solutions that work with your SAP environment.
+description: Learn how to set up Power Platform's SAP ERP connector so you can start creating solutions that work with your SAP environment.
 author: ryanb58
 ms.author: tbrazelton
 contributors:
