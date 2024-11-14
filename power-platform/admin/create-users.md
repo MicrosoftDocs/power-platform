@@ -254,7 +254,7 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
 2. User must have a valid license with these exceptions:
    1. Admin users don't require a license. Unlicensed Microsoft Entra admins are enabled in the systems as “Setup user” and have administrative only access mode. 
    2. Individual users don't need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
-   3. Individual users don't need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
+   3. Individual users don't need to have a license when the tenant they're part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users don't need a license.
    5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center). 
 
@@ -265,7 +265,7 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
 
 Adding users to Dataverse has different implications depending on the environment type:
 
-1. If users are part of a trial environment, then they will not need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but will not add users automatically.
+1. If users are part of a trial environment, then they won't need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but won't add users automatically.
 
 2. Only the initial user that created the developer environment type is added to Dataverse.
 
