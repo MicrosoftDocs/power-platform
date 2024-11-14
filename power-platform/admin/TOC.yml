@@ -466,7 +466,7 @@
               href: security/overview.md
             - name: Managed Security (preview)
               href: security/managed-security.md
-            - name: Security page features
+            - name: Security page
               items:
               - name: Overview
                 href: security/security-overview.md
