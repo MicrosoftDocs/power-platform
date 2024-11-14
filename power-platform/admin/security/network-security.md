@@ -1,10 +1,10 @@
 ---
-title: Network security
+title: Use network security features
 description: Learn how to manage network security in Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/04/2024
+ms.date: 11/14/2024
 author: matapg007
 ms.author: matgupta
 ms.reviewer: sericks
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Network security
+# Use network security features
                                                   
 In today's digital landscape, ensuring robust network security is paramount for safeguarding sensitive data and maintaining operational integrity. Power Platform offers comprehensive network security features, including IP firewall and Virtual Network (VNet) support, to enhance the security posture of your organization's applications and data.
 
