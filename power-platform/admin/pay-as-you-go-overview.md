@@ -1,10 +1,10 @@
 ---
-title: "Pay-as-you-go plan overview | MicrosoftDocs"
+title: Pay-as-you-go plan overview 
 description: The pay-as-you-go plan is a new way to pay for Power Apps using an Azure subscription, which allows you to get started without any license commitment.
 author: Kavishi
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 03/08/2022
+ms.date: 11/14/2024
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: sericks 
