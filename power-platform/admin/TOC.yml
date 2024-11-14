@@ -464,7 +464,7 @@
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Managed Security (preview)
+            - name: Managed Security
               href: security/managed-security.md
             - name: Security page
               items:
