@@ -50,7 +50,66 @@ The products view allows you to compare health metrics across a pool of common r
 1. See the details pane with time-series charts for each metric available.  
 1. Optional, if a recommendation is available. Select ‘view logs’. 
 
- 
+For resources available in the monitoring experience, you can learn more about resource specific metrics in the Maker documentation with links the following table. 
+
+(table)
+
+Logs
+All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric can be accessed in the Logs experience. Logs are available to aid operational health analysis, and they may be downloaded for offline review via CSV. 
+1.	Start for Logs experience
+a.	Select a resource.
+b.	Select a metric.
+c.	View the associated logs. 
+
+2.	View logs from resource details.
+a.	Scroll to the desired metric.
+b.	Select ‘see logs’. 
+Monitoring experiences for Makers
+When tenant wide analytics is on, by default, metrics and logs are available to Makers. Makers can only see metrics and logs for resources they have edit privileges. Environment level settings exist to control what analytics information is available to makers. One setting controls whether Makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether Makers see End User Pseudonymous Identifiers (EUPI), like session ids and user object ids in event logs.
+
+Enable monitoring experiences for Makers
+The following Power Platform Administrator PowerShell cmdlets may be used to control what monitoring data is available to Makers. 
+Get settings values for Maker access to analytics data
+Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
+{environment id}
+Enable Maker access to analytics data
+This setting does not include availability of End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id).  
+Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
+     {environment id} -EnableAnalyticsForMakers $true 
+ Enable Maker access to session ids and user object ids in event logs
+This setting controls Maker access to End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id) in event logs. 
+Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
+     {environment id} -EnableEUPIForMakerAnalytics $true
+Frequently Asked Questions
+1.	How does Power Platform monitoring coexist with Azure Application Insights? 
+a.	Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights does not auto derive recommendations. 
+b.	Power Platform monitoring does not require Azure Subscriptions. 
+c.	Azure Application Insights contains a superset of runtime event logs.
+i.	Event logs beyond the scope of Power Platform monitoring resource metrics. 
+ii.	Allows for customer defined data retention. 
+iii.	Allows for custom traces (which enable custom events, metrics and dimensions). 
+iv.	Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
+
+2.	Why do Makers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
+a.	In addition to the tenant analytics setting, the environment setting ‘Analytics data available to Makers’ must be enabled. 
+b.	Availability of monitoring health metrics, logs and recommendations in Maker monitoring experiences based on tenant and environment settings.
+
+(table)
+
+Limits
+1.	Environment admins cannot see monitoring hub data in Power Platform Admin Center.
+2.	Only logs associated with metric recommendations are available.
+3.	Time based metrics only report out the 75th percentile.
+4.	Metrics are aggregated at a point in time, per their aggregation rate. E.g. App open success calculated daily will only have one value per day.   
+5.	Event logs in monitoring experiences are only available for up to 7 days.
+6.	Metrics are only available for up to 28 days.
+
+Learn more
+1.	Power Platform + Azure Application Insights (Overview of integration with Application Insights - Power Platform | Microsoft Learn)
+2.	Link to Monitor Power Apps
+
+
+
 
 
 
