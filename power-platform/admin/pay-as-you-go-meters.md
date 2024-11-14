@@ -4,7 +4,7 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/20/2023
+ms.date: 11/14/2024
 ms.subservice: admin
 ms.author: kaagar
 ms.reviewer: sericks 
