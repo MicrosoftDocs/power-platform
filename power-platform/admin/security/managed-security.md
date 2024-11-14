@@ -1,5 +1,5 @@
 ---
-title: Managed Security (preview)
+title: Managed Security
 description: Learn about managed security environments in Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,12 +12,9 @@ search.audienceType:
   - admin
 ---
 
-# Managed Security (preview)
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Managed Security
 
 In today's AI-driven world, safeguarding your enterprise data and business processes is more critical than ever. Managed Security is a suite of premium capabilities designed to offer advanced protection and empower security administrators to manage and secure access to customer data and resources effectively. 
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## What can you do with Managed Security? 
 
