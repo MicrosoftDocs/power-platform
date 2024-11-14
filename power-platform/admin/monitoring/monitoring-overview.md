@@ -105,28 +105,34 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
      
 ## Frequently Asked Questions
 
-1.	How does Power Platform monitoring coexist with Azure Application Insights? 
-a.	Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights does not auto derive recommendations. 
-b.	Power Platform monitoring does not require Azure Subscriptions. 
-c.	Azure Application Insights contains a superset of runtime event logs.
-i.	Event logs beyond the scope of Power Platform monitoring resource metrics. 
-ii.	Allows for customer defined data retention. 
-iii.	Allows for custom traces (which enable custom events, metrics and dimensions). 
-iv.	Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
+### How does Power Platform monitoring coexist with Azure Application Insights? 
+Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights does not auto derive recommendations. 
 
-2.	Why do Makers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
-a.	In addition to the tenant analytics setting, the environment setting ‘Analytics data available to Makers’ must be enabled. 
-b.	Availability of monitoring health metrics, logs and recommendations in Maker monitoring experiences based on tenant and environment settings.
+Power Platform monitoring does not require Azure Subscriptions. 
 
-(table)
+Azure Application Insights contains a superset of runtime event logs.
+  1. Event logs beyond the scope of Power Platform monitoring resource metrics. 
+  1. Allows for customer defined data retention. 
+  1. Allows for custom traces (which enable custom events, metrics and dimensions). 
+  1. Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
 
-Limits
+### Why do Makers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
+In addition to the tenant analytics setting, the environment setting ‘Analytics data available to Makers’ must be enabled. Availability of monitoring health metrics, logs and recommendations in Maker monitoring experiences based on tenant and environment settings.
+
+| Are tenant-level analytics turned on? | Is analytics data available to Makers? | Is Operational health metrics available? | Are logs available? | Are recommendations available?|
+|---------------------------------|-------------------------------------------------|-----------------------------------|--------------------------|--------------------------------|
+| Yes | Yes| Yes| Yes| Yes |Yes|
+| Yes | Yes| No| Yes| Yes |No|
+| Yes | No| ??| No| No |No|
+| No  | ??| ??| No| No |No|
+
+## Limits
 1.	Environment admins cannot see monitoring hub data in Power Platform Admin Center.
-2.	Only logs associated with metric recommendations are available.
-3.	Time based metrics only report out the 75th percentile.
-4.	Metrics are aggregated at a point in time, per their aggregation rate. E.g. App open success calculated daily will only have one value per day.   
-5.	Event logs in monitoring experiences are only available for up to 7 days.
-6.	Metrics are only available for up to 28 days.
+1.	Only logs associated with metric recommendations are available.
+1.	Time based metrics only report out the 75th percentile.
+1.	Metrics are aggregated at a point in time, per their aggregation rate. E.g. App open success calculated daily will only have one value per day.   
+1.	Event logs in monitoring experiences are only available for up to 7 days.
+1.	Metrics are only available for up to 28 days.
 
 ## Learn more
 - [Overview of integration with Application Insights](../overview-integration-application-insights.md)
