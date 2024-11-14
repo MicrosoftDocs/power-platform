@@ -52,35 +52,51 @@ The products view allows you to compare health metrics across a pool of common r
 
 For resources available in the monitoring experience, you can learn more about resource specific metrics in the Maker documentation with links the following table. 
 
-(table)
+| Product | Resoure | Availability |
+| Power Apps | Canvas app | Preview|
+| Power Apps | Model-driven apps | Not available yet|
+| Power Autoamte | Cloud flows | Not available yet|
+| Power Automate | Desktop flows | Not available yet|
+| Dataverse | Dataverse | Not available yet|
+| Copilot Studio | Copilot Studio agents | Not available yet|
+| Dynamics 365 experiences |?? | Not available yet|
 
-Logs
+## Logs
 All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric can be accessed in the Logs experience. Logs are available to aid operational health analysis, and they may be downloaded for offline review via CSV. 
-1.	Start for Logs experience
-a.	Select a resource.
-b.	Select a metric.
-c.	View the associated logs. 
 
-2.	View logs from resource details.
-a.	Scroll to the desired metric.
-b.	Select ‘see logs’. 
-Monitoring experiences for Makers
+1. Start for Logs experience
+    1. Select a resource.
+    1. Select a metric.
+    1. View the associated logs. 
+
+1. View logs from resource details.
+    1. Scroll to the desired metric.
+    1. Select ‘see logs’.
+   
+## Monitoring experiences for Makers
 When tenant wide analytics is on, by default, metrics and logs are available to Makers. Makers can only see metrics and logs for resources they have edit privileges. Environment level settings exist to control what analytics information is available to makers. One setting controls whether Makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether Makers see End User Pseudonymous Identifiers (EUPI), like session ids and user object ids in event logs.
 
-Enable monitoring experiences for Makers
-The following Power Platform Administrator PowerShell cmdlets may be used to control what monitoring data is available to Makers. 
-Get settings values for Maker access to analytics data
+### Enable monitoring experiences for Makers
+The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to Makers. 
+
+### Get settings values for Maker access to analytics data
 Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
 {environment id}
-Enable Maker access to analytics data
-This setting does not include availability of End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id).  
+
+### Enable Maker access to analytics data
+This setting does not include availability of End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id). 
+
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
      {environment id} -EnableAnalyticsForMakers $true 
- Enable Maker access to session ids and user object ids in event logs
-This setting controls Maker access to End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id) in event logs. 
+
+### Enable Maker access to session ids and user object ids in event logs
+This setting controls Maker access to End User Pseudonymous Identifiers (EUPI in event logs (e.g. session id, user object id) in event logs.
+
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
      {environment id} -EnableEUPIForMakerAnalytics $true
-Frequently Asked Questions
+     
+## Frequently Asked Questions
+
 1.	How does Power Platform monitoring coexist with Azure Application Insights? 
 a.	Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights does not auto derive recommendations. 
 b.	Power Platform monitoring does not require Azure Subscriptions. 
@@ -104,9 +120,9 @@ Limits
 5.	Event logs in monitoring experiences are only available for up to 7 days.
 6.	Metrics are only available for up to 28 days.
 
-Learn more
-1.	Power Platform + Azure Application Insights (Overview of integration with Application Insights - Power Platform | Microsoft Learn)
-2.	Link to Monitor Power Apps
+## Learn more
+- [Overview of integration with Application Insights](../overview-integration-application-insights.md)
+- Link to Monitor Power Apps
 
 
 
