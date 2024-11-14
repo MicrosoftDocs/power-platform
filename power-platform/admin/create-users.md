@@ -393,9 +393,9 @@ A default security role is automatically assigned to these imported users. The *
 ## View stub users
 To view a stub user's profile in the Power Platform admin center, complete the following steps.
 
-1.	Select an environment and go to **Settings > Users + permissions > Users**.
-1.	From the **Search** bar, search for **stub users**.
-1.	Select a stub user to view user details.
+1. Select an environment and go to **Settings > Users + permissions > Users**.
+1. From the **Search** bar, search for **stub users**.
+1. Select a stub user to view user details.
 
     > [!Note]
     > Refresh user and user diagnostics options are not available for a stub user.
