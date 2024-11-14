@@ -25,12 +25,12 @@ The built-in monitoring experience enables your organization to measure and impr
 
 The availability of monitoring health metrics, logs, and recommendations in Power Platform admin center is based on tenant and environment settings.  
 
-| Are tenant-level analytics turned on? | Is this a Managed Environment | Are health metrics availabe? | Are logs available? | Are recommendations available?|
+| Are tenant-level analytics turned on? | Is this a Managed Environment? | Are health metrics availabe? | Are logs available? | Are recommendations available?|
 |---------------------------------------|----------------------------------|--------------------------|----------------------|-----------------------------------|
 | Yes | Yes| Yes| Yes| Yes|
-| Yes| No | Yes|| Yes| Yes|
+| Yes| No | Yes| Yes|  No|
 | Yes| No| Yes| Yes| No|
-| No | ??  | No| No| No|
+| No | No  | No| No| No|
 
 ## Architecture
 Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources do not appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins which can see monitoring data across the tenant. Makers can only see data for resources they have edit privileges to in the runtime environment.  
