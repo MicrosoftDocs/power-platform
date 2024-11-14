@@ -1,5 +1,5 @@
 ---
-title: Compliance
+title: Use compliance features
 description: Learn how to manage compliance in the Power Platform admin center.
 ms.subservice: admin
 ms.component: pa-admin
@@ -12,7 +12,7 @@ search.audienceType:
   - admin
 ---
 
-# Compliance
+# Use compliance features
                                                   
 Compliance is essential in safeguarding organizational data and ensuring adherence to industry regulations. Implementing robust compliance measures helps mitigate risks and maintain trust with stakeholders.
 
