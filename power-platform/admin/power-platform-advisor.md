@@ -230,7 +230,7 @@ If a website isn't currently needed, you can shut it down. When a website is shu
 To shut down a site:
 
 1. Select one or more sites from the list and select **Shut down**.
-1. After you confirm the shut down operation, the selected sites are shut down.
+1. After you confirm the shutdown operation, the selected sites are shut down.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
@@ -260,21 +260,21 @@ To enable WAF:
 
 ### Websites with expired or soon-to-expire SSL certificates
 
-This recommendation lists production websites with SSL certificates that are expired or will expire within 90 days. Review the websites and [renew the SSL certificates](/power-pages/admin/add-custom-domain) as needed.
+This recommendation lists production websites with SSL certificates that are expired or expire within 90 days. Review the websites and [renew the SSL certificates](/power-pages/admin/add-custom-domain) as needed.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
 
 ### Websites still on Bootstrap version 3
 
-This recommendation lists production websites that haven't migrated to Bootstrap version 5. Review the websites and [migrate them to Bootstrap version 5 using the Power Pages bootstrap migration tool](/power-pages/configure/migrate-bootstrap) as needed.
+This recommendation lists production websites that aren't migrated to Bootstrap version 5. Review the websites and [migrate them to Bootstrap version 5 using the Power Pages bootstrap migration tool](/power-pages/configure/migrate-bootstrap) as needed.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
 
 ### Websites still on Standard data model
 
-This recommendation lists production websites that haven't migrated to the Enhanced data model. Review the websites and [migrate them to the Enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
+This recommendation lists production websites that aren't migrated to the Enhanced data model. Review the websites and [migrate them to the Enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
