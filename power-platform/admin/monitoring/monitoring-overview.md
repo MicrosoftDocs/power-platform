@@ -15,7 +15,12 @@ search.audienceType:
 # Monitor operational health (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The built-in monitoring experience enables your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, e.g. apps. It is available to both Makers and Admins in their respective experiences, e.g. make.powerapps.com and admin.powerplatform.microsoft.com. Makers use this data to improve their resources and Admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating event logs from runtime activity. Recommendations are calculated from: i) aggregating runtime event logs to highlight a measurable opportunity to improve a health metric or ii) static analysis of resource properties that can be altered to improve a health metric. The event logs used to calculate metrics are available for review and download in 'Logs’ experiences to aid operational health analysis. 
+The built-in monitoring experience allows your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. It's available to both Makers and Admins in their respective experiences, such as [make.powerapps.com](https://make.preview.powerapps.com/) and [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/). Makers use this data to improve their resources and admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating event logs from runtime activity. Recommendations are calculated from: 
+
+- Aggregating runtime event logs to highlight a measurable opportunity to improve a health metric
+- Static analysis of resource properties that can be altered to improve a health metric.
+
+The event logs used to calculate metrics are available for review and download in **Logs** experiences to aid operational health analysis. 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -33,24 +38,24 @@ The availability of monitoring health metrics, logs, and recommendations in Powe
 | No | No  | No| No| No|
 
 ## Architecture
-Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources do not appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins which can see monitoring data across the tenant. Makers can only see data for resources they have edit privileges to in the runtime environment.  
+Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment.  
 
 (image)
 
 ## Overview
-The monitoring overview exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resource to appear in Monitoring experiences the cards highlight apps where end-users face obstacles accessing an app or they have higher wait times to use the app. As additional resources and metrics appear in monitoring this experience will evolve to bring attention to more than apps. 
+The monitoring overview exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resources to appear in monitoring experiences, the cards highlight apps where end users face obstacles accessing an app or they have higher wait times to use the app. As additional resources and metrics appear in monitoring, this experience will evolve to bring attention to more than apps. 
 
 ## Products
 The products view allows you to compare health metrics across a pool of common resources, such as apps, and select a resource to view its health metrics, recommendations and logs. 
 
 ## See a resource’s health metrics, recommendations, and logs 
 
-1. Select a Product (e.g. Power Apps)
-1. Select a specific resource (a specific app)  
+1. Select a product, for example **Power Apps**.
+1. Select a specific resource.
 1. See the details pane with time-series charts for each metric available.  
-1. Optional, if a recommendation is available. Select ‘view logs’. 
+1. **Optional**: If a recommendation is available, select **View logs**. 
 
-For resources available in the monitoring experience, you can learn more about resource specific metrics in the Maker documentation with links the following table. 
+For resources available in the monitoring experience, you can learn more about resource-specific metrics in the Maker documentation with links the following table. 
 
 | Product | Resoure | Availability |
 |---------|------------|------------|
@@ -63,19 +68,19 @@ For resources available in the monitoring experience, you can learn more about r
 | Dynamics 365 experiences |?? | Not available yet|
 
 ## Logs
-All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric can be accessed in the Logs experience. Logs are available to aid operational health analysis, and they may be downloaded for offline review via CSV. 
+All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** experience. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
 
-1. Start for Logs experience
+1. Start for **Logs** experience:
     1. Select a resource.
     1. Select a metric.
     1. View the associated logs. 
 
-1. View logs from resource details.
+1. View logs from resource details:
     1. Scroll to the desired metric.
-    1. Select ‘see logs’.
+    1. Select **See logs**.
    
 ## Monitoring experiences for Makers
-When tenant wide analytics is on, by default, metrics and logs are available to Makers. Makers can only see metrics and logs for resources they have edit privileges. Environment level settings exist to control what analytics information is available to makers. One setting controls whether Makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether Makers see End User Pseudonymous Identifiers (EUPI), like session ids and user object ids in event logs.
+When tenant-wide analytics is turned on, by default, metrics and logs are available to Makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to Makers. One setting controls whether Makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether Makers see End User Pseudonymous Identifiers (EUPI), like session ids and user object ids in event logs.
 
 ### Enable monitoring experiences for Makers
 The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to Makers. 
@@ -108,9 +113,9 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
 ### How does Power Platform monitoring coexist with Azure Application Insights? 
 Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights does not auto derive recommendations. 
 
-Power Platform monitoring does not require Azure Subscriptions. 
+Power Platform monitoring doesn't require Azure Subscriptions. 
 
-Azure Application Insights contains a superset of runtime event logs.
+Azure Application Insights contains a superset of runtime event logs:
   1. Event logs beyond the scope of Power Platform monitoring resource metrics. 
   1. Allows for customer defined data retention. 
   1. Allows for custom traces (which enable custom events, metrics and dimensions). 
