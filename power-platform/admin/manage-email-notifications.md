@@ -14,7 +14,7 @@ search.audienceType:
 # Manage email notifications to admins
 
 > [!IMPORTANT]
-> Starting December 1, 2024, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user).
+> Starting January 17, 2025, only users assigned to the Dynamics 365 administrator or Power Platform administrator role in the Microsoft 365 admin center or Microsoft Entra admin center will receive email service notifications. To assign a service admin role to a user, follow the instructions in [Assign a service admin role to a user](use-service-admin-role-manage-tenant.md#assign-a-service-admin-role-to-a-user). This change does not impact Message Center email notificaitons. 
 
 The service team regularly sends email notifications to the System Administrators of an organization. As an admin, you can set up a list of additional recipients to receive notifications using a cmdlet. For example, you can add to the list of recipients: 
 - People outside of your organization, such as your partners.  
