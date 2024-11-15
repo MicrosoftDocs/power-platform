@@ -127,21 +127,6 @@ To update these settings, make sure you have the System Administrator or System 
 | Action logs version.| The Action logs version allows you to choose V1, V2, or both. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version).   | V1 |
 | FlowLogs entity time to live in minutes | Determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. Learn more in [Configure desktop flow action log version](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version). | 40320 |
 
-## Desktop flow connection embedding
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Enable connection embedding for desktop flows. | <Description> | On |
-
-## Desktop flow repair at runtime configuration
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-| Setting | Description | Default value |
-|---------|-------------|---------------|
-| Repair at runtime for attended. | <Description> | On |
-| Repair at runtime for unattended. | <Description> | On|
-
 ## Grids and views
 
 | Setting | Description | Default value |
