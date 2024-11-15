@@ -19,9 +19,9 @@ contributors:
 
 [This article is prerelease documentation and is subject to change.]
 
-Project “Sophia” is a new generation of AI-first business app that helps users with complex, cross functional tasks, and offers a new way to discover, visualize, and interact with business data. 
+Project “Sophia” is a new generation of AI-first business app that helps users with complex, cross functional tasks, and offers a new way to discover, visualize, and interact with business data.
 
-Project “Sophia” offers an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps you create exploratory journeys and understand business data with AI-generated charts and insights without the need to manually mine data and create visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options and can continue to iterate until you get the best possible outcome. 
+Project “Sophia” offers an AI- powered, user-friendly research canvas and large language model powered blueprints. The research canvas helps you create exploratory journeys and understand business data with AI-generated charts and insights without the need to manually mine data and create visuals. The app provides quick insights and recommends the next steps. You can start with a question and explore different options and can continue to iterate until you get the best possible outcome.
 
 > [!IMPORTANT]
 > - Project “Sophia” is available only in the European Union (EU) and United States region.
@@ -33,10 +33,13 @@ Project “Sophia” offers an AI- powered, user-friendly research canvas and la
 
 ## Onboarding screen
 
-The first time you sign in, you see the **Onboarding** screen where you can interact with Project "Sophia" using the **Exploratory** and **Guides** options. The following screenshot provides more details about the interaction: 
+The first time you sign in, you see the **Onboarding** screen where you can quickly generate blueprints using ready-made solutions. The following screenshot provides more details about the interaction: 
 
 > [!div class="mx-imgBorder"]
 > ![Project "Sophia" main screen.](media/ps-main-screen.png)
+
+1. Select the guide you want to follow for generating blueprints. Guides help you through the process of gathering relevant data to tackle specific role-based business tasks.
+1. Enter the question or topic you want to explore. You can also provide Project "Sophia" with a [context](context-manage.md)
 
 You can also go back to the **Onboarding** screen, by going to the Home screen and then select **Go** on the **Onboarding** tile.
 
