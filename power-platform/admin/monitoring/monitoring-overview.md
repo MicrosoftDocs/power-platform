@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Monitor operational health (preview)
+# Monitor page overview (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The **Monitor** page allows your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. It's available to both Makers and Admins in their respective experiences, such as [make.powerapps.com](https://make.preview.powerapps.com/) and [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/). Makers use this data to improve their resources and admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating event logs from runtime activity. Recommendations are calculated from: 
