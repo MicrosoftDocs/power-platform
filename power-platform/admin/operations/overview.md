@@ -28,7 +28,7 @@ Managed operations encompass, but isn't limited to, the following capabilities:
 
 Ensure high-quality releases with a comprehensive, integrated set of DevOps tools.
 
-- **Deployment experiences**: Maker and admin experiences to facilitate deploying software updates, simplify admin reviews and approvals, detect and diagnose deployment failures.
+- **Deployment experiences**: Maker and admin experiences to facilitate deploying software updates, simplify admin reviews and approvals, detect and diagnose deployment failures. [Pipelines in Power Platform](../../alm/pipelines.md)
 
 - **Source Control**: Integrated source control enables large teams scale collaboration on a single solution, and it allows for tracking changes and maintaining version control directly within the platform. Learn more: [Source control integration](../../alm/git-integration/overview.md)
 
@@ -36,7 +36,7 @@ Ensure high-quality releases with a comprehensive, integrated set of DevOps tool
 
 - **Pipelines**: Customers can easily configure automated deployment pipelines in minutes rather than days or weeks. This feature allows admins to set up the appropriate safeguards to govern and facilitate solution development, testing, and delivery across the organization. Learn more: [Pipelines in Power Platform](../../alm/pipelines.md)
 
-- **Approval-Based Deployments**: Gated deployments that require approvals, adding a layer of security and compliance to production changes.
+- **Approval-Based Deployments**: Gated deployments that require approvals, adding a layer of security and compliance to production changes. [Aprrovals with delegated deployments](../../alm/delegated-deployments-setup.md)
 
 - **Test Engine:** Feature used for testing standalone canvas apps in Power Apps. Lear more: [Test Engine](/power-apps/developer/test-engine/overview)
 
