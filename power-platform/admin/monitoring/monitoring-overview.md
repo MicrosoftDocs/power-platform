@@ -4,7 +4,7 @@ description: Learn about how to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 11/17/2024
 ms.custom: ignite-2024
 author: alaug
 ms.author: alaug
@@ -16,12 +16,12 @@ search.audienceType:
 # Monitor page overview (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The **Monitor** page allows your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. It's available to both Makers and Admins in their respective experiences, such as [make.powerapps.com](https://make.preview.powerapps.com/) and [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/). Makers use this data to improve their resources and admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating event logs from runtime activity. Recommendations are calculated from: 
+The **Monitor** page allows your organization to measure and improve operational health metrics of resources built or deployed in Power Platform, such as apps. It's available to both makers and admins in their respective experiences, such as [make.powerapps.com](https://make.preview.powerapps.com/) and [admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com/). Makers use this data to improve their resources and admins use this data to understand aggregate operational health in the tenant or select environments. Metrics are calculated by aggregating event logs from runtime activity. Recommendations are calculated from: 
 
 - Aggregating runtime event logs to highlight a measurable opportunity to improve a health metric
-- Static analysis of resource properties that can be altered to improve a health metric.
+- Static analysis of resource properties that can be altered to improve a health metric
 
-The event logs used to calculate metrics are available for review and download in **Logs** experiences to aid operational health analysis. 
+The event logs used to calculate metrics are available for review and download in the **Logs** experience to aid operational health analysis. 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -44,7 +44,7 @@ Power Platform monitoring experiences require runtime activity to produce health
 (image)
 
 ## Overview
-The monitoring overview exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resources to appear in monitoring experiences, the cards highlight apps where end users face obstacles accessing an app or they have higher wait times to use the app. As more resources and metrics appear in monitoring, this experience evolves to bring attention to more than apps. 
+The monitoring overview exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resources to appear in monitoring experiences, the cards highlight apps where end users face obstacles accessing an app or they have higher wait times to use the app. As more resources and metrics appear in monitoring, this experience will evolve to bring attention to more than apps. 
 
 ## Products
 The products view allows you to compare health metrics across a pool of common resources, such as apps, and select a resource to view its health metrics, recommendations, and logs. 
@@ -56,7 +56,7 @@ The products view allows you to compare health metrics across a pool of common r
 1. See the details pane with time-series charts for each metric available.  
 1. **Optional**: If a recommendation is available, select **View logs**. 
 
-For resources available in the monitoring experience, you can learn more about resource-specific metrics in the Maker documentation with links the following table. 
+For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation with links in the following table. 
 
 | Product | Resource | Availability |
 |---------|------------|------------|
@@ -66,12 +66,12 @@ For resources available in the monitoring experience, you can learn more about r
 | Power Automate | Desktop flows | Not available yet|
 | Dataverse | Dataverse | Not available yet|
 | Copilot Studio | Copilot Studio agents | Not available yet|
-| Dynamics 365 experiences |?? | Not available yet|
+| Dynamics 365 |Apps | Not available yet|
 
 ## Logs
-All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** experience. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
+All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** page. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
 
-1. Start for **Logs** experience:
+1. Go to the **Logs** page.
     1. Select a resource.
     1. Select a metric.
     1. View the associated logs. 
@@ -80,29 +80,29 @@ All metrics in monitoring experiences are aggregated from runtime event logs and
     1. Scroll to the desired metric.
     1. Select **See logs**.
    
-## Monitoring experiences for Makers
-When tenant-wide analytics is turned on, by default metrics and logs are available to Makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to Makers. One setting controls whether Makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether Makers see End User Pseudonymous Identifiers (EUPI), like session ids and user object ids in event logs.
+## Monitoring experiences for makers
+When tenant-wide analytics is turned on, by default metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
 
-### Enable monitoring experiences for Makers
-The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to Makers. 
+### Enable monitoring experiences for makers
+The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to makers. 
 
-### Get settings values for Maker access to analytics data
+### Get settings values for maker access to analytics data
 
 ```PowerShell
 Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
 {environment id}
 ```
 
-### Enable Maker access to analytics data
-This setting doesn't include availability of End User Pseudonymous Identifiers (EUPI) in event logs such as Session ID or User object ID. 
+### Turn on maker access to analytics data
+This setting doesn't include availability of End User Pseudonymous Identifiers (EUPI) in event logs, such as the session IDs or user object IDs. 
 
 ```PowerShell
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
      {environment id} -EnableAnalyticsForMakers $true
 ```
 
-### Enable Maker access to session ids and user object ids in event logs
-This setting controls Maker access to End User Pseudonymous Identifiers (EUPI) in event logs, such as Session ID or User object ID, in event logs.
+### Turn on maker access to session IDs and user object IDs in event logs
+This setting controls maker access to End User Pseudonymous Identifiers (EUPI) in event logs, such as session IDs or user object IDs, in event logs.
 
 ```PowerShell
 Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
@@ -114,33 +114,35 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
 ### How does Power Platform monitoring coexist with Azure Application Insights? 
 Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights doesn't auto derive recommendations. 
 
-Power Platform monitoring doesn't require Azure Subscriptions. 
+Power Platform monitoring doesn't require Azure subscriptions. 
 
 Azure Application Insights contains a superset of runtime event logs:
   1. Event logs beyond the scope of Power Platform monitoring resource metrics. 
-  1. Allows for customer defined data retention. 
-  1. Allows for custom traces (which enable custom events, metrics and dimensions). 
+  1. Allows for customer-defined data retention. 
+  1. Allows for custom traces, which allows custom events, metrics, and dimensions. 
   1. Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
 
-### Why do Makers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
-In addition to the tenant analytics setting, the environment setting ‘Analytics data available to Makers’ must be enabled. Availability of monitoring health metrics, logs and recommendations in Maker monitoring experiences based on tenant and environment settings.
+### Why do mkkers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
+In addition to the tenant-analytics setting, the environment setting **Analytics data available to Makers** must be turned on. Availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences based on tenant and environment settings.
 
 | Are tenant-level analytics turned on? | Is analytics data available to Makers? | Is this a Managed Environment?| Is Operational health metrics available? | Are logs available? | Are recommendations available?|
 |---------------------------------|------------------------------------------------|---------|-----------------------------------|--------------------------|--------------------------------|
 | Yes | Yes| Yes| Yes| Yes |Yes|
 | Yes | Yes| No | Yes| Yes |No |
-| Yes | No | ?? | No | No  |No |
-| No  | ?? | ?? | No | No  |No |
+| Yes | No | Not applicable | No | No  |No |
+| No  | Not applicable | Not applicable | No | No  |No |
 
-## Limits
-1.	Environment admins can't see monitoring hub data in Power Platform Admin Center.
-1.	Only logs associated with metric recommendations are available.
-1.	Time based metrics only report out the 75th percentile.
-1.	Metrics are aggregated at a point in time, per their aggregation rate. For example, app open success is calculated daily and only has one value per day.   
-1.	Event logs in monitoring experiences are only available for up to seven days.
-1.	Metrics are only available for up to 28 days.
+## Known limitations
+- Environment admins can't see monitoring hub data in Power Platform Admin Center.
+- Only logs associated with metric recommendations are available.
+- Time based metrics only report out the 75th percentile.
 
-## Learn more
+## Considerations
+- Metrics are aggregated at a point in time, per their aggregation rate. For example, app open success is calculated daily and only has one value per day.   
+- Event logs in the monitoring experiences are only available for up to seven days.
+- Metrics are only available for up to 28 days.
+
+## Related content
 - [Overview of integration with Application Insights](../overview-integration-application-insights.md)
 - Link to Monitor Power Apps
 
