@@ -1,8 +1,8 @@
 ---
 title: Pre-populate connection references and environment variables for automated deployments using Power Platform Build Tools
 description: Learn about pre-populating connection references and environment variables to truly automate your deployments.
-author: kkanakas
-ms.author: kartikka
+author: marcelbf
+ms.author: marcelbf
 ms.custom: ""
 ms.date: 08/20/2021
 ms.reviewer: angieandrews
@@ -17,6 +17,7 @@ search.audienceType:
 *Connection references* and *environment variables* enable you to interactively specify the connection details and configuration settings specific to the target environment where your app or solution is deployed.
 
 More information:
+
 - [Connection reference overview](/powerapps/maker/data-platform/create-connection-reference)
 - [Environment variables overview](/powerapps/maker/data-platform/environmentvariables)
 
