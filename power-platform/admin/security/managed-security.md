@@ -4,7 +4,7 @@ description: Learn about managed security environments in Power Platform admin c
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/15/2024
+ms.date: 11/18/2024
 ms.custom: ignite-2024
 author: matapg007
 ms.author: matgupta
