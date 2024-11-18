@@ -43,8 +43,8 @@ Power Platform monitoring experiences require runtime activity to produce health
 
 (image)
 
-## Overview
-The monitoring overview exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resources to appear in monitoring experiences, the cards highlight apps where end users face obstacles accessing an app or they have higher wait times to use the app. As more resources and metrics appear in monitoring, this experience will evolve to bring attention to more than apps. 
+## Purpose of the Monitor page
+The **Monitor** page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resources to appear in the **Monitor** experience, the cards highlight apps where end users face obstacles accessing an app or they have higher wait times to use the app. As more resources and metrics appear in the **Monitor** page, this experience will evolve to bring attention to more than apps. 
 
 ## Products
 The products view allows you to compare health metrics across a pool of common resources, such as apps, and select a resource to view its health metrics, recommendations, and logs. 
@@ -71,17 +71,17 @@ For resources available in the monitoring experience, you can learn more about r
 ## Monitoring experiences for makers
 When tenant-wide analytics is turned on, by default metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
 
-### Enable monitoring experiences for makers
+### Turn on the monitoring experiences for makers
 The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to makers. 
 
-### Get settings values for maker access to analytics data
+#### Get settings values for maker access to analytics data
 
 ```PowerShell
 Get-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName 
 {environment id}
 ```
 
-### Turn on maker access to analytics data
+#### Turn on maker access to analytics data
 This setting doesn't include availability of End User Pseudonymous Identifiers (EUPI) in event logs, such as the session IDs or user object IDs. 
 
 ```PowerShell
@@ -89,7 +89,7 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
      {environment id} -EnableAnalyticsForMakers $true
 ```
 
-### Turn on maker access to session IDs and user object IDs in event logs
+#### Turn on maker access to session IDs and user object IDs in event logs
 This setting controls maker access to End User Pseudonymous Identifiers (EUPI) in event logs, such as session IDs or user object IDs, in event logs.
 
 ```PowerShell
@@ -97,7 +97,7 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
      {environment id} -EnableEUPIForMakerAnalytics $true
 ```
      
-## Frequently Asked Questions
+## Frequently asked questions
 
 ### How does Power Platform monitoring coexist with Azure Application Insights? 
 Power Platform monitoring includes recommendations to improve a metric. Azure Application Insights doesn't auto derive recommendations. 
@@ -105,13 +105,13 @@ Power Platform monitoring includes recommendations to improve a metric. Azure Ap
 Power Platform monitoring doesn't require Azure subscriptions. 
 
 Azure Application Insights contains a superset of runtime event logs:
-  1. Event logs beyond the scope of Power Platform monitoring resource metrics. 
-  1. Allows for customer-defined data retention. 
-  1. Allows for custom traces, which allows custom events, metrics, and dimensions. 
-  1. Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
+- Event logs beyond the scope of Power Platform monitoring resource metrics. 
+- Allows for customer-defined data retention. 
+- Allows for custom traces, which allows custom events, metrics, and dimensions. 
+- Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
 
 ### Why do mkkers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
-In addition to the tenant-analytics setting, the environment setting **Analytics data available to Makers** must be turned on. Availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences based on tenant and environment settings.
+In addition to the tenant-level analytics setting, the environment setting **Analytics data available to Makers** must be turned on. Availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences based on tenant and environment settings.
 
 | Are tenant-level analytics turned on? | Is analytics data available to Makers? | Is this a Managed Environment?| Is Operational health metrics available? | Are logs available? | Are recommendations available?|
 |---------------------------------|------------------------------------------------|---------|-----------------------------------|--------------------------|--------------------------------|
@@ -121,9 +121,9 @@ In addition to the tenant-analytics setting, the environment setting **Analytics
 | No  | Not applicable | Not applicable | No | No  |No |
 
 ## Known limitations
-- Environment admins can't see monitoring hub data in Power Platform Admin Center.
+- Environment admins can't see monitoring data in the Power Platform admin center.
 - Only logs associated with metric recommendations are available.
-- Time based metrics only report out the 75th percentile.
+- Time-based metrics only report out the 75th percentile.
 
 ## Considerations
 - Metrics are aggregated at a point in time, per their aggregation rate. For example, app open success is calculated daily and only has one value per day.   
