@@ -67,18 +67,6 @@ For resources available in the monitoring experience, you can learn more about r
 | Dataverse | Dataverse | Not available yet|
 | Copilot Studio | Copilot Studio agents | Not available yet|
 | Dynamics 365 |Apps | Not available yet|
-
-## Logs
-All metrics in monitoring experiences are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** page. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
-
-1. Go to the **Logs** page.
-    1. Select a resource.
-    1. Select a metric.
-    1. View the associated logs. 
-
-1. View logs from resource details:
-    1. Scroll to the desired metric.
-    1. Select **See logs**.
    
 ## Monitoring experiences for makers
 When tenant-wide analytics is turned on, by default metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
