@@ -459,7 +459,13 @@
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
         - name: Managed operations
-          href: operations/overview.md
+          items:
+            - name: Managed operations
+              href: operations/overview.md
+            - name: Monitor page overview
+              href: monitoring/monitoring-overview.md
+            - name: Logs
+              href: monitoring/logs.md
         - name: Security and governance
           items:
             - name: Security and governance
