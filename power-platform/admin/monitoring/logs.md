@@ -1,5 +1,5 @@
 ---
-title: Use event logs and error logs (preview)
+title: View event logs and error logs (preview)
 description: Use event logs and error logs to aid operational health analysis.
 ms.subservice: admin
 ms.component: pa-admin
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Use event logs and error logs (preview)
+# View event logs and error logs (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** page. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
