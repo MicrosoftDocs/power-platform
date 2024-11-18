@@ -258,23 +258,23 @@ To enable WAF:
 1. Select one or more sites from the list and select **Enable WAF**.
 1. Confirm the operation to enable WAF for the selected sites.
 
-### Websites with expired or soon-to-expire SSL certificates
+### Websites have SSL certificates that have expired or are about to expire within 90 days
 
-This recommendation lists production websites with SSL certificates that are expired or expire within 90 days. Review the websites and [renew the SSL certificates](/power-pages/admin/add-custom-domain) as needed.
+This recommendation lists production websites with SSL certificates that are expired or will expire within 90 days. Review the websites and [renew the SSL certificates](/power-pages/admin/add-custom-domain) as needed.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
 
-### Websites still on Bootstrap version 3
+### Websites are still on Bootstrap version 3
 
 This recommendation lists production websites that aren't migrated to Bootstrap version 5. Review the websites and [migrate them to Bootstrap version 5 using the Power Pages bootstrap migration tool](/power-pages/configure/migrate-bootstrap) as needed.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
 
-### Websites still on Standard data model
+### Websites are still on standard data model
 
-This recommendation lists production websites that aren't migrated to the Enhanced data model. Review the websites and [migrate them to the Enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
+This recommendation lists production websites that aren't migrated to the enhanced data model. Review the websites and [migrate them to the enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
