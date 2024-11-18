@@ -30,3 +30,6 @@ All metrics that are part of the monitoring experience are aggregated from runti
 1. View logs from resource details:
     1. Scroll to the desired metric.
     1. Select **See logs**.
+
+## Considerations
+Only event logs for error conditions are available at this time.
