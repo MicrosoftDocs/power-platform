@@ -1,5 +1,5 @@
 ---
-title: Using logs (preview)
+title: Use event logs and error logs (preview)
 description: Use event logs and error logs to aid operational health analysis.
 ms.subservice: admin
 ms.component: pa-admin
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Using logs (preview)
+# Use event logs and error logs (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** page. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
@@ -21,7 +21,7 @@ All metrics that are part of the monitoring experience are aggregated from runti
 ## View logs
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
-1. In Monitor section, select **Logs**.
+1. In **Monitor** section, select **Logs**.
 1. The **Logs (preview)** page is displayed:
     1. Select a resource.
     1. Select a metric.
