@@ -103,7 +103,7 @@ Since the container isn't attached to the infrastructure network, a special chan
 
 The following diagram shows how Power Platform can route the execution requests to the container while maintaining the container isolation boundaries:  
 
-:::image type="content" source="media/container-isolation-boundaries.png" alt-text="Diagram showing how platform can route the execution requests to the container while maintaining the container isolation boundaries.":::
+:::image type="content" source="media/container-isolation-boundaries.png" alt-text="Diagram showing how platform can route the execution requests to the container while maintaining the container isolation boundaries." lightbox="media/container-isolation-boundaries.png":::
 
 ## Enable Virtual Network support for Power Platform
 
