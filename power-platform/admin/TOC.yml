@@ -460,9 +460,9 @@
                   href: wp-task-automation-flow.md
         - name: Managed operations
           items:
-            - name: Managed operations
+            - name: Overview
               href: operations/overview.md
-            - name: Monitor overview (preview)
+            - name: Monitor resources (preview)
               href: monitoring/monitoring-overview.md
             - name: View logs (preview)
               href: monitoring/logs.md
