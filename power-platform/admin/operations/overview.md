@@ -1,7 +1,7 @@
 ---
 title: Managed operations
 description: Learn how to utilize managed operations capabilities in Power Platform to effectively build, deploy, and operate your workloads.
-ms.date: 02/14/2022
+ms.date: 11/18/2024
 ms.service: power-platform
 ms.topic: overview
 ms.custom: ignite-2024
@@ -28,37 +28,37 @@ Managed operations encompass, but isn't limited to, the following capabilities:
 
 Ensure high-quality releases with a comprehensive, integrated set of DevOps tools.
 
-- **Deployment experiences**: Maker and admin experiences to facilitate deploying software updates, simplify admin reviews and approvals, detect and diagnose deployment failures. [Pipelines in Power Platform](../../alm/pipelines.md)
+- **Deployment experiences**: Maker and admin experiences to facilitate deploying software updates, simplify admin reviews and approvals, and the ability to detect and diagnose deployment failures. Learn more in [Pipelines in Power Platform](../../alm/pipelines.md).
 
-- **Source Control**: Integrated source control enables large teams scale collaboration on a single solution, and it allows for tracking changes and maintaining version control directly within the platform. Learn more: [Source control integration](../../alm/git-integration/overview.md)
+- **Source control**: Integrated source control enables large teams to scale collaboration on a single solution, and it allows for tracking changes and maintaining version control directly within the platform. Learn more in [Source control integration](../../alm/git-integration/overview.md).
 
-- **Solution Checker**: A powerful tool that performs a comprehensive static analysis of your solution objects against a set of best practice rules. It provides actionable insights for predeployment quality checks, reducing errors and improving the success rate of changes. Learn more: [Solution checker enforcement](../managed-environment-solution-checker.md)
+- **Solution checker**: A powerful tool that performs a comprehensive, static analysis of your solution objects against a set of best practice rules. It provides actionable insights for predeployment quality checks, reducing errors and improving the success rate of changes. Learn more in [Solution checker enforcement](../managed-environment-solution-checker.md).
 
-- **Pipelines**: Customers can easily configure automated deployment pipelines in minutes rather than days or weeks. This feature allows admins to set up the appropriate safeguards to govern and facilitate solution development, testing, and delivery across the organization. Learn more: [Pipelines in Power Platform](../../alm/pipelines.md)
+- **Pipelines**: Customers can easily configure automated deployment pipelines in minutes rather than days or weeks. This feature allows admins to set up the appropriate safeguards to govern and facilitate solution development, testing, and delivery across the organization. Learn more in [Pipelines in Power Platform](../../alm/pipelines.md).
 
-- **Approval-Based Deployments**: Gated deployments that require approvals, adding a layer of security and compliance to production changes. [Aprrovals with delegated deployments](../../alm/delegated-deployments-setup.md)
+- **Approval-based deployments**: Take advantage of gated deployments that require approvals, which adds a layer of security and compliance to production changes. Learn more in [Aprrovals with delegated deployments](../../alm/delegated-deployments-setup.md).
 
-- **Test Engine:** Feature used for testing standalone canvas apps in Power Apps. Lear more: [Test Engine](/power-apps/developer/test-engine/overview)
+- **Test engine:** This feature is used for testing standalone, canvas apps in Power Apps. Learn more in [Test Engine](/power-apps/developer/test-engine/overview).
 
-## 2. Observability and Insights
+## 2. Observability and insights
 
-Enable teams to quickly detect, triage, and respond to issues to minimize impact on end-user experiences or your business processes.
+Empower teams to quickly detect, triage, and respond to issues while minimizing impact on end user experiences or your business processes.
 
-- **Monitoring experiences**: Admin and Maker experiences that provide out-of-the-box metrics and recommendations to understand production health, a means to detect degradations and guidance to improve production health.
+- **Monitor experiences**: This capability includes admin and maker experiences that provide out-of-the-box metrics and recommendations. The metrics and recommendations help admin and makers understand production health, detect degradations, and improve production health.
 
-- **Azure Application Insights integration**: Delivers detailed, granular logs and custom metrics for deep analysis, enabling a comprehensive understanding of application performance. Learn more: [Integration with Application Insights](../overview-integration-application-insights.md)
+- **Azure Application Insights integration**: This capability delivers detailed, granular logs and custom metrics for deep analysis, which facilitates a comprehensive understanding of application performance. Learn more in [Integration with Application Insights](../overview-integration-application-insights.md).
 
-- **Dataverse in Fabric Shortcuts**: With Dataverse integration with Fabric Shortcuts, now available in [preview](https://aka.ms/dataexportv2preview), allows customers to instantly bring D365/Power Platform inventory into Fabric, ensuring that teams have the most up-to-date information at their fingertips. This streamlined access accelerates insights, enhances decision-making, and simplifies data management, empowering you to make impactful, data-driven choices faster than ever before.
+- **Dataverse in Fabric Shortcuts**: With Dataverse integration with Fabric Shortcuts, now available in [preview](https://aka.ms/dataexportv2preview), customers can instantly bring Dynamics 365 and Power Platform inventory into Fabric, ensuring that teams have the most up-to-date information at their fingertips. This streamlined access accelerates insights, enhances decision-making, and simplifies data management, empowering you to make impactful, data-driven choices faster than ever before.
 
-## 3. Data Resiliency
+## 3. Data resiliency
 
 Protect and recover data seamlessly with a range of flexible backup and retention capabilities.
 
-- **Extended Backup Retention**: Customers can use retention policies to securely store inactive data long-term in Azure Data Lake tiers, providing a cost-effective solution for archiving while ensuring compliance and easy access. Learn more: [Long-term data retention](/power-apps/developer/data-platform/long-term-retention?tabs=sdk)
+- **Extended backup retention**: Customers can use retention policies to securely store inactive data long-term in Azure Data Lake tiers. This feature provides a cost-effective solution for archiving, while ensuring compliance and easy access. Learn more in [Long-term data retention](/power-apps/developer/data-platform/long-term-retention?tabs=sdk).
 
-- **Recycle Bin for Table Records**: The recycle bin feature allows users to restore deleted records from tables across various deletion scenarios within a configurable time frame, ensuring data recovery when needed. Learn more: [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records)
+- **Recycle bin for table records**: The recycle bin feature allows users to restore deleted records from tables&mdash;across various deletion scenarios&mdash;within a configurable time frame. This feature ensures data recovery when needed. Learn more in [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records).
 
-- **Long-Term Retention**: Enable long-term retention policies on tables to keep parent and associated child data, including activities, emails, and attachments, retained as a set for compliance and auditing purposes. Learn more: [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
+- **Long-term retention**: Enable long-term retention policies on tables to keep parent and associated child data, including activities, emails, and attachments, retained as a set for compliance and auditing purposes. Learn more: [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
 
 ### See also
 
