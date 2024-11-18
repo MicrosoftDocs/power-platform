@@ -4,7 +4,7 @@ description: Learn about how to monitor and improve operational health.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/17/2024
+ms.date: 11/18/2024
 ms.custom: ignite-2024
 author: alaug
 ms.author: alaug
@@ -110,7 +110,7 @@ Azure Application Insights contains a superset of runtime event logs:
 - Allows for custom traces, which allows custom events, metrics, and dimensions. 
 - Allows for correlating and joining event logs across resources emitting data to the same Azure Application Insights instance. 
 
-### Why do mkkers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
+### Why do makers in my organizations see an experience saying settings must be enabled for their monitoring experience? 
 In addition to the tenant-level analytics setting, the environment setting **Analytics data available to Makers** must be turned on. Availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences based on tenant and environment settings.
 
 | Are tenant-level analytics turned on? | Is analytics data available to Makers? | Is this a Managed Environment?| Is Operational health metrics available? | Are logs available? | Are recommendations available?|
