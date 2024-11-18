@@ -462,9 +462,9 @@
           items:
             - name: Managed operations
               href: operations/overview.md
-            - name: Monitor page overview
+            - name: Monitor overview (preview)
               href: monitoring/monitoring-overview.md
-            - name: Logs
+            - name: View logs (preview)
               href: monitoring/logs.md
         - name: Security and governance
           items:
