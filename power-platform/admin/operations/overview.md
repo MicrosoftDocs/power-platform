@@ -24,7 +24,7 @@ Managed operations is a suite of capabilities to empower organizations of all si
 
 Managed operations encompass, but isn't limited to, the following capabilities:
 
-## 1. Application lifecycle Management
+## 1. Application lifecycle management
 
 Ensure high-quality releases with a comprehensive, integrated set of DevOps tools.
 
