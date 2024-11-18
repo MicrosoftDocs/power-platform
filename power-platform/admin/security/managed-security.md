@@ -17,7 +17,6 @@ search.audienceType:
 
 In today's AI-driven world, safeguarding your enterprise data and business processes is more critical than ever. Managed security provides comprehensive solutions to protect your data from threats, control access, prevent data exfiltration, and gain visibility into your security posture. It also helps assess risks and ensures compliance with various regulations, making it a robust tool for today's cybersecurity challenges. 
 
-
 ## What can you do with Managed security? 
 
 Managed security is a suite of premium capabilities designed to offer advanced protection and empower security administrators to manage and secure access to customer data and resources effectively. It brings together our most advanced threat protection, data protection and privacy, identity and access management, and compliance capabilities to empower customers to meet today’s cyber security challenges.  
@@ -32,8 +31,9 @@ Managed security encompasses, but isn't limited to, the following capabilities:
 
 - **Threat protection**: Protect your organization’s assets and resources with unified detection with [Microsoft Sentinel solution for Power Platform](/azure/sentinel/business-applications/power-platform-solution-overview). It allows intelligent detection and response to suspicious activities, such as mass data deletion or unauthorized app execution. This enhances security posture and effectively mitigates potential threats.
   
-- **Security posture management**: This empowers you with detecting security risks with tailored recommendations and clear guidance to act on individual environments or manage security at scale through group policies. Learn more in [Reactive governance through recommendations](security-overview.md#reactive-governance-through-recommendations).
+- **Security posture management**: Detect security risks with tailored recommendations and clear guidance to act on individual environments or manage security at scale through group policies. Learn more in [Reactive governance through recommendations](security-overview.md#reactive-governance-through-recommendations).
 
-Please visit the documentation page for each individual feature within Managed Security for more details on how to enable respective capabilities
+## Learn more
+Please visit the documentation page for each individual feature within Managed security for more details on how to turn on the respective capabilities.
   
 The **Security page** serves as the primary avenue to access Managed security capabilities in the Power Platform admin center. It provides deep insights into your security posture, offers tailored recommendations, and facilitates comprehensive posture management. This allows security administrators to navigate the complexities of modern cybersecurity with confidence and precision. Learn more in [Security page overview](security-overview.md).
