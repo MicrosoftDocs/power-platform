@@ -36,7 +36,7 @@ Ensure high-quality releases with a comprehensive, integrated set of DevOps tool
 
 - **Pipelines**: Customers can easily configure automated deployment pipelines in minutes rather than days or weeks. This feature allows admins to set up the appropriate safeguards to govern and facilitate solution development, testing, and delivery across the organization. Learn more in [Pipelines in Power Platform](../../alm/pipelines.md).
 
-- **Approval-based deployments**: Take advantage of gated deployments that require approvals, which adds a layer of security and compliance to production changes. Learn more in [Aprrovals with delegated deployments](../../alm/delegated-deployments-setup.md).
+- **Approval-based deployments**: Take advantage of gated deployments that require approvals, which add a layer of security and compliance to production changes. Learn more in [Aprrovals with delegated deployments](../../alm/delegated-deployments-setup.md).
 
 - **Test engine:** This feature is used for testing standalone, canvas apps in Power Apps. Learn more in [Test Engine](/power-apps/developer/test-engine/overview).
 
@@ -58,9 +58,9 @@ Protect and recover data seamlessly with a range of flexible backup and retentio
 
 - **Recycle bin for table records**: The recycle bin feature allows users to restore deleted records from tables&mdash;across various deletion scenarios&mdash;within a configurable time frame. This feature ensures data recovery when needed. Learn more in [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records).
 
-- **Long-term retention**: Enable long-term retention policies on tables to keep parent and associated child data, including activities, emails, and attachments, retained as a set for compliance and auditing purposes. Learn more: [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention)
+- **Long-term retention**: Use long-term retention policies on tables to keep parent and associated child data&mdash;including activities, emails, and attachments&mdash;retained as a set for compliance and auditing purposes. Learn more in [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 
-### See also
+### Related content
 
 - [Managed Environments overview](../managed-environment-overview.md)
 - [Security in Microsoft Power Platform](../security/overview.md)
