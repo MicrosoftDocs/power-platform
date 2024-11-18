@@ -466,12 +466,6 @@
               href: security/overview.md
             - name: Manage security (preview)
               href: security/security-posture-overview.md
-            - name: Monitor resources (preview)
-              items:
-                - name: Overview 
-                  href: monitoring/monitoring-overview.md
-                - name: Logs 
-                  href: monitoring/logs.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
