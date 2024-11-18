@@ -458,7 +458,7 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
-        - name: Managed operations (preview)
+        - name: Managed operations
           items:
             - name: Managed operations
               href: operations/overview.md
