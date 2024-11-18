@@ -21,7 +21,7 @@ The **Monitor** page allows your organization to measure and improve operational
 - Aggregating runtime event logs to highlight a measurable opportunity to improve a health metric
 - Static analysis of resource properties that can be altered to improve a health metric
 
-The event logs used to calculate metrics are available for review and download in the **Logs** experience to aid operational health analysis. 
+The event logs used to calculate metrics are available for review and download in the **Logs** page to aid operational health analysis. 
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -56,7 +56,7 @@ The products view allows you to compare health metrics across a pool of common r
 1. See the details pane with time-series charts for each metric available.  
 1. **Optional**: If a recommendation is available, select **View logs**. 
 
-For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation with links in the following table. 
+For resources available in the monitoring experience, you can learn more about resource-specific metrics in the maker documentation. The following table indicates which resources are available at this time.
 
 | Product | Resource | Availability |
 |---------|------------|------------|
@@ -69,7 +69,7 @@ For resources available in the monitoring experience, you can learn more about r
 | Dynamics 365 |Apps | Not available yet|
    
 ## Monitoring experiences for makers
-When tenant-wide analytics is turned on, by default metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
+When tenant-wide analytics is turned on, metrics and logs are available to makers. Makers can only see metrics and logs for which they have edit privileges. Environment-level settings exist to control what analytics information is available to makers. One setting controls whether makers see any analytics data in monitoring experiences including metrics and logs. The second setting controls whether makers see End User Pseudonymous Identifiers (EUPI), like session IDs and user object IDs in event logs.
 
 ### Turn on the monitoring experiences for makers
 The following [Power Platform Administrator](https://www.powershellgallery.com/packages/Microsoft.PowerApps.Administration.PowerShell/2.0.200) PowerShell cmdlets may be used to control what monitoring data is available to makers. 
