@@ -4,7 +4,7 @@ description: Learn how to use Power Platform Advisor to optimize your tenant.
 author: sidhartg
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/30/2024
+ms.date: 11/15/2024
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -230,7 +230,7 @@ If a website isn't currently needed, you can shut it down. When a website is shu
 To shut down a site:
 
 1. Select one or more sites from the list and select **Shut down**.
-1. After you confirm the shut down operation, the selected sites are shut down.
+1. After you confirm the shutdown operation, the selected sites are shut down.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
@@ -245,6 +245,36 @@ This recommendation lists production websites that don't have Content Delivery N
 ### Websites don't have Web Application Firewall (WAF) enabled
 
 This recommendation lists production websites that have Web Application Firewall (WAF) disabled. Review the websites and [enable Web Application Firewall](/power-pages/security/configure-web-application-firewall) where needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+#### Supported actions for websites without Web Application Firewall (WAF)
+
+##### Enable
+
+To enable WAF:
+
+1. Select one or more sites from the list and select **Enable WAF**.
+1. Confirm the operation to enable WAF for the selected sites.
+
+### Websites have SSL certificates that have expired or are about to expire within 90 days
+
+This recommendation lists production websites with SSL certificates that are expired or will expire within 90 days. Review the websites and [renew the SSL certificates](/power-pages/admin/add-custom-domain) as needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Websites are still on Bootstrap version 3
+
+This recommendation lists production websites that aren't migrated to Bootstrap version 5. Review the websites and [migrate them to Bootstrap version 5 using the Power Pages bootstrap migration tool](/power-pages/configure/migrate-bootstrap) as needed.
+
+> [!NOTE]
+> Once an action is taken, it takes up to one day for the sites to be removed from the list.
+
+### Websites are still on standard data model
+
+This recommendation lists production websites that aren't migrated to the enhanced data model. Review the websites and [migrate them to the enhanced data model using the Power Pages site migration tool](/power-pages/admin/migrate-enhanced-data-model?branch=main&branchFallbackFrom=pr-en-us-648) where possible.
 
 > [!NOTE]
 > Once an action is taken, it takes up to one day for the sites to be removed from the list.
