@@ -41,7 +41,7 @@ The availability of monitoring health metrics, logs, and recommendations in Powe
 ## Architecture
 Power Platform monitoring experiences require runtime activity to produce health metrics and generate recommendations. Unused resources don't appear in monitoring experiences. Admin experiences are available to Power Platform service and Dynamics 365 admins, who can see monitoring data across the tenant. Makers can only see data for resources for which they have edit privileges to in the runtime environment.  
 
-(image)
+:::image type="content" source="../media/monitoring-architecture.png" alt-text="Upload the deployment profile.":::
 
 ## Purpose of the Monitor page
 The **Monitor** page exists to bring attention to resources with degraded operational health and highlight which resources have opportunities for improvement. Since Power Apps are the first resources to appear in the **Monitor** experience, the cards highlight apps where end users face obstacles accessing an app or they have higher wait times to use the app. As more resources and metrics appear in the **Monitor** page, this experience will evolve to bring attention to more than apps. 
