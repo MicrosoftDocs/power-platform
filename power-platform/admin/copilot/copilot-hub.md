@@ -55,7 +55,7 @@ To learn more information on each feature, use the following links.
 
 The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. Selecting the Power Automate or Copilot Studio features lead you to documentation that includes detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
 
-Selecting the Power Apps Copilots or **Manage settings** next to the governance header opens the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
+Selecting the Power Platform Settings, Power Apps settings or **Manage settings** next to the governance header opens the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
 
 > [!Note]
 > There may be a delay of up to eight hours for data refresh.
