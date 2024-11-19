@@ -488,7 +488,7 @@
                 href: security/threat-detection.md
               - name: Compliance 
                 href: security/compliance.md
-            - name: Manage Copilot (preview)
+            - name: Manage Copilot
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
               items:
