@@ -18,6 +18,8 @@ search.audienceType:
 
 All metrics that are part of the monitoring experience are aggregated from runtime event logs and error logs associated to a metric and can be accessed in the **Logs** page. Logs are available to aid operational health analysis and they may be downloaded for offline review. 
 
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
 ## View logs
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Monitor**.
