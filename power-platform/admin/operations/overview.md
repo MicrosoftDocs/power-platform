@@ -60,6 +60,8 @@ Protect and recover data seamlessly with a range of flexible backup and retentio
 
 - **Long-term retention**: Use long-term retention policies on tables to keep parent and associated child data&mdash;including activities, emails, and attachments&mdash;retained as a set for compliance and auditing purposes. Learn more in [Long-term retention for tables in Dataverse](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 
+- **Self-serve Disaster Recovery: Self-serve disaster recovery is now available in the early preview. Admin can perform a Disaster recovery drill or real time "Emergency response" failover and failback with this feature. Please fill up [this form](https://forms.office.com/r/35NJ8vriFf) to learn more and participate in the early preview. 
+
 ### Related content
 
 - [Managed Environments overview](../managed-environment-overview.md)
