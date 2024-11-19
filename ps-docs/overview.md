@@ -31,6 +31,24 @@ Project “Sophia” offers an AI- powered, user-friendly research canvas and la
 > - Project “Sophia” uses Microsoft Bing and your research queries will be directed to Bing, which is governed by the Bing section of the [Microsoft Privacy Statement](https://privacy.microsoft.com/en-us/privacystatement).
 > - This capability may be subject to usage limits or capacity throttling.
 
+## Navigation basics
+
+Use the top navigation bar to go to different screens, access guides, and set components used for analysis.
+
+> [!div class="mx-imgBorder"]
+> ![Project "Sophia" navigation bar.](media/onboarding.png)
+
+1. **Home** ![Home button](media/home-button.png): Go to the [Home screen](#home-screen).
+1. **Create now workspace**: Start a new [workspace](workspace.md).
+1. **Guides**: Start an analysis with a guide to help you find the information you need.
+1. **Domain**: Choose a perspective for analysis.
+1. **Data**: [Add data](data-connections.md) by connecting to data sources and uploading files.
+1. **Additional settings** **&hellip;**:
+    1. Access your session details for providing feedback or seeking support.
+    1. [Manage the context](context-manage.md) of your analysis.
+    1. Create custom guides and domains.
+1. **User settings**: Sign out of Project "Sophia".
+
 ## Onboarding screen
 
 The first time you sign in, you see the **Onboarding** screen where you can quickly generate blueprints using ready-made solutions. You can also go to the **Onboarding** screen from the **Home** screen: select **Go** on the **Onboarding** tile.
