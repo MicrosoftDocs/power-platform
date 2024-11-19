@@ -458,6 +458,14 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
+        - name: Managed operations
+          items:
+            - name: Overview
+              href: operations/overview.md
+            - name: Monitor page (preview)
+              href: monitoring/monitoring-overview.md
+            - name: View logs (preview)
+              href: monitoring/logs.md
         - name: Security and governance
           items:
             - name: Security and governance
