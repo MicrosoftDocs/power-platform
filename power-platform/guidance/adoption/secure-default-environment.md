@@ -3,11 +3,13 @@ title: Secure the default environment
 description: Learn how to secure the default environment in Microsoft Power Platform.
 author: rranjit83
 ms.author: rranjit
-ms.reviewer: matp
+ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 05/17/2024
+ms.date: 11/15/2024
 ms.custom: bap-template
 ms.subservice: guidance
+contributors: 
+- arjunmayur
 ---
 
 # Secure the default environment
@@ -51,7 +53,7 @@ The **Share with Everyone** feature is disabled by default in Power Platform. We
 
 If you would like to share with all internal employees or a large group of people, consider sharing with an existing security group of those members or creating a security group and sharing your app with that security group.
 
-When **Share with Everyone** is disabled, only a small group of administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to enable sharing with **Everyone**.
+When **Share with Everyone** is turned off, only Dynamics 365 administrators, Power Platform administrators, and global administrators can share an application with everyone in the environment. If you're an administrator, you can run the following PowerShell command if you need to allow sharing with **Everyone**.
 
 1. First, open PowerShell as an administrator and log into your Power Apps account by running this command.
 
