@@ -8,7 +8,7 @@ contributors:
   - ellenwehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 09/10/2024
+ms.date: 11/11/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -58,7 +58,7 @@ Six connection references are imported as part of the solution. In order for the
 1. Go to the solution, find the **Default Solution** in your environment and open it.
 
    :::image type="content" source="media/power-apps-default-solution.png" alt-text="Image of Power Apps Default Solution.":::
-   
+
 1. Select **Connection References** from the list of the Objects in the left pane.
 1. Select each Connection References from the list:
    - SAP Setup Assistant - Dataverse
@@ -68,16 +68,16 @@ Six connection references are imported as part of the solution. In order for the
    - SAP Setup Assistant - Power Automate Management
    - SAP Setup Assistant - Power Platform for Admins
    - SAP Setup Assistant - Power Query Dataflows
-     
+
      :::image type="content" source="media/connection-references-list-in-default-soultion.png" alt-text="Image of List of SAP Setup Assistant Connection References.":::
-     
+
 1. For each connection :
    - Select the Connection Reference.
    - Select the Connection you created in step two from the **Connection** dropdown.
    - **Save** the changes.
 
      :::image type="content" source="media/update-connection-for-connection-reference.png" alt-text="Image of Updating the SAP Setup Assistant Connection Reference.":::
-     
+
    - A pop-up will be prompted for confirmation, select **Save changes**.
 
      :::image type="content" source="media/save-connection-in-connection-reference.png" alt-text="Image of Saving the SAP Setup Assistant Connection Reference.":::
@@ -92,10 +92,10 @@ Open the newly installed SAP Setup Assistant and verify that the eight cloud flo
 1. Check for the **Status** column
 
    :::image type="content" source="media/cloud-flows-status-column.png" alt-text="Image of SAP Setup Assistant cloud flow status column.":::
-   
+
 1. Navigate into the cloud flows that have **Status**="Off"
 1. Select **Turn on** on the command bar.
-   
+
 ## Step 5 : Use the SAP Setup Assistant
 
 You are now ready to use the **SAP Setup Assistant** canvas app, installed as part of the SAP Setup Assistant solution.

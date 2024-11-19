@@ -458,14 +458,34 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
+        - name: Managed operations
+          items:
+            - name: Overview
+              href: operations/overview.md
+            - name: Monitor page (preview)
+              href: monitoring/monitoring-overview.md
+            - name: View logs (preview)
+              href: monitoring/logs.md
         - name: Security and governance
           items:
             - name: Security and governance
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
-            - name: Manage security (preview)
-              href: security/security-posture-overview.md
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Security page
+              items:
+              - name: Overview
+                href: security/security-overview.md
+              - name: Network security 
+                href: security/network-security.md
+              - name: Access control 
+                href: security/access-control.md
+              - name: Threat detection 
+                href: security/threat-detection.md
+              - name: Compliance 
+                href: security/compliance.md
             - name: Manage Copilot (preview)
               href: copilot/copilot-hub.md
             - name: Power Platform managed identity
