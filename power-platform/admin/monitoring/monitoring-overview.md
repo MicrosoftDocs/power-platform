@@ -131,8 +131,7 @@ In addition to the tenant-level analytics setting, the environment setting **Ana
 - Metrics are only available for up to 28 days.
 
 ## Related content
-- [Overview of integration with Application Insights](../overview-integration-application-insights.md)
-- Link to Monitor Power Apps
+[Overview of integration with Application Insights](../overview-integration-application-insights.md)
 
 
 
