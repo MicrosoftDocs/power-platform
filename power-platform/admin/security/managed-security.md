@@ -34,6 +34,6 @@ Managed security encompasses, but isn't limited to, the following capabilities:
 - **Security posture management**: Detect security risks with tailored recommendations and clear guidance to act on individual environments or manage security at scale through group policies. Learn more in [Reactive governance through recommendations](security-overview.md#reactive-governance-through-recommendations).
 
 ## Learn more
-Please visit the documentation page for each individual feature within Managed security for more details on how to turn on the respective capabilities.
+Learn more about each individual feature within managed security for more details on how to turn on the respective capabilities.
   
 The **Security page** serves as the primary avenue to access Managed security capabilities in the Power Platform admin center. It provides deep insights into your security posture, offers tailored recommendations, and facilitates comprehensive posture management. This allows security administrators to navigate the complexities of modern cybersecurity with confidence and precision. Learn more in [Security page overview](security-overview.md).
