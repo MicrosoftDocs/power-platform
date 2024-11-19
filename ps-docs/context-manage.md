@@ -32,5 +32,7 @@ To set and manage the context:
 
 1. Enter context information. You don't need to fill in every field, but adding more context leads to more relevant Project "Sophia" blueprints.
 
-   - If you turn off **Remember data for new workspaces**...
-   - To delete the current context, select **Delete all**.
+   - Turn on **Remember data for new workspaces** to have Project "Sophia" consider previous data and domains when working in new workspaces. Turn this off to only consider data and domains from the current workspace.
+   - To delete the current context, data, and domain information, select **Delete all**.
+
+1. Enter a question or topic to analyze with Project "Sophia".
