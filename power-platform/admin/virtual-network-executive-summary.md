@@ -20,11 +20,11 @@ This paper outlines the implementation process, technical architecture, and real
 
 ## Key benefits
 
-- **Enhanced Security**: Host Power Platform services within a secure network, protecting sensitive data from unauthorized access and potential breaches.
+- **Enhanced security**: Host Power Platform services within a secure network, protecting sensitive data from unauthorized access and potential breaches.
 
-- **Improved Connectivity**: Establish secure and reliable connections between Power Platform services and other Azure resources, enhancing overall connectivity.
+- **Improved connectivity**: Establish secure and reliable connections between Power Platform services and other Azure resources, enhancing overall connectivity.
 
-- **Streamlined Network Management**: Simplify network management by providing a centralized and consistent approach to configuring and managing network settings for Power Platform services.
+- **Streamlined network management**: Simplify network management by providing a centralized and consistent approach to configuring and managing network settings for Power Platform services.
 
 - **Scalability**: Scale Power Platform services efficiently, ensuring network resources can grow in line with business needs.
 
@@ -34,13 +34,13 @@ This paper outlines the implementation process, technical architecture, and real
 
 [Microsoft Power Platform](/power-platform/) is a leading low-code/no-code platform that empowers users worldwide to build applications, automate workflows, and analyze data with minimal coding effort. Power Platform encompasses various Microsoft services, including Dataverse, Power Apps, Power Automate, Power BI, Copilot Studio, and Power Pages. You can create custom solutions tailored to specific business needs that foster innovation and enhance productivity.
 
-[Dataverse](/power-apps/maker/data-platform/data-platform-intro) serves as the underlying data platform, providing a secure and scalable environment for storing and managing data. [Power Apps](/power-apps/powerapps-overview) allows users to build custom applications with a user-friendly interface, while [Power Automate](/power-automate/) enables the automation of repetitive tasks and workflows. [Power BI](/power-bi/) offers robust data visualization and analytics capabilities, and [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) allows the creation of intelligent bots and agents. [Power Pages](/power-pages/introduction) facilitates the creation of professional-grade websites with ease.
+[Dataverse](/power-apps/maker/data-platform/data-platform-intro) serves as the underlying data platform, providing a secure and scalable environment for storing and managing data. [Power Apps](/power-apps/powerapps-overview) allows users to build custom applications with a user-friendly interface, while [Power Automate](/power-automate/) allows the automation of repetitive tasks and workflows. [Power BI](/power-bi/) offers robust data visualization and analytics capabilities, and [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) allows the creation of intelligent bots and agents. [Power Pages](/power-pages/introduction) facilitates the creation of professional-grade websites with ease.
 
-The integration of these components with Azure resources using virtual networks, enhances the overall functionality and security of the Power Platform. Virtual networks provide a secure and isolated network environment, enabling organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
+The integration of these components with Azure resources using virtual networks, enhances the overall functionality and security of the Power Platform. Virtual networks provide a secure and isolated network environment, allowing organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
 
-### Network Security and Virtual Network integration
+### Network security and Virtual Network integration
 
-Network security is a critical aspect of any digital infrastructure. Protecting Power Platform services outbound traffic is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role by providing a secure pathway for data transmission. The integration ensures that all outbound traffic from Power Platform services is routed through a controlled and monitored network environment, reducing the risk of exposure to potential threats.
+Network security is a critical aspect of any digital infrastructure. Protecting outbound traffic from Power Platform services is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role by providing a secure pathway for data transmission. The integration ensures that all outbound traffic from Power Platform services is routed through a controlled and monitored network environment, reducing the risk of exposure to potential threats.
 
 By implementing Virtual Network support, organizations can enforce strict security policies, monitor network traffic, and detect any anomalies in real-time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. Virtual Network integration allows for seamless connectivity between Power Platform services and other Azure resources, simplifying overall network architecture and improving the reliability.
 
@@ -60,9 +60,9 @@ Overall, Virtual Network support for Power Platform offers a comprehensive solut
 
 ## Implement Virtual Network support
 
-Power Platform infrastructure consists of a serverless container orchestration layer that executes different workloads with a strict security boundary and guarantees individual workload level availability and scalability requirements. This container orchestration layer is used for all workloads needing isolation, including internal Microsoft workload like connectors runtime and customer workloads like plugins.
+Power Platform infrastructure consists of a serverless container orchestration layer that executes different workloads with a strict security boundary and guarantees individual, workload-level availability and scalability requirements. This container orchestration layer is used for all workloads needing isolation, including internal, Microsoft workload-like connectors and customer workloads, like plugins.
 
-The containerized workload allows Power Platform to support network level isolation, using a combination of Azure Subnet Delegation and Virtual Network injection features. The Virtual Network *injection* feature allows a container to get injected into the customer’s virtual network by attaching a network interface card (NIC). Any workload running on that configured container is executes within customer’s network and can use private IP addresses within the network. For a plugin workload, the plugin code can access user services, resources, or Azure resources with a private link exposed to the same virtual network. Similarly, a connector workload can access the target resource or endpoint inside the same virtual network.
+The containerized workload allows Power Platform to support network-level isolation, using a combination of Azure Subnet Delegation and Virtual Network injection features. The Virtual Network *injection* feature allows a container to get injected into a customer’s Virtual Network by attaching a network interface card (NIC). Any workload, running on that configured container, is executed within the customer’s network and can use private IP addresses within the network. For a plugin workload, the plugin code can access user services, resources, or Azure resources with a private link exposed to the same Virtual Network. Similarly, a connector workload can access the target resource or endpoint inside the same Virtual Network.
 
 ### Azure subnet delegation
 
