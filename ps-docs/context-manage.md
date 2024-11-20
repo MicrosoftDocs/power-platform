@@ -21,7 +21,7 @@ You can increase the relevancy and consistency of the content Project "Sophia" g
 
 For example, you can add the start of your organization's fiscal year to the context. Project "Sophia" can then relate input in prompts like _Q1_ or _this fiscal year_ to the correct period of time.
 
-You can also add definitions for acronyms or column headingers for your data used by your organization in the context, so when they're used in prompts or present in your uploaded data or data sources, Project "Sophia" can correctly interpret their meaning and return better results.
+You can also add definitions for acronyms or column headings for your data used by your organization in the context. When they're used in prompts or present in your uploaded data or data sources, Project "Sophia" can correctly interpret their meaning and return better results.
 
 To set and manage the context:
 
