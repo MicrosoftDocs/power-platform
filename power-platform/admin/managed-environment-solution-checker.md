@@ -2,7 +2,7 @@
 title: Solution checker enforcement in Managed Environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 11/20/2024
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: sericks
@@ -73,9 +73,9 @@ The list contains rule names and descriptions grouped by category and sorted by 
 
 :::image type="content" source="media/managed-environment-solution-checker-rule-exclusions-list.png" alt-text="Screenshot of the solution checker enforcement rule exclusion options.":::
 
-## Use PowerShell to enable solution checker enforcement
+## Use PowerShell to turn on solution checker enforcement
 
-You can use PowerShell to enable solution checker enforcement.  These functions are defined in the [PowerApps-Samples repo](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1) which would need to be imported before invoking.
+You can use PowerShell to turn on solution checker enforcement.  These functions are defined in the [PowerApps-Samples repo](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1), which must be imported before invoking.
 
 ### Enable solution checker enforcement in block mode
 
