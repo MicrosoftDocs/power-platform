@@ -23,7 +23,7 @@ This article includes answers to commonly asked questions about Git integration 
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments)
+> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
 
 ## What is Git integration with Dataverse?
 
@@ -31,9 +31,9 @@ Git integration with Dataverse provides a way of storing your solutions and thei
 
 ## What are the prerequisites for using Git integration with Dataverse?
 
-You need a Power Platform environment with the necessary permissions to connect to Azure DevOps and bind your environment to a project in Azure DevOps. It will require System Administrators role in the Dataverse environment to bind to Git.  
+You need a Power Platform environment with the necessary permissions to connect to Azure DevOps and bind your environment to a project in Azure DevOps. It requires a system administrator role in the Dataverse environment to bind to Git.  
 
-You need an Azure DevOps subscription and licenses for users who interact with source control. These users need ##Contributors## permissions in your Git repository.
+You need an Azure DevOps subscription and licenses for users who interact with source control. These users need **Contributors** permissions in your Git repository.
 
 The Dataverse environment must be a managed environment, which will be enforced upon general availability (GA) of this feature.
 
@@ -45,7 +45,7 @@ Git is the only source control technology supported by source control integratio
 
 Your need a premium Power Apps license appropriate to use a managed environment and an Azure DevOps license to interact with the source code repository.
 
-## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
+## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches"?
 
 Make sure that your Azure DevOps Git repo is initialized. New projects and repos by default have an uninitialized repository, and you have to manually initialize the repo to create the default branch.
 
@@ -61,17 +61,17 @@ The feature currently works with a single branch that you specify when you bind 
 
 The feature works with unmanaged layers and doesn't work with managed layers. The solution system removes the difference in component representations between unmanaged and managed files and a single representation of all components is now supported.
 
-## Why is my source code files in YAML yet the solution export is still primarily XML?
+## Why are my source code files in YAML yet the solution export is still primarily XML?
 
-The feature is using YAML to represent solution content as it is easier to read, understand, and facilitates easier merges.
+The feature uses YAML to represent solution content because it is easier to read, understand, and facilitates easier merges.
 
 ## How can I deploy a solution from source code?
 
-Currently, deployment requires a fresh solution export from the source environment and deploying that solution to a target environment.
+Currently, deployment requires a fresh solution export from the source environment and for deploying that solution to a target environment.
 
 ## How do I develop with code-first components where I don't want my compiled binaries checked into source code?
 
-Currently, you can still author different components, such as Power Apps component framework (PCF) controls and plug-ins, using a different folder (similar to what you are doing today), but the binaries are checked into source code when you commit from the environment.
+Currently, you can still author different components, such as Power Apps component framework controls and plug-ins, using a different folder (similar to what you are doing today), but the binaries are checked into source code when you commit from the environment.
 
 ## Can I use an API to bind to Git and trigger commits and pulls?
 
@@ -79,7 +79,7 @@ Power Platform APIs are currently for internal use only.
 
 ## Can I now make changes directly in source control in a supported manner?
 
-Support for direct modifications to solution customizations isn't changing with this feature and our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source. Code-first components that are supported using our developer tools are also supported, and includes plug-ins, PCF controls, and web resources.
+Support for direct modifications to solution customizations isn't changing with this feature. Our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source. Code-first components that are supported using our developer tools are also supported, and include plug-ins, PCF controls, and web resources.
 
 ### Related content
 
@@ -87,6 +87,6 @@ Support for direct modifications to solution customizations isn't changing with 
 
 [Dataverse Git integration setup](connecting-to-git.md)
 
-[Source control operations](source-control-operations.md)
+[Source control repository operations](source-control-operations.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

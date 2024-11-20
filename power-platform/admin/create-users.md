@@ -8,7 +8,7 @@ ms.author: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2024
+ms.date: 11/14/2024
 search.audienceType: 
   - admin
 contributors:
@@ -254,7 +254,7 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
 2. User must have a valid license with these exceptions:
    1. Admin users don't require a license. Unlicensed Microsoft Entra admins are enabled in the systems as “Setup user” and have administrative only access mode. 
    2. Individual users don't need to have a license when the environment has app pass capacity. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
-   3. Individual users don't need to have a license when the tenant they are part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
+   3. Individual users don't need to have a license when the tenant they're part of has a tenant level Marketing license. This only applies to adding users on demand (either at first attempt to access the environment or through API/Power Platform admin center). 
    4. Non-interactive users don't need a license.
    5. Free Dataverse plans from Microsoft 365 license are honored when users added on-demand (either at first attempt to access the environment or through API/Power Platform admin center). 
 
@@ -265,7 +265,7 @@ Below criteria must be met for successfully adding the user in the Dataverse tab
 
 Adding users to Dataverse has different implications depending on the environment type:
 
-1. If users are part of a trial environment, then they will not need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but will not add users automatically.
+1. If users are part of a trial environment, then they won't need email approval for being added to Dataverse. Users will only be added to Dataverse on demand. The background sync process will still run to keep the users in the environment up-to-date, but won't add users automatically.
 
 2. Only the initial user that created the developer environment type is added to Dataverse.
 
@@ -385,10 +385,20 @@ A stub user is a user record that has been created as a placeholder. For example
 > To prevent creating duplicate user records with the same UPN or throw errors during data import workflows, ensure that users exist in Entra ID and are sufficiently licensed for pre-provisioning. Office licenses aren't supported for pre-provisioning, but any Power Apps Premium or Dynamics 365 licenses are supported for pre-provisioning. Once users meet these requirements, they're synchronized with Dataverse environments.  
 > If you must reassign records from a stub user to another user, use the [Add-BulkRecordsToUsers](https://github.com/microsoft/PowerApps-Samples/tree/master/powershell/UserManagement/Microsoft.PowerPlatform.Administration.UserManagement#command-add-bulkrecordstousers).
 
-A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in an environment and the **Basic User** security role is assigned in a Power Apps environment.
+A default security role is automatically assigned to these imported users. The **Salesperson** security role is assigned in a Dynamics 365 Sales environment and the **Basic User** security role is assigned in other environments.
 
 > [!NOTE]
 > By default, a security role can only be assigned to users with an Enabled status. If you need to assign a security role to users who have a Disabled status, you can do so by enabling the allowRoleAssignmentOnDisabledUsers [OrgDBOrgSettings](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm).
+
+## View stub users
+To view a stub user's profile in the Power Platform admin center, complete the following steps.
+
+1. Select an environment and go to **Settings > Users + permissions > Users**.
+1. From the **Search** bar, search for **stub users**.
+1. Select a stub user to view user details.
+
+    > [!Note]
+    > Refresh user and user diagnostics options are not available for a stub user.
 
 ### Update a user record to reflect changes in Microsoft Entra ID
 
