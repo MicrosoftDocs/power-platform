@@ -3,7 +3,7 @@ title: Licensing overview for Microsoft Power Platform
 description: Learn information about licensing in Microsoft Power Platform, which includes Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, AI Builder, and Dataverse.
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 11/19/2024
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: sericks
