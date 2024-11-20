@@ -1,6 +1,6 @@
 ---
 title: Manage context
-description: Provide Project "Sophia" with a context to improve the relevancy and consistency of generated reports.
+description: To improve the relevancy and consistency of generated reports, provide Project "Sophia" with a context.
 author: skent
 ms.topic: overview
 ms.custom: 
@@ -32,7 +32,7 @@ To set and manage the context:
 
 1. Enter context information. You don't need to fill in every field, but adding more context leads to more relevant content generated.
 
-   - Turn on **Remember data for new workspaces** to have Project "Sophia" consider previously selected data and domains when working in new workspaces. Turn this off to only consider data and domains from the current workspace.
+   - Turn on **Remember data for new workspaces** to have Project "Sophia" consider previously selected data and domains when working in new workspaces. Turn off to only consider data and domains from the current workspace.
    - To delete the current context, data, and domain information, select **Delete all**.
 
 1. Enter a question or topic to analyze with Project "Sophia".
