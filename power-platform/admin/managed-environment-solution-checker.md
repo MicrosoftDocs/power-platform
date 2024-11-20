@@ -75,7 +75,7 @@ The list contains rule names and descriptions grouped by category and sorted by 
 
 ## Use PowerShell to enable solution checker enforcement
 
-You can use PowerShell to enable solution checker enforcement.
+You can use PowerShell to enable solution checker enforcement.  These functions are defined in the [PowerApps-Samples repo](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/admin-center/Microsoft.PowerApps.Administration.PowerShell.Samples.psm1) which would need to be imported before invoking.
 
 ### Enable solution checker enforcement in block mode
 
