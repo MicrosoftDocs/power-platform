@@ -4,7 +4,7 @@ description: Power Apps operated by 21Vianet and Power Automate operated by 21Vi
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/12/2024
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -89,7 +89,7 @@ The Microsoft Entra account management services are hosted on physical servers m
 - [Legal terms landing page](https://www.21vbluecloud.com/powerplatform/pp-legal/)
 - [Online Services Terms (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Service Level Agreement](https://www.21vbluecloud.com/powerplatform/pp-sla/)
-- [Privacy statement](https://www.21vbluecloud.com/powerplatform/pp-privacy/)
+- [Privacy statement](https://www.21vbluecloud.com/ostpt/)
 
 
 
