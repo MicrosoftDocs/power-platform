@@ -1,10 +1,10 @@
 ---
-title: "Power Apps operated by 21Vianet and Power Automate operated by 21Vianet | MicrosoftDocs"
+title: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet 
 description: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -75,7 +75,6 @@ The Microsoft Entra account management services are hosted on physical servers m
 #### Power Apps features not available
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China.
-- [Power Apps solution checker](/powerapps/maker/common-data-service/use-powerapps-checker) 
 - [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
 - [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) 
 - [Integrate data into Microsoft Dataverse](./data-integrator.md)
@@ -90,7 +89,7 @@ The Microsoft Entra account management services are hosted on physical servers m
 - [Legal terms landing page](https://www.21vbluecloud.com/powerplatform/pp-legal/)
 - [Online Services Terms (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Service Level Agreement](https://www.21vbluecloud.com/powerplatform/pp-sla/)
-- [Privacy statement](https://www.21vbluecloud.com/powerplatform/pp-privacy/)
+- [Privacy statement](https://www.21vbluecloud.com/ostpt/)
 
 
 
