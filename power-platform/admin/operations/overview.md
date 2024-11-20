@@ -1,7 +1,7 @@
 ---
 title: Managed operations
 description: Learn how to utilize managed operations capabilities in Power Platform to effectively build, deploy, and operate your workloads.
-ms.date: 11/18/2024
+ms.date: 11/19/2024
 ms.service: power-platform
 ms.topic: overview
 ms.custom: ignite-2024
@@ -54,7 +54,7 @@ Empower teams to quickly detect, triage, and respond to issues while minimizing 
 
 Protect and recover data seamlessly with a range of flexible backup and retention capabilities.
 
-- **Extended backup retention**: Customers can use retention policies to securely store inactive data long-term in Azure Data Lake tiers. This feature provides a cost-effective solution for archiving, while ensuring compliance and easy access. Learn more in [Long-term data retention](/power-apps/developer/data-platform/long-term-retention?tabs=sdk).
+- **Extended backup retention**: Customers can now extend their backup retention from seven to 28 days. Learn more: [Back up and restore environments](../backup-restore-environments.md).
 
 - **Recycle bin for table records**: The recycle bin feature allows users to restore deleted records from tables&mdash;across various deletion scenarios&mdash;within a configurable time frame. This feature ensures data recovery when needed. Learn more in [Restore deleted Dataverse table records](/power-platform/admin/restore-deleted-table-records).
 
