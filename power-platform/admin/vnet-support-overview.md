@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/04/2024
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
