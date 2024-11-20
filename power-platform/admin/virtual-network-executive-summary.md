@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support within Power Pl
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
