@@ -38,7 +38,7 @@ After adding the `KeyboardShortcuts` code component to the form, configure the `
 For example:
 
 ```json
-["alt + r","alt + a","alt + d","alt + b","alt + p","alt + l","alt + t","alt + k"]
+"[""alt + r"",""alt + a"",""alt + d"",""alt + b"",""alt + p"",""alt + l"",""alt + t"",""alt + k""]"
 ```
 
 For more information about the keyboard combination strings, go to [the KeyboardJS library](http://itsgreggreg.github.io/KeyboardJS/).
