@@ -30,6 +30,29 @@ Early access begins approximately two months before general availability of each
 - Early access: First Monday of February
 - Sovereign early access: Second Monday of February
 
+## Deployment schedule  
+
+|Region  | Deployment schedule for 2025 wave 1 early access |
+|---------|---------|
+| Canada                       | January 21, 2025  |
+| South America                | January 22, 2025  |
+| India                        | January 22, 2025  |
+| France                       | January 22, 2025  |
+| South Africa                 | January 22, 2025  |
+| Germany                      | January 22, 2025  |
+| Switzerland                  | January 22, 2025  |
+| Norway                       | January 22, 2025  |
+| Korea                        | January 22, 2025  |
+| Singapore                    |   |
+| Sweden                       |   |
+| United Arab Emirates         | January 27, 2025  |
+| Japan                        | January 27, 2025  |
+| Asia Pacific                 | January 27, 2025  |
+| Great Britain                | January 27, 2025  |
+| Australia                    | January 24, 2025  |
+| Europe                       | January 29, 2025 |
+| North America                | February 03, 2025 |
+
 **Release wave 2**
 - Early access: Second Monday of August
 - Sovereign early access: Second Monday of August
