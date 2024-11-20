@@ -15,8 +15,6 @@ ms.reviewer: sericks
 ms.contributors:
 - jessechen
 - v-kgallagher
-ms.collection: 
-    - bap-ai-copilot
 ---
 
 # Power Platform licensing FAQs
