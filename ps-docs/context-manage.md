@@ -5,7 +5,7 @@ author: skent
 ms.topic: overview
 ms.custom: 
 ms.reviewer: skent
-ms.date: 7/11/2024
+ms.date: 11/20/2024
 ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:
@@ -15,7 +15,7 @@ contributors:
   - mikkelsen2000
 ---
 
-# Manage contexts
+# Manage context
 
 You can increase the relevancy and consistency of the content Project "Sophia" generates by adding _context_ to better interpret data. Project "Sophia" applies this context to your prompts automatically, so you don't have to repeat that same contextual information every time you interact with Project "Sophia".
 
