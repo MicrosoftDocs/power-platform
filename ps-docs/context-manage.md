@@ -11,7 +11,7 @@ ms.author: pemikkel
 search.audienceType:
   - maker
 contributors:
-  - mduelae
+  - skent
   - mikkelsen2000
 ---
 
