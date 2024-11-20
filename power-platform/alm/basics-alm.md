@@ -25,6 +25,7 @@ search.audienceType:
 This article describes the components, tools, and processes needed to implement application lifecycle management (ALM). 
 
 ## Environments
+
 Environments are a space to store, manage, and share your organization's
 business data, apps, and business processes. They also serve as containers to
 separate apps that might have different roles, security requirements, or target
