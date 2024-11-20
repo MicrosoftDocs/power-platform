@@ -16,7 +16,7 @@ search.audienceType:
 
 This white paper provides an in-depth analysis of the integration of Azure Virtual Network support within Power Platform. Learn about significant benefits of this integration such as enhanced security, improved connectivity, and streamlined network management. With Virtual Network support, organizations ensure their Power Platform services operate within a secure and controlled network environment, reducing the risk of data breaches and unauthorized access.
 
-This paper outlines the implementation process, technical architecture, and real-world use cases. Virtual Network support optimizes the performance and scalability of Power Platform applications. This paper discusses future enhancements and provides practical insights from successful case studies. IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.
+This paper outlines the implementation process, technical architecture, and real-world use cases. Virtual Network support optimizes architecture and scalability of Power Platform applications. This paper provides practical insights from successful case studies, making it valuable resource for IT professionals and decision-makers looking to enhance their network security and operational efficiency benefit.
 
 ## Key benefits
 
@@ -25,8 +25,6 @@ This paper outlines the implementation process, technical architecture, and real
 - **Improved Connectivity**: Establish secure and reliable connections between Power Platform services and other Azure resources, enhancing overall connectivity.
 
 - **Streamlined Network Management**: Simplify network management by providing a centralized and consistent approach to configuring and managing network settings for Power Platform services.
-
-- **Optimized Performance***: Control network traffic, which improves performance and reduces latency for Power Platform applications.
 
 - **Scalability**: Scale Power Platform services efficiently, ensuring network resources can grow in line with business needs.
 
@@ -38,13 +36,13 @@ This paper outlines the implementation process, technical architecture, and real
 
 [Dataverse](/power-apps/maker/data-platform/data-platform-intro) serves as the underlying data platform, providing a secure and scalable environment for storing and managing data. [Power Apps](/power-apps/powerapps-overview) allows users to build custom applications with a user-friendly interface, while [Power Automate](/power-automate/) enables the automation of repetitive tasks and workflows. [Power BI](/power-bi/) offers robust data visualization and analytics capabilities, and [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) allows the creation of intelligent bots and agents. [Power Pages](/power-pages/introduction) facilitates the creation of professional-grade websites with ease.
 
-The integration of these components with Azure resources, such as virtual networks, enhances the overall functionality and security of the Power Platform. Virtual networks provide a secure and isolated network environment, enabling organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
+The integration of these components with Azure resources using virtual networks, enhances the overall functionality and security of the Power Platform. Virtual networks provide a secure and isolated network environment, enabling organizations to control and manage network traffic effectively. With Virtual Network support, Power Platform services can operate within a secure network, ensuring data protection and compliance with regulatory requirements.
 
 ### Network Security and Virtual Network integration
 
-Network security is a critical aspect of any digital infrastructure. Protecting Power Platform services' outbound traffic is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role by providing a secure pathway for data transmission. The integration ensures that all outbound traffic from Power Platform services is routed through a controlled and monitored network environment, reducing the risk of exposure to potential threats.
+Network security is a critical aspect of any digital infrastructure. Protecting Power Platform services outbound traffic is essential to prevent unauthorized access, data breaches, and other security threats. Virtual Network integration plays a vital role by providing a secure pathway for data transmission. The integration ensures that all outbound traffic from Power Platform services is routed through a controlled and monitored network environment, reducing the risk of exposure to potential threats.
 
-By implementing Virtual Network support, organizations can enforce strict security policies, monitor network traffic, and detect any anomalies in real-time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. Virtual Network integration allows for seamless connectivity between Power Platform services and other Azure resources, enhancing overall network performance and reliability.
+By implementing Virtual Network support, organizations can enforce strict security policies, monitor network traffic, and detect any anomalies in real-time. This level of control is crucial for maintaining the integrity and confidentiality of sensitive data. Virtual Network integration allows for seamless connectivity between Power Platform services and other Azure resources, simplifying overall network architecture and improving the reliability.
 
 ## Overview of Virtual Network support in Power Platform
 
@@ -56,15 +54,15 @@ Virtual Network support for Power Platform allows organizations to connect their
 
 The integration of Virtual Network support significantly enhances the security and connectivity of Power Platform. By routing all outbound traffic from Power Platform services through a virtual network. Organizations can ensure that data is transmitted securely and remains protected from unauthorized access. This level of control is crucial for maintaining the integrity and confidentiality of sensitive information.
 
-Virtual Network support improves connectivity by providing a reliable and consistent network environment. Organizations can establish secure connections between Power Platform services and other Azure resources, ensuring seamless data flow and reduced latency. This enhanced connectivity leads to better performance and a more efficient use of network resources.
+Virtual Network support improves connectivity by providing a reliable and consistent network environment. Organizations can establish secure connections between Power Platform services and other Azure resources, ensuring seamless data flow. This enhanced connectivity leads to improved security and a more efficient use of network resources.
 
-Overall, Virtual Network support for Power Platform offers a comprehensive solution for organizations looking to enhance their network security and optimize the performance of their Power Platform applications.
+Overall, Virtual Network support for Power Platform offers a comprehensive solution for organizations looking to enhance their network security and optimize the network configuration of their Power Platform applications.
 
 ## Implement Virtual Network support
 
 Power Platform infrastructure consists of a serverless container orchestration layer that executes different workloads with a strict security boundary and guarantees individual workload level availability and scalability requirements. This container orchestration layer is used for all workloads needing isolation, including internal Microsoft workload like connectors runtime and customer workloads like plugins.
 
-The containerized workload allows Power Platform to support network level isolation, using a combination of Azure Subnet Delegation and Virtual Network injection features. The Virtual Network *injection* feature allows a container to get injected into the customer’s virtual network by attaching a network interface card (NIC). Any workload running on that configured container is executes within customer’s network and can use private IP addresses within the network. For a plugin workload, the plugin code can access user services, resources, or Azure resources with a private pink exposed to the same virtual network. Similarly, a connector workload can access the target resource or endpoint inside the same virtual network.
+The containerized workload allows Power Platform to support network level isolation, using a combination of Azure Subnet Delegation and Virtual Network injection features. The Virtual Network *injection* feature allows a container to get injected into the customer’s virtual network by attaching a network interface card (NIC). Any workload running on that configured container is executes within customer’s network and can use private IP addresses within the network. For a plugin workload, the plugin code can access user services, resources, or Azure resources with a private link exposed to the same virtual network. Similarly, a connector workload can access the target resource or endpoint inside the same virtual network.
 
 ### Azure subnet delegation
 
@@ -74,7 +72,7 @@ Since the container operates within the boundaries of the delegated subnet and u
 
 Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet must not be associated with any other service. Once a subnet is delegated, the IPs within that subnet are reserved only for Power Platform. The subnet can't be used for any other resources or  delegated to other services.
 
-By default, internet access is disabled from Windows containers. If the enterprise's code running within these containers have a requirement for internet access, they can configure NAT Gateway on the delegated subnet to allow the Windows containers to connect to resources on the internet.
+By default, internet access is disabled from Windows containers. If the enterprise's code running within these containers have a requirement for internet access, they can configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the Windows containers to connect to resources on the internet.
 
 #### Delegated subnet ownership for Microsoft and customers
 
@@ -211,7 +209,7 @@ NSGs can be applied to both subnets and individual network interfaces, providing
 
 Using Azure Virtual Network with Power Platform offers several security benefits that enhance the protection of your data and resources. By integrating Power Platform with Virtual Network, you can ensure your services are hosted within a secure network. This security protects sensitive data from unauthorized access and potential breaches. Virtual Network support allows Power Platform services to connect to your private and protected resources without exposing them to the internet, ensuring data protection and preventing unauthorized access.
 
-Additionally, Virtual Network support improves connectivity by providing a reliable and consistent network environment. Organizations can establish secure connections between Power Platform services and other Azure resources, ensuring seamless data flow and reducing latency. This enhanced connectivity leads to better performance and a more efficient use of network resources.
+Additionally, Virtual Network support improves connectivity by providing a reliable and consistent network environment. Organizations can establish secure connections between Power Platform services and other Azure resources, ensuring seamless data flow and security. This enhanced connectivity leads to better security posture and a more efficient use of network resources.
 
 ### Best practices for securing outbound connections from Power Platform services
 
@@ -235,20 +233,21 @@ Enforce security policies using Azure Policy and Azure Firewall to ensure all ou
 
 By following these best practices, you can secure outbound connections from Power Platform services, protect your data from exfiltration, and ensure compliance with security policies.
 
-## Performance and Scalability
-
-- Virtual Network support affects performance and scalability.
-- Strategize to optimize performance while using Virtual Network.
-
 ## Case Studies
 
-- Real-world examples of organizations successfully using Virtual Network support for Power Platform.
-- Lessons learned and best practices from these implementations.
+### Customer Case Study: Enhancing Business Agility with Generative AI and Secure Integration using Azure VNet
+**Background**: To explore practical business use cases for Generative AI, our customer conducted a hackathon. This event brought together multiple citizen developers who, within a month, successfully developed a prototype using Power Platform and Azure AI Services. The hackathon not only showcased the potential of Generative AI but also provided valuable hands-on experience to the participants, fostering innovation and collaboration within the organization.
 
-## Future Enhancements
+**Customer Challenges**: Despite the hackathon's success, transitioning from prototype to production posed significant challenges. The primary hurdle was establishing a secure, private-network architecture on Power Platform and Azure that complied with the company's stringent internal security policies. Ensuring data privacy and security while maintaining agility and scalability was crucial for the customer.
 
-- Planned future enhancements for Virtual Network support in Power Platform.
-- Roadmap for upcoming features and improvements.
+**Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation aka VNet Support available with Managed Environment. This enabled the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By utilizing this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
+
+**Benefits**: The implementation of this solution yielded several key benefits:
+- The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
+- The new architecture eliminated costs and limitations associated with on-premises data gateways. By avoiding the need for on-premises infrastructure, the customer could reduce operational expenses and simplify maintenance.
+- The customer is now poised to expand integration with other internal data sources, including private AWS and on-premises APIs, via this platform with ExpressRoute. This expansion will enable the customer to leverage a broader range of data and services, driving further innovation and efficiency.
+
+By overcoming initial challenges and implementing a robust solution, the customer has set the stage for future advancements and continued innovation. The success of this project highlights the potential of Generative AI and secure integration in transforming business operations and delivering tangible benefits.
 
 ## Conclusion
 
