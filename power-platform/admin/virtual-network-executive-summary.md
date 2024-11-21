@@ -66,13 +66,13 @@ The containerized workload allows Power Platform to support network-level isolat
 
 ### Azure subnet delegation
 
-Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plugins and connectors like [custom](/connectors/custom-connectors/), SQL, and Azure file storage, to process requests at runtime. Windows containers use the IP address from the delegated subnet to handle these requests.
+Virtual Network support for Power Platform relies on [Azure subnet delegation](/azure/virtual-network/subnet-delegation-overview). Enterprises delegate a subnet to Power Platform, used by Power Platform services such as Dataverse plugins and connectors such as [custom connectors](/connectors/custom-connectors/), SQL, and Azure file storage to process requests at runtime. Windows containers use the IP address from the delegated subnet to handle these requests.
 
-Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the virtual network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exit these Windows containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
+Since the container operates within the boundaries of the delegated subnet and uses its IP address, any outbound call from this container remains within the enterprise's network boundaries. For example, the call stays within the Virtual Network that's part of this subnet. This setup allows enterprises to have full control over the policies, rules, and network packets that exit for these Windows containers. Enterprises can apply the same controls to the delegated subnet as they do with their own network.
 
-Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet must not be associated with any other service. Once a subnet is delegated, the IPs within that subnet are reserved only for Power Platform. The subnet can't be used for any other resources or  delegated to other services.
+Power Platform doesn't manage the configuration of the delegated subnet. The only requirement is that the delegated subnet must not be associated with any other service. Once a subnet is delegated, the IPs within that subnet are reserved only for Power Platform. The subnet can't be used for any other resources or delegated to other services.
 
-By default, internet access is disabled from Windows containers. If the enterprise's code running within these containers have a requirement for internet access, they can configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the Windows containers to connect to resources on the internet.
+By default, internet access is turned off from Windows containers. If the enterprise's code running within these containers has a requirement for internet access, they can configure [NAT Gateway](/azure/nat-gateway/nat-overview) on the delegated subnet to allow the Windows containers to connect to resources on the internet.
 
 #### Delegated subnet ownership for Microsoft and customers
 
@@ -80,11 +80,11 @@ By default, internet access is disabled from Windows containers. If the enterpri
 |----------|-------------|---------------------|
 | NAT Gateway | When a NAT Gateway is attached to a subnet, it becomes the next hop for all internet-destined traffic from that subnet. Any outbound traffic from the subnet to the internet is routed through the NAT Gateway. All instances within the subnet remain private with secure and scalable outbound connectivity. | Customer |
 | Network Security Groups (NSGs) | Customers can associate NSGs with the delegated subnet. Define and enforce security rules to control inbound and outbound traffic to and from the subnet. | Customer |
-| Route Tables | Customers can associate route tables with the delegated subnet. Define custom routing policies to control the flow of traffic within the virtual network and to external networks. | Customer |
-| Network Monitoring | Network monitoring also helps in maintaining compliance with security policies by enforcing traffic to travel through the enterprise's virtual private network. | Customer|
-| IP Address Management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges, for example `10.0.0.0/8`, `192.168.0.0/16`, `172.16.0.0/12`. | Customer |
-| DNS Configuration | Customers can configure custom DNS settings for the delegated subnet, including Azure DNS entries | Customer |
-| Windows Container | Windows containers execute requests from Virtual Network supported services and acquire IPs from the delegated subnet. | Microsoft |
+| Route tables | Customers can associate route tables with the delegated subnet. Define custom routing policies to control the flow of traffic within the Virtual Network and to external networks. | Customer |
+| Network monitoring | Network monitoring helps in maintaining compliance with security policies by enforcing traffic to travel through the enterprise's virtual private network. | Customer|
+| IP address management | Customers can dictate the IP address space for the delegated subnet, ensuring it uses private IP address ranges, for example **10.0.0.0/8**, **192.168.0.0/16**, **172.16.0.0/12**. | Customer |
+| DNS configuration | Customers can configure custom DNS settings for the delegated subnet, including Azure DNS entries. | Customer |
+| Windows container | Windows containers execute requests from Virtual Network-supported services and acquire IPs from the delegated subnet. | Microsoft |
 | Multitenant support  | All customer requests are executed in their own delegated subnet. | Microsoft |
 
 ## Technical architecture
