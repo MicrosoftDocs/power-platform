@@ -93,7 +93,7 @@ The layout and communication flow of components demonstrates *using* versus *not
 
 :::image type="content" source="media/technical-architecture.png" alt-text="Virtual network technical architecture" lightbox="media/technical-architecture.png":::
 
-In a Virtual Network configuration, the container running the plugin or connector is part of a customer’s Virtual Network. Communications to endpoints within the Virtual Network remain within the Virtual Network boundary. Customers can extend the boundary to other virtual or on-premises networks by using Virtual Network peering and Express route or VPN Gateways.
+In a Virtual Network configuration, the container running the plugin or connector is part of a customer’s Virtual Network. Communications to endpoints within the Virtual Network remain within the Virtual Network boundary. Customers can extend the boundary to other virtual or on-premises networks by using Virtual Network peering and ExpressRoute or VPN Gateways.
 
 Power Platform components in a containerized workload of a customer’s Virtual Network must have some communication with the components in the workload. For example, Power Platform can trigger a plugin in the workload or invoke the connector when needed.
 
@@ -223,23 +223,24 @@ Securing outbound connections from Power Platform services is crucial to mitigat
 
 By following these best practices, you can secure outbound connections from Power Platform services, protect your data from exfiltration, and ensure compliance with security policies.
 
-## Case Studies
+## Case study
+### Enhancing business agility with generative AI and secure integration using Azure Virtual Network
 
-### Customer Case Study: Enhancing Business Agility with Generative AI and Secure Integration using Azure VNet
-**Background**: To explore practical business use cases for Generative AI, our customer conducted a hackathon. This event brought together multiple citizen developers who, within a month, successfully developed a prototype using Power Platform and Azure AI Services. The hackathon not only showcased the potential of Generative AI but also provided valuable hands-on experience to the participants, fostering innovation and collaboration within the organization.
+To explore practical, business use cases for generative AI, our customer conducted a _hackathon_. This event brought together multiple, citizen developers who, within a month, successfully developed a prototype using Power Platform and Azure AI services. The hackathon not only showcased the potential of generative AI, but also provided valuable hands-on experience to the participants, fostering innovation and collaboration within the organization.
 
-**Customer Challenges**: Despite the hackathon's success, transitioning from prototype to production posed significant challenges. The primary hurdle was establishing a secure, private-network architecture on Power Platform and Azure that complied with the company's stringent internal security policies. Ensuring data privacy and security while maintaining agility and scalability was crucial for the customer.
+**Customer challenges**: Despite the hackathon's success, transitioning from prototype to production posed significant challenges. The primary hurdle was establishing a secure, private-network architecture on Power Platform and Azure that complied with the company's stringent internal security policies. Ensuring data privacy and security, while maintaining agility and scalability was crucial for the customer.
 
-**Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation aka VNet Support available with Managed Environment. This enabled the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By utilizing this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
+**Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation, that is Virtual Network support, available with a Managed Environment. This allowed the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By utilizing this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
 
 :::image type="content" source="media/whitepaper-case-study.png" alt-text="A diagram  showing the architecture the customer used to securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.":::
 
 **Benefits**: The implementation of this solution yielded several key benefits:
-- The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
-- The new architecture eliminated costs and limitations associated with on-premises data gateways. By avoiding the need for on-premises infrastructure, the customer could reduce operational expenses and simplify maintenance.
-- The customer is now poised to expand integration with other internal data sources, including private AWS and on-premises APIs, via this platform with ExpressRoute. This expansion will enable the customer to leverage a broader range of data and services, driving further innovation and efficiency.
 
-By overcoming initial challenges and implementing a robust solution, the customer has set the stage for future advancements and continued innovation. The success of this project highlights the potential of Generative AI and secure integration in transforming business operations and delivering tangible benefits.
+  - The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
+  - The new architecture eliminated costs and limitations associated with on-premises data gateways. By avoiding the need for on-premises infrastructure, the customer could reduce operational expenses and simplify maintenance.
+  - The customer is now poised to expand integration with other internal data sources, including private Amazon Web Services and on-premises APIs, trough this platform with Azure ExpressRoute. This expansion allows the customer to use a broader range of data and services, driving further innovation and efficiency.
+
+By overcoming initial challenges and implementing a robust solution, the customer has set the stage for future advancements and continued innovation. The success of this project highlights the potential of generative AI and secure integration in transforming business operations and delivering tangible benefits.
 
 ## Conclusion
 
@@ -259,11 +260,11 @@ We discussed common use cases and scenarios where Virtual Network support can en
 - Retail companies
 - Government agencies
 
-Virtual Network support for Power Platform is a crucial feature that enables organizations to enhance their network security, optimize connectivity, and ensure compliance with regulatory requirements. Organizations that use Virtual Network support can securely connect Power Platform services to their private data sources. This secure connection eliminates the risks associated with exposing those sources to the public internet. You protect sensitive data and improve the security posture of Power Platform applications.
+Virtual Network support for Power Platform is a crucial feature that allows organizations to enhance their network security, optimize connectivity, and ensure compliance with regulatory requirements. Organizations that use Virtual Network support can securely connect Power Platform services to their private data sources. This secure connection eliminates the risks associated with exposing those sources to the public internet. You protect sensitive data and improve the security posture of Power Platform applications.
 
 Integrating Virtual Network support with Power Platform provides a comprehensive solution for organizations looking to enhance their digital infrastructure. It offers a secure, reliable, and efficient way to manage data and resources, ensuring that Power Platform applications can meet the demands of modern business environments.
 
-## Related information
+## Related content
 
 - [Virtual Network support overview](vnet-support-overview.md)
 - [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md)
