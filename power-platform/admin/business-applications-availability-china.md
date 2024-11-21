@@ -9,7 +9,7 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
-contibutors:
+contributors:
   - JesseParsons
 ms.contriutors:
   - aleahy
