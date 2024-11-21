@@ -1,19 +1,20 @@
 ---
-title: "Dynamics 365 service description"
-description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
+title: Dynamics 365 service description
+description: Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC). 
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 11/21/2024
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contibutors:
-- Akshay-Koushik-Hothur
+  - yukonpeegs
+  - Akshay-Koushik-Hothur
 ms.contributors:
-- ahothur
+  - ahothur
 ---
 
 # Dynamics 365 US Government  
