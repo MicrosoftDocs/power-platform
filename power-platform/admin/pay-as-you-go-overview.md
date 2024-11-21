@@ -23,6 +23,8 @@ Pay-as-you-go allows you to share apps and Power Automate flows with any user in
 
 This plan reduces the overhead of license procurement and lets you manage and split costs across business units by leveraging the cost management reporting capabilities of Azure subscriptions. Pricing information for this plan is available [here.](https://go.microsoft.com/fwlink/?linkid=2169167)
 
+Starting December-01-2024 , Pay-As-You Go is also supported for Copilot studio message. This will allow customers flexibility to only pay for the message capacity they consume at the end of their monthly billing period after use. This new pay-as-you-go meter requires no upfront license commitment, allowing customers to scale usage and ensure business continuity for mission critical business processes
+
 > [!TIP]
 > Check out how T-Mobile is innovating with Power Apps and pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/story/1435340411391867976-t-mobile-telecommunications-power-platform).
 
@@ -44,16 +46,16 @@ You can [unlink your environment from the Azure subscription](pay-as-you-go-set-
 
 :::image type="content" source="media/pay-as-you-go-azure-relationship.png" alt-text="Relationship between Power Platform admin center and Azure Portal":::
 
-## What is a billing policy?
+## What is a billing plan?
 
-A billing policy creates a link between one or more environments and an Azure subscription. It contains:
+A billing plan creates a link between one or more environments and an Azure subscription. It contains:
 
 - Details of the Azure subscription
 - A list of environments that are linked to the Azure subscription
 
-Billing policies can be created in either the Power Platform admin center or within Power Apps and Power Automate. When a billing policy is created, a corresponding Azure resource (called a Power Platform account resource) is created in the Azure subscription associated with that billing policy. Any usage charges for Power Apps, Power Automate, Dataverse, and Microsoft Power Platform requests will appear under the Power Platform account resource on the Azure subscription's bill.
+Billing policies can be created in either the Power Platform admin center or within Power Apps and Power Automate. When a billing plan is created, a corresponding Azure resource (called a Power Platform account resource) is created in the Azure subscription associated with that billing plan. Any usage charges for Power Apps, Power Automate, Dataverse, and Microsoft Power Platform requests will appear under the Power Platform account resource on the Azure subscription's bill.
 
-When an environment is linked to Azure via a billing policy, it becomes a *pay-as-you-go environment*. An environment can only be linked to one billing policy at a time. You can change the policy an environment is linked to, or [remove it from a billing policy](pay-as-you-go-set-up.md#turning-off-pay-as-you-go), at any time. When you remove an environment from a billing policy, it goes back to functioning as a regular environment. Usage of Microsoft Power Platform products in that environment will no longer be billed to Azure. 
+When an environment is linked to Azure via a billing plan, it becomes a *pay-as-you-go environment*. An environment can only be linked to one billing plan at a time. You can change the plan an environment is linked to, or [remove it from a billing plan](pay-as-you-go-set-up.md#turning-off-pay-as-you-go), at any time. When you remove an environment from a billing plan , it goes back to functioning as a regular environment. Usage of Microsoft Power Platform products in that environment will no longer be billed to Azure. 
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription.png" alt-text="Billing policy linked to Azure subscription":::
 
