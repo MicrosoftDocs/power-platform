@@ -158,14 +158,14 @@ The type of workload that enterprises want to run within an environment determin
 
 ### API workloads
 
-If enterprises plan to run API workloads like plugins, connectors, or service endpoints, Virtual Network support for Power Platform is the only supported way to integrate securely with your data sources within your network.
+If enterprises plan to run API workloads like plugins, connectors, or service endpoints, [Virtual Network support for Power Platform](vnet-support-overview.md) is the only supported way to integrate securely with your data sources within your network.
 
 > [!NOTE]
-> For Power Platform connectors, which require partner drivers, a Windows Auth connection, and mashup hosting can't be supported through Virtual Network. These connectors have less than 1% of total usage and continue to use on-premises data gateway (OPDG) today.
+> A subset of connectors with 3rd party driver requirement or Windows auth are not supported on VNet at this point. These connectors have less than 1% of total usage and continue to use on-premises data gateway (OPDG) today.
 
 ### ETL workloads
 
-Power BI and Power Platform data flows use Virtual Network Data Gateway.
+[Power BI](data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform data flows](data-integration/vnet/data-gateway-power-platform-dataflows) use Virtual Network Data Gateway.
 
 :::image type="content" source="media/VNet-support.png" alt-text="Virtual Network support for Power Platform." lightbox="media/VNet-support.png":::
 
