@@ -11,7 +11,7 @@ search.audienceType:
   - admin
 contributors:
   - JesseParsons
-ms.contriutors:
+ms.contributors:
   - aleahy
   - iyanni
   - pvayner
