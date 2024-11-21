@@ -163,7 +163,7 @@ If enterprises plan to run API workloads like plugins, connectors, or service en
 
 ### ETL workloads
 
-[Power BI](data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform data flows](data-integration/vnet/data-gateway-power-platform-dataflows) use Virtual Network data gateway.
+[Power BI](/data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform data flows](/data-integration/vnet/data-gateway-power-platform-dataflows) use Virtual Network data gateway.
 
 :::image type="content" source="media/VNet-support.png" alt-text="Virtual Network support for Power Platform." lightbox="media/VNet-support.png":::
 
