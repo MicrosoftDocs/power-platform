@@ -23,22 +23,46 @@ The consumption monitoring views in capacity management provide detailed, daily 
 The licensing summary view shows usage of both pre-paid and session-based capacity units.
 Purchasing a Microsoft Copilot Studio license includes a specified number of billed message units pooled across the tenant, which must be assigned to an environment to enable Microsoft Copilot Studio features for agents in that environment.
 
-# Pay-As-You-Go Messages Card:
+## Pay-As-You-Go Messages Card:
 This card displays the count of active billing plans with Copilot Studio meter enabled, along with the month-to-date total of Copilot Studio message units billed to these plans.
 
-# Pre-paid Capacity Card:
+## Pre-paid Capacity Card:
 The Pre-paid Capacity card shows the number of pre-paid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
  
-# Capacity Consumption by Product:
+## Capacity Consumption by Product:
 This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from pre-paid capacity packs and/or Pay-As-You-Go units.
  
-# Total Capacity Consumption Trend:
+## Total Capacity Consumption Trend:
 Displays the daily trend of capacity consumption over the past three months.
 
-# Message Usage by Environment:
+## Message Usage by Environment:
 Highlights the top environments based on Copilot Studio message usage.
 
 # Environment Usage Page:
 This page provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the pre-paid capacity and the units billed under Pay-As-You-Go. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if Pay-As-You-Go is enabled.
 
+## Environment Page
+You can choose a specific environment to view the Copilot Studio capacity consumed within that environment.
+Capacity Consumption by Product:
+This tile provides a product-focused summary of Copilot message units consumed, showing the number of units deducted from pre-paid capacity packs and/or Pay-As-You-Go units.
+## Message Consumption by Resource:
+The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus non-billable messages.
+
+## Managing Capacity:
+Capacity allocation can be managed in the Power Platform Admin Center. To allocate, go to Billing > Licenses > Copilot Studio, and either select Manage Capacity from the Pre-paid Capacity card or use Manage Messages or Sessions from the top navigation bar. In the allocation panel, select an environment and specify the number of messages to allocate in the Messages textbox.
+## Overage Management:
+When consumption exceeds the pre-allocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked Pay-As-You-Go plan.
+
+# Frequently Asked Questions
+
+**What is a Message** 
+
+A message represents a single interaction between a user and a Copilot agent, counted as one unit of consumption. Each message is defined as a request sent to Copilot that prompts a response or action.
+
+**Why should I go for Pay-G**
+- Flexibility: Since your usage may fluctuate, PAYG allows for scalability and flexibility – pay for only what you use
+- Business Continuity: Given that Copilot Studio is the way to pay for the use of agents that will be critical to business continuity, the PAYG model overcomes any concern associated with reaching the limits of purchased message quantities
+- Availability: Your users can benefit from the agents you build, without requiring separate licenses
+- Cost savings: Reduce the hassle of pre-paid capacity inventory management. No more unused capacity expiring at the end of the month
+- No commitment: Get started with pay-as-you-go right away without locking into any long-term commitments and without any upfront costs
 
