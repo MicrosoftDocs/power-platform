@@ -232,7 +232,7 @@ To explore practical, business use cases for generative AI, our customer conduct
 
 **Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation, that is Virtual Network support, available with a Managed Environment. This allowed the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By utilizing this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
 
-:::image type="content" source="media/whitepaper-case-study.png" alt-text="A diagram  showing the architecture the customer used to securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.":::
+:::image type="content" source="media/whitepaper-case-study.png" alt-text="A diagram  showing the architecture the customer used to securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet." lightbox="media/whitepaper-case-study.png":::
 
 **Benefits**: The implementation of this solution yielded several key benefits:
 
