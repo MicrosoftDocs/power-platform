@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support within Power Pl
 author: ritesp
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2024
+ms.date: 11/21/2024
 ms.subservice: admin
 ms.author: ritesp
 ms.reviewer: sericks
@@ -241,6 +241,8 @@ By following these best practices, you can secure outbound connections from Powe
 **Customer Challenges**: Despite the hackathon's success, transitioning from prototype to production posed significant challenges. The primary hurdle was establishing a secure, private-network architecture on Power Platform and Azure that complied with the company's stringent internal security policies. Ensuring data privacy and security while maintaining agility and scalability was crucial for the customer.
 
 **Solution**: To address these challenges, the customer leveraged Azure Subnet Delegation aka VNet Support available with Managed Environment. This enabled the establishment of a private-network architecture between Power Platform and private Azure resources, all protected by a Virtual Network. By utilizing this architecture, the customer could securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.
+
+:::image type="content" source="media/whitepaper-case-study.png" alt-text="A diagram  showing the architecture the customer used to securely connect their Power Platform applications to Azure services without exposing sensitive data to the public internet.":::
 
 **Benefits**: The implementation of this solution yielded several key benefits:
 - The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
