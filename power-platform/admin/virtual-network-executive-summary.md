@@ -89,29 +89,27 @@ By default, internet access is turned off from Windows containers. If the enterp
 
 ## Technical architecture
 
-The layout and communication flow of components demonstrates *using* versus *not using* the virtual network feature for plugin and connector workloads:
+The layout and communication flow of components demonstrates *using* versus *not using* the Virtual Network feature for plugin and connector workloads:
 
 :::image type="content" source="media/technical-architecture.png" alt-text="Virtual network technical architecture" lightbox="media/technical-architecture.png":::
 
-In a virtual network configuration, the container running the plugin or connector is part of customer’s virtual network. Communications to endpoints within the virtual network remain within the virtual network boundary. Customers can extend the boundary to other virtual or on-premises networks by using Virtual Network peering and Express route or VPN Gateways.
+In a Virtual Network configuration, the container running the plugin or connector is part of a customer’s Virtual Network. Communications to endpoints within the Virtual Network remain within the Virtual Network boundary. Customers can extend the boundary to other virtual or on-premises networks by using Virtual Network peering and Express route or VPN Gateways.
 
-Power Platform components in a containerized workload of a customer’s virtual network must have some communication with the components in the workload. For example, Power Platform can trigger a plugin in the workload or invoke the connector when needed.
+Power Platform components in a containerized workload of a customer’s Virtual Network must have some communication with the components in the workload. For example, Power Platform can trigger a plugin in the workload or invoke the connector when needed.
 
 Since the container isn't attached to the infrastructure network, a special channel is established with the container from the orchestration layer. This channel allows specific signals to be sent to the workload. A local IP within the container (APIPA address) is used for this purpose. Only specific inbound messages to the workload from the platform are allowed to maintain the isolation of the container and the workload.
 
-The following diagram shows how Power Platform can route the execution requests to the container while maintaining the container isolation boundaries:  
+The following diagram shows how Power Platform can route execution requests to the container while maintaining the container-isolation boundaries:  
 
-:::image type="content" source="media/container-isolation-boundaries.png" alt-text="Diagram showing how platform can route the execution requests to the container while maintaining the container isolation boundaries." lightbox="media/container-isolation-boundaries.png":::
+:::image type="content" source="media/container-isolation-boundaries.png" alt-text="Diagram showing how the platform can route the execution requests to the container, while maintaining the container isolation boundaries." lightbox="media/container-isolation-boundaries.png":::
 
-## Enable Virtual Network support for Power Platform
+## Turn on Virtual Network support for Power Platform
 
-Learn how to enable Virtual Network support for Power Platform in [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md).
+Learn how to turn on Virtual Network support for Power Platform in [Set up Virtual Network support for Power Platform](vnet-support-setup-configure.md).
 
 ## Common use cases and scenarios
 
-Virtual Network support for Power Platform is essential for organizations looking to enhance their network security and optimize connectivity.
-
-In this section, you learn about common use cases of the Virtual Network capability in Power Platform and some real-world examples across industries benefitting from this capability.
+Virtual Network support for Power Platform is essential for organizations looking to enhance their network security and optimize connectivity. In this section, you learn about common use cases of the Virtual Network capability in Power Platform and some real-world examples across industries benefitting from this capability.
 
 ### Secure data integration
 
@@ -129,43 +127,43 @@ You can use Virtual Network support in Power Platform connectors within Copilot 
 
 Some example institutions and sectors that can benefit greatly with Virtual Network support include:
 
-- Financial
-- Healthcare
-- Retail
-- Government
+- Financial institutions
+- Healthcare providers
+- Retail companies
+- Government agencies
 
-#### Financial Institutions
+#### Financial institutions
 
-A large bank can use Virtual Network support to securely connect Power Platform applications such as Power Apps, Power Automate, Dynamics 365 apps to its protected databases and services. By doing so, the bank can ensure that customer data is protected and complies with regulatory requirements. This setup also allows the bank to create secure workflows and automate processes without exposing sensitive information to the public internet.
+A large bank can use Virtual Network support to securely connect Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps to its protected databases and services. By doing so, the bank can ensure that customer data is protected and complies with regulatory requirements. This setup also allows the bank to create secure workflows and automate processes without exposing sensitive information to the public internet.
 
-#### Healthcare Providers
+#### Healthcare providers
 
 A healthcare organization can use Virtual Network integration to connect Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps with its electronic health record (EHR) systems. Patient data can be securely accessed and managed within the organization's private network. The healthcare provider can also use Virtual Network support to create secure communication channels between different departments and external partners.
 
-#### Retail Companies
+#### Retail companies
 
 A retail company can securely connect its Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps to inventory management systems and customer databases. Private connections allow the company to streamline operations, improve inventory tracking, and enhance customer service while ensuring that sensitive data remains protected.
 
-#### Government Agencies
+#### Government agencies
 
-Government agencies can use Virtual Network support to securely connect Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps to various internal systems and databases. This connection enables the agencies to automate processes, improve data sharing, and enhance collaboration while maintaining strict security and compliance standards.
+Government agencies can use Virtual Network support to securely connect Power Platform applications such as Power Apps, Power Automate, and Dynamics 365 apps to various internal systems and databases. This connection allows agencies to automate processes, improve data sharing, and enhance collaboration while maintaining strict security and compliance standards.
 
 Organizations across different industries can enhance their security posture, improve connectivity, and ensure compliance with regulatory requirements.
 
-## Integration Patterns
+## Integration patterns
 
-The type of workload that enterprises want to run within an environment determines the integration pattern for the Power Platform. You can use Virtual Network support for Power Platform as an integration pattern in your environment with some exceptions.
+The type of workloads that enterprises want to run within an environment determines the integration pattern for the Power Platform. You can use Virtual Network support for Power Platform as an integration pattern in your environment with some exceptions.
 
 ### API workloads
 
 If enterprises plan to run API workloads like plugins, connectors, or service endpoints, [Virtual Network support for Power Platform](vnet-support-overview.md) is the only supported way to integrate securely with your data sources within your network.
 
 > [!NOTE]
-> A subset of connectors with 3rd party driver requirement or Windows auth are not supported on VNet at this point. These connectors have less than 1% of total usage and continue to use on-premises data gateway (OPDG) today.
+> A subset of connectors with third-party, driver requirement or Windows authentication aren't supported on Virtual Networks at this point. These connectors have less than 1% of total usage and continue to use on-premises data gateway (OPDG) today.
 
 ### ETL workloads
 
-[Power BI](data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform data flows](data-integration/vnet/data-gateway-power-platform-dataflows) use Virtual Network Data Gateway.
+[Power BI](data-integration/vnet/use-data-gateways-sources-power-bi) and [Power Platform data flows](data-integration/vnet/data-gateway-power-platform-dataflows) use Virtual Network data gateway.
 
 :::image type="content" source="media/VNet-support.png" alt-text="Virtual Network support for Power Platform." lightbox="media/VNet-support.png":::
 
@@ -175,15 +173,15 @@ To use the Virtual Network support for Power Platform, consider the following gu
 
 #### Regional
 
-Virtual Network support requires that a Power Platform environment location must match with the delegated subnets Azure regions. If you have a Power Platform environment in the United States, then each of two virtual networks and subnets must be in the East US and West US Azure regions.
+Virtual Network support requires that a Power Platform environment location must match the delegated, subnets Azure regions. If you have a Power Platform environment in the United States, then each of two Virtual Networks and subnets must be in the East US and West US Azure regions.
 
-If your Azure resources are in different regions, use a global virtual network peering or similar connectivity option with high speed and low latency. With Microsoft Backbone, establish the connectivity between the Power Platform Virtual Network and enterprises Virtual Network.
+If your Azure resources are in different regions, use a global, Virtual Network peering or a similar connectivity option with high speed and low latency. With Microsoft Backbone, establish the connectivity between the Power Platform Virtual Network and enterprises Virtual Network.
 
 #### Subnet size
 
-The size of the delegated subnet within a virtual network is a critical concern, considering future growth in usage and the onboarding of new services. The following table provides guidance on the number of environments that can be attached to the same enterprise policy based on available IPs. Size ensures that requests aren't throttled.
+The size of the delegated subnet within a Virtual Network is a critical concern, considering future growth in usage and the onboarding of new services. The following table provides guidance on the number of environments that can be attached to the same enterprise policy based on available IPs. Size ensures that requests aren't throttled.
 
-  | Min # of environments | Max # of environments | Virtual Network execution load  | Subnet size |
+  | Minimum number of environments | Maximum number of environments | Virtual Network execution load  | Subnet size |
   |----------|------------|--------------|-------------|
   | 3 | 5 | High to high | `/24` <br>251 usable IP addresses |
   | 10 | 20 | High to medium | `/24` <br>251 usable IP addresses |
@@ -191,11 +189,11 @@ The size of the delegated subnet within a virtual network is a critical concern,
 
 #### NAT Gateway
 
-Azure Network Address Translation (NAT) Gateway enables Windows containers within a delegated subnet to securely connect to internet resources. NAT Gateway ensures secure communication by translating the private IP addresses of container instances to a static public IP address. Static IPs allow for consistent and secure outbound connections.
+Azure Network Address Translation (NAT) Gateway allows Windows containers, within a delegated subnet, to securely connect to internet resources. NAT Gateway ensures secure communication by translating the private IP addresses of container instances to a static, public IP address. Static IPs allow for consistent and secure outbound connections.
 
 Enterprises need to configure NAT Gateway to prevent disruptions in existing integrations when onboarding a production environment to Virtual Network without migrating all data sources to the private network. This configuration allows enterprises to transition their integrations to Virtual Network without affecting current workloads.
 
-#### Network Monitoring
+#### Network monitoring
 
 Network monitoring helps in tracking and analyzing the traffic flow within the delegated subnet. This monitoring is essential for identifying and resolving any potential issues. Monitoring ensures that the network is operating efficiently and securely by providing insights into the performance and health of the network components. Monitoring tools can detect anomalies, such as unusual traffic patterns or unauthorized access attempts, allowing for timely intervention and mitigation.
 
@@ -215,21 +213,13 @@ Additionally, Virtual Network support improves connectivity by providing a relia
 
 Securing outbound connections from Power Platform services is crucial to mitigate data exfiltration risks and ensure compliance with security policies. Consider the following best practices.
 
-#### Restrict Outbound Traffic
+- **Restrict outbound traffic**: Limit the outbound traffic from Power Platform resources to specific endpoints. This limit can be achieved by using Azure Network Security Groups (NSGs) and Azure Firewall to enforce traffic rules and control access.
 
-Limit the outbound traffic from Power Platform resources to specific endpoints. This limit can be achieved by using Azure Network Security Groups (NSGs) and Azure Firewall to enforce traffic rules and control access.
+- **Use private endpoints**: Utilize private endpoints to enable secure communication between Power Platform services and Azure resources. This security ensures that traffic remains within the Azure network and doesn't traverse the public internet.
 
-#### Use Private Endpoints
+- **Monitor and audit traffic**: Use [Azure Network Watcher](/azure/network-watcher/network-watcher-overview) and [Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal) to monitor and audit the outbound traffic from Power Platform services. This monitoring helps identify and respond to potential security threats in real-time.
 
-Utilize private endpoints to enable secure communication between Power Platform services and Azure resources. This security ensures that traffic remains within the Azure network and doesn't traverse the public internet.
-
-#### Monitor and Audit Traffic
-
-Use [Azure Network Watcher](/azure/network-watcher/network-watcher-overview) and [Microsoft Sentinel](/azure/sentinel/overview?tabs=azure-portal) to monitor and audit the outbound traffic from Power Platform services. This monitoring helps identify and respond to potential security threats in real-time.
-
-#### Apply Security Policies
-
-Enforce security policies using Azure Policy and Azure Firewall to ensure all outbound connections comply with your organization's security requirements. To control data flow, choose data loss prevention (DLP) policies and endpoint filtering on connectors.
+- **Apply security policies**: Enforce security policies using Azure Policy and Azure Firewall to ensure all outbound connections comply with your organization's security requirements. To control data flow, choose data loss prevention (DLP) policies and endpoint filtering on connectors.
 
 By following these best practices, you can secure outbound connections from Power Platform services, protect your data from exfiltration, and ensure compliance with security policies.
 
