@@ -75,15 +75,11 @@ This guide walks you through setting up the **Microsoft Entra ID using SuccessFa
    - **X.509 Certificate:** Leave empty initially.
 5. Select **Save**. Your new client application now has an **API Key** that serves as the *Client ID* in the SAML2 session flow and is used in the connection and Enterprise App configuration.
 
-### Import Microsoft Entra ID Certificate
-
 Later in the process, you'll import a certificate from your Microsoft Entra ID Enterprise App into SuccessFactors.
-
----
 
 ### Create a Microsoft Entra ID Enterprise Application
 
-1. Open the **Azure Portal** and navigate to **Microsoft Entra ID** > **Enterprise Applications**.
+1. Open the **Azure Portal** and go to **Microsoft Entra ID** > **Enterprise Applications**.
 1. Select **New application**.
 1. Search for and select  **SAP SuccessFactors**.
 1. Assign a name for the application and select **Create**.
@@ -98,7 +94,7 @@ Later in the process, you'll import a certificate from your Microsoft Entra ID E
     1. Update the *Unique User Identifier* claim to match the unique ID for each SuccessFactors user.
 1. Download the **Certificate (Base64 format)** from this application.
 
-## Configure Enterprise Application
+### Configure Enterprise Application
 
 1. In the **Azure Portal**, go to **App Registrations**.
 2. Under **Expose an API**, locate your **Resource URI** (Application ID URI).
@@ -107,14 +103,14 @@ Later in the process, you'll import a certificate from your Microsoft Entra ID E
 5. Select the existing scope from the **Authorized scopes** checklist.
 6. Select **Add application**.
 
-## Configure SuccessFactors to trust Microsoft Entra ID
+### Configure SuccessFactors to trust Microsoft Entra ID
 
 1. Log in to the SuccessFactors Web UI with an admin account.
 2. Go to **Manage OAuth2 Client Applications**.
 3. Select the *client application* you created earlier.
 4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
 
-## Test the connection
+### Test the connection
 
 1. Open **Power Automate** in your browser.
 2. Create a new flow (manual trigger type).
