@@ -12,7 +12,7 @@ contributors:
 - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/11/2024
+ms.date: 11/22/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -21,7 +21,7 @@ ms.custom: ignite-2024
 
 # What is Microsoft Power Platform integration with SAP?
 
-[Microsoft Power Platform](/power-platform/) integration with SAP unlocks the full potential of your SAP data. Our Power Platform and SAP connectors, [SAP ERP](/connectors/saperp) and [SAP OData](/odata/overview), allow you to access and operate on your SAP data securely.
+[Microsoft Power Platform](/power-platform/) integration with SAP unlocks the full potential of your SAP data. Our Power Platform and SAP connectors, [SAP ERP](/connectors/saperp), and ,[SAP OData](/odata/overview), allow you to access and operate on your SAP data securely.
 
 Discover how to enhance your SAP business processes with Power Platform. You can transform how you view and work with your SAP data by designing and building your own custom [applications](/power-apps/powerapps-overview), [cloud flows](/power-automate/overview-cloud), and [agents](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) that work with your SAP data.  Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business—Power Platform provides the tools you need to integrate and automate your digital ecosystem.
 
@@ -29,7 +29,7 @@ Discover how to enhance your SAP business processes with Power Platform. You can
 
 ## SAP ERP connector
 
-The ERP connector communicates with SAP over the RFC protocol through the SAP .NET connector library (NCo) 3.1 provided by SAP. SAP NCo *Release and Support Strategy* states that NCo 3.0 works with any SAP back-end system starting with release 4.0B, and transparently supports Unicode and non-Unicode back-ends. SAP NCo 3.1 release and support strategy does not include any statement of versions supported or change in versions supported. The SAP ERP connector has been validated with versions of ECC and S4/HANA. If issues arise in integrating with SAP R/3 4.0B or greater, we'll make a best effort attempt to support.
+The ERP connector communicates with SAP over the RFC protocol through the SAP .NET connector library (NCo) 3.1 provided by SAP. SAP NCo *Release and Support Strategy* states that NCo 3.0 works with any SAP back-end system starting with release 4.0B, and transparently supports Unicode and non-Unicode back-ends. SAP NCo 3.1 release and support strategy doesn't include any statement of versions supported or change in versions supported. The SAP ERP connector is validated with versions of ECC and S4/HANA. If issues arise in integrating with SAP R/3 4.0B or greater, we make a best effort attempt to support.
 
 ## SAP OData connector
 
@@ -38,7 +38,7 @@ The OData connector, jointly developed by Microsoft and SAP, is supported across
 > [!NOTE]
 >There may be issues where a support ticket with SAP will need to be submitted for additional support from SAP.
 
-## Licensure
+## Licensing
 
 Users of Power Platform apps integrated with SAP need the following licenses:
 
@@ -51,7 +51,7 @@ If you already have SAP direct named user licenses, you can use these licenses w
 
 [Enterprise templates for Power Platform](../../enterprise-templates/overview.md) include the [SAP Procurement](../../enterprise-templates/finance/sap-procurement/overview.md) and [SAP Supplier Self Service](../../enterprise-templates/finance/sap-supplier-self-service/overview.md) templates. These templates include sample components and cloud flows for common SAP business processes that can accelerate your Power Platform and SAP integration journey.
 
-You can also take a look at [prebuilt agents](/microsoft-copilot-studio/template-fundamentals) available in Microsoft Copilot Studio to get ideas and examine how they are designed. You can even create a custom agent from a prebuilt agent to fit your needs.
+You can also take a look at [prebuilt agents](/microsoft-copilot-studio/template-fundamentals) available in Microsoft Copilot Studio to get ideas and examine how they're designed. You can even create a custom agent from a prebuilt agent to fit your needs.
 
 ## Power Platform connectors
 
@@ -59,6 +59,6 @@ Microsoft Power Platform connectors provide secure, encrypted integration of you
 
 ## Related content
 
-- [SAP and Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
+- [Dive deeper with the SAP + Power Platform white paper](https://go.microsoft.com/fwlink/?linkid=2294900)
 - [Get started with the SAP ERP connector](../connect/sap-erp-connector.md)
 - [Get started with the OData connector](../connect/sap-odata-connector.md)
