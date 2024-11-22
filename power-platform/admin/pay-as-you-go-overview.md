@@ -42,7 +42,7 @@ In Power Apps, Power Automate, or the Power Platform admin center, you can link 
 
 Once an environment is linked to an Azure subscription, the usage of apps and any Dataverse or Microsoft Power Platform request usage that goes above the included amounts are billed against the Azure subscription using [Azure meters](pay-as-you-go-meters.md).
 
-You can [unlink your environment from the Azure subscription](pay-as-you-go-set-up.md#turning-off-pay-as-you-go) at any time and usage will no longer be billed.
+You can [unlink your environment from the Azure subscription](pay-as-you-go-set-up.md#turn-off-pay-as-you-go) at any time and usage will no longer be billed.
 
 :::image type="content" source="media/pay-as-you-go-azure-relationship.png" alt-text="Relationship between Power Platform admin center and Azure Portal":::
 
@@ -55,7 +55,7 @@ A billing plan creates a link between one or more environments and an Azure subs
 
 Billing policies can be created in either the Power Platform admin center or within Power Apps and Power Automate. When a billing plan is created, a corresponding Azure resource (called a Power Platform account resource) is created in the Azure subscription associated with that billing plan. Any usage charges for Power Apps, Power Automate, Dataverse, and Microsoft Power Platform requests will appear under the Power Platform account resource on the Azure subscription's bill.
 
-When an environment is linked to Azure via a billing plan, it becomes a *pay-as-you-go environment*. An environment can only be linked to one billing plan at a time. You can change the plan an environment is linked to, or [remove it from a billing plan](pay-as-you-go-set-up.md#turning-off-pay-as-you-go), at any time. When you remove an environment from a billing plan, it goes back to functioning as a regular environment. Usage of Microsoft Power Platform products in that environment will no longer be billed to Azure. 
+When an environment is linked to Azure via a billing plan, it becomes a *pay-as-you-go environment*. An environment can only be linked to one billing plan at a time. You can change the plan an environment is linked to, or [remove it from a billing plan](pay-as-you-go-set-up.md#turn-off-pay-as-you-go), at any time. When you remove an environment from a billing plan, it goes back to functioning as a regular environment. Usage of Microsoft Power Platform products in that environment will no longer be billed to Azure. 
 
 :::image type="content" source="media/pay-as-you-go-billing-policy-azure-subscription.png" alt-text="Billing policy linked to Azure subscription":::
 
