@@ -16,7 +16,7 @@ ms.date: 11/11/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
-# Customer intent: As a business decision maker or as an administrator, I want to learn about Power Platform integration with SAP so I can discover how to integrate and streamline my organization's SAP data and workflows with other system data in Power Platform to give my organization's users a better work experience that leads to saved time, fewer mistakes, and improved data quality and insights.
+# Customer intent: As a business decision maker or an administrator, I want to learn about Power Platform integration with SAP so I can discover how to integrate and streamline my organization's SAP data and workflows with other system data in Power Platform to give my organization's users a better work experience that leads to saved time, fewer mistakes, and improved data quality and insights.
 ---
 
 # What is Microsoft Power Platform integration with SAP?
@@ -40,7 +40,7 @@ The OData connector, jointly developed by Microsoft and SAP, is supported across
 
 ## Licensure
 
-Users of Power Platform apps integrated with SAP will need the following licenses:
+Users of Power Platform apps integrated with SAP need the following licenses:
 
 - A Power Apps Premium license
 - An SAP indirect-named user license
@@ -49,7 +49,9 @@ If you already have SAP direct named user licenses, you can use these licenses w
 
 ## Enterprise templates for Power Platform
 
-[Enterprise templates for Power Platform](../../enterprise-templates/overview.md) include the [SAP Procurement](../../enterprise-templates/finance/sap-procurement/overview.md) and [SAP Supplier Self Service](../../enterprise-templates/finance/sap-supplier-self-service/overview.md) templates. These templates and ready-to-use copilots that include sample components and cloud flows for common SAP business processes can accelerate your Power Platform and SAP integration journey.
+[Enterprise templates for Power Platform](../../enterprise-templates/overview.md) include the [SAP Procurement](../../enterprise-templates/finance/sap-procurement/overview.md) and [SAP Supplier Self Service](../../enterprise-templates/finance/sap-supplier-self-service/overview.md) templates. These templates include sample components and cloud flows for common SAP business processes that can accelerate your Power Platform and SAP integration journey.
+
+You can also take a look at [prebuilt agents](/microsoft-copilot-studio/template-fundamentals) available in Microsoft Copilot Studio to get ideas and examine how they are designed. You can even create a custom agent from a prebuilt agent to fit your needs.
 
 ## Power Platform connectors
 
