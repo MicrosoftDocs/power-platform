@@ -30,11 +30,11 @@ Starting December 1, 2024, pay-as-you go is supported for Copilot Studio message
 
 ## Common use cases
 
-1. **Widely distributed apps:** Use the pay-as-you-go plan for apps that need to be shared with a large user base with infrequent and/or unpredictable use.
+- **Widely distributed apps:** Use the pay-as-you-go plan for apps that need to be shared with a large user base with infrequent and/or unpredictable use.
 
-2. **Establish usage patterns:** Understand adoption patterns for new apps to determine whether prepaid licenses make financial sense for your business.
+- **Establish usage patterns:** Understand adoption patterns for new apps to determine whether prepaid licenses make financial sense for your business.
 
-3. **Flexible purchasing:** Use an Azure subscription for Power Apps and Power Automate to reduce license procurement overhead and consolidate with other service purchases. This is especially helpful if you already have an Azure subscription that you use for other Microsoft services.
+- **Flexible purchasing:** Use an Azure subscription for Power Apps and Power Automate to reduce license procurement overhead and consolidate with other service purchases. This is especially helpful if you already have an Azure subscription that you use for other Microsoft services.
 
 ## How does it work?
 
