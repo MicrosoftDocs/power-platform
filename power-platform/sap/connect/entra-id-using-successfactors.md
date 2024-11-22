@@ -50,8 +50,7 @@ This guide will help you set up the **Microsoft Entra ID using SuccessFactors** 
 ---
 
 ## Key Configuration Notes
-
-- Ensure that the custom claim of the Microsoft Entra ID user aligns precisely with the user alias in SuccessFactors (one-to-one matching).
+- Ensure that the Unique User Identifier claim of the Microsoft Entra ID user aligns precisely with the user alias in SuccessFactors (one-to-one matching).
 - **User Access Control:** Only users or groups listed in the Enterprise Application will be allowed to authenticate with SuccessFactors.
 - **Resource URI:** Found in the Enterprise App settings under **Expose an API** as the Application ID URI.
 - Your **Company ID** is generated based on the enabled SuccessFactors modules.
