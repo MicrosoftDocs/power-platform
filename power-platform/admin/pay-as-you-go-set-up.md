@@ -4,7 +4,7 @@ description: Follow these steps to set up pay-as-you-go billing with an Azure su
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 11/22/2024
 ms.subservice: admin
 ms.author: ampatra 
 ms.reviewer: sericks
@@ -32,7 +32,7 @@ The following table describes the permissions of who can create a [billing polic
 
 ### First, procure or create an Azure subscription you can use 
 
-   If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one [here.](https://azure.microsoft.com/free/) You'll need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with another user who has these permissions). Most users will have these permissions if they are owners or contributors for the subscription. For more information, contact your Azure administrator or see [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
+   If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one at [Azure account](https://azure.microsoft.com/free/) site. You'll need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with another user who has these permissions). Most users will have these permissions if they are owners or contributors for the subscription. For more information, contact your Azure administrator or see [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
    
 ### Second, link an Azure subscription to an environment 
 
