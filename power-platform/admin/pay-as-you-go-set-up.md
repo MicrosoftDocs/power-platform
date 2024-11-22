@@ -23,22 +23,20 @@ The following table describes the permissions of who can create a [billing polic
 
 | **Role**  | **Create a billing policy?** | **Edit a billing policy?**   | **Link environments to a billing policy?**   |
 |--------|----------|-------|-----|
-| Environment admin    | Yes  | Yes, for billing policies the admin created | Yes, for billing policies the admin created and for environments in which they're admins |
-| Power Platform admin | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant  |
-| Global admin         | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant   |
-| Dynamics Admin           | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant    |
+| Environment admin    | Yes  | Yes, for billing policies the admin created. | Yes, for billing policies the admin created and for environments in which they're admins. |
+| Power Platform admin | Yes  | Yes, for all billing policies in the tenant. | Yes, for all environments in the tenant.  |
+| Global admin         | Yes  | Yes, for all billing policies in the tenant. | Yes, for all environments in the tenant.   |
+| Dynamics Admin           | Yes  | Yes, for all billing policies in the tenant. | Yes, for all environments in the tenant.    |
 
-## Get started
-
-### Procure or create an Azure subscription you can use 
+## Procure or create an Azure subscription
 
 If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one at the [Azure account](https://azure.microsoft.com/free/) site. You need to have permissions to create new resources and register resource providers in the subscription&mdash;or have the ability to work with another user who has these permissions. Most users have these permissions if they're owners or contributors for the subscription. For more information, contact your Azure administrator or see [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
    
-### Link an Azure subscription to an environment 
+## Link an Azure subscription to an environment 
 
 Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **production** and **sandbox** environments.
 
-#### In the Power Platform admin center
+## Create a billing plan
 
 Follow these steps to create a billing plan, link environments to it, and add Azure subscription details for billing:
 
@@ -58,7 +56,7 @@ Follow these steps to create a billing plan, link environments to it, and add Az
 
 6.	In the next screen, select the list of environments from the list of available regions. Any environment you add to the billing plan in the following step can only be in this region.
    
-## List Of billing plans
+## List of billing plans
 
 ### View the billing plan's Power Platform account resource in the Azure portal
 
