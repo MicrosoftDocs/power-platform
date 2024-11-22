@@ -65,8 +65,8 @@ The Geo Migration feature allows customers to move their environments in a singl
 - Relink enterprise policies to the environment as necessary. For example, [virtual network](./vnet-support-setup-configure.md#configure-your-power-platform-environment), [customer-managed keys](./customer-managed-key.md#manage-environments-encryption)
 - Work with Microsoft Support to recreate Lockbox requests for the environment as necessary.
 - [Reapply DLP policies](./prevent-data-loss.md) to the environment as necessary.
-- [Readd the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
-- [Reapply Pay-as-you-go billing policies](./pay-as-you-go-set-up.md#second-link-an-azure-subscription-to-an-environment) to the environment as necessary.
+- [Read the environment to an environment group](./environment-groups.md#add-environments-to-your-environment-group) as necessary.
+- [Reapply pay-as-you-go plan](./pay-as-you-go-set-up.md#link-an-azure-subscription-to-an-environment) to the environment as necessary.
 - [Repeat currency allocations](./capacity-add-on.md) for the environment as necessary.
 
 ### For components that are in solutions
