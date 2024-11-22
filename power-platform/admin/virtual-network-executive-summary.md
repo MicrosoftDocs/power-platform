@@ -238,7 +238,7 @@ To explore practical, business use cases for generative AI, our customer conduct
 
   - The customer achieved a secure and agile integration foundation between Power Platform and Azure, accelerating the realization of business value. This integration allowed for seamless data flow and enhanced collaboration across different departments.
   - The new architecture eliminated costs and limitations associated with on-premises data gateways. By avoiding the need for on-premises infrastructure, the customer could reduce operational expenses and simplify maintenance.
-  - The customer is now poised to expand integration with other internal data sources, including private Amazon Web Services and on-premises APIs, trough this platform with Azure ExpressRoute. This expansion allows the customer to use a broader range of data and services, driving further innovation and efficiency.
+  - The customer is now poised to expand integration with other internal data sources, including private Amazon Web Services and on-premises APIs, through this platform with Azure ExpressRoute. This expansion allows the customer to use a broader range of data and services, driving further innovation and efficiency.
 
 By overcoming initial challenges and implementing a robust solution, the customer has set the stage for future advancements and continued innovation. The success of this project highlights the potential of generative AI and secure integration in transforming business operations and delivering tangible benefits.
 
