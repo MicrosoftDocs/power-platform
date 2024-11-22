@@ -32,7 +32,7 @@ The following table describes the permissions of who can create a [billing polic
 
 ### First, procure or create an Azure subscription you can use 
 
-   If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one at [Azure account](https://azure.microsoft.com/free/) site. You'll need to have permissions to create new resources and register resource providers in the subscription (or have the ability to work with another user who has these permissions). Most users will have these permissions if they are owners or contributors for the subscription. For more information, contact your Azure administrator or see [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
+If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one at the [Azure account](https://azure.microsoft.com/free/) site. You need to have permissions to create new resources and register resource providers in the subscription&mdash;or have the ability to work with another user who has these permissions. Most users have these permissions if they're owners or contributors for the subscription. For more information, contact your Azure administrator or see [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
    
 ### Second, link an Azure subscription to an environment 
 
@@ -50,26 +50,27 @@ Follow these steps to create a billing plan, link environments to it, and add Az
 
 2. Provide a name for your new billing plan.
 
-3. Choose the Azure subscription you'd like to bill from the drop-down list, which will show all the Azure subscriptions in your tenant which you have sufficient permissions for. If you don't see a subscription you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined  [First, procure or create an Azure subscription you can use](#first-procure-or-create-an-azure-subscription-you-can-use).
+3. Choose the Azure subscription you'd like to bill from the drop-down list, which will show all the Azure subscriptions in your tenant for which you have sufficient permissions. If you don't see a subscription that you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined. Learn more at [First, procure or create an Azure subscription you can use](#first-procure-or-create-an-azure-subscription-you-can-use).
 
-4. Specify a resource group with that subscription. The Power Platform account resource that will be associated with this billing plan will be created in this resource group. If there are no resource groups in the specified subscription, you'll need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
+4. Specify a resource group with that subscription. The Power Platform account resource&mdash;that will be associated with this billing plan&mdash;will be created in this resource group. If there are no resource groups in the specified subscription, you'll need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 
-5.	Select power platform product for which the corresponding meters will be enabled against the billing plan .
+5.	Select the Power Platform product for which the corresponding meters will be applied against the billing plan.
 
-6.	In the Next screen, select the list of environments from the list of available regions. Note that any environment you add to the billing  in the following step can only be in this region.
+6.	In the next screen, select the list of environments from the list of available regions. Note that any environment you add to the billing plan in the following step can only be in this region.
    
 
-##### List Of Billing Plans
+##### List Of billing plans
 
 
-#### View the billing plans's Power Platform account resource in the Azure Portal.
+#### View the billing plans's Power Platform account resource in the Azure portal
 
-   When a billing plan is created, a corresponding Power Platform account resource is created in the Azure subscription that's specified by the billing plan. All Azure meters for Power Platform products will be billed to this resource. To view this resource, navigate to the [Azure portal](https://portal.azure.com), and select the subscription and resource group you specified when you created the billing plan. Select **View hidden types** above the resource list. You'll see a Power Platform account resource with the same name as the billing plan you created.
+When a billing plan is created, a corresponding Power Platform account resource is created in the Azure subscription that's specified by the billing plan. All Azure meters for Power Platform products will be billed to this resource. To view this resource, navigate to the [Azure portal](https://portal.azure.com), and select the subscription and resource group you specified when you created the billing plan. Select **View hidden types** above the resource list. You'll see a Power Platform account resource with the same name as the billing plan you created.
 
-   You can optionally tag this resource just like you would any other Azure resource.
+You can optionally tag this resource just like you would any other Azure resource.
 
-   In the Azure portal
-   :::image type="content" source="media/pay-as-you-go-view-billing-policy-in-azure.png" alt-text="Billing policies in Azure Portal":::
+In the Azure portal:
+
+:::image type="content" source="media/pay-as-you-go-view-billing-policy-in-azure.png" alt-text="Billing policies in Azure Portal":::
 
 #### In Power Apps 
 
