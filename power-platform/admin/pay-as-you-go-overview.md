@@ -4,7 +4,7 @@ description: The pay-as-you-go plan is a new way to pay for Power Apps using an 
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/14/2024
+ms.date: 11/22/2024
 ms.subservice: admin
 ms.author: ampatra
 ms.reviewer: sericks 
@@ -23,7 +23,7 @@ Pay-as-you-go allows you to share apps and Power Automate flows with any user in
 
 This plan reduces the overhead of license procurement and lets you manage and split costs across business units by leveraging the cost management reporting capabilities of Azure subscriptions. Pricing information for this plan is available [here.](https://go.microsoft.com/fwlink/?linkid=2169167)
 
-Starting December-01-2024 , Pay-As-You Go is also supported for Copilot studio message. This will allow customers flexibility to only pay for the message capacity they consume at the end of their monthly billing period after use. This new pay-as-you-go meter requires no upfront license commitment, allowing customers to scale usage and ensure business continuity for mission critical business processes
+Starting December 1, 2024, pay-as-you go is supported for Copilot Studio messages. This allows customers flexibility to only pay for the message capacity they consume at the end of their monthly billing period after use. This new pay-as-you-go meter requires no upfront license commitment, allowing customers to scale usage and ensure business continuity for mission critical business processes.
 
 > [!TIP]
 > Check out how T-Mobile is innovating with Power Apps and pay-as-you-go: [T-Mobile adopts Microsoft Power Platform for fast and powerful low-code development](https://customers.microsoft.com/story/1435340411391867976-t-mobile-telecommunications-power-platform).
