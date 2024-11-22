@@ -21,9 +21,9 @@ ms.custom: ignite-2024
 
 # What is Microsoft Power Platform integration with SAP?
 
-[Microsoft Power Platform](/power-platform/) integration with SAP unlocks the full potential of your SAP data. With Power Platform and SAP connectors, SAP ERP and SAP OData, you can access and operate on SAP data securely, enabling you to create custom copilots, applications, and automation workflows that drive innovation and efficiency across your organization.
+[Microsoft Power Platform](/power-platform/) integration with SAP unlocks the full potential of your SAP data. Our Power Platform and SAP connectors, [SAP ERP](/connectors/saperp) and [SAP OData](/odata/overview), allow you to access and operate on your SAP data securely.
 
-Discover how to streamline your SAP business processes with Power Platform. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, our connectors, copilots, apps, and flows provide the tools you need to succeed. Transform how you view and work with your SAP data and experience the benefits of a truly integrated digital ecosystem.
+Discover how to enhance your SAP business processes with Power Platform. You can transform how you view and work with your SAP data by designing and building your own custom [applications](/power-apps/powerapps-overview), [cloud flows](/power-automate/overview-cloud), and [agents](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) that work with your SAP data.  Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business—Power Platform provides the tools you need to integrate and automate your digital ecosystem.
 
 :::image type="content" source="media/power-platform-and-SAP-integration/flex-design.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
@@ -36,7 +36,7 @@ The ERP connector communicates with SAP over the RFC protocol through the SAP .N
 The OData connector, jointly developed by Microsoft and SAP, is supported across many SAP products and uses the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html). You can find more information about SAP Products supporting OData in [The importance and value of OData in the SAP ecosystem - SAP Community](https://community.sap.com/t5/technology-blogs-by-sap/the-importance-and-value-of-odata-in-the-sap-ecosystem/ba-p/13492946)
 
 > [!NOTE]
->There may be issues that are encountered where, as an SAP customer, a support ticket with SAP will need to be submitted for additional support from SAP.
+>There may be issues where a support ticket with SAP will need to be submitted for additional support from SAP.
 
 ## Licensure
 
