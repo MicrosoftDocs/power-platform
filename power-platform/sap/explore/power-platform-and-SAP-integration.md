@@ -19,7 +19,7 @@ ms.custom: ignite-2024
 # Customer intent: As a business decision maker or as an administrator, I want to learn about Power Platform integration with SAP so I can discover how to integrate and streamline my organization's SAP data and workflows with other system data in Power Platform to give my organization's users a better work experience that leads to saved time, fewer mistakes, and improved data quality and insights.
 ---
 
-# What is Power Platform integration with SAP?
+# What is Microsoft Power Platform integration with SAP?
 
 Unlock the full potential of your SAP data with [Microsoft Power Platform](/power-platform/). Integrate SAP ERP and SAP OData services into your Copilot Studio, Power Apps, and Power Automate solutions to drive innovation and efficiency across your organization. With Power Platform connectors, you can access and operate on SAP data, enabling you to create custom copilots, applications, and automation workflows.
 
