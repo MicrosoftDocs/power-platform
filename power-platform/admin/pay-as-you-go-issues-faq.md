@@ -4,7 +4,7 @@ description: This article addresses known issues about pay-as-you-go plans and p
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/12/2022
+ms.date: 11/22/2024
 ms.subservice: admin
 ms.author: kaagar 
 ms.reviewer: sericks
@@ -84,7 +84,7 @@ In the context of Power Platform Request entitlement limits, any high usage thro
 > This does not supersede [Service Protection Limit](/powerapps/developer/data-platform/api-limits) browser errors that are separate from high usage throttling.  If service protection limits are exceeded, the user could still experience issues on client applications described on the service protection limits page.
 
 ### Can I stop using pay-as-you-go billing at any time?
-Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription. For more information, go to [Turning off pay-as-you-go](pay-as-you-go-set-up.md#turning-off-pay-as-you-go).
+Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so will stop any further charges on the Azure subscription. For more information, go to [Turn off pay-as-you-go](pay-as-you-go-set-up.md#turn-off-pay-as-you-go).
 
 ### What admin guardrails are available to prevent accidental costs?
 You can leverage Azure Cost Management and alerting capabilities to manage spending within your organization. Go to [How to manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) for more details.
