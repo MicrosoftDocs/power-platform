@@ -16,6 +16,7 @@ ms.date: 11/14/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
+# Customer intent: As an administrator, I want to learn how to connect Power Platform to SAP, so I can build, extend, and deploy Power Platform solutions on top of SAP to integrate data, automate workflows, improve user experiences, and keep the core of my SAP system clean.
 ---
 
 # Connect Power Platform and SAP
