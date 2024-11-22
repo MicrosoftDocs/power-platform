@@ -1,6 +1,6 @@
 ---
-title: "Set up a pay-as-you-go plan | MicrosoftDocs"
-description: Follow these steps to set up pay-as-you-go billing with an Azure subscription You can do so in the Power Platform admin center or within Power Apps.
+title: Set up a pay-as-you-go plan 
+description: Follow these steps to set up pay-as-you-go plans with an Azure subscription. You can do so in the Power Platform admin center or within Power Apps.
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
@@ -30,11 +30,11 @@ The following table describes the permissions of who can create a [billing polic
 
 ## Get started
 
-### First, procure or create an Azure subscription you can use 
+### Procure or create an Azure subscription you can use 
 
 If you don't already have an Azure subscription in your tenant, work through the standard process in your organization to obtain one or create a new one at the [Azure account](https://azure.microsoft.com/free/) site. You need to have permissions to create new resources and register resource providers in the subscription&mdash;or have the ability to work with another user who has these permissions. Most users have these permissions if they're owners or contributors for the subscription. For more information, contact your Azure administrator or see [Azure subscriptions](https://go.microsoft.com/fwlink/?linkid=2174703).
    
-### Second, link an Azure subscription to an environment 
+### Link an Azure subscription to an environment 
 
 Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **production** and **sandbox** environments.
 
@@ -58,11 +58,9 @@ Follow these steps to create a billing plan, link environments to it, and add Az
 
 6.	In the next screen, select the list of environments from the list of available regions. Note that any environment you add to the billing plan in the following step can only be in this region.
    
+## List Of billing plans
 
-##### List Of billing plans
-
-
-#### View the billing plans's Power Platform account resource in the Azure portal
+### View the billing plans's Power Platform account resource in the Azure portal
 
 When a billing plan is created, a corresponding Power Platform account resource is created in the Azure subscription that's specified by the billing plan. All Azure meters for Power Platform products will be billed to this resource. To view this resource, navigate to the [Azure portal](https://portal.azure.com), and select the subscription and resource group you specified when you created the billing plan. Select **View hidden types** above the resource list. You'll see a Power Platform account resource with the same name as the billing plan you created.
 
@@ -72,7 +70,7 @@ In the Azure portal:
 
 :::image type="content" source="media/pay-as-you-go-view-billing-policy-in-azure.png" alt-text="Billing policies in Azure Portal":::
 
-#### In Power Apps 
+### In Power Apps 
 
 You can set up pay-as-you-go for your environment right from your app's setting for both canvas and model-driven apps, without needing to go to the admin center. Once set up, you can easily add new environments to the same Azure subscription in the Power Platform admin center.
 
@@ -118,7 +116,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
    :::image type="content" source="media/pay-as-you-go-powerapps-per-app-license.png" alt-text="Enable Per-app-licenses":::
 
-## Turning off pay-as-you-go 
+## Turn off pay-as-you-go 
 
 You can turn off pay-as-you-go for an environment at any time by doing either of the following:
 
