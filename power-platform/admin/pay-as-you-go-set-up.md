@@ -23,7 +23,7 @@ The following table describes the permissions of who can create a [billing polic
 
 | **Role**  | **Create a billing policy?** | **Edit a billing policy?**   | **Link environments to a billing policy?**   |
 |--------|----------|-------|-----|
-| Environment admin    | Yes  | Yes, for billing policies the admin created | Yes, for billing policies the admin created and for environments in which they are admins |
+| Environment admin    | Yes  | Yes, for billing policies the admin created | Yes, for billing policies the admin created and for environments in which they're admins |
 | Power Platform admin | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant  |
 | Global admin         | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant   |
 | Dynamics Admin           | Yes  | Yes, for all billing policies in the tenant | Yes, for all environments in the tenant    |
@@ -44,25 +44,25 @@ Follow these steps to create a billing plan, link environments to it, and add Az
 
 1. Navigate to https://admin.powerplatform.microsoft.com/licensing/billingplans.
 
-   This page will show you a list of previously created billing plans and allow you to create a new one. Select **New billing plan**.
+   This page shows you a list of previously created billing plans and allow you to create a new one. Select **New billing plan**.
 
    :::image type="content" source="media/pay-as-you-go-select-billing-policy.png" alt-text="Select New billing policy":::
 
 2. Provide a name for your new billing plan.
 
-3. Choose the Azure subscription you'd like to bill from the drop-down list, which will show all the Azure subscriptions in your tenant for which you have sufficient permissions. If you don't see a subscription that you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined. Learn more at [First, procure or create an Azure subscription you can use](#first-procure-or-create-an-azure-subscription-you-can-use).
+3. Choose the Azure subscription you'd like to bill from the drop-down list, which shows all the Azure subscriptions in your tenant for which you have sufficient permissions. If you don't see a subscription that you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined. Learn more at [First, procure or create an Azure subscription you can use](#first-procure-or-create-an-azure-subscription-you-can-use).
 
-4. Specify a resource group with that subscription. The Power Platform account resource&mdash;that will be associated with this billing plan&mdash;will be created in this resource group. If there are no resource groups in the specified subscription, you'll need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
+4. Specify a resource group with that subscription. The Power Platform account resource&mdash;that's associated with this billing plan&mdash;is created in this resource group. If there are no resource groups in the specified subscription, you need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 
-5.	Select the Power Platform product for which the corresponding meters will be applied against the billing plan.
+5.	Select the Power Platform product for which the corresponding meters are applied to in the billing plan.
 
-6.	In the next screen, select the list of environments from the list of available regions. Note that any environment you add to the billing plan in the following step can only be in this region.
+6.	In the next screen, select the list of environments from the list of available regions. Any environment you add to the billing plan in the following step can only be in this region.
    
 ## List Of billing plans
 
-### View the billing plans's Power Platform account resource in the Azure portal
+### View the billing plan's Power Platform account resource in the Azure portal
 
-When a billing plan is created, a corresponding Power Platform account resource is created in the Azure subscription that's specified by the billing plan. All Azure meters for Power Platform products will be billed to this resource. To view this resource, navigate to the [Azure portal](https://portal.azure.com), and select the subscription and resource group you specified when you created the billing plan. Select **View hidden types** above the resource list. You'll see a Power Platform account resource with the same name as the billing plan you created.
+When a billing plan is created, a corresponding Power Platform account resource is created in the Azure subscription that's specified by the billing plan. All Azure meters for Power Platform products are billed to this resource. To view this resource, navigate to the [Azure portal](https://portal.azure.com), and select the subscription and resource group you specified when you created the billing plan. Select **View hidden types** above the resource list. You see a Power Platform account resource with the same name as the billing plan you created.
 
 You can optionally tag this resource just like you would any other Azure resource.
 
@@ -78,14 +78,14 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
    :::image type="content" source="media/pay-as-you-go-powerapps-settings.png" alt-text="Sign in to Power Apps and select Apps > Settings":::
 
-   If pay-as-you-go is already enabled for an environment via the Power Platform admin center, you'll see the following experience. You can opt your app out of using an Azure subscription by turning the toggle off in the app settings. Once turned off, users will need Power Apps user licenses to access the app. You can turn it back on at any time. You can also view and edit the subscription details by selecting **Edit pay-as-you-go billing**, which will direct you to the Power Platform admin center.
+   If pay-as-you-go is already turned on for an environment through the Power Platform admin center, you see the following experience. You can opt your app out of using an Azure subscription by turning off the toggle in the app settings. Once off, users need Power Apps user licenses to access the app. You can turn it back on at any time. You can also view and edit the subscription details by selecting **Edit pay-as-you-go billing**, which directs you to the Power Platform admin center.
 
    > [!NOTE]
-   > If app passes are already available for this environment, they are ignored and not consumed. Instead, Azure subscription is used for accessing the apps.
+   > If app passes are already available for this environment, they're ignored and not consumed. Instead, Azure subscription is used for accessing the apps.
 
    :::image type="content" source="media/pay-as-you-go-powerapps-edit.png" alt-text="Select Edit pay-as-you-go billing":::
 
-   If pay-as-you-go is not enabled for an environment and you have the right permissions (shared under the **Billing plan** section), you'll see the following experience and can easily set up pay-as-you-go using the steps below.
+   If pay-as-you-go isn't turned on for an environment and you have the right permissions (shared under the **Billing plan** section), you see the following experience and can easily set up pay-as-you-go using the steps below.
 
 2. Select **Set up pay-as-you-go** to connect your Azure subscription to this environment.
 
@@ -96,9 +96,9 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
 3. Enter a billing plan name and your Azure subscription details. Once entered, select **Connect subscription** to complete the setup.
    
-      1. Choose the Azure subscription you'd like to bill from the drop-down list, which will show all the Azure subscriptions in your tenant which you have sufficient permissions for. If you don't see a subscription you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined in [First, procure or create an Azure subscription you can use](#first-procure-or-create-an-azure-subscription-you-can-use).
+      1. Choose the Azure subscription you'd like to bill from the drop-down list, which shows all the Azure subscriptions in your tenant which you have sufficient permissions for. If you don't see a subscription you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined in [First, procure or create an Azure subscription you can use](#first-procure-or-create-an-azure-subscription-you-can-use).
 
-   2. Specify a resource group with that subscription. The Power Platform account resource that will be associated with this billing policy will be created in this resource group. If there are no resource groups in the specified subscription, you'll need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
+   2. Specify a resource group with that subscription. The Power Platform account resource&mdash;that's associated with this billing policy&mdash;is created in this resource group. If there are no resource groups in the specified subscription, you need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
 
    3. If you don't have an Azure subscription, procure one within your organization or create a new one.
 
@@ -112,7 +112,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
    :::image type="content" source="media/pay-as-you-go-powerapps-app-settings.png" alt-text="App settings page after Azure subscription is linked":::
 
-   If you have app passes available for your environment and still want to set up pay-as-you-go, you can use Steps 2–4 to set it up. Once pay-as-you-go is set up, app passes are not consumed.
+   If you have app passes available for your environment and still want to set up pay-as-you-go, you can use Steps 2–4 to set it up. Once pay-as-you-go is set up, app passes aren't consumed.
 
    :::image type="content" source="media/pay-as-you-go-powerapps-per-app-license.png" alt-text="Enable Per-app-licenses":::
 
@@ -126,10 +126,10 @@ You can turn off pay-as-you-go for an environment at any time by doing either of
 
 2. Delete the environment's billing policy.
 
-   As soon as you take either action above, the environment will cease to be pay-as-you-go and will go back to functioning as a regular environment. Any usage that was already incurred up to this point will be billed to your Azure subscription, but no further usage will be charged.
+   As soon as you take either action above, the environment ceases to be pay-as-you-go and goes back to functioning as a regular environment. Any usage that was already incurred up to this point is billed to your Azure subscription, but no further usage is charged.
 
    > [!NOTE]
-   > Deleting the billing policy in the Power Platform admin center will not automatically delete its corresponding Power Platform account resource. You can delete this resource in the Azure portal.
+   > Deleting the billing policy in the Power Platform admin center doesn't automatically delete its corresponding Power Platform account resource. You can delete this resource in the Azure portal.
 
 ## Next step
 
