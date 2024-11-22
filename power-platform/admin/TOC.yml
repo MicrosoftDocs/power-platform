@@ -673,7 +673,7 @@
                 - name: Virtual Network support overview
                   href: vnet-support-overview.md                
                 - name: Virtual Network support white paper
-                  href: virtual-network-executive-summary.md   
+                  href: virtual-network-support-whitepaper.md   
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
             - name: Security FAQs
