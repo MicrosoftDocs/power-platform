@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 11/18/2024
 ms.subservice: admin
 ms.author: cvassallo
 ms.reviewer: angieandrews
@@ -53,15 +53,19 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 
 ## AI form fill assistance
 
+> [!NOTE]
+> Users may need to clear the cache and refresh the browser twice for the setting change to take effect.
+
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. More information: [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance)  | Users as the feature becomes available |
+|Enable this feature for:  | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance).  | Users as the feature becomes available |
+|Enable smart paste (preview)  | Smart paste (preview) is a capability that uses the text copied to your clipboard to suggest text that could be used to fill specific fields, and provides suggestions inline in the form. Learn more in [Copilot assistance for form fill in model-driven apps](/power-apps/user/form-filling-assistance). | Users as the feature becomes available <br><br> **Note:** If the **Users as the feature becomes available (default)** option is selected, the feature is turned on for users in Dynamics 365 model-driven apps, and the feature is kept off for users in Power Apps model-driven apps.|
 
 ## AI suggestions for formula columns
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| AI suggestions for formula columns  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. More information: [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1)  | Off |
+| Allow users to get AI suggestions when creating formula columns.  | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1).  | Off |
 
 ## Natural language grid and view search (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -249,7 +253,7 @@ Allow canvas editors to insert the Copilot answer component, which allows users 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
  |Allow creation of Power BI components  |  If **Off**, the environment doesn't have access to Power BI. Environments with a Dataverse database have this setting. Creating a Power BI component generates a dedicated Power BI workspace for that environment. All the Power BI artifacts corresponding to the Power BI components created in an environment are generated in that dedicated Power BI environment workspace. More information: [Permission sync between Power Apps environment and Power BI workspace](/power-apps/maker/model-driven-apps/customize-manage-powerbi-components#permission-sync-between-power-apps-environment-and-power-bi-workspace) |On |
-|Automatically assign permission to Power BI workspaces | If **On**, synchronization takes place between predefined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles are assigned with permissions:<br/><br/>System administrator:Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer:Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
+|Automatically assign permission to Power BI workspaces | If **On**, synchronization takes place between predefined role privileges and the permissions of the dedicated Power BI environment workspace. The following roles are assigned with permissions:<br/><br/>System administrator: Power BI workspace admin > Power BI workspace admin permission.<br/><br/> System Customizer: Power BI workspace contributor > Power BI workspace contributor permission.<br/><br/> Power BI workspace viewer > Power BI workspace viewer permission.<br/><br/> [Learn more about Power BI workspace permission](/power-bi/collaborate-share/service-roles-new-workspaces#workspace-roles). | On|
  |Allow information sharing between this environment and Power BI workspaces in other geographic regions | When this setting is **On** and the Power BI tenant setting **[Power Platform interregional access](/power-bi/admin/service-admin-portal-integration#power-platform-interregional-access)** is also **On**, cross-geo operations can take place. For more information, see [Cross-geo operations](/power-bi/collaborate-share/service-power-bi-powerapps-integration-considerations#cross-geo-operations). |On|
 
 ## Recycle Bin (preview)
