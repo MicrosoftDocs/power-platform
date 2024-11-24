@@ -58,8 +58,8 @@ This example demonstrates how a file can be uploaded that is to be analyzed.
 ```http
 POST [Geographical URI]/api/upload
 Accept: application/json
-x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
-x-ms-tenant-id: F2E60E49-CB87-4C24-8D4F-908813B22506
+x-ms-correlation-id: aaaa0000-bb11-2222-33cc-444444dddddd
+x-ms-tenant-id: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Content-Type: multipart/form-data
 Content-Disposition: form-data; name=mySolution.zip; filename=mySolution.zip
 ```

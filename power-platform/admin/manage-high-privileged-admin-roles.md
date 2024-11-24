@@ -100,7 +100,7 @@ $environmentId = "<your environment id>"
 Import-Module MSAL.PS
 
 # Authenticate
-$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default' 
+$AuthResult = Get-MsalToken -ClientId '00001111-aaaa-2222-bbbb-3333cccc4444' -Scope 'https://api.powerplatform.com/.default' 
 
 
 $Headers = @{
@@ -155,7 +155,7 @@ Upon success, you see an output similar to the following output. Look for `"Code
   "information": [
     {
       "Subject": "Result",
-      "Description": "[\"SyncMode: Default\",\"Instance df12c345-7b56-ee10-8bc5-6045bd005555 exists\",\"Instance df85c664-7b78-ee11-8bc5-6045bd005555 in enabled state\",\"Instance Url found https://orgc1234567.crm.dynamics.com\",\"User found in AD tenant\",\"User in enabled state in AD tenant\",\"SystemUser with Id:11fa11ab-4f75-ee11-9999-6045bd12345a, objectId:d111c55c-aab2-8888-86d4-ece1234f11e6 exists in instance\"]",
+      "Description": "[\"SyncMode: Default\",\"Instance df12c345-7b56-ee10-8bc5-6045bd005555 exists\",\"Instance df85c664-7b78-ee11-8bc5-6045bd005555 in enabled state\",\"Instance Url found https://orgc1234567.crm.dynamics.com\",\"User found in AD tenant\",\"User in enabled state in AD tenant\",\"SystemUser with Id:11fa11ab-4f75-ee11-9999-6045bd12345a, objectId:aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb exists in instance\"]",
       "Code": "UserExists"
     },
     { ... }
