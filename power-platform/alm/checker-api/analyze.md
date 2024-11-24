@@ -80,8 +80,8 @@ This is an example of initiating an analysis job with the _AppSource Certificati
 POST [Geographical URI]/api/analyze?api-version=1.0
 Accept: application/json
 Content-Type: application/json; charset=utf-8
-x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
-x-ms-tenant-id: F2E60E49-CB87-4C24-8D4F-908813B22506
+x-ms-correlation-id: aaaa0000-bb11-2222-33cc-444444dddddd
+x-ms-tenant-id: aaaabbbb-0000-cccc-1111-dddd2222eeee
 
 {
     "ruleSets": [{
@@ -97,7 +97,7 @@ x-ms-tenant-id: F2E60E49-CB87-4C24-8D4F-908813B22506
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json; charset=utf-8
-Location: [Geographical URI]/api/status/9E378E56-6F35-41E9-BF8B-C0CC88E2B832&api-version=1.0
+Location: [Geographical URI]/api/status/aaaa0000-bb11-2222-33cc-444444dddddd&api-version=1.0
 ```
 
 ### See also
