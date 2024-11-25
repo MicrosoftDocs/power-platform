@@ -2,7 +2,7 @@
 title: Manage Copilot Studio messages and capacity 
 description: Learn how to manage Copilot Studio messages and capacity.
 author: amiyapatr-zz
-ms.date: 11/22/2024
+ms.date: 11/25/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -39,22 +39,22 @@ Displays the daily trend of capacity consumption over the past three months.
 ## Message usage by environment
 Highlights the top environments based on Copilot Studio message usage.
 
-# Environment usage page
+## Environment usage page
 This page provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the pre-paid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
 ## Environment page
 You can choose a specific environment to view the Copilot Studio capacity consumed within that environment.
 
-## Capacity consumption by product
+### Capacity consumption by product
 This tile provides a product-focused summary of Copilot message units consumed, showing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
 
-## Message consumption by resource:
+### Message consumption by resource
 The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus non-billable messages.
 
-## Managing capacity:
+### Managing capacity
 Capacity allocation can be managed in the Power Platform admin center. To allocate, go to **Billing > Licenses > Copilot Studio** and either select **Manage Capacity** from the **Pre-paid capacity** card or use **Manage Messages** or **Sessions** from the top navigation bar. In the allocation panel, select an environment and specify the number of messages to allocate in the **Messages** textbox.
 
-## Overage management:
+### Overage management
 When consumption exceeds the pre-allocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
 
 ## Frequently asked questions
