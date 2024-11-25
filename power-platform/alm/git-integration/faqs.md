@@ -81,12 +81,9 @@ Power Platform APIs are currently for internal use only.
 
 Support for direct modifications to solution customizations isn't changing with this feature. Our recommendation is to continue the practice of making your changes directly in the environment, then committing those changes to source control. Changes to localized labels are permitted directly in source. Code-first components that are supported using our developer tools are also supported, and include plug-ins, PCF controls, and web resources.
 
-## How can I work with Power Pages source files as they are not organized as effectively as previously when I use PAC CLI to unpack solutions?
+## What can I do when I get the error "Activity failing with unmonitored exception: Microsoft.Crm.CrmException: The maximum request size of 26214400 bytes was exceeded."?
 
-Support for a more efficient organization of Power Pages source files is currently under development and will come with a future update.
-
-## What can I do when I get an error that states "Activity failing with unmonitored exception: Microsoft.Crm.CrmException: The maximum request size of 26214400 bytes was exceeded."?
-There are limits in the Azure DevOps APIs that we are exceeding.  This is usually because you have imported a large unmanaged solution and the total number of commits has exceeded that limit.  It is recommended that you remove solution components from the solution until you can get a successful commit, then add back those removed components, making commits along the way until you are successful.  Pay attention to components that have large solution files, including media files like web resources or canvas applications with embedded media as those might need to be added one at a time if they are approaching that limit.  Once you think you have all of your solution components back in your solution and the commits have been successful, you may consider re-importing the unmanaged solution again to ensure you did not miss adding back any components.
+There are limits in the Azure DevOps APIs that are exceeded. Exceeding the limits usually occurs because you have imported a large unmanaged solution and the total number of commits have exceeded that limit. We recommend that you remove solution components from the solution until you can get a successful commit, then add back those removed components, making commits along the way until you are successful. Pay attention to components that have large solution files, including media files like web resources or canvas applications with embedded media as those might need to be added one at a time if they approach that limit. Once you have all of your solution components back in your solution and the commits have been successful, you might consider re-importing the unmanaged solution again to ensure you didn't miss adding back any components.
 
 ### Related content
 
