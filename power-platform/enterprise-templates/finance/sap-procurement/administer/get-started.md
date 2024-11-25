@@ -23,7 +23,7 @@ ms.subservice: solution-templates
 
 # Get started with the SAP Procurement template
 
-Enterprise templates for Power Platform published by Microsoft on AppSource are solutions designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide.
+Enterprise templates for Power Platform published by Microsoft on AppSource are solutions designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide. 
 
 The SAP Procurement solutions are enterprise-ready and therefore need to be customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) to [maintain governance and security](/power-platform/guidance/adoption/admin-best-practices).
 
