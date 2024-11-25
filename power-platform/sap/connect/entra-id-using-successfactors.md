@@ -32,7 +32,7 @@ This guide walks you through setting up the **Microsoft Entra ID using SuccessFa
 
 ## Prerequisites
 
-- [Set up SAP ERP Connector](sap-erp-connector.md).
+- [Set up SAP OData Connector](sap-odata-connector.md).
 - Admin access to SAP SuccessFactors.
 - Admin access within the [Azure Portal](https://aka.ms/azure).
 
