@@ -76,7 +76,7 @@ Administrators can export all of the environments that have been created by a us
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "7557f390-5f70-4c93-8bc4-8c2faabd2ca0"
+$userId = "00aa00aa-bb11-cc22-dd33-44ee44ee44ee"
 Get-AdminPowerAppEnvironment -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
@@ -103,7 +103,7 @@ Administrators can export all environment role assignments for a user across all
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppEnvironmentRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -164,7 +164,7 @@ Administrators can export all app role assignments for a user across all apps in
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppRoleAssignment -UserId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -184,7 +184,7 @@ Administrators can export all connections created by the user using the  **Get-A
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnection -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
@@ -203,7 +203,7 @@ Administrators can export all connection role assignments for a user using the  
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -223,7 +223,7 @@ Administrators can export all custom connectors created by a user using the  **G
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
 
@@ -242,7 +242,7 @@ Administrators can export all custom connector role assignments for a user using
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "UserDetails.json"
 ```
  
@@ -264,7 +264,7 @@ Administrators can export the Power Apps notifications, user settings, and user-
 
 ```powershell
 Add-PowerAppsAccount
-$userId = "0ecb1fcc-6782-4e46-a4c4-738c1d3accea"
+$userId = "11bb11bb-cc22-dd33-ee44-55ff55ff55ff"
 Get-AdminPowerAppsUserDetails -OutputFilePath "UserDetails.json" -UserPrincipalName name@microsoft.com
 ```
 

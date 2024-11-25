@@ -1,6 +1,6 @@
 ---
 title: Set up Microsoft Entra ID with Kerberos for SSO
-description: Learn how to set up the SAP ERP connector so that users can access your SAP data in Microsoft Power Platform using single sign-on with Microsoft Entra ID and Kerberos.
+description: Set up the SAP ERP connector so users can access your SAP data in Microsoft Power Platform using single sign-on with Microsoft Entra ID and Kerberos.
 author: scottwoodallmsft
 ms.author: scottwoodall
 ms.reviewer: ellenwehrle
@@ -9,6 +9,7 @@ ms.subservice: sap
 ms.custom: ignite-2024
 ms.topic: how-to
 ms.date: 11/11/2024
+# Customer intent: As an administrator, I want to learn how to set up the SAP ERP connector using single sign-on with Microsoft Entra ID and Kerberos so users can access SAP data with their Microsoft Entra ID credentials.
 ---
 
 # Set up Microsoft Entra ID with Kerberos for SSO
@@ -17,9 +18,7 @@ You can set up the Power Platform SAP ERP connector to use Microsoft Entra ID cr
 
 Learn more about [Kerberos constrained delegation](/windows-server/security/kerberos/kerberos-constrained-delegation-overview).
 
-These instructions assume that you're starting from scratch. Most customers have already completed some of the steps. Determining which steps you need to complete for your scenario is beyond the scope of this article.
-
-For example, you can skip the [Create an SAP service account in Active Directory Domain Services](#create-an-sap-service-account-in-ad-ds) section if your SAP system is already configured for Kerberos-based SSO.
+These instructions assume that you're starting from scratch. Most customers have already completed some of the steps. Determining which steps you need to complete for your scenario is beyond the scope of this article. For example, you can skip the [Create an SAP service account in Active Directory Domain Services](#create-an-sap-service-account-in-ad-ds) section if your SAP system is already configured for Kerberos-based SSO.
 
 ## Prerequisites
 
