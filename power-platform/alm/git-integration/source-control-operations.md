@@ -22,7 +22,7 @@ When you make changes to solution components in Dataverse, you can view the chan
 >
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
-> - This feature is currently only available to environments that have been created for early release cycles in Australia, Canada, and Europe. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
+> - This feature is currently only available to environments that have been created for early release cycles. Go to [Early release cycle environments](/power-platform/admin/early-release#create-early-release-cycle-environments).
 
 ## View changes in the solutions area
 
