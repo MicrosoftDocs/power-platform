@@ -4,7 +4,7 @@ description: Use the Help + support experience to contact a Microsoft support re
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/12/2024
+ms.date: 11/25/2024
 ms.subservice: admin
 ms.author: sericks 
 search.audienceType: 
@@ -109,6 +109,9 @@ Once you submit your request it will appear in the list of support requests.
 > ![List of support requests.](media/support-ticket-list.png "List of support requests")
 
 You can check the status and edit your request on this page.
+
+> [!NOTE]
+> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft. Learn more: [Use live chat with persistence for support issues](use-live-chat-persistence.md)
 
 ## Advisory services and premium support plan
 
