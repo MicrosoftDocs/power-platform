@@ -24,7 +24,7 @@ This feature improves the support experience by allowing customers to continue t
 
 Live chat with persistence builds on Microsoft's existing live chat offering, enabling users to return to their previous chat sessions. If you created a [support request through Power Platform admin center](get-help-support.md#view-solutions-or-create-a-support-request), you can revisit the chat at any time to add more information or check for updates.
 
-### Key Benefits
+### Key benefits
 
 **Continued Conversations**: You don't need to wait for an engineer to join the conversation or start a new email thread when you need to add information to your support issue. You can pick up where you left off with our new persistent chat feature.
 
@@ -32,11 +32,11 @@ Live chat with persistence builds on Microsoft's existing live chat offering, en
 
 **Ease of Access**: To go back to your chat, select your issue from the portal and choose **Open Chat** to resume your conversation.
 
-## How to Use Live Chat with Persistence
+## How to use live chat with persistence
 
 Follow this step-by-step guide to help you get started.
 
-### Create a Support Issue and Start Live Chat
+### Create a support issue and start live chat
 
 1. Navigate to the Power Platform admin center and create a support issue.
 1. Provide all relevant details to ensure our support team can assist you effectively.
@@ -46,7 +46,7 @@ Follow this step-by-step guide to help you get started.
 
    :::image type="content" source="media/live-chat-support/start-live-chat.png" alt-text="Screenshot that shows the Live Chat toggle to start a live chat immediately after submitting a ticket.":::
 
-### Return to Your chat
+### Return to your chat
 
 If you need to add more information or check the status of your issue, open your issue in the Power Platform admin center.
 
