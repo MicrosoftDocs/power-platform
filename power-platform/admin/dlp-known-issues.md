@@ -4,8 +4,8 @@ description: Learn more about the known limitations when using our suite of data
 ms.topic: conceptual
 ms.date: 11/04/2024
 ms.subservice: admin
-author: mikferland-msft
-ms.author: miferlan
+author: laneswenka
+ms.author: laswenka
 ms.reviewer: sericks
 contributors:
   - mikferland-msft
