@@ -1,7 +1,7 @@
 ---
 title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
 description: "Information on support for Microsoft Power Platform and Dynamics 365 apps including languages in which Microsoft provides support for Power Platform and Dynamics 365, support hours, what support is included with a support plan, how to contact support."
-ms.date: 09/12/2023
+ms.date: 25/11/2024
 ms.reviewer: "sericks"
 ms.topic: overview
 ms.custom: "admin-security"
@@ -136,10 +136,13 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Service  |Support portal  |
 |---------|---------|
 |Customer engagement apps and AI apps including mixed reality apps and Insights apps   |[Power Platform admin center](https://admin.powerplatform.microsoft.com)         |
-|finance and operations apps (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
+|Finance and operations apps (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
 |Dynamics   |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
+
+> [!NOTE]
+> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request using the Power Platform admin center. More information: [Use live chat with persistence for support issues](use-live-chat-persistence.md)
 
 ### Why is submitting a request online the preferred method of contacting Support?
 
