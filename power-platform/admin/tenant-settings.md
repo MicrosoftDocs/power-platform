@@ -1,9 +1,9 @@
 ---
-title: "Tenant settings"
-description: "Review and configure tenant-level settings linked from this page." 
+title: Tenant settings
+description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 04/18/2024
+ms.date: 11/20/2024
 ms.author: ampatra
 ms.reviewer: sericks
 contributors:

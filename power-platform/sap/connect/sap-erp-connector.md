@@ -19,6 +19,7 @@ ms.date: 08/15/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
+# Customer intent: As an administrator, I want to learn about the SAP ERP connector, so I can determine which connection method I want to use to connect Power Platform and SAP.
 ---
 
 # Get started with the SAP ERP connector
@@ -30,7 +31,10 @@ The [SAP ERP connector](/connectors/saperp) for Power Platform helps you seamles
 
 ## Prerequisites
 
-Be sure you have the necessary [administration](/power-platform/admin/admin-documentation) privileges and meet the requirements defined in the [SAP ERP connector documentation](/connectors/saperp/#pre-requisites).
+It's important that you review the following to ensure you can move forward with the steps to connect Power Platform and SAP with the SAP ERP connector:
+
+- [Administration](/power-platform/admin/admin-documentation) privileges
+- [SAP ERP connector ](/connectors/saperp/#pre-requisites) requirements.
 
 ## Set up your on-premises data gateway
 
