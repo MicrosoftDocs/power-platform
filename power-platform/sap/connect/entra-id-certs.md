@@ -1,6 +1,6 @@
 ---
 title: Set up Microsoft Entra ID with certificates for SSO
-description: This guide walks you through setting up the connector so your users can access SAP data and run RFC in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
+description: Set up the SAP ERP connector so your users can access SAP data and run RFC in Microsoft Power Platform using their Microsoft Entra ID for authentication.​
 author: ryanb58
 ms.author: tbrazelton
 contributors:
@@ -19,6 +19,7 @@ ms.date: 11/01/2024
 ms.custom: ignite-2024
 ms.service: power-platform
 ms.subservice: sap
+# Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID with certificates so users can access SAP data through Power Platform with single sign.
 ---
 
 # Microsoft Entra ID (with certificates) - single sign-on
@@ -103,7 +104,7 @@ openssl x509 -req -in signingUsersCert/users.csr.pem -days 3650 `
 
 ### Generate user certs
 
-Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`.
+Run the following to generate and sign a certificate for a user with the SAP username `TESTUSER01`:
 
 ```powershell
 # Create the private key.
@@ -136,13 +137,13 @@ userCerts/TESTUSER01.cert.pem: OK
 
 Take these steps to add users signing certificate and certificate chain to Windows Store.
 
-Generate .p12 file from users signing certificate & private key.
+1. Generate .p12 file from users signing certificate & private key.
 
 ```powershell
 openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\users.key.pem -in .\signingUsersCert\users.cert.pem
 ```
 
-1. Open the Windows Certificate Manager:
+2. Open the Windows Certificate Manager:
     1. Press `Win + R`, type `certlm.msc`, and press Enter.
 1. Import the public Root CA certificate.
     1. Import into `Trusted Root Certification Authorities`.
@@ -152,8 +153,7 @@ openssl pkcs12 -export -out user_signing_cert.p12 -inkey .\signingUsersCert\user
     1. Follow the wizard to import the `.p12` file, ensuring to **mark the key as exportable** so the OPDG (short for On Premises Data Gateway) can use it to encrypt data.
     1. Right click on `Users Intermediate Cert` and select `All Tasks>Manage Private Keys...`.
 1. Add the `NT SERVICE\PBIEgwService` user to the list of people who have permissions.
-
-Check subject name of certificate in the Windows Certificate Store
+1. Check subject name of certificate in the Windows Certificate Store:
 
 ```powershell
 Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*Users Intermediate Cert*" } | Format-List -Property Subject
@@ -196,16 +196,15 @@ Then create the following rule in t-code `CERTRULE`
 
 ## User intermediate certificate
 
-You'll need to add a user intermeditate certificate to SAP.
+Take these steps to add a user intermediate certificate to SAP:
 
-Open t-code `STRUST` and double-click
-on `STRUST` to add the public certificate users.cert.pem file to the box.
-
+1. Open t-code `STRUST` and double-click
+on `STRUST` to add the public certificate *users.cert.pem* file to the box.
 1. In SAP GUI, go to transaction code STRUST.
-2. If *SNC SAPCryptolib* has a red X, right-click and select **Create**.
-3. Select **SNC SAPCryptolib** and then double-click your Own Certificate.
-4. Select **Import Certificate** and choose your `signingUsersCert\users.cert.pem` public certificate.
-5. Select **Add to Certificate List**.
+1. If *SNC SAPCryptolib* has a red X, right-click and select **Create**.
+1. Select **SNC SAPCryptolib** and then double-click your *Own Certificate*.
+1. Select **Import Certificate** and choose your `signingUsersCert\users.cert.pem` public certificate.
+1. Select **Add to Certificate List**.
 
 ## SAP system update
 
