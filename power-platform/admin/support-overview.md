@@ -142,7 +142,7 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Dynamics   |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
 
 > [!NOTE]
-> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request using the Power Platform admin center. More information: [Use live chat with persistence for support issues](use-live-chat-persistence.md)
+> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request using the Power Platform admin center. More information: [Use live chat with persistence for support issues](live-chat-support.md)
 
 ### Why is submitting a request online the preferred method of contacting Support?
 

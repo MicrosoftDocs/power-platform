@@ -55,7 +55,7 @@
             - name: Support overview
               href: support-overview.md
             - name: Use live chat with persistence
-              href: use-live-chat-persistence.md
+              href: live-chat-support.md
             - name: View known issues
               href: view-known-issues.md
             - name: Support environments and the consent process
