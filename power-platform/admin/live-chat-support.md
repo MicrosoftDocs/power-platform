@@ -8,6 +8,12 @@ ms.custom:
 ms.collection: 
 author: sericks
 ms.author: nivkumar
+ms.contributors:
+ - v-terbrosche
+ - jonamsden
+ - kkidder
+ - kalaco
+ - vallid
 ---
 
 # Use live chat with persistence for support requests
