@@ -1,7 +1,7 @@
 ---
 title: Use live chat with persistence for support issues
 description: "Use live chat with persistence for support issues in Power Platform admin center."
-ms.date: 11/25/24
+ms.date: 11/25/2024
 ms.reviewer: "sericks"
 ms.topic: overview
 ms.custom: "admin-security"
