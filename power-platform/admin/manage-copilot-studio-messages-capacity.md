@@ -59,7 +59,7 @@ When consumption exceeds the pre-allocated capacity, you can choose to draw capa
 
 ## Frequently asked questions
 
-### What is a Message?
+### What is a message?
 
 A message represents a single interaction between a user and a Copilot agent, counted as one unit of consumption. Each message is defined as a request sent to Copilot that prompts a response or action.
 
