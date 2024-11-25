@@ -111,7 +111,7 @@ Once you submit your request it will appear in the list of support requests.
 You can check the status and edit your request on this page.
 
 > [!NOTE]
-> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft. Learn more: [Use live chat with persistence for support issues](use-live-chat-persistence.md)
+> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request. Learn more: [Use live chat with persistence for support issues](use-live-chat-persistence.md)
 
 ## Advisory services and premium support plan
 
