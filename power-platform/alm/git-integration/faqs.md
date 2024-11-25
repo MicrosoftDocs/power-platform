@@ -45,7 +45,7 @@ Git is the only source control technology supported by source control integratio
 
 Your need a premium Power Apps license appropriate to use a managed environment and an Azure DevOps license to interact with the source code repository.
 
-## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches"?
+## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 
 Make sure that your Azure DevOps Git repo is initialized. New projects and repos by default have an uninitialized repository, and you have to manually initialize the repo to create the default branch.
 
@@ -63,7 +63,7 @@ The feature works with unmanaged layers and doesn't work with managed layers. Th
 
 ## Why are my source code files in YAML yet the solution export is still primarily XML?
 
-The feature uses YAML to represent solution content because it is easier to read, understand, and facilitates easier merges.
+The feature uses YAML to represent solution content because it's easier to read, understand, and facilitates easier merges.
 
 ## How can I deploy a solution from source code?
 
@@ -83,7 +83,7 @@ Support for direct modifications to solution customizations isn't changing with 
 
 ## What can I do when I get the error "Activity failing with unmonitored exception: Microsoft.Crm.CrmException: The maximum request size of 26214400 bytes was exceeded."?
 
-There are limits in the Azure DevOps APIs that are exceeded. Exceeding the limits usually occurs because you have imported a large unmanaged solution and the total number of commits have exceeded that limit. We recommend that you remove solution components from the solution until you can get a successful commit, then add back those removed components, making commits along the way until you are successful. Pay attention to components that have large solution files, including media files like web resources or canvas applications with embedded media as those might need to be added one at a time if they approach that limit. Once you have all of your solution components back in your solution and the commits have been successful, you might consider re-importing the unmanaged solution again to ensure you didn't miss adding back any components.
+There are limits in the Azure DevOps APIs that are exceeded. Exceeding the limits usually occurs because you have imported a large unmanaged solution and the total number of commits have exceeded that limit. We recommend that you remove solution components from the solution until you can get a successful commit, then add back those removed components, making commits along the way until you're successful. Pay attention to components that have large solution files, including media files like web resources or canvas applications with embedded media as those might need to be added one at a time if they approach that limit. Once you have all of your solution components back in your solution and the commits have been successful, you might consider reimporting the unmanaged solution again to ensure you didn't miss adding back any components.
 
 ### Related content
 
