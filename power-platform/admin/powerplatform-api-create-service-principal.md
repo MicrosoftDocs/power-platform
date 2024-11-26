@@ -19,7 +19,7 @@ search.audienceType:
 Authenticating via username and password is often not ideal, especially with the rise of multifactor authentication. In such cases, service principal (or client credentials flow) authentication is preferred. You can authenticate with a service principal by registering a new service principal application in your own Microsoft Entra tenant and then registering that same application with Power Platform.
 
 > [!NOTE]
-> The Power Platform CLI provides an easier way. See [Creating a service principal application using PAC CLI](#creating-a-service-principal-application-using-pac-cli).
+> The Power Platform CLI provides an easier way. Learn more in [Creating a service principal application using PAC CLI](#creating-a-service-principal-application-using-pac-cli).
 
 ## Registering an admin management application
 
@@ -55,7 +55,7 @@ Use the [Microsoft Power Platform CLI (PAC CLI)](../developer/cli/introduction.m
 pac admin create-service-principal  --environment <environment id>
 ```
 
-Learn more about the [pac admin create-service-principal](../developer/cli/reference/admin.md#pac-admin-create-service-principal) command and how to [install PAC CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli)
+Learn more about the [pac admin create-service-principal](../developer/cli/reference/admin.md#pac-admin-create-service-principal) command and how to [install PAC CLI](../developer/cli/introduction.md#install-microsoft-power-platform-cli).
 
 ## Limitations of service principals
 
