@@ -42,6 +42,16 @@ Accept: application/json
 GET https://api.bap.microsoft.com/providers/Microsoft.BusinessAppPlatform/adminApplications?api-version=2020-10-01
 ```
 
+# Creating a service principal application using PAC CLI
+
+[Microsoft Power Platform CLI (PAC CLI)](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction) can be used to add Microsoft Entra ID application (SPN) and associated application user to the Dataverse environment. `admin create-service-principal` command creates Microsoft Entra ID application (SPN), and it also registeres it with Microsoft Power Platform.
+
+```PowerShell
+pac admin create-service-principal  --environment <environment id>
+```
+
+Learn more about [create-service-principal](https://learn.microsoft.com/en-us/power-platform/developer/cli/reference/admin#pac-admin-create-service-principal) command and how to [install PAC CLI](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction?#install-microsoft-power-platform-cli)
+
 ## Limitations of service principals
 Currently, service principal authentication works for environment management, tenant settings, and Power Apps management.  APIs related to Flow are supported for service principal authentication in situations where a license isn't required, as it isn't possible to assign licenses to service principal identities in Microsoft Entra ID.
 
