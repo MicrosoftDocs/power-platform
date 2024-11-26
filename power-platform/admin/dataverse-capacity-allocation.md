@@ -1,6 +1,6 @@
 ---
 title: Dataverse capacity allocation
-description: Description goes here.
+description: A great description goes here.
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
