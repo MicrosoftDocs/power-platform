@@ -187,7 +187,7 @@ The size of the delegated subnet within a Virtual Network is a critical concern,
   | 10 | 20 | High to medium | `/24` <br>251 usable IP addresses |
   | 20 | 50 | Medium to low | `/24` <br>251 usable IP addresses |
   
-**High Execution Load**: This is typically characterized by a high volume of requests and a significant number of environments. For instance, if you anticipate many plug-ins, flows, or apps executing within a single environment on VNet, you should plan for a high execution load. In this case, you might allocate 3-5 environments per subnet with a /24 subnet size, which provides 251 usable IP addresses.
+**High Execution Load**: This is typically characterized by a high volume of requests in an environment. For instance, if you anticipate many plug-ins, flows, or apps executing within a single environment on VNet, you should plan for a high execution load. In this case, you might allocate 3-5 environments per subnet with a /24 subnet size, which provides 251 usable IP addresses.
 
 **Medium Execution Load**: This category is suitable for scenarios where the volume of requests is moderate. If you expect a balanced load that is not as intense as the high execution load but still requires substantial resources, you can plan for 10-20 environments per subnet with the same /24 subnet size.
 
