@@ -186,6 +186,14 @@ The size of the delegated subnet within a Virtual Network is a critical concern,
   | 3 | 5 | High to high | `/24` <br>251 usable IP addresses |
   | 10 | 20 | High to medium | `/24` <br>251 usable IP addresses |
   | 20 | 50 | Medium to low | `/24` <br>251 usable IP addresses |
+  
+**High Execution Load**: This is typically characterized by a high volume of requests and a significant number of environments. For instance, if you anticipate many plug-ins, flows, or apps executing within a single environment on VNet, you should plan for a high execution load. In this case, you might allocate 3-5 environments per subnet with a /24 subnet size, which provides 251 usable IP addresses.
+
+**Medium Execution Load**: This category is suitable for scenarios where the volume of requests is moderate. If you expect a balanced load that is not as intense as the high execution load but still requires substantial resources, you can plan for 10-20 environments per subnet with the same /24 subnet size.
+
+**Low Execution Load**: This is ideal for environments with a lower volume of requests. If the usage is expected to be light, you can allocate 20-50 environments per subnet with a /24 subnet size
+
+It's important to consider future growth and the onboarding of new services when categorizing the Power Plaform environments. Ensuring that your subnets have enough IP addresses to accommodate the expected load will help prevent throttling and maintain performance. If you find that the /24 subnet size is not sufficient in the future, you should plan for large subnet size.
 
 #### NAT Gateway
 
