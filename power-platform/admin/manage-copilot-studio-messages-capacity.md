@@ -89,6 +89,8 @@ The Environments tab  provides details on the Copilot Studio message capacity co
 1. Select the **Select environment** button.
 1. The **Select an environment** pane is displayed.
 1. Select the environment you want to use and select the **Select** button.
+
+---
  
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
