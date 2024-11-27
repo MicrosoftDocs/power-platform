@@ -38,7 +38,7 @@ Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.
 
 ## Create a billing plan
 
-Follow these steps to create a billing plan, link environments to it, and add Azure subscription details for billing.
+To create a billing plan, link environments to it, and add Azure subscription details for billing complete the following steps depending on whether you're using the classic admin center or the new admin center.
 
 # [Classic admin center](#tab/classic)
 
