@@ -95,7 +95,7 @@ In the Azure portal:
 
 :::image type="content" source="media/pay-as-you-go-view-billing-policy-in-azure.png" alt-text="Billing policies in Azure Portal":::
 
-### In Power Apps 
+### Set up pay-as-you-go for your environment from your app's setting
 
 You can set up pay-as-you-go for your environment right from your app's setting for both canvas and model-driven apps, without needing to go to the admin center. Once set up, you can easily add new environments to the same Azure subscription in the Power Platform admin center.
 
