@@ -16,27 +16,50 @@ search.audienceType:
 
 The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message and session capacity, while monitoring overall capacity consumption. This experience also provides an overview of the licensing models in use.
 
-Capacity management features allow administrators to allocate pre-purchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The capacity management panel includes daily consumption data at the environment-level for up to three months, helping to determine appropriate capacity needs.
+## View Copilot Studio summary
 
-The consumption monitoring views in capacity management provide detailed, daily usage data for the current month-to-date, the last two full months, and monthly data for the past 12 months, supporting budgeting and licensing planning.
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Billing** > **Licenses**.
+1. On the **Summary** tab, in the **Summaries** section, select **Copilot Studio**.
+
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Licensing**.
+1. In the Licensing page, under **Products**, select **Copilot Studio**.
+
+---
 
 The licensing summary view shows usage of both pre-paid and session-based capacity units.
 
 Purchasing a Copilot Studio license includes a specified number of billed message units pooled across the tenant, which must be assigned to an environment to allow Copilot Studio features for agents in that environment.
 
-## Pay-as-you-go messages card
+Capacity management features allow administrators to allocate pre-purchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment-level for up to three months, helping to determine appropriate capacity needs.
+
+The consumption monitoring views in capacity management provide detailed, daily usage data for the current month-to-date, the last two full months, and monthly data for the past 12 months, supporting budgeting and licensing planning.
+
+## Capacity summary
+
+When viewing the Copilot Studio summary, the following cards are displayed and provide information to you.
+
+## Pay-as-you-go messages
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
 
-## Pre-paid capacity card
+## Prepaid capacity
 The Pre-paid capacity card shows the number of pre-paid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
+
+### Messages capacity tab
  
-## Capacity consumption by product
+### Capacity consumption by product
 This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
  
-## Total capacity consumption trend
+### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
 
-## Message usage by environment
+### Message usage by environment
 Highlights the top environments based on Copilot Studio message usage.
 
 ## Environment usage page
