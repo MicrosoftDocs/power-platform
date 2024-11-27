@@ -29,7 +29,7 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
-1. In the Licensing page, under **Products**, select **Copilot Studio**.
+1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
 
 ---
 
