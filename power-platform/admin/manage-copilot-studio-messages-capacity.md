@@ -100,11 +100,47 @@ This tile provides a product-focused summary of Copilot message units consumed, 
 ### Message consumption details
 The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus non-billable messages.
 
-### Managing capacity
-Capacity allocation can be managed in the Power Platform admin center. To allocate, go to **Billing > Licenses > Copilot Studio** and either select **Manage Capacity** from the **Pre-paid capacity** card or use **Manage Messages** or **Sessions** from the top navigation bar. In the allocation panel, select an environment and specify the number of messages to allocate in the **Messages** textbox.
+## Manage capacity
+Capacity allocation can be managed in the Power Platform admin center. 
+
+To allocate, complete the following steps depending on whether you're using the classic admin center or the new admin center.
+
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
+1. Select the **Summary** tab.
+1. In the **Summaries** section, select **Copilot Studio**.
+1. Do one of the following:
+
+   - Select **Manage Capacity** from the **Prepaid capacity** card
+
+   -or-
+
+   - Under the **Copilot Studio** heading, select **Manage messages** or **Manage sessions**.
+   
+
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
+1. Select the **Summary** tab.
+1. Do one of the following:
+
+   - Select **Manage Capacity** from the **Prepaid capacity** card
+
+   -or-
+
+   - Under the **Copilot Studio** heading, select **Manage messages** or **Manage sessions**.
+
+---
+
+In the allocation panel, select an environment and specify the number of messages to allocate in the **Messages** textbox.
 
 ### Overage management
-When consumption exceeds the pre-allocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
+When consumption exceeds the preallocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
 
 ## Frequently asked questions
 
