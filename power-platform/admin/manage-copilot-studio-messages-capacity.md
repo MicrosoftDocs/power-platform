@@ -72,3 +72,5 @@ Pay-as-you-go plans provide these benefits:
 - **Cost savings**: Reduce the hassle of pre-paid capacity inventory management. No more unused capacity expiring at the end-of-the-month.
 - **No commitment**: Get started with pay-as-you-go right away without locking into any long-term commitments and without any upfront costs.
 
+### If I have enabled the Pay-as-you-go plan, can I grant my users access to Copilot Studio
+Yes, you can manage access to Copilot Studio. In the Power Platform Admin Center, navigate to Settings and update the Copilot Author setting. There, you can assign a security group, and only members of that group will have access to Copilot Studio
