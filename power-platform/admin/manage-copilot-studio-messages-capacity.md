@@ -16,12 +16,12 @@ search.audienceType:
 
 The Microsoft Copilot Studio capacity management experience in the Power Platform admin center allows administrators to manage Copilot Studio message and session capacity, while monitoring overall capacity consumption. This experience also provides an overview of the licensing models in use.
 
-## View Copilot Studio summary
+## Use the Summary tab
 
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Billing** > **Licenses**.
+1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
 1. On the **Summary** tab, in the **Summaries** section, select **Copilot Studio**.
 
 
@@ -41,33 +41,48 @@ Capacity management features allow administrators to allocate pre-purchased capa
 
 The consumption monitoring views in capacity management provide detailed, daily usage data for the current month-to-date, the last two full months, and monthly data for the past 12 months, supporting budgeting and licensing planning.
 
-## Capacity summary
+### Capacity summary
 
 When viewing the Copilot Studio summary, the following cards are displayed in the **Capacity summary** section on the page and provide information to you.
 
-## Pay-as-you-go messages
+### Pay-as-you-go messages
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
 
-## Prepaid capacity
+### Prepaid capacity
 The Pre-paid capacity card shows the number of pre-paid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
 
-### Messages capacity tab
+#### Messages capacity tab
 
 The following cards are displayed in the **Messages capacity** tab.
 
-#### Capacity consumption by product
+##### Capacity consumption by product
 This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
  
-#### Total capacity consumption trend
+##### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
 
-#### Message usage by environment
+##### Message usage by environment
 Highlights the top environments based on Copilot Studio message usage.
 
-## Environment usage page
-This page provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the pre-paid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
+## Use the Environments tab
+The Environments tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
-## Environment page
+# [Classic admin center](#tab/classic)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
+1. On the **Summary** tab, in the **Summaries** section, select **Copilot Studio**.
+
+
+# [New admin center](#tab/new)
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
+1. Select the Environments tab.
+
+
+## View Environment page
 You can choose a specific environment to view the Copilot Studio capacity consumed within that environment.
 
 ### Capacity consumption by product
