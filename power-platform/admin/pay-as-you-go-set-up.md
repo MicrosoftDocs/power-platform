@@ -79,7 +79,7 @@ To create a billing plan, link environments to it, and add Azure subscription de
 
 1. Select **Next**.
 
-1. In the next screen, select the list of environments from the list of available regions. Any environment you add to the billing plan in the following step can only be in this region.
+1. In the Seect environments pane, in the Region list, select your region.  Then the list of environments in that region is displayed. Select the environment you want to add to the billing plan.  Select **Save**.  In the next screen, select the list of environments from the list of available regions. Any environment you add to the billing plan in the following step can only be in this region.
 
 ---
    
