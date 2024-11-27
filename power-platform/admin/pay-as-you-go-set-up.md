@@ -62,7 +62,8 @@ To create a billing plan, link environments to it, and add Azure subscription de
 
 # [New admin center](#tab/new)
 
-1. In the navigation pane, select **Billing > Billing plans**. The **Billing plans** page is displayed.
+1. In the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**.
 
