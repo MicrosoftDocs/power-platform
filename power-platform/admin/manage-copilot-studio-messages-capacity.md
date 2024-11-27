@@ -22,7 +22,8 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. On the **Summary** tab, in the **Summaries** section, select **Copilot Studio**.
+1. Select the **Summary** tab.
+2. In the **Summaries** section, select **Copilot Studio**.
 
 
 # [New admin center](#tab/new)
@@ -30,6 +31,7 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
+1. Select the **Summary** tab.
 
 ---
 
@@ -37,7 +39,7 @@ The licensing summary view shows usage of both pre-paid and session-based capaci
 
 Purchasing a Copilot Studio license includes a specified number of billed message units pooled across the tenant, which must be assigned to an environment to allow Copilot Studio features for agents in that environment.
 
-Capacity management features allow administrators to allocate pre-purchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment-level for up to three months, helping to determine appropriate capacity needs.
+Capacity management features allow administrators to allocate prepurchased capacity across environments, within the tenant, based on anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment-level for up to three months, helping to determine appropriate capacity needs.
 
 The consumption monitoring views in capacity management provide detailed, daily usage data for the current month-to-date, the last two full months, and monthly data for the past 12 months, supporting budgeting and licensing planning.
 
