@@ -224,7 +224,7 @@ If you use a monitoring system setup to test website availability periodically, 
 
 Dataverse pay-as-you-go meters let you pay for your usage of all three categories of Dataverse storage (database, log, and file) using an Azure subscription.
 
-When an environment becomes enabled for pay-as-you-go and is linked to an Azure subscription, it stops consuming storage from the tenant-wide Dataverse storage pool. Instead, its consumption is billed to Azure. In pay-as-you-go environments, the first 1 GB of Dataverse database storage and 1 GB of file storage capacity aren't billed to Azure. However, any log storage capacity is immediately be billed. Log storage capacity is only used if you decide to turn on auditing for an environment.
+When an environment is enabled for pay-as-you-go and linked to an Azure subscription, any storage consumption exceeding the allocated capacity is billed to Azure. If no capacity is allocated to the environment, all storage consumption is billed directly to Azure. For pay-as-you-go environments, the first 1 GB of Dataverse database storage and 1 GB of file storage are included at no charge. However, any log storage consumption is billed immediately. Log storage is utilized only if auditing is enabled for the environment.
 
 The measurement of usage for each category of Dataverse storage happens three times per day (90 measurements per month) at 08:00 UTC, 16:00 UTC, and 00:00 UTC. The usage snapshot in each 8-hour period is then multiplied by 1/90<sup>th</sup> to get the fractional usage of storage during the measurement period. This fractional usage is multiplied by the monthly per GB rate and shown in Azure Cost Management. The total amount is summed and billed based on the customer's Azure billing cycle.
 
