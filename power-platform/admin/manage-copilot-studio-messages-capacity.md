@@ -2,7 +2,7 @@
 title: Manage Copilot Studio messages and capacity 
 description: Learn how to manage Copilot Studio messages and capacity.
 author: amiyapatr-zz
-ms.date: 11/25/2024
+ms.date: 11/27/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
