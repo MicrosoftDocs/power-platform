@@ -47,6 +47,8 @@ The consumption monitoring views in capacity management provide detailed, daily 
 
 When viewing the Copilot Studio summary, the following cards are displayed in the **Capacity summary** section on the page and provide information to you.
 
+:::image type="content" source="media/environment-tab.png" alt-text="The following cards are displayed in the **Capacity summary** section on the page and provide information to you.":::
+
 ### Pay-as-you-go messages
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
 
@@ -68,8 +70,6 @@ Highlights the top environments based on Copilot Studio message usage.
 
 ## Use the Environments tab
 The Environments tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
-
-:::image type="content" source="media/environment-tab.png" alt-text="Environments tab":::
 
 # [Classic admin center](#tab/classic)
 
