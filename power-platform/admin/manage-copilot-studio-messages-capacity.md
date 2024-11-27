@@ -43,7 +43,7 @@ The consumption monitoring views in capacity management provide detailed, daily 
 
 ## Capacity summary
 
-When viewing the Copilot Studio summary, the following cards are displayed and provide information to you.
+When viewing the Copilot Studio summary, the following cards are displayed in the **Capacity summary** section on the page and provide information to you.
 
 ## Pay-as-you-go messages
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
@@ -52,14 +52,16 @@ This card displays the count of active billing plans with the Copilot Studio met
 The Pre-paid capacity card shows the number of pre-paid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
 
 ### Messages capacity tab
- 
-### Capacity consumption by product
+
+The following cards are displayed in the **Messages capacity** tab.
+
+#### Capacity consumption by product
 This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
  
-### Total capacity consumption trend
+#### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
 
-### Message usage by environment
+#### Message usage by environment
 Highlights the top environments based on Copilot Studio message usage.
 
 ## Environment usage page
