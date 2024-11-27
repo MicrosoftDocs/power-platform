@@ -93,7 +93,7 @@ Yes, you can disable pay-as-you-go at any point by either deleting the billing p
 You can leverage Azure Cost Management and alerting capabilities to manage spending within your organization. Go to [How to manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) for more details.
 
 ### Can I use the Power Platform request or Dataverse capacity add-ons in a pay-as-you-go environment?
-Starting December 2024, you can use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests if any will be charged via Azure subscription in a pay-as-you-go environment. 
+Starting December 2024, you can use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests, if any, are charged through an Azure subscription in a pay-as-you-go environment.
 
 ### What storage model does the Dataverse capacity meter use?
 All environments enabled for pay-as-you-go will use the [new Dataverse storage model](capacity-storage.md)  that has three separate categories of storage usage. If a tenant is still on the [legacy storage model](legacy-capacity-storage.md), the tenant’s storage model status won't change when an environment is enabled for pay-as-you-go.
