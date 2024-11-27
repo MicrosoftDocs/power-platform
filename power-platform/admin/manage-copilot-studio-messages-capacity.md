@@ -74,7 +74,7 @@ The Environments tab  provides details on the Copilot Studio message capacity co
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
 1. Select the **Environments** tab.
-1. Select the **Select the environment** button.
+1. Select the **Select environment** button.
 1. The **Select an environment** pane is displayed.
 1. Select the environment you want to use and select the **Select** button.
 1. In the **Summaries** section, select **Copilot Studio**.
