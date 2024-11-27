@@ -73,7 +73,11 @@ The Environments tab  provides details on the Copilot Studio message capacity co
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Billing** > **Licenses**. The **Licenses** page is displayed.
-1. On the **Summary** tab, in the **Summaries** section, select **Copilot Studio**.
+1. Select the **Environments** tab.
+1. Select the **Select the environment** button.
+1. The **Select an environment** pane is displayed.
+1. Select the environment you want to use and select the **Select** button.
+1. In the **Summaries** section, select **Copilot Studio**.
 
 
 # [New admin center](#tab/new)
@@ -81,16 +85,17 @@ The Environments tab  provides details on the Copilot Studio message capacity co
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
-1. Select the Environments tab.
-
-
-## View Environment page
-You can choose a specific environment to view the Copilot Studio capacity consumed within that environment.
+1. Select the **Environments** tab.
+1. Select the **Select environment** button.
+1. The **Select an environment** pane is displayed.
+1. Select the environment you want to use and select the **Select** button.
+ 
+View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
 ### Capacity consumption by product
 This tile provides a product-focused summary of Copilot message units consumed, showing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
 
-### Message consumption by resource
+### Message consumption details
 The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus non-billable messages.
 
 ### Managing capacity
