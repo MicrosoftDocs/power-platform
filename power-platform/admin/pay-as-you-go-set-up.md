@@ -79,6 +79,8 @@ Follow these steps to create a billing plan, link environments to it, and add Az
 1. Select **Next**.
 
 1. In the next screen, select the list of environments from the list of available regions. Any environment you add to the billing plan in the following step can only be in this region.
+
+---
    
 ## List of billing plans
 
