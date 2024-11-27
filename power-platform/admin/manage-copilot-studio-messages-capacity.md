@@ -144,6 +144,8 @@ In the allocation panel, select an environment and specify the number of message
 ### Overage management
 When consumption exceeds the preallocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
 
+:::image type="content" source="media/overage-management.png" alt-text="Select how you want to manage when capacity reaches zero in this environment.":::
+
 ## Frequently asked questions
 
 ### What is a message?
