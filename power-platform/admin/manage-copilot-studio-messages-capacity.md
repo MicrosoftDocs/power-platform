@@ -69,6 +69,8 @@ Highlights the top environments based on Copilot Studio message usage.
 ## Use the Environments tab
 The Environments tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
+:::image type="content" source="media/environment-tab.png" alt-text="Environments tab":::
+
 # [Classic admin center](#tab/classic)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
