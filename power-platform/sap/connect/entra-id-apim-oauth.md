@@ -46,9 +46,7 @@ Perform these steps as an SAP Basis admin in SAP GUI.
 
 1. In SAP GUI, run the transaction *SAML2* to open the relevant SAP-client dependent wizard and choose the *Local Provider* tab.
 
-1. Select **Metadata**, and then select **Download Metadata**.
-
-You'll upload the SAP SAML metadata to Microsoft Entra ID in a later step.
+1. Select **Metadata**, and then select **Download Metadata**. You'll upload the SAP SAML metadata to Microsoft Entra ID in a later step.
 
 1. Take note of the URI-compliant **Provider Name**.
 
@@ -75,15 +73,9 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Select **Add**.
 
-1. Change the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint.
+1. Change the **Reply URL (Assertion Consumer Service URL)** to the SAP OAuth token endpoint. The URL is in the format `https://<SAP server>:<port>/sap/bc/sec/oauth2/token`.
 
-> [!NOTE]
-> The URL is in the format `https://<SAP server>:<port>/sap/bc/sec/oauth2/token`.
-
-1. Change the **Sign-on URL** to a URI-compliant value.
-
-> [!NOTE]
-> This parameter isn't used and can be set to any value that's URI-compliant.
+1. Change the **Sign-on URL** to a URI-compliant value. This parameter isn't used and can be set to any value that's URI-compliant.
 
 1. Select **Save**.
 
@@ -95,9 +87,11 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 ## Configure Microsoft Entra ID as a trusted Identity Provider for OAuth 2.0 in SAP
 
-Follow the steps outlined in the [Microsoft Entra ID documentation for SAP NetWeaver and OAuth2](/entra/identity/saas-apps/sap-netweaver-tutorial#configure-sap-netweaver-for-oauth).
+1. Follow the steps outlined in the [Microsoft Entra ID documentation for SAP NetWeaver and OAuth2 section](/entra/identity/saas-apps/sap-netweaver-tutorial#configure-sap-netweaver-for-oauth).
 
-See [SAP's official documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for details.
+1. Come back to this article once the OAuth2 client is created in SAP.
+
+See [SAP's official documentation](https://help.sap.com/docs/SAP_NETWEAVER_750/3c4e8fc004cb4401a4fdd737f02ac2b9/7e80a762e8b4441fb53b1f6d9bde4f4d.html) for additional details.
 
 ## Create a Microsoft Entra ID application that represents the Azure API Management resource
 
