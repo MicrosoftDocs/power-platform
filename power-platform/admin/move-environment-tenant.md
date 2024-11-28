@@ -58,6 +58,8 @@ Any Power Apps must be manually exported. We don't support the migration of cust
 #### For solution-aware apps:
 1. For apps that are solution aware, go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all apps and solutions. You can export them individually or group them together in a single solution, if they're not already.
 1. Delete these solution-aware apps in the environment after exporting them.
+2. Apps belonging to managed solutions can only be deleted by deleting the solution.
+3. Apps that are in unmanaged solution, can be deleted by “Delete from this environment”	 
 
     > [!Important]
     > Solution-aware canvas apps, custom pages, or component libraries that you don't delete from an environment before migration won't work after the migration completes.
@@ -70,6 +72,12 @@ Any Power Apps must be manually exported. We don't support the migration of cust
   	  The resulting file contains the app package that was selected.
   	
 1.	Repeat these steps until all apps have been exported.
+1.	Delete these non-solution aware apps from the environment
+
+An admin can also view/delete Canvas Apps from the list on the admin portal:
+1.	Go to https://admin.powerplatform.microsoft.com, and then select the environment.
+2.	Under the resources action, click ‘Power Apps’ to view and delete them.
+
 
 ### Prepare Copilot Studio
 Any Copilot Studio chatbots must be manually exported. Some dependent components of chatbots must be manually reconfigured during or after the migration. For example, connections, environment variables, and custom connectors must be manually reconfigured during or after the migration.
@@ -94,7 +102,7 @@ Create a user mapping file for the source environment to be transferred to the t
    > [!Note]
    > The file name is case sensative. Make sure records are comma seperated not semicolon.
   
-1. Accurately record the details of users, including their source and destination email IDs.Also make sure there are no extra space before anf after header. Your mapping file should look to the following example:
+1. Accurately record the details of users, including their source and destination email IDs.Also make sure there are no extra space before and after header. Your mapping file should look to the following example:
 
     |Source|	Destination|
     |------|-------------|
@@ -133,7 +141,7 @@ For administrative access users:
 ## Migration
 Before processing with migration make sure you have reviewed and completed the preparetion process. Now you can process to complete the following sections to migrate.
 
-### Install PowerShell for Power Platform administrators
+### Install PowerShell for Power Platform administrators (Both Source and Target Admins) 
 The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
 
 Install or update the necessary module by using one of the following commands:
@@ -143,7 +151,7 @@ Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 ```
 
-### Install Azure PowerShell on Windows
+### Install Azure PowerShell on Windows (Both Source and Target Admins)
 
 The Az PowerShell module is a rollup module. Installing the Az PowerShell module downloads the generally available modules and makes their cmdlets available for use. Learn more at [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery).
 
@@ -153,7 +161,14 @@ Use the Install-Module cmdlet to install the Az PowerShell module:
 Install-Module -Name Az -Repository PSGallery -Force
 ```
 
-### Submit migration request
+### Sign into Microsoft Power Platform (Both Source and Target Admins)
+
+Sign into Microsoft Power Platform. This step allows administrators to authenticate and access the Power Platform environment.
+```PowerShell
+Add-PowerAppsAccount -Endpoint prod
+```
+
+### Submit migration request (Source Admin)
 To initiate a tenant-to-tenant migration, the source tenant's Dynamics 365 or Power Platform administrator must submit a request to the target tenant using the following command and provide the environment name ID and tenant ID.
 
 You must have Power Platform administrator or Dynamics 365 administrator credentials to complete this step. 
@@ -161,10 +176,12 @@ You must have Power Platform administrator or Dynamics 365 administrator credent
 ```PowerShell
 TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
 ```
+### View and approve migration request (Target Admin)
 The admin of the destination tenant should run the following command to see all the migration requests and status. The admin can review all the migration requests and options to approve or reject. 
 
-
 ```PowerShell
+Add-PowerAppsAccount -Endpoint prod
+
 TenantToTenant-ViewMigrationRequest - TenantID{Target admin should provide targetTenantID (self) to view list of requests pending for approval}
 
 TenantToTenant-ManageMigrationRequest -RequestId {RequestID from above command to approve or deny}
@@ -172,7 +189,7 @@ Enter approval status for RequestId {RequestId} (0 for Reject, 1 for Approve)
 ```
 Once a request is approved, the admin of the destination tenant can notify the admin of the source tenant to proceed with the next step of the migration.
 
-### Generate a shared access signature (SAS) URL
+### Generate a shared access signature (SAS) URL (Source Admin)
 This step involves creating the SAS URL, which is utilized later for uploading the user mapping file. Execute the following PowerShell command, substituting **EnvironmentId** with the actual environment ID:
 
 ```PowerShell
@@ -190,11 +207,11 @@ Errors      :
 Internal    : @{sharedAccessSignature=https://dynamics.blob.core.windows.net/20240604t000000z73e18df430fe40059290dsddc25d783?sv=2018-03-28&sr=c&si=SASpolicyXXRRRX}
 ```
 
-### Upload the user mapping file 
+### Upload the user mapping file (Source Admin)
 The next step involves transferring the user mapping file to the previously established SAS URL. To accomplish this, execute the following commands in Windows PowerShell ISE, ensuring that the parameters **SASUri** and **FileToUpload** contain the appropriate information about your environment. This step is crucial for uploading mapping of the users accurately in the system.
 
 > [!Note]
-> The installation of the Az module is required to run the script mentioned.
+> The installation of the Az module is required to run the script mentioned. Complete the following steps with Windows PowerShell ISE.
 
 ```Windows PowerShell ISE
 $SASUri ="Update the SAS Uri from previous step”
@@ -215,7 +232,7 @@ $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -
 Set-AzStorageBlobContent -File $fileToUpload -Container $container -Context $storageContext -Force
 ```
 
-### Prepare the environment migration
+### Prepare the environment migration (Source Admin)
 The following step involves conducting comprehensive validations to ensure that every user listed in the user mapping file is verified and currently active within the target tenant. 
 
 ```PowerShell
@@ -237,6 +254,7 @@ Description : Accepted
 ```
 This step's duration varies depending on the number of users in the user mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided below.
 
+### Check status
 ```PowerShell
 TenantToTenant-GetStatus -EnvironmentName {EnvironmentId}
 ```
@@ -259,7 +277,7 @@ If there are any errors in the user mapping, there's an option to download the e
 
 Complete the following steps with Windows PowerShell ISE.
 
- Import the required module
+Import the required module
 
 ```Windows PowerShell ISE
 Import-Module Az.Storage 
@@ -274,6 +292,9 @@ $storageAccountName = $url.Split('/')[2].Split('.')[0]
 $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
 Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
 ```
+Fix the issues in the user mapping file.
+Re-upload the file using the same or new SAS URL.
+
 After successfully completing Prepare the environment migration setps now you may proceed with next step to migrate environment.Next step you can perform within next 7 days and after that you may have to start with "Prepare the environment migration"
 
 ## Migrate the environment
