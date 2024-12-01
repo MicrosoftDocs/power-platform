@@ -4,7 +4,7 @@ description: Follow these steps to set up pay-as-you-go plans with an Azure subs
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/27/2024
+ms.date: 12/01/2024
 ms.subservice: admin
 ms.author: ampatra 
 ms.reviewer: sericks
