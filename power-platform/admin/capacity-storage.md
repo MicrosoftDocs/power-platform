@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 10/16/2024
+ms.date: 12/01/2024
 ms.topic: conceptual
 author: MicroSri
 ms.subservice: admin
@@ -172,41 +172,41 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 > - This feature is being gradually rolled out across regions and might not be available in your region yet.
 
 #### Track tenant usage
-You can track and manage Dataverse capacity in Licensing section of Power Platform Admin Center  
+You can track and manage Dataverse capacity in the **Licenses** section of Power Platform admin center. 
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-2. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**
+2. In the navigation pane, select **Billing** > **Licenses** > **Dataverse**.
 
 ##### Usage per storage type
 
-In the **Usage per storage type** tile, y you can view the consumption of your Database, Log, and File storage. This section displays your pre-paid entitled capacity along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a Pay-As-You-Go plan.
+In the **Usage per storage type** tile, you can view the consumption of your Database, Log, and File storage. This section displays your prepaid entitled capacity along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
 
-##### Top Environment consuming storage 
+##### Top environment consuming storage 
 
-The **Top Environment consuming storage** tile, displays the environments using the most capacity. It also indicates whether any of these top-consuming environments are in overage and provides a breakdown of pre-paid versus Pay-As-You-Go usage. You can select Database, File, or Log to view the corresponding consumption details. .
+The **Top environment consuming storage** tile displays the environments using the most capacity. It also indicates whether any of these top-consuming environments are in overage and provides a breakdown of prepaid versus pay-as-you-go usage. You can select **Database**, **File**, or **Log** to view the corresponding consumption details.
 
-##### Dataverse Environment usage  
+##### Dataverse environment usage  
 
-In The **Top Environment consuming storage** tile, select **See all environments** to view capacity consumption across all your Dataverse environments.. The following details are provided:
+In the **Top environment consuming storage** tile, select **See all environments** to view capacity consumption across all your Dataverse environments. The following details are provided:
 
 - Name of the environment
 - Overage status if capacity is allocated to the environment
-- whether capacity is pre- allocated to the environment
+- Whether capacity is pre-allocated to the environment
 - Environment type
-- Managed environment status .
+- Managed environment status
 - Pay-as-you-go plan linkage status
 - Ability to draw capacity from available tenant pool 
 - Database, File and Log consumption
 
-#### Track Environment usage
-1. In the Dataverse page select **Environment** and choose an environment from the list 
-2. Alternatively in the **Top Environment consuming storage** tile, click **See all environments** and select an environment by clicking on its name .
+#### Track environment usage
+1. In the **Dataverse** page, select **Environment** and choose an environment from the list. 
+2. Alternatively in the **Top environment consuming storage** tile, select **See all environments** and select an environment name.
 
 ##### Usage per storage type
-In the **Usage per storage type** tile, y you can view the consumption of your Database, Log, and File storage. This section displays your pre-paid allocated capacity if any along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a Pay-As-You-Go plan. 
+In the **Usage per storage type** tile, you can view the consumption of your Database, Log, and File storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
 
 ##### Consumption per table 
-In this section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select Database, File, or Log in the **Usage per storage type tile**.
-click on the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
+In this section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
 
 #### Allocate capacity for an environment 
 
@@ -221,11 +221,10 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 8. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (Database, Log, or File) reaches a set percentage of the allocated capacity.
 9. Select **Save** to apply the changes.
 
-#### Managing capacity Overage 
-When an environment's capacity consumption exceeds the pre-allocated capacity, you have two options to manage the overage:   
+#### Managing capacity overage 
+When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:   
 1. In the **Manage capacity** pane you can utilize capacity available from the tenant's overall capacity pool.
-2. alternatively in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage will be charged to the associated Azure subscription. 
-
+2. Alternatively, in the **Manage capacity** pane you can link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription. 
 
 ## Changes for exceeding storage capacity entitlements
 
