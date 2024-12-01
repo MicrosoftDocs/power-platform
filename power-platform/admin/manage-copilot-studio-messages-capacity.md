@@ -35,7 +35,7 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 
 ---
 
-The licensing summary view shows usage of both pre-paid and session-based capacity units.
+The licensing summary view shows usage of both prepaid and session-based capacity units.
 
 Purchasing a Copilot Studio license includes a specified number of billed message units pooled across the tenant, which must be assigned to an environment to allow Copilot Studio features for agents in that environment.
 
@@ -53,14 +53,14 @@ When viewing the Copilot Studio summary, the following cards are displayed in th
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio message units billed to these plans.
 
 ### Prepaid capacity
-The Pre-paid capacity card shows the number of pre-paid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
+The Prepaid capacity card shows the number of prepaid capacity units that have been purchased, assigned, and consumed. These units can be either session-based or message capacity units, with a link provided to manage each type.
 
 #### Messages capacity tab
 
 The following cards are displayed in the **Messages capacity** tab.
 
 ##### Capacity consumption by product
-This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
+This tile presents a product-focused view of Copilot message units consumed, detailing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
  
 ##### Total capacity consumption trend
 Displays the daily trend of capacity consumption over the past three months.
@@ -97,10 +97,10 @@ The Environments tab  provides details on the Copilot Studio message capacity co
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Messages capacity** tab.
 
 ### Capacity consumption by product
-This tile provides a product-focused summary of Copilot message units consumed, showing the number of units deducted from pre-paid capacity packs and/or pay-as-you-go units.
+This tile provides a product-focused summary of Copilot message units consumed, showing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
 ### Message consumption details
-The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus non-billable messages.
+The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable messages.
 
 ## Manage capacity
 Capacity allocation can be managed in the Power Platform admin center. 
@@ -158,8 +158,8 @@ Pay-as-you-go plans provide these benefits:
 - **Flexibility**: Since your usage may fluctuate, pay-as-you-go plans allow for scalability and flexibility. You pay for only what you use.
 - **Business continuity**: Given that Copilot Studio is the way to pay for the use of agents that are critical to business continuity, the pay-as-you-go model overcomes any concern associated with reaching the limits of purchased message quantities.
 - **Availability**: Your users can benefit from the agents you build, without requiring separate licenses.
-- **Cost savings**: Reduce the hassle of pre-paid capacity inventory management. No more unused capacity expiring at the end-of-the-month.
+- **Cost savings**: Reduce the hassle of prepaid capacity inventory management. No more unused capacity expiring at the end-of-the-month.
 - **No commitment**: Get started with pay-as-you-go right away without locking into any long-term commitments and without any upfront costs.
 
-### If I have enabled the Pay-as-you-go plan, can I grant my users access to Copilot Studio
-Yes, you can manage access to Copilot Studio. In the Power Platform Admin Center, navigate to Settings and update the Copilot Author setting. There, you can assign a security group, and only members of that group will have access to Copilot Studio
+### If I have used the Pay-as-you-go plan, can I grant my users access to Copilot Studio
+Yes, you can manage access to Copilot Studio. In the Power Platform admin center, navigate to **Settings** and update the **Copilot Author** setting. There, you can assign a security group, and only members of that group have access to Copilot Studio.
