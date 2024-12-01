@@ -191,12 +191,12 @@ In the **Top environment consuming storage** tile, select **See all environments
 
 - Name of the environment
 - Overage status if capacity is allocated to the environment
-- Whether capacity is pre-allocated to the environment
+- Whether capacity is preallocated to the environment
 - Environment type
 - Managed environment status
 - Pay-as-you-go plan linkage status
 - Ability to draw capacity from available tenant pool 
-- Database, File and Log consumption
+- Database, File, and Log consumption
 
 #### Track environment usage
 1. In the **Dataverse** page, select **Environment** and choose an environment from the list. 
@@ -214,7 +214,7 @@ In the **Dataverse** tab, you can allocate capacity to a specific environment. O
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the navigation pane, select **Billing** > **Licenses**.
-3. On the **Summary** page, select the **Datavese** tab and select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
+3. On the **Summary** page, select the **Dataverse** tab and select **Manage Capacity**. The **Manage capacity** pane is displayed on the right side of the page.
 4. Select the environment for which you want to allocate capacity.
 6. In the **Manage capacity** pane, view the currently allocated and consumed capacity for the environment.
 7. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
@@ -232,7 +232,7 @@ We're making changes for what happens when an organization's storage capacity is
 
 Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of space available.  Another warning notification that admin operations could be impacted are sent when any of the three storage capacities have less than 5% of space available.  The final tier of notification triggers when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which alerts the admin that the following operations are no longer available until the overage is resolved.
 
-- Create a new environment (requires minimum 1GB capacity available)
+- Create a new environment (requires minimum 1 GB capacity available)
 - Copy an environment
 - Restore an environment
 - Convert a trial environment to paid (requires minimum 1GB capacity available)
