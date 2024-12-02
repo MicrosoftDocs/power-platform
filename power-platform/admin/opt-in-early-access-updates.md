@@ -34,7 +34,7 @@ Early access begins approximately two months before general availability of each
 
 |Region  | Deployment schedule for 2025 wave 1 early access |
 |---------|---------|
-| Canada                       | January 21, 2025  |
+| Canada                       | January 22, 2025  |
 | South America                | January 22, 2025  |
 | India                        | January 22, 2025  |
 | France                       | January 22, 2025  |
@@ -43,13 +43,13 @@ Early access begins approximately two months before general availability of each
 | Switzerland                  | January 22, 2025  |
 | Norway                       | January 22, 2025  |
 | Korea                        | January 22, 2025  |
-| Singapore                    |   |
-| Sweden                       |   |
+| Singapore                    | January 20, 2025  |
+| Sweden                       | January 20, 2025  |
 | United Arab Emirates         | January 27, 2025  |
 | Japan                        | January 27, 2025  |
 | Asia Pacific                 | January 27, 2025  |
 | Great Britain                | January 27, 2025  |
-| Australia                    | January 24, 2025  |
+| Australia                    | January 27, 2025  |
 | Europe                       | January 29, 2025 |
 | North America                | February 03, 2025 |
 
