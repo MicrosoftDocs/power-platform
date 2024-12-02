@@ -29,6 +29,8 @@
               href: connect/entra-id-certs.md
             - name: Set up Microsoft Entra ID with Azure API Management and OAuth
               href: connect/entra-id-apim-oauth.md
+            - name: Set up Microsoft Entra ID using SuccessFactors (Preview)
+              href: connect/entra-id-using-successfactors.md
         - name: Use enterprise templates
           items:
             - name: SAP Procurement

@@ -1,11 +1,11 @@
 ---
-title: "Programmability and Extensibility - Power Platform API - 2020-10-01 - List tenant settings (preview) | Microsoft Docs"
+title: Programmability and Extensibility - Power Platform API - 2020-10-01 - List tenant settings (preview) 
 description: Power Platform API Reference - List tenant settings
 author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 07/29/2024
+ms.date: 11/19/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -21,13 +21,11 @@ ms.collection: bap-ai-copilot
 
 # List tenant settings (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can list settings applicable to your tenant.
 
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Authentication
 
