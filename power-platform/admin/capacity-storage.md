@@ -187,13 +187,13 @@ The **Top environment consuming storage** tile displays the environments using t
 
 ##### Dataverse environment usage  
 
-In the **Top environment consuming storage** tile, select **See all environments** to view capacity consumption across all your Dataverse environments. The following details are provided:
+In the **Top environments consuming storage** tile, select **See all environments** to view capacity consumption across all your Dataverse environments. The following details are provided:
 
 - Name of the environment
 - Overage status if capacity is allocated to the environment
 - Whether capacity is preallocated to the environment
 - Environment type
-- Managed environment status
+- Managed Environment status
 - Pay-as-you-go plan linkage status
 - Ability to draw capacity from available tenant pool 
 - Database, File, and Log consumption
@@ -206,7 +206,7 @@ In the **Top environment consuming storage** tile, select **See all environments
 In the **Usage per storage type** tile, you can view the consumption of your Database, Log, and File storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan. 
 
 ##### Consumption per table 
-In this section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
+In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type tile**. Select the  table name for the consumption trend, with the option to track daily usage trends for up to the past three months. 
 
 #### Allocate capacity for an environment 
 
