@@ -69,7 +69,7 @@ Here's an example:
 
 | Ask this question | To determine controls that... |
 |---|---|
-| Are connections authenticated through Microsoft Entra ID, and use modern security protocols that the security team approved:<br><br>- Between users and the application?<br><br>- Between application components and services?<br><br>- Between users and the copilot? | Prevent unauthorized access to the application components and data. |
+| Are connections authenticated through Microsoft Entra ID, and use modern security protocols that the security team approved:<br><br>- Between users and the application?<br><br>- Between application components and services?<br><br>- Between users and an AI assistant (agent)? | Prevent unauthorized access to the application components and data. |
 | Are you limiting access to only accounts that need to write or modify data in the application? | Prevent unauthorized data tampering or alteration. |
 | Is the application activity logged and fed into a security information and event management (SIEM) system through Azure Monitor or a similar solution? | Detect and investigate attacks quickly. |
 | Is critical data protected with encryption that the security team approved? | Prevent unauthorized copying of data at rest. |

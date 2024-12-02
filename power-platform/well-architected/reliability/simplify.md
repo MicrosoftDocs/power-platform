@@ -80,7 +80,7 @@ The principles of simplicity, efficiency, and reliability also apply to your dev
 - Use platform capabilities when they meet your business requirements. For example:
     - Use modern controls instead of developing your own code components to achieve a Fluent 2 design standard.
     - Use native connectors instead of developing custom connectors to reduce custom code.
-    - Use generative answers in Microsoft Copilot Studio to enable your copilot to find and present information from multiple sources, internal or external, without manually created topics.
+    - Use generative answers in Microsoft Copilot Studio to enable your agent to find and present information from multiple sources, internal or external, without manually created topics.
 
 - Introduce dedicated code review sessions as a development practice.
 

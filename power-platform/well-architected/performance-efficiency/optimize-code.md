@@ -110,7 +110,7 @@ Many applications require background tasks that run independently of the user in
 
 **Instrumenting code**: When building canvas apps, performant patterns should be used to enhance app efficiency, while anti-patterns should be avoided. For more information, see [Overview of creating performant Power Apps](/power-apps/maker/canvas-apps/create-performant-apps-overview). Use [Monitor](/power-apps/maker/monitor-overview) in Power Apps to diagnose and troubleshoot performance issues during development.
 
-**Measure engagement and outcomes**: When building copilots, tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring copilot performance metrics and discovering areas for improvement.
+**Measure engagement and outcomes**: When building agents, tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring agent performance metrics and discovering areas for improvement.
 
 **Optimizing code logic**: With the [solution checker](/power-apps/maker/data-platform/use-powerapps-checker) feature, you can perform a rich static analysis check on your solutions against a set of best-practice rules and quickly identify problematic patterns. With [Flow Checker](/power-automate/error-checker), you can get insights into which areas of your flow's implementation pose a performance risk?
 
