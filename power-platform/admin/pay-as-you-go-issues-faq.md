@@ -4,11 +4,12 @@ description: This article addresses known issues about pay-as-you-go plans and p
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/01/2024
+ms.date: 12/02/2024
 ms.subservice: admin
 ms.author: kaagar 
 ms.reviewer: sericks
 contributors:
+  - amiyapatr-zz 
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
@@ -71,11 +72,14 @@ No. As soon as you turn on pay-as-you-go for your environment, all apps are bill
 ### I don't have admin permissions for the environment I'm working with. Can I set up pay-as-you-go for the environment?
 No. You need admin permissions for the environment to be able to link the environment to a billing policy. Check out [Who can set it up](pay-as-you-go-set-up.md#who-can-set-it-up) for details on permissions.
 
-### Can I enable/disable specific meters?
-No. Once you enable pay-as-you-go, both the Power Apps per app-meter and Dataverse meter will be enabled, and both app access and storage will be charged.
+### Can I turn on or off specific meters?
+Yes! Starting December 2024, you have the option to select specific product meters when turning on a pay-as-you-go plan. 
 
-### How is Dataverse capacity calculated when one environment is enabled for pay-as-you-go and the other isn't within my tenant?
-Environments draw from a tenant-wide pool of Dataverse storage. However, when an environment is linked to an Azure subscription, it stops drawing from the tenant-wide pool. All pay-as-you-go environments get an initial entitlement of 1 GB of Dataverse database and 1 GB of Dataverse file storage capacities to cover the typical initial storage footprint consumed by Dataverse. Any usage above the initial entitlement is billed to Azure via the Dataverse pay-as-you-go meter. 
+> [!Note]
+>  The Dataverse meter is turned on by default. You can also preallocate Dataverse capacity for your environment, ensuring that any overage usage for Dataverse is charged to Azure.
+
+### How is Dataverse capacity calculated when one environment uses pay-as-you-go, and the other environment within my tenant doesn't?
+When an environment uses the pay-as-you-go plan and is linked to an Azure subscription, any storage consumption exceeding the allocated capacity is billed to Azure. If no capacity is allocated to the environment, all storage consumption is billed directly to Azure. For pay-as-you-go environments, the first 1 GB of Dataverse database storage and 1 GB of file storage are included at no charge. However, any log storage consumption is billed immediately. Log storage is utilized only if auditing is turned on for the environment. 
 
 ### Is there throttling if I exceed Power Platform requests entitlements in a pay-as-you-go environment?
 In the context of Power Platform Request entitlement limits, any high usage throttling will be removed when an environment has pay-as-you-go enabled.  When Power Platform Request metering is active in the Public Preview, if you exceed a daily entitlement limit, you'll automatically be charged for the overages via Azure subscription without experiencing high usage throttling. 
@@ -90,7 +94,7 @@ Yes, you can disable pay-as-you-go at any point by either deleting the billing p
 You can use Azure Cost Management and alerting capabilities to manage spending within your organization. Go to [How to manage costs](pay-as-you-go-usage-costs.md#how-to-manage-costs) for more details.
 
 ### Can I use the Power Platform request or Dataverse capacity add-ons in a pay-as-you-go environment?
-No, you can't use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests are charged via Azure subscription in a pay-as-you-go environment. 
+Starting December 2024, you can use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests, if any, are charged through an Azure subscription in a pay-as-you-go environment.
 
 ### What storage model does the Dataverse capacity meter use?
 All environments enabled for pay-as-you-go will use the [new Dataverse storage model](capacity-storage.md)  that has three separate categories of storage usage. If a tenant is still on the [legacy storage model](legacy-capacity-storage.md), the tenant’s storage model status won't change when an environment is enabled for pay-as-you-go.
