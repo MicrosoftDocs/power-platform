@@ -3,7 +3,7 @@ title: "Teams in Dataverse   | MicrosoftDocs"
 description: Understand the different types of teams and how to view and manage settings.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/06/2024
+ms.date: 11/12/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -74,6 +74,9 @@ A list of all of the teams in the environment is displayed.
    :::image type="content" source="media/dataverse-team-manage-new-team-azuread.png" alt-text="Screenshot of settings for a new Microsoft Entra team.":::
 
 After you create the team, you can add team members and select corresponding security roles. This step is optional, but recommended.
+
+> [!NOTE]
+> A default security role is automatically assigned to team records that have been created through data import. The **Salesperson** security role is assigned in a Dynamics 365 Sales environment and the **Basic User** security role is assigned in other environments.
 
 ### Edit a team
 

@@ -74,7 +74,7 @@ Embrace a culture of continuous improvement by soliciting feedback, conducting r
 
 ## Power Platform facilitation
 
-If your workload includes a copilot, you can **analyze performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your copilot's performance. It uses AI to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring copilot performance metrics and discovering areas for improvement.
+If your workload includes an agent, you can **analyze performance and usage in Copilot Studio**: Copilot [Analytics](/microsoft-copilot-studio/analytics-summary) provides a comprehensive overview of your agent's performance. It uses AI to identify which topics are having the greatest impact on escalation rate, abandon rate, and resolution rate. Tracking [conversation engagement](/microsoft-copilot-studio/guidance/measuring-engagement) rates and [outcomes](/microsoft-copilot-studio/guidance/measuring-outcomes) is essential for measuring agent performance metrics and discovering areas for improvement.
 
 ## Experience Optimization checklist
 

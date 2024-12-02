@@ -32,14 +32,14 @@ Follow these steps to ask a question:
 
 You'll get an AI-powered blueprint in response to your question including an overview and suggested next steps.
 
-
 ## Ask questions about your data
 
 One of the many benefits of Project Sophia is that you can connect to your business data; currently Dynamics 365 Sales. Additionally, you can further enrich the analysis by uploading data files. The [supported file formats](data-connections.md#supported-data-files) are .csv, .xlsx, and .pdf.
 
 Use one of the following options to ask questions about your data:
+
    - On the Home screen, on the **Onboarding** tile, select **Go** > **Add data** > upload data or use the sample data. You can also use the sample sales data provided to familiarize yourself with Project "Sophia".
-   - On the Home screen, select **New workspace** > **Add data** > use data from **Dataverse**, or **Dynamics 365 Sales**.
+   - On the Home screen, select **New workspace** > **Add data** > use data from **Dataverse**, **Dynamics 365 Sales**, or other available connection types.
    - On the Home screen, select **New workspace** > **Add data** > **Upload files**.
     > [!IMPORTANT]
     > You need to have account at the data source to establish a connection to it. For more information, see [Connect to your data](data-connections.md).
@@ -69,4 +69,3 @@ Legend:
 1. **Select tool**: Use the **Select tool** to select a template or a block. 
 1. **AI cursor**: Use the [AI cursor](ai-cursor.md) to ask questions about the content on a blueprint or a block of content in the blueprint.
 1. **Zoom and pan**: Use the zoom and pan options to quickly navigate content. The pan button provides an overview of the entire workspace, which lets you navigate and zoom in and out on a blueprint.
-
