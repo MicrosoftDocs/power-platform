@@ -72,7 +72,7 @@ No. As soon as you enable pay-as-you-go for your environment, all apps will be b
 ### I don't have admin permissions for the environment I'm working with. Can I set up pay-as-you-go for the environment?
 No. You need admin permissions for the environment to be able to link the environment to a billing policy. Check out [Who can set it up](pay-as-you-go-set-up.md#who-can-set-it-up) for details on permissions.
 
-### Can I turn on or turn off specific meters?
+### Can I turn on or off specific meters?
 Yes! Starting December 2024, you have the option to select specific product meters when turning on a pay-as-you-go plan. 
 
 > [!Note]
