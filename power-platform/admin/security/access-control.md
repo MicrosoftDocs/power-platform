@@ -4,7 +4,7 @@ description: Learn how to manage access controls in the Power Platform admin cen
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 11/26/2024
 ms.custom: ignite-2024
 author: matapg007
 ms.author: matgupta
