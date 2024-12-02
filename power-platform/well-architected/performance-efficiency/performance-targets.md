@@ -67,7 +67,7 @@ When you identify key metrics to focus on, consider metrics related to availabil
 
 - _Response time:_ Latency and load time are common response time metrics. Latency is the time it takes to respond to a request (200 milliseconds). Load time is the time it takes for an application or web page to be interactive. A common target is 99% of customer lookup requests completing in less than 2 seconds.
 
-- _Deflection rate:_ In the context of conversational AI, deflection measures the percentage of requests completed through self-service that would otherwise be handled by live agents. In other words, it indicates the number of tasks that can be automated, reducing the workload for the team. Optimizing the copilot deflection rate is one of the top focus areas for organizations aiming to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), as well as to improve the copilot's overall performance. Key indicators in Copilot Studio that help improve copilot performance include resolution rate, escalation rate, and CSAT.
+- _Deflection rate:_ In the context of conversational AI, deflection measures the percentage of requests completed through self-service that would otherwise be handled by live agents. In other words, it indicates the number of tasks that can be automated, reducing the workload for the team. Optimizing the agent deflection rate is one of the top focus areas for organizations aiming to achieve their business goals around return on investment (ROI) and customer satisfaction (CSAT), as well as to improve the agent's overall performance. Key indicators in Copilot Studio that help improve agent performance include resolution rate, escalation rate, and CSAT.
 
 ### Set specific targets
 
@@ -111,7 +111,7 @@ Power Platform ensures consistent availability and performance by applying servi
 - [Service protection API limits](/power-apps/developer/data-platform/api-limits?tabs=sdk)
 - [Limits of automated, scheduled, and instant Power Automate flows](/power-automate/limits-and-config)
 
-[Copilot Studio](/microsoft-copilot-studio/analytics-overview) has a comprehensive set of analytics that identify the key performance indicators for your copilot. Multiple charts show you trends and usage for your copilot's topics. These charts use AI to highlight the topics that have the greatest impact on your copilot's performance. You can also design a [custom analytics strategy](/microsoft-copilot-studio/guidance/custom-analytics-strategy) to create a report not covered by out-of-the-box analytics.
+[Copilot Studio](/microsoft-copilot-studio/analytics-overview) has a comprehensive set of analytics that identify the key performance indicators for your agent. Multiple charts show you trends and usage for your agent's topics. These charts use AI to highlight the topics that have the greatest impact on your agent's performance. You can also design a [custom analytics strategy](/microsoft-copilot-studio/guidance/custom-analytics-strategy) to create a report not covered by out-of-the-box analytics.
 
 ## Performance Efficiency checklist
 

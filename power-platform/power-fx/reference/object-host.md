@@ -130,7 +130,7 @@ Run your app on different devices and with different browsers and you will see r
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
 Host.OSType: Windows
 Host.SessionID: ee2eed1a-8455-4e68-a433-a709302d0c71
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: 
 ```
 
@@ -140,7 +140,7 @@ Host.Version:
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 PowerApps/e1c23ff9-4822-4e75-a003-01c91407a4d2
 Host.OSType: Windows
 Host.SessionID: 3ebec22f-ee2e-412a-b3eb-45d97db34863
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Native/3.23084.8(iOS)
 ```
 
@@ -150,7 +150,7 @@ Host.Version: PowerApps-Native/3.23084.8(iOS)
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0
 Host.OSType: Windows
 Host.SessionID: 283309a4-d88b-4b2a-88de-73b47d1b62d0
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Web/3.23084.6(Windows)
 ```
 
@@ -160,6 +160,6 @@ Host.Version: PowerApps-Web/3.23084.6(Windows)
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
 Host.OSType: iOS
 Host.SessionID: a09a946d-ce71-4c1f-bd35-519c79849c8d
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Web/3.23084.6(iOS)
 ```
