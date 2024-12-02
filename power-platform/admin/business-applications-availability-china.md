@@ -82,7 +82,6 @@ The Microsoft Entra account management services are hosted on physical servers m
 #### Power Apps features not available
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China.
-- [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
 - [Integrate data into Microsoft Dataverse](./data-integrator.md)
 - [Export to Azure Data Lake (aka Athena)](/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Dataverse to Dynamics 365 finance and operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
