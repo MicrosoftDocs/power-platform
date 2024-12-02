@@ -2,7 +2,7 @@
 title: Manage Copilot Studio messages and capacity 
 description: Learn how to manage Copilot Studio messages and capacity.
 author: amiyapatr-zz
-ms.date: 12/01/2024
+ms.date: 12/02/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 ms.subservice: admin
@@ -69,7 +69,7 @@ Displays the daily trend of capacity consumption over the past three months.
 Highlights the top environments based on Copilot Studio message usage.
 
 ## Use the Environments tab
-The Environments tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
+The **Environments** tab  provides details on the Copilot Studio message capacity consumed per environment, including the number of messages deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
 # [Classic admin center](#tab/classic)
 
