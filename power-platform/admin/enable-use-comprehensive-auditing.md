@@ -191,11 +191,11 @@ The following are some examples of logs created with Activity Logging.
 |    ClientIP     |                                                   131.107.XXX.XX                                                    |
 |    Operation    |                                                      Retrieve                                                       |
 |      Date       |                                                3/2/2018 11:25:56 PM                                                 |
-|    EntityId     |                                        0a0d8709-711e-e811-a952-000d3a732d76                                         |
+|    EntityId     |                                        00aa00aa-bb11-cc22-dd33-44ee44ee44ee                                         |
 |   EntityName    |                                                       Account                                                       |
 |      Query      |                                                         N/A                                                         |
 |  QueryResults   |                                                         N/A                                                         |
-|     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=0a0d8709-711e-e811-a952-000d3a732d76` |
+|     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee` |
 
 ### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this) 
 
@@ -209,7 +209,7 @@ The following are some examples of logs created with Activity Logging.
 |EntityId     |N/A         |
 |EntityName     |Account          |
 |Query     |\<filter type="and">\<condition column="ownerid" operator="eq-userid" />\<condition column="statecode" operator="eq" value="0" />\</filter>         |
-|QueryResults     |0a0d8709-711e-e811-a952-000d3a732d76, dc136b61-6c1e-e811-a952-000d3a732d76        |
+|QueryResults     |00aa00aa-bb11-cc22-dd33-44ee44ee44ee, dc136b61-6c1e-e811-a952-000d3a732d76        |
 |ItemURL     |N/A        |
 
 ### Example 3 – List of messages logged when user converts a lead to opportunity 

@@ -5,11 +5,13 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks, matp, ratrtile
 ms.topic: how-to
-ms.date: 09/03/2024
+ms.date: 11/12/2024
 ms.custom: template-how-to
 contributors:
-- kavehkazms
-- lauravasiliums
+  - samathur
+  - v-aangie
+  - kavehkazms
+  - lauravasiliums
 
 ---
 # Manage your customer-managed encryption key
@@ -37,8 +39,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 
 - Dataverse (Custom solutions and Microsoft services)
 - Dataverse [Copilot for model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot)  
-- [Power Automate](/power-automate/customer-managed-keys) <sup>1</sup>
-- Power Apps
+- [Power Automate](/power-automate/customer-managed-keys)
 - Chat for Dynamics 365
 - [Dynamics 365 Sales](/dynamics365/sales/sales-gdpr-faqs#can-the-dynamics-365-sales-data-be-encrypted-using-customer-managed-encryption-key-cmk)
 - Dynamics 365 Customer Service
@@ -51,9 +52,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 - Dynamics 365 Supply Chain Management (Finance and operations)
 - Dynamics 365 Fraud Protection (Finance and operations)
 
-<sup>1</sup> When you apply the customer managed key to an environment that has existing Power Automate flows, the flows data continues to be encrypted with Microsoft-managed key. More information: [Power Automate customer manged key](/power-automate/customer-managed-keys).
-
-> [!Note]
+> [!NOTE]
 > Nuance Conversational IVR and [Maker Welcome Content](welcome-content.md) are excluded from customer-managed key encryption.
 
 [Microsoft Copilot Studio](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) stores its data in their own storage and in [Microsoft Dataverse](/power-apps/maker/data-platform/data-platform-intro). When you apply the customer-managed key to these environments, only the data stores in **Microsoft Dataverse** are encrypted with your key. The non-Microsoft Dataverse data continues to be encrypted with the Microsoft-managed key.

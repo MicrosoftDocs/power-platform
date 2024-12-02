@@ -14,6 +14,7 @@ search.audienceType:
   - maker
 ---
 # Scenario 1: Citizen development
+
 This scenario aims at the legacy canvas app makers and flow makers in Power Apps and Power Automate, respectively, who work in a Microsoft Dataverse environment *without* a Dataverse database.
 
 You currently build canvas apps and flows that are *not* part of a solution, and
@@ -37,7 +38,7 @@ More information: [Solution concepts](solution-concepts-alm.md)
 3.  Follow the steps in [Scenario 0: ALM for a new project](new-project-alm.md) to move to a healthy ALM.
 
 ### See also
-[Scenario 2: Moving from a single production environment](move-from-single-env-alm.md)
 
+[Scenario 2: Moving from a single production environment](move-from-single-env-alm.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

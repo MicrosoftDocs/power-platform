@@ -50,7 +50,7 @@ This example returns data for all of the rulesets available.
 ```http
 GET [Geographical URI]/api/ruleset?api-version=2.0
 Accept: application/json
-x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
+x-ms-correlation-id: aaaa0000-bb11-2222-33cc-444444dddddd
 Content-Type: application/json; charset=utf-8
 ```
 

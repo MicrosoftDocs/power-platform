@@ -80,11 +80,11 @@ This example issues a status check call with the result being a completion.
 **Request**
 
 ```http
-GET [Geographical URI]/api/status/9E378E56-6F35-41E9-BF8B-C0CC88E2B832&api-version=1.0
+GET [Geographical URI]/api/status/aaaa0000-bb11-2222-33cc-444444dddddd&api-version=1.0
 Accept: application/json
 Content-Type: application/json; charset=utf-8
-x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
-x-ms-tenant-id: F2E60E49-CB87-4C24-8D4F-908813B22506
+x-ms-correlation-id: aaaa0000-bb11-2222-33cc-444444dddddd
+x-ms-tenant-id: aaaabbbb-0000-cccc-1111-dddd2222eeee
 ```
 
 **Response**
@@ -96,7 +96,7 @@ Content-Type: application/json; charset=utf-8
 {
     "privacyPolicy":"https://go.microsoft.com/fwlink/?LinkID=310140",
     "progress":100,
-    "resultFileUris":["https://fakeblob.blob.core.windows.net/report-files/mySolution.zip?sv=2017-11-09&sr=b&sig=xyz&se=2019-06-11T20%3A27%3A59Z&sp=rd"],"runCorrelationId":"9E378E56-6F35-41E9-BF8B-C0CC88E2B832","status":"Finished","issueSummary":
+    "resultFileUris":["https://fakeblob.blob.core.windows.net/report-files/mySolution.zip?sv=2017-11-09&sr=b&sig=xyz&se=2019-06-11T20%3A27%3A59Z&sp=rd"],"runCorrelationId":"aaaa0000-bb11-2222-33cc-444444dddddd","status":"Finished","issueSummary":
     {
         "informationalIssueCount":0,
         "lowIssueCount":0,
