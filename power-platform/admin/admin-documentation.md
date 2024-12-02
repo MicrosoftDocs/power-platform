@@ -3,7 +3,7 @@ title: Administer Microsoft Power Platform
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
 author: sericks007
 ms.topic: overview
-ms.date: 08/26/2024
+ms.date: 10/11/2024
 ms.author: sericks
 ---
 # Administer Microsoft Power Platform
@@ -23,7 +23,7 @@ Currently, the admin center provides the following capabilities.
 |Environments | View, create, and manage your environments. Select an environment to see details and manage its setting. Learn more in [Manage environment settings](./admin-settings.md).|
 | Environment groups |  Similar to folders, _environment groups_ are designed to help administrators organize their flat list of environments into structured groups based on different criteria, such as business unit, project, and location. Learn more in [Environment groups](environment-groups.md). |
 | Advisor | Power Platform Advisor is your guide to personalized recommendations to optimize your Power Platform tenant. Advisor analyzes all Managed Environments and the apps in these environments within your Power Platform tenant. Advisor offers solutions to enhance security, reliability, and overall health. Learn more in [Use Power Platform Advisor](power-platform-advisor.md).|
-|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. Learn more in [Manage security](security/security-posture-overview.md). |
+|Security | Run your organizational workloads in the safest way possible with a wide set of security features available. Learn more in [Security overview](security/security-overview.md). |
 |Analytics     | Get a detailed view of key metrics for Microsoft Power Platform apps. Learn more in [Microsoft Dataverse analytics](./analytics-common-data-service.md).      |
 |Billing  |  View a summary of environments in your tenant requiring licensing attention and license consumption for your environments. Learn more in [Business subscription and billing documentation](/microsoft-365/commerce) and [View license consumption](view-license-consumption-issues.md).  |
 |Settings  |  Manage settings for all environments in your tenant. Learn more in [Tenant settings](tenant-settings.md). |
