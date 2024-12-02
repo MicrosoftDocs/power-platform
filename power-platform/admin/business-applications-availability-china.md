@@ -4,7 +4,7 @@ description: Power Apps operated by 21Vianet and Power Automate operated by 21Vi
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/20/2024
+ms.date: 12/02/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -12,6 +12,7 @@ search.audienceType:
 contributors:
   - JesseParsons
 ms.contributors:
+  - olegov
   - aleahy
   - iyanni
   - pvayner
@@ -82,7 +83,6 @@ The Microsoft Entra account management services are hosted on physical servers m
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China.
 - [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
-- [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) 
 - [Integrate data into Microsoft Dataverse](./data-integrator.md)
 - [Export to Azure Data Lake (aka Athena)](/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Dataverse to Dynamics 365 finance and operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
