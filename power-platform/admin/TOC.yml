@@ -80,6 +80,8 @@
                   href: view-license-consumption-issues.md
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
+                - name: Manage Copilot Studio messages and capacity
+                  href: manage-copilot-studio-messages-capacity.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
