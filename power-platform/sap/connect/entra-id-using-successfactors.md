@@ -16,7 +16,7 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/21/2024
+ms.date: 12/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -24,6 +24,8 @@ ms.subservice: solution-templates
 ---
 
 # Microsoft Entra ID using SuccessFactors (Preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 This guide walks you through setting up the **Microsoft Entra ID using SuccessFactors** authentication method in the SAP OData connector for Power Platform. The goal is to accumulate all necessary parameters to enable Single Sign-On (SSO) between Microsoft Entra ID and SuccessFactors.
 

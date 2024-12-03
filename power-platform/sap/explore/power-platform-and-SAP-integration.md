@@ -12,7 +12,7 @@ contributors:
 - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/22/2024
+ms.date: 12/02/2024
 ms.service: power-platform
 ms.subservice: sap
 ms.custom: ignite-2024
@@ -33,10 +33,10 @@ The ERP connector communicates with SAP over the RFC protocol through the SAP .N
 
 ## SAP OData connector
 
-The OData connector, jointly developed by Microsoft and SAP, is supported across many SAP products and uses the [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html). You can find more information about SAP Products supporting OData in [The importance and value of OData in the SAP ecosystem - SAP Community](https://community.sap.com/t5/technology-blogs-by-sap/the-importance-and-value-of-odata-in-the-sap-ecosystem/ba-p/13492946)
+The OData connector is supported across many SAP products and uses OASIS [OData Version 4.01 Protocol](https://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html). Both Microsoft and SAP are on the OASIS board. You can find more information about SAP products supporting OData in [The importance and value of OData in the SAP ecosystem - SAP Community](https://community.sap.com/t5/technology-blogs-by-sap/the-importance-and-value-of-odata-in-the-sap-ecosystem/ba-p/13492946).
 
 > [!NOTE]
->There may be issues where a support ticket with SAP will need to be submitted for additional support from SAP.
+> There may be instances where it is best to submit a support ticket with SAP for additional support.
 
 ## Licensing
 
@@ -45,7 +45,7 @@ Users of Power Platform apps integrated with SAP need the following licenses:
 - A Power Apps Premium license
 - An SAP indirect-named user license
 
-If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It's worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses. Customers can also use [Digital Access Licenses](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
+If you already have SAP direct-named user licenses, you can use these licenses with Power Apps. It's worth noting, however, that SAP indirect-named user licenses cost less than direct-named user licenses. Customers can also use [Digital Access Licenses](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/999033817c60412f88303c6d6a80c348/4786b16cae0047279eac879b7701d044.html?version=2021.001&locale=en-US).
 
 ## Enterprise templates for Power Platform
 
