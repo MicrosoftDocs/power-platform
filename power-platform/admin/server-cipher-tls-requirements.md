@@ -29,19 +29,21 @@ To comply with our security policy for a secure connection, your server must hav
 1. Transport Layer Security (TLS) 1.3/1.2 compliance
 
 2. At least one of the following ciphers: 
-## TLS 1.3
-   TLS_AES_256_GCM_SHA384 <br />
-   TLS_AES_128_GCM_SHA256
 
-## TLS 1.2 
-   TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br />
-   TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br />
-   TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br />
-   TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
-   TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+    - TLS 1.3 ciphers:
+       - TLS_AES_256_GCM_SHA384
+       - TLS_AES_128_GCM_SHA256
+
+    - TLS 1.2 ciphers:
+       - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+       - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+       - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+       - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+       - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+       - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+       - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+       - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+
 
    > [!IMPORTANT]
    > Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated).
