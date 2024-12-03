@@ -1,0 +1,201 @@
+### YamlMime:Marketing
+title: Power Platform and SAP Microsoft Learn hub
+metadata:
+  title: 'Learn how to accelerate Power Platform and SAP integration | Microsoft Learn'
+  description: Explore guidance, templates, samples, and tools to integrate Power Platform and SAP and unlock new capabilities. 
+  ms.service: power-platform
+  ms.subservice: connectors
+  keywords: what are Power Platform SAP connectors, how to use Power Platform with SAP, Power Platform and SAP documentation
+  ms.topic: marketing-hub
+  ms.author: edleh
+  author: edlehman
+  ms.reviewer: ellenwehrle
+  ms.date: 10/31/2024
+  ms.collection: power-platform
+  brand: power-platform
+sections:
+- componentType: hero
+  supertitle: Microsoft Learn
+  title: Power Platform and SAP
+  size: small
+  textColor: brand
+  summary: "Microsoft Power Platform is a suite of AI-enabled, low-code development tools designed to help users build custom business solutions. Organizations using SAP leverage Power Platform as the agility layer to build applications and automate business processes that are deeply connected to their SAP system. Find out how you can make the most of your SAP system and speed up time to value with Power Platform here." 
+  background:
+    componentType: image # Note difference with the below example
+    src: media/index-page/Hero.png
+  #subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+- componentType: cards
+#   #   backgroundColor: dark
+#   #   isShadowless: false # Removes the box shadow from around the card
+  title: "Start your Power Platform and SAP learning journey"
+  #summary: Learn how to use Microsoft Power Platform with your SAP data.  
+  blocks:
+     - componentType: card
+       title: "Step 1. Understand SAP integration"
+       summary: Learn how Power Platform helps organizations running SAP streamline and automate their business processes.
+       imageUrl: media/index-page/Understand_integration.png
+       url: explore/power-platform-and-SAP-integration.md
+      # links: 
+      #   - componentType: link
+      #     text: Explore Power Platform and SAP integration
+      #     url: /power-platform/sap/explore-power-platform-and-SAP-integration
+     - componentType: card
+       title: "Step 2. Get started with Power Platform"
+       summary: Learn how to get started with your enterprise adoption of Power Platform.
+       imageUrl: media/index-page/Get_started.png
+       url: https://learn.microsoft.com/en-us/power-platform/guidance/
+     - componentType: card
+       title: "Step 3. Connect to SAP"
+       summary: "Already have a Power Platform environment? Use SAP connectors to integrate with your SAP environment." 
+       imageUrl: media/index-page/Connect.png
+      # links: 
+      #   - componentType: link
+      #     text: Connect Power Platform and SAP
+       url: connect/connect-power-platform-and-SAP.md
+        # - componentType: link
+        #   text: Watch videos
+        #   url: /collections/20mijo44z6xq6
+     - componentType: card
+       title: "Step 4. Leverage templates"
+       summary: Use one of the SAP templates for Power Platform as is, extend it to meet your requirements, or build your own solution based on template patterns.
+       imageUrl: media/index-page/Leverage_templates.png
+      # links: 
+      #   - componentType: link
+      #     text: Procurement template for SAP
+       url: https://learn.microsoft.com/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started
+- componentType: grid
+  title: Find Power Platform and SAP resources for your role
+    # summary: Discover how Power Platform and SAP integration is relevant to your role and explore these Microsoft Learn resources.
+  blocks:
+    - componentType: icon-card
+      title: Power Platform app maker
+      summary: "Work with BAPIs, RFCs, and complex JSON structures."
+      url: /power-platform/sap/roles-guidance/power-platform-app-maker
+      icon:
+        componentType: image
+        src: /power-platform/sap/media/index-page/power_platform_app_maker.svg
+    - componentType: icon-card
+      title: SAP consultant
+      summary: "Build Power Apps integrated with SAP."
+      url: /power-platform/sap/roles-guidance/sap-consultant
+      icon:
+        componentType: image
+        src: /power-platform/sap/media/index-page/sap_technical_consultant.svg
+    # - componentType: icon-card
+    #   title: Power Platform administrator
+    #   summary: "Guidance on SAP access methods and a directory of the most used SAP data. (later)"
+    #   url: /collections/4gmb2m2k8n6k7
+    #   icon:
+    #     componentType: image
+    #     src: /copilot/media/copilot/copilot-learning-hub/administrator-icon.png
+    - componentType: icon-card
+      title: Compliance and security administrator
+      summary: "Govern and secure Power Platform and SAP integration."
+      url: /power-platform/sap/roles-guidance/governance-administrator
+      icon:
+        componentType: image
+        src: /power-platform/sap/media/index-page/governance_administrator.svg
+    # - componentType: icon-card
+    #   title: Technology manager 
+    #   summary: "Considerations for implementing Power Platform integration with SAP (later)"
+    #   url: https://www.microsoft.com
+    #   icon:
+    #     componentType: image
+    #     src: /copilot/media/copilot/copilot-learning-hub/technology-icon.png
+   
+    - componentType: icon-card
+      title: SAP Basis administrator
+      summary: "Learn integration with SAP details and automate administration with Copilots."
+      url: /power-platform/sap/roles-guidance/sap-basis-administrator
+      icon:
+        componentType: image
+        src: /power-platform/sap/media/index-page/sap_basis_administrator.svg
+    # - componentType: icon-card
+    #   title: Partner
+    #   summary: "Resources for Microsoft Partners to integrate customer Power and SAP environments. (later)"
+    #   url: https://www.microsoft.com
+    #   icon:
+    #     componentType: image
+    #     src: /copilot/media/copilot/copilot-learning-hub/independent-software-vendor-icon.png
+# Documentation
+- componentType: grid
+  title: Documentation
+  #summary: Explore Power Platform and SAP documentation and resources.
+  blocks:
+    - componentType: summary-card
+      title: SAP Setup Assistant
+      summary: Follow a guided process to install the on-premises data gateway and SAP Procurement template.
+      url: /power-platform/enterprise-templates/finance/sap-procurement/administer/sap-setup-assistant/overview
+    - componentType: summary-card
+      title: SAP ERP connector
+      summary: Get started with the SAP ERP connector.
+      url: /connectors/saperp
+    - componentType: summary-card
+      title: SAP OData connector
+      summary: Connect Power Platform to S/4HANA SAP, SuccessFactors, and other SAP apps.
+      url: /connectors/sapodata
+    - componentType: summary-card
+      title: Secure Network Communications (SNC)
+      summary: Set up SNC for SAP and Microsoft Power Platform.
+      url: connect/secure-network-communications.md
+    - componentType: summary-card
+      title: Entra ID using Kerberos for SSO
+      summary: Use Kerberos SSO connections from Power Platform to SAP.
+      url: connect/entra-id-kerberos.md    
+    - componentType: summary-card
+      title: Entra ID using certificates for SSO
+      summary: Use certificate-based SSO connections from Power Platform to SAP.
+      url: connect/entra-id-certs.md
+    - componentType: summary-card
+      title: Entra ID using Azure API Management and OAuth
+      summary: Use Azure API Management and OAuth from Power Platform to SAP.
+      url: connect/entra-id-apim-oauth.md
+    - componentType: summary-card
+      title: Power Platform security and governance
+      summary: Set up and maintain security and governance for Power Platform.
+      url: /power-platform/admin/security
+    - componentType: summary-card
+      title: Power Apps and Teams integration
+      summary: Create apps in Microsoft Teams by using Power Apps.
+      url: /power-apps/teams/create-apps-overview
+    - componentType: summary-card
+      title: Power Platform Administration
+      summary: Manage Power Platform environments.
+      url: /power-platform/admin/
+    - componentType: summary-card
+      title: Power Platform solutions
+      summary: Use solutions for application management and migration.
+      url: /power-platform/alm/solution-concepts-alm
+    - componentType: summary-card
+      title: Power Platform ALM
+      summary: Implement application lifecycle management (ALM) using Microsoft Power Platform.
+      url: /power-platform/alm/
+
+# # Additional links section
+- componentType: grid
+  title: More resources
+  blocks:
+    - componentType: summary-card
+      title: SAP on Power Platform Community Forums
+      summary: Engage with the community to learn and share about using SAP connectors.
+      url: https://community.powerplatform.com/globalsearch/?q=SAP
+    - componentType: summary-card
+      title: Power Platform and SAP on the SAP on Azure YouTube channel
+      summary: Learn about Power Platform and SAP on the Power Platform and SAP on Azure YouTube channel.
+      url: https://www.youtube.com/playlist?list=PLvqyDwoCkBXa3K3b8Jc3eckPDnJj6xd11
+    - componentType: summary-card
+      title: SAP on Power Platform YouTube channel
+      summary: Learn about Power Platform and SAP on the Power Platform YouTube channel.
+      url: https://www.youtube.com/@mspowerplatform/search?query=SAP
+    - componentType: summary-card
+      title: SAP on Azure
+      summary: Run SAP on Azure.
+      url: /azure/sap/
+    - componentType: summary-card
+      title: Release plans
+      summary: Find out what's new in Dynamics 365, Power Platform, and Cloud for Industry.
+      url: https://releaseplans.microsoft.com/?app=Power+Apps
+    - componentType: summary-card
+      title: SAP and Power Platform white paper
+      summary: Power Platform considerations for SAP experts.
+      url: explore/white-paper.md

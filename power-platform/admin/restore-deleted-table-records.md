@@ -1,12 +1,12 @@
 ---
 title: Restore deleted Microsoft Dataverse table records (preview)
-description: "Learn how to use the Power Platform admin center to view restore deleted Microsoft Dataverse table records."
-author: adkuppa
+description: Learn how to use the Power Platform admin center to view restore deleted Microsoft Dataverse table records.
+author: shahzorkhan123
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/29/2024
 ms.subservice: admin
-ms.author: adkuppa
+ms.author: shkhan
 search.audienceType: 
   - admin
 contributors:
@@ -26,7 +26,8 @@ Developers should read [Restore deleted records with code (preview)](/power-apps
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 > - This feature is currently being deployed and might not yet be available in your region.
-> - During preview, any storage used by the recycle bin will not count against your organization's storage capacity.
+> - Any storage used by the recycle bin doesn't count against your organization's storage capacity.
+> - The recycle bin feature isn't available for [Dataverse for Teams](about-teams-environment.md).
 
 ## Prerequisites
 
