@@ -131,7 +131,7 @@ SAP user accounts need to access the `RFC_Metadata` function group and the respe
 
 ## Related content
 
-- [SAP Single Sign-On](<https://help.sap.com/docs/SAP_SINGLE_SIGN-ON>
+- [SAP Single Sign-On](<https://help.sap.com/docs/SAP_SINGLE_SIGN-ON>)
 - [Secure Login for SAP Single Sign-On Implementation Guide](https://help.sap.com/docs/SAP_SINGLE_SIGN-ON/df185fd53bb645b1bd99284ee4e4a750/631b1669678d41d79d94601c238e218b.html)
 - [SAP Identity and Access Management (IAM) Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/identity-and-access-management-iam)
 - [SAP ERP connector](/connectors/saperp/)
