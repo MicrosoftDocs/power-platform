@@ -8,19 +8,18 @@ contributors:
 ms.author: menakakollu
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 09/10/2024
+ms.date: 12/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+#customer intent: As an administrator, I want to learn about Microsoft's SAP Setup Assistant so I can integrate Power Platform with SAP and set up the SAP Procurement template.
 ---
 
-# SAP Setup Assistant
+# What is the SAP Setup Assistant?
 
 The SAP Setup Assistant walks you through a checklist of manual and automated steps to help you get your Power Platform + SAP Procurement installation up and running as quickly as possible.
 
-The Assistant is organized by stages, activities, and steps. Each stage has at least one activity with specific steps you need to complete.
-
-The stages SAP Setup Assistant walk you through are:
+The Assistant is organized by stages, activities, and steps. Each stage has at least one activity with specific steps you need to complete. For example, you'll walk through these stages with the SAP Setup Assistant:
 
 - **Introduction**: Get to know the SAP Procurement template and the SAP Setup Assistant.
 - **Prerequisites**: Ensure you have the necessary licensing and environment setup.
@@ -30,15 +29,15 @@ The stages SAP Setup Assistant walk you through are:
   
 To ensure the best chance of a successful installation and deployment of the SAP Procurement template, it's important to complete as many activity steps as possible in each stage before going to the next stage.
 
-To avoid having to transfer downloaded files across the machines, we recommend to **run the SAP Setup Assistant on the Windows Virtual Machine** where the data gateway will be setup. 
+## Access SAP Setup Assistant
+
+The SAP Setup Assistant template is available in [Microsoft AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>).
+
+To avoid having to transfer downloaded files across the machines, we recommend you **run the SAP Setup Assistant on the Windows Virtual Machine** where the data gateway is set up.
 
 ## SAP Setup Assistant package
 
-The SAP Setup Assistant template is available in [Microsoft AppSource](<https://aka.ms/AccessSAPSetupAssistantTemplate>). The template package consists of one solution:
-
-- **SAP Setup Assistant** contains foundational components used for SAP Setup Assistant
-
-### SAP Setup Assistant solution components
+The template package consists of one solution that contains the foundational components used for SAP Setup Assistant:
 
 - One canvas app:
   - **SAP Setup Assistant** is the canvas app that takes user through different stages, activities, and steps.
@@ -87,4 +86,3 @@ The SAP Setup Assistant template is available in [Microsoft AppSource](<https://
 ### Next step
 
 [Install and set up the SAP Setup Assistant template](install-and-set-up.md)
-
