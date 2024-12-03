@@ -1,16 +1,19 @@
 ---
-title: "Troubleshoot missing environments"
+title: Troubleshoot missing environments
 description: "Learn how to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/31/2024
+ms.date: 12/03/2024
 ms.subservice: admin
 author: davidme-ms
 ms.author: davidme 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - jordanchodakWork
 ---
+
 # Troubleshoot missing environments
 
 It’s not uncommon for an administrator or a maker to expect to find an environment in the environment list and discover that one or more environments is “missing” from the list. This can occur in the Power Platform admin center, in the Power Apps maker portal, or in the Power Automate portal. Each of these experiences has different requirements for inclusion of environments in the list. The set of environments a given user will see in the list in the context of each of these experiences will vary. 
