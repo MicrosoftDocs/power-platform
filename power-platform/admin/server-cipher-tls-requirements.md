@@ -28,7 +28,7 @@ To comply with our security policy for a secure connection, your server must hav
 
 1. Transport Layer Security (TLS) 1.3/1.2 compliance
 
-2. At least one of the following ciphers: 
+1. At least one of the following ciphers: 
 
     - TLS 1.3 ciphers:
        - TLS_AES_256_GCM_SHA384
@@ -57,7 +57,7 @@ To comply with our security policy for a secure connection, your server must hav
    1. Test your hostname using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html), or
    2. Scan your server using [NMAP](https://nmap.org/)
 
-4. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
+1. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
 
    **For Public/PROD**
 
