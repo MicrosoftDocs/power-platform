@@ -4,7 +4,7 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 03/29/2024
+ms.date: 12/03/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -706,7 +706,7 @@ steps:
     CopyType: MinimalCopy
     OverrideFriendlyName: true
     FriendlyName: 'Contoso Test'
-    DisableAdminMode: false
+    SkipAuditData: true
 ```
 
 #### Parameters (Copy-env)
@@ -720,7 +720,7 @@ steps:
 | `CopyType`<br/>Copy type | The type of copy to perform: FullCopy or MinimalCopy |
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
-| `DisableAdminMode`<br/>Disable admin mode | Whether to disable administration mode (true\|false). |
+| `SkipAuditData`<br/>SkipAuditData | Whether to skip audit data during copy operation. (true\|false). |
 
 ### Power Platform Restore Environment
 
