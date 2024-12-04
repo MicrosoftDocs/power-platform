@@ -1,5 +1,5 @@
 ---
-title: "Control user access to environments: security groups and licenses | Microsoft Docs"
+title: Control user access to environments: security groups and licenses
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
 author: paulliew
