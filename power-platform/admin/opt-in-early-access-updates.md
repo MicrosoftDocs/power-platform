@@ -1,15 +1,16 @@
 ---
-title: "Opt in to early access updates  | MicrosoftDocs"
+title: Opt in to early access updates 
 description: Opt in to early access updates in Microsoft Power Platform and Dynamics 365. 
 author: samathur
 ms.subservice: admin
 ms.author: samathur
 ms.reviewer: sericks
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 12/04/2024
 search.audienceType: 
   - admin
 ms.contributors:
+- lekha27
 - swatim
 - matleon
 ---
