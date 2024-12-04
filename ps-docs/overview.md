@@ -80,4 +80,4 @@ If you don't sign in to Project "Sophia", you can't ask questions or add any dat
 
 ## Legal and regulatory considerations
 
-Organizations need to evaluate potential specific legal and regulatory obligations when using Project "Sophia". Project "Sophia" is not appropriate for use in every industry or scenario. Additionally, Project "Sophia" is not designed for and should not be used for social scoring. Always use Project "Sophia" in accordance with the applicable terms of service and the [Generative AI Code of Conduct.](/legal/cognitive-services/openai/code-of-conduct).
+Organizations need to evaluate potential specific legal and regulatory obligations when using Project "Sophia". Project "Sophia" is not appropriate for use in every industry or scenario. Additionally, Project "Sophia" is not designed for and should not be used for social scoring. Always use Project "Sophia" in accordance with the applicable terms of service and the [Generative AI Code of Conduct.](/legal/cognitive-services/openai/code-of-conduct)
