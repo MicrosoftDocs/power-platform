@@ -720,7 +720,7 @@ steps:
 | `CopyType`<br/>Copy type | The type of copy to perform: FullCopy or MinimalCopy |
 | `OverrideFriendlyName`<br/>Override friendly name | Change the target environment's friendly name to another name (true\|false). |
 | `FriendlyName`<br/>Friendly name | The friendly name of the target environment. |
-| `SkipAuditData`<br/>SkipAuditData | Whether to skip audit data during copy operation. (true|false). |
+| `SkipAuditData`<br/>SkipAuditData | Whether to skip audit data during copy operation. (true\|false). |
 
 ### Power Platform Restore Environment
 
