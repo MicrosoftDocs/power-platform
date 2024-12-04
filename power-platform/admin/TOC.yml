@@ -54,6 +54,8 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: Use live chat with persistence
+              href: live-chat-support.md
             - name: View known issues
               href: view-known-issues.md
             - name: Support environments and the consent process
@@ -78,6 +80,8 @@
                   href: view-license-consumption-issues.md
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
+                - name: Manage Copilot Studio messages and capacity
+                  href: manage-copilot-studio-messages-capacity.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
@@ -671,7 +675,9 @@
             - name: Virtual Network support
               items:
                 - name: Virtual Network support overview
-                  href: vnet-support-overview.md
+                  href: vnet-support-overview.md                
+                - name: Virtual Network support white paper
+                  href: virtual-network-support-whitepaper.md   
                 - name: Set up Virtual Network support
                   href: vnet-support-setup-configure.md
             - name: Security FAQs

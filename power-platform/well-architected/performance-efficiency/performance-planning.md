@@ -39,7 +39,7 @@ Design your workload with performance in mind to minimize refactoring after your
 
 - _Integration strategy_: Can you do real-time integrations without slowing down the system? Can you do batch integrations within a certain time? Where is your data? Do you need an on-premises data gateway strategy?
 
-- _Conversation volumes_: When building a copilot, it's important to understand the target volume of messages or conversations and their expected growth. Do your expectations validate the target architecture? What about scale?
+- _Conversation volumes_: When building an agent, it's important to understand the target volume of messages or conversations and their expected growth. Do your expectations validate the target architecture? What about scale?
 
 - _Data modeling_: Do you need to simplify your data structure for faster queries?
 
