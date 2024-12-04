@@ -79,7 +79,7 @@ The following is an example of the **Additional Info** JSON for a create or dele
 
 ```json
 { 
-  "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
+  "policyId": "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", 
   "policyType": "SingleEnvironment", 
   "defaultConnectorClassification": "General", 
   "environmentName": "8a11a4a6-d8a4-4c47-96d7-3c2a60efe2f5" 
@@ -97,7 +97,7 @@ The following is an example of the **Additional Info** JSON for an update operat
 
 ```json
 { 
-  "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
+  "policyId": "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", 
   "policyType": "ExceptEnvironments", 
   "defaultConnectorClassification": "Confidential", 
   "changeSet": { 

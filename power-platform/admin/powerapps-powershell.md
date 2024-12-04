@@ -609,11 +609,11 @@ To exempt flow with ID `f239652e-dd38-4826-a1de-90a2aea584d9` and app with ID `0
 11. PS D:\> $exemptResources = [pscustomobject]@{ 
 12. >>             exemptResources = @($exemptFlow, $exemptApp) 
 13. >>         } 
-14. PS D:\> New-PowerAppDlpPolicyExemptResources -TenantId b1c07da8-2ae2-47e7-91b8-d3418892f507 -PolicyName 65da474a-70aa-4a59-9ae1-65a2bebbf98a -NewDlpPolicyExemptResources $exemptResources 
+14. PS D:\> New-PowerAppDlpPolicyExemptResources -TenantId aaaabbbb-0000-cccc-1111-dddd2222eeee -PolicyName bbbbcccc-1111-dddd-2222-eeee3333ffff -NewDlpPolicyExemptResources $exemptResources 
 15. 
 16. exemptResources 
 17. --------------- 
-18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-b1c07da8-2ae2-47e7-91b8-d3418892f507/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
+18. {@{id=/providers/Microsoft.ProcessSimple/environments/Default-aaaabbbb-0000-cccc-1111-dddd2222eeee/flows/f239652e-dd38-4826-a1de-90a2aea584d9; type=Microsoft.ProcessSimple/environments/flows}, @{id=/providers/Microsoft.PowerApps/apps/06002625-7154-4417-996e-21d7a60ad.. 
 ```
 
 ### DLP exemption experience in the following scenarios

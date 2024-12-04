@@ -1,13 +1,13 @@
 ---
 title: "Server cipher suites and TLS requirements  | MicrosoftDocs"
-description: Configure your servers to meet TLS 1.2 requirements with the latest cipher suites to use Dataverse services securely.
+description: Configure your servers to meet TLS 1.3/1.2 requirements with the latest cipher suites to use Dataverse services securely.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 12/02/2024
 contributors:
     - ColeHarrison-Microsoft 
 search.audienceType: 
@@ -15,7 +15,7 @@ search.audienceType:
 ---
 # Server cipher suites and TLS requirements
 
-A [cipher suite](/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers. Dataverse is using the latest **TLS 1.2 cipher suites as approved by Microsoft Crypto Board.** 
+A [cipher suite](/windows/win32/secauthn/cipher-suites-in-schannel) is a set of cryptographic algorithms. This is used to encrypt messages between clients/servers and other servers. Dataverse is using the latest **TLS 1.3 & 1.2 cipher suites as approved by Microsoft Crypto Board.** 
 
 Before a secure connection is established, the protocol and cipher are negotiated between server and client based on availability on both sides. 
 
@@ -26,18 +26,24 @@ You can use your on-premises/local servers to integrate with the following Datav
 
 To comply with our security policy for a secure connection, your server must have the following: 
 
-1. Transport Layer Security (TLS) 1.2 compliance
+1. Transport Layer Security (TLS) 1.3/1.2 compliance
 
-2. At least one of the following ciphers: 
+1. At least one of the following ciphers: 
 
-   TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br />
-   TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br />
-   TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br />
-   TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br />
-   TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br />
-   TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+    - TLS 1.3 ciphers:
+       - TLS_AES_256_GCM_SHA384
+       - TLS_AES_128_GCM_SHA256
+
+    - TLS 1.2 ciphers:
+       - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+       - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+       - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+       - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+       - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+       - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+       - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+       - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+
 
    > [!IMPORTANT]
    > Older TLS 1.0 & 1.1 and cipher suites, (for example TLS_RSA) have been deprecated; see the [announcement](../important-changes-coming.md#tls-rsa-cipher-suites-are-deprecated).
@@ -51,7 +57,7 @@ To comply with our security policy for a secure connection, your server must hav
    1. Test your hostname using [SSLLABS](https://www.ssllabs.com/ssltest/analyze.html), or
    2. Scan your server using [NMAP](https://nmap.org/)
 
-3. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
+1. The following Root CA Certificates installed. Install only those that correspond to your cloud environment.
 
    **For Public/PROD**
 
@@ -80,7 +86,8 @@ To comply with our security policy for a secure connection, your server must hav
 
    **Why is this need?**
 
-   See [TLS 1.2 Standards Documentation - Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2) - certificate-list.
+   See [The Transport Layer Security (TLS) Protocol Version 1.3](https://datatracker.ietf.org/doc/draft-ietf-tls-rfc8446bis/) and
+    [TLS 1.2 Standards Documentation - Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2) - certificate-list.
 
 ## Why do Dataverse SSL/TLS certificates use wildcard domains?
 
@@ -92,6 +99,6 @@ Wildcard SSL/TLS certificates are by design since hundreds of organization URLs 
 [Exchange server TLS guidance](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649) <br />
 [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
 [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls)  <br />
-[How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)  
+[IETF Datatracker](https://datatracker.ietf.org/) for TLS standards. <br />
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
