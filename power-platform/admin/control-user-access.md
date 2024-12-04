@@ -54,7 +54,7 @@ Note the following information about security groups:
 - When you select a security group, be sure to select a Microsoft Entra security group and not one created in on-premises Windows Active Directory. On-premises Windows AD security groups aren't supported.
 - If a user isn't part of the assigned security group to the environment but has the Azure tenant Global Administrator role, the user will still show as an active user and will be able to sign in.
 - If a user is assigned the Dynamics 365 Service Admin role, then the user must be part of the security group before they are enabled in the environment. They can't access the environment until they are added to the security group and enabled.
-- All your [application users](https://learn.microsoft.com/power-platform/admin/manage-application-users) can run in any environments that are secured with a security group without being a member of the security group.
+- All your [application users](manage-application-users.md) can run in any environments that're secured with a security group, without being a member of the security group.
 
 > [!NOTE]
 > All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they'll get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
