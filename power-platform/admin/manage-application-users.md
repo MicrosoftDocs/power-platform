@@ -7,9 +7,11 @@ ms.author: paulliew
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/06/2024
+ms.date: 12/04/2024
 search.audienceType: 
   - admin
+contributors:
+  - abhijananddv
 ---
 # Manage application users in the Power Platform admin center
 
