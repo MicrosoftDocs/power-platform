@@ -1,8 +1,8 @@
 ---
-title: "Known limitations for data loss prevention (DLP) policies | MicrosoftDocs"
-description:  DLP policies known limitations.
+title: Known limitations for data loss prevention (DLP) policies
+description: Learn more about the known limitations when using our suite of data loss prevention (DLP) capabilities.
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 11/04/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -17,7 +17,7 @@ search.audienceType:
 ---
 
 # Known limitations
-Below are known limitations to know about when leveraging our suite of data loss prevention (DLP) capabilities:
+Below are known limitations to know about when using our suite of data loss prevention (DLP) capabilities:
 
 ## General
 - If you delete an environment and it's still within the 7-day recovery period, you'll still be able to see it in DLP policies when you view them in PowerShell. Once the recovery period ends, the environment is permanently deleted. However, it may take up to 7 days for all references to the environment to be automatically removed from your DLP policies.
@@ -33,10 +33,6 @@ Power Apps treats [Dataverse native](/power-apps/maker/canvas-apps/data-platform
 > - The Dataverse connectors are grouped separately
 > - An app triggers a flow 
 > - Both the app and flow connect to Dataverse
-
-## Child flows
-- Blocking the HTTP connector will also block child flows because those child flows are called using the same HTTP connector technology.
-- If a child flow violates a DLP policy, it will not result in the parent flow becoming non-compliant.
 
 ### Desktop flows
 - There's no support for cross checking the categories between a cloud flow and the desktop flows it calls. This will be supported when [DLP for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview) is generally available.

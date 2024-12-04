@@ -1,19 +1,20 @@
 ---
-title: "Dynamics 365 service description"
-description: "Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC)." 
+title: Dynamics 365 service description
+description: Learn about features that are specific to Microsoft Dynamics 365 US Government as public sector customers deploy into government community cloud (GCC). 
 author: carrema
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 11/21/2024
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contibutors:
-- Akshay-Koushik-Hothur
+  - yukonpeegs
+  - Akshay-Koushik-Hothur
 ms.contributors:
-- ahothur
+  - ahothur
 ---
 
 # Dynamics 365 US Government  
@@ -225,9 +226,11 @@ You use a different set of URLs to access Dynamics 365 US Government environment
 
 ### Dynamics 365 Finance and Supply Chain Management
 - GCC: https://*.operations.gov.microsoftdynamics.us
+- GCC High: https://*.operations.high.microsoftdynamics.us
 
 ### Dynamics 365 Lifecycle Services (LCS)
 - GCC: https://gov.lcs.microsoftdynamics.us
+- GCC High: https://high.lcs.microsoftdynamics.us
 
 ### Telemetry for model-driven apps
 

@@ -173,6 +173,8 @@
               href: ./experience-optimization/interaction-design.md
             - name: XO:09 User interface content
               href: ./experience-optimization/user-interface-content.md
+            - name: XO:10 Conversation design
+              href: ./experience-optimization/conversation-design.md
     - name: Workloads
       items: 
       - name: Overview
