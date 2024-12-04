@@ -105,7 +105,7 @@ In addition to using the entry point on the **Details** page to manage roles, yo
 You can select or deselect roles, and then select **Save**. All selected roles become the current assigned roles for the application user. Any unselected roles aren't assigned.
 
 > [!NOTE]
-> Controlling Applications Users [Access using Security Groups](control-user-access) is not supported.
+> All your application users can run in any environments that are secured with a [security group](https://learn.microsoft.com/power-platform/admin/control-user-access) without being a member of the security group.
 
 ## Activate or deactivate an application user
 
