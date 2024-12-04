@@ -4,7 +4,7 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 03/29/2024
+ms.date: 12/03/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
