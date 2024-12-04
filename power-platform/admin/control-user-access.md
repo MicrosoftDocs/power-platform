@@ -7,7 +7,7 @@ ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: sericks
 ms.contributors:
-- pmantha
+  - pmantha
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: conceptual
@@ -15,6 +15,7 @@ ms.date: 12/04/2024
 search.audienceType: 
   - admin
 ---
+
 # Control user access to environments: security groups and licenses
 
 If your company has multiple environments, you can use security groups to control which licensed users can be members of a particular environment.  
