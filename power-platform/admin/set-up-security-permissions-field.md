@@ -3,11 +3,11 @@ title: "Set up security permissions for a column  | MicrosoftDocs"
 description: Information on how to set up security permissions for a column.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/19/2022
+ms.date: 08/12/2024
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -66,10 +66,8 @@ After you create the profile, you assign users and or teams to that profile, and
 
 5. Select the **Users** tab, select **+ Add Users**, select the users that you want to control access, and then select **Add**. 
 
-   :::image type="content" source="media/field-security-add-users.png" alt-text="Add users to the column security profile.":::
-
-  > [!TIP]
-  > Instead of adding each user, create one or more teams that include all users that you want to control access. 
+    > [!TIP]
+    > Instead of adding each user, create one or more teams that include all users that you want to control access. 
 
 6. Select the **Column Permission** tab, in the Name column select one or more columns, and then select **Edit**. Configure the three columns for the desired access.  
 

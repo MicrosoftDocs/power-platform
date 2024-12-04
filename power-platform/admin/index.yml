@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Power Platform admin documentation
-summary: Use Power Platform admin center to manage environments and settings for Power Apps, Power Automate, Power Virtual agents, and customer engagement apps. 
+summary: Use Power Platform admin center to manage environments and settings for Power Apps, Power Automate, Power Pages, Microsoft Copilot Studio, and customer engagement apps. 
 
 metadata:
   title: Microsoft Power Platform admin documentation
@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: sericks007
   ms.author: sericks
-  ms.date: 10/01/2021 
+  ms.date: 11/13/2024 
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -32,6 +32,8 @@ landingContent:
             url: capacity-storage.md
           - text: Sign in to your apps
             url: sign-in-office-365-apps.md
+          - text: Use the new Power Platform admin center (preview)
+            url: new-admin-center.md
        
 
   # Card

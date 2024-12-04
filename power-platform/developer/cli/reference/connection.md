@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI connection command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI connection command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -62,7 +62,7 @@ Tenant Id
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [connection-create-remarks](includes/connection-create-remarks.md)]
 
@@ -84,7 +84,7 @@ Connection Id.
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [connection-delete-remarks](includes/connection-delete-remarks.md)]
 
@@ -99,7 +99,7 @@ List all Connections.
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [connection-list-remarks](includes/connection-list-remarks.md)]
 
@@ -133,7 +133,7 @@ Tenant Id
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [connection-update-remarks](includes/connection-update-remarks.md)]
 

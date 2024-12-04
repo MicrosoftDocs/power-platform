@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI tool command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI tool command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -37,6 +37,15 @@ Power Platform tools that can be installed and launched.
 ## pac tool admin
 
 Launch Power Platform Admin Center for the current environment.
+
+[!INCLUDE [tool-admin-intro](includes/tool-admin-intro.md)]
+
+
+### Optional Parameters for tool admin
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [tool-admin-remarks](includes/tool-admin-remarks.md)]
 
@@ -72,6 +81,15 @@ List the launchable tools and their local install state and version.
 ## pac tool maker
 
 Launch Power Apps Maker Portal for the current environment.
+
+[!INCLUDE [tool-maker-intro](includes/tool-maker-intro.md)]
+
+
+### Optional Parameters for tool maker
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [tool-maker-remarks](includes/tool-maker-remarks.md)]
 

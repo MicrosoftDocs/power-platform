@@ -3,7 +3,7 @@ title: Microsoft Power Fx expression grammar | Microsoft Docs
 description: Annotated grammar for the Microsoft Power Fx language
 author: gregli-msft
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.topic: reference
 ms.subservice: power-fx
 ms.author: gregli
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Expression grammar
 
@@ -143,7 +143,7 @@ Comments aren't processed within text-literal strings.
 
 The following example includes two delimited comments:
 
-```powerapps-dot
+```power-fx
 /* Hello, world
 */
 "Hello, world"    /* This is an example of a text literal */
@@ -151,7 +151,7 @@ The following example includes two delimited comments:
 
 The following examples include three single-line comments:
 
-```powerapps-dot
+```power-fx
 // Hello, world
 //
 "Hello, world"    // This is an example of a text literal
@@ -202,7 +202,7 @@ A *number literal* is used to write a numeric value and produce a number value.
 
 A *text literal* is used to write a sequence of Unicode characters and produce a text value. Text literals are enclosed in double quotation marks. To include double quotation marks in the text value, repeat the double quotation marks, as shown in the following example:
 
-```powerapps-dot
+```power-fx
 "The ""quoted"" text" // The "quoted" text
 ```
 

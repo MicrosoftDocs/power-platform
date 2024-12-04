@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 09/10/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - mduelae
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 
 # Formula reference - Dataverse
@@ -23,6 +23,18 @@ In this article, learn about all the functions available in Microsoft Dataverse.
 ## <a id="-a"></a> A
 
 **[Abs](reference/function-numericals.md )** – Absolute value of a number.
+
+**[AIClassify](reference/function-ai.md)** – Classifies text into one or more of categories.
+
+**[AIExtract](reference/function-ai.md)** – Extracts specified entities such as registration numbers, phone numbers, or names of people.
+
+**[AIReply](reference/function-ai.md)** – Drafts a reply to the message that you provide.
+
+**[AISentiment](reference/function-ai.md)** – Detects the sentiment of the text that you provide.
+
+**[AISummarize](reference/function-ai.md)** – Summarizes the text that you provide.
+
+**[AITranslate](reference/function-ai.md)** – Translates text from another language.
 
 **[And](reference/function-logicals.md )** – Boolean logic AND. Returns true if all arguments are true. You can also use the [&& operator](reference/operators.md).
 

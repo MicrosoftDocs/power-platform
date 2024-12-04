@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 07/08/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -17,9 +17,9 @@ search.audienceType:
 
 Version 1.52 for the CoE Starter Kit Core Components is now available. This article describes the updates, including the new features and the fixes to existing functionality, included in this release. This version was first made available on July 8, 2020.
 
-## Power Virtual Agents inventory
+## Microsoft Copilot Studio inventory
 
-This version introduces inventory information for Power Virtual Agents. A new Admin | Sync Flows v3 (Chatbots) has been added to sync Power Virtual Agent information to the new Chatbot, Chatbot Component, and Chatbot Component Flow tables. The Power Platform Admin View has been updated to include Chatbot information. The CoE Starter Kit Power BI Dashboard has been updated to include a Virtual Agents overview and Virtual Agents detail page.
+This version introduces inventory information for Microsoft Copilot Studio. A new Admin | Sync Flows v3 (Chatbots) has been added to sync Microsoft Copilot Studio information to the new Chatbot, Chatbot Component, and Chatbot Component Flow tables. The Power Platform Admin View has been updated to include Chatbot information. The CoE Starter Kit Power BI Dashboard has been updated to include a Virtual Agents overview and Virtual Agents detail page.
 
 Information available for chatbots:
 

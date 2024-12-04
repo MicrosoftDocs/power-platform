@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI canvas command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI canvas command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -31,6 +31,7 @@ Operating with Power Apps .msapp files
 |[pac canvas list](#pac-canvas-list)|List canvas apps|
 |[pac canvas pack](#pac-canvas-pack)|(Preview) Pack sources into an msapp file|
 |[pac canvas unpack](#pac-canvas-unpack)|(Preview) Extract an msapp file into sources|
+|[pac canvas validate](#pac-canvas-validate)|(Preview) Validate the .pa.yaml source for an unzipped msapp file|
 
 
 ## pac canvas create
@@ -81,7 +82,7 @@ Canvas app exact, partial name, or App ID
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--extract-to-directory` `-d`
 
@@ -110,7 +111,7 @@ List canvas apps
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [canvas-list-remarks](includes/canvas-list-remarks.md)]
 
@@ -154,6 +155,21 @@ Path to .msapp file
 Directory to sources to be unpacked
 
 [!INCLUDE [canvas-unpack-remarks](includes/canvas-unpack-remarks.md)]
+
+## pac canvas validate
+
+(Preview) Validate the .pa.yaml source for an unzipped msapp file
+
+[!INCLUDE [canvas-validate-intro](includes/canvas-validate-intro.md)]
+
+
+### Required Parameters for canvas validate
+
+#### `--directory` `-d`
+
+Path to the extracted msapp directory containing .pa.yaml files to validate
+
+[!INCLUDE [canvas-validate-remarks](includes/canvas-validate-remarks.md)]
 
 [!INCLUDE [canvas-remarks](includes/canvas-remarks.md)]
 

@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/11/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -35,7 +35,7 @@ Look for people with skills and strengths in the following roles:
 
 - **Citizen developers**: Continue to bring their day-to-day experience to how their job is done; when provided the right tools and training, can create apps to drive value.
 
-- **Pro developers**: Will design advanced interfaces using [Power Apps componenet framework](/powerapps/developer/component-framework/overview) in addition to building complex relationships or integrations with other applications, when the out-of-the-box limits have been reached, and the app needs to be extended.
+- **Pro developers**: Will design advanced interfaces using [Power Apps component framework](/powerapps/developer/component-framework/overview) in addition to building complex relationships or integrations with other applications, when the out-of-the-box limits have been reached, and the app needs to be extended.
 
 - **Trainers**: Are necessary to train others on how to use the apps that are built and made available across the organization, in addition to providing training on how to build apps.
 

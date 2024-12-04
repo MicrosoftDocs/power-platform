@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 01/13/2022
 author: gattimassimo 
 ms.author: magatti
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -33,26 +33,17 @@ Register your app on the Azure portal on the tenant where Exchange Online reside
 
 When you register your app, note the **Application (client) ID** and **Directory (tenant) ID**; you'll need this information later to configure the email server profile.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of a new app registration.](media/register-app.png "New app registration")
-
 ## Add a client Secret
 
 A client secret is a string value your app uses to identity itself. It's used by Dynamics 365 to authenticate to your app.
 
 To create a client secret, follow the steps in [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-client-secret). Remember to note the **Secret Value**, because you'll need this information later to configure the email server profile.
 
-> [!div class="mx-imgBorder"] 
-> ![Screenshot of creating a new client secret.](media/client-sercret.png "Create new client secret")
-
 ## Add API permissions 
 
 To allow your app to have access to Exchange Online, you need to grant **Office 365 Exchange Online** API permission. 
 
 1. Select **API permissions** &gt; **Add a permission**.
-    
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot of adding a permission.](media/add-permission.png "Add permission")
 
 2. Select the **APIs my organization uses** tab, and then select **Office 365 Exchange Online**.
    
@@ -83,6 +74,3 @@ To [create an email server profile for Exchange Online that uses Oauth (Cross Te
 - TenantId: The tenant ID of the tenant where Exchange Online is configured
 - Application ID: The app ID used by Dynamics 365 to connect to Exchange Online
 - Client secret: The client secret value used by Dynamics 365 to authenticate as the app
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of the email server profile form.](media/server-profile-form.png "Email server profile form") 

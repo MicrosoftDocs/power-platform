@@ -4,9 +4,9 @@ description: Opt in to early access updates in Microsoft Power Platform and Dyna
 author: samathur
 ms.subservice: admin
 ms.author: samathur
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 07/24/2024
 search.audienceType: 
   - admin
 ms.contributors:
@@ -31,7 +31,7 @@ Early access begins approximately two months before general availability of each
 - Sovereign early access: Second Monday of February
 
 **Release wave 2**
-- Early access: First Monday of August
+- Early access: Second Monday of August
 - Sovereign early access: Second Monday of August
 
 > [!NOTE]

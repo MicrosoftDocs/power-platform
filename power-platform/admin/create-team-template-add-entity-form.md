@@ -1,5 +1,5 @@
 ---
-title: "Create a team template to control access rights for automatically created teams | MicrosoftDocs"
+title: Create a team template to control access rights for automatically created teams 
 description: Create a team template and add to an entity form
 author: paulliew
 ms.subservice: admin
@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/22/2023
+ms.date: 10/25/2024
 search.audienceType: 
   - admin
 ---
@@ -38,7 +38,7 @@ Check your security role:
 - Follow the steps in [View your user information](/powerapps/user/view-your-user-profile).
 - Don’t have the correct permissions? Contact your system administrator.
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 
@@ -55,18 +55,21 @@ Check your security role:
 
 ## Create a team template  
   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
-
-2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
-  
-3. On the **Actions** toolbar, choose **+New**, complete the required fields, and then choose **Save**.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
+1. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
+1. On the control bar, select **+New**,
+1. Enter a **Name** for your template.
+1. Select the **Entity** that you have enabled for access teams.
+1. Enter a **Description**.
+1. Select the appropriate **Access Rights** for your access team members to access the record.
+1. Select **Save**.  
 
 > [!NOTE]
-> You can create two access team templates per entity.
+> You can create four access team templates per entity. Learn more in [Auto-created (system-managed) access team](/power-apps/developer/data-platform/use-access-teams-owner-teams-collaborate-share-information#auto-created-system-managed-access-team) if you need to create more.
 
 ## Add a team template to the entity form   
   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Microsoft 365 Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
 2. Select an environment and go to **Settings** > **Templates** > **Access team templates**.
 

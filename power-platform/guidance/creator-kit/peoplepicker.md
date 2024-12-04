@@ -87,7 +87,7 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 
 1. Assign the below Power Fx formula to the **On Search** property of the control to create a collection called `UserCollection`.
 
-    ```powerapps-dot
+    ```power-fx
     ClearCollect(
         UserCollection,
         AddColumns(
@@ -136,7 +136,7 @@ This code component provides a wrapper around the [Fluent UI PeoplePicker](https
 
 At this point the control is functioning and selected members can be obtained from the `SelectedPeople` property.
 
-```powerapps-dot
+```power-fx
 PeoplePicker1.SelectedPeople
 ```
 
@@ -147,11 +147,11 @@ PeoplePicker1.SelectedPeople
       Add Users or specific users(using below code) from table to the items collection(under `Suggestions_Items` property) of `PeoplePicker`.
 
     -**`AAD Users` table**
-      ```powerapps-dot
+      ```power-fx
       Search('AAD Users', Self.SearchText,"displayname" ,"mail")
       ```
    -**`Users` table**
-      ```powerapps-dot
+      ```power-fx
       Search('Users', Self.SearchText,"fullname","internalemailaddress")
       ```
 
@@ -165,7 +165,7 @@ PeoplePicker1.SelectedPeople
 
 At this point, the people picker should be working and the selected members can be obtained from SelectedPeople Property.
 
-```powerapps-dot
+```power-fx
 PeoplePicker1.SelectedPeople
 ```
 

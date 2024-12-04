@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI admin command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI admin command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -26,9 +26,10 @@ Work with your Power Platform Admin Account
 
 |Command|Description|
 |---------|---------|
+|[pac admin add-group](#pac-admin-add-group)|Add environment to a group.|
 |[pac admin application list](#pac-admin-application-list)|List Microsoft Entra ID applications registered under your tenant.|
 |[pac admin application register](#pac-admin-application-register)|Register Microsoft Entra ID application with your tenant.|
-|[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application with your tenant.|
+|[pac admin application unregister](#pac-admin-application-unregister)|Unregister Microsoft Entra ID application from your tenant.|
 |[pac admin assign-group](#pac-admin-assign-group)|Assign group to target Dataverse environment with specified security role.|
 |[pac admin assign-user](#pac-admin-assign-user)|Assign a user to a target Dataverse environment with specified security role.|
 |[pac admin backup](#pac-admin-backup)|Takes a manual backup of your environment.|
@@ -39,15 +40,39 @@ Work with your Power Platform Admin Account
 |[pac admin list](#pac-admin-list)|List all environments from your tenant.|
 |[pac admin list-app-templates](#pac-admin-list-app-templates)|Lists all supported Dataverse templates of model-driven apps in Dynamics 365.|
 |[pac admin list-backups](#pac-admin-list-backups)|Lists all backups of your environment.|
+|[pac admin list-groups](#pac-admin-list-groups)|List environment groups from your tenant.|
 |[pac admin list-service-principal](#pac-admin-list-service-principal)|List Microsoft Entra ID applications which have access to Dataverse.|
 |[pac admin list-tenant-settings](#pac-admin-list-tenant-settings)|List tenant settings.|
 |[pac admin reset](#pac-admin-reset)|Reset the environment from your tenant.|
 |[pac admin restore](#pac-admin-restore)|Restores an environment to a given backup.|
-|[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Takes a manual backup of your environment.|
+|[pac admin set-backup-retention-period](#pac-admin-set-backup-retention-period)|Sets the backup retention period in days as provided. Valid values are: 7, 14, 21, 28.|
 |[pac admin set-governance-config](#pac-admin-set-governance-config)|Enable, disable, and edit managed environments.|
+|[pac admin set-runtime-state](#pac-admin-set-runtime-state)|Update environment administration mode.|
 |[pac admin status](#pac-admin-status)|This command lists the status of all the operations in progress.|
 |[pac admin update-tenant-settings](#pac-admin-update-tenant-settings)|Update tenant settings.|
 
+
+## pac admin add-group
+
+Add environment to a group.
+
+[!INCLUDE [admin-add-group-intro](includes/admin-add-group-intro.md)]
+
+
+### Required Parameters for admin add-group
+
+#### `--environment-group` `-eg`
+
+Environment group.
+
+
+### Optional Parameters for admin add-group
+
+#### `--environment` `-env`
+
+Environment (ID, org ID, url, unique name, or partial name).
+
+[!INCLUDE [admin-add-group-remarks](includes/admin-add-group-remarks.md)]
 
 ## pac admin application list
 
@@ -61,9 +86,10 @@ Register Microsoft Entra ID application with your tenant.
 
 [!INCLUDE [admin-application-register-intro](includes/admin-application-register-intro.md)]
 
+
 ### Required Parameters for admin application register
 
-#### `application-id` `-id`
+#### `--application-id` `-id`
 
 Application Id
 
@@ -71,13 +97,14 @@ Application Id
 
 ## pac admin application unregister
 
-Unregister Microsoft Entra ID application with your tenant.
+Unregister Microsoft Entra ID application from your tenant.
 
 [!INCLUDE [admin-application-unregister-intro](includes/admin-application-unregister-intro.md)]
 
+
 ### Required Parameters for admin application unregister
 
-#### `application-id` `-id`
+#### `--application-id` `-id`
 
 Application Id
 
@@ -91,10 +118,6 @@ Assign group to target Dataverse environment with specified security role.
 
 
 ### Required Parameters for admin assign-group
-
-#### `--environment` `-env`
-
-ID or URL of the environment to assign a user to.
 
 #### `--group` `-g`
 
@@ -137,6 +160,10 @@ Use one of these values:
 
 ID of business unit to associate application user with.
 
+#### `--environment` `-env`
+
+ID or URL of the environment to assign a user to.
+
 [!INCLUDE [admin-assign-group-remarks](includes/admin-assign-group-remarks.md)]
 
 ## pac admin assign-user
@@ -147,10 +174,6 @@ Assign a user to a target Dataverse environment with specified security role.
 
 
 ### Required Parameters for admin assign-user
-
-#### `--environment` `-env`
-
-ID or URL of the environment to assign a user to.
 
 #### `--role` `-r`
 
@@ -176,6 +199,10 @@ This parameter requires no value. It's a switch.
 
 ID of business unit to associate application user with.
 
+#### `--environment` `-env`
+
+ID or URL of the environment to assign a user to.
+
 [!INCLUDE [admin-assign-user-remarks](includes/admin-assign-user-remarks.md)]
 
 ## pac admin backup
@@ -198,9 +225,6 @@ Sets the backup label as provided.
 
 Environment URL or ID of the Environment that requires backup.
 
-#### `--notes` `-n`
-
-**Deprecated**: This parameter is ignored.
 [!INCLUDE [admin-backup-remarks](includes/admin-backup-remarks.md)]
 
 ## pac admin copy
@@ -241,7 +265,6 @@ Environment URL or ID of the source environment that is being copied
 Environment URL or ID of the target environment.
 
 #### `--type` `-t`
-
 
 
 Use one of these values:
@@ -397,10 +420,6 @@ List all environments that contain given string in their name or ID.
 
 List all environments that contain given string in their name.
 
-#### `--organization-id` `-oi`
-
-List all environments that contain given string in their organization ID.
-
 #### `--type` `-t`
 
 List all environments with the given type.
@@ -445,6 +464,12 @@ Lists all backups of your environment.
 List all environments that contain a given string in their Environment ID or URL.
 
 [!INCLUDE [admin-list-backups-remarks](includes/admin-list-backups-remarks.md)]
+
+## pac admin list-groups
+
+List environment groups from your tenant.
+
+[!INCLUDE [admin-list-groups-remarks](includes/admin-list-groups-remarks.md)]
 
 ## pac admin list-service-principal
 
@@ -581,7 +606,7 @@ Environment URL or ID of the target environment required for restore. This would
 
 ## pac admin set-backup-retention-period
 
-Takes a manual backup of your environment.
+Sets the backup retention period in days as provided. Valid values are: 7, 14, 21, 28.
 
 [!INCLUDE [admin-set-backup-retention-period-intro](includes/admin-set-backup-retention-period-intro.md)]
 
@@ -636,6 +661,18 @@ Use one of these values:
 
 ### Optional Parameters for admin set-governance-config
 
+#### `--checker-rule-overrides` `-cro`
+
+Solution checker rule overrides
+
+#### `--cloud-flows-limit` `-cfl`
+
+Number of people that makers can share solution cloud flows with
+
+#### `--cloud-flows-mode` `-cfm`
+
+Solution cloud flows limit sharing mode
+
 #### `--disable-group-sharing` `-dgs`
 
 Disable group sharing.
@@ -658,6 +695,14 @@ This parameter requires no value. It's a switch.
 
 Limit sharing mode.
 
+#### `--maker-onboarding-markdown` `-mom`
+
+Maker onboarding markdown
+
+#### `--maker-onboarding-url` `-mou`
+
+Maker onboarding URL
+
 #### `--max-limit-user-sharing` `-ml`
 
 If group sharing is disabled, specify the number of people that makers can share canvas apps with.
@@ -672,7 +717,59 @@ Use one of these values:
 - `warn`
 - `block`
 
+#### `--suppress-validation-emails` `-sve`
+
+Suppress validation emails
+
+This parameter requires no value. It's a switch.
+
 [!INCLUDE [admin-set-governance-config-remarks](includes/admin-set-governance-config-remarks.md)]
+
+## pac admin set-runtime-state
+
+Update environment administration mode.
+
+[!INCLUDE [admin-set-runtime-state-intro](includes/admin-set-runtime-state-intro.md)]
+
+
+### Required Parameters for admin set-runtime-state
+
+#### `--environment` `-env`
+
+URL or ID of the environment for which administration mode needs to be updated.
+
+#### `--runtime-state` `-rs`
+
+The environment runtime state
+
+Use one of these values:
+
+- `AdminMode`
+- `Enabled`
+
+
+### Optional Parameters for admin set-runtime-state
+
+#### `--async` `-a`
+
+Optional boolean argument to run pac verbs asynchronously, defaults to false.
+
+This parameter requires no value. It's a switch.
+
+#### `--background-operations` `-bo`
+
+The environment background operations state
+
+Use one of these values:
+
+- `Enabled`
+- `Disabled`
+
+#### `--max-async-wait-time` `-wt`
+
+Max asynchronous wait time in minutes. The default value is 60 minutes.
+
+[!INCLUDE [admin-set-runtime-state-remarks](includes/admin-set-runtime-state-remarks.md)]
 
 ## pac admin status
 

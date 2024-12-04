@@ -1,22 +1,27 @@
 ---
-title: "Power Apps operated by 21Vianet and Power Automate operated by 21Vianet | MicrosoftDocs"
+title: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet 
 description: Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/23/2022
+ms.date: 12/02/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+  - JesseParsons
+ms.contributors:
+  - olegov
+  - aleahy
+  - iyanni
+  - pvayner
 ---
 # Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
 ## Overview
 
-Microsoft Power BI, Microsoft Power BI Premium, Microsoft Power BI Embedded, Microsoft Dynamics 365 Customer Service, Microsoft Dynamics 365 Sales, Microsoft Dynamics 365 Field Service, Microsoft Dynamics 365 Finance, and Microsoft Dynamics 365 Supply Chain Management online services operated by 21Vianet are already available in China. Microsoft Power Apps and Microsoft Power Automate are available to serve customers in regulated industries and commercial organizations that do business with tables in China and require local data residency.  
-
-Microsoft Dynamics 365 (Dynamics 365 Customer Service, Dynamics 365 Sales, Dynamics 365 Field Service, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management) and Microsoft Power Platform (Microsoft Power BI, Power BI Premium, Power BI Embedded, Power Apps, and Power Automate) online services collectively known as “Business Applications” operated by 21Vianet are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in China.
+Microsoft Dynamics 365 (Dynamics 365 Customer Service, Dynamics 365 Sales, Dynamics 365 Field Service, Dynamics 365 Finance, Dynamics 365 Supply Chain Management,and Dynamics 365 Project Operations) and Microsoft Power Platform (Microsoft Power BI, Power BI Premium, Power BI Embedded, Power Apps, and Power Automate) online services collectively known as “Business Applications” operated by 21Vianet are a physically separated instance of cloud services operated and transacted by a local operator, Shanghai Blue Cloud Technology Co., Ltd (“21Vianet”). This is a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. located in China. These services are available to serve customers in regulated industries and commercial organizations that do business in China and require local data residency.
 
 The deployment of the Business applications family of online services operated by 21Vianet in China is built on the foundational principles of security, privacy, compliance, transparency, and reliability, offering organizations a complete cloud infrastructure and platform, as well as familiar productivity and business application tools. This means that customer data is stored at rest within China except as noted in the [Trust Center](https://www.trustcenter.cn). 
 
@@ -28,7 +33,20 @@ For more information about these exceptions or for questions about service avail
 
 Due to certain technical dependencies, the following features listed will not be available for general availability of Power Apps operated by 21Vianet and Power Automate operated by 21Vianet. For information about future feature availability, see [Business applications and platform release plans](/dynamics365/release-plans/).
 
-### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet plans
+### Dynamics 365 Project Operations operated by 21Vianet
+
+The addition of a Lite deployment - deal to proforma invoicing of Dynamics 365 Project Operations operated by 21Vianet is generally available to new and existing customers in China. This service is designed to provide streamlined and efficient project management experience. 
+
+The Lite deployment - deal to proforma invoicing of Project Operations is specifically designed for deal to proforma invoicing scenarios. It operates without project scheduling and utilizes Microsoft Project for the Web Sales process extending application experiences of Dynamics 365 Sales.
+The features of this deployment include:
+
+- Multi-dimensional pricing: This allows for flexible and comprehensive pricing strategies.
+- Unified resource management: This ensures efficient allocation and utilization of resources.
+- Time tracking: This feature allows for accurate recording and monitoring of time spent on tasks.
+- Basic expense: This provides a simple and straightforward way to track and manage expenses.
+- Proforma invoicing: This allows project managers to review and edit invoices before they are sent out.
+
+### Power Apps operated by 21Vianet and Power Automate operated by 21Vianet
 
 Access to Power Apps operated by 21Vianet and Power Automate operated by 21Vianet plans is restricted to the offerings described in the following section; each plan is offered as a monthly subscription and can be licensed to an unlimited number of users:
 
@@ -64,9 +82,6 @@ The Microsoft Entra account management services are hosted on physical servers m
 #### Power Apps features not available
 
 - Embed in [Microsoft Teams](https://powerapps.microsoft.com/blog/powerapps-teams/) as Microsoft Teams is not yet available in China.
-- [Power Apps solution checker](/powerapps/maker/common-data-service/use-powerapps-checker) 
-- [Power Query](/powerapps/maker/common-data-service/data-platform-cds-newentity-pq)
-- [Dataflows in Power Apps](/powerapps/maker/common-data-service/create-and-use-dataflows) 
 - [Integrate data into Microsoft Dataverse](./data-integrator.md)
 - [Export to Azure Data Lake (aka Athena)](/powerapps/maker/common-data-service/export-to-data-lake)
 - [Dual-write from Dataverse to Dynamics 365 finance and operations apps](https://powerapps.microsoft.com/blog/announcing-dual-write-preview/)
@@ -79,7 +94,7 @@ The Microsoft Entra account management services are hosted on physical servers m
 - [Legal terms landing page](https://www.21vbluecloud.com/powerplatform/pp-legal/)
 - [Online Services Terms (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Service Level Agreement](https://www.21vbluecloud.com/powerplatform/pp-sla/)
-- [Privacy statement](https://www.21vbluecloud.com/powerplatform/pp-privacy/)
+- [Privacy statement](https://www.21vbluecloud.com/ostpt/)
 
 
 

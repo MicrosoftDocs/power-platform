@@ -44,7 +44,7 @@ The below Power Fx formula shows an example of how to set a global variable usin
 - Place this Power Fx formula to run on the app's `OnStart` property. 
 - Replace the value between the `/* THEME OBJECT */` comments with your own theme object from the designer.
 
-```powerapps-dot
+```power-fx
 Set(
     AppTheme,
     /* START THEME OBJECT */
@@ -95,7 +95,7 @@ A theme can be passed to the `Theme` property of each component.
 Any of the core components in canvas apps or custom pages can reference elements from the `AppTheme` object (cannot be Json formatted). These controls must reference the desired `palette` properties and be cast as a Color data type using the `ColorValue()` formula.
 
 Example `Button`.`Fill` Power Fx formula referencing the primary color of the theme:
-```powerapps-dot
+```power-fx
 ColorValue(AppTheme.palette.themePrimary)
 ```
 

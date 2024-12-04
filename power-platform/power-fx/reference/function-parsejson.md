@@ -1,23 +1,23 @@
 ---
 title: ParseJSON function
 description: Reference information including syntax and examples for the ParseJSON function.
-author: jorisdg
+author: gregli
 
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/10/2022
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
   - maker
 contributors:
-  - jorisdg
+  - gregli
   - mduelae
 ---
 # ParseJSON function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Interprets a JSON string and returns an [untyped object](../untyped-object.md).
 
@@ -58,11 +58,11 @@ Given the following JSON string in a variable named `JsonString`
 ```
 
 1. The following formula returns the text `text value`:
-    ```powerapps-dot
+    ```power-fx
     Text( ParseJSON( JsonString ).parent.child )
     ```
 2. The following formula returns the number `567`:
-    ```powerapps-dot
+    ```power-fx
     Value( ParseJSON( JsonString ).number )
     ```
 
@@ -73,7 +73,7 @@ Given the following JSON string in a variable named `JsonString`
 ```
 
 1. The following formula returns the text `text value`:
-    ```powerapps-dot
+    ```power-fx
     Text( ParseJSON( JsonString ).'0'.'child-field' )
     ```
 
@@ -84,11 +84,11 @@ Given the following JSON string in a variable named `JsonString`
 ```
 
 1. Attempting to access non-existing fields returns **Blank()**. The following formula returns `true`:
-    ```powerapps-dot
+    ```power-fx
     IsBlank( Text( ParseJSON( JsonString ).parent.child ) )
     ```
 2. JSON `null` values are considered **Blank()**. The following formula returns `true`:
-    ```powerapps-dot
+    ```power-fx
     IsBlank( Text( ParseJSON( JsonString ).empty ) )
     ```
 
@@ -99,11 +99,11 @@ Given the following JSON string in a variable named `JsonString`
 ```
 
 1. Accessing the second number in the array field's single-column table of **untyped object** and converting to a number using **Value()** returns `2`:
-    ```powerapps-dot
+    ```power-fx
     Value( Index( ParseJSON( JsonString ).array, 2 ) )
     ```
 2. Converting the single-column table of **untyped object** in the array field, to a single column table of numbers `{ Value: 1 }, { Value: 2 }, { Value: 3 }`:
-    ```powerapps-dot
+    ```power-fx
     ForAll( ParseJSON( JsonString ).array, Value( ThisRecord ) )
     ```
 
@@ -118,7 +118,7 @@ Given the following JSON string in a variable named `JsonString`
 
 1. Converting to a typed table of records directly with **ForAll()** can be done by using `ThisRecord.[fieldname]` to access **untyped object** fields and convert them to known types:
 
-    ```powerapps-dot
+    ```power-fx
     ForAll( ParseJSON( JsonString ).array, { id: Value(ThisRecord.id), name: Text(ThisRecord.name) })
     ```
 
@@ -133,7 +133,7 @@ Given the following JSON string in a variable named `JsonString`
 
 **Table()** returns a single-column table of **untyped objects** with a single-column Value for number in the array...
 
-   ```powerapps-dot
+   ```power-fx
     Set(untypedTable, Table( ParseJSON( JsonString ).array );
     
     Value( Index(untypedTable, 1).Value.Value )
@@ -149,7 +149,7 @@ Given the following JSON string in a variable named `JsonString`
 
 **Table()** returns a single-column table of **untyped objects** that represents each json object in the array.
 
-  ```powerapps-dot
+  ```power-fx
     Set(untypedTable, Table( ParseJSON( JsonString ).array );
     
     Text( Index(untypedTable, 1).Value.name )

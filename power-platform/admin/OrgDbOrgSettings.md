@@ -4,7 +4,7 @@ description: This topic covers the default options available in OrgDBOrgSettings
 author: DanaMartens
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/19/2023
+ms.date: 04/01/2024
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
@@ -18,6 +18,7 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 
 | Name | Default value | Description |
 |-------------------------|-------------------------|-------------------------|
+| AddParentEntityToRelatedOnNewActivityCreate | false | When the value is set to true, the Related column in activity records automatically populates when creating an activity within the context of a parent record. For example, if this setting is enabled, creating a new email activity from the timeline of an account automatically associates that record in the Related column.|
 | AllowSaveAsDraftAppointment | false | Setting this value to true provides the capability to create appointments in Dynamics 365 as **draft** without synchronizing with Exchange. The appointment form will have a **Save as Draft** command and a **Send** command, so that you can save, add details, and update an appointment activity without synchronizing to Exchange. The default value is set to false to preserve existing behavior. |
 | AutoCreateContactOnPromote | true | Disables the ability to automatically create a contact row for unresolved senders on promotion of an email. <br> This option is organization-wide, but can also be disabled from the personal options setting for each user. More information: [Set personal options](/powerapps/user/set-personal-options#email-tab-options) |
 | AutoTrackSentFolderItems | false | When enabled, server-side synchronization will automatically track emails from the sent items folder by using the user or queue's incoming email filtering method. The default value is set to false to preserve existing behavior. |
@@ -54,3 +55,4 @@ This topic covers the default values of OrgDBOrgSettings that are specific to se
 | UseFilteringMethodOfSyncingMailboxOnlyForCorrelation | false | When disabled, the filtering method of all Dynamics 365 recipients is evaluated to determine whether any user or queue accepts an email when performing correlation during automatic incoming email processing. When enabled, the system will only consider the incoming email filtering method of the user or queue who is currently processing the email. In this case, the incoming email filtering method of other Dynamics 365 recipients is ignored. <br> |
 | UsePlainTextForEmailTemplateBody | false | Changes the email template to use plain text where otherwise text with the following symbols wouldn't appear: &lt;text&gt;. |
 | UseXAnchorMailboxInExchangeRequestHeader | true | Allows server-side sync to specify the XAnchorMailbox Header when connecting to Exchange. We recommend that you not disable this setting. |
+| UnresolveSenderInCaseOfMultipleMatch | false | When enabled, server-side synchronization keeps the email sender unresolved if it matches with multiple records across entities such as lead, team, user, custom entity, account, and contact. For example, if the email sender's email address matches with one account and one lead, the email sender is left unresolved by server-side synchronization.

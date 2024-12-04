@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 04/26/2016
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # GroupBy and Ungroup functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
 
 Groups and ungroups [records](/power-apps/maker/canvas-apps/working-with-tables#records) of a [table](/power-apps/maker/canvas-apps/working-with-tables).
 
@@ -38,12 +38,15 @@ You can group records by using **GroupBy**, modify the table that it returns, an
 You can also aggregate results based on a grouping:
 
 - Use the **GroupBy** function.
-- Use the **[AddColumns](function-table-shaping.md)** function with **[Sum](function-aggregates.md)**, **[Average](function-aggregates.md)**, and other aggregate functions to add a new column which is an aggregate of the group tables.
+- Use the **[AddColumns](function-table-shaping.md)** function with **[Sum](function-aggregates.md)**, **[Average](function-aggregates.md)**, and other aggregate functions to add a new column, which is an aggregate of the group tables.
 - Use the **[DropColumns](function-table-shaping.md)** function to drop the group table.
 
 **Ungroup** tries to preserve the original order of the records that were fed to **GroupBy**. This isn't always possible (for example, if the original table contains _blank_ records).
 
 A table is a value in Power Apps, just like a string or a number. You can specify a table as an argument for a function, and a function can return a table. **GroupBy** and **Ungroup** don't modify a table; instead they take a table as an argument and return a different table. See [working with tables](/power-apps/maker/canvas-apps/working-with-tables) for more details.
+
+> [!NOTE]
+> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. After this version, all apps were automatically updated to the new syntax described in this article. 
 
 ## Syntax
 
@@ -53,16 +56,10 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 - _ColumnName(s)_ - Required. The column names in _Table_ by which to group records. These columns become columns in the resulting table.
 - _GroupColumnName_ - Required. The column name for the storage of record data not in the _ColumnName(s)_.
 
-  > [!NOTE]
-  > For SharePoint and Excel data sources that contain column names with spaces, specify each space as **"\_x0020\_"**. For example, specify **"Column Name"** as **"Column_x0020_Name"**.
-
 **Ungroup**( _Table_, _GroupColumnName_ )
 
 - _Table_ - Required. Table to be ungrouped.
 - _GroupColumnName_ - Required. The column that contains the record data setup with the **GroupBy** function.
-
-  > [!NOTE]
-  > For SharePoint and Excel data sources that contain column names with spaces, specify each space as **"\_x0020\_"**. For example, specify **"Column Name"** as **"Column_x0020_Name"**.
 
 ## Examples
 
@@ -71,7 +68,7 @@ A table is a value in Power Apps, just like a string or a number. You can specif
 1. Add a button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **Original**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **Original** button to this formula:
 
-```powerapps-dot
+```power-fx
 ClearCollect( CityPopulations,
     { City: "London",    Country: "United Kingdom", Population: 8615000},
     { City: "Berlin",    Country: "Germany",        Population: 3562000},
@@ -100,7 +97,7 @@ ClearCollect( CityPopulations,
 1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to **"Group"**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of this button to this formula:
 
-   **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, "Country", "Cities" ) )**
+   **ClearCollect( CitiesByCountry, GroupBy( CityPopulations, Country, Cities ) )**
 
 3. While holding down the Alt key, select the **Group** button.
 
@@ -132,7 +129,7 @@ ClearCollect( CityPopulations,
 4. Add one more button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Ungroup"**.
 5. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of this button to this formula:
 
-   **ClearCollect( CityPopulationsUngrouped, Ungroup( CitiesByCountryFiltered, "Cities" ) )**
+   **ClearCollect( CityPopulationsUngrouped, Ungroup( CitiesByCountryFiltered, Cities ) )**
 
    Which results in:
 
@@ -140,12 +137,12 @@ ClearCollect( CityPopulations,
 
 ### Aggregate results
 
-Something else we can do with a grouped table is to aggregate the results. In this example, we will sum the population of the major cities in each country/region.
+Another operation we can perform on a grouped table is to compile the results. In this example, we'll sum the population of the major cities in each country/region.
 
 1. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"Sum"**.
 2. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"Sum"** button to this formula:
 
-   **ClearCollect( CityPopulationsSum, AddColumns( CitiesByCountry, "Sum of City Populations", Sum( Cities, Population ) ) )**
+   **ClearCollect( CityPopulationsSum, AddColumns( CitiesByCountry, 'Sum of City Populations', Sum( Cities, Population ) ) )**
 
    Which results in:
 
@@ -155,10 +152,10 @@ Something else we can do with a grouped table is to aggregate the results. In th
 
    Now that we have the sum that we want, we can use **[DropColumns](function-table-shaping.md)** to remove the sub tables.
 
-3. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"SumOnly"**.
-4. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"SumOnly"** button to this formula:
+4. Add another button, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property so that the button shows **"SumOnly"**.
+5. Set the **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property of the **"SumOnly"** button to this formula:
 
-   **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, "Cities" ) )**
+   **ClearCollect( CityPopulationsSumOnly, DropColumns( CityPopulationsSum, Cities ) )**
 
    Which results in:
 

@@ -24,7 +24,7 @@ Data is an organization’s most valuable and irreplaceable asset, and encryptio
 
 Encrypting your information renders it unreadable to unauthorized persons, even if they break through your firewalls, infiltrate your network, get physical access to your devices, or bypass the permissions on your local machine. Encryption transforms data so that only someone with the decryption key can access it.
 
-Dynamics 365 uses heterogenous storage (Dataverse) to store the data. The data is distributed across different storage types:
+Dynamics 365 uses heterogeneous storage (Dataverse) to store the data. The data is distributed across different storage types:
 
 - Azure SQL Database for relational data
 - Azure Blob storage for binary data, such as images and documents

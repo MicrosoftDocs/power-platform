@@ -1,13 +1,13 @@
 ---
 title: "Connect to Exchange Online | MicrosoftDocs"
-description: Connect to Exchange Online
+description: Connect to Exchange Online.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/08/2022
-author: DanaMartens
+ms.date: 03/12/2024
+author: rahulmital 
 ms.subservice: admin
-ms.author: dmartens
-ms.reviewer: jimholtz
+ms.author: rahulmital
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -59,9 +59,6 @@ With both [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-excha
     - **S2S auth (Same Tenant)**: Use this option when Exchange resides in the same tenant as Dynamics 365. More information: [Build web applications using server-to-server (S2S) authentication](/powerapps/developer/data-platform/build-web-applications-server-server-s2s-authentication)
 
     - **Oauth (Cross Tenant)**: Use this option when Exchange resides in a different tenant than Dynamics 365. To get the information for this option, follow the steps in [Exchange Online cross-tenant authentication](connect-exchange-online-server-profile-oauth.md). Note that the **Locations and ports** fields are automatically populated.
-
-      > [!div class="mx-imgBorder"]
-      > ![Screenshot of the mail server profile form.](media/server-profile-form.png "Email server profile form") 
 
 7. Expand the **Advanced** section, and then use the tooltips to choose your email processing options. 
 
@@ -306,6 +303,10 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
 
 #### Approve mailboxes
 
+You can use a manual or programmatic processes to approve a mailbox.
+
+##### Approve a mailbox manually
+
 1. Do one of the following: 
 
    - In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment.    
@@ -317,8 +318,12 @@ To approve emails, a Dynamics 365 user requires the **Approve Email Addresses fo
   
 4. Select the mailboxes that you want to approve, and then select **More Commands** (**…**) > **Approve Email**.  
   
-5. Select **OK**.  
+5. Select **OK**.
 
+##### Approve a mailbox programmatically
+  
+Email addresses can't be approved using plug-ins or workflows. External applications can programmatically invoke email address approval by passing the _emailrouteraccessapproval_ attribute in the SDK request if the row is not already approved and if the caller is authorized per the above requirements. If the request includes additional attributes, the row’s email address may not be approved.
+   
 ### Remove the requirement to approve mailboxes
 
 Admins, as described in the preceding permissions model table, can change the settings so that mailbox approval isn't required.
@@ -346,9 +351,6 @@ Admins, as described in the preceding permissions model table, can change the se
 3. Select **Active Mailboxes**.  
   
 4. Select the mailboxes you want to test, and then select **Test & Enable Mailbox**.  
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing the Test & Enable Mailbox command.](media/test-enable-mailbox85.png "Test and enable mailboxes")
   
 This tests the incoming and outgoing email configuration of the selected mailboxes and enables them for email processing. If an error occurs in a mailbox, an alert is shown on the **Alerts** wall of the mailbox and the profile owner. Depending on the nature of the error, customer engagement apps try to process the email again after some time or disable the mailbox for email processing.  
   

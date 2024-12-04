@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2023
+ms.date: 09/25/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -31,7 +31,7 @@ The [Data Export](/power-platform/admin/self-service-analytics) feature itself i
 
 ## What are the requirements for using Data Export with the CoE Starter Kit?
 
-To receive the data, you have to configure [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) in the Power Platform admin center first. This feature requires a Global Admin for initial setup, and an Azure Storage account to store data. Before you can set up Data Export, you must also enable [tenant-level analytics](/power-platform/admin/tenant-level-analytics).
+To receive the data, you have to configure [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) in the Power Platform admin center first. This feature requires a user account with admin permissions for initial setup, and an Azure Storage account to store data. Before you can set up Data Export, you must also turn on [tenant-level analytics](/power-platform/admin/tenant-level-analytics).
 
 For the CoE Starter Kit capabilities, you'll also need a [Power BI Premium](/power-bi/enterprise/service-premium-features) per user or per capacity workspace.
 

@@ -1,0 +1,78 @@
+### YamlMime:Landing
+
+title: Experience optimization quick links
+summary: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your workload.
+
+metadata:
+  title: Experience optimization quick links
+  description: Apply experience optimization guidance to your architecture to provide meaningful and effective experiences for users of your Power Platform workload.
+  ms.service: power-platform
+  ms.subservice: well-architected
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 05/16/2024
+
+landingContent:
+  - title: Learn key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+  - title: Review design principles
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Design for the user
+            url: principles.md#design-for-the-user
+          - text: Design for simplicity
+            url: principles.md#design-for-simplicity
+          - text: Design for efficiency
+            url: principles.md#design-for-efficiency
+  - title: Plan and structure
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Focus on user needs
+            url: user-centered-design.md
+          - text: Adhere to design standards
+            url: design-standards.md
+          - text: Implement an information architecture
+            url: information-architecture.md
+  - title: Optimize ease of use
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Prioritize usability
+            url: usability.md
+          - text: Optimize visuals
+            url: visual-design.md
+          - text: Focus on user behaviors
+            url: interaction-design.md
+  - title: Engage your users
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Keep users informed
+            url: feedback-guidance.md
+          - text: Design for different contexts
+            url: layout.md
+          - text: Provide clear directions
+            url: user-interface-content.md
+          - text: Design conversational AI
+            url: conversation-design.md
+  - title: Explore related resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Power Apps Studio documentation
+            url: /power-apps/maker/canvas-apps/power-apps-studio
+          - text: Creator Kit
+            url: /power-platform/guidance/creator-kit/overview
+          - text: Fluent UI Insights
+            url: /shows/fluent-ui-insights/

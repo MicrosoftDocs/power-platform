@@ -28,7 +28,7 @@ Connector endpoint filtering allows admins to govern which specific endpoints ma
 - HTTP
 - HTTP with Microsoft Entra ID (AD)
 - HTTP Webhook
-- SQL Server
+- SQL Server (includes using SQL Server Connector to access Azure Synapse data warehouse)
 - Azure Blob Storage 
 - SMTP 
 
@@ -125,16 +125,16 @@ The following are examples:
 
 ### Dataverse 
 
-Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as, 7b97cd5c-ce38-4930-9497-eec2a95bf5f7. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. 
+Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as, 00aa00aa-bb11-cc22-dd33-44ee44ee44ee. Please note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors are not in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means that within any given environment, makers can always access the Dataverse current environment. 
 
 Therefore, a rule that says the following:
 
-1. Allow `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`
+1. Allow `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`
 2. Deny `*`
 
 Actually means:
 1. Allow `Dataverse current environment`
-2. Allow `7b97cd5c-ce38-4930-9497-eec2a95bf5f7`
+2. Allow `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`
 3. Deny `*`
 
 Allow `Dataverse current environment` is always implicitly the first rule in the Dataverse endpoint filtering list for any given environment.

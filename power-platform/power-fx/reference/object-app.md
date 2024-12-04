@@ -5,14 +5,14 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/01/2023
+ms.date: 11/14/2024
 ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ms.contributors:
 - anuitz
 ---
@@ -35,7 +35,7 @@ You can write formulas for some properties of the **App** object. At the top of 
 
 The **ActiveScreen** property identifies the screen that's showing.
 
-This property returns a screen object, which you can use to reference properties of the screen or compare to another screen to determine which screen is showing. You can also use the expression **App.ActiveScreen.Name** to retrieve the name of the screen that's showing.
+This property returns a screen object. Use it to reference properties of the currently displayed screen, such as the name with the formula **App.ActiveScreen.Name**. You can also compare this property to another screen object, such as with the comparison formula **App.ActiveScreen = Screen2** to test if **Screen2** is the currently displayed screen.
 
 Use the **[Back](function-navigate.md)** or **[Navigate](function-navigate.md)** function to change the screen that's showing.
 
@@ -55,7 +55,7 @@ Nobody wants to lose unsaved changes. Use the **ConfirmExit** and **ConfirmExitM
 
 **ConfirmExit** is a Boolean property that, when *true*, opens a confirmation dialog box before the app is closed. By default, this property is *false*, and no dialog box appears.
 
-Use this property to show a confirmation dialog box if the user has made changes but not saved them. Use a formula that can check variables and control properties (for example, the **Unsaved** property of the [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control).
+In situations where the user may have unsaved changes in the app, use this property to show a confirmation dialog box before exiting the app. Use a formula that can check variables and control properties (for example, the **Unsaved** property of the [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control).
 
 The confirmation dialog box appears in any situation where data could be lost, as in these examples:
 
@@ -90,7 +90,7 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 1. Set the **App** object's **ConfirmExit** property to this expression:
 
-    ```powerapps-dot
+    ```power-fx
     AccountForm.Unsaved Or ContactForm.Unsaved
     ```
 
@@ -101,7 +101,7 @@ In a browser, the confirmation dialog box might appear with a generic message fr
 
 1. Set the **App** object's **ConfirmExitMessage** property to this formula:
 
-    ```powerapps-dot
+    ```power-fx
     If( AccountsForm.Unsaved,
         "Accounts form has unsaved changes.",
         "Contacts form has unsaved changes."
@@ -113,13 +113,23 @@ In a browser, the confirmation dialog box might appear with a generic message fr
     > [!div class="mx-imgBorder"]
     > ![Form-specific confirmation dialog box.](media/object-app/confirm-native-custom.png)
 
+## Setup Instrumentation Key for Application Insights
+
+To export system-generated application logs to [Application Insights](/power-apps/maker/canvas-apps/application-insights), you need to set up the **Instrumentation Key** for your canvas app. 
+
+1. Open your app for [editing](/power-apps/maker/canvas-apps/edit-app) in Power Apps Studio.
+2. Select the **App** object in the left navigation tree view.
+3. Enter the **Instrumentation Key** in the properties pane.
+
+If data isn't sent to App Insights, contact your Power Platform administrator and verify if **App Insights** is disabled at the tenant level. 
+
 ## Formulas property
 
 Use named formulas, in the **Formulas** property, to define a formula that can be reused throughout your app.  
 
 In Power Apps, control properties are driven by formulas.  For example, to set the background color consistently across an app, you might set the **Fill** property for each to a common formula:
 
-```powerapps-dot
+```power-fx
 Label1.Fill: ColorValue( Param( "BackgroundColor" ) )
 Label2.Fill: ColorValue( Param( "BackgroundColor" ) )
 Label3.Fill: ColorValue( Param( "BackgroundColor" ) )
@@ -127,7 +137,7 @@ Label3.Fill: ColorValue( Param( "BackgroundColor" ) )
 
 With so many places where this formula may appear, it becomes tedious and error prone to update them all if a change is needed.  Instead, you can create a global variable in **OnStart** to set the color once, and then reuse the value throughout the app:
 
-```powerapps-dot
+```power-fx
 App.OnStart: Set( BGColor, ColorValue( Param( "BackgroundColor" ) ) )
 Label1.Fill: BGColor
 Label2.Fill: BGColor
@@ -138,7 +148,7 @@ While this method is better, it also depends on **OnStart** running before the v
 
 Named formulas provide an alternative. Just as we commonly write *control-property = expression*, we can instead write *name = expression* and then reuse *name* throughout our app to replace *expression*.  The definitions of these formulas are done in the **Formulas** property:
 
-```powerapps-dot
+```power-fx
 App.Formulas: BGColor = ColorValue( Param( "BackgroundColor" ) );
 Label1.Fill: BGColor
 Label2.Fill: BGColor
@@ -150,12 +160,12 @@ The advantages of using named formulas include:
 - **The formula's value is always available.**  There's no timing dependency, no **OnStart** that must run first before the value is set, no time in which the formula's value is incorrect.  Named formulas can refer to each other in any order, so long as they don't create a circular reference.  They can be calculated in parallel. 
 - **The formula's value is always up to date.**  The formula can perform a calculation that is dependent on control properties or database records, and as they change, the formula's value automatically updates.  You don't need to manually update the value as you do with a variable.  And formulas only recalculate when needed.
 - **The formula's definition is immutable.**  The definition in **Formulas** is the single source of truth and the value can't be changed somewhere else in the app.  With variables, it's possible that some code unexpectedly changes a value, but this isn't possible with named formulas.
-- **The formula's calculation can be deferred.**  Because it's value it immutable, it can always be calculated when needed, which means it need not be calculated until it's needed.  Formula values that aren't used until **screen2** of an app is displayed need not be calculated until **screen2** is visible.  This can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they're computed.
+- **The formula's calculation can be deferred.**  Because its value is immutable, it can always be calculated when needed, which means it need not be calculated until it's needed.  Formula values that aren't used until **screen2** of an app is displayed need not be calculated until **screen2** is visible.  Deferring this work can improve app load time.  Named formulas are declarative and provide opportunities for the system to optimize how and when they're computed.
 - **Named formulas is an Excel concept.** Power Fx uses Excel concepts where possible since so many people know Excel well.  Named formulas are the equivalent of named cells and named formulas in Excel, managed with the Name Manager.  They recalculate automatically like a spreadsheet, just like control properties do.
 
 Named formulas are defined, one after another in the **Formulas** property, each ending with a semi-colon.  The type of the formula is inferred from the types of the expression, which is based on the types of the elements within the expression and how they're used together.  For example, these named formulas retrieve useful information about the current user from Dataverse:
 
-```powerapps-dot
+```power-fx
 UserEmail = User().Email;
 UserInfo = LookUp( Users, 'Primary Email' = User().Email );
 UserTitle = UserInfo.Title;
@@ -188,7 +198,7 @@ Although each error is processed individually by **OnError**, the default error 
 
 Consider a **Label** control and **Slider** control that are bound together through the formula:
 
-```powerapps-dot
+```power-fx
 Label1.Text = 1/Slider1.Value
 ```
 
@@ -210,7 +220,7 @@ If necessary, we could also modify the formula to `Label1.Text = IfError( 1/Slid
 
 If we add an **OnError** handler, it will have no impact before step 5, but it can impact how the error is reported:
 
-```powerapps-dot
+```power-fx
 Trace( $"Error {FirstError.Message} in {FirstError.Source}" )
 ```
 
@@ -222,7 +232,7 @@ With this in place, from the app user's perspective, there won't be any error. B
 
 If we also wanted to have the same default error banner displayed in addition to the trace, we can rethrow the error with the **Error** function after the **Trace** call just as it did if the **Trace** wasn't there:
 
-```powerapps-dot
+```power-fx
 Trace( $"Error {FirstError.Message} in {FirstError.Source}" );
 Error( FirstError )
 ```
@@ -230,7 +240,7 @@ Error( FirstError )
 ## OnStart property
 
 > [!NOTE]
-> The use of **OnStart** property can cause performance problems when loading an app. We're in the process of creating alternatives for the top two reasons for using property&mdash;caching data and setting up global variables.  We've already created an alternative for defining the first screen to be shown with [**Navigate**](function-navigate.md).  Depending on your context, this property may be disabled by default. If you don't see it, and you need to use it, check the app's Advanced settings for a switch to enable it. The **OnVisible** property of a screen can also be used.
+> The use of **OnStart** property can cause performance problems when loading an app. We're in the process of creating alternatives for the top two reasons for using property&mdash;caching data and setting up global variables.  We've already created an alternative for defining the first screen to be shown with [**Navigate**](function-navigate.md).  Depending on your context, this property may be disabled by default. If you don't see it, and you need to use it, check the app's Advanced settings for a switch to enable it. The **OnVisible** property of a screen can also be used. By default, when the non-blocking **OnStart** rule is enabled, it allows the **OnStart** function to run simultaneously with other app rules. Consequently, if variables referenced in other app rules are initialized within the **OnStart** function, they may not be fully initialized yet. Additionally, there is a possibility that a screen can render and become interactive before either the **Screen.OnVisible** or **App.OnStart** functions finish executing, especially if they take a long time to complete.
 
 The **OnStart** property runs when the user starts the app. This property is often used to perform the following tasks:
 
@@ -275,22 +285,22 @@ After changing **StartScreen** in Studio, test it by hovering over the **App** o
 
 ### Examples
 
-```powerapps-dot
+```power-fx
 Screen9
 ```
 Indicates that `Screen9` should be shown first whenever the app starts.
 
-```powerapps-dot
+```power-fx
 If( Param( "admin-mode" ) = 1, HomeScreen, AdminScreen )
 ```
 Checks if the Param "admin-mode" has been set by the user and uses it to decide if the HomeScreen or AdminScreen should be displayed first.
 
-```powerapps-dot
+```power-fx
 If( LookUp( Attendees, User = User().Email ).Staff, StaffPortal, HomeScreen )
 ```
 Checks if an attendee to a conference is a staff member and directs them to the proper screen on startup.
 
-```powerapps-dot
+```power-fx
 IfError( If( CustomConnector.APICall() = "Forest", 
              ForestScreen, 
              OceanScreen 
@@ -299,5 +309,11 @@ IfError( If( CustomConnector.APICall() = "Forest",
 )
 ```
 Directs the app based on an API call to either `ForestScreen` or `OceanScreen`.  If the API fails for any reason, the `ErrorScreen` is used instead.
+
+## StudioVersion property
+
+Use the **StudioVersion** property to display or log the version of Power Apps Studio that was used to publish an app.  This can be useful when debugging and to ensure your app has been republished with a recent version of Power Apps Studio.
+
+**StudioVersion** is returned as text. The format of the text may change over time and should be treated as a whole; avoid extracting individual portions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

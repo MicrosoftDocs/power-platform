@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Global support
 
@@ -102,7 +102,7 @@ Among other things, you can use **Language** to display translated text for your
 
 And then use a formula such as the following to pull translated strings from the table:
 
-```powerapps-dot
+```power-fx
 LookUp( Table1, TextID = "Hello" && (LanguageTag = Left( Language(), 2 ) || IsBlank( LanguageTag ))).LocalizedText
 ```
 

@@ -5,11 +5,13 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/16/2021
+ms.date: 03/29/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- adrianorth 
 ---
 # Enable Unified Interface Only
 
@@ -31,7 +33,7 @@ All new environments with a Dataverse database, including those created in exist
 
 ### Existing environments
 
-Environments created before the scheduled release dates will not get this change automatically. Version 9.1.0.3448 onwards, administrators will have the option to change the environment settings to get the Unified Interface Only experience. It is recommended to switch to this mode by following the steps at [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode).
+Environments created before the scheduled release dates will not get this change automatically. Version 9.1.0.3448 onwards, administrators will have the option to change the environment settings to get the Unified Interface Only experience. It's recommended to switch to this mode by following the steps at [How to enable Unified Interface Only](#how-to-enable-unified-interface-only-mode).
 
 > [!IMPORTANT]
 > For existing environments, it's recommended that you:
@@ -65,9 +67,9 @@ With Unified Interface Only mode, all URLs (or deep links) open in Unified Inter
 
 If no app is referenced in the URL, the record or page opens without any navigation elements on the page. Navigation elements like sitemap are defined using an app; URLs without apps don't have them. Users can use the app switcher to navigate to an app and continue their work.
 
-### Dynamics 365 - custom
+### Dynamics 365 - custom (hidden for users)
 
-The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. It is always visible to those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It is not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
+The legacy web client app, also known as *Dynamics 365 - custom*, is hidden from end users when a new environment is provisioned. The legacy web client app should only be used temporarily for backwards compatibility with custom and third-party legacy functionality that you have not migrated to Unified Interface. It's not designed for Unified Interface and can cause unexpected errors and experience. For the best user experience, port all custom and third-party functionality to model-driven apps for Unified Interface.
 
 > [!div class="mx-imgBorder"] 
 > ![Dynamics 365 - custom legacy app.](media/dynamics-365-custom.png "Dynamics 365 - custom legacy app")
@@ -78,6 +80,24 @@ When Unified Interface Only mode is enabled, *Dynamics 365 - custom* opens in Un
 
 > [!div class="mx-imgBorder"] 
 > ![Show legacy app to everyone.](media/show-legacy-app-to-everyone.png "Show legacy app to everyone")
+
+### Dynamics 365 - custom (hidden for admins)
+
+As part of removing the legacy web client app, a new environment property has been added to allow gradual hiding of the app for those with System Administrator and System Customizer roles, and to other custom roles with similar privileges. In the Microsoft Power Platform admin center, go to **Environments** and select an environment. Go to **Settings** > **Product** > **Behavior** and then set the **Show legacy app for admins** option.
+
+:::image type="content" source="media/ppac-show-legacy-app-for-admins.png" alt-text="Show legacy app for admins":::
+
+| Value | Behavior |
+| -- | -- |
+| Auto (default) | Default value which behaves like **On** initially, and then gradually changes to **Off**. |
+| On | Legacy web client app is shown for admins. |
+| Off | Legacy web client app is hidden for admins. |
+
+The gradual hiding happens in the following steps. Admins can explicitly set to **On** for environments that still need the legacy web client app.
+
+1. Starting in May 2024 when new environments are provisioned, this property will be defaulted to **Off**.
+1. Starting with 2406 monthly channel release, admins in monthly channel will have **Auto** treated as **Off**.
+1. Starting with 2024 Release Wave 2, admins in semi-annual channel will have **Auto** treated as **Off**.
 
 ### Advanced settings
 
@@ -108,7 +128,7 @@ No, this change applies immediately, upon reloading the page. If it doesn't, cle
 
 ### Business users in my environment are still using the legacy web client for all or some of the scenarios, and our business is not completely ready to move to Unified Interface. How does the Unified Interface Only setting impact my environment after the April 2019 release?
 
-This setting is preset to Off for your environment, and you are unaffected by the April 2019 release. It is recommended that you take advantage of the benefits of Unified Interface early by turning Unified Interface Only mode on.
+This setting is preset to Off for your environment, and you are unaffected by the April 2019 release. It's recommended that you take advantage of the benefits of Unified Interface early by turning Unified Interface Only mode on.
 
 ### I want to use Unified Interface for all the apps, but still want *Dynamics 365 – custom* to open in the legacy web client. Is that possible?
 

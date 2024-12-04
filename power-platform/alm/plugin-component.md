@@ -97,7 +97,7 @@ Let's get started adding those components to our solution.
 5. Add a step to the solution by selecting **Add existing** \> **Other** \> **Plug-in step**.
 
     > [!TIP]
-    > In the Plug-in Registration tool, a step is called a **step**. In the classic interface **Solution Explorer**, a step is called an **Sdk message processing step**. In the modern maker interface, a step is called an **Plug-in step**.
+    > In the Plug-in Registration tool, a step is called a **step**. In the classic interface **Solution Explorer**, a step is called an **Sdk message processing step**. In the modern maker interface, a step is called a **Plug-in step**.
 
 6. Search for the registered step, select it, and then select **Add**.
 

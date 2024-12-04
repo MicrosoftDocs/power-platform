@@ -1,20 +1,20 @@
 ---
 title: Power Fx formula reference
 description: Reference information for all functions in Power Fx
-author: kumarvivek
+author:  mduelae
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur-msft
-ms.date: 12/18/2023
+ms.date: 7/12/2024
 ms.subservice: power-fx
-ms.author: kvivek
+ms.author: mkaur
 search.audienceType:
   - maker
 contributors:
   - mduelae
   - gregli-msft
-  - jorisdg
-  - kumarvivek
+  - gregli
+  -  mduelae
   - tapanm-msft
 ---
 
@@ -26,14 +26,17 @@ The Power Fx formulas are available for the following Power Platform components:
 
 | Power Platform component   | Sub areas|
 | - | - |
-| Power Apps   | Canvas apps, model-driven apps, cards |
-| Power Automate   | Desktop flows |
-| Dataverse   | Formula columns, low-code plug-ins |
-| Power Platform CLI   | Not applicable |
+| [Canvas apps](formula-reference-canvas-apps.md)   | Not applicable |
+| [Cards for Power Apps](formula-reference-cards.md)   | Not applicable |
+| Dataverse   | [Formula columns](formula-reference-formula-columns.md), [low-code plug-ins](formula-reference-plug-ins.md) |
+| [Model-driven apps](formula-reference-model-driven-apps.md)   | Not applicable |
+| Power Automate   | [Desktop flows](formula-reference-desktop-flows.md) |
+| [Power Pages](formula-reference-power-pages.md)   | Not applicable |
+| [Power Platform CLI](formula-reference-pac-cli.md)   | Not applicable |
 
 The Power Fx formula reference information is organized in the following way:
 
-- Each Power Platform component is listed as a filter article in the table of contents that you can use to find a list of all the available formulas for the component. For example, [Power Apps formula reference](formula-reference.md) and [Dataverse formula reference](formula-reference-dataverse.md).
+- Each Power Platform component is listed as a filter article in the table of contents that you can use to find a list of all the available formulas for the component. 
 - The sub areas are listed under the **Applies to** area at the beginning of each formula reference article. For example, the following denotes that the formula reference is available only for canvas apps, model-driven apps, and Dataverse formula columns:
 
     :::image type="content" source="media/overview/overview.png" alt-text="Example of Applies to":::
@@ -41,6 +44,7 @@ The Power Fx formula reference information is organized in the following way:
 ### See also
 
 - [Supported expressions by cards in Power Apps](/power-apps/cards/make-a-card/power-fx/intro-to-pfx#supported-expressions)
-- [Supported expressions by Dataverse formula columns in Power Apps](/power-apps/maker/data-platform/formula-columns#functions)
-- [Power Fx functions not supported by Dataverse low-code plug-ins](/power-apps/maker/data-platform/low-code-plug-ins-powerfx)
-- [Power Fx functions not supported by model-driven apps in Power Apps](/power-apps/maker/model-driven-apps/commanding-use-powerfx#functions-not-supported)
+- [Formula reference - model-driven apps](formula-reference-model-driven-apps.md)
+- [Formula reference - Dataverse formula columns](formula-reference-formula-columns.md)
+- [Formula reference - Dataverse plug-ins](formula-reference-plug-ins.md)
+

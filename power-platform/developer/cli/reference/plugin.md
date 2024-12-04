@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI plugin command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI plugin command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -78,6 +78,10 @@ ID of plug-in assembly or plug-in package
 #### `--configuration` `-c`
 
 Build configuration. The default value is: 'Debug'.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--pluginFile` `-pf`
 

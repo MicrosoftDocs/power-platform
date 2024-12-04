@@ -1,13 +1,18 @@
 ---
 title: "FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform"
 description: "This FAQ describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data."
-author: amishastri 
-ms.date: 08/23/2023
+author: sericks007 
+ms.date: 09/24/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
-ms.author: amishastri
-ms.reviewer: kvivek
+ms.author: svnielse
+ms.reviewer: sericks
+ms.collection: 
+    - bap-ai-copilot
+ms.contributors:
+- jordanwoo
+- knakasu
 ---
 
 # FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform
@@ -16,11 +21,16 @@ These frequently asked questions (FAQ) article describes information related to 
 
 ## What is data sharing for Copilot AI features?
 
-Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users’ inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users’ natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft’s features, services, machine learning models, and related systems for Dynamics 365 and Power Platform Copilot AI features. We don't use customer data to train Azure OpenAI Service foundation models.
+Microsoft is constantly working to improve the quality of the new AI-powered Copilot features for Dynamics 365 Copilot and Power Platform Copilot to generate outcomes with better accuracy. One of the important ways to improve Copilot features is to better understand users' inputs to the Copilot features, related outputs, and telemetry. Enabling the **Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features** setting in the Power Platform admin center allows Microsoft to capture and manually review customer data including, but not limited to, users' natural language inputs, outputs, and related telemetry to build, improve, and/or validate Microsoft's features, services, machine learning models, and related systems for Dynamics 365 and Power Platform Copilot AI features. We don't use customer data to train Azure OpenAI Service foundation models.
 
 ## How does it work?
 
-You may opt in to participate by using the Power Platform admin center. To opt in: 
+You may opt in to participate by using the Power Platform admin center. 
+
+>[!NOTE]
+> This setting is only available for tenants located in the US region currently. 
+
+To opt in: 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
 
@@ -29,7 +39,7 @@ You may opt in to participate by using the Power Platform admin center. To opt i
 1. Select **Save**.
 
 > [!NOTE]
-> When this optional data sharing setting is off, we don’t use customer data under this program. 
+> When this optional data sharing setting is off, we don't use customer data under this program. 
 
 ## What are the benefits of opting in?
 
@@ -58,9 +68,9 @@ Your data can only be accessed by Microsoft personnel with elevated access permi
 
 All data is handled as per the Copilot data security and privacy guidelines explained in [FAQ for Copilot data security and privacy in Microsoft Power Platform](faqs-copilot-data-security-privacy.md).
 
-## What about Customer Lockbox?
+## What about Customer Lockbox and customer-managed keys?
 
-[Customer Lockbox](admin/about-lockbox.md) won't apply to the access and manual review of customer data shared using this setting.
+[Customer Lockbox](admin/about-lockbox.md) and [customer-managed keys](admin/customer-managed-key.md) won't apply to the access and manual review of customer data shared using this setting.
 
 ### Related content
 

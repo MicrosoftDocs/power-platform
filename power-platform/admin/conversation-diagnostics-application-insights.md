@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ms.contributors:
 - avkatiyar
-- StephenRauchPM
+- Zeffin
 ---
 
 # Conversation diagnostics in Azure Application Insights (preview)
@@ -26,7 +26,7 @@ Connect your Dynamics 365 Customer Service environment to an Azure Application I
 
 You can then use the conversation lifecycle events data from Dynamics 365 Customer Service in Application Insights to monitor system health, export, and combine it with additional data sets to build custom dashboards per your business needs.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 > [!NOTE]
 > Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.

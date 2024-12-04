@@ -9,7 +9,7 @@ ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/21/2023
+ms.date: 07/23/2024
 search.audienceType: 
   - admin
 ---
@@ -31,7 +31,7 @@ When an environment is created with a Dataverse database or a Dataverse database
 
 - The system also supports just-in-time (JIT) user provisioning. In this scenario, when users access an environment URL, access requirements are checked at the time of sign-in and qualified users are added to the environment. 
 
-- In most cases, adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources. Users who have been assigned service admin roles or the Global admin role, assigned through the Microsoft 365 admin center, will get the [System Administrator role](database-security.md#predefined-security-roles) by default. They will have admin privileges to the environment's resources when they get added to the environment. 
+- Adding users to an environment only gives users access to the environment itself, not to any resources (apps and data) in the environment. You need to configure access to resources by [assigning security roles to users](database-security.md). Users with certain Dynamics 365 app licenses will be assigned some security roles by default that only give them read access to the environment's resources.
 
 - Because it can take a long time to automatically add users to an environment, you can use the following procedure to add specific users to the environment sooner.
 
@@ -52,9 +52,6 @@ When an environment is created with a Dataverse database or a Dataverse database
    > ![Add user.](media/add-user.png "Add user")
 
 4. In the **Add user** pane, enter the user's name or email address, select it, and add them to the environment. Note the requirements for successfully adding a user, and see [enable a user in an environment](create-users.md#enable-or-disable-user-accounts) for details about how to ensure the requirements are met. 
-
-   > [!div class="mx-imgBorder"] 
-   > ![Enter name.](media/add-user-enter-name.png "Enter name")
 
 5. Select **Refresh** to see the added user in the list.
 

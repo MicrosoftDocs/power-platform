@@ -1,9 +1,9 @@
 ---
-title: Automatic environment cleanup
+title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/02/2023
+ms.date: 04/01/2024
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -13,7 +13,7 @@ search.audienceType:
 ms.custom: bap-template
 ---
 
-# Automatic environment cleanup
+# Automatic deletion of Power Platform environments
 
 Automated processes periodically identify, disable, and eventually delete inactive Power Platform environments to optimize storage capacity. An environment may be deleted because it's in a tenant with an expired subscription or because it's not being used. In either case, there are actions you can take to prevent the environment from being deleted.
 
@@ -47,7 +47,7 @@ If an environment has already been deleted, you have a limited window of time to
 
 A cleanup mechanism in Power Platform automatically removes environments that aren't being used. After 90 days of inactivity, an environment is disabled. After 30 days, if no action is taken, the disabled environment is deleted. You have seven days to recover deleted environments.
 
-Only developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the actvity-based automatic cleanup.
+Only developer and [Dataverse for Teams environments](inactive-teams-environment.md) are affected by the activity-based automatic cleanup.
 
 > [!IMPORTANT]
 > You can't turn off this cleanup mechanism. However, you can review the last activity date for developer environments in the Power Platform admin center. 
@@ -71,15 +71,15 @@ A notification appears on the **Environments** list page and **Environment** pag
 
 ### Definition of user activity
 
-Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Power Virtual Agents, and Dataverse.
+Power Platform calculates a single measure of inactivity for each environment. The measure accounts for all activity by users, makers, and admins across Power Apps, Power Automate, Microsoft Copilot Studio, and Dataverse.
 
 Most create, read, update, and delete operations on the environment&mdash;and its resources that a user, maker, or admin initiates&mdash;are considered activity. Most read operations like visits to the home page, solution explorer, and Power Apps or Power Automate designer aren't considered activity.
 
 Here are some examples of the types of activities that are included in the measure:
 
-- **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Power Virtual Agents bot
-- **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Power Virtual Agents bot, or custom connector
-- **Admin activity**: Environment operations such as copy, delete, back up, recover, and reset  
+- **User activity**: Launch an app, execute a flow (whether automatic or not), chat with a Microsoft Copilot Studio bot
+- **Maker activity**: Create, update, or delete an app, flow (both desktop and cloud flows), Microsoft Copilot Studio bot, or custom connector
+- **Admin activity**: Environment operations such as copy, delete, recover, and reset  
 
 Activity includes automations such as scheduled flow runs. For example, if there's no user, maker, or admin activity in an environment, but it contains a cloud flow that runs daily, then the environment is considered active.
 
@@ -106,6 +106,9 @@ By default, administrators have 30 days to re-enable an environment. If the envi
 3. Select an environment to recover, and then select **Recover**.
 
 [Learn more about recovering environment](recover-environment.md).
+
+> [!NOTE]
+> Recovering a Teams environment that was deleted due to inactivity requires a tenant-level administrative role.
 
 ### See also
 

@@ -1,0 +1,2 @@
+> [!NOTE]
+> If you [installed Power Platform CLI using Windows MSI](../../../howto/install-cli-msi.md), there is a [known issue with `pac power-fx repl`](../../../howto/install-cli-msi.md#known-issue-with-pac-power-fx-repl) where the shell may stop responding when using this command.

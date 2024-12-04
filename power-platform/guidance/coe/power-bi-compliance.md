@@ -65,8 +65,6 @@ The **Adoption insights** page provides you with a tenant-wide overview of:
 - Top 5 countries/regions where makers create most launched apps
 - Top 5 environments that consume the most capacity
 
-:::image type="content" source="media/pbi-compliance4.png" alt-text="Adoption insights":::
-
 ## Default environment
 
 The **Default environment** page gives you an overview of adoption in the default environment, with the intent to help clean up tech debt in this environment and highlight highly adopted resources that may need to be migrated to a production environment.

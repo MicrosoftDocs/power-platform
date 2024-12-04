@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/30/2021
+ms.date: 4/11/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # DataSourceInfo function
@@ -69,14 +69,14 @@ You can also use **DataSourceInfo** to obtain information about a data source as
 
 ## Syntax
 
-**DataSourceInfo**( _DataSource_, _Information_, _ColumnName_ )
+**DataSourceInfo**( _DataSource_, _Information_ [, _ColumnName_] )
 
 - _DataSource_ – Required. The data source to use.
 - _Information_ – Required. The type of information that you want to retrieve.
-- _ColumnName_ – Optional. For column-level information, the column name as a string. Column **Phone** would be passed as **"Phone"**, including the double quotes. For information at the data-source level, the _ColumnName_ argument can't be used.
+- _ColumnName_ – Optional. The column name for which to retrieve column-level information. For information at the data-source level, the _ColumnName_ argument can't be used.
 
-  > [!NOTE]
-  > For SharePoint and Excel data sources that contain column names with spaces, specify each space as **"\_x0020\_"**. For example, specify **"Column Name"** as **"Column_x0020_Name"**.
+> [!NOTE]
+> In Power Apps prior to version 3.24042, column names were specified with a text string using double quotes, and if connected to a data source they also needed to be logical names. For example, the logical name **"cr43e_name"** with double quotes was used instead of the display name **Name** without quotes. For SharePoint and Excel data sources that contain column names with spaces, each space was specified with **"\_x0020\_"**, for example **"Column Name"** as **"Column_x0020_Name"**. After this version, all apps were automatically updated to the new syntax described in this article. 
 
 ## Examples
 
@@ -95,12 +95,12 @@ The data source has also provided this information:
 
 | Formula                                                                               | Description                                                                                         | Result             |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------ |
-| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;"Quantity"&nbsp;)** | Returns the display name for the **Quantity** column of the **IceCream** data source.               | "Quantity on Hand" |
-| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;"Flavor"&nbsp;)**     | Returns the maximum length of the string for the **Flavor** column of the **IceCream** data source. | 30                 |
-| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Flavor"&nbsp;)**      | Is the **Flavor** column of the **IceCream** data source required?                                  | **true**           |
-| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;"Quantity"&nbsp;)**    | Is the **Quantity** column of the **IceCream** data source required?                                | **false**          |
-| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxValue,&nbsp;"Quantity"&nbsp;)**    | Returns the maximum numeric value for the **Quantity** column of the **IceCream** data source.      | 100                |
-| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MinValue,&nbsp;"Quantity"&nbsp;)**    | Returns the minimum numeric value for the **Quantity** column of the **IceCream** data source.      | 0                  |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.DisplayName,&nbsp;Quantity&nbsp;)** | Returns the display name for the **Quantity** column of the **IceCream** data source.               | "Quantity on Hand" |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxLength,&nbsp;Flavor&nbsp;)**     | Returns the maximum length of the string for the **Flavor** column of the **IceCream** data source. | 30                 |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;Flavor&nbsp;)**      | Is the **Flavor** column of the **IceCream** data source required?                                  | **true**           |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.Required,&nbsp;Quantity&nbsp;)**    | Is the **Quantity** column of the **IceCream** data source required?                                | **false**          |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MaxValue,&nbsp;Quantity&nbsp;)**    | Returns the maximum numeric value for the **Quantity** column of the **IceCream** data source.      | 100                |
+| **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.MinValue,&nbsp;Quantity&nbsp;)**    | Returns the minimum numeric value for the **Quantity** column of the **IceCream** data source.      | 0                  |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.ReadPermission)**                     | Can the current user read records in the **IceCream** data source?                                  | **true**           |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.EditPermission)**                     | Can the current user edit records in the **IceCream** data source?                                  | **true**           |
 | **DataSourceInfo(&nbsp;IceCream, DataSourceInfo.CreatePermission)**                   | Can the current user create records in the **IceCream** data source?                                | **false**          |

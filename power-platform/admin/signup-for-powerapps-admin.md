@@ -2,7 +2,7 @@
 title: Purchase Power Apps for your organization | Microsoft Docs
 description: Provides information about how to purchase Power Apps plans.
 author: sericks007
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/02/2020
@@ -17,7 +17,7 @@ search.audienceType:
 This topic provides information on how to purchase Power Apps for your organization as an administrator. You can purchase Power Apps through the Power Apps website directly, through the [Microsoft 365 admin center](https://admin.microsoft.com), or through your Microsoft representative or partner. This article will also provide information about the trial options available for a Power Apps plan and then explain how to purchase a Power Apps plan as an organization. For more information, see [Manage licenses in your organization](signup-question-and-answer.md).
 
 > [!NOTE]
-> To purchase Power Apps for an organization, you must already be an Microsoft 365 Global or Billing Admin of a tenant, or you must create a tenant.
+> To purchase Power Apps for an organization, you must already be a Microsoft 365 Global or Billing Admin of a tenant, or you must create a tenant.
 >
 > Beginning January 2020, self-service purchase, subscription, and license management capabilities for Microsoft Power Platform products (Power BI, Power Apps, and Power Automate) are available for commercial cloud customers in the United States. For more information, including steps to enable or disable self-service purchasing in your organization, see [Self-service purchase FAQs](/microsoft-365/commerce/subscriptions/self-service-purchase-faq).
 

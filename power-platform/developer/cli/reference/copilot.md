@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI copilot command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI copilot command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -18,7 +18,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac copilot
 
-Tools and utilities for copilot scenarios
+Tools and utilities for copilot management
 
 [!INCLUDE [copilot-intro](includes/copilot-intro.md)]
 
@@ -26,25 +26,208 @@ Tools and utilities for copilot scenarios
 
 |Command|Description|
 |---------|---------|
-|[pac copilot list](#pac-copilot-list)|AI Builder models in the current environment.|
-|[pac copilot predict](#pac-copilot-predict)|Sends text or prompt to AI Model|
-|[pac copilot prepare-fetch](#pac-copilot-prepare-fetch)|Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.|
+|[pac copilot create](#pac-copilot-create)|Creates a new copilot using an existing template file as the reference.|
+|[pac copilot extract-template](#pac-copilot-extract-template)|Extracts a template file from an existing copilot in an environment.|
+|[pac copilot extract-translation](#pac-copilot-extract-translation)|Extracts file containing localized content for one or more bots.|
+|[pac copilot list](#pac-copilot-list)|List of copilots in the current or target Dataverse environment.|
+|[pac copilot merge-translation](#pac-copilot-merge-translation)|Merge files containing localized content for one or more bots.|
+|[pac copilot model list](#pac-copilot-model-list)|AI Builder models in the current environment.|
+|[pac copilot model predict](#pac-copilot-model-predict)|Sends text or prompt to AI Model|
+|[pac copilot model prepare-fetch](#pac-copilot-model-prepare-fetch)|Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.|
+|[pac copilot publish](#pac-copilot-publish)|Publish a Custom Copilot|
+|[pac copilot status](#pac-copilot-status)|Poll the deployment status of a specified copilot in the current or target Dataverse environment.|
 
+
+## pac copilot create
+
+Creates a new copilot using an existing template file as the reference.
+
+[!INCLUDE [copilot-create-intro](includes/copilot-create-intro.md)]
+
+
+### Required Parameters for copilot create
+
+#### `--displayName`
+
+The display name of the new copilot
+
+#### `--schemaName`
+
+The schema name (unique name) of the new copilot.
+
+#### `--solution` `-s`
+
+Name of the solution.
+
+#### `--templateFileName`
+
+Source yaml file containing the copilot template that was extracted using the extract-template command.
+
+
+### Optional Parameters for copilot create
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+[!INCLUDE [copilot-create-remarks](includes/copilot-create-remarks.md)]
+
+## pac copilot extract-template
+
+Extracts a template file from an existing copilot in an environment.
+
+[!INCLUDE [copilot-extract-template-intro](includes/copilot-extract-template-intro.md)]
+
+
+### Required Parameters for copilot extract-template
+
+#### `--bot` `-id`
+
+The Copilot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+
+#### `--templateFileName`
+
+Location of the yaml file to write the copilot template to.
+
+
+### Optional Parameters for copilot extract-template
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--overwrite` `-o`
+
+Allow overwrite of the output data file if it already exists.
+
+This parameter requires no value. It's a switch.
+
+[!INCLUDE [copilot-extract-template-remarks](includes/copilot-extract-template-remarks.md)]
+
+## pac copilot extract-translation
+
+Extracts file containing localized content for one or more bots.
+
+[!INCLUDE [copilot-extract-translation-intro](includes/copilot-extract-translation-intro.md)]
+
+
+### Optional Parameters for copilot extract-translation
+
+#### `--all` `-a`
+
+Write localization files for all supported languages. By default, only the primary language is written.
+
+This parameter requires no value. It's a switch.
+
+#### `--bot` `-id`
+
+The Copilot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--format`
+
+The file format in which to write localized files, either 'resx' or 'json'. The default is 'resx'.
+
+#### `--outdir`
+
+The output directory to write to.
+
+#### `--overwrite` `-o`
+
+Allow overwrite of the output data file if it already exists.
+
+This parameter requires no value. It's a switch.
+
+#### `--sourcedir` `-src`
+
+Source solution directory. When specified, will ignore the connected environment when looking for bots and instead look for content in the solution folder.
+
+[!INCLUDE [copilot-extract-translation-remarks](includes/copilot-extract-translation-remarks.md)]
 
 ## pac copilot list
 
-AI Builder models in the current environment.
+List of copilots in the current or target Dataverse environment.
+
+[!INCLUDE [copilot-list-intro](includes/copilot-list-intro.md)]
+
+
+### Optional Parameters for copilot list
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [copilot-list-remarks](includes/copilot-list-remarks.md)]
 
-## pac copilot predict
+## pac copilot merge-translation
+
+Merge files containing localized content for one or more bots.
+
+[!INCLUDE [copilot-merge-translation-intro](includes/copilot-merge-translation-intro.md)]
+
+
+### Optional Parameters for copilot merge-translation
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--file` `-f`
+
+The list of files that contain translations. Glob patterns are supported.
+
+#### `--solution` `-s`
+
+Name of the solution.
+
+#### `--sourcedir` `-src`
+
+Source solution directory. When specified, will ignore the connected environment when looking for bots and instead look for content in the solution folder.
+
+#### `--verbose`
+
+Output more diagnostic information during data import/export
+
+This parameter requires no value. It's a switch.
+
+#### `--whatif`
+
+Does not execute the command, but outputs the details of what would happen.
+
+This parameter requires no value. It's a switch.
+
+[!INCLUDE [copilot-merge-translation-remarks](includes/copilot-merge-translation-remarks.md)]
+
+## pac copilot model list
+
+AI Builder models in the current environment.
+
+[!INCLUDE [copilot-model-list-intro](includes/copilot-model-list-intro.md)]
+
+
+### Optional Parameters for copilot model list
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+[!INCLUDE [copilot-model-list-remarks](includes/copilot-model-list-remarks.md)]
+
+## pac copilot model predict
 
 Sends text or prompt to AI Model
 
-[!INCLUDE [copilot-predict-intro](includes/copilot-predict-intro.md)]
+[!INCLUDE [copilot-model-predict-intro](includes/copilot-model-predict-intro.md)]
 
 
-### Optional Parameters for copilot predict
+### Optional Parameters for copilot model predict
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--model-id` `-id`
 
@@ -62,16 +245,16 @@ Prompt to send to AI Model
 
 Text to send to AI Model
 
-[!INCLUDE [copilot-predict-remarks](includes/copilot-predict-remarks.md)]
+[!INCLUDE [copilot-model-predict-remarks](includes/copilot-model-predict-remarks.md)]
 
-## pac copilot prepare-fetch
+## pac copilot model prepare-fetch
 
 Takes the FetchXML file from the AI Large Language Model (LLM) and prepares it for execution against the current environment.
 
-[!INCLUDE [copilot-prepare-fetch-intro](includes/copilot-prepare-fetch-intro.md)]
+[!INCLUDE [copilot-model-prepare-fetch-intro](includes/copilot-model-prepare-fetch-intro.md)]
 
 
-### Required Parameters for copilot prepare-fetch
+### Required Parameters for copilot model prepare-fetch
 
 #### `--inputFile` `-i`
 
@@ -81,7 +264,58 @@ Input FetchXML file that usually comes from AI LLM.
 
 Output FetchXML file that is ready to execute against the current environment.
 
-[!INCLUDE [copilot-prepare-fetch-remarks](includes/copilot-prepare-fetch-remarks.md)]
+
+### Optional Parameters for copilot model prepare-fetch
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+[!INCLUDE [copilot-model-prepare-fetch-remarks](includes/copilot-model-prepare-fetch-remarks.md)]
+
+## pac copilot publish
+
+Publish a Custom Copilot
+
+[!INCLUDE [copilot-publish-intro](includes/copilot-publish-intro.md)]
+
+
+### Required Parameters for copilot publish
+
+#### `--bot` `-id`
+
+The Copilot ID or schema name (unique name found in Bot Details or file name in solution explorer).
+
+
+### Optional Parameters for copilot publish
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+[!INCLUDE [copilot-publish-remarks](includes/copilot-publish-remarks.md)]
+
+## pac copilot status
+
+Poll the deployment status of a specified copilot in the current or target Dataverse environment.
+
+[!INCLUDE [copilot-status-intro](includes/copilot-status-intro.md)]
+
+
+### Required Parameters for copilot status
+
+#### `--bot-id` `-id`
+
+The ID of a copilot (Chatbot).
+
+
+### Optional Parameters for copilot status
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+[!INCLUDE [copilot-status-remarks](includes/copilot-status-remarks.md)]
 
 [!INCLUDE [copilot-remarks](includes/copilot-remarks.md)]
 

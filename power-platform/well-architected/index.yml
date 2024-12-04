@@ -1,0 +1,151 @@
+### YamlMime:Marketing
+title: Power Platform Well-Architected
+metadata:
+  title: Power Platform Well-Architected
+  description: Microsoft Power Platform Well-Architected is a set of best practices, architecture guidance, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+  ms.service: power-platform
+  ms.topic: hub-page
+  ms.subservice: well-architected
+  author: robstand
+  ms.author: rstand
+  ms.reviewer: jhaskett-msft
+  ms.date: 05/16/2024
+sections:
+  # Intro
+  - componentType: text 
+    title: Power Platform Well-Architected 
+    summary: Microsoft Power Platform Well-Architected is a set of best practices, architecture guidance, and review tools to help you make informed decisions about the design, planning, and implementation of modern application workloads with Microsoft Power Platform.
+    links:
+    - componentType: link
+      url: what-is-power-well-architected
+      text: What is Power Platform Well-Architected?    
+  # Navigation Section
+  - componentType: navigation
+    size: large # optionally make section larger
+    # backgroundColor: medium
+    alignment: center # 'left' is default
+    blocks:
+      - componentType: icon-link
+        icon: book-open
+        url: whats-new.md
+        text: What's new      
+      - componentType: icon-link
+        icon: topic-architecture
+        url: pillars.md
+        text: Pillars
+      - componentType: icon-link
+        icon: book-open
+        url: workloads.md
+        text: Workloads
+      - componentType: icon-link
+        icon: topic-learn
+        url: implementing-recommendations.md
+        text: Implementing recommendations   
+      - componentType: icon-link
+        icon: developer-tools
+        url: https://aka.ms/powa/assessment
+        text: Assessment tool      
+  # Standard hero
+  - componentType: hero
+    supertitle: Power Platform Well-Architected 
+    title: Design modern application workloads that are built to change and built to last.
+    size: small
+    summary: Power Platform Well-Architected helps you design your modern application workloads to both meet current requirements and adapt to future needs and challenges. Start with the pillars, and then align your design choices with the principles for each pillar. Build a strong foundation for your workload based on the design review checklists, recommendation guides, and tradeoffs. Use the Assessment to help you identify the areas where you need to devote your attention and resources.
+
+    image:
+      componentType: image
+      src: ./_images/well-architected-hub.png   
+
+  # bifold with image and text blocks
+  #- componentType: bifold
+  #  alignment: center
+  #  blocks:
+  #    - componentType: image
+  #      src: ./_images/well-architected-refresh.png   
+  #      alt: WAF refresh update   
+  #    - title: Featured update - Core pillars restructured and refreshed 
+  #      summary: The Power Platform Well-Architected  published a significant content refresh across all five pillars. 
+  #     componentType: text
+  #      links:
+  #        - componentType: link
+  #          url: whats-new.md
+  #          text: What's new?
+  #      list:
+  #        componentType: list
+  #        style: checklist
+  #        children:
+  #          - Design principles include a set of recommended approaches and benefits.
+  #          - Design review checklist drive action through codified recommendations. 
+  #          - Design tradeoffs with other pillars. 
+  #          - Recommendations on key strategies that fulfill the principles of design.
+  #          - Design patterns based on proven, common architecture patterns, mapped to each pillar.
+  #          - Power Platform Well-Architected Review tool has been refreshed to align with the new content.
+ 
+# cards section (4)
+  - componentType: grid
+    title: Pillars
+    blocks:
+    - componentType: icon-card
+      title: Reliability
+      summary: Ensure the workload meets the uptime and recovery targets by building redundancy and resiliency at scale. 
+      url: ./reliability/index.yml 
+      icon: 
+        componentType: image
+        src: _images/reliability.svg                         
+    - componentType: icon-card
+      title: Security
+      summary: Protect the workload from attacks by maintaining confidentiality and data integrity. 
+      url: ./security/index.yml    
+      icon: 
+        componentType: image
+        src: _images/security.svg      
+    - componentType: icon-card
+      title: Operational Excellence
+      summary: Reduce issues in production by building holistic observability and automated systems. 
+      url: ./operational-excellence/index.yml
+      icon: 
+        componentType: image
+        src: _images/operational-excellence.svg
+    - componentType: icon-card
+      title: Performance Efficiency
+      summary: Adjust to changes in demands placed on the workload through horizontal scaling and by testing changes before deploying to production. 
+      url: ./performance-efficiency/index.yml    
+      icon: 
+        componentType: image
+        src: _images/performance-efficiency.svg           
+    - componentType: icon-card
+      title: Experience Optimization
+      summary: Create meaningful and useful experiences that ensure successful business outcomes. 
+      url: ./experience-optimization/index.yml
+      icon: 
+        componentType: image
+        src: _images/experience-optimization.svg       
+     
+  
+# Text section
+  - componentType: text
+    title: Power Platform prescriptive guidance
+    links:
+    - componentType: link
+      url: /power-platform/guidance
+      text: Browse the prescriptive guidance for Power Platform
+  - componentType: text
+    title: Power Platform product documentation
+    links:
+    - componentType: link
+      url: /power-platform
+      text: Browse the product documentation for Power Platform
+
+  # social section
+  #- componentType: social
+  #  title: Follow us on the web
+  #  links:
+  #    - componentType: social-link
+  #      url: /azure/architecture/browse/
+  #      destination: website    
+  #   - componentType: social-link
+  #      url: https://techcommunity.microsoft.com/t5/azure-architecture-blog/bg-p/AzureArchitectureBlog/label-name/Well%20Architected
+  #      destination: blog
+  #    - componentType: social-link
+  #      url: https://www.youtube.com/watch?v=xDhaHSK7mgM
+  #      destination: youtube

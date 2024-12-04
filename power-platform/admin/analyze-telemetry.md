@@ -4,10 +4,10 @@ description: About analyzing model-driven apps and Microsoft Dataverse telemetry
 services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/06/2022
-author: StephenRauchPM
+ms.date: 02/12/2024
+author: Zeffin
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: johnev
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -56,7 +56,7 @@ Note that Monitor can be used for [live detailed debugging for canvas apps and m
 
 If the standard telemetry doesn't provide some specific metric that you need, you can write code to supplement what's already being gathered.
 
-When you have enabled this Application Insights capability you can use the [Microsoft.Xrm.Sdk.PluginTelemetry.ILogger Interface](/dotnet/api/microsoft.xrm.sdk.plugintelemetry.ilogger) in your plug-in code to write telemetry data directly to your Application Insights resource. This telemetry is never sent to Microsoft. More information: [Write Telemetry to your Application Insights resource using ILogger (Preview)](/powerapps/developer/data-platform/application-insights-ilogger)
+When you have enabled this Application Insights capability you can use the [Microsoft.Xrm.Sdk.PluginTelemetry.ILogger Interface](/dotnet/api/microsoft.xrm.sdk.plugintelemetry.ilogger) in your plug-in code to write telemetry data directly to your Application Insights resource. This telemetry is never sent to Microsoft. More information: [Write Telemetry to your Application Insights resource using ILogger](/powerapps/developer/data-platform/application-insights-ilogger)
 
 For client-side JavaScript in model-driven apps, you can use the same patterns you use today to write to your Application Insights resource.
 

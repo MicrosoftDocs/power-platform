@@ -1,13 +1,13 @@
 ---
 title: "Support for Microsoft Power Platform and Dynamics 365 apps | MicrosoftDocs"
 description: "Information on support for Microsoft Power Platform and Dynamics 365 apps including languages in which Microsoft provides support for Power Platform and Dynamics 365, support hours, what support is included with a support plan, how to contact support."
-ms.date: 09/12/2023
-ms.reviewer: "kvivek"
+ms.date: 11/25/2024
+ms.reviewer: "sericks"
 ms.topic: overview
 ms.custom: "admin-security"
 ms.collection: get-started
-author: "KumarVivek"
-ms.author: "kvivek"
+author: "sericks007"
+ms.author: "sericks"
 ---
 # Support for Microsoft Power Platform and Dynamics 365 apps
 
@@ -136,10 +136,13 @@ Public preview and/or beta services may be supported through our [forums](https:
 |Service  |Support portal  |
 |---------|---------|
 |Customer engagement apps and AI apps including mixed reality apps and Insights apps   |[Power Platform admin center](https://admin.powerplatform.microsoft.com)         |
-|finance and operations apps (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
+|Finance and operations apps (online and on-premises)     | <a href="https://lcs.dynamics.com">Lifecycle Services</a>    |
 |Dynamics 365 Business Central      | Support is provided through partners only. Contact your Cloud Solution Provider (CSP) for assistance.        |
 |**Product**    |     |
 |Dynamics   |<a href="https://support.microsoft.com/supportforbusiness/productselection">Support for Business</a><br /> or <br />  <a href="https://support.microsoft.com/premier">Premier Support</a>   |
+
+> [!NOTE]
+> Depending on availability, you might be able to use live chat option to converse with support engineers from Microsoft after creating a support request using the Power Platform admin center. More information: [Use live chat with persistence for support requests](live-chat-support.md)
 
 ### Why is submitting a request online the preferred method of contacting Support?
 
@@ -172,7 +175,7 @@ Any users with the Power Platform admin roles on the tenant containing the subsc
 
 ### How do I authorize another person to submit support requests for a particular subscription in the Power Platform admin center?
 
-To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) about role assignments in the portal.
+To grant permission, you must have a Power Platform admin role on the tenant that contains the subscription. Assign the Service Administrator role to all users who want to create and manage support requests for that given tenant but do not require other permissions. [Learn more](/office365/admin/add-users/about-admin-roles) about role assignments in the portal.
 
 ### I am developing applications on behalf of my client or assisting my client who is running customer engagement apps. How do I get support in the Power Platform admin center?
 
@@ -222,7 +225,7 @@ Technical support does not conduct RCAs as part of any support experience. If an
 
 Data may become corrupt due to a variety of reasons (malfunctioning software, custom code, partner or ISV software, power outages, etc.). Microsoft does not provide assistance for correcting damaged data.  Note that per the Service Provider License Agreement (SPLA), Microsoft does not have a legal obligation to change or correct data being corrupted due to malfunctioning software.  Microsoft may execute scripts provided by partners/customers in the production environment if the script was tested in the UAT environment by the partner/customer prior.
 
-### What happens if the issue can not be reproduced or has to do with customized databases?
+### What happens if the issue can't be reproduced or has to do with customized databases?
 
 In scenarios where a problem is not able to be reproduced in a standard non-modified Dynamics installation, the Microsoft Dynamics support team will invest best effort support up to 4 hours of time on a break fix case to assist. If after 4 hours, we have not yet identified the repro steps of an issue, consulting a partner or the community forums will be recommended for further investigation and the technical support incident will be closed.
 
@@ -246,7 +249,7 @@ At the end of your term, your plan will automatically renew to the same Support 
 Manage your support plan subscriptions through the [Microsoft 365 admin center](https://admin.microsoft.com/).
 
 - To change your support plan, first cancel your existing support plan, and then purchase a new support plan.
-- To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**.   [Learn more](/office365/admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) by reviewing this article.
+- To cancel your support plan, select the support plan subscription that you want to cancel, and then select **Cancel subscription**.   [Learn more](/office365/admin/subscriptions-and-billing/cancel-your-subscription) by reviewing this article.
 
 If you still have questions, open a new support request with the Billing team in the [Microsoft 365 admin center](https://admin.microsoft.com/). 
 

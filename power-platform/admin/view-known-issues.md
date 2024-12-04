@@ -1,32 +1,25 @@
 ---
-title: View known issues (preview)
+title: View known issues
 description: Learn how to view known issues in Power Platform admin center.
 author: mamali-ms 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/25/2023
+ms.date: 07/12/2024
 ms.subservice: admin
 ms.author: mamali 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
-# View known issues (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# View known issues
 
 Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix has been identified or is in progress. A workaround and expected time to fix the issue are also provided, when available.  
-  
-> [!Important]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - The ability to view known issues is only available for limited features within Power Automate and Power Apps products for users in the US region.
 
 ## View known issues  
   
 1.  Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1.  Select **Help + support** in the navigation pane.
-1.  Select the **Known issues (Preview)** tab.
+1.  Select the **Known issues** tab.
 1.  Narrow your search for a known issue by using the available filters and search.
 
     - **Product Category**: Choose one or multiple products. By default, all products with a known issue are selected.
@@ -47,11 +40,7 @@ Customer trust and transparency are important to us. You can now view existing p
 
 1. When [creating a support request](get-help-support.md#view-solutions-or-create-a-support-request), if a known issue is applicable to the search query, it displays at the top of the **Solutions** tab.
 
-   :::image type="content" source="media/known-issue-at-top.png" alt-text="The known issue displays at the top of the Solutions tab.":::
-
-1. Select the title of the issue to view details.
-
-    :::image type="content" source="media/still-need-help.png" alt-text="Select 'Yes' or 'No, I still need help'.":::
+1. Select the title of the known issue to view details.
      
 1. If the information resolved your query, click **Yes** to close the support request. To see more solutions, select **No, I still need help**.
 

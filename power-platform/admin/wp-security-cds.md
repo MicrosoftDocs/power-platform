@@ -1,12 +1,12 @@
 ---
 title: "Security concepts in Microsoft Dataverse | MicrosoftDocs"
 description: Provides detailed information about the security model and concepts in Microsoft Dataverse.
-ms.date: 12/06/2022
+ms.date: 07/23/2024
 ms.topic: conceptual
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -14,14 +14,14 @@ search.audienceType:
 
 # Security concepts in Microsoft Dataverse
 
-One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there is a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
+One of the key features of [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) is its rich security model that can adapt to many business usage scenarios. This security model is only in play when there's a Dataverse database in the environment. As an administrator, you likely won't be building the entire security model yourself, but will often be involved in the process of managing users and making sure they have the proper configuration and troubleshooting security access related issues.
 
 > [!TIP]
 > ![Video symbol](../admin/media/video-thumbnail-4.png "Video symbol") Check out the following video: [Microsoft Dataverse – Security Concepts Shown In Demos](https://youtu.be/8UWSj-vvxzU).  
 
 ## Role-based security
 
-Dataverse uses role-based security to group together a collection of privileges. These [security roles](security-roles-privileges.md) can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team will benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. If you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
+Dataverse uses role-based security to group together a collection of privileges. These [security roles](security-roles-privileges.md) can be associated directly to users, or they can be associated with Dataverse teams and business units. Users can then be associated with the team, and therefore all users associated with the team benefit from the role. A key concept of Dataverse security to understand is all privilege grants are accumulative with the greatest amount of access prevailing. If you gave broad organization level read access to all contact records, you can’t go back and hide a single record.
 
 ## Business units
 
@@ -31,17 +31,17 @@ Dataverse uses role-based security to group together a collection of privileges.
 
 Business units work with security roles to determine the effective security that a user has. Business units are a security modeling building block that helps in managing users and the data they can access. Business units define a security boundary. Every Dataverse database has a single root business unit.
 
-You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to an environment will belong to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
+You can [create child business units](./create-edit-business-units.md) to help further segment your users and data. Every user assigned to an environment belongs to a business unit. While business units could be used to model 1:1 a true organization hierarchy, more often they lean more towards just defined security boundaries to help achieve the security model needs.
 
-To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have very different access needs. When we associate a user with this environment, we can set the user to be in one of these three business units. Where the user is associated will determine which business unit owns the records that user is the owner of. Having that association allows us to tailor a security role to allow the user to see all records in that business unit.
+To better understand let’s look at the following example. We have three business units. Woodgrove is the root business unit and will always be at the top, that is unchangeable. We've created two other child business units A and B. Users in these business units have different access needs. When we associate a user with this environment, we can set the user to be in one of these three business units. Where the user is associated determines which business unit owns the records that user is the owner of. Having that association allows us to tailor a security role to allow the user to see all records in that business unit.
 
 ### Hierarchical data access structure  
 
 Customers can use an organization structure where data and user are compartmentalized in a tree-like hierarchy.  
 
-When we associate a user with this environment, we can set the user to be in one of these three business units and assign a security role from the business unit to the user. The business unit the user is associated with determines which business unit owns the records when the user creates a record. By having that association it allows us to tailor a security role which allows the user to see records in that business unit. 
+When we associate a user with this environment, we can set the user to be in one of these three business units and assign a security role from the business unit to the user. The business unit the user is associated with determines which business unit owns the records when the user creates a record. By having that association it allows us to tailor a security role, which allows the user to see records in that business unit. 
 
-User A is associated with Division A and assigned a security role Y from Division A. This allows user A to access the Contact #1 and Contact #2 records. While user B in Division B cannot access Division A’s Contact records but can access Contact #3 record. 
+User A is associated with Division A and assigned a security role Y from Division A. This allows user A to access the Contact #1 and Contact #2 records. While user B in Division B can't access Division A’s Contact records but can access Contact #3 record. 
 
 > [!div class="mx-imgBorder"] 
 > ![Matrix data access structure example](media/example-business-unit0.png "Matrix data access structure example")
@@ -62,7 +62,7 @@ User A can be associated with any of the business units, including the root busi
 > [!NOTE]
 > Before you enable this feature, you must publish all your customizations to enable all your new unpublished tables for the feature. If you find that you have unpublished tables that are not working with this feature after you have turned it on, you can set the **RecomputeOwnershipAcrossBusinessUnits** setting using the [OrgDBOrgSettings tool for Microsoft Dynamics CRM](https://support.microsoft.com/help/2691237/orgdborgsettings-tool-for-microsoft-dynamics-crm). Setting **RecomputeOwnershipAcrossBusinessUnits** to true allows the [Owning Business Unit](#owning-business-unit) field to be set and updated.
 
-1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin). 
+1. Sign in to the [Power Platform admin center](https://aka.ms/ppac) as an admin (Dynamics 365 admin or Microsoft Power Platform admin). 
 2. Select **Environments**, and then choose the environment that you want to enable this feature for. 
 3. Select **Settings** > **Product** > **Features**. 
 4. Turn **On** the **Record ownership across business units** switch. 
@@ -90,7 +90,7 @@ In the [matrix data access](wp-security-cds.md#matrix-data-access-structure-mode
 
 ### Owning Business Unit
 
-Each record has an **Owning Business Unit** column which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and cannot be changed except when the feature switch is turned ON. 
+Each record has an **Owning Business Unit** column, which determines which business unit owns the record. This column defaults to the user’s business unit when the record is created and can't be changed except when the feature switch is turned ON. 
 
 > [!NOTE]
 > When you change which business unit owns a record, be sure to check out the following for cascade effects: [Using SDK for .NET to configure cascading behavior](/powerapps/developer/data-platform/configure-entity-relationship-cascading-behavior#using-organization-service-to-configure-cascading-behavior).
@@ -100,7 +100,7 @@ You can manage whether you want to allow your user to set the Owning Business Un
 To allow your user to set this column, you can enable this column in the following:
 1. Form - both the body and header.
 2. View.
-3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you are using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the column in your column mapping. 
+3. [Column mappings](/powerapps/developer/data-platform/customize-entity-attribute-mappings). If you're using the [AutoMapEntity](/powerapps/developer/data-platform/customize-entity-attribute-mappings#auto-mapping-columns-between-tables), you can specify the column in your column mapping. 
 
 > [!NOTE]
 > If you have a job/process to sync data between environments and the **Owning Business Unit** is included as part of the schema, your job will fail with a **Foreign KEY** constraint violation if the target environment does not have the same **Owning Business Unit** value. 
@@ -156,11 +156,11 @@ Individual records can be shared on a one-by-one basis with another user. This i
 
 ### Record-level security in Dataverse
 
-You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it is the combination of all their security roles, the business unit they are associated with, the teams they are members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Dataverse database environment. These entitlements are only granted within a single database and are individually tracked in each Dataverse database. This all requires they have an appropriate license to access Dataverse.
+You might be wondering – what determines access to a record? That sounds like a simple question but for any given user it's the combination of all their security roles, the business unit they're associated with, the teams they're members of and the records that are shared with them. The key thing to remember is all access is accumulative across all those concepts in the scope of a Dataverse database environment. These entitlements are only granted within a single database and are individually tracked in each Dataverse database. This all requires they have an appropriate license to access Dataverse.
 
 ### Column-level security in Dataverse
 
-Sometimes record-level control of access is not adequate for some business scenarios. Dataverse has a column-level security feature to allow more granular control of security at the column level. Column-level security can be enabled on all custom columns and most system columns. Most system columns that include personal identifiable information (PII) are capable of being individually secured. Each column’s metadata defines if that is an available option for the system column.
+Sometimes record-level control of access isn't adequate for some business scenarios. Dataverse has a column-level security feature to allow more granular control of security at the column level. Column-level security can be enabled on all custom columns and most system columns. Most system columns that include personal identifiable information (PII) are capable of being individually secured. Each column’s metadata defines if that is an available option for the system column.
 
 Column-level security is enabled on a column by column basis. Access is then managed by creating a Column Security Profile. The profile contains all column that have column-level security enabled and the access granted by that specific profile. Each column can be controlled within the profile for Create, Update and Read access. Column Security Profiles are then associated with a user or Teams to grant those privileges to the users to the records they already have access to. It’s important to note that column-level security has nothing to do with record-level security. A user must already have access to the record for the Column Security Profile to grant them any access to the columns. Column-level security should be used as needed and not excessively as it can add overhead that is detrimental if over used.
 
@@ -176,7 +176,7 @@ In addition, you would assign any security roles that user needs. You would also
 
 If you have used column-level security, you would need to associate the user or a team of the user to one of the Column Securities Profiles you created.
 
-Security is a complex article and is best accomplished as a joint effort between the application makers and the team administering the users permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
+Security is a complex article and is best accomplished as a joint effort between the application makers and the team administering the users' permissions. Any major changes should be coordinated well in advance of deploying the changes into the environment.
 
 ### See also
 [Configure environment security](database-security.md)<br/>

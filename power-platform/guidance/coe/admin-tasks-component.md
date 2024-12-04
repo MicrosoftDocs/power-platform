@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/07/2022
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -44,7 +44,7 @@ You can start either by adding your own tasks or importing a set of example task
 - Power Apps
 - Power Automate
 - Power Pages
-- Power Virtual Agents
+- Microsoft Copilot Studio
 - Environments, data loss prevention (DLP) policies, and connectors
 
 To set up the component, go to [Set up the Microsoft Power Platform administration planning component](setup-admin-tasks-component.md).

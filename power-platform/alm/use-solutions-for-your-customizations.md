@@ -1,5 +1,5 @@
 ---
-title: "Default solution vs. custom solution"
+title: "Use a solution to customize"
 description: "Using a custom solution in the Power Platform is highly recommended. Discover why a custom solution is better than using a default solution to manage your apps, flows, and customizations."
 ms.custom: ""
 ms.date: 11/11/2021

@@ -7,157 +7,137 @@ brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Leverage Microsoft Power Platform to analyze data, build custom apps, automate workflows, build chatbots and websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
+  description: Use Microsoft Power Platform to analyze data, build custom apps, automate workflows, build websites with Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
-  author: KumarVivek #Required; your GitHub user alias, with correct capitalization.
-  ms.author: kvivek #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/25/2023 #Required; mm/dd/yyyy format.
+  author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
+  ms.author: tapanm #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/05/2024 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample tutorial | video | whats-new
-
   items:
     # Card
     - title: What's new in Power Platform?
       itemType: whats-new
       url: /dynamics365/release-plans/
-
     # Card
     - title: Power Platform training and certifications
       itemType: learn
       url: /training/powerplatform/
-
     # Card
     - title: Power Platform In a Day workshops
       itemType: get-started
       url: https://aka.ms/PowerPlatformIAD
-
     # Card
     - title: Power Platform videos
       itemType: video
       url: https://www.youtube.com/c/mspowerplatform/
 
-conceptualContent:
-  # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  sections:
-    - title: Power Platform applications and features # < 60 chars (Optional; Remove if not applicable.)
-      # summary: subsectionsummary1 # < 160 chars (Optional; Remove if not applicable.)
-      items:
-        - title: Power Apps
-          links:
-            - url: /powerapps
-              itemType: overview
-              text: Power Apps documentation
-            - url: /training/powerplatform/power-apps
-              itemType: learn
-              text: Power Apps training and learning paths
-            - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
-              itemType: video
-              text: Power Apps videos
-        - title: Power Automate
-          links:
-            - url: /power-automate/
-              itemType: overview
-              text: Power Automate documentation
-            - url: /training/powerplatform/power-automate
-              itemType: learn
-              text: Power Automate training and learning paths
-            - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
-              itemType: video
-              text: Power Automate videos
-        - title: Power BI
-          links:
-            - url: /power-bi/
-              itemType: overview
-              text: Power BI documentation
-            - url: /training/powerplatform/power-bi
-              itemType: learn
-              text: Power BI training and learning paths
-            - url: https://www.youtube.com/user/mspowerbi
-              itemType: video
-              text: Power BI videos
-        - title: Power Pages
-          links:
-            - url: /power-pages/
-              itemType: overview
-              text: Power Pages documentation
-            - url: /training/paths/power-pages-get-started
-              itemType: learn
-              text: Power Pages training and learning paths
-            - url: /power-pages/training-videos
-              itemType: video
-              text: Power Pages videos
-        - title: Administer and extend Power Platform
-          links:
-            - url: ./admin/index.yml
-              itemType: reference
-              text: Power Platform admin documentation
-            - url: ./admin/pricing-billing-skus.md
-              itemType: overview
-              text: Product licensing
-            - url: ./alm/index.yml
-              itemType: overview
-              text: Application lifecycle management (ALM) guide
-            - url: ./developer/index.yml
-              itemType: reference
-              text: Power Platform developer documentation
-        - title: Best practices guidance
-          links:
-            - url: ./guidance/adoption/methodology.md
-              itemType: overview
-              text: Adoption best practices
-            - url: /assessments/3c62fd23-9d36-491c-8941-26d5553365f8
-              itemType: overview
-              text: Adoption assessment
-            - url: ./guidance/coe/starter-kit.md
-              itemType: overview
-              text: Center of Excellence (CoE) Starter kit
-            - url: https://www.youtube.com/playlist?list=PLi9EhCY4z99W2QOTgbwhFZEjpqc8YZDVH
-              itemType: video
-              text: "Videos: Power Apps and Power Automate Architecture Series"
-            - url: /power-platform/guidance/white-papers
-              itemType: overview
-              text: White papers            
-        - title: Copilot and AI capabilities
-          links:
-            - url: responsible-ai-overview.md
-              itemType: overview
-              text: Responsible AI FAQs
-            - url: /power-apps/maker/common/responsible-ai-overview
-              itemType: overview
-              text: AI-driven features in Power Apps
-            - url: /power-automate/responsible-ai-overview
-              itemType: overview
-              text: AI-driven features in Power Automate
-            - url: /power-pages/responsible-ai-overview
-              itemType: overview
-              text: AI-driven features in Power Pages    
-
+productDirectory:
+  title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
+  summary: Use Microsoft Power Platform to build apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
+  items:
+  - title: Power Apps
+    imageSrc: "media/hub-page/power-apps.svg"
+    summary: Learn how to quickly build modern low-code apps for business challenges in your organization.
+    links:
+    - url: /power-apps
+      text: Power Apps documentation
+    - url: /training/powerplatform/power-apps
+      text: Power Apps training
+    - url: https://www.youtube.com/channel/UCGfWR2ekfRFckLjev6eQYLg/
+      text: Power Apps videos
+  - title: Power Automate
+    imageSrc: "media/hub-page/power-automate.svg"
+    summary: Learn how to create flows quickly using low-code platform to automate business tasks and workflows.
+    links:
+      - url: /power-automate
+        text: Power Automate documentation
+      - url: /training/powerplatform/power-automate
+        text: Power Automate training
+      - url: https://www.youtube.com/channel/UCG98S4lL7nwlN8dxSF322bA
+        text: Power Automate videos
+  - title: Power BI
+    imageSrc: "media/hub-page/power-bi.svg"
+    summary: Learn how to get expert information and answers to address your needs.
+    links:
+    - url: /power-bi
+      text: Power BI documentation
+    - url: /training/powerplatform/power-bi
+      text: Power BI training
+    - url: https://www.youtube.com/user/mspowerbi
+      text: Power BI videos
+  - title: Power Pages
+    imageSrc: "media/hub-page/power-pages.svg"
+    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
+    links:
+    - url: /power-pages
+      text: Power Pages documentation
+    - url: /training/paths/power-pages-get-started
+      text: Power Pages training
+    - url: /power-pages/training-videos
+      text: Power Pages videos   
+  - title: Microsoft Copilot Studio
+    imageSrc: "media/hub-page/copilot-studio.svg"
+    summary: Learn how to extend or create your own AI-driven copilot experiences.
+    links:
+    - url: /microsoft-copilot-studio
+      text: Copilot Studio documentation
+    - url: /training/paths/work-power-virtual-agents
+      text: Copilot Studio training  
+    
+tools:
+  title: Power Platform capabilities 
+  summary: "Enhance apps and business processes with AI Builder, connect to a variety of data sources through Connectors, use Copilot and generative AI capabilities to boost productivity, use powerful data service to quickly build enterprise-grade apps with Dataverse, and use low-code strongly-typed declarative and functional language with Power Fx."  
+  items:
+    # Card
+  - title: AI Builder
+    imageSrc: "media/hub-page/ai-builder.svg"
+    url: /ai-builder
+  - title: Connectors
+    imageSrc: "media/hub-page/connectors.png"
+    url: /connectors/
+  - title: Copilots and generative AI
+    imageSrc: "media/hub-page/copilot.svg"
+    url: copilot.yml
+  - title: Microsoft Dataverse
+    imageSrc: "media/hub-page/dataverse.svg"
+    url: /power-apps/maker/data-platform/
+  - title: Power Fx
+    imageSrc: "media/hub-page/power-fx.svg"
+    url: /power-platform/power-fx/overview
 additionalContent:
-  # Supports up to 3 sections
   sections:
-    - title: Power Platform capabilities and related features
+    - title: Power Platform administration, development, and guidance
       items:
         # Card
-        - title: AI Builder
-          summary: "Enhance your apps and business processes with AI that’s easy to build and configure"
-          url: /ai-builder        
+        - title: Administration
+          summary: "Learn about how to administer using Power Platform admin center"
+          url: ./admin/index.yml
+        # Card        
+        - title: Application lifecycle management (ALM) guide
+          summary: "Learn how to implement ALM using Power Platform products and services"
+          url: ./alm/index.yml
         # Card
-        - title: Connectors
-          summary: "Connect to hundreds of data sources using a library of connectors"
-          url: /connectors/
+        - title: Guidance
+          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more"
+          url: ./guidance/index.yml        
         # Card
-        - title: Dataverse
-          summary: "Powerful data service and app platform to quickly build enterprise-grade apps with automated business processes"
-          url: /powerapps/maker/common-data-service/data-platform-intro
+        - title: Extend and develop
+          summary: "Learn about developing apps and services in Power Platform using code"
+          url: ./developer/index.yml
         # Card
-        - title: Power Fx
-          summary: "Low-code, strongly-typed, declarative, and functional language based on spreadsheet-like formulas"
-          url: /power-platform/power-fx/overview
-    - title: Similar Microsoft products
-      items:
+        - title: Licensing
+          summary: "Understand licensing across Power Platform products and services"
+          url: ./admin/pricing-billing-skus.md
+        # Card
+        - title: Well-Architected
+          summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"
+          url: ./well-architected/index.yml        
+    - title: Related products and capabilities
+      items:      
         # Card
         - title: Dynamics 365
           summary: "The next generation of CRM and ERP applications"
@@ -166,3 +146,6 @@ additionalContent:
         - title: Microsoft Azure
           summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
           url: /azure
+
+
+

@@ -7,17 +7,20 @@ ms.author: samathur
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/03/2024
+ms.date: 07/25/2024
 search.audienceType: 
   - admin
 ms.contributors:
+- leicke
 - matleon
 - swatim
 - alvaror
+contributors:
+- mLeonard-msft
 ---
 # General availability deployment
 
-Each release wave becomes _generally available_ twice a year. Your environments automatically receives these mandatory updates.
+Each release wave becomes _generally available_ twice a year. Your environments automatically receive these mandatory updates.
 
 To test the upcoming updates, [opt in to early access updates](opt-in-early-access-updates.md).
 
@@ -47,31 +50,31 @@ You receive release wave updates as part of your Dataverse weekly updates. This 
 
 For each region listed, deployment begins as early as the Friday dark hours before the listed date.
 
-|Region  | Deployment schedule for 2024 wave 1 general availability |
+|Region  | Deployment schedule for 2024 wave 2 general availability |
 |---------|---------|
-| First Release                | March 25, 2024 |
-| Canada                       | April 1, 2024  |
-| South America                | April 1, 2024  |
-| India                        | April 1, 2024  |
-| France                       | April 1, 2024  |
-| South Africa                 | April 1, 2024  |
-| Germany                      | April 1, 2024  |
-| Switzerland                  | April 1, 2024  |
-| Norway                       | April 1, 2024  |
-| Korea                        | April 1, 2024  |
-| Singapore                    | April 1, 2024  |
-| United Arab Emirates         | April 8, 2024  |
-| Japan                        | April 8, 2024  |
-| Asia Pacific                 | April 8, 2024  |
-| Great Britain                | April 8, 2024  |
-| Australia                    | April 8, 2024  |
-| GCC High\*                   | April 8, 2024  |
-| Europe                       | April 15, 2024 |
-| North America                | April 22, 2024 |
-| Dedicated Scale Groups (SPL) | April 29, 2024 |
-| GCC\*                        | April 29, 2024 |
-| DoD\*                        | April 29, 2024 |
-| China\**                      | April 29, 2024 |
+| First release                | September 23, 2024 |
+| Canada                       | September 30, 2024  |
+| South America                | September 30, 2024  |
+| India                        | September 30, 2024  |
+| France                       | September 30, 2024  |
+| South Africa                 | September 30, 2024  |
+| Germany                      | September 30, 2024  |
+| Switzerland                  | September 30, 2024  |
+| Norway                       | September 30, 2024  |
+| Korea                        | September 30, 2024  |
+| Singapore                    | September 30, 2024  |
+| Sweden                       | September 30, 2024  |
+| United Arab Emirates         | October 7, 2024  |
+| Japan                        | October 7, 2024  |
+| Asia Pacific                 | October 7, 2024  |
+| Great Britain                | October 7, 2024  |
+| Australia                    | October 7, 2024  |
+| GCC High\*                   | October 7, 2024  |
+| Europe                       | October 14, 2024 |
+| North America                | October 21, 2024 |
+| GCC\*                        | October 28, 2024 |
+| DoD\*                        | October 28, 2024 |
+| China\**                      | October 28, 2024 |
 
 \*For more information about GCC, GCC High, and DoD, see [Dynamics 365 US Government](microsoft-dynamics-365-government.md).
 \**For more information about environments in China, see [Power Platform and Dynamics 365 apps operated by 21Vianet in China](about-microsoft-cloud-china.md).

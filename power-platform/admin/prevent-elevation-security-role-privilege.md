@@ -4,7 +4,7 @@ description: Create an administrative user and prevent elevation of security rol
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin

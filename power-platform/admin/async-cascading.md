@@ -3,10 +3,9 @@ title: Asynchronous processing of cascading transactions | Microsoft Docs
 description: Learn how to configure cascading operations to process asynchronously.
 services: powerapps
 author: NHelgren
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/31/2023
+ms.date: 07/26/2024
 ms.subservice: admin
 ms.author: nhelgren
 ms.reviewer: sericks
@@ -35,18 +34,14 @@ If an environment is encountering timeouts or degraded performance while the syn
 | If a single record fails, all data is rolled back to the original value. The rollback requires re-editing all completed records, which takes more time.    | If a single job fails, it is retried multiple times to attempt completion. If the job can't be completed, the failure is recorded in the **System Jobs** area. Notice that successfully completed records retain the new value.   |
 | If one of the records in the cascading list has a value that is different than the expected value, the job fails and is rolled back. For example, assume that the starting record belongs to *Owner 1* and the cascading operation wants to change it to *Owner 2*. If one of the downstream, related records has changed to *Owner 3* or is deleted before the lock occurs, the entire job is rolled back. | For Assign, the operation always works in overwrite mode, changing the current value to the new value based on the parent-child relationship. There are no job failures due to an original value mismatch. For Delete, if a record that was expected as part of the set is missing, all the records up to the failure point are considered completed. The user or admin can re-execute the failed job, which recalculates the job to continue without the missing record. For Merge, if there's an issue with a missing record, the job is retried and executed without the missing record. |
 
-## Asynchronous mode and plug-ins
-When a cascading transaction meets the threshold for included records and doesn't have any plug-ins associated with the records, the records are processed asynchronously.
+## Asynchronous mode 
+When a cascading transaction meets the threshold for included records, the records are processed asynchronously,
 
-| **Operation** | **Threshold**  |
-|---------------|----------------|
-| Assign        | 1,000 records  |
-| Delete        | 10,000 records |
-| Merge         | 1,000 records  |
-
-If there's a plug-in assigned to a record inside the asynchronous batch, the single-record update or delete, along with all associated plug-ins for that record, run synchronously. This occurs as part of a transaction before moving to the next record in the asynchronous batch.
-
-If a plug-in inside the asynchronous transaction triggers a new cascading delete or assign, the new cascading transaction always run synchronously within the current asynchronous transaction. This prevents having multiple layers of asynchronous transactions.
+|Operation|	Threshold|
+|---------|----------|
+|Assign	|1,000 records|
+|Delete	|5,000 records|
+|Merge	|1,000 records|
 
 ## Tracking asynchronous operation progress
 Administrators can monitor the processing of asynchronous operations in the **Settings** area. 

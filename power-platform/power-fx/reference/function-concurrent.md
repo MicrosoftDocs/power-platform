@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 07/07/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
   - lezucket
 ---
 
@@ -58,7 +58,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 2. Add a **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( Product, '[SalesLT].[Product]' );
    ClearCollect( Customer, '[SalesLT].[Customer]' );
    ClearCollect( SalesOrderDetail, '[SalesLT].[SalesOrderDetail]' );
@@ -81,7 +81,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 7. Add a second **[Button](/power-apps/maker/canvas-apps/controls/control-button)** control, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Concurrent(
        ClearCollect( Product, '[SalesLT].[Product]' ),
        ClearCollect( Customer, '[SalesLT].[Customer]' ),
@@ -114,7 +114,7 @@ You can use **Concurrent** only in [behavior formulas](/power-apps/maker/canvas-
 
 3. Add a **Button** control, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Set( StartTime, Value( Now() ) );
    Concurrent(
        Set( FRTrans, MicrosoftTranslator.Translate( TextInput1.Text, "fr" ) );

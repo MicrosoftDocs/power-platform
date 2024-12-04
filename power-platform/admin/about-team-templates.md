@@ -8,7 +8,7 @@ ms.date: 01/11/2021
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -29,10 +29,10 @@ Only tables that are enabled for system-managed access teams can be specified in
   
 If you change access rights in the team template, the changes are only applied to new system-managed access teams. The existing teams aren’t affected.  
   
-For information about how to create a team template, enable an table for system-managed access teams and how to customize the table form to add the team template, see [Create a team template and add to an table form](create-team-template-add-entity-form.md).
+For information about how to create a team template, enable a table for system-managed access teams and how to customize the table form to add the team template, see [Create a team template and add to a table form](create-team-template-add-entity-form.md).
   
 ### See also  
- [Create a team template and add to an table form](create-team-template-add-entity-form.md)   
+ [Create a team template and add to a table form](create-team-template-add-entity-form.md)   
  [Manage teams](manage-teams.md)    
 
 

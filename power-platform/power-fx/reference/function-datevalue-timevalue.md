@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # DateValue, TimeValue, and DateTimeValue functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Converts date, time, or both in a _string_ to a _date/time_ value.
 
@@ -77,7 +77,7 @@ If you type **10/11/2014** into a text-input control named **Startdate**, and th
 
 - Convert a date from a string in the user's locale and show the result as a long date.
 
-  ```powerapps-dot
+  ```power-fx
   Text( DateValue( Startdate.Text ), DateTimeFormat.LongDate )
   ```
 
@@ -88,7 +88,7 @@ If you type **10/11/2014** into a text-input control named **Startdate**, and th
 
 - Convert date from a string in the French locale and show the result as a long date. In this example, the months and day of the month are interpreted differently from English.
 
-  ```powerapps-dot
+  ```power-fx
   Text( DateValue( Startdate.Text, "fr" ), DateTimeFormat.LongDate )
   ```
 
@@ -98,7 +98,7 @@ If you typed **October 20, 2014** instead:
 
 - Convert a date from a string in the user's locale and calculate the difference between two days, in days
 
-  ```powerapps-dot
+  ```power-fx
   DateDiff( DateValue( Startdate.Text ), Today() )
   ```
 
@@ -110,7 +110,7 @@ If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Sta
 
 - Convert both a date and time string in the current locale.
 
-  ```powerapps-dot
+  ```power-fx
   Text( DateTimeValue( Start.Text ), DateTimeFormat.LongDateTime )
   ```
 
@@ -121,7 +121,7 @@ If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Sta
 
 - Convert both a date and time string in the French locale. Month and day of the month are interpreted differently.
 
-  ```powerapps-dot
+  ```power-fx
   Text( DateTimeValue( Start.Text, "fr"), DateTimeFormat.LongDateTime )
   ```
 
@@ -129,7 +129,7 @@ If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Sta
 
 - Convert both a date and time string in the user's locale, and display the result with a fractional second.
 
-  ```powerapps-dot
+  ```power-fx
   Text( DateTimeValue( Start.Text ), "dddd, mmmm dd, yyyy hh:mm:ss.fff AM/PM" )
   ```
 
@@ -141,7 +141,7 @@ If you typed **10/11/2014 1:50:24.765 PM** into a text-input control named **Sta
 
 Name a text-input control **FinishedAt**, and set the [Text](/power-apps/maker/canvas-apps/controls/properties-core) property of a label to this formula:
 
-```powerapps-dot
+```power-fx
 If( TimeValue( FinishedAt.Text ) < TimeValue( "5:00:00.000 PM" ),
     "You made it!",
     "Too late!"

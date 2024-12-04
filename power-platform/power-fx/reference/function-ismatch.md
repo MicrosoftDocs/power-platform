@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 02/07/2020
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # IsMatch, Match, and MatchAll functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Tests for a match or extracts portions of a text string based on a pattern.
 
@@ -206,7 +206,7 @@ The user types **Hello world** into **TextInput1**.
 
 Let's drill into that last example. If you wanted to convert this string to a date/time value using the **[Time](function-date-time.md)** function, you must pass in the named sub-matches individually. To do this, you can use the **[With](function-with.md)** function operating on the record that **Match** returns:
 
-```powerapps-dot
+```power-fx
 With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
    Time( Value( hours ), Value( minutes ), Value( seconds ) )
@@ -215,7 +215,7 @@ With(
 
 For these examples, add a [Button](/power-apps/maker/canvas-apps/controls/control-button) control, set its **OnSelect** property to this formula, and then select the button:
 
-```powerapps-dot
+```power-fx
 Set( pangram, "The quick brown fox jumps over the lazy dog." )
 ```
 

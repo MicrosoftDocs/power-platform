@@ -1,8 +1,8 @@
 ---
 title: "Tutorial: Create a daily capacity report (preview) | Microsoft Docs"
-description: This tutorial will demonstrate how to use the Power Platform API (preview) to create a daily capacity report.
+description: This tutorial demonstrates how to use the Power Platform API (preview) to create a daily capacity report.
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 10/22/2021
@@ -18,27 +18,27 @@ search.audienceType:
 
 The Power Platform API can be used to extract various details and metadata from your Microsoft Power Platform environments  with or without a Microsoft Dataverse database. The API is used internally by various clients available today such as PowerShell.
 
-In this tutorial, you'll learn how to:
+In this tutorial, you learn how to:
 
 - Create a Power Automate or Logic Apps workflow (Azure) or PowerShell script that authenticates with the Power Platform API.
 - Call the List Environments endpoint to retrieve your Microsoft Power Platform environment details.
 - Iterate through the capacity object to retrieve the actual consumption.
 - Save the consumption data into a table for display.
 
-As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department. This will help the customer to perform some internal cost accounting functions and charge backs based on how much each department is consuming of the total available capacity. This customer is using the environment Description to call out the department that owns each environment.  
+As an example of this scenario, a customer is looking to get a handle on their capacity consumption so that they can better understand the allocation of their total tenant capacity by department. This helps the customer to perform some internal cost accounting functions and charge backs based on how much each department is consuming of the total available capacity. This customer is using the environment Description to call out the department that owns each environment.  
 
 > [!IMPORTANT]
-> The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.  At that time, this article will be updated with the final endpoint details.
+> The Power Platform API is in preview. The host name and data contracts are subject to change by the time the endpoints become generally available.
 
 ## Connect and variable setup
 
-Below are details on getting connected to the Power Platform programmatically.  You can choose between an Azure experience or PowerShell scripts using the tabs below.
+Use the following details on getting connected to the Power Platform programmatically. You can choose between an Azure experience or PowerShell scripts.
 
 # [Azure](#tab/Azure)
 
 ### Create the workflow and set up the variables
 
-To start off, in this tutorial we'll use a Logic Apps workflow.  A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation.  All of the calls to retrieve the data will be using RESTful APIs so any tooling that supports REST will work with this tutorial.
+To start off, in this tutorial we use a Logic Apps workflow. A Power Automate flow is also acceptable, and any other orchestration engine that your company prefers to use for automation. All of the calls to retrieve the data use RESTful APIs so any tooling that supports REST works with this tutorial.
 
 Visit the Azure portal, and then create a new logic app and give it a name:
 
@@ -50,23 +50,20 @@ After that finishes provisioning, edit the workflow using the Designer and set u
 > [!div class="mx-imgBorder"] 
 > ![Set up a Recurrence trigger.](media/capacity2.png "Set up a Recurrence trigger")
 
-Next, we'll need to initialize five variables as detailed below:
+Next, we need to initialize five variables:
 
-- **SPN-Id** – This is your service principal ClientID.  It will be used later to perform the authentication in a service principal context.  If you're using username/password context, you can skip this variable.
+- **SPN-Id** – This is your service principal ClientID. It's used later to perform the authentication in a service principal context. If you're using username/password context, you can skip this variable.
 - **DBCapacity** – This is a Float variable for the consumed database capacity in megabytes.
 - **FileCapacity** – This is a Float variable for the consumed file capacity in megabytes.
 - **LogCapacity** – This is a Float variable for the consumed log capacity in megabytes.
-- **SimplifiedEnvironmentArray-Init** – This is an Array variable that we'll populate with a few environment properties.  This drastically simplifies the final HTML table report output.
+- **SimplifiedEnvironmentArray-Init** – This is an array variable that we populate with a few environment properties. This drastically simplifies the final HTML table report output.
 
 > [!div class="mx-imgBorder"] 
 > ![Create five variables.](media/capacity3.png "Create five variables")
 
-Next we'll authenticate with Microsoft Microsoft Entra and retrieve a token for calling the Power Platform API.  If you haven’t completed your Microsoft Entra setup, see [Authentication - legacy](programmability-authentication.md).
+Next, we authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API. If you haven’t completed your Microsoft Entra setup, see [Authentication - legacy](programmability-authentication.md).
 
-In this tutorial, we're using a key vault to store our service principal secret value.  In this way, an IT administrator can make this value securely available for your workflow.  This is then populated in the POST call to Microsoft Entra to retrieve the token as shown:
-
-> [!div class="mx-imgBorder"] 
-> ![Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API.](media/capacity4.png "Authenticate with Microsoft Entra and retrieve a token for calling the Power Platform API")
+In this tutorial, we're using a key vault to store our service principal secret value. In this way, an IT administrator can make this value securely available for your workflow. This is then populated in the POST call to Microsoft Entra to retrieve the token.
 
 We then parse the Microsoft Entra token response into a typed object using this JSON schema in the 'Parse JSON' action:
 
@@ -91,12 +88,12 @@ We then parse the Microsoft Entra token response into a typed object using this 
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Parse the Microsoft Entra token response into a strongly typed object.](media/capacity5.png "Parse the Microsoft Entra token response into a strongly typed object")
+> ![Parse the Microsoft Entra token response into a typed object.](media/capacity5.png "Parse the Microsoft Entra token response into a typed object")
 
 # [PowerShell](#tab/PowerShell)
 
 ### Initialize the variables and connect to Power Platform API
-Use the below script to initialize some variables that we'll use throughout the tutorial.  Optionally, you may use Username/Password authentication but it isn't advised.
+Use the following script to initialize some variables that we use throughout the tutorial. Optionally, you may use Username/Password authentication but it isn't advised.
 
 ```powershell
 #Install the module
@@ -115,18 +112,18 @@ Add-PowerAppsAccount -Endpoint prod -TenantID $TenantId -ApplicationId $SPNId -C
 ---
 
 ## Fetch environments
-In this section, we'll fetch the environment list that you administer.  This can be done via API and PowerShell.
+In this section, we fetch the environment list that you administer. This can be done via API and PowerShell.
 
 # [Azure](#tab/Azure)
 
 ### Call the List Environments endpoint
 
-Now is the time to call the Power Platform API.  We’ll use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity.  This also uses the Authorization header with the Bearer Token we received in the previous section from Microsoft Entra ID.  If you used username/password context, you can also enter that Bearer Token at this step as well.
+Now is the time to call the Power Platform API. Use the List Environments endpoint to retrieve all of our environments and their metadata, specifically with the $expand parameter for capacity. This also uses the Authorization header with the Bearer Token we received in the previous section from Microsoft Entra ID. If you used username/password context, you can also enter that Bearer Token at this step as well.
 
 > [!div class="mx-imgBorder"] 
 > ![Use the List Environments endpoint to retrieve all environments and their metadata.](media/capacity6.png "Use the List Environments endpoint to retrieve all environments and their metadata")
 
-We then parse the Power Platform API response into a strongly typed object using this JSON schema with the 'Parse JSON' action:
+We then parse the Power Platform API response into a typed object using this JSON schema with the 'Parse JSON' action:
 ```json
 {
     "properties": {
@@ -385,32 +382,32 @@ We then parse the Power Platform API response into a strongly typed object using
 ```
 
 > [!div class="mx-imgBorder"] 
-> ![Parse the Power Platform API response into a strongly typed object.](media/capacity7.png "Parse the Power Platform API response into a strongly typed object")
+> ![Parse the Power Platform API response into a typed object.](media/capacity7.png "Parse the Power Platform API response into a typed object")
 
 # [PowerShell](#tab/PowerShell)
 
 ### Pass capacity flag
-Use the below script to pull a list of all environments you're the administrator over.  Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
+Use the following script to pull a list of all environments you're the administrator over. Using the new "-Capacity" flag you can add capacity consumption information for each environment retrieved.
 
 ```powershell
-#fetch environment list with capacity populated.  This is only possible when calling full environment list
+#fetch environment list with capacity populated. This is only possible when calling full environment list
 $environmentsList = Get-AdminPowerAppEnvironment -Capacity
 ```
 ---
 
 ## Iterate through the Capacity object
-This is the most complex part of the tutorial.  Here we'll use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we'll iterate as well.  This will let us capture the necessary information for each environment row in our capacity report table.
+This is the most complex part of the tutorial. Here we use a loop inside of a loop to iterate each environment in the List Environment response, and each environment has an array of capacity details that we iterate as well. This lets us capture the necessary information for each environment row in our capacity report table.
 
 # [Azure](#tab/Azure)
 
 ### For-each and parsing
 
-Let’s take this step by step.  First, we'll use a For Each control using the ‘value’ of the Parse-List-Response output:
+Let’s take this step by step. First, we use a For Each control using the ‘value’ of the Parse-List-Response output:
 
 > [!div class="mx-imgBorder"] 
 > ![Use a For Each control using the value of the Parse-List-Response output.](media/capacity8.png "Use a For Each control using the value of the Parse-List-Response output")
 
-Then we parse this single environment into a strongly typed object using this JSON schema:
+Then we parse this single environment into a typed object using this JSON schema:
 
 ```json
 {
@@ -647,17 +644,17 @@ Then we parse this single environment into a strongly typed object using this JS
     "type": "object"
 }
 ```
-Next, we'll use another For Each control using the ‘capacity’ of the Parse-CurrentItem output. Then we parse this into a strongly typed object using this JSON schema:
+Next, we use another For Each control using the ‘capacity’ of the Parse-CurrentItem output. Then we parse this into a typed object using this JSON schema:
 
 > [!div class="mx-imgBorder"] 
 > ![For Each control using the capacity of the Parse-CurrentItem output.](media/capacity9.png "For Each control using the capacity of the Parse-CurrentItem output")
 
-Now we can use the Switch control on the CapacityType property from the Parse-Capacity output.  This will either be a value of ‘Database’, ‘File’, or ‘Log’.  Under each switch case, capture the related ‘actualConsumption’ property into the related variable.  In the case below, you’ll see we're capturing Database capacity:
+Now we can use the Switch control on the CapacityType property from the Parse-Capacity output. This is either the value of ‘Database’, ‘File’, or ‘Log’. Under each switch case, capture the related ‘actualConsumption’ property into the related variable.  In the following case, you see we're capturing Database capacity:
 
 > [!div class="mx-imgBorder"] 
 > ![Use the Switch control on the CapacityType property from the Parse-Capacity output.](media/capacity10.png "Use the Switch control on the CapacityType property from the Parse-Capacity output")
 
-As the last step in the ‘For each environment’ loop, we now can capture the environment details for this row in the report.  Using the Append to array variable control, use the following JSON schema:
+As the last step in the ‘For each environment’ loop, we now can capture the environment details for this row in the report. Using the Append to array variable control, use the following JSON schema:
 ```json
 {
     "properties": {
@@ -687,7 +684,7 @@ As the last step in the ‘For each environment’ loop, we now can capture the 
 # [PowerShell](#tab/PowerShell)
 
 ### Construct detailed capacity array
- We'll construct a PSObject that contains relevant properties from each pass through the environment objects.
+Construct a PSObject that contains relevant properties from each pass through the environment objects.
 
 ```powershell
 foreach($environment in $environmentsList)
@@ -716,7 +713,7 @@ foreach($environment in $environmentsList)
 
 ---
 ## Build report table
-Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment capacity array, we can display it in tabular format.
+Congratulations, you’ve now made it to the easy part! Now that we have our fully populated and simplified environment capacity array, we can display it in tabular format.
 
 # [Azure](#tab/Azure)
 
@@ -734,7 +731,7 @@ The report could be optionally emailed to stakeholders in this example for Cost 
 # [PowerShell](#tab/PowerShell)
 
 ### Output to a table
-Congratulations, you’ve now made it to the easy part!  Now that we have our fully populated and simplified environment array, we can pass our array to the Format-Table commandlet for output:
+Congratulations, you’ve now made it to the easy part! Now that we have our fully populated and simplified environment array, we can pass our array to the Format-Table commandlet for output:
 
 ```powershell
 $capacityDetailsList | Format-Table -AutoSize

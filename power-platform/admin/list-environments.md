@@ -2,7 +2,7 @@
 title: "Programmability and Extensibility - Power Platform API - 2021-02-01 - List environments (preview) | Microsoft Docs"
 description: Power Platform API Reference - List environments
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/19/2021
@@ -52,10 +52,10 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 {
   "value": [
     {
-      "id": "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/5ca1c616-6060-46ba-abc1-18d312f1cb3a",
+      "id": "/providers/Microsoft.BusinessAppPlatform/scopes/admin/environments/aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "type": "Microsoft.BusinessAppPlatform/scopes/environments",
       "location": "unitedstates",
-      "name": "5ca1c616-6060-46ba-abc1-18d312f1cb3a",
+      "name": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "properties": {
         "azureRegion": "westus",
         "displayName": "My Power Platform Environment",
@@ -65,7 +65,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
           "id": "0f747967-84c4-4f29-84c2-682fb00390c8",
           "displayName": "ServicePrincipal",
           "type": "ServicePrincipal",
-          "tenantId": "5ca1c616-6060-46ba-abc1-18d312f1cb3a"
+          "tenantId": "aaaabbbb-0000-cccc-1111-dddd2222eeee"
         },
         "lastModifiedTime": "2021-02-22T18:38:08.4718532Z",
         "provisioningState": "Succeeded",
@@ -146,7 +146,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
         },
         "databaseType": "CommonDataService",
         "linkedEnvironmentMetadata": {
-          "resourceId": "3b48b422-0b37-4070-8054-601867eb8b23",
+          "resourceId": "a0a0a0a0-bbbb-cccc-dddd-e1e1e1e1e1e1",
           "friendlyName": "My Power Platform Environment",
           "uniqueName": "96c28a9e98934bf798bb71c9d92134",
           "domainName": "org0fadb1dd",

@@ -1,14 +1,14 @@
 ---
-title: "Combined effect of multiple DLP policies  | MicrosoftDocs"
-description: Examples of the combined effect of multiple DLP policies.
+title: Combined effect of multiple data policies 
+description: Examples of the combined effect of multiple data policies.
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -17,9 +17,9 @@ search.audienceType:
   - admin
 ---
 
-# Combined effect of multiple DLP policies
+# Combined effect of multiple data policies
 
-As a tenant or environment admin, you can create more than one DLP policy and apply it to the same environment. At design time and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of DLP policies.
+As a tenant or environment admin, you can create more than one data policy and apply it to the same environment. At design time and runtime, all policies that are applicable to the environment in which the app or flow resides are evaluated together to decide whether the resource is in compliance or violation of the data policies.
 
 ## Blocked classification impact across multiple policies
 
@@ -67,7 +67,7 @@ When all three policies are applied together to the same environment, the net re
 | -E2-, -E4-, -E5- | Group 7 | NULL |
 | -E2-, -E4-, -E6- | Group 8 | Adobe Sign, Azure Blob storage, Box |
 
-To summarize: an app or flow can only use connectors from these individual groups at any given time, and it can't mix connectors across the eight different groups. From the examples above, note that multiple DLP policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of DLP policies to any given environment. 
+To summarize, an app or flow can only use connectors from these individual groups at any given time, and it can't mix connectors across the eight different groups. From the examples above, note that multiple data policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of data policies to any given environment. 
 
 
 

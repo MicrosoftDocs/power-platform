@@ -1,12 +1,11 @@
 ---
 title: "Microsoft Power Platform ALM developer tools"
 description: "Overview of how developers can extend Power Platform using various tools."
-author: KumarVivek
+author: phecke
 ms.subservice: developer
-ms.author: kvivek
-ms.custom: ""
-ms.date: 11/09/2022
-ms.reviewer: kvivek
+ms.author: pehecke
+ms.date: 05/14/2024
+ms.reviewer: pehecke
 ms.topic: "article"
 ---
 
@@ -32,6 +31,8 @@ More information: [GitHub Actions for Power Platform](/power-platform/alm/devops
 
 ### See also
 
+[Power Platform Build Tools for Azure DevOps release notes](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools#release-notes)<br/>
+[GitHub Actions for Power Platform release notes](https://github.com/microsoft/powerplatform-actions/releases)<br/>
 [Power Platform ALM guide](/power-platform/alm)<br/>
 [Power Platform ALM for developers](/power-platform/alm/alm-for-developers)<br/>
 

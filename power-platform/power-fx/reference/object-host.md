@@ -1,16 +1,16 @@
 ---
 title: Host object in Power Apps
 description: Reference information including syntax and examples for the Host object in Power Apps.
-author: jorisdg
+author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: 
-ms.date: 02/08/2023
+ms.date: 3/22/2024
 ms.author: jorisde
 search.audienceType: 
   - maker
 contributors:
-  - jorisdg
+  - gregli
 ---
 # Host object in Power Apps
 
@@ -45,7 +45,7 @@ For example, a browser user agent string might be:
 - Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78
 
 > [!NOTE]
-> If you're running Power Apps in a native app or using the [the wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
+> If you're running Power Apps in a native app or using the [wrap](/power-apps/maker/common/wrap/wrap-how-to) feature in Power Apps, the app is presented via a browser control, which supplies a user agent string.
 
 ## OSType property
 
@@ -54,7 +54,7 @@ The **OSType** property provides the name of the operating system where the app 
 | Value |
 | --- |
 | Windows |
-| macOS |
+| Mac OS |
 | iOS |
 | Android |
 | Linux |
@@ -65,7 +65,7 @@ The **OSType** property provides the name of the operating system where the app 
 
 The **OSType** text can be used in any formula, such as showing it in a label's text property:
 
-```powerapps-dot
+```power-fx
 Label1.Text: "You're running " & Host.OSType
 ```
 
@@ -75,7 +75,7 @@ The **SessionID** property returns the GUID that identifies the current session.
 > [!NOTE]
 > In embedded scenarios such as Power Apps in Power BI, the SessionID property returns the underlying Power Apps session ID, not the Power BI session ID.
 
-```powerapps-dot
+```power-fx
 Label1.Text: $"Provide session ID { Host.SessionID } to your administrator."
 ```
 
@@ -86,7 +86,7 @@ The **TenantID** property provides the Globally Unique Identifier (GUID) that sp
 > [!NOTE]
 > Similar to **SessionID**, in embedded scenarios such as Power Apps in Power BI, the tenant ID is the tenant used for the Power Apps session authentication.
 
-```powerapps-dot
+```power-fx
 Label1.Text: Host.TenantID
 ```
 
@@ -97,10 +97,19 @@ The **Version** property provides the identification and version number of the P
 > [!NOTE]
 > The **Version** property is always an empty string when working in Power Apps Studio.
 
-```powerapps-dot
+```power-fx
 Label1.Text: Host.Version
 ```
+## OfflineEnabled property
 
+The **OfflineEnabled** property provides the runtime mode of the app in the Power Apps player. For apps that are not enabled for offline, the property is always false. For apps that are [enabled for offline](/power-apps/mobile/canvas-mobile-offline-overview) the property is false on the web, but true on iOS, Android, and Windows.  
+
+> [!NOTE]
+> Even if a canvas app doesn't function without network connectivity, the **OfflineEnabled** property remains true in Power Apps Studio for canvas apps that have been enabled for offline use.
+
+```power-fx
+Label1.Text: Host.OfflineEnabled
+```
 ## Examples
 
 1. Create a new Canvas app.
@@ -109,6 +118,7 @@ Label1.Text: Host.Version
 1. Add a **Text label** control and set the `Text` property to `"Host.SessionID: " & Host.SessionID`.
 1. Add a **Text label** control and set the `Text` property to `"Host.TenantID: " & Host.TenantID`.
 1. Add a **Text label** control and set the `Text` property to `"Host.Version: " & Host.Version`.
+1. Add a **Text label** control and set the `Text` property to `"Host.OfflineEnabled: " & Host.OfflineEnabled`.
 
 Run your app on different devices and with different browsers and you will see results similar to the below.
 
@@ -120,7 +130,7 @@ Run your app on different devices and with different browsers and you will see r
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
 Host.OSType: Windows
 Host.SessionID: ee2eed1a-8455-4e68-a433-a709302d0c71
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: 
 ```
 
@@ -130,7 +140,7 @@ Host.Version:
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 PowerApps/e1c23ff9-4822-4e75-a003-01c91407a4d2
 Host.OSType: Windows
 Host.SessionID: 3ebec22f-ee2e-412a-b3eb-45d97db34863
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Native/3.23084.8(iOS)
 ```
 
@@ -140,7 +150,7 @@ Host.Version: PowerApps-Native/3.23084.8(iOS)
 Host.BrowserUserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/117.0
 Host.OSType: Windows
 Host.SessionID: 283309a4-d88b-4b2a-88de-73b47d1b62d0
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Web/3.23084.6(Windows)
 ```
 
@@ -150,6 +160,6 @@ Host.Version: PowerApps-Web/3.23084.6(Windows)
 Host.BrowserUserAgent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1
 Host.OSType: iOS
 Host.SessionID: a09a946d-ce71-4c1f-bd35-519c79849c8d
-Host.TenantID: 5da56e5c-97b6-468f-a448-a6e432c48269
+Host.TenantID: aaaabbbb-0000-cccc-1111-dddd2222eeee
 Host.Version: PowerApps-Web/3.23084.6(iOS)
 ```

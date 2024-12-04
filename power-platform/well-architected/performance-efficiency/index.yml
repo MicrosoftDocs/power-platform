@@ -1,0 +1,78 @@
+### YamlMime:Landing
+
+title: Performance efficiency quick links
+summary: Apply performance efficiency guidance to your architecture to efficiently meet workload demands.
+
+metadata:
+  title: Performance efficiency quick links
+  description: Learn about resources that you can use to apply performance efficiency guidance to your architecture.
+  ms.topic: landing-page
+  author: robstand
+  ms.author: rstand
+  ms.date: 05/10/2024
+
+landingContent:
+  - title: Learn key points
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Design principles
+            url: principles.md
+          - text: Checklist
+            url: checklist.md
+          - text: Tradeoffs
+            url: tradeoffs.md
+          - text: Power Platform Well-Architected Review assessment
+            url: https://aka.ms/powa/assessment
+  - title: Design principles
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Negotiate realistic performance targets
+            url: principles.md#negotiate-realistic-performance-targets
+          - text: Design to meet capacity requirements
+            url: principles.md#design-to-meet-performance-requirements
+          - text: Achieve and sustain performance
+            url: principles.md#achieve-and-sustain-performance
+          - text: Improve efficiency through optimization
+            url: principles.md#improve-efficiency-through-optimization
+  - title: Achieve performance targets
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set performance targets
+            url: performance-targets.md
+          - text: Select the right services
+            url: select-services.md
+          - text: Collect performance data
+            url: collect-performance-data.md
+  - title: Improve efficiency
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Code and infrastructure
+            url: optimize-code.md
+          - text: Data
+            url: optimize-data-performance.md
+          - text: Critical flows
+            url: prioritize-critical-flows.md
+          - text: Continuous optimization 
+            url: continuous-performance-optimize.md
+  - title: Implement testing and incident response
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Run performance testing
+            url: performance-test.md
+          - text: Address performance incidents
+            url: respond-live-performance-issues.md
+  - title: Explore related resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Power Apps: Creating performant apps"
+            url: /power-apps/maker/canvas-apps/create-performant-apps-overview
+          - text: Integration with Application Insights
+            url: /power-platform/admin/overview-integration-application-insights
+          - text: Power Apps Test Engine
+            url: /power-apps/developer/test-engine/overview

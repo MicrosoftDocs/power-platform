@@ -1,17 +1,15 @@
 ---
-title: "Write, deploy, and debug X++ code"
-description: "Learn how to write an X++ class, deploy it, and then debug it in the unified developer experience."
+title: "Tutorial: Write, deploy, and debug X++ code"
+description: "Try a tutorial on how to create a module, write an X++ class, deploy it, and then debug it using the unified developer experience."
 author: pvillads
-ms.date: 08/21/2023
+ms.date: 06/06/2024
 ms.topic: how-to
-ms.reviewer: phecke
-ms.author: pvillads
+ms.reviewer: pehecke
+ms.author: pathaku
 ms.subservice: developer
 ---
 
-# Write, deploy, and debug X++ code (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Tutorial: Write, deploy, and debug X++ code
 
 The unified developer experience for finance and operation apps enables you to write code on your local development computer and run it inside a cloud service. There exists a separation of functionality between these two tiers (local and cloud).
 
@@ -26,7 +24,15 @@ This article shows you how to:
 
 Let's begin by developing a runnable X++ class to use as an example. The class's only task is to log a message into the Infolog. The important thing here isn't what the runnable class does, rather it's how we compile, run, and debug it. If you want to learn about the X++ language, see the [programming reference](/dynamics365/fin-ops-core/dev-itpro/dev-ref/xpp-language-reference).
 
-As a prerequisite, you need to have completed setting up your local Visual Studio developer environment. More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+> [!IMPORTANT]
+> You can learn more by watching presentation and demos done for the Dynamics 365 FastTrack Tech Talk series
+> 
+> [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)
+ 
+## Prerequisites
+
+You should have access to a unified developer environment, the Visual Studio tools extensions installed and configured on your developer machine and connected to the same environment. It's important to keep the metadata changes on your developer machine deployed to the connected environment .
+More information: [Install and configure development tools](finance-operations-install-config-tools.md)
 
 ## Create a model
 
@@ -53,7 +59,7 @@ We start by creating a model in Visual Studio.
 Create a project and X++ class in Visual Studio by following these steps.
 
 1. Create a project in Visual Studio that contains the runnable class. The name of the class isn't important here. For this exercise, keep the default name that is FinanceOperations3.
-1. Add a runnable class to the project in **Solution Explorer** by right-clicking the project and choosing **Add** > **New item**. 
+1. Add a runnable class to the project in **Solution Explorer** by right-clicking the project and choosing **Add** > **New item**.
 1. Select a **Runnable Class** in the **Code** menu under **Dynamics 365 items**, and call it "MyRunnableClass". Visual Studio opens a window with the template for a runnable class providing a static `main` method that is called as the runnable class runs.
 1. Add the following X++ code to the `main` method. Since we're only providing a token implementation here, add a call to log a string message in the Infolog:
 
@@ -81,18 +87,18 @@ At this point you're accessing the endpoint in the cloud, so unless you are alre
 
 > [!IMPORTANT]
 > There are different ways to deploy your changes to the unified development environment.
->  
->   1. Deploy the full model via the **Dynamics 365** > **Deploy** > **Deploy models ...** dialog. You can choose to synchronize the database if so desired.
 >
->   2. As part of a full build, deploy the full model. This deployment is initiated via the **Dynamics 365** > **Build models** dialog if the option to **Deploy to connected online environment** is turned on. The tool will synchronize database or not based on the **synchronize database** setting on the same **Options** tab.
+> 1. Deploy the full model via the **Dynamics 365** > **Deploy** > **Deploy models ...** dialog. You can choose to synchronize the database if so desired.
 >
->   3. As part of an incremental build from Solution Explorer, setting **Deploy changes to online environment** to true will only deploy changes since the last successful deployment or those made as part of this build. It will honor the project settings for **Synchronize database**.
+> 2. As part of a full build, deploy the full model. This deployment is initiated via the **Dynamics 365** > **Build models** dialog if the option to **Deploy to connected online environment** is turned on. The tool will synchronize database or not based on the **synchronize database** setting on the same **Options** tab.
 >
->   4. Right-click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment but will not synchronize the database for the module.
+> 3. As part of an incremental build from Solution Explorer, setting **Deploy changes to online environment** to true will only deploy changes since the last successful deployment or those made as part of this build. It will honor the project settings for **Synchronize database**.
 >
->   5. Synchronize the database for all models without deploying anything new via **Dynamics 365** > **Synchronize database...**.
+> 4. Right-click a project and choose to **Deploy model for project ...**. This will only deploy changes since last successful deployment but will not synchronize the database for the module.
+>
+> 5. Synchronize the database for all models without deploying anything new via **Dynamics 365** > **Synchronize database...**.
 
-You can follow the progress of the deployment by navigating  to the "FinOps Cloud Run-time" channel in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
+You can follow the progress of the deployment by navigating  to the "FinOps Cloud Runtime" drop down in the Visual Studio output window. Once that deployment is complete, you can see log information by following the link displayed in the output window.
 
 ## Debug the deployed code
 
@@ -116,7 +122,7 @@ Let's now try that. Instead of tediously writing our own form all over again, us
 
 `https://<environment>?prt=initial&debug=vs&activityid=\<unchanged>&cmp=DAT&mi=SysUserSetup`
 
-You'll now see the form that allows you to set the colors in Dynamic's open. <!--What are you meaning here-->
+You'll now see the form that allows you to choose the colors.
 
 Now let's set a breakpoint in the form.
 
@@ -125,7 +131,8 @@ Now let's set a breakpoint in the form.
 1. Select the form, and select **View code** to open the editor with the source code for this form.
 1. In that form, set a breakpoint in the `selectionChange` method in the ThemeChooser control. This code is triggered when the user selects a new color theme.
 1. In the browser window, select one of the colored squares, let's say the red one. You'll hit the breakpoint.
-1. Continue the execution by pressing F5. Another colored square is hit and the breakpoint is triggered again.
+1. Continue the execution by pressing F10 or F5. Another colored square is hit and the breakpoint is triggered again.
+1. You can watch the locals, set new breakpoints and do various debugging tasks. 
 
 > [!IMPORTANT]
 > If you want to attach the debugger to the running AOS process in the unified environment use **Dynamics 365** > **Launch debugger**.
@@ -138,11 +145,12 @@ Now let's set a breakpoint in the form.
 
 As a recap, here's a summary and the points to take away from this exercise.
 
-We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used, and we did'nt have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser and the breakpoints are hit.
+We started with using Visual Studio to create a simple runnable class. After the compilation, the package needed to be pushed to the cloud endpoint for execution. X++ code can only be executed in the cloud, so we performed a deployment operation. Once the deployment was complete, we executed the code by setting a breakpoint and running the debugger. We then started a form from the browser, and noticed that breakpoints were hit correctly as the form was used, and we did not have to restart the debugger for that to happen. In fact, the debugger can be started by using the **Launch debugger** option on the **Extension** menu. You can then enter a URL in the browser, execute the scenario to debug and the breakpoints will be hit.
 
 ### See also
 
-[Unit testing in the unified developer experience](finance-operations-testing.md)   
+[Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
+[Unit testing in the unified developer experience](finance-operations-testing.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)
 

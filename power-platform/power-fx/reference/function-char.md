@@ -1,12 +1,12 @@
 ---
-title: Char function
-description: Reference information including syntax and examples for the Char function.
+title: Char and UniChar functions
+description: Reference information including syntax and examples for the Char and UniChar functions.
 author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,10 +14,11 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
+  - carlosff
 ---
 
-# Char function
+# Char and UniChar functions
 
 **Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
@@ -26,6 +27,8 @@ Translates a character code into a string.
 ## Description
 
 The **Char** function translates a number into a string with the corresponding ASCII character.
+
+The **UniChar** function translates a number into a string with the corresponding Unicode character.
 
 If you pass a single number, the return value is the translated string version of that number. If you pass a single-column [table](/power-apps/maker/canvas-apps/working-with-tables) that contains numbers, the return value is a single-column table of strings in a **Value** column. If you have a multi-column table, you can shape it into a single-column table, as [working with tables](/power-apps/maker/canvas-apps/working-with-tables) describes.
 
@@ -39,6 +42,14 @@ If you pass a single number, the return value is the translated string version o
 
 - _CharacterCodeTable_ - Required. Table of ASCII character codes to translate.
 
+**UniChar**( _UnicodeCode_ )
+
+- _UnicodeCode_ - Required. Unicode character code to translate.
+
+**UniChar**( _UnicodeCodeTable_ )
+
+- _UnicodeCodeTable_ - Required. Table of Unicode character codes to translate.
+
 ## Examples
 
 ### Single number
@@ -48,6 +59,9 @@ If you pass a single number, the return value is the translated string version o
 | **Char( 65 )** | Returns the character that corresponds to ASCII code 65. | "A" |
 | **Char( 105 )** | Returns the character that corresponds to ASCII code 105. | "i" |
 | **Char( 35 )** | Returns the character that corresponds to ASCII code 35. | "#" |
+| **UniChar( 35 )** | Returns the character that corresponds to Unicode code 35. | "#" |
+| **UniChar( 233 )** | Returns the character that corresponds to Unicode code 233. | "á" |
+| **UniChar( 9829 )** | Returns the character that corresponds to Unicode code 9829. | "♥" |
 
 ### Single-column table
 
@@ -57,6 +71,7 @@ The example in this section converts numbers from a single-column table.
 | --- | --- |
 | `Char( [ 65, 105 ] )` | A single-column table with a `Value` column containing the following values: "A", "i" |
 | `Char( [ 35, 52 ] )` | A single-column table with a `Value` column containing the following values: "#", "4" |
+| `UniChar( [ 71, 97, 114, 231, 111, 110 ] )` | A single-column table with a `Value` column containing the following values: "G", "a", "r", "ç", "o", "n" |
 
 ### Display a character map
 

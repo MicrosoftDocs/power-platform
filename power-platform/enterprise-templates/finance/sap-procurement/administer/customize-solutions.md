@@ -1,6 +1,6 @@
 ---
 title: Customize the SAP Procurement solutions
-description: Learn how to get started working with solutions so you can customize the SAP Procurement template's solutions to meet your local business requirements.
+description: Learn how to customize the SAP Procurement template's solutions to meet your local business requirements.
 author: tverhasselt
 ms.author: thoverh
 contributors:
@@ -15,7 +15,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/26/2023
+ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -23,9 +23,9 @@ ms.subservice: solution-templates
 
 # Customize the SAP Procurement solutions
 
-The SAP Procurement template's solutions are published as managed so that we can continue to provide new and updated capabilities. This means you won't be able to edit components _directly within_ the actual imported solution files. However, your local configurations will be _layered_ on top of the managed capabilities.
+The SAP Procurement template's solutions are published as managed so that we can continue to provide new and updated capabilities. This means you can't edit components _directly within_ the actual imported solution files. Rather, your local configurations are _layered_ on top of the managed capabilities.
 
-As a best practice, create a new _unmanaged_ solution in the same development environment where the imported SAP Procurement template's managed solutions reside. Here, you'll add the components that support the process and capabilities that you plan to deploy. Once you've added the necessary components to your new unmanaged solution, you can begin to customize to meet your additional requirements.
+As a best practice, create a new _unmanaged_ solution in the same development environment where the imported SAP Procurement template's managed solutions reside. Here, you add the components that support the process and capabilities that you plan to deploy. Once you add the necessary components to your new unmanaged solution, you can customize to meet your additional requirements.
 
 > [!IMPORTANT]
 >
@@ -41,18 +41,15 @@ As a best practice, create a new _unmanaged_ solution in the same development en
 
 ## Related content
 
-[Solution concepts](/power-platform/alm/solution-concepts-alm)
+- [Solution concepts](/power-platform/alm/solution-concepts-alm)
+- [Solution layers](/power-platform/alm/solution-layers-alm)
+- [Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
+- [Overview of tools and apps used for ALM](/power-platform/alm/tools-apps-used-alm)
 
-[Solution layers](/power-platform/alm/solution-layers-alm)
-
-[Use a solution to customize](/power-platform/alm/use-solutions-for-your-customizations)
-
-[Overview of tools and apps used for ALM](/power-platform/alm/tools-apps-used-alm)
-
-## Next steps
+### Next step
 
 [Extend canvas apps](extend-canvas-apps.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

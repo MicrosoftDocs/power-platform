@@ -3,11 +3,11 @@ title: "View policies and scope  | MicrosoftDocs"
 description: View policies and policy scope.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/03/2021
+ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -16,11 +16,11 @@ search.audienceType:
   - admin
 ---
 
-# View DLP policies
+# View data policies
 
 Using the view policy feature (select **Policies** > **Data policies** on the left pane), environment admins can view tenant-level policies&mdash;and policies within environments that the admin has access to&mdash;at an individual policy level. Non-admins can also view tenant-level policies by using this feature.
 
-:::image type="content" source="media/dlp-view-policies2.png" alt-text="View DLP policies list.":::
+:::image type="content" source="media/dlp-view-policies2.png" alt-text="View data policies list.":::
 
 ## Policy scope
 
@@ -34,7 +34,7 @@ Option 1: Apply to all environments.<br>
 Option 2: Apply to multiple environments (but not all).<br>
 Option 3: Apply to all environments except certain specifically excluded ones.
 
-It's typical for tenant admins to define DLP policies for their entire tenant but exclude certain environments, as described in option 3. For the excluded environments, tenant admins can define alternate DLP policies and apply them to multiple environments, as described in option 2. Option 1 is for DLP policy rules that must apply across the entire tenant, without exception.
+It's typical for tenant admins to define data policies for their entire tenant but exclude certain environments, as described in option 3. For the excluded environments, tenant admins can define alternate data policies and apply them to multiple environments, as described in option 2. Option 1 is for data policy rules that must apply across the entire tenant, without exception.
 
 Tenant admins can define more than one multiple-tenant&ndash;level policy for the environments in their tenant. These policies can be set for mutually exclusive or overlapping environment scopes.
 

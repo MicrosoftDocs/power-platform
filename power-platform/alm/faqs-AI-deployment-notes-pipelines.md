@@ -1,12 +1,13 @@
 ---
 title: FAQ for use Copilot to generate deployment notes in pipelines
 description: FAQ that discusses using Copilot to generate deployment notes in pipelines and the key considerations for making use of this technology responsibly.
-ms.date: 9/28/2023
+ms.date: 9/03/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
 author: ASheehi1
 ms.author: matp
+ms.collection: bap-ai-copilot
 ---
 
 # FAQ for use Copilot to generate deployment notes in pipelines
@@ -25,7 +26,7 @@ Using Azure OpenAI service as a foundation, deployment notes will be generated i
 
 ## What is the system’s intended use?
 
-AI-generated deployment notes help admins approve and manage deployments in their organization, providing insight into what a solution contains and its purpose. AI-generated content may have mistakes. Make sure it's accurate and appropriate before using it. For more information, read the full [terms](https://dynamics.microsoft.com/legaldocs/supp-azure-openai-features/).
+AI-generated deployment notes help admins approve and manage deployments in their organization, providing insight into what a solution contains and its purpose. AI-generated content may have mistakes. Make sure it's accurate and appropriate before using it.
 
 ## How was use Copilot to generate deployment notes in pipelines evaluated? What metrics are used to measure performance?
 
@@ -41,9 +42,7 @@ This capability may be subject to usage limits or capacity throttling.
 
 The following are requirements to access the feature: 
 
-- Your pipeline environments must be in the United States region.
-
-- Your account must have English (United States) as the browser language.
+- This feature is supported in the following languages: English, Chinese (Simplified), Czech, Danish, Dutch, Finnish, French, German, Greek, Italian, Japanese, Korean, Norwegian (Bokmål), Polish, Portuguese (Brazil), Russian, Spanish, Swedish, Thai, and Turkish. Copilot uses the language selected in **Settings > Power Apps settings > Language** in make.powerapps.com.
 
 - AI deployment notes must be enabled for your pipeline to use the Copilot leveraging AI models. To enable the feature:
 

@@ -4,16 +4,19 @@ description: Data loss prevention activity logging
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/09/2023
+ms.date: 06/07/2024
 ms.subservice: admin
-author: StephenRauchPM
-ms.author: stephenrauch
+author: sericks007
+ms.author: sericks
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
 ---
 
 # Data loss prevention activity logging
+
+> [!Warning]
+> The schema documented in this article is deprecated and won't be available starting in July 2024. You can use the new schema available at [Activity category: Data policy events](admin-activity-logging.md#activity-category-data-policy-events).
 
 > [!NOTE]
 > Activity logging for data loss protection policies is not currently available in sovereign clouds.
@@ -27,9 +30,6 @@ To log DLP activities, follow these steps:
 2. Select **Search** > **Audit log search**. 
 
 3. Under **Search** > **Activities**, enter **dlp**. A list of activities appears.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Screenshot showing audit log search DLP policies.](media/audit-log-search-dlp.png "Audit log search DLP policies")
 
 4. Select an activity, select outside the search window to close it, and then select **Search**.
 
@@ -60,7 +60,7 @@ Schemas define which fields are sent to the [Microsoft 365 Security and Complian
 |Operation     |Edm.Date         |No         |Name of operation         |
 |UserKey     |Edm.String         |No         |Unique Identifier of the User in Microsoft Entra ID       |
 |UserType     |Self.UserType         |No         |The audit type (Admin, Regular, System)         |
-|Additional Info     |Edm.String        |No         |Additional information if any (e.g. the environment name)       |
+|Additional Info     |Edm.String        |No         |More information if any (e.g. the environment name)       |
 
 ### Additional Info 
 
@@ -79,7 +79,7 @@ The following is an example of the **Additional Info** JSON for a create or dele
 
 ```json
 { 
-  "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
+  "policyId": "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", 
   "policyType": "SingleEnvironment", 
   "defaultConnectorClassification": "General", 
   "environmentName": "8a11a4a6-d8a4-4c47-96d7-3c2a60efe2f5" 
@@ -97,7 +97,7 @@ The following is an example of the **Additional Info** JSON for an update operat
 
 ```json
 { 
-  "policyId": "eb1e0480-0fe9-434e-9ad8-df4047a666ec", 
+  "policyId": "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5", 
   "policyType": "ExceptEnvironments", 
   "defaultConnectorClassification": "Confidential", 
   "changeSet": { 

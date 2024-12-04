@@ -69,7 +69,7 @@ Securing a field with field-level security can impact synchronization between cu
   
 6. Select the new profile > **Users** > **Add**  
   
-7. Select users and then celect **Select** > **Add**.  
+7. Select users and then select **Select** > **Add**.  
   
 ### Set field permissions  
  With a field security profile created and users added to the profile, John can now set permissions on the fields to match the organization's requirements.  

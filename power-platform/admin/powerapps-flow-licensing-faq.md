@@ -2,27 +2,51 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: conceptual
-ms.date: 12/01/2023
+ms.date: 11/20/2024
 author: chrisgarty
 contributors:
   - Antoine2F
   - chrisgarty
   - v-aangie
+  - sandhangitms
 ms.subservice: admin
 ms.author: cgarty
-ms.reviewer: angieandrews
+ms.reviewer: sericks
 ms.contributors:
 - jessechen
 - v-kgallagher
 ---
-
-
 
 # Power Platform licensing FAQs
 
 This article lists common questions and answers for licensing and plan options.
 
 For more details about Microsoft Power Platform licensing, download the [Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+## Licensing for Copilot chat and form fill assistance in model-driven apps 
+
+### What are the licensing implications of generally available Copilot capabilities for end users of model-driven apps? 
+
+As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
+
+To utilize these features, you need any of the following licenses: 
+- Dynamics 365 Sales Enterprise or Sales Premium
+
+- Dynamics 365 Customer Insights
+- Dynamics 365 Field Service
+- Dynamics 365 Project Operations
+
+For more information about Dynamics 365 licensing, see [Dynamics 365 license transition guide](/dynamics365/get-started/license-transition). For more information about Copilot data security and privacy, see [FAQ for Copilot data security and privacy for Dynamics 365 and Power Platform](/dynamics365/faqs-copilot-data-security-privacy).
+
+> [!Note]
+> For standalone Power Apps, these features continue to be in public preview and customers can opt-in to these features from the Power Platform admin center.  
+
+Learn more about Copilot chat and form fill assistance from the following table.
+
+| Feature | Description |
+|--|--|
+| [Copilot chat](/power-apps/user/use-copilot-model-driven-apps) | Allows end users to ask natural language questions about the data in their model-driven apps and get instant answers.  |
+| [Form fill assistance](/power-apps/user/form-filling-assistance) | Helps end users fill in complex forms in model-driven apps by providing suggestions and guidance based on the data context. |
 
 ## Power Platform product licensing
 
@@ -78,17 +102,13 @@ There's no difference between these two offers. Power Apps per user has been ren
 
 More information: [About Power Apps per app plans](about-powerapps-perapp.md)
 
-
 ### How do I use Power Apps pay-as-you-go?
-
 
 More information: [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md)
 
 ### Power Apps per app allows users to run specific apps. Can you explain what this means in terms of the number and types of apps I can use?
 
-
 Power Apps per app is designed to help organizations solve for one business scenario at a time, which may involve a combination of individual apps. Each *per app* license provides an individual user with rights to one app (canvas and/or model-driven) within a single environment. A single user might be covered by multiple *per app* licenses to allow the user to use multiple apps, without requiring a per-user license. In other words, the *per app* license is stackable.
-
 
 An important part of this feature simplification is that we'll no longer require any standalone plans for maker or admin capabilities. Previously admins required a Power Apps P2 license for certain management operations; this will no longer be the case.
 
@@ -125,8 +145,8 @@ To learn more, go to [Types of Power Automate licenses](power-automate-licensing
 
 #### What are the pricing and licensing details for Power Automate Premium?
 
--   **List Price (USD)**: $15 per user/month
--   **Entitlements**: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
+- **List Price (USD)**: $15 per user/month
+- **Entitlements**: Licensed per user, Power Automate Premium enables licensed users to automate modern applications via API-based digital process automation, Digital Process Automation (cloud flows), and legacy applications via UI-based robotic process automation (desktop flows) in attended mode. It also includes full Process Mining desktop functionality and a limited amount of Process Mining data storage (50 MB per user license up to 100 GB per customer).
 
 #### How does this compare to the previous Power Automate per user with attended RPA offer and the Power Automate per user offer?
 
@@ -136,8 +156,8 @@ This new offer includes all the benefits of Power Automate per user with attende
 
 #### What are the pricing and licensing details for Power Automate Process?
 
--  **List Price (USD)**: $150 per bot/month
--   **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
+- **List Price (USD)**: $150 per bot/month
+- **Entitlements**: Licensed per bot, Power Automate Process licenses a single 'automation' bot that can be used for <u>unattended</u> robotic process automation (unattended RPA), or business critical processes that need to be accessed by unlimited users within an organization.
 
 > [!Note]
 > Any software automated with an unattended bot may require extra licensing per software terms. For example, unattended RPA scenarios incorporating Microsoft 365 or Office 365 require the Microsoft 365 - Unattended License. To learn more, go to [Product Terms](https://www.microsoft.com/licensing/terms/).
@@ -150,17 +170,16 @@ No, there are no minimum purchase requirements.
 
 No, there are no licensing prerequisites required for eligibility to purchase Power Automate Process.
 
-### Power Automate Process Mining 
+### Power Automate Process Mining
 
 #### What are the pricing and licensing details for Power Automate Process Mining?
 
-
--   **List Price (USD)**: $5,000 for 100 GB of data stored/month
--   **Required prerequisite**: Power Automate Premium. Multiple add-ons can be applied to a single prerequisite.
--   **More entitlements per capacity pack**:
-    -   Dataverse Database capacity 2 GB/capacity pack
-    -   Dataverse File capacity 1 TB/capacity pack
-    -   250k Power Platform Requests/24 hrs
+- **List Price (USD)**: $5,000 for 100 GB of data stored/month
+- **Required prerequisite**: Power Automate Premium. Multiple add-ons can be applied to a single prerequisite.
+- **More entitlements per capacity pack**:
+  - Dataverse Database capacity 2 GB/capacity pack
+  - Dataverse File capacity 1 TB/capacity pack
+  - 250k Power Platform Requests/24 hrs
 
 #### When will Process Mining be available to purchase?
 
@@ -280,7 +299,7 @@ Microsoft Copilot Studio for Teams enables customers with select Microsoft 365 o
 #### Are there additional Microsoft Copilot Studio licensing requirements to create and edit with Copilot?
 
 - You need a Microsoft Copilot Studio license and you must create an account.
-    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio or Power Virtual Agents or before, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
+    - If you don't have a Microsoft Copilot Studio account, or you haven't created chatbots with Copilot Studio, go to the <u>[Quickstart guide](/power-virtual-agents/nlu-gpt-quickstart)</u> for building bots with GPT.
 - This capability might be subject to usage limits or capacity throttling.
 
 ## Power Pages
@@ -742,11 +761,38 @@ Power Apps and Power Automate usage will be subject to service limits described�
 
 Yes, existing apps and flows will continue to work. Customers who have been using Power Apps or Power Automate with Microsoft 365 using one or more of the connectors listed above will receive a transition period before the connector reclassification goes into effect. This transition period would be until October 1, 2020, or the expiration of their current Microsoft 365 subscription term, whichever is longer. During the transition period, customers can continue to create additional apps and flows using these connectors.
 
-In addition, apps and flows created prior to October 1, 2019, that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors.
+In addition, apps and flows created prior to October 1, 2019, that are using these connectors will receive an extended transition period until October 1, 2024. During this time, these qualifying apps and flows will be exempt from the Premium connector licensing requirements for the reclassified connectors, custom connectors and on-premise data gateways.
 
 The extended transition period allows for using the connectors listed above but it doesn't allow these connectors to use gateways. Gateways were a premium capability before the transition and they continue to be a premium capability.
 
 Although apps may be granted to use the Dynamics 365 connector for an extended transition period, the ability to use the connector doesn't provide Dataverse capacity. Dataverse capacity is a prerequisite for Power Apps and Power Automate workflows to use Dataverse.
+
+#### I have apps and flows that were in an extended transition period until October 1, 2024, under the Power Apps and Power Automate use rights for Microsoft 365 applications. What happens to my apps and flows after October 1, 2024?
+
+The period for extended use rights concludes on October 1, 2024 and users are required to have appropriate licenses to maintain compliance. In-product licensing enforcement will begin April 1, 2025, until which your users will be able to use these apps and flows. However, if an action to purchase and assign Premium licenses to users is not taken now before the full enforcement date of April 1, 2025, such users will be unable to use these apps and flows.
+
+#### What is the recommendation before the enforcement of Premium connector licensing requirements begins from 1st April 2025?
+
+- Ensure that you have appropriate licenses purchased. Please refer to the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) for the Power Apps and Power Automate licenses with use rights for premium connectors, custom connectors and on-premise data gateways.
+- Ensure users have licenses assigned. For this, we highly recommend that you immediately enable [auto-claim policies for Power Apps licenses](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  and [auto-claim policies for Power Automate licenses](/power-platform/admin/power-automate-licensing/power-automate-auto-claim) to benefit from automatic assignment of licenses to users. 
+
+#### How do I identify apps and flows that are using specific connectors that were under the extended use rights? 
+
+The following inventory reports are available in the Power Platform admin center to help you identify your apps and flows with the connectors being used -  
+
+  - [Power Apps inventory report](/power-platform/admin/powerapps-analytics-reports#power-apps---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Apps** > **Overview** tab > **App Inventory** tab. You can view the connectors list in the drill through the report. Right-click on the app with the connections and in the menu that opens, select **Drill-through** > **App Connectors**
+
+    :::image type="content" source="media/powerapps-flow-licensing-faq/inventory-reports-power-apps.png" alt-text="A screenshot of Power Apps Inventory report":::
+
+    This takes you to the Connectors used by the app.
+
+    :::image type="content" source="media/powerapps-flow-licensing-faq/app-inventory.png" alt-text="A screenshot of details about connectors in Power Apps Inventory report":::
+
+- [Power Automate Inventory report](/power-platform/admin/power-automate-analytics-reports#power-automate---inventory-report) - Available at Power Platform admin center > **Analytics** > **Power Automate** > **Overview** tab > **Inventory** tab. Steps to view the connectors list in the drill through **Flow connectors** report are similar to the steps described above for Power Apps. 
+
+#### Can licenses be automatically assigned to ensure these apps and flows continue to function for users? 
+
+Yes, we highly recommend that you enable auto-claim policy to help you automatically assign licenses to users and avoid any disruption. Similar to how [auto-claim policy is enabled by default for managed environments](/power-platform/admin/auto-claim-licensing#auto-claim-policy-enabled-by-default), starting January 2025 auto-claim policy will also be enabled for all customers who were in an extended transition period. More information: [Manage auto-claim policies in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-auto-claim-policies#auto-claim-policies-for-microsoft-power-apps)  
 
 #### How many apps can I run with Microsoft 365 plans?
 
@@ -761,5 +807,64 @@ For Power Apps and Power Automate use rights for Microsoft 365 applications, go 
 #### Can I connect to Microsoft Dynamics 365 for finance and operations apps?
 
 Yes, you can use the finance and operations apps connector to build canvas apps using this data.
+
+## Power Platform security and governance licensing requirements
+
+### Managed Environments 
+
+Managed Environments is included as an entitlement with: 
+
+- Power Apps Premium
+- Power Apps per app
+- Power Automate Premium
+- Power Automate Process
+- Power Automate Hosted Process
+- Power Automate per user
+- Power Automate per flow
+- Microsoft Copilot Studio
+- Power Pages Authenticated Users
+- Power Pages Anonymous Users and
+- Dynamics 365 Premium, Enterprise and Team Members licenses.
+
+For more information, see [Managed Environments Licensing](/power-platform/admin/managed-environment-licensing).
+
+### Advanced security and governance
+
+#### Customer Managed Key (CMK)
+
+Customer Managed Key policy will only be enforced in environments that are activated for Managed Environments. Users in the environment are required to have one of these subscriptions:
+
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/F5/G5 Information Protection and Governance
+
+For more information, see [Licensing requirements for Customer Managed Key](/power-platform/admin/customer-managed-key#licensing-requirements-for-customer-managed-key). 
+
+#### Customer Lockbox
+
+Enabling Customer Lockbox will enforce the policy only for environments that are activated for Managed Environments. Users in the environment where the Lockbox policy is enforced are required to have any of these subscriptions:
+
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/F5/G5 Insider Risk Management
+
+Note: Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
+
+For more information, see [Licensing requirements for Customer Lockbox](/power-platform/admin/about-lockbox#licensing-requirements-for-customer-lockbox). 
+
+#### Azure Virtual Network (vNet) 
+
+To enable Virtual Network support for Power Platform, environments must be Managed Environments. In addition, access to using Virtual Network support for Power platform requires users in the environments where the Virtual Network is enabled to have one of these subscriptions:
+
+- Microsoft 365 or Office 365 A5/E5/G5
+- Microsoft 365 A5/E5/F5/G5 Compliance
+- Microsoft 365 F5 Security & Compliance
+- Microsoft 365 E5/F5/G5 Information Protection and Governance
+- Microsoft 365 E5/F5/G5 Insider Risk Management
+- Organization must have an Azure subscription with permissions to create a virtual network, subnet, and the enterprise policy resources.
+
+For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure). 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

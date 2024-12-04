@@ -7,7 +7,7 @@ ms.date: 04/27/2021
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

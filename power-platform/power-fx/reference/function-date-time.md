@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Date, DateTime, and Time functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Converts date and time components to a date/time value.
 
@@ -75,7 +75,7 @@ If a user typed
 
 this formula would return `3/17/1979`:
 
-```powerapps-dot
+```power-fx
 Date( Value(HireYear.Text), Value(HireMonth.Text), Value(HireDay.Text) )
 ```
 
@@ -88,7 +88,7 @@ If a user typed
 
 this formula would return `02:50:24 P`:
 
-```powerapps-dot
+```power-fx
 Text( 
     Time(Value(BirthHour.Text), Value(BirthMinute.Text), Value(BirthSecond.Text)), 
     "hh:mm:ss A/P" 
@@ -108,7 +108,7 @@ If a user typed
 
 this formula would return `10/28/23 01:14:05.231 PM`:
 
-```powerapps-dot
+```power-fx
 Text(
     DateTime(Value(EclipseYear.Text), Value(EclipseMonth.Text), Value(EclipseDate.Text), 
         Value(EclipseHour.Text), Value(EclipseMinute.Text), 

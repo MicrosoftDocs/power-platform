@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/24/2021
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,18 +14,18 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # JSON function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps   
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
 
 Generates a JSON text string for a table, a record, or a value.
 
 ## Description
 
-The **JSON** function returns the JavaScript Object Notation (JSON) representation of a data structure as text so that it's suitable for storing or transmitting across a network. [ECMA-404](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) describe the format, which is widely used by JavaScript and other programming languages.
+The **JSON** function returns the JavaScript Object Notation (JSON) representation of a data structure as text so that it's suitable for storing or transmitting across a network. [ECMA-404]([https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf](https://ecma-international.org/publications-and-standards/standards/ecma-404/) and [IETF RFC 8259](https://tools.ietf.org/html/rfc8259) describe the format, which is widely used by JavaScript and other programming languages.
 
 Canvas apps support the [data types](../data-types.md) that this table lists with details about their text representation:
 
@@ -42,7 +42,7 @@ Canvas apps support the [data types](../data-types.md) that this table lists wit
 | **Option&nbsp;set** | Numeric value of the choice, not the label that's used for display. The numeric value is used because it's language independent.                                                                                                                                                                                                                                                                                                                                                                               | `1001`                                                                         |
 | **Time**            | String that contains an ISO 8601 _hh:mm:ss.fff_ format.                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `"23:12:49.000"`                                                               |
 | **Record**          | Comma-delimited list, between **{** and **}**, of fields and their values. This notation resembles that for records in canvas apps, but the name is always between double quotation marks. This format doesn't support records that are based on many-to-one relationships.                                                                                                                                                                                                                                    | `{ "First Name": "Fred", "Age": 21 }`                                          |
-| **Table**           | Comma-delimited list, between **[** and **]**, of records. This format doesn't support tables that are based on one-to-many relationships.                                                                                                                                                                                                                                                                                                                                                                     | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
+| **Table**           | Comma-delimited list, between **[** and **]**, of records. This format doesn't support tables that are based on one-to-many relationships. Use the **JSONFormat.FlattenValueTables** option to remove the record for single column tables with the column named **Value**.                                                                                                                                                                                                                                                                                                                                                                  | `[ { "First Name": "Fred", "Age": 21 }, { "First Name": "Jean", "Age": 20 } ]` |
 | **Two&nbsp;option** | Boolean value of the two option, _true_ or _false_, not the label that's used for display. The Boolean value is used because it's language independent.                                                                                                                                                                                                                                                                                                                                                        | `false`                                                                        |
 | **Hyperlink, Text** | String between double quotation marks. The function escapes embedded double-quotation marks with a backslash, replaces newlines with "\n", and makes other standard JavaScript replacements.                                                                                                                                                                                                                                                                                                                   | `"This is a string."`                                                          |
 
@@ -51,6 +51,7 @@ Specify the optional _Format_ argument to control how readable the result is and
 | JSONFormat enum            | Description                                                                                                                                                                                         |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **JSONFormat.Compact**                | Default. The output is as compact as possible with no added spaces or newlines.                                                                                                                     |
+| **JSONFormat.FlattenValueTables**     | As a [Value table](../tables.md#inline-value-tables), `[1,2,3]` notation results in a table containing records where each record has a single **Value** column. In JSON, that same notation represents an array of three numbers. To make interoperability between the two easier, this option flattens a Power Fx Value table to a JSON friendly array instead of an array of records.
 | **JSONFormat.IndentFour**             | To improve readability, the output contains a newline for each column and nesting level and uses four spaces for each indentation level.                                                            |
 | **JSONFormat.IncludeBinaryData**      | The result includes image, video, and audio-clip columns. This format can dramatically increase the result's size and degrade your app's performance.                                               |
 | **JSONFormat.IgnoreBinaryData**       | The result doesn't include image, video, or audio-clip columns. If you specify neither **JSONFormat.IncludeBinaryData** nor **JSONFormat.IgnoreBinaryData**, the function produces an error if it encounters binary data. |
@@ -75,7 +76,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( CityPopulations,
        { City: "London",    Country: "United Kingdom", Population: 8615000 },
        { City: "Berlin",    Country: "Germany",        Population: 3562000 },
@@ -101,7 +102,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Insert another button, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Set( CitiesByCountryJSON, JSON( CitiesByCountry ) )
    ```
 
@@ -111,7 +112,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Insert a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control, and set its **Text** property to this variable.
 
-   ```powerapps-dot
+   ```power-fx
    CitiesByCountryJSON
    ```
 
@@ -143,7 +144,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Change the second button's formula to make the output more readable.
 
-   ```powerapps-dot
+   ```power-fx
    Set( CitiesByCountryJSON, JSON(CitiesByCountry, JSONFormat.IndentFour ))
    ```
 
@@ -203,7 +204,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control, and set its **OnSelect** property to this formula.
 
-   ```powerapps-dot
+   ```power-fx
    Set( ImageJSON, JSON( SampleImage, JSONFormat.IncludeBinaryData ) )
    ```
 
@@ -211,7 +212,7 @@ If a column has both a display name and a logical name, the result contains the 
 
 1. Add a label, and set its **Text** property to this variable.
 
-   ```powerapps-dot
+   ```power-fx
    ImageJSON
    ```
 
@@ -222,5 +223,21 @@ If a column has both a display name and a logical name, the result contains the 
    ```json
    "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgdmVyc2lvbj0iMS4xIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWxuczphPSJodHRwOi8vbnMuYWRvYmUuY29tL0Fkb2JlU1ZHVmlld2VyRXh0ZW5zaW9ucy8zLjAvIg0KCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjI3MHB4IiBoZWlnaHQ9IjI3MHB4IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNzAgMjcwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCgk8ZyBjbGFzcz0ic3QwIj4NCgkJPHJlY3QgeT0iMC43IiBmaWxsPSIjRTlFOUU5IiB3aWR0aD0iMjY5IiBoZWlnaHQ9IjI2OS4zIi8+DQoJCTxwb2x5Z29uIGZpbGw9IiNDQkNCQ0EiIHBvaW50cz0iMjc3LjksMTg3LjEgMjQ1LDE0My40IDE4OC42LDIwMi44IDc1LDgwLjUgLTQuMSwxNjUuMyAtNC4xLDI3MiAyNzcuOSwyNzIiLz4NCgkJPGVsbGlwc2UgZmlsbD0iI0NCQ0JDQSIgY3g9IjIwMi40IiBjeT0iODQuMSIgcng9IjI0LjQiIHJ5PSIyNC4zIi8+DQoJPC9nPg0KPC9zdmc+"
    ```
+
+### Value tables
+
+This formula:
+```power-fx
+JSON( [1,2,3] )
+```
+produces the text string **[{"Value":1},{"Value":2},{"Value":3}]**.  
+
+The same formula with the JSONFormat.FlattenValueTables option:
+```power-fx
+JSON( [1,2,3], JSONFormat.FlattenValueTables )
+```
+produces the text string **[1,2,3]**.
+
+Note that the FlattenValueTables option has no impact when using JSON with the **CityPopulations** or **CitiesByCountry** collections as these tables are not Value tables. A Value table has a single column and it must be named "Value".
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

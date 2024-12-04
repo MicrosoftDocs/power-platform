@@ -7,7 +7,7 @@ ms.date: 05/13/2021
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -44,8 +44,6 @@ To help diagnose the problem, let's first eliminate the connection to Exchange S
    |Impersonated user identifier     |  Select **SmtpAddress**.       |
 
 3. Fill in remaining values as appropriate and select **Perform Test**.
-
-   :::image type="content" source="media/remote-connectivity-analyzer.png" alt-text="Microsoft Remote Connectivity Analyzer.":::
 
 ### Test results
 

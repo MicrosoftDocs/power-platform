@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

@@ -50,7 +50,7 @@ The Tag Picker has the following input datasets, which are described in detail i
 
 The `Suggestions` dataset should be filtered by using the `SearchTerm` output property, for example:
 
-```powerapps-dot
+```power-fx
 Search(colSuggestions,TagPicker.SearchTerm,"name")
 ```
 
@@ -63,7 +63,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 | `Items` | A collection (table) of tags. The app is responsible for adding or removing tags in response to the component's raising Add or Remove events (described in the following [OnChange event section](#onchange-event)). |
 | `Suggestions_Items` | A collection (table) of suggestions. |
 | `TagMaxWidth` | The maximum width of the tags when rendering. Overflow text will be truncated with ellipsis's and a hover tooltip shows the full text. |
-| `AllowFreeText` | When typing a value, do not not automatically select the first suggestion so that a free text entry can be provided rather than selecting from a pre-defined list. |
+| `AllowFreeText` | When typing a value, do not automatically select the first suggestion so that a free text entry can be provided rather than selecting from a pre-defined list. |
 | `SearchTermToShortMessage` | The message to display when the Search Term is less than the `MinimumSearchTermLength`.
 | `HintText` | The message to display inside the Picker when no search term is provided. |
 | `NoSuggestionsFoundMessage` | The message to display when the Suggestions collection contains no results. |
@@ -88,7 +88,7 @@ Search(colSuggestions,TagPicker.SearchTerm,"name")
 | `Theme` | Accepts a JSON string that is generated using [Fluent UI Theme Designer (windows.net)](https://fabricweb.z5.web.core.windows.net/pr-deploy-site/refs/heads/master/theming-designer/). Leaving this blank will use the default theme defined by Power Apps. See [theming](theme.md) for guidance on how to configure. |
 | `FontSize` | the font size of the tags shown inside the Picker. |
 | `BorderRadius` | the border radius of the tags shown inside the Picker. |
-| `ItemHeight` | the height of the tags (pixesl) shown inside the Picker. |
+| `ItemHeight` | the height of the tags (pixels) shown inside the Picker. |
 | `AccessibilityLabel` | Screen reader aria-label |
 
 ### Event properties
@@ -118,7 +118,7 @@ The `TagPicker`component raises an `OnChange` event when tags are added or remov
 
 The event should contain an expression similar to:
 
-```powerapps-dot
+```power-fx
 If( TagPicker.TagEvent = "Add" && CountRows(Filter(colTags,name=TagPicker.TagsDisplayName)) = 0,
     Collect( colTags, { name:TagPicker.TagsDisplayName })
 );

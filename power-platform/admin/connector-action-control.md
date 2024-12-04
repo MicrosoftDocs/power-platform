@@ -3,7 +3,7 @@ title: "Connector action control | MicrosoftDocs"
 description: You can use connector action control to allow or block individual actions within a given connector.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 04/10/2023
+ms.date: 1/29/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -23,19 +23,39 @@ search.app:
 
 # Connector action control
 
-You can use connector action control to allow or block individual actions within a given connector. On the **Connectors** page, right-click the connector, and then select **Configure connector** > **Connector actions**.
+You can use connector action control to allow or block individual actions within a given connector.
 
-:::image type="content" source="media/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions.":::
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a System Administrator. 
+1. On the left navigation pane, select **Policies** > **Data policies**.
+1. Select a policy and on the command bar, select **Edit Policy**.
+1. On the left, select **Prebuilt connectors**.
+1. Select **More actions** next to your connector and then select **Configure connector** > **Connector actions**.
 
-> [!NOTE]
-> Configuring a connector's actions is available for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
+   :::image type="content" source="media/connector-action-control/dlp-connector-actions.png" alt-text="Select Configure connector > Connector actions." lightbox="media/connector-action-control/dlp-connector-actions.png":::
 
-When configuring the connector, use the side panel to allow or deny specific actions. You can also set the default value (Allow or Deny) for any new connector actions that will be added to the connector in the future.
+   
 
-:::image type="content" source="media/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
+   > [!NOTE]
+   > You can configure connector actions for all *blockable* connectors, but not for [unblockable connectors](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked) and [custom connectors](dlp-custom-connector-parity.md).
+
+1. Use the side panel to allow or deny specific actions.
+
+   You can also set the **Default connector action settings** to allow or block for any new connector actions that will be added to the connector in the future.
+
+   :::image type="content" source="media/connector-action-control/dlp-allow-deny-connector-actions.png" alt-text="Set Allow or Deny for connector actions.":::
+
 
 ## Known limitations
-Some Power Apps published before October 1, 2020, need to be re-published for connector action rules for data loss prevention (DLP) to be enforced. The script below helps admins and makers identify the apps that must be re-published.
+
+### Admins need to have maker access to Power Apps
+
+The list of connector actions is retrieved using calls to Power Apps on behalf of the admin. The admin must sign in to [Power Apps](https://make.powerapps.com) and have access to complete the user consent process. If the admin doesn't have access to [Power Apps](https://make.powerapps.com), then the list of connector actions won't be retrieved.
+
+### Republish Power Apps
+
+Some Power Apps, published before October 1, 2020, need to be republished for connector action rules to enforce data loss prevention (DLP).
+
+This script helps admins and makers identify the apps that must be republished.
 
 ```powershell
 Add-PowerAppsAccount
@@ -57,27 +77,29 @@ ForEach ($app in Get-AdminPowerApp){
         Write-Host "App is already Granular DLP compliant: " $app.AppName 
     }
 }
-``` 
+```
 
 ## PowerShell support for connector action control
 
-**Retrieve a list of available actions for a connector**
+Retrieve a list of available actions for a connector, using [`Get-AdminPowerAppConnectorAction`](/powershell/module/microsoft.powerapps.administration.powershell/get-adminpowerappconnectoraction).
+
 ```powershell
 Get-AdminPowerAppConnectorAction
 ```
 
-**Example**
+For example:
+
 ```powershell
 Get-AdminPowerAppConnectorAction -ConnectorName shared_msnweather
 ```
 
-|ID   |Type  |Properties  |
-|---------|---------|---------|
-|TodaysForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get forecast for today; description=Get the forecast for the current day in the specified location.      |
-|OnCurrentWeatherChange     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=When the current weather changes; description=Triggers a new flow when the specified weather measure changes.     |
-|CurrentWeather     | Microsoft.ProcessSimple/apis/apiOperations        | @{summary=Get current weather; description=Get the current weather for a location.; visibility=advanced        |
-|TomorrowsForecast     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=Get the forecast for tomorrow; description=Get the forecast for tomorrow in the specified location.   |
-|OnCurrentConditionsChange     |  Microsoft.ProcessSimple/apis/apiOperations       |  @{summary=When the current conditions change; description=Triggers a new flow when the conditions change for a locattion.    |
+| ID | Type | Properties |
+| -- | ---- | ---------- |
+| TodaysForecast | Microsoft.ProcessSimple/apis/apiOperations | Get the forecast for the current day in a specified location. |
+| OnCurrentWeatherChange | Microsoft.ProcessSimple/apis/apiOperations | Triggers a new flow when the specified weather measure changes. |
+| CurrentWeather | Microsoft.ProcessSimple/apis/apiOperations | Get the current weather for a location.<br>Visibility=advanced |
+| TomorrowsForecast | Microsoft.ProcessSimple/apis/apiOperations | Get the forecast for tomorrow in the specified location. |
+| OnCurrentConditionsChange | Microsoft.ProcessSimple/apis/apiOperations | Triggers a new flow when the conditions change for a location.    |
 
 #### Configure connector action rules for a policy
 The object that contains connector action rules for a policy is referred to below as the connector configurations.

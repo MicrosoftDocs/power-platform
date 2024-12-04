@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/04/2020
+ms.date: 4/11/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Collect, Clear, and ClearCollect functions
@@ -23,7 +23,7 @@ Creates and clears [collections](/power-apps/maker/canvas-apps/working-with-data
 
 ## Collect
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Cards :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse low-code plug-ins :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows
 
 The **Collect** function adds records to a data source. The items to be added can be:
 

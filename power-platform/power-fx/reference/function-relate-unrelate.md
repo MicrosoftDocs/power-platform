@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/24/2021
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Relate and Unrelate functions
@@ -148,7 +148,7 @@ You'll first create a simple app to view and reassign the reservations that are 
 
 1. In **Gallery2**, set **NextArrow2**'s **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Relate( ComboBox1.Selected.Reservations, ThisItem )
    ```
 
@@ -172,7 +172,7 @@ At this point, you can move the relationship from one record to another, but you
 
 1. In **Gallery2**, set the **OnSelect** formula for **NextArrow2** to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    If( IsBlank( ComboBox1.Selected ),
        Unrelate( Gallery1.Selected.Reservations, ThisItem ),
        Relate( ComboBox1.Selected.Reservations, ThisItem )
@@ -190,7 +190,7 @@ At this point, you can move the relationship from one record to another, but you
 
 1. Ensure that the duplicate of **Gallery2** is named **Gallery2_1**, and then set its **Items** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Filter( Reservations, IsBlank( 'Product Reservation' ) )
    ```
 
@@ -254,7 +254,7 @@ You'll create another app that resembles the one you created earlier in this top
 
 1. Set the **Cancel** icon's **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Unrelate( Gallery1.Selected.Contacts, ThisItem )
    ```
 
@@ -274,7 +274,7 @@ You'll create another app that resembles the one you created earlier in this top
 
 1. Insert an **Add** icon, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Relate( Gallery1.Selected.Contacts, ComboBox1.Selected )
    ```
 

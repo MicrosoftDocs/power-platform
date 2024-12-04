@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.date: 06/11/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 # Establish governance policies to manage Microsoft Dataverse for Teams environments
 
-Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. When a team owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to their team. More information: [About Microsoft Dataverse for Teams environments](../../admin/about-teams-environment.md)
+Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. When a team owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to their team. More information: [About Microsoft Dataverse for Teams environments](../../admin/about-teams-environment.md)
 
 Dataverse for Teams honors the existing data governance paradigms of Microsoft Power Platform and enables access control in the Microsoft Teams admin center. The Power Platform admin center provides more detail, including monitoring dedicated capacity usage and [data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md).  
 
@@ -73,9 +73,9 @@ Global or Microsoft Teams admins can use Microsoft Teams app controls through th
 |Microsoft Teams app control|Capabilities|
 |------------------|---------|
 |**Power Apps**|The ability to create new Power Apps apps by using the Microsoft Teams embedded maker experience. This is tied to the implicit ability to create new Dataverse for Teams environments.<Br>The ability to use Dataverse or Dataverse for Teams apps within Microsoft Teams by using Power Apps apps.  |
-|**Power Virtual Agents**|The ability to create new Power Virtual Agents chatbots by using the Microsoft Teams embedded maker experience. This is tied to the implicit ability to create new Dataverse for Teams environments.<Br>The ability to use Dataverse or Dataverse for Teams Power Virtual Agents components within Microsoft Teams by using the Power Virtual Agents app.|
+|**Microsoft Copilot Studio**|The ability to create new Microsoft Copilot Studio chatbots by using the Microsoft Teams embedded maker experience. This is tied to the implicit ability to create new Dataverse for Teams environments.<Br>The ability to use Dataverse or Dataverse for Teams Microsoft Copilot Studio components within Microsoft Teams by using the Microsoft Copilot Studio app.|
 |**Shared Power Apps**|The ability to use Dataverse or Dataverse for Teams Power Apps apps within Microsoft Teams by using the *Built by your colleagues* catalog.|
-|**Shared Power Virtual Agents**|The ability to use Dataverse or Dataverse for Teams Power Virtual Agents chatbots within Microsoft Teams by using the *Built by your colleagues* catalog.|
+|**Shared Microsoft Copilot Studio**|The ability to use Dataverse or Dataverse for Teams Microsoft Copilot Studio chatbots within Microsoft Teams by using the *Built by your colleagues* catalog.|
 |**Various Sample Apps**| The ability to create new apps, flows and bots by using sample apps within Microsoft Teams. This is tied to the implicit ability to create new Dataverse for Teams environments.|
 
 Given that these controls block environment creator, maker, and user access, we recommend that admins instead use reactive constructs&mdash;either by building their own or by using the templates in the CoE Starter Kit&mdash;to govern Dataverse for Teams environment creation workflows.

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -13,12 +13,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # First, FirstN, Index, Last, and LastN functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Returns the first, last, or a specific [record](/power-apps/maker/canvas-apps/working-with-tables#records), or a set of first or last records, from a table.
 
@@ -66,7 +66,7 @@ For the following examples, we'll use the **IceCream** [data source](/power-apps
 
 This table can be placed in a collection with this formula (put in the OnStart formula for a Button control and press the button):
 
-```powerapps-dot
+```power-fx
 Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
                           { Flavor: "Vanilla", Quantity: 200 },
                           { Flavor: "Strawberry", Quantity: 300 },
@@ -80,8 +80,8 @@ Collect( IceCream, Table( { Flavor: "Chocolate", Quantity: 100 },
 | **Last(&nbsp;IceCream&nbsp;)**                   | Returns the last record of **IceCream**.                                       | { Flavor: "Pistachio", Quantity: 200 }                                                                         |
 | **Index(&nbsp;IceCream,&nbsp;3&nbsp;)**          | Returns the third record of **IceCream**.                                      | { Flavor: "Strawberry", Quantity: 300 }                                                                        |
 | **FirstN(&nbsp;IceCream,&nbsp;2&nbsp;)**         | Returns a table containing the first two records of **IceCream**.              | ![Table containing the records for Chocolate and Vanilla](media/function-first-last/icecream-first2.png)       |
-| **LastN(&nbsp;IceCream,&nbsp;2&nbsp;)**          | Returns a table containt the last two records of **IceCream**.                 | ![Table containing the records for Mint Chocolate and Pistachio](media/function-first-last/icecream-last2.png) |
-| **Index(&nbsp;IceCream,&nbsp;4&nbsp;).Quantity** | Returns the fourth record of the table, and extracts the Quanity column.       | 60                                                                                                             |
+| **LastN(&nbsp;IceCream,&nbsp;2&nbsp;)**          | Returns a table containing the last two records of **IceCream**.                 | ![Table containing the records for Mint Chocolate and Pistachio](media/function-first-last/icecream-last2.png) |
+| **Index(&nbsp;IceCream,&nbsp;4&nbsp;).Quantity** | Returns the fourth record of the table, and extracts the Quantity column.       | 60                                                                                                             |
 | **Index(&nbsp;IceCream,&nbsp;10&nbsp;)**         | Returns an error since the record requested is beyond the bounds of the table. | _Error_                                                                                                        |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

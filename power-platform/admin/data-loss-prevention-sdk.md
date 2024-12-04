@@ -7,7 +7,7 @@ ms.date: 03/08/2021
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -48,7 +48,7 @@ This sample calls DLP APIs in Microsoft.PowerApps.Administration.PowerShell to c
 4. Get list of tenant-level policies (all environments). 
 5. Update policy to move connector across groups (**Business**, **Non-business**, and **Blocked**). 
 6. Test compatibility of existing policies that previously used legacy PowerShell APIs and now use new PowerShell APIs. 
-7. Apply a DLP policy to all Teams environments within a tenant. More information: [Applying a data loss prevention policy to all Dataverse for Teams environments](about-teams-environment.md#applying-a-data-loss-prevention-policy-to-all-dataverse-for-teams-environments)
+7. Apply a data policy to all Teams environments within a tenant. More information: [Applying a data policy to all Dataverse for Teams environments](about-teams-environment.md#applying-a-data-policy-to-all-dataverse-for-teams-environments)
 
 ## How this sample works
 

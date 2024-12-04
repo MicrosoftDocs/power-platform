@@ -2,7 +2,7 @@
 title: "Retrieve the list of rules | Microsoft Docs"
 description: "Learn how to form a GET request using the Power Apps checker web API to retrieve the list of rules available."
 ms.custom: ""
-ms.date: 06/09/2020
+ms.date: 05/01/2024
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: "article"
@@ -23,7 +23,7 @@ search.audienceType:
 Rules are grouped together using a ruleset. A rule can be in no ruleset, or multiple rulesets. Use a `GET` request to obtain a list of all rules available, rules in a ruleset, or rulesets by calling the API `[Geographical URI]/api/rule`. There are a few variations to calling this API, however, the most common usage is to retrieve the list of rules for a specific ruleset.
 
 > [!NOTE]
-> This API does not require an OAuth token, but can accept one if provided.
+> This API does require an OAuth token.
 
 <a name="bkmk_headers"></a>
 
@@ -31,7 +31,7 @@ Rules are grouped together using a ruleset. A rule can be in no ruleset, or mult
 
 |Name|Type|Expected value|Required?|
 |---|---|---|---|
-|Accept-Language|string|The language code (e.g., en-US). The default is en-US.|no
+|Accept-Language|string|The language code (for example, en-US). The default is en-US.|no
 
 <a name="bkmk_params"></a>
 
@@ -39,8 +39,8 @@ Rules are grouped together using a ruleset. A rule can be in no ruleset, or mult
 
 |Name|Type|Expected value|Required?|
 |---|---|---|---|
-|ruleset|string|The name or ID of the ruleset or a list of ruleset IDs, or names separated by a comma or semicolon (e.g., "Solution Checker").|no|
-|includeMessageFormats|bool|When set to `true`, the list of possible message variations are included in the results of the language(s) requests, if available. This is useful for translations into multiple languages. If not needed, then do not provide this parameter or provide `false` as the value as this parameter will increase the size of the response and can increase processing time.|no|
+|ruleset|string|The name or ID of the ruleset or a list of ruleset IDs, or names separated by a comma or semicolon (for example, "Solution Checker").|no|
+|includeMessageFormats|bool|When set to `true`, the list of possible message variations are included in the results of the language(s) requests, if available. This list is useful for translations into multiple languages. If not needed, then don't provide this parameter or provide `false` as the value as this parameter increases the size of the response and can increase processing time.|no|
 
 <a name="bkmk_responses"></a>
 
@@ -48,8 +48,9 @@ Rules are grouped together using a ruleset. A rule can be in no ruleset, or mult
 
 |HTTP status code|Scenario|Result|
 |---|---|---|
-|200|One or more results were found|See the example below. One or more results may be returned.|
+|200|One or more results were found|See the example later in this article. One or more results may be returned.|
 |204|No results were found|No results in the response body.|
+|401|Authentication Failed|No results in the response body.|
 
 ### Expected response body
 
@@ -58,14 +59,14 @@ The following table outlines the structure of the response for each request (HTT
 |Property|Type|Expected value|Required?|
 |---|---|---|---|
 |code|string|The identifier of the rule, sometimes referred to as the Rule ID.|Yes|
-|summary|string|A summary of the the rule.|Yes|
+|summary|string|A summary of the rule.|Yes|
 |description|string|More detailed description of the rule.|Yes|
-|guidanceUrl|URI|The URL in which to find published guidance. There may be some cases where there is not a dedicated supporting guidance article.|Yes|
-|include|boolean|Signals to the service that the rule is to be included in the analysis. This will be `true` for this API.|No|
+|guidanceUrl|URI|The URL in which to find published guidance. There may be some cases where there isn't a dedicated supporting guidance article.|Yes|
+|include|boolean|Signals to the service that the rule is to be included in the analysis. This value is `true` for this API.|No|
 |messageTemplates|array|This property value is included only when `includeMessageFormats` is `true`.|No|
 |messageTemplates.ruleId|string| Returns the same ID value as the `code` property.|Yes|
 |messageTemplates.messageTemplateId|string| An identifier used in the Static Analysis Results Interchange Format (SARIF) report to signal an issue message variation for the rule.|Yes|
-|messageTemplates.messageTemplate|string|The text of the message variation for the issue scenario that the rule reports. This is a format string that may contain tokens in which  arguments provided in the SARIF report can be used to construct a detailed message.|Yes|
+|messageTemplates.messageTemplate|string|The text of the message variation for the issue scenario that the rule reports. This text is a format string that may contain tokens in which  arguments provided in the SARIF report can be used to construct a detailed message.|Yes|
 
 <a name="bkmk_retrieveForRuleset"></a>
 
@@ -76,8 +77,8 @@ This example returns data for all of the rules in the *Solution Checker* ruleset
 **Request**
 
 ```http
-GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&api-version=1.0
-x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
+GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&api-version=2.0
+x-ms-correlation-id: aaaa0000-bb11-2222-33cc-444444dddddd
 Accept: application/json
 Content-Type: application/json; charset=utf-8
 Accept-Language: fr
@@ -123,7 +124,7 @@ This example returns data for all of the rules available.
 **Request**
 
 ```http
-GET [Geographical URI]/api/rule?api-version=1.0
+GET [Geographical URI]/api/rule?api-version=2.0
 Accept: application/json
 Content-Type: application/json; charset=utf-8
 ```
@@ -168,7 +169,7 @@ This example returns data for all of the rules in the *Solution Checker* ruleset
 **Request**
 
 ```http
-GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&includeMessageFormats=true&api-version=1.0
+GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&includeMessageFormats=true&api-version=2.0
 Accept: application/json
 Content-Type: application/json; charset=utf-8
 ```

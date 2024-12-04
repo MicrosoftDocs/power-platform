@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/13/2021
+ms.date: 10/31/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Remove and RemoveIf functions
@@ -44,10 +44,7 @@ You can also use the **[Clear](function-clear-collect-clearcollect.md)** functio
 
 ### Delegation
 
-When used with a data source, these functions cannot be delegated. Only the first portion of the data source will be retrieved and then the function applied.  This may not represent the complete story. A warning may appear at authoring time to remind you of this limitation.
-
-#### Delegation support (Experimental)
-Delegation support for RemoveIf is now in Experimental Preview (default OFF) for data sources that support it. If a data source doesn't support this feature, Power Apps will send a query to the server and retrieve all data that matches the filter expression up to the maxium of either 500, 2000, or the data page size. Then, it will perform a delete operation on each of those records with individual calls to the server. 
+RemoveIf is supported by only a few data sources. For data sources that don't upport this feature, Power Apps will query the server and retrieve all data matching the filter expression, up to a maximum of either 500 or 2000 records or the data page size. Subsequently, it will delete each of those records individually by making separate calls to the server.
 
 ## Syntax
 
@@ -81,7 +78,7 @@ To create a collection with this data:
 1. Insert a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control.
 1. Set button control's **OnSelect** property to the below formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( IceCream,
                  { ID: 1, Flavor: "Chocolate",  Quantity: 100 },
                  { ID: 2, Flavor: "Vanilla",    Quantity: 200 },
@@ -147,7 +144,7 @@ In this example, you'll remove an item by using a _button_ that is outside the g
 
 1. Set the **OnSelect** property for this button control to the following formula:
 
-   ```powerapps-dot
+   ```power-fx
    Remove( Contacts, Gallery1.Selected )
    ```
 
@@ -185,7 +182,7 @@ If you already have [prepared sample data](#prepare-for-sample-data), skip this 
 1. Add a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control to your screen.
 1. Set the **OnSelect** property to the following formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( SampleContacts,
          { 'Full Name': "Yvonne McKay (sample)",      'Primary Email': "someone_a@example.com" },
          { 'Full Name': "Susanna Stubberod (sample)", 'Primary Email': "someone_b@example.com" },
@@ -242,7 +239,7 @@ Sample collection is created that you can use in the following example.
 
 1. Select the **Icon** property for icon and set it to the following formula to update the icon image as trash icon:
 
-   ```powerapps-dot
+   ```power-fx
    Icon.Trash
    ```
 
@@ -253,12 +250,12 @@ Sample collection is created that you can use in the following example.
 
 1. Set the **OnSelect** property to the following formula:
 
-   ```powerapps-dot
+   ```power-fx
    Remove( [@Contacts], ThisItem )
    ```
 
    > [!NOTE]
-   > You must use [global disambiguation operator](operators.md#disambiguation-operator) **[@**...**]** in this example with sample data that uses the _Contacts_ table to avoid conflict with a _One-to-Many_ relationship. If you use data sources such as a list or a SQL Server table, using _global disambgulation operator_ is not required.
+   > You must use [global disambiguation operator](operators.md#disambiguation-operator) **[@**...**]** in this example with sample data that uses the _Contacts_ table to avoid conflict with a _One-to-Many_ relationship. If you use data sources such as a list or a SQL Server table, using _global disambiguation operator_ is not required.
 
    ![OnSelect for trash icon.](media/function-remove-removeif/gallery-onselect.png)
 

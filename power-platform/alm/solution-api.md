@@ -484,7 +484,7 @@ public void DependencyReport(Dependency dependency)
       requiredComponentTypeName = opt.Label.UserLocalizedLabel.Label;
      }
     }
- // The name or display name of the compoent is retrieved in different ways depending on the component type
+ // The name or display name of the component is retrieved in different ways depending on the component type
     dependentComponentName = getComponentName(dependency.DependentComponentType.Value, (Guid)dependency.DependentComponentObjectId);
     requiredComponentName = getComponentName(dependency.RequiredComponentType.Value, (Guid)dependency.RequiredComponentObjectId);
 

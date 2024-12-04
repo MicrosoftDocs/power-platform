@@ -6,9 +6,9 @@ author: Mattp123
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 09/11/2020
+ms.date: 05/23/2024
 ms.reviewer: ""
-
+ms.topic: conceptual
 search.audienceType: 
   - maker
 ---
@@ -29,7 +29,7 @@ one work effort being checked in before it's completed. Separate development env
 Every organization is unique, so carefully consider
 what your organization's environment needs are.
 
-### Development environments 
+## Development environments 
 
 You should answer questions such as:
 
@@ -40,7 +40,7 @@ You should answer questions such as:
 -   What are the dependencies on my environments? 
     - More information: [Multiple solution layering and dependencies](organize-solutions.md#multiple-solution-layering-and-dependencies)
 
-### Other environments 
+## Other environments 
 
 You should also answer the question, "Which types of non-development environments do I need?"
 
@@ -51,20 +51,20 @@ should include using a test environment prior to deploying anything to the produ
 environment. This ensures that you have a place to test your app, but also
 ensures that the deployment itself can be tested. 
 
-More information: [Establishing an environment strategy for Microsoft Power Platform](../guidance/adoption/environment-strategy.md)
+More information: [Establishing an environment strategy for Microsoft Power Platform](../guidance/white-papers/environment-strategy.md)
 
 ## Multi-geographical considerations
 
 Power Platform environments follow a specific service update schedule as environments are updated across the world. There are six stations in total that are primarily defined by geographical location.  Service updates are applied in sequence for each station. So, station 2 service updates are applied before station 3. Therefore, it’s common for environments that are in different stations to have different versions at a certain point in time. For more information about the environment service update schedule, go to [Released versions of Microsoft Dataverse](/dynamics365/released-versions/Microsoft-Dataverse)
 
-### Solution import and environment version
+## Solution import and environment version
 
 When you have multiple environments in different regions, it’s important to understand the following when you import a solution:
 
 - You *can* import a solution into an environment that is a newer version than the environment where the solution was exported. 
 - You *can’t* reliably import a solution into an environment that’s an older version than the environment where the solution was exported. This is because there might be missing components or required functionality in the older environment.
 
-#### Example of successfully aligning environments with service update stations
+### Example of successfully aligning environments with service update stations
 
 Imagine that you have production environments in Canada and the United States. In that case, your development environments should be in North America (station 5) and not in Canada (station 2). Then, your development environments will always be the same or an earlier version than your production environments, which will curtail solution import version conflicts.
 :::image type="content" source="media/environment-version-import.png" border="false" alt-text="Correct service update station environment alignment for successful solution import ":::

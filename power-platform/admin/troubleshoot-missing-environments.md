@@ -1,16 +1,19 @@
 ---
-title: "Troubleshoot missing environments"
+title: Troubleshoot missing environments
 description: "Learn how to update a record’s owner, an Owning Business Unit, or both an Owner and Owning Business Unit because the record changes ownership."
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/03/2022
+ms.date: 12/03/2024
 ms.subservice: admin
 author: davidme-ms
 ms.author: davidme 
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+  - jordanchodakWork
 ---
+
 # Troubleshoot missing environments
 
 It’s not uncommon for an administrator or a maker to expect to find an environment in the environment list and discover that one or more environments is “missing” from the list. This can occur in the Power Platform admin center, in the Power Apps maker portal, or in the Power Automate portal. Each of these experiences has different requirements for inclusion of environments in the list. The set of environments a given user will see in the list in the context of each of these experiences will vary. 
@@ -34,8 +37,8 @@ This table lays out the unique requirements that must be met for an environment 
 
 |Product experience   |Inclusion rules   |
 |---------|---------|
-|Power Platform admin center environment list      | Users must have administrative access to the environment for the environment to show up in the main Power Platform admin center environment list (System Administrator role in Dataverse, Environment Admin role for environments without Dataverse). Microsoft Entra Global admins, Power Platform admins, delegated admins, and authorized service principals will see all environments in the tenant. Dynamics 365 admins are limited to seeing environments in which they're a member of the environment security group, if one has been applied.         |
-|Power Apps maker portal environment list      | The environment list in the Power Apps maker portal includes all environments in which the user has been assigned the Environment maker role plus any environments in which the user has maker permission to one or more apps. **Note**: Assignment of the Environment Administrator role doesn't cause the environment to be included in the environment list in the maker portal.         |
+|Power Platform admin center environment list      | Users must have administrative access to the environment for the environment to show up in the main Power Platform admin center environment list (System Administrator role in Dataverse, Environment Admin role for environments without Dataverse). Power Platform admins, delegated admins, and authorized service principals will see all environments in the tenant. Dynamics 365 admins are limited to seeing environments in which they're a member of the environment security group, if one has been applied.         |
+|Power Apps maker portal environment list      | The environment list in the Power Apps maker portal includes all environments in which the user has been assigned the Environment Maker role plus any environments in which the user has maker permission to one or more apps. **Note**: Assignment of the Environment Administrator role or any custom role doesn't cause the environment to be included in the environment list in the maker portal.         |
 |Power Automate portal environment list      | The Power Automate portal includes environments in which the user has any built-in security role plus any environments in which the user is a co-owner of one or more flows.         |
 
 > [!NOTE]
@@ -43,7 +46,7 @@ This table lays out the unique requirements that must be met for an environment 
 
 ## Troubleshooting steps 
 
-The troubleshooting steps should be carried out by an administrator of the environment with access to the environment in the Power Platform admin center, or by a user who is a member of the Global administrator or Power Platform administrator directory roles. 
+The troubleshooting steps should be carried out by an administrator of the environment with access to the environment in the Power Platform admin center, or by a user who is a member of the Power Platform administrator directory role. 
 
 ### Sync delays 
 
@@ -59,13 +62,13 @@ To ensure the admin center loads quickly for tenants with many environments, the
 
 If users that are members of the tenant-level administrator directory roles aren't able to see the environment in the admin center, then you should first check whether the environment has been deleted. If it was recently deleted, an administrator can initiate a [recover environment](recover-environment.md) operation. 
 
-If the environment hasn't been deleted and still doesn’t show up in the admin center for users that are Global admins or Power Platform admins, then you may need to create a [support request](get-help-support.md) for further diagnostics and remediation steps. Be sure to provide the three key pieces of information as noted in the [Prerequisites section](#prerequisites) above.  
+If the environment hasn't been deleted and still doesn’t show up in the admin center for users that are Power Platform admins, then you may need to create a [support request](get-help-support.md) for further diagnostics and remediation steps. Be sure to provide the three key pieces of information as noted in the [Prerequisites section](#prerequisites) above.  
 
 ### Check role assignments of the user 
 
 The most common reason for environments to not show up in the list is a missing [role assignment](assign-security-roles.md). Compare the roles assigned to the user with the requirements in the [Requirements table](#requirements-for-access-by-product-experience) above. 
 
-In Dataverse environments, the role may be assigned directly to the user or indirectly via an assignment of the role to an [Microsoft Entra group team](manage-teams.md). 
+In Dataverse environments, the role may be assigned directly to the user or indirectly via an assignment of the role to a [Microsoft Entra group team](manage-teams.md). 
 
 > [!NOTE]
 > Role assignments made via Dataverse owner teams will not cause an environment to be included in the environment list. Do not attempt to use owner teams for this purpose. 
@@ -76,14 +79,14 @@ This step only applies to environments with a Dataverse database. Many of the sa
 
 Common issues that may be identified by this step include: 
 
-1. The user is [not a member of the environment security group](troubleshooting-user-needs-read-write-access-organization.md#user-isnt-a-member-of-the-environments-security-group). 
+1. The user is [not a member of the environment security group](troubleshooting-user-needs-read-write-access-organization.md). 
 2. The user is missing from the environment, or the user record in Dataverse is out of sync with Microsoft Entra ID, and so the user may need to be [explicitly added by an administrator](add-users-to-environment.md). 
 
 ## Special notes about developer, trial, and support environment types 
 
 This section only applies to developer, trial, and support environments with a Dataverse database.
 
-Global administrators and Power Platform administrators have administrative access to all environments in the tenant in the Power Platform admin center. However, the developer, trial, and support environment types have special user sync behavior such that only the initial user is added to the SystemUsers table in Dataverse. This may mean that further administrators need to be [explicitly added to the environment](add-users-to-environment.md) in order for them to have complete access to all administrative functions. A common example is using management connectors to access the environment. 
+Power Platform administrators have administrative access to all environments in the tenant in the Power Platform admin center. However, the developer, trial, and support environment types have special user sync behavior such that only the initial user is added to the SystemUsers table in Dataverse. This may mean that further administrators need to be [explicitly added to the environment](add-users-to-environment.md) in order for them to have complete access to all administrative functions. A common example is using management connectors to access the environment. 
 
 ## Getting help 
 

@@ -2,7 +2,7 @@
 title: "SolutionPackager tool (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files." # 115-145 characters including spaces. This abstract displays in the search result.
 ms.custom: ""
-ms.date: 05/12/2023
+ms.date: 05/01/2024
 ms.reviewer: "pehecke"
 
 ms.topic: "article"
@@ -15,8 +15,11 @@ search.audienceType:
 # SolutionPackager tool
 
 SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files and other files. You can then easily manage these files by using a source control system. The following sections show you how to run the tool and how to use the tool with managed and unmanaged solutions.  
+
+> [!IMPORTANT]
+> The SolutionPackager tool is no longer the recommended way to unpack and pack solutions.  The capabilities of the SolutionPackager tool have been incorporated into the [Power Platform CLI](../developer/cli/introduction.md).  The [`pac solution`](../developer/cli/reference/solution.md) command has a number of verbs including [`unpack`](../developer/cli/reference/solution.md#pac-solution-unpack), [`pack`](../developer/cli/reference/solution.md#pac-solution-pack), [`clone`](../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../developer/cli/reference/solution.md#pac-solution-sync) that incorporate the same underlying capabilities of the SolutionPackager tool.
   
-<a name="bkm_where"></a>   
+<a name="bkm_where"></a>
 
 ## Where to find the SolutionPackager tool  
 
@@ -26,9 +29,9 @@ SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse c
 1. Rename the package filename extension from \.nupkg to \.zip.
 1. Extract the contents of the compressed (zip) file.
 
-You will find the SolutionPackager.exe executable in the \<extracted-folder-name\>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
+Find the SolutionPackager.exe executable in the \<extracted-folder-name\>/contents/bin/coretools folder. Run the program from the coretools folder or add that folder to your PATH.
   
-<a name="arguments"></a>   
+<a name="arguments"></a>
 
 ## SolutionPackager command-line arguments  
 
@@ -39,9 +42,9 @@ You will find the SolutionPackager.exe executable in the \<extracted-folder-name
 |/action: {Extract&#124;Pack}|Required. The action to perform. The action can be either to extract a solution .zip file to a folder, or to pack a folder into a .zip file.|  
 |/zipfile: \<file path>|Required. The path and name of a solution .zip file. When extracting, the file must exist and be readable. When packing, the file is replaced.|  
 |/folder: \<folder path>|Required. The path to a folder. When extracting, this folder is created and populated with component files. When packing, this folder must already exist and contain previously extracted component files.|  
-|/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. This argument may be omitted in most occasions because the package type can be read from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files are produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this topic.|  
+|/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. This argument may be omitted in most occasions because the package type can be read from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files are produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this article.|  
 |/allowWrite:{Yes&#124;No}|Optional. The default value is Yes. This argument is used only during an extraction. When /allowWrite:No is specified, the tool performs all operations but is prevented from writing or deleting any files. The extract operation can be safely assessed without overwriting or deleting any existing files.|  
-|/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. This argument is used only during an extraction. When /allowDelete:Yes is specified, any files present in the folder specified by the /folder parameter that are not expected are automatically deleted. When /allowDelete:No is specified, no deletes occur. When /allowDelete:Prompt is specified, the user is prompted through the console to allow or deny all delete operations. If /allowWrite:No is specified, no deletes occur even if /allowDelete:Yes is also specified.|  
+|/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. This argument is used only during an extraction. When /allowDelete:Yes is specified, any files present in the folder specified by the /folder parameter that aren't expected are automatically deleted. When /allowDelete:No is specified, no deletes occur. When /allowDelete:Prompt is specified, the user is prompted through the console to allow or deny all delete operations. If /allowWrite:No is specified, no deletes occur even if /allowDelete:Yes is also specified.|  
 |/clobber|Optional. This argument is used only during an extraction. When /clobber is specified, files that have the read-only attribute set are overwritten or deleted. When not specified, files with the read-only attribute aren’t overwritten or deleted.|  
 |/errorlevel: {Off&#124;Error&#124;Warning&#124;Info&#124;Verbose}|Optional. The default value is Info. This argument indicates the level of logging information to output.|  
 |/map: \<file path>|Optional. The path and name of an .xml file containing file mapping directives. When used during an extraction, files typically read from inside the folder specified by the /folder parameter are read from alternate locations as specified in the mapping file. During a pack operation, files that match the directives aren’t written.|  
@@ -49,9 +52,9 @@ You will find the SolutionPackager.exe executable in the \<extracted-folder-name
 |/log: \<file path>|Optional. A path and name to a log file. If the file already exists, new logging information is appended to the file.|  
 |@ \<file path>|Optional. A path and name to a file that contains command-line arguments for the tool.|  
 |/sourceLoc: \<string>|Optional. This argument generates a template resource file, and is valid only on extract.<br /><br /> Possible values are `auto` or an LCID/ISO code for the language you want to export. When this argument is used, the string resources from the given locale are extracted as a neutral .resx file. If `auto` or just the long or short form of the switch is specified, the base locale or the solution is used. You can use the short form of the command: /src.|  
-|/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. More information: [Using RESX web resources](/dynamics365/customerengagement/on-premises/developer/resx-web-resources#using-resx-web-resources)|  
+|/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. More information: [Using RESX web resources](/power-apps/developer/model-driven-apps/resx-web-resources)|  
   
-<a name="use_command"></a>   
+<a name="use_command"></a>
 
 ## Use the /map command argument  
 
@@ -67,13 +70,13 @@ Files that are built in an automated build system, such as \.xap Silverlight fil
   
 - Environment variables may be specified by using a %variable% syntax.  
   
-- A folder wildcard “**” may be used to mean “in any sub-folder”. It can only be used as the final part of a path, for example: “c:\folderA\\\*\*”.  
+- A folder wildcard “**” may be used to mean "in any subfolder". It can only be used as the final part of a path, for example: “c:\folderA\\\*\*”.  
   
 - File name wildcards may be used only in the forms “*.ext” or “\*.\*”. No other pattern is supported.  
   
   The three types of directives mappings are described here, along with an example that shows you how to use them.  
   
-<a name="Folder_mapping"></a>   
+<a name="Folder_mapping"></a>
 
 ### Folder mapping  
 
@@ -101,7 +104,7 @@ File paths that match “folderA” are switched to “folderB”.
   <Folder map="WebResources\subFolder" to="%base%\WebResources" />  
   ```  
   
-<a name="file_mapping"></a>   
+<a name="file_mapping"></a>
 
 ### File To file mapping  
 
@@ -113,13 +116,13 @@ The following information provides more details on file-to-file mapping.
   
 **Description**
 
-Any file matching the `map` parameter will be read from the name and path specified in the `to` parameter.  
+Any file matching the `map` parameter is read from the name and path specified in the `to` parameter.  
   
  For the `map` parameter:  
   
 - A file name must be specified. The path is optional. If no path is specified, files from any folder may be matched.  
   
-- File name wildcards are not supported.  
+- File name wildcards aren't supported.  
   
 - The folder wildcard is supported.  
   
@@ -129,7 +132,7 @@ Any file matching the `map` parameter will be read from the name and path specif
   
 - The file name may differ from the name in the `map` parameter.  
   
-- File name wildcards are not supported.  
+- File name wildcards aren't supported.  
   
 - The folder wildcard is supported.  
   
@@ -145,10 +148,11 @@ Any file matching the `map` parameter will be read from the name and path specif
   <FileToFile
     map="pluginpackages\cr886_PluginPackageTest\package\cr886_PluginPackageTest.nupkg"
     to="myplg\bin\Debug\myplg.1.0.0.nupkg" /> 
-``` 
-Note that in the above NuGet package example, cr886_PluginPackageTest.nupkg is not overwritten if the file already exists in the specified location.
+```
+
+In the above NuGet package example, cr886_PluginPackageTest.nupkg is not overwritten if the file already exists in the specified location.
   
-<a name="file_path_mapping"></a>   
+<a name="file_path_mapping"></a>
 
 ### File to path mapping  
 
@@ -159,7 +163,7 @@ The following provides detailed information on file-to-path mapping.
 `<FileToPath map="path\filename.ext" to="path" />`  
   
 **Description**  
- 
+
 Any file matching the `map` parameter is read from the path specified in the `to` parameter.  
   
 For the `map` parameter:  
@@ -187,9 +191,10 @@ For the `to` parameter:
   <FileToPath map="*.*" to="..\..\%ARCH%\%TYPE%\drop" />  
 ```  
   
-<a name="Example_mapping"></a>   
+<a name="Example_mapping"></a>
 
 ### Example mapping  
+
 The following XML code sample shows a complete mapping file that enables the SolutionPackager tool to read any web resource and the two default generated assemblies from a Developer Toolkit project named CRMDevTookitSample.  
   
 ```xml  
@@ -198,13 +203,13 @@ The following XML code sample shows a complete mapping file that enables the Sol
        <!-- Match specific named files to an alternate folder -->  
        <FileToFile map="CRMDevTookitSamplePlugins.dll" to="..\..\Plugins\bin\**\CRMDevTookitSample.plugins.dll" />  
        <FileToFile map="CRMDevTookitSampleWorkflow.dll" to="..\..\Workflow\bin\**\CRMDevTookitSample.Workflow.dll" />  
-       <!-- Match any file in and under WebResources to an alternate set of sub-folders -->  
+       <!-- Match any file in and under WebResources to an alternate set of subfolders -->  
        <FileToPath map="WebResources\*.*" to="..\..\CrmPackage\WebResources\**" />  
        <FileToPath map="WebResources\**\*.*" to="..\..\CrmPackage\WebResources\**" />  
 </Mapping>  
 ```  
   
-<a name="managed"></a>   
+<a name="managed"></a>
 
 ## Managed and unmanaged solutions  
 
@@ -267,8 +272,8 @@ If you use Visual Studio to edit resource files created by the solution packager
    This allows the solution packager to read and import the resource file. This problem has only been observed when using the Visual Studio Resource editor.  
   
 ### See also  
- [Use Source Control with Solution Files](use-source-control-solution-files.md)<br/>   
- [Solution concepts](solution-concepts-alm.md)
 
+ [Use Source Control with Solution Files](use-source-control-solution-files.md)<br/>
+ [Solution concepts](solution-concepts-alm.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

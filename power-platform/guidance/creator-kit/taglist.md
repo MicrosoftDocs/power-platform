@@ -52,7 +52,7 @@ Each item uses the following schema to visualize data in the component.
 
 Example:
 
-  ```powerapps-dot
+  ```power-fx
 Table(
     {
     	ItemDisplayName: "Power Apps",

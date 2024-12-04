@@ -5,9 +5,9 @@ author: manuelap-msft
 
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 10/31/2021
+ms.date: 06/13/2024
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -46,18 +46,18 @@ The following sections present detailed characteristics and capabilities of an o
 | Level | State of Admin and Governance |
 |----------|-----------|
 | 100: Initial | <ul><li>Environments are creatable by all</li><li>No data loss prevention policies (DLP)</li></ul> |
-| 200: Repeatable | <ul><li>[Power Platform service admin](../../admin/overview-role-powerapps-admin.md) role assigned to specific administrators</li><li>Default environment covered by [DLP controls](../../admin/wp-data-loss-prevention.md)</a></li><li>Tenant Isolation configured</li><li>[CoE Starter Kit - Core Module](../coe/core-components.md) adopted to gain tenant-wide insights of existing usage</li></ul> |
-| 300: Defined | <ul><li>[Defined environment, DLP, and request management strategies](environment-strategy.md)</li><li>[Monitoring of app usage](resource-usage.md) and adoption</li><li>[Monitoring of new connectors](new-connectors.md), to update DLP policies</li><li>[License, capacity, and consumption monitoring](capacity-and-licenses.md) informs decision making</li><li>[Tiered approach to productivity environments](environment-strategy.md) based on maker maturity</li><li>Custom environments are used for specific use cases and ALM scenarios</li></ul> |
+| 200: Repeatable | <ul><li>[Power Platform service admin](../../admin/overview-role-powerapps-admin.md) role assigned to specific administrators</li><li>Default environment covered by [DLP controls](../../admin/wp-data-loss-prevention.md)</a></li><li>Tenant Isolation is configured</li><li>[CoE Starter Kit - Core Module](../coe/core-components.md) adopted to gain tenant-wide insights of existing usage</li></ul> |
+| 300: Defined | <ul><li>[Defined environment, DLP, and request management strategies](../white-papers/environment-strategy.md)</li><li>[Monitoring of app usage](resource-usage.md) and adoption</li><li>[Monitoring of new connectors](new-connectors.md), to update DLP policies</li><li>[License, capacity, and consumption monitoring](capacity-and-licenses.md) informs decision making</li><li>[Tiered approach to productivity environments](../white-papers/environment-strategy.md) based on maker maturity</li><li>Custom environments are used for specific use cases and Application Lifecycle Management (ALM) scenarios</li></ul> |
 | 400: Capable | <ul><li>Overshared, unused, and orphaned resources are identified and appropriate actions are taken</li><li>Reactive governance to automatically gather business and compliance information</li><li>[CoE Starter Kit - Governance Module](../coe/governance-components.md) adopted to gain compliance insights and archive resources</li><li>Telemetry helps identify business-critical apps</li><li>Power Platform Operations team looks after tenant hygiene</li><li>Maker responsibilities are clearly defined and understood and automatically communicated</li></ul> |
-| 500: Efficient | <ul><li>Further automation takes place through chatbots embedded in Teams &#8211; through clear risk profiles, tasks are auto-approved or routed through multi-step approval processes (for example, line manager, information security department, environment or tenant admin)</li><li>Practices that worked in their organization are shared externally at Microsoft or  community events</li></ul> |
+| 500: Efficient | <ul><li>Further automation takes place through chatbots embedded in Teams &#8211; through clear risk profiles, tasks are auto-approved or routed through multi-step approval processes (for example, line manager, information security department, environment, or tenant admin)</li><li>Practices that worked in their organization are shared externally at Microsoft or  community events</li></ul> |
 
 ## Support
 
 | Level | State of Support |
 |----------|-----------|
-| 100: Initial | <ul><li>Makers support their own apps</li><li>No or limited rules on how processes should be supported by IT and business stakeholders</li></ul> |
+| 100: Initial | <ul><li>Makers support their own apps</li><li>No or limited rules on how processes are supported by IT and business stakeholders</li></ul> |
 | 200: Repeatable | <ul><li>Community support</li><li>Some degree of commitment and governance measures to manage solution lifecycle stages</li></ul>|
-| 300: Defined | <ul><li>Support strategy involves Helpdesk</li><li>Defined risk profile dictates the level of support a solution will receive (for example, IT supported, IT blessed, maker supported)</li></ul> |
+| 300: Defined | <ul><li>Support strategy involves Helpdesk</li><li>Defined risk profile dictates the level of support a solution receives (for example, IT supported, IT blessed, maker supported)</li></ul> |
 | 400: Capable | <ul><li>Dedicated support team</li><li>Continuous improvement plans in line with business strategy</li><li>Clearly understood roles and responsibilities</li></ul>|
 | 500: Efficient |<ul><li>Automation of support activities (for example, change ownership, bot for FAQ)</li><li>Responsibilities and ownership to build and operate solutions are fully understood</li></ul> |
 
@@ -66,7 +66,7 @@ The following sections present detailed characteristics and capabilities of an o
 | Level | State of Nurture and Citizen Makers |
 |----------|-----------|
 | 100: Initial | <ul><li>Some staff may have attended App in a Day events (Partner or Microsoft delivered)</li><li>Team-based initiatives for nurturing makers</li></ul> |
-| 200: Repeatable | <ul><li>[On-boarding strategy](onboard-makers.md) for new makers</li><li>Some staff have participated in a [hackathon](hackathons.md)</li><li>Makers become ambassadors across their departments and evangelize the capabilities</li></ul>|
+| 200: Repeatable | <ul><li>[On-boarding strategy](onboard-makers.md) for new makers</li><li>Some staff participated in a [hackathon](hackathons.md)</li><li>Makers become ambassadors across their departments and evangelize the capabilities</li></ul>|
 | 300: Defined |<ul><li>Makers provide insights into business pain points</li><li>[Training and upskilling](training-strategy.md) strategy for makers</li><li>Internal [champions](champions.md) community</li><li>[CoE Starter Kit - Nurture Module](../coe/nurture-components.md) adopted</li></ul> |
 | 400: Capable |<ul><li>Regular events for champions</li><li>Regular hackathons</li><li>Maker assessments and certificates</li><li>Sharing and celebrating [success stories](show-and-tell.md)</li><li>Show &amp; Tell sessions</li><li>Adoption campaign</li></ul> |
 | 500: Efficient |<ul><li>Large internal community with proven value</li><li>Career path for makers</li><li>Community of mentors</li><li>Common development strategy and goals for citizen and pro developers</li></ul> |
@@ -98,7 +98,7 @@ The following sections present detailed characteristics and capabilities of an o
 
 Successful Power Platform adoption involves making effective processes, support, tools, and data available to makers and users.
 
-A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage is not the only factor. Adoption is not just about using the technology regularly; it's about using it *effectively*. Effectiveness is much harder to define and measure.
+A common misconception is that adoption relates primarily to usage or the number of users. There's no question that usage statistics are an important factor. However, usage isn't the only factor. Adoption isn't just about using the technology regularly; it's about using it *effectively*. Effectiveness is harder to define and measure.
 
 Whenever possible, adoption efforts should be aligned across low-code platforms, and other Power Platform products, such as Power BI.
 
@@ -114,30 +114,30 @@ The intended audience of the adoption maturity model is interested in one or mor
 - Understanding and overcoming adoption-related challenges faced when scaling Power Platform.
 - Increasing their organization's return on investment (ROI) in Power Platform.
 
-Primarily, this series of articles will be helpful to those who work in an organization with one or more of the following characteristics:
+Primarily, this series of articles are helpful to those who work in an organization with one or more of the following characteristics:
 
 - Power Platform is deployed with some successes.
-- Power Platform has pockets of viral adoption, but is not purposefully governed across the entire organization.
+- Power Platform has pockets of viral adoption, but isn't purposefully governed across the entire organization.
 - Power Platform is deployed with some meaningful scale, but there remains a need to determine:
   - What is effective and what should be maintained?
   - What should be improved?
   - How future deployments could be more strategic.
 - Expanded adoption of Power Platform is under consideration or is planned.
 
-Secondarily, this series of articles will be helpful for:
+Secondarily, this series of articles are helpful for:
 
 - Organizations that are in the early stages of a Power Platform adoption.
 - Organizations that have had success with adoption and now want to evaluate their current maturity level.
 
 ## Assumptions and scope
 
-The primary focus of this series of articles is on the Power Platform technology platform, with an emphasis on Power Apps, Power Automate, Power Virtual Agents, and Microsoft Dataverse.
+The primary focus of this series of articles is on the Power Platform technology platform, with an emphasis on Power Apps, Power Automate, Microsoft Copilot Studio, and Microsoft Dataverse.
 
 For information about Power BI adoption, see the [Power BI adoption roadmap](/power-bi/guidance/powerbi-adoption-roadmap-overview).
 
 ## Next steps
 
-In the articles in this series, learn about the Power Platform adoption maturity levels. The maturity levels are referenced throughout the entire series of articles. Also, see the conclusion article for additional adoption-related resources.
+In the articles in this series, learn about the Power Platform adoption maturity levels. The maturity levels are referenced throughout the entire series of articles. Also, see the conclusion article for more adoption-related resources.
 
 Other helpful resources include:
 

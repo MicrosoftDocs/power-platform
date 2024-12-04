@@ -1,6 +1,6 @@
 ---
-title: "Set up other core components | MicrosoftDocs"
-description: "Setup instructions for how to set up other parts of the core admin components solution of the CoE Starter Kit"
+title: "Set up other core components"
+description: "Learn how to set up other parts of the core admin components solution of the Microsoft CoE Starter Kit."
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -8,28 +8,33 @@ ms.topic: conceptual
 ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
 # Set up other core components
 
-This article will help you to setup the remaining components in the Core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting**, making apps discoverable in an **app catalog** and **welcoming new makers**.
+This article helps you set up the remaining components in the core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting**, making apps discoverable in an **app catalog** and **welcoming new makers**.
 
->[!IMPORTANT]
->Complete the instructions in [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) before continuing with the setup here. This article assumes you have your [environment set up](setup.md#create-your-environments) and are logged in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+## Prerequisites
+
+1. Complete the [Before setting up the CoE Starter Kit](setup.md) and [Set up inventory components](setup-core-components.md) steps.
+1. [Set up your environment](setup.md#create-your-environments).
+1. Sign in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 ## Set up other core components using the Setup Wizard (preview)
 
 1. Open the **Center of Excellence - Core Components** solution.
 1. Open the **CoE Setup and Upgrade Wizard** app.
 1. Open the **More features** page and select **Capacity alerts and Welcome email**.
-1. This app provides a guided step by step experience through the configuration steps.
- :::image type="content" source="media/setupwizard-other.png" alt-text="CoE Starter Kit Setup Wizard":::
 
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
+This app provides a guided step by step experience through the configuration steps.
+
+:::image type="content" source="media/setupwizard-other.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard for other core components." lightbox="media/setupwizard-other.png":::
+
+> [!NOTE]
+> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
 
 ## Set up other core components manually
 
@@ -37,40 +42,38 @@ This article will help you to setup the remaining components in the Core solutio
 
 [Update environment variables](faq.md#update-environment-variables) used by these components:
 
-| Name | Description |
-|------|---------------|
-|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams). It is needed for the flow: Admin \| Welcome Email v3. See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)  |
+The **Community URL** lets you link to your internal Microsoft Power Platform community, for example Yammer or Teams. You need the URL for the flow: Admin: Welcome Email v3. For more information, see [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users).
 
 ### Turn on flows
 
-There are several flows which will need to be turned on for these components:  
+There are several flows which need to be turned on for these components:  
 
-- [Admin | Capacity Alerts](core-components.md#flows-2)
-- [Admin | Add-Ons Alerts](core-components.md#flows-2)
-- [Admin | Welcome Email v3](core-components.md#flows-2)
-- [App Catalog > Request Access](core-components.md#flows-2)
+- [Admin: Capacity Alerts](core-components.md)
+- [Admin: Add-Ons Alerts](core-components.md)
+- [Admin: Welcome Email v3](core-components.md)
+- [App Catalog > Request Access](core-components.md)
 
->[!IMPORTANT]
-> The [Admin | Welcome Email v3](core-components.md#flows-2) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. See: See: [How will you communicate with your admins, makers and end users?](setup.md#how-will-you-communicate-with-your-admins-makers-and-users)
+> [!IMPORTANT]
+> The [Admin | Welcome Email v3](core-components.md) flow automatically adds new makers to the [Power Platform Maker Microsoft 365 Group](setup-core-components.md#all-environment-variables) environment variable. For more information, see: [How to communicate with your admins, makers, and end users](setup.md#how-to-communicate-with-your-admins-makers-and-users).
 
 ### Share apps with admins and makers
 
-Share the **CoE Maker Command Center** with your makers and assign them the **Power Platform Maker SR**.
-Share the [**App Catalog**](core-components.md#app-catalog) with your end users and assign them the **Power Platform User SR**.
+You can share these apps with makers or end users, then assign them the **Power Platform Maker SR** security role.
 
-More information:
+- The **CoE Maker Command Center** for makers.
+- The [**App Catalog**](core-components.md#app-catalog) for end users.
 
-- [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment)
+For more information, see [Share a canvas app in Power Apps](faq.md#share-an-app-from-a-production-environment).
 
 ## All environment variables
 
-Here is the full list of environment variables that impact other components. You may have to [update environment variables](faq.md#update-environment-variables) after import.
+This environment variable affects other components:
 
-| Name | Description | Default Value |
-|------|---------------|------|
-|Community URL  | Link to your internal Microsoft Power Platform community (for example, Yammer or Teams)  | n/a|
+`Community URL`: Allows you to link to your internal Microsoft Power Platform community, for example Yammer or Teams. There's no default option for this variable.
 
-## It looks like I found a bug with the CoE Starter Kit; where should I go?
+You might need to [update environment variables](faq.md#update-environment-variables) after import.
+
+## I found a bug with the CoE Starter Kit. Where should I go?
 
 To file a bug against the solution, go to [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
 

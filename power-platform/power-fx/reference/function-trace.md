@@ -6,7 +6,7 @@ author: mduelae
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 01/19/2023
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Trace function
@@ -40,7 +40,7 @@ When used with [Test Studio](/power-apps/maker/canvas-apps/test-studio), **Trace
 
 1. Create a button control in Power Apps Studio.
 2. Set the **OnSelect** formula to the formula:
-  ```powerapps-dot
+  ```power-fx
   Set( x, x+1 );
   Trace( x );
   ```

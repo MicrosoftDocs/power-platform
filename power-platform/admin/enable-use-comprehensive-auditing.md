@@ -3,10 +3,10 @@ title: "Microsoft Dataverse and model-driven apps activity logging  | MicrosoftD
 description: Learn how to enable auditing to be used for reports in the Microsoft 365 Security Compliance Center.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/06/2023
-author: StephenRauchPM
+ms.date: 01/25/2024
+author: Zeffin
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: johnev
 ms.reviewer: sericks 
 search.audienceType: 
   - admin
@@ -123,9 +123,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 
 When [audit log search](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) is turned on in the Microsoft Purview compliance portal, user and admin activity from your organization is recorded in the audit log and retained for 90 days. However, your organization might not want to record and retain audit log data. Or you might be using a third-party security information and event management (SIEM) application to access your auditing data. In those cases, a global admin can turn off audit log search in Microsoft Purview. For more information, see [Auditing solutions in Microsoft Purview](/microsoft-365/compliance/auditing-solutions-overview).
 
-To use the preconfigured reports, go to https://protection.office.com > **Search & investigation** > **Audit log search** and select the **Dynamics 365 activities** tab.
-
-![Audit log reports.](media/D365-audit-log-reports.png "Audit log reports")
+To search for records in [Microsoft Purview compliance portal](https://compliance.microsoft.com/), choose **Record type** as **CRM**, and  **Activities** as **All Dynamics 365 activities**.
 
 ## Create reports
 You can create your own reports to review your audit data. See [Search the audit log in the Purview compliance portal](https://support.office.com/article/search-the-audit-log-in-the-office-365-security-compliance-center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
@@ -193,11 +191,11 @@ The following are some examples of logs created with Activity Logging.
 |    ClientIP     |                                                   131.107.XXX.XX                                                    |
 |    Operation    |                                                      Retrieve                                                       |
 |      Date       |                                                3/2/2018 11:25:56 PM                                                 |
-|    EntityId     |                                        0a0d8709-711e-e811-a952-000d3a732d76                                         |
+|    EntityId     |                                        00aa00aa-bb11-cc22-dd33-44ee44ee44ee                                         |
 |   EntityName    |                                                       Account                                                       |
 |      Query      |                                                         N/A                                                         |
 |  QueryResults   |                                                         N/A                                                         |
-|     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=0a0d8709-711e-e811-a952-000d3a732d76` |
+|     ItemURL     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee` |
 
 ### Example 2 – Logs generated when user sees Account records in a Grid (Export to Microsoft Excel logs are like this) 
 
@@ -211,7 +209,7 @@ The following are some examples of logs created with Activity Logging.
 |EntityId     |N/A         |
 |EntityName     |Account          |
 |Query     |\<filter type="and">\<condition column="ownerid" operator="eq-userid" />\<condition column="statecode" operator="eq" value="0" />\</filter>         |
-|QueryResults     |0a0d8709-711e-e811-a952-000d3a732d76, dc136b61-6c1e-e811-a952-000d3a732d76        |
+|QueryResults     |00aa00aa-bb11-cc22-dd33-44ee44ee44ee, dc136b61-6c1e-e811-a952-000d3a732d76        |
 |ItemURL     |N/A        |
 
 ### Example 3 – List of messages logged when user converts a lead to opportunity 

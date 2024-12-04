@@ -1,11 +1,11 @@
 ---
-title: View your workspace in Project “Sophia”
-description: Learn how to navigate a workspace in Project “Sophia".
+title: View your workspace in Project "Sophia"
+description: Learn how to navigate a workspace in Project "Sophia."
 author: mikkelsen2000
-ms.topic: Overview
+ms.topic: overview
 ms.custom: 
 ms.reviewer: mkaur
-ms.date: 10/31/2023
+ms.date: 3/20/2024
 ms.service: power-platform
 ms.author: pemikkel
 search.audienceType:

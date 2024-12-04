@@ -1,30 +1,23 @@
 ---
-title: "View and manage on-premises data gateways (preview) | MicrosoftDocs"
+title: "View and manage on-premises data gateways | MicrosoftDocs"
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/18/2022
+ms.date: 05/22/2024
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 
-# On-premises data gateway management (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# On-premises data gateway management
 
 The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. More information: [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem)
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is being gradually rolled out across regions and might not be available yet in your region.
-
 > [!NOTE]
-> The gateway and data source management feature in the Power Platform admin center isn’t supported on mobile or smaller screens with a resolution lower or equal to 320x256. 
+> The gateway management feature in the Power Platform admin center isn’t supported on mobile or smaller screens with a resolution lower or equal to 320 x 256. 
 
 On the **Data** page of the [Power Platform admin center](https://admin.powerplatform.microsoft.com), you can view and manage on-premises data gateways.
 
@@ -110,9 +103,6 @@ For on-premises data gateways in standard mode, users can be added in any of the
 > - **Can Use** and **Can use + share** do not apply to custom connectors in Power Apps and Power Automate.
 > - The gateway must be shared with the **Admin** permission level to be used by custom connectors.
 
-> [!div class="mx-imgBorder"] 
-> ![Manage users.](media/manage-gateway-users.png "Manage users")
-
 ## Remove a gateway cluster
 
 Use **Remove** to remove a gateway cluster. This operation is available for data gateways in standard mode as well as personal mode.
@@ -174,21 +164,12 @@ As either a Microsoft Entra Global administrator (which includes Global admins) 
 
 4. Enable **Restrict Users in your organization from installing gateways**. This option is off by default, allowing anyone in your organization to install a gateway.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Enable restrict users.](media/manage-gateway-installers-turn-on.png "Enable restrict users")
-
 5. Add users who can install gateways, and then select **Add**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Add users.](media/manage-gateway-installers-add-users.png "Add users")
 
    > [!NOTE]
    > Currently, we do not support groups for Manage Installers; you can add individual users. 
 
 6. To remove users who have permission to install gateways, select **Remove installer** (![Remove installer.](media/nb-ua-r1-trashbin.png)), and then select **Confirm**.
-
-   > [!div class="mx-imgBorder"] 
-   > ![Remove user.](media/remove-installer.png "Remove user")
 
    > [!NOTE]
    > This does not impact gateways that are already installed. This feature only allows or restricts users from installing gateways going forward.

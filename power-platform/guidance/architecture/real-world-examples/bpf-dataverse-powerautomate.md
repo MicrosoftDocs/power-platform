@@ -7,7 +7,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021
 ms.author: mehdis
-ms.reviewer: kvivek
+ms.reviewer: sericks
   
 ---
 
@@ -29,7 +29,7 @@ For experiences that require a custom user experience, Microsoft Dataverse offer
 To render a business process flow within a canvas app, you can make use of a "codeless" custom connector that implements some key Dataverse APIs related to business process flow functionality. A codeless custom connector is a connector in which we only need to use the OpenAPI specification that lines up with the underlying Dataverse API service, without building the service itself. 
 
 
-:::image type="complex" source="./media/BPF_3.png" alt-text="Example of a Employee onboarding Business Process Flow integrated in a Power Apps Canvas app.":::
+:::image type="complex" source="./media/BPF_3.png" alt-text="Example of an Employee onboarding Business Process Flow integrated in a Power Apps Canvas app.":::
     The landing screen of the employee onboarding app shows a list of employees as well as the current status of the corresponding business process. In the detail view screen, you can see a timeline representing all the stages of the process with the completed stages highlighted. The detail view also shows required and optional fields of the current stage as well as a button to advance to the next stage once the form is filed. 
 
 :::image-end:::

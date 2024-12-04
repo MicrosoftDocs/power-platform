@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,7 @@ The SAP Vendor Management app is part of the SAP Procurement solution for Micros
 
  Watch the demo to see how you can manage your SAP vendor data using the SAP Vendor Management app.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18F9g]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18F9g]
 
 ## View vendor information
 
@@ -34,13 +34,13 @@ You can load existing vendor information three different ways:
 
 - Select a recent vendor from a dropdown list.
 - Search for a vendor.
-- Enter a known vendor number.
+- Enter a known vendor payment number.
 
 :::image type="content" source="media/vendor-management/sap-procure-vendors-ed.png" alt-text="Image of Microsoft's SAP Procurement vendor app for Power Platform.":::
 
 ### Select a vendor invoice
 
-You can select a recently viewed vendor from the *Select recent vendor* drop-down list. Choose a *vendor* from the list to load that vendor's record onto your screen.
+You can select a recently viewed vendor from the _Select recent vendor_ drop-down list. Choose a vendor from the list to load that vendor's record onto your screen.
 
 ### Search for a vendor
 
@@ -55,16 +55,16 @@ You can search for a vendor using known search criteria.
       - State
    :::image type="content" source="media/vendor-management/vendor-search.png" alt-text="Search for a vendor screen.":::
   1. Select **Search** to see your results.
-  1. Select the *vendor* you want to view from the list of results.
-  1. Select the *vendor number* to load the vendor's information from SAP to your screen.  If the list is too long, you can filter it to narrow the results by typing data from any field into *Filter vendors*.
+  1. Select the _vendor_ you want to view from the list of results.
+  1. Select the _vendor number_ to load the vendor's information from SAP to your screen.  If the list is too long, you can filter it to narrow the results by typing data from any field into _Filter vendors_.
 
-### Enter a vendor number
+### Enter a vendor payment number
 
-You can enter a known vendor number into the *Search vendor number* field and select the **arrow** to retrieve the vendor record from SAP and display the information on your screen.
+You can enter a known vendor number into the _Search vendor number_ field and select the **arrow** to retrieve the vendor record from SAP and display the information on your screen.
 
 ## Update vendor information
 
-Once an existing vendor record is loaded to the app, making changes is straightforward. Select the **Edit** button to toggle into *Change* mode.
+Once an existing vendor record is loaded to the app, making changes is straightforward. Select the **Edit** button to toggle into _Change_ mode.
 
 ### Edit the header
 
@@ -76,7 +76,7 @@ Header information can be edited directly on the main page.
 
 1. Select **Done** to return to the main page with the updates or **Cancel** to return with no changes.
 
-1. Select **+ Add** to initiate the creation of a new assignment. Once a row is selected with the checkbox, the *X Delete* button appears. That allows for the assignment to be flagged as deleted in SAP.
+1. Select **+ Add** to initiate the creation of a new assignment. Once a row is selected with the checkbox, the _X Delete_ button appears. That allows for the assignment to be flagged as deleted in SAP.
 
 > [!NOTE]
 >
@@ -84,14 +84,14 @@ Header information can be edited directly on the main page.
 
 ### Edit phone numbers and email addresses
 
-Phone numbers and email addresses can be maintained in similar fashion to the purchasing organization and company code assignments, with *Edit*, *+ Add*, and *X Delete* options available for each entry.
+Phone numbers and email addresses can be maintained in similar fashion to the purchasing organization and company code assignments, with _Edit_, _+ Add_, and _X Delete_ options available for each entry.
 
 ### Save or cancel
 
 Once the changes are complete, you can select either **Save** or **Cancel**.
 
-- *Save* results in the call of standard functions for *vendor update* in SAP and you'll see the updated vendor record load on to the page from SAP.
-- *Cancel* discards all changes and the original vendor data is restored to the state.
+- _Save_ results in the call of standard functions for _vendor update_ in SAP and you'll see the updated vendor record load on to the page from SAP.
+- _Cancel_ discards all changes and the original vendor data is restored to the state.
 
 ## Create a vendor
 
@@ -109,14 +109,14 @@ Each purchasing organization and company code assignment is added individually. 
 
 ### Add phone numbers and email addresses
 
-Phone numbers and email addresses can be added in similar fashion to the purchasing organization and company code assignments, with *Edit*, *+ Add* and *X Delete* options available for each entry.
+Phone numbers and email addresses can be added in similar fashion to the purchasing organization and company code assignments, with _Edit_, _+ Add_ and _X Delete_ options available for each entry.
 
 ### Save or cancel changes
 
 Once the changes are complete, you can select either the **Save** or **Cancel** button located at the top of the screen.
 
-- *Save* results in the call of standard functions for *vendor creation* in SAP and you will see the saved vendor record load on to the page from SAP.
-- *Cancel* discards all changes and the original data is restored to its initial state.
+- _Save_ results in the call of standard functions for _vendor creation_ in SAP and you will see the saved vendor record load on to the page from SAP.
+- _Cancel_ discards all changes and the original data is restored to its initial state.
 
 ## Field mappings
 
@@ -160,7 +160,7 @@ The tables provide vendor screen to function module field mappings.
 
 | Segment | Field | Label                  | Comment               |
 |---------|-------|------------------------|-----------------------|
-| E1LFA1M | LIFNR | Vendor                 | Blank during *Create* |
+| E1LFA1M | LIFNR | Vendor                 | Blank during _Create_ |
 | E1LFA1M | KTOKK | AccountGroup           |                       |
 | E1LFA1M | LAND1 | Country                |                       |
 | E1LFA1M | NAME1 | VendorName             |                       |
@@ -170,13 +170,13 @@ The tables provide vendor screen to function module field mappings.
 | E1LFA1M | STRAS | Street                 |                       |
 | E1LFB1M | MSGFN | CrudType               |                       |
 | E1LFB1M | BUKRS | CompanyCode            |                       |
-| E1LFB1M | LOEVM | CrudType               | *X* for Delete        |
+| E1LFB1M | LOEVM | CrudType               | _X_ for Delete        |
 | E1LFB1M | AKONT | GLAccount              |                       |
 | E1LFB1M | ZWELS | PaymentMethods         |                       |
 | E1LFB1M | ZTERM | PaymentTerms           |                       |
 | E1LFM1M | MSGFN | CrudType               |                       |
 | E1LFM1M | EKORG | PurchasingOrganization |                       |
-| E1LFM1M | LOEVM | CrudType               | *X* for Delete        |
+| E1LFM1M | LOEVM | CrudType               | _X_ for Delete        |
 | E1LFM1M | WAERS | Currency               |                       |
 | E1LFM1M | ZTERM | PaymentTerms           |                       |
 | E1LFM1M | EKGRP | PurchasingGroup        |                       |
@@ -194,11 +194,11 @@ The tables provide vendor screen to function module field mappings.
 | BAPIADTEL  | STD_NO     | Default   |
 | BAPIADTEL  | CONSNUMBER | ID        |
 
-## See also
+### See also
 
-[SAP Vendor Management app](vendor-management.md)
-[SAP Requisition Management app](requisition-management.md)
-[SAP Purchase Order Management app](purchase-order-management.md)
-[SAP Goods Receipt Management app](goods-receipt-management.md)
-[SAP Vendor Invoice Management app](vendor-invoice-management.md)
-[SAP Vendor Payment management app](payment-management.md)
+- [SAP Vendor Management app](vendor-management.md)
+- [SAP Requisition Management app](requisition-management.md)
+- [SAP Purchase Order Management app](purchase-order-management.md)
+- [SAP Goods Receipt Management app](goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](vendor-invoice-management.md)
+- [SAP Vendor Payment management app](payment-management.md)

@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 05/25/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Launch and Param functions
@@ -26,21 +26,25 @@ Launches a webpage or a canvas app and provides access to launch parameters.
 
 Launches a webpage or a canvas app. The function supports:
 
-- **Address** (required), the URL of the webpage or App ID of the canvas app.
+- **Address** (required), the URL of the webpage of the canvas app.
 - **Parameters** (optional), named values to pass to the webpage or canvas app. In a canvas app, parameters can be read with the [**Param**](#param) function.
 - **Target** (optional), the browser tab in which to launch the webpage or canvas app.
 
 **Launch** can only be used in [behavior formulas](/power-apps/maker/canvas-apps/working-with-formulas-in-depth).
 
+>[!NOTE]
+> If the Launch formula is used to open Power Apps and the app isn't visible to the end user, it's recommended to check if the app is blocked by a browser pop-up blocker or if the browser is wait for the user's response to a dialog box that asks whether they want to navigate to a new screen.
+
+
 ### Address
 
 Webpages are launched via a URL address. For example:
 
-```powerapps-dot
+```power-fx
 Launch( "https://bing.com" )
 ```
 
-You can launch canvas apps with **Web link** or **App ID**. To find these values for an app:
+You can launch canvas apps with **Web link** or **App URI** (app id prefixed with `/providers/Microsoft.PowerApps/apps/`). To find these values for an app:
 
 1. Go to [Power Apps](https://make.powerapps.com).
 1. Select **Apps** from left navigation pane.
@@ -49,16 +53,16 @@ You can launch canvas apps with **Web link** or **App ID**. To find these values
 
    ![App details option.](media/function-param/portal-details.png "App details option")
 
-1. Copy **Web link** or **App ID**.
+1. Copy **Web link**.
 
    ![App details with web link and app id.](media/function-param/portal-links.png "App details with web link and app id")
 
-The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function.
+The **Web link** can be used in any web page and will launch the canvas app. It can also be used with the **Launch** function. For example:
 
-The **App ID** can be used with the **Launch** function, but must be prefixed with `/providers/Microsoft.PowerApps/apps/`. For example:
 
-```powerapps-dot
-Launch( "/providers/Microsoft.PowerApps/apps/f342faaf-5f82-4ace-a64b-7c1b01499231" )
+```power-fx
+Launch( "https://apps.powerapps.com/e/{environment id}/a/{app id}?tenantId={tenantId}" )
+
 ```
 
 Native apps on a device can't be launched directly. There may be indirect options available on some platforms, such as a native app installing a custom URL scheme or registering with the web browser to offer an option for specific web sites.
@@ -69,13 +73,13 @@ Native apps on a device can't be launched directly. There may be indirect option
 
 - An argument list of name value pairs. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", "q", "Power Apps", "count", 1 )
   ```
 
 - A record of field values. For example:
 
-  ```powerapps-dot
+  ```power-fx
   Launch( "https://bing.com/search", { q: "Power Apps", count: 1 } )
   ```
 
@@ -84,6 +88,8 @@ Native apps on a device can't be launched directly. There may be indirect option
 The address and parameters are URL encoded before being passed to replace certain non-alphanumeric characters with `%` and a hexadecimal number as if the [**EncodeUrl**](function-encode-decode.md) function has been used on each.
 
 When launching a webpage, a [query string](https://en.wikipedia.org/wiki/Query_string) of parameters can be included at the end of the URL address. Any additional parameters provided to **Launch** will be added to the end of the query string. Query strings don't work when launching a canvas app.
+
+When launching an app on a mobile device where that app is already running, parameters will not be refreshed in the running app. An app reload is required for parameters to be refreshed.
 
 ### Target
 
@@ -109,6 +115,7 @@ The **Param** function retrieves a parameter passed to the app when it was launc
 - When launching a canvas app from a web page, add parameters to the [query string](https://en.wikipedia.org/wiki/Query_string) of the [canvas app web link](#address). This involves adding `&parametername=parametervalue` assuming the query string has already been started for the `tenantId`. For example, adding `&First%20Name=Vicki&category=3` would pass two parameters: `First Name` with a value of `"Vicki"` and `category` with a value of `"3"` (value type is _text_). The parameter name and value must be URL encoded if they contain spaces or special characters, similar to using the [**EncodeURL**](function-encode-decode.md) function.
 - Param names are case-sensitive.
 - Param names and values will be automatically URL decoded for use in your app.
+- Parameter values do not change unless the app is reloaded. Using **Launch** on a mobile device where the app is already running does not refresh the parameters.
 - Even if the parameter contains a number, the type returned by **Param** will always be a text string. Conversion to other types will automatically occur or use explicit conversions such as the [**Value**](function-value.md) function to convert explicitly to a number.
 
 >[!NOTE]
@@ -203,7 +210,7 @@ The following keywords are reserved (regardless of case) for internal use, and s
 
 Update the app ID, screen name, and record number as appropriate.
 
-```powerapps-dot
+```power-fx
 Launch( "/providers/Microsoft.PowerApps/apps/YOUR-APP-ID",
         { Navigate: "Second Screen", Record: 34 }
 )
@@ -217,7 +224,7 @@ Update the app ID, tenant ID, screen name, and record number as appropriate.
 <html>
   <body>
     <a
-      href="https://apps.powerapps.com/play/YOUR-APP-ID?tenantId=YOUR-TENANT-ID&Navigate=Second%20Screen&Record=34"
+      href="https://apps.powerapps.com/play/e/YOUR-APP-ENVIRONMENT-ID/a/YOUR-APP-ID?tenantId=YOUR-TENANT-ID&Navigate=Second%20Screen&Record=34"
     >
       Launch canvas app
     </a>

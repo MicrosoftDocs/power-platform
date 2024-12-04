@@ -1,15 +1,18 @@
 ---
-title: "Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365 | MicrosoftDocs"
+title: Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365 
 description: This article covers information on how customers can review and approve (or reject) data access requests in the rare occasion when data access to customer data is needed.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/10/2023
+ms.date: 11/19/2024
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+ms.collection: bap-ai-copilot
+contributors:
+- kavehkazms 
 ---
 # Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365
 
@@ -17,23 +20,26 @@ Most operations, support, and troubleshooting performed by Microsoft personnel (
 
 This article covers how to enable Customer Lockbox and how lockbox requests are initiated, tracked, and stored for later reviews and audits.
 
+> [!Note]
+> Customer Lockbox is available in public clouds and US Government Community Cloud (GCC), GCC High, and Department of Defense (DoD) regions.
+
 ## Summary
 
-You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Global administrators and Power Platform administrators can enable the lockbox policy.
+You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox will enforce the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Power Platform administrators can enable the lockbox policy.
 
 For more information, go to [Enable the lockbox policy](#enable-the-lockbox-policy).
 
-In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (for example, Dataverse), a lockbox request is sent to the Global administrators and Power Platform administrators for approval. For more information, go to [Review a lockbox request](#review-a-lockbox-request).
+In the rare occasion when Microsoft attempts to access customer data that's stored within Power Platform (for example, Dataverse), a lockbox request is sent to the Power Platform administrators for approval. For more information, go to [Review a lockbox request](#review-a-lockbox-request).
 
 All updates to a lockbox request are recorded and made available to your organization as audit logs. For more information, go to [Audit lockbox requests](#audit-lockbox-requests).
 
 Power Platform and Dynamics 365 applications and services store customer data in several Azure storage technologies. When you turn on Customer Lockbox for an environment, customer data associated with the respective environment is protected by the lockbox policy, irrespective of the storage type.  
 
 > [!NOTE]
->
-> - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Power Virtual Agents (excluding GPT AI features), Dataverse, Customer Insights, Customer Service, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
+> - Currently, the applications and services where lockbox policy is going to be enforced once enabled are Power Apps (excluding Cards for Power Apps), AI Builder, Power Pages, Power Automate, Microsoft Copilot Studio (excluding GPT AI features and Agent Builder), Dataverse, Customer Insights, Customer Service, Communities, Guides, Connected Spaces, Finance (except Lifecycle Services), Project Operations (except Lifecycle Services), Supply Chain Management (except Lifecycle Services), and the real-time marketing feature area of the Marketing app.
 > - Features powered by Azure OpenAI Service are excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies.
 > - Nuance Conversational IVR is excluded from Lockbox policy enforcement unless product documentation for a given feature states that Lockbox applies. 
+> - [Maker Welcome Content](welcome-content.md) is excluded from Lockbox policy enforcement.
 > - You must disable Lucene.NET search from your website and move to Dataverse Search to be able to use Customer Lockbox. More information: [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
 ## Workflow
@@ -42,7 +48,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 2. A Microsoft operator reviews the support request/event and attempts to troubleshoot the issue by using standard tools and telemetry. If access to customer data is needed for further troubleshooting, a Microsoft engineer triggers an internal approval process for access to customer data, irrespective of lockbox policy being enabled or not.
 
-3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy enablement. An email notification is sent to the designated approvers (Global administrators and Power Platform administrators) about the pending data access request from Microsoft.  
+3. In addition, a lockbox request is generated if the respective data store is associated with an environment protected according to the lockbox policy enablement. An email notification is sent to the designated approvers (Power Platform administrators) about the pending data access request from Microsoft.  
 
    > [!IMPORTANT]
    > The Microsoft engineer won’t be able to proceed with their investigation until the lockbox request is approved by the customer. This could cause delays in addressing the support ticket or prolonged outages. Make sure you monitor email notifications and/or lockbox requests in the Power Platform admin center and respond in a timely manner to avoid service interruptions.
@@ -55,7 +61,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 ## Enable the lockbox policy
 
-Global administrators or Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox.
+Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy will apply only to environments that are activated for [Managed Environments](managed-environment-enable.md). It may take up to 24 hours for all data sources and all environments to be implemented with Customer Lockbox.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. Use the Tenant settings page to review and manage tenant-level settings. To view tenant-level settings, select the **Gear** icon (![Gear icon.](media/selection-rule-gear-button.png)) in the upper-right corner of the Microsoft Power Platform site and select **Power Platform settings** > **Settings** > **Tenant settings** in the left-side navigation pane.
@@ -94,6 +100,9 @@ Global administrators or Power Platform administrators can create or update the 
 
 ## Audit lockbox requests
 
+> [!Warning]
+> The schema documented in this section for the lockbox audit events is deprecated and won't be available starting in July 2024. You can audit Customer Lockbox events using the new schema available at [Activity category: Lockbox operations](admin-activity-logging.md#activity-category-lockbox-operations).
+
 Actions related to accepting, denying, or expiration of a lockbox request are recorded automatically in [Microsoft 365 Defender](https://security.microsoft.com/homepage).  
 
 :::image type="content" source="media/lockbox-defender.png" alt-text="Microsoft 365 Defender page.":::
@@ -117,8 +126,6 @@ The Microsoft 365 **Audit** tab allows admins to search for events associated wi
 
 Admins can directly export the result set based on the filter criteria.
 
-:::image type="content" source="media/lockbox-audit-search-results.png" alt-text="Lockbox audit search results.":::
-
 Customer Lockbox produces two types of audit logs:
 1.	Logs that are initiated by Microsoft and correspond to lockbox request being created, expired, or when access sessions end. This set of audit logs do not correspond to a specific user ID since the actions are initiated by Microsoft.
 2.	Logs that are initiated by end user actions, such as when a user approves or denies a lockbox request. If the user that performs these operations does not have an E5 license assigned, the logs are filtered out and will not show up in the audit logs.
@@ -127,7 +134,7 @@ By default, the audit logs are preserved for a duration of one year. You need a 
 
 ## Licensing requirements for Customer Lockbox
 
-Customer Lockbox policy will be enforced only on environments that are activated for Managed Environments. Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+Customer Lockbox policy will be enforced only on environments that are activated for Managed Environments. Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamics 365 requires users in the environments where the Lockbox policy is enforced to have any of these subscriptions:
 
@@ -151,8 +158,6 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 - Customer Lockbox won't apply to the access and manual review of customer data shared for Copilot AI features. Customer Lockbox will remain enabled for all in-scope data. 
 
 ## Known issues
-
-- Customer Lockbox isn't available in sovereign clouds at this time.
 
 - Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
 

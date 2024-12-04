@@ -3,12 +3,14 @@ title: Managed Environments overview
 description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 05/28/2024
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: sericks
 contributors:
-  - ShawnNandiMSFT 
+  - ritesp 
+  - ShawnNandiMSFT
+  - AngelMarshall
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
@@ -18,12 +20,13 @@ search.audienceType:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
 
-Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks additional features across the Power Platform. 
+Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks more features across the Power Platform. 
 
-[Learn how to enable Managed Environments](managed-environment-enable.md).
+[Learn how to use Managed Environments](managed-environment-enable.md).
 
-A Managed Environment encompasses, but is not limited to, the following features: 
+A Managed Environment encompasses, but isn't limited to, the following features: 
 
+- [Environment groups](environment-groups.md)
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Weekly usage insights](managed-environment-usage-insights.md)
 - [Data policies](managed-environment-data-policies.md)
@@ -37,13 +40,14 @@ A Managed Environment encompasses, but is not limited to, the following features
 - [Extended backup](backup-restore-environments.md)
 - [DLP for desktop flow](/power-automate/prevent-data-loss)
 - [Export data to Azure Application Insights](overview-integration-application-insights.md)
-- [Catalog in Power Platform](../developer/catalog.md)
+- [Administer the catalog](administer-catalog.md)
 - [Default environment routing](default-environment-routing.md)
 - [Create an app description with Copilot](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
+- [Virtual Network support for Power Platform](vnet-support-overview.md)
   
 
 > [!NOTE]
-> Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+> Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 >
 > Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [About the Power Apps Developer Plan](../developer/plan.md).
 

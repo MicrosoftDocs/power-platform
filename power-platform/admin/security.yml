@@ -83,8 +83,6 @@ landingContent:
             url: wp-data-loss-prevention.md
           - text: Connector classification
             url: dlp-connector-classification.md
-          - text: Create a DLP Policy
-            url: create-dlp-policy.md
           - text: Manage DLP policies
             url: prevent-data-loss.md
        - linkListType: learn

@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,7 @@ The SAP Requisition Management app is part of the SAP Procurement solution for M
 
 Watch the demo to see how you can manage your SAP requisition data using the SAP Requisition Management app.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18CAe]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18CAe]
 
 ## View requisition data
 
@@ -163,10 +163,10 @@ The table provides requisition screen to function module field mappings.
 | Line (Default)   | REL_DATE                | PRITEM    | REL_DATE   | utcNow() Date                |
 | Header (Default) | Document Type           | PRHEADER  | PR_TYPE    | NB                           |
 
-## See also
+### See also
 
-[SAP Vendor Management app](vendor-management.md)
-[SAP Purchase Order Management app](purchase-order-management.md)
-[SAP Goods Receipt Management app](goods-receipt-management.md)
-[SAP Vendor Invoice Management app](vendor-invoice-management.md)
-[SAP Vendor Payment management app](payment-management.md)
+- [SAP Vendor Management app](vendor-management.md)
+- [SAP Purchase Order Management app](purchase-order-management.md)
+- [SAP Goods Receipt Management app](goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](vendor-invoice-management.md)
+- [SAP Vendor Payment management app](payment-management.md)

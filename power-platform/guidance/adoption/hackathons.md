@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -16,7 +16,7 @@ search.audienceType:
 
 A hackathon is a fun way to engage lots of people within your organization around a digital culture of change. The key objective is to develop sample apps and cultivate ideas to drive digital transformation. Teams come together, at the line of business or at the global scale, from different roles and departments to compete and create apps that address an organizational need. 
 
-The more variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Also, it might be worth starting the day with a review and demo of Power Apps, Power Automate, Power BI, Power Virtual Agents, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
+The more variety of skills and roles represented, the better. One or more facilitators should be involved in organizing the hackathon and defining the teams and the rules. Also, it might be worth starting the day with a review and demo of Power Apps, Power Automate, Power BI, Microsoft Copilot Studio, AI Builder, Microsoft Power Platform, and Microsoft Dataverse.
 
 A successful hackathon usually includes team colors, prizes, food, music, laughter, and competition.
 
@@ -69,7 +69,7 @@ Your hackathon can be one day or more, but we recommend planning your agenda upf
 
 Here’s a sample agenda:
 
-| | |
+| &nbsp; |  &nbsp;|
 |----|----|
 | 15 mins	| **Introduction and Welcome** |
 | 30 mins	| **Microsoft Power Platform Introduction**<br>Consider playing videos from Microsoft conferences, such as [Unleashing your organization’s creativity and innovation with a deep dive into Microsoft Power Platform](https://www.youtube.com/watch?v=2QJMP_Scvy8) or [Empower everyone in your organization to drive digital transformation with Microsoft Power Platform](https://www.youtube.com/watch?v=0P7wlxpDFII). You could also highlight some [customer stories](https://powerapps.microsoft.com/customer-stories/) for additional inspiration, especially if there is a public case study of a customer in the same or similar industry as your organization. |

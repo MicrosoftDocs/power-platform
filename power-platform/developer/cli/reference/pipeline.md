@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI pipeline command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI pipeline command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -43,10 +43,6 @@ Start pipeline deployment.
 
 Current solution version
 
-#### `--environment` `-env`
-
-Deployment Environment
-
 #### `--newVersion` `-nv`
 
 New solution version
@@ -61,6 +57,10 @@ Deployment Stage ID
 
 
 ### Optional Parameters for pipeline deploy
+
+#### `--environment` `-env`
+
+Deployment Environment
 
 #### `--wait` `-w`
 
@@ -78,6 +78,10 @@ List Pipelines
 
 
 ### Optional Parameters for pipeline list
+
+#### `--environment` `-env`
+
+Deployment Environment
 
 #### `--pipeline` `-p`
 

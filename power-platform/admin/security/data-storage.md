@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 03/20/2023
+ms.date: 10/02/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -29,11 +29,11 @@ First, it’s important to distinguish between *personal data* and *customer dat
 
 ## Data residency
 
-An Microsoft Entra tenant houses information that's relevant to an organization and its security. When an Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, except where organizations deploy services in multiple regions.
+A Microsoft Entra tenant houses information that's relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region is mapped to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, except where organizations deploy services in multiple regions.
 
 Some organizations have a global presence. For example, a business may be headquartered in the United States but do business in Australia. It may need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home geo. All metadata and product data in that environment is stored in the remote geo.
 
-Microsoft may replicate data to other regions for data resiliency. We don't replicate or move personal data outside the geo, however. Data replicated to other regions may include non-personal data such as employee authentication information.
+Microsoft may replicate data to other regions for data resiliency. We don't replicate or move personal data outside the geo, however. Data replicated to other regions may include nonpersonal data such as employee authentication information.
 
 Power Platform services are available in specific Azure geographies. For more information about where Power Platform services are available, where your data is stored, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments concerning the location of customer data at rest are specified in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](../regions-overview.md).
 
@@ -71,20 +71,26 @@ Microsoft manages the address prefixes encompassed by the service tag, and autom
 
 Power Platform has an extensive set of [Data Loss Prevention (DLP) features](../prevent-data-loss.md) to help you manage the security of your data.  
 
-### SAS IP Binding
+## Storage Shared Access Signature (SAS) IP restriction
 
-This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting will restrict who, based on IP, can use enterprise SAS tokens. 
+> [!NOTE]
+> Prior to activating either of these SAS features, customers must first allow access to the `https://*.api.powerplatformusercontent.com` domain or most SAS functionalities won't work.
 
-These settings can be found in a Dataverse environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
+This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting restricts who, based on IP (IPv4 and IPv6) can use enterprise SAS tokens. 
 
-Admins can enable one of these four configurations for this setting:
+These settings can be found in an environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
-| Setting                 | Description                                                                                                                    |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| IP Binding Only         | This will restrict SAS keys to the requester’s IP.                                                                             |
-| IP Firewall Only        | This will restrict using SAS keys to only work within an admin specified range.                                                |
-| IP Binding and Firewall | This will restrict using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
-| IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding will be applied |
+Admins can allow one of these four options for this setting:
+
+| Option | Setting                 | Description                                                                                                                    |
+|--------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 1      | IP Binding Only         | This restricts SAS keys to the requester’s IP.                                                                             |
+| 2      | IP Firewall Only        | This restricts using SAS keys to only work within an admin specified range.                                                |
+| 3      | IP Binding and Firewall | This restricts using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
+| 4      | IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding is applied. |
+
+> [!NOTE]
+> Admins who chose to allow IP Firewall (Option 2, 3, and 4 listed in the table above) must enter **both** the IPv4 and IPv6 ranges of their networks to ensure proper coverage of their users.
 
 #### Products enforcing IP Binding when enabled:
 - Dataverse
@@ -92,17 +98,98 @@ Admins can enable one of these four configurations for this setting:
 - Custom Connectors
 - Power Apps
 
-#### Impact on Power App experiences
-Note the following impact on users:
+#### Impact on the user experience
 
-- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: The following message is dispalyed: "This app stopped working. Try refreshing your browser." This experience will be updated to provide more contextual information to the user as to why the app couldn’t be launched.
+- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: Users get an error message citing a generic IP issue.
 
-- **When a user, who does meet the IP address restrictions, opens an app**: The following will occur:
+- **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
-  - A banner with the following message is displayed: “Your organization configured IP address restrictions limiting where Power Apps is accessible. This app may not be accessible when you use another network. Contact your admin for more details.” This banner appears for a few seconds and then disappears. 
-  - The app may load slower than if IP address restrictions weren’t in place. The IP address restrictions prevents the platform from using some performance capabilities that enable faster load times.
+  - Users may get a banner that will quickly disappear letting users know an IP setting has been set and to contact the admin for details or to refresh any pages that lose connection.
+  - More significantly, due to the IP validation that this security setting uses, some functionality may perform slower than if it was turned off.
 
-  If a user opens an app, while meeting the IP address requirements and then moves to a new network which no longer meets the IP address requirements, the user may observe app contents such as images, embedded media, and links may not load or be accessible. 
+
+#### Update settings programatically
+Admins can use automation to set and update both the IP binding vs firewall setting, the IP range that is allow-listed, and the **Logging** toggle. Learn more in [Tutorial: Create, update, and list Environment Management Settings](../programmability-tutorial-environmentmanagement-settings.md).
+
+### Logging of SAS calls
+This setting enables all SAS calls within Power Platform to be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
+
+| Field name                                   | Field description                                                                                              |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| response.status_message                      | Informing if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
+| response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                |
+| ip_binding_mode                              | IP binding mode set by a tenant admin, if turned on. Applies to SAS creation events only.                        |
+| admin_provided_ip_ranges                     | IP ranges set by a tenant admin, if any. Applies to SAS creation events only.                                  |
+| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS creation and usage events.                              |
+| analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
+| enduser.ip_address                           | The public IP of the caller.                                                                                   |
+| analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
+| request.service_request_id                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.     |
+| version                                      | Version of this log schema.                                                                                    |
+| type                                         | Generic response.                                                                                              |
+| analytics.activity.name                      | The type of activity this event was: Creation or Usage.                                                        |
+| analytics.activity.id                        | Unique ID of the record in Purview.                                                                            |
+| analytics.resource.organization.id           | Org ID                                                                                                         |
+| analytics.resource.environment.id            | Environment ID                                                                                                 |
+| analytics.resource.tenant.id                 | Tenant ID                                                                                                      |
+| enduser.id                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                       |
+| enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.     |
+| enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
+
+### Turn on Purview audit logging
+In order for the logs to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated in the Power Platform admin center by a **tenant admin**. 
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and log in with tenant admin credentials.
+1. In the left navigation pane, select **Environments**.
+1. Select the environment that you want to turn on admin logging for.
+1. Select **Settings** in the command bar.
+1. Select **Product** >  **Privacy + Security**. 
+1. Under **Storage Shared Access Signature (SAS) Security Settings (Preview)**, turn on the **Enable SAS Logging in Purview** feature.
+
+## Search audit logs
+Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in IP validation issues. Logs in Purview are the most reliable solution.
+
+Use the following steps to diagnose issues or better understand SAS usage patterns within your tenant.
+
+1. Make sure audit logging is turned on for the environment. See [Turn on Purview audit logging](#turn-on-purview-audit-logging).
+1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) and log in with tenant admin credentials.
+1. In the left navigation pane, select **Audit**. If this option isn't available to you, it means the logged-in user doesn't have admin access to query audit logs.
+1. Pick the date and time range in UTC for when you're trying to look for logs. For example, when a 403 Forbidden error with an **unauthorized_caller** error code was returned.
+1. From the **Activities - friendly names** dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
+1. Specify a keyword in **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
+    - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error returned to the user. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
+    - The value of **x-ms-sas-operation-id** response header. This filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the **powerplatform.analytics.resource.sas.operation_id** field.
+    - Full or partial SAS URI, minus the signature. This might return many SAS URI creations and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
+    - Caller IP address. Returns all creation and usage events for that IP.
+    - Environment ID. This might return a large set of data that can span across many different offerings of Power Platform, so avoid if possible or consider narrowing down the search window.
+
+    > [!WARNING]
+    > We don't recommended searching for User Principal Name or Object ID, as those are only propagated to creation events, not usage events.
+
+1. Select **Search** and wait for results to appear.
+
+    :::image type="content" source="media/purview-search.png" alt-text="A new search":::
+
+
+> [!WARNING]
+> Log ingestion into Purview can be delayed for up to an hour or more, so keep that in mind when looking for most recent events.
+
+### Troubleshooting 403 Forbidden/unauthorized_caller error
+You can use creation and usage logs to determine why a call would result in a 403 Forbidden error with an **unauthorized_caller** error code.
+
+1. Find logs in Purview as described in the previous section. Consider using either **x-ms-service-request-id** or **x-ms-sas-operation-id** from the response headers as the search keyword.
+1. Open the usage event, **Used SAS URI**, and look for the **powerplatform.analytics.resource.sas.computed_ip_filters** field under **PropertyCollection**. This IP range is what the SAS call uses to determine whether the request is authorized to proceed or not.
+1. Compare this value against the **IP Address** field of the log, which should be sufficient for determining why the request failed.
+1. If you think the value of **powerplatform.analytics.resource.sas.computed_ip_filters** is incorrect, continue with the next steps.
+1. Open the creation event, **Created SAS URI**, by searching using the **x-ms-sas-operation-id** response header value (or the value of **powerplatform.analytics.resource.sas.operation_id** field from the creation log).
+1. Get the value of **powerplatform.analytics.resource.sas.ip_binding_mode** field. If it's missing or empty, it means IP binding wasn't turned on for that environment at the time of that particular request.
+1. Get the value of **powerplatform.analytics.resource.sas.admin_provided_ip_ranges**. If it's missing or empty, it means IP firewall ranges weren't specified for that environment at the time of that particular request.
+1. Get the value of **powerplatform.analytics.resource.sas.computed_ip_filters**, which should be identical to the usage event and is derived based on IP binding mode and admin-provided IP firewall ranges. See the derivation logic in [Data storage and governance in Power Platform](data-storage.md#storage-shared-access-signature-sas-ip-restriction).
+
+This should give tenant admins enough information to correct any misconfiguration against the environment for IP binding settings.
+
+> [!WARNING]
+> Changes made to environment settings for SAS IP binding can take at least 30 minutes to take effect. It could be more if partner teams have their own cache.
 
 ### Related articles
 

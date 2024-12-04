@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 08/04/2021
 ms.subservice: guidance
 ms.author: demora
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

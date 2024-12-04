@@ -2,10 +2,10 @@
 title: "Microsoft Power Platform Build Tools for Azure DevOps | Microsoft Docs"
 description: "Learn about the ALM-related tools, APIs, and services that are available to developers when using Azure DevOps."
 keywords: 
-author: snizar007
+author: devkeydet
+ms.author: marcsc
 ms.subservice: alm
-ms.author: snizar
-ms.date: 09/25/2023
+ms.date: 10/07/2024
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -36,9 +36,9 @@ that teams commonly put in place include Initiate, Export from Dev, Build, and R
 
 ![ALM powered by Azure DevOps.](media/initiate-build-release.png "ALM powered by Azure DevOps")
 
-> [!NOTE] 
+> [!NOTE]
 > Microsoft Power Platform Build Tools are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
-> 
+>
 > Microsoft Power Platform Build Tools are now available for use in **GCC** and **GCC High** regions.
 
 ## What are Microsoft Power Platform Build Tools?
@@ -57,8 +57,7 @@ changes*. The build tasks can largely be categorized into four types:
 - Solution
 - Environment management
 
-For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md). 
-
+For more information about the available tasks, see [Microsoft Power Platform Build Tools tasks](devops-build-tool-tasks.md).
 
 ## What is Power Platform Build Tools version 2.0?
 
@@ -86,11 +85,11 @@ searching for "Power Platform".
 
 To interact with the Microsoft Power Platform environment, you must establish a connection so the build tool tasks can perform the required actions. Two types of connections are available:
 
-
 |Connection type|Description|
 |---------|---------|
-|Service principal and client secret (recommended)|Uses service principal based authentication and supports multi-factor authentication|
-|Username/password|A generic service connection with username and password. Doesn't support multi-factor authentication.|
+|Service Principal via Workload Identity Federation (recommended)|Uses service principal based authentication via federated credentials.  Recommended for tenants which require multi-factor authentication.|
+|Service principal and client secret|Uses service principal based authentication.|
+|Username/password|A generic service connection with username and password. Does not support users requring multi-factor authentication.|
 
 ## Configure service connections using a service principal
 
@@ -140,7 +139,6 @@ Use the information displayed to configure the Power Platform service connection
 > [!IMPORTANT]
 > Keep the client secret safe and secure. Once the command prompt is cleared, you cannot retrieve the same client secret again.
 
-
 ### Configure environment with the Application ID
 
 You must add the Application ID as an Application User in the Microsoft Power Platform environment you're connecting to. There are two ways you can do this.
@@ -169,7 +167,7 @@ Ensure that the added Application User has the system administrator role assigne
 
 **Do the Microsoft Power Platform Build Tools only work for Power Apps?**  
 
-*The build tools work for both canvas and model-driven apps, Power Virtual Agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
+*The build tools work for both canvas and model-driven apps, Microsoft CoPilot Studio virtual agents, UI Flows and traditional flows, AI Builder, custom connectors and dataflows, all of which can now be added to a solution. This list also includes customer engagement apps (Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation). Separate build tasks are available for Finance and Operations applications.*
 
 **I had previously installed the preview of the Build Tools - can I upgrade from the preview of Power Apps Build Tools to Power Platform Build Tools?**
 
@@ -193,7 +191,8 @@ Ensure that the added Application User has the system administrator role assigne
 
 ### See Also
 
-[Build tool tasks](devops-build-tool-tasks.md)   
-[Microsoft Power Platform Build Tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools)
+[Power Platform Build Tools for Azure DevOps release notes](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.PowerPlatform-BuildTools#release-notes)<br/>
+[Build tool tasks](devops-build-tool-tasks.md)<br/>
+[Microsoft Power Platform Build Tools labs](https://github.com/microsoft/PowerApps-Samples/tree/master/build-tools)<br/>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

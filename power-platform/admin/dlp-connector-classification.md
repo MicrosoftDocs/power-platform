@@ -4,11 +4,11 @@ description: About ways to categorize connectors within a DLP policy.
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/01/2023
+ms.date: 05/04/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -24,10 +24,10 @@ Data groups are a simple way to categorize connectors within a data loss prevent
 
 A good way to categorize connectors is to place them in groups based on the business-centered or personal-use-centered services that they connect to in the context of your organization. Connectors that host business-use data should be classified as **Business**, and connectors that host personal-use data should be classified as **Non-Business**. Any connectors that you want to keep from being used at all across one or more environments should be classified as **Blocked**.
 
-When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Create a data loss prevention (DLP) policy](create-dlp-policy.md). You can also change the initial classification of connectors by editing your DLP policy. More information: [Edit a DLP policy](prevent-data-loss.md#edit-a-dlp-policy)
+When a new policy is created, by default all connectors are placed in the **Non-Business** group. From there they can be moved to **Business** or **Blocked** based on your preference. You manage the connectors in a data group when you create or modify the properties of a DLP policy from the admin center. See [Manage data policies](prevent-data-loss.md). You can also change the initial classification of connectors by editing your DLP policy. More information: [Edit a data policy](prevent-data-loss.md#edit-a-data-policy)
 
 > [!NOTE]
-> Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When a HTTP request is received**. If legacy DLP policies are being updated by using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
+> Until recently, some HTTP connectors weren't readily available for DLP policy configuration by using the DLP policy UI or PowerShell. As of May 2020, the following HTTP connectors can now be classified by using the DLP policy UI and PowerShell, like any other Power Platform connector: **HTTP**, **HTTP Webhook**, and **When an HTTP request is received**. If legacy DLP policies are being updated by using the new DLP UI, a warning message will be displayed to admins indicating that these three HTTP connectors are now being added to the DLP purview and that they should ensure that these connectors are placed in the right DLP grouping.
 >
 > Because child flows share an internal dependency with the HTTP connector, the grouping that admins choose for HTTP connectors in a DLP policy might affect the ability to run child flows in that environment or tenant. Make sure your HTTP connectors are classified in the appropriate group for your child flows to function. If there are any concerns in classifying the connector as **Business** in shared environments such as the default environment, our advice is to classify it as **Non-Business** or to block it. Then, create dedicated environments where makers can use HTTP connectors, but restrict the maker list so that you can unblock makers from building child flows.
 >
@@ -61,12 +61,12 @@ The following connectors can't be blocked by using DLP policies.
 
 |Microsoft Enterprise Plan standard connectors | Core Power Platform connectors  |
 |---------|---------|
-|Defender for Cloud Apps      | Approvals        |
-|Dynamics 365 Customer Voice      | Notifications        |
-|Excel Online (Business)     | Dataverse       |
-|Kaizala       | Dataverse (current environment)        |
-|Microsoft 365 Groups      | Power Apps Notifications (v1 and v2)        |
-|Microsoft 365 Groups Mail (Preview)      |         |
+|Defender for Cloud Apps      | [Approvals](/connectors/approvals/)        |
+|Dynamics 365 Customer Voice      | [Notifications](/connectors/flowpush/)        |
+|Excel Online (Business)     | [Dataverse (legacy)](/connectors/commondataservice/)       |
+|Kaizala       | [Dataverse](/connectors/commondataserviceforapps/)        |
+|Microsoft 365 Groups      | Power Apps Notifications ([v1](/connectors/powerappsnotification/) and [v2](/connectors/powerappsnotificationv2/))        |
+|Microsoft 365 Groups Mail (Preview)      | [Microsoft Copilot Studio](/connectors/powervirtualagents/)        |
 |Microsoft 365 Outlook      |         |
 |Microsoft 365 Users      |         |
 |Microsoft Teams       |      |
@@ -134,8 +134,9 @@ Any new services that are added to apps will be placed in the designated default
 > [!NOTE]
 > Microsoft 365 Enterprise license connectors and a few core Microsoft Power Platform connectors are exempt from being marked as **Blocked**, and can only be classified as **Business** or **Non-Business**. If Microsoft adds any new connectors that can't be blocked and you've set the default group for the DLP policy as **Blocked**, these connectors will be automatically marked as **Non-Business** instead of **Blocked**.
 
+## Related information
 
-
-
+- [Power Platform DLP policies](/power-platform/admin/wp-data-loss-prevention)
+- [DLP policies for Power Automate](/power-automate/prevent-data-loss)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -26,6 +26,8 @@
               href: check-online-service-health.md
             - name: Enabling preview features
               href: what-are-preview-features-how-do-i-enable-them.md
+            - name: Use the new Power Platform admin center (preview)
+              href: new-admin-center.md
             - name: Requirements
               items:
                 - name: URLs and IP address ranges
@@ -52,7 +54,9 @@
               href: get-help-support.md
             - name: Support overview
               href: support-overview.md
-            - name: View known issues (preview)
+            - name: Use live chat with persistence
+              href: live-chat-support.md
+            - name: View known issues
               href: view-known-issues.md
             - name: Support environments and the consent process
               href: support-environment.md
@@ -70,17 +74,19 @@
           items:
             - name: Overview
               href: pricing-billing-skus.md
-            - name: About licensing and license management
-              href: wp-license-management.md
-            - name: View license consumption for Power Apps and Power Automate (preview)
-              href: view-license-consumption-issues.md
-            - name: View license consumption for finance and operations apps
-              href: view-license-consumption-finops-apps.md
-            - name: Manage licenses in your org
-              href: signup-question-and-answer.md
-            - name: Administer without a license
-              href: global-service-administrators-can-administer-without-license.md
-            - name: Power Apps
+            - name: License consumption and management
+              items:
+                - name: View license consumption for Power Apps and Power Automate (preview)
+                  href: view-license-consumption-issues.md
+                - name: View license consumption for finance and operations apps
+                  href: view-license-consumption-finops-apps.md
+                - name: Manage Copilot Studio messages and capacity
+                  href: manage-copilot-studio-messages-capacity.md
+                - name: View intelligent recommendations about licensing
+                  href: get-recommendations-licensing.md
+                - name: Administer without a license
+                  href: global-service-administrators-can-administer-without-license.md
+            - name: Power Apps licensing
               items:
                 - name: Purchase Power Apps
                   href: signup-for-powerapps-admin.md
@@ -88,26 +94,32 @@
                   href: /power-apps/user/request-license
                 - name: About Power Apps per app plans
                   href: about-powerapps-perapp.md
-                - name: Auto-claim policies for Power Apps licenses
+                - name: Autoclaim policies for Power Apps licenses
                   href: auto-claim-licensing.md
-            - name: Power Automate
+                - name: Power Apps licensing FAQs
+                  href: powerapps-licensing-faq.md
+                - name: Manage Power Apps licenses
+                  href: signup-question-and-answer.md
+            - name: Power Automate licensing
               items:
-                - name: Overview
-                  href: power-automate-licensing/overview.md
                 - name: Types of licenses
                   href: power-automate-licensing/types.md
-                - name: FAQs about licenses
-                  href: power-automate-licensing/faqs.md
-                - name: When premium flows are turned off due to license issues
-                  href: power-automate-licensing/when-flows-are-turned-off.md
-                - name: Buy Power Automate licenses
-                  href: power-automate-licensing/buy-licenses.md
-                - name: Add-ons
+                - name: Types of add-ons
                   href: power-automate-licensing/add-ons.md
-                - name: Request a Power Automate premium license
-                  href: power-automate-licensing/request-premium-license.md
-            - name: Power Platform licensing FAQs
-              href: powerapps-flow-licensing-faq.md
+                - name: Deep dive on specific licenses
+                  href: power-automate-licensing/deep-dive-on-specific-license.md
+                - name: Licensing FAQ
+                  href: power-automate-licensing/faqs.md
+                - name: Licensing management
+                  items:
+                    - name: When premium flows are subject to enforcement
+                      href: power-automate-licensing/when-flows-are-turned-off.md
+                    - name: Buy Power Automate licenses
+                      href: power-automate-licensing/buy-licenses.md
+                    - name: Request a Power Automate premium license
+                      href: power-automate-licensing/request-premium-license.md
+                    - name: Autoclaim policies for Power Automate licenses
+                      href: power-automate-licensing/power-automate-auto-claim.md
             - name: Pay-as-you-go plan
               items:
                 - name: Overview
@@ -120,8 +132,10 @@
                   href: pay-as-you-go-usage-costs.md
                 - name: Issues and frequently asked questions
                   href: pay-as-you-go-issues-faq.md
-            - name: Requests limits and allocations
+            - name: Power Platform requests limits
               href: api-request-limits-allocations.md
+            - name: Power Platform licensing FAQs
+              href: powerapps-flow-licensing-faq.md
         - name: Environments
           items:
             - name: Administer environments
@@ -174,13 +188,17 @@
                   href: admin-view-apps.md
                 - name: Language collations
                   href: language-collations.md
+                - name: Change the base currency
+                  href: change-base-currency-environment.md
             - name: Managed Environments
               items:
                 - name: Overview
                   href: managed-environment-overview.md
                 - name: Enable Managed Environments
                   href: managed-environment-enable.md
-                - name: Enable maker welcome content (preview)
+                - name: Environment groups
+                  href: environment-groups.md
+                - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Limit sharing
                   href: managed-environment-sharing-limits.md
@@ -192,20 +210,22 @@
                   href: managed-environment-solution-checker.md
                 - name: Licensing
                   href: managed-environment-licensing.md
-                - name: Block cookie replay attacks
+                - name: Safeguarding Dataverse sessions with IP cookie binding
                   href: block-cookie-replay-attack.md
-                - name: Configure IP firewall (preview)
+                - name: Configure IP firewall
                   href: ip-firewall.md
-                - name: Use Power Platform Advisor (preview)
+                - name: Use Power Platform Advisor
                   href: power-platform-advisor.md
             - name: Environment updates
-              items:
+              items: 
                 - name: Opt in to early access updates
                   href: opt-in-early-access-updates.md
                 - name: General availability deployment
                   href: general-availability-deployment.md
                 - name: "Manage maintenance window (preview)"
                   href: manage-maintenance-window.md
+            - name: Early release cycle environments
+              href: early-release.md
             - name: Environment settings
               items:
                 - name: Tenant settings
@@ -216,7 +236,7 @@
                   href: admin-settings.md
                 - name: Environment database settings
                   href: environment-database-settings.md
-                - name: Default environment routing (preview)
+                - name: Environment routing
                   href: default-environment-routing.md
                 - name: Product
                   items:
@@ -256,7 +276,7 @@
                       href: add-resources-site.md
                 - name: Users + permissions
                   items:
-                    - name: Create or edit business units (preview)
+                    - name: Create or edit business units 
                       href: create-edit-business-units.md
                     - name: Update record owner
                       href: update-record-owner.md
@@ -270,9 +290,9 @@
                       href: /dynamics365/mobile-app/setup-mobile-offline-for-admin
                     - name: Positions
                       href: hierarchy-security.md#position-hierarchy
-                    - name: Security roles
+                    - name: Security roles and privileges
                       href: security-roles-privileges.md
-                    - name: Teams
+                    - name: Create a team template to control access rights
                       href: create-team-template-add-entity-form.md
                     - name: Users
                       href: users-settings.md
@@ -289,9 +309,11 @@
                     - name: Audit summary view
                       href: manage-dataverse-auditing.md#use-the-audit-summary-view
                     - name: Entity and field audit settings
-                      href: manage-dataverse-auditing.md#enable-or-disable-entities-and-fields-for-auditing
+                      href: manage-dataverse-auditing.md#turn-on-or-off-auditing-for-entities-and-fields
                     - name: Audit security roles
                       href: audit-security-roles.md
+                    - name: Access audit data using Azure Synapse Link for Dataverse
+                      href: audit-data-azure-synapse-link.md
                     - name: System jobs
                       href: manage-dataverse-auditing.md#monitoring-system-jobs
                 - name: Templates
@@ -422,15 +444,15 @@
                       href: on-off-switch-for-learning-path-guided-help.md
             - name: Advanced environment operations
               items:
-                - name: Automatic environment cleanup
+                - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
-                - name: Dataverse for Teams environment cleanup
+                - name: Automatic deletion of inactive Dataverse for Teams environments
                   href: inactive-teams-environment.md
-                - name: Migrate environment
+                - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
-                - name: Geo to geo migrations
+                - name: Geo-to-geo migrations
                   href: geo-to-geo-migrations.md
-                - name: Power Platform Geos
+                - name: Power Platform geos
                   href: regions-overview.md
                 - name: Multiple online environments or tenants
                   href: multiple-online-environments-tenants.md
@@ -442,12 +464,42 @@
                   href: wp-task-automation-powershell.md
                 - name: Automation of tasks with Power Automate
                   href: wp-task-automation-flow.md
+        - name: Managed operations
+          items:
+            - name: Overview
+              href: operations/overview.md
+            - name: Monitor page (preview)
+              href: monitoring/monitoring-overview.md
+            - name: View logs (preview)
+              href: monitoring/logs.md
         - name: Security and governance
           items:
             - name: Security and governance
               href: security.yml
             - name: Overview of Power Platform security
               href: security/overview.md
+            - name: Managed security
+              href: security/managed-security.md
+            - name: Security page
+              items:
+              - name: Overview
+                href: security/security-overview.md
+              - name: Network security 
+                href: security/network-security.md
+              - name: Access control 
+                href: security/access-control.md
+              - name: Threat detection 
+                href: security/threat-detection.md
+              - name: Compliance 
+                href: security/compliance.md
+            - name: Manage Copilot
+              href: copilot/copilot-hub.md
+            - name: Power Platform managed identity
+              items:
+              - name: Managed identity overview (preview)
+                href: managed-identity-overview.md
+              - name: Set up managed identity (preview)
+                href: set-up-managed-identity.md
             - name: Authenticating to Power Platform services
               href: security/authenticate-services.md
             - name: Data storage and governance
@@ -474,6 +526,8 @@
                   href: block-forwarded-email-from-power-automate.md
                 - name: Continuous access evaluation (preview)
                   href: continuous-access-evaluation.md
+                - name: Control access of TDS endpoint
+                  href: control-tds-settings.md
                 - name: Configure environment security
                   items:
                     - name: Control user access to environments
@@ -482,40 +536,44 @@
                       href: cross-tenant-restrictions.md
                     - name: Content security policy
                       href: content-security-policy.md
-                - name: Data loss prevention policies
+                - name: Data policies
                   items:
                     - name: Overview
                       href: wp-data-loss-prevention.md
-                    - name: Create a DLP policy
-                      href: create-dlp-policy.md
-                    - name: Manage DLP policies
-                      href: prevent-data-loss.md
-                    - name: Data loss prevention SDK
-                      href: data-loss-prevention-sdk.md
-                    - name: Basic connector classification
-                      href: dlp-connector-classification.md
-                    - name: Connector action control
-                      href: connector-action-control.md
-                    - name: Connector endpoint filtering (preview)
-                      href: connector-endpoint-filtering.md
-                    - name: DLP for custom connectors
-                      href: dlp-custom-connector-parity.md
-                    - name: DLP for Power Automate
-                      href: /power-automate/prevent-data-loss
-                    - name: DLP for desktop flows
-                      href: /power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview
-                    - name: Disable new connectors
-                      href: connector-off-by-default.md
-                    - name: View policies and policy scope
-                      href: dlp-policy-scope.md
-                    - name: Effect of multiple policies
-                      href: dlp-combined-effect-multiple-policies.md
-                    - name: Impact on apps and flows
-                      href: dlp-impact-policies-apps-flows.md
-                    - name: Exempt apps and flows
-                      href: dlp-resource-exemption.md
                     - name: Known limitations
                       href: dlp-known-issues.md
+                    - name: Policies
+                      items:
+                      - name: Create and manage policies
+                        href: prevent-data-loss.md
+                      - name: Policy scopes
+                        href: dlp-policy-scope.md
+                      - name: Effect of multiple policies
+                        href: dlp-combined-effect-multiple-policies.md
+                      - name: Disable new connectors
+                        href: connector-off-by-default.md
+                      - name: Design-time versus runtime
+                        href: dlp-impact-policies-apps-flows.md
+                      - name: Exempt apps and flows
+                        href: dlp-resource-exemption.md
+                    - name: Certified connectors
+                      items:
+                      - name: Connector classification
+                        href: dlp-connector-classification.md
+                      - name: Connector action control
+                        href: connector-action-control.md
+                      - name: Connector endpoint filtering (preview)
+                        href: connector-endpoint-filtering.md
+                    - name: Custom connectors
+                      items:
+                      - name: Connector classification
+                        href: dlp-custom-connector-parity.md
+                    - name: DLP for Power Automate
+                      href: prevent-data-loss.md
+                    - name: DLP for desktop flows
+                      href: /power-automate/prevent-data-loss
+                    - name: DLP for Copilot Studio
+                      href: /microsoft-copilot-studio/admin-data-loss-prevention
                 - name: Configure column-level security
                   items:
                     - name: Overview
@@ -526,6 +584,8 @@
                       href: enable-disable-security-field.md
                     - name: Add teams or users to column security profile
                       href: add-teams-users-field-security-profile.md
+                    - name: Create and manage masking rules (preview)
+                      href: create-manage-masking-rules.md
                 - name: Configure teams and team templates
                   items:
                     - name: Manage teams
@@ -564,6 +624,8 @@
                       href: opt-out-automatic-license.md
                     - name: Use service admin roles to manage your tenant
                       href: use-service-admin-role-manage-tenant.md
+                    - name: Manage high privileged admin roles
+                      href: manage-high-privileged-admin-roles.md
                     - name: Miscellaneous privileges
                       href: miscellaneous-privileges.md
                     - name: Privacy-related privileges
@@ -575,7 +637,13 @@
                 - name: Manage application users
                   href: manage-application-users.md
                 - name: Delete users
-                  href: delete-users.md
+                  items:
+                  - name: Delete users from an environment
+                    href: delete-users.md
+                  - name: Delete stub users from an environment
+                    href: delete-stub-users.md
+                  - name: Delete unlicensed or removed Microsoft Entra group members
+                    href: delete-unlicensed-or-removed-microsoft-entra-group-users.md
                 - name: Reset a user's password
                   href: reset-users-password.md
                 - name: Assign service admin role to users
@@ -590,7 +658,7 @@
                   href: /powerapps/user/view-your-user-profile
                 - name: Create an administrative user
                   href: prevent-elevation-security-role-privilege.md
-                - name: Troubleshoot common user access issues
+                - name: Troubleshoot user access issues
                   href: troubleshooting-user-needs-read-write-access-organization.md
                 - name: Manage user account synchronization
                   href: manage-user-account-synchronization.md
@@ -604,6 +672,14 @@
                   href: restrict-access-online-trusted-ip-rules.md
                 - name: B2B collaboration with Microsoft Entra ID
                   href: invite-users-azure-active-directory-b2b-collaboration.md
+            - name: Virtual Network support
+              items:
+                - name: Virtual Network support overview
+                  href: vnet-support-overview.md                
+                - name: Virtual Network support white paper
+                  href: virtual-network-support-whitepaper.md   
+                - name: Set up Virtual Network support
+                  href: vnet-support-setup-configure.md
             - name: Security FAQs
               href: security/faqs.md
         - name: Analytics
@@ -644,36 +720,50 @@
                   href: telemetry-events-model-driven-apps.md
                 - name: Telemetry events for Dataverse
                   href: telemetry-events-dataverse.md
+                - name: Telemetry events for mobile app synchronization and actions (preview)
+                  href: telemetry-events-mobile.md
                 - name: Export data to Application Insights
                   href: set-up-export-application-insights.md
-                - name: Set up Application Insights with Power Automate (preview)
+                - name: Set up Application Insights with Power Automate
                   href: app-insights-cloud-flow.md
                 - name: Conversation diagnostics in Azure Application Insights (preview)
                   href: conversation-diagnostics-application-insights.md
         - name: Storage
           items:
-            - name: What's new for storage
+            - name: Add more Dataverse capacity
+              href: add-storage.md
+            - name: Dataverse capacity-based storage overview
               href: whats-new-storage.md
-            - name: New capacity storage model
+            - name: Dataverse capacity-based storage details 
               href: capacity-storage.md
-            - name: Legacy capacity storage model
-              href: legacy-capacity-storage.md
-            - name: Finance and operations storage capacity (preview)
-              href: finance-operations-storage-capacity.md
-            - name: View self-service capacity
-              href: view-self-service-capacity.md
+            - name: Database Tables
+              items:
+                - name: ActivityPointerBase table
+                  href: manage-storage-activitypointer-base-table.md
+                - name: AsyncOperationBase table
+                  href: manage-storage-asyncoperation-base-table.md
+                - name: msdyn_copilotinteraction table
+                  href: manage-storage-msdyn-copilotinteraction-table.md
+                - name: PrincipalObjectAccess table
+                  href: manage-principalobjectaccess-storage.md
+                - name: Subscription Tracking Deleted Object table
+                  href: subscription-tracking-deleted-object-retention.md
+            - name: Extend Dataverse capacity for 30 days
+              href: extend-capacity.md
             - name: Free up storage
               items:
-                - name: Manage PrincipalObjectAccess storage
-                  href: manage-principalobjectaccess-storage.md
                 - name: Recover storage space
                   href: free-storage-space.md
                 - name: Clean up System Job and Process Log tables
                   href: cleanup-asyncoperationbase-table.md
-            - name: Add storage capacity
-              href: add-storage.md
-            - name: Access storage with SAS token
-              href: storage-sas-token.md
+            - name: Finance and Operations storage capacity
+              href: finance-operations-storage-capacity.md
+            - name: Legacy capacity storage model
+              href: legacy-capacity-storage.md
+            - name: View self-service capacity
+              href: view-self-service-capacity.md
+            - name: Ways to access storage
+              href: access-storage.md
         - name: Resources
           items:
             - name: Overview
@@ -686,6 +776,8 @@
               href: manage-power-automate.md
             - name: Add-on capacity management
               href: capacity-add-on.md
+            - name: Administer the catalog
+              href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
         - name: Activity logging
@@ -696,7 +788,7 @@
               href: logging-power-automate.md
             - name: Power Pages activity logging (preview)
               href: logging-power-pages.md
-            - name: Power Platform connector activity logging (preview)
+            - name: Power Platform connector activity logging
               href: connector-events-power-platform.md
             - name: Data loss prevention activity logging
               href: dlp-activity-logging.md
@@ -704,7 +796,7 @@
               href: manage-dataverse-auditing.md
             - name: Dataverse and model-driven apps
               href: enable-use-comprehensive-auditing.md
-            - name: View Power Platform administrative logs in Microsoft Purview (preview)
+            - name: View Power Platform administrative logs in Microsoft Purview
               href: admin-activity-logging.md
         - name: Programmability and extensibility
           items:
@@ -730,6 +822,8 @@
                   href: programmability-tutorial-allocate-capacity-addons.md
                 - name: "Tutorial: Create cross tenant isolation reports (preview)"
                   href: programmability-tutorial-cross-tenant-reporting.md
+                - name: "Tutorial: Create, update, and list Environment Management Settings (preview)"
+                  href: programmability-tutorial-environmentmanagement-settings.md
             - name: PowerShell
               items:
                 - name: Getting started
@@ -774,7 +868,7 @@
                               href: create-dataverseapplicationuser.md
                         - name: Tenant Settings
                           items:
-                            - name: "List tenant settings"
+                            - name: List tenant settings (preview)
                               href: list-tenantsettings.md
         - name: Data integration
           items:
@@ -786,10 +880,8 @@
           items:
             - name: "About on-premises gateway"
               href: wp-onpremises-gateway.md
-            - name: "On-premises data gateway management (preview)"
+            - name: "On-premises data gateway management"
               href: onpremises-data-gateway-management.md
-            - name: "Data source management (preview)"
-              href: onpremises-data-gateway-source-management.md
         - name: Manage data
           items:
             - name: Add or remove sample data
@@ -814,8 +906,12 @@
               href: run-bulk-system-jobs-detect-duplicate-records.md
             - name: Bulk deletion
               href: delete-bulk-records.md
+            - name: Set address record settings
+              href: disable-delete-address-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
+            - name: Restore deleted table records (preview)
+              href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
             - name: Recover database space by deleting audit logs
@@ -904,6 +1000,8 @@
                       items:
                         - name: Configure incoming and outgoing email synchronization
                           href: set-incoming-outgoing-email-synchronization.md
+                        - name: Select the start date for processing incoming email
+                          href: select-incoming-email-processing-start-date.md
                         - name: Specify which emails are automatically tracked
                           href: email-message-filtering-correlation.md
                         - name: Associate an email address with a row
@@ -989,6 +1087,8 @@
                   items:
                     - name: Troubleshooting server-based authentication
                       href: troubleshooting-server-based-authentication.md
+                    - name: Troubleshooting conditional access authentication
+                      href: troubleshooting-conditional-access-authentication.md
                     - name: Troubleshoot set up with SharePoint online
                       href: troubleshoot-set-up-sharepoint-online.md
                     - name: Troubleshooting document management issues
@@ -1035,13 +1135,20 @@
                   href: connect-yammer.md
         - name: Unified admin experience for finance and operations apps (preview)
           items:
-            - name: Overview
+            - name: Overview of unified admin experience for finance and operations apps
               href: unified-experience/finance-operations-apps-overview.md
-              displayName: Overview of unified admin experience for finance and operations apps
+            - name: Administration for partners and systems implementers
+              href: unified-experience/partners-systems-implementers.md
             - name: "Tutorial: Provision a new environment with an ERP-based template"
               href: unified-experience/tutorial-deploy-new-environment-with-erp-template.md
+            - name: "Tutorial: Install the Finance and Operations Provisioning apps"
+              href: unified-experience/tutorial-install-finance-operations-provisioning-app.md
+            - name: "Tutorial: Update the Finance and Operations Provisioning app"
+              href: unified-experience/tutorial-update-finance-operations-provisioning-app.md
             - name: "Tutorial: Copy a Lifecycle Services environment to a unified environment"
               href: unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md
+            - name: "Tutorial: Perform a transaction-less copy between environments"
+              href: unified-experience/tutorial-perform-transactionless-copy.md
             - name: "Admin trials for finance and operations apps"
               href: unified-experience/admin-trials.md
         - name: Performance tuning and optimization

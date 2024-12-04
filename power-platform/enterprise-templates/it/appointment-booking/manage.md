@@ -1,11 +1,14 @@
 ---
-title: Manage the Appointment Booking template for Power Platform
-description: Learn how to manage the Appointment Booking template for Power Platform.
+title: Get started managing the Appointment Booking program
+description: Learn how to manage the Appointment Booking apps.
 author: tverhasselt
+contributors:
+  - robinsonshields
+  - microsoft-george
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 11/13/2023
+ms.date: 04/02/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -75,3 +78,7 @@ To localize app strings, users must have the **IT Template Admin** security 
     - **String Type**. The type of string you're replacing or filter you can apply. This field is optional
 
 1. Select **Save & Close**.
+
+### Next step
+
+[Get started using the Appointment Booking app](use.md)

@@ -22,7 +22,7 @@ The following examples show the use of the `pac power-fx run` command.
 
 1. Add the following text to `test-pfx.txt` and save the file.
 
-   ```powerapps-dot
+   ```power-fx
    Collect(Contacts, { firstname: "Megan", lastname: "Bowen" })
    Collect(Contacts, { firstname: "Garth", lastname: "Forth" })
    Collect(Contacts, { firstname: "Adele", lastname: "Vance" })
@@ -49,7 +49,7 @@ The following examples show the use of the `pac power-fx run` command.
 
 1. Add this text to `test-pfx.txt` and save the file.
 
-   ```powerapps-dot
+   ```power-fx
    FirstN(Contacts, 5)
    ```
 
@@ -81,7 +81,7 @@ The following examples show the use of the `pac power-fx run` command.
 
 1. Add the following text to `test-pfx.txt` and save the file.
 
-   ```powerapps-dot
+   ```power-fx
    Set(x, 1)
    Result = If( Mid( "asdf",x,1 ) = "a", "X", "Y" )
    ```

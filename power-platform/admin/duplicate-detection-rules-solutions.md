@@ -1,13 +1,13 @@
 ---
 title: "Create and manage duplicate detection rules using solutions"
 description: "Learn about how you can create and manage duplicate detection rules using solutions."
-author: KumarVivek
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 03/28/2023
 ms.subservice: admin
 ms.author: gned
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ---
 # Create and manage duplicate detection rules using solutions
 

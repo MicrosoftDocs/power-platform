@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 02/28/2020
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Notify function
@@ -71,7 +71,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 2. Set the **OnSelect** property of the **Button** to the formula:
 
-   ```powerapps-dot
+   ```power-fx
    Notify( "Hello, World" )
    ```
 
@@ -83,7 +83,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 4. Change the type of message to indicate an error. Add a second argument to our formula:
 
-   ```powerapps-dot
+   ```power-fx
    Notify( "Hello, World", NotificationType.Error )
    ```
 
@@ -95,7 +95,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 6. Change the type of message to indicate a warning. Change the second argument in our formula:
 
-   ```powerapps-dot
+   ```power-fx
    Notify( "Hello, World", NotificationType.Warning, 4000 )
    ```
 
@@ -107,7 +107,7 @@ Note: This function was previously named **ShowError** when it could only displa
 
 8. Change the type of message to indicate success. Change the second argument in our formula:
 
-   ```powerapps-dot
+   ```power-fx
    Notify( "Hello, World", NotificationType.Success, 0 )
    ```
 

@@ -42,7 +42,7 @@ Related tutorials: [Get started](github-actions-start.md), and [Build a model-dr
     ![Initiate repo.](../media/github-actions-tutorial/gh-lab-2.40.png "Initiate repo")
 
 ### Creating a new secret for Service Principal Authentication
-1. Navigate to to you repository and click **Settings**, then expand **Secrets**, and then and click **Actions**.
+1. Navigate to your repository and click **Settings**, then expand **Secrets**, and then and click **Actions**.
 
 2. On the *Secrets* page, name the secret 'PowerPlatformSPN'. Use the client secret from the application registration created in Microsoft Entra and enter it into the **Value** field, and then select **Add secret**. The client secret will be referenced in the YML files used to define the GitHub workflows later in this lab.
 

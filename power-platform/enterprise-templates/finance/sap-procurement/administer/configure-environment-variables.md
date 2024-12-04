@@ -136,10 +136,10 @@ The environment variables you set up are now available in a flow's dynamic conte
 
     :::image type="content" source="media/configure-environment-variables/use-env-var-in-connector-actions.png" alt-text="Reuse environment variables in the SAP ERP connector's actions":::
 
-## Next steps
+### Next step
 
 [Configure security groups](configure-security-groups.md)
 
-## See also
+### See also
 
 [Get started with the SAP Procurement template](get-started.md)

@@ -5,7 +5,7 @@ author: tverhasselt
 ms.author: thoverh
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 11/29/2023
+ms.date: 04/15/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -31,23 +31,23 @@ The Appointment Booking template is available in [Microsoft AppSource](<https://
 
 ## IT Base solution components
 
-The *IT Base* solution contains various components that allow an admin to set up and manage the language preferences.
+The **IT Base** solution contains various components that allow an admin to set up and manage the language preferences.
 
-- **One model-driven app**: **IT Template Administration** lets an admin create, view, and edit localized string values
+- **IT Template Administration** is the model-driven app that lets an admin create, view, and edit localized string values.
 
-- **Two tables**
+- Two tables:
 
   - **IT Localization** records the app string replacements for every localized version of the app
   - **IT Error** records all errors from app and flows
-- **One choice**: **ISO Language Code** stores the abbreviation for available language codes
+- One choice: **ISO Language Code** stores the abbreviation for available language codes
 
 ## Appointment Booking solution components
 
-- **One canvas app**: **Appointment Booking app** is where users manage appointment slots and bookings
+- **Appointment Booking app** is the canvas app where users manage appointment slots and bookings
 
-- **One model-driven app**: **Appointment Booking Administrator** is where an admin can manage all data
+- **Appointment Booking Administrator** is the model-driven app where an admin can manage all data
 
-- **Seven tables**:
+- Seven tables:
 
   - **Appointment Booking**
   - **Appointment Slot**
@@ -56,16 +56,16 @@ The *IT Base* solution contains various components that allow an admin to set up
   - **Appointment Room Number**
   - **User**  
 
-- **Two security roles**:
+- Two security roles:
   - **Appointment Booking - Administrator** provides access to model-driven app and canvas app
   - **Appointment Booking - User** provides access to canvas app
   - **IT Base - User** provides access to the IT Base model-driven app
 
-- **Two choices**:
+- Two choices:
   - **Appointment Location** stores the available meeting modes (for example, *In Person*, *Online*, *Phone*)
   - **Attendance** stores the available status for appointments (for example, *Attended*, *No Show*, *Cancelled*)
 
-- **Ten Power Automate flows**:
+- Ten Power Automate flows:
 
   - **Add New Contact** adds new record in Contact table if Requestor isn't added yet
   - **Appointment Booking Email Notification** sends email notifications to both the Requestor and Meeting Provider when an appointment is created
@@ -84,12 +84,12 @@ The *IT Base* solution contains various components that allow an admin to set up
     - Email Reminder
     - Rescheduled Outlook Invite
 
-- **Three connection references**:
+- Three connection references:
 
   - **Appointment Booking – [Dataverse](/connectors/commondataserviceforapps/)** - Connection reference to Microsoft Dataverse
   - **Appointment Booking – [Office 365 Outlook](/connectors/office365/)** - Connection reference to Microsoft Office 365 Outlook
   - **Appointment Booking – [Teams](/connectors/teams/)** - Connection reference to Microsoft Teams
 
-## Next steps
+### Next step
 
 [Install and set up the Appointment Booking template](install-and-set-up.md)

@@ -4,7 +4,7 @@ description: "The Creator Kit is shipped as a single, self-contained solution. L
 author: denise-msft
 ms.component: pa-maker
 ms.topic: conceptual
-ms.date: 05/16/2022
+ms.date: 06/10/2024
 ms.subservice: guidance
 ms.author: demora
 ms.reviewer: tapanm
@@ -13,11 +13,12 @@ search.audienceType:
 contributors:
   - tapanm-msft
   - slaouist
+  - DanaMartens
 ---
 
 # Use the Creator Kit
 
-Before you use the components included with the Creator Kit, use the reference app to learn component behavior and implementation patterns. With the reference app, you'll also learn how to add components to an app. 
+Before you use the components included with the Creator Kit, use the reference app to learn component behavior and implementation patterns. With the reference app, you learn how to add components to an app.
 
 The Creator Kit includes the following assets, distributed in three solutions:
 
@@ -54,8 +55,6 @@ Use this app to learn about each component, get recommended best practices for t
 - Select the **Code** tab to see the underlying Power Fx formulas.
 - Learn best practices from the inline guidance related to the control.
 
-:::image type="content" source="media/referenceapp-mda.png" alt-text="Screenshot of a page in the reference app that describes a control." border="false":::
-
 ### Templates
 
 The templates are designed to help you quickly start creating responsive Fluent UI&ndash;based apps. They come with the custom components preloaded and attached to a Theme JSON variable, which reduces time to start developing.
@@ -83,7 +82,7 @@ Make a copy of this page to create a new custom page for a [converged app](/powe
 
 :::image type="content" source="media/custom-page-studio.png" alt-text="Custom page template.":::
 
-Follow the preceding steps to [make a copy of the canvas template app](#canvas-app-template), except this time you'll select the **Save As** option in the upper-right corner:
+Follow the preceding steps to [make a copy of the canvas template app](#canvas-app-template), except this time you select the **Save As** option in the upper-right corner:
 
 1. In the upper-right corner, expand the menu next to the **Save** icon, and then select **Save as**.
 
@@ -129,6 +128,29 @@ Apps that use kit components can't be built outside of a solution, and they must
 - When deploying an app that includes the components, the `CreatorKitCore` (managed solution) must be installed in the target environment before dependent solutions are imported.
 
 For more information and general guidance, go to [solution import troubleshooting tips](/troubleshoot/dynamics-365/sales/troubleshoot-solution-import-errors-in-dynamics-365).
+
+## Frequently asked questions (FAQ)
+
+**Should large organizations encourage citizen makers to use the Creator Kit? What kind of overhead does that come with from an O&M perspective?**
+
+The Creator Kit isn't an officially supported Microsoft product, meaning customers can't raise a Microsoft support ticket for issues. Instead, they must file [issues on the GitHub repository](https://github.com/microsoft/powercat-creator-kit/issues) and work with the team directly. If there's triage or debug information that they aren't comfortable sharing on GitHub, the team can arrange to handle sensitive conversations privately by [submitting a request form](https://forms.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR4lL86nyt-9Io8ocQ1vGVaBUMDZBWE42RUdLWUNPVERZWU4yNjZVTERKQy4u).
+
+We recommend first evaluating whether modern controls meet your application's requirements, as these controls are the most up-to-date and fully supported by Microsoft. If modern controls don't suffice, then validate the legacy components to determine their suitability. Creator Kit controls should only be considered when no other options meet your needs. Additionally, it's important to pay attention to the release status of the components being used, ensuring they're stable and supported for your development pipeline.
+
+**What is the most effective or efficient way to roll out these updates to multiple production environments?**
+
+There are several strategies to consider depending on the organization's priorities:
+
+- *Most secure:* If security is a top priority (for example, initial validation before deployment to production environments), the organization's Center of Excellence (CoE) can host an isolated test environment to validate updates. Automation can then be used to deploy solutions to the desired production environments. For more information, see [Power catalog](/power-apps/maker/data-platform/catalog-overview) and [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows) for more details.
+- *Lowest maintenance:* If security validation isn't necessary, environments can be individually configured to receive continuous updates automatically by enabling the Power CAT - MSFT publisher for the environment in the Power Platform admin center.
+
+**As the overlap between the new Modern controls and the Creator Kit increases over time, will some Creator Kit components be deprecated? If so, what will that process entail?**
+
+Yes, a subset of Creator Kit components are reimplemented as modern controls and are considered successors of the Creator Kit components. The team will deprecate the Creator Kit component predecessors in the AppSource offering once the successor meets parity for the needs of the majority. Deprecation timelines will be announced through regular channels such as GitHub updates, Office Hours, and discussion forums. For more information on the recommended migration process, see the [migration process documentation](https://github.com/microsoft/powercat-creator-kit/discussions/473).
+
+**What are the best practices for development pipelines (dev > UAT > prod) involving the Creator Kit?**
+
+Install the managed `CreatorKitCore` solution in all environments where apps using Creator Kit components are deployed. Ensure this solution is installed before the solution with the app. For more information on the basic installation and how to incorporate it into the development pipeline, see the [install instructions](setup.md).
 
 > [!div class="nextstepaction"]
 > [Next step: View the components reference](components.md)

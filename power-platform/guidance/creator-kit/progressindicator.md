@@ -56,7 +56,7 @@ This code component provides a wrapper around the [Fluent UI ProgressIndicator](
 
 Make the `ProgressIndicator` control itself (or the surface it's located within) visible when a process begins, then update a variable with the value as segments of the process are completed. Hide it when the process is complete. Use a variable to control the visibility of the control, and update the values between the major code blocks of the process that need to be indicated.
 
-```powerapps-dot
+```power-fx
 UpdateContext({ var_showProgress: true , var_progressValue: 0 });
 
 /* Some code ... */

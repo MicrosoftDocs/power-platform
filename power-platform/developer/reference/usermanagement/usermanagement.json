@@ -51,7 +51,7 @@
           "type": "string",
           "example": ""
         },
-        "additionalProperties": null
+        "additionalProperties": false
       }
     }
   },
@@ -60,12 +60,17 @@
       "type": "oauth2",
       "flow": "implicit",
       "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
       "description": "Microsoft Entra ID OAuth2"
     }
   },
   "security": [
     {
-      "oauth2": [ ]
+      "oauth2": [
+        ".default"
+      ]
     }
   ]
 }

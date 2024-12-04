@@ -74,7 +74,7 @@ Each object in the `Items` input table must use the following properties to rend
 
 Example of input collection value for Items property:
 
-```powerapps-dot
+```power-fx
 Table(
     { ItemKey:"1", ItemLabel:"Step 1", ItemState:"Current" },
     { ItemKey:"2", ItemLabel:"Step 2", ItemState:"Completed" },
@@ -89,7 +89,7 @@ To get the selected step by the user, use the `OnSelect` or `OnChange` property 
 
 Example code:
 
-```powerapps-dot
+```power-fx
 Notify( Concatenate(Self.Selected.ItemLabel, " selected and its status is ", Self.Selected.ItemState ));
 ```
 
@@ -97,7 +97,7 @@ Notify( Concatenate(Self.Selected.ItemLabel, " selected and its status is ", Sel
 
 Below is a sample item collection example that defines how substeps needs to be linked with main/parent step using ParentItemKey.
 
-```powerapps-dot
+```power-fx
 Table(
     { ItemKey:"1", ItemLabel:"Step 1", ItemState:"Current" },
     { ItemKey:"2", ItemLabel:"Step 2 have sub-steps", ItemState:"WizardComplete" },
@@ -118,13 +118,13 @@ State of each item (step) changes as we select or move to different step happens
 
 Example code (referenced from the `SubwayNav` control):
 
-```powerapps-dot
+```power-fx
 Self.Steps
 ```
 
 Example code (referencing the steps from another control):
 
-```powerapps-dot
+```power-fx
 SubwayNav1.Steps
 ```
 

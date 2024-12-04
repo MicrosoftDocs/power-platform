@@ -1,18 +1,18 @@
 ---
 title: Untyped object data type
 description: Reference information about the untyped object type in Power Fx.
-author: jorisdg
+author: gregli
 
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/10/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jorisde
 search.audienceType: 
   - maker
 contributors:
-  - jorisdg
+  - gregli
   - mduelae
 ---
 # Untyped object data type
@@ -27,10 +27,10 @@ The value of a variable of type **untyped object** can't be used directly. You a
 
 The following examples convert the value of an **untyped object** variable named `UOValue`.
 
-```powerapps-dot
+```power-fx
 Text(UOValue)
 ```
-```powerapps-dot
+```power-fx
 Value(UOValue)
 ```
 
@@ -58,16 +58,16 @@ Each field on the record is also of type **untyped object**, and needs to be pro
 
 The following examples use fields from an **untyped object** variable named `UORecord`.
 
-```powerapps-dot
+```power-fx
 Text(UORecord.StringField)
 ```
-```powerapps-dot
+```power-fx
 Value(UORecord.Field.ChildField)
 ```
 
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
-```powerapps-dot
+```power-fx
 untyped.'01'
 untyped.'my-field'
 ```
@@ -78,13 +78,13 @@ An **untyped object** variable can contain an array. Even though the array could
 
 For example, to get the second number in an array of **untyped object** containing number values ( `[1, 2, 3]` ), the following formula can be used to retrieve the second row in the table and convert column to a number:
 
-```powerapps-dot
+```power-fx
 Value( Index( UOArray, 2 ) )
 ```
 
 If the **untyped object** was converted to a **Table()** first, the second row in the result single-column table is a `Value` column containing the **untyped object**:
 
-```powerapps-dot
+```power-fx
 Value( Index( Table( UOArray ), 2 ).Value )
 ```
 
@@ -92,25 +92,25 @@ For an array of records that have a text column called `Field`, the same logic a
 
 The `Field` column can be access directly from the **untyped object** returned by the **Index()** function.
 
-```powerapps-dot
+```power-fx
 Text( Index( UORecordArray, 2 ).Field )
 ```
 
 When using the **Table()** function, first retrieve the single-column `Value` column to get the **untyped object**, then access the `Field` column:
 
-```powerapps-dot
+```power-fx
 Text( Index( Table( UORecordArray ), 2 ).Value.Field )
 ```
 
 To convert an array of records to a typed table, you can use the [ForAll()](./reference/function-forall.md) function and convert each individual field.
 
-```powerapps-dot
+```power-fx
 ForAll( UORecordArray, { FirstField: Value(ThisRecord.FirstField), SecondField: Text(ThisRecord.SecondField) } )
 ```
 
 If the **untyped object** is first converted to a table, again, the resulting single-column table of **untyped object** will require you to use the `Value` column to get the fields.
 
-```powerapps-dot
+```power-fx
 ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), SecondField: Text(ThisRecord.Value.SecondField) } )
 ```
 

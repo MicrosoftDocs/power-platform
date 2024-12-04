@@ -1,6 +1,6 @@
 ---
 title: "Internal training events - Microsoft Power Platform | MicrosoftDocs"
-description: "Microsoft has created a variety of hands-on lab content, ranging from App in an Hour, App in a Day, Power Virtual Agents in a Day, to Admin in a Day."
+description: "Microsoft has created a variety of hands-on lab content, ranging from App in an Hour, App in a Day, to Admin in a Day."
 author: manuelap-msft
 
 ms.component: pa-admin
@@ -8,13 +8,13 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 # Provide internal training events
 
-Microsoft has created a variety of hands-on lab content, ranging from App in an Hour, App in a Day, and Power Virtual Agents in a Day, to Admin in a Day. The materials are available to [download](https://aka.ms/powerplatformlabs), and [App in a Day events](https://aka.ms/aiadevent) specifically are hosted both virtually and in person by Microsoft partners across the world.
+Microsoft has created a variety of hands-on lab content, ranging from App in an Hour, App in a Day, to Admin in a Day. The materials are available to [download](https://aka.ms/powerplatformlabs), and [App in a Day events](https://aka.ms/aiadevent) specifically are hosted both virtually and in person by Microsoft partners across the world.
 
 Many organizations find success straight away by attending App in a Day events, and once people in your team have attended one of the in-person or virtual events, they can adapt the course materials to align with your organization and run them internally. Remember, everyone in your organization is an expert in something. Teaching them to build Power Apps helps them harness that into solutions that benefit the organization.
 

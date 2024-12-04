@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI catalog command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI catalog command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -62,12 +62,12 @@ Install a catalog item to the target environment.
 
 Catalog item to be installed on the target environment.
 
-#### `--target-url` `-tu`
-
-Url of the target environment for catalog item installation
-
 
 ### Optional Parameters for catalog install
+
+#### `--environment` `-env`
+
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--poll-status` `-ps`
 
@@ -81,6 +81,13 @@ Runtime Package Settings for the installation framework to execute. The format o
 
 **Note**: The format of the string must be `key=value|key=value`.
 
+#### `--target-env` `-te`
+
+Url or ID of the target environment for catalog item installation
+
+#### `--target-url` `-tu`
+
+**Deprecated**: Use `--target-env` instead.
 #### `--target-version` `-tv`
 
 Target version to install. If left empty, the published version is selected.
@@ -103,6 +110,10 @@ Catalog item ID to search for. When catalog item ID is used, catalog item name i
 #### `--catalog-item-name` `-n`
 
 Catalog item name to search for.
+
+#### `--environment` `-env`
+
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--include-active` `-ia`
 
@@ -134,6 +145,13 @@ Use one of these values:
 - `Install`
 - `Submit`
 
+
+### Optional Parameters for catalog status
+
+#### `--environment` `-env`
+
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
+
 [!INCLUDE [catalog-status-remarks](includes/catalog-status-remarks.md)]
 
 ## pac catalog submit
@@ -151,6 +169,10 @@ Path to catalog submission document
 
 
 ### Optional Parameters for catalog submit
+
+#### `--environment` `-env`
+
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--package-zip` `-pz`
 
@@ -180,6 +202,13 @@ Update settings for the catalog.
 #### `--path` `-p`
 
 Path to catalog settings document
+
+
+### Optional Parameters for catalog update
+
+#### `--environment` `-env`
+
+Url or ID of the environment that has catalog installed. When not specified, the active organization selected for the current auth profile will be used.
 
 [!INCLUDE [catalog-update-remarks](includes/catalog-update-remarks.md)]
 

@@ -7,7 +7,7 @@ ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/10/2021
 ms.author: mehdis
-ms.reviewer: kvivek 
+ms.reviewer: sericks 
   
 ---
 # Building reusable UI with Power Apps component framework and canvas apps components

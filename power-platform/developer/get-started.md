@@ -4,9 +4,9 @@ description: "Overview of how developers can extend Power Platform."
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.custom: ""
-ms.date: 11/09/2022
-ms.reviewer: kvivek
+ms.custom: "ai-learning-hub"
+ms.date: 09/23/2024
+ms.reviewer: jdaly
 ms.topic: "article"
 search.audienceType: 
   - developer
@@ -14,7 +14,7 @@ search.audienceType:
 
 # Introduction to Microsoft Power Platform for developers
 
-Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: Power Apps, Power Automate, Power BI, Power Virtual Agents, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation, or data-driven productivity applications.
+Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of four product areas: Power Apps, Power Automate, Power BI, and Power Pages. Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating analytics, process automation, or data-driven productivity applications.
 
 The platform's low-code approach enables everyone in an organization&mdash;from frontline workers to professional developers&mdash;to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by using the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. With a low-code integrated development approach, business goals can be achieved faster and frees up time for the developers.
 
@@ -72,14 +72,6 @@ Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS)
 > - Custom web page templates built with HTML, CSS, and [Liquid](/power-pages/configure/liquid-overview)
 > - Extend site integration with Dataverse with the [portals Web API](/power-pages/configure/web-api-overview)
 > - [Use Visual Studio Code and the Power Platform CLI](/power-pages/configure/cli-tutorial) to enable metadata editing and CI/CD (Continuous Integration/Continuous Deployment) of site configurations
-
-## Power Virtual Agents
-
-Power Virtual Agents lets you create powerful chatbots that can answer questions from your customers, other employees, or visitors to your website or service. Power Virtual Agents is built on Microsoft Bot Framework and provides a low-code experience to build and manage chatbots.
-
-> #### Key developer extensibility points
-> - Build Bot Framework Skills
-> - Extend your bots with [Bot Framework Composer](/power-virtual-agents/advanced-bot-framework-composer)
 
 ## Dataverse
 

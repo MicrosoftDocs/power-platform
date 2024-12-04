@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/02/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
   - melzoghbi
 ---
 
@@ -122,7 +122,7 @@ Following simple example captures and stores the names and pictures of everyday 
 
 1. Set the **OnSelect** property of the button control to this formula that will add an item to our collection:
 
-   ```powerapps-dot
+   ```power-fx
    Collect( MyItems, { Item: TextInput1.Text, Picture: Camera1.Photo } )
    ```
 
@@ -135,7 +135,7 @@ Following simple example captures and stores the names and pictures of everyday 
 
 1. Set the **OnSelect** property of the button control to this formula in order to save our collection to the local device:
 
-   ```powerapps-dot
+   ```power-fx
    SaveData( MyItems, "LocalSavedItems" )
    ```
 
@@ -150,7 +150,7 @@ Following simple example captures and stores the names and pictures of everyday 
 
 1. Set the **OnSelect** property of the button control to this formula in order to load our collection from the local device:
 
-   ```powerapps-dot
+   ```power-fx
    LoadData( MyItems, "LocalSavedItems" )
    ```
 

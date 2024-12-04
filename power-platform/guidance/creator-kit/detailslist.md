@@ -129,7 +129,7 @@ Example:
 
 Mapping to the Dataverse [Accounts](/power-apps/developer/data-platform/reference/entities/account) system table, with the following formula:
 
-```powerapps-dot
+```power-fx
 Table(
     {
         ColName: "name",
@@ -170,7 +170,7 @@ The `ColShowAsSubTextOf` column property defines a column as being shown below t
 
 If you had a collection defined as:
 
-```powerapps-dot
+```power-fx
 ClearCollect(colAccounts,
 {id:"1",name:"Contoso",city:"Redmond",country:"U.S.",description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",expand:false},
 {id:"2",name:"Litware, Inc",city:"Dallas",country:"U.S.",description:"Donec vel pellentesque turpis.",expand:false});
@@ -178,7 +178,7 @@ ClearCollect(colAccounts,
 
 You could define the columns to be:
 
-```powerapps-dot
+```power-fx
 Table(
     {
         ColName: "name",
@@ -230,7 +230,7 @@ If the 'Sub Text' rows requires to have an expand/collapse icon, an additional c
 
 Assuming that a `RecordKey` property is set to the `index` column, the `OnChange` event could then contain the following to expand/collapse the rows:
 
-```powerapps-dot
+```power-fx
 If(Self.EventName="CellAction" && Self.EventColumn="expand",
     With(LookUp(colExpand,index=Self.EventRowKey) As Row,
         Patch(colExpand,Row,{expand:!Row.expand})
@@ -253,7 +253,7 @@ Using a cell type of `tag` or `indicatortag` you can create inline colored tags 
 The colors can vary by row, and so the column metadata dataset simply provides the name of the columns that holds the colors for the tags.
 
 Consider the dataset:  
-```powerapps-dot
+```power-fx
 ClearCollect(
     colAccounts,
     {
@@ -275,7 +275,7 @@ ClearCollect(
 
 You could then add the column metadata to add two columns, one displayed as a tag and the other as a tagindicator - each using the TagColor and TagBorderColor columns to determine the colors:
 
-```powerapps-dot
+```power-fx
 {
         ColName: "country",
         ColDisplayName: "Country",
@@ -311,7 +311,7 @@ If the image is of type `clickableimage` the `OnChange` event will fire when the
 
 for example, Consider the row data:
 
-```powerapps-dot
+```power-fx
 {
         id: "1",
         name: "Contoso",
@@ -334,7 +334,7 @@ for example, Consider the row data:
 
 and the column metadata:
 
-```powerapps-dot
+```power-fx
  {
         ColName: "externalimage",
         ColDisplayName: "Image",
@@ -360,7 +360,7 @@ This would give the result:
 
 For the `clickableimage` column,  `OnChange` event can then handle when a user selects (mouse or keyboard) and icon (assuming that it isn't disabled) using:
 
-```powerapps-dot
+```power-fx
 If(Self.EventName="CellAction",
 	Notify("CellAction " & Self.EventColumn & " " & Self.EventRowKey)
 )
@@ -374,7 +374,7 @@ Columns can be rendered as links, that will raise the OnChange event when the li
 
 The column metadata for a link is configured as follows:
 
-```powerapps-dot
+```power-fx
   {
         ColName: "name",
         ColDisplayName: "Account Name",
@@ -393,7 +393,7 @@ The `OnChange` event is again fired when the link is clicked, with the `EventCol
 
 If a column value can has multiple values by setting it to a Table/Collection. This will then render the values as multiple cell values. for example:
 
-```powerapps-dot
+```power-fx
  {
         id: "1",
         name: "Contoso",
@@ -403,7 +403,7 @@ If a column value can has multiple values by setting it to a Table/Collection. T
 
 The column metadata then could be:
 
-```powerapps-dot
+```power-fx
  {
         ColName: "tags",
         ColDisplayName: "Tags",
@@ -441,7 +441,7 @@ Manual Sorting is supported outside of the component to allow for custom connect
 
 3. Inside the `OnChange` event of the Table, add the code:
 
-   ```powerapps-dot
+   ```power-fx
    If(Self.EventName="Sort", 
    UpdateContext({
                    ctxSortCol:Self.SortEventColumn,
@@ -454,7 +454,7 @@ Manual Sorting is supported outside of the component to allow for custom connect
 
 5. Set the property `Sort Direction` to be:
 
-   ```powerapps-dot
+   ```power-fx
    If(ctxSortAsc,
        'PowerCAT.FluentDetailsList.CurrentSortDirection'.Ascending,
        'PowerCAT.FluentDetailsList.CurrentSortDirection'.Descending) 
@@ -462,7 +462,7 @@ Manual Sorting is supported outside of the component to allow for custom connect
 
 6. Set the input items collection to sort using the context variables set above:
 
-   ```powerapps-dot
+   ```power-fx
    SortByColumns(colData,ctxSortCol,If(ctxSortAsc,SortOrder.Ascending,SortOrder.Descending))
    ```
 
@@ -494,7 +494,7 @@ The paging buttons can then be defined as follows:
 
 The number of records label can be set to an expression similar to:
 
-```powerapps-dot
+```power-fx
 grid.TotalRecords & " record(s)  " & Text(CountRows(grid.SelectedItems)+0) & " selected" 
 ```
 
@@ -531,7 +531,7 @@ When a user invokes the row action, either by double clicking or pressing enter 
 
 If the `RaiseOnRowSelectionChangeEvent` property is enabled, when the selected rows are changed, the `OnChange` event is raised with the `EventName` set to `OnRowSelectionChange`. If the app needs to respond to a single row select rather than a row double-click, the `OnChange` can detect this using code similar to:
 
-```powerapps-dot
+```power-fx
 If(
     Self.EventName = "OnRowSelectionChange",
         If(!IsBlank(Self.EventRowKey),
@@ -546,7 +546,7 @@ To clear the selected records, you must set the `InputEvent` property to a strin
 
 for example
 
-```powerapps-dot
+```power-fx
 UpdateContext({ctxTableEvent:"ClearSelection"&Text(Rand())})
 ```
 
@@ -569,7 +569,7 @@ Add and modify the following formula in the component's `OnChange` property to c
 - Trigger events when a user changes the selected row: Enable the property **Raise OnRowSelectionChange event** in the component.
 - Configure link behavior: Add columns with the **ColCellType** value set to **link**.
 
-```powerapps-dot
+```power-fx
 /* Runs when selected row changes and control property 'Raise OnRowSelection event' is true */
 If( Self.EventName = "OnRowSelectionChange",
     Notify( "Row Select " & Self.EventRowKey )

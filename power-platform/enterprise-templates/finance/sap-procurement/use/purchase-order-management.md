@@ -12,7 +12,7 @@ contributors:
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: conceptual
-ms.date: 10/26/2023
+ms.date: 04/23/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -26,7 +26,7 @@ The SAP Purchase Order Management app is part of the SAP Procurement solution fo
 
 Watch the demo to see how you can manage your SAP PO data using the SAP Purchase Order Management app.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW18zOb]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW18zOb]
 
 ## View a purchase order
 
@@ -127,6 +127,7 @@ If you select **Edit**, you're able to:
 - You can sort column headings by ascending or descending order. To sort, select **Column Heading**. An _arrow_ will appear to show you the sort order.
 
   > [!NOTE]
+  >
   > The sort is done as a character string, so numbers may not be in numeric order.
 
 - You can also filter items in the _Items_ list. The filter box can be found on the right side of the Items list.
@@ -164,7 +165,7 @@ Field mappings from purchase order screen to the function module.
 | Header    | Order Number  |     | PURCHASEORDER |               |
 | Header    | Vendor        | POHEADER    | VENDOR |               |
 | Header    | Vendor Name   | POHEADER    |            | Not Sent  |
-| Header    | Purchasing Organization | POHEADER    PURCH_ORG  |               |
+| Header    | Purchasing Organization | POHEADER  |  PURCH_ORG  |   |
 | Header           | Purchasing Group        | POHEADER    | PUR_GROUP  |               |
 | Header           | Currency        | POHEADER    | CURRENCY |               |
 | Line             | Item                    | POITEM    | PO_ITEM  |               |
@@ -184,10 +185,10 @@ Field mappings from purchase order screen to the function module.
 | Condition (Default)             | Condition Type                    | POCOND    | COND_TYPE  | PBXX               |
 | Condition (Default)             | Condition Type                    | POCOND    | CHANGE_ID | U               |
 
-## See also
+### See also
 
-[SAP Vendor Management app](vendor-management.md)
-[SAP Requisition Management app](requisition-management.md)
-[SAP Goods Receipt Management app](goods-receipt-management.md)
-[SAP Vendor Invoice Management app](vendor-invoice-management.md)
-[SAP Vendor Payment management app](payment-management.md)
+- [SAP Vendor Management app](vendor-management.md)
+- [SAP Requisition Management app](requisition-management.md)
+- [SAP Goods Receipt Management app](goods-receipt-management.md)
+- [SAP Vendor Invoice Management app](vendor-invoice-management.md)
+- [SAP Vendor Payment management app](payment-management.md)

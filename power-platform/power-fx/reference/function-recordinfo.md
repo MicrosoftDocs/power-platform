@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/29/2021
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # RecordInfo function
@@ -53,27 +53,27 @@ The information available:
 
 ## Examples
 
-```powerapps-dot
+```power-fx
 RecordInfo( First(Accounts), RecordInfo.EditPermission )
 ```
 
 Checks the edit permission for the first record in the `Accounts` data source, which could be in Dataverse, SharePoint, SQL Server, or another tabular data source. If the user has permission to edit this record and modify the `Accounts` data source in general, then **RecordInfo** will return _true_.
 
-```powerapps-dot
+```power-fx
 With( { MyRecord: First( Accounts ) },
       RecordInfo( MyRecord, RecordInfo.EditPermission ) )
 ```
 
 Captures a record using the [**With**](function-with.md) function and then passes this value to the `RecordInfo` function. The result will be the same as the last example.
 
-```powerapps-dot
+```power-fx
 Collect( MyAccounts, FirstN( Accounts, 10 ) );
 RecordInfo( First( MyAccounts ), RecordInfo.EditPermission ) )
 ```
 
 Captures the first 10 records from the `Accounts` data source into the `MyAccounts` collection. Since the records originated from a data source, they can be used with the **RecordInfo** function. The result will be the same as the last example.
 
-```powerapps-dot
+```power-fx
 Collect( MyCollection, [ 1, 2, 3 ] );
 RecordInfo( First(MyCollection), RecordInfo.DeletePermission )
 ```

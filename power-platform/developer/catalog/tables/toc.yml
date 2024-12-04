@@ -1,0 +1,66 @@
+items:
+- name: About Catalog table reference
+  href: ../about-entity-reference.md
+- name: "Approval Rejection Applied Policy"
+  displayName: "mspcat_CertificationRejectionAppliedPolicy entity"
+  href: mspcat_certificationrejectionappliedpolicy.md
+- name: "Approval Request"
+  displayName: "mspcat_certificationrequest entity"
+  href: mspcat_certificationrequest.md
+- name: "Catalog Configuration"
+  displayName: "mspcat_CatalogDescription entity"
+  href: mspcat_catalogdescription.md
+- name: "Catalog Item"
+  displayName: "mspcat_applications entity"
+  href: mspcat_applications.md
+- name: "Catalog Item Cross Reference"
+  displayName: "mspcat_applicationreference entity"
+  href: mspcat_applicationreference.md
+- name: "Catalog Item File"
+  displayName: "mspcat_CatalogItemFile entity"
+  href: mspcat_catalogitemfile.md
+- name: "Catalog Publisher"
+  displayName: "mspcat_publisher entity"
+  href: mspcat_publisher.md
+- name: "Configuration for PowerApps Checker"
+  displayName: "mspcat_configurationforpowerapps entity"
+  href: mspcat_configurationforpowerapps.md
+- name: "Install Activity"
+  displayName: "mspcat_InstallActivity entity"
+  href: mspcat_installactivity.md
+- name: "Install History"
+  displayName: "mspcat_InstallHistory entity"
+  href: mspcat_installhistory.md
+- name: "Package"
+  displayName: "mspcat_packages entity"
+  href: mspcat_packages.md
+- name: "Package Locales"
+  displayName: "mspcat_packagelocales entity"
+  href: mspcat_packagelocales.md
+- name: "Packaged Solution"
+  displayName: "mspcat_PackageSolutions entity"
+  href: mspcat_packagesolutions.md
+- name: "Packaged Solution Components"
+  displayName: "mspcat_packagedsolutioncomponents entity"
+  href: mspcat_packagedsolutioncomponents.md
+- name: "Policy"
+  displayName: "mspcat_sspolicy entity"
+  href: mspcat_sspolicy.md
+- name: "Policy Template"
+  displayName: "mspcat_ssPolicyTemplate entity"
+  href: mspcat_sspolicytemplate.md
+- name: "Publisher Identity"
+  displayName: "mspcat_publisheridentity entity"
+  href: mspcat_publisheridentity.md
+- name: "Publisher Users"
+  displayName: "mspcat_PublisherUsers entity"
+  href: mspcat_publisherusers.md
+- name: "Rule set for PowerApps Checker"
+  displayName: "mspcat_rulesetforpowerappschecker entity"
+  href: mspcat_rulesetforpowerappschecker.md
+- name: "Static Analysis Policy"
+  displayName: "mspcat_staticanalysispolicy entity"
+  href: mspcat_staticanalysispolicy.md
+- name: "Status of PowerApps Checker package scan"
+  displayName: "mspcat_powerappsScanStatus entity"
+  href: mspcat_powerappsscanstatus.md

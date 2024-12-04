@@ -6,7 +6,7 @@ author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
 ms.custom: ""
-ms.date: 08/30/2021
+ms.date: 03/29/2024
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
@@ -241,6 +241,9 @@ Uploads data to Power Pages.
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |upload-path|Path where the website content is stored (alias: -p).|
 |deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
+|model-version|Indicates if the site data to be uploaded will use the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
+
+Learn more about [Microsoft Power Platform CLI support for Power Pages](/power-pages/configure/power-platform-cli).
 
 ## Catalog tasks (preview)
 

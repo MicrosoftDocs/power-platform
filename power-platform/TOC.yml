@@ -13,21 +13,27 @@
         - name: Guidance documentation
           href: guidance/index.yml
           displayName: CoE adoption guidance best practices
-        - name: Solution templates
-          href: solution-templates/overview.md
+        - name: Enterprise templates
+          href: enterprise-templates/overview.md
         - name: International availability
           href: availability.md
-        - name: Enable copilots and generative AI features
-          href: admin/geographical-availability-copilot.md
         - name: Important changes (deprecations) coming
           href: important-changes-coming.md
-        - name: Responsible AI
+        - name: Power Platform and SAP
+          href: sap/index.yml
+        - name: Copilots and generative AI features
           items:
-            - name: Overview
-              href: responsible-ai-overview.md
-            - name: FAQ for Copilot data security and privacy
-              href: faqs-copilot-data-security-privacy.md
-            - name: FAQ for optional data sharing for Copilot
-              href: faqs-copilot-data-sharing.md
-            - name: FAQ for using Copilot to generate deployment notes in pipelines
-              href: alm/faqs-ai-deployment-notes-pipelines.md
+            - name: Copilots and generative AI in Power Platform
+              href: copilot.yml
+            - name: Turn on copilots and generative AI features
+              href: admin/geographical-availability-copilot.md
+            - name: Responsible AI
+              items:
+                - name: Overview
+                  href: responsible-ai-overview.md
+                - name: FAQ for Copilot data security and privacy
+                  href: faqs-copilot-data-security-privacy.md
+                - name: FAQ for optional data sharing for Copilot
+                  href: faqs-copilot-data-sharing.md
+                - name: FAQ for using Copilot to generate deployment notes in pipelines
+                  href: alm/faqs-ai-deployment-notes-pipelines.md

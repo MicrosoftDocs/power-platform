@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI modelbuilder command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI modelbuilder command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -59,7 +59,7 @@ This parameter requires no value. It's a switch.
 
 #### `--emitvirtualattributes` `-eva`
 
-When set, includes the Virtual Attributes of entities in the generated code.
+When set, includes supporting name attributes for lookups that enable filtering on the primary name attribute values of lookup attributes.
 
 This parameter requires no value. It's a switch.
 
@@ -70,6 +70,10 @@ Filters the list of entities are retrieved when reading data from Dataverse. Pas
 #### `--entitytypesfolder` `-etf`
 
 Folder name that contains entities. The default name is 'Entities'.
+
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--generateGlobalOptionSets` `-go`
 

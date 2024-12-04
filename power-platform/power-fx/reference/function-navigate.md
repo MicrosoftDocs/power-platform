@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 10/19/2021
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Back and Navigate functions
@@ -105,7 +105,7 @@ When the **Back** function runs, the inverse transition is used by default. For 
 
 1. On **Screen2**, add a button, and set its **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Navigate( Screen1, ScreenTransition.Cover )
    ```
 
@@ -115,7 +115,7 @@ When the **Back** function runs, the inverse transition is used by default. For 
 
 1. On **Screen1**, add a button, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Back()
    ```
 

@@ -1,12 +1,12 @@
 ---
-title: Patch function (contains video)
+title: Patch function
 description: Reference information including syntax and examples for the Patch function.
 author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/18/2022
+ms.date: 4/11/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Patch function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows
 
 Modifies or creates one or more [records](/power-apps/maker/canvas-apps/working-with-tables#records) in a [data source](/power-apps/maker/canvas-apps/working-with-data-sources), or merges records outside of a data source.
 
@@ -60,7 +60,7 @@ The return value of **Patch** is the record that you modified or created. If you
 
 For example, you use `Set(MyAccount, Patch(Accounts, First(Account), 'Account Name': "Example name"));` and then `MyAccount.'Primary Contact'.'Full Name'`. You can't yield a full name in this case. Instead, to access the fields of a related table, use a separate lookup such as:
 
-```powerapps-dot
+```power-fx
 LookUp(Accounts, Account = MyAccount.Account).'Primary Contact'.'Full Name'
 ```
 
@@ -137,7 +137,7 @@ In the example below, consider the first lookup in the `If` statement. `(OrderID
 
 Power Apps currently interprets both the left-hand side `OrderId` and right-hand side `A[@OrderId]` as a field in the lookup scope. Therefore, lookup will always find the first row in `[dbo].[Orders1]` because the condition is always true (that is, any row's `OrderId` is equal to itself.)
 
-```powerapps-dot
+```power-fx
 ClearCollect(
     A,
     Filter(
@@ -182,7 +182,7 @@ When your formula uses multiple scopes with `ForAll`, `Filter`, and `Lookup` on 
 
 For example, you can use the **As** operator to disambiguate in the example below.
 
-```powerapps-dot
+```power-fx
 ClearCollect(
     A,
     Filter(
@@ -221,7 +221,7 @@ ForAll(
 
 Alternatively, you can use **ThisRecord** for the same purpose.
 
-```powerapps-dot
+```power-fx
 ClearCollect(
     A,
     Filter(
@@ -259,5 +259,7 @@ ForAll(
 ```
 
 To learn more about the usage of **As** operator and **ThisRecord** see **[Operators](operators.md)** article.
+
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

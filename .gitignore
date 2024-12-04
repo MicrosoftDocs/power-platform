@@ -1,12 +1,4 @@
-log/
-obj/
-_site/
-.optemp/
-_themes*/
-_repo.*/
 
-.openpublishing.buildcore.ps1
-/.vs
-power-virtual-agents/.vscode/*
-.vscode/*
-.DS_Store
+power-platform/enterprise-templates/finance/sap-procurement/Administer/install.md
+power-platform/enterprise-templates/finance/sap-procurement/Administer/install.md
+/power-platform/enterprise-templates/finance/sap-procurement/Administer

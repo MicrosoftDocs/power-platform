@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 08/23/2019
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,7 +14,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # SetFocus function
@@ -45,7 +45,7 @@ The control with focus may be visually different based on the [**FocusedBorderCo
 - [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control
 - [**TextInput**](/power-apps/maker/canvas-apps/controls/control-text-input) control
 
-You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollbale screen.
+You cannot set the focus to controls that are within a [**Gallery**](/power-apps/maker/canvas-apps/controls/control-gallery) control, [**Edit form**](/power-apps/maker/canvas-apps/controls/control-form-detail) control, or [Component](/power-apps/maker/canvas-apps/create-component). **SetFocus** can be used with a control in a scrollable screen.
 
 You cannot set the focus to controls that are within a [**Container**](/power-apps/maker/canvas-apps/controls/control-container) control.
 
@@ -67,7 +67,7 @@ You can use **SetFocus** only in [behavior formulas](/power-apps/maker/canvas-ap
 
 ### Focus on a newly exposed or enabled input control
 
-Many shopping carts allow the customer to use the shipping address as the billing address, alleviating the need to enter the same information twice. If a different billing address is desired, the billing address text input boxes are enabled, and it is helpful to guide the customer to the these newly enabled controls for faster data entry.
+Many shopping carts allow the customer to use the shipping address as the billing address, alleviating the need to enter the same information twice. If a different billing address is desired, the billing address text input boxes are enabled, and it is helpful to guide the customer to these newly enabled controls for faster data entry.
 
 ![Animation of choosing to use a custom Billing address, with focus moved to the Billing name input control as a result,turning off the automatic sync with the Shipping addresss.](media/function-setfocus/shipping-billing.gif)
 
@@ -108,7 +108,7 @@ When validating a form, it can be helpful to not only display a message if there
 
 In this animation, the validation button is repeatedly pressed until all the fields have been filled in properly. Note that the mouse pointer doesn't move down from the top of the screen. Instead the **SetFocus** function hsa moved the input focus to the control that requires attention with this formula:
 
-```powerapps-dot
+```power-fx
 If( IsBlank( Name ),
         Notify( "Name requires a value", Error ); SetFocus( Name ),
     IsBlank( Street1 ),
@@ -140,7 +140,7 @@ To create this example:
 ### Focus when displaying a screen
 
 > [!NOTE]
-> Although this example appears to be an **Edit form** control, unforutnatley **SetFocus** is not yet supported by that control. Instead, this example uses a scrollable screen to host the input controls.
+> Although this example appears to be an **Edit form** control, unfortunately **SetFocus** is not yet supported by that control. Instead, this example uses a scrollable screen to host the input controls.
 
 Similar to exposing an input control, when displaying a data entry screen it is helpful to focus the first input control for faster data entry.
 
@@ -150,7 +150,7 @@ In this animation, the data entry screen on the left is not using **SetFocus**. 
 
 On the right we have exactly the same app with the **OnVisible** property of the data entry screen set to this formula:
 
-```powerapps-dot
+```power-fx
 SetFocus( Name )
 ```
 

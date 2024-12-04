@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 search.audienceType: 
   - admin
 ---

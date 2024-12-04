@@ -5,10 +5,10 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/09/2020
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -26,7 +26,7 @@ In this section, we'll explore some best practices to follow when establishing a
 > * [Designate the Microsoft Power Platform admin role](pp-admin.md)
 > * [Manage users](../../admin/create-users.md)  
 > * [Plan and manage license and capacity](../../admin/capacity-add-on.md)
-> * [Establish an environment strategy](environment-strategy.md)
+> * [Establish an environment strategy](../white-papers/environment-strategy.md)
 > * [Manage Microsoft Dataverse for Teams environments](teams-environment-strategy.md)
    :::column-end:::
    :::column span="":::

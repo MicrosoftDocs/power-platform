@@ -4,7 +4,7 @@ description: Some features are not yet present in Unified Interface but can be e
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/20/2021
+ms.date: 02/27/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -18,15 +18,15 @@ Most of the core functionalities of sales and customer service have moved to the
 
 The following features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
 
-- [Advanced Find](/powerapps/user/advanced-find) 
+- [Advanced Find](/power-apps/user/advanced-find) 
 - Bulk edit
-- [Record sharing](/powerapps/user/assign-or-share-records)
-- [Audit History](/powerapps/developer/common-data-service/auditing-overview)
+- [Record sharing](/power-apps/user/assign-or-share-records)
+- [Audit History](/power-apps/developer/common-data-service/auditing-overview)
 - All options under **Set Personal Options** (![Settings gear.](media/settings-gear-icon.png "Settings gear"))
-- Reports
+- [Reports](/power-apps/user/work-with-reports)
 
  > [!NOTE]
-   > The hybrid experience is not available for on-premises versions or on mobile.  
+ > The hybrid experience is not available for on-premises versions, on mobile, or within Teams.  
 
 These features are enabled through a setting in System Settings.
 

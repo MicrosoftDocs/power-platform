@@ -1,10 +1,10 @@
 ---
-title: "Create or edit business units (preview) | MicrosoftDocs"
+title: Create or edit business units 
 description: Learn how to create or edit business units 
 author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/27/2023
+ms.date: 10/24/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
 - paulliew 
 ---
-# Create or edit business units (preview)
+# Create or edit business units 
 
 A business unit is a logical grouping of related business activities.
 
@@ -41,7 +41,7 @@ Keep the following in mind when creating business units:
 
 -   Each business unit can have multiple child business units.
 
--   Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.
+-   Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit. When creating a security role, you can choose any business unit according to your business needs, or use the root business unit if there are no specific requirements.
 
 -   You can't add a user into a business unit directly. All newly provisioned users are assigned to the root business.
 
@@ -49,11 +49,11 @@ Keep the following in mind when creating business units:
 
 -   Each business unit has a default team. You can't update the default team's name, nor delete the default team.
 
--   You can't add or remove users from the business unit's default team. However, you can change the user's current business unit to the new business unit and the user will automatically be added to the business unit's default team.
+-   You can't add or remove users from the business unit's default team. However, you can change a user's current business unit to a new business unit. The system automatically removes the user from the previous business unit's default team and adds the user to the new business unit's default team. **Plugins/workflows** can't be used for this type of user's team membership change. 
 
 -   You can assign a security role to the business unit's default team. This is done to simplify security role management where all your business unit team members can share the same data access.
 
--   You can assign additional teams to a business unit, but there can only be one business unit per team.
+-   You can assign more teams to a business unit, but there can only be one business unit per team.
 
 -   A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.
 
@@ -97,7 +97,7 @@ Make sure you have the System Administrator permission to update the settings.
 
     1.  Select **Edit** in the top-right corner of the **Details** box and update the data in one or more fields.
 
-    1.  Select a record type, under the **Details** box, to see a list of related records. For example, select **Users** to view a list of users in the selected business unit. Make changes in the entity, if required.
+    1.  Select a record type, under the **Details** box, to see a list of related records. For example, select **Users** to view a list of users in the selected business unit. Make changes in the entity, if necessary.
 
 5.  When you're done making changes, select **Save**.
 
@@ -167,13 +167,13 @@ Once this action is chosen, all relevant records of the source Business Unit wil
 
 ## Legacy experience
   
- If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units unless they are assigned a security role from that business unit.  
+ If your organization is structured around departments or divisions that have separate products, customers, and marketing lists, you might want to create business units. Business units are mapped to an organization’s departments or divisions. Users can securely access data in their own business unit, but they can’t access data in other business units unless they're assigned a security role from that business unit.  
   
  Business units, security roles, and users are linked together in a way that conforms to the role-based security model. Use business units together with security roles to control data access so people see just the information they need to do their jobs.   
   
  Keep the following in mind when creating business units:  
   
-- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You cannot change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9&preserve-view=true).
+- The organization (also known as the root business unit) is the top level of a business unit hierarchy. The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation), automatically create the organization when you install or provision customer engagement apps. You can’t delete the organization name. The organization name is derived from the domain name when the environment was provisioned. You can't change the organization name using the Business Unit form but it can be changed using the [Web API](/dynamics365/customer-engagement/web-api/businessunit?view=dynamics-ce-odata-9&preserve-view=true).
   
 - Each business unit can have just one parent business unit.  
   
@@ -181,17 +181,17 @@ Once this action is chosen, all relevant records of the source Business Unit wil
   
 - Security roles and users are associated with a business unit. You must assign every user to one (and only one) business unit.  
   
-- You cannot add a user into a business unit directly. All newly provisioned users are assigned to the root business.
+- You can't add a user into a business unit directly. All newly provisioned users are assigned to the root business.
 
-- You can change the user's business unit at anytime. Once the business unit is changed, the user will show up as a member of the business unit automatically.
+- You can change the user's business unit at any time. Once the business unit is changed, the user shows up as a member of the business unit automatically.
 
-- Each business unit has a default team. You cannot update the default team's name nor delete the default team.
+- Each business unit has a default team. You can't update the default team's name nor delete the default team.
 
-- You cannot add or remove users from the business unit's default team.  However you can change the user's business unit to the business unit and the user will automatically be added to the business unit's default team.
+- You can't add or remove users from the business unit's default team.  However you can change the user's business unit to the business unit and the user will automatically be added to the business unit's default team.
 
 - You can assign a security role to the business unit's default team. This is done to simplify security role management where all your business unit team members can share the same data access.
 
-- You can assign additional team to a business unit but there can only be one business unit per team.
+- You can assign more teams to a business unit, but there can only be one business unit per team.
 
 - A team can consist of users from one or many business units. Consider using this type of team if you have a situation where users from different business units need to work together on a shared set of records.  
 
@@ -214,7 +214,7 @@ Make sure you have the System Administrator permission to update the setting.
 
 2. On the Actions bar, select **New**.  
   
-3. In the **Business Unit** dialog box, type a name for the new business unit. Customer engagement apps automatically fills in the **Parent Business** field with the name of the root business unit.  
+3. In the **Business Unit** dialog box, type a name for the new business unit. Customer engagement apps automatically fill in the **Parent Business** field with the name of the root business unit.  
   
 4. If you want to change the parent business unit, select the **Lookup** button (![Lookup button.](media/lookup-4.png)), **Look Up More Records**, and then do one of the following:  
   
@@ -299,7 +299,7 @@ Make sure you have the System Administrator permission to update the setting.
 >    You can set it to true, and the user’s assigned security role for the from-Business unit is not removed. 
 > 2. **AlwaysMoveRecordToOwnerBusinessUnit**
 >    default = true (user owned records are moved to the new user’s business unit) 
->    You can set it to false, and the user owned records’ Business unit is not moved to the new user’s business unit. Note that the user will not be able to access these records unless a security role from the old business unit is assigned to the user. 
+>    You can set it to false, and the user owned records’ Business unit is not moved to the new user’s business unit. Note that the user won't be able to access these records unless a security role from the old business unit is assigned to the user. 
 
 #### Change the business unit for a team  
 

@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 01/10/2024
+ms.date: 11/13/2024
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -35,7 +35,7 @@ Pipelines enable admins to centrally govern citizen-led and pro-dev-led projects
   - The system handles the heavy lifting and ongoing maintenance so you don't have to.
 
 - Scale ALM at your own pace:
-  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI](../developer/cli/introduction.md)
+  - Regardless of where you're at in your ALM journey, you can extend pipelines to accommodate your evolving business needs. We aim for this upward transition to be as seamless and effortless as possible. More information: [Microsoft Power Platform CLI `pac pipeline` command group](../developer/cli/reference/pipeline.md) 
 - Achieve compliance, safety, monitoring, and automation goals with:
   - Secure production environments with approval based [delegated deployments](delegated-deployments-setup.md).
   - Customizations and audit log saved automatically and are easily accessible.
@@ -75,6 +75,10 @@ Pipelines deploy solutions as well as configuration for the target environment s
    > Power BI Dashboards (preview) and Power BI Datasets (preview) are not currently supported in pipelines. 
    >
 
+### Why can't I see my pipeline from my environment?
+
+First, ensure that your source and target environments are linked properly. You'll only be able to view your pipeline in the assigned source environments, such as your development environments. When linking each of your environments to your pipeline during configuration, you have an option of **Development Environment** or **Target Environment** environment type. If your pipeline-associated environments are assigned their proper type, your pipeline appears as an option in your source development environment.
+
 ### Does pipelines automatically store solution backups?
 
 Yes. Both managed and unmanaged solutions are automatically exported and stored in the pipelines host for every deployment.
@@ -103,8 +107,8 @@ A common setup example:
 
 Yes. See [delegated deployments](delegated-deployments-setup.md).
 
-### Can I use different service principals for diffent pipelines and stages?
-Yes. 
+### Can I use different service principals for different pipelines and stages?
+Yes. More information: [Deploy with a service principal](delegated-deployments-setup.md#deploy-with-a-service-principal)
 
 ### What connections can be used?
 
@@ -140,7 +144,7 @@ Yes, together these tools are powerful while keeping maker experiences simple. M
 
 ### Can I roll back to a previous version?
 
-Currently, only higher solution versions can be deployed or imported. As a work-around, admins download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
+Yes. If the pipeline setting is enabled, you can [redeploy previous solution versions](redeploy-past-solution-versions.md) from the run history view on the Pipelines page. If the setting is disabled, only higher solution versions can be deployed or imported. As a work-around, admins can download the artifact from the pipelines host, increment the solution version in the solution.xml file, then manually import it into the target environment. 
 
 ### Can I set retention policies for pipelines data?
 
@@ -164,7 +168,7 @@ Navigate to an unmanaged solution in development to an environment associated wi
 
 ### Can I deploy across regions?
 
-Not currently. The host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, a pipeline can't deploy from Germany to Canada. And a host in Germany shouldn't manage environments in Canada. Instead, separate hosts should be used for Germany and Canada.
+Yes, but only if the [Cross-Geo Solution Deployments](enable-cross-geo-solution-deployments.md) setting is enabled in the host. If the setting is disabled, the host and all environments associated with pipelines in a host must be located within the same geographic location (as specified when creating environments). For example, if the setting is disabled, a pipeline can't deploy from Germany to Canada and a host in Germany can't manage environments in Canada. In a case where the tenant administrator would like to prevent cross-geo solution deployments, separate hosts should be used for Germany and Canada.
 
 ### Can I deploy the same solution using different pipelines?
 
@@ -215,3 +219,8 @@ We encourage customers to use pipelines for core deployment functionality, and w
 [Extend pipelines](extend-pipelines.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+## Related information
+
+[Deploy solutions using Pipeline in Power Apps (video)](https://youtu.be/iziCkYl8Shc?feature=shared)

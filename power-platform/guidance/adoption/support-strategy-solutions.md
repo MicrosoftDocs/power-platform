@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 02/01/2022
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -106,7 +106,7 @@ Many customers choose to work with partners on their Power Platform adoption, in
 Microsoft support is used to raise platform-related technical issues. Based on your [support plan](/admin/support-overview), different technical support and advisory services are available to you.
 
 >[!TIP]
->Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://flow.microsoft.com/support/), and [Power Virtual Agents support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
+>Before raising a support ticket, also check [Power Apps support](https://powerapps.microsoft.com/support/), [Power Automate support](https://flow.microsoft.com/support/), and [Microsoft Copilot Studio support](https://powervirtualagents.microsoft.com/support/) for high-priority issues that broadly affect all customers.
 
 ## Considerations and key actions
 
@@ -125,7 +125,7 @@ Considerations and key actions you can take to improve your internal help desk s
 - Assess the readiness level of your help desk to handle support.
 - Arrange for more training for help desk staff, based on readiness gaps.
 - Determine what the escalation path will be for requests the help desk can’t directly handle.
-- Update the help desk knowledge base for known Power Platform topics. Ensure someone is responsible for regular updates to the knowledge base to reflect new and enhanced features over time. Keep up to date by subscribing to the [Power Apps blog](https://powerapps.microsoft.com/blog/), [Power Automate blog](https://powerautomate.microsoft.com/blog/), and [Power Virtual Agents blog](https://powervirtualagents.microsoft.com/) RSS feeds.
+- Update the help desk knowledge base for known Power Platform topics. Ensure someone is responsible for regular updates to the knowledge base to reflect new and enhanced features over time. Keep up to date by subscribing to the [Power Apps blog](https://powerapps.microsoft.com/blog/), [Power Automate blog](https://powerautomate.microsoft.com/blog/), and [Microsoft Copilot Studio blog](https://powervirtualagents.microsoft.com/) RSS feeds.
 - Ensure a good issue-tracking system is in place. It's often a ticketing system that can manage priority levels.
 - Decide if anyone will be on-call for any issues related to Power Platform. If appropriate, ensure the expectations for 24/7 support are clear.
 - Determine what SLAs will exist, and that expectations for response and resolution are clearly communicated.

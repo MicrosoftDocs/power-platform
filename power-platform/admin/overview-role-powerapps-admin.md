@@ -10,11 +10,11 @@ ms.author: sericks
 
 # What's the role of a Power Platform administrator?
 
-Administration of Power Apps, Power Automate, Power Pages, and Power Virtual Agents is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+Administration of Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio is done through the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
 
 ## Administration journey
-The evolution of an organization adopting Power Apps, Power Automate, Power Pages, and Power Virtual Agents starts with the administrator. As an administrator of Microsoft Power Platform, you begin your journey asking how you can protect your organization's data. What data is accessible through these services? Are there best practices to follow? What is the Power Platform security model and how should I control access to data? Once you determine how to proceed with data access, you'll then want to know how you can monitor and manage what users are doing with these services.
+The evolution of an organization adopting Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio starts with the administrator. As an administrator of Microsoft Power Platform, you begin your journey asking how you can protect your organization's data. What data is accessible through these services? Are there best practices to follow? What is the Power Platform security model and how should I control access to data? Once you determine how to proceed with data access, you'll then want to know how you can monitor and manage what users are doing with these services.
 
 The navigation pane on the left provides answers to these questions and guides you on this journey.
 

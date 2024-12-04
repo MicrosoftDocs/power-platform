@@ -69,7 +69,7 @@ Each item uses the following schema to visualize data in the component.
 
 Example Power Fx formula for basic `Items`:
 
-  ```powerapps-dot
+  ```power-fx
   Table(
       {
           ItemKey: "new",
@@ -118,7 +118,7 @@ Use the [**Switch()**](/power-apps/maker/canvas-apps/functions/function-if) form
 
 Replace the `false` values with appropriate expressions in the Power Fx language.
 
-  ```powerapps-dot
+  ```power-fx
     Switch( Self.Selected.ItemKey,
       /* Action for ItemKey 'new' (e.g., Patch function) */
       "new", false,
@@ -146,7 +146,7 @@ When a new dialog is shown, and the default focus should be on the control, an e
 To make calls to the input event, you can set a context variable that is bound to the Input Event property to a string that starts with `SetFocus` and followed by a random element to ensure that the app detects it as a change.
 
 Example Power Fx formula:
-```powerapps-dot
+```power-fx
 UpdateContext({ ctxResizableTextareaEvent:"SetFocus" & Text(Rand()) }));
 ```
 

@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI test command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI test command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 

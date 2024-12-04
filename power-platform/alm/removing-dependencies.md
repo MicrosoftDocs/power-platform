@@ -2,7 +2,7 @@
 title: "Removing dependencies overview (Microsoft Dataverse) | Microsoft Docs" # Intent and product brand in a unique string of 43-59 chars including spaces
 description: "Dependencies sometimes can block operations. This article describes how dependencies can be removed." 
 ms.custom: ""
-ms.date: 06/17/2020
+ms.date: 03/21/2024
 ms.reviewer: ""
 ms.topic: "article"
 author: "ccdietrich" 
@@ -18,7 +18,7 @@ Solution components often depend on other solution components. You can’t delet
 > [!NOTE]
 > In this article, *delete* means that the component is completely removed from the system.
 
-In this article, we'll discuss how to handle these dependencies and the strategies you can use to remove dependencies that you no longer need.
+In this article, we discuss how to handle these dependencies and the strategies you can use to remove dependencies that you no longer need.
 
 ## Dependencies of unmanaged vs. managed components
 
@@ -64,26 +64,15 @@ Uninstalling Solution 1 causes a component deletion because it's the only layer 
    - Uninstalling the Active (unmanaged) layer doesn't cause a component deletion. Only that layer will be removed. Note that you can't uninstall the Active solution, but you can remove components by using the **Remove Active Customization** feature.
    - Uninstalling Solution 1 causes a component deletion. The action happens in the base layer. Unlike scenario 2, you can uninstall Solution 1. The Active solution isn't considered an extension, and both layers will be removed.
 
-## Dependency Details page
+## Show dependencies page
 
-The **Dependency Details**page lists the dependencies for the selected solution. It can be invoked by:
+The **Show dependencies** command lists the dependencies for the selected solution or solution component. It can be invoked by:
 
-- Selecting **Show Dependencies** on the solution page.
+- Selecting **Show dependencies** on the solution page.
+- Selecting **Advanced** > **Show dependencies** within a solution when a solution component is selected.
 - Trying to uninstall a solution, which will cause the platform to detect that dependencies exist.
 
-![Example of a Dependency Details page.](media/dependency-dialog-with-dependencies.png "Example of a Dependency Details page")
-
-The **Dependency Details** page has the following columns:
-
-- **Display name**: The friendly name of the required component. Each component might show slightly different data to make the identification easier. In the preceding figure, you can see that the entity only shows its name, while the field displays its name and the name of its parent entity.
-- **Name/Id**: The internal name of the required component.
-- **Type**: The type of the required component.
-- **Required by**: The friendly name of the component that requires it (the dependent component). If the dependent component has a customization page, its name becomes a link that opens that page.
-- **Dependent Type**: The type of the dependent component.
-- **Solution Layers**: A link where you can see more details about the components involved in the dependency.
-
-> [!NOTE]
-> The required component is the one that you want to delete. The dependent component is the one that has references to the required component. To remove a dependency, you must make changes that affect the dependent component, not the required component.
+From the Dependencies page you can open, remove, or delete, the component. More information: [View dependencies for a component](/power-apps/maker/data-platform/view-component-dependencies)
 
 ## Diagnosing dependencies
 
@@ -184,11 +173,11 @@ However, the **new_numberfield** attribute is no longer listed, even if it exist
 To remove unmanaged dependencies, you need to act directly on the components, not in the solutions they belong to. For example, if you want to remove the dependencies between an attribute and a form, you must edit it in the Form Editor and remove the attribute from the form. The dependency will be removed after you select **Save** and **Publish**.
 
 > [!NOTE]
-> You can also delete the dependent component. That action deletes all dependencies, along with the component.
+> 
+> - The **Show dependencies** command lets you take action to view, remove the dependency, edit the component, or delete the component. More information: [View dependencies for a component](/power-apps/maker/data-platform/view-component-dependencies)
+> - You can also delete the dependent component. That action deletes all dependencies, along with the component.
 
-To see the dependencies of a component, locate it in the customizations page, and then select **Show dependencies**.
-
-![Customizations page.](media/solution-dependency-layers-and-dependencies-component-show-dependencies.png "Customizations page")
+To view the dependencies of a component, from the **Solutions** area, open the solution you want, select the vertical ellipses next to the component, and then select **Advanced** > **Show dependencies**.
 
 The page of dependencies has two distinct parts:
 

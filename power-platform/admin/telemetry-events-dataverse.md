@@ -5,9 +5,9 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 12/12/2022
-author: StephenRauchPM
+author: Zeffin
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -132,13 +132,13 @@ If a user reports an error, you can use the user ID (Microsoft Entra ID ID) to u
 
 ```kusto
 exceptions
-| where user_Id == '12345678-68cd-4e73-908f-126342b36315'
+| where user_Id == '00aa00aa-bb11-cc22-dd33-44ee44ee44ee'
 ```
 
 The entity ID and entity name are available in **customDimensions** in the **dependency** table.
 
 ```kusto
-dependencies<br />
+dependencies
 | where type == "SDK Retrieve"
 ```
 
@@ -206,9 +206,6 @@ dependencies
 ### Will this telemetry have throttling? 
 
 Yes. Basic 429 error details are currently provided.
-
-> [!div class="mx-imgBorder"] 
-> ![Basic 429 error.](media/application-insights-basic-429-error.png "Basic 429 error")
 
 ### Can I understand execution paths? Are calls made by the plug-in slowing the plug-in?  
 

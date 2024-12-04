@@ -14,71 +14,63 @@
       href: fusion-development.md
     - name: ALM for developers
       href: /power-platform/alm/alm-for-developers
-    - name: Publish and monitor your (ISV) app
+    - name: Publish your app on AppSource
+      href: appsource\publish-app.md
       items:
-        - name: Publish your app on AppSource
-          href: appsource\publish-app.md
-          items:
-            - name: "Step 1: Create a Microsoft Partner Center account"
-              href: appsource\register-microsoft-partner-network.md
-            - name: "Step 2: Create a managed solution for your app"
-              href: appsource\create-solution-app.md
-            - name: "Step 3: Create an AppSource package for your app"
-              href: appsource\create-package-app.md
-            - name: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key"
-              href: appsource\store-package-azure-storage.md
-            - name: "Next steps: Submit your app on Partner Center"
-              href: appsource\next-steps-submit-app-cloud-partner-portal.md
-            - name: "Appendix: App design best practices checklist"
-              href: appsource\appendix-app-design-best-practices-checklist.md
-            - name: "Appendix: App certification checklist"
-              href: appsource\appendix-app-certification-checklist.md
-            - name: "Appendix: Add licensing information to your solution"
-              href: appsource\appendix-add-license-information-to-your-solution.md
-        - name: Monitor your app in ISV Studio
-          items:
-            - name: Introduction to ISV Studio
-              href: isvstudio\index.md
-            - name: Home page
-              href: isvstudio\home.md
-            - name: App page
-              href: isvstudio\app.md
-            - name: Tenant page
-              href: isvstudio\tenant.md
-            - name: AppSource checker
-              href: isvstudio\appsource-checker.md
-            - name: Connector Certification
-              href: isvstudio\connector-certification.md
-            - name: App usage analytics
-              href: isvstudio\usage-analytics.md
-            - name: Install failures analytics
-              href: isvstudio\install-failure-analytics.md
-            - name: Auto App Updates (preview)
-              href: isvstudio\auto-update.md
-            - name: Embed Pay-as-you-go for ISVs (preview)
-              href: isvstudio/embed-analytics.md
-    - name: Catalog in Power Platform (preview)
-      items:
-        - name: Overview of catalog
-          href: catalog.md
-        - name: Administer the catalog
-          href: administer-catalog.md
-        - name: View, submit, and install catalog items
-          href: submit-catalog-items.md
-    - name: Unified developer experience for finance and operations apps (preview)
+        - name: "Step 1: Create a Microsoft Partner Center account"
+          href: appsource\register-microsoft-partner-network.md
+        - name: "Step 2: Create a managed solution for your app"
+          href: appsource\create-solution-app.md
+        - name: "Step 3: Create an AppSource package for your app"
+          href: appsource\create-package-app.md
+        - name: "Step 4: Store your AppSource Package on Azure Storage and generate a URL with SAS key"
+          href: appsource\store-package-azure-storage.md
+        - name: "Next steps: Submit your app on Partner Center"
+          href: appsource\next-steps-submit-app-cloud-partner-portal.md
+        - name: "Appendix: App design best practices checklist"
+          href: appsource\appendix-app-design-best-practices-checklist.md
+        - name: "Appendix: App certification checklist"
+          href: appsource\appendix-app-certification-checklist.md
+        - name: "Appendix: Add licensing information to your solution"
+          href: appsource\appendix-add-license-information-to-your-solution.md
+    - name: Use the catalog in Power Platform
+      items: 
+        - name: Overview
+          href: catalog/overview.md
+        - name: Retrieve catalog data
+          href: catalog/retrieve-data.md
+        - name: Submit catalog items
+          href: catalog/submit-items.md
+        - name: Install catalog items
+          href: catalog/install-items.md
+        - name: Item submission reference
+          href: catalog/submission-reference.md
+        - name: Event reference
+          href: catalog/events.md
+        - name: Catalog table reference
+          href: catalog/tables/toc.yml
+    - name: Unified developer experience for finance and operations apps
       items:
         - name: Overview
           href: unified-experience\finance-operations-dev-overview.md
           displayName: Overview of unified developer experience for finance and operations apps
         - name: Install development tools
           href: unified-experience\finance-operations-install-config-tools.md
-        - name: Write, deploy, and debug X++ code
+        - name: Tutorial-Write, deploy, and debug X++ code
           href: unified-experience\finance-operations-debug.md
+        - name: Workflow to write, deploy, debug and troubleshoot X++ code across multiple environments
+          href: unified-experience\finance-operations-innerloop.md
         - name: Unit testing
           href: unified-experience\finance-operations-testing.md
+        - name: Request credentials for product database access
+          href: unified-experience\finance-operations-product-db-access.md
         - name: Continuous integration and deployment
           href: unified-experience\finance-operations-pipelines.md
-        - name: Frequently asked questions (FAQs)
+        - name: Diagnose and analyze using trace parser
+          href: unified-experience\finance-operations-trace-parser.md
+        - name: Execute unit tests in Azure Pipelines
+          href: unified-experience\finance-operations-pipeline-test.md
+        - name: Frequently asked questions (FAQ's)
           href: unified-experience\finance-operations-faq.md
     - name: Tools
       expanded: true
@@ -86,9 +78,14 @@
         - name: Power Platform developer tools
           href: tools.md
         - name: Power Platform CLI
+          href: cli\introduction.md
           items:
-            - name: What is Power Platform CLI
-              href: cli\introduction.md
+            - name: Install Visual Studio Code extension
+              href: howto\install-vs-code-extension.md
+            - name: Install with .NET Tool
+              href: howto\install-cli-net-tool.md
+            - name: Install using Windows MSI
+              href: howto\install-cli-msi.md
             - name: Create and register a plug-in package
               href: howto\cli-create-package.md
             - name: Power Platform CLI reference
@@ -112,14 +109,16 @@
                 href: cli\reference\copilot.md
               - name: pac data
                 href: cli\reference\data.md
+              - name: pac env
+                href: cli\reference\env.md
               - name: pac help
                 href: cli\reference\help.md
               - name: pac modelbuilder
                 href: cli\reference\modelbuilder.md
-              - name: pac org
-                href: cli\reference\org.md
               - name: pac package
                 href: cli\reference\package.md
+              - name: pac pages
+                href: cli\reference\pages.md
               - name: pac pcf
                 href: cli\reference\pcf.md
               - name: pac pipeline
@@ -128,8 +127,6 @@
                 href: cli\reference\plugin.md
               - name: pac power-fx
                 href: cli\reference\power-fx.md
-              - name: pac powerpages
-                href: cli\reference\powerpages.md
               - name: pac solution
                 href: cli\reference\solution.md
               - name: pac telemetry
@@ -138,14 +135,14 @@
                 href: cli\reference\test.md
               - name: pac tool
                 href: cli\reference\tool.md
-              - name: pac virtual-agent
-                href: cli\reference\virtual-agent.md
         - name: Power Platform Tools for Visual Studio
           items:
             - name: What is Power Platform Tools for Visual Studio
               href: devtools-vs.md
             - name: Create a Power Platform Tools project
               href: devtools-vs-create-project.md
+            - name: Create and register a plug-in
+              href: howto\vs-create-plugin.md
             - name: Create and register a plug-in package
               href: howto\vs-create-package.md
         - name: Visual Studio connected service

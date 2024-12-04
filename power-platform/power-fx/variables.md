@@ -4,7 +4,7 @@ description: Reference information about working with global variables and colle
 author: gregli-msft
 ms.topic: conceptual
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Variables
 
@@ -43,11 +43,11 @@ Excel doesn't have variables. The value of a cell that contains a formula change
 
 Logic that you create in Power Fx behaves very much like Excel. Instead of updating cells, you can add controls wherever you want on a screen and name them for use in formulas.
 
-For example in Power Apps, you can replicate the Excel behavior in an app by adding a **[Label](/powerapps/maker/canvas-apps/controls/control-text-input)** control, named **Label1**, and two **[Text input](/powerapps/maker/canvas-apps/controls/control-text-input)** controls, named **TextInput1** and **TextInput2**. If you then set the **[Text](/powerapps/maker/canvas-apps/controls/control-text-input)** property of **Label1** to **TextInput1 + TextInput2**, it will always show the sum of whatever numbers are in **TextInput1** and **TextInput2** automatically.
+For example in Power Apps, you can replicate the Excel behavior in an app by adding a **[Label](/powerapps/maker/canvas-apps/controls/control-text-input)** control, named **Label1**, and two **[Text input](/powerapps/maker/canvas-apps/controls/control-text-input)** controls, named **TextInput1** and **TextInput2**. If you then set the **[Text](/powerapps/maker/canvas-apps/controls/control-text-input)** property of **Label1** to **TextInput1.Text + TextInput2.Text**, it will always show the sum of whatever numbers are in **TextInput1** and **TextInput2** automatically.
 
 ![Calculating the sum of two numbers in Power Fx.](media/variables/recalc1.png)
 
-Notice that the **Label1** control is selected, showing its **[Text](/powerapps/maker/canvas-apps/controls/properties-core)** formula in the formula bar at the top of the screen. Here we find the formula **TextInput1 + TextInput2**. This formula creates a dependency between these controls, just as dependencies are created between cells in an Excel workbook.  Let's change the value of **TextInput1**:
+Notice that the **Label1** control is selected, showing its **[Text](/powerapps/maker/canvas-apps/controls/properties-core)** formula in the formula bar at the top of the screen. Here we find the formula **TextInput1.Text + TextInput2.Text**. This formula creates a dependency between these controls, just as dependencies are created between cells in an Excel workbook.  Let's change the value of **TextInput1**:
 
 ![Animation of calculating the sum of two numbers in Power Fx.](media/variables/recalc2.gif)
 
@@ -55,7 +55,7 @@ The formula for **Label1** has been automatically recalculated, showing the new 
 
 In Power Fx, you can use formulas to determine not only the primary value of a control but also properties such as formatting. In the next example, a formula for the **[Color](/powerapps/maker/canvas-apps/controls/properties-color-border)** property of the label will automatically show negative values in red. The **[If](reference/function-if.md)** function should look familiar from Excel:
 
-`If( Value(Label1.Text) < 0, Red, Black )`
+`If( Value(Label1.Text) < 0, Color.Red, Color.Black )`
 
 ![Animation of conditional formatting.](media/variables/recalc-color.gif)
 
@@ -113,7 +113,7 @@ Let's rebuild our adding machine by using a global variable:
 
 3. To update the running total whenever a user selects the **Add** button, set its **OnSelect** property to this formula:
 
-    **Set( RunningTotal, RunningTotal + TextInput1 )**
+    **Set( RunningTotal, RunningTotal + TextInput1.Text )**
 
     The mere existence of this formula establishes **RunningTotal** as a global variable that holds a number because of the **+** operator. You can reference **RunningTotal** anywhere in the app. Whenever the user opens this app, **RunningTotal** has an initial value of *blank*.
 
@@ -210,7 +210,7 @@ Let's rebuild our adding machine by using a context variable:
 
 3. To update the running total whenever a user selects the **Add** button, set its **OnSelect** property to this formula:
 
-    **UpdateContext( { RunningTotal: RunningTotal + TextInput1 } )**
+    **UpdateContext( { RunningTotal: RunningTotal + TextInput1.Text } )**
 
     The mere existence of this formula establishes **RunningTotal** as a context variable that holds a number because of the **+** operator. You can reference **RunningTotal** anywhere in this screen. Whenever the user opens this app, **RunningTotal** has an initial value of *blank*.
 

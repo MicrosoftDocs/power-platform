@@ -10,8 +10,8 @@ metadata:
   ms.subservice: developer
   ms.topic: landing-page
   ms.collection: collection
-  author: KumarVivek
-  ms.author: kvivek
+  author: leeclontz
+  ms.author: leeclontz
   ms.date: 01/06/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -74,10 +74,6 @@ landingContent:
         links:
           - text: Publish your app on AppSource
             url: appsource/publish-app.md
-      - linkListType: how-to-guide
-        links:
-          - text: Monitor your app in ISV Studio
-            url: isvstudio/index.md
 
   # Card
   - title: Tools for Developers
@@ -156,7 +152,7 @@ landingContent:
             url: /analysis-services/analysis-services-developer-documentation/
 
   # Card
-  - title: Power Virtual Agents
+  - title: Copilot Studio
     linkLists:
       - linkListType: reference
         links:

@@ -1,24 +1,27 @@
 ---
-title: "Legacy storage capacity  | MicrosoftDocs"
-description: About the legacy storage model.
-ms.date: 06/08/2021
-ms.reviewer: ""
+title: Legacy storage capacity
+description: Learn more about the legacy storage model details.
+ms.date: 08/01/2024
+ms.reviewer: sericks
 ms.topic: conceptual
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+contributors:
+- ianceicys-msft 
 ---
+
 # Legacy storage capacity
 
-In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage prior to April 2019, you are using the legacy licensing model for storage discussed in this topic.
+In April 2019, we introduced Microsoft Dataverse capacity storage that is optimized for relational data, attachments, and audit logs. If you purchased storage before April 2019, you're using the legacy licensing model for storage discussed in this article.
 
 For information on the new storage model, see [New Microsoft Dataverse storage capacity](capacity-storage.md).
 
 ## Licenses for the legacy storage model 
 
-The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the new model licenses, you'll see the legacy model report: 
+The following licenses provide capacity using the legacy storage model. If you have any of the following licenses and none of the Dataverse capacity-based storage licenses, the legacy model report is displayed: 
 
 - Microsoft Dynamics 365 Additional Non-production Instance 
 - Microsoft Dynamics 365 Additional Test Instance 
@@ -28,9 +31,9 @@ The following licenses provide capacity using the legacy storage model. If you h
 To see whether you have any of these licenses, sign in to the Microsoft 365 admin center, and then go to **Billing** > **Licenses**.
 
 > [!NOTE]
-> If you have a mix of the abovementioned legacy model licenses and [new model licenses](capacity-storage.md#licenses-for-the-new-storage-model), you'll see the [new model report](capacity-storage.md).
+> If you have a mix of the abovementioned legacy model licenses and [new model licenses](capacity-storage.md#licenses-for-microsoft-dataverse-capacity-based-storage-model), you'll see the [new model report](capacity-storage.md).
 > 
-> If you have none of the abovementioned legacy model licenses nor the [new model licenses](capacity-storage.md#licenses-for-the-new-storage-model), you'll see the [new model report](capacity-storage.md).
+> If you have none of the abovementioned legacy model licenses nor the [new model licenses](capacity-storage.md#licenses-for-microsoft-dataverse-capacity-based-storage-model), you'll see the [new model report](capacity-storage.md).
 
 ## Verifying your legacy storage model
 
@@ -66,7 +69,7 @@ All tables of Dataverse, including system tables, are included in the storage ca
 |Number  |Description |
 |---------|---------|
 |(1)   |**Storage capacity usage**  <ul><li>**File and database**: The following tables store data in file and database storage: <ul><li>Attachment</li><li>AnnotationBase</li><li>Any custom or out-of-the-box table that has columns of datatype file or image (full size)</li><li>Any table that is used by one or more installed Insights applications and [ends in *- Analytics*](#what-are-tables-ending-in---analytics-in-my-capacity-report) </li> </ul><ul><li>WebResourceBase</li></ul><ul><li>RibbonClientMetadataBase</li></ul></li><li>**Log**: The following tables are used: <ul><li>AuditBase</li><li>PlugInTraceLogBase</li></ul><li>**Database only**: All other tables are counted for your database</li></ul>  |
-|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity given at the time of sign-up </li><li>**User licenses**: Additional capacity added for every user license purchased</li><li>**Additional storage**: Any additional storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
+|(2)    |**Storage capacity, by source** <ul><li>**Org (tenant) default**: The default capacity provided at account creation </li><li>**User licenses**: Extra capacity added for every user license purchased</li><li>**Additional storage**: Any extra storage you bought </li><li>**Total**: Total storage available </li><li>**View self-service sources**: See [View self-service license amounts and storage capacity](view-self-service-capacity.md)</li></ul>      |
 |(3)     |**Top storage usage, by environment**: The environments that consume the most capacity        |
 |(4)  |  **Add-ons**:  Your organization's add-on usage details. See [View capacity add-ons in Power Platform admin center](capacity-add-on.md#view-capacity-add-ons-in-power-platform-admin-center) |
 
@@ -149,24 +152,28 @@ To view this page, select **Resources** > **Capacity** > **Trials** tab.
 |---------|---------|---------|
 |**Total storage**     | 100 GB        | 110 GB        |
 
-The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there is a deficit. This tenant should free up storage or purchase more capacity.
+The 110 GB of storage is used by the three types of storage: database, log, and file. This tenant is 10 GB over in storage usage. Therefore, there's a deficit. This tenant should free up storage or purchase more capacity.
 
 ## Changes for exceeding storage capacity entitlements
 
 We're making changes for what happens when an organization's storage capacity is close to, or exceeds the capacity entitled or purchased via add-ons.
 
-Notifications for capacity approaching storage limits will be triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted will be sent when total legacy model capacity has less than 5% of space available.  The final tier of notification will trigger when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements), which will alert the admin that the operations below will no longer be available until the overage is resolved.
+Notifications for capacity approaching storage limits are triggered when any of total legacy model storage has less than 15% of space available.  Another warning notification that admin operations could be impacted is sent when total legacy model capacity has less than 5% of space available.  The final tier of notification is sent when the tenant is ‘in overage’ (storage usage exceeds capacity entitlements). This alerts the admin that the following operations aren't available until there's available capacity present on the tenant.
 
-- Create a new environment (requires minimum 1GB capacity available)
+- Create a new environment (requires minimum 1 GB capacity available)
 - Copy an environment
 - Restore an environment
-- Convert a trial environment to paid (requires minimum 1GB capacity available)
-- Recover an environment (requires minimum 1GB capacity available)
+- Convert a trial environment to paid (requires minimum 1 GB capacity available)
+- Recover an environment (requires minimum 1 GB capacity available)
 - Add Dataverse database to an environment
 
-These notifications are sent out to tenant admins on a weekly basis. At this time, there is no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. All tenant admins for a tenant will automatically receive these notifications.
+These notifications are sent out to tenant admins on a weekly basis. 
 
-Additionally, there will still be a notification banner in the Power Platform admin center when a tenant has exceeded storage capacity.
+At this time, there's no option for the tenants to opt-out of these notifications or delegate these notifications to someone else. 
+
+All tenant admins for a tenant automatically receive these notifications.
+
+A notification banner is displayed in the Power Platform admin center when a tenant has exceeded storage capacity.
 
 ## Actions to take for a storage capacity deficit
 
@@ -176,11 +183,11 @@ You can always [free up storage](free-storage-space.md), [delete unwanted enviro
 
 ### Why is my storage consumption decreasing in database and growing in file?
 
-We are constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as “Annotation” and “Attachment” is moving from database to file storage. This leads to decreased usage of database capacity and an increase in file capacity.
+We're constantly optimizing the Dataverse for ease of use, performance, and efficiency. Part of this ongoing effort is to move data to the best possible storage with the lowest cost for customers. File-type data such as _Annotation_ and _Attachment_ is moving from database to file storage, leading to decreased usage of database capacity and an increase in file capacity.
 
 ### Why could my database table size decrease while my table and file data sizes remain the same?
 
-As part of moving file-type data such as “Annotation” and “Attachment” out from database and into file storage, we periodically reclaim the freed database space. This leads to decreased usage of database capacity, while the table and file data size computations remain unchanged.
+As part of moving file-type data such as _Annotation_ and _Attachment_ out from database and into file storage, we periodically reclaim the freed database space leading to decreased usage of database capacity, while the table and file data size computations remain unchanged.
 
 ### I have available instances (production and sandbox), but my capacity usage is more than my capacity entitlement. Will I be able to provision new environments? 
 
@@ -188,23 +195,27 @@ Provisioning a new environment requires that you not be delinquent in storage ca
 
 ### I have storage licenses from the legacy licensing model, and I also purchased new model storage licenses. Which report will I see?
 
-You'll see the report for the [new licensing model](capacity-storage.md). 
+You see the [Microsoft Dataverse capacity-based storage](capacity-storage.md) report. 
 
-### Do I get notified through email when my org is over capacity?
+### Do I get notified through email when my organization is over capacity?
 
-Yes, tenant admins are notified through email on a weekly basis if their org is at or over capacity. Additionally, tenant admins will also be notified once their org reaches 15% of available capacity, and once more when their org reaches 5% of available capacity.
+Yes, tenant admins are notified through email on a weekly basis if their organization is at or over capacity. 
 
-### What are tables ending in “- analytics” in my capacity report?
+Tenant admins are also notified when their organization reaches 15% of available capacity, and when their organization reaches 5% of available capacity.
 
-Tables ending in “– Analytics” are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard to generate predictive insights and/or analytics dashboards. The data is synched from Dataverse tables. See **More information** below for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
+### What are tables ending in “- Analytics” in my capacity report?
 
-**More information:**
+Tables ending in "– Analytics" are tables used by one or more Insights applications, for example Sales Insights, Customer Service Hub, or Field Service. 
+
+Resource scheduling and optimization analytics dashboards generate predictive insights and require data that is synched from Dataverse tables. 
+
+For more documentation covering the installed Insights applications and the "– Analytics" tables used to create insights and dashboards learn more in:
 - [Sales Insights ](/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                             
+- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)                                                                                          
 - [Customer Service Hub](/dynamics365/customer-service/customer-service-analytics-insights-csh) 
 - [Field Service](/dynamics365/field-service/reports) 
 
-### See also
+### Related information
 
 [Dataverse storage capacity](capacity-storage.md) <br />
 [What's new in storage](whats-new-storage.md) <br />

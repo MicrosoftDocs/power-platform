@@ -1,17 +1,15 @@
 ---
-title: "Unit testing (preview)" 
+title: "Unit testing" 
 description: Shows you how to create and run test cases.
 author: pvillads
-ms.date: 08/28/2023
+ms.date: 06/06/2024
 ms.topic: how-to
 ms.subservice: developer
 ms.reviewer: pehecke
 ms.author: pvillads
 ---
 
-# Unit testing (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+# Unit testing
 
 This how-to article shows you how to create and run reliable test cases.
 
@@ -19,7 +17,7 @@ This how-to article shows you how to create and run reliable test cases.
 
 You need to have a Power Platform unified developer experience installed and configured on your local machine and a Power Platform developer-focused sandbox environment linked to it. It's important to keep the cloud and local representation of the code the same (synchronized).
 
-More information: [Install and configure development tools (preview)](finance-operations-install-config-tools.md)
+More information: [Install and configure development tools](finance-operations-install-config-tools.md)
 
 ## Key concepts
 
@@ -34,7 +32,7 @@ You can create new test cases to test the functionality in an application.
 1. On the **File** menu, select **Open** > **Project/Solution**, and then select **FleetManagement** **solution** from the desktop folder. If the solution file isn't on your computer, the steps to create it are listed in [End-to-end scenario for the Fleet Management sample application](/dynamics365/fin-ops-core/dev-itpro/dev-tools/fleet-management-sample).
 1. In **Solution Explorer**, right-click the **Fleet Management** solution, select **Add**, and then select **New Project**.
 1. Choose **finance and operations** as the project type to create.
-1. Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then select **OK**. 
+1. Name this new project *FleetManagementUnitTestSample*, specify the FleetManagement folder on the desktop (C:\Users\Public\Desktop\FleetManagement) as the location, and then select **OK**.
 1. In **Solution Explorer**, right-click the new project, and then select **Properties**.
 1. Set the **Model** property to **FleetManagementUnitTests**, and then select **OK**.
 1. Now add a test class containing the tests against the fleet management code. Right-click the FleetManagementUnitTestSample project, select **Add**, and then select **New Item**.
@@ -143,6 +141,6 @@ Creating a test specific module helps to keep test code together and manageable.
 
 ### See also
 
-[Write, deploy, and debug X++ code (preview)](finance-operations-debug.md)
+[Write, deploy, and debug X++ code](finance-operations-debug.md)
 
 [!INCLUDE [footer-banner](../../includes/footer-banner.md)]

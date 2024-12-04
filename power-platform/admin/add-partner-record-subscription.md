@@ -1,13 +1,13 @@
 ---
 title: "Add a Partner of Record (POR) for sales and tech support"
 description: "A Microsoft Partner of Record (POR) can provide sales and tech expertise for your Dataverse. Add a POR at the time of purchase or to an existing subscription."
-author: mukeshpo
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/16/2020
 ms.subservice: admin
-ms.author: mukeshpo
-ms.reviewer: jimholtz
+ms.author: sericks
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

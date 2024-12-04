@@ -21,20 +21,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "power-virtual-agent",
-      "build_source_folder": "power-virtual-agents",
-      "build_output_subfolder": "power-virtual-agents",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "project-sophia",
       "build_source_folder": "ps-docs",
       "build_output_subfolder": "ps-docs",

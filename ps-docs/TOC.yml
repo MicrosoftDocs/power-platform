@@ -6,6 +6,10 @@
           href: overview.md
         - name: Explore a topic
           href: ask-question.md
+        - name: Connect to your data
+          href: data-connections.md
+        - name: Manage context for data analysis
+          href: context-manage.md
         - name: Use the account planning guide
           href: account-planning-guide.md
         - name: What is a workspace?

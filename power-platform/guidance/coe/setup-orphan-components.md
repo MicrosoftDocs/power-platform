@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 02/08/2023
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -20,7 +20,7 @@ This article will help you to set up the clean-up for orphaned objects.
 You use this functionality to identify objects where the maker has left the organization, and ask managers to maintain permissions of their former employees.
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 >[!NOTE]
 >The flows supporting this processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams is not available in GCC High and DoD. These flows should remain turned off in these regions as they will not work.

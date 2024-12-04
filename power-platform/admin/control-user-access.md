@@ -52,12 +52,12 @@ Note the following information about security groups:
 - **New**: Security groups can't be assigned to default and developer environment types. If you've already assigned a security group to your default or developer environment, we recommend removing it since the default environment is intended to be shared with all users in the tenant and the developer environment is intended for use by only the owner of the environment.
 - Environments support associating the following group types: Security and Microsoft 365. Associating [other group types](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&WT.mc_id=365AdminCSH&preserve-view=true) is not supported.
 - When you select a security group, be sure to select a Microsoft Entra security group and not one created in on-premises Windows Active Directory. On-premises Windows AD security groups aren't supported.
-- If a user isn't part of the assigned security group to the environment but has the Azure tenant Global Administrator role, the user will still show as an active user and will be able to sign in.
+- If a user isn't part of the assigned security group to the environment but has the Power Platform Administrator role, the user will still show as an active user and will be able to sign in.
 - If a user is assigned the Dynamics 365 Service Admin role, then the user must be part of the security group before they are enabled in the environment. They can't access the environment until they are added to the security group and enabled.
 - All your [application users](manage-application-users.md) can run in any environments that're secured with a security group, without being a member of the security group.
 
 > [!NOTE]
-> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You assign the security roles in the web application.  If users don’t have a security role, they'll get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
+> All licensed users, whether or not they are members of the security groups, must be assigned security roles to access data in the environments. You [assign security roles](assign-security-roles.md) in the web application.  If users don’t have a security role, they'll get a data access denied error when trying to run an app. Users can't access environments until they are assigned at least one security role for that environment. For more information, see [Configure environment security](database-security.md).
 > Automatic user assignment to an environment is not supported for trial environments. For trial environments, users must be assigned manually. 
   
 ## Create a security group and add members to the security group  
@@ -83,7 +83,7 @@ To remove a user from the security group, select the security group and then, ne
   
 ### Create a user and assign license  
   
-1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**. 
+1. In the [!INCLUDE[pn_office_365_admin_center](../includes/pn-office-365-admin-center.md)], select **Users** > **Active users** > **+ Add a user**.
 
 2. Enter the user information, select licenses, and then select **Add**.  
   
@@ -94,11 +94,11 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 > [!NOTE]
 > If an environment has a Power Apps per-app plan allocated, all users will be considered licensed when they attempt to access the environment, including users that don't have individual licenses assigned. Per-app plan allocation on an environment satisfies the requirement for users to be licensed in order to access the environment.
   
-## Associate a security group with an environment 
+## Associate a security group with an environment
   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin, Global admin, or Microsoft Power Platform admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Dynamics 365 admin or Microsoft Power Platform admin).
 
-1. In the navigation pane, select **Environments**. 
+1. In the navigation pane, select **Environments**.
 
 1. Select the name of the environment.
 

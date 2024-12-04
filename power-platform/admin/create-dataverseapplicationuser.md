@@ -2,11 +2,11 @@
 title: "Create a Dataverse application user (preview) | Microsoft Docs"
 description: Power Platform API Reference - Create a Dataverse application user
 author: laneswenka
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 10/10/2022
+ms.date: 07/23/2024
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Use this endpoint to create an application user in a target environment.  Callers of this endpoint must either be Power Platform administrators, Global administrators, or a Power Platform Service Principal application.
+Use this endpoint to create an application user in a target environment.  Callers of this endpoint must either be Power Platform administrators or a Power Platform Service Principal application.
 
 ## Authentication
 
@@ -60,7 +60,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 }
 ```
 
-After performing this action, you can confirm that the service principal from your Microsoft Entra tenant was added to the environment as an application user.  This can be validated by going to the Power Platform admin center, select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Application users**.  This always adds the application user as a System Administrator.
+After performing this action, you can confirm that the service principal from your Microsoft Entra tenant was added to the environment as an application user. This can be validated by going to the Power Platform admin center, select **Environments** > [select an environment] > **Settings** > **Users + permissions** > **Application users**. This always adds the application user as a System Administrator.
 
 
 

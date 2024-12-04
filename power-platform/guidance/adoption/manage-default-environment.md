@@ -5,7 +5,7 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 07/12/2023
+ms.date: 06/13/2024
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
@@ -44,7 +44,7 @@ While the default environment is intended for personal productivity, makers migh
 
 Use the Power BI dashboard in the CoE Starter Kit to [identify widely shared apps and flows](/power-platform/guidance/coe/power-bi-govern#identify-widely-shared-apps).
 
-When 10 or more employees are using a personal productivity app or flow, the Power Platform CoE can also help you to evaluate whether it should be moved to its own or a shared environment. The following table describes the parameters to consider. [Learn more about establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy).
+When 10 or more employees are using a personal productivity app or flow, the Power Platform CoE can also help you to evaluate whether it should be moved to its own or a shared environment. The following table describes the parameters to consider. [Learn more about establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy).
 
 <table>
     <th>Parameters</th><th>Defining criteria</th><th>Environment</th>
@@ -158,7 +158,7 @@ Keep these key points in mind:
 
 ## Backup and restoration of the default environment
 
-Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [Support environment](/power-platform/admin/support-environment). Once that restore is complete, you can view and export data as you need. Keep in mind, that when you restore the default environment, you might also be restoring unused or orphaned apps and flows that were removed during cleanup.
+Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [Support environment](/power-platform/admin/support-environment). Once that restore is complete, you can view and export data as you need. Keep in mind, that when you restore the default environment, you might also be restoring unused or orphaned apps and flows that were removed during cleanup. More information: [Backup and restore environments](/power-platform/admin/backup-restore-environments).
 
 ### See also
 

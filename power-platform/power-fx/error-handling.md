@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: conceptual
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 11/18/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - mduelae
   - gregli-msft
-  - jorisdg
+  - gregli
 ---
 # Error handling
 
@@ -38,7 +38,7 @@ Let's start with a simple example.
 1. Insert a **Label** control.
 1. Set the **Text** property of the **Label** control to the formula
 
-```powerapps-dot
+```power-fx
 1/Value( TextInput1.Text )
 ```
 ![Error banner displayed with "the value cannot be converted to a number" for the text input control containing "Text input"](media/error-handling/intro-error-default.png)
@@ -47,21 +47,21 @@ We have an error because the default text of a **TextInput** control is `"Text i
 
 Obviously, we don't want an error to greet the user each time they start this app.  Likely `"Text input"` isn't the right default for the text input box anyway.  To remedy this, let's change the **Default** property of the **TextInput** control to:
 
-```powerapps-dot
+```power-fx
 Blank()
 ```
 ![Error banner displayed with "division by zero"](media/error-handling/intro-error-blank.png)
 
 Hmm, now we have a different error.  Mathematical operations with *blank*, such as division, will coerce the blank value to a zero.  And that is now causing a division by zero error.  To remedy this, we need to decide what the appropriate behavior is for this situation in this app.  The answer may be to show *blank* when the text input is *blank*.  We can accomplish this by wrapping our formula with the **IfError** function:
 
-```powerapps-dot
+```power-fx
 IfError( 1/Value( TextInput1.Text ), Blank() )
 ```
 ![No error banner displayed, an error due to a blank value has been replaced with a blank](media/error-handling/intro-error-iferror-all.png)
 
 Now the error is replaced with a valid value and the error banner has gone away.  But, we may have overshot, the **IfError** we used covers *all* errors, including typing in a bad value such as `"hello"`.  We can address this by tuning our **IfError** to handle the division by zero case only with and rethrowing all other errors:
 
-```powerapps-dot
+```power-fx
 IfError( 1/Value( TextInput1.Text ), 
          If( FirstError.Kind = ErrorKind.Div0, Blank(), Error( FirstError ) ) )
 ```
@@ -84,13 +84,13 @@ And if we type in something illegal, like `hello`, then we'll receive an error b
 This is a simple introductory example.  Error handling can be done many different ways, depending on the needs of the app:
 
 1. Instead of an error banner, we could have shown **"#Error"** in the label control with the formula.  To keep the types of the replacements compatible with the first argument to **IfError** we need to explicitly convert the numerical result to a text string with the **Text** function.
-    ```powerapps-dot
+    ```power-fx
     IfError( Text( 1/Value( TextInput1.Text ) ), 
              If( FirstError.Kind = ErrorKind.Div0, Blank(), "#Error" )
     ```
     ![no error banner and instead #Error is shown as the result](media/error-handling/intro-error-inlinestring.png)
 2. Instead of wrapping this specific instance with **IfError** we could have written a centralized **App.OnError** handler. We can't replace the string shown with "#Error" as the error has already happened and **App.OnError** is only provided to control reporting.
-    ```powerapps-dot
+    ```power-fx
     If( FirstError.Kind <> ErrorKind.Div0, Error( FirstError ) )
     ```
 
@@ -166,7 +166,7 @@ If an error is encountered during one of the iterations of **ForAll**, the rest 
 
 For example, the following formula will result in **ForAll** returning two errors (for the division by zero for `Value` of 0, twice) and `Collection` will have three records (for when `Value` isn't 0): `[1, 2, 3]`.
 
-```powerapps-dot
+```power-fx
 Clear( Collection ); 
 ForAll( [1,0,2,0,3], If( 1/Value > 0, Collect( Collection, Value ) ) );
 ```
@@ -210,7 +210,7 @@ The functions that modify data in data sources, such as **[Patch](reference/func
 - After the operation, the **Errors** function will also return the errors for previous operations.  This can be useful for displaying the error message on a form screen without needing to capture the error in a state variable.
 
 For example, this formula will check for an error from **Collect** and display a custom error message:
-```powerapps-dot
+```power-fx
 IfError( Collect( Names, { Name: "duplicate" } ),
          Notify( $"OOPS: { FirstError.Message }", NotificationType.Warning ) )
 ```

@@ -3,11 +3,11 @@ title: "Manage group teams  | MicrosoftDocs"
 description: About managing group teams 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 03/21/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: matp
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -15,7 +15,7 @@ search.audienceType:
 
 ## About group teams
 
-An Microsoft Entra *group* team. Similar to *owner* team, a Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
+A Microsoft Entra *group* team. Similar to *owner* team, a Microsoft Entra group team can own records and can have security roles assigned to the team. There are two *group* team types, and they correspond directly to the Microsoft Entra group types – Security and Microsoft 365. The *group* security role can be just for the team or for team member with User privileges [member's privilege inheritance](security-roles-privileges.md#team-members-privilege-inheritance). Team members are dynamically derived (added and removed) when they access the environment based on their Microsoft Entra group membership. 
 
 ### Using Microsoft Entra groups to manage a user's app and data access 
 
@@ -89,7 +89,7 @@ For more information, see [Assign a record to a user or team](/powerapps/user/as
    - Don't have the correct permissions? Contact your system administrator.
 
    Prerequisites:
-   1. An Microsoft Entra Group is required for each group team.
+   1. A Microsoft Entra Group is required for each group team.
    2. Obtain the Microsoft Entra Group's **ObjectID** from your https://portal.azure.com site.
    3. Create a custom security role that contains privileges per your team's collaboration requirement. See the discussion of [member's inherited privileges](security-roles-privileges.md#team-members-privilege-inheritance) if you need to extend the team member's privileges directly to a user.
 
@@ -194,6 +194,11 @@ When manually assigning a record or sharing a record using the built-in form, th
     
 4.	Select **OK** > **Save** > **Publish**.
 
+## Delete team members and group team
+You can [delete the group team](manage-teams.md#delete-a-team) by first removing all the team members from the Dataverse group team. 
+
+## Delete Microsoft Entra group
+When the Microsoft Entra group is deleted from the Azure.portal, all members are removed automatically from the Dataverse group team in the environment within 24 hours. The [Dataverse group team can then be deleted](manage-teams.md#delete-a-team) after all the members are removed.
 
 ## Other team operations  
 See:

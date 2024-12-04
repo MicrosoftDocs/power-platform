@@ -1,17 +1,17 @@
 ---
 title: Working with JSON in Power Fx
 description: Guide to working with JSON in Power Fx.
-author: jorisdg
+author: gregli
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/10/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jorisde
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Working with JSON in Power Fx
 
@@ -32,7 +32,7 @@ Power Fx allows makers to read **JSON** into an [Untyped object](untyped-object.
 
 Each of the fields can be accessed using the dot notation on the **Untyped object** value returned from **ParseJSON**.
 
-```powerapps-dot
+```power-fx
 Set( untyped, ParseJSON( jsonStringVariable ) );
 
 Set( item, Text ( untyped.ItemName ) );
@@ -43,7 +43,7 @@ Set( preorder, Boolean ( untyped.AvailableForPreOrder ) );
 
 It is generally a good idea to explicitly convert an untyped object's value to a specific type. Setting an untyped object as a variable value makes the variable an **Untyped object** as well. So, converting such value explicitly when setting to a variable is likely needed. But in most cases untyped object values will convert to a specific type automatically ("coerce") when used as function parameters where the type is a simple type like boolean, number, or text, and the function's parameter profile does not have potential conflicting overloads.
 
-```powerapps-dot
+```power-fx
 Left( untyped.ItemName, 1 ); // "W"
 Radians( untyped.Quantity ); // 0.80285146
 If (untyped.AvailableForPreOrder, "Available", "Not Available" ); // "Available"
@@ -51,14 +51,14 @@ If (untyped.AvailableForPreOrder, "Available", "Not Available" ); // "Available"
 
 In addition to automatically converting the type in function calls, untyped objects will also be converted when assigned to control properties, where possible.
 
-```powerapps-dot
+```power-fx
 Label1.Text: untyped.Quantity
 InputText1.Default: untyped.ItemName
 ```
 
-And finally, when [using operators](./operators.md) such as **&** or **+**, an **Untyped object** will be coerced if there is no ambigiuty on the expected type.
+And finally, when [using operators](./operators.md) such as **&** or **+**, an **Untyped object** will be coerced if there is no ambiguity on the expected type.
 
-```powerapps-dot
+```power-fx
 untyped.Quantity + 1 // result is a number
 untyped.ItemName & " (preorder)" // result is text
 untyped.Quantity + untyped.Quantity // result is a number
@@ -70,7 +70,7 @@ untyped.Quantity & untyped.ItemName // result is text
 
 In case a field name consists of an invalid identifier name, for example when the field names starts with a number or contains invalid characters such as a hyphen, you can put the field names in single quotes:
 
-```powerapps-dot
+```power-fx
 untyped.'01'
 untyped.'my-field'
 ```
@@ -84,7 +84,7 @@ As accessing fields on **Untyped objects** isn't evaluated when writing the form
 
 **JSON** values don't have to be in a record-style notation. Valid **JSON** can be just a value, such as `"text value"`,  `true` or `123.456`. In such a case, the **Untyped object** that **ParseJSON** returns is the value itself and the dot notation isn't used.
 
-```powerapps-dot
+```power-fx
 Set( myText, Boolean( ParseJSON( "true" ) ) );
 
 Set( myNumber, Value( ParseJSON( "123.456" ) ) );
@@ -108,7 +108,7 @@ Finally, **JSON** supports nested records. Converting such **JSON** to **Untyped
 
 When converting this **JSON** string to an **Untyped object** variable named `jsonObject`, the fields can be accessed using the dot notation.
 
-```powerapps-dot
+```power-fx
 Set( jsonObject, ParseJSON( jsonStringVariable ) );
 
 Set( parentName, Text( jsonObject.RootElement.Parent.Name ) ); // "This is the parent"
@@ -141,25 +141,25 @@ If any of the fields in the dot notation expression don't exist, **Blank()** wil
 
 This **JSON** contains a record with a field named `OrderLines` which contains an array of records. Each record has two fields: `Item` and `Quantity`. If the **JSON** is converted into an **Untyped object** using the **ParseJSON** function and set to a variable named `jsonOrder`, we can access the individual order lines in several ways.
 
-```powerapps-dot
+```power-fx
 Set( jsonOrder, ParseJSON( jsonStringVariable ) );
 ```
 
 You can retrieve individual records and values using the [Index()](reference/function-first-last.md) function. For example, to get the second record in the `OrderLines` field, then access the `Quantity` field and convert it to a value.
 
-```powerapps-dot
+```power-fx
 Set( line2Quantity, Value( Index( jsonOrder.OrderLines, 2 ).Quantity ); // 5
 ```
 
 You can convert the array of order lines directly to a table. This will create a single-column table with an **Untyped object** representing the record.
 
-```powerapps-dot
+```power-fx
 Set( orderLines, Table( jsonOrder.OrderLines ) );
 ```
 
 Single column table 'orderLines' now has a 'Value' column that represents the **Untyped object**. To use any of the fields from a record in this table, use the dot notation to access the specific **JSON** field on the **Untyped object** in the `Value` column.
 
-```powerapps-dot
+```power-fx
 Set( jsonRecord, Index( orderLines, 2 ) ); // Get the second record in the table
 
 Set( line2Item, Text( jsonRecord.Value.Item ) ); // "Widget 2"
@@ -167,7 +167,7 @@ Set( line2Item, Text( jsonRecord.Value.Item ) ); // "Widget 2"
 
 To make the use of the order line records easier and more straightforward in other parts of your app, you can convert the whole **Untyped object** to an entirely typed record using the [ForAll()](reference/function-forall.md) function. Providing the **Untyped object** directly to **ForAll()** means you can access the object fields directly instead of using the single-column `Value` field.
 
-```powerapps-dot
+```power-fx
 Set( typedOrderLines, ForAll( jsonOrder.OrderLines, { Item : Text( ThisRecord.Item ), Quantity : Value( ThisRecord.Quantity ) } ) );
 ```
 
@@ -186,6 +186,6 @@ The previous examples use arrays of records, but **JSON** can also contain array
 
 We can retrieve one of the items from the array using the **Index()** function, and convert it to text.
 
-```powerapps-dot
+```power-fx
 Text( Index( ParseJSON( jsonStringVariable ), 2 ) ) // "Second Item"
 ```

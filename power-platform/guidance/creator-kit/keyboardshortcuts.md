@@ -51,7 +51,7 @@ When a key combination is used, the `OnChange` event is raised. The `OnKey` prop
 
 You might have an `OnChange` event similar to:
 
-```powerapps-dot
+```power-fx
 If( Self.OnKey = "alt + a",
     SetFocus(txtTextbox1)
 );

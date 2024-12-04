@@ -1,5 +1,94 @@
+
 {
   "redirections": [
+   {
+
+      "source_path": "power-platform/admin/security/security-posture-overview.md",
+      "redirect_url": "power-platform/admin/security/security-overview",
+      "redirect_document_id": "false"
+   },
+    {
+
+      "source_path": "power-platform/developer/submit-catalog-items.md",
+      "redirect_url": "catalog/submit-items",
+      "redirect_document_id": "false"
+   },
+   {
+
+      "source_path": "power-platform/admin/control-client-app-access-to-environment.md",
+      "redirect_url": "/power-platform/admin/admin-documentation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/important-changes-coming.md#isv-studio-is-deprecated",
+      "redirect_url": "important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+    },
+   {
+      "source_path": "power-platform/developer/isvstudio/app.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/appsource-checker.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/auto-update.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/connector-certification.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/embed-analytics.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/home.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/index.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/install-failure-analytics.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/tenant.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/isvstudio/usage-analytics.md",
+      "redirect_url": "../../important-changes-coming#isv-studio-removed",
+      "redirect_document_id": "false"
+   },
+   {
+      "source_path": "power-platform/developer/cli/reference/powerpages.md",
+      "redirect_url": "pages",
+      "redirect_document_id": "false"
+    },
+   {
+      "source_path": "power-platform/developer/cli/reference/org.md",
+      "redirect_url": "env",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "power-platform/developer/cli/reference/virtual-agent.md",
+      "redirect_url": "copilot",
+      "redirect_document_id": "false"
+    },
     {
       "source_path": "power-virtual-agents/quickstart-preview.md",
       "redirect_url": "/power-virtual-agents/fundamentals-get-started",
@@ -14,12 +103,12 @@
       "source_path": "power-platform/developer/cli/reference/tests.md",
       "redirect_url": "test",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "power-platform/developer/cli/reference/paportal.md",
       "redirect_url": "powerpages",
       "redirect_document_id": "false"
-    }, 
+    },
     {
       "source_path": "power-platform/alm/maintain-managed-solutions.md",
       "redirect_url": "/power-apps/maker/data-platform/update-solutions",
@@ -941,9 +1030,74 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/flow/stub.md",
+      "redirect_url": "/power-automate",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/solution-templates/it/hardware-request-and-management/use.md",
       "redirect_url": "/power-platform/enterprise-templates/it/hardware-request-and-management/use",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/create-dlp-policy.md",
+      "redirect_url": "/power-platform/admin/prevent-data-loss",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/storage-sas-token.md",
+      "redirect_url": "/power-platform/admin/access-storage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/onpremises-data-gateway-source-management.md",
+      "redirect_url": "/power-platform/admin/wp-onpremises-gateway",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/adoption/environment-strategy.md",
+      "redirect_url": "/power-platform/guidance/white-papers/environment-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/power-automate-licensing/overview.md",
+      "redirect_url": "/power-platform/admin/power-automate-licensing/types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/wp-license-management.md",
+      "redirect_url": "/power-platform/admin/pricing-billing-skus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/getting-started-with-the-sap-erp-connector.md",
+      "redirect_url": "/power-platform/sap/connect/connect-power-platform-and-sap",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/set-up-microsoft-entra-id-with-azure-apim-and-oauth.md",
+      "redirect_url": "/power-platform/sap/connect/entra-id-apim-oauth",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/set-up-secure-network-communications.md",
+      "redirect_url": "/power-platform/sap/connect/secure-network-communications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/overview.md",
+      "redirect_url": "/power-platform/sap/explore/power-platform-and-sap-integration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/sap/guides/set-up-microsoft-entra-id-with-certificates.md",
+      "redirect_url": "/power-platform/sap/connect/entra-id-certs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/power-fx/formula-reference.md",
+      "redirect_url": "/power-platform/power-fx/formula-reference-canvas-apps",
+      "redirect_document_id": "false"
     }
   ]
 }

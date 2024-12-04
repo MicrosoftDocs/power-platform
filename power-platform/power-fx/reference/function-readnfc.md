@@ -5,7 +5,7 @@ author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 08/01/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: mikepena
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
   - mikepenaMS
   - anuitz
 ---
@@ -77,7 +77,7 @@ Additional **RTD** and **TNF** values may be supported in the future. If mor
 
 1. Set the **OnSelect** property of the button control to this formula that will add an item to our collection:  
 
-    ```powerapps-dot
+    ```power-fx
     With(ReadNFC(),
         Set(id, Coalesce(Identifier, "No ID"));
         ForAll(NDEFRecords, Collect(tagRecords, {ID: id, Value: Coalesce(Text, URI)})))

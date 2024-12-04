@@ -4,7 +4,7 @@ description: Reference information about working with imperative logic, which ca
 author: gregli-msft
 ms.topic: conceptual
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Imperative logic
 
@@ -21,7 +21,7 @@ contributors:
 
 Most formulas in Microsoft Power Fx calculate a value.  Like an Excel spreadsheet, recalculation happens automatically as values change.  For example, you might want to show the value in a **Label** control in red if the value is less than zero or in black otherwise. So you can set the **Color** property of that control to this formula:
 
-```powerapps-dot
+```power-fx
 If( Value(TextBox1.Text) >= 0, Color.Black, Color.Red )
 ```
 
@@ -40,7 +40,7 @@ Because these functions change the state of the app, they can't be automatically
 ### More than one action
 Use semicolons to create a list of actions to perform. For example, you might want to update a context variable and then return to the previous screen:
 
-```powerapps-dot
+```power-fx
 UpdateContext( { x: 1 } ); Back()
 ```
 

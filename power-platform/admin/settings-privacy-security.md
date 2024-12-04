@@ -48,7 +48,7 @@ You need to have the System Administrator or System Customizer security role or 
 | **Content security policy** | [Content security policy](content-security-policy.md) |
 | **IP address settings** | |
 | Enable IP address based cookie binding | Default: Off. When enabled, helps prevent session hijacking exploits in Dataverse with IP address-based cookie binding. [Block cookie replay attacks in Dataverse](block-cookie-replay-attack.md) |
-| Enable IP address based Storage Shared Access Signature (SAS) rule | Default: Off. Restricts who, based on IP address, can use enterprise SAS tokens. [SAS IP Binding](security/data-storage.md#sas-ip-binding) |
+| Enable IP address-based Storage Shared Access Signature (SAS) rule | Default: Off. Restricts who, based on IP address, can use enterprise SAS tokens. [Storage Shared Access Signature (SAS) IP restriction](security/data-storage.md#storage-shared-access-signature-sas-ip-restriction) |
 | Enable IP address based firewall rule | Default: Off. When enabled, allows you to limit Dataverse access to users by specifying valid IP address ranges. [IP firewall in Power Platform environments](ip-firewall.md) |
 
 ## Replace the privacy statement for the organization

@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # With function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Calculates values and performs actions for a single [record](/power-apps/maker/canvas-apps/working-with-tables#records), including inline records of named values.
 
@@ -31,7 +31,7 @@ The **With** function evaluates a formula for a single record. The formula can c
 
 Use **With** to improve the readability of complex formulas by dividing it into smaller named sub-formulas. These named values act like simple local variables confined to the scope of the **With**. The same inline record syntax that is used with the [**UpdateContext** function](function-updatecontext.md) can be used with **With**. Using **With** is preferred over context or global variables as it is self contained, easy to understand, and can be used in any declarative formula context.
 
-Use **With** to access the fields of the record that are returned by functions such as such as [**Patch**](function-patch.md) or [**Match**](function-ismatch.md). **With** holds the value from these functions long enough to be used in further calculations or actions.
+Use **With** to access the fields of the record that are returned by functions such as [**Patch**](function-patch.md) or [**Match**](function-ismatch.md). **With** holds the value from these functions long enough to be used in further calculations or actions.
 
 If the _Record_ argument to **With** is an error, that error will be returned by the function and the _Formula_ will not be evaluated.
 
@@ -46,7 +46,7 @@ If the _Record_ argument to **With** is an error, that error will be returned by
 
 ### Simple named values
 
-```powerapps-dot
+```power-fx
 With( { radius: 10,
         height: 15 },
     Pi() * (radius*radius) * height
@@ -60,7 +60,7 @@ This example uses a record of named values to calculate the volume of a cylinder
 
 ![Interest calculator using With function.](media/function-with/interest-calculator.gif)
 
-```powerapps-dot
+```power-fx
 With( { AnnualRate: RateSlider/8/100,        // slider moves in 1/8th increments and convert to decimal
         Amount: AmountSlider*10000,          // slider moves by 10,000 increment
         Years: YearsSlider,                  // slider moves in single year increments, no adjustment required
@@ -96,7 +96,7 @@ Here are the detailed instructions for creating this app:
 
 ### Primary key returned from Patch
 
-```powerapps-dot
+```power-fx
 With( Patch( Orders, Defaults( Orders ), { OrderStatus: "New" } ),
       ForAll( NewOrderDetails,
               Patch( OrderDetails, Defaults( OrderDetails ),
@@ -112,7 +112,7 @@ This example adds a record to the **Order** table in SQL Server. It then uses th
 
 ### Extracted values with a regular expression
 
-```powerapps-dot
+```power-fx
 With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
     Time( Value( hours ), Value( minutes ), Value( seconds ) )

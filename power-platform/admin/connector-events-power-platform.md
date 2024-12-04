@@ -7,11 +7,10 @@ documentationcenter: na
 author: schabungbam
 editor: ''
 tags: ''
-ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/28/2023
+ms.date: 05/30/2024
 ms.subservice: admin
 ms.author: sameerch
 ms.reviewer: angieandrews
@@ -50,10 +49,6 @@ As an admin, you can search for connector events related to connections and cust
 
    :::image type="content" source="./media/audit-logs/connector-events.png" alt-text="Screenshot of the Power Platform connector events.":::
 
-    You'll see the event details, as shown in the following example.
-
-    :::image type="content" source="./media/audit-logs/view-events.png" alt-text="Screenshot of the audit search results.":::
-
 ### Available connector events
 
 The following table lists the connector events available for searching in the audit logs.
@@ -74,12 +69,11 @@ The following table lists the connector events available for searching in the au
 |Gateway cluster edited    | When a gateway cluster is updated        |
 |Gateway permission added or edited    | When a gateway is shared or the sharing permissions are updated      |
 |Gateway permission removed   | When sharing permissions of a gateway are removed        |
+|Added ConnectionDlpEvaluationResult |	When connection is turned off due to data policies |
 
 ## Get details on activities for logging
 
 In the **Audit search** screen, you can select the log to view the details of the event in a list to the right.
-
-:::image type="content" source="./media/audit-logs/event-details.png" alt-text="Screenshot of the event details list for the selected log.":::
 
 ### Available logging details
 

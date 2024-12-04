@@ -1,0 +1,208 @@
+- name: Microsoft Power Platform Well-Architected
+  href: ./index.yml
+  items:
+    - name: About
+      items:
+      - name: What is Power Platform Well-Architected
+        href: what-is-power-well-architected.md
+      - name: What's new
+        href: whats-new.md
+    - name: Pillars
+      items:
+      - name: Overview
+        href: pillars.md
+      - name: Reliability
+        items:
+        - name: Quick links
+          href: ./reliability/index.yml
+        - name: Design principles
+          href: ./reliability/principles.md
+        - name: Checklist
+          href: ./reliability/checklist.md
+        - name: Tradeoffs
+          href: ./reliability/tradeoffs.md
+        - name: Recommendations   
+          items:
+            - name: RE:01 Simplicity and efficiency
+              href: reliability/simplify.md
+            - name: RE:02 Critical flows
+              href: reliability/identify-flows.md
+            - name: RE:03 Failure mode analysis
+              href: reliability/failure-mode-analysis.md
+            - name: RE:04 Target metrics
+              href: reliability/metrics.md
+            - name: RE:05 Background jobs
+              href: reliability/background-jobs.md
+            - name: RE:05 Transient faults 
+              href: reliability/handle-transient-faults.md
+            - name: RE:06 Testing
+              href: reliability/testing-strategy.md
+            - name: RE:07 Disaster recovery  
+              href: reliability/disaster-recovery.md
+            - name: RE:08 Monitoring and alerting
+              href: reliability/monitoring-alerting-strategy.md
+      - name: Security
+        items: 
+        - name: Quick links
+          href: ./security/index.yml
+        - name: Design principles
+          href: ./security/principles.md
+        - name: Checklist
+          href: ./security/checklist.md
+        - name: Tradeoffs
+          href: ./security/tradeoffs.md
+        - name: Recommendations   
+          items:
+            - name: SE:01 Security baseline
+              href: security/establish-baseline.md
+            - name: SE:02 Secured development lifecycle
+              href: security/secure-development-lifecycle.md
+            - name: SE:02 Threat analysis
+              href: security/threat-model.md              
+            - name: SE:03 Data classification
+              href: security/data-classification.md
+            - name: SE:04 Segmentation
+              href: security/segmentation.md
+            - name: SE:05 Identity and access management
+              href: security/identity-access.md
+            - name: SE:06 Encryption
+              href: security/encryption.md             
+            - name: SE:07 Application secrets
+              href: security/application-secrets.md
+            - name: SE:08 Monitoring and threat detection
+              href: security/monitor-threats.md
+            - name: SE:09 Testing and validation
+              href: security/testing.md              
+            - name: SE:10 Incident response 
+              href: security/incident-response.md
+      - name: Operational Excellence
+        items: 
+        - name: Quick links
+          href: ./operational-excellence/index.yml
+        - name: Design principles
+          href: ./operational-excellence/principles.md
+        - name: Checklist
+          href: ./operational-excellence/checklist.md
+        - name: Tradeoffs
+          href: ./operational-excellence/tradeoffs.md
+        - name: Recommendations   
+          items:
+            - name: OE:01 Fusion team culture
+              href: operational-excellence/fusion-culture.md
+            - name: OE:02 Task execution process
+              href: operational-excellence/formalize-operations-tasks.md
+            - name: OE:03 Software development practices
+              href: operational-excellence/formalize-development-practices.md
+            - name: OE:04 Tools and processes
+              href: operational-excellence/tools-processes.md
+            - name: OE:04 Continuous integration
+              href: operational-excellence/release-engineering-continuous-integration.md
+            - name: OE:05 Supply chain for workload development
+              href: operational-excellence/workload-supply-chain.md
+            - name: OE:06 Monitoring system
+              href: operational-excellence/observability.md
+            - name: OE:07 Emergency response
+              href: operational-excellence/emergency-response.md
+            - name: OE:08 Task automation
+              href: operational-excellence/automate-tasks.md
+            - name: OE:09 Automation design
+              href: operational-excellence/enable-automation.md
+            - name: OE:10 Deployment practices
+              href: operational-excellence/safe-deployments.md
+            - name: OE:11 Failure mitigation
+              href: operational-excellence/mitigation-strategy.md
+      - name: Performance Efficiency
+        items:
+        - name: Quick links
+          href: ./performance-efficiency/index.yml
+        - name: Design principles
+          href: ./performance-efficiency/principles.md
+        - name: Checklist
+          href: ./performance-efficiency/checklist.md
+        - name: Tradeoffs
+          href: ./performance-efficiency/tradeoffs.md
+        - name: Recommendations
+          items:
+            - name: PE:01 Performance targets
+              href: ./performance-efficiency/performance-targets.md
+            - name: PE:02 Performance planning
+              href: ./performance-efficiency/performance-planning.md
+            - name: PE:03 Selecting services
+              href: ./performance-efficiency/select-services.md
+            - name: PE:04 Metrics and logs
+              href: ./performance-efficiency/collect-performance-data.md
+            - name: PE:05 Performance testing
+              href: ./performance-efficiency/performance-test.md
+            - name: PE:06 Code and business logic
+              href: ./performance-efficiency/optimize-code.md
+            - name: PE:07 Critical flows
+              href: ./performance-efficiency/prioritize-critical-flows.md
+            - name: PE:08 Data performance 
+              href: ./performance-efficiency/optimize-data-performance.md
+            - name: PE:09 Live-issues responses
+              href: ./performance-efficiency/respond-live-performance-issues.md
+            - name: PE:10 Continuous performance optimization
+              href: ./performance-efficiency/continuous-performance-optimize.md
+      - name: Experience Optimization
+        items:
+        - name: Quick links
+          href: ./experience-optimization/index.yml
+        - name: Design principles
+          href: ./experience-optimization/principles.md
+        - name: Checklist
+          href: ./experience-optimization/checklist.md
+        - name: Tradeoffs
+          href: ./experience-optimization/tradeoffs.md
+        - name: Recommendations   
+          items:
+            - name: XO:01 User-centered design
+              href: ./experience-optimization/user-centered-design.md
+            - name: XO:02 Standards and conventions
+              href: ./experience-optimization/design-standards.md
+            - name: XO:03 Information architecture
+              href: ./experience-optimization/information-architecture.md
+            - name: XO:04 Usability
+              href: ./experience-optimization/usability.md
+            - name: XO:05 Feedback and guidance
+              href: ./experience-optimization/feedback-guidance.md
+            - name: XO:06 Layout
+              href: ./experience-optimization/layout.md              
+            - name: XO:07 Visual design
+              href: ./experience-optimization/visual-design.md
+            - name: XO:08 Interaction design
+              href: ./experience-optimization/interaction-design.md
+            - name: XO:09 User interface content
+              href: ./experience-optimization/user-interface-content.md
+            - name: XO:10 Conversation design
+              href: ./experience-optimization/conversation-design.md
+    - name: Workloads
+      items: 
+      - name: Overview
+        href: workloads.md
+      - name: Intelligent application
+        items:
+        - name: Quick links
+          href: intelligent-application/index.yml
+        - name: What is an intelligent application workload
+          href: intelligent-application/overview.md
+        - name: Design principles
+          href: intelligent-application/design-principles.md
+        - name: Design areas
+          items: 
+          - name: Responsible AI
+            href: intelligent-application/responsible-ai.md
+          - name: Security and compliance
+            href: intelligent-application/security.md
+          - name: Performance optimization
+            href: intelligent-application/monitoring.md
+          - name: Deployment and testing
+            href: intelligent-application/publishing.md
+          - name: Integration options
+            href: intelligent-application/integrations.md
+          - name: Intent recognition and entity extraction
+            href: intelligent-application/language.md
+    - name: Implementing recommendations
+      href: implementing-recommendations.md
+    - name: Feedback and support
+      href: feedback-support.md
+

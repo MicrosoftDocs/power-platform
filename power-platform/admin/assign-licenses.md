@@ -2,26 +2,27 @@
 title: "Assign licenses | MicrosoftDocs"
 description: About assigning licenses to a user.
 author: sericks007
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
 ms.custom: "admin-security"
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/01/2021
+ms.date: 07/26/2024
 search.audienceType: 
   - admin
 ---
 # Assign licenses
 
-A user account must be assigned a license in order for the user to have access to the service. Note that when you assign a user the global administrator or the service administrator role in the [!INCLUDE[pn_ms_online_services_environment](../includes/pn-ms-online-services-environment.md)], it automatically assigns the user the System Administrator security role. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [Differences between the Microsoft Online services environment administrative roles and Microsoft Dataverse security roles](grant-users-access.md#differences-between-the-microsoft-online-services-environment-administrative-roles-and-microsoft-dataverse-security-roles)
+A user account must be assigned a license in order for the user to have access to the service.
 
-## Add a license to a user account  
+## Add a license to a user account
+
 You can license the user when you create the user account, or you can license the user later. You must assign a license to every user account that you want to access the online service. 
   
-For step-by-step instructions to use user licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
- 
+For step-by-step instructions to use user licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
+
 For step-by-step instructions to use Power Apps per app plans, see [Power Apps per app plans](about-powerapps-perapp.md).
   
 > [!IMPORTANT]
@@ -40,4 +41,4 @@ For step-by-step instructions to use Power Apps per app plans, see [Power Apps p
 - Each user license requires a unique Microsoft account, and every user who signs in needs a license. Most subscriptions include a specific number of user licenses.  
 
 > [!NOTE]
-> Certain default security roles are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-group-teams.md#about-group-teams) in order for the user to view and interact with the data. 
+> Certain default security roles are assigned to users based on the license and/or solution installed. These security roles only give users Read access to apps that are installed in the environment. For example, when a user is assigned the Dynamics 365 Plan license and is synced to an environment that has the Customer Service Hub app, the user is automatically assigned the Customer Service app access security role. No data access permission is granted to this role. The administrator is still required to assign the appropriate security role to the user (either directly or indirectly as a member of a [group team](manage-group-teams.md#about-group-teams) in order for the user to view and interact with the data.

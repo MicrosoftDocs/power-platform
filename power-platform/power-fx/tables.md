@@ -4,7 +4,7 @@ description: Reference information about working with tables, columns, and recor
 author: gregli-msft
 ms.topic: conceptual
 ms.reviewer: jdaly
-ms.date: 03/06/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -12,7 +12,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 # Tables
 
@@ -117,7 +117,7 @@ For example, take a table of **Products** placed in a global variable:
 
 ![Tables requested.](media/tables/requested.png "Tables requested")
 
-```powerapps-dot
+```power-fx
 Set( Products,
     Table(
         { Product: "Widget",    'Quantity Requested': 6,  'Quantity Available': 3 },
@@ -138,7 +138,7 @@ The first argument to **Filter** is the table of records to operate on, and the 
 
 Adding to this example, we can calculate how much of each product to order:
 
-```powerapps-dot
+```power-fx
 AddColumns( 
     Filter( Products, 'Quantity Requested' > 'Quantity Available' ), 
     "Quantity To Order", 'Quantity Requested' - 'Quantity Available'
@@ -151,7 +151,7 @@ Here we are adding a calculated column to the result. **AddColumns** has its own
 
 Finally, we can reduce the result table to just the columns that we want:
 
-```powerapps-dot
+```power-fx
 ShowColumns(
     AddColumns(
         Filter( Products, 'Quantity Requested' > 'Quantity Available' ),
@@ -191,7 +191,7 @@ In addition, define a context variable named **Value** with this formula: **Upda
 
 Let's put it all together. In this context, the following formula:
 
-```powerapps-dot
+```power-fx
 Ungroup(
     ForAll( X,
         ForAll( Y,
@@ -212,7 +212,7 @@ The innermost **ForAll** function defines another record scope for **Y**.  Since
 
 Since **Y** is the innermost record scope, accessing fields of this table do not require disambiguation, allowing us to use this formula with the same result:
 
-```powerapps-dot
+```power-fx
 Ungroup(
     ForAll( X,
         ForAll( Y,
@@ -231,7 +231,7 @@ All the **ForAll** record scopes override the global scope. The **Value** contex
 
 To operate on a single column from a table, use the **ShowColumns** function as in this example:
 
-```powerapps-dot
+```power-fx
 ShowColumns( Products, "Product" )
 ```
 
@@ -241,7 +241,7 @@ This formula produces this single-column table:
 
 For a shorter alternative, specify *Table.Column*, which extracts the single-column table of just *Column* from *Table*. For example, this formula produces exactly the same result as using **ShowColumns**.
 
-```powerapps-dot
+```power-fx
 Products.Product
 ```
 
@@ -266,7 +266,7 @@ Note that the value in the **Price** column doesn't include a currency symbol, s
 ## Inline tables
 You can create a table by using the **[Table](reference/function-table.md)** function and a set of records. You can express the table at the start of this topic by using this formula:
 
-```powerapps-dot
+```power-fx
 Table( 
 	{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
 	{ Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
@@ -276,7 +276,7 @@ Table(
 
 You can also nest tables:
 
-```powerapps-dot
+```power-fx
 Table( 
 	{ Name: "Chocolate", 
 	  'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },

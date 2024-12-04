@@ -1,9 +1,1 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate example below
-
-### Example
-
-```powershell
-pac pipeline deploy
-``` 
--->
+Use `pac pipeline deploy` to deploy/start an existing pipeline in the Power Platform environment you are connected to, or use `--environment` / `-env` to select an environment in the same tenant.

@@ -30,7 +30,7 @@ Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environme
   
 - Customer engagement apps
   
-- This feature requires that you have an Microsoft 365 subscription or a subscription to an online service such as SharePoint Online or Exchange Online.
+- This feature requires that you have a Microsoft 365 subscription or a subscription to an online service such as SharePoint Online or Exchange Online.
 
 - To use document storage with Microsoft 365 Groups, you will need SharePoint Online and access to the group OneNote notebook.
   
@@ -44,7 +44,7 @@ Microsoft 365 Groups, available with Dynamics 365 apps, provides a new environme
  Microsoft 365 Groups is a solution you provision from your Microsoft 365 admin center.  
   
 > [!NOTE]
->  Users must have an Exchange Online mailbox set up to use Microsoft 365 Groups. Exchange Online is already properly configured for organizations as a part of Microsoft 365. You also need to enable server-based SharePoint integration to see documents in an Microsoft 365 Group; you don't have to use SharePoint integration, only set up the connection to SharePoint Online.  Server-based SharePoint integration is also required to enable the group OneNote notebook.  
+>  Users must have an Exchange Online mailbox set up to use Microsoft 365 Groups. Exchange Online is already properly configured for organizations as a part of Microsoft 365. You also need to enable server-based SharePoint integration to see documents in a Microsoft 365 Group; you don't have to use SharePoint integration, only set up the connection to SharePoint Online.  Server-based SharePoint integration is also required to enable the group OneNote notebook.  
 > 
 > More information: [Set up customer engagement apps to use SharePoint Online](set-up-dynamics-365-online-to-use-sharepoint-online.md)  
   

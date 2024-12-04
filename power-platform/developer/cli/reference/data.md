@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI data command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI data command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -52,7 +52,7 @@ File name for data zip file. Default data.zip
 
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--overwrite` `-o`
 
@@ -93,7 +93,7 @@ Number of parallel connections to use during import. Default: 5
 **Deprecated**: This parameter is ignored.
 #### `--environment` `-env`
 
-Environment (ID, org ID, url, unique name, or partial name).
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
 #### `--verbose` `-v`
 

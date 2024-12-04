@@ -4,9 +4,9 @@ description: View tenant-level analytics for Power Apps.
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 11/16/2022
-author: StephenRauchPM
+author: Zeffin
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -27,9 +27,6 @@ Power Apps reports provide insights into tenant and environment usage and invent
 - How many apps exist in my tenant or environment?
 - Which of my environments had the most unique users? 
 - What were the top apps by unique users/app sessions? 
-
-> [!div class="mx-imgBorder"] 
-> ![Power Apps usage report.](media/power-apps-usage.png "Power Apps usage report")
 
 > [!NOTE]
 > The service only starts collecting the data visualized in the Usage report when the feature is enabled. It can take 24 to 36 hours to reflect service activities from the previous day.
@@ -56,7 +53,7 @@ Power Apps reports provide insights into tenant and environment usage and invent
 
 ## Power Apps - Maker Activity report
 
-The Power Apps Maker Activity report provide insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
+The Power Apps Maker Activity report provides insights into tenant and environment usage and inventory of all apps and connectors. The report answers questions such as:
 
 - What is the total number of apps created/published/modified/deleted by app makers across the tenant or environments? 
 - What is the count of first-time makers across canvas and model-driven apps? 

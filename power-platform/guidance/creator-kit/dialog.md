@@ -54,7 +54,7 @@ This canvas component mimics the style and behavior of the [Fluent UI Dialog con
 | `Label` | The label displayed on the button. |
 | `ButtonType` | Enumeration that determines the styling of the button. Choose between `Standard` and `Primary`.|
 
-```powerapps-dot
+```power-fx
 Table(
     {
         Label: "Cancel", 
@@ -89,19 +89,19 @@ Make the `Dialog` control itself (or the surface it's located within) visible wh
 
 The following shows the Power Fx formula to open the dialog in an action formula on another component somewhere in the app (for example, the `OnSelect` property of a button):
 
-```powerapps-dot
+```power-fx
 UpdateContext({ showHideDialog: true })
 ```
 
 The following is the Power Fx formula to close the dialog in the `OnCloseSelect` property of the dialog:
 
-```powerapps-dot
+```power-fx
 UpdateContext({ showHideDialog: false })
 ```
 
 Assign the variable to the `Visible` property of the dialog:
 
-```powerapps-dot
+```power-fx
 showHideDialog
 ```
 
@@ -109,7 +109,7 @@ showHideDialog
 
 In the `OnButtonSelect` property of the dialog, provide actions in an `If()` or `Switch()` condition based on the `Self.SelectedButton.Label` text value to define the action. Depending on the action, it might make sense to also close the dialog after the action is completed.
 
-```powerapps-dot
+```power-fx
     If( Self.SelectedButton.Label = "Send", 
         Notify("Email Sent")
     );

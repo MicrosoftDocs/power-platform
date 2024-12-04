@@ -2,10 +2,10 @@
 title: Microsoft Power Platform CLI | Microsoft Docs
 description: "Install Microsoft Power Platform CLI to create, debug, and deploy code components by using Power Apps component framework."
 keywords: Microsoft Power Platform CLI, code components, component framework, CLI
-ms.author: snizar
-author: snizar007
+ms.author: marcsc
+author: devkeydet
 ms.reviewer: jdaly
-ms.date: 08/21/2023
+ms.date: 05/15/2024
 ms.topic: overview
 ---
 # What is Microsoft Power Platform CLI?
@@ -13,156 +13,160 @@ ms.topic: overview
 Microsoft Power Platform CLI is a simple, one-stop developer CLI that empowers developers and ISVs to perform various operations in Microsoft Power Platform related to:
 
 - Environment lifecycle
-- Authentication
+- [Authentication](#manage-auth-profiles)
 - Microsoft Dataverse environments
 - Solution packages
-- Portals
-- Code components
-- and more.
-
-Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments.
-
-## Install Microsoft Power Platform CLI
-
-You can install Microsoft Power Platform CLI using either or both of the following methods:
-
-|Installation Method |Description|
-|---------|---------|
-|[Install using Power Platform Tools for Visual Studio Code](#install-using-power-platform-tools-for-visual-studio-code)|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.|
-|[Install Power Platform CLI for Windows](#install-power-platform-cli-for-windows)|Enables use of commands using PowerShell for Windows 10 and Windows 11. <br /> Certain commands, such as [pac data](reference/data.md), are only available using Power Platform CLI for Windows|
-
-## Install using Power Platform Tools for Visual Studio Code
-
-Follow these steps to install Microsoft Power Platform CLI using Visual Studio Code.
-
-1. Open [Visual Studio Code](https://code.visualstudio.com/).
-1. Select the **Extensions** icon from the **Activity** panel. In the search bar, enter **Power Platform Tools**.
-1. Select **Install**. Once the installation is finished, restart Visual Studio Code to see the extension within the **Terminal** window.
-
-   :::image type="content" source="media/power-platform-vs-code-extension-install-v2.png" alt-text="VS Code extension install":::
-
-   > [!NOTE]
-   > Power Platform Tools for Visual Studio Code updates automatically.
-
-1. Optionally, you can initiate the install into Visual Studio Code directly from [Marketplace]( https://aka.ms/ppcvscode) and it launches Visual Studio Code and commence the extension installation.
-
-   :::image type="content" source="media/marketplace-install-v2.png" alt-text="Launch install from Marketplace":::
-
-You can also do a side-load install into Visual Studio Code by downloading the extension from the [Marketplace](https://aka.ms/ppcvscode).
-
-### Side-load install of Power Platform Tools for Visual Studio Code
-
-In some organizations, downloading or initiating an install over the web is prohibited. Most cases, the organization downloads the installation media and stores it in a secure location and verify that it's working according to their standards, before it's distributed within the organization. Use the following instructions to support this type of installation.
-
-1. Go to the [Marketplace](https://aka.ms/ppcvscode) and instead of pressing the **Install** button, select the **Download Extension** link under **Resources**:
-
-   :::image type="content" source="media/side-load-install-1-v2.png" alt-text="Download the extension":::
-   
-   Clicking this link downloads a file with a .vsix extension on to your workstation.
-
-   :::image type="content" source="media/side-load-install-2.png" alt-text="Downloaded extension":::
-
-1. Launch Visual Studio Code and select the **Extensions** icon, select the ellipsis on the **Extensions** side bar, and then select **Install from VSIX**.
-
-   :::image type="content" source="media/side-load-install-3.png" alt-text="Install from VSIX":::
-
-### Successful installation
-
-Once the installation is successful, you need to restart Visual Studio Code, upon which you see the following notification.
-
-:::image type="content" source="media/installation-success-1.png" alt-text="Install notification":::
-
-On the **Activity** bar. you notice the icon for the Power Platform Tools.
-
-:::image type="content" source="media/installation-success-3-v2.png" alt-text="icon":::
-
-The final check would be to launch the terminal window and type `pac`.
-
-:::image type="content" source="media/installation-success-2-v2.png" alt-text="PAC CLI in the terminal window":::
-
-### Uninstall Power Platform Tools for Visual Studio Code
-
-To uninstall Power Platform Tools for Visual Studio Code, follow the same steps as installing the extension, except this time select the **Uninstall** button.
-
-## Install Power Platform CLI for Windows
-
-To install Power Platform CLI for Windows, you can either install via DotNet tool or .msi.
-
-- To install via [DotNet tool](/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
-
-   ```dotnetcli
-   dotnet tool install --global Microsoft.PowerApps.CLI.Tool
-   ```
-
-- To install via .msi download and run the .msi file found here: [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI), choose the **Install** option.
-
-### Update Power Platform CLI for Windows/MacOS/Linux
-
-To take advantage of all the latest capabilities, update Microsoft Power Platform CLI tooling to the latest version by using this command:
-
-```dotnetcli
-pac install latest
-```
-
-To update via [DotNet tool](/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/download) installed (.NET 6.0 recommended). Update Power Platform CLI by using this command:
-
-```dotnetcli
-dotnet tool update --global Microsoft.PowerApps.CLI.Tool
-```
-
-> [!NOTE]
-> `pac install latest` command is not applicable for Power Platform Tools for Visual Studio Code. It will look for updates and update automatically each time you open Visual Studio Code.
-
-### Uninstall Power Platform CLI for Windows
-
-To uninstall Power Platform CLI for Windows, download and run the .msi from [Microsoft Power Platform CLI](https://aka.ms/PowerAppsCLI) and choose the **Remove** option.
-
-## Install Power Platform CLI for Linux/macOS
-
-To install Power Platform CLI for Linux/macOS using [DotNet tool](/dotnet/core/tools/global-tools), you must have [.NET](https://dotnet.microsoft.com/download) installed (.NET 6.0 recommended). Install Power Platform CLI by using this command:
-```dotnetcli
-dotnet tool install --global Microsoft.PowerApps.CLI.Tool
-```
-
-The default location for a tool's binaries depends on the operating system:
-
-| OS          | Path                          |
-|-------------|-------------------------------|
-| Linux/macOS | `$HOME/.dotnet/tools`         |
-| Windows     | `%USERPROFILE%\.dotnet\tools` |
-
-This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
-
-Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
-
-
-## Common commands
-
-This table lists some of the common commands used in the PAC CLI.
-
-|Command|Description|
-|-------|-----------|
-|[pac admin](reference/admin.md)|Commands for environment lifecycle features.|
-|[pac auth](reference/auth.md)|Commands to [connect to your environment](/power-apps/developer/component-framework/import-custom-controls#connecting-to-your-environment).|
-|[pac application](reference/application.md)| Commands to install AppSource applications that are prerequisites for the solution work in the target environment (Preview). |
-|[pac canvas](reference/canvas.md)|Commands for working with canvas app source files (Preview).|
-|[pac org](reference/org.md)|Commands for working with Dataverse environments.|
-|[pac package](reference/package.md)|Commands for working with [solution packages](../../alm/package-deployer-tool.md).|
-|[pac paportal](reference/paportal.md)|Commands for working with [Portals support for Microsoft Power Platform CLI](/power-apps/maker/portals/power-apps-cli).|
-|[pac pcf](reference/pcf.md)|Commands for working with [Power Apps component framework](/power-apps/developer/component-framework/overview).|
-|[pac plugin](reference/plugin.md)|Command to create a [plug-in](/power-apps/developer/data-platform/plug-ins) project.|
-|[pac solution](reference/solution.md)|Commands for working with [Dataverse solution projects](/power-apps/maker/data-platform/solutions-overview).|
-|[pac telemetry](reference/telemetry.md)|Manages the telemetry settings.|
-
-> [!TIP]
-> For the complete list of supported commands, see [Microsoft Power Platform CLI Command Groups](reference/index.md) or  run the `pac` command or `pac` \<subcommand> - for example: `pac solution`.
+- [Power Pages](/power-pages/configure/power-platform-cli)
+- [Code components](/power-apps/developer/component-framework/create-custom-controls-using-pcf)
+- and more...
 
 ## Provide feedback
 
 Use [github.com/microsoft/powerplatform-build-tools/discussions](https://github.com/microsoft/powerplatform-build-tools/discussions) to view and submit feedback for PAC CLI.
 
+## Install Microsoft Power Platform CLI
+
+There are three ways to install the Power Platform CLI. You can use multiple installation methods on the same computer.
+
+|Method|OS Support|Description|
+|---------|---------|---------|
+|[Install the Visual Studio Code extension](../howto/install-vs-code-extension.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows 10, Windows 11, Linux, and macOS.<br /><br />When you install using ONLY this method, by default PAC CLI will only be available within a Visual Studio Code terminal unless you [enable PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows](../howto/install-vs-code-extension.md#enable-pac-cli-in-command-prompt-cmd-and-powershell-terminals-for-windows)|
+|[Install with .NET Tool](../howto/install-cli-net-tool.md)|Windows, Linux, macOS|Enables use of commands within a PowerShell, CMD, or Bash shell on Windows 10, Windows 11, Linux, and macOS.<br /><br />This installation method doesn't enable use of [pac data](reference/data.md) or certain [pac package](reference/package.md) commands ([deploy](reference/package.md#pac-package-deploy) and [show](reference/package.md#pac-package-show)) that are only available for Windows.|
+|[Install with Windows MSI](../howto/install-cli-msi.md)|Windows only|Enables use of commands within a PowerShell terminal within Visual Studio Code on Windows only. You can [manage installed versions](../howto/install-cli-msi.md#manage-versions) with this installation method.|
+
+> [!NOTE]
+> The following commands are only available on Windows:
+>
+> - [pac data](reference/data.md)
+> - [pac package deploy](reference/package.md#pac-package-deploy)
+> - [pac package show](reference/package.md#pac-package-show)
+>
+> To use these commands on Windows, install Power Platform CLI using either (or both) of these installation methods:
+>
+> - [Visual Studio Code extension](../howto/install-vs-code-extension.md)
+> - [Windows MSI](../howto/install-cli-msi.md)
+>
+> These commands aren't available on Windows if you only install using the [.NET Tool](../howto/install-cli-net-tool.md).
+
+### Check whether Power Platform CLI is already installed
+
+How to determine whether the Power Platform CLI is installed depends on your operating system.
+
+## [Windows](#tab/windows)
+
+1. Open a PowerShell terminal:
+
+   - If you ONLY installed the [Visual Studio Code extension](../howto/install-vs-code-extension.md), open a Visual Studio Code Powershell terminal window.
+   - If you installed using the [.NET Tool](../howto/install-cli-net-tool.md), open a Visual Studio Code Powershell terminal OR a Powershell terminal.
+
+1. Type `Get-Command pac | Format-List` at the prompt, and press **Enter**.
+
+The results should look something like this:
+
+```
+Name            : pac.exe
+CommandType     : Application
+Definition      : C:\Users\you\.dotnet\tools\pac.exe
+Extension       : .exe
+Path            : C:\Users\you\.dotnet\tools\pac.exe
+FileVersionInfo : File:             C:\Users\you\.dotnet\tools\pac.exe
+                  InternalName:     pac.dll
+                  OriginalFilename: pac.dll
+                  FileVersion:      1.29.11
+                  FileDescription:  Microsoft Power Platform CLI
+                  Product:          Microsoft Power Platform&copy;
+                  ProductVersion:   1.29.11+g9e2b163
+                  Debug:            False
+                  Patched:          False
+                  PreRelease:       False
+                  PrivateBuild:     False
+                  SpecialBuild:     False
+                  Language:         Language Neutral
+```
+
+When Power Platform CLI isn't installed, you'll get this error:
+
+```powershell
+Get-Command: The term 'pac' is not recognized as a name of a cmdlet, function, script file, or executable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+```
+
+## [Linux/macOS](#tab/linux-macos)
+
+To see if Power Platform CLI is installed in **Linux or macOS**, open the Terminal/Command prompt, type `which pac` at the prompt, and press **Enter**.
+
+The results should look something like this:
+
+```bash
+/home/you/.dotnet/tools/pac
+```
+
+---
+
+### Check which version of Power Platform CLI is installed
+
+Open the command prompt (on Microsoft Windows), or a Terminal session (in Linux), type `pac` and press **Enter**.
+
+You should see something like this where the version is on the second line.
+
+```
+Microsoft PowerPlatform CLI
+Version: 1.30.3+g0f0e0b9
+```
+
+## Manage auth profiles
+
+Most PAC CLI commands require authenticated access to resources. You'll need to create and use auth profiles.
+
+> [!NOTE]
+> With the Visual Studio Code extension, [you can view and manage authentication profiles](../howto/install-vs-code-extension.md#authentication-profile-management).
+
+[!INCLUDE [auth-intro](reference/includes/auth-intro.md)]
+
+## Enable tab completion in PowerShell
+
+Power Platform CLI has a `pac complete` command similar to the [.NET CLI complete command](/dotnet/core/tools/enable-tab-autocomplete).
+
+When configured using the instructions below, you can type just the beginning of a command and then use the <kbd>Tab</kbd> key to complete the input entered.
+
+To add tab completion to **PowerShell** for the PAC CLI, create or edit the profile stored in the variable `$PROFILE`. For more information, see [How to create your profile](/powershell/module/microsoft.powershell.core/about/about_profiles#how-to-create-a-profile) and [Profiles and execution policy](/powershell/module/microsoft.powershell.core/about/about_profiles#profiles-and-execution-policy).
+
+Add the following code to your profile:
+
+```powershell
+$scriptblock = {
+    param($wordToComplete, $commandAst, $cursorPosition)
+
+    &pac complete -s "$($commandAst.ToString())" | ForEach-Object {
+        [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterValue', $_)
+    }
+}
+
+Register-ArgumentCompleter -Native -CommandName pac -ScriptBlock $scriptblock
+```
+
+### Other Shells
+
+You can also use this with [bash, zsh, fish, and nushell](/dotnet/core/tools/enable-tab-autocomplete#bash). Instead of `dotnet complete` use `pac complete`
+
+
+## US Sovereign cloud availability
+
+Microsoft Power Platform CLI is available for use in the GCC and GCC High (US Sovereign cloud) regions. See the [`--cloud`](reference/auth.md#--cloud--ci) parameter for the [pac auth create](reference/auth.md#pac-auth-create) command to find out about supported US Sovereign cloud environments.
+
+
+## Next steps
+
+Learn about the commands. For the complete list of supported commands, run the `pac help` command or `pac <subcommand> help` - for example: `pac solution help`.
+
+Or view the list of commands in the documentation:
+
+> [!div class="nextstepaction"]
+> [Microsoft Power Platform CLI Command Groups](reference/index.md)<br/>
+
 ### See also
 
+[Microsoft Power Platform CLI release notes](https://www.nuget.org/packages/Microsoft.PowerApps.CLI#releasenotes-body-tab)<br />
 [Microsoft Power Platform CLI Command Groups](reference/index.md)<br />
 [Power Apps component framework](/power-apps/developer/component-framework/overview)<br />
 

@@ -9,7 +9,7 @@ This example initializes a connector in the current directory.
 ```powershell
 pac connector init `
   --connection-template "OAuthAAD" `
-  --generate-script-file "contoso_script_file" `
-  --generate-settings-file "contoso_settings_file" `
+  --generate-script-file `
+  --generate-settings-file `
   --outputDirectory "contoso_Connector"
 ```

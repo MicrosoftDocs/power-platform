@@ -172,7 +172,7 @@ As part of the migration and clean-up effort, make sure the process is smooth to
 Things to keep in mind include:
 
 - Change in URL of the app. Users of the app need to update any bookmarks to an app in the default environment.
-- If there's a URL-based HTTP trigger flow, that must be updated in dependent flows to ensure it still acts as a webhook.
+- If there's an URL-based HTTP trigger flow, that must be updated in dependent flows to ensure it still acts as a webhook.
 - Provide detailed steps to establish connections once the move is complete for both makers and app users. Users shouldn't be worried about creating a connection when they launch the app for the first time from the new environment.
 
 A good start for setting up communications requires a self-serve model to scale and be more real-time for users than just leaving it for a single user’s email or a distribution list. If you plan to establish a SharePoint site, there's a template available that you can use to create an internal, Microsoft Power Platform hub. The hub becomes the common place to learn about strategy and guidance so makers get to make right decisions for what they intend to build and where they should go for it.
@@ -247,7 +247,7 @@ A model-driven app is always part of a solution. The packaged app, included in t
 
 The detailed step-by-step processes are covered in [Export a solution](/power-apps/maker/model-driven-apps/distribute-model-driven-app) and [Import a solution](/power-apps/maker/model-driven-apps/distribute-model-driven-app).
 
-### Export and import a Power Virtual Agents bot
+### Export and import a Microsoft Copilot Studio bot
 
 You can export and import bots using solutions. A detailed list of steps is covered in [Export and import bots using solutions](/power-virtual-agents/authoring-export-import-bots).
 
@@ -280,7 +280,7 @@ This article outlines some possibilities. It's important to carefully consider t
 Similar to most environment types, the default environment is backed up, as well. These system backups are performed automatically. There's no on-demand option for the default environment, so it requires a support request. The backup can be restored into a new environment keeping all the data within Dataverse. This option is only to show the reader about its existence and educate the reader on when to consider. It shouldn't be pursued as the primary choice, as it would only yield partial migration.
 
 - **Supported**: Dataverse, Dynamics apps
-- **Not fully supported**: Canvas app, component library, custom pages, Power Automate, Power Virtual Agents 
+- **Not fully supported**: Canvas app, component library, custom pages, Power Automate, Microsoft Copilot Studio 
 
 Not fully supported indicates that there may be potential data loss during migration and more steps required.
 
@@ -292,7 +292,7 @@ At a high level, the steps are:
 
 1. Add app to a solution.
 1. Add flow to solution.
-1. Add existing Power Virtual Agents.
+1. Add existing bots.
 1. Adjust connection references in apps and flows.
 1. Check for solution dependencies and add objects.
 1. Export the solution.
@@ -311,7 +311,7 @@ The success of a solution import in the target environment can only be ensured w
 
 ### Adding a component to a solution (manual)
 
-Assuming that [a solution is created](/power-apps/maker/data-platform/create-solution), a maker needs to use the add existing component menu option to add an existing app, flow, or Power Virtual Agent.
+Assuming that [a solution is created](/power-apps/maker/data-platform/create-solution), a maker needs to use the add existing component menu option to add an existing app, flow, or bot.
 
 :::image type="content" source="../media/image4.png" alt-text="Image showing adding existing components to a solution.":::
 

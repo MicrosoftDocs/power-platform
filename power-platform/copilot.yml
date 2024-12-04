@@ -1,0 +1,103 @@
+### YamlMime:Landing
+
+title: Copilots and generative AI in Power Platform
+summary: Get an overview of where to find documentation and training for copilots and generative AI in Power Platform.
+
+metadata:
+  title: Copilots and generative AI in Power Platform
+  description: Get an overview of where to find documentation and training for copilots and generative AI in Power Platform.
+  author: jhaskett-msft
+  ms.author: jhaskett
+  ms.date: 11/20/2024
+  ms.topic: landing-page # DON'T CHANGE
+  ms.custom: 
+    - bap-template #Required; don't change
+    - copilot-learning-hub
+  ms.collection: bap-ai-copilot
+
+# linkListType: concept | deploy | download | get-started | how-to-guide | overview | reference | sample | video | whats-new
+
+landingContent:
+
+# Card
+  - title: Copilot in Power Platform
+    linkLists:
+    - linkListType: get-started
+      links:
+      - text: Turn on copilots and generative AI features
+        url: admin/geographical-availability-copilot.md
+      - text: Copilot in Power Apps
+        url: /power-apps/maker/canvas-apps/ai-overview
+      - text: Copilot in Power Automate
+        url: /power-automate/copilot-overview
+      - text: Copilot in Power Pages
+        url: /power-pages/configure/ai-copilot-overview
+
+# Card
+  - title: Copilot training for Power Platform
+    linkLists:
+    - linkListType: learn
+      links:
+      - text: Get started with Copilot for Microsoft Power Platform
+        url: /training/paths/copilot-power-platform/
+      - text: Create Power Platform solutions with AI and Copilot
+        url: /training/paths/copilot-solutions/
+      - text: Create apps, copilots, flows, and more with Microsoft Dataverse and Teams
+        url: /training/paths/work-power-platform-teams/
+      - text: Explore more training available
+        url: /training/browse/?products=power-platform&terms=copilot
+
+  - title: Copilot guidance and development
+    linkLists:
+    - linkListType: concept
+      links:
+      - text: Use Copilot to generate deployment notes in pipelines
+        url: alm/copilot-deployment-notes-pipelines.md
+      - text: Extend Microsoft 365 Copilot
+        url: /microsoft-365-copilot/extensibility/
+    - linkListType: reference
+      links:
+      - text: Power Platform CLI pac copilot command
+        url: developer/cli/reference/copilot.md
+
+# Card
+  - title: Power Platform Well-Architected
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Power Platform Well-Architected?
+            url: well-architected/what-is-power-well-architected.md
+      - linkListType: concept
+        links:
+          - text: Intelligent application workload
+            url: well-architected/intelligent-application/index.yml
+      - linkListType: reference
+        links:
+          - text: Power Platform Well-Architected assessment
+            url: /assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/
+
+# Card
+  - title: Responsible AI
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: FAQs for Microsoft Power Platform
+        url: responsible-ai-overview.md
+      - text: FAQs for Power Apps
+        url: /power-apps/maker/common/responsible-ai-overview
+      - text: FAQs for Power Automate
+        url: /power-automate/responsible-ai-overview
+      - text: FAQs for Power Pages
+        url: /power-pages/responsible-ai-overview
+
+## Card
+  - title: Related copilot products and resources
+    linkLists:
+    - linkListType: reference
+      links:
+      - text: Copilot availability in Power Platform by geography, language, product, and feature
+        url: https://aka.ms/bapcopilot-intl-report-external
+      - text: Microsoft Copilot Studio
+        url: /microsoft-copilot-studio/   
+      - text: Microsoft Copilot learning hub
+        url: /copilot/   

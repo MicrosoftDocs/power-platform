@@ -56,7 +56,7 @@ Each item uses the following schema to visualize data in the component.
 
 Example:
 
-  ```powerapps-dot
+  ```power-fx
 Table(
     {
         ItemKey: "tabFile",
@@ -101,7 +101,7 @@ Coordinate tab pages by associating the `Visible` property of dependent componen
 
 `Visible` property of a dependent control that's displayed when the **tabFile** itemKey is selected:
 
-  ```powerapps-dot
+  ```power-fx
 Pivot1.Selected.ItemKey = "tabFile"
   ```
 

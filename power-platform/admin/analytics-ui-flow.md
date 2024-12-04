@@ -1,12 +1,11 @@
 ---
 title: View analytics for Power Automate desktop flows | Microsoft Docs
 description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
-author: StephenRauchPM
-ms.devlang: na
+author: Zeffin
 ms.topic: conceptual
 ms.date: 08/03/2023
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: cvassallo
 ms.reviewer: sericks
 search.audienceType: 
   - flowadmin
@@ -117,8 +116,6 @@ You can filter your view to display reports from a specific **environment** or f
 
 ## Learn more
 
-- [Create desktop flows](/power-automate/desktop-flows/create-desktop).
-- [Create Selenium IDE flows](/power-automate/ui-flows/create-web).
 - Run [desktop flows](/power-automate/desktop-flows/run-desktop-flow).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

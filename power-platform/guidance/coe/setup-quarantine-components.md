@@ -5,10 +5,10 @@ author: manuelap-msft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 06/13/2024
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -18,7 +18,7 @@ search.audienceType:
 This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they’re unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state)
 
 >[!IMPORTANT]
->This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#what-identity-should-i-install-the-coe-starter-kit-with).
+>This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 ## Set up the App quarantine components using the Setup Wizard
 
@@ -46,7 +46,7 @@ You'll [update these environment variables](faq.md#update-environment-variables)
 
 ### Add or exempt environments from the app quarantine process
 
-You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/adoption/environment-strategy)
+You might want to exempt some environments from the app quarantine process—for example, dedicated environments that are already well-managed. More information: [Establishing an environment strategy](/power-platform/guidance/white-papers/environment-strategy)
 
 You can exempt environments from the app quarantine process by using the Power Platform Admin View app.  
 

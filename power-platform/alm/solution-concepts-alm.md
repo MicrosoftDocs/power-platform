@@ -1,6 +1,6 @@
 ---
 title: "Solution concepts | Microsoft Docs"
-description: "Learn about solutions in Power Apps, Power Automate, and Power Virtual Agents"
+description: "Learn about solutions in Power Apps, Power Automate, and Microsoft Copilot Studio"
 keywords: 
 author: Mattp123
 ms.subservice: alm
@@ -14,7 +14,8 @@ search.audienceType:
 ---
 
 # Solution concepts 
-Solutions are the mechanism for implementing ALM in Power Apps and Power Automate. This article describes the following key solution concepts:
+Solutions are the mechanism for implementing application lifecycle management (ALM) in Power Apps and Power Automate. This article describes the following key solution concepts:
+
 - Two types of solutions
 - Solution components
 - Lifecycle of a solution
@@ -25,10 +26,10 @@ Solutions are the mechanism for implementing ALM in Power Apps and Power Automat
 
 A solution is either *managed* or *unmanaged*.
 
--   **Unmanaged solutions** are used in development environments while you make
-    changes to your application. Unmanaged solutions can be exported either as unmanaged or managed. Exported unmanaged versions of your solutions should be checked into your source control system. Unmanaged solutions should be considered your source for Microsoft Power Platform assets. When an unmanaged solution is deleted, only the solution container of any customizations included in it is deleted. All the unmanaged customizations remain in effect and belong to the default solution.
+-   **Unmanaged solutions** are developed. Unmanaged solutions are used in development environments while you make
+    changes to your application. Unmanaged solutions can be exported either as unmanaged or managed. Exported unmanaged versions of your solutions should be checked into your source control system. Unmanaged solutions should be considered your source for Microsoft Power Platform assets. When an unmanaged solution is deleted, only the solution container of any customizations included in it's deleted. All the unmanaged customizations remain in effect and belong to the default solution.
 
--   **Managed solutions** are used to deploy to any environment that isn't a
+-   **Managed solutions** are deployed. Managed solutions are deployed to any environment that isn't a
     development environment for that solution. This includes test, UAT, SIT, and
     production environments. Managed solutions can be serviced independently
     from other managed solutions in an environment. As an ALM best practice,
@@ -64,12 +65,12 @@ A component represents something that you can potentially customize. Anything th
 > ![Components in solution.](media/components-in-solution.png "Components in solution") 
 
 > [!NOTE]
-> - A solution can be up to 32 MB in size.
+> - A solution can be up to 95 MB in size.
 > - You can't edit components directly within a managed solution.
 
 To view a list of component types that can be added to any solution, see [ComponentType Options](/powerapps/developer/common-data-service/reference/entities/solutioncomponent#componenttype-options). 
 
-Some components are nested within other components. For example, an entity contains forms, views, charts, fields, entity relationships, messages, and business rules. Each of those components requires an entity to exist. A field can’t exist outside of an entity. We say that the field is dependent on the entity. There are actually twice as many types of components as shown in the preceding list, but most of them are nested within other components and not visible in the application.  
+Some components are nested within other components. For example, an entity contains forms, views, charts, fields, entity relationships, messages, and business rules. Each of those components requires an entity to exist. A field can’t exist outside of an entity. We say that the field is dependent on the entity. There are twice as many types of components as shown in the preceding list, but most of them are nested within other components and not visible in the application.  
   
 The purpose of having components is to keep track of any limitations on what can be customized using managed properties and all the dependencies so that it can be exported, imported, and (in managed solutions) deleted without leaving anything behind.
 
@@ -85,7 +86,7 @@ processes:
 -   **Upgrade** Import the solution as an upgrade to an existing managed solution,
     which removes unused components and implements upgrade logic. Upgrades
     involve rolling up (merging) all patches to the solution into a new version
-    of the solution. Solution upgrades will delete components that existed but
+    of the solution. Solution upgrades delete components that existed but
     are no longer included in the upgraded version. You can choose to upgrade
     immediately or to stage the upgrade so that you can do some additional
     actions prior to completing the upgrade.
@@ -104,7 +105,7 @@ Every app and other solution components such as entities you create or any custo
 > are known as the *Common Data Service Default Solution* and the *Default* solutions.
 > More information: [Default Solution and Common Data Service Default Solution](use-solutions-for-your-customizations.md)
 
-The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It is possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Once you introduce a publisher for a component in a managed solution, you can’t change the publisher for the component. Because of this, it's best to define a single publisher so you can change the layering model across solutions later.
+The publisher of a solution where a component is created is considered the owner of that component. The owner of a component controls what changes other publishers of solutions including that component are allowed to make or restricted from making. It's possible to move the ownership of a component from one solution to another within the same publisher, but not across publishers. Once you introduce a publisher for a component in a managed solution, you can’t change the publisher for the component. Because of this restriction, it's best to define a single publisher so you can change the layering model across solutions later.
 
 The solution publisher specifies who developed the app. For this reason, you
 should create a solution publisher name that's meaningful.
@@ -126,12 +127,12 @@ More information:
 - [Change a solution publisher prefix](/powerapps/maker/common-data-service/create-solution#change-a-solution-publisher)
 
 ## Solution dependencies  
-Because of the way that managed solutions are layered, some managed solutions can be dependent on solution components in other managed solutions. Some solution publishers will take advantage of this to build solutions that are modular. You may need to install a “base” managed solution first and then you can install a second managed solution that will further customize the components in the base managed solution. The second managed solution depends on solution components that are part of the first solution.  
+Because of the way that managed solutions are layered, some managed solutions can be dependent on solution components in other managed solutions. Some solution publishers take advantage of this to build solutions that are modular. You might need to install a “base” managed solution first and then you can install a second managed solution that will further customize the components in the base managed solution. The second managed solution depends on solution components that are part of the first solution.  
   
-The system tracks these dependencies between solutions. If you try to install a solution that requires a base solution that isn’t installed, you won’t be able to install the solution. You will get a message saying that the solution requires another solution to be installed first. Similarly, because of the dependencies, you can’t uninstall the base solution while a solution that depends on it is still installed. You have to uninstall the dependent solution before you can uninstall the base solution. More information: [Removing dependencies](removing-dependencies.md)
+The system tracks these dependencies between solutions. If you try to install a solution that requires a base solution that isn’t installed, you won’t be able to install the solution. You'll get a message saying that the solution requires another solution to be installed first. Similarly, because of the dependencies, you can’t uninstall the base solution while a solution that depends on it's still installed. You have to uninstall the dependent solution before you can uninstall the base solution. More information: [Removing dependencies](removing-dependencies.md)
 
 ## Solution component dependencies
-A solution component represents something that you can potentially customize. Anything that can be included in a solution is a solution component and some components are dependant on other components. For example, the website field and account summary report are both dependant on the account entity. More information: [Dependency tracking for solution components](dependency-tracking-solution-components.md)
+A solution component represents something that you can potentially customize. Anything that can be included in a solution is a solution component and some components are dependent on other components. For example, the website field and account summary report are both dependent on the account entity. More information: [Dependency tracking for solution components](dependency-tracking-solution-components.md)
 
 
 ### See also

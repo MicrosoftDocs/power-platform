@@ -6,7 +6,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 12/18/2023
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -14,12 +14,12 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Find function
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Finds a string of text, if it exists, within another string.
 
@@ -42,7 +42,7 @@ The **Find** function looks for a string within another string and is case sensi
 | Formula                                          | Description                                                                    | Result                                                                                                         |
 | ------------------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
 | **Find("World", "Hello World")**                  | Returns the starting position of **"World"**.                                      | 7                                                                         |
-| **Find("World", "Hello World, Hello World", 10)** | Returns the starting position of the first occurence of **"World"** after the 10th character. | 20                                                                         |
+| **Find("World", "Hello World, Hello World", 10)** | Returns the starting position of the first occurrence of **"World"** after the 10th character. | 20                                                                         |
 | **Find("Mars", "Hello World")**                   | Returns blank since the FindString is not in the WithinString                   | Blank()                                                                        |
 
 

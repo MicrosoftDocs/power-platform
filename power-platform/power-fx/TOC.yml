@@ -26,12 +26,20 @@
           items:
           - name: Overview
             href: formula-reference-overview.md
-          - name: Power Apps formula reference
-            href: formula-reference.md
-          - name: Dataverse formula reference
-            href: formula-reference-dataverse.md
+          - name: Canvas apps formula reference
+            href: formula-reference-canvas-apps.md
+          - name: Cards formula reference
+            href: formula-reference-cards.md  
+          - name: Dataverse formula columns formula reference
+            href: formula-reference-formula-columns.md
+          - name: Dataverse plug-ins formula reference
+            href: formula-reference-plug-ins.md  
           - name: Desktop flows formula reference
             href: formula-reference-desktop-flows.md
+          - name: Model-driven apps formula reference
+            href: formula-reference-model-driven-apps.md
+          - name: Power Pages formula reference
+            href: formula-reference-power-pages.md
           - name: Power Platform CLI formula reference
             href: formula-reference-pac-cli.md
           - name: Abs
@@ -42,6 +50,18 @@
             href: reference/function-trig.md
           - name: Acot
             href: reference/function-trig.md
+          - name: AIClassify
+            href: reference/function-ai.md
+          - name: AIExtract
+            href: reference/function-ai.md
+          - name: AIReply
+            href: reference/function-ai.md
+          - name: AISentiment
+            href: reference/function-ai.md
+          - name: AISummarize
+            href: reference/function-ai.md
+          - name: AITranslate
+            href: reference/function-ai.md
           - name: AddColumns
             href: reference/function-table-shaping.md
           - name: And
@@ -90,6 +110,10 @@
             href: reference/function-colors.md
           - name: ColorValue
             href: reference/function-colors.md
+          - name: Column
+            href: reference/function-columnnames-column.md
+          - name: ColumnNames
+            href: reference/function-columnnames-column.md
           - name: Compass
             href: reference/signals.md
           - name: Concat
@@ -154,6 +178,8 @@
             href: reference/function-form.md
           - name: Enable
             href: reference/function-enable-disable.md
+          - name: EncodeHTML
+            href: reference/function-encode-decode.md
           - name: EncodeUrl
             href: reference/function-encode-decode.md
           - name: EndsWith
@@ -364,6 +390,8 @@
             href: reference/function-sequence.md
           - name: ShowColumns
             href: reference/function-table-shaping.md
+          - name: ShowHostInfo
+            href: reference/showhostinfo.md
           - name: Shuffle
             href: reference/function-shuffle.md
           - name: Sin
@@ -386,6 +414,8 @@
             href: reference/function-form.md
           - name: Sum
             href: reference/function-aggregates.md
+          - name: Summarize
+            href: reference/function-summarize.md  
           - name: Switch
             href: reference/function-if.md
           - name: Table
@@ -416,6 +446,8 @@
             href: reference/function-round.md 
           - name: Ungroup
             href: reference/function-groupby.md
+          - name: UniChar
+            href: reference/function-char.md
           - name: Unrelate
             href: reference/function-relate-unrelate.md
           - name: Update

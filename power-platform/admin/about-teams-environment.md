@@ -4,7 +4,7 @@ description: Administer and manage Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 01/31/2023
+ms.date: 05/04/2024
 ms.subservice: admin
 ms.author: matp
 search.audienceType: 
@@ -14,7 +14,7 @@ search.audienceType:
 
 <!-- fwlink 2143567 -->
 
-Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Power Virtual Agents, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
+Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
 The Dataverse for Teams environment is automatically created for the selected team when you create an [app](/powerapps/teams/create-first-app) or [bot](/power-virtual-agents/teams/authoring-first-bot-teams#create-a-bot) in Microsoft Teams for the first time or install an app created using Power Apps from the app catalog for the first time. The Dataverse for Teams environment is used to store, manage, and share team-specific data, apps, and flows. Each team can have one environment, and all data, apps, bots, and flows created with the app created using Power Apps inside a team are available from that team's Dataverse for Teams database.  
 
@@ -51,10 +51,10 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Operations  |Feature description  |Available in GA  |
 |---------|---------|---------|
 |Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Backups will be available for up to 7 days.        |  Yes       |
-|Restore     | Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
+|Restore     | Teams environments only support self-restore. Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
 |Copy     | Not available by default for Dataverse for Teams environments.        | No        |
 |Create     | Only through Microsoft Teams. Note: these Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
-|Delete     | The environment can be deleted by the team owner. Note: the environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
+|Delete     | The environment can be deleted by the team owner. The environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
 |Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
 
@@ -119,7 +119,7 @@ There's a difference in the models for adding users to an environment with a Dat
 </tr>
 <tr>
 <td width="20%"> Dynamics 365 admin </td>
-<td width="50%"> These admins need to be owners or members of the team (because every team is linked to an Microsoft 365 group and the Dataverse for Teams environment will always be restricted for access to that Microsoft 365 group) to have System Administrator&ndash;level privileges to manage the health and maintenance of the environment. </td>
+<td width="50%"> These admins need to be owners or members of the team (because every team is linked to a Microsoft 365 group and the Dataverse for Teams environment will always be restricted for access to that Microsoft 365 group) to have System Administrator&ndash;level privileges to manage the health and maintenance of the environment. </td>
 <td width="30%"> System Administrator if they are an owner in the team; System Administrator and Teams Member if they are a member in the team. No access if they aren't an owner or member in the team. </td>
 </tr>
 <tr>
@@ -152,9 +152,6 @@ You can specify users in an environment to provide access to Dataverse for Teams
 3. Select **Users + permissions**, and then select **Users**.
 
 4. You'll see a list of enabled and disabled users who are members of the Dataverse for Teams environment. You can select a user from the list to run diagnostics and view their access details and status.
-
-   > [!div class="mx-imgBorder"] 
-   > ![List of users in a Dataverse for Teams environment.](media/teams-environment-user-list.png "List of users in a Dataverse for Teams environment") 
 
 5. Select **+ Add user** to add a tenant user to the selected Dataverse for Teams environment. 
 
@@ -250,30 +247,30 @@ After upgrade, the following applies to the newly upgraded environment:
 
 ## Ability to govern Dataverse for Teams
 
-The ability to create apps or bots with the new Power Apps and Power Virtual Agents apps is enabled by default in Microsoft Teams. Admins can enable or disable it for specific users by using the Microsoft Teams apps permission policies in Microsoft Teams.
+The ability to create apps or bots with the new Power Apps and Microsoft Copilot Studio apps is enabled by default in Microsoft Teams. Admins can enable or disable it for specific users by using the Microsoft Teams apps permission policies in Microsoft Teams.
 
-In your Microsoft Teams admin center, you can use **Power Apps** and **Power Virtual Agents** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](/microsoftteams/teams-app-permission-policies)
+In your Microsoft Teams admin center, you can use **Power Apps** and **Microsoft Copilot Studio** applications available under **Microsoft Apps** to enable or disable these new capabilities for specific users. More information: [Manage app permission policies in Microsoft Teams](/microsoftteams/teams-app-permission-policies)
 
-In addition to the new experience of creating apps or bots with Power Apps and Power Virtual Agents, users can use sample apps to instantiate Microsoft Teams apps (and associated Dataverse for Teams environments). Available sample apps are listed [here](/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Microsoft Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Microsoft Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
+In addition to the new experience of creating apps or bots with Power Apps and Microsoft Copilot Studio, users can use sample apps to instantiate Microsoft Teams apps (and associated Dataverse for Teams environments). Available sample apps are listed [here](/powerapps/teams/use-sample-apps-from-teams-store). You can enable or disable these apps for specific users by using the Microsoft Teams apps permissions policies. For example, for app permissions policies under **Microsoft Apps** in the Microsoft Teams admin center, you'll find **Employee Ideas**, **Inspection**, and **Issue Reporting** sample apps.
 
 Note that when the app created using Power Apps is disabled, users won't have access to any standalone apps that you pinned in their Microsoft Teams channels with the app created using Power Apps. For users to continue using standalone apps in the Microsoft Teams experience even after the Power Apps maker experience has been turned off for them, you can use the new **Built by your colleagues** catalog entry point to pin standalone apps to Microsoft Teams channels or a user's personal scope. This action only needs to be performed once: it updates the experience for all members of the team, allowing them to use existing apps they already had access to. We recommend that if you choose to disable Power Apps for any user in your tenant, you advise them that they can use the **Built by your colleagues** catalog to restore the standalone apps they were using before in Microsoft Teams channels. For more information about this entry point and corresponding controls, go to [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
 
 The **Built by your colleagues** catalog intentionally filters out **Shared with Everyone** apps. These apps can be added to the Microsoft Teams app catalog by using the **Upload a custom app** capability in Microsoft Teams. More information: [Publish a custom app by uploading an app package](/microsoftteams/upload-custom-apps)
 
 > [!NOTE]
-> Disabling the Power Apps and Power Virtual Agent app in Teams prevents users from creating new apps and bots but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that will create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
+> Disabling the Power Apps and Microsoft Copilot Studio in Teams prevents users from creating new apps and bots but does not prevent the creation of Dataverse for Teams environments. There are other apps (Inspection, Employee Ideas, and Issue reporting) that will create a Dataverse for Teams environment if you add one of those apps to a team. To prevent Dataverse for Teams environments from being created with these apps, these apps need to be blocked.
 >
 > Microsoft Power Platform data governance policies like data loss prevention and tenant isolation apply to Microsoft Teams and Dataverse for Teams environments, similar to other environment types.
 
-## Applying a data loss prevention policy to all Dataverse for Teams environments 
+## Applying a data policy to all Dataverse for Teams environments 
 
-Microsoft offers a solution that applies a data loss prevention policy (DLP) to all Teams environments within a tenant, allowing you to better control your organization's data without hindering your ability to create low-code and no-code solutions within Teams. 
+Microsoft offers a solution that applies a data policy to all Teams environments within a tenant, allowing you to better control your organization's data without hindering your ability to create low-code and no-code solutions within Teams. 
 
 Follow these steps to apply a DLP policy:
 
 1. Choose or create the policy that you want applied to your Teams environments. This policy must be marked to apply to specific environments, which can be done as follows: 
    - In [PowerShell](powerapps-powershell.md#create-a-dlp-policy), make sure its environmentType is "OnlyEnvironments," or 
-   - In the [web app](create-dlp-policy.md), make sure the scope is set to multiple environments. 
+   - In the [web app](prevent-data-loss.md), make sure the scope is set to multiple environments. 
 
    You will need to add at least one environment to save your policy. Any environments you add now will be overridden by the PowerShell function below, which will automatically add the Teams environments to the policy. 
 
@@ -319,7 +316,7 @@ Follow these steps to apply a DLP policy:
 [Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md) <br />
 [Power Apps and Teams](/powerapps/teams/overview) <br/>
 [Power Automate and Teams](/power-automate/teams/overview)<br/>
-[Power Virtual Agents and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
+[Microsoft Copilot Studio and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
 [Manage your apps in the Microsoft Teams admin center](/MicrosoftTeams/manage-apps) <br />
 [Get started with Microsoft Dataverse for Teams](/training/modules/get-started-dataverse-teams/)
 

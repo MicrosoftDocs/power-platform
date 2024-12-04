@@ -3,13 +3,15 @@ title: "Server-side synchronization between customer engagement apps and email s
 description: Server-side synchronization provides direct apps-to-email server synchronization
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 05/25/2021
+ms.date: 03/14/2024
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
+contributors:
+- rahulmital 
 ---
 # Server-side synchronization
 
@@ -23,6 +25,9 @@ Using server-side synchronization makes messaging data available to a web browse
   
 > [!NOTE]
 > A user can only map to a single [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox. Similarly, an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox can only be mapped to a single user. When customer engagement apps detect that an [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] or POP3 mailbox has already been mapped to a user, a dialog box is displayed to present a choice to the user whether to map the user to the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox. When the user selects **Yes**, it breaks the previous user-to-[!INCLUDE[pn_Exchange](../includes/pn-exchange.md)]-mailbox mapping and, subsequently, the synchronization that would occur between the user and the [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] mailbox.
+
+> [!NOTE]
+> Only mailboxes can be configured for synchronization. Using contacts or distribution lists is not supported because the synchronization process is asynchronous and those types of resources don't store the emails.
   
 ## Server-side synchronization frequency
 Server-side synchronization runs on a schedule for each mailbox and has different synchronization delays based on the workload processed. Available workloads are incoming emails, outgoing emails, and appointments, contacts, and tasks synchronization.

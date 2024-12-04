@@ -1,13 +1,16 @@
 ---
 title: "View and download Dataverse analytics"
 description: "Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, executions, and more."
-author: StephenRauchPM
+author: sericks007 
 ms.topic: conceptual
-ms.date: 03/22/2022
+ms.date: 03/26/2024
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: sericks
 ms.reviewer: sericks
-
+ms.contriutors:
+ - yingchin
+ - mbajwa
+ - olegov
 ---
 
 # Microsoft Dataverse analytics
@@ -32,10 +35,6 @@ Admins with the following roles and a [license](pricing-billing-skus.md) can vie
 For more information on the different roles for managing your tenant across the platform, see [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
  **Key highlights**  
-
-- **Deprecating the solution**: Organization Insights, available as a preferred solution from AppSource, will no longer be supported or available for use in future releases.  
-
-- **Deprecating Organization Insights dashboard**: This dashboard will be removed from Dataverse in future releases. 
 
 - **Monitor adoption and use**: Identify your most active users, the number and types of operations they're performing, number of pages requests, most-used entities, workflows, plug-ins, and more, over a period of time as you work toward your adoption goals.  
 
@@ -147,7 +146,7 @@ For more information on the different roles for managing your tenant across the 
 > |      Workflow Executions      | This chart shows how many workflows have been executed in the environment with a Dataverse database over the specified time. | 
 > |     System Jobs Pass Rate     | This chart shows the system job's pass rate as percentage of system jobs that were executed in the environment with a Dataverse database over the specified time.  | 
 > | System Jobs Throughput/Minute | This chart shows the average system jobs that have been executed per hour in the environment with a Dataverse database over the specified time. | 
-> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the environment with a Dataverse databaset over the specified time.   | 
+> |    Executions and Backlog     |  This chart shows the number of executions and the backlog for system jobs in the environment with a Dataverse database over the specified time.   | 
 > |     Most Active Workflows     |  This chart shows top 10 most executed workflows in the environment with a Dataverse database over the specified time.  | 
 > |   Top Workflows by Failures   | This chart shows top 10 most failing workflows in the environment with a Dataverse database over the specified time. Click on a workflow to see the failures and their number of occurrences. | 
 
@@ -215,6 +214,7 @@ For more information on the different roles for managing your tenant across the 
 > |   Total API Calls   | This chart shows how many API calls have been made in total in the environment with a Dataverse database over the specified time.     | 
 > |    Most Used API    | This chart shows top 10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts here will provide the total of the top 10 API calls. This will not be the same as the all up Total API Calls metric above.       | 
 > |      API Calls      | This chart shows how many API calls have been made over time in the environment with a Dataverse database over the specified time. Adding up the individual counts will equal the Total API Calls count.  |
+> |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report-preview)   |
 
 ### Update frequency  
  API Call Statistics chart data is updated as follows.  
@@ -225,7 +225,65 @@ For more information on the different roles for managing your tenant across the 
 |Top API by Failures|24 hours|  
 |Most Used API|24 hours|  
 |Total API Calls|24 hours|  
-|API Calls|24 hours|  
+|API Calls|24 hours|
+|API peak call rate |24 hours|
+
+### API peak call rate report (preview)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+The API peak call rate report shows API usage graph with the number of requests per user/application for the selected interval. This report helps you monitor the API usage, and avoid hitting the [service protection limits](/power-apps/developer/data-platform/api-limits).
+
+:::image type="content" source="media\analytics-common-data-service\api-peak-call-rate.png" alt-text="A screenshot of API peak call rate graph" :::
+
+| Chart	element | Description |
+| - | - |
+| SDSService and OData|	The bars show the max number of API requests by app/users within 5-min interval. The maximum is the number of requests per user per five minutes that is based on your licenses and capacity add-ons. |
+| API Peak limit | The peak requests per second recorded by the request count API limit. This is a measure of request count per unit time. |
+
+#### Analyze API peak call rate
+
+To help interpret and act on the capacity, the graph shows the API peak limit. The bars show the max number of API requests by app/users within a 5-minute interval. The maximum is the number of requests per user per five minutes that is based on your licenses and capacity add-ons.
+  
+You can also have a direct view of where your actual use of capacity is relative to the limit so you can be sure that you are within the limit.
+
+When the graph shows that your requests per user/app are beyond the peak limit (identified with a red line), it means that you have reached a peak and your requests are being throttled. Report shows data using a single unit of measure to make it easy to get an overview of API utilization.
+
+API peak call rate is calculated as the maximum of one of the following:
+
+- The peak requests per second (RPS) recorded by the request count API limit. This is a measure of request count per unit time.
+- The peak cumulative execution time recorded by the time API limit. Each 150 ms of request execution time is counted as one API call, and then summed up for every 5-minute interval. This is a measure of compute time, converted to an equivalent number of API calls per unit time.
+
+For more information about the API count and time limits, refer to [service protection API limits](/power-apps/developer/data-platform/api-limits).
+
+##### Example scenarios
+
+API peak call rate is based on either the number of requests or execution time measured by the service protection limits, whichever is greater. One request is equivalent to 150ms of execution time measured by the time limit. 
+
+The scenarios below show how the peak call rate is derived based on either request count or execution time using 150ms as the conversion factor from time to count.
+
+**Scenario 1**: Client sends 150,000 web API calls in 5 minutes that each execute for 50ms. 
+
+- Count is 500 requests per second (150,000 per 5 minutes is 30,000 per minute)
+- Time is equivalent to 17 requests per second (750,000ms total time, or 5000 calls per 5 minutes (750,000ms / 150ms))
+
+Request count is higher in this case, so the peak rate displayed is 500 requests per second.
+
+**Scenario 2**: Client sends 300 web API calls in 5 minutes that each execute for 10 seconds.
+
+- Count is 1 request per second (there are 300 seconds in 5 minutes)
+- Time is equivalent to 67 requests per second (3,000,000ms total time, or 20,000 API calls per 5 minutes (3,000,000ms / 150ms).
+
+Execution time converts to a higher request count in this case, so the peak rate displayed is 67 API calls per second.
+
+#### Optimize API peak call rate
+
+The usage graph can help you identify what users/applications are approaching or exceeding the service protection limits and take actions to mitigate it as necessary.
+
+To optimize limit, consider reducing the number of API requests by user/app or increase the limit by adding more capacity and bring the peak limit (identified with a red line) higher.
 
 <a name="BKMK_MailboxUsage"></a>   
 

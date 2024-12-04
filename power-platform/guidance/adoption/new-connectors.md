@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
@@ -19,11 +19,6 @@ Our large ecosystem of software as a service (SaaS) connectors enables you to co
 More information: [Connector reference overview](/connectors/connector-reference/)
 
 New connectors—both Microsoft first party and third party—are added constantly, and as an administrator you should be aware of new connectors and ensure they are classified accordingly in your [Data loss prevention (DLP) policies](../../admin/wp-data-loss-prevention.md).
-
-Templates in Power Automate are available to help you get notifications when new connectors are added:
-
-- [List new Microsoft flow connectors template](https://flow.microsoft.com/galleries/public/templates/5a6ef26db3b749ed88b7afb377d11ecf/list-new-microsoft-flow-connectors/)
-- [Get a list of new Power Apps, flows, and connectors template](https://flow.microsoft.com/galleries/public/templates/0b2ffb0174724ad6b4681728c0f53062/get-list-of-new-powerapps-flows-and-connectors/)
 
 Configure those flows in your environment to receive regular notifications about new connectors.
 

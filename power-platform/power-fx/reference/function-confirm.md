@@ -6,14 +6,14 @@ ms.subservice: power-fx
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: nabuthuk
-ms.date: 12/04/2021
+ms.date: 3/22/2024
 ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Confirm function
@@ -53,19 +53,19 @@ Use the [**Notify**](function-showerror.md) function to display a message banner
 
 ## Examples
 
-```powerapps-dot
+```power-fx
 If( Confirm( "Are you sure?" ), Remove( ThisItem ) )
 ```
 
 Simple confirmation dialog, asking the user to confirm deletion of a record before it's removed.  Unless the user presses the "OK" button, the record won't be deleted.
 
-```powerapps-dot
+```power-fx
 If( Confirm( "Are you sure?", {Title: "Delete Confirmation"} ), Remove( ThisItem ) )
 ```
 
 Same dialog as the last example, but adds Title text. 
 
-```powerapps-dot
+```power-fx
 Set( FavColor, 
      If( Confirm( "What is your favorite color?", 
                   { ConfirmButton: "Red", CancelButton: "Green" } 
@@ -78,7 +78,7 @@ Set( FavColor,
 
 Asks the user for their favorite color, capturing the result into a global variable.  The result that will be placed in **FavColor** will be the text string "Red" or "Green".  As the *confirm* choice, "Red" is the default.  This only works on platforms that support **ConfirmButton** and **CancelButton** options.
 
-```powerapps-dot
+```power-fx
 Confirm( "There was a problem, please review your order." )
 ```
 

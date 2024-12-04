@@ -11,8 +11,8 @@ metadata:
   ms.subservice: guidance
   ms.topic: hub-page
   ms.collection: collection
-  author: KumarVivek
-  ms.author: kvivek
+  author: sericks007
+  ms.author: sericks
   ms.date: 12/21/2022
 
 # highlightedContent section (optional)
@@ -122,7 +122,7 @@ additionalContent:
             - text: More...
               url: /power-pages/guidance
         # Card
-        - title: Power Virtual Agents guidance
+        - title: Microsoft Copilot Studio guidance
           links:
             - text: Topics best practices
               url: /power-virtual-agents/guidance/topics-overview
@@ -151,7 +151,7 @@ additionalContent:
         - title: Power Pages docs
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
-        - title: Power Virtual Agents docs
+        - title: Microsoft Copilot Studio docs
           summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
           url: /power-virtual-agents
         - title: Power Platform admin docs

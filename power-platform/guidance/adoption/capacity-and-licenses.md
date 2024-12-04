@@ -1,5 +1,5 @@
 ---
-title: "Plan and manage license and capacity allocations - Microsoft Power Platform (contains video) | MicrosoftDocs"
+title: "Plan and manage license and capacity allocations - Microsoft Power Platform | MicrosoftDocs"
 description: "Find answers to questions around how to plan licensing and capacity for your organization's or team's applications or processes."
 author: manuelap-msft
 
@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 09/09/2020
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---

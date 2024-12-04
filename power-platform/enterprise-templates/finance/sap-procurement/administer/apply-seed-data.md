@@ -15,7 +15,7 @@ contributors:
   - EllenWehrle
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -46,7 +46,7 @@ You can store and manage menu items in Dataverse and associate them with configu
 Follow these steps to set up application menus:
 
 1. Open the _SAP Administrator_ app that was part of the SAP Administrator Base solution.
-1. Go to _Menu Items_.
+1. Select **Menu Items**.
 1. Select **+New**.
 1. Populate the fields.
 
@@ -59,7 +59,7 @@ To help you set up application menus, a list of the fields with examples and des
 | Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this is a process domain area. |
 | Order | _1_, _2_, _3_, _4_ | The order in which the menu items should be displayed. |
 | Capability | "Vendors", "Requisitions", "Purchase Orders" | The capability or app that corresponds to each menu item. |
-| Launch URL | "<https://apps.powerapps.com/play/e/2359c141-01e4-ec77-8e6f-7efd2f5c7308/a/7d0062b0-922b-454e-8154-295ef726d54d?tenantId=fe2dcd3b-6648-914a-8c8e-8761944769ce>" | The URL of the corresponding app to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL is unique for a given app per environment. |
+| Launch URL | "<https://apps.powerapps.com/play/e/2359c141-01e4-ec77-8e6f-7efd2f5c7308/a/7d0062b0-922b-454e-8154-295ef726d54d?tenantId=aaaabbbb-0000-cccc-1111-dddd2222eeee>" | The URL of the corresponding app to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL is unique for a given app per environment. |
 | Menu Icon | Purchase Orders Menu Icon | The icon to be displayed with the menu item in the app. You can select your own or the one that is contained in the SAP Procurement solution located underneath _web resources_. |
 
 ## Apply SAP's list of values
@@ -80,7 +80,7 @@ The constrained list of values varies according to what business process is bein
 ### Create and manage list of values
 
 1. Open the _SAP Administrator_ app that was installed as part of the SAP Base solution.
-1. Go to _List of Values_.
+1. Select **List of Values**.
 1. Select **Export to Excel | Open in Excel Online**.
 
    :::image type="content" source="media/apply-seed-data/list-value-export.png" alt-text="Export list values to Excel.":::
@@ -117,7 +117,7 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 ### Create localization strings
 
 1. Open the _SAP Administrator_ app that was installed as part of the SAP Base solution.
-1. Go to _Localizations_.
+1. Select **Localizations**.
 1. Select **Export to Excel | Open in Excel Online**.
 
    :::image type="content" source="media/apply-seed-data/export-sap-localizations.png" alt-text="Export SAP string localizations to Excel.":::
@@ -134,19 +134,19 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 > [!NOTE]
 > List of Values localizations are not impacted by these strings because combo box items behave differently than standard strings. Refer to the _List of values_ section to administer localized dropdown values.
 
-> [!TIP]
-> A [**CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) contains all the app default English strings. You can import the CSV file into your environment using the [_**Import data**_](/power-apps/user/import-data) capability that is part of the SAP Administrator app. Although not required for English-only deployments, importing this file helps you quickly identify the localization strings that you need to prepare for your required language.
->
-> To further accelerate the string localization creation process, create a cloud flow to trigger off of Dataverse English imported localization records selected in the SAP Administrator app. This flow can use _AI Builder_ action steps to automatically translate the English records to your target language and directly load them into the _SAP Localizations_ table.
->
-> More information: [Use text translation pre-built model in Power Automate](/ai-builder/flow-text-translation)
+#### Import default English strings
 
-## Next steps
+To help you quickly identify localization strings you need to prepare for your required language, you can access a [**CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) that contains all the app default English strings. You can import the CSV file into your environment using the [_**Import data**_](/power-apps/user/import-data) capability that is part of the SAP Administrator app.
 
-- [Monitor errors](monitor-errors.md)
-- [Customize solutions](customize-solutions.md)
+To further accelerate the string localization creation process, create a cloud flow to trigger off of Dataverse English imported localization records selected in the SAP Administrator app. This flow can use _AI Builder_ action steps to automatically translate the English records to your target language and directly load them into the _SAP Localizations_ table.
 
-## See also
+More information: [Use text translation pre-built model in Power Automate](/ai-builder/flow-text-translation)
 
-- [Overview](../overview.md)
+### Next step
+
+[Customize the SAP Procurement solutions](customize-solutions.md)
+
+### See also
+
+- [Monitor for errors](monitor-errors.md)
 - [Get started](get-started.md)

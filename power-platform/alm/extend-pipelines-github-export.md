@@ -3,7 +3,7 @@ title: Extend pipelines using GitHub Actions
 description: Download, unpack, and commit a solution using a GitHub workflow called from a Power Automate Flow.
 author: mikefactorial
 ms.author: caburk
-ms.reviewer: kvivek
+ms.reviewer: sericks
 ms.topic: overview
 ms.date: 06/15/2023
 ms.custom: 

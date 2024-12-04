@@ -248,7 +248,7 @@ Organizations that use CMK should have strict procedures to protect and renew th
 
 Most operations, support, and troubleshooting that Microsoft personnel perform don't require access to customer data. However, in rare situations, Microsoft personnel need limited access to customer data for investigational purposes. Microsoft has a multi-layered internal approval process to grant access to customer data when needed, but many organizations need or want more control over how Microsoft can access their data. With [Power Platform Customer Lockbox](/power-platform/admin/about-lockbox), customers can review, approve, and reject Microsoft data access requests.
 
-When Customer Lockbox is activated and your support ticket requires us to have limited access to your data, your organization's global administrators and Power Platform administrators receive a request. If it's approved, the Microsoft personnel who are working on your ticket have access to the data in the requested environment only, and only for a certain length of time. Moreover, their access isn't automatically renewed. Every time data access is needed, admins receive a new Customer Lockbox request. All requests and updates are automatically recorded in the audit log.
+When Customer Lockbox is activated and your support ticket requires us to have limited access to your data, your organization's Power Platform administrators receive a request. If it's approved, the Microsoft personnel who are working on your ticket have access to the data in the requested environment only, and only for a certain length of time. Moreover, their access isn't automatically renewed. Every time data access is needed, admins receive a new Customer Lockbox request. All requests and updates are automatically recorded in the audit log.
 
 ### Extended backup (7 to 28 days)
 
@@ -326,7 +326,7 @@ It's important to understand what happens if your organization stops using Manag
 |:---:|:---:|:---:|
 | Maker welcome | Indirect: They stop seeing the welcome message when they enter the environment. | Indirect: They can't define customized welcome messages in environments. |
 | Limit sharing | Direct: They can share their apps with any security groups and users. | Indirect: They can't control how apps in the environment are being shared. |
-| Usage unsights| None | Direct: They, and any other recipients, stop receiving the weekly email digest. |
+| Usage insights| None | Direct: They, and any other recipients, stop receiving the weekly email digest. |
 | Data policies | None | Indirect: DLPs are enforced, but admins can't apply multiple DLPs to the environment. |
 | Pipelines in Power Platform | Direct: They can't use the pipelines to deploy their solutions. | None |
 | Solution checker enforcement | Indirect: They can import any solution without a check for errors, security, and noncompliant assets. | None |

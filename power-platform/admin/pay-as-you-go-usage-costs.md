@@ -4,10 +4,10 @@ description: Aggregated billing information is available in the Azure portal, an
 author: Kavishi
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 03/08/2022
+ms.date: 08/13/2024
 ms.subservice: admin
 ms.author: kaagar
-ms.reviewer: jimholtz 
+ms.reviewer: sericks 
 contributors:
   - ShawnNandiMSFT
 search.audienceType: 
@@ -56,11 +56,6 @@ The downloadable report contains the following fields:
 | Billed Quantity | Calculated by the unit of measure and reporting frequency |
 | Unit of measure | The measure that billing occurs to Azure for the submeter |
 | Status | Indicates if it is getting billed to Azure or if it is in Preview and not billed |
-
-
-Here is a sample of a detailed usage report:
-
-:::image type="content" source="media/paygo_detailedusage.png" alt-text="Sample detailed usage report" lightbox="media/paygo_detailedusage.png":::
 
 
 ### Determining billed quantity

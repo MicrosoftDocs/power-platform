@@ -3,10 +3,10 @@ title: "Troubleshooting and monitoring server-side synchronization  | MicrosoftD
 description: Troubleshooting and monitoring server-side synchronization
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/19/2023
-author: DanaMartens
+ms.date: 07/23/2024
+author: rahulmital 
 ms.subservice: admin
-ms.author: dmartens
+ms.author: rahulmital 
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -17,7 +17,28 @@ search.audienceType:
 
 This page is your source for issues and resolutions for troubleshooting server-side synchronization. Check back for updated information as issues are discovered and resolutions recorded.  
  
-## The Server-Side Snychronization Failures dashboard
+## The server-side synchronization Item Monitoring dashboard
+
+You can use the **Item Monitoring** dashboard to understand why emails, appointments, contacts, and tasks have not been synchronized. 
+
+> [!NOTE]
+> Rows in the **Item Monitoring** dashboard can only be viewed by the user who owns the associated Dataverse mailbox record or by a user who has the System Administrator security role. When the dashboard is accessed by a System Administrator, items not owned by that user appear with the **Item Subject** redacted (***). 
+
+The **Sync Error** column contains information about why the item didn't synchronize, as shown in the following image. 
+
+:::image type="content" source="media/item-monitoring-dashboard.png" alt-text="Examine the sync error.":::
+   
+Selecting the link directs you to a **Learn** article for the error, if one exists. 
+
+The data for the dashboard is stored in the ExchangeSyncIdMapping table and is retained by the system for up to three days after the failure occued. This value can be modified by changing the ExchangeSyncIdMappingPersistenceTimeInDays OrgDbOrgSetting. 
+
+## Known Issues: 
+
+This dashboard does not currently work when viewed using the Unified Client interface. You will see the following error: 
+
+Components added to dashboard are not supported to be shown in this client 
+
+For more information, please see Troubleshoot item level Server-Side Synchronization issues with Dynamics 365 - Dynamics 365 Sales | Microsoft Learn. 
 
 Follow the steps in this [KB article](https://support.microsoft.com/help/4468755/troubleshoot-item-level-server-side-synchronization-issues-with-dynami) to enable and use a dashboard to get information on synchronization errors.
 
@@ -28,12 +49,12 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 <a name="BKMK_PerformanceDashboard"></a>   
 
 ## The Server-Side Synchronization Monitoring dashboard  
+> [!NOTE]
+> The Server-Side Synchronization Monitoring dashboard has been deprecated as of the 9.2.2403.4 weekly release and will no longer receive updates or further support.
+
  You can use the Server-Side Synchronization Monitoring dashboard to get a quick look at the health of mailboxes using server-side sync.  
   
  Go to any dashboard, click Select ![Drop-down button.](../admin/media/drop-down-button.png "Drop-down button") next to the dashboard title, and then click **Server-Side Synchronization Monitoring**.  
-
-> [!div class="mx-imgBorder"] 
-> ![Server-side Synchronization Monitoring dashboard.](../admin/media/server-side-sync-performance-dashboard.png "Server-side Synchronization Monitoring dashboard")  
   
  This dashboard is made up of multiple charts, each providing insights into your organization's server-side sync performance.  
   
@@ -43,9 +64,6 @@ Follow the steps in this [KB article](https://support.microsoft.com/help/4468755
 > ![Click on the mailboxes listed for more info.](../admin/media/server-side-sync-performance-dashboard-mailbox.png "Click on the mailboxes listed for more info.")  
   
  Click on the grid icon in each chart to view the records that are used to generate the chart.  
-  
-> [!div class="mx-imgBorder"] 
-> ![Click to view records used to create chart.](../admin/media/server-side-sync-performance-dashboard-chart.PNG "Click to view records used to create chart")  
 
 ## Common alerts and recommended resolutions  
   
@@ -81,7 +99,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
   
  **Cause:**  
   
- This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with the global administrator role in [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. By verifying the email address in customer engagement apps as an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator, customer engagement apps be able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
+ This error occurs if a user is configured to use the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile but their email address hasn't been approved by a [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] administrator. A user with sufficient access to approve mailboxes needs to approve the email address for each user that uses the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] email server profile. Learn more about who can approve mailboxes at [Approve email](connect-exchange-online.md#approve-email). The [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile uses server-to-server authentication between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. This authentication is dependent on a trust between customer engagement apps and [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)]. After the [approval process](connect-exchange-online.md#approve-email), customer engagement apps are able to send and receive email for that user without the need to provide any email credentials within customer engagement apps.  
   
  **Solution:**  
   
@@ -119,7 +137,7 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 6. Click **Test & Enable Mailboxes** to retest email processing for the enabled mailboxes.  
   
 > [!NOTE]
-> You can remove the requirement for approving mailboxes using: **Settings** > **Administration** > **System Settings** > **Email** tab. Uncheck **Process emails only for approved users** and **Process emails only for approved queues**, then click **OK**. If you are using the [!INCLUDE[pn_Microsoft_Exchange_Online](../includes/pn-microsoft-exchange-online.md)] profile, email addresses must still be approved by an [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] global administrator.  
+> You can remove the requirement for approving mailboxes. Learn more at [Remove the requirement to approve mailboxes](connect-exchange-online.md#remove-the-requirement-to-approve-mailboxes).
   
 ### Mailbox location could not be determined  
  **Alert:** The mailbox location could not be determined while sending/receiving the email message \<Message Subject>. The mailbox \<Mailbox Name> has been disabled for sending/receiving email and the owner of the associated email server profile \<Email Server Profile name> has been notified.  

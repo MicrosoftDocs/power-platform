@@ -47,12 +47,13 @@
         "tinaburden",
         "almostdunh",
         "AshleyWoodruff",
-        "cpdSeattle"
+        "cpdSeattle",
+        "kimberleybrown",
+        "nathlaroche"
       ],
       "breadcrumb_path": "/power-platform/breadcrumb/toc.json",
       "titleSuffix": "Power Platform",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/power-platform",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://powerusers.microsoft.com/",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-PowerPlatform"
@@ -69,7 +70,8 @@
         "guidance/**/*.md": "guidance",
         "alm/**/*.md": "alm",
         "admin/**/*.md": "admin",
-        "developer/**/*.md": "developer"
+        "developer/**/*.md": "developer",
+        "well-architected/**/*.md": "well-architected"
       },
       "search.app": {
         "power-fx/**/*.md": [ "powerapps-docs" ],

@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.date: 10/14/2021
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
 # Support Microsoft Power Platform champions in your organization
 
-Champions are essential to driving awareness, adoption, and education in your organization. A _champion_ is recognized by their peers as the _go-to_ Power Apps, Power Automate, or Power Virtual Agents expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power Platform champions influence and help their colleagues in many ways, including solution development, learning, skills improvement, troubleshooting, and keeping up to date.
+Champions are essential to driving awareness, adoption, and education in your organization. A _champion_ is recognized by their peers as the _go-to_ Power Apps, Power Automate, or Microsoft Copilot Studio expert. A champion continually builds and shares their knowledge even if it's not an official part of their job role. Power Platform champions influence and help their colleagues in many ways, including solution development, learning, skills improvement, troubleshooting, and keeping up to date.
 
 Champions emerge as leaders of the community of practice who:
 
 - Have a deep interest in Power Platform being used effectively and adopted successfully throughout the organization.
-- Possess strong Power Apps, Power Automate, or Power Virtual Agents skills as well as domain knowledge for their functional business unit.
+- Possess strong Power Apps, Power Automate, or Microsoft Copilot Studio skills as well as domain knowledge for their functional business unit.
 - Have an inherent interest in getting involved and helping others.
 - Are early adopters who are enthusiastic about experimenting and learning.
 - Can effectively translate business needs into solutions.

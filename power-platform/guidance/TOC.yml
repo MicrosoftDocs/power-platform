@@ -44,7 +44,7 @@
                 - name: Plan and manage licenses and capacity
                   href: adoption/capacity-and-licenses.md
                 - name: Establish an environment strategy
-                  href: adoption/environment-strategy.md
+                  href: white-papers/environment-strategy.md
                 - name: Manage Dataverse for Teams environments
                   href: adoption/teams-environment-strategy.md
                 - name: Manage the default environment
@@ -140,10 +140,14 @@
               href: coe/setup-quarantine-components.md
             - name: Collect audit log data
               items:
-                  - name: Using an HTTP call (recommended)
+                  - name: Using Microsoft Graph API (recommended)
+                    href: coe/setup-auditlog-http-graphapi.md  
+                  - name: Using Office 365 Management API
                     href: coe/setup-auditlog-http.md
-                  - name: Using a custom connector (deprecated)
-                    href: coe/setup-auditlog.md
+                  - name: Collect historic audit log events
+                    href: coe/setup-auditlog-http-old-data.md
+                  - name: Troubleshooting
+                    href: coe/setup-auditlog-troubleshooting.md
             - name: Set up Power BI reports
               href: coe/setup-powerbi.md
             - name: Set up nurture components
@@ -154,6 +158,8 @@
               href: coe/setup-admin-tasks-component.md
             - name: Set up theming components
               href: coe/setup-theming.md
+            - name: Set up the Business value toolkit
+              href: coe/setup-business-value-toolkit.md              
             - name: What's next - updating the CoE Starter Kit
               href: coe/after-setup.md
             - name: What's next - extending the CoE Starter Kit
@@ -166,6 +172,8 @@
               items:
                 - name: Core components
                   href: coe/core-components.md
+                - name: Business value toolkit
+                  href: coe/business-value-toolkit.md
                 - name: Governance components
                   href: coe/governance-components.md
                 - name: Nurture components
@@ -239,7 +247,7 @@
                   href: coe/cli/cli-development/documentation.md
         - name: FAQ and Tips
           items:
-            - name: Questions, Tips and How To's
+            - name: CoE Starter Kit - FAQ
               href: coe/faq.md
             - name: Questions related to the Data Export integration
               href: coe/faq-dataexport.md
@@ -387,6 +395,18 @@
                   href: creator-kit/dialog.md
                 - name: Panel (experimental)
                   href: creator-kit/panel.md
+            - name: Charts
+              items:
+                - name: DonutChart (preview)
+                  href: creator-kit/donutchart.md
+                - name: GaugeChart (preview)
+                  href: creator-kit/gaugechart.md
+                - name: HorizontalBar
+                  items:
+                  - name: HorizontalBarChart (preview)
+                    href: creator-kit/horizontalbarchart.md
+                  - name: HorizontalBarChart - Stacked (preview)
+                    href: creator-kit/stackedbarchart.md
             - name: Utilities
               items:
                 - name: Elevation
@@ -401,24 +421,6 @@
               href: creator-kit/setfocus.md
     - name: Automation adoption best practices
       href: /power-automate/guidance/automation-coe/overview
-    - name: Real-world architecture examples
-      items:
-        - name: Overview
-          href: architecture/real-world-examples/overview.md
-        - name: Using the SharePoint connector with canvas apps
-          href: architecture/real-world-examples/sharepoint-canvas.md
-        - name: Using Dataverse with canvas apps
-          href: architecture/real-world-examples/dataverse-canvas-app.md
-        - name: Using Azure Functions to extend a canvas app
-          href: architecture/real-world-examples/azure-function-canvas.md
-        - name: Using REST APIs through custom connectors with canvas apps
-          href: architecture/real-world-examples/custom-connector-canvas.md
-        - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
-          href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
-        - name: Using on-premises SQL Server with canvas apps
-          href: architecture/real-world-examples/sql-gateway-canvas.md
-        - name: Using Power Apps component framework with canvas apps
-          href: architecture/real-world-examples/pcf-canvas-components.md
     - name: ExpressRoute and Power Platform
       items:
         - name: Overview
@@ -437,10 +439,42 @@
           href: expressroute/setup.md
         - name: ExpressRoute readiness checklist
           href: expressroute/checklist.md
+    - name: Real-world architecture examples
+      items:
+        - name: Overview
+          href: architecture/real-world-examples/overview.md
+        - name: Using the SharePoint connector with canvas apps
+          href: architecture/real-world-examples/sharepoint-canvas.md
+        - name: Using Dataverse with canvas apps
+          href: architecture/real-world-examples/dataverse-canvas-app.md
+        - name: Using Azure Functions to extend a canvas app
+          href: architecture/real-world-examples/azure-function-canvas.md
+        - name: Using REST APIs through custom connectors with canvas apps
+          href: architecture/real-world-examples/custom-connector-canvas.md
+        - name: Using business process flows, Dataverse, custom connectors, and Power Automate with canvas apps
+          href: architecture/real-world-examples/bpf-dataverse-powerautomate.md
+        - name: Using on-premises SQL Server with canvas apps
+          href: architecture/real-world-examples/sql-gateway-canvas.md
+        - name: Using Power Apps component framework with canvas apps
+          href: architecture/real-world-examples/pcf-canvas-components.md
+    - name: Real-world case studies
+      items:
+        - name: A1 Inteligencia em Viagens boosts team efficiency
+          href: case-studies/boost-efficiency-experience-case-study.md
+        - name: Epiq streamlines employee onboarding
+          href: case-studies/streamline-employee-onboarding.md
+        - name: Degrees of Change automates nonprofit operations
+          href: case-studies/nonprofit.md
+        - name: Cineplex automates business processes
+          href: case-studies/automate-business-processes.md
     - name: White papers
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
+        - name: Develop an environment strategy
+          href: white-papers/environment-strategy.md
+        - name: Enterprise security
+          href: white-papers/enterprise-security.md
         - name: Activating Managed Environments
           href: white-papers/managed-environment-activation.md
         - name: Application modernization with Power Platform

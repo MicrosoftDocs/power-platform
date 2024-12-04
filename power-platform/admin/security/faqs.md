@@ -1,7 +1,7 @@
 ---
 title: Power Platform security FAQs
 description: Get answers to common questions about Power Platform security.
-ms.date: 11/07/2022
+ms.date: 04/11/2024
 ms.service: power-platform
 ms.topic: conceptual
 ms.custom: 
@@ -89,6 +89,12 @@ Power Platform uses industry-standard best practices to prevent injection attack
 - Power Platform's Component Governance process enforces the secure configuration of package source files to maintain software integrity.
 - The process ensures that only internally sourced packages are served to address [substitution attack](https://azure.microsoft.com/resources/3-ways-to-mitigate-risk-using-private-package-feeds/). Substitution attack, also known as dependency confusion, is a technique that can be used to poison the app-building process inside secure enterprise environments.
 - All encrypted data has integrity protection applied before it's transmitted. All integrity protection metadata present for incoming encrypted data is validated.
+
+## OWASP top 10 Low Code/No Code risks: Mitigations in Power Platform
+
+For guidance on mitigating the top 10 Low Code/No Code security risks published by OWASP, see this document: 
+
+[Power Platform - OWASP Low Code No Code Top 10 Risks (April 2024)](https://servicetrust.microsoft.com/DocumentPage/23c411ed-71e7-46eb-a6fd-0cf89a9117f3)
 
 ## Common security questions from customers
 

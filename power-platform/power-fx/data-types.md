@@ -5,7 +5,7 @@ author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
-ms.date: 09/10/2022
+ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -13,7 +13,7 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Data types
@@ -67,7 +67,7 @@ All four of these data types are based on a [Unicode](https://en.wikipedia.org/w
 
 Embedded text strings in a formula are enclosed in double quotation marks. Use two double quotes together to represent a single double quote in the text string. For example, using the following formula in the **OnSelect** property of a [**Button**](/power-apps/maker/canvas-apps/controls/control-button) control:
 
-```powerapps-dot
+```power-fx
 Notify( "Jane said ""Hello, World!""" )
 ```
 
@@ -85,7 +85,7 @@ Prefix the text string with a dollar sign **$** and enclose the formula to be em
 
 For example, consider this formula with global variables **Apples** set to 3 and **Bananas** set to 4:
 
-```powerapps-dot
+```power-fx
 $"We have {Apples} apples, {Bananas} bananas, yielding {Apples+Bananas} fruit total."
 ```
 
@@ -93,7 +93,7 @@ This formula returns the text string **We have 3 apples, 4 bananas, yielding 7 f
 
 Embedded formulas can include any functions or operators. All that is requires is that the result of the formula can be coerced to a text string. For example, this formula will insert **NickName** if it's supplied, or the **FirstName** if not, in a greeting:
 
-```powerapps-dot
+```power-fx
 $"Welcome {Coalesce( NickName, FirstName )}, it's great to meet you!" )
 ```
 
@@ -101,13 +101,13 @@ If **NickName** is set to "Joe", then this formula produces the text string **We
 
 String interpolation can include standard text strings in the embedded formula. For example, if neither **NickName** nor **FirstName** were supplied, we could still provide **"Friend"** as a substitute:
 
-```powerapps-dot
+```power-fx
 $"Welcome {Coalesce( NickName, FirstName, "Friend" )}!"
 ```
 
 String interpolations can even be nested. Consider this example where **First**, **Middle**, and **Last** names are combined into a greeting. Even if one or two of these values are _blank_, the correct number of spaces will be between the name parts. If none of the parts are provided, the inner string interpolation will collapse to an empty string, and be replaced by the [**Coalesce**](reference/function-isblank-isempty.md) function by "Friend".
 
-```powerapps-dot
+```power-fx
 $"Welcome {Coalesce( Trim( $"{First} {Middle} {Last}"}), "Friend" )}!"
 ```
 
@@ -122,7 +122,7 @@ $"Welcome {Coalesce( Trim( $"{First} {Middle} {Last}"}), "Friend" )}!"
 
 Embedded text strings can contain newlines. For example, consider setting the **Text** property of a [**Label**](/power-apps/maker/canvas-apps/controls/control-text-box) control to the following:
 
-```powerapps-dot
+```power-fx
 "Line 1
 Line 2
 Line 3"
@@ -134,7 +134,7 @@ The above formula results in three lines shown in the label control:
 
 Newlines are also supported with string interpolation, as shown below:
 
-```powerapps-dot
+```power-fx
 $"Line {1}
 Line {1+1}
 Line {1+1+1}"
@@ -164,7 +164,7 @@ Canvas apps reference each image or other media file, whether it's in the cloud 
 
 For example, the **Image** property of an image control accepts not only app resources but also links to images on the web, such as "https://northwindtraders.com/logo.jpg". The property also accepts inline images that use the [data URI scheme](https://en.wikipedia.org/wiki/Data_URI_scheme), as in this example:
 
-```powerapps-dot
+```power-fx
 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFAQMAAACtnVQoAAAABlBMVEUAAAB0J3UMNU6VAAAAAXRSTlMAQObYZgAAABRJREFUCNdjUGJgCGVg6GgAkkA2AA8/AffqCEBsAAAAAElFTkSuQmCC"
 ```
 
@@ -243,14 +243,14 @@ In summary:
 
 For example, consider the following calculation using `pac power-fx repl` after installing the [Power Platform CLI](../developer/cli/introduction.md).  Since both numbers are **Decimal**, the calculation is done in **Decimal**, and the result retains full precision:
 
-```powerapps-dot
+```power-fx
 >> 1.0000000000000000000000000001 * 2
 2.0000000000000000000000000002
 ```
 
 If instead, the second operand was changed to **Float** then the entire calculation would be done in **Float** and the tiny fractional part would be lost:
 
-```powerapps-dot
+```power-fx
 >> 1.0000000000000000000000000001 * Float(2)
 2
 ```
@@ -314,7 +314,7 @@ Canvas apps use the included time-zone information in **Datetimeoffset** fields 
 
 Canvas apps read and write values of the [**Time**](/sql/t-sql/data-types/time-transact-sql) data type in SQL Server as text strings in the [ISO 8601 duration format](https://en.wikipedia.org/wiki/ISO_8601#Durations). For example, you must parse this string format and use the [**Time**](reference/function-date-time.md) function to convert the text string **"PT2H1M39S"** to a **Time** value:
 
-```powerapps-dot
+```power-fx
 With(
     Match( "PT2H1M39S", "PT(?:(?<hours>\d+)H)?(?:(?<minutes>\d+)M)?(?:(?<seconds>\d+)S)?" ),
     Time( Value( hours ), Value( minutes ), Value( seconds ) )

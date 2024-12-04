@@ -4,10 +4,10 @@ description: About integration with Application Insights
 services: powerapps
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 09/12/2023
-author: StephenRauchPM
+ms.date: 08/13/2024
+author: sericks007
 ms.subservice: admin
-ms.author: stephenrauch
+ms.author: sericks
 ms.reviewer: sericks
 search.audienceType: 
   - admin
@@ -69,9 +69,6 @@ More information: [Find and diagnose performance issues with Azure Application I
 ## Failures panel in Application Insights
 
 To open the **Failures** panel, either select **Failures** under **Investigate** on the left pane or select the **Failed requests** graph.
-
-> [!div class="mx-imgBorder"]
-> ![Application Insights failures.](media/application-insights-failures.png "Application Insights failures")
 
 The exceptions table in Application Insights powers the **Failures** panel. It shows the count of failed requests and the number of users affected for each operation for the application. You can see error details for the operations and dependencies, for both server and browser. Failures related to create/read/update/delete (CRUD)&ndash;specific HTTP methods (GET, POST, PUT, and DELETE) used in the API operations are available here. This can be used to identify those failures that most affect users. For example, in the following sample you can see that the `GET/api/data/v9.0/GetClientMetaData` operation has a high number of failures and users. Selecting this operation shows more information about it in the right panel.  
 

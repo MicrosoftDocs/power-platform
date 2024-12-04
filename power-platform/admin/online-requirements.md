@@ -1,18 +1,20 @@
 ---
 title: "Power Platform URLs and IP address ranges  | MicrosoftDocs"
 description: Provides information about URLs and IP addresses to be added to the allow list to use Power Platform services.
-author: KumarVivek
+author: sericks007
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/25/2023
+ms.date: 06/20/2024
 ms.subservice: admin
-ms.author: kvivek
+ms.author: sericks
 contributors:
   - shazichuanshuo 
   - garrettm-msft
   - nanivijay
+  - nnyarbro 
 ms.contributors:
   - viotti 
+  - psherlekar
 search.audienceType: 
   - admin
 ---
@@ -34,7 +36,7 @@ Add the following URLs to the allow list.
 |Power Automate| - [Public cloud](/power-automate/ip-address-configuration#required-services)<br/>- [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)|
 |Power BI|- [Public cloud](/power-bi/admin/power-bi-allow-list-urls)<br/>- [Government cloud](/power-bi/admin/service-govus-overview#allow-connections-to-power-bi)|
 |Power Pages| - [Public cloud](/power-pages/system-requirements#required-services)<br/>- [Government cloud](/power-pages/system-requirements#required-services)|
-|Power Virtual Agents|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
+|Microsoft Copilot Studio|- [Public cloud](/power-virtual-agents/requirements-quotas#required-services)<br/>- [Government cloud](/power-virtual-agents/requirements-licensing-gcc#power-virtual-agents-us-government-service-urls)
 
 > [!IMPORTANT]
 > If you are a customer in China and want to access Power Platform services operated by a local company that stores your data within China, go to [Power Platform and Dynamics 365 apps - operated by 21Vianet in China](about-microsoft-cloud-china.md) 
@@ -58,7 +60,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | `https://urs.microsoft.com`  |  Required for Microsoft defender SmartScreen filtering.    |
 | https://crl.microsoft.com/pki/crl/products/microsoftrootcert.crl  | Required for Certification Revocation List checks.    |
 | https://dynamics.microsoft.com |    |
-| https://*.api.powerplatform.com and https://\*.powerplatform.com | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
+| https://*.api.powerplatform.com, https://\*.powerplatform.com, and https://\*.api.powerplatformusercontent.com | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
 | https://mem.gfx.ms  | Me Control is a Microsoft feature that provides a consistent way for users to do core authentication functions like signing in, switching between accounts and more.    |
 | https://www.d365ccafpi.com |  d365ccafpi service exposes a controller endpoint for token change to achieve client side first party integration with external service from PCF control  |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
@@ -79,16 +81,32 @@ All IP addresses for various services for public and government clouds are avail
 
 The IP address values in these JSON files are grouped by service tags that define the service they're applicable for. 
 
-For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`.
-
-:::image type="content" source="media/ip-example.png" alt-text="PowerPlatformInfra service tag for Power Platform IPs":::  
+For Power Platform and Dynamics 365 services, you must add the IP address values specified under the `AzureCloud` service tag. The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the *Australia* region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. For real-time collaboration features, you must add the IP address values specified under the `MicrosoftAzureFluidRelay` service tag.
 
 If you are using *Power Platform connectors*, see the complete list of required IP addresses in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
 
 > [!NOTE]
-> Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md). 
+> Blocked IPs can also impact connecting Dynamics 365 apps to [Microsoft Exchange Server (on-premises)](connect-exchange-server-on-premises.md).
 
+### IPv6 support in Microsoft Power Platform and Dynamics 365
 
+Starting April 2024, IPv6 network connectivity is supported on Power Platform and Dynamics 365 products and services. If your organization's network does not support IPv6 yet, this doesn’t impact your ability to connect to Power Platform and Dynamics 365 services on current prevalent IPv4 connectivity. Microsoft will continue to support both IPv4 and IPv6 protocols for Power Platform products and services.
+
+#### What is changing?
+
+In December 2023, we published Power Platform IPv6 address ranges in Azure service tags with plans to introduce IPv6 support for Power Platform products and services. Starting from April 2024, selective Power Platform service endpoints will start resolving to both IPv4 and IPv6 addresses with the goal to eventually enable IPv6 on all Power Platform and Dynamics 365 endpoints. If your organization network is configured to consume cloud services on IPv6 and clients prefer IPv6 over IPv4, your connections to Power Platform services will happen using IPv6 protocol. Additionally, if you configured the endpoints owned by you in Power Platform and Dynamics 365 and such endpoints announce support for IPv6 connectivity (by DNS names resolving to IPv6 AAAA address), Power Platform and Dynamics 365 services will start connecting to your endpoints using IPv6 protocol.  
+
+#### How can my organization be ready for this change?
+
+If your organization network is configured to consume cloud services using IPv6 protocol or your configured endpoints within Power Platform and Dynamics 365 services announce support for IPv6 connectivity, Power Platform and Dynamics 365 service connections are expected to happen using IPv6 protocol. If your organization implements access control lists (ACLs) for such inbound and outbound connections, your organization network needs to be configured to allow Power Platform IPv6 address ranges as published in Azure [service tags](https://www.microsoft.com/download/details.aspx?id=56519) file for successful communication.
+
+Additional resources for IPv6 support:
+
+- [Azure service tags overview](/azure/virtual-network/service-tags-overview) 
+- [IPv6 support in Microsoft Entra ID](/troubleshoot/azure/active-directory/azure-ad-ipv6-support) 
+- [IPv6 support in Microsoft 365 services](/microsoft-365/enterprise/ipv6-support)
+- [What is IPv6 for Azure Virtual Network?](/azure/virtual-network/ip-services/ipv6-overview) 
+- [Internet Protocol version 6 (IPv6) overview](/dotnet/fundamentals/networking/ipv6-overview)
 
 ## Ports
 

@@ -31,7 +31,7 @@ Establishing a license assignment strategy is important for:
 > - Power Apps per app licenses
 > - Pay-as-you-go
 > - Power Pages
-> - Power Virtual Agents
+> - Microsoft Copilot Studio
 > - Add-ons such as AI Builder
 
 ## Common license assignment strategies

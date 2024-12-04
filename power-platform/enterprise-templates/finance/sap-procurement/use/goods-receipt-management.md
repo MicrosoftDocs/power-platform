@@ -85,10 +85,10 @@ The table provides requisition screen to function module field mappings.
 | Line (Default)   | Movement Indicator | GOODSMVT_ITEM    | MVT_IND | 'B' |
 | Header (Default) | Goods Movement Code           | GOODSMVT_CODE    | GM_CODE    | 01            |
 
-## See also
+### See also
 
-[SAP Vendor Management app](vendor-management.md)
-[SAP Requisition Management app](requisition-management.md)
-[SAP Purchase Order Management app](purchase-order-management.md)
-[SAP Vendor Invoice Management app](vendor-invoice-management.md)
-[SAP Vendor Payment management app](payment-management.md)
+- [SAP Vendor Management app](vendor-management.md)
+- [SAP Requisition Management app](requisition-management.md)
+- [SAP Purchase Order Management app](purchase-order-management.md)
+- [SAP Vendor Invoice Management app](vendor-invoice-management.md)
+- [SAP Vendor Payment management app](payment-management.md)

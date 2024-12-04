@@ -7,7 +7,7 @@ ms.date: 07/19/2022
 author: praveenmantha
 ms.subservice: admin
 ms.author: pmantha
-ms.reviewer: jimholtz
+ms.reviewer: sericks
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -28,8 +28,6 @@ Role-based security controls access to a specific table type, row-based security
 4. Select an existing profile, or select **New Profile**, enter a name, enter a description, and then select **Save**.  
 
 5. Select the **Teams** or **Users** tab to add teams or users. 
-
-   :::image type="content" source="media/field-security-teams-users.png" alt-text="Select Teams or Users tab.":::
 
 6. When finished adding teams or users, select **Add**. 
 

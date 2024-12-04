@@ -9,7 +9,7 @@ author: ChrisGarty
 contributors:
   - ChrisGarty
   - v-aangie
-  - StephenRauchPM
+  - Zeffin
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 

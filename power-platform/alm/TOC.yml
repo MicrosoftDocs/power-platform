@@ -20,11 +20,9 @@
           href: use-solutions-for-your-customizations.md
         - name: Managed properties
           href: managed-properties-alm.md
-        - name: Use segmented solutions
-          href: segmented-solutions-alm.md
         - name: Create and update solutions
           href: update-solutions-alm.md
-        - name: Removing dependencies
+        - name: Dependencies
           items:
              - name: Removing dependencies overview
                href: removing-dependencies.md
@@ -34,8 +32,12 @@
                href: remove-field-view.md
              - name: Table and model-driven app dependencies
                href: remove-table-app.md
-        - name: Organize solutions
-          href: organize-solutions.md
+        - name: Solution best practices
+          items:
+            - name: Organize solutions
+              href: organize-solutions.md
+            - name: Use segmented solutions
+              href: segmented-solutions-alm.md
     - name: Tools and apps used
       href: tools-apps-used-alm.md
     - name: Implementing healthy project and solution ALM
@@ -71,25 +73,50 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
+        - name: Source control integration (preview)
+          href: git-integration/overview.md
+          items:
+            - name: Dataverse Git integration setup
+              href: git-integration/connecting-to-git.md
+            - name: Source control operations
+              href: git-integration/source-control-operations.md   
+            - name: Frequently asked questions
+              href: git-integration/faqs.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
               href: pipelines.md
               displayName: release management change management deploy solutions
             - name: Set up pipelines
-              href: set-up-pipelines.md
+              items:
+                - name: Overview of setting up pipelines
+                  href: set-up-pipelines.md
+                - name: Create a personal pipeline using the platform host
+                  href: platform-host-pipelines.md
+                - name: Create a pipeline using a custom pipelines host
+                  href: custom-host-pipelines.md
             - name: Extend pipelines
               items:
                 - name: Overview of extending pipelines
                   href: extend-pipelines.md
-                - name: Deploy with a service principal or other user (preview)
+                - name: Deploy with a service principal or other user
                   href: delegated-deployments-setup.md
                 - name: Extend pipelines using GitHub Actions
                   href: extend-pipelines-github-export.md
             - name: Run pipelines
               href: run-pipeline.md
+            - name: Enable cross-geo solution deployments
+              href: enable-cross-geo-solution-deployments.md
+            - name: Import solutions from a pipelines host
+              href: import-from-pipelines-host.md
+            - name: Set a default pipelines host
+              href: set-a-default-pipelines-host.md
+            - name: Redeploy past solution versions
+              href: redeploy-past-solution-versions.md
             - name: Use Copilot to generate deployment notes in pipelines
               href: copilot-deployment-notes-pipelines.md
+        - name: Block unmanaged customizations 
+          href: block-unmanaged-customizations.md
     - name: ALM for developers
       href: alm-for-developers.md
       items:
@@ -142,6 +169,8 @@
               href: configure-and-deploy-tools.md
             - name: Package Deployer tool
               href: package-deployer-tool.md
+            - name: ImportConfig reference
+              href: importconfig-reference.md
             - name: Solution Packager tool
               href: solution-packager-tool.md
             - name: Source control with solution files

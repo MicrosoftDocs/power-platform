@@ -1,23 +1,24 @@
 ---
 title: "Microsoft Power Platform icons | MicrosoftDocs"
-description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, AI Builder, and Power Fx)."
-author: KumarVivek
+description: "Official icons for use in building architecture diagrams and illustrations for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, AI Builder, and Power Fx)."
+author: sericks007
 ms.topic: conceptual
-ms.date: 06/06/2022
+ms.date: 09/13/2024
 ms.subservice: guidance
-ms.author: kvivek
-ms.reviewer: kvivek
+ms.author: sericks
+ms.reviewer: sericks
+
 ---
 
 # Microsoft Power Platform icons
 
-This article provides information about the official collection of icons for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, AI Builder, and Power Fx) that you can use in architectural diagrams, training materials, or documentation.
+This article provides information about the official collection of icons for Microsoft Power Platform (Power Platform, Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, AI Builder, and Power Fx) that you can use in architectural diagrams, training materials, or documentation.
 
 ### Do’s
 
 - Use the icon to illustrate how products can work together
 - In diagrams, we recommend including the product name somewhere close to the icon
-- Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, Power Pages, Power Virtual Agents, Dataverse, and AI Builder)
+- Use the icons as they would appear within Microsoft Power Platform or individual products (Power Apps, Power Automate, Power BI, Power Pages, Microsoft Copilot Studio, Dataverse, and AI Builder)
 
 ### Don’ts
 
@@ -29,6 +30,7 @@ This article provides information about the official collection of icons for Mic
 
 |Month|Change description|
 |---|---|
+|September 2024|Added icon for Microsoft Copilot Studio.|
 |June 2022|Added icon for Power Fx.|
 |May 2022|Added icons for Power Platform, Power Pages, and AI Builder.|
 |June 2021|This article was created with the download location of the official icons.|

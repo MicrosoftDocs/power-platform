@@ -11,14 +11,12 @@ ms.date: 11/06/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
+ms.collection: bap-ai-copilot
 ---
 
 # Hardware Request and Management template for Power Platform
 
-The Hardware Request and Management template enables your organization to digitize and automate asset requests and management.
-
-Employees can request new hardware, such as laptops, keyboards, and monitors.
-
+The Hardware Request and Management template enables your organization to digitize and automate asset requests and management. Employees can request new hardware, such as laptops, keyboards, and monitors.
 Program admins or managers can perform several functions, such as:
 
 - Configure a hardware product catalog and business and budget units with respective approvers
@@ -104,6 +102,6 @@ Dataverse storage powering intelligent search and role based security access to 
 
 More information: [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
 
-## Next steps
+### Next step
 
 [Install and set up the Hardware Request and Management template](install-and-set-up.md)

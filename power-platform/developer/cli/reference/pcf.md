@@ -3,9 +3,9 @@ title: Microsoft Power Platform CLI pcf command group| Microsoft Docs
 description: "Describes commands and parameters for the Microsoft Power Platform CLI pcf command group."
 keywords: "pac cli"
 ms.subservice: developer
-author: snizar007
-ms.author: snizar
-ms.date: 11/10/2023
+author: laneswenka
+ms.author: laswenka
+ms.date: 12/2/2024
 ms.reviewer: jdaly
 ms.topic: reference
 contributors: 
@@ -91,12 +91,16 @@ Import the Power Apps component framework project into the current Dataverse org
 
 ### Optional Parameters for pcf push
 
+#### `--environment` `-env`
+
+Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
 #### `--force-import` `-f`
 
 **Deprecated**: This parameter is ignored.
 #### `--incremental` `-inc`
 
-Pushes only files which are diifferent using entity updates.
+Pushes only files which are different using entity updates.
 
 This parameter requires no value. It's a switch.
 
@@ -152,7 +156,7 @@ Tracker CSV file name to be used when using filetracking as a strategy. The defa
 
 Patch version for controls
 
-**Note**: The value must be a positive integer.
+**Note**: The value must be an integer with minimum value of 0.
 
 #### `--path` `-p`
 

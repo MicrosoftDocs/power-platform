@@ -1,9 +1,9 @@
 ---
-title: Licensing overview for Microsoft Power Platform | Microsoft Docs
-description: Overview of licensing in Microsoft Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, Power BI, AI Builder, Dataverse).
+title: Licensing overview for Microsoft Power Platform
+description: Learn information about licensing in Microsoft Power Platform, which includes Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, Power BI, AI Builder, and Dataverse.
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 01/10/2024
+ms.date: 11/20/2024
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: sericks
@@ -11,28 +11,41 @@ contributors:
 - srpoduri 
 search.audienceType: 
   - admin
+
 ---
 
 # Licensing overview for Microsoft Power Platform
 
-This article provides detailed information about Microsoft Power Platform licensing.
+This article provides detailed information about Microsoft Power Platform licensing. You can also learn more on the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
 
 ## Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages offers 
 
-Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide users the ability to create and run apps, bots, and custom websites across data sources that extend beyond Microsoft 365, such as Salesforce and on-premises and custom data sources. These plans also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data. 
+Power Apps, Power Automate, Microsoft Copilot Studio, and Power Pages provide licensed users the ability to create and run apps, bots, flows, and custom websites across multiple data sources that extend beyond Microsoft 365 (such as Salesforce and on-premises or custom data sources). Those product licenses also include access to [Dataverse](/power-apps/maker/data-platform/data-platform-intro) to store and manage data.
+
+- Learn more about [Power Automate licensing](/power-platform/admin/power-automate-licensing/types)
+- Learn more about [Power Apps licensing](/power-platform/admin/signup-for-powerapps-admin)
+- Learn more about [Power BI licensing](https://powerbi.microsoft.com/en-us/pricing/)
 
 > [!Note]
 > [AI Builder](https://go.microsoft.com/fwlink/?linkid=2103071) proposes AI features which can be used in Power Apps, Power Automate, and Microsoft Copilot Studio.
 
-More details around capabilities and pricing of the Power Platform offers can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
+## Trial Plans
 
-For information about Power BI licensing, see [Power BI pricing](https://powerbi.microsoft.com/en-us/pricing/).
+Trial plans are available for both Power Apps and Power Automate. Free trials last 30 days for Power Apps and 90 days for [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) plans. Users can self-service sign up for these trials in your organization. This can be done by explicitly visiting the pricing pages or by being prompted when they attempt an action in the apps that require additional licensing.
+
+For Power Automate, an unlicensed user who signs into flow.microsoft.com will be set up with the [Power Automate Free](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) license. If later they try to perform an action like sharing a flow, they'll be prompted to sign up for a *trial*. In this example, if the user accepted the offer for trial they would be signed up for a Power Automate Trial. This trial wouldn't show up under the user licenses in the Microsoft 365 Portal, however you can see it in the Power Automate and Power Apps license report discussed later in the security section.
+
+For Power Apps, if a user signs up for a Power Apps trial, they'll get a Power Apps per user trial if needed for any of the actions they take such as creating an environment.
+
+As the administrator, you'll likely be assisting users that had started in a trial and either want to continue experimenting or are ready to get a regular license to keep working with the app they are building. If you are moving to a regular license for a user, it would also be a good time to work with them to see if their app should stay where it was built or should be moved according to the environment strategy you adopt. For those not ready to get a full license but want to keep experimenting you could help them get set up on the developer plan and help them move their application and flow assets into their new developer environment.
 
 ## Power Apps and Power Automate for Microsoft 365
 
-Power Apps and Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience with Power Apps and Power Automate. Users can create applications and flows based on Microsoft 365 data. These productivity apps can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors.
+Power Apps and Power Automate capabilities for Microsoft 365 enable users to extend and customize the Office experience: with these productivity apps, users can create applications and flows based on Microsoft 365 data. Power Apps and Power Automate can also utilize data outside of Microsoft 365 by connecting to common services including Box.com, Facebook, and many more via the use of standard connectors. 
 
-Here is a brief overview of capabilities included with the Power Apps for Microsoft 365 plan. More details around which Microsoft 365 plans include these capabilities can be found in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130). 
+Learn more about Microsoft 365 plans including these capabilities in the [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+
+Here is a brief overview of capabilities included with the Power Apps for Microsoft 365 plan:
 
 | Functionalities                                                   | Power Apps for Microsoft 365 |
 |-----------------------------------------------------------------------|------------------------------|
@@ -46,6 +59,8 @@ Here is a brief overview of capabilities included with the Power Apps for Micros
 | Access on-premises data or use premium or custom connectors           | \-                           |
 | Access to Microsoft Dataverse                    | Yes (see the next section for details)                |
 
+To learn about capabilities included with the Power Automate for Microsoft 365 plan, see [Power Automate seeded license for Microsoft 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license).
+
 ### Dataverse capabilities with Microsoft 365 licenses
 
 As Dataverse continues to grow, more Microsoft applications like Microsoft Project are using Dataverse. To enable these Microsoft applications, limited Dataverse functionality is added to select Microsoft 365 licenses. This is achieved by adding a new service plan named "Dataverse" to the Microsoft 365 licenses. To see the new service plan in the Microsoft 365 admin center, select a user, select the **Licenses and Apps** tab, and then scroll down and expand the **Apps** section.
@@ -57,7 +72,7 @@ As Dataverse continues to grow, more Microsoft applications like Microsoft Proje
 
 Dataverse functionality required by other Microsoft 365 applications appears as the "Dataverse" service plan in the **Apps** section of the Microsoft 365 admin center.  
 
-This new service plan allows select Microsoft 365 applications to take advantage of Dataverse as a platform for storing application data and use the underlying business logic tier as part of extending application capabilities. This extension also helps these applications to use Dataverse instances within the [default environment](environments-overview.md#the-default-environment). However, if you need to create a Dataverse instance within production or sandbox environments (other than the default environment), you're still required to have a premium Power Apps or Power Automate license.
+This new service plan allows select Microsoft 365 applications to take advantage of Dataverse as a platform for storing application data and use the underlying business logic tier as part of extending application capabilities. This extension also helps these applications to use Dataverse instances within the [default environment](environments-overview.md#default-environment). However, if you need to create a Dataverse instance within production or sandbox environments (other than the default environment), you're still required to have a premium Power Apps or Power Automate license.
 
 These limited capabilities of Dataverse are only available through select Microsoft 365 licenses and can't be used to run any custom apps or Power Automate flows, or run any Microsoft Copilot Studio bots, or use any other data that doesn't belong to the Microsoft 365 applications that take advantage of these capabilities.
 
@@ -85,7 +100,7 @@ Dataverse functionality appears as the **Common Data Service** plan in the *
 
 ##### When can Office-licensed users be seen inside of Dataverse?
 
-Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the environments with a Dataverse database. However, for Office licenses where Dataverse service plans are included, users aren't automatically synced into Dataverse until the Office application is accessed by the user. After this occurs, the user can get access to Dataverse tables and rows based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#the-default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Dataverse.
+Users who have any Microsoft Power Platform or Dynamics 365 license are always synced into the environments with a Dataverse database. However, for Office licenses where Dataverse service plans are included, users aren't automatically synced into Dataverse until the Office application is accessed by the user. After this occurs, the user can get access to Dataverse tables and rows based on the additional security roles and privileges that the administrator assigned to this user. Such users, who just have the Office license, aren't automatically assigned any other security roles or privileges, other than the Maker role privilege in the [default environment](environments-overview.md#default-environment). As a security best practice, the administrator needs to ensure that security roles and privileges are assigned based on functional roles and needs only, and not automatically assigned based on the user being synced or present in Dataverse.
 
 #### Known issues
 
@@ -94,15 +109,17 @@ Users who have any Microsoft Power Platform or Dynamics 365 license are always s
 
 ## Power Apps and Power Automate for Dynamics 365
 
-Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
+Power Apps and Power Automate capabilities for Dynamics 365 enable users to extend and customize the Dynamics experience: 
+- Power Apps is the platform to customize and extend applications in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
+- Power Automate is the platform to customize and extend automations in Dynamics 365, such as Dynamics 365 Sales and Customer Service, in context of the use rights.
 
-Dynamics 365 Applications can be customized using Power Apps and Power Automate capabilities.
+To learn about capabilities included with the Power Automate for Dynamics 365 plan, see [Power Automate seeded license for Dynamics 365](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license).
 
-More information: [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+More information on [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
 
-## Developer Plan
+## Power Apps Developer Plan
 
-If you want to build skills and learn more about Power Apps, Power Automate, and Dataverse, the Power Apps Developer Plan is the right plan for you. The Power Apps Developer Plan gives you a free development environment for individual use to learn with full functionality of Power Apps. More information: [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/).
+In addition to the trial plans, there's also a *free* Power Apps Developer Plan. This is a special plan that allows up individual self-service sign and it provides an individual environment that the user can use to build apps and flows. These environments will show up on the administrator’s list of environments and will list the type of environment as “Developer”. The environments are for individual use, so there's no ability to share with other users. Users in your organization can self-service sign up for this plan even if they have Power Apps and Power Automate license entitlements via another licensing plan. Sign-up for the Power Apps Developer Plan can be found [here](https://powerapps.microsoft.com/communityplan/) and more details on its features [here](/powerapps/maker/dev-community-plan).
 
 ## Pay-as-you-go plan
 
@@ -137,5 +154,19 @@ You can view a list of all assigned licenses in the [Microsoft Admin Center](htt
 | Project Plan 3 for GCC  | 074c6829-b3a0-430a-ba3d-aca365e57065  | PROJECTPROFESSIONAL_GOV  |
 | Project Plan 5 for GCC  | f2230877-72be-4fec-b1ba-7156d6f75bd6  | PROJECTPREMIUM_GOV  |
 | Dynamics 365 Customer Insights (and Attach)  | 1720c3f7-7da3-4a11-8324-92aad283eb68  | DYN365_CUSTOMER_INSIGHTS_JOURNEYS_BASE  |
+
+## What users are licensed
+
+You can always look at individual user licensing in the Microsoft 365 admin center by drilling into specific users. 
+
+You can also use the following PowerShell command to export assigned user licenses.
+
+```powershell
+Get-AdminPowerAppLicenses -OutputFilePath '<licenses.csv>'
+```
+
+Exports all the assigned user licenses (Power Apps and Power Automate) in your tenant into a tabular view .csv file. The exported file contains both self-service sign-up internal trial plans and plans that are sourced from Microsoft Entra ID. The internal trial plans aren't visible to admins in the Microsoft 365 admin center.
+
+The export can take a while for tenants with a large number of Microsoft Power Platform users.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

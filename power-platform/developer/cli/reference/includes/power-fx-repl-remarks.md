@@ -20,7 +20,7 @@ The following examples show the use of the `pac power-fx repl` command.
 
 ##### Add rows
 
-```powerapps-dot
+```power-fx
 Collect(Contacts, { firstname: "Patti", lastname: "Fernandez" })
 ```
 
@@ -34,7 +34,7 @@ The Power Fx repl responds with the following:
 
 Run the following command to get help about all the commands that are available in Power Fx repl:
 
-```powerapps-dot
+```power-fx
 Help()
 ```
 

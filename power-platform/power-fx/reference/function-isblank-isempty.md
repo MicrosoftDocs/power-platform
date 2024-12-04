@@ -7,7 +7,7 @@ ms.topic: reference
 ms.custom: canvas
 ms.reviewer: mkaur
 ms.component: canvas
-ms.date: 12/18/2023
+ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
@@ -15,12 +15,13 @@ search.audienceType:
 contributors:
   - gregli-msft
   - mduelae
-  - jorisdg
+  - gregli
 ---
 
 # Blank, Coalesce, IsBlank, and IsEmpty functions
 
-**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
+**Applies to:** :::image type="icon" source="media/yes-icon.svg" border="false"::: Canvas apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Desktop flows :::image type="icon" source="media/yes-icon.svg" border="false"::: Dataverse formula columns :::image type="icon" source="media/yes-icon.svg" border="false"::: Model-driven apps :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Pages
+ :::image type="icon" source="media/yes-icon.svg" border="false"::: Power Platform CLI
 
 Tests whether a value is blank or a [table](/power-apps/maker/canvas-apps/working-with-tables) contains no [records](/power-apps/maker/canvas-apps/working-with-tables#records), and provides a way to create _blank_ values.
 
@@ -97,7 +98,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 1. Create an app from scratch, and add a **Button** control.
 2. Set the button's **[OnSelect](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    ClearCollect( Cities, { Name: "Seattle", Weather: "Rainy" } )
    ```
 
@@ -111,7 +112,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 5. Click or tap the back arrow to return to the default workspace.
 6. Add a **Label** control, and set its **Text** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    IsBlank( First( Cities ).Weather )
    ```
 
@@ -119,7 +120,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 
 7. Add a second button, and set its **OnSelect** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    Patch( Cities, First( Cities ), { Weather: Blank() } )
    ```
 
@@ -145,7 +146,7 @@ The return value for **IsEmpty** is a Boolean **true** or **false**.
 1. Create an app from scratch, add a text-input control, and name it **FirstName**.
 2. Add a label, and set its **[Text](/power-apps/maker/canvas-apps/controls/properties-core)** property to this formula:
 
-   ```powerapps-dot
+   ```power-fx
    If( IsBlank( FirstName.Text ), "First Name is a required field." )
    ```
 
