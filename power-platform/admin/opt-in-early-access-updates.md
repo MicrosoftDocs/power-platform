@@ -52,7 +52,7 @@ Early access begins approximately two months before general availability of each
 | Great Britain                | January 27, 2025  |
 | Australia                    | January 27, 2025  |
 | Europe                       | January 29, 2025 |
-| North America                | February 03, 2025 |
+| North America                | February 3, 2025 |
 
 **Release wave 2**
 - Early access: Second Monday of August
