@@ -1,5 +1,5 @@
 ---
-title: Control user access to environments: security groups and licenses
+title: Control user access to environments with security groups and licenses
 description: Learn how to control user access to environments using security groups and licenses
 services: powerapps
 author: paulliew
@@ -16,7 +16,7 @@ search.audienceType:
   - admin
 ---
 
-# Control user access to environments: security groups and licenses
+# Control user access to environments with security groups and licenses
 
 If your company has multiple environments, you can use security groups to control which licensed users can be members of a particular environment.  
 
