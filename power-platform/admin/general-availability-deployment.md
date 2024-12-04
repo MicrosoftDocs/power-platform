@@ -1,16 +1,17 @@
 ---
-title: "General availability deployment  | MicrosoftDocs"
-description: About general availability deployment
+title: General availability deployment 
+description: Learn about general availability deployment.
 author: samathur
 ms.subservice: admin
 ms.author: samathur 
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 07/25/2024
+ms.date: 12/04/2024
 search.audienceType: 
   - admin
 ms.contributors:
+- lekha27
 - leicke
 - matleon
 - swatim
