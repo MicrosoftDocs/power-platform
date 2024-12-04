@@ -25,43 +25,56 @@ Returns a user defined type.
 
 ## Description
 
-Use the **Type** function to define a custom type for the parameters and return value of a user defined function.
+Power Fx is a strongly typed language. The parameters and return values of built-in functions are pre-defined and usage is checked for consistency when writing a formula. You will need to provide type information when creating your own user defined functions. User defined types can also be useful with JSON payloads returned by web APIs that become untyped values.
 
-The **Type** function, and the value it returns, can only be used in very specific places, such as the second argument to **ParseJSON**. In Canvas apps, the **Type** function can only be used with a named formula in **App.Formulas**.
+Basic types such as **Text** and **Number** can be used directly without the **Type** function. 
+
+Use the **Type** function to create a custom type made up of tables and records for:
+- Passing a table or record to a user defined function.  
+- Returning a table or record from a user defined function.
+- Converting an untyped record to a typed record for easier use and error checking.
+
+The **Type** function, and the type value it returns, can only be used in specific places such as the second argument to **ParseJSON**. In Canvas apps, the **Type** function can only be used with a named formula in **App.Formulas**.
 
 ## Type specification
 
-Types are specified in the same manner as a literal value, with the values replaced by type names.
+Types are specified in the same manner as a standard record or table, with values replaced by type names.
 
-For example, this named formula defines the speed of light by the default number type of the Power Fx host:
-
-```powerapps-dot
-c = 3e8;        // speed of light in meters per second
-```
-This defines the type of the speed of light:
+For example, consider the following definitions:
 
 ```powerapps-dot
-cType := Type( Number );
-```
-A parameter or variable of type `cType` can hold `c`.
+// Table of books
+bookTable = 
+  [ { Title: "A Study in Scarlet", Author: "Sir Arthur Conan Doyle", Published: 1887 }, 
+    { Title: "And Then There Were None", Author: "Agatha Christie", Published: 1939 },
+    { Title: "The Marvelous Land of Oz", Author: "L. Frank Baum", Published: 1904 } ];
 
-Now, let's look at a more complex example:
+// Type definition for a single book
+bookRecordType := Type( { Title: Text, Author: Text, Published: Number } );
+
+// Type definition for a table of books
+bookTableType := Type( [ bookRecordType ] );
+```
+
+Notice how the actual title text `"A Study in Scarlet"` has been replaced with the type name `Text` in the type definition, a placeholder for any text value.  A parameter or variable of type `bookRecordType` can hold one of the books in `bookTable`, while `bookTableType` can hold the entire table.  With these types in place, we can define these user defined functions:
 
 ```powerapps-dot
-books = [ { Title: "A Study in Scarlet", Author: "Sir Arthur Conan Doyle", Published: 1887 }, 
-{ Title: "And Then There Were None", Author: "Agatha Christie", Published: 1939 } ];
+SortedBooks( books: bookTableType ): bookTableType = 
+    SortByColumns( bookTable, Author, SortOrder.Ascending, Title, SortOrder.Ascending );
+
+PublishedInLeapYear( book: bookRecordType ): Boolean = 
+    Mod( book.Published, 4 ) = 0 And 
+    (Mod( book.Published, 100 ) <> 0 Or Mod( book.Published, 400 ) = 0);
 ```
+
+We can also use the `bookRecordType` to parse a JSON string that contains a book:
 
 ```powerapps-dot
-booksType := Type( [ { Title: Text, Author: Text, Published: Number } ] )
+ParseJSON( "{""Title"":""Gulliver's Travels"", ""Author"": ""Jonathan Swift"", ""Published"": 1900}", bookRecordType
+)
 ```
 
-A parameter or variable of type `booksType` can hold `books`.
-
-
-
-
-
+Using `bookRecordType` as the second argument ensures that the fields have the right names and data types, and also returns a strongly typed value for easier use. For example, if the field `Title` is renamed to `BookTitle` then an error will be produced. Likewise, if the Boolean value `true` is passed for the field `Published` then an error will be produced as it needs to be a number.
 
 ## Syntax
 
@@ -71,19 +84,6 @@ A parameter or variable of type `booksType` can hold `books`.
 
 ## Examples
 
-The current Power Apps user has the following information:
 
-- Full Name: **"John Doe"**
-- Email address: **"john.doe@contoso.com"**
-- Entra Object Id: **a90c6800-e58c-4495-81f7-55819b56fe2a** _(GUID)_
-- Image: ![Image icon.](media/function-user/john-doe-picture.png "Image icon")
-
-| Formula             | Description                                                                                                                                       | Result                                                                                                                              |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **User()**          | Record of all information for the current Power Apps user.                                                                                        | { FullName:&nbsp;"John Doe", Email:&nbsp;"john.doe@contoso.com", Image:&nbsp;"blob:1234...5678", EntraObjectId:&nbsp;a90c6800&#8209;e58c&#8209;4495&#8209;81f7&#8209;55819b56fe2a }                                   |
-| **User().Email**    | The email address of the current Power Apps user.                                                                                                 | "john.doe@contoso.com"                                                                                                              |
-| **User().FullName** | The full name of the current Power Apps user.                                                                                                     | "John Doe"                                                                                                                          |
-| **User().EntraObjectId** | Microsoft Entra Object ID of the current user.                                                                                                   | a90c6800-e58c-4495-81f7-55819b56fe2a _(GUID)_                                                                                           |
-| **User().Image**    | The image URL for the current Power Apps user. Set the **Image** property of the **Image** control to this value to display the image in the app. | "blob:1234...5678"<br><br>With **ImageControl.Image**:<br>![Image icon 1.](media/function-user/john-doe-picture.png "Image icon 1") |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
