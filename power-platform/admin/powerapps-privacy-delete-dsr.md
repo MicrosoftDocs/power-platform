@@ -64,7 +64,7 @@ Here is the breakdown of which experiences are available to delete each type of 
 Any user with a valid Power Apps license can perform the user operations outlined in this document using the [Power Apps](https://make.powerapps.com) or [PowerShell cmdlets for app creators](./powerapps-powershell.md).
 
 #### Unmanaged tenant
-If you are a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover), meaning that your Microsoft Entra tenant doesn't have a global administrator, then you can follow the steps outlined in this part to remove your own personal data.  However, since there's no global administrator for your tenant, you must follow the instructions outlined in [Step 13: Delete the user from Microsoft Entra](#step-13-delete-the-user-from-microsoft-entra) to delete your own account from the tenant.
+If you are a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover),then you can follow the steps outlined in this part to remove your own personal data.  You must follow the instructions outlined in [Step 13: Delete the user from Microsoft Entra](#step-13-delete-the-user-from-microsoft-entra) to delete your own account from the tenant.
 
 In order to determine if you are a member of an unmanaged tenant please follow these steps:
 
