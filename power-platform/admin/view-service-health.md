@@ -10,7 +10,7 @@ ms.author: sericks
 search.audienceType: 
   - admin
 ms.contributors:
-yukom
+  - yukom
 ---
 
 # View service health
