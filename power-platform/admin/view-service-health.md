@@ -1,7 +1,7 @@
 ---
 title: View service health
 description: Check service health in the Power Platform admin center.
-ms.date: 09/20/2024
+ms.date: 12/06/2024
 ms.reviewer: sericks
 ms.topic: conceptual
 author: sericks007
@@ -9,6 +9,8 @@ ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
   - admin
+ms.contributors:
+yukom
 ---
 
 # View service health
