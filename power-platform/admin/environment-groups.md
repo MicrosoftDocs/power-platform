@@ -76,7 +76,7 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
 
-#### For  (agents (preview)
+#### For agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
