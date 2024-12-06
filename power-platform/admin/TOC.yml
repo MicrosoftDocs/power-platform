@@ -58,6 +58,8 @@
               href: live-chat-support.md
             - name: View known issues
               href: view-known-issues.md
+            - name: View service health
+              href: view-service-health.md
             - name: Support environments and the consent process
               href: support-environment.md
             - name: Determine your organization ID and name
