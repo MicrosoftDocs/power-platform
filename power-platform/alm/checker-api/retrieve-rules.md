@@ -78,7 +78,7 @@ This example returns data for all of the rules in the *Solution Checker* ruleset
 
 ```http
 GET [Geographical URI]/api/rule?ruleset=083A2EF5-7E0E-4754-9D88-9455142DC08B&api-version=2.0
-x-ms-correlation-id: 9E378E56-6F35-41E9-BF8B-C0CC88E2B832
+x-ms-correlation-id: aaaa0000-bb11-2222-33cc-444444dddddd
 Accept: application/json
 Content-Type: application/json; charset=utf-8
 Accept-Language: fr

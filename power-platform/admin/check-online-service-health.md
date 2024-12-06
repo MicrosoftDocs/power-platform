@@ -1,12 +1,12 @@
 ---
-title: How do I check my online service health? 
-description: Check service health.
-ms.date: 09/20/2024
+title: How do I check my online service health?
+description: Learn how to quickly get a real-time status of your Dynamics 365, Power Platform, and Microsoft 365 services.
+ms.date: 10/25/2024
 ms.reviewer: sericks
 ms.topic: conceptual
-author: sericks007
+author: karacortez
 ms.subservice: admin
-ms.author: sericks
+ms.author: kacortez
 search.audienceType: 
   - admin
 ---
@@ -33,19 +33,23 @@ Select **Health** > **Service health** > **Dynamics 365** to see if there are is
 ### View service health history  
 Select **View history** in the upper-right corner to view the past 7 or the past 30 days of service. 
 
-![Service health view history.](media/view-history.png)
+On the [Power Platform admin center](https://admin.powerplatform.microsoft.com) home page dashboard, admins can add [Service health](admin-documentation.md#monitor-service-health) and [Message center](admin-documentation.md#message-center) cards for a quicker view of incidents and upcoming changes.
 
-Select an item to see service health status and details for that item. 
-  
-![Microsoft 365 admin center service health history.](media/office-365-admin-center-service-health-history.png "Microsoft 365 admin center service health history")  
+## Microsoft 365 service health
+You can see a snapshot of service health of your Microsoft services. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in using one of the Microsoft 365 admin roles that include service health monitoring. Learn more in [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).  
 
 ### View planned maintenance  
 
-Select the **Message center** on your home dashboard (from the menu: **Health** > **Message center**) to see if there are any scheduled events for your online service and to view other informative messages.  
+Select the **Issue history** tab to view the history of incidents and advisories that have been resolved in the past 7-30 days. 
+
+## Power Platform admin center
+In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home), you can go to **Help + support** > **Service health** to view all service health issues from the last 30 days. 
   
-![Microsoft 365 admin center Message Center.](media/office-365-admin-center-message-center.png "Microsoft 365 admin center Message Center")  
+## Service changes
+
+Select the **Health** > **Message center** on your home dashboard in the Microsoft 365 admin center to view and track upcoming changes, including new and changed features, planned maintenance, or other important announcements.
    
-### Related information
+### Related content
 [Get Help + Support](get-help-support.md) <br />
 [View service health](view-service-health.md) <br />
 [Microsoft Dataverse analytics](analytics-common-data-service.md)

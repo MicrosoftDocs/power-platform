@@ -308,7 +308,7 @@ And the request body has the application entry from the earlier step:
                 "version": "2.9.0.3",
                 "localizedDescription": "With Office 365 groups, you can collaborate with people across your company even if they aren’t Dynamics 365 users. Groups provide a single location to share conversations, meetings, documents, and more.",
                 "localizedName": "Office 365 Groups",
-                "applicationId": "2f17f077-4175-4d82-b82b-17cd8950b74f",
+                "applicationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
                 "applicationName": "Office365Groups",
                 "applicationDescription": "",
                 "singlePageApplicationUrl": "",
@@ -343,7 +343,7 @@ The following code is an example response:
 {
         "id": "9a44d33b-6055-4c9b-aa4a-4c410a22e9ad",
         "packageId": "ce3bab3c-ada1-40cf-b84b-49b26603a281",
-        "applicationId": "2f17f077-4175-4d82-b82b-17cd8950b74f",
+        "applicationId": "00001111-aaaa-2222-bbbb-3333cccc4444",
         "applicationName": "Office365Groups",
         "applicationDescription": "",
         "singlePageApplicationUrl": "",

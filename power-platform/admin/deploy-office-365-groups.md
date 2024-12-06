@@ -62,7 +62,7 @@ Once installation of the solution has completed, you can configure Microsoft 365
 ## Check required privileges  
  The security privilege, **ISV Extensions**, is required to use Microsoft 365 Groups. You can add or remove this privilege from custom or default security roles to meet your business needs. If a user doesn't have this privilege, they won't be able to see the Microsoft 365 Groups item in a record's navigation menu.  
   
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Service admin, Global admin, or Delegated admin).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an admin (Service admin or Delegated admin).
 
 2. From the left-side menu, select **Environments**, and then select an environment.
   
