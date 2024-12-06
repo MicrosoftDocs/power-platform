@@ -55,6 +55,9 @@ In addition to enabling the environment settings, when using individual user lev
   c. Select **Save**.
 1. Assign those users who need TDS endpoint access to the security role. More information: [Assign a security role to a user](assign-security-roles.md)
 
+> [!Note]
+> - To access the data in Dataverse, the users are required to have data access permissions to the tables in their assigned security role, in addition to the miscellaneous privilege to access the TDS endpoint.
+
 ## Known issues when users aren't properly assigned privileges
 
 If the user level access control is enabled, users without the **Allow user to access TDS endpoint** miscellaneous privilege get the error message "Attempted to perform an unauthorized operation. User misses prvAllowTDSAccess privilege" when trying to retrieve data using the TDS endpoint. The error message can occur at different points depending on the application being used.
