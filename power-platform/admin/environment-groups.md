@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/29/2024
+ms.date: 12/06/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -24,7 +24,7 @@ Similar to folders, _environment groups_ are designed to help administrators org
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
 
 - [Canvas app sharing rules](managed-environment-sharing-limits.md#canvas-app-sharing-rules)
-- [Custom agent and Microsoft 365 Copilot agents sharing rules](managed-environment-sharing-limits.md#custom-agent-and-microsoft-365-copilot-agents-sharing-rules-preview)
+- [Agent sharing rules](managed-environment-sharing-limits.md#agent-sharing-rules-preview)
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
 - [Generative AI settings](geographical-availability-copilot.md)
 - [Maker welcome content](welcome-content.md)
@@ -76,7 +76,7 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
 
-#### For custom agents and Microsoft 365 Copilot agents (preview)
+#### For  (agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
