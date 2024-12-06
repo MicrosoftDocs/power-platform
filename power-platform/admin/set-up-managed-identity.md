@@ -79,6 +79,14 @@ To configure managed identity, open the user-assigned managed identity or Micros
 
       Example: `component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>`
 
+      **Or**
+      
+       
+     - **Subject identifier**: If a Certificate is from a Valid Truster Issuer (Recommended for production scenarios. Issuer Trusted by WIndows OS for example – DigiCert, GlobalSign etc.)
+         
+      Example: `component:pluginassembly,subject:<<certificateSubjectCommonName>>,issuer:<<issuerCommonName>>,environment:<<environmentId>>`
+
+
     :::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
 
 ## Create and register Dataverse plug-ins
