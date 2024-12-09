@@ -82,7 +82,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
       **Or**
       
        
-     - **Subject identifier**: If a Certificate is from a valid trusted Issuer (recommended for production scenarios), then the **subject identifier** format must be in below format
+     - **Subject identifier**: If a certificate is from a valid trusted Issuer (recommended for production scenarios), then the **subject identifier** format must be in below format
          
       Example: `component:pluginassembly,subject:<<certificateSubjectCommonName>>,issuer:<<issuerCommonName>>,environment:<<environmentId>>`
 
