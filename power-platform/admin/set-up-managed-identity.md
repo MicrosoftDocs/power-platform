@@ -73,19 +73,19 @@ To configure managed identity, open the user-assigned managed identity or Micros
       - **Environment ID prefix** - The environment ID, except for the last two characters.
       - **Environment ID suffix** - The last two characters of the environment ID.
       
-      Example: `https://92e1c10d0b34e28ba4a87e3630f46a.06.environment.api.powerplatform.com/sts`
+        Example: `https://92e1c10d0b34e28ba4a87e3630f46a.06.environment.api.powerplatform.com/sts`
       
     - **Subject identifier**: If a self-signed certificate is used for signing the assembly, use for non-production use cases.
 
-      Example: `component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>`
+        Example: `component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>`
 
-    **Or**
+    **-Or**
        
      - **Subject identifier**: If a certificate is from a valid trusted issuer, which is recommended for production scenarios, then the **subject identifier** format must follow the example below.
          
-      Example: `component:pluginassembly,subject:<<certificateSubjectCommonName>>,issuer:<<issuerCommonName>>,environment:<<environmentId>>`
+        Example: `component:pluginassembly,subject:<<certificateSubjectCommonName>>,issuer:<<issuerCommonName>>,environment:<<environmentId>>`
 
-      :::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
+        :::image type="content" source="media/managed-identity.png" alt-text="Configure managed identity.":::
 
 ## Create and register Dataverse plug-ins
 
