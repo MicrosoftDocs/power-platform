@@ -75,6 +75,17 @@ Every payment that isn't automatically matched and cleared goes through the same
 
 This process is generic and works for all the posting scenarios. The steps the AR team need to take in PowerMatch take no more than two minutes per payment. The process represents a huge reduction in time spent compared to the process before PowerMatch since the research of the payment is eliminated from the manual process.
 
+|App|Action|Description|
+|-|-|-|
+||Customer sends payment notification.|Start with a scheduled cloud flow to set up a recurring flow automation. |
+||Payment details extracted from attachment and moved to Dataverse. |Use AI Builder to create custom entity extraction model to extracts the key attributes from the payment information. |
+||Bank uploads statement to SAP with payment information. ||
+||Open invoices, payments and related activity pulled from SAP on defined schedule. 	|Use scheduled cloud flow and pre-built SAP connector to set up a recurring flow automation. |
+||Matching data extracted from payment information using AI model and moved to Dataverse. |Attributes from extraction model are used in a 14-step matching algorithm that tries to find the matching invoices based on predefined business rules using an Office Script.|
+||Payment data matched in Dataverse is sent to SAP for clearing.|Use Power Automate and pre-built SAP connector.|
+||Payments without a match are manually cleared in app by Accounts Receivable team.|	Use Power Apps application to display payment data for manual review and processing. |
+||Data synched with internal systems for engagement and collections teams. 	|	Use Power Automate and custom APIs or Power Automate RPA to connect to internal systems.|
+
 ## Key benefits
 
 With the deployment of PowerMatch, EY was able to increase the percentage of payments automatically matched and cleared from 30% to 80%, achieving the planned goal. Additionally, 15% of payments are automatically matched with an invoice, but manually cleared. As a result, only 5% of payments need to be manually matched and cleared. This improvement is an impressive accomplishment given that 70% of payments needed to be manually matched and cleared before PowerMatch.
