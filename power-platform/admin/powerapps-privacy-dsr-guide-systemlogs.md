@@ -31,7 +31,7 @@ To access and export system-generated logs, review the guidance in [Learn about 
 
 1. Go to the [Microsoft Priva portal](https://servicetrust.microsoft.com) and sign in as a member of the **Subject Rights Request Administrators role** group. [Get started with Priva](https://learn.microsoft.com/en-us/privacy/priva/priva-setup) provides more information.
 
-1. [How to access](/privacy/priva/subject-rights-requests#how-to-access) explains how to access subject rights requests for data within Microsoft 365.
+1. Review [How to access](/privacy/priva/subject-rights-requests#how-to-access) to learn more about access subject rights requests for data within Microsoft 365.
 
     After you create a new request, the request is listed on the **Data Log Export** page, where you can track its status. After a request is complete, you can select a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data is saved in common, machine-readable file formats such as XML, CSV, or JSON. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](/azure/storage/common/storage-introduction).
 
