@@ -95,23 +95,23 @@ With both sides of the trust relationship in place, set up SAP to trust the Micr
 
 Perform these steps as an SAP Basis admin in SAP GUI.
 
-1. Run the transaction *SAML2*.
+1. Run the transaction **SAML2**.
 
 1. Select the **Trusted Providers** tab.
 
-1. From the **Show:** dropdown list, select **OAuth 2.0 Identity Providers**.
+1. From the *Show: dropdown list*, select **OAuth 2.0 Identity Providers**.
 
 1. Select **Add**, and then select **Upload Metadata File**.
 
-1. Select the metadata XML file that was downloaded from Microsoft Entra ID, and then select **Next**.
+1. Select the **metadata XML file** that was downloaded from Microsoft Entra ID, and then select **Next**.
 
-1. Select the base64 certificate that was downloaded from Microsoft Entra ID, and then select **Next**.
+1. Select the **base64 certificate** that was downloaded from Microsoft Entra ID, and then select **Next**.
 
 1. Select **Finish**.
 
-1. In the **List of Trusted Providers**, select the Microsoft Entra ID entry.
+1. In the *List of Trusted Providers*, select the **Microsoft Entra ID entry**.
 
-1. Under **Supported NameID Formats**, select **Add**.
+1. Under *Supported NameID Formats*, select **Add**.
 
 1. Select **Email**, select **OK**, and then select **Save**.
 
@@ -131,7 +131,7 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Enter a **Description**, and then select **Add**.
 
-1. Copy and save this secret somewhere secure.
+1. Copy and save this *secret* somewhere secure.
 
 1. Select **API Permissions** > **Add a permission**.
 
@@ -149,21 +149,21 @@ Perform these steps as a Microsoft Entra ID admin in the [Azure portal](https://
 
 1. Select **Expose an API**.
 
-1. Next to **Application ID URI**, select **Add**.
+1. Next to *Application ID URI*, select **Add**.
 
-1. Accept the default value and select **Save**.
+1. Accept the **default value** and select **Save**.
 
 1. Select **Add a scope**.
 
 1. Set **Scope name** to *user_impersonation*.
 
-1. Set **Who can consent?** to **Admins and users**.
+1. Set *Who can consent?* to **Admins and users**.
 
 1. Select **Add a scope**.
 
 1. Copy the **Application (client) ID**.
 
-1. When a Microsoft Entra ID enterprise application is created, it creates a matching app registration. Find the **App registration** that matches the Microsoft Entra ID enterprise application that you created.
+1. When a Microsoft Entra ID enterprise application is created, it creates a matching app registration. Find the **App registration** that matches the *Microsoft Entra ID enterprise application* that you created.
 
 1. Select **Expose an API** > **Add a client application**.
 
@@ -193,7 +193,7 @@ Perform these steps as an SAP Basis admin in SAP GUI.
     - For **Trusted OAuth 2.0 IdP**, select the Microsoft Entra ID entry.
     - Select **Refresh Allowed**, and then select **Next**.
 
-1. On the **Scope Assignment** page, select **Add**, select the OData services that Azure API Management uses, and then select **Next**.
+1. On the *Scope Assignment* page, select **Add**, select the **OData services** that Azure API Management uses, and then select **Next**.
 
 1. Select **Finish**.
 
@@ -211,9 +211,9 @@ Convert the SAP OData XML metadata to an OpenAPI JSON specification and upload i
 
 1. In the **Create from definition** dropdown list, select **OpenAPI**.
 
-1. Select **Select a file**, and then select the OpenAPI JSON specification file that you saved to your desktop.
+1. Select **Select a file**, and then select the **OpenAPI JSON specification file** that you saved to your desktop.
 
-1. Under **APIs**, select **Named values**.
+1. Under *APIs*, select **Named values**.
 
 1. Add the following key/value pairs:
 
@@ -234,18 +234,18 @@ Convert the SAP OData XML metadata to an OpenAPI JSON specification and upload i
 
 Use Azure API Management policies to convert Microsoft Entra ID tokens into SAML tokens that SAP accepts.
 
-1. Copy the example [Azure API Management policy](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SAP%20using%20AAD%20JWT%20token.xml) from Microsoft's GitHub page.
-1. Open the [Azure portal](https://portal.azure.com).
+1. Copy the example **[Azure API Management policy](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SAP%20using%20AAD%20JWT%20token.xml)** from Microsoft's GitHub page.
+1. Open the **[Azure portal](https://portal.azure.com)**.
 
 1. Go to your Azure API Management resource.
 
-1. Select **APIs**, and then select the API that you created by uploading the OpenAPI JSON specification file.
+1. Select **APIs**, and then select the API that you created by uploading the **OpenAPI JSON specification file**.
 
 1. Select **All operations**.
 
-1. Under **Inbound processing**, select **Policies </>**.
+1. Under *Inbound processing*, select **Policies </>**.
 
-1. Delete the existing policy and paste the policy that you copied.
+1. Delete the **existing policy** and paste the **policy that you copied**.
 
 1. Select **Save**.
 
