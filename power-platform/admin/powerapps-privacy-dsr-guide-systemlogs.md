@@ -1,12 +1,11 @@
 ---
-title: Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse  | Microsoft Docs
+title: Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse 
 description: Walkthrough of how to respond to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse
 author: sericks007
 ms.reviewer: paulliew
-
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 05/23/2018
+ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -28,11 +27,11 @@ This article focuses on responding to DSR requests for system-generated logs in 
 ## Accessing and exporting system-generated logs for Managed Tenants
 Administrators can access system-generated logs associated with a user's use of Power Apps, Power Automate, and Dataverse services and applications.
 
-To access and export system-generated logs, do the following: [learn more](https://learn.microsoft.com/en-us/privacy/priva/subject-rights-requests)
+To access and export system-generated logs, review the guidance in [Learn about Priva Subject Rights Requests](/privacy/priva/subject-rights-requests).
 
-1. Go to the [Microsoft Priva portal](https://servicetrust.microsoft.com) and sign in as a member of the **Subject Rights Request Administrators role** group (see [Priva permissions](https://learn.microsoft.com/en-us/privacy/priva/priva-setup) credentials.
+1. Go to the [Microsoft Priva portal](https://servicetrust.microsoft.com) and sign in as a member of the **Subject Rights Request Administrators role** group. [Get started with Priva](https://learn.microsoft.com/en-us/privacy/priva/priva-setup) provides more information.
 
-[See instructions] (https://learn.microsoft.com/en-us/privacy/priva/subject-rights-requests#how-to-access) 
+1. [How to access](/privacy/priva/subject-rights-requests#how-to-access) explains how to access subject rights requests for data within Microsoft 365.
 
     After you create a new request, the request is listed on the **Data Log Export** page, where you can track its status. After a request is complete, you can select a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data is saved in common, machine-readable file formats such as XML, CSV, or JSON. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs. For more information, see [Introduction to Azure Storage](/azure/storage/common/storage-introduction).
 
@@ -49,8 +48,6 @@ The following table summarizes accessing and exporting system-generated logs for
 
 > [!NOTE]
 >  For security and audit purposes, some features do not allow you to export or delete system-generated logs in order to maintain the integrity of personal information.
->
->
 
 ## Deleting system-generated logs for Managed Tenants
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Microsoft Entra account. For instructions on how to permanently delete a user, see the **Deleting a user** section in the *Azure Data Subject Request privacy documentation* that can be found on the [Microsoft 365 Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRDSR). It's important to note that permanently deleting a user account is irreversible once initiated.
