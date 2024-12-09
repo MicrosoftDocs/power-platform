@@ -29,7 +29,7 @@ Administrators can access system-generated logs associated with a user's use of 
 
 To access and export system-generated logs, review the guidance in [Learn about Priva Subject Rights Requests](/privacy/priva/subject-rights-requests).
 
-1. Go to the [Microsoft Priva portal](https://servicetrust.microsoft.com) and sign in as a member of the **Subject Rights Request Administrators role** group. [Get started with Priva](https://learn.microsoft.com/en-us/privacy/priva/priva-setup) provides more information.
+1. Go to the [Microsoft Priva portal](https://servicetrust.microsoft.com) and sign in as a member of the **Subject Rights Request Administrators role** group. [Get started with Priva](/privacy/priva/priva-setup) provides more information.
 
 1. Review [How to access](/privacy/priva/subject-rights-requests#how-to-access) to learn more about access subject rights requests for data within Microsoft 365.
 
