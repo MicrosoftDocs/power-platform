@@ -41,7 +41,7 @@ The following table summarizes accessing and exporting system-generated logs for
 | --- | --- |
 | How long does the Microsoft Data Log Export tool take to complete a request? |    It depends on several factors. In most cases it should complete in one or two days, but it can take up to 30 days.
 | What format will the output be in? | The output is in the form of structured, machine-readable files such as XML, CSV, or JSON.
-| Who has access to the Data Log Export tool to submit access requests for system-generated logs? |  Members of the **Subject Rights Request Administrators role** group has access to the privacy Log Manager tool.
+| Who has access to the Data Log Export tool to submit access requests for system-generated logs? |  Members of the **Subject Rights Request Administrators role** group have access to the privacy Log Manager tool.
 | What data does the Data Log Export tool return? |    The Data Log Export tool returns system-generated logs that Microsoft stores. Exported data spans across various Microsoft services including Microsoft 365, Azure, Dynamics, Power Apps, Power Automate, and Dataverse.
 | How is data returned to the user? |    Data is exported to your organization's Azure storage location; it's up to administrators in your organization to determine how they'll show/return this data to users.
 | What will data in system-generated logs look like? |    Example of a system-generated log record in JSON format: <br> [{ <br>"DateTime": "2017-04- 28T12:09:29-07:00",  <br> "AppName": "SharePoint", <br> "Action": "OpenFile", "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" <br>}]
