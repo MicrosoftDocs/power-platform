@@ -79,7 +79,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 
         Example: `component:pluginassembly,thumbprint:<<Thumbprint>>,environment:<<EnvironmentId>>`
 
-    **-Or**
+    **-Or-**
        
      - **Subject identifier**: If a certificate is from a valid trusted issuer, which is recommended for production scenarios, then the **subject identifier** format must follow the example below.
          
