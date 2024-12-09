@@ -51,7 +51,7 @@ For matches with a high certainty, PowerMatch automatically matches and clears t
 
 EY's PowerMatch technical architecture diagram shows how payments submitted are automatically matched with the corresponding invoice using Power Platform. Payment details sent by customer are extracted from attachments and moved to Dataverse. Matching data from bank is extracted from payment information using AI model and moved to Dataverse. The Accounts Receivable team manually clears payments without a match. Data is then synched with internal systems for engagement and collections teams.
 
-*“To efficiently run a complex finance process requires a huge number of customization and integration options, which we were able to accomplish using Power Platform. PowerMatch’s deep integration into SAP is a testimony to how effective Power Platform can be in complementing SAP and delivering business value.”* 
+*"To efficiently run a complex finance process requires a huge number of customization and integration options, which we were able to accomplish using Power Platform. PowerMatch’s deep integration into SAP is a testimony to how effective Power Platform can be in complementing SAP and delivering business value."* 
 
 &mdash;Stef Pieterse, EY Business Process Lead for Finance and Accounting
 
