@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2024
+ms.date: 12/09/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -42,7 +42,7 @@ This article covers how to augment your _default environment strategy_ by combin
 Enabling _default environment routing_ might give you more environments to manage, but automatically creating them into a single environment group ensures they're preconfigured with important baseline controls your organization requires.
 
 ## Known limitations
-- When creating an environment in the Power Platform admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. This is a known issue that we plan to fix soon. In the meantime, the alternative is to create the environment via API or PowerShell.
+When creating an environment in the Power Platform admin center, the Developer and Trial subscription-based environment types may become unavailable when first selecting the environment group and the region. This is a known issue that we plan to fix soon. In the meantime, the alternative is to create the environment via API or PowerShell.
 
 ## Create an environment group
 
@@ -75,7 +75,7 @@ You can also configure the _sharing limits_ rule. Since the environment group is
 1. Repeat these steps until all desired rules are configured.
 1. Select **Publish rules**.
 
-**For solution-aware cloud flows**
+#### For solution-aware cloud flows
 1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
 2. Unmark the **Let people share solution-aware cloud flows** option. This turn off all sharing for cloud flows in this environment group.
 3. Select **Save**
@@ -144,9 +144,7 @@ As you experiment with environment groups, you might have leftover groups that y
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
 
-
-
-## See also
+## Related content
 
 [Managed Environments overview](managed-environment-overview.md) <br>
 [Usage insights](managed-environment-usage-insights.md) <br>
