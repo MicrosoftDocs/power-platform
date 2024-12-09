@@ -7,7 +7,7 @@ ms.reviewer: matp
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 02/28/2024
+ms.date: 12/09/2024
 search.audienceType: 
   - admin
 ---
@@ -45,7 +45,7 @@ In addition to enabling the environment settings, when using individual user lev
 1. Under **Enable TDS endpoint**, turn on **Enable user level access control for TDS endpoint**.  
    :::image type="content" source="media/enable-user-level-tds.png" alt-text="Enable user level access control for TDS endpoint setting":::
    > [!IMPORTANT]
-   > The **Enable TDS endpoint** setting must be turned on for this setting to have any consequence.
+   > The **Enable TDS endpoint** setting must be turned on for this setting to work.
 1. Select **Save**.
 1. Go to the security roles section in the Power Platform admin center, **Settings** > **Users + permissions** > **Security roles**.
 1. Select the security role where users who need to use the TDS endpoint will be assigned.  
@@ -56,7 +56,7 @@ In addition to enabling the environment settings, when using individual user lev
 1. Assign those users who need TDS endpoint access to the security role. More information: [Assign a security role to a user](assign-security-roles.md)
 
 > [!Note]
-> - To access the data in Dataverse, the users are required to have data access permissions to the tables in their assigned security role, in addition to the miscellaneous privilege to access the TDS endpoint.
+> - To access the data in Dataverse, users are required to have data access permissions to the tables in their assigned security role, in addition to the miscellaneous privilege to access the TDS endpoint.
 
 ## Known issues when users aren't properly assigned privileges
 
