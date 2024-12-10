@@ -82,6 +82,10 @@
               href: git-integration/source-control-operations.md   
             - name: Frequently asked questions
               href: git-integration/faqs.md
+        - name: View solution deployments in the deployment hub
+          items:
+            - name: View solution deployments in the deployment hub
+            - href: maker-deployment-hub.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
