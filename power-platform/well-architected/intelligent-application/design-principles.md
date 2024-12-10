@@ -43,7 +43,7 @@ For intelligent applications that use generative AI capabilities, consider not o
 - **Optimize for Retrieval Augmented Generation (RAG)**: Ensure your data is clean and well-structured, create efficient embeddings and indexes for quick retrieval, and implement robust monitoring and feedback mechanisms to continuously improve the workload's performance.
 - **Effective prompts**: Design precise and contextually relevant prompts to guide the AI to produce accurate responses.
 - **Regular evaluation**: Implement continuous monitoring and testing of AI outputs to assess accuracy, relevance, and ethical adherence.
-- **Feedback loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models. Microsoft Copilot Studio provides [customer satisfaction analytics](/microsoft-copilot-studio/analytics-csat), which provide actionable insights on drivers of satisfaction or dissatisfaction with your copilot's responses.
+- **Feedback loops**: Establish feedback mechanisms where users can report inaccuracies, which can then be used to refine and improve the models. Microsoft Copilot Studio provides [customer satisfaction analytics](/microsoft-copilot-studio/analytics-csat), which provide actionable insights on drivers of satisfaction or dissatisfaction with your agent's responses.
 - **Domain-specific training**: Fine-tune models on domain-specific data to enhance accuracy in specific contexts.
 - **Regular updates**: Periodically update models with new data to maintain their relevance and accuracy.
 - **Unrecognized intents**: Handle unrecognized intents by using [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations) to find answers from available data sources and by using the [Fallback topic](/microsoft-copilot-studio/guidance/fallback-topic) to integrate with other systems. 
@@ -72,14 +72,14 @@ Performance efficiency is the ability of your workload to efficiently scale to m
 
 Increase performance efficiency by:
 
-- Understanding target volumes to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the copilot and the potential effect on Dataverse storage for conversation transcripts.
+- Understanding target volumes to validate the target architecture and scale. Target volumes also help validate the licensing aspects of the generative AI (agent) and the potential effect on Dataverse storage for conversation transcripts.
 - Understanding [platform limits](/microsoft-copilot-studio/requirements-quotas). When you integrate your intelligent application workload with external systems, for example through Power Automate or HTTP requests, it's important to validate that every component can handle the load.
 - Continuously monitoring performance and detecting anomalies by using tools such as Azure Monitor, Log Analytics, Application Insights, and alerts.
 - Understanding the expected response times for:
   - First chat load and first message response
-  - Maximum latency for the copilot to answer user queries
+  - Maximum latency for the agent to answer user queries
   - Approach for handling long-running actions (for example, waiting for an external system to return data)
-- Optimizing the deflection rate, or the rate at which requests are completed in a self-service fashion due to automation (reducing the number of requests that require live agent assistance). Learn more in [Performance optimization for intelligent application workloads](monitoring.md).
+- Optimizing the deflection rate, or the rate at which requests are completed in a self-service fashion due to automation (reducing the number of requests that require human assistance). Learn more in [Performance optimization for intelligent application workloads](monitoring.md).
 
 Considering each of these aspects helps you build an intelligent application workload with a consistent, cohesive user experience.
 
@@ -108,9 +108,9 @@ Optimizing the user experience for an intelligent application workload involves 
 
 - **Conversation design**: Design conversations that are intuitive and easy to navigate. Use clear and concise language, and ensure that the AI can handle common user queries effectively. Focus on helping users achieve their goals with minimal effort. Understand user intents and provide relevant responses quickly to ensure a seamless and efficient user experience.
 
-- **Handling limitations**: Implement fallback mechanisms for topics the generative AI can't handle, such as redirecting users to human agents or providing alternative resources. Design robust error-handling processes to manage unexpected inputs gracefully. Inform users when the AI is unable to process their request and offer alternatives.
+- **Handling limitations**: Implement fallback mechanisms for topics the generative AI can't handle, such as redirecting users to customer service representatives or providing alternative resources. Design robust error-handling processes to manage unexpected inputs gracefully. Inform users when the AI is unable to process their request and offer alternatives.
 
-- **User feedback**: Integrate mechanisms to gather user feedback continuously. Microsoft Copilot Studio provides [customer satisfaction analytics](/microsoft-copilot-studio/analytics-csat) that provide actionable insights on drivers of satisfaction or dissatisfaction with your copilot's responses. Use the collected feedback to refine and improve the AI models and overall workload. Regular updates based on user input can significantly enhance the user experience.
+- **User feedback**: Integrate mechanisms to gather user feedback continuously. Microsoft Copilot Studio provides [customer satisfaction analytics](/microsoft-copilot-studio/analytics-csat) that provide actionable insights on drivers of satisfaction or dissatisfaction with your agent's responses. Use the collected feedback to refine and improve the AI models and overall workload. Regular updates based on user input can significantly enhance the user experience.
 
 - **Customization and personalization**: Customize prompts and instructions to align with your specific use cases and user needs, to ensure more accurate and relevant responses. Use dynamic chaining to automate triggers and manage topic flows efficiently to reduce the need for manually predefined topics and improve the AI's ability to recognize user intent. Learn more in [Optimize prompts and topic configuration](/microsoft-copilot-studio/guidance/optimize-prompts-topic-configuration).
 

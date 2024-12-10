@@ -22,13 +22,13 @@ Evaluate options from simple to advanced CI/CD:
 - Manual deployment of solutions.
 - Automated deployment with user-friendly [pipelines in Power Platform](/power-platform/alm/pipelines) (no source control).
 - Automated deployment + source control with [Azure DevOps](/power-platform/alm/devops-build-tools) or [GitHub Power Platform](/power-platform/alm/devops-github-actions) tools.
-- Automated testing of the copilot as part of the deployment process.
+- Automated testing of the intelligent application workload as part of the deployment process.
 
 ## Use solutions for environment management
 
 Maintain separate environments for development, testing, and production. This practice helps to isolate issues and ensures that changes are thoroughly tested before reaching users.
 
-Use [solutions](../../alm/solution-concepts-alm.md) to move plugins created in Copilot Studio across different environments.
+Use [solutions](../../alm/solution-concepts-alm.md) to move plugins created in Microsoft Copilot Studio across different environments.
 
 Key recommendations and considerations:
 
@@ -47,9 +47,11 @@ This example provides an overview of the deployment strategy for an intelligent 
 
 ![Example solution configuration](media/solutionconfig.png)
 
+<!-- Modify above image's terminology -->
+
 1. **Development environment (Dev)**:
    - **Purpose**: For the initial creation and customization of the solution.
-   - **Activities**: Developers build and modify components such as apps, flows, and copilots. All customizations and configurations are performed here.
+   - **Activities**: Developers build and modify components such as apps, flows, and agents. All customizations and configurations are performed here.
    - **Key practices**:
      - Use a custom publisher and prefix for all components.
      - Implement environment variables for settings and secrets.
@@ -87,13 +89,13 @@ This example provides an overview of the deployment strategy for an intelligent 
 
 ## Establish a test strategy
 
-Ensure you have a clear plan to validate that your copilots and integrations function as expected.
+Ensure you have a clear plan to validate that your intelligent application workloads and integrations function as expected.
 
 - Define your test strategy for intelligent application workloads. Use the [Test Framework](https://aka.ms/PVASamples/PVATestFramework) to bulk test user utterances and validate that the appropriate topic triggers or that the first "did you mean" option is the correct one in 90% of the cases.
 
 - Test integrations as part of the full end-to-end conversation testing with the Test Framework scale test capability.
 
-- Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure copilots and tests. Run individual tests against the Copilot Studio APIs (Direct Line), and evaluate the copilot responses against expected results.
+- Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure agents and tests. Run individual tests against the Copilot Studio APIs (Direct Line), and evaluate the agent responses against expected results.
 
 - Ensure that you understand nonfunctional requirements like availability, compliance, data retention/residency, performance, privacy, recovery time, security, and scalability. For example, a chat widget on the website should load and start a conversation within 5 seconds of being clicked. Similarly, a cloud flow triggered to return information to the user should provide the desired data within 10 seconds.
 

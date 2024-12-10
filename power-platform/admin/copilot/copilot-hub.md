@@ -1,12 +1,12 @@
 ---
 title: Manage Copilot
 description: Learn more about the Copilot page, a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. 
-author: caitlinshaw1
+author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 11/19/2024
+ms.date: 12/05/2024
 ms.subservice: admin
-ms.author: caitlinshaw
+ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
