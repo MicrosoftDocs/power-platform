@@ -77,7 +77,7 @@ This process is generic and works for all the posting scenarios. The steps the A
 
 |App|Action|Description|
 |-|-|-|
-||Customer sends payment notification.|Start with a scheduled cloud flow to set up a recurring flow automation. |
+|![Outlook icon](media/global-finance/outlook-icon.png)|Customer sends payment notification.|Start with a scheduled cloud flow to set up a recurring flow automation. |
 ||Payment details extracted from attachment and moved to Dataverse. |Use AI Builder to create custom entity extraction model to extracts the key attributes from the payment information. |
 ||Bank uploads statement to SAP with payment information. ||
 ||Open invoices, payments and related activity pulled from SAP on defined schedule. 	|Use scheduled cloud flow and pre-built SAP connector to set up a recurring flow automation. |
