@@ -17,7 +17,7 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 12/02/2024
+ms.date: 12/09/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -130,7 +130,7 @@ Later in the process, you'll import a certificate from your Microsoft Entra ID E
 
 > [!NOTE]
 >
-> - If the test fails, verify your connection parameters and ensure all previous configuration steps are completed correctly. 
+> - If the test fails, verify your connection parameters and ensure all previous configuration steps are completed correctly.
 > - If the **Entity** dropdown does not populate, recheck your connection parameters, the OAuth 2.0 app configuration in SuccessFactors, and the Enterprise App configuration.
 
 ## Related content

@@ -44,7 +44,7 @@ To set up a trust relationship between SAP and Microsoft Entra ID using SAML 2.0
 
 Perform these steps as an SAP Basis admin in SAP GUI.
 
-1. In SAP GUI, run the transaction *SAML2* to open the relevant SAP-client dependent wizard and choose the *Local Provider* tab.
+1. In SAP GUI, run the transaction **SAML2** to open the relevant SAP-client dependent wizard and choose the **Local Provider** tab.
 
 1. Select **Metadata**, and then select **Download Metadata**. You'll upload the SAP SAML metadata to Microsoft Entra ID in a later step.
 
