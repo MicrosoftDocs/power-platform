@@ -475,7 +475,13 @@ Alternatively a powershell inline task script $(Get-Date -Format yyyy.MM.dd.HHmm
 
 ### Power Platform Set Connection Variables
 
-Sets BuildTools.* variables to provide custom script tasks access to use the service connection as a single source of truth.
+Sets `PowerPlatformSetConnectionVariables.BuildTools.*` variables to provide custom script tasks access to use the service connection as a single source of truth.
+
+The following variables are set:
+- `PowerPlatformSetConnectionVariables.BuildTools.TenantId`
+- `PowerPlatformSetConnectionVariables.BuildTools.ApplicationId`
+- `PowerPlatformSetConnectionVariables.BuildTools.ClientSecret`
+- `PowerPlatformSetConnectionVariables.BuildTools.DataverseConnectionString`
 
 #### YAML snippet (SetConnectionVariables)
 
