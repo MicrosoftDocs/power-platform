@@ -7,7 +7,7 @@ ms.subservice: alm
 ms.date: 12/03/2024
 ms.reviewer: pehecke
 ms.topic: article
-search.audienceType: 
+search.audienceType:
   - developer
 ---
 
@@ -74,7 +74,7 @@ Verifies a Power Platform environment service connection by connecting and makin
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@2
   displayName: 'Power Platform WhoAmI'
 
-  inputs: 
+  inputs:
 #   Service Principal/client secret (supports MFA)
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'My service connection'
