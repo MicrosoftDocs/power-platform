@@ -1,14 +1,14 @@
 ---
 title: View solution deployments in the Deployment Hub
-description: Learn how to view pipeline deployments in the Deployments experience.
+description: Learn how to view pipeline deployments in the Deployment Hub.
 author: asheehi1
 ms.author: matp
 ms.topic: how-to
-ms.date: 01/14/2025
+ms.date: 1/14/2025
 ms.custom: template-how-to
 ---
 
-# View solution deployments across solutions and pipelines
+# View solution deployments in the Deployment Hub
 
 Makers can view all of their deployments in one place, regardless of solution or pipeline. If their deployment began from (or was deployed to) the current environment, they will be able to view its status and other details.
 
