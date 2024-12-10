@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 1/14/2025
 ms.custom: template-how-to
 ---
+[!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 # View solution deployments in the Deployment Hub
 
