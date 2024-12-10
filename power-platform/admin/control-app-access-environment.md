@@ -132,6 +132,7 @@ Here are some commonly used apps that are safe to allow.
 | Application ID | Application name |
 |----------------|------------------|
 | 07ce06e6-4ae9-4466-bca4-2984fa04d057 | Microsoft Dynamics File Storage |
+| 1884bdbf-452a-4a11-9c76-afdbdb1b3768	| RelevanceSearch |
 | 3570e63c-5acf-4f3f-9f15-a49faa5120d3| PowerAppsCustomerManagementPlaneBackend |
 | 44a02aaa-7145-4925-9dcd-79e6e1b94eff |MicrosoftDynamics365OfficeAppsIntegration |
 | 4ade18ba-d41e-45d6-a563-97c67fc0be15 | Microsoft Dynamics NRD Service |
