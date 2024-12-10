@@ -78,13 +78,13 @@ This process is generic and works for all the posting scenarios. The steps the A
 |App|Action|Description|
 |-|-|-|
 |![Outlook icon](media/global-finance/outlook-icon.png)|Customer sends payment notification.|Start with a scheduled cloud flow to set up a recurring flow automation. |
-||Payment details extracted from attachment and moved to Dataverse. |Use AI Builder to create custom entity extraction model to extracts the key attributes from the payment information. |
-||Bank uploads statement to SAP with payment information. ||
-|![Power automate icon](media/global-finance/power-automate-icon.png)|Open invoices, payments and related activity pulled from SAP on defined schedule. 	|Use scheduled cloud flow and pre-built SAP connector to set up a recurring flow automation. |
-||Matching data extracted from payment information using AI model and moved to Dataverse. |Attributes from extraction model are used in a 14-step matching algorithm that tries to find the matching invoices based on predefined business rules using an Office Script.|
-||Payment data matched in Dataverse is sent to SAP for clearing.|Use Power Automate and pre-built SAP connector.|
-||Payments without a match are manually cleared in app by Accounts Receivable team.|	Use Power Apps application to display payment data for manual review and processing. |
-||Data synched with internal systems for engagement and collections teams. 	|	Use Power Automate and custom APIs or Power Automate RPA to connect to internal systems.|
+|![AI Builder icon](media/global-finance/ai-builder-icon.png)|Payment details extracted from attachment and moved to Dataverse. |Use AI Builder to create custom entity extraction model to extracts the key attributes from the payment information. |
+|![SAP icon](media/global-finance/sap-icon.png)|Bank uploads statement to SAP with payment information. ||
+|![Power Automate icon](media/global-finance/power-automate-icon.png)|Open invoices, payments and related activity pulled from SAP on defined schedule. 	|Use scheduled cloud flow and pre-built SAP connector to set up a recurring flow automation. |
+|![Office icon](media/global-finance/office-icon.png)|Matching data extracted from payment information using AI model and moved to Dataverse. |Attributes from extraction model are used in a 14-step matching algorithm that tries to find the matching invoices based on predefined business rules using an Office Script.|
+|![Power Automate icon](media/global-finance/power-automate-icon.png)|Payment data matched in Dataverse is sent to SAP for clearing.|Use Power Automate and pre-built SAP connector.|
+|![Power Apps icon](media/global-finance/power-apps-icon.png)|Payments without a match are manually cleared in app by Accounts Receivable team.|	Use Power Apps application to display payment data for manual review and processing. |
+|![Power Automate icon](media/global-finance/power-automate-icon.png)|Data synched with internal systems for engagement and collections teams. 	|	Use Power Automate and custom APIs or Power Automate RPA to connect to internal systems.|
 
 ## Key benefits
 
