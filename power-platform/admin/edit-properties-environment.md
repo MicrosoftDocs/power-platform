@@ -34,6 +34,9 @@ Administrators can edit properties of an environment, such as the friendly name,
 
      > [!IMPORTANT]
      > After the updated URL has successfully been applied, Power Automate flows in the environment are turned off. You must fix the connections and turn the Power Automate flows back on again. If Power Automate flows are using [connection references](/power-apps/maker/data-platform/create-connection-reference), make sure they're associated to the new connections, if new ones are created.
+  
+     > [!IMPORTANT]
+     > After the updated URL has successfully been applied, all Power Apps model-driven apps that have been embedded as a personal app in Teams and model-driven apps that have been added to a Teams tab must be deleted and readded.  Follow the documentation to [embed a model-driven app as a tab in Teams](/power-apps/teams/embed-model-driven-teams-tab) and [embed a model-driven app as personal app in Teams](/power-apps/teams/embed-model-driven-teams-personal).
        
      > [!WARNING]
      > For up to 24-48 hours after you have updated the URL, you will not be able to open or edit Power Automate flows in the environment that have connections to Dataverse. You will see the error "It looks like something went wrong." while the edit flow page is pointing to the old environment URL. The flows will still run in the background and can be turned on or off via Solutions.
