@@ -1,5 +1,5 @@
 ---
-title: Set up pipelines in Power Platform
+title: View solution deployments in the Deployment Hub
 description: Learn how to view pipeline deployments in the Deployments experience.
 author: asheehi1
 ms.author: matp
