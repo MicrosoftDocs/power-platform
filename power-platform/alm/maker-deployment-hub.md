@@ -10,7 +10,7 @@ ms.custom: template-how-to
 
 # View solution deployments in the Deployment Hub
 
-Makers can view all of their deployments in one place, regardless of solution or pipeline. If their deployment began from (or was deployed to) the current environment, they will be able to view its status and other details.
+From the **Solutions** page, makers can navigate to **Deployments** to view all of their solution deployments, across all solutions and pipelines, in one place. If their deployment began from (or was deployed to) the current environment, they will be able to view its status and other details.
 
 :::image type="content" source="media/maker-deployment-hub.png" alt-text="Screenshot of the deployment hub for makers." lightbox="media/maker-deployment-hub.png":::
 
