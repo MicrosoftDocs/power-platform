@@ -30,10 +30,9 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | Exclude sharing with security groups | Select if users aren't allowed to share canvas apps with any security groups or with everyone. |
 | Limit total individuals who can be shared to | If **Exclude sharing with security groups** is selected, you can control the maximum number of users with whom a canvas app can be shared. |
 
-
 ## Solution-aware cloud flow sharing rules
 
-| Solution-aware cloud flow sharing rules | System behavior when selected |
+| Solution-aware cloud flow sharing rules | Description |
 | --- | --- |
 | Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows with any number of individuals or security groups. <br><br> **When unselected:** Users can't share their cloud flows with any individual or security group.|
 
@@ -68,7 +67,7 @@ You can also use PowerShell to set and remove sharing limits.
 
 ### Set sharing limits
 
-Here's a PowerShell script that excludes sharing a canvas app with security groups and excludes sharing a canvas app with more than 20 individuals within a Managed Environment.
+Here's a PowerShell script that prevents canvas apps from being shared with security groups and limits the number of individuals that the canvas app can be shared with to 20.
 
 ```powershell
 # Retrieve the environment
@@ -93,8 +92,17 @@ $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'solutionCloudFlows-limitSharingMode' -Value "disableSharing" -Force
 
-Here's a PowerShell script that prevents copilots from being shared with security groups and limits the number of viewers that can access a copilot to 20 within a Managed Environment.
+# Save the updated Managed Environment settings
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
+```
 
+Here's a PowerShell script that prevents copilots from being shared with security groups and limits the number of viewers that can access a copilot to 20.
+
+```powershell
+# Retrieve the environment
+$environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
+
+# Update the Managed Environment settings
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-limitSharingMode' -Value "ExcludeSharingToSecurityGroups" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-maxLimitUserSharing' -Value "20" -Force
 
@@ -102,10 +110,7 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
-
-### Remove sharing limits
-
-Here's a PowerShell script that turns off the ability to share your copilots with editors.
+Here's a PowerShell script that turns off the ability to share your copilots with individuals as Editors.
 
 ```powershell
 # Retrieve the environment
@@ -113,14 +118,16 @@ $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
 # Update the Managed Environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
-$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-authoringSharindgDisabled -Value True -Force
+$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-authoringSharingDisabled' -Value True -Force
 
 # Save the updated Managed Environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
+Set 'bot-authoringSharingDisabled' to False to enable sharing with individuals as Editors. 
+
 ### Remove sharing limits
 
-Here's a PowerShell script that removes the canvas app sharing limits that were configured in the script above.
+Here's a PowerShell script that removes the canvas app sharing limits.
 
 ```powershell
 # Retrieve the environment
@@ -134,7 +141,34 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 # Save the updated Managed Environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
-In the script above, you can substitute 'limitSharingMode' for 'solutionCloudFlows-limitSharingMode' to allow sharing for solution cloud flows. 
+
+To remove sharing limits for solution-aware cloud flows, you can run the following script.
+
+```powershell
+# Retrieve the environment
+$environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
+
+# Update the Managed Environment settings
+$governanceConfiguration = $environment.Internal.properties.governanceConfiguration
+$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'solutionCloudFlows-limitSharingMode' -Value "noLimit" -Force
+
+# Save the updated Managed Environment settings
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
+```
+
+To remove limits on sharing your agent with security groups or individuals as Viewers, you can run the following script.
+
+```powershell
+# Retrieve the environment
+$environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
+
+# Update the Managed Environment settings
+$governanceConfiguration = $environment.Internal.properties.governanceConfiguration
+$governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-limitSharingMode' -Value "noLimit" -Force
+
+# Save the updated Managed Environment settings
+Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
+```
 
 ## Surface your organization’s governance error content 
 If you specify governance, error message content to appear in error messages, it's included in the error message displayed to users. Learn more in [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
