@@ -486,10 +486,10 @@
               items:
               - name: Overview
                 href: security/security-overview.md
-              - name: Network security 
-                href: security/network-security.md
-              - name: Access control 
-                href: security/access-control.md
+              - name: Data protection and privacy
+                href: security/data-protection-privacy.md
+              - name: Identity and access management
+                href: security/identity-access-management.md
               - name: Threat detection 
                 href: security/threat-detection.md
               - name: Compliance 
