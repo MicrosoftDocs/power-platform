@@ -42,7 +42,7 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 >
 > Sharing rules in Dataverse for Teams environments do not impact sharing to a Team when you select **Publish to Teams**. However, when a user attempts to share with individuals or groups in a Team other than the one bound to the environment, the sharing limits are enforced. 
 
-If a user tries to share a canvas app or solution-aware cloud flow that contradicts the sharing rules, they are informed as shown below.
+If a user tries to share a canvas app or solution-aware cloud flow that contradicts the sharing rules, they're informed as shown below.
 
 :::image type="content" source="media/limit-sharing-cloud-flows.png" alt-text="Screenshot of a user being blocked from sharing a flow.":::
 
@@ -83,7 +83,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 ### Remove sharing limits
 
-Here's a PowerShell scripts that removes the sharing limits that were configured in the script above.
+Here's a PowerShell script that removes the sharing limits that were configured in the script above.
 
 ```powershell
 # Retrieve the environment
