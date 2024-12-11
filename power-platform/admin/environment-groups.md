@@ -93,6 +93,11 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 1. Select **Save**.
 1. Repeat these steps until all desired rules are configured and select **Publish rules**.
 
+#### For solution-aware cloud flows
+1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
+2. Unmark the **Let people share solution-aware cloud flows** option. This turn off all sharing for cloud flows in this environment group.
+3. Select **Save**
+
 > [!NOTE]
 > All rules are equally applied to all environments in the group.
 
@@ -156,8 +161,6 @@ As you experiment with environment groups, you might have leftover groups that y
 
 > [!IMPORTANT]
 > When you delete a group, first remove all of its environments and ensure no developer environments are routed to it. If a group still has environments, you see a warning that prevents you from deleting the group.
-
-
 
 ## Related content
 
