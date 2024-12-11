@@ -1,5 +1,5 @@
 ---
-title: View solution deployments in the Deployment Hub
+title: View solution deployments in the Deployment Hub (preview)
 description: Learn how to view pipeline deployments in the Deployment Hub.
 author: asheehi1
 ms.author: matp
@@ -7,9 +7,9 @@ ms.topic: how-to
 ms.date: 1/14/2025
 ms.custom: template-how-to
 ---
-[!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+# View solution deployments in the Deployment Hub (preview)
 
-# View solution deployments in the Deployment Hub
+[!INCLUDE [production-ready-preview-powerplatform](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
 From the **Solutions** page, makers can navigate to **Deployments** to view all of their solution deployments, across all solutions and pipelines, in one place. If their deployment began from (or was deployed to) the current environment, they will be able to view its status and other details.
 
@@ -27,4 +27,4 @@ On the right of the overview, makers will see their ongoing deployments. Upon se
 ## Frequently asked questions
 
 ### Why can't I see solution deployments other than those that I initiated?
-In order to view others' solution deployments, you must have the Deployment Pipeline Administrator security role or have equivalent privileges to view other deployments.
+In order to view others' solution deployments, you must have the Deployment Pipeline Administrator security role or equivalent privileges to view other deployments.
