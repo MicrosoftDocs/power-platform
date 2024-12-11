@@ -21,7 +21,7 @@ ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# Get started with the SAP Procurement template?
+# Get started with the SAP Procurement template
 
 Enterprise templates for Power Platform published by Microsoft on AppSource are solutions designed to digitally transform broad, complex business scenarios for specific lines of business or enterprise wide. 
 
@@ -75,6 +75,14 @@ Work with your SAP functional analyst, business subject matter experts, and Powe
 | [Extend canvas apps](extend-canvas-apps.md) | Add new SAP fields, apply custom themes, localize, and connect your SAP data with more sources and processes. |
 | [Extend model-driven app and Dataverse tables](extend-model-apps-dataverse.md) | Create tables, columns, and security roles to help drive and persist newly digitized data that's currently not mastered and extend the administrator experience. |
 | [Extend cloud flows](extend-cloud-flows.md) | Map new SAP fields and connect them to more processes and workflows. |
+
+## Use Power Automate Maker Agent for SAP
+
+The Power Automate Maker Agent for SAP is an advanced, LLM-based assistant that translates business-oriented goals into actionable SAP NetWeaver tasks. By helping makers to discover SAP BAPIs, RFCs, and table reads needed to achieve their business goals, the agent empowers makers to build tools to retrieve information and execute operations seamlessly. Designed for makers and organizations integrating SAP with Power Platform, this tool provides dynamic, installation-specific insights to maximize accuracy when working to integrate the Power Platform with your specific SAP system.
+
+> [!NOTE]
+>
+> Power Automate Maker Agent for SAP is designed to only be use in a non-production environment to help makers build solutions that work with specific SAP systems.
 
 ### Next steps
 

@@ -31,12 +31,20 @@
               href: connect/entra-id-apim-oauth.md
             - name: Set up Microsoft Entra ID using SuccessFactors (Preview)
               href: connect/entra-id-using-successfactors.md
-        - name: Use enterprise templates
+        - name: Use templates or prebuilt agent
           items:
             - name: SAP Procurement
               href: ../enterprise-templates/finance/sap-procurement/overview.md
             - name: SAP Supplier Self Service
               href: ../enterprise-templates/finance/sap-supplier-self-service/overview.md
+            - name: Power Automate Maker Agent for SAP
+              items:
+                - name: Overview
+                  href: templates/maker-agent/overview.md
+                - name: Install and set up
+                  href: templates/maker-agent/install-and-set-up.md
+                - name: Use
+                  href: templates/maker-agent/use.md
         - name: Role-based guidance
           items:
             - name: App maker
