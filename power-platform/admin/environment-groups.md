@@ -3,7 +3,7 @@ title: Environment groups
 description: Learn how to organize your Managed Environments into groups and govern them in bulk with rules.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 12/09/2024
+ms.date: 12/11/2024
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -23,9 +23,10 @@ Similar to folders, _environment groups_ are designed to help administrators org
 
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
 
+- [Canvas app sharing rules](managed-environment-sharing-limits.md#canvas-app-sharing-rules)
+- [Agent sharing rules](managed-environment-sharing-limits.md#agent-sharing-rules-preview)
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
 - [Generative AI settings](geographical-availability-copilot.md)
-- [Sharing controls for canvas apps](managed-environment-sharing-limits.md)
 - [Maker welcome content](welcome-content.md)
 - [Solution checker enforcement](managed-environment-solution-checker.md)
 - [Usage insights](managed-environment-usage-insights.md)
@@ -63,17 +64,34 @@ When creating an environment in the Power Platform admin center, the Developer a
 
 After you create the environment group, Power Platform tenant administrators can immediately add Managed Environments or configure the group's rules.
 
-### The sharing limits rule
+### The sharing limits rules
 
-You can also configure the _sharing limits_ rule. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limit_ rules for canvas apps and copilots. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps and copilots with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
-1. In the **Personal Productivity** group, select the **Rules** tab.
-1. Select the **Sharing Limits** rule to open its configuration panel.
+#### For canvas apps
+1. Select **Environment groups** in the navigation pane.
+1. Select your environment group, and then select the **Rules** tab.
+1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
 1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
 1. Select **Save**.
-1. Repeat these steps until all desired rules are configured.
-1. Select **Publish rules**.
+
+#### For agents (preview)
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
+
+1. Select **Environment groups** in the navigation pane.
+1. Select your environment group, and then select the **Rules** tab.
+1. Select the **Sharing agents with Editor permissions** rule to open its configuration panel.
+1. Be sure that the **Let people grant Editor permissions when agents are shared** option is **not** selected.
+1. Select **Save**.
+1. Select the **Sharing agents with Viewer permissions** rule to open its configuration panel.
+1. Select the **Let people grant Viewer permissions when agents are shared** option.
+1. Select the **Only share with individuals (no security groups)** option.
+1. Select the **Limit the number of viewers who can access each agent** option and enter the desired number of viewers you would like to have on the copilot.
+1. Select **Save**.
+1. Repeat these steps until all desired rules are configured and select **Publish rules**.
 
 #### For solution-aware cloud flows
 1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
