@@ -1,9 +1,9 @@
 ---
 title: Limit sharing
-description: Limit how broadly makers can share canvas apps, Microsoft 365 Copilot agents, and custom agents in your Managed Environments.
+description: Limit how broadly makers can share canvas apps and agents in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/22/2024
+ms.date: 12/06/2024
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -18,7 +18,7 @@ contributors:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
-In Managed Environments, admins can limit how broadly users can share canvas apps, custom agents, and Microsoft 365 Copilot agents. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Manage sharing** section.
+In Managed Environments, admins can limit how broadly users can share canvas apps and agents. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Manage sharing** section.
 
 :::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
@@ -34,19 +34,19 @@ If a user tries to share a canvas app that contradicts the sharing rules, the us
 
 :::image type="content" source="media/managed-environment-canvas-app-sharing-rule.png" alt-text="Screenshot of a message when canvas app doesn't respect sharing rule.":::
 
-## Custom agent and Microsoft 365 Copilot agents sharing rules (preview)
+## Agent sharing rules (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
-| Custom agent and Microsoft 365 Copilot agents sharing rule | Description |
+| Agent sharing rule | Description |
 | --- | --- |
-| Let people grant **Editor** permissions when Microsoft 365 Copilot agents and custom agents are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
-| Let people grant **Viewer** permissions when Microsoft 365 Copilot agents and custom agents are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
+| Let people grant **Editor** permissions when agents are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
+| Let people grant **Viewer** permissions when agents are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
 | Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:** Owners and editors can't share with individuals as viewers. They can't share with a security group.|
-| Limit number of viewers who can access each Microsoft 365 Copilot agent and custom agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom a Microsoft 365 Copilot agent and custom agent can be shared with. |
+| Limit number of viewers who can access each agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom an agent can be shared with. |
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
 
-To learn more about **Editor** and **Viewer** permissions on Microsoft 365 Copilot agents and custom agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
+To learn more about **Editor** and **Viewer** permissions on agents, go to [Copilot Studio security and governance](/microsoft-copilot-studio/security-and-governance).
 
 If a user tries to share an agent when sharing with viewers is turned off, the user is informed, as shown below.
 
