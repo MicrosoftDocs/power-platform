@@ -3,7 +3,7 @@ title: Limit sharing
 description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your Managed Environments.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 10/30/2024
+ms.date: 12/11/2024
 author: mikferland-msft 
 ms.author: miferlan
 ms.reviewer: sericks
@@ -44,7 +44,7 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 
 If a user tries to share a canvas app or solution-aware cloud flow that contradicts the sharing rules, they are informed as shown below.
 
-:::image type="content" source="media/Limit-sharing-cloud-flows.png" alt-text="Screenshot of a user being blocked from sharing a flow.":::
+:::image type="content" source="media/limit-sharing-cloud-flows.png" alt-text="Screenshot of a user being blocked from sharing a flow.":::
 
 ## Use PowerShell to set sharing limits
 
