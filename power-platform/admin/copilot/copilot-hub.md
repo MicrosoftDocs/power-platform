@@ -1,31 +1,24 @@
 ---
-title: Manage Copilot (preview)
+title: Manage Copilot
 description: Learn more about the Copilot page, a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. 
-author: caitlinshaw1
+author: amchern
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/26/2024
+ms.date: 12/05/2024
 ms.subservice: admin
-ms.author: caitlinshaw
+ms.author: amchern
 ms.reviewer: sericks
 search.audienceType:
   - admin
 ---
 
-# Manage Copilot (preview)
+# Manage Copilot
 
-[!INCLUDE [preview-baner](../../../shared-content/shared/preview-includes/preview-banner.md)]
-
-The **Copilot** page (preview) is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+The **Copilot** page is a centralized location in the Power Platform admin center for documents, insights, and controls relevant to Power Platform Copilots. Tenant admins can access educational resources about Copilot features, track usage, and access governance controls in one place by selecting **Copilot** in the navigation pane.
 
 ## Readiness 
 
-Resources and documents to help admins better understand and govern Copilots are available in the **Readiness** section. These documents are updated over time as new Copilot capabilities are released. 
+Resources and documents to help admins better understand how Copilot works, data and security fundamentals for Copilot features, and Microsoft's Responsible AI principles are available in the **Readiness** section. These documents are updated over time as new Copilot capabilities are released. 
 
 The **What’s new** web part lists new Copilot features as they're introduced or promoted to general availability. 
 
@@ -34,7 +27,7 @@ The **What’s new** web part lists new Copilot features as they're introduced o
 
 ## Usage 
 
-The usage metrics in the **Usage** section show monthly active users for each Copilot feature. _Active_ usage is defined as a session or interaction with Copilot. 
+The usage metrics in the **Usage** section show monthly active users for each Copilot feature across Power Platform. _Active_ usage is defined as a session or interaction with Copilot. 
 
 To learn more information on each feature, use the following links.
 
@@ -62,7 +55,7 @@ To learn more information on each feature, use the following links.
 
 The **Governance** section displays the percentage of environments in your tenant that have specific Copilot features turned on or off. Selecting the Power Automate or Copilot Studio features lead you to documentation that includes detailed information on that Copilot’s capabilities, prerequisites, and how to turn it on or off.  
 
-Selecting the Power Apps Copilots or **Manage settings** next to the governance header opens the settings panel where you can modify tenant and environment-level Copilot settings. Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
+Selecting the Power Platform Settings, Power Apps settings or **Manage settings** next to the governance header opens the settings panel where you can modify [tenant](../tenant-settings.md) and [environment-level Copilot settings](../settings-features.md#copilot-preview). Select your environment, your Power Platform product, and set your controls before selecting **Save**. 
 
 > [!Note]
 > There may be a delay of up to eight hours for data refresh.

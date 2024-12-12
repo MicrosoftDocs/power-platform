@@ -1,10 +1,11 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. Review the prerequisites and considerations before submitting a request.
-ms.date: 08/01/2024
+ms.date: 11/05/2024
 ms.topic: conceptual
 author: matapg007
 contributors:
+  - val-bc 
   - brsova
   - ImadYanni
   - bevans 
@@ -14,7 +15,9 @@ ms.author: matgupta
 ms.reviewer: sericks
 search.audienceType: 
   - admin
+
 ---
+
 # Tenant-to-tenant migrations 
 
 ## Migrate an environment to a different tenant
@@ -42,7 +45,7 @@ There are no user interface changes or version changes as part of this move. You
 
 | Supported | Not fully supported<sup>*</sup> |
 |-------------------------|-------------------------|
-| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Microsoft Copilot Studio</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li><li>Omnichannel for Customer Service</li> </ul> |
+| <ul><li>Dataverse</li><li>Dynamics 365 apps</li></ul> | <ul><li>Canvas app</li><li>[Component library](/power-apps/maker/canvas-apps/component-library)</li><li>[Custom pages](/power-apps/maker/model-driven-apps/model-app-page-overview)</li><li>Power Automate</li><li>Microsoft Copilot Studio</li><li>[Dynamics 365 Customer Voice](/dynamics365/customer-voice/cv-faq#i-migrated-my-microsoft-dataverse-environment-from-one-tenant-to-another-but-i-dont-see-my-existing-projects-when-i-login-to-dynamics-365-customer-voice-in-the-new-tenant)</li><li>Omnichannel for Customer Service</li><li>[Dynamics 365 Contact Center](https://www.microsoft.com/dynamics-365/products/contact-center?msockid=01d9fe88c1d36d8b0d96eba0c0696ccb)</li> </ul> |
 
 <sup>*</sup>There may be potential data loss during migration and more steps required. [Confirm if any of the solutions below are installed in the environments to be migrated, as these may require additional steps either from you or Support.](#confirm-if-any-of-the-solutions-below-are-installed-in-the-environments-to-be-migrated-as-these-may-require-more-steps-either-from-you-or-support)
 
@@ -125,7 +128,7 @@ You must provide the following information:
 
 ### Steps to create the mapping file
  
-For full access users:
+#### For full access users:
 1. Access the source environment.
 2. Use Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
@@ -146,7 +149,10 @@ For full access users:
 
 13.	Save the file as a CSV.
 
-For administrative access users: 
+> [!Note]
+> Application users can't be migrated. Learn more about application users in [System and application users](system-application-users.md).
+
+#### For administrative access users: 
 1. Access the source environment.
 2. Use Advanced Find (![Screen shot of Advanced Find button.](../admin/media/advanced-find-button2.png "Screen shot of Advanced Find button")) and look for users.
 3. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.

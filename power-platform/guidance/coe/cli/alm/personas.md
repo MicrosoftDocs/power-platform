@@ -5,7 +5,7 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 ms.custom: ""
-ms.date: 05/23/2023
+ms.date: 09/26/2024
 
 ms.topic: "article"
 ms.reviewer: sericks
@@ -61,9 +61,9 @@ Reviews the entire ALM process and components and verifies it matches with the s
 
 ### Administrators
 
-#### Power Platform tenant administrator
+#### Power Platform administrator
 
-Global right to Power Platform administration. Manages environments (create, update, delete).
+Using Power Platform administrator rights allocated to manage environments (create, update, delete).
 
 ```bash
 coe alm generate install -o quickstart.json

@@ -2,11 +2,11 @@
 title: Power Pages activity logging (preview)
 description: Learn how to view Power Pages logs in the Microsoft Purview compliance portal.
 ms.topic: conceptual
-ms.date: 12/22/2023
+ms.date: 11/13/2024
 author: vamseedillimsft
 ms.subservice: admin
 ms.author: vamseedilli
-ms.reviewer: kkendrick 
+ms.reviewer: dmartens 
 search.audienceType: 
   - admin
 ---
@@ -71,5 +71,6 @@ The following are some of the user events you can audit.
 
 ### See also
 
+- [Power Pages activity logging (video)](https://youtu.be/pBKkkkPpX0I?feature=shared)
 - [Search the audit log in Microsoft Purview](/purview/audit-new-search#get-started-with-audit-new-search)
 - [View Power Platform administrative logs in Microsoft Purview (preview)](admin-activity-logging.md)

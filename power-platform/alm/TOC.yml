@@ -73,6 +73,15 @@
       items:
         - name: Manage solutions using PowerShell
           href: powershell-api.md
+        - name: Source control integration (preview)
+          href: git-integration/overview.md
+          items:
+            - name: Dataverse Git integration setup
+              href: git-integration/connecting-to-git.md
+            - name: Source control operations
+              href: git-integration/source-control-operations.md   
+            - name: Frequently asked questions
+              href: git-integration/faqs.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
@@ -98,6 +107,10 @@
               href: run-pipeline.md
             - name: Enable cross-geo solution deployments
               href: enable-cross-geo-solution-deployments.md
+            - name: Import solutions from a pipelines host
+              href: import-from-pipelines-host.md
+            - name: Set a default pipelines host
+              href: set-a-default-pipelines-host.md
             - name: Redeploy past solution versions
               href: redeploy-past-solution-versions.md
             - name: Use Copilot to generate deployment notes in pipelines

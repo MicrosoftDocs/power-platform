@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 06/06/2023
+ms.date: 09/26/2024
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: sericks
@@ -40,7 +40,7 @@ The Center of Excellence (CoE) Starter Kit works without this flow, but the usag
 
 1. Your tenant must have a subscription that supports unified audit logging. For more information, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-1. A Global Admin is required to configure the Microsoft Entra app registration.
+1. Microsoft Entra permissions may be required to configure the Microsoft Entra app registration. Depending on your Entra configuration, this could be an **Application Developer** role or higher. Review the [Least privileged roles by task in Microsoft Entra ID](/entra/identity/role-based-access-control/delegate-by-task) fore more guidance.
 
 The Office 365 Management APIs use Microsoft Entra ID to provide authentication services that you can use to grant rights for your application to access them.
 

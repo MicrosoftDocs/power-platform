@@ -3,7 +3,7 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 09/18/2024
+ms.date: 12/11/2024
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -38,6 +38,7 @@ Most of these users are hidden from user views but they can be found by using th
 | App Management User | capam@microsoft.com | To allow App Management Services to query tenant details such as Tenant country | System admin |
 | CAP Package Deployer Service DVClient | CAPPackageDeployerServiceDVClient@onmicrosoft.com | To import solutions into customer environments for customer-driven installations from Power Platform admin center. | System admin |
 | Dataverse Dataverse search | RelevanceSearch@onmicrosoft.com | To fetch table data and metadata for Dataverse search feature | System admin |
+| # D365WorkAssignment<br> # D365WorkAssignment2<br> # D365WorkAssignment3 | D365WorkAssignment@onmicrosoft.com<br> D365WorkAssignment2@onmicrosoft.com<br> D365WorkAssignment3@onmicrosoft.com | Service application to perform data integration between Dataverse and the Work assignemnt feature in Dynamics 365 Sales. | Sales Work Assignment API Access and Sales Work Assignment API Extended Access |
 | Dynamics 365 Office Data Service | diofficedata@microsoft.com |Service Application to perform data integration between Microsoft Dataverse and Microsoft 365. | DataLakeWorkspaceAppAccess |
 | Dynamics 365 Athena-CDStoAzuredatalake | Dynamics365Athena-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Microsoft Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
 | Dynamics 365 Athena2-CDStoAzuredatalake | Dynamics365Athena2-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data integration between Dataverse to Azure Data Lake. |DataLakeWorkspaceAppAccess |
@@ -54,6 +55,9 @@ Most of these users are hidden from user views but they can be found by using th
 | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | # CCADataAnalyticsML | CCADAAdmins@onmicrosoft.com | To allow AI insights in customer care apps like Customer Service, Field Service, etc. | System Customizer and System admin |
 | # CDSReportService | CDSReportService@onmicrosoft.com | To allow user to run reports. |N/A |
+| # CTQHotPath  | CTQHotpath@onmicrosoft.com         | To perform data integration between Omnichannel for Customer Service and Dataverse. | ServiceReader, ServiceWriter                                                           |
+| # CTQWarmPath  | CTQWarmpath@onmicrosoft.com        | To perform data integration between Omnichannel for Customer Service and Dataverse. | Omnichannel supervisor, Omnichannel agent, Omnichannel administrator, ServiceReader, ServiceWriter, ServiceDelete |
+| # CTQDiagnostics | CTQDiagnostics@onmicrosoft.com     | To generate insights for Unified Routing.                                   | ServiceReader, ServiceWriter  |                                                  
 | Power Platform Dataflows | ppdfcdsclient@onmicrosoft.com | Power Platform Dataflows service application to perform data preparation and loading into Dataverse and Azure Data Lake. | System Administrator
 | AIBuilderProd | aibuilderfpapp@onmicrosoft.com | To perform authentication for AI Builder. | System admin |
 | PowerAutomate-ProcessMining | PowerAutomate-ProcessMining<br />@onmicrosoft.com | To allow Process Advisor service to interact with Dataverse. | Environment Maker, Process Advisor Application |
