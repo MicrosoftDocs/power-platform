@@ -69,7 +69,7 @@ To configure managed identity, open the user-assigned managed identity or Micros
 7. Select issuer as **Other issuer**. 
 8. Enter the following information:
    
-    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[environment ID prefix].[environment ID suffix].enviornment.api.powerplatform.com/sts`     
+    - **Issuer**: The URL of the token issuer. Format similar to this: `https://[environment ID prefix].[environment ID suffix].environment.api.powerplatform.com/sts`     
       - **Environment ID prefix** - The environment ID, except for the last two characters.
       - **Environment ID suffix** - The last two characters of the environment ID.
       
