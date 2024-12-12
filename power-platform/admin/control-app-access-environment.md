@@ -16,9 +16,9 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-You can protect against data exfiltration by managing and controlling what apps can run in your Dataverse environment. Data exfiltration safeguards help prevent sensitive information from unauthorized removal or extraction from your environment. This allows a business to maintain business continuity and comply with regulatory requirements.
+Protect against data exfiltration by controlling which apps can run in your Dataverse environment. These safeguards prevent unauthorized removal of sensitive information, helping your business maintain continuity and comply with regulations.
 
-You can configure which apps are allowed or blocked in your environment. Malicious users can’t create or use unapproved apps to export sensitive data out of the environment.
+Configure which apps are allowed or blocked in your environment. This prevents malicious users from using unapproved apps to export sensitive data.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -26,7 +26,7 @@ You can configure which apps are allowed or blocked in your environment. Malicio
 
 App access control is performed at the Dataverse authentication layer. Learn more in [Authenticating to Power Platform services](security/authenticate-services.md). Dataverse authentication validates the client app ID in the user’s token against a list of allowed and blocked apps configured for the environment. The authentication either grants or denies the user’s app access to the environment.  
 
-There are four different ways that a user can authenticate.
+Users can authenticate in four ways:
 
 - **User context**
 
@@ -44,18 +44,16 @@ There are four different ways that a user can authenticate.
 
     Your custom app authenticates using your Azure app registration’s certificate or user-token.  
 
-Here are examples of how client app access control works in the _user_ and _application_ context authentication.
+Examples of how client app access control works in the _user_ and _application_ context authentication:
 
 - **User context with user token**
 
   - For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
   - A user token can also be obtained for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
-      > [!TIP]
-      > We don’t recommend allowing a public client unless it's needed temporarily.
-      > 
-      > [!Note]
-      >   The **00000007-0000-0000-c000-000000000000** Dataverse app is automatically allowed in all the environments. User access to the Dataverse environment can be managed with either assigning the appropriate user license and/or assigning a Dataverse security role to the user.
+      > [!NOTE]
+      > - We don’t recommend allowing a public client unless it's needed temporarily.
+      > - The **00000007-0000-0000-c000-000000000000** Dataverse app is automatically allowed in all the environments. User access to the Dataverse environment can be managed with either assigning the appropriate user license and/or assigning a Dataverse security role to the user.
 
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
 
@@ -98,7 +96,7 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications might be different between different environments. These apps are automatically loaded into your environment.
 
 > [!NOTE]
-> The following list of apps are preauthorized to run in a Dataverse environment.
+> The following apps are preauthorized to run in a Dataverse environment:
 
 - All Microsoft apps that are preauthorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
 - Application users apps. Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
@@ -107,7 +105,7 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 
 #### Add or remove applications from the list
 
-To **add** an application to the list:
+To add an application to the list:
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace 'OrgURL' with your own environment URL, then press **Enter**.
@@ -128,10 +126,10 @@ To **add** an application to the list:
 
    :::image type="content" source="media/control-client-app-access-to-environment/new-application-form.png" alt-text="Screenshot showing the location of the ApplicationId and Name fields. The image also shows where the Save button is located.":::
 
-To **remove** an application from the list:
+To remove an application from the list:
 
 1. Select an app.
-1. Select the **Delete** button.
+1. Select **Delete**.
 
 > [!NOTE]
 > If you removed a system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
@@ -281,7 +279,7 @@ Start blocking apps that are blocked and allow only approved apps. For apps that
 
 ### Turn off the app access control feature
 
-Turn off the app access control feature. With this setting, there are no restrictions on apps that run in an environment. 
+Turn off the app access control feature to remove restrictions on apps running in an environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
