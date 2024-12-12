@@ -1,11 +1,11 @@
 ---
-title: "Responding to Data Subject Rights (DSR) requests for Power Apps customer data"
-description: "Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support privacy compliance."
+title: Responding to Data Subject Rights (DSR) requests for Power Apps customer data
+description: Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support privacy compliance.
 author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/02/2024
+ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -86,7 +86,7 @@ For guidance on how to discover personal data stored by the Microsoft Copilot St
 ### Step 4: Find personal data for the user in the Microsoft 365 admin center
 Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center.
 
-For guidance on how to discover feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
+For guidance on how to discover feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra user administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 > It's recommended that admins complete this step for a Power Apps user.

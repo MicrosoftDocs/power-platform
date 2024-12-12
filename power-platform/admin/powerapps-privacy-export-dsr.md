@@ -1,11 +1,11 @@
 ---
-title: Responding to Data Subject Rights (DSR) requests to export Power Apps customer data | Microsoft Docs
+title: Responding to Data Subject Rights (DSR) requests to export Power Apps customer data 
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to export Power Apps customer data.
 author: sericks007
 ms.reviewer: paulliew
 ms.component: pa-admin
 ms.topic: conceptual
-ms.date: 08/07/2024
+ms.date: 12/09/2024
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -52,7 +52,7 @@ To perform the administration operations outlined in this document using the Pow
 
 * A paid Power Apps plan or a Power Apps trial. You can sign-up for a 30-day trial at [https://make.powerapps.com/trial](https://make.powerapps.com/trial). Trial licenses can be renewed if they've expired.
 
-* [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) permissions if you need to search through another user's resources. (Note that Environment Admins only have access to those environments and environment resources for which they have permissions.)
+* [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) role if you need to search through another user's resources. (Note that environment administrators only have access to those environments and environment resources for which they have permissions.)
 
 ## Step 1: Export personal data contained within environments created by the user
 
@@ -89,7 +89,7 @@ Users can be assigned permissions (such as Environment Admin, Environment Maker,
 #### Power platform admin center
 Administrators can export a user's environment permissions from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) to review all environments created within your organization.
 
 2. Select both **Environment Admin** and **Environment Maker** separately, and then using the search bar, search for the user's name.
 
@@ -121,7 +121,7 @@ A user can export an app from the [Power Apps portal](https://make.powerapps.com
 ### Power Platform admin center
 An administrator can export apps created by a user starting from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) to be able to review all environments created within your organization.
 
 2. Select **Resources**, and then select **Power Apps**.
 
@@ -148,7 +148,7 @@ Get-PowerAppRoleAssignment | ConvertTo-Json | Out-File -FilePath "UserDetails.js
 ### Power Platform admin center 
 Administrators can export app roles assignments for a user from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by following these steps:
 
-1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft 365 Global admin](/microsoft-365/admin/add-users/about-admin-roles) or a [Microsoft Entra Global Administrator](/entra/identity/role-based-access-control/permissions-reference) to be able to review all environments created within your organization.
+1. From the Power Platform admin center, select each environment in your organization. You must be a [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) to be able to review all environments created within your organization.
 
 2. For each environment, select **Resources**, and then select **Power Apps**.
 
@@ -304,7 +304,7 @@ Power Apps capabilities build upon Microsoft Copilot Studio.  Microsoft Copilot 
 >  We recommend that administrators complete this step for Power Apps users.
 
 ## Step 13: Find personal data for the user in the Microsoft 365 admin center
-Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra global administrator](/entra/identity/role-based-access-control/permissions-reference) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
+Some feedback mechanisms in Power Apps are integrated with the Microsoft 365 admin center. For guidance on how to export feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control#how-can-i-see-my-users-feedback). A [Microsoft Entra Power Platform Administrator](/entra/identity/role-based-access-control/permissions-reference#power-platform-administrator) or [Microsoft Entra Dynamics 365 Administrator](/entra/identity/role-based-access-control/permissions-reference#dynamics-365-administrator) is able to manage this data within the Microsoft 365 admin center without the need for Microsoft 365 or Office licenses.
 
 > [!IMPORTANT]
 >  We recommend that administrators complete this step for Power Apps users.
