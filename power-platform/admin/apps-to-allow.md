@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 12/09/2024
+ms.date: 12/12/2024
 search.audienceType: 
   - admin
 ---
@@ -17,6 +17,8 @@ search.audienceType:
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 The following apps are Microsoft first-party services. This list of apps can be different in your environment dependent on the type of environment and the solutions that were installed in the environment. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md). There are certain apps that are automatically allowed in all the environments, eg Dataverse, and there are certain apps that you can manage their access by either assigning the appropriate user license or assigning the respective Dataverse security role, for example to use the [Powerapps maker portal](https://make.powerapps.com/environments), to access this portal, your maker must be assigned with either a Environment Maker, System Customizer, or System Administrator security role. Apps that are automatically allowed in all the environments do not show up in the list on the Security hub page.
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 | Application ID | Application name |
 |----------------|------------------|
