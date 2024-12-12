@@ -49,11 +49,13 @@ Here are examples of how client app access control works in the _user_ and _appl
 - **User context with user token**
 
   - For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
-  - To allow or block session authentication used by a Unified Interface (UCI), the admin must configure the **00000007-0000-0000-c000-000000000000** Dataverse app.
   - A user token can also be obtained for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
       > [!TIP]
       > We don’t recommend allowing a public client unless it's needed temporarily.
+      > 
+      > [!Note]
+      >   The **00000007-0000-0000-c000-000000000000** Dataverse app is automatically allowed in all the environments. User access to the Dataverse environment can be managed with either assigning the appropriate user license and/or assigning a Dataverse security role to the user.
 
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
 
