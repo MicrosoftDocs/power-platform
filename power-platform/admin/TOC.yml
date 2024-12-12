@@ -496,7 +496,7 @@
                     href: control-app-access-environment.md
                   - name: Commonly used Microsoft first-party services and portal apps (preview)
                     href: apps-to-allow.md
-                - name: Threat detection 
+              - name: Threat detection 
                 href: security/threat-detection.md
               - name: Compliance 
                 href: security/compliance.md
