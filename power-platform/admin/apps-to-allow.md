@@ -16,7 +16,9 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The following apps are Microsoft first-party services. This list of apps can be different in your environment dependent on the type of environment and the solutions that were installed in the environment. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md). There are certain apps that are automatically allowed in all the environments, eg Dataverse, and there are certain apps that you can manage their access by either assigning the appropriate user license or assigning the respective Dataverse security role, for example to use the [Powerapps maker portal](https://make.powerapps.com/environments), to access this portal, your maker must be assigned with either a Environment Maker, System Customizer, or System Administrator security role. Apps that are automatically allowed in all the environments do not show up in the list on the Security hub page.
+The following apps are Microsoft first-party services. This list of apps may be different in your environment depending on the type of environment and the solutions that were installed in the environment. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md). 
+
+There are certain apps that are automatically allowed in all the environments, such as Dataverse. There are certain apps that you can manage their access by either assigning the appropriate user license or assigning the respective Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to either an Environment Maker, System Customizer, or System Administrator security role. Apps that are automatically allowed in all the environments aren't listed on the **Security** page.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -298,8 +300,3 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | 8c04f0eb-27fc-44cc-9e48-914b9202890a | ApolloProdFirstParty |
 | d4a55fa7-2c20-434d-8942-689200452979 | DynamicsCRMCortanaCacheService@microsoft.com |
 | e548fb5c-c385-41a6-a31d-6dbc2f0ca8a3 | Microsoft Dynamics Jobs Service |
-
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
-
-Table goes here.
