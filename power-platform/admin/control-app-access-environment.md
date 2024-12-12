@@ -28,16 +28,20 @@ App access control is performed at the Dataverse authentication layer. Learn mor
 
 There are four different ways that a user can authenticate.
 
-- **User context**  
+- **User context**
+
     The user signs in to the system, such as Dynamics 365 Sales, with their credentials.
-   
-- **Application context with user impersonation** <br>
+
+- **Application context with user impersonation**
+
     The user signs in to a first-party Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
-   
+
 - **First-party app with service-to-service call (application context)**  
+
     A first-party Microsoft app makes a call to Dataverse using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
-   
+
 - **Third-party apps registered in your Azure portal’s app registration**  
+
     Your custom app authenticates using your Azure app registration’s certificate or user-token.  
 
 Here are examples of how client app access control works in the _user_ and _application_ context authentication.
@@ -50,15 +54,16 @@ Here are examples of how client app access control works in the _user_ and _appl
 
       > [!TIP]
       > We don’t recommend allowing a public client unless it's needed temporarily.
-      
+
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
- 
+
 - **Impersonation using a first-party app**
   
   - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
 Client app access control isn’t applied to the following apps:
+
 - **First-party apps with service-to-service calls (application context)** - Learn more in [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md).
 - **Partner apps with service-to-service calls** - To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
 
@@ -67,14 +72,18 @@ Client app access control isn’t applied to the following apps:
 Complete the following prerequisites.
 
 ### Verify your role
+
 There are two Power Platform related service admin roles you can assign to provide a high level of admin management:
+
 - Power Platform admin
 - Dynamics 365 admin
 
 ### Verify that your environment is a Managed Environment
+
 Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
 
 ### Turn on auditing in the environment
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
 1. In the navigation pane, select **Environments**. Then select your specific environment.
 1. Select **Settings** in the command bar.
@@ -83,6 +92,7 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 1. Select **Save**.
 
 ### Review the application list in the environment
+
 There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications may be different between different environments. These apps are automatically loaded into your environment.
 
 > [!NOTE]
@@ -91,9 +101,10 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 - All Microsoft apps that are preauthorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
 - Application users apps. Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
 - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
-- All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
+- All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user).
 
 #### Add or remove applications from the list
+
 To **add** an application to the list:
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
@@ -102,12 +113,13 @@ To **add** an application to the list:
    ```http  
    https:/<OrgURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
    ```
+
     The form shows the list of applications that is loaded in your environment.
 
 1. Select **+ New**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/new-application.png" alt-text="Screenshot that shows the location of the New button at the URL destination.":::
-   
+
 1. On the new screen, enter an **ApplicationId**.
 1. Enter a **Name**.
 1. Select **Save**.
@@ -116,8 +128,8 @@ To **add** an application to the list:
 
 To **remove** an application from the list:
 
-1.  Select an app.
-2.  Select the **Delete** button.
+1. Select an app.
+1. Select the **Delete** button.
 
 > [!NOTE]
 > If you removed a system app that was preloaded in the environment, the app can automatically be restored by the system. You might want to delete only the apps that you have added.
@@ -169,15 +181,17 @@ These apps are powerful exporters of data. Blocking them prevents possible data 
 | 2ad88395-b77d-4561-9441-d0e40824f9bc | PowerShell |
 | a672d62c-fc7b-4e81-a576-e60dc46e951d | Power BI |
 
-## Recommended steps 
+## Recommended steps
 
 1. [Turn on audit mode](#turn-on-audit-mode) in your nonproduction environment.
 1. Review the audit log for the apps that are running in the environment to get the list of apps whose access control you want to manage.
 1. Repeat steps 1-2 in your production environment.
 1. Confirm the list of apps that you want to allow to run in the environment.
- 
+
 ## Modes of app access control
+
 There are four different modes:
+
 - [Turn on audit mode](#turn-on-audit-mode)
 - [Turn on enabled mode](#turn-on-enabled-mode)
 - [Turn on enabled for roles mode](#turn-on-enabled-for-roles-mode)
@@ -202,7 +216,7 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 > [!NOTE]
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
-> 
+>
 > In audit mode, you must select at least one application to allow access. However, app access control isn’t enforced in audit mode. You get a list of apps accessing the environment whether or not they’re allowed or denied access.
 
 The audit settings for an environment must be allowed, including the **Log access** option.
@@ -217,7 +231,7 @@ The audit settings for an environment must be allowed, including the **Log acces
 1. Select the dropdown arrow near the **Event** heading, then find and select **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
 
    :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
-   
+
 1. Select **OK**.
 
    Your filtered audits appear.
@@ -243,7 +257,8 @@ Start blocking apps that are blocked and allow only approved apps. You can selec
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
 
 ### Turn on enabled for roles mode
-Start blocking apps that are blocked and allow only approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps. 
+
+Start blocking apps that are blocked and allow only approved apps. For apps that are allowed access, you can assign security roles to restrict who can run those apps in the environment. Only users assigned with a selected security role can run the apps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
@@ -276,7 +291,7 @@ Turn off the app access control feature. With this setting, there are no restric
 1. Select **Save**.
 1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature. Close the panel when you're done.
 
-> [!Note]
+> [!NOTE]
 > If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the app access control feature is turned off to **Disabled**. There are no app restrictions in this environment.
 
 ## Error message: App denied user error
@@ -286,6 +301,7 @@ Users see the following error message if they try to run an app not allowed:
 *Access to the Dataverse API is restricted for this application ID.*
 
 ## Commonly used Microsoft first-party services and portal apps
+
 The following apps are Microsoft first-party services. This list of apps can be different depending on what types of environment you have and what solutions were installed. These apps are automatically allowed in all the environments where they exist. To block your users from using these apps, you can either remove the required user license or remove their Dataverse security role assignment, for example to use the [Powerapps maker portal](https://make.powerapps.com/environments), your maker must be assigned with either a Environment Maker, System Customizer, or System Administrator security role.  
 
 | Application ID | Application name |
@@ -310,7 +326,6 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | 8c1a9936-578e-4d13-9bd9-9afe53ef7de8 | Finance Copilot |
 | a59cef1e-2e32-4703-8dab-810d9807efeb | ccibots |
 | 96ff4394-9197-43aa-b393-6a41652e21f8 | ccibotsprod |
-
 
 ## Related information
 
