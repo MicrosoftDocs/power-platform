@@ -32,13 +32,13 @@ There are four different ways that a user can authenticate.
     The user signs in to the system, such as Dynamics 365 Sales, with their credentials.
    
 - **Application context with user impersonation** <br>
-    The user signs in to a first-party, Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
+    The user signs in to a first-party Microsoft app. The app makes a call to Dataverse with its application token representing the user. Learn more in [Impersonate another user using the Web API](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api).
    
 - **First-party app with service-to-service call (application context)**  
-    A first-party, Microsoft app makes a call to Dataverse, using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
+    A first-party Microsoft app makes a call to Dataverse using its application token. These first-party apps are registered and provide internal services, like email sync, which typically run in the background without any user interaction.
    
 - **Third-party apps registered in your Azure portal’s app registration**  
-    Your custom app authenticates, using your Azure app registration’s certificate or user-token.  
+    Your custom app authenticates using your Azure app registration’s certificate or user-token.  
 
 Here are examples of how client app access control works in the _user_ and _application_ context authentication.
 
@@ -59,9 +59,8 @@ Here are examples of how client app access control works in the _user_ and _appl
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
 Client app access control isn’t applied to the following apps:
-- First-party apps with service-to-service calls (application context), learn more in [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md).
-- Partner apps with service-to-service calls.
-    To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
+- **First-party apps with service-to-service calls (application context)** - Learn more in [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md).
+- **Partner apps with service-to-service calls** - To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
 
 ## Prerequisites
 
@@ -84,18 +83,18 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 1. Select **Save**.
 
 ### Review the application list in the environment
-There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications can be different between different environments. These apps are automatically loaded into your environment.
+There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications may be different between different environments. These apps are automatically loaded into your environment.
 
 > [!NOTE]
 > The following list of apps are preauthorized to run in a Dataverse environment.
->
-> - All Microsoft apps that are preauthorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
-> - Application users app - Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
-> - All legacy apps that can dynamically acquire On-Behalf-Of tokens.
-> - All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
+
+- All Microsoft apps that are preauthorized to acquire On-Behalf-Of tokens. Learn more in [Microsoft identity platform and OAuth2.0 On-Behalf-Of flow](/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
+- Application users apps. Learn more in [Special system users and application users](/power-platform/admin/system-application-users).
+- All legacy apps that can dynamically acquire On-Behalf-Of tokens.
+- All apps with the **prvActOnBehalfOfAnotherUser** privilege and those using headers to impersonate users. Learn more in [Impersonate another user](/dynamics365/customerengagement/on-premises/developer/org-service/impersonate-another-user?view=op-9-1).
 
 #### Add or remove applications from the list
-To **add** an application from the list:
+To **add** an application to the list:
 
 1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
 1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace 'OrgURL' with your own environment URL, then press **Enter**.
@@ -192,14 +191,14 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Security**.
-1. Select **Access controls** in the **Security** section.
-1. Select **App access control** in the **Access controls** section.
+1. In the **Security** section, select **Access controls**.
+1. in the **Access controls** section, select **App access control**
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select the **AuditMode** option in the **Access control** dropdown list.
 1. Select a Dataverse application, then select the **Allow** option that's located above the grid.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn on auditing.  Close the panel when you're done turning on the audit mode for your environments.
+1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn on auditing.  Close the panel when you're done turning on audit mode for your environments.
 
 > [!NOTE]
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
