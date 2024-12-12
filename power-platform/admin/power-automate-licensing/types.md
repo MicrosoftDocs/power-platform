@@ -131,7 +131,7 @@ The following table details each license [entitlement](#license-entitlements):
 |----------|-------|---------------------|--------------|
 |__Applied to__|User|- Cloud flow <br>- Machine|- Hosted machine <br>- Hosted machine group<br>- Cloud flow <br>- Machine|
 |__<b>Capacity Limits</b>__||||
-|__Daily PPR limit<sup>1</sup>__|40k per user|250k per Process license<sup>2</sup>|250k per Hosted Process license<sup>2</sup>|
+|__Daily PPR limit<sup>1</sup>__|40k per user|250k per Process license<sup>2</sup>|250k per Hosted Process license<sup>3</sup>|
 |__Process mining data storage__|50 MB per license<sup>4</sup>|Not included|Not included|
 |__AI Builder credits__|5000 per month|5000 per month|5000 per month|
 |__Dataverse database storage__|250 MB per license|50 MB per license|50 MB per license|
