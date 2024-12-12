@@ -490,6 +490,12 @@
                 href: security/network-security.md
               - name: Access control 
                 href: security/access-control.md
+                  - name: App access control 
+                    items: 
+                    - name: Control which apps are allowed in your environment (preview)
+                      href: control-app-access-environment.md
+                    - name: Commonly used Microsoft first-party services and portal apps (preview)
+                      href: apps-to-allow.md
               - name: Threat detection 
                 href: security/threat-detection.md
               - name: Compliance 
