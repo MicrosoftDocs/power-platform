@@ -1,6 +1,6 @@
 ---
 title: Commonly used Microsoft first-party services and portal apps (preview)
-description: Learn more about what apps you may want to allow.
+description: Learn more about what apps you might want to allow.
 author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
@@ -16,9 +16,9 @@ search.audienceType:
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-The following apps are Microsoft first-party services. This list of apps may be different in your environment depending on the type of environment and the solutions that were installed in the environment. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md).
+The following apps are Microsoft first-party services. This list of apps might be different in your environment depending on the type of environment and the solutions that were installed in the environment. Most of these apps can be allowed or blocked using the [client app access control feature](control-app-access-environment.md).
 
-There are certain [apps that are automatically allowed](#commonly-used-microsoft-first-party-services-and-portal-apps-preview) in all environments, such as Dataverse.. There are certain apps that you can manage their access by either assigning the appropriate user license or assigning the respective Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to either an Environment Maker, System Customizer, or System Administrator security role. Apps that are automatically allowed in all the environments aren't listed on the **Security** page.
+There are certain [apps that are automatically allowed](#commonly-used-microsoft-first-party-services-and-portal-apps-preview) in all environments, such as Dataverse. There are certain apps that you can manage their access by either assigning the appropriate user license or assigning the respective Dataverse security role. For example, to use the Power Apps maker portal, a maker must be assigned to either an Environment Maker, System Customizer, or System Administrator security role. Apps that are automatically allowed in all the environments aren't listed on the **Security** page.
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 

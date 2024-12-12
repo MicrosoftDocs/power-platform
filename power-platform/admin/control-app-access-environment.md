@@ -59,7 +59,7 @@ Here are examples of how client app access control works in the _user_ and _appl
 
 - **Impersonation using a first-party app**
   
-  - For scenarios like Power Automate where a service-to-service application token is used with a user impersonation, we validate if the corresponding application ID is allowed or blocked.
+  - In scenarios like Power Automate, where a service-to-service application token is used with user impersonation, we check if the application ID is allowed or blocked.
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
 Client app access control isn’t applied to the following apps:
@@ -93,7 +93,7 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 
 ### Review the application list in the environment
 
-There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications may be different between different environments. These apps are automatically loaded into your environment.
+There’s a set of applications that are preregistered to run in a Dataverse environment. This list of applications might be different between different environments. These apps are automatically loaded into your environment.
 
 > [!NOTE]
 > The following list of apps are preauthorized to run in a Dataverse environment.
@@ -210,9 +210,9 @@ Using this *audit log* list, you can determine which apps you want to allow or b
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select the **AuditMode** option in the **Access control** dropdown list.
-1. Select a Dataverse application, then select the **Allow** option that's located above the grid.
+1. Select a Dataverse application, then select the **Allow** option located above the grid.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn on auditing.  Close the panel when you're done turning on audit mode for your environments.
+1. The environment list is displayed again. Repeat the procedure for each environment where you want to turn on auditing. Close the panel when you're done turning on audit mode for your environments.
 
 > [!NOTE]
 > Audit mode might take up to an hour to take effect, after you update the configuration settings.
@@ -251,7 +251,7 @@ Start blocking apps that are blocked and allow only approved apps. You can selec
    - **Allow** to allow access to the app.
    - **Block** to deny access to the app.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to start blockig apps that are blocked and allow approved apps.  Close the panel when you're done.
+1. The environment list is displayed again. Repeat the procedure for each environment where you want to start blocking apps that are blocked and allow approved apps. Close the panel when you're done.
 
    > [!NOTE]
    > Enabled mode might take up to an hour to take effect, after you update the configuration settings.
@@ -267,12 +267,12 @@ Start blocking apps that are blocked and allow only approved apps. For apps that
 1. Select the environment where you want to turn on the app access control feature.
 1. Select the **Set up app access control** button.
 1. Select **Enabled for roles** in the **Access control** dropdown list.
-1. Once your app is selected, select the **Manage security roles** option that's located above the grid.
+1. Once your app is selected, select the **Manage security roles** option located above the grid.
 1. Select one or more desired security roles.
 1. Select **Save**.
 1. A window appears, asking you to confirm the roles that you selected. Select **Save**.
 1. The list of apps is displayed again. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to assign security roles. Close the panel when you're done.
+1. The environment list is displayed again. Repeat the procedure for each environment where you want to assign security roles. Close the panel when you're done.
 
 > [!NOTE]
 > The enabled for roles mode might take up to an hour to take effect, after you update the configuration settings.
@@ -289,7 +289,7 @@ Turn off the app access control feature. With this setting, there are no restric
 1. Select the **Set up app access control** button.
 1. Select **Disabled** in the **Access control** dropdown list.
 1. Select **Save**.
-1. The environment list is displayed again. Repeat the procuedre for each environment where you want to turn off the feature. Close the panel when you're done.
+1. The environment list is displayed again. Repeat the procedure for each environment where you want to turn off the feature. Close the panel when you're done.
 
 > [!NOTE]
 > If you set some apps to **Allowed** or **Blocked**, you don’t need to remove the setting when the app access control feature is turned off to **Disabled**. There are no app restrictions in this environment.
@@ -302,7 +302,7 @@ Users see the following error message if they try to run an app not allowed:
 
 ## Commonly used Microsoft first-party services and portal apps
 
-The following apps are Microsoft first-party services. This list of apps can be different depending on what types of environment you have and what solutions were installed. These apps are automatically allowed in all the environments where they exist. To block your users from using these apps, you can either remove the required user license or remove their Dataverse security role assignment, for example to use the [Powerapps maker portal](https://make.powerapps.com/environments), your maker must be assigned with either a Environment Maker, System Customizer, or System Administrator security role.  
+The following apps are Microsoft first-party services. This list of apps can be different depending on what types of environment you have and what solutions were installed. These apps are automatically allowed in all the environments where they exist. To block your users from using these apps, you can either remove the required user license or remove their Dataverse security role assignment. For example, to use the [Power Apps maker portal](https://make.powerapps.com/environments), your maker must be assigned with either an Environment Maker, System Customizer, or System Administrator security role.  
 
 | Application ID | Application name |
 |----------------|------------------|
