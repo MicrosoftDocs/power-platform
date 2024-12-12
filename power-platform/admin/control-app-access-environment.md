@@ -7,7 +7,7 @@ ms.reviewer: sericks
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 10/31/2024
+ms.date: 12/12/2024
 search.audienceType: 
   - admin
 ---
@@ -59,7 +59,7 @@ Here are examples of how client app access control works in the _user_ and _appl
   - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
 
 Client app access control isn’t applied to the following apps:
-- First-party apps with service-to-service calls (application context), see [Microsoft first-party apps](/power-platform/admin/control-app-access-environment.md#commonly-used-microsoft-first-party-services-and-portal-apps).
+- First-party apps with service-to-service calls (application context), learn more in [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md).
 - Partner apps with service-to-service calls.
     To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
 
