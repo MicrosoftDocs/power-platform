@@ -116,9 +116,10 @@ Learn more in [Power Automate Hosted Process license](deep-dive-on-specific-lice
 > ***Can my organization only purchase and use capacity licenses within an environment?***
 >
 > Capacity licenses aren't meant to replace user licenses in an environment, as some essential capabilities are only available to licensed users, including creating and running automations running desktop flows attended or unattended.  create automations. Capacity licenses can grant higher [Power Platform requests (PPR)](../api-request-limits-allocations.md#request-limits-in-power-automate) to such flows built using the premium user licenses.
-> - 
-> - Allocation of a Process license to a machine (required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
-> - Multiple monitoring pages in the Power Automate portal (for example, workqueue page, machine list page, desktop flow list page, and more) are displayed only to Power Automate Premium users.
+>
+> Allocation of a Process license to a machine (required by the unattended mode) still prerequires the machine to have been registered by a Power Automate Premium user.
+>
+> Multiple monitoring pages in the Power Automate portal (for example, workqueue page, machine list page, desktop flow list page, and more) are displayed only to Power Automate Premium users.
 
 ## Compare Power Automate licenses
 
