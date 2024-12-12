@@ -48,7 +48,7 @@ In addition to Power Automate Premium or [use rights from other licenses](https:
 |License name |Power Automate Premium |
 |--------|--------|
 |**License type**|User license (paid)|
-|**Entitlements**|We recommend the Power Automate Premium license for all users, as it gives them the full set of capabilities to create both API based and desktop automations.<br><br>This license allows users to create, run, and share unlimited cloud flows (within [Power Platform requests (PPR) limits](../api-request-limits-allocations.md#dequest-limits-in-power-automate) for API-based automation (with standard, premium, and custom connectors) and to automate their legacy applications simulating a human behavior such as keyboard or mouse keys and movement (with desktop flows through robotic process automation (RPA).<br><br>More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine through an attended bot borne by the license. <br><br>Additionally, this license also includes full access to process mining capabilities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, and more.|
+|**Entitlements**|We recommend the Power Automate Premium license for all users, as it gives them the full set of capabilities to create both API based and desktop automations.<br><br>This license allows users to create, run, and share unlimited cloud flows (within [Power Platform requests (PPR) limits](../api-request-limits-allocations.md#request-limits-in-power-automate) for API-based automation (with standard, premium, and custom connectors) and to automate their legacy applications simulating a human behavior such as keyboard or mouse keys and movement (with desktop flows through robotic process automation (RPA).<br><br>More precisely regarding the [premium RPA entitlements](/power-automate/desktop-flows/premium-features), this license includes the ability for users to register their workstation, to create unlimited desktop flows, and to execute their desktop flows in attended mode on their registered machine through an attended bot borne by the license. <br><br>Additionally, this license also includes full access to process mining capabilities and the provisioning of AI Builder credits, which support AI consuming scenarios like form processing, object detection, text classification, and more.|
 
 # [**Power Automate Trial license**](#tab/power-automate-trial)
 
@@ -59,7 +59,7 @@ In addition to Power Automate Premium or [use rights from other licenses](https:
 |**License type**|User license (90 days trial)|
 |**Entitlements**|This self-assisted trial license provides a user with the same capabilities as a Power Automate Premium license (except for AI builder credits and storage capacity). <br><br>The Trial license bears the extra capability to execute their desktop flows in unattended mode on their registered machine through an unattended bot borne by the license.|
 
-Learn more in [Power Automate trial](deep-dive-on-specific-license.md#power-automate-trial-license) license.
+Learn more in [Power Automate trial license](deep-dive-on-specific-license.md#power-automate-trial-license).
 
 # [**Power Automate Free license**](#tab/power-automate-free)
 
@@ -70,7 +70,7 @@ Learn more in [Power Automate trial](deep-dive-on-specific-license.md#power-auto
 |**License type**|User license (free)|
 |**Entitlements**|Using basic Power Automate capabilities is included at no cost for work or school accounts in a Microsoft Entra tenant. The Power Automate Free license includes creating and running cloud flows (without sharing), as well as authoring and running desktop flows locally (attended). Restricted to standard connectors only.|
 
-Learn more in [Power Automate Free](deep-dive-on-specific-license.md#power-automate-free-license) license.
+Learn more in [Power Automate Free license](deep-dive-on-specific-license.md#power-automate-free-license).
 
 ---
 
@@ -90,7 +90,7 @@ Hereunder the list of available Power Automate capacity licenses:
 |--------|--------|
 |**License type**|Capacity license (paid)|
 |**Allocated automation**|- Cloud flow <br>- Standard machine|
-|**Entitlements**|When assigned to a cloud flow, a Power Automate Process license entitles it to (better performance)[https://learn.microsoft.com/power-automate/limits-and-config#performance-profiles], allows use of premium and custom connectors, and removes the need for the flow's owners to have a Power Automate Premium license or user license that includes premium connectors. Flows must be in a solution for a Process license to be assigned. <br><br>Each Process license includes up to 250,000 [Power Platform Requests](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) per 24 hours. For requests above this, support for stacking capacity from multiple Process licenses is coming soon. To ensure you purchase sufficient capacity for the flow to operate, we recommended to purchase Process licenses up to the max requests per 24 hours you anticipate from the process.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>.|
+|**Entitlements**|When assigned to a cloud flow, a Power Automate Process license entitles it to (better performance)[https://learn.microsoft.com/power-automate/limits-and-config#performance-profiles], allows use of premium and custom connectors, and removes the need for the flow's owners to have a Power Automate Premium license or user license that includes premium connectors. Flows must be in a solution for a Process license to be assigned. <br><br>Each Process license includes up to 250,000 [Power Platform Requests](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) per 24 hours. For requests above this, support for stacking capacity from multiple Process licenses is coming soon. To ensure you purchase sufficient capacity for the flow to operate, we recommended to purchase Process licenses up to the maximum requests per 24 hours you anticipate from the process.<br><br>Allocated to a machine, a Process license becomes an unattended bot. Each unattended bot can carry one unattended desktop flow run at a time<sup>1</sup>.|
 |**Will benefit**|Organizations looking to automate their business processes at scale using cloud flows or unattended desktop automations, or maintain a flow without each co-owner needing a user license.
 
 <sup>1</sup>  When an unattended run is triggered, the unattended bot securely signs into the machine on user's behalf, executes the desktop flow actions on the target applications, and then signs out of the device.
