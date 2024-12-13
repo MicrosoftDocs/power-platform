@@ -24,6 +24,7 @@ Similar to folders, _environment groups_ are designed to help administrators org
 Admins can apply various rules to groups to govern many environments in bulk, reducing manual effort and ensuring consistency. For example, admins might apply rules to security, licensing, compliance, or other facets. Specifically, the following rules are available within each environment group:
 
 - [Canvas app sharing rules](managed-environment-sharing-limits.md#canvas-app-sharing-rules)
+- [Solution-aware cloud flow sharing rules](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules)
 - [Agent sharing rules](managed-environment-sharing-limits.md#agent-sharing-rules-preview)
 - [AI-generated descriptions](/power-apps/maker/canvas-apps/save-publish-app#create-an-app-description-with-copilot-preview)
 - [Generative AI settings](geographical-availability-copilot.md)
@@ -66,15 +67,20 @@ After you create the environment group, Power Platform tenant administrators can
 
 ### The sharing limits rules
 
-You can also configure the _sharing limit_ rules for canvas apps and copilots. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps and copilots with other users. This helps ensure that each environment in the group remains a private space for individual work.
+You can also configure the _sharing limit_ rules for canvas apps, solution-aware cloud flows, and agents created in Copilot Studio. Since the environment group is intended for personal productivity, makers are restricted from sharing their canvas apps, solution-aware cloud flows, and agents with other users. This helps ensure that each environment in the group remains a private space for individual work.
 
 #### For canvas apps
 1. Select **Environment groups** in the navigation pane.
 1. Select your environment group, and then select the **Rules** tab.
 1. Select the **Sharing controls for canvas apps** rule to open its configuration panel.
 1. Select **Exclude sharing with security group**.
-1. Select **Limit total individuals who can share to** and enter the number **1** in the box.
+1. Select **Limit total individuals who can share to** and enter the desired number in the box.
 1. Select **Save**.
+
+#### For solution-aware cloud flows
+1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
+2. Unmark the **Let people share solution-aware cloud flows** option. This will turn off all sharing for solution-aware cloud flows in this environment group.
+3. Select **Save**
 
 #### For agents (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -91,12 +97,8 @@ You can also configure the _sharing limit_ rules for canvas apps and copilots. S
 1. Select the **Only share with individuals (no security groups)** option.
 1. Select the **Limit the number of viewers who can access each agent** option and enter the desired number of viewers you would like to have on the copilot.
 1. Select **Save**.
-1. Repeat these steps until all desired rules are configured and select **Publish rules**.
 
-#### For solution-aware cloud flows
-1. Select the **Sharing controls for Solution-aware cloud flows** rule to open its configuration panel.
-2. Unmark the **Let people share solution-aware cloud flows** option. This turn off all sharing for cloud flows in this environment group.
-3. Select **Save**
+Repeat these steps until all desired rules are configured and select **Publish rules**.
 
 > [!NOTE]
 > All rules are equally applied to all environments in the group.
