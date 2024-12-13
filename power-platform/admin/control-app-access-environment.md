@@ -51,25 +51,29 @@ Examples of how client app access control works in the _user_ and _application_ 
   - For all user token requests, we validate if the application ID used is part of allowed or blocked lists.
   - A user token can also be obtained for a public client for first-party and [partner apps](/power-apps/developer/data-platform/walkthrough-register-app-azure-active-directory#public-client-app-registration).
 
-      > [!NOTE]
-      > - We don’t recommend allowing a public client unless it's needed temporarily.
-      > - The **00000007-0000-0000-c000-000000000000** Dataverse app is automatically allowed in all the environments. User access to the Dataverse environment can be managed with either assigning the appropriate user license and/or assigning a Dataverse security role to the user.
+   > [!NOTE]
+   > - We don’t recommend allowing a public client unless it's needed temporarily.
+   > - The **00000007-0000-0000-c000-000000000000** Dataverse app is automatically allowed in all the environments. User access to the Dataverse environment can be managed with either assigning the appropriate user license and/or assigning a Dataverse security role to the user.
 
 - **Application context with [user impersonation](/power-apps/developer/data-platform/webapi/impersonate-another-user-web-api)**
 
 - **Impersonation using a first-party app**
   
   - In scenarios like Power Automate, where a service-to-service application token is used with user impersonation, we check if the application ID is allowed or blocked.
-  - For other scenarios where a user impersonation isn't used, no validations are currently being performed for service-to-service tokens.
+  - For other scenarios where user impersonation isn't used, no validations are currently performed for service-to-service tokens.
 
 Client app access control isn’t applied to the following apps:
 
-- **First-party apps with service-to-service calls (application context)** - Learn more in [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md).
-- **Partner apps with service-to-service calls** - To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
+- **First-party apps with service-to-service calls (application context)**
+
+    Learn more in [Commonly used Microsoft first-party services and portal apps](apps-to-allow.md).
+- **Partner apps with service-to-service calls**
+
+    To block these apps, make them inactive or delete them from the environment in the Power Platform admin center. Learn more in [Manage application users in the Power Platform admin center](manage-application-users.md).
 
 ## Prerequisites
 
-Complete the following prerequisites.
+Complete the following prerequisites:
 
 ### Verify your role
 
@@ -84,7 +88,7 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 
 ### Turn on auditing in the environment
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Environments**. Then select your specific environment.
 1. Select **Settings** in the command bar.
 1. Select **Audit and logs** > **Audit settings**.
@@ -107,14 +111,14 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 
 To add an application to the list:
 
-1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and open the web client. Copy your environment URL, for example `myname.crm.dynamics.com`.
-1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace 'OrgURL' with your own environment URL, then press **Enter**.
+1. From the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment and copy the **Environment URL** such as `contoso.crm.dynamics.com`.
+1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
 
    ```http  
-   https:/<OrgURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
+   https:/<EnvironmentURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
    ```
 
-    The form shows the list of applications that is loaded in your environment.
+    The form shows the list of applications that are loaded in your environment.
 
 1. Select **+ New**.
 
@@ -296,13 +300,13 @@ Turn off the app access control feature to remove restrictions on apps running i
 
 ## Error message: App denied user error
 
-Users see the following error message if they try to run an app not allowed:  
+Users receive the following error message if they try to run an app not allowed:  
 
 *Access to the Dataverse API is restricted for this application ID.*
 
 ## Commonly used Microsoft first-party services and portal apps
 
-The following apps are Microsoft first-party services. This list of apps can be different depending on what types of environment you have and what solutions were installed. These apps are automatically allowed in all the environments where they exist. To block your users from using these apps, you can either remove the required user license or remove their Dataverse security role assignment. For example, to use the [Power Apps maker portal](https://make.powerapps.com/environments), your maker must be assigned with either an Environment Maker, System Customizer, or System Administrator security role.  
+The following apps are Microsoft first-party services. This list of apps can be different depending on what types of environment you have and what solutions are installed. These apps are automatically allowed in all the environments where they exist. To block your users from using these apps, you can either remove the required user license or remove their Dataverse security role assignment. For example, to use the [Power Apps maker portal](https://make.powerapps.com/environments), your maker must be assigned either an Environment Maker, System Customizer, or System Administrator security role.  
 
 | Application ID | Application name |
 |----------------|------------------|
