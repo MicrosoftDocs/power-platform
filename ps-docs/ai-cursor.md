@@ -24,8 +24,8 @@ The AI cursor provides a way for you to interact with the generated data or ask 
 When content is generated, follow these steps to use the AI cursor:
 
 1. Select the AI cursor or use the keyboard shortcut **Alt + C**.
-2. Select an area or block of content to ask a question about and enter your question, or select a generated suggestion.
-3. Select on of the following:
+2. Select an area or block of content to ask a question about and enter your question. You can also select a generated suggestion.
+3. Select one of the following:
    - **Update block** to regenerate content in the selected block. You can also press **Enter** to update the block.
    - **Generate as new blueprint** to create a new blueprint.
    - **Attach data** ![attach data button](media/attach-data-button.png) to connect to or upload new [data sources](data-connections.md).

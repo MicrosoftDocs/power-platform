@@ -46,7 +46,7 @@ Use one of the following options to ask questions about your data:
     
 Your data is analyzed to create a blueprint that provides valuable insights, charts, and actionable steps.
 
-You can also start an analysis with **New workspace**. A new workspace is a blank canvas where you can explore and [ask questions](ask-question.md) related to your business. You can add business data and [ask questions about the data](ask-question.md#ask-questions-about-your-data). The workspace can be accessed from the **Home** screen.
+You can also start an analysis with **New workspace**. A new workspace is a blank canvas where you can explore and [ask questions](ask-question.md) related to your business. You can add business data and [ask questions about the data](ask-question.md#ask-questions-about-your-data). Access the workspace from the **Home** screen.
 
 For more info about uploading files and supported data files, go to [Uploading files](data-connections.md#uploading-files)
 
@@ -64,7 +64,7 @@ Legend:
 1. **Workspace name**: To rename a workspace, select the default name **Untitled** and rename it.
 1. Choose a domain, add [data](data-connections.md) and modify the [context](context-manage.md) Project "Sophia" uses to interpret information and produce blueprints.
 1. Actions you can take on the entire blueprint:
-    - **Regenerate** ![Regenerate button](media/regenerate-button.png): Regenerate the results. Select **Regenerate with new data** to replace with another data set instead of starting over. The **Regenerate** option can generate different results, but the level of difference depends on the specificity of the question asked. For example, a general question such as "tell me something interesting about my data," generates different results, whereas as question such as "show me my top 10 accounts based on last years sales numbers" generate similar results.
+    - **Regenerate** ![Regenerate button](media/regenerate-button.png): Regenerate the results. Select **Regenerate with new data** to replace with another data set instead of starting over. The **Regenerate** option can generate different results, but the level of difference depends on the specificity of the question asked. For example, a general question such as "tell me something interesting about my data" generates different results.
     - **Delete** ![Delete button](media/delete-button.png): Delete the blueprint.
     - **Copy** ![Copy button](media/copy-button.png): Copy the blueprint.
     - Provide feedback: Select ![Thumbs up](media/thumbs-up-button.png) or ![Thumbs down button](media/thumbs-down-button.png) to provide feedback on the blueprint.
