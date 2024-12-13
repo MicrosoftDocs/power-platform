@@ -100,7 +100,7 @@ $environmentId = "<your environment id>"
 Import-Module MSAL.PS
 
 # Authenticate
-$AuthResult = Get-MsalToken -ClientId '00001111-aaaa-2222-bbbb-3333cccc4444' -Scope 'https://api.powerplatform.com/.default' 
+$AuthResult = Get-MsalToken -ClientId '49676daf-ff23-4aac-adcc-55472d4e2ce0' -Scope 'https://api.powerplatform.com/.default' 
 
 
 $Headers = @{
