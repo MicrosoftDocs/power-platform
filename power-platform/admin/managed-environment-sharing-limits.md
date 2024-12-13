@@ -142,7 +142,7 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
-To remove sharing limits for solution-aware cloud flows, you can run the following script.
+To remove sharing limits for solution-aware cloud flows, run the following script.
 
 ```powershell
 # Retrieve the environment
@@ -156,7 +156,7 @@ $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType Note
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
-To remove limits on sharing your agent with security groups or individuals as Viewers, you can run the following script.
+To remove limits on sharing your agent with security groups or individuals as Viewers, run the following script.
 
 ```powershell
 # Retrieve the environment
