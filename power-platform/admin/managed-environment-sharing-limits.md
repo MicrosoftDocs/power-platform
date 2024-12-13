@@ -34,7 +34,7 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 
 | Solution-aware cloud flow sharing rules | Description |
 | --- | --- |
-| Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows with any number of individuals or security groups. <br><br> **When unselected:** Users can't share their cloud flows with any individual or security group.|
+| Let people share solution-aware cloud flows | **When selected:** Users can share solution-aware cloud flows with any number of individuals or security groups. <br><br> **When not selected:** Users can't share their cloud flows with any individual or security group.|
 
 ## Agent sharing rules (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
@@ -43,7 +43,7 @@ In Managed Environments, admins can limit how broadly users can share canvas app
 | --- | --- |
 | Let people grant **Editor** permissions when agents are shared | **When selected:** Owners and editors can share with any individual as an editor.<br><br>**When not selected:** Owners and editors can't share with an individual as an editor. This control doesn't affect the ability of owners or editors to share with viewers.  |
 | Let people grant **Viewer** permissions when agents are shared | **When selected:** Owners and editors can share with any individual as a viewer and any security group.<br><br>**When not selected:** Owners and editors can't share with an individual as a viewer, nor can they share with a security group. This control doesn't prevent them from sharing their copilots with individuals as editors. |
-| Only share with individuals (no security groups) | **When selected:** Owners and editors can only share with individuals as viewers. They can't share with a security group.<br><br>**When not selected:** Owners and editors can't share with individuals as viewers. They can't share with a security group.|
+| Only share with individuals (no security groups) | If this is selected, Owners and editors can only share with individuals as viewers. They can't share with a security group. This control does not affect an Owner's or editor's ability to share with individuals as editors. |
 | Limit number of viewers who can access each agent | If **Only share with individuals (no security groups)** is selected, you can control the maximum number of viewers with whom an agent can be shared with. |
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/production-ready-preview-powerplatform.md)]
