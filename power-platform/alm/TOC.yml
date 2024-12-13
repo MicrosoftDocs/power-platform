@@ -86,6 +86,8 @@
           items:
             - name: View solution deployments in the deployment hub (preview)
               href: maker-deployment-hub.md
+            - name: Admin Deployment page (preview)
+            - href: admin-deployment-hub.md
         - name: Deploy solutions using pipelines
           items:
             - name: What are pipelines?
