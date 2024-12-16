@@ -86,7 +86,7 @@ In Microsoft Dataverse, you can create an entity and enable the Document managem
 Documents of a child entity only appear in the parent documents folder when the parent document location has been created. To create the location, navigate to the Documents tab of the parent record. If no such location is created, child documents don't appear in the parent entity folder. Once the location is created, child documents begin to appear in the parent entity folder.
 
 ## Document folder location for multiple lookups
-If the entity selected for the Based on entity folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. For example, if the Based on entity folder structure is set to Account, and you have an entity with two lookup accounts, such as Work Order, the documents related to Work Orders can't be stored inside any account document location, but can be stored in the root folder.
+If the entity selected for the Based on entity folder structure has two lookups, documents can't be stored inside the entity folder, but can be stored in the root folder. An example is when you have the Based on entity folder structure set to Account and you have an entity with two lookup accounts like Work Order. The documents related to Work Orders can't be stored inside any account document location, but can be stored in the root folder.
 
 ## Entering a date for OneNote documents
 
@@ -96,7 +96,7 @@ In order to add a date to a OneNote document, you can open the OneNote document 
 
 ## SharePoint Document table doesn’t display inputs when you create a flow
 
-When you create a flow trigger in Power Automate that acts on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor, and the flow inputs appear as an empty array.
+When you create a Power Automate flow trigger on the Dataverse SharePoint Documents table (named Documents in Power Automate), no data from the table is passed to the flow editor. The flow inputs appear as an empty array.
 
 This behavior occurs because the SharePoint Documents table is a virtual table and the SharePoint and OneDrive document table data isn't stored in Dataverse. Below is an example of a flow trigger using the SharePoint Documents table.
 
@@ -139,7 +139,7 @@ For Unified Interface and backward compatibility, the row limit in the document 
 
 This issue can occur when you're using the legacy list component for document management. The list component isn't supported with the current versions of Power Apps or Dynamics 365 apps.
 
-In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm). Notice that, a list component wasn’t released for Power Apps or the current versions of Dynamics 365 and previous versions of the list component aren’t supported with these versions.
+In 2015, [we announced the deprecation of the list component]( https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/05/15/dynamics-crm-2015-update-1-list-component-deprecation/?source=crm).
 
 If you're using the list component, you must move your document management to use server-based authentication.
 
