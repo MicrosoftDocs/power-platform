@@ -70,10 +70,10 @@ To create the connections in advance, take these steps:
 ### Step 3: Install solution files
 
 #### Download and manually install solution files
-You can download either managed or unmanaged solution files from [GitHub](http://TODO:link) to manually install into your prepared environment according to your organization's requirements. Skip this step if you previously installed from Microsoft AppSource:
+You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/integration-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements. Skip this step if you previously installed from Microsoft AppSource:
 1.	Download the managed or unmanaged solution files:
-    - [Managed](http://TODO:link)
-    - [Unmanaged](http://TODO:link)
+    - [Managed](https://aka.ms/agents/integration-assistant-for-sap/managed)
+    - [Unmanaged](https://aka.ms/agents/integration-assistant-for-sap/unmanaged)
 2.	Go to [Power Apps](https://make.powerapps.com/) and select the environment you prepared for the solution.
 3.	Select **Solutions** on the left pane.
 4.	Select **Import solution**.
