@@ -32,6 +32,7 @@
             - name: Set up Microsoft Entra ID using SuccessFactors (Preview)
               href: connect/entra-id-using-successfactors.md
         - name: Use templates or prebuilt agents
+          href: templates/overview.md
           items:
             - name: SAP Procurement
               href: ../enterprise-templates/finance/sap-procurement/overview.md
@@ -45,6 +46,14 @@
                   href: templates/maker-agent/install-and-set-up.md
                 - name: Use
                   href: templates/maker-agent/use.md
+            - name: User-Account Assistance Agent for SAP
+              items:
+                - name: Overview
+                  href: templates/user-account-agent/overview.md
+                - name: Install and set up
+                  href: templates/user-account-agent/install-and-set-up.md
+                - name: Use
+                  href: templates/user-account-agent/use.md
         - name: Role-based guidance
           items:
             - name: App maker
