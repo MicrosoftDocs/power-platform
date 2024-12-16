@@ -20,7 +20,7 @@ contributors:
 
 In Managed Environments, admins can limit how broadly users can share canvas apps, flows, and agents. To configure these rules, select a Managed Environment from the environments list in the Power Platform admin center. Then, select **Edit Managed Environments** in the command bar. The sharing rules are located in the **Manage sharing** section.
 
-:::image type="content" source="media/managed-environment-limit-sharing-new2.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
+:::image type="content" source="media/managed-environment-limit-sharing.png" alt-text="Screenshot of an Edit Environment Management settings screen, with Limit sharing highlighted.":::
 
 ## Canvas app sharing rules
 
