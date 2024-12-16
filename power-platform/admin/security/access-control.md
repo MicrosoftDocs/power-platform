@@ -32,6 +32,9 @@ Setting up security groups helps control which licensed users can access environ
 ## Manage sharing 
 This feature applies to Managed Environments only. Sharing gives administrators the ability to control who and what their makers can share&mdash;like canvas apps, cloud flows, and copilots&mdash;with other individual users and security groups, which ensures that sensitive information is available only to authorized users, reducing the risk of data breaches and misuse. Learn more in [Limit sharing](../managed-environment-sharing-limits.md).
 
+## App access control (Preview) 
+This feature applies to Managed Environments only. Prevent data exfiltration by controlling which apps are allowed in and blocked from each environment. Learn more in [Control which apps are allowed in your environment](/power-platform/admin/control-app-access-environment).
+
 ## Guest access (preview)
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 
