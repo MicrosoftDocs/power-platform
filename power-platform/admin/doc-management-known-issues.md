@@ -2,7 +2,7 @@
 title: "Known issues with document management | MicrosoftDocs"
 description: "Learn about known issues with document management"
 keywords: encrypt
-ms.date: 06/10/2024
+ms.date: 12/16/2024
 ms.custom: 
 ms.topic: article
 applies_to: 
@@ -170,6 +170,10 @@ The next and previous page arrow buttons in the SharePoint grid don't work. This
 ### OneDrive for Business configuration
 
 OneDrive for Businees for new users can't be configured currently. This is a known issue and is planned to be fixed in a future release. 
+
+### Removing support for Microsoft default service principal
+
+Starting in March 2024, support for connecting to the Dataverse virtual table `sharepointdocument` using Microsoft default service principal will end. This change is being made to improve security. Switch to connect using a user account to prevent loss of access to the table.
 
 ### See also
 
