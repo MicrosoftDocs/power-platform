@@ -43,7 +43,7 @@ A small team of four developers led by Stef Pieterse spent less than four months
 
 To simplify integration of the Power Platform system with SAP, the team used the prebuilt SAP connectors that are available with Power Platform. Every five minutes, PowerMatch pulls new payments that were uploaded in SAP and syncs the open invoices, customers, and related accounting data. These Power Automate flows also update PowerMatch when users work in SAP directly so that both SAP and PowerMatch are always 100% in sync.
 
-For payments that don't automatically match and clear in SAP, PowerMatch extracts the key attributes from the payment information by using custom AI Builder entity extraction models. The attributes are then used in a 14-step matching algorithm that tries to find the matching invoices based on predefined business rules using an Office Script.
+For payments that don't automatically match and clear in SAP, PowerMatch extracts the key attributes from the payment information by using custom AI Builder entity extraction models. The attributes are then used in a 14-step matching algorithm that uses an Office Script to try to find the matching invoices based on predefined business rules.
 
 For matches with a high certainty, PowerMatch automatically matches and clears the payment and invoices in SAP. Payments with a lower matching certainty or without a match are presented in PowerMatch alongside all the relevant information collected. Examples of lower matching certainties include situations where multiple possible matches are found, a customer is found with no matching invoice, or partial payments that don't match the invoices. In PowerMatch, the AR team matches and clears the lower certainty instances with only four button clicks.
 
