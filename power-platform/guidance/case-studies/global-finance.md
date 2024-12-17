@@ -116,7 +116,7 @@ Ajith explains why EY is so keen on using the Power Platform:
 
 *"Complementing SAP with Microsoft Power Platform offers us the ability to be flexible, develop and build applications within a short timeframe, yet still meeting our overall stringent security requirements," says Ajith. "With continuously changing business needs, we're finding that Power Platform offers us the ability to build things quickly in a cost-effective manner. We see lots of opportunities in the horizon to leverage Power Platform."* 
 
-&mdash;Ajith Haripaul: Global Controlling Transformation Leader
+&mdash;Ajith Haripaul, Global Controlling Transformation Leader
 
 ## Related information
 
