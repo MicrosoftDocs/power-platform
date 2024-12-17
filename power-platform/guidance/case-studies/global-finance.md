@@ -59,7 +59,7 @@ PowerMatch also provides the functionality to reapply previously cleared payment
 
 PowerMatch processes a high volume of payments simultaneously. The end-to-end runtime, from the start of data sync to when the payments are automatically matched and cleared in SAP, is less than 10 minutes for a batch of 300 payments.
 
-PowerMatch is built to be simple and intuitive. With only two screens, the AR team efficiently manages incoming payments and performs all the needed posting scenarios. In the first screen, which serves as the landing page, the AR team gets a full view of bank statements posted, payments needed to be cleared, and overall metrics related to the status of payments.
+PowerMatch is built to be simple and intuitive. With only two screens, the AR team efficiently manages incoming payments and performs all the required posting scenarios. On the first screen, which serves as the landing page, the AR team gets a full view of bank statements posted, payments needed to be cleared, and overall metrics related to the status of payments.
 
 After a payment is selected, the AR team is directed to the second screen which shows the payment details, including the research that PowerMatch has performed on the payment and the proposal on how it should be matched. The screen also has an activity log which tracks all actions taken in the PowerMatch app to ensure a full audit trail.
 
