@@ -2,7 +2,7 @@
 title: Integration assistant for SAP&reg; solutions
 description: Learn about Integration assistant for SAP&reg; solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
 author: microsoft-dustin
-ms.author: dustin.rasener
+ms.author: drasener
 contributors:
   - hidasa
   - robinsonshields

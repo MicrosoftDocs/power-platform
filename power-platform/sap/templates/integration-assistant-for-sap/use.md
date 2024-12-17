@@ -2,7 +2,7 @@
 title: Use Integration assistant for SAP® solutions
 description: Follow some examples of how to use Integration assistant for SAP® solutions to translate business-oriented goals into actionable SAP NetWeaver tasks.
 author: microsoft-dustin
-ms.author: dustin.rasener
+ms.author: drasener
 contributors:
   - hidasa
   - robinsonshields
