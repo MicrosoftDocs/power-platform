@@ -98,13 +98,13 @@ As a result of the automation and the more efficient process, PowerMatch is expe
 
 :::image type="content" source="media/global-finance/hours-saved.png" alt-text="Chart showing savings of 230k hours." lightbox="media/global-finance/hours-saved.png":::
 
-Time savings aren't the only benefit of PowerMatch. Due to the reduced manual processing needed, EY is expecting increased accuracy in payment processing, resulting in an estimated 50% reduction in rebookings.
+Time savings aren't the only benefit of PowerMatch. Due to the reduced manual processing needed, EY expects increased accuracy in payment processing, resulting in an estimated 50% reduction in rebookings.
 
-Additionally, the training time needed for a member of the finance team to become proficient in payment processing is reduced from two weeks to two days. The time savings is primarily due to PowerMatch’s simple and intuitive functionality, and the fact that SAP training is no longer needed.
+Additionally, the training time needed for a member of the finance team to become proficient in payment processing is reduced from two weeks to two days. The time savings is primarily due to PowerMatch's simple and intuitive functionality, and the fact that SAP training is no longer needed.
 
-*“PowerMatch has revolutionized how EY handles the cash application process, resulting in faster and more accurate information. The fact that we were able to build the PowerMatch app in less than four months is amazing and really due to the low code development platform we used."* &mdash;Marie Sanders, Global Process Owner of Accounts Receivable
+*"PowerMatch has revolutionized how EY handles the cash application process, resulting in faster and more accurate information. The fact that we were able to build the PowerMatch app in less than four months is amazing and really due to the low code development platform we used."* &mdash;Marie Sanders, Global Process Owner of Accounts Receivable
 
-PowerMatch is successfully deployed in Canada, Italy, and the United Kingdom, and EY expects to deploy PowerMatch globally in phases up until end of 2025.
+PowerMatch is successfully deployed in Canada, Italy, and the United Kingdom, and EY expects to deploy PowerMatch globally in phases up until the end of 2025.
 
 ## Next steps
 
@@ -112,9 +112,9 @@ EY has several projects in progress that are building on logic used in PowerMatc
 
 Ajith explains why EY is so keen on using the Power Platform:
 
-*“EY is a large complex organization with many stakeholders located in many geographies. SAP offers us the degree of rigidity, scalability, governance, and security that we as EY need at a macro level. However, we also need to be flexible, agile, and deal with numerous different inputs and scenarios on an ongoing basis and this is where Power Platform has been so effective.”* 
+*"EY is a large complex organization with many stakeholders located in many geographies. SAP offers us the degree of rigidity, scalability, governance, and security that we as EY need at a macro level. However, we also need to be flexible, agile, and deal with numerous different inputs and scenarios on an ongoing basis, and this is where Power Platform has been so effective."* 
 
-*“Complementing SAP with the Microsoft Power Platform offers us the ability to be flexible, develop and build applications within a short timeframe, yet still meeting our overall stringent security requirements,” says Ajith. “With continuously changing business needs we're finding that the Power Platform offers us the ability to build things quickly in a cost-effective manner. We see lots of opportunities in the horizon to leverage Power Platform. Complementing SAP with the Microsoft Power Platform offers us the ability to be flexible, develop and build applications within a short timeframe, yet still meeting our overall stringent security requirements."* 
+*Complementing SAP with Microsoft Power Platform offers us the ability to be flexible, develop and build applications within a short timeframe, yet still meeting our overall stringent security requirements," says Ajith. "With continuously changing business needs, we're finding that Power Platform offers us the ability to build things quickly in a cost-effective manner. We see lots of opportunities in the horizon to leverage Power Platform."* 
 
 &mdash;Ajith Haripaul: Global Controlling Transformation Leader
 
