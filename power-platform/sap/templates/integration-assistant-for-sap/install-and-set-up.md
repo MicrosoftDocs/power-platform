@@ -2,7 +2,7 @@
 title: Install and set up Integration assistant for SAP® solutions
 description: Learn how to Install and set up Integration assistant for SAP® solutions.
 author: microsoft-dustin
-ms.author: dustin.rasener
+ms.author: drasener
 contributors:
   - hidasa
   - robinsonshields
