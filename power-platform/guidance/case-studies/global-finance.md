@@ -31,9 +31,9 @@ After brainstorming on how to solve the problem, the project team decided to cre
 
 | **Requirements** | **Power Platform tools** |
 |--|--|
-| Build an automatching algorithm that could be configured based on business rules and that would provide the right flexibility to modify and customize as per the business needs. | Power Automate flows, AI Builder models, and Microsoft 365 scripts |
-| User-friendly application through which all posting scenarios could be efficiently performed. | Power Apps canvas app |
-| Solution that can perform at a high level from both the application/flow and SAP perspective, while not putting any pressure on the system. | Prebuilt SAP connectors: `Call SAP (V2)` and `Read SAP table with Parsing` connectors. |
+| An automatching algorithm that can be configured based on business rules and that provides the right flexibility to modify and customize per business needs. | Power Automate flows, AI Builder models, and Microsoft 365 scripts |
+| A user-friendly application through which all posting scenarios can be efficiently performed. | Power Apps canvas app |
+| A solution that can perform at a high level from both the application/flow and SAP perspective, while not putting any pressure on the system. | Prebuilt SAP connectors: `Call SAP (V2)` and `Read SAP table with Parsing`. |
 | Ability to integrate the application with SAP and other EY tools and Microsoft 365 applications. | Prebuilt connectors, for example Microsoft Outlook and Microsoft SharePoint |
 | Ability to rapidly deliver and deploy the solution. | Power Platform |
 
