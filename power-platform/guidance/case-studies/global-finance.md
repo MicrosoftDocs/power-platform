@@ -65,7 +65,7 @@ After a payment is selected, the AR team is directed to the second screen, which
 
 Every payment that isn't automatically matched and cleared goes through the same four-step process:
 
-1. The AR team confirms the matching result, for example the research performed by the App on the payment and the proposal on how it should be matched.
+1. The AR team confirms the matching result, for example the research performed by the app on the payment and the proposal on how it should be matched.
 
 1. The team selects the clearing options.
 
