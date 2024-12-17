@@ -92,7 +92,7 @@ The following table describes the process flow:
 
 With the deployment of PowerMatch, EY was able to increase the percentage of payments automatically matched and cleared from 30% to 80%, achieving the planned goal. Additionally, 15% of payments are automatically matched with an invoice but manually cleared. As a result, only 5% of payments need to be manually matched and cleared. This improvement is an impressive accomplishment given that 70% of payments needed to be manually matched and cleared before PowerMatch.
 
-:::image type="content" source="media/global-finance/cash-application-impact.png" alt-text="Chart showing impact of PowerMatch on automatic matching." lightbox="media/global-finance/cash-application-impact.png":::
+:::image type="content" source="media/global-finance/cash-application-impact.png" alt-text="Chart showing the impact of PowerMatch on automatic matching." lightbox="media/global-finance/cash-application-impact.png":::
 
 As a result of the automation and the more efficient process, PowerMatch is expected to save approximately 230,000 hours per annum globally for EY. 
 
