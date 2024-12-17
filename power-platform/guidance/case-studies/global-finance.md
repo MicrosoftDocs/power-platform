@@ -41,7 +41,7 @@ After brainstorming on how to solve the problem, the project team decided to cre
 
 A small team of four developers led by Stef Pieterse spent less than four months developing a new application. The application, known as PowerMatch, is a canvas app that uses Power Automate flows to match and clear incoming customer payments. PowerMatch stores its data in Dataverse and uses AI Builder models to extract key information from payments and remittance advices (payment notifications).
 
-To simplify integration of the Power Platform system with SAP, the team used the prebuilt SAP connectors available with Power Platform. Every five minutes, PowerMatch pulls new payments that were uploaded in SAP and syncs the open invoices, customers, and related accounting data. These Power Automate flows also update PowerMatch when users work in SAP directly so that both SAP and PowerMatch are always 100% in sync.
+To simplify integration of the Power Platform system with SAP, the team used the prebuilt SAP connectors that are available with Power Platform. Every five minutes, PowerMatch pulls new payments that were uploaded in SAP and syncs the open invoices, customers, and related accounting data. These Power Automate flows also update PowerMatch when users work in SAP directly so that both SAP and PowerMatch are always 100% in sync.
 
 For payments that don't automatically match and clear in SAP, PowerMatch extracts the key attributes from the payment information by using custom AI Builder entity extraction models. The attributes are then used in a 14-step matching algorithm that tries to find the matching invoices based on predefined business rules using an Office Script.
 
