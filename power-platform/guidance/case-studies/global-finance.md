@@ -112,9 +112,9 @@ EY has several projects in progress that are building on logic used in PowerMatc
 
 Ajith explains why EY is so keen on using the Power Platform:
 
-*"EY is a large complex organization with many stakeholders located in many geographies. SAP offers us the degree of rigidity, scalability, governance, and security that we as EY need at a macro level. However, we also need to be flexible, agile, and deal with numerous different inputs and scenarios on an ongoing basis, and this is where Power Platform has been so effective."* 
+*"EY is a large complex organization with many stakeholders located in many geographies. SAP offers us the degree of rigidity, scalability, governance, and security that we as EY need at a macro level. However, we also need to be flexible, agile, and deal with numerous different inputs and scenarios on an ongoing basis, and this is where Power Platform has been so effective.* 
 
-*Complementing SAP with Microsoft Power Platform offers us the ability to be flexible, develop and build applications within a short timeframe, yet still meeting our overall stringent security requirements," says Ajith. "With continuously changing business needs, we're finding that Power Platform offers us the ability to build things quickly in a cost-effective manner. We see lots of opportunities in the horizon to leverage Power Platform."* 
+*"Complementing SAP with Microsoft Power Platform offers us the ability to be flexible, develop and build applications within a short timeframe, yet still meeting our overall stringent security requirements," says Ajith. "With continuously changing business needs, we're finding that Power Platform offers us the ability to build things quickly in a cost-effective manner. We see lots of opportunities in the horizon to leverage Power Platform."* 
 
 &mdash;Ajith Haripaul: Global Controlling Transformation Leader
 
