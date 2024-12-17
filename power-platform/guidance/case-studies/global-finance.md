@@ -55,7 +55,7 @@ EY's PowerMatch technical architecture diagram shows how payments submitted are 
 
 &mdash;Stef Pieterse, EY Business Process Lead for Finance and Accounting
 
-PowerMatch also provides the functionality to reapply previously cleared payments. The AR team only needs to provide the new invoice numbers and the backend flows take care of the time-consuming task to reverse the existing SAP documents and reapply the payments to the new invoices.
+PowerMatch also provides the functionality to reapply previously cleared payments. The AR team only needs to provide the new invoice numbers. The back-end flows take care of the time-consuming task of reversing the existing SAP documents and reapplying the payments to the new invoices.
 
 PowerMatch processes a high volume of payments simultaneously. The end-to-end runtime, from the start of data sync to when the payments are automatically matched and cleared in SAP is less than 10 minutes for a batch of 300 payments.
 
