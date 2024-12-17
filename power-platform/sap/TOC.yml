@@ -38,22 +38,20 @@
               href: ../enterprise-templates/finance/sap-procurement/overview.md
             - name: SAP Supplier Self Service
               href: ../enterprise-templates/finance/sap-supplier-self-service/overview.md
-            - name: Power Automate Maker Agent for SAP
+            - name: Integration assistant for SAP
               items:
                 - name: Overview
-                  href: templates/maker-agent/overview.md
+                  href: templates/integration-assistant-for-sap/overview.md
                 - name: Install and set up
-                  href: templates/maker-agent/install-and-set-up.md
+                  href: templates/integration-assistant-for-sap/install-and-set-up.md
                 - name: Use
-                  href: templates/maker-agent/use.md
-            - name: User-Account Assistance Agent for SAP
+                  href: templates/integration-assistant-for-sap/use.md
+            - name: Account assistant for SAP
               items:
                 - name: Overview
-                  href: templates/user-account-agent/overview.md
+                  href: templates/account-assistant-for-sap/overview.md
                 - name: Install and set up
-                  href: templates/user-account-agent/install-and-set-up.md
-                - name: Use
-                  href: templates/user-account-agent/use.md
+                  href: templates/account-assistant-for-sap/install-and-set-up.md
         - name: Role-based guidance
           items:
             - name: App maker
