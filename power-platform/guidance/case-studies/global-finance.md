@@ -13,21 +13,21 @@ ms.date: 11/15/2024
 
 In this case study, you learn how the Global Finance team at Ernst & Young (EY), a global organization that serves more than 200,000 clients, automated the matching and clearing of incoming client payments with the accompanying invoice.
 
-EY receives approximately 1.5 million client payments globally each year, and of those payments, only 30% are automatically matched with the respective invoice and then automatically cleared by SAP. The large number of payments results in a significant amount of manual work to clear the remaining 70% of unmatched payments, which include researching the payment to find the accompanying invoice and manually processing and clearing the payment in SAP.
+EY receives approximately 1.5 million client payments globally each year. Of those payments, only 30% are automatically matched with the respective invoice and then automatically cleared by SAP. The large number of payments results in a significant amount of manual work to clear the remaining 70% of unmatched payments, which includes researching the payment to find the accompanying invoice and manually processing and clearing the payment in SAP.
 
 Ajith Haripaul, EY Global Controlling Transformation Leader, challenged members of the EY Global Finance team to develop a way to automate the cash application process. Stef Pieterse, EY Business Process Lead for Finance and Accounting, and Marie Sanders, Global Process Owner of Accounts Receivable, were assigned to drive this project and process change.
 
-Their ambition was to increase the percentage of payments automatically matched and cleared from the current 30% to 80% globally. They felt they could achieve this goal given the experience gained when developing PowerPost, a tool developed in 2022 using Power Platform to improve the general ledger (GL) posting process.
+Their ambition was to increase the percentage of payments automatically matched and cleared from the current 30% to 80% globally. They felt they could achieve this goal, given the experience they gained when developing PowerPost, a tool developed in 2022 that used Power Platform to improve the general ledger (GL) posting process.
 
 ## Business challenge
 
-Before EY implemented its PowerMatch solution, after the EY Accounts Receivable (AR) team received a payment, a manual process was needed to review the payment information and perform searches in SAP to match the customer payment with the related invoices. This process took an average of seven minutes per payment to complete, and occasionally up to 30 minutes per payment.
+Before EY implemented its PowerMatch solution, after the EY Accounts Receivable (AR) team received a payment, a manual process was needed to review the payment information and perform searches in SAP to match the customer payment with the related invoices. This process took an average of seven minutes per payment, and occasionally as long as 30 minutes per payment.
 
-After the AR team completed this process, they then needed to book the payment match in SAP. Depending on how complicated the booking, the booking took an average of four minutes to complete, and occasionally up to 25 minutes per payment. With approximately 1 million payments needing to be manually processed each year, the volume of bookings amounted to a significant number of hours for EY.
+After the AR team completed this process, they needed to book the payment match in SAP. Depending on how complicated it was, the booking took an average of four minutes to complete, and occasionally as long as 25 minutes per payment. With approximately 1 million payments that needed to be manually processed each year, the volume of bookings amounted to a significant number of hours for EY.
 
 ## Implementation approach
 
-After brainstorming how to solve the problem, the project team decided on the idea of creating an application using their knowledge of Power Platform. The project team identified five key technical requirements in order to develop the solution – all of which could be addressed using Power Platform capabilities:
+After brainstorming on how to solve the problem, the project team decided to create an application that used their knowledge of Power Platform. The project team identified five key technical requirements to develop the solution, all of which could be addressed by using Power Platform capabilities:
 
 | **Requirements** | **Power Platform tools** |
 |--|--|
