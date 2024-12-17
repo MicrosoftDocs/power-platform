@@ -73,7 +73,7 @@ Every payment that isn't automatically matched and cleared goes through the same
 
 1. The document is submitted.
 
-This process is generic and works for all the posting scenarios. The steps the AR team need to take in PowerMatch take no more than two minutes per payment. The process represents a huge reduction in time spent compared to the process before PowerMatch since the research of the payment is eliminated from the manual process.
+This process is generic and works for all posting scenarios. The steps the AR team needs to complete in PowerMatch take no more than two minutes per payment. The process represents a huge reduction in time spent, as compared to the process before PowerMatch, because the research of the payment is eliminated from the manual process.
 
 The following table describes the process flow: 
 
