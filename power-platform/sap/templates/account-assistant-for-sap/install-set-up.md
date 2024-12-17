@@ -65,7 +65,7 @@ To create the connections in advance, take these steps:
 1.	Go to [Power Apps](https://make.powerapps.com/).
 2.	Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
     - [Microsoft Teams Connector](https://learn.microsoft.com/connectors/teams/).
-    - [SAP ERP Connector](https://learn.microsoft.com/en-us/connectors/saperp/).
+    - [SAP ERP Connector](https://learn.microsoft.com/connectors/saperp/).
 
 ### Step 3: Install solution files
 
@@ -83,7 +83,7 @@ You can download either managed or unmanaged solution files from [GitHub](https:
 8.	For each of the connections listed, select the existing connection created in the previous step. If you didn't create the connections in advance, create them now.
 9.	Select **Import** to start the solution import process for the **Account assistant for SAP® solutions**. Once the import is complete, you receive a notification.
 
-For more information, see [Solution concepts](https://learn.microsoft.com/en-us/power-platform/alm/solution-concepts-alm).
+For more information, see [Solution concepts](https://learn.microsoft.com/power-platform/alm/solution-concepts-alm).
 
 ### Step 4: Publish to Teams
 1.	In Copilot Studio, select the same environment where you previously installed the solution file for **Account assistant for SAP® solutions**.
