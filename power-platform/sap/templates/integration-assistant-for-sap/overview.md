@@ -44,12 +44,12 @@ Before setting up the Integration assistant for SAP&reg; solutions, ensure the f
 
 - Microsoft Copilot Studio licenses for your makers.
 - Microsoft Copilot Studio message capacity *or* pay-as-you-go plan.
-- [Microsoft Power Platform and SAP integration](https://learn.microsoft.com/power-platform/sap/connect/connect-power-platform-and-sap)
+- [Microsoft Power Platform and SAP integration](/power-platform/sap/connect/connect-power-platform-and-sap)
 
 More information:
 
-- [Get access to Microsoft Copilot Studio ](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions)
-- [Quickstart: Create and deploy a Copilot Studio agent](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started)
+- [Get access to Microsoft Copilot Studio ](/microsoft-copilot-studio/requirements-licensing-subscriptions)
+- [Quickstart: Create and deploy a Copilot Studio agent](/microsoft-copilot-studio/fundamentals-get-started)
 
 ## Capabilities and Functionality
 

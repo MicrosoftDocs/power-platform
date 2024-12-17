@@ -44,27 +44,13 @@ Before setting up the Account assistant for SAP&reg; solutions, ensure the follo
 
 - Microsoft Copilot Studio licenses for your makers.
 - Microsoft Copilot Studio message capacity *or* pay-as-you-go plan.
-- [Microsoft Power Platform and SAP integration](https://learn.microsoft.com/power-platform/sap/connect/connect-power-platform-and-sap)
+- [Microsoft Power Platform and SAP integration](/power-platform/sap/connect/connect-power-platform-and-sap)
 
 More information:
 
-- [Get access to Microsoft Copilot Studio ](https://learn.microsoft.com/microsoft-copilot-studio/requirements-licensing-subscriptions)
-- [Quickstart: Create and deploy a Copilot Studio agent](https://learn.microsoft.com/microsoft-copilot-studio/fundamentals-get-started)
+- [Get access to Microsoft Copilot Studio ](/microsoft-copilot-studio/requirements-licensing-subscriptions)
+- [Quickstart: Create and deploy a Copilot Studio agent](/microsoft-copilot-studio/fundamentals-get-started)
 
-## Capabilities and Functionality
+## Use Cases
 
-The agent is designed to handle a wide range of business goals by leveraging SAP's NetWeaver capabilities. (remote-enabled function modules). Here are examples of goals it can help your makers achieve:
-
-- Retrieve customer or vendor information from SAP tables.
-- Create or update sales orders. (the agent may suggest **BAPI_SALESORDER_CREATEFROMDAT2**, for example)
-- Fetch real-time inventory data. (**BAPI_MATERIAL_AVAILABILITY**)
-- Check or export Sales Order statuses (**BAPI_SALESORDER_GETLIST**, **BAPI_SALESORDER_GETSTATUS**, **BAPI_ACC_DOCUMENT_CHECK**)
-
-## Recommended Workflow
-
-1. **Define Business Goal**: Clearly define the business goal you want to achieve with the agent.
-1. **Query Agent**: Ask the agent how to achieve your business goal.
-1. **Challenge the Agent**: Challenge the agent to test the solution against your SAP system. At this step, the agent may identify errors in the suggested solution. This feedback loop allows you to avoid hallucinations and ensures that your solution will work. **The agent is using the same connector and parameters that you will use.**
-1. **Implement Solution**: Implement the solution in Power Automate using the SAP ERP connector. For now, this is a manual process; future versions may automate more of the implementation.
-
-:::image type="content" source="media/usage-screenshot.png" alt-text="Usage example showing copy/paste from agent output to Power Automate designer":::
+The Account assistant for SAP® is an essential tool for both employees and support agents. Employees can resolve account access issues independently, avoiding delays and ensuring uninterrupted workflow. Support teams benefit from reduced workloads as routine tasks, like account unlocks, are handled directly by users. This solution is particularly valuable for organizations looking to minimize downtime, improve user satisfaction, and optimize resource allocation in account servicing scenarios.
