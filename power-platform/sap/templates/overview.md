@@ -2,7 +2,7 @@
 title: Use templates and prebuilt agents
 description: Learn about templates and agents that accelerate your Power Platform and SAP integration and solution development.
 author: microsoft-dustin
-ms.author: dustin.rasener
+ms.author: drasener
 contributors:
   - hidasa
   - robinsonshields
