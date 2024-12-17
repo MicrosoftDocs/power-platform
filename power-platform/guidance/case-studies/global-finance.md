@@ -47,7 +47,7 @@ For payments that don't automatically match and clear in SAP, PowerMatch extract
 
 For matches that have a high certainty, PowerMatch automatically matches and clears the payment and invoices in SAP. Payments that have a lower matching certainty or without a match are presented in PowerMatch alongside all the relevant information collected. Examples of lower matching certainties include situations where multiple possible matches are found, a customer is found with no matching invoice, or partial payments that don't match the invoices. In PowerMatch, the AR team matches and clears the lower certainty instances with only four button clicks.
 
-:::image type="content" source="media/global-finance/payment-processing-architecture-1.png" alt-text="Diagram showing PowerMatch payment clearing system process flow." lightbox="media/global-finance/payment-processing-architecture-1.png":::
+:::image type="content" source="media/global-finance/payment-processing-architecture-1.png" alt-text="Diagram showing the PowerMatch payment clearing system process flow." lightbox="media/global-finance/payment-processing-architecture-1.png":::
 
 EY's PowerMatch technical architecture diagram shows how payments submitted are automatically matched with the corresponding invoice using Power Platform. Payment details sent by customer are extracted from attachments and moved to Dataverse. Matching data from bank is extracted from payment information using AI model and moved to Dataverse. The Accounts Receivable team manually clears payments without a match. Data is then synched with internal systems for engagement and collections teams.
 
