@@ -36,18 +36,22 @@ During the design phase, a solution template helps a maker see how:
 - Workflows can be automated by Power Automate cloud flows operating behind the scenes.
 - Solutions can be enhanced and extended to meet an organization's needs.
 
-Check out the [SAP Procurement template for Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview.md) to learn more.
+Get started by learning more about the [SAP Procurement template for Power Platform](/power-platform/enterprise-templates/finance/sap-procurement/overview.md).
 
 ## Agents for Power Platform and SAP
 
 Agents for Power Platform and SAP are advanced, LLM-based assistants that translate business-oriented goals into actionable SAP NetWeaver tasks. The agents are powerful tools that provide dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with a specific SAP system.
 
-During the design phase, an agent helps a maker see:
+During the design phase, an agent helps a maker discover what specific SAP BAPIs, RFCs, and table reads are needed to achieve their business goals.
 
+Get started by learning more about:
+
+- [Integration assistant for SAP solutions](integration-assistant/overview.md)
+- [Account assistant for SAP solutions](account-assistant/overview.md)
 
 ## Administration
 
-Power Platform and SAP integration and solution development are enterprise-grade initiatives should be carried out by a knowledgeable, [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers and SAP admins (S-User) and functional analysts (SAP BASIS).
+Power Platform and SAP integration and solution development are enterprise-grade initiatives that should be carried out by a knowledgeable, [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers and SAP admins (S-User) and functional analysts (SAP BASIS).
 
 Once established, your team can [get started with its Power Platform and SAP administration journey](/power-platform/enterprise-templates/finance/sap-procurement/administer/get-started.md).
 

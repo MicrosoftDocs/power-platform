@@ -31,7 +31,7 @@ In a development environment, it helps makers discover what specific SAP BAPIs, 
 The combination of AI and the ability to directly interact with your SAP system allows for easy discoverability, rapid iteration, and experimentation. Designed for makers and organizations integrating SAP with Power Platform, this tool provides dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with your specific SAP system.
 
 > [!WARNING]
-> *Account assistant for SAP solutions* is only intended to assist makers in a development environment. This agent has wide latitude when interacting with SAP systems and is **not for production use**.
+> *Account assistant for SAP solutions* is **only intended to assist makers in a development environment**. This agent has wide latitude when interacting with SAP systems and isn't for production use.
 
 ## Preparation
 
@@ -43,7 +43,7 @@ Before setting up the Account assistant for SAP solutions, ensure the following 
 
 ## Create connections with a read-only user account
 
-You should connect to SAP using a read-only user account set up specifically for purpose. It's important that the agent have the ability to read everything in your SAP system, but it could be dangerous to allow it to write data. Remote function calls (RFCs) provided by SAP can be very powerful, and the agent may make changes that are unintended if allowed to do so.
+You should connect to SAP using a read-only user account set up specifically for using the account assistant. It's important that the agent has the ability to read everything in your SAP system, but it could be dangerous to allow it to write data. Remote function calls (RFCs) provided by SAP can be very powerful, and the agent may make changes that are unintended if allowed to do so.
 
 More information:
 
