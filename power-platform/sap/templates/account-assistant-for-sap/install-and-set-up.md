@@ -77,7 +77,7 @@ You can download either managed or unmanaged solution files from [GitHub](https:
 2.	Go to [Power Apps](https://make.powerapps.com/) and select the environment you prepared for the solution.
 3.	Select **Solutions** on the left pane.
 4.	Select **Import solution**.
-5.	Browse for and select the **mpa_AccountAssistantForSAPsolutions** file downloaded in the previous step.
+5.	Browse for and select the **mpa_AccountassistantforSAP** file downloaded in the previous step.
 6.	Select **Next**.
 7.	Review the Details and confirm Enable Plugin steps and flows included in the solutions remains checked, and then select **Next**.
 8.	For each of the connections listed, select the existing connection created in the previous step. If you didn't create the connections in advance, create them now.
