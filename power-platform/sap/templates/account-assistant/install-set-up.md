@@ -1,6 +1,6 @@
 ---
 title: Install and set up Account assistant for SAP solutions
-description: Learn how to Install and set up Account assistant for SAP solutions so you can translate business-oriented goals into actionable SAP NetWeaver tasks.
+description: Learn how to install and set up Account assistant for SAP solutions so you can translate business-oriented goals into actionable SAP NetWeaver tasks.
 author: ryanb58
 ms.author: tbrazelton
 contributors:
