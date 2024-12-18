@@ -4,7 +4,7 @@ description: Learn how your organization can use Power Platform Managed Environm
 author: rsantos00
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 01/10/2024
+ms.date: 12/18/2024
 ms.author: rstand
 ms.reviewer: sericks
 ms.subservice: guidance
