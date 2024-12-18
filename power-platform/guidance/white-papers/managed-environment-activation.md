@@ -281,7 +281,7 @@ requests
 
 ### Catalog in Power Platform
 
-The [catalog in Power Platform](/power-platform/developer/catalog) is a central location where makers and developers can discover and share solutions, templates, and code components for reuse across the organization. It also provides a central location for admins to store and maintain Power Platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements.
+The [catalog in Power Platform](/power-platform/developer/catalog/overview) is a central location where makers and developers can discover and share solutions, templates, and code components for reuse across the organization. It also provides a central location for admins to store and maintain Power Platform artifacts, with management capabilities and approval workflows to ensure compliance with regulatory and statutory requirements.
 
 Makers and developers submit their solutions, templates, and components to the catalog to help their colleagues solve business problems. Admins and line-of-business approvers review and approve them. The catalog serves as a single source of truth for Power Platform artifacts, which can be curated and controlled to accelerate value for makers and developers. It streamlines the process of finding, creating, and sharing solutions and templates, making it easier for organizations to apply apps to business problems and achieve their goals.
 
