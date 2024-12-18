@@ -32,7 +32,7 @@ You can then use the conversation lifecycle events data from Dynamics 365 Custom
 > Export of Power Automate and Dynamics 365 Customer Service data is not available in sovereign clouds, such as Government Community Cloud (GCC), Government Community Cloud - High (GCC High), and Department of Defense (DoD), at this time.
 
 > [!IMPORTANT]
-> When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. For this public preview only, the premium use rights requirement and the Managed Environments restriction are relaxed.
+> When this feature transitions to General Availability (GA), the feature will be available for Managed Environments only.  Users will need a Power Apps, Power Automate, or Dynamics 365 license with premium use rights. To set up the data export in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), you must be a member of the Power Platform admin or Dynamics 365 admin role. For this public preview only, the premium use rights requirement and the Managed Environments restriction are relaxed.
 
 ## Pricing
 
