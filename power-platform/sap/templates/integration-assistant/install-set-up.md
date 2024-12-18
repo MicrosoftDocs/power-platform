@@ -2,7 +2,7 @@
 title: Install and set up Integration assistant for SAP solutions
 description: Learn how to install and set up Integration assistant for SAP solutions so you can translate business-oriented goals into actionable SAP NetWeaver tasks.
 author: microsoft-dustin
-ms.author: dustin.rasener
+ms.author: drasener
 contributors:
   - hidasa
   - robinsonshields

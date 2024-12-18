@@ -11,7 +11,7 @@ contributors:
   - shnair
   - edlehman
 ms.reviewer: ellenwehrle
-ms.topic: overvivew
+ms.topic: overview
 ms.date: 11/14/2024
 ms.service: power-platform
 ms.subservice: sap
