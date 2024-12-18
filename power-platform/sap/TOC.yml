@@ -41,17 +41,17 @@
             - name: Integration assistant for SAP
               items:
                 - name: Overview
-                  href: templates/integration-assistant-for-sap/overview.md
+                  href: templates/integration-assistant/overview.md
                 - name: Install and set up
-                  href: templates/integration-assistant-for-sap/install-and-set-up.md
+                  href: templates/integration-assistant/install-set-up.md
                 - name: Use
-                  href: templates/integration-assistant-for-sap/use.md
+                  href: templates/integration-assistant/use.md
             - name: Account assistant for SAP
               items:
                 - name: Overview
-                  href: templates/account-assistant-for-sap/overview.md
+                  href: templates/account-assistant/overview.md
                 - name: Install and set up
-                  href: templates/account-assistant-for-sap/install-and-set-up.md
+                  href: templates/account-assistant/install-set-up.md
         - name: Role-based guidance
           items:
             - name: App maker

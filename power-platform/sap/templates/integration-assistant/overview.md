@@ -1,6 +1,6 @@
 ---
-title: Integration assistant for SAP&reg; solutions
-description: Learn about Integration assistant for SAP&reg; solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
+title: Integration assistant for SAP solutions
+description: Learn about Integration assistant for SAP solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
 author: microsoft-dustin
 ms.author: drasener
 contributors:
@@ -16,31 +16,26 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 12/11/2024
+ms.date: 12/18/2024
 ms.service: power-platform
 ms.subservice: sap
-# Customer intent: As an administrator, I want to learn about the Integration assistant for SAP&reg; solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
+# Customer intent: As an administrator, I want to learn about the Integration assistant for SAP solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
 ---
-# Integration Assistant for SAP&reg; solutions
 
-The Integration Assistant for SAP&reg; solutions is an advanced, LLM-based assistant that translates business-oriented goals into actionable SAP NetWeaver tasks.
+# What is Integration assistant for SAP solutions?
 
-It helps makers discover what specific SAP BAPIs, RFCs, and table reads are needed to achieve their business goals by empowering makers to build tools to retrieve information and execute operations quickly and easily.
+The Integration Assistant for SAP solutions is an advanced, LLM-based agent that translates business-oriented goals into actionable SAP NetWeaver tasks.
 
-The combination of AI and the ability to directly interact with your SAP system allows for easy discoverability and rapid iteration and experimentation. Designed for makers and organizations integrating SAP with Power Platform, this tool provides dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with your specific SAP system.
+In a development environment, it helps makers discover what specific SAP BAPIs, RFCs, and table reads are needed to achieve their business goals by empowering makers to build tools to retrieve information and execute operations quickly and easily.
 
-## Not for Production Use
+The combination of AI and the ability to directly interact with your SAP system allows for easy discoverability, rapid iteration, and experimentation. Designed for makers and organizations integrating SAP with Power Platform, this tool provides dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with your specific SAP system.
 
 > [!WARNING]
-> This agent has wide latitude when interacting with SAP systems. It is intended to be used only in a development environment.
+> *Integration assistant for SAP solutions* is only intended to assist makers in a development environment. This agent has wide latitude when interacting with SAP systems and is **not for production use**.
 
-## Create connections with a read-only user
+## Confirm licensing and Power Platform and SAP integration
 
-It is recommended that you connect to SAP using a read-only user designed for the purpose. It is important that the agent have the ability to read everything in your SAP system, but it could be dangerous to allow it to write data. Remote function calls provided by SAP can be very powerful, and the agent may make changes that are unintended if allowed to do so.
-
-## Prerequisites
-
-Before setting up the Integration assistant for SAP&reg; solutions, ensure the following prerequisites are in place:
+Before setting up the Integration assistant for SAP solutions, confirm that you have the necessary licensing and that your organization's Power Platform and SAP integration followed enterprise:
 
 - Microsoft Copilot Studio licenses for your makers.
 - Microsoft Copilot Studio message capacity *or* pay-as-you-go plan.
@@ -50,6 +45,10 @@ More information:
 
 - [Get access to Microsoft Copilot Studio ](/microsoft-copilot-studio/requirements-licensing-subscriptions)
 - [Quickstart: Create and deploy a Copilot Studio agent](/microsoft-copilot-studio/fundamentals-get-started)
+
+## Create connections with a read-only user
+
+It is recommended that you connect to SAP using a read-only user designed for the purpose. It is important that the agent have the ability to read everything in your SAP system, but it could be dangerous to allow it to write data. Remote function calls provided by SAP can be very powerful, and the agent may make changes that are unintended if allowed to do so.
 
 ## Capabilities and Functionality
 
