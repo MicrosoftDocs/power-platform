@@ -31,7 +31,6 @@ Review the requirements, identify opportunities, and develop a plan of action th
 -	Microsoft 365 Business or Enterprise plan with Teams
 -	Copilot Studio (free license that must be assigned to your developers)
 -	Copilot Studio message capacity
--	Power Automate Premium or per flow plan
 
 ## Step 1: Set up environments and data policies
 
@@ -45,7 +44,6 @@ To successfully install and manage **Account assistant for SAP® solutions**, co
     - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
     - For more information, see [Environments overview](/power-platform/admin/environments-overview).
 - **Data loss prevention policies**—Ensure the environment has access to the connectors used by **Account assistant for SAP® solutions**:
-    - [Microsoft Teams connector](/connectors/teams/).
     - [SAP ERP Connector](/connectors/saperp/).
     - For more information, see [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention).
 - **Allocate environment capacity**—**Account assistant for SAP® solutions** requires Copilot Studio message capacity in the production environment where the agent is deployed.
@@ -64,20 +62,19 @@ The installation requires you to set up two new connections. It's best to create
 To create the connections in advance, take these steps:
 1.	Go to [Power Apps](https://make.powerapps.com/).
 2.	Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
-    - [Microsoft Teams Connector](/connectors/teams/).
     - [SAP ERP Connector](/connectors/saperp/).
 
 ## Step 3: Install solution files
 
 ### Download and manually install solution files
-You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/account-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements. Skip this step if you previously installed from Microsoft AppSource:
+You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/account-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements.
 1.	Download the managed or unmanaged solution files:
     - [Managed](https://aka.ms/agents/account-assistant-for-sap/managed)
     - [Unmanaged](https://aka.ms/agents/account-assistant-for-sap/unmanaged)
 2.	Go to [Power Apps](https://make.powerapps.com/) and select the environment you prepared for the solution.
 3.	Select **Solutions** on the left pane.
 4.	Select **Import solution**.
-5.	Browse for and select the **mpa_AccountAssistantForSAPsolutions** file downloaded in the previous step.
+5.	Browse for and select the **mpa_AccountassistantforSAP** file downloaded in the previous step.
 6.	Select **Next**.
 7.	Review the Details and confirm Enable Plugin steps and flows included in the solutions remains checked, and then select **Next**.
 8.	For each of the connections listed, select the existing connection created in the previous step. If you didn't create the connections in advance, create them now.
