@@ -31,7 +31,6 @@ Review the requirements, identify opportunities, and develop a plan of action th
 -	Microsoft 365 Business or Enterprise plan with Teams
 -	Copilot Studio (free license that must be assigned to your developers)
 -	Copilot Studio message capacity
--	Power Automate Premium or per flow plan
 
 ## Step 1: Set up environments and data policies
 
@@ -68,7 +67,7 @@ To create the connections in advance, take these steps:
 ## Step 3: Install solution files
 
 ### Download and manually install solution files
-You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/account-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements. Skip this step if you previously installed from Microsoft AppSource:
+You can download either managed or unmanaged solution files from [GitHub](https://aka.ms/agents/account-assistant-for-sap/github) to manually install into your prepared environment according to your organization's requirements.
 1.	Download the managed or unmanaged solution files:
     - [Managed](https://aka.ms/agents/account-assistant-for-sap/managed)
     - [Unmanaged](https://aka.ms/agents/account-assistant-for-sap/unmanaged)
