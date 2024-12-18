@@ -45,7 +45,6 @@ To successfully install and manage **Account assistant for SAP® solutions**, co
     - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
     - For more information, see [Environments overview](/power-platform/admin/environments-overview).
 - **Data loss prevention policies**—Ensure the environment has access to the connectors used by **Account assistant for SAP® solutions**:
-    - [Microsoft Teams connector](/connectors/teams/).
     - [SAP ERP Connector](/connectors/saperp/).
     - For more information, see [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention).
 - **Allocate environment capacity**—**Account assistant for SAP® solutions** requires Copilot Studio message capacity in the production environment where the agent is deployed.
@@ -64,7 +63,6 @@ The installation requires you to set up two new connections. It's best to create
 To create the connections in advance, take these steps:
 1.	Go to [Power Apps](https://make.powerapps.com/).
 2.	Go to **Connections** and select **+ New Connection** to create new connections with each of these connectors:
-    - [Microsoft Teams Connector](/connectors/teams/).
     - [SAP ERP Connector](/connectors/saperp/).
 
 ## Step 3: Install solution files
